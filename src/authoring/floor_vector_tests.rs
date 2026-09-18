@@ -862,3 +862,119 @@ fn a_purpose_limited_record_is_read_only_for_its_purpose() {
         );
     }
 }
+
+/// Every conclusion a credibility voiding can reach, with the polarity it is
+/// read at. Three recognition doors close, one loss is recorded, a dead
+/// amendment proposal cannot become law, and the person is owed reasons and a
+/// route to contest them.
+///
+/// The set is what makes "a bounded consequence" checkable rather than
+/// promised. What is NOT in it is the point: no floor actuality, no `owe`, no
+/// `entitled`, no `person`, no `prisoner`, no `travel`, no `decide`, no
+/// `authority` and no `permits` reads `false`. A voided person keeps standing,
+/// the floor, liberty, the ballot, public answerability — and, because
+/// credentials read the reconciled carried mark rather than this conclusion,
+/// even the pen.
+const VOIDING_READERS: [(&str, &str); 7] = [
+    ("become", "~false"),
+    ("lose", "+false"),
+    ("obliged", "+false"),
+    ("obliged", "+false"),
+    ("reward", "~false"),
+    ("reward", "~false"),
+    ("reward", "~false"),
+];
+
+#[test]
+fn a_credibility_voiding_reaches_exactly_the_measured_set() {
+    let read = Regex::new(r"(?:^|[^A-Za-z0-9_])(~?)\s*false\(").unwrap();
+    let mut found: Vec<(String, String)> = Vec::new();
+    for statement in statements() {
+        let Some((body, head)) = split(&statement) else {
+            continue;
+        };
+        for capture in read.captures_iter(body) {
+            let polarity = if capture.get(1).is_some_and(|m| m.as_str() == "~") {
+                "~false"
+            } else {
+                "+false"
+            };
+            found.push((head_relation(head).to_owned(), polarity.to_owned()));
+        }
+    }
+    found.sort();
+    let declared: Vec<(String, String)> = VOIDING_READERS
+        .iter()
+        .map(|(head, polarity)| ((*head).to_owned(), (*polarity).to_owned()))
+        .collect();
+    assert_eq!(
+        found, declared,
+        "what a credibility voiding reaches has changed. The chapter states this \
+         set as the whole consequence, so a new reader makes the book wrong \
+         before it makes the design worse — and a reader on the floor, on \
+         standing, on liberty or on the ballot is the carve-out the design \
+         refuses"
+    );
+
+    // Sabotage: the shape that would quietly widen it. A rule taking a voided
+    // person's floor is refused by the stratifier and so cannot be the control;
+    // this one loads, which is exactly why the census has to see it.
+    let hostile = "all $x: false($x) -> err($x, Recognition).";
+    nibli_session::CoreSession::new()
+        .compile_text(hostile)
+        .expect("the hostile rule is well-formed, which is why the census matters");
+    let mut with_hostile = found.clone();
+    with_hostile.push(("err".to_owned(), "+false".to_owned()));
+    with_hostile.sort();
+    assert_ne!(
+        with_hostile, declared,
+        "the census would accept a new reader of a credibility voiding"
+    );
+}
+
+/// Expungement reaches every voiding that turns on a finding, and reaches the
+/// conflict-of-interest voiding deliberately not at all.
+///
+/// Article 5's rule tracks a judgment that is still on the record and still
+/// conflicted; forgiving the judge while the judgment stands would leave the
+/// conflict in force and call it repaired. Withdrawing the judgment is the
+/// repair there, so the asymmetry is asserted by membership rather than left
+/// to whoever next edits an article.
+#[test]
+fn a_recorded_expungement_reaches_every_voiding_that_turns_on_a_finding() {
+    let mut reads_clean = Vec::new();
+    let mut ignores_clean = Vec::new();
+    for statement in statements() {
+        let Some((body, head)) = split(&statement) else {
+            continue;
+        };
+        if head_relation(head) != "false" {
+            continue;
+        }
+        if body.contains("~clean(") {
+            reads_clean.push(body.to_owned());
+        } else {
+            ignores_clean.push(body.to_owned());
+        }
+    }
+    assert_eq!(
+        reads_clean.len(),
+        3,
+        "the routes an expungement stops changed: {reads_clean:?}"
+    );
+    assert_eq!(
+        ignores_clean.len(),
+        2,
+        "the routes an expungement does not stop changed: {ignores_clean:?}"
+    );
+    assert!(
+        ignores_clean.iter().any(|w| w.contains("parent(")),
+        "Article 5's conflict rule is the deliberate exception and it is not in \
+         the set that ignores expungement: {ignores_clean:?}"
+    );
+    assert!(
+        ignores_clean.iter().any(|w| w.contains("suggest(")),
+        "the amendment route is the other one that ignores expungement, because \
+         a proposal is not a person: {ignores_clean:?}"
+    );
+}

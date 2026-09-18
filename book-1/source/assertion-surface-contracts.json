@@ -868,7 +868,7 @@
         ],
         "effect": "The cross-body voiding of Bela no longer derives.",
         "target": "false",
-        "evidence_ref": "book-1/source/constitution.nibli::capture($a, $audited) & ~deceive($a, $audited)"
+        "evidence_ref": "book-1/source/constitution.nibli::capture($a, $audited) & cite($a, $ground, $audited)"
       },
       "current_challenge_route": "No correction or appeal attaches to a capture fact.",
       "required_challenge_route": "Subject access, contest, correction history, and independent case review.",
@@ -1227,7 +1227,7 @@
         ],
         "effect": "The Review-backed voiding of Lupo no longer derives.",
         "target": "false",
-        "evidence_ref": "book-1/source/constitution.nibli::deceive($auditor, $audited) & judge(Review, $auditor) -> false($auditor)"
+        "evidence_ref": "book-1/source/constitution.nibli::deceive($auditor, $audited) & judge(Review, $auditor) & ~clean($auditor)"
       },
       "current_challenge_route": "A Review judgment can void the deceiver but cannot correct the underlying deceive entry.",
       "required_challenge_route": "Prompt contest, independent review, correction history, and interim shield continuity.",

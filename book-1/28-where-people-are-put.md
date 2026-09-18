@@ -124,11 +124,12 @@ oldest question arriving in a mirror. The report the alarm reads names its place
 that was the point of the repair, an act with an author. The alarm's own conclusion
 does not. What the record derives is that a person is misplaced; who put them there
 sits in the premise and is dropped on the way out, so the mark that reaches the audit
-says who suffered the wrong and never who did it. The voiding chapter watched this
-record know who and never why. Here it knows why — eligibility, contradicted — and
-lets go of who. Neither omission was argued for anywhere. Each is what one rule
-happened to keep from its premises, and what a conclusion keeps from its premises is a
-decision being made rule by rule, with nobody assigned to notice the pattern.
+says who suffered the wrong and never who did it. The voiding chapter's finding keeps
+the other half: it carries the ground its signers cited and the signers themselves,
+and here the alarm keeps the ground — eligibility, contradicted — and lets go of who.
+What a conclusion keeps from its premises is a decision being made rule by rule, and
+the two rules nearest each other in this design made it opposite ways, with nobody
+assigned to notice the pattern.
 
 The second is that the alarm watches half the space. It fires on a reported placement
 at home that eligibility contradicts. The converse wrong — held at a facility while

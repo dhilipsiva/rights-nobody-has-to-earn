@@ -53,7 +53,7 @@ carried in single figures, which is where the rebalance has most to do.
 | associates | 6 |
 | requests | 8 |
 | receives | 72 |
-| challenges | 24 |
+| challenges | 25 |
 | governs | 33 |
 | is acted upon | 70 |
 
@@ -69,7 +69,7 @@ what matters is the book's shape, not the chapter's.
 | private-civic | 28 |
 | democratic | 35 |
 | coercive | 42 |
-| records | 31 |
+| records | 32 |
 | argument | 7 |
 
 Whether a passage follows its pattern's own arc — seeks, responds,
@@ -96,7 +96,7 @@ checked here.
 | Personhood and equality | 20 | 9 | 10 |
 | Public institutions | 11 | 10 | 12 |
 | Public safety, policing and use of force | 5 | 3 | 8 |
-| Records and accountability | 13 | 16 | 18 |
+| Records and accountability | 13 | 17 | 18 |
 
 ## Every passage
 
@@ -293,8 +293,9 @@ checked here.
 | 25-01 | 25-voiding.md | It takes two, from two places | Records and accountability | ARTICLES | protective | two examiners from two bodies | is acted upon | works | yes | records | `book-1/25-voiding.pins.nibli` |
 | 25-02 | 25-voiding.md | The guards that turn around | Records and accountability | ARTICLES | protective | guards pointing back at the examiner | is acted upon | works | no | records | `book-1/25-voiding.pins.nibli` |
 | 25-03 | 25-voiding.md | What has to cross the record | Records and accountability | ARTICLES | protective | a void carried across the record | is acted upon | works | yes | records | `book-1/25-voiding.pins.nibli` |
-| 25-04 | 25-voiding.md | What it costs | Records and accountability | ARTICLES | protective | independence found, not guessed from silence | is acted upon | unresolved | yes | records | `book-1/25-voiding.pins.nibli` |
-| 25-05 | 25-voiding.md | The child with nobody | Records and accountability | ARTICLES | protective | the child with nobody: one birth entry and nothing else | is acted upon | works | no | coercive | `book-1/25-voiding.pins.nibli` |
+| 25-04 | 25-voiding.md | The way back, and who has to answer | Records and accountability | ARTICLES | continuity | a credibility finding that can end | challenges | continuity-remedy | no | records | `book-1/25-voiding.pins.nibli` |
+| 25-05 | 25-voiding.md | What it costs | Records and accountability | ARTICLES | protective | independence found, not guessed from silence | is acted upon | unresolved | yes | records | `book-1/25-voiding.pins.nibli` |
+| 25-06 | 25-voiding.md | The child with nobody | Records and accountability | ARTICLES | protective | the child with nobody: one birth entry and nothing else | is acted upon | works | no | coercive | `book-1/25-voiding.pins.nibli` |
 | 26-00 | 26-clawback.md | (preamble) | Economy, property, work and commons | ARTICLES | protective | recognition stopping when credibility goes | is acted upon | works | no | private-civic | `book-1/26-clawback.pins.nibli` |
 | 26-01 | 26-clawback.md | What it cannot reach | Economy, property, work and commons | ARTICLES | protective | what clawback cannot reach | is acted upon | works | yes | private-civic | `book-1/26-clawback.pins.nibli` |
 | 26-02 | 26-clawback.md | Cira, and the rule that is no longer here | Economy, property, work and commons | ARTICLES | continuity | the student rule that was deleted | is acted upon | continuity-remedy | no | private-civic | `book-1/26-clawback.pins.nibli` |

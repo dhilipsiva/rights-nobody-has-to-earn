@@ -500,7 +500,9 @@ below.
 - **Shield:** protection against conviction-based imprisonment while an exposure
   of an authority stands, subject to the chapter's stated boundaries.
 
-- **Voiding:** the conclusion that a person's credibility no longer counts.
+- **Voiding:** a recorded finding against a person's credibility. It closes the
+  three doors recognition is minted through and records one loss; it reaches
+  nothing else, and a recorded expungement ends it.
 
 - **Clawback:** the loss of recognition that follows voiding; it cannot reduce
   the floor.

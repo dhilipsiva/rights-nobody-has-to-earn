@@ -112053,7 +112053,7 @@
       "response_change": "The examiner rule gained the voiding guard, the same shape as the other doors.",
       "now_follows": "A voided person examines and the mint refuses; the clawback registers on the forced probe.",
       "proof_ref": "book-1/25-voiding.pins.nibli::reported as forgery",
-      "negative_control_ref": "book-1/10-contribution.md::That contradiction was closed by making the examination",
+      "negative_control_ref": "book-1/10-contribution.md::The examination door is where that costs the most to hold",
       "still_does_not_follow": "A person in good standing still mints from a bare documented pair with no grounds, and the guards cover the named doors only.",
       "residuals": [
         "FS-DFT-10"
@@ -112063,7 +112063,7 @@
       "envelope_id": "FS-ENV-00",
       "owner_ref": "CLAUDE.md::Claim-scoped resolution receipts replace confession-as-ending",
       "eligible_gate": "gate-a",
-      "reader_mapping_ref": "book-1/25-voiding.md::Those are real repairs to the attacks this chapter used to disclose"
+      "reader_mapping_ref": "book-1/25-voiding.md::a raw mark alone destroys nobody's"
     },
     {
       "id": "FS-RCP-05",

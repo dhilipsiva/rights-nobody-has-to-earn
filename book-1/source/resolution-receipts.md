@@ -125,6 +125,34 @@ gives disclosure no credit for closure.
 
 **What remains external or open.** The asking itself. The route begins when somebody files, and nothing here obliges anybody to notice a person who has not.
 
+### voiding-without-a-ground — resolved-for-claim
+
+*Told in* `25-voiding.md`, "It takes two, from two places".
+
+**What failed.** A credibility finding took two documented examinations from two independently credentialed signers and asked nothing about what they had found, so the record could always show who destroyed a person's word and never on what. Requiring a shared cited ground alone was not enough either: the entry naming a ground is the entry an examiner is paid for, and two examiners who looked on a complaint and found nothing would have voided the person they cleared.
+
+**What changed.** Both signers must cite the same ground and the ground must be one of a closed vocabulary of findings — a recorded lie, a fabricated record, a concealed conflict, evidence withheld — built the way every landed family builds one, with `member` conclusion-only and one rule per admitted value. The pins run the clean pair first: both are paid for the look and the person keeps their word; one finding is still one signer; the second matching finding lands it.
+
+**How the former attack is rerun.** `book-1/25-voiding.pins.nibli`
+
+**What still does not follow.** That a named finding is true. Two signers who cite a lie where there was none void an innocent exactly as smoothly as two honest ones void a liar; what the closure buys is that the word must be one of the named findings and that widening the list is a visible edit.
+
+**What remains external or open.** Whether a reason was ever given to the person. The audit body owes it and no rule reads a duty as evidence it was discharged.
+
+### voiding-with-no-way-back — resolved-for-claim
+
+*Told in* `25-voiding.md`, "The way back, and who has to answer".
+
+**What failed.** A recorded expungement stopped only the mark carried out of an earlier record. The pair of examinations that voided somebody in this record, and an adjudicated lie, both derived the finding again in the same breath, so the appeals body could declare a voiding spent and the record would disagree with it.
+
+**What changed.** Every route that reaches a credibility finding on a person now reads the same recorded expungement, and Article 5's conflict rule deliberately does not, because that void tracks a judgment still on the record and still conflicted. The split is asserted by membership in the development tests rather than left to whoever next edits an article.
+
+**How the former attack is rerun.** `book-1/25-voiding.pins.nibli`
+
+**What still does not follow.** That anybody writes the pair. Nothing obliges a body to forgive, the two entries authenticate neither writer nor purpose, and a generic judgment can sit ready before a mark exists.
+
+**What remains external or open.** The pen, which follows the recall precedent and needs re-seating rather than automatic return.
+
 ## operationally-unresolved
 
 ### unread-duty — operationally-unresolved

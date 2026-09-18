@@ -22,8 +22,12 @@
 ? permits(Review, Boss).
 # => TRUE
 
-# ...and the void STILL fails, because the multi-sig's own kept conjuncts
-# catch what the credential rules no longer do. This is the arming case:
-# against a copy with the conjuncts stripped as well, this verdict flips.
+# ...and the void STILL fails, because the multi-sig's own kept conjuncts catch
+# what the credential rules here do not. That this pin tests the conjuncts and
+# not something else is not asserted here: the sibling case
+# counterfactual/unguarded-pen-and-no-conjuncts strips them on top of this one
+# and pins the same query TRUE. Both signers hold case-bound independence
+# findings for Tyr and cite the same recorded ground, so nothing else is
+# standing in the way.
 ? false(Tyr).
 # => FALSE

@@ -2867,6 +2867,66 @@ rather than only quoted. It is sabotage-tested against the exact defect. Its
 scope is quoted **rules** — a statement opening `all ` and carrying an arrow;
 the vocabulary listings are set in columns for the page and are outside it.
 
+**Item 02 — the credibility finding, landed 2026-09-18.** Controlling record:
+`book-1/appendix/decisions/credibility-finding-decision.md`. Measured before
+changing anything: `false/1` is read by five rules — the three recognition
+doors and Article 9's law label under negation, and the clawback leaf
+positively — and by nothing else, so a voiding reaches recognition and one
+recorded loss. No floor actuality, no `owe`, no `entitled`, no `person`, no
+`prisoner`, no `travel`, no `decide`, no `authority` and no `permits` reads it;
+credentials read the reconciled carried mark rather than this conclusion.
+`a_credibility_voiding_reaches_exactly_the_measured_set` asserts that set by
+membership with a sabotage control, because the chapter states it as the whole
+consequence.
+
+Three defects, all repaired. **The finding had no ground** while the paid door
+in the same article already required one — so both signers must now cite the
+same ground, **and the ground must belong to a closed vocabulary**. That second
+condition is the one to remember, because requiring a shared ground alone
+closes one hole and opens a worse one: `cite` is what the reward rule reads,
+an examiner is paid for looking on any recorded ground, so two examiners who
+looked on a complaint and found nothing would have voided the person they
+cleared. `CredibilityGroundVocabulary` — a recorded lie, a fabricated record, a
+concealed conflict, evidence withheld — is built the way every landed family
+builds one: `member` is conclusion-only and one rule per admitted value is what
+closes it. The shipped cast keeps `Complaint` for Bela (the occasion, which
+still pays) and gains the adverse ground beside it, so `false(Bela)` is unmoved;
+every exhibit in chapter 25 carries its own admitted ground so the conjunct each
+exhibit is about stays the only failing one. **Expungement reached one route in three** — measured,
+`clean(Bela)` derived and `false(Bela)` derived anyway — so `~clean` now guards
+the multi-sig rule and the adjudicated-lie rule beside the carried mark;
+Article 5's conflict rule deliberately does not, because that void tracks a
+judgment still on the record and still conflicted, and
+`a_recorded_expungement_reaches_every_voiding_that_turns_on_a_finding` asserts
+the split. **The finding was unanswerable**: two rules now conclude a duty on
+the audit body toward the person (personhood in the body, keeping it off
+Article 9's proposals) and a review duty on the appeals body from the subject's
+own contest of the cited ground. The first is written in the TYPED three-place
+form, and the reason is worth carrying: the two-place `obliged(Review, ·)` is
+Article 8b's marker duty, and a second producer of it made chapter 30's "silent
+where the markers are silent" pins read TRUE. The full verifier caught it in
+thirty-six cases; naming the duty keeps the two apart. Neither is read by anything, so neither is
+evidence that a reason was given or a review happened.
+
+A fourth finding was coverage rather than design, and it is the one to
+remember. `false(Tyr)` was blocked twice over — by the carried void chapter 25
+argues from, and by two independence findings nobody had written for that pair
+— so `counterfactual/unguarded-pen`'s arming pin passed without testing the
+conjuncts it exists to justify, and the comment claiming the verdict would flip
+had stopped being true. The independence findings are now in the cast and
+`counterfactual/unguarded-pen-and-no-conjuncts` applies the unguarded route and
+the stripped conjuncts together, pinning `false(Tyr)` TRUE. **A claim in a
+comment that a control would flip is not a control.**
+
+Rule count 7082 → 7088; predicates, derived predicates, strata and the floor
+unchanged. What was not done and why — a case-scoped `false/2` (the reach is
+not case-shaped and the arity measured at roughly twenty-two times runtime when
+`reward` was tried), an expiry (an ending that ran while nobody acted would
+clear the findings of the people nobody reviewed), and a bar on a voided person
+signing inside one record (the three routes examined each reintroduce the loop
+or a finding with no finder) — is recorded with its examined alternatives in the
+decision.
+
 ### Measured Nibli capability boundaries
 
 Each is a dated measurement against a named engine revision, not a timeless

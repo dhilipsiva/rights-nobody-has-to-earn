@@ -989,7 +989,7 @@
       "future_trigger": "Revise when authenticated, independently witnessed writer controls are formal and tested."
     },
     {
-      "artifact_ref": "book-1/25-voiding.md::They do not make the record self-authenticating.",
+      "artifact_ref": "book-1/25-voiding.md::None of that makes the record self-authenticating.",
       "current_claim": "The staged rules guarantee more consequences over supplied accepted records, but do not authenticate those records or make a successor arrive.",
       "classification": "revised",
       "reason": "The top assurance verdict remains explicitly not established after the staged T3 safety path because supplied-record derivation is not assurance of the record, witnesses, or outside time service.",

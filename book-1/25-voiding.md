@@ -1,44 +1,56 @@
 # Voiding
 
-To void someone's credibility is to say: this person's word no longer counts. A loss is
-recorded against their recognition. What they might have signed, they will not sign again — and
-*again* is doing quiet work in that sentence, which the section on time collects. It is
-a severe legal consequence within the credibility system, and unlike conviction
-it can be imposed without a court. The separate protective powers described later
-do not draw their authority from it.
+To void someone's credibility is to record a finding against it, and the first thing
+worth having is what such a finding costs, because the design is exact about it and
+the exactness is the protection. It closes the three doors through which recognition
+is minted, and it records one loss. That is the whole reach. Standing, the floor,
+movement, the ballot and public answerability are untouched — not by forbearance, but
+because the rules carrying them do not read this finding at all, which is a property
+of the enacted lines and is checked as one.
 
-So the question is what it takes. The answer is a list of conditions, and every one
-of them is there because of a specific way this could go wrong.
+It is still a severe thing to do to somebody, and unlike conviction it can be imposed
+without a court. The separate protective powers described later draw no authority
+from it. So there are two questions rather than one: what it takes to reach a finding,
+and what the person it is about can do afterwards. Both answers are lists of
+conditions, and every condition is there because of a specific way this could go wrong.
 
 ## It takes two, from two places
 
 Bela was examined by Gia and by Hex. Both hold a pen, and — this is the part that does
 the work — their pens come from different bodies. The electorate seated Gia; the
-convocation seated Hex. Both looked at Bela, both recorded what they found. Bela's
-credibility is voided.
+convocation seated Hex. Both looked at Bela, both recorded what they found, and both
+named the same ground for it. Bela's credibility is voided.
 
-Something is missing from that account, and the record is the reason. What did Gia and
-Hex find? The record does not say. It holds that each of them judged the case and that
-each documented it — who examined, who was examined, and nothing else. No charge, no
-reason, no text of any finding. The rule that voids Bela reads the fact of two
-documented examinations from two independent signers; what the examinations contained
-is not a thing this record can hold. That is chapter 3's discipline doing exactly what
-it promised — no loose conclusions, nowhere for an accusation to hide — and it has a
-price that belongs beside the instrument: the record can always show you who destroyed
-a person's word, and it can never show you why. The why lives outside, in whatever the
-examiners would say if asked. Whether it should be brought inside — a written ground,
-the way the seating and the judgment are written — is a question this design leaves
-open where it matters most, and answers where it matters less: the chapter on
-contribution now shows an examiner paid only when they cite what they looked on,
-while the examinations that void a person still ask for no reason at all. The
-sharper instrument keeps the silence.
+The ground is two conditions doing two different jobs, and the second one is the
+reason the first is not enough. Both signers must name the *same* ground, which binds
+the pair to one subject matter: two unrelated looks that happen to name the same
+person are two looks rather than a finding. And the ground must be one the design
+names as capable of carrying a credibility finding — a recorded lie, an invented
+entry, a concealed interest, evidence withheld. That list is closed, and closing it is
+what separates a finding from the occasion of an examination.
 
-Two signatures from the same body would not have been enough. That is a change from an
-earlier version of this design, where any two credentialed people sufficed, and the
-reason for the change is narrow enough to state exactly: it means capturing one
-appointing body no longer gives you both signatures. It does not mean the signatures
-are harder to forge. Chapter 23 is where that distinction is argued; it matters here
-because this is the rule the distinction is about.
+Watch what happens without the second condition. The entry naming a ground is the same
+entry the chapter on contribution shows an examiner being paid for, and an examiner is
+paid for looking on any recorded ground — a complaint included, because a complaint is
+a perfectly good reason to look. So two examiners who looked on a complaint, found
+nothing, and recorded that they had looked would be two documented examinations naming
+the same ground. They would void the person they had just cleared. The pins run that
+pair: both are paid, and the person keeps their word. Then one records a finding,
+which is still one signer. Then the other records the same finding, and it lands.
+
+What the closed list buys is smaller than it sounds, and the limit belongs in the same
+breath. It does not make a named finding true. Two signers who cite a lie where there
+was none void an innocent exactly as smoothly as two honest ones void a liar. What it
+buys is that the word has to be one of the named findings rather than anything at all,
+that widening the list is a visible edit to the design rather than a word typed into a
+slot, and that the person has something specific and attributable to contest. That is
+the purchase every entry in this design makes, and the chapter on evidence argues why
+it cannot be more.
+
+Two signatures from the same body would not be enough, and the reason is narrow enough
+to state exactly: capturing one appointing body does not get you both signatures. It
+does not make either signature harder to forge. Chapter 23 is where that distinction
+is argued; it matters here because this is the rule the distinction is about.
 
 Now Esa. Koa recorded a finding about Esa — a real entry, on the record, and also the
 whole of Koa's presence in this society's files. Koa was never seated by anybody, holds
@@ -123,29 +135,38 @@ history take effect. A separate pair of witnessed entries can
 also say that one event preceded another, though the voiding rule does not use that
 order to decide whether Vex may sign.
 
-That is not hypothetical, and the design does not stop it. There is a man in this
-record whose own credibility is already gone — the review body examined a finding he
-made, found it deceitful, and voided him for it. Hand him a pen anyway and nothing
-objects. He is a discredited man and a credentialed one at the same moment, and he can
-put his name to a stranger's voiding and make it stick.
+That is not hypothetical, and inside a single record the design does not stop it.
+There is a man in this record whose own credibility is already gone — the review body
+examined a finding he made, found it deceitful, and voided him for it. Hand him a pen
+in the same record and nothing objects. He is a discredited man and a credentialed one
+at the same moment, and he can put his name to a stranger's voiding and make it stick.
 
 The obvious repair is to say so directly: somebody whose credibility is gone may not
-sign. Try to write that down and the design will not take it, and the refusal is not
-an oversight or an omission anyone could correct. Whether your word counts for
-anything is worked out *from* who signed against you. So who may sign cannot then be
-worked out from whose word counts for nothing — the question would have to answer
-itself before it could be asked. The narrower version fails for the same reason: a
-rule saying the void declines to count a signature from someone already voided is
-asking about a conclusion it is itself in the middle of reaching. This is the same
-refusal that keeps a law from punishing you for having no food, arriving from the
-other side, and it is worth noticing that the mechanism protecting the floor is the
-mechanism blocking this repair. You do not get one without the other.
+sign. The design will not take that rule, and the reason is structural rather than
+regrettable. Whether your word counts for anything is worked out *from* who signed
+against you, so who may sign cannot then be worked out from whose word counts for
+nothing; the question would have to answer itself before it could be asked. The
+narrower version fails identically. This is the refusal that keeps a law from
+punishing you for having no food, met from the other side, and the mechanism
+protecting the floor is the mechanism blocking this repair. You do not get one without
+the other.
 
-Which is why the guard still begins with written marks rather than the voiding
-conclusion itself. The difference now is that one mark is not trusted alone. A rule
-compares the witnessed predecessor and successor and derives the carried history only
-when they agree. The record can therefore report an omitted or invented carry instead
-of silently treating it as truth.
+The two ways around it were tried and both are worse. A pen could read the raw mark
+somebody writes rather than the conclusion the design reaches — but that mark is one
+unsigned entry, and a rule reading it would let a single write close anybody's pen,
+which is the finding with no finder this book refuses everywhere else. Or a pen could
+read a witnessed order saying the voiding came first; the design can represent that
+order, but the thing being ordered is still the conclusion, and reading it is the same
+loop arriving by a longer route.
+
+What is left is what the pen actually requires, and it is a positive demand rather
+than an absence: a signer must carry a clearance witnessed into the current record and
+agreed by two public bodies, and a voiding carried forward on that line closes the pen.
+So the policy — a discredited person does not sign — holds across records and fails
+inside one. The window is a record rather than an era, the cost falls on whoever is
+examined inside it, and what would close it is a representation in which a credential
+can read an ordered finding without reading the conclusion that finding is. Nothing in
+the design has one.
 
 This remains a discipline over public records, not proof that history looked the way
 the witnesses said. The design checks agreement, exact declared scope, replacement, and
@@ -153,34 +174,82 @@ the selected current record line. It does not prove a record inventory actually 
 either witness honest, find a deletion made before the first accepted record, or force
 a later record to be published.
 
+## The way back, and who has to answer
+
+A finding that cannot end is a different instrument from a finding that can, and this
+one can end. The appeals body records that the voiding is spent, standing beside a
+judgment of that body, and every route that reaches a credibility finding stops: the
+pair of examinations, the adjudicated lie, and the mark carried from an earlier record
+all read the same expungement. The pins run it on a person with everything the void
+asks for — two pens from two bodies, two independence findings, two documented
+examinations, one shared finding from the admitted list — and nothing about their
+word is concluded and nothing is taken from their recognition.
+
+One route deliberately does not read it, and the exception is the interesting part.
+The parent who judged their own child stays voided through an expungement, because
+that finding is not about something the person did and then paid for. It tracks a
+judgment that is still on the record and still conflicted, and forgiving the judge
+while the judgment stands would leave the conflict exactly where it was and call it
+repaired. The repair there is to withdraw the judgment.
+
+The pen does not come back with the word. That follows the recall precedent: a
+withdrawn power needs re-seating rather than automatic return, and re-seating stays
+blocked while the carried mark stands.
+
+Nothing ends by itself. There is no period after which a voiding lapses, and that is
+chosen rather than missing — an ending that ran while nobody acted would clear the
+findings of exactly the people nobody reviewed, which is the population the instrument
+is most likely to have got wrong. Ending is a positive act by a named body, the same
+polarity release has in the chapter on what punishment takes.
+
+Two duties sit on the finding itself. The audit body owes an account of the ground to
+the person the finding was made against. That duty is named rather than left generic,
+and the naming does real work: the audit's other duty — the one the chapter on the
+system noticing itself is about — arises only where its alarm fired, and a second
+unnamed duty on the same body would make that claim untestable in the chapter that
+makes it. The duty attaches to people on the roster and not to the dead amendment
+proposals that share the relation, which is why it reads personhood.
+
+The second is the person's own. A contest of the cited ground lands a review duty on
+the appeals body, needing nobody's permission — not the signers', not a previous
+reviewer's, and not a prior finding that the contest has merit.
+
+Neither duty withdraws the finding, and neither is evidence that anything happened. A
+duty to give reasons is not reasons given, and a duty to review is not a review. What
+the design establishes is that a credibility finding is answerable: there is a named
+ground, a named bearer of the duty to explain it, and a route the subject can open
+alone. Whether anybody answers is a thing to observe in the world.
+
 ## What it costs
 
-Two gaps, both disclosed. The second is the worse of them, and the reason is worth
-having in advance: the first has to be arranged, and the second only has to be
-forgotten.
+Three costs, and none of them is hidden behind the conditions above.
 
-**Independence must be found, not guessed from silence.** The old condition tried to
-manufacture independence from missing parent, marriage, and sibling entries. It could
-not see friendship, a shared household, financial dependence, care dependence, or
-any relationship the vocabulary omitted; worse, a missing record looked exactly like
-no relationship.
+**Nothing here decides whether a finding is true.** Every condition is about who wrote
+what, from which body, about whom, naming which ground, with which independence
+finding beside it. Two compromised signers holding real credentials, affirmatively
+found independent, citing the same ground, void an innocent person exactly as smoothly
+as two honest ones void a fraudulent one. That is not a gap in the conditions; it is
+the ceiling on what conditions of this kind can reach. The price they exact is that
+every step has a name against it and a route to contest it, and the price is paid by
+whoever has to arrange more names.
 
-The current rule refuses that shortcut. Both signers need affirmative, case-bound
-independent-reviewer findings for the person affected. Those findings must be
-challengeable and cannot be borrowed across cases. This closes the logical error; it
-does not make the finding true, prove that the checking body exists, or eliminate
-capture. Two compromised writers can still supply matching false findings. The price
-has moved from pretending silence is evidence to requiring an attributable decision
-whose source and conflicts can be contested.
+**Independence is found rather than inferred, and finding it is somebody's job.** Both
+signers need affirmative, case-bound findings that they are independent for the person
+affected — challengeable, not borrowable across cases. A rule reading the absence of
+parent, marriage and sibling entries instead would see no friendship, no shared
+household, no financial or care dependence, and would read a missing record as a
+missing relationship. Requiring the finding closes that, and it does not make the
+finding true, prove the checking body exists, or eliminate capture. What it does is
+move the price from pretending silence is evidence to requiring an attributable
+decision whose source and conflicts can be contested.
 
-**And the sequence discipline still rests on outside witnesses.** Omit a required
-carry from an attested successor and the design now reports the omission. Insert a
-carried mark with no matching predecessor and it reports a forgery; the raw mark alone
-no longer destroys anyone's word. Public pens also require positive matched clearance,
-so withholding a clear carry closes a pen instead of silently cleaning its holder.
-Those are real repairs to the attacks this chapter used to disclose.
+**And the sequence discipline rests on outside witnesses.** Omit a required carry from
+an attested successor and the design reports the omission. Insert a carried mark with
+no matching predecessor and it reports a forgery; a raw mark alone destroys nobody's
+word. A public pen requires positive matched clearance, so withholding a clear carry
+closes the pen instead of silently cleaning its holder.
 
-They do not make the record self-authenticating. Two compromised witnesses can agree
+None of that makes the record self-authenticating. Two compromised witnesses can agree
 on the same false lists. A transition can be withheld, replayed outside the selected
 constitutional line, or never published. A fact deleted before the first attested
 record leaves nothing here to compare. And because the machinery only adds conclusions
@@ -203,8 +272,10 @@ food, shelter, care, learning, safety, speech, belief and company on the same
 terms as anybody else, and the pins ask all eight after the voiding rather than
 before.
 
-What the chapter's own worry costs this child is worth stating too. Voiding
-asks who and never why, and a person with one entry has nothing on the record
-that could contradict a finding about them. The design's answer is not that
-this cannot happen. It is that the finding cannot reach anything the child
-needs to stay alive.
+What the chapter's own conditions cost this child is worth stating too. A ground
+has to be cited and an audit body owes the child an account of it, and both of
+those are duties rather than arrivals; a person with one entry has nothing on
+the record that could contradict the ground, and nobody to open the contest
+that would land the review duty. The design's answer is not that this cannot
+happen. It is that the finding reaches recognition and a recorded loss and
+stops, and that nothing it reaches is anything the child needs to stay alive.

@@ -3579,10 +3579,10 @@ Every receipt records its eligible gate beside the ledger's standing gate status
 - Why it failed: The examiner rule carried deceit and broken guards but not the voiding guard the other two doors already had.
 - The response: The examiner rule gained the voiding guard, the same shape as the other doors.
 - What now follows: A voided person examines and the mint refuses; the clawback registers on the forced probe.
-- Proof: `book-1/25-voiding.pins.nibli::reported as forgery`; negative control: `book-1/10-contribution.md::That contradiction was closed by making the examination`
+- Proof: `book-1/25-voiding.pins.nibli::reported as forgery`; negative control: `book-1/10-contribution.md::The examination door is where that costs the most to hold`
 - What still does not follow: A person in good standing still mints from a bare documented pair with no grounds, and the guards cover the named doors only.
 - Residuals: FS-DFT-10
-- Reader mapping: `book-1/25-voiding.md::Those are real repairs to the attacks this chapter used to disclose`; admissible evidence: executable pins over the current source
+- Reader mapping: `book-1/25-voiding.md::a raw mark alone destroys nobody's`; admissible evidence: executable pins over the current source
 
 ### FS-RCP-05 — The Esa passage tells the truth about Koa
 

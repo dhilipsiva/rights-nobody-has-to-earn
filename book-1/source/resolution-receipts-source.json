@@ -68,7 +68,7 @@
       "what_changed": "Both signers now need affirmative, case-bound independent-reviewer findings that are challengeable and cannot be borrowed across cases.",
       "state": "externally-bounded",
       "rerun": "book-1/source/counterfactual/no-missing-kinship-independence.pins.nibli",
-      "phrase": "Independence must be found, not guessed from silence",
+      "phrase": "would read a missing record as a missing relationship",
       "still_not_established": "That the finding is true, that the checking body exists, or that capture is eliminated. Two compromised writers can still supply matching false findings.",
       "external_or_open": "Authentication of the reviewers is external; the price moved from pretending silence is evidence to requiring an attributable decision."
     },
@@ -167,6 +167,30 @@
       "phrase": "an unheard appeal does not empty a conviction",
       "still_not_established": "That anybody was heard. Every stage but relief concludes a duty, and no rule reads a duty, so a request that lands one proves no review happened and no interim protection reached anyone.",
       "external_or_open": "The asking itself. The route begins when somebody files, and nothing here obliges anybody to notice a person who has not."
+    },
+    {
+      "id": "voiding-without-a-ground",
+      "chapter": "book-1/25-voiding.md",
+      "section": "It takes two, from two places",
+      "what_failed": "A credibility finding took two documented examinations from two independently credentialed signers and asked nothing about what they had found, so the record could always show who destroyed a person's word and never on what. Requiring a shared cited ground alone was not enough either: the entry naming a ground is the entry an examiner is paid for, and two examiners who looked on a complaint and found nothing would have voided the person they cleared.",
+      "what_changed": "Both signers must cite the same ground and the ground must be one of a closed vocabulary of findings — a recorded lie, a fabricated record, a concealed conflict, evidence withheld — built the way every landed family builds one, with `member` conclusion-only and one rule per admitted value. The pins run the clean pair first: both are paid for the look and the person keeps their word; one finding is still one signer; the second matching finding lands it.",
+      "state": "resolved-for-claim",
+      "rerun": "book-1/25-voiding.pins.nibli",
+      "phrase": "the ground must be one the design names as capable of carrying a credibility finding",
+      "still_not_established": "That a named finding is true. Two signers who cite a lie where there was none void an innocent exactly as smoothly as two honest ones void a liar; what the closure buys is that the word must be one of the named findings and that widening the list is a visible edit.",
+      "external_or_open": "Whether a reason was ever given to the person. The audit body owes it and no rule reads a duty as evidence it was discharged."
+    },
+    {
+      "id": "voiding-with-no-way-back",
+      "chapter": "book-1/25-voiding.md",
+      "section": "The way back, and who has to answer",
+      "what_failed": "A recorded expungement stopped only the mark carried out of an earlier record. The pair of examinations that voided somebody in this record, and an adjudicated lie, both derived the finding again in the same breath, so the appeals body could declare a voiding spent and the record would disagree with it.",
+      "what_changed": "Every route that reaches a credibility finding on a person now reads the same recorded expungement, and Article 5's conflict rule deliberately does not, because that void tracks a judgment still on the record and still conflicted. The split is asserted by membership in the development tests rather than left to whoever next edits an article.",
+      "state": "resolved-for-claim",
+      "rerun": "book-1/25-voiding.pins.nibli",
+      "phrase": "every route that reaches a credibility finding stops",
+      "still_not_established": "That anybody writes the pair. Nothing obliges a body to forgive, the two entries authenticate neither writer nor purpose, and a generic judgment can sit ready before a mark exists.",
+      "external_or_open": "The pen, which follows the recall precedent and needs re-seating rather than automatic return."
     }
   ]
 }

@@ -115,24 +115,28 @@ just strike out what you had; it closes the routes by which you would rebuild. S
 voided can still teach, still work, still contribute in every way that matters to the
 people around them — and none of it registers.
 
-The examination route was the last one brought under the same rule. For most of
-the design's life, teaching and work stopped supporting recognition for a
-voided person while examination did not. Vex could hold no pen and could sign
-nothing that counted toward voiding anybody, yet Vex's examination could still
-support recognition. That contradiction was closed by making the examination
-route read the same void that the other two already read.
+The examination door is where that costs the most to hold, and holding it is the
+consistent answer rather than the harsh one. Vex holds no pen and can sign nothing
+that counts toward voiding anybody; Vex's examinations earn nothing either. An
+examination is nothing but its author's word, and a voiding is the finding that the
+word is worthless, so paying for one while refusing the other would not be a policy.
+The two doors read the same recorded ground as well: the entry naming what an
+examiner looked on is the entry a voiding has to cite, so an examiner cannot be paid
+for an examination they did not ground, and cannot ground a voiding they were not
+paid for.
 
-The record can now forgive. A forgiveness entry naming Appeals, beside the
-required Appeals judgment, prevents the carried void from forming again. All
-three recognition routes then reopen because the condition that closed them no
-longer follows. Existing work can support recognition from that point,
-including work recorded while the void stood. Nothing the person does can
-compel this reopening, and the pair still authenticates neither its writer nor
+The record holds the way back. A forgiveness entry naming Appeals, beside the
+required Appeals judgment, stops the void deriving — from the examinations
+themselves, from an adjudicated lie, and from a mark carried out of an earlier
+record. All three recognition routes reopen, because the condition that closed them
+does not follow. Existing work supports recognition again, including work recorded
+while the void stood. Nothing the person does compels that pair to be written, and
+the pair still authenticates neither its writer nor
 its purpose.
 
 Whether the whole arrangement is right is a genuine question and the design does not
-argue for it. It is simply what follows from putting the same condition on all three
-doors — and, now, from the same record holding the way back.
+argue for it. It is what follows from putting the same condition on all three doors,
+and from the same record holding the way back.
 
 ## Recognition for looking at people
 

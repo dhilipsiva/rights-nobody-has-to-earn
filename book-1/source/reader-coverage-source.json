@@ -2879,6 +2879,21 @@
     {
       "id": "25-04",
       "chapter": "book-1/25-voiding.md",
+      "section": "The way back, and who has to answer",
+      "domain": "Records and accountability",
+      "family": "ARTICLES",
+      "function": "continuity",
+      "setting": "a credibility finding that can end",
+      "trajectory": "continuity-remedy",
+      "basis": "book-1/25-voiding.pins.nibli",
+      "pattern": "records",
+      "postures": [
+        "challenges"
+      ]
+    },
+    {
+      "id": "25-05",
+      "chapter": "book-1/25-voiding.md",
       "section": "What it costs",
       "domain": "Records and accountability",
       "family": "ARTICLES",
@@ -2892,7 +2907,7 @@
       ]
     },
     {
-      "id": "25-05",
+      "id": "25-06",
       "chapter": "book-1/25-voiding.md",
       "section": "The child with nobody",
       "domain": "Records and accountability",

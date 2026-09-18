@@ -131,26 +131,34 @@ And here is the rule the voiding chapters orbit — the one that can declare a
 person's word worthless:
 
 ```
-all $a: all $b: all $audited: permits(Review, $a) &
-permits(Tribunal, $b) &
+all $a: all $b: all $audited: all $ground:
+permits(Review, $a) & permits(Tribunal, $b) &
 authorized($a, IndependentReviewer, $audited) &
 authorized($b, IndependentReviewer, $audited) &
 judge($a, $audited) & capture($a, $audited) &
-~deceive($a, $audited) & judge($b, $audited) &
-capture($b, $audited) & ~deceive($b, $audited) &
+cite($a, $ground, $audited) & ~deceive($a, $audited) &
+judge($b, $audited) & capture($b, $audited) &
+cite($b, $ground, $audited) & ~deceive($b, $audited) &
+member($ground, CredibilityGroundVocabulary) &
 ~($a = $b) & ~broken($a) & ~broken($b) &
-~match($a, CarriedVoid) & ~match($b, CarriedVoid)
+~match($a, CarriedVoid) & ~match($b, CarriedVoid) &
+~clean($audited)
 -> false($audited).
 ```
 
-It is long because it counts qualified, case-bound reviewers, not signatures:
-two distinct people, each credentialed by a different body, each affirmatively
-authorized as an independent reviewer for this audited person, each having
-examined and documented the person, and neither lying, broken, or bearing an
-effective carried void. Missing parent, marriage, or sibling entries prove
-nothing about independence. The authorization facts are live in the shipped
-record, and a source-removal counterfactual proves that restoring the old
-absence-based route changes the result.
+It is long because it counts qualified, case-bound reviewers rather than
+signatures: two distinct people, each credentialed by a different body, each
+affirmatively authorized as an independent reviewer for this audited person,
+each having examined and documented the person and cited the same ground for the
+finding, and neither lying, broken, or bearing an effective carried void. Two of
+those conjuncts repay a second look. The ground must be one of a closed list the
+file names, which is what separates a finding from the occasion of an
+examination — an examiner is paid for looking on a complaint, and a complaint
+cannot void anybody. And the last conjunct is the way out: a recorded
+expungement stops the rule concluding anything at all. Missing parent, marriage, or sibling entries prove nothing
+about independence; the authorization facts are live in the shipped record, and
+a source-removal counterfactual proves that an absence-based route reaches a
+different result.
 
 Two shorter blocks do more work than everything above. The first closes what
 may be *written*:

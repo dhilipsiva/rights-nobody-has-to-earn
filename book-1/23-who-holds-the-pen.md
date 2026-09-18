@@ -66,9 +66,12 @@ That hole is now closed in two places. The credential can only be reached by its
 Writing it down directly is not forbidden-and-punished; it is refused, so Sock and
 Puppet get no pen. And even credentialed signers must each carry an affirmative,
 case-bound independent-reviewer finding for the person whose credibility they would
-destroy. A generic label, an empty kinship field, or independence in another matter
-does not substitute. The record still does not prove that the supplied finding is
-true or that a reviewer exists in practice.
+destroy, and must each name the same finding for destroying it, drawn from a closed
+list of what a credibility finding may rest on. A generic label, an empty kinship
+field, independence in another matter, two examinations about two different things,
+or the mere occasion of a look does not substitute. The record still does not prove
+that a supplied finding is true, that a reviewer exists in practice, or that a named
+finding is anything more than a word somebody wrote.
 
 This is the same move as Chapter 3's, one level up. There, no one could write down a
 conclusion about a person. Here, no one can write down a power over them.

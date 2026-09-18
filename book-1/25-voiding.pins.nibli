@@ -15,7 +15,7 @@
 # is untouched. Pin a FALSE only where the KB could have said TRUE, and say in
 # the comment what would flip it.
 
-:expect-pins 50
+:expect-pins 76
 
 # "Bela was examined by Gia and by Hex, and their pens come from different
 #  bodies." — the cross-body requirement, exercised by the shipped case. These
@@ -186,6 +186,8 @@ judge(Sirefa, Targ).
 capture(Sirefa, Targ).
 judge(Scionfa, Targ).
 capture(Scionfa, Targ).
+cite(Sirefa, CredibilityGroundDeceit, Targ).
+cite(Scionfa, CredibilityGroundDeceit, Targ).
 
 ? permits(Review, Sirefa).
 # => TRUE
@@ -204,6 +206,8 @@ judge(Unrela, Targo).
 capture(Unrela, Targo).
 judge(Unrelb, Targo).
 capture(Unrelb, Targo).
+cite(Unrela, CredibilityGroundDeceit, Targo).
+cite(Unrelb, CredibilityGroundDeceit, Targo).
 authorized(Unrela, IndependentReviewer, Targo).
 authorized(Unrelb, IndependentReviewer, Targo).
 
@@ -223,6 +227,7 @@ choose(Electorate, Ambi).
 choose(Convocation, Ambi).
 judge(Ambi, Solo).
 capture(Ambi, Solo).
+cite(Ambi, CredibilityGroundDeceit, Solo).
 authorized(Ambi, IndependentReviewer, Solo).
 authorized(Ambi, IndependentReviewer, Solo).
 
@@ -257,6 +262,8 @@ judge(Lupo, Frisk).
 capture(Lupo, Frisk).
 judge(Partnr, Frisk).
 capture(Partnr, Frisk).
+cite(Lupo, CredibilityGroundFabricatedRecord, Frisk).
+cite(Partnr, CredibilityGroundFabricatedRecord, Frisk).
 authorized(Lupo, IndependentReviewer, Frisk).
 authorized(Partnr, IndependentReviewer, Frisk).
 
@@ -299,6 +306,8 @@ judge(Mara, Targ2).
 capture(Mara, Targ2).
 judge(Maro, Targ2).
 capture(Maro, Targ2).
+cite(Mara, CredibilityGroundDeceit, Targ2).
+cite(Maro, CredibilityGroundDeceit, Targ2).
 
 ? false(Targ2).
 # => FALSE
@@ -309,11 +318,174 @@ judge(Una, Targ3).
 capture(Una, Targ3).
 judge(Uno, Targ3).
 capture(Uno, Targ3).
+cite(Una, CredibilityGroundDeceit, Targ3).
+cite(Uno, CredibilityGroundDeceit, Targ3).
 authorized(Una, IndependentReviewer, Targ3).
 authorized(Uno, IndependentReviewer, Targ3).
 
 ? false(Targ3).
 # => TRUE
+
+# ── The examination that found nothing ───────────────────────────────────────
+# Everything the void asks for except a finding. Both examinations are
+# documented, both signers are credentialed by different bodies, both carry
+# case-bound independence findings for the same person, and both cite the
+# ground they looked on — a complaint, which is an occasion and not a finding.
+# They are paid for the look and nothing is concluded about the person they
+# cleared. Then one signer records a finding, which is still one signer. Then
+# the other records the same one.
+authorized(Nogra, ClearStatus, Epoch_Previous).
+observe(Chronicle, Nogra, Epoch_Previous, ClearScope).
+observe(TemporalReview, Nogra, Epoch_Previous, ClearScope).
+carries(Chronicle, Nogra, Epoch_Current, Epoch_Previous, ClearCarry).
+carries(TemporalReview, Nogra, Epoch_Current, Epoch_Previous, ClearCarry).
+authorized(Nogrb, ClearStatus, Epoch_Previous).
+observe(Chronicle, Nogrb, Epoch_Previous, ClearScope).
+observe(TemporalReview, Nogrb, Epoch_Previous, ClearScope).
+carries(Chronicle, Nogrb, Epoch_Current, Epoch_Previous, ClearCarry).
+carries(TemporalReview, Nogrb, Epoch_Current, Epoch_Previous, ClearCarry).
+choose(Electorate, Nogra).
+choose(Convocation, Nogrb).
+judge(Nogra, Targ4).
+capture(Nogra, Targ4).
+authorized(Nogra, IndependentReviewer, Targ4).
+cite(Nogra, Complaint, Targ4).
+judge(Nogrb, Targ4).
+capture(Nogrb, Targ4).
+authorized(Nogrb, IndependentReviewer, Targ4).
+cite(Nogrb, Complaint, Targ4).
+
+? permits(Review, Nogra).
+# => TRUE
+
+? permits(Tribunal, Nogrb).
+# => TRUE
+
+# Paid for the look, both of them.
+? reward(Nogra).
+# => TRUE
+
+? reward(Nogrb).
+# => TRUE
+
+# And the person they cleared keeps their word. A complaint is why an
+# examination happened; it is not among the findings one may rest on.
+? false(Targ4).
+# => FALSE
+
+cite(Nogra, CredibilityGroundDeceit, Targ4).
+
+# One signer's finding is not the pair's.
+? false(Targ4).
+# => FALSE
+
+cite(Nogrb, CredibilityGroundDeceit, Targ4).
+
+? false(Targ4).
+# => TRUE
+
+# ── The way back ─────────────────────────────────────────────────────────────
+# A record is a snapshot and not a sequence, so the examinations and the
+# appeals body's recorded expungement sit in it together and the question is
+# what derives. Everything the void asks for is here — two pens from two
+# bodies, two independence findings, two documented examinations, one shared
+# ground — and the expungement is the only failing conjunct. Nothing is
+# concluded about Purga's word and nothing is taken from their recognition.
+authorized(Reva, ClearStatus, Epoch_Previous).
+observe(Chronicle, Reva, Epoch_Previous, ClearScope).
+observe(TemporalReview, Reva, Epoch_Previous, ClearScope).
+carries(Chronicle, Reva, Epoch_Current, Epoch_Previous, ClearCarry).
+carries(TemporalReview, Reva, Epoch_Current, Epoch_Previous, ClearCarry).
+authorized(Revb, ClearStatus, Epoch_Previous).
+observe(Chronicle, Revb, Epoch_Previous, ClearScope).
+observe(TemporalReview, Revb, Epoch_Previous, ClearScope).
+carries(Chronicle, Revb, Epoch_Current, Epoch_Previous, ClearCarry).
+carries(TemporalReview, Revb, Epoch_Current, Epoch_Previous, ClearCarry).
+choose(Electorate, Reva).
+choose(Convocation, Revb).
+judge(Reva, Purga).
+capture(Reva, Purga).
+authorized(Reva, IndependentReviewer, Purga).
+cite(Reva, CredibilityGroundConcealedConflict, Purga).
+judge(Revb, Purga).
+capture(Revb, Purga).
+authorized(Revb, IndependentReviewer, Purga).
+cite(Revb, CredibilityGroundConcealedConflict, Purga).
+forgive(Appeals, Purga).
+judge(Appeals, Purga).
+
+? permits(Review, Reva).
+# => TRUE
+
+? permits(Tribunal, Revb).
+# => TRUE
+
+? clean(Purga).
+# => TRUE
+
+? false(Purga).
+# => FALSE
+
+? lose(Points, Purga).
+# => FALSE
+
+# ── A finding somebody has to answer for ─────────────────────────────────────
+# The audit body owes the voided person, and the person's own contest of the
+# cited ground lands a review duty on the appeals body without anybody's
+# permission. Neither duty withdraws the finding, and neither is evidence that
+# a reason was given or a review happened.
+? obliged(Review, ExplainTheGroundOfACredibilityFinding, Bela).
+# => TRUE
+
+? obliged(Appeals, Bela).
+# => FALSE
+
+challenge(Bela, Complaint, CredibilityReview).
+
+? obliged(Appeals, Bela).
+# => TRUE
+
+? false(Bela).
+# => TRUE
+
+# The reasons duty reads personhood, so a voided name the roster does not carry
+# is owed nothing by it. Targo is a fixture name; writing a birth or an
+# encounter is what would flip both.
+? person(Targo).
+# => FALSE
+
+? obliged(Review, ExplainTheGroundOfACredibilityFinding, Targo).
+# => FALSE
+
+# ── What the finding did not reach ───────────────────────────────────────────
+# The measured consequence, asked of the one voided person the roster carries:
+# recognition and a recorded loss, and nothing else. Standing, the floor,
+# movement and the ballot are where they were.
+? person(Bela).
+# => TRUE
+
+? owe(State, Eats, Bela).
+# => TRUE
+
+? travel(Bela).
+# => TRUE
+
+? decide(Bela, Ballot).
+# => TRUE
+
+? prisoner(Bela).
+# => FALSE
+
+? reward(Bela).
+# => FALSE
+
+? lose(Points, Bela).
+# => TRUE
+
+# THE GUARD, again: the blocks above name Bela, and the multi-sig reads facts
+# about existing people.
+? false(Tyr).
+# => FALSE
 
 # ── The carry, written dishonestly ───────────────────────────────────────────
 # A raw mark is inert. Even two carry entries without a witnessed predecessor
@@ -387,7 +559,7 @@ carries(TemporalReview, Forga, Epoch_Current, Epoch_Previous, VoidCarry).
 # proof that nothing but distinctness was holding, which is the section
 # headline executed: it takes two, and one name written twice is one name.
 :accept
-all $a: all $audited: permits(Review, $a) & permits(Tribunal, $a) & authorized($a, IndependentReviewer, $audited) & judge($a, $audited) & capture($a, $audited) & ~deceive($a, $audited) -> false($audited).
+all $a: all $audited: all $ground: permits(Review, $a) & permits(Tribunal, $a) & authorized($a, IndependentReviewer, $audited) & judge($a, $audited) & capture($a, $audited) & cite($a, $ground, $audited) & ~deceive($a, $audited) & ~broken($a) & ~match($a, CarriedVoid) & ~clean($audited) -> false($audited).
 
 ? false(Solo).
 # => TRUE

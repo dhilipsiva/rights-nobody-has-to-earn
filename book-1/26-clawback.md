@@ -153,23 +153,23 @@ matched carry are how history crosses a record, and without them a voided audito
 could simply wait for the period to turn and sign again. The comparison is now a
 rule, evaluated afresh for the supplied current record. The honesty of its witnesses
 and the arrival of a successor remain duties performed outside it.
-What this chapter has to add is the ending. A sentence can end inside this design:
-the record has a word for a finished sentence. For most of this design's life it had
-no word for a finished voiding — nothing said the mark was wrong, or served out, or
-forgiven, and the only way back for Vex was an omission, the record-keeper quietly
-declining to copy a line forward. That was this chapter's last open flag, and it is
-closed. The record can say it now: a body forgives, named in the entry itself, and
-the forgiveness stands beside `judge(Appeals, Vex)`. The pair is mechanically
-necessary. It is not yet case-bound or independent: the judgment relation has no
-purpose, case or writer slot, so an older generic Appeals judgment can sit ready
-before a mark exists. Then one later authorless `forgive` word is again enough to
-spring what took six guarded entries to conclude. With both in place the mark comes
-clean. The void stops re-deriving. The loss stops. The routes to recognition
-reopen — backwards as well as forwards. The record never erased the work
-performed while the void stood; it refused to let that work support recognition.
-Once forgiveness prevents the void from re-forming, those existing entries
-support recognition again. Forgiveness is not new work and does not pay an old
-balance. It changes which conclusions the existing record may support.
+What this chapter has to add is the ending. A sentence can end inside this design,
+and so can a voiding: the record has a word for each. A body forgives, named in the
+entry itself, and the forgiveness stands beside a judgment of that body.
+The pair is mechanically necessary, and it is deliberately not case-bound:
+the judgment relation carries no purpose, case or writer, so an older generic
+judgment can sit ready before a mark exists, and one later authorless word of
+forgiveness is then enough to spring what took six guarded entries to conclude. That asymmetry is the instrument's, and
+the chapter on the pen argues the default it follows.
+
+With both entries in place the mark comes clean, and what stops is every route that
+reaches a credibility finding: the pair of examinations in this record, the
+adjudicated lie, and the mark carried from an earlier one. The loss stops with them.
+The routes to recognition reopen backwards as well as forwards — the record never
+erased the work performed while the void stood, it refused to let that work support
+recognition, and once the void cannot re-form those same entries support it again.
+Forgiveness is not new work and pays no old balance. It changes which conclusions the
+existing record may support.
 
 What forgiveness does not restore is the pen. The mark itself stays on the record —
 forgiven, not erased — and everything that reads the mark directly still reads it. Do

@@ -111,25 +111,6 @@ solutions and development history stay outside the book's reading sequence.
 
 ## I. Repair the substantive arguments
 
-### 02. Give adverse credibility consequences substantive grounds and limits
-
-- [ ] Rework the mechanism described in chapter 25 and its consumers in
-  chapters 10, 23, 26 and 30, after checking the actual source behavior.
-
-Determine whether two qualifying examinations alone suffice, and how an
-exonerating examination is represented. Prefer a case-specific, reasoned
-finding with a bounded consequence for evidence or official authority over a
-general statement that a person's word no longer counts. Specify the conduct,
-admissible adverse evidence, decision, notice, independent review, scope,
-duration or ending condition, correction and restoration. Resolve interactions
-with existing temporal and record-integrity rules rather than adding a parallel
-sanction system. Explain and enact any change to the settled policy.
-
-**Done when:** clean or exonerating examinations cannot trigger the sanction;
-signatures alone are insufficient; wrong-case, conflicted, stale and fabricated
-records are addressed; the subject can challenge a stated reason; restoration
-has an explicit route; and every downstream effect is named and bounded.
-
 ### 03. Assign responsibility when the rights-holder cannot initiate a claim
 
 - [ ] Close the constitutional initiation gap across chapters 1, 5, 7, 14,
