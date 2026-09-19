@@ -362,7 +362,7 @@
       "claim": "Stodder reports countercyclical patterns in Switzerland’s WIR complementary-credit activity and examines their relationship to macroeconomic stability.",
       "value": null,
       "units": null,
-      "source": "Stodder, \"Complementary credit networks and macroeconomic stability: Switzerland's Wirtschaftsring\", Journal of Economic Behavior & Organization 72(1): 79-95 (2009), doi:10.1016/j.jebo.2009.06.002, https://doi.org/10.1016/j.jebo.2009.06.002; Bank WIR CHW-System (2026)",
+      "source": "Stodder, \"Complementary credit networks and macroeconomic stability: Switzerland's Wirtschaftsring\", Journal of Economic Behavior & Organization 72(1): 79-95 (2009), doi:10.1016/j.jebo.2009.06.002, https://doi.org/10.1016/j.jebo.2009.06.002; Bank WIR CHW-System (2026); Bank WIR institutional history, https://www.wir.ch/fr/banque-wir/a-propos-de-nous/histoire/",
       "retrieved": "2026-09-19",
       "method": "reference",
       "fetch": null,
@@ -587,7 +587,7 @@
     },
     {
       "id": "harrison-1969-owen",
-      "claim": "Robert Owen's New Harmony: roughly 800 settlers by May 1825, seven successive constitutions in two years, and dissolution in 1827; the London labour exchange priced labour flatly by the hour and its valuators could not make one price fit unequal work.",
+      "claim": "Owen’s New Harmony community began in 1825 and dissolved in 1827; his labour exchanges attempted time-based valuation while still requiring judgments about unlike products and tasks.",
       "value": null,
       "units": null,
       "source": "Harrison, Robert Owen and the Owenites in Britain and America, Routledge & Kegan Paul (1969), https://archive.org/details/robertowenowenit0000harr",
@@ -595,7 +595,7 @@
       "method": "reference",
       "fetch": null,
       "book": "book-1",
-      "notes": "One of the nine historical cases (Part V). Settler count, the seven constitutions and the 1825/1827 dates re-checked 2026-09-19 against published accounts of the settlement; the pinned monograph is the source of record and was not re-read. Part V argues the valuation failure, never the narrative."
+      "notes": "One of the nine historical cases (Part V). The monograph remains the source of record and was not re-read in full. The community dates were checked against published accounts. The retained claim omits the settler and constitution counts and does not attribute the community’s failure to valuation alone."
     },
     {
       "id": "lin-1990-collectivization",
@@ -622,7 +622,7 @@
       "method": "reference",
       "fetch": null,
       "book": "book-1",
-      "notes": "Nine cases. The 1999-2011 differential-salary series re-checked 2026-09-19 against published descriptions of the reform literature; the JEP article is the source of record. Part V's 'by around 2010, roughly three in four' is the 2011 end of that series rounded down, and the community count belongs to the study period rather than a current census. The approximate 270-community description is tied to Abramitzky’s study period (the 2011 abstract reports 268), not asserted as a fresh 2026 census. The chapter does not infer that a universal minimum requires equal pay."
+      "notes": "Nine cases. The 1999–2011 differential-salary series was checked against published descriptions of the reform literature; the JEP article is the source of record. Part V’s approximate three-in-four share concerns around 2011. Its approximately 270 communities also belong to the study period (the 2011 abstract reports 268), not a current census. Neither figure isolates leadership rotation as the cause, and the chapter does not infer that a universal minimum requires equal pay."
     },
     {
       "id": "scott-1998-ujamaa",
@@ -640,7 +640,7 @@
       "method": "reference",
       "fetch": null,
       "book": "book-1",
-      "notes": "Nine cases. Re-checked 2026-09-19: Scott's figure is 'at least five million' relocated. The higher totals for people living in villages by 1976 are the state's and other scholars' and disagree with one another; the disagreement itself is what Part V argues from, and no claim is made that Scott showed a specific published total to be padded. Earlier drafts attributed 13 million to Scott as a state figure he had debunked; that attribution is not supported and was removed. The disagreement between totals alone does not identify its cause; Part V makes no causal inference from that disagreement."
+      "notes": "Scott’s relocation estimate and the higher totals for village residents measure different populations. The latter totals are disputed. Part V does not combine them into a count of coerced moves, infer a cause from their disagreement, or claim Scott proved a named total was padded. The case concerns coercive relocation justified as collective improvement; it does not establish that every public service is coercive."
     },
     {
       "id": "medina-2011-cybersyn",
@@ -652,52 +652,49 @@
       "method": "reference",
       "fetch": null,
       "book": "book-1",
-      "notes": "Nine cases. Locator added 2026-09-19; the monograph is the source of record. Part V argues only that the system's fate was decided by the coup rather than by its merits."
+      "notes": "Nine cases. The monograph is the source of record. Part V omits the disputed telex-machine count. The coup’s termination of the project does not establish how it would have performed over time or prove technical success or failure."
     },
     {
       "id": "auroville-governance",
       "claim": "Auroville: a chartered intentional community whose governance passed to a state foundation — an emergency takeover in 1980, the Auroville Foundation Act in 1988, and in 2025 the Supreme Court holding that the Residents' Assembly may only advise the government-appointed Governing Board.",
       "value": null,
       "units": null,
-      "source": "The Auroville (Emergency Provisions) Act, 1980; The Auroville Foundation Act, 1988; Auroville Foundation v. Natasha Storey, C.A. No. 13651 of 2024, Supreme Court of India, 17 March 2025 (Residents' Assembly 'confined only to advise the Governing Board', with 'no legal or statutory right' to nominate members); the same day's Auroville Foundation v. Navroz Kersasp Mody, C.A. Nos. 5781-5782 of 2022, 2025 INSC 347, https://api.sci.gov.in/supremecourt/2022/24729/24729_2022_9_1501_60151_Judgement_17-Mar-2025.pdf, is a separate environmental-jurisdiction matter; https://auroville.today/articles/4308/two-judgements-of-the-supreme-court-of-india/",
+      "source": "The Auroville (Emergency Provisions) Act, 1980; The Auroville Foundation Act, 1988; Auroville Foundation v. Natasha Storey, Civil Appeal 13651 of 2024, Supreme Court of India, 17 March 2025, paragraphs 12–17, https://api.sci.gov.in/supremecourt/2024/13723/13723_2024_9_1502_60151_Judgement_17-Mar-2025.pdf",
       "retrieved": "2026-09-19",
       "method": "reference",
       "fetch": null,
       "book": "book-1",
-      "notes": "Nine cases; also backs the pod-meets-state legal material (book-2 side lists the Emergency Provisions Act line). Re-cited 2026-09-19: the governance holding Part V argues from is the Natasha Storey judgment, NOT the NGT/master-plan judgment handed down the same day, which the earlier entry named. The two are easy to confuse and decide different questions."
+      "notes": "The original judgment supports the subordinate advisory role described in Part V. It is distinct from the same day’s environmental-jurisdiction judgment in Auroville Foundation v. Navroz Kersasp Mody. The original PDF and relevant paragraphs were checked on 2026-09-19."
     },
     {
       "id": "mondragon-2025",
-      "claim": "Mondragon is a functioning large cooperative federation: about seventy thousand workers, with pay spreads set cooperative by cooperative and the widest around nine to one.",
+      "claim": "MONDRAGON reports an average workforce of 70,085 people in 2024; its institutional history dates its first industrial cooperative to 1956.",
       "value": {
-        "workers": 70085,
-        "widest_pay_ratio": 9
+        "average_workforce_2024": 70085,
+        "industrial_beginning_year": 1956
       },
-      "units": "persons; ratio of highest to lowest pay within a cooperative",
-      "source": "MONDRAGON Corporation, Annual Report 2024 (2025), https://www.mondragon-corporation.com/people/en/anual-report/; Herrera, Review of Business 25(1) (2004)",
+      "units": "persons; calendar year",
+      "source": "MONDRAGON, Annual Report 2024, Business Areas, https://www.mondragon-corporation.com/people/site/assets/files/103207/annual-report-2024.pdf; institutional history, https://www.mondragon-corporation.com/en/timeline/1956/",
       "retrieved": "2026-09-19",
       "method": "reference",
       "fetch": null,
       "book": "book-1",
-      "notes": "Nine cases. Headcount and the 1:9 spread re-checked 2026-09-19. The ratio is highest-to-LOWEST pay inside a cooperative, which is not the denominator used by CEO-to-median-worker comparisons: see epi-2026-ceo-pay-ratio, and do not present the two as like for like without saying so. Most workers in the federation's overseas subsidiaries are not members."
+      "notes": "The headcount describes the 2024 reporting period, not a live census. It counts workers, not only cooperative members. The report text was available in the primary-source search extract; the full PDF exceeded the browser tool’s size limit. The former undated widest-pay-ratio claim is replaced in Part V by the explicitly dated company-reported scale in mondragon-2021-pay-range."
     },
     {
       "id": "kerala-peoples-plan",
-      "claim": "Kerala's 1996 People's Plan Campaign devolved roughly 35-40 per cent of the state plan budget to local bodies and trained nearly 100,000 volunteer resource persons.",
+      "claim": "Franke describes Kerala’s 1996 People’s Plan Campaign as devolving 35 per cent of the development budget to local communities and training more than 100,000 people to facilitate participation and planning.",
       "value": {
-        "plan_budget_share": [
-          0.35,
-          0.4
-        ],
-        "volunteers_trained": 100000
+        "development_budget_share": 0.35,
+        "people_trained_lower_bound": 100000
       },
-      "units": "share of the state plan budget; persons trained",
-      "source": "Isaac & Franke, Local Democracy and Development: The Kerala People's Campaign for Decentralized Planning, LeftWord (2000); Oommen, \"People's Plan of Kerala in Retrospect and Prospect\", https://www.serialsjournals.com/abstract/65487_18-manha_maria_oommen.pdf",
+      "units": "share of the development budget; people trained (strict lower bound)",
+      "source": "Richard W. Franke, Local Planning: The Kerala Experiment, in Real Utopia (2008), pp. 1–4 of author copy, https://msuweb.montclair.edu/~franker/KeralaExperiment.pdf; Isaac and Franke, Local Democracy and Development (2000).",
       "retrieved": "2026-09-19",
       "method": "reference",
       "fetch": null,
       "book": "book-1",
-      "notes": "Nine cases. The budget share and volunteer count re-checked 2026-09-19; published figures give the share as 35 per cent or 35-40 per cent depending on year and whether it is the plan or development budget, which is why Part V says 'a third or more'. The volunteer figure counts trained resource persons, not participants, of whom there were far more."
+      "notes": "The author copy states more than 100,000 people, not a separately measured total of unpaid volunteers. Part V preserves that population and attributes the account. The programme combines money, organisation and training; these figures do not isolate the effect of any component."
     },
     {
       "id": "fssai-licensing",
@@ -919,19 +916,16 @@
     },
     {
       "id": "epi-2026-ceo-pay-ratio",
-      "claim": "CEO-to-worker compensation at the largest United States firms runs in the region of three hundred to one, against a peak above 380 to one in 2000 and about 20 to one in 1965.",
+      "claim": "EPI estimates that realized CEO compensation at the largest 350 US firms was about 325 times typical-worker compensation in 2025.",
       "value": {
-        "realized_ratio_2023": 290,
-        "ratio_2025": 325,
-        "peak_2000": 383.4,
-        "ratio_1965": 20
+        "realized_ratio_2025": 324.7
       },
-      "units": "ratio of CEO compensation to the pay of a typical worker",
-      "source": "Economic Policy Institute, CEO Pay series, https://www.epi.org/publication/ceo-pay/",
+      "units": "ratio of CEO compensation to average compensation of production and nonsupervisory workers in the firms’ industries",
+      "source": "Bivens, Gould and Kandra, CEO Pay, Economic Policy Institute (15 September 2026), Figure A and its methods notes, https://www.epi.org/publication/ceo-pay/",
       "retrieved": "2026-09-19",
       "method": "quoted",
       "fetch": null,
-      "notes": "DENOMINATOR WARNING. This is CEO pay against a TYPICAL (median) worker in the key industry of each of the largest 350 US firms. Mondragon's nine-to-one is highest against LOWEST pay inside one cooperative. The two are not like for like, and comparing them understates the real distance; Part V states the mismatch where it makes the comparison. 'Comparable firms' means large listed firms, not firms comparable to a Basque industrial and retail federation."
+      "notes": "Rechecked against the 2026 table and definition. Typical worker means an industry average for production and nonsupervisory workers, not a median employee at each firm or its lowest-paid worker. The 2025 figure is an estimate. Part V gives its rough scale and does not calculate a governance effect from unlike MONDRAGON and EPI ratios. Earlier mixed-vintage values and the median gloss are superseded."
     },
     {
       "id": "cinelli-forney-pearl-controls",
@@ -968,6 +962,18 @@
       "fetch": null,
       "book": "book-1",
       "notes": "Methodological reference for Part V; no empirical estimate about this constitution or causal estimate of democracy is attributed to this source."
+    },
+    {
+      "id": "mondragon-2021-pay-range",
+      "claim": "MONDRAGON’s 2021 extended report describes a salary scale from one to six between minimum and maximum salaries.",
+      "value": 6,
+      "units": "reported ratio of maximum to minimum salary",
+      "source": "MONDRAGON, 2021 Annual Report, extended edition, pp. 6–7, https://www.mondragon-corporation.com/people/site/assets/files/103207/annual-report-2020-ext.pdf",
+      "retrieved": "2026-09-19",
+      "method": "quoted from the company report",
+      "fetch": null,
+      "book": "book-1",
+      "notes": "The printed document is dated 2021 despite the 2020 filename. This is its stated scale, not a fresh census of every cooperative or subsidiary. It cannot be treated as the same measure, population or period as EPI’s CEO-to-industry-worker ratio."
     }
   ]
 }

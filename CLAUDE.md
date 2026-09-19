@@ -1543,7 +1543,11 @@ established"** — Part V refuses a total in print and the reason carries here. 
 conservative non-numeric rollup is permitted because the repository already
 computes it: any non-refused row below an established posture yields the weaker
 overall verdict. **No fourth Part V verdict token**; naming argument as a posture
-classifies the method, not the verdict. **No rewording of the byte-exact
+classifies the method, not the verdict. **Presentation amended 2026-09-19,
+revision item 11:** Part V retires the recurring three labels and states
+reasoned conclusions directly; it adds no fourth label, score or stronger
+claim posture. The current ruling in `assurance-portfolio-decision.md`
+records this supersession. **No rewording of the byte-exact
 artifact verdict string**, which its generator enforces, its reviewed source
 stores, and the record-integrity case cross-references by literal needle.
 
@@ -3294,8 +3298,80 @@ The exact changed reader prose is retained in its canonical files as
 `session-drafted, author-approved under delegated approval (2026-09-13)`.
 Separate prose review confirms 73,428 derived words against 28,413 other words
 across all ordered inputs, including the epigraph. The broader Part V rewrite
-remains item 11; it must retain the corrected inference and the substantive
-qualification rule while removing the older inventories and revision narration.
+is recorded under item 11 below; it retains the corrected inference and the
+substantive qualification rule while removing the older inventories and revision
+narration.
+
+**Item 11 — Part V's five substantive tests, landed 2026-09-19.** The chapter is
+rewritten around valuation, rotation, coercion, capture and the state. Each
+joint states a strong objection, the current mechanism, the scope of its
+evidence, a credible alternative, the cost and a reasoned conclusion. Detailed
+constitutional inventories return to the derived chapters that own them. The
+current chapter describes no superseded design or repair sequence and makes
+no inference from AI agreement, human endorsement or invented reader testimony.
+The exact text is retained in `book-1/31-the-five-joints.md` as
+`session-drafted, author-approved under delegated approval (2026-09-13)`.
+The same approval covers the method's short opening bridge, which is adjusted
+to match Part V's actual closing promise; the full method rewrite remains
+item 12.
+
+The controlling narrative-register decision retains the exact hypothetical
+kitchen paragraph and supersedes the old passage and the requirement to quote
+the reviewer corpus. Its generic household acquires no cast member's inner
+life, and the passage makes no report of actual provision. The existing
+assurance-portfolio decision retires recurring verdict labels in favour of
+complete argumentative conclusions; their posture remains Reasoned. No
+additional prose channel, aggregate score or verification gate is created.
+
+The argument preserves the distinction between current authority and lasting
+answerability, request and appellate relief, legal housing conditions and
+recipient-side evidence, and each of those and actual operation. The shield
+comparison uses item 10's qualified independent case review, not allegation
+as disqualification. It also distinguishes a rule against appointment capture
+from evidence that appointments obey it, and a supplied custody judgment from
+an independent computation of necessity. The identical-input limit is stated
+only for what a reasoner can infer from its premises, not as an impossibility
+of institutional investigation or repair. Book 2 owns operation and transition;
+that boundary neither defends a constitutional defect nor asserts that this
+constitution is a working society.
+
+The coercion argument compares confinement with compulsory non-carceral
+remedies as well as voluntary restoration. A rejected voluntary settlement
+does not itself warrant imprisonment. The preference for retaining a bounded
+power is distinct from establishing the necessity of any particular use;
+the supplied judgment is not treated as the machine deciding defences,
+alternatives or a sentence.
+
+The primary-source pass corrects the EPI denominator to industry-average
+production and nonsupervisory compensation, pins its 2025 estimate, and replaces
+an undated MONDRAGON pay-spread claim with the company's dated 2021 reported
+scale. Its 2024 workforce is workers, not a membership count. Kerala's source
+counts people trained rather than only unpaid volunteers; the Auroville
+citation reaches the actual governance judgment and paragraphs. Unnecessary
+settler, successive-constitution and telex-machine counts are removed. The
+nine historical cases remain, with differing populations, contested findings
+and causal limits stated where the argument uses them.
+
+Existing source records receive 25 changed reference occurrences, corresponding
+to 19 old passage locators, across five JSON files. Their targets resolve
+uniquely, and no other JSON value changes; this renews no historical assurance
+or retired workflow. The existing claim-to-source test keeps its 22 distinct
+bindings, updated to the retained claims. The registry passes with 75 entries.
+All five claim-discipline tests pass (1.48s); all six reference tests pass
+(1.71s after the final prose edits). All 14 chapter footnotes are used,
+defined and distinct, and the exact domestic paragraph matches its decision.
+
+The complete verifier passes 87,372 pins across 15,996 cases with complete
+contradiction checks and no findings in 1,080.57s (18m 1s). Nine existing
+known-defect pins still reproduce; their expected results are not treated as
+repairs or evidence that the whole design succeeds. The five-minute target is
+not met. The constitution and all substantive pins are unchanged.
+`git diff --check` passes.
+
+Separate prose review measures Part V at 5,847 words, down from 12,293. Across
+all ordered inputs, including the epigraph, 73,428 words are derived and 21,921
+are other prose: 95,349 total, approximately 77% derived. The appendix and
+source archive remain outside the reading sequence and length measurement.
 
 ### Measured Nibli capability boundaries
 
@@ -4174,6 +4250,15 @@ Note the manifesto's heading convention differs deliberately from the book's: it
   restatement-only register, and dates the existing passage non-conforming on arrival,
   trace and proximity. The rationale above is unchanged and is not superseded; see
   `book-1/appendix/decisions/narrative-register-decision.md`.
+
+  **Amended 2026-09-19, revision item 11:** the register and ban on invented
+  inner lives stand. The reviewer corpus is no longer required as Part V's
+  antagonist; its AI-generated reviews are feedback, not human testimony or
+  independent validation. The current chapter states objections directly and
+  makes no five-of-six endorsement or reader-experience claim. The controlling
+  narrative-register decision retains the exact approved hypothetical kitchen
+  paragraph and supersedes `OL-15-v1` for Part V. The nine sourced historical
+  cases remain, with their evidence narrowed to what the sources support.
 
 - **The thesis is ruled restated-structural, and the infant joins as the paired
   second stress case with framing primacy**, author-ratified 2026-08-17. The

@@ -8,6 +8,23 @@
 > section, chapter, edition, or public coverage claim, and it **upgrades no
 > existing claim's posture**. It renames nothing inside an existing artifact.
 
+## Current Part V presentation — 2026-09-19, revision item 11
+
+Under the standing delegated approval, the current Part V states each joint's
+conclusion in ordinary argumentative prose. It retires the recurring verdict
+labels rather than introducing a fourth token or a score. This supersedes any
+requirement below to print the closed three-label vocabulary in that chapter.
+Every conclusion remains Reasoned: it identifies what the evidence and model
+support, the alternative, the cost and the conditions that would change the
+judgment. Neither the prose nor agreement by an AI reviewer upgrades it to
+Derived, operationally established or independently validated. The prohibition
+on an aggregate assurance score and the distinctions between warrants stand.
+
+The exact approved text is retained in `book-1/31-the-five-joints.md`; the
+register and hypothetical passage are governed by the dated current ruling in
+`narrative-register-decision.md`. This presentation change adds no verification
+gate and reinstates none of the retired audit workflow.
+
 ## 1. Decision
 
 Book 1 adopts one portfolio with four parts:

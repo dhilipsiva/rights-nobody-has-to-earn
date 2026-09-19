@@ -1,10 +1,7 @@
 # The Method
 
-This part is optional, and it is a different kind of reading. The note at the
-front of this book promised that if you ever wanted to see the machinery, the
-last part would show it. The fifth part closed by promising what, exactly: the
-rules as they are actually written, the checks that run, the failures they
-caught, and the things I wanted that the logic refused. This is that part.
+This part is optional. Part V argues for the design; this part shows how its
+formal claims can be checked and what those checks cannot establish.
 The chapters between the opening note and the fifth part explain claims pinned
 against the formal rules. The machine checks those pins, not my English;
 whether the prose says what the rules mean remains a separate review. The note,

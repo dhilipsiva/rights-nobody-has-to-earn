@@ -37,7 +37,7 @@ fn part_v(context: &Context) -> String {
 /// count and Mondragon's headcount are not one claim each — so the rows are
 /// keyed by case, not by entry.
 const TRACED: [(&str, &str, &str); 22] = [
-    ("Owen's New Harmony", "harrison-1969-owen", "800 settlers"),
+    ("Owen's New Harmony", "harrison-1969-owen", "New Harmony"),
     ("the kibbutzim", "abramitzky-kibbutz", "270 communities"),
     (
         "the kibbutz salary reform",
@@ -51,7 +51,11 @@ const TRACED: [(&str, &str, &str); 22] = [
     ),
     ("Tanzanian villagization", "scott-1998-ujamaa", "13 million"),
     ("Mondragon", "mondragon-2025", "1956"),
-    ("Mondragon's pay spread", "mondragon-2025", "nine to one"),
+    (
+        "Mondragon's reported pay scale",
+        "mondragon-2021-pay-range",
+        "six to one",
+    ),
     (
         "the corporate pay comparison",
         "epi-2026-ceo-pay-ratio",
@@ -59,11 +63,11 @@ const TRACED: [(&str, &str, &str); 22] = [
     ),
     ("Kerala's People's Plan", "kerala-peoples-plan", "1996"),
     (
-        "Kerala's trained volunteers",
+        "Kerala's trained facilitators",
         "kerala-peoples-plan",
-        "100,000 volunteers",
+        "100,000 people",
     ),
-    ("Cybersyn", "medina-2011-cybersyn", "500 surplus telex"),
+    ("Cybersyn", "medina-2011-cybersyn", "surplus telex machines"),
     ("Auroville's governance", "auroville-governance", "Auroville"),
     ("the Swiss WIR", "stodder-2009-wir", "1934"),
     (

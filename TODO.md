@@ -111,25 +111,6 @@ solutions and development history stay outside the book's reading sequence.
 
 ## II. Strengthen evidence and justification
 
-### 11. Rebuild Part V around five substantive tests of the design
-
-- [ ] Rewrite `book-1/31-the-five-joints.md` after the substantive and sourcing
-  work, retaining its role as the book's argument and evidence section.
-
-For each joint, state the strongest objection, the current mechanism, supporting
-evidence, the best alternative, the remaining cost and a justified conclusion.
-Remove long inventories already explained in the chapters. Update objections
-that target superseded rules. Identify AI critiques as AI-generated feedback;
-attribute human criticism only where an actual source supports it. Treat the
-kitchen and other imagined scenes as hypothetical, without invented testimony.
-
-**Done when:** all five joints examine the final design; each conclusion follows
-from its argument; no success is inferred from AI agreement; and every retained
-design failure meets the resolve-before-defending standard. If the argument
-reveals a repairable failure, return it to substantive implementation rather
-than making its disclosure the conclusion. Present justified residual costs
-without repeating the whole constitutional catalogue or the repair history.
-
 ### 12. Make the optional method accurate and useful to a skeptical reader
 
 - [ ] Rewrite `book-1/method.md` around the method's actual explanatory value.

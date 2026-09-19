@@ -2,13 +2,58 @@
 
 # Book 1 Narrative Register Decision
 
-> **Status: author-ratified on 2026-08-08; prose supply amended on
-> 2026-08-20, 2026-08-26, and 2026-08-28.** The register, trace, location, and
-> evidence rules remain binding. Section 15 supersedes only the author-as-drafter
-> restriction;
-> section 7a records `OL-15-v1` as the current canonical, conforming ordinary-life
-> passage; sections 15d and 15e record the delivery-lifecycle and economic
-> prose. The dated 2026-08-08 disposition and wording remain visible as history.
+> **Status: author-ratified on 2026-08-08; amended through 2026-09-19.**
+> The dated ruling immediately below governs the current Part V passage and
+> its treatment of criticism. The register, trace, location and evidence rules
+> remain binding. Section 15's separate approval pauses are superseded by the
+> author's standing delegated approval of 2026-09-13. Earlier dispositions,
+> including `OL-15-v1` in section 7a, remain visible as history.
+
+## Current ruling — 2026-09-19, revision item 11
+
+The exact rewritten `book-1/31-the-five-joints.md` is
+`session-drafted, author-approved under delegated approval (2026-09-13)`.
+The permitted argument channel examines the present design at each of the
+five joints: objection, mechanism, evidence, alternative, cost and conclusion.
+It retains the sourced historical cases, the author's argument and one
+generic second-person domestic passage. The cast acquires no inner life, no
+new prose channel is created, and the historical cases establish no operation
+of this constitution.
+
+The reviewer-corpus channel is unused in the current chapter. This supersedes
+the instruction to quote and answer that corpus as a necessary antagonist,
+and the instruction to present a five-of-six reviewer count as evidence of a
+reader's experience. AI-generated reviews in `reviews/` are AI feedback, not
+independent validation or human testimony. The chapter makes its objections
+directly as arguments. It attributes human statements only to their actual
+sources, including the disputed contemporary reporting of Santoshi Kumari's
+death. Removing an attribution does not turn AI agreement into evidence.
+
+The following exact domestic paragraph supersedes `OL-15-v1` as the canonical
+Part V version. Its hypothetical posture and proximate limit are integral:
+
+> Imagine your household receiving the food it is owed, living in the shelter
+> it is owed, and obtaining the care an ill family member is owed. Someone
+> provides that care, whether through paid employment or an unpaid care role.
+> Then an allegation is made against someone in the household. Whether the
+> allegation is substantiated or defeated, those entitlements remain. This is a
+> hypothetical fulfilment of the promise. It reports no service operating and
+> no food, shelter or care reaching anyone in the world. The formal cases can
+> show an entitlement surviving a finding; they cannot stock this kitchen.
+
+The paragraph restates the floor, care, employment and retained-rights rules.
+It does not say an allegation has no legal consequences: allegations can
+trigger protection and duties. Nor does it report fulfilment from an
+entitlement, custody-derived housing condition, or missing contrary fact.
+The exact canonical chapter retains the distinctions between entitlement,
+recipient-side evidence, formal consequence and outside arrival.
+
+This is a prose and evidence ruling, not a substantive amendment. The source
+and pins do not change. Historical locators in the existing coverage records
+follow the retained argument or the derived chapter that owns its detail;
+that maintenance renews no historical assurance finding. Book 2 remains
+collection-only until Gate C and owns operation and transition, not unresolved
+constitutional defects.
 
 ## 1. Decision
 
