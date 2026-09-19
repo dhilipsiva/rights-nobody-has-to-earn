@@ -1,5 +1,61 @@
 # The V-Dem re-derivation — working record (2026-08-03)
 
+## Interpretation corrected — 2026-09-19
+
+The numerical derivation below is retained as a working record. Its causal
+and significance-based interpretations are superseded by this section under
+revision item 10 and delegated approval. Part V's exact revised prose is
+`session-drafted, author-approved under delegated approval (2026-09-13)`.
+
+The distributed snapshot reproduces without network access:
+
+```sh
+python3 registry/fetch/vdem_happiness.py --from-snapshot registry/data/vdem-happiness-2026-08-03.csv
+```
+
+It yields raw r = 0.5126464, partial r given log GDP = 0.1966521,
+between-category mean differences +0.02 / +0.59 / +1.09, and the exploratory
+income-adjusted absolute-residual coefficient −0.4898 (p = 0.0318).
+These reproduce the stored V-Dem values; none is a causal effect. The merge
+uses each series' latest observation, not the latest **common** year: all
+regime, polyarchy and ladder year labels are 2025, but three GDP observations
+are from 2024. The snapshot has 141 equally weighted countries.
+
+The inferential corrections are substantive:
+
+- Partial correlation describes remaining linear association after adjustment.
+  It does not establish that material provision causes most wellbeing
+  differences. Income could confound the relationship or mediate an effect
+  of democracy; omitted causes, measurement and selection remain. The
+  calculation cannot justify subordinating political rights to material ones.
+- Category means compare different countries. Their differences are not
+  estimates of transitions, and a small bottom-group difference says nothing
+  conclusive about the value of partial democratisation.
+- Absolute residuals around a fitted line mix deviations in both directions.
+  They describe dispersion of national averages, not a lower bound or the
+  worst individual lives. The conventional standard errors also require
+  assumptions this exploratory exercise does not validate.
+- The archived same-sample comparison below has negative estimates for both
+  democracy indices. One passing a significance threshold while the other
+  does not is no test of the difference between them. Measurement sensitivity
+  motivates further investigation; it neither refutes the underlying causal
+  possibility nor makes it unanswerable. No comparison of significance labels
+  licenses the historical claim that one instrument finds an effect and the
+  other loses it.
+
+Primary methodological references: Cinelli, Forney and Pearl,
+[*A Crash Course in Good and Bad Controls*](https://doi.org/10.1177/00491241221099552);
+Gelman and Stern,
+[*The Difference Between “Significant” and “Not Significant” Is Not Itself Statistically Significant*](https://sites.stat.columbia.edu/gelman/surveys.course/GelmanStern2006.pdf);
+and the [ASA statement](https://www.amstat.org/asa/files/pdfs/p-valuestatement.pdf).
+The registry names these references and carries the corrected interpretations.
+It retains the source snapshot's retrieval date rather than pretending that
+reproduction fetched a new dataset. The comparison using EIU remains an
+archived calculation, not a newly executed replication or a source of values
+for the CC0 registry.
+
+## Historical derivation and interpretation — superseded where stated above
+
 Executes the 2026-08-02 ruling: the democracy/happiness analysis stands on V-Dem,
 re-derived, so Part V's worked example is re-runnable by a stranger. Derivation
 script: `registry/fetch/vdem_happiness.py` (stdlib only; fetches four OWID grapher

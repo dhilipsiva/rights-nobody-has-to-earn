@@ -1,0 +1,22 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+# A positive conflict defeats favourable certification; another certifier pair cannot bypass it.
+observe(Appeals, Case_Rex, ShieldUnrelatedToTheDisclosure, ShieldConnectionScope).
+observe(Convocation, Case_Rex, ShieldUnrelatedToTheDisclosure, ShieldConnectionScope).
+observe(Appeals, Case_Rex, Rex, ShieldSubjectScope).
+observe(Convocation, Case_Rex, Rex, ShieldSubjectScope).
+authorized(Appeals, ShieldConnectionReviewer, Case_Rex).
+authorized(Convocation, ShieldConnectionReviewer, Case_Rex).
+authorized(ShieldAppointments, ShieldQualificationAuthority, Case_Rex).
+authorized(ShieldAppointmentsReview, ShieldQualificationReviewAuthority, Case_Rex).
+observe(ShieldAppointments, Case_Rex, Appeals, IndependentShieldReviewerScope).
+observe(ShieldAppointments, Case_Rex, Convocation, IndependentShieldReviewerScope).
+observe(ShieldAppointmentsReview, Case_Rex, Appeals, IndependentShieldReviewerScope).
+observe(ShieldAppointmentsReview, Case_Rex, Convocation, IndependentShieldReviewerScope).
+show(Rex, Court).
+show(Rex, Review).
+show(Rex, Appeals).
+show(Rex, Convocation).
+show(Rex, State).
+show(Rex, ShieldAppointments).
+show(Rex, ShieldAppointmentsReview).
+observe(ShieldAppointments, Case_Rex, Appeals, ConflictedShieldReviewerScope).

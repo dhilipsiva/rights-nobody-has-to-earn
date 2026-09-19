@@ -498,9 +498,11 @@ below.
   none of them concludes nothing.
 
 - **Shield:** protection against conviction-based imprisonment while an exposure
-  of an authority stands. It covers every case until two answerable bodies the
-  person did not expose record that a particular prosecution is unrelated to the
-  disclosure, and it survives that finding for every other case.
+  of an authority stands. An unrelated prosecution can proceed only on a
+  finding by case-authorised reviewers whose eligibility is positively
+  established through separate qualification and review. An actual conflict
+  blocks the affected decision; merely naming a reviewer does not. The finding
+  reaches only its case and does not defeat the disclosure.
 
 - **Voiding:** a recorded finding against a person's credibility. It closes the
   three doors recognition is minted through and records one loss; it reaches

@@ -1,0 +1,21 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+# Fusing separate decision functions cannot complete the route.
+observe(Convocation, Case_Rex, ShieldUnrelatedToTheDisclosure, ShieldConnectionScope).
+observe(Convocation, Case_Rex, ShieldUnrelatedToTheDisclosure, ShieldConnectionScope).
+observe(Convocation, Case_Rex, Rex, ShieldSubjectScope).
+observe(Convocation, Case_Rex, Rex, ShieldSubjectScope).
+authorized(Convocation, ShieldConnectionReviewer, Case_Rex).
+authorized(Convocation, ShieldConnectionReviewer, Case_Rex).
+authorized(ShieldAppointments, ShieldQualificationAuthority, Case_Rex).
+authorized(ShieldAppointmentsReview, ShieldQualificationReviewAuthority, Case_Rex).
+observe(ShieldAppointments, Case_Rex, Convocation, IndependentShieldReviewerScope).
+observe(ShieldAppointments, Case_Rex, Convocation, IndependentShieldReviewerScope).
+observe(ShieldAppointmentsReview, Case_Rex, Convocation, IndependentShieldReviewerScope).
+observe(ShieldAppointmentsReview, Case_Rex, Convocation, IndependentShieldReviewerScope).
+show(Rex, Court).
+show(Rex, Review).
+show(Rex, Convocation).
+show(Rex, Convocation).
+show(Rex, State).
+show(Rex, ShieldAppointments).
+show(Rex, ShieldAppointmentsReview).

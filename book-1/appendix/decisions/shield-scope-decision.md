@@ -2,6 +2,108 @@
 
 # The whistleblower shield: scoped to the case
 
+## Positive reviewer eligibility — item 10 supersession, 2026-09-19
+
+The current design replaces the blanket `~show` exclusions described in the
+historical decision below. It does not retain them as a fallback. This is a
+substantive supersession under delegated approval, required by the
+resolve-before-defending rule: naming all reviewers was a repairable defect,
+not a demonstrated necessary cost of protecting disclosures.
+
+The old alternative is retained as `counterfactual/shield-disclosure-veto` in
+the substantive suite. Given the same case, favourable independent
+qualification and unrelatedness findings, naming the reviewers keeps the
+conviction blocked under that alternative. The current rule permits the
+unrelated prosecution without rejecting a disclosure or reading the
+claimant's credibility. Both alternatives run against the full current
+constitution with the one exact rule substitution declared in the suite.
+
+### Current legal rule and supplied premises
+
+The two reviewers still need public answerability and a matching finding that
+this prosecution of this person is unrelated to the disclosure. Each also
+needs `authorized(_, ShieldConnectionReviewer, case)`: a lawful, current
+mandate to decide that particular connection question, not an inference from
+permanent answerability. The rule retains the ordinary conviction conditions,
+including the current custody authority, appellate relief and release guards.
+
+Reviewer eligibility is positive. A `ShieldQualificationAuthority` and a
+separate `ShieldQualificationReviewAuthority`, each authorised for the case,
+must both supply `IndependentShieldReviewerScope` for each decider. This is a
+bounded finding of lawful current appointment and actual independence from
+the parties and disclosures, reached with notice, reasons, an opportunity to
+be heard and independent challenge. These are functions within the existing
+appointments and justice settlement, not a new final court or an operating
+institution claimed to exist. Assignment, actual independence, procedure and
+authenticity remain externally supplied evidence; Nibli does not perform or
+authenticate them.
+
+The qualifier, qualification reviewer and both deciders are pairwise
+distinct. None may be the offender, injured person or prosecuting Court.
+Every authorisation and attestation binds the same case, so one case's
+qualified review cannot lend authority to another. The existing justice
+access, interim-relief, independent challenge, nonresponse and alternate
+duties remain applicable. Their performance is not inferred from the finding.
+
+An authorised `ConflictedShieldReviewerScope` finding by either qualification
+function derives `contradict(case, participant, ShieldReviewerConflict)`.
+Any participant in the deciding or qualification functions with that finding
+is barred. The contradiction is shared across candidate certifier pairs: a
+second favourable certificate cannot erase it. A raw disclosure or an
+unauthorised conflict allegation cannot supply the adverse finding. No claim
+about the defendant's honesty, sincerity or general credibility decides
+eligibility for the shield.
+
+### Alternatives and the remaining cost
+
+Keeping the blanket exclusion preserves a claimant's unilateral veto over
+all deciders; the counterfactual executes that failure. Removing it without
+replacement would allow unsupported agreement or self-qualification to
+overcome protection, so the positive mandate, qualification and separation
+conditions are required. Letting the prosecuting Court decide, combining
+qualification with decision, and allowing a party to fill either role are
+expressly barred and tested. A positive conflict beats favourable
+certification, including when different certifiers are offered.
+
+Requiring the discloser to win a retaliation hearing before protection begins
+would expose them to conviction during a withheld review. Automatically
+expiring the shield would have the same defect when the hearing never
+occurred. The current default remains protection pending a sufficient case
+finding. Missing qualified adjudication still delays an unrelated prosecution;
+the victim keeps assistance, protective and remedial routes, while no
+ordinary protective measure may borrow the shield decision as its own ground.
+
+The repair removes the **allegation-as-disqualification** mechanism. It does
+not prove prompt hearings or independence in fact. The necessity that remains
+is narrow: a conclusion requiring positive eligibility cannot derive when
+that evidence is absent. This says nothing about an inability to obtain that
+evidence, and is not a proof that all possible institutional arrangements
+share the same delays. A procedure offering equivalent immediate protection
+with fewer obstructed unrelated cases would weaken the argument for this
+choice. Evaluation must count missed retaliation as well as delay and must
+not mistake supplied favourable findings for successful operation.
+
+### Coverage and prose
+
+`tests/pins/shield-independence/` runs the positive case with every decision
+participant named, the old-veto counterfactual, removal and wrong-case
+substitution of every required positive premise, every pair of fused
+functions, every function occupied by defendant/victim/Court, conflict in
+each function, attempted certifier shopping, uncredentialed noise and a
+conflict in another case. Chapter 24 also executes the ordered sequence:
+agreement without qualification, qualified unrelated-case decision, fresh
+disclosures, and a subsequent established conflict. Sly's court-exclusion
+test supplies all other positive conditions so the court bar remains live.
+The shipped cast carries none of these new authorisations; the new route is
+exercised through fixtures.
+
+The exact Chapter 24 and Part V prose is retained in its canonical files as
+`session-drafted, author-approved under delegated approval (2026-09-13)`.
+The existing resolution entry is updated in its owning JSON; no new receipt
+or administrative gate is introduced.
+
+## Historical first scoping decision — superseded as stated above
+
 Ruled 2026-09-19 under the standing delegated approval, against the revision
 tracker's *resolve before defending* rule. It changes Article 6's conviction
 gate, leaves Article 7's shield rule untouched, and records the alternatives

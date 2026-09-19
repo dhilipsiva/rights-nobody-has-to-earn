@@ -3,15 +3,16 @@
 """Re-derive the democracy/happiness analysis on V-Dem (ruled 2026-08-02).
 
 Fetches four OWID grapher series (CC BY; OWID processing of V-Dem, the World
-Happiness Report, and the World Bank), merges the latest common year by ISO3
-code, and derives every statistic Part V's worked example needs:
+Happiness Report, and the World Bank), merges each series' latest observation
+by ISO3 code, and derives Part V's descriptive statistics. Observation years
+may differ within a country; these are not estimates of regime transitions.
 
   - raw association: Pearson r, Spearman rho, R^2 (polyarchy x ladder)
   - the income control: partial r (polyarchy, ladder | log GDP), and
     r (log GDP, ladder | polyarchy)
   - the RoW regime table (closed autocracy .. liberal democracy):
     n / mean ladder / sd, and the step sizes between adjacent categories
-  - the floor claim, run honestly: |residual| ~ polyarchy, then
+  - exploratory cross-country dispersion: |residual| ~ polyarchy, then
     |residual| ~ polyarchy + log GDP (slopes, t, p)
 
 Everything is stdlib; p-values via the incomplete-beta t CDF. Usage:
@@ -19,11 +20,12 @@ Everything is stdlib; p-values via the incomplete-beta t CDF. Usage:
   vdem_happiness.py                 fetch live, print the derivation
   vdem_happiness.py --snapshot DIR  also write the merged CSV to DIR
   vdem_happiness.py --offline DIR   read previously fetched CSVs from DIR
+  vdem_happiness.py --from-snapshot FILE  reproduce a merged snapshot, no network
 """
+import argparse
 import csv
 import io
 import math
-import sys
 import urllib.request
 from datetime import date
 
@@ -183,14 +185,7 @@ def ols(y, cols):
     return beta, tstat, pval, resid
 
 
-def main():
-    offline = None
-    snapshot = None
-    if "--offline" in sys.argv:
-        offline = sys.argv[sys.argv.index("--offline") + 1]
-    if "--snapshot" in sys.argv:
-        snapshot = sys.argv[sys.argv.index("--snapshot") + 1]
-
+def merge_latest(offline=None):
     data = {k: fetch(k, offline) for k in GRAPHERS}
     codes = sorted(set(data["regime"]) & set(data["poly"])
                    & set(data["ladder"]) & set(data["gdp"]))
@@ -204,13 +199,46 @@ def main():
             continue
         merged.append((c, regime, poly, ladder, math.log(gdp),
                        ry, py, ly, gy))
+    return merged
+
+
+def read_snapshot(path):
+    """Read the merged, upstream-licensed CSV distributed with the book."""
+    with open(path, newline="", encoding="utf-8") as stream:
+        return [
+            (row["iso3"], float(row["row_regime"]), float(row["polyarchy"]),
+             float(row["cantril_ladder"]), float(row["log_gdp_pc"]),
+             int(row["regime_year"]), int(row["poly_year"]),
+             int(row["ladder_year"]), int(row["gdp_year"]))
+            for row in csv.DictReader(stream)
+        ]
+
+
+def main():
+    parser = argparse.ArgumentParser(description=__doc__)
+    source = parser.add_mutually_exclusive_group()
+    source.add_argument("--offline", metavar="DIR",
+                        help="directory holding the four raw OWID CSVs")
+    source.add_argument("--from-snapshot", metavar="FILE",
+                        help="merged CSV to analyse without fetching")
+    parser.add_argument("--snapshot", metavar="DIR",
+                        help="write the merged observations to this directory")
+    args = parser.parse_args()
+    merged = (read_snapshot(args.from_snapshot) if args.from_snapshot
+              else merge_latest(args.offline))
     n = len(merged)
     regime = [m[1] for m in merged]
     poly = [m[2] for m in merged]
     ladder = [m[3] for m in merged]
     lgdp = [m[4] for m in merged]
 
-    print(f"N = {n} countries (latest common years >= 2022, merged on ISO3)")
+    print(f"N = {n} countries (latest observation per series, merged on ISO3)")
+    for index, name in enumerate(("regime", "polyarchy", "ladder", "GDP"), 5):
+        years = [row[index] for row in merged]
+        print(f"  {name} observation years: {min(years)}..{max(years)}")
+    mismatched = sum(len(set(row[5:])) > 1 for row in merged)
+    print(f"  countries with differing observation years: {mismatched}")
+    print("Descriptive cross-section; no causal or transition effect is estimated.")
     r = pearson(poly, ladder)
     rho = spearman(poly, ladder)
     print(f"raw:   r(polyarchy, ladder)   = {r:+.4f}   rho = {rho:+.4f}   "
@@ -235,9 +263,10 @@ def main():
         if prev is not None:
             steps.append(m - prev)
         prev = m
-    print("  step sizes: " + "  ".join(f"{s:+.2f}" for s in steps))
+    print("  differences between category means: " +
+          "  ".join(f"{s:+.2f}" for s in steps))
 
-    print("\nfloor claim (the one the EIU analysis got wrong):")
+    print("\nExploratory dispersion of country means (not a lower-tail test):")
     _, _, _, resid = ols(ladder, [poly])
     absr = [abs(x) for x in resid]
     b1, t1, p1, _ = ols(absr, [poly])
@@ -249,8 +278,8 @@ def main():
     print(f"                                  b_lgdp = {b2[2]:+.4f}  "
           f"t = {t2[2]:+.2f}  p = {p2[2]:.4f}")
 
-    if snapshot:
-        path = f"{snapshot}/vdem-happiness-{date.today().isoformat()}.csv"
+    if args.snapshot:
+        path = f"{args.snapshot}/vdem-happiness-{date.today().isoformat()}.csv"
         with open(path, "w", newline="", encoding="utf-8") as f:
             w = csv.writer(f)
             w.writerow(["iso3", "row_regime", "polyarchy", "cantril_ladder",

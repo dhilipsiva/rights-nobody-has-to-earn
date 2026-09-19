@@ -209,8 +209,10 @@ The second is sharper. Because exposing an answerable person confers protection,
 because the set of answerable people never shrinks, the set of exposures that generate
 protection never shrinks either. Someone facing consequences can reach back and expose
 anyone who was ever answerable — the long-retired, the long-recalled — and buy
-themselves the protection that comes with it, at least until the exposure is examined
-and found to be made in bad faith.
+themselves the protection that comes with it. The exposure can be examined for
+deceit, and a separate qualified finding can establish that a particular
+prosecution is unrelated to it. The shield chapter runs both routes; neither
+requires ending the exposed actor's answerability.
 
 That window is real, it is deliberate, and it is the subject of a later chapter. It
 is mentioned here because it is the direct cost of the decision this chapter defends,

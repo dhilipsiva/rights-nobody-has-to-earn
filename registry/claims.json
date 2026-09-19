@@ -359,7 +359,7 @@
     },
     {
       "id": "stodder-2009-wir",
-      "claim": "Switzerland's WIR complementary credit network is countercyclical — it stabilises rather than destabilises.",
+      "claim": "Stodder reports countercyclical patterns in Switzerland’s WIR complementary-credit activity and examines their relationship to macroeconomic stability.",
       "value": null,
       "units": null,
       "source": "Stodder, \"Complementary credit networks and macroeconomic stability: Switzerland's Wirtschaftsring\", Journal of Economic Behavior & Organization 72(1): 79-95 (2009), doi:10.1016/j.jebo.2009.06.002, https://doi.org/10.1016/j.jebo.2009.06.002; Bank WIR CHW-System (2026)",
@@ -367,7 +367,7 @@
       "method": "reference",
       "fetch": null,
       "book": "book-1",
-      "notes": "One of the nine historical cases (Part V). Locator added 2026-09-19. The founding year 1934 is uncontested; Part V's span is arithmetic from it."
+      "notes": "One of the nine historical cases (Part V). Locator added 2026-09-19. The founding year 1934 is uncontested; Part V's span is arithmetic from it. Its persistence does not establish every motive for state tolerance or guarantee tolerance of another complementary currency."
     },
     {
       "id": "banerjee-2023-kenya-ubi",
@@ -599,7 +599,7 @@
     },
     {
       "id": "lin-1990-collectivization",
-      "claim": "China's collectivization crisis: the right to withdraw from a collective was removed in the autumn of 1958, turning a repeated game into a one-shot one, and the self-enforcing contract that had held productivity together collapsed.",
+      "claim": "Lin proposes that removal of collective members’ right to withdraw in 1958 undermined a self-enforcing agreement and contributed to the agricultural productivity collapse; the paper presents evidence consistent with that hypothesis.",
       "value": null,
       "units": null,
       "source": "Lin, \"Collectivization and China's Agricultural Crisis in 1959-1961\", Journal of Political Economy 98(6): 1228-1252 (1990), doi:10.1086/261732, https://www.journals.uchicago.edu/doi/abs/10.1086/261732; Lin, AER 82(1): 34-51 (1992); Li, Journal of Agrarian Change 18(1): 67-86 (2018)",
@@ -607,11 +607,11 @@
       "method": "reference",
       "fetch": null,
       "book": "book-1",
-      "notes": "Nine cases. The 1958 removal of the exit right re-checked 2026-09-19 against the published abstract and summaries of the JPE article. Lin's exit-rights thesis is contested: the 1993 Journal of Comparative Economics symposium collects the criticisms, and Li (2018) is the egalitarianism reading. Part V argues the exit right, which is the part the design turns on, not the famine's full causation."
+      "notes": "Nine cases. The 1958 removal of the exit right re-checked 2026-09-19 against the published abstract and summaries of the JPE article. Lin's exit-rights thesis is contested: the 1993 Journal of Comparative Economics symposium collects the criticisms, and Li (2018) is the egalitarianism reading. Part V argues the exit right, which is the part the design turns on, not the famine's full causation. Interpretation clarified 2026-09-19: Part V attributes the causal explanation to Lin and does not present it as an isolated effect or a settled account of the entire crisis."
     },
     {
       "id": "abramitzky-kibbutz",
-      "claim": "The kibbutzim sustained full income equality with screening, mutual monitoring and high exit costs, and unwound as those fell: differential salaries went from about a fifth of kibbutzim in 1999 to roughly three-quarters by 2011.",
+      "claim": "Abramitzky examines equal sharing, selection, exit and incentive pressures in the kibbutzim. Roughly three-quarters had adopted differential salaries by around 2011; the account does not isolate leadership rotation as the cause of reform.",
       "value": {
         "differential_salary_share_1999": 0.21,
         "differential_salary_share_2011": 0.76
@@ -622,7 +622,7 @@
       "method": "reference",
       "fetch": null,
       "book": "book-1",
-      "notes": "Nine cases. The 1999-2011 differential-salary series re-checked 2026-09-19 against published descriptions of the reform literature; the JEP article is the source of record. Part V's 'by around 2010, roughly three in four' is the 2011 end of that series rounded down, and the count of communities is a present-day figure, not part of the series."
+      "notes": "Nine cases. The 1999-2011 differential-salary series re-checked 2026-09-19 against published descriptions of the reform literature; the JEP article is the source of record. Part V's 'by around 2010, roughly three in four' is the 2011 end of that series rounded down, and the community count belongs to the study period rather than a current census. The approximate 270-community description is tied to Abramitzky’s study period (the 2011 abstract reports 268), not asserted as a fresh 2026 census. The chapter does not infer that a universal minimum requires equal pay."
     },
     {
       "id": "scott-1998-ujamaa",
@@ -640,7 +640,7 @@
       "method": "reference",
       "fetch": null,
       "book": "book-1",
-      "notes": "Nine cases. Re-checked 2026-09-19: Scott's figure is 'at least five million' relocated. The higher totals for people living in villages by 1976 are the state's and other scholars' and disagree with one another; the disagreement itself is what Part V argues from, and no claim is made that Scott showed a specific published total to be padded. Earlier drafts attributed 13 million to Scott as a state figure he had debunked; that attribution is not supported and was removed."
+      "notes": "Nine cases. Re-checked 2026-09-19: Scott's figure is 'at least five million' relocated. The higher totals for people living in villages by 1976 are the state's and other scholars' and disagree with one another; the disagreement itself is what Part V argues from, and no claim is made that Scott showed a specific published total to be padded. Earlier drafts attributed 13 million to Scott as a state figure he had debunked; that attribution is not supported and was removed. The disagreement between totals alone does not identify its cause; Part V makes no causal inference from that disagreement."
     },
     {
       "id": "medina-2011-cybersyn",
@@ -821,7 +821,7 @@
     },
     {
       "id": "vdem-2026-democracy-happiness-partial",
-      "claim": "Controlling for log GDP per capita, the democracy–happiness association collapses from r ≈ 0.51 to a partial r ≈ 0.20: what compresses wellbeing differences across countries is mostly material provision.",
+      "claim": "In the bundled 141-country snapshot, the correlation between electoral democracy and mean life evaluation is about 0.51 before, and about 0.20 after, adjusting for log GDP per capita. This is descriptive association, not a causal allocation between income and democracy.",
       "value": {
         "raw_r": 0.513,
         "spearman_rho": 0.552,
@@ -830,16 +830,16 @@
         "n": 141
       },
       "units": "correlation coefficients, country level",
-      "source": "Derived by registry/fetch/vdem_happiness.py from OWID grapher series (CC BY): electoral-democracy-index (V-Dem v2x_polyarchy) https://ourworldindata.org/grapher/electoral-democracy-index, happiness-cantril-ladder (WHR) https://ourworldindata.org/grapher/happiness-cantril-ladder, gdp-per-capita-worldbank https://ourworldindata.org/grapher/gdp-per-capita-worldbank; latest common years ≥ 2022; snapshot registry/data/vdem-happiness-2026-08-03.csv",
+      "source": "Derived by registry/fetch/vdem_happiness.py from OWID grapher series (CC BY): electoral-democracy-index (V-Dem v2x_polyarchy) https://ourworldindata.org/grapher/electoral-democracy-index, happiness-cantril-ladder (WHR) https://ourworldindata.org/grapher/happiness-cantril-ladder, gdp-per-capita-worldbank https://ourworldindata.org/grapher/gdp-per-capita-worldbank; latest observation per series, each year ≥ 2022 (years can differ within a country); snapshot registry/data/vdem-happiness-2026-08-03.csv",
       "retrieved": "2026-08-03",
       "method": "fetched-by-script",
-      "fetch": "vdem_happiness.py --snapshot registry/data",
+      "fetch": "vdem_happiness.py --from-snapshot registry/data/vdem-happiness-2026-08-03.csv",
       "book": "book-1",
-      "notes": "Reproduces the EIU-era narrowing almost exactly (0.195 there) on an openly licensed instrument — the robust half of Part V's worked example. Working record: book-1/source/vdem-rederivation.md."
+      "notes": "Snapshot reproduced 2026-09-19. Countries are equally weighted; three GDP observations are from 2024 while the other year labels are 2025. Adjustment can remove confounding or part of a causal pathway; this analysis does not identify which. It establishes neither material provision as the cause of most wellbeing differences nor an ordering of political and material rights. See book-1/source/vdem-rederivation.md."
     },
     {
       "id": "vdem-2026-regime-ladder-steps",
-      "claim": "Mean life evaluation by Regimes of the World category rises +0.02 (closed→electoral autocracy), +0.59 (→electoral democracy), +1.09 (→liberal democracy): the bottom step buys approximately nothing and the gain concentrates at the top.",
+      "claim": "In the bundled cross-section, adjacent Regimes of the World category means differ by +0.02, +0.59 and +1.09 Cantril-ladder points. These compare different groups of countries and do not estimate gains from regime transitions.",
       "value": {
         "means": [
           5.1,
@@ -869,13 +869,13 @@
       "source": "Same derivation as vdem-2026-democracy-happiness-partial, adding the OWID political-regime series for the Regimes of the World categories https://ourworldindata.org/grapher/political-regime",
       "retrieved": "2026-08-03",
       "method": "fetched-by-script",
-      "fetch": "vdem_happiness.py --snapshot registry/data",
+      "fetch": "vdem_happiness.py --from-snapshot registry/data/vdem-happiness-2026-08-03.csv",
       "book": "book-1",
-      "notes": "The EIU-era step pattern (+0.16/+0.73/+1.01) reproduces on RoW's four categories — the anti-gradualist reading is instrument-robust."
+      "notes": "Snapshot reproduced 2026-09-19. Category means are unadjusted for income and other country differences. Steps use unrounded means. The small lowest-category difference is not evidence that partial democratisation has no benefit. A cross-section does not supply a transition counterfactual."
     },
     {
       "id": "vdem-2026-floor-claim-instrument-fragile",
-      "claim": "The 'democracy is a floor on wellbeing' dispersion claim is instrument-fragile: on V-Dem polyarchy it survives an income control narrowed (b = −0.49, p = 0.032, log GDP n.s.), while on the same sample and control the EIU index loses it — a claim whose verdict tracks the measuring instrument is not citable as support.",
+      "claim": "The exploratory absolute-residual regression on the bundled V-Dem snapshot has a negative democracy coefficient after income adjustment. Its uncertainty is sensitive to measurement choices; it does not measure a guaranteed wellbeing floor or the lower tail of individual lives.",
       "value": {
         "b_polyarchy_alone": -0.655,
         "p_alone": 0.001,
@@ -890,9 +890,9 @@
       "source": "Same derivation as vdem-2026-democracy-happiness-partial (https://ourworldindata.org/grapher/electoral-democracy-index and siblings); the isolation test against the alternative index is recorded qualitatively in book-1/source/vdem-rederivation.md, its coefficients deliberately kept out of this CC0 registry under the 2026-08-02 licensing ruling",
       "retrieved": "2026-08-03",
       "method": "fetched-by-script",
-      "fetch": "vdem_happiness.py --snapshot registry/data",
+      "fetch": "vdem_happiness.py --from-snapshot registry/data/vdem-happiness-2026-08-03.csv",
       "book": "book-1",
-      "notes": "Part V's worked example, third act: not a clean refutation but instrument-dependence — 'we would have loved this claim, and we cannot have it, and here is exactly why.' Crude heteroskedasticity test kept deliberately (mirrors the original); no HC errors."
+      "notes": "Snapshot reproduced 2026-09-19. Absolute residuals include both tails of a fitted line through country means; standard errors are conventional, not heteroskedasticity-robust. The archived same-sample EIU comparison also has a negative coefficient but does not pass the conventional significance threshold. That contrast does not test a difference between coefficients, prove the phenomenon false, or identify a causal effect. No EIU-derived values are reproduced in this CC0 registry. Working-record interpretations are superseded by its 2026-09-19 correction."
     },
     {
       "id": "demo-happy-prior-analysis",
@@ -932,6 +932,42 @@
       "method": "quoted",
       "fetch": null,
       "notes": "DENOMINATOR WARNING. This is CEO pay against a TYPICAL (median) worker in the key industry of each of the largest 350 US firms. Mondragon's nine-to-one is highest against LOWEST pay inside one cooperative. The two are not like for like, and comparing them understates the real distance; Part V states the mismatch where it makes the comparison. 'Comparable firms' means large listed firms, not firms comparable to a Basque industrial and retail federation."
+    },
+    {
+      "id": "cinelli-forney-pearl-controls",
+      "claim": "Adjustment for a regression covariate can alter the causal quantity of interest; whether a control helps depends on the causal structure.",
+      "value": null,
+      "units": null,
+      "source": "Cinelli, Carlos, Andrew Forney and Judea Pearl. A Crash Course in Good and Bad Controls. Sociological Methods & Research 53(3), 1071–1104 (2024; online 2022). https://doi.org/10.1177/00491241221099552; author-hosted reprint https://ftp.cs.ucla.edu/pub/stat_ser/r493-reprint.pdf",
+      "retrieved": "2026-09-19",
+      "method": "reference",
+      "fetch": null,
+      "book": "book-1",
+      "notes": "Methodological reference for Part V; no empirical estimate about this constitution or causal estimate of democracy is attributed to this source."
+    },
+    {
+      "id": "gelman-stern-2006-significance",
+      "claim": "A contrast between a statistically significant estimate and a nonsignificant estimate does not itself establish a statistically significant difference between them.",
+      "value": null,
+      "units": null,
+      "source": "Gelman, Andrew and Hal Stern. The Difference Between Significant and Not Significant Is Not Itself Statistically Significant. The American Statistician 60(4), 328–331 (2006). https://doi.org/10.1198/000313006X152649; author-hosted copy https://sites.stat.columbia.edu/gelman/surveys.course/GelmanStern2006.pdf",
+      "retrieved": "2026-09-19",
+      "method": "reference",
+      "fetch": null,
+      "book": "book-1",
+      "notes": "Methodological reference for Part V; no empirical estimate about this constitution or causal estimate of democracy is attributed to this source."
+    },
+    {
+      "id": "asa-2016-p-values",
+      "claim": "Scientific conclusions should not turn only on whether a p-value crosses a threshold; statistical significance does not measure effect size or practical importance.",
+      "value": null,
+      "units": null,
+      "source": "American Statistical Association, Statement on Statistical Significance and P-Values (2016). https://www.amstat.org/asa/files/pdfs/p-valuestatement.pdf; full statement https://doi.org/10.1080/00031305.2016.1154108",
+      "retrieved": "2026-09-19",
+      "method": "reference",
+      "fetch": null,
+      "book": "book-1",
+      "notes": "Methodological reference for Part V; no empirical estimate about this constitution or causal estimate of democracy is attributed to this source."
     }
   ]
 }

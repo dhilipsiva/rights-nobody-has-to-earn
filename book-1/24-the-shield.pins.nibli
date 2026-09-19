@@ -15,7 +15,7 @@
 # is untouched. Pin a FALSE only where the KB could have said TRUE, and say in
 # the comment what would flip it.
 
-:expect-pins 41
+:expect-pins 47
 
 # DON — "Don injured Pax. Then Don exposed Pax."
 ? injure(Don, Pax).
@@ -166,13 +166,25 @@ public(Pax).
 ? correct(Case_Rex, ActivePower).
 # => TRUE
 
-# Rex exposed the court and the review body, so neither may decide whether this
-# prosecution is connected to either disclosure. Two bodies that Rex did not
-# expose do, naming the case and the person.
+# Rex has no qualifying case finding initially. Appeals and Convocation
+# decide only with their own case authority and independently attested
+# eligibility; their agreement alone is insufficient.
 observe(Appeals, Case_Rex, ShieldUnrelatedToTheDisclosure, ShieldConnectionScope).
 observe(Convocation, Case_Rex, ShieldUnrelatedToTheDisclosure, ShieldConnectionScope).
 observe(Appeals, Case_Rex, Rex, ShieldSubjectScope).
 observe(Convocation, Case_Rex, Rex, ShieldSubjectScope).
+
+? prisoner(Rex).
+# => FALSE
+
+authorized(Appeals, ShieldConnectionReviewer, Case_Rex).
+authorized(Convocation, ShieldConnectionReviewer, Case_Rex).
+authorized(ShieldAppointments, ShieldQualificationAuthority, Case_Rex).
+authorized(ShieldAppointmentsReview, ShieldQualificationReviewAuthority, Case_Rex).
+observe(ShieldAppointments, Case_Rex, Appeals, IndependentShieldReviewerScope).
+observe(ShieldAppointments, Case_Rex, Convocation, IndependentShieldReviewerScope).
+observe(ShieldAppointmentsReview, Case_Rex, Appeals, IndependentShieldReviewerScope).
+observe(ShieldAppointmentsReview, Case_Rex, Convocation, IndependentShieldReviewerScope).
 
 ? prisoner(Rex).
 # => TRUE
@@ -185,18 +197,48 @@ observe(Convocation, Case_Rex, Rex, ShieldSubjectScope).
 ? show(Rex, Review).
 # => TRUE
 
-# ONE ELIGIBLE BODY IS NOT ENOUGH, and the reason is the conflict rather than
-# the count. Sly exposed the court, so the court is barred from deciding this;
-# the review body is eligible and alone. The pair does not complete.
+# A prosecuting court cannot supply the independent case decision. Give
+# every positive qualification premise so that the Court exclusion is live;
+# the isolated shield-independence cases test the other conjuncts separately.
 observe(Review, Case_Sly, ShieldUnrelatedToTheDisclosure, ShieldConnectionScope).
 observe(Court, Case_Sly, ShieldUnrelatedToTheDisclosure, ShieldConnectionScope).
 observe(Review, Case_Sly, Sly, ShieldSubjectScope).
 observe(Court, Case_Sly, Sly, ShieldSubjectScope).
 
+authorized(Review, ShieldConnectionReviewer, Case_Sly).
+authorized(Court, ShieldConnectionReviewer, Case_Sly).
+authorized(ShieldAppointments, ShieldQualificationAuthority, Case_Sly).
+authorized(ShieldAppointmentsReview, ShieldQualificationReviewAuthority, Case_Sly).
+observe(ShieldAppointments, Case_Sly, Review, IndependentShieldReviewerScope).
+observe(ShieldAppointments, Case_Sly, Court, IndependentShieldReviewerScope).
+observe(ShieldAppointmentsReview, Case_Sly, Review, IndependentShieldReviewerScope).
+observe(ShieldAppointmentsReview, Case_Sly, Court, IndependentShieldReviewerScope).
+
 ? prisoner(Sly).
 # => FALSE
 
 ? defend(Sly).
+# => TRUE
+
+# NAMING EVERY DECISION PARTICIPANT IS NOT A VETO. Positive eligibility and
+# the case finding remain; the disclosure remains protected in its own right.
+show(Rex, Appeals).
+show(Rex, Convocation).
+show(Rex, ShieldAppointments).
+show(Rex, ShieldAppointmentsReview).
+? prisoner(Rex).
+# => TRUE
+? defend(Rex).
+# => TRUE
+
+# AN ACTUAL AUTHORISED CONFLICT IS DIFFERENT. It defeats the affected
+# decision even if favourable certifications remain alongside it.
+observe(ShieldAppointmentsReview, Case_Rex, Appeals, ConflictedShieldReviewerScope).
+? contradict(Case_Rex, Appeals, ShieldReviewerConflict).
+# => TRUE
+? prisoner(Rex).
+# => FALSE
+? defend(Rex).
 # => TRUE
 
 # ── THE REACH-BACK, MINUS THE CENTURY. MUST BE LAST: ground facts persist ────

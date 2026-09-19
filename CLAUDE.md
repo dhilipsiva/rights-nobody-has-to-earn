@@ -3019,9 +3019,11 @@ the conviction rule already binds `$case`, which is why the second route lives
 there. Reading an ordinary `cite(Court, $case, ·)` as the finding was also
 refused: it is present in every prosecution and would empty the shield.
 
-A person who exposes every answerable body leaves nobody eligible and keeps the
-shield in every case. That is the chosen direction of failure, defended in the
-decision record rather than repaired.
+The initial scoping left a person who exposed every answerable body with no
+eligible reviewer. **Superseded by item 10 below:** that blanket veto is
+replaced by positive case-bound authority and independently reviewed
+eligibility, with actual-conflict findings and party/separation exclusions.
+The prior defence did not establish that the failure was necessary.
 
 **Item 05 — the purpose of recognition, landed 2026-09-19.** Controlling
 record: `book-1/appendix/decisions/recognition-purpose-decision.md`. The census
@@ -3222,6 +3224,78 @@ it ships with the book in the public domain, that derived figures carry the
 script and the data snapshot, and that disputed figures and mismatched
 denominators are marked in the entry and in the sentence. Registry: 69 entries
 to 71; `registry/check.py` passes.
+
+**Item 10 — causal and institutional justification, landed 2026-09-19.** Part V
+distinguishes descriptive country associations, causal hypotheses, normative
+reasons and consequences of the formal model. The income-adjusted democracy
+correlation does not allocate causation between income and political freedom;
+regime-group differences do not estimate transitions; absolute residuals of
+country means do not measure the lower tail of individual wellbeing; and
+different significance labels do not establish a difference between estimates.
+The existing merged snapshot is reproducible without network access through
+`registry/fetch/vdem_happiness.py --from-snapshot`. Its latest observations are
+selected separately by series, with differing years in three of 141 countries.
+The original numerical results are unchanged. The source record and registry
+state the correction, preserve the historical comparison as historical, and
+add the primary methodological references. Historical institutional examples
+are also narrowed where they support a hypothesis rather than an isolated cause.
+
+The permitted argument channel compares the principal choices with credible
+alternatives: resource-specific scarcity priority and a lottery; unranked
+recognition and no constitutional recognition; voluntary professional staffing;
+divided appointments and majority or professional appointment; permanent and
+act-specific answerability; provisional disclosure protection and a hearing
+before protection; current authority and carry-forward authority; bounded and
+linked personal records; territorial and population representation; collective
+and prime-minister executives; residence and citizenship; usable essentials and
+an income guarantee; public and voluntary funding; fiscal discretion and a
+balanced-budget rule; and bounded emergency power and derogation. Each states
+the reason, the cost, safeguards and evidence that would weaken the preference.
+None treats compatibility in Nibli as evidence of institutional performance.
+
+The comparison exposed a repairable defect in item 04's shield settlement.
+Naming all reviewers made an unrelated prosecution impossible under its
+`~show` exclusions. The controlling supersession is
+`book-1/appendix/decisions/shield-scope-decision.md`: replace those exclusions
+with case-specific reviewer authority and positive qualification by two
+separated, authorised functions. The two deciders and two qualification
+functions are distinct and cannot be the defendant, injured person or
+prosecuting Court. An authorised actual-conflict finding blocks its participant
+across favourable certifier pairs; a disclosure alone does not. Missing
+qualification retains protection. The shield, standing, floor and credibility
+rules do not change. This resolves allegation-as-disqualification; it does not
+prove independence, a hearing or delivery in the world. The source has 7,110
+rules, with the predicate inventory and strata unchanged.
+
+Chapter 24 describes the current sequence, including qualification, later
+disclosures and a subsequent conflict. Its focused check passes 94 pins in two
+cases (11.68s). The isolated qualification matrix adds 57 cases and 456 pins,
+including the earlier veto as an explicit counterfactual, each missing or
+wrong-case premise, fused functions, parties in decision roles, actual
+conflicts, certifier shopping and uncredentialed noise. All 15,939 pre-existing
+case specifications and base definitions are preserved. The complete verifier
+passes 87,372 pins across 15,996 cases with complete contradiction checks and
+no findings in 1,091.95s; nine pre-existing known-defect pins still reproduce.
+The five-minute target is not met. The registry passes with 74 entries; the
+offline reproduction and snapshot round trip pass.
+
+Development checks use `RUST_MIN_STACK=67108864 cargo test --release --locked`:
+14 amendment tests pass (129.54s), the authoring run passes 128 with five
+explicitly ignored and finds one stale Chapter 24 wording reference (765.27s).
+Restoring the accurate referenced phrase resolves it; all six reference tests
+then pass (1.40s). The runner passes 32 tests with three explicitly ignored
+(0.06s). The initial default-stack debug run overflowed; its larger-stack debug
+retry was interrupted, not counted as a pass. `cargo fmt --all --check` reports
+pre-existing formatting differences; comparing both touched Rust files with
+HEAD confirms identical formatting changes were already requested there.
+`git diff --check` passes.
+
+The exact changed reader prose is retained in its canonical files as
+`session-drafted, author-approved under delegated approval (2026-09-13)`.
+Separate prose review confirms 73,428 derived words against 28,413 other words
+across all ordered inputs, including the epigraph. The broader Part V rewrite
+remains item 11; it must retain the corrected inference and the substantive
+qualification rule while removing the older inventories and revision narration.
 
 ### Measured Nibli capability boundaries
 
@@ -3454,44 +3528,31 @@ exist and run inside `verify.sh`; see `registry/README.md`. What remains:
   cites his proposal — the one claim the research-brief corrections found no error in but
   no registry entry for either.
 
-- **The V-Dem re-derivation is DONE (2026-08-03) — Part V's worked example has its
-  numbers and a better third act.** `registry/fetch/vdem_happiness.py` derives
-  everything from OWID's CC BY series (V-Dem polyarchy + RoW, WHR ladder, WB GDP);
-  three registry entries + snapshot landed; working record at
-  `book-1/source/vdem-rederivation.md`. Robust across instruments: the income-control
-  narrowing (partial r ≈ 0.20, was 0.195) and the step pattern (+0.02/+0.59/+1.09 —
-  bottom step buys nothing). Changed: the floor claim is **instrument-fragile**, not
-  cleanly refuted — it survives the income control narrowed on polyarchy (p = 0.032)
-  and dies-or-marginal on the alternative index over the identical sample — so the
-  worked example's third act becomes "a verdict that tracks the instrument is not
-  citable", which is a stronger methods lesson than the refutation it replaces. Part V's
-  frame now runs this arc (landed 2026-08-03); the EIU-era sub-bullets below remain
-  the historical working reference. **[AUTHOR-GATED] The one open question is whether
-  `democracy_vs_happiness_144.csv` stays.** It sits in the repo root carrying EIU index
-  values, committed before the ruling and therefore irrevocably CC0 under the root
-  LICENSE — so the question is not internal policy but whether the repository may grant
-  CC0 over a non-redistributable index at all. Deleting it now would not withdraw the
-  grant, and git history keeps the file, so this is the author's legal call rather than
-  a cleanup. The registry records the provenance either way
-  (`demo-happy-prior-analysis`), and nothing in Part V depends on the file.
-  - **Do NOT use the floor claim.** Its headline finding — "democracy behaves like a
-    floor on subjective wellbeing", from regressing |residual| on democracy score,
-    p = 0.0004, which is exactly how convincing it looks — is the one claim it never
-    controls for income, and
-    **it does not survive**: adding log GDP gives democracy b = −0.0196, t = −0.91,
-    **p = 0.37**, while log GDP itself is b = −0.336, t = −2.53, p = 0.011. Within
-    income tertiles the dispersion goes the *wrong* way for the democracy story. The
-    compression is income, misattributed. This is precisely the claim book-1 would most
-    want to be true — a floor effect, in a book about floors — which is exactly why it
-    must not be used. An economist kills it in one regression.
-  - **Use the income result instead: it supports the book's real thesis better.** What
-    compresses the dispersion of human wellbeing across countries is material provision,
-    not the franchise. A book whose floor is material-and-personal guarantees, and which
-    deliberately demoted the vote *off* the floor to a rule, just got empirical support
-    for exactly that ordering.
-  - **Use the step sizes.** Authoritarian → Hybrid buys **+0.16** — nothing. Hybrid →
-    Flawed +0.73. Flawed → Full +1.01. Partial democratisation does approximately
-    nothing; the gain is concentrated at the top of the scale.
+- **V-Dem description and inference — corrected 2026-09-19, revision item 10.**
+  `registry/fetch/vdem_happiness.py --from-snapshot
+  registry/data/vdem-happiness-2026-08-03.csv` reproduces the bundled inputs
+  without a fetch. Raw r = 0.5126 and income-adjusted partial r = 0.1967 are
+  descriptive associations, not evidence that material provision causes most
+  wellbeing differences or that the vote deserves less protection. The merge
+  takes the latest observation **per series**, not a common year; three GDP
+  observations are from 2024 while the other year labels are 2025. Between-
+  category differences compare different countries, not transitions, and
+  cannot support an anti-gradualist claim. The absolute-residual regression
+  concerns both tails of national averages, not a lower bound on individual
+  wellbeing. Both archived same-sample index estimates are negative; one
+  crossing a significance threshold is no test of a difference between them.
+  Measurement sensitivity limits robustness and calls for investigation; it
+  neither refutes the causal possibility nor makes the question meaningless.
+  The prior causal and threshold-based interpretations are expressly
+  superseded in `book-1/source/vdem-rederivation.md`, with the historical
+  calculations retained there. Part V, the registry and the script state the
+  same limits. Methodological sources are Cinelli/Forney/Pearl, Gelman/Stern,
+  and the ASA statement, each linked in the chapter and registry.
+
+  The EIU column in `democracy_vs_happiness_144.csv` remains the separate
+  historical licensing question described in the working record: nothing in
+  this revision republishes its derived values in the CC0 registry. The
+  archived EIU calculation is not claimed as a newly executed replication.
 
 - **Publish the registry with the book, not just in the repo.** The formalism stays
   invisible, so what the reader verifies is the data — which only works if the registry is

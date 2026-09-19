@@ -1,0 +1,13 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+# Agreement on unrelatedness without current eligibility supplies no conviction.
+observe(Appeals, Case_Rex, ShieldUnrelatedToTheDisclosure, ShieldConnectionScope).
+observe(Convocation, Case_Rex, ShieldUnrelatedToTheDisclosure, ShieldConnectionScope).
+observe(Appeals, Case_Rex, Rex, ShieldSubjectScope).
+observe(Convocation, Case_Rex, Rex, ShieldSubjectScope).
+show(Rex, Court).
+show(Rex, Review).
+show(Rex, Appeals).
+show(Rex, Convocation).
+show(Rex, State).
+show(Rex, ShieldAppointments).
+show(Rex, ShieldAppointmentsReview).

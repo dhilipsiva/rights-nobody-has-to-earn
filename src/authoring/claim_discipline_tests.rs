@@ -36,7 +36,7 @@ fn part_v(context: &Context) -> String {
 /// leans on it. One source may carry several figures — Tanzania's relocation
 /// count and Mondragon's headcount are not one claim each — so the rows are
 /// keyed by case, not by entry.
-const TRACED: [(&str, &str, &str); 17] = [
+const TRACED: [(&str, &str, &str); 22] = [
     ("Owen's New Harmony", "harrison-1969-owen", "800 settlers"),
     ("the kibbutzim", "abramitzky-kibbutz", "270 communities"),
     (
@@ -85,6 +85,31 @@ const TRACED: [(&str, &str, &str); 17] = [
         "the democracy/wellbeing narrowing",
         "vdem-2026-democracy-happiness-partial",
         "0.5 to about 0.2",
+    ),
+    (
+        "the regime-group comparison",
+        "vdem-2026-regime-ladder-steps",
+        "closed and electoral autocracies",
+    ),
+    (
+        "the exploratory dispersion comparison",
+        "vdem-2026-floor-claim-instrument-fragile",
+        "only one passes the conventional statistical threshold",
+    ),
+    (
+        "the causal-control qualification",
+        "cinelli-forney-pearl-controls",
+        "Cinelli, Forney and Pearl",
+    ),
+    (
+        "the comparison of significance labels",
+        "gelman-stern-2006-significance",
+        "Gelman and Stern",
+    ),
+    (
+        "the significance guidance",
+        "asa-2016-p-values",
+        "American Statistical Association",
     ),
 ];
 

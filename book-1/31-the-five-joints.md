@@ -37,29 +37,48 @@ lives.
 
 Before the joints, two demonstrations — one of method, one of stakes.
 
-The method first, practiced on a claim of my own so you can watch the knife cut
-toward me. I wanted to believe that democracy makes people happier. The raw
-numbers agree: across countries, more democratic places report better lives — the
-association is strong, and if I stopped there I would have a citation. **Survives.**
-Then control for income, and most of the association turns out to belong to
-money — the correlation falls from about 0.5 to about 0.2: what compresses the
-difference in how lives feel across countries is mostly material provision, not
-the franchise. For a book whose floor is material and
-personal guarantees, and which deliberately moved the vote off the floor and into
-an ordinary rule, that is support — but it is support for a much smaller claim
-than I wanted. **Survives, narrowed.** Then the claim I wanted most: that
-democracy acts like a floor under wellbeing, compressing misery even where it
-cannot buy joy. On one measure of democracy that claim survives the income
-control. On another, over the very same countries, it does not. A claim whose
-truth depends on which ruler you measure with is not a claim about the world; it
-is a claim about rulers, and I may not use it, and I wanted to. **Fails as
-stated.** That is the discipline. Now I owe you the same knife at every joint of
-my own design. One more thing the numbers said in passing: moving a country from
-closed autocracy to the kind that holds elections it cannot lose buys its people
-almost nothing in how their lives feel. The gains arrive higher up the scale,
-and the largest single gain arrives last, at the step into full democracy.
-Whatever else that means, it is a hard number against the comfortable idea that
-a little opening is most of the win.
+Consider the claim that democracy makes people happier. In the book's bundled
+country data, the correlation between electoral democracy and average life
+evaluation falls from about 0.5 to about 0.2 after adjusting for log income per
+person. That is a description of an association. It does not allocate the
+causes of wellbeing between money and political freedom. Income could help
+explain both; democracy could affect income; other causes could affect all of
+them. Adjusting for something democracy itself changes would also remove part
+of the effect we wanted to understand. This comparison cannot decide between
+those accounts. It gives no reason to treat a vote as less important than a
+meal, or a meal as less important than a vote.[^democracy-data]
+
+The same caution applies to the regime groups. In this snapshot, the mean life
+evaluations of closed and electoral autocracies are close together; the gap
+between electoral and liberal democracies is larger. Different countries form
+each group. Subtracting their averages does not tell us what would happen to
+one country if it changed government, how long that would take, or whether a
+partial opening would help. The data use each series' latest available
+observation, and some observation years differ. They are not a study of
+democratic transitions.
+
+There is a further temptation: to call democracy a floor beneath wellbeing.
+The exploratory calculation here measures how far country averages lie from a
+fitted line. It mixes departures above and below that line. It measures neither
+the worst lives within a country nor a guaranteed lower bound. Changing the
+democracy index changes the estimated association and its uncertainty. In the
+recorded comparison on the same countries, both estimates point toward less
+dispersion; only one passes the conventional statistical threshold. That is
+not a finding that the effects differ, and it does not make the underlying
+question meaningless. Gelman and Stern explain why comparing significance
+labels is no test of the difference between estimates.[^measurement]
+
+The evidence therefore supports a modest descriptive statement and leaves the
+causal question open. A stronger account would need comparable observations
+over time, a defensible way to distinguish institutional change from its other
+causes, attention to excluded countries, and measures of the lower end of
+people's lives. Repeated results across defensible measures would strengthen
+it; disappearance under plausible specifications would weaken it. Neither
+outcome would by itself decide who deserves political voice. My reason for
+equal voice is that people subject to public power should have an equal part
+in directing it. My reason for the floor is that needing essentials should not
+give another person power to demand obedience. Those are judgments this book
+must defend, not results hidden in a correlation.
 
 Now the stakes, because a design like this is not for reviewers. Imagine a
 household — yours, if you like. You wake and there is food, not because you
@@ -91,19 +110,23 @@ elsewhere and withdrew what they could, until the exchange was a warehouse of th
 unwanted. A century later and a world away, China paid hundreds of millions of
 villagers in work points, graded face to face in village appraisal meetings
 among people who knew one another. The grades drifted, the link between effort
-and pay went slack — villagers called it eating from one big pot — and when the
-economists later measured what had held the system together, the answer was
-darker than bad bookkeeping: the collectives had kept the right to leave until
-1958, and it was the removal of exit, not the arithmetic, that broke the
-incentive to work. Scores that gate survival stop being measurements. They become
-instruments.
+and pay went slack — villagers called it eating from one big pot — and
+[Justin Yifu Lin](https://doi.org/10.1086/261732) offers a specific explanation
+for the collapse of
+productivity: the collectives retained a right to leave until 1958, and its
+removal undermined the agreement that made cooperation possible. Lin presents
+evidence consistent with that hypothesis; it does not isolate the cause of
+an entire crisis or prove that every system of measurement becomes coercive.
+The relevant warning here is about making essential provision depend on a
+score while taking away exit.
 
 What this design does, you have seen: recognition with no number. A person is
 recognised, full stop — no quantity, no ordering, no top. The chapter on
 contribution priced what that buys and what it forecloses, and it refused the
-gentle-sounding repair — count a little, rank a little — because a system that
-can express degree can rank, and one that can rank will sort people into betters
-and lessers in the one place people would feel it most.
+gentle-sounding repair — count a little, rank a little — because a common score would give public decisions a means to rank
+contributors. Whether that means was used fairly would become another public
+power to contest. This design keeps pay and competence judgments in their
+separate, limited roles.
 
 The objection, and it is the best-aimed sentence any reviewer gave me. Meta,
 reading the contribution chapter in draft: "A society that cannot distinguish 40
@@ -128,11 +151,24 @@ hazardous, coerced, exploitative, or conditioned on the floor. Second, the trade
 was priced with open eyes: the same chapter that cannot say *more* also cannot
 say *less*, and the history above is what the ability to say *more* has cost —
 the valuator who becomes the political system, the score that becomes the leash.
-Third, and honestly: the not-seeing charge partly stands. This design sees a
-supplied work entry, never how much care occurred or whether public continuity
-arrived. A person whose decades of care read identically to a season of clerking
-has been told something untrue about their life. The design accepts that
-untruth to avoid a worse one.
+Third, the not-seeing charge partly stands. This design sees a supplied work
+entry, never how much care occurred or whether public continuity arrived.
+Decades of care and a season of clerking can receive the same acknowledgment.
+Anyone seeking an account of their relative contribution will not find it
+here.
+
+The strongest alternative is to dispense with constitutional recognition
+altogether. People could honour care and creation through their own
+associations, while wages and compensation used separate, contestable rules.
+That would avoid maintaining a public judgment whose practical value is
+unproven. I retain the unranked acknowledgment because it lets the design name
+contribution without making it a price of membership. The cost is its poverty
+of expression: it cannot compare duration, difficulty or sacrifice. Calling
+that omission an equality of contribution would be false; the rule makes no
+such comparison. If the acknowledgment serves no useful purpose, or becomes an
+informal badge of superior worth despite its legal limits, removal is the
+better choice. The history of compulsory work points does not establish that
+all voluntary honours, wages or measurements are oppressive.
 
 **Survives, narrowed.** Recognition remains one unranked, unread conclusion. It
 cannot qualify wages, property, credit, insurance, political weight, or the
@@ -145,26 +181,44 @@ contribution, recognition, conviction, disability stereotype, productivity,
 social usefulness, general lifespan, and political favour never become priority
 keys. The day a score gates bread, this joint has failed.
 
+Scarcity makes the choice harder. A lottery among everyone in need offers equal
+chances without asking officials to compare lives. It is a serious alternative
+to the priority rule, especially where forecasts of benefit are unreliable.
+But equal chances can pass an indivisible resource to someone who can wait
+while another suffers an imminent irreversible loss. The design first keeps
+an effective equal minimum wherever possible, then permits distinctions tied
+to the resource: urgency, accessibility, harm from interruption, and likely
+benefit after accommodation. Materially equal claims still reach a lottery or
+rotation. This is a choice about which differences matter, not a claim that
+the machine can measure them.
+
+The cost falls on whoever receives lower priority, and on people whose needs
+the evidence understates. A rule maximizing total benefit or expected years
+of life could sometimes produce a larger aggregate gain. This design refuses
+to buy that gain with a general ranking of persons. Its alternative is
+contestable evidence about this allocation, an independent review, and an
+unmet entitlement that remains a failure owed repair. If the permitted
+criteria cannot distinguish claims reliably, they supply no reason to depart
+from equal treatment; if they reproduce disability or social disadvantage,
+calling the judgment resource-specific does not excuse it. A shortage does
+not become legitimate by using the right vocabulary.
+
 ## Rotation
 
 No reviewer pressed me on this joint. History does, and since the reviewers
 missed it I will state their case for them, stronger than they would have.
 
-The kibbutzim are the longest, best-documented run of voluntary equal sharing in
-modern history — from Degania in 1910 to some 270 communities
-today — and for generations they made full income equality work with tools this
-design would recognise: careful screening, mutual watching, the long patience of
-people who cannot easily leave. Then it unwound, and the order of the unwinding
-is the objection. A debt crisis gutted the finances. Endless rotation of
-leadership produced fatigue, then amateurism. The most skilled members — the
-doctors, the engineers — drifted toward cities that would pay them what they were
-worth. By around 2010, roughly three in four kibbutzim had adopted differential
-salaries: still a safety net, no longer a fiction that every contribution prices
-identically. The people who ran the longest experiment in flat valuation ended it
-themselves, from inside, and the mechanism that broke first was not greed. It was
-rotation — who leads, who does the thankless administrative work, who empties the
-bins nobody volunteers for — done without memory, without relief, and without any
-way to say thank you that counted.
+The kibbutzim offer evidence against treating equal sharing as either
+impossible or effortless. From the first community in 1910, the movement grew
+to roughly 270 communities by the period studied in
+[Ran Abramitzky's account](https://www.aeaweb.org/articles?id=10.1257/jep.25.1.185).
+His explanation considers shared commitments, screening, mutual monitoring
+and the costs of leaving, alongside incentives to depart and pressures to
+change. By around 2010, roughly three in four kibbutzim had adopted
+differential salaries. That history does not isolate leadership rotation as
+the cause, and it does not show that an unconditional minimum requires equal
+pay. It asks a narrower, difficult question: how does an arrangement sustain
+cooperation when people can leave and rewards differ elsewhere?
 
 What does this design do about rotation? It now has a constitutional answer for
 rotation of public authority. Current office and current lawful power are
@@ -198,6 +252,19 @@ done without caste or coercion. Those burdens remain with democratic law and
 the operating design. The floor removes assignment by hunger. It does not staff
 the society.
 
+The relevant alternative is not unpaid compulsory rotation. A professional
+service with higher pay for difficult work, training, predictable hours and
+worker bargaining is permitted here. Its strongest objection to this design
+is that an unconditional exit may require greater expenditure or leave some
+essential work unfilled. I accept the duty to solve that problem through
+conditions, recruitment and provision, while refusing to make a particular
+person's subsistence the bargaining weapon. Neither the kibbutz history nor
+these rules establishes the wage needed or the labour supply available. A
+credible operating account must test persistent vacancies, continuity and
+the distribution of unpleasant work. If it can staff services only by denying
+the floor to refusers, it has failed this design's test; renaming the denial a
+contribution duty would not answer the objection.
+
 ## Coercion
 
 Tanzania, 1967: the Arusha Declaration commits a nation to ujamaa — familyhood
@@ -208,8 +275,9 @@ five million people were relocated in three years — that is James Scott's
 figure, and it is the conservative one. Output fell, imports rose, and the
 counting came apart: the totals for how many people ended up living in villages
 run from around nine million to 13 million depending on whose books you read,
-and they cannot all be right. Coercion had not only broken the programme, it
-had broken the state's ability to say what it had done. Nyerere himself
+and those estimates cannot be treated as one agreed count. Their disagreement
+alone does not establish why the counting differed or prove that coercion
+caused the discrepancy. Nyerere himself
 admitted, later, that officials had used force against his own founding
 principle. The lesson is not that villages are bad. It is that the moment
 consent is replaced because it is slow, the project is already over, whatever
@@ -299,9 +367,10 @@ lowest-paid member to its highest. The figure usually set against that, near
 listed firms; it is a looser measurement than the cooperative's, and the
 looseness runs in the corporation's favour. When one of its companies collapsed
 in 2013, most of the worker-members were redeployed into sister cooperatives
-rather than dole queues. What the admirers miss is *why* it held: Mondragon
-federated capital and education, not just values — its own bank, its own
-insurance, its own university. Values recruit; institutions retain. And what
+rather than dole queues. The federation's bank, insurance arrangements and university are plausible
+parts of an explanation for its capacity to support members; their presence
+does not isolate how much each contributed or establish that another society
+could reproduce the result. And what
 its admirers concede too rarely: most workers in its overseas plants are not
 members. The resilience machine has a boundary, and the people outside it work
 for the people inside it. Kerala tells the same double story at state scale:
@@ -356,8 +425,93 @@ does it prove that a supplied fact is true, complete, or honestly kept. Naming
 those places is not solving capture. It is choosing where to fight it, and
 saying so loudly enough that nobody can pretend the fight is elsewhere.
 
-Two consequences of that choice deserve their own paragraphs, because they are
-where this joint touches the ground.
+### Who checks the checkers
+
+Divided appointments compete with a serious democratic alternative: let the
+elected majority appoint, require public reasons and open confirmation, and
+let voters replace the majority if its choices fail. That gives the public a
+clearer line of responsibility than a collection of selectors. Professional
+self-government offers another strength, expertise, but puts the profession
+in charge of its own boundary. This design instead combines open nomination,
+qualification review, divided sources, staggered nonrenewable mandates and
+removal for stated cause. Its purpose is to make a government face scrutiny
+from people whose next appointment it does not control.
+
+The costs are slower agreement, possible vacancies, and less direct electoral
+control over reviewers. Division can also disguise a single coalition's
+control. The prohibition on majority appointment control therefore concerns
+the actual coalition as well as the formal appointing labels; alternate
+routes address a selector's failure to act. Those are requirements, not
+evidence that independence exists. Repeated vacancy delays or shared control
+across nominally separate sources would count against this arrangement. A
+simpler appointment method that achieved comparable independence, accessible
+challenge and faster correction would deserve preference. A list of different
+signatures would not rebut that evidence.
+
+Permanent answerability has a narrower purpose. Recall must end authority
+without closing inquiry into its use or undoing protection for disclosure.
+An alternative could preserve that result through records tied to each past
+office and act, without keeping a person permanently in an answerable class.
+That approach would distinguish official conduct from later private life more
+finely. This design uses the simpler lasting marker, with current powers
+authorised separately. Its cost is the expanding set of people whose exposure
+can open a shield. The recall example establishes the separation inside the
+model; it establishes no deterrent effect in society. Evidence that the broad
+marker burdens unrelated private conduct without improving accountability
+would favour the more specific alternative.
+
+### Whose loss counts while a question is open
+
+The strongest alternative to the shield is a prompt independent hearing that
+grants a stay only when the discloser shows a credible connection between the
+disclosure and the prosecution. It gives an unrelated victim a faster route
+to judgment and limits tactical allegations. Its danger is the interval before
+that hearing: a court implicated by the disclosure can seek conviction while
+the person exposing it is still trying to obtain protection.
+
+The shield reverses that burden. Protection begins with a disclosure against
+an answerable actor; an unrelated prosecution can proceed on the case finding
+described in Chapter 24. The finding needs agreement by answerable reviewers
+with authority for the case and positively established independence. Separate
+qualification and review functions must establish their eligibility; none
+may be a party, the prosecuting court, or its own qualifier. That arrangement
+aims to protect reporting
+before its truth is settled without making every unrelated offence immune.
+It gives up speed, and the cost belongs partly to the injured person, whose
+claim to a remedy has the same standing as the discloser's. Delay is not
+harmless merely because it avoids imprisonment. Separately justified
+protective measures, assistance and civil remedies remain available; the
+shield is not permission to threaten or injure anyone.
+
+An accusation against a reviewer cannot by itself decide whether that reviewer
+has a conflict. Otherwise the defendant could stop every hearing by naming
+everyone who might conduct it. A positive finding of actual conflict does
+stop the affected decision, including where it concerns a qualifier, and a
+favourable certificate cannot cancel it. The tests in Chapter 24 distinguish
+those cases. The design still needs institutions capable of producing honest
+independent findings; no rule can infer those from the absence of a recorded
+relationship. Where the necessary findings are missing, conviction stays
+blocked. That protects the discloser pending review without pretending that
+the injured person's remedy is complete. A procedure that delivered equally
+prompt protection with fewer obstructed unrelated cases would count against
+this arrangement. The evidence would have to include missed retaliation as
+well as delay; counting convictions alone would decide the comparison in
+advance.
+
+The same question governs expired public power. Continuing the last authority
+until a successor arrives offers administrative stability. It also makes
+withholding the next record a way to preserve a restrictive power. This design
+requires positive current authority and preserves only separately justified
+essential continuity. The cost is interrupted discretionary action where an
+honest record is missing. Predeclared alternates and continuing floor duties
+address that cost without turning silence into a fresh mandate. If essential
+provision still fails, the failure remains one the state owes a remedy for;
+calling the default protective would not discharge it.
+
+### Equality and the limits of a record
+
+Two consequences deserve their own account, because they are where this joint
+touches the ground.
 
 Caste, first — and I mean the word precisely, not as a metaphor. Ambedkar's
 question to every constitution is what it does when the society beneath it is
@@ -444,6 +598,22 @@ decisions. Each is a limit held by a person, not a service to be earned and not
 a score to be balanced away. The narrow record complements those limits; it
 does not substitute for them. Neither device proves that nobody judges a person
 elsewhere or that an institution will stop an unlawful intrusion.
+
+A broader record is a credible alternative. Linking care, housing and service
+histories could help an institution notice an unmet need without making a
+person retell it at every door. A carefully validated prediction could also
+be more informative than an official's unrecorded intuition. I do not answer
+that argument by declaring all measurement worthless. The design permits
+necessary records for particular purposes and independently governed
+statistics; it refuses a reusable personal classification that can travel
+into standing, liberty or entitlement. The price is lost convenience and
+coordination, and it must not be paid by the child nobody notices. The public
+duty to initiate help without a request addresses that obligation, while
+limited representation supplies someone to act without creating a general
+incapacity status. If these limits obstruct necessary care, that is evidence
+for a better bounded sharing rule, not permission to abandon care. The claim
+to test is whether the permitted record can support the task with less
+exposure and equal access, not whether a smaller database looks purer.
 
 ### Work, property, and private power
 
@@ -677,8 +847,10 @@ government-appointed foundation, and in 2025 the Supreme Court holding that the
 residents' assembly may only advise the board that statute appoints.
 Switzerland's WIR — a parallel credit network born in 1934 — survived
 ninety-two years by never declaring war on the franc: it complements the
-national money, expanding when bank credit tightens, and so the sovereign has
-never had a reason to kill it. And Kerala shows the state as enabler: real
+national money. Its persistence is consistent with a complementary currency
+finding room
+inside a national system. It does not establish every reason for state
+tolerance, or predict what another state would permit. And Kerala shows the state as enabler: real
 budgets plus real training moved through village assemblies, and local
 democratic capacity that outlasted the campaign — the state, rarely and
 conditionally, making a design like this more possible rather than less.
@@ -692,6 +864,108 @@ collective Executive Council held to confidence, a Civic President confined to
 bounded formal acts, ordinary and constitutional courts, divided appointments,
 independent oversight, residence-first political membership, peaceful
 succession, and a negotiated internal route for secession.
+
+### Why this republic
+
+These choices need reasons beyond their compatibility with one another. I
+judge them by equal political voice, the ability to decide and replace a
+government, protection against concentrated power, and continuity of the
+rights the state owes. Those criteria can conflict. Naming them does not
+establish that this arrangement performs best.
+
+A population-proportional legislature with constitutionally protected regional
+autonomy is a strong alternative to the Regions Council. It gives every adult
+the same weight in national lawmaking and leaves competence disputes to a
+court. The reason for a separate territorial voice is that changing the
+federal bargain affects a region's ability to govern itself, even where its
+population cannot assemble a national majority. But regions are not people.
+Equal regional weight gives residents of a small region more indirect weight
+in the Council than residents of a large one. I accept that departure only
+within its stated mandate: a reasoned return of ordinary legislation that the
+Assembly can repass, and consent over the federal settlement. The Council
+cannot use an ordinary-law return as a permanent veto. Its influence still
+costs time and can shelter entrenched regional interests. If protected
+competence and judicial review secured self-government equally well without
+that unequal influence, the additional chamber would lose its justification.
+
+The collective executive also has a strong competitor: a parliamentary prime
+minister accountable for a cabinet, removable when a majority can form a
+replacement. That alternative can give decisions a clearer owner without
+creating a separately elected president or abandoning legislative control.
+The Council places executive judgment with a body and denies its coordinator
+a personal mandate to overrule it. I prefer that division because no one
+office should become the indispensable person through whom lawful government
+passes. The cost is bargaining within the executive and responsibility that
+members can try to pass among themselves. Constructive replacement protects
+continuity but can leave an unpopular government in place while opponents
+cannot agree on its successor. Public reasons, legislative scrutiny and
+bounded caretaker authority are the safeguards; they are not performance
+data. Persistent inability to assign responsibility or act within lawful
+deadlines would strengthen the case for the prime-minister alternative.
+
+The residence rule chooses whose voice counts before choosing how to count
+it. Citizenship with accessible naturalisation offers durable membership and
+can preserve the voice of people displaced abroad. Its cost is that residents
+subject to everyday decisions can wait outside the electorate. Residence-first
+membership gives those adults equal local political voice without requiring
+property, contribution or conviction-free status. Its own boundary is real:
+a nonresident has no ballot at that tier, even with family and attachments
+there; children retain voice and protection without an adult ballot. One
+political home and continuity through forced displacement address competing
+claims and compelled moves. They do not establish a flawless residence test.
+Evidence of systematic exclusion by those procedures would require repair;
+the absence of citizenship gates would not excuse it. The equal ballot is a
+normative commitment, not a reward for the happiness correlation above.
+
+### Essentials, money and emergencies
+
+An income guarantee has a strong claim against a specified material floor:
+people can choose what they need, and a payment need not require a state to
+manage each service. The objection matters especially when public provision
+is rigid or inaccessible. This constitution allows money, vouchers and
+insurance as instruments. It keeps the public obligation tied to usable
+essentials because money alone leaves the person bearing a price increase,
+an inaccessible service or a monopoly's refusal. That choice transfers more
+responsibility to the state and creates more disputes about adequacy. If a
+cash route supplies reliable, accessible provision with less intrusion, it
+can discharge the obligation; declaring its payment a success while an
+essential remains unreachable cannot. The comparison concerns provision in
+the relevant conditions, not a constitutionally preferred ownership label.
+
+Funding that obligation through voluntary gifts or contributory insurance
+would reduce compulsory claims on other people's resources. It would also
+leave the child without a contributor dependent on somebody choosing to pay.
+I choose public responsibility financed according to capacity to contribute,
+with democratic control and challenge. The cost is compulsory taxation and
+the public power needed to collect it. Protecting subsistence, secure housing
+and remedy limits that power; it does not make collection voluntary. Whether
+the remaining tax base can fund the promise has to be shown in the operating
+account. An unfunded entitlement is not evidence for its own feasibility.
+
+A constitutional balanced-budget rule offers a clear constraint against
+passing costs to later taxpayers. The objection to it here is equally clear:
+it can require essentials to contract when revenue falls, irrespective of
+available real resources or the reasons for borrowing. The design instead
+allows borrowing under legislative authority, reporting, audit and common
+resource limits. It gives up a simple numerical restraint. Debt-service
+burdens, dependence on creditors or displacement of necessary investment
+would count against how that discretion was used. Refusing a constitutional
+ceiling supplies neither a sustainable debt level nor permission to ignore
+one; those are questions the fiscal evidence must answer.
+
+An emergency power to derogate from ordinary rights offers speed and a wider
+choice of responses. Its strongest case is a hazard that ordinary processes
+cannot address in time. This design permits accelerated procedures,
+redirection, requisition and separately justified restrictions, while refusing
+an emergency power to suspend the institutions that can examine them. The
+cost is that some actions remain unavailable even during a crisis. An
+operating account must test whether the authorised routes and alternates can
+act quickly enough. A failure would require a concrete repair to those routes,
+not an assertion that careful paperwork protected the people harmed. The
+reason to retain the boundary is that an executive should not decide both
+that an exceptional power is needed and that nobody may effectively contest
+it. The pins establish the boundary's behavior under supplied facts. They do
+not establish the success of an emergency response.
 
 Each constitutional power still has to pass through its own positive supplied
 record: lawful source and version, holder, jurisdiction, scope, separate
@@ -913,8 +1187,9 @@ adopted amendment
 procedure approves the widening, no entrenchment protects the list, and no
 check certifies the new word's meaning or every consequence it creates. Each
 current name has faced this book's own attempts to break the design it serves.
-That history is a defence, not a proof. It is the only kind of defence a
-foundation ever gets.
+Those attempts test consequences of the vocabulary; they do not establish
+that every necessary distinction has been admitted or every harmful one
+excluded.
 
 One thing about the evidence, since I have spent five sections leaning on it.
 Every figure in this part comes out of a short public file that travels with
@@ -940,3 +1215,26 @@ that the logic refused. It is a different kind of reading and it is optional.
 The argument you have just finished is not — it is the part of this book that
 was always going to be argued by a person, because it is the part where a
 person, not a machine, has to be convinced.
+
+[^democracy-data]: The descriptive calculation uses V-Dem's
+    [electoral-democracy index](https://ourworldindata.org/grapher/electoral-democracy-index)
+    and [Regimes of the World](https://ourworldindata.org/grapher/political-regime),
+    the World Happiness Report's
+    [Cantril ladder](https://ourworldindata.org/grapher/happiness-cantril-ladder),
+    and World Bank
+    [income per person](https://ourworldindata.org/grapher/gdp-per-capita-worldbank),
+    as distributed by Our World in Data. The
+    [bundled snapshot](../registry/data/vdem-happiness-2026-08-03.csv) and
+    [reproduction instructions](../registry/data/README.md) retain the inputs.
+    On why adjustment requires a causal argument, see Cinelli, Forney and
+    Pearl, [*A Crash Course in Good and Bad Controls*](https://doi.org/10.1177/00491241221099552),
+    *Sociological Methods & Research* (2024; first published online 2022).
+
+[^measurement]: Gelman and Stern,
+    [*The Difference Between “Significant” and “Not Significant” Is Not Itself Statistically Significant*](https://sites.stat.columbia.edu/gelman/surveys.course/GelmanStern2006.pdf),
+    *The American Statistician* (2006); and the American Statistical Association's
+    [statement on significance and p-values](https://www.amstat.org/asa/files/pdfs/p-valuestatement.pdf)
+    (2016). The book's absolute-residual regression is exploratory, uses
+    conventional standard errors, and does not test whether the alternative
+    indices' estimates differ. These references explain the inferential limits;
+    they are not studies of this constitution.

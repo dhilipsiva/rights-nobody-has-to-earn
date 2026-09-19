@@ -111,23 +111,6 @@ solutions and development history stay outside the book's reading sequence.
 
 ## II. Strengthen evidence and justification
 
-### 10. Defend causal claims and institutional choices against real alternatives
-
-- [ ] Rebuild the reasoning behind the principal choices, especially those
-  discussed in chapters 6, 11, 16-20, 24 and Part V.
-
-Correct the inference from income-adjusted democracy/happiness correlations.
-Explain what measurement sensitivity establishes and what it leaves uncertain.
-For consequential choices such as territorial representation, collective
-executive authority, appointment independence and default protections, compare
-the strongest plausible alternative on stated criteria. Keep normative reasons
-distinct from empirical predictions and from properties of the formal model.
-Put non-derived justification in the permitted exempt prose channels.
-
-**Done when:** the reader can identify the reason for each major choice, its
-principal cost, a credible alternative and what evidence would weaken the
-argument; counterexamples are addressed without changing definitions to win.
-
 ### 11. Rebuild Part V around five substantive tests of the design
 
 - [ ] Rewrite `book-1/31-the-five-joints.md` after the substantive and sourcing
