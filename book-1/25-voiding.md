@@ -11,7 +11,7 @@ examiner's own conduct or a carried finding. Keeping those routes distinct
 matters: a safeguard in the paired rule is not automatically a safeguard in
 every rule that produces a void.
 
-## It takes two, from two places
+## The paired finding
 
 Gia and Hex examine Bela. Gia holds the Electorate-route credential, Hex the
 Convocation-route credential. Both record examinations, cite the same admitted
@@ -49,7 +49,7 @@ reviewer to the subject; it does not separately identify an incident or
 independence decision. Those are limits on the claim that the pair is
 independent for a particular matter.
 
-## The guards that turn around
+## Findings against an examiner
 
 Dev is Esa's parent and judges Esa. That pair of entries produces a void of
 Dev. It does not require the two signers above. The rule treats the examiner's
@@ -147,7 +147,7 @@ case into a guarantee that a person has been fairly judged.
 
 ## The child with nobody
 
-Nell is not voided in this chapter's supplied child case. All eight floor debts
+Nell is not voided in this chapter's supplied child case. Every floor debt
 derive, while recognition and recognition loss do not. The test does not record
 a completed void of Nell or prove that no false accusation could reach the child.
 

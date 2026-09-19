@@ -3593,6 +3593,55 @@ alternatives for any retained limit. They are not delegated to Book 2 merely
 because operation also needs outside evidence. Pure input-versus-world limits
 must remain distinguished from missing constitutional safeguards.
 
+**Item 15 — complete sequential line edit, 2026-09-19.** All 34 ordered
+inputs were read in order: the epigraph, opening, chapters 1–31 and optional
+method. The exact canonical Markdown of the opening, all numbered chapters
+and method is `session-drafted, author-approved under delegated approval
+(2026-09-13)`. The epigraph retains item 13's exact text and approval. The
+canonical hypothetical household paragraph also remains unchanged and matches
+the narrative-register decision exactly. No personal testimony, empirical
+finding or external operation is added.
+
+The edit removes repetitive introductions, unexplained metaphors and
+unnecessary counted claims, while retaining qualifications that change the
+meaning. Headings identify their subject or tested consequence. Employment
+terminology includes unpaid care without confusing recognition with a worker's
+legal relationship. Negation distinguishes missing evidence from an outside
+failure; authority, entitlement, duties and their performance remain separate.
+The account of subsidiarity explains the existing local, regional and common
+limits from the source, rather than leaving the term unexplained. Part V
+identifies its arguments as arguments, and the method distinguishes a query's
+TRUE result from the truth of supplied evidence. Historical evidence and
+sequences within the current model remain; no reader passage narrates the
+book's own development.
+
+The formal source, every pin file, suite inventory and runner are unchanged.
+The substantive questions recorded under item 14 remain open for item 19;
+this edit does not claim to repair them or transfer them to Book 2. Existing
+coverage retains its rows and updates 24 headings. Twelve full-society ledger
+locators and one placement-audit locator follow the edited text; a comparison
+confirms all other JSON values and structure are unchanged. Historical audit
+claims are not renewed, and no new report or verification gate is added.
+
+The defined whitespace count across all ordered inputs is 39,872 derived
+words and 12,169 other words: 52,041 total, approximately 76.6% derived.
+The previous total was 52,716. The majority-derived rule, three exempt
+channels, unnumbered epigraph and method, required child sections and their
+documented exemptions remain intact. The reduction follows meaning and
+rhythm, not a percentage target.
+
+Focused execution passes 193 pins across six cases, covering chapters 3, 5,
+9, 14, 19 and 21, with individual runs of 10.61–12.47s. Existing coverage tests
+pass (ten, 0.25s), reference tests pass (six, 1.53s after final polishing),
+and claim-discipline tests pass (five, 0.86s), including the method's exact
+formal quotations. An intermediate reference check found a chapter 7 locator
+made stale by the edit; it was corrected and the check passes. Separate prose
+review caught and corrected a grammar error introduced while tightening
+chapter 8. The diff check passes. The complete verifier passes 87,372 pins
+across 15,996 cases in 940.86s (15m 41s), with contradiction checks complete
+and no findings. Nine declared known-defect pins still reproduce; their
+passing results are not repairs. The five-minute target is not met.
+
 ### Measured Nibli capability boundaries
 
 Each is a dated measurement against a named engine revision, not a timeless

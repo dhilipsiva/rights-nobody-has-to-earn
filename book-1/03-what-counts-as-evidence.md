@@ -4,12 +4,11 @@ The record can say that Nell was born. It cannot add a free-form description
 of what kind of person Nell is. Its vocabulary is declared: a report must use
 an admitted kind of entry before the rules will accept it.
 
-The distinction matters even when an entry sounds plausible. The chapter's
-tests try to record that Adam is rich or dangerous. Both are refused because
+The tests try to record that Adam is rich or dangerous. Both are refused because
 those kinds of assertion are outside the constitutional record. Refusal says
 nothing about Adam's wealth or conduct. It says what this record may contain.
 
-The admitted kinds include births and encounters, work and teaching, injuries
+The admitted kinds include births and encounters, employment and teaching, injuries
 and judgments, relationships, proposals, appointments, receipts and challenges.
 They also include specified evidence about sources, review windows and the
 carry of a status between records. They are not all direct observations.
@@ -29,8 +28,8 @@ of someone's wealth, religion, ancestry, politics, health or associations.
 
 That limit does not prohibit every record an operating society needs. Records
 for a particular lawful purpose have separate permissions, access rights and
-limits on use. The chapter on what may be kept about you sets them out. Such
-a holding is not permission to copy its contents into every constitutional
+limits on use, set out in the chapter on what may be kept about you. Permission
+to hold a record is not permission to copy its contents into every constitutional
 decision about the person.
 
 Economic records illustrate the distinction. A contribution entry records a
@@ -75,12 +74,12 @@ Severity shows why the premises must be read together. With the Court's
 judgment and cited case in place, an attack and cruelty toward the same victim
 establish severity. Alternatively, either kind of act toward one person can
 combine with an injury to a distinct person. There is no victim-count field.
-The rules compare the named people in the entries.
+The rules compare the people named in the entries.
 
 The test gives Probe an attack against one person and cruelty against another.
 That combination alone produces no severity conclusion. Add cruelty against
-the person already attacked, and severity follows. The pairing matters; a
-summary saying merely that attack and cruelty are both present would be wrong.
+the person already attacked, and severity follows. The pairing matters;
+their mere presence would not be enough.
 
 A derived conclusion is not necessarily supported by a long chain. Nor are
 all its inputs observations. The rules can forbid a direct verdict while
@@ -166,8 +165,9 @@ case, the test first establishes that Rebel is not a prisoner. It then records
 that Rebel deceived Boss, the official Rebel exposed. No separate adjudicator
 is named in that entry. The shield against that official stops following,
 and the supplied custody premises produce the prisoner conclusion. A raw
-entry naming someone as a deceiver can also stop recognition. Those routes
-have consequences without the separate reviewed finding that voiding requires.
+entry naming someone as a deceiver can also block recognition for examination.
+Those routes have consequences without the Review judgment required to derive
+a void for deceit.
 
 A broken-Court entry has a wider effect. The supplied custody cases depend on
 the Court. Mark it broken and the prisoner conclusions stop following for the
@@ -179,14 +179,13 @@ same report.
 
 Other entries have narrower reach. Writing that someone has a family cannot
 worsen confinement. An absent parent, marriage or sibling entry cannot establish
-reviewer independence. A care-work entry proves neither delivery nor consent
-nor authority to decide for another person. A typed adulthood entry can support
+reviewer independence. Recording care as employment proves neither delivery
+nor consent nor authority to decide for another person. A typed adulthood entry can support
 the executable ballot conclusion, but the legal status of adulthood does not
 originate in the entry. A forged or withheld entry remains a hazard for the
 ballot record; neither an age nor an outside clock is verified here.
 
-The distinction at the beginning of this chapter therefore has a precise
-scope. Reserved conclusions cannot be written directly. Their admitted
+Reserved conclusions cannot be written directly. Their admitted
 premises can include judgments, and some of those judgments lack a separately
 identified finder. A closed vocabulary does not supply that missing review,
 and describing the consequence does not resolve it.

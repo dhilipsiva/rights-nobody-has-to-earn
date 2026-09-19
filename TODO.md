@@ -111,30 +111,6 @@ solutions and development history stay outside the book's reading sequence.
 
 ## III. Make the book work as a book
 
-### 15. Perform a complete line edit for precision, rhythm and economy
-
-- [ ] Edit every ordered input, including the unnumbered material, after the
-  developmental changes are stable.
-
-Remove repetitive throat-clearing, legal inventories and redundant
-qualifications. Remove all narration of earlier/newer versions, including
-"we added," "we fixed," "used to," and "now" when they describe the book's
-revision history. Rewrite the passage as a direct account of the current design;
-retain its present rationale and limitations, not the story of the change.
-Apply this to every reader-facing part, including the opening, Part V and
-method, and to each future revision. Keep qualifications that change meaning.
-Replace jargon with concrete subjects and verbs within the
-established voice and passage rules. Check pronouns, negation, terminology,
-sentence rhythm, unnecessary rhetorical certainty and duplicated examples.
-Let content determine length; do not cut to an arbitrary percentage or pad to
-reach a score. Remeasure the majority-derived requirement after restructuring.
-
-**Done when:** a full sequential reading finds no narration of the book's own
-development, no known material ambiguity, avoidable repetition or accidental
-voice change; the important distinctions survive the edit; and the book remains
-majority-derived by its defined count. Check meaning, not just keywords:
-historical evidence and time within the current model are not revision history.
-
 ### 16. Repair navigation and check the assembled reading experience
 
 - [ ] Reconcile the manifest, headings, opening contents, cross-references,

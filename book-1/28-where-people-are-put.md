@@ -88,7 +88,8 @@ from evidence therefore still depends on evidence retention, challenge, and corr
 
 The checks beside this book construct every combination in the bounded placement
 matrix: confinement, severity inputs, family presence, and typed home availability.
-The two family states must be mirrors. The checks ask every discovered destination
+Adding or removing the family entry must leave placement unchanged. The checks
+ask every discovered destination
 and reject changed sources that introduce conflicting destinations, omit a required
 result, reverse a route, or turn family into a placement condition. These checks can
 catch changes the narrower placement alarm does not detect. They verify the source;
@@ -111,12 +112,12 @@ has been arranged. It leaves the placement decision incomplete on this record.
 
 ## Housing without a destination
 
-Every confined row in the reviewed matrix derives housing. Severe cases reach it
+Every confined case in the reviewed matrix derives housing. Severe cases reach it
 alongside HighSec, non-severe cases with a home option alongside Homestay, and
 non-severe cases without that option through a destination-free housing rule.
 
-Kel and Adam are therefore housed in the model's limited sense. This does not show a
-roof delivered, and it does not settle where they may lawfully be held. Housing status,
+The housing conclusion therefore follows for Kel and Adam. It establishes neither
+a delivered roof nor a place where they may lawfully be held. Housing status,
 a named destination, and evidence of actual shelter answer different questions. A
 complete table of the first cannot answer the other two by implication.
 

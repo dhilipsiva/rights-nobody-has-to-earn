@@ -82,7 +82,7 @@ and Electorate approves, unless the proposal is marked dead. That label feeds
 no other rule. It neither supplies the political certificate above nor changes
 the constitutional source.
 
-Its protected register contains three names: the floor article, the rule that
+Its protected register names the floor article, the rule that
 a prisoner remains a person, and the register itself. Amend_Floor is approved
 but targets the floor's registered name, so it is marked dead and receives no
 law label. Amend_Meta, targeting the register, receives the same verdict.

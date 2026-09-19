@@ -20,9 +20,8 @@ follow. The person's floor entitlement remains.
 
 ## What has to be true before the word may be used
 
-A physical shortage has to be established, and the conditions are what stop the
-word being borrowed. The evidence must be authenticated, contestable, and
-specific to this resource and these people. Alternatives, reserves,
+The finding requires authenticated, contestable evidence specific to this
+resource and these people. Alternatives, reserves,
 substitution, coordination, replenishment and mutual assistance must already
 have been considered. There must be public reasons in a usable form, a
 challenge, an independent reviewer who is not the body managing the shortage,
@@ -34,14 +33,12 @@ establish that the manager actually stops.
 ## What a finding lets anybody do
 
 An allocation must stay within the finding's resource, population and scope.
-Every constitutional
-minimum is preserved wherever usable supply permits, and a reduced ration is
-never renamed as the minimum. Where an effective usable equal share exists, that
-is the answer; where dividing would leave everyone with a useless fragment, it
-is not, and the design says so rather than dividing anyway. Only then does
-anything like priority begin, and it runs on urgency, accessibility, imminent
-irreversible harm, harm from broken continuity, and individual
-resource-specific benefit assessed after accommodation — not on the person.
+Every constitutional minimum is preserved wherever usable supply permits;
+a reduced ration cannot be renamed as the minimum. An effective, usable equal
+share takes priority; dividing into useless fragments does not meet that condition.
+Any further priority must rest on urgency, accessibility, imminent irreversible harm,
+harm from interrupted provision, and benefit from the resource assessed after
+accommodation. These are grounds for this allocation, not a general ranking of people.
 
 ## What may never decide it
 
@@ -49,25 +46,24 @@ The forbidden priority keys are explicit: wealth, contribution, recognition, a
 conviction, family status, a stereotype about disability, expected
 productivity, social usefulness, a general figure for how long someone might
 live, political favour, nationality, citizenship, immigration status,
-documentation, and how somebody arrived. Each of those is refused by name, and
-the allocation that names one completes nothing. Among claims that are
+documentation, and how somebody arrived. An allocation using any of these keys
+cannot qualify under the rules. Among claims that are
 materially equal, and only there, a disclosed rotation or lottery decides.
 
 ## What is still owed afterwards
 
-Whatever is still unmet is recorded as failure. Not as a smaller entitlement,
-not as a policy, not as a fact about the person who went without — a shortfall,
-owed repair, continuity and reassessment. And a shortage found for one resource
+Whatever remains unmet is a shortfall requiring repair, continuity and
+reassessment. Recording it as failure does not reduce the entitlement or create
+an adverse finding about the claimant. A shortage found for one resource
 or one population licenses nothing about another.
 
 ## When somebody asks and nobody answers
 
-A finding of this kind does not end anybody's say in it. A request to review
+A finding remains open to challenge. A request to review
 the finding, the allocation, or the recorded shortfall places a duty on the
 reader named in the record, and that duty does not wait for the request to be
-granted. What the request concludes is exactly that duty and nothing else: no
-access to the record, no permission to act on the resource, and no finding
-either way.
+granted. The request creates that review duty; it supplies no record-access
+permission, authority over the resource, or finding either way.
 
 If the reader does not act, silence decides nothing by itself. The duty moves
 only on a positive, independently certified finding that the reader did not
@@ -75,10 +71,9 @@ respond, with authenticated notice and a real opportunity to act already in
 the record; then the predeclared independent alternate carries it. Silence is
 never approval, and it is never an adverse fact about the person who asked.
 
-A reviewed defect works the same narrow way. It has to be independently
-established, it withholds the exact use it names and leaves the rest of the
-record standing, and it is neither an adverse fact about the claimant nor an
-automatic individual remedy.
+A defect must be independently established. It withdraws the exact use it
+names and leaves the rest of the record standing. It creates neither an
+adverse finding about the claimant nor an automatic individual remedy.
 
 ## The conflicts that are not about supply
 

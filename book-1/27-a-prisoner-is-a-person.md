@@ -2,8 +2,8 @@
 
 *If you are a prisoner, you are a person.*
 
-The rule has two consequences in this model. It supplies an independent route
-to standing for someone in custody, and it forms part of the dependency that
+The rule supplies an independent route to standing for someone in custody
+and forms part of the dependency that
 makes certain hostile confinement rules unacceptable to the engine. Zed's case
 separates those consequences from the other standing routes.
 
@@ -18,7 +18,7 @@ The fixture deliberately supplies none of Zed's other standing roots: no direct
 personhood, birth, contact, presence, effective control, release or carried
 status. It is sparser than an actual custody encounter should be. With the
 custody backstop present, prisoner and person conclusions derive, followed by
-all eight floor debts. Food actuality does not derive.
+every floor debt. Food actuality does not derive.
 
 In the counterfactual that removes the prisoner-to-person rule, custody still
 derives but Zed's personhood and the dependent floor conclusions do not. That
@@ -98,7 +98,7 @@ regression tests and the substantive refusal pins check them directly. A changed
 engine or source must establish the relevant refusals again, without turning
 one rejected encoding into a universal impossibility claim.
 
-## What that means
+## Standing that protects others
 
 In the demonstrated counterfactual, removing one standing backstop both deprives
 Zed's formal record of floor conclusions and permits an additional hostile

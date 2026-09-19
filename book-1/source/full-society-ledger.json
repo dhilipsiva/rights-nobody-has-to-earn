@@ -104048,7 +104048,7 @@
         "book-1/source/counterfactual/no-economic-power-duty-bridges.pins.nibli::# Counterfactual: economic power-duty bridges are removed"
       ],
       "prose_refs": [
-        "book-1/00-opening-note.md::| Work, property, enterprise, money, credit and public finance |",
+        "book-1/00-opening-note.md::| Employment, property, enterprise, money, credit and public finance |",
         "book-1/00-opening-note.md::| Friendship, leisure, mutual aid and associations |",
         "book-1/03-what-counts-as-evidence.md::Economic records illustrate the distinction.",
         "book-1/16-public-answerability.md::The economic rules likewise confer no permanent public status",
@@ -104887,10 +104887,10 @@
         "book-1/28-where-people-are-put.md::A family entry does no placement work.",
         "book-1/29-the-one-thing-taken.md::Family status is not a placement input.",
         "book-1/30-when-the-system-notices-it-broke.md::The adulthood case needs its own boundary. General adulthood attaches",
-        "book-1/14-holding-a-role-in-somebodys-life.md::## A role is scoped, and the roles are separable"
+        "book-1/14-holding-a-role-in-somebodys-life.md::## Each role has its own limits"
       ],
       "part_v_refs": [
-        "book-1/14-holding-a-role-in-somebodys-life.md::## A role is scoped, and the roles are separable"
+        "book-1/14-holding-a-role-in-somebodys-life.md::## Each role has its own limits"
       ],
       "blocked_before_drafting": "The bodily-autonomy, health, care, family, and life-course family is prose-landed after audit of the opening note, affected numbered chapters, Part V, and method; operation, delivery, age calibration, service routes, institutions, completed remedies, and Book 2 implementation remain outside this coverage state.",
       "source_refs": [
@@ -104937,9 +104937,9 @@
         "book-1/source/counterfactual/no-delivery-independence.pins.nibli::# Counterfactual: the provider-independence conjunct stripped from the food route"
       ],
       "prose_refs": [
-        "book-1/05-whether-it-arrived.md::Ask whether Bela eats in the record supplied with this book.",
-        "book-1/04-what-you-are-owed.md::The debt says what it is about, and arrival is a separate conclusion.",
-        "book-1/04-what-you-are-owed.md::The lifecycle is specified, but it is not operated.",
+        "book-1/05-whether-it-arrived.md::No food-delivery conclusion follows for Bela in the supplied record.",
+        "book-1/04-what-you-are-owed.md::The floor debt is not a receipt.",
+        "book-1/04-what-you-are-owed.md::The rules distinguish entitlement, the responsible public function, evidence",
         "book-1/29-the-one-thing-taken.md::As a direct legal punishment, conviction takes movement and nothing else.",
         "book-1/29-the-one-thing-taken.md::Leaving custody returns Hano to a supplied record with no independent shelter receipt.",
         "book-1/30-when-the-system-notices-it-broke.md::This is a defect in what the signal claims.",
@@ -104948,7 +104948,7 @@
         "book-1/method.md::The food route requires a receipt and a matching independent attestation:"
       ],
       "part_v_refs": [
-        "book-1/31-the-five-joints.md::The conclusion is a constitutional proposal with an operating burden still"
+        "book-1/31-the-five-joints.md::The proposal leaves an operating burden to meet."
       ],
       "blocked_before_drafting": "Coverage, six unchanged formal statements, 28 executable pins, the provider-independence counterfactual, and the byte-exact DLV-B1-v1 prose are complete. The five routes remain dormant in the shipped cast and establish only bounded consequences from supplied records; no offer, accessibility, adequacy, operation, actual-world arrival, completed remedy, recurrence monitoring, or future non-recurrence follows.",
       "source_refs": [
@@ -105079,7 +105079,7 @@
       "prose_refs": [
         "book-1/00-opening-note.md::Public duties distinguish respecting a right, protecting it from interference,",
         "book-1/16-public-answerability.md::A challenge creates an Appeals duty with a named action route,",
-        "book-1/07-who-owes-and-what-follows.md::Public responsibility around it takes distinct forms.",
+        "book-1/07-who-owes-and-what-follows.md::Public responsibility takes distinct forms.",
         "book-1/07-who-owes-and-what-follows.md::A finding reaches an independently named reader and produces an action duty",
         "book-1/07-who-owes-and-what-follows.md::## The forms public responsibility takes"
       ],
@@ -105415,7 +105415,7 @@
         "book-1/source/counterfactual/no-economic-carry-results.pins.nibli::# Counterfactual: economic carry current and result rules are removed"
       ],
       "prose_refs": [
-        "book-1/00-opening-note.md::| Work, property, enterprise, money, credit and public finance |",
+        "book-1/00-opening-note.md::| Employment, property, enterprise, money, credit and public finance |",
         "book-1/00-opening-note.md::| Friendship, leisure, mutual aid and associations |",
         "book-1/03-what-counts-as-evidence.md::Economic records illustrate the distinction.",
         "book-1/16-public-answerability.md::The economic rules likewise confer no permanent public status",
@@ -105537,11 +105537,11 @@
         "book-1/03-what-counts-as-evidence.md::A compensation entry records a promised payment of a named kind.",
         "book-1/09-earning-above-the-floor.md::Compensation above the floor uses one relation with the kind named in it:",
         "book-1/09-earning-above-the-floor.md::A certificate records a narrower claim.",
-        "book-1/09-earning-above-the-floor.md::## Pay is a record with the kind named in it",
+        "book-1/09-earning-above-the-floor.md::## What a compensation record establishes",
         "book-1/00-opening-note.md::- **Certificate:** an authorised attestation of a person's competence for a"
       ],
       "part_v_refs": [
-        "book-1/09-earning-above-the-floor.md::## Pay is a record with the kind named in it"
+        "book-1/09-earning-above-the-floor.md::## What a compensation record establishes"
       ],
       "blocked_before_drafting": "Coverage, six formal statements, the executable pin suite, three counterfactuals, and the session-drafted, author-approved (2026-09-05) prose are complete. The family ships dormant in the supplied cast and establishes only bounded consequences from supplied records; no competence, adequacy, payment, repayment, or operation follows.",
       "source_refs": [
@@ -112126,7 +112126,7 @@
       "envelope_id": "FS-ENV-00",
       "owner_ref": "book-1/appendix/maps/constitutional-coverage-map.md::Specify delivery as a lifecycle.",
       "eligible_gate": "gate-a",
-      "reader_mapping_ref": "book-1/04-what-you-are-owed.md::The lifecycle is specified, but it is not operated."
+      "reader_mapping_ref": "book-1/04-what-you-are-owed.md::The rules distinguish entitlement, the responsible public function, evidence"
     }
   ],
   "proposals": [],

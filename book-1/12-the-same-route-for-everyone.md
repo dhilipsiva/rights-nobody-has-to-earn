@@ -24,7 +24,7 @@ inferior parallel provision, harassment through a grave act or cumulative
 pattern, and retaliation for complaining. A single comparator is not required.
 
 The proceeding must identify a recognised form. Quillon's entry naming
-retaliation is accepted into that vocabulary; an invented form is not. This
+retaliation matches the permitted vocabulary; an invented form does not. This
 keeps the formal route tied to its defined claims. It does not establish that
 all discrimination has been identified or that any allegation is true.
 
@@ -56,7 +56,7 @@ case permits the claimant to pursue relief and obliges the reader to hear it;
 no confinement, void or recognition loss follows for the claimant, and the
 case also checks that it produces no confinement or void for Cira.
 
-## Accessibility is not a ninth floor item
+## Accessibility makes rights usable
 
 Accessibility is a continuing, systemic duty. Reasonable accommodation answers
 an individual's requirements. Both make existing rights usable; neither is an
@@ -71,8 +71,8 @@ desk's budget. If the provider genuinely cannot make the adjustment, public
 continuity must secure an equivalent alternative without making the person
 start again.
 
-Three distinct attesters, a challenge reader and an independent alternate,
-separate from the actor and the person, complete the record. It produces a duty
+Distinct source, evidence and review attesters, a challenge reader and an
+independent alternate, separate from the actor and the person, complete the record. It produces a duty
 to provide the adjustment or secure the alternative, permission for the person
 to use the right with it, and the alternate's continuity duty. These conclusions
 derive without a personhood entry for the requester and without a void or
@@ -94,8 +94,7 @@ cannot become an individual verdict, and non-participation cannot be penalised.
 
 The remedial proceeding keeps individual relief separate from re-audit of
 related cases. A pattern therefore opens inquiry and correction without
-convicting, confining, voiding or docking anyone. The chapter on public counting
-explains how the statistical record is kept within that purpose.
+convicting, confining, voiding or docking anyone.
 
 ## A measure with an end
 
@@ -165,10 +164,10 @@ nor its denial; it leaves the duties intact and their delivery unproved.
 
 ## What this does not show
 
-A completed accommodation record is not a delivered adjustment. A completed
-measure is not an achieved objective. A proceeding opened on a pattern does not
-prove the attested pattern true. Collection methods, implementation and empirical
-evaluation require work beyond these formal conclusions.
+A completed accommodation record establishes no delivered adjustment; a
+completed measure establishes no achieved objective. Opening a proceeding on
+a pattern does not prove the pattern true. Collection methods, implementation
+and empirical evaluation need evidence beyond these formal conclusions.
 
 Equality changes the route to a right when identical treatment leaves a barrier
 in place. The next chapter asks about the conditions of life that no individual

@@ -4,14 +4,14 @@ What must a society provide for a person who can offer it nothing in return?
 And how can that person hold it to the promise?
 
 I propose a constitution in which being a person is enough to establish what
-is owed. Work, wealth, citizenship, family and good behaviour are not entrance
+is owed. Employment, wealth, citizenship, family and good behaviour are not entrance
 requirements. Food, shelter, care, learning, safety, expression, belief and
 company form a **floor**: a set of entitlements that neither private dependence
 nor public punishment may withdraw. Above it, people choose lives the
 constitution does not prescribe.
 
-This book is for a reader who wants to examine that proposal, including a
-reader who doubts it. You need no knowledge of formal logic. The chapters
+This book invites you to examine that proposal, including reasons to doubt it.
+You need no knowledge of formal logic. The chapters
 follow particular cases through the rules: what a person is owed, what counts
 as evidence that it arrived, what they may choose, what power may do to them,
 and how they can challenge it. The rules and their executable checks are
@@ -40,7 +40,7 @@ and the record contains the case and authority for holding them. Does the
 same floor survive? Does protection depend on confinement? Can the person
 contest the restriction and leave when authority ends? The child tests what
 begins without a request; the prisoner tests what remains under power. Neither
-is a model of ordinary life. Work, friendship, care, inquiry, belief and
+is a model of ordinary life. Employment, friendship, care, inquiry, belief and
 political choice are what the institutions must serve.
 
 Two distinctions will matter from the first chapter. A **record** is what the
@@ -53,8 +53,8 @@ people. Any feelings you imagine belong to your reading, not to their evidence.
 *The Rights Nobody Has to Earn* makes its commitments inspectable. That cannot
 make them just. I speak directly in this opening, in Part V's arguments and
 in the optional method; the intervening chapters state the consequences of
-the formal design. Part V asks why choose these arrangements and what their
-alternatives cost. An exposed failure still needs a resolution. A constitutional
+the formal design. Part V weighs these arrangements against their alternatives
+and costs. An exposed failure still needs resolution. A constitutional
 duty still needs people and resources to fulfil it. This volume specifies the
 destination; *What It Would Take*, the second book, owns operation and transition.
 
@@ -120,7 +120,7 @@ the main reading sequence; the method follows it as an optional technical part.
 - [Chapter 9: Earning Above the Floor](09-earning-above-the-floor.md) — wages,
   supplements and competence without conditions on essentials.
 - [Chapter 10: Contribution](10-contribution.md) — recognition for teaching,
-  work and honest examination, without a score or price on a person.
+  employment and eligible examination, without a score or price on a person.
 - [Chapter 11: What Money Cannot Buy](11-what-money-cannot-buy.md) — property,
   enterprise, exchange and public finance under constitutional limits.
 - [Chapter 12: The Same Route for Everyone](12-the-same-route-for-everyone.md)
@@ -198,18 +198,18 @@ the main reading sequence; the method follows it as an optional technical part.
   Answerability alone does not supply it.
 - **Political home:** the chosen local connection from which a resident's regional
   and common democratic home follows. Compelled placement cannot move it.
-- **Pen or credential:** temporary authority for an examiner's finding to count
-  in the voiding machinery.
-- **Floor:** what every person is owed without first working, registering,
-  belonging, paying or behaving in an approved way.
+- **Pen or credential:** a derived permission for an examiner's finding to count
+  in the paired voiding route.
+- **Floor:** what every person is owed without conditions of employment,
+  registration, belonging, payment or approved behaviour.
 - **Delivery:** the protected condition reaching a person. A debt, payment or
   institutional output is not enough to establish it.
 - **Receipt:** a report of delivery. The ordinary receipt route needs matching
   independent evidence before delivery can be concluded.
 - **Contribution record:** an entry that someone paid into a named scheme. It
   supports a supplement, never standing, the floor, the vote, liberty or recognition.
-- **Supplement:** insurance against a found life event through a scheme or public
-  guarantee. The conclusion carries no amount and proves no payment.
+- **Supplement:** protection against a recorded qualifying event through a scheme
+  or public guarantee. The conclusion carries no amount and proves no payment.
 - **Certificate:** an authorised attestation of a person's competence for a
   function. In the formal record it gates nothing and is not a licence.
 - **Compensation record:** a promised wage, profit, return, grant, prize, subsidy
@@ -221,12 +221,13 @@ the main reading sequence; the method follows it as an optional technical part.
 - **Named ground:** the reason a public-scale finding must establish, such as
   essentiality, dominance, gatekeeping or absence of real exit. Size alone is
   not a ground.
-- **Shield:** protection against conviction-based imprisonment while an exposure
-  of authority stands. An unrelated case requires a finding by authorised
-  reviewers with positively established eligibility. An actual conflict blocks
+- **Shield:** protection against conviction-based imprisonment following an exposure
+  of authority, while no deceit is recorded against it. An unrelated case requires
+  a finding by authorised reviewers with positively established eligibility.
+  An actual conflict blocks
   the affected decision; merely naming a reviewer does not.
 - **Voiding:** an adverse credibility finding that blocks recognition and records
-  a loss, without lowering the floor. Recorded expungement ends it.
+  a loss, without lowering the floor. Restoration depends on the ground for the void.
 - **Clawback:** the loss of recognition that follows voiding.
 - **Placement:** the conclusion about where a confined person is put. It does not
   establish that the place exists or is adequate.
@@ -306,7 +307,7 @@ not that it specifies every institution or proves that a service operates.
 | Body, health, care, family and intimacy | [The floor](04-what-you-are-owed.md), [relationships and support](14-holding-a-role-in-somebodys-life.md) |
 | Learning, media, science, religion and culture | [Protected freedoms](08-what-nobody-has-to-ask-permission-for.md), [contribution](10-contribution.md) |
 | Food, housing, land, utilities and infrastructure | [Delivery](05-whether-it-arrived.md), [scarcity](06-when-there-is-genuinely-not-enough.md), [public duties](07-who-owes-and-what-follows.md) |
-| Work, property, enterprise, money, credit and public finance | [Earning](09-earning-above-the-floor.md), [economic limits](11-what-money-cannot-buy.md) |
+| Employment, property, enterprise, money, credit and public finance | [Earning](09-earning-above-the-floor.md), [economic limits](11-what-money-cannot-buy.md) |
 | Democracy, government and administration | [Institutions](17-how-public-power-is-built.md), [the vote](18-the-vote-conviction-does-not-take.md), [amendment](22-changing-the-rules.md) |
 | Justice, safety and repair | [Access and remedy](21-a-way-to-be-heard.md), [custody and protective powers](29-the-one-thing-taken.md), [institutional correction](30-when-the-system-notices-it-broke.md) |
 | Records, surveillance and automated decisions | [Evidence](03-what-counts-as-evidence.md), [record powers](19-what-may-be-kept-about-you.md), [public safety](29-the-one-thing-taken.md) |

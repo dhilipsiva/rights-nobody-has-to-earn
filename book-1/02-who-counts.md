@@ -8,7 +8,7 @@ does not.
 
 Personhood follows from a recorded birth, first contact, presence within the
 republic's jurisdiction or effective control. Each route is independent. None
-requires another to have happened first, and none requires citizenship,
+requires another to happen first, and none requires citizenship,
 identity papers or a family.
 
 Presence reaches someone within the jurisdiction without asking whether that
@@ -28,8 +28,8 @@ that purpose without establishing a civil identity. It proves no citizenship,
 family relationship, liability or guilt. Assistance need not wait for a match
 against another record.
 
-A claimed alias does not merge identities. The test records a claim linking
-encounter names and asks whether either becomes the other. Neither does.
+A claimed alias does not merge identities. The test records a claimed link between encounter names
+and asks whether either becomes the other. Neither does.
 The claim therefore imports no conviction, sentence or history through an
 assumed match. Consequential identity links remain separate, challengeable
 claims.
@@ -49,7 +49,7 @@ A defect in that record does not undo the encounter.
 Missing or disputed age evidence also leaves standing intact. The executable
 ballot route needs adulthood evidence; the floor does not. Nor do missing
 capacity evidence or refusal of support postpone personhood. These are
-separate questions, with separate consequences.
+separate questions.
 
 Correction must retain the provenance needed for accountability and remedy.
 It does not turn uncertainty into permission to combine people's histories or
@@ -68,7 +68,7 @@ routes provide further backstops. The prisoner chapter tests what happens when
 only the conviction route is present.
 
 These routes do not observe anyone. They establish a legal consequence from
-supplied evidence. A custody entry can establish personhood without proving
+supplied evidence. A custody conclusion can establish personhood without proving
 that the holding was entered accurately, just as an encounter entry can do so
 without authenticating the name attached to it.
 
@@ -89,7 +89,4 @@ No rule here discovers someone who has never been entered. Birth and encounter
 must reach the record before their consequences can follow. The independent
 advocate's duty to begin assistance does not make that first observation happen.
 
-The record can therefore admit someone without authenticating a civil identity,
-and can protect that person's standing while an identity claim is contested.
-It still needs limits on what else may be said about them. Those limits are
-the subject of the next chapter.
+The next chapter asks what else may enter this limited record about the person.

@@ -92,7 +92,7 @@ positive evidence of the exact defect; an absence or unreviewed allegation
 is insufficient. The original writer or activity controller has no veto over
 the finding.
 
-The finding assigns three duties. Its reader must stop relying on the affected
+The finding assigns duties to separate actors. Its reader must stop relying on the affected
 record and obtain an independent remedy. A separate alternate must preserve
 urgent human and animal care and the challenge route. An auditor must examine
 what depended on the record, its lawful history and the measures needed to
@@ -128,9 +128,9 @@ derives again from its still-complete authority. An unrelated, unauthorised
 activity receives no permission. The ordinary rights advocate's claim, by
 contrast, creates review duties without imposing that automatic stay.
 
-The Guardian, alternate, successors and reviewers share one replay identity:
-the case, challenged authorisation and its version, evidence version and
-ground. A final resolution cannot be restarted by changing the office, record
+Related submissions by the Guardian, alternate, successors and reviewers must
+identify the same case, challenged authorisation and its version, evidence
+version and ground. A final resolution cannot be restarted by changing the office, record
 name or clock. Another window needs materially new authenticated evidence or
 a materially changed authorisation, independently compared with what was
 resolved. An authenticated past disposition can preserve that finality after
@@ -153,7 +153,7 @@ alternatives, uncertainty, reversibility and continuity separate. Categorical
 prohibitions come first. Neither office's preference nor a single usefulness
 score decides the conflict, and choosing a route does not supply its missing
 permissions. These interfaces establish no operating office, authentic
-decision, working replay registry or performed review.
+decision, maintained record of prior resolutions or performed review.
 
 ## Protection does not require being human
 
@@ -231,22 +231,24 @@ alternative is available in the world.
 
 An independently adjudicated injury to an animal's interests — or an urgent,
 plausible protection basis, where waiting would itself be the harm — opens a set
-of particular orders. Each names its own action and carries its own boundary,
-and the boundaries are where the design does its thinking.
+of particular orders. Each names its action and limits.
 
-Stop the exact unlawful activity, that activity and that scope, without becoming
-a general ban on an unrelated occupation. Provide the exact necessary rescue,
-and neither the rescue nor the care that follows waits on the owner's consent or
-on papers. Arrange custody by the animal's protected interests, human due
-process and continuity of care — custody of an animal, never detention of a
-person. Rehome by what this animal needs and who can care for it, not by what it
-is worth. Treat, rehabilitate, place in a sanctuary that is long-term care under
-independent review rather than indefinite warehousing. Restore the habitat, with
-no offset standing in for an irreplaceable loss. Correct the record without
-silently renewing what it authorised. Monitor, scoped and ended and carrying no
-score about any person. Disqualify from the use — individually, reviewably, and
-without touching anybody's standing, floor, vote or unrelated private life. Pay
-the adjudicated care costs. Implement the non-repetition measures.
+A cessation order reaches the unlawful activity within its stated scope,
+without banning an unrelated occupation. Necessary rescue and subsequent care
+do not wait for owner consent or papers. Custody must follow the animal's
+protected interests, human due process and continuity of care; it authorises
+no human detention. Rehoming turns on the animal's needs and the recipient's
+ability to care, not the animal's economic worth.
+
+Treatment, rehabilitation and sanctuary placement require care. A sanctuary
+provides long-term care under independent review, not indefinite warehousing.
+Habitat restoration cannot substitute an offset for an irreplaceable loss.
+Record correction cannot silently renew the authority corrected. Monitoring
+must have a scope and end and create no score about a person.
+
+Disqualification from a use must be individual and reviewable. It cannot take
+standing, the floor, the vote or unrelated private freedoms. Adjudicated care
+costs must be paid and non-repetition measures carried out.
 
 Payment does not discharge the other orders. Rescue, care, restoration and
 non-repetition remain due. Nor does an order regulating a use supply a search,

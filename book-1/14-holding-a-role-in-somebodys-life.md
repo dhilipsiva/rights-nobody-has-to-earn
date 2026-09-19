@@ -12,13 +12,12 @@ turning their need into a status of incapacity.
 immediate and cannot be delegated away by naming a parent, partner, child, or other
 relative. A caregiver and a dependant each keep a separate floor, privacy, voice,
 exit, and remedy. No adult inherits a compulsory personal-care duty or support debt
-merely through kinship. A record that someone performed care work may support
-recognition for that work; it does not prove that care reached another person, that
+merely through kinship. A record of care as employment may support
+recognition for that contribution; it does not prove that care reached another person, that
 the care was safe, that anyone consented, or that the worker acquired authority over
 them.
 
-
-## A role is scoped, and the roles are separable
+## Each role has its own limits
 
 Parentage, caregiving, household membership, material support, property and
 succession, and decision agency have distinct records. One does not confer the
@@ -27,18 +26,18 @@ for a named decision, never ownership of a person. Marriage or household
 membership alone cannot supply it. Each caregiver and dependant retains
 separate standing, voice, privacy, confidential help and exit.
 
-## The person the decision is about is heard
+## The person must be heard
 
 The person must be heard without a minimum speaking age. The participation
 record carries their own account without certifying a preference or relationship,
 independent assistance is required where the adults' interests conflict, and
 authority grows decision by decision rather than arriving as a score for a whole
-person. That record rejoins the exact role it runs under, so a role reviewed for
+person. That record must match the exact role it concerns, so a role reviewed for
 one decision domain licenses nothing in another.
 
 ## Support assists; it does not replace
 
-Support assists; it does not replace. A supporter is chosen, can be changed and
+A supporter is chosen, can be changed and
 can be refused, and no substituted decision may be made while support can still
 be given. Plenary guardianship and status-based incapacity are refused, and so
 is any global capability score. Where will and preferences genuinely remain
@@ -66,23 +65,24 @@ performance of the duty.
 
 Reproductive and bodily care needs no third party's authorisation. Current
 informed choice controls, including refusal. These records supply no route from
-that choice to punishment or an adverse finding about the person. For treatment more broadly the order is fixed in advance: the current
+that choice to punishment or an adverse finding about the person. For treatment
+more broadly the order is fixed: the current
 choice, then a valid advance directive on its own terms, then a chosen
 representative implementing known will and preferences, and only then the
-bounded route. Age, a diagnosis and where somebody lives remove the choice from
-nobody.
+bounded route. Age, a diagnosis and place of residence do not themselves supply
+authority to override that choice.
 
 ## Your own origin record
 
-Birth, adoption, donor and gestational-origin records are kept accurately, and
+Birth, adoption, donor and gestational-origin records must be kept accurately, and
 the person the record is about can reach and correct their own. That access
 carries no automatic contact or relationship right in either direction, and a
 correction does not erase the lawful history.
 
 ## When one of these records is defective
 
-When one of these records is defective, an independent finding withdraws exactly
-what it names and lands the duties to correct and to publish the correction. A
+An independent defect finding withdraws exactly what it names and creates
+duties to correct and publish the correction. A
 request for review does not need the acting body's permission, and a certified
 failure to answer moves the duty to an independent alternate.
 
@@ -111,7 +111,7 @@ reader owes a hearing and correction. The case derives neither personhood for
 the participant nor parentage authority for the representative. Appointment,
 witness authority and authority over the person are separate conclusions.
 
-Three separately authorised attesters must agree on the fields. The
+Separately authorised source, evidence and review attesters must agree on the fields. The
 representative cannot be the acting body, reviewer, challenge reader, alternate
 or affected person. A conflicting authorised entry on a single-valued field
 blocks completion. An independent alternate supports the challenge route.

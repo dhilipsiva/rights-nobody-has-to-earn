@@ -66,7 +66,8 @@ questions about the offence.
 Kel injured Pax and exposed the court. The record supplies deceit for that
 exposure and a Review judgment of Kel. The deceit entry defeats this shield,
 so Kel's otherwise complete conviction derives. Together with the Review
-judgment, it also produces a void and recognition loss; it takes no wage, property, pension, or floor right.
+judgment, it also produces a void and recognition loss. It
+takes no wage, property, pension, or floor right.
 
 The two requirements differ. The shield rule reads the deceit entry directly;
 it does not require the Review judgment that the void rule also needs. Kel's
@@ -116,7 +117,7 @@ conviction, and a reviewer cannot certify their own independence.
 
 With those premises supplied, Rex's conviction derives. The disclosure stays
 on the record, the shield still derives, and the credibility finding is
-unchanged: the claim stopped covering a case it was never about. A finding
+unchanged: the case finding removes this prosecution from the shield's coverage. A finding
 for this case provides no qualification or decision for another case.
 
 The next test names Appeals, the convocation and both qualification functions

@@ -9,10 +9,10 @@ exposes a public actor. It is neither universal human standing nor permission
 to exercise power. A public body can be answerable without holding an auditor's
 credential; a person can record an examination without being answerable at all.
 
-The model has two routes. A public-body entry makes Court, Review, Appeals,
+A public-body entry makes Court, Review, Appeals,
 Convocation and State answerable. A seating by Electorate or Convocation does
-the same for the person seated. Wren's convocation seat and Boss's electorate
-seat establish the two seating cases. Ivo has neither route. A direct assertion
+the same for the person seated. Wren illustrates Convocation's seating route;
+Boss illustrates Electorate's. Ivo has neither route. A direct assertion
 of public answerability is refused because the conclusion must derive.
 
 These seating routes belong to the accountability rules. The federal government
@@ -60,11 +60,11 @@ sets out how deceit or a qualified finding that a particular prosecution is
 unrelated can affect its operation. Neither route requires making the exposed
 actor cease to be answerable.
 
-## What is actually being separated
+## Answerability does not grant authority
 
 Answerability, current power and an examination record answer different
-questions. Court is publicly answerable but holds neither of the two auditor
-credentials. Koa has recorded an examination of Esa but has no public
+questions. Court is publicly answerable but holds neither a Review nor a
+Tribunal credential. Koa has recorded an examination of Esa but has no public
 answerability. The mere presence of that examination does not make Koa a
 credentialed auditor.
 
@@ -74,10 +74,10 @@ of its conduct irrelevant. These rules preserve the relationship on which the
 exposer's protection depends; they do not declare the exposure true or grant
 an unrestricted power to investigate.
 
-## The separation runs deeper than power
+## Vex's restoration
 
-Vex adds a third question. Vex has an electorate seat and a void carried from
-an earlier record. The pins show public answerability, the void and refusal of
+Vex has an electorate seat and a void carried from an earlier record.
+The pins show public answerability, the void and refusal of
 the Review credential together. The void closes recognition routes and affects
 credential eligibility. It is not a finding that every word Vex speaks is false.
 
@@ -103,13 +103,12 @@ unrelated conduct without making removal from office a way to defeat it.
 The input boundary is equally significant. A seating is a writable entry. A
 forged seating can derive answerability and expand the set of exposures that
 support a shield. It cannot alone issue an auditor's credential: that also
-needs positive clear history, reconciled across records and witnessed by two
+needs positive clear history, reconciled across records and witnessed by separate
 public bodies in the selected current record. Those additional premises do not
 authenticate the seating itself.
 
-Deletion exposes the reverse dependency. Removing Boss's seating entry from
-the tested copy removes the answerability route and Rebel's shield. Removing
-State's public-body entry likewise removes State's answerability without
+The dependency also reaches public bodies. Removing
+State's public-body entry removes State's answerability without
 removing its floor debts. The actual constitution supplies those entries; the
 counterfactuals show why preserving them matters.
 

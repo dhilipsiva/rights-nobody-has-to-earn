@@ -6,7 +6,7 @@ A consistent arrangement can be oppressive, impractical or beside the point.
 A passing check cannot choose the people whose losses matter or establish
 that an institution will serve them.
 
-This part is my argument for the design. Its tests concern valuation,
+This part is my argument for the design. It examines valuation,
 rotation, coercion, capture and the state. At each joint I ask what the
 strongest objection reaches, what the current mechanism answers, and what a
 credible alternative offers. History supplies evidence about particular
@@ -92,7 +92,7 @@ distinguish claims reliably, it provides no reason to depart from equal
 treatment. If it reproduces social disadvantage, calling it specific to a
 resource does not excuse it.
 
-The conclusion is limited. Recognition can acknowledge without allocating;
+Recognition can acknowledge without allocating;
 scarcity requires a separate, contestable allocation. The model demonstrates
 that separation under its supplied premises. It establishes neither the
 value of public acknowledgment nor the accuracy of a real allocation. The
@@ -156,7 +156,6 @@ honest authorisation is missing. Evidence of essential services failing at
 those transitions would require repair of the continuity route, not a claim
 that the rule was protective merely because it stopped a conclusion.
 
-The joint therefore supports a constitutional limit, not a staffing forecast.
 Nobody acquires a person through their need, and nobody acquires an office
 through the failure to replace them. Whether institutions can fulfil their
 duties within those limits remains a question for evidence about operation.
@@ -396,7 +395,7 @@ not the justice of every candidate rule or a universal proof that a protected
 promise survives every future change. Whoever operates the system must not
 turn a successful calculation into authority to enact its inputs.
 
-The conclusion at this joint is conditional and demanding. Explicit grounds,
+Explicit grounds,
 separated functions and contestable records can make a consequence answerable
 to something more precise than an official's discretion. They cannot make
 false evidence true or guarantee a willing institution. The alternative of
@@ -555,8 +554,8 @@ both that an exceptional power is necessary and that nobody may effectively
 contest it. A model's refusal of an unsupported order establishes no
 successful emergency response.
 
-The conclusion is a constitutional proposal with an operating burden still
-to meet. No provider form, household relation, contract or delegated function
+The proposal leaves an operating burden to meet.
+No provider form, household relation, contract or delegated function
 removes the public responsibility. Offer, accessible provision, receipt,
 challenge, continuity and remedy remain distinct requirements. A recorded duty
 does not supply the next act, and independently attested receipt does not
@@ -567,7 +566,7 @@ count as fulfilment.
 
 ## What the argument asks
 
-The tests support specific choices with specific costs. They do not add up
+These arguments support choices with specific costs. They do not add up
 to an empirical finding that the whole society works. The constitutional
 claim is that a person does not have to earn standing or essentials and that
 public power must answer for the burdens it imposes. Its means remain open

@@ -17,7 +17,7 @@ conditions waiting to be satisfied.
 
 Every person is owed the floor: food, shelter, care, learning, safety,
 expression, belief and company. Each duty has the same condition — personhood.
-None asks who works, pays, belongs to a family or has behaved well.
+None requires employment, payment, family membership or good behaviour.
 
 Nell is owed the whole floor. The checks ask about each debt and each
 entitlement, and each follows. There is no smaller entitlement pending a
@@ -35,9 +35,8 @@ The rules expressly prevent a household, relative, association or charity from
 being presumed to supply another person's floor. They impose public care
 continuity without converting kinship into a personal-care debt.
 
-The same personhood that establishes Nell's entitlements also establishes the
-relevant limits on power. Children hold rights independently. No minimum
-speaking age may exclude their voice. Information and assistance must be
+Personhood also establishes limits on power. Children hold rights independently.
+No minimum speaking age may exclude their voice. Information and assistance must be
 accessible; support comes before removal, and separation is a last resort.
 An absent relationship proves neither independence nor a ground for confinement.
 A recorded care status is not care delivered.
@@ -71,9 +70,9 @@ the public actor parentage or authority over every aspect of the person's life.
 The chapter on roles follows those limits in detail.
 
 That specific record is absent for Nell, so the particular care-continuity
-duty does not derive here. The duty to initiate assistance does. Keeping them separate
-matters: the requirement to begin is unconditional, while a particular exercise
-of care authority needs its own grounds and limits.
+duty does not derive here. The duty to initiate assistance does. The requirement
+to begin is unconditional; a particular exercise of care authority needs its
+own grounds and limits.
 
 Neither duty proves that an advocate exists, notices the child, arrives or
 acts. The record can establish who owes the first move. It cannot establish
@@ -81,9 +80,9 @@ that the move was made from the obligation alone.
 
 ## What does not follow
 
-Nell is owed food. Does the record establish that food reached Nell? No.
-The same is true of shelter, care, safety and company. Entitlement follows;
-delivery does not.
+Nell is owed food, but the record does not establish that food reached Nell.
+The same distinction holds for shelter, care, safety and company. Entitlement
+follows; delivery does not.
 
 For these ordinary delivery conclusions, the rules need a report of receipt
 and matching independent evidence. The witness must be authorised for this
@@ -104,9 +103,8 @@ or alone. The record does not establish that food arrived; it also does not
 establish that food failed to arrive. An account of what the rules can conclude
 must preserve that distinction.
 
-The universal entitlement therefore survives beside an unanswered question
-about provision. A rule owing food and a rule recognising its receipt have
-different work to do. No conclusion in the first can stand in for the second.
+The entitlement survives beside an unanswered question about provision.
+A rule establishing a food debt cannot stand in for evidence of receipt.
 
 ## The child the record never entered
 
@@ -139,7 +137,7 @@ assuming a family or requiring the child to ask.
 
 The record supplies the birth; the rules do not observe or authenticate it.
 They establish Nell's entitlement and the duty to begin assistance. They show
-no receipt, no completed care-continuity record and no person who has acted.
+no receipt, no completed care-continuity record and no performance of those duties.
 Those distinctions will recur whenever the book tests a public promise.
 
 The next chapter widens the entry question. A birth is enough for Nell. What

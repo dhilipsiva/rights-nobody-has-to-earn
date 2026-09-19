@@ -2,7 +2,7 @@
 
 Every person is owed food, shelter, care, learning, safety, expression, belief
 and the company of other people. Each entitlement follows from personhood.
-Work, payment, registration, citizenship and approved conduct are not further
+Employment, payment, registration, citizenship and approved conduct are not further
 conditions.
 
 Shelter means protection from the weather, warmth sufficient for safety,
@@ -61,9 +61,9 @@ terms as an exposure against another answerable actor. The State's supplied
 record gives it no examiner's credential. Owing the floor does not grant the
 power to void someone's credibility.
 
-The debt says what it is about, and arrival is a separate conclusion. Bela is
-owed food and shelter. In the supplied record, neither a food nor a shelter
-delivery conclusion follows for Bela. The obligation survives that absence.
+The floor debt is not a receipt. Bela is owed food and shelter. In the supplied
+record, neither delivery conclusion follows for Bela. The obligation survives
+that absence.
 No rule reads the debt itself and turns it into something received.
 
 Ordinary delivery needs its own evidence: a recipient-side report, a witness
@@ -92,15 +92,14 @@ selected item. The ordinary check for that debt fails while the other debts
 continue to follow. Testing each item matters: the outward shape of a promise
 is not enough to preserve its content.
 
-The lifecycle is specified, but it is not operated. The rules distinguish
-entitlement, the responsible public function, evidence of arrival, challenge,
-interim continuity, individual remedy, common-cause correction, re-examination
-and recurrence checking. The chapter on who owes follows those duties and
+The rules distinguish entitlement, the responsible public function, evidence
+of arrival, challenge, interim continuity, individual remedy, common-cause
+correction, re-examination and recurrence checking. The chapter on who owes follows those duties and
 their independent readers.
 
-No link performs the next one. A duty proves no offer; an offer proves no
-accessible or adequate receipt. A finding does not prove that its reader
-received it, and a remedy conclusion does not establish restoration. The
+None of these conclusions performs the next act. A duty proves no offer;
+an offer proves no accessible or adequate receipt. A finding does not prove
+that its reader received it, and a remedy conclusion does not establish restoration. The
 record gives no evidence from which to conclude that Bela ate or that a remedy
 reached her. Those are questions about events, not alternative ways of asking
 what Bela is owed.

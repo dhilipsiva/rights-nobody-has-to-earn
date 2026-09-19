@@ -14,8 +14,8 @@ decide, what remains protected and who must answer when its record fails.
 Newcomers, migrants, refugees and stateless people keep standing, the floor,
 liberty, fair process and remedy wherever the republic has jurisdiction or
 effective control. Citizenship, documents, manner of arrival and time spent
-there cannot become conditions of help. A person never entered in a record
-is not a missing row the record can discover. The public duty is to serve
+there cannot become conditions of help. The rules cannot discover an
+unrecorded arrival. The public duty is to serve
 first and reconcile afterwards.
 
 Food, shelter, care, education, communication, courts and reporting violence
@@ -34,11 +34,11 @@ abuse, directly or through onward transfers. A diplomatic assurance cannot
 make that prohibition disappear. Collective expulsion is prohibited.
 
 No child may be detained for immigration purposes. Adult detention requires
-individual necessity, judicial authorization, a maximum, independent review
+individual necessity, judicial authorisation, a maximum, independent review
 and a real non-custodial alternative shown insufficient. Nationality cannot
 be taken as punishment or in a way that leaves someone stateless. A child
 born in the republic who would otherwise be stateless must have nationality
-recognized. The former resident's return right remains, without a diaspora
+recognised. The former resident's return right remains, without a diaspora
 ballot.
 
 Nor may a public purchase, investment, trade arrangement or corporate form
@@ -51,7 +51,7 @@ finding is not an order to detain, expel or move anyone. The checks establish
 no operating border, truthful foreign assurance, cooperation by another
 state, or completed remedy.
 
-## When the record cannot say what it says
+## Conflicting versions stop the finding
 
 The asylum case completes a fair-determination record. It identifies the case,
 constitutional version, current window, evidence, independent review, challenge
@@ -104,7 +104,7 @@ site, placing hazardous material or inflicting comparable existential harm
 requires free, prior, informed, actual collective consent. That consent must
 concern the same people, land, proposed act, version and harm. A convenient
 spokesperson, silence, missing participation or a conflicting result cannot
-supply it. Collective consent does not authorize force against an individual
+supply it. Collective consent does not authorise force against an individual
 or waive ecological ceilings and direct animal protection.
 
 Other material effects require consultation before commitment: accessible
@@ -123,7 +123,7 @@ to respond places a duty on an independent alternate. None of these findings
 decides collective identity for itself, authenticates consent, advances a
 clock or proves that an institution acted.
 
-## When the consent turns out not to have been consent
+## When a consent record is defective
 
 In the consent sequence, a record for the same people, land, proposed act,
 version and harm completes with its required representation, review and
@@ -131,7 +131,7 @@ challenge route. A second record permits the specific effect by joining that
 consent.
 
 An independent defect finding then withdraws reliance on the consent record.
-The consent and the dependent permission stop completing together. The reader
+The consent conclusion and its dependent permission both stop deriving. The reader
 owes preservation, correction and remedy; the auditor owes review of related
 cases and non-repetition. Another collective's unaffected record continues
 to complete. One defective consent is no finding against a people or against

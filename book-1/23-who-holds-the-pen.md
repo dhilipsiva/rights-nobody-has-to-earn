@@ -59,11 +59,11 @@ omitted or invented carry where their comparison premises are present.
 
 The positive route is equally specific: the predecessor clear status and both
 reports of its carry must match in the selected current record. Neither
-silence nor an unsupported assertion of cleanliness opens the credential.
+silence nor an unsupported assertion of clear history supplies the credential.
 This establishes a witnessed relation between records, not elapsed time or
 arrival of a successor.
 
-## The hurried door
+## A shortcut to a credential
 
 The counterfactual adds a rule granting a credential from an electorate seating
 alone. Boss and Vex then receive it despite the recall and carried void. An
@@ -73,7 +73,8 @@ The signing rule repeats the checks for recall and matched carried void. In
 that counterfactual they still prevent Boss and Vex from completing the paired
 attack. It does not repeat the positive clear-history condition, so the result
 cannot establish that every defect in credential issuance is caught again at
-signing. The control proves the value of the two repeated checks, and no more.
+signing. The control establishes what the repeated recall and carried-void
+checks prevent.
 
 Forgiveness tests a different boundary. An Appeals judgment and forgiveness
 can stop Vex's carried void from deriving, while the matched history remains.

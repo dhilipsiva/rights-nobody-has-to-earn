@@ -5,9 +5,9 @@ invest and pass on lawfully held wealth. But wealth cannot decide who receives
 what the floor owes, and owning a service does not give its owner unlimited
 power over the people who depend on it.
 
-This chapter follows that boundary from a dwelling to a contract, a private
-gatekeeper and public money. It permits exchange while making both private
-control and public intervention answerable to constitutional limits.
+The boundary runs from a dwelling to a contract, a private gatekeeper and
+public money. Both private control and public intervention must answer to
+constitutional limits.
 
 ## Owning without owning the floor
 
@@ -111,8 +111,8 @@ creditors, erase commons duties or waive constitutional limits. The constitution
 prescribes neither a balanced budget nor a numeric debt ceiling, and prohibits
 making either a constitutional requirement.
 
-Budget deadlock continues prior essential authority and the floor without
-creating new spending power. That continuity rule is a legal allocation of
+During budget deadlock, prior authority for essential provision continues
+without creating new spending power. That rule allocates legal
 responsibility; it does not establish that funds, staff or supplies exist.
 
 ## Money you can hold in your hand
@@ -180,8 +180,8 @@ possessions.
 
 ## What none of this counts
 
-A completed power record establishes its specified premises, not an acquisition,
-a tax payment or a working market. A permitted ground for regulating private
+A complete power record establishes formal authority, not its exercise.
+It proves no acquisition, tax payment or functioning market. A permitted ground for regulating private
 power does not prove the ground true. A prohibition does not establish that a
 court enforced it. The model values no property, measures no dominance and
 operates no payment system.
@@ -192,6 +192,6 @@ recipients, and whether a remedy can answer the specified failure. Operational
 rates, budgets and institutions need further design; they cannot be supplied
 by calling a formal result complete.
 
-Money therefore buys neither the floor nor exemption from public duties. The
-next chapter asks how equal access works when the obstacle is something other
+The floor cannot depend on purchasing power, and wealth supplies no exemption
+from public duties. The next chapter asks how equal access works when the obstacle is something other
 than price.

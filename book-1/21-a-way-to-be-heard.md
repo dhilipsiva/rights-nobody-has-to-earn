@@ -1,8 +1,8 @@
 # A Way to Be Heard
 
 Nia has relief on appeal; Ruk does not. A duty to hear Ruk's case would not by
-itself produce Nia's result. That distinction runs through the chapter: access,
-a request, review and relief each do different work.
+itself produce Nia's result. Access, a request, review and relief are separate
+parts of the route to a remedy.
 
 The justice route can authorise a hearing, case-specific relief and enforcement
 within that remedy. It creates no arrest warrant, search, seizure or detention
@@ -54,14 +54,15 @@ calling a document a judgment supplies none.
 Enforcement must stay within the exact remedy, affected case, lawful actor,
 scope and end. It requires notice, an opportunity to comply and contest,
 independent review and proportionate means that preserve essentials and
-third parties' rights. It supplies no authority for arrest, search, seizure or imprisonment.
+third parties' rights. It supplies no authority for arrest, search, seizure
+or imprisonment.
 Completing an enforcement record does not establish compliance with the remedy.
 
 ## Asking again
 
-Access is owed before the merits are decided. A person need not arrive with
-money, documents, immigration status or representation; independent assistance
-is part of what is owed. The hearing case completes a record and assigns the
+Access is owed before the merits are decided. Independent assistance is part
+of what is owed, rather than something a person must already have to begin.
+The hearing case completes a record and assigns the
 operator a fair, reasoned and contestable hearing duty without deriving
 personhood, a void, confinement or recognition loss for its subject.
 
@@ -81,7 +82,7 @@ produce relief and prevent the prisoner conclusion. Ruk has no such clearing
 entry, and the prisoner conclusion remains. Adding a rule that obliges Appeals
 to hear every prisoner's case produces a duty for Ruk but neither relief nor
 release. The pins leave that rule in force while checking the difference:
-an unheard appeal does not empty a conviction.
+an unheard appeal does not by itself set aside a conviction.
 
 The contrasting test writes the right to appeal as though every prisoner had
 already received relief. The engine refuses that rule because the conviction
@@ -105,7 +106,7 @@ who cannot begin alone. The appointment route must preserve Nell's voice and
 separate interests; it does not create standing. Neither duty proves that an
 advocate arrived, a request was filed or the child was heard.
 
-## What none of this hears
+## A hearing and an effective remedy
 
 Court administration, legal aid, scheduling, interpretation, survivor support
 and enforcement require capacity and action beyond these records. A complete

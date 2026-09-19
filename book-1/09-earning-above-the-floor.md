@@ -1,28 +1,28 @@
 # Earning Above the Floor
 
-A person may choose work, refuse it, leave it or change it without losing the
+A person may choose employment, refuse it, leave it or change it without losing the
 floor. A wage, profit or contribution-based supplement belongs above that
 floor. It cannot become the price of standing, political membership or a
-remedy. The same boundary protects a person who has never worked and a worker
+remedy. The same boundary protects someone who has never been employed and a worker
 whose employer or insurer fails.
 
-The chapter's cases follow three separate claims: permission to work, a record
+The chapter's cases follow distinct claims: freedom to undertake employment, a record
 of compensation, and a supplement after illness. None measures a person's
 worth, and none establishes that money arrived.
 
-## Whose work it is
+## What makes someone a worker
 
-Worker status is to follow control and dependency, not a contract's label.
+Worker status follows control and dependency, not a contract's label.
 Calling someone a contractor, franchisee, partner, volunteer or family member
 cannot settle which protections they receive. Voluntary household care does
-not become employment merely because it has value; controlled commercial
+not by itself create an employment relationship; controlled commercial
 labour cannot escape protection by being called affection or mutual aid.
 
 Labour protections apply across ownership forms. A cooperative or public
 enterprise has no exemption unavailable to a private employer. No ownership
 form is promised a profit, rescue, immunity or monopoly.
 
-Work in custody must be voluntary and carry ordinary labour protection.
+Employment in custody must be voluntary and carry ordinary labour protection.
 Refusing it cannot remove the floor, and earning cannot shorten a sentence.
 The pins establish the corresponding prohibitions for Adam. They do not
 establish that Adam is employed or that any workplace observes them.
@@ -33,7 +33,7 @@ People may organise, bargain and act collectively. A minimum-service
 requirement may limit a strike only where the interruption threatens life,
 safety, health or the floor. It binds the responsible provider or bargaining
 parties to arrange continuity; it cannot conscript a named worker, criminalise
-an individual's refusal to work or remove that person's floor. A blanket
+an individual's refusal to undertake employment or remove that person's floor. A blanket
 sectoral ban is prohibited.
 
 The executable continuity power requires current authority and a standard
@@ -44,7 +44,7 @@ does not supply authority to compel whichever worker happens to be available.
 
 ## A licence needs a reason, and a certificate opens no door
 
-A mandatory occupational licence restricts work. It needs an evidenced serious
+A mandatory occupational licence restricts employment. It needs an evidenced serious
 risk to safety, a fiduciary duty or a core public function; otherwise the design
 prefers voluntary certification. The licence power requires a current source,
 an end tied to that source, independent review, an alternate reviewer and a
@@ -59,12 +59,12 @@ does not. Wrong scope or missing authority also prevents the conclusion.
 
 No rule reads the certificate into standing, the floor or recognition. Nor
 does its derivation establish that Ansel can weld: the model checks the supplied
-attestation, not the work. The certificate is available without making a
+attestation, not Ansel's practical ability. The certificate is available without making a
 qualification a condition of basic rights.
 
-## Pay is a record with the kind named in it
+## What a compensation record establishes
 
-Foundry promises Coll a wage. That alone concludes nothing. Steward, authorised
+Foundry promises Coll a wage. That alone derives no compensation. Steward, authorised
 as Coll's compensation attester and distinct from Foundry, attests the wage on
 the stated labour basis. The compensation conclusion then derives. A payer's
 self-attestation cannot complete the rule.
@@ -158,6 +158,6 @@ testing competence or moving money. Rates, budgets, examination standards,
 scheme funding and administration require institutions and operational design.
 Their adequacy cannot be inferred from a matching pair of records.
 
-The constitutional boundary remains exact: work and its rewards may change
+Employment and its rewards may change
 what someone receives above the floor, but cannot become a price for the floor.
 Recognition makes a different claim again. That is the next chapter's subject.

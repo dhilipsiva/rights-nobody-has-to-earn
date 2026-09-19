@@ -10,7 +10,7 @@ rights must survive both the presence of a file and its absence.
 
 ## Keeping, watching, and letting a machine help
 
-The rules cover identity, health, care, schooling, work, housing, money,
+The rules cover identity, health, care, schooling, employment, housing, money,
 policing and public-decision records. A holding needs a declared purpose and
 may be used only within it. The inputs must come from named lawful sources. The
 collection must be no more than the purpose needs. It must be private, secure
@@ -27,16 +27,18 @@ watching somebody's finances, and one reviewed about one person licenses
 nothing about another. Covert or biometric use needs its own prior
 individualised authorisation, the least intrusive means, a defined scope and
 duration, a fresh authorisation for each renewal, and notice to the person
-afterwards. Collection at bulk, without suspicion or at population scale is
+afterwards. Bulk, suspicionless or population-scale collection is
 refused, and so is buying or trading what could not have been collected.
 
-Letting a machine help is a permission of its own, and the design keeps it
-as help. There has to be an explanation of what went in and how it was reasoned,
-a real chance to contest before anything takes effect, and a human and
-independent review that actually decides — the reviewer cannot be the body
+Automated decision support needs separate permission. It requires an
+explanation of its inputs and reasoning, a real chance to contest before
+anything takes effect, and a human and independent review that decides the
+matter — the reviewer cannot be the body
 holding the record. A consequential decision made by the machine alone is
 refused. So is putting a risk, threat, loyalty or dangerousness product into
-the record that reaches a person's rights: the exclusion applies at the point where a computed score would enter. Nothing in any of this reads a computed value or concludes from one.
+the record that reaches a person's rights. The exclusion applies where a
+computed score would enter; these rules read no computed value and draw no
+conclusion from one.
 
 A person may seek inspection, correction, lawful deletion or review of the use
 of their own record, without being handed a reusable classification
@@ -55,8 +57,8 @@ human decision, and the subject may contest the support. A holding about one
 subject cannot license processing about another.
 
 The defect sequence then introduces an independently reviewed finding of an
-unauthorised input. The holding, its processing and the dependent automated
-support stop completing. The defect finding creates duties to review and
+unauthorised input. The holding and its dependent permissions for processing
+and automated support cease to derive. The defect finding creates duties to review and
 correct the unsupported use and publish the correction. An unrelated defect
 does not withdraw an unaffected use.
 
@@ -78,7 +80,7 @@ file is not a source of human worth or a licence to reduce rights.
 A public institution needs to know what is happening without turning the
 people it counts into a ranked list. Censuses, representative samples,
 administrative statistics and planning data have permission only for a
-declared purpose, with necessary and minimized collection, accessible
+declared purpose, with necessary and minimised collection, accessible
 participation, privacy, correction and limits on retention and deletion.
 The method must be independently reviewed. Publication must explain the
 method, uncertainty, exclusions and known undercount without exposing people.
@@ -128,7 +130,7 @@ access or correction request and a reviewer's nonresponse are separate triggers.
 None is supplied for Nell here, and no record check establishes that somebody
 looked for the child or acted on their behalf.
 
-## What none of this holds
+## Giving the limits effect
 
 The model tests authority and duties over supplied evidence. It authenticates
 no input, stores no file, evaluates no deployed model and performs no deletion.

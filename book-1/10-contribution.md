@@ -1,8 +1,8 @@
 # Contribution
 
 Esa taught Fin. Quin did the census. Gia examined Bela's conduct and recorded a
-ground. Each is recognised. These are the design's three routes: teaching,
-recorded work, and an examination that meets its conditions.
+ground. Each is recognised. Recognition follows through teaching, recorded
+employment, or an examination that meets its conditions.
 
 Recognition is one fact about a person. It carries no amount, buys nothing and
 is read by no other rule. A wage, qualification or contribution-based supplement
@@ -13,25 +13,25 @@ rights.
 ## Why it exists at all
 
 The recognition relation gives recorded contribution a name without turning it
-into a claim on other people. It can acknowledge teaching, unpaid work or an
+into a claim on other people. It can acknowledge teaching, unpaid employment or an
 examination without allocating extra food, authority or votes. Its ambition is
 that narrow. A conclusion in the model does not establish that anyone noticed,
 valued or thanked the person outside it.
 
-Care can enter through teaching or recorded work; it needs no separate route.
-In the pins Nima teaches Nima's child Pico and is recognised. Sata's work entry
+Care can enter through teaching or recorded employment; it needs no separate route.
+In the pins Nima teaches Nima's child Pico and is recognised. Sata's employment entry
 names care and also produces recognition. Pico receives none merely for being
 taught. When Pico later teaches Ona, recognition follows from Pico's own act.
 
 Caregiver and dependant remain separate rights-holders. Recognition of care
-work establishes neither delivery nor safety, consent or authority over its
+establishes neither delivery nor safety, consent or authority over its
 recipient. It is not a family invoice and cannot replace the public duty to
-maintain care. Work absent from the record produces no recognition, however
+maintain care. Employment absent from the record produces no recognition, however
 valuable it may have been.
 
 The labour constitution is separate from that narrow recognition rule. Every
 person retains the protections set out in the previous chapter. The recognition
-rules have no age premise: a work entry produces recognition for Cira without
+rules have no age premise: an employment entry produces recognition for Cira without
 supplied evidence of general adulthood. That does not establish Cira's age or
 permit exploitation. Child activity must remain voluntary, safe, compatible
 with education and protected by labour rights and pay requirements. Recognition
@@ -45,13 +45,13 @@ cannot increase it. There is no recognition transfer, price or purchase rule.
 
 These are choices about the constitution, not limits on what people can count.
 The existing development checks require recognition to remain a relation about
-one person, read by no rule, with no rule comparing multiple teaching or work
+one person, read by no rule, with no rule comparing multiple teaching or employment
 entries to count contributions. The checks protect those particular boundaries;
 they do not prevent someone outside the model from ranking the underlying
 records or conferring informal advantages.
 
-The cost is immediate: recognition cannot distinguish a lifetime of work from
-a single recorded contribution. The design chooses to keep acknowledgment
+Recognition cannot distinguish sustained effort from a single recorded
+contribution. The design keeps acknowledgment
 separate from allocation. Wages and supplements can address different claims,
 but recognition itself supplies no measure of effort, quality, need or reward.
 
@@ -59,38 +59,37 @@ but recognition itself supplies no measure of effort, quality, need or reward.
 
 Bela's teaching of Cira remains on the record. Bela is also voided, so the
 teaching produces no recognition. The same condition applies to every route:
-recorded work or another examination cannot restore recognition while the void
+recorded employment or another examination cannot restore recognition while the void
 continues to derive. A loss is recorded beside it.
 
 The examination route has further conditions. Lupo receives no recognition for
 an examination recorded as deceitful; an adjudicated deceit also supports a
-void. Dev's judgment of Dev's own child produces a void, which closes all three
+void. Dev's judgment of Dev's own child produces a void, which closes all recognition
 routes. Vex's carried void likewise blocks recognition from an examination even
 though the examination and its ground remain recorded.
 
 This is a broad consequence within a deliberately narrow system. It suppresses
-recognition for work unrelated to the finding, not merely recognition for the
+recognition for contributions unrelated to the finding, not merely for the
 challenged act. It does not establish that every statement the person makes is
-worthless or that the work ceased to benefit anyone. Nor is recognition the
+worthless or that the act ceased to benefit anyone. Nor is recognition the
 whole effect of a void: the later chapters also examine its consequences for
 an auditor's authority to sign findings.
 
 The record includes restoration. Where an Appeals judgment and forgiveness
 stop the applicable void from deriving, recorded contributions can support
-recognition again, including work entered while the void stood. Work alone
-does not compel that decision. The supplied pair also authenticates neither
+recognition again, including contributions recorded while the void stood.
+A contribution record alone does not compel that decision. The supplied pair also authenticates neither
 its writer nor its purpose. The chapters on voiding and clawback examine the
 finding, its scope and the route back in detail.
 
 Bela remains a person, is owed food, retains the ballot and may travel. No
-prisoner conclusion follows for Bela. Cira's own work earns recognition and
+prisoner conclusion follows for Bela. Cira is recognised for Cira's own contribution;
 Bela's void produces no loss for Cira. Neither the worker's rights nor the
 student's standing is collateral for recognition.
 
-## Recognition for looking at people
+## Recognition for examination
 
-**Examining someone can lead to recognition.** Gia's case demonstrates it. The
-conclusion depends on a judgment, a documented examination and a cited ground,
+Gia's recognition depends on a judgment, a documented examination and a cited ground,
 with no recorded deceit of the examined person, recall or void of the examiner.
 It does not depend on finding guilt.
 
@@ -117,8 +116,8 @@ answer.
 
 Recognition records contribution without measuring it. It cannot identify the
 most demanding care, the strongest teaching or the largest effort. Even its
-limited visibility depends on someone entering the work. Calling the result
-unranked does not make invisible work visible.
+limited visibility depends on someone entering the contribution. Calling the result
+unranked does not reveal an unrecorded contribution.
 
 Keeping recognition out of every allocation rule prevents it from becoming a
 formal price for rights or resources. It does not establish that social esteem

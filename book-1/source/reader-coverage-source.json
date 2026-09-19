@@ -769,7 +769,7 @@
     {
       "id": "07-15",
       "chapter": "book-1/07-who-owes-and-what-follows.md",
-      "section": "The one duty that does not wait to be asked",
+      "section": "The duty to begin without a request",
       "domain": "Material floor",
       "family": "OBLIGATIONS",
       "function": "protective",
@@ -799,7 +799,7 @@
     {
       "id": "07-17",
       "chapter": "book-1/07-who-owes-and-what-follows.md",
-      "section": "And then nobody has necessarily acted",
+      "section": "Duties still need performance",
       "domain": "Records and accountability",
       "family": "OBLIGATIONS",
       "function": "protective",
@@ -892,7 +892,7 @@
     {
       "id": "09-01",
       "chapter": "book-1/09-earning-above-the-floor.md",
-      "section": "Whose work it is",
+      "section": "What makes someone a worker",
       "domain": "Economy, property, work and commons",
       "family": "ECONOMIC-CONSTITUTION",
       "function": "protective",
@@ -938,7 +938,7 @@
     {
       "id": "09-04",
       "chapter": "book-1/09-earning-above-the-floor.md",
-      "section": "Pay is a record with the kind named in it",
+      "section": "What a compensation record establishes",
       "domain": "Economy, property, work and commons",
       "family": "QUALIFICATIONS-COMPENSATION",
       "function": "ordinary",
@@ -1075,7 +1075,7 @@
     {
       "id": "10-04",
       "chapter": "book-1/10-contribution.md",
-      "section": "Recognition for looking at people",
+      "section": "Recognition for examination",
       "domain": "Economy, property, work and commons",
       "family": "ARTICLES",
       "function": "ordinary",
@@ -1316,7 +1316,7 @@
     {
       "id": "12-04",
       "chapter": "book-1/12-the-same-route-for-everyone.md",
-      "section": "Accessibility is not a ninth floor item",
+      "section": "Accessibility makes rights usable",
       "domain": "Personhood and equality",
       "family": "SUBSTANTIVE-EQUALITY-ORDINARY",
       "function": "ordinary",
@@ -1589,7 +1589,7 @@
     {
       "id": "14-02",
       "chapter": "book-1/14-holding-a-role-in-somebodys-life.md",
-      "section": "A role is scoped, and the roles are separable",
+      "section": "Each role has its own limits",
       "domain": "Life course, family, care and reproduction",
       "family": "FAMILY-LIFE-ORDINARY",
       "function": "ordinary",
@@ -1604,7 +1604,7 @@
     {
       "id": "14-03",
       "chapter": "book-1/14-holding-a-role-in-somebodys-life.md",
-      "section": "The person the decision is about is heard",
+      "section": "The person must be heard",
       "domain": "Life course, family, care and reproduction",
       "family": "FAMILY-LIFE-ORDINARY",
       "function": "ordinary",
@@ -1784,7 +1784,7 @@
     {
       "id": "15-02",
       "chapter": "book-1/15-arriving-and-belonging.md",
-      "section": "When the record cannot say what it says",
+      "section": "Conflicting versions stop the finding",
       "domain": "Borders, migration, asylum and expulsion",
       "family": "MOBILITY-PLURALITY",
       "function": "continuity",
@@ -1814,7 +1814,7 @@
     {
       "id": "15-04",
       "chapter": "book-1/15-arriving-and-belonging.md",
-      "section": "When the consent turns out not to have been consent",
+      "section": "When a consent record is defective",
       "domain": "Collective and plurality rights",
       "family": "MOBILITY-PLURALITY",
       "function": "continuity",
@@ -1905,7 +1905,7 @@
     {
       "id": "16-03",
       "chapter": "book-1/16-public-answerability.md",
-      "section": "What is actually being separated",
+      "section": "Answerability does not grant authority",
       "domain": "Public institutions",
       "family": "ARTICLES",
       "function": "ordinary",
@@ -1920,7 +1920,7 @@
     {
       "id": "16-04",
       "chapter": "book-1/16-public-answerability.md",
-      "section": "The separation runs deeper than power",
+      "section": "Vex's restoration",
       "domain": "Public institutions",
       "family": "ARTICLES",
       "function": "protective",
@@ -2100,7 +2100,7 @@
     {
       "id": "17-09",
       "chapter": "book-1/17-how-public-power-is-built.md",
-      "section": "What none of this staffs",
+      "section": "Authority and performance",
       "domain": "Public institutions",
       "family": "STATE-FORM",
       "function": "protective",
@@ -2280,7 +2280,7 @@
     {
       "id": "19-04",
       "chapter": "book-1/19-what-may-be-kept-about-you.md",
-      "section": "What none of this holds",
+      "section": "Giving the limits effect",
       "domain": "Records and accountability",
       "family": "RECORD-POWER",
       "function": "protective",
@@ -2325,7 +2325,7 @@
     {
       "id": "20-02",
       "chapter": "book-1/20-a-crisis-does-not-suspend-the-republic.md",
-      "section": "When the emergency broke the rule it was under",
+      "section": "When a declaration breaches the constitution",
       "domain": "Emergency and resilience",
       "family": "PUBLIC-SAFETY",
       "function": "continuity",
@@ -2355,7 +2355,7 @@
     {
       "id": "20-04",
       "chapter": "book-1/20-a-crisis-does-not-suspend-the-republic.md",
-      "section": "When a public power was handed to a private force",
+      "section": "When coercive power passes to a private force",
       "domain": "Defence and armed force",
       "family": "PUBLIC-SAFETY",
       "function": "continuity",
@@ -2385,7 +2385,7 @@
     {
       "id": "20-06",
       "chapter": "book-1/20-a-crisis-does-not-suspend-the-republic.md",
-      "section": "What none of this ends",
+      "section": "Withdrawal and redress",
       "domain": "Emergency and resilience",
       "family": "PUBLIC-SAFETY",
       "function": "protective",
@@ -2520,7 +2520,7 @@
     {
       "id": "21-08",
       "chapter": "book-1/21-a-way-to-be-heard.md",
-      "section": "What none of this hears",
+      "section": "A hearing and an effective remedy",
       "domain": "Justice and coercion",
       "family": "NON-CARCERAL-JUSTICE",
       "function": "protective",
@@ -2685,7 +2685,7 @@
     {
       "id": "23-03",
       "chapter": "book-1/23-who-holds-the-pen.md",
-      "section": "The hurried door",
+      "section": "A shortcut to a credential",
       "domain": "Public institutions",
       "family": "ARTICLES",
       "function": "protective",
@@ -2850,7 +2850,7 @@
     {
       "id": "25-01",
       "chapter": "book-1/25-voiding.md",
-      "section": "It takes two, from two places",
+      "section": "The paired finding",
       "domain": "Records and accountability",
       "family": "ARTICLES",
       "function": "protective",
@@ -2865,7 +2865,7 @@
     {
       "id": "25-02",
       "chapter": "book-1/25-voiding.md",
-      "section": "The guards that turn around",
+      "section": "Findings against an examiner",
       "domain": "Records and accountability",
       "family": "ARTICLES",
       "function": "protective",
@@ -3000,7 +3000,7 @@
     {
       "id": "26-04",
       "chapter": "book-1/26-clawback.md",
-      "section": "The shape of the instrument",
+      "section": "The scope of the loss",
       "domain": "Economy, property, work and commons",
       "family": "ARTICLES",
       "function": "protective",
@@ -3075,7 +3075,7 @@
     {
       "id": "27-04",
       "chapter": "book-1/27-a-prisoner-is-a-person.md",
-      "section": "What that means",
+      "section": "Standing that protects others",
       "domain": "Personhood and equality",
       "family": "ARTICLES",
       "function": "protective",
@@ -3390,7 +3390,7 @@
     {
       "id": "30-04",
       "chapter": "book-1/30-when-the-system-notices-it-broke.md",
-      "section": "When the finding itself turns out to be wrong",
+      "section": "Withdrawing a defective authority",
       "domain": "Knowledge, communication and culture",
       "family": "KNOWLEDGE-AND-FREE-FIELD",
       "function": "continuity",

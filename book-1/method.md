@@ -12,8 +12,8 @@ may write directly, and can reject certain circular uses of absence. Those
 properties help test this design. They do not make Nibli the only possible
 language for a constitution or make every policy it accepts defensible.
 
-The examples below quote formal statements, with long lines wrapped for the
-page, and the verdicts expected by executable tests. The linked executable
+The examples quote formal statements and the verdicts expected by executable
+tests, with long lines wrapped for the page. The linked executable
 files keep each statement on one line. The examples contain no
 machine-written explanation or proof transcript. Each example names the
 source or test a reader can inspect. The complete constitution stays in the
@@ -152,7 +152,7 @@ complete cases.
 Even the positive result rests on supplied statements. The engine has not
 authenticated the witness, watched a meal arrive, measured its adequacy or
 established the capacity to provide tomorrow's meal. False evidence in the
-required shape can support a true formal conclusion. Inspection of the rule
+required shape can make the query return `TRUE`. Inspection of the rule
 and investigation of the event are separate tasks.
 
 ## A request, a duty and relief
@@ -318,8 +318,8 @@ punishment. The [floor tests](source/rights-floor.pins.nibli) distinguish
 refused uses from accepted controls across the relevant relations. They do
 not establish that every hostile rule is unwritable. For example, a base
 contribution record does not acquire the floor's structural protection
-merely because using it to punish someone would be unjust. A source change that removes an
-entitlement is another distinct attack. Rule review and the amendment's
+merely because using it to punish someone would be unjust. Removing an
+entitlement from the source is a different attack. Rule review and the amendment's
 source-effect tests therefore matter alongside the stratifier.
 
 The layers used by that check are not the book's reading order. The engine
@@ -410,7 +410,7 @@ Each pin file states how many checks it contains, so losing a check fails
 instead of silently reducing the suite. Assertions within a sequence affect
 later queries in that sequence; they do not leak into another case. An
 ambiguous source edit, missing file, malformed pin, unexpected verdict or
-uncompleted required check fails the run. Explicitly trusted shell
+incomplete required check fails the run. Explicitly trusted shell
 preconditions retain their separate, declared permission.
 
 The inventory is not a census of every possible policy or record. A matrix

@@ -12,19 +12,21 @@ continues and which must end.
 
 ## Which tier holds which power
 
-Power is held at a common tier, at regional tiers, and locally, and the
-arrangement is deliberately asymmetric. The common tier's competence is
+Power is divided among common, regional and local tiers, with different
+limits at each. The common tier's competence is
 enumerated — it holds what is listed and nothing else, and there is no residual
 or inherent common power to fall back on. Regional legislatures hold the
 remainder. Local self-government and its minimum competences are guaranteed
 rather than delegated at pleasure, and every locality must have accountable
 elected representation and enough lawful authority to do what it is given.
 
-Whether a common power displaces a regional one is a justiciable question
-rather than an assertion, and it is decided under a subsidiarity rule. While
-the question is open the disputed power stays with its last uncontested holder,
-rather than transferring authority merely because the dispute continues. Where there is no uncontested
-holder, an interim allocation may hand over only what is needed to preserve the
+Subsidiarity keeps a function local unless cross-boundary effects, common
+equality or capacity require regional action. That necessity must be shown
+publicly and remain open to review. Common action still needs an enumerated
+competence. Displacement can be challenged in court and must be no broader
+than its grounds require. While the question is open, the disputed power
+stays with its last uncontested holder. Where there is no uncontested holder,
+an interim allocation may hand over only what is needed to preserve the
 floor and prevent irreparable harm, and it settles no competence.
 
 What no tier may do is lower universal standing, the floor, equality, due
@@ -111,12 +113,11 @@ appointments run on open nomination, reasoned qualification review and divided
 appointing sources. Mandates are staggered and nonrenewable, and removal is for
 stated cause after independent fact-finding and confirmation by another body.
 
-The anti-capture rule is stated as an incompatibility rather than a hope: it is
-unlawful for one current government, chamber, party coalition, profession or
+It is unlawful for one current government, chamber, party coalition, profession or
 appointing source to hold majority appointment control of a court or an
-independent oversight body. And the design says the uncomfortable half in the
-same breath — divided sources do not by themselves prove that the same
-coalition does not control them. The records make direct and de facto control expressible and challengeable.
+independent oversight body. Divided sources do not by themselves prove that
+the same coalition does not control them. The records allow direct and de
+facto control to be stated and challenged.
 They do not demonstrate that capture has been detected or prevented.
 
 Every office needs a democratic or legal source, a mandate, a jurisdiction, a
@@ -161,7 +162,7 @@ every consequential route needs a predeclared alternate with the same limits.
 
 ## Leaving
 
-Leaving is lawful and it is not unilateral. An affected region's referendum
+A region may leave through an agreed constitutional settlement. Its referendum
 may open negotiations and does not accomplish an exit. Exit requires federal
 agreement, a constitutional-rights review, settlement of borders, assets,
 debts, commons, floors and minority protections, and final ratification by the
@@ -191,7 +192,7 @@ candidate, person-bound effective submissions, the tally rule, the result, a
 challenge and recount route, correction, independent certification, and the
 source version the result affects. Missing approval never counts as approval.
 
-Four roles stay apart, and the separation is the point. Election administration
+The process separates roles. Election administration
 authenticates and classifies submissions. Independently authored assurance
 attests that the roster is complete. A result service computes and certifies
 under the legal rules. Authorised institutions then perform the removal,
@@ -219,7 +220,7 @@ act alone. A named mandate and the continuing floor establish responsibility,
 not the arrival of a helper. The institutions must serve Nell without making
 the child hold office or satisfy political eligibility first.
 
-## What none of this staffs
+## Authority and performance
 
 A complete power record establishes the specified legal authority, not a
 staffed or funded institution, a convened Assembly or an election held. Seats,

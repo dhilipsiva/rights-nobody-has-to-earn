@@ -5,7 +5,7 @@ report for eligible Hano does not. This is one way the constitution can describe
 failure against its own rules. The marker also creates a duty: Review owes a response
 about the affected person.
 
-That connection is the subject of this chapter. A finding needs a reader, a response,
+A finding needs a reader, a response,
 and a route onward if the response fails. Each connection can be checked separately.
 An accurate finding does not establish a remedy, and a duty cannot make an inaccurate
 finding true.
@@ -92,7 +92,7 @@ that further consequences are technically possible, but the extension's missing 
 still does not establish real non-response. The ordinary constitutional route requires
 its positive evidence.
 
-## When the finding itself turns out to be wrong
+## Withdrawing a defective authority
 
 Consider a restriction on publication. A reviewed harm finding, published reasons,
 and an available challenge route support a specific permission to enforce. An
@@ -125,9 +125,6 @@ of those duties, not another conclusion that they were owed.
 
 ## When the responsible office fails
 
-The same question reaches beyond a defective finding: what remains owed when its
-reader cannot or will not act?
-
 A positively established non-response activates the separated alternate and the
 continuity route. If that alternate also fails, naming it has not completed the
 remedy. The bounded chain ends with duties still owed; it does not create an unlimited
@@ -150,7 +147,7 @@ and independent review. A bare claim cannot supply it. Loss of documents cannot
 lawfully cancel standing, the floor, assistance or political membership.
 
 Release and scarcity expose the material stakes. Release requires continuity of
-housing, care, documents, education, work access and participation without a debt,
+housing, care, documents, education, access to employment and participation without a debt,
 labour or obedience price. Emergency rationing remains subject to the physical-scarcity
 contract, including prohibited priority keys, the minimum wherever usable supply
 permits, and recorded shortfall wherever it does not. People within jurisdiction or

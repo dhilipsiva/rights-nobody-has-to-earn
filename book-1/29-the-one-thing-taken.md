@@ -18,7 +18,7 @@ or speaks while Jala is homeless or silent. It shows that the record supplies th
 custody route for one person and no independent delivery evidence for the other.
 
 As a direct legal punishment, conviction takes movement and nothing else. Its
-practical effects can be wider: missed work, threatened tenure, interrupted care,
+practical effects can be wider: interrupted employment, threatened tenure, disrupted care,
 inaccessible possessions. The constitution requires continuity and remedy against
 those harms. Keeping them out of the legal sentence does not establish that they
 were prevented.
@@ -28,7 +28,7 @@ were prevented.
 One direct punishment does not mean one permissible restriction of liberty.
 Arrest, pre-trial detention, search and seizure have separate contracts.
 Each needs an individual recorded ground, an identified actor, reasons,
-accessible assistance, independent authorization and review. Search normally
+accessible assistance, independent authorisation and review. Search normally
 requires prior independent authority. Its immediate-danger exception is narrow,
 must be reported, and keeps the same accountability. Detention receives prompt
 automatic judicial review; nobody has to earn that review by managing to ask.
@@ -58,7 +58,7 @@ and security intelligence are separate public functions, not interchangeable
 parts of one security authority. Defence and intelligence personnel cannot
 hold political, judicial or oversight seats while serving. Secondment,
 shared command or a reserve label cannot recreate a fused force. Civilians
-do not come under military jurisdiction. Individually authorized unarmed
+do not come under military jurisdiction. Individually authorised unarmed
 civil assistance carries no arrest, search, detention, interrogation,
 crowd-control or surveillance power. Defence, counsel and survivor protection
 remain independent parts of the justice interface.
@@ -78,7 +78,7 @@ unavoidable to protect life. A death, serious injury, torture or disappearance
 requires investigation by a body other than the deploying one, with independent
 access, evidence preservation, family participation and public findings that
 respect privacy. Orders from above are no defence; command responsibility
-does not disappear into an organization chart.
+does not disappear into an organisation chart.
 
 Some acts have no lawful version: torture and cruel treatment, disappearance
 and secret detention, arbitrary killing, collective punishment, indefinite
@@ -90,13 +90,13 @@ control, and aggressive war. Neither emergency nor foreign cooperation creates
 an exception. Immunity, amnesty, lapse of time or a pardon cannot erase the
 core abuse or its remedy.
 
-Intelligence requires individualized prior judicial authority, the least
-intrusive effective means, a defined scope and duration, fresh authorization
-on renewal, minimized retention and notification once it no longer defeats
+Intelligence requires individualised prior judicial authority, the least
+intrusive effective means, a defined scope and duration, fresh authorisation
+on renewal, minimised retention and notification once it no longer defeats
 the lawful purpose. Data about people never individually suspected cannot be
 retained. Purchase, partnership or foreign exchange cannot supply material
 the republic could not lawfully collect itself. Bulk or suspicionless
-collection is prohibited; an authorization cannot be permanently undisclosable.
+collection is prohibited; an authorisation cannot be permanently undisclosable.
 Secret evidence can never be sole or decisive, and a consequence cannot
 rest on material that cannot be disclosed as required. Risk, threat, loyalty,
 dangerousness, clearance and watchlist products stay out of the consequential
@@ -133,7 +133,7 @@ restricted capability cannot become a reason to take something else. The checks
 inspect that distinction in the source.
 
 This prevents a legal cascade through those conclusions. It cannot prevent a
-practical cascade by itself. A person unable to attend work or reach a service may
+practical cascade by itself. A person kept from their employment or a service may
 need active help to keep what remains legally theirs. The continuity duties address
 that need without making custody a transfer of employment, property, family, or
 decision authority.
@@ -180,7 +180,7 @@ It can reject an unsupported authority in the record presented to it, but cannot
 establish that the presented record is current in the world merely by calling it
 current.
 
-Severity selects placement; it does not lengthen the interval. Recognition, work,
+Severity selects placement; it does not lengthen the interval. Recognition, employment,
 compliance, wealth and character cannot shorten or extend custody. The pins try a
 rule that would release a confined person for recognition. Because custody also
 depends on the absence of release, that attempted rule creates a negative cycle and
@@ -202,8 +202,8 @@ wrote it or establish that Hano physically left.
 Release review must examine the current lawful ground and end, continuing necessity,
 proportionality and alternatives. It requires independent review, counsel, accessible
 challenge and reasons. It cannot renew custody by itself, make administrative delay
-extend a lawful end, or demand debt payment, work or forgiveness as the price of
-leaving. Housing, care, documents, education, work access and community participation
+extend a lawful end, or demand debt payment, employment or forgiveness as the price of
+leaving. Housing, care, documents, education, access to employment and community participation
 must continue across release, with private support rather than a general supervision
 or risk status.
 
@@ -240,5 +240,5 @@ derives the food debt, with no void or recognition loss. This is a control for a
 person whom the confinement rules have no grounds to reach.
 
 It is not a test of every consequence of punishing a child: Nell is not punished
-here. The relevant result is narrower and sufficient. A child does not need a
+here. The result is that a child does not need a
 custody record to retain movement, standing, or the floor.

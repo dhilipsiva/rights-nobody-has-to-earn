@@ -1,17 +1,14 @@
 # Whether It Arrived
 
-Bela is owed food. The supplied record does not establish that food reached
-Bela. What evidence would let it reach that conclusion?
-
-The answer needs more than the provider's account. A receipt must be matched
+Evidence of delivery needs more than the provider's account. A receipt must be matched
 by independent evidence for the same recipient, item and kind of delivery.
 The rule can check that match. It cannot establish the truth of the reports
 by checking them against each other.
 
 ## Owed is not the same as delivered
 
-Ask whether Bela eats in the record supplied with this book. The answer is no:
-the delivery conclusion does not follow. Shelter, care, material security and
+No food-delivery conclusion follows for Bela in the supplied record.
+Shelter, care, material security and
 company are likewise unsupported by recipient-side evidence. This does not
 establish that Bela is hungry, homeless, ill, unsafe or alone.
 
@@ -53,8 +50,7 @@ believes or that they have exercised a liberty.
 
 ## Different kinds of claim
 
-The same words can conceal different claims. The distinction is easier to
-follow if each statement keeps its own job.
+Similar words can conceal different claims. Each statement needs a clear scope.
 
 | Claim | What it establishes in the model |
 |---|---|
@@ -136,7 +132,7 @@ reached Nell still has to be supplied.
 
 A matching receipt and witness make a delivery conclusion testable. They do
 not establish an operating service, an accessible offer, actual adequacy or a
-completed remedy. Meal logistics, care work, facilities, staffing, capacity
+completed remedy. Meal logistics, care provision, facilities, staffing, capacity
 and the performance of these duties remain operating questions for the second
 book.
 

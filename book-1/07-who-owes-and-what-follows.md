@@ -12,7 +12,7 @@ the work cannot leave the person with nobody to answer to.
 
 ## The forms public responsibility takes
 
-Public responsibility around it takes distinct forms. To respect a right is
+Public responsibility takes distinct forms. To respect a right is
 to refrain from interfering with it. To protect is to prevent, investigate
 and answer private interference through public powers. To fulfil is to secure
 what the public floor requires. To continue is to preserve protection when
@@ -56,13 +56,12 @@ general public power over private life.
 
 A civic duty may have consequences when breached. Those consequences cannot
 remove standing, the floor, political voice, access to evidence or challenge,
-or an effective remedy. Failure to work, pay, identify oneself, comply or
-contribute therefore supplies no right to lower those protections. Any other
+or an effective remedy. Lack of employment, payment, identification, compliance
+or contribution supplies no right to lower those protections. Any other
 consequence needs its own lawful source and process.
 
-Duties also differ in whom or what they serve. An obligation to a person,
-a source-defined common, an office and a voluntary promise do not acquire an
-automatic priority over each other. A current priority rule and independently
+Duties to a person, a protected common, an office or under a voluntary promise
+have no automatic priority over one another. A current priority rule and independently
 reviewed conflict evidence are needed to displace one by another. Missing or
 conflicting priority evidence decides nothing. A voluntary promise cannot
 waive a protection the constitution makes non-waivable.
@@ -83,15 +82,15 @@ renew an expired power or prove a case against the claimant. A positively
 certified failure to respond can transfer the unfulfilled duty to a
 predeclared independent alternate. Record review, temporal review, independent
 review, audit and final review retain their distinct roles and alternates.
-Taking over one review gives no authority to complete the whole power or
+Taking over one review gives no authority to exercise the whole power or
 enlarge its scope.
 
 Interim continuity, an individual remedy, common-cause correction,
 re-examination of affected cases and recurrence checking are separate legal
 consequences. Repairing one case cannot be treated as correction of its common
 cause. A result requiring its own positive record does not follow from missing
-or conflicting evidence. Nor does a finding about one person give another
-recipient a duty by association.
+or conflicting evidence. Nor can an individual finding be reused to create
+the same duty concerning someone else.
 
 This chain does not discover the original wrong or perform the review.
 The bearer cannot certify its own excuse, and the existence of a remedy
@@ -117,7 +116,7 @@ needs review of the contract, while a defective tax or credit decision needs
 its own correction. None can borrow an unrestricted remedy from the general
 word *economic*.
 
-The source separately provides for unsafe or disguised work, unlawful
+The source separately provides for unsafe or disguised employment, unlawful
 licensing, consumer harm, insolvency, expired private-power findings and
 scarcity shortfalls. Remedies can include reinstatement, accommodation,
 restitution, compensation, licence limits and protection against retaliation.
@@ -182,7 +181,7 @@ permit cannot reuse an ended window. Keeping a past disposition available
 for comparison is different from keeping its legal force alive. Certified
 nonresponse transfers an unanswered duty, without supplying approval.
 
-## The one duty that does not wait to be asked
+## The duty to begin without a request
 
 The independent rights advocate owes every person the initiation of assistance
 and representation without a request. Its condition is personhood. It does
@@ -216,7 +215,7 @@ away the floor or producing confinement or a credibility loss. Food receipt
 still does not follow. The test therefore shows both a route into review and
 the limit of what that route establishes for the child.
 
-## And then nobody has necessarily acted
+## Duties still need performance
 
 An action duty is not a performed review. A nonresponse conclusion is not an
 escalation received. Continuity is not care delivered, and a remedy is not

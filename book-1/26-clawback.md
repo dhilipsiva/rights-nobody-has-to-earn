@@ -10,9 +10,9 @@ reads this recognition loss into another result. The void itself closes the
 recognition routes; the loss records that consequence without measuring it.
 
 There is no balance to debit and no proportion to calculate. A void blocks
-recognition from all three routes, including work unrelated to the finding.
-That breadth is a consequence of this unranked relation, not proof that all
-the person's contributions were fraudulent.
+recognition through teaching, employment or examination, including contributions
+unrelated to the finding. The rule withholds recognition from the person as a
+whole; it does not establish that every contribution was fraudulent.
 
 The loss word is conclusion-only. A direct assertion is refused even if an
 entry tries to make that exact word writable, and the test covers another
@@ -44,7 +44,7 @@ place: being taught is not one of the routes that produces it.
 
 Even if a teaching record were fraudulent, it would not establish that the
 student acquired recognition through it. The system has no such transfer.
-The student's own teaching or work can support recognition independently, as
+The student's own teaching or employment can support recognition independently, as
 chapter 10 tests. A finding against the teacher cannot substitute for a finding
 about the student's own conduct.
 
@@ -57,8 +57,8 @@ Parentage, care, household membership and support do not transfer fraud, guilt,
 debt or recognition loss from an adult to a child. These are legal separations,
 not proof that a court corrected a record or an advocate acted.
 
-A false entry about work remains a problem for evidence and correction. Making
-a student bear the teacher's recognition loss would not establish what work
+A false entry about employment remains a problem for evidence and correction. Making
+a student bear the teacher's recognition loss would not establish what employment
 occurred or correct that entry. The clawback stays with the person voided.
 
 ## The mark that crosses the record
@@ -72,7 +72,7 @@ insufficient. The result establishes no new examination of Vex.
 The restoration test adds forgiveness by Appeals. Alone it changes none of
 those results. Add an Appeals judgment as well, and clean status derives:
 the carried void and recognition loss stop, and Vex's existing examination
-supports recognition. No new work or payment is involved. The matched history
+supports recognition. No new examination or payment is involved. The matched history
 remains, so the auditor's credential still does not derive.
 
 The pair is mechanically required but identifies no particular finding,
@@ -87,7 +87,7 @@ an applicable void still derives, recognition remains blocked. An unperformed
 review and a performed decision missing from the record cannot be distinguished
 merely by that result.
 
-## The shape of the instrument
+## The scope of the loss
 
 The recognition loss is unmeasured and unread by downstream rules. That limits
 its formal effects, while the void's blanket exclusion from recognition reaches

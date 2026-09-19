@@ -11,7 +11,7 @@ a registrar records evidence and cannot grant or withhold the status.
 
 The full political framework also requires ordinary residence and one chosen
 political home at each applicable tier. Citizenship, property, a conventional
-address, immigration classification, work, wealth, document perfection or a
+address, immigration classification, employment, wealth, document perfection or a
 waiting period cannot replace that baseline. Registration records membership
 rather than creating it. The basic ballot conclusion alone establishes neither
 residence nor a valid public result.
@@ -57,8 +57,8 @@ or other compelled placement cannot replace the last voluntary uncontested
 home. The public result must carry positive evidence of that continuity;
 the custody entry alone proves no home.
 
-A voluntary move transfers political home atomically: the transition
-establishing the new home ends the old. During a dispute, the last uncontested
+A voluntary move establishes the new political home and ends the old in the
+same transition. During a dispute, the last uncontested
 voluntary home remains. A first-time resident with no earlier home has a
 provisional route through accessible evidence, an attested cross-jurisdiction
 omission record and independent review. Silence or a bare assertion of no
@@ -130,7 +130,7 @@ allows a certified result to support public authority.
 The model does not authenticate the roster, discover an omitted resident,
 operate a changing tally, resolve competing submissions or collect Hano's
 vote. It checks the supplied premises and the bounded authority they support.
-An unimpeachable entitlement with no accessible ballot is an undelivered right,
+A ballot entitlement with no accessible ballot is an undelivered right,
 just as an entitlement to food is not a meal.
 
 ## The child with nobody
