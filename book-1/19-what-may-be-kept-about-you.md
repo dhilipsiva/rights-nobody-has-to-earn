@@ -1,25 +1,18 @@
 # What May Be Kept About You
 
-The evidence chapter says what the record may hold at all. This one is about
-the records kept *about a person* — identity and status, health, care,
-schooling, work, housing, money, policing, the decisions public bodies make,
-and the counting a state does to know what is happening. They are the part of
-public power a person is least likely to see and most likely to be affected
-by, and the design's answer is the same in every domain: a holding is
-permitted for a declared purpose and for nothing else, and every further thing
-somebody might want to do with it — watch, link, compute, decide — is a
-separate permission that has to rejoin the exact holding that was reviewed.
+A record kept to provide a service is not permission to watch its recipient,
+combine their files or let a machine decide their rights. Each further use
+needs its own authority tied to the exact holding that was reviewed.
 
-Everything here is a condition on supplied evidence. Nothing in this chapter
-stores a record, authenticates an input, watches anybody, evaluates a model,
-or establishes that a deletion, a correction or an answer ever happened.
+The chapter follows that dependency through an authorised use and a defect,
+then asks how a state can count conditions without ranking people. A person's
+rights must survive both the presence of a file and its absence.
 
 ## Keeping, watching, and letting a machine help
 
-Records about people are kept in every part of ordinary life — identity and
-status, health, care, schooling, work, housing, money, policing, and the
-decisions public bodies make. Keeping one is permitted for a declared purpose
-and for nothing else. The inputs must come from named lawful sources. The
+The rules cover identity, health, care, schooling, work, housing, money,
+policing and public-decision records. A holding needs a declared purpose and
+may be used only within it. The inputs must come from named lawful sources. The
 collection must be no more than the purpose needs. It must be private, secure
 and access-controlled, accurate and correctable on request, held only to a
 stated end and then deleted or narrowed, and open to the person it is about.
@@ -43,12 +36,10 @@ a real chance to contest before anything takes effect, and a human and
 independent review that actually decides — the reviewer cannot be the body
 holding the record. A consequential decision made by the machine alone is
 refused. So is putting a risk, threat, loyalty or dangerousness product into
-the record that reaches a person's rights: that exclusion was already the
-rule, and it is repeated here because this is where a computed score would try
-to enter. Nothing in any of this reads a computed value or concludes from one.
+the record that reaches a person's rights: the exclusion applies at the point where a computed score would enter. Nothing in any of this reads a computed value or concludes from one.
 
-A person may inspect their own record, correct it, have it deleted, or object
-to what is being done with it, without being handed a reusable classification
+A person may seek inspection, correction, lawful deletion or review of the use
+of their own record, without being handed a reusable classification
 in return, and without anyone else's private record being exposed. Asking
 creates a duty to review the request; it does not decide it. When the reviewer
 is independently established to have failed to answer, the duty moves to an
@@ -57,25 +48,30 @@ asked. When the stated end arrives or the purpose runs out, what is held must
 be deleted or narrowed, with a record of what was done, no quiet extension and
 no rebuilding it from copies.
 
-A reviewed defect stops the exact use it names — an unauthorised input, a
-purpose that crept, collection in bulk, data that was bought, an automated
-effect nobody can explain, a decision the machine made alone, an inaccuracy
-left uncorrected, retention past its end, access blocked, retaliation for
-objecting, or a wall breached — and creates duties to review, correct and
-publish the correction.
+The chapter's positive case completes a holding, processing of that same record
+and automated decision support tied to both. The holder owes accuracy, security,
+protection from retaliation and an explanation; an independent reviewer owes a
+human decision, and the subject may contest the support. A holding about one
+subject cannot license processing about another.
 
-One more thing about the subject, because it is the direction that matters.
-The subject of a holding is an opaque handle rather than a roster entry.
-Keeping a record about somebody does not put them on the roster of persons —
-and the point of saying so is the other way round: it cannot take them off it
-either. Personhood comes from a birth or an encounter, and no holding, no
-watching and no computed support sits anywhere upstream of it.
+The defect sequence then introduces an independently reviewed finding of an
+unauthorised input. The holding, its processing and the dependent automated
+support stop completing. The defect finding creates duties to review and
+correct the unsupported use and publish the correction. An unrelated defect
+does not withdraw an unaffected use.
 
-None of it says anything about the person. An entry naming somebody is an
-entry, not a finding: it takes no standing, no floor, no vote, and it does not
-make them a liar, a prisoner or a loser of anything. And none of it stores a
-record, proves an input was lawful, watches anything, evaluates a model, or
-shows that a deletion, a correction, an explanation or an answer ever happened.
+Other recognised defects include purpose drift, bulk or purchased data,
+unexplained automated effects, machine-only decisions, uncorrected inaccuracy,
+retention past its end, blocked access, retaliation and breached separation
+between records. Withdrawal concerns the specified authority and its dependent
+conclusions. It does not itself delete data, explain a past decision or perform
+a remedy.
+
+The subject is an opaque handle, not a compulsory personhood entry. The case
+completes without creating personhood, a void, confinement or recognition loss
+for that handle. Hano's floor and ballot conclusions remain. The legal
+standing routes are separate from permission to hold or process records; a
+file is not a source of human worth or a licence to reduce rights.
 
 ## Counting without ranking people
 
@@ -120,41 +116,25 @@ a correction or make an institution answer.
 
 ## The child with nobody
 
-The child with nobody is the person these rules are most easily read the wrong
-way round for, so it is worth being exact. Nothing here gives the child a
-record, and nothing here needs one. The floor does not run through a file:
-personhood comes from a birth or an encounter, the debts follow from
-personhood, and no rule in this chapter sits upstream of either. A child with
-no health record, no schooling record and no file anywhere is owed exactly what
-a child with all three is owed.
+Nell is a person and is owed health without a health, school or administrative
+file in the supplied record. The legal floor does not depend on those files;
+the executable case still needs its birth entry to establish personhood.
 
-What this chapter adds for that child is a refusal rather than a service. The
-enforcement firewall means the record may never be built by enrolling somebody
-through the door of a meal, a clinic, a school or a court — which are precisely
-the doors a child with nobody would come through. A society that wanted to make
-help conditional on being registered would start there, and the design refuses
-that route in the same breath as it permits the registry. And the subject of a
-holding is an opaque handle: an entry naming this child would be an entry, not
-a finding, and would take no standing, no floor and no credibility.
-
-What does not follow from this chapter is anybody looking. The access,
-correction and objection routes all begin with the subject asking, and a child
-with nobody asks for nothing; the independent alternate exists for a reader who
-does not answer, not for a subject who cannot ask. The route that does not wait
-for the asking is in the chapter on who owes, and the appointment it leads to
-is bound by this chapter's own discipline rather than exempt from it: the
-appointment record carries the least information its matter needs, builds no
-reusable classification, and enrols nobody. A representative appointed because
-a child had nobody is not a file about the child, and the design is careful to
-say so in the same place it creates the appointment.
+The firewall forbids making service access a route into enforcement records.
+An appointment to assist Nell is subject to the same discipline: information
+limited to the matter, no reusable classification and no enrolment. The rights
+advocate's initiation duty does not require a request. By contrast, a personal
+access or correction request and a reviewer's nonresponse are separate triggers.
+None is supplied for Nell here, and no record check establishes that somebody
+looked for the child or acted on their behalf.
 
 ## What none of this holds
 
-A reviewed defect stops the exact use it names and repairs nothing by itself.
-Storage, cryptography, identity technology, retention engineering, deletion in
-practice, model development and evaluation, audit tooling and case
-administration all belong to the second book. This chapter establishes what a
-lawful holding requires and what stops following when a requirement is
-missing. It does not establish that any record is lawful, that any deletion
-occurred, or that anybody ever explained a decision to the person it was
-about.
+The model tests authority and duties over supplied evidence. It authenticates
+no input, stores no file, evaluates no deployed model and performs no deletion.
+Storage, security, retention engineering and case administration must give
+practical effect to the legal limits.
+
+The permission to keep a record stays bounded by its purpose even when another
+use would be convenient. The next chapter puts that discipline under a more
+urgent claim: that a crisis requires the ordinary limits to give way.

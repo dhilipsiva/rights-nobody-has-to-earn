@@ -594,21 +594,21 @@
   ],
   "narrowness_impacts": [
     {
-      "artifact_ref": "book-1/03-what-counts-as-evidence.md::That is a check on declared names, not protection of their meaning.",
+      "artifact_ref": "book-1/03-what-counts-as-evidence.md::That is a check on declared names, not protection",
       "current_claim": "The register checks declared names, not semantic effects; vocabulary widening is visible but neither constitutionally approved nor entrenched.",
       "classification": "revised_and_scoped",
       "reason": "The bounded cases separate Article 9 label verdicts from manually supplied source effects and reproduce a direct vocabulary widening outside Article 9.",
       "future_trigger": "Revise if a verified exact-diff binding, semantic review, vocabulary-entrenchment rule, or source-transition mechanism lands."
     },
     {
-      "artifact_ref": "book-1/04-what-you-are-owed.md::At the floor layer, old hostile rules remain loadable. That is no longer the",
+      "artifact_ref": "book-1/04-what-you-are-owed.md::The controls are tested and discarded; they are not enacted rules of this",
       "current_claim": "The floor layer still permits the tested credibility, recognition, and compulsion routes, while a separate derived liberty shell now records person-held barriers against their lawful use; neither result proves institutional enforcement.",
       "classification": "revised_and_scoped",
       "reason": "The source mutation cases still test the floor's narrow anti-sanction property, while the new liberty family adds an independent normative layer and explicitly leaves operation and enforcement unestablished.",
       "future_trigger": "Revise the prose, liberty pins, counterfactuals, and this audit if either the floor refusal or the separate liberty barrier changes."
     },
     {
-      "artifact_ref": "book-1/22-changing-the-rules.md::The recorded label verdict is real.",
+      "artifact_ref": "book-1/22-changing-the-rules.md::The guard still compares names, not effects.",
       "current_claim": "The present mechanism produces label verdicts but has not established protection against what a source change actually does.",
       "classification": "revised_and_scoped",
       "reason": "Targetless, falsely labelled, concealed-shape, label-poisoning, and honest blocked-label-plus-harm cases execute the distinction without claiming enactment or prevention.",
@@ -622,7 +622,7 @@
       "future_trigger": "Reassess if source authorship, semantic authorization, deployment identity, rollback protection, or independently assured transition evidence lands."
     },
     {
-      "artifact_ref": "book-1/04-what-you-are-owed.md::confinement. A rule reading the absence of a floor right into your credibility,",
+      "artifact_ref": "book-1/04-what-you-are-owed.md::recognition. Those consequences do not create the same forbidden dependency.",
       "current_claim": "The current anti-sanction refusal is narrow: it does not deliver the floor, block every hostile rule, stop defunding, or preserve the source.",
       "classification": "revised_and_scoped",
       "reason": "The concealed-shape case removes the food promise while the anti-sanction refusal still fires, proving that the structural wall and delivered constitutional promise are different claims.",

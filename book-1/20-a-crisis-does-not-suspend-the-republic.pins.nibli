@@ -2,8 +2,7 @@
 #
 # KIND: CONTENT pin. Run:
 #   ./verify.sh --only book-1/20-a-crisis-does-not-suspend-the-republic.pins.nibli
-#   ./verify.sh          # the real check — the line above cannot see
-#                        # the cross-file reconciliation or the prose guards
+#   ./verify.sh          # all substantive pins and contradiction checks
 #
 # The chapter's case lists two fixtures:
 #   tests/pins/records/child_with_nobody/fixture.nibli
@@ -77,9 +76,9 @@
 # => FALSE
 
 # ── The child with nobody ──────────────────────────────────────────────────
-# "for a record holding one birth entry, a declared emergency changes nothing
-# at all. Not because the child is exempted. Because there is no clause that
-# reaches them."
+# The supplied declaration and requisition preserve Nell's standing, security
+# debt and movement. No conclusion here claims every possible measure leaves
+# every child unaffected.
 ? person(Nell).
 # => TRUE
 

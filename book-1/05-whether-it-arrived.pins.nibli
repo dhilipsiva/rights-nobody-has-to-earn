@@ -2,8 +2,8 @@
 #
 # KIND: CONTENT pin. Run:
 #   ./verify.sh --only book-1/05-whether-it-arrived.pins.nibli
-#   ./verify.sh          # the real check — the line above cannot see
-#                        # the cross-file reconciliation or the prose guards
+#   ./verify.sh          # all substantive pins and required contradiction checks
+# Prose consistency is reviewed separately.
 #
 # The chapter's case lists tests/pins/records/child_with_nobody/fixture.nibli.
 # Marisol, Provender and Ledgerwitness are fresh probe names.
@@ -84,7 +84,8 @@ authorized(Ledgerwitness, DeliveryWitness, Nell).
 receives(Nell, FoodForNell, Provender).
 observe(Ledgerwitness, FoodForNell, Nell, FoodScope).
 # "a receipt naming Nell and an authorised witness who is not the provider derive
-# that food reached Nell" — and who may authorise that witness is the open question.
+# that food reached Nell" — actual appointment and authorization remain supplied
+# inputs; the reviewed representation route assigns the duty to authorize.
 ? eats(Nell).
 # => TRUE
 

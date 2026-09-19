@@ -150,7 +150,7 @@
 ? lose(Points, Hano).
 # => FALSE
 
-# "The harsher test" — voiding does not reach the franchise either. Bela is
+# A void does not reach the franchise either. Bela is
 # voided and remains enfranchised. The pair must sit adjacent: the TRUE
 # franchise conclusion only carries the section's claim while the voiding
 # verdict stands beside it.
@@ -221,9 +221,9 @@ decide(Ghost, Ballot, Election).
 # The scoped accept above proves the clause LOADS and then puts the base back —
 # which is exactly why it cannot prove the chapter's corrected sentence. This
 # one leaves the clause RESIDENT, and the query underneath is the sentence:
-# with the standard disenfranchisement formula standing in force, the convicted
-# man still holds the franchise, because this record only ever adds and the
-# wider franchise rule is still there saying so.
+# with the narrower ballot formula standing in force, Hano still holds the
+# franchise, because this extra sufficient route does not remove the
+# wider franchise rule that already grants it.
 #
 # DO NOT EXPECT THE QUERY TO DEPEND ON THE ACCEPT. Measured both ways: drop the
 # accept and the verdict is identical, because the franchise conclusion was

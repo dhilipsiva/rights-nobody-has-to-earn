@@ -2,8 +2,7 @@
 #
 # KIND: CONTENT pin. Run:
 #   ./verify.sh --only book-1/27-a-prisoner-is-a-person.pins.nibli
-#   ./verify.sh          # the real check — the line above cannot see
-#                        # the cross-file reconciliation or the prose guards
+#   ./verify.sh          # all substantive pins and contradiction checks
 #
 # Zed is introduced BY this pin file rather than living in the constitution:
 # the chapter needs someone the person-roster has never mentioned, and every
@@ -51,7 +50,7 @@ endorses(TemporalReview, Case_Zed).
 ? injure(Zed, Ivo).
 # => TRUE
 
-# "Zed is a prisoner, which follows from those two facts."
+# Zed's prisoner conclusion follows from the full witnessed custody case.
 ? prisoner(Zed).
 # => TRUE
 
@@ -146,8 +145,8 @@ free(Nemo).
 # => TRUE
 
 # ── The child with nobody ──────────────────────────────────────────────────
-# The pair, run side by side. Zed is confined, so shelter and a recorded voice
-# derive; the child is confined by nobody, so neither does.
+# The pair, run side by side. Custody derives for Zed and supports shelter
+# and expression; the child record supplies neither this route nor receipts yet.
 ? dwell(Zed).
 # => TRUE
 
@@ -173,8 +172,7 @@ free(Nemo).
 ? owe(State, Expresses, Nell).
 # => TRUE
 
-# "the difference between them is that public power acted on one and has not
-# acted on the other"
+# The custody conclusions differ; neither establishes outside public action.
 ? prisoner(Zed).
 # => TRUE
 

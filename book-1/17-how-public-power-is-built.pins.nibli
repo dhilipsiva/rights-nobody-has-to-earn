@@ -2,8 +2,7 @@
 #
 # KIND: CONTENT pin. Run:
 #   ./verify.sh --only book-1/17-how-public-power-is-built.pins.nibli
-#   ./verify.sh          # the real check — the line above cannot see
-#                        # the cross-file reconciliation or the prose guards
+#   ./verify.sh          # all substantive pins and contradiction checks
 #
 # The chapter's case lists tests/pins/records/child_with_nobody/fixture.nibli.
 #
@@ -213,8 +212,8 @@ observe(PowerLexiconWriter, PowerLexiconRecord, UnapprovedAppointmentSource, App
 # => FALSE
 
 # ── The child with nobody ──────────────────────────────────────────────────
-# "Nothing in this chapter reads a person at all." The whole apparatus above is
-# in the record and the child's own conclusions are exactly what they were.
+# The chapter's vocabulary entries preserve these conclusions for the child.
+# They do not establish that public powers never concern individual people.
 ? person(Nell).
 # => TRUE
 
@@ -231,7 +230,7 @@ observe(PowerLexiconWriter, PowerLexiconRecord, UnapprovedAppointmentSource, App
 ? prisoner(Nell).
 # => FALSE
 
-# A person is not a body. Writing a complete state-form record that named this
+# No office is supplied for Nell. A complete state-form record naming this
 # child as the holder is what would flip this, and nobody has written one.
 ? authority(Nell, FSPOW_005, PowerLexiconRecord).
 # => FALSE

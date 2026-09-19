@@ -1,210 +1,175 @@
 # The Same Route for Everyone
 
-The floor says what nobody may be left without. This chapter asks a different
-question about the same rules: whether any of them, or any rule the society
-makes beneath them, marks some people for a worse route to the same thing. A
-person can be owed everything and still be sent the long way round — to a desk
-that closes early, a form they cannot read, a service that is theirs on paper
-and someone else's in practice. The design's answer is written as a floor of
-its own kind: every person receives equal and effective protection, purpose or
-effect suffices to establish discrimination, and no test can balance away
-standing, the material floor, core liberty, due process, the equal ballot, or a
-remedy. The barriers that carry that answer hold for every person, by name, in
-the pins for this chapter.
+The floor says what nobody may be left without. Equality asks whether people
+can reach it: whether a desk's hours, an unreadable form or an inaccessible
+service sends some people along a worse route to the same right. Identical
+instructions can leave unequal obstacles in place.
 
-Two things are worth stating before the forms, because they shape everything
-below. The grounds are open: actual, past, anticipated, perceived, associated,
-multiple, and intersectional status are all in scope, and a claim that crosses
-several grounds is not chopped into pieces that each fail alone. And the
-remedy's limit is written on the remedy: no order made under these rules may
-take another person's standing, floor, core liberty, due process, or political
-equality, or assign guilt by group membership.
+Every person is owed equal and effective protection. Discrimination can arise
+from purpose or effect; proof of intent is not necessary. Protected grounds
+are open, including past, anticipated, perceived, associated, multiple and
+intersectional status. A claim crossing several grounds must not be split into
+pieces that each fail alone.
+
+Equality remedies have limits too. They cannot take another person's standing,
+floor, core liberty, due process, political equality or effective remedy, and
+cannot assign guilt by group membership.
 
 ## The forms it takes
 
-Discrimination is not one thing, and the design names its shapes so that none
-of them can be missed by being called something else. Direct exclusion. A
-neutral rule with a disproportionate effect. A pattern across a whole
-institution. A claim on several grounds at once, or on grounds that cannot be
-separated. Treatment because of who a person is associated with. The denial of
-an accommodation. Imposed segregation and inferior parallel provision.
-Harassment, whether one grave act or a cumulative pattern. Retaliation for
-having complained. Each is a barrier the pins hold for every person, and each
-is a form the remedial proceeding's vocabulary can name — a proceeding opened
-under a form the vocabulary does not carry completes nothing.
+The design covers direct exclusion, neutral rules with disproportionate effects,
+institutional patterns, combined and inseparable grounds, and treatment based
+on association. It also covers denied accommodation, imposed segregation,
+inferior parallel provision, harassment through a grave act or cumulative
+pattern, and retaliation for complaining. A single comparator is not required.
 
-Intent is not required and a single comparator is not required. What the rules
-read is purpose or effect, which is the only test that catches the neutral
-rule.
+The proceeding must identify a recognised form. Quillon's entry naming
+retaliation is accepted into that vocabulary; an invented form is not. This
+keeps the formal route tied to its defined claims. It does not establish that
+all discrimination has been identified or that any allegation is true.
 
 ## Who is bound, and where private life stays private
 
-Every public tier, institution, contractor, and delegated function is bound
-directly, and the barriers against evading that through delegation, and
-against public failure to protect against private interference, hold for every
-person. Express private duties bind the named public-facing domains —
-employment, housing, education, health and care, finance and insurance,
-utilities, transport, public commerce, and dominant communication or platform
-services — and the barrier against evading a named private duty holds.
+All public tiers, institutions, contractors and delegated functions are bound.
+Delegation cannot remove the duty, and the public duty includes protection
+against private interference. Express private duties apply in employment,
+housing, education, health and care, finance and insurance, utilities,
+transport, public commerce, and dominant communication or platform services.
 
-What stays private is stated just as exactly. Intimate choice, and genuinely
-voluntary cultural, affinity, safety, faith, and expressive association, are
-protected; nobody may be forced into an association, and the barrier against
-involuntary association holds for every person. A mission-linked distinction
-is confined to a genuinely expressive role, and the barrier against stretching
-it to general employment, commercial service, housing, or essential access
-holds: a faith body may choose who leads its worship, and receives no immunity
-for its hospital, its rental, or its shop.
+Intimate choice and genuinely voluntary cultural, affinity, safety, faith and
+expressive association remain protected. Nobody may be forced into an
+association. A mission-linked distinction must concern a genuinely expressive
+role: a faith body may choose who leads worship, but gains no general exemption
+for its hospital, rental housing or shop.
 
 ## What a distinction has to prove
 
-A direct adverse distinction on a protected ground survives only as an
-evidenced, genuine and determining function-specific necessity with no less
-discriminatory effective alternative. An indirect one survives only with a
-compatible purpose, evidential fit, necessity, least-discriminatory means, and
-proportionality. The barriers against an unjustified direct distinction and an
-unjustified indirect one hold for every person, and so does the one that
-matters most: no test balances away the core. A credible barrier or group
-pattern shifts a burden in a remedial equality proceeding and nowhere else —
-it never reverses a criminal burden, proves guilt, or authorises punishment,
-and the barrier against that refusal holds for every person. The pins put a
-proceeding opened on a pattern beside the claimant and beside a cast member,
-and neither is confined, voided, or docked by it.
+A direct adverse distinction on a protected ground requires evidenced, genuine
+and determining necessity for the specific function, with no effective less
+discriminatory alternative. An indirect distinction requires a compatible
+purpose, evidential fit, necessity, the least discriminatory effective means
+and proportionality. Neither test may balance away the protected core.
+
+A credible barrier or group pattern can shift the burden in a remedial equality
+proceeding. It cannot reverse a criminal burden or establish guilt. The pattern
+case permits the claimant to pursue relief and obliges the reader to hear it;
+no confinement, void or recognition loss follows for the claimant, and the
+case also checks that it produces no confinement or void for Cira.
 
 ## Accessibility is not a ninth floor item
 
-Accessibility is proactive and systemic; reasonable accommodation is an
-individual duty. Equal standing may require unequal resources, and the design
-says so without pretending that a resource claim is something a rulebook can
-make true. What it can do is refuse the ways accommodation is usually denied.
-A bare absence of accommodation may not be read as a withholding; an
-inaccessible route to equality's own remedy is refused; an accommodation may
-not be refused on a local desk's budget line, because undue burden is read
-across the responsible institution as a whole; and an alternate route may not
-be inferior. Each of those is a barrier the pins hold for every person.
+Accessibility is a continuing, systemic duty. Reasonable accommodation answers
+an individual's requirements. Both make existing rights usable; neither is an
+extra entitlement available only after the ordinary route fails.
 
-Underneath the barriers there is now an ordinary case, and this chapter can
-show it. A reviewed accommodation is a record: the kind of barrier from a
-closed list — physical, sensory, cognitive, linguistic, digital, geographic,
-financial, procedural — the person it is for, consultation of that person and
-their stated requirements, an effective adjustment offered with reasons and a
-prompt challenge route, no cost to the person and no inferior status, the
-undue-burden test read across the whole institution, and an equivalent
-alternative through public continuity where the provider genuinely cannot.
-Three distinct attesters, a challenge reader, and an independent alternate,
-none of them the acting body and none of them the person, complete it. It
-obliges the actor to provide the adjustment or secure the alternative, permits
-the person to use the right with it, and obliges the alternate to secure the
-alternative route without making the person start again.
+The accommodation case concerns a physical barrier. Its reviewed record states
+that the person was consulted, identifies their requirements, and records an
+effective adjustment with reasons and a prompt challenge route. The adjustment
+must impose neither cost on the person nor inferior status. A provider's claim
+of undue burden is assessed across the responsible institution, not a local
+desk's budget. If the provider genuinely cannot make the adjustment, public
+continuity must secure an equivalent alternative without making the person
+start again.
 
-Two things the family's cases establish are the two most worth having. The
-accommodation completes for a person the roster has never entered, and it
-hands back nothing about them: no status, no verdict, no reusable
-classification, no adverse entry. And a barrier kind the vocabulary does not
-carry completes nothing, so an accommodation cannot be narrowed by inventing a
-category the design did not name. Accessibility and accommodation are
-continuing duties. They are not positive measures, and they do not end when a
-programme does.
+Three distinct attesters, a challenge reader and an independent alternate,
+separate from the actor and the person, complete the record. It produces a duty
+to provide the adjustment or secure the alternative, permission for the person
+to use the right with it, and the alternate's continuity duty. These conclusions
+derive without a personhood entry for the requester and without a void or
+prisoner conclusion.
+
+The available barrier kinds also cover sensory, cognitive, linguistic, digital,
+geographic, financial and procedural obstacles. An unrecognised kind cannot
+complete the record. A missing accommodation record is not itself proof of
+withholding, and the equality remedy must itself be accessible. Equal standing
+can require unequal resources; the model identifies duties but does not supply
+those resources or establish that an adjustment arrived.
 
 ## Patterns without verdicts
 
-Equality diagnostics are purpose-limited, privacy-preserving, independently
-governed, and kept apart from the consequential person record. The barriers
-against reusing a diagnostic record, against turning an aggregate into an
-individual verdict, and against penalising non-participation hold for every
-person, and the counting chapter renders the machinery that keeps a pattern a
-pattern. What a pattern can do is open a remedial proceeding: an aggregate
-disparity creates a rebuttable presumption and an audit. What it cannot do is
-convict, confine, void, or dock anybody, and the proceeding's own record says
-so in its fields — a presumption and an audit, no criminal burden, no guilt,
-individual relief kept separate from the re-audit of related cases.
+Equality diagnostics must be purpose-limited, privacy-preserving and
+independently governed, kept apart from consequential records about individuals.
+An aggregate disparity can support a rebuttable presumption and an audit. It
+cannot become an individual verdict, and non-participation cannot be penalised.
+
+The remedial proceeding keeps individual relief separate from re-audit of
+related cases. A pattern therefore opens inquiry and correction without
+convicting, confining, voiding or docking anyone. The chapter on public counting
+explains how the statistical record is kept within that purpose.
 
 ## A measure with an end
 
 A positive measure is permitted, and required where reliable evidence shows
-that ordinary equal treatment, accessibility, and accommodation are not enough
-to dismantle a continuing structural disadvantage. Its purpose is substantive
-equality — not reward, not collective guilt, not a permanent preference, not a
-new rank — and its shape is what keeps it that. The barriers against an
-unnecessary measure, an unbounded one, a political measure that evades the
-equal ballot, a reusable eligibility identity, and a measure continued after
-it expired hold for every person.
+ordinary equal treatment, accessibility and accommodation insufficient to
+remove continuing structural disadvantage. Its purpose is substantive equality,
+not reward, collective guilt or permanent preference. Accessibility and
+accommodation continue independently when a positive measure ends.
 
-The ordinary case is a reviewed measure: its kind from a closed list —
-barrier removal, targeted outreach, investment, support, restitution,
-training, a placement target, a bounded quota — the evidenced disadvantage,
-why ordinary rules are insufficient, the eligible class with minimally
-necessary contestable evidence kept outside the person record, the expected
-effect on equality and on other rights, the political limits preserved, and an
-end that is the objective's sustainable achievement and never a calendar. It
-gives the actor authority for that kind of measure, permits the actor to apply
-it, and obliges the reader to review it and end it when the objective is met.
+A reviewed measure can provide barrier removal, outreach, investment, support,
+restitution, training, a placement target or a bounded quota. It must identify
+the disadvantage, explain why ordinary rules are insufficient, and assess its
+effect on equality and other rights. Minimally necessary, contestable evidence
+of eligibility stays outside the person record. Political equality remains
+protected. The end is sustainable achievement of the objective, not simply a
+calendar date.
 
-A measure continues only through a separate finding, and that finding rejoins
-the exact reviewed measure — by decision, domain, actor, version, period,
-jurisdiction, scope, and end — with current, independently reviewable evidence
-that the objective remains unmet, the measure still necessary and
-proportionate, and no new preference or enlarged scope. The cases run the
-shape from both sides. A measure reviewed for one domain continues nothing in
-another. A measure whose reviewed record has been superseded continues
-nothing, because a calendar neither ends nor renews it and a finding on a stale
-record is not a finding on the measure. Review silence certifies nothing. And
-when the measure record is found defective, the measure and its continuation
-stop together, while the people the measure was for keep every right the
-record cannot take.
+Continuation needs a separate finding joined to the exact measure: the same
+decision, domain, actor, version, period, jurisdiction, scope and end. Current,
+independently reviewable evidence must show the objective unmet and the measure
+still necessary and proportionate, without enlarged scope or a new preference.
+A finding in one domain cannot continue a measure in another. A superseded
+record cannot renew it. Review silence certifies nothing.
+
+The defect sequence tests the other direction. A finding that the measure's
+record is defective stops both the measure and its continuation, while the
+people concerned retain their rights. Ending an authority does not turn its
+intended recipients into people entitled to less.
 
 ## Repair, and who may ask
 
-Public institutions must repair continuing historical barriers, and the
-barriers against leaving one unrepaired and against erasing official
-provenance or historical public answerability hold for every person. Affected
-people, chosen supporters, qualified associations, and the independent rights
-advocate may all initiate review, and none of them may be blocked; the barrier
-against blocking initiation holds. Advocacy, audit, adjudication, execution,
-and final review stay separated, and the barriers against fusing them and
-against a court taking over an institution's administration hold. Ordinary
-courts give case-specific relief and the Constitutional Court alone gives
-final general invalidation; the barriers against denying an individual remedy
-and a systemic one hold for every person, as do the ones against a region
-discontinuing equality and against evading it across a boundary.
+Public institutions must repair continuing historical barriers while preserving
+official provenance and public answerability. Affected people, chosen
+supporters, qualified associations and the independent rights advocate may
+initiate review. A request creates the reader's duty without the acting body's
+permission; it does not decide the claim.
 
-Asking for review is its own small rule: a request creates the reader's duty to
-review it, without the acting body's permission and without deciding the
-request. When a deadline is positively found to have passed with nothing done,
-the duty moves to a predeclared alternate and escalates to the court. Silence
-approves nothing and suspends no accommodation.
+A positive finding that the deadline passed without action transfers the duty
+to a declared alternate and escalates it to the court. Silence neither approves
+the challenged conduct nor suspends accommodation.
 
-## The old distinctions under the new test
+Advocacy, audit, adjudication, execution and final review remain separate.
+Ordinary courts give case-specific relief; the Constitutional Court alone gives
+final general invalidation. Neither remedy authorises courts to take over an
+institution's administration. Regions and cross-boundary arrangements cannot
+interrupt equality duties or defeat the remedy.
 
-The design's own older lines are not exempt from this chapter. A family status,
-a home status, a maturity score, a conviction, custody, an official status, a
-placement baseline, a voiding on status alone, an operation on recognition, a
-qualification — each of them is a distinction the equality rules test, and a
-barrier holds for every person against substituting any of them for the
-finding it would stand in for. The chapters on the breaks show where those
-distinctions survive: custody takes movement and nothing else, a voiding needs
-two examiners, a placement follows recorded facts. This chapter is the reason
-they have to earn it.
+## The design must meet its own test
+
+The design's distinctions are subject to the same limits. Family or home status,
+a maturity score, conviction, custody, official status, placement, a void or a
+qualification cannot substitute for the finding needed to justify a particular
+consequence. Recognition cannot become a general allocation rule.
+
+These prohibitions do not certify the adequacy of every other rule. The later
+chapters must show what each distinction does: which facts support placement,
+which authority permits confinement, and which findings support a void. Equal
+protection remains a standard those mechanisms must satisfy.
 
 ## The child with nobody
 
-For the child with nobody, this chapter holds every barrier and reaches no
-verdict, which is the whole of what it can do for anyone. Nell is owed equal
-and effective protection on the strength of personhood, and no distinction —
-not the absence of a family, a home, or an adult — may be read against Nell as
-a status; the pins hold the substitution barriers and the open-grounds barrier
-for the one-entry record by name. No proceeding is opened for Nell, no
-accommodation is written, and no measure names Nell's class, because nobody has
-written any of them. Equality here is not something the child was given. It is
-the absence of any route the child could have been sent down instead.
+Nell is owed equal protection without evidence of family, home or an adult's
+support. The pins establish the relevant prohibitions on substituting those
+statuses for a finding, and the State still owes Nell learning. No accommodation
+or measure is recorded for Nell. That absence establishes neither equal access
+nor its denial; it leaves the duties intact and their delivery unproved.
 
 ## What this does not show
 
-This chapter establishes no barrier, disadvantage, need, pattern, adjustment,
-measure, hearing, or remedy in the world. A completed accommodation record
-does not establish that an adjustment was provided; a completed measure does
-not establish that an objective was achieved; a proceeding opened on a pattern
-establishes that the pattern was attested, not that it was true. The record is not a population-statistics system, an
-identity-authentication system, or a proof that any institution is alive.
-Collection and statistical methods, accommodation operations, monitoring,
-enforcement workflows, and empirical evaluation belong to the second book.
+A completed accommodation record is not a delivered adjustment. A completed
+measure is not an achieved objective. A proceeding opened on a pattern does not
+prove the attested pattern true. Collection methods, implementation and empirical
+evaluation require work beyond these formal conclusions.
+
+Equality changes the route to a right when identical treatment leaves a barrier
+in place. The next chapter asks about the conditions of life that no individual
+route can secure alone: land, water, living systems and the commons.

@@ -70,8 +70,7 @@
 ? dwell(Hano).
 # => TRUE
 
-# "the difference between Hano and Jala, who did the same thing to the same
-#  person and was never convicted"
+# Hano and Jala share an injury entry, not a complete record of culpability.
 ? injure(Jala, Ivo).
 # => TRUE
 
@@ -95,8 +94,8 @@
 # "Somebody records that it is over — that is one of the things the world may say"
 free(Hano).
 
-# "the machinery that was holding a person stops holding them. Movement returns.
-#  The placement stops. The marker that was watching for isolation goes quiet."
+# Release changes the custody, movement and marker conclusions; it does not
+# establish physical release.
 ? prisoner(Hano).
 # => FALSE
 
@@ -223,8 +222,7 @@ year(Term_Ruk, Two).
 ? prisoner(Nell).
 # => FALSE
 
-# "Every other thing a punishment might reach ... is either absent already or
-# held by a rule that does not read whether anybody was punished."
+# The child fixture derives neither void nor loss; the food debt remains.
 ? false(Nell).
 # => FALSE
 

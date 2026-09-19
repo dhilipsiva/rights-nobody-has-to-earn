@@ -1,14 +1,14 @@
 # What Nobody Has to Ask Permission For
 
-Learning and finding things out, saying and publishing, believing or not
-believing, gathering, reporting, teaching, researching, making art, speaking
-your own language, reading what a public body holds, playing a sport, keeping
-a friendship, running a club, helping a neighbour — none of these needs
-anybody's approval. The design does not grant them. It puts the burden on
-whoever wants to narrow one.
+People may learn, publish, believe or refuse belief, gather, research, make
+art, speak their language, play sport, keep friendships, form associations
+and help neighbours without first obtaining official permission for ordinary
+private or civic life. Public power bears the burden of justifying a restriction.
+These freedoms do not give one person authority to compel another's association
+or cooperation.
 
-Narrowing one is possible, and the conditions are the whole of it. There has
-to be an evidenced harm, either to somebody's rights or to the commons. Offence
+For a restriction to stand, there has to be evidenced harm to somebody's rights
+or to the commons. Offence
 is not that harm, disagreement is not that harm, and an official view of what
 is true is not that harm — the record says so in the same entry that claims the
 evidence. The narrowing must be the least restrictive effective way to answer
@@ -27,17 +27,16 @@ gallery. Acting on it also requires notice, reasons and a usable challenge
 before it bites, and it reaches nothing else: not the floor, not standing, not
 the ballot, not recognition.
 
-Where nothing has been reviewed, the duty runs the other way. A record that no
+The ordinary case runs in the other direction. A record establishing that no
 restriction applies here does not permit anybody to act; it obliges the public
 body not to demand permission, and not to keep a register of what people
-believe, what opinions they hold, or what they have joined. An entry that
-merely notes somebody's belief or their club concludes nothing about them at
-all — they remain a person, still owed the floor, still holding the vote, and
-the protections against compelled conscience and coerced association are
-exactly where they were.
+believe, what opinions they hold, or what they have joined. In the test, a note
+of belief or association supplies no new authority over its subject and no
+adverse finding. The person's standing, floor and existing ballot entitlement
+remain, as do the protections against compelled conscience and association.
 
-Access, accessibility and autonomy sit beside that. What a public body holds, people may see and
-correct, and receive in a form they can use; a refusal needs a reviewed ground,
+Access, accessibility and autonomy have their own requirements. Public
+information and the routes of access and correction must be usable; a refusal needs a reviewed ground,
 reasons, and release of the part that can be released, and it may not ask why
 you want it or price you out. Anything a public body communicates comes in
 accessible formats and plain language, adjusted on request without a fee, with
@@ -46,33 +45,24 @@ are not directed: a researcher or an artist publishes or performs without prior
 approval, nobody may dictate the question, the method, the result or the
 content, and funding may not buy a finding.
 
-Concentration gets a finding of its own, and it is deliberately the wrong shape
-for censorship. What it can establish is structural — who owns the reach, who
+Concentration has a different review. Its grounds concern who owns the reach, who
 controls distribution, who decides ranking and attention. What it cannot
 establish is whether anything published was true or well chosen. It opens a
 duty to disclose reach and the basis of ranking, and a route to an independent
-review. It classifies no audience and nobody's beliefs.
-
-The honest ending is the same one this chapter keeps giving. None of this
-certifies that anything said was true, that anything made was good, that a
-belief is sincere, that a friendship is real, or that anyone is fulfilled — and
-it is built so that no official could certify those things through it. Nor does
-any of it prove that a book reached a reader, that a translation was made, that
-a question was answered, or that a restriction actually stopped. It says what
-must be established first, and what is owed while it has not been.
+review. It classifies no audience and nobody's beliefs. A structural remedy
+does not authorise an official verdict on the content being published.
 
 ## The things power may not prescribe
 
-Underneath the free field there is a shorter list, and it is a list of walls
-on public power rather than a list of freedoms handed out. Nobody's privacy
+The rules also state limits applying to every person. Nobody's privacy
 may be arbitrarily interfered with. Nobody's bodily choice may be coerced.
 Nobody's movement may be restricted without a supported ground. No decision
 with consequences for a person may be made without review. Nobody may be
 forced into an association, told what to express, compelled in conscience, or
 prescribed a form of family. Nobody holds an unequal civic status, and
-nobody's private or civic life may be prescribed. Each of those is a barrier
-whose whole condition is that the person is a person; the pins hold every one
-of them for a cast member and for the child with nobody by name.
+nobody's private or civic life may be prescribed. Each barrier follows from
+personhood; the checks establish them for a cast member and for the child
+with nobody.
 
 Two things about the list are easy to get wrong. It binds public power
 directly, and it makes public institutions responsible for preventing,
@@ -87,26 +77,21 @@ the field.
 
 ## The child with nobody
 
-For the child with nobody, this chapter asks for nothing and forbids a great
-deal. Nell needs nobody's permission to learn, to believe or not, to be spoken
-to in a language Nell can use, or to be kept company; the residual freedom
-duties run the other way, on whoever would require a permission or register a
-belief. Every wall in the list above holds for Nell on the strength of the one
-entry, and the floor's entitlements to learning, expression, and belief hold
-beside them. What the chapter does not do is any of it: no teacher is on the
-record, no information reached Nell, no accessible form was provided. The
-pins say which entries would have to exist for those conclusions to follow,
-and none of them is written.
+Nell's personhood establishes the limits on coercion and prescription without
+an application or a family entry. The floor's entitlements to learning,
+expression, belief and company remain beside them. These are limits and
+obligations, not findings about what Nell has done or received.
+
+The record supplies no teacher heard, receipt or recorded voice for Nell.
+No learning, belief or company conclusion follows. That absence is not a
+finding that Nell has no beliefs or associations in the world.
 
 ## What none of this certifies
 
-This chapter establishes no learning, no publication, no belief, no
-association, no accessible communication, and no restriction that actually
-stopped. It certifies neither the truth of anything said nor the sincerity of
-anything believed, and it is built so that no official could certify those
-through it. A reviewed restriction that completes here proves that its record
-was complete, not that a harm existed; a residual-freedom duty that derives
-proves that a permission may not be required, not that none was. Schools,
-libraries, archives, broadcasters, platforms, translation, format production,
-publication workflow, funding administration, and media-market measurement
-belong to the second book.
+These rules establish freedoms and bound restrictions. They certify neither
+the truth of a statement nor the sincerity of a belief. A completed restriction
+record does not establish that its alleged harm existed; a duty to protect
+expression does not establish that anyone could speak or publish.
+
+The next chapter turns to employment and what a person may earn without having
+to earn this protected starting point.

@@ -24,8 +24,7 @@
 #
 # KIND: CONTENT pin. Run:
 #   ./verify.sh --only book-1/30-when-the-system-notices-it-broke.pins.nibli
-#   ./verify.sh          # the real check — the line above cannot see
-#                        # the cross-file reconciliation or the prose guards
+#   ./verify.sh          # all substantive cases and contradiction checks
 #
 # The old unread-duty endpoint is retired. Existing two-place Review and Appeals
 # duties must feed the exact typed three-place consumer, and `obliged` remains a
@@ -216,8 +215,7 @@ all $x: obliged(Review, $x) & ~capture(Review, $x) -> err($x, Duty).
 ? err(Nell, Placement).
 # => FALSE
 
-# "the machinery that notices failure is pointed exclusively at the half of the
-# problem that involves an act"
+# These particular markers do not reach the birth-only fixture.
 ? prisoner(Nell).
 # => FALSE
 
@@ -227,7 +225,7 @@ all $x: obliged(Review, $x) & ~capture(Review, $x) -> err($x, Duty).
 # "Run it against this child in a counterfactual and it does fire" — that run is
 # tests/pins/records/child_with_nobody/undelivered.pins.nibli, against the base
 # counterfactual/undelivered-marker. Here, on the shipped source, the marker
-# does not exist and the debt stands unwatched.
+# does not exist; the ordinary floor and assistance duties remain separate.
 ? owe(State, Eats, Nell).
 # => TRUE
 

@@ -1,20 +1,13 @@
 # A Way to Be Heard
 
-A right that nobody will hear is a sentence in a book. This chapter is about
-the part of the design that has to exist before any other chapter means
-anything to the person it is about: the way in when somebody denies what they
-are owed, and the limits on what the design may do to them once they are
-inside it.
+Nia has relief on appeal; Ruk does not. A duty to hear Ruk's case would not by
+itself produce Nia's result. That distinction runs through the chapter: access,
+a request, review and relief each do different work.
 
-The interface here is deliberately non-carceral. It opens a hearing, it can
-order relief, and it can enforce that relief — and it creates no arrest
-warrant, no search power, no seizure power and no authority to imprison
-anybody. Those instruments exist elsewhere in the design and they are not
-available to this route.
-
-Everything here is a legal effect over supplied records. Nothing in this
-chapter establishes that a hearing occurred, that assistance was available,
-that compensation arrived, or that any institution acted.
+The justice route can authorise a hearing, case-specific relief and enforcement
+within that remedy. It creates no arrest warrant, search, seizure or detention
+power. Those instruments require their own authority. The person seeking an
+answer must not acquire a new vulnerability merely by asking.
 
 ## The way in
 
@@ -61,93 +54,65 @@ calling a document a judgment supplies none.
 Enforcement must stay within the exact remedy, affected case, lawful actor,
 scope and end. It requires notice, an opportunity to comply and contest,
 independent review and proportionate means that preserve essentials and
-third parties' rights. This non-coercive route creates no arrest warrant,
-search power, seizure power or authority to imprison. None of these findings
-proves that a hearing occurred, compensation arrived or an institution acted.
+third parties' rights. It supplies no authority for arrest, search, seizure or imprisonment.
+Completing an enforcement record does not establish compliance with the remedy.
 
 ## Asking again
 
-A decision nobody can question is not a decision, it is an announcement. The
-way back from one runs through things ordinary speech runs together, and
-keeping them apart is most of what this part of the design is.
+Access is owed before the merits are decided. A person need not arrive with
+money, documents, immigration status or representation; independent assistance
+is part of what is owed. The hearing case completes a record and assigns the
+operator a fair, reasoned and contestable hearing duty without deriving
+personhood, a void, confinement or recognition loss for its subject.
 
-Access is the entitlement to be heard at all. It is owed before anybody has
-decided anything, and it survives having nothing: money, documents and
-immigration status cannot be the price of it, and neither can representation,
-because independent assistance is part of what is owed rather than something
-a person must arrive already holding.
+A request begins a particular review. It needs neither the decision-maker's
+permission nor a previous reviewer's approval nor a prior finding of merit.
+The bare-request case assigns review to IndependentJusticeReader. The request
+does not decide itself.
 
-The request is the asking. It needs nobody's permission — not the permission
-of whoever made the decision, not a previous reviewer's, and not a prior
-finding that the request has merit — and a bare request from anyone at all
-lands a review duty on an independent reader.
+The review duty covers error, evidence, rights and effective interim protection.
+An independently established failure to answer assigns action to a separate
+alternate. Silence therefore cannot supply legal approval or erase the request.
+It also does not establish that the alternate acted or interim protection
+arrived.
 
-The duty to hear it belongs to that reader, and it names what it covers: the
-errors, the evidence, the rights at stake, and effective interim protection
-while the review runs. Interim protection is written inside that duty rather
-than standing outside it as something a body may separately perform. When the
-reader does not answer, an established failure to answer moves the duty to a
-separated alternate instead of leaving the request with whoever declined it, so
-a reader who declines holds no veto and a request cannot be buried by being
-ignored. What no rule here supplies is the answering: a duty to review is not a
-review, and none of this establishes that anybody read the request, that
-interim protection reached the person, or that a review took place. The person
-waiting carries that difference, and what would close it is evidence that an
-institution acted — a thing to observe in the world rather than conclude from
-a record.
+Relief is a separate conclusion. Nia's clearing entry and Appeals judgment
+produce relief and prevent the prisoner conclusion. Ruk has no such clearing
+entry, and the prisoner conclusion remains. Adding a rule that obliges Appeals
+to hear every prisoner's case produces a duty for Ruk but neither relief nor
+release. The pins leave that rule in force while checking the difference:
+an unheard appeal does not empty a conviction.
 
-Relief is the last of them and it is a different kind of thing from the
-others. Relief is what a body concludes at the end, for one person in one case,
-and it is the only one with an effect on a conviction. The chapter on the pen
-follows what it does when it derives: the conviction stops holding.
+The contrasting test writes the right to appeal as though every prisoner had
+already received relief. The engine refuses that rule because the conviction
+rule depends on relief's absence, creating a negative cycle. The refusal does
+not make an appeal impossible; it shows why the duty to hear and the result of
+hearing need separate representations.
 
-Separating them is what lets this design say two things that sound
-contradictory and are not. Everyone may ask, and asking by itself changes
-nothing. The closing pins beside this chapter run the second half directly.
-With a rule in force obliging the appeal body to hear every confined person's
-case — a rule the record accepts without complaint — the confined person is
-still confined, relief has still not been granted, and nobody has become free.
-A filed appeal is a claim on somebody's attention, not a finding, and the
-design refuses to let it become one by default in either direction: an unheard
-appeal does not empty a conviction, and an unanswered one does not disappear.
+Access cannot depend on winning, and a duty cannot be counted as a completed
+review. Both boundaries matter to the person waiting for an answer.
 
 ## The child with nobody
 
-This is the chapter where the child with nobody is furthest from safe, and
-saying so is the point of putting the section here rather than leaving it to
-the closing gap.
+Nell retains personhood, the security debt and protection against making
+wealth, documentation or status a condition of access. No hearing is supplied
+for Nell. The routes triggered by a request therefore establish no hearing for
+this child.
 
-Every stage the section above separates is unconditional in exactly the ways
-that usually fail people, and for a child with no papers, no money, no status
-and nobody to speak for them, each of those refusals is doing work: the price
-of entry, the permission of whoever decided, the need to win first, the need
-to arrive holding representation.
-
-What none of them supplies is the asking. The route begins when somebody files,
-and this child files nothing. Two answers sit outside this chapter and both
-belong here. The way in already says that a child needs an independent voice
-and separate assistance where the adults' interests conflict, and that a
-representative does not create the child's standing — the right shape, because
-it means the voice is not the source of the right. And the chapter on who owes
-carries the duty this chapter cannot: the initiation of assistance and
-representation is owed to every person without a request, so the act that opens
-this route is somebody's duty rather than somebody's kindness.
-
-What is still true is narrower, and it is the honest residue. A duty is not a
-person arriving. Nothing here establishes that anybody came for this child, and
-the entry that escalates when nobody has must be written by somebody who saw.
-The design has moved the missing act off the person who cannot perform it. It
-has not made anybody perform it.
+The independent rights advocate's duty to initiate assistance and representation
+needs no request. It places responsibility for beginning outside the person
+who cannot begin alone. The appointment route must preserve Nell's voice and
+separate interests; it does not create standing. Neither duty proves that an
+advocate arrived, a request was filed or the child was heard.
 
 ## What none of this hears
 
-Legal aid, court administration, case management, scheduling, interpretation
-and translation services, survivor support operation, enforcement practice and
-every question of capacity belong to the second book.
+Court administration, legal aid, scheduling, interpretation, survivor support
+and enforcement require capacity and action beyond these records. A complete
+hearing record does not establish that a hearing occurred; a relief conclusion
+does not establish that compensation arrived.
 
-And the coercive instruments stay where they are. This interface's remedies are
-relief, cessation, restitution, reparation, compensation, specified performance
-and protective arrangements, with enforcement confined to the exact remedy, the
-affected case, a lawful actor, a defined scope and an end. Arrest, detention,
-search and seizure are separately named powers under separate conditions, and
-nothing in this chapter reaches them.
+The constitutional route must still specify an effective remedy, the authority
+to provide it and a response when the responsible institution fails. The next
+chapter asks how the republic may change those rules without treating the act
+of amendment as permission to discard their limits.

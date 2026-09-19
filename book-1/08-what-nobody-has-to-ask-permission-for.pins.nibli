@@ -94,8 +94,10 @@
 # => TRUE
 
 # "a barrier against prescribing expression is not a recorded voice" — the
-# walls derive no actuality for the person they protect. Each would flip on a
-# teacher heard, a holding, or a receipt with an independent witness.
+# barriers derive no actuality for the person they protect. Learning needs a
+# teacher heard; recorded voice needs its holding route; company needs a matching
+# receipt and independent witness. Belief has no approved delivery head: FALSE
+# here reports no derived belief, not a conclusion of disbelief.
 ? learn(Nell).
 # => FALSE
 

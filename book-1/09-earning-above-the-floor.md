@@ -1,242 +1,163 @@
 # Earning Above the Floor
 
-The floor is not earned. That is the whole of the title of this book, and the
-chapter on what you are owed has already shown it: every debt the public duty
-carries reads personhood and nothing else. What this chapter is about is the
-other side of that line — everything a person may earn *above* the floor, and
-the rules that keep the two sides from touching.
+A person may choose work, refuse it, leave it or change it without losing the
+floor. A wage, profit or contribution-based supplement belongs above that
+floor. It cannot become the price of standing, political membership or a
+remedy. The same boundary protects a person who has never worked and a worker
+whose employer or insurer fails.
 
-The design says a great deal here, and almost all of it is a refusal of a
-particular shape. A person may choose work, refuse it, leave it, and change it,
-and none of those choices moves anything the floor owes them. Work, a
-contribution record, compliance, obedience, or joining a programme cannot gate
-standing, the floor, political membership, or a remedy; a rule that tried to
-condition any of those on work would be refused, and the pins for this chapter
-show the barrier in place for a person who has never worked at all and for the
-child with nobody, who cannot. Every ownership form is lawful, and no form is
-promised a share, a profit, a rescue, an immunity, or a monopoly. What a person
-earns is theirs to earn; what a person is owed was never for sale.
-
-Everything below is a record and a rule. None of it establishes that anyone was
-hired, paid, insured, certified, or rescued from a failed employer. The record
-can hold a promise of pay and a certificate; it can conclude that a supplement
-is due; and it cannot say that a single coin arrived. That limit is stated
-again at the end, where it belongs, but it governs every section on the way
-there.
+The chapter's cases follow three separate claims: permission to work, a record
+of compensation, and a supplement after illness. None measures a person's
+worth, and none establishes that money arrived.
 
 ## Whose work it is
 
-Worker status follows the facts of control and dependency, not the label on a
-contract. Call someone a contractor, a franchisee, a partner, a volunteer, or a
-member of the family, and the label proves nothing: a barrier holds, for every
-person, against reading the label as the status, and another holds against
-reading a labour label as proof of anything else. The reverse holds too.
-Voluntary household care is not employment because it has value, and controlled
-commercial labour cannot be dressed as affection or mutual aid.
+Worker status is to follow control and dependency, not a contract's label.
+Calling someone a contractor, franchisee, partner, volunteer or family member
+cannot settle which protections they receive. Voluntary household care does
+not become employment merely because it has value; controlled commercial
+labour cannot escape protection by being called affection or mutual aid.
 
-The protections that follow from being a worker run across every ownership
-form — a cooperative or a public enterprise that violates them is in exactly
-the position of a private one, and the pins hold the barrier against an
-ownership-based denial of the labour minimum in place by name. Work in custody
-is voluntary and carries ordinary labour protection: a confined person who
-refuses to work loses nothing on the floor, and the barrier against forced
-custody work and the barrier against denying a confined worker the ordinary
-protections both hold for every person. The design's older refusal that
-earning may never shorten a sentence is the same wall seen from the other
-side.
+Labour protections apply across ownership forms. A cooperative or public
+enterprise has no exemption unavailable to a private employer. No ownership
+form is promised a profit, rescue, immunity or monopoly.
 
-Nothing in this section is a finding that anyone is a worker. The status
-follows control and dependency in the world, and the record holds only what
-someone wrote about it.
+Work in custody must be voluntary and carry ordinary labour protection.
+Refusing it cannot remove the floor, and earning cannot shorten a sentence.
+The pins establish the corresponding prohibitions for Adam. They do not
+establish that Adam is employed or that any workplace observes them.
 
 ## Acting together
 
-People may associate, organise, bargain collectively, and act collectively,
-and the barrier against suppressing collective action holds for every person.
-A strike may be limited by a minimum-service requirement only where the actual
-interruption threatens life, safety, health, or the floor, and the shape of
-that limit is what matters. It binds the responsible provider or the bargaining
-parties to arrange continuity. It may not conscript a named worker, it may not
-criminalise an individual's refusal to work, and it may not remove that
-person's floor. A blanket sectoral ban is refused outright.
+People may organise, bargain and act collectively. A minimum-service
+requirement may limit a strike only where the interruption threatens life,
+safety, health or the floor. It binds the responsible provider or bargaining
+parties to arrange continuity; it cannot conscript a named worker, criminalise
+an individual's refusal to work or remove that person's floor. A blanket
+sectoral ban is prohibited.
 
-That shape is executable. The narrow compulsory-continuity power has its own
-source-bound temporal contract, and its pins show the duty it creates landing
-on the provider or the parties — a duty to arrange continuity under a standard
-that names no worker and requires a bargaining substitute — and landing on
-nobody when the power has no current authority, when its selection conflicts,
-or when the duty named is not the one the power carries. A minimum-service
-order is a power over a provider. It is never a power over a person.
+The executable continuity power requires current authority and a standard
+that names no worker and requires a bargaining substitute. The duty lands on
+the provider or parties. Without current authority, with conflicting selection,
+or with the wrong duty named, it does not derive. Protecting a service therefore
+does not supply authority to compel whichever worker happens to be available.
 
 ## A licence needs a reason, and a certificate opens no door
 
-Two different things are easy to confuse here, and the design keeps them apart
-by giving them different records.
+A mandatory occupational licence restricts work. It needs an evidenced serious
+risk to safety, a fiduciary duty or a core public function; otherwise the design
+prefers voluntary certification. The licence power requires a current source,
+an end tied to that source, independent review, an alternate reviewer and a
+reconciliation record. Withdrawal and temporary control have separate powers.
+An expired term ends the restrictive authority without erasing ordinary rights
+or accrued claims.
 
-A mandatory occupational licence is a public power, and it needs a reason of a
-particular kind: an evidenced serious risk to safety, to a fiduciary duty, or to
-a core public function. Otherwise the law is to prefer certification, which
-compels nobody. Where a licence is mandatory, its power record carries the same
-apparatus as every public power in this design — a current source, a
-source-bound end, independent review, an alternate reviewer, a reconciliation
-record — and its pins show the power completing when every field is present and
-failing when the fused execution is attempted, when the reviewer collides, or
-when the selection is stale. Withdrawing a licence and controlling one
-temporarily are separate powers with their own contracts, and an expired
-licence term ends its restrictive effect without erasing ordinary rights or
-accrued claims. The barrier against a qualification becoming a personhood,
-floor, worth, or political status holds for every person.
+A certificate records a narrower claim. In the pins, Assayer is authorised to
+certify Ansel and attests welding in the certification scope. The certificate
+derives although Ansel has no personhood entry. Brix's attempt to certify Brix
+does not. Wrong scope or missing authority also prevents the conclusion.
 
-A certificate is the gentler record. A body authorised as a certifier attests
-that a person can do a named thing, in the certification scope, and the
-certificate is concluded. Then nothing reads it. It opens no door the floor
-keeps shut and shuts none the floor keeps open; it is not recognition; it is
-not a status. A person may not certify themself, an attestation outside the
-certification scope is not a certificate, and an unauthorised body's attestation
-concludes nothing. The certificate is also one of the family's routes that
-needs no roster entry: the pins conclude one for a person the record has never
-entered as a person, because help and function come first and the roster is
-reconciled afterwards.
+No rule reads the certificate into standing, the floor or recognition. Nor
+does its derivation establish that Ansel can weld: the model checks the supplied
+attestation, not the work. The certificate is available without making a
+qualification a condition of basic rights.
 
 ## Pay is a record with the kind named in it
 
-Compensation above the floor — a wage, a profit, a return, a grant, a prize, a
-subsidy, an incentive — is one kind of record with the kind named in it. A
-payer promises it, and it is concluded only when someone authorised for that
-person, who is not the payer, attests the same kind on a stated basis. The
-payer's own word concludes nothing: the counterfactual that strips the
-independence conjunct is the only way to watch a payer attesting its own
-promise start to count, and against the real rules it never does.
+Foundry promises Coll a wage. That alone concludes nothing. Steward, authorised
+as Coll's compensation attester and distinct from Foundry, attests the wage on
+the stated labour basis. The compensation conclusion then derives. A payer's
+self-attestation cannot complete the rule.
 
-The kinds are distinct constants, and the design leans on that. A wage attested
-is not a prize promised; an incentive promised is not concluded by a metric
-attested, because the words are different words and no rule anywhere reads a
-metric. That is the design's whole answer to gaming a target: the target is not
-in the record, and an attester who wrote "metric" where "incentive" was
-promised has written a mismatch that concludes nothing. Neither a certificate
-nor a wage passes to a child; the pins put two parents with both beside a
-child who has neither and the same floor as everyone.
+Compensation above the floor uses one relation with the kind named in it:
+wage, profit, return, grant, prize, subsidy or incentive. Matching matters. A
+wage attestation does not establish a prize. In another case Foundry promises
+Dunya an incentive while Steward attests a metric; no incentive derives. This
+tests a mismatch between records. It does not show that targets cannot be
+gamed or that an attester's matching statement is true.
 
-Compensation is walled off from the machinery of this design's breaks. Nothing
-reads a compensation conclusion into recognition, into standing, into the
-floor, into the vote, or into liberty, and nothing reads a voiding or a
-recorded loss into a wage. The barriers against each of those couplings hold
-for every person. Only a court's finding of fraud on the attested basis blocks
-the payment, and that finding concludes restitution by the person to the payer
-for that basis alone — a finding on another basis neither blocks this wage nor
-concludes anything against it. The floor is not in the sentence.
+Compensation is separate from recognition, standing, the floor, the vote and
+liberty. A certificate or wage does not pass to a child. A voiding or recorded
+loss does not by itself remove compensation.
+
+The fraud case is specific to the attested basis. A Court finding of Coll's
+compensation fraud on the labour basis stops the wage conclusion in this case
+and derives restitution from Coll to Foundry. A finding on another basis does
+not do so. These are conclusions about compensation and restitution, not a
+record of either payment; the floor remains outside the dispute.
 
 ## A supplement above the floor
 
-Above the floor, the record can hold a contribution history, and a supplement
-for illness, disability, unemployment, caregiving, injury at work, age, or the
-death of a provider can be concluded from it. The conclusion needs the
-contribution record and a separate finding that the event happened, made for
-that person under the same scheme by someone who is not the carrier that would
-owe the supplement. Either alone concludes nothing. Neither touches the floor
-in any direction: a person with no contribution history keeps everything the
-floor owes, and a person whose supplement is withheld loses nothing else. When
-the carrier fails, the same record and the same finding conclude the supplement
-against the public guarantee instead. What the supplement is worth, whether it
-is funded, and whether it is paid are not in this record at all.
+Marlo has a contribution record with Ledgerhouse under SchemeM. An illness
+supplement does not yet derive. Assay, authorised to adjudicate insurance for
+Marlo and distinct from the carrier, records illness under the same scheme.
+The supplement follows. Unemployment does not, and no personhood entry was
+needed to complete the illness claim.
 
-A contribution history is a different thing from recognition, and the design
-keeps it different. A record that someone paid into a scheme is written by the
-scheme, read for one purpose — the supplement — and read for nothing else. It
-cannot be read into recognition, and recognition cannot be read into it. It
-cannot be read into standing, the floor, the vote, or liberty, and a rule that
-tried would be refused before it could load. The finding that the event
-happened is made by someone who is not the carrier that would pay, and only a
-court's finding about that person's own record can block that person's
-supplement; an accusation blocks nothing, and the carrier's own accusation
-blocks nothing. There is still no number: the supplement is concluded here,
-never measured, and what it is worth is a question this record cannot hold.
+This is the route for contribution-based supplements for illness, disability,
+unemployment, caregiving, workplace injury, ageing or survivorship. The record
+and the independent event finding must match the person and scheme. Neither
+alone suffices. The carrier cannot supply the adjudication of its own liability.
+A Court finding of contribution fraud for that person and scheme blocks the
+supplement; the carrier's accusation or a finding about another scheme does not.
 
-Ask whether anyone in the record supplied with this book holds a supplement.
-Nobody does. The family ships dormant: no contribution record is written for
-any cast member, so no supplement derives for any of them. That is not a
-finding that anybody is uninsured. It is a statement about what the supplied
-record can establish, and the pins beside this chapter show the route is not
-blind — supply the record and an independent finding for a fresh person and the
-supplement derives, without that person ever appearing on the roster; strip
-any one condition and it stops. The rulebook knows how a supplement could
-count. The record reports none.
+A contribution history is a different thing from recognition. Its permitted
+purpose is the supplement. It cannot determine standing, the floor, the vote
+or liberty, and recognition cannot substitute for it. A person without a
+contribution history keeps the floor in full.
 
-One more thing the pins establish, because it is the thing an insurer would
-most like to be otherwise. A rule that confined a person for lacking a
-contribution record would load. The contribution record is a base entry, so
-the machinery that refuses a punishment for lacking a floor right cannot see
-it. What keeps that rule out is not the engine but a guard on the record
-itself: the contribution record may be read only by the supplement rules,
-never under negation, never concluded, and the copy of the constitution with
-the hostile rule added is kept as the guard's watched failing control. That is
-the honest shape of this protection — a check on the text, not a law of nature.
+This separation depends in part on a check of the constitution's text. The
+engine can load a hostile rule that confines someone for lacking a contribution
+record: the record is a base entry, so that rule creates no negative cycle for
+the engine to reject. The existing development check instead restricts reads
+of contribution records to the supplement rules, forbids negated reads and
+forbids rules from manufacturing the records. Its hostile control demonstrates
+why an engine acceptance alone cannot establish constitutional compliance.
 
-And the boundary of the whole route belongs in the same breath as the route.
-A concluded supplement establishes no payment. It does not prove that a scheme
-holds the money, that a carrier is solvent, that the public guarantee has
-anything behind it, or that anything reached the person the conclusion is
-about. Amounts, funding, actuarial assumptions and scheme administration are
-not in this record, and the second book owns every one of them.
+No supplement derives for the supplied cast, whose record contains no
+contribution history. That is not evidence that anyone is uninsured. Marlo's
+case establishes the route; it supplies neither an amount nor a payment.
 
 ## When the money runs out
 
-Personal insolvency is a fresh start, and the barriers say what a fresh start
-may not cost. A person in insolvency keeps the floor's essentials and ordinary
-tools; the barrier against depriving them of either holds for every person,
-and so does the wider one: collection cannot make a person floorless, and
-there is no debt imprisonment. Any fraud exception needs an individualised
-finding through due process — the same shape as the compensation-fraud finding
-above, and the same court.
+A Court finding that Ledgerhouse is insolvent under SchemeM makes Marlo's
+supplement derive against PublicGuarantee as well. It does not erase the
+carrier's conclusion. The same contribution record and independent illness
+finding remain necessary; insolvency at another scheme changes nothing here.
+The guarantee conclusion establishes no funded reserve or actual transfer.
 
-Unpaid wages and earned pensions require an effective protection route — a
-priority, a public guarantee, or another route that works even where the
-failed estate is empty. The supplement's guarantee route is that principle made
-executable: a court's finding of the carrier's insolvency at the scheme, beside
-the same record and the same event finding, concludes the supplement against
-the public guarantee instead of the carrier, and an insolvency found at another
-scheme moves nothing. Shareholders bear the residual risk and have no rescue.
-A debt cannot reach beyond what was inherited; the barrier against an estate
-debt exceeding the inherited value holds for every person, and so does the
-barrier against stripping assets or evading the estate.
+The wider requirement is effective protection of unpaid wages and earned
+pensions, including where an estate is empty. Shareholders bear residual risk
+without a guaranteed rescue. A person's fresh start must preserve floor
+essentials and ordinary tools; collection cannot impose debt imprisonment or
+make someone floorless. An estate debt cannot exceed inherited value, while
+asset stripping and evasion remain prohibited. A fraud exception requires an
+individualised finding through due process.
 
-Restructuring and receivership are temporary public powers, each with its own
-source-bound temporal contract. Their pins show the power completing only with
-every field present, failing when the estate field is missing, when the end is
-mismatched, or when the selection has expired, and — the honest half — the
-review duty landing on the predeclared alternate reviewer when the ordinary one
-is certified unavailable, under a standard that forbids silence, extension, and
-an open end. Missing review cannot prolong a manager. Nor can it end a
-service: enterprise failure cannot interrupt an essential service without
-public continuity, and cannot extinguish a constitutional remedy.
+Restructuring and receivership are temporary public powers. Their records
+must identify the estate and a valid end. The pins withhold completion for a
+missing estate, mismatched end or expired selection, and assign review to the
+declared alternate when the ordinary reviewer is certified unavailable. Missing
+review cannot prolong a manager's authority. Enterprise failure must also
+preserve public continuity of essential services and constitutional remedies.
+Those duties remain demands on institutions; deriving them does not keep a
+service running.
 
 ## The child with nobody
 
-For the child with nobody, this chapter reaches nothing, and that is the
-point of it. Nell has no contribution record, so no supplement derives; no
-promise of pay, so no compensation; no certifier's attestation, so no
-certificate. The pins say so, and they say the other half in the same breath:
-every debt on the floor holds for Nell exactly as before, and the barrier
-against conditioning the floor on a contribution holds for Nell by name. Nothing
-above the floor was ever a condition of the floor. The entries that would have
-to exist to change any of this — a scheme's record, a payer's promise, a
-certifier's attestation — are entries about a person who has done something,
-and the child has done nothing, which is the case the floor was written for.
+Nell has no recorded contribution, promise of pay or certifier's attestation.
+No supplement, compensation or certificate derives. The State still owes Nell
+food, and the prohibition on conditioning the floor on contributions holds.
+The absence of an earnings record changes none of that. It tells us nothing
+about what Nell has done or received outside the supplied record.
 
 ## What none of this counts
 
-This chapter establishes no employment, no wage, no payment, no competence, no
-solvency, and no rescue. A certificate concluded here establishes that a record
-was made, not that anybody can do the thing it names. A compensation conclusion
-does not establish that anybody was paid; a supplement conclusion does not
-establish that money moved; the guarantee route does not establish that a fund
-exists. Each says what follows from a record, and none of them says the world
-did anything — which is a different statement from saying the world did
-nothing, and the difference is the one this book is most careful about. Rates, budgets, actuarial assumptions, wage levels, scheme
-administration, certification bodies, examination standards, insolvency
-administration, and every question of adequacy, funding, payment, or arrival
-are outside this record. They belong to the second book. The engine derives
-bounded conclusions from supplied records; it authenticates nothing, computes
-no amount, advances no clock, and performs no institutional act — and no
-sentence in this book may say that a supplement, a wage, or a certificate
-arrived.
+These rules distinguish what a person may claim without calculating a wage,
+testing competence or moving money. Rates, budgets, examination standards,
+scheme funding and administration require institutions and operational design.
+Their adequacy cannot be inferred from a matching pair of records.
+
+The constitutional boundary remains exact: work and its rewards may change
+what someone receives above the floor, but cannot become a price for the floor.
+Recognition makes a different claim again. That is the next chapter's subject.

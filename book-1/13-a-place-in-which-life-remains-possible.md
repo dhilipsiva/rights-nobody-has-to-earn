@@ -1,21 +1,15 @@
 # A Place in Which Life Remains Possible
 
-Everything owed in this book is owed to a person, and a person lives
-somewhere. This chapter is about the conditions of that somewhere — the air,
-the water, the soil, the climate, the living systems and the inheritance of
-land — and about the rules that keep them from being spent away, whether by a
-public body, a private actor, or a present generation acting for one that does
-not yet exist. It also carries the design's one class of protected subjects
-who are not people: the animals, whose interests are direct and whose
-protection no owner may waive.
+A person lives somewhere. Rights to food, health and shelter depend on air,
+water, soil and living systems that cannot be secured one person at a time.
+This chapter protects both the person's environmental conditions and the
+commons inherited by whoever lives later. It also gives animals direct
+protection without treating them as human persons.
 
-Almost everything here is a limit on power or a route to review, and none of
-it measures anything. The constitution supplies no ceiling number, no
-inventory, and no finding about the state of any river. What it supplies is
-the shape a lawful decision has to have, the evidence it has to rest on, the
-review it has to survive, and the order in which repair is owed — and the
-statement, on every axis, that one condition failing cannot be hidden by
-another succeeding.
+The questions are connected but distinct: whose claim can be heard, which harm
+cannot be exchanged for a gain elsewhere, and what authority may prevent or
+remedy it. The constitution sets conditions for those decisions. It supplies
+no measurement of a river and no numerical ceiling.
 
 ## A place in which life remains possible
 
@@ -33,30 +27,6 @@ must follow cumulative effects, exposed populations, supply chains, borders
 and harms that arrive much later. Unequal exposure requires equality
 protection, not a score assigning some people greater environmental worth.
 
-The common world has a separate protection. Climate, water, air, soil,
-biodiversity, habitat, extraction and waste have distinct limits. Each limit
-must identify the protected condition, place, population, jurisdiction,
-period, and the scientific and legal versions on which it depends. Science
-supplies independently reviewed evidence; democratic law enacts the ceiling,
-minimum condition or resource budget and may choose stronger protection.
-A scientist does not enact a law by publishing a finding.
-
-A gain elsewhere cannot buy permission to cross a ceiling here. Nor can a
-payment replace a unique, sacred or functionally irreplaceable system.
-Avoid the harm first, minimise it at source, and restore in place. Only a
-positively replaceable residual may receive bounded compensation, with
-additionality, durability, relevant function and place, no double counting,
-monitoring and repair if the measure fails. Reparation owed to harmed people
-or a collective remains a separate debt.
-
-Credible serious or irreversible danger requires proportionate precaution;
-uncertainty is not a finding of safety. Replacing a standard requires
-independently established equal or stronger protected outcomes. Corrected
-science can justify recalibration, but cost or convenience cannot excuse
-regression. Changing a contractor, corporate form, supply chain or border
-cannot export a harm forbidden at home, and conservation cannot become a
-pretext for dispossession.
-
 Immediate prevention, containment, care and necessary public restoration do
 not wait for a final finding of fault. Causally connected inherently hazardous
 activity carries restoration and reasonable response-cost liability even
@@ -73,85 +43,67 @@ source-bound transition remain explicit. Neither denial nor breach is
 renamed success. Budget choice, delay, monopoly or refusal to procure is not
 proof of physical scarcity. The existing scarcity safeguards still apply.
 
-None of this adds a ninth item to the floor, measures an outside condition,
-chooses a numerical ceiling, or reports that protection or restoration happened.
-
 ## Axes that do not trade
 
-The environmental right is distinct from the material floor and adds no item
-to it, and the design says both halves in executable form: the floor's own
-inventory refuses a ninth item, and the floor refuses to erase the ecological
-ceiling. The right may be violated before food, water, health, or a dwelling
-is lost; where ecological harm also causes a floor deprivation, both claims
-stand and neither substitutes for the other. The barrier against selecting a
-floor loss as the price of the ecology holds for every person.
+The environmental right is separate from the material floor. It can be violated
+before food, health or housing is lost; when ecological harm also deprives
+someone of the floor, both claims stand. Neither permits the other to be
+waived.
 
-What is protected is protected on separate axes that do not trade against one
-another: the climate and the atmosphere, clean air, waters and wetlands,
-living soil, biodiversity and habitats, the integrity and connectivity of
-ecosystems, regenerative and waste-absorption capacity, and the ecological
-inheritance of land and nonrenewable resources. Each carries its own barrier
-against the erasure of its ceiling, and the pins hold them axis by axis. No
-sustainability score may hide one failed condition behind others that held.
-Future generations hold no present entry, no ballot, and no presumed
-preference; what is protected is the ecological capability and reasonable
-option-space inherited by whoever later exists, and the barrier against
-exhausting that inheritance holds.
+The commons has distinct protected conditions: climate and atmosphere, clean
+air, waters and wetlands, living soil, biodiversity and habitat, ecosystem
+integrity and connectivity, regenerative and waste-absorption capacity, and
+the inheritance of land and nonrenewable resources. A gain on one axis cannot
+excuse failure on another. Future generations have no present entry, ballot
+or presumed preference; the protected object is the ecological capability and
+reasonable options inherited by whoever later exists.
 
-The ceilings themselves are democratic law's to enact, inside an independently
-reviewed scientific envelope, and the constitution supplies no number. Two
-walls keep that arrangement honest. Scientific assessment, law-making,
-advocacy, and adjudication may not be fused into one hand, and uncertainty may
-never be treated as safety: a credible serious or irreversible risk shifts the
-burden of assessment and alternatives to the proponent, and a decision of high
-consequence may not be made unassessed or without reasons. An offset cannot
-excuse a breach of a ceiling, an irreplaceable loss, or a local rights harm;
-restoration is owed in the order avoidance, minimisation, in-place
-restoration, then genuinely equivalent compensatory restoration, and an
-insolvent or unknown responsible party does not delay it. Every person may
-seek ecological review, and the barrier against denying it holds for every
-person; the barriers against denying environmental conditions, withholding
-environmental information, and ranking people by environmental worth hold the
-same way.
+Each limit must name its condition, place, population, jurisdiction, period,
+and scientific and legal versions. Independently reviewed science supplies
+evidence. Democratic law enacts ceilings, minimum conditions and resource
+budgets within that evidence and may choose stronger protection. Scientific
+assessment, law-making, advocacy and adjudication remain separate functions.
+A scientist's finding does not enact law.
+
+Credible serious or irreversible risk requires proportionate precaution and
+shifts the burden of assessment and alternatives to the proponent. Uncertainty
+is not safety. Replacing a standard requires independently established equal
+or stronger protected outcomes; corrected science can justify recalibration,
+but cost or convenience cannot excuse regression.
+
+Avoid harm, minimise it at source and restore in place. Only a positively
+replaceable residual permits bounded compensation, with additionality,
+durability, equivalent function and place, no double counting, monitoring and
+repair if it fails. No offset excuses a ceiling breach, local rights harm or
+loss of a unique, sacred or functionally irreplaceable system. Reparation to
+harmed people or a collective remains a separate debt.
+
+Changing a contractor, corporate form, supply chain or border cannot export
+harm forbidden at home. Conservation cannot justify dispossession. The pins
+establish separate prohibitions on erasing ecological ceilings, selecting
+floor loss and delaying restoration because the responsible party is insolvent.
+They establish no measured condition or completed restoration.
 
 ## When the record the protection rested on was defective
 
-Everything above runs on records: the limit and the protected condition it
-names, the assessment, the authorisation, the liability finding. This is what
-happens when an independent review establishes that one of them is defective.
+A defective assessment or authorisation cannot support continued reliance
+merely because withdrawing it is inconvenient. Independent review needs
+positive evidence of the exact defect; an absence or unreviewed allegation
+is insufficient. The original writer or activity controller has no veto over
+the finding.
 
-The finding itself has conditions, and they run in both directions. It needs
-positive independent evidence of the exact defect — not an absence, not an
-unreviewed allegation. And it does not need the agreement of whoever wrote the
-record or controls the activity. An original writer cannot veto a finding about
-their own record, or delay the urgent remedy by declining to acknowledge it.
+The finding assigns three duties. Its reader must stop relying on the affected
+record and obtain an independent remedy. A separate alternate must preserve
+urgent human and animal care and the challenge route. An auditor must examine
+what depended on the record, its lawful history and the measures needed to
+prevent repetition. The model also derives a defect marker.
 
-Three duties follow. Whoever reads the finding owes it to read the exact defect,
-stop relying on the affected record and obtain an independent remedy. A separate
-alternate owes the preservation of urgent human and animal care, and of the route
-to challenge, through the record failure — care does not wait for the paperwork
-to be repaired. And an auditor owes an examination of what relied on that record,
-of the lawful history behind it, and of non-repetition, expressly without
-assuming any of it was carried out. The failure is also marked where this design
-keeps its own alarms.
-
-What is withdrawn is the exact affected reliance and nothing else. The finding
-infers no safety, no guilt, no execution and no repaired outcome. The lawful
-history stays, the private evidence and the reasons stay, the challenge and the
-independent remedy stay. And it takes no human standing, floor, ballot, liberty
-or collective right — and no animal's care — from anybody: a defective record is
-a fact about a record.
-
-Then the part that is easy to miss. Correcting the record does not renew what it
-authorised. The replacement has no force until its own complete, fresh contract
-derives, and the correction is explicitly not automatic renewed authority.
-Whatever the defective record permitted has to be established again, on its own
-evidence and its own review. That is the difference between a record that can be
-fixed and a permission that can be quietly restored by fixing it.
-
-What none of this establishes is that anything stopped, that the care continued,
-or that a single condition was restored. These are duties and a marker, and this
-book is careful elsewhere about exactly how much that is.
+Withdrawal reaches the affected reliance. It establishes neither safety nor
+guilt and removes no human standing, floor, ballot, liberty, collective right
+or animal care. Lawful history, protected evidence, reasons and challenge
+remain available. Correcting the record does not renew its permission: the
+replacement must meet its own complete conditions for authority. Neither the
+correction nor the duties prove that an activity stopped or care continued.
 
 ## Speaking for conditions nobody may spend away
 
@@ -167,6 +119,14 @@ independent review. Essential continuity remains. A predeclared alternate
 advocate can act in its place when independently established failure prevents
 it from functioning. A separate substitute reviewer replaces a failed or
 conflicted reviewer; advocacy and judgment never become one function.
+
+The expiry case follows a permitted activity through that distinction. The
+current Guardian stay stops permission for its irreversible execution from
+deriving, while a separately reviewed route permits reversible essential
+continuity. When the stay is recorded as ended, the activity's permission
+derives again from its still-complete authority. An unrelated, unauthorised
+activity receives no permission. The ordinary rights advocate's claim, by
+contrast, creates review duties without imposing that automatic stay.
 
 The Guardian, alternate, successors and reviewers share one replay identity:
 the case, challenged authorisation and its version, evidence version and
@@ -269,8 +229,7 @@ alternative is available in the world.
 
 ## When a use has to be stopped
 
-The protections above are worth what happens when one of them is broken. An
-independently adjudicated injury to an animal's interests — or an urgent,
+An independently adjudicated injury to an animal's interests — or an urgent,
 plausible protection basis, where waiting would itself be the harm — opens a set
 of particular orders. Each names its own action and carries its own boundary,
 and the boundaries are where the design does its thinking.
@@ -289,52 +248,38 @@ score about any person. Disqualify from the use — individually, reviewably, an
 without touching anybody's standing, floor, vote or unrelated private life. Pay
 the adjudicated care costs. Implement the non-repetition measures.
 
-Three limits run across all of them.
+Payment does not discharge the other orders. Rescue, care, restoration and
+non-repetition remain due. Nor does an order regulating a use supply a search,
+entry, seizure, punishment or human detention power. Those require their
+separate lawful justice routes; punishment requires an individually established
+intentional or reckless serious violation, the applicable proof, defence,
+independent hearing and appeal. An aggregate pattern cannot reverse the
+criminal burden, and no animal is punished for the harm.
 
-Paying discharges nothing else. The restitution order leaves the rescue, the
-care, the restoration and the non-repetition exactly where they were, and the
-design says so in the order itself rather than leaving it to be argued.
-
-An order against a use is not a power over a person. It carries no punishment,
-no search, no entry, no seizure and no custody of a human being without a
-separate lawful justice route. That route needs individually established
-intentional or reckless serious violation, the full applicable proof, a defence,
-an independent hearing and an appeal, with no aggregate pattern reversing
-anybody's burden — and it takes no standing, no floor, no core liberty, no due
-process, no vote and no collective right from anybody. An adjudicated harm to an
-animal creates no new coercive mandate, and it is no warrant for punishing the
-animal either.
-
-And none of it says a rescue happened. Every one of these orders carries the
-same clause: no performed rescue, treatment, transfer, restoration or delivery
-is inferred from the order. The non-repetition order carries the sharper version
-of it — nothing infers that the repetition was successfully prevented. The
-record can say what was ordered and who owes it. Whether the suffering stopped
-is not a thing it can say.
+Each order distinguishes its duty from performance. It establishes no completed
+rescue, treatment, transfer, restoration or delivery. A non-repetition order
+likewise proves no successful prevention. The legal response names what must
+happen and who owes it; whether suffering stopped needs further evidence.
 
 ## The child with nobody
 
-For the child with nobody, this chapter holds the conditions of the place the
-child was born into as a right of the child's own, on the strength of the one
-entry. Nell may not be denied environmental conditions, may not have
-environmental information withheld, may not be ranked by environmental worth,
-and may not be denied ecological review; the pins hold each for Nell by name.
-Nell has made no claim on any axis and holds no present entry beyond the
-birth, and nothing here lets a present decision spend Nell's inheritance
-against a preference Nell has not expressed: the protected object is the
-capability whoever later exists inherits, and the child is the nearest person
-to that later existence the record can hold.
+Nell holds the environmental claim without owning land or having an adult
+speak first. The pins preserve access to environmental information and review,
+prohibit ranking Nell by environmental worth, and retain the State's health
+debt. No claim or assessment is supplied for Nell. The birth entry establishes
+neither safe surroundings nor restored conditions; the duties do not wait for
+proof that the child can assert them.
 
 ## What none of this measures
 
-This chapter measures no ecology, sets no ceiling, decides no sentience or
-causation, authenticates no science, and invents no future preference. A
-ceiling barrier that holds proves that the rule is in place, not that any
-ceiling was enacted or any breach found; a completed authorisation or
-withdrawal proves that its record was complete, not that a use stopped, a
-rescue happened, or a habitat recovered. Measurements, numerical ceilings and
-budgets, inventories, models, species standards, monitoring, restoration and
-veterinary capacity, and the transition of food and research belong to the
-second book. The one class of subjects here who are not persons hold their
-interests directly, and this chapter has established for none of them that
-anything was done.
+The model determines no ceiling number, sentience, causation or authentic
+scientific finding. A completed authorisation is not a performed activity;
+a withdrawal is not a stopped use. Measurements, inventories, monitoring,
+restoration and veterinary capacity, and transitions in food and research
+require evidence and operation beyond the rules.
+
+The constitutional demand is that these claims remain distinct when decisions
+conflict: a human floor, an environmental right, a commons condition and an
+animal's interests cannot disappear into a single score. The next chapter
+turns to another relation that cannot be reduced to usefulness or ownership:
+the roles people hold in one another's lives.

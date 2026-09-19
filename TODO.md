@@ -111,30 +111,6 @@ solutions and development history stay outside the book's reading sequence.
 
 ## III. Make the book work as a book
 
-### 14. Complete a developmental edit of every numbered chapter
-
-- [ ] Read and revise chapters 1-31 in sequence after items 01-13, checking
-  each chapter's purpose, progression, concrete cases and ending.
-
-Use these specific priorities; none is a license to omit the remaining chapters:
-
-| Chapters | Editorial job |
-|---|---|
-| 1-3 | Establish the human test, standing and evidentiary vocabulary without repeating the introduction. |
-| 4-7 | Make the path from entitlement through receipt and failure intelligible; retain honest scarcity and initiation limits. |
-| 8-12 | Show ordinary freedom and economic life; distinguish money, recognition, competence and equal access. |
-| 13-15 | Give ecology, relationships and belonging distinct arguments with clear boundaries and human consequences. |
-| 16-20 | Make institutions and public limits navigable; explain how functions connect without reciting records. |
-| 21-23 | Give access to justice proportionate attention and make amendment and authorization comprehensible. |
-| 24-26 | Present the revised shield, adverse findings and restoration with their reasons and costs. |
-| 27-30 | Keep retained rights, placement, confinement and institutional correction distinct and mutually consistent. |
-| 31 | Ensure the five tests answer the book just read and end on a supported conclusion. |
-
-**Done when:** every chapter advances the argument, each example earns its
-space, important transitions work, and no chapter is merely a catalogue or
-change log. Each required child section states the relevant consequence or
-limitation concisely; its required fixture and documented exemptions remain.
-
 ### 15. Perform a complete line edit for precision, rhythm and economy
 
 - [ ] Edit every ordered input, including the unnumbered material, after the
@@ -215,6 +191,11 @@ conditions for this revision plan.
 
 - [ ] Execute the complete substantive verifier and relevant existing
   development checks; perform a separate final prose and source consistency pass.
+
+Resolve the concrete source questions recorded with item 14 in `CLAUDE.md`,
+including evidence and incident binding, restoration, continuing duties,
+proposal/person separation and the isolation marker. Distinguish defects in
+the legal mechanism from the limits of trusted inputs and outside observation.
 
 Use the final current constitution and suites, preserving expected refusals,
 counterfactuals, stateful cases and trusted preconditions. Classify known-defect

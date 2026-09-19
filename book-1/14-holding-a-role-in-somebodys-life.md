@@ -1,13 +1,10 @@
 # Holding a Role in Somebody's Life
 
-The design says a great deal about what may not be done to a child, a dependant
-or a person who needs help deciding. Underneath those barriers there has to be
-an ordinary case — what holding a role in somebody's life actually is — and this
-is it.
-
-Everything here is a legal conclusion over supplied records. None of it
-establishes that a child was heard, that a supporter arrived, that care
-continued, or that a correction was published.
+Helping somebody does not make them yours to decide for. This chapter separates
+care from authority, a chosen supporter from a substitute decision, and a
+person's own voice from the record made about it. The hardest case is the
+person with nobody recorded as acting for them: assistance must begin without
+turning their need into a status of incapacity.
 
 ## What kinship does not create
 
@@ -20,25 +17,20 @@ recognition for that work; it does not prove that care reached another person, t
 the care was safe, that anyone consented, or that the worker acquired authority over
 them.
 
-Those are constitutional boundaries, not a service report. They do not establish a
-clinic, home-care route, respite place, advocate, budget, staffed institution, or
-completed remedy. The difference between duty and arrival has its own chapter.
 
 ## A role is scoped, and the roles are separable
 
-A role is scoped, and the roles are separable. Parentage, caregiving, household,
-material support, property and succession, and acting as somebody's decision
-agent are distinct records, and one of them does not carry the others. Each is a
-challengeable fiduciary power over a named decision, never ownership of a
-person, and no marriage or household label confers one by itself. Every
-dependant and every caregiver keeps separate standing, voice, privacy,
-confidential help and a way out. Kinship on its own creates no compelled
-personal-care duty and no inherited support debt.
+Parentage, caregiving, household membership, material support, property and
+succession, and decision agency have distinct records. One does not confer the
+others. Authority associated with a role is a challengeable fiduciary power
+for a named decision, never ownership of a person. Marriage or household
+membership alone cannot supply it. Each caregiver and dependant retains
+separate standing, voice, privacy, confidential help and exit.
 
 ## The person the decision is about is heard
 
-The person the decision is about is heard. There is no minimum speaking age,
-their own account is recorded without certifying a preference or a relationship,
+The person must be heard without a minimum speaking age. The participation
+record carries their own account without certifying a preference or relationship,
 independent assistance is required where the adults' interests conflict, and
 authority grows decision by decision rather than arriving as a score for a whole
 person. That record rejoins the exact role it runs under, so a role reviewed for
@@ -59,19 +51,22 @@ resort cannot be reached by skipping the step before it.
 
 ## Care continuity needs nobody to hold a role
 
-Care continuity is immediate, non-delegable, and it needs nobody to hold a role
-at all. The record completes with no family in it, which is the point: no
-family, household, association or charity is presumed to supply the floor, and
-the continuity is not conditioned on a relationship, a supporter or an entry
-somebody has to make first. Respite, exit and relocation continuity are the same
-shape.
+Public responsibility for care continuity is immediate and non-delegable. Its
+reviewed record can complete with no family role present: a family, household,
+association or charity is not presumed to provide the floor. The duty does not
+wait for a chosen supporter. Respite, exit and relocation must preserve care
+rather than making a relationship the price of receiving it.
+
+The formal continuity conclusion still needs its own supplied premises.
+Absence of a family does not manufacture that record or establish that care
+arrived. The ordinary case tests independence from a family role, not automatic
+performance of the duty.
 
 ## Reproductive and bodily care, and the order of a treatment decision
 
 Reproductive and bodily care needs no third party's authorisation. Current
-informed choice controls, including refusal, no route runs from that choice to a
-punishment, and no bodily decision is recorded as an adverse fact about the
-person. For treatment more broadly the order is fixed in advance: the current
+informed choice controls, including refusal. These records supply no route from
+that choice to punishment or an adverse finding about the person. For treatment more broadly the order is fixed in advance: the current
 choice, then a valid advance directive on its own terms, then a chosen
 representative implementing known will and preferences, and only then the
 bounded route. Age, a diagnosis and where somebody lives remove the choice from
@@ -93,148 +88,90 @@ failure to answer moves the duty to an independent alternate.
 
 ## When nobody holds a role at all
 
-The roles above are things people take up. This one is what happens when nobody
-has. The duty to begin belongs to the independent rights advocate and is owed to
-every person without a request; what it looks like when it is discharged is a
-record, and the record has to contain particular things before anything follows
-from it.
+The independent rights advocate owes every person a duty to initiate assistance
+and representation without a request. A reviewed appointment specifies how
+that duty is to be carried out in a particular matter.
 
-It names a trigger, drawn from a closed list: nobody is recorded as acting for
-the person; the only recorded supporter is the party accused of failing them;
-the person cannot be reached in an accessible language or form; the person is
-held or placed and unrepresented; an earlier appointment ended with no
-successor. A trigger the list does not contain completes nothing, which is what
-keeps this from becoming a general power to appoint somebody over a person's
-life.
+It must identify a recognised trigger: nobody is recorded as acting for the
+person; the sole supporter is accused of failing them; accessible contact is
+unavailable; the person is held or placed without representation; or an earlier
+appointment ended without a successor. An invented trigger completes nothing.
 
-It names a representative, appointed for the matter named in the record and not
-as a status. It names a receipt witness, which is the answer to a question the
-chapter on delivery has to leave open — somebody has to be able to attest that
-what was owed reached a person who cannot choose an attester, and this record is
-where that person is named and the body that must authorise them is obliged.
+The appointment names a representative for that matter, not a guardian over
+the person's life. It preserves their voice, makes no capability finding,
+creates no reusable classification and enrols them in nothing. Its information
+is limited to what the matter needs. A source-bound end prevents silent
+renewal, and gaps in representation suspend neither care continuity nor the
+floor.
 
-It carries the limits in the same breath as the appointment. No request from the
-affected person is required and no finding about their capability is made. Their
-own voice is retained and never replaced by the appointment. The information is
-the least the matter needs, it builds no reusable classification, and it enrols
-nobody in anything. Care continuity and the floor are unaffected by any gap in
-representation. The appointment has a source-bound end and does not renew itself
-in silence.
+It also names a receipt witness. The positive case derives the acting body's
+duty to authorise that witness, but no witness authority follows automatically.
+The representative owes action within the appointed matter; the challenge
+reader owes a hearing and correction. The case derives neither personhood for
+the participant nor parentage authority for the representative. Appointment,
+witness authority and authority over the person are separate conclusions.
 
-And it is answerable like everything else in this family. Three separately
-authorised people must agree on every field; the representative may not be the
-acting body, the reviewer, the challenge reader, the alternate, or the person
-themselves; a challenge reader must hear a contest of the appointment and
-correct it; an independent alternate stands behind that reader. A conflicting
-authorised entry on a single-valued field blocks the record rather than picking
-a convenient version.
+Three separately authorised attesters must agree on the fields. The
+representative cannot be the acting body, reviewer, challenge reader, alternate
+or affected person. A conflicting authorised entry on a single-valued field
+blocks completion. An independent alternate supports the challenge route.
+These conditions establish a reviewed appointment record, not that an advocate
+exists, a representative acted or a witness saw delivery.
 
-None of it establishes that an advocate exists, that the appointment was made,
-that the representative acted, or that a witness attested anything. It is what
-the design requires of an appointment, not a report that one happened.
+## Adulthood and missing evidence
 
-## Children, the difference between not yet and taken — and a third thing
+Cira is a person and is owed the floor. The record supplies no typed evidence
+that Cira has reached the common adulthood threshold, so it derives no ballot.
+That does not establish Cira's age. It cannot distinguish *not yet* adult
+from adult with missing evidence: the model has no outside clock.
 
-Cira is a person and is owed everything on the floor. The supplied record contains no
-typed evidence that Cira has reached the common adulthood threshold, so it produces no
-ballot conclusion. That executable answer does not tell us whether Cira is in fact
-below the age or whether the evidence is missing. The record has no outside clock.
+In the law, reaching the common age creates general adulthood automatically;
+registration is evidence, never its source. Early decision-specific authority
+can cover a named choice without conferring general adulthood or a ballot.
+The executable model still needs supplied age evidence to derive its ordinary
+franchise conclusion.
 
-It is worth being careful about why that is a different kind of thing from
-disenfranchisement, since on the surface both are people without a vote.
+Esa illustrates the gap. Teaching, having been examined and being somebody's
+recorded child prove no age. Esa's teaching produces recognition through the
+route described in chapter 10, but no typed adulthood evidence supports a
+ballot conclusion. That absence does not turn Esa into a child.
 
-Nothing was taken from Cira. There is no rule that removes a franchise, no finding, no
-proceeding and nobody who decided against Cira. In the law, reaching the common age
-creates general adulthood automatically; registration is evidence, never its source.
-Decision-specific early authority can cover a named choice before that age, but it
-cannot manufacture general adulthood or a ballot. In the executable model, the typed
-age evidence remains a supplied premise. That separation prevents the writer from
-granting legal adulthood while exposing a different weakness: absent evidence can
-still suppress a conclusion the model should produce once the age has actually been
-reached.
+Esa can challenge the missing or disputed age evidence. The challenge creates
+a named dispute and a duty of independent determination and correction; it does
+not decide the age or supply the missing entry. The last uncontested adult
+status also continues, and a separate provisional opportunity is available
+where credible evidence indicates the common threshold may have been crossed
+and a ballot or candidacy would otherwise expire. Positive evidence is required;
+neither missing evidence nor review silence counts as approval.
 
-So the record has a third executable category this section's title does not admit,
-between *not yet* and *taken away*: **evidence absent**. Esa teaches, was examined by
-two people, and is somebody's recorded child. None of those facts proves an age. Esa
-has no typed adulthood evidence, so the machine derives no franchise. That does not
-make Esa a child or let the record decide Esa's legal status.
-
-Esa can challenge the missing or disputed age evidence. The challenge produces
-a named dispute and a duty for independent determination and correction. It
-does not determine Esa's age, write the missing evidence, confer or deliver a
-ballot, identify the original writer, or make the reviewing body act.
-
-The constitution now narrows this failure without turning silence into
-adulthood. It says the last uncontested adult status continues and permits a
-provisional opportunity where credible evidence shows that the common threshold
-may have been crossed and a ballot or candidacy would otherwise expire. That
-route must be positive and evidence-backed; missing evidence or reviewer silence
-is not approval. The checks use those supplied entries. They do not determine
-the person's age, observe an outside birthday, or manufacture general
-adulthood.
-
-One more fact keeps the evidence gap exact. Esa earns here. Her teaching is
-recognised — the doors of the next chapter ask nothing about age — so the record
-that lacks typed age evidence is already counting her contribution. Supplying
-the adult evidence makes the anti-denial wall and older ballot conclusion
-derive. Supplying the state-form premises can also preserve one expiring
-political opportunity. Neither route constitutes adulthood, proves when a
-birthday occurred, or operates an election.
-
-A polity that wanted a demographic voteless could still attack the inputs:
-decline to record the evidence, withhold the challenge, supply a false current
-record, or prevent the result from arriving. The completed interface makes
-those legal dependencies and failure routes explicit. It cannot observe the
-person's age, authenticate the outside writers, force a successor record to
-arrive, or put a ballot in anyone's hand.
-
-Compare what disenfranchisement would be: a rule that reaches in and removes something
-a person already had, on the basis of something they did. The distinction between
-*not yet* and *taken away* sounds like a technicality and is the difference between a
-threshold and a punishment. The distinction between *not yet* and *never written* is
-thinner — one entry thin — and unlike the punishment, nothing in this design can see
-it.
+The distinction from disenfranchisement is legal as well as formal. Withholding
+an already held franchise as punishment differs from a threshold not yet
+reached. Missing evidence can nevertheless prevent an executable conclusion
+about an entitlement already held in law. A challenge and provisional route
+address that failure without proving anyone's birthday, making a reviewer act
+or delivering a ballot. The later chapter on the vote follows those routes.
 
 ## The child with nobody
 
-The child with nobody holds no role in anybody's life and has nobody holding
-one in theirs, which is exactly the case this chapter has to survive. It does.
-Care continuity completes with no family in the record, so the one conclusion
-the chapter most needs for this child is the one that asks least of it. Every
-barrier above is written over personhood alone and holds for a record of one
-line: nobody inherits a duty to this child through kinship, no household is
-presumed to be feeding them, no status stands in for a decision, and the
-absence of a family is not a reason to confine anybody.
+Nell's one-entry record identifies no family, supporter or appointment. The
+public care duties remain, kinship supplies no compulsory personal-care debt,
+and family absence authorises no confinement. The rights advocate's initiation
+duty derives without a request.
 
-A supporter is chosen, and a child with nobody has chosen no one. The bounded
-route that opens when will and preferences remain unascertainable requires
-positive evidence that support was actually provided first — the right
-condition, and one nobody has met here. The design refuses to let the last
-resort be reached by skipping the step before it, and for this child that step
-has not happened.
-
-Which is what the appointment above is for, and why it is in this chapter
-rather than left to the one on being heard. It does not wait to be chosen. Its
-trigger is that nobody is recorded as acting for the person, the duty to begin
-it is owed to every person without a request, and the record it produces names
-the representative, names the witness who could attest a receipt, and keeps the
-child's own voice where it was. Run the machinery at this child and the
-appointment is what stands between them and none of the routes at all.
-
-The pins are exact about what that is and is not. The duty holds for a record
-of one line. No appointment record exists for this child, so nothing about them
-is completed, and no representative, no witness and no authority follows. A
-named duty-bearer is the end of the constitutional question and the beginning
-of the operational one.
+No appointment completes for Nell. The positive case above shows what the
+route requires; it does not appoint anybody for this child. Nor can a substitute
+decision skip the required evidence of prior support. The record therefore
+names a duty-bearer without establishing representation, witness authority or
+delivered care. Legal responsibility is present; its performance is unproved.
 
 ## What none of this decides
 
-None of this decides best interests, capacity, consent, pregnancy, parentage or
-death, and it supplies no age. It says what has to be established before somebody
-holds a role in another person's life, and what stays true when they do.
+The rules determine no outside best interests, capacity, consent, pregnancy,
+parentage, age or death. They test supplied grounds for roles and decisions,
+and preserve rights when the authority is absent, challenged or withdrawn.
+Service capacity, clinical practice and the operation of family proceedings
+need evidence and institutions beyond those conclusions.
 
-Service capacity, family and care proceedings, clinical and death-record
-operation, land and title administration, language services and consultation
-practice all belong to the second book. The family ships dormant in the
-supplied record: nothing here establishes that a role was ever held, that a
-child was heard, or that care reached anyone.
+The boundary is the same through every role: assistance does not confer
+ownership, and the absence of a private helper does not remove public
+responsibility. The next chapter takes that boundary across a border.

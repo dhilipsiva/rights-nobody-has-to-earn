@@ -2,8 +2,7 @@
 #
 # KIND: CONTENT pin. Run:
 #   ./verify.sh --only book-1/25-voiding.pins.nibli
-#   ./verify.sh          # the real check — the line above cannot see
-#                        # the cross-file reconciliation or the prose guards
+#   ./verify.sh          # all substantive pins and contradiction checks
 
 # WHAT FALSE MEANS HERE — three kinds, and only one is a verdict. A FALSE on a
 # corpus name this KB never mentions is real but empty: nothing could have made
@@ -246,9 +245,9 @@ authorized(Ambi, IndependentReviewer, Solo).
 # objects: he is voided and credentialed at once, and he can co-sign a stranger
 # into the same condition he is in.
 #
-# The obvious repair is REFUSED, which is why this is a disclosure and not a
-# bug report. Barring a voided person from the pen is rejected outright, and so
-# is gating the void on its own signers. The chapter says why.
+# Directly gating these mutually dependent conclusions on ~false creates a
+# negative cycle. That refusal does not show that another representation
+# cannot resolve the same-record signer defect.
 choose(Electorate, Lupo).
 
 ? false(Lupo).

@@ -2,8 +2,8 @@
 #
 # KIND: CONTENT pin. Run:
 #   ./verify.sh --only book-1/01-the-child-with-nobody.pins.nibli
-#   ./verify.sh          # the real check — the line above cannot see
-#                        # the cross-file reconciliation or the prose guards
+#   ./verify.sh          # all substantive pins and required contradiction checks
+# Prose consistency is reviewed separately.
 #
 # Nell is introduced BY FIXTURE, never by the constitution's cast:
 # tests/pins/records/child_with_nobody/fixture.nibli holds exactly `born(Nell).`
@@ -29,10 +29,10 @@
 #   tests/pins/delivery/received-outside-custody/expect.pins.nibli
 #       the mirror: a receipt plus an independent witness derives the floor
 #
-# WHAT FALSE MEANS HERE: a FALSE is pinned only where the KB could have said
-# TRUE, and the comment says what would flip it. Every FALSE about Nell below
-# flips on one written line; every FALSE about Ori flips on a birth or an
-# encounter.
+# WHAT FALSE MEANS HERE: the supplied record does not establish the queried
+# positive statement. It is not proof of its real-world negation. A suitable
+# admitted premise or complete source route is needed to change the result;
+# derived-only conclusions cannot be written directly. Ori has no standing root.
 
 :expect-pins 58
 
@@ -40,12 +40,12 @@
 ? born(Nell).
 # => TRUE
 
-# "So Nell is a person — not provisionally, not pending anything"
+# "Nell therefore enters the design as a person."
 ? person(Nell).
 # => TRUE
 
-# "Does the record hold a family for Nell? No. A home? No. Is Nell confined? No."
-# Each flips on a single written entry.
+# No recorded family, home or confinement. Family/home entries are admitted;
+# confinement needs its derived route, not a direct prisoner assertion.
 ? family(Nell).
 # => FALSE
 
@@ -198,9 +198,7 @@ vulnerable(Nell).
 ? obliged(RightsAdvocate, InitiateAssistanceAndRepresentationWithoutARequest, Nell).
 # => TRUE
 
-# And nothing about it reaches the person. A duty is read by no rule in this
-# design, so the eight debts, the floor actualities and the barriers are
-# exactly where the sections above left them.
+# The initiation duty does not establish delivery or change the floor debt.
 ? eats(Nell).
 # => FALSE
 
@@ -231,7 +229,7 @@ observe(Passerby, NellUnattended, Nell, UninitiatedAssistanceScope).
 ? lose(Points, Nell).
 # => FALSE
 
-# Ori, whom no record has entered, is owed no duty either — the rule needs the
-# one entry that makes a person, and Ori has none.
+# No initiation duty derives for Ori in this record: no standing root is supplied.
+# This is not a finding that a real person is lawfully owed nothing.
 ? obliged(RightsAdvocate, InitiateAssistanceAndRepresentationWithoutARequest, Ori).
 # => FALSE

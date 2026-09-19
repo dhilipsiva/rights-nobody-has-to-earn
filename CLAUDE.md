@@ -3493,6 +3493,106 @@ Across ordered inputs, including the epigraph, 73,428 words are derived and
 12,153 are other prose: 85,581 total, approximately 85.8% derived. The three
 exempt channels, unnumbered poem and method, and Book 2 boundary remain.
 
+**Item 14 — developmental edit of every numbered chapter, landed 2026-09-19.**
+Chapters 1–31 were read and revised in order for purpose, progression, concrete
+cases and endings. The exact canonical Markdown of all 31 numbered chapters
+is `session-drafted, author-approved under delegated approval (2026-09-13)`.
+The source remains authoritative; this pass changes the reader projection,
+pin comments and existing prose locators, not constitutional rules or active
+expectations. It adds no argument channel and claims no external operation.
+
+The opening chapters distinguish standing, entitlement, initiation, specific
+care authority and delivered provision without making absence prove either
+success or deprivation. The ordinary-life chapters separate wages,
+contribution, competence, recognition, property, environmental interests and
+care roles. Concrete receipt, accommodation, ecological stay, consent and
+withdrawal cases carry the distinctions. The institutional chapters explain
+source, scope, current authority, review and continuity. The fresh-election
+case contrasts complete positive deadline findings with the same record
+without those findings; naming a deadline creates no authority or election.
+
+The closing derived chapters distinguish shield, void, recognition loss,
+custody, placement, physical holding and release. They describe current rules
+and bounded counterfactual results, rather than their own repair history.
+They no longer turn a rejected encoding into proof that every alternative is
+impossible, a derived destination into an actual move, or a custody housing
+conclusion into a delivered roof. The last derived chapter follows markers
+through readers and correction duties without presenting a defective signal
+as sound or disclosure as repair. Part V retains the five arguments, evidence
+and alternatives, with its shield account aligned to the raw-deceit route.
+
+Every required child section retains the one-line fixture and states the
+local consequence or limit. The five documented exemptions remain. Chapter 7
+merges overlapping duty and response sections; the existing coverage rows
+follow those passages, preserving the substantive topics. Other renamed
+sections, settings and exact locators are reconciled in the existing source
+JSON. One previously stale chapter 27 locator is resolved and removed from
+the existing test's exception set. The pre-existing stale Part V closing
+heading in coverage, left after item 11, is also corrected. Historical audit
+claims are not renewed, and no report or verification workflow is introduced.
+
+Separate prose review measures 40,516 derived words and 12,200 other words,
+52,716 across all ordered inputs including the epigraph, approximately 76.9%
+derived. The previous totals were 73,428 and 12,153, or 85,581 overall. Cuts
+follow chapter purpose and repetition, not a percentage target. The complete
+line edit and assembled-format inspection remain the subsequent items.
+
+Focused execution passes 1,304 pins across 32 case executions, covering every
+derived chapter, including the two selected counterfactual companions.
+Individual runs take 10.34–24.13s. The existing coverage tests pass (ten,
+0.30s), including child-section and fixture checks; reference tests pass (six,
+1.58s after final chapter 3 alignment); claim-discipline tests pass (five,
+0.87s). The latter retain all Part V empirical bindings. The reference test
+is strengthened by removing the resolved exception. A direct comparison of
+all 24 edited pin files with HEAD confirms that every active statement,
+expectation, refusal, scoped control and trusted precondition is unchanged.
+
+The complete verifier passes 87,372 pins across 15,996 cases in 1,025.43s
+(17m 5s), with contradiction checks complete and no findings. Nine existing
+known-defect pins still reproduce; their passing results are not repairs.
+The five-minute target is not met. The constitution and suite inventory are
+unchanged. The final diff check passes.
+
+**Substantive disposition remains open under item 19.** Correct exposition is
+not a repair of the underlying design. The existing targetless amendment
+label and absence-based isolation expectations still describe defects. The
+source review also establishes or identifies these concrete questions for
+repair and adversarial disposition:
+
+- Raw deceit can withdraw the disclosure shield and recognition without the
+  Review judgment required by the deceit-void route. The conviction rule's
+  treatment of defences and the unscoped broken-Court input also need the
+  adequacy review already required by the backlog.
+- Paired voiding binds a subject and ground kind, not a separately identified
+  incident. A currently void signer can still co-sign in the same record;
+  the refusal of a direct negative guard does not prove the problem insoluble.
+  The parent-judge route ignores the clean state, while a void target without
+  personhood misses the explanation duty. The generic Appeals relief pair
+  has no case or purpose binding. These are distinct from the independently
+  qualified, case-specific unrelated-prosecution route.
+- Proposal and person names share the false conclusion. The docket guard
+  limits the borrowed void but does not type-separate the person from the
+  proposal. A test lacking docketing is not proof of separation.
+- Withdrawing holding authority also withdraws its dependent accuracy,
+  security, retaliation, notification, contest and review duties in the
+  record-power sequence. Requisition withdrawal drops the associated
+  inventory, return and compensation duty; defence-structure withdrawal
+  drops ceiling, appropriation and audit duties. Separate correction duties
+  do not by themselves establish protection for retained data or past acts.
+- Severity's harm entries have no writer or incident binding to the cited
+  case, and severity attaches to a person across placements. The placement
+  alarm covers only reported ineligible Homestay, not every conflicting or
+  inappropriate destination. A destination-free housing conclusion does
+  not complete a lawful placement. The raw release entry and temporal
+  challenge intake likewise need their authority and continuity limits
+  assessed, rather than an assumption that a label performs an act.
+
+These questions require the resolve-before-defending standard, with exact
+case tests, substantive repair where possible, and justified constraints and
+alternatives for any retained limit. They are not delegated to Book 2 merely
+because operation also needs outside evidence. Pure input-versus-world limits
+must remain distinguished from missing constitutional safeguards.
+
 ### Measured Nibli capability boundaries
 
 Each is a dated measurement against a named engine revision, not a timeless

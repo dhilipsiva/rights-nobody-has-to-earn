@@ -1,206 +1,102 @@
 # Clawback
 
 When someone's credibility is voided, their recognition stops following from
-the record.
+the record. Bela's teaching remains recorded, but the void prevents it from
+producing recognition. A recognition-loss conclusion follows beside it.
 
-Bela was examined by two auditors and voided. Ask whether Bela is recognised
-and the answer is no. The teaching remains written, but the route to recognition
-refuses it while the void stands. Beside that refusal the record holds one more
-conclusion: a loss against Bela's name. This is the second half of voiding inside
-the recognition system. It is not a fine, a wage deduction, a debt, a loss of
-property or pension, an insurance decision, a withdrawal of authority, or a
-reduction of the floor.
+The loss is not a fine, wage deduction, debt, property or pension loss,
+insurance decision, withdrawal of authority or reduction of the floor. No rule
+reads this recognition loss into another result. The void itself closes the
+recognition routes; the loss records that consequence without measuring it.
 
-Be precise about the mechanism, because the natural word for it — taken — describes
-an event that never happens. Recognition is not a balance that can be debited; it is
-an answer, and the answer stops being yes. The rule is simple to the point of
-bluntness all the same. Credibility voided, recognition refused. No proportion, no
-partial forfeit, no assessment of how much of it was tainted. Within this
-recognition mechanism there is no judgment of degree, and that is
-worth holding in mind through what follows.
+There is no balance to debit and no proportion to calculate. A void blocks
+recognition from all three routes, including work unrelated to the finding.
+That breadth is a consequence of this unranked relation, not proof that all
+the person's contributions were fraudulent.
 
-And a second precision, stranger than the first: nothing reads the loss. The conclusion
-against Bela's name is consulted by no rule anywhere — it opens no door,
-changes no placement, feeds no verdict — and the book's checks hold that nothing ever
-does, by decision rather than by oversight. The design determines that something was
-lost, writes it down, and stops. If that sounds familiar it is the audit's register
-arriving early: what this record does with wrongdoing, here as there, is know it, and
-the knowing is the whole of what it does.
-
-The word itself used to sit in an odd place, and the repair matters. The record keeps
-two guarded lists — the words the world may write, and the words only rules may
-conclude — and the word for a loss was on neither. That kept a forged loss out only
-because nobody had added that exact word to the writable list. When that
-reclassification was tested, a hand could write a loss directly and skip the rule.
-
-The word is now on the conclusion-only list. A hand cannot write a loss even if
-someone later tries to make that exact word writable; only a rule may produce one.
-The protection covers the word in every form. A future factual report that somebody
-suffered a material or personal loss therefore needs a different word, with its own
-rules about who may report it and how it may be challenged. This is a narrow repair:
-a rule may still conclude a loss, nothing reads one once concluded, and the design
-has not pretended that every rule-produced word has now been swept.
+The loss word is conclusion-only. A direct assertion is refused even if an
+entry tries to make that exact word writable, and the test covers another
+arity as well. A report of an outside material loss needs its own representation;
+it cannot borrow this conclusion to bypass the rule producing it.
 
 ## What it cannot reach
 
-Before the difficulty, the boundary, because the boundary is the more important fact
-and it is easy to lose behind the difficulty.
+Bela remains a person, retains free movement and the ballot, and is owed the
+floor. No prisoner conclusion follows for Bela. The recognition loss supplies
+no rule for subtracting any of those rights.
 
-Bela has been voided, and the acts recorded for Bela now produce no recognition.
-Ask what Bela still has.
+Neither food nor dwelling actuality derives for Bela in the supplied record.
+Food does not derive for Jala either, although Jala is not voided. The comparison
+separates the missing delivery evidence from the recognition consequence. It
+establishes neither starvation nor delivery and cannot prove that nobody's
+actual treatment changed after a finding.
 
-Bela is still a person. Bela still moves freely — is not confined, not placed
-anywhere, not restricted — and still holds the vote. And Bela is still owed everything
-on the floor — every item this society owes everyone, in full, without qualification
-or reduction. Nothing in the clawback touches any of it. There is no rule anywhere
-that reads *and therefore this person may be given less*, because the floor is not the
-kind of thing that can be reduced by a finding about someone's conduct.
-
-Say plainly what that means, and say it exactly, because the loose version claims too
-much. A person can be found unreliable by the highest standard the society has,
-their recorded acts producing no recognition, marked in the record for as long as the
-record lasts — and is owed food, shelter, learning, expression and company on the day after
-exactly as on the day before. The worst thing the accountability machinery can do to
-you does not subtract one item from what you are owed.
-
-What it does not mean is that Bela is fed. Whether what a person is owed ever reaches
-them is a different question; this book asks it later, of this same person, and does
-not like the answer. What the voiding cannot do is make that answer worse. The gap
-between being owed and being fed is real, and it is the same gap for Bela as for
-everyone — the finding did not widen it by so much as a meal.
-
-This is not restraint on anyone's part. Nobody chose, in the moment of voiding Bela,
-to be merciful about her housing. There is no moment where that choice arises. The
-instrument reaches recognition and stops, because recognition is the only thing it was
-built to touch.
-
-One more boundary, on the other side: the instrument follows the verdict and only the
-verdict. Mira was accused by a liar — examined, named, the machinery of the last
-chapter pointed straight at her — and Mira keeps everything. An accusation that fails
-to become a voiding is, to this instrument, nothing at all. There is no lesser loss
-for having been suspected, no partial mark for a case that collapsed. Until the
-verdict exists, the clawback does not.
+Mira supplies the other control. Lupo's deceitful examination produces no void
+of Mira, so no recognition loss follows for Mira. Suspicion alone creates no
+lesser loss through this rule. It reads the void, without adding an intermediate
+penalty for having been accused.
 
 ## Cira, and the loss that does not reach her
 
-Bela taught Cira. Bela was voided. Ask what that costs Cira and the answer is nothing —
-not a reduced something, nothing — and this section is here because the reason is less
-obvious than it looks.
+Bela taught Cira and was voided. Cira loses no recognition through that
+relationship. In this case Cira has no recognition conclusion in the first
+place: being taught is not one of the routes that produces it.
 
-Start with the argument for the other answer, because it is a good one. Recognition
-earned through fraudulent teaching was never really earned. If Bela was signing off on
-work that was not done, the recognition flowing from those sign-offs is recognition for
-nothing, and letting it stand leaves the fraud partly intact. That is an argument about
-somebody who is holding something.
+Even if a teaching record were fraudulent, it would not establish that the
+student acquired recognition through it. The system has no such transfer.
+The student's own teaching or work can support recognition independently, as
+chapter 10 tests. A finding against the teacher cannot substitute for a finding
+about the student's own conduct.
 
-Cira is not holding anything. Being taught is not a way to earn recognition here;
-sitting in front of a teacher is not a contribution, and nothing in this design says
-otherwise. A rule reaching the student would fire on a person with nothing and record
-the loss of it — a loss written against a child, for an adult's fraud, asking nothing
-about whether she knew, nothing about whether she was the fraud's victim rather than
-its beneficiary, and nothing about amount, because this instrument has no notion of
-degree.
+Fin, taught by Esa, also incurs no loss. The test derives no personhood for
+Fin, but that absent entry is not evidence that Fin is unreal or without rights.
+It shows why a relationship entry and a standing record must not be confused.
 
-Try to narrow that rule and the narrowing eats it. Claw back only the recognition that
-came from the fraudulent teaching, says the gentle version — but students earn nothing
-for being taught, ever, so the recognition that came from the fraudulent teaching is
-nothing, for every student, always. A rule narrowed to reach exactly that reaches
-nobody. Whoever sits down to write the narrowing finds they have written a repeal. So
-the design does not write it: the clawback reaches the voided person's own recognition
-and stops there. No loss reaches Cira, or Fin, or any student, for any teacher's fraud,
-and the difference between Fin and Cira — which was never anything either of them did,
-only a fact about their teachers — is no difference at all.
+The family and life-course rules state the same boundary from the other side.
+Parentage, care, household membership and support do not transfer fraud, guilt,
+debt or recognition loss from an adult to a child. These are legal separations,
+not proof that a court corrected a record or an advocate acted.
 
-The family and life-course rules state the same boundary from the other side. Children
-and dependants hold rights separately from parents and caregivers; parentage, care,
-household membership and support are different relations, and none of them transfers an
-adult's fraud, guilt, debt or lost recognition to a child. That is a legal barrier over
-supplied records, not proof that a court, an advocate, a correction process or a remedy
-will act.
-
-What the boundary costs is worth saying, because the good argument above does not
-disappear when the rule reaching Cira does. Some recognition somewhere rests on work
-that was not done, and this design leaves it there rather than hold an instrument that
-can reach a person who did nothing. That is the trade, and it is made in the same
-direction as every other trade of its kind in this book.
+A false entry about work remains a problem for evidence and correction. Making
+a student bear the teacher's recognition loss would not establish what work
+occurred or correct that entry. The clawback stays with the person voided.
 
 ## The mark that crosses the record
 
-Everything so far happened in one period: Bela was examined, voided and docked by
-people acting here and now. Vex shows what the loss looks like after the machinery
-has gone home.
+Vex's reconciled predecessor void produces a current void, recognition loss
+and withheld credential while leaving public answerability intact. The carry
+needs the witnessed predecessor, inventories, matching reports and selected
+current successor described in the previous chapter. A raw mark alone is
+insufficient. The result establishes no new examination of Vex.
 
-Vex was voided in an earlier period. The selected current record holds a carried mark,
-but that entry no longer works alone. The predecessor's void and the exact inventory
-entry naming each record must be witnessed, both public bodies must report the same carry, the successor
-must name the predecessor it replaces, and the witnessed constitutional record line
-must select that successor as its current end without a competing selection. From that reconciled history the verdict
-reassembles itself: the void stands again, the loss stands again, the pen is withheld
-again. Nobody in this period examined Vex. Nobody signed anything. The old judgment
-continues to cost Vex because the supplied current record agrees that it crossed.
+The restoration test adds forgiveness by Appeals. Alone it changes none of
+those results. Add an Appeals judgment as well, and clean status derives:
+the carried void and recognition loss stop, and Vex's existing examination
+supports recognition. No new work or payment is involved. The matched history
+remains, so the auditor's credential still does not derive.
 
-That is deliberate, and chapter 25 built the machinery: witnessed replacement and
-matched carry are how history crosses a record, and without them a voided auditor
-could simply wait for the period to turn and sign again. The comparison is now a
-rule, evaluated afresh for the supplied current record. The honesty of its witnesses
-and the arrival of a successor remain duties performed outside it.
-What this chapter has to add is the ending. A sentence can end inside this design,
-and so can a voiding: the record has a word for each. A body forgives, named in the
-entry itself, and the forgiveness stands beside a judgment of that body.
-The pair is mechanically necessary, and it is deliberately not case-bound:
-the judgment relation carries no purpose, case or writer, so an older generic
-judgment can sit ready before a mark exists, and one later authorless word of
-forgiveness is then enough to spring what took six guarded entries to conclude. That asymmetry is the instrument's, and
-the chapter on the pen argues the default it follows.
+The pair is mechanically required but identifies no particular finding,
+purpose or authenticated writer. A generic judgment already on the record can
+combine with a later forgiveness entry. The result proves that those premises
+satisfy the rule, not that Appeals performed this restorative act.
 
-With both entries in place the mark comes clean, and what stops is every route that
-reaches a credibility finding: the pair of examinations in this record, the
-adjudicated lie, and the mark carried from an earlier one. The loss stops with them.
-The routes to recognition reopen backwards as well as forwards — the record never
-erased the work performed while the void stood, it refused to let that work support
-recognition, and once the void cannot re-form those same entries support it again.
-Forgiveness is not new work and pays no old balance. It changes which conclusions the
-existing record may support.
-
-What forgiveness does not restore is the pen. The mark itself stays on the record —
-forgiven, not erased — and everything that reads the mark directly still reads it. Do
-not picture a forgiven auditor waiting to be chosen again; the chapter on the pen
-measures that, and the seat turns out never to have been what the credential door was
-reading. Only the first road was opened here.
-
-So a voided person's way out is no longer somebody else's silence. It is a pair of
-entries someone can point to. One names Appeals as the forgiving body and the other
-is a generic Appeals judgment; neither authenticates a writer or proves that Appeals
-performed this act for this mark. What remains true — the honest residue — is that
-nothing obliges anybody to perform it. A person whose forgiveness nobody takes up,
-or whose completed forgiveness loses either record fact, stays voided — just as a
-person whose relief is unperformed or missing from the record stays held. The chapter
-on the pen weighed that default and chose it, and it weighs
-the same here: the benefit of an absence goes to what the machinery concluded, never
-to what somebody might yet do.
+The paired-void, adjudicated-deceit and carried-void routes read clean status.
+The parent-judge route does not. Restoration is therefore not universal across
+all sources of a void. Nor does a duty to review guarantee forgiveness: while
+an applicable void still derives, recognition remains blocked. An unperformed
+review and a performed decision missing from the record cannot be distinguished
+merely by that result.
 
 ## The shape of the instrument
 
-Step back, because the instrument's shape is clearest now that its reach is right.
+The recognition loss is unmeasured and unread by downstream rules. That limits
+its formal effects, while the void's blanket exclusion from recognition reaches
+unrelated contributions as well as the challenged conduct. No arithmetic means
+no partial loss; it does not prove fairness or eliminate discretion over the
+finding that triggers it.
 
-Clawback is deliberately blunt. It has no proportion, no assessment, no discretion.
-That bluntness is a feature where it applies to the person who was voided: there is
-no space for an official to decide that this fraudster deserves to keep a little, or
-that one deserves to lose more, and therefore no space for that decision to be bought
-or leaned on. Bluntness is what makes it fair *to the guilty*.
-
-And that same bluntness is what made it wrong for Cira. An instrument with no notion
-of degree cannot distinguish the student who colluded from the student who was
-deceived, because distinguishing is exactly what it does not do. The repair honoured
-that instead of fighting it. Sharpening the instrument — teaching it degrees,
-culpability, circumstances — would have rebuilt exactly the discretion an earlier
-chapter abolished, one assessment at a time. So the design cut the instrument's
-reach instead: the voided person's own recognition and nothing else. Never a
-student. Never the floor, never liberty, never personhood. Used bluntly, even used
-wrongly, the worst it can now do is reach for what the guilty were given.
-
-The loss against Bela and its absence for Cira compress the design into one
-afternoon: recognition may answer only for the recognised person's own
-adjudicated fraud, never for another person's. Even there it remains a
-conclusion about recognition, not restitution or an economic penalty. The next
-part of the book concerns what no such conclusion can take.
+The boundary is personal responsibility within this mechanism. Bela's void
+produces Bela's loss, not Cira's. Even a properly established finding supplies
+no economic penalty through this relation and takes no standing, floor or
+liberty. The next chapters examine those retained rights and the separate powers
+that can restrict movement.

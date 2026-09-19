@@ -1,25 +1,22 @@
 # When There Is Genuinely Not Enough
 
-The chapter on what you are owed said what the design owes every person; the
-last one said what it takes before the record will agree that any of it
-reached anyone. This chapter is about the sentence that gets used to excuse
-both — there was not enough. That sentence is dangerous in a particular way:
-it converts a failure into a fact of nature, and a fact of nature is nobody's
-doing. So the design does not take it on trust, and most of what follows is
-the machinery of not taking it on trust.
+An entitlement can remain in force when there is not enough usable supply to
+meet every claim. The constitution therefore needs a way to allocate what is
+available without treating the unmet part as something the person was never
+owed.
 
-Everything here is a statement about what a supplied record can establish.
-None of it counts a stock, forecasts a supply, or finds that any particular
-person went without.
+The chapter's case follows a finding of physical scarcity, an allocation under
+it and a recorded shortfall. The manager has bounded authority to administer
+that resource. The claimant retains personhood, the food debt and the vote;
+the shortfall produces neither a loss of recognition nor confinement. None
+of those conclusions establishes what was actually available or delivered.
 
-Sometimes there is not enough of something, and the design has to say what
-happens without letting that sentence do more work than it should. Almost
-everything that gets called a shortage is not one. A budget that was spent
-elsewhere, a price that excludes people, an administrative delay, stock held
-back, a monopoly, a provider that failed, a decision not to buy any — each of
-these is a failure, and each is named in the record as a failure rather than a
-shortage. Establishing that a shortage was really one of them stops the finding
-it targets, and what was withheld is owed back.
+The ground for using this route matters. A budget choice, exclusion by price,
+administrative delay, artificial withholding, monopoly, provider failure or
+refusal to procure is not an authorised substitute for physical scarcity.
+A separate test establishes that the claimed shortage was a budget choice.
+The scarcity finding, allocation and shortfall conclusions then cease to
+follow. The person's floor entitlement remains.
 
 ## What has to be true before the word may be used
 
@@ -30,12 +27,14 @@ substitution, coordination, replenishment and mutual assistance must already
 have been considered. There must be public reasons in a usable form, a
 challenge, an independent reviewer who is not the body managing the shortage,
 fresh evidence for any reassessment, and an end. A finding grants no standing
-power: when its authority lapses, the manager stops, and the floor and
-continuity routes do not.
+power: when its authority lapses, authority to administer the shortage stops
+following. The floor and continuity obligations remain. The rules do not
+establish that the manager actually stops.
 
 ## What a finding lets anybody do
 
-What follows from a finding is bounded in the same way. Every constitutional
+An allocation must stay within the finding's resource, population and scope.
+Every constitutional
 minimum is preserved wherever usable supply permits, and a reduced ration is
 never renamed as the minimum. Where an effective usable equal share exists, that
 is the answer; where dividing would leave everyone with a useless fragment, it
@@ -46,7 +45,7 @@ resource-specific benefit assessed after accommodation — not on the person.
 
 ## What may never decide it
 
-What may never decide it is written out: wealth, contribution, recognition, a
+The forbidden priority keys are explicit: wealth, contribution, recognition, a
 conviction, family status, a stereotype about disability, expected
 productivity, social usefulness, a general figure for how long someone might
 live, political favour, nationality, citizenship, immigration status,
@@ -83,37 +82,34 @@ automatic individual remedy.
 
 ## The conflicts that are not about supply
 
-Conflicts that are not about supply get the same treatment: property against
+Other conflicts have distinct grounds and review: property against
 the floor and the commons, expression against evidenced harm, privacy against
 public accountability, local choice against portability, present claims against
 future conditions, and emergency action against what may never be suspended.
-Each is named, and each resolves on a rule stated in advance rather than on a
-priority nobody wrote down.
+Each requires the applicable constitutional limit and a reviewable resolution.
+Naming the conflict does not authorise a reviewer to invent a priority or
+establish that an actual dispute has been resolved.
 
 ## The child with nobody
 
-The population a shortage is found for is a value somebody writes down, not
-something the rules work out, so nothing here can promise that the child with
-nobody is named in it. What the design does instead is take away every reason
-to leave the child out. Family status is refused as a priority key by name,
-and so are documentation, nationality, citizenship, immigration status and the
-manner of somebody's arrival — each of them an entry the child does not have,
-and each of them refused as a ground for going last. With a whole sequence in
-the record — a finding, an allocation made under it, and a shortfall recorded
-as failure — nothing about the child moves: personhood holds, the food debt
-holds, no recognition is docked, and nobody is confined. What does not follow
-is a meal. A shortfall recorded as failure is still a shortfall, and the
-person who went without is still without.
+The affected population is supplied, not discovered by the rules. Nothing in
+the case establishes that Nell was included in it. Family status,
+documentation, nationality, citizenship, immigration status and manner of
+arrival are forbidden priority keys; they cannot justify sending a claim to
+the back of the queue.
+
+With the scarcity sequence present, Nell's personhood and food debt still
+follow, and neither loss of recognition nor confinement does. Food receipt
+does not follow either. These checks establish retained rights, not inclusion
+in an allocation or a meal delivered to the child.
 
 ## What none of this counts
 
-None of this counts anything. It holds no stock, forecasts no supply, measures
-no shortage, and establishes nothing about whether anything was procured,
-delivered, restored or repaired. It says what must be true before scarcity may be acted on, and what
-stays owed to the person who went without.
+The formal record tests the required evidence and permitted grounds. It does
+not count stock, forecast supply or establish that a shortage is real.
+Inventories, reserves, production, capacity, queues and the work of delivering
+what is available belong to the second book's operating account.
 
-Evidence collection and assurance, inventories, forecasts, quantities,
-reserves, production, capacity, queues and workflows belong to the second
-book. This record can say which named ground a finding claims, and refuse a
-finding that claims none; it cannot tell whether the shortage behind it was
-real.
+The constitutional question continues after the finding: who must answer for
+the unmet claim, maintain continuity and pursue remedy? The next chapter
+follows those public duties.

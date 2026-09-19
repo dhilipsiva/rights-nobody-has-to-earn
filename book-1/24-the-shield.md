@@ -1,18 +1,16 @@
 # The Shield
 
 A disclosure against a publicly answerable actor opens protection against
-conviction while that disclosure stands. The protection begins before anyone
-has decided whether the disclosure is true. It covers a prosecution until a
-qualified, independent case finding establishes that the prosecution is
-unrelated to the disclosure. The person making the disclosure does not have
+conviction while no deceit is recorded against that exposure. The protection
+begins before anyone has decided whether the disclosure is true. A qualified,
+independent case finding can instead establish that a prosecution is unrelated
+to the disclosure. The person making the disclosure does not have
 to obtain that finding to receive protection.
 
-The finding is a demanding one. The reviewers need authority for the exact
-case. Separate qualification and review functions must positively establish
-their eligibility and independence. Neither a reviewer nor a qualifier may
-be the defendant, the injured person or the prosecuting court; the functions
-cannot be combined. A finding of actual conflict stops the affected decision.
-Merely naming a reviewer in a disclosure does not establish that conflict.
+The case finding needs authorised, independently qualified reviewers. Neither
+the defendant nor the injured person nor the prosecuting court may decide it.
+An established conflict defeats the affected decision; merely naming a reviewer
+in a disclosure does not. Rex's sequence below tests that distinction.
 
 Those are conditions on the record. They establish neither an honest hearing
 nor anyone's physical freedom. The cases below show what follows when the
@@ -37,7 +35,7 @@ in the supplied record, not a lawful way to appoint a victim to public office.
 ## Sly
 
 Sly injured Pax and exposed the court. The court is publicly answerable, and
-there is no deceit finding against that exposure. Sly's shield holds.
+there is no recorded deceit against that exposure. Sly's shield holds.
 
 A missing adverse finding is enough for protection to continue. It is not a
 finding that Sly told the truth. Nor does the recorded injury make the
@@ -65,14 +63,16 @@ questions about the offence.
 
 ## Kel
 
-Kel injured Pax and exposed the court. The review body then examined that
-exposure and found it deceitful.
+Kel injured Pax and exposed the court. The record supplies deceit for that
+exposure and a Review judgment of Kel. The deceit entry defeats this shield,
+so Kel's otherwise complete conviction derives. Together with the Review
+judgment, it also produces a void and recognition loss; it takes no wage, property, pension, or floor right.
 
-That finding defeats the shield opened by that exposure. Kel's conviction
-derives. The adjudicated deceit also reaches credibility and a recorded loss
-of recognition; it takes no wage, property, pension, or floor right.
-These consequences rest on supplied findings. A record naming an examination
-is not proof that the examination happened or was fair.
+The two requirements differ. The shield rule reads the deceit entry directly;
+it does not require the Review judgment that the void rule also needs. Kel's
+case supplies both, but cannot establish that every withdrawal of a shield
+requires an adjudicated finding. Nor does the supplied judgment establish
+that a hearing occurred or was fair.
 
 The finding concerns this exposure. It does not establish that every later
 statement by Kel is false, and it does not make Kel ineligible for protection
@@ -83,7 +83,7 @@ against a different act of retaliation.
 Rex injured Sena and exposed the court. The review body found that exposure
 deceitful. Rex then exposed the review body.
 
-The second exposure has no deceit finding against it, so the shield derives
+The second exposure has no recorded deceit against it, so the shield derives
 again. Rex is both discredited and shielded. Protection does not read the
 claimant's general credibility: a finding that reaches recognition does not
 become permission to retaliate.
@@ -161,3 +161,7 @@ independence in fact, advance the outside clock or enforce a remedy. Those
 are requirements for the second book's operating account. The record can
 identify the findings still needed; it cannot supply them for the people
 waiting on either side of the case.
+
+The shield separates protection from approval of the claimant's conduct. The
+next chapter turns to the adverse findings themselves: what a void requires,
+what it reaches and what must remain untouched.

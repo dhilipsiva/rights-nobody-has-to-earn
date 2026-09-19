@@ -2,13 +2,12 @@
 #
 # KIND: CONTENT pin. Run:
 #   ./verify.sh --only book-1/26-clawback.pins.nibli
-#   ./verify.sh          # the real check — the line above cannot see
-#                        # the cross-file reconciliation or the prose guards
+#   ./verify.sh          # all substantive pins and contradiction checks
 #
 # [v0.9 2026-08-02] THE CIRA DEFECT IS RESOLVED — the student clawback rule is
 # deleted from Article 4, exactly the repair the old :defect directive here
 # named. lose(Points, Cira) now pins FALSE as a plain verdict, and the chapter's
-# middle section is rewritten to tell the rule's deletion as history. The
+# reader account states the current personal boundary. The
 # reasoning that forced deletion rather than narrowing stays on record: students
 # never mint (the grades ruling), so "claw back only recognition derived from
 # the fraudulent teaching" had an empty target — narrowing was always repeal.

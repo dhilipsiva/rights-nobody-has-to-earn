@@ -2,8 +2,7 @@
 #
 # KIND: CONTENT pin. Run:
 #   ./verify.sh --only book-1/09-earning-above-the-floor.pins.nibli
-#   ./verify.sh          # the real check — the line above cannot see
-#                        # the cross-file reconciliation or the prose guards
+#   ./verify.sh          # all substantive pins and contradiction checks
 #
 # The chapter's case lists tests/pins/records/child_with_nobody/fixture.nibli,
 # so Nell is in the record with one entry. Every other probe name below is
@@ -38,8 +37,8 @@
 
 :expect-pins 56
 
-# "a rule that tried to condition any of those on work would be refused" — the
-# barriers, held for a cast member by name.
+# Constitutional prohibitions hold for a cast member by name. A prevents
+# conclusion alone is not proof that the engine rejects every prohibited rule.
 ? prevents(Adam, FloorContributionCondition).
 # => TRUE
 
@@ -128,7 +127,7 @@
 # => TRUE
 
 # "The family ships dormant" — nobody in the cast holds a supplement, a wage or
-# a certificate. A contribution record, a promise or an attestation would flip each.
+# a certificate. Each needs its complete authorised, matching premises to derive.
 ? insure(Ledgerhouse, Adam, Illness).
 # => FALSE
 
@@ -166,7 +165,7 @@ observe(Ledgerhouse, Illness, Teodora, SchemeM).
 # => FALSE
 
 # "When the carrier fails, the same record and the same finding conclude the
-# supplement against the public guarantee instead."
+# supplement against the public guarantee as well."
 ? insure(PublicGuarantee, Marlo, Illness).
 # => FALSE
 
@@ -216,8 +215,8 @@ observe(Steward, Metric, Dunya, PerformanceBasis).
 ? reward(Coll).
 # => FALSE
 
-# "Only a court's finding of fraud on the attested basis blocks the payment,
-# and that finding concludes restitution by the person to the payer"
+# A Court finding on the attested basis stops this compensation conclusion
+# and derives restitution. Neither conclusion establishes payment.
 ? provide(Coll, Restitution, Foundry).
 # => FALSE
 
@@ -232,7 +231,7 @@ observe(Court, CompensationFraud, Coll, LabourBasis).
 ? entitled(Adam, event { eats() }).
 # => TRUE
 
-# "For the child with nobody, this chapter reaches nothing, and that is the point"
+# No supplement, compensation or certificate derives for the supplied child.
 ? insure(Ledgerhouse, Nell, Illness).
 # => FALSE
 

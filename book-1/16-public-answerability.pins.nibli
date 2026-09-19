@@ -1,11 +1,10 @@
-# ── Chapter 16 fidelity pins: "Standing, and Why It Is Never Revoked" ─────────
+# ── Chapter 16 fidelity pins: "Public Answerability, and Why It Is Never Revoked" ─────────
 #
 # FS-CVF-003 executable coverage is delegated to book-1/source/state-form.pins.nibli.
 #
 # KIND: CONTENT pin. Run:
 #   ./verify.sh --only book-1/16-public-answerability.pins.nibli
-#   ./verify.sh          # the real check — the line above cannot see
-#                        # the cross-file reconciliation or the prose guards
+#   ./verify.sh          # all substantive pins and contradiction checks
 #
 # One entry per load-bearing sentence. Private to the author.
 
@@ -91,7 +90,7 @@ authority(Pax).
 ? authority(Koa).
 # => FALSE
 
-# "Someone can hold standing and be able to do nothing whatever."
+# Public answerability does not itself issue an auditor credential.
 # The Court is the complement: standing it can never convert into a pen, because
 # `public` deliberately does not flow into the Review credential rule.
 ? authority(Court).
@@ -137,8 +136,7 @@ authority(Pax).
 ? owe(State, Eats, Nell).
 # => TRUE
 
-# "The child cannot ask, cannot complain and cannot expose anybody, and the
-# answerability of whoever owes them is unchanged by all three." The child
-# holds no office and acquires none by being owed something.
+# The State's answerability does not depend on a request or exposure by Nell.
+# The child holds no office and acquires none by being owed something.
 ? authority(Nell).
 # => FALSE

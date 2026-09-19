@@ -4,8 +4,7 @@
 #
 # KIND: CONTENT pin. Run:
 #   ./verify.sh --only book-1/23-who-holds-the-pen.pins.nibli
-#   ./verify.sh          # the real check — the line above cannot see
-#                        # the cross-file reconciliation or the prose guards
+#   ./verify.sh          # all substantive pins and contradiction checks
 
 # WHAT FALSE MEANS HERE — three kinds, and only one is a verdict. A FALSE on a
 # corpus name this KB never mentions is real but empty: nothing could have made
@@ -103,8 +102,8 @@ clear(Adam).
 # ── THE BARE JUDGMENT DERIVES NOTHING EITHER — the other half, ruled 2026-08-02.
 # The chapter's new default paragraph stands on this pair: an appeals
 # examination that cleared nobody leaves the conviction exactly where it stood.
-# Relief takes both entries; either alone is an absence, and the absence
-# convicts — fail-closed, defended at Article 6's head. Voss is fresh (Adam's
+# Relief takes both entries. Missing relief permits the prisoner conclusion
+# only when all other custody premises hold. Voss is fresh (Adam's
 # persisting clear-flag above must not meet a judgment fact, or the two halves
 # would combine and free him). Self-controlling against Nia's block above:
 # both entries together lift a conviction, either alone lifts nothing.

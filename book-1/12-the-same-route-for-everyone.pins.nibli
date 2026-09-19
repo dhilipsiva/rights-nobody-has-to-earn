@@ -2,8 +2,7 @@
 #
 # KIND: CONTENT pin. Run:
 #   ./verify.sh --only book-1/12-the-same-route-for-everyone.pins.nibli
-#   ./verify.sh          # the real check — the line above cannot see
-#                        # the cross-file reconciliation or the prose guards
+#   ./verify.sh          # all substantive pins and contradiction checks
 #
 # The chapter's case lists tests/pins/records/child_with_nobody/fixture.nibli.
 # Quillon, the one probe witness below, is fresh.
@@ -23,7 +22,7 @@
 
 :expect-pins 71
 
-# "every person receives equal and effective protection" — the baseline, the grounds and the forms
+# Every person is owed equal and effective protection — the baseline, the grounds and the forms
 ? prevents(Adam, SubstantiveEqualityStatus).
 # => TRUE
 
@@ -162,7 +161,7 @@
 ? prevents(Adam, CrossBoundaryEqualityEvasion).
 # => TRUE
 
-# "The old distinctions under the new test"
+# "The design must meet its own test"
 ? prevents(Adam, FamilyStatusSubstitution).
 # => TRUE
 

@@ -48,11 +48,11 @@
     {
       "id": "01-03",
       "chapter": "book-1/01-the-child-with-nobody.md",
-      "section": "The duty that needs no family in the record",
+      "section": "Help that does not wait for a request",
       "domain": "Life course, family, care and reproduction",
       "family": "FAMILY-LIFE-ORDINARY",
       "function": "ordinary",
-      "setting": "immediate care continuity with no role in the record",
+      "setting": "unconditional initiation and specific care continuity without a family role",
       "trajectory": "works",
       "basis": "book-1/01-the-child-with-nobody.pins.nibli",
       "pattern": "constructive",
@@ -93,7 +93,7 @@
     {
       "id": "01-06",
       "chapter": "book-1/01-the-child-with-nobody.md",
-      "section": "What this chapter does not establish",
+      "section": "Where the case leads",
       "domain": "Personhood and equality",
       "family": "UNIVERSAL-STANDING",
       "function": "protective",
@@ -157,7 +157,7 @@
       "domain": "Personhood and equality",
       "family": "UNIVERSAL-STANDING",
       "function": "protective",
-      "setting": "an entry recording somebody as dead",
+      "setting": "a broken registry entry alongside a valid standing root",
       "trajectory": "works",
       "basis": "book-1/02-who-counts.pins.nibli",
       "pattern": "constructive",
@@ -168,7 +168,7 @@
     {
       "id": "02-04",
       "chapter": "book-1/02-who-counts.md",
-      "section": "The standing roots do not replace this line",
+      "section": "Standing without a roster",
       "domain": "Personhood and equality",
       "family": "UNIVERSAL-STANDING",
       "function": "ordinary",
@@ -258,7 +258,7 @@
     {
       "id": "03-03",
       "chapter": "book-1/03-what-counts-as-evidence.md",
-      "section": "One person's word does not move anything",
+      "section": "One finding is not a voiding",
       "domain": "Records and accountability",
       "family": "ARTICLES",
       "function": "protective",
@@ -273,7 +273,7 @@
     {
       "id": "03-04",
       "chapter": "book-1/03-what-counts-as-evidence.md",
-      "section": "The way this gets taken apart",
+      "section": "Changing the vocabulary",
       "domain": "Records and accountability",
       "family": "ARTICLES",
       "function": "protective",
@@ -288,7 +288,7 @@
     {
       "id": "03-05",
       "chapter": "book-1/03-what-counts-as-evidence.md",
-      "section": "The other way in",
+      "section": "False or missing inputs",
       "domain": "Records and accountability",
       "family": "ARTICLES",
       "function": "protective",
@@ -408,7 +408,7 @@
     {
       "id": "05-02",
       "chapter": "book-1/05-whether-it-arrived.md",
-      "section": "Five things that are not each other",
+      "section": "Different kinds of claim",
       "domain": "Material floor",
       "family": "DELIVERY-RECEIPT",
       "function": "both",
@@ -423,7 +423,7 @@
     {
       "id": "05-03",
       "chapter": "book-1/05-whether-it-arrived.md",
-      "section": "What that does not fix",
+      "section": "Shelter that follows from holding",
       "domain": "Material floor",
       "family": "DELIVERY-RECEIPT",
       "function": "ordinary",
@@ -661,48 +661,19 @@
       ]
     },
     {
-      "id": "07-04",
+      "id": "07-06",
       "chapter": "book-1/07-who-owes-and-what-follows.md",
-      "section": "Duties do not all run to the same place",
-      "domain": "Material floor",
+      "section": "Duties are not a price for rights",
+      "domain": "Personhood and equality",
       "family": "OBLIGATIONS",
       "function": "protective",
-      "setting": "two duties and no priority record between them",
+      "setting": "rights retained through civic breach, competing duties and reviewed excuses",
       "trajectory": "contested",
       "basis": "book-1/07-who-owes-and-what-follows.pins.nibli",
       "pattern": "constructive",
       "postures": [
+        "is acted upon",
         "receives"
-      ]
-    },
-    {
-      "id": "07-05",
-      "chapter": "book-1/07-who-owes-and-what-follows.md",
-      "section": "An excuse has to arrive as a record",
-      "domain": "Material floor",
-      "family": "OBLIGATIONS",
-      "function": "continuity",
-      "setting": "a bearer who cannot perform",
-      "trajectory": "continuity-remedy",
-      "basis": "book-1/07-who-owes-and-what-follows.pins.nibli",
-      "pattern": "constructive",
-      "postures": [
-        "receives"
-      ]
-    },
-    {
-      "id": "07-06",
-      "chapter": "book-1/07-who-owes-and-what-follows.md",
-      "section": "Civic duties, and what their breach cannot reach",
-      "domain": "Personhood and equality",
-      "family": "OBLIGATIONS",
-      "function": "protective",
-      "setting": "somebody who did not work, pay, identify or comply",
-      "trajectory": "works",
-      "basis": "book-1/07-who-owes-and-what-follows.pins.nibli",
-      "pattern": "constructive",
-      "postures": [
-        "is acted upon"
       ]
     },
     {
@@ -712,7 +683,7 @@
       "domain": "Records and accountability",
       "family": "OBLIGATIONS",
       "function": "both",
-      "setting": "a finding, a named reader, and an alternate",
+      "setting": "a finding, independent reader, certified nonresponse, alternate and distinct remedies",
       "trajectory": "continuity-remedy",
       "basis": "book-1/07-who-owes-and-what-follows.pins.nibli",
       "pattern": "records",
@@ -736,21 +707,6 @@
       ]
     },
     {
-      "id": "07-09",
-      "chapter": "book-1/07-who-owes-and-what-follows.md",
-      "section": "The lifecycle, and the record each step needs",
-      "domain": "Records and accountability",
-      "family": "OBLIGATIONS",
-      "function": "both",
-      "setting": "entitlement, offer, arrival, dispute, continuity, remedy",
-      "trajectory": "continuity-remedy",
-      "basis": "book-1/07-who-owes-and-what-follows.pins.nibli",
-      "pattern": "records",
-      "postures": [
-        "challenges"
-      ]
-    },
-    {
       "id": "07-10",
       "chapter": "book-1/07-who-owes-and-what-follows.md",
       "section": "Economic wrongs, one route at a time",
@@ -763,21 +719,6 @@
       "pattern": "constructive",
       "postures": [
         "works"
-      ]
-    },
-    {
-      "id": "07-11",
-      "chapter": "book-1/07-who-owes-and-what-follows.md",
-      "section": "Silence at a review supplies nothing",
-      "domain": "Records and accountability",
-      "family": "OBLIGATIONS",
-      "function": "protective",
-      "setting": "a review nobody answered",
-      "trajectory": "contested",
-      "basis": "book-1/07-who-owes-and-what-follows.pins.nibli",
-      "pattern": "records",
-      "postures": [
-        "challenges"
       ]
     },
     {
@@ -1119,7 +1060,7 @@
     {
       "id": "10-03",
       "chapter": "book-1/10-contribution.md",
-      "section": "Nothing to earn it back with",
+      "section": "While the void stands",
       "domain": "Economy, property, work and commons",
       "family": "ARTICLES",
       "function": "protective",
@@ -1437,7 +1378,7 @@
     {
       "id": "12-08",
       "chapter": "book-1/12-the-same-route-for-everyone.md",
-      "section": "The old distinctions under the new test",
+      "section": "The design must meet its own test",
       "domain": "Personhood and equality",
       "family": "SUBSTANTIVE-EQUALITY",
       "function": "protective",
@@ -1768,7 +1709,7 @@
     {
       "id": "14-10",
       "chapter": "book-1/14-holding-a-role-in-somebodys-life.md",
-      "section": "Children, the difference between not yet and taken — and a third thing",
+      "section": "Adulthood and missing evidence",
       "domain": "Life course, family, care and reproduction",
       "family": "FAMILY-LIFE-COURSE",
       "function": "protective",
@@ -1934,7 +1875,7 @@
     {
       "id": "16-01",
       "chapter": "book-1/16-public-answerability.md",
-      "section": "The part that looks like a mistake",
+      "section": "Why recall leaves answerability intact",
       "domain": "Public institutions",
       "family": "STATE-FORM",
       "function": "protective",
@@ -2189,7 +2130,7 @@
     {
       "id": "18-01",
       "chapter": "book-1/18-the-vote-conviction-does-not-take.md",
-      "section": "The theorem this completes",
+      "section": "What conviction leaves intact",
       "domain": "Democracy and amendment",
       "family": "ARTICLES",
       "function": "ordinary",
@@ -2204,7 +2145,7 @@
     {
       "id": "18-02",
       "chapter": "book-1/18-the-vote-conviction-does-not-take.md",
-      "section": "The harsher test",
+      "section": "A void does not remove the vote",
       "domain": "Records and accountability",
       "family": "ARTICLES",
       "function": "protective",
@@ -2234,7 +2175,7 @@
     {
       "id": "18-04",
       "chapter": "book-1/18-the-vote-conviction-does-not-take.md",
-      "section": "The part that is weaker than it looks",
+      "section": "How the executable protection works",
       "domain": "Democracy and amendment",
       "family": "ARTICLES",
       "function": "protective",
@@ -2249,7 +2190,7 @@
     {
       "id": "18-05",
       "chapter": "book-1/18-the-vote-conviction-does-not-take.md",
-      "section": "And the same silence as before",
+      "section": "A right still needs a ballot",
       "domain": "Democracy and amendment",
       "family": "STATE-FORM",
       "function": "ordinary",
@@ -2609,11 +2550,11 @@
     {
       "id": "22-01",
       "chapter": "book-1/22-changing-the-rules.md",
-      "section": "Approved and marked dead",
+      "section": "Certification, publication and effect",
       "domain": "Democracy and amendment",
       "family": "AMENDMENT-ENACTMENT",
       "function": "protective",
-      "setting": "an approved amendment marked dead",
+      "setting": "exact candidate certification, publication and effective selection",
       "trajectory": "works",
       "basis": "book-1/22-changing-the-rules.pins.nibli",
       "pattern": "democratic",
@@ -2624,12 +2565,27 @@
     {
       "id": "22-02",
       "chapter": "book-1/22-changing-the-rules.md",
-      "section": "Why the list guards itself",
+      "section": "The protected core",
       "domain": "Democracy and amendment",
       "family": "AMENDMENT-ENACTMENT",
       "function": "protective",
-      "setting": "the register that guards itself",
+      "setting": "unamendable human, commons and animal cores",
       "trajectory": "works",
+      "basis": "book-1/22-changing-the-rules.pins.nibli",
+      "pattern": "democratic",
+      "postures": [
+        "governs"
+      ]
+    },
+    {
+      "id": "22-05",
+      "chapter": "book-1/22-changing-the-rules.md",
+      "section": "The law label",
+      "domain": "Democracy and amendment",
+      "family": "AMENDMENT-ENACTMENT",
+      "function": "protective",
+      "setting": "the label against the exact change",
+      "trajectory": "unresolved",
       "basis": "book-1/22-changing-the-rules.pins.nibli",
       "pattern": "democratic",
       "postures": [
@@ -2639,7 +2595,7 @@
     {
       "id": "22-03",
       "chapter": "book-1/22-changing-the-rules.md",
-      "section": "The word the machinery borrows, and the person it nearly cost",
+      "section": "People and proposal names",
       "domain": "Democracy and amendment",
       "family": "ARTICLES",
       "function": "protective",
@@ -2654,27 +2610,12 @@
     {
       "id": "22-04",
       "chapter": "book-1/22-changing-the-rules.md",
-      "section": "What this actually costs",
+      "section": "What entrenchment requires",
       "domain": "Democracy and amendment",
       "family": "AMENDMENT-ENACTMENT",
       "function": "protective",
-      "setting": "a deliberately anti-democratic limit",
+      "setting": "the democratic cost and evidence requirements of entrenchment",
       "trajectory": "contested",
-      "basis": "book-1/22-changing-the-rules.pins.nibli",
-      "pattern": "democratic",
-      "postures": [
-        "governs"
-      ]
-    },
-    {
-      "id": "22-05",
-      "chapter": "book-1/22-changing-the-rules.md",
-      "section": "Why this is thinner than it looks",
-      "domain": "Democracy and amendment",
-      "family": "AMENDMENT-ENACTMENT",
-      "function": "protective",
-      "setting": "the label against the exact change",
-      "trajectory": "unresolved",
       "basis": "book-1/22-changing-the-rules.pins.nibli",
       "pattern": "democratic",
       "postures": [
@@ -2714,7 +2655,7 @@
     {
       "id": "23-01",
       "chapter": "book-1/23-who-holds-the-pen.md",
-      "section": "The gap that used to be here",
+      "section": "A credential must derive",
       "domain": "Public institutions",
       "family": "ARTICLES",
       "function": "protective",
@@ -2759,7 +2700,7 @@
     {
       "id": "23-04",
       "chapter": "book-1/23-who-holds-the-pen.md",
-      "section": "The other pen",
+      "section": "Relief on appeal",
       "domain": "Public institutions",
       "family": "ARTICLES",
       "function": "ordinary",
@@ -3104,7 +3045,7 @@
     {
       "id": "27-02",
       "chapter": "book-1/27-a-prisoner-is-a-person.md",
-      "section": "The part nobody predicts",
+      "section": "A hostile rule the engine refuses",
       "domain": "Personhood and equality",
       "family": "ARTICLES",
       "function": "protective",
@@ -3168,7 +3109,7 @@
       "domain": "Justice and coercion",
       "family": "PLACEMENT",
       "function": "ordinary",
-      "setting": "placement without discretion",
+      "setting": "placement from custody, severity and home availability",
       "trajectory": "works",
       "basis": "book-1/28-where-people-are-put.pins.nibli",
       "pattern": "coercive",
@@ -3179,11 +3120,11 @@
     {
       "id": "28-01",
       "chapter": "book-1/28-where-people-are-put.md",
-      "section": "The farmhouse",
+      "section": "What makes an offence severe",
       "domain": "Justice and coercion",
       "family": "PLACEMENT",
       "function": "protective",
-      "setting": "severity and the domestic case",
+      "setting": "the qualifying grounds for severity",
       "trajectory": "contested",
       "basis": "book-1/28-where-people-are-put.pins.nibli",
       "pattern": "coercive",
@@ -3194,11 +3135,11 @@
     {
       "id": "28-02",
       "chapter": "book-1/28-where-people-are-put.md",
-      "section": "The alarm that did not work",
+      "section": "What the placement alarm sees",
       "domain": "Justice and coercion",
       "family": "PLACEMENT",
       "function": "continuity",
-      "setting": "a marker added to catch a reopened hole",
+      "setting": "reported placement against eligibility and the review duty",
       "trajectory": "continuity-remedy",
       "basis": "book-1/28-where-people-are-put.pins.nibli",
       "pattern": "coercive",
@@ -3209,11 +3150,11 @@
     {
       "id": "28-03",
       "chapter": "book-1/28-where-people-are-put.md",
-      "section": "What survives",
+      "section": "A fixed route still depends on evidence",
       "domain": "Justice and coercion",
       "family": "PLACEMENT",
       "function": "ordinary",
-      "setting": "placement derived, never chosen",
+      "setting": "fixed routing depends on evidence",
       "trajectory": "works",
       "basis": "book-1/28-where-people-are-put.pins.nibli",
       "pattern": "coercive",
@@ -3224,7 +3165,7 @@
     {
       "id": "28-04",
       "chapter": "book-1/28-where-people-are-put.md",
-      "section": "The case nobody wrote a rule for",
+      "section": "Eligible, with no home option recorded",
       "domain": "Justice and coercion",
       "family": "PLACEMENT",
       "function": "protective",
@@ -3239,11 +3180,11 @@
     {
       "id": "28-05",
       "chapter": "book-1/28-where-people-are-put.md",
-      "section": "What was actually missing",
+      "section": "Housing without a destination",
       "domain": "Material floor",
       "family": "PLACEMENT",
       "function": "continuity",
-      "setting": "confinement that houses",
+      "setting": "housing status without a delivered destination",
       "trajectory": "continuity-remedy",
       "basis": "book-1/28-where-people-are-put.pins.nibli",
       "pattern": "constructive",
@@ -3314,7 +3255,7 @@
     {
       "id": "29-03",
       "chapter": "book-1/29-the-one-thing-taken.md",
-      "section": "Why nothing follows from it",
+      "section": "Why the legal loss stops at movement",
       "domain": "Public safety, policing and use of force",
       "family": "ARTICLES",
       "function": "protective",
@@ -3329,7 +3270,7 @@
     {
       "id": "29-04",
       "chapter": "book-1/29-the-one-thing-taken.md",
-      "section": "What is not said",
+      "section": "What custody owes",
       "domain": "Public safety, policing and use of force",
       "family": "PUBLIC-SAFETY",
       "function": "ordinary",
@@ -3344,7 +3285,7 @@
     {
       "id": "29-05",
       "chapter": "book-1/29-the-one-thing-taken.md",
-      "section": "And the authority must be current",
+      "section": "The authority must be current",
       "domain": "Public safety, policing and use of force",
       "family": "ARTICLES",
       "function": "protective",
@@ -3359,7 +3300,7 @@
     {
       "id": "29-06",
       "chapter": "book-1/29-the-one-thing-taken.md",
-      "section": "What leaving costs",
+      "section": "What leaving changes",
       "domain": "Public safety, policing and use of force",
       "family": "NON-CARCERAL-JUSTICE",
       "function": "continuity",
@@ -3404,7 +3345,7 @@
     {
       "id": "30-01",
       "chapter": "book-1/30-when-the-system-notices-it-broke.md",
-      "section": "The one that fires on everybody",
+      "section": "An absence mistaken for isolation",
       "domain": "Records and accountability",
       "family": "ARTICLES",
       "function": "protective",
@@ -3419,11 +3360,11 @@
     {
       "id": "30-02",
       "chapter": "book-1/30-when-the-system-notices-it-broke.md",
-      "section": "The one that fired on the wrong people",
+      "section": "A placement report against a rule",
       "domain": "Records and accountability",
       "family": "PLACEMENT",
       "function": "continuity",
-      "setting": "an alarm that fired on the wrong people",
+      "setting": "a placement report tested against derived eligibility",
       "trajectory": "continuity-remedy",
       "basis": "book-1/30-when-the-system-notices-it-broke.pins.nibli",
       "pattern": "records",
@@ -3434,11 +3375,11 @@
     {
       "id": "30-03",
       "chapter": "book-1/30-when-the-system-notices-it-broke.md",
-      "section": "And then a duty, which no longer has to be the end",
+      "section": "From a marker to a duty",
       "domain": "Records and accountability",
       "family": "OBLIGATIONS",
       "function": "continuity",
-      "setting": "a breach that now creates a duty",
+      "setting": "a breach marker connected to a review duty",
       "trajectory": "continuity-remedy",
       "basis": "book-1/30-when-the-system-notices-it-broke.pins.nibli",
       "pattern": "records",
@@ -3465,7 +3406,7 @@
     {
       "id": "30-05",
       "chapter": "book-1/30-when-the-system-notices-it-broke.md",
-      "section": "When the office itself is the thing that failed",
+      "section": "When the responsible office fails",
       "domain": "Records and accountability",
       "family": "OBLIGATIONS",
       "function": "continuity",
@@ -3480,7 +3421,7 @@
     {
       "id": "30-06",
       "chapter": "book-1/30-when-the-system-notices-it-broke.md",
-      "section": "What it does have",
+      "section": "What can be checked",
       "domain": "Records and accountability",
       "family": "OBLIGATIONS",
       "function": "protective",
@@ -3600,7 +3541,7 @@
     {
       "id": "31-06",
       "chapter": "book-1/31-the-five-joints.md",
-      "section": "What I will not add up",
+      "section": "What the argument asks",
       "domain": "Personhood and equality",
       "family": "exempt",
       "function": "argument",

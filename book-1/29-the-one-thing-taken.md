@@ -3,48 +3,30 @@
 The direct punishment this bounded source attaches to conviction reduces to one
 legal conclusion: the person cannot move freely.
 
-That is the whole punitive consequence derived here, not a claim that
-confinement has no material effects in the world. Employment can be interrupted,
-a tenancy can be endangered, care can be disrupted, and possessions can be put
-at risk. The constitution refuses to turn those harms into automatic legal
-forfeitures and requires separate continuity and remedy. It does not prove that
-either occurs.
+Hano's case shows what that means. Custody derives, movement does not. Hano remains a
+person, owed the whole floor, with a ballot entitlement. Conviction has not voided
+Hano or clawed back recognition. The placement rules derive housing and a Homestay
+destination. Family status is not a placement input.
 
-Hano was convicted. Take the list.
+Jala's record contains an injury to the same person, Ivo, but no conviction. Jala
+retains movement. The cases do not establish equal culpability: sharing an injury
+entry is not sharing every fact needed for judgment.
 
-Hano is a person. Hano is owed everything on the floor, in full, with no
-reduction. Hano speaks. Hano has the right to vote. Hano's credibility is intact —
-nobody has voided it, and conviction does not. Hano's recognition is untouched;
-nothing was clawed back,
-because clawback follows voiding and Hano was not voided. Hano is somewhere specific:
-once custody derives, severity and the separate typed placement-home fact determine
-the current destination. Family status is not a placement input.
+They also expose a different asymmetry. Hano derives housing and recorded speech
+through custody; Jala derives neither. That does not establish that Hano has a home
+or speaks while Jala is homeless or silent. It shows that the record supplies the
+custody route for one person and no independent delivery evidence for the other.
 
-And Hano cannot move freely.
-
-That is the difference the design intends between Hano and Jala, who did the same thing
-to the same person and was never convicted. One item taken.
-
-The lists are not otherwise identical, and the way they differ is worth seeing early,
-because the rest of this chapter turns on it. Hano has shelter and Jala does not. Hano's
-speech is on the record and Jala's is not. Hano has a placement and Jala has none, and
-the marker watching for isolation is watching Hano and not Jala. Four differences, and
-**three of them run the wrong way** — they are things the convicted man has and the free
-woman does not.
-
-As a direct legal punishment, conviction takes movement and nothing else. In
-the record supplied with this book,
-confinement is also the only active route by which a floor actuality reaches anyone.
-That is no longer the whole rulebook. Recipient-side evidence can now derive food,
-shelter, care, material security, or company without confinement, and the older
-teaching route can derive learning. No cast member carries the required receipt, so
-every non-carceral route remains dormant. The chapter comes back to that distinction
-at the end.
+As a direct legal punishment, conviction takes movement and nothing else. Its
+practical effects can be wider: missed work, threatened tenure, interrupted care,
+inaccessible possessions. The constitution requires continuity and remedy against
+those harms. Keeping them out of the legal sentence does not establish that they
+were prevented.
 
 ## Protection is not punishment
 
 One direct punishment does not mean one permissible restriction of liberty.
-Arrest, pre-trial detention, search and seizure now have separate contracts.
+Arrest, pre-trial detention, search and seizure have separate contracts.
 Each needs an individual recorded ground, an identified actor, reasons,
 accessible assistance, independent authorization and review. Search normally
 requires prior independent authority. Its immediate-danger exception is narrow,
@@ -58,7 +40,7 @@ detained for immigration purposes. An adult's immigration detention needs
 individual necessity, judicial authority, a maximum, independent review and a
 real alternative shown insufficient. Expulsion and international transfer
 must also satisfy the actual asylum, individual-decision, suspensive-appeal
-and non-refoulement safeguards described in Chapter 4. A favourable label
+and non-refoulement safeguards described in chapter 15. A favourable label
 cannot stand in for those records.
 
 Every coercive instrument has its own floor wall. None may be produced because
@@ -136,10 +118,7 @@ non-punitive, without loss of employment, education or other civil rights,
 and without repeated punishment for the continuing objection. A protective
 member must refuse a manifestly unlawful order, and that refusal is protected.
 
-## Why nothing follows from it
-
-The structural reason this holds is worth seeing, because it is not a matter of
-anyone's restraint.
+## Why the legal loss stops at movement
 
 No rule in this source converts custody into a second legal loss. Conviction
 does not by itself terminate worker status, wages already owed, pension claims,
@@ -148,185 +127,118 @@ parentage, caregiving, household membership, support, political membership, or
 remedy. Each further restriction needs its own lawful source, evidence,
 process, review, and end.
 
-That prevents a legal cascade. It does not prevent the practical cascade that
-confinement can cause when a person cannot attend work, protect a tenancy,
-maintain care, reach records, or use an ordinary service. The constitutional
-duties of continuity and remedy name what must be preserved or restored. They
-do not show that an employer, landlord, provider, court, or public body acted.
+The executable boundary is specific: no rule reads loss or movement as a premise.
+The order authorising a restriction can support review and protection, but the
+restricted capability cannot become a reason to take something else. The checks
+inspect that distinction in the source.
 
-Family status remains irrelevant to placement, and custody cannot terminate or
-transfer parentage, care, household, property, or decision authority by
-implication. The single-deprivation claim is therefore a claim about the direct
-punitive effects of this source, not a promise that administration or material
-life leaves the person with only one loss.
+This prevents a legal cascade through those conclusions. It cannot prevent a
+practical cascade by itself. A person unable to attend work or reach a service may
+need active help to keep what remains legally theirs. The continuity duties address
+that need without making custody a transfer of employment, property, family, or
+decision authority.
 
-## What is not said
+## What custody owes
 
-Now what the design does not address, which is a great deal.
+Custody carries duties of bodily integrity, humane conditions, confidential
+communication, counsel, independent complaint and inspection, and continuing care,
+education and voice. It cannot become a reproductive veto, a transfer of parentage,
+or authority over medical choices. These duties do not wait for a favourable report
+about the institution. A separately reviewed conditions finding identifies what the
+named operator must preserve; it does not establish that the conditions were provided.
 
-It says movement is taken. The newer constitutional coverage also states bodily,
-health, care, family-contact, and child-protection limits that remain in force during
-custody. Those limits bar custody from becoming a reproductive veto, a transfer of
-parentage, a family-status penalty, or authority over medical choices. They do not
-supply a clinic, contact process, advocate, inspection, accessible complaint route, or
-performed remedy.
+The building name supplies no further evidence. HighSec names a destination, and
+Homestay requires a recorded home option. No rule reads either resulting destination
+to establish its conditions or services. The housing conclusions arise alongside
+placement, through the custody and eligibility rules described in chapter 28.
 
-The record still does not describe an operating home or prison. It now places
-explicit duties on custody: bodily integrity, humane conditions, confidential
-communication, counsel, independent complaint and inspection, and continuing
-care, education and voice. These duties do not wait for a favourable report
-about the institution. A separately reviewed conditions finding identifies
-what the named operator must preserve; it does not show that the conditions
-were provided.
+The constitution therefore specifies what an operator owes without describing an
+operating prison or home. A clinic, confidential visit, accessible complaint, or
+performed remedy still needs its own evidence. Calling a place lawful cannot do
+that work.
 
-The placement itself remains silent. Sending somebody to high security
-produces the conclusion that this person is in high security, and no rule
-reads that destination to provide its conditions. The safeguards bind custody
-without making a building name evidence of compliance.
+## The authority must be current
 
-Watch it in the place you would most expect the building to matter. The shelter
-routes read custody, severity, Homestay eligibility, and the typed PlacementHome fact.
-Family does no work. Severe people derive housing through the HighSec route;
-non-severe people derive it with a Homestay destination when the typed fact is present
-and without a destination when it is absent. Not one rule reads the resulting building
-back into a condition, service, or remedy.
+Custody requires more than a judgment. The record must tie the same case to the
+person, the Court, its judgment, and the injured person, with separate public
+witnesses agreeing. The custody authority must identify that case, its window, its
+renewal, and the exact constitutional source, and obtain the separate approvals.
 
-Homestay availability is therefore a placement input, not evidence of civil residence
-or delivered care. HighSec is only a destination name. The design has decided where
-some people are placed while saying almost nothing about what either place does.
+Both event order and record-entry order must be unconflicted. The current renewal
+must point to the selected end of the witnessed constitutional record line. A general
+renewal cannot serve every prisoner. Missing evidence or a competing witnessed
+account of the source, window, case subject, or lease prevents custody from deriving
+when that record is evaluated.
 
-That is not a small omission. Constitutional safeguards name what an
-institution owes; they are not evidence of what happens inside it.
+This is a limit on authority, not evidence of release. Withholding custody does not
+write the release entry or open a cell. The institutions responsible must still act.
 
-## And the authority must be current
+The review window has an order but no measured length. Witnessed chains can place
+its opening before its boundary; a cycle makes the connected path unusable. The
+model does not count days or force an outside time service to publish a successor.
+It can reject an unsupported authority in the record presented to it, but cannot
+establish that the presented record is current in the world merely by calling it
+current.
 
-There is one more thing, and the design now speaks to it in two different ways.
+Severity selects placement; it does not lengthen the interval. Recognition, work,
+compliance, wealth and character cannot shorten or extend custody. The pins try a
+rule that would release a confined person for recognition. Because custody also
+depends on the absence of release, that attempted rule creates a negative cycle and
+is refused. A different encoding could avoid the cycle; the further protection is
+that the source gives recognition no consequential reader.
 
-**A sentence can be finished.** Somebody records that it is over, and its custody
-conclusion stops. In the cases supplied here, movement returns, placement stops,
-and the marker watching for isolation goes quiet. A separate protective restriction
-would need its own current grounds; ending the sentence cannot authorize it.
-This is not relief: relief says the conviction should never have held; a finished
-sentence says it held and is done.
+The pins also admit a duration word and record a term for Ruk. Custody continues and
+no release follows. A term label supplies neither a clock nor an enforceable end by
+itself. Current authority and timely release require more than an admissible name.
 
-Custody now has another limit. A court judgment is no longer enough by itself. The
-record must also tie the same case to the person, the court, the court's judgment, and
-the injured person, with separate public witnesses agreeing. The custody authority must
-name that case, its window, its current renewal, and the exact constitutional source,
-and separate routes must approve it. The window needs unconflicted event order and
-record-entry order. The current renewal must point to the selected end of the witnessed
-constitutional record line, with no competing selection. A general renewal cannot be reused across every
-prisoner. If required evidence is missing, the order is conflicted, or the source,
-window, case subject, or lease has a competing witnessed account, the conclusion that the
-person is a prisoner does not follow when that record is evaluated afresh.
+## What leaving changes
 
-Do not turn that into a claim that the record released anyone. Missing authority does
-not write the word *free*. It withdraws the public power to keep deriving custody in
-the record being considered. Nor does the design open a cell, transport a person home,
-or make an appeal body act. Those are things institutions must do in the world.
+A completed sentence and relief from conviction are different reasons to end custody.
+In the chapter's sequence, adding Hano's release entry stops custody, restores the
+movement conclusion, removes placement, and silences the custody-dependent isolation
+marker. This shows the rule's response to that entry; it does not authenticate who
+wrote it or establish that Hano physically left.
 
-The review window has an order but no measured length. Witnessed chains can say that
-its opening came before its boundary, and a direct or longer cycle makes the connected
-path unusable. Nothing here says how many days lie between the boundaries, counts those
-days down, or forces the outside time service to publish the next one. A frozen
-designated-current record can still be presented forever unless the outside assurance
-system makes a successor arrive. The rules evaluate each supplied record afresh and
-verify its safety; they do not prove that the world supplying it keeps moving.
+Release review must examine the current lawful ground and end, continuing necessity,
+proportionality and alternatives. It requires independent review, counsel, accessible
+challenge and reasons. It cannot renew custody by itself, make administrative delay
+extend a lawful end, or demand debt payment, work or forgiveness as the price of
+leaving. Housing, care, documents, education, work access and community participation
+must continue across release, with private support rather than a general supervision
+or risk status.
 
-Severity still reaches the walls and stops. It cannot lengthen the interval.
-Recognition, work, compliance, wealth and character cannot shorten or extend custody
-either. Time constrains the power holding a person; it does not become a price attached
-to the person.
+Hano keeps standing and the dwelling entitlement after the release entry. The State
+still owes provision. But the housing and recorded-speech conclusions stop: this case
+contains no independent record that could sustain them.
 
-The most direct way to write the route from earning to release is not merely unbuilt,
-and the pins run it: a release derived from being confined closes the same loop that
-appellate relief derived from being confined closes, because the conviction rule reads
-both words as absences. The shape is refused before anybody argues about the policy.
-That refusal is not the whole claim, and the chapter on contribution carries the rest —
-a differently named relation would route around the loop, and what stops it is that
-nothing anywhere reads recognition.
+The supplied record contains housing and speech conclusions through custody. Separate
+recipient-side routes can establish food, shelter, care, material security and company;
+teaching and hearing can establish learning. The chapter's Hano sequence supplies none
+of the evidence for those routes. A legal duty survives without a receipt appearing.
 
-So this design can now say more than *a sentence may end*. It can refuse custody that
-lacks a current, case-bound review when the selected record is evaluated afresh. What
-it still cannot say is
-that a promised period has elapsed in the world, that a successor will appear, or that
-physical release will happen promptly. The difference is the difference between a
-safety rule and somebody keeping time.
+Physical holding is another distinct fact. A separate report that somebody remains
+held can sustain shelter and voice protections after sentence authority ends. Those
+protections do not authorise continued holding or replace the duty of lawful release.
+Hano's sequence contains no such report, so it cannot establish whether holding
+continues.
 
-## What leaving costs
+Kel and Adam make the same distinction visible in the destination-free cases. Custody
+produces their housing conclusions without an available home option or a named
+destination. Ending that route does not prove that either person lost an actual home,
+just as deriving it did not prove that a home arrived.
 
-Release review must examine the current lawful ground and end, continuing
-necessity, proportionality and alternatives. It requires independent review,
-counsel, accessible challenge and reasons. It cannot renew custody by itself,
-make administrative delay extend a lawful end, or demand debt payment, work
-or forgiveness as the price of leaving. Housing, care, documents, education,
-work access and community participation must continue across release, with
-private support rather than a new general supervision or risk status. Those
-duties do not physically release anyone or produce a service receipt.
-
-And there is a sting in it that is worth following, because it is the sharpest thing
-this chapter has.
-
-The supplied record contains active floor actualities through punishment. Recorded
-speech and shelter derive for confined people. The rulebook now also has
-recipient-side routes for food, shelter, care, material security, and company, and
-retains the older teaching-and-hearing route for learning. None is exercised by the
-cast. A route exists; no matching arrival is supplied.
-
-The new physical-holding route changes the rulebook, not these people's
-supplied facts. No cast member has a separate report of protective holding.
-If such a report establishes that a person remains physically held after
-sentence authority ends, the shelter and voice protections still attach to
-that holding. They do not renew the sentence, authorize continued holding or
-replace the duty to secure lawful release.
-
-So when a sentence is finished, or current case authority is absent, recorded speech
-and confinement-produced shelter stop in the newly evaluated record. The person keeps
-every entitlement they had. The body that owes the floor still owes it. The
-recipient-side routes remain available without imprisonment. But no receipt appears
-merely because custody ended, and a formal route cannot supply its own evidence.
-
-Hano therefore leaves the only shelter conclusion his supplied record had. That is
-not a finding that no shelter reached him in the world. It is a finding that the
-custody route no longer derives and no independent recipient-side shelter record has
-taken its place.
-
-Kel and Adam are the sharper version. Both lacked the placement-home fact when the
-custody rules reached them, and confinement produced shelter without inventing a
-destination. Not anybody noticing the debt and delivering a home. Not an authorised
-recipient-side receipt. The confinement machinery needed somewhere to hold them, and
-its own rule produced the shelter conclusion. When custody ends, that conclusion ends.
-
-**Leaving custody returns a person to a supplied record with no non-carceral receipt.**
-
-That is not an argument for keeping people in. It is the delivery gap of Chapter 4,
-arriving somewhere it can be felt rather than merely conceded. A society whose active
-provision appears only through punishment has not operated its floor merely because
-the constitution now specifies other routes.
-
-The distinction matters. Elsewhere a sentence nominally ends and its consequences do
-not; the released person carries a cascade of losses that outlives the punishment by
-decades. Here the sentence genuinely ends, the cascade genuinely does not exist, and
-the record still loses the floor actualities confinement supplied. The recipient-side
-interfaces prevent that from being a necessary feature of the design. They do not
-prove that anyone used them.
-
-Everything above the floor here remains exact. The floor itself is owed, selected
-arrival routes are specified, and the supplied record still contains no actual
-non-carceral arrival. Outside records, service operation, accessibility, continuity,
-and completed delivery remain things this book cannot establish.
+Leaving custody returns Hano to a supplied record with no independent shelter receipt.
+That is the delivery question of chapter 5 at release. The floor remains owed, and
+continuity has a constitutional route. Evidence that these duties were carried out
+must come from the people and institutions involved. The next chapter asks what the
+record can do when it detects a breach.
 
 ## The child with nobody
 
-The single deprivation this chapter is about has not been applied to the child
-with nobody, and the pins say so in the ordinary way: movement is unrestrained
-and no confinement conclusion follows.
+Nell's birth-only fixture derives movement and no restraint or custody. It also
+derives the food debt, with no void or recognition loss. This is a control for a
+person whom the confinement rules have no grounds to reach.
 
-The claim the chapter makes is that punishment reduced to its logic takes
-movement and nothing else, and this child is where that claim is cheapest to
-test, because there is nothing else in the record to lose. Every other thing a
-punishment might reach — credibility, recognition, the floor, the vote once age
-evidence exists — is either absent already or held by a rule that does not read
-whether anybody was punished. Nothing is taken here because nothing was done
-here. What the section shows is that the taking, when it happens, has exactly
-one place to land.
+It is not a test of every consequence of punishing a child: Nell is not punished
+here. The relevant result is narrower and sufficient. A child does not need a
+custody record to retain movement, standing, or the floor.

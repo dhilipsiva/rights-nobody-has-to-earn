@@ -2,8 +2,7 @@
 #
 # KIND: CONTENT pin. Run:
 #   ./verify.sh --only book-1/24-the-shield.pins.nibli
-#   ./verify.sh          # the real check — the line above cannot see
-#                        # the cross-file reconciliation or the prose guards
+#   ./verify.sh          # all substantive pins and contradiction checks
 
 # WHAT FALSE MEANS HERE — three kinds, and only one is a verdict. A FALSE on a
 # corpus name this KB never mentions is real but empty: nothing could have made
@@ -54,7 +53,7 @@
 ? deceive(Sly, Court).
 # => FALSE
 
-# "So Sly's shield holds, and Sly ... walks free."
+# Sly's shield derives; no prisoner conclusion follows. This proves no release.
 ? defend(Sly).
 # => TRUE
 

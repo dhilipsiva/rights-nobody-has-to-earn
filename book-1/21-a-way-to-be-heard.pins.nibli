@@ -2,8 +2,7 @@
 #
 # KIND: CONTENT pin. Run:
 #   ./verify.sh --only book-1/21-a-way-to-be-heard.pins.nibli
-#   ./verify.sh          # the real check — the line above cannot see
-#                        # the cross-file reconciliation or the prose guards
+#   ./verify.sh          # all substantive pins and contradiction checks
 #
 # The chapter's case lists three fixtures, which share no record or subject
 # constant:
@@ -71,7 +70,7 @@
 
 # ── The child with nobody ──────────────────────────────────────────────────
 # "money, documentation and immigration status cannot be the price of entry"
-# — the child holds none of the three and is owed the floor regardless.
+# — the one-entry child record establishes the floor without those premises.
 ? person(Nell).
 # => TRUE
 

@@ -1,16 +1,13 @@
 # Arriving and Belonging
 
-This design has to answer two questions that are usually answered by asking
-somebody for papers. The first is what a person who has just arrived is owed.
-The second is what a person who belongs to a people, a language or a faith
-keeps of that belonging, and what the belonging may never cost them. The
-answers turn out to have the same shape, which is why they are in one chapter:
-neither is a status the record grants, and both are held in place by what the
-rules refuse to read.
+An arrival must not make rights wait for papers. Belonging to a people, language
+or faith must not make rights depend on staying obedient to that group. These
+are different relationships with a common limit: neither the republic nor a
+community owns the person seeking protection.
 
-Everything here is a legal conclusion over supplied records. None of it
-operates a border, authenticates a consent, or establishes that anybody was
-admitted, protected or left alone.
+The chapter follows an arrival, a disputed asylum record and a collective
+consent that no longer supports permission. Each asks what an institution may
+decide, what remains protected and who must answer when its record fails.
 
 ## Rights do not stop at arrival
 
@@ -56,34 +53,26 @@ state, or completed remedy.
 
 ## When the record cannot say what it says
 
-A determination of asylum is not an announcement somebody makes. It is a record
-that has to hold together: whose case it is, which version of the constitution
-it runs under, the window it is current in, the evidence, the independent
-review, the challenge route and the alternate behind that reviewer. When the
-fields agree, the determination is a completed finding and the body running it
-owes a fair determination.
+The asylum case completes a fair-determination record. It identifies the case,
+constitutional version, current window, evidence, independent review, challenge
+route and alternate reviewer. Completion produces the specified legal
+conclusions; it does not prove that a hearing occurred or asylum was granted.
 
-Now an authorised writer records a different constitutional version for the same
-determination, in a field that holds one value. The record says two things.
-Nothing here chooses between them — not the later entry, not the more senior
-writer, not the more plausible value — and the determination stops being
-complete.
+The conflicting-version case tests what happens when an authorised writer
+supplies a second constitutional version in a field that must hold one value.
+Completion stops. The rules choose neither the later entry nor a preferred
+writer to settle the conflict.
 
-That is a design refusing to pick a winner, and the cost has a direction, which
-is why it belongs in this chapter rather than in a footnote. The person waiting
-for a determination waits longer. The ambiguity was created by the writers and
-is paid for by the claimant, and no rule here moves that cost back.
+That withholds reliance on an ambiguous record. It does not establish which
+entry is false, resolve the disagreement or protect the claimant from delay
+by itself. A usable determination still needs the ambiguity resolved and its
+conditions met. Independent review, correction and the alternate route for
+certified nonresponse remain necessary duties, not evidence of an answer.
 
-What the design does instead is leave the record visibly unusable, so that
-correcting it is the only way forward and nobody can act on an entry that
-disagrees with itself. The alternative — a rule that silently prefers one
-writer — would make the record decidable at the price of making it forgeable by
-whoever writes last or ranks highest.
-
-Nothing in that collapse is a finding against the person. The claim is not
-weaker, the floor is not touched, the enforcement firewall still holds, and the
-family concludes about records rather than about people. What stops is a
-determination that could not be read.
+The failure concerns the determination's record. It weakens no substantive
+claim and removes neither the floor nor the service firewall. Refusing an
+unusable decision must not become permission to leave its claimant without
+protection.
 
 ## Belonging without surrendering rights
 
@@ -136,60 +125,43 @@ clock or proves that an institution acted.
 
 ## When the consent turns out not to have been consent
 
-The consent above is a record, and records can be wrong. This is what happens
-when one is.
+In the consent sequence, a record for the same people, land, proposed act,
+version and harm completes with its required representation, review and
+challenge route. A second record permits the specific effect by joining that
+consent.
 
-A collective consent record completes: the same people, the same land, the same
-proposed act, the same version, the same harm, with lawful representatives, an
-independent review and a challenge route. On it a consented-effect record
-completes — the effect that consent was given for, rejoining the exact consent
-it rests on.
+An independent defect finding then withdraws reliance on the consent record.
+The consent and the dependent permission stop completing together. The reader
+owes preservation, correction and remedy; the auditor owes review of related
+cases and non-repetition. Another collective's unaffected record continues
+to complete. One defective consent is no finding against a people or against
+consent in general.
 
-Then an independent review establishes a defect in the consent record. The
-record is contradicted where it mattered: the permission the effect ran on no
-longer holds. A duty to preserve, correct and remedy the record lands on its
-reader, and a duty to audit the related cases and non-repetition lands on the
-auditor. The consent stops completing and the effect built on it stops with it.
-
-Two things about that collapse are worth saying plainly.
-
-It does not spread. Another collective's record of the same kind, untouched by
-the finding, completes exactly as it did before. A defect names the record it is
-about, and no rule reads one defective consent as evidence about consent in
-general or about the people who gave it.
-
-And it does not undo the effect. What the design produces is a record that no
-longer authorises, a correction owed and an audit owed. Whether the land was
-returned, the site left alone or the material moved is not something these rules
-can establish, and the duty to repair is not the repair.
+Withdrawal does not undo an act already performed. It establishes neither
+returned land nor a protected site nor removed hazardous material. The sequence
+shows where permission ends and repair is owed; whether repair happens requires
+further evidence.
 
 ## The child with nobody
 
-The newcomer in this chapter's record is the closest thing in this book to the
-child's own case. The record holds that someone is present and under this
-society's reach, and nothing else — no papers, no status, no time spent
-here — and from that alone the floor is owed, movement is not restrained, and a
-list of things may not be done: no enrolment into enforcement through a
-service, no adverse inference from the missing record, no removal into harm, no
-detention of a child for an immigration purpose, no exclusion from the
-population a shortage is found for.
+The newcomer case supplies presence and the republic's reach without papers,
+immigration status or a length of residence. Standing, the floor, free movement
+and the prohibitions on service-based enforcement follow. The State owes
+inclusion in the population considered for scarcity.
 
-The child with nobody sits one step further in. The newcomer at least arrived
-somewhere, and an arrival is an event a record can hold. A birth entry and
-nothing else is less than that, and the same rules still reach it: personhood,
-the floor, the absence of any coercive consequence. What neither record
-supplies is a ballot, and this chapter is the one place where saying so is not
-a defect. A person under this society's control is owed everything the floor
-owes anyone and does not thereby acquire a vote in it. The design says that
-plainly rather than blurring it, and the blur would be the more comfortable
-sentence.
+Nell's birth entry independently supports standing and the floor. Neither that
+entry nor the newcomer's limited premises establishes a ballot entitlement.
+This does not determine either person's actual age or political eligibility;
+those need their own evidence and routes. Immediate help cannot wait for them.
 
 ## What none of this admits
 
-None of this is an operating border, a membership roll, or a record of who was
-actually let in, turned away, consulted or heard. A determination that
-completes is a record holding together, not a decision anybody made. A consent
-that completes is a record of consent, never proof that consent was given. A
-defect withdraws what it names and restores nothing. Reception, registration,
-interpretation, language services, consultation practice, land administration
-and every other operating question belong to the second book.
+A coherent determination record proves no completed hearing. A consent record
+does not authenticate the consent supplied to it. The rules operate neither a
+border nor a membership roll and establish no actual admission, consultation
+or remedy. Reception, interpretation, registration and land administration
+need functioning institutions beyond these conclusions.
+
+The next part asks how those institutions become answerable. The rights in
+this chapter need public functions capable of acting, and limits that prevent
+the power to act from becoming power to decide whose rights count.

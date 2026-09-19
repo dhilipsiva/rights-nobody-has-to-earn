@@ -365,14 +365,19 @@ cases. It also leaves an interval in which a court implicated by the
 disclosure can seek conviction while the discloser is still trying to obtain
 a hearing.
 
-Protection here begins with the disclosure. An unrelated prosecution can
-proceed only with a case finding from qualified, independent reviewers.
+For a discloser with no recorded deceit, protection begins with the disclosure.
+The unrelated-case route requires a finding from qualified, independent reviewers.
 Separate qualification and review functions must positively establish their
 eligibility. The deciding and qualification functions cannot be combined or
 occupied by a party or the prosecuting court. Naming those participants in
 fresh disclosures does not itself disqualify them; an authorised finding of
 actual conflict does, and a favourable certificate cannot cancel it. The
 case finding leaves the disclosure protected elsewhere.
+
+A raw deceit entry can also defeat the shield. It is not bound to that
+independent review. This is a defect against the reason for protection: an
+accusation should not bypass the safeguard it challenges. The benefits of the
+default cannot justify that separate route.
 
 This default costs time, including time owed to an injured person awaiting a
 remedy. Separate protection, assistance and civil remedies remain available

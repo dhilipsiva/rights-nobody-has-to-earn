@@ -835,42 +835,42 @@
   ],
   "narrowness_impacts": [
     {
-      "artifact_ref": "book-1/03-what-counts-as-evidence.md::that someone has a family cannot worsen confinement.",
+      "artifact_ref": "book-1/03-what-counts-as-evidence.md::Other entries have narrower reach.",
       "current_claim": "Family status is inert for confinement: severity selects HighSec, while a typed PlacementHome record and Homestay eligibility select the named home destination.",
       "classification": "revised_and_scoped",
       "reason": "The formal family migration removed the family branch; the matrix keeps family as an inert axis and separately observes severity and typed placement-home evidence.",
       "future_trigger": "Revisit the sentence and audit if any placement rule reads family, kinship, or an untyped home fact again."
     },
     {
-      "artifact_ref": "book-1/27-a-prisoner-is-a-person.md::shelter and recorded speech arrive for prisoners and for",
+      "artifact_ref": "book-1/27-a-prisoner-is-a-person.md::Custody and witnessed delivery are different routes to these conclusions.",
       "current_claim": "In the shipped record and generated mirrors, shelter actuality derives through confinement and not for either affirmatively free or person-only subjects; the dormant recipient-side shelter route changes the interface but not those verdicts.",
       "classification": "revised_and_scoped",
       "reason": "The generated rows separately establish affirmative freedom and personhood alone, retain the itemised shelter debt, and supply no receipt evidence, so dwell remains absent in both states even though the current source contains a non-carceral route.",
       "future_trigger": "Any supplied non-carceral shelter receipt or changed dwell producer must revise this chapter's shipped-record claim even if its own pin file and the recorded-speech half do not change."
     },
     {
-      "artifact_ref": "book-1/05-whether-it-arrived.md::The supplied record therefore still has a stark shape.",
+      "artifact_ref": "book-1/05-whether-it-arrived.md::The supplied cast contains the confinement route to shelter and recorded",
       "current_claim": "The shipped record derives shelter through confinement while the five recipient-side routes and legacy learning remain dormant; the generated non-confined mirrors likewise supply no shelter receipt, while itemised debt reaches all three subject states.",
       "classification": "revised_and_scoped",
       "reason": "The matrix establishes current verdicts over its complete facts and no longer treats the absence of a receipt in those facts as the absence of a formal route or as a non-delivery finding.",
       "future_trigger": "Any supplied receipt, changed delivery route, new arrival head, or operational assurance claim must revise the prose, affected pins, matrix contract, and counted-claim guard implications together."
     },
     {
-      "artifact_ref": "book-1/28-where-people-are-put.md::The checks beside this book now make every combination",
+      "artifact_ref": "book-1/28-where-people-are-put.md::The checks beside this book construct every combination",
       "current_claim": "Every current severity/family/home tuple is generated, every discovered destination is queried, and duplicate, missing, reversed, and painted-delivery mutations fail repository acceptance.",
       "classification": "revised_and_scoped",
       "reason": "The chapter can now name a repository check, but must retain that no general runtime placement constraint or remedy was added.",
       "future_trigger": "A new placement axis, destination, producer, runtime marker, or delivery route requires re-running the narrowness review even if the chapter's own original pins do not change."
     },
     {
-      "artifact_ref": "book-1/29-the-one-thing-taken.md::The supplied record contains active floor actualities through punishment.",
+      "artifact_ref": "book-1/29-the-one-thing-taken.md::The supplied record contains housing and speech conclusions through custody.",
       "current_claim": "The shipped cast obtains its only shelter conclusion through custody; the source also contains a dormant recipient-side dwell route, so leaving custody removes the former conclusion without proving non-delivery in the world.",
       "classification": "revised_and_scoped",
       "reason": "Both non-confined mirrors supply no receipt and the painted-delivery mutation remains prohibited, preserving the release boundary without erasing the formal route.",
       "future_trigger": "Re-review the chapter's single-deprivation, placement, release, and delivery claims when any supplied non-carceral receipt or changed route alters dwell."
     },
     {
-      "artifact_ref": "book-1/30-when-the-system-notices-it-broke.md::The placement marker has since been repaired",
+      "artifact_ref": "book-1/30-when-the-system-notices-it-broke.md::The placement marker reads a reported act.",
       "current_claim": "The repaired marker reads reported Homestay placement against eligibility, not duplicate, missing, or reversed derived outcomes.",
       "classification": "preserved",
       "reason": "Every harmful placement mutation supplies and positively pins a reviewed put report before querying err(_, Placement) as FALSE, preventing a missing alarm premise from making the blindness evidence vacuous.",

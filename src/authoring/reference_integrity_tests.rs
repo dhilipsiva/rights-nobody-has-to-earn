@@ -68,8 +68,7 @@ const KNOWN_MISSING: [&str; 32] = [
 /// Files whose reviewed needles no longer occur in them, with how many such
 /// needles each carries, measured 2026-09-16.
 // The five stale method references were resolved with its 2026-09-19 rewrite.
-const KNOWN_UNMATCHED: [(&str, usize); 4] = [
-    ("book-1/27-a-prisoner-is-a-person.md", 1),
+const KNOWN_UNMATCHED: [(&str, usize); 3] = [
     ("book-1/source/constitution.nibli", 2),
     ("book-1/source/counterfactual/README.md", 1),
     ("book-1/source/full-society-scope-review-protocol.md", 2),

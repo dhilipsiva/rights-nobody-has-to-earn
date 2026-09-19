@@ -1,132 +1,95 @@
 # Who Counts
 
-The first chapter ran the whole design against a record holding one line. That
-line was a birth, and a reader would be right to ask whether the answer depended
-on it — whether the design works for the newborn and then quietly needs
-something more from everybody else.
-
-It does not, and this chapter is the generalisation. There is more than one way
-a person enters this design, none of them is a registry, and what follows from
-each is identical. That last part is the claim worth testing: not that there
-are several doors, but that the rooms behind them are the same room.
-
-Everything here is a legal effect over supplied records. Nothing in this
-chapter observes a birth, witnesses an encounter, reconciles an identity, or
-establishes that anybody was ever seen.
+Nell enters the record through a birth. Someone without a birth record can
+enter through an encounter. The routes differ; the personhood they establish
+does not.
 
 ## The ways in
 
-Personhood attaches on a birth. It attaches on a first contact. It attaches on
-being present within the republic's jurisdiction, and it attaches on being under
-its effective control. Each is an independent route: none requires another, and
-no order runs between them.
+Personhood follows from a recorded birth, first contact, presence within the
+republic's jurisdiction or effective control. Each route is independent. None
+requires another to have happened first, and none requires citizenship,
+identity papers or a family.
 
-The last two are the ones that do the unusual work. Presence is not a status
-somebody grants — a person standing inside the jurisdiction is a person, with no
-document, no application and no declaration of any kind. Effective control
-reaches further still, because it does not ask where the person is. Whoever
-this society is actually holding is owed what it owes anybody, and that is the
-root that closes the oldest loophole in this subject: a power cannot walk
-somebody outside the map and thereby outside the obligation.
+Presence reaches someone within the jurisdiction without asking whether that
+person was granted permission to be there. Effective control reaches someone
+under the republic's power without making protection depend on the location.
+Moving a person across a border does not remove this ground of obligation.
 
-What follows from each root is the same. The debts attach, the entitlements
-attach, and the barriers attach — the whole apparatus the earlier chapters
-describe sits downstream of personhood and reads nothing else. A person who
-entered by presence is owed exactly what a person who entered by birth is owed,
-and the pins ask both and get the same answer.
+Each route leads to the same floor. The chapter's cases supply a birth for one
+person, first contact for another, presence for another and effective control
+for another. Food is owed in each case. The entitlement and protections attach
+to the resulting personhood, without a further test of how it was reached.
 
 ## A name at an encounter is a handle
 
-The name attached at an encounter is a handle for the encounter, and the design
-says so rather than leaving it to be assumed. It proves no civil identity, no
-citizenship, no family relationship, no liability and no guilt. Somebody may be
-recorded and helped under a name that turns out later to be wrong, and nothing
-in that record converts into a claim about who they are.
+An encounter needs a way to refer to the person. Its temporary name can serve
+that purpose without establishing a civil identity. It proves no citizenship,
+family relationship, liability or guilt. Assistance need not wait for a match
+against another record.
 
-Two refusals hold that line. An alias claim is not an identity merge: recording
-that one handle is said to be another does not make the design treat them as
-the same person, in either direction. And a public body cannot be smuggled in
-through the encounter route — writing a first contact for an institution
-produces no person, which is the guard against turning the most generous door
-in the design into a way for an office to acquire the standing of a human
-being.
+A claimed alias does not merge identities. The test records a claim linking
+encounter names and asks whether either becomes the other. Neither does.
+The claim therefore imports no conviction, sentence or history through an
+assumed match. Consequential identity links remain separate, challengeable
+claims.
+
+The entry rules also distinguish people from public bodies. A first-contact
+entry naming the Court does not give the Court personhood. The institutional
+name is already marked as a public body and is excluded by the entry rule.
+An office cannot acquire human standing merely by recording an encounter.
 
 ## What cannot take it away
 
-Once it attaches, the design is careful about what may take it away, and the
-honest answer is that the record is better at refusing than at erasing.
+A broken status record does not erase a valid standing root. In the test,
+a registry entry concerning a person is marked as broken. The entry remains
+visible, and the person's first-contact root still establishes personhood.
+A defect in that record does not undo the encounter.
 
-A mistaken status entry does not retract personhood. Somebody wrongly recorded
-as dead, with the entry itself established as broken, remains a person — the
-broken entry stays on the record as a broken entry, and the standing it
-purported to end is untouched. Missing or disputed evidence of age does not
-postpone standing either, and neither does missing evidence of capacity, or a
-person's refusal of support. Each of those absences costs exactly what it
-should cost — a ballot waits on age evidence — and none of them reaches
-personhood.
+Missing or disputed age evidence also leaves standing intact. The executable
+ballot route needs adulthood evidence; the floor does not. Nor do missing
+capacity evidence or refusal of support postpone personhood. These are
+separate questions, with separate consequences.
 
-Correction works the same way round. Fixing a record keeps the provenance of
-what was there before rather than erasing it, because a design that let
-correction consume its own history would have built the tool for making an
-accountability trail disappear.
+Correction must retain the provenance needed for accountability and remedy.
+It does not turn uncertainty into permission to combine people's histories or
+to withhold what the unreconciled person is owed.
 
-## The standing roots do not replace this line
+## Standing without a roster
 
-One consequence follows from this that ought to be said out loud. Standing no longer waits for someone to maintain a roster.
-An externally supplied birth fact, first
-contact, physical presence, or effective control establishes personhood immediately;
-the encounter name may be temporary, and proves no civil identity, citizenship,
-family relationship, liability, or guilt. Missing or disputed records therefore do
-not postpone the floor, process, or remedy while reconciliation happens.
+Standing does not depend on a maintained roster. A supplied birth or encounter
+is enough, including an encounter held under a temporary name. Missing identity
+papers do not create a waiting period for the floor, process or remedy.
 
-The new protective-order and independently witnessed physical-holding routes
-also preserve standing. Zed's counterfactual supplies neither. Their existence
-does not mean every person is observed or every holding is entered.
+The custody and release rules remain valid independent routes. A person whose
+encounter was not recorded must not lose standing because the record begins
+with confinement. Protective-order and independently witnessed physical-holding
+routes provide further backstops. The prisoner chapter tests what happens when
+only the conviction route is present.
 
-The custody and release rules remain valid independent routes. That redundancy is
-deliberate. If an encounter fact is absent from the supplied record, a lawful custody
-record must not become a route out of standing. Conversely, the presence of an
-encounter token cannot import another record's conviction or sentence. Identity links
-remain consequential claims: uncertainty keeps records separate and challengeable,
-and correction must retain provenance rather than erase accountability or remedy.
-
-There is still an evidence ceiling. These rules say what follows from facts supplied
-to the constitutional record. They do not prove that births and encounters are
-observed, that a service route is reachable, that an identity system reconciles
-records correctly, or that any institution operates in practice. Those delivery and
-identity-system questions remain outside this chapter and outside Gate A.
+These routes do not observe anyone. They establish a legal consequence from
+supplied evidence. A custody entry can establish personhood without proving
+that the holding was entered accurately, just as an encounter entry can do so
+without authenticating the name attached to it.
 
 ## The child with nobody
 
-The child with nobody is the case this chapter exists to generalise from, and
-the generalisation runs in the direction that matters. It would be easy to read
-the first chapter as a special provision — something the design does for
-newborns — and the reading would be wrong in a way that costs other people. The
-child is owed everything because the child is a person, and the child is a
-person because of an entry that says nothing else about them. That is the whole
-mechanism, and it is the same mechanism for the undocumented adult, the person
-present without papers, and the person this society is holding.
+Nell needs no special class of standing. The birth entry reaches the same
+personhood and floor as the encounter cases in this chapter. A family,
+document or adulthood finding is absent from Nell's record and unnecessary to
+those conclusions.
 
-This is also the one methodological claim in the book with an executable
-instance, and it belongs here rather than in the argument at the front. The
-standing rules were built for the person who cannot produce a record. The same
-rules turned out to cover people nobody was thinking about when they were
-written, and the pins show that: presence, effective control and a disputed age
-all reach the same floor from the same line of reasoning. The general claim
-about designing this way is mine and no machine checked it. This instance is
-the machine's.
+What does not follow is equally consistent across the cases. A route into
+personhood supplies neither a receipt nor an advocate's action. Adding another
+way to establish standing does not establish that anything arrived.
 
 ## What none of this observes
 
-None of this observes anything. The rules say what follows from a birth fact, an
-encounter, a presence or a control fact once it is supplied to the record. They
-do not establish that births are registered, that encounters are recorded, that
-a person who was never entered can be discovered, or that any service is
-reachable by anybody who has standing.
+No rule here discovers someone who has never been entered. Birth and encounter
+must reach the record before their consequences can follow. The independent
+advocate's duty to begin assistance does not make that first observation happen.
 
-That last gap is the one the first chapter names, and this chapter closes only
-half of it. The routes here are generous about who counts. Who is obliged to
-notice is settled elsewhere — the chapter on who owes carries a duty to begin
-assistance for every person, without a request — and that is a duty, not
-somebody arriving. Whether anybody went is the second book's subject, and no
-rule in this one can answer it.
+The record can therefore admit someone without authenticating a civil identity,
+and can protect that person's standing while an identity claim is contested.
+It still needs limits on what else may be said about them. Those limits are
+the subject of the next chapter.

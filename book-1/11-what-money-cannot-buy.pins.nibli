@@ -2,8 +2,7 @@
 #
 # KIND: CONTENT pin. Run:
 #   ./verify.sh --only book-1/11-what-money-cannot-buy.pins.nibli
-#   ./verify.sh          # the real check — the line above cannot see
-#                        # the cross-file reconciliation or the prose guards
+#   ./verify.sh          # all substantive pins and contradiction checks
 #
 # The chapter's case lists tests/pins/records/child_with_nobody/fixture.nibli.
 # Harrow, the one probe witness below, is fresh; every record it attests is a
@@ -263,8 +262,8 @@ observe(Harrow, HarrowRecordTier, CrossRegionalReachUnderRegionalTier, PublicSca
 :refuse reasoning /derived-only/
 member(HarrowRevenueThreshold, PublicScaleTriggerVocabulary).
 
-# "For the child with nobody, this chapter reaches nothing, because the child
-# holds nothing" — and refuses, for Nell by name, every way money could be a condition.
+# The one-entry child record retains the prohibitions on economic gates and
+# the public dwelling debt; it proves nothing about actual possessions.
 ? prevents(Nell, EconomicFactorFloorGate).
 # => TRUE
 

@@ -2,8 +2,7 @@
 #
 # KIND: CONTENT pin. Run:
 #   ./verify.sh --only book-1/19-what-may-be-kept-about-you.pins.nibli
-#   ./verify.sh          # the real check — the line above cannot see
-#                        # the cross-file reconciliation or the prose guards
+#   ./verify.sh          # all substantive pins and contradiction checks
 #
 # The chapter's case lists two fixtures:
 #   tests/pins/records/child_with_nobody/fixture.nibli
@@ -102,8 +101,8 @@
 # => TRUE
 
 # ── The child with nobody ──────────────────────────────────────────────────
-# "The floor does not run through a file" — no record about this child exists
-# and every debt holds anyway.
+# Nell's birth entry supports personhood and the health debt without a
+# supplied health, school or administrative holding.
 ? person(Nell).
 # => TRUE
 
@@ -111,6 +110,6 @@
 # => TRUE
 
 # "an entry naming this child would be an entry, not a finding" — and no such
-# entry has been written, so nothing about the child is held at all.
+# holding has been supplied for Nell; the birth entry remains present.
 ? false(Nell).
 # => FALSE

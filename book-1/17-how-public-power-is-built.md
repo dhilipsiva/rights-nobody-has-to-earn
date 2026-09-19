@@ -1,17 +1,14 @@
 # How Public Power Is Built
 
-The chapters before this one are about what a person is owed and the life the
-design leaves alone. Public power is what is supposed to serve both, and it is
-the part most designs describe in the vaguest words they own. This chapter says
-what is actually fixed: which tier holds which power, which bodies exist and
-what each may not do alone, how somebody comes to hold an office, what happens
-when nobody can agree, and what a public result has to contain before anything
-may be done on it.
+Rights need institutions that can act, but a duty to help cannot justify every
+power claimed in its name. The design divides power by place and function,
+requires each office to show its authority, and preserves essential duties
+when an office is vacant or a government cannot be formed.
 
-Every conclusion here is a legal effect over a supplied record. A body holds a
-power when its record is complete, and that is all it means: no institution is
-staffed, independent in fact, funded, convened or operating anywhere in this
-book.
+Follow the ordinary sequence: a legislature authorises, an executive acts,
+and separate bodies review and remedy. Then interrupt it with a disputed
+competence, deadlock or successor. The question throughout is which authority
+continues and which must end.
 
 ## Which tier holds which power
 
@@ -26,7 +23,7 @@ elected representation and enough lawful authority to do what it is given.
 Whether a common power displaces a regional one is a justiciable question
 rather than an assertion, and it is decided under a subsidiarity rule. While
 the question is open the disputed power stays with its last uncontested holder,
-so neither side gains anything from delay. Where there is no uncontested
+rather than transferring authority merely because the dispute continues. Where there is no uncontested
 holder, an interim allocation may hand over only what is needed to preserve the
 floor and prevent irreparable harm, and it settles no competence.
 
@@ -37,25 +34,28 @@ what is owed does not change when somebody crosses an internal border.
 
 ## The bodies, and what none of them may do alone
 
-The common institutions are named, and their powers are separate records
-rather than one lump of authority. A population-proportional People's Assembly
-makes ordinary law, authorises revenue, authorises spending, conducts public
-oversight and initiates amendment — each a distinct power with its own
-conditions, so failing one does not carry the others. A Regions Council of
-proportionally delegated regional legislatures selects its own delegation,
-returns a bill once with reasons, and consents to changes in the federal
-settlement; its veto over ordinary law is suspensive, and its equal aggregate
-regional weight is an express territorial exception confined to that limited
-mandate rather than a second popular chamber. A collective Executive Council
-executes and administers the law and depends on the Assembly's confidence. A
-non-executive Civic President, ordinary courts, and a final Constitutional
-Court complete the common tier, beside separately checked electoral,
-audit and integrity, ombudsperson and appointments functions.
+The People's Assembly makes ordinary law and authorises revenue and spending.
+The Executive Council administers and executes the law under the Assembly's
+confidence. Review and remedy do not return to the same hand merely because
+it performed the act.
 
-The rule underneath the list is the one worth carrying: no institution may
-assert the decisive facts of its own legitimacy, decide them, execute the
-result, audit itself and supply the final remedy. That is why the functions are
-divided at all, and why every body's card has to say what it may not do alone.
+| Institution | Function and limit |
+|---|---|
+| People's Assembly | Population-proportional law-making, revenue, spending, oversight and amendment initiation, each under separate authority. |
+| Regions Council | Regional representation, a single reasoned return of an ordinary bill, and consent to federal-settlement changes. Its ordinary-law veto is suspensive. |
+| Executive Council | Collective execution and administration under Assembly confidence; removal requires choosing a successor. |
+| Civic President | Non-executive constitutional functions, separately authorised. |
+| Ordinary courts and Constitutional Court | Case-specific relief and final general constitutional invalidation, respectively. |
+| Electoral, audit, integrity, ombudsperson and appointments bodies | Separate mandates for administering, checking, assisting and appointing. No general power follows from the office name. |
+
+Regional legislatures supply proportionate delegations to the Regions Council.
+Its equal aggregate regional weight is a territorial exception confined to its
+limited mandate, not a second population-based chamber.
+
+No institution may establish the decisive facts of its own legitimacy, judge
+them, execute the result, audit itself and supply the final remedy. Dividing
+those functions creates routes for challenge; it does not prove that their
+holders are independent in practice.
 
 ## Keeping public decisions answerable
 
@@ -116,9 +116,8 @@ unlawful for one current government, chamber, party coalition, profession or
 appointing source to hold majority appointment control of a court or an
 independent oversight body. And the design says the uncomfortable half in the
 same breath — divided sources do not by themselves prove that the same
-coalition does not control them. This architecture exposes capture and raises
-its price. It does not make capture impossible, and nothing here claims it
-does.
+coalition does not control them. The records make direct and de facto control expressible and challengeable.
+They do not demonstrate that capture has been detected or prevented.
 
 Every office needs a democratic or legal source, a mandate, a jurisdiction, a
 delegation boundary, conflict and recusal rules, a finite end condition, a
@@ -136,8 +135,15 @@ take no avoidable irreversible policy action. When independently supplied
 time evidence establishes the constitutional deadline, ordinary caretaker
 authority ends and the electoral body has both a duty and the authority to call
 a fresh election. Missing or disputed time evidence cannot preserve ordinary
-incumbent power — the polarity runs the safe way — though nothing in these
-rules can make the election happen.
+incumbent power. The duty to call an election does not establish that it occurs.
+
+The fresh-election case tests the point at which authority follows. A complete
+record includes matching source, evidence and review findings that the deadline
+has passed. The electoral body derives authority to call the election. In the
+control, those findings are withheld while the rest of the record remains;
+the authority does not derive. Naming a deadline and an electoral body cannot
+substitute for the required finding, and that finding still does not establish
+that a vote took place.
 
 Budget deadlock cannot suspend the floor or essential services. The treasury
 functions continue the last lawful authority for an enumerated continuity set
@@ -168,8 +174,7 @@ succession, and the disposition of records that affect individual rights. Where
 an exit would transfer, extinguish or irreversibly impair collective land or
 resource title, the actual collective consent requirement applies.
 
-And the design states in the open what a design like this usually leaves
-unsaid. Because the armed forces' mandate is external only, the republic holds
+The armed forces' mandate is external only, so the republic holds
 no military instrument against a unilateral exit. Legal invalidity, ordinary
 policing under the imminent-threat-to-life standard, and negotiation are the
 responses available, and defence, trade, border, payment and service levers may
@@ -194,43 +199,33 @@ installation or transfer. Completeness needs redundant or alternate writers,
 because whoever can withhold it could otherwise block every authority that
 depends on it.
 
-Then the honest part, which is a limit rather than a caveat. An incomplete
-roster and a genuinely smaller roster are indistinguishable without that
-separate assurance. The reasoner can observe exact facts in a supplied
-snapshot, count witnesses, aggregate supplied weights and compose supplied
-certificates; it cannot compute a changing roster's threshold, compare moving
-tallies or shares, decide a legal default, authenticate completeness, or choose
-between conflicting submissions. A certificate is a premise handed to it, not
-something a proof authenticates. No green result here shows that every eligible
-resident was included.
+Without independent assurance, a supplied smaller roster does not reveal
+whether eligible people were omitted. The model can reason over a snapshot,
+count supplied witnesses and aggregate supplied weights. This constitutional
+route nevertheless relies on supplied result and completeness certificates;
+it does not authenticate them, resolve conflicting submissions or operate the
+changing electoral roll. A successful formal result proves no universal
+inclusion in an election.
 
 ## The child with nobody
 
-Public power is the part of the design the child with nobody touches least, and
-the chapter should say why that is the intended answer rather than an omission.
-Nothing in this chapter reads a person at all. A body holds a power when its
-own record is complete — the source, the mandate, the jurisdiction, the
-reasons, the review, the end — and no conclusion here asks who the power will
-be exercised over, or what that person has, or whether anybody is speaking for
-them. The child appears nowhere in these rules, and that is the same fact as
-the floor's unconditionality seen from the other side: a power that had to read
-the person could be made to read the wrong thing about them.
+Nell remains a person and is owed expression. The chapter's vocabulary entries
+supply neither an office for Nell nor a ballot, void or prisoner conclusion.
+These checks concern the supplied child record; they do not make the exercise
+of public power irrelevant to the child.
 
-What follows for the child is nothing, and that is worth being exact about. The
-ballot is not on the floor, and this chapter's machinery supplies a valid
-result rather than a voice for somebody who cannot ask for one. The ombudsperson
-and rights advocate function exists for anyone unable to act alone, and it is
-named here as a body with a mandate, which is not the same as somebody
-arriving. Every institution in this chapter is a legal interface waiting for a
-republic to staff it.
+The ombudsperson and rights advocate have mandates to assist people unable to
+act alone. A named mandate and the continuing floor establish responsibility,
+not the arrival of a helper. The institutions must serve Nell without making
+the child hold office or satisfy political eligibility first.
 
 ## What none of this staffs
 
-None of this establishes an operating state. Every body in this chapter is
-specified and unstaffed: no seat is filled, no independence is demonstrated in
-fact, no budget exists, no election has been held, and no institution has acted.
-The rules say what a lawful public act requires and what stops following when a
-requirement is missing. Seats, selector allocations, durations and calendars are
-implementation choices still inside the ratified constraints; staffing, funding,
-convening, administration, publication and every tally system belong to the
-second book.
+A complete power record establishes the specified legal authority, not a
+staffed or funded institution, a convened Assembly or an election held. Seats,
+selector allocations and calendars must be implemented within the constitutional
+constraints. Actual independence and performance need evidence beyond the rules.
+
+The structure gives each public act a source, limits, an end and a route to
+challenge. The next chapter turns to the person who helps authorise that
+structure, including the voter whom the State has confined.
