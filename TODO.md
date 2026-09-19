@@ -111,23 +111,6 @@ solutions and development history stay outside the book's reading sequence.
 
 ## II. Strengthen evidence and justification
 
-### 09. Make consequential empirical claims traceable and supportable
-
-- [ ] Check statistics, named studies, historical cases and comparative factual
-  claims across the manuscript, starting with Part V and scarcity claims.
-
-Use current primary sources, the existing registry and research files. Supply
-reader-facing citations at the claims, including population, period, denominator,
-measure and relevant limitations. Check quotations in context. Recalculate
-reported derived figures where feasible; otherwise state exactly what was not
-reproduced. Distinguish raw data, analysis, historical interpretation and a
-constitutional value judgment. Remove or narrow claims the evidence cannot bear.
-
-**Done when:** every statistic and named study has a usable primary-source URL;
-each consequential historical example is traceable; comparisons use compatible
-definitions or disclose the mismatch; and repository research is not the only
-unexplained path a reader has to the evidence.
-
 ### 10. Defend causal claims and institutional choices against real alternatives
 
 - [ ] Rebuild the reasoning behind the principal choices, especially those

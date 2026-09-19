@@ -200,18 +200,20 @@ the society.
 
 ## Coercion
 
-Tanzania, 1967: the Arusha Declaration commits a nation to ujamaa — familyhood —
-villages that were to be voluntary, cooperative, self-reliant. Six years of
+Tanzania, 1967: the Arusha Declaration commits a nation to ujamaa — familyhood
+— villages that were to be voluntary, cooperative, self-reliant. Six years of
 persuasion moved only a fraction of the rural population, and in 1973 the
-government's patience ran out and villagization became compulsory. At least five
-million people were relocated in three years. Output fell, imports rose, and the
-statistics the state published — 13 million living in villages — counted, as
-James Scott showed, many people who had never moved: coercion had
-not only broken the programme, it had broken the state's ability to see that it
-had. Nyerere himself admitted, later, that officials had used force against his
-own founding principle. The lesson is not that villages are bad. It is that the
-moment consent is replaced because it is slow, the project is already over,
-whatever its paperwork says — and the paperwork will not even be true.
+government's patience ran out and villagization became compulsory. At least
+five million people were relocated in three years — that is James Scott's
+figure, and it is the conservative one. Output fell, imports rose, and the
+counting came apart: the totals for how many people ended up living in villages
+run from around nine million to 13 million depending on whose books you read,
+and they cannot all be right. Coercion had not only broken the programme, it
+had broken the state's ability to say what it had done. Nyerere himself
+admitted, later, that officials had used force against his own founding
+principle. The lesson is not that villages are bad. It is that the moment
+consent is replaced because it is slow, the project is already over, whatever
+its paperwork says — and the paperwork will not even be true.
 
 What this design does about what may be done to a person, four chapters spelled
 out: conviction takes movement and nothing else — not the vote, not personhood,
@@ -288,22 +290,26 @@ yet.
 
 ## Capture
 
-Mondragon is the counterexample to despair. Five graduates of a technical school
-in a Basque town started a stove factory in 1956; today the federation they
-founded employs some seventy thousand workers, sets its own pay ceilings
-cooperative by cooperative — the widest around nine to one, against gaps of
-300-to-1 in comparable firms — and when one of its companies collapsed in
-2013, most of the worker-members were redeployed into sister cooperatives rather
-than dole queues. What the admirers miss is *why* it held: Mondragon federated
-capital and education, not just values — its own bank, its own insurance, its
-own university. Values recruit; institutions retain. And what its admirers
-concede too rarely: most workers in its overseas plants are not members. The
-resilience machine has a boundary, and the people outside it work for the people
-inside it. Kerala tells the same double story at state scale: the People's Plan
-campaign of 1996 devolved a third or more of the plan budget to village bodies
-and trained nearly 100,000 volunteers — and where the training arrived thin,
-old elites captured the new machinery while it went right on running. Capture is
-not what happens when a design breaks. It is what happens while it works.
+Mondragon is the counterexample to despair. Five graduates of a technical
+school in a Basque town started a stove factory in 1956; today the federation
+they founded employs some seventy thousand workers, sets its own pay ceilings
+cooperative by cooperative — the widest around nine to one, measured from its
+lowest-paid member to its highest. The figure usually set against that, near
+300-to-1, measures a chief executive against a *typical* worker at the largest
+listed firms; it is a looser measurement than the cooperative's, and the
+looseness runs in the corporation's favour. When one of its companies collapsed
+in 2013, most of the worker-members were redeployed into sister cooperatives
+rather than dole queues. What the admirers miss is *why* it held: Mondragon
+federated capital and education, not just values — its own bank, its own
+insurance, its own university. Values recruit; institutions retain. And what
+its admirers concede too rarely: most workers in its overseas plants are not
+members. The resilience machine has a boundary, and the people outside it work
+for the people inside it. Kerala tells the same double story at state scale:
+the People's Plan campaign of 1996 devolved a third or more of the plan budget
+to village bodies and trained nearly 100,000 volunteers — and where the
+training arrived thin, old elites captured the new machinery while it went
+right on running. Capture is not what happens when a design breaks. It is what
+happens while it works.
 
 What this design does against capture, most of this book: the pen split across
 independent bodies, affirmative case-bound independence for each reviewer, the grounds
@@ -573,26 +579,31 @@ remedy. They do not borrow T3's custody record for another power. Operations,
 service design, and delivery remain a handoff to Book 2, *What It Would Take*.
 
 India, because this is not hypothetical and not every reader carries the
-context. India's welfare system feeds hundreds of millions through ration
-cards — entitlement documents a household presents at a fair-price shop. In the
-late 2010s, eligibility was re-computed against a biometric identity database,
-and in the state of Jharkhand alone over a million cards were cancelled; when
+context. India's welfare system feeds hundreds of millions through ration cards
+— entitlement documents a household presents at a fair-price shop. In the late
+2010s, eligibility was re-computed against a biometric identity database, and
+in the state of Jharkhand alone over a million cards were cancelled; when
 researchers later sampled the cancellations in their study districts, most of
 the cancelled cards — by the study's own descriptive count, the overwhelming
 share — belonged to genuine households. The published experimental study of the
 same reforms found that between one and a half and two million legitimate
 beneficiaries lost access at some point. An 11-year-old girl named Santoshi
-Kumari died in September 2017, after her family's card was cancelled for
-want of a database link; her family says she died asking for rice. The cause of
-her death is contested. The chain — cancellation, denial, death — is documented.
-That is what it looks like when the computation of eligibility becomes the
-instrument of denial, and it is the shape the revised constitutional source refuses.
-Standing attaches before identity reconciliation. A missing or disputed match cannot
-postpone the floor, process, or remedy, and a service route may not demand status
-disclosure or feed immigration or enforcement records as its price. Disputed age near
-an expiring right defaults provisionally to adult treatment. Capacity, disability, how someone communicates, or refusal of support cannot
-suspend standing; a person can speak for themselves or petition directly without an
-advocate.
+Kumari died in September 2017, after her family's card was cancelled for want
+of a database link; her family says she died asking for rice. The cause of her
+death is contested: the district administration recorded malaria, her family
+and local activists said hunger. The cancellation is not contested — the block
+officer confirmed the card had been deleted for want of the link, and the
+family was eligible — and neither is the six-month refusal of rations that
+followed it. That is what it looks like when the computation of eligibility
+becomes the instrument of denial, and it is the shape the revised
+constitutional source refuses.
+Standing attaches before identity reconciliation. A missing or disputed match
+cannot postpone the floor, process, or remedy, and a service route may not
+demand status disclosure or feed immigration or enforcement records as its
+price. Disputed age near an expiring right defaults provisionally to adult
+treatment. Capacity, disability, how someone communicates, or refusal of
+support cannot suspend standing; a person can speak for themselves or petition
+directly without an advocate.
 
 Identity work remains consequential rather than clerical. A proposed alias link stays
 pending until source-backed evidence and an independent check support a merge.
@@ -653,8 +664,8 @@ the part of this joint I am least willing to see traded away.
 ## The State
 
 Of the designs history offers this book, the state ended one, absorbed one,
-tolerated one, and enabled one — and the four fates are the whole strategic map.
-Chile's Cybersyn, a humane real-time coordination network built on 500
+tolerated one, and enabled one — and the four fates are the whole strategic
+map. Chile's Cybersyn, a humane real-time coordination network built on 500
 surplus telex machines, never got to fail or succeed on its merits: the coup
 ended the government that built it, and the operations room was dismantled by
 the people who shot its owners — the lesson being that civic infrastructure
@@ -662,15 +673,15 @@ outlives its builders and must be designed for hostile inheritance. Auroville,
 the intentional community on the Tamil coast where this book's poem would be at
 home, never settled its legal shell; the Indian state settled it instead — an
 emergency takeover, then a statute vesting the township in a
-government-appointed foundation, and five decades later the Supreme Court
-affirming that the statute, not the residents, governs. Switzerland's WIR — a
-parallel credit network born in 1934 — survived ninety-two years by never
-declaring war on the franc: it complements the national money, expanding when
-bank credit tightens, and so the sovereign has never had a reason to kill it.
-And Kerala shows the state as enabler: real budgets plus real training moved
-through village assemblies, and local democratic capacity that outlasted the
-campaign — the state, rarely and conditionally, making a design like this more
-possible rather than less.
+government-appointed foundation, and in 2025 the Supreme Court holding that the
+residents' assembly may only advise the board that statute appoints.
+Switzerland's WIR — a parallel credit network born in 1934 — survived
+ninety-two years by never declaring war on the franc: it complements the
+national money, expanding when bank credit tightens, and so the sovereign has
+never had a reason to kill it. And Kerala shows the state as enabler: real
+budgets plus real training moved through village assemblies, and local
+democratic capacity that outlasted the campaign — the state, rarely and
+conditionally, making a design like this more possible rather than less.
 
 What this design does about the state is the book's least hidden secret: it
 does not evade the state, it *specifies* one. It now specifies more than a
@@ -904,6 +915,24 @@ check certifies the new word's meaning or every consequence it creates. Each
 current name has faced this book's own attempts to break the design it serves.
 That history is a defence, not a proof. It is the only kind of defence a
 foundation ever gets.
+
+One thing about the evidence, since I have spent five sections leaning on it.
+Every figure in this part comes out of a short public file that travels with
+the book — a claims registry, one entry per number, carrying the claim as I
+state it, the value, what the value counts, the source with a locator you can
+open, the date the entry was last checked, and the caveats that have to travel
+with it. It is released into the public domain, so anyone may re-run or
+republish it without asking me. Where I derived a figure instead of quoting
+one, the script that derived it is in there with the data it ran on, which
+means the derivation can be repeated and contradicted rather than believed.
+Where a figure is disputed — how many people Tanzania moved, what one child
+died of — the entry says so, and so does the sentence here that uses it. Where
+two sources measure different things — a cooperative's pay spread from bottom
+to top against a corporation's chief executive set beside a typical worker —
+the entry says that too, because a comparison that quietly changes its
+denominator is the easiest dishonest sentence a book like this can write. What
+the registry cannot do is make the research underneath it true. It makes it
+findable, and findable is the only part of it I control.
 
 The last part of this book shows the machine: the rules as they are actually
 written, the checks that run, the failures they caught, and the things I wanted

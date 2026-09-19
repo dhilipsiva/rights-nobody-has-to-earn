@@ -3174,6 +3174,55 @@ trigger, evidence, limit, failure, interim protection and review route, and each
 closing on the same limit: the design now knows who to name when nobody comes,
 which is a different achievement from somebody coming.
 
+**Item 09 — traceable empirical claims, landed 2026-09-19.** The manuscript's
+empirical surface is Part V and nothing else: censused, the derived chapters
+carry no claim about the world, and every "where reliable evidence shows" in
+them states a rule rather than reporting a finding. So the work was Part V's
+nineteen figure-bearing sentences, and it found three things.
+
+**Two mis-citations that read as correct.** Part V's Tanzania figure was bound
+to `medina-2011-cybersyn` — the monograph about Chile — with a comment in the
+test explaining the shared entry as deliberate. It was `scott-1998-ujamaa` all
+along. And Auroville's entry cited the Supreme Court's master-plan judgment for
+a *governance* holding; the holding Part V argues from is the other judgment of
+the same day, *Auroville Foundation v. Natasha Storey*, which confines the
+Residents' Assembly to advising the appointed Board. Both passed every check
+that existed, because both named a real source that really exists.
+
+**One claim the evidence would not bear, narrowed.** Part V said the state's
+published total of 13 million villagers "counted, as James Scott showed, many
+people who had never moved". Scott's own figure is the five million relocated;
+the higher totals are other people's and disagree with each other. The sentence
+now attributes the five million to Scott and argues from the spread itself —
+the totals run from around nine million to thirteen and cannot all be right,
+which makes the point about a state losing sight of its own actions better than
+the attribution did. **A live claim was also sharpened rather than softened:**
+Santoshi Kumari's contested cause of death is now named on both sides (the
+district recorded malaria; her family and local activists said hunger) beside
+what is *not* contested — the cancellation, confirmed by the block officer, and
+the six-month refusal of rations.
+
+**A comparison that changed its denominator.** Mondragon's nine-to-one is
+highest-to-lowest pay inside a cooperative; the ~300-to-1 set against it is a
+chief executive against a *typical* worker at the largest listed firms. Part V
+now says so, and says which way the looseness runs. `epi-2026-ceo-pay-ratio` is
+a new entry whose notes lead with the denominator warning.
+
+**Two things are now mechanical.** `TRACED` grew from nine rows to seventeen and
+is keyed by case rather than by entry, so one source may legitimately carry
+several figures while two rows can never collapse onto one. And
+`every_traced_source_carries_a_locator_a_reader_can_follow` requires a URL or a
+DOI in the `source` field of every entry Part V argues from — it caught the
+V-Dem entries on its first run, which named the OWID series without linking
+them. It establishes that a locator is present, never that it resolves today.
+
+**The reader now has a path.** The registry had never been named to a reader
+anywhere in the ordered inputs. Part V's closing section says what it is, that
+it ships with the book in the public domain, that derived figures carry the
+script and the data snapshot, and that disputed figures and mismatched
+denominators are marked in the entry and in the sentence. Registry: 69 entries
+to 71; `registry/check.py` passes.
+
 ### Measured Nibli capability boundaries
 
 Each is a dated measurement against a named engine revision, not a timeless
@@ -3381,15 +3430,25 @@ exist and run inside `verify.sh`; see `registry/README.md`. What remains:
   (WHO GHO, OWID, FAOSTAT…) still land as entries need them. Build the rendering
   step only when a consumer appears.
 
-- **Re-cite the ported registry entries against published versions.** The port
-  (`dd25b49`) honestly stamped `retrieved: 2026-07` — book.md's own last verification —
-  on the legacy entries without re-verifying them, and most of the registry still
-  carries that stamp. The sweep the old plan deferred to "as each reference is ported"
-  is now due, since the porting is done: work through the pinned entries, check each
-  against its source's current published version (the Muralidharan REStat move is the
-  model — a working paper that became a journal article), update the entry and its
-  `retrieved` date. The Kenya UBI entry carries its own warning: it must not reach
-  Part V as a working paper.
+- **Re-cite the ported registry entries against published versions — done for
+  every entry Book 1 argues from (2026-09-19), open for the rest.** The port
+  (`dd25b49`) honestly stamped `retrieved: 2026-07` — book.md's own last
+  verification — on the legacy entries without re-verifying them. Item 09 of the
+  revision backlog swept the entries Part V actually uses and left the remainder
+  alone: what is still on the 2026-07 stamp is book-2 or legacy material and no
+  sentence in Book 1 rests on it. Work through the rest as Book 2 needs them,
+  checking each against its source's current published version (the Muralidharan
+  REStat move is the model — a working paper that became a journal article) and
+  updating the entry and its `retrieved` date. The Kenya UBI entry carries its own
+  warning: it must not reach Part V as a working paper.
+
+  **Two lessons from the swept half, because both were mis-citations that read as
+  correct.** A registry id is not a source — Part V's Tanzania figure was bound to
+  the book about Chile, and a comment in the test blessed the collision as
+  deliberate rather than asking why. And a *court* is not a *judgment*: Auroville's
+  governance holding and the master-plan holding were handed down by the same court
+  on the same day in different cases, and the entry named the wrong one. Check that
+  the locator decides the question the prose asks, not merely that it exists.
 
 - **Add Bregman's 15-hour workweek figure to the registry** when Part V or book-2 first
   cites his proposal — the one claim the research-brief corrections found no error in but

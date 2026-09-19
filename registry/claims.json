@@ -24,11 +24,11 @@
         2000000
       ],
       "units": "persons",
-      "source": "Muralidharan, Niehaus & Sukhtankar, \"Identity Verification Standards in Welfare Programs: Experimental Evidence from India\", Review of Economics and Statistics 107(2): 372–392 (2025), doi:10.1162/rest_a_01296",
+      "source": "Muralidharan, Niehaus & Sukhtankar, \"Identity Verification Standards in Welfare Programs: Experimental Evidence from India\", Review of Economics and Statistics 107(2): 372-392 (2025), doi:10.1162/rest_a_01296, https://doi.org/10.1162/rest_a_01296",
       "retrieved": "2026-08-02",
       "method": "quoted from the published abstract",
       "fetch": null,
-      "notes": "Supersedes NBER WP 26744; the WP-era '~2 million' and the spliced 10%/10.6% quotation are corrected in final-research.md (commit 1bcacc7)."
+      "notes": "Supersedes NBER WP 26744; the WP-era '~2 million' and the spliced 10%/10.6% quotation are corrected in final-research.md (commit 1bcacc7). DOI resolver added 2026-09-19."
     },
     {
       "id": "muralidharan-2025-reconciliation-nonreceipt",
@@ -57,11 +57,11 @@
       "claim": "11 lakh (1.1 million) ration cards were cancelled in Jharkhand for not being linked to Aadhaar.",
       "value": 1100000,
       "units": "ration cards",
-      "source": "Drèze, Khalid, Khera & Somanchi, \"Aadhaar and Food Security in Jharkhand\", Economic and Political Weekly 52(50): 50–60 (16 December 2017)",
-      "retrieved": "2026-08-02",
+      "source": "Drèze, Khalid, Khera & Somanchi, \"Aadhaar and Food Security in Jharkhand: Pain without Gain?\", Economic and Political Weekly 52(50): 50-60 (16 December 2017), https://www.epw.in/journal/2017/50/special-articles/aadhaar-and-food-security-jharkhand.html",
+      "retrieved": "2026-09-19",
       "method": "quoted",
       "fetch": null,
-      "notes": "Statewide administrative figure; distinct population from the study-district sample behind muralidharan-2025-genuine-cards."
+      "notes": "Statewide administrative figure; distinct population from the study-district sample behind muralidharan-2025-genuine-cards. Locator added 2026-09-19."
     },
     {
       "id": "jacob-2022-psh-benefit-cost",
@@ -362,12 +362,12 @@
       "claim": "Switzerland's WIR complementary credit network is countercyclical — it stabilises rather than destabilises.",
       "value": null,
       "units": null,
-      "source": "Stodder, Journal of Economic Behavior & Organization 72(1): 79–95 (2009), doi:10.1016/j.jebo.2009.06.002; Bank WIR CHW-System (2026)",
-      "retrieved": "2026-07",
+      "source": "Stodder, \"Complementary credit networks and macroeconomic stability: Switzerland's Wirtschaftsring\", Journal of Economic Behavior & Organization 72(1): 79-95 (2009), doi:10.1016/j.jebo.2009.06.002, https://doi.org/10.1016/j.jebo.2009.06.002; Bank WIR CHW-System (2026)",
+      "retrieved": "2026-09-19",
       "method": "reference",
       "fetch": null,
       "book": "book-1",
-      "notes": "One of the nine historical cases (Part V)."
+      "notes": "One of the nine historical cases (Part V). Locator added 2026-09-19. The founding year 1934 is uncontested; Part V's span is arithmetic from it."
     },
     {
       "id": "banerjee-2023-kenya-ubi",
@@ -587,99 +587,117 @@
     },
     {
       "id": "harrison-1969-owen",
-      "claim": "Robert Owen's New Harmony and the labour-exchange collapse.",
+      "claim": "Robert Owen's New Harmony: roughly 800 settlers by May 1825, seven successive constitutions in two years, and dissolution in 1827; the London labour exchange priced labour flatly by the hour and its valuators could not make one price fit unequal work.",
       "value": null,
       "units": null,
-      "source": "Harrison, Robert Owen and the Owenites in Britain and America (1969), https://archive.org/details/robertowenowenit0000harr",
-      "retrieved": "2026-07",
+      "source": "Harrison, Robert Owen and the Owenites in Britain and America, Routledge & Kegan Paul (1969), https://archive.org/details/robertowenowenit0000harr",
+      "retrieved": "2026-09-19",
       "method": "reference",
       "fetch": null,
       "book": "book-1",
-      "notes": "Nine cases. Re-point as failure mode of a functioning design, never attempt narrative."
+      "notes": "One of the nine historical cases (Part V). Settler count, the seven constitutions and the 1825/1827 dates re-checked 2026-09-19 against published accounts of the settlement; the pinned monograph is the source of record and was not re-read. Part V argues the valuation failure, never the narrative."
     },
     {
       "id": "lin-1990-collectivization",
-      "claim": "China's collectivization crisis and the incentive collapse; the reform-era recovery; the contested egalitarianism reading.",
+      "claim": "China's collectivization crisis: the right to withdraw from a collective was removed in the autumn of 1958, turning a repeated game into a one-shot one, and the self-enforcing contract that had held productivity together collapsed.",
       "value": null,
       "units": null,
-      "source": "Lin, JPE 98(6): 1228–1252 (1990); Lin, AER 82(1): 34–51 (1992); Li, Journal of Agrarian Change 18(1): 67–86 (2018)",
-      "retrieved": "2026-07",
+      "source": "Lin, \"Collectivization and China's Agricultural Crisis in 1959-1961\", Journal of Political Economy 98(6): 1228-1252 (1990), doi:10.1086/261732, https://www.journals.uchicago.edu/doi/abs/10.1086/261732; Lin, AER 82(1): 34-51 (1992); Li, Journal of Agrarian Change 18(1): 67-86 (2018)",
+      "retrieved": "2026-09-19",
       "method": "reference",
       "fetch": null,
       "book": "book-1",
-      "notes": "Nine cases."
+      "notes": "Nine cases. The 1958 removal of the exit right re-checked 2026-09-19 against the published abstract and summaries of the JPE article. Lin's exit-rights thesis is contested: the 1993 Journal of Comparative Economics symposium collects the criticisms, and Li (2018) is the egalitarianism reading. Part V argues the exit right, which is the part the design turns on, not the famine's full causation."
     },
     {
       "id": "abramitzky-kibbutz",
-      "claim": "The kibbutzim: equality survives only with exit costs, screening and repeated interaction — and erodes as they fall.",
-      "value": null,
-      "units": null,
-      "source": "Abramitzky, JEP 25(1): 185–208 (2011); The Mystery of the Kibbutz, Princeton UP (2018)",
-      "retrieved": "2026-07",
+      "claim": "The kibbutzim sustained full income equality with screening, mutual monitoring and high exit costs, and unwound as those fell: differential salaries went from about a fifth of kibbutzim in 1999 to roughly three-quarters by 2011.",
+      "value": {
+        "differential_salary_share_1999": 0.21,
+        "differential_salary_share_2011": 0.76
+      },
+      "units": "share of kibbutzim",
+      "source": "Abramitzky, \"Lessons from the Kibbutz on the Equality-Incentives Trade-Off\", Journal of Economic Perspectives 25(1): 185-208 (2011), doi:10.1257/jep.25.1.185, https://www.aeaweb.org/articles?id=10.1257/jep.25.1.185; Abramitzky, The Mystery of the Kibbutz, Princeton UP (2018)",
+      "retrieved": "2026-09-19",
       "method": "reference",
       "fetch": null,
       "book": "book-1",
-      "notes": "Nine cases."
+      "notes": "Nine cases. The 1999-2011 differential-salary series re-checked 2026-09-19 against published descriptions of the reform literature; the JEP article is the source of record. Part V's 'by around 2010, roughly three in four' is the 2011 end of that series rounded down, and the count of communities is a present-day figure, not part of the series."
     },
     {
       "id": "scott-1998-ujamaa",
-      "claim": "Nyerere's compulsory villagization: legibility-driven design against local knowledge.",
-      "value": null,
-      "units": null,
-      "source": "Scott, Seeing Like a State, Yale UP (1998), ch. 7",
-      "retrieved": "2026-07",
+      "claim": "Nyerere's villagization: voluntary from the 1967 Arusha Declaration, compulsory from 1973, with at least five million people relocated on Scott's own estimate; totals for how many ended up in villages are contested and run far higher.",
+      "value": {
+        "scott_relocated_minimum": 5000000,
+        "reported_totals_range": [
+          9000000,
+          13000000
+        ]
+      },
+      "units": "persons",
+      "source": "Scott, Seeing Like a State, Yale UP (1998), ch. 7, https://www.jstor.org/stable/j.ctt1nq3vk",
+      "retrieved": "2026-09-19",
       "method": "reference",
       "fetch": null,
       "book": "book-1",
-      "notes": "Nine cases."
+      "notes": "Nine cases. Re-checked 2026-09-19: Scott's figure is 'at least five million' relocated. The higher totals for people living in villages by 1976 are the state's and other scholars' and disagree with one another; the disagreement itself is what Part V argues from, and no claim is made that Scott showed a specific published total to be padded. Earlier drafts attributed 13 million to Scott as a state figure he had debunked; that attribution is not supported and was removed."
     },
     {
       "id": "medina-2011-cybersyn",
       "claim": "Chile's Cybersyn: real-time economic coordination cut short; what the technology could and could not have carried.",
       "value": null,
       "units": null,
-      "source": "Medina, Cybernetic Revolutionaries, MIT Press (2011)",
-      "retrieved": "2026-07",
+      "source": "Medina, Cybernetic Revolutionaries: Technology and Politics in Allende's Chile, MIT Press (2011), ISBN 9780262525961, https://mitpress.mit.edu/9780262525961/cybernetic-revolutionaries/",
+      "retrieved": "2026-09-19",
       "method": "reference",
       "fetch": null,
       "book": "book-1",
-      "notes": "Nine cases."
+      "notes": "Nine cases. Locator added 2026-09-19; the monograph is the source of record. Part V argues only that the system's fate was decided by the coup rather than by its merits."
     },
     {
       "id": "auroville-governance",
-      "claim": "Auroville: a chartered intentional community whose governance passed to a state foundation; the 2021–25 conflict and 2025 Supreme Court ruling.",
+      "claim": "Auroville: a chartered intentional community whose governance passed to a state foundation — an emergency takeover in 1980, the Auroville Foundation Act in 1988, and in 2025 the Supreme Court holding that the Residents' Assembly may only advise the government-appointed Governing Board.",
       "value": null,
       "units": null,
-      "source": "The Auroville Foundation Act, 1988; LiveLaw, Supreme Court Sets Aside NGT Bar (17 March 2025)",
-      "retrieved": "2026-07",
+      "source": "The Auroville (Emergency Provisions) Act, 1980; The Auroville Foundation Act, 1988; Auroville Foundation v. Natasha Storey, C.A. No. 13651 of 2024, Supreme Court of India, 17 March 2025 (Residents' Assembly 'confined only to advise the Governing Board', with 'no legal or statutory right' to nominate members); the same day's Auroville Foundation v. Navroz Kersasp Mody, C.A. Nos. 5781-5782 of 2022, 2025 INSC 347, https://api.sci.gov.in/supremecourt/2022/24729/24729_2022_9_1501_60151_Judgement_17-Mar-2025.pdf, is a separate environmental-jurisdiction matter; https://auroville.today/articles/4308/two-judgements-of-the-supreme-court-of-india/",
+      "retrieved": "2026-09-19",
       "method": "reference",
       "fetch": null,
       "book": "book-1",
-      "notes": "Nine cases; also backs the pod-meets-state legal material (book-2 side lists the Emergency Provisions Act line)."
+      "notes": "Nine cases; also backs the pod-meets-state legal material (book-2 side lists the Emergency Provisions Act line). Re-cited 2026-09-19: the governance holding Part V argues from is the Natasha Storey judgment, NOT the NGT/master-plan judgment handed down the same day, which the earlier entry named. The two are easy to confuse and decide different questions."
     },
     {
       "id": "mondragon-2025",
-      "claim": "Mondragon: a functioning large cooperative federation; pay ratios and their limits.",
-      "value": null,
-      "units": null,
-      "source": "MONDRAGON Corporation, Annual Report 2024 (2025); Herrera, Review of Business 25(1) (2004)",
-      "retrieved": "2026-07",
+      "claim": "Mondragon is a functioning large cooperative federation: about seventy thousand workers, with pay spreads set cooperative by cooperative and the widest around nine to one.",
+      "value": {
+        "workers": 70085,
+        "widest_pay_ratio": 9
+      },
+      "units": "persons; ratio of highest to lowest pay within a cooperative",
+      "source": "MONDRAGON Corporation, Annual Report 2024 (2025), https://www.mondragon-corporation.com/people/en/anual-report/; Herrera, Review of Business 25(1) (2004)",
+      "retrieved": "2026-09-19",
       "method": "reference",
       "fetch": null,
       "book": "book-1",
-      "notes": "Nine cases."
+      "notes": "Nine cases. Headcount and the 1:9 spread re-checked 2026-09-19. The ratio is highest-to-LOWEST pay inside a cooperative, which is not the denominator used by CEO-to-median-worker comparisons: see epi-2026-ceo-pay-ratio, and do not present the two as like for like without saying so. Most workers in the federation's overseas subsidiaries are not members."
     },
     {
       "id": "kerala-peoples-plan",
-      "claim": "Kerala's People's Plan Campaign: decentralised planning at state scale.",
-      "value": null,
-      "units": null,
-      "source": "Isaac & Franke, Local Democracy and Development, LeftWord (2000); LSGD Kerala, Power to the People",
-      "retrieved": "2026-07",
+      "claim": "Kerala's 1996 People's Plan Campaign devolved roughly 35-40 per cent of the state plan budget to local bodies and trained nearly 100,000 volunteer resource persons.",
+      "value": {
+        "plan_budget_share": [
+          0.35,
+          0.4
+        ],
+        "volunteers_trained": 100000
+      },
+      "units": "share of the state plan budget; persons trained",
+      "source": "Isaac & Franke, Local Democracy and Development: The Kerala People's Campaign for Decentralized Planning, LeftWord (2000); Oommen, \"People's Plan of Kerala in Retrospect and Prospect\", https://www.serialsjournals.com/abstract/65487_18-manha_maria_oommen.pdf",
+      "retrieved": "2026-09-19",
       "method": "reference",
       "fetch": null,
       "book": "book-1",
-      "notes": "Nine cases."
+      "notes": "Nine cases. The budget share and volunteer count re-checked 2026-09-19; published figures give the share as 35 per cent or 35-40 per cent depending on year and whether it is the plan or development budget, which is why Part V says 'a third or more'. The volunteer figure counts trained resource persons, not participants, of whom there were far more."
     },
     {
       "id": "fssai-licensing",
@@ -812,7 +830,7 @@
         "n": 141
       },
       "units": "correlation coefficients, country level",
-      "source": "Derived by registry/fetch/vdem_happiness.py from OWID grapher series (CC BY): electoral-democracy-index (V-Dem v2x_polyarchy), happiness-cantril-ladder (WHR), gdp-per-capita-worldbank; latest common years ≥ 2022; snapshot registry/data/vdem-happiness-2026-08-03.csv",
+      "source": "Derived by registry/fetch/vdem_happiness.py from OWID grapher series (CC BY): electoral-democracy-index (V-Dem v2x_polyarchy) https://ourworldindata.org/grapher/electoral-democracy-index, happiness-cantril-ladder (WHR) https://ourworldindata.org/grapher/happiness-cantril-ladder, gdp-per-capita-worldbank https://ourworldindata.org/grapher/gdp-per-capita-worldbank; latest common years ≥ 2022; snapshot registry/data/vdem-happiness-2026-08-03.csv",
       "retrieved": "2026-08-03",
       "method": "fetched-by-script",
       "fetch": "vdem_happiness.py --snapshot registry/data",
@@ -848,7 +866,7 @@
         ]
       },
       "units": "Cantril ladder points, category means",
-      "source": "Same derivation as vdem-2026-democracy-happiness-partial (OWID political-regime series for RoW categories)",
+      "source": "Same derivation as vdem-2026-democracy-happiness-partial, adding the OWID political-regime series for the Regimes of the World categories https://ourworldindata.org/grapher/political-regime",
       "retrieved": "2026-08-03",
       "method": "fetched-by-script",
       "fetch": "vdem_happiness.py --snapshot registry/data",
@@ -869,7 +887,7 @@
         "n": 141
       },
       "units": "OLS on |residuals| of ladder~polyarchy",
-      "source": "Same derivation; isolation test against the alternative index recorded qualitatively in book-1/source/vdem-rederivation.md (its coefficients stay out of this CC0 registry per the 2026-08-02 licensing ruling)",
+      "source": "Same derivation as vdem-2026-democracy-happiness-partial (https://ourworldindata.org/grapher/electoral-democracy-index and siblings); the isolation test against the alternative index is recorded qualitatively in book-1/source/vdem-rederivation.md, its coefficients deliberately kept out of this CC0 registry under the 2026-08-02 licensing ruling",
       "retrieved": "2026-08-03",
       "method": "fetched-by-script",
       "fetch": "vdem_happiness.py --snapshot registry/data",
@@ -887,6 +905,33 @@
       "fetch": null,
       "book": "book-1",
       "notes": "PRIOR ANALYSIS, RECORDED FOR PROVENANCE, NOT AS EVIDENCE. Every figure Part V uses comes from the V-Dem re-derivation (vdem-2026-*), and no EIU-derived value enters this CC0 registry, per the 2026-08-02 licensing ruling. The re-derivation reproduced the income narrowing and the step pattern and did NOT reproduce this analysis's headline dispersion finding — see vdem-2026-floor-claim-instrument-fragile. The merged CSV sits in the repository root under the root LICENSE, committed before that ruling, and carries EIU index values; whether the repository may grant CC0 over a non-redistributable index is an open question for the author, recorded in CLAUDE.md under the pending obligations that outlived the retired root tracker."
+    },
+    {
+      "id": "santoshi-kumari-2017",
+      "claim": "Santoshi Kumari, eleven, died on 28 September 2017 in Simdega district, Jharkhand, months after her family's ration card was cancelled for want of an Aadhaar link; her family said she died asking for rice, and the district administration said the cause was malaria rather than starvation.",
+      "value": null,
+      "units": null,
+      "source": "Scroll.in, \"Jharkhand death: Girl dies of hunger because her family did not have an Aadhaar-linked ration card\" (October 2017), https://scroll.in/article/854225/denied-food-because-she-did-not-have-aadhaar-linked-ration-card-jharkhand-girl-dies-of-starvation; Scroll.in, \"Remembering Santoshi Kumari: a year after\" (2018), https://scroll.in/article/895667/a-year-after-jharkhand-girl-died-of-starvation-aadhaar-tragedies-are-on-the-rise",
+      "retrieved": "2026-09-19",
+      "method": "quoted from contemporaneous reporting",
+      "fetch": null,
+      "notes": "The cancellation is not in dispute: the block development officer confirmed the family's card was deleted for want of an Aadhaar link, and the family was eligible under the National Food Security Act. The CAUSE OF DEATH IS DISPUTED — activists and the family said starvation, the district administration said malaria — and any use of this entry must carry that dispute. Part V argues the cancellation and the family's account, attributed, and does not assert the cause."
+    },
+    {
+      "id": "epi-2026-ceo-pay-ratio",
+      "claim": "CEO-to-worker compensation at the largest United States firms runs in the region of three hundred to one, against a peak above 380 to one in 2000 and about 20 to one in 1965.",
+      "value": {
+        "realized_ratio_2023": 290,
+        "ratio_2025": 325,
+        "peak_2000": 383.4,
+        "ratio_1965": 20
+      },
+      "units": "ratio of CEO compensation to the pay of a typical worker",
+      "source": "Economic Policy Institute, CEO Pay series, https://www.epi.org/publication/ceo-pay/",
+      "retrieved": "2026-09-19",
+      "method": "quoted",
+      "fetch": null,
+      "notes": "DENOMINATOR WARNING. This is CEO pay against a TYPICAL (median) worker in the key industry of each of the largest 350 US firms. Mondragon's nine-to-one is highest against LOWEST pay inside one cooperative. The two are not like for like, and comparing them understates the real distance; Part V states the mismatch where it makes the comparison. 'Comparable firms' means large listed firms, not firms comparable to a Basque industrial and retail federation."
     }
   ]
 }

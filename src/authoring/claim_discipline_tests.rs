@@ -30,22 +30,56 @@ fn part_v(context: &Context) -> String {
 /// Each historical case Part V argues from, the registry entry it rests on, and
 /// a figure or name that must still be in the prose. Both directions matter:
 /// the entry must exist, and the prose must still be making the claim.
-const TRACED: [(&str, &str, &str); 9] = [
+/// Part V's figures, each bound to the registry entry that carries it and to a
+/// phrase that must still be in the prose. Both directions matter: a figure
+/// cannot lose its source, and a source cannot be dropped while the book still
+/// leans on it. One source may carry several figures — Tanzania's relocation
+/// count and Mondragon's headcount are not one claim each — so the rows are
+/// keyed by case, not by entry.
+const TRACED: [(&str, &str, &str); 17] = [
     ("Owen's New Harmony", "harrison-1969-owen", "800 settlers"),
     ("the kibbutzim", "abramitzky-kibbutz", "270 communities"),
     (
-        "Tanzanian villagization",
-        "medina-2011-cybersyn",
-        "13 million",
+        "the kibbutz salary reform",
+        "abramitzky-kibbutz",
+        "three in four kibbutzim",
     ),
+    (
+        "China losing the right to leave",
+        "lin-1990-collectivization",
+        "until 1958",
+    ),
+    ("Tanzanian villagization", "scott-1998-ujamaa", "13 million"),
     ("Mondragon", "mondragon-2025", "1956"),
+    ("Mondragon's pay spread", "mondragon-2025", "nine to one"),
+    (
+        "the corporate pay comparison",
+        "epi-2026-ceo-pay-ratio",
+        "300-to-1",
+    ),
     ("Kerala's People's Plan", "kerala-peoples-plan", "1996"),
+    (
+        "Kerala's trained volunteers",
+        "kerala-peoples-plan",
+        "100,000 volunteers",
+    ),
     ("Cybersyn", "medina-2011-cybersyn", "500 surplus telex"),
+    ("Auroville's governance", "auroville-governance", "Auroville"),
     ("the Swiss WIR", "stodder-2009-wir", "1934"),
     (
         "Jharkhand card cancellations",
         "dreze-2017-cancelled-cards",
         "a million cards",
+    ),
+    (
+        "the Jharkhand experimental study",
+        "muralidharan-2025-lost-access",
+        "one and a half and two million",
+    ),
+    (
+        "Santoshi Kumari's death",
+        "santoshi-kumari-2017",
+        "Santoshi Kumari",
     ),
     (
         "the democracy/wellbeing narrowing",
@@ -90,15 +124,43 @@ fn every_part_v_figure_rests_on_a_registry_entry() {
              stale, or the entry is now unused."
         );
     }
-    // The Tanzanian and Cybersyn rows share an entry deliberately; the rest are
-    // distinct, so a copy-paste that collapsed two cases onto one source would
-    // show up here.
-    let distinct: BTreeSet<&str> = TRACED.iter().map(|(_, id, _)| *id).collect();
+    // One source may legitimately carry several of Part V's figures, so the
+    // rows are keyed by case and figure rather than by entry. What must never
+    // collapse is a row onto another row: that is a copy-paste, not a shared
+    // source.
+    let distinct: BTreeSet<(&str, &str)> =
+        TRACED.iter().map(|(case, _, figure)| (*case, *figure)).collect();
     assert_eq!(
         distinct.len(),
-        TRACED.len() - 1,
-        "the registry ids behind Part V's cases stopped being distinct"
+        TRACED.len(),
+        "two of Part V's traced figures collapsed onto the same case and phrase"
     );
+}
+
+/// A source the reader cannot open is not a source. Every registry entry Part V
+/// argues from must carry a locator — a URL or a DOI — in its `source` field.
+/// This is what makes "every named study has a usable primary-source URL" a
+/// check rather than a promise; it says nothing about whether the locator
+/// resolves today, which is a network fact no test here can establish.
+#[test]
+fn every_traced_source_carries_a_locator_a_reader_can_follow() {
+    let context = Context::discover().expect("repository");
+    let registry = registry(&context);
+    let claims = registry["claims"].as_array().expect("claims");
+    let ids: BTreeSet<&str> = TRACED.iter().map(|(_, id, _)| *id).collect();
+    for id in ids {
+        let entry = claims
+            .iter()
+            .find(|claim| claim["id"].as_str() == Some(id))
+            .unwrap_or_else(|| panic!("Part V argues from '{id}' and the registry has no such entry"));
+        let source = entry["source"].as_str().unwrap_or_default();
+        assert!(
+            source.contains("http") || source.contains("doi:"),
+            "registry entry '{id}' backs a figure in Part V but gives the reader \
+             no locator: its source field carries neither a URL nor a DOI, so \
+             the only path to the evidence is knowing where to look."
+        );
+    }
 }
 
 #[test]
