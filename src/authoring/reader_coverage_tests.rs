@@ -153,7 +153,15 @@ const UNOCCUPIED_POSTURES: [&str; 0] = [];
 /// write a passage about it. Measured 2026-09-18, after the rebuild: `cares`
 /// and `associates` left when the life-course and mobility families were
 /// rendered, and `creates` is the one that remains.
-const THIN_POSTURES: [&str; 1] = ["creates"];
+/// Postures carried by two passages or fewer. The set is empty, and it reached
+/// empty the way the ledger predicts: `creates` was the last one left, and what
+/// moved it was a passage about why recognition exists at all — an interface
+/// question rather than a missing paragraph, which is the pattern every thin
+/// posture in this book has turned out to follow.
+///
+/// It stays asserted as an empty expectation so that a posture falling back to
+/// two fails the check rather than passing quietly.
+const THIN_POSTURES: [&str; 0] = [];
 
 #[test]
 fn the_thin_postures_are_the_ones_recorded() {

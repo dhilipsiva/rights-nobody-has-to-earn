@@ -42,7 +42,7 @@
 # is untouched. Pin a FALSE only where the KB could have said TRUE, and say in
 # the comment what would flip it.
 
-:expect-pins 27
+:expect-pins 34
 
 # "Esa taught Fin, and is recognised."
 ? teaches(Esa, Fin).
@@ -205,4 +205,35 @@ cite(Yano, Hunch, Adam).
 cite(Boss, Findings, Rebel).
 
 ? reward(Boss).
+# => FALSE
+
+# ── "the three doors close, and a loss is recorded against their name" ───────
+# The chapter states the whole content of a credibility finding, so the chapter
+# runs it. Bela is voided: the doors are shut and the loss stands, which is
+# pinned above. What the finding does not touch is pinned here, and it is the
+# rest of the person.
+? person(Bela).
+# => TRUE
+
+? owe(State, Eats, Bela).
+# => TRUE
+
+? decide(Bela, Ballot).
+# => TRUE
+
+? travel(Bela).
+# => TRUE
+
+? prisoner(Bela).
+# => FALSE
+
+# And the student of a voided teacher. Cira is recognised by this point in the
+# file — through the work door, for work Cira did, which is the whole of what
+# earns it — and Bela's voiding does not touch that. The clawback reaches the
+# voided person's own recognition and stops, so the pairing is exact: Cira
+# holds recognition and loses none of it for a teacher's fraud.
+? reward(Cira).
+# => TRUE
+
+? lose(Points, Cira).
 # => FALSE

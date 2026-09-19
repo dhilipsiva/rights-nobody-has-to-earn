@@ -104880,7 +104880,7 @@
         "book-1/03-what-counts-as-evidence.md::The family and life-course entries no longer carry that second kind of power.",
         "book-1/23-who-holds-the-pen.md::But an absent kinship entry never proved",
         "book-1/25-voiding.md::A generic independence label, a finding about another case, or the absence of parent,",
-        "book-1/26-clawback.md::The broader family and life-course rule now says why this boundary must survive:",
+        "book-1/26-clawback.md::The family and life-course rules state the same boundary from the other side.",
         "book-1/14-holding-a-role-in-somebodys-life.md::**Care is not a family invoice.**",
         "book-1/18-the-vote-conviction-does-not-take.md::The law beneath that evidence is stronger than an",
         "book-1/10-contribution.md::Caregiver and dependant remain separate rights-holders",
@@ -111970,7 +111970,7 @@
       "envelope_id": "FS-ENV-00",
       "owner_ref": "CLAUDE.md::Claim-scoped resolution receipts replace confession-as-ending",
       "eligible_gate": "gate-a",
-      "reader_mapping_ref": "book-1/26-clawback.md::It is resolved \u2014 the resolution was a deletion"
+      "reader_mapping_ref": "book-1/26-clawback.md::Whoever sits down to write the narrowing finds they have written a repeal"
     },
     {
       "id": "FS-RCP-02",

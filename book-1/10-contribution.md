@@ -29,6 +29,13 @@ a workplace inspector, payroll, school accommodation, or remedy route, so it can
 show those protections arriving. Being taught or cared for is not a contribution by
 the recipient. Performing recorded work may be — within those independent limits.
 
+And recognition is not the thing that would make a child's work worth taking. What
+makes child labour profitable is what it pays, and this pays nothing: it is unranked,
+unreadable and unspendable, so there is no quantity to extract and nobody to extract
+it for. The pressure on a child to work comes from a wage or from need, and both are
+answered elsewhere in this book — by the labour protections named above, and by a
+floor that arrives without anybody working for it.
+
 The labour constitution is separate from that narrow recognition rule. Every
 person may choose, refuse, leave, and change work. Work, registration,
 contribution, compliance, obedience, or participation in a programme cannot
@@ -54,6 +61,40 @@ qualification governs its function, not the person's worth or rights.
 
 What arrives when you walk through one of them is worth being precise about, because
 it is not what most readers will assume.
+
+## Why it exists at all
+
+A reader reaches this point and asks what recognition is for, given how much the rest
+of this chapter takes away from it. The answer can be stated now; the chapter is the
+argument for it.
+
+Every design like this one meets the same question: what about the people who
+contribute more? There are two ways to fail it. One is to answer with a number, and the
+next section is about where that ends. The other is to have no concept of contribution
+at all, so the question cannot be put — which is not an answer but a change of subject,
+and it leaves a society unable to say out loud that it sees the work being done in it.
+
+Recognition is the third thing. The design records that somebody contributed, and the
+record confers nothing. Not *little*, and not *nothing for now*: nothing, because no
+rule anywhere reads it. That is a positive statement rather than an absence. The
+society has looked at contribution, has a word for it, and has settled what the word
+buys — which is what a design owes the question, rather than a way of not being asked.
+
+There is one consequence and it runs the other way. Recognition is the only thing a
+credibility finding reaches. The chapter on voiding sets out what that finding costs a
+person and the whole of it is this: the three doors close, and a loss is recorded
+against their name. Take recognition out of the design and the harshest thing it can
+conclude about somebody short of confinement reaches nothing at all — a finding with no
+content, which is theatre. The two hold each other up. Recognition gives the finding
+something to reach; the finding is what keeps recognition from being decoration.
+
+That pairing is also the honest answer to a fair objection: if nothing reads it, why
+carry the machinery? Not because an occupied slot is safer than an empty one — somebody
+who wants to build a score can write one either way, and what stands against them is
+the checks rather than the furniture. The reason is narrower. Removing recognition
+would not simplify this design; it would empty a different part of it, and leave the
+society with no way to say the thing it most needs to say about contribution: that it
+is seen, and that seeing it changes nothing about what anybody is owed.
 
 ## There is no number
 

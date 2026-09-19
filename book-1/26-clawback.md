@@ -81,57 +81,48 @@ to become a voiding is, to this instrument, nothing at all. There is no lesser l
 for having been suspected, no partial mark for a case that collapsed. Until the
 verdict exists, the clawback does not.
 
-## Cira, and the rule that is no longer here
+## Cira, and the loss that does not reach her
 
-Now the difficulty. It is resolved — the resolution was a deletion — and both the
-wrong and its repair deserve to be told properly.
+Bela taught Cira. Bela was voided. Ask what that costs Cira and the answer is nothing —
+not a reduced something, nothing — and this section is here because the reason is less
+obvious than it looks.
 
-There used to be a second rule beside the clawback. Bela taught Cira. Bela was
-voided. The rule reached Cira too, and recorded a loss against what Cira earned.
+Start with the argument for the other answer, because it is a good one. Recognition
+earned through fraudulent teaching was never really earned. If Bela was signing off on
+work that was not done, the recognition flowing from those sign-offs is recognition for
+nothing, and letting it stand leaves the fraud partly intact. That is an argument about
+somebody who is holding something.
 
-Cira earned nothing. Being taught is not a way to earn recognition here; sitting in
-front of a teacher is not a contribution, and nothing anywhere in this design says
-otherwise. So the rule fired on a person with nothing, and recorded the loss of it —
-a loss written against a child, for an adult's fraud, asking nothing about whether
-she knew, nothing about whether she was the fraud's victim rather than its
-beneficiary, and nothing about amount, because this instrument has no notion of
+Cira is not holding anything. Being taught is not a way to earn recognition here;
+sitting in front of a teacher is not a contribution, and nothing in this design says
+otherwise. A rule reaching the student would fire on a person with nothing and record
+the loss of it — a loss written against a child, for an adult's fraud, asking nothing
+about whether she knew, nothing about whether she was the fraud's victim rather than
+its beneficiary, and nothing about amount, because this instrument has no notion of
 degree.
 
-The reasoning behind the rule was not stupid, which is why it stood as long as it
-did. Recognition earned through fraudulent teaching was never really earned; if Bela
-was signing off on work that was not done, the recognition that flowed from those
-sign-offs is recognition for nothing, and letting it stand would leave the fraud
-partly intact. That is a good argument. It is an argument about somebody who is
-holding something, and it was pointed at somebody who is not.
+Try to narrow that rule and the narrowing eats it. Claw back only the recognition that
+came from the fraudulent teaching, says the gentle version — but students earn nothing
+for being taught, ever, so the recognition that came from the fraudulent teaching is
+nothing, for every student, always. A rule narrowed to reach exactly that reaches
+nobody. Whoever sits down to write the narrowing finds they have written a repeal. So
+the design does not write it: the clawback reaches the voided person's own recognition
+and stops there. No loss reaches Cira, or Fin, or any student, for any teacher's fraud,
+and the difference between Fin and Cira — which was never anything either of them did,
+only a fact about their teachers — is no difference at all.
 
-The repair looked like a choice between two fixes and was actually one. The gentle
-fix says: narrow the rule — claw back only the recognition that came from the
-fraudulent teaching, and leave the rest. But students earn nothing for being taught,
-ever, by a decision this book has already leaned on more than once, so the
-recognition that came from the fraudulent teaching is nothing, for every student,
-always. A rule narrowed to reach exactly that reaches nobody. Whoever sat down to
-write the narrowing found they had written a repeal — and so the repeal was written
-honestly, as itself. The rule is deleted. No loss reaches Cira, or Fin, or any
-student, for any teacher's fraud; the difference between Fin and Cira — which was
-never anything either of them did, only a fact about their teachers — is now no
-difference at all.
-
-The broader family and life-course rule now says why this boundary must survive:
-children and dependants hold rights separately from parents and caregivers. Parentage,
-care, household membership, and support are different relations. None transfers an
-adult's fraud, guilt, debt, or lost recognition to a child. That is a legal barrier
-over supplied records, not proof that a court, advocate, correction process, or remedy
+The family and life-course rules state the same boundary from the other side. Children
+and dependants hold rights separately from parents and caregivers; parentage, care,
+household membership and support are different relations, and none of them transfers an
+adult's fraud, guilt, debt or lost recognition to a child. That is a legal barrier over
+supplied records, not proof that a court, an advocate, a correction process or a remedy
 will act.
 
-What the deletion does not delete is the lesson. The rule wanted the mark, not the
-amount — nobody who wrote it checked whether there was anything there to lose — and
-it stood for a long time beside guards built precisely against marks landing on the
-uninvolved: two auditors with affirmative case-bound independence findings, no liars, no matched carried void, all of them
-watching the front door while this rule stood propped open at the side. The
-accountability machinery's one wrong against an innocent was not an attacker's work.
-It was written in good faith, by the same hands that built the guards, and it was
-found the way everything in this book is found — by asking the record what it held
-against a child, and refusing to like the answer.
+What the boundary costs is worth saying, because the good argument above does not
+disappear when the rule reaching Cira does. Some recognition somewhere rests on work
+that was not done, and this design leaves it there rather than hold an instrument that
+can reach a person who did nothing. That is the trade, and it is made in the same
+direction as every other trade of its kind in this book.
 
 ## The mark that crosses the record
 

@@ -3023,6 +3023,45 @@ A person who exposes every answerable body leaves nobody eligible and keeps the
 shield in every case. That is the chosen direction of failure, defended in the
 decision record rather than repaired.
 
+**Item 05 — the purpose of recognition, landed 2026-09-19.** Controlling
+record: `book-1/appendix/decisions/recognition-purpose-decision.md`. The census
+first: `reward/1` has three producers and no readers, `lose/2` one producer and
+no readers, and a credibility finding reaches recognition and nothing else. The
+book said all of that at length and never said why the mechanism exists.
+
+**The purpose, stated.** A design of this kind cannot dodge "what about the
+people who contribute more?" Answering with a number builds a currency; having
+no concept of contribution changes the subject. Recognition is the third answer
+— the design records that somebody contributed and the record confers nothing,
+which is a positive statement about what noticing buys rather than an absence.
+
+**Removal was compared and refused on a measured ground.** Recognition is the
+only thing a credibility finding reaches, so deleting it leaves the harshest
+conclusion this design reaches short of confinement with no content at all. The
+pair holds each other up. **Keeping it because the slot is occupied is refused
+as a reason** — an occupied slot is not safer than an empty one, and what stands
+against a future score is the guards rather than the furniture; the prose says
+so rather than claiming the stronger protection. **Renaming `Points`** — a unit
+this design does not have — was examined and declined: sixty-one pin sites for a
+cosmetic gain, and chapter 26 already names the thing correctly in prose.
+
+**The thin-posture set is now empty**, and it emptied the way the ledger
+predicts. `creates` was the last posture carried by two passages or fewer, and
+what moved it was a passage about why recognition exists at all — an interface
+question rather than a missing paragraph, which is the pattern every thin
+posture in this book has followed. `THIN_POSTURES` stays asserted as an empty
+expectation so a posture falling back to two fails rather than passes quietly.
+
+Chapter 10 gains "Why it exists at all" and pins the claim: after the voiding
+Bela keeps personhood, the food debt, the ballot and free movement. Chapter 26's
+Cira section states the current boundary instead of its history — the argument
+for reaching the student is given in full, the narrowing is shown to be a
+repeal, and the cost is stated: some recognition somewhere rests on work that
+was not done, and the design leaves it there rather than hold an instrument that
+can reach a person who did nothing. The `student-clawback` receipt is repointed;
+its old phrase was "the resolution was a deletion", which is one of the
+repair-narration detector's own trigger forms.
+
 ### Measured Nibli capability boundaries
 
 Each is a dated measurement against a named engine revision, not a timeless

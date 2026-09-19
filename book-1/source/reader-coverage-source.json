@@ -1074,6 +1074,21 @@
     {
       "id": "10-01",
       "chapter": "book-1/10-contribution.md",
+      "section": "Why it exists at all",
+      "domain": "Personhood and equality",
+      "family": "ARTICLES",
+      "function": "ordinary",
+      "setting": "a society deciding what noticing a contribution buys",
+      "trajectory": "works",
+      "basis": "book-1/10-contribution.pins.nibli",
+      "pattern": "constructive",
+      "postures": [
+        "creates"
+      ]
+    },
+    {
+      "id": "10-02",
+      "chapter": "book-1/10-contribution.md",
       "section": "There is no number",
       "domain": "Economy, property, work and commons",
       "family": "ARTICLES",
@@ -1087,7 +1102,7 @@
       ]
     },
     {
-      "id": "10-02",
+      "id": "10-03",
       "chapter": "book-1/10-contribution.md",
       "section": "Nothing to earn it back with",
       "domain": "Economy, property, work and commons",
@@ -1102,7 +1117,7 @@
       ]
     },
     {
-      "id": "10-03",
+      "id": "10-04",
       "chapter": "book-1/10-contribution.md",
       "section": "Recognition for looking at people",
       "domain": "Economy, property, work and commons",
@@ -1117,7 +1132,7 @@
       ]
     },
     {
-      "id": "10-04",
+      "id": "10-05",
       "chapter": "book-1/10-contribution.md",
       "section": "What is lost",
       "domain": "Economy, property, work and commons",
@@ -2999,7 +3014,7 @@
     {
       "id": "26-02",
       "chapter": "book-1/26-clawback.md",
-      "section": "Cira, and the rule that is no longer here",
+      "section": "Cira, and the loss that does not reach her",
       "domain": "Economy, property, work and commons",
       "family": "ARTICLES",
       "function": "continuity",

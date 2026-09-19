@@ -47,7 +47,7 @@ carried in single figures, which is where the rebalance has most to do.
 | Posture | Passages |
 | --- | ---: |
 | chooses | 13 |
-| creates | 2 |
+| creates | 3 |
 | cares | 6 |
 | works | 11 |
 | associates | 6 |
@@ -65,7 +65,7 @@ what matters is the book's shape, not the chapter's.
 
 | Pattern | Passages |
 | --- | ---: |
-| constructive | 92 |
+| constructive | 93 |
 | private-civic | 28 |
 | democratic | 35 |
 | coercive | 43 |
@@ -85,7 +85,7 @@ checked here.
 | Defence and armed force | 1 | 1 | 2 |
 | Democracy and amendment | 6 | 8 | 7 |
 | Ecology, future generations and commons | 5 | 3 | 6 |
-| Economy, property, work and commons | 19 | 13 | 17 |
+| Economy, property, work and commons | 19 | 13 | 18 |
 | Emergency and resilience | 3 | 2 | 4 |
 | Justice and coercion | 13 | 12 | 11 |
 | Knowledge, communication and culture | 3 | 2 | 3 |
@@ -93,7 +93,7 @@ checked here.
 | Locality, mobility and external relations | 1 | 2 | 2 |
 | Material floor | 10 | 20 | 15 |
 | Non-human animals | 1 | 1 | 2 |
-| Personhood and equality | 20 | 9 | 10 |
+| Personhood and equality | 21 | 9 | 10 |
 | Public institutions | 11 | 10 | 12 |
 | Public safety, policing and use of force | 5 | 3 | 8 |
 | Records and accountability | 13 | 17 | 18 |
@@ -173,10 +173,11 @@ checked here.
 | 09-07 | 09-earning-above-the-floor.md | The child with nobody | Economy, property, work and commons | INCOME-SECURITY | protective | the child with nobody: one birth entry and nothing else | receives | works | no | constructive | `book-1/09-earning-above-the-floor.pins.nibli` |
 | 09-08 | 09-earning-above-the-floor.md | What none of this counts | Economy, property, work and commons | ECONOMIC-CONSTITUTION | protective | the boundary of a record that holds no amount | receives | unresolved | yes | constructive | `book-1/09-earning-above-the-floor.pins.nibli` |
 | 10-00 | 10-contribution.md | (preamble) | Economy, property, work and commons | ARTICLES | ordinary | three routes to recognition, and care walking through two of them | works, cares, creates | works | yes | private-civic | `book-1/10-contribution.pins.nibli` |
-| 10-01 | 10-contribution.md | There is no number | Economy, property, work and commons | ARTICLES | ordinary | recognition without a quantity | works | works | no | private-civic | `book-1/10-contribution.pins.nibli` |
-| 10-02 | 10-contribution.md | Nothing to earn it back with | Economy, property, work and commons | ARTICLES | protective | three doors closed by a voiding | works | contested | yes | private-civic | `book-1/10-contribution.pins.nibli` |
-| 10-03 | 10-contribution.md | Recognition for looking at people | Economy, property, work and commons | ARTICLES | ordinary | recognition for examining people | works | works | yes | private-civic | `book-1/10-contribution.pins.nibli` |
-| 10-04 | 10-contribution.md | What is lost | Economy, property, work and commons | ARTICLES | protective | what the absence of arithmetic costs | works | unresolved | yes | private-civic | `book-1/10-contribution.pins.nibli` |
+| 10-01 | 10-contribution.md | Why it exists at all | Personhood and equality | ARTICLES | ordinary | a society deciding what noticing a contribution buys | creates | works | no | constructive | `book-1/10-contribution.pins.nibli` |
+| 10-02 | 10-contribution.md | There is no number | Economy, property, work and commons | ARTICLES | ordinary | recognition without a quantity | works | works | no | private-civic | `book-1/10-contribution.pins.nibli` |
+| 10-03 | 10-contribution.md | Nothing to earn it back with | Economy, property, work and commons | ARTICLES | protective | three doors closed by a voiding | works | contested | yes | private-civic | `book-1/10-contribution.pins.nibli` |
+| 10-04 | 10-contribution.md | Recognition for looking at people | Economy, property, work and commons | ARTICLES | ordinary | recognition for examining people | works | works | yes | private-civic | `book-1/10-contribution.pins.nibli` |
+| 10-05 | 10-contribution.md | What is lost | Economy, property, work and commons | ARTICLES | protective | what the absence of arithmetic costs | works | unresolved | yes | private-civic | `book-1/10-contribution.pins.nibli` |
 | 11-00 | 11-what-money-cannot-buy.md | (preamble) | Economy, property, work and commons | ECONOMIC-CONSTITUTION | protective | price on the far side of a line the floor never crosses | chooses | works | no | constructive | `book-1/11-what-money-cannot-buy.pins.nibli` |
 | 11-01 | 11-what-money-cannot-buy.md | Owning without owning the floor | Economy, property, work and commons | ECONOMIC-CONSTITUTION | protective | conditional possession, plural tenure, the dwelling that is not an asset | chooses | works | yes | constructive | `book-1/11-what-money-cannot-buy.pins.nibli` |
 | 11-02 | 11-what-money-cannot-buy.md | A promise is not a trap | Economy, property, work and commons | ECONOMIC-CONSTITUTION | protective | consent, waivers, the enterprise as a tool | chooses, associates | works | no | constructive | `book-1/11-what-money-cannot-buy.pins.nibli` |
@@ -301,7 +302,7 @@ checked here.
 | 25-06 | 25-voiding.md | The child with nobody | Records and accountability | ARTICLES | protective | the child with nobody: one birth entry and nothing else | is acted upon | works | no | coercive | `book-1/25-voiding.pins.nibli` |
 | 26-00 | 26-clawback.md | (preamble) | Economy, property, work and commons | ARTICLES | protective | recognition stopping when credibility goes | is acted upon | works | no | private-civic | `book-1/26-clawback.pins.nibli` |
 | 26-01 | 26-clawback.md | What it cannot reach | Economy, property, work and commons | ARTICLES | protective | what clawback cannot reach | is acted upon | works | yes | private-civic | `book-1/26-clawback.pins.nibli` |
-| 26-02 | 26-clawback.md | Cira, and the rule that is no longer here | Economy, property, work and commons | ARTICLES | continuity | the student rule that was deleted | is acted upon | continuity-remedy | no | private-civic | `book-1/26-clawback.pins.nibli` |
+| 26-02 | 26-clawback.md | Cira, and the loss that does not reach her | Economy, property, work and commons | ARTICLES | continuity | the student rule that was deleted | is acted upon | continuity-remedy | yes | private-civic | `book-1/26-clawback.pins.nibli` |
 | 26-03 | 26-clawback.md | The mark that crosses the record | Economy, property, work and commons | ARTICLES | protective | a mark that crosses a period | is acted upon | works | no | private-civic | `book-1/26-clawback.pins.nibli` |
 | 26-04 | 26-clawback.md | The shape of the instrument | Economy, property, work and commons | ARTICLES | protective | a blunt instrument, deliberately | is acted upon | contested | no | private-civic | `book-1/26-clawback.pins.nibli` |
 | 27-00 | 27-a-prisoner-is-a-person.md | (preamble) | Personhood and equality | ARTICLES | protective | one line that reads like sentiment | is acted upon | works | no | constructive | `book-1/27-a-prisoner-is-a-person.pins.nibli` |

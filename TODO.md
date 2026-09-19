@@ -111,22 +111,6 @@ solutions and development history stay outside the book's reading sequence.
 
 ## I. Repair the substantive arguments
 
-### 05. Justify the public purpose of contribution and recognition
-
-- [ ] Revise chapters 9, 10 and 26 so the reader can explain why the recognition
-  mechanism exists and what lawful consequence, if any, it has.
-
-Compare retaining optional recognition with simplifying or removing unnecessary
-machinery. Keep it distinct from wages, qualification, compensation, insurance
-and evidence of competence. Do not turn `reward` into a worth score, payment,
-allocation key, franchise qualification or indirect condition of the floor.
-Preserve the distinction between the teacher's conduct and the learner's rights.
-
-**Done when:** recognition has a stated defensible purpose or the unnecessary
-mechanism is coherently retired; nobody inherits another person's adverse
-finding; children are neither graded into rights nor incentivized into harmful
-work; and the prose accurately states what reads each relation.
-
 ### 06. Apply one consistent standard to debt, evidence and delivery
 
 - [ ] Reconcile chapters 4-7, 18, 27, 29 and 31 with the opening and method.

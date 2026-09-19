@@ -43,7 +43,7 @@ gives disclosure no credit for closure.
 
 ### student-clawback — resolved-for-claim
 
-*Told in* `26-clawback.md`, "Cira, and the rule that is no longer here".
+*Told in* `26-clawback.md`, "Cira, and the loss that does not reach her".
 
 **What failed.** A student's recognition was docked for a teacher's adjudicated fraud — negative scoring of somebody who did nothing.
 

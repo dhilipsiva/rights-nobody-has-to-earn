@@ -27,12 +27,12 @@
     {
       "id": "student-clawback",
       "chapter": "book-1/26-clawback.md",
-      "section": "Cira, and the rule that is no longer here",
+      "section": "Cira, and the loss that does not reach her",
       "what_failed": "A student's recognition was docked for a teacher's adjudicated fraud — negative scoring of somebody who did nothing.",
       "what_changed": "The rule was deleted outright rather than narrowed, because students never mint and narrowing would have been repeal.",
       "state": "resolved-for-claim",
       "rerun": "book-1/26-clawback.pins.nibli",
-      "phrase": "the resolution was a deletion",
+      "phrase": "Whoever sits down to write the narrowing finds they have written a repeal",
       "still_not_established": "That anything is ever un-minted. Loss stays a leaf and derivation stays monotone; the surviving guards never-mint rather than subtract.",
       "external_or_open": "None. The rule is gone from the source."
     },
