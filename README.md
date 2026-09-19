@@ -56,6 +56,13 @@ contents. To assemble the current manifest as HTML, EPUB and PDF review copies,
 follow the [book's build instructions](book-1/README.md#read-or-assemble-the-book).
 Rendering is separate from the substantive verification below.
 
+## Contribute
+
+Corrections, objections, evidence and proposed co-authored additions are welcome.
+The [contribution guide](CONTRIBUTING.md) explains where to edit, how to propose
+a change, the appropriate checks, credit and the maintained edition's relationship
+to independent forks. You can report a problem without running the formal tools.
+
 ## Verify
 
 The verifier builds against a Nibli source checkout beside this one, as the Cargo

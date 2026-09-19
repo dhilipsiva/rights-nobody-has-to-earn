@@ -1,58 +1,67 @@
+<!-- SPDX-License-Identifier: CC-BY-4.0 -->
+
 # The claim registry
 
-Every empirical figure the books rely on, machine-readable, with its
-provenance pinned. The registry exists because the alternative was measured,
-twice: a hand-assembled research brief drifted into a spliced quotation, a
-superseded working paper, wrong units and a garbled comparison — ten
-corrections in one day (commits `773ef68..60f1a85`). Numbers here are cited by
-**id** from prose and never restated inline, so a correction lands in one
-place.
+The registry records empirical claims, their values, units, sources, methods
+and limitations. Part V's figures are written in prose and linked to sources
+through its footnotes. Stable registry IDs connect those passages to the
+existing bindings in
+[claim_discipline_tests.rs](../src/authoring/claim_discipline_tests.rs).
+Do not replace readable figures or citations with internal IDs.
 
-## Licence
+For the submission and review workflow, see the
+[contribution guide](../CONTRIBUTING.md). The registry supports evidence review;
+it does not make a claim true merely by containing it.
 
-CC0-1.0 (`LICENSE-CC0`), deliberately and irrevocably: `../LICENSING.md`
-commits the registry to CC0 so any reader can re-run, extract and republish
-it without asking. The fetch and check scripts beside it are code and carry
-`MIT OR Apache-2.0` SPDX headers.
+## Edit a claim
 
-## Format
+`claims.json` contains a `spec` block describing the fields and a `claims`
+array. Reuse the ID when correcting the same claim. State the quantity being
+measured, its population, period, units and denominator, and keep the caveats
+with it. Include the primary source's title, version, URL and a page, table or
+other locator that lets a reader inspect the support.
 
-`claims.json` — a `spec` block documenting the fields, then `claims`, one
-entry per figure. Two classes:
+For a paper or report (`fetch: null`), identify the actual edition checked.
+An old retrieval date does not itself invalidate a historical result; a
+pinned version also does not rule out a correction, retraction or better
+interpretation. Check the source when revising the claim. Set `retrieved`
+only to the date of an actual check.
 
-- **Pinned** (`fetch: null`): papers and reports. The pinned version is the
-  provenance; `retrieved` records when the pinned version was last checked.
-  These never go stale by date — moving one (working paper → journal) is a
-  human re-cite pass, recorded by editing the entry.
-- **Fetchable** (`fetch: "<script> <args>"`): sources with APIs (World Bank,
-  WHO GHO, OWID, FAOSTAT, …). The named script under `fetch/` writes `value`
-  and stamps `retrieved`; hands never do.
+For a fetched value, use the script named in `fetch` and inspect its output.
+Do not invent a value or advance its retrieval date without fetching it.
+Review changes in definitions, units and observation years before carrying
+an updated value into prose. Preserve the reproducible inputs and their
+upstream terms; the [snapshot instructions](data/README.md) explain the
+bundled democracy and life-evaluation example.
 
-## Checks
+Update the affected prose and footnotes with the entry. Maintain the existing
+claim binding when its identifying phrase or source changes. A new named case
+or figure needs corresponding coverage in the existing development checks.
+A correction can narrow or remove an unsupported claim; it need not replace
+it with another number.
 
-```
-python3 registry/check.py
-```
+## Check the change
 
-Schema plus the staleness gate: a fetchable entry whose `retrieved` date is
-older than the gate's window fails, naming the script that refreshes it. Run it
-when you edit an entry. It is **not** part of `../verify.sh`: the 2026-09-12
-author decision took registry, hash, history and report-freshness gates out of
-verification, which now runs pins and contradiction scans only. Source quality
-and the re-cite pass remain editorial, not mechanical.
+Compare the claim directly with its source, including the qualifications
+needed for the comparison made in the book. Then run the relevant existing
+claim-discipline development checks described in the contribution guide.
+Those checks bind passages to entries and locators; they do not read the
+papers or establish that an inference is sound. The complete constitutional
+verifier remains separate from this evidence review.
 
-## Refreshing a fetchable entry
+`check.py` is a retained field/date utility. Its schema and age results do
+not validate the cited evidence, and it is not a mandatory completion gate
+or part of `../verify.sh`. No receipt or freshness audit is required.
 
-```
-python3 registry/fetch/worldbank.py EG.ELC.ACCS.ZS WLD --write registry/claims.json --id example-worldbank-electricity-access
-```
+## Licences and scope
 
-## What does not belong here
+The claim registry is CC0-1.0 under [LICENSE-CC0](LICENSE-CC0). Fetch and check
+scripts are MIT OR Apache-2.0. Snapshots under `data/` retain their stated
+upstream licences. This new guidance text is CC BY 4.0; prior CC0 grants remain
+in force. See the repository's [licence map](../LICENSING.md).
 
-EIU-derived values, ruled 2026-08-02: the index is non-redistributable and this
-registry is CC0, so cite-and-link was refused and the democracy/happiness
-analysis was re-derived on openly licensed OWID series instead
-(`vdem-2026-*`). Two entries keep the paper trail without carrying a value —
-`eiu-2026-democracy-index` as the comparator reference book-2 may cite-and-link,
-and `demo-happy-prior-analysis` as the provenance of the superseded prior
-analysis. Nothing in this registry depends on either.
+Entries identify their book scope. Book 2 remains collection-only until
+Book 1's release gate; a collected claim is not a completed operational plan.
+The registry's existing policy excludes EIU-derived values. The retained
+`eiu-2026-democracy-index` and `demo-happy-prior-analysis` entries are reference
+and historical records, not data supporting the current open-data analysis.

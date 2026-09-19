@@ -111,22 +111,6 @@ solutions and development history stay outside the book's reading sequence.
 
 ## IV. Prepare a credible open book and reassess it
 
-### 17. Make open contribution practical without blurring authorship or authority
-
-- [ ] Review existing contributor guidance and add or revise a concise
-  contribution guide covering prose, evidence and formal changes.
-
-Explain how anyone proposes a correction or co-authored addition, the checks
-appropriate to it, attribution, mixed licensing, editorial integration and the
-difference between the maintained edition and independent forks. Provide a
-small concrete contribution example. Respect existing license grants and make
-no promise of universal acceptance or publisher agreement. Document the actual
-workflow; do not create a new administrative approval system.
-
-**Done when:** a new contributor can locate the right file, submit a bounded
-change and understand credit and review expectations; formal and prose changes
-remain consistent; and the invitation to participate is accurate.
-
 ### 18. Prepare a concise publisher submission package for the revised book
 
 - [ ] Prepare a synopsis, intended readership, distinct contribution, current

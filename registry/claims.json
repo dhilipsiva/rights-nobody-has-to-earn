@@ -3,7 +3,7 @@
     "version": 1,
     "licence": "CC0-1.0 (see LICENSE-CC0; deliberate — LICENSING.md commits the registry to CC0 so any reader can re-run and republish it)",
     "entry_fields": {
-      "id": "stable slug; prose and pin comments cite this, never the number",
+      "id": "stable slug identifying the entry; existing claim bindings connect Part V's hand-written figures and named cases to these ids",
       "claim": "one sentence, stated the way the book would state it",
       "value": "number, [low, high] range, or structured object",
       "units": "what the value counts",

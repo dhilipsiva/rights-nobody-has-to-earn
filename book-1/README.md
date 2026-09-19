@@ -70,6 +70,10 @@ they are not the current reading edition or an additional verification gate.
 Constitutional verification remains `../verify.sh`, with prose consistency
 and rendering reviewed separately.
 
+To suggest a correction or co-authored addition, follow the
+[contribution guide](../CONTRIBUTING.md). It covers prose, evidence, formal
+changes, credit and independent adaptations.
+
 ## Licence
 
 The new reader prose is licensed under the Creative Commons

@@ -3716,6 +3716,46 @@ contradiction checks and no findings. Nine declared known-defect pins still
 reproduce; this is not a repair of those defects. The five-minute target is
 not met. The final diff check passes.
 
+**Item 17 — practical contribution guidance, 2026-09-19.** The new
+`CONTRIBUTING.md`, linked from both repository and book READMEs, gives an issue
+route that requires no formal tooling and a focused branch/PR route against
+`main`. Its file map separates prose, evidence, rules, owning generators,
+rendering and Book 2's inactive collection. It explains the current-design
+and resolve-before-defending constraints, appropriate focused and complete
+checks, meaningful regression coverage, credit for corrections and shared
+drafting, material AI assistance, editorial responsibility and independent
+adaptations. It creates no new submission form or approval body and promises
+neither acceptance nor a publishing agreement.
+
+The exact new guide and documentation changes are `session-drafted,
+author-approved under delegated approval (2026-09-13)`. The chapter 5 example
+is explicitly an illustrative proposal, not an edit to that chapter or a claim
+of a received contribution. Its context matches one current source line.
+No external contributor, endorsement, submission or operation is invented.
+
+Registry guidance now matches the existing 2026-09-15 claim-binding ruling:
+Part V's figures remain hand-written with readable citations; internal IDs
+belong in the existing bindings. Only the `spec.entry_fields.id` description
+changes in `registry/claims.json`; a structural comparison confirms every
+claim and all other values are unchanged. Snapshot guidance distinguishes CC0
+claims, MIT OR Apache-2.0 scripts and upstream data licences. The retained
+field/date utility is described accurately without making its freshness
+threshold a completion gate. Prior licence grants remain in force.
+
+The example's focused command passes 16 pins in one case (10.51s), labelled
+partial. The guide's exact development commands pass the existing coverage
+tests (ten, 0.24s), reference tests (six, 1.37s) and claim-discipline tests
+(five, 0.81s). All 36 local documentation links and fragments resolve.
+The ordered manuscript, constitution, substantive pins, suites, runner and
+rendering machinery are unchanged. Item 14's concrete source questions and
+the declared modeled defects remain for item 19.
+
+The complete `RIGHTS_VERIFY_JOBS=4 ./verify.sh` run passes 87,372 pins across
+15,996 cases in 901.84s (15m 1.84s), with complete contradiction checks and
+no findings. Nine declared known-defect pins still reproduce. Their passing
+expectations do not close the defects, and the five-minute target is not met.
+The final diff check passes.
+
 ### Measured Nibli capability boundaries
 
 Each is a dated measurement against a named engine revision, not a timeless
