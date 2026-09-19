@@ -48,6 +48,14 @@ Earn*, is the destination.
 | `bootstrap.sh` | Put the pinned Nibli engine beside this checkout. |
 | `engine.pin` | The exact engine revision this repository verifies against. |
 
+## Read the book
+
+Start with the [epigraph](book-1/epigraph.md) and
+[opening note](book-1/00-opening-note.md). The opening includes annotated
+contents. To assemble the current manifest as HTML, EPUB and PDF review copies,
+follow the [book's build instructions](book-1/README.md#read-or-assemble-the-book).
+Rendering is separate from the substantive verification below.
+
 ## Verify
 
 The verifier builds against a Nibli source checkout beside this one, as the Cargo

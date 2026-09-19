@@ -109,25 +109,6 @@ unresolved defect or blocker. Only the first three can close the relevant issue.
 Reader-facing prose states present rules and justified limits; the attempted
 solutions and development history stay outside the book's reading sequence.
 
-## III. Make the book work as a book
-
-### 16. Repair navigation and check the assembled reading experience
-
-- [ ] Reconcile the manifest, headings, opening contents, cross-references,
-  terminology, citations and any existing assembled edition artifacts.
-
-Start with "computed order" in the opening, the contribution reference to
-"the next chapter" in chapter 14, and asylum's Chapter 4 reference in chapter
-29. Validate destinations as well as link syntax. Check heading hierarchy,
-table readability, link labels, footnotes and mechanical accessibility in the
-actual formats prepared for submission. Inspect their rendered output; do not
-infer that a Markdown check establishes correct PDF or ebook layout.
-
-**Done when:** references reach the intended material; numbering and contents
-agree; every prepared format has been inspected for broken navigation, clipping
-and reading-order defects; and no claim of actual-user accessibility or reader
-comprehension is made without the relevant evidence.
-
 ## IV. Prepare a credible open book and reassess it
 
 ### 17. Make open contribution practical without blurring authorship or authority

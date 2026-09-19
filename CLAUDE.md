@@ -3642,6 +3642,80 @@ across 15,996 cases in 940.86s (15m 41s), with contradiction checks complete
 and no findings. Nine declared known-defect pins still reproduce; their
 passing results are not repairs. The five-minute target is not met.
 
+**Item 16 — navigation and assembled review formats, 2026-09-19.** The
+current manifest, chapter titles, opening contents and numbered references
+agree. The three original suspected references were already corrected by
+earlier items: the opening describes editorial order, chapter 14 identifies
+contribution in chapter 10 and leads next into mobility, and chapter 29 sends
+asylum to chapter 15. Chapter 11's reference to chapter 9 concerns the
+purpose-bound contribution supplement and reaches the intended material.
+No ordered manuscript prose or substantive source changes in this item.
+
+`tools/build_book.py` assembles the 34 current inputs from `contents.json`
+as HTML, EPUB and PDF review copies in ignored `output/book-1/`. CommonMark
+parsing preserves list continuations, verse breaks and linked footnotes.
+Chapter links and fragments stay within the assembled edition; formal-source
+and registry links identify actual repository files and follow `main`, without
+claiming an immutable edition binding. Nested contents, numbered chapters,
+unnumbered epigraph and method, labelled table regions and column headers,
+keyboard navigation, font embedding and PDF bookmarks are supplied explicitly.
+The old pilot assembler and artifacts remain historical; their retired receipt
+and freshness workflow is not restored. No extra verification gate is added.
+
+The exact new documentation in `README.md`, `book-1/README.md` and
+`tools/book_assets/README.md`, and the review-copy front matter in the builder,
+is `session-drafted, author-approved under delegated approval (2026-09-13)`.
+The unmodified Noto Serif Tamil font comes from Google Fonts' upstream
+repository, with its SIL OFL 1.1 text retained and embedded or bundled in each
+format. Font licence whitespace is normalised without changing its wording.
+The book's mixed licensing remains in force; historical files do not acquire
+a new licence merely by appearing under `book-1/`.
+
+Six new assembler development regressions pass, covering continued lists,
+verse breaks, repeated footnote return links, balanced-parenthesis URLs,
+separate chapter IDs, local destinations, unsupported markup and the current
+EPUB spine and contents. Their command is `uv run --with markdown-it-py==4.2.0
+--with mdit-py-plugins==0.6.1 python -m unittest discover -s tests
+-p test_build_book.py` (0.117s). Existing reader-coverage tests pass (ten,
+0.22s), reference-integrity tests pass (six, 1.81s after the documentation
+changes), and claim-discipline tests pass (five, 0.87s).
+
+Actual rendering used Chromium 151.0.7922.34 through Playwright 1.63.0.
+HTML and all EPUB spine documents plus its navigation were rendered at 360px
+and 1280px: 74 renders, with no missing in-document destinations, duplicate
+IDs or horizontal document overflow. All six tables have labelled regions
+and scoped column headers; all 14 note references and their return links
+resolve. Keyboard activation of the skip link reaches the main content.
+EPUBCheck 5.4.0 reports zero errors and zero warnings under its EPUB 3.4
+rules after correcting package IDs and navigation markup. This is the
+[W3C tool's released validator](https://github.com/w3c/epubcheck/releases/tag/v5.4.0),
+not an external reader assessment.
+
+The final PDF has 154 pages, 268 bookmarks, 174 internal link annotations,
+58 external link annotations, a structure tree and embedded prose/font
+licences. Every internal annotation has a real page destination. All pages
+were checked for text bounds and empty output and viewed as contact sheets;
+the epigraph, contents, tables, notes and method were also inspected at
+reading scale across the formats. The final corrections keep short code
+examples together and leave room for italic note text at the right margin.
+Whitespace-normalised comparison finds all 1,383 source paragraph, list,
+heading, table-cell and code blocks in the extracted PDF text. Tamil text
+also extracts correctly; its printed glyphs are carried in a Type 3 font.
+No clipping or reading-order defect was found in the inspected output.
+EPUB inspection covers its packaged XHTML in Chromium and package validation;
+it does not claim testing in every ebook application. No human accessibility,
+screen-reader usability, comprehension or endorsement is claimed. The nine
+modeled defects and item 14's source questions remain open for item 19.
+
+Two initial attempts at the complete verifier ended with SIGTERM (exit 143)
+without a final summary. Their last progress lines were at 275.5s and 292.1s;
+neither counts as completed verification. The subsequent live-terminal run
+of `RIGHTS_VERIFY_JOBS=4 ./verify.sh`, with regular session polling, completes:
+87,372 pins pass across 15,996 cases in 959.11s (15m 59.11s), with complete
+contradiction checks and no findings. Nine declared known-defect pins still
+reproduce; this is not a repair of those defects. The five-minute target is
+not met. The final diff check passes.
+
 ### Measured Nibli capability boundaries
 
 Each is a dated measurement against a named engine revision, not a timeless

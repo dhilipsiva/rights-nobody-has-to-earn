@@ -21,10 +21,10 @@ the opening note's contents, verified by `../verify.sh` and the development
 tests. The receipt, audit and closure chain that once gated this was retired
 on 2026-09-12.
 
-Two files are deliberately unnumbered — `epigraph.md` and `method.md` —
-because the prose sweeps in `../verify.sh` glob the numbered files only: the
-epigraph is a poem, and the method part must quote the machinery the sweeps
-forbid everywhere else. Do not renumber either; the naming is load-bearing. Two subdirectories are
+Two files are deliberately unnumbered — `epigraph.md` and `method.md`.
+The epigraph is a poem; the optional method quotes the machinery kept outside
+the ordinary reader chapters. Both remain in the manifest's reading sequence.
+Two subdirectories are
 not chapters and are outside the reading order and the length measurement:
 `appendix/` carries the planning record (decisions, contracts, briefs, maps —
 the former `new-book-plans/book-1-*` files with that prefix dropped), and
@@ -32,14 +32,52 @@ the former `new-book-plans/book-1-*` files with that prefix dropped), and
 former `new-book-plans/`, moved by flat rename on 2026-09-17).
 Run `../verify.sh` to check every pinned claim against the constitution.
 
+## Read or assemble the book
+
+Start with [the epigraph](epigraph.md), then [the opening note](00-opening-note.md).
+The opening's annotated contents describe the route through the book;
+[contents.json](contents.json) supplies the same order to the assembler.
+
+From the repository root, with Python and [uv](https://docs.astral.sh/uv/) installed:
+
+```bash
+uv run --with playwright==1.63.0 python -m playwright install chromium
+uv run tools/build_book.py
+```
+
+The first command installs the browser used for PDF printing. Chromium also
+needs its platform's browser libraries. An existing compatible Chromium can
+be selected with `--browser-executable /path/to/chromium`.
+
+The second command produces `book-1-review.html`, `book-1-review.epub` and
+`book-1-review.pdf` in `output/book-1/`. Use `--no-pdf` to build HTML and EPUB
+without a browser, or `--output-dir PATH` to choose another output directory.
+The script declares its exact Python dependencies. Generated review copies
+are ignored by Git; rebuilding reads the current ordered source files.
+
+HTML provides a linked contents list, keyboard skip link and labelled table
+regions. EPUB carries the chapter order and nested contents. PDF includes
+page numbers, a linked contents list and bookmarks. All three embed the
+Tamil font used by the epigraph. Links to chapters stay within the edition;
+links to formal files and the claim registry open their repository locations.
+Those repository links follow `main` and do not identify immutable source.
+
+Inspect generated formats after layout or navigation changes. The assembler
+checks local destinations and headings; it does not establish actual-user
+accessibility, comprehension or publication readiness. The old pilot files
+under `output/pdf/` and `source/15-pilot-reader-artifacts.py` are historical;
+they are not the current reading edition or an additional verification gate.
+Constitutional verification remains `../verify.sh`, with prose consistency
+and rendering reviewed separately.
+
 ## Licence
 
-All prose in this directory is licensed under the Creative Commons
+The new reader prose is licensed under the Creative Commons
 Attribution 4.0 International licence (CC-BY-4.0). The full text is in
-[LICENSE-CC-BY](LICENSE-CC-BY). The licence declaration lives here rather
-than in the chapters because the chapters are reader-facing prose; this
-file is the front matter the repository carries until the book has its own.
+[LICENSE-CC-BY](LICENSE-CC-BY), and assembled copies carry the declaration
+in their front matter. The embedded Tamil font has its own
+[SIL Open Font License](../tools/book_assets/OFL-NotoSerifTamil.txt).
 
-The pin files beside the chapters are part of the repository's verification
-harness; see [../LICENSING.md](../LICENSING.md) for the repository-wide
-licence map.
+The formal source, pin files, code, registry and carried historical material
+retain their applicable terms; see [../LICENSING.md](../LICENSING.md) for the
+repository-wide licence map. Moving a file here does not change its licence.

@@ -1,0 +1,79 @@
+/* SPDX-License-Identifier: MIT OR Apache-2.0 */
+@font-face {
+  font-family: "Noto Serif Tamil";
+  src: url("NotoSerifTamil.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+}
+:root { color-scheme: light; }
+html { scroll-behavior: auto; }
+body {
+  margin: 0 auto; padding: 1.5rem; max-width: 48rem;
+  font-family: Georgia, "DejaVu Serif", serif;
+  font-size: 1.05rem; line-height: 1.6; color: #181818; background: white;
+  overflow-wrap: break-word;
+}
+a { color: #17497a; text-underline-offset: .14em; }
+a:focus-visible, [tabindex]:focus-visible { outline: 3px solid #a84816; outline-offset: 3px; }
+.skip-link { position: absolute; left: -10000px; }
+.skip-link:focus { left: 1rem; top: 1rem; background: white; padding: .7rem; z-index: 2; }
+.cover { margin: 3rem 0 5rem; }
+.cover h1 { font-size: 2.4rem; max-width: 15em; }
+.edition-status, .part-label { font-family: "DejaVu Sans", sans-serif; }
+.edition-status { font-size: .95rem; }
+.licence { font-size: .88rem; }
+.book-contents { margin-bottom: 5rem; }
+.book-contents ol { list-style: none; padding-left: 0; }
+.book-contents li { margin: .3rem 0; }
+.book-contents li.part { margin: 1.1rem 0 .35rem; font-weight: bold; }
+.book-contents li.part > span { break-after: avoid; display: block; }
+.book-contents li.part > ol { font-weight: normal; }
+article { margin-top: 5rem; }
+.ebook article { margin-top: 1rem; }
+h1, h2, h3, h4 { line-height: 1.25; break-after: avoid; }
+h1 { font-size: 2rem; }
+h2 { font-size: 1.45rem; margin-top: 2rem; }
+h3 { font-size: 1.16rem; margin-top: 1.6rem; }
+p, li { orphans: 3; widows: 3; }
+li > p { margin: .35rem 0; }
+.part-label { font-size: .9rem; margin-bottom: 1rem; }
+.epigraph [lang="ta"] { font-family: "Noto Serif Tamil", serif; line-height: 1.9; }
+.epigraph p { margin-bottom: 1.6rem; }
+blockquote { margin-left: 0; padding-left: 1.1rem; border-left: 2px solid #777; }
+code { font-family: "DejaVu Sans Mono", monospace; font-size: .88em; }
+pre { padding: .8rem; background: #f3f3f3; border: 1px solid #bbb; white-space: pre-wrap; overflow-wrap: anywhere; line-height: 1.4; }
+pre code { font-size: .82rem; }
+.table-wrap { max-width: 100%; overflow-x: auto; margin: 1rem 0; }
+table { border-collapse: collapse; width: 100%; font-size: .94em; }
+th, td { text-align: left; vertical-align: top; border: 1px solid #999; padding: .5rem; }
+th { background: #f1f1f1; font-weight: bold; }
+.footnotes { font-size: .9rem; }
+.footnotes a { overflow-wrap: anywhere; }
+.footnote-ref { line-height: 0; }
+.footnote-backref { padding: .1rem .3rem; }
+.sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); }
+@media (max-width: 480px) {
+  body { padding: 1rem; font-size: 1rem; }
+  h1 { font-size: 1.65rem; }
+  table { font-size: .88rem; }
+  th, td { padding: .35rem; }
+}
+@media print {
+  @page { size: A4; margin: 19mm 18mm 21mm; }
+  body { max-width: none; padding: 0; font-size: 11pt; line-height: 1.48; }
+  .cover { break-after: page; margin: 35mm 0 0; }
+  .book-contents { break-after: page; margin-bottom: 0; }
+  article { break-before: page; margin-top: 0; }
+  h1 { font-size: 23pt; }
+  h2 { font-size: 15pt; margin-top: 17pt; }
+  h3 { font-size: 12pt; }
+  pre { break-inside: avoid; }
+  pre code { font-size: 8.5pt; }
+  table { font-size: 9.5pt; }
+  thead { display: table-header-group; }
+  tr { break-inside: avoid; }
+  .table-wrap { overflow: visible; }
+  a { color: inherit; }
+  .skip-link, .sr-only { display: none; }
+  .footnotes { font-size: 9.5pt; padding-right: 3pt; }
+}
