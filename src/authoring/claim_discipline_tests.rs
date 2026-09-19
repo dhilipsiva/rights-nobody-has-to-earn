@@ -262,6 +262,12 @@ fn every_rule_the_method_part_quotes_is_a_rule_some_file_holds() {
         if !fenced {
             continue;
         }
+        // Pin directives and verdict comments can precede a quoted rule.
+        // They are not part of its statement and must not hide it from this
+        // check. Once a rule starts, retain its wrapped continuation lines.
+        if pending.is_empty() && !line.trim_start().starts_with("all ") {
+            continue;
+        }
         if !pending.is_empty() {
             pending.push(' ');
         }

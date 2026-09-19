@@ -1,948 +1,486 @@
 # The Method
 
-This part is optional. Part V argues for the design; this part shows how its
-formal claims can be checked and what those checks cannot establish.
-The chapters between the opening note and the fifth part explain claims pinned
-against the formal rules. The machine checks those pins, not my English;
-whether the prose says what the rules mean remains a separate review. The note,
-the fifth part and this one are me speaking — but where Part V argued, this
-part shows.
+This part is optional. It shows how to inspect a claim the book makes: find
+the rule, identify the supplied facts, ask what follows, and try a case that
+should produce a different answer. The machine checks those consequences.
+Whether the English describes them accurately remains a separate review.
 
-Two ground rules, stated here so you can hold me to them. First: every English
-sentence in this part is mine. You will see rules exactly as they are written
-in the files and the machine's error messages exactly as it prints them; what
-you will not see is the machine's English translation of any rule, or a proof
-transcript — it renders no prose in this book. Where a quoted line is wider
-than the page, it is broken to fit and nothing else about it is changed; the
-files hold each statement whole. Second: everything shown here is runnable.
-The book's repository is public — it holds the constitution, the chapters,
-the pins and the checks — and one command re-checks the pinned claims the
-chapters stand on. It incrementally builds the verifier with the engine source
-from the adjacent public-repository checkout before running the pins.
-This part is the guide to that machinery, not a substitute for it. The
-repository is the appendix: the formal source and its pins sit beside the
-chapters in the book's `source` directory, and the design's own paper trail —
-every decision and contract behind a rule — in its `appendix` directory.
+I use Nibli because it makes the relationships in this proposal explicit.
+Facts name people, acts and records; rules state which combinations permit a
+conclusion. The language can distinguish an entry from a conclusion nobody
+may write directly, and can reject certain circular uses of absence. Those
+properties help test this design. They do not make Nibli the only possible
+language for a constitution or make every policy it accepts defensible.
 
-Why does this part exist at all? Because a book that says "a machine checked
-these promises" and then keeps the machine out of sight has asked for exactly
-the kind of trust the rest of the book abolishes. The chapters are the
-intuition. The files quoted here are the machinery. The checks described here
-are the evidence. You are owed all three, in one object, and this is where the
-other two live.
+The examples below quote formal statements, with long lines wrapped for the
+page, and the verdicts expected by executable tests. The linked executable
+files keep each statement on one line. The examples contain no
+machine-written explanation or proof transcript. Each example names the
+source or test a reader can inspect. The complete constitution stays in the
+[repository](https://github.com/dhilipsiva/rights-nobody-has-to-earn), beside
+the chapters and their companion files.
 
-## The rules as written
+## From a supplied fact to a consequence
 
-The society you have been reading about is a file. Everything the record may
-say is written in a small formal language read by a reasoning engine called
-nibli, and the file — the constitution — is the formal source the chapters
-explain. Here are three of its lines, exactly as they appear:
+Nell's example begins with one supplied entry about Nell:
 
-```
-entitled(every person, event { eats() }).
-entitled(every person, event { dwell() }).
-entitled(every person, event { believe() }).
+```nibli
+born(Nell).
 ```
 
-That is what a floor right looks like. One line for each thing owed, and the
-two words that carry the book are the plainest ones: *every person* — not
-every citizen, every member, every adult, every contributor. The wrapper
-around the owed thing is not decoration either: the file's own margin notes
-record the measurement that removing it kills the protection the next
-sections describe. The floor is not a preamble. It is load-bearing text in a
-running system, and the current full list — like every figure in this part —
-lives in the repository, not on this page, for a reason I will come to.
+It is a fixture for the case, not a report of a birth outside the model. The
+constitution contains these statements:
 
-Those lines still need a person. Four roots supply that standing, exactly as
-written:
-
-```
+```nibli
 all $child: born($child) & ~public($child) -> person($child).
-all $subject: at($subject, FirstContact) &
-  ~public($subject) -> person($subject).
-all $subject: at($subject, RepublicJurisdiction) &
-  ~public($subject) -> person($subject).
-all $subject: at($subject, EffectiveControl) &
-  ~public($subject) -> person($subject).
+all $x: person($x) -> owe(State, Eats, $x).
+entitled(every person, event { eats() }).
 ```
 
-Birth, first contact, physical presence and effective control do not read
-citizenship, documents, age, capacity or an identity match. The supplied subject
-may be a temporary encounter name. The rules derive personhood from it and
-nothing else: not civil identity, family, guilt, liability, record ownership or
-authority. The negative public check prevents a public body from entering through
-a person root. These are consequences of supplied facts, not proof that an
-encounter was observed or help was delivered.
+A relation name precedes its arguments: `born(Nell)` records a birth for the
+named subject. A name beginning with `$` is a variable; `all` quantifies it.
+The `&` joins conditions and `->` points from conditions to their consequence.
+The standing rule reads a birth and the absence of a public-body status,
+then concludes personhood. The debt rule reads personhood and concludes that
+the State owes that person food.
 
-Here is the final gate that makes someone a prisoner — the only rule in the
-file whose conclusion is `prisoner`:
+The entitlement statement has a different shape. `every person` specifies
+who holds the right; `event { eats() }` names its content. Putting eating
+inside that wrapper does not assert that anybody ate. An entitlement, a
+debt and its fulfilment are different propositions.
 
-```
-all $offender: all $victim: all $case: all $renewal:
-  injure($offender, $victim) & judge(Court, $offender) &
-  cite(Court, $case, $offender) &
-  match($offender, ConvictionRecorded) &
-  observe(Chronicle, $case, $offender, CaseScope) &
-  observe(TemporalReview, $case, $offender, CaseScope) &
-  observe(Chronicle, $case, Court, HolderScope) &
-  observe(TemporalReview, $case, Court, HolderScope) &
-  observe(Chronicle, $case, CourtJudgment, JudgmentScope) &
-  observe(TemporalReview, $case, CourtJudgment, JudgmentScope) &
-  observe(Chronicle, $case, $victim, InjuryVictimScope) &
-  observe(TemporalReview, $case, $victim, InjuryVictimScope) &
-  authorized($renewal, ActiveCustody, $case) &
-  observe(Chronicle, $renewal, ActiveCustody, PowerScope) &
-  observe(TemporalReview, $renewal, ActiveCustody, PowerScope) &
-  observe(Chronicle, $renewal, $case, CaseBindingScope) &
-  observe(TemporalReview, $renewal, $case, CaseBindingScope) &
-  correct($renewal, ActivePower) &
-  ~permits(Appeals, $offender) & ~broken(Court) &
-  ~defend($offender) & ~free($offender)
-  -> prisoner($offender).
+The opening chapter's companion file asks:
+
+```nibli
+? person(Nell).
+# => TRUE
+
+? owe(State, Eats, Nell).
+# => TRUE
+
+? entitled(Nell, event { eats() }).
+# => TRUE
+
+? eats(Nell).
+# => FALSE
 ```
 
-It is longer than the earlier rule because no compact status is trusted by
-itself. A recorded injury and a court judgment must be tied by two witnesses to
-the same case, person, court, judgment basis, and injured person. The custody
-lease must be tied by both witnesses to that case and power. Its
-`ActivePower` conclusion is produced only after another rule rejoins the exact
-lease, case, window, renewal, constitutional source, and canonical terminal
-record without a competing binding or conflicted order path. Then this final
-gate rejoins the case and lease evidence again. No standing appellate relief. A
-court not itself marked broken. No derived defence. Not already free. Then, and
-only then: prisoner. There is no second route, discretion, or “unless
-circumstances warrant.” Chapter 29's one direct punitive deprivation describes
-this conviction route. Separate protective instruments now use `restrain`,
-never `prisoner` or `capture`, with their own grounds, temporal contracts and
-floor firewalls. Their capability-loss projections remain unread leaves.
+The question mark introduces a query. The line beginning `# =>` states the
+verdict the test requires; it does not cause that verdict. All these answers
+come from the same case. Personhood supplies the debt and entitlement, while
+the case supplies no matching evidence from which eating derives.
 
-The positive parentage repair has one further measured graph consequence.
-The existing `judge & parent -> false` rule now places `false` downstream of
-`person`. A proposed `person & ~false -> prisoner` rule therefore closes a
-negative cycle and is refused. The earlier acceptance remains pinned under
-the explicit counterfactual removing the two new relationship projections;
-the live rights-floor suite pins refusal. Neither the conviction rule nor
-the conflict-of-interest rule was changed to obtain that result.
+Nibli uses a closed world and a closed domain. In the relevant definite
+queries, what cannot be derived from the supplied knowledge is `FALSE`;
+quantifiers range over the entities represented in that knowledge base.
+Neither assumption turns the file into a complete account of the world.
+`eats(Nell)` returning `FALSE` does not establish that a child went hungry.
+Similarly, `person(Ori)` returns `FALSE` in a case with no standing entry for
+Ori. It does not establish that a real person lacks rights.
 
-And here is the rule the voiding chapters orbit — the one that can declare a
-person's word worthless:
+The constitution also derives standing from supplied contact, presence and
+effective control. It assigns an initiation duty without requiring Nell to
+request help. Those are further rules; none lets the engine discover a
+person whose encounter never reaches any input. A legal duty to find and
+assist someone is different from a program having observed them.
 
-```
-all $a: all $b: all $audited: all $ground:
-permits(Review, $a) & permits(Tribunal, $b) &
-authorized($a, IndependentReviewer, $audited) &
-authorized($b, IndependentReviewer, $audited) &
-judge($a, $audited) & capture($a, $audited) &
-cite($a, $ground, $audited) & ~deceive($a, $audited) &
-judge($b, $audited) & capture($b, $audited) &
-cite($b, $ground, $audited) & ~deceive($b, $audited) &
-member($ground, CredibilityGroundVocabulary) &
-~($a = $b) & ~broken($a) & ~broken($b) &
-~match($a, CarriedVoid) & ~match($b, CarriedVoid) &
-~clean($audited)
--> false($audited).
+This example is executed in
+[chapter 1's pins](01-the-child-with-nobody.pins.nibli), using the
+[birth fixture](../tests/pins/records/child_with_nobody/fixture.nibli).
+The rules are in the [constitutional source](source/constitution.nibli).
+
+## What changes when evidence is supplied
+
+The food route requires a receipt and a matching independent attestation:
+
+```nibli
+all $p: all $item: all $src: all $w:
+  receives($p, $item, $src) &
+  authorized($w, DeliveryWitness, $p) &
+  observe($w, $item, $p, FoodScope) &
+  ~($w = $src) -> eats($p).
 ```
 
-It is long because it counts qualified, case-bound reviewers rather than
-signatures: two distinct people, each credentialed by a different body, each
-affirmatively authorized as an independent reviewer for this audited person,
-each having examined and documented the person and cited the same ground for the
-finding, and neither lying, broken, or bearing an effective carried void. Two of
-those conjuncts repay a second look. The ground must be one of a closed list the
-file names, which is what separates a finding from the occasion of an
-examination — an examiner is paid for looking on a complaint, and a complaint
-cannot void anybody. And the last conjunct is the way out: a recorded
-expungement stops the rule concluding anything at all. Missing parent, marriage, or sibling entries prove nothing
-about independence; the authorization facts are live in the shipped record, and
-a source-removal counterfactual proves that an absence-based route reaches a
-different result.
+Every repeated variable must refer to the same thing. The witness must be
+authorised for this recipient, attest this item at food scope, and differ
+from its source. An attestation about another item, person or kind of
+provision cannot fill the gap.
 
-Two shorter blocks do more work than everything above. The first closes what
-may be *written*:
+Chapter 5 supplies the evidence in stages:
 
-```
-admits("free").       admits("hears").      admits("home").
-admits("injure").     admits("judge").      admits("married").
-admits("authorized"). admits("carries").    admits("challenge").
-admits("continue").   admits("date").       admits("limit").
-admits("list").       admits("observe").    admits("passport").
-admits("replace").
-admits("at").         admits("born").
+```nibli
+receives(Marisol, FoodForMarisol, Provender).
+? eats(Marisol).
+# => FALSE
+
+authorized(Ledgerwitness, DeliveryWitness, Marisol).
+observe(Ledgerwitness, FoodForMarisol, Marisol, FoodScope).
+? eats(Marisol).
+# => TRUE
+
+? person(Marisol).
+# => FALSE
+
+? dwell(Marisol).
+# => FALSE
 ```
 
-The record's base vocabulary is declared, name by name, and a ground fact in
-any other vocabulary is refused at the moment of writing. The second closes
-what may only be *concluded*:
+The receipt alone is insufficient. Adding the matching attestation supplies
+the missing premises and changes the food answer. Personhood is not a
+premise of this route, so a prior roster entry is not required for the
+recipient-side evidence to count. Food evidence supplies no shelter
+conclusion. These are tests of the rule's reach, not just repeated positive
+examples.
 
-```
-derived_only("false").
-derived_only("reward").
-derived_only("prisoner").
-derived_only("complete").
-derived_only("correct").
-derived_only("match").
-derived_only("precede").
-derived_only("time").
-```
+There is a second way to test the independence condition: change the rule.
+The receipt suite supplies a provider as its own witness and gets `FALSE`.
+An explicitly declared counterfactual removes only `~($w = $src)` from the
+food rule and gets `TRUE` for provider self-certification. An independent
+witness still succeeds, and the unchanged shelter rule still rejects a
+self-certifying provider. Those controls help attribute the difference to
+the particular condition removed.
 
-A name in this block may never be asserted at all — every appearance of
-`prisoner` in the record must be the conclusion of a rule, which is chapter
-1's most-guarded sentence made mechanical: "the conclusions that matter are
-not writable. They are only derivable." These are two different guards on
-two different doors — one closes the record's vocabulary, the other makes a
-name conclusion-only — and the book has been careful never to describe them
-as one. One name sits differently from everything around it: `person`. It
-has producing rules *and* direct ground entries, and birth, encounter, custody,
-release and carried status provide independent producing routes. It is therefore
-a conclusion the machinery can reach that the record must nonetheless admit.
-*What counts as evidence* and *what may be written* are different sets:
-`person` is the clearest difference between them, and chapter 3 put personhood
-on its evidence list for precisely that reason. A failed lookup does not reverse
-a root already supplied, and correction or a death mark does not retract
-personhood.
+Adding evidence and changing the constitution ask different questions. The
+ordinary case asks what the present rule does with those facts. The altered
+source asks what that condition prevents. The runner applies the declared
+edit to an isolated copy; the experiment does not amend the constitution.
+The [receipt suite](source/delivery-receipt.pins.nibli), its
+[source counterfactual](source/counterfactual/no-delivery-independence.pins.nibli)
+and [chapter 5's sequence](05-whether-it-arrived.pins.nibli) retain the
+complete cases.
 
-Try to break the first closure. Add one flattering fact the record does not
-admit — `rich(Adam).` — and the engine answers at assert time:
+Even the positive result rests on supplied statements. The engine has not
+authenticated the witness, watched a meal arrive, measured its adequacy or
+established the capacity to provide tomorrow's meal. False evidence in the
+required shape can support a true formal conclusion. Inspection of the rule
+and investigation of the event are separate tasks.
 
-```
-[Reasoning Error] `rich` is not admitted vocabulary: this knowledge
-base declared its base vocabulary closed with `admits("…")`, and
-`rich` is not in it. Add `admits("rich")` ABOVE the first `rich`
-assertion if this relation really belongs in the record — a visible,
-reviewable edit, which is the point.
-```
+## A request, a duty and relief
 
-I did not write that error message, and its last clause is the engine
-agreeing with chapter 3 in its own words: widening the record is a loud,
-reviewable act, never a fact somebody quietly types.
+Predicate names need definitions. `permits(Appeals, Ruk)` sounds like
+permission to lodge an appeal, but in this constitution it means appellate
+relief already granted. The distinction changes what a rule says.
 
-One honest note on why you are seeing excerpts and not the whole file. It is
-not length. A constitution like this is at its truest where you can run it,
-not where I can frame it — printed in full here, it would be text; in the
-repository, it is a system that answers back. The note at the front promised
-that this part shows all of it; the way it shows all of it is by handing you
-the place where all of it runs. The full file is dedicated to
-the public domain, and the repository is
-`github.com/dhilipsiva/rights-nobody-has-to-earn`. Clone it — and the
-engine's repository beside it, which the check will name if it is missing —
-then run the one command, `./verify.sh`. The pins pass, or this book has a
-defect its author did not know about.
+The request route is separate. Its rule is:
 
-## The order of the chapters, and the order of the rules
-
-The chapters of this book are in an order I chose, and I want to say exactly
-what that order is and what it is not, because an earlier version of this part
-claimed the sequence was computed and it never was.
-
-The rules do stand in a computed order. Every relation in the constitution sits
-in a layer. At the bottom are the record's plain words — the things the world
-may report, like an injury, a judgment, a marriage, a birth, a lesson heard.
-Above them sit the conclusions those words feed, and above those the
-conclusions *those* feed — personhood, imprisonment, everything owed — up to
-the marks the audit leaves and the source-bound duties those marks now feed. A
-rule's conclusion never sits below something it reads. The engine computes
-those layers from the file, and the computed table — how many relations, how
-many derived, how many layers, and the full list of which sits where — lives
-in a planning file in the repository, inside a block marked *generated*, which
-the authoring command `./generate.sh spine` refreshes from the engine.
-
-The chapters do not follow that table, and a check now makes sure nobody claims
-they do. The reading order is a rule of its own, recorded beside the computed
-table and enforced by the repository's tests: the book runs in the order a
-person meets the design — who counts and what may be written about them, then
-what is owed and how it is meant to arrive, then the ordinary life the design
-leaves alone, then the public power that serves it, and only at the end what
-the design does to a person and what it does when it catches itself failing.
-Engines before breaks. Within that rule the sequence is editorial, stated in
-one manifest, and the file names carry its numbers as a checked projection.
-
-You have already felt this order. The book opened on the person the record
-knows least about, because the rules that protect that person read nothing but
-personhood, and a chapter that rests on one entry can honestly stand first. It
-ends, before the fifth part, on the audit and the legal consequences that sit
-above its findings, because the next missing link after those is not another
-conclusion. It is action in the world. In between, a chapter may rest on a rule
-a later chapter shows; where it does, the chapter says so, and the pins beside
-it check the rule regardless of where the reader meets it.
-
-## What the logic refused
-
-The conviction rule you read above refuses to convict anyone whose appeal
-has been granted — the `~permits(Appeals, $offender)` conjunct. I wanted to
-write the guarantee that ought to sit beside it. Every prisoner may appeal.
-As a rule, one line:
-
-```
-all $x: prisoner($x) -> permits(Appeals, $x).
+```nibli
+all $reader: all $request: all $requester:
+  challenge($requester, $reader, $request) &
+  authorized($reader, JChallengeReaderAuthority, $request) &
+  ~($requester = $reader)
+  -> obliged($reader, ReviewJusticeRequest, $request).
 ```
 
-The engine's answer, exactly as printed:
+The requester needs no official role or previous permission. The reader
+needs a mandate for the request and must be a different actor. This complete
+fixture supplies those premises:
 
-```
-[Stratification Error] Unstratifiable negation: strongly-connected
-component containing 'prisoner' -> 'permits' (negative)
-```
+```nibli
+challenge(AnyRequester, IndependentJusticeReader, BareJusticeRequest).
+authorized(IndependentJusticeReader, JChallengeReaderAuthority,
+  BareJusticeRequest).
 
-Follow the loop once, because it is the same loop the whole book stands on.
-Conviction reads the *absence* of appellate permission. My rule derives that
-permission *from* conviction. So the conclusion would feed the very absence
-it was read from — reasoning passing through its own result — and the engine
-refuses the shape. Not the policy: the shape. You have seen this refusal
-twice already, from the reader's side, in the chapter on prisoners remaining
-persons: it is what stopped the heresy law an attacker would write, and what
-stopped the persons-only shield a careful designer would write. This is the
-third case, and the difference is only whose rule died: the same wall, met
-from inside, by the author. One mechanism, no special pleading, and none of
-the three outcomes chosen by whoever was writing that day.
-
-Now the part the refusal does not settle, and it matters more than the refusal
-does. Read the predicate rather than its name. `permits(Appeals, ·)` is not
-permission to appeal. It is relief already granted, per case, and it is the one
-conclusion in the record with the power to stop a conviction holding. So my
-line does not say that every prisoner may appeal. It says that every prisoner
-has already won, which would empty every conviction in the file. The shape is
-circular and the content is wrong, independently, and the engine happens to
-catch only the first. Take the refusal as a verdict on what I wanted and I
-would have written down that a universal right of appeal cannot be expressed
-here — a false sentence, arrived at honestly, from a true error message.
-
-It is expressed. It is in the chapter on being heard, as stages the design
-keeps deliberately apart: access to a hearing that money, documents and status
-cannot buy; a request that needs nobody's permission and no prior finding of
-merit; a duty to hear it resting on an independent reader, moving to a
-separated alternate when it goes unanswered; and relief, which is what a body
-concludes at the end. Only the last of those touches a conviction. The first
-three are what people usually mean by a right of appeal, and none of them meets
-this wall.
-
-The difference is executable, which is the only reason I will assert it. Write
-the guarantee as the thing it meant — a duty on the appeal body, every confined
-person's case must be heard — and it loads without complaint. The closing pins
-of that chapter run it: with the duty in force, the confined person is still
-confined, relief has still not been granted, and nobody has become free.
-
-That chapter also named the trap, and it applies to me exactly as printed
-there: a refusal leaves the *loose* rule in force. Refusing my line grants
-nobody relief. Relief remains what it is — an act somebody performs, granted
-case by case — with the cost the book prices where it weighs that default: a
-person whose case nobody takes up stays held, and a duty to take it up is a
-duty, not an arrival. Being told no is not being kept safe. A refusal is a fact
-about the rule in front of it and never a verdict on the policy behind it, and
-that distinction is cheap to state and expensive to keep.
-
-A second refusal shows something less comfortable: a wall can block a bad
-intention without proving a good policy. Suppose a design wanted to let a
-convicted person earn their sentence shorter. The obvious way to write that is
-release earned from inside:
-
-```
-all $x: prisoner($x) & reward($x) -> free($x).
-```
-
-```
-[Stratification Error] Unstratifiable negation: strongly-connected
-component containing 'prisoner' -> 'free' (negative)
-```
-
-Conviction reads *not already free*; a release derived from conviction loops
-straight back through it. That tells a fact about the formal shape. It does not
-decide whether earned-time credit is just, and this is exactly where refusing
-the shape and settling the policy come apart: the policy is settled elsewhere,
-by the temporal contract, which contains no route from character, contribution
-or recognition to a shorter sentence. The chapter on what punishment takes runs
-this refusal in its own pins. Release remains an entry someone writes,
-never an output the machinery computes, and it carries the concession chapter 3
-already made: the entry does not say whose decision it records. The temporal rule
-instead constrains the authority holding the exact person in the exact case. If
-the current reviewed authority is absent, custody does not derive; `free` is not
-manufactured in its place.
-
-What it felt like, since the opening note promised I would say: not like
-being corrected. Like leaning on a wall I had built myself and finding it did
-not care that I was its builder. The machine holds no opinions about appeals
-or mercy. It finds a shape, and what it returns is a fact the rule has to
-answer. That makes the design more honest than my intentions would have — not
-because the machine is wise, but because it cannot be talked out of anything,
-including by me.
-
-## The checks, and the check on the checks
-
-One command runs verification: `./verify.sh`, at the root of the repository.
-It incrementally builds the release verifier and engine, runs all substantive
-pins, and checks the live constitution and ordinary supplied-record scenarios
-for contradictions. That includes the chapter claims, record snapshots,
-amendment and placement cases, temporal transitions, state-form and obligations
-cases, and source counterfactuals. Each case has an isolated knowledge base;
-deliberately changed worlds retain their own expected answers instead of being
-required to satisfy the unchanged constitution's conclusions.
-
-A failed pin, engine error, timeout, or incomplete contradiction check fails the
-run. A pin may explicitly expect `UNKNOWN`; that is not permission for an
-unfinished contradiction search to count as a clean result. `./verify.sh --list`
-shows the case inventory, and `./verify.sh --only` followed by a pin-file path
-runs that focused suite, not a whole-book verification.
-
-Verification has this deliberately narrow meaning. It computes no source hashes,
-issues no verification receipts, and imposes no Git-history, audit-commit, or
-closure-commit ritual. It does not check prose consistency or generated reports.
-Those are authoring and review work. Rule and fixture generation is explicit:
-`./generate.sh state-form`, `./generate.sh obligations`, or
-`./generate.sh spine`. None runs as a prerequisite to every small edit.
-
-The script's own history is the honest part, so here it is in the register
-this part owes you — the claim, then where it broke.
-
-The suite reports measured runtime. Earlier descriptions claimed about fifteen
-minutes when the real figure was closer to fifty; later assurance machinery
-stretched a small change into hours. That machinery was removed from ordinary
-verification. A runtime claim is a measurement of a particular run, not evidence
-that the book is right.
-
-The pin files can carry control statements — rules loaded deliberately so a
-query can show what they change. The first control mechanism left its
-statement in the knowledge base after the check, so every pin below one ran
-against a quietly widened base. That was not theoretical: measured while
-repairing it, a conviction pin passed against a copy of the constitution
-with the conviction rule deleted outright — the greenest possible light,
-certifying nothing. Controls are now scoped: the engine itself, not
-discipline, puts the base back.
-
-A former sweep meant to keep engine jargon out of the reading chapters failed,
-as first written, to catch the exact leak it was written for. The useful lesson
-survives that retired sweep: test a checker with the failure it claims to catch.
-The pin runner has its own tests; those tests are development work on the
-runner, not another growing prerequisite to every book verification.
-
-The pin suite itself is the book's claims made executable. Each chapter has
-a companion file of pins — a query against the constitution and the verdict
-it must return:
-
-```
-? prisoner(Adam).
+? obliged(IndependentJusticeReader, ReviewJusticeRequest,
+  BareJusticeRequest).
 # => TRUE
 ```
 
-The whole set runs on every default verification, each file declares how many pins it
-carries so a file cannot be quietly hollowed out, and a changed verdict
-stops the build and names the chapter whose sentence just became false. A
-separate universal-standing group runs twenty-nine more pins: birth, contact,
-presence and control roots; missing records; disputed age; false alias links;
-mistaken death; disability and refused support; retained correction provenance;
-and the refusal to treat a public body as the contact subject.
+What follows is a duty to review. No favourable decision, confinement or
+release follows from that request. The broader justice rules separately
+provide access, assistance, interim protection and an alternate duty when
+nonresponse is established. A duty is not a record that a hearing occurred.
+This request is executed in its
+[own case](../tests/pins/justice/appeal/request-without-operator-or-previous-permission/expect.pins.nibli)
+and in [chapter 21's companion file](21-a-way-to-be-heard.pins.nibli).
 
-One writing rule deserves its own paragraph, because it polices me. The
-chapters should state the rule rather than a fixed total for the floor or a
-hand-maintained headcount of who is sheltered. Numbers are not vulgar; copied
-totals become stale. The floor itself has changed more than once. This is now
-a prose-review responsibility, not a claim that the verifier understands English.
+Relief has its own rule:
 
-The writing rule is: state the rule that produces the result, never
-the count. “Shelter derives through current custody routes or through a matching
-recipient-side record independently attested by an authorised witness who is not
-the source” survives a cast change. A headcount of sheltered people does not.
-
-This part uses the machinery's own vocabulary because showing that machinery is
-its job. Its quoted messages and worked examples need the same editorial review
-as the rest of the prose. The executable files remain the place to inspect the
-current expectations.
-
-Some pins are stranger, and they are this method's most honest invention.
-The book argues about flaws the design still has — chapters stand on them.
-Those flaws are pinned too, marked as defects, with the marker recording
-what would flip them. From chapter 22's file, exactly as written:
-
+```nibli
+all $x: clear($x) & judge(Appeals, $x) -> permits(Appeals, $x).
 ```
+
+The supplied record has the clearing and appellate-judgment entries for Nia.
+It has no such relief for Ruk. The chapter's pins obtain:
+
+```nibli
+? permits(Appeals, Nia).
+# => TRUE
+? prisoner(Nia).
+# => FALSE
+
+? prisoner(Ruk).
+# => TRUE
+? permits(Appeals, Ruk).
+# => FALSE
+```
+
+The custody rules require `~permits(Appeals, $offender)` among their
+conditions. Relief therefore blocks custody deriving for Nia. The absence
+of relief does not alone confine Ruk: the case, injury, judgment, current
+custody authority and the other conditions must also be present. Qualified
+review of an unrelated prosecution is a separate route where a disclosure
+shield otherwise applies. A short excerpt of the relief rule is not the
+whole custody decision.
+
+Consider this proposed rule, which the test deliberately asks the engine to
+reject:
+
+```nibli
+:refuse reasoning /Unstratifiable/
+all $x: prisoner($x) -> permits(Appeals, $x).
+```
+
+It says every prisoner has already received relief. It does not say every
+prisoner can request a hearing. It also creates a circular dependency:
+custody needs relief to be absent, while this rule produces relief from
+custody itself.
+
+Nibli's stratification check rejects that negative cycle. Relations can
+depend on conclusions in their own layer through positive rules, but a
+negative dependency must reach a lower layer. The proposed loop cannot meet
+that ordering. This is a formal reason for refusing this encoding, not a
+finding that universal access to appeal is impossible or undesirable.
+
+The same chapter performs a different controlled experiment:
+
+```nibli
+:accept
+all $x: prisoner($x) -> obliged(Appeals, $x).
+
+? obliged(Appeals, Ruk).
+# => TRUE
+? prisoner(Ruk).
+# => TRUE
+? permits(Appeals, Ruk).
+# => FALSE
+? free(Ruk).
+# => FALSE
+```
+
+This added test rule imposes a hearing duty without granting relief. It is
+not a claim that Ruk already has this duty recorded in the unchanged case:
+the companion file first checks that `obliged(Appeals, Ruk)` is `FALSE`.
+The experiment establishes that this duty can be expressed without the
+refused loop. It does not establish performance of the duty or add the rule
+to the published constitution.
+
+The accepted rule remains available for the subsequent queries in this
+isolated test. Acceptance-only controls instead use `:accept-scoped`, which
+restores the prior state after checking that the statement loads. The
+distinction prevents one control from silently changing the meaning of later
+tests. Separate case snapshots prevent it from changing another case.
+
+## A refusal is a result about an input
+
+Some inputs are refused before an ordinary query can be answered. The
+constitution declares its permitted base vocabulary with `admits`, and
+marks certain conclusions with `derived_only`. Chapter 3 executes both
+boundaries:
+
+```nibli
+:refuse reasoning /not admitted vocabulary/
+rich(Adam).
+
+:refuse reasoning /declared derived-only/
+prisoner(Zed).
+```
+
+The first statement uses a relation outside this record's admitted base
+vocabulary. The second tries to write a conclusion that must be derived.
+The directive specifies the expected error class and a distinguishing part
+of its message. If the statement loads, or fails for the wrong reason, the
+test fails. The complete cases are in
+[chapter 3's pins](03-what-counts-as-evidence.pins.nibli).
+
+Neither refusal establishes that Adam is poor or Zed is innocent. They
+establish which statements this input interface accepts. A permitted injury
+or judgment entry can still be false, and a changed constitutional source
+can widen the interface. The language checks the record supplied under its
+rules; it does not appoint or authenticate the people supplying it.
+
+The floor has a different protection. In the current source, adding this
+rule is refused:
+
+```nibli
+:refuse reasoning /'prisoner' -> 'eats'/
+all $x: person($x) & ~eats($x) -> prisoner($x).
+```
+
+The event body in an entitlement contributes a relation dependency to the
+engine's graph without asserting that the person ate. Personhood also lies
+downstream of custody: a prisoner remains a person. The proposed rule would
+feed the absence of eating back into custody through that dependency and is
+refused. The entitlement and actuality queries test both sides of this
+distinction: the right derives while the meal does not.
+
+This prevents the displayed use of a missing floor actuality as a ground of
+punishment. The [floor tests](source/rights-floor.pins.nibli) distinguish
+refused uses from accepted controls across the relevant relations. They do
+not establish that every hostile rule is unwritable. For example, a base
+contribution record does not acquire the floor's structural protection
+merely because using it to punish someone would be unjust. A source change that removes an
+entitlement is another distinct attack. Rule review and the amendment's
+source-effect tests therefore matter alongside the stratifier.
+
+The layers used by that check are not the book's reading order. The engine
+computes dependencies among relations. The [contents](contents.json) place
+chapters in an editorial sequence: standing and provision, ordinary life,
+public power, then coercion and correction. A later chapter can explain a
+premise used earlier without changing the order in which the logic depends
+on it.
+
+## What a contradiction check establishes
+
+A selected query can agree with its expected answer while the loaded model
+contains a conflict elsewhere. The runner therefore also asks the engine
+for a contradiction report wherever the suite declares that check.
+
+Its development test supplies this small conflicting record:
+
+```nibli
+person(Ara).
+~person(Ara).
+```
+
+Here the negative is itself a supplied assertion, rather than an inference
+from an absent entry. Together with the positive statement it produces a
+contradiction finding, and the runner fails the case. A companion development
+check makes the knowledge base require recovery; an incomplete scan then
+fails too. These examples are in the runner's
+[development tests](../src/pin.rs), separate from the constitutional cases.
+
+The engine checks represented integrity and disjunctive constraints,
+explicit negative assertions, arity conflicts and equality conflicts. Its
+report distinguishes violations from checks it could not finish. Both must
+be empty for a declared scan to pass. This is not a decision procedure for
+unrestricted first-order consistency, nor a search for every inconsistency
+between the prose and the world. An injustice the model does not represent
+as a conflict will not become one because a scan completed.
+
+Query verdicts also need their scope kept intact:
+
+| Outcome | What it says |
+|---|---|
+| `TRUE` | The query follows from the loaded facts and rules, assuming the implementation is correct. |
+| `FALSE` | The query is not derivable there. It is not an observation that the event did not occur. |
+| `UNKNOWN` | The search did not decide the query. This is different from a definite negative result. |
+| `RESOURCE_EXCEEDED` | A resource bound stopped the search. The verifier treats that as a failure to complete, not a verdict about the claim. |
+
+A pin can explicitly expect `UNKNOWN`. That expectation cannot make an
+unfinished contradiction check count as clean. A refused assertion is
+different again: the input failed to enter the knowledge base. The engine's
+[guarantees document](https://github.com/dhilipsiva/nibli/blob/main/GUARANTEES.md)
+states its inference contract and the scope of its own testing and proofs.
+
+## Running the checks
+
+The repository needs its Rust toolchain and the Nibli repository checked
+out beside it, as specified in [the project instructions](../README.md).
+`./bootstrap.sh` can prepare the adjacent engine at the revision recorded in
+`engine.pin`; it leaves an existing engine checkout unchanged. The verifier
+builds the checkout actually present, so that input matters when reproducing
+a result. From this book's repository, run:
+
+```sh
+./verify.sh
+```
+
+That command incrementally builds the release verifier and executes the
+substantive case inventory. To inspect the inventory or run the first worked
+example alone:
+
+```sh
+./verify.sh --list
+./verify.sh --only book-1/01-the-child-with-nobody.pins.nibli
+```
+
+The focused command reports a partial result. It cannot establish that a
+change preserves the rest of the book. The full command reports measured
+runtime; a duration describes that run, not the strength of its conclusions.
+
+The [suite inventory](../tests/pins/suites.json) identifies the source,
+fixtures, pin files, explicit source edits and contradiction-check setting
+for each case. Ordinary cases use the constitution; deliberate alternatives
+state their changes. Some counterfactual and transitional exercises do not
+request a contradiction scan and retain their own expected consequences.
+A full pass means all required checks completed, not that every alternative
+source was declared consistent.
+
+Each pin file states how many checks it contains, so losing a check fails
+instead of silently reducing the suite. Assertions within a sequence affect
+later queries in that sequence; they do not leak into another case. An
+ambiguous source edit, missing file, malformed pin, unexpected verdict or
+uncompleted required check fails the run. Explicitly trusted shell
+preconditions retain their separate, declared permission.
+
+The inventory is not a census of every possible policy or record. A matrix
+can cover every combination of its named axes and still omit a consequential
+axis. Positive examples need matching negative cases, controls and review
+of downstream effects. The receipt counterfactual demonstrates one such
+comparison; it supplies no universal guarantee about every future rule.
+
+Verification executes the formal material. It does not certify prose,
+citations, figures, navigation or the justice of a policy. Those require
+their own appropriate review. Authoring commands such as
+`./generate.sh spine` are separate from verification: producing a report is
+not evidence that its claims pass. The chapter/pin pairs and current source
+are the places to inspect a particular conclusion.
+
+## A pass can include a reproduced defect
+
+Some pins explicitly mark an expected result as a defect. Chapter 22 has
+this complete proposal-and-query sequence in the current constitution:
+
+```nibli
+suggest(Assembly, Amend_Sneak).
+ratifies(Electorate, Amend_Sneak).
+
 :defect "a totality guard: a targetless proposal receives no law label"
 ? become(Amend_Sneak, Law).
 # => TRUE
 ```
 
-A targetless proposal still receives the law label here — a real defect in the
-label guard, not proof that any change took effect — and chapter 22's argument
-depends on it being real. If a future edit quietly fixed it, the suite would not
-celebrate; it stops the build and says, in its own words, that this is a repair,
-not a regression — find the chapter that calls this a flaw and rewrite it, then
-drop the marker in the same commit.
-The markers in the pin files are the complete list of declared flaws — a
-count here would rot, the markers are the list — and each one is a tripwire
-in both directions: the flaw cannot silently persist, and it cannot silently
-vanish while the prose goes on confessing it.
+The proposal declares no target, yet receives the law label. A passing pin
+confirms that defect remains. It does not demonstrate protection against it.
+The marker states the result a repair would change, so the rule, expected
+answer and prose can be corrected together instead of contradicting one
+another. The executable record is in
+[chapter 22's pins](22-changing-the-rules.pins.nibli).
 
-That pin tests the amendment's label verdict. Separate executable cases in
-`tests/pins/amendments/` test selected source effects. Their suite entries apply
-explicit candidate edits to isolated copies of the current constitution and
-run the paired queries. These are bounded source counterfactuals: the candidate
-edits are applied by the test runner, not by the amendment machinery.
+The label does not itself install a source change. The amendment's separate
+cases test bounded effects and exact source bindings; its host reference
+model uses trusted local input and in-memory state. Neither the label nor
+that host establishes real authentication, democratic approval, publication
+or deployment. No successful test of one supplies the missing warrant for
+another.
 
-The cases walk both directions. A targetless proposal sits beside a direct
-floor deletion. Another declares a harmless target beside the same deletion;
-a third declares the floor honestly and receives a blocked label, yet the
-entitlement is still absent in the test's manually constructed source. A
-one-line floor-shape edit hides its effect more subtly: the food promise
-disappears while the anti-sanction refusal remains. The reverse false-target
-poisoning attack adds a registered target label to an ordinary proposal and
-blocks its law label without any modelled mint or floor effect. A separate case adds
-`Art_Evidence` to the register and directly adds `admits("rich")`; `rich(Adam).`
-becomes writable because no proposal binds the two. It is kept outside the
-amendment cases because a direct vocabulary edit bypasses Article 9.
+The isolation marker is another current defect expectation. It fires for
+the supplied prisoners because company does not derive for them; the cast
+contains no qualifying company receipt. The marker therefore cannot be
+read as an observation of solitary confinement. Its absence-based result
+and the duty it produces are tested in
+[chapter 30's pins](30-when-the-system-notices-it-broke.pins.nibli).
+Identifying the result accurately is necessary to repair or assess it; the
+description is not the repair.
 
-The suite proves the engine-visible consequences of those exact supplied
-sources, and no more. It does not prove that `become` enacted an edit, that
-`false` prevented one, that a declared target is true or complete, who wrote
-or authorised the source, whether it was lawfully deployed, or whether one
-constitutional version safely became another. No rule reads `become`; the
-label verdict and the candidate mutation meet only because the test author
-placed them beside each other. The suite exposes that boundary. It does not
-close it or add a new withholding gate.
+The `:defect` markers are a list of declared defect expectations, not a
+complete inventory of everything that could be wrong. A passing suite can
+contain those expectations and can miss an untested failure. It must be read
+with its defect report and its coverage limits.
 
-The separate amendment-enactment cases join the current state-form result
-certificate to supplied exact-change, effect-review, publication and selection
-records. The external host model compares source bytes directly, tests bounded
-effects in fresh sessions, and exercises stale-base, replay, conflict, rollback
-and wrong-source failures. Those host checks are separate development tests,
-not additional gates in routine book verification. The model acts only on
-trusted local input and in-memory state; it authenticates no signature and
-performs no real publication or deployment.
+The book and its checks include work produced with AI assistance. That is
+not independent review. The constitution, examples and verifier are
+maintained within the same project, and this book presents no independent
+reimplementation or operational validation of the whole design. Public
+source makes disagreement and reproduction possible; it does not establish
+that either has happened.
 
-Placement has its own cases because a walk through named people cannot prove
-that every combination in the declared routing matrix was visited. The fixtures
-in `tests/pins/placement/` cover the product of subject state, severity, legacy
-family-entry presence, and typed PlacementHome availability.
-Family is an intentionally inert regression axis:
-its two states must produce identical outcomes when the other inputs match.
-Severity selects HighSec. A non-severe confined person is Homestay-eligible,
-and the typed home record determines whether Homestay is an actual destination
-or housing derives without a fabricated location. The suite asks separately
-about eligibility, housing, and every known destination. It mirrors the same
-cases twice without confinement: once with affirmative freedom and once with
-personhood alone. In both, the shelter debt and entitlement remain while
-housing and destinations do not appear.
+The formal result is conditional: these consequences follow from these
+premises under these rules and this implementation. Truth of the premises,
+feasibility of the institutions and justice of the choices each need their
+own argument and evidence. A clean contradiction report cannot supply them.
 
-Explicit counterfactual edits delete the historical housing repair, remove a
-required destination, reverse a route, make family consequential, and paint
-housing onto every registered person. Pins record the harmful consequences in
-those worlds. Each alarm-silence probe supplies and confirms a placement report
-first, so a missing report cannot make the result green by accident. The result
-covers the declared subject states, axes, and expected destinations. A newly
-added route or destination needs review and new pins; a fixed list cannot
-discover every extension by itself. This is not a runtime exclusivity rule, evidence that a reported
-placement happened, a placement appeal or remedy, or delivery of housing to a
-free person.
-
-A new rule family needs ordinary examples of the effects it claims, negative
-examples of the boundaries it preserves, and review of the corresponding prose.
-The suite inventory tells the runner which examples to execute; it does not
-assign an assurance status or decide when an author may draft a chapter.
-
-The liberty-and-ecology family follows universal standing. It preserves the
-material-floor inventory, then
-separates person-held liberties, the environmental right of people living now,
-and the Class Nine commons ceiling. Its executable suite tests those distinct
-effects. Two source-removal counterfactuals separately delete the
-environmental-right root and the climate-axis ceiling, so one side cannot make
-the other's absence look green.
-
-The new `prevents` relation is conclusion-only. It records a constitutional
-barrier; it does not make the parser reject every incompatible sentence, measure
-an ecological condition, choose a ceiling number, operate an institution, or
-deliver a remedy. The floor inventory is checked independently so ecology cannot
-become a ninth floor item or erase one of the eight existing items. The Class
-Nine axes remain separate rather than becoming a score. The family neither
-changes the T3 supplied-record path nor borrows T3's executable evidence for a
-different power. Its green result is therefore a formal coverage result over
-supplied records, not proof of environmental liveness, liberty enforcement, or
-restoration.
-
-The later environmental and animal implementation adds exact case-level
-contracts through explicit ecological authoring. Ordinary cases load the
-actual constitution, including its existing democratic, court, scarcity,
-collective-rights and amendment producers. Required-field omissions, conflicts,
-independence tests, actual upstream withdrawals, named alternatives and
-stateful sequences retain distinct expectations. Source counterfactuals change
-explicitly identified rules; they are not alternative whole constitutions.
-The inventory contains their exact execution paths.
-
-Sentience, science, causation, material novelty, institutional completeness and
-current time remain authenticated bounded inputs, not discoveries made by the
-engine. Every authority has its own window. End findings prevent reuse of that
-window; correction is not renewal. An authenticated past merits disposition
-can bar replay without continuing an expired restriction. The amendment host
-must read the actual core-preserving certification gate; it remains a
-trusted-input, in-memory reference model, not a deployment or authentication
-system. No check establishes that an advocate, court, rescue or restoration
-service operated.
-
-The substantive-equality family does not compress its content into one omnibus
-equality fact. Distinct `prevents` rules and pinned expectations keep the
-non-power effects separately testable. Three
-single-deletion counterfactuals separately remove the direct-discrimination
-barrier, the diagnostic-data wall, and the end rule for a positive measure;
-the surrounding equality controls remain in place so each loss is attributable
-to the deleted statement rather than to a collapsed family.
-
-The effects distinguish ten forms of subordination, public and specified
-private reach, direct and indirect proof, protected association boundaries,
-diagnostic data, bounded positive measures, historical repair, initiation,
-separated functions, individual and systemic remedies, and the federal
-corridor. They preserve the criminal burden and refuse to turn absence from a
-record into proof of withholding. The rules prove only that the declared
-constitutional barriers follow from supplied records. They do not establish a
-population disparity, an operating data system, an authorised measure, an
-accessible route, institutional action, or completed repair. The family adds no
-power allocation and neither changes nor borrows the T3 temporal path.
-
-The bodily-autonomy, health, care, family, and life-course family is the
-next non-power family. Its effects have their own executable expectations. Four
-source-removal counterfactuals isolate automatic adulthood, the family-status
-confinement wall, affirmative reviewer independence, and pregnancy authority.
-
-The migration retired mature as a legal-status proxy, made GeneralAdulthood
-evidence typed and non-constitutive, made legacy family facts inert in
-placement, split civil home from PlacementHome availability, and replaced
-missing kinship with affirmative case-bound reviewer authorization. The wider
-effects cover children's independent rights, modular family recognition,
-parentage and origin, public-first care, domestic protection and separation,
-supported agency, reproduction, ageing, treatment, end of life, death, and
-succession. Each is a constitutional barrier over supplied premises. The family
-adds no power allocation, preserves all two hundred and ten power cards and the
-separate T3 template, and forbids borrowing T3's custody record for a
-life-course power. Its green suite establishes no age value, service route,
-institution, operation, delivery, liveness, or completed remedy.
-
-The state-form and political-membership family completes the existing
-constitutional architecture rather than enlarging its census. No reviewed row
-was added. The family formalises the existing fifty-one state-form power cards,
-uses the existing thirty-eight body cards, and repairs holders and functions
-inside the existing two hundred and ten power allocations. It adds no power,
-claim, status, body, census grain, or allocation.
-
-Its formal seam has three positive stages. First, separately authorised source,
-record-review, temporal, and temporal-review roles establish
-`complete(record, StateFormCurrent, temporal_record)` for one exact source
-family, version, epoch, power, jurisdiction, legal scope, reconciliation, and
-time record. Second, card-specific raw fields and the separated result roles
-establish `complete(result, FSPOW_nnn, record)`. Only then may
-`authority(holder, FSPOW_nnn, record)` follow. That three-place authority is the
-sole state-form legal effect. It is not the older one-place answerability
-relation, and this family derives no state-form `match` conclusion.
-
-Dynamic elections, confidence decisions, appointments, initiatives, recalls,
-amendments, successions, and secession consume externally supplied
-administration, completeness, result, review, and execution records. Static
-competence, lawmaking, adjudication, continuity, and local-power cards consume
-their own positive source-supplied fields.
-
-No affirmative result follows when a required positive premise is absent. The
-machinery does not authenticate an attestation, discover an omitted conflict,
-or determine from an outside clock that a record is stale. A false attestation
-can support the formal result when it is supplied in the required shape. A zero
-roster, tie, conflict, or other failure has only the consequence positively
-specified for that exact route; absence alone creates nothing. `FALSE`
-preserves no law, office, mandate, or claimant protection. Any continuation
-requires its own positive current premise and end condition.
-
-The dedicated state-form cases in `tests/pins/state-form/` give every card
-positive, negative, and counterfactual anchors. The declared counterfactual edit
-removes only `~($source = $temporal_review)` from the shared currentness rule.
-In that world the source writer can also serve as temporal reviewer, and the
-fused-role case for every card derives authority that the real source withholds;
-properly separated controls remain green. The runner applies that exact edit to
-the current source before running the corresponding pins.
-
-The suite proves bounded legal effects over supplied records. It does not
-authenticate a source or certificate, calculate a changing tally, resolve
-competing submissions, choose a term, seat count, threshold, tolerance, or
-fallback number, operate an institution, advance time, publish a result, deploy
-a source, transfer an office in the world, or deliver the floor. It does not
-reuse custody's T3 source, lease, case, or renewal. Every affected power, body,
-and claim therefore remains `Specified` and `ratified-unimplemented`: formal law
-is not staffing, independence in fact, operation, delivery, or institutional
-action.
-
-The non-reciprocal-obligations family is a completed cross-cutting family. It
-adds no power, body, claim, allocation, or status. It preserves the existing
-floor entitlements and debts, then keeps public duties, delegated public
-functions, express private duties, civic-duty limits, duties to a person, duties
-to a source-defined common, role duties, voluntary commitments, conflict,
-excuse, continuity, and remedy in separately tested effects.
-
-Public responsibility is separated into respect, protect, fulfil, continue, and
-remedy. Each conclusion rejoins the exact source, version, bearer, jurisdiction,
-function, scope, evidence authority, independent reader, failure polarity, and
-temporal record that permits it. A contractor inherits only the duties of the
-public function it performs; it derives neither public status nor authority. A
-private duty follows only from an express current source.
-
-Conflict and excuse are positive-record routes. Missing or conflicting evidence
-creates no duty, priority, discharge, alternate, or remedy. An excuse may move
-performance but cannot erase the protected claim. The non-reciprocity checks
-separately prove that work, payment, identity, compliance, contribution,
-approval, a role duty, a civic duty, or a voluntary commitment is not a premise
-of personhood, the floor, or the public debt.
-
-The existing Review and Appeals obligations now feed typed action routes.
-Their dedicated suite checks the named reader, wrong-recipient withholding,
-non-response, alternate continuity, individual remedy, systemic correction,
-affected-case re-examination, and recurrence-check duties, alongside
-source-removal counterfactuals. A green result proves those legal effects over
-supplied records. It does not prove notice, staffing, response, enforcement,
-delivery, completed repair, recurrence monitoring, or institutional life.
-
-The delivery-and-receipt family adds one recipient-side evidence relation,
-`receives`, and five direct heads. Food, non-carceral shelter, care, material
-security, and company derive only when the same rule joins a recipient, item,
-source, authorised witness for that person, matching scope, and the witness's
-separation from the source. The legacy `teaches` plus `hears` route to `learn`
-remains unchanged.
-
-The family suite keeps the shipped record dormant, then exercises the routes
-with probe evidence. Correctly matched independent evidence derives the selected
-actuality. Missing attestation, missing receipt, wrong scope, wrong person,
-unauthorised witness, and provider self-certification do not. A predeclared
-alternate succeeds through the same authorised role. A recipient who is absent
-from the person roster can still derive the actuality, while remaining absent
-from that roster.
-
-The source deliberately adds no delivery head for `believe` or `expresses`.
-Belief is protected from certification. The liberty of expression remains a
-person-held limit, while the older confinement route can still put recorded
-speech into the supplied record. Care deriving `healthy` retains the book's
-fixed meaning of care received and does not establish that the person is well.
-
-The independence guard needs a source mutation: extra facts do not remove a
-condition from a rule.
-`no-delivery-independence` removes only the food rule's witness-source
-disequality. In that copy a kitchen can provide a meal, attest its own delivery,
-and derive `eats`; the independent control remains true and the untouched shelter
-rule still refuses provider self-certification. The fixture proves what the
-guard prevents without pretending that a probe can test a restriction by adding
-facts.
-
-A missing receipt derives no `Undelivered` finding. It supplies no arrival and
-leaves entitlement untouched. Outreach, challenge, continuity, remedy,
-corrective control, affected-case re-examination, and recurrence checking remain
-separate obligation effects with their own positive records. Recurrence checking
-is bounded to its declared supplied horizon and proves nothing about all future
-time.
-
-These checks establish a formal interface over supplied records. They do not
-authenticate a writer, prove an offer or accessibility, operate a service, make
-anything arrive, complete a remedy, implement a correction, monitor recurrence
-in the world, or establish future non-recurrence.
-
-The income-security family adds one writable relation, `pay`, and one
-conclusion-only head, `insure`, and two rules. The supplement derives only when
-the same rule joins a contribution record, an adjudicated event finding by a
-writer authorised for that person at the same scheme, that writer's separation
-from the carrier, and the absence of the Court's individualised fraud finding
-on the record; the guarantee rule adds the Court's insolvency finding on the
-carrier and concludes with the public guarantee as insurer. The names are
-corpus-bound: `contribute`, `pension`, and `earn` do not exist in the engine's
-lexicon, and `deserve` does but carries the wage-for-work reading this family
-refuses. One counterfactual explains the boundary. The engine accepts a rule
-that confines a person for having no contribution record, because the record
-is a base relation and there is no negative cycle for the stratifier to
-refuse. The source counterfactual adds that hostile reader and pins the resulting
-confinement. The intended purpose limit therefore requires rule review as well
-as those examples; the logic does not prohibit every future reader by itself.
-Stratification does not move.
-
-The qualifications-and-compensation family adds one writable relation,
-`promise`, two conclusion-only heads, `grant` for the certificate and `provide`
-for compensation and restitution, and three rules. The certificate derives from
-an authorised certifier's attestation at certification scope with the certifier
-distinct from the person; compensation derives from the promise plus an
-independent attestation of the same instrument constant at a basis, under the
-Court's absent fraud finding on that basis; restitution derives from the same
-premises with the finding present. Separate hostile-reader counterfactuals for
-`pay` and `promise` show why those records must not become gates on the floor or
-routes to confinement. Reviewing new rules for that purpose limit remains
-necessary. Stratification does not move.
-
-The public-scale vocabulary family adds one conclusion-only head, `member`, and a
-ground rule for each named trigger kind, function class, and lawful pairing of
-reach to tier. The finding's own rule gains a membership condition on each of the
-three, so the token its attesters agree on has to be one the constitution names.
-Measured before the change: a finding whose only stated ground was a revenue
-threshold carried the result, the holder authority, and every duty. The heads are
-ground and the relation is conclusion-only, because admitting it would let a
-supplied record name a ground of its own. A source counterfactual adds an unnamed
-revenue ground and pins the resulting expansion. That example demonstrates the
-cost of widening the named vocabulary; it is not an exhaustive prohibition on
-every possible future ground rule.
-
-The economic, labour, property, and fiscal family follows the same discipline
-without adding one omnibus conclusion called an economy. Work freedom and
-labour protection, licensing, possession and acquisition, knowledge
-exclusivity, contract and consumer protection, enterprise capacity, private
-power, protected voluntary life, taxation, appropriation, spending, borrowing,
-money, credit, insolvency, scarcity, and remedy remain separately testable legal
-effects.
-
-A restrictive or managerial power requires its own current source, lawful
-holder, jurisdiction, scope, evidence, independent review, bounded result, and
-end. Occupational licences, knowledge exclusivity, private-power findings,
-monetary office, temporary management, and the carry of a benefit, title, or
-liability do not borrow custody's time record. Missing or conflicting current
-evidence supplies no restrictive authority, while the independent floor and
-essential-service continuity remain.
-
-Review silence supplies no approval or continuation. Record review, temporal
-review, independent review, audit, and final review each have a distinct
-predeclared alternate for certified unavailability. Each alternate is separate
-from the primary actors and the other alternates, and its branch produces only
-the matching duty. It cannot complete the power, enlarge the result, or keep
-expired authority alive.
-
-The negative checks keep recognition, voiding, loss, raw work, contribution,
-wealth, conviction, family status, and personal scores out of wages, property,
-credit, insurance, political weight, the floor, and scarcity priority. Raw
-financial and equality records remain outside the consequential person record;
-only a narrow, authenticated, purpose-bound result can enter the rule that needs
-it.
-
-A green result establishes only those bounded legal effects over the supplied
-records. It does not value property, calculate a tax, clear a market, measure
-dominance, forecast prices or inflation, prove scarcity, operate a payment,
-choose a budget, staff an institution, preserve a service in the world, or make
-any remedy happen.
-
-The last class of check needs a different source, not another fact placed on
-top of the unchanged rules. A claim of the form "remove this line and the world
-loses that" needs the line actually removed. The suite inventory therefore
-declares explicit counterfactual edits — a line deleted, a line changed, a line
-added. The runner applies those edits to isolated copies of the current
-constitution; a missing or ambiguous target is an error. It then runs pins
-against each changed world to show what follows. There are no source hashes or
-separately maintained full-constitution copies to refresh. When this book says
-the multi-sig's dormant guards decide nothing
-today, or that one added credential route would let a carried void count, a
-fixture executed that claim. This was the first source-mutation suite in the
-method; the amendment cases also execute bounded candidate
-deletions, replacements and additions for the narrower question of whether a
-declared target matches an effect.
-
-The record red-team adds a second and narrower class. Its ephemeral copies
-delete named ground entries — typed adulthood evidence, a directly supplied
-person fact, raw void marks, and the two parts of forgiveness — and execute the
-remaining single-record consequences. It also proves that a raw void mark alone
-is now inert. The adulthood cases demonstrate an evidence-bound ballot
-conclusion; they neither constitute adulthood nor observe an outside clock.
-Transition, carry, order, and renewal belong to the staged temporal assurance
-case described next. The red-team tests prove what follows from supplied
-records. They do not show that a live deletion occurred, identify who withheld
-or removed anything, or recover the missing entry.
-
-The temporal cases add the transitions that one-file chapter pins cannot supply.
-Their suite entries select explicit staged rule variants: record reconciliation,
-then order, then case-bound custody. The fixtures in `tests/pins/temporal/`
-supply the respective snapshots. Every case runs with isolated state, so an
-earlier snapshot's conclusions cannot leak into a later snapshot's result.
-
-At the first stage, two witnesses bind exact manifest members and record
-replacement. A separately witnessed passport selects one constitutional
-lineage; only its collision-free terminal successor gives carried voids,
-clearance, or public power current effect. A carried personhood route remains available on an accepted transition only when
-both predecessor-standing witnesses are supplied; withholding either can still
-erase that T1 route and its omission marker. It cannot erase personhood supplied
-or derived independently through birth, contact, presence, control, custody or
-release. The universal-standing suite tests those roots separately; T1 neither
-creates nor authenticates them. Audit reports retain the same supplied-record
-boundary. At the second stage, independently witnessed
-event and record entries form separate typed paths. The paths close
-transitively, so a longer cycle is caught as well as a direct reversal, and the
-resulting conflict spreads through the connected path without leaking into the
-other path type. A conflicted path cannot support a review window.
-
-At the last stage, custody rejoins the raw witnessed fields behind every compact
-tag: case subject, court holder, court judgment, injured person, lease, window,
-renewal, source, and canonical terminal record. Competing witnessed
-source/window/case-subject/lease bindings fail closed. The executable cases attack
-omitted and forged carry, disjoint or replayed lineages, direct and transitive
-order conflict, tuple aliasing, source mismatch, case reuse, withheld standing
-witnesses, and challenge intake. A supplied challenge suspends its exact lease;
-the paired challenge-absent snapshot can remain active. The
-protected-record alarm is intentionally conservative: the constitution has no
-way to represent lawful disposal of such a record, so every missing required
-carry is reported as a disappearance. That proves a mismatch, not unlawful
-deletion.
-
-This is bounded safety evidence for supplied records. The separate root rules
-and pins establish universal standing only when one of their external birth or
-encounter facts is supplied. Neither suite observes that fact, preserves a
-challenge that intake withholds, operates correction or identity reconciliation,
-proves a manifest complete, authenticates outside witnesses, detects deletion
-before or inside the first attested record, advances a clock, makes a later record
-arrive, serves a person, releases anyone physically, or makes Appeals perform its
-duty.
-
-There is a second thing to say about the fixtures, and it is a weakness
-rather than a strength, so it belongs here rather than in a footnote.
-Source counterfactuals exist for a few rule and fact changes — a seat, a
-court's answerability. The amendment audit executes a bounded set of candidate
-source edits, and the record red-team names a few more ground-entry deletions.
-The placement audit is one bounded exception to accidental coverage: across
-its declared subject states, severity, inert family axis, and typed
-PlacementHome axis it generates the whole outcome table and rejects missing,
-conflicting, reversed, family-sensitive, and painted-delivery routes. None
-of those is a complete census of semantic effects. Deleting the evidence behind a named
-person's severity, or the line that makes the duty-bearer answerable, still
-depends on whatever other check happens to read it. Those changes may turn a
-chapter's pins red, which sounds like a safety net and is not, because they do
-it only where a chapter happened to argue about the changed fact and pinned it
-for reasons of its own. Coverage outside the declared fixtures and generated
-matrix is an accident of what the chapters chose to say, never a guarantee. A
-change nobody happened to pin may go unseen. I would rather write
-that down than let the green tick imply otherwise.
-
-Now the paragraph this part exists to hold, beside the machinery it
-qualifies. Everything above runs, and a stranger can run it: clone the
-repository, one command, the pins pass. Here is what that does not mean.
-Every probe, fixture and refusal in this book's repository was written by me
-and by AI sessions working with me, against a cast of a few dozen
-record-people. No one has independently reimplemented the checker. No
-outside red team has attacked this constitution. And the engine that blesses
-the book shares the book's author. Two things narrow that, and neither
-closes it. In this repository, the sabotage fixtures, amendment-semantics
-audit, placement audit, record red-team and temporal assurance case execute
-selected source and record mutations rather than merely describing them. Upstream, in the engine's own
-repository, the engine — not this constitution — is checked against work
-that is not its own: external solvers are run as referees over the fragments
-of the logic they can hear, though each starts from the engine's
-already-compiled output, so the language front-end sits outside them; the
-criterion that refuses unstratifiable rules is implemented a second time
-from its mathematical statement rather than from the engine's code, and the
-two must agree on every random program thrown at them; a proof assistant's
-kernel checks model-level proofs of the core algorithms; mutation and fuzz
-testing beat on the rest. The engine's guarantees document holds that
-inventory in the register I have tried to keep here — state the guarantee
-flatly, then name where it stops. So, flatly, where this one stops: every
-verification artifact in the engine's repository is authored, run and
-interpreted inside that repository. No one outside this project has verified
-the engine. I will not promise you a red team I do not have. The suite is
-public and it is runnable, and that is not a defense — it is a standing
-invitation to become the outside reader this book is still missing.
-
-## The last page
-
-The book ends here, so let me say what it was. Chapters describing a society
-from its rules outward, with pinned claims checked by a machine that cannot be
-flattered; one
-part of argument, mine, where the machine has no say; and this part, which
-put the machine itself on the table. The confessions along
-the way were the product working. The refusals were the design holding. What
-I could not defend, I said so, out loud, in the plainest words I could find.
-
-One thing this book has deliberately not told you, and it is the largest
-thing. It has described what a society is when certain things cannot be
-taken from anyone — and it has said almost nothing about how to build one.
-What it would cost. Who would go first. How anything arrives at scale, from
-bread to housing to the people who show up when the alarm sounds. Those
-questions are real, they are answerable, and they deserved better than a
-final chapter's gesture at them.
-
-They are the next book, *What It Would Take*. This one, *The Rights Nobody
-Has to Earn*, was the destination; that one is the road.
-If you have read this far — past the rules, past the failures, past the
-paragraph where I told you exactly who has not yet checked this work — then
-you are the reader that book will be written for.
+*The Rights Nobody Has to Earn* states the constitutional proposal and its
+tests. *What It Would Take* owns the account of operation and transition.
+A constitutional defect belongs to the first book; a claim that provision
+or release actually occurred needs evidence beyond either book's rules.

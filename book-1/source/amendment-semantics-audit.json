@@ -636,7 +636,7 @@
       "future_trigger": "Reassess if vocabulary changes acquire a constitutional approval route, entrenchment, independently reviewed meaning, and complete consequence analysis."
     },
     {
-      "artifact_ref": "book-1/method.md::the candidate edits are applied manually by the audit, not",
+      "artifact_ref": "book-1/method.md::The runner applies the declared",
       "current_claim": "The audit executes bounded manually paired candidate edits and label verdicts; it does not show that the amendment machinery applied them.",
       "classification": "revised_and_scoped",
       "reason": "Exact fragment and candidate digests make the manual pairing reproducible while preserving the no-reader and no-transition boundary.",

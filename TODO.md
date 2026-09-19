@@ -109,26 +109,6 @@ unresolved defect or blocker. Only the first three can close the relevant issue.
 Reader-facing prose states present rules and justified limits; the attempted
 solutions and development history stay outside the book's reading sequence.
 
-## II. Strengthen evidence and justification
-
-### 12. Make the optional method accurate and useful to a skeptical reader
-
-- [ ] Rewrite `book-1/method.md` around the method's actual explanatory value.
-
-Explain the chosen modeling language, supplied premises, derivation, refusal,
-contradiction checks and empirical limits using a small number of complete
-examples. Integrate item 01's appeal correction. Remove development history,
-including accurate accounts of earlier attempts and subsequent fixes. Teach
-through the current rules and explicitly tested counterfactuals, not through
-the author's route to them. Remove internal labels that explain no claim.
-State what verification establishes, what it assumes, what it does not check,
-and which failures remain in the current design. Preserve its permitted scope
-and optional, unnumbered position.
-
-**Done when:** the worked examples match executed behavior; a reader can tell
-model consistency from truth, feasibility and justice; and the method explains
-the current design without narrating its development or overclaiming its reach.
-
 ## III. Make the book work as a book
 
 ### 13. Give the opening a clear promise and a short route into chapter 1

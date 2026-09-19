@@ -3312,8 +3312,8 @@ no inference from AI agreement, human endorsement or invented reader testimony.
 The exact text is retained in `book-1/31-the-five-joints.md` as
 `session-drafted, author-approved under delegated approval (2026-09-13)`.
 The same approval covers the method's short opening bridge, which is adjusted
-to match Part V's actual closing promise; the full method rewrite remains
-item 12.
+to match Part V's actual closing promise; the full method rewrite is recorded
+under item 12 below.
 
 The controlling narrative-register decision retains the exact hypothetical
 kitchen paragraph and supersedes the old passage and the requirement to quote
@@ -3372,6 +3372,69 @@ Separate prose review measures Part V at 5,847 words, down from 12,293. Across
 all ordered inputs, including the epigraph, 73,428 words are derived and 21,921
 are other prose: 95,349 total, approximately 77% derived. The appendix and
 source archive remain outside the reading sequence and length measurement.
+
+**Item 12 — the optional method, landed 2026-09-19.** The method is rewritten around
+complete examples of standing and debt, receipt evidence, and appeal stages,
+followed by the distinct meanings of input refusal, contradiction checking
+and a reproduced defect. It explains the choice of Nibli, closed-world and
+closed-domain assumptions, variable joins, conditional inference, and the
+separation between source and record changes. It describes the current design
+without the book's development history or an inventory of every rule family.
+The exact canonical `book-1/method.md` is
+`session-drafted, author-approved under delegated approval (2026-09-13)`.
+
+The appeal example includes the requester's lack of a permission requirement,
+the reader's positive mandate, the resulting duty, Nia's granted relief and
+Ruk's continuing custody. It explicitly identifies the universal hearing-duty
+rule as an added test control, not an already resident guarantee for every
+case. The automatic-relief encoding remains an executed refusal. The custody
+account also recognises the qualified unrelated-prosecution route rather than
+claiming there is only one producer. The floor explanation distinguishes an
+event body's contribution to the dependency graph from a supplied actuality.
+
+The contradiction account names represented constraint checks and their
+completion limit, rather than unrestricted first-order consistency. The case
+inventory's scan setting is explicit: deliberate counterfactual and transitional
+exercises can keep their expected results without claiming a clean scan of
+each altered source. `UNKNOWN`, resource exhaustion, rejection of an input and
+`FALSE` are not interchangeable. The method identifies the current targetless
+law-label and absence-based isolation defect expectations without treating a
+passing defect pin as a repair. Source enactment, trusted in-memory host checks,
+authentication and operation remain separate claims. It asserts no independent
+reimplementation, external validation or real institutional success.
+
+The rewrite resolves 17 method-reference occurrences (16 distinct locators)
+across five existing source JSON files, including five previously stale
+references. No other value in those records changes; historical assurance is
+not renewed. The five resolved exceptions are removed from the existing
+reference test. All remaining declared historical exceptions are preserved.
+
+The quotation test initially saw only five of the eight displayed rules:
+it joined a preceding pin directive to the rule and then failed its minimum
+count. Its extractor now begins at `all` and retains wrapped continuation
+lines, so directives and verdict comments cannot hide a quoted rule. The
+existing minimum and exact source comparison stand. A deliberately malformed
+rule after a refusal directive is rejected as absent from every source file;
+the exact manuscript was restored. All five claim tests then pass (0.74s),
+all six reference tests pass (1.33s), and the runner's contradiction and
+incomplete-scan development check passes (0.01s).
+
+Focused execution passes 175 pins across six cases: chapters 1, 3, 5 and 21,
+the delivery suite, and its provider-independence counterfactual. Individual
+runs take 10.66–11.76s. The complete verifier passes 87,372 pins across 15,996
+cases with complete contradiction checks and no findings in 896.15s
+(14m 56s). Nine existing known-defect pins still reproduce; these are not
+treated as repaired by this explanatory rewrite. The five-minute target is
+not met. The final quotation check passes again (0.96s), and
+`git diff --check` passes. The constitution, suite inventory and all
+substantive pins are unchanged.
+
+Separate prose review measures the method at 3,083 words, down from 8,544.
+Across all ordered inputs, including the epigraph, 73,428 words are derived
+and 16,460 are other prose: 89,888 total, approximately 81.7% derived. The
+scope remains technical exposition in the existing optional, unnumbered
+channel. No source or appendix material becomes an additional argument
+channel.
 
 ### Measured Nibli capability boundaries
 
@@ -4345,6 +4408,15 @@ Note the manifesto's heading convention differs deliberately from the book's: it
   counts rot. Book 1 names Book 2 at its seams — Part V and this file's closing lines —
   and by title since the 2026-09-16 naming ruling (R2); derived chapters never name
   either book. The former "exactly once" constraint is retired.
+
+  **Current presentation, 2026-09-19, revision item 12:** these scope limits
+  stand. The method remains optional, unnumbered and without a companion pin
+  file; its examples point to existing executable cases. It quotes source
+  statements and actual pin expectations, including refusal patterns, with
+  no machine-rendered explanation, proof trace, full constitution or ordinary-
+  life vignette. The dependency order is explained separately from editorial
+  chapter order. The older verification-gate descriptions above are historical
+  rationale, not reinstated gates. No compute-backend discussion is added.
 
 - **The reach strategy: public construction from a home of its own**, ruled
   2026-08-02, qualified by E2 + P1 + D2 on 2026-08-04, and bounded to Gate C

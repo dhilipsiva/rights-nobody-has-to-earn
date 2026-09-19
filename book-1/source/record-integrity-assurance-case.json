@@ -1017,7 +1017,7 @@
       "future_trigger": "Re-review if the current err/2 inventory, typed reader bridge, wrong-recipient control, nonresponse route, or external liveness evidence changes."
     },
     {
-      "artifact_ref": "book-1/method.md::Coverage outside the declared fixtures and generated",
+      "artifact_ref": "book-1/method.md::The inventory is not a census of every possible policy or record.",
       "current_claim": "Coverage outside declared fixtures and generated bounded suites remains accidental chapter-pin coverage, not a guarantee.",
       "classification": "revised",
       "reason": "The method can name the placement matrix and staged temporal harness as bounded exceptions while runtime authentication, exhaustive deletion detection, storage integrity, and external liveness remain absent.",
