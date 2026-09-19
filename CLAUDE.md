@@ -3756,6 +3756,69 @@ no findings. Nine declared known-defect pins still reproduce. Their passing
 expectations do not close the defects, and the five-minute target is not met.
 The final diff check passes.
 
+**Item 18 — publisher proposal and selected sample, 2026-09-19.**
+`submission/README.md` supplies a 1,590-word publisher-neutral proposal:
+synopsis, readers, distinct contribution, all current contents, representative
+chapters, completion status, open contributions, mixed licences and the desired
+editorial/print partnership. Its comparisons with Rawls, Wright and Ostrom
+link to publisher descriptions, including Harvard/Belknap's description on
+JSTOR. They claim neither novelty over those works nor endorsement or sales.
+The author is identified only as dhilipsiva; no biography, external review,
+reader testing or operational success is invented. No publisher was selected
+or contacted. A named-press adaptation must use that press's current official
+requirements; open-access support does not imply acceptance of open editing.
+
+The exact proposal and accompanying README prose are `session-drafted,
+author-approved under delegated approval (2026-09-13)`. The synopsis describes
+the limited supplied birth record without converting absent entries into facts
+about the child's actual life or ability. The proposal remains outside the
+ordered reading sequence and adds no argument channel to the book. It states
+that nine modeled defects and item 14's further source questions remain for
+item 19, followed by the fresh whole-manuscript review. It calls for updating
+the proposal and sample to that resulting text before submission. Preparing
+the package does not close those issues or release Book 1 or activate Book 2.
+
+The assembler's explicit `--sample` option selects complete chapters 1, 5, 8,
+21 and 31 in manifest order. Separate `book-1-sample` filenames and an EPUB
+identifier distinguish the selection from the full review copy. It preserves
+chapter numbers and citations, labels the cover, retains internal navigation
+within the sample and sends omitted-chapter references to the public `main`
+manuscript. Those mutable links do not bind an immutable submitted edition.
+The PDF outline handles a selection without an epigraph. New regression
+coverage checks the selected order, missing selections, omitted-chapter links
+and the packaged EPUB's spine, navigation and local destinations; all seven
+assembler tests pass (0.202s).
+
+The 34 ordered inputs still contain 52,041 whitespace-separated Markdown
+words: 39,872 in derived chapters (76.62%). The sample contains 10,009 and
+renders to 29 PDF pages with 36 bookmarks, 33 internal and 36 external links,
+tagged structure and embedded licence notices. Sixteen browser renders cover
+the HTML and all seven packaged EPUB XHTML files at 360 and 1,280 pixels:
+no overflow, missing local targets or duplicate IDs. The labelled table,
+keyboard skip link, EPUB chapter navigation and footnote/return links work
+in Chromium. All PDF pages were inspected on contact sheets, with mobile
+chapter and note views inspected separately; no out-of-page text or empty
+pages were found. All 208 source text blocks checked occur in the PDF after
+excluding its numbered footers. This is rendering inspection, not external
+reader assessment or testing across all ebook applications. EPUBCheck 5.4.0
+reports zero errors or warnings under EPUB 3.4 rules.
+
+The proposal's numbered contents match the manifest, and all 29 local links
+and fragments in the affected documentation resolve. The full HTML output
+matches its previous render except for one trailing space in the embedded
+font licence already cleaned during item 16. Temporary inspection checks
+were corrected to use the renderer's actual `targets` field and exclude PDF
+page-number footers before comparing text; neither initial helper failure
+was a manuscript omission. Existing coverage tests pass (ten, 0.19s), reference
+tests pass (six, 1.40s), and claim-discipline tests pass (five, 1.00s).
+
+The complete `RIGHTS_VERIFY_JOBS=4 ./verify.sh` run passes 87,372 pins across
+15,996 cases in 895.11s (14m 55.11s), with complete contradiction checks and
+no findings. Nine declared known-defect pins still reproduce and remain open
+for substantive resolution in item 19. The five-minute target is not met.
+The ordered manuscript, constitution, pins, suites and verifier are unchanged.
+The final diff check passes.
+
 ### Measured Nibli capability boundaries
 
 Each is a dated measurement against a named engine revision, not a timeless

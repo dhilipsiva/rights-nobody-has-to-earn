@@ -55,10 +55,16 @@ without a browser, or `--output-dir PATH` to choose another output directory.
 The script declares its exact Python dependencies. Generated review copies
 are ignored by Git; rebuilding reads the current ordered source files.
 
+Add `--sample` to assemble chapters 1, 5, 8, 21 and 31 as
+`book-1-sample.html`, `book-1-sample.epub` and `book-1-sample.pdf` instead.
+The [publisher proposal](../submission/README.md) explains the selection.
+The sample keeps the original chapter numbers; references outside the
+selection open their public repository locations.
+
 HTML provides a linked contents list, keyboard skip link and labelled table
 regions. EPUB carries the chapter order and nested contents. PDF includes
 page numbers, a linked contents list and bookmarks. All three embed the
-Tamil font used by the epigraph. Links to chapters stay within the edition;
+Tamil font used by the epigraph. In the full copy, chapter links stay within the edition;
 links to formal files and the claim registry open their repository locations.
 Those repository links follow `main` and do not identify immutable source.
 

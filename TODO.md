@@ -111,23 +111,6 @@ solutions and development history stay outside the book's reading sequence.
 
 ## IV. Prepare a credible open book and reassess it
 
-### 18. Prepare a concise publisher submission package for the revised book
-
-- [ ] Prepare a synopsis, intended readership, distinct contribution, current
-  contents, representative sample selection and accurate completion statement.
-
-Describe the open contribution model, existing licensing and desired print or
-editorial partnership accurately. Explain the work's relationship to existing
-political and constitutional writing without unsupported novelty claims.
-Research current submission requirements when adapting to a specific publisher;
-do not infer that open-access publication means acceptance of an open-editing
-model. Keep the package consistent with the final manuscript and its limits.
-
-**Done when:** the package is ready for a concrete submission decision, with no
-invented endorsement, external review or operational validation. Actual contact,
-submission, contracts and publication are separate actions, not completion
-conditions for this revision plan.
-
 ### 19. Run the final formal and manuscript checks on the revised state
 
 - [ ] Execute the complete substantive verifier and relevant existing

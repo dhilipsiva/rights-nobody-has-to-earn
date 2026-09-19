@@ -44,6 +44,7 @@ TITLE = "The Rights Nobody Has to Earn"
 AUTHOR = "dhilipsiva"
 REPOSITORY = "https://github.com/dhilipsiva/rights-nobody-has-to-earn/blob/main/"
 EPUB_NS = "http://www.idpf.org/2007/ops"
+SAMPLE_CHAPTERS = (1, 5, 8, 21, 31)
 
 
 @dataclass
@@ -253,9 +254,19 @@ def contents(documents: list[Document], mode: str) -> str:
     return "<ol>" + "".join(rows) + "</ol>"
 
 
-def cover() -> str:
+def select_sample(documents: list[Document]) -> list[Document]:
+    selected = [doc for doc in documents if doc.number in SAMPLE_CHAPTERS]
+    if tuple(doc.number for doc in selected) != SAMPLE_CHAPTERS:
+        raise ValueError('The publisher sample chapters must exist in reading order')
+    return selected
+
+
+def cover(sample: bool = False) -> str:
+    status = 'Book 1 · Selected chapters' if sample else 'Book 1 · Review copy'
+    selection = ('<p>Chapters 1, 5, 8, 21 and 31. Cross-references beyond this '
+                 'selection open the public manuscript.</p>') if sample else ''
     return f'''<header class="cover"><h1>{TITLE}</h1>
-<p>{AUTHOR}</p><p class="edition-status">Book 1 · Review copy</p>
+<p>{AUTHOR}</p><p class="edition-status">{status}</p>{selection}
 <p class="licence">Book prose: <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>.
 The repository contains separately licensed formal source, code and data;
 see <a href="{REPOSITORY}LICENSING.md">the licence map</a>.
@@ -263,7 +274,7 @@ Tamil typography uses Noto Serif Tamil, Copyright 2022 The Noto Project Authors,
 under the SIL Open Font License 1.1.</p></header>'''
 
 
-def html_document(documents: list[Document], css: str) -> str:
+def html_document(documents: list[Document], css: str, sample: bool = False) -> str:
     font = base64.b64encode((ASSETS / "NotoSerifTamil.ttf").read_bytes()).decode("ascii")
     css = css.replace('url("NotoSerifTamil.ttf")', f'url("data:font/ttf;base64,{font}")')
     licence = (ASSETS / "OFL-NotoSerifTamil.txt").read_text(encoding="utf-8")
@@ -271,7 +282,7 @@ def html_document(documents: list[Document], css: str) -> str:
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <title>{TITLE}</title><meta name="author" content="{AUTHOR}"/>
 <style>{css}</style><!-- Embedded font licence:\n{licence}\n--></head><body>
-<a class="skip-link" href="#main-content">Skip to the book</a>{cover()}
+<a class="skip-link" href="#main-content">Skip to the book</a>{cover(sample)}
 <nav class="book-contents" aria-label="Book contents"><h1>Contents</h1>{contents(documents, "html")}</nav>
 <main id="main-content" tabindex="-1">{''.join(article(d, documents, "html") for d in documents)}</main>
 </body></html>'''
@@ -284,7 +295,7 @@ def xhtml(title: str, body: str) -> str:
 <link rel="stylesheet" href="book.css"/></head><body class="ebook">{body}</body></html>'''
 
 
-def write_epub(path: Path, documents: list[Document], css: str) -> None:
+def write_epub(path: Path, documents: list[Document], css: str, sample: bool = False) -> None:
     items = [('cover', 'cover.xhtml', 'application/xhtml+xml', ''),
              ('nav', 'nav.xhtml', 'application/xhtml+xml', ' properties="nav"'),
              ('css', 'book.css', 'text/css', ''),
@@ -297,7 +308,7 @@ def write_epub(path: Path, documents: list[Document], css: str) -> None:
     package = f'''<?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://www.idpf.org/2007/opf" version="3.0" unique-identifier="book-id" xml:lang="en">
 <metadata xmlns:dc="http://purl.org/dc/elements/1.1/">
-<dc:identifier id="book-id">https://github.com/dhilipsiva/rights-nobody-has-to-earn/book-1</dc:identifier>
+<dc:identifier id="book-id">https://github.com/dhilipsiva/rights-nobody-has-to-earn/book-1{'/sample' if sample else ''}</dc:identifier>
 <dc:title>{TITLE}</dc:title><dc:creator>{AUTHOR}</dc:creator><dc:language>en</dc:language>
 <dc:rights>Book prose CC BY 4.0; embedded Noto Serif Tamil under SIL OFL 1.1.</dc:rights>
 <meta property="dcterms:modified">{modified}</meta></metadata>
@@ -311,7 +322,7 @@ def write_epub(path: Path, documents: list[Document], css: str) -> None:
         archive.writestr('EPUB/book.css', css)
         archive.write(ASSETS / 'NotoSerifTamil.ttf', 'EPUB/NotoSerifTamil.ttf')
         archive.write(ASSETS / 'OFL-NotoSerifTamil.txt', 'EPUB/OFL-NotoSerifTamil.txt')
-        archive.writestr('EPUB/cover.xhtml', xhtml(TITLE, cover()))
+        archive.writestr('EPUB/cover.xhtml', xhtml(TITLE, cover(sample)))
         nav = f'<nav epub:type="toc" role="doc-toc" class="book-contents" title="Book contents"><h1 id="contents-title">Contents</h1>{contents(documents, "epub")}</nav>'
         archive.writestr('EPUB/nav.xhtml', xhtml('Contents', nav))
         for doc in documents:
@@ -334,17 +345,18 @@ def repair_outline(pdf: object, documents: list[Document]) -> None:
         entry[1] = canonical[re.sub(r'\s+', '', entry[1])]
     # The poem's source has no visible title, so Chromium omits its bookmark.
     # Resolve its real destination; pagination is never hard-coded.
-    page, x, y = pdf.resolve_link('#nameddest=epigraph')
-    if page < 0:
-        raise ValueError('PDF epigraph destination is missing')
-    position = next(i for i, entry in enumerate(outline) if entry[1] == 'Contents') + 1
-    outline.insert(position, [1, 'Epigraph', page + 1,
-                              {'kind': 1, 'page': page, 'to': (x, y), 'zoom': 0.0}])
+    if any(doc.stem == 'epigraph' for doc in documents):
+        page, x, y = pdf.resolve_link('#nameddest=epigraph')
+        if page < 0:
+            raise ValueError('PDF epigraph destination is missing')
+        position = next(i for i, entry in enumerate(outline) if entry[1] == 'Contents') + 1
+        outline.insert(position, [1, 'Epigraph', page + 1,
+                                  {'kind': 1, 'page': page, 'to': (x, y), 'zoom': 0.0}])
     pdf.set_toc(outline, collapse=1)
 
 
 def write_pdf(html_path: Path, pdf_path: Path, executable: str | None,
-              documents: list[Document]) -> None:
+              documents: list[Document], sample: bool = False) -> None:
     from playwright.sync_api import sync_playwright
     import pymupdf
 
@@ -371,7 +383,8 @@ def write_pdf(html_path: Path, pdf_path: Path, executable: str | None,
     temporary = pdf_path.with_suffix('.tmp.pdf')
     with pymupdf.open(pdf_path) as pdf:
         metadata = pdf.metadata
-        metadata.update(title=TITLE, author=AUTHOR, subject='Book 1 review copy')
+        metadata.update(title=TITLE, author=AUTHOR,
+                        subject='Book 1 selected chapters' if sample else 'Book 1 review copy')
         pdf.set_metadata(metadata)
         repair_outline(pdf, documents)
         for name, source in [('OFL-NotoSerifTamil.txt', ASSETS / 'OFL-NotoSerifTamil.txt'),
@@ -386,16 +399,20 @@ def main() -> None:
     args_parser.add_argument('--output-dir', type=Path, default=ROOT / 'output/book-1')
     args_parser.add_argument('--browser-executable', help='Optional existing Chromium executable')
     args_parser.add_argument('--no-pdf', action='store_true', help='Build HTML and EPUB without launching Chromium')
+    args_parser.add_argument('--sample', action='store_true', help='Build the selected publisher sample: chapters 1, 5, 8, 21 and 31')
     args = args_parser.parse_args()
     docs = read_documents()
+    if args.sample:
+        docs = select_sample(docs)
     output = args.output_dir.resolve()
     output.mkdir(parents=True, exist_ok=True)
     css = (ASSETS / 'book.css').read_text(encoding='utf-8')
-    html_path = output / 'book-1-review.html'
-    html_path.write_text(html_document(docs, css), encoding='utf-8')
-    write_epub(output / 'book-1-review.epub', docs, css)
+    stem = 'book-1-sample' if args.sample else 'book-1-review'
+    html_path = output / f'{stem}.html'
+    html_path.write_text(html_document(docs, css, args.sample), encoding='utf-8')
+    write_epub(output / f'{stem}.epub', docs, css, args.sample)
     if not args.no_pdf:
-        write_pdf(html_path, output / 'book-1-review.pdf', args.browser_executable, docs)
+        write_pdf(html_path, output / f'{stem}.pdf', args.browser_executable, docs, args.sample)
     print(f'Built {len(docs)} ordered inputs in {output}')
 
 

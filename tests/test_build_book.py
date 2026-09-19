@@ -72,16 +72,29 @@ class MarkdownRenderingTests(unittest.TestCase):
 
 class CurrentEditionTests(unittest.TestCase):
     def test_epub_reading_order_navigation_and_all_local_destinations(self):
-        docs = book.read_documents()
+        self.check_epub(book.read_documents(), sample=False)
+
+    def test_sample_keeps_chapter_numbers_and_links_outside_the_selection(self):
+        docs = book.select_sample(book.read_documents())
+        self.assertEqual([d.number for d in docs], [1, 5, 8, 21, 31])
+        self.assertEqual(book.resolve_link("02-who-counts.md#who-counts", docs[0], docs, "html"),
+                         book.REPOSITORY + "book-1/02-who-counts.md#who-counts")
+        with self.assertRaises(ValueError):
+            book.select_sample(docs[:-1])
+        self.check_epub(docs, sample=True)
+
+    def check_epub(self, docs, sample):
         css = (book.ASSETS / "book.css").read_text()
         with tempfile.TemporaryDirectory() as directory:
             path = Path(directory) / "book.epub"
-            book.write_epub(path, docs, css)
+            book.write_epub(path, docs, css, sample)
             with zipfile.ZipFile(path) as archive:
                 self.assertEqual(archive.infolist()[0].filename, "mimetype")
                 self.assertEqual(archive.infolist()[0].compress_type, zipfile.ZIP_STORED)
                 package = ET.fromstring(archive.read("EPUB/package.opf"))
                 ns = {"p": "http://www.idpf.org/2007/opf", "h": "http://www.w3.org/1999/xhtml"}
+                identifier = package.find("p:metadata/{http://purl.org/dc/elements/1.1/}identifier", ns).text
+                self.assertEqual(identifier.endswith("/sample"), sample)
                 spine = [node.get("idref") for node in package.findall("p:spine/p:itemref", ns)]
                 self.assertEqual(spine, ["cover"] + [f"doc-{d.stem}" for d in docs])
                 for node in package.findall("p:manifest/p:item", ns):

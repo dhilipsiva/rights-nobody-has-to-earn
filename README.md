@@ -56,6 +56,10 @@ contents. To assemble the current manifest as HTML, EPUB and PDF review copies,
 follow the [book's build instructions](book-1/README.md#read-or-assemble-the-book).
 Rendering is separate from the substantive verification below.
 
+The [publisher proposal](submission/README.md) includes the synopsis,
+readership, contents, sample chapters, completion statement and proposed
+editorial partnership under the existing open licences.
+
 ## Contribute
 
 Corrections, objections, evidence and proposed co-authored additions are welcome.
