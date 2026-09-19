@@ -111,26 +111,6 @@ solutions and development history stay outside the book's reading sequence.
 
 ## I. Repair the substantive arguments
 
-### 04. Protect disclosures without an unjustified general prosecution escape
-
-- [ ] Reassess chapter 24's shield against narrower alternatives and implement
-  the most defensible protection within the constitutional framework.
-
-Compare immediate protection against retaliation with independent review of the
-connection between a disclosure and the challenged prosecution. Address who
-decides, interim protection, burdens of proof, delay, duplicates and review of
-the reviewer. Preserve protection for genuine disclosures, including historical
-wrongdoing; neither recall nor a credibility label should automatically erase
-it. Distinguish an unrelated prosecution from retaliation disguised as one.
-
-**Done when:** the genuine, mistaken, deliberately false, repeated, historical
-and reviewer-targeting disclosure cases have explicit outcomes; unrelated
-wrongdoing receives an argued treatment; the Rex sequence is resolved through
-a verified design change, or meets every requirement of the resolve-before-
-defending rule; and both retaliation risk and harm to other affected people
-appear in the argument. Comparing alternatives alone does not establish that
-resolution is impossible or justify closing the issue.
-
 ### 05. Justify the public purpose of contribution and recognition
 
 - [ ] Revise chapters 9, 10 and 26 so the reader can explain why the recognition

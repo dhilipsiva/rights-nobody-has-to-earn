@@ -128,7 +128,7 @@
       "what_changed": "The rule now asks who was exposed, so exposing the person you injured earns nothing.",
       "state": "resolved-for-claim",
       "rerun": "book-1/24-the-shield.pins.nibli",
-      "phrase": "Under an earlier version of this design it worked",
+      "phrase": "the person you expose must be publicly answerable",
       "still_not_established": "That the exposure was true or made in good faith. Absence of a deceit finding protects, and that default is priced rather than removed.",
       "external_or_open": "The exposure surface stays unbounded by design; every proposed bound trades one of three protections."
     },
@@ -203,6 +203,18 @@
       "phrase": "So one duty does not wait",
       "still_not_established": "That anybody notices. No rule reads a duty, so nothing establishes that an advocate exists, was funded, was told, arrived or acted, and the entry that opens the escalation must still be written by somebody who saw.",
       "external_or_open": "The seeing. A rule over supplied records cannot discover a person no record has entered; what changed is that the act nobody performs is now owed by a named office rather than waited for from the person who cannot perform it."
+    },
+    {
+      "id": "shield-as-general-immunity",
+      "chapter": "book-1/24-the-shield.md",
+      "section": "The case the shield stops covering",
+      "what_failed": "The conviction rule read the shield unscoped, so one exposure of one authority blocked every conviction of that person, for anything, without limit and without the exposure ever being examined. That is not a protection against retaliation; it is a general immunity bought with a single write, and the harm it never names falls on whoever the unrelated offence was against.",
+      "what_changed": "The protection is answerable for one named case, on a positive adjudicated finding that this prosecution is unrelated to the disclosure, made by two answerable bodies neither of which the person exposed. The fail-open polarity is unchanged: absent the finding the shield holds, and the finding reaches the case only, leaving the shield standing for every other case and as a fact about the claim.",
+      "state": "resolved-for-claim",
+      "rerun": "book-1/24-the-shield.pins.nibli",
+      "phrase": "the claim stopped covering a case it was never about",
+      "still_not_established": "That the prosecution is just, that the injury happened, that anybody examined anything carefully, or that two bodies agreeing are two bodies who looked. The finding establishes that two answerable bodies with no stake in the disclosure put their names to the question.",
+      "external_or_open": "A person who exposes every answerable body leaves nobody eligible to decide and keeps the shield in every case. That is the chosen direction of failure, because the alternative is an accused body clearing the path to the conviction of its accuser."
     }
   ]
 }

@@ -1,7 +1,9 @@
 # The Shield
 
 If you expose someone who holds power, you cannot be held as a convicted prisoner
-while that exposure stands.
+while that exposure stands — not in any case connected to what you disclosed, and not
+in any other case either, until two answerable bodies you did not expose have said in
+the record that this particular prosecution has nothing to do with it.
 
 That is the shield, and the reason it exists is the oldest problem in accountability.
 The people best placed to expose wrongdoing by the powerful are the people close
@@ -12,13 +14,15 @@ instead.
 
 So the design puts a wall in the way. Expose an authority, and the machinery that
 would imprison you stops working. Not slows — stops. The conviction rule cannot
-complete while your shield holds.
+complete while your shield covers the case, and it covers every case until somebody
+with no stake in your disclosure says otherwise on the record.
 
 This is deliberately a strong instrument, and strong instruments get picked up by the
 wrong hands. The cases that follow are exactly that, in escalating order: a claim
 against somebody with no power, a claim nobody has yet examined, a claim examined and
 caught, and a caught liar starting fresh. One of them shows what the design decides not
-to do, and the last shows where the whole arrangement gives way.
+to do. The last shows what a protection scoped to the claim cannot answer on its own,
+and the section after it is the answer.
 
 ## Don
 
@@ -28,14 +32,14 @@ That sentence should produce a reaction, and the reaction is correct. Pax is Don
 victim. Don is not a whistleblower; Don is a man who assaulted someone and then
 pointed at them and said the word that makes prosecution stop.
 
-Under an earlier version of this design it worked. The rule said: expose someone,
-receive a shield. It did not ask who you exposed. Any defendant could name anyone —
-their accuser, their victim, a stranger — and become unjailable. The strongest
-protection in the society was available to anyone who could type a sentence, and it
-protected them from consequences for the very act they were being prosecuted over.
+Write the shield the obvious way — expose someone, receive a shield — and it works for
+him. A rule that does not ask *who* you exposed lets any defendant name anyone: their
+accuser, their victim, a stranger. The strongest protection in the society would be
+available to whoever could type a sentence, and it would protect them from consequences
+for the very act they were being prosecuted over.
 
-It fails now, and the fix is one condition: **the person you expose must be publicly
-answerable.** Pax is not. Pax was never seated, holds no public office, and is not the
+It fails here, and the condition doing the work is one: **the person you expose must be
+publicly answerable.** Pax is not. Pax was never seated, holds no public office, and is not the
 sort of person the shield exists to let you point at. Don has no shield and Don is a
 prisoner.
 
@@ -169,15 +173,74 @@ any pair of them a route to strip the protection off the whistleblower who expos
 which is the retaliation the shield was built to stop, arriving through the front door
 with paperwork. So the design protects the claim and accepts what Rex does with that.
 
-What it costs is a defendant who can keep going. Each exposure buys a window and each
-window has to be closed separately, one examination at a time.
+What that costs is a defendant who can keep going: each exposure buys its own window,
+and closing one by examination does nothing to the next. The section that follows is
+the other half of the answer, and it closes windows from the other direction — not by
+defeating the claim, but by naming the case the claim was never about.
 
 Notice what every case above has in common. In none of them does anyone decide whether
-the person reaching for the shield deserves protection. Nobody weighs their sincerity. The shield attaches
-or does not attach according to two questions the record answers — is the person you
-exposed answerable, and has your exposure been found deceitful — and everything
-both rest on is written where it can be argued with. Sincerity never enters, which is what stops the shield from
-becoming a matter of whether the people evaluating you find you sympathetic.
+the person reaching for the shield deserves protection. Nobody weighs their sincerity.
+The shield attaches or does not attach according to two questions the record answers —
+is the person you exposed answerable, and has your exposure been found deceitful — and
+everything both rest on is written where it can be argued with. Sincerity never enters,
+which is what stops the shield from becoming a matter of whether the people evaluating
+you find you sympathetic.
+
+## The case the shield stops covering
+
+The shield is scoped twice, and the second scoping is what keeps a protection from
+becoming an immunity.
+
+The first scoping is the claim, and every case above turns on it: each exposure stands
+or falls on its own examination, and a finding against one says nothing about another.
+
+The second is the case. A shield protects against a prosecution, and prosecutions are
+particular — this injury, this court, this cited case. So the protection can be answered
+for one named case, on a positive finding that this prosecution has nothing to do with
+the disclosure. Absent that finding the shield holds, which is the same default the
+whole chapter runs on: nobody loses a protection on nobody's finding, and a disclosure
+that turns out to be mistaken rather than dishonest keeps its shield, because being
+wrong is not the thing the record asks about.
+
+There is somebody in this who has not been mentioned yet, and the second scoping exists
+for them. When a prosecution genuinely has nothing to do with a disclosure, the person
+the offence was against is the one an unanswerable shield leaves with nothing. The first
+scoping cannot see them: it asks only whether this claim has been defeated, and their
+injury is not evidence about that. The design owes them a route that does not require
+attacking the disclosure, and this is it.
+
+Who may make that finding is the whole of the difficulty, and the design answers it with
+a bar rather than with a body. Two answerable bodies must agree, and neither may be one
+this person exposed. The reason is the obvious one: the body with the strongest motive to
+call a retaliatory prosecution unrelated is exactly the body the disclosure named.
+Barring it is what stops the second scoping from quietly undoing the first.
+
+Two things follow from putting the finding on the prosecution's side of the ledger
+rather than the discloser's. The burden runs toward whoever wants the conviction: the
+person who exposed an authority is never asked to establish that their disclosure was
+sincere, connected, or correct, and nothing in this route reads any of those. And delay
+costs the prosecution rather than the person — while no finding stands, the shield does,
+so the incentive to leave the question unanswered belongs to nobody. That is the same
+direction the rest of the chapter runs in, and it is the direction that matters, because
+the party with the power to wait is usually the one that brought the case.
+
+The bar has a cost and the design pays it in the open. Somebody who exposes every
+answerable body leaves nobody eligible to decide, and keeps the shield in every case.
+That is the right direction for this to fail. The alternative is an accused body
+clearing the path to the conviction of its accuser, which is the exact sequence the
+shield exists to interrupt.
+
+Rex is where this lands, and the pins run it. Rex exposed the court and then the review
+body, so neither may decide. Two bodies Rex did not expose find that this prosecution —
+the injury to Sena — is not about either disclosure, and Rex is a prisoner. The shield
+still holds. The record still says Rex's word cannot be relied on. Nothing was taken
+from the claim; the claim stopped covering a case it was never about.
+
+And the finding establishes only itself. It does not establish that the prosecution is
+just, that the injury happened, that anybody examined anything carefully, or that two
+bodies agreeing are two bodies who looked. It establishes that two answerable bodies
+with no stake in the disclosure put their names to the question, which is a price and
+not a proof — the same purchase every attested finding in this design makes.
 
 ## What it costs
 
@@ -188,9 +251,12 @@ lapses — and the later ones compound each other.
 The first is Sly, and it has already been named: a guilty person is free during the
 window, every time.
 
-The second is Rex: the window can be reopened. Closing one costs an examination by the
-review body, and opening the next one costs a sentence. The exchange rate runs the wrong
-way, and nothing in the design changes it.
+The second is Rex, and it is narrower than it looks. The window can be reopened: closing
+one exposure costs an examination and opening the next one costs a sentence, and that
+exchange rate is real. What it does not buy is immunity from prosecutions the
+disclosures were never about: those close per case rather than per exposure, and they
+close without the claim being defeated at all. The residue is the retaliatory
+prosecution itself, which is what the shield is for.
 
 The third compounds with the last chapter. The shield attaches when you expose
 someone *answerable*, and answerability is never revoked. So the set of people whose

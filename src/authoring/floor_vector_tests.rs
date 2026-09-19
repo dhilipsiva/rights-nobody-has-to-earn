@@ -291,7 +291,7 @@ const ACCUSATION: [&str; 6] = ["attack", "cruel", "injure", "deceive", "capture"
 /// This test was written against a hand census that missed `prisoner`, which is
 /// the argument for having it: a census done by reading is a census that can
 /// drop a row.
-const ACCUSATION_READERS: [(&str, &str); 13] = [
+const ACCUSATION_READERS: [(&str, &str); 14] = [
     ("correct", "+injure"),
     ("defend", "~deceive"),
     ("err", "+injure"),
@@ -300,6 +300,16 @@ const ACCUSATION_READERS: [(&str, &str); 13] = [
     ("false", "~deceive,+capture"),
     ("match", "+injure"),
     ("match", "+rotten"),
+    // Two conviction routes read the injury entry, not one. Both sit behind the
+    // same T3 gate — a court judgment, a cited case, a recorded conviction,
+    // twelve independently witnessed observations and an active custody
+    // authorisation — and they differ only in what they ask about the shield:
+    // the first that none is held, the second that two answerable bodies the
+    // person did not expose have found this prosecution unrelated to their
+    // disclosure. An unsigned injury entry is no nearer a conviction for there
+    // being two doors behind the same wall, but the count is the kind of thing
+    // that should never move silently.
+    ("prisoner", "+injure"),
     ("prisoner", "+injure"),
     ("reward", "~deceive,+capture"),
     ("severe", "+attack,+cruel"),

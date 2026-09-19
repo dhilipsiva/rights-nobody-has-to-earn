@@ -150,6 +150,18 @@ Lalo, Don and Ruk are pinned unchanged. *Control:*
 `tests/pins/red-team/counterfactual-severity-without-the-court` strips the
 conjuncts and watches two unsigned entries derive severity again.
 
+**The census counts two conviction routes reading that injury entry, not one,
+since the shield was scoped on 2026-09-19.** Both sit behind the same T3 gate and
+differ only in what they ask about the shield: the first that none is held, the
+second that two answerable bodies the person did not expose have found this
+prosecution unrelated to their disclosure. An unsigned injury entry is no nearer a
+conviction for there being two doors behind the same wall — every conjunct the
+first route requires, the second requires — but the count is recorded here because
+`an_unsigned_accusation_reaches_exactly_the_measured_set` asserts it by
+membership, and a route added without this note would fail that test rather than
+pass quietly. Controlling record:
+`book-1/appendix/decisions/shield-scope-decision.md`.
+
 **It gives no accusation an author, and the entry says so.** The harm relations
 still name the offender and the person harmed and never the writer. What changed
 is that an entry nobody signed can no longer conclude something adverse on its

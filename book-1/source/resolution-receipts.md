@@ -153,6 +153,20 @@ gives disclosure no credit for closure.
 
 **What remains external or open.** The pen, which follows the recall precedent and needs re-seating rather than automatic return.
 
+### shield-as-general-immunity — resolved-for-claim
+
+*Told in* `24-the-shield.md`, "The case the shield stops covering".
+
+**What failed.** The conviction rule read the shield unscoped, so one exposure of one authority blocked every conviction of that person, for anything, without limit and without the exposure ever being examined. That is not a protection against retaliation; it is a general immunity bought with a single write, and the harm it never names falls on whoever the unrelated offence was against.
+
+**What changed.** The protection is answerable for one named case, on a positive adjudicated finding that this prosecution is unrelated to the disclosure, made by two answerable bodies neither of which the person exposed. The fail-open polarity is unchanged: absent the finding the shield holds, and the finding reaches the case only, leaving the shield standing for every other case and as a fact about the claim.
+
+**How the former attack is rerun.** `book-1/24-the-shield.pins.nibli`
+
+**What still does not follow.** That the prosecution is just, that the injury happened, that anybody examined anything carefully, or that two bodies agreeing are two bodies who looked. The finding establishes that two answerable bodies with no stake in the disclosure put their names to the question.
+
+**What remains external or open.** A person who exposes every answerable body leaves nobody eligible to decide and keeps the shield in every case. That is the chosen direction of failure, because the alternative is an accused body clearing the path to the conviction of its accuser.
+
 ## operationally-unresolved
 
 ### unread-duty — operationally-unresolved

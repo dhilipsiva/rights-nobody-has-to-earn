@@ -2834,6 +2834,21 @@
     {
       "id": "24-05",
       "chapter": "book-1/24-the-shield.md",
+      "section": "The case the shield stops covering",
+      "domain": "Justice and coercion",
+      "family": "ARTICLES",
+      "function": "both",
+      "setting": "a prosecution the disclosure was never about",
+      "trajectory": "continuity-remedy",
+      "basis": "book-1/24-the-shield.pins.nibli",
+      "pattern": "coercive",
+      "postures": [
+        "challenges"
+      ]
+    },
+    {
+      "id": "24-06",
+      "chapter": "book-1/24-the-shield.md",
       "section": "What it costs",
       "domain": "Justice and coercion",
       "family": "ARTICLES",

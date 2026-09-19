@@ -2977,6 +2977,52 @@ entry that opens the escalation must still be written by somebody who saw. What
 changed is that the act nobody performs is owed by a named office rather than
 waited for from the person who cannot perform it.
 
+**Item 04 — the shield's scope, landed 2026-09-19.** Controlling record:
+`book-1/appendix/decisions/shield-scope-decision.md`. `defend/1` has exactly one
+reader, the conviction rule's `~defend($offender)`, and it was unscoped: one
+`show` naming any authority blocked every conviction of that person, for any
+offence, indefinitely — a general immunity bought with a single write, against
+an eligible set that only grows because answerability is never revoked.
+
+**A second conviction route, beside the first rather than replacing it.** Same
+T3 conjuncts; `~defend($offender)` becomes the positive case — the person is
+shielded, and two answerable bodies have recorded against this exact case and
+person that the prosecution is unrelated to the disclosure, with
+`~($reviewer = $second)` and `~show($offender, ·)` barring each from being a
+body this person exposed. The ratified fail-open polarity is untouched: absent
+the finding the shield holds. The scope is the case; `defend` still derives and
+still stands for every other case.
+
+**`~show($offender, ·)` is the conjunct that makes the route worth having**,
+because the body with the strongest motive to call a retaliatory prosecution
+unrelated is the body the disclosure named. Measured on the cast: Sly exposed
+the court, so the court is barred and the review body is eligible and alone —
+the pair does not complete and `prisoner(Sly)` stays FALSE. One eligible body
+is not enough.
+
+**The Rex sequence resolves.** Measured: Rex carries the whole custody chain
+(`match(Rex, ConvictionRecorded)`, `correct(Case_Rex, ActivePower)`), so the
+shield was the only thing blocking the conviction. In chapter 24's pins,
+`Appeals` and `Convocation` — the two bodies Rex did not expose — record the
+finding, `prisoner(Rex)` derives, and `defend(Rex)` and `show(Rex, Review)` both
+stay TRUE. Rule count 7107 → 7108; predicates, derived predicates, strata and
+the floor unchanged, and the shipped cast holds no `ShieldConnectionScope`
+observation, so the route ships dormant.
+
+**The arity change was tried first and is recorded as refused, with the reason
+that generalises.** `defend($w, $case)` needs the coverage written as
+`defend($w) & ~unrelated($w, $case) -> defend($w, $case)`, where `$case` appears
+only under negation — an unbound variable ranged over every constant in a 55 MB
+base. The probe ran past ten minutes against a suite whose ordinary case costs
+eleven seconds. **Bind a case variable positively or do not write the rule**;
+the conviction rule already binds `$case`, which is why the second route lives
+there. Reading an ordinary `cite(Court, $case, ·)` as the finding was also
+refused: it is present in every prosecution and would empty the shield.
+
+A person who exposes every answerable body leaves nobody eligible and keeps the
+shield in every case. That is the chosen direction of failure, defended in the
+decision record rather than repaired.
+
 ### Measured Nibli capability boundaries
 
 Each is a dated measurement against a named engine revision, not a timeless

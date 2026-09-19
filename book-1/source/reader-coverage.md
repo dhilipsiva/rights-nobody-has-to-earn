@@ -53,7 +53,7 @@ carried in single figures, which is where the rebalance has most to do.
 | associates | 6 |
 | requests | 8 |
 | receives | 74 |
-| challenges | 25 |
+| challenges | 26 |
 | governs | 33 |
 | is acted upon | 70 |
 
@@ -68,7 +68,7 @@ what matters is the book's shape, not the chapter's.
 | constructive | 92 |
 | private-civic | 28 |
 | democratic | 35 |
-| coercive | 42 |
+| coercive | 43 |
 | records | 32 |
 | argument | 7 |
 
@@ -87,7 +87,7 @@ checked here.
 | Ecology, future generations and commons | 5 | 3 | 6 |
 | Economy, property, work and commons | 19 | 13 | 17 |
 | Emergency and resilience | 3 | 2 | 4 |
-| Justice and coercion | 13 | 11 | 10 |
+| Justice and coercion | 13 | 12 | 11 |
 | Knowledge, communication and culture | 3 | 2 | 3 |
 | Life course, family, care and reproduction | 12 | 4 | 6 |
 | Locality, mobility and external relations | 1 | 2 | 2 |
@@ -290,7 +290,8 @@ checked here.
 | 24-02 | 24-the-shield.md | Sly | Justice and coercion | ARTICLES | protective | a guilty person inside the window | challenges | contested | no | coercive | `book-1/24-the-shield.pins.nibli` |
 | 24-03 | 24-the-shield.md | Kel | Justice and coercion | ARTICLES | protective | a deceitful exposure found out | challenges | works | no | coercive | `book-1/24-the-shield.pins.nibli` |
 | 24-04 | 24-the-shield.md | Rex | Justice and coercion | ARTICLES | protective | the window reopened by a second name | challenges | contested | no | coercive | `book-1/24-the-shield.pins.nibli` |
-| 24-05 | 24-the-shield.md | What it costs | Justice and coercion | ARTICLES | protective | the unbounded exposure surface | challenges | unresolved | yes | coercive | `book-1/24-the-shield.pins.nibli` |
+| 24-05 | 24-the-shield.md | The case the shield stops covering | Justice and coercion | ARTICLES | both | a prosecution the disclosure was never about | challenges | continuity-remedy | yes | coercive | `book-1/24-the-shield.pins.nibli` |
+| 24-06 | 24-the-shield.md | What it costs | Justice and coercion | ARTICLES | protective | the unbounded exposure surface | challenges | unresolved | yes | coercive | `book-1/24-the-shield.pins.nibli` |
 | 25-00 | 25-voiding.md | (preamble) | Records and accountability | ARTICLES | protective | what voiding a person's word means | is acted upon | contested | no | records | `book-1/25-voiding.pins.nibli` |
 | 25-01 | 25-voiding.md | It takes two, from two places | Records and accountability | ARTICLES | protective | two examiners from two bodies | is acted upon | works | yes | records | `book-1/25-voiding.pins.nibli` |
 | 25-02 | 25-voiding.md | The guards that turn around | Records and accountability | ARTICLES | protective | guards pointing back at the examiner | is acted upon | works | no | records | `book-1/25-voiding.pins.nibli` |

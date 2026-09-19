@@ -1368,7 +1368,7 @@
         ],
         "effect": "Adam's conviction conclusion is suppressed without an authenticated release decision.",
         "target": "prisoner",
-        "evidence_ref": "book-1/source/constitution.nibli::~free($offender) -> prisoner($offender)"
+        "evidence_ref": "book-1/source/constitution.nibli::~defend($offender) & ~free($offender) -> prisoner($offender)"
       },
       "withholding_deletion_harm": {
         "operation": "withhold_or_delete",
@@ -1377,7 +1377,7 @@
         ],
         "effect": "The conviction rule can continue or reappear despite a real release.",
         "target": "prisoner",
-        "evidence_ref": "book-1/source/constitution.nibli::~free($offender) -> prisoner($offender)"
+        "evidence_ref": "book-1/source/constitution.nibli::~defend($offender) & ~free($offender) -> prisoner($offender)"
       },
       "current_challenge_route": "No release appeal, correction, or continuity mechanism exists.",
       "required_challenge_route": "Immediate challenge, independent review, and continuity that never makes release depend on a withheld official write.",

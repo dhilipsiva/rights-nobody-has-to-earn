@@ -15,7 +15,7 @@
 # is untouched. Pin a FALSE only where the KB could have said TRUE, and say in
 # the comment what would flip it.
 
-:expect-pins 34
+:expect-pins 41
 
 # DON — "Don injured Pax. Then Don exposed Pax."
 ? injure(Don, Pax).
@@ -153,6 +153,51 @@ public(Pax).
 
 ? prisoner(Don).
 # => FALSE
+
+# ── THE CASE THE SHIELD STOPS COVERING ───────────────────────────────────────
+# The second route, run on the person the chapter's own cost paragraph is
+# about. Rex has everything the conviction needs except the absence of a
+# shield: the injury, the court's judgment, the cited case, the recorded
+# conviction, both witnesses on every scope, and an active custody
+# authorisation.
+? match(Rex, ConvictionRecorded).
+# => TRUE
+
+? correct(Case_Rex, ActivePower).
+# => TRUE
+
+# Rex exposed the court and the review body, so neither may decide whether this
+# prosecution is connected to either disclosure. Two bodies that Rex did not
+# expose do, naming the case and the person.
+observe(Appeals, Case_Rex, ShieldUnrelatedToTheDisclosure, ShieldConnectionScope).
+observe(Convocation, Case_Rex, ShieldUnrelatedToTheDisclosure, ShieldConnectionScope).
+observe(Appeals, Case_Rex, Rex, ShieldSubjectScope).
+observe(Convocation, Case_Rex, Rex, ShieldSubjectScope).
+
+? prisoner(Rex).
+# => TRUE
+
+# And the shield is not what was taken. It still holds, for the claim it was
+# always about; what stopped is its reach into this one case.
+? defend(Rex).
+# => TRUE
+
+? show(Rex, Review).
+# => TRUE
+
+# ONE ELIGIBLE BODY IS NOT ENOUGH, and the reason is the conflict rather than
+# the count. Sly exposed the court, so the court is barred from deciding this;
+# the review body is eligible and alone. The pair does not complete.
+observe(Review, Case_Sly, ShieldUnrelatedToTheDisclosure, ShieldConnectionScope).
+observe(Court, Case_Sly, ShieldUnrelatedToTheDisclosure, ShieldConnectionScope).
+observe(Review, Case_Sly, Sly, ShieldSubjectScope).
+observe(Court, Case_Sly, Sly, ShieldSubjectScope).
+
+? prisoner(Sly).
+# => FALSE
+
+? defend(Sly).
+# => TRUE
 
 # ── THE REACH-BACK, MINUS THE CENTURY. MUST BE LAST: ground facts persist ────
 # "A defendant a century from now can reach back, expose someone nobody
