@@ -127,6 +127,46 @@ That is the boundary. The family makes receipt representable and testable. It ma
 nothing arrive, authenticates no writer, staffs no service, completes no remedy, and
 proves no future non-recurrence.
 
+## Five things that are not each other
+
+This chapter turns on distinctions that ordinary language runs together, and the
+rest of the book is easier to read once they are separated. There are five, and
+each is a different kind of statement.
+
+An **entitlement** says what a person is owed. It reads nothing about them
+except that they are a person, and it is the same sentence for everybody.
+
+A **duty** names who owes it. That is a different claim and a later one: the
+entitlement exists whether or not anybody has been named, and naming a debtor
+is not paying a debt.
+
+A **supplied finding** is something somebody wrote down — a receipt, a witness's
+observation, a court's judgment. The design does not produce these. It reads
+them, and everything it concludes is only as good as they are.
+
+A **derived legal consequence** is what follows by rule from those findings. That
+a person is convicted, that their word is void, that they may not be confined —
+these are conclusions about a person's legal position, reached from records.
+
+**Evidence of actual receipt** is the narrow one this chapter is about: a receipt
+on the person's own side of the record, and an independent witness for that
+person who is not the provider. It is the only shape in this design that means
+*this reached them*.
+
+Now the part that would be dishonest to leave out, because it is the one place
+the design's own standard is not uniform. Shelter for a confined person is
+concluded from the confinement, not from a receipt. No receipt names them, no
+witness attests anything, and the rule asks for neither: a design that takes a
+person's movement owes them a roof, and the conclusion follows from the taking.
+That is a derived legal consequence wearing the same word as an arrival.
+
+It misleads no rule, and the reason is worth knowing rather than assuming.
+Nothing in this design reads a floor actuality except to notice its absence, so
+no conclusion anywhere is drawn from *how* shelter came to be concluded. The
+only thing the two routes can mislead is a reader, which is why they are
+separated here and separated again in the chapter on the prisoner, where the
+pair is run with equivalent evidence on both sides and behaves identically.
+
 ## What that does not fix
 
 Read the last sentence of that section again, because it is not the good news it sounds

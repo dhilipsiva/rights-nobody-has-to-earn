@@ -111,22 +111,6 @@ solutions and development history stay outside the book's reading sequence.
 
 ## I. Repair the substantive arguments
 
-### 06. Apply one consistent standard to debt, evidence and delivery
-
-- [ ] Reconcile chapters 4-7, 18, 27, 29 and 31 with the opening and method.
-
-Distinguish an entitlement, a duty, a supplied finding, a derived legal
-consequence and evidence of actual receipt. In particular, compare the prisoner
-and child using equivalent receipt assumptions. Custody requiring shelter does
-not by itself establish that shelter was provided. Do not join similarly named
-floor constants and predicates or bypass an existing firewall to improve the
-story. Use the existing delivery and record-integrity interfaces where they fit.
-
-**Done when:** comparable supplied evidence produces comparable claims about
-receipt; omissions remain omissions; the pair demonstrates a specific supported
-asymmetry rather than an artifact of unequal fixtures; and no conclusion about
-the real world is supplied solely by a formal obligation.
-
 ### 07. Correct semantic reversals and overbroad formal claims throughout
 
 - [ ] Read all ordered inputs for claims whose wording exceeds their support.

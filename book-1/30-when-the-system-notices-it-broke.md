@@ -286,4 +286,5 @@ facts — because a marker that fires on everybody discriminates nobody. Run it
 against this child in a counterfactual and it does fire, which is the honest
 demonstration: not that the design cannot notice a child who has been given
 nothing, but that it has not been given a record in which noticing would mean
-anything.
+anything. What would supply that record is delivery actually happening and being
+written down, and that is the second book's subject from end to end.

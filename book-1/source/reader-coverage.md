@@ -52,7 +52,7 @@ carried in single figures, which is where the rebalance has most to do.
 | works | 11 |
 | associates | 6 |
 | requests | 8 |
-| receives | 74 |
+| receives | 75 |
 | challenges | 26 |
 | governs | 33 |
 | is acted upon | 70 |
@@ -69,7 +69,7 @@ what matters is the book's shape, not the chapter's.
 | private-civic | 28 |
 | democratic | 35 |
 | coercive | 43 |
-| records | 32 |
+| records | 33 |
 | argument | 7 |
 
 Whether a passage follows its pattern's own arc — seeks, responds,
@@ -91,7 +91,7 @@ checked here.
 | Knowledge, communication and culture | 3 | 2 | 3 |
 | Life course, family, care and reproduction | 12 | 4 | 6 |
 | Locality, mobility and external relations | 1 | 2 | 2 |
-| Material floor | 10 | 20 | 15 |
+| Material floor | 10 | 21 | 17 |
 | Non-human animals | 1 | 1 | 2 |
 | Personhood and equality | 21 | 9 | 10 |
 | Public institutions | 11 | 10 | 12 |
@@ -129,9 +129,10 @@ checked here.
 | 04-03 | 04-what-you-are-owed.md | The child with nobody | Material floor | ARTICLES | protective | the child with nobody: one birth entry and nothing else | receives | works | no | constructive | `book-1/04-what-you-are-owed.pins.nibli` |
 | 05-00 | 05-whether-it-arrived.md | (preamble) | Material floor | DELIVERY-RECEIPT | ordinary | the debt, and the next thing the debt does not contain | receives | works | yes | constructive | `book-1/05-whether-it-arrived.pins.nibli` |
 | 05-01 | 05-whether-it-arrived.md | Owed is not the same as delivered | Material floor | DELIVERY-RECEIPT | ordinary | whether food reached anybody | receives | fails | yes | constructive | `book-1/05-whether-it-arrived.pins.nibli` |
-| 05-02 | 05-whether-it-arrived.md | What that does not fix | Material floor | DELIVERY-RECEIPT | ordinary | shelter that arrives only through conviction | receives | fails | no | constructive | `book-1/05-whether-it-arrived.pins.nibli` |
-| 05-03 | 05-whether-it-arrived.md | The child with nobody | Material floor | DELIVERY-RECEIPT | protective | the child with nobody: one birth entry and nothing else | receives | unresolved | no | constructive | `book-1/05-whether-it-arrived.pins.nibli` |
-| 05-04 | 05-whether-it-arrived.md | What none of this proves | Material floor | DELIVERY-RECEIPT | protective | the boundary of a record that proves no arrival | receives | unresolved | yes | constructive | `book-1/05-whether-it-arrived.pins.nibli` |
+| 05-02 | 05-whether-it-arrived.md | Five things that are not each other | Material floor | DELIVERY-RECEIPT | both | a word that means two different things on two routes | receives | contested | yes | records | `book-1/05-whether-it-arrived.pins.nibli` |
+| 05-03 | 05-whether-it-arrived.md | What that does not fix | Material floor | DELIVERY-RECEIPT | ordinary | shelter that arrives only through conviction | receives | fails | no | constructive | `book-1/05-whether-it-arrived.pins.nibli` |
+| 05-04 | 05-whether-it-arrived.md | The child with nobody | Material floor | DELIVERY-RECEIPT | protective | the child with nobody: one birth entry and nothing else | receives | unresolved | no | constructive | `book-1/05-whether-it-arrived.pins.nibli` |
+| 05-05 | 05-whether-it-arrived.md | What none of this proves | Material floor | DELIVERY-RECEIPT | protective | the boundary of a record that proves no arrival | receives | unresolved | yes | constructive | `book-1/05-whether-it-arrived.pins.nibli` |
 | 06-00 | 06-when-there-is-genuinely-not-enough.md | (preamble) | Material floor | SCARCITY-AND-CONFLICT | ordinary | the sentence that turns a failure into a fact of nature | receives | contested | yes | constructive | `book-1/06-when-there-is-genuinely-not-enough.pins.nibli` |
 | 06-01 | 06-when-there-is-genuinely-not-enough.md | What has to be true before the word may be used | Material floor | SCARCITY-AND-CONFLICT | protective | what a shortage finding has to establish first | receives | contested | no | constructive | `book-1/06-when-there-is-genuinely-not-enough.pins.nibli` |
 | 06-02 | 06-when-there-is-genuinely-not-enough.md | What a finding lets anybody do | Material floor | SCARCITY-AND-CONFLICT | continuity | an allocation bounded by the finding it rejoins | receives | continuity-remedy | no | constructive | `book-1/06-when-there-is-genuinely-not-enough.pins.nibli` |
@@ -310,7 +311,7 @@ checked here.
 | 27-02 | 27-a-prisoner-is-a-person.md | The part nobody predicts | Personhood and equality | ARTICLES | protective | the compile-time refusal of a belief prison | is acted upon | works | no | constructive | `book-1/27-a-prisoner-is-a-person.pins.nibli` |
 | 27-03 | 27-a-prisoner-is-a-person.md | The loop does not take sides | Personhood and equality | ARTICLES | protective | the refusal is structural, not judgement | is acted upon | contested | no | constructive | `book-1/27-a-prisoner-is-a-person.pins.nibli` |
 | 27-04 | 27-a-prisoner-is-a-person.md | What that means | Personhood and equality | ARTICLES | protective | rights that do not thin out | is acted upon | works | no | constructive | `book-1/27-a-prisoner-is-a-person.pins.nibli` |
-| 27-05 | 27-a-prisoner-is-a-person.md | The child with nobody | Material floor | ARTICLES | protective | the child with nobody: one birth entry and nothing else | receives | contested | no | coercive | `book-1/27-a-prisoner-is-a-person.pins.nibli` |
+| 27-05 | 27-a-prisoner-is-a-person.md | The child with nobody | Material floor | ARTICLES | protective | the child with nobody: one birth entry and nothing else | receives | contested | yes | coercive | `book-1/27-a-prisoner-is-a-person.pins.nibli` |
 | 28-00 | 28-where-people-are-put.md | (preamble) | Justice and coercion | PLACEMENT | ordinary | placement without discretion | is acted upon | works | yes | coercive | `book-1/28-where-people-are-put.pins.nibli` |
 | 28-01 | 28-where-people-are-put.md | The farmhouse | Justice and coercion | PLACEMENT | protective | severity and the domestic case | is acted upon | contested | no | coercive | `book-1/28-where-people-are-put.pins.nibli` |
 | 28-02 | 28-where-people-are-put.md | The alarm that did not work | Justice and coercion | PLACEMENT | continuity | a marker added to catch a reopened hole | is acted upon | continuity-remedy | no | coercive | `book-1/28-where-people-are-put.pins.nibli` |

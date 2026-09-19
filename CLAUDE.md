@@ -3062,6 +3062,45 @@ can reach a person who did nothing. The `student-clawback` receipt is repointed;
 its old phrase was "the resolution was a deletion", which is one of the
 repair-narration detector's own trigger forms.
 
+**Arrival is Book 2's subject — author instruction, 2026-09-19.** "Whenever
+there is *arrives* we should talk about book 2." Book 1 settles what is owed,
+who owes it, what evidence establishes that something reached somebody, and what
+follows when it does not; it stops where the question becomes whether anybody
+went. Where a chapter states that a duty is not an arrival, it is naming the
+seam rather than confessing a hole, and it points across it. Apply this at the
+**boundary**, once per chapter where the chapter's limit is a liveness limit —
+not at every occurrence of the word, which would be the repetitive
+throat-clearing the line-edit item exists to remove. Derived chapters say "the
+second book"; only the exempt elements use the title (R2).
+
+**Item 06 — one standard for debt, evidence and delivery, landed 2026-09-19.**
+The book's central comparison read a derived legal consequence as an arrival.
+`dwell` for a confined person is concluded from the confinement — no receipt
+names them, no witness attests anything, and the rule asks for neither — and
+chapter 27 called it "the floor actually arrives" and said the prisoner "has the
+thing", with Part V repeating it. That is a liveness claim resting on a formal
+obligation, which is the one posture the assurance portfolio says may never be
+Derived.
+
+**The repair is the comparison run with equivalent evidence.** Chapter 27's pins
+now give the child a receipt and a witness authorised for that child who is not
+the provider; `dwell(Nell)` and `eats(Nell)` derive identically, and nothing else
+about the child moves. So the asymmetry is a fact about the records, not about
+the people — and the true asymmetry is sharper than the one the book claimed:
+**the design concludes the floor for the person it holds and demands three facts
+from the person it has never touched.** The person nobody has come for carries
+the heavier burden of proof.
+
+**The same word on two routes misleads no rule, and the reason is worth
+keeping.** Nothing reads a floor actuality except to notice its absence, so no
+conclusion anywhere is drawn from *how* shelter came to be concluded. The only
+thing the two routes can mislead is a reader, which is why the repair is prose
+plus the equivalent-evidence pins rather than a rule change. Chapter 5 gains
+"Five things that are not each other" — entitlement, duty, supplied finding,
+derived legal consequence, evidence of actual receipt — and names the custody
+route as the one place the design's own standard is not uniform. Receipt:
+`custody-shelter-read-as-arrival`.
+
 ### Measured Nibli capability boundaries
 
 Each is a dated measurement against a named engine revision, not a timeless

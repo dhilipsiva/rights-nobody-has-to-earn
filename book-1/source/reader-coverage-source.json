@@ -408,6 +408,21 @@
     {
       "id": "05-02",
       "chapter": "book-1/05-whether-it-arrived.md",
+      "section": "Five things that are not each other",
+      "domain": "Material floor",
+      "family": "DELIVERY-RECEIPT",
+      "function": "both",
+      "setting": "a word that means two different things on two routes",
+      "trajectory": "contested",
+      "basis": "book-1/05-whether-it-arrived.pins.nibli",
+      "pattern": "records",
+      "postures": [
+        "receives"
+      ]
+    },
+    {
+      "id": "05-03",
+      "chapter": "book-1/05-whether-it-arrived.md",
       "section": "What that does not fix",
       "domain": "Material floor",
       "family": "DELIVERY-RECEIPT",
@@ -421,7 +436,7 @@
       ]
     },
     {
-      "id": "05-03",
+      "id": "05-04",
       "chapter": "book-1/05-whether-it-arrived.md",
       "section": "The child with nobody",
       "domain": "Material floor",
@@ -436,7 +451,7 @@
       ]
     },
     {
-      "id": "05-04",
+      "id": "05-05",
       "chapter": "book-1/05-whether-it-arrived.md",
       "section": "What none of this proves",
       "domain": "Material floor",

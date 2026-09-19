@@ -274,8 +274,9 @@ before.
 
 What the chapter's own conditions cost this child is worth stating too. A ground
 has to be cited and an audit body owes the child an account of it, and both of
-those are duties rather than arrivals; a person with one entry has nothing on
-the record that could contradict the ground, and nobody to open the contest
-that would land the review duty. The design's answer is not that this cannot
+those are duties rather than arrivals — the difference belongs to the second
+book, which is where anybody actually going is settled. A person with one entry
+has nothing on the record that could contradict the ground, and nobody to open
+the contest that would land the review duty. The design's answer is not that this cannot
 happen. It is that the finding reaches recognition and a recorded loss and
 stops, and that nothing it reaches is anything the child needs to stay alive.

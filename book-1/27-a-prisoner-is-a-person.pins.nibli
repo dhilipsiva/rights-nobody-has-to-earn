@@ -20,7 +20,7 @@
 # is untouched. Pin a FALSE only where the KB could have said TRUE, and say in
 # the comment what would flip it.
 
-:expect-pins 32
+:expect-pins 38
 
 # "Zed injured Ivo. A court judged Zed."
 injure(Zed, Ivo).
@@ -180,3 +180,43 @@ free(Nemo).
 
 ? prisoner(Nell).
 # => FALSE
+
+# ── THE SAME COMPARISON WITH EQUIVALENT EVIDENCE. MUST BE LAST: ground facts
+# persist ─────────────────────────────────────────────────────────────────────
+# Everything above compares two people holding different records, which makes
+# the asymmetry look like a fact about the people. It is a fact about the
+# records, and the way to show that is to supply the child the evidence the
+# design asks of anybody who is not confined.
+#
+# Note what each side actually rests on. Zed's shelter derives from being held:
+# no receipt names Zed, no witness attests anything to Zed, and no rule above
+# asked for either. The child's needs a receipt, an authorised witness for that
+# person, and a witness who is not the provider — three facts, none of which the
+# custody route requires.
+authorized(ChildWitness, DeliveryWitness, Nell).
+receives(Nell, ShelterForNell, ShelterProviderForNell).
+observe(ChildWitness, ShelterForNell, Nell, ShelterScope).
+
+? dwell(Nell).
+# => TRUE
+
+# The same route, the same person, for food.
+receives(Nell, FoodForNell, FoodProviderForNell).
+observe(ChildWitness, FoodForNell, Nell, FoodScope).
+
+? eats(Nell).
+# => TRUE
+
+# And nothing else about the child moved. The receipt is evidence of receipt and
+# is not a finding, a status, or a reason to act on anybody.
+? person(Nell).
+# => TRUE
+
+? prisoner(Nell).
+# => FALSE
+
+? false(Nell).
+# => FALSE
+
+? owe(State, Dwell, Nell).
+# => TRUE

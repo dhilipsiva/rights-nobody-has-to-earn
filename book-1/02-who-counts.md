@@ -124,6 +124,9 @@ do not establish that births are registered, that encounters are recorded, that
 a person who was never entered can be discovered, or that any service is
 reachable by anybody who has standing.
 
-That last gap is the one the first chapter names and this chapter cannot close:
-the routes here are generous about who counts, and entirely silent about who
-notices.
+That last gap is the one the first chapter names, and this chapter closes only
+half of it. The routes here are generous about who counts. Who is obliged to
+notice is settled elsewhere — the chapter on who owes carries a duty to begin
+assistance for every person, without a request — and that is a duty, not
+somebody arriving. Whether anybody went is the second book's subject, and no
+rule in this one can answer it.

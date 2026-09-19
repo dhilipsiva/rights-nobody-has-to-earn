@@ -298,7 +298,24 @@ The floor states what is owed. The arrival family states what evidence can estab
 selected receipt. The obligations family states who must answer an exact finding and
 what legal consequences follow. None can state that the world performed the next act.
 
-The diagnosis has therefore narrowed. This design no longer runs out of a legal
+The diagnosis has therefore narrowed. This design does not run out of a legal
 lifecycle. It runs out of operation and evidence that the lifecycle happened. That is
 not wordplay. The constitutional interfaces are present; actual arrival, action,
 repair, and future non-recurrence remain outside what these rules can make true.
+
+Which is worth saying plainly, once, because the word *arrived* appears in nearly
+every chapter of this book and always at the same edge. Arrival is the second book's
+subject. This one settles what is owed, who owes it, what evidence will establish that
+something reached somebody, and what follows when it does not — and it stops exactly
+where the question becomes whether anybody went. Staffing, funding, capacity,
+schedules, transport, buildings, the people who would do the work and whether there
+are enough of them: none of that is missing from this book by oversight, and none of
+it can be repaired by writing a better rule. It is the other book's whole subject, and
+a design that tried to answer it here would be inventing operations it cannot check.
+
+So read every boundary in this book the same way. Where a chapter says a duty is not
+an arrival, it is not confessing a hole in the reasoning. It is naming the seam
+between what a rule can settle and what only an institution can do, and pointing
+across it.
+
+

@@ -167,6 +167,20 @@ gives disclosure no credit for closure.
 
 **What remains external or open.** A person who exposes every answerable body leaves nobody eligible to decide and keeps the shield in every case. That is the chosen direction of failure, because the alternative is an accused body clearing the path to the conviction of its accuser.
 
+### custody-shelter-read-as-arrival — resolved-for-claim
+
+*Told in* `27-a-prisoner-is-a-person.md`, "The child with nobody".
+
+**What failed.** The book's central comparison read a derived legal consequence as an arrival. Shelter for a confined person is concluded from the confinement — no receipt names them, no witness attests anything, and the rule asks for neither — and the prose called it the floor actually arriving, and called the prisoner the one person who has the thing. That is a liveness claim resting on a formal obligation, which is the one posture the assurance portfolio says may never be derived.
+
+**What changed.** The pair is run with equivalent evidence on both sides: give the child a receipt and a witness authorised for that child who is not the provider, and shelter and food derive identically, with no finding, status or consequence attaching to the child. The prose states the real asymmetry, which is sharper — the design concludes the floor for the person it holds and demands three facts from the person it has never touched.
+
+**How the former attack is rerun.** `book-1/27-a-prisoner-is-a-person.pins.nibli`
+
+**What still does not follow.** That anybody was sheltered or fed, on either side. A receipt with a witness establishes what the record says reached a person; it authenticates neither, and the custody conclusion establishes only that the design owes a roof to somebody it is holding.
+
+**What remains external or open.** The shipped record contains no receipt for anyone, so outside custody the routes stand open and unused.
+
 ## operationally-unresolved
 
 ### unread-duty — operationally-unresolved

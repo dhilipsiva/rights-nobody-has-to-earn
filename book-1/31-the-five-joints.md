@@ -277,9 +277,12 @@ guarantee as a concession wrung from it. But the ordering is editorial and the
 substance is not, and the pair I keep returning to cuts against the flattering
 reading. Run any rule in this book against the person public power has acted
 on and against the person it has not — the prisoner and the child with nobody —
-and it is the prisoner for whom the floor actually arrives. Shelter and a
+and it is the prisoner for whom the floor is concluded at all. Shelter and a
 recorded voice derive through confinement and through nothing else in the
-supplied record. The chapters at the end of this book are the ones where the
+supplied record — and they derive from the holding rather than from any receipt,
+which is the part that should sting. The design asks a person it has never
+touched for a receipt and an independent witness before it will say they were
+sheltered, and asks the person it is holding for nothing at all. The chapters at the end of this book are the ones where the
 design can show its work; the chapters at the front are where it mostly cannot
 yet.
 

@@ -215,14 +215,34 @@ uncomfortable in the direction the book keeps insisting on.
 
 Zed is confined, and shelter and a recorded voice derive for Zed — because the
 design assigns them to a person it is physically holding. The child with nobody
-is confined by no one, and neither derives. Both are owed both. One of them has
-the thing; the other has the entitlement and nothing else, and the difference
-between them is that public power acted on one and has not acted on the other.
+is confined by no one, and neither derives. Both are owed both.
+
+Be exact about what each side of that is, because the obvious reading is wrong
+and the true one is worse. Zed's shelter is not evidence that Zed was sheltered.
+No receipt names Zed, no witness attests anything to Zed, and no rule asked for
+either; the conclusion follows from the fact of being held, because a design
+that takes somebody's movement had better owe them a roof. It is a legal
+consequence of custody. Whether a building exists, whether anybody slept in it,
+whether the place is fit — none of that is in the record, and none of it follows.
+
+Now hold the two against the same standard, which is what the pins at the foot
+of this chapter do. Give the child a receipt for shelter and a witness
+authorised for that child who is not the provider, and shelter derives for the
+child too, on the same terms as for anybody. Food likewise. Nothing else about
+the child moves: no finding, no status, nothing anybody may act on.
+
+So the asymmetry is not that the design does more for the prisoner. It is that
+the design *concludes* the floor for the person it holds and *demands evidence*
+from the person it has not touched — three facts for the child, none for Zed.
+The person nobody has come for carries the heavier burden of proof, which is
+the opposite of what a floor is supposed to do, and it is the plainest statement
+this book can make about where its own machinery sits. The record supplied here
+contains those three facts for nobody, so outside custody the routes stand open
+and unused.
 
 That is the whole argument of this book compressed into one comparison, and it
 cuts the way the prisoner chapter says it does rather than the way a reader
-might expect. The prisoner is not the person the design treats worst. In the
-record supplied with this book the prisoner is the only kind of person for whom
-the floor actually arrives, and a chapter defending the prisoner's personhood
-is also, unavoidably, a demonstration of how little the design has managed for
-everybody else.
+might expect. The prisoner is not the person the design treats worst. A chapter
+defending the prisoner's personhood is also, unavoidably, a demonstration of
+how little the design has managed to conclude for everybody else — and of how
+much more it asks of them before it will conclude anything.
