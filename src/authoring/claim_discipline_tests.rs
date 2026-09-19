@@ -235,3 +235,97 @@ fn nibli_files(dir: &std::path::Path, into: &mut Vec<std::path::PathBuf>) {
         }
     }
 }
+
+/// A boundary may say what it does not establish. It may not say it establishes
+/// the opposite.
+///
+/// "This record does not establish that anybody was paid" and "this record
+/// proves nobody was paid" are different claims, and only the first is true:
+/// the record is silent, and nothing follows from silence. The second is the
+/// closed-world fallacy this design refuses everywhere else — an absent fact
+/// read as a negative finding — and it had reached four chapters' boundary
+/// sections, which are precisely the places written to be scrupulous.
+///
+/// The shape this catches is `proves` followed by a CLAUSE beginning with a
+/// negative. "proves nothing about the service" is a noun phrase and is fine;
+/// "proves nothing was procured" is a negative finding and is not. The same for
+/// "proves no fund exists" against "proves no civil identity".
+#[test]
+fn no_boundary_claims_a_negative_it_cannot_establish() {
+    let context = Context::discover().expect("repository");
+    // `proves nobody|nothing <word>`, where the word is not "about".
+    let clause = Regex::new(r"(?i)\bproves\s+(?:that\s+)?(?:nobody|nothing)\s+(\w+)").unwrap();
+    // `proves no <noun> <copula-or-event-verb>` — the verb is what makes it a clause.
+    let copula = Regex::new(
+        r"(?i)\bproves\s+(?:that\s+)?no\s+\w+\s+(?:was|were|is|are|exists|existed|moved|happened|occurred|arrived|reached)\b",
+    )
+    .unwrap();
+
+    // A sentence that DENIES the proving is not making the claim. "Neither
+    // device proves that nobody judges a person elsewhere" is correct and says
+    // the opposite of "this record proves nobody was paid". The denial is
+    // stripped before matching, on the same principle as the repair detector:
+    // a rule beats a per-chapter allowlist, which would rot.
+    let denies = Regex::new(
+        r"(?i)\b(?:neither\s+\w+\s+proves|does not prove|do not prove|cannot prove|never proves)\b",
+    )
+    .unwrap();
+
+    let offend = |text: &str| -> Option<String> {
+        let owned = denies.replace_all(text, "denies").into_owned();
+        let flat: &str = &owned;
+        for caught in clause.captures_iter(flat) {
+            if !caught[1].eq_ignore_ascii_case("about") {
+                return Some(caught[0].to_owned());
+            }
+        }
+        copula.find(flat).map(|m| m.as_str().to_owned())
+    };
+
+    let mut files: Vec<std::path::PathBuf> = std::fs::read_dir(context.path("book-1"))
+        .expect("book-1")
+        .filter_map(Result::ok)
+        .map(|entry| entry.path())
+        .filter(|path| path.extension().is_some_and(|ext| ext == "md"))
+        .collect();
+    files.sort();
+    assert!(files.len() > 30, "the sweep found only {} inputs", files.len());
+
+    let mut found = Vec::new();
+    for file in &files {
+        let text = std::fs::read_to_string(file).expect("input");
+        let flat = text.split_whitespace().collect::<Vec<_>>().join(" ");
+        if let Some(hit) = offend(&flat) {
+            found.push(format!("{}: {hit}", file.display()));
+        }
+    }
+    assert!(
+        found.is_empty(),
+        "a boundary claims a negative finding where the record is silent. \
+         Absence of evidence is not evidence of absence, and this design says so \
+         everywhere else: {found:#?}"
+    );
+
+    // Sabotage: the exact sentences this was written for must still be caught.
+    for hostile in [
+        "a compensation concluded here proves nobody was paid",
+        "the guarantee route proves no fund exists",
+        "and proves that nothing was procured, delivered, restored or repaired",
+        "A completed accommodation record proves no adjustment was provided",
+    ] {
+        assert!(
+            offend(hostile).is_some(),
+            "the detector stopped catching {hostile:?}"
+        );
+    }
+    // And the legitimate noun-phrase forms must stay allowed.
+    for fine in [
+        "it proves nothing about the service that carried it",
+        "the custody entry alone proves no home",
+        "the temporary encounter handle proves no civil identity",
+        "Neither device proves that nobody judges a person elsewhere",
+        "this record does not prove that anybody was paid",
+    ] {
+        assert!(offend(fine).is_none(), "the detector now rejects {fine:?}");
+    }
+}

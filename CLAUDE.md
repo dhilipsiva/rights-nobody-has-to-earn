@@ -3101,6 +3101,40 @@ derived legal consequence, evidence of actual receipt — and names the custody
 route as the one place the design's own standard is not uniform. Receipt:
 `custody-shelter-read-as-arrival`.
 
+**Item 07 — semantic reversals and overbroad claims, landed 2026-09-19.** Two
+classes, both mechanical, both now guarded.
+
+**Uncertainty read as negation.** Four boundary sections said a record *proves*
+a negative where it is simply silent: "a compensation concluded here proves
+nobody was paid", "the guarantee route proves no fund exists", "a completed
+accommodation record proves no adjustment was provided", "proves that nothing
+was procured, delivered, restored or repaired". Each asserts a positive negative
+finding, which is the closed-world fallacy this design refuses everywhere else
+— and they were in boundary sections, the places written to be scrupulous. The
+distinction is `proves` followed by a **clause** rather than a noun phrase:
+"proves nothing about the service" is fine, "proves nothing was procured" is
+not. `claim_discipline_tests::no_boundary_claims_a_negative_it_cannot_establish`
+catches the clause form across every ordered input, with the four originals as
+sabotage controls. A sentence that DENIES the proving — "Neither device proves
+that nobody judges a person elsewhere" — is correct and is stripped before
+matching, on the repair detector's principle that a rule beats an allowlist.
+
+**A syntax restriction stated as a universal theorem.** Chapter 27 draws the
+firewall's edge exactly: the refusal reaches confinement, and a rule reading a
+floor right's absence into credibility or recognition loads without complaint.
+Chapters 4 and 18 said "punishing", which is the whole width wider. Chapter 4's
+own pins accept `person($x) & ~believe($x) -> false($x)` under
+`:accept-scoped` and watch it load, so the chapter's checks contradicted the
+chapter's prose. Both now say *imprisoned*, and chapter 4 states the edge with
+its own checks as the evidence. **The manuscript's accounts of the firewall now
+agree.**
+
+Swept and clean: "actually" across the derived chapters, every instance naming
+the gap rather than claiming arrival — the one real offender was chapter 27's
+"the floor actually arrives", removed by item 06. The exhaustive sequential read
+for every remaining absolute is items 14 and 15, which read each chapter in
+order; this item took the classes a sweep can find and left a guard behind.
+
 ### Measured Nibli capability boundaries
 
 Each is a dated measurement against a named engine revision, not a timeless

@@ -202,9 +202,9 @@ the absence of any route the child could have been sent down instead.
 
 This chapter establishes no barrier, disadvantage, need, pattern, adjustment,
 measure, hearing, or remedy in the world. A completed accommodation record
-proves no adjustment was provided; a completed measure proves no objective was
-achieved; a proceeding opened on a pattern proves the pattern was attested,
-not that it was true. The record is not a population-statistics system, an
+does not establish that an adjustment was provided; a completed measure does
+not establish that an objective was achieved; a proceeding opened on a pattern
+establishes that the pattern was attested, not that it was true. The record is not a population-statistics system, an
 identity-authentication system, or a proof that any institution is alive.
 Collection and statistical methods, accommodation operations, monitoring,
 enforcement workflows, and empirical evaluation belong to the second book.

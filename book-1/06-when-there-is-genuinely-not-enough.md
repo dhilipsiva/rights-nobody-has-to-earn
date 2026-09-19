@@ -108,8 +108,8 @@ person who went without is still without.
 ## What none of this counts
 
 None of this counts anything. It holds no stock, forecasts no supply, measures
-no shortage, and proves that nothing was procured, delivered, restored or
-repaired. It says what must be true before scarcity may be acted on, and what
+no shortage, and establishes nothing about whether anything was procured,
+delivered, restored or repaired. It says what must be true before scarcity may be acted on, and what
 stays owed to the person who went without.
 
 Evidence collection and assurance, inventories, forecasts, quantities,

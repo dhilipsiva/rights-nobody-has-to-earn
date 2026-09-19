@@ -111,21 +111,6 @@ solutions and development history stay outside the book's reading sequence.
 
 ## I. Repair the substantive arguments
 
-### 07. Correct semantic reversals and overbroad formal claims throughout
-
-- [ ] Read all ordered inputs for claims whose wording exceeds their support.
-
-Start with chapter 9's "proves nobody was paid" and chapter 12's "proves no
-adjustment was provided." Distinguish "does not prove" from "proves not."
-Check uses of cannot, always, never, guarantees, independent, current, complete,
-only and actually. Separate absent facts, explicit negative findings, scoped
-refusals, unknown results, contradiction findings and resource failures. Correct
-claims that a particular syntax restriction establishes a universal moral theorem.
-
-**Done when:** each consequential absolute has its actual scope beside it;
-there are no known uncertainty-to-negation reversals; and the manuscript's own
-accounts of the same relation or protection agree.
-
 ### 08. Check constitutional duties across institutional failure
 
 - [ ] Exercise the existing interfaces across the chapter boundaries most

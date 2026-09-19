@@ -226,10 +226,13 @@ and the child has done nothing, which is the case the floor was written for.
 ## What none of this counts
 
 This chapter establishes no employment, no wage, no payment, no competence, no
-solvency, and no rescue. A certificate concluded here proves nobody can do
-anything; a compensation concluded here proves nobody was paid; a supplement
-concluded here proves no money moved, and the guarantee route proves no fund
-exists. Rates, budgets, actuarial assumptions, wage levels, scheme
+solvency, and no rescue. A certificate concluded here establishes that a record
+was made, not that anybody can do the thing it names. A compensation conclusion
+does not establish that anybody was paid; a supplement conclusion does not
+establish that money moved; the guarantee route does not establish that a fund
+exists. Each says what follows from a record, and none of them says the world
+did anything — which is a different statement from saying the world did
+nothing, and the difference is the one this book is most careful about. Rates, budgets, actuarial assumptions, wage levels, scheme
 administration, certification bodies, examination standards, insolvency
 administration, and every question of adequacy, funding, payment, or arrival
 are outside this record. They belong to the second book. The engine derives

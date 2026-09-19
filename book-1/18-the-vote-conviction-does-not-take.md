@@ -131,9 +131,12 @@ this example. A defective record can still starve the machine of the premise it 
 Now the honest half, and it is the reason this chapter cannot end where the last
 section did.
 
-The floor is protected in a way that is close to absolute. As the chapter on the prisoner shows, a rule
-punishing someone for lacking a floor right cannot be written — the society refuses it
-outright.
+The floor is protected in a way that is close to absolute, and the chapter on the
+prisoner draws the edge exactly: a rule *imprisoning* someone for lacking a floor
+right cannot be written, and the society refuses it outright. A rule reaching the
+same person's credibility or recognition for the same absence is a different shape
+and loads without objection, which is why the protection is close to absolute
+rather than absolute.
 
 **The vote does not have that protection.**
 

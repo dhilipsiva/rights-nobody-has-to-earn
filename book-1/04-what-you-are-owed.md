@@ -85,13 +85,23 @@ What that responsibility consists of — the forms it takes, what cannot be
 contracted away, what voluntary provision does not do, and what follows once
 a finding exists — has its own chapter.
 
-**The debt carries the same protection the floor itself carries.** No law can be
-written that puts a class of people outside the provision and then punishes them
-for being outside it. The manoeuvre that would otherwise be available — declare
-a group not owed, then treat not being owed as the offence — cannot be written,
-in the same way and for the same reason that a law punishing you for not eating
-cannot be written. Nobody extended the protection to the debt. It arrived with
-the naming.
+**The debt carries the same protection the floor itself carries, and the
+protection has an exact edge.** No law can be written that puts a class of
+people outside the provision and then *imprisons* them for being outside it. The
+manoeuvre that would otherwise be available — declare a group not owed, then
+treat not being owed as the offence — cannot be written, in the same way and for
+the same reason that a law imprisoning you for not eating cannot be written.
+Nobody extended the protection to the debt. It arrived with the naming.
+
+Now the edge, because it is narrower than that paragraph on its own suggests and
+the checks beside this chapter are where it shows. What the refusal blocks is
+confinement. A rule reading the absence of a floor right into your credibility,
+or into a loss against your recognition, is a different shape, closes no loop,
+and loads without complaint — the checks here accept exactly those two, watch
+them load, and then discard them, so the limit is executed rather than claimed.
+The chapter on the prisoner argues that boundary in full. It is worth saying
+*imprisoned* rather than *punished* every time, because the difference between
+them is the whole width of what this protection does not cover.
 
 **And the body can be looked at.** Someone who exposes it is protected for
 doing so, on the same terms as anyone who exposes any other authority. It owes,
