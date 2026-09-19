@@ -3135,6 +3135,45 @@ the gap rather than claiming arrival — the one real offender was chapter 27's
 for every remaining absolute is items 14 and 15, which read each chapter in
 order; this item took the classes a sweep can find and left a guard behind.
 
+**Item 08 — duties across institutional failure, landed 2026-09-19.** Two
+findings, one repaired and one made visible.
+
+**The escalation set was accidental, and scarcity was on the wrong side of it.**
+Censused on the source: four families make the alternate escalate to a court —
+`ECOLOGICAL-ANIMAL`, `FAMILY-LIFE-ORDINARY`, `PUBLIC-SAFETY`,
+`SUBSTANTIVE-EQUALITY-ORDINARY` — and the rest stop at securing a remedy. The
+four are the families whose subject can be urgent bodily harm or care, which is
+a principled line, and `SCARCITY-AND-CONFLICT` sat outside it while being the
+family about people going without essentials. Repaired at source:
+`ReviewScarcityRequestAndSecureIndependentRemedy` becomes
+`ReviewScarcityRequestSecureTheMinimumAndEscalateCourtRemedy`, regenerated
+across 45 files. `NON-CARCERAL-JUSTICE` stays outside deliberately — performing
+the unfulfilled review *is* that family's remedy, since the family is the court
+route.
+
+**What happens when the alternate fails too had never been asked.** Every family
+answers a reader who does not act by moving the duty to a separated alternate,
+and nothing had tested the next step.
+`tests/pins/composition/reviewer-and-substitute-both-fail` runs it on a
+certified scarcity nonresponse — a person went without an essential, asked, and
+was not answered. The chain terminates at the alternate, because nothing in this
+design reads a duty and there is no third office; what it terminates in is a
+recorded duty nobody has discharged. **The pins establish what does not happen,
+which is the part that matters**: the failure does not travel to the person — no
+standing, no floor, no liberty, no credibility — and neither office gains
+anything by not acting, no authority over the record, no permission, no way to
+close a request by ignoring it. Public power does not extend itself through
+failure, and the record of the failure outlives both refusals.
+
+Chapter 30 gains "When the office itself is the thing that failed", covering the
+seven named cases — no budget or first responder, an office term expiring
+mid-remedy, the conflicted reviewer and failed substitute, a wrong identity or
+political-home record, documents lost in a move, care at release, scarce
+essentials in a declared emergency — each naming its right-holder, duty-bearer,
+trigger, evidence, limit, failure, interim protection and review route, and each
+closing on the same limit: the design now knows who to name when nobody comes,
+which is a different achievement from somebody coming.
+
 ### Measured Nibli capability boundaries
 
 Each is a dated measurement against a named engine revision, not a timeless

@@ -3,7 +3,7 @@
 
 ? obliged(ScarcityRequestReader, ReviewScarcityFindingAllocationOrShortfall, ScarcityRequestRecord).
 # => TRUE
-? obliged(ScarcityRequestAlternate, ReviewScarcityRequestAndSecureIndependentRemedy, ScarcityRequestRecord).
+? obliged(ScarcityRequestAlternate, ReviewScarcityRequestSecureTheMinimumAndEscalateCourtRemedy, ScarcityRequestRecord).
 # => FALSE
 ? complete(ScarcityRequestRecord, CertifiedScarcityReaderNonresponse, ScarcityRequestResource).
 # => FALSE
@@ -81,7 +81,7 @@ observe(ScarcityRequestReview, ScarcityRequestRecord, IndependentPositiveReaderN
 observe(ScarcityRequestSource, ScarcityRequestRecord, NoSilenceAsApprovalOrAdverseClaimantFact, ScarcityNonresponseLimitScope).
 observe(ScarcityRequestEvidence, ScarcityRequestRecord, NoSilenceAsApprovalOrAdverseClaimantFact, ScarcityNonresponseLimitScope).
 observe(ScarcityRequestReview, ScarcityRequestRecord, NoSilenceAsApprovalOrAdverseClaimantFact, ScarcityNonresponseLimitScope).
-? obliged(ScarcityRequestAlternate, ReviewScarcityRequestAndSecureIndependentRemedy, ScarcityRequestRecord).
+? obliged(ScarcityRequestAlternate, ReviewScarcityRequestSecureTheMinimumAndEscalateCourtRemedy, ScarcityRequestRecord).
 # => TRUE
 ? complete(ScarcityRequestRecord, CertifiedScarcityReaderNonresponse, ScarcityRequestResource).
 # => TRUE

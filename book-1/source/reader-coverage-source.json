@@ -3465,6 +3465,21 @@
     {
       "id": "30-05",
       "chapter": "book-1/30-when-the-system-notices-it-broke.md",
+      "section": "When the office itself is the thing that failed",
+      "domain": "Records and accountability",
+      "family": "OBLIGATIONS",
+      "function": "continuity",
+      "setting": "the office that should act does not act",
+      "trajectory": "fails",
+      "basis": "book-1/30-when-the-system-notices-it-broke.pins.nibli",
+      "pattern": "records",
+      "postures": [
+        "is acted upon"
+      ]
+    },
+    {
+      "id": "30-06",
+      "chapter": "book-1/30-when-the-system-notices-it-broke.md",
       "section": "What it does have",
       "domain": "Records and accountability",
       "family": "OBLIGATIONS",
@@ -3478,7 +3493,7 @@
       ]
     },
     {
-      "id": "30-06",
+      "id": "30-07",
       "chapter": "book-1/30-when-the-system-notices-it-broke.md",
       "section": "The child with nobody",
       "domain": "Records and accountability",

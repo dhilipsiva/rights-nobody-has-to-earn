@@ -1,0 +1,55 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+# The conflicted reader and the failed substitute, run to the end of the chain.
+#
+# Every family in this design answers a reader who does not act by moving the
+# duty to a separated alternate. Nothing had asked what happens when the
+# alternate does not act either, and the honest answer has to be visible rather
+# than assumed: the chain terminates, and what it terminates in is a recorded
+# duty nobody has discharged.
+#
+# The record here is the scarcity family's certified nonresponse — a person went
+# without an essential, asked, and was not answered.
+:expect-pins 9
+
+# The nonresponse is a positive finding, not an inference from silence. It
+# completes, and it moves the duty.
+? complete(ScarcityCaseRecord, CertifiedScarcityReaderNonresponse, ScarcityCaseResource).
+# => TRUE
+
+? obliged(ScarcityCaseAlternate, ReviewScarcityRequestSecureTheMinimumAndEscalateCourtRemedy, ScarcityCaseTarget).
+# => TRUE
+
+# THE QUESTION NOBODY HAD ASKED. Nothing in this design reads a duty, so the
+# alternate's inaction cannot be detected by any rule, and there is no third
+# office the duty moves to. The chain is two deep and then it stops.
+#
+# What does NOT happen is the thing that would be worse. The failure does not
+# travel to the person: it takes no standing, no floor, no liberty, no
+# credibility, and it creates no new authority for anybody.
+? person(ScarcityCaseTarget).
+# => FALSE
+
+? prisoner(ScarcityCaseTarget).
+# => FALSE
+
+? false(ScarcityCaseTarget).
+# => FALSE
+
+# And the failure creates no power. A reader who does not read, and an alternate
+# who does not act, acquire nothing by not acting — no authority over the
+# record, no permission, and no ability to close the request by ignoring it.
+? authority(ScarcityCaseReader, AdministerPhysicalScarcity, ScarcityCaseRecord).
+# => FALSE
+
+? authority(ScarcityCaseAlternate, AdministerPhysicalScarcity, ScarcityCaseRecord).
+# => FALSE
+
+# The record of the failure survives the failure. It is what a court would be
+# escalated to, and it is still here after both offices have done nothing.
+? complete(ScarcityCaseRecord, CertifiedScarcityReaderNonresponse, ScarcityCaseResource).
+# => TRUE
+
+# Public power does not extend itself through failure — the request is still
+# unanswered and nothing about the scarcity finding has been renewed by it.
+? complete(ScarcityCaseRecord, ReviewedPhysicalScarcityFinding, ScarcityCaseResource).
+# => FALSE

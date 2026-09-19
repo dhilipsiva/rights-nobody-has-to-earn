@@ -203,6 +203,82 @@ this chapter has already been honest about what determinations are worth. The
 design can now say that a finding was wrong and that somebody owes a correction.
 It still cannot say that the correction was made.
 
+## When the office itself is the thing that failed
+
+Everything above assumes the machinery is there to fail in the ordinary way — a
+marker that misfires, a finding that turns out wrong. This section is about the
+harder case: the office that should act does not exist, does not act, or cannot
+lawfully act, and the question is whether anything is still owed and who owes it.
+
+**No budget, or no first responder.** The right-holder is everyone within reach;
+the duty-bearer stays the treasury function, continuing the last lawful
+authority for an enumerated continuity set only. The trigger is the deadlock
+itself; the evidence is the enumeration; the limit is that deadlock authorises
+no new programme and no permanent spending power. The failure is recorded as
+failure rather than renamed a smaller entitlement. Interim protection is that
+the floor and essential services may not be suspended by a budget, and review is
+expedited court review with independent audit.
+
+**An office term expiring mid-remedy.** The remedy is owed to the person who
+holds it; the bearer is whoever currently holds the office, and when independently
+supplied time evidence establishes the deadline, ordinary caretaker authority
+ends and the electoral body must call a fresh election. The limit is the one
+worth stating twice: missing or disputed time evidence cannot preserve ordinary
+incumbent power. Nothing about the expiry cancels the remedy, and an outgoing
+holder's refusal to leave does not extend the mandate.
+
+**A conflicted reviewer, and a substitute who also fails.** This one the pins run
+end to end, because it is the case every family's design implies and none had
+been asked. The reader who does not act moves the duty to a separated alternate;
+if the alternate does not act either, the chain terminates, because nothing in
+this design reads a duty and there is no third office. What terminates it is a
+recorded duty nobody has discharged — and the pins establish what does *not*
+happen, which is the part that matters. The failure does not travel to the
+person: no standing, no floor, no liberty, no credibility. And neither office
+gains anything by not acting — no authority over the record, no permission, no
+ability to close a request by ignoring it. Public power does not extend itself
+through failure, and the record of the failure outlives both refusals.
+
+**An identity or political-home record that is wrong.** The subject holds the
+right; the holder of the record owes accuracy and correction. The trigger is a
+positive independently reviewed defect, never an allegation and never an
+absence; the limit is that only the exact affected reliance is withdrawn. During
+a dispute the last voluntary uncontested home stands, so the error cannot move
+somebody's political home by itself, and confinement supplies no new one. The
+review route is the subject's own challenge, with the alternate behind it.
+
+**Documents lost in a move.** The right-holder is the person who lost them, and
+the answer is structural rather than procedural: no floor, no hearing, no
+assistance and no political membership is conditioned on documents in the first
+place, so there is nothing for their loss to switch off. A first-time resident
+with no earlier home has a positive provisional route through accessible
+evidence, an attested cross-jurisdiction omission record and independent review.
+Silence and a bare claim do not create that result, which is the limit.
+
+**Care at the moment of release.** The person released holds it; the operator
+owes housing, care, documents, education, work access and social participation
+continuing after release, with no debt, labour or obedience test. Release review
+must address continuing necessity and the current lawful end, and may not renew
+custody or delay a lawful release. The failure mode this forecloses is the one
+most systems have: a sentence that ends while its consequences do not.
+
+**Scarce essentials in a declared emergency.** A declaration creates no new
+power here. Rationing is an instance of the physical-scarcity contract, so the
+forbidden priority keys stay forbidden, every minimum is preserved wherever
+usable supply permits, and every shortfall is recorded as failure rather than
+redefined as the minimum. The named population includes everyone within
+jurisdiction or effective control, so arrivals cannot be defined out of the
+floor. The alternate who must act on an unanswered scarcity request carries the
+same escalation to a court that the care and protective families carry.
+
+And one limit across all seven, stated rather than left to be noticed. Each of
+these assigns an owner, a trigger, evidence, a limit, an interim protection and
+a route. None of them establishes that the owner exists, is funded, is staffed,
+or did anything. Whether the responder comes, whether the court sits, whether
+the alternate reads — those are the second book's subject, and the honest
+statement of this section is that the design now knows who to name when nobody
+comes, which is a different achievement from somebody coming.
+
 ## What it does have
 
 That is a hard finish for a book of derived chapters, so it is worth being exact about

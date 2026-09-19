@@ -109,28 +109,6 @@ unresolved defect or blocker. Only the first three can close the relevant issue.
 Reader-facing prose states present rules and justified limits; the attempted
 solutions and development history stay outside the book's reading sequence.
 
-## I. Repair the substantive arguments
-
-### 08. Check constitutional duties across institutional failure
-
-- [ ] Exercise the existing interfaces across the chapter boundaries most
-  likely to conceal an unassigned duty or an incompatible consequence.
-
-Use concrete cases: no budget or functioning first responder; caretaker or
-office term expiry during a remedy; a conflicted reviewer and failed substitute;
-incorrect identity or political-home records; lost documents during migration;
-care continuity at release; and scarce essentials during an emergency. Reuse
-existing coverage and scenario records. Fix constitutional ownership, authority,
-continuity and challenge gaps; collect staffing and feasibility questions in
-Book 2 without attempting to solve them here.
-
-**Done when:** each case identifies the right-holder, current duty-bearer,
-trigger, evidence, limit, failure, interim protection and review route; public
-power does not extend itself through failure; and constitutional gaps are fixed
-or meet the resolve-before-defending standard. Classification or disclosure
-alone does not close a gap. Operational handoffs must be genuine operational
-questions, and an unfulfilled duty must not be described as a performed action.
-
 ## II. Strengthen evidence and justification
 
 ### 09. Make consequential empirical claims traceable and supportable

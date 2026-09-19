@@ -409,7 +409,7 @@
         ]
       ],
       "heads": [
-        "obliged($alternate, ReviewScarcityRequestAndSecureIndependentRemedy, $target)"
+        "obliged($alternate, ReviewScarcityRequestSecureTheMinimumAndEscalateCourtRemedy, $target)"
       ],
       "extra": [
         "~($source = $reader)",

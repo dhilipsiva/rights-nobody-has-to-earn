@@ -55,7 +55,7 @@ carried in single figures, which is where the rebalance has most to do.
 | receives | 75 |
 | challenges | 26 |
 | governs | 33 |
-| is acted upon | 70 |
+| is acted upon | 71 |
 
 ## Chapter patterns
 
@@ -69,7 +69,7 @@ what matters is the book's shape, not the chapter's.
 | private-civic | 28 |
 | democratic | 35 |
 | coercive | 43 |
-| records | 33 |
+| records | 34 |
 | argument | 7 |
 
 Whether a passage follows its pattern's own arc — seeks, responds,
@@ -96,7 +96,7 @@ checked here.
 | Personhood and equality | 21 | 9 | 10 |
 | Public institutions | 11 | 10 | 12 |
 | Public safety, policing and use of force | 5 | 3 | 8 |
-| Records and accountability | 13 | 17 | 18 |
+| Records and accountability | 13 | 18 | 19 |
 
 ## Every passage
 
@@ -332,8 +332,9 @@ checked here.
 | 30-02 | 30-when-the-system-notices-it-broke.md | The one that fired on the wrong people | Records and accountability | PLACEMENT | continuity | an alarm that fired on the wrong people | is acted upon | continuity-remedy | no | records | `book-1/30-when-the-system-notices-it-broke.pins.nibli` |
 | 30-03 | 30-when-the-system-notices-it-broke.md | And then a duty, which no longer has to be the end | Records and accountability | OBLIGATIONS | continuity | a breach that now creates a duty | requests | continuity-remedy | yes | records | `book-1/30-when-the-system-notices-it-broke.pins.nibli` |
 | 30-04 | 30-when-the-system-notices-it-broke.md | When the finding itself turns out to be wrong | Knowledge, communication and culture | KNOWLEDGE-AND-FREE-FIELD | continuity | a reviewed restriction found defective | is acted upon, challenges | continuity-remedy | no | private-civic | `book-1/30-when-the-system-notices-it-broke.pins.nibli` |
-| 30-05 | 30-when-the-system-notices-it-broke.md | What it does have | Records and accountability | OBLIGATIONS | protective | vocabulary for its own violation | requests | unresolved | yes | records | `book-1/30-when-the-system-notices-it-broke.pins.nibli` |
-| 30-06 | 30-when-the-system-notices-it-broke.md | The child with nobody | Records and accountability | ARTICLES | protective | the child with nobody: one birth entry and nothing else | receives | unresolved | no | records | `book-1/30-when-the-system-notices-it-broke.pins.nibli` |
+| 30-05 | 30-when-the-system-notices-it-broke.md | When the office itself is the thing that failed | Records and accountability | OBLIGATIONS | continuity | the office that should act does not act | is acted upon | fails | yes | records | `book-1/30-when-the-system-notices-it-broke.pins.nibli` |
+| 30-06 | 30-when-the-system-notices-it-broke.md | What it does have | Records and accountability | OBLIGATIONS | protective | vocabulary for its own violation | requests | unresolved | yes | records | `book-1/30-when-the-system-notices-it-broke.pins.nibli` |
+| 30-07 | 30-when-the-system-notices-it-broke.md | The child with nobody | Records and accountability | ARTICLES | protective | the child with nobody: one birth entry and nothing else | receives | unresolved | no | records | `book-1/30-when-the-system-notices-it-broke.pins.nibli` |
 | 31-00 | 31-the-five-joints.md | (preamble) | Personhood and equality | exempt | argument | the author speaking, unchecked by the machine | chooses | unresolved | yes | argument | `exempt-element` |
 | 31-01 | 31-the-five-joints.md | Valuation | Economy, property, work and commons | exempt | argument | Owen's New Harmony and the valuation joint | chooses | contested | yes | argument | `exempt-element` |
 | 31-02 | 31-the-five-joints.md | Rotation | Economy, property, work and commons | exempt | argument | the kibbutzim and the rotation joint | works | contested | no | argument | `exempt-element` |
