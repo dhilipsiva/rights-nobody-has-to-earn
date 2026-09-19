@@ -806,15 +806,15 @@
     },
     {
       "id": "bharati-yoga-siddhi",
-      "claim": "The poem behind the manifesto's structure and book.md's appendix: Yoga Siddhi (Varam Kettal), stanzas 4–5.",
+      "claim": "Bharati's Varam Kettal, stanza 4, supplies Book 1's single unnumbered epigraph; stanzas 4–5 are also preserved in the legacy manuscript.",
       "value": null,
       "units": null,
-      "source": "Subramania Bharati, Yoga Siddhi [யோக சித்தி — வரங் கேட்டல்], in Thothirap Padalgal; Project Madurai, https://www.projectmadurai.org/pm_etexts/utf8/pmuni0012_02.html",
-      "retrieved": "2026-07",
+      "source": "Subramania Bharati, Varam Kettal [வரங் கேட்டல்], headed Yoga Sakthi [யோக சக்தி] in Thothirap Padalgal; Project Madurai, https://www.projectmadurai.org/pm_etexts/utf8/pmuni0012_02.html",
+      "retrieved": "2026-09-19",
       "method": "reference",
       "fetch": null,
       "book": "book-1",
-      "notes": "Attribution confirmed 2026-08-02 (commit 203fa43). The book-1 epigraph decision is author-gated and open."
+      "notes": "Fourth stanza and surrounding address to Shakti checked against the linked Tamil transcription on 2026-09-19. Reader attribution uses Varam Kettal; the stable registry id retains the Yoga Siddhi title used by the legacy manuscript. The exact plainer English rendering is session-drafted, author-approved under delegated approval (2026-09-13), recorded in narrative-register-decision.md, revision item 13. Tamil wording is retained; the poem does not determine the chapter structure."
     },
     {
       "id": "vdem-2026-democracy-happiness-partial",

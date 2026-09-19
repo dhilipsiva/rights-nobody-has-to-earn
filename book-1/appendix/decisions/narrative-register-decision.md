@@ -3,13 +3,58 @@
 # Book 1 Narrative Register Decision
 
 > **Status: author-ratified on 2026-08-08; amended through 2026-09-19.**
-> The dated ruling immediately below governs the current Part V passage and
-> its treatment of criticism. The register, trace, location and evidence rules
+> The dated rulings below govern the current opening, epigraph and Part V
+> passage and its treatment of criticism. The register, trace, location and evidence rules
 > remain binding. Section 15's separate approval pauses are superseded by the
 > author's standing delegated approval of 2026-09-13. Earlier dispositions,
 > including `OL-15-v1` in section 7a, remain visible as history.
 
-## Current ruling — 2026-09-19, revision item 11
+## Current opening and epigraph — 2026-09-19, revision item 13
+
+The exact canonical `book-1/00-opening-note.md` and `book-1/epigraph.md` are
+`session-drafted, author-approved under delegated approval (2026-09-13)`.
+The opening leads with the constitutional question, the intended reader and
+the child/prisoner test, then offers a direct link to chapter 1. Contents,
+terms, roles, named cases, subjects and diagrams remain optional reference
+sections inside the existing opening channel. No appendix becomes a new
+reader argument. Editorial order remains engines before breaks, with the
+general-reader argument complete at Part V and the method optional.
+
+The child's structural test, named universal-standing instance, methodological
+claim as argument, affect warning and title remain. No absence of a record
+becomes a finding of actual incapacity, deprivation or inner experience. The
+opening does not repeat the poem as an argument, claim an operated society,
+or treat detection of a defect as its resolution. It describes the present
+edition without development history.
+
+The epigraph retains the exact Tamil wording of the carried fourth stanza,
+with line breaks made explicit. The source is Project Madurai's transcription,
+checked 2026-09-19:
+<https://www.projectmadurai.org/pm_etexts/utf8/pmuni0012_02.html>.
+It heads the poem `யோக சக்தி` and `வரங் கேட்டல்`. The reader attribution
+therefore uses the unambiguous *Varam Kettal* (*Asking for Boons*); the registry's
+stable `bharati-yoga-siddhi` identifier remains. The speaker's singular challenge,
+daily food, petty talk, sorrow, causing others to suffer, ageing and death all
+remain. The text is not reduced to a statement against earning a meal.
+
+This exact English rendering replaces the forced-rhyme version under the
+standing delegated approval; the 2026-08-02 one-epigraph ruling otherwise stands:
+
+> Seeking food and eating day by day,\
+> telling so many petty tales,\
+> with mind worn down, struggling in sorrow,\
+> doing so much that makes others suffer,\
+> growing grey, reaching old age,\
+> then dying, prey to cruel Death—\
+> like so many foolish people,\
+> did you think I too would fall?
+
+Historical translations remain in Git and the preserved legacy manuscript.
+This is an editorial rendering checked against the Tamil, not an independent
+scholarly certification. The attribution identifies it as a rendering for the
+book rather than a historical translation supplied by Bharati.
+
+## Current Part V ruling — 2026-09-19, revision item 11
 
 The exact rewritten `book-1/31-the-five-joints.md` is
 `session-drafted, author-approved under delegated approval (2026-09-13)`.

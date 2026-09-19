@@ -3436,6 +3436,63 @@ scope remains technical exposition in the existing optional, unnumbered
 channel. No source or appendix material becomes an additional argument
 channel.
 
+**Item 13 — opening promise and epigraph, landed 2026-09-19.** The
+exact canonical opening and epigraph are `session-drafted, author-approved
+under delegated approval (2026-09-13)`. The current presentation and exact
+translation are recorded in `narrative-register-decision.md`. The opening
+states the constitutional question, intended reader, proposal, structural
+child test and paired prisoner test before sending the reader to chapter 1.
+It preserves the universal-standing example, methodological claim as argument,
+affect warning, title and distinction between a record, a consequence and
+outside delivery. It promises no operation or justification by formal logic.
+
+The first chapter link follows 616 words instead of 2,497. The complete
+opening, including optional references, is 3,060 words instead of 7,349.
+Contents, glossary, roles, cases, subject index and prose-equivalent diagrams
+remain in that same exempt channel, accessible from a linked map. No argument
+moves to an appendix or a new chapter. The complete manifest arc, chapter
+openings, section purposes and endings were compared with the new contents:
+provision and ordinary life lead into institutions, coercion and repair, then
+the five arguments and optional method. The order is explicitly editorial,
+engines before breaks. Subject routes for records, emergencies, mobility and
+private life now name their owning chapters. The opening discards its own
+development history, unsupported first-reader response, and detection-as-success
+defence. The later chapter-wide developmental and line edits remain separate
+open items.
+
+The epigraph preserves the carried Tamil wording and supplies a plainer
+English rendering with explicit verse breaks. It retains food, petty talk,
+suffering inflicted and endured, ageing, death and the speaker's closing
+challenge; it does not recast the whole poem as an argument against earning a
+meal. Project Madurai's primary transcription was read with the surrounding
+stanzas on 2026-09-19. Its heading is Yoga Sakthi / Varam Kettal, so the
+reader attribution uses Varam Kettal (Asking for Boons), stanza 4. The existing
+`bharati-yoga-siddhi` registry entry retains its identifier and records the
+source title and canonical translation status. Historical versions remain in
+Git and the legacy manuscript. This is an editorial rendering, not a claim
+of independent scholarly review.
+
+Seventeen locator occurrences in the existing full-society ledger follow
+the retained opening material; all other JSON values are unchanged. Existing
+reference tests pass (six, 1.35s), as do claim-discipline tests (five, 1.17s),
+the child-section membership check and the registry check (75 claims).
+Twelve opening anchor destinations resolve. A comparison confirms that the
+Tamil words are unchanged; the decision quotes the exact canonical English.
+The focused chapter 1 execution passes all 58 pins in 10.66s. Initial
+`git diff --check` rejected Markdown's two-space verse breaks; CommonMark
+backslash breaks preserve the lines and pass the check. A CommonMark render
+confirms fourteen hard breaks across the two eight-line stanzas; this checks
+markup, not assembled page layout. The final reference check also passes
+(six tests, 1.53s). The full verifier passes 87,372 pins across 15,996 cases
+with complete contradiction checks and no findings in 923.51s (15m 24s).
+Nine existing known-defect pins still reproduce; none is claimed repaired by
+this prose edit. The five-minute performance target is not met. The source,
+suite inventory and substantive pins are unchanged.
+
+Across ordered inputs, including the epigraph, 73,428 words are derived and
+12,153 are other prose: 85,581 total, approximately 85.8% derived. The three
+exempt channels, unnumbered poem and method, and Book 2 boundary remain.
+
 ### Measured Nibli capability boundaries
 
 Each is a dated measurement against a named engine revision, not a timeless
@@ -4556,7 +4613,13 @@ Note the manifesto's heading convention differs deliberately from the book's: it
   No route proves operation or actual-world arrival.
 
 - **book-1 opens with one epigraph, and the poem's full text lives in git**, ruled
-  2026-08-02. `book-1/epigraph.md` (unnumbered, so the chapter gates do not sweep it)
+  2026-08-02. **Translation and attribution amended 2026-09-19, item 13:** the
+  current exact rendering is recorded in `narrative-register-decision.md`
+  under the 2026-09-13 delegated approval. It replaces the forced-rhyme version
+  described below; the primary source's Varam Kettal subtitle supplies the
+  reader attribution. The one-epigraph and no-structural-use limits stand.
+  The remaining paragraph records the historical version.
+  `book-1/epigraph.md` (unnumbered, so the chapter gates do not sweep it)
   carries stanza 4 of Bharati's *Yoga Siddhi* with the author's own translation ported
   verbatim from `book.md`'s appendix — the stanza whose subject, the daily search for a
   meal, is the condition the floor abolishes, closing on "Did you think I, too, would

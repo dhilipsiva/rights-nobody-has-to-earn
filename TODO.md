@@ -111,23 +111,6 @@ solutions and development history stay outside the book's reading sequence.
 
 ## III. Make the book work as a book
 
-### 13. Give the opening a clear promise and a short route into chapter 1
-
-- [ ] Edit the opening note and epigraph, then review the complete reading arc
-  against `book-1/contents.json`.
-
-State the central question, intended reader, nature of the proposal and how the
-child/prisoner comparison will test it. Give essential terms when needed; make
-reference material easy to skip and return to within the permitted structure.
-Do not add a new exempt chapter or make the carried appendix the sole support
-for a claim. Keep engines before breaks and the balance of provision, ordinary
-freedom, democratic choice, coercion and repair. Improve the epigraph's clarity
-without inventing authorial experience or sacrificing the source's meaning.
-
-**Done when:** the reader can reach the first substantive case without reading
-a manual; the opening's promise matches the finished book; and the epigraph
-and closing argument support that promise without redundant explanation.
-
 ### 14. Complete a developmental edit of every numbered chapter
 
 - [ ] Read and revise chapters 1-31 in sequence after items 01-13, checking
