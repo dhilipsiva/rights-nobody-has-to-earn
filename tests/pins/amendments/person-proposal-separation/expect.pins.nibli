@@ -3,7 +3,7 @@
 ? person(Jala).
 # => TRUE
 ? reward(Jala).
-# => TRUE
+# => FALSE
 ? false(Jala).
 # => FALSE
 ? lose(Points, Jala).

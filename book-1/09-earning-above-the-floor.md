@@ -57,7 +57,7 @@ certify Ansel and attests welding in the certification scope. The certificate
 derives although Ansel has no personhood entry. Brix's attempt to certify Brix
 does not. Wrong scope or missing authority also prevents the conclusion.
 
-No rule reads the certificate into standing, the floor or recognition. Nor
+No rule reads the certificate into standing or the floor. Nor
 does its derivation establish that Ansel can weld: the model checks the supplied
 attestation, not Ansel's practical ability. The certificate is available without making a
 qualification a condition of basic rights.
@@ -76,9 +76,9 @@ Dunya an incentive while Steward attests a metric; no incentive derives. This
 tests a mismatch between records. It does not show that targets cannot be
 gamed or that an attester's matching statement is true.
 
-Compensation is separate from recognition, standing, the floor, the vote and
-liberty. A certificate or wage does not pass to a child. A voiding or recorded
-loss does not by itself remove compensation.
+Compensation is separate from standing, the floor, the vote and liberty. A
+certificate or wage does not pass to a child. A personal credibility finding
+does not by itself remove compensation.
 
 The fraud case is specific to the attested basis. A Court finding of Coll's
 compensation fraud on the labour basis stops the wage conclusion in this case
@@ -101,9 +101,9 @@ alone suffices. The carrier cannot supply the adjudication of its own liability.
 A Court finding of contribution fraud for that person and scheme blocks the
 supplement; the carrier's accusation or a finding about another scheme does not.
 
-A contribution history is a different thing from recognition. Its permitted
-purpose is the supplement. It cannot determine standing, the floor, the vote
-or liberty, and recognition cannot substitute for it. A person without a
+A contribution history has a limited purpose: the supplement. It cannot
+determine standing, the floor, the vote or liberty, and a general judgment of
+someone's contribution cannot substitute for it. A person without a
 contribution history keeps the floor in full.
 
 This separation depends in part on a check of the constitution's text. The

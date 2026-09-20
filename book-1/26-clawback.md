@@ -1,103 +1,94 @@
-# Clawback
+# The Limits of a Finding
 
-When someone's credibility is voided, their recognition stops following from
-the record. Bela's teaching remains recorded, but the void prevents it from
-producing recognition. A recognition-loss conclusion follows beside it.
+Bela's completed credibility case remains effective. Bela's teaching of Cira
+also remains recorded. The finding does not erase the teaching, confer a
+general judgment of worth or create a recognition loss. The constitution has
+no personal recognition status to withdraw.
 
-The loss is not a fine, wage deduction, debt, property or pension loss,
-insurance decision, withdrawal of authority or reduction of the floor. No rule
-reads this recognition loss into another result. The void itself closes the
-recognition routes; the loss records that consequence without measuring it.
+The finding has a specific effect on power: Bela cannot qualify a new adverse
+finding against somebody else. A finding of deceit about a disclosure also
+reaches the shield for that particular disclosure. Neither consequence is a
+fine, a wage deduction or a judgment about every other act of Bela's life.
 
-There is no balance to debit and no proportion to calculate. A void blocks
-recognition through teaching, employment or examination, including contributions
-unrelated to the finding. The rule withholds recognition from the person as a
-whole; it does not establish that every contribution was fraudulent.
+## A claim can be corrected without condemning every contribution
 
-The loss word is conclusion-only. A direct assertion is refused even if an
-entry tries to make that exact word writable, and the test covers another
-arity as well. A report of an outside material loss needs its own representation;
-it cannot borrow this conclusion to bypass the rule producing it.
+The pins add an entry recording Bela's unrelated care. They also supply a
+wage promise from Foundry, an independent authorised attestation on the labour
+basis, and an independently supported illness claim under Ledgerhouse's
+contributory scheme. The care entry remains; the wage and supplement derive.
+Bela's general credibility finding decides none of them.
 
-## What it cannot reach
+Compensation has its own fraud rule. A Court finding on another basis leaves
+the wage conclusion intact. A finding on its attested labour basis stops that
+conclusion and produces a restitution conclusion from Bela to Foundry. The
+illness supplement still derives. A dispute about that supplement would need
+the person and scheme identified by its own rules.
 
-Bela remains a person, retains free movement and the ballot, and is owed the
-floor. No prisoner conclusion follows for Bela. The recognition loss supplies
-no rule for subtracting any of those rights.
+This is a limit on what each finding reaches. The model takes the supplied
+Court finding as a premise; it does not investigate the employment, calculate
+a sum or establish that money changed hands. A false care entry remains a
+false account even though it confers no badge. Any compensation, service or
+authority claimed from it must meet the rules for that particular consequence.
 
-Neither food nor dwelling actuality derives for Bela in the supplied record.
-Food does not derive for Jala either, although Jala is not voided. The comparison
-separates the missing delivery evidence from the recognition consequence. It
-establishes neither starvation nor delivery and cannot prove that nobody's
-actual treatment changed after a finding.
+## Rights that remain
 
-Mira supplies the other control. Lupo's deceitful examination produces no void
-of Mira, so no recognition loss follows for Mira. Suspicion alone creates no
-lesser loss through this rule. It reads the void, without adding an intermediate
-penalty for having been accused.
+Bela is a person, retains the ballot and free movement, and is owed the floor.
+No prisoner conclusion follows in this case. The compensation correction
+leaves the food debt intact too.
 
-## Cira, and the loss that does not reach her
+Food and dwelling actuality do not derive for Bela in the supplied record.
+Food does not derive for Jala either, although Jala is not voided. Neither
+absence establishes starvation or delivery. The comparison prevents a missing
+receipt from being presented as the effect of a finding.
 
-Bela taught Cira and was voided. Cira loses no recognition through that
-relationship. In this case Cira has no recognition conclusion in the first
-place: being taught is not one of the routes that produces it.
+Lupo's adverse case does not create a finding against Mira. Bela's case does
+not create one against Cira. An accusation supplies no lesser personal penalty
+while waiting for the case it cannot establish.
 
-Even if a teaching record were fraudulent, it would not establish that the
-student acquired recognition through it. The system has no such transfer.
-The student's own teaching or employment can support recognition independently, as
-chapter 10 tests. A finding against the teacher cannot substitute for a finding
-about the student's own conduct.
+## Cira's separate claim
 
-Fin, taught by Esa, also incurs no loss. The test derives no personhood for
-Fin, but that absent entry is not evidence that Fin is unreal or without rights.
-It shows why a relationship entry and a standing record must not be confused.
+Bela taught Cira. Being taught confers no recognition status, transfers no
+fraud and imposes no debt on Cira. Cira's own employment is a separate act.
+Nothing about the teacher's finding decides whether Cira performed it.
 
-The family and life-course rules state the same boundary from the other side.
-Parentage, care, household membership and support do not transfer fraud, guilt,
-debt or recognition loss from an adult to a child. These are legal separations,
-not proof that a court corrected a record or an advocate acted.
+Fin, taught by Esa, also incurs no recognition loss. The supplied case derives
+no personhood for Fin. That missing entry is not evidence that Fin is unreal
+or without rights; a teaching relationship and a standing record answer
+different questions.
 
-A false entry about employment remains a problem for evidence and correction. Making
-a student bear the teacher's recognition loss would not establish what employment
-occurred or correct that entry. The clawback stays with the person voided.
+Parentage, care, household membership and support likewise do not transfer
+fraud, guilt or debt from an adult to a child. These legal separations establish
+no corrected outside record or performed act of representation.
 
-## The mark that crosses the record
+## Ending the restriction
 
-Vex's completed prior case produces the personal void and recognition loss.
-The carried credential restriction separately blocks the appointment while
-leaving public answerability intact. Its witnessed predecessor, inventories,
-matching reports and selected current successor are described in the previous
-chapter. A raw mark is insufficient, and a credential restriction alone cannot
-supply the personal case needed for a clawback.
+Vex's prior case produces an effective personal finding. A carried credential
+restriction separately blocks the appointment, while public answerability
+remains. Those conclusions have different grounds and need different endings.
 
-The restoration test adds forgiveness by Appeals and then a generic Appeals
-judgment. Neither restores the finding. The particular appellate act must name
-Vex's case and purpose, with independent review, evidence, procedure,
-eligibility and witnessed order. When that record is supplied, the personal
-void and recognition loss stop. Vex's existing examination supports recognition
-again; no new examination or payment is involved. The carried restriction
-remains, so the auditor's appointment still does not derive.
+The restoration test supplies a forgiveness flag and a generic Appeals
+judgment. Neither ends the case. The particular appellate act must identify
+Vex's finding and purpose, with evidence, procedure, independent review,
+eligibility and witnessed order. Once those premises are supplied, the
+personal finding ends. The carried restriction remains, so the appointment
+still does not derive.
 
-The restored case remains part of the history. A new record name cannot revive
-the same finding, while another incident or ground is assessed separately.
-An adjudicated concealed conflict uses the same restoration route. A generic
-forgiveness flag cannot clear every finding about a person.
+The restored case stays in the history. Renaming it cannot revive a finding
+about the same subject, incident and ground. Another incident or ground needs
+its own disposition. Restoration does not establish that every other finding
+about the person was mistaken.
 
-A duty to review is not a completed disposition. While another effective
-finding still applies, recognition remains blocked. Nor does the calculation
-establish that the reported appellate act occurred: it requires the case record,
-and the outside institutions remain responsible for the truth of that account.
+Every effective personal finding incurs a duty on Appeals to review the
+continuing restriction, without waiting for a challenge. The subject's own
+challenge supplies a further route to an appellate duty. Neither duty is a
+completed disposition. An unanswered review leaves the restriction on new
+adverse findings in force; it cannot become a loss of ordinary rights, pay or
+unrelated contributions. No elapsed time or automatic expiry is inferred from
+the record.
 
-## The scope of the loss
-
-The recognition loss is unmeasured and unread by downstream rules. That limits
-its formal effects, while the void's blanket exclusion from recognition reaches
-unrelated contributions as well as the challenged conduct. No arithmetic means
-no partial loss; it does not prove fairness or eliminate discretion over the
-finding that triggers it.
-
-The boundary is personal responsibility within this mechanism. Bela's void
-produces Bela's loss, not Cira's. Even a properly established finding supplies
-no economic penalty through this relation and takes no standing, floor or
-liberty. The next chapters examine those retained rights and the separate powers
-that can restrict movement.
+This places a continuing obligation on the institution and leaves a real cost
+for the person awaiting review. The rules do not establish that a reviewer
+arrived or that an outside institution obeyed the result. They identify the
+restricted act, what remains protected and the qualified decision needed to
+end the restriction. The next chapters examine the separate power to restrict
+movement and the rights a confined person retains.

@@ -25,7 +25,7 @@ deceive(RawAccused, Court, RawDisclosure).
 deceive(RawAccused, Court).
 judge(Review, RawAccused).
 ? reward(RawAccused).
-# => TRUE
+# => FALSE
 ? defend(RawAccused).
 # => TRUE
 ? false(RawAccused).
@@ -417,6 +417,6 @@ work(CarriedOnly, OrdinaryContribution).
 ? false(CarriedOnly).
 # => FALSE
 ? reward(CarriedOnly).
-# => TRUE
+# => FALSE
 ? lose(Points, CarriedOnly).
 # => FALSE

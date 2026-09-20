@@ -924,7 +924,7 @@
       "tuple_claim": "An examiner recorded or captured an examination of a subject.",
       "current_writer_authority": "Any fact-store writer can assert the act; credentials are checked only in the voiding route.",
       "required_writer_authority": "An authorised recorder acting within a case-bound examination process.",
-      "current_provenance": "Examination recognition uses the two-place act and its judgment and occasion; adverse credibility findings require a separate subject/incident act within a fully bound completed case.",
+      "current_provenance": "An examination entry has no personal recognition consequence; adverse credibility findings require a subject/incident act within a fully bound completed case.",
       "required_provenance": "A tamper-evident case record linked to the examiner, subject, grounds, and decision authority.",
       "cheapest_harm": {
         "operation": "assert",
@@ -933,9 +933,9 @@
           "assert `capture(Fresh_Auditor, Target)`",
           "assert `cite(Fresh_Auditor, Ground, Target)`"
         ],
-        "effect": "A wholly unauthorised examiner mints recognition; the current recognition remains non-operative but the fact is forged.",
+        "effect": "An unauthorised examination entry produces neither recognition nor a qualified adverse finding by itself.",
         "target": "reward",
-        "evidence_ref": "book-1/source/constitution.nibli::capture($auditor, $audited) & cite($auditor, $ground, $audited)"
+        "evidence_ref": "book-1/source/constitution.nibli::# ─── Article 3: Contribution without a personal recognition status"
       },
       "withholding_deletion_harm": {
         "operation": "withhold_or_delete",
@@ -944,7 +944,7 @@
         ],
         "effect": "The corresponding completed credibility finding no longer qualifies; the source cannot recover deleted evidence.",
         "target": "false",
-        "evidence_ref": "book-1/source/constitution.nibli::Article 4: Findings, prospective signatures, and recognition"
+        "evidence_ref": "book-1/source/constitution.nibli::Article 4: Findings and prospective signatures"
       },
       "current_challenge_route": "No correction or appeal attaches to a capture fact.",
       "required_challenge_route": "Subject access, contest, correction history, and independent case review.",
@@ -1303,7 +1303,7 @@
         ],
         "effect": "These legacy raw writes or omissions have no constitutional consequence under the current case-bound rules.",
         "target": "none",
-        "evidence_ref": "book-1/source/constitution.nibli::Article 4: Findings, prospective signatures, and recognition"
+        "evidence_ref": "book-1/source/constitution.nibli::Article 4: Findings and prospective signatures"
       },
       "current_challenge_route": "The case-specific finding and appellate-restoration interface carries the personal consequence; a raw flag neither creates nor restores it.",
       "required_challenge_route": "Prompt contest, independent review, correction history, and interim shield continuity.",
@@ -1585,7 +1585,7 @@
       "tuple_claim": "A named actor or body judged a subject.",
       "current_writer_authority": "Any fact-store writer can assert Court, Review, Appeals, or generic examiner judgments.",
       "required_writer_authority": "Each constant-sensitive route needs a distinct office, jurisdiction, case, independence, and decision contract.",
-      "current_provenance": "Judgments remain raw claims. Custody merits, severity, appellate relief and personal credibility consequences require separate case-specific independently witnessed findings; ordinary examination recognition remains non-operative.",
+      "current_provenance": "Judgments remain raw claims. Custody merits, severity, appellate relief and personal credibility consequences require separate case-specific independently witnessed findings.",
       "required_provenance": "Route-specific authority, case identity, evidence, reasons, signatures, and review status.",
       "cheapest_harm": {
         "operation": "assert",
@@ -1593,9 +1593,9 @@
           "assert `judge(Koa, Esa)`",
           "assert `cite(Koa, Notice, Esa)`"
         ],
-        "effect": "The legacy examination writes can mint non-operative recognition. A forged Court judgment alone cannot establish qualified merits, severity, placement, intake or relief.",
+        "effect": "A forged Court judgment alone cannot establish qualified merits, severity, placement, intake or relief. Examination entries confer no recognition status.",
         "target": "reward",
-        "evidence_ref": "book-1/source/constitution.nibli::judge($auditor, $audited) & capture($auditor, $audited) & cite($auditor, $ground, $audited)"
+        "evidence_ref": "book-1/source/constitution.nibli::# ─── Article 3: Contribution without a personal recognition status"
       },
       "withholding_deletion_harm": {
         "operation": "withhold_or_delete",
@@ -1783,7 +1783,7 @@
     },
     "parent": {
       "claimed_actor": "The tuple names two people in an alleged parent relationship and no writer.",
-      "tuple_claim": "A parent relationship blocks recognition of an examination of the child and is a current conflict check for a prospective adverse finding; it is not a personal adverse judgment.",
+      "tuple_claim": "A parent relationship is a current conflict check for a prospective adverse finding; it is not a personal adverse judgment.",
       "current_writer_authority": "Any fact-store writer can assert or omit parenthood.",
       "required_writer_authority": "A legally recognised, purpose-limited source with correction and privacy rights.",
       "current_provenance": "No source, legal status, scope, or correction history is attached.",
@@ -1793,9 +1793,9 @@
         "operations": [
           "assert `parent(Dev, Esa)`"
         ],
-        "effect": "A supplied parent relationship can block that examination-recognition route or proposed signature; it cannot itself create a personal void.",
+        "effect": "A supplied parent relationship can block the proposed signature; it cannot itself create a personal void.",
         "target": "reward",
-        "evidence_ref": "book-1/source/constitution.nibli::Article 4: Findings, prospective signatures, and recognition"
+        "evidence_ref": "book-1/source/constitution.nibli::Article 4: Findings and prospective signatures"
       },
       "withholding_deletion_harm": {
         "operation": "withhold_or_delete",
@@ -1804,7 +1804,7 @@
         ],
         "effect": "Omitting a relevant parent relationship can reopen the examination route or a current conflict check; independently bound case eligibility is still required for an adverse finding.",
         "target": "reward",
-        "evidence_ref": "book-1/source/constitution.nibli::Article 4: Findings, prospective signatures, and recognition"
+        "evidence_ref": "book-1/source/constitution.nibli::Article 4: Findings and prospective signatures"
       },
       "current_challenge_route": "No operating correction route exists; co-signer independence now uses separate affirmative case-bound authorised records.",
       "required_challenge_route": "Confidential parentage correction and independent review of the specific judge-child conflict record.",
@@ -2221,9 +2221,9 @@
           "assert `carries(TemporalReview, Hano, Epoch_Current, Epoch_Previous, VoidCarry)`",
           "assert `rotten(Hano)`"
         ],
-        "effect": "The six supplied writes, with the accepted transition, can produce a carried credential restriction. They produce no personal void, recognition loss or clawback without an identifiable credibility case.",
+        "effect": "The supplied writes, with the accepted transition, can produce a carried credential restriction. They produce no personal finding without an identifiable credibility case, and no recognition status or clawback exists.",
         "target": "match",
-        "evidence_ref": "book-1/source/constitution.nibli::Article 4: Findings, prospective signatures, and recognition"
+        "evidence_ref": "book-1/source/constitution.nibli::Article 4: Findings and prospective signatures"
       },
       "withholding_deletion_harm": {
         "operation": "withhold_or_delete",
@@ -2232,7 +2232,7 @@
         ],
         "effect": "Deleting the raw carry can remove the matched credential restriction and expose carry forgery. Vex's separately recorded personal credibility case remains effective; an appointment still needs positive clear history.",
         "target": "match",
-        "evidence_ref": "book-1/source/constitution.nibli::Article 4: Findings, prospective signatures, and recognition"
+        "evidence_ref": "book-1/source/constitution.nibli::Article 4: Findings and prospective signatures"
       },
       "current_challenge_route": "Carry omission and forgery markers and supplied challenges have review routes. Restoring a personal credibility finding does not clear a carried appointment restriction, and neither operation authenticates outside witnesses.",
       "required_challenge_route": "Cross-snapshot contest, independent reconciliation, correction history, and recovery from omitted or forged carry.",
@@ -2374,23 +2374,22 @@
         "operations": [
           "assert `teaches(Cira, Fin)`"
         ],
-        "effect": "Cira mints recognition from one unauthenticated teaching claim; recognition remains non-operative.",
+        "effect": "The activity entry confers no constitutional recognition status. It proves no delivery, payment or teaching quality.",
         "target": "reward",
-        "evidence_ref": "book-1/source/constitution.nibli::teaches($teacher, $student) & ~false($teacher) -> reward($teacher)"
+        "evidence_ref": "book-1/source/constitution.nibli::# ─── Article 3: Contribution without a personal recognition status"
       },
       "withholding_deletion_harm": {
         "operation": "withhold_or_delete",
         "operations": [
           "delete `teaches(Mira, Cira)`"
         ],
-        "effect": "Mira's live recognition disappears without any correction finding; Bela's separate teaching entry about Cira remains.",
+        "effect": "The activity entry disappears; neither its presence nor absence changes a constitutional recognition status. Consequential delivery or compensation claims need their own records.",
         "target": "reward",
-        "evidence_ref": "book-1/source/constitution.nibli::teaches($teacher, $student) & ~false($teacher) -> reward($teacher)"
+        "evidence_ref": "book-1/source/constitution.nibli::# ─── Article 3: Contribution without a personal recognition status"
       },
-      "current_challenge_route": "No teacher or recipient correction route exists.",
+      "current_challenge_route": "This bare activity entry confers no constitutional status. Consequential compensation or delivery claims require their own evidence and challenge routes.",
       "required_challenge_route": "Both parties can contest or correct the activity record without turning it into a personal score.",
       "risk_dispositions": [
-        "patchable",
         "external"
       ],
       "owner_ref": "book-1/appendix/maps/constitutional-coverage-map.md::Specify delivery as a lifecycle.",
@@ -2405,29 +2404,28 @@
       "current_writer_authority": "Any fact-store writer can assert contribution; no employer, beneficiary, or verifier is required.",
       "required_writer_authority": "A purpose-limited contribution record with an identified verifier and contributor challenge.",
       "current_provenance": "No task standard, completion evidence, beneficiary, occasion, or verification is attached.",
-      "required_provenance": "Evidence of the task and verifier sufficient for binary recognition, never material entitlement or rank.",
+      "required_provenance": "Evidence appropriate to the particular claim supported by the task, never a general personal rank.",
       "cheapest_harm": {
         "operation": "assert",
         "operations": [
           "assert `work(Cira, Census)`"
         ],
-        "effect": "Cira mints recognition from one unauthenticated work claim; recognition remains non-operative.",
+        "effect": "The raw work entry creates no recognition status and proves no payment, authority or delivery.",
         "target": "reward",
-        "evidence_ref": "book-1/source/constitution.nibli::work($contributor, $task) & ~false($contributor) -> reward($contributor)"
+        "evidence_ref": "book-1/source/constitution.nibli::# ─── Article 3: Contribution without a personal recognition status"
       },
       "withholding_deletion_harm": {
         "operation": "withhold_or_delete",
         "operations": [
           "delete `work(Quin, Census)`"
         ],
-        "effect": "Quin's only recognition route disappears.",
+        "effect": "The raw task entry disappears; neither its presence nor absence changes a recognition status or proves another claim.",
         "target": "reward",
-        "evidence_ref": "book-1/source/constitution.nibli::work($contributor, $task) & ~false($contributor) -> reward($contributor)"
+        "evidence_ref": "book-1/source/constitution.nibli::# ─── Article 3: Contribution without a personal recognition status"
       },
-      "current_challenge_route": "No contributor correction or dispute route exists.",
-      "required_challenge_route": "Contributor notice, correction, and independent dispute handling, with recognition kept non-operative.",
+      "current_challenge_route": "This bare activity entry confers no constitutional status. Consequential compensation or delivery claims require their own evidence and challenge routes.",
+      "required_challenge_route": "Contributor notice, correction and independent dispute handling for any consequential record.",
       "risk_dispositions": [
-        "patchable",
         "external"
       ],
       "owner_ref": "book-1/appendix/decisions/obligations-and-nonreciprocity-decision.md::No protected entitlement is consideration for duty performance.",

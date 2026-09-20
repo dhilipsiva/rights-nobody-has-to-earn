@@ -1017,9 +1017,9 @@
 ? prevents(EconomicUnregisteredHandle, CivicUnionPoliticalFinanceSeparateTreatmentDenial).
 # => FALSE
 
-# assertion-wall-recognition-binary: a derived recognition is a Boolean reward/1 proposition.
+# assertion-wall-recognition-binary: no constitutional recognition status derives.
 ? reward(Quin).
-# => TRUE
+# => FALSE
 # assertion-wall-recognition-arity-one: a second recognition argument has no route.
 ? reward(Quin, EconomicRecognitionArityTwoProbe).
 # => FALSE

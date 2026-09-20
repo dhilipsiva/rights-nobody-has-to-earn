@@ -25,7 +25,7 @@
 
 # Reviewed expected consequence in no_person_bela.
 ? lose(Points, Bela).
-# => TRUE
+# => FALSE
 
 # Reviewed expected consequence in no_person_bela.
 ? owe(State, Eats, Bela).

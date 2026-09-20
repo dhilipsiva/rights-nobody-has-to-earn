@@ -119,8 +119,8 @@ the main reading sequence; the method follows it as an optional technical part.
   — learning, speech, belief, association and the limits on public prescription.
 - [Chapter 9: Earning Above the Floor](09-earning-above-the-floor.md) — wages,
   supplements and competence without conditions on essentials.
-- [Chapter 10: Contribution](10-contribution.md) — recognition for teaching,
-  employment and eligible examination, without a score or price on a person.
+- [Chapter 10: Contribution](10-contribution.md) — records of teaching,
+  employment and examination, without a score or price on a person.
 - [Chapter 11: What Money Cannot Buy](11-what-money-cannot-buy.md) — property,
   enterprise, exchange and public finance under constitutional limits.
 - [Chapter 12: The Same Route for Everyone](12-the-same-route-for-everyone.md)
@@ -157,7 +157,7 @@ the main reading sequence; the method follows it as an optional technical part.
   and the conditions for an unrelated prosecution to proceed.
 - [Chapter 25: Voiding](25-voiding.md) — adverse credibility findings, their
   grounds, review and limits.
-- [Chapter 26: Clawback](26-clawback.md) — loss of recognition with the floor intact.
+- [Chapter 26: The Limits of a Finding](26-clawback.md) — correcting a claim without condemning unrelated work.
 - [Chapter 27: A Prisoner Is a Person](27-a-prisoner-is-a-person.md) — custody as
   an independent backstop to personhood, never its price.
 - [Chapter 28: Where People Are Put](28-where-people-are-put.md) — placement,
@@ -227,9 +227,11 @@ the main reading sequence; the method follows it as an optional technical part.
   a finding by authorised reviewers with positively established eligibility.
   An actual conflict blocks
   the affected decision; merely naming a reviewer does not.
-- **Voiding:** an adverse credibility finding that blocks recognition and records
-  a loss, without lowering the floor. Restoration identifies the case and its ground.
-- **Clawback:** the loss of recognition that follows voiding.
+- **Voiding:** an effective credibility finding that prevents a new adverse
+  signature from qualifying. It leaves the floor intact; restoration identifies
+  the case and its ground.
+- **Correction:** a claim is assessed on its own grounds. A credibility finding
+  does not erase unrelated contributions or create a general recognition loss.
 - **Placement:** reviewed authority for a named place of confinement, requiring
   evidence of availability and lawful conditions. It does not establish that
   anyone was moved there or received shelter.
@@ -281,7 +283,7 @@ The names identify formal test cases, not interviews or biographies.
 | Case | Question | Return to |
 |---|---|---|
 | Nell and Ori | A birth entry, and no entry at all | [1](01-the-child-with-nobody.md) |
-| Bela and Cira | Credibility, recognition and the floor | [25](25-voiding.md), [26](26-clawback.md) |
+| Bela and Cira | Findings, contribution and the floor | [25](25-voiding.md), [26](26-clawback.md) |
 | Boss and Rebel | Exposure after an official loses office | [16](16-public-answerability.md) |
 | Esa | Teaching and the evidence of adulthood | [10](10-contribution.md), [18](18-the-vote-conviction-does-not-take.md) |
 | Don, Pax, Sly, Kel and Rex | Exposure, deceit and case-specific prosecution | [24](24-the-shield.md) |

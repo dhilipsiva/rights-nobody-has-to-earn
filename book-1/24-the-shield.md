@@ -70,7 +70,8 @@ exposure, the deceit finding and its evidence. It includes two independent
 reviewers, their eligibility at the decision, and matching records of notice,
 access to evidence, a hearing and reasons. That finding defeats this exposure's
 shield, so Kel's otherwise complete conviction derives. It also produces a
-void and recognition loss. It takes no wage, property, pension or floor right.
+personal finding that restricts new adverse signatures. It takes no wage,
+property, pension or floor right.
 
 A raw accusation and a generic Review judgment do not supply the case. The
 same subject and incident must be identified in the completed finding. These
@@ -89,8 +90,8 @@ deceitful. Rex then exposed the review body.
 
 The second exposure has no effective deceit finding against it, so the shield derives
 again. Rex is both discredited and shielded. Protection does not read the
-claimant's general credibility: a finding that reaches recognition does not
-become permission to retaliate.
+claimant's general credibility: a restriction on signing adverse findings does
+not become permission to retaliate.
 
 A separate question remains about the injury to Sena. It can be answered
 without defeating the second disclosure. The case finding concerns whether

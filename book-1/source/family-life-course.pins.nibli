@@ -446,11 +446,11 @@ authorized(EarlyCase, EarlyDecision, TreatmentChoice).
 ? building(Homestay, Hano).
 # => TRUE
 
-# Recognition of a care-shaped contribution proves neither health nor housing.
+# A care-shaped work entry confers neither a recognition status nor actual health or housing.
 person(CareProbe).
 work(CareProbe, Care).
 ? reward(CareProbe).
-# => TRUE
+# => FALSE
 ? healthy(CareProbe).
 # => FALSE
 ? dwell(CareProbe).

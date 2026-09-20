@@ -104,7 +104,7 @@ A proposal decision concerns the proposal and its candidate text. It does not
 supply a finding about a person's credibility. The test dockets Jala's name,
 declares a protected target and supplies an approval. Those entries produce
 neither a void nor a recognition loss against Jala. Her recorded contribution
-still receives recognition. The proposal called Amend_Floor likewise receives
+still identifies her act; it confers no general recognition status. The proposal called Amend_Floor likewise receives
 no personal recognition-loss verdict.
 
 A personal finding needs its own legal grounds and process. Conversely, an

@@ -219,11 +219,10 @@ earlier(Custody, Release).
 
 # ── "Recognition, work, compliance, wealth and character cannot shorten or
 # extend custody either." ──────────────────────────────────────────────────
-# Recognition has no active reader. Both attempted release routes are refused
-# by the current dependencies; these particular refusals are not a universal
-# proof about every possible encoding. The raw rule also joins first-contact
-# standing, while the operative rule defeats its own custody premise.
-:refuse reasoning /Unstratifiable/
+# Recognition has no producer or reader. A proposed raw release rule loads,
+# but its premise has no source and a raw release flag grants no authority.
+# The operative rule below still defeats its own custody premise.
+:accept-scoped
 all $x: prisoner($x) & reward($x) -> free($x).
 # An attempted operative recognition-based release has the negative cycle.
 :refuse reasoning /Unstratifiable/

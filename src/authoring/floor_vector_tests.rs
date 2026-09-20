@@ -181,12 +181,10 @@ fn no_floor_condition_substitutes_for_another() {
     );
 }
 
-/// Recognition is the other half of "never a total": a floor may not be traded
-/// and recognition may not be counted. These restate the three checks the old
-/// `verify.sh` sections 4, 4a and 4b performed, for the same reason and with
-/// the same negative controls.
+/// No constitutional badge ranks a person, even as a Boolean. Keep the retired
+/// relation unread and unproduced, and retain the check against counting acts.
 #[test]
-fn recognition_is_minted_never_read_and_never_counted() {
+fn recognition_is_not_minted_or_read_and_contributions_are_not_counted() {
     let statements = statements();
     let mut minted = 0;
     for statement in &statements {
@@ -226,14 +224,9 @@ fn recognition_is_minted_never_read_and_never_counted() {
             );
         }
     }
-    // "Nothing reads recognition" passes just as cleanly against a constitution
-    // that renamed recognition away, so assert it is still there and still
-    // minted. Three doors mint it today.
-    assert_eq!(
-        minted, 3,
-        "the number of minting rules moved; recognition's doors are a ruled \
-         design decision, not an incidental count"
-    );
+    // Removal is a policy decision. A leaf producer would reintroduce the
+    // badge even without any consumer, so the absence of readers is insufficient.
+    assert_eq!(minted, 0, "a rule reintroduced constitutional recognition");
     // Controls: each refused shape is expressible, so each refusal is a choice.
     for hostile in [
         "all $t: all $s: teaches($t, $s) & reward($t) -> lose(Points, $t).",
@@ -243,6 +236,9 @@ fn recognition_is_minted_never_read_and_never_counted() {
         nibli_session::CoreSession::new()
             .compile_text(hostile)
             .expect("the refused shape is expressible");
+        let (_, head) = split(hostile).expect("a rule");
+        assert!(hostile.contains("reward("));
+        assert!(head_relation(head) == "reward" || hostile.contains("& reward("));
     }
 }
 
@@ -266,7 +262,7 @@ fn atom_arity(atom: &str) -> usize {
 const ACCUSATION: [&str; 6] = ["attack", "cruel", "injure", "deceive", "capture", "rotten"];
 
 /// Raw inputs whose use must not silently grow into a new adverse authority.
-const ACCUSATION_READERS: [(&str, &str); 10] = [
+const ACCUSATION_READERS: [(&str, &str); 9] = [
     ("agree", "+capture"),
     ("correct", "+injure"),
     ("err", "+injure"),
@@ -276,7 +272,6 @@ const ACCUSATION_READERS: [(&str, &str); 10] = [
     ("prisoner", "+injure"),
     ("prisoner", "+injure"),
     ("responsible", "+capture"),
-    ("reward", "+capture"),
 ];
 
 /// Census the conclusions that read the raw allegation/examination vocabulary.
@@ -840,19 +835,16 @@ fn a_purpose_limited_record_is_read_only_for_its_purpose() {
 }
 
 /// The personal finding and the incident finding have different readers.
-/// Personal findings close recognition and prospective signing, record one loss,
-/// and trigger reasons and review duties. Only the subject/incident form affects
+/// Personal findings close prospective signing and trigger reasons and review
+/// duties. Only the subject/incident form affects
 /// the protection attached to that disclosure. Neither form supplies a floor,
 /// personhood, ballot, appointment, or custody conclusion directly.
-const VOIDING_READERS: [(usize, &str, &str); 9] = [
+const VOIDING_READERS: [(usize, &str, &str); 6] = [
     (1, "agree", "~false"),
     (1, "agree", "~false"),
-    (1, "lose", "+false"),
     (1, "obliged", "+false"),
     (1, "obliged", "+false"),
-    (1, "reward", "~false"),
-    (1, "reward", "~false"),
-    (1, "reward", "~false"),
+    (1, "obliged", "+false"),
     (2, "defend", "~false"),
 ];
 

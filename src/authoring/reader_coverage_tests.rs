@@ -307,23 +307,22 @@ fn every_constitutional_family_is_projected_by_a_passage() {
 ///
 /// Chapter 1 is the child: the whole chapter is the case, and a section inside
 /// it would be a section about its own subject. Chapter 10 recognises
-/// contribution and already runs its claim against a child — Cira works and is
-/// recognised, and the doors carry no age test — so a second child would
+/// contribution and already runs the no-age-premise case with Cira's work
+/// entry. Missing adulthood evidence establishes no age, so a second child would
 /// duplicate the exhibit rather than add one. Chapter 23 is about who holds a
 /// credential; a record of one birth entry holds none, and the honest slot
 /// would say only that, which the chapter says already about everybody who is
-/// not seated. Chapters 24 and 26 are the two breaks whose subject the child
-/// cannot reach: the shield protects somebody who exposed an authority, and
-/// clawback takes recognition. A child with one entry has made no exposure and
-/// holds no recognition, so both slots would say only that the chapter's
-/// subject does not arise — and chapter 25's slot already runs the claim that
-/// matters, which is that neither instrument reaches the floor.
+/// not seated. Chapter 24 needs an exposure the one-entry child has not made.
+/// Chapter 26 follows Cira's separate claim beside the teacher's finding;
+/// chapter 25 already runs Nell's one-entry case and the unaffected floor.
+/// The 2026-09-20 recognition removal supersedes the former clawback rationale
+/// while preserving the exemption and its actual child-facing coverage.
 const CHILD_SLOT_EXEMPT: [(&str, &str); 5] = [
     ("01-the-child-with-nobody.md", "the chapter is the case"),
     ("10-contribution.md", "Cira already carries the child exhibit"),
     ("23-who-holds-the-pen.md", "a record of one entry holds no credential"),
     ("24-the-shield.md", "the shield needs an exposure this child has not made"),
-    ("26-clawback.md", "clawback takes recognition this child has never held"),
+    ("26-clawback.md", "Cira's separate claim is tested here; Nell's floor is tested in chapter 25"),
 ];
 
 #[test]

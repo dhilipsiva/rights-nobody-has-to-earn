@@ -5,7 +5,7 @@
 Created 2026-09-18 and refreshed 2026-09-20 at the author's request:
 "Refresh TODO to make book a 10/10."
 
-**Active: items 21–33 below are pending.** The earlier items 01–20 were
+**Active: items 22–33 below are pending.** The earlier items 01–20 were
 completed on 2026-09-20. Their [final manuscript review](reviews/2026-09-20-final-manuscript-review.md),
 coherent commits and `CLAUDE.md` retain that round's assessment, repairs and
 validation. This refresh opens further work; it does not reverse those
@@ -133,34 +133,11 @@ solutions and development history stay outside the book's reading sequence.
 
 ## Ordered revision backlog
 
-Work in this order. Items 21–24 settle the substantive questions before the
+Work in this order. Items 22–24 settle the remaining substantive questions before the
 opening and editorial passes depend on their answers. Each item includes its
 own relevant validation under the execution contract; item 33 is a final
 integration review, not permission to defer earlier checks. Chapter numbers
 refer to the [current reading sequence](book-1/contents.json).
-
-- [ ] **21. Resolve the purpose and proportionality of recognition loss.**
-
-  **Scope:** Chapters 10, 23–26 and 31; the
-  [recognition decision](book-1/appendix/decisions/recognition-purpose-decision.md)
-  and [credibility decision](book-1/appendix/decisions/credibility-finding-decision.md).
-
-  Recheck the current readers and effects of recognition, personal findings,
-  credential restrictions and restoration. Compare removing constitutional
-  recognition, correcting particular contribution records, narrowing loss to
-  the affected contribution, and restricting relevant official powers. Explain
-  why any retained public acknowledgment is useful and why an adverse finding
-  should reach unrelated teaching, care or employment. Recognition and voiding
-  cannot justify each other solely because each gives the other a purpose.
-  Examine duration, restoration and the cost of a review that never happens.
-  Apply resolve-before-defending to any confirmed unjustified consequence.
-
-  **Done when:** the chosen design has a substantive comparative justification;
-  any necessary repair is implemented before its prose; and positive, adverse,
-  unrelated-contribution, restoration and downstream cases establish the actual
-  scope. Floors, political rights, wages, supplements, students' rights and
-  legitimate accountability remain protected. Chapters 10, 25, 26 and Part V
-  explain the same result without treating an unspendable sanction as harmless.
 
 - [ ] **22. Establish a defensible severity and placement boundary.**
 

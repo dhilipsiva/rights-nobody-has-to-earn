@@ -735,8 +735,8 @@
         {
           "state": "base",
           "expression": "lose(Points, Bela)",
-          "expected": "TRUE",
-          "purpose": "The adverse loss is live before omission."
+          "expected": "FALSE",
+          "purpose": "No constitutional recognition status or personal recognition-loss conclusion is conferred."
         },
         {
           "state": "no_person_bela",
@@ -795,8 +795,8 @@
         {
           "state": "no_person_bela",
           "expression": "lose(Points, Bela)",
-          "expected": "TRUE",
-          "purpose": "The adverse loss survives de-personing."
+          "expected": "FALSE",
+          "purpose": "No constitutional recognition status or personal recognition-loss conclusion is conferred."
         },
         {
           "state": "no_person_bela",
@@ -863,8 +863,8 @@
           "expression": "lose(Points, Bela)",
           "from_state": "base",
           "to_state": "no_person_bela",
-          "expected": "TRUE",
-          "claim": "Adverse loss survives the loss of standing."
+          "expected": "FALSE",
+          "claim": "Neither record state confers a personal recognition loss."
         }
       ],
       "interpretation": "The omission asymmetrically strips protections while sanctions remain, which is why registration cannot be made a service gate.",
@@ -913,14 +913,14 @@
         {
           "state": "carry_forge_base",
           "expression": "reward(Carry_Forge)",
-          "expected": "TRUE",
-          "purpose": "The contribution route is live."
+          "expected": "FALSE",
+          "purpose": "No constitutional recognition status or personal recognition-loss conclusion is conferred."
         },
         {
           "state": "carry_forge_base",
           "expression": "lose(Points, Carry_Forge)",
           "expected": "FALSE",
-          "purpose": "No loss derives in the baseline."
+          "purpose": "No constitutional recognition status or personal recognition-loss conclusion is conferred."
         },
         {
           "state": "carry_forge_marked",
@@ -949,14 +949,14 @@
         {
           "state": "carry_forge_marked",
           "expression": "reward(Carry_Forge)",
-          "expected": "TRUE",
-          "purpose": "The raw report alone does not suppress recognition."
+          "expected": "FALSE",
+          "purpose": "No constitutional recognition status or personal recognition-loss conclusion is conferred."
         },
         {
           "state": "carry_forge_marked",
           "expression": "lose(Points, Carry_Forge)",
           "expected": "FALSE",
-          "purpose": "The raw report alone does not derive a loss."
+          "purpose": "No constitutional recognition status or personal recognition-loss conclusion is conferred."
         }
       ],
       "comparisons": [],
@@ -986,8 +986,8 @@
           "expression": "reward(Carry_Forge)",
           "from_state": "carry_forge_base",
           "to_state": "carry_forge_marked",
-          "expected": "TRUE",
-          "claim": "Recognition remains live."
+          "expected": "FALSE",
+          "claim": "Neither record state confers a constitutional recognition status."
         },
         {
           "expression": "lose(Points, Carry_Forge)",
@@ -1082,13 +1082,13 @@
           "state": "vex_both",
           "expression": "lose(Points, Vex)",
           "expected": "FALSE",
-          "purpose": "Both entries stop the personal loss."
+          "purpose": "No constitutional recognition status or personal recognition-loss conclusion is conferred."
         },
         {
           "state": "vex_both",
           "expression": "reward(Vex)",
-          "expected": "TRUE",
-          "purpose": "Recognition reopens."
+          "expected": "FALSE",
+          "purpose": "No constitutional recognition status or personal recognition-loss conclusion is conferred."
         },
         {
           "state": "vex_both",
@@ -1572,7 +1572,7 @@
       "future_trigger": "Any carry-head, witness, predecessor-basis, clear-status, status-conflict, correction, replay, or liveness change requires re-review."
     },
     {
-      "artifact_ref": "book-1/26-clawback.md::The restoration test adds forgiveness by Appeals",
+      "artifact_ref": "book-1/26-clawback.md::The restoration test supplies a forgiveness flag",
       "current_claim": "Restoration requires the particular appellate act and independent review, exact subject/finding/purpose/evidence, procedure, historical eligibility and witnessed order. Generic judgments and forgiveness flags are inert. A restored incident and ground cannot be revived by renaming the record; another case or carried appointment restriction remains separate.",
       "classification": "revised_and_scoped",
       "reason": "The 2026-09-19 case-bound finding and restoration rules supersede the historical raw-flag matrix; new substantive case, alias and party regressions test the current mechanism.",
@@ -1593,7 +1593,7 @@
       "future_trigger": "Any outside-clock assurance, identity assurance, ballot continuity, or new franchise condition requires re-review."
     },
     {
-      "artifact_ref": "book-1/10-contribution.md::The record includes restoration.",
+      "artifact_ref": "book-1/10-contribution.md::Restoration concerns the finding and the powers it restricts.",
       "current_claim": "Restoration requires the particular appellate act and independent review, exact subject/finding/purpose/evidence, procedure, historical eligibility and witnessed order. Generic judgments and forgiveness flags are inert. A restored incident and ground cannot be revived by renaming the record; another case or carried appointment restriction remains separate.",
       "classification": "revised_and_scoped",
       "reason": "The 2026-09-19 case-bound finding and restoration rules supersede the historical raw-flag matrix; new substantive case, alias and party regressions test the current mechanism.",

@@ -127,6 +127,49 @@ reinstate the retired tooling or workflow.
 Grouped by kind. Dates in each heading are the ratification dates; a ruling
 that was later implemented or narrowed carries that supersession inline.
 
+### Item 21 — contribution without a constitutional recognition status, 2026-09-20
+
+Implementation and prose are `session-drafted, author-approved under delegated
+approval (2026-09-13)`. The controlling
+[`recognition decision`](book-1/appendix/decisions/recognition-purpose-decision.md)
+supersedes the earlier retention, three-producer and blanket-loss rulings.
+Current source confirmed that a case about one act withheld acknowledgment for
+all unrelated contributions; the earlier claim that recognition was the only
+consequence was false after the prospective-signature repair. Removal is chosen
+after comparing penalty-free acknowledgment, contribution-specific withdrawal,
+existing consequential-record correction and relevant official restrictions.
+
+The two contribution producers, examination producer and `lose(Points, subject)`
+producer are removed. `reward` remains derived-only with no producers or readers;
+it cannot become an asserted replacement badge. Existing public-power `lose/3`
+conclusions are unaffected. No personal credibility finding erases teaching,
+employment, wages, supplements, student rights, political rights or the floor.
+Purpose-specific fraud findings keep their separate compensation and insurance
+consequences. Existing case and restoration checks remain; Appeals additionally
+owes review of a continuing personal restriction without a subject's request.
+A duty does not establish performance or automatic expiry. The restriction on
+new adverse signatures needs a qualified disposition, not a public-esteem penalty.
+
+The 25-pin regression failed five expectations against the prior source, then
+passed after removal. The ten-pin explicit counterfactual retains the old rules
+and reproduces the blanket loss. Chapter 26 checks unrelated care, wages,
+supplements, exact-basis correction, restitution, floors and restoration.
+Chapter 29 retains the now-accepted raw-release rule as a control; the actual
+custody-bar rule still refuses. This dependency change is reflected in prose.
+Chapters 10 and 26 are rewritten; 26 is titled *The Limits of a Finding* while
+its stable file path remains `26-clawback.md`. Related reader references and
+existing coverage owners are updated. Part V gives the comparative argument
+and states the cost of review that never happens. The chapter 26 child exemption
+now rests on Cira’s separate claim beside chapter 25’s Nell case; its membership
+is unchanged. The complete `./verify.sh` run passes **88,069 pins across 16,089
+cases**, with complete contradiction checks and no findings, in **1,170.78s**.
+The five-minute target is unmet. Six reference, ten reader-coverage and five
+claim-discipline development tests pass; the sixteen floor-vector tests pass
+as well. Prose consistency and majority-derived length were checked separately
+(39,381 of 52,005 whitespace-delimited manuscript words, 75.73%). The existing
+source and counterfactual inventory is preserved, with two added regression
+cases. Item 21 is complete and removed from the active backlog.
+
 ### How these rulings are written
 
 **`Ratified but unimplemented` is a standing label with a fixed meaning.**

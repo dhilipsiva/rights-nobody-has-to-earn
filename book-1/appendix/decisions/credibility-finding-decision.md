@@ -2,6 +2,20 @@
 
 # Credibility findings: grounds, endings and answerability
 
+## Item-21 supersession, 2026-09-20
+
+The [recognition decision](recognition-purpose-decision.md) removes the general
+constitutional recognition status and its blanket clawback. The case-bound
+finding, prospective-signature restriction, incident-specific shield result,
+reasons, subject-triggered appeal and qualified restoration remain. A new duty
+on Appeals reviews the continuing personal restriction without waiting for a
+request. It establishes no performed review and does not itself end a finding.
+Compensation and contribution-based supplements retain their separate grounds
+and fraud remedies; neither reads the personal finding. The earlier recognition
+and loss descriptions below are history, not current consequences. Item 21's
+complete validation is recorded in the recognition decision: 88,069 pins across
+16,089 cases, complete contradiction checks and no findings, in 1,170.78s.
+
 **Final item-19 integration, 2026-09-20.** The current source passes 88,024
 pins across 16,087 cases in 1,169.06s, with complete contradiction checks and
 no findings. No active known-defect annotations remain. The focused and failed

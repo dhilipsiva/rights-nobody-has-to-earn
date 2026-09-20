@@ -188,10 +188,12 @@ presented to it; that does not establish that the record is current in the world
 Severity does not lengthen the interval. Recognition, employment, compliance,
 wealth and character cannot shorten or extend custody. The pins try both a
 rule producing a raw release entry from recognition and a rule producing an
-operative bar against the sentence. Both encodings are refused by the current
-dependencies. A raw release entry by itself supplies no release authority.
-Each refusal is specific to its encoding. The constitutional protection is that recognition
-has no consequential reader in the enacted source.
+operative bar against the sentence. The raw-entry rule loads; the operative
+bar is refused because it would defeat its own custody premise. A raw release
+entry by itself supplies no release authority. Recognition has neither a
+producer nor a reader in the enacted source. That protection needs its own
+check; the engine's acceptance of a proposed rule does not establish its
+constitutional legitimacy.
 
 The pins also admit a duration word and record a term for Ruk. Custody continues
 and no release follows. A term label supplies neither a clock nor an enforceable

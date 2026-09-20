@@ -1,0 +1,25 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+# The exact removed rules reproduce acknowledgment and its blanket penalty.
+# Bela's recorded teaching and unrelated care survive while recognition does not.
+:expect-pins 10
+? reward(Esa).
+# => TRUE
+? reward(Quin).
+# => TRUE
+? reward(Gia).
+# => TRUE
+? false(Bela).
+# => TRUE
+? teaches(Bela, Cira).
+# => TRUE
+work(Bela, UnrelatedCare).
+? work(Bela, UnrelatedCare).
+# => TRUE
+? reward(Bela).
+# => FALSE
+? lose(Points, Bela).
+# => TRUE
+? lose(Points, Cira).
+# => FALSE
+? owe(State, Eats, Bela).
+# => TRUE

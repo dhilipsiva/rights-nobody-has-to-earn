@@ -20,13 +20,13 @@ show(Torvi, Disclosure_Torvi_Review, Review).
 # => TRUE
 
 ? reward(Marn).
-# => TRUE
+# => FALSE
 
-# Nor can it remove examination recognition.
+# Neither examination nor an accusation creates a constitutional recognition status.
 deceive(Marn, Vasha).
 
 ? reward(Marn).
-# => TRUE
+# => FALSE
 
 # Unsigned harm and a generic judgment cannot supply signed case-bound severity.
 attack(Quilo, Sepp).

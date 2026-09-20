@@ -21,7 +21,7 @@
 
 # Reviewed expected consequence in carry_forge_marked.
 ? reward(Carry_Forge).
-# => TRUE
+# => FALSE
 
 # Reviewed expected consequence in carry_forge_marked.
 ? rotten(Carry_Forge).

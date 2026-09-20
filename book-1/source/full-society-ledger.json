@@ -104054,13 +104054,13 @@
         "book-1/00-opening-note.md::| Friendship, leisure, mutual aid and associations |",
         "book-1/03-what-counts-as-evidence.md::Economic records illustrate the distinction.",
         "book-1/16-public-answerability.md::The economic rules likewise confer no permanent public status",
-        "book-1/24-the-shield.md::It takes no wage, property, pension or floor right.",
-        "book-1/26-clawback.md::When someone's credibility is voided, their recognition stops following from",
+        "book-1/24-the-shield.md::personal finding that restricts new adverse signatures.",
+        "book-1/26-clawback.md::Bela's completed credibility case remains effective.",
         "book-1/07-who-owes-and-what-follows.md::A public function cannot shed its duties by being contracted out, insured,",
         "book-1/07-who-owes-and-what-follows.md::The public responsibility to finance, secure, and maintain the floor remains",
         "book-1/07-who-owes-and-what-follows.md::No household, relationship, association or charity is presumed to provide",
         "book-1/18-the-vote-conviction-does-not-take.md::An enterprise receives no ballot, candidacy, human standing, or extra political",
-        "book-1/10-contribution.md::The labour constitution is separate from that narrow recognition rule. Every",
+        "book-1/10-contribution.md::A contribution entry has no age premise.",
         "book-1/28-where-people-are-put.md::The economic constitution keeps another boundary beside that one. A dwelling",
         "book-1/22-changing-the-rules.md::The economic constitution entrenches no single ownership form, provider mix,",
         "book-1/29-the-one-thing-taken.md::No rule in this source converts custody into a second legal loss. Conviction",
@@ -104882,10 +104882,10 @@
         "book-1/03-what-counts-as-evidence.md::Other entries have narrower reach.",
         "book-1/23-who-holds-the-pen.md::## A credential must derive",
         "book-1/25-voiding.md::each reviewer still needs the affirmative finding for this case.",
-        "book-1/26-clawback.md::The family and life-course rules state the same boundary from the other side.",
+        "book-1/26-clawback.md::Parentage, care, household membership and support likewise do not transfer",
         "book-1/14-holding-a-role-in-somebodys-life.md::**Care is not a family invoice.**",
         "book-1/18-the-vote-conviction-does-not-take.md::Adulthood itself attaches in law at the common age;",
-        "book-1/10-contribution.md::Caregiver and dependant remain separate rights-holders",
+        "book-1/10-contribution.md::Caregiver and dependant keep separate rights.",
         "book-1/28-where-people-are-put.md::A family entry does no placement work.",
         "book-1/28-where-people-are-put.md::A family entry does no placement work.",
         "book-1/30-when-the-system-notices-it-broke.md::The adulthood case needs its own boundary. General adulthood attaches",
@@ -105421,13 +105421,13 @@
         "book-1/00-opening-note.md::| Friendship, leisure, mutual aid and associations |",
         "book-1/03-what-counts-as-evidence.md::Economic records illustrate the distinction.",
         "book-1/16-public-answerability.md::The economic rules likewise confer no permanent public status",
-        "book-1/24-the-shield.md::It takes no wage, property, pension or floor right.",
-        "book-1/26-clawback.md::When someone's credibility is voided, their recognition stops following from",
+        "book-1/24-the-shield.md::personal finding that restricts new adverse signatures.",
+        "book-1/26-clawback.md::Bela's completed credibility case remains effective.",
         "book-1/07-who-owes-and-what-follows.md::A public function cannot shed its duties by being contracted out, insured,",
         "book-1/07-who-owes-and-what-follows.md::The public responsibility to finance, secure, and maintain the floor remains",
         "book-1/07-who-owes-and-what-follows.md::No household, relationship, association or charity is presumed to provide",
         "book-1/18-the-vote-conviction-does-not-take.md::An enterprise receives no ballot, candidacy, human standing, or extra political",
-        "book-1/10-contribution.md::The labour constitution is separate from that narrow recognition rule. Every",
+        "book-1/10-contribution.md::A contribution entry has no age premise.",
         "book-1/28-where-people-are-put.md::The economic constitution keeps another boundary beside that one. A dwelling",
         "book-1/22-changing-the-rules.md::The economic constitution entrenches no single ownership form, provider mix,",
         "book-1/29-the-one-thing-taken.md::No rule in this source converts custody into a second legal loss. Conviction",
@@ -105488,7 +105488,7 @@
       "prose_refs": [
         "book-1/03-what-counts-as-evidence.md::A contribution entry records a",
         "book-1/09-earning-above-the-floor.md::Marlo has a contribution record with Ledgerhouse under SchemeM.",
-        "book-1/09-earning-above-the-floor.md::A contribution history is a different thing from recognition",
+        "book-1/09-earning-above-the-floor.md::A contribution history has a limited purpose: the supplement.",
         "book-1/09-earning-above-the-floor.md::## A supplement above the floor",
         "book-1/00-opening-note.md::- **Contribution record:** an entry that someone paid into a named scheme. It"
       ],
@@ -110483,7 +110483,7 @@
       ],
       "residual_citations": [],
       "controls": {
-        "reintroduction_control_ref": "book-1/26-clawback.pins.nibli::somebody rebuilt the student clawback"
+        "reintroduction_control_ref": "tests/pins/credibility/recognition-removal/counterfactual.pins.nibli::? lose(Points, Cira)."
       }
     },
     {
@@ -111965,10 +111965,10 @@
       "what_failed": "A loss was recorded against a student for a teacher's adjudicated fraud — negative scoring of a person who did nothing.",
       "hostile_witness": "The old :defect pin held lose(Points, Cira) TRUE for as long as the rule stood.",
       "why_it_failed": "The clawback rule joined the teaching relation to the student's loss with no act of the student's anywhere in the body.",
-      "response_change": "The student clawback rule was deleted outright from Article 4; the wrongdoer rule survives.",
-      "now_follows": "lose(Points, Cira) is FALSE and the surviving rule reaches only the adjudicated wrongdoer.",
-      "proof_ref": "book-1/26-clawback.pins.nibli::THE CIRA DEFECT IS RESOLVED",
-      "negative_control_ref": "book-1/26-clawback.pins.nibli::somebody rebuilt the student clawback",
+      "response_change": "The student clawback was deleted. The 2026-09-20 recognition decision also removes constitutional recognition and the personal clawback.",
+      "now_follows": "Neither student nor teacher receives a recognition-loss conclusion; purpose-specific accountability remains.",
+      "proof_ref": "book-1/26-clawback.pins.nibli::? lose(Points, Cira).",
+      "negative_control_ref": "tests/pins/credibility/recognition-removal/counterfactual.pins.nibli::? lose(Points, Cira).",
       "still_does_not_follow": "Nothing reads a loss, nothing restores one, and no lifecycle exists for it — the leaf stays a leaf.",
       "residuals": [
         "FS-DFT-04"
@@ -111978,7 +111978,7 @@
       "envelope_id": "FS-ENV-00",
       "owner_ref": "CLAUDE.md::Claim-scoped resolution receipts replace confession-as-ending",
       "eligible_gate": "gate-a",
-      "reader_mapping_ref": "book-1/26-clawback.md::The system has no such transfer."
+      "reader_mapping_ref": "book-1/26-clawback.md::Being taught confers no recognition status, transfers no"
     },
     {
       "id": "FS-RCP-02",
@@ -112057,9 +112057,9 @@
       "hostile_witness": "The pre-guard constitution minted recognition for the voided examiner, and exactly those reward pins flip against it.",
       "why_it_failed": "The examiner rule carried deceit and broken guards but not the voiding guard the other two doors already had.",
       "response_change": "The examiner rule gained the voiding guard, the same shape as the other doors.",
-      "now_follows": "A voided person examines and the mint refuses; the clawback registers on the forced probe.",
+      "now_follows": "Constitutional recognition and its personal clawback are removed by the 2026-09-20 decision. The original blanket penalty is retained in the explicit credibility counterfactual.",
       "proof_ref": "book-1/10-contribution.pins.nibli::? reward(Vex).",
-      "negative_control_ref": "book-1/10-contribution.md::The examination route has further conditions.",
+      "negative_control_ref": "tests/pins/credibility/recognition-removal/counterfactual.pins.nibli::? lose(Points, Bela).",
       "still_does_not_follow": "The examination route names an occasion and does not authenticate the underlying evidence; recognition is distinct from permission to sign an adverse finding.",
       "residuals": [
         "FS-DFT-10"
@@ -247221,11 +247221,11 @@
               "owner_id": "recognition-binary",
               "polarity": "derive",
               "formal_refs": [
-                "book-1/source/constitution.nibli::# assertion-wall-recognition-binary: recognition remains the Boolean presence or absence of derived reward/1."
+                "book-1/source/constitution.nibli::# assertion-wall-recognition-binary: no constitutional recognition status derives."
               ],
-              "pin_ref": "book-1/source/economic-constitution.pins.nibli::# assertion-wall-recognition-binary: a derived recognition is a Boolean reward/1 proposition.",
+              "pin_ref": "book-1/source/economic-constitution.pins.nibli::# assertion-wall-recognition-binary: no constitutional recognition status derives.",
               "query": "reward(Quin).",
-              "expected_result": "TRUE"
+              "expected_result": "FALSE"
             }
           ]
         },
@@ -247239,7 +247239,7 @@
               "owner_id": "recognition-arity-one",
               "polarity": "withhold",
               "formal_refs": [
-                "book-1/source/constitution.nibli::# assertion-wall-recognition-arity-one: recognition remains reward/1; no second argument carries status or value."
+                "book-1/source/constitution.nibli::# assertion-wall-recognition-arity-one: neither unary nor source-labelled recognition has a producer."
               ],
               "pin_ref": "book-1/source/economic-constitution.pins.nibli::# assertion-wall-recognition-arity-one: a second recognition argument has no route.",
               "query": "reward(Quin, EconomicRecognitionArityTwoProbe).",
@@ -247257,7 +247257,7 @@
               "owner_id": "recognition-non-ranked",
               "polarity": "withhold",
               "formal_refs": [
-                "book-1/source/constitution.nibli::# assertion-wall-recognition-non-ranked: reward/1 emits no tier, degree, score, or comparison."
+                "book-1/source/constitution.nibli::# assertion-wall-recognition-non-ranked: no recognition tier, degree, score, or comparison derives."
               ],
               "pin_ref": "book-1/source/economic-constitution.pins.nibli::# assertion-wall-recognition-non-ranked: a rank cannot become a recognition argument.",
               "query": "reward(EconomicRecognitionRankOne, Quin).",
@@ -247275,7 +247275,7 @@
               "owner_id": "recognition-unread",
               "polarity": "derive",
               "formal_refs": [
-                "book-1/source/constitution.nibli::# assertion-wall-recognition-unread: no rule consumes reward/1; it remains a terminal derived leaf."
+                "book-1/source/constitution.nibli::# assertion-wall-recognition-unread: no rule produces or consumes the reserved reward relation."
               ],
               "pin_ref": "book-1/source/economic-constitution.pins.nibli::# assertion-wall-recognition-unread: recognition cannot alter compensation through an economic reader.",
               "query": "prevents(Quin, CompensationRecognitionCoupling).",

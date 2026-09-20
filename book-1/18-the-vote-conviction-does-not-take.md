@@ -40,8 +40,8 @@ conduct the State approves.
 
 ## A void does not remove the vote
 
-Bela is voided and still holds the ballot conclusion. The void blocks recognition
-and has consequences in the auditor-credential system; it is not a withdrawal
+Bela is voided and still holds the ballot conclusion. The finding prevents a
+new adverse signature from qualifying; it is not a withdrawal
 of citizenship, residence or adulthood. Nor does it establish that Bela is
 incapable of political judgment.
 

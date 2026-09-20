@@ -30,10 +30,11 @@ be described accurately.
 
 ## Valuation
 
-The objection begins with a person whose contribution is poorly seen. An
-unranked acknowledgment can name a lifetime of care and a brief clerical task
-in the same way. If the purpose is to make neglected employment visible, why
-build an instrument unable to distinguish their duration, difficulty or cost?
+The objection begins with a person whose contribution is poorly seen. How
+does a society acknowledge a lifetime of care without ranking its carer above
+someone who needs care? A uniform public acknowledgment is one possible answer.
+But if its purpose is to reveal neglected work, what does it establish about
+the duration, difficulty or cost of that work?
 
 Owen's New Harmony and his labour exchanges illustrate the difficulty of
 organising cooperation around a common valuation of employment. The Indiana
@@ -48,24 +49,59 @@ hypothesis; it does not settle the causes of the entire agricultural crisis.
 The constitutional question is whether essentials may be used to make someone
 accept a judgment of their contribution.[^lin]
 
-This design separates that question from pay. Recognition is an unranked
-conclusion with no downstream power. It buys no food, vote, credit, wage or
-liberty. Care can count as employment without creating a duty to a spouse or
-relative. Competence certification, compensation and contributory supplements
-have their own limited grounds; none is a general measure of human worth.
-Ordinary democratic law may allow different wages, returns and incentives
-above the floor.
+This design separates contribution from human worth. Competence certification,
+compensation and contributory supplements each have limited grounds. Care can
+count as employment without creating a duty to a spouse or relative. Ordinary
+democratic law may allow different wages, returns and incentives above the
+floor. None requires a constitutional judgment that its recipient belongs to
+the class of recognised people.
 
-The strongest alternative is to dispense with constitutional recognition.
-People could honour care and creation through their own associations while
-pay and compensation followed contestable rules. That would avoid maintaining
-a public judgment whose practical value is unproved. I retain the
-acknowledgment because it permits public recognition without making it a
-price of membership. Its expressive poverty is real. It says that a recorded
-contribution occurred, not that all contributions were equal. If it serves no
-useful purpose, or becomes an informal badge of superior worth despite its
-legal limits, removal would be better than insisting that the rule's small
-formal footprint makes it harmless.
+I choose to confer no such status. People can honour care and creation through
+expression and association; a public service can account for the acts it relies
+on. The constitution needs to protect fair terms, evidence and the ability to
+contest consequential decisions. It does not need to add an official badge
+that says who contributed. This choice gives up a common public acknowledgment.
+It also leaves neglected work vulnerable to social disregard. Labour rights,
+care duties and contestable compensation address concrete claims arising from
+that disregard; a yes-or-no badge cannot establish that any of them was met.
+
+The strongest alternative is acknowledgment with no legal consequence. Its
+attraction is that the public can see a contribution while owing everyone the
+same minimum. But a badge can acquire social meaning even when the rules never
+spend it. Its absence can stigmatise someone whose work was unrecorded, and
+withdrawing it for one dishonest act would condemn unrelated teaching or care.
+Making the sanction unspendable limits its material reach; it does not justify
+that breadth. Recognition and its withdrawal cannot supply each other's reason
+to exist.
+
+Narrowing the withdrawal to the disputed contribution is more defensible. It
+still needs a record identifying what is disputed and what consequence follows.
+Where a wage or supplement is claimed on false evidence, that particular claim
+already needs correction through its own rules. A second, general recognition
+register adds no remedy for the payer, worker or dependant. Where no legal
+claim is at stake, a constitutional sanction has still less work to do. I
+therefore prefer correcting consequential records and restricting relevant
+official acts to maintaining a parallel system of public esteem.
+
+The retained credibility finding illustrates the distinction. Deceit,
+fabrication, concealed conflict or withheld evidence bears directly on the
+power to sign a new adverse finding about another person. An effective case
+blocks that act; it does not cancel unrelated work, wages or political rights.
+A qualified appeal can end the finding, and Appeals owes review of the
+continuing restriction without waiting for a request. A challenge remains
+available independently. A generic forgiveness flag is insufficient.
+
+The restriction has no automatic expiry in the model. Someone whose review
+never happens remains unable to qualify that adverse act. That is a serious
+institutional failure, and the duty is no evidence that it was discharged.
+Letting silence restore coercive authority would make failure to review a route
+back to power over a third person. The narrower restriction keeps ordinary
+life and earned claims outside it while requiring a qualified disposition.
+Evidence that this separation cannot protect those awaiting review would
+require a stronger ending and remedy, not a defence of permanent exclusion.
+Evidence that an additional public acknowledgment meets a concrete unmet need
+without becoming a status hierarchy would reopen the case for it. Its absence
+of formal consumers alone would not settle that question.
 
 Scarcity tests the separation more severely. Where an essential resource
 cannot meet every claim, refusing to rank people does not allocate the
@@ -92,10 +128,9 @@ distinguish claims reliably, it provides no reason to depart from equal
 treatment. If it reproduces social disadvantage, calling it specific to a
 resource does not excuse it.
 
-Recognition can acknowledge without allocating;
-scarcity requires a separate, contestable allocation. The model demonstrates
-that separation under its supplied premises. It establishes neither the
-value of public acknowledgment nor the accuracy of a real allocation. The
+Contribution and scarcity require different, contestable decisions. The model
+demonstrates their separation under its supplied premises. It establishes
+neither the adequacy of compensation nor the accuracy of a real allocation. The
 argument stands only while the distinction protects people better than the
 alternatives; a score that becomes a condition of essentials defeats it.
 

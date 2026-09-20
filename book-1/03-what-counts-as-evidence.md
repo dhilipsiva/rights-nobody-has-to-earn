@@ -168,8 +168,8 @@ The shield case distinguishes an accusation from the adjudication it needs.
 Rebel's disclosure concerns Boss, an answerable official. A raw entry alleging
 that Rebel deceived Boss does not supply an effective finding about that
 exposure. The shield continues, and the prisoner conclusion remains blocked.
-A raw accusation likewise cannot remove examination recognition. The adverse
-case must bind its subject, incident, evidence and independent reviewers;
+A raw accusation likewise cannot supply a personal credibility finding. The
+adverse case must bind its subject, incident, evidence and independent reviewers;
 merely naming the accused and a public body does not establish the act.
 
 A bare claim that the Court is broken also leaves the custody cases unchanged.

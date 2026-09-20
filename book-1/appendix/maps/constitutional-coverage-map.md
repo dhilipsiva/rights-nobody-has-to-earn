@@ -12,6 +12,20 @@
 > prose cannot complete or upgrade the specification. Neither repository status
 > proves lawful enactment or deployment.
 
+## Contribution and credibility scope update — 2026-09-20
+
+The [recognition decision](../decisions/recognition-purpose-decision.md) removes
+constitutional recognition and the personal recognition-loss conclusion. It
+supersedes the earlier three-producer and retention rulings. Contribution
+records, labour protection, compensation, supplements and case-bound findings
+remain distinct. Appeals owes independent review of a continuing restriction
+on adverse signatures without waiting for the subject's challenge. The live
+and explicit old-policy regression cases are under
+`tests/pins/credibility/recognition-removal/`; chapters 10, 25 and 26 state the
+current consequences, and Part V supplies the comparative justification.
+Complete validation is recorded in that decision: 88,069 pins across 16,089
+cases, complete contradiction checks and no findings, in 1,170.78s.
+
 ## Environmental and animal implementation update — 2026-09-14
 
 [Environmental rights, commons and direct animal protection](../contracts/ecological-and-animal-protection-contract.md)

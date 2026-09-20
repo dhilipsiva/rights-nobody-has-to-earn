@@ -14,7 +14,7 @@
 
 # Reviewed expected consequence in vex_both.
 ? lose(Points, Vex).
-# => TRUE
+# => FALSE
 
 # Reviewed expected consequence in vex_both.
 ? permits(Review, Vex).

@@ -1267,8 +1267,8 @@
         },
         {
           "expression": "reward(Quin)",
-          "expected": "TRUE",
-          "purpose": "Recognition remains a separate unread conclusion."
+          "expected": "FALSE",
+          "purpose": "No constitutional recognition status or personal recognition-loss conclusion is conferred."
         },
         {
           "expression": "severe(Lalo)",

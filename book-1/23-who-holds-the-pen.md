@@ -39,7 +39,7 @@ model checks agreement and scope; it does not determine that the witnesses
 told the truth.
 
 The paired-void rule also does not require its target to have a personhood
-entry. Supplied examinations can therefore produce a void and loss against a
+entry. A completed qualified case can therefore produce a finding against a
 handle absent from the person record. That result establishes no actual person
 or wrongdoing. It is a separate question from whether the signers held valid
 credentials, and the later voiding chapter examines the finding's reach.
@@ -82,8 +82,8 @@ Restoration tests a different boundary. A qualified appellate act can end
 Vex's particular personal finding while the carried credential restriction
 remains. That restoration, or another seating, does not clear the restriction.
 Conversely, an appointment does not override a current personal disqualification
-when a new finding is proposed. The acts need their own authority; restoring
-recognition does not automatically restore public power.
+when a new finding is proposed. Ending a personal finding and restoring an
+appointment require their own grounds.
 
 ## Relief on appeal
 

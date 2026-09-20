@@ -12,10 +12,9 @@ turning their need into a status of incapacity.
 immediate and cannot be delegated away by naming a parent, partner, child, or other
 relative. A caregiver and a dependant each keep a separate floor, privacy, voice,
 exit, and remedy. No adult inherits a compulsory personal-care duty or support debt
-merely through kinship. A record of care as employment may support
-recognition for that contribution; it does not prove that care reached another person, that
-the care was safe, that anyone consented, or that the worker acquired authority over
-them.
+merely through kinship. A record of care as employment identifies an activity.
+It does not prove that care reached another person, that the care was safe, that
+anyone consented, or that the worker acquired authority over them.
 
 ## Each role has its own limits
 
@@ -132,9 +131,8 @@ The executable model still needs supplied age evidence to derive its ordinary
 franchise conclusion.
 
 Esa illustrates the gap. Teaching, having been examined and being somebody's
-recorded child prove no age. Esa's teaching produces recognition through the
-route described in chapter 10, but no typed adulthood evidence supports a
-ballot conclusion. That absence does not turn Esa into a child.
+recorded child prove no age. Esa's teaching remains recorded, but no typed
+adulthood evidence supports a ballot conclusion. That absence does not turn Esa into a child.
 
 Esa can challenge the missing or disputed age evidence. The challenge creates
 a named dispute and a duty of independent determination and correction; it does

@@ -24,7 +24,7 @@
 
 # Recognition remains a separate unread conclusion.
 ? reward(Quin).
-# => TRUE
+# => FALSE
 
 # Severity remains a placement input, not a duration input.
 ? severe(Lalo).

@@ -19,23 +19,24 @@ breaks* — and its one statement is `book-1/contents.json`, rendered in section
 <!-- BEGIN GENERATED: stratification -->
 | measurement | predicates | derived | rules | strata |
 |---|---|---|---|---|
-| computed from the constitution | **95** | **51** | **7110** | **9** |
+| computed from the constitution | **92** | **57** | **7376** | **10** |
 
-The floor is **8** rights — `secure`, `eats`, `dwell`, `healthy`, `learn`, `expresses`, `believe`, `meets` — each derived from `person`, which is why they sit at stratum 7 rather than 0. That is the firewall: being inside the `person` cone is what makes a punishing rule a negative cycle.
+The floor is **8** rights — `secure`, `eats`, `dwell`, `healthy`, `learn`, `expresses`, `believe`, `meets` — each derived from `person`, which is why they sit at stratum 8 rather than 0. That is the firewall: being inside the `person` cone is what makes a punishing rule a negative cycle.
 
 | Stratum | Predicates |
 |---|---|
-| **0** | `adjust`, `at`, `attack`, `authorized`, `born`, `broken`, `capture`, `carries`, `challenge`, `choose`, `cite`, `clean` *(monotone cone)*, `clear`, `concurrent` *(monotone cone)*, `continue`, `cruel`, `date`, `deceive`, `endorses`, `equals`, `forgive`, `free`, `hears`, `home`, `injure`, `judge`, `limit`, `list`, `married`, `member` *(monotone cone)*, `observe`, `orderly` *(monotone cone)*, `passport`, `pay`, `permanent`, `promise`, `public`, `put`, `ratifies`, `receives`, `replace`, `rotten`, `show`, `sibling`, `suggest`, `teaches`, `work` |
-| **1** | `grant`, `insure`, `precede`, `provide`, `related`, `severe` |
+| **0** | `at`, `authorized`, `born`, `broken`, `capture`, `carries`, `challenge`, `choose`, `cite`, `concurrent` *(monotone cone)*, `continue`, `date`, `endorses`, `equals`, `free`, `hears`, `home`, `injure`, `judge`, `limit`, `list`, `married`, `member` *(monotone cone)*, `observe`, `orderly` *(monotone cone)*, `passport`, `pay`, `promise`, `public`, `put`, `receives`, `replace`, `rotten`, `show`, `sibling`, `teaches` |
+| **1** | `grant`, `insure`, `precede`, `provide`, `record`, `related` |
 | **2** | `contradict` |
 | **3** | `narrow` |
-| **4** | `authority`, `class`, `collide`, `complete`, `defend`, `end`, `restrain` |
-| **5** | `correct`, `interrupt`, `match`, `oppose`, `reference`, `succeed`, `time` |
-| **6** | `permits` |
-| **7** | **believe**, `building`, `decide`, **dwell**, **eats**, `entitled`, **expresses**, `false`, `family`, `fit`, **healthy**, **learn**, `lose`, **meets**, `owe`, `parent`, `person`, `prisoner`, **secure** |
-| **8** | `become`, `err`, `obliged`, `prevents`, `reward`, `travel` |
+| **4** | `authority`, `class`, `collide`, `complete`, `end`, `lose`, `restrain` |
+| **5** | `answer`, `attribute`, `clean`, `interrupt`, `oppose`, `reference`, `responsible`, `severe`, `succeed`, `time` |
+| **6** | `approves`, `closed`, `false`, `fit`, `problem` |
+| **7** | `correct`, `defend`, `match`, `ready` |
+| **8** | **believe**, `building`, `decide`, **dwell**, **eats**, `entitled`, **expresses**, `family`, **healthy**, **learn**, **meets**, `owe`, `parent`, `permits`, `person`, `prisoner`, **secure** |
+| **9** | `agree`, `err`, `obliged`, `prevents`, `travel` |
 
-Engine base predicates excluding builtins (43): `adjust`, `at`, `attack`, `authorized`, `believe`, `born`, `broken`, `capture`, `carries`, `challenge`, `choose`, `cite`, `clear`, `continue`, `cruel`, `date`, `deceive`, `endorses`, `forgive`, `free`, `hears`, `home`, `injure`, `judge`, `limit`, `list`, `married`, `observe`, `passport`, `pay`, `permanent`, `promise`, `public`, `put`, `ratifies`, `receives`, `replace`, `rotten`, `show`, `sibling`, `suggest`, `teaches`, `work`. This is a dependency classification, not the writable vocabulary; mixed asserted/derived relations require the separate `admits` and `derived_only` rosters.
+Engine base predicates excluding builtins (34): `at`, `authorized`, `believe`, `born`, `broken`, `capture`, `carries`, `challenge`, `choose`, `cite`, `continue`, `date`, `endorses`, `expresses`, `free`, `hears`, `home`, `injure`, `judge`, `limit`, `list`, `married`, `observe`, `passport`, `pay`, `promise`, `public`, `put`, `receives`, `replace`, `rotten`, `show`, `sibling`, `teaches`. This is a dependency classification, not the writable vocabulary; mixed asserted/derived relations require the separate `admits` and `derived_only` rosters.
 
 Strata, base/derived and edge polarity are the engine's, via `nibli-pin --strata`. Two filters are this document's choice and are named so they are visible: the compiler artifacts `event` and `__abs_<hash>` are dropped, and `equals` — which exists because `~($a = $b)` is a real negative edge — counts as a predicate but is excluded from the base list as a builtin.
 <!-- END GENERATED: stratification -->
@@ -180,7 +181,7 @@ Front matter: `epigraph.md`, `00-opening-note.md`.
 | **Part IV — What the design does to a person, and how it catches itself** | | | | | |
 | 24 | The Shield | `24-the-shield.md` | derived | break | landed |
 | 25 | Voiding | `25-voiding.md` | derived | break | landed |
-| 26 | Clawback | `26-clawback.md` | derived | break | landed |
+| 26 | The Limits of a Finding | `26-clawback.md` | derived | break | landed |
 | 27 | A Prisoner Is a Person | `27-a-prisoner-is-a-person.md` | derived | break | landed |
 | 28 | Where People Are Put | `28-where-people-are-put.md` | derived | break | landed |
 | 29 | The One Thing Taken | `29-the-one-thing-taken.md` | derived | break | landed |

@@ -225,7 +225,7 @@
           "kind": "formal",
           "role": "sets_boundary",
           "supports": "RI-5",
-          "ref": "book-1/source/constitution.nibli::Article 4: Findings, prospective signatures, and recognition"
+          "ref": "book-1/source/constitution.nibli::Article 4: Findings and prospective signatures"
         },
         {
           "kind": "decision",

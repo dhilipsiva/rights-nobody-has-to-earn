@@ -8,7 +8,7 @@
 ? false(Jala).
 # => TRUE
 ? lose(Points, Jala).
-# => TRUE
+# => FALSE
 ? become(Jala, Law).
 # => FALSE
 ? become(Amend_Sneak, Law).

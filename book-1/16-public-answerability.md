@@ -45,9 +45,9 @@ and records Rebel's exposure of Boss. Boss is also recalled. The pins derive
 public answerability for Boss and a shield for Rebel, while deriving neither
 confinement nor a void for Rebel in this case.
 
-Boss holds no Review credential, and recall blocks recognition from Boss's
-examination. Those are specific consequences in the accountability mechanism;
-they do not prove that every capacity Boss has outside it disappeared.
+Boss holds no Review credential. That is a specific consequence in the
+accountability mechanism; it does not prove that every capacity Boss has
+outside it disappeared.
 
 A counterfactual makes the dependency visible. Remove Boss's answerability
 route and Rebel loses this shield; the supplied custody premises then produce
@@ -78,8 +78,8 @@ an unrestricted power to investigate.
 
 Vex has an electorate seat, a completed prior credibility case and a carried
 credential restriction. The pins show public answerability, the personal void
-and refusal of the Review credential together. The finding closes recognition
-routes and prevents a new adverse finding from qualifying. It does not establish
+and refusal of the Review credential together. The finding prevents a new
+adverse finding from qualifying. It does not establish
 that every word Vex speaks is false.
 
 The restoration case separates the conclusions again. A qualified appellate
@@ -87,9 +87,9 @@ act naming the prior case ends its personal consequence. A generic judgment
 and forgiveness flag do not. Public answerability remains. The credential
 still does not derive, because the carried restriction has not been cleared.
 
-Restored recognition and renewed authority are therefore different questions.
+Ending a personal finding and renewing an appointment are different questions.
 A fresh seating does not by itself clear that history either. The chapters on
-the credential and clawback examine the extent and cost of those consequences;
+the credential and the limits of findings examine the extent and cost of those consequences;
 calling someone answerable cannot settle them.
 
 ## What it costs

@@ -1,0 +1,61 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+# Contribution, adverse findings and ordinary claims remain separate.
+:expect-pins 25
+? teaches(Esa, Fin).
+# => TRUE
+? work(Quin, Census).
+# => TRUE
+? judge(Gia, Bela).
+# => TRUE
+? reward(Esa).
+# => FALSE
+? reward(Quin).
+# => FALSE
+? reward(Gia).
+# => FALSE
+? false(Bela).
+# => TRUE
+? teaches(Bela, Cira).
+# => TRUE
+? lose(Points, Bela).
+# => FALSE
+? reward(Bela).
+# => FALSE
+work(Bela, UnrelatedCare).
+? work(Bela, UnrelatedCare).
+# => TRUE
+? person(Bela).
+# => TRUE
+? owe(State, Eats, Bela).
+# => TRUE
+? decide(Bela, Ballot).
+# => TRUE
+? travel(Bela).
+# => TRUE
+? prisoner(Bela).
+# => FALSE
+promise(Foundry, Wage, Bela).
+authorized(Steward, CompensationAttester, Bela).
+observe(Steward, Wage, Bela, LabourBasis).
+? provide(Foundry, Wage, Bela).
+# => TRUE
+pay(Bela, Contribution, Ledgerhouse, SchemeM).
+authorized(Assay, InsuranceAdjudicator, Bela).
+observe(Assay, Illness, Bela, SchemeM).
+? insure(Ledgerhouse, Bela, Illness).
+# => TRUE
+? false(Cira).
+# => FALSE
+? lose(Points, Cira).
+# => FALSE
+? owe(State, Learn, Cira).
+# => TRUE
+? obliged(Review, ExplainTheGroundOfACredibilityFinding, Bela).
+# => TRUE
+? obliged(Appeals, ReviewContinuingCredibilityRestriction, Bela).
+# => TRUE
+# Neither recognition nor the removed personal loss can be directly asserted.
+:refuse reasoning /declared derived-only/
+reward(Bela).
+:refuse reasoning /declared derived-only/
+lose(Points, Bela).

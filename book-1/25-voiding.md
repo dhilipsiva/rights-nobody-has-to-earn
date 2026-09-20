@@ -1,8 +1,8 @@
 # Voiding
 
-Bela's void closes the recognition routes and records a recognition loss.
+Bela's effective credibility finding restricts a particular use of public power.
 Standing, the floor, movement, the ballot and public answerability remain.
-A person with an effective credibility finding also cannot qualify a new
+A person with an effective credibility finding cannot qualify a new
 adverse finding against somebody else. None of this establishes that every
 statement Bela makes is false.
 
@@ -29,8 +29,8 @@ every lawful earlier act was invalid.
 
 The ground must name deceit, a fabricated record, a concealed conflict or
 withheld evidence. A complaint alone is not one of those findings. Nogra and
-Nogrb receive recognition for examining Targ4 on a complaint. A proposed
-adverse finding still needs their agreement on the actual incident and ground.
+Nogrb record examinations of Targ4 on a complaint. A proposed adverse finding
+still needs their agreement on the actual incident and ground.
 One signer's affirmation does not suffice. When both agree, the proposal can
 qualify; Targ4 is voided only when the completed case is also recorded.
 
@@ -49,9 +49,8 @@ work.
 
 ## Findings against an examiner
 
-Dev is Esa's parent and judges Esa. That examination cannot earn examination
-recognition, and the relationship prevents Dev from qualifying an adverse
-finding about Esa. It does not automatically void Dev. A separate finding of
+Dev is Esa's parent and judges Esa. The relationship prevents Dev from
+qualifying an adverse finding about Esa. It does not automatically void Dev. A separate finding of
 concealed conflict needs the same case and process as any other adverse finding.
 
 Lupo's deceit of Mira is the subject of such a completed case. Lupo is voided;
@@ -60,9 +59,9 @@ Lupo, would not supply that case. The accusation cannot do the work of the
 particular judgment.
 
 That distinction also protects an examiner against an unsupported accusation.
-The recorded allegation alone does not remove recognition. It does not establish
-that the examiner was honest; it establishes what is required before an adverse
-personal consequence may follow.
+The recorded allegation alone does not create a personal finding. That does not
+establish that the examiner was honest; it establishes what is required before
+an adverse personal consequence may follow.
 
 ## What has to cross the record
 
@@ -72,10 +71,10 @@ finding. Tyr is not voided. The history must have an identified predecessor,
 agreed inventories and carry reports, and a selected current constitutional
 record without a competing selection. A bare mark cannot supply it.
 
-That carried restriction concerns public power. It is insufficient by itself
-to withhold ordinary recognition or record a clawback: those consequences need
-an identifiable finding the person can challenge. Vex's personal void rests
-on the separately recorded prior case.
+That carried restriction concerns the appointment. It is insufficient by itself
+to create a personal finding. Vex's void rests on the separately recorded prior
+case, which Vex can challenge. Neither conclusion cancels ordinary contributions
+or confers a recognition status.
 
 Current disqualification matters as well. Lupo has an appointment and a
 witnessed clearance from the prior record, but the current record also contains
@@ -100,7 +99,7 @@ when the ordinary body is a party.
 A generic judgment and a forgiveness flag restore nothing.
 
 Purga's complete adverse case remains in the record alongside the qualified
-restoration. Neither a void nor recognition loss follows. The history need not
+restoration. No effective personal finding follows. The history need not
 be erased to end its consequence. The same applies to an adjudicated concealed
 conflict: Dev's family relationship and examination can remain recorded after
 the finding is restored.
@@ -108,15 +107,16 @@ the finding is restored.
 Renaming the restored finding does not revive it. Restoration follows the same
 subject, incident and ground across record names. A distinct incident or ground
 is assessed separately; one restoration is not permanent immunity from another
-finding. Restoring recognition also does not automatically restore a recalled
-or carried-void public appointment. No automatic expiry ends a finding merely
-because nobody reviews it.
+finding. Ending the personal finding also does not automatically restore a
+recalled or carried-void public appointment. No automatic expiry ends a finding
+merely because nobody reviews it.
 
-Every target of an effective finding is owed an explanation by Review. Targo's
-case tests that duty without a separate personhood entry: the finding and the
-reasons duty both derive. The subject's own challenge creates an Appeals duty
+Every target of an effective finding is owed an explanation by Review and an
+independent review of the continuing restriction by Appeals, without having to
+ask. Targo's case tests the explanation duty without a separate personhood
+entry: the finding and the reasons duty both derive. The subject's own challenge creates an Appeals duty
 without either signer's permission or a prior merits finding. Bela's challenge
-opens that route while the finding continues. Neither duty proves that reasons
+opens that route while the finding continues. None of these duties proves that reasons
 were delivered or a review occurred.
 
 ## What it costs
@@ -150,5 +150,5 @@ finding cannot make the floor a reward for being believed. Explanation,
 representation and review must still reach a child in practice; their duties
 are not evidence that someone arrived.
 
-The next chapter follows the recognition loss itself and the boundary that
-prevents it from spreading to a student or dependant.
+The next chapter follows the limits of the finding: what can be corrected,
+what remains owed and what must happen for the restriction to end.

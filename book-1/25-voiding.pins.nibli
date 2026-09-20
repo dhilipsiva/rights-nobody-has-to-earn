@@ -425,10 +425,10 @@ cite(Nogrb, Complaint, Targ4).
 # => TRUE
 
 ? reward(Nogra).
-# => TRUE
+# => FALSE
 
 ? reward(Nogrb).
-# => TRUE
+# => FALSE
 
 ? false(Targ4).
 # => FALSE
@@ -695,7 +695,7 @@ observe(TemporalReview, Order_After_Restore_Dev_Conflict, Epoch_Current, RecordE
 # => FALSE
 
 ? lose(Points, Bela).
-# => TRUE
+# => FALSE
 
 ? false(Tyr).
 # => FALSE
