@@ -51,10 +51,12 @@ record and have no reports placing them at home; the placement marker is silent 
 both. Add the home-placement report for Ruk, and it fires because Ruk is ineligible.
 Add the equivalent report for Hano, and it remains silent.
 
-This test distinguishes the reported act from a home option or a family entry. It
-also establishes only the direction tested. As chapter 28 explains, the marker does
-not cover every wrong destination or conflicting placement, and no unrecorded act
-can reach it.
+This test distinguishes the reported act from a home option or a family entry.
+Chapter 28 also tests inappropriate secure placement, unknown destinations,
+competing reports and an exact place without permission for that case. Competing
+qualified placement records block custody authority. These are distinct checks;
+the home-placement example alone establishes none of the others. No unreported
+physical act can reach the placement-report alarm.
 
 The alarm therefore needs testing as much as the routing rule does. Neither its
 location in the constitution nor its name makes it reliable.
@@ -72,9 +74,11 @@ creates an investigation duty; it does not establish the alleged breach.
 Record and time defects use expressly named challenge routes. Missing or invented
 carry, conflicting histories, vanished protected entries, disputed adulthood evidence,
 conflicting order, or unsupported custody can create an Appeals duty when the
-corresponding challenge fact reaches the record. A comparison with that fact withheld
-shows the intake limit: an otherwise valid custody lease can remain unsuspended.
-Naming the consequence of a filing does not establish that the filing was received.
+corresponding challenge fact reaches the record. Custody also has a separate filing
+route: a retained subject submission or an independently received copy can suspend
+the case even when the primary registry's challenge entry is absent. If none of
+those inputs reaches the evaluated record, the reasoner cannot discover the filing.
+Naming its consequence does not establish that a submission was received.
 
 The adulthood case needs its own boundary. General adulthood attaches
 automatically at the common age; a registry entry is evidence, not the source
@@ -87,10 +91,12 @@ Likewise, a vanished protected entry establishes a mismatch between supplied rec
 The carry comparison has no representation of lawful retirement that would distinguish
 it from another missing carry. Its report alone cannot establish an unlawful deletion.
 
-These duties arise kind by kind. The temporal challenge path has no durable filing
-receipt, alternate intake witness, or advocate-created suspension record. A newly
-recognised kind of defect needs a route to the body responsible for it; a general
-right to justice does not silently supply every executable connection.
+These duties arise kind by kind. Custody renewal requires evidence of accessible
+primary and independent alternate intake, counsel, retained copies and filing
+reconciliation. A pending filing follows the case through renewals and aliases;
+only a qualified independent disposition can end its suspension. Other record
+challenges retain their specified readers and duties. A general right to justice
+does not silently supply every executable connection.
 
 Chapter 7 follows the source-bound bridge from the review duty into typed reader and
 action duties, positive findings of non-response, alternates, continuity and remedy.

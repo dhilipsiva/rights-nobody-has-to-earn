@@ -89,13 +89,13 @@
 # Each derives the parent record and the measure built on it, asserts an
 # independently reviewed defect against the parent, and derives both FALSE
 # afterwards while the person named in the measure keeps personhood and the
-# floor debt and is not a prisoner. Measured with the same fixtures on
-# 2026-09-16: before the defect the requisition carries its restraint, its
-# recorded loss and the operator's duty to inventory, return or compensate,
+# floor debt and is not a prisoner. Before the defect the requisition carries
+# its restraint, recorded loss and the operator's duty to inventory, return or compensate,
 # and the defence structure carries its duty to stay inside the Assembly's
-# ceilings, appropriations and audit; after it, each of those is FALSE too.
-# They establish what stops following. They do not establish that property was
-# returned, that a deployment ended, or that any remedy was performed.
+# ceilings, appropriations and audit. Withdrawal stops the permissions,
+# restraints and losses; the inventory/return/compensation and defence-limit
+# duties continue under the recorded undertakings. They do not establish that
+# property was returned, that a deployment ended, or that any remedy was performed.
 #
 # KIND: CONTENT pin. Run:
 #   ./verify.sh --only book-1/18-the-vote-conviction-does-not-take.pins.nibli

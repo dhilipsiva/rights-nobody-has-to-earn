@@ -4115,6 +4115,68 @@ author-approved under delegated approval (2026-09-13)`. Item 19 is removed from
 the tracker after its implementation and checks; item 20 remains open. No
 submission, external endorsement, release or operational success is claimed.
 
+**Item 20 complete — 2026-09-20.** A fresh reading of all 34 ordered inputs
+from `28e88b2d` is recorded in
+[the final manuscript review](reviews/2026-09-20-final-manuscript-review.md).
+The assessment is 8.5/10 as a manuscript and 8/10 for publisher readiness:
+editorial judgments within the same AI-assisted project, not independent
+endorsements. It names the strongest chapters, serious objections, remaining
+repetition, dense institutional passages and the limits of operational evidence.
+No score was forced by further cosmetic work.
+
+The opening and chapters 1, 3, 18, 24, 30 and Part V now consistently distinguish
+custody duties from shelter or speech, raw allegations from case-bound severity,
+proposal labels from exact-candidate authority, qualified merits from the
+shield, and suspensive filings from final relief. Placement alarms and the
+independent filing/intake routes are described at their implemented scope.
+The chapter-18 pin comment now retains public-safety duties after permission
+withdrawal. No formal rule or executable expectation changed. Existing prose
+locators and the amendment record's description of the floor controls were
+aligned with the current chapters and pins.
+
+The kibbutz salary-reform share is now attributed directly to Uriel Leviatan's
+paper, p. 12; Abramitzky remains the source for community count and incentive
+analysis. The registry retains its stable identifier and numerical values.
+Targeted primary-source checks and the bundled democracy calculation are
+reported with their actual retrieval and replication limits. No comprehensive
+new fact-check of every cited book or external review is claimed. All material
+findings from this reading have supported repairs; none remains merely
+disclosed or rhetorically defended.
+
+The focused run passes 722 pins across 89 cases in 21.40s. The complete
+`RIGHTS_VERIFY_JOBS=4 ./verify.sh` run passes **88,024 pins across 16,087 cases
+in 1,198.57s (19m 58.57s)**, with complete contradiction checks and no findings.
+The five-minute target is not met. No active known-defect expectations remain.
+Five claim-discipline, ten reader-coverage, six reference-integrity and seven
+renderer development tests pass. The two failed prose locators were repaired;
+the established builder environment supplies the renderer's dependencies, and
+the correctly filtered reader test run is counted instead of an initial
+zero-test invocation. No new verification gate was added.
+
+The bootstrap pin and repository overview now identify the published companion
+revision actually used, `b707dad73876f7e1620ea8bb6f80242aa374c759`. Its changes
+since `979fe8b` leave the engine packages used here unchanged. The overview
+separates the new timing from historical CPU and memory measurements. This
+does not claim a new clean-clone run or edit the companion's unrelated work.
+
+The rebuilt manuscript contains 51,606 rendered-text words, of which 39,503
+are derived (76.55%); the five-chapter sample contains 10,089. The proposal
+uses approximately 52,000 and 10,000 words and links the completed review.
+All 156 full-book and 29 sample PDF pages were visually inspected; all 1,212
+and 197 checked text blocks occur, with no empty pages or out-of-page text.
+The full/sample PDFs have 268/36 bookmarks, 174/33 valid internal destinations
+and 61/37 external links. Ten browser renders at 360px and 1280px pass overflow,
+fragment, image and font checks; selected views were inspected. Both EPUBs
+pass EPUBCheck 5.4.0 under EPUB 3.4 rules with zero errors and warnings.
+
+The exact revisions are `session-drafted, author-approved under delegated
+approval (2026-09-13)`. The epigraph, canonical household paragraph, one-line
+child fixture, child-section requirements and exemptions remain unchanged.
+Item 20 is deleted after implementation and required checks, closing all
+twenty items in the root revision backlog. Book 2 remains collection-only;
+no publisher contact, submission, release, Gate C completion or successful
+external operation is declared.
+
 ### Measured Nibli capability boundaries
 
 Each is a dated measurement against a named engine revision, not a timeless
@@ -4582,7 +4644,10 @@ The repo is deliberately **mixed-licence** — see `LICENSING.md` before adding 
 
 - `TODO.md` — the ordered revision backlog requested on 2026-09-18 after the
   manuscript review, covering substantive corrections, evidence, editing and
-  publication preparation. Creating the plan does not implement its items.
+  publication preparation, **completed 2026-09-20**. All twenty items landed;
+  their decisions and validation are recorded above and the final assessment
+  is in `reviews/2026-09-20-final-manuscript-review.md`. Completion does not
+  declare Book 1 released or activate Book 2.
   Its predecessor was **retired 2026-09-18, its work complete** (git retains
   it): the ordered tracker for the 2026-09-16 rebuild of Book 1, placing the
   child with nobody at the heart, engines before breaks, every family rendered, both books

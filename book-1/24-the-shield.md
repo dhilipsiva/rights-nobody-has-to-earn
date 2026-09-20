@@ -56,11 +56,12 @@ individual grounds, current authority, evidence, review and remedy; a label
 of protection supplies none of those conditions. No such order appears in
 these cases.
 
-The underlying conviction rule still has a narrow account of defences. A
-public actor's force requires its own necessity and less-harmful-means
-findings, but those requirements do not add self-defence, justification or
-provocation to the conviction rule. The shield is no substitute for those
-questions about the offence.
+The underlying custody case separately requires adjudicated defences and
+exculpatory evidence, criminal proof, disclosed lawful evidence, counsel and
+a fair hearing. The adjudicator and independent merits reviewer must agree
+on those conditions for the same case. The shield cannot substitute for that
+inquiry, and a finding that a prosecution is unrelated cannot bypass it.
+The reasoner checks the supplied findings; it does not decide a defence itself.
 
 ## Kel
 

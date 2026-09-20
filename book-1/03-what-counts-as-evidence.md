@@ -45,11 +45,12 @@ record takes the narrow, challengeable result needed for the specified purpose,
 not an unrestricted economic dossier. The result must meet that route's
 requirements for authority and review; merely naming it does not authenticate it.
 
-The design still classifies. It distinguishes recorded acts and derives
-consequences from them. Its severity conclusion attaches to the person named
-in the case, rather than to a separately stored event. That scope matters for
-placement and cannot be described as an absence of all ratings. What the
-record excludes is a freely writable general verdict on personal worth.
+The design still classifies. It distinguishes adjudicated acts and derives
+consequences from them. Severity binds the person, case and incident; its
+summary about a person cannot authorise placement in another case. That
+classification matters for confinement and cannot be described as an absence
+of all ratings. What the record excludes is a freely writable general verdict
+on personal worth.
 
 ## Facts and conclusions are kept apart
 
@@ -70,16 +71,19 @@ entry; Hex has it through the convocation's seating. Answerability is not
 permission to judge. The later chapters distinguish it from an examiner's
 credential and from authority for a particular public act.
 
-Severity shows why the premises must be read together. With the Court's
-judgment and cited case in place, an attack and cruelty toward the same victim
-establish severity. Alternatively, either kind of act toward one person can
-combine with an injury to a distinct person. There is no victim-count field.
-The rules compare the people named in the entries.
+Severity shows why the premises must be read together. The underlying case
+needs qualified criminal proof, adjudicated defences and fair procedure.
+Separately signed findings must identify the same subject, case and incident.
+Intentional injury and aggravated cruelty toward the same person form one
+qualifying pair. Either dimension toward one person can instead combine with
+injury to another. The rules compare the people identified in those findings;
+a raw attack or cruelty entry supplies none of their authority.
 
 The test gives Probe an attack against one person and cruelty against another.
-That combination alone produces no severity conclusion. Add cruelty against
-the person already attacked, and severity follows. The pairing matters;
-their mere presence would not be enough.
+Severity does not follow. Adding cruelty against the person already attacked
+still supplies no qualified finding. The placement chapter follows the positive
+cases: Lalo, Ruk and Don each have a qualifying pair within an adjudicated case.
+Both the pairing and the authority for its findings matter.
 
 A derived conclusion is not necessarily supported by a long chain. Nor are
 all its inputs observations. The rules can forbid a direct verdict while
@@ -115,13 +119,13 @@ The closure makes that a source change; it does not establish the editor's
 authority to make it. Nor does it determine whether the new word conceals a
 judgment that should require a separate decision.
 
-The law-label register protects named articles governing the floor, prisoner
-personhood and the register itself. A proposal declaring one of those targets
-is blocked by that route. That is a check on declared names, not protection
-of their meaning. The evidence article's name is not on that register, and
-adding it would not make the register inspect what a source edit actually does.
+The protected register names articles governing the floor, prisoner personhood
+and the register itself. A proposal's declared target establishes neither its
+effects nor authority to enact it. Docketing a person's name cannot create a
+personal credibility finding either. Adding a name to the register would not
+make it inspect what a source edit actually does.
 
-The exact-change interface asks a different question. A proposed vocabulary
+The exact-change interface reviews the replacement itself. A proposed vocabulary
 change must be explicitly reviewed as part of the same candidate text that
 received political consent and independent compatibility review. Matching
 those records is a condition of the formal result. It does not discover every
@@ -184,10 +188,10 @@ the executable ballot conclusion, but the legal status of adulthood does not
 originate in the entry. A forged or withheld entry remains a hazard for the
 ballot record; neither an age nor an outside clock is verified here.
 
-Reserved conclusions cannot be written directly. Their admitted
-premises can include judgments, and some of those judgments lack a separately
-identified finder. A closed vocabulary does not supply that missing review,
-and describing the consequence does not resolve it.
+Reserved conclusions cannot be written directly. Their admitted premises can
+still include judgments rather than observations. Naming the finder and requiring
+independent review make responsibility explicit; a closed vocabulary cannot
+authenticate those actors or establish the truth of their account.
 
 ## The child with nobody
 

@@ -3,8 +3,13 @@
 # Book 1: revision toward an exceptional finished book
 
 Created 2026-09-18 at the author's request: "Create a TODO to make book 10/10."
-This is a new revision backlog following the completed 2026-09-16 rebuild.
-It does not reopen completed rebuild tasks or declare this edition released.
+This revision backlog followed the completed 2026-09-16 rebuild.
+
+**Completed 2026-09-20: all twenty items are implemented and checked; no items
+remain open in this backlog.** The [final manuscript review](reviews/2026-09-20-final-manuscript-review.md)
+records the assessment, material repairs and measured validation. The coherent
+item commits and `CLAUDE.md` retain the decisions and results. This does not
+declare a released edition or Gate C; Book 2 remains collection-only.
 
 The starting review covered all 31 numbered chapters, the opening note,
 epigraph and method at `da36b0db`: approximately 93,600 words, rated 7.5/10 as
@@ -14,14 +19,15 @@ or comprehensively fact-check the empirical claims. Its suspected design
 defects must be checked against the current source before implementation.
 
 **The objective is a compelling, defensible, precise and readable book.** A
-perfect score cannot be guaranteed or made true by closing a checklist. Finish
-the work below, then reassess the resulting manuscript without protecting the
-starting diagnosis or promising a particular rating.
+perfect score cannot be guaranteed or made true by closing a checklist. The
+finished manuscript was reassessed without protecting the starting diagnosis
+or promising a particular rating.
 
 ## Execution contract
 
-- The current request creates the plan. Implementation is subsequent work;
-  creating this file does not mark any item implemented or verified.
+- Creating this file originally established the plan, not implementation.
+  The following contract governed execution and applies to any newly added
+  revision item.
 - When execution begins, work one numbered item at a time, in order. Each
   item includes its necessary rules, pins, prose and checks. Keep later items
   open until their own completion criteria are met.
@@ -108,28 +114,6 @@ evidence, a necessarily constrained and adequately defended limitation, and an
 unresolved defect or blocker. Only the first three can close the relevant issue.
 Reader-facing prose states present rules and justified limits; the attempted
 solutions and development history stay outside the book's reading sequence.
-
-## IV. Prepare a credible open book and reassess it
-
-### 20. Give the finished manuscript a fresh, evidence-based review
-
-- [ ] Read the final ordered manuscript as a whole and reassess argument,
-  coherence, evidence, prose, structure, originality and publication readiness.
-
-Use the strongest objections, not agreement with the politics, as the test.
-Distinguish formal results, editorial judgment and optional external feedback.
-Name the remaining weaknesses and the strongest chapters with specific examples.
-If a material defect remains, add a concrete repair task and complete its
-necessary validation before declaring this backlog finished. A fallback defense
-is available only under the resolve-before-defending rule, never as a shortcut
-around implementation. Do not create cosmetic work or keep revising merely to
-force a higher numerical rating.
-
-**Done when:** the substantive problems in this review have supported
-dispositions under the resolve-before-defending rule; all chapters meet the
-observable standards above; no known material error remains merely disclosed
-or rhetorically defended; and the final assessment states the book's actual
-quality without guaranteeing "10/10."
 
 ## Licence
 

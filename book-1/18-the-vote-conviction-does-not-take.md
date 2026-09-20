@@ -27,10 +27,10 @@ calling them enterprises.
 ## What conviction leaves intact
 
 The conviction mechanism withdraws free movement while preserving the person's
-other rights. Hano remains a person, is owed the floor, and retains the
-expression and ballot conclusions. Neither a void nor a recognition loss
-follows for Hano in this case. These are results over the record, not evidence
-that Hano spoke or cast a vote.
+other rights. Hano remains a person, is owed the floor including expression,
+and retains the ballot conclusion. Neither a void nor a recognition loss
+follows for Hano in this case. No recorded act of expression follows from
+custody, and the ballot entitlement is not evidence that Hano cast a vote.
 
 The retained franchise matters because people subject to confinement remain
 entitled to participate in choosing the government responsible for it. Voting

@@ -108,8 +108,8 @@ answer a shortage of people willing and able to perform those tasks.
 
 The kibbutzim make this a question to investigate rather than a verdict to
 announce. Abramitzky's account concerns roughly 270 communities and examines
-shared commitments, selection, monitoring, incentives and exit. By around
-2011, roughly three in four kibbutzim had adopted differential salaries.
+shared commitments, selection, monitoring, incentives and exit. Leviatan reports
+that by 2011, roughly three in four kibbutzim had adopted differential salaries.
 Their history supplies evidence of durable cooperation and pressure to change
 its terms. It does not isolate leadership rotation as the cause of reform,
 or show that an unconditional minimum requires equal pay.[^kibbutz]
@@ -204,11 +204,12 @@ offence or choose a sentence from an injury report.
 The custody conclusion requires a case tied to the person, judgment and
 injured person, with current authority on the witnessed constitutional record.
 Missing authority stops that conclusion when the supplied record is evaluated
-afresh. Appellate relief already granted can stop it; asking for an appeal
-instead creates a duty to hear, with independent assistance and interim
-protection. A request is neither relief granted nor permission to ignore it.
-These distinctions prevent an unanswered question from being treated as its
-own adjudication.
+afresh. Appellate relief already granted can end it. A custody filing suspends
+the case while independent review is pending, with assistance and a duty to
+hear. A retained subject copy or independent receipt can establish the filing
+without the primary registry's entry. That protection is not a final judgment
+on the merits. The person need not win the appeal before its question can
+interrupt the authority being challenged.
 
 They do not measure duration or open a cell. The record cannot establish that
 outside time advanced, that a later finding arrived, or that an official
@@ -610,8 +611,10 @@ where their conclusions stop.
 [^kibbutz]: Ran Abramitzky, [*Lessons from the Kibbutz on the
     Equality–Incentives Trade-Off*](https://www.aeaweb.org/articles?id=10.1257/jep.25.1.185),
     *Journal of Economic Perspectives* (2011), and *The Mystery of the Kibbutz*
-    (2018). The community count and salary-reform share describe the study
-    period, not a current census.
+    (2018). The salary-reform share comes from Uriel Leviatan,
+    [*Lessons from the Kibbutz as a Real Utopia*](https://www.sscc.wisc.edu/soc/faculty/pages/wright/ASA/Leviatan%20--%20lessons%20from%20the%20kibbutz%20as%20real%20utopia.pdf),
+    p. 12: his series reports 76% in 2011. The community count and reform share
+    describe their respective study periods, not a current census.
 
 [^ujamaa]: James C. Scott, [*Seeing Like a State*](https://www.jstor.org/stable/j.ctt1nq3vk)
     (1998), chapter 7. The registry distinguishes his relocation estimate

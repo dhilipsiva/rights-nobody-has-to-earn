@@ -93,10 +93,10 @@ receipt, not a different entitlement.
 
 Learning also has a route through teaching that was heard. Nell's record
 contains no teacher and no hearing. Belief has no route certifying that a
-person believes; its protection does not require such a conclusion. A recorded
-voice, and a separate shelter conclusion, follow through confinement. Nell
-is not confined in this case. The later custody chapters examine the limits
-of what those conclusions establish.
+person believes; its protection does not require such a conclusion. Custody
+adds duties to secure shelter and voice, but supplies neither a shelter receipt
+nor evidence that somebody spoke. Nell is not confined in this case and needs
+no custody record to be owed either protection.
 
 None of these missing conclusions says Nell is hungry, homeless, ill, unsafe
 or alone. The record does not establish that food arrived; it also does not

@@ -59,6 +59,9 @@ Rendering is separate from the substantive verification below.
 The [publisher proposal](submission/README.md) includes the synopsis,
 readership, contents, sample chapters, completion statement and proposed
 editorial partnership under the existing open licences.
+The [final internal manuscript review](reviews/2026-09-20-final-manuscript-review.md)
+records the completed revision backlog, corrected findings and remaining
+editorial weaknesses. It is not an external endorsement or a release decision.
 
 ## Contribute
 
@@ -125,25 +128,30 @@ the first build compiles the bundled C library using a C compiler and Make
 (available in the Nibli development shell). Other targets retain Rust's default
 allocator. The explicit authoring executable is unchanged.
 
-Latest full run measured on 2026-09-16 with four workers and the release binary
-already built against the pinned engine `979fe8b`: all 84,314 pins across 15,481
-cases passed, with complete formal contradiction scans and no findings, in
-884.91 seconds (14m44.91s); nine existing known-defect pins still reproduce.
-Three runs of this inventory on 2026-09-16 took 825.00, 884.91 and 1,041.06
-seconds — **53 to 67 ms per case** — and that spread is machine variance rather
-than a change in the work, which is why the standard is now stated per case
-rather than as a wall-clock target.
-Peak resident memory was observed at about 19,300,000 KiB during the run; the
-user and system CPU totals were not captured this time and the previous run's
-figures (3,371.05 s user, 81.71 s system, 395% utilisation, 21,924,220 KiB peak,
-2026-09-15, 14,892 cases) are the last recorded ones. Other machine activity was
-not controlled, and one unrelated process held roughly one core throughout.
+Latest full run measured on 2026-09-20 with four workers and the release binary
+already built against engine `b707dad`, now recorded in `engine.pin`: all 88,024 pins across
+16,087 cases passed, with complete formal contradiction scans and no findings,
+in **1,198.57 seconds (19m 58.57s)**. No active known-defect expectations remain;
+explicitly weakened counterfactuals still demonstrate their harmful results.
+The engine packages used by this verifier are unchanged between the former
+`979fe8b` pin and `b707dad`; the pin now identifies the published revision
+actually used for this measurement.
+
+For comparison, three runs of the 15,481-case inventory on 2026-09-16 took
+825.00, 884.91 and 1,041.06 seconds — 53 to 67 ms per case. The spread among
+runs of the same inventory reflects machine variance. Peak resident memory for the 884.91-second
+run was about 19,300,000 KiB; its user and system CPU totals were not captured.
+The last recorded CPU totals remain 3,371.05 s user and 81.71 s system, with
+395% utilisation and 21,924,220 KiB peak memory, from 2026-09-15's 14,892-case
+run. Other machine activity was not controlled. CPU and memory measurements
+were not collected for the latest run; the historical numbers are not estimates
+for the current inventory.
 
 This **does not** meet the under-five-minute target. The earlier 275.04-second
 (4m35.04s) result was measured on the 4,190-case inventory that preceded the
 ecological family and is not a current timing. The
-[performance notes](book-1/source/nibli-performance-candidate.md) record where
-the current run spends its time and which leads remain. Every timing here is an
+[performance notes](book-1/source/nibli-performance-candidate.md) record earlier
+measurements and remaining leads. Every timing here is an
 observation, not a cached verification result or a gate on later edits.
 
 ## Author

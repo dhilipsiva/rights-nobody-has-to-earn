@@ -146,8 +146,8 @@ the main reading sequence; the method follows it as an optional technical part.
   — bounded emergency and external powers.
 - [Chapter 21: A Way to Be Heard](21-a-way-to-be-heard.md) — assistance,
   proceedings, remedies and enforcement without an added power to imprison.
-- [Chapter 22: Changing the Rules](22-changing-the-rules.md) — a law label,
-  a constitutional result and an applied change as distinct claims.
+- [Chapter 22: Changing the Rules](22-changing-the-rules.md) — political consent,
+  candidate certification, publication and the version in effect.
 - [Chapter 23: Who Holds the Pen](23-who-holds-the-pen.md) — whose findings count,
   and how absent, forged or stale authority affects them.
 
@@ -230,8 +230,9 @@ the main reading sequence; the method follows it as an optional technical part.
 - **Voiding:** an adverse credibility finding that blocks recognition and records
   a loss, without lowering the floor. Restoration identifies the case and its ground.
 - **Clawback:** the loss of recognition that follows voiding.
-- **Placement:** the conclusion about where a confined person is put. It does not
-  establish that the place exists or is adequate.
+- **Placement:** reviewed authority for a named place of confinement, requiring
+  evidence of availability and lawful conditions. It does not establish that
+  anyone was moved there or received shelter.
 - **Breach marker:** a conclusion naming a defect in the supplied record. It does
   not itself investigate, correct, compensate or release anyone.
 - **Democratic corridor:** the range of public choices within constitutional
@@ -264,9 +265,9 @@ the main reading sequence; the method follows it as an optional technical part.
   to act; a separately established failure to respond can activate an alternate.
   See Chapters [21](21-a-way-to-be-heard.md) and
   [30](30-when-the-system-notices-it-broke.md).
-- **The assembly and approving-public entries:** support the law-label route.
-  These entries are distinct from the federal republic's certified-result
-  machinery and do not prove enactment or deployment. See Chapter
+- **The assembly and approving-public entries:** report a proposal and approval.
+  They supply no separate law-making status. The federal republic's certified
+  result and exact candidate need their own authority and review. See Chapter
   [22](22-changing-the-rules.md).
 - **TimeService, Chronicle and TemporalReview:** supply separately scoped timing,
   source and review evidence. An input does not establish its own honesty or

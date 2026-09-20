@@ -4,7 +4,7 @@
 
 **Book proposal · dhilipsiva · political nonfiction / constitutional design**
 
-**Approximately 51,000 words · complete draft awaiting final manuscript review**
+**Approximately 52,000 words · complete draft with final internal review completed**
 
 This proposal seeks an editorial and print partnership for an openly licensed
 book. It is prepared for a submission decision, without being addressed or sent
@@ -173,21 +173,24 @@ considered for submission.
 ## Completion and limits
 
 As of 2026-09-20, all 31 numbered chapters, the epigraph, opening note and
-method are drafted: approximately 51,000 words across 34 ordered inputs.
+method are drafted: approximately 52,000 words across 34 ordered inputs.
 About 77% of the rendered-text word count belongs to the 30 derived chapters.
 The full manuscript and sample are available locally as HTML, EPUB and PDF.
 
 The complete substantive run for this package passed 88,024 pins across
-16,087 cases in 1,169.06 seconds, with complete contradiction checks and no
+16,087 cases in 1,198.57 seconds, with complete contradiction checks and no
 findings. No active known-defect expectations remain. Explicitly weakened
 counterfactuals still demonstrate the harms their altered rules permit; those
 results do not describe the enacted model. The five-minute verification target
 is not met.
 
 The identified final-check issues have substantive repairs and executed
-regressions. The [fresh whole-manuscript review](../TODO.md) remains before the
-submission decision. This is a complete draft, not a released edition. The
-full PDF has 155 pages; the five-chapter sample has 29. Both EPUBs pass EPUBCheck
+regressions. The [fresh whole-manuscript review](../reviews/2026-09-20-final-manuscript-review.md)
+is complete, including correction of its material findings. It records the
+manuscript's strengths, remaining weaknesses and the limits of review within
+the same AI-assisted project. The submission decision remains separate from
+this complete draft. The full PDF has 156 pages; the five-chapter sample has 29.
+Both EPUBs pass EPUBCheck
 with zero errors or warnings, and the browser and PDF inspections found no
 missing checked text or navigation failures. These are bounded formal and
 rendering checks, not independent editorial endorsement.

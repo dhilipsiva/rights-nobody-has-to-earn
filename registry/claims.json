@@ -611,18 +611,18 @@
     },
     {
       "id": "abramitzky-kibbutz",
-      "claim": "Abramitzky examines equal sharing, selection, exit and incentive pressures in the kibbutzim. Roughly three-quarters had adopted differential salaries by around 2011; the account does not isolate leadership rotation as the cause of reform.",
+      "claim": "Abramitzky examines equal sharing, selection, exit and incentive pressures in the kibbutzim. Leviatan reports that roughly three-quarters had adopted differential salaries by 2011; neither figure isolates leadership rotation as the cause of reform.",
       "value": {
         "differential_salary_share_1999": 0.21,
         "differential_salary_share_2011": 0.76
       },
       "units": "share of kibbutzim",
-      "source": "Abramitzky, \"Lessons from the Kibbutz on the Equality-Incentives Trade-Off\", Journal of Economic Perspectives 25(1): 185-208 (2011), doi:10.1257/jep.25.1.185, https://www.aeaweb.org/articles?id=10.1257/jep.25.1.185; Abramitzky, The Mystery of the Kibbutz, Princeton UP (2018)",
-      "retrieved": "2026-09-19",
+      "source": "For community count and incentive analysis: Abramitzky, \"Lessons from the Kibbutz on the Equality-Incentives Trade-Off\", Journal of Economic Perspectives 25(1): 185-208 (2011), doi:10.1257/jep.25.1.185, https://www.aeaweb.org/articles?id=10.1257/jep.25.1.185; Abramitzky, The Mystery of the Kibbutz, Princeton UP (2018). For the differential-salary series: Uriel Leviatan, Lessons from the Kibbutz as a Real Utopia, p. 12, https://www.sscc.wisc.edu/soc/faculty/pages/wright/ASA/Leviatan%20--%20lessons%20from%20the%20kibbutz%20as%20real%20utopia.pdf",
+      "retrieved": "2026-09-20",
       "method": "reference",
       "fetch": null,
       "book": "book-1",
-      "notes": "Nine cases. The 1999–2011 differential-salary series was checked against published descriptions of the reform literature; the JEP article is the source of record. Part V’s approximate three-in-four share concerns around 2011. Its approximately 270 communities also belong to the study period (the 2011 abstract reports 268), not a current census. Neither figure isolates leadership rotation as the cause, and the chapter does not infer that a universal minimum requires equal pay."
+      "notes": "Nine cases. Fresh source check on 2026-09-20 locates the 1999 share (21%) and 2011 share (76%) in Leviatan's paper, p. 12, rather than attributing that series to the JEP article. Leviatan describes transformation to differential salaries; the registry does not independently reconstruct his census. Abramitzky's 2011 article reports 268 communities and supplies the incentive analysis. The counts concern their stated study periods, not a current census. Neither figure isolates leadership rotation as the cause, and the chapter does not infer that a universal minimum requires equal pay. The stable registry id is retained for its existing bindings."
     },
     {
       "id": "scott-1998-ujamaa",
