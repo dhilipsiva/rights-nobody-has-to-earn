@@ -5,13 +5,18 @@ bounded source: the person cannot move freely.
 
 Hano's qualified case shows the distinction. Custody derives, movement does
 not. Hano remains a person, owed the whole floor, with a ballot entitlement.
-Conviction has not voided Hano or clawed back recognition. The record identifies
+Conviction has not cancelled Hano's other claims. The record identifies
 a reviewed home placement; it contains no shelter receipt or record of speech.
 
 Jala's record contains an injury to the same person, Ivo, but no conviction.
 Jala retains movement. Sharing an injury entry is not sharing the evidence,
 criminal proof, adjudicated defences and fair procedure required for a sentence.
 Neither person's record establishes that shelter was delivered.
+
+Severity answers a further question about the ceiling on placement. It does
+not establish a sentence, make a secure place necessary, or keep an expired or
+challenged authority in force. Even a grave offence needs the independently
+justified place and current authority described here and in Chapter 28.
 
 The practical effects of confinement can nevertheless be wider than its direct
 legal punishment: interrupted employment, threatened tenure, disrupted care,

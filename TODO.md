@@ -5,9 +5,9 @@
 Created 2026-09-18 and refreshed 2026-09-20 at the author's request:
 "Refresh TODO to make book a 10/10."
 
-**Active: items 22–33 below are pending.** The earlier items 01–20 were
-completed on 2026-09-20. Their [final manuscript review](reviews/2026-09-20-final-manuscript-review.md),
-coherent commits and `CLAUDE.md` retain that round's assessment, repairs and
+**Active: items 23–33 below are pending.** Items 01–22 were
+completed on 2026-09-20. The first round's [final manuscript review](reviews/2026-09-20-final-manuscript-review.md),
+subsequent coherent commits and `CLAUDE.md` retain the assessments, repairs and
 validation. This refresh opens further work; it does not reverse those
 completed implementations or declare a released edition or Gate C. Book 2
 remains collection-only.
@@ -133,30 +133,11 @@ solutions and development history stay outside the book's reading sequence.
 
 ## Ordered revision backlog
 
-Work in this order. Items 22–24 settle the remaining substantive questions before the
+Work in this order. Items 23–24 settle the remaining substantive questions before the
 opening and editorial passes depend on their answers. Each item includes its
 own relevant validation under the execution contract; item 33 is a final
 integration review, not permission to defer earlier checks. Chapter numbers
 refer to the [current reading sequence](book-1/contents.json).
-
-- [ ] **22. Establish a defensible severity and placement boundary.**
-
-  **Scope:** Chapters 3, 27–29 and 31; the constitution's custody, severity and
-  placement rules and their substantive cases.
-
-  Test what the qualifying pair of injury and cruelty findings distinguishes.
-  Compare grave harm to one person without a cruelty finding, injuries to more
-  than one person, cruelty, and cases where less restrictive placement is
-  sufficient despite the classification. Do not infer a result from raw acts
-  when the actual rule requires qualified findings. Assess simpler alternatives
-  and repair arbitrary distinctions if established. Keep offence findings,
-  placement necessity and current custody authority separate.
-
-  **Done when:** the reader can explain both why the classification exists and
-  why its boundary is proportionate. Pinned comparisons distinguish severity
-  from permission for secure placement, preserve family and wealth neutrality,
-  and prevent facts from another case supplying authority. Part V supplies the
-  normative defence; the derived chapters show the current consequences.
 
 - [ ] **23. Work through genuine scarcity and conflicting protected claims.**
 

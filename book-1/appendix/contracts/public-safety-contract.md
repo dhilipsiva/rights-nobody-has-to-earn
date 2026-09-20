@@ -70,7 +70,7 @@ replace them with a favourable public-safety label.
 | Existing name | Disposition |
 | --- | --- |
 | `capture` | Retain documented examination evidence. Never arrest or detention. |
-| `severe` | Case-specific independently signed severity dimensions. No threat or protective-power input. |
+| `severe` | A qualified case-specific grave-injury or aggravated-cruelty finding permits consideration of secure placement. Ordinary placements remain eligible. No victim-count, threat or protective-power input. |
 | `prisoner` | Qualified case-specific merits, current lease, reviewed placement and challenge access. No protective holding producer. |
 | `authority`, `permits` | Retain all existing standing, relief and typed constitutional uses. Do not widen them to mean a new protective mandate or order. |
 | `free` | Raw completion report and first-contact standing only. Qualified case-bound relief governs legal release; no conclusion proves physical release. |

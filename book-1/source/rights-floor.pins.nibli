@@ -87,7 +87,7 @@
 ? building(HighSec, Ruk).
 # => TRUE
 ? fit(Ruk, Homestay).
-# => FALSE
+# => TRUE
 # [v0.9] The placement marker is repaired: it reads a placement REPORT
 # (put/3, on the evidence list) against derived eligibility, and the record
 # holds no reports — so it no longer fires on Ruk, whom it used to flag for

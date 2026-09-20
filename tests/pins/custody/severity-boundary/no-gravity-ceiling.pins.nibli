@@ -1,0 +1,19 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+# Explicit alternative: necessity without a gravity ceiling permits this secure placement.
+:expect-pins 8
+? responsible(Case_Placement_nonsevere_in_highsec, CustodyMerits).
+# => TRUE
+? severe(Placement_nonsevere_in_highsec, Case_Placement_nonsevere_in_highsec).
+# => FALSE
+? fit(Placement_nonsevere_in_highsec, HighSec, Case_Placement_nonsevere_in_highsec).
+# => TRUE
+? correct(Case_Placement_nonsevere_in_highsec, ActivePower).
+# => TRUE
+? prisoner(Placement_nonsevere_in_highsec).
+# => TRUE
+? building(HighSec, Placement_nonsevere_in_highsec).
+# => TRUE
+? building(Homestay, Placement_nonsevere_in_highsec).
+# => FALSE
+? owe(State, Dwell, Placement_nonsevere_in_highsec).
+# => TRUE

@@ -312,7 +312,7 @@ that has started lying.
 |---|---|---|---|
 | 1.1 | "The world may report these kinds of thing about a person, and no more." | base predicates at stratum 0 | the generated evidence list, enumerated |
 | 1.1b | "Severity is not one of them — it follows from what was recorded." | `severe(Ghost).` | REFUSED — derived-only |
-| 1.1c | "A single dimension is not enough." | `attack(Hano, Ivo)` / `severe(Hano)` | TRUE / FALSE |
+| 1.1c | "A raw attack entry is not a qualified severity finding." | `attack(Hano, Ivo)` / `severe(Hano)` | TRUE / FALSE |
 | 1.2 | "Being accused is a fact; being guilty is a conclusion." | `judge(Court, Hano)` / `prisoner(Hano)` | TRUE / TRUE, but derived |
 | 1.3 | "You cannot simply declare someone guilty." | `prisoner(Zed).` | REFUSED — derived-only |
 | 1.4 | "Nor can you hand yourself the authority to judge." | `authority(Pax).` | REFUSED — derived-only |

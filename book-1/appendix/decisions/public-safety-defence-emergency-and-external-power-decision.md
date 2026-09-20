@@ -2,6 +2,144 @@
 
 # Book 1 Public-Safety, Defence, Emergency, and External-Power Decision
 
+## Severity as a ceiling, 2026-09-20 — item 22
+
+This subsection and its exact source, test and reader text are
+`session-drafted, author-approved under delegated approval (2026-09-13)`.
+It supersedes the qualifying-pair severity rule and the exclusion of severe
+cases from home confinement and ordinary supported residence. The custody
+merits, case-specific relief, placement, temporal authority, intake and
+continuity safeguards below remain in force. The source and pins enact the
+policy; this record explains its selection and bounded validation.
+
+### Confirmed failure and selected repair
+
+The prior source required two signed dimensions: intentional injury and
+aggravated cruelty to the same victim, intentional injury plus injury to a
+different victim, or aggravated cruelty plus injury to a different victim.
+It had no representation for a grave injury to one victim without cruelty.
+It also barred home confinement and ordinary supported residence whenever
+severity derived, even if the independently reviewed placement established
+that a home was sufficient. The initial 23-pin comparison failed twelve
+expectations: eleven concerned those policy differences; the twelfth lacked
+the adulthood premise required for its ballot control. The fixture was
+corrected explicitly. No harness error or contradiction supplied this diagnosis.
+
+Severity now requires either a qualified **GraveInjury** finding or a qualified
+**AggravatedCruelty** finding in the same adjudicated case and incident:
+
+- Grave injury means death, life-threatening injury, or serious enduring
+  physical or psychological harm. It is a finding about the harm caused,
+  not about the victim's income, existing disability or perceived social value.
+- Aggravated cruelty means deliberately inflicting severe physical or
+  psychological suffering. Duration can be evidence of severity; prolonged
+  duration without severe suffering is not an independent gateway.
+- Each finding uses the existing subject, case, incident, victim, evidence,
+  dimension, procedure, adjudicator and independent-review requirements.
+  Contradictory identity or observation bindings defeat it. The underlying
+  case must already satisfy qualified criminal merits, including the required
+  mental element and adjudicated defences. These are supplied findings, not
+  a machine's medical assessment or an inference from the raw harm predicates.
+- Intentional-injury and injury-to-person findings remain representable and
+  tested. Neither their combination nor the number of victims supplies gravity.
+  A display of another case's severity cannot supply this case's authority.
+
+Severity is a ceiling permitting consideration of a secure destination. It
+does not select that destination. A qualified case without completed relief
+can consider home confinement or ordinary supported residence regardless of
+gravity. Actual authority still needs the individually justified, available,
+lawful and independently reviewed named place. Ordinary residence requires
+positive evidence that no suitable consenting home is available; missing home
+data alone is insufficient. Secure placement requires severity **and** the
+positive finding that less restrictive alternatives are insufficient. Current
+lease and accessible independent challenge remain additional conditions.
+
+The canonical Ruk case has an explicit fictional grave-injury finding to keep
+its separately justified secure-placement example. Its previous complete
+two-victim, pair-only scenario is preserved under `BoundaryTwoVictims`, with
+all qualifying findings and placement evidence retained and no grave finding
+added. It now fails secure eligibility and custody authority. The change is
+therefore not concealed by silently interpreting Ruk's prior injuries as grave.
+
+### Alternatives and reasons
+
+Retaining the pair rule fails the comparison: victim count distinguishes cases
+without establishing the gravity of either injury, while a single grave injury
+can fall outside it. Adding a grave-injury exception would repair that omission
+but leave both the count-based route and the mandatory exclusion of ordinary
+places. That partial repair is rejected. Making every grave offence mandate
+secure placement likewise ignores a sufficient less restrictive place; the
+existing severe-at-home scenario now authorises the home rather than recording
+its refusal as acceptable behavior.
+
+Removing severity entirely is the strongest simpler alternative. It delegates
+the whole placement boundary to the individually justified necessity decision,
+including situations involving repeated lesser harms. The explicit
+`no-gravity-ceiling` counterfactual changes only secure eligibility and retains
+the non-severe secure-placement fixture. It derives secure custody. That is
+the alternative's greater discretion, not a scanner contradiction. It is
+rejected because necessity or predictions about future behavior would then
+permit the most restrictive penal place without grave proved harm. The selected
+rule requires both offence gravity and current placement necessity, while
+preserving ordinary custody and noncustodial remedies under their own grounds.
+Protective orders retain their separate contracts and cannot become a substitute
+penal sentence.
+
+The classification leaves a legal judgment about serious enduring harm and
+severe suffering. Its criteria must be applied under prior public law, criminal
+proof, disclosure, counsel, reasons, independent review and challenge. The
+model checks the supplied qualified record, not the truth of its evidence.
+No numeric score, victim ranking, dangerousness label or external compute
+oracle is added. Mistaken classification burdens the person confined;
+insufficient protection burdens those exposed to further harm. Evidence of
+systematic misclassification or a sufficient less restrictive arrangement
+requires reconsideration of the rule or the particular placement. Neither
+formal acceptance nor a general claim of necessity establishes effectiveness.
+Part V states this comparison; derived chapters project the resulting rules.
+
+### Coverage and verification
+
+The expanded 221-pin live case tests grave harm to one person, cruelty alone,
+the preserved two-victim case, severe cases at home and in an ordinary residence,
+and gravity without the alternative or necessity findings. It removes severity
+review and procedure, changes victim, evidence, subject, case and incident,
+supplies an unknown dimension, and retains raw acts without qualified findings.
+Family presence leaves secure and ordinary-residence outcomes unchanged;
+neither wealth nor poverty can replace individual necessity. Standing, dwelling
+debt and adult voting survive both permitted and refused custody conclusions.
+The existing execution case separately checks cross-case severity and secure-
+eligibility exclusion, conflicting places and reported wrong destinations. The four severe rows of
+the existing placement matrix retain every query; only home eligibility changes.
+The old receipt-era matrix report is explicitly historical; no retired hash,
+receipt or acceptance gate is reinstated.
+
+The live boundary passes in 11.76s; chapter 28 passes 73 pins in 12.37s;
+chapter 3 passes 45 in 11.42s; chapter 27 passes 38 in 16.27s; the execution
+case initially passes 49 in 11.87s. A final explicit check that Ruk’s first
+case cannot supply secure eligibility to the second expands that file to
+50 passing pins in 13.74s. The eight-pin no-ceiling counterfactual passes in
+10.64s. The sixteen floor-vector development tests pass in 20.90s. The first
+complete attempt stops on one legacy floor pin expecting Ruk's home eligibility
+to be false. That superseded expectation is corrected; the secure destination
+and all floor assertions remain. The corrected 102-pin floor file passes in
+22.23s. The final complete run passes **88,315 pins across 16,091 cases**, with
+complete contradiction checks and no findings, in **1,187.06s**. The five-minute
+target remains unmet. That run captured the 49-pin execution file before the
+additional cross-case query was added; the final 50-pin file passes separately
+against the same executable constitution, preserving all old assertions.
+These checks together exercise every current expectation; no verification
+result is persisted as a reason to skip a future run.
+
+The six reference tests pass in 3.12s after updating a stale chapter locator;
+ten coverage tests pass in 0.19s and five claim-discipline tests in 0.74s.
+Prose consistency, current-design presentation, child fixtures and exemptions,
+reading order, and the Book 2 boundary were reviewed separately. The 34 ordered
+inputs contain 52,755 whitespace-delimited words excluding HTML comments;
+39,680 are derived (75.22%). Item 22 is complete. No external operational
+success, medical assessment, human review or empirical endorsement is claimed.
+
+## Earlier integration record
+
 **Final item-19 integration, 2026-09-20.** The current source passes 88,024
 pins across 16,087 cases in 1,169.06s, with complete contradiction checks and
 no findings. No active known-defect annotations remain. The focused and failed
@@ -25,7 +163,8 @@ manuscript checks. The fresh whole-manuscript review remains item 20.
 
 ## Custody merits, relief and placement supersession, 2026-09-19
 
-This subsection governs the current custody source. The exact text and
+This subsection governs custody subject to the severity supersession above.
+The exact text and
 associated source changes are `session-drafted, author-approved under delegated
 approval (2026-09-13)`. It supersedes the earlier preservation of the legacy
 Court assertion surface; it does not turn a non-coercive justice hearing into

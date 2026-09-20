@@ -1,5 +1,5 @@
 # SPDX-License-Identifier: MIT OR Apache-2.0
-:expect-pins 49
+:expect-pins 50
 ? prisoner(Hano, Case_Hano).
 # => TRUE
 ? building(Homestay, Hano).
@@ -113,6 +113,8 @@ observe(TemporalReview, Merits_Order_Case_Ruk_Other, Epoch_Current, RecordEndSco
 # => FALSE
 ? fit(Ruk, Homestay, Case_Ruk_Other).
 # => TRUE
+? fit(Ruk, HighSec, Case_Ruk_Other).
+# => FALSE
 put(State, Hano, HighSec).
 put(State, Adam, UnknownDestination).
 put(State, Ruk, Homestay).

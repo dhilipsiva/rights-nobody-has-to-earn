@@ -39,7 +39,7 @@
 
 # Home-confinement eligibility matches the reviewed row.
 ? fit(Confined_Severe_NoFamily_Home, Homestay).
-# => FALSE
+# => TRUE
 
 # Housing actuality matches the reviewed row.
 ? dwell(Confined_Severe_NoFamily_Home).

@@ -236,6 +236,51 @@ recorded judgment and current custody authority are supplied premises, not
 an independent assessment of that burden. The machine does not decide the
 offence or choose a sentence from an injury report.
 
+Secure confinement needs a further limit. Necessity on its own would leave
+the most restrictive placement available for any offence: an official could
+accept the proved offence and then invoke a prediction to justify the place.
+The gravity ceiling instead asks what harm this case has established. Death,
+life-threatening injury, serious enduring physical or psychological harm, or
+deliberately inflicted severe suffering can make secure placement eligible.
+Counting victims cannot do that work. Two injuries need not be graver than
+one life-threatening injury, and cruelty need not leave a permanent wound.
+The independent finding concerns the harm and required mental element in
+this case, not a description of the person's character.
+
+This is a limit on permission, not a rule that the gravest offence must receive
+the harshest place. Gravity concerns what happened; placement necessity
+concerns what restriction is justified now. A severe case can therefore use
+home confinement or an ordinary supported residence. The tests include both.
+They also include a case with grave harm but no finding that less restrictive
+alternatives are insufficient: secure placement has no authority there. The
+State must justify the additional restriction; the person need not earn a
+less restrictive place through work, wealth, family ties or a favourable
+character assessment.
+
+A simpler rule could leave everything to the individual necessity decision.
+Its advantage is flexibility, including a response to repeated lesser harms.
+Its cost is an open route from a comparatively minor offence to secure
+confinement through a prediction. The explicit alternative tested in the model
+permits secure placement without a qualified finding of grave injury or
+aggravated cruelty. I reject that latitude. Injuries below the ceiling still
+require protection, support, lawful remedies and an individual sentence where its separate grounds are met;
+their number cannot stand in for the missing gravity finding. At the other
+extreme, mandatory secure placement for every grave offence discards the
+less restrictive place even where it is sufficient. Neither shortcut gives
+an adequate reason for the additional loss of liberty.
+
+The boundary leaves judgment about serious enduring harm and severe suffering.
+Public law, disclosed evidence, the criminal proof standard, counsel, reasons,
+independent review and the custody challenge must govern that judgment. Neither
+a label nor an expert's unexplained score establishes it. A person's existing
+disability, income or social position cannot diminish the significance of the
+harm done to them. Mistaken classification burdens the person confined;
+insufficient protection burdens the person exposed to further harm. Evidence
+that a stated distinction repeatedly misclassifies harms, or that an available
+less restrictive arrangement protects the same rights, is a reason to change
+the classification or refuse that placement. The formal result establishes
+which premises are required; it supplies no empirical proof of protection.
+
 The custody conclusion requires a case tied to the person, judgment and
 injured person, with current authority on the witnessed constitutional record.
 Missing authority stops that conclusion when the supplied record is evaluated

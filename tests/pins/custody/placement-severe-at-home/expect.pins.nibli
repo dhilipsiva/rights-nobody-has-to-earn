@@ -1,9 +1,9 @@
 # SPDX-License-Identifier: MIT OR Apache-2.0
 :expect-pins 4
 ? correct(Case_Placement_severe_at_home, ActivePower).
-# => FALSE
+# => TRUE
 ? prisoner(Placement_severe_at_home).
-# => FALSE
+# => TRUE
 ? dwell(Placement_severe_at_home).
 # => FALSE
 ? owe(State, Dwell, Placement_severe_at_home).

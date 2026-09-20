@@ -2,8 +2,8 @@
   "spdx": "CC-BY-4.0",
   "schema_version": 2,
   "title": "Placement Exhaustiveness Audit: Current Routes, Missing Cases, and Silent Conflicts",
-  "status": "bounded_current_source_repository_assurance",
-  "evidence_role": "current_verified_narrowly",
+  "status": "historical_superseded_by_qualified_custody_and_severity_ceiling",
+  "evidence_role": "historical_only_current_expectations_live_in_tests/pins/placement_and_tests/pins/custody",
   "subprocess_timeout_seconds": 180,
   "constitution_sha256": "4018c6ccaa2ce39d8baa91bcbb936d6ed5e057ebf2a389798365e548bbc2da91",
   "producer_fingerprints": {

@@ -73,17 +73,18 @@ credential and from authority for a particular public act.
 
 Severity shows why the premises must be read together. The underlying case
 needs qualified criminal proof, adjudicated defences and fair procedure.
-Separately signed findings must identify the same subject, case and incident.
-Intentional injury and aggravated cruelty toward the same person form one
-qualifying pair. Either dimension toward one person can instead combine with
-injury to another. The rules compare the people identified in those findings;
-a raw attack or cruelty entry supplies none of their authority.
+An independently reviewed finding of grave injury or aggravated cruelty must
+identify the subject, case, incident, person harmed, evidence and procedure.
+Counting people injured cannot substitute for either finding. A raw attack
+or cruelty entry supplies none of its authority.
 
 The test gives Probe an attack against one person and cruelty against another.
 Severity does not follow. Adding cruelty against the person already attacked
 still supplies no qualified finding. The placement chapter follows the positive
-cases: Lalo, Ruk and Don each have a qualifying pair within an adjudicated case.
-Both the pairing and the authority for its findings matter.
+cases: Ruk has a grave-injury finding; Lalo and Don have aggravated-cruelty
+findings. Those findings permit consideration of secure placement. A separate
+decision must establish why a less restrictive place is insufficient. Severity
+alone cannot choose a destination or supply current authority to confine.
 
 A derived conclusion is not necessarily supported by a long chain. Nor are
 all its inputs observations. The rules can forbid a direct verdict while

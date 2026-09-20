@@ -28,21 +28,40 @@ assumption drawn from the existence or shape of a household.
 
 ## What makes an offence severe
 
-Severity requires a qualifying pair of adjudicated findings: intentional
-injury and aggravated cruelty toward the same person, intentional injury
-toward one person and injury to another, or aggravated cruelty toward one
-person and injury to another. Intent alone is insufficient.
+Severity requires an adjudicated finding of grave injury or aggravated cruelty.
+Grave injury means death, life-threatening injury, or serious enduring physical
+or psychological harm. Aggravated cruelty means deliberately inflicting severe
+physical or psychological suffering. Duration can be evidence of that suffering;
+duration alone does not establish it. Intentional injury alone is insufficient,
+as is the number of people injured.
 
 Each finding identifies the subject, case, incident, person harmed, dimension,
 evidence and procedure. The adjudicator and independent merits reviewer must
 be authorised for that finding and agree on those fields. Their case must
 itself satisfy the criminal proof, defence and procedure requirements. A raw
-injury, attack or cruelty entry cannot supply a signed finding.
+injury, attack or cruelty entry cannot supply a signed finding. The reasoner
+checks that supplied record; it does not assess the harm itself.
 
-Hano's findings concern Ivo and do not supply a qualifying pair. Ruk's concern
-intentional injury to Opal and injury to Pax. Lalo's concern intentional injury
-and cruelty toward Mina; Don's combine cruelty with injury to another person.
-Their recorded home and family circumstances do not produce those results.
+Hano's findings about Ivo establish neither grave injury nor aggravated cruelty.
+Ruk has a separately supported finding of grave injury to Opal. The injury to
+Pax does not supply that finding. Lalo and Don have findings of aggravated
+cruelty. Their recorded home and family circumstances do not produce severity.
+
+The companion comparisons hold the merits and procedural requirements constant
+while separating the harm from the placement decision:
+
+| Qualified findings and placement evidence | What follows |
+| --- | --- |
+| Grave injury to one person, without cruelty; a sufficient reviewed home placement | Severity and home confinement; no secure destination |
+| Injury findings about two people, with no grave-injury or aggravated-cruelty finding; a proposed secure placement | No severity and no authority for that secure placement |
+| Aggravated cruelty to one person; separately justified secure placement | Severity and the authorised secure destination |
+| Grave injury; no finding that less restrictive alternatives are insufficient | Severity, but no authority for secure placement |
+| Grave injury; no suitable consenting home and a sufficient reviewed ordinary residence | Severity and the ordinary supported residence |
+
+Home confinement and ordinary supported residence remain eligible in a severe
+case. Severity sets a limit on the most restrictive option; it does not select
+that option. A home or residence still needs its own positive availability,
+necessity and conditions findings. Nothing in the classification supplies them.
 
 Severity belongs to the case. A second case involving Ruk cannot borrow it.
 Nor does severity alone authorise a secure place: the placement must separately
@@ -51,9 +70,11 @@ the person's floor nor the sentence's review interval.
 
 ## What the placement alarm sees
 
-A report of placement is different from an authorised destination. A report
-that State put Ruk at Homestay conflicts with Ruk's current case and triggers
-review. A report that Hano was put at HighSec does so too. An unknown destination
+A report of placement is different from an authorised destination. Ruk is
+eligible for consideration of home confinement, but the current placement
+record authorises a particular secure place. A report that State put Ruk at
+Homestay therefore conflicts with that record and triggers review. A report
+that Hano was put at HighSec does so too. An unknown destination
 has no authority to borrow. An exact-place report identifies the case and the
 place; the permission for another person's residence cannot justify it.
 
@@ -81,9 +102,11 @@ relationships in the supplied record; it cannot establish that the evidence
 was honestly gathered, retained or reported.
 
 The companion cases vary confinement, severity inputs, family presence and
-home availability. Family changes must leave the result unchanged. Separate
-cases remove required placement evidence, introduce competing places, report
-inappropriate destinations and attempt direct assertions of legal conclusions.
+home availability. Family changes leave severity and placement unchanged.
+Neither wealth nor poverty supplies the required finding of individual
+necessity. Separate cases remove required placement evidence, introduce
+competing places, report inappropriate destinations and attempt direct
+assertions of legal conclusions.
 A missing result and an unauthorised extra result are both tested. These checks
 verify the rules; they do not make an outside place available.
 

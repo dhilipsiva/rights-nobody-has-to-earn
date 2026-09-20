@@ -87,7 +87,7 @@ checked here.
 | Ecology, future generations and commons | 5 | 3 | 6 |
 | Economy, property, work and commons | 17 | 15 | 20 |
 | Emergency and resilience | 3 | 2 | 4 |
-| Justice and coercion | 13 | 12 | 15 |
+| Justice and coercion | 13 | 12 | 16 |
 | Knowledge, communication and culture | 3 | 2 | 3 |
 | Life course, family, care and reproduction | 12 | 4 | 8 |
 | Locality, mobility and external relations | 1 | 2 | 2 |
@@ -96,7 +96,7 @@ checked here.
 | Personhood and equality | 20 | 10 | 16 |
 | Public institutions | 11 | 10 | 14 |
 | Public safety, policing and use of force | 5 | 3 | 8 |
-| Records and accountability | 14 | 15 | 20 |
+| Records and accountability | 14 | 15 | 21 |
 
 ## Every passage
 
@@ -118,7 +118,7 @@ checked here.
 | 02-06 | 02-who-counts.md | What none of this observes | Personhood and equality | UNIVERSAL-STANDING | protective | the boundary of a route nobody has to walk down | receives | unresolved | yes | constructive | `book-1/02-who-counts.pins.nibli` |
 | 03-00 | 03-what-counts-as-evidence.md | (preamble) | Records and accountability | ARTICLES | protective | the closed list of what may be said about you | is acted upon | works | yes | records | `book-1/03-what-counts-as-evidence.pins.nibli` |
 | 03-01 | 03-what-counts-as-evidence.md | What is missing | Records and accountability | ARTICLES | protective | the closed evidence list | is acted upon | works | no | records | `book-1/03-what-counts-as-evidence.pins.nibli` |
-| 03-02 | 03-what-counts-as-evidence.md | Facts and conclusions are kept apart | Records and accountability | ARTICLES | protective | the evidence/conclusion split | is acted upon | works | no | records | `book-1/03-what-counts-as-evidence.pins.nibli` |
+| 03-02 | 03-what-counts-as-evidence.md | Facts and conclusions are kept apart | Records and accountability | ARTICLES | protective | the evidence/conclusion split | is acted upon | works | yes | records | `book-1/03-what-counts-as-evidence.pins.nibli` |
 | 03-03 | 03-what-counts-as-evidence.md | One finding is not a voiding | Records and accountability | ARTICLES | protective | one auditor's report | is acted upon | works | yes | records | `book-1/03-what-counts-as-evidence.pins.nibli` |
 | 03-04 | 03-what-counts-as-evidence.md | Changing the vocabulary | Records and accountability | ARTICLES | protective | widening the record | is acted upon | contested | yes | records | `book-1/03-what-counts-as-evidence.pins.nibli` |
 | 03-05 | 03-what-counts-as-evidence.md | False or missing inputs | Records and accountability | ARTICLES | protective | a fabricated direct entry | is acted upon | unresolved | yes | records | `book-1/03-what-counts-as-evidence.pins.nibli` |
@@ -309,9 +309,9 @@ checked here.
 | 27-04 | 27-a-prisoner-is-a-person.md | Standing that protects others | Personhood and equality | ARTICLES | protective | rights that do not thin out | is acted upon | works | no | constructive | `book-1/27-a-prisoner-is-a-person.pins.nibli` |
 | 27-05 | 27-a-prisoner-is-a-person.md | The child with nobody | Material floor | ARTICLES | protective | the child with nobody: one birth entry and nothing else | receives | contested | yes | coercive | `book-1/27-a-prisoner-is-a-person.pins.nibli` |
 | 28-00 | 28-where-people-are-put.md | (preamble) | Justice and coercion | CUSTODY-EXECUTION | ordinary | qualified merits, individually justified placement and a named available place | is acted upon | works | yes | coercive | `book-1/28-where-people-are-put.pins.nibli` |
-| 28-01 | 28-where-people-are-put.md | What makes an offence severe | Justice and coercion | CUSTODY-ADJUDICATION | protective | independently signed dimensions within one adjudicated incident | is acted upon | contested | no | coercive | `book-1/28-where-people-are-put.pins.nibli` |
+| 28-01 | 28-where-people-are-put.md | What makes an offence severe | Justice and coercion | CUSTODY-EXECUTION | protective | qualified grave injury or aggravated cruelty; gravity limits secure eligibility without selecting the place | is acted upon | contested | yes | coercive | `book-1/28-where-people-are-put.pins.nibli` |
 | 28-02 | 28-where-people-are-put.md | What the placement alarm sees | Justice and coercion | PLACEMENT | continuity | reports in every destination category, conflicting candidates and review | is acted upon | continuity-remedy | yes | coercive | `book-1/28-where-people-are-put.pins.nibli` |
-| 28-03 | 28-where-people-are-put.md | A fixed route still depends on evidence | Justice and coercion | PLACEMENT | ordinary | fixed routing depends on evidence | is acted upon | works | yes | coercive | `book-1/28-where-people-are-put.pins.nibli` |
+| 28-03 | 28-where-people-are-put.md | A fixed route still depends on evidence | Justice and coercion | PLACEMENT | ordinary | family neutrality, forbidden wealth and poverty grounds, and missing or conflicting placement evidence | is acted upon | works | yes | coercive | `book-1/28-where-people-are-put.pins.nibli` |
 | 28-04 | 28-where-people-are-put.md | Eligible, with no home option recorded | Justice and coercion | CUSTODY-EXECUTION | protective | positive supported-residence evidence or no custody authority | is acted upon | continuity-remedy | yes | coercive | `book-1/28-where-people-are-put.pins.nibli` |
 | 28-05 | 28-where-people-are-put.md | Housing with independent evidence | Material floor | PLACEMENT | continuity | a named placement creates a duty; recipient evidence establishes shelter | is acted upon | continuity-remedy | yes | constructive | `tests/pins/placement/independent-shelter-control/expect.pins.nibli` |
 | 28-06 | 28-where-people-are-put.md | The child with nobody | Justice and coercion | PLACEMENT | protective | the child with nobody: one birth entry and nothing else | receives | unresolved | yes | coercive | `book-1/28-where-people-are-put.pins.nibli` |

@@ -2,7 +2,7 @@
 # Original raw allegations and every placement/floor query remain regression controls.
 # Canonical cases separately supply qualified merits, signed dimensions, placement and intake.
 # Family status and raw harm reports cannot substitute for those records.
-:expect-pins 56
+:expect-pins 73
 
 # Intent alone does not meet the severity threshold.
 ? attack(Hano, Ivo).
@@ -20,7 +20,7 @@
 ? building(Homestay, Hano).
 # => TRUE
 
-# Ruk has independently signed intent and injury to different victims in one case.
+# Ruk has a qualified grave-injury finding; victim count supplies no severity.
 ? attack(Ruk, Opal).
 # => TRUE
 ? injure(Ruk, Pax).
@@ -30,7 +30,7 @@
 ? family(Ruk).
 # => FALSE
 ? fit(Ruk, Homestay).
-# => FALSE
+# => TRUE
 ? building(HighSec, Ruk).
 # => TRUE
 
@@ -151,4 +151,40 @@ put(State, Jala, UnknownCustodyKind).
 ? err(Jala, Placement).
 # => TRUE
 ? prisoner(Jala).
+# => FALSE
+
+# Offence gravity, the placement choice and current authority are distinct.
+? attribute(Severity_Ruk_GraveInjury_Opal, GraveInjury).
+# => TRUE
+? severe(BoundaryGraveHome, Case_BoundaryGraveHome).
+# => TRUE
+? fit(BoundaryGraveHome, HighSec, Case_BoundaryGraveHome).
+# => TRUE
+? building(Homestay, BoundaryGraveHome).
+# => TRUE
+? building(HighSec, BoundaryGraveHome).
+# => FALSE
+? severe(BoundaryTwoVictims, Case_BoundaryTwoVictims).
+# => FALSE
+? fit(BoundaryTwoVictims, HighSec, Case_BoundaryTwoVictims).
+# => FALSE
+? building(HighSec, BoundaryTwoVictims).
+# => FALSE
+? severe(BoundaryCruelOnly, Case_BoundaryCruelOnly).
+# => TRUE
+? building(HighSec, BoundaryCruelOnly).
+# => TRUE
+? severe(BoundaryNoAlternative, Case_BoundaryNoAlternative).
+# => TRUE
+? building(HighSec, BoundaryNoAlternative).
+# => FALSE
+? building(SupportedResidence, BoundaryGraveResidence).
+# => TRUE
+? building(HighSec, BoundaryGraveResidence).
+# => FALSE
+? severe(Placement_severe_at_home, Case_Placement_severe_at_home).
+# => TRUE
+? building(Homestay, Placement_severe_at_home).
+# => TRUE
+? building(HighSec, Placement_severe_at_home).
 # => FALSE

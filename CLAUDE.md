@@ -127,6 +127,57 @@ reinstate the retired tooling or workflow.
 Grouped by kind. Dates in each heading are the ratification dates; a ruling
 that was later implemented or narrowed carries that supersession inline.
 
+### Item 22 — severity limits secure placement without selecting it, 2026-09-20
+
+Source and prose are `session-drafted, author-approved under delegated approval
+(2026-09-13)`. The [public-safety decision](book-1/appendix/decisions/public-safety-defence-emergency-and-external-power-decision.md)
+supersedes the qualifying-pair threshold and its exclusion of ordinary places.
+Qualified grave injury or aggravated cruelty now permits consideration of
+secure placement. Grave injury covers death, life-threatening injury and serious
+enduring physical or psychological harm; aggravated cruelty requires deliberate
+severe suffering. Victim count, raw acts, family status, wealth and poverty
+cannot replace those findings or individual placement necessity. The existing
+criminal merits, case and incident binding, independent review and procedure
+remain required. These are supplied adjudicated findings, not the engine's
+assessment of harm or predictions about a person's character.
+
+Home confinement and ordinary supported residence remain eligible in a severe
+case. The actual place needs its independent availability, lawful conditions,
+necessity and review; a secure place additionally needs positive insufficiency
+of less restrictive alternatives. The current lease, independent intake and
+challenge protections remain separate. A different case cannot borrow severity
+or secure eligibility. Conviction, gravity, placement and current authority are
+not interchangeable. The source adds no numerical harm ranking, personal
+score or gravity-based sentence-duration table.
+
+The exact previous pair-only Ruk scenario survives under BoundaryTwoVictims;
+it now lacks secure eligibility. Canonical Ruk receives an explicitly supplied
+fictional grave-injury finding. The new 221-pin comparison covers grave harm to
+one person, cruelty alone, ordinary placements despite severity, missing or
+mismatched findings, forbidden placement grounds and retained floor and adult
+ballot claims. The eight-pin explicit no-ceiling counterfactual exhibits the
+greater discretion of necessity alone. Existing scenarios and every old matrix
+query remain; their superseded home-eligibility expectations are revised openly.
+Part V compares alternatives, identifies who bears mistaken classifications and
+inadequate protection, and states grounds for reconsideration. Chapters 3, 28
+and 29 project current consequences; chapter 27's refusal checks still pass.
+No reader-facing development history, outside success or independent endorsement
+is added. The old receipt-era placement report is labelled historical.
+
+The complete `./verify.sh` run passes **88,315 pins across 16,091 cases**, with
+complete contradiction checks and no findings, in **1,187.06s**. The five-minute
+target is unmet. The run captured the execution case before its final additional
+cross-case assertion; the expanded 50-pin file separately passes in 13.74s
+against the same executable constitution. No old assertion was removed or
+changed in that file. Together the checks exercise every current expectation.
+The 102-pin floor file passes after correcting its superseded Ruk eligibility
+expectation. Six reference, ten reader-coverage, five claim-discipline and
+sixteen floor-vector development tests pass. Prose consistency was reviewed
+separately; all 34 ordered inputs total 52,755 whitespace-delimited words,
+excluding HTML comments, with 39,680 derived (75.22%). Child fixtures,
+exemptions, editorial order and the Book 2 boundary remain intact. Item 22 is
+complete and removed from the active backlog.
+
 ### Item 21 — contribution without a constitutional recognition status, 2026-09-20
 
 Implementation and prose are `session-drafted, author-approved under delegated

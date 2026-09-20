@@ -1,0 +1,483 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+# Severity is a ceiling on placement, not an order to use the harshest place.
+:expect-pins 221
+? responsible(Case_BoundaryGraveHome, CustodyMerits).
+# => TRUE
+? attribute(Severity_BoundaryGraveHome_GraveInjury_Ivo, GraveInjury).
+# => TRUE
+? severe(BoundaryGraveHome, Case_BoundaryGraveHome).
+# => TRUE
+? fit(BoundaryGraveHome, Homestay, Case_BoundaryGraveHome).
+# => TRUE
+? fit(BoundaryGraveHome, SupportedResidence, Case_BoundaryGraveHome).
+# => TRUE
+? fit(BoundaryGraveHome, HighSec, Case_BoundaryGraveHome).
+# => TRUE
+? building(Homestay, BoundaryGraveHome).
+# => TRUE
+? building(HighSec, BoundaryGraveHome).
+# => FALSE
+? responsible(Case_BoundaryTwoVictims, CustodyMerits).
+# => TRUE
+? attribute(Severity_BoundaryTwoVictims_IntentionalInjury_Opal, IntentionalInjury).
+# => TRUE
+? attribute(Severity_BoundaryTwoVictims_InjuryToPerson_Pax, InjuryToPerson).
+# => TRUE
+? severe(BoundaryTwoVictims, Case_BoundaryTwoVictims).
+# => FALSE
+? fit(BoundaryTwoVictims, HighSec, Case_BoundaryTwoVictims).
+# => FALSE
+? prisoner(BoundaryTwoVictims).
+# => FALSE
+? building(HighSec, BoundaryTwoVictims).
+# => FALSE
+? owe(State, Dwell, BoundaryTwoVictims).
+# => TRUE
+? decide(BoundaryTwoVictims, Ballot).
+# => TRUE
+# A qualified cruelty case with an adequate home retains the home route.
+? severe(Placement_severe_at_home, Case_Placement_severe_at_home).
+# => TRUE
+? fit(Placement_severe_at_home, Homestay, Case_Placement_severe_at_home).
+# => TRUE
+? correct(Case_Placement_severe_at_home, ActivePower).
+# => TRUE
+? prisoner(Placement_severe_at_home).
+# => TRUE
+? building(Homestay, Placement_severe_at_home).
+# => TRUE
+? building(HighSec, Placement_severe_at_home).
+# => FALSE
+
+
+# BoundaryGraveOnly
+? responsible(Case_BoundaryGraveOnly, CustodyMerits).
+# => TRUE
+? severe(BoundaryGraveOnly, Case_BoundaryGraveOnly).
+# => TRUE
+? fit(BoundaryGraveOnly, Homestay, Case_BoundaryGraveOnly).
+# => TRUE
+? fit(BoundaryGraveOnly, HighSec, Case_BoundaryGraveOnly).
+# => TRUE
+? correct(Case_BoundaryGraveOnly, ActivePower).
+# => TRUE
+? prisoner(BoundaryGraveOnly).
+# => TRUE
+? building(HighSec, BoundaryGraveOnly).
+# => TRUE
+? building(Homestay, BoundaryGraveOnly).
+# => FALSE
+? owe(State, Dwell, BoundaryGraveOnly).
+# => TRUE
+? decide(BoundaryGraveOnly, Ballot).
+# => TRUE
+? family(BoundaryGraveOnly).
+# => FALSE
+
+# BoundaryCruelOnly
+? responsible(Case_BoundaryCruelOnly, CustodyMerits).
+# => TRUE
+? severe(BoundaryCruelOnly, Case_BoundaryCruelOnly).
+# => TRUE
+? fit(BoundaryCruelOnly, Homestay, Case_BoundaryCruelOnly).
+# => TRUE
+? fit(BoundaryCruelOnly, HighSec, Case_BoundaryCruelOnly).
+# => TRUE
+? correct(Case_BoundaryCruelOnly, ActivePower).
+# => TRUE
+? prisoner(BoundaryCruelOnly).
+# => TRUE
+? building(HighSec, BoundaryCruelOnly).
+# => TRUE
+? building(Homestay, BoundaryCruelOnly).
+# => FALSE
+? owe(State, Dwell, BoundaryCruelOnly).
+# => TRUE
+? decide(BoundaryCruelOnly, Ballot).
+# => TRUE
+? family(BoundaryCruelOnly).
+# => FALSE
+
+# BoundaryGraveFamily
+? responsible(Case_BoundaryGraveFamily, CustodyMerits).
+# => TRUE
+? severe(BoundaryGraveFamily, Case_BoundaryGraveFamily).
+# => TRUE
+? fit(BoundaryGraveFamily, Homestay, Case_BoundaryGraveFamily).
+# => TRUE
+? fit(BoundaryGraveFamily, HighSec, Case_BoundaryGraveFamily).
+# => TRUE
+? correct(Case_BoundaryGraveFamily, ActivePower).
+# => TRUE
+? prisoner(BoundaryGraveFamily).
+# => TRUE
+? building(HighSec, BoundaryGraveFamily).
+# => TRUE
+? building(Homestay, BoundaryGraveFamily).
+# => FALSE
+? owe(State, Dwell, BoundaryGraveFamily).
+# => TRUE
+? decide(BoundaryGraveFamily, Ballot).
+# => TRUE
+? family(BoundaryGraveFamily).
+# => TRUE
+
+# BoundaryNoAlternative
+? responsible(Case_BoundaryNoAlternative, CustodyMerits).
+# => TRUE
+? severe(BoundaryNoAlternative, Case_BoundaryNoAlternative).
+# => TRUE
+? fit(BoundaryNoAlternative, Homestay, Case_BoundaryNoAlternative).
+# => TRUE
+? fit(BoundaryNoAlternative, HighSec, Case_BoundaryNoAlternative).
+# => TRUE
+? correct(Case_BoundaryNoAlternative, ActivePower).
+# => FALSE
+? prisoner(BoundaryNoAlternative).
+# => FALSE
+? building(HighSec, BoundaryNoAlternative).
+# => FALSE
+? building(Homestay, BoundaryNoAlternative).
+# => FALSE
+? owe(State, Dwell, BoundaryNoAlternative).
+# => TRUE
+? decide(BoundaryNoAlternative, Ballot).
+# => TRUE
+? family(BoundaryNoAlternative).
+# => FALSE
+
+# BoundaryNoNecessity
+? responsible(Case_BoundaryNoNecessity, CustodyMerits).
+# => TRUE
+? severe(BoundaryNoNecessity, Case_BoundaryNoNecessity).
+# => TRUE
+? fit(BoundaryNoNecessity, Homestay, Case_BoundaryNoNecessity).
+# => TRUE
+? fit(BoundaryNoNecessity, HighSec, Case_BoundaryNoNecessity).
+# => TRUE
+? correct(Case_BoundaryNoNecessity, ActivePower).
+# => FALSE
+? prisoner(BoundaryNoNecessity).
+# => FALSE
+? building(HighSec, BoundaryNoNecessity).
+# => FALSE
+? building(Homestay, BoundaryNoNecessity).
+# => FALSE
+? owe(State, Dwell, BoundaryNoNecessity).
+# => TRUE
+? decide(BoundaryNoNecessity, Ballot).
+# => TRUE
+? family(BoundaryNoNecessity).
+# => FALSE
+
+# BoundaryNoReviewer
+? responsible(Case_BoundaryNoReviewer, CustodyMerits).
+# => TRUE
+? severe(BoundaryNoReviewer, Case_BoundaryNoReviewer).
+# => FALSE
+? fit(BoundaryNoReviewer, Homestay, Case_BoundaryNoReviewer).
+# => TRUE
+? fit(BoundaryNoReviewer, HighSec, Case_BoundaryNoReviewer).
+# => FALSE
+? correct(Case_BoundaryNoReviewer, ActivePower).
+# => FALSE
+? prisoner(BoundaryNoReviewer).
+# => FALSE
+? building(HighSec, BoundaryNoReviewer).
+# => FALSE
+? building(Homestay, BoundaryNoReviewer).
+# => FALSE
+? owe(State, Dwell, BoundaryNoReviewer).
+# => TRUE
+? decide(BoundaryNoReviewer, Ballot).
+# => TRUE
+? family(BoundaryNoReviewer).
+# => FALSE
+
+# BoundaryNoSeverityProcedure
+? responsible(Case_BoundaryNoSeverityProcedure, CustodyMerits).
+# => TRUE
+? severe(BoundaryNoSeverityProcedure, Case_BoundaryNoSeverityProcedure).
+# => FALSE
+? fit(BoundaryNoSeverityProcedure, Homestay, Case_BoundaryNoSeverityProcedure).
+# => TRUE
+? fit(BoundaryNoSeverityProcedure, HighSec, Case_BoundaryNoSeverityProcedure).
+# => FALSE
+? correct(Case_BoundaryNoSeverityProcedure, ActivePower).
+# => FALSE
+? prisoner(BoundaryNoSeverityProcedure).
+# => FALSE
+? building(HighSec, BoundaryNoSeverityProcedure).
+# => FALSE
+? building(Homestay, BoundaryNoSeverityProcedure).
+# => FALSE
+? owe(State, Dwell, BoundaryNoSeverityProcedure).
+# => TRUE
+? decide(BoundaryNoSeverityProcedure, Ballot).
+# => TRUE
+? family(BoundaryNoSeverityProcedure).
+# => FALSE
+
+# BoundaryUnknownDimension
+? responsible(Case_BoundaryUnknownDimension, CustodyMerits).
+# => TRUE
+? severe(BoundaryUnknownDimension, Case_BoundaryUnknownDimension).
+# => FALSE
+? fit(BoundaryUnknownDimension, Homestay, Case_BoundaryUnknownDimension).
+# => TRUE
+? fit(BoundaryUnknownDimension, HighSec, Case_BoundaryUnknownDimension).
+# => FALSE
+? correct(Case_BoundaryUnknownDimension, ActivePower).
+# => FALSE
+? prisoner(BoundaryUnknownDimension).
+# => FALSE
+? building(HighSec, BoundaryUnknownDimension).
+# => FALSE
+? building(Homestay, BoundaryUnknownDimension).
+# => FALSE
+? owe(State, Dwell, BoundaryUnknownDimension).
+# => TRUE
+? decide(BoundaryUnknownDimension, Ballot).
+# => TRUE
+? family(BoundaryUnknownDimension).
+# => FALSE
+
+# BoundaryWrongVictim
+? responsible(Case_BoundaryWrongVictim, CustodyMerits).
+# => TRUE
+? severe(BoundaryWrongVictim, Case_BoundaryWrongVictim).
+# => FALSE
+? fit(BoundaryWrongVictim, Homestay, Case_BoundaryWrongVictim).
+# => TRUE
+? fit(BoundaryWrongVictim, HighSec, Case_BoundaryWrongVictim).
+# => FALSE
+? correct(Case_BoundaryWrongVictim, ActivePower).
+# => FALSE
+? prisoner(BoundaryWrongVictim).
+# => FALSE
+? building(HighSec, BoundaryWrongVictim).
+# => FALSE
+? building(Homestay, BoundaryWrongVictim).
+# => FALSE
+? owe(State, Dwell, BoundaryWrongVictim).
+# => TRUE
+? decide(BoundaryWrongVictim, Ballot).
+# => TRUE
+? family(BoundaryWrongVictim).
+# => FALSE
+
+# BoundaryWrongEvidence
+? responsible(Case_BoundaryWrongEvidence, CustodyMerits).
+# => TRUE
+? severe(BoundaryWrongEvidence, Case_BoundaryWrongEvidence).
+# => FALSE
+? fit(BoundaryWrongEvidence, Homestay, Case_BoundaryWrongEvidence).
+# => TRUE
+? fit(BoundaryWrongEvidence, HighSec, Case_BoundaryWrongEvidence).
+# => FALSE
+? correct(Case_BoundaryWrongEvidence, ActivePower).
+# => FALSE
+? prisoner(BoundaryWrongEvidence).
+# => FALSE
+? building(HighSec, BoundaryWrongEvidence).
+# => FALSE
+? building(Homestay, BoundaryWrongEvidence).
+# => FALSE
+? owe(State, Dwell, BoundaryWrongEvidence).
+# => TRUE
+? decide(BoundaryWrongEvidence, Ballot).
+# => TRUE
+? family(BoundaryWrongEvidence).
+# => FALSE
+
+# BoundaryWrongIncident
+? responsible(Case_BoundaryWrongIncident, CustodyMerits).
+# => TRUE
+? severe(BoundaryWrongIncident, Case_BoundaryWrongIncident).
+# => FALSE
+? fit(BoundaryWrongIncident, Homestay, Case_BoundaryWrongIncident).
+# => TRUE
+? fit(BoundaryWrongIncident, HighSec, Case_BoundaryWrongIncident).
+# => FALSE
+? correct(Case_BoundaryWrongIncident, ActivePower).
+# => FALSE
+? prisoner(BoundaryWrongIncident).
+# => FALSE
+? building(HighSec, BoundaryWrongIncident).
+# => FALSE
+? building(Homestay, BoundaryWrongIncident).
+# => FALSE
+? owe(State, Dwell, BoundaryWrongIncident).
+# => TRUE
+? decide(BoundaryWrongIncident, Ballot).
+# => TRUE
+? family(BoundaryWrongIncident).
+# => FALSE
+
+# BoundaryWrongCase
+? responsible(Case_BoundaryWrongCase, CustodyMerits).
+# => TRUE
+? severe(BoundaryWrongCase, Case_BoundaryWrongCase).
+# => FALSE
+? fit(BoundaryWrongCase, Homestay, Case_BoundaryWrongCase).
+# => TRUE
+? fit(BoundaryWrongCase, HighSec, Case_BoundaryWrongCase).
+# => FALSE
+? correct(Case_BoundaryWrongCase, ActivePower).
+# => FALSE
+? prisoner(BoundaryWrongCase).
+# => FALSE
+? building(HighSec, BoundaryWrongCase).
+# => FALSE
+? building(Homestay, BoundaryWrongCase).
+# => FALSE
+? owe(State, Dwell, BoundaryWrongCase).
+# => TRUE
+? decide(BoundaryWrongCase, Ballot).
+# => TRUE
+? family(BoundaryWrongCase).
+# => FALSE
+
+# BoundaryWrongSubject
+? responsible(Case_BoundaryWrongSubject, CustodyMerits).
+# => TRUE
+? severe(BoundaryWrongSubject, Case_BoundaryWrongSubject).
+# => FALSE
+? fit(BoundaryWrongSubject, Homestay, Case_BoundaryWrongSubject).
+# => TRUE
+? fit(BoundaryWrongSubject, HighSec, Case_BoundaryWrongSubject).
+# => FALSE
+? correct(Case_BoundaryWrongSubject, ActivePower).
+# => FALSE
+? prisoner(BoundaryWrongSubject).
+# => FALSE
+? building(HighSec, BoundaryWrongSubject).
+# => FALSE
+? building(Homestay, BoundaryWrongSubject).
+# => FALSE
+? owe(State, Dwell, BoundaryWrongSubject).
+# => TRUE
+? decide(BoundaryWrongSubject, Ballot).
+# => TRUE
+? family(BoundaryWrongSubject).
+# => FALSE
+
+# BoundaryWealth
+? responsible(Case_BoundaryWealth, CustodyMerits).
+# => TRUE
+? severe(BoundaryWealth, Case_BoundaryWealth).
+# => TRUE
+? fit(BoundaryWealth, Homestay, Case_BoundaryWealth).
+# => TRUE
+? fit(BoundaryWealth, HighSec, Case_BoundaryWealth).
+# => TRUE
+? correct(Case_BoundaryWealth, ActivePower).
+# => FALSE
+? prisoner(BoundaryWealth).
+# => FALSE
+? building(HighSec, BoundaryWealth).
+# => FALSE
+? building(Homestay, BoundaryWealth).
+# => FALSE
+? owe(State, Dwell, BoundaryWealth).
+# => TRUE
+? decide(BoundaryWealth, Ballot).
+# => TRUE
+? family(BoundaryWealth).
+# => FALSE
+
+# BoundaryPoverty
+? responsible(Case_BoundaryPoverty, CustodyMerits).
+# => TRUE
+? severe(BoundaryPoverty, Case_BoundaryPoverty).
+# => TRUE
+? fit(BoundaryPoverty, Homestay, Case_BoundaryPoverty).
+# => TRUE
+? fit(BoundaryPoverty, HighSec, Case_BoundaryPoverty).
+# => TRUE
+? correct(Case_BoundaryPoverty, ActivePower).
+# => FALSE
+? prisoner(BoundaryPoverty).
+# => FALSE
+? building(HighSec, BoundaryPoverty).
+# => FALSE
+? building(Homestay, BoundaryPoverty).
+# => FALSE
+? owe(State, Dwell, BoundaryPoverty).
+# => TRUE
+? decide(BoundaryPoverty, Ballot).
+# => TRUE
+? family(BoundaryPoverty).
+# => FALSE
+
+# BoundaryGraveResidence
+? responsible(Case_BoundaryGraveResidence, CustodyMerits).
+# => TRUE
+? severe(BoundaryGraveResidence, Case_BoundaryGraveResidence).
+# => TRUE
+? fit(BoundaryGraveResidence, Homestay, Case_BoundaryGraveResidence).
+# => TRUE
+? fit(BoundaryGraveResidence, HighSec, Case_BoundaryGraveResidence).
+# => TRUE
+? correct(Case_BoundaryGraveResidence, ActivePower).
+# => TRUE
+? prisoner(BoundaryGraveResidence).
+# => TRUE
+? building(SupportedResidence, BoundaryGraveResidence).
+# => TRUE
+? building(HighSec, BoundaryGraveResidence).
+# => FALSE
+? owe(State, Dwell, BoundaryGraveResidence).
+# => TRUE
+? decide(BoundaryGraveResidence, Ballot).
+# => TRUE
+? family(BoundaryGraveResidence).
+# => FALSE
+
+# BoundaryGraveResidenceFamily
+? responsible(Case_BoundaryGraveResidenceFamily, CustodyMerits).
+# => TRUE
+? severe(BoundaryGraveResidenceFamily, Case_BoundaryGraveResidenceFamily).
+# => TRUE
+? fit(BoundaryGraveResidenceFamily, Homestay, Case_BoundaryGraveResidenceFamily).
+# => TRUE
+? fit(BoundaryGraveResidenceFamily, HighSec, Case_BoundaryGraveResidenceFamily).
+# => TRUE
+? correct(Case_BoundaryGraveResidenceFamily, ActivePower).
+# => TRUE
+? prisoner(BoundaryGraveResidenceFamily).
+# => TRUE
+? building(SupportedResidence, BoundaryGraveResidenceFamily).
+# => TRUE
+? building(HighSec, BoundaryGraveResidenceFamily).
+# => FALSE
+? owe(State, Dwell, BoundaryGraveResidenceFamily).
+# => TRUE
+? decide(BoundaryGraveResidenceFamily, Ballot).
+# => TRUE
+? family(BoundaryGraveResidenceFamily).
+# => TRUE
+
+# BoundaryRawGrave
+? responsible(Case_BoundaryRawGrave, CustodyMerits).
+# => TRUE
+? severe(BoundaryRawGrave, Case_BoundaryRawGrave).
+# => FALSE
+? fit(BoundaryRawGrave, Homestay, Case_BoundaryRawGrave).
+# => TRUE
+? fit(BoundaryRawGrave, HighSec, Case_BoundaryRawGrave).
+# => FALSE
+? correct(Case_BoundaryRawGrave, ActivePower).
+# => FALSE
+? prisoner(BoundaryRawGrave).
+# => FALSE
+? building(HighSec, BoundaryRawGrave).
+# => FALSE
+? building(Homestay, BoundaryRawGrave).
+# => FALSE
+? owe(State, Dwell, BoundaryRawGrave).
+# => TRUE
+? decide(BoundaryRawGrave, Ballot).
+# => TRUE
+? family(BoundaryRawGrave).
+# => FALSE
