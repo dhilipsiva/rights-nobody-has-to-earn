@@ -43,6 +43,50 @@ source-bound transition remain explicit. Neither denial nor breach is
 renamed success. Budget choice, delay, monopoly or refusal to procure is not
 proof of physical scarcity. The existing scarcity safeguards still apply.
 
+## Essential water and a river's limit
+
+The water case supplies a present conflict: continuing an existing essential
+water service for immediate health conflicts with the river's minimum flow.
+Qualified evidence states that no presently available route meets both, after
+examining feasible alternatives and procurement. The specified interim route
+requires essential supply to continue by the least harmful available means
+and identifies a bounded transition to an alternative supply. These are supplied
+premises, not measured water levels or a claim that another supply has arrived.
+
+The conclusion is a duty to preserve immediate human continuity, obtain
+alternatives, repair the breach and reassess. Every unmet part of the human
+floor remains a failure; every breach of the river condition remains a breach.
+Protecting today's claimant does not write off the river or the conditions
+later people need. The record carries its own end; fresh authority would
+require its conditions to be met again. It supplies no permission for a new
+irreversible activity.
+
+The tests withhold the route when positive evidence of the incompatibility or
+examination of procurement is missing. They retain the person's health
+entitlement. The qualifying ecological record also supplies no authority to
+divide water among people. A separate comparison supplies the actual physical
+scarcity finding and allocation conditions; only then does that bounded
+allocation permission follow. An ecological limit is not itself proof that
+usable supply cannot meet the affected claims.
+
+The fish exposed by withdrawal raise another question. The river's protected
+condition concerns the living system and its continuity. Individual fish have
+interests in life, bodily integrity and care even if saving them would not
+restore the river's flow. A proposed intervention must meet the animal
+protection rules independently. Neither claim cancels the other.
+
+In the case involving both offices, the Guardian states the river's claim and
+the Animal Advocate states the individual animals' claim. The independent court's supplied
+decision calls for least harmful interim water provision and a separately
+qualified rescue. It must apply hard prohibitions first and give public reasons
+addressing the distinct interests, alternatives, uncertainty and continuity.
+That decision alone permits no invasive intervention. A separate test supplies
+the serious conservation purpose, necessity, absence of a materially less
+harmful alternative, welfare safeguards and independent prior review; only
+that complete animal record permits the particular use. With its prior review
+missing, the permission does not follow even though the conflict decision
+still qualifies. Neither conclusion establishes that any fish was rescued.
+
 ## Axes that do not trade
 
 The environmental right is separate from the material floor. It can be violated

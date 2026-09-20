@@ -135,6 +135,9 @@ observe(ScarcityCaseReview, ScarcityCaseRecord, ReviewedScarcityShortfall, Scarc
 observe(ScarcityCaseSource, ScarcityCaseRecord, ScarcityCaseAuthorization, ScarcityFindingAuthorizationScope).
 observe(ScarcityCaseEvidence, ScarcityCaseRecord, ScarcityCaseAuthorization, ScarcityFindingAuthorizationScope).
 observe(ScarcityCaseReview, ScarcityCaseRecord, ScarcityCaseAuthorization, ScarcityFindingAuthorizationScope).
+observe(ScarcityCaseSource, ScarcityCaseRecord, ScarcityCaseClaim, ScarcityUnmetClaimScope).
+observe(ScarcityCaseEvidence, ScarcityCaseRecord, ScarcityCaseClaim, ScarcityUnmetClaimScope).
+observe(ScarcityCaseReview, ScarcityCaseRecord, ScarcityCaseClaim, ScarcityUnmetClaimScope).
 observe(ScarcityCaseSource, ScarcityCaseRecord, RecordedAsFailureNeverAsARedefinedMinimum, ScarcityShortfallDispositionScope).
 observe(ScarcityCaseEvidence, ScarcityCaseRecord, RecordedAsFailureNeverAsARedefinedMinimum, ScarcityShortfallDispositionScope).
 observe(ScarcityCaseReview, ScarcityCaseRecord, RecordedAsFailureNeverAsARedefinedMinimum, ScarcityShortfallDispositionScope).

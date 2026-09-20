@@ -52,7 +52,7 @@ carried in single figures, which is where the rebalance has most to do.
 | works | 11 |
 | associates | 6 |
 | requests | 8 |
-| receives | 74 |
+| receives | 76 |
 | challenges | 24 |
 | governs | 33 |
 | is acted upon | 71 |
@@ -65,7 +65,7 @@ what matters is the book's shape, not the chapter's.
 
 | Pattern | Passages |
 | --- | ---: |
-| constructive | 91 |
+| constructive | 93 |
 | private-civic | 28 |
 | democratic | 35 |
 | coercive | 43 |
@@ -84,14 +84,14 @@ checked here.
 | Collective and plurality rights | 1 | 1 | 2 |
 | Defence and armed force | 1 | 1 | 2 |
 | Democracy and amendment | 8 | 6 | 8 |
-| Ecology, future generations and commons | 5 | 3 | 6 |
+| Ecology, future generations and commons | 5 | 4 | 6 |
 | Economy, property, work and commons | 17 | 15 | 20 |
 | Emergency and resilience | 3 | 2 | 4 |
 | Justice and coercion | 13 | 12 | 16 |
 | Knowledge, communication and culture | 3 | 2 | 3 |
 | Life course, family, care and reproduction | 12 | 4 | 8 |
 | Locality, mobility and external relations | 1 | 2 | 2 |
-| Material floor | 10 | 19 | 22 |
+| Material floor | 10 | 20 | 23 |
 | Non-human animals | 1 | 1 | 2 |
 | Personhood and equality | 20 | 10 | 16 |
 | Public institutions | 11 | 10 | 14 |
@@ -133,12 +133,13 @@ checked here.
 | 05-03 | 05-whether-it-arrived.md | What holding requires | Material floor | DELIVERY-RECEIPT | ordinary | custody and holding create duties; independent evidence establishes shelter | receives | continuity-remedy | yes | constructive | `tests/pins/public-safety/protection/actual-holding/independent-shelter-receipt/expect.pins.nibli` |
 | 05-04 | 05-whether-it-arrived.md | The child with nobody | Material floor | DELIVERY-RECEIPT | protective | the child with nobody: one birth entry and nothing else | receives | unresolved | yes | constructive | `book-1/05-whether-it-arrived.pins.nibli` |
 | 05-05 | 05-whether-it-arrived.md | What none of this proves | Material floor | DELIVERY-RECEIPT | protective | the boundary of a record that proves no arrival | receives | unresolved | yes | constructive | `book-1/05-whether-it-arrived.pins.nibli` |
-| 06-00 | 06-when-there-is-genuinely-not-enough.md | (preamble) | Material floor | SCARCITY-AND-CONFLICT | ordinary | the sentence that turns a failure into a fact of nature | receives | contested | yes | constructive | `book-1/06-when-there-is-genuinely-not-enough.pins.nibli` |
+| 06-00 | 06-when-there-is-genuinely-not-enough.md | (preamble) | Material floor | SCARCITY-AND-CONFLICT | ordinary | an indivisible essential unit, two protected claims and a supplied comparative decision | receives | contested | yes | constructive | `book-1/06-when-there-is-genuinely-not-enough.pins.nibli` |
 | 06-01 | 06-when-there-is-genuinely-not-enough.md | What has to be true before the word may be used | Material floor | SCARCITY-AND-CONFLICT | protective | what a shortage finding has to establish first | receives | contested | yes | constructive | `book-1/06-when-there-is-genuinely-not-enough.pins.nibli` |
 | 06-02 | 06-when-there-is-genuinely-not-enough.md | What a finding lets anybody do | Material floor | SCARCITY-AND-CONFLICT | continuity | an allocation bounded by the finding it rejoins | receives | continuity-remedy | no | constructive | `book-1/06-when-there-is-genuinely-not-enough.pins.nibli` |
+| 06-09 | 06-when-there-is-genuinely-not-enough.md | One unit, two protected claims | Material floor | SCARCITY-AND-CONFLICT | both | opposed permitted considerations, comparative reasons, usable share priority and equal-claim lottery | receives | contested | yes | constructive | `book-1/06-when-there-is-genuinely-not-enough.pins.nibli` |
 | 06-03 | 06-when-there-is-genuinely-not-enough.md | What may never decide it | Material floor | SCARCITY-AND-CONFLICT | protective | the priority keys refused by name | receives | works | no | constructive | `book-1/06-when-there-is-genuinely-not-enough.pins.nibli` |
-| 06-04 | 06-when-there-is-genuinely-not-enough.md | What is still owed afterwards | Material floor | SCARCITY-AND-CONFLICT | continuity | a shortfall recorded as failure | receives | continuity-remedy | no | constructive | `book-1/06-when-there-is-genuinely-not-enough.pins.nibli` |
-| 06-05 | 06-when-there-is-genuinely-not-enough.md | When somebody asks and nobody answers | Material floor | SCARCITY-AND-CONFLICT | both | a request to review, and a reader who does not act | challenges | unresolved | yes | constructive | `book-1/06-when-there-is-genuinely-not-enough.pins.nibli` |
+| 06-04 | 06-when-there-is-genuinely-not-enough.md | What is still owed afterwards | Material floor | SCARCITY-AND-CONFLICT | continuity | the waiting claim is named as unmet and retains repair and reassessment | receives | continuity-remedy | no | constructive | `book-1/06-when-there-is-genuinely-not-enough.pins.nibli` |
+| 06-05 | 06-when-there-is-genuinely-not-enough.md | When somebody asks and nobody answers | Material floor | SCARCITY-AND-CONFLICT | both | request, comparison defect preserving the shortfall, and false scarcity defeating its basis | challenges | unresolved | yes | constructive | `book-1/06-when-there-is-genuinely-not-enough.pins.nibli` |
 | 06-06 | 06-when-there-is-genuinely-not-enough.md | The conflicts that are not about supply | Material floor | SCARCITY-AND-CONFLICT | protective | the named cross-domain conflicts | receives | contested | yes | constructive | `book-1/06-when-there-is-genuinely-not-enough.pins.nibli` |
 | 06-07 | 06-when-there-is-genuinely-not-enough.md | The child with nobody | Material floor | SCARCITY-AND-CONFLICT | protective | the child with nobody: one birth entry and nothing else | receives | unresolved | yes | constructive | `book-1/06-when-there-is-genuinely-not-enough.pins.nibli` |
 | 06-08 | 06-when-there-is-genuinely-not-enough.md | What none of this counts | Material floor | SCARCITY-AND-CONFLICT | protective | the boundary of a record that counts no stock | receives | unresolved | yes | constructive | `book-1/06-when-there-is-genuinely-not-enough.pins.nibli` |
@@ -147,7 +148,7 @@ checked here.
 | 07-02 | 07-who-owes-and-what-follows.md | A duty cannot be contracted away | Material floor | OBLIGATIONS | protective | a public function handed to a provider | receives | works | no | constructive | `book-1/07-who-owes-and-what-follows.pins.nibli` |
 | 07-03 | 07-who-owes-and-what-follows.md | What voluntary provision does not do | Life course, family, care and reproduction | OBLIGATIONS | protective | a household, a charity, and what neither is presumed to owe | cares | works | yes | private-civic | `book-1/07-who-owes-and-what-follows.pins.nibli` |
 | 07-06 | 07-who-owes-and-what-follows.md | Duties are not a price for rights | Personhood and equality | OBLIGATIONS | protective | rights retained through civic breach, competing duties and reviewed excuses | is acted upon, receives | contested | yes | constructive | `book-1/07-who-owes-and-what-follows.pins.nibli` |
-| 07-07 | 07-who-owes-and-what-follows.md | The chain after a finding | Records and accountability | OBLIGATIONS | both | a finding, independent reader, certified nonresponse, alternate and distinct remedies | challenges | continuity-remedy | yes | records | `book-1/07-who-owes-and-what-follows.pins.nibli` |
+| 07-07 | 07-who-owes-and-what-follows.md | The chain after a finding | Records and accountability | OBLIGATIONS | both | the waiting claim retains repair duties; distinct reader, alternate and remedy routes | challenges | continuity-remedy | yes | records | `book-1/07-who-owes-and-what-follows.pins.nibli` |
 | 07-08 | 07-who-owes-and-what-follows.md | Where delivery joins it | Material floor | DELIVERY-RECEIPT | continuity | a receipt that is absent, and what that does not establish | receives | unresolved | yes | constructive | `book-1/07-who-owes-and-what-follows.pins.nibli` |
 | 07-10 | 07-who-owes-and-what-follows.md | Economic wrongs, one route at a time | Economy, property, work and commons | ECONOMIC-CONSTITUTION | both | a wage denial, an eviction, an unlawful licence | works | continuity-remedy | yes | constructive | `book-1/07-who-owes-and-what-follows.pins.nibli` |
 | 07-12 | 07-who-owes-and-what-follows.md | A way in that does not need the operator's permission | Justice and coercion | NON-CARCERAL-JUSTICE | both | a request to review that the operator did not authorise | challenges | works | no | coercive | `book-1/07-who-owes-and-what-follows.pins.nibli` |
@@ -198,6 +199,7 @@ checked here.
 | 12-10 | 12-the-same-route-for-everyone.md | What this does not show | Personhood and equality | SUBSTANTIVE-EQUALITY | protective | the boundary of a record that finds no pattern | receives | unresolved | yes | constructive | `book-1/12-the-same-route-for-everyone.pins.nibli` |
 | 13-00 | 13-a-place-in-which-life-remains-possible.md | (preamble) | Ecology, future generations and commons | ECOLOGICAL-ANIMAL | protective | the conditions of the place a person lives, and their limits | receives | works | no | constructive | `book-1/13-a-place-in-which-life-remains-possible.pins.nibli` |
 | 13-01 | 13-a-place-in-which-life-remains-possible.md | A place in which life remains possible | Ecology, future generations and commons | ECOLOGICAL-ANIMAL | ordinary | air, water, soil and food | receives | works | yes | constructive | `book-1/13-a-place-in-which-life-remains-possible.pins.nibli` |
+| 13-09 | 13-a-place-in-which-life-remains-possible.md | Essential water and a river's limit | Ecology, future generations and commons | ECOLOGICAL-ANIMAL | both | immediate health continuity, river failure, separate physical allocation and independently qualified animal intervention | receives | continuity-remedy | no | constructive | `book-1/13-a-place-in-which-life-remains-possible.pins.nibli` |
 | 13-02 | 13-a-place-in-which-life-remains-possible.md | Axes that do not trade | Ecology, future generations and commons | LIBERTY-ECOLOGY | protective | the separate axes, the science envelope, and the order of repair | receives | works | yes | constructive | `book-1/13-a-place-in-which-life-remains-possible.pins.nibli` |
 | 13-03 | 13-a-place-in-which-life-remains-possible.md | When the record the protection rested on was defective | Ecology, future generations and commons | ECOLOGICAL-ANIMAL | continuity | an ecological record found defective | is acted upon, challenges | continuity-remedy | yes | records | `book-1/13-a-place-in-which-life-remains-possible.pins.nibli` |
 | 13-04 | 13-a-place-in-which-life-remains-possible.md | Speaking for conditions nobody may spend away | Ecology, future generations and commons | ECOLOGICAL-ANIMAL | both | a commons or future-conditions claim | challenges | works | yes | constructive | `book-1/13-a-place-in-which-life-remains-possible.pins.nibli` |

@@ -127,6 +127,64 @@ reinstate the retired tooling or workflow.
 Grouped by kind. Dates in each heading are the ratification dates; a ruling
 that was later implemented or narrowed carries that supersession inline.
 
+### Item 23 — comparative scarcity decisions and separate protected claims, 2026-09-20
+
+Under the standing delegated approval, the existing
+[scarcity and conflict contract](book-1/appendix/contracts/scarcity-and-conflict-contract.md)
+records a demonstrated missing allocation-specific reasons requirement and its
+repair. The complete prior allocation fixture qualified without named compared
+claims, a specified decision or comparative reasons. Its frozen six-pin case
+first failed the two intended refusal expectations, then passed after the repair.
+It remains registered with the generator without being rewritten into compliance.
+
+The allocation now requires its own claims, decision and reasons, qualified
+comparison of all relevant permitted considerations, a compatible comparison
+and method, and publication of comparative reasons and rejected alternatives.
+A usable equal share requires preserving that share; without one, materially
+unequal claims permit reviewed comparative priority, and materially equal claims
+permit disclosed rotation or lottery. No numerical weighting or engine-chosen
+recipient is introduced. A shortfall identifies the unmet claim. A supported
+comparison defect withdraws only the allocation while its genuine scarcity
+finding and shortfall duties remain; procurement refusal defeats the scarcity
+basis instead and requires restoration or procurement without cancelling rights.
+
+The worked indivisible power-unit case compares earlier need and greater
+resource-specific benefit for the waiting claim with imminent irreversible
+interruption and continuity for the continuing claim. Its supplied qualified
+decision, retained shortfall, challenge, defect, worth refusal, equal-claim
+lottery alternatives and unequal-lottery refusal are executable. The complete
+comparison/method matrix and explicit removal of that guard test the fixed
+procedural ordering. The economic allocation route already carries an actual
+allocation record and public reasons tied to source, facts, holder and effect;
+the ecological connector still consumes that actual proof.
+
+New ecological cases supply an existing essential water service conflicting
+with river minimum flow after alternatives and procurement are examined. The
+already-ratified dual-continuity rule retains both failure labels, least-harm
+immediate continuity, alternatives, repair and the record's own end. It gives
+no separate allocation or animal-use permission. The qualified Guardian/Animal
+Advocate conflict decision remains distinct from an invasive fish intervention's
+welfare, necessity, alternatives and independent prior-review conditions. No
+new ceiling waiver or general human-purpose priority is enacted. No inventory,
+measured flow, outside judgment, delivered provision or rescue is invented.
+
+Chapters 6, 7, 13 and 31 contain the exact approved reader projection and
+comparative argument. Their pins and existing coverage owners are updated;
+all existing case IDs remain. The complete `./verify.sh` passes **88,815 pins
+across 16,137 cases**, with complete contradiction checks and no findings, in
+**1,184.07s**. The five-minute target remains unmet. All final formal inputs
+were captured before that run; subsequent changes concerned prose only.
+Focused checks include the frozen six-pin regression, 49-pin comparison-defect
+sequence, four-pin method counterfactual, 12-pin water/allocation cases,
+nine-pin animal permission and prior-review control, and chapter pairs with
+78, 30 and 41 pins. Sixteen floor-vector, six reference, ten reader-coverage
+and five claim-discipline development tests pass. The reference test first
+found one new broken heading link, which was corrected and rechecked.
+The final prose was reviewed separately. The 34 ordered reader inputs total
+54,249 whitespace-delimited words excluding HTML comments, with 40,716 derived
+(75.05%). Child fixtures, exemptions, editorial order and the Book 2 boundary
+remain intact. Item 23 is complete and removed from the active backlog.
+
 ### Item 22 — severity limits secure placement without selecting it, 2026-09-20
 
 Source and prose are `session-drafted, author-approved under delegated approval

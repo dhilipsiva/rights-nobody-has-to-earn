@@ -5,11 +5,13 @@
 #   ./verify.sh          # the real check — the line above cannot see
 #                        # the cross-file reconciliation or the prose guards
 #
-# The chapter's case lists the child fixture and seven obligations fixtures —
+# The chapter's case lists the child fixture and eight obligations fixtures —
 # the five forms of public responsibility, delegation without discharge, and
 # the refusal to read a private duty out of subject matter alone:
 #   tests/pins/records/child_with_nobody/fixture.nibli
 #   tests/pins/obligations/case-001 .. case-008
+# It also supplies tests/pins/scarcity/worked/competing-claims/fixture.nibli
+# for the preceding chapter's waiting claimant and separate allocation duties.
 #
 # The rest of the chapter's chain rests on the families' own sequences, which
 # this file cites rather than duplicates:
@@ -27,7 +29,7 @@
 # WHAT FALSE MEANS HERE: a FALSE is pinned only where the KB could have said
 # TRUE, and the comment says what would flip it.
 
-:expect-pins 24
+:expect-pins 30
 
 # ── "Public responsibility around it takes distinct forms." ────────────────
 # Respect, protection, fulfilment, continuity, remedy — one typed duty each.
@@ -130,4 +132,20 @@ observe(Bystander, NellAlone, Nell, UninitiatedAssistanceScope).
 
 # "A duty is not an arrival" — nothing reads either duty, and no actuality moves.
 ? eats(Nell).
+# => FALSE
+
+# The waiting claim retains a responsible manager and an independent reader.
+# The stateful challenge and qualified comparison-defect sequence is
+# tests/pins/scarcity/worked/challenge-and-comparison-defect/expect.pins.nibli.
+? obliged(ScarcityWorkedManager, PublishComparativeAllocationReasonsAndRejectedAlternatives, ScarcityWorkedRecord).
+# => TRUE
+? obliged(ScarcityWorkedManager, RepairAndReassessTheRecordedShortfall, ScarcityWaitingShortfallRecord).
+# => TRUE
+? obliged(ScarcityWaitingShortfallReader, VerifyTheShortfallWasRecordedAsFailure, ScarcityWaitingShortfallRecord).
+# => TRUE
+? complete(ScarcityWaitingShortfallRecord, ReviewedScarcityShortfall, IndivisibleEssentialPowerUnit).
+# => TRUE
+? owe(State, Healthy, ScarcityWaitingClaimant).
+# => TRUE
+? healthy(ScarcityWaitingClaimant).
 # => FALSE

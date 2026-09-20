@@ -10,6 +10,9 @@ use regex::Regex;
 use serde::Deserialize;
 use std::collections::{BTreeMap, BTreeSet};
 
+#[path = "scarcity_worked.rs"]
+mod worked;
+
 const SOURCE: &str = "book-1/source/scarcity-source.json";
 const BEGIN: &str = "# <SCARCITY-AND-CONFLICT-RULES-BEGIN>";
 const END: &str = "# <SCARCITY-AND-CONFLICT-RULES-END>";
@@ -27,6 +30,7 @@ const ROLES: [(&str, &str); 3] = [
 struct Source {
     common_fields: Vec<[String; 2]>,
     vocabularies: Vec<(String, String, Vec<String>)>,
+    allocation_routes: Vec<[String; 2]>,
     contracts: Vec<Contract>,
 }
 
@@ -160,6 +164,12 @@ fn rules(source: &Source) -> Vec<String> {
             rules.push(format!("all $writer: all $record: observe($writer, $record, {value}, {scope}) -> member({value}, {vocabulary})."));
         }
     }
+    // The supplied comparison chooses the permissible procedure, not a person.
+    // A usable equal share precedes priority; a lottery cannot decide unequal
+    // claims. These memberships describe the closed constitutional routes.
+    for [comparison, method] in &source.allocation_routes {
+        rules.push(format!("all $writer: all $record: observe($writer, $record, {comparison}, ScarcityComparisonOutcomeScope) -> member({method}, {comparison})."));
+    }
     let scopes = source
         .contracts
         .iter()
@@ -212,7 +222,35 @@ fn bindings(source: &Source, contract: &Contract, prefix: &str) -> BTreeMap<Stri
         }
     }
     values.extend(contract.bindings.clone());
+    if contract.id == "allocation" {
+        values.insert(
+            "$comparison_outcome".into(),
+            "NoUsableEqualShareAndMateriallyUnequalClaims".into(),
+        );
+        values.insert(
+            "$allocation_method".into(),
+            "ReviewedComparativePriority".into(),
+        );
+    }
     values
+}
+
+/// When testing one vocabulary value, supply a compatible counterpart so the
+/// positive control exercises that value. Incompatible pairs are tested
+/// independently; an unknown value is deliberately left unsupported.
+fn match_allocation_route(source: &Source, values: &mut BTreeMap<String, String>, changed: &str) {
+    let (index, counterpart) = match changed {
+        "$comparison_outcome" => (0, "$allocation_method"),
+        "$allocation_method" => (1, "$comparison_outcome"),
+        _ => return,
+    };
+    if let Some(route) = source
+        .allocation_routes
+        .iter()
+        .find(|route| route[index] == values[changed])
+    {
+        values.insert(counterpart.into(), route[1 - index].clone());
+    }
 }
 
 fn ground(text: &str, values: &BTreeMap<String, String>) -> String {
@@ -338,6 +376,10 @@ pub(crate) fn generate(context: &Context, export: &mut Export) -> Result<(), Err
             "member($conflict_kind, ScarcityConflictKindVocabulary)",
         ),
         ("scarcity-no-mitigation-keys", MITIGATION_KEYS),
+        (
+            "scarcity-no-allocation-route",
+            "member($allocation_method, $comparison_outcome)",
+        ),
     ] {
         let edits = authored
             .iter()
@@ -426,6 +468,7 @@ pub(crate) fn generate(context: &Context, export: &mut Export) -> Result<(), Err
                     {
                         let mut other = values.clone();
                         other.insert(value.clone(), option.clone());
+                        match_allocation_route(&source, &mut other, &value);
                         let full = dependency(&source, contract, &other)
                             + &fixture(&source, contract, &other);
                         add_case(
@@ -531,6 +574,7 @@ pub(crate) fn generate(context: &Context, export: &mut Export) -> Result<(), Err
         }
     }
     integration_cases(context, export, &source)?;
+    worked::generate(context, export, &source)?;
     Ok(())
 }
 

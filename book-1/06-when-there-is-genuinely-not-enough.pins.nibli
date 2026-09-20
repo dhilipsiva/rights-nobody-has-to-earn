@@ -5,9 +5,10 @@
 #   ./verify.sh          # the real check — the line above cannot see
 #                        # the cross-file reconciliation or the prose guards
 #
-# The chapter's case lists two fixtures:
+# The chapter's case lists three fixtures:
 #   tests/pins/records/child_with_nobody/fixture.nibli
 #   tests/pins/scarcity/priority/false-scarcity-stops-the-allocation/fixture.nibli
+#   tests/pins/scarcity/worked/competing-claims/fixture.nibli
 # The second builds the whole ordinary sequence — a reviewed finding, an
 # allocation made under it, a shortfall recorded as failure — and a person
 # standing beside it. This file asks what that sequence concludes and what it
@@ -24,6 +25,9 @@
 #   tests/pins/scarcity/defect/positive  a reviewed defect withholds the exact
 #                                       use it names
 #   tests/pins/scarcity/conflict/        the named cross-domain conflicts
+#   tests/pins/scarcity/worked/          comparison/method pairs, supplied equal
+#                                       lottery outcomes, comparison defect,
+#                                       worth refusal and procurement refusal
 #
 # The vocabulary probes below use one bare lexicon record with no authorised
 # attesters, so they complete nothing and raise no record ambiguity; what they
@@ -32,7 +36,7 @@
 # WHAT FALSE MEANS HERE: a FALSE is pinned only where the KB could have said
 # TRUE, and the comment says what would flip it.
 
-:expect-pins 57
+:expect-pins 78
 
 # ── The ordinary sequence, from the fixture ────────────────────────────────
 # "A physical shortage has to be established" — and when it is, the manager
@@ -264,3 +268,48 @@ complete(ScarcityChapterRequest, ReviewedPhysicalScarcityFinding, ScarcityChapte
 # "What does not follow is a meal."
 ? eats(Nell).
 # => FALSE
+
+# The indivisible-unit comparison: supplied decision, reasons duty and named shortfall.
+? permits(ScarcityWorkedManager, AllocateUnderPhysicalScarcity, ScarcityWorkedRecord).
+# => TRUE
+? obliged(ScarcityWorkedManager, RecordEveryUnmetPortionAsFailure, ScarcityWorkedRecord).
+# => TRUE
+? obliged(ScarcityWorkedManager, PublishComparativeAllocationReasonsAndRejectedAlternatives, ScarcityWorkedRecord).
+# => TRUE
+? complete(ScarcityWorkedRecord, ReviewedScarcityAllocation, IndivisibleEssentialPowerUnit).
+# => TRUE
+? obliged(ScarcityWorkedManager, RepairAndReassessTheRecordedShortfall, ScarcityWaitingShortfallRecord).
+# => TRUE
+? obliged(ScarcityWaitingShortfallReader, VerifyTheShortfallWasRecordedAsFailure, ScarcityWaitingShortfallRecord).
+# => TRUE
+? complete(ScarcityWaitingShortfallRecord, ReviewedScarcityShortfall, IndivisibleEssentialPowerUnit).
+# => TRUE
+? person(ScarcityWaitingClaimant).
+# => TRUE
+? owe(State, Healthy, ScarcityWaitingClaimant).
+# => TRUE
+? decide(ScarcityWaitingClaimant, Ballot).
+# => TRUE
+? healthy(ScarcityWaitingClaimant).
+# => FALSE
+? false(ScarcityWaitingClaimant).
+# => FALSE
+? prisoner(ScarcityWaitingClaimant).
+# => FALSE
+? person(ScarcityContinuityClaimant).
+# => TRUE
+? owe(State, Healthy, ScarcityContinuityClaimant).
+# => TRUE
+? decide(ScarcityContinuityClaimant, Ballot).
+# => TRUE
+? healthy(ScarcityContinuityClaimant).
+# => FALSE
+? false(ScarcityContinuityClaimant).
+# => FALSE
+? prisoner(ScarcityContinuityClaimant).
+# => FALSE
+? observe(ScarcityWorkedSource, ScarcityWorkedRecord, ContinueUnitForContinuityClaimDuringThisWindow, ScarcitySpecifiedAllocationScope).
+# => TRUE
+
+? observe(ScarcityWaitingShortfallSource, ScarcityWaitingShortfallRecord, WaitingClaim, ScarcityUnmetClaimScope).
+# => TRUE

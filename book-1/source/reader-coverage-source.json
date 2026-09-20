@@ -472,7 +472,7 @@
       "domain": "Material floor",
       "family": "SCARCITY-AND-CONFLICT",
       "function": "ordinary",
-      "setting": "the sentence that turns a failure into a fact of nature",
+      "setting": "an indivisible essential unit, two protected claims and a supplied comparative decision",
       "trajectory": "contested",
       "basis": "book-1/06-when-there-is-genuinely-not-enough.pins.nibli",
       "pattern": "constructive",
@@ -511,6 +511,21 @@
       ]
     },
     {
+      "id": "06-09",
+      "chapter": "book-1/06-when-there-is-genuinely-not-enough.md",
+      "section": "One unit, two protected claims",
+      "domain": "Material floor",
+      "family": "SCARCITY-AND-CONFLICT",
+      "function": "both",
+      "setting": "opposed permitted considerations, comparative reasons, usable share priority and equal-claim lottery",
+      "trajectory": "contested",
+      "basis": "book-1/06-when-there-is-genuinely-not-enough.pins.nibli",
+      "pattern": "constructive",
+      "postures": [
+        "receives"
+      ]
+    },
+    {
       "id": "06-03",
       "chapter": "book-1/06-when-there-is-genuinely-not-enough.md",
       "section": "What may never decide it",
@@ -532,7 +547,7 @@
       "domain": "Material floor",
       "family": "SCARCITY-AND-CONFLICT",
       "function": "continuity",
-      "setting": "a shortfall recorded as failure",
+      "setting": "the waiting claim is named as unmet and retains repair and reassessment",
       "trajectory": "continuity-remedy",
       "basis": "book-1/06-when-there-is-genuinely-not-enough.pins.nibli",
       "pattern": "constructive",
@@ -547,7 +562,7 @@
       "domain": "Material floor",
       "family": "SCARCITY-AND-CONFLICT",
       "function": "both",
-      "setting": "a request to review, and a reader who does not act",
+      "setting": "request, comparison defect preserving the shortfall, and false scarcity defeating its basis",
       "trajectory": "unresolved",
       "basis": "book-1/06-when-there-is-genuinely-not-enough.pins.nibli",
       "pattern": "constructive",
@@ -683,7 +698,7 @@
       "domain": "Records and accountability",
       "family": "OBLIGATIONS",
       "function": "both",
-      "setting": "a finding, independent reader, certified nonresponse, alternate and distinct remedies",
+      "setting": "the waiting claim retains repair duties; distinct reader, alternate and remedy routes",
       "trajectory": "continuity-remedy",
       "basis": "book-1/07-who-owes-and-what-follows.pins.nibli",
       "pattern": "records",
@@ -1444,6 +1459,21 @@
       "function": "ordinary",
       "setting": "air, water, soil and food",
       "trajectory": "works",
+      "basis": "book-1/13-a-place-in-which-life-remains-possible.pins.nibli",
+      "pattern": "constructive",
+      "postures": [
+        "receives"
+      ]
+    },
+    {
+      "id": "13-09",
+      "chapter": "book-1/13-a-place-in-which-life-remains-possible.md",
+      "section": "Essential water and a river's limit",
+      "domain": "Ecology, future generations and commons",
+      "family": "ECOLOGICAL-ANIMAL",
+      "function": "both",
+      "setting": "immediate health continuity, river failure, separate physical allocation and independently qualified animal intervention",
+      "trajectory": "continuity-remedy",
       "basis": "book-1/13-a-place-in-which-life-remains-possible.pins.nibli",
       "pattern": "constructive",
       "postures": [

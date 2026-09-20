@@ -58,6 +58,9 @@ observe(ScarcityCaseReview, ScarcityCaseRecord, ReviewedScarcityShortfall, Scarc
 observe(ScarcityCaseSource, ScarcityCaseRecord, ScarcityCaseAuthorization, ScarcityFindingAuthorizationScope).
 observe(ScarcityCaseEvidence, ScarcityCaseRecord, ScarcityCaseAuthorization, ScarcityFindingAuthorizationScope).
 observe(ScarcityCaseReview, ScarcityCaseRecord, ScarcityCaseAuthorization, ScarcityFindingAuthorizationScope).
+observe(ScarcityCaseSource, ScarcityCaseRecord, ScarcityCaseClaim, ScarcityUnmetClaimScope).
+observe(ScarcityCaseEvidence, ScarcityCaseRecord, ScarcityCaseClaim, ScarcityUnmetClaimScope).
+observe(ScarcityCaseReview, ScarcityCaseRecord, ScarcityCaseClaim, ScarcityUnmetClaimScope).
 observe(ScarcityCaseSource, ScarcityCaseRecord, ScarcityCaseUnmet, ScarcityUnmetPortionScope).
 observe(ScarcityCaseEvidence, ScarcityCaseRecord, ScarcityCaseUnmet, ScarcityUnmetPortionScope).
 observe(ScarcityCaseReview, ScarcityCaseRecord, ScarcityCaseUnmet, ScarcityUnmetPortionScope).

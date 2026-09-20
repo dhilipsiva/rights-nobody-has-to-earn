@@ -5,11 +5,12 @@ meet every claim. The constitution therefore needs a way to allocate what is
 available without treating the unmet part as something the person was never
 owed.
 
-The chapter's case follows a finding of physical scarcity, an allocation under
-it and a recorded shortfall. The manager has bounded authority to administer
-that resource. The claimant retains personhood, the food debt and the vote;
-the shortfall produces neither a loss of recognition nor confinement. None
-of those conclusions establishes what was actually available or delivered.
+The chapter follows one indivisible essential power unit and two protected
+claims. One person is waiting for it; another would lose continuing provision
+if it were reassigned. The supplied evidence supports different priorities.
+A reviewed decision can qualify, and the person who goes without retains a
+claim to provision and repair. The case supplies its shortage and comparative
+evidence; it establishes no actual inventory or delivery.
 
 The ground for using this route matters. A budget choice, exclusion by price,
 administrative delay, artificial withholding, monopoly, provider failure or
@@ -40,6 +41,40 @@ Any further priority must rest on urgency, accessibility, imminent irreversible 
 harm from interrupted provision, and benefit from the resource assessed after
 accommodation. These are grounds for this allocation, not a general ranking of people.
 
+## One unit, two protected claims
+
+In the supplied case, sharing the unit would leave neither claim with usable
+provision. The comparison concerns this allocation window:
+
+| Relevant ground | What the supplied comparison says |
+| --- | --- |
+| Urgency | The waiting claim has the earlier need. |
+| Imminent irreversible harm | Interrupting the continuing claim risks an irreversible loss. |
+| Continuity | Reassignment would break existing essential provision. |
+| Benefit after accommodation | The waiting claim has the larger likely benefit from this resource. |
+| Accessibility | Each claim must be assessed with the accommodation needed to use the resource. |
+
+The manager's stated decision is to continue the unit for this window. Its
+reasons put the irreversible harm of interruption and continuity ahead of
+the waiting claim's earlier need and larger likely benefit. The allocation
+names both claims, the chosen use, the comparison and the rejected alternative.
+The manager owes publication of those comparative reasons. Independent review,
+accessible challenge and an end remain conditions of its authority.
+
+The rules permit that qualified decision. They do not calculate the relative
+weights, discover that the supplied evidence is true or select the recipient.
+Continuity is an allowed ground for this decision; possession alone gives no
+priority. Neither urgency nor likely benefit is an automatic trump over every
+other permitted ground.
+
+A second comparison makes the claims materially equal after accommodation.
+No usable equal share exists there either, so a disclosed lottery is a permitted
+method. Separate tests supply each possible recipient and qualify each result.
+The rules do not conduct the draw. Using that lottery on the unequal comparison
+does not qualify. If an effective equal share is available, that share takes
+priority over either selective allocation or a lottery.
+Missing comparison evidence does not establish material equality.
+
 ## What may never decide it
 
 The forbidden priority keys are explicit: wealth, contribution, recognition, a
@@ -57,6 +92,12 @@ reassessment. Recording it as failure does not reduce the entitlement or create
 an adverse finding about the claimant. A shortage found for one resource
 or one population licenses nothing about another.
 
+The waiting claim is named in its own shortfall record. Its essential provision
+for this window remains unmet, and the responsible manager owes continuity,
+repair and reassessment. The waiting person's health entitlement and adult
+ballot remain. Health delivery, personal fault and confinement do not follow.
+The allocation's permission settles none of those other questions.
+
 ## When somebody asks and nobody answers
 
 A finding remains open to challenge. A request to review
@@ -71,9 +112,23 @@ respond, with authenticated notice and a real opportunity to act already in
 the record; then the predeclared independent alternate carries it. Silence is
 never approval, and it is never an adverse fact about the person who asked.
 
-A defect must be independently established. It withdraws the exact use it
-names and leaves the rest of the record standing. It creates neither an
-adverse finding about the claimant nor an automatic individual remedy.
+The waiting person challenges the comparative decision. That request creates
+the reader's review duty while the allocation still qualifies. A further,
+independently established finding that its comparison or reasons are unsupported
+withdraws authority for that allocation. The genuine scarcity finding and
+the waiting claim's shortfall duties remain. The defect creates no adverse
+finding about either claimant and does not prove that the unit was reassigned
+or a remedy delivered.
+The reader owes review and correction of the unsupported use; the manager
+owes publication of the correction.
+
+The false-scarcity control changes a different premise. A qualified finding
+establishes that the supposed shortage arose from refusal to procure. The
+finding's scarcity authority and the allocation under it cease to qualify;
+the scarcity shortfall record loses that basis too. Duties to treat the refusal
+as failure and restore or procure what was withheld follow. Neither person's
+floor is cancelled. An official cannot use a refused procurement to turn
+ordinary responsibility into permission to ration.
 
 ## The conflicts that are not about supply
 

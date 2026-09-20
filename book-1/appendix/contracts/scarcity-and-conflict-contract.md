@@ -38,6 +38,28 @@ a threshold resource into equally useless pieces, no forbidden priority key and
 no personal-worth ranking, rotation or lottery only among materially equal
 claims, and surviving interim alternatives and continuity.
 
+The allocation itself must name the compared claims, specified allocation and
+comparative reasons record. Its attesters must agree that all relevant urgency,
+accessibility, imminent irreversible harm, continuity harm and benefit after
+accommodation were compared, and that public reasons address the chosen
+allocation and rejected alternatives with accessible claimant challenge. The
+manager has an express duty to publish those comparative reasons. Reasons for
+calling the resource scarce do not substitute for reasons choosing its use.
+
+The reviewed comparison and chosen method must match:
+
+| Reviewed comparison | Permitted method |
+| --- | --- |
+| Effective usable equal share available | Preserve that share |
+| No usable equal share; materially unequal claims | Reviewed comparative priority |
+| No usable equal share; materially equal claims | Disclosed rotation or disclosed lottery |
+
+These are compatibility conditions, not numerical weights or an ordering of
+the five permitted considerations. The manager supplies the proposed decision;
+independent review qualifies its comparison and reasons. The model neither
+measures those considerations nor chooses or randomizes a recipient. A single
+allowed mitigation key cannot replace the complete comparison.
+
 The permitted mitigation keys are closed: urgency, accessibility, imminent
 irreversible harm, continuity harm, and individualized resource-specific benefit
 after accommodation. The forbidden keys are declared and each has its own case
@@ -52,6 +74,72 @@ A recorded shortfall is the third record. It is recorded **as failure, never as
 a redefined minimum**, carries continuity, repair and reassessment duties and a
 reader's duty to verify it was recorded as failure, and states that it is no
 adverse fact about the person who went without.
+It must identify the unmet claim. It depends on the genuine scarcity finding,
+not on the continued validity of a particular allocation, so a qualified defect
+in the allocation's comparison can withdraw that allocation while preserving
+the shortfall and its duties. A qualified false-scarcity finding defeats the
+scarcity basis instead and activates duties to treat the refusal as failure
+and restore or procure what was withheld; it cannot extinguish the floor.
+
+## Worked conflicts under delegated author approval, 2026-09-20
+
+TODO item 23 confirmed a missing constitutional connection. The complete
+pre-change allocation fixture qualified without an allocation-specific claims
+set, specified decision or comparative reasons. The frozen case
+`scarcity/worked/no-comparative-reasons` executed against that source with two
+unexpected positive results: allocation permission and completion. The repaired
+contract requires that packet, expressly assigns publication to the manager,
+and binds the reviewed comparison to the permitted allocation method. The
+original fixture remains an executable refusal case rather than being silently
+regenerated into compliance.
+
+Alternatives examined were relying on the scarcity finding's public reasons,
+requiring only a permitted mitigation key, automatically ranking the five
+considerations, and removing differential allocation in favour of a lottery.
+The first two leave the particular selection unexplained. A numerical ranking
+would enact priorities the economic ruling does not choose, while a universal
+lottery would ignore the material differences that ruling requires considered.
+The adopted repair expresses the existing ordering and accountable discretion
+without inventing weights. It is a verified repair, not a defence of the missing
+connection as necessary or impossible to resolve.
+
+The worked power-unit case supplies one indivisible resource, two claims and a
+qualified comparison. Earlier need and larger resource-specific benefit favour
+the waiting claim; imminent irreversible interruption and continuity favour
+continued provision. The supplied reviewed decision selects continuation for
+this window. Its named unmet waiting claim retains continuity, repair and
+reassessment duties. A request creates review while the decision still qualifies;
+a qualified comparison defect withdraws the allocation while the genuine
+finding and shortfall remain. A procurement-refusal finding instead defeats the
+scarcity basis. A general lifespan priority fails. Separate materially equal
+cases accept a supplied disclosed-lottery result naming either claimant, while
+the unequal lottery fails. All twelve comparison/method pairs and a
+counterfactual removing that compatibility guard exercise the fixed ordering.
+
+The water/river cases exercise the already-ratified ecological dual-continuity
+contract without creating a ceiling waiver. The supplied existing essential
+water service cannot presently meet both immediate human health continuity and
+the river's minimum flow after feasible alternatives and procurement have been
+examined. Its least-harm interim route creates continuity, alternatives and
+repair duties while preserving both failure labels and its own source-bound
+end. Missing incompatibility or alternatives evidence withholds that route.
+The dual record alone gives no water-allocation permission. The positive
+allocation case supplies the actual economic finding and allocation proof
+through the existing ecological connector, not a substitute certificate.
+
+The related animal case distinguishes the river's condition from individual
+fish life, bodily integrity and care. The independent court's qualified
+Guardian/Animal Advocate conflict decision gives no animal-use permission.
+An invasive conservation rescue additionally needs the full separate welfare
+and enhanced-use conditions, including prior independent review. Removing that
+review withholds the use while the conflict decision still qualifies. No case
+establishes measured flows, authentic outside judgments, actual supply or
+performed rescue. Book 2 retains operation and transition; the constitutional
+obligations and refusal cases are implemented here.
+
+The exact revised text in Chapters 6, 7, 13 and 31 is approved under the
+2026-09-13 standing delegation. Those chapters describe the current design;
+this record and Git retain the diagnosis, alternatives and implementation.
 
 ## The other conflicts, resolved by a rule stated in advance
 
@@ -104,11 +192,33 @@ quantities, reserves, production, capacity, queues, workflows and empirical
 evaluation. Nibli counts no stock, forecasts no supply, measures no shortage and
 proves no procurement, delivery, restoration or repair.
 
+## Item 23 validation, 2026-09-20
+
+The complete `./verify.sh` passes **88,815 pins across 16,137 cases** with
+complete contradiction checks and no findings in **1,184.07 seconds**, using
+four workers. The five-minute performance target is not met. All final formal
+inputs were in place before the run; later edits concern explanatory prose.
+All previous case IDs remain, with 46 new cases. The scarcity family contains
+401 cases and the ecology family 9,380, as counted in the execution inventory.
+
+Focused passes cover the frozen missing-reasons regression (6 pins), the
+comparison-defect sequence (49), the method counterfactual (4), water continuity
+and the separate actual allocation (12 each), the animal-use permission and
+its missing-prior-review control (9 each), and Chapters 6, 7 and 13 (78, 30 and
+41). The full run also executes every new method pairing, equal lottery,
+false-scarcity and omission case. Sixteen floor-vector, six reference, ten
+reader-coverage and five claim-discipline development tests pass. A newly added
+heading link failed the first reference check; the corrected link passes.
+The final prose was reviewed for current-design narration, supplied-premise
+limits, duty/performance distinctions and consistency with the cases.
+
 ## Executable cases and what they check
 
 `scarcity-source.json` is the semantic input to `./generate.sh scarcity`. It
-writes the `SCARCITY-AND-CONFLICT-RULES` block — 124 rules — and 362 isolated
-cases under `tests/pins/scarcity/`. Every contract has positive, withheld,
+writes the `SCARCITY-AND-CONFLICT-RULES` block and the isolated
+cases under `tests/pins/scarcity/`. Its current rule total is the number of
+generated rules in that block; its execution inventory is the matching case
+family in `tests/pins/suites.json`. Every contract has positive, withheld,
 per-scope omission, unauthorized-attester, stale, self-review, manager-as-reviewer,
 fused-alternate, mismatched-version, period-drift and conflicting-value cases,
 and every vocabulary value is exercised beside an unapproved one. The two
@@ -120,6 +230,9 @@ distinctness, the ground vocabulary and the conflict vocabulary — and a fourth
 removes the mitigation-key vocabulary, which is what the forbidden-key wall rests
 on: its paired control shows wealth allocating once that membership check is
 gone.
+The worked comparison adds a fifth counterfactual: removing the
+comparison/method compatibility guard admits a lottery among materially
+unequal claims. Its paired live case withholds that allocation.
 
 The integration cases name things one at a time rather than in bulk: each of the
 fifteen forbidden priority keys, each of the seven refused grounds, each of the

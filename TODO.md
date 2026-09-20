@@ -5,7 +5,7 @@
 Created 2026-09-18 and refreshed 2026-09-20 at the author's request:
 "Refresh TODO to make book a 10/10."
 
-**Active: items 23–33 below are pending.** Items 01–22 were
+**Active: items 24–33 below are pending.** Items 01–23 were
 completed on 2026-09-20. The first round's [final manuscript review](reviews/2026-09-20-final-manuscript-review.md),
 subsequent coherent commits and `CLAUDE.md` retain the assessments, repairs and
 validation. This refresh opens further work; it does not reverse those
@@ -133,33 +133,11 @@ solutions and development history stay outside the book's reading sequence.
 
 ## Ordered revision backlog
 
-Work in this order. Items 23–24 settle the remaining substantive questions before the
-opening and editorial passes depend on their answers. Each item includes its
+Work in this order. Item 24 settles the remaining substantive questions before the
+opening and editorial passes depend on its answers. Each item includes its
 own relevant validation under the execution contract; item 33 is a final
 integration review, not permission to defer earlier checks. Chapter numbers
 refer to the [current reading sequence](book-1/contents.json).
-
-- [ ] **23. Work through genuine scarcity and conflicting protected claims.**
-
-  **Scope:** Chapters 6, 7, 13 and 31; the
-  [scarcity and conflict contract](book-1/appendix/contracts/scarcity-and-conflict-contract.md)
-  and affected rule families.
-
-  Follow an indivisible-resource case in which urgency, irreversible harm,
-  continuity and likely benefit after accommodation pull in different
-  directions. Include a materially equal comparison and a false-scarcity
-  control. Follow a human-floor/ecological-limit conflict and distinguish it
-  from an animal-interest claim where relevant. State which priority is fixed,
-  which judgment is delegated, who must give reasons, what can defeat it and
-  what remains owed to the person who loses the allocation. Do not invent a
-  deterministic ranking where the constitution permits bounded discretion.
-
-  **Done when:** the book demonstrates a justified decision and challenge route
-  under stated premises, alongside the unacceptable alternatives. Any missing
-  constitutional connection is repaired and pinned. No prohibited worth score,
-  invented inventory or claimed actual delivery supplies the resolution, and
-  an allocation record is not described as the engine independently choosing
-  the recipient.
 
 - [ ] **24. Complete the argument for the consequential institutional choices.**
 

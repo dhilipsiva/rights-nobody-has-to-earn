@@ -73,6 +73,20 @@ not create the bearer's own excuse.
 
 ## The chain after a finding
 
+The waiting person in the preceding chapter has lost an allocation for one
+window, not the claim to essential provision. The shortfall record names that
+unmet claim. It gives the responsible manager duties of continuity, repair and
+reassessment, and gives a separate reader the duty to verify that the unmet
+portion was recorded as failure. The manager must also publish the allocation's
+comparative reasons and rejected alternatives. Those duties have different
+objects: explaining the choice does not repair the shortfall.
+
+When the person challenges the comparison, review becomes due without an
+automatic change of allocation. A qualified finding that the comparison or
+reasons are unsupported withdraws that allocation's authority. The genuine
+shortage and the claimant's repair route survive. A defect in the decision
+cannot serve as an excuse to forget the person who is still waiting.
+
 A finding reaches an independently named reader and produces an action duty
 for the specified kind of case. It is not enough that some body somewhere is
 answerable: the finding, source, scope and recipient must match the route.

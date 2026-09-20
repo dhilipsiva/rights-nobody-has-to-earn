@@ -141,7 +141,27 @@
         "MissingAlternativesEvidence",
         "StaleFinding",
         "NoSourceBoundEnd",
-        "BlockedChallengeOrReview"
+        "BlockedChallengeOrReview",
+        "UnsupportedAllocationComparisonOrReasons"
+      ]
+    ],
+    [
+      "ScarcityComparisonOutcomeScope",
+      "ScarcityComparisonOutcomeVocabulary",
+      [
+        "UsableEqualShareAvailable",
+        "NoUsableEqualShareAndMateriallyUnequalClaims",
+        "NoUsableEqualShareAndMateriallyEqualClaims"
+      ]
+    ],
+    [
+      "ScarcityAllocationMethodScope",
+      "ScarcityAllocationMethodVocabulary",
+      [
+        "PreserveEffectiveEqualShare",
+        "ReviewedComparativePriority",
+        "DisclosedRotation",
+        "DisclosedLottery"
       ]
     ]
   ],
@@ -223,13 +243,44 @@
         [
           "InterimAlternativesAndContinuityRouteSurvive",
           "ScarcityContinuityScope"
+        ],
+        [
+          "$claims",
+          "ScarcityComparedClaimsScope"
+        ],
+        [
+          "$allocation",
+          "ScarcitySpecifiedAllocationScope"
+        ],
+        [
+          "$reasons",
+          "ScarcityComparativeReasonsRecordScope"
+        ],
+        [
+          "$comparison_outcome",
+          "ScarcityComparisonOutcomeScope"
+        ],
+        [
+          "$allocation_method",
+          "ScarcityAllocationMethodScope"
+        ],
+        [
+          "AllRelevantUrgencyAccessibilityIrreversibleHarmContinuityAndBenefitAfterAccommodationCompared",
+          "ScarcityComparativeAssessmentScope"
+        ],
+        [
+          "PublicReasonsForChosenAllocationAndRejectedAlternativesWithAccessibleClaimantChallenge",
+          "ScarcityAllocationReasonsScope"
         ]
       ],
       "heads": [
         "permits($manager, AllocateUnderPhysicalScarcity, $record)",
-        "obliged($manager, RecordEveryUnmetPortionAsFailure, $record)"
+        "obliged($manager, RecordEveryUnmetPortionAsFailure, $record)",
+        "obliged($manager, PublishComparativeAllocationReasonsAndRejectedAlternatives, $record)"
       ],
-      "extra": [],
+      "extra": [
+        "member($allocation_method, $comparison_outcome)"
+      ],
       "record_dependency": true,
       "bindings": {}
     },
@@ -240,6 +291,10 @@
         [
           "$authorization",
           "ScarcityFindingAuthorizationScope"
+        ],
+        [
+          "$claim",
+          "ScarcityUnmetClaimScope"
         ],
         [
           "$unmet",
@@ -420,5 +475,23 @@
       "record_dependency": false,
       "bindings": {}
     }
+  ],
+  "allocation_routes": [
+    [
+      "UsableEqualShareAvailable",
+      "PreserveEffectiveEqualShare"
+    ],
+    [
+      "NoUsableEqualShareAndMateriallyUnequalClaims",
+      "ReviewedComparativePriority"
+    ],
+    [
+      "NoUsableEqualShareAndMateriallyEqualClaims",
+      "DisclosedRotation"
+    ],
+    [
+      "NoUsableEqualShareAndMateriallyEqualClaims",
+      "DisclosedLottery"
+    ]
   ]
 }

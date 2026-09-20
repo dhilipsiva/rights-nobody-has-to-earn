@@ -1,0 +1,35 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 16
+
+? permits(ScarcityWorkedManager, AllocateUnderPhysicalScarcity, ScarcityWorkedRecord).
+# => TRUE
+? obliged(ScarcityWorkedManager, RecordEveryUnmetPortionAsFailure, ScarcityWorkedRecord).
+# => TRUE
+? obliged(ScarcityWorkedManager, PublishComparativeAllocationReasonsAndRejectedAlternatives, ScarcityWorkedRecord).
+# => TRUE
+? complete(ScarcityWorkedRecord, ReviewedScarcityAllocation, IndivisibleEssentialPowerUnit).
+# => TRUE
+? person(ScarcityWaitingClaimant).
+# => TRUE
+? owe(State, Healthy, ScarcityWaitingClaimant).
+# => TRUE
+? decide(ScarcityWaitingClaimant, Ballot).
+# => TRUE
+? healthy(ScarcityWaitingClaimant).
+# => FALSE
+? false(ScarcityWaitingClaimant).
+# => FALSE
+? prisoner(ScarcityWaitingClaimant).
+# => FALSE
+? person(ScarcityContinuityClaimant).
+# => TRUE
+? owe(State, Healthy, ScarcityContinuityClaimant).
+# => TRUE
+? decide(ScarcityContinuityClaimant, Ballot).
+# => TRUE
+? healthy(ScarcityContinuityClaimant).
+# => FALSE
+? false(ScarcityContinuityClaimant).
+# => FALSE
+? prisoner(ScarcityContinuityClaimant).
+# => FALSE

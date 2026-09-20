@@ -17,6 +17,20 @@ The original decision status above records its ratification-time boundary;
 neither the decision nor the implementation establishes operational capacity,
 authenticated external truth or successful protection.
 
+**Worked conflict clarification — 2026-09-20, delegated author approval.** The
+water-service/river-minimum-flow and fish-intervention cases implement the
+existing present dual-continuity and separate animal-use rules. They enact no
+general human-purpose priority, ceiling waiver, new irreversible-activity
+permission or presumption that a conflict decision authorizes an animal use.
+They retain separate human shortfall and ecological breach, named alternatives,
+repair and a source-bound interim route. Allocation still requires the actual
+physical-scarcity interface; invasive animal intervention still requires its
+separate welfare, necessity, alternatives and prior-review conditions. See the
+[worked conflict record](../contracts/scarcity-and-conflict-contract.md#worked-conflicts-under-delegated-author-approval-2026-09-20)
+for the supplied premises and the exact approved chapter projection. The cases
+establish conditional model consequences, not an actual collision, procurement,
+judicial decision or rescue.
+
 ## 1. Decision
 
 Book 1 adopts three related but non-collapsed protections:

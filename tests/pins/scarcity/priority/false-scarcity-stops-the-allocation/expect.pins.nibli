@@ -1,5 +1,5 @@
 # SPDX-License-Identifier: MIT OR Apache-2.0
-:expect-pins 32
+:expect-pins 34
 
 ? authority(ScarcitySequenceManager, AdministerPhysicalScarcity, ScarcitySequenceAuthorization).
 # => TRUE
@@ -12,6 +12,8 @@
 ? permits(ScarcitySequenceManager, AllocateUnderPhysicalScarcity, ScarcitySequenceRecord).
 # => TRUE
 ? obliged(ScarcitySequenceManager, RecordEveryUnmetPortionAsFailure, ScarcitySequenceRecord).
+# => TRUE
+? obliged(ScarcitySequenceManager, PublishComparativeAllocationReasonsAndRejectedAlternatives, ScarcitySequenceRecord).
 # => TRUE
 ? complete(ScarcitySequenceRecord, ReviewedScarcityAllocation, ScarcitySequenceResource).
 # => TRUE
@@ -108,6 +110,8 @@ observe(ScarcityChoiceReview, ScarcityChoiceRecord, FloorAndContinuityRoutesSurv
 ? permits(ScarcitySequenceManager, AllocateUnderPhysicalScarcity, ScarcitySequenceRecord).
 # => FALSE
 ? obliged(ScarcitySequenceManager, RecordEveryUnmetPortionAsFailure, ScarcitySequenceRecord).
+# => FALSE
+? obliged(ScarcitySequenceManager, PublishComparativeAllocationReasonsAndRejectedAlternatives, ScarcitySequenceRecord).
 # => FALSE
 ? complete(ScarcitySequenceRecord, ReviewedScarcityAllocation, ScarcitySequenceResource).
 # => FALSE

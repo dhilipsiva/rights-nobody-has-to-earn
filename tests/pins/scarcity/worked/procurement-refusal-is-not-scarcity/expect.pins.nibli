@@ -1,0 +1,157 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 43
+
+? permits(ScarcityWorkedManager, AllocateUnderPhysicalScarcity, ScarcityWorkedRecord).
+# => TRUE
+? obliged(ScarcityWorkedManager, RecordEveryUnmetPortionAsFailure, ScarcityWorkedRecord).
+# => TRUE
+? obliged(ScarcityWorkedManager, PublishComparativeAllocationReasonsAndRejectedAlternatives, ScarcityWorkedRecord).
+# => TRUE
+? complete(ScarcityWorkedRecord, ReviewedScarcityAllocation, IndivisibleEssentialPowerUnit).
+# => TRUE
+? obliged(ScarcityWorkedManager, RepairAndReassessTheRecordedShortfall, ScarcityWaitingShortfallRecord).
+# => TRUE
+? obliged(ScarcityWaitingShortfallReader, VerifyTheShortfallWasRecordedAsFailure, ScarcityWaitingShortfallRecord).
+# => TRUE
+? complete(ScarcityWaitingShortfallRecord, ReviewedScarcityShortfall, IndivisibleEssentialPowerUnit).
+# => TRUE
+? person(ScarcityWaitingClaimant).
+# => TRUE
+? owe(State, Healthy, ScarcityWaitingClaimant).
+# => TRUE
+? decide(ScarcityWaitingClaimant, Ballot).
+# => TRUE
+? healthy(ScarcityWaitingClaimant).
+# => FALSE
+? false(ScarcityWaitingClaimant).
+# => FALSE
+? prisoner(ScarcityWaitingClaimant).
+# => FALSE
+? person(ScarcityContinuityClaimant).
+# => TRUE
+? owe(State, Healthy, ScarcityContinuityClaimant).
+# => TRUE
+? decide(ScarcityContinuityClaimant, Ballot).
+# => TRUE
+? healthy(ScarcityContinuityClaimant).
+# => FALSE
+? false(ScarcityContinuityClaimant).
+# => FALSE
+? prisoner(ScarcityContinuityClaimant).
+# => FALSE
+? observe(ScarcityWorkedSource, ScarcityWorkedRecord, ContinueUnitForContinuityClaimDuringThisWindow, ScarcitySpecifiedAllocationScope).
+# => TRUE
+authorized(ScarcityProcurementRefusalSource, ScarcitySourceAuthority, ScarcityProcurementRefusalRecord).
+authorized(ScarcityProcurementRefusalEvidence, IndependentScarcityEvidenceAuthority, ScarcityProcurementRefusalRecord).
+authorized(ScarcityProcurementRefusalReview, IndependentScarcityReviewAuthority, ScarcityProcurementRefusalRecord).
+authorized(ScarcityProcurementRefusalReader, ScarcityChallengeReaderAuthority, ScarcityProcurementRefusalRecord).
+authorized(ScarcityProcurementRefusalAlternate, ScarcityAlternateReviewAuthority, ScarcityProcurementRefusalRecord).
+observe(ScarcityProcurementRefusalSource, ScarcityProcurementRefusalRecord, IndivisibleEssentialPowerUnit, ScarcityResourceScope).
+observe(ScarcityProcurementRefusalEvidence, ScarcityProcurementRefusalRecord, IndivisibleEssentialPowerUnit, ScarcityResourceScope).
+observe(ScarcityProcurementRefusalReview, ScarcityProcurementRefusalRecord, IndivisibleEssentialPowerUnit, ScarcityResourceScope).
+observe(ScarcityProcurementRefusalSource, ScarcityProcurementRefusalRecord, WaitingAndContinuityClaimants, ScarcityAffectedPopulationScope).
+observe(ScarcityProcurementRefusalEvidence, ScarcityProcurementRefusalRecord, WaitingAndContinuityClaimants, ScarcityAffectedPopulationScope).
+observe(ScarcityProcurementRefusalReview, ScarcityProcurementRefusalRecord, WaitingAndContinuityClaimants, ScarcityAffectedPopulationScope).
+observe(ScarcityProcurementRefusalSource, ScarcityProcurementRefusalRecord, ScarcityWorkedManager, ScarcityManagerScope).
+observe(ScarcityProcurementRefusalEvidence, ScarcityProcurementRefusalRecord, ScarcityWorkedManager, ScarcityManagerScope).
+observe(ScarcityProcurementRefusalReview, ScarcityProcurementRefusalRecord, ScarcityWorkedManager, ScarcityManagerScope).
+observe(ScarcityProcurementRefusalSource, ScarcityProcurementRefusalRecord, ScarcityWorkedVersion, ScarcitySourceVersionScope).
+observe(ScarcityProcurementRefusalEvidence, ScarcityProcurementRefusalRecord, ScarcityWorkedVersion, ScarcitySourceVersionScope).
+observe(ScarcityProcurementRefusalReview, ScarcityProcurementRefusalRecord, ScarcityWorkedVersion, ScarcitySourceVersionScope).
+observe(ScarcityProcurementRefusalSource, ScarcityProcurementRefusalRecord, ThisAllocationWindow, ScarcityEvidencePeriodScope).
+observe(ScarcityProcurementRefusalEvidence, ScarcityProcurementRefusalRecord, ThisAllocationWindow, ScarcityEvidencePeriodScope).
+observe(ScarcityProcurementRefusalReview, ScarcityProcurementRefusalRecord, ThisAllocationWindow, ScarcityEvidencePeriodScope).
+observe(ScarcityProcurementRefusalSource, ScarcityProcurementRefusalRecord, ScarcityWorkedJurisdiction, ScarcityJurisdictionScope).
+observe(ScarcityProcurementRefusalEvidence, ScarcityProcurementRefusalRecord, ScarcityWorkedJurisdiction, ScarcityJurisdictionScope).
+observe(ScarcityProcurementRefusalReview, ScarcityProcurementRefusalRecord, ScarcityWorkedJurisdiction, ScarcityJurisdictionScope).
+observe(ScarcityProcurementRefusalSource, ScarcityProcurementRefusalRecord, ScarcityWorkedScope, ScarcityLegalScope).
+observe(ScarcityProcurementRefusalEvidence, ScarcityProcurementRefusalRecord, ScarcityWorkedScope, ScarcityLegalScope).
+observe(ScarcityProcurementRefusalReview, ScarcityProcurementRefusalRecord, ScarcityWorkedScope, ScarcityLegalScope).
+observe(ScarcityProcurementRefusalSource, ScarcityProcurementRefusalRecord, ScarcityWorkedEnd, ScarcitySourceBoundEndScope).
+observe(ScarcityProcurementRefusalEvidence, ScarcityProcurementRefusalRecord, ScarcityWorkedEnd, ScarcitySourceBoundEndScope).
+observe(ScarcityProcurementRefusalReview, ScarcityProcurementRefusalRecord, ScarcityWorkedEnd, ScarcitySourceBoundEndScope).
+observe(ScarcityProcurementRefusalSource, ScarcityProcurementRefusalRecord, CurrentReconciledScarcityRecord, ScarcityCurrentDispositionScope).
+observe(ScarcityProcurementRefusalEvidence, ScarcityProcurementRefusalRecord, CurrentReconciledScarcityRecord, ScarcityCurrentDispositionScope).
+observe(ScarcityProcurementRefusalReview, ScarcityProcurementRefusalRecord, CurrentReconciledScarcityRecord, ScarcityCurrentDispositionScope).
+observe(ScarcityProcurementRefusalSource, ScarcityProcurementRefusalRecord, ScarcityProcurementRefusalReader, ScarcityChallengeReaderScope).
+observe(ScarcityProcurementRefusalEvidence, ScarcityProcurementRefusalRecord, ScarcityProcurementRefusalReader, ScarcityChallengeReaderScope).
+observe(ScarcityProcurementRefusalReview, ScarcityProcurementRefusalRecord, ScarcityProcurementRefusalReader, ScarcityChallengeReaderScope).
+observe(ScarcityProcurementRefusalSource, ScarcityProcurementRefusalRecord, ScarcityProcurementRefusalAlternate, ScarcityIndependentAlternateScope).
+observe(ScarcityProcurementRefusalEvidence, ScarcityProcurementRefusalRecord, ScarcityProcurementRefusalAlternate, ScarcityIndependentAlternateScope).
+observe(ScarcityProcurementRefusalReview, ScarcityProcurementRefusalRecord, ScarcityProcurementRefusalAlternate, ScarcityIndependentAlternateScope).
+observe(ScarcityProcurementRefusalSource, ScarcityProcurementRefusalRecord, ScarcityProcurementRefusalChallenge, ScarcityChallengeScope).
+observe(ScarcityProcurementRefusalEvidence, ScarcityProcurementRefusalRecord, ScarcityProcurementRefusalChallenge, ScarcityChallengeScope).
+observe(ScarcityProcurementRefusalReview, ScarcityProcurementRefusalRecord, ScarcityProcurementRefusalChallenge, ScarcityChallengeScope).
+observe(ScarcityProcurementRefusalSource, ScarcityProcurementRefusalRecord, ScarcityProcurementRefusalCorrection, ScarcityCorrectionScope).
+observe(ScarcityProcurementRefusalEvidence, ScarcityProcurementRefusalRecord, ScarcityProcurementRefusalCorrection, ScarcityCorrectionScope).
+observe(ScarcityProcurementRefusalReview, ScarcityProcurementRefusalRecord, ScarcityProcurementRefusalCorrection, ScarcityCorrectionScope).
+observe(ScarcityProcurementRefusalSource, ScarcityProcurementRefusalRecord, ScarcityProcurementRefusalRemedy, ScarcityRemedyScope).
+observe(ScarcityProcurementRefusalEvidence, ScarcityProcurementRefusalRecord, ScarcityProcurementRefusalRemedy, ScarcityRemedyScope).
+observe(ScarcityProcurementRefusalReview, ScarcityProcurementRefusalRecord, ScarcityProcurementRefusalRemedy, ScarcityRemedyScope).
+observe(ScarcityProcurementRefusalSource, ScarcityProcurementRefusalRecord, ConstitutionalReviewOrIndependentSubstitute, ScarcityFinalReviewScope).
+observe(ScarcityProcurementRefusalEvidence, ScarcityProcurementRefusalRecord, ConstitutionalReviewOrIndependentSubstitute, ScarcityFinalReviewScope).
+observe(ScarcityProcurementRefusalReview, ScarcityProcurementRefusalRecord, ConstitutionalReviewOrIndependentSubstitute, ScarcityFinalReviewScope).
+observe(ScarcityProcurementRefusalSource, ScarcityProcurementRefusalRecord, NoStandingEmergencyPowerAndNoReducedRationRenamedAsTheMinimum, ScarcityCorridorScope).
+observe(ScarcityProcurementRefusalEvidence, ScarcityProcurementRefusalRecord, NoStandingEmergencyPowerAndNoReducedRationRenamedAsTheMinimum, ScarcityCorridorScope).
+observe(ScarcityProcurementRefusalReview, ScarcityProcurementRefusalRecord, NoStandingEmergencyPowerAndNoReducedRationRenamedAsTheMinimum, ScarcityCorridorScope).
+observe(ScarcityProcurementRefusalSource, ScarcityProcurementRefusalRecord, ReviewedFalseScarcityFinding, ScarcityRecordKindScope).
+observe(ScarcityProcurementRefusalEvidence, ScarcityProcurementRefusalRecord, ReviewedFalseScarcityFinding, ScarcityRecordKindScope).
+observe(ScarcityProcurementRefusalReview, ScarcityProcurementRefusalRecord, ReviewedFalseScarcityFinding, ScarcityRecordKindScope).
+observe(ScarcityProcurementRefusalSource, ScarcityProcurementRefusalRecord, ScarcityWorkedAuthorization, ScarcityAffectedFindingScope).
+observe(ScarcityProcurementRefusalEvidence, ScarcityProcurementRefusalRecord, ScarcityWorkedAuthorization, ScarcityAffectedFindingScope).
+observe(ScarcityProcurementRefusalReview, ScarcityProcurementRefusalRecord, ScarcityWorkedAuthorization, ScarcityAffectedFindingScope).
+observe(ScarcityProcurementRefusalSource, ScarcityProcurementRefusalRecord, RefusalToProcure, FalseScarcityKindScope).
+observe(ScarcityProcurementRefusalEvidence, ScarcityProcurementRefusalRecord, RefusalToProcure, FalseScarcityKindScope).
+observe(ScarcityProcurementRefusalReview, ScarcityProcurementRefusalRecord, RefusalToProcure, FalseScarcityKindScope).
+observe(ScarcityProcurementRefusalSource, ScarcityProcurementRefusalRecord, IndependentlyEstablishedAsAChoiceRatherThanAShortage, ScarcityFalseDispositionScope).
+observe(ScarcityProcurementRefusalEvidence, ScarcityProcurementRefusalRecord, IndependentlyEstablishedAsAChoiceRatherThanAShortage, ScarcityFalseDispositionScope).
+observe(ScarcityProcurementRefusalReview, ScarcityProcurementRefusalRecord, IndependentlyEstablishedAsAChoiceRatherThanAShortage, ScarcityFalseDispositionScope).
+observe(ScarcityProcurementRefusalSource, ScarcityProcurementRefusalRecord, FloorAndContinuityRoutesSurviveTheFinding, ScarcityFalseLimitScope).
+observe(ScarcityProcurementRefusalEvidence, ScarcityProcurementRefusalRecord, FloorAndContinuityRoutesSurviveTheFinding, ScarcityFalseLimitScope).
+observe(ScarcityProcurementRefusalReview, ScarcityProcurementRefusalRecord, FloorAndContinuityRoutesSurviveTheFinding, ScarcityFalseLimitScope).
+? contradict(ScarcityWorkedAuthorization, ScarcityFindingAuthorization).
+# => TRUE
+? obliged(ScarcityProcurementRefusalReader, TreatFalseScarcityAsFailureNotShortage, ScarcityWorkedAuthorization).
+# => TRUE
+? obliged(ScarcityWorkedManager, RestoreOrProcureWhatWasWithheld, ScarcityWorkedAuthorization).
+# => TRUE
+? complete(ScarcityProcurementRefusalRecord, ReviewedFalseScarcityFinding, IndivisibleEssentialPowerUnit).
+# => TRUE
+? permits(ScarcityWorkedManager, AllocateUnderPhysicalScarcity, ScarcityWorkedRecord).
+# => FALSE
+? obliged(ScarcityWorkedManager, RecordEveryUnmetPortionAsFailure, ScarcityWorkedRecord).
+# => FALSE
+? obliged(ScarcityWorkedManager, PublishComparativeAllocationReasonsAndRejectedAlternatives, ScarcityWorkedRecord).
+# => FALSE
+? complete(ScarcityWorkedRecord, ReviewedScarcityAllocation, IndivisibleEssentialPowerUnit).
+# => FALSE
+? obliged(ScarcityWorkedManager, RepairAndReassessTheRecordedShortfall, ScarcityWaitingShortfallRecord).
+# => FALSE
+? obliged(ScarcityWaitingShortfallReader, VerifyTheShortfallWasRecordedAsFailure, ScarcityWaitingShortfallRecord).
+# => FALSE
+? complete(ScarcityWaitingShortfallRecord, ReviewedScarcityShortfall, IndivisibleEssentialPowerUnit).
+# => FALSE
+? person(ScarcityWaitingClaimant).
+# => TRUE
+? owe(State, Healthy, ScarcityWaitingClaimant).
+# => TRUE
+? decide(ScarcityWaitingClaimant, Ballot).
+# => TRUE
+? healthy(ScarcityWaitingClaimant).
+# => FALSE
+? false(ScarcityWaitingClaimant).
+# => FALSE
+? prisoner(ScarcityWaitingClaimant).
+# => FALSE
+? person(ScarcityContinuityClaimant).
+# => TRUE
+? owe(State, Healthy, ScarcityContinuityClaimant).
+# => TRUE
+? decide(ScarcityContinuityClaimant, Ballot).
+# => TRUE
+? healthy(ScarcityContinuityClaimant).
+# => FALSE
+? false(ScarcityContinuityClaimant).
+# => FALSE
+? prisoner(ScarcityContinuityClaimant).
+# => FALSE

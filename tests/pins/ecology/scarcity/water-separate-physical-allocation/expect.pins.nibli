@@ -1,0 +1,26 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 12
+? complete(RiverWaterContinuityRecord, ECDualFloorAndCeilingContinuity, ExistingEssentialWaterService).
+# => TRUE
+? obliged(RiverWaterV14, ECPreserveImmediateFloorWhileObtainingAlternativesAndRepairingBreach, RiverWaterContinuityRecord).
+# => TRUE
+? prevents(RiverWaterContinuityRecord, ECUnmetFloorRenamedSuccess).
+# => TRUE
+? prevents(RiverWaterContinuityRecord, ECCeilingBreachRenamedCompliance).
+# => TRUE
+? permits(FSBOD_09, ECOnlyExistingRightsPreservingPhysicalScarcityAllocation, RiverWaterAllocationRecord).
+# => TRUE
+? obliged(FSBOD_09, ECPreserveActualScarcitySafeguardsFloorContinuityAndSeparateEcologicalFailure, RiverWaterAllocationRecord).
+# => TRUE
+? person(RiverWaterClaimant).
+# => TRUE
+? owe(State, Healthy, RiverWaterClaimant).
+# => TRUE
+? decide(RiverWaterClaimant, Ballot).
+# => TRUE
+? healthy(RiverWaterClaimant).
+# => FALSE
+? false(RiverWaterClaimant).
+# => FALSE
+? prisoner(RiverWaterClaimant).
+# => FALSE

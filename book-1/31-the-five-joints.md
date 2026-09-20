@@ -128,6 +128,53 @@ distinguish claims reliably, it provides no reason to depart from equal
 treatment. If it reproduces social disadvantage, calling it specific to a
 resource does not excuse it.
 
+Chapter 6 makes the choice concrete. One indivisible unit cannot serve both
+claims in the supplied window. Earlier need and larger likely benefit favour
+the waiting claim; imminent irreversible harm from interruption and continuity
+favour continuing provision. The manager's reviewed decision gives those last
+two reasons priority for that window. I defend permitting that judgment because
+the irreversible loss cannot be repaired simply by giving the unit back later.
+The waiting person's earlier need remains a serious reason against the choice,
+and their unfulfilled claim remains a failure requiring continuity and repair.
+
+Always taking the greatest likely benefit would answer a different question:
+which allocation produces the greatest resource-specific gain? That is relevant,
+but it can discount a grave loss caused by interruption. Always serving the
+earliest need would make timing decisive even where waiting briefly avoids a
+much less reversible injury elsewhere. Always protecting the existing user
+would reward prior access and could preserve earlier exclusion. Each simple
+rule is easier to administer; each discards a relevant kind of harm. A lottery
+among materially equal claims avoids an unsupported distinction. Using it
+before examining those differences would discard evidence for the sake of
+procedural ease.
+
+Bounded judgment therefore needs more than the label *reviewed*. The manager
+must identify the claims, comparison, decision and rejected alternative, with
+public reasons the losing claimant can challenge. A supported defect in that
+comparison defeats the allocation while leaving the shortage and shortfall
+duties in place. Evidence that an accommodation changes the comparison, that
+the claimed irreversible harm is unsupported, or that another usable supply
+exists requires reconsideration. Discretion cannot cure unavailable evidence
+by inventing a finer ranking.
+
+The river case in Chapter 13 exposes a different cost. If the supplied premises
+are true, stopping all existing essential water provision immediately protects
+the river by imposing an immediate human deprivation; unrestricted continuation
+protects today's recipients by spending the river and later people's conditions.
+The design requires the least harmful route for immediate continuity, with a
+bounded transition, alternatives and repair still owed. This is a duty to end
+the collision. It does not declare the river expendable or make present use
+compliant by renaming the breach. A feasible route meeting both protections
+removes the basis for this interim choice. Budget refusal cannot supply it.
+
+That priority concerns immediate human continuity under an established present
+incompatibility. It gives no general priority to a human purpose over an animal's
+life or bodily integrity. The fish's protection needs its own reasons and
+authority; a court cannot purchase the river's recovery with an unexamined
+animal intervention. Keeping those claims separate is demanding, but a single
+total of human benefit, ecological gain and animal loss would conceal which
+protection was surrendered and who must answer for it.
+
 Contribution and scarcity require different, contestable decisions. The model
 demonstrates their separation under its supplied premises. It establishes
 neither the adequacy of compensation nor the accuracy of a real allocation. The

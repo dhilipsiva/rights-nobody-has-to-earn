@@ -1,0 +1,171 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 49
+
+? permits(ScarcityWorkedManager, AllocateUnderPhysicalScarcity, ScarcityWorkedRecord).
+# => TRUE
+? obliged(ScarcityWorkedManager, RecordEveryUnmetPortionAsFailure, ScarcityWorkedRecord).
+# => TRUE
+? obliged(ScarcityWorkedManager, PublishComparativeAllocationReasonsAndRejectedAlternatives, ScarcityWorkedRecord).
+# => TRUE
+? complete(ScarcityWorkedRecord, ReviewedScarcityAllocation, IndivisibleEssentialPowerUnit).
+# => TRUE
+? obliged(ScarcityWorkedManager, RepairAndReassessTheRecordedShortfall, ScarcityWaitingShortfallRecord).
+# => TRUE
+? obliged(ScarcityWaitingShortfallReader, VerifyTheShortfallWasRecordedAsFailure, ScarcityWaitingShortfallRecord).
+# => TRUE
+? complete(ScarcityWaitingShortfallRecord, ReviewedScarcityShortfall, IndivisibleEssentialPowerUnit).
+# => TRUE
+? person(ScarcityWaitingClaimant).
+# => TRUE
+? owe(State, Healthy, ScarcityWaitingClaimant).
+# => TRUE
+? decide(ScarcityWaitingClaimant, Ballot).
+# => TRUE
+? healthy(ScarcityWaitingClaimant).
+# => FALSE
+? false(ScarcityWaitingClaimant).
+# => FALSE
+? prisoner(ScarcityWaitingClaimant).
+# => FALSE
+? person(ScarcityContinuityClaimant).
+# => TRUE
+? owe(State, Healthy, ScarcityContinuityClaimant).
+# => TRUE
+? decide(ScarcityContinuityClaimant, Ballot).
+# => TRUE
+? healthy(ScarcityContinuityClaimant).
+# => FALSE
+? false(ScarcityContinuityClaimant).
+# => FALSE
+? prisoner(ScarcityContinuityClaimant).
+# => FALSE
+? observe(ScarcityWorkedSource, ScarcityWorkedRecord, ContinueUnitForContinuityClaimDuringThisWindow, ScarcitySpecifiedAllocationScope).
+# => TRUE
+challenge(ScarcityWaitingClaimant, ScarcityWorkedReader, ScarcityWorkedRecord).
+observe(ScarcityWaitingClaimant, ScarcityWorkedRecord, IndivisibleEssentialPowerUnit, ScarcityChallengeResourceScope).
+? obliged(ScarcityWorkedReader, ReviewScarcityFindingAllocationOrShortfall, ScarcityWorkedRecord).
+# => TRUE
+? permits(ScarcityWorkedManager, AllocateUnderPhysicalScarcity, ScarcityWorkedRecord).
+# => TRUE
+? obliged(ScarcityWorkedManager, RecordEveryUnmetPortionAsFailure, ScarcityWorkedRecord).
+# => TRUE
+? obliged(ScarcityWorkedManager, PublishComparativeAllocationReasonsAndRejectedAlternatives, ScarcityWorkedRecord).
+# => TRUE
+? complete(ScarcityWorkedRecord, ReviewedScarcityAllocation, IndivisibleEssentialPowerUnit).
+# => TRUE
+authorized(ScarcityComparisonDefectSource, ScarcitySourceAuthority, ScarcityComparisonDefectRecord).
+authorized(ScarcityComparisonDefectEvidence, IndependentScarcityEvidenceAuthority, ScarcityComparisonDefectRecord).
+authorized(ScarcityComparisonDefectReview, IndependentScarcityReviewAuthority, ScarcityComparisonDefectRecord).
+authorized(ScarcityComparisonDefectReader, ScarcityChallengeReaderAuthority, ScarcityComparisonDefectRecord).
+authorized(ScarcityComparisonDefectAlternate, ScarcityAlternateReviewAuthority, ScarcityComparisonDefectRecord).
+observe(ScarcityComparisonDefectSource, ScarcityComparisonDefectRecord, IndivisibleEssentialPowerUnit, ScarcityResourceScope).
+observe(ScarcityComparisonDefectEvidence, ScarcityComparisonDefectRecord, IndivisibleEssentialPowerUnit, ScarcityResourceScope).
+observe(ScarcityComparisonDefectReview, ScarcityComparisonDefectRecord, IndivisibleEssentialPowerUnit, ScarcityResourceScope).
+observe(ScarcityComparisonDefectSource, ScarcityComparisonDefectRecord, WaitingAndContinuityClaimants, ScarcityAffectedPopulationScope).
+observe(ScarcityComparisonDefectEvidence, ScarcityComparisonDefectRecord, WaitingAndContinuityClaimants, ScarcityAffectedPopulationScope).
+observe(ScarcityComparisonDefectReview, ScarcityComparisonDefectRecord, WaitingAndContinuityClaimants, ScarcityAffectedPopulationScope).
+observe(ScarcityComparisonDefectSource, ScarcityComparisonDefectRecord, ScarcityWorkedManager, ScarcityManagerScope).
+observe(ScarcityComparisonDefectEvidence, ScarcityComparisonDefectRecord, ScarcityWorkedManager, ScarcityManagerScope).
+observe(ScarcityComparisonDefectReview, ScarcityComparisonDefectRecord, ScarcityWorkedManager, ScarcityManagerScope).
+observe(ScarcityComparisonDefectSource, ScarcityComparisonDefectRecord, ScarcityWorkedVersion, ScarcitySourceVersionScope).
+observe(ScarcityComparisonDefectEvidence, ScarcityComparisonDefectRecord, ScarcityWorkedVersion, ScarcitySourceVersionScope).
+observe(ScarcityComparisonDefectReview, ScarcityComparisonDefectRecord, ScarcityWorkedVersion, ScarcitySourceVersionScope).
+observe(ScarcityComparisonDefectSource, ScarcityComparisonDefectRecord, ThisAllocationWindow, ScarcityEvidencePeriodScope).
+observe(ScarcityComparisonDefectEvidence, ScarcityComparisonDefectRecord, ThisAllocationWindow, ScarcityEvidencePeriodScope).
+observe(ScarcityComparisonDefectReview, ScarcityComparisonDefectRecord, ThisAllocationWindow, ScarcityEvidencePeriodScope).
+observe(ScarcityComparisonDefectSource, ScarcityComparisonDefectRecord, ScarcityWorkedJurisdiction, ScarcityJurisdictionScope).
+observe(ScarcityComparisonDefectEvidence, ScarcityComparisonDefectRecord, ScarcityWorkedJurisdiction, ScarcityJurisdictionScope).
+observe(ScarcityComparisonDefectReview, ScarcityComparisonDefectRecord, ScarcityWorkedJurisdiction, ScarcityJurisdictionScope).
+observe(ScarcityComparisonDefectSource, ScarcityComparisonDefectRecord, ScarcityWorkedScope, ScarcityLegalScope).
+observe(ScarcityComparisonDefectEvidence, ScarcityComparisonDefectRecord, ScarcityWorkedScope, ScarcityLegalScope).
+observe(ScarcityComparisonDefectReview, ScarcityComparisonDefectRecord, ScarcityWorkedScope, ScarcityLegalScope).
+observe(ScarcityComparisonDefectSource, ScarcityComparisonDefectRecord, ScarcityWorkedEnd, ScarcitySourceBoundEndScope).
+observe(ScarcityComparisonDefectEvidence, ScarcityComparisonDefectRecord, ScarcityWorkedEnd, ScarcitySourceBoundEndScope).
+observe(ScarcityComparisonDefectReview, ScarcityComparisonDefectRecord, ScarcityWorkedEnd, ScarcitySourceBoundEndScope).
+observe(ScarcityComparisonDefectSource, ScarcityComparisonDefectRecord, CurrentReconciledScarcityRecord, ScarcityCurrentDispositionScope).
+observe(ScarcityComparisonDefectEvidence, ScarcityComparisonDefectRecord, CurrentReconciledScarcityRecord, ScarcityCurrentDispositionScope).
+observe(ScarcityComparisonDefectReview, ScarcityComparisonDefectRecord, CurrentReconciledScarcityRecord, ScarcityCurrentDispositionScope).
+observe(ScarcityComparisonDefectSource, ScarcityComparisonDefectRecord, ScarcityComparisonDefectReader, ScarcityChallengeReaderScope).
+observe(ScarcityComparisonDefectEvidence, ScarcityComparisonDefectRecord, ScarcityComparisonDefectReader, ScarcityChallengeReaderScope).
+observe(ScarcityComparisonDefectReview, ScarcityComparisonDefectRecord, ScarcityComparisonDefectReader, ScarcityChallengeReaderScope).
+observe(ScarcityComparisonDefectSource, ScarcityComparisonDefectRecord, ScarcityComparisonDefectAlternate, ScarcityIndependentAlternateScope).
+observe(ScarcityComparisonDefectEvidence, ScarcityComparisonDefectRecord, ScarcityComparisonDefectAlternate, ScarcityIndependentAlternateScope).
+observe(ScarcityComparisonDefectReview, ScarcityComparisonDefectRecord, ScarcityComparisonDefectAlternate, ScarcityIndependentAlternateScope).
+observe(ScarcityComparisonDefectSource, ScarcityComparisonDefectRecord, ScarcityComparisonDefectChallenge, ScarcityChallengeScope).
+observe(ScarcityComparisonDefectEvidence, ScarcityComparisonDefectRecord, ScarcityComparisonDefectChallenge, ScarcityChallengeScope).
+observe(ScarcityComparisonDefectReview, ScarcityComparisonDefectRecord, ScarcityComparisonDefectChallenge, ScarcityChallengeScope).
+observe(ScarcityComparisonDefectSource, ScarcityComparisonDefectRecord, ScarcityComparisonDefectCorrection, ScarcityCorrectionScope).
+observe(ScarcityComparisonDefectEvidence, ScarcityComparisonDefectRecord, ScarcityComparisonDefectCorrection, ScarcityCorrectionScope).
+observe(ScarcityComparisonDefectReview, ScarcityComparisonDefectRecord, ScarcityComparisonDefectCorrection, ScarcityCorrectionScope).
+observe(ScarcityComparisonDefectSource, ScarcityComparisonDefectRecord, ScarcityComparisonDefectRemedy, ScarcityRemedyScope).
+observe(ScarcityComparisonDefectEvidence, ScarcityComparisonDefectRecord, ScarcityComparisonDefectRemedy, ScarcityRemedyScope).
+observe(ScarcityComparisonDefectReview, ScarcityComparisonDefectRecord, ScarcityComparisonDefectRemedy, ScarcityRemedyScope).
+observe(ScarcityComparisonDefectSource, ScarcityComparisonDefectRecord, ConstitutionalReviewOrIndependentSubstitute, ScarcityFinalReviewScope).
+observe(ScarcityComparisonDefectEvidence, ScarcityComparisonDefectRecord, ConstitutionalReviewOrIndependentSubstitute, ScarcityFinalReviewScope).
+observe(ScarcityComparisonDefectReview, ScarcityComparisonDefectRecord, ConstitutionalReviewOrIndependentSubstitute, ScarcityFinalReviewScope).
+observe(ScarcityComparisonDefectSource, ScarcityComparisonDefectRecord, NoStandingEmergencyPowerAndNoReducedRationRenamedAsTheMinimum, ScarcityCorridorScope).
+observe(ScarcityComparisonDefectEvidence, ScarcityComparisonDefectRecord, NoStandingEmergencyPowerAndNoReducedRationRenamedAsTheMinimum, ScarcityCorridorScope).
+observe(ScarcityComparisonDefectReview, ScarcityComparisonDefectRecord, NoStandingEmergencyPowerAndNoReducedRationRenamedAsTheMinimum, ScarcityCorridorScope).
+observe(ScarcityComparisonDefectSource, ScarcityComparisonDefectRecord, ReviewedScarcityDefect, ScarcityRecordKindScope).
+observe(ScarcityComparisonDefectEvidence, ScarcityComparisonDefectRecord, ReviewedScarcityDefect, ScarcityRecordKindScope).
+observe(ScarcityComparisonDefectReview, ScarcityComparisonDefectRecord, ReviewedScarcityDefect, ScarcityRecordKindScope).
+observe(ScarcityComparisonDefectSource, ScarcityComparisonDefectRecord, ScarcityWorkedRecord, ScarcityAffectedUseScope).
+observe(ScarcityComparisonDefectEvidence, ScarcityComparisonDefectRecord, ScarcityWorkedRecord, ScarcityAffectedUseScope).
+observe(ScarcityComparisonDefectReview, ScarcityComparisonDefectRecord, ScarcityWorkedRecord, ScarcityAffectedUseScope).
+observe(ScarcityComparisonDefectSource, ScarcityComparisonDefectRecord, UnsupportedAllocationComparisonOrReasons, ScarcityDefectKindScope).
+observe(ScarcityComparisonDefectEvidence, ScarcityComparisonDefectRecord, UnsupportedAllocationComparisonOrReasons, ScarcityDefectKindScope).
+observe(ScarcityComparisonDefectReview, ScarcityComparisonDefectRecord, UnsupportedAllocationComparisonOrReasons, ScarcityDefectKindScope).
+observe(ScarcityComparisonDefectSource, ScarcityComparisonDefectRecord, IndependentlyEstablishedIssueMakesThisExactUseUnsupported, ScarcityDefectDispositionScope).
+observe(ScarcityComparisonDefectEvidence, ScarcityComparisonDefectRecord, IndependentlyEstablishedIssueMakesThisExactUseUnsupported, ScarcityDefectDispositionScope).
+observe(ScarcityComparisonDefectReview, ScarcityComparisonDefectRecord, IndependentlyEstablishedIssueMakesThisExactUseUnsupported, ScarcityDefectDispositionScope).
+observe(ScarcityComparisonDefectSource, ScarcityComparisonDefectRecord, NoAdverseClaimantFactOrAutomaticIndividualRemedy, ScarcityDefectLimitScope).
+observe(ScarcityComparisonDefectEvidence, ScarcityComparisonDefectRecord, NoAdverseClaimantFactOrAutomaticIndividualRemedy, ScarcityDefectLimitScope).
+observe(ScarcityComparisonDefectReview, ScarcityComparisonDefectRecord, NoAdverseClaimantFactOrAutomaticIndividualRemedy, ScarcityDefectLimitScope).
+? contradict(ScarcityWorkedRecord, ScarcityFindingAuthorization).
+# => TRUE
+? obliged(ScarcityComparisonDefectReader, ReviewAndCorrectUnsupportedScarcityUse, ScarcityWorkedRecord).
+# => TRUE
+? obliged(ScarcityWorkedManager, PublishScarcityCorrection, ScarcityWorkedRecord).
+# => TRUE
+? complete(ScarcityComparisonDefectRecord, ReviewedScarcityDefect, IndivisibleEssentialPowerUnit).
+# => TRUE
+? permits(ScarcityWorkedManager, AllocateUnderPhysicalScarcity, ScarcityWorkedRecord).
+# => FALSE
+? obliged(ScarcityWorkedManager, RecordEveryUnmetPortionAsFailure, ScarcityWorkedRecord).
+# => FALSE
+? obliged(ScarcityWorkedManager, PublishComparativeAllocationReasonsAndRejectedAlternatives, ScarcityWorkedRecord).
+# => FALSE
+? complete(ScarcityWorkedRecord, ReviewedScarcityAllocation, IndivisibleEssentialPowerUnit).
+# => FALSE
+? obliged(ScarcityWorkedManager, RepairAndReassessTheRecordedShortfall, ScarcityWaitingShortfallRecord).
+# => TRUE
+? obliged(ScarcityWaitingShortfallReader, VerifyTheShortfallWasRecordedAsFailure, ScarcityWaitingShortfallRecord).
+# => TRUE
+? complete(ScarcityWaitingShortfallRecord, ReviewedScarcityShortfall, IndivisibleEssentialPowerUnit).
+# => TRUE
+? complete(ScarcityWorkedAuthorization, ReviewedPhysicalScarcityFinding, IndivisibleEssentialPowerUnit).
+# => TRUE
+? person(ScarcityWaitingClaimant).
+# => TRUE
+? owe(State, Healthy, ScarcityWaitingClaimant).
+# => TRUE
+? decide(ScarcityWaitingClaimant, Ballot).
+# => TRUE
+? healthy(ScarcityWaitingClaimant).
+# => FALSE
+? false(ScarcityWaitingClaimant).
+# => FALSE
+? prisoner(ScarcityWaitingClaimant).
+# => FALSE
+? person(ScarcityContinuityClaimant).
+# => TRUE
+? owe(State, Healthy, ScarcityContinuityClaimant).
+# => TRUE
+? decide(ScarcityContinuityClaimant, Ballot).
+# => TRUE
+? healthy(ScarcityContinuityClaimant).
+# => FALSE
+? false(ScarcityContinuityClaimant).
+# => FALSE
+? prisoner(ScarcityContinuityClaimant).
+# => FALSE

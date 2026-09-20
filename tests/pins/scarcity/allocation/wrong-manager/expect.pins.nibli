@@ -1,9 +1,11 @@
 # SPDX-License-Identifier: MIT OR Apache-2.0
-:expect-pins 3
+:expect-pins 4
 
 ? permits(UnrelatedScarcityValue, AllocateUnderPhysicalScarcity, ScarcityCaseRecord).
 # => FALSE
 ? obliged(UnrelatedScarcityValue, RecordEveryUnmetPortionAsFailure, ScarcityCaseRecord).
+# => FALSE
+? obliged(UnrelatedScarcityValue, PublishComparativeAllocationReasonsAndRejectedAlternatives, ScarcityCaseRecord).
 # => FALSE
 ? complete(ScarcityCaseRecord, ReviewedScarcityAllocation, ScarcityCaseResource).
 # => FALSE

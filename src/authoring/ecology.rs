@@ -53,6 +53,8 @@ mod lifecycle_cases;
 mod protection;
 #[path = "ecology_records.rs"]
 mod records;
+#[path = "ecology_scarcity_cases.rs"]
+mod scarcity_cases;
 
 const BEGIN: &str = "# <ECOLOGICAL-ANIMAL-RULES-BEGIN>";
 const END: &str = "# <ECOLOGICAL-ANIMAL-RULES-END>";
@@ -418,6 +420,7 @@ pub(crate) fn generate(context: &Context, export: &mut super::Export) -> Result<
         .chain(history_cases::boundaries(&cards))
         .chain(corridor::boundaries(context, &cards)?)
         .chain(domain_cases::boundaries(&cards))
+        .chain(scarcity_cases::boundaries(&cards))
     {
         add_case(context, export, &case.id, &case.facts, &case.pins)?;
     }

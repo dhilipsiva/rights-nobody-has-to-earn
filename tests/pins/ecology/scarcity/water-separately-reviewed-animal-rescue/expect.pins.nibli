@@ -1,0 +1,20 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 9
+? complete(RiverIndependentConflictRecord, ECIndependentGuardianAnimalConflictDecision, RiverConflictV340).
+# => TRUE
+? obliged(FSBOD_17, ECPublishAndApplyIndependentHardBarFirstAxisSeparatedLeastHarmConflictDecision, RiverIndependentConflictRecord).
+# => TRUE
+? permits(RiverFishCareController, ECOnlyEnhancedNonFoodNonResearchAnimalUse, RiverFishRescueRecord).
+# => TRUE
+? person(RiverWaterClaimant).
+# => TRUE
+? owe(State, Healthy, RiverWaterClaimant).
+# => TRUE
+? decide(RiverWaterClaimant, Ballot).
+# => TRUE
+? healthy(RiverWaterClaimant).
+# => FALSE
+? false(RiverWaterClaimant).
+# => FALSE
+? prisoner(RiverWaterClaimant).
+# => FALSE

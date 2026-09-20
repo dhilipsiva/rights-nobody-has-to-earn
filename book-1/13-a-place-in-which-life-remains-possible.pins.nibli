@@ -5,6 +5,8 @@
 #   ./verify.sh          # all substantive pins and contradiction checks
 #
 # The chapter's case lists tests/pins/records/child_with_nobody/fixture.nibli.
+# Its worked water/river/animal example also supplies
+# tests/pins/ecology/scarcity/water-animal-conflict-is-not-use-permission/fixture.nibli.
 #
 # The ecological and animal family's own cases carry the environmental claim,
 # the axes, the Guardian and Animal Advocate routes, the authorisations, the
@@ -16,7 +18,7 @@
 # WHAT FALSE MEANS HERE: a FALSE is pinned only where the KB could have said
 # TRUE, and the comment says what would flip it.
 
-:expect-pins 26
+:expect-pins 41
 
 # "the floor's own inventory refuses a ninth item, and the floor refuses to
 # erase the ecological ceiling"
@@ -105,3 +107,38 @@
 
 ? owe(State, Healthy, Nell).
 # => TRUE
+
+# Essential water, a river limit and separately owed animal protection.
+# Paired positives supply the actual economic allocation or separate animal review:
+# tests/pins/ecology/scarcity/water-separate-physical-allocation/expect.pins.nibli
+# tests/pins/ecology/scarcity/water-separately-reviewed-animal-rescue/expect.pins.nibli
+? complete(RiverIndependentConflictRecord, ECIndependentGuardianAnimalConflictDecision, RiverConflictV340).
+# => TRUE
+? obliged(FSBOD_17, ECPublishAndApplyIndependentHardBarFirstAxisSeparatedLeastHarmConflictDecision, RiverIndependentConflictRecord).
+# => TRUE
+? complete(RiverWaterContinuityRecord, ECDualFloorAndCeilingContinuity, ExistingEssentialWaterService).
+# => TRUE
+? obliged(RiverWaterV14, ECPreserveImmediateFloorWhileObtainingAlternativesAndRepairingBreach, RiverWaterContinuityRecord).
+# => TRUE
+? prevents(RiverWaterContinuityRecord, ECUnmetFloorRenamedSuccess).
+# => TRUE
+? prevents(RiverWaterContinuityRecord, ECCeilingBreachRenamedCompliance).
+# => TRUE
+? permits(RiverFishCareController, ECOnlyEnhancedNonFoodNonResearchAnimalUse, RiverFishRescueRecord).
+# => FALSE
+? permits(FSBOD_09, ECOnlyExistingRightsPreservingPhysicalScarcityAllocation, RiverWaterAllocationRecord).
+# => FALSE
+? obliged(FSBOD_09, ECPreserveActualScarcitySafeguardsFloorContinuityAndSeparateEcologicalFailure, RiverWaterAllocationRecord).
+# => FALSE
+? person(RiverWaterClaimant).
+# => TRUE
+? owe(State, Healthy, RiverWaterClaimant).
+# => TRUE
+? decide(RiverWaterClaimant, Ballot).
+# => TRUE
+? healthy(RiverWaterClaimant).
+# => FALSE
+? false(RiverWaterClaimant).
+# => FALSE
+? prisoner(RiverWaterClaimant).
+# => FALSE

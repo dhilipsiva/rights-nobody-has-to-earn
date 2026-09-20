@@ -433,6 +433,21 @@ accessibility, correction, replenishment, a duty to obtain and record fresh
 reassessment evidence, a source-bound end, and repair remain mandatory. Book 1
 does not make the reassessment clock advance or the evidence arrive.
 
+**Allocation-specific implementation ruling — 2026-09-20, delegated author
+approval.** Public reasons must concern the proposed allocation as well as the
+existence of scarcity. The allocation must name its compared claims, decision
+and comparative reasons, with qualified agreement that all five relevant
+considerations were assessed and rejected alternatives answered. The manager
+owes publication of those reasons. An effective usable equal share requires
+preservation of that share; absent one, a materially unequal comparison permits
+reviewed comparative priority, and a materially equal comparison permits a
+disclosed rotation or lottery. This expresses the ordering above without
+introducing numerical weights or making the model choose a recipient. A
+shortfall identifies the unmet claim and survives an allocation-specific defect
+while its genuine scarcity basis remains. The
+[scarcity and conflict contract](../contracts/scarcity-and-conflict-contract.md)
+retains the demonstrated missing connection, adopted repair and worked cases.
+
 This decision creates no standing requisition, rationing, compulsory-
 continuity, or price-control power. Any emergency authority needs a separate
 trigger, scope, review, remedy, and temporal contract through the
