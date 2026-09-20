@@ -2,32 +2,44 @@
 
 # Book 1: revision toward an exceptional finished book
 
-Created 2026-09-18 at the author's request: "Create a TODO to make book 10/10."
-This revision backlog followed the completed 2026-09-16 rebuild.
+Created 2026-09-18 and refreshed 2026-09-20 at the author's request:
+"Refresh TODO to make book a 10/10."
 
-**Completed 2026-09-20: all twenty items are implemented and checked; no items
-remain open in this backlog.** The [final manuscript review](reviews/2026-09-20-final-manuscript-review.md)
-records the assessment, material repairs and measured validation. The coherent
-item commits and `CLAUDE.md` retain the decisions and results. This does not
-declare a released edition or Gate C; Book 2 remains collection-only.
+**Active: items 21–33 below are pending.** The earlier items 01–20 were
+completed on 2026-09-20. Their [final manuscript review](reviews/2026-09-20-final-manuscript-review.md),
+coherent commits and `CLAUDE.md` retain that round's assessment, repairs and
+validation. This refresh opens further work; it does not reverse those
+completed implementations or declare a released edition or Gate C. Book 2
+remains collection-only.
 
-The starting review covered all 31 numbered chapters, the opening note,
-epigraph and method at `da36b0db`: approximately 93,600 words, rated 7.5/10 as
-a manuscript and 6/10 for publisher readiness. These are editorial judgments,
-not measurements of correctness. The review did not execute the formal pins
-or comprehensively fact-check the empirical claims. Its suspected design
-defects must be checked against the current source before implementation.
+The fresh review in the conversation read all 34 ordered manuscript inputs at
+`c229da66`: the epigraph, opening note, chapters 1–31 and optional method,
+approximately 52,000 words. It rated the manuscript **8/10**. That assessment
+is distinct from the earlier review's 8.5/10 and is an editorial judgment,
+not a correctness measurement or independent endorsement. It spot-checked
+selected sources but did not rerun the Nibli verifier or audit every citation.
+Suspected design problems must be checked against the current source before
+implementation; a request for stronger justification is not an established
+formal contradiction.
 
 **The objective is a compelling, defensible, precise and readable book.** A
-perfect score cannot be guaranteed or made true by closing a checklist. The
-finished manuscript was reassessed without protecting the starting diagnosis
-or promising a particular rating.
+perfect score cannot be guaranteed or made true by closing a checklist.
+The next assessment must judge the resulting book without protecting either
+review's diagnosis or promising a particular rating.
+
+The strengths to preserve are the child/prisoner pairing, the distinction
+between entitlement and delivery evidence, care without ownership, accessible
+review without assumed relief, and the separation of duties from performance.
+The priorities are the justification and scope of recognition loss, the
+reasoning behind consequential policy boundaries, worked conflicts, a less
+technical reader spine, less repetition, and earlier access to the argument
+for the design. Chapters 1, 5, 14 and 21, the opening and the optional method
+are useful models of clarity, not exemptions from the final sequential read.
 
 ## Execution contract
 
-- Creating this file originally established the plan, not implementation.
-  The following contract governed execution and applies to any newly added
-  revision item.
+- This refresh establishes the next plan. All new items begin pending; none
+  of the proposed alternatives below is enacted by its inclusion here.
 - When execution begins, work one numbered item at a time, in order. Each
   item includes its necessary rules, pins, prose and checks. Keep later items
   open until their own completion criteria are met.
@@ -62,6 +74,10 @@ or promising a particular rating.
   immutable published editions; "current" means the design bound to that edition.
 - Respect the required child test and its documented exemptions. Improve its
   usefulness and brevity without silently deleting its membership requirement.
+- Preserve the deliberate flat register. Improve cases through selection,
+  sequence and clear roles, without invented dialogue, biography, feelings,
+  testimony or successful outside events. Normative argument and historical
+  evidence retain their authorised channels; derived chapters remain derived.
 - Use focused substantive checks during implementation, then the complete
   `./verify.sh` for item completion, plus relevant existing development checks
   when their machinery changes. Review prose consistency separately. Report
@@ -114,6 +130,272 @@ evidence, a necessarily constrained and adequately defended limitation, and an
 unresolved defect or blocker. Only the first three can close the relevant issue.
 Reader-facing prose states present rules and justified limits; the attempted
 solutions and development history stay outside the book's reading sequence.
+
+## Ordered revision backlog
+
+Work in this order. Items 21–24 settle the substantive questions before the
+opening and editorial passes depend on their answers. Each item includes its
+own relevant validation under the execution contract; item 33 is a final
+integration review, not permission to defer earlier checks. Chapter numbers
+refer to the [current reading sequence](book-1/contents.json).
+
+- [ ] **21. Resolve the purpose and proportionality of recognition loss.**
+
+  **Scope:** Chapters 10, 23–26 and 31; the
+  [recognition decision](book-1/appendix/decisions/recognition-purpose-decision.md)
+  and [credibility decision](book-1/appendix/decisions/credibility-finding-decision.md).
+
+  Recheck the current readers and effects of recognition, personal findings,
+  credential restrictions and restoration. Compare removing constitutional
+  recognition, correcting particular contribution records, narrowing loss to
+  the affected contribution, and restricting relevant official powers. Explain
+  why any retained public acknowledgment is useful and why an adverse finding
+  should reach unrelated teaching, care or employment. Recognition and voiding
+  cannot justify each other solely because each gives the other a purpose.
+  Examine duration, restoration and the cost of a review that never happens.
+  Apply resolve-before-defending to any confirmed unjustified consequence.
+
+  **Done when:** the chosen design has a substantive comparative justification;
+  any necessary repair is implemented before its prose; and positive, adverse,
+  unrelated-contribution, restoration and downstream cases establish the actual
+  scope. Floors, political rights, wages, supplements, students' rights and
+  legitimate accountability remain protected. Chapters 10, 25, 26 and Part V
+  explain the same result without treating an unspendable sanction as harmless.
+
+- [ ] **22. Establish a defensible severity and placement boundary.**
+
+  **Scope:** Chapters 3, 27–29 and 31; the constitution's custody, severity and
+  placement rules and their substantive cases.
+
+  Test what the qualifying pair of injury and cruelty findings distinguishes.
+  Compare grave harm to one person without a cruelty finding, injuries to more
+  than one person, cruelty, and cases where less restrictive placement is
+  sufficient despite the classification. Do not infer a result from raw acts
+  when the actual rule requires qualified findings. Assess simpler alternatives
+  and repair arbitrary distinctions if established. Keep offence findings,
+  placement necessity and current custody authority separate.
+
+  **Done when:** the reader can explain both why the classification exists and
+  why its boundary is proportionate. Pinned comparisons distinguish severity
+  from permission for secure placement, preserve family and wealth neutrality,
+  and prevent facts from another case supplying authority. Part V supplies the
+  normative defence; the derived chapters show the current consequences.
+
+- [ ] **23. Work through genuine scarcity and conflicting protected claims.**
+
+  **Scope:** Chapters 6, 7, 13 and 31; the
+  [scarcity and conflict contract](book-1/appendix/contracts/scarcity-and-conflict-contract.md)
+  and affected rule families.
+
+  Follow an indivisible-resource case in which urgency, irreversible harm,
+  continuity and likely benefit after accommodation pull in different
+  directions. Include a materially equal comparison and a false-scarcity
+  control. Follow a human-floor/ecological-limit conflict and distinguish it
+  from an animal-interest claim where relevant. State which priority is fixed,
+  which judgment is delegated, who must give reasons, what can defeat it and
+  what remains owed to the person who loses the allocation. Do not invent a
+  deterministic ranking where the constitution permits bounded discretion.
+
+  **Done when:** the book demonstrates a justified decision and challenge route
+  under stated premises, alongside the unacceptable alternatives. Any missing
+  constitutional connection is repaired and pinned. No prohibited worth score,
+  invented inventory or claimed actual delivery supplies the resolution, and
+  an allocation record is not described as the engine independently choosing
+  the recipient.
+
+- [ ] **24. Complete the argument for the consequential institutional choices.**
+
+  **Scope:** Part V, with the mechanisms explained in Chapters 8, 11–20, 22–24
+  and 29; incorporate the outcomes of items 21–23.
+
+  Reassess the strongest alternative to each major choice, including appointment
+  separation, the territorial chamber, collective executive, residence-first
+  membership, the shield's provisional reach, privacy and coordination,
+  emergency limits, and the scope of the unamendable human and animal cores.
+  Distinguish the reason to protect a right from the reason to entrench a
+  particular mechanism. Identify the person bearing each cost, the safeguard
+  that actually reaches it, and evidence that would favour an alternative.
+  Historical examples must support a stated comparison rather than stand as
+  warnings from which this design's success is inferred.
+
+  **Done when:** important choices have reasons beyond their compatibility with
+  the model or the author's preference. Strong alternatives receive fair
+  treatment. Any confirmed design failure is resolved under the standing rule;
+  disclosure and promises that Book 2 will answer it do not close the item.
+
+- [ ] **25. Bring the central choices into the opening and reading route.**
+
+  **Scope:** Opening note, its map and glossary, and navigation to Part V.
+
+  Give the reader a concise account of the proposal's central disputed choices
+  and why they matter before the detailed institutional chapters. Make the
+  distinction between unconditional commitments and chosen instruments clear.
+  Link the important mechanisms to their substantive arguments in Part V,
+  while preserving the direct route to Chapter 1 and the optional reference
+  material. Keep normative justification in the exempt channels.
+
+  **Done when:** the opening states the question, commitments, central choices,
+  evidence boundary and reading route without requiring the glossary first.
+  Navigation reaches the actual arguments. It promises neither operational
+  success nor a universal proof and adds no new prerequisite to understanding
+  the child case.
+
+- [ ] **26. Separate reader explanation from implementation detail.**
+
+  **Scope:** Especially Chapters 3, 4, 9, 18, 21–23, 26 and 27; optional method.
+
+  Relocate arity, host byte comparisons, in-memory transitions, assertion
+  rollback, source-inspection mechanics and extended dependency explanations
+  where they serve the method rather than the chapter's human question. Retain
+  each consequential result and its exact limitation beside the claim it
+  qualifies. Keep the prisoner's contribution to the floor protection legible
+  without requiring a technical lesson before its importance is understood.
+  Consolidate the relocated explanation with existing worked method examples.
+
+  **Done when:** each ordinary chapter can be understood without learning the
+  engine's implementation vocabulary. The method remains optional and usable,
+  with current executable examples and accurate running instructions. No move
+  hides a limitation, changes a tested verdict, or makes a reader follow a
+  technical link to discover that a claimed protection is narrower than stated.
+
+- [ ] **27. Make the cases easy to identify and follow.**
+
+  **Scope:** Especially Chapters 9, 10 and 23–26; opening case index and all
+  recurring examples.
+
+  Reduce the memory burden of fixture-like labels such as Nogra, Nogrb, Targ4
+  and Partnr. Use clear role descriptions and brief reminders of relevant
+  premises, retaining an unambiguous connection to each executable case. Reuse
+  a case where it genuinely supports the next consequence; do not combine
+  separate fixtures into a person with an invented history. Avoid renaming
+  formal identifiers merely to improve prose.
+
+  **Done when:** a first-time reader can identify the claimant, actor, reviewer,
+  relevant evidence and changed result within each example without repeatedly
+  consulting the index. Existing cases remain distinguishable and traceable;
+  no dialogue, biography, mental state or outside event is invented.
+
+- [ ] **28. Restructure the chapters that read as catalogues.**
+
+  **Scope:** Chapters 7, 9, 11, 13, 17, 19, 20, 29 and 30.
+
+  Give each chapter a governing question and a coherent progression through
+  its supplied cases. In Chapter 7, follow responsibility through a particular
+  failure. In Chapter 13, distinguish environmental conditions, commons and
+  animal interests before introducing their institutions and remedies. In
+  Chapter 17, follow a decision and a bounded disagreement through the bodies.
+  In Chapter 29, distinguish sentence, protective powers, actual holding and
+  release without making every public-safety rule compete for attention at once.
+  Use compact tables or diagrams only where they clarify a real distinction.
+
+  **Done when:** the chapters retain every substantive protection while their
+  sequence explains what each new condition contributes. Lists no longer
+  substitute for an argument or worked case. Reading order, chapter/pin pairs
+  and the boundary between the manuscript and the carried appendix remain intact.
+
+- [ ] **29. Remove repeated qualifications and sharpen the child returns.**
+
+  **Scope:** All numbered chapters, with particular attention to Chapters 4–7,
+  19, 20, 23 and 30.
+
+  Review repeated distinctions between evidence and truth, duties and acts,
+  authority and execution, missing evidence and proven failure, and legal rights
+  and actual provision. Keep each qualification where it prevents a specific
+  mistaken inference; compress repetitions that add no new limit. Treat the
+  fresh review's 62 instances of "does not establish" as a reading prompt,
+  not a deletion quota or a new automated gate. Preserve the required child
+  sections and exemptions, making each return state the chapter's distinctive
+  result for the one-entry case.
+
+  **Done when:** the sequential reading advances at each section and return.
+  Necessary scope qualifications remain close to the claims, no silence is
+  converted into evidence, and the child retains its exact test role without
+  a repeated miniature summary of the entire book. Book 2 references occur at
+  the relevant operating boundary without replacing missing constitutional work.
+
+- [ ] **30. Complete a sequential developmental and line edit.**
+
+  **Scope:** Every ordered input in `book-1/contents.json`, including the stronger
+  chapters, opening, epigraph and method.
+
+  Read in order after the targeted revisions. Check each chapter's purpose,
+  opening, necessary context, worked consequence, progression and ending.
+  Correct ambiguous pronouns, unexplained terms, overloaded sentences, abrupt
+  transitions and inconsistent names for the same legal concept. Keep entitlement,
+  lawful power, supplied evidence, delivered conditions and remedy distinct.
+  Make Part V's five sections form a sustained argument with proportionate
+  attention to the revised choices. Preserve the epigraph and the flat register;
+  change strong passages only where the reading identifies a concrete benefit.
+
+  **Done when:** every ordered file has received the current-design review,
+  including all chapter-specific weaknesses identified in the fresh assessment.
+  The manuscript contains no revision narrative, unsupported inner lives or
+  semantic reversals. Its strongest demonstrations remain intact, and its ending
+  earns its claim without restating every limitation already explained.
+
+- [ ] **31. Check the evidence and the conclusions drawn from it.**
+
+  **Scope:** Part V, epigraph attribution, empirical claims elsewhere in the
+  reading sequence, and the existing registry and bundled calculations.
+
+  Check each statistic and named study against its primary source where
+  available, with precise location, date, population, unit and qualification.
+  Preserve disputed testimony as disputed and separate institutional accounts
+  from independent evidence. Verify that each historical comparison supports
+  the inference actually made. Reproduce the bundled democracy calculations
+  and check their interpretation; a source retrieval failure must remain an
+  explicit evidence limit rather than a claimed verification. Update existing
+  registry entries instead of creating another truth inventory.
+
+  **Done when:** empirical assertions have traceable support and appropriate
+  scope; unsupported assertions are repaired, narrowed or removed. Denominators,
+  periods, causal limits and statistical uncertainty remain visible where needed.
+  The result records the actual extent of source checking without claiming a
+  reader study, independent endorsement or operational evidence for this design.
+
+- [ ] **32. Rebuild and inspect the reading copies and sample.**
+
+  **Scope:** Opening navigation, full and sample HTML/EPUB/PDF, book README and
+  publisher proposal; use the existing builder and relevant development checks.
+
+  Rebuild the final revised manuscript. Check chapter and section links,
+  contents, glossary, case index, footnotes, diagrams and method references.
+  Inspect tables, Tamil text, code wrapping, page breaks and narrow-screen
+  reading in affected sections and across the full sequence. Validate the EPUB
+  and relevant PDF navigation with the established tools. Reassess the sample
+  after substantive changes and update measured manuscript/sample lengths and
+  proposal claims to match the actual text. Preserve the majority-derived rule.
+
+  **Done when:** the generated copies and selected sample reflect the current
+  source, navigation works and material rendering defects are repaired. The
+  proposal makes no stronger claim than the manuscript. Mechanical checks are
+  reported at their actual scope, without claiming actual-user accessibility
+  or initiating publisher contact, submission or release.
+
+- [ ] **33. Reassess the whole book and close only resolved work.**
+
+  **Scope:** All ordered chapters, current constitutional source and pins,
+  affected decision records, and the completed reading artifacts.
+
+  Perform a fresh adversarial reading after the revisions. Revisit recognition,
+  severity, scarcity, delegated discretion, institutional capture and the
+  difference between formal safeguards and a justified design. Check current
+  prose against the rules and cases it describes. Assess argument, precision,
+  readability, pacing, evidence and navigation separately from formal results.
+  Repair material findings and repeat the affected checks; do not close a
+  finding because an earlier review or item called it complete.
+
+  Run the complete substantive verifier and relevant existing development
+  checks, reporting actual elapsed time, failures, contradiction findings and
+  incomplete checks. The five-minute target is a target, not an assumed result;
+  no expectation may be dropped or result cached to claim it. Refresh rendered
+  artifacts if this review changes their inputs.
+
+  **Done when:** each material finding has a supported disposition under the
+  execution and resolve-before-defending rules, all required checks complete,
+  and the final review rates the resulting manuscript honestly. Unresolved
+  defects remain open with concrete next work. A passing suite, AI agreement
+  or an empty checklist does not require a 10/10 rating or declare Gate C.
 
 ## Licence
 
