@@ -58,16 +58,21 @@ subject cannot license processing about another.
 
 The defect sequence then introduces an independently reviewed finding of an
 unauthorised input. The holding and its dependent permissions for processing
-and automated support cease to derive. The defect finding creates duties to review and
-correct the unsupported use and publish the correction. An unrelated defect
-does not withdraw an unaffected use.
+and automated support cease to derive. The duties attached to those records
+continue: accuracy, security, protection from retaliation, later notification,
+explanation and human review. The subject keeps the right to contest the
+automated support. Withdrawing permission cannot discharge those obligations
+while the record of the undertaking remains. The defect finding also creates
+duties to review and correct the unsupported use and publish the correction.
+An unrelated defect does not withdraw an unaffected use.
 
 Other recognised defects include purpose drift, bulk or purchased data,
 unexplained automated effects, machine-only decisions, uncorrected inaccuracy,
 retention past its end, blocked access, retaliation and breached separation
-between records. Withdrawal concerns the specified authority and its dependent
-conclusions. It does not itself delete data, explain a past decision or perform
-a remedy.
+between records. Withdrawal concerns the specified authority and the permissions
+that depend on it. It does not itself delete data, explain a past decision or
+perform a remedy. A continuing duty establishes what is owed; it does not
+establish that an operation occurred or that the duty was performed.
 
 The subject is an opaque handle, not a compulsory personhood entry. The case
 completes without creating personhood, a void, confinement or recognition loss

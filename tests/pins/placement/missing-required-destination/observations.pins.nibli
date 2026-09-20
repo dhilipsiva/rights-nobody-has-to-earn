@@ -15,14 +15,14 @@
 ? put(State, Confined_NotSevere_NoFamily_Home, Homestay).
 # => TRUE
 
-# The constitutional placement alarm remains silent in this harmful candidate.
+# The current alarm catches this report without a matching derived placement.
 ? err(Confined_NotSevere_NoFamily_Home, Placement).
-# => FALSE
+# => TRUE
 
 # A positive reviewed placement report makes the alarm-silence probe non-vacuous.
 ? put(State, Confined_NotSevere_Family_Home, Homestay).
 # => TRUE
 
-# The constitutional placement alarm remains silent in this harmful candidate.
+# The current alarm catches this report without a matching derived placement.
 ? err(Confined_NotSevere_Family_Home, Placement).
-# => FALSE
+# => TRUE

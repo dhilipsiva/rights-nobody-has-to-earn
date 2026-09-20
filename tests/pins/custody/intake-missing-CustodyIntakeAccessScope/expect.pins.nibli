@@ -1,0 +1,11 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 4
+? correct(Case_MissingCustodyIntakeAccessScope, CustodyChallengeAccess).
+# => FALSE
+? prisoner(MissingCustodyIntakeAccessScope).
+# => FALSE
+? owe(State, Dwell, MissingCustodyIntakeAccessScope).
+# => TRUE
+observe(CustodyIntakeAudit, Case_MissingCustodyIntakeAccessScope, AccessiblePrimaryAndIndependentAlternateWithConfidentialCounselAndRetainedCopies, CustodyIntakeAccessScope).
+? prisoner(MissingCustodyIntakeAccessScope).
+# => TRUE

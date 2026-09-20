@@ -75,55 +75,43 @@ anyone's human rights or suspend necessary animal care. It remains a conclusion
 over supplied evidence of the candidate's effects. The model does not discover
 every concealed change or authenticate the evidence for itself.
 
-## The law label
+## What a proposal entry establishes
 
-A separate, short relation awards the words *becomes law* when Assembly proposes
-and Electorate approves, unless the proposal is marked dead. That label feeds
-no other rule. It neither supplies the political certificate above nor changes
-the constitutional source.
+A name on a docket records a proposal. A declared target records what it says
+it changes. An approval entry records an outcome. None supplies the exact
+candidate, current political certificate, independent effect review, publication
+or effective selection required above.
 
-Its protected register names the floor article, the rule that
-a prisoner remains a person, and the register itself. Amend_Floor is approved
-but targets the floor's registered name, so it is marked dead and receives no
-law label. Amend_Meta, targeting the register, receives the same verdict.
-Amend_Mint, the ordinary recognition proposal, receives the label.
+The examples include an ordinary recognition proposal, a proposal declaring a
+protected floor target, and a proposed change to the protected register itself.
+Their names and target entries confer no separate *becomes law* status.
+Amend_Sneak, proposed and approved without a target, obtains none either.
+Amend_Decoy gains none by naming a harmless recognition target. The register
+names the floor article, prisoner personhood and itself; those names do not
+inspect the text or the effects of a candidate.
 
-Registering the register prevents a declared proposal to remove that protection
-from receiving the label. The guard still compares names, not effects. It does
-not join a target name to the constitutional rules that name denotes.
-
-Amend_Sneak exposes the consequence: proposed and approved without any target,
-it is not marked dead and receives the label. The pins classify this as a
-defect. Amend_Decoy names the recognition article and also passes the label
-test. A separately changed copy can remove the food promise while retaining
-that harmless target. Another tested copy removes the promise while leaving
-the negative-cycle protection against food-dependent confinement intact.
-
-Those tests manually change candidate source. They do not show that the label
-applied a change. They show that its target check cannot establish the effect
-of a proposal, even when a structural safeguard elsewhere survives. Directly
-editing the writable vocabulary likewise bypasses this name comparison; the
-exact-change route requires explicit review of vocabulary changes.
+The source-mutation cases test a different boundary. A manually edited copy
+can remove the food promise, including through a grammar change that leaves
+its structural safeguard against food-dependent confinement intact. Directly
+editing the writable vocabulary can likewise change what the record accepts.
+Those are consequences of the supplied candidate source, not authorised
+transitions. The exact-change route requires review of the actual replacement,
+including its vocabulary disposition.
 
 ## People and proposal names
 
-The label mechanism uses the same `false` relation that the accountability
-rules use for a void. Its guard requires both an Assembly docket entry and a
-declared protected target. The test supplies an entry saying Jala adjusts the
-floor article, but no docket entry. Neither a void nor a recognition loss
-follows for Jala.
+A proposal decision concerns the proposal and its candidate text. It does not
+supply a finding about a person's credibility. The test dockets Jala's name,
+declares a protected target and supplies an approval. Those entries produce
+neither a void nor a recognition loss against Jala. Her recorded contribution
+still receives recognition. The proposal called Amend_Floor likewise receives
+no personal recognition-loss verdict.
 
-This is a docket restriction, not a separation of people from proposals. A
-docket entry using a person's name can satisfy the same rule. Conversely,
-Amend_Floor's dead verdict is read by the recognition-loss rule, so a loss is
-recorded against a proposal that held no recognition. No downstream rule reads
-that loss, but it remains a result of sharing the relation.
-
-The Jala control establishes what the docket requirement blocks. It does not
-justify the remaining route from a docketed personal name to a void, or make
-a proposal's recognition loss meaningful. These are distinct representation
-problems, separate from whether exact-change certification authorises a source
-transition.
+A personal finding needs its own legal grounds and process. Conversely, an
+absence of personal wrongdoing supplies no authority to amend the constitution.
+The exact-change cases test the legitimate route through certification,
+publication and current selection; a bare proposal entry completes none of
+those stages.
 
 ## What entrenchment requires
 
@@ -149,9 +137,9 @@ supplied objects; they are not a self-enforcing republic.
 ## The child with nobody
 
 Nell is a person and is owed food in the supplied constitution. The registered
-floor and personhood names explain the label verdicts but do not secure those
-source rules by themselves. A concealed edit can change what derives while
-leaving the label harmless.
+floor and personhood names do not secure those source rules by themselves.
+A concealed source edit can change what derives without supplying any
+authority for that change.
 
 The exact-change route instead requires positive compatibility review tied to
 the actual candidate, including the universal floor. Its conclusion remains

@@ -1,4 +1,5 @@
 # SPDX-License-Identifier: MIT OR Apache-2.0
+# Custody and physical holding establish protection duties, not shelter or speech actuality.
 :expect-pins 32
 # Generated red-team queries for snapshot base.
 # This file is ephemeral and outside chapter pin reconciliation.
@@ -41,7 +42,7 @@
 
 # Reviewed expected consequence in base.
 ? dwell(Adam).
-# => TRUE
+# => FALSE
 
 # Reviewed expected consequence in base.
 ? entitled(Adam, event { dwell() }).
@@ -53,7 +54,7 @@
 
 # Reviewed expected consequence in base.
 ? expresses(Adam).
-# => TRUE
+# => FALSE
 
 # Reviewed expected consequence in base.
 ? false(Bela).

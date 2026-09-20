@@ -20,6 +20,119 @@
 
 # "The electorate seated you. You have not been recalled. And you were not
 #  voided in an earlier period." — all three holding gives the pen.
+
+# The original scenario now supplies qualified fictional merits, signed
+# harm findings, placement and intake. Its original missing/conflicting
+# temporal premises and every original query remain independently tested.
+list(Case_Voss, Voss, Incident_Case_Voss, CustodyMatter).
+list(Case_Voss, PublicInjuryOffence, Evidence_Case_Voss, CustodyOffenceEvidence).
+list(Case_Voss, Ivo, Prosecution, CustodyParties).
+list(Case_Voss, Court, CustodyMeritsReview, CustodyDecisionActors).
+judge(Court, Case_Voss).
+judge(CustodyMeritsReview, Case_Voss).
+authorized(Court, CustodyTrialAdjudicator, Case_Voss).
+authorized(CustodyMeritsReview, IndependentCustodyMeritsReviewer, Case_Voss).
+observe(Court, Case_Voss, Voss, CustodySubjectScope).
+observe(CustodyMeritsReview, Case_Voss, Voss, CustodySubjectScope).
+observe(Court, Case_Voss, Incident_Case_Voss, CustodyIncidentScope).
+observe(CustodyMeritsReview, Case_Voss, Incident_Case_Voss, CustodyIncidentScope).
+observe(Court, Case_Voss, PublicInjuryOffence, CustodyOffenceScope).
+observe(CustodyMeritsReview, Case_Voss, PublicInjuryOffence, CustodyOffenceScope).
+observe(Court, Case_Voss, Evidence_Case_Voss, CustodyEvidenceScope).
+observe(CustodyMeritsReview, Case_Voss, Evidence_Case_Voss, CustodyEvidenceScope).
+observe(Court, Case_Voss, Ivo, CustodyVictimScope).
+observe(CustodyMeritsReview, Case_Voss, Ivo, CustodyVictimScope).
+observe(Court, Case_Voss, Prosecution, CustodyProsecutorScope).
+observe(CustodyMeritsReview, Case_Voss, Prosecution, CustodyProsecutorScope).
+observe(Court, Case_Voss, PublicLawInForceBeforeTheAct, CustodyPriorLawScope).
+observe(CustodyMeritsReview, Case_Voss, PublicLawInForceBeforeTheAct, CustodyPriorLawScope).
+observe(Court, Case_Voss, IdentityActCausationAndRequiredMentalElementProvedBeyondReasonableDoubt, CustodyProofScope).
+observe(CustodyMeritsReview, Case_Voss, IdentityActCausationAndRequiredMentalElementProvedBeyondReasonableDoubt, CustodyProofScope).
+observe(Court, Case_Voss, NoPunishmentForStatusOrProtectedConduct, CustodyConductScope).
+observe(CustodyMeritsReview, Case_Voss, NoPunishmentForStatusOrProtectedConduct, CustodyConductScope).
+observe(Court, Case_Voss, AdmissibleDisclosedEvidenceNoCoercionOrDecisiveSecretEvidence, CustodyAdmissibilityScope).
+observe(CustodyMeritsReview, Case_Voss, AdmissibleDisclosedEvidenceNoCoercionOrDecisiveSecretEvidence, CustodyAdmissibilityScope).
+observe(Court, Case_Voss, NoticeCounselAccessibleHearingAndPublicReasons, CustodyProcedureScope).
+observe(CustodyMeritsReview, Case_Voss, NoticeCounselAccessibleHearingAndPublicReasons, CustodyProcedureScope).
+observe(Court, Case_Voss, IndependentlyAdjudicatedDefencesAndExculpatoryEvidence, CustodyDefencesScope).
+observe(CustodyMeritsReview, Case_Voss, IndependentlyAdjudicatedDefencesAndExculpatoryEvidence, CustodyDefencesScope).
+observe(Court, Case_Voss, IndividualNecessaryProportionateLeastRestrictiveCustodialSentence, CustodySentenceScope).
+observe(CustodyMeritsReview, Case_Voss, IndividualNecessaryProportionateLeastRestrictiveCustodialSentence, CustodySentenceScope).
+observe(Court, Case_Voss, NoDoubleJeopardyOrUnexpiredBar, CustodyFinalityScope).
+observe(CustodyMeritsReview, Case_Voss, NoDoubleJeopardyOrUnexpiredBar, CustodyFinalityScope).
+observe(Chronicle, Case_Voss, Court, CustodyTrialActorEligibleAtDecisionScope).
+observe(TemporalReview, Case_Voss, Court, CustodyTrialActorEligibleAtDecisionScope).
+observe(Chronicle, Case_Voss, CustodyMeritsReview, CustodyMeritsReviewerEligibleAtDecisionScope).
+observe(TemporalReview, Case_Voss, CustodyMeritsReview, CustodyMeritsReviewerEligibleAtDecisionScope).
+list(Merits_Order_Case_Voss, Case_Voss, Epoch_Current, RecordSequence).
+observe(Chronicle, Merits_Order_Case_Voss, Case_Voss, RecordStartScope).
+observe(Chronicle, Merits_Order_Case_Voss, Epoch_Current, RecordEndScope).
+observe(TemporalReview, Merits_Order_Case_Voss, Case_Voss, RecordStartScope).
+observe(TemporalReview, Merits_Order_Case_Voss, Epoch_Current, RecordEndScope).
+list(Severity_Voss_InjuryToPerson_Ivo, Voss, Case_Voss, CustodySeverityFinding).
+list(Severity_Voss_InjuryToPerson_Ivo, InjuryToPerson, Evidence_Severity_Voss_InjuryToPerson_Ivo, CustodySeverityDimensionEvidence).
+list(Severity_Voss_InjuryToPerson_Ivo, Ivo, Incident_Case_Voss, CustodySeverityVictimIncident).
+authorized(Court, CustodySeverityAdjudicator, Severity_Voss_InjuryToPerson_Ivo).
+authorized(CustodyMeritsReview, IndependentSeverityReviewer, Severity_Voss_InjuryToPerson_Ivo).
+observe(Court, Severity_Voss_InjuryToPerson_Ivo, Case_Voss, SeverityCaseScope).
+observe(CustodyMeritsReview, Severity_Voss_InjuryToPerson_Ivo, Case_Voss, SeverityCaseScope).
+observe(Court, Severity_Voss_InjuryToPerson_Ivo, Voss, SeveritySubjectScope).
+observe(CustodyMeritsReview, Severity_Voss_InjuryToPerson_Ivo, Voss, SeveritySubjectScope).
+observe(Court, Severity_Voss_InjuryToPerson_Ivo, Incident_Case_Voss, SeverityIncidentScope).
+observe(CustodyMeritsReview, Severity_Voss_InjuryToPerson_Ivo, Incident_Case_Voss, SeverityIncidentScope).
+observe(Court, Severity_Voss_InjuryToPerson_Ivo, Ivo, SeverityVictimScope).
+observe(CustodyMeritsReview, Severity_Voss_InjuryToPerson_Ivo, Ivo, SeverityVictimScope).
+observe(Court, Severity_Voss_InjuryToPerson_Ivo, InjuryToPerson, SeverityDimensionScope).
+observe(CustodyMeritsReview, Severity_Voss_InjuryToPerson_Ivo, InjuryToPerson, SeverityDimensionScope).
+observe(Court, Severity_Voss_InjuryToPerson_Ivo, Evidence_Severity_Voss_InjuryToPerson_Ivo, SeverityEvidenceScope).
+observe(CustodyMeritsReview, Severity_Voss_InjuryToPerson_Ivo, Evidence_Severity_Voss_InjuryToPerson_Ivo, SeverityEvidenceScope).
+observe(Court, Severity_Voss_InjuryToPerson_Ivo, AdjudicatedHarmAndMentalElementWithNoticeCounselChallengeAndReasons, SeverityProcedureScope).
+observe(CustodyMeritsReview, Severity_Voss_InjuryToPerson_Ivo, AdjudicatedHarmAndMentalElementWithNoticeCounselChallengeAndReasons, SeverityProcedureScope).
+list(Placement_Case_Voss, Voss, Case_Voss, CustodyPlacement).
+list(Placement_Case_Voss, Place_Voss, SupportedResidence, CustodyPlaceKind).
+list(Placement_Case_Voss, Case_Voss, Window_Custody, CustodyPlacementPeriod).
+authorized(State, CustodyPlacementAuthority, Placement_Case_Voss).
+authorized(PlacementReview, IndependentPlacementReviewer, Placement_Case_Voss).
+observe(State, Placement_Case_Voss, Voss, CustodyPlacementSubjectScope).
+observe(PlacementReview, Placement_Case_Voss, Voss, CustodyPlacementSubjectScope).
+observe(State, Placement_Case_Voss, Case_Voss, CustodyPlacementCaseScope).
+observe(PlacementReview, Placement_Case_Voss, Case_Voss, CustodyPlacementCaseScope).
+observe(State, Placement_Case_Voss, Place_Voss, CustodyPlacementPlaceScope).
+observe(PlacementReview, Placement_Case_Voss, Place_Voss, CustodyPlacementPlaceScope).
+observe(State, Placement_Case_Voss, SupportedResidence, CustodyPlacementKindScope).
+observe(PlacementReview, Placement_Case_Voss, SupportedResidence, CustodyPlacementKindScope).
+observe(State, Placement_Case_Voss, Case_Voss, CustodyPlacementLeaseScope).
+observe(PlacementReview, Placement_Case_Voss, Case_Voss, CustodyPlacementLeaseScope).
+observe(State, Placement_Case_Voss, Window_Custody, CustodyPlacementWindowScope).
+observe(PlacementReview, Placement_Case_Voss, Window_Custody, CustodyPlacementWindowScope).
+observe(State, Placement_Case_Voss, Epoch_Current, CustodyPlacementEpochScope).
+observe(PlacementReview, Placement_Case_Voss, Epoch_Current, CustodyPlacementEpochScope).
+observe(State, Placement_Case_Voss, PositiveAccessibleAvailableConsentingPlaceAndIndividualLawfulConditions, CustodyPlacementAvailabilityScope).
+observe(PlacementReview, Placement_Case_Voss, PositiveAccessibleAvailableConsentingPlaceAndIndividualLawfulConditions, CustodyPlacementAvailabilityScope).
+observe(State, Placement_Case_Voss, NoticeCounselReasonsIndependentInspectionAndAccessibleChallenge, CustodyPlacementProcedureScope).
+observe(PlacementReview, Placement_Case_Voss, NoticeCounselReasonsIndependentInspectionAndAccessibleChallenge, CustodyPlacementProcedureScope).
+observe(State, Placement_Case_Voss, IndividuallyNecessaryLeastRestrictivePlacementAndContinuity, CustodyPlacementNecessityScope).
+observe(PlacementReview, Placement_Case_Voss, IndividuallyNecessaryLeastRestrictivePlacementAndContinuity, CustodyPlacementNecessityScope).
+observe(State, Placement_Case_Voss, NoSuitableConsentingHomeAvailableAndOrdinarySupportedResidenceSecured, CustodyPlacementAlternativeScope).
+observe(PlacementReview, Placement_Case_Voss, NoSuitableConsentingHomeAvailableAndOrdinarySupportedResidenceSecured, CustodyPlacementAlternativeScope).
+authorized(CustodyIntake, CustodyIntakeAuthority, Case_Voss).
+authorized(CustodyIntakeAudit, IndependentCustodyIntakeAuditor, Case_Voss).
+observe(CustodyIntake, Case_Voss, Voss, CustodyIntakeSubjectScope).
+observe(CustodyIntakeAudit, Case_Voss, Voss, CustodyIntakeSubjectScope).
+observe(CustodyIntake, Case_Voss, Case_Voss, CustodyIntakeCaseScope).
+observe(CustodyIntakeAudit, Case_Voss, Case_Voss, CustodyIntakeCaseScope).
+observe(CustodyIntake, Case_Voss, Epoch_Current, CustodyIntakeEpochScope).
+observe(CustodyIntakeAudit, Case_Voss, Epoch_Current, CustodyIntakeEpochScope).
+observe(CustodyIntake, Case_Voss, Window_Custody, CustodyIntakeWindowScope).
+observe(CustodyIntakeAudit, Case_Voss, Window_Custody, CustodyIntakeWindowScope).
+observe(CustodyIntake, Case_Voss, AccessiblePrimaryAndIndependentAlternateWithConfidentialCounselAndRetainedCopies, CustodyIntakeAccessScope).
+observe(CustodyIntakeAudit, Case_Voss, AccessiblePrimaryAndIndependentAlternateWithConfidentialCounselAndRetainedCopies, CustodyIntakeAccessScope).
+observe(CustodyIntake, Case_Voss, ReconciledPrimaryAlternateAndSubjectHeldFilingsBeforeEachRenewal, CustodyIntakeReconciliationScope).
+observe(CustodyIntakeAudit, Case_Voss, ReconciledPrimaryAlternateAndSubjectHeldFilingsBeforeEachRenewal, CustodyIntakeReconciliationScope).
+observe(CustodyIntake, Case_Voss, NoHolderPermissionNoRetaliationAndImmediateSuspensionOnFiling, CustodyIntakeProtectionScope).
+observe(CustodyIntakeAudit, Case_Voss, NoHolderPermissionNoRetaliationAndImmediateSuspensionOnFiling, CustodyIntakeProtectionScope).
+
+
 ? choose(Electorate, Gia).
 # => TRUE
 

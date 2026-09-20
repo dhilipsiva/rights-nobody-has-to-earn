@@ -5,9 +5,9 @@
 ? person(PSProtectedsubject).
 # => TRUE
 ? dwell(PSProtectedsubject).
-# => TRUE
+# => FALSE
 ? expresses(PSProtectedsubject).
-# => TRUE
+# => FALSE
 ? obliged(PSProtectedholdingactor, SecureShelterRecordedVoiceCareConfidentialCounselAndChosenNotification, PSProtectedrecord).
 # => TRUE
 ? obliged(State, SecureAutomaticIndependentJudicialHoldingReviewAndKnownPlace, PSProtectedrecord).

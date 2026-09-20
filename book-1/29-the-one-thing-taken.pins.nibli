@@ -1,3 +1,4 @@
+# Custody and physical holding establish protection duties, not shelter or speech actuality.
 # ── Chapter 29 fidelity pins: "The One Thing Taken" ──────────────────────────
 #
 # Custodial safeguards and release duties do not create a second deprivation:
@@ -36,7 +37,7 @@
 # is untouched. Pin a FALSE only where the KB could have said TRUE, and say in
 # the comment what would flip it.
 
-:expect-pins 44
+:expect-pins 47
 
 # The order may be read; the loss and free-movement capability may not.
 # This checks the enacted source with a live positive control. The authoring
@@ -56,7 +57,7 @@
 # => TRUE
 
 ? expresses(Hano).
-# => TRUE
+# => FALSE
 
 ? decide(Hano, Ballot).
 # => TRUE
@@ -68,7 +69,7 @@
 # => FALSE
 
 ? dwell(Hano).
-# => TRUE
+# => FALSE
 
 # Hano and Jala share an injury entry, not a complete record of culpability.
 ? injure(Jala, Ivo).
@@ -93,6 +94,46 @@
 
 # "Somebody records that it is over — that is one of the things the world may say"
 free(Hano).
+
+# A raw completion report has no authority; the qualified case order does.
+? prisoner(Hano).
+# => TRUE
+? travel(Hano).
+# => FALSE
+list(Chapter29_Hano_Completion, Hano, Case_Hano, CustodyRelief).
+list(Chapter29_Hano_Completion, SentenceSatisfied, Evidence_Chapter29_Hano_Completion, CustodyReliefGroundEvidence).
+judge(Appeals, Chapter29_Hano_Completion).
+judge(CustodyAppealReview, Chapter29_Hano_Completion).
+authorized(Appeals, CustodyAppellateAuthority, Chapter29_Hano_Completion).
+authorized(CustodyAppealReview, IndependentCustodyDispositionReviewer, Chapter29_Hano_Completion).
+observe(Appeals, Chapter29_Hano_Completion, Hano, CustodyReliefSubjectScope).
+observe(CustodyAppealReview, Chapter29_Hano_Completion, Hano, CustodyReliefSubjectScope).
+observe(Appeals, Chapter29_Hano_Completion, Case_Hano, CustodyReliefCaseScope).
+observe(CustodyAppealReview, Chapter29_Hano_Completion, Case_Hano, CustodyReliefCaseScope).
+observe(Appeals, Chapter29_Hano_Completion, Incident_Case_Hano, CustodyReliefIncidentScope).
+observe(CustodyAppealReview, Chapter29_Hano_Completion, Incident_Case_Hano, CustodyReliefIncidentScope).
+observe(Appeals, Chapter29_Hano_Completion, PublicInjuryOffence, CustodyReliefOffenceScope).
+observe(CustodyAppealReview, Chapter29_Hano_Completion, PublicInjuryOffence, CustodyReliefOffenceScope).
+observe(Appeals, Chapter29_Hano_Completion, SentenceSatisfied, CustodyReliefGroundScope).
+observe(CustodyAppealReview, Chapter29_Hano_Completion, SentenceSatisfied, CustodyReliefGroundScope).
+observe(Appeals, Chapter29_Hano_Completion, Evidence_Chapter29_Hano_Completion, CustodyReliefEvidenceScope).
+observe(CustodyAppealReview, Chapter29_Hano_Completion, Evidence_Chapter29_Hano_Completion, CustodyReliefEvidenceScope).
+observe(Appeals, Chapter29_Hano_Completion, NoticeCounselEvidenceAccessHearingAndReasons, CustodyReliefProcedureScope).
+observe(CustodyAppealReview, Chapter29_Hano_Completion, NoticeCounselEvidenceAccessHearingAndReasons, CustodyReliefProcedureScope).
+observe(Chronicle, Chapter29_Hano_Completion, Appeals, CustodyAppealActorEligibleAtDecisionScope).
+observe(TemporalReview, Chapter29_Hano_Completion, Appeals, CustodyAppealActorEligibleAtDecisionScope).
+observe(Chronicle, Chapter29_Hano_Completion, CustodyAppealReview, CustodyDispositionReviewerEligibleAtDecisionScope).
+observe(TemporalReview, Chapter29_Hano_Completion, CustodyAppealReview, CustodyDispositionReviewerEligibleAtDecisionScope).
+list(Relief_Start_Chapter29_Hano_Completion, Case_Hano, Chapter29_Hano_Completion, RecordSequence).
+observe(Chronicle, Relief_Start_Chapter29_Hano_Completion, Case_Hano, RecordStartScope).
+observe(Chronicle, Relief_Start_Chapter29_Hano_Completion, Chapter29_Hano_Completion, RecordEndScope).
+observe(TemporalReview, Relief_Start_Chapter29_Hano_Completion, Case_Hano, RecordStartScope).
+observe(TemporalReview, Relief_Start_Chapter29_Hano_Completion, Chapter29_Hano_Completion, RecordEndScope).
+list(Relief_End_Chapter29_Hano_Completion, Chapter29_Hano_Completion, Epoch_Current, RecordSequence).
+observe(Chronicle, Relief_End_Chapter29_Hano_Completion, Chapter29_Hano_Completion, RecordStartScope).
+observe(Chronicle, Relief_End_Chapter29_Hano_Completion, Epoch_Current, RecordEndScope).
+observe(TemporalReview, Relief_End_Chapter29_Hano_Completion, Chapter29_Hano_Completion, RecordStartScope).
+observe(TemporalReview, Relief_End_Chapter29_Hano_Completion, Epoch_Current, RecordEndScope).
 
 # Release changes the custody, movement and marker conclusions; it does not
 # establish physical release.
@@ -165,7 +206,7 @@ free(Hano).
 # => TRUE
 
 ? correct(Case_Hano, ActivePower).
-# => TRUE
+# => FALSE
 
 # `year` and `earlier` remain unadmitted negative controls. Their refusal does
 # not prove the model has no temporal path; it proves date-shaped words cannot
@@ -178,14 +219,15 @@ earlier(Custody, Release).
 
 # ── "Recognition, work, compliance, wealth and character cannot shorten or
 # extend custody either." ──────────────────────────────────────────────────
-# The most direct route from earning to release is not merely unbuilt. The
-# conviction rule reads `~free`, so a release derived from confinement closes
-# the same negative loop appellate relief derived from confinement closes, and
-# the shape is refused before anyone argues the policy. A refusal is not the
-# whole claim: a different relation name would route around it, and what
-# carries the rest is that no rule reads `reward` at all.
+# Recognition has no active reader. Both attempted release routes are refused
+# by the current dependencies; these particular refusals are not a universal
+# proof about every possible encoding. The raw rule also joins first-contact
+# standing, while the operative rule defeats its own custody premise.
 :refuse reasoning /Unstratifiable/
 all $x: prisoner($x) & reward($x) -> free($x).
+# An attempted operative recognition-based release has the negative cycle.
+:refuse reasoning /Unstratifiable/
+all $subject: all $case: prisoner($subject, $case) & reward($subject) -> clean($case, CustodyConfinementBar).
 
 # ── THE TERM THAT RELEASES NOBODY. MUST BE LAST: everything below persists ───
 # Walk through the loud door on purpose: admit the word, state the term — no

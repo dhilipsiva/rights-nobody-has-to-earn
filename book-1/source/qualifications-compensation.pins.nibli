@@ -169,7 +169,7 @@ person(Yul).
 provide(Firm, Wage, Bela).
 :refuse reasoning /derived-only/
 grant(Guild, Welding, Bela).
-:refuse reasoning /not admitted vocabulary/
+:refuse reasoning /derived-only/
 agree(Firm, Bela, Wage, LabourBasis).
 
 # ── What the engine does NOT refuse, and why a repository guard exists ──────

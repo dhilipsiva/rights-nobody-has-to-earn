@@ -22038,6 +22038,27 @@ observe(OblFinding02Review, OblFinding02EffectResult, ReadIsolationFindingDuty, 
 observe(OblFinding02Source, OblFinding02EffectResult, ReadIsolationFindingStandard, FindingReaderStandardScope).
 observe(OblFinding02Evidence, OblFinding02EffectResult, ReadIsolationFindingStandard, FindingReaderStandardScope).
 observe(OblFinding02Review, OblFinding02EffectResult, ReadIsolationFindingStandard, FindingReaderStandardScope).
+list(ObligationsIsolationFinding, Adam, ObligationsHolding, CustodyIsolationFinding).
+list(ObligationsIsolationFinding, ObligationsHolder, ObligationsPlace, CustodyConditionLocation).
+list(ObligationsIsolationFinding, ObligationsPeriod, ObligationsEvidence, CustodyConditionEvidenceWindow).
+authorized(ObligationsWitness, CustodyConditionWitness, ObligationsIsolationFinding).
+authorized(ObligationsConditionReview, IndependentCustodyConditionReviewer, ObligationsIsolationFinding).
+observe(ObligationsWitness, ObligationsIsolationFinding, Adam, CustodyConditionSubjectScope).
+observe(ObligationsWitness, ObligationsIsolationFinding, ObligationsHolding, CustodyConditionHoldingScope).
+observe(ObligationsWitness, ObligationsIsolationFinding, ObligationsHolder, CustodyConditionHolderScope).
+observe(ObligationsWitness, ObligationsIsolationFinding, ObligationsPlace, CustodyConditionPlaceScope).
+observe(ObligationsWitness, ObligationsIsolationFinding, ObligationsPeriod, CustodyConditionPeriodScope).
+observe(ObligationsWitness, ObligationsIsolationFinding, ObligationsEvidence, CustodyConditionEvidenceScope).
+observe(ObligationsWitness, ObligationsIsolationFinding, HumanPersonPhysicallyHeldAndDeniedAccessibleHumanContact, CustodyIsolationConditionScope).
+observe(ObligationsWitness, ObligationsIsolationFinding, PositiveEvidenceNoticeReasonsAndIndependentContest, CustodyConditionProcedureScope).
+observe(ObligationsConditionReview, ObligationsIsolationFinding, Adam, CustodyConditionSubjectScope).
+observe(ObligationsConditionReview, ObligationsIsolationFinding, ObligationsHolding, CustodyConditionHoldingScope).
+observe(ObligationsConditionReview, ObligationsIsolationFinding, ObligationsHolder, CustodyConditionHolderScope).
+observe(ObligationsConditionReview, ObligationsIsolationFinding, ObligationsPlace, CustodyConditionPlaceScope).
+observe(ObligationsConditionReview, ObligationsIsolationFinding, ObligationsPeriod, CustodyConditionPeriodScope).
+observe(ObligationsConditionReview, ObligationsIsolationFinding, ObligationsEvidence, CustodyConditionEvidenceScope).
+observe(ObligationsConditionReview, ObligationsIsolationFinding, HumanPersonPhysicallyHeldAndDeniedAccessibleHumanContact, CustodyIsolationConditionScope).
+observe(ObligationsConditionReview, ObligationsIsolationFinding, PositiveEvidenceNoticeReasonsAndIndependentContest, CustodyConditionProcedureScope).
 # The exact Isolation finding route reaches its typed reader duty.
 ? obliged(Review, ReadIsolationFindingDuty, ReadIsolationFindingStandard).
 # => TRUE

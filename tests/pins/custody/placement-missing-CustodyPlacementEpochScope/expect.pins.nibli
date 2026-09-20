@@ -1,0 +1,13 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 5
+? responsible(Case_MissingCustodyPlacementEpochScope, CustodyMerits).
+# => TRUE
+? correct(Case_MissingCustodyPlacementEpochScope, ActivePower).
+# => FALSE
+? prisoner(MissingCustodyPlacementEpochScope).
+# => FALSE
+? obliged(State, SecureLawfulLeastRestrictivePlacementOrNoncustodialAlternative, MissingCustodyPlacementEpochScope).
+# => TRUE
+observe(PlacementReview, Placement_Case_MissingCustodyPlacementEpochScope, Epoch_Current, CustodyPlacementEpochScope).
+? prisoner(MissingCustodyPlacementEpochScope).
+# => TRUE

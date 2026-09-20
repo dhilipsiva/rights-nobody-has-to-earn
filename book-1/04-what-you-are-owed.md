@@ -31,10 +31,11 @@ unconditional floor in the tested form. The optional method explains the
 circular dependency that causes the refusal.
 
 That is narrower than saying no harmful rule can be written. The tests can
-load rules that make an absence of belief or company affect credibility or
-recognition. Those consequences do not create the same forbidden dependency.
-The controls are tested and discarded; they are not enacted rules of this
-constitution.
+load a rule that makes an absence of company remove recognition. That
+consequence does not create the same forbidden dependency. The tested rule
+making an absence of belief void credibility is refused by the current
+dependencies. Neither result settles every differently expressed attack.
+Accepted controls are tested and discarded; they are not enacted rules.
 
 Separate constitutional limits protect private life and economic rights.
 Belief, speech, friendship, intimacy, association, voluntary care, gifts,
@@ -72,18 +73,17 @@ witness and provider. An alternate witness must meet the same conditions.
 The next chapter follows that route. No receipt means the route is unsupported;
 it does not establish a failed delivery or withdraw the entitlement.
 
-The supplied custody cases contain a different route to shelter and recorded
-speech. Their conclusions follow through confinement, not recipient-side
-receipts. Neither conclusion proves that the person was actually housed or
-heard. The prisoner and placement chapters examine that distinction. An
-isolation marker reads confinement together with no company conclusion; in
-these cases it fires without establishing that anyone was isolated in the world.
+Custody adds duties to secure shelter, voice, care and independent access.
+Neither a lawful sentence nor a report of physical holding supplies a shelter
+receipt or establishes that the person spoke. A separate isolation finding
+requires positive evidence of denied contact for a specified holding, place
+and period. Missing company evidence cannot supply it.
 
 The source can also be made to flatter itself. In a counterfactual, add a rule
 saying every person has a selected floor condition. The corresponding query
-becomes true without a receipt. If that condition is company, the isolation
-marker stops following too. The rule supplies the answer it was supposed to
-justify. Restricting direct assertions does not prevent every rule from doing
+becomes true without a receipt. The rule supplies the answer it was supposed to
+justify. It does not erase a separately evidenced isolation finding.
+Restricting direct assertions does not prevent every rule from doing
 this, so a delivery claim must be checked against its actual premises.
 
 A different counterfactual alters the object of a floor debt. The changed rule

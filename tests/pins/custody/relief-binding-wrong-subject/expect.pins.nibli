@@ -1,0 +1,6 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 2
+? responsible(Order_ReliefBinding_wrong_subject, CustodyRelief).
+# => FALSE
+? prisoner(ReliefBinding_wrong_subject).
+# => TRUE

@@ -2,10 +2,10 @@
 :expect-pins 4
 
 ? obliged(RecordCaseHolder, ExplainAutomatedSupportAndAllowContest, RecordCaseRecord).
-# => FALSE
+# => TRUE
 ? obliged(RecordCaseReviewer, DecideWithHumanAndIndependentReview, RecordCaseRecord).
-# => FALSE
+# => TRUE
 ? permits(RecordCaseSubject, ContestAutomatedSupport, RecordCaseRecord).
-# => FALSE
+# => TRUE
 ? complete(RecordCaseRecord, ReviewedAutomatedDecisionSupport, RecordCaseSubject).
 # => FALSE

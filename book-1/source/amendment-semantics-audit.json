@@ -16,7 +16,7 @@
   "limits": {
     "manual_delta": "Every candidate is a manually authored exact source delta. The harness proves the delta's engine-visible consequences, not that `become` enacted it, that `false` prevented it, or that any proposal text contained it.",
     "semantic_completeness": "The cases are bounded counterexamples, not a proof that a finite target vocabulary or test suite captures every direct, downstream, arity, negation, aggregate, or interaction effect.",
-    "source_history": "The harness authenticates no author, approval, predecessor, deployment, transition, rollback prohibition, or eventually published successor.",
+    "source_history": "The harness authenticates no author, approval, predecessor, deployment, transition, rollback prohibition, or eventually published successor. The recorded case results and source measurements are historical; the maintained tests/pins/amendments scenarios and the 2026-09-19 amendment-enactment contract describe the current disposition of the retired label rules.",
     "engine_scope": "A passing executable run proves only how the release engine treats each generated candidate source and pin file in an isolated process.",
     "no_new_gate": "The audit adds no new approval, target, source-release, or reviewer prerequisite. A future control must be tested for both semantic bypass and use as a withholding veto."
   },
@@ -601,18 +601,18 @@
       "future_trigger": "Revise if a verified exact-diff binding, semantic review, vocabulary-entrenchment rule, or source-transition mechanism lands."
     },
     {
-      "artifact_ref": "book-1/04-what-you-are-owed.md::The controls are tested and discarded; they are not enacted rules of this",
+      "artifact_ref": "book-1/04-what-you-are-owed.md::Accepted controls are tested and discarded; they are not enacted rules.",
       "current_claim": "The floor layer still permits the tested credibility, recognition, and compulsion routes, while a separate derived liberty shell now records person-held barriers against their lawful use; neither result proves institutional enforcement.",
       "classification": "revised_and_scoped",
       "reason": "The source mutation cases still test the floor's narrow anti-sanction property, while the new liberty family adds an independent normative layer and explicitly leaves operation and enforcement unestablished.",
       "future_trigger": "Revise the prose, liberty pins, counterfactuals, and this audit if either the floor refusal or the separate liberty barrier changes."
     },
     {
-      "artifact_ref": "book-1/22-changing-the-rules.md::The guard still compares names, not effects.",
-      "current_claim": "The present mechanism produces label verdicts but has not established protection against what a source change actually does.",
+      "artifact_ref": "book-1/22-changing-the-rules.md::## What a proposal entry establishes",
+      "current_claim": "Bare proposal and target labels supply no amendment authority. The exact-change contract separately binds the candidate and its required reviews; manually supplied source edits remain distinct from authorised transitions.",
       "classification": "revised_and_scoped",
-      "reason": "Targetless, falsely labelled, concealed-shape, label-poisoning, and honest blocked-label-plus-harm cases execute the distinction without claiming enactment or prevention.",
-      "future_trigger": "Revise when proposal text, exact effects, approval, and effective source transition become one verified constitutional contract."
+      "reason": "The 2026-09-19 revision removes the parallel Article 9 label rules. Retained AS source-mutation scenarios continue to test candidate effects; a separate explicit weaker-rule counterfactual preserves the targetless-label and personal-name failures.",
+      "future_trigger": "Reassess if candidate-binding, core review, publication, effective selection or their personal-consequence limits change."
     },
     {
       "artifact_ref": "book-1/31-the-five-joints.md::The consequential records remain the constitutional source and the facts",
@@ -622,7 +622,7 @@
       "future_trigger": "Reassess if source authorship, semantic authorization, deployment identity, rollback protection, or independently assured transition evidence lands."
     },
     {
-      "artifact_ref": "book-1/04-what-you-are-owed.md::recognition. Those consequences do not create the same forbidden dependency.",
+      "artifact_ref": "book-1/04-what-you-are-owed.md::consequence does not create the same forbidden dependency.",
       "current_claim": "The current anti-sanction refusal is narrow: it does not deliver the floor, block every hostile rule, stop defunding, or preserve the source.",
       "classification": "revised_and_scoped",
       "reason": "The concealed-shape case removes the food promise while the anti-sanction refusal still fires, proving that the structural wall and delivered constitutional promise are different claims.",

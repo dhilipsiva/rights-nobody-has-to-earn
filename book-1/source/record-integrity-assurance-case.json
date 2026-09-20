@@ -122,7 +122,7 @@
           "kind": "formal",
           "role": "exposes_gap",
           "supports": "RI-2",
-          "ref": "book-1/source/constitution.nibli::Source-version and fact-write discipline are"
+          "ref": "book-1/source/constitution.nibli::# ─── The residual trust base, I: fact writes"
         }
       ],
       "known_failure": "Any current fact-store writer can forge or withhold admitted premises; claimed actors are not authenticated writers and existing companion facts do not establish a general authority model.",
@@ -225,7 +225,7 @@
           "kind": "formal",
           "role": "sets_boundary",
           "supports": "RI-5",
-          "ref": "book-1/source/constitution.nibli::THE TWO PENS MUST COME FROM DIFFERENT BODIES."
+          "ref": "book-1/source/constitution.nibli::Article 4: Findings, prospective signatures, and recognition"
         },
         {
           "kind": "decision",
@@ -532,7 +532,7 @@
           "kind": "formal",
           "role": "sets_boundary",
           "supports": "RI-13",
-          "ref": "book-1/source/constitution.nibli::unadjudicated accusation and an unperformed remedy are different absences,"
+          "ref": "book-1/source/constitution.nibli::# <CUSTODY-ADJUDICATION-RULES-BEGIN>"
         },
         {
           "kind": "generated",
@@ -982,14 +982,14 @@
       "future_trigger": "Revise only to the exact scope of independently authenticated transition evidence, while retaining the intra-snapshot limit."
     },
     {
-      "artifact_ref": "book-1/23-who-holds-the-pen.md::The pair does not prove independent",
+      "artifact_ref": "book-1/23-who-holds-the-pen.md::It does not authenticate an election or establish that nominally",
       "current_claim": "Cross-body pens raise decision cost but do not assure record authorship.",
       "classification": "preserved",
       "reason": "The case distinguishes decisional independence from record witnessing and changes no pen rule.",
       "future_trigger": "Revise when authenticated, independently witnessed writer controls are formal and tested."
     },
     {
-      "artifact_ref": "book-1/25-voiding.md::None of that makes the record self-authenticating.",
+      "artifact_ref": "book-1/25-voiding.md::## What it costs",
       "current_claim": "The staged rules guarantee more consequences over supplied accepted records, but do not authenticate those records or make a successor arrive.",
       "classification": "revised",
       "reason": "The top assurance verdict remains explicitly not established after the staged T3 safety path because supplied-record derivation is not assurance of the record, witnesses, or outside time service.",

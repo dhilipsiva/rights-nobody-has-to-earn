@@ -1,96 +1,54 @@
 # SPDX-License-Identifier: MIT OR Apache-2.0
-#
-# THE ACCUSATION-AUTHORSHIP GAP, MADE EXECUTABLE.
-#
-# The narrative-register decision records that "the record can hold an
-# accusation only as an entry with an author" traced to nothing, because the
-# harm relations name the alleged offender and the victim and never the writer.
-# That is true of their PLACES. This case pins what follows from it, which is
-# about their CONSEQUENCES: an accusation nobody signed is not inert, and the
-# design's own protections are what it reaches.
-#
-# Measured 2026-09-16 against the current source. Three of the four routes
-# below need no judgment, no grounds, no author and no review. The fourth — the
-# voiding rule — does require a review body's judgment beside the lie, which is
-# why chapter 3's account of this is stated per route rather than in general.
-#
-# Nothing here is repaired by this case. It exists so the boundary is
-# executable rather than only described, in the same way the collusion case
-# pins a wall that is not there.
+# Accusations and their actual consequences; every original scenario retained.
 :expect-pins 21
 
-# ─── 1. The shield, which an unsigned entry takes ────────────────────────────
-# Torvi exposed an office holder and holds the shield for it.
 ? authority(Boss).
 # => TRUE
 ? defend(Torvi).
 # => TRUE
 
-# One entry, written by nobody in particular, naming Torvi as having deceived
-# the person they exposed. No author, no ground, no date, no review.
+# The unsigned allegation cannot defeat this disclosure.
 deceive(Torvi, Boss).
 
-# The shield is gone — for that exposure. The rule is per pair, which is what
-# chapter 24 means by closing against a claim rather than against a claimant.
 ? defend(Torvi).
-# => FALSE
+# => TRUE
 
-# So a second exposure, of a different office holder, with no accusation
-# against it, protects again. The unsigned entry took one claim's protection,
-# not the person's.
-show(Torvi, Review).
+show(Torvi, Disclosure_Torvi_Review, Review).
 ? authority(Review).
 # => TRUE
 ? defend(Torvi).
 # => TRUE
 
-# ─── 2. Recognition, which an unsigned entry also takes ──────────────────────
-# Marn judged, documented and cited a ground, so the examiner door opens.
 ? reward(Marn).
 # => TRUE
 
+# Nor can it remove examination recognition.
 deceive(Marn, Vasha).
 
 ? reward(Marn).
-# => FALSE
+# => TRUE
 
-# ─── 3. Severity, which was the third route and is now the repaired one ──────
-# Two unsigned accusations about one offender and one victim. Until 2026-09-16
-# this derived severity outright, which decides where a confined person spends
-# the sentence. Severity is now court-bound: it reads the Court's judgment and
-# its cited case, which is what the confinement it decides already required.
+# Unsigned harm and a generic judgment cannot supply signed case-bound severity.
 attack(Quilo, Sepp).
 cruel(Quilo, Sepp).
 
-# Nobody has judged Quilo, so the entries conclude nothing.
 ? severe(Quilo).
 # => FALSE
 ? severe(Sepp).
 # => FALSE
 
-# The same two entries, about somebody the Court has judged and cited, do
-# derive it. The repair asks for the court, not for an author: the entries
-# still name the offender and the victim and never the writer.
 judge(Court, Marn).
 cite(Court, MarnCase, Marn).
 attack(Marn, Sepp).
 cruel(Marn, Sepp).
 ? severe(Marn).
-# => TRUE
+# => FALSE
 
-# And nobody is convicted by any of it. The conviction rule wants a recorded
-# conviction, twelve independently witnessed observations, an active custody
-# authorisation and four negative guards besides.
 ? prisoner(Quilo).
 # => FALSE
 ? prisoner(Marn).
 # => FALSE
 
-# ─── 3a. The same thing, in the shipped cast ────────────────────────────────
-# These are not fixture people. Three members of the record this book ships
-# carry a severity finding. Every one of them also carries the Court's judgment
-# and its cited case, which is why the repair moved none of them — it asks for
-# facts that everybody severity can reach already had.
 ? severe(Lalo).
 # => TRUE
 ? severe(Don).
@@ -98,28 +56,18 @@ cruel(Marn, Sepp).
 ? severe(Ruk).
 # => TRUE
 
-# And the one guard the severity rules do carry, which is not authorship. Hano
-# has an attack entry and an injury entry, and they name the same person, so the
-# distinctness conjunct is the whole of what stands between Hano and a severity
-# finding. Not who wrote them. Not whether anybody reviewed them.
 ? severe(Hano).
 # => FALSE
 
-# ─── 4. Credibility, the one route that does ask for a judgment ──────────────
-# Torvi has carried an unsigned deceit entry since the first section. It has
-# not voided anybody, because the voiding rule reads a review body's judgment
-# beside the lie.
 ? false(Torvi).
 # => FALSE
 
+# A generic judgment cannot substitute for the completed credibility case.
 judge(Review, Torvi).
 
-# Now it voids. The judgment is a real condition and it is the exception, not
-# the rule: the three routes above asked for nothing of the kind.
 ? false(Torvi).
-# => TRUE
+# => FALSE
 
-# ─── What an unsigned accusation still does not do ───────────────────────────
 ? person(Torvi).
 # => TRUE
 ? owe(State, Eats, Torvi).

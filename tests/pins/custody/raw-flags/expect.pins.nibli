@@ -1,0 +1,32 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 11
+# Retained counterexamples: reports do not supply qualified legal acts.
+? prisoner(Hano).
+# => TRUE
+? dwell(Hano).
+# => FALSE
+? expresses(Hano).
+# => FALSE
+free(Hano).
+? prisoner(Hano).
+# => TRUE
+clear(Adam).
+judge(Appeals, Adam).
+? prisoner(Adam).
+# => TRUE
+attack(Nando, Opal).
+cruel(Nando, Opal).
+? severe(Nando).
+# => FALSE
+put(State, Kel, UnknownDestination).
+? err(Kel, Placement).
+# => TRUE
+broken(Court).
+? prisoner(Ruk).
+# => TRUE
+? owe(State, Dwell, Hano).
+# => TRUE
+? obliged(Review, Kel).
+# => TRUE
+? person(Hano).
+# => TRUE

@@ -12,13 +12,13 @@ observe(ShieldAppointments, Case_Rex, Appeals, IndependentShieldReviewerScope).
 observe(ShieldAppointments, Case_Rex, Convocation, IndependentShieldReviewerScope).
 observe(ShieldAppointmentsReview, Case_Rex, Appeals, IndependentShieldReviewerScope).
 observe(ShieldAppointmentsReview, Case_Rex, Convocation, IndependentShieldReviewerScope).
-show(Rex, Court).
-show(Rex, Review).
-show(Rex, Appeals).
-show(Rex, Convocation).
-show(Rex, State).
-show(Rex, ShieldAppointments).
-show(Rex, ShieldAppointmentsReview).
+show(Rex, Disclosure_Rex_Court, Court).
+show(Rex, Disclosure_Rex_Review, Review).
+show(Rex, Disclosure_Rex_Appeals, Appeals).
+show(Rex, Disclosure_Rex_Convocation, Convocation).
+show(Rex, Disclosure_Rex_State, State).
+show(Rex, Disclosure_Rex_ShieldAppointments, ShieldAppointments).
+show(Rex, Disclosure_Rex_ShieldAppointmentsReview, ShieldAppointmentsReview).
 observe(Appeals, Case_Rex, ShieldUnrelatedToTheDisclosure, ShieldConnectionScope).
 observe(Convocation, Case_Rex, ShieldUnrelatedToTheDisclosure, ShieldConnectionScope).
 observe(Appeals, Case_Rex, Rex, ShieldSubjectScope).
@@ -31,11 +31,11 @@ observe(ShieldAlternativeAppointments, Case_Rex, Appeals, IndependentShieldRevie
 observe(ShieldAlternativeAppointments, Case_Rex, Convocation, IndependentShieldReviewerScope).
 observe(ShieldAlternativeReview, Case_Rex, Appeals, IndependentShieldReviewerScope).
 observe(ShieldAlternativeReview, Case_Rex, Convocation, IndependentShieldReviewerScope).
-show(Rex, Court).
-show(Rex, Review).
-show(Rex, Appeals).
-show(Rex, Convocation).
-show(Rex, State).
-show(Rex, ShieldAlternativeAppointments).
-show(Rex, ShieldAlternativeReview).
+show(Rex, Disclosure_Rex_Court, Court).
+show(Rex, Disclosure_Rex_Review, Review).
+show(Rex, Disclosure_Rex_Appeals, Appeals).
+show(Rex, Disclosure_Rex_Convocation, Convocation).
+show(Rex, Disclosure_Rex_State, State).
+show(Rex, Disclosure_Rex_ShieldAlternativeAppointments, ShieldAlternativeAppointments).
+show(Rex, Disclosure_Rex_ShieldAlternativeReview, ShieldAlternativeReview).
 observe(ShieldAppointments, Case_Rex, Appeals, ConflictedShieldReviewerScope).

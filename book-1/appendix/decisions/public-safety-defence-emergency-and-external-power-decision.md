@@ -2,6 +2,14 @@
 
 # Book 1 Public-Safety, Defence, Emergency, and External-Power Decision
 
+**Final item-19 integration, 2026-09-20.** The current source passes 88,024
+pins across 16,087 cases in 1,169.06s, with complete contradiction checks and
+no findings. No active known-defect annotations remain. The focused and failed
+runs below are historical steps, not the final result. The five-minute target
+is unmet. These checks establish the loaded model, not outside authenticity
+or performed institutional acts. See `CLAUDE.md` for the development and
+manuscript checks. The fresh whole-manuscript review remains item 20.
+
 > **Status: author-ratified on 2026-08-08; formally implemented and verified
 > on 2026-09-13.** The current implementation is specified in
 > [Protective power without a security exception](../contracts/public-safety-contract.md).
@@ -15,7 +23,91 @@
 > does not reopen the internal secession path, the six ratified baselines it
 > touches at the edges, or the edition gates.
 
+## Custody merits, relief and placement supersession, 2026-09-19
+
+This subsection governs the current custody source. The exact text and
+associated source changes are `session-drafted, author-approved under delegated
+approval (2026-09-13)`. It supersedes the earlier preservation of the legacy
+Court assertion surface; it does not turn a non-coercive justice hearing into
+authority to confine.
+
+Custody requires a qualified merits case identifying subject, incident,
+charged offence, evidence, victim and prosecutor. The trial adjudicator and
+independent merits reviewer are distinct and cannot be interested parties.
+Their case-specific authority, eligibility at the decision and matching
+observations must establish prior public law, criminal proof of identity,
+act, causation and required mental element, no punishment for status or
+protected conduct, admissible disclosed evidence, notice, counsel, accessible
+hearing and public reasons, adjudicated defences and exculpatory evidence,
+individual necessity and proportionality, the least restrictive lawful
+sentence, and finality. Conflicting qualified observations or identity bindings
+invalidate the record. The historical case must precede the selected evaluation.
+
+The confinement conclusion is case-specific. A generic judgment, an injury,
+or a claim that the Court is broken cannot supply or withdraw these legal
+effects. Nor does a bare `free` or clearing/judgment pair end a sentence.
+Completed relief binds its subject, case, incident, offence, closed ground,
+evidence, procedure, qualified appellate actors and witnessed order. Neither
+actor may be a party, prosecutor, original adjudicator or trial reviewer.
+The grounds include acquittal, final quashing, satisfaction of the sentence,
+self-defence, defence of others, necessity, duress, incapacity or absent required
+element, unproved identity or offence, repeated-proceeding bars and defective
+court jurisdiction or independence. These are supplied adjudicated findings,
+not conclusions manufactured from the person's assertion of a defence.
+
+Final merits relief follows the same person, incident and charged offence
+across renamed cases or evidence records. A procedural court defect defeats
+the original case without pretending that a fresh lawful proceeding is always
+barred. Another offence or incident needs its own disposition. Positive merits
+requirements and the challenge protections apply to any fresh proceeding.
+
+Severity uses separately identified, signed findings of intentional injury,
+aggravated cruelty and injury to another person, each bound to the adjudicated
+case and incident, victim, evidence and procedure. The same qualifying pairs
+remain, but raw harm reports cannot supply them and one case cannot lend its
+severity to another. Unary severity is a display; placement reads the case.
+
+Authority additionally requires an available named place, matching placement
+and lease fields, independent review, individual necessity, lawful conditions,
+notice, counsel, inspection and accessible challenge. Non-severe cases permit
+home confinement or an ordinary supported residence; the latter requires
+positive evidence that no suitable consenting home is available and that the
+residence is secured. Absence of a home entry is insufficient. Secure placement
+requires case-specific severity and a positive finding that less restrictive
+alternatives are insufficient. A person's family form supplies no placement
+ground. Conflicting reviewed places block authority and trigger correction;
+reported inappropriate categories, unknown destinations and wrong exact places
+also trigger review. No default housing conclusion fills a missing destination.
+
+The State owes a lawful least restrictive placement or a noncustodial
+alternative. Naming a place or recording physical holding is not a shelter
+receipt or a record of speech. Those automatic actuality heads are removed;
+the standing, floor, humane-conditions, counsel, voice, review, release and
+continuity duties remain. The public-holding owner retains the original
+actuality queries as negative controls and tests an independent shelter
+receipt separately.
+
+The canonical cast now supplies explicit fictional merits, severity, placement
+and intake records, including named supported residences for the cases without
+a home option and a qualified final order for Nia. These are complete test
+premises, not testimony, outside delivery or an operating institution. Removing
+a required premise must withhold the corresponding power. The existing raw
+reports remain in the scenarios and are tested as insufficient by themselves.
+
+The live pre-repair regression produced eight failures from eleven pins, with
+no harness error: raw release, generic relief, unscoped Court failure, unsigned
+severity, an unknown destination, its missing review duty, and the two
+manufactured floor actualities. The temporary complete model passes the wider
+377-pin, 79-case custody suite in 14.48 seconds, including contradiction checks.
+The rules and cases are adopted for integration; whole-book checks and the
+current-design reader projection remain required for item 19.
+
 ## 1. Decision
+
+The 2026-09-19 continuing-duty supersession in the implementation contract
+separates an instrument's surviving duties from its permission to act. It is
+`session-drafted, author-approved under delegated approval (2026-09-13)`.
+Its focused tests and remaining full-verification requirement are recorded there.
 
 Book 1 adopts one settlement across four related but non-collapsed subjects:
 

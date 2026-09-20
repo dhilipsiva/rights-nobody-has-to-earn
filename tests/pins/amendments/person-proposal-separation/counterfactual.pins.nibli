@@ -1,0 +1,17 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+# The same facts with the two weaker label rules explicitly restored.
+:expect-pins 7
+? person(Jala).
+# => TRUE
+? reward(Jala).
+# => FALSE
+? false(Jala).
+# => TRUE
+? lose(Points, Jala).
+# => TRUE
+? become(Jala, Law).
+# => FALSE
+? become(Amend_Sneak, Law).
+# => TRUE
+? become(Amend_Mint, Law).
+# => TRUE

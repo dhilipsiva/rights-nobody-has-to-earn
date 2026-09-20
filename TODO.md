@@ -111,29 +111,6 @@ solutions and development history stay outside the book's reading sequence.
 
 ## IV. Prepare a credible open book and reassess it
 
-### 19. Run the final formal and manuscript checks on the revised state
-
-- [ ] Execute the complete substantive verifier and relevant existing
-  development checks; perform a separate final prose and source consistency pass.
-
-Resolve the concrete source questions recorded with item 14 in `CLAUDE.md`,
-including evidence and incident binding, restoration, continuing duties,
-proposal/person separation and the isolation marker. Distinguish defects in
-the legal mechanism from the limits of trusted inputs and outside observation.
-
-Use the final current constitution and suites, preserving expected refusals,
-counterfactuals, stateful cases and trusted preconditions. Classify known-defect
-expectations separately from ordinary successful behavior. A passing suite that
-asserts a defect remains evidence of that defect. Report elapsed time instead
-of assuming the performance target. Check that all factual citations and the
-submission package still describe the final text.
-
-**Done when:** required checks actually complete; failures and incomplete
-contradiction checks are resolved; any retained modeled defect satisfies the
-resolve-before-defending standard with supporting evidence; and no material
-defect is relabeled as a success merely because its pin passes. A described
-but unresolved defect, resource limit or tooling blocker cannot pass this item.
-
 ### 20. Give the finished manuscript a fresh, evidence-based review
 
 - [ ] Read the final ordered manuscript as a whole and reassess argument,

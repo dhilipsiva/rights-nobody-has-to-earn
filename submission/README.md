@@ -4,7 +4,7 @@
 
 **Book proposal · dhilipsiva · political nonfiction / constitutional design**
 
-**Approximately 52,000 words · complete draft in final substantive review**
+**Approximately 51,000 words · complete draft awaiting final manuscript review**
 
 This proposal seeks an editorial and print partnership for an openly licensed
 book. It is prepared for a submission decision, without being addressed or sent
@@ -172,20 +172,25 @@ considered for submission.
 
 ## Completion and limits
 
-As of 2026-09-19, all 31 numbered chapters, the epigraph, opening note and
-method are drafted: approximately 52,000 words across 34 ordered inputs.
-About 77% of the source word count belongs to the 30 derived chapters.
+As of 2026-09-20, all 31 numbered chapters, the epigraph, opening note and
+method are drafted: approximately 51,000 words across 34 ordered inputs.
+About 77% of the rendered-text word count belongs to the 30 derived chapters.
 The full manuscript and sample are available locally as HTML, EPUB and PDF.
 
-The complete substantive run for this package passed 87,372 pins across
-15,996 cases in 895.11 seconds, with complete contradiction checks and no
-findings. Nine of those pins deliberately reproduce known defects. They do
-not establish successful legal behavior. Those defects and the further
-source questions from the manuscript review remain open under
-[the final-check and fresh-review tasks](../TODO.md). This is a complete draft
-with substantive review still in progress, not a released or defect-free edition.
-The submission decision should follow their resolution and an update of this
-package and its sample to the resulting text.
+The complete substantive run for this package passed 88,024 pins across
+16,087 cases in 1,169.06 seconds, with complete contradiction checks and no
+findings. No active known-defect expectations remain. Explicitly weakened
+counterfactuals still demonstrate the harms their altered rules permit; those
+results do not describe the enacted model. The five-minute verification target
+is not met.
+
+The identified final-check issues have substantive repairs and executed
+regressions. The [fresh whole-manuscript review](../TODO.md) remains before the
+submission decision. This is a complete draft, not a released edition. The
+full PDF has 155 pages; the five-chapter sample has 29. Both EPUBs pass EPUBCheck
+with zero errors or warnings, and the browser and PDF inspections found no
+missing checked text or navigation failures. These are bounded formal and
+rendering checks, not independent editorial endorsement.
 
 The [method](../book-1/method.md) discloses AI assistance and explains what
 the checks establish. No independent expert endorsement, external reader

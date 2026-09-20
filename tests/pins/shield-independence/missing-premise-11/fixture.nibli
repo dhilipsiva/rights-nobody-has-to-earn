@@ -11,10 +11,10 @@ authorized(ShieldAppointmentsReview, ShieldQualificationReviewAuthority, Case_Re
 observe(ShieldAppointments, Case_Rex, Appeals, IndependentShieldReviewerScope).
 observe(ShieldAppointments, Case_Rex, Convocation, IndependentShieldReviewerScope).
 observe(ShieldAppointmentsReview, Case_Rex, Convocation, IndependentShieldReviewerScope).
-show(Rex, Court).
-show(Rex, Review).
-show(Rex, Appeals).
-show(Rex, Convocation).
-show(Rex, State).
-show(Rex, ShieldAppointments).
-show(Rex, ShieldAppointmentsReview).
+show(Rex, Disclosure_Rex_Court, Court).
+show(Rex, Disclosure_Rex_Review, Review).
+show(Rex, Disclosure_Rex_Appeals, Appeals).
+show(Rex, Disclosure_Rex_Convocation, Convocation).
+show(Rex, Disclosure_Rex_State, State).
+show(Rex, Disclosure_Rex_ShieldAppointments, ShieldAppointments).
+show(Rex, Disclosure_Rex_ShieldAppointmentsReview, ShieldAppointmentsReview).

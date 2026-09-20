@@ -12,7 +12,7 @@ person(Sepp).
 
 # Torvi exposes something about a public office holder. That is the whistle,
 # and chapter 4's shield is what it earns.
-show(Torvi, Boss).
+show(Torvi, Disclosure_Torvi_Boss, Boss).
 
 # Marn does every act the paid examiner door asks for, about Vasha.
 judge(Marn, Vasha).

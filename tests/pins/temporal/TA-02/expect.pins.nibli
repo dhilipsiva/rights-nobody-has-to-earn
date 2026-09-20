@@ -14,9 +14,9 @@
 ? match(TA_Subject, CarriedVoid).
 # => TRUE
 
-# The reconciled mark, not the raw rotten entry alone, reaches the existing void consequence.
+# Carried credential status creates no personal finding without its own adjudicated case.
 ? false(TA_Subject).
-# => TRUE
+# => FALSE
 
 # Honest carry is not misclassified as omission.
 ? err(TA_Subject, CarryOmission).

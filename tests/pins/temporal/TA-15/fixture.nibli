@@ -18,3 +18,114 @@ observe(TemporalReview, TA_No_Renewal_Case, ActiveCustody, PowerScope).
 observe(Chronicle, TA_No_Renewal_Case, TA_No_Renewal_Case, CaseBindingScope).
 observe(TemporalReview, TA_No_Renewal_Case, TA_No_Renewal_Case, CaseBindingScope).
 challenge(TA_No_Renewal, TA_No_Renewal_Case, TemporalReview).
+
+# The original scenario now supplies qualified fictional merits, signed
+# harm findings, placement and intake. Its original missing/conflicting
+# temporal premises and every original query remain independently tested.
+list(TA_No_Renewal_Case, TA_No_Renewal, Incident_TA_No_Renewal_Case, CustodyMatter).
+list(TA_No_Renewal_Case, PublicInjuryOffence, Evidence_TA_No_Renewal_Case, CustodyOffenceEvidence).
+list(TA_No_Renewal_Case, TA_No_Renewal_Victim, Prosecution, CustodyParties).
+list(TA_No_Renewal_Case, Court, CustodyMeritsReview, CustodyDecisionActors).
+judge(Court, TA_No_Renewal_Case).
+judge(CustodyMeritsReview, TA_No_Renewal_Case).
+authorized(Court, CustodyTrialAdjudicator, TA_No_Renewal_Case).
+authorized(CustodyMeritsReview, IndependentCustodyMeritsReviewer, TA_No_Renewal_Case).
+observe(Court, TA_No_Renewal_Case, TA_No_Renewal, CustodySubjectScope).
+observe(CustodyMeritsReview, TA_No_Renewal_Case, TA_No_Renewal, CustodySubjectScope).
+observe(Court, TA_No_Renewal_Case, Incident_TA_No_Renewal_Case, CustodyIncidentScope).
+observe(CustodyMeritsReview, TA_No_Renewal_Case, Incident_TA_No_Renewal_Case, CustodyIncidentScope).
+observe(Court, TA_No_Renewal_Case, PublicInjuryOffence, CustodyOffenceScope).
+observe(CustodyMeritsReview, TA_No_Renewal_Case, PublicInjuryOffence, CustodyOffenceScope).
+observe(Court, TA_No_Renewal_Case, Evidence_TA_No_Renewal_Case, CustodyEvidenceScope).
+observe(CustodyMeritsReview, TA_No_Renewal_Case, Evidence_TA_No_Renewal_Case, CustodyEvidenceScope).
+observe(Court, TA_No_Renewal_Case, TA_No_Renewal_Victim, CustodyVictimScope).
+observe(CustodyMeritsReview, TA_No_Renewal_Case, TA_No_Renewal_Victim, CustodyVictimScope).
+observe(Court, TA_No_Renewal_Case, Prosecution, CustodyProsecutorScope).
+observe(CustodyMeritsReview, TA_No_Renewal_Case, Prosecution, CustodyProsecutorScope).
+observe(Court, TA_No_Renewal_Case, PublicLawInForceBeforeTheAct, CustodyPriorLawScope).
+observe(CustodyMeritsReview, TA_No_Renewal_Case, PublicLawInForceBeforeTheAct, CustodyPriorLawScope).
+observe(Court, TA_No_Renewal_Case, IdentityActCausationAndRequiredMentalElementProvedBeyondReasonableDoubt, CustodyProofScope).
+observe(CustodyMeritsReview, TA_No_Renewal_Case, IdentityActCausationAndRequiredMentalElementProvedBeyondReasonableDoubt, CustodyProofScope).
+observe(Court, TA_No_Renewal_Case, NoPunishmentForStatusOrProtectedConduct, CustodyConductScope).
+observe(CustodyMeritsReview, TA_No_Renewal_Case, NoPunishmentForStatusOrProtectedConduct, CustodyConductScope).
+observe(Court, TA_No_Renewal_Case, AdmissibleDisclosedEvidenceNoCoercionOrDecisiveSecretEvidence, CustodyAdmissibilityScope).
+observe(CustodyMeritsReview, TA_No_Renewal_Case, AdmissibleDisclosedEvidenceNoCoercionOrDecisiveSecretEvidence, CustodyAdmissibilityScope).
+observe(Court, TA_No_Renewal_Case, NoticeCounselAccessibleHearingAndPublicReasons, CustodyProcedureScope).
+observe(CustodyMeritsReview, TA_No_Renewal_Case, NoticeCounselAccessibleHearingAndPublicReasons, CustodyProcedureScope).
+observe(Court, TA_No_Renewal_Case, IndependentlyAdjudicatedDefencesAndExculpatoryEvidence, CustodyDefencesScope).
+observe(CustodyMeritsReview, TA_No_Renewal_Case, IndependentlyAdjudicatedDefencesAndExculpatoryEvidence, CustodyDefencesScope).
+observe(Court, TA_No_Renewal_Case, IndividualNecessaryProportionateLeastRestrictiveCustodialSentence, CustodySentenceScope).
+observe(CustodyMeritsReview, TA_No_Renewal_Case, IndividualNecessaryProportionateLeastRestrictiveCustodialSentence, CustodySentenceScope).
+observe(Court, TA_No_Renewal_Case, NoDoubleJeopardyOrUnexpiredBar, CustodyFinalityScope).
+observe(CustodyMeritsReview, TA_No_Renewal_Case, NoDoubleJeopardyOrUnexpiredBar, CustodyFinalityScope).
+observe(Chronicle, TA_No_Renewal_Case, Court, CustodyTrialActorEligibleAtDecisionScope).
+observe(TemporalReview, TA_No_Renewal_Case, Court, CustodyTrialActorEligibleAtDecisionScope).
+observe(Chronicle, TA_No_Renewal_Case, CustodyMeritsReview, CustodyMeritsReviewerEligibleAtDecisionScope).
+observe(TemporalReview, TA_No_Renewal_Case, CustodyMeritsReview, CustodyMeritsReviewerEligibleAtDecisionScope).
+list(Merits_Order_TA_No_Renewal_Case, TA_No_Renewal_Case, Epoch_Current, RecordSequence).
+observe(Chronicle, Merits_Order_TA_No_Renewal_Case, TA_No_Renewal_Case, RecordStartScope).
+observe(Chronicle, Merits_Order_TA_No_Renewal_Case, Epoch_Current, RecordEndScope).
+observe(TemporalReview, Merits_Order_TA_No_Renewal_Case, TA_No_Renewal_Case, RecordStartScope).
+observe(TemporalReview, Merits_Order_TA_No_Renewal_Case, Epoch_Current, RecordEndScope).
+list(Severity_TA_No_Renewal_InjuryToPerson_TA_No_Renewal_Victim, TA_No_Renewal, TA_No_Renewal_Case, CustodySeverityFinding).
+list(Severity_TA_No_Renewal_InjuryToPerson_TA_No_Renewal_Victim, InjuryToPerson, Evidence_Severity_TA_No_Renewal_InjuryToPerson_TA_No_Renewal_Victim, CustodySeverityDimensionEvidence).
+list(Severity_TA_No_Renewal_InjuryToPerson_TA_No_Renewal_Victim, TA_No_Renewal_Victim, Incident_TA_No_Renewal_Case, CustodySeverityVictimIncident).
+authorized(Court, CustodySeverityAdjudicator, Severity_TA_No_Renewal_InjuryToPerson_TA_No_Renewal_Victim).
+authorized(CustodyMeritsReview, IndependentSeverityReviewer, Severity_TA_No_Renewal_InjuryToPerson_TA_No_Renewal_Victim).
+observe(Court, Severity_TA_No_Renewal_InjuryToPerson_TA_No_Renewal_Victim, TA_No_Renewal_Case, SeverityCaseScope).
+observe(CustodyMeritsReview, Severity_TA_No_Renewal_InjuryToPerson_TA_No_Renewal_Victim, TA_No_Renewal_Case, SeverityCaseScope).
+observe(Court, Severity_TA_No_Renewal_InjuryToPerson_TA_No_Renewal_Victim, TA_No_Renewal, SeveritySubjectScope).
+observe(CustodyMeritsReview, Severity_TA_No_Renewal_InjuryToPerson_TA_No_Renewal_Victim, TA_No_Renewal, SeveritySubjectScope).
+observe(Court, Severity_TA_No_Renewal_InjuryToPerson_TA_No_Renewal_Victim, Incident_TA_No_Renewal_Case, SeverityIncidentScope).
+observe(CustodyMeritsReview, Severity_TA_No_Renewal_InjuryToPerson_TA_No_Renewal_Victim, Incident_TA_No_Renewal_Case, SeverityIncidentScope).
+observe(Court, Severity_TA_No_Renewal_InjuryToPerson_TA_No_Renewal_Victim, TA_No_Renewal_Victim, SeverityVictimScope).
+observe(CustodyMeritsReview, Severity_TA_No_Renewal_InjuryToPerson_TA_No_Renewal_Victim, TA_No_Renewal_Victim, SeverityVictimScope).
+observe(Court, Severity_TA_No_Renewal_InjuryToPerson_TA_No_Renewal_Victim, InjuryToPerson, SeverityDimensionScope).
+observe(CustodyMeritsReview, Severity_TA_No_Renewal_InjuryToPerson_TA_No_Renewal_Victim, InjuryToPerson, SeverityDimensionScope).
+observe(Court, Severity_TA_No_Renewal_InjuryToPerson_TA_No_Renewal_Victim, Evidence_Severity_TA_No_Renewal_InjuryToPerson_TA_No_Renewal_Victim, SeverityEvidenceScope).
+observe(CustodyMeritsReview, Severity_TA_No_Renewal_InjuryToPerson_TA_No_Renewal_Victim, Evidence_Severity_TA_No_Renewal_InjuryToPerson_TA_No_Renewal_Victim, SeverityEvidenceScope).
+observe(Court, Severity_TA_No_Renewal_InjuryToPerson_TA_No_Renewal_Victim, AdjudicatedHarmAndMentalElementWithNoticeCounselChallengeAndReasons, SeverityProcedureScope).
+observe(CustodyMeritsReview, Severity_TA_No_Renewal_InjuryToPerson_TA_No_Renewal_Victim, AdjudicatedHarmAndMentalElementWithNoticeCounselChallengeAndReasons, SeverityProcedureScope).
+list(Placement_TA_No_Renewal_Case, TA_No_Renewal, TA_No_Renewal_Case, CustodyPlacement).
+list(Placement_TA_No_Renewal_Case, Place_TA_No_Renewal, SupportedResidence, CustodyPlaceKind).
+list(Placement_TA_No_Renewal_Case, TA_No_Renewal_Case, Window_Custody, CustodyPlacementPeriod).
+authorized(State, CustodyPlacementAuthority, Placement_TA_No_Renewal_Case).
+authorized(PlacementReview, IndependentPlacementReviewer, Placement_TA_No_Renewal_Case).
+observe(State, Placement_TA_No_Renewal_Case, TA_No_Renewal, CustodyPlacementSubjectScope).
+observe(PlacementReview, Placement_TA_No_Renewal_Case, TA_No_Renewal, CustodyPlacementSubjectScope).
+observe(State, Placement_TA_No_Renewal_Case, TA_No_Renewal_Case, CustodyPlacementCaseScope).
+observe(PlacementReview, Placement_TA_No_Renewal_Case, TA_No_Renewal_Case, CustodyPlacementCaseScope).
+observe(State, Placement_TA_No_Renewal_Case, Place_TA_No_Renewal, CustodyPlacementPlaceScope).
+observe(PlacementReview, Placement_TA_No_Renewal_Case, Place_TA_No_Renewal, CustodyPlacementPlaceScope).
+observe(State, Placement_TA_No_Renewal_Case, SupportedResidence, CustodyPlacementKindScope).
+observe(PlacementReview, Placement_TA_No_Renewal_Case, SupportedResidence, CustodyPlacementKindScope).
+observe(State, Placement_TA_No_Renewal_Case, TA_No_Renewal_Case, CustodyPlacementLeaseScope).
+observe(PlacementReview, Placement_TA_No_Renewal_Case, TA_No_Renewal_Case, CustodyPlacementLeaseScope).
+observe(State, Placement_TA_No_Renewal_Case, Window_Custody, CustodyPlacementWindowScope).
+observe(PlacementReview, Placement_TA_No_Renewal_Case, Window_Custody, CustodyPlacementWindowScope).
+observe(State, Placement_TA_No_Renewal_Case, Epoch_Current, CustodyPlacementEpochScope).
+observe(PlacementReview, Placement_TA_No_Renewal_Case, Epoch_Current, CustodyPlacementEpochScope).
+observe(State, Placement_TA_No_Renewal_Case, PositiveAccessibleAvailableConsentingPlaceAndIndividualLawfulConditions, CustodyPlacementAvailabilityScope).
+observe(PlacementReview, Placement_TA_No_Renewal_Case, PositiveAccessibleAvailableConsentingPlaceAndIndividualLawfulConditions, CustodyPlacementAvailabilityScope).
+observe(State, Placement_TA_No_Renewal_Case, NoticeCounselReasonsIndependentInspectionAndAccessibleChallenge, CustodyPlacementProcedureScope).
+observe(PlacementReview, Placement_TA_No_Renewal_Case, NoticeCounselReasonsIndependentInspectionAndAccessibleChallenge, CustodyPlacementProcedureScope).
+observe(State, Placement_TA_No_Renewal_Case, IndividuallyNecessaryLeastRestrictivePlacementAndContinuity, CustodyPlacementNecessityScope).
+observe(PlacementReview, Placement_TA_No_Renewal_Case, IndividuallyNecessaryLeastRestrictivePlacementAndContinuity, CustodyPlacementNecessityScope).
+observe(State, Placement_TA_No_Renewal_Case, NoSuitableConsentingHomeAvailableAndOrdinarySupportedResidenceSecured, CustodyPlacementAlternativeScope).
+observe(PlacementReview, Placement_TA_No_Renewal_Case, NoSuitableConsentingHomeAvailableAndOrdinarySupportedResidenceSecured, CustodyPlacementAlternativeScope).
+authorized(CustodyIntake, CustodyIntakeAuthority, TA_No_Renewal_Case).
+authorized(CustodyIntakeAudit, IndependentCustodyIntakeAuditor, TA_No_Renewal_Case).
+observe(CustodyIntake, TA_No_Renewal_Case, TA_No_Renewal, CustodyIntakeSubjectScope).
+observe(CustodyIntakeAudit, TA_No_Renewal_Case, TA_No_Renewal, CustodyIntakeSubjectScope).
+observe(CustodyIntake, TA_No_Renewal_Case, TA_No_Renewal_Case, CustodyIntakeCaseScope).
+observe(CustodyIntakeAudit, TA_No_Renewal_Case, TA_No_Renewal_Case, CustodyIntakeCaseScope).
+observe(CustodyIntake, TA_No_Renewal_Case, Epoch_Current, CustodyIntakeEpochScope).
+observe(CustodyIntakeAudit, TA_No_Renewal_Case, Epoch_Current, CustodyIntakeEpochScope).
+observe(CustodyIntake, TA_No_Renewal_Case, Window_Custody, CustodyIntakeWindowScope).
+observe(CustodyIntakeAudit, TA_No_Renewal_Case, Window_Custody, CustodyIntakeWindowScope).
+observe(CustodyIntake, TA_No_Renewal_Case, AccessiblePrimaryAndIndependentAlternateWithConfidentialCounselAndRetainedCopies, CustodyIntakeAccessScope).
+observe(CustodyIntakeAudit, TA_No_Renewal_Case, AccessiblePrimaryAndIndependentAlternateWithConfidentialCounselAndRetainedCopies, CustodyIntakeAccessScope).
+observe(CustodyIntake, TA_No_Renewal_Case, ReconciledPrimaryAlternateAndSubjectHeldFilingsBeforeEachRenewal, CustodyIntakeReconciliationScope).
+observe(CustodyIntakeAudit, TA_No_Renewal_Case, ReconciledPrimaryAlternateAndSubjectHeldFilingsBeforeEachRenewal, CustodyIntakeReconciliationScope).
+observe(CustodyIntake, TA_No_Renewal_Case, NoHolderPermissionNoRetaliationAndImmediateSuspensionOnFiling, CustodyIntakeProtectionScope).
+observe(CustodyIntakeAudit, TA_No_Renewal_Case, NoHolderPermissionNoRetaliationAndImmediateSuspensionOnFiling, CustodyIntakeProtectionScope).

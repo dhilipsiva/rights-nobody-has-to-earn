@@ -1,33 +1,15 @@
-# ── Counterfactual: one unguarded credential route ADDED ─────────────────────
-# A different class from its siblings: the constitution PLUS a line, not minus
-# one. The added rule is the one somebody might someday write — a pen route
-# that forgets ~match(·, CarriedVoid) and ~broken — and this fixture is what
-# the world looks like the day they do. It exists to justify keeping Article
-# 4's matching carried-void and recall checks, which are subsumed today and are
-# the ONLY thing standing here. If false(Tyr) below ever reads TRUE, the
-# conjuncts were removed and the justification with them.
-:expect-pins 5
-
-# The route bypasses the guards: a signer voided in a prior period gets a pen,
-# and so does a recalled one. Neither could hold one against the real file.
+# Explicit counterfactual: an appointment route omits recall and carry checks.
+# The prospective finding retains its own current-disqualification checks.
+:expect-pins 6
 ? rotten(Vex).
 # => TRUE
-
 ? permits(Review, Vex).
 # => TRUE
-
 ? broken(Boss).
 # => TRUE
-
 ? permits(Review, Boss).
 # => TRUE
-
-# ...and the void STILL fails, because the multi-sig's own kept conjuncts catch
-# what the credential rules here do not. That this pin tests the conjuncts and
-# not something else is not asserted here: the sibling case
-# counterfactual/unguarded-pen-and-no-conjuncts strips them on top of this one
-# and pins the same query TRUE. Both signers hold case-bound independence
-# findings for Tyr and cite the same recorded ground, so nothing else is
-# standing in the way.
+? agree(Credibility_Tyr_Candidate, CredibilityFindingCandidate).
+# => FALSE
 ? false(Tyr).
 # => FALSE

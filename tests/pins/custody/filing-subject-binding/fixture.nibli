@@ -1,0 +1,134 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+cite(Court, Case_FilingBinding, FilingBinding).
+observe(Chronicle, Case_FilingBinding, FilingBinding, CaseScope).
+observe(TemporalReview, Case_FilingBinding, FilingBinding, CaseScope).
+observe(Chronicle, Case_FilingBinding, Court, HolderScope).
+observe(TemporalReview, Case_FilingBinding, Court, HolderScope).
+observe(Chronicle, Case_FilingBinding, CourtJudgment, JudgmentScope).
+observe(TemporalReview, Case_FilingBinding, CourtJudgment, JudgmentScope).
+observe(Chronicle, Case_FilingBinding, Ivo, InjuryVictimScope).
+observe(TemporalReview, Case_FilingBinding, Ivo, InjuryVictimScope).
+authorized(Case_FilingBinding, ActiveCustody, Case_FilingBinding).
+observe(Chronicle, Case_FilingBinding, ActiveCustody, PowerScope).
+observe(TemporalReview, Case_FilingBinding, ActiveCustody, PowerScope).
+observe(Chronicle, Case_FilingBinding, Case_FilingBinding, CaseBindingScope).
+observe(TemporalReview, Case_FilingBinding, Case_FilingBinding, CaseBindingScope).
+limit(Case_FilingBinding, Case_FilingBinding, Window_Custody).
+observe(Chronicle, Case_FilingBinding, Window_Custody, LimitScope).
+observe(TemporalReview, Case_FilingBinding, Window_Custody, LimitScope).
+continue(Case_FilingBinding, Epoch_Current).
+observe(Chronicle, Case_FilingBinding, Epoch_Current, RenewalScope).
+observe(TemporalReview, Case_FilingBinding, Epoch_Current, RenewalScope).
+endorses(Electorate, Case_FilingBinding).
+endorses(TemporalReview, Case_FilingBinding).
+person(FilingBinding).
+injure(FilingBinding, Ivo).
+judge(Court, FilingBinding).
+at(FilingBinding, GeneralAdulthood).
+list(Case_FilingBinding, FilingBinding, Incident_Case_FilingBinding, CustodyMatter).
+list(Case_FilingBinding, PublicInjuryOffence, Evidence_Case_FilingBinding, CustodyOffenceEvidence).
+list(Case_FilingBinding, Ivo, Prosecution, CustodyParties).
+list(Case_FilingBinding, Court, CustodyMeritsReview, CustodyDecisionActors).
+judge(Court, Case_FilingBinding).
+judge(CustodyMeritsReview, Case_FilingBinding).
+authorized(Court, CustodyTrialAdjudicator, Case_FilingBinding).
+authorized(CustodyMeritsReview, IndependentCustodyMeritsReviewer, Case_FilingBinding).
+observe(Court, Case_FilingBinding, FilingBinding, CustodySubjectScope).
+observe(CustodyMeritsReview, Case_FilingBinding, FilingBinding, CustodySubjectScope).
+observe(Court, Case_FilingBinding, Incident_Case_FilingBinding, CustodyIncidentScope).
+observe(CustodyMeritsReview, Case_FilingBinding, Incident_Case_FilingBinding, CustodyIncidentScope).
+observe(Court, Case_FilingBinding, PublicInjuryOffence, CustodyOffenceScope).
+observe(CustodyMeritsReview, Case_FilingBinding, PublicInjuryOffence, CustodyOffenceScope).
+observe(Court, Case_FilingBinding, Evidence_Case_FilingBinding, CustodyEvidenceScope).
+observe(CustodyMeritsReview, Case_FilingBinding, Evidence_Case_FilingBinding, CustodyEvidenceScope).
+observe(Court, Case_FilingBinding, Ivo, CustodyVictimScope).
+observe(CustodyMeritsReview, Case_FilingBinding, Ivo, CustodyVictimScope).
+observe(Court, Case_FilingBinding, Prosecution, CustodyProsecutorScope).
+observe(CustodyMeritsReview, Case_FilingBinding, Prosecution, CustodyProsecutorScope).
+observe(Court, Case_FilingBinding, PublicLawInForceBeforeTheAct, CustodyPriorLawScope).
+observe(CustodyMeritsReview, Case_FilingBinding, PublicLawInForceBeforeTheAct, CustodyPriorLawScope).
+observe(Court, Case_FilingBinding, IdentityActCausationAndRequiredMentalElementProvedBeyondReasonableDoubt, CustodyProofScope).
+observe(CustodyMeritsReview, Case_FilingBinding, IdentityActCausationAndRequiredMentalElementProvedBeyondReasonableDoubt, CustodyProofScope).
+observe(Court, Case_FilingBinding, NoPunishmentForStatusOrProtectedConduct, CustodyConductScope).
+observe(CustodyMeritsReview, Case_FilingBinding, NoPunishmentForStatusOrProtectedConduct, CustodyConductScope).
+observe(Court, Case_FilingBinding, AdmissibleDisclosedEvidenceNoCoercionOrDecisiveSecretEvidence, CustodyAdmissibilityScope).
+observe(CustodyMeritsReview, Case_FilingBinding, AdmissibleDisclosedEvidenceNoCoercionOrDecisiveSecretEvidence, CustodyAdmissibilityScope).
+observe(Court, Case_FilingBinding, NoticeCounselAccessibleHearingAndPublicReasons, CustodyProcedureScope).
+observe(CustodyMeritsReview, Case_FilingBinding, NoticeCounselAccessibleHearingAndPublicReasons, CustodyProcedureScope).
+observe(Court, Case_FilingBinding, IndependentlyAdjudicatedDefencesAndExculpatoryEvidence, CustodyDefencesScope).
+observe(CustodyMeritsReview, Case_FilingBinding, IndependentlyAdjudicatedDefencesAndExculpatoryEvidence, CustodyDefencesScope).
+observe(Court, Case_FilingBinding, IndividualNecessaryProportionateLeastRestrictiveCustodialSentence, CustodySentenceScope).
+observe(CustodyMeritsReview, Case_FilingBinding, IndividualNecessaryProportionateLeastRestrictiveCustodialSentence, CustodySentenceScope).
+observe(Court, Case_FilingBinding, NoDoubleJeopardyOrUnexpiredBar, CustodyFinalityScope).
+observe(CustodyMeritsReview, Case_FilingBinding, NoDoubleJeopardyOrUnexpiredBar, CustodyFinalityScope).
+observe(Chronicle, Case_FilingBinding, Court, CustodyTrialActorEligibleAtDecisionScope).
+observe(TemporalReview, Case_FilingBinding, Court, CustodyTrialActorEligibleAtDecisionScope).
+observe(Chronicle, Case_FilingBinding, CustodyMeritsReview, CustodyMeritsReviewerEligibleAtDecisionScope).
+observe(TemporalReview, Case_FilingBinding, CustodyMeritsReview, CustodyMeritsReviewerEligibleAtDecisionScope).
+list(Merits_Order_Case_FilingBinding, Case_FilingBinding, Epoch_Current, RecordSequence).
+observe(Chronicle, Merits_Order_Case_FilingBinding, Case_FilingBinding, RecordStartScope).
+observe(Chronicle, Merits_Order_Case_FilingBinding, Epoch_Current, RecordEndScope).
+observe(TemporalReview, Merits_Order_Case_FilingBinding, Case_FilingBinding, RecordStartScope).
+observe(TemporalReview, Merits_Order_Case_FilingBinding, Epoch_Current, RecordEndScope).
+list(Severity_FilingBinding_InjuryToPerson_Ivo, FilingBinding, Case_FilingBinding, CustodySeverityFinding).
+list(Severity_FilingBinding_InjuryToPerson_Ivo, InjuryToPerson, Evidence_Severity_FilingBinding_InjuryToPerson_Ivo, CustodySeverityDimensionEvidence).
+list(Severity_FilingBinding_InjuryToPerson_Ivo, Ivo, Incident_Case_FilingBinding, CustodySeverityVictimIncident).
+authorized(Court, CustodySeverityAdjudicator, Severity_FilingBinding_InjuryToPerson_Ivo).
+authorized(CustodyMeritsReview, IndependentSeverityReviewer, Severity_FilingBinding_InjuryToPerson_Ivo).
+observe(Court, Severity_FilingBinding_InjuryToPerson_Ivo, Case_FilingBinding, SeverityCaseScope).
+observe(CustodyMeritsReview, Severity_FilingBinding_InjuryToPerson_Ivo, Case_FilingBinding, SeverityCaseScope).
+observe(Court, Severity_FilingBinding_InjuryToPerson_Ivo, FilingBinding, SeveritySubjectScope).
+observe(CustodyMeritsReview, Severity_FilingBinding_InjuryToPerson_Ivo, FilingBinding, SeveritySubjectScope).
+observe(Court, Severity_FilingBinding_InjuryToPerson_Ivo, Incident_Case_FilingBinding, SeverityIncidentScope).
+observe(CustodyMeritsReview, Severity_FilingBinding_InjuryToPerson_Ivo, Incident_Case_FilingBinding, SeverityIncidentScope).
+observe(Court, Severity_FilingBinding_InjuryToPerson_Ivo, Ivo, SeverityVictimScope).
+observe(CustodyMeritsReview, Severity_FilingBinding_InjuryToPerson_Ivo, Ivo, SeverityVictimScope).
+observe(Court, Severity_FilingBinding_InjuryToPerson_Ivo, InjuryToPerson, SeverityDimensionScope).
+observe(CustodyMeritsReview, Severity_FilingBinding_InjuryToPerson_Ivo, InjuryToPerson, SeverityDimensionScope).
+observe(Court, Severity_FilingBinding_InjuryToPerson_Ivo, Evidence_Severity_FilingBinding_InjuryToPerson_Ivo, SeverityEvidenceScope).
+observe(CustodyMeritsReview, Severity_FilingBinding_InjuryToPerson_Ivo, Evidence_Severity_FilingBinding_InjuryToPerson_Ivo, SeverityEvidenceScope).
+observe(Court, Severity_FilingBinding_InjuryToPerson_Ivo, AdjudicatedHarmAndMentalElementWithNoticeCounselChallengeAndReasons, SeverityProcedureScope).
+observe(CustodyMeritsReview, Severity_FilingBinding_InjuryToPerson_Ivo, AdjudicatedHarmAndMentalElementWithNoticeCounselChallengeAndReasons, SeverityProcedureScope).
+list(Placement_Case_FilingBinding, FilingBinding, Case_FilingBinding, CustodyPlacement).
+list(Placement_Case_FilingBinding, Place_FilingBinding, SupportedResidence, CustodyPlaceKind).
+list(Placement_Case_FilingBinding, Case_FilingBinding, Window_Custody, CustodyPlacementPeriod).
+authorized(State, CustodyPlacementAuthority, Placement_Case_FilingBinding).
+authorized(PlacementReview, IndependentPlacementReviewer, Placement_Case_FilingBinding).
+observe(State, Placement_Case_FilingBinding, FilingBinding, CustodyPlacementSubjectScope).
+observe(PlacementReview, Placement_Case_FilingBinding, FilingBinding, CustodyPlacementSubjectScope).
+observe(State, Placement_Case_FilingBinding, Case_FilingBinding, CustodyPlacementCaseScope).
+observe(PlacementReview, Placement_Case_FilingBinding, Case_FilingBinding, CustodyPlacementCaseScope).
+observe(State, Placement_Case_FilingBinding, Place_FilingBinding, CustodyPlacementPlaceScope).
+observe(PlacementReview, Placement_Case_FilingBinding, Place_FilingBinding, CustodyPlacementPlaceScope).
+observe(State, Placement_Case_FilingBinding, SupportedResidence, CustodyPlacementKindScope).
+observe(PlacementReview, Placement_Case_FilingBinding, SupportedResidence, CustodyPlacementKindScope).
+observe(State, Placement_Case_FilingBinding, Case_FilingBinding, CustodyPlacementLeaseScope).
+observe(PlacementReview, Placement_Case_FilingBinding, Case_FilingBinding, CustodyPlacementLeaseScope).
+observe(State, Placement_Case_FilingBinding, Window_Custody, CustodyPlacementWindowScope).
+observe(PlacementReview, Placement_Case_FilingBinding, Window_Custody, CustodyPlacementWindowScope).
+observe(State, Placement_Case_FilingBinding, Epoch_Current, CustodyPlacementEpochScope).
+observe(PlacementReview, Placement_Case_FilingBinding, Epoch_Current, CustodyPlacementEpochScope).
+observe(State, Placement_Case_FilingBinding, PositiveAccessibleAvailableConsentingPlaceAndIndividualLawfulConditions, CustodyPlacementAvailabilityScope).
+observe(PlacementReview, Placement_Case_FilingBinding, PositiveAccessibleAvailableConsentingPlaceAndIndividualLawfulConditions, CustodyPlacementAvailabilityScope).
+observe(State, Placement_Case_FilingBinding, NoticeCounselReasonsIndependentInspectionAndAccessibleChallenge, CustodyPlacementProcedureScope).
+observe(PlacementReview, Placement_Case_FilingBinding, NoticeCounselReasonsIndependentInspectionAndAccessibleChallenge, CustodyPlacementProcedureScope).
+observe(State, Placement_Case_FilingBinding, IndividuallyNecessaryLeastRestrictivePlacementAndContinuity, CustodyPlacementNecessityScope).
+observe(PlacementReview, Placement_Case_FilingBinding, IndividuallyNecessaryLeastRestrictivePlacementAndContinuity, CustodyPlacementNecessityScope).
+observe(State, Placement_Case_FilingBinding, NoSuitableConsentingHomeAvailableAndOrdinarySupportedResidenceSecured, CustodyPlacementAlternativeScope).
+observe(PlacementReview, Placement_Case_FilingBinding, NoSuitableConsentingHomeAvailableAndOrdinarySupportedResidenceSecured, CustodyPlacementAlternativeScope).
+authorized(CustodyIntake, CustodyIntakeAuthority, Case_FilingBinding).
+authorized(CustodyIntakeAudit, IndependentCustodyIntakeAuditor, Case_FilingBinding).
+observe(CustodyIntake, Case_FilingBinding, FilingBinding, CustodyIntakeSubjectScope).
+observe(CustodyIntakeAudit, Case_FilingBinding, FilingBinding, CustodyIntakeSubjectScope).
+observe(CustodyIntake, Case_FilingBinding, Case_FilingBinding, CustodyIntakeCaseScope).
+observe(CustodyIntakeAudit, Case_FilingBinding, Case_FilingBinding, CustodyIntakeCaseScope).
+observe(CustodyIntake, Case_FilingBinding, Epoch_Current, CustodyIntakeEpochScope).
+observe(CustodyIntakeAudit, Case_FilingBinding, Epoch_Current, CustodyIntakeEpochScope).
+observe(CustodyIntake, Case_FilingBinding, Window_Custody, CustodyIntakeWindowScope).
+observe(CustodyIntakeAudit, Case_FilingBinding, Window_Custody, CustodyIntakeWindowScope).
+observe(CustodyIntake, Case_FilingBinding, AccessiblePrimaryAndIndependentAlternateWithConfidentialCounselAndRetainedCopies, CustodyIntakeAccessScope).
+observe(CustodyIntakeAudit, Case_FilingBinding, AccessiblePrimaryAndIndependentAlternateWithConfidentialCounselAndRetainedCopies, CustodyIntakeAccessScope).
+observe(CustodyIntake, Case_FilingBinding, ReconciledPrimaryAlternateAndSubjectHeldFilingsBeforeEachRenewal, CustodyIntakeReconciliationScope).
+observe(CustodyIntakeAudit, Case_FilingBinding, ReconciledPrimaryAlternateAndSubjectHeldFilingsBeforeEachRenewal, CustodyIntakeReconciliationScope).
+observe(CustodyIntake, Case_FilingBinding, NoHolderPermissionNoRetaliationAndImmediateSuspensionOnFiling, CustodyIntakeProtectionScope).
+observe(CustodyIntakeAudit, Case_FilingBinding, NoHolderPermissionNoRetaliationAndImmediateSuspensionOnFiling, CustodyIntakeProtectionScope).

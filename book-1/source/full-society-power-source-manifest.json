@@ -134,19 +134,19 @@
     },
     {
       "provisional_key": "formal-appeals-expungement",
-      "title": "Appeals forgiveness fixture",
+      "title": "Case-bound credibility restoration",
       "disposition": "existing-formal-crosswalk",
-      "source_anchor": "book-1/source/constitution.nibli::all $x: forgive(Appeals, $x) & judge(Appeals, $x) -> clean($x).",
+      "source_anchor": "book-1/source/constitution.nibli::# Restoration names the exact finding and subject, a specific appellate purpose,",
       "source_path": "book-1/source/constitution.nibli",
-      "source_needle": "all $x: forgive(Appeals, $x) & judge(Appeals, $x) -> clean($x).",
-      "legal_effect_and_grain": "One exact current two-fact expungement mark; no case, purpose, writer, or adjudication lineage.",
+      "source_needle": "# Restoration names the exact finding and subject, a specific appellate purpose,",
+      "legal_effect_and_grain": "A qualified appellate decision and independent review restore the exact subject, incident and ground across record aliases. Distinct actors cannot adjudicate their own case; unrelated findings and appointment restrictions remain.",
       "source_family": "current-formal-constitution"
     },
     {
       "provisional_key": "formal-appeals-relief",
       "title": "Per-case appellate relief fixture",
       "disposition": "existing-formal-crosswalk",
-      "source_anchor": "book-1/source/constitution.nibli::all $x: clear($x) & judge(Appeals, $x) -> permits(Appeals, $x).",
+      "source_anchor": "book-1/source/constitution.nibli::all $case: all $incident: all $subject: clean($case, CustodyConfinementBar) & list($case, $subject, $incident, CustodyMatter) -> permits(Appeals, $subject, $case).",
       "source_path": "book-1/source/constitution.nibli",
       "source_needle": "all $x: clear($x) & judge(Appeals, $x) -> permits(Appeals, $x).",
       "legal_effect_and_grain": "One exact current relief conjunction; generic judgment reuse remains a disclosed limit.",
@@ -164,12 +164,12 @@
     },
     {
       "provisional_key": "formal-amendment-label-result",
-      "title": "Current amendment label verdict fixture",
+      "title": "Retired parallel amendment-label mechanism",
       "disposition": "existing-formal-crosswalk",
-      "source_anchor": "book-1/source/constitution.nibli::all $m: suggest(Assembly, $m) & ratifies(Electorate, $m) & ~false($m) -> become($m, Law).",
+      "source_anchor": "book-1/source/constitution.nibli::# ─── Article 9: Amendment status and personal findings",
       "source_path": "book-1/source/constitution.nibli",
-      "source_needle": "all $m: suggest(Assembly, $m) & ratifies(Electorate, $m) & ~false($m) -> become($m, Law).",
-      "legal_effect_and_grain": "A current label verdict over asserted proposal and outcome facts; it neither authenticates nor enacts a source transition.",
+      "source_needle": "# ─── Article 9: Amendment status and personal findings",
+      "legal_effect_and_grain": "No personal credibility or law-label consequence survives from the retained docket, target and tally entries. Exact-change amendment authority remains in its separately defined candidate-bound process.",
       "source_family": "current-formal-constitution"
     },
     {

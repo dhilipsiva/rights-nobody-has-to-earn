@@ -20,7 +20,7 @@
 ? free(Rex).
 # => FALSE
 
-? show(Rex, Review).
+? show(Rex, Disclosure_Rex_Review, Review).
 # => TRUE
 
 ? prisoner(Sly).

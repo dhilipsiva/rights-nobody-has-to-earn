@@ -71,19 +71,17 @@ of affected cases and recurrence checking have separate duties. A recorded
 remedy does not establish restoration, and a check over a supplied horizon
 does not prove that no failure occurred outside it or will occur later.
 
-## Shelter that follows from holding
+## What holding requires
 
-The custody cases use the shelter conclusion in a different way. For Adam and
-Kel, shelter follows from confinement without a recipient-side receipt. The
-conclusion states a condition attached to holding them. It is not evidence
-that a roof was built, allocated or occupied.
+Adam and Kel have qualified custody cases and reviewed named placements.
+Neither case contains a shelter receipt. Their sentence authority therefore
+establishes no delivered shelter. A named available place is necessary to
+authorise confinement; it is not evidence that a roof was occupied.
 
-Recorded speech likewise follows through the relevant holding rules. Someone
-physically held by public power is owed a voice whether the hold follows a
-conviction, a protective order or an unlawful act. Permission to hold someone
-is not evidence that the holding occurred. Where physical holding is positively
-established, its required humane conditions remain distinct from proof that
-those conditions were provided.
+Someone physically held by public power is owed a voice whether the hold follows
+a conviction, a protective order or an unlawful act. Permission to hold someone
+does not establish that the holding occurred. A positive holding report creates
+protection duties, without manufacturing a record of speech or delivery.
 
 An incomplete or disputed order cannot make humane treatment wait. A credible
 independent report of holding creates immediate duties of care, voice and
@@ -100,11 +98,12 @@ entry is no ground for confinement either. The relationship rules require
 positive evidence for the relationships they recognise and refuse the tested
 rules that would make missing family or parentage a ground for imprisonment.
 
-The supplied cast contains the confinement route to shelter and recorded
-speech, but no recipient-side delivery receipts. When a custody conclusion
-ends in these cases, its shelter conclusion can end with it. The floor debt
-remains. That is a change in what the record concludes, not evidence of an
-eviction or proof that shelter continues after release.
+The supplied cast contains no recipient-side delivery receipts. Ending custody
+does not change that evidentiary position or cancel the floor debt. A separate
+test supplies an independently witnessed shelter receipt for a person reported
+physically held without a lawful order. Shelter then derives through the same
+receipt rule available outside custody. Neither that receipt nor the person's
+right to care authorises the holding.
 
 A placement alarm addresses where the design puts someone it confines. It is
 not a general monitor of whether every person owed housing received it.

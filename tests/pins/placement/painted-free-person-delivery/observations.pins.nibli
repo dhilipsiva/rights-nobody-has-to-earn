@@ -71,126 +71,126 @@
 ? put(State, Free_NotSevere_NoFamily_NoHome, LowSec).
 # => TRUE
 
-# The constitutional placement alarm remains silent in this harmful candidate.
+# This reported custody has no authorized placement and triggers review.
 ? err(Free_NotSevere_NoFamily_NoHome, Placement).
-# => FALSE
+# => TRUE
 
 # A positive reviewed placement report makes the alarm-silence probe non-vacuous.
 ? put(State, Free_NotSevere_NoFamily_Home, LowSec).
 # => TRUE
 
-# The constitutional placement alarm remains silent in this harmful candidate.
+# This reported custody has no authorized placement and triggers review.
 ? err(Free_NotSevere_NoFamily_Home, Placement).
-# => FALSE
+# => TRUE
 
 # A positive reviewed placement report makes the alarm-silence probe non-vacuous.
 ? put(State, Free_NotSevere_Family_NoHome, LowSec).
 # => TRUE
 
-# The constitutional placement alarm remains silent in this harmful candidate.
+# This reported custody has no authorized placement and triggers review.
 ? err(Free_NotSevere_Family_NoHome, Placement).
-# => FALSE
+# => TRUE
 
 # A positive reviewed placement report makes the alarm-silence probe non-vacuous.
 ? put(State, Free_NotSevere_Family_Home, LowSec).
 # => TRUE
 
-# The constitutional placement alarm remains silent in this harmful candidate.
+# This reported custody has no authorized placement and triggers review.
 ? err(Free_NotSevere_Family_Home, Placement).
-# => FALSE
+# => TRUE
 
 # A positive reviewed placement report makes the alarm-silence probe non-vacuous.
 ? put(State, Free_Severe_NoFamily_NoHome, LowSec).
 # => TRUE
 
-# The constitutional placement alarm remains silent in this harmful candidate.
+# This reported custody has no authorized placement and triggers review.
 ? err(Free_Severe_NoFamily_NoHome, Placement).
-# => FALSE
+# => TRUE
 
 # A positive reviewed placement report makes the alarm-silence probe non-vacuous.
 ? put(State, Free_Severe_NoFamily_Home, LowSec).
 # => TRUE
 
-# The constitutional placement alarm remains silent in this harmful candidate.
+# This reported custody has no authorized placement and triggers review.
 ? err(Free_Severe_NoFamily_Home, Placement).
-# => FALSE
+# => TRUE
 
 # A positive reviewed placement report makes the alarm-silence probe non-vacuous.
 ? put(State, Free_Severe_Family_NoHome, LowSec).
 # => TRUE
 
-# The constitutional placement alarm remains silent in this harmful candidate.
+# This reported custody has no authorized placement and triggers review.
 ? err(Free_Severe_Family_NoHome, Placement).
-# => FALSE
+# => TRUE
 
 # A positive reviewed placement report makes the alarm-silence probe non-vacuous.
 ? put(State, Free_Severe_Family_Home, LowSec).
 # => TRUE
 
-# The constitutional placement alarm remains silent in this harmful candidate.
+# This reported custody has no authorized placement and triggers review.
 ? err(Free_Severe_Family_Home, Placement).
-# => FALSE
+# => TRUE
 
 # A positive reviewed placement report makes the alarm-silence probe non-vacuous.
 ? put(State, Registered_NotSevere_NoFamily_NoHome, LowSec).
 # => TRUE
 
-# The constitutional placement alarm remains silent in this harmful candidate.
+# This reported custody has no authorized placement and triggers review.
 ? err(Registered_NotSevere_NoFamily_NoHome, Placement).
-# => FALSE
+# => TRUE
 
 # A positive reviewed placement report makes the alarm-silence probe non-vacuous.
 ? put(State, Registered_NotSevere_NoFamily_Home, LowSec).
 # => TRUE
 
-# The constitutional placement alarm remains silent in this harmful candidate.
+# This reported custody has no authorized placement and triggers review.
 ? err(Registered_NotSevere_NoFamily_Home, Placement).
-# => FALSE
+# => TRUE
 
 # A positive reviewed placement report makes the alarm-silence probe non-vacuous.
 ? put(State, Registered_NotSevere_Family_NoHome, LowSec).
 # => TRUE
 
-# The constitutional placement alarm remains silent in this harmful candidate.
+# This reported custody has no authorized placement and triggers review.
 ? err(Registered_NotSevere_Family_NoHome, Placement).
-# => FALSE
+# => TRUE
 
 # A positive reviewed placement report makes the alarm-silence probe non-vacuous.
 ? put(State, Registered_NotSevere_Family_Home, LowSec).
 # => TRUE
 
-# The constitutional placement alarm remains silent in this harmful candidate.
+# This reported custody has no authorized placement and triggers review.
 ? err(Registered_NotSevere_Family_Home, Placement).
-# => FALSE
+# => TRUE
 
 # A positive reviewed placement report makes the alarm-silence probe non-vacuous.
 ? put(State, Registered_Severe_NoFamily_NoHome, LowSec).
 # => TRUE
 
-# The constitutional placement alarm remains silent in this harmful candidate.
+# This reported custody has no authorized placement and triggers review.
 ? err(Registered_Severe_NoFamily_NoHome, Placement).
-# => FALSE
+# => TRUE
 
 # A positive reviewed placement report makes the alarm-silence probe non-vacuous.
 ? put(State, Registered_Severe_NoFamily_Home, LowSec).
 # => TRUE
 
-# The constitutional placement alarm remains silent in this harmful candidate.
+# This reported custody has no authorized placement and triggers review.
 ? err(Registered_Severe_NoFamily_Home, Placement).
-# => FALSE
+# => TRUE
 
 # A positive reviewed placement report makes the alarm-silence probe non-vacuous.
 ? put(State, Registered_Severe_Family_NoHome, LowSec).
 # => TRUE
 
-# The constitutional placement alarm remains silent in this harmful candidate.
+# This reported custody has no authorized placement and triggers review.
 ? err(Registered_Severe_Family_NoHome, Placement).
-# => FALSE
+# => TRUE
 
 # A positive reviewed placement report makes the alarm-silence probe non-vacuous.
 ? put(State, Registered_Severe_Family_Home, LowSec).
 # => TRUE
 
-# The constitutional placement alarm remains silent in this harmful candidate.
+# This reported custody has no authorized placement and triggers review.
 ? err(Registered_Severe_Family_Home, Placement).
-# => FALSE
+# => TRUE

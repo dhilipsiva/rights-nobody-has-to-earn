@@ -1,4 +1,5 @@
 # SPDX-License-Identifier: MIT OR Apache-2.0
+# Custody and physical holding establish protection duties, not shelter or speech actuality.
 :expect-pins 13
 # Generated placement-exhaustiveness matrix pins.
 # These ephemeral pins are outside chapter pin-count reconciliation.
@@ -42,7 +43,7 @@
 
 # Housing actuality matches the reviewed row.
 ? dwell(Confined_Severe_Family_NoHome).
-# => TRUE
+# => FALSE
 
 # Every discovered destination is queried, including every opposite outcome.
 ? building(HighSec, Confined_Severe_Family_NoHome).

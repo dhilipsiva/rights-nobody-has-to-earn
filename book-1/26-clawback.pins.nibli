@@ -25,7 +25,7 @@
 # is untouched. Pin a FALSE only where the KB could have said TRUE, and say in
 # the comment what would flip it.
 
-:expect-pins 39
+:expect-pins 41
 
 # "Ask the record whether Bela is recognised and the answer is no ... Beside
 # that refusal the record holds one more conclusion: a loss." Both halves of the
@@ -126,16 +126,8 @@
 ? lose(Points, Mira).
 # => FALSE
 
-# ── The epoch carry, in the chapter whose subject it serves ──────────────────
-# Vex is the one person in the cast who is voided, stripped of the pen, still
-# possessed of standing, and clawed back — and this file, the clawback
-# chapter's own, never touched him. The carry is why: rotten is the mark
-# written forward from a prior period, it re-derives the void THIS period, and
-# that is the only reason the clawback keeps firing on a person whose voiding
-# nobody in this epoch performed. Five verdicts, and between them they hold
-# apart three things this book keeps having to hold apart: voided is not
-# de-personed, losing the pen is not losing standing, and a prior period's
-# judgment costs you here and now.
+# Vex's prior case supplies the personal finding and loss. The carried
+# credential restriction independently blocks the appointment. Standing remains.
 ? rotten(Vex).
 # => TRUE
 
@@ -153,20 +145,53 @@
 ? authority(Vex).
 # => TRUE
 
-# ── [v0.9 2026-08-02] FORGIVENESS, MEASURED. Ground facts persist ────────────
-# The expungement ruling: forgive names its body, and alone it does nothing —
-# the one-write spring the clear guard closed is closed here from birth. With
-# the body's judgment beside it, the mark comes clean: the void stops
-# re-deriving, the loss stops, the doors reopen — and the pen stays lost,
-# because the credential rules read the mark itself, which remains on the
-# record. Forgiven, not erased. The retroactive consequence is pinned rather
-# than discovered: Vex's recorded examination of Tyr starts paying.
+# Restoring the particular case ends its personal consequence. Generic flags
+# do nothing; the qualified appellate record leaves the appointment restricted.
+# The recorded examination becomes eligible for recognition again.
 forgive(Appeals, Vex).
 
 ? false(Vex).
 # => TRUE
 
 judge(Appeals, Vex).
+
+# These generic entries restore no finding.
+? clean(Vex).
+# => FALSE
+? false(Vex).
+# => TRUE
+
+# The qualified restoration names the existing prior case.
+list(Restore_Vex_Recognition, Vex, Credibility_Vex_Finding, CredibilityRestoration).
+list(Restore_Vex_Recognition, RestoreCredibilityFinding, Evidence_Restore_Vex_Recognition, CredibilityAppealPurposeEvidence).
+judge(Appeals, Restore_Vex_Recognition).
+judge(Tribunal, Restore_Vex_Recognition).
+authorized(Appeals, CredibilityAppellateDisposition, Restore_Vex_Recognition).
+authorized(Tribunal, IndependentCredibilityAppealReview, Restore_Vex_Recognition).
+observe(Appeals, Restore_Vex_Recognition, Vex, CredibilityAppealSubjectScope).
+observe(Appeals, Restore_Vex_Recognition, Credibility_Vex_Finding, CredibilityAppealFindingScope).
+observe(Appeals, Restore_Vex_Recognition, RestoreCredibilityFinding, CredibilityAppealPurposeScope).
+observe(Appeals, Restore_Vex_Recognition, Evidence_Restore_Vex_Recognition, CredibilityAppealEvidenceScope).
+observe(Appeals, Restore_Vex_Recognition, NoticeEvidenceAccessHearingAndReasons, CredibilityAppealProcedureScope).
+observe(Tribunal, Restore_Vex_Recognition, Vex, CredibilityAppealSubjectScope).
+observe(Tribunal, Restore_Vex_Recognition, Credibility_Vex_Finding, CredibilityAppealFindingScope).
+observe(Tribunal, Restore_Vex_Recognition, RestoreCredibilityFinding, CredibilityAppealPurposeScope).
+observe(Tribunal, Restore_Vex_Recognition, Evidence_Restore_Vex_Recognition, CredibilityAppealEvidenceScope).
+observe(Tribunal, Restore_Vex_Recognition, NoticeEvidenceAccessHearingAndReasons, CredibilityAppealProcedureScope).
+observe(Chronicle, Restore_Vex_Recognition, Appeals, CredibilityAppealActorEligibleAtDecisionScope).
+observe(TemporalReview, Restore_Vex_Recognition, Appeals, CredibilityAppealActorEligibleAtDecisionScope).
+observe(Chronicle, Restore_Vex_Recognition, Tribunal, CredibilityAppealReviewActorEligibleAtDecisionScope).
+observe(TemporalReview, Restore_Vex_Recognition, Tribunal, CredibilityAppealReviewActorEligibleAtDecisionScope).
+list(Order_Before_Restore_Vex_Recognition, Credibility_Vex_Finding, Restore_Vex_Recognition, RecordSequence).
+observe(Chronicle, Order_Before_Restore_Vex_Recognition, Credibility_Vex_Finding, RecordStartScope).
+observe(Chronicle, Order_Before_Restore_Vex_Recognition, Restore_Vex_Recognition, RecordEndScope).
+observe(TemporalReview, Order_Before_Restore_Vex_Recognition, Credibility_Vex_Finding, RecordStartScope).
+observe(TemporalReview, Order_Before_Restore_Vex_Recognition, Restore_Vex_Recognition, RecordEndScope).
+list(Order_After_Restore_Vex_Recognition, Restore_Vex_Recognition, Epoch_Current, RecordSequence).
+observe(Chronicle, Order_After_Restore_Vex_Recognition, Restore_Vex_Recognition, RecordStartScope).
+observe(Chronicle, Order_After_Restore_Vex_Recognition, Epoch_Current, RecordEndScope).
+observe(TemporalReview, Order_After_Restore_Vex_Recognition, Restore_Vex_Recognition, RecordStartScope).
+observe(TemporalReview, Order_After_Restore_Vex_Recognition, Epoch_Current, RecordEndScope).
 
 ? clean(Vex).
 # => TRUE

@@ -1,0 +1,197 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+# Positive custody-condition evidence; routine review and complaint access.
+:expect-pins 41
+? err(Adam, Isolation).
+# => FALSE
+? err(Hano, Isolation).
+# => FALSE
+? err(Lalo, Isolation).
+# => FALSE
+? err(Nando, Isolation).
+# => FALSE
+? err(Don, Isolation).
+# => FALSE
+? err(Kel, Isolation).
+# => FALSE
+? err(Ruk, Isolation).
+# => FALSE
+? meets(Hano).
+# => FALSE
+? obliged(Review, Hano).
+# => TRUE
+? obliged(Review, Bela).
+# => FALSE
+challenge(Bela, CustodyConditions, Review).
+? obliged(Review, Bela).
+# => TRUE
+? obliged(Review, InvestigateCustodyConditions, Bela).
+# => TRUE
+? err(Bela, Isolation).
+# => FALSE
+? prisoner(ConditionSubject).
+# => FALSE
+? person(ConditionSubject).
+# => FALSE
+list(Isolation_Report, ConditionSubject, Holding_Isolation_Report, CustodyIsolationFinding).
+list(Isolation_Report, HoldingActor, Place_Isolation_Report, CustodyConditionLocation).
+list(Isolation_Report, Period_Isolation_Report, Evidence_Isolation_Report, CustodyConditionEvidenceWindow).
+authorized(ConditionWitness, CustodyConditionWitness, Isolation_Report).
+authorized(ConditionReviewer, IndependentCustodyConditionReviewer, Isolation_Report).
+observe(ConditionWitness, Isolation_Report, ConditionSubject, CustodyConditionSubjectScope).
+observe(ConditionReviewer, Isolation_Report, ConditionSubject, CustodyConditionSubjectScope).
+observe(ConditionWitness, Isolation_Report, Holding_Isolation_Report, CustodyConditionHoldingScope).
+observe(ConditionReviewer, Isolation_Report, Holding_Isolation_Report, CustodyConditionHoldingScope).
+observe(ConditionWitness, Isolation_Report, HoldingActor, CustodyConditionHolderScope).
+observe(ConditionReviewer, Isolation_Report, HoldingActor, CustodyConditionHolderScope).
+observe(ConditionWitness, Isolation_Report, Place_Isolation_Report, CustodyConditionPlaceScope).
+observe(ConditionReviewer, Isolation_Report, Place_Isolation_Report, CustodyConditionPlaceScope).
+observe(ConditionWitness, Isolation_Report, Period_Isolation_Report, CustodyConditionPeriodScope).
+observe(ConditionReviewer, Isolation_Report, Period_Isolation_Report, CustodyConditionPeriodScope).
+observe(ConditionWitness, Isolation_Report, Evidence_Isolation_Report, CustodyConditionEvidenceScope).
+observe(ConditionReviewer, Isolation_Report, Evidence_Isolation_Report, CustodyConditionEvidenceScope).
+observe(ConditionWitness, Isolation_Report, HumanPersonPhysicallyHeldAndDeniedAccessibleHumanContact, CustodyIsolationConditionScope).
+observe(ConditionReviewer, Isolation_Report, HumanPersonPhysicallyHeldAndDeniedAccessibleHumanContact, CustodyIsolationConditionScope).
+observe(ConditionWitness, Isolation_Report, PositiveEvidenceNoticeReasonsAndIndependentContest, CustodyConditionProcedureScope).
+? responsible(Isolation_Report, CustodyIsolationFinding).
+# => FALSE
+? err(ConditionSubject, Isolation).
+# => FALSE
+observe(ConditionReviewer, Isolation_Report, PositiveEvidenceNoticeReasonsAndIndependentContest, CustodyConditionProcedureScope).
+? responsible(Isolation_Report, CustodyIsolationFinding).
+# => TRUE
+? err(ConditionSubject, Isolation).
+# => TRUE
+? person(ConditionSubject).
+# => TRUE
+? owe(State, Meets, ConditionSubject).
+# => TRUE
+? obliged(Review, ConditionSubject).
+# => TRUE
+? prisoner(ConditionSubject).
+# => FALSE
+receives(ConditionSubject, LaterCompany, Companion).
+authorized(CompanyWitness, DeliveryWitness, ConditionSubject).
+observe(CompanyWitness, LaterCompany, ConditionSubject, CompanyScope).
+? meets(ConditionSubject).
+# => TRUE
+observe(UncredentialedWriter, Isolation_Report, UnrelatedPeriod, CustodyConditionPeriodScope).
+? err(ConditionSubject, Isolation).
+# => TRUE
+list(Isolation_Fused, FusedConditionSubject, Holding_Isolation_Fused, CustodyIsolationFinding).
+list(Isolation_Fused, HoldingActor, Place_Isolation_Fused, CustodyConditionLocation).
+list(Isolation_Fused, Period_Isolation_Fused, Evidence_Isolation_Fused, CustodyConditionEvidenceWindow).
+authorized(OneConditionActor, CustodyConditionWitness, Isolation_Fused).
+authorized(OneConditionActor, IndependentCustodyConditionReviewer, Isolation_Fused).
+observe(OneConditionActor, Isolation_Fused, FusedConditionSubject, CustodyConditionSubjectScope).
+observe(OneConditionActor, Isolation_Fused, FusedConditionSubject, CustodyConditionSubjectScope).
+observe(OneConditionActor, Isolation_Fused, Holding_Isolation_Fused, CustodyConditionHoldingScope).
+observe(OneConditionActor, Isolation_Fused, Holding_Isolation_Fused, CustodyConditionHoldingScope).
+observe(OneConditionActor, Isolation_Fused, HoldingActor, CustodyConditionHolderScope).
+observe(OneConditionActor, Isolation_Fused, HoldingActor, CustodyConditionHolderScope).
+observe(OneConditionActor, Isolation_Fused, Place_Isolation_Fused, CustodyConditionPlaceScope).
+observe(OneConditionActor, Isolation_Fused, Place_Isolation_Fused, CustodyConditionPlaceScope).
+observe(OneConditionActor, Isolation_Fused, Period_Isolation_Fused, CustodyConditionPeriodScope).
+observe(OneConditionActor, Isolation_Fused, Period_Isolation_Fused, CustodyConditionPeriodScope).
+observe(OneConditionActor, Isolation_Fused, Evidence_Isolation_Fused, CustodyConditionEvidenceScope).
+observe(OneConditionActor, Isolation_Fused, Evidence_Isolation_Fused, CustodyConditionEvidenceScope).
+observe(OneConditionActor, Isolation_Fused, HumanPersonPhysicallyHeldAndDeniedAccessibleHumanContact, CustodyIsolationConditionScope).
+observe(OneConditionActor, Isolation_Fused, HumanPersonPhysicallyHeldAndDeniedAccessibleHumanContact, CustodyIsolationConditionScope).
+observe(OneConditionActor, Isolation_Fused, PositiveEvidenceNoticeReasonsAndIndependentContest, CustodyConditionProcedureScope).
+observe(OneConditionActor, Isolation_Fused, PositiveEvidenceNoticeReasonsAndIndependentContest, CustodyConditionProcedureScope).
+? responsible(Isolation_Fused, CustodyIsolationFinding).
+# => FALSE
+? err(FusedConditionSubject, Isolation).
+# => FALSE
+list(Isolation_Holder, HeldConditionSubject, Holding_Isolation_Holder, CustodyIsolationFinding).
+list(Isolation_Holder, HoldingActor, Place_Isolation_Holder, CustodyConditionLocation).
+list(Isolation_Holder, Period_Isolation_Holder, Evidence_Isolation_Holder, CustodyConditionEvidenceWindow).
+authorized(HoldingActor, CustodyConditionWitness, Isolation_Holder).
+authorized(ConditionReviewer, IndependentCustodyConditionReviewer, Isolation_Holder).
+observe(HoldingActor, Isolation_Holder, HeldConditionSubject, CustodyConditionSubjectScope).
+observe(ConditionReviewer, Isolation_Holder, HeldConditionSubject, CustodyConditionSubjectScope).
+observe(HoldingActor, Isolation_Holder, Holding_Isolation_Holder, CustodyConditionHoldingScope).
+observe(ConditionReviewer, Isolation_Holder, Holding_Isolation_Holder, CustodyConditionHoldingScope).
+observe(HoldingActor, Isolation_Holder, HoldingActor, CustodyConditionHolderScope).
+observe(ConditionReviewer, Isolation_Holder, HoldingActor, CustodyConditionHolderScope).
+observe(HoldingActor, Isolation_Holder, Place_Isolation_Holder, CustodyConditionPlaceScope).
+observe(ConditionReviewer, Isolation_Holder, Place_Isolation_Holder, CustodyConditionPlaceScope).
+observe(HoldingActor, Isolation_Holder, Period_Isolation_Holder, CustodyConditionPeriodScope).
+observe(ConditionReviewer, Isolation_Holder, Period_Isolation_Holder, CustodyConditionPeriodScope).
+observe(HoldingActor, Isolation_Holder, Evidence_Isolation_Holder, CustodyConditionEvidenceScope).
+observe(ConditionReviewer, Isolation_Holder, Evidence_Isolation_Holder, CustodyConditionEvidenceScope).
+observe(HoldingActor, Isolation_Holder, HumanPersonPhysicallyHeldAndDeniedAccessibleHumanContact, CustodyIsolationConditionScope).
+observe(ConditionReviewer, Isolation_Holder, HumanPersonPhysicallyHeldAndDeniedAccessibleHumanContact, CustodyIsolationConditionScope).
+observe(HoldingActor, Isolation_Holder, PositiveEvidenceNoticeReasonsAndIndependentContest, CustodyConditionProcedureScope).
+observe(ConditionReviewer, Isolation_Holder, PositiveEvidenceNoticeReasonsAndIndependentContest, CustodyConditionProcedureScope).
+? responsible(Isolation_Holder, CustodyIsolationFinding).
+# => FALSE
+? err(HeldConditionSubject, Isolation).
+# => FALSE
+list(Isolation_Party, PartyConditionSubject, Holding_Isolation_Party, CustodyIsolationFinding).
+list(Isolation_Party, HoldingActor, Place_Isolation_Party, CustodyConditionLocation).
+list(Isolation_Party, Period_Isolation_Party, Evidence_Isolation_Party, CustodyConditionEvidenceWindow).
+authorized(ConditionWitness, CustodyConditionWitness, Isolation_Party).
+authorized(PartyConditionSubject, IndependentCustodyConditionReviewer, Isolation_Party).
+observe(ConditionWitness, Isolation_Party, PartyConditionSubject, CustodyConditionSubjectScope).
+observe(PartyConditionSubject, Isolation_Party, PartyConditionSubject, CustodyConditionSubjectScope).
+observe(ConditionWitness, Isolation_Party, Holding_Isolation_Party, CustodyConditionHoldingScope).
+observe(PartyConditionSubject, Isolation_Party, Holding_Isolation_Party, CustodyConditionHoldingScope).
+observe(ConditionWitness, Isolation_Party, HoldingActor, CustodyConditionHolderScope).
+observe(PartyConditionSubject, Isolation_Party, HoldingActor, CustodyConditionHolderScope).
+observe(ConditionWitness, Isolation_Party, Place_Isolation_Party, CustodyConditionPlaceScope).
+observe(PartyConditionSubject, Isolation_Party, Place_Isolation_Party, CustodyConditionPlaceScope).
+observe(ConditionWitness, Isolation_Party, Period_Isolation_Party, CustodyConditionPeriodScope).
+observe(PartyConditionSubject, Isolation_Party, Period_Isolation_Party, CustodyConditionPeriodScope).
+observe(ConditionWitness, Isolation_Party, Evidence_Isolation_Party, CustodyConditionEvidenceScope).
+observe(PartyConditionSubject, Isolation_Party, Evidence_Isolation_Party, CustodyConditionEvidenceScope).
+observe(ConditionWitness, Isolation_Party, HumanPersonPhysicallyHeldAndDeniedAccessibleHumanContact, CustodyIsolationConditionScope).
+observe(PartyConditionSubject, Isolation_Party, HumanPersonPhysicallyHeldAndDeniedAccessibleHumanContact, CustodyIsolationConditionScope).
+observe(ConditionWitness, Isolation_Party, PositiveEvidenceNoticeReasonsAndIndependentContest, CustodyConditionProcedureScope).
+observe(PartyConditionSubject, Isolation_Party, PositiveEvidenceNoticeReasonsAndIndependentContest, CustodyConditionProcedureScope).
+? responsible(Isolation_Party, CustodyIsolationFinding).
+# => FALSE
+? err(PartyConditionSubject, Isolation).
+# => FALSE
+list(Isolation_Mismatch, MismatchedConditionSubject, Holding_Isolation_Mismatch, CustodyIsolationFinding).
+list(Isolation_Mismatch, HoldingActor, Place_Isolation_Mismatch, CustodyConditionLocation).
+list(Isolation_Mismatch, Period_Isolation_Mismatch, Evidence_Isolation_Mismatch, CustodyConditionEvidenceWindow).
+authorized(ConditionWitness, CustodyConditionWitness, Isolation_Mismatch).
+authorized(ConditionReviewer, IndependentCustodyConditionReviewer, Isolation_Mismatch).
+observe(ConditionWitness, Isolation_Mismatch, MismatchedConditionSubject, CustodyConditionSubjectScope).
+observe(ConditionReviewer, Isolation_Mismatch, MismatchedConditionSubject, CustodyConditionSubjectScope).
+observe(ConditionWitness, Isolation_Mismatch, Holding_Isolation_Mismatch, CustodyConditionHoldingScope).
+observe(ConditionReviewer, Isolation_Mismatch, Holding_Isolation_Mismatch, CustodyConditionHoldingScope).
+observe(ConditionWitness, Isolation_Mismatch, HoldingActor, CustodyConditionHolderScope).
+observe(ConditionReviewer, Isolation_Mismatch, HoldingActor, CustodyConditionHolderScope).
+observe(ConditionWitness, Isolation_Mismatch, Place_Isolation_Mismatch, CustodyConditionPlaceScope).
+observe(ConditionReviewer, Isolation_Mismatch, Place_Isolation_Mismatch, CustodyConditionPlaceScope).
+observe(ConditionWitness, Isolation_Mismatch, Period_Isolation_Mismatch, CustodyConditionPeriodScope).
+observe(ConditionReviewer, Isolation_Mismatch, UnrelatedPeriod, CustodyConditionPeriodScope).
+observe(ConditionWitness, Isolation_Mismatch, Evidence_Isolation_Mismatch, CustodyConditionEvidenceScope).
+observe(ConditionReviewer, Isolation_Mismatch, Evidence_Isolation_Mismatch, CustodyConditionEvidenceScope).
+observe(ConditionWitness, Isolation_Mismatch, HumanPersonPhysicallyHeldAndDeniedAccessibleHumanContact, CustodyIsolationConditionScope).
+observe(ConditionReviewer, Isolation_Mismatch, HumanPersonPhysicallyHeldAndDeniedAccessibleHumanContact, CustodyIsolationConditionScope).
+observe(ConditionWitness, Isolation_Mismatch, PositiveEvidenceNoticeReasonsAndIndependentContest, CustodyConditionProcedureScope).
+observe(ConditionReviewer, Isolation_Mismatch, PositiveEvidenceNoticeReasonsAndIndependentContest, CustodyConditionProcedureScope).
+? err(MismatchedConditionSubject, Isolation).
+# => FALSE
+observe(ConditionReviewer, Isolation_Mismatch, Period_Isolation_Mismatch, CustodyConditionPeriodScope).
+? collide(Isolation_Mismatch, CustodyConditionBinding).
+# => TRUE
+? err(MismatchedConditionSubject, Isolation).
+# => FALSE
+? person(MismatchedConditionSubject).
+# => TRUE
+? owe(State, Meets, MismatchedConditionSubject).
+# => TRUE
+list(Isolation_Mismatch, AnotherSubject, Holding_Isolation_Mismatch, CustodyIsolationFinding).
+? responsible(Isolation_Mismatch, CustodyIsolationFinding).
+# => FALSE
+? err(MismatchedConditionSubject, Isolation).
+# => FALSE
+? err(AnotherSubject, Isolation).
+# => FALSE
+:refuse reasoning /declared derived-only/
+responsible(ForgedIsolation, CustodyIsolationFinding).
+:refuse reasoning /declared derived-only/
+err(Bela, Isolation).

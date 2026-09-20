@@ -524,7 +524,7 @@ pub(super) fn scenarios(cards: &[Card]) -> Vec<super::cases::Scenario> {
                 expected,
             )
         };
-        let steps = completion(parent, &parent_values, true)
+        let mut steps = completion(parent, &parent_values, true)
             + &completion(child, &child_values, true)
             + &records::fixture(cards, finding, &finding_values)
             + &completion(parent, &parent_values, false)
@@ -535,6 +535,16 @@ pub(super) fn scenarios(cards: &[Card]) -> Vec<super::cases::Scenario> {
                 true,
             )
             + &query(&records::ground("prisoner($subject)", &child_values), false);
+        // Withdrawing authority cannot discharge the duties of the recorded
+        // instrument. Test both the invalidated parent and its dependent act.
+        for (instrument, values) in [(parent, &parent_values), (child, &child_values)] {
+            for duty in &instrument.duties {
+                steps += &query(
+                    &records::ground(&format!("obliged($operator, {duty}, $record)"), values),
+                    true,
+                );
+            }
+        }
         result.push(Scenario::new(
             format!("review/{parent_id}-conflict-withdraws-{child_id}"),
             records::fixture(cards, child, &child_values),

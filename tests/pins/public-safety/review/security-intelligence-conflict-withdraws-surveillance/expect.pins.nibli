@@ -1,5 +1,5 @@
 # SPDX-License-Identifier: MIT OR Apache-2.0
-:expect-pins 7
+:expect-pins 8
 ? complete(PSMandateConflictsecurityintelligenceRecord, PSSecurityIntelligenceMandate, PSMandateConflictsecurityintelligenceSubject).
 # => TRUE
 ? complete(PSMandateConflictsurveillanceRecord, PSIndividualSurveillanceOrder, PSMandateConflictsurveillanceSubject).
@@ -210,3 +210,5 @@ observe(PSMandateDefectrevieweddefectSource, PSMandateDefectrevieweddefectRecord
 # => TRUE
 ? prisoner(PSMandateConflictsurveillanceSubject).
 # => FALSE
+? obliged(PSMandateConflictsecurityintelligenceOperator, MaintainSeparatedProtectiveFunctionAndIndependentOversight, PSMandateConflictsecurityintelligenceRecord).
+# => TRUE

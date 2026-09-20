@@ -63,29 +63,30 @@ occurred or correct that entry. The clawback stays with the person voided.
 
 ## The mark that crosses the record
 
-Vex's reconciled predecessor void produces a current void, recognition loss
-and withheld credential while leaving public answerability intact. The carry
-needs the witnessed predecessor, inventories, matching reports and selected
-current successor described in the previous chapter. A raw mark alone is
-insufficient. The result establishes no new examination of Vex.
+Vex's completed prior case produces the personal void and recognition loss.
+The carried credential restriction separately blocks the appointment while
+leaving public answerability intact. Its witnessed predecessor, inventories,
+matching reports and selected current successor are described in the previous
+chapter. A raw mark is insufficient, and a credential restriction alone cannot
+supply the personal case needed for a clawback.
 
-The restoration test adds forgiveness by Appeals. Alone it changes none of
-those results. Add an Appeals judgment as well, and clean status derives:
-the carried void and recognition loss stop, and Vex's existing examination
-supports recognition. No new examination or payment is involved. The matched history
-remains, so the auditor's credential still does not derive.
+The restoration test adds forgiveness by Appeals and then a generic Appeals
+judgment. Neither restores the finding. The particular appellate act must name
+Vex's case and purpose, with independent review, evidence, procedure,
+eligibility and witnessed order. When that record is supplied, the personal
+void and recognition loss stop. Vex's existing examination supports recognition
+again; no new examination or payment is involved. The carried restriction
+remains, so the auditor's appointment still does not derive.
 
-The pair is mechanically required but identifies no particular finding,
-purpose or authenticated writer. A generic judgment already on the record can
-combine with a later forgiveness entry. The result proves that those premises
-satisfy the rule, not that Appeals performed this restorative act.
+The restored case remains part of the history. A new record name cannot revive
+the same finding, while another incident or ground is assessed separately.
+An adjudicated concealed conflict uses the same restoration route. A generic
+forgiveness flag cannot clear every finding about a person.
 
-The paired-void, adjudicated-deceit and carried-void routes read clean status.
-The parent-judge route does not. Restoration is therefore not universal across
-all sources of a void. Nor does a duty to review guarantee forgiveness: while
-an applicable void still derives, recognition remains blocked. An unperformed
-review and a performed decision missing from the record cannot be distinguished
-merely by that result.
+A duty to review is not a completed disposition. While another effective
+finding still applies, recognition remains blocked. Nor does the calculation
+establish that the reported appellate act occurred: it requires the case record,
+and the outside institutions remain responsible for the truth of that account.
 
 ## The scope of the loss
 

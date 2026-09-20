@@ -386,9 +386,23 @@ pub(super) fn rules(cards: &[Card]) -> Vec<String> {
         own.extra.clear();
         let mut effects = base_premises(&own);
         effects.push(format!("complete($record, {}, $subject)", card.kind));
+        // The exact recorded instrument identifies who continues to owe its
+        // protective duties. Invalidating it or a parent permission cannot
+        // waive those duties. This body creates no completed authority or act.
+        let continuing = base_premises(&own)
+            .into_iter()
+            .filter(|atom| {
+                !matches!(
+                    atom.as_str(),
+                    "~contradict($record, PSBindingConflict)"
+                        | "~contradict($record, PSEffectReliance)"
+                        | "~related($record, PSFindingAmbiguity)"
+                )
+            })
+            .collect::<Vec<_>>();
         for duty in &card.duties {
             result.push(rule(
-                &effects,
+                &continuing,
                 &format!("obliged($operator, {duty}, $record)"),
             ));
         }

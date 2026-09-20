@@ -105,23 +105,23 @@ observe(RecordHoldingDefectReview, RecordHoldingDefectRecord, NoAdverseSubjectFa
 ? authority(RecordSequenceHolder, DeliverTheServiceRecorded, RecordSequenceAuthorization).
 # => FALSE
 ? obliged(RecordSequenceHolder, KeepRecordAccurateCorrectableAndSecure, RecordSequenceAuthorization).
-# => FALSE
+# => TRUE
 ? obliged(RecordSequenceHolder, ProtectRecordSubjectsAndObjectorsFromRetaliation, RecordSequenceAuthorization).
-# => FALSE
+# => TRUE
 ? complete(RecordSequenceAuthorization, ReviewedRecordHolding, RecordSequenceSubject).
 # => FALSE
 ? permits(RecordSequenceHolder, OrdinaryRecordKeeping, RecordSequenceRecord).
 # => FALSE
 ? obliged(RecordSequenceHolder, NotifyTheSubjectAfterCovertProcessing, RecordSequenceRecord).
-# => FALSE
+# => TRUE
 ? complete(RecordSequenceRecord, ReviewedRecordProcessing, RecordSequenceSubject).
 # => FALSE
 ? obliged(RecordSequenceHolder, ExplainAutomatedSupportAndAllowContest, RecordSupportRecord).
-# => FALSE
+# => TRUE
 ? obliged(RecordSupportReviewer, DecideWithHumanAndIndependentReview, RecordSupportRecord).
-# => FALSE
+# => TRUE
 ? permits(RecordSequenceSubject, ContestAutomatedSupport, RecordSupportRecord).
-# => FALSE
+# => TRUE
 ? complete(RecordSupportRecord, ReviewedAutomatedDecisionSupport, RecordSequenceSubject).
 # => FALSE
 ? person(RecordSequenceSubject).

@@ -76,16 +76,16 @@ an unrestricted power to investigate.
 
 ## Vex's restoration
 
-Vex has an electorate seat and a void carried from an earlier record.
-The pins show public answerability, the void and refusal of
-the Review credential together. The void closes recognition routes and affects
-credential eligibility. It is not a finding that every word Vex speaks is false.
+Vex has an electorate seat, a completed prior credibility case and a carried
+credential restriction. The pins show public answerability, the personal void
+and refusal of the Review credential together. The finding closes recognition
+routes and prevents a new adverse finding from qualifying. It does not establish
+that every word Vex speaks is false.
 
-The restoration case separates the conclusions again. Forgiveness by Appeals,
-beside an Appeals judgment, stops the carried void from deriving. Those facts
-name Appeals but authenticate no writer and link no case or purpose. Public
-answerability remains. The credential still does not derive, because its rule
-reads the reconciled carried history, which forgiveness has not erased.
+The restoration case separates the conclusions again. A qualified appellate
+act naming the prior case ends its personal consequence. A generic judgment
+and forgiveness flag do not. Public answerability remains. The credential
+still does not derive, because the carried restriction has not been cleared.
 
 Restored recognition and renewed authority are therefore different questions.
 A fresh seating does not by itself clear that history either. The chapters on

@@ -1,0 +1,10 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 4
+? correct(Case_Placement_unknown_kind, ActivePower).
+# => FALSE
+? prisoner(Placement_unknown_kind).
+# => FALSE
+? dwell(Placement_unknown_kind).
+# => FALSE
+? owe(State, Dwell, Placement_unknown_kind).
+# => TRUE

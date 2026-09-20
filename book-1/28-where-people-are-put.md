@@ -1,137 +1,131 @@
 # Where People Are Put
 
-Hano is convicted, has a recorded home option, and is eligible for home confinement.
-Ruk has the same kind of home option but a severe offence, so the model assigns high
-security. The difference comes from the recorded grounds for severity. Family status
-has no part in it.
+Hano's case permits home confinement at a named available place. Ruk's case
+supports secure placement, with a separate finding that less restrictive
+alternatives are insufficient. The difference rests on the adjudicated case
+and the particular placement. Family status supplies no part of it.
 
-Placement follows custody; it does not authorise custody. Once confinement derives,
-severity selects HighSec. Without severity, the person is eligible for Homestay, but a
-named Homestay destination also requires the typed fact at(person, PlacementHome).
-That fact records an available placement-home option. It is not civil residence,
-ownership, household membership, protected family life, or evidence of delivered
-housing.
+A lawful sentence does not authorise holding somebody anywhere convenient.
+Current custody authority also requires a reviewed placement naming the person,
+case, actual place, kind of placement, lease, window and current record. The
+placement authority and independent reviewer must agree on availability,
+individual necessity, lawful conditions, counsel, reasons, inspection and
+accessible challenge. Competing qualified accounts cannot be treated as a
+choice of whichever one permits the preferred destination.
 
 The economic constitution keeps another boundary beside that one. A dwelling
-claim, a tenancy, a cooperative share, customary tenure, public housing,
-household residence, and private ownership are different legal relations.
-Informal or imperfect title does not erase the claim to an adequate secure
-dwelling, and the housing floor does not promise ownership or perpetual control
-of one asset. Eviction or foreclosure that threatens the floor requires law,
-notice, a hearing, proportionality, review, and a real continuity route. None of
-those rules turns this placement-home entry into title or proof of delivery.
+claim, tenancy, cooperative share, customary tenure, public housing, household
+residence and private ownership are different legal relations. Imperfect title
+does not erase the claim to an adequate secure dwelling. Eviction or foreclosure
+that threatens the floor requires law, notice, a hearing, proportionality,
+review and a real continuity route. A placement record supplies no title and
+proves no delivered housing.
 
-A family entry does no placement work. Family form, kinship, caregiving, pregnancy,
-disability, poverty, culture, or custody status cannot justify harsher confinement.
-Domestic protection must turn on evidence of violence, coercion, exploitation,
-neglect, or another named harm. The existence or shape of a family is no substitute.
+A family entry does no placement work. Family form, kinship, caregiving,
+pregnancy, disability, poverty or culture cannot justify harsher confinement.
+A restriction needs evidence of the particular harm and necessity, not an
+assumption drawn from the existence or shape of a household.
 
 ## What makes an offence severe
 
-The severity rules look for a qualifying pair: intent and cruelty toward the same
-person, intent toward one person and injury to another, or cruelty toward one person
-and injury to another. Each also requires the Court's judgment of the offender and a
-case cited by the Court. Intent alone is insufficient.
+Severity requires a qualifying pair of adjudicated findings: intentional
+injury and aggravated cruelty toward the same person, intentional injury
+toward one person and injury to another, or aggravated cruelty toward one
+person and injury to another. Intent alone is insufficient.
 
-Hano's attack and injury entries name Ivo. They do not establish a second person
-harmed, and no cruelty entry supplies the other route. Severity does not derive. With
-custody and the typed home option, Hano derives housing and a Homestay destination.
+Each finding identifies the subject, case, incident, person harmed, dimension,
+evidence and procedure. The adjudicator and independent merits reviewer must
+be authorised for that finding and agree on those fields. Their case must
+itself satisfy the criminal proof, defence and procedure requirements. A raw
+injury, attack or cruelty entry cannot supply a signed finding.
 
-Ruk's entries record intent toward Opal and injury to Pax. The distinct people matter:
-severity derives, Homestay eligibility does not, and the destination is HighSec. Lalo's
-intent and cruelty toward Mina also derive severity. Don reaches the same conclusion
-through cruelty and injury to another person. The home and family entries differ
-among these cases; the severe result does not.
+Hano's findings concern Ivo and do not supply a qualifying pair. Ruk's concern
+intentional injury to Opal and injury to Pax. Lalo's concern intentional injury
+and cruelty toward Mina; Don's combine cruelty with injury to another person.
+Their recorded home and family circumstances do not produce those results.
 
-These are conclusions about the admitted record. A missing intent entry does not
-prove an unintentional act. Nor does the Court's presence authenticate every harm
-entry: those entries name the offender and the person harmed, but no writer. The
-severity rules require a cited case without linking each harm entry to that case.
-Their conclusion attaches to the person, rather than to an individual offence or
-period of placement. These limits matter because the conclusion selects the harsher
-route.
+Severity belongs to the case. A second case involving Ruk cannot borrow it.
+Nor does severity alone authorise a secure place: the placement must separately
+establish why less restrictive options are insufficient. It changes neither
+the person's floor nor the sentence's review interval.
 
 ## What the placement alarm sees
 
-A reported placement is a separate claim from a derived destination. The entry
-put(State, Ruk, Homestay) says who reportedly put whom where. Because Ruk is ineligible
-for Homestay, that report produces a marker that flags a bad placement. The equivalent
-report about eligible Hano produces no marker. Before either report is entered, the
-alarm is silent about both.
+A report of placement is different from an authorised destination. A report
+that State put Ruk at Homestay conflicts with Ruk's current case and triggers
+review. A report that Hano was put at HighSec does so too. An unknown destination
+has no authority to borrow. An exact-place report identifies the case and the
+place; the permission for another person's residence cannot justify it.
 
-Having an available home is not itself a breach. Ruk can have that option recorded,
-remain assigned to HighSec, and trigger no placement alarm. It is the reported home
-placement against eligibility that the rule tests.
+Competing reported destinations also trigger review. Competing fully reviewed
+placement records do more: they block custody authority until a lawful placement
+is established. They cannot be resolved by selecting a favourable record name.
+The marker identifies the affected person and creates Review's obligation;
+it does not establish that an investigation or relocation occurred.
 
-The marker identifies the person affected and the kind of fault. The report retains
-the named placer, but the marker does not carry that name into its conclusion. It
-does create Review's obligation toward the affected person. Chapter 30 follows that
-duty into the constitutional correction route; deriving it does not establish an
-investigation or a move.
-
-The alarm is narrower than the whole placement policy. It does not report a facility
-placement imposed on somebody eligible for home confinement, conflicting derived
-destinations, or an unrecorded act. A quiet alarm therefore does not certify that
-placement was proper. Those other outcomes need their own checks and, where harm is
-possible, an adequate constitutional response.
+No report means no finding about an unobserved physical placement. It does not
+mean that authority defaults to any place: positive lawful placement evidence
+is required before confinement may derive. Permission, a report of use, a
+finding of fault and a performed remedy answer different questions.
 
 ## A fixed route still depends on evidence
 
-Given these premises, the routing rules offer no discretion to reward cooperation
-with Homestay or punish dislike with HighSec. That is a constraint on the rule, not
-proof that whoever supplies or changes the premises has no power over the result.
+The rules provide no placement reward for cooperation, employment, wealth or
+recognition. They also give no authority to withhold a qualifying fact merely
+to obtain a preferred result. Evidence retention, disclosure, independent
+challenge and correction remain necessary.
 
-Removing Lalo's cruelty entry about Mina removes the qualifying pair in that case and
-with it the severity conclusion. The formal record can describe that deletion; it
-cannot establish that the deletion was justified. A rule that derives a destination
-from evidence therefore still depends on evidence retention, challenge, and correction.
+Removing a required signed finding can make a route unsupported. Adding an
+unqualified accusation cannot restore it. The reasoner can check those
+relationships in the supplied record; it cannot establish that the evidence
+was honestly gathered, retained or reported.
 
-The checks beside this book construct every combination in the bounded placement
-matrix: confinement, severity inputs, family presence, and typed home availability.
-Adding or removing the family entry must leave placement unchanged. The checks
-ask every discovered destination
-and reject changed sources that introduce conflicting destinations, omit a required
-result, reverse a route, or turn family into a placement condition. These checks can
-catch changes the narrower placement alarm does not detect. They verify the source;
-they do not relocate anyone.
+The companion cases vary confinement, severity inputs, family presence and
+home availability. Family changes must leave the result unchanged. Separate
+cases remove required placement evidence, introduce competing places, report
+inappropriate destinations and attempt direct assertions of legal conclusions.
+A missing result and an unauthorised extra result are both tested. These checks
+verify the rules; they do not make an outside place available.
 
 ## Eligible, with no home option recorded
 
-Nando has a family entry and a non-severe offence, but no typed placement-home fact.
-Homestay eligibility and housing derive; no destination does. Family supplies neither
-an available home nor a reason to send Nando to a facility.
+Nando, Kel and Adam have no home option recorded. That omission establishes
+neither homelessness nor the impossibility of home confinement. Their custody
+cases instead supply positive evidence that no suitable consenting home is
+available and identify reviewed ordinary supported residences.
 
-Kel and Adam occupy the same position for placement: confined, non-severe, and without
-a typed home option. The record does not send them to HighSec to fill the blank, and
-it does not invent a Homestay destination. Eligibility is a condition on where someone
-may be placed. It cannot make the required place available.
+A supported residence is not HighSec under another name. It needs its own
+positive availability and least-restrictive-placement findings. Poverty or a
+missing home entry cannot justify escalating to a secure facility.
 
-A real confinement still needs a location and lawful conditions there. The absent
-home entry establishes neither that no home exists nor that an adequate alternative
-has been arranged. It leaves the placement decision incomplete on this record.
+Without a suitable named place, the confinement authority does not derive.
+The State still owes a lawful least restrictive placement or a noncustodial
+alternative. A duty to find somewhere does not complete that task, and a
+housing label cannot fill the blank.
 
-## Housing without a destination
+## Housing with independent evidence
 
-Every confined case in the reviewed matrix derives housing. Severe cases reach it
-alongside HighSec, non-severe cases with a home option alongside Homestay, and
-non-severe cases without that option through a destination-free housing rule.
+None of these placement records establishes delivered shelter. Hano's named
+home option and Adam's reviewed residence must be distinguished from evidence
+that either person actually received an adequate place to live.
 
-The housing conclusion therefore follows for Kel and Adam. It establishes neither
-a delivered roof nor a place where they may lawfully be held. Housing status,
-a named destination, and evidence of actual shelter answer different questions. A
-complete table of the first cannot answer the other two by implication.
+The receipt test supplies such evidence separately: a recipient-side report
+and matching attestation by an authorised witness other than the provider.
+Shelter then derives. A counterfactual removing that receipt route loses the
+conclusion even though its evidence was supplied. The sentence and place
+records cannot substitute for it.
 
-Both people were owed an adequate dwelling before conviction. Custody creates a
-further route to the housing conclusion; it is not the source of their underlying
-right. The placement rules must be read beside that unconditional debt.
+Every person was owed an adequate dwelling before a sentence or receipt.
+Neither custody nor evidence of delivery creates that right. Release cannot
+cancel it, and continuity requires action rather than a favourable label.
 
 ## The child with nobody
 
-Nell's birth entry derives standing and the dwelling debt. It supplies no custody,
-Homestay eligibility, housing receipt, or placement alarm. This is not evidence that
-Nell has nowhere to live. It is a record that cannot establish delivered shelter.
+Nell's birth entry derives standing and the dwelling debt. It supplies no
+custody, placement or shelter receipt. This is not evidence that Nell has
+nowhere to live.
 
-Placement should not reach Nell merely to produce the housing conclusion it gives a
-prisoner. Nell's route is the ordinary floor and its delivery duties. Keeping those
-routes distinct makes the comparison in the next chapter possible: confinement can
-take movement, while care and shelter remain owed on either side of it.
+Nell needs the ordinary floor and its delivery duties, without a custody case
+as an entry condition. The same distinction follows a person through release:
+authority to restrict movement, the place where that authority may be used,
+and the shelter owed on either side must each be established on its own terms.

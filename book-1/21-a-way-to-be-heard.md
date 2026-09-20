@@ -77,18 +77,25 @@ alternate. Silence therefore cannot supply legal approval or erase the request.
 It also does not establish that the alternate acted or interim protection
 arrived.
 
-Relief is a separate conclusion. Nia's clearing entry and Appeals judgment
-produce relief and prevent the prisoner conclusion. Ruk has no such clearing
-entry, and the prisoner conclusion remains. Adding a rule that obliges Appeals
-to hear every prisoner's case produces a duty for Ruk but neither relief nor
-release. The pins leave that rule in force while checking the difference:
-an unheard appeal does not by itself set aside a conviction.
+Relief is a separate conclusion. Nia's case has a qualified final appellate
+order; custody does not derive. Ruk has no such disposition. A rule obliging
+Appeals to hear every prisoner's case creates a duty for Ruk without itself
+deciding the appeal. The pins keep that rule in force while testing the
+difference. A duty to hear is not a completed hearing or judgment.
 
-The contrasting test writes the right to appeal as though every prisoner had
-already received relief. The engine refuses that rule because the conviction
-rule depends on relief's absence, creating a negative cycle. The refusal does
-not make an appeal impossible; it shows why the duty to hear and the result of
-hearing need separate representations.
+A filed custody challenge has a further protective effect: it suspends the
+case while independent review is pending. A retained subject copy or an
+independently received submission can establish the filing without the primary
+registry's entry. The suspension follows renewals of the case. Dismissing the
+challenge requires qualified uninvolved reviewers, counsel, evidence access
+and reasons. None of those requirements makes the filing itself a final
+finding of innocence.
+
+The contrasting test would make every confinement automatically produce a
+final bar against that same case. The engine refuses the resulting negative
+cycle: custody requires the bar to be absent, while the proposed rule would
+produce it from custody. The refusal concerns that encoding. It prevents
+neither a right to review nor the separate suspension attached to a filing.
 
 Access cannot depend on winning, and a duty cannot be counted as a completed
 review. Both boundaries matter to the person waiting for an answer.

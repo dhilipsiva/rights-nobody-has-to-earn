@@ -2,6 +2,14 @@
 
 # Book 1 Time-Model Decision
 
+**Final item-19 integration, 2026-09-20.** The current source passes 88,024
+pins across 16,087 cases in 1,169.06s, with complete contradiction checks and
+no findings. No active known-defect annotations remain. The focused and failed
+runs below are historical steps, not the final result. The five-minute target
+is unmet. These checks establish the loaded model, not outside authenticity
+or performed institutional acts. See `CLAUDE.md` for the development and
+manuscript checks. The fresh whole-manuscript review remains item 20.
+
 > **Status: author-ratified (2026-08-03), implemented in stages
 > (2026-08-05), and semantically closed for the supplied-record scope
 > (2026-08-15).** T1 reconciles witnessed record transitions, T2 represents
@@ -9,6 +17,59 @@
 > current, source-bound review. This is a safety result over supplied records,
 > not universal standing, durable challenge intake, correction, an outside
 > clock, or proof that a later record arrives.
+
+## Custody intake and disposition supersession, 2026-09-19
+
+This subsection governs the current source wherever the historical account
+below differs. Its exact text is `session-drafted, author-approved under
+delegated approval (2026-09-13)`.
+
+Every custody renewal now needs positive evidence of accessible primary and
+independent alternate intake, confidential counsel, retained copies, protection
+against retaliation, and reconciliation of primary, alternate and subject-held
+filings. Both case-authorised intake actors must agree on the subject, case,
+window and current epoch; they must be distinct and neither may be the Court
+holder or the subject. Missing or conflicting evidence withholds authority.
+This is a duty-bearing condition on public power, not a demand that the person
+prove access in order to receive assistance.
+
+A subject's retained submission or an independently received copy can establish
+a filing without the primary `challenge` entry or the holder's permission. An
+unresolved filing suspends all leases for that case, including new lease names.
+The suspension also follows the same subject, incident and charged offence
+across case aliases. An unrelated person's submission does not suspend this
+case. The direct subject route requires no institutional witness; the alternate
+receipt route has its own case-authorised witness and exact subject/case
+bindings. Appeals owes an independent hearing with counsel and reasons.
+
+Ending the suspension requires an independently heard and rejected challenge,
+with evidence access, counsel and reasons, an identified filing, qualified
+uninvolved decision actors, historical eligibility and witnessed order before
+the current evaluation. A holder, party or original trial reviewer cannot
+dismiss it. That disposition supplies no new sentence, placement, renewal or
+release: all other conditions on authority still apply. A successful challenge
+can instead lead to qualified case-specific relief under Article 6. The old
+raw-release and generic clearing/judgment inputs no longer end custody.
+
+The narrow supplied-record limit remains necessary: two outside situations
+that present identical inputs cannot receive different results from a reasoner
+over those inputs. Thus an entirely suppressed filing accompanied by false
+attestations of complete reconciliation cannot be detected from that record
+alone. This is not permission to suppress intake. Positive access and
+reconciliation, independent retained copies, automatic suspension, independent
+challenge disposition, unconditional assistance and remedy are legal safeguards
+in the model. Missing access evidence and independently retained filings now
+produce the protective result, which the former rule did not supply. Outside
+authentication, truthful observation, clock advancement and physical compliance
+remain distinct performance questions; no formal result establishes them.
+
+The first combined encoding was rejected for negative predicate cycles.
+Separate closed conclusions for filing, disposition and suspension preserve
+the policy while admitting a stratified representation. This is a verified
+representation repair, not a claimed impossibility of stronger protection.
+Focused custody validation passes 377 pins across 79 cases in 14.48 seconds,
+with complete contradiction checks and no findings. Whole-book integration and
+verification remain required before item 19 can close.
 
 ## 1. What exists now
 

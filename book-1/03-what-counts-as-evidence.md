@@ -91,12 +91,12 @@ separate question from whether the verdict can be asserted directly.
 Koa's finding about Esa is recorded. Esa is not voided, and Koa is not voided
 for having made it. The lone entry does not supply the route to either result.
 
-The paired voiding route requires qualified examiners from distinct bodies,
-matching findings and a ground type, and positive evidence of independence
-for the subject. It does not bind those findings to a separately identified
-incident. The signers' own disqualifications also matter. The chapter on
-voiding follows this route, the other grounds for a void, and their distinct
-limits on contest and restoration.
+The paired route requires distinct qualified examiners, matching findings about
+the same subject, incident, ground and evidence, and positive independence
+authority for that case. Permission to make a finding also checks the signers'
+current disqualifications. Personal consequences require the completed case
+and its historical eligibility and procedure. The chapter on voiding follows
+those conditions and the case-specific route to restoration.
 
 The conclusion here is limited to the case: Koa's entry does not establish
 that Esa's credibility is void. It is not a claim that every investigation is
@@ -160,22 +160,21 @@ call the removal proper. Neither mechanism can find an encounter nobody
 reports, detect a deletion before the compared records, establish an honest
 witness or make the next record arrive.
 
-Some admitted findings have especially direct consequences. In the shield
-case, the test first establishes that Rebel is not a prisoner. It then records
-that Rebel deceived Boss, the official Rebel exposed. No separate adjudicator
-is named in that entry. The shield against that official stops following,
-and the supplied custody premises produce the prisoner conclusion. A raw
-entry naming someone as a deceiver can also block recognition for examination.
-Those routes have consequences without the Review judgment required to derive
-a void for deceit.
+The shield case distinguishes an accusation from the adjudication it needs.
+Rebel's disclosure concerns Boss, an answerable official. A raw entry alleging
+that Rebel deceived Boss does not supply an effective finding about that
+exposure. The shield continues, and the prisoner conclusion remains blocked.
+A raw accusation likewise cannot remove examination recognition. The adverse
+case must bind its subject, incident, evidence and independent reviewers;
+merely naming the accused and a public body does not establish the act.
 
-A broken-Court entry has a wider effect. The supplied custody cases depend on
-the Court. Mark it broken and the prisoner conclusions stop following for the
-people tested. This is not an observed release, a pardon or an erasure of the
-injury and judgment entries. It is the effect of a premise that the rules do
-not independently adjudicate. The record cannot distinguish an accurate
-report of a compromised Court from a fabricated one merely by reading that
-same report.
+A bare claim that the Court is broken also leaves the custody cases unchanged.
+A defect in a court's jurisdiction or independence needs a qualified disposition
+of the affected case. The disposition identifies the subject, offence, ground,
+evidence and independent appellate actors; a party or the original adjudicator
+cannot decide the appeal. Successful review ends the affected authority without
+erasing the injury record or deciding another case. The reasoner checks that
+contract. It does not authenticate the witnesses or physically release anyone.
 
 Other entries have narrower reach. Writing that someone has a family cannot
 worsen confinement. An absent parent, marriage or sibling entry cannot establish

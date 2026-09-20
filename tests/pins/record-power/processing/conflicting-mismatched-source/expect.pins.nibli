@@ -4,6 +4,6 @@
 ? permits(RecordCaseHolder, OrdinaryRecordKeeping, RecordCaseRecord).
 # => FALSE
 ? obliged(RecordCaseHolder, NotifyTheSubjectAfterCovertProcessing, RecordCaseRecord).
-# => FALSE
+# => TRUE
 ? complete(RecordCaseRecord, ReviewedRecordProcessing, RecordCaseSubject).
 # => FALSE

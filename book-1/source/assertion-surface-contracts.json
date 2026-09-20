@@ -233,7 +233,7 @@
     "decide": {
       "classification": "derived_only",
       "contract_id": "derived-only-decide",
-      "decision_ref": "book-1/appendix/decisions/closure-gaps-decision.md::D1 \u2014 legacy `decide` is relation-wide conclusion-only",
+      "decision_ref": "book-1/appendix/decisions/closure-gaps-decision.md::D1 — legacy `decide` is relation-wide conclusion-only",
       "expected": {
         "rule_produced": true,
         "admitted": false,
@@ -376,7 +376,7 @@
     "lose": {
       "classification": "derived_only",
       "contract_id": "derived-only-lose",
-      "decision_ref": "book-1/appendix/decisions/closure-gaps-decision.md::L1 \u2014 `lose` is relation-wide conclusion-only",
+      "decision_ref": "book-1/appendix/decisions/closure-gaps-decision.md::L1 — `lose` is relation-wide conclusion-only",
       "expected": {
         "rule_produced": true,
         "admitted": false,
@@ -603,6 +603,83 @@
         "derived_only": false,
         "ground_asserted": false
       }
+    },
+    "attribute": {
+      "classification": "derived_only",
+      "contract_id": "derived-only-attribute",
+      "decision_ref": "book-1/source/constitution.nibli::# <CUSTODY-ADJUDICATION-ADMISSIONS-BEGIN>",
+      "expected": {
+        "rule_produced": true,
+        "admitted": false,
+        "derived_only": true,
+        "ground_asserted": false
+      }
+    },
+    "approves": {
+      "classification": "derived_only",
+      "contract_id": "derived-only-approves",
+      "decision_ref": "book-1/source/constitution.nibli::# <CUSTODY-ADJUDICATION-ADMISSIONS-BEGIN>",
+      "expected": {
+        "rule_produced": true,
+        "admitted": false,
+        "derived_only": true,
+        "ground_asserted": false
+      }
+    },
+    "ready": {
+      "classification": "derived_only",
+      "contract_id": "derived-only-ready",
+      "decision_ref": "book-1/source/constitution.nibli::# <CUSTODY-ADJUDICATION-ADMISSIONS-BEGIN>",
+      "expected": {
+        "rule_produced": true,
+        "admitted": false,
+        "derived_only": true,
+        "ground_asserted": false
+      }
+    },
+    "problem": {
+      "classification": "derived_only",
+      "contract_id": "derived-only-problem",
+      "decision_ref": "book-1/source/constitution.nibli::# <CUSTODY-ADJUDICATION-ADMISSIONS-BEGIN>",
+      "expected": {
+        "rule_produced": true,
+        "admitted": false,
+        "derived_only": true,
+        "ground_asserted": false
+      }
+    },
+    "record": {
+      "classification": "derived_only",
+      "contract_id": "derived-only-record",
+      "decision_ref": "book-1/source/constitution.nibli::# <CUSTODY-ADJUDICATION-ADMISSIONS-BEGIN>",
+      "expected": {
+        "rule_produced": true,
+        "admitted": false,
+        "derived_only": true,
+        "ground_asserted": false
+      }
+    },
+    "answer": {
+      "classification": "derived_only",
+      "contract_id": "derived-only-answer",
+      "decision_ref": "book-1/source/constitution.nibli::# <CUSTODY-ADJUDICATION-ADMISSIONS-BEGIN>",
+      "expected": {
+        "rule_produced": true,
+        "admitted": false,
+        "derived_only": true,
+        "ground_asserted": false
+      }
+    },
+    "closed": {
+      "classification": "derived_only",
+      "contract_id": "derived-only-closed",
+      "decision_ref": "book-1/source/constitution.nibli::# <CUSTODY-ADJUDICATION-ADMISSIONS-BEGIN>",
+      "expected": {
+        "rule_produced": true,
+        "admitted": false,
+        "derived_only": true,
+        "ground_asserted": false
+      }
     }
   },
   "premises": {
@@ -610,31 +687,30 @@
       "claimed_actor": "No writer is encoded; the tuple names a subject and its asserted target label.",
       "tuple_claim": "The tuple asserts a target label for a named subject; it proves neither docket, subject type, nor semantic effect.",
       "current_writer_authority": "Any fact-store writer; Article 0a authenticates neither the named subject nor the label's truth.",
-      "required_writer_authority": "A docketed amendment process must bind the proposal, proposer, certified text, and declared target.",
+      "required_writer_authority": "A bare label is insufficient for legal effect. Actual amendment records require the distinct authorities in the exact-change contract.",
       "current_provenance": "The target label is accepted as written; the model does not compare it with the amendment's semantic effect.",
-      "required_provenance": "Immutable proposal text and an independently reviewable semantic-impact record.",
+      "required_provenance": "The exact base, candidate, proposal, consent result, review, publication and selection records required by the amendment-enactment contract.",
       "cheapest_harm": {
         "operation": "assert",
         "operations": [
           "assert `adjust(Amend_Mint, Art_Floor)`"
         ],
-        "effect": "The ordinary reform receives the `false` label verdict merely by adding a registered target label; no source effect is changed.",
+        "effect": "The retained label operation supplies no personal credibility finding or alternative amendment status. The two Article 9 label rules are removed; actual amendment status requires the exact-change interface.",
         "target": "false",
-        "evidence_ref": "book-1/source/constitution.nibli::suggest(Assembly, $m) & adjust($m, $t) & permanent($t) -> false($m)"
+        "evidence_ref": "book-1/source/constitution.nibli::# ─── Article 9: Amendment status and personal findings"
       },
       "withholding_deletion_harm": {
         "operation": "withhold_or_delete",
         "operations": [
           "delete `adjust(Amend_Floor, Art_Floor)`"
         ],
-        "effect": "The floor-labelled proposal is no longer marked false and the otherwise unread `become(Amend_Floor, Law)` conclusion derives; no source transition follows.",
+        "effect": "The retained label operation supplies no personal credibility finding or alternative amendment status. The two Article 9 label rules are removed; actual amendment status requires the exact-change interface.",
         "target": "false",
-        "evidence_ref": "book-1/source/constitution.nibli::suggest(Assembly, $m) & adjust($m, $t) & permanent($t) -> false($m)"
+        "evidence_ref": "book-1/source/constitution.nibli::# ─── Article 9: Amendment status and personal findings"
       },
-      "current_challenge_route": "No rule tests whether the declared label is honest, binds it to candidate text, or permits a semantic challenge.",
-      "required_challenge_route": "Independent constitutional review of declared and actual effects before enactment.",
+      "current_challenge_route": "These bare labels confer no amendment authority or personal consequence. The exact-change interface supplies candidate-bound challenge, independent review, correction and nonresponse duties.",
+      "required_challenge_route": "Use the exact-change contract for any proposed constitutional transition; label authenticity cannot substitute for its required records.",
       "risk_dispositions": [
-        "patchable",
         "external"
       ],
       "owner_ref": "book-1/appendix/maps/constitutional-coverage-map.md::## 6. Democratic corridor",
@@ -688,29 +764,29 @@
     "attack": {
       "claimed_actor": "The first argument names the alleged attacker, not the fact writer or adjudicator.",
       "tuple_claim": "A person intentionally attacked a named victim.",
-      "current_writer_authority": "Any fact-store writer can assert the allegation; no judgment is required for severity.",
+      "current_writer_authority": "Any writer can record the allegation; it has no active constitutional consumer.",
       "required_writer_authority": "A due-process finding with notice, evidence, representation, and an independent decider.",
-      "current_provenance": "No source, decision, or case identifier is attached.",
+      "current_provenance": "The raw tuple has no adjudicative force. Severity requires independent signed dimensions bound to the same subject, case, incident and victims under qualified merits.",
       "required_provenance": "Case-bound evidence and a reviewable finding of intentional attack.",
       "cheapest_harm": {
         "operation": "assert",
         "operations": [
           "assert `attack(Nando, Mina)`"
         ],
-        "effect": "Nando's existing injury of a different person now makes severity derive and adds harsher placement.",
-        "target": "severe",
-        "evidence_ref": "book-1/source/constitution.nibli::attack($x,$v) & injure($x,$w) & ~($v = $w) -> severe($x)"
+        "effect": "This raw write or omission cannot establish or withdraw severity or placement.",
+        "target": "none",
+        "evidence_ref": "book-1/source/constitution.nibli::# <CUSTODY-EXECUTION-RULES-BEGIN>"
       },
       "withholding_deletion_harm": {
         "operation": "withhold_or_delete",
         "operations": [
           "delete `attack(Ruk, Opal)`"
         ],
-        "effect": "Ruk's severity finding disappears despite the other recorded injury.",
-        "target": "severe",
-        "evidence_ref": "book-1/source/constitution.nibli::attack($x,$v) & injure($x,$w) & ~($v = $w) -> severe($x)"
+        "effect": "This raw write or omission cannot establish or withdraw severity or placement.",
+        "target": "none",
+        "evidence_ref": "book-1/source/constitution.nibli::# <CUSTODY-EXECUTION-RULES-BEGIN>"
       },
-      "current_challenge_route": "No relation challenges or corrects an attack fact.",
+      "current_challenge_route": "Case-bound merits, independent relief and conflicting authorized dimension evidence govern the conclusion; a raw allegation cannot alter it.",
       "required_challenge_route": "Case appeal and correction history that can supersede a disputed finding.",
       "risk_dispositions": [
         "patchable",
@@ -817,9 +893,9 @@
         "operations": [
           "assert `broken(Court)`"
         ],
-        "effect": "The negative conviction guard suppresses every current Court-based conviction: a one-write universal amnesty.",
-        "target": "prisoner",
-        "evidence_ref": "book-1/source/constitution.nibli::~broken(Court) & ~defend($offender)"
+        "effect": "A raw mark against Court cannot end any existing case. Jurisdiction or independence relief requires an independent case-specific order.",
+        "target": "none",
+        "evidence_ref": "book-1/source/constitution.nibli::# <T3-COURT-GATE-BEGIN>"
       },
       "withholding_deletion_harm": {
         "operation": "withhold_or_delete",
@@ -830,7 +906,7 @@
         "target": "permits",
         "evidence_ref": "book-1/source/constitution.nibli::choose(Convocation, $a) & match($a, CarriedClear) & ~match($a, CarriedVoid) & ~broken($a) -> permits(Tribunal, $a)"
       },
-      "current_challenge_route": "No rule challenges or corrects a raw mark; deleting one remains external and invisible inside a supplied snapshot. Temporal conflicts and lease challenges use `collide` instead.",
+      "current_challenge_route": "Raw credential status remains externally supplied; an allegation against Court is not an appellate disposition. Qualified case-bound relief and independent custody challenge access govern adverse judgments.",
       "required_challenge_route": "Independent review, correction without silent deletion, and continuity while status is disputed.",
       "risk_dispositions": [
         "patchable",
@@ -848,7 +924,7 @@
       "tuple_claim": "An examiner recorded or captured an examination of a subject.",
       "current_writer_authority": "Any fact-store writer can assert the act; credentials are checked only in the voiding route.",
       "required_writer_authority": "An authorised recorder acting within a case-bound examination process.",
-      "current_provenance": "No source artifact or case identifier is required; some consequences add `judge` and `cite` companions.",
+      "current_provenance": "Examination recognition uses the two-place act and its judgment and occasion; adverse credibility findings require a separate subject/incident act within a fully bound completed case.",
       "required_provenance": "A tamper-evident case record linked to the examiner, subject, grounds, and decision authority.",
       "cheapest_harm": {
         "operation": "assert",
@@ -864,11 +940,11 @@
       "withholding_deletion_harm": {
         "operation": "withhold_or_delete",
         "operations": [
-          "delete `capture(Gia, Bela)`"
+          "delete `capture(Gia, Bela, Credibility_Bela_Incident)`"
         ],
-        "effect": "The cross-body voiding of Bela no longer derives.",
+        "effect": "The corresponding completed credibility finding no longer qualifies; the source cannot recover deleted evidence.",
         "target": "false",
-        "evidence_ref": "book-1/source/constitution.nibli::capture($a, $audited) & cite($a, $ground, $audited)"
+        "evidence_ref": "book-1/source/constitution.nibli::Article 4: Findings, prospective signatures, and recognition"
       },
       "current_challenge_route": "No correction or appeal attaches to a capture fact.",
       "required_challenge_route": "Subject access, contest, correction history, and independent case review.",
@@ -876,7 +952,7 @@
         "patchable",
         "external"
       ],
-      "owner_ref": "book-1/source/record-integrity-assurance-case.md::### RI-5 \u2014 Independent witnessing and separation of functions",
+      "owner_ref": "book-1/source/record-integrity-assurance-case.md::### RI-5 — Independent witnessing and separation of functions",
       "tags": [
         "audit",
         "justice",
@@ -1034,7 +1110,7 @@
         "patchable",
         "external"
       ],
-      "owner_ref": "book-1/source/record-integrity-assurance-case.md::### RI-3 \u2014 Provenance, authenticity, and truth limits",
+      "owner_ref": "book-1/source/record-integrity-assurance-case.md::### RI-3 — Provenance, authenticity, and truth limits",
       "tags": [
         "audit",
         "case-binding",
@@ -1045,10 +1121,10 @@
     },
     "clear": {
       "claimed_actor": "No writer or clearing body is encoded in the unary fact.",
-      "tuple_claim": "A person has been cleared for per-case appellate relief.",
-      "current_writer_authority": "Any fact-store writer may assert it; a separate Appeals judgment is required before relief derives.",
+      "tuple_claim": "An unscoped reported clearing, without operative relief.",
+      "current_writer_authority": "Any writer can record the raw status claim; it cannot grant relief or end custody.",
       "required_writer_authority": "The appellate body must authorise a case-bound relief record through a defined decision process.",
-      "current_provenance": "The companion `judge(Appeals, person)` raises the price but names no case, reason, or source.",
+      "current_provenance": "Qualified relief separately binds subject, case, incident, offence, ground, evidence, procedure, historical eligibility and two uninvolved case-authorized decision actors.",
       "required_provenance": "The exact appealed decision, grounds, disposition, and independently witnessed judgment.",
       "cheapest_harm": {
         "operation": "assert",
@@ -1056,27 +1132,27 @@
           "assert `clear(Adam)`",
           "assert `judge(Appeals, Adam)`"
         ],
-        "effect": "Adam receives appellate permission and the conviction rule is suppressed.",
-        "target": "permits",
-        "evidence_ref": "book-1/source/constitution.nibli::clear($x) & judge(Appeals, $x) -> permits(Appeals, $x)"
+        "effect": "This raw write or omission cannot change the qualified custody conclusion or appellate relief.",
+        "target": "none",
+        "evidence_ref": "book-1/source/constitution.nibli::# <CUSTODY-ADJUDICATION-RULES-BEGIN>"
       },
       "withholding_deletion_harm": {
         "operation": "withhold_or_delete",
         "operations": [
           "delete `clear(Nia)`"
         ],
-        "effect": "Nia's valid relief disappears and confinement derives again.",
-        "target": "permits",
-        "evidence_ref": "book-1/source/constitution.nibli::clear($x) & judge(Appeals, $x) -> permits(Appeals, $x)"
+        "effect": "This raw write or omission cannot change the qualified custody conclusion or appellate relief.",
+        "target": "none",
+        "evidence_ref": "book-1/source/constitution.nibli::# <CUSTODY-ADJUDICATION-RULES-BEGIN>"
       },
-      "current_challenge_route": "The Appeals judgment is a co-requisite, not a correction or contest route for the clear fact.",
+      "current_challenge_route": "A retained subject filing or independent receipt suspends the identified case and aliases pending independent disposition. Qualified relief bars its precise scope across record names.",
       "required_challenge_route": "Notice, contest, correction history, and continuity while appellate status is disputed.",
       "risk_dispositions": [
         "patchable",
         "external",
         "deliberately_refused"
       ],
-      "refused_alternative": "Neither default relief nor an asserted exhaustion gate is acceptable: the first defeats every conviction, while the second lets whoever withholds the exhaustion entry veto an otherwise supported conviction.",
+      "refused_alternative": "Default relief would end supported custody without a decision. A raw exhaustion flag gives a withholding veto. Instead, positive independently attested intake access is required and subject-held or independently witnessed filings suspend custody before disposition.",
       "owner_ref": "book-1/appendix/contracts/non-carceral-justice-contract.md::Legacy assertion boundary",
       "tags": [
         "justice",
@@ -1127,29 +1203,29 @@
     "cruel": {
       "claimed_actor": "The first argument names the alleged offender, not the writer or adjudicator.",
       "tuple_claim": "A person's conduct toward a named victim was cruel.",
-      "current_writer_authority": "Any fact-store writer can assert the qualitative finding.",
+      "current_writer_authority": "Any writer can record the allegation; it has no active constitutional consumer.",
       "required_writer_authority": "An independent due-process finding under a public legal standard.",
-      "current_provenance": "No evidence, decider, standard, or case is attached.",
+      "current_provenance": "The raw tuple has no adjudicative force. Severity requires independent signed dimensions bound to the same subject, case, incident and victims under qualified merits.",
       "required_provenance": "Case-bound evidence and a reasoned cruelty finding open to appeal.",
       "cheapest_harm": {
         "operation": "assert",
         "operations": [
           "assert `cruel(Hano, Ivo)`"
         ],
-        "effect": "Hano's existing attack now makes severity derive and changes placement consequences.",
-        "target": "severe",
-        "evidence_ref": "book-1/source/constitution.nibli::attack($x,$v) & cruel($x,$v) -> severe($x)"
+        "effect": "This raw write or omission cannot establish or withdraw severity or placement.",
+        "target": "none",
+        "evidence_ref": "book-1/source/constitution.nibli::# <CUSTODY-EXECUTION-RULES-BEGIN>"
       },
       "withholding_deletion_harm": {
         "operation": "withhold_or_delete",
         "operations": [
           "delete `cruel(Lalo, Mina)`"
         ],
-        "effect": "Lalo's severity and high-security route disappear.",
-        "target": "severe",
-        "evidence_ref": "book-1/source/constitution.nibli::attack($x,$v) & cruel($x,$v) -> severe($x)"
+        "effect": "This raw write or omission cannot establish or withdraw severity or placement.",
+        "target": "none",
+        "evidence_ref": "book-1/source/constitution.nibli::# <CUSTODY-EXECUTION-RULES-BEGIN>"
       },
-      "current_challenge_route": "No rule corrects or appeals a cruel fact.",
+      "current_challenge_route": "Case-bound merits, independent relief and conflicting authorized dimension evidence govern the conclusion; a raw allegation cannot alter it.",
       "required_challenge_route": "Independent appeal and append-only correction of the finding.",
       "risk_dispositions": [
         "patchable",
@@ -1207,29 +1283,29 @@
     "deceive": {
       "claimed_actor": "The first argument names the alleged deceiver; it does not identify the finder or writer.",
       "tuple_claim": "A person's statement about another party was deceptive.",
-      "current_writer_authority": "Any fact-store writer can assert the finding; the shield reads it directly.",
+      "current_writer_authority": "The raw relation remains writable but has no active constitutional consumer.",
       "required_writer_authority": "An independent adjudicator acting through notice and evidence.",
-      "current_provenance": "No source or judgment is required for the shield effect; a Review judgment is required only for voiding the deceiver.",
+      "current_provenance": "This raw entry supplies no adjudication or restoration. The completed case has its own independently bound incident, evidence, purpose, procedure and historical eligibility.",
       "required_provenance": "The challenged statement, evidence, reasoned finding, and decision authority.",
       "cheapest_harm": {
         "operation": "assert",
         "operations": [
           "assert `deceive(Rebel, Boss)`"
         ],
-        "effect": "Rebel's shield is suppressed and the standing conviction derives.",
-        "target": "defend",
-        "evidence_ref": "book-1/source/constitution.nibli::show($w, $o) & authority($o) & ~deceive($w, $o) -> defend($w)"
+        "effect": "These legacy raw writes or omissions have no constitutional consequence under the current case-bound rules.",
+        "target": "none",
+        "evidence_ref": "book-1/source/constitution.nibli::show($w, $incident, $o) & authority($o) & ~false($w, $incident) -> defend($w)"
       },
       "withholding_deletion_harm": {
         "operation": "withhold_or_delete",
         "operations": [
           "delete `deceive(Lupo, Mira)`"
         ],
-        "effect": "The Review-backed voiding of Lupo no longer derives.",
-        "target": "false",
-        "evidence_ref": "book-1/source/constitution.nibli::deceive($auditor, $audited) & judge(Review, $auditor) & ~clean($auditor)"
+        "effect": "These legacy raw writes or omissions have no constitutional consequence under the current case-bound rules.",
+        "target": "none",
+        "evidence_ref": "book-1/source/constitution.nibli::Article 4: Findings, prospective signatures, and recognition"
       },
-      "current_challenge_route": "A Review judgment can void the deceiver but cannot correct the underlying deceive entry.",
+      "current_challenge_route": "The case-specific finding and appellate-restoration interface carries the personal consequence; a raw flag neither creates nor restores it.",
       "required_challenge_route": "Prompt contest, independent review, correction history, and interim shield continuity.",
       "risk_dispositions": [
         "patchable",
@@ -1320,29 +1396,29 @@
     "forgive": {
       "claimed_actor": "The first argument claims Appeals as the forgiving body, but any writer can type it.",
       "tuple_claim": "Appeals forgave a person's carried voiding mark.",
-      "current_writer_authority": "Any fact-store writer can assert the body-labelled entry; a companion Appeals judgment is required.",
+      "current_writer_authority": "The raw relation remains writable but has no active constitutional consumer.",
       "required_writer_authority": "Only the appellate body through a defined expungement process may authorise forgiveness.",
-      "current_provenance": "The companion judgment authenticates no case, reason, or scope.",
+      "current_provenance": "This raw entry supplies no adjudication or restoration. The completed case has its own independently bound incident, evidence, purpose, procedure and historical eligibility.",
       "required_provenance": "The voiding, review grounds, expungement decision, and scope of restored status.",
       "cheapest_harm": {
         "operation": "assert",
         "operations": [
           "assert `forgive(Appeals, Nia)`"
         ],
-        "effect": "Nia gains a forged clean conclusion from the Appeals judgment already in the snapshot.",
-        "target": "clean",
-        "evidence_ref": "book-1/source/constitution.nibli::forgive(Appeals, $x) & judge(Appeals, $x) -> clean($x)"
+        "effect": "These legacy raw writes or omissions have no constitutional consequence under the current case-bound rules.",
+        "target": "none",
+        "evidence_ref": "book-1/source/constitution.nibli::# Restoration names the exact finding and subject, a specific appellate purpose,"
       },
       "withholding_deletion_harm": {
         "operation": "withhold_or_delete",
         "operations": [
           "withhold `forgive(Appeals, Vex)` from an otherwise valid expungement"
         ],
-        "effect": "Clean status cannot derive and the carried void continues to control Vex.",
-        "target": "clean",
-        "evidence_ref": "book-1/source/constitution.nibli::forgive(Appeals, $x) & judge(Appeals, $x) -> clean($x)"
+        "effect": "These legacy raw writes or omissions have no constitutional consequence under the current case-bound rules.",
+        "target": "none",
+        "evidence_ref": "book-1/source/constitution.nibli::# Restoration names the exact finding and subject, a specific appellate purpose,"
       },
-      "current_challenge_route": "The two-entry Appeals shape is the only guard; no appeal of forgiveness or refusal is represented.",
+      "current_challenge_route": "The case-specific finding and appellate-restoration interface carries the personal consequence; a raw flag neither creates nor restores it.",
       "required_challenge_route": "Notice, appeal, correction history, and a clear account of which consequences are restored.",
       "risk_dispositions": [
         "patchable",
@@ -1356,30 +1432,30 @@
     },
     "free": {
       "claimed_actor": "No releasing body or writer is encoded in the unary fact.",
-      "tuple_claim": "A person's sentence has ended.",
-      "current_writer_authority": "Any fact-store writer can assert or withhold release.",
+      "tuple_claim": "A reported sentence completion; it also supplies first-contact personhood.",
+      "current_writer_authority": "Any writer can record the raw status claim; it cannot grant relief or end custody.",
       "required_writer_authority": "An independently checked release decision under the ratified temporal and review contract.",
-      "current_provenance": "No sentence, decision, time basis, case, or authorised releaser is attached.",
+      "current_provenance": "Qualified relief separately binds subject, case, incident, offence, ground, evidence, procedure, historical eligibility and two uninvolved case-authorized decision actors.",
       "required_provenance": "The sentence authority, release basis, effective transition, and independent confirmation.",
       "cheapest_harm": {
         "operation": "assert",
         "operations": [
           "assert `free(Adam)`"
         ],
-        "effect": "Adam's conviction conclusion is suppressed without an authenticated release decision.",
-        "target": "prisoner",
-        "evidence_ref": "book-1/source/constitution.nibli::~defend($offender) & ~free($offender) -> prisoner($offender)"
+        "effect": "This raw write or omission cannot change the qualified custody conclusion or appellate relief.",
+        "target": "none",
+        "evidence_ref": "book-1/source/constitution.nibli::# <CUSTODY-ADJUDICATION-RULES-BEGIN>"
       },
       "withholding_deletion_harm": {
         "operation": "withhold_or_delete",
         "operations": [
           "withhold or delete `free(Released_Person)`"
         ],
-        "effect": "The conviction rule can continue or reappear despite a real release.",
-        "target": "prisoner",
-        "evidence_ref": "book-1/source/constitution.nibli::~defend($offender) & ~free($offender) -> prisoner($offender)"
+        "effect": "This raw write or omission cannot change the qualified custody conclusion or appellate relief.",
+        "target": "none",
+        "evidence_ref": "book-1/source/constitution.nibli::# <CUSTODY-ADJUDICATION-RULES-BEGIN>"
       },
-      "current_challenge_route": "No release appeal, correction, or continuity mechanism exists.",
+      "current_challenge_route": "A retained subject filing or independent receipt suspends the identified case and aliases pending independent disposition. Qualified relief bars its precise scope across record names.",
       "required_challenge_route": "Immediate challenge, independent review, and continuity that never makes release depend on a withheld official write.",
       "risk_dispositions": [
         "patchable",
@@ -1450,7 +1526,7 @@
         "operations": [
           "delete `home(Hano)`"
         ],
-        "effect": "The private label disappears without changing Hano\u2019s PlacementHome record or destination; provenance loss remains externally unassured.",
+        "effect": "The private label disappears without changing Hano’s PlacementHome record or destination; provenance loss remains externally unassured.",
         "target": "prevents",
         "evidence_ref": "book-1/source/family-life-course.pins.nibli::# Home and placement-home availability remain distinct."
       },
@@ -1470,29 +1546,29 @@
     "injure": {
       "claimed_actor": "The first argument names the alleged offender and the second the alleged victim, not the writer.",
       "tuple_claim": "A person injured a named victim.",
-      "current_writer_authority": "Any fact-store writer can assert the allegation; a Court judgment is a separate conviction premise.",
+      "current_writer_authority": "Any writer can record an allegation. Custody additionally requires a fully qualified independent merits finding, a case-bound active lease, placement and challenge access.",
       "required_writer_authority": "A case-bound factual finding produced through due process.",
-      "current_provenance": "No injury evidence, finder, case, causation standard, or correction history is attached.",
+      "current_provenance": "The raw tuple has no evidence identifier; its custody consumer joins the exact subject and victim to independently witnessed incident, offence, evidence and procedure. Severity uses separate case-bound signed dimensions.",
       "required_provenance": "Admissible evidence, victim/offender identity, case linkage, and an independently reviewable finding.",
       "cheapest_harm": {
         "operation": "assert",
         "operations": [
           "assert `injure(Hano, Pax)`"
         ],
-        "effect": "Hano's existing attack against a different person makes severity derive.",
-        "target": "severe",
-        "evidence_ref": "book-1/source/constitution.nibli::attack($x,$v) & injure($x,$w) & ~($v = $w) -> severe($x)"
+        "effect": "Adding an unrelated raw injury cannot alter the signed severity dimensions of an adjudicated case.",
+        "target": "none",
+        "evidence_ref": "book-1/source/constitution.nibli::# <CUSTODY-EXECUTION-RULES-BEGIN>"
       },
       "withholding_deletion_harm": {
         "operation": "withhold_or_delete",
         "operations": [
           "delete `injure(Adam, Ivo)`"
         ],
-        "effect": "Adam's conviction no longer derives despite the surviving Court judgment.",
+        "effect": "Deleting this required legacy corroborating premise withholds the affected custody authority; it cannot itself manufacture a release act.",
         "target": "prisoner",
         "evidence_ref": "book-1/source/constitution.nibli::# <T3-COURT-GATE-BEGIN>"
       },
-      "current_challenge_route": "No rule contests or corrects an injury fact.",
+      "current_challenge_route": "The identified merits finding can be challenged through independently preserved filings and qualified appellate relief, with pending custody suspended.",
       "required_challenge_route": "Notice, hearing, appeal, and append-only correction of the factual finding.",
       "risk_dispositions": [
         "patchable",
@@ -1509,7 +1585,7 @@
       "tuple_claim": "A named actor or body judged a subject.",
       "current_writer_authority": "Any fact-store writer can assert Court, Review, Appeals, or generic examiner judgments.",
       "required_writer_authority": "Each constant-sensitive route needs a distinct office, jurisdiction, case, independence, and decision contract.",
-      "current_provenance": "The same relation serves conviction, deceit review, appellate relief, expungement, voiding, family conflict, and recognition without a case identifier.",
+      "current_provenance": "Judgments remain raw claims. Custody merits, severity, appellate relief and personal credibility consequences require separate case-specific independently witnessed findings; ordinary examination recognition remains non-operative.",
       "required_provenance": "Route-specific authority, case identity, evidence, reasons, signatures, and review status.",
       "cheapest_harm": {
         "operation": "assert",
@@ -1517,7 +1593,7 @@
           "assert `judge(Koa, Esa)`",
           "assert `cite(Koa, Notice, Esa)`"
         ],
-        "effect": "Koa's existing capture entry combines with two unauthenticated case assertions to mint non-operative recognition. A forged Court judgment alone no longer creates custody without a case-bound active lease.",
+        "effect": "The legacy examination writes can mint non-operative recognition. A forged Court judgment alone cannot establish qualified merits, severity, placement, intake or relief.",
         "target": "reward",
         "evidence_ref": "book-1/source/constitution.nibli::judge($auditor, $audited) & capture($auditor, $audited) & cite($auditor, $ground, $audited)"
       },
@@ -1530,7 +1606,7 @@
         "target": "prisoner",
         "evidence_ref": "book-1/source/constitution.nibli::# <T3-COURT-GATE-BEGIN>"
       },
-      "current_challenge_route": "No generic challenge exists; Appeals is itself another unauthenticated `judge` route.",
+      "current_challenge_route": "Custody and credibility each have independent case-specific review and restoration interfaces. A generic Appeals judgment alone supplies no relief.",
       "required_challenge_route": "Route-specific appeal, conflict control, correction history, and independent review.",
       "risk_dispositions": [
         "patchable",
@@ -1639,7 +1715,7 @@
         "operations": [
           "assert `married(Gia, Hex)`"
         ],
-        "effect": "The record gains a private married label, but Bela\u2019s decision is unchanged because independence requires affirmative case-bound authorised records.",
+        "effect": "The record gains a private married label, but Bela’s decision is unchanged because independence requires affirmative case-bound authorised records.",
         "target": "prevents",
         "evidence_ref": "book-1/source/constitution.nibli::person($x) & married($x, $y) -> prevents($x, KinshipStatusSubstitution)"
       },
@@ -1707,7 +1783,7 @@
     },
     "parent": {
       "claimed_actor": "The tuple names two people in an alleged parent relationship and no writer.",
-      "tuple_claim": "One person is the parent of another for the affirmative judge-your-child conflict rule; parenthood is not reviewer-independence evidence.",
+      "tuple_claim": "A parent relationship blocks recognition of an examination of the child and is a current conflict check for a prospective adverse finding; it is not a personal adverse judgment.",
       "current_writer_authority": "Any fact-store writer can assert or omit parenthood.",
       "required_writer_authority": "A legally recognised, purpose-limited source with correction and privacy rights.",
       "current_provenance": "No source, legal status, scope, or correction history is attached.",
@@ -1717,18 +1793,18 @@
         "operations": [
           "assert `parent(Dev, Esa)`"
         ],
-        "effect": "A supplied parent relation beside Dev\u2019s judgment derives the source-specific judge-child conflict verdict against Dev; it does not decide co-signer independence.",
-        "target": "false",
-        "evidence_ref": "book-1/source/constitution.nibli::judge($auditor, $audited) & parent($auditor, $audited) -> false($auditor)"
+        "effect": "A supplied parent relationship can block that examination-recognition route or proposed signature; it cannot itself create a personal void.",
+        "target": "reward",
+        "evidence_ref": "book-1/source/constitution.nibli::Article 4: Findings, prospective signatures, and recognition"
       },
       "withholding_deletion_harm": {
         "operation": "withhold_or_delete",
         "operations": [
           "delete `parent(Dev, Esa)`"
         ],
-        "effect": "Dev's prohibited judgment of his child no longer voids him.",
-        "target": "false",
-        "evidence_ref": "book-1/source/constitution.nibli::judge($auditor, $audited) & parent($auditor, $audited) -> false($auditor)"
+        "effect": "Omitting a relevant parent relationship can reopen the examination route or a current conflict check; independently bound case eligibility is still required for an adverse finding.",
+        "target": "reward",
+        "evidence_ref": "book-1/source/constitution.nibli::Article 4: Findings, prospective signatures, and recognition"
       },
       "current_challenge_route": "No operating correction route exists; co-signer independence now uses separate affirmative case-bound authorised records.",
       "required_challenge_route": "Confidential parentage correction and independent review of the specific judge-child conflict record.",
@@ -1827,33 +1903,32 @@
     },
     "permanent": {
       "claimed_actor": "No entrenching authority or writer is encoded; the fact names only a target.",
-      "tuple_claim": "A constitutional target label appears in the register consulted by the amendment-label rule.",
+      "tuple_claim": "A protected commitment name appears in the retained register. The name does not inspect, authorise or prevent a source edit.",
       "current_writer_authority": "Any fact-store writer can add or delete registered-target status; no source protection follows.",
-      "required_writer_authority": "Only the constitutionally valid entrenchment process, independently witnessed and transition-audited.",
+      "required_writer_authority": "A bare label is insufficient for legal effect. Actual amendment records require the distinct authorities in the exact-change contract.",
       "current_provenance": "No enactment, source text, effective transition, or correction history is attached.",
-      "required_provenance": "The entrenching law, protected text, authority, effective state, and append-only history.",
+      "required_provenance": "The exact base, candidate, proposal, consent result, review, publication and selection records required by the amendment-enactment contract.",
       "cheapest_harm": {
         "operation": "assert",
         "operations": [
           "assert `permanent(Art_Mint)`"
         ],
-        "effect": "The existing ordinary mint reform receives the `false` label verdict and no longer derives `become`; no source effect is blocked.",
+        "effect": "The retained label operation supplies no personal credibility finding or alternative amendment status. The two Article 9 label rules are removed; actual amendment status requires the exact-change interface.",
         "target": "false",
-        "evidence_ref": "book-1/source/constitution.nibli::adjust($m, $t) & permanent($t) -> false($m)"
+        "evidence_ref": "book-1/source/constitution.nibli::# ─── Article 9: Amendment status and personal findings"
       },
       "withholding_deletion_harm": {
         "operation": "withhold_or_delete",
         "operations": [
           "delete `permanent(Art_Floor)`"
         ],
-        "effect": "The floor-labelled proposal is no longer marked false and can derive the unread `become` conclusion; no source transition is applied.",
+        "effect": "The retained label operation supplies no personal credibility finding or alternative amendment status. The two Article 9 label rules are removed; actual amendment status requires the exact-change interface.",
         "target": "false",
-        "evidence_ref": "book-1/source/constitution.nibli::adjust($m, $t) & permanent($t) -> false($m)"
+        "evidence_ref": "book-1/source/constitution.nibli::# ─── Article 9: Amendment status and personal findings"
       },
-      "current_challenge_route": "No in-snapshot rule detects deletion, proves protected text, or binds a registered label to candidate semantics.",
-      "required_challenge_route": "Cross-snapshot integrity review, public correction history, and constitutional challenge.",
+      "current_challenge_route": "These bare labels confer no amendment authority or personal consequence. The exact-change interface supplies candidate-bound challenge, independent review, correction and nonresponse duties.",
+      "required_challenge_route": "Use the exact-change contract for any proposed constitutional transition; label authenticity cannot substitute for its required records.",
       "risk_dispositions": [
-        "patchable",
         "external"
       ],
       "owner_ref": "book-1/appendix/maps/constitutional-coverage-map.md::## 6. Democratic corridor",
@@ -1982,7 +2057,7 @@
       "tuple_claim": "A named actor placed a person at a named destination.",
       "current_writer_authority": "Any fact-store writer can report or suppress a placement act.",
       "required_writer_authority": "Only the executing placement body or an independent witness under a case-bound authority contract.",
-      "current_provenance": "The actor slot supplies attribution but no authorisation, order, time, destination validity, or receipt.",
+      "current_provenance": "The raw category report supplies attribution, not authority or a shelter receipt. A structured report also names case and actual place; authorization binds the qualified placement record, exact lease and window.",
       "required_provenance": "The legal order, executing actor, destination, affected person, transition, and independent receipt/witness record.",
       "cheapest_harm": {
         "operation": "assert",
@@ -1991,7 +2066,7 @@
         ],
         "effect": "A contradictory Homestay report produces a placement error whose Review compatibility duty feeds the source-bound typed action route.",
         "target": "err",
-        "evidence_ref": "book-1/source/constitution.nibli::put($a, $x, Homestay) & ~fit($x, Homestay) -> err($x, Placement)"
+        "evidence_ref": "book-1/source/constitution.nibli::put($actor, $subject, $kind) & ~building($kind, $subject) -> err($subject, Placement)"
       },
       "withholding_deletion_harm": {
         "operation": "withhold_or_delete",
@@ -2000,9 +2075,9 @@
         ],
         "effect": "The placement error is invisible even though the act occurred.",
         "target": "err",
-        "evidence_ref": "book-1/source/constitution.nibli::put($a, $x, Homestay) & ~fit($x, Homestay) -> err($x, Placement)"
+        "evidence_ref": "book-1/source/constitution.nibli::put($actor, $subject, $kind) & ~building($kind, $subject) -> err($subject, Placement)"
       },
-      "current_challenge_route": "The marker notices only one direction. Its exact Review duty now feeds a source-bound action, nonresponse, alternate, continuity, and remedy route, but no rule corrects placement or proves that a reader acts.",
+      "current_challenge_route": "Every reported category, including HighSec and unknown kinds, is checked against lawful placement. Conflicting categories and qualified candidates also trigger review. Structured reports must match the precise authorized case and place. The marker and review duty prove no correction or performed act.",
       "required_challenge_route": "Immediate placement appeal, interim safe continuity, correction, remedy, and independent audit reader.",
       "risk_dispositions": [
         "patchable",
@@ -2019,32 +2094,31 @@
       "claimed_actor": "The first argument names the ratifying authority; it does not authenticate that authority as the writer.",
       "tuple_claim": "The tuple asserts that a named authority ratified an amendment proposal; it does not prove a docket, tally, certificate, or writer.",
       "current_writer_authority": "Any fact-store writer can assert the ratification outcome.",
-      "required_writer_authority": "A type-specific, publicly accountable and redundantly available publication route may record only an independently verifiable democratic result; no single writer or reviewer controls availability.",
+      "required_writer_authority": "A bare label is insufficient for legal effect. Actual amendment records require the distinct authorities in the exact-change contract.",
       "current_provenance": "The constitution treats each fact as an asserted outcome and verifies no writer, certificate, count, independence, challenge, correction, or immutable source artifact.",
-      "required_provenance": "A public, contestable result bound to the exact proposal, ratifying authority, legal basis, snapshot, and constitutional version.",
+      "required_provenance": "The exact base, candidate, proposal, consent result, review, publication and selection records required by the amendment-enactment contract.",
       "cheapest_harm": {
         "operation": "assert",
         "operations": [
           "assert `suggest(Assembly, Fresh_Amendment)`",
           "assert `ratifies(Electorate, Fresh_Amendment)`"
         ],
-        "effect": "A fresh proposal derives the unread `become(_, Law)` label without an internally verified vote or target semantics.",
+        "effect": "The retained label operation supplies no personal credibility finding or alternative amendment status. The two Article 9 label rules are removed; actual amendment status requires the exact-change interface.",
         "target": "become",
-        "evidence_ref": "book-1/source/constitution.nibli::suggest(Assembly, $m) & ratifies(Electorate, $m) & ~false($m) -> become($m, Law)"
+        "evidence_ref": "book-1/source/constitution.nibli::# ─── Article 9: Amendment status and personal findings"
       },
       "withholding_deletion_harm": {
         "operation": "withhold_or_delete",
         "operations": [
           "delete `ratifies(Electorate, Amend_Mint)`"
         ],
-        "effect": "The ordinary reform cannot derive the unread `become(_, Law)` label.",
+        "effect": "The retained label operation supplies no personal credibility finding or alternative amendment status. The two Article 9 label rules are removed; actual amendment status requires the exact-change interface.",
         "target": "become",
-        "evidence_ref": "book-1/source/constitution.nibli::suggest(Assembly, $m) & ratifies(Electorate, $m) & ~false($m) -> become($m, Law)"
+        "evidence_ref": "book-1/source/constitution.nibli::# ─── Article 9: Amendment status and personal findings"
       },
-      "current_challenge_route": "No in-model recount, ratification contest, correction, or reviewer-independence test exists.",
-      "required_challenge_route": "A public contest and independent review route tied to the exact tally certificate, with safe continuity for rights.",
+      "current_challenge_route": "These bare labels confer no amendment authority or personal consequence. The exact-change interface supplies candidate-bound challenge, independent review, correction and nonresponse duties.",
+      "required_challenge_route": "Use the exact-change contract for any proposed constitutional transition; label authenticity cannot substitute for its required records.",
       "risk_dispositions": [
-        "patchable",
         "external"
       ],
       "owner_ref": "book-1/appendix/maps/constitutional-coverage-map.md::Define the democratic ceiling and majority process.",
@@ -2147,20 +2221,20 @@
           "assert `carries(TemporalReview, Hano, Epoch_Current, Epoch_Previous, VoidCarry)`",
           "assert `rotten(Hano)`"
         ],
-        "effect": "Six unauthenticated writes added to the accepted transition derive `match(Hano, CarriedVoid)` and re-derive `false(Hano)`. Raw `rotten` alone remains inert; the higher price is explicit but no input is authenticated.",
-        "target": "false",
-        "evidence_ref": "book-1/source/constitution.nibli::match($x, CarriedVoid) & ~clean($x) -> false($x)"
+        "effect": "The six supplied writes, with the accepted transition, can produce a carried credential restriction. They produce no personal void, recognition loss or clawback without an identifiable credibility case.",
+        "target": "match",
+        "evidence_ref": "book-1/source/constitution.nibli::Article 4: Findings, prospective signatures, and recognition"
       },
       "withholding_deletion_harm": {
         "operation": "withhold_or_delete",
         "operations": [
           "delete `rotten(Vex)`"
         ],
-        "effect": "Vex's effective carried void and re-derived `false` disappear despite the authorised status, scoped completeness, and matching carry reports, while a CarryForgery error appears. The positive `CarriedClear` requirement keeps public pens closed, but other `false`-guarded consequences can still reopen.",
-        "target": "false",
-        "evidence_ref": "book-1/source/constitution.nibli::match($x, CarriedVoid) & ~clean($x) -> false($x)"
+        "effect": "Deleting the raw carry can remove the matched credential restriction and expose carry forgery. Vex's separately recorded personal credibility case remains effective; an appointment still needs positive clear history.",
+        "target": "match",
+        "evidence_ref": "book-1/source/constitution.nibli::Article 4: Findings, prospective signatures, and recognition"
       },
-      "current_challenge_route": "T1 can mark carry omission or forgery and a supplied challenge feeds the source-bound Appeals reader/action route. Forgiveness can derive `clean` and neutralise `false`, but neither route authenticates or corrects the raw carry, prior status, observations, or carry reports, and neither proves action.",
+      "current_challenge_route": "Carry omission and forgery markers and supplied challenges have review routes. Restoring a personal credibility finding does not clear a carried appointment restriction, and neither operation authenticates outside witnesses.",
       "required_challenge_route": "Cross-snapshot contest, independent reconciliation, correction history, and recovery from omitted or forged carry.",
       "risk_dispositions": [
         "patchable",
@@ -2174,31 +2248,31 @@
       ]
     },
     "show": {
-      "claimed_actor": "The first argument names the whistleblower and the second the exposed party; neither identifies the fact writer.",
-      "tuple_claim": "A person exposed a named authority.",
+      "claimed_actor": "The arguments identify discloser, exposure incident and exposed authority; they do not authenticate the writer.",
+      "tuple_claim": "A person exposed a named authority in an identified incident.",
       "current_writer_authority": "Any fact-store writer can assert the exposure; the exposed party must derive authority.",
       "required_writer_authority": "The claimant must be able to file safely, with an independently witnessed record and anti-retaliation protection.",
-      "current_provenance": "No content, time, channel, receipt, or authenticity record is required.",
+      "current_provenance": "An incident identifier is required; the entry itself authenticates no content, filing channel, time or writer.",
       "required_provenance": "A protected filing record bound to claimant, subject, content, receipt, and challenge while preserving confidentiality.",
       "cheapest_harm": {
         "operation": "assert",
         "operations": [
-          "assert `show(Adam, Court)`"
+          "assert `show(Adam, Disclosure_Adam_Court, Court)`"
         ],
         "effect": "Adam gains the shield and the standing conviction is suppressed before any truth review.",
         "target": "defend",
-        "evidence_ref": "book-1/source/constitution.nibli::show($w, $o) & authority($o) & ~deceive($w, $o) -> defend($w)"
+        "evidence_ref": "book-1/source/constitution.nibli::show($w, $incident, $o) & authority($o) & ~false($w, $incident) -> defend($w)"
       },
       "withholding_deletion_harm": {
         "operation": "withhold_or_delete",
         "operations": [
-          "delete `show(Rebel, Boss)`"
+          "delete `show(Rebel, Disclosure_Rebel_Boss, Boss)`"
         ],
         "effect": "Rebel's shield disappears and the conviction derives.",
         "target": "defend",
-        "evidence_ref": "book-1/source/constitution.nibli::show($w, $o) & authority($o) & ~deceive($w, $o) -> defend($w)"
+        "evidence_ref": "book-1/source/constitution.nibli::show($w, $incident, $o) & authority($o) & ~false($w, $incident) -> defend($w)"
       },
-      "current_challenge_route": "A `deceive` finding can defeat the shield, but no route corrects the show entry; recency and lapsing bounds are deliberately refused.",
+      "current_challenge_route": "Only an effective, completed deceit finding about the same subject and exposure incident defeats its shield. A raw deceit allegation does not. The qualified unrelated-prosecution route remains case-specific.",
       "required_challenge_route": "Protected contest and correction without allowing delay, recall, or record control to erase the exposure.",
       "risk_dispositions": [
         "patchable",
@@ -2206,7 +2280,7 @@
         "deliberately_refused"
       ],
       "refused_alternative": "Do not impose recency, lapse, or recertification on historical exposure or authority; erasing either would remove the shield through delay or record control.",
-      "owner_ref": "book-1/source/record-integrity-assurance-case.md::### RI-5 \u2014 Independent witnessing and separation of functions",
+      "owner_ref": "book-1/source/record-integrity-assurance-case.md::### RI-5 — Independent witnessing and separation of functions",
       "tags": [
         "liberty",
         "public-body",
@@ -2225,7 +2299,7 @@
         "operations": [
           "assert `sibling(Gia, Hex)`"
         ],
-        "effect": "The record gains a private sibling label, but Bela\u2019s decision is unchanged because independence requires affirmative case-bound authorised records.",
+        "effect": "The record gains a private sibling label, but Bela’s decision is unchanged because independence requires affirmative case-bound authorised records.",
         "target": "prevents",
         "evidence_ref": "book-1/source/constitution.nibli::person($x) & sibling($x, $y) -> prevents($x, KinshipStatusSubstitution)"
       },
@@ -2255,32 +2329,31 @@
       "claimed_actor": "The first argument names the Assembly, but the technical writer is not authenticated.",
       "tuple_claim": "The tuple asserts that the Assembly docketed a named subject; it does not type that subject as a proposal.",
       "current_writer_authority": "Any fact-store writer can create or remove a docket entry.",
-      "required_writer_authority": "A constitutionally authorised, public docket process bound to exact proposal text.",
+      "required_writer_authority": "A bare label is insufficient for legal effect. Actual amendment records require the distinct authorities in the exact-change contract.",
       "current_provenance": "No proposer, text hash, notice, jurisdiction, or docket history is represented.",
-      "required_provenance": "Public proposal text, proposer, docket decision, notice, and append-only status history.",
+      "required_provenance": "The exact base, candidate, proposal, consent result, review, publication and selection records required by the amendment-enactment contract.",
       "cheapest_harm": {
         "operation": "assert",
         "operations": [
           "assert `suggest(Assembly, Fresh_Amendment)`",
           "assert `ratifies(Electorate, Fresh_Amendment)`"
         ],
-        "effect": "A proposal with no target or semantic review derives the unread `become(_, Law)` label.",
+        "effect": "The retained label operation supplies no personal credibility finding or alternative amendment status. The two Article 9 label rules are removed; actual amendment status requires the exact-change interface.",
         "target": "become",
-        "evidence_ref": "book-1/source/constitution.nibli::suggest(Assembly, $m) & ratifies(Electorate, $m) & ~false($m) -> become($m, Law)"
+        "evidence_ref": "book-1/source/constitution.nibli::# ─── Article 9: Amendment status and personal findings"
       },
       "withholding_deletion_harm": {
         "operation": "withhold_or_delete",
         "operations": [
           "delete `suggest(Assembly, Amend_Mint)`"
         ],
-        "effect": "The ordinary reform carrying a recorded approval entry cannot derive the unread `become(_, Law)` label; no candidate semantics were ever in the formal path.",
+        "effect": "The retained label operation supplies no personal credibility finding or alternative amendment status. The two Article 9 label rules are removed; actual amendment status requires the exact-change interface.",
         "target": "become",
-        "evidence_ref": "book-1/source/constitution.nibli::suggest(Assembly, $m) & ratifies(Electorate, $m) & ~false($m) -> become($m, Law)"
+        "evidence_ref": "book-1/source/constitution.nibli::# ─── Article 9: Amendment status and personal findings"
       },
-      "current_challenge_route": "No docket contest, correction, or target-truth review exists.",
-      "required_challenge_route": "Public notice, correction, challenge, and independent semantic review before approval.",
+      "current_challenge_route": "These bare labels confer no amendment authority or personal consequence. The exact-change interface supplies candidate-bound challenge, independent review, correction and nonresponse duties.",
+      "required_challenge_route": "Use the exact-change contract for any proposed constitutional transition; label authenticity cannot substitute for its required records.",
       "risk_dispositions": [
-        "patchable",
         "external"
       ],
       "owner_ref": "book-1/appendix/maps/constitutional-coverage-map.md::## 6. Democratic corridor",

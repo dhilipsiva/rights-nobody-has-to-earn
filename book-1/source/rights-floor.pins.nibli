@@ -1,3 +1,4 @@
+# Custody and physical holding establish protection duties, not shelter or speech actuality.
 # ── Constitution pins: constitution.nibli ───────────────────────────────────────
 #
 # KIND: CONTENT pin. The fixture is the SUBJECT of these pins, so it is loaded
@@ -22,7 +23,7 @@
 # is untouched. Pin a FALSE only where the KB could have said TRUE, and say in
 # the comment what would flip it.
 
-:expect-pins 100
+:expect-pins 102
 # --- v0.1 regression pins ---
 ? false(Bela).
 # => TRUE
@@ -45,7 +46,7 @@
 ? travel(Jala).
 # => TRUE
 ? expresses(Adam).
-# => TRUE
+# => FALSE
 ? defend(Rebel).
 # => TRUE
 ? prisoner(Rebel).
@@ -57,7 +58,7 @@
 ? building(LowSec, Nando).
 # => FALSE
 ? dwell(Hano).
-# => TRUE
+# => FALSE
 # --- E1/E2/E3 closures ---
 ? defend(Don).
 # => FALSE
@@ -96,23 +97,23 @@
 ? err(Hano, Placement).
 # => FALSE
 ? dwell(Ruk).
-# => TRUE
+# => FALSE
 # --- Article 9 ---
 ? false(Amend_Floor).
-# => TRUE
+# => FALSE
 ? become(Amend_Floor, Law).
 # => FALSE
 ? become(Amend_Mint, Law).
-# => TRUE
+# => FALSE
 ? false(Amend_Meta).
-# => TRUE
+# => FALSE
 ? become(Amend_Meta, Law).
 # => FALSE
 # --- fidelity table ---
 ? person(Hano).
 # => TRUE
 ? expresses(Hano).
-# => TRUE
+# => FALSE
 ? travel(Hano).
 # => FALSE
 ? travel(Adam).
@@ -133,7 +134,7 @@
 ? decide(Jala, Ballot).
 # => TRUE
 ? err(Hano, Isolation).
-# => TRUE
+# => FALSE
 
 # ── FIREWALL: no rule may punish the absence of a floor right ────────────────
 :refuse reasoning /'prisoner' -> 'believe'/
@@ -208,10 +209,8 @@ owe(State, Provision, Sokk).
 :refuse reasoning /declared derived-only/
 building(HighSec, Ghost).
 
-# The complement half: closing a relation must not break its derivation, or the
-# guarantee is just a ban. Each of these still derives from its new asserted
-# source — public(Court); clear(Nia) beside the appeals judgment [v0.9]; and
-# Article 6's conviction rule.
+# Closed conclusions still derive from their qualified sources: public answerability,
+# Nia's case-specific appellate order, and current lawful custody.
 ? authority(Court).
 # => TRUE
 
@@ -264,10 +263,7 @@ building(HighSec, Ghost).
 ? permits(Review, State).
 # => FALSE
 
-# NAMING A DEBTOR IS NOT PAYING THE DEBT. This is the pin that stops the article
-# being read as provision: the floor actualities are exactly as FALSE as they
-# were before it existed. If this ever flips, a delivery layer arrived and
-# chapter 4 must be rewritten — which would be good news.
+# The debt alone establishes no floor actuality; independent evidence is required.
 ? eats(Bela).
 # => FALSE
 
@@ -293,14 +289,52 @@ building(HighSec, Ghost).
 all $x: person($x) & ~owe(State, Provision, $x) -> prisoner($x).
 
 # ── ARTICLE 6: release ───────────────────────────────────────────────────────
-# Nobody in the shipped cast is released, so the guard is inert by default and
-# every verdict above is unaffected. This block asserts a release fact, and with
-# the controls below scoped it is the last thing in the file the knowledge base
-# keeps — it changes Hano for everything after it.
+# This stateful sequence retains the raw completion report and then supplies a
+# qualified case-specific order. Only the order ends the custody authority.
 ? free(Hano).
 # => FALSE
 
 free(Hano).
+
+# A raw completion report has no authority; the qualified case order does.
+? prisoner(Hano).
+# => TRUE
+? travel(Hano).
+# => FALSE
+list(Floor_Hano_Completion, Hano, Case_Hano, CustodyRelief).
+list(Floor_Hano_Completion, SentenceSatisfied, Evidence_Floor_Hano_Completion, CustodyReliefGroundEvidence).
+judge(Appeals, Floor_Hano_Completion).
+judge(CustodyAppealReview, Floor_Hano_Completion).
+authorized(Appeals, CustodyAppellateAuthority, Floor_Hano_Completion).
+authorized(CustodyAppealReview, IndependentCustodyDispositionReviewer, Floor_Hano_Completion).
+observe(Appeals, Floor_Hano_Completion, Hano, CustodyReliefSubjectScope).
+observe(CustodyAppealReview, Floor_Hano_Completion, Hano, CustodyReliefSubjectScope).
+observe(Appeals, Floor_Hano_Completion, Case_Hano, CustodyReliefCaseScope).
+observe(CustodyAppealReview, Floor_Hano_Completion, Case_Hano, CustodyReliefCaseScope).
+observe(Appeals, Floor_Hano_Completion, Incident_Case_Hano, CustodyReliefIncidentScope).
+observe(CustodyAppealReview, Floor_Hano_Completion, Incident_Case_Hano, CustodyReliefIncidentScope).
+observe(Appeals, Floor_Hano_Completion, PublicInjuryOffence, CustodyReliefOffenceScope).
+observe(CustodyAppealReview, Floor_Hano_Completion, PublicInjuryOffence, CustodyReliefOffenceScope).
+observe(Appeals, Floor_Hano_Completion, SentenceSatisfied, CustodyReliefGroundScope).
+observe(CustodyAppealReview, Floor_Hano_Completion, SentenceSatisfied, CustodyReliefGroundScope).
+observe(Appeals, Floor_Hano_Completion, Evidence_Floor_Hano_Completion, CustodyReliefEvidenceScope).
+observe(CustodyAppealReview, Floor_Hano_Completion, Evidence_Floor_Hano_Completion, CustodyReliefEvidenceScope).
+observe(Appeals, Floor_Hano_Completion, NoticeCounselEvidenceAccessHearingAndReasons, CustodyReliefProcedureScope).
+observe(CustodyAppealReview, Floor_Hano_Completion, NoticeCounselEvidenceAccessHearingAndReasons, CustodyReliefProcedureScope).
+observe(Chronicle, Floor_Hano_Completion, Appeals, CustodyAppealActorEligibleAtDecisionScope).
+observe(TemporalReview, Floor_Hano_Completion, Appeals, CustodyAppealActorEligibleAtDecisionScope).
+observe(Chronicle, Floor_Hano_Completion, CustodyAppealReview, CustodyDispositionReviewerEligibleAtDecisionScope).
+observe(TemporalReview, Floor_Hano_Completion, CustodyAppealReview, CustodyDispositionReviewerEligibleAtDecisionScope).
+list(Relief_Start_Floor_Hano_Completion, Case_Hano, Floor_Hano_Completion, RecordSequence).
+observe(Chronicle, Relief_Start_Floor_Hano_Completion, Case_Hano, RecordStartScope).
+observe(Chronicle, Relief_Start_Floor_Hano_Completion, Floor_Hano_Completion, RecordEndScope).
+observe(TemporalReview, Relief_Start_Floor_Hano_Completion, Case_Hano, RecordStartScope).
+observe(TemporalReview, Relief_Start_Floor_Hano_Completion, Floor_Hano_Completion, RecordEndScope).
+list(Relief_End_Floor_Hano_Completion, Floor_Hano_Completion, Epoch_Current, RecordSequence).
+observe(Chronicle, Relief_End_Floor_Hano_Completion, Floor_Hano_Completion, RecordStartScope).
+observe(Chronicle, Relief_End_Floor_Hano_Completion, Epoch_Current, RecordEndScope).
+observe(TemporalReview, Relief_End_Floor_Hano_Completion, Floor_Hano_Completion, RecordStartScope).
+observe(TemporalReview, Relief_End_Floor_Hano_Completion, Epoch_Current, RecordEndScope).
 
 # The deprivation ends. The record of the conviction does not: `prisoner` is
 # blocked, but nothing pretends the injury and the judgment were not written.
@@ -322,18 +356,15 @@ free(Hano).
 ? owe(State, Provision, Hano).
 # => TRUE
 
-# WHAT RELEASE COSTS, and it is the delivery gap arriving where it can be felt:
-# `expresses` and `dwell` are the only two floor rights this design ever actually
-# delivers, and both derive ONLY for prisoners. Leaving custody returns a person
-# to the general population, where nothing is delivered to anyone. Being OWED is
-# undisturbed above; the only thing that ever ARRIVED stops.
+# Release changes no delivery conclusion. Neither a sentence nor a placement
+# was a receipt; the independent floor debts remain throughout.
 ? expresses(Hano).
 # => FALSE
 
 ? dwell(Hano).
 # => FALSE
 
-# The isolation marker stops, correctly.
+# No positive isolation finding was supplied; a release is not a condition report.
 ? err(Hano, Isolation).
 # => FALSE
 
@@ -349,35 +380,23 @@ free(Hano).
 
 
 # ── COMPLEMENT CONTROLS: the named non-floor boundaries ────────────────────
-# ORDERING USED TO PROTECT EVERY PIN BELOW THIS BLOCK, AND WHY IT HAD TO IS
-# STILL THE POINT. The first three controls load under `:accept-scoped`: each is
-# compiled, its loadability is the verdict, and it is retracted before the next
-# pin runs, so nothing below inherits it — measured, a `? prisoner(Quin).`
-# probe dropped in among these controls comes out FALSE. Under plain
-# `:accept`, which leaves the rule in the KB, every one of these adds a route
-# to `prisoner` that Article 6 does not gate: measured on this file before the
-# conversion, `prisoner(Quin)` was TRUE with no conviction anywhere behind it,
-# and `prisoner(Hano)` TRUE with `free(Hano)` asserted — a released person
-# dragged back in. `? prisoner(Adam).` used to sit below these and was a
-# vacuous green: it would have passed with Article 6 deleted outright. Scoping
-# retired the instruction to keep controls last, not the reason for it, and it
-# is not verify.sh that puts the base back: the retraction is the engine's — one
-# that fails is a harness error, not a pin that goes quietly green.
+# Scoped controls are removed before the next pin. Refused controls never enter
+# the model. Keep each expected verdict: incidental cycles differ from the floor wall.
 :accept-scoped
 all $x: person($x) & ~home($x) -> prisoner($x).
 
 :accept-scoped
 all $x: person($x) & ~choose($x) -> prisoner($x).
 
-:accept-scoped
+# This non-floor control is refused because case-placement permission reads custody.
+:refuse reasoning /Unstratifiable/
 all $x: person($x) & ~permits($x) -> prisoner($x).
 
-# The positive parentage repair also makes this control a negative cycle:
-# prisoner -> person -> parent -> false, through the existing conflict-of-
-# interest rule. This is not another floor predicate. Preserve its earlier
-# acceptance in the explicit without-positive-relationships counterfactual;
-# the current, stronger model must refuse it.
-:refuse reasoning /Unstratifiable/
+# Credibility is not a floor condition. The case-bound finding no longer
+# derives from parenthood, so that former incidental negative cycle is absent.
+# Keep the same non-floor control scoped; the actual law gives it no custody
+# effect, and the eight floor refusals above remain required.
+:accept-scoped
 all $x: person($x) & ~false($x) -> prisoner($x).
 
 # NOT a control, deliberately: ~travel is refused too, but for a reason unrelated

@@ -62,11 +62,12 @@ teaching produces no recognition. The same condition applies to every route:
 recorded employment or another examination cannot restore recognition while the void
 continues to derive. A loss is recorded beside it.
 
-The examination route has further conditions. Lupo receives no recognition for
-an examination recorded as deceitful; an adjudicated deceit also supports a
-void. Dev's judgment of Dev's own child produces a void, which closes all recognition
-routes. Vex's carried void likewise blocks recognition from an examination even
-though the examination and its ground remain recorded.
+The examination route has further conditions. Lupo's adjudicated case closes
+recognition; a raw allegation alone would not. Dev's judgment of Dev's own
+child cannot earn examination recognition, but it does not automatically void
+Dev or close the other routes. Vex's prior case blocks recognition even though
+the examination and its ground remain recorded. A carried credential
+restriction alone cannot supply that personal finding.
 
 This is a broad consequence within a deliberately narrow system. It suppresses
 recognition for contributions unrelated to the finding, not merely for the
@@ -75,12 +76,12 @@ worthless or that the act ceased to benefit anyone. Nor is recognition the
 whole effect of a void: the later chapters also examine its consequences for
 an auditor's authority to sign findings.
 
-The record includes restoration. Where an Appeals judgment and forgiveness
-stop the applicable void from deriving, recorded contributions can support
-recognition again, including contributions recorded while the void stood.
-A contribution record alone does not compel that decision. The supplied pair also authenticates neither
-its writer nor its purpose. The chapters on voiding and clawback examine the
-finding, its scope and the route back in detail.
+The record includes restoration. A qualified appellate act naming the
+particular finding can end its effect. Recorded contributions can then support
+recognition again, including contributions recorded while the void stood,
+provided no other effective finding blocks it. A contribution record or generic
+forgiveness flag cannot supply that disposition. The chapters on voiding and
+clawback examine the finding, its scope and the route back in detail.
 
 Bela remains a person, is owed food, retains the ballot and may travel. No
 prisoner conclusion follows for Bela. Cira is recognised for Cira's own contribution;
@@ -89,9 +90,10 @@ student's standing is collateral for recognition.
 
 ## Recognition for examination
 
-Gia's recognition depends on a judgment, a documented examination and a cited ground,
-with no recorded deceit of the examined person, recall or void of the examiner.
-It does not depend on finding guilt.
+Gia's recognition depends on a judgment, a documented examination and a cited
+ground, with no recall or effective personal void of the examiner. A parent's
+judgment about their child is excluded. Recognition does not depend on finding
+guilt, and an unsupported deceit allegation does not take it away.
 
 Yano's case tests the ground requirement. A judgment and documented examination
 of Adam produce no recognition. Add a citation naming Hunch and recognition

@@ -2,6 +2,14 @@
 
 # Book 1 Delivery and Receipt Decision
 
+**Final item-19 integration, 2026-09-20.** The current source passes 88,024
+pins across 16,087 cases in 1,169.06s, with complete contradiction checks and
+no findings. No active known-defect annotations remain. The focused and failed
+runs below are historical steps, not the final result. The five-minute target
+is unmet. These checks establish the loaded model, not outside authenticity
+or performed institutional acts. See `CLAUDE.md` for the development and
+manuscript checks. The fresh whole-manuscript review remains item 20.
+
 **Author-ratified 2026-08-18.** Three questions were put and answered: which
 floor items receive an arrival route, who may write the recipient-side receipt
 for a person who can acknowledge through no channel, and whether the routes ship
@@ -13,6 +21,73 @@ creates no predicate, rule, pin, fixture, chapter, defect resolution, posture
 change, or public claim by itself.
 
 ## 1. Decision
+
+**2026-09-20 custody actuality supersession.** A sentence, named placement or
+reported physical holding establishes no delivered shelter or recorded speech.
+The old custody and actual-holding producers of `dwell` and `expresses` are
+removed. Humane-condition, shelter, voice, counsel and independent-review duties
+continue, including when holding was unlawful or permission is withdrawn.
+Shelter requires its own independently witnessed recipient evidence. The new
+actual-holding receipt control and the retained missing-receipt-route
+counterfactual test that distinction directly. No expression actuality is
+inferred from compelled presence: securing an opportunity to speak is a duty,
+not evidence of somebody's words. The liberty shell remains separate.
+
+The rejected alternative was to retain the outputs and call them duties or
+labels in prose. Their formal names are actualities, so that would preserve
+the false inference and conflict with the ordinary receipt route. Separate
+positive evidence resolves the mechanism without making the floor conditional.
+Missing evidence says only that the particular conclusion is not established;
+it is neither evidence of deprivation nor performance of the owed protection.
+The exact reader revisions are `session-drafted, author-approved under
+delegated approval (2026-09-13)`. Full item-19 validation is pending.
+
+**2026-09-19 isolation supersession.** Absence of a company receipt is never
+itself a finding of isolation, including when other people have receipts.
+The isolation marker now consumes a positive condition finding tied to the
+human subject, holding, responsible holder, place, period and evidence, with
+separate authorised witness and reviewer, notice, reasons and contest.
+Neither participant may be the subject or holder. Conflicting authorised
+fields prevent the finding; unrelated uncredentialed noise does not. Positive
+human identification and the person's floor survive a disputed condition
+finding. A later company receipt does not disprove a different period's breach.
+
+Routine custody review is owed independently of the marker. A conditions
+complaint opens review without the holder's permission or a completed finding.
+The complaint does not itself establish the breach. A positive isolation
+finding can also protect somebody physically held without a lawful sentence.
+This separates a supportive review trigger from an evidentiary conclusion.
+
+The first 37-pin regression exhibits 16 failures on the absence-based source.
+The repaired and expanded 41-pin case passes in 10.74s, including its
+contradiction check. The original seven absence cases remain negative
+regressions, with an explicit weaker-rule counterpart preserving the old
+inference. No arrival is invented for the cast and no outside condition is
+claimed to have been observed by this project. These changes and the exact
+reader revisions are `session-drafted, author-approved under delegated
+approval (2026-09-13)`. The final item-19 verifier remains pending.
+
+**2026-09-20 bounded observation disposition.** Consider two possible outside
+histories represented by precisely the same supplied record: a meal arrived but
+no receipt was supplied, or no meal arrived and no receipt was supplied. A
+calculation whose only input is that record has the same input in both cases
+and must return the same answer. It therefore cannot reliably identify which
+history occurred. This is a proof about identical supplied inputs, not an
+impossibility claim about obtaining better evidence or running institutions.
+
+The absence-marker counterfactual was tried and retained: it calls missing
+observations breaches even in the first history. Relabelling all entitlements
+as delivered has the opposite false conclusion. Positive recipient evidence
+and independent observations distinguish the histories when supplied. Until
+then, the itemised State debts, Advocate's unconditional initiation duty,
+assistance, usable challenge, reviewed remedy and continuity remain owed;
+help does not wait on proving either delivery or breach. The recipient bears
+the risk of unperformed duties, and independent inspection and preserved
+recipient evidence remain necessary safeguards. A newly observed failure
+requires its own challenge and remedy; new reliable evidence changes the
+conclusion. The marker is narrowed to claims the evidence can support rather
+than defended as a detector of unobserved conditions. This resolves the legal
+inference while leaving actual observation and performance to be established.
 
 **Which items.** Delivery and receipt routes are enacted for `eats`, `secure`,
 `meets`, `healthy`, and `dwell`. `learn` keeps the existing teaching route
@@ -76,13 +151,12 @@ that a person believes is the compelled personal state the design refuses, and
 the firewall exists to stop belief being read at all. A delivery route here would
 not close a gap; it would build the instrument the line was written against.
 
-**`expresses` is not a clean liberty case, and the distinction must be stated.**
-It already has a producer — a confined person's words go into the record — and
-the book treats that as a genuine arrival, not a decoration. So the claim is
-narrower than for `believe`: **the liberty of expression is not delivered, while
-the record of speech can arrive.** The liberty shell carries the freedom as a
-person-held limit on power, using constants that are deliberately not joined to
-the floor predicate. Do not wire them together.
+**`expresses` has no delivery producer under the 2026-09-20 supersession.**
+Custody and physical holding create duties to secure voice and access; neither
+records that speech occurred. The liberty shell carries expression as a
+person-held limit on power, using constants deliberately not joined to the
+floor predicate. Keep the duty, liberty and any independently evidenced act
+separate. A provider cannot certify another person's expression by holding them.
 
 Both omissions are recorded as closed classification decisions with risk-based
 reasons, on the established pattern, so that a later reader finds a decision

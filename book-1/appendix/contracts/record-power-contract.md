@@ -2,11 +2,36 @@
 
 # Records, surveillance and automated power
 
+**Final item-19 integration, 2026-09-20.** The current source passes 88,024
+pins across 16,087 cases in 1,169.06s, with complete contradiction checks and
+no findings. No active known-defect annotations remain. The focused and failed
+runs below are historical steps, not the final result. The five-minute target
+is unmet. These checks establish the loaded model, not outside authenticity
+or performed institutional acts. See `CLAUDE.md` for the development and
+manuscript checks. The fresh whole-manuscript review remains item 20.
+
 Implementation contract for the author-directed TODO item of the same name,
 under the 2026-08-03 expanded mandate and the 2026-09-12 verification ruling.
 It supplies the conditions a holder must establish before it keeps, watches,
 profiles or automates over somebody's record, and what it owes while it has
 not. It stores nothing, authenticates nothing and operates no system.
+
+**Continuing protections — 2026-09-19 supersession.** The fully specified
+recorded undertaking supplies a separate basis for its accuracy, security,
+anti-retaliation, notification, explanation and human-review duties and the
+subject's contest right. Current authority, completion and absence of a defect
+or conflicting later value are not conditions for these continuing protections.
+The exact raw subject, holder, purpose and other shared fields still bind a
+dependent undertaking to its named holding. This basis grants no permission
+to keep or process data and makes no claim that an operation occurred.
+
+This resolves the withdrawal sequence that formerly removed six protections
+alongside authority. A defect against either dependent record also leaves its
+protections in force. Missing original fields, unauthorized writers, fused
+reviewers and borrowed subjects still fail their tested contracts; a request
+for review has its separate route. Deletion of all supplied evidence remains
+an input limit, not a legal discharge. No duty is represented as performed or
+waived by withdrawal.
 
 ## The record domains, and what a holding must establish
 
@@ -78,7 +103,8 @@ conclude nothing, and each has its own case. Three mutually distinct attesters
 must agree and none of them may be the holder; a challenge reader and an
 independent alternate are distinct from each other, from the attesters and from
 the holder. Two attesters disagreeing about a single-valued scope raise a record
-ambiguity and nothing completes.
+ambiguity and nothing completes. A fully specified undertaking still carries
+its continuing protections; conflicting later entries cannot erase them.
 
 The subject is an opaque handle. The family concludes nothing about a person:
 an entry naming somebody, even beside a raw `rotten` report, leaves personhood,
@@ -108,7 +134,7 @@ was deleted, corrected, explained or contested.
 ## Executable cases and what they check
 
 `record-power-source.json` is the semantic input to `./generate.sh record-power`.
-It writes the `RECORD-POWER-RULES` block — 120 rules — and 445 isolated cases
+It writes the `RECORD-POWER-RULES` block — 120 rules — and 447 isolated cases
 under `tests/pins/record-power/`. Every contract has positive, withheld,
 per-scope omission, unauthorized-attester, stale, self-review, holder-as-reviewer,
 fused-alternate, mismatched-version, period-drift and conflicting-value cases,
@@ -121,10 +147,11 @@ the domain vocabulary, the purpose vocabulary, and the separation of the human
 reviewer from the holder — each paired with the positive control showing what it
 prevented.
 
-Eight integration cases carry the sequences: a holding, the processing it
+The integration cases carry the sequences: a holding, the processing it
 licenses and the automated support that reads it all standing, then one defect
-against the holding stopping all three while the subject handle is still not a
-person and the cast's rights survive; an unrelated defect leaving the record
+against the holding stopping the permissions while duties and contest remain,
+the subject handle is still not a person and the cast's rights survive; defects
+against either dependent record preserving its protections; an unrelated defect leaving the record
 standing; the holding failing to cover another subject, another domain or
 another purpose; the automated reviewer refused when it is the holder, with its
 counterfactual; a request and its certified nonresponse; a noted entry

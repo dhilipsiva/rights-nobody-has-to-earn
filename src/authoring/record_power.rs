@@ -37,6 +37,8 @@ struct Contract {
     kind: String,
     fields: Vec<[String; 2]>,
     heads: Vec<String>,
+    #[serde(default)]
+    continuing_heads: Vec<String>,
     extra: Vec<String>,
     record_dependency: bool,
     bindings: BTreeMap<String, String>,
@@ -129,6 +131,26 @@ fn premises(source: &Source, contract: &Contract) -> Vec<String> {
     atoms
 }
 
+// Duties attach to the fully specified undertaking, including the exact raw
+// holding to which a dependent instrument refers. They do not authorize use.
+// Withdrawal or conflicting later entries cannot discharge those duties or
+// the subject's contest right. The original positive fields and separations
+// still bind the beneficiary, responsible actor and independent reviewer.
+fn continuing_premises(source: &Source, contract: &Contract) -> Vec<String> {
+    premises(source, contract)
+        .into_iter()
+        .filter(|atom| {
+            !matches!(
+                atom.as_str(),
+                "~related($record, RecordEntryAmbiguity)"
+                    | "~contradict($record, RecordUseAuthorization)"
+                    | "complete($authorization, ReviewedRecordHolding, $subject)"
+                    | "authority($holder, $purpose, $authorization)"
+            )
+        })
+        .collect()
+}
+
 fn rule(atoms: &[String], head: &str) -> String {
     let text = format!("{} {head}", atoms.join(" "));
     let re = Regex::new(r"\$[a-z][a-z0-9_]*").unwrap();
@@ -173,7 +195,12 @@ fn rules(source: &Source) -> Vec<String> {
     rules.push("all $first: all $second: all $record: all $scope: all $a: all $b: related($first, $record, RecordEntryAttester) & related($second, $record, RecordEntryAttester) & member($scope, RecordSingleValueScope) & observe($first, $record, $a, $scope) & observe($second, $record, $b, $scope) & ~($a = $b) -> related($record, RecordEntryAmbiguity).".into());
     for contract in &source.contracts {
         for head in heads(contract) {
-            rules.push(rule(&premises(source, contract), &head));
+            let atoms = if contract.continuing_heads.contains(&head) {
+                continuing_premises(source, contract)
+            } else {
+                premises(source, contract)
+            };
+            rules.push(rule(&atoms, &head));
         }
     }
     // Asking to see, correct or object does not require the holder's permission
@@ -264,9 +291,27 @@ fn query(atom: &str, expected: bool) -> String {
 }
 
 fn queries(contract: &Contract, values: &BTreeMap<String, String>, expected: bool) -> String {
+    queries_with_continuity(contract, values, expected, expected)
+}
+
+fn queries_with_continuity(
+    contract: &Contract,
+    values: &BTreeMap<String, String>,
+    power: bool,
+    protection: bool,
+) -> String {
     heads(contract)
         .iter()
-        .map(|h| query(&ground(h, values), expected))
+        .map(|h| {
+            query(
+                &ground(h, values),
+                if contract.continuing_heads.contains(h) {
+                    protection
+                } else {
+                    power
+                },
+            )
+        })
         .collect()
 }
 
@@ -483,13 +528,13 @@ pub(crate) fn generate(context: &Context, export: &mut Export) -> Result<(), Err
                 false,
             )?;
             let conflict = facts.clone() + &new + "\n";
-            emit(
+            add_case(
+                context,
                 export,
-                &format!("conflicting-{label}"),
+                &format!("{}/conflicting-{label}", contract.id),
                 "live",
-                &conflict,
-                &values,
-                false,
+                &(dep.clone() + &conflict),
+                &queries_with_continuity(contract, &values, false, true),
             )?;
         }
         if contract.record_dependency {
@@ -542,9 +587,9 @@ fn integration_cases(context: &Context, export: &mut Export, source: &Source) ->
     };
 
     // A holding, the processing it licenses and the automated support that
-    // reads it all stand, then one reviewed defect against the holding stops
-    // the lot. The subject handle was never a person, and the cast's rights are
-    // exactly where they were.
+    // reads it all stand. One reviewed defect withdraws the holding and its
+    // dependent permissions while preserving the duties and subject protection.
+    // The opaque subject handle gains no personal status from this sequence.
     let holding = get("holding");
     let processing = get("processing");
     let automated = get("automated");
@@ -585,9 +630,14 @@ fn integration_cases(context: &Context, export: &mut Export, source: &Source) ->
     steps.push_str(&queries(automated, &supported, true));
     steps.push_str(&fixture(source, defect, &against_holding));
     steps.push_str(&queries(defect, &against_holding, true));
-    steps.push_str(&queries(holding, &authorization, false));
-    steps.push_str(&queries(processing, &values, false));
-    steps.push_str(&queries(automated, &supported, false));
+    steps.push_str(&queries_with_continuity(
+        holding,
+        &authorization,
+        false,
+        true,
+    ));
+    steps.push_str(&queries_with_continuity(processing, &values, false, true));
+    steps.push_str(&queries_with_continuity(automated, &supported, false, true));
     for (atom, expected) in [
         (format!("person({subject})"), false),
         (format!("false({subject})"), false),
@@ -608,6 +658,30 @@ fn integration_cases(context: &Context, export: &mut Export, source: &Source) ->
         &full,
         &steps,
     )?;
+
+    // A defect against the dependent record itself also leaves its duties and
+    // contest right in force; the parent remains authorized in this sequence.
+    for (contract, affected) in [(processing, &values), (automated, &supported)] {
+        let mut finding = bindings(source, defect, "RecordOwnDefect");
+        finding.insert("$target".into(), affected["$record"].clone());
+        finding.insert("$target_source".into(), affected["$source"].clone());
+        for name in CARRIED {
+            finding.insert(name.into(), affected[name].clone());
+        }
+        let sequence = queries(contract, affected, true)
+            + &fixture(source, defect, &finding)
+            + &queries(defect, &finding, true)
+            + &queries_with_continuity(contract, affected, false, true)
+            + &queries(holding, &authorization, true);
+        add_case(
+            context,
+            export,
+            &format!("power/{}-own-defect-retains-protection", contract.id),
+            "live",
+            &full,
+            &sequence,
+        )?;
+    }
 
     // A defect about a different holding leaves this one standing.
     let mut elsewhere = against_holding.clone();

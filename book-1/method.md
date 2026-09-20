@@ -193,14 +193,19 @@ This request is executed in its
 [own case](../tests/pins/justice/appeal/request-without-operator-or-previous-permission/expect.pins.nibli)
 and in [chapter 21's companion file](21-a-way-to-be-heard.pins.nibli).
 
-Relief has its own rule:
+A qualified relief record has a separate case-specific effect:
 
 ```nibli
-all $x: clear($x) & judge(Appeals, $x) -> permits(Appeals, $x).
+all $case: all $order: all $subject: responsible($order, CustodyRelief) & list($order, $subject, $case, CustodyRelief) -> clean($case, CustodyConfinementBar).
 ```
 
-The supplied record has the clearing and appellate-judgment entries for Nia.
-It has no such relief for Ruk. The chapter's pins obtain:
+The first premise is itself a conclusion from the complete relief contract:
+subject, case, incident, offence, recognised ground, evidence, procedure,
+qualified independent actors and witnessed decision order. A bare clearing
+entry or generic Appeals judgment cannot produce it.
+
+Nia's record supplies a qualified final order for Case_Nia. Ruk's does not.
+The chapter's pins obtain:
 
 ```nibli
 ? permits(Appeals, Nia).
@@ -214,26 +219,23 @@ It has no such relief for Ruk. The chapter's pins obtain:
 # => FALSE
 ```
 
-The custody rules require `~permits(Appeals, $offender)` among their
-conditions. Relief therefore blocks custody deriving for Nia. The absence
-of relief does not alone confine Ruk: the case, injury, judgment, current
-custody authority and the other conditions must also be present. Qualified
-review of an unrelated prosecution is a separate route where a disclosure
-shield otherwise applies. A short excerpt of the relief rule is not the
-whole custody decision.
+The permission summaries display relief; the custody rule checks the bar against
+its exact case. Absence of a bar does not alone confine Ruk. Qualified merits,
+current authority, lawful placement and accessible challenge intake must also
+be present. A pending filing suspends that authority without pretending to be
+a final judgment. An unrelated prosecution still needs the independently
+qualified finding required to answer a disclosure shield.
 
-Consider this proposed rule, which the test deliberately asks the engine to
-reject:
+Consider this proposed rule, which the test asks the engine to reject:
 
 ```nibli
 :refuse reasoning /Unstratifiable/
-all $x: prisoner($x) -> permits(Appeals, $x).
+all $subject: all $case: prisoner($subject, $case) -> clean($case, CustodyConfinementBar).
 ```
 
-It says every prisoner has already received relief. It does not say every
-prisoner can request a hearing. It also creates a circular dependency:
-custody needs relief to be absent, while this rule produces relief from
-custody itself.
+It gives every confinement an automatic final bar against itself. It does not
+establish a right to request a hearing. Custody requires that bar to be absent,
+while this proposed rule produces it from custody, creating a negative cycle.
 
 Nibli's stratification check rejects that negative cycle. Relations can
 depend on conclusions in their own layer through positive rules, but a
@@ -428,40 +430,45 @@ are the places to inspect a particular conclusion.
 
 ## A pass can include a reproduced defect
 
-Some pins explicitly mark an expected result as a defect. Chapter 22 has
-this complete proposal-and-query sequence in the current constitution:
+An expected answer is not necessarily a desirable outcome. One amendment
+counterfactual tests two weaker rules: a declared protected target marks a
+proposal false, and a proposed and approved name receives a law label unless
+so marked. In that deliberately changed source, these entries have this result:
 
 ```nibli
 suggest(Assembly, Amend_Sneak).
 ratifies(Electorate, Amend_Sneak).
 
-:defect "a totality guard: a targetless proposal receives no law label"
 ? become(Amend_Sneak, Law).
 # => TRUE
 ```
 
-The proposal declares no target, yet receives the law label. A passing pin
-confirms that defect remains. It does not demonstrate protection against it.
-The marker states the result a repair would change, so the rule, expected
-answer and prose can be corrected together instead of contradicting one
-another. The executable record is in
-[chapter 22's pins](22-changing-the-rules.pins.nibli).
+The proposal declares no target, yet receives the law label. The passing
+counterfactual reproduces the weakness of those rules. It supplies no
+amendment authority in the actual constitution. The same entries on the
+actual source produce no law label; amendment status instead needs the
+candidate-specific certification, publication and effective-selection process.
+The paired checks use the same
+[supplied facts](../tests/pins/amendments/person-proposal-separation/fixture.nibli),
+with [ordinary expectations](../tests/pins/amendments/person-proposal-separation/expect.pins.nibli)
+and [counterfactual expectations](../tests/pins/amendments/person-proposal-separation/counterfactual.pins.nibli).
 
-The label does not itself install a source change. The amendment's separate
-cases test bounded effects and exact source bindings; its host reference
-model uses trusted local input and in-memory state. Neither the label nor
-that host establishes real authentication, democratic approval, publication
-or deployment. No successful test of one supplies the missing warrant for
-another.
+The cases also check that docketing a person's name supplies no personal
+credibility loss on the actual source, while the weaker rules do produce
+that loss. This is why the case's base and expected consequence matter as
+much as its pass status. The separate amendment host uses trusted local
+input and in-memory state. Its successful transitions establish no real
+authentication, democratic approval, publication or deployment.
 
-The isolation marker is another current defect expectation. It fires for
-the supplied prisoners because company does not derive for them; the cast
-contains no qualifying company receipt. The marker therefore cannot be
-read as an observation of solitary confinement. Its absence-based result
-and the duty it produces are tested in
-[chapter 30's pins](30-when-the-system-notices-it-broke.pins.nibli).
-Identifying the result accurately is necessary to repair or assess it; the
-description is not the repair.
+The isolation cases make the same distinction between a rule and its tested
+alternative. The [ordinary cases](../tests/pins/custody/condition-findings/expect.pins.nibli)
+require positive, independently reviewed evidence of denied contact tied to a
+person, holding, place and period. Missing company receipts do not qualify.
+The [counterfactual](../tests/pins/custody/condition-findings/counterfactual.pins.nibli)
+adds a weaker rule that treats every prisoner's missing company conclusion as
+isolation; its expected markers reproduce that unsound inference.
+[Chapter 30's pins](30-when-the-system-notices-it-broke.pins.nibli) separately
+check that routine custody review remains owed without a breach finding.
 
 The `:defect` markers are a list of declared defect expectations, not a
 complete inventory of everything that could be wrong. A passing suite can

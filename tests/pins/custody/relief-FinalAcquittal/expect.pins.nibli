@@ -1,0 +1,93 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 6
+? prisoner(ReliefFinalAcquittal).
+# => TRUE
+list(Order_ReliefFinalAcquittal, ReliefFinalAcquittal, Case_ReliefFinalAcquittal, CustodyRelief).
+list(Order_ReliefFinalAcquittal, FinalAcquittal, Evidence_Order_ReliefFinalAcquittal, CustodyReliefGroundEvidence).
+judge(Appeals, Order_ReliefFinalAcquittal).
+judge(CustodyAppealReview, Order_ReliefFinalAcquittal).
+authorized(Appeals, CustodyAppellateAuthority, Order_ReliefFinalAcquittal).
+authorized(CustodyAppealReview, IndependentCustodyDispositionReviewer, Order_ReliefFinalAcquittal).
+observe(Appeals, Order_ReliefFinalAcquittal, ReliefFinalAcquittal, CustodyReliefSubjectScope).
+observe(CustodyAppealReview, Order_ReliefFinalAcquittal, ReliefFinalAcquittal, CustodyReliefSubjectScope).
+observe(Appeals, Order_ReliefFinalAcquittal, Case_ReliefFinalAcquittal, CustodyReliefCaseScope).
+observe(CustodyAppealReview, Order_ReliefFinalAcquittal, Case_ReliefFinalAcquittal, CustodyReliefCaseScope).
+observe(Appeals, Order_ReliefFinalAcquittal, Incident_Case_ReliefFinalAcquittal, CustodyReliefIncidentScope).
+observe(CustodyAppealReview, Order_ReliefFinalAcquittal, Incident_Case_ReliefFinalAcquittal, CustodyReliefIncidentScope).
+observe(Appeals, Order_ReliefFinalAcquittal, PublicInjuryOffence, CustodyReliefOffenceScope).
+observe(CustodyAppealReview, Order_ReliefFinalAcquittal, PublicInjuryOffence, CustodyReliefOffenceScope).
+observe(Appeals, Order_ReliefFinalAcquittal, FinalAcquittal, CustodyReliefGroundScope).
+observe(CustodyAppealReview, Order_ReliefFinalAcquittal, FinalAcquittal, CustodyReliefGroundScope).
+observe(Appeals, Order_ReliefFinalAcquittal, Evidence_Order_ReliefFinalAcquittal, CustodyReliefEvidenceScope).
+observe(CustodyAppealReview, Order_ReliefFinalAcquittal, Evidence_Order_ReliefFinalAcquittal, CustodyReliefEvidenceScope).
+observe(Appeals, Order_ReliefFinalAcquittal, NoticeCounselEvidenceAccessHearingAndReasons, CustodyReliefProcedureScope).
+observe(CustodyAppealReview, Order_ReliefFinalAcquittal, NoticeCounselEvidenceAccessHearingAndReasons, CustodyReliefProcedureScope).
+observe(Chronicle, Order_ReliefFinalAcquittal, Appeals, CustodyAppealActorEligibleAtDecisionScope).
+observe(TemporalReview, Order_ReliefFinalAcquittal, Appeals, CustodyAppealActorEligibleAtDecisionScope).
+observe(Chronicle, Order_ReliefFinalAcquittal, CustodyAppealReview, CustodyDispositionReviewerEligibleAtDecisionScope).
+observe(TemporalReview, Order_ReliefFinalAcquittal, CustodyAppealReview, CustodyDispositionReviewerEligibleAtDecisionScope).
+list(Relief_Start_Order_ReliefFinalAcquittal, Case_ReliefFinalAcquittal, Order_ReliefFinalAcquittal, RecordSequence).
+observe(Chronicle, Relief_Start_Order_ReliefFinalAcquittal, Case_ReliefFinalAcquittal, RecordStartScope).
+observe(Chronicle, Relief_Start_Order_ReliefFinalAcquittal, Order_ReliefFinalAcquittal, RecordEndScope).
+observe(TemporalReview, Relief_Start_Order_ReliefFinalAcquittal, Case_ReliefFinalAcquittal, RecordStartScope).
+observe(TemporalReview, Relief_Start_Order_ReliefFinalAcquittal, Order_ReliefFinalAcquittal, RecordEndScope).
+list(Relief_End_Order_ReliefFinalAcquittal, Order_ReliefFinalAcquittal, Epoch_Current, RecordSequence).
+observe(Chronicle, Relief_End_Order_ReliefFinalAcquittal, Order_ReliefFinalAcquittal, RecordStartScope).
+observe(Chronicle, Relief_End_Order_ReliefFinalAcquittal, Epoch_Current, RecordEndScope).
+observe(TemporalReview, Relief_End_Order_ReliefFinalAcquittal, Order_ReliefFinalAcquittal, RecordStartScope).
+observe(TemporalReview, Relief_End_Order_ReliefFinalAcquittal, Epoch_Current, RecordEndScope).
+? responsible(Order_ReliefFinalAcquittal, CustodyRelief).
+# => TRUE
+? prisoner(ReliefFinalAcquittal).
+# => FALSE
+? travel(ReliefFinalAcquittal).
+# => TRUE
+? prisoner(Hano).
+# => TRUE
+list(Alias_ReliefFinalAcquittal, ReliefFinalAcquittal, Incident_Case_ReliefFinalAcquittal, CustodyMatter).
+list(Alias_ReliefFinalAcquittal, PublicInjuryOffence, Evidence_Alias_ReliefFinalAcquittal, CustodyOffenceEvidence).
+list(Alias_ReliefFinalAcquittal, Ivo, Prosecution, CustodyParties).
+list(Alias_ReliefFinalAcquittal, Court, CustodyMeritsReview, CustodyDecisionActors).
+judge(Court, Alias_ReliefFinalAcquittal).
+judge(CustodyMeritsReview, Alias_ReliefFinalAcquittal).
+authorized(Court, CustodyTrialAdjudicator, Alias_ReliefFinalAcquittal).
+authorized(CustodyMeritsReview, IndependentCustodyMeritsReviewer, Alias_ReliefFinalAcquittal).
+observe(Court, Alias_ReliefFinalAcquittal, ReliefFinalAcquittal, CustodySubjectScope).
+observe(CustodyMeritsReview, Alias_ReliefFinalAcquittal, ReliefFinalAcquittal, CustodySubjectScope).
+observe(Court, Alias_ReliefFinalAcquittal, Incident_Case_ReliefFinalAcquittal, CustodyIncidentScope).
+observe(CustodyMeritsReview, Alias_ReliefFinalAcquittal, Incident_Case_ReliefFinalAcquittal, CustodyIncidentScope).
+observe(Court, Alias_ReliefFinalAcquittal, PublicInjuryOffence, CustodyOffenceScope).
+observe(CustodyMeritsReview, Alias_ReliefFinalAcquittal, PublicInjuryOffence, CustodyOffenceScope).
+observe(Court, Alias_ReliefFinalAcquittal, Evidence_Alias_ReliefFinalAcquittal, CustodyEvidenceScope).
+observe(CustodyMeritsReview, Alias_ReliefFinalAcquittal, Evidence_Alias_ReliefFinalAcquittal, CustodyEvidenceScope).
+observe(Court, Alias_ReliefFinalAcquittal, Ivo, CustodyVictimScope).
+observe(CustodyMeritsReview, Alias_ReliefFinalAcquittal, Ivo, CustodyVictimScope).
+observe(Court, Alias_ReliefFinalAcquittal, Prosecution, CustodyProsecutorScope).
+observe(CustodyMeritsReview, Alias_ReliefFinalAcquittal, Prosecution, CustodyProsecutorScope).
+observe(Court, Alias_ReliefFinalAcquittal, PublicLawInForceBeforeTheAct, CustodyPriorLawScope).
+observe(CustodyMeritsReview, Alias_ReliefFinalAcquittal, PublicLawInForceBeforeTheAct, CustodyPriorLawScope).
+observe(Court, Alias_ReliefFinalAcquittal, IdentityActCausationAndRequiredMentalElementProvedBeyondReasonableDoubt, CustodyProofScope).
+observe(CustodyMeritsReview, Alias_ReliefFinalAcquittal, IdentityActCausationAndRequiredMentalElementProvedBeyondReasonableDoubt, CustodyProofScope).
+observe(Court, Alias_ReliefFinalAcquittal, NoPunishmentForStatusOrProtectedConduct, CustodyConductScope).
+observe(CustodyMeritsReview, Alias_ReliefFinalAcquittal, NoPunishmentForStatusOrProtectedConduct, CustodyConductScope).
+observe(Court, Alias_ReliefFinalAcquittal, AdmissibleDisclosedEvidenceNoCoercionOrDecisiveSecretEvidence, CustodyAdmissibilityScope).
+observe(CustodyMeritsReview, Alias_ReliefFinalAcquittal, AdmissibleDisclosedEvidenceNoCoercionOrDecisiveSecretEvidence, CustodyAdmissibilityScope).
+observe(Court, Alias_ReliefFinalAcquittal, NoticeCounselAccessibleHearingAndPublicReasons, CustodyProcedureScope).
+observe(CustodyMeritsReview, Alias_ReliefFinalAcquittal, NoticeCounselAccessibleHearingAndPublicReasons, CustodyProcedureScope).
+observe(Court, Alias_ReliefFinalAcquittal, IndependentlyAdjudicatedDefencesAndExculpatoryEvidence, CustodyDefencesScope).
+observe(CustodyMeritsReview, Alias_ReliefFinalAcquittal, IndependentlyAdjudicatedDefencesAndExculpatoryEvidence, CustodyDefencesScope).
+observe(Court, Alias_ReliefFinalAcquittal, IndividualNecessaryProportionateLeastRestrictiveCustodialSentence, CustodySentenceScope).
+observe(CustodyMeritsReview, Alias_ReliefFinalAcquittal, IndividualNecessaryProportionateLeastRestrictiveCustodialSentence, CustodySentenceScope).
+observe(Court, Alias_ReliefFinalAcquittal, NoDoubleJeopardyOrUnexpiredBar, CustodyFinalityScope).
+observe(CustodyMeritsReview, Alias_ReliefFinalAcquittal, NoDoubleJeopardyOrUnexpiredBar, CustodyFinalityScope).
+observe(Chronicle, Alias_ReliefFinalAcquittal, Court, CustodyTrialActorEligibleAtDecisionScope).
+observe(TemporalReview, Alias_ReliefFinalAcquittal, Court, CustodyTrialActorEligibleAtDecisionScope).
+observe(Chronicle, Alias_ReliefFinalAcquittal, CustodyMeritsReview, CustodyMeritsReviewerEligibleAtDecisionScope).
+observe(TemporalReview, Alias_ReliefFinalAcquittal, CustodyMeritsReview, CustodyMeritsReviewerEligibleAtDecisionScope).
+list(Merits_Order_Alias_ReliefFinalAcquittal, Alias_ReliefFinalAcquittal, Epoch_Current, RecordSequence).
+observe(Chronicle, Merits_Order_Alias_ReliefFinalAcquittal, Alias_ReliefFinalAcquittal, RecordStartScope).
+observe(Chronicle, Merits_Order_Alias_ReliefFinalAcquittal, Epoch_Current, RecordEndScope).
+observe(TemporalReview, Merits_Order_Alias_ReliefFinalAcquittal, Alias_ReliefFinalAcquittal, RecordStartScope).
+observe(TemporalReview, Merits_Order_Alias_ReliefFinalAcquittal, Epoch_Current, RecordEndScope).
+? clean(Alias_ReliefFinalAcquittal, CustodyConfinementBar).
+# => TRUE

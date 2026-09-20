@@ -1,7 +1,7 @@
 # SPDX-License-Identifier: MIT OR Apache-2.0
 :expect-pins 5
-# Generated full-source amendment-semantics pins for AS-06.
-# Candidate source deltas are authored by the audit, never enacted by become.
+# Retained full-source amendment-semantics scenarios for AS-06.
+# Candidate source deltas are explicit counterfactual edits, never enacted by a label.
 
 # The original unregistered target label remains.
 ? adjust(Amend_Mint, Art_Mint).
@@ -11,11 +11,11 @@
 ? adjust(Amend_Mint, Art_Floor).
 # => TRUE
 
-# The added label alone marks the proposal false.
+# An added target label supplies no personal credibility finding.
 ? false(Amend_Mint).
-# => TRUE
+# => FALSE
 
-# The prior passing label flips to blocked.
+# Neither set of target labels supplies enactment status.
 ? become(Amend_Mint, Law).
 # => FALSE
 

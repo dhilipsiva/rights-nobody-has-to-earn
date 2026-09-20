@@ -1,0 +1,134 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+cite(Court, Case_Meritsself_review, Meritsself_review).
+observe(Chronicle, Case_Meritsself_review, Meritsself_review, CaseScope).
+observe(TemporalReview, Case_Meritsself_review, Meritsself_review, CaseScope).
+observe(Chronicle, Case_Meritsself_review, Court, HolderScope).
+observe(TemporalReview, Case_Meritsself_review, Court, HolderScope).
+observe(Chronicle, Case_Meritsself_review, CourtJudgment, JudgmentScope).
+observe(TemporalReview, Case_Meritsself_review, CourtJudgment, JudgmentScope).
+observe(Chronicle, Case_Meritsself_review, Ivo, InjuryVictimScope).
+observe(TemporalReview, Case_Meritsself_review, Ivo, InjuryVictimScope).
+authorized(Case_Meritsself_review, ActiveCustody, Case_Meritsself_review).
+observe(Chronicle, Case_Meritsself_review, ActiveCustody, PowerScope).
+observe(TemporalReview, Case_Meritsself_review, ActiveCustody, PowerScope).
+observe(Chronicle, Case_Meritsself_review, Case_Meritsself_review, CaseBindingScope).
+observe(TemporalReview, Case_Meritsself_review, Case_Meritsself_review, CaseBindingScope).
+limit(Case_Meritsself_review, Case_Meritsself_review, Window_Custody).
+observe(Chronicle, Case_Meritsself_review, Window_Custody, LimitScope).
+observe(TemporalReview, Case_Meritsself_review, Window_Custody, LimitScope).
+continue(Case_Meritsself_review, Epoch_Current).
+observe(Chronicle, Case_Meritsself_review, Epoch_Current, RenewalScope).
+observe(TemporalReview, Case_Meritsself_review, Epoch_Current, RenewalScope).
+endorses(Electorate, Case_Meritsself_review).
+endorses(TemporalReview, Case_Meritsself_review).
+person(Meritsself_review).
+injure(Meritsself_review, Ivo).
+judge(Court, Meritsself_review).
+at(Meritsself_review, GeneralAdulthood).
+list(Case_Meritsself_review, Meritsself_review, Incident_Case_Meritsself_review, CustodyMatter).
+list(Case_Meritsself_review, PublicInjuryOffence, Evidence_Case_Meritsself_review, CustodyOffenceEvidence).
+list(Case_Meritsself_review, Ivo, Prosecution, CustodyParties).
+list(Case_Meritsself_review, Court, Court, CustodyDecisionActors).
+judge(Court, Case_Meritsself_review).
+judge(Court, Case_Meritsself_review).
+authorized(Court, CustodyTrialAdjudicator, Case_Meritsself_review).
+authorized(Court, IndependentCourter, Case_Meritsself_review).
+observe(Court, Case_Meritsself_review, Meritsself_review, CustodySubjectScope).
+observe(Court, Case_Meritsself_review, Meritsself_review, CustodySubjectScope).
+observe(Court, Case_Meritsself_review, Incident_Case_Meritsself_review, CustodyIncidentScope).
+observe(Court, Case_Meritsself_review, Incident_Case_Meritsself_review, CustodyIncidentScope).
+observe(Court, Case_Meritsself_review, PublicInjuryOffence, CustodyOffenceScope).
+observe(Court, Case_Meritsself_review, PublicInjuryOffence, CustodyOffenceScope).
+observe(Court, Case_Meritsself_review, Evidence_Case_Meritsself_review, CustodyEvidenceScope).
+observe(Court, Case_Meritsself_review, Evidence_Case_Meritsself_review, CustodyEvidenceScope).
+observe(Court, Case_Meritsself_review, Ivo, CustodyVictimScope).
+observe(Court, Case_Meritsself_review, Ivo, CustodyVictimScope).
+observe(Court, Case_Meritsself_review, Prosecution, CustodyProsecutorScope).
+observe(Court, Case_Meritsself_review, Prosecution, CustodyProsecutorScope).
+observe(Court, Case_Meritsself_review, PublicLawInForceBeforeTheAct, CustodyPriorLawScope).
+observe(Court, Case_Meritsself_review, PublicLawInForceBeforeTheAct, CustodyPriorLawScope).
+observe(Court, Case_Meritsself_review, IdentityActCausationAndRequiredMentalElementProvedBeyondReasonableDoubt, CustodyProofScope).
+observe(Court, Case_Meritsself_review, IdentityActCausationAndRequiredMentalElementProvedBeyondReasonableDoubt, CustodyProofScope).
+observe(Court, Case_Meritsself_review, NoPunishmentForStatusOrProtectedConduct, CustodyConductScope).
+observe(Court, Case_Meritsself_review, NoPunishmentForStatusOrProtectedConduct, CustodyConductScope).
+observe(Court, Case_Meritsself_review, AdmissibleDisclosedEvidenceNoCoercionOrDecisiveSecretEvidence, CustodyAdmissibilityScope).
+observe(Court, Case_Meritsself_review, AdmissibleDisclosedEvidenceNoCoercionOrDecisiveSecretEvidence, CustodyAdmissibilityScope).
+observe(Court, Case_Meritsself_review, NoticeCounselAccessibleHearingAndPublicReasons, CustodyProcedureScope).
+observe(Court, Case_Meritsself_review, NoticeCounselAccessibleHearingAndPublicReasons, CustodyProcedureScope).
+observe(Court, Case_Meritsself_review, IndependentlyAdjudicatedDefencesAndExculpatoryEvidence, CustodyDefencesScope).
+observe(Court, Case_Meritsself_review, IndependentlyAdjudicatedDefencesAndExculpatoryEvidence, CustodyDefencesScope).
+observe(Court, Case_Meritsself_review, IndividualNecessaryProportionateLeastRestrictiveCustodialSentence, CustodySentenceScope).
+observe(Court, Case_Meritsself_review, IndividualNecessaryProportionateLeastRestrictiveCustodialSentence, CustodySentenceScope).
+observe(Court, Case_Meritsself_review, NoDoubleJeopardyOrUnexpiredBar, CustodyFinalityScope).
+observe(Court, Case_Meritsself_review, NoDoubleJeopardyOrUnexpiredBar, CustodyFinalityScope).
+observe(Chronicle, Case_Meritsself_review, Court, CustodyTrialActorEligibleAtDecisionScope).
+observe(TemporalReview, Case_Meritsself_review, Court, CustodyTrialActorEligibleAtDecisionScope).
+observe(Chronicle, Case_Meritsself_review, Court, CourterEligibleAtDecisionScope).
+observe(TemporalReview, Case_Meritsself_review, Court, CourterEligibleAtDecisionScope).
+list(Merits_Order_Case_Meritsself_review, Case_Meritsself_review, Epoch_Current, RecordSequence).
+observe(Chronicle, Merits_Order_Case_Meritsself_review, Case_Meritsself_review, RecordStartScope).
+observe(Chronicle, Merits_Order_Case_Meritsself_review, Epoch_Current, RecordEndScope).
+observe(TemporalReview, Merits_Order_Case_Meritsself_review, Case_Meritsself_review, RecordStartScope).
+observe(TemporalReview, Merits_Order_Case_Meritsself_review, Epoch_Current, RecordEndScope).
+list(Severity_Meritsself_review_InjuryToPerson_Ivo, Meritsself_review, Case_Meritsself_review, CustodySeverityFinding).
+list(Severity_Meritsself_review_InjuryToPerson_Ivo, InjuryToPerson, Evidence_Severity_Meritsself_review_InjuryToPerson_Ivo, CustodySeverityDimensionEvidence).
+list(Severity_Meritsself_review_InjuryToPerson_Ivo, Ivo, Incident_Case_Meritsself_review, CustodySeverityVictimIncident).
+authorized(Court, CustodySeverityAdjudicator, Severity_Meritsself_review_InjuryToPerson_Ivo).
+authorized(Court, IndependentSeverityReviewer, Severity_Meritsself_review_InjuryToPerson_Ivo).
+observe(Court, Severity_Meritsself_review_InjuryToPerson_Ivo, Case_Meritsself_review, SeverityCaseScope).
+observe(Court, Severity_Meritsself_review_InjuryToPerson_Ivo, Case_Meritsself_review, SeverityCaseScope).
+observe(Court, Severity_Meritsself_review_InjuryToPerson_Ivo, Meritsself_review, SeveritySubjectScope).
+observe(Court, Severity_Meritsself_review_InjuryToPerson_Ivo, Meritsself_review, SeveritySubjectScope).
+observe(Court, Severity_Meritsself_review_InjuryToPerson_Ivo, Incident_Case_Meritsself_review, SeverityIncidentScope).
+observe(Court, Severity_Meritsself_review_InjuryToPerson_Ivo, Incident_Case_Meritsself_review, SeverityIncidentScope).
+observe(Court, Severity_Meritsself_review_InjuryToPerson_Ivo, Ivo, SeverityVictimScope).
+observe(Court, Severity_Meritsself_review_InjuryToPerson_Ivo, Ivo, SeverityVictimScope).
+observe(Court, Severity_Meritsself_review_InjuryToPerson_Ivo, InjuryToPerson, SeverityDimensionScope).
+observe(Court, Severity_Meritsself_review_InjuryToPerson_Ivo, InjuryToPerson, SeverityDimensionScope).
+observe(Court, Severity_Meritsself_review_InjuryToPerson_Ivo, Evidence_Severity_Meritsself_review_InjuryToPerson_Ivo, SeverityEvidenceScope).
+observe(Court, Severity_Meritsself_review_InjuryToPerson_Ivo, Evidence_Severity_Meritsself_review_InjuryToPerson_Ivo, SeverityEvidenceScope).
+observe(Court, Severity_Meritsself_review_InjuryToPerson_Ivo, AdjudicatedHarmAndMentalElementWithNoticeCounselChallengeAndReasons, SeverityProcedureScope).
+observe(Court, Severity_Meritsself_review_InjuryToPerson_Ivo, AdjudicatedHarmAndMentalElementWithNoticeCounselChallengeAndReasons, SeverityProcedureScope).
+list(Placement_Case_Meritsself_review, Meritsself_review, Case_Meritsself_review, CustodyPlacement).
+list(Placement_Case_Meritsself_review, Place_Meritsself_review, SupportedResidence, CustodyPlaceKind).
+list(Placement_Case_Meritsself_review, Case_Meritsself_review, Window_Custody, CustodyPlacementPeriod).
+authorized(State, CustodyPlacementAuthority, Placement_Case_Meritsself_review).
+authorized(PlacementReview, IndependentPlacementReviewer, Placement_Case_Meritsself_review).
+observe(State, Placement_Case_Meritsself_review, Meritsself_review, CustodyPlacementSubjectScope).
+observe(PlacementReview, Placement_Case_Meritsself_review, Meritsself_review, CustodyPlacementSubjectScope).
+observe(State, Placement_Case_Meritsself_review, Case_Meritsself_review, CustodyPlacementCaseScope).
+observe(PlacementReview, Placement_Case_Meritsself_review, Case_Meritsself_review, CustodyPlacementCaseScope).
+observe(State, Placement_Case_Meritsself_review, Place_Meritsself_review, CustodyPlacementPlaceScope).
+observe(PlacementReview, Placement_Case_Meritsself_review, Place_Meritsself_review, CustodyPlacementPlaceScope).
+observe(State, Placement_Case_Meritsself_review, SupportedResidence, CustodyPlacementKindScope).
+observe(PlacementReview, Placement_Case_Meritsself_review, SupportedResidence, CustodyPlacementKindScope).
+observe(State, Placement_Case_Meritsself_review, Case_Meritsself_review, CustodyPlacementLeaseScope).
+observe(PlacementReview, Placement_Case_Meritsself_review, Case_Meritsself_review, CustodyPlacementLeaseScope).
+observe(State, Placement_Case_Meritsself_review, Window_Custody, CustodyPlacementWindowScope).
+observe(PlacementReview, Placement_Case_Meritsself_review, Window_Custody, CustodyPlacementWindowScope).
+observe(State, Placement_Case_Meritsself_review, Epoch_Current, CustodyPlacementEpochScope).
+observe(PlacementReview, Placement_Case_Meritsself_review, Epoch_Current, CustodyPlacementEpochScope).
+observe(State, Placement_Case_Meritsself_review, PositiveAccessibleAvailableConsentingPlaceAndIndividualLawfulConditions, CustodyPlacementAvailabilityScope).
+observe(PlacementReview, Placement_Case_Meritsself_review, PositiveAccessibleAvailableConsentingPlaceAndIndividualLawfulConditions, CustodyPlacementAvailabilityScope).
+observe(State, Placement_Case_Meritsself_review, NoticeCounselReasonsIndependentInspectionAndAccessibleChallenge, CustodyPlacementProcedureScope).
+observe(PlacementReview, Placement_Case_Meritsself_review, NoticeCounselReasonsIndependentInspectionAndAccessibleChallenge, CustodyPlacementProcedureScope).
+observe(State, Placement_Case_Meritsself_review, IndividuallyNecessaryLeastRestrictivePlacementAndContinuity, CustodyPlacementNecessityScope).
+observe(PlacementReview, Placement_Case_Meritsself_review, IndividuallyNecessaryLeastRestrictivePlacementAndContinuity, CustodyPlacementNecessityScope).
+observe(State, Placement_Case_Meritsself_review, NoSuitableConsentingHomeAvailableAndOrdinarySupportedResidenceSecured, CustodyPlacementAlternativeScope).
+observe(PlacementReview, Placement_Case_Meritsself_review, NoSuitableConsentingHomeAvailableAndOrdinarySupportedResidenceSecured, CustodyPlacementAlternativeScope).
+authorized(CustodyIntake, CustodyIntakeAuthority, Case_Meritsself_review).
+authorized(CustodyIntakeAudit, IndependentCustodyIntakeAuditor, Case_Meritsself_review).
+observe(CustodyIntake, Case_Meritsself_review, Meritsself_review, CustodyIntakeSubjectScope).
+observe(CustodyIntakeAudit, Case_Meritsself_review, Meritsself_review, CustodyIntakeSubjectScope).
+observe(CustodyIntake, Case_Meritsself_review, Case_Meritsself_review, CustodyIntakeCaseScope).
+observe(CustodyIntakeAudit, Case_Meritsself_review, Case_Meritsself_review, CustodyIntakeCaseScope).
+observe(CustodyIntake, Case_Meritsself_review, Epoch_Current, CustodyIntakeEpochScope).
+observe(CustodyIntakeAudit, Case_Meritsself_review, Epoch_Current, CustodyIntakeEpochScope).
+observe(CustodyIntake, Case_Meritsself_review, Window_Custody, CustodyIntakeWindowScope).
+observe(CustodyIntakeAudit, Case_Meritsself_review, Window_Custody, CustodyIntakeWindowScope).
+observe(CustodyIntake, Case_Meritsself_review, AccessiblePrimaryAndIndependentAlternateWithConfidentialCounselAndRetainedCopies, CustodyIntakeAccessScope).
+observe(CustodyIntakeAudit, Case_Meritsself_review, AccessiblePrimaryAndIndependentAlternateWithConfidentialCounselAndRetainedCopies, CustodyIntakeAccessScope).
+observe(CustodyIntake, Case_Meritsself_review, ReconciledPrimaryAlternateAndSubjectHeldFilingsBeforeEachRenewal, CustodyIntakeReconciliationScope).
+observe(CustodyIntakeAudit, Case_Meritsself_review, ReconciledPrimaryAlternateAndSubjectHeldFilingsBeforeEachRenewal, CustodyIntakeReconciliationScope).
+observe(CustodyIntake, Case_Meritsself_review, NoHolderPermissionNoRetaliationAndImmediateSuspensionOnFiling, CustodyIntakeProtectionScope).
+observe(CustodyIntakeAudit, Case_Meritsself_review, NoHolderPermissionNoRetaliationAndImmediateSuspensionOnFiling, CustodyIntakeProtectionScope).

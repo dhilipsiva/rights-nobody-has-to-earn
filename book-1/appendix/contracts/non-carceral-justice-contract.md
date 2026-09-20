@@ -2,6 +2,14 @@
 
 # Justice beyond custody
 
+**Final item-19 integration, 2026-09-20.** The current source passes 88,024
+pins across 16,087 cases in 1,169.06s, with complete contradiction checks and
+no findings. No active known-defect annotations remain. The focused and failed
+runs below are historical steps, not the final result. The five-minute target
+is unmet. These checks establish the loaded model, not outside authenticity
+or performed institutional acts. See `CLAUDE.md` for the development and
+manuscript checks. The fresh whole-manuscript review remains item 20.
+
 Implementation contract for the non-carceral justice TODO. Controlling sources
 are the state-form decision (ordinary relief, constitutional invalidation and
 uninvolved composition review), the public-safety decision (separation and
@@ -144,17 +152,22 @@ canonical additions still require a separate source/prose consistency review.
 
 ## Legacy assertion boundary
 
-The earlier assertion-surface contracts for `attack`, `injure`, `cruel`,
-`deceive`, `clear`, `forgive`, `free` and `put`, and red-team routes RT-1 and
-RT-5, remain records of the old writable surface. Their existing adversarial
-expectations are retained. These justice interfaces supply bounded due process,
-court-bound relief, voluntary restoration, release review and remedy duties;
-they do not authenticate a direct legacy assertion, reinterpret forgiveness
-as correction, or prove that a completed release or remedy was recorded.
-The cross-domain records item owns any further formal ingestion/non-use repair;
-Book 2 owns evidence authentication, custody, receipt and actual institutional
-operation. Historical route fingerprints are not refreshed or reinstated as
-gates by this owner-reference migration.
+The 2026-09-19 credibility and custody rulings supersede the legal effects of
+the earlier writable surface. Raw `deceive` and `forgive` entries supply no
+credibility finding or restoration. Raw `attack`, `injure` and `cruel` entries
+supply no signed case-specific severity finding; `clear`, `free`, generic
+Appeals judgments and an unscoped broken-Court flag supply no custody relief.
+Placement reports now reach review for every inappropriate or conflicting
+destination. The original exploit scenarios remain substantive regressions
+with their changed policy expectations recorded explicitly.
+
+These non-coercive justice interfaces retain their own bounded due process,
+court-bound relief, voluntary restoration, release review and remedy duties.
+They do not authenticate assertions or supply custody authority. Article 6's
+separate qualified merits, defence, relief, placement and intake contracts own
+that authority. Book 2 still owns operation and outside authentication; it does
+not inherit an unresolved legal ingestion safeguard. Historical route
+fingerprints are not refreshed or reinstated as gates.
 
 ## Implementation status
 

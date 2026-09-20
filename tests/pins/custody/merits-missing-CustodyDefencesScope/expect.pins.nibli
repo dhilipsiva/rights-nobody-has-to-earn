@@ -1,0 +1,13 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 5
+? responsible(Case_MeritsMissing11, CustodyMerits).
+# => FALSE
+? prisoner(MeritsMissing11).
+# => FALSE
+? owe(State, Dwell, MeritsMissing11).
+# => TRUE
+observe(CustodyMeritsReview, Case_MeritsMissing11, IndependentlyAdjudicatedDefencesAndExculpatoryEvidence, CustodyDefencesScope).
+? responsible(Case_MeritsMissing11, CustodyMerits).
+# => TRUE
+? prisoner(MeritsMissing11).
+# => TRUE

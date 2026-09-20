@@ -4,8 +4,8 @@
 ? authority(RecordCaseHolder, DeliverTheServiceRecorded, RecordCaseRecord).
 # => FALSE
 ? obliged(RecordCaseHolder, KeepRecordAccurateCorrectableAndSecure, RecordCaseRecord).
-# => FALSE
+# => TRUE
 ? obliged(RecordCaseHolder, ProtectRecordSubjectsAndObjectorsFromRetaliation, RecordCaseRecord).
-# => FALSE
+# => TRUE
 ? complete(RecordCaseRecord, ReviewedRecordHolding, RecordCaseSubject).
 # => FALSE

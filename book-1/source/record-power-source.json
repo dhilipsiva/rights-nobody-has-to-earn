@@ -179,7 +179,11 @@
       ],
       "extra": [],
       "record_dependency": false,
-      "bindings": {}
+      "bindings": {},
+      "continuing_heads": [
+        "obliged($holder, KeepRecordAccurateCorrectableAndSecure, $record)",
+        "obliged($holder, ProtectRecordSubjectsAndObjectorsFromRetaliation, $record)"
+      ]
     },
     {
       "id": "processing",
@@ -224,7 +228,10 @@
       ],
       "extra": [],
       "record_dependency": true,
-      "bindings": {}
+      "bindings": {},
+      "continuing_heads": [
+        "obliged($holder, NotifyTheSubjectAfterCovertProcessing, $record)"
+      ]
     },
     {
       "id": "automated",
@@ -275,7 +282,12 @@
         "~($reviewer = $review)"
       ],
       "record_dependency": true,
-      "bindings": {}
+      "bindings": {},
+      "continuing_heads": [
+        "obliged($holder, ExplainAutomatedSupportAndAllowContest, $record)",
+        "obliged($reviewer, DecideWithHumanAndIndependentReview, $record)",
+        "permits($subject, ContestAutomatedSupport, $record)"
+      ]
     },
     {
       "id": "access",

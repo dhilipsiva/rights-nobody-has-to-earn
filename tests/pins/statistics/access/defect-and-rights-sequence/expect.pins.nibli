@@ -103,7 +103,7 @@ observe(StatisticsDefectReview, StatisticsDefectRecord, NoAdverseParticipantFact
 ? decide(Hano, Ballot).
 # => TRUE
 ? expresses(Hano).
-# => TRUE
+# => FALSE
 ? authority(Boss).
 # => TRUE
 ? false(StatisticsParticipant).

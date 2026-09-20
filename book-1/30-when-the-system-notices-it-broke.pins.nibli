@@ -17,10 +17,9 @@
 #   tests/pins/scarcity/priority/not-a-shortage-BudgetChoice/expect.pins.nibli
 #   tests/pins/knowledge/free-field/restriction-does-not-travel-between-fields/expect.pins.nibli
 #   tests/pins/record-power/power/holding-does-not-cover-another-subject/expect.pins.nibli
-# Each derives its family's heads, asserts a reviewed defect, and derives them
-# FALSE afterwards while the person standing beside the record keeps personhood,
-# the floor debt and the ballot. They establish what stops following; they do not
-# establish that any correction was made or published.
+# Each asserts a reviewed defect and withdraws the affected permission while
+# protective duties and the person's standing, floor and ballot remain. These
+# sequences do not establish that any correction was made or published.
 #
 # KIND: CONTENT pin. Run:
 #   ./verify.sh --only book-1/30-when-the-system-notices-it-broke.pins.nibli
@@ -31,14 +30,12 @@
 # derived conclusion rather than a writable verdict. Both are exact-one source
 # preconditions because a duplicate consumer or declaration is also a defect.
 #
-# DEFECT PINS — a large share of this file encodes defects rather than guarantees
-# (do not restate that as a fraction; the last one written here was wrong), and the
-# repairs are tracked. `err(·, Isolation)` on the prisoners flips FALSE when the
-# isolation marker is repaired or a matching company receipt derives `meets`.
-# The placement-marker defect RESOLVED 2026-08-02: err/2 is now keyed on a
-# placement report (put/3), the Ruk/Lalo pins hold the repair as plain FALSE,
-# and the chapter's middle section was rewritten against it — exactly the
-# outcome the old :defect markers here existed to announce.
+# Positive custody-condition findings have their own case, place, period and
+# independent witnesses. Missing company evidence is not an isolation finding.
+# Routine custody review and complaint access do not wait for such a finding.
+# The complete condition and explicit weaker-rule cases are in:
+#   tests/pins/custody/condition-findings/expect.pins.nibli
+#   tests/pins/custody/condition-findings/counterfactual.pins.nibli
 
 # WHAT FALSE MEANS HERE — three kinds, and only one is a verdict. A FALSE on a
 # corpus name this KB never mentions is real but empty: nothing could have made
@@ -60,43 +57,30 @@
 :require test "$(grep -F -c '& obliged($reader, $subject) -> obliged($reader, $reader_duty, $reader_standard).' book-1/source/constitution.nibli)" -eq 1
 :require test "$(grep -F -c 'derived_only("obliged").' book-1/source/constitution.nibli)" -eq 1
 
-# The prose now states the rule: every prisoner in the supplied record is marked.
-# The full cast remains pinned individually so that statement cannot silently
-# narrow if a receipt or another company-producing route reaches only one case.
-:defect "repairing the isolation marker, or any `meets` fact ever being recorded"
+# None of these missing company receipts is positive evidence of isolation.
+# Keep every prior case, now as an ordinary negative regression.
 ? err(Adam, Isolation).
-# => TRUE
+# => FALSE
 
-:defect "repairing the isolation marker, or any `meets` fact ever being recorded"
 ? err(Hano, Isolation).
-# => TRUE
+# => FALSE
 
-:defect "repairing the isolation marker, or any `meets` fact ever being recorded"
 ? err(Lalo, Isolation).
-# => TRUE
+# => FALSE
 
-:defect "repairing the isolation marker, or any `meets` fact ever being recorded"
 ? err(Nando, Isolation).
-# => TRUE
+# => FALSE
 
-:defect "repairing the isolation marker, or any `meets` fact ever being recorded"
 ? err(Don, Isolation).
-# => TRUE
+# => FALSE
 
-:defect "repairing the isolation marker, or any `meets` fact ever being recorded"
 ? err(Kel, Isolation).
-# => TRUE
+# => FALSE
 
-:defect "repairing the isolation marker, or any `meets` fact ever being recorded"
 ? err(Ruk, Isolation).
-# => TRUE
+# => FALSE
 
-# "Several of the judged are not held: one was cleared on appeal, and the others
-#  are protected for having exposed an authority." Nia is the clearance; Rebel,
-#  Sly and (since v0.7) Rex are the shields — so the marker is silent on them
-#  despite a judgment. The prose used to count these and the count went stale the
-#  moment a cast member was added; it now states the rule, and the roster is
-#  pinned name by name instead, Rex included below.
+# Relief and protected disclosures are not condition reports either.
 ? err(Nia, Isolation).
 # => FALSE
 
@@ -139,19 +123,14 @@
 ? building(HighSec, Ruk).
 # => TRUE
 
-# ── v0.8: the audit produces a duty (Article 8b) ─────────────────────────────
-# Since the placement repair, these two derive through the ISOLATION marker
-# alone — the placement marker is silent about both. The duty survives its
-# discriminating signal going quiet, because the duty's other source fires on
-# every prisoner without exception.
+# Routine custody review is owed without an isolation or placement finding.
 ? obliged(Review, Ruk).
 # => TRUE
 
 ? obliged(Review, Lalo).
 # => TRUE
 
-# via the isolation marker, which fires on every prisoner — so the duty is owed
-# about all of them too. "a duty owed to a category rather than to a case."
+# The automatic review duty also reaches these custodial cases.
 ? obliged(Review, Adam).
 # => TRUE
 
@@ -207,8 +186,8 @@ all $x: obliged(Review, $x) & ~capture(Review, $x) -> err($x, Duty).
 # => TRUE
 
 # ── The child with nobody ──────────────────────────────────────────────────
-# "The isolation marker reads confinement, so it does not fire. The placement
-# marker reads a placement report, and nobody has filed one."
+# The birth-only fixture supplies no positive condition finding or placement
+# report. No custodial review duty follows from the birth entry alone.
 ? err(Nell, Isolation).
 # => FALSE
 

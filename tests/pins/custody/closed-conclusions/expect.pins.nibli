@@ -1,0 +1,24 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 11
+:refuse reasoning /derived-only/
+attribute(Forged, IntentionalInjury).
+:refuse reasoning /derived-only/
+approves(Forged, CustodyPlacementCandidate).
+:refuse reasoning /derived-only/
+grant(Forged, CustodyPlacement).
+:refuse reasoning /derived-only/
+problem(Forged, CustodyPlacementConflict).
+:refuse reasoning /derived-only/
+record(Forged, Case_Hano, CustodyChallengeFiling).
+:refuse reasoning /derived-only/
+answer(Forged, CustodyChallengeDisposition).
+:refuse reasoning /derived-only/
+closed(Case_Hano, CustodyChallengePending).
+:refuse reasoning /derived-only/
+prisoner(Hano, Case_Hano).
+:refuse reasoning /derived-only/
+severe(Hano, Case_Hano).
+:refuse reasoning /derived-only/
+permits(Case_Hano, Hano, ForgedPlace).
+:refuse reasoning /derived-only/
+ready(Forged, CustodyPlacement).

@@ -1,3 +1,4 @@
+# Custody and physical holding establish protection duties, not shelter or speech actuality.
 # ── Chapter 27 fidelity pins: "A Prisoner Is a Person" ────────────────────────
 #
 # KIND: CONTENT pin. Run:
@@ -46,6 +47,119 @@ observe(Chronicle, Case_Zed, Epoch_Current, RenewalScope).
 observe(TemporalReview, Case_Zed, Epoch_Current, RenewalScope).
 endorses(Electorate, Case_Zed).
 endorses(TemporalReview, Case_Zed).
+
+
+# The original scenario now supplies qualified fictional merits, signed
+# harm findings, placement and intake. Its original missing/conflicting
+# temporal premises and every original query remain independently tested.
+list(Case_Zed, Zed, Incident_Case_Zed, CustodyMatter).
+list(Case_Zed, PublicInjuryOffence, Evidence_Case_Zed, CustodyOffenceEvidence).
+list(Case_Zed, Ivo, Prosecution, CustodyParties).
+list(Case_Zed, Court, CustodyMeritsReview, CustodyDecisionActors).
+judge(Court, Case_Zed).
+judge(CustodyMeritsReview, Case_Zed).
+authorized(Court, CustodyTrialAdjudicator, Case_Zed).
+authorized(CustodyMeritsReview, IndependentCustodyMeritsReviewer, Case_Zed).
+observe(Court, Case_Zed, Zed, CustodySubjectScope).
+observe(CustodyMeritsReview, Case_Zed, Zed, CustodySubjectScope).
+observe(Court, Case_Zed, Incident_Case_Zed, CustodyIncidentScope).
+observe(CustodyMeritsReview, Case_Zed, Incident_Case_Zed, CustodyIncidentScope).
+observe(Court, Case_Zed, PublicInjuryOffence, CustodyOffenceScope).
+observe(CustodyMeritsReview, Case_Zed, PublicInjuryOffence, CustodyOffenceScope).
+observe(Court, Case_Zed, Evidence_Case_Zed, CustodyEvidenceScope).
+observe(CustodyMeritsReview, Case_Zed, Evidence_Case_Zed, CustodyEvidenceScope).
+observe(Court, Case_Zed, Ivo, CustodyVictimScope).
+observe(CustodyMeritsReview, Case_Zed, Ivo, CustodyVictimScope).
+observe(Court, Case_Zed, Prosecution, CustodyProsecutorScope).
+observe(CustodyMeritsReview, Case_Zed, Prosecution, CustodyProsecutorScope).
+observe(Court, Case_Zed, PublicLawInForceBeforeTheAct, CustodyPriorLawScope).
+observe(CustodyMeritsReview, Case_Zed, PublicLawInForceBeforeTheAct, CustodyPriorLawScope).
+observe(Court, Case_Zed, IdentityActCausationAndRequiredMentalElementProvedBeyondReasonableDoubt, CustodyProofScope).
+observe(CustodyMeritsReview, Case_Zed, IdentityActCausationAndRequiredMentalElementProvedBeyondReasonableDoubt, CustodyProofScope).
+observe(Court, Case_Zed, NoPunishmentForStatusOrProtectedConduct, CustodyConductScope).
+observe(CustodyMeritsReview, Case_Zed, NoPunishmentForStatusOrProtectedConduct, CustodyConductScope).
+observe(Court, Case_Zed, AdmissibleDisclosedEvidenceNoCoercionOrDecisiveSecretEvidence, CustodyAdmissibilityScope).
+observe(CustodyMeritsReview, Case_Zed, AdmissibleDisclosedEvidenceNoCoercionOrDecisiveSecretEvidence, CustodyAdmissibilityScope).
+observe(Court, Case_Zed, NoticeCounselAccessibleHearingAndPublicReasons, CustodyProcedureScope).
+observe(CustodyMeritsReview, Case_Zed, NoticeCounselAccessibleHearingAndPublicReasons, CustodyProcedureScope).
+observe(Court, Case_Zed, IndependentlyAdjudicatedDefencesAndExculpatoryEvidence, CustodyDefencesScope).
+observe(CustodyMeritsReview, Case_Zed, IndependentlyAdjudicatedDefencesAndExculpatoryEvidence, CustodyDefencesScope).
+observe(Court, Case_Zed, IndividualNecessaryProportionateLeastRestrictiveCustodialSentence, CustodySentenceScope).
+observe(CustodyMeritsReview, Case_Zed, IndividualNecessaryProportionateLeastRestrictiveCustodialSentence, CustodySentenceScope).
+observe(Court, Case_Zed, NoDoubleJeopardyOrUnexpiredBar, CustodyFinalityScope).
+observe(CustodyMeritsReview, Case_Zed, NoDoubleJeopardyOrUnexpiredBar, CustodyFinalityScope).
+observe(Chronicle, Case_Zed, Court, CustodyTrialActorEligibleAtDecisionScope).
+observe(TemporalReview, Case_Zed, Court, CustodyTrialActorEligibleAtDecisionScope).
+observe(Chronicle, Case_Zed, CustodyMeritsReview, CustodyMeritsReviewerEligibleAtDecisionScope).
+observe(TemporalReview, Case_Zed, CustodyMeritsReview, CustodyMeritsReviewerEligibleAtDecisionScope).
+list(Merits_Order_Case_Zed, Case_Zed, Epoch_Current, RecordSequence).
+observe(Chronicle, Merits_Order_Case_Zed, Case_Zed, RecordStartScope).
+observe(Chronicle, Merits_Order_Case_Zed, Epoch_Current, RecordEndScope).
+observe(TemporalReview, Merits_Order_Case_Zed, Case_Zed, RecordStartScope).
+observe(TemporalReview, Merits_Order_Case_Zed, Epoch_Current, RecordEndScope).
+list(Severity_Zed_InjuryToPerson_Ivo, Zed, Case_Zed, CustodySeverityFinding).
+list(Severity_Zed_InjuryToPerson_Ivo, InjuryToPerson, Evidence_Severity_Zed_InjuryToPerson_Ivo, CustodySeverityDimensionEvidence).
+list(Severity_Zed_InjuryToPerson_Ivo, Ivo, Incident_Case_Zed, CustodySeverityVictimIncident).
+authorized(Court, CustodySeverityAdjudicator, Severity_Zed_InjuryToPerson_Ivo).
+authorized(CustodyMeritsReview, IndependentSeverityReviewer, Severity_Zed_InjuryToPerson_Ivo).
+observe(Court, Severity_Zed_InjuryToPerson_Ivo, Case_Zed, SeverityCaseScope).
+observe(CustodyMeritsReview, Severity_Zed_InjuryToPerson_Ivo, Case_Zed, SeverityCaseScope).
+observe(Court, Severity_Zed_InjuryToPerson_Ivo, Zed, SeveritySubjectScope).
+observe(CustodyMeritsReview, Severity_Zed_InjuryToPerson_Ivo, Zed, SeveritySubjectScope).
+observe(Court, Severity_Zed_InjuryToPerson_Ivo, Incident_Case_Zed, SeverityIncidentScope).
+observe(CustodyMeritsReview, Severity_Zed_InjuryToPerson_Ivo, Incident_Case_Zed, SeverityIncidentScope).
+observe(Court, Severity_Zed_InjuryToPerson_Ivo, Ivo, SeverityVictimScope).
+observe(CustodyMeritsReview, Severity_Zed_InjuryToPerson_Ivo, Ivo, SeverityVictimScope).
+observe(Court, Severity_Zed_InjuryToPerson_Ivo, InjuryToPerson, SeverityDimensionScope).
+observe(CustodyMeritsReview, Severity_Zed_InjuryToPerson_Ivo, InjuryToPerson, SeverityDimensionScope).
+observe(Court, Severity_Zed_InjuryToPerson_Ivo, Evidence_Severity_Zed_InjuryToPerson_Ivo, SeverityEvidenceScope).
+observe(CustodyMeritsReview, Severity_Zed_InjuryToPerson_Ivo, Evidence_Severity_Zed_InjuryToPerson_Ivo, SeverityEvidenceScope).
+observe(Court, Severity_Zed_InjuryToPerson_Ivo, AdjudicatedHarmAndMentalElementWithNoticeCounselChallengeAndReasons, SeverityProcedureScope).
+observe(CustodyMeritsReview, Severity_Zed_InjuryToPerson_Ivo, AdjudicatedHarmAndMentalElementWithNoticeCounselChallengeAndReasons, SeverityProcedureScope).
+list(Placement_Case_Zed, Zed, Case_Zed, CustodyPlacement).
+list(Placement_Case_Zed, Place_Zed, SupportedResidence, CustodyPlaceKind).
+list(Placement_Case_Zed, Case_Zed, Window_Custody, CustodyPlacementPeriod).
+authorized(State, CustodyPlacementAuthority, Placement_Case_Zed).
+authorized(PlacementReview, IndependentPlacementReviewer, Placement_Case_Zed).
+observe(State, Placement_Case_Zed, Zed, CustodyPlacementSubjectScope).
+observe(PlacementReview, Placement_Case_Zed, Zed, CustodyPlacementSubjectScope).
+observe(State, Placement_Case_Zed, Case_Zed, CustodyPlacementCaseScope).
+observe(PlacementReview, Placement_Case_Zed, Case_Zed, CustodyPlacementCaseScope).
+observe(State, Placement_Case_Zed, Place_Zed, CustodyPlacementPlaceScope).
+observe(PlacementReview, Placement_Case_Zed, Place_Zed, CustodyPlacementPlaceScope).
+observe(State, Placement_Case_Zed, SupportedResidence, CustodyPlacementKindScope).
+observe(PlacementReview, Placement_Case_Zed, SupportedResidence, CustodyPlacementKindScope).
+observe(State, Placement_Case_Zed, Case_Zed, CustodyPlacementLeaseScope).
+observe(PlacementReview, Placement_Case_Zed, Case_Zed, CustodyPlacementLeaseScope).
+observe(State, Placement_Case_Zed, Window_Custody, CustodyPlacementWindowScope).
+observe(PlacementReview, Placement_Case_Zed, Window_Custody, CustodyPlacementWindowScope).
+observe(State, Placement_Case_Zed, Epoch_Current, CustodyPlacementEpochScope).
+observe(PlacementReview, Placement_Case_Zed, Epoch_Current, CustodyPlacementEpochScope).
+observe(State, Placement_Case_Zed, PositiveAccessibleAvailableConsentingPlaceAndIndividualLawfulConditions, CustodyPlacementAvailabilityScope).
+observe(PlacementReview, Placement_Case_Zed, PositiveAccessibleAvailableConsentingPlaceAndIndividualLawfulConditions, CustodyPlacementAvailabilityScope).
+observe(State, Placement_Case_Zed, NoticeCounselReasonsIndependentInspectionAndAccessibleChallenge, CustodyPlacementProcedureScope).
+observe(PlacementReview, Placement_Case_Zed, NoticeCounselReasonsIndependentInspectionAndAccessibleChallenge, CustodyPlacementProcedureScope).
+observe(State, Placement_Case_Zed, IndividuallyNecessaryLeastRestrictivePlacementAndContinuity, CustodyPlacementNecessityScope).
+observe(PlacementReview, Placement_Case_Zed, IndividuallyNecessaryLeastRestrictivePlacementAndContinuity, CustodyPlacementNecessityScope).
+observe(State, Placement_Case_Zed, NoSuitableConsentingHomeAvailableAndOrdinarySupportedResidenceSecured, CustodyPlacementAlternativeScope).
+observe(PlacementReview, Placement_Case_Zed, NoSuitableConsentingHomeAvailableAndOrdinarySupportedResidenceSecured, CustodyPlacementAlternativeScope).
+authorized(CustodyIntake, CustodyIntakeAuthority, Case_Zed).
+authorized(CustodyIntakeAudit, IndependentCustodyIntakeAuditor, Case_Zed).
+observe(CustodyIntake, Case_Zed, Zed, CustodyIntakeSubjectScope).
+observe(CustodyIntakeAudit, Case_Zed, Zed, CustodyIntakeSubjectScope).
+observe(CustodyIntake, Case_Zed, Case_Zed, CustodyIntakeCaseScope).
+observe(CustodyIntakeAudit, Case_Zed, Case_Zed, CustodyIntakeCaseScope).
+observe(CustodyIntake, Case_Zed, Epoch_Current, CustodyIntakeEpochScope).
+observe(CustodyIntakeAudit, Case_Zed, Epoch_Current, CustodyIntakeEpochScope).
+observe(CustodyIntake, Case_Zed, Window_Custody, CustodyIntakeWindowScope).
+observe(CustodyIntakeAudit, Case_Zed, Window_Custody, CustodyIntakeWindowScope).
+observe(CustodyIntake, Case_Zed, AccessiblePrimaryAndIndependentAlternateWithConfidentialCounselAndRetainedCopies, CustodyIntakeAccessScope).
+observe(CustodyIntakeAudit, Case_Zed, AccessiblePrimaryAndIndependentAlternateWithConfidentialCounselAndRetainedCopies, CustodyIntakeAccessScope).
+observe(CustodyIntake, Case_Zed, ReconciledPrimaryAlternateAndSubjectHeldFilingsBeforeEachRenewal, CustodyIntakeReconciliationScope).
+observe(CustodyIntakeAudit, Case_Zed, ReconciledPrimaryAlternateAndSubjectHeldFilingsBeforeEachRenewal, CustodyIntakeReconciliationScope).
+observe(CustodyIntake, Case_Zed, NoHolderPermissionNoRetaliationAndImmediateSuspensionOnFiling, CustodyIntakeProtectionScope).
+observe(CustodyIntakeAudit, Case_Zed, NoHolderPermissionNoRetaliationAndImmediateSuspensionOnFiling, CustodyIntakeProtectionScope).
+
 
 ? injure(Zed, Ivo).
 # => TRUE
@@ -118,7 +232,7 @@ all $x: person($x) & ~home($x) -> prisoner($x).
 
 # "the eight things are owed to persons" — Hano, convicted, keeps expression
 ? expresses(Hano).
-# => TRUE
+# => FALSE
 
 # ── THE SECOND DOOR. MUST STAY LAST: free(Nemo) is a ground fact and persists ─
 # "release has to return you to the roster ... a finding with no finder." One
@@ -148,10 +262,10 @@ free(Nemo).
 # The pair, run side by side. Custody derives for Zed and supports shelter
 # and expression; the child record supplies neither this route nor receipts yet.
 ? dwell(Zed).
-# => TRUE
+# => FALSE
 
 ? expresses(Zed).
-# => TRUE
+# => FALSE
 
 ? dwell(Nell).
 # => FALSE

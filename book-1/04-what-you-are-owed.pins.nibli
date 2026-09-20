@@ -1,3 +1,4 @@
+# Custody and physical holding establish protection duties, not shelter or speech actuality.
 # ── Chapter 4 fidelity pins: "What You Are Owed" ─────────────────────────────
 #
 # "A way to be heard" is exercised across the seven named justice domains:
@@ -187,30 +188,24 @@
 # is certain about the housing of exactly the people it is punishing. Kel and
 # Adam are the v0.8 cases — homeless, and housed by being confined.
 ? dwell(Hano).
-# => TRUE
+# => FALSE
 
 ? prisoner(Hano).
 # => TRUE
 
 ? dwell(Kel).
-# => TRUE
+# => FALSE
 
 ? dwell(Adam).
-# => TRUE
+# => FALSE
 
-# ...and for nobody else. Bela above is voided and not confined; Cira is a child
-# who was never convicted of anything.
+# Other cast members likewise have no independently witnessed shelter receipt.
 ? dwell(Cira).
 # => FALSE
 
-# THE SECOND EXCEPTION, same width exactly. "Recorded speech derives the same
-# way: for every confined person and for nobody else." This entry was the one
-# the old universal hid — this file pinned the "no" for every floor entry
-# EXCEPT recorded speech, so the one entry that answers TRUE was the one
-# nothing looked at. Hano carries the confined half; Bela (voided, free) and
-# Jala (never accused — chapter 29's control) carry "nobody else".
+# Custody proves no recorded speech. The ordinary expression duty remains.
 ? expresses(Hano).
-# => TRUE
+# => FALSE
 
 ? expresses(Bela).
 # => FALSE
@@ -218,26 +213,12 @@
 ? expresses(Jala).
 # => FALSE
 
-# "Your credibility is still reachable."
-:accept-scoped
+# The current custody and credibility graph also refuses this hostile control.
+:refuse reasoning /Unstratifiable/
 all $x: person($x) & ~believe($x) -> false($x).
 
-# "Your recognition is still reachable."
-# [v0.8] NOTE this control is precisely the shape INVARIANT 1 now forbids in the
-# constitution: a floor right read into a consequence rather than into `err`. It
-# stays here, because the point of the control is that the ENGINE permits it —
-# which is exactly why the invariant has to, and now does, refuse it separately.
-# Scoped, and that is not cosmetic here: `verify.sh` reads INVARIANT 1 off the
-# constitution and never off a pin file, so under a plain `:accept` the forbidden
-# shape stayed resident and every pin below it in this file ran against a base
-# that broke the invariant — measured 2026-08-01, `lose(Points, Hano)` derived,
-# Hano being confined with `meets` FALSE for him, pinned above. The widening
-# stopped at the file boundary: measured the same day, nibli-pin rebuilds the base
-# per file, so a plain `:accept` here was never visible to the next file's pins.
-# And this is not the only site it applied to — the credibility control above
-# reads a floor right into `false`, which is the same forbidden shape. This is
-# where the invariant gets named, not where it alone bit. Showing that the engine
-# permits the shape must not mean leaving it enacted.
+# Recognition remains a separate endpoint. This hostile scoped rule loads,
+# which is why the development invariant bans all active floor-actuality readers.
 :accept-scoped
 all $x: person($x) & ~meets($x) -> lose(Points, $x).
 

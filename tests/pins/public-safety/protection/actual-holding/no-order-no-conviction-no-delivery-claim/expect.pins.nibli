@@ -2,12 +2,12 @@
 :expect-pins 11
 ? person(PSProtectedsubject).
 # => TRUE
-? dwell(PSProtectedsubject).
-# => TRUE
-? expresses(PSProtectedsubject).
-# => TRUE
 ? travel(PSProtectedsubject).
 # => TRUE
+? dwell(PSProtectedsubject).
+# => FALSE
+? expresses(PSProtectedsubject).
+# => FALSE
 ? prisoner(PSProtectedsubject).
 # => FALSE
 ? severe(PSProtectedsubject).

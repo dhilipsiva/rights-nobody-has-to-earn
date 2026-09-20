@@ -218,15 +218,13 @@ performance needs outside evidence. A system that keeps people because its
 record stopped changing would violate the purpose of current authority; the
 absence of a new computation would not defend it.
 
-The prisoner and the child expose another distinction. For the confined
-person, the model assigns housing and a recorded voice as consequences of
-being held. Those conclusions are not receipts. Nell's birth-only record
-establishes standing and what is owed, but contains no evidence of provision.
-When the child is supplied with matching recipient-side receipt and witness
-evidence, food and shelter derive through the same arrival routes available
-to anyone. The unequal bare records do not establish that one person was
-housed in the world and the other was not. Neither a custody conclusion nor
-an entitlement proves a roof reached someone.
+The prisoner and the child expose another distinction. Both are owed the floor;
+custody adds protection and continuity duties. Neither a sentence nor Nell's
+birth-only record supplies evidence of provision. When the child is supplied
+with matching recipient-side receipt and witness evidence, food and shelter
+derive through the same arrival routes available to anyone. A reported holding
+likewise needs separate evidence of its conditions. Neither lawful placement
+nor an entitlement proves a roof reached someone.
 
 The cost of confinement nevertheless remains with the person held and with
 people whose lives depend on them. Retaining rights does not reimburse time
@@ -364,7 +362,8 @@ cases. It also leaves an interval in which a court implicated by the
 disclosure can seek conviction while the discloser is still trying to obtain
 a hearing.
 
-For a discloser with no recorded deceit, protection begins with the disclosure.
+Protection begins with the disclosure unless an effective deceit finding
+applies to that particular exposure.
 The unrelated-case route requires a finding from qualified, independent reviewers.
 Separate qualification and review functions must positively establish their
 eligibility. The deciding and qualification functions cannot be combined or
@@ -373,10 +372,12 @@ fresh disclosures does not itself disqualify them; an authorised finding of
 actual conflict does, and a favourable certificate cannot cancel it. The
 case finding leaves the disclosure protected elsewhere.
 
-A raw deceit entry can also defeat the shield. It is not bound to that
-independent review. This is a defect against the reason for protection: an
-accusation should not bypass the safeguard it challenges. The benefits of the
-default cannot justify that separate route.
+A deceit finding needs its own completed case, identifying the subject,
+incident and evidence, with independent reviewers and the procedure and
+eligibility belonging to that decision. A raw accusation does not defeat the
+shield. Otherwise an authority could answer exposure by supplying the very
+accusation against which protection was needed. A finding about one disclosure
+does not give permission to retaliate against another.
 
 This default costs time, including time owed to an injured person awaiting a
 remedy. Separate protection, assistance and civil remedies remain available

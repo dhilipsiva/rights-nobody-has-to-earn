@@ -1,0 +1,93 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 6
+? prisoner(ReliefDuressEstablished).
+# => TRUE
+list(Order_ReliefDuressEstablished, ReliefDuressEstablished, Case_ReliefDuressEstablished, CustodyRelief).
+list(Order_ReliefDuressEstablished, DuressEstablished, Evidence_Order_ReliefDuressEstablished, CustodyReliefGroundEvidence).
+judge(Appeals, Order_ReliefDuressEstablished).
+judge(CustodyAppealReview, Order_ReliefDuressEstablished).
+authorized(Appeals, CustodyAppellateAuthority, Order_ReliefDuressEstablished).
+authorized(CustodyAppealReview, IndependentCustodyDispositionReviewer, Order_ReliefDuressEstablished).
+observe(Appeals, Order_ReliefDuressEstablished, ReliefDuressEstablished, CustodyReliefSubjectScope).
+observe(CustodyAppealReview, Order_ReliefDuressEstablished, ReliefDuressEstablished, CustodyReliefSubjectScope).
+observe(Appeals, Order_ReliefDuressEstablished, Case_ReliefDuressEstablished, CustodyReliefCaseScope).
+observe(CustodyAppealReview, Order_ReliefDuressEstablished, Case_ReliefDuressEstablished, CustodyReliefCaseScope).
+observe(Appeals, Order_ReliefDuressEstablished, Incident_Case_ReliefDuressEstablished, CustodyReliefIncidentScope).
+observe(CustodyAppealReview, Order_ReliefDuressEstablished, Incident_Case_ReliefDuressEstablished, CustodyReliefIncidentScope).
+observe(Appeals, Order_ReliefDuressEstablished, PublicInjuryOffence, CustodyReliefOffenceScope).
+observe(CustodyAppealReview, Order_ReliefDuressEstablished, PublicInjuryOffence, CustodyReliefOffenceScope).
+observe(Appeals, Order_ReliefDuressEstablished, DuressEstablished, CustodyReliefGroundScope).
+observe(CustodyAppealReview, Order_ReliefDuressEstablished, DuressEstablished, CustodyReliefGroundScope).
+observe(Appeals, Order_ReliefDuressEstablished, Evidence_Order_ReliefDuressEstablished, CustodyReliefEvidenceScope).
+observe(CustodyAppealReview, Order_ReliefDuressEstablished, Evidence_Order_ReliefDuressEstablished, CustodyReliefEvidenceScope).
+observe(Appeals, Order_ReliefDuressEstablished, NoticeCounselEvidenceAccessHearingAndReasons, CustodyReliefProcedureScope).
+observe(CustodyAppealReview, Order_ReliefDuressEstablished, NoticeCounselEvidenceAccessHearingAndReasons, CustodyReliefProcedureScope).
+observe(Chronicle, Order_ReliefDuressEstablished, Appeals, CustodyAppealActorEligibleAtDecisionScope).
+observe(TemporalReview, Order_ReliefDuressEstablished, Appeals, CustodyAppealActorEligibleAtDecisionScope).
+observe(Chronicle, Order_ReliefDuressEstablished, CustodyAppealReview, CustodyDispositionReviewerEligibleAtDecisionScope).
+observe(TemporalReview, Order_ReliefDuressEstablished, CustodyAppealReview, CustodyDispositionReviewerEligibleAtDecisionScope).
+list(Relief_Start_Order_ReliefDuressEstablished, Case_ReliefDuressEstablished, Order_ReliefDuressEstablished, RecordSequence).
+observe(Chronicle, Relief_Start_Order_ReliefDuressEstablished, Case_ReliefDuressEstablished, RecordStartScope).
+observe(Chronicle, Relief_Start_Order_ReliefDuressEstablished, Order_ReliefDuressEstablished, RecordEndScope).
+observe(TemporalReview, Relief_Start_Order_ReliefDuressEstablished, Case_ReliefDuressEstablished, RecordStartScope).
+observe(TemporalReview, Relief_Start_Order_ReliefDuressEstablished, Order_ReliefDuressEstablished, RecordEndScope).
+list(Relief_End_Order_ReliefDuressEstablished, Order_ReliefDuressEstablished, Epoch_Current, RecordSequence).
+observe(Chronicle, Relief_End_Order_ReliefDuressEstablished, Order_ReliefDuressEstablished, RecordStartScope).
+observe(Chronicle, Relief_End_Order_ReliefDuressEstablished, Epoch_Current, RecordEndScope).
+observe(TemporalReview, Relief_End_Order_ReliefDuressEstablished, Order_ReliefDuressEstablished, RecordStartScope).
+observe(TemporalReview, Relief_End_Order_ReliefDuressEstablished, Epoch_Current, RecordEndScope).
+? responsible(Order_ReliefDuressEstablished, CustodyRelief).
+# => TRUE
+? prisoner(ReliefDuressEstablished).
+# => FALSE
+? travel(ReliefDuressEstablished).
+# => TRUE
+? prisoner(Hano).
+# => TRUE
+list(Alias_ReliefDuressEstablished, ReliefDuressEstablished, Incident_Case_ReliefDuressEstablished, CustodyMatter).
+list(Alias_ReliefDuressEstablished, PublicInjuryOffence, Evidence_Alias_ReliefDuressEstablished, CustodyOffenceEvidence).
+list(Alias_ReliefDuressEstablished, Ivo, Prosecution, CustodyParties).
+list(Alias_ReliefDuressEstablished, Court, CustodyMeritsReview, CustodyDecisionActors).
+judge(Court, Alias_ReliefDuressEstablished).
+judge(CustodyMeritsReview, Alias_ReliefDuressEstablished).
+authorized(Court, CustodyTrialAdjudicator, Alias_ReliefDuressEstablished).
+authorized(CustodyMeritsReview, IndependentCustodyMeritsReviewer, Alias_ReliefDuressEstablished).
+observe(Court, Alias_ReliefDuressEstablished, ReliefDuressEstablished, CustodySubjectScope).
+observe(CustodyMeritsReview, Alias_ReliefDuressEstablished, ReliefDuressEstablished, CustodySubjectScope).
+observe(Court, Alias_ReliefDuressEstablished, Incident_Case_ReliefDuressEstablished, CustodyIncidentScope).
+observe(CustodyMeritsReview, Alias_ReliefDuressEstablished, Incident_Case_ReliefDuressEstablished, CustodyIncidentScope).
+observe(Court, Alias_ReliefDuressEstablished, PublicInjuryOffence, CustodyOffenceScope).
+observe(CustodyMeritsReview, Alias_ReliefDuressEstablished, PublicInjuryOffence, CustodyOffenceScope).
+observe(Court, Alias_ReliefDuressEstablished, Evidence_Alias_ReliefDuressEstablished, CustodyEvidenceScope).
+observe(CustodyMeritsReview, Alias_ReliefDuressEstablished, Evidence_Alias_ReliefDuressEstablished, CustodyEvidenceScope).
+observe(Court, Alias_ReliefDuressEstablished, Ivo, CustodyVictimScope).
+observe(CustodyMeritsReview, Alias_ReliefDuressEstablished, Ivo, CustodyVictimScope).
+observe(Court, Alias_ReliefDuressEstablished, Prosecution, CustodyProsecutorScope).
+observe(CustodyMeritsReview, Alias_ReliefDuressEstablished, Prosecution, CustodyProsecutorScope).
+observe(Court, Alias_ReliefDuressEstablished, PublicLawInForceBeforeTheAct, CustodyPriorLawScope).
+observe(CustodyMeritsReview, Alias_ReliefDuressEstablished, PublicLawInForceBeforeTheAct, CustodyPriorLawScope).
+observe(Court, Alias_ReliefDuressEstablished, IdentityActCausationAndRequiredMentalElementProvedBeyondReasonableDoubt, CustodyProofScope).
+observe(CustodyMeritsReview, Alias_ReliefDuressEstablished, IdentityActCausationAndRequiredMentalElementProvedBeyondReasonableDoubt, CustodyProofScope).
+observe(Court, Alias_ReliefDuressEstablished, NoPunishmentForStatusOrProtectedConduct, CustodyConductScope).
+observe(CustodyMeritsReview, Alias_ReliefDuressEstablished, NoPunishmentForStatusOrProtectedConduct, CustodyConductScope).
+observe(Court, Alias_ReliefDuressEstablished, AdmissibleDisclosedEvidenceNoCoercionOrDecisiveSecretEvidence, CustodyAdmissibilityScope).
+observe(CustodyMeritsReview, Alias_ReliefDuressEstablished, AdmissibleDisclosedEvidenceNoCoercionOrDecisiveSecretEvidence, CustodyAdmissibilityScope).
+observe(Court, Alias_ReliefDuressEstablished, NoticeCounselAccessibleHearingAndPublicReasons, CustodyProcedureScope).
+observe(CustodyMeritsReview, Alias_ReliefDuressEstablished, NoticeCounselAccessibleHearingAndPublicReasons, CustodyProcedureScope).
+observe(Court, Alias_ReliefDuressEstablished, IndependentlyAdjudicatedDefencesAndExculpatoryEvidence, CustodyDefencesScope).
+observe(CustodyMeritsReview, Alias_ReliefDuressEstablished, IndependentlyAdjudicatedDefencesAndExculpatoryEvidence, CustodyDefencesScope).
+observe(Court, Alias_ReliefDuressEstablished, IndividualNecessaryProportionateLeastRestrictiveCustodialSentence, CustodySentenceScope).
+observe(CustodyMeritsReview, Alias_ReliefDuressEstablished, IndividualNecessaryProportionateLeastRestrictiveCustodialSentence, CustodySentenceScope).
+observe(Court, Alias_ReliefDuressEstablished, NoDoubleJeopardyOrUnexpiredBar, CustodyFinalityScope).
+observe(CustodyMeritsReview, Alias_ReliefDuressEstablished, NoDoubleJeopardyOrUnexpiredBar, CustodyFinalityScope).
+observe(Chronicle, Alias_ReliefDuressEstablished, Court, CustodyTrialActorEligibleAtDecisionScope).
+observe(TemporalReview, Alias_ReliefDuressEstablished, Court, CustodyTrialActorEligibleAtDecisionScope).
+observe(Chronicle, Alias_ReliefDuressEstablished, CustodyMeritsReview, CustodyMeritsReviewerEligibleAtDecisionScope).
+observe(TemporalReview, Alias_ReliefDuressEstablished, CustodyMeritsReview, CustodyMeritsReviewerEligibleAtDecisionScope).
+list(Merits_Order_Alias_ReliefDuressEstablished, Alias_ReliefDuressEstablished, Epoch_Current, RecordSequence).
+observe(Chronicle, Merits_Order_Alias_ReliefDuressEstablished, Alias_ReliefDuressEstablished, RecordStartScope).
+observe(Chronicle, Merits_Order_Alias_ReliefDuressEstablished, Epoch_Current, RecordEndScope).
+observe(TemporalReview, Merits_Order_Alias_ReliefDuressEstablished, Alias_ReliefDuressEstablished, RecordStartScope).
+observe(TemporalReview, Merits_Order_Alias_ReliefDuressEstablished, Epoch_Current, RecordEndScope).
+? clean(Alias_ReliefDuressEstablished, CustodyConfinementBar).
+# => TRUE

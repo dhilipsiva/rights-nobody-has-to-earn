@@ -2,10 +2,48 @@
 
 # Protective power without a security exception
 
+**Final item-19 integration, 2026-09-20.** The current source passes 88,024
+pins across 16,087 cases in 1,169.06s, with complete contradiction checks and
+no findings. No active known-defect annotations remain. The focused and failed
+runs below are historical steps, not the final result. The five-minute target
+is unmet. These checks establish the loaded model, not outside authenticity
+or performed institutional acts. See `CLAUDE.md` for the development and
+manuscript checks. The fresh whole-manuscript review remains item 20.
+
 Implementation of the ratified public-safety, defence, emergency and external-
 power decision. Rules, tests and delegated-approved reader revisions are
 implemented; the complete verifier passed on 2026-09-13. This is a formal
 interface, not a claim of operational capacity or completed institutional acts.
+
+**Continuing duties — 2026-09-19 supersession.** Protective duties attach to
+the exact recorded undertaking independently of its surviving permission or
+the current authority of a parent. Withdrawing a declaration cannot erase the
+operator's inventory, accounting, return or compensation duty for its
+requisition. Withdrawing a defence structure cannot erase Assembly ceilings,
+appropriation and audit. The same separation applies to the instruments'
+other care, notice, cessation and accountability duties.
+
+The duty producer rejoins the instrument's positive fields, named executor and
+independent attesters, without consuming current completion or the absence of
+a withdrawal or conflicting later entry. It creates neither a permission nor
+evidence that an act occurred or a duty was performed. Restrictive effects
+continue to require the full current authority, dependency and temporal joins.
+Missing all evidence remains an input limitation, not a constitutional waiver.
+
+Before this change the requisition and defence sequences exhibit three lost
+duties. The expanded focused inventory, together with record-power protection
+cases, passes 3,814 pins across 2,157 cases in 95.25s with complete contradiction
+checks. This is partial verification; final item-19 verification remains open.
+
+**Custody and actualities — 2026-09-20 supersession.** The separate custody
+contract now requires qualified merits, case-specific relief, signed severity,
+a named independently reviewed placement and positive independent challenge
+access. The legacy unscoped conviction and release flags are superseded.
+Public-safety holding continues to derive humane duties and standing, including
+when no conviction or valid order exists. It derives neither shelter nor speech
+actuality. The additional independent-shelter-receipt control exercises the
+ordinary recipient route. The generator writes 2,299 public-safety cases;
+complete final verification remains pending.
 
 ## Scope and implementation slices
 
@@ -32,10 +70,10 @@ replace them with a favourable public-safety label.
 | Existing name | Disposition |
 | --- | --- |
 | `capture` | Retain documented examination evidence. Never arrest or detention. |
-| `severe` | Retain the legacy offence/placement classification. No threat or protective-power input. |
-| `prisoner` | Retain the conviction-only, case-bound T3 conclusion. No protective holding producer. |
+| `severe` | Case-specific independently signed severity dimensions. No threat or protective-power input. |
+| `prisoner` | Qualified case-specific merits, current lease, reviewed placement and challenge access. No protective holding producer. |
 | `authority`, `permits` | Retain all existing standing, relief and typed constitutional uses. Do not widen them to mean a new protective mandate or order. |
-| `free` | Retain recorded sentence completion. Missing authority, cessation and release duties cannot manufacture it. |
+| `free` | Raw completion report and first-contact standing only. Qualified case-bound relief governs legal release; no conclusion proves physical release. |
 | `travel` | Retain free movement as a no-reader capability. Add every newly justified movement restriction to its blockers. |
 | `err`, `obliged` | Retain the existing typed finding/reader/action route. New actor-facing duties do not prove action. |
 | `public` | Retain public answerability, not a protective appointment. |
@@ -102,7 +140,7 @@ supplies revisions for:
 
 - Chapter 13, Part V and the hand-authored spine list: the single punitive
   deprivation remains scoped to conviction, not all protective restrictions.
-- Chapter 8: physically-held-person shelter and recorded voice, separately
+- Chapter 8: physically-held-person shelter and voice duties, separately
   from recipient-side arrival and from a permission that nobody exercised.
 - Chapter 4: justification vocabulary for the public actor's force test does
   not become a new personal defence in the existing conviction rule.

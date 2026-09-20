@@ -1,30 +1,15 @@
-# ── Counterfactual: the unguarded pen AND the kept conjuncts stripped ────────
-# The arming case for its two siblings, and it exists because neither of them
-# can arm itself. `unguarded-pen` adds a credential route that forgets
-# ~match(·, CarriedVoid) and ~broken, then shows the void still failing —
-# which proves the multi-sig's own copies of those guards are doing the work
-# only if they are the last thing standing. `no-dead-conjuncts` strips the
-# guards, then shows chapters 24 and 25 unmoved — which proves they are
-# subsumed only while some other rule still catches what they catch.
-#
-# Here both changes are applied at once, so nothing catches a carried-void
-# signer. If this file ever reads FALSE, the pair above has gone vacuous and
-# the justification for keeping four conjuncts in Article 4 has gone with it.
-:expect-pins 4
-
-# Vex was voided in a prior period. The added route seats him anyway.
+# Explicit counterfactual: the unguarded appointment route and the prospective
+# finding's recall, carry and current-credibility checks are all removed.
+# The remaining case, procedure, independence and distinctness premises are live.
+# Permission to act still does not manufacture a completed historical judgment.
+:expect-pins 5
 ? permits(Review, Vex).
 # => TRUE
-
 ? permits(Tribunal, Wren).
 # => TRUE
-
-# Both signers hold case-bound independence findings for Tyr and cite the same
-# recorded ground, so every other condition of the void is met and the four
-# stripped conjuncts are the only difference from the shipped file.
 ? match(Vex, CarriedVoid).
 # => TRUE
-
-# And a signer whose own word is worthless destroys a stranger's.
-? false(Tyr).
+? agree(Credibility_Tyr_Candidate, CredibilityFindingCandidate).
 # => TRUE
+? false(Tyr).
+# => FALSE

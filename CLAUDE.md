@@ -2354,10 +2354,31 @@ publication, deployment, recovery, clocks and operational evidence.
 The author approved the exact edits preserved in
 `book-1/source/amendment-reader-draft.md` on 2026-09-13. They are inserted
 unchanged in Book 1 chapters 1 and 12 and the method; their supply is
-`session-drafted, author-approved`. The historical AS-01–AS-09 cases and old
-Article 9 defects below remain valid. Their former absence descriptions and
-RI-12's historical status do not describe the new bounded interface; no
-operational-authentication or semantic-completeness claim is upgraded.
+`session-drafted, author-approved`. The AS-01–AS-09 source-mutation scenarios
+remain, with the label expectations superseded below. Their former absence
+descriptions and RI-12's historical status do not describe the bounded
+interface; no operational-authentication or semantic-completeness claim is upgraded.
+
+**Parallel amendment-label rules removed, 2026-09-19, revision item 19.**
+The controlling amendment-enactment contract supersedes the retained Article 9
+label mechanism under delegated author approval. Both the proposal-to-personal
+`false` rule and the docket/tally-to-`become` rule are removed. Requiring a target
+would leave its semantic gap and personal-name collision; changing only the
+rejection relation would leave the unsupported law status. Neither parallel
+rule is necessary to the constitutional commitments. The existing candidate-
+bound certification, publication and effective-selection process remains the
+amendment route, with its positive controls and missing-consent/conflict refusals.
+The retained protected-register names confer no authority on their own.
+
+A new docketed-Jala case first reproduces loss of recognition, a credibility
+finding and a recognition-loss verdict. On the repaired source Jala keeps
+recognition and obtains neither adverse conclusion; a targetless proposal
+obtains no law label. An explicit counterfactual adds the two weaker rules and
+reproduces both failures from the same facts. Active AS pins retain every
+candidate mutation, scoped/refused rule and source-effect expectation, while
+their superseded personal/law-label expectations become refusals. Historical
+audit measurements are not renewed by the updates to existing descriptions
+and locators. Item 19's other source questions remain open.
 
 **Amendment semantics are now tested separately from amendment labels, enacted
 2026-08-04.** Article 9 reads a proposer-supplied `adjust(amendment, label)` and
@@ -3819,6 +3840,281 @@ for substantive resolution in item 19. The five-minute target is not met.
 The ordered manuscript, constitution, pins, suites and verifier are unchanged.
 The final diff check passes.
 
+**Item 19 — final substantive repairs in progress, 2026-09-19.**
+The amendment subtask removes only the two Article 9 label rules; a comparison
+of active source lines confirms no other constitutional rule or fact changes
+in this subtask. The existing 15,996 case configurations and 114 bases remain
+identical; two cases are appended for the same facts on the live source and
+an explicit weaker-rule counterfactual. The source-mutation scenarios retain
+their adverse rules, refusal controls, source edits and source-effect results.
+No actual amendment-enactment generator or interface changes.
+
+The initial five-pin docketed-Jala regression fails on exactly three intended
+properties: recognition, personal credibility and recognition loss (10.5s,
+three findings, no harness errors). With the two weaker rules removed, the
+expanded seven-pin case passes in 10.34s. Seventeen further focused selections
+pass 196 pins over 17 case executions in 184.25s total: the weaker-rule
+counterfactual, chapter 22, the floor suite, AS-01–AS-09, certification,
+publication, effective selection, missing consent and competing selection.
+This is focused evidence, not completion of the final full verifier.
+
+Chapter 22, the method's amendment example, the controlling contract and
+their exact current documentation changes are `session-drafted,
+author-approved under delegated approval (2026-09-13)`. The prose describes
+current candidate-bound authority and a deliberately weakened counterfactual;
+it does not narrate the book's repairs. Existing coverage and design records
+follow the changed mechanism and distinguish historical audit measurements.
+The seven isolation defect expectations and all other item 14 source questions
+remain open. Item 19, the submission refresh and the fresh full reading in
+item 20 are not complete.
+
+The initial reference checks identify the removed source and prose locators;
+those existing entries are updated rather than added to the exception set.
+Coverage tests pass (ten, 0.19s), final reference tests pass (six, 1.37s),
+and claim-discipline tests pass (five, 0.77s). The diff check passes.
+
+The credibility subtask implements a different representation, superseding
+the claimed necessity of the same-record signer window in
+`book-1/appendix/decisions/credibility-finding-decision.md`. Effective historical
+findings bind a subject, incident, ground, evidence, independent reviewers,
+procedure and eligibility at decision. Permission to make a new finding is a
+separate conclusion and reads current disqualification and family conflicts.
+An appointment alone does not permit a currently voided reviewer to sign.
+Conflicting case bindings fail closed. The source does not authenticate the
+outside historical witnesses or manufacture a completed judgment from a
+prospective permission.
+
+Raw deceit allegations no longer remove examination recognition or disclosure
+protection. Disclosures have explicit incident identifiers. Restoration binds
+the particular finding and appellate act; a generic judgment or forgiveness
+flag does nothing, and another finding remains effective. A parent's judgment
+does not automatically impose a personal finding. Every target of an effective
+finding is owed reasons without a separate personhood entry. A carried
+credential restriction cannot alone withhold recognition; the cast's existing
+personal consequences now have explicit fictional case records. The existing
+decision and source changes are `session-drafted, author-approved under
+delegated approval (2026-09-13)`.
+
+An isolated eight-pin prototype passes. The first full-source attempt rejects
+a negative dependency through the appointment relation; the corrected
+prospective-act representation passes eight pins, then 28, 50 and 55 expanded
+pins. The actual constitution passes the 55-pin regression in 10.94s and again,
+with the original unscoped examinations and raw accusation retained, in 11.22s.
+The explicit counterfactual reinstating the unscoped immediate-effect rule
+passes four pins in 10.10s and reproduces the currently voided signer's adverse
+effect. These focused runs include their requested contradiction checks. The
+following chapter-24 selection exposes an obsolete exact source-edit locator
+in the no-dead-conjuncts counterfactual; it is not a completed selection. The
+counterfactuals, chapter fidelity pins and reader projection are being migrated
+to the prospective act. No complete item-19 verification has run, and the other
+item-14 questions remain open.
+
+The migrated chapter 25 passes 198 pins over the live and declared stripped-guard
+variants. It retains the original scenarios and old-policy single-signer
+control, adds incident-bound permissions and completed histories, and tests
+restoration of an adjudicated parental conflict without erasing the underlying
+relationship. A further red case finds that a renamed restored finding could
+revive its consequence: three failures in 58 pins, no harness errors. The fix
+binds restoration to subject, incident and ground across record names and
+evidence labels, and closes the prospective route for that restored case.
+Separate grounds and incidents remain separately adjudicable.
+
+The repaired regression passes 62 pins in 11.03s; chapter 24 passes 102 pins
+across two source variants in 10.63s; chapter 26 passes 41 pins in 10.27s.
+The combined execution takes 32.57s. The two appointment-guard counterfactuals
+pass six and five pins in 10.18s and 10.10s respectively (20.71s combined).
+The explicit immediate-effect counterfactual still passes its four pins and
+reproduces the old same-record harm. Full verification, development tests,
+coverage/reference updates and the remaining item-14 repairs are still pending.
+The current-design revisions to chapters 3, 10, 16, 23–26, the opening glossary
+and the Part V shield discussion are also `session-drafted, author-approved
+under delegated approval (2026-09-13)`. They describe the implemented case
+requirements; the unrelated appellate-relief, custody, temporal, continuing-duty
+and isolation questions remain open.
+
+Restoration now explicitly separates the case-authorized decision actor and
+reviewer from each other and from the subject. Qualified independent alternates
+can act when an ordinary body is a party. The new 13-pin regression first
+exposes eight failures; after repairing the rule and an actor-renaming fixture
+error, it passes in 10.87s. Together with the 62-pin regression, chapter 25's
+two variants and chapter 26, 314 pins pass across five selected executions in
+46.51s with their contradiction checks. All 16 existing floor-vector development
+tests pass in 1.31s. The exact chapter and decision additions are
+`session-drafted, author-approved under delegated approval (2026-09-13)`.
+These remain focused checks; item 19 is still open.
+
+**Continuing duties.** Three adversarial withdrawal sequences confirm nine
+lost protections: six data safeguards or contest rights, two declaration and
+requisition duties, and the defence ceiling/appropriation/audit duty. The
+authoring contracts now give continuing protections a separate basis in the
+fully specified recorded undertaking. Current completion, permission and lack
+of a later withdrawal or conflict no longer gate those duties. Exact actors,
+record fields and independent witnesses remain required; no new authority or
+performed act follows from a continuing duty. Record protections retain their
+exact raw holding joins. Restrictions still require all their current authority
+and dependency premises.
+
+The existing generators implement the change; two additional record sequences
+test withdrawal against the dependent record itself. The focused inventory
+includes all 447 record-power cases and the public-safety core and review
+cases, with the original sources, declared transformations and contradiction
+checks. It passes 3,814 pins across 2,157 cases in 95.25s. This temporary
+selection is not the complete book verifier and creates no persisted verdict
+or new verification gate. The exact chapters 19, 20 and 30, contract and
+decision revisions are `session-drafted, author-approved under delegated
+approval (2026-09-13)`. Custody, severity, placement, temporal intake, isolation,
+remaining metadata and final verification are still open.
+
+**Positive isolation evidence.** The 37-pin red case confirms 16 failures:
+the seven absence-based markers, missing complaint access, and the absence of
+a positive condition-finding route. The replacement binds subject, holding,
+holder, place, period and evidence to distinct authorised witness and reviewer.
+Conflicting authorised descriptions block the finding; uncredentialed noise
+does not. Neither actor may be the subject or holder. Human identification
+and the floor survive a disputed period or procedure. A company receipt for
+another encounter does not erase the recorded finding about its own period.
+Routine custody review is owed without a breach finding, and a complaint opens
+investigation without the holder's permission or a completed finding.
+
+The expanded condition case passes 41 pins (10.74s); its explicit weaker-rule
+counterfactual passes seven (10.00s); chapter 30 passes 37 (10.92s); and the
+floor suite passes 100 (23.45s). These total 185 pins across four focused
+executions in 55.11s, with requested contradiction checks complete. The floor
+suite first exposes a stale incidental-cycle expectation for `~false` after
+the parent-judgment route's removal. The same non-floor control is retained as
+scoped acceptance; all floor refusals remain required. The seven isolation
+queries retain their scenarios as ordinary negative regressions, and their
+`:defect` annotations are removed after the repair.
+
+The existing floor development check now forbids every downstream reader of
+a floor actuality, with positive and negative mutation controls. All 16 floor
+development tests pass in 19.10s. Reference tests expose two stale chapter-30
+locators; correcting those existing references yields six passing tests in
+1.35s, without expanding the historical exception set. Five claim-discipline
+tests pass in 0.72s. The duty-related chapters 19 and 20 pass 32 focused pins
+in 20.47s. The exact current-design revisions to chapters 4, 29, 30 and method,
+the delivery decision and existing coverage/defect records are
+`session-drafted, author-approved under delegated approval (2026-09-13)`.
+These results do not close the remaining custody, severity, placement or
+temporal-intake issues, and no complete item-19 run has yet been made.
+
+**Custody merits, relief, execution and intake — 2026-09-20 integration.**
+The prior raw-flag regression exhibits eight failures in eleven pins. Custody
+now requires a separately qualified merits finding: subject, incident,
+offence, evidence, victim and prosecutor; distinct uninvolved adjudicator and
+reviewer; criminal proof, defences, public law, admissible evidence, counsel,
+hearing, reasons, proportionality and repeat-proceeding limits; and witnessed
+historical eligibility and order. An unscoped broken-Court mark is not a
+universal amnesty. Qualified independent appellate relief has closed grounds
+and exact case scope. Final relief follows subject, incident and offence
+across renamed cases, while court-jurisdiction relief leaves a fresh lawful
+proceeding possible. Raw clearing, generic judgments and completion flags
+cannot replace that order.
+
+Severity uses independently signed dimensions of the same adjudicated case.
+A case cannot borrow another case's severity. Custody also requires a named,
+available, independently reviewed placement, with positive necessity and
+lawful-condition findings. No-home cases need positive ordinary supported-
+residence evidence; absence of a home does not select HighSec or fabricate a
+place. Conflicting qualified places withhold authority. Every reported
+category, conflicting reports and structured wrong-place reports can trigger
+review. A sentence or physical holding no longer produces delivered shelter
+or speech: their duties remain, and shelter uses the independent recipient
+route. Public-safety and statistics owning generators reflect this distinction.
+
+Each custody lease needs positive independent intake access, counsel, retained
+copies and reconciliation. A subject-retained submission or independent
+receipt establishes a filing without the primary registry's entry. The
+pending case and its aliases cannot sustain custody; a qualified uninvolved
+disposition alone ends the suspension. The temporal and public-safety decisions
+record the initial cyclic encodings and the separate-stage repair. The
+delivery decision records why identical supplied inputs cannot distinguish
+unreported delivery from non-delivery, and the duties and evidence routes
+that remain required. These are bounded observation limits, not impossibility
+claims about institutional reform or excuses for missing safeguards.
+
+The extended prototype passes 377 pins across 79 cases in 14.48s. On the
+actual source, 1,130 pins across 129 custody, placement and record cases pass
+in 53.42s; 736 pins across 103 temporal, shield and red-team cases pass in
+36.24s, with their contradiction checks complete and no findings. The old
+single-signer and belief-void widening controls remain as attempted edits;
+the current dependency graph refuses them. The explicit older-rule temporal
+and credibility counterfactuals omit the new exact-place permission projection
+whose shared predicate otherwise prevents those deliberately weaker models
+from loading. The enacted projection is unchanged.
+
+All 16 floor and dependency development checks pass in 18.31s. The complete
+authoring development run reports 126 passes, three failures and five declared
+ignored tests in 762.06s. The failures identify stale reference/disposition
+metadata and omitted inventory defaults, not enacted-rule failures. Corrected
+reference tests pass six in 1.43s, disposition tests pass three in 0.02s, and
+the justice boundary test passes in 62.89s. The runner's development suite
+passes 32 tests, with three declared ignored performance tests, in 0.06s.
+The first complete substantive run stops at the older isolation-duty fixture;
+its owning obligations generator now supplies positive condition evidence,
+retaining both original reader-duty expectations. This is not yet a complete
+item-19 pass.
+
+The exact current-design revisions to chapters 3–5, 21, 23, 27–29, Part V and
+method, and their controlling decisions and contracts, are `session-drafted,
+author-approved under delegated approval (2026-09-13)`. The canonical household
+paragraph and one-line child fixture remain unchanged. Existing source and
+prose references are maintained; the two resolved constitution-reference
+exceptions are removed, leaving three historical unmatched locators. No new
+verification gate or persisted verdict is introduced. Final complete
+verification, final artifact inspection and item 20 remain open.
+
+**Item 19 complete — 2026-09-20.** The final complete
+`RIGHTS_VERIFY_JOBS=4 ./verify.sh` run passes **88,024 pins across 16,087
+cases in 1,169.06s (19m 29.06s)**, with contradiction checks complete and no
+findings. The five-minute target is not met. No active `:defect` annotations
+remain in the execution inventory. The nine former live defects are negative
+regressions under the enacted source; their explicitly weaker alternatives
+retain the harmful results. The other item-14 mechanism questions are resolved
+by the implemented case bindings, independent relief, continuing protections,
+positive condition findings and custody contracts described above. The
+necessary identical-input observation boundary is justified separately; it
+does not stand in for any missing legal repair.
+
+The amended obligations owner and all amendment and credibility cases pass
+400 pins across 158 focused cases in 39.77s before the complete run. All
+previously failing authoring checks pass on rerun: 129 authoring development
+tests passed across the complete run and the targeted reruns, with five
+declared ignored tests. All 32 runner development tests pass, with three
+declared ignored performance tests. Seven book-renderer tests pass in 0.194s.
+No test assertion was dropped to obtain these results. Older scenarios retain
+their raw writes, assertions, stateful order and explicit source transformations;
+changed legal expectations and incidental refusals are documented. Empty
+fixture/edit lists and default-true scan values are explicit for the authoring
+schema; they do not change native execution.
+
+The separate prose/source review aligns the changed chapters, method, cast
+cases, contracts and existing locators with the implemented rules. All Part V
+figure bindings and source locators pass the existing claim-discipline tests;
+this item adds no empirical statistic or study. The epigraph, exact hypothetical
+household paragraph and one-line child fixture remain unchanged. Child coverage,
+ordered contents and majority-derived coverage checks pass. The current
+rendered-text whitespace count is 51,433 words, of which 39,385 belong to the
+30 derived chapters (76.57%); the five-chapter sample is 10,036 words. The
+proposal uses rounded counts and states that final editorial review is pending.
+
+The full HTML, EPUB and 155-page PDF and the sample HTML, EPUB and 29-page PDF
+are rebuilt. All PDF pages were inspected on contact sheets; 1,212 full-book
+and 197 sample text blocks occur in the PDFs, with no out-of-page text or empty
+pages. The full PDF has 268 bookmarks, 174 valid named internal links and 60
+external links; the sample has 36, 33 and 36 respectively. Eight browser
+renders at 360px and 1280px pass overflow, fragment, image and font checks;
+selected mobile and desktop chapter views were inspected. EPUBCheck 5.4.0
+reports zero errors and warnings for both books under EPUB 3.4 rules. Rendering
+uses installed Chromium 146.0.7680.80 through the builder's supported explicit
+browser option. An initial default-browser attempt lacked the expected browser,
+and a cached browser lacked system libraries; neither is counted as a pass.
+
+The exact final proposal and decision-record revisions are `session-drafted,
+author-approved under delegated approval (2026-09-13)`. Item 19 is removed from
+the tracker after its implementation and checks; item 20 remains open. No
+submission, external endorsement, release or operational success is claimed.
+
 ### Measured Nibli capability boundaries
 
 Each is a dated measurement against a named engine revision, not a timeless
@@ -4234,22 +4530,18 @@ deceit adjudication and `broken(Court).` is a universal amnesty. The rule is a h
   restate the unnarrowed BL1 in book-1; it would be false the way BL2 is false in
   `book.md`.
 
-- **Article 9 does not semantically entrench the evidence vocabulary.**
-  The source audit applies `permanent(Art_Evidence).` and still executes a direct
-  vocabulary widening: `rich(Adam)` becomes writable. Article 9's general rule marks
-  dead a docketed proposal that DECLARES a registered target and does nothing to the
-  source itself. `adjust` is self-declared, so a targetless proposal and one naming a
-  harmless target both receive the otherwise-derived law label.
-  In the reverse direction, `false(Amend_Floor)` remains true and `become` remains false
-  while an independently constructed source deletion removes the food entitlement and
-  makes the adverse rule loadable.
-  The executable source audit goes further: a concealed grammar change can remove the
-  food entitlement while the separate anti-imprisonment firewall survives, and direct
-  `admits("rich")` widening bypasses Article 9 entirely. Article 0a therefore makes
-  widening *source-visible*, not approved, authenticated, or semantically entrenched.
-  Nothing reads `become`, and the audit manually applies its candidates; it proves no
-  proposal-to-source transition. A future entrenchment design must bind an exact change,
-  independent effect review, compatibility verdict, and effective version.
+- **A protected-name register does not inspect or prevent a source edit.**
+  The 2026-09-19 amendment supersession removes the parallel Article 9 label
+  rules. Candidate-specific amendment status belongs to the exact-change
+  interface, with independent effect review, compatibility, publication and
+  effective selection. Retained source-mutation tests still show that a manual
+  food-entitlement deletion changes consequences, a concealed grammar change
+  can remove that entitlement while leaving its structural firewall intact,
+  and an `admits("rich")` edit widens the writable record even when the
+  candidate contains `permanent(Art_Evidence)`. These explicit counterfactual
+  edits are not authorised transitions. Article 0a makes widening visible in
+  source; neither it nor a passed check authenticates or physically prevents
+  an edit outside the constitutional process.
 
 - **`--allow-shell` stays opt-in, and do not ask upstream to make it unconditional.**
   nibli's pin language is closed by design — nothing under their `pins/` may reach outside

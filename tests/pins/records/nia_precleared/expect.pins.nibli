@@ -1,11 +1,12 @@
 # SPDX-License-Identifier: MIT OR Apache-2.0
+# Raw status flags cannot replace a qualified case decision.
 :expect-pins 4
 # Generated red-team queries for snapshot nia_precleared.
 # This file is ephemeral and outside chapter pin reconciliation.
 
 # Reviewed expected consequence in nia_precleared.
 ? clean(Nia).
-# => TRUE
+# => FALSE
 
 # Reviewed expected consequence in nia_precleared.
 ? judge(Appeals, Nia).

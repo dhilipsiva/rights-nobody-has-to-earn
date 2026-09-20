@@ -1,7 +1,8 @@
 # The Shield
 
 A disclosure against a publicly answerable actor opens protection against
-conviction while no deceit is recorded against that exposure. The protection
+conviction while no effective deceit finding applies to that particular
+exposure. The protection
 begins before anyone has decided whether the disclosure is true. A qualified,
 independent case finding can instead establish that a prosecution is unrelated
 to the disclosure. The person making the disclosure does not have
@@ -35,7 +36,7 @@ in the supplied record, not a lawful way to appoint a victim to public office.
 ## Sly
 
 Sly injured Pax and exposed the court. The court is publicly answerable, and
-there is no recorded deceit against that exposure. Sly's shield holds.
+there is no effective deceit finding against that exposure. Sly's shield holds.
 
 A missing adverse finding is enough for protection to continue. It is not a
 finding that Sly told the truth. Nor does the recorded injury make the
@@ -63,28 +64,29 @@ questions about the offence.
 
 ## Kel
 
-Kel injured Pax and exposed the court. The record supplies deceit for that
-exposure and a Review judgment of Kel. The deceit entry defeats this shield,
-so Kel's otherwise complete conviction derives. Together with the Review
-judgment, it also produces a void and recognition loss. It
-takes no wage, property, pension, or floor right.
+Kel injured Pax and exposed the court. A completed case identifies Kel's
+exposure, the deceit finding and its evidence. It includes two independent
+reviewers, their eligibility at the decision, and matching records of notice,
+access to evidence, a hearing and reasons. That finding defeats this exposure's
+shield, so Kel's otherwise complete conviction derives. It also produces a
+void and recognition loss. It takes no wage, property, pension or floor right.
 
-The two requirements differ. The shield rule reads the deceit entry directly;
-it does not require the Review judgment that the void rule also needs. Kel's
-case supplies both, but cannot establish that every withdrawal of a shield
-requires an adjudicated finding. Nor does the supplied judgment establish
-that a hearing occurred or was fair.
+A raw accusation and a generic Review judgment do not supply the case. The
+same subject and incident must be identified in the completed finding. These
+requirements concern what the record must establish; they do not prove that
+the outside witnesses gave an honest account of the procedure or the evidence.
 
 The finding concerns this exposure. It does not establish that every later
 statement by Kel is false, and it does not make Kel ineligible for protection
-against a different act of retaliation.
+against a different act of retaliation. Another exposure to the same authority
+is assessed separately too.
 
 ## Rex
 
-Rex injured Sena and exposed the court. The review body found that exposure
+Rex injured Sena and exposed the court. A completed case found that exposure
 deceitful. Rex then exposed the review body.
 
-The second exposure has no recorded deceit against it, so the shield derives
+The second exposure has no effective deceit finding against it, so the shield derives
 again. Rex is both discredited and shielded. Protection does not read the
 claimant's general credibility: a finding that reaches recognition does not
 become permission to retaliate.

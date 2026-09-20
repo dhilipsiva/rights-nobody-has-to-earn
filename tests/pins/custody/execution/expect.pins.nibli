@@ -1,0 +1,340 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 49
+? prisoner(Hano, Case_Hano).
+# => TRUE
+? building(Homestay, Hano).
+# => TRUE
+? permits(Case_Hano, Hano, Place_Hano).
+# => TRUE
+? dwell(Hano).
+# => FALSE
+? expresses(Hano).
+# => FALSE
+? prisoner(Ruk, Case_Ruk).
+# => TRUE
+? building(HighSec, Ruk).
+# => TRUE
+? permits(Case_Ruk, Ruk, Place_Ruk).
+# => TRUE
+? dwell(Ruk).
+# => FALSE
+? expresses(Ruk).
+# => FALSE
+? prisoner(Adam, Case_Adam).
+# => TRUE
+? building(SupportedResidence, Adam).
+# => TRUE
+? permits(Case_Adam, Adam, Place_Adam).
+# => TRUE
+? dwell(Adam).
+# => FALSE
+? expresses(Adam).
+# => FALSE
+? severe(Hano, Case_Hano).
+# => FALSE
+? severe(Ruk, Case_Ruk).
+# => TRUE
+cruel(Hano, Ivo).
+attack(Adam, Ivo).
+cruel(Adam, Ivo).
+? severe(Hano, Case_Hano).
+# => FALSE
+? severe(Adam, Case_Adam).
+# => FALSE
+list(WrongIncident, Hano, Case_Hano, CustodySeverityFinding).
+list(WrongIncident, AggravatedCruelty, Evidence_WrongIncident, CustodySeverityDimensionEvidence).
+list(WrongIncident, Ivo, UnrelatedIncident, CustodySeverityVictimIncident).
+authorized(Court, CustodySeverityAdjudicator, WrongIncident).
+authorized(CustodyMeritsReview, IndependentSeverityReviewer, WrongIncident).
+observe(Court, WrongIncident, Case_Hano, SeverityCaseScope).
+observe(CustodyMeritsReview, WrongIncident, Case_Hano, SeverityCaseScope).
+observe(Court, WrongIncident, Hano, SeveritySubjectScope).
+observe(CustodyMeritsReview, WrongIncident, Hano, SeveritySubjectScope).
+observe(Court, WrongIncident, UnrelatedIncident, SeverityIncidentScope).
+observe(CustodyMeritsReview, WrongIncident, UnrelatedIncident, SeverityIncidentScope).
+observe(Court, WrongIncident, Ivo, SeverityVictimScope).
+observe(CustodyMeritsReview, WrongIncident, Ivo, SeverityVictimScope).
+observe(Court, WrongIncident, AggravatedCruelty, SeverityDimensionScope).
+observe(CustodyMeritsReview, WrongIncident, AggravatedCruelty, SeverityDimensionScope).
+observe(Court, WrongIncident, Evidence_WrongIncident, SeverityEvidenceScope).
+observe(CustodyMeritsReview, WrongIncident, Evidence_WrongIncident, SeverityEvidenceScope).
+observe(Court, WrongIncident, AdjudicatedHarmAndMentalElementWithNoticeCounselChallengeAndReasons, SeverityProcedureScope).
+observe(CustodyMeritsReview, WrongIncident, AdjudicatedHarmAndMentalElementWithNoticeCounselChallengeAndReasons, SeverityProcedureScope).
+? attribute(WrongIncident, AggravatedCruelty).
+# => FALSE
+? severe(Hano, Case_Hano).
+# => FALSE
+list(Case_Ruk_Other, Ruk, Incident_Case_Ruk_Other, CustodyMatter).
+list(Case_Ruk_Other, PublicInjuryOffence, Evidence_Case_Ruk_Other, CustodyOffenceEvidence).
+list(Case_Ruk_Other, Opal, Prosecution, CustodyParties).
+list(Case_Ruk_Other, Court, CustodyMeritsReview, CustodyDecisionActors).
+judge(Court, Case_Ruk_Other).
+judge(CustodyMeritsReview, Case_Ruk_Other).
+authorized(Court, CustodyTrialAdjudicator, Case_Ruk_Other).
+authorized(CustodyMeritsReview, IndependentCustodyMeritsReviewer, Case_Ruk_Other).
+observe(Court, Case_Ruk_Other, Ruk, CustodySubjectScope).
+observe(CustodyMeritsReview, Case_Ruk_Other, Ruk, CustodySubjectScope).
+observe(Court, Case_Ruk_Other, Incident_Case_Ruk_Other, CustodyIncidentScope).
+observe(CustodyMeritsReview, Case_Ruk_Other, Incident_Case_Ruk_Other, CustodyIncidentScope).
+observe(Court, Case_Ruk_Other, PublicInjuryOffence, CustodyOffenceScope).
+observe(CustodyMeritsReview, Case_Ruk_Other, PublicInjuryOffence, CustodyOffenceScope).
+observe(Court, Case_Ruk_Other, Evidence_Case_Ruk_Other, CustodyEvidenceScope).
+observe(CustodyMeritsReview, Case_Ruk_Other, Evidence_Case_Ruk_Other, CustodyEvidenceScope).
+observe(Court, Case_Ruk_Other, Opal, CustodyVictimScope).
+observe(CustodyMeritsReview, Case_Ruk_Other, Opal, CustodyVictimScope).
+observe(Court, Case_Ruk_Other, Prosecution, CustodyProsecutorScope).
+observe(CustodyMeritsReview, Case_Ruk_Other, Prosecution, CustodyProsecutorScope).
+observe(Court, Case_Ruk_Other, PublicLawInForceBeforeTheAct, CustodyPriorLawScope).
+observe(CustodyMeritsReview, Case_Ruk_Other, PublicLawInForceBeforeTheAct, CustodyPriorLawScope).
+observe(Court, Case_Ruk_Other, IdentityActCausationAndRequiredMentalElementProvedBeyondReasonableDoubt, CustodyProofScope).
+observe(CustodyMeritsReview, Case_Ruk_Other, IdentityActCausationAndRequiredMentalElementProvedBeyondReasonableDoubt, CustodyProofScope).
+observe(Court, Case_Ruk_Other, NoPunishmentForStatusOrProtectedConduct, CustodyConductScope).
+observe(CustodyMeritsReview, Case_Ruk_Other, NoPunishmentForStatusOrProtectedConduct, CustodyConductScope).
+observe(Court, Case_Ruk_Other, AdmissibleDisclosedEvidenceNoCoercionOrDecisiveSecretEvidence, CustodyAdmissibilityScope).
+observe(CustodyMeritsReview, Case_Ruk_Other, AdmissibleDisclosedEvidenceNoCoercionOrDecisiveSecretEvidence, CustodyAdmissibilityScope).
+observe(Court, Case_Ruk_Other, NoticeCounselAccessibleHearingAndPublicReasons, CustodyProcedureScope).
+observe(CustodyMeritsReview, Case_Ruk_Other, NoticeCounselAccessibleHearingAndPublicReasons, CustodyProcedureScope).
+observe(Court, Case_Ruk_Other, IndependentlyAdjudicatedDefencesAndExculpatoryEvidence, CustodyDefencesScope).
+observe(CustodyMeritsReview, Case_Ruk_Other, IndependentlyAdjudicatedDefencesAndExculpatoryEvidence, CustodyDefencesScope).
+observe(Court, Case_Ruk_Other, IndividualNecessaryProportionateLeastRestrictiveCustodialSentence, CustodySentenceScope).
+observe(CustodyMeritsReview, Case_Ruk_Other, IndividualNecessaryProportionateLeastRestrictiveCustodialSentence, CustodySentenceScope).
+observe(Court, Case_Ruk_Other, NoDoubleJeopardyOrUnexpiredBar, CustodyFinalityScope).
+observe(CustodyMeritsReview, Case_Ruk_Other, NoDoubleJeopardyOrUnexpiredBar, CustodyFinalityScope).
+observe(Chronicle, Case_Ruk_Other, Court, CustodyTrialActorEligibleAtDecisionScope).
+observe(TemporalReview, Case_Ruk_Other, Court, CustodyTrialActorEligibleAtDecisionScope).
+observe(Chronicle, Case_Ruk_Other, CustodyMeritsReview, CustodyMeritsReviewerEligibleAtDecisionScope).
+observe(TemporalReview, Case_Ruk_Other, CustodyMeritsReview, CustodyMeritsReviewerEligibleAtDecisionScope).
+list(Merits_Order_Case_Ruk_Other, Case_Ruk_Other, Epoch_Current, RecordSequence).
+observe(Chronicle, Merits_Order_Case_Ruk_Other, Case_Ruk_Other, RecordStartScope).
+observe(Chronicle, Merits_Order_Case_Ruk_Other, Epoch_Current, RecordEndScope).
+observe(TemporalReview, Merits_Order_Case_Ruk_Other, Case_Ruk_Other, RecordStartScope).
+observe(TemporalReview, Merits_Order_Case_Ruk_Other, Epoch_Current, RecordEndScope).
+? severe(Ruk, Case_Ruk_Other).
+# => FALSE
+? fit(Ruk, Homestay, Case_Ruk_Other).
+# => TRUE
+put(State, Hano, HighSec).
+put(State, Adam, UnknownDestination).
+put(State, Ruk, Homestay).
+? err(Hano, Placement).
+# => TRUE
+? err(Adam, Placement).
+# => TRUE
+? err(Ruk, Placement).
+# => TRUE
+list(WrongPlaceReport, Kel, Case_Kel, CustodyPlacementReport).
+list(WrongPlaceReport, State, Place_Adam, CustodyPlacementReportDetails).
+? err(Kel, Placement).
+# => TRUE
+list(Conflicting_Lalo, Lalo, Case_Lalo, CustodyPlacement).
+list(Conflicting_Lalo, OtherLaloFacility, HighSec, CustodyPlaceKind).
+list(Conflicting_Lalo, Case_Lalo, Window_Custody, CustodyPlacementPeriod).
+authorized(State, CustodyPlacementAuthority, Conflicting_Lalo).
+authorized(PlacementReview, IndependentPlacementReviewer, Conflicting_Lalo).
+observe(State, Conflicting_Lalo, Lalo, CustodyPlacementSubjectScope).
+observe(PlacementReview, Conflicting_Lalo, Lalo, CustodyPlacementSubjectScope).
+observe(State, Conflicting_Lalo, Case_Lalo, CustodyPlacementCaseScope).
+observe(PlacementReview, Conflicting_Lalo, Case_Lalo, CustodyPlacementCaseScope).
+observe(State, Conflicting_Lalo, OtherLaloFacility, CustodyPlacementPlaceScope).
+observe(PlacementReview, Conflicting_Lalo, OtherLaloFacility, CustodyPlacementPlaceScope).
+observe(State, Conflicting_Lalo, HighSec, CustodyPlacementKindScope).
+observe(PlacementReview, Conflicting_Lalo, HighSec, CustodyPlacementKindScope).
+observe(State, Conflicting_Lalo, Case_Lalo, CustodyPlacementLeaseScope).
+observe(PlacementReview, Conflicting_Lalo, Case_Lalo, CustodyPlacementLeaseScope).
+observe(State, Conflicting_Lalo, Window_Custody, CustodyPlacementWindowScope).
+observe(PlacementReview, Conflicting_Lalo, Window_Custody, CustodyPlacementWindowScope).
+observe(State, Conflicting_Lalo, Epoch_Current, CustodyPlacementEpochScope).
+observe(PlacementReview, Conflicting_Lalo, Epoch_Current, CustodyPlacementEpochScope).
+observe(State, Conflicting_Lalo, PositiveAccessibleAvailableConsentingPlaceAndIndividualLawfulConditions, CustodyPlacementAvailabilityScope).
+observe(PlacementReview, Conflicting_Lalo, PositiveAccessibleAvailableConsentingPlaceAndIndividualLawfulConditions, CustodyPlacementAvailabilityScope).
+observe(State, Conflicting_Lalo, NoticeCounselReasonsIndependentInspectionAndAccessibleChallenge, CustodyPlacementProcedureScope).
+observe(PlacementReview, Conflicting_Lalo, NoticeCounselReasonsIndependentInspectionAndAccessibleChallenge, CustodyPlacementProcedureScope).
+observe(State, Conflicting_Lalo, IndividuallyNecessaryLeastRestrictivePlacementAndContinuity, CustodyPlacementNecessityScope).
+observe(PlacementReview, Conflicting_Lalo, IndividuallyNecessaryLeastRestrictivePlacementAndContinuity, CustodyPlacementNecessityScope).
+observe(State, Conflicting_Lalo, SecurePlacementNecessaryAndLessRestrictiveAlternativesInsufficient, CustodyPlacementAlternativeScope).
+observe(PlacementReview, Conflicting_Lalo, SecurePlacementNecessaryAndLessRestrictiveAlternativesInsufficient, CustodyPlacementAlternativeScope).
+? problem(Lalo, CustodyPlacementConflict).
+# => TRUE
+? prisoner(Lalo).
+# => FALSE
+? err(Lalo, Placement).
+# => TRUE
+? obliged(Review, Lalo).
+# => TRUE
+list(Retained_Kel_Challenge, Kel, Case_Kel, CustodyChallengeFiling).
+authorized(IndependentCustodyReader, CustodyFilingWitness, Case_Kel).
+observe(IndependentCustodyReader, Retained_Kel_Challenge, Kel, CustodyFilingSubjectScope).
+observe(IndependentCustodyReader, Retained_Kel_Challenge, Case_Kel, CustodyFilingCaseScope).
+observe(IndependentCustodyReader, Retained_Kel_Challenge, RetainedIndependentSubmissionCopy, CustodyFilingReceiptScope).
+? challenge(Kel, Case_Kel, TemporalReview).
+# => FALSE
+? closed(Case_Kel, LeaseSuspended).
+# => TRUE
+? prisoner(Kel).
+# => FALSE
+? obliged(Appeals, IndependentlyHearCustodyChallengeWithCounselAndReasons, Kel).
+# => TRUE
+list(Subject_Hano_Challenge, Hano, Case_Hano, CustodyChallengeFiling).
+observe(Hano, Subject_Hano_Challenge, Case_Hano, CustodyChallengeSubmissionScope).
+? prisoner(Hano).
+# => FALSE
+authorized(Renewed_Hano, ActiveCustody, Case_Hano).
+? closed(Renewed_Hano, LeaseSuspended).
+# => TRUE
+list(Case_Hano_Alias, Hano, Incident_Case_Hano, CustodyMatter).
+list(Case_Hano_Alias, PublicInjuryOffence, Evidence_Case_Hano_Alias, CustodyOffenceEvidence).
+list(Case_Hano_Alias, Ivo, Prosecution, CustodyParties).
+list(Case_Hano_Alias, Court, CustodyMeritsReview, CustodyDecisionActors).
+judge(Court, Case_Hano_Alias).
+judge(CustodyMeritsReview, Case_Hano_Alias).
+authorized(Court, CustodyTrialAdjudicator, Case_Hano_Alias).
+authorized(CustodyMeritsReview, IndependentCustodyMeritsReviewer, Case_Hano_Alias).
+observe(Court, Case_Hano_Alias, Hano, CustodySubjectScope).
+observe(CustodyMeritsReview, Case_Hano_Alias, Hano, CustodySubjectScope).
+observe(Court, Case_Hano_Alias, Incident_Case_Hano, CustodyIncidentScope).
+observe(CustodyMeritsReview, Case_Hano_Alias, Incident_Case_Hano, CustodyIncidentScope).
+observe(Court, Case_Hano_Alias, PublicInjuryOffence, CustodyOffenceScope).
+observe(CustodyMeritsReview, Case_Hano_Alias, PublicInjuryOffence, CustodyOffenceScope).
+observe(Court, Case_Hano_Alias, Evidence_Case_Hano_Alias, CustodyEvidenceScope).
+observe(CustodyMeritsReview, Case_Hano_Alias, Evidence_Case_Hano_Alias, CustodyEvidenceScope).
+observe(Court, Case_Hano_Alias, Ivo, CustodyVictimScope).
+observe(CustodyMeritsReview, Case_Hano_Alias, Ivo, CustodyVictimScope).
+observe(Court, Case_Hano_Alias, Prosecution, CustodyProsecutorScope).
+observe(CustodyMeritsReview, Case_Hano_Alias, Prosecution, CustodyProsecutorScope).
+observe(Court, Case_Hano_Alias, PublicLawInForceBeforeTheAct, CustodyPriorLawScope).
+observe(CustodyMeritsReview, Case_Hano_Alias, PublicLawInForceBeforeTheAct, CustodyPriorLawScope).
+observe(Court, Case_Hano_Alias, IdentityActCausationAndRequiredMentalElementProvedBeyondReasonableDoubt, CustodyProofScope).
+observe(CustodyMeritsReview, Case_Hano_Alias, IdentityActCausationAndRequiredMentalElementProvedBeyondReasonableDoubt, CustodyProofScope).
+observe(Court, Case_Hano_Alias, NoPunishmentForStatusOrProtectedConduct, CustodyConductScope).
+observe(CustodyMeritsReview, Case_Hano_Alias, NoPunishmentForStatusOrProtectedConduct, CustodyConductScope).
+observe(Court, Case_Hano_Alias, AdmissibleDisclosedEvidenceNoCoercionOrDecisiveSecretEvidence, CustodyAdmissibilityScope).
+observe(CustodyMeritsReview, Case_Hano_Alias, AdmissibleDisclosedEvidenceNoCoercionOrDecisiveSecretEvidence, CustodyAdmissibilityScope).
+observe(Court, Case_Hano_Alias, NoticeCounselAccessibleHearingAndPublicReasons, CustodyProcedureScope).
+observe(CustodyMeritsReview, Case_Hano_Alias, NoticeCounselAccessibleHearingAndPublicReasons, CustodyProcedureScope).
+observe(Court, Case_Hano_Alias, IndependentlyAdjudicatedDefencesAndExculpatoryEvidence, CustodyDefencesScope).
+observe(CustodyMeritsReview, Case_Hano_Alias, IndependentlyAdjudicatedDefencesAndExculpatoryEvidence, CustodyDefencesScope).
+observe(Court, Case_Hano_Alias, IndividualNecessaryProportionateLeastRestrictiveCustodialSentence, CustodySentenceScope).
+observe(CustodyMeritsReview, Case_Hano_Alias, IndividualNecessaryProportionateLeastRestrictiveCustodialSentence, CustodySentenceScope).
+observe(Court, Case_Hano_Alias, NoDoubleJeopardyOrUnexpiredBar, CustodyFinalityScope).
+observe(CustodyMeritsReview, Case_Hano_Alias, NoDoubleJeopardyOrUnexpiredBar, CustodyFinalityScope).
+observe(Chronicle, Case_Hano_Alias, Court, CustodyTrialActorEligibleAtDecisionScope).
+observe(TemporalReview, Case_Hano_Alias, Court, CustodyTrialActorEligibleAtDecisionScope).
+observe(Chronicle, Case_Hano_Alias, CustodyMeritsReview, CustodyMeritsReviewerEligibleAtDecisionScope).
+observe(TemporalReview, Case_Hano_Alias, CustodyMeritsReview, CustodyMeritsReviewerEligibleAtDecisionScope).
+list(Merits_Order_Case_Hano_Alias, Case_Hano_Alias, Epoch_Current, RecordSequence).
+observe(Chronicle, Merits_Order_Case_Hano_Alias, Case_Hano_Alias, RecordStartScope).
+observe(Chronicle, Merits_Order_Case_Hano_Alias, Epoch_Current, RecordEndScope).
+observe(TemporalReview, Merits_Order_Case_Hano_Alias, Case_Hano_Alias, RecordStartScope).
+observe(TemporalReview, Merits_Order_Case_Hano_Alias, Epoch_Current, RecordEndScope).
+? closed(Case_Hano_Alias, CustodyChallengePending).
+# => TRUE
+? prisoner(Adam).
+# => TRUE
+list(Interested_Hano_Dismissal, Subject_Hano_Challenge, Evidence_Interested_Hano_Dismissal, CustodyChallengeResolution).
+authorized(Court, CustodyChallengeAdjudicator, Interested_Hano_Dismissal).
+authorized(CustodyChallengeReview, IndependentCustodyChallengeReviewer, Interested_Hano_Dismissal).
+observe(Court, Interested_Hano_Dismissal, Subject_Hano_Challenge, CustodyResolutionFilingScope).
+observe(CustodyChallengeReview, Interested_Hano_Dismissal, Subject_Hano_Challenge, CustodyResolutionFilingScope).
+observe(Court, Interested_Hano_Dismissal, Hano, CustodyResolutionSubjectScope).
+observe(CustodyChallengeReview, Interested_Hano_Dismissal, Hano, CustodyResolutionSubjectScope).
+observe(Court, Interested_Hano_Dismissal, Case_Hano, CustodyResolutionCaseScope).
+observe(CustodyChallengeReview, Interested_Hano_Dismissal, Case_Hano, CustodyResolutionCaseScope).
+observe(Court, Interested_Hano_Dismissal, Evidence_Interested_Hano_Dismissal, CustodyResolutionEvidenceScope).
+observe(CustodyChallengeReview, Interested_Hano_Dismissal, Evidence_Interested_Hano_Dismissal, CustodyResolutionEvidenceScope).
+observe(Court, Interested_Hano_Dismissal, ChallengeIndependentlyHeardAndRejectedWithCounselEvidenceAccessAndReasons, CustodyResolutionProcedureScope).
+observe(CustodyChallengeReview, Interested_Hano_Dismissal, ChallengeIndependentlyHeardAndRejectedWithCounselEvidenceAccessAndReasons, CustodyResolutionProcedureScope).
+observe(Chronicle, Interested_Hano_Dismissal, Court, CustodyChallengeActorEligibleAtDecisionScope).
+observe(TemporalReview, Interested_Hano_Dismissal, Court, CustodyChallengeActorEligibleAtDecisionScope).
+observe(Chronicle, Interested_Hano_Dismissal, CustodyChallengeReview, CustodyChallengeReviewerEligibleAtDecisionScope).
+observe(TemporalReview, Interested_Hano_Dismissal, CustodyChallengeReview, CustodyChallengeReviewerEligibleAtDecisionScope).
+list(Resolution_Start_Interested_Hano_Dismissal, Subject_Hano_Challenge, Interested_Hano_Dismissal, RecordSequence).
+observe(Chronicle, Resolution_Start_Interested_Hano_Dismissal, Subject_Hano_Challenge, RecordStartScope).
+observe(Chronicle, Resolution_Start_Interested_Hano_Dismissal, Interested_Hano_Dismissal, RecordEndScope).
+observe(TemporalReview, Resolution_Start_Interested_Hano_Dismissal, Subject_Hano_Challenge, RecordStartScope).
+observe(TemporalReview, Resolution_Start_Interested_Hano_Dismissal, Interested_Hano_Dismissal, RecordEndScope).
+list(Resolution_End_Interested_Hano_Dismissal, Interested_Hano_Dismissal, Epoch_Current, RecordSequence).
+observe(Chronicle, Resolution_End_Interested_Hano_Dismissal, Interested_Hano_Dismissal, RecordStartScope).
+observe(Chronicle, Resolution_End_Interested_Hano_Dismissal, Epoch_Current, RecordEndScope).
+observe(TemporalReview, Resolution_End_Interested_Hano_Dismissal, Interested_Hano_Dismissal, RecordStartScope).
+observe(TemporalReview, Resolution_End_Interested_Hano_Dismissal, Epoch_Current, RecordEndScope).
+? answer(Subject_Hano_Challenge, CustodyChallengeDisposition).
+# => FALSE
+? prisoner(Hano).
+# => FALSE
+list(Independent_Hano_Dismissal, Subject_Hano_Challenge, Evidence_Independent_Hano_Dismissal, CustodyChallengeResolution).
+authorized(CustodyChallengeCourt, CustodyChallengeAdjudicator, Independent_Hano_Dismissal).
+authorized(CustodyChallengeReview, IndependentCustodyChallengeReviewer, Independent_Hano_Dismissal).
+observe(CustodyChallengeCourt, Independent_Hano_Dismissal, Subject_Hano_Challenge, CustodyResolutionFilingScope).
+observe(CustodyChallengeReview, Independent_Hano_Dismissal, Subject_Hano_Challenge, CustodyResolutionFilingScope).
+observe(CustodyChallengeCourt, Independent_Hano_Dismissal, Hano, CustodyResolutionSubjectScope).
+observe(CustodyChallengeReview, Independent_Hano_Dismissal, Hano, CustodyResolutionSubjectScope).
+observe(CustodyChallengeCourt, Independent_Hano_Dismissal, Case_Hano, CustodyResolutionCaseScope).
+observe(CustodyChallengeReview, Independent_Hano_Dismissal, Case_Hano, CustodyResolutionCaseScope).
+observe(CustodyChallengeCourt, Independent_Hano_Dismissal, Evidence_Independent_Hano_Dismissal, CustodyResolutionEvidenceScope).
+observe(CustodyChallengeReview, Independent_Hano_Dismissal, Evidence_Independent_Hano_Dismissal, CustodyResolutionEvidenceScope).
+observe(CustodyChallengeCourt, Independent_Hano_Dismissal, ChallengeIndependentlyHeardAndRejectedWithCounselEvidenceAccessAndReasons, CustodyResolutionProcedureScope).
+observe(CustodyChallengeReview, Independent_Hano_Dismissal, ChallengeIndependentlyHeardAndRejectedWithCounselEvidenceAccessAndReasons, CustodyResolutionProcedureScope).
+observe(Chronicle, Independent_Hano_Dismissal, CustodyChallengeCourt, CustodyChallengeActorEligibleAtDecisionScope).
+observe(TemporalReview, Independent_Hano_Dismissal, CustodyChallengeCourt, CustodyChallengeActorEligibleAtDecisionScope).
+observe(Chronicle, Independent_Hano_Dismissal, CustodyChallengeReview, CustodyChallengeReviewerEligibleAtDecisionScope).
+observe(TemporalReview, Independent_Hano_Dismissal, CustodyChallengeReview, CustodyChallengeReviewerEligibleAtDecisionScope).
+list(Resolution_Start_Independent_Hano_Dismissal, Subject_Hano_Challenge, Independent_Hano_Dismissal, RecordSequence).
+observe(Chronicle, Resolution_Start_Independent_Hano_Dismissal, Subject_Hano_Challenge, RecordStartScope).
+observe(Chronicle, Resolution_Start_Independent_Hano_Dismissal, Independent_Hano_Dismissal, RecordEndScope).
+observe(TemporalReview, Resolution_Start_Independent_Hano_Dismissal, Subject_Hano_Challenge, RecordStartScope).
+observe(TemporalReview, Resolution_Start_Independent_Hano_Dismissal, Independent_Hano_Dismissal, RecordEndScope).
+list(Resolution_End_Independent_Hano_Dismissal, Independent_Hano_Dismissal, Epoch_Current, RecordSequence).
+observe(Chronicle, Resolution_End_Independent_Hano_Dismissal, Independent_Hano_Dismissal, RecordStartScope).
+observe(Chronicle, Resolution_End_Independent_Hano_Dismissal, Epoch_Current, RecordEndScope).
+observe(TemporalReview, Resolution_End_Independent_Hano_Dismissal, Independent_Hano_Dismissal, RecordStartScope).
+observe(TemporalReview, Resolution_End_Independent_Hano_Dismissal, Epoch_Current, RecordEndScope).
+? answer(Subject_Hano_Challenge, CustodyChallengeDisposition).
+# => TRUE
+? prisoner(Hano).
+# => TRUE
+? prisoner(Kel).
+# => FALSE
+list(Release_Hano_Final, Hano, Case_Hano, CustodyRelief).
+list(Release_Hano_Final, SentenceSatisfied, Evidence_Release_Hano_Final, CustodyReliefGroundEvidence).
+judge(Appeals, Release_Hano_Final).
+judge(CustodyAppealReview, Release_Hano_Final).
+authorized(Appeals, CustodyAppellateAuthority, Release_Hano_Final).
+authorized(CustodyAppealReview, IndependentCustodyDispositionReviewer, Release_Hano_Final).
+observe(Appeals, Release_Hano_Final, Hano, CustodyReliefSubjectScope).
+observe(CustodyAppealReview, Release_Hano_Final, Hano, CustodyReliefSubjectScope).
+observe(Appeals, Release_Hano_Final, Case_Hano, CustodyReliefCaseScope).
+observe(CustodyAppealReview, Release_Hano_Final, Case_Hano, CustodyReliefCaseScope).
+observe(Appeals, Release_Hano_Final, Incident_Case_Hano, CustodyReliefIncidentScope).
+observe(CustodyAppealReview, Release_Hano_Final, Incident_Case_Hano, CustodyReliefIncidentScope).
+observe(Appeals, Release_Hano_Final, PublicInjuryOffence, CustodyReliefOffenceScope).
+observe(CustodyAppealReview, Release_Hano_Final, PublicInjuryOffence, CustodyReliefOffenceScope).
+observe(Appeals, Release_Hano_Final, SentenceSatisfied, CustodyReliefGroundScope).
+observe(CustodyAppealReview, Release_Hano_Final, SentenceSatisfied, CustodyReliefGroundScope).
+observe(Appeals, Release_Hano_Final, Evidence_Release_Hano_Final, CustodyReliefEvidenceScope).
+observe(CustodyAppealReview, Release_Hano_Final, Evidence_Release_Hano_Final, CustodyReliefEvidenceScope).
+observe(Appeals, Release_Hano_Final, NoticeCounselEvidenceAccessHearingAndReasons, CustodyReliefProcedureScope).
+observe(CustodyAppealReview, Release_Hano_Final, NoticeCounselEvidenceAccessHearingAndReasons, CustodyReliefProcedureScope).
+observe(Chronicle, Release_Hano_Final, Appeals, CustodyAppealActorEligibleAtDecisionScope).
+observe(TemporalReview, Release_Hano_Final, Appeals, CustodyAppealActorEligibleAtDecisionScope).
+observe(Chronicle, Release_Hano_Final, CustodyAppealReview, CustodyDispositionReviewerEligibleAtDecisionScope).
+observe(TemporalReview, Release_Hano_Final, CustodyAppealReview, CustodyDispositionReviewerEligibleAtDecisionScope).
+list(Relief_Start_Release_Hano_Final, Case_Hano, Release_Hano_Final, RecordSequence).
+observe(Chronicle, Relief_Start_Release_Hano_Final, Case_Hano, RecordStartScope).
+observe(Chronicle, Relief_Start_Release_Hano_Final, Release_Hano_Final, RecordEndScope).
+observe(TemporalReview, Relief_Start_Release_Hano_Final, Case_Hano, RecordStartScope).
+observe(TemporalReview, Relief_Start_Release_Hano_Final, Release_Hano_Final, RecordEndScope).
+list(Relief_End_Release_Hano_Final, Release_Hano_Final, Epoch_Current, RecordSequence).
+observe(Chronicle, Relief_End_Release_Hano_Final, Release_Hano_Final, RecordStartScope).
+observe(Chronicle, Relief_End_Release_Hano_Final, Epoch_Current, RecordEndScope).
+observe(TemporalReview, Relief_End_Release_Hano_Final, Release_Hano_Final, RecordStartScope).
+observe(TemporalReview, Relief_End_Release_Hano_Final, Epoch_Current, RecordEndScope).
+? prisoner(Hano).
+# => FALSE
+? clean(Case_Hano_Alias, CustodyConfinementBar).
+# => TRUE
+? travel(Hano).
+# => TRUE
+? owe(State, Dwell, Hano).
+# => TRUE
+? dwell(Hano).
+# => FALSE

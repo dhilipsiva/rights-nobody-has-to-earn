@@ -836,59 +836,59 @@
   "narrowness_impacts": [
     {
       "artifact_ref": "book-1/03-what-counts-as-evidence.md::Other entries have narrower reach.",
-      "current_claim": "Family status is inert for confinement: severity selects HighSec, while a typed PlacementHome record and Homestay eligibility select the named home destination.",
+      "current_claim": "Custody requires qualified merits, independently signed case-specific severity, a named reviewed place and positive independent challenge access. No sentence or placement establishes delivered shelter or speech.",
       "classification": "revised_and_scoped",
-      "reason": "The formal family migration removed the family branch; the matrix keeps family as an inert axis and separately observes severity and typed placement-home evidence.",
-      "future_trigger": "Revisit the sentence and audit if any placement rule reads family, kinship, or an untyped home fact again."
+      "reason": "Current fixtures retain the original subject, family and home cases and supply explicit fictional adjudication and placement evidence where custody is intended. Independent receipt controls distinguish a duty and available place from shelter actuality.",
+      "future_trigger": "Any changed merits, severity, placement, release or receipt producer must be checked against the paired reader claim and the retained adversarial scenarios."
     },
     {
-      "artifact_ref": "book-1/27-a-prisoner-is-a-person.md::Custody and witnessed delivery are different routes to these conclusions.",
-      "current_claim": "In the shipped record and generated mirrors, shelter actuality derives through confinement and not for either affirmatively free or person-only subjects; the dormant recipient-side shelter route changes the interface but not those verdicts.",
+      "artifact_ref": "book-1/27-a-prisoner-is-a-person.md::Witnessed delivery is independent of sentence authority.",
+      "current_claim": "Custody requires qualified merits, independently signed case-specific severity, a named reviewed place and positive independent challenge access. No sentence or placement establishes delivered shelter or speech.",
       "classification": "revised_and_scoped",
-      "reason": "The generated rows separately establish affirmative freedom and personhood alone, retain the itemised shelter debt, and supply no receipt evidence, so dwell remains absent in both states even though the current source contains a non-carceral route.",
-      "future_trigger": "Any supplied non-carceral shelter receipt or changed dwell producer must revise this chapter's shipped-record claim even if its own pin file and the recorded-speech half do not change."
+      "reason": "Current fixtures retain the original subject, family and home cases and supply explicit fictional adjudication and placement evidence where custody is intended. Independent receipt controls distinguish a duty and available place from shelter actuality.",
+      "future_trigger": "Any changed merits, severity, placement, release or receipt producer must be checked against the paired reader claim and the retained adversarial scenarios."
     },
     {
-      "artifact_ref": "book-1/05-whether-it-arrived.md::The supplied cast contains the confinement route to shelter and recorded",
-      "current_claim": "The shipped record derives shelter through confinement while the five recipient-side routes and legacy learning remain dormant; the generated non-confined mirrors likewise supply no shelter receipt, while itemised debt reaches all three subject states.",
+      "artifact_ref": "book-1/05-whether-it-arrived.md::The supplied cast contains no recipient-side delivery receipts.",
+      "current_claim": "Custody requires qualified merits, independently signed case-specific severity, a named reviewed place and positive independent challenge access. No sentence or placement establishes delivered shelter or speech.",
       "classification": "revised_and_scoped",
-      "reason": "The matrix establishes current verdicts over its complete facts and no longer treats the absence of a receipt in those facts as the absence of a formal route or as a non-delivery finding.",
-      "future_trigger": "Any supplied receipt, changed delivery route, new arrival head, or operational assurance claim must revise the prose, affected pins, matrix contract, and counted-claim guard implications together."
+      "reason": "Current fixtures retain the original subject, family and home cases and supply explicit fictional adjudication and placement evidence where custody is intended. Independent receipt controls distinguish a duty and available place from shelter actuality.",
+      "future_trigger": "Any changed merits, severity, placement, release or receipt producer must be checked against the paired reader claim and the retained adversarial scenarios."
     },
     {
-      "artifact_ref": "book-1/28-where-people-are-put.md::The checks beside this book construct every combination",
-      "current_claim": "Every current severity/family/home tuple is generated, every discovered destination is queried, and duplicate, missing, reversed, and painted-delivery mutations fail repository acceptance.",
+      "artifact_ref": "book-1/28-where-people-are-put.md::The companion cases vary confinement, severity inputs, family presence and",
+      "current_claim": "Custody requires qualified merits, independently signed case-specific severity, a named reviewed place and positive independent challenge access. No sentence or placement establishes delivered shelter or speech.",
       "classification": "revised_and_scoped",
-      "reason": "The chapter can now name a repository check, but must retain that no general runtime placement constraint or remedy was added.",
-      "future_trigger": "A new placement axis, destination, producer, runtime marker, or delivery route requires re-running the narrowness review even if the chapter's own original pins do not change."
+      "reason": "Current fixtures retain the original subject, family and home cases and supply explicit fictional adjudication and placement evidence where custody is intended. Independent receipt controls distinguish a duty and available place from shelter actuality.",
+      "future_trigger": "Any changed merits, severity, placement, release or receipt producer must be checked against the paired reader claim and the retained adversarial scenarios."
     },
     {
-      "artifact_ref": "book-1/29-the-one-thing-taken.md::The supplied record contains housing and speech conclusions through custody.",
-      "current_claim": "The shipped cast obtains its only shelter conclusion through custody; the source also contains a dormant recipient-side dwell route, so leaving custody removes the former conclusion without proving non-delivery in the world.",
+      "artifact_ref": "book-1/29-the-one-thing-taken.md::A place name supplies no evidence of performed care.",
+      "current_claim": "Custody requires qualified merits, independently signed case-specific severity, a named reviewed place and positive independent challenge access. No sentence or placement establishes delivered shelter or speech.",
       "classification": "revised_and_scoped",
-      "reason": "Both non-confined mirrors supply no receipt and the painted-delivery mutation remains prohibited, preserving the release boundary without erasing the formal route.",
-      "future_trigger": "Re-review the chapter's single-deprivation, placement, release, and delivery claims when any supplied non-carceral receipt or changed route alters dwell."
+      "reason": "Current fixtures retain the original subject, family and home cases and supply explicit fictional adjudication and placement evidence where custody is intended. Independent receipt controls distinguish a duty and available place from shelter actuality.",
+      "future_trigger": "Any changed merits, severity, placement, release or receipt producer must be checked against the paired reader claim and the retained adversarial scenarios."
     },
     {
       "artifact_ref": "book-1/30-when-the-system-notices-it-broke.md::The placement marker reads a reported act.",
-      "current_claim": "The repaired marker reads reported Homestay placement against eligibility, not duplicate, missing, or reversed derived outcomes.",
+      "current_claim": "Custody requires qualified merits, independently signed case-specific severity, a named reviewed place and positive independent challenge access. No sentence or placement establishes delivered shelter or speech.",
       "classification": "preserved",
-      "reason": "Every harmful placement mutation supplies and positively pins a reviewed put report before querying err(_, Placement) as FALSE, preventing a missing alarm premise from making the blindness evidence vacuous.",
-      "future_trigger": "The exact placement-finding reader has landed. Revise the marker, its typed route, chapter pins, and remaining liveness boundary if placement scope, general detection, receipt, action, or remedy evidence changes."
+      "reason": "Current fixtures retain the original subject, family and home cases and supply explicit fictional adjudication and placement evidence where custody is intended. Independent receipt controls distinguish a duty and available place from shelter actuality.",
+      "future_trigger": "Any changed merits, severity, placement, release or receipt producer must be checked against the paired reader claim and the retained adversarial scenarios."
     },
     {
       "artifact_ref": "book-1/31-the-five-joints.md::The proposal leaves an operating burden to meet.",
-      "current_claim": "Outside punishment, the current source has a dormant recipient-side shelter route and the supplied record activates none of it; the placement audit proves neither service operation nor actual housing delivery.",
+      "current_claim": "Custody requires qualified merits, independently signed case-specific severity, a named reviewed place and positive independent challenge access. No sentence or placement establishes delivered shelter or speech.",
       "classification": "revised_and_scoped",
-      "reason": "The audit supplies generated repository evidence over facts with no receipt and no institution, budget, operation, performed remedy, or liveness evidence.",
-      "future_trigger": "Any supplied non-carceral shelter receipt, changed route, or operational delivery evidence changes the State joint even if no numbered chapter pin that originally underwrote it changes."
+      "reason": "Current fixtures retain the original subject, family and home cases and supply explicit fictional adjudication and placement evidence where custody is intended. Independent receipt controls distinguish a duty and available place from shelter actuality.",
+      "future_trigger": "Any changed merits, severity, placement, release or receipt producer must be checked against the paired reader claim and the retained adversarial scenarios."
     },
     {
       "artifact_ref": "book-1/method.md::The inventory is not a census of every possible policy or record.",
-      "current_claim": "The method part may describe a JSON-backed Cartesian audit with executable harmful-source controls and explicit limits.",
+      "current_claim": "Custody requires qualified merits, independently signed case-specific severity, a named reviewed place and positive independent challenge access. No sentence or placement establishes delivered shelter or speech.",
       "classification": "revised_and_scoped",
-      "reason": "This generated artifact is the evidence for the new method description; it does not upgrade the engine's runtime law or authenticate its own trust root.",
-      "future_trigger": "Revise the method account when the subject contract, axis contract, source manifest, mutation classes, execution posture, or runtime placement semantics change."
+      "reason": "Current fixtures retain the original subject, family and home cases and supply explicit fictional adjudication and placement evidence where custody is intended. Independent receipt controls distinguish a duty and available place from shelter actuality.",
+      "future_trigger": "Any changed merits, severity, placement, release or receipt producer must be checked against the paired reader claim and the retained adversarial scenarios."
     }
   ],
   "acceptance_result": {

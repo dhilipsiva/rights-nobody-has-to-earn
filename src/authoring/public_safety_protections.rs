@@ -138,8 +138,6 @@ fn facts() -> Vec<Fact> {
             ],
             heads: vec![
                 "person($subject)",
-                "dwell($subject)",
-                "expresses($subject)",
                 "obliged($holding_actor, SecureShelterRecordedVoiceCareConfidentialCounselAndChosenNotification, $record)",
                 "obliged(State, SecureAutomaticIndependentJudicialHoldingReviewAndKnownPlace, $record)",
                 "obliged(State, PreserveIndependentAccessEvidenceReleaseRemedyAndContinuity, $record)",
@@ -415,6 +413,13 @@ fn checks(fact: &Fact, values: &Values, expected: bool) -> String {
     };
     for head in &fact.heads {
         result += &query(&records::ground(head, values), expected);
+        if fact.id == "actual-holding" && *head == "person($subject)" {
+            // Preserve the original actuality queries. A report of physical
+            // control establishes the need for care, not its performance.
+            for actuality in ["dwell($subject)", "expresses($subject)"] {
+                result += &query(&records::ground(actuality, values), false);
+            }
+        }
     }
     result
 }
@@ -486,15 +491,12 @@ pub(super) fn scenarios() -> Vec<Scenario> {
         ));
         if fact.id == "actual-holding" {
             let mut pins = String::new();
-            for atom in [
-                "person($subject)",
-                "dwell($subject)",
-                "expresses($subject)",
-                "travel($subject)",
-            ] {
+            for atom in ["person($subject)", "travel($subject)"] {
                 pins += &query(&records::ground(atom, &values), true);
             }
             for atom in [
+                "dwell($subject)",
+                "expresses($subject)",
                 "prisoner($subject)",
                 "severe($subject)",
                 "capture($subject)",
@@ -507,8 +509,19 @@ pub(super) fn scenarios() -> Vec<Scenario> {
             }
             result.push(Scenario::new(
                 "protection/actual-holding/no-order-no-conviction-no-delivery-claim",
-                given,
+                given.clone(),
                 pins,
+            ));
+            let shelter = records::ground(
+                "receives($subject, IndependentlyReceivedShelter, ShelterProvider).\nauthorized(ShelterWitness, DeliveryWitness, $subject).\nobserve(ShelterWitness, IndependentlyReceivedShelter, $subject, ShelterScope).\n",
+                &values,
+            );
+            result.push(Scenario::new(
+                "protection/actual-holding/independent-shelter-receipt",
+                given + &shelter,
+                query(&records::ground("dwell($subject)", &values), true)
+                    + &query(&records::ground("prisoner($subject)", &values), false)
+                    + &query(&records::ground("expresses($subject)", &values), false),
             ));
         }
         if fact.id == "force-incident" {

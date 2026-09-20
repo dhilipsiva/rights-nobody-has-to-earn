@@ -108,38 +108,40 @@ fn no_relation_aggregates_scores_or_ranks() {
 }
 
 #[test]
-fn a_floor_actuality_is_read_only_under_negation_and_only_into_err() {
-    let mut reads = Vec::new();
-    for statement in statements() {
-        let Some((body, head)) = split(&statement) else {
-            continue;
-        };
-        for item in FLOOR {
-            let positive = Regex::new(&format!(r"(?:^|[^A-Za-z0-9_~]){item}\(")).unwrap();
-            assert!(
-                !positive.is_match(body),
-                "'{item}' is read POSITIVELY by a rule, so having one floor \
-                 condition can now do work elsewhere: {statement}"
-            );
-            if Regex::new(&format!(r"~{item}\(")).unwrap().is_match(body) {
-                assert_eq!(
-                    head_relation(head),
-                    "err",
-                    "'{item}' is read under negation into something other than \
-                     `err` — noticed is the whole permission: {statement}"
-                );
-                reads.push(item);
-            }
+fn floor_actualities_have_no_downstream_consumer() {
+    let readers = |source: &[String]| {
+        source
+            .iter()
+            .filter_map(|statement| {
+                let (body, _) = split(statement)?;
+                FLOOR
+                    .iter()
+                    .find(|item| {
+                        Regex::new(&format!(r"(?:^|[^A-Za-z0-9_]){item}\("))
+                            .unwrap()
+                            .is_match(body)
+                    })
+                    .map(|item| ((*item).to_owned(), statement.clone()))
+            })
+            .collect::<Vec<_>>()
+    };
+    let source = statements();
+    assert!(
+        readers(&source).is_empty(),
+        "a floor actuality has a downstream consumer: {:?}",
+        readers(&source)
+    );
+    // The former absence alarm is a meaningful negative control. A supplied
+    // receipt and its absence may neither become a penalty nor certify a breach.
+    for item in FLOOR {
+        for polarity in ["", "~"] {
+            let mut changed = source.clone();
+            changed.push(format!(
+                "all $x: person($x) & {polarity}{item}($x) -> err($x, Isolation)."
+            ));
+            assert_eq!(readers(&changed).len(), 1, "{item} {polarity}");
         }
     }
-    // Article 6's isolation marker is the one read, and it is what keeps this
-    // test from passing over a constitution that reads nothing at all.
-    assert_eq!(
-        reads,
-        ["meets"],
-        "the set of floor reads moved; re-read Article 6 and INVARIANT 1 before \
-         changing this expectation"
-    );
 }
 
 #[test]
@@ -263,72 +265,26 @@ fn atom_arity(atom: &str) -> usize {
 /// so an entry here is a finding with no finder.
 const ACCUSATION: [&str; 6] = ["attack", "cruel", "injure", "deceive", "capture", "rotten"];
 
-/// Exactly what an unsigned accusation may reach, as `head` and the polarity it
-/// is read at. Measured 2026-09-16 and asserted by membership, because the point
-/// of the census is that this set cannot grow without somebody deciding to grow
-/// it. `+` is a positive premise, `~` a negation.
-///
-/// **The same kind of entry sat at both extremes, and the gap between them is
-/// what the 2026-09-16 severity repair closed.** `prisoner` reads an injury
-/// entry inside the conviction rule, where it is surrounded by a Court
-/// judgment, a cited case, a recorded conviction, twelve independently
-/// witnessed observations, an active custody authorisation and four negative
-/// guards. The three `severe` rules used to read the same relations with
-/// nothing else at all while concluding something adverse; they now read the
-/// Court's judgment and its cited case too, which every person severity can
-/// reach already had, so the repair moved nobody and closed the route.
-/// `tests/pins/red-team/counterfactual-severity-without-the-court` is the
-/// watched control: strip those conjuncts and two unsigned entries derive
-/// severity again.
-///
-/// `defend` and `reward` are what remains. They read a deceit claim under
-/// negation, so an unsigned entry withdraws a protection and a recognition
-/// rather than concluding anything — the same effect on the person, arrived at
-/// the other way round, and left in place because what they withdraw, they
-/// withdraw by absence. The first `false` rule asks for the review body's
-/// judgment beside the lie.
-///
-/// This test was written against a hand census that missed `prisoner`, which is
-/// the argument for having it: a census done by reading is a census that can
-/// drop a row.
-const ACCUSATION_READERS: [(&str, &str); 14] = [
+/// Raw inputs whose use must not silently grow into a new adverse authority.
+const ACCUSATION_READERS: [(&str, &str); 10] = [
+    ("agree", "+capture"),
     ("correct", "+injure"),
-    ("defend", "~deceive"),
     ("err", "+injure"),
     ("err", "~rotten"),
-    ("false", "+deceive"),
-    ("false", "~deceive,+capture"),
     ("match", "+injure"),
     ("match", "+rotten"),
-    // Two conviction routes read the injury entry, not one. Both sit behind the
-    // same T3 gate — a court judgment, a cited case, a recorded conviction,
-    // twelve independently witnessed observations and an active custody
-    // authorisation — and they differ only in what they ask about the shield:
-    // the first that none is held, the second that two case-authorised and
-    // independently qualified reviewers have found this prosecution unrelated
-    // to the disclosure. An unsigned injury entry is no nearer a conviction for there
-    // being two doors behind the same wall, but the count is the kind of thing
-    // that should never move silently.
     ("prisoner", "+injure"),
     ("prisoner", "+injure"),
-    ("reward", "~deceive,+capture"),
-    ("severe", "+attack,+cruel"),
-    ("severe", "+attack,+injure"),
-    ("severe", "+cruel,+injure"),
+    ("responsible", "+capture"),
+    ("reward", "+capture"),
 ];
 
-/// The accusation-authorship gap, held at its measured size.
-///
-/// This does NOT check that an accusation has an author — none of them does, and
-/// the repair flips conclusions two chapters exhibit, so it is an author
-/// decision recorded in the tracker rather than a change made here. What it
-/// checks is that the set of things an authorless entry reaches is exactly the
-/// set somebody has looked at. A new rule reading one of these relations fails
-/// here, which is the difference between a disclosed gap and a growing one.
-///
-/// `tests/pins/red-team/an-accusation-nobody-signed` is the executable half: it
-/// runs the shield, recognition, severity and voiding routes in sequence against
-/// the live constitution.
+/// Census the conclusions that read the raw allegation/examination vocabulary.
+/// Raw deceit, attack and cruelty have no reader. The case-bound finding and prospective act still
+/// require recorded examinations alongside their independently checked case
+/// premises; this syntactic census is not a claim that capture alone suffices.
+/// The red-team pins execute the actual effects and retain the other raw-harm
+/// scenarios. A new reader still requires an explicit design decision.
 #[test]
 fn an_unsigned_accusation_reaches_exactly_the_measured_set() {
     let mut found: Vec<(String, String)> = Vec::new();
@@ -340,7 +296,9 @@ fn an_unsigned_accusation_reaches_exactly_the_measured_set() {
         for relation in ACCUSATION {
             let read = Regex::new(&format!(r"(?:^|[^A-Za-z0-9_])~?{relation}\(")).unwrap();
             if read.is_match(body) {
-                let negated = Regex::new(&format!(r"~\s*{relation}\(")).unwrap().is_match(body);
+                let negated = Regex::new(&format!(r"~\s*{relation}\("))
+                    .unwrap()
+                    .is_match(body);
                 used.push(format!("{}{relation}", if negated { "~" } else { "+" }));
             }
         }
@@ -815,7 +773,9 @@ fn purpose_limited_violations(statements: &[String]) -> Vec<String> {
         for statement in statements {
             let Some((body, head)) = split(statement) else {
                 if statement.starts_with(&format!("{relation}(")) {
-                    violations.push(format!("'{relation}' is asserted by the constitution itself: {statement}"));
+                    violations.push(format!(
+                        "'{relation}' is asserted by the constitution itself: {statement}"
+                    ));
                 }
                 continue;
             };
@@ -841,7 +801,9 @@ fn a_purpose_limited_record_is_read_only_for_its_purpose() {
     assert!(violations.is_empty(), "{}", violations.join("\n"));
     for relation in PURPOSE_LIMITED.map(|(relation, _)| relation) {
         assert!(
-            statements.iter().any(|s| split(s).is_some_and(|(body, _)| body.contains(&format!("{relation}(")))),
+            statements
+                .iter()
+                .any(|s| split(s).is_some_and(|(body, _)| body.contains(&format!("{relation}(")))),
             "'{relation}' is no longer read at all; a guard over a vanished record passes for nothing"
         );
     }
@@ -854,7 +816,9 @@ fn a_purpose_limited_record_is_read_only_for_its_purpose() {
         ("counterfactual/unguarded-contribution-reader", "pay"),
         ("counterfactual/unguarded-compensation-reader", "promise"),
     ] {
-        let edits = inventory["bases"][base]["edits"].as_array().expect("hostile base");
+        let edits = inventory["bases"][base]["edits"]
+            .as_array()
+            .expect("hostile base");
         let mut hostile = statements.clone();
         for edit in edits {
             let before = edit["before"].as_str().unwrap();
@@ -867,38 +831,35 @@ fn a_purpose_limited_record_is_read_only_for_its_purpose() {
         }
         let found = purpose_limited_violations(&hostile);
         assert!(
-            found.iter().any(|v| v.contains(&format!("'{relation}' is read under negation"))),
+            found
+                .iter()
+                .any(|v| v.contains(&format!("'{relation}' is read under negation"))),
             "{base} no longer trips the guard; the control must fail"
         );
     }
 }
 
-/// Every conclusion a credibility voiding can reach, with the polarity it is
-/// read at. Three recognition doors close, one loss is recorded, a dead
-/// amendment proposal cannot become law, and the person is owed reasons and a
-/// route to contest them.
-///
-/// The set is what makes "a bounded consequence" checkable rather than
-/// promised. What is NOT in it is the point: no floor actuality, no `owe`, no
-/// `entitled`, no `person`, no `prisoner`, no `travel`, no `decide`, no
-/// `authority` and no `permits` reads `false`. A voided person keeps standing,
-/// the floor, liberty, the ballot, public answerability — and, because
-/// credentials read the reconciled carried mark rather than this conclusion,
-/// even the pen.
-const VOIDING_READERS: [(&str, &str); 7] = [
-    ("become", "~false"),
-    ("lose", "+false"),
-    ("obliged", "+false"),
-    ("obliged", "+false"),
-    ("reward", "~false"),
-    ("reward", "~false"),
-    ("reward", "~false"),
+/// The personal finding and the incident finding have different readers.
+/// Personal findings close recognition and prospective signing, record one loss,
+/// and trigger reasons and review duties. Only the subject/incident form affects
+/// the protection attached to that disclosure. Neither form supplies a floor,
+/// personhood, ballot, appointment, or custody conclusion directly.
+const VOIDING_READERS: [(usize, &str, &str); 9] = [
+    (1, "agree", "~false"),
+    (1, "agree", "~false"),
+    (1, "lose", "+false"),
+    (1, "obliged", "+false"),
+    (1, "obliged", "+false"),
+    (1, "reward", "~false"),
+    (1, "reward", "~false"),
+    (1, "reward", "~false"),
+    (2, "defend", "~false"),
 ];
 
 #[test]
 fn a_credibility_voiding_reaches_exactly_the_measured_set() {
-    let read = Regex::new(r"(?:^|[^A-Za-z0-9_])(~?)\s*false\(").unwrap();
-    let mut found: Vec<(String, String)> = Vec::new();
+    let read = Regex::new(r"(?:^|[^A-Za-z0-9_])(~?)\s*false\(([^()]*)\)").unwrap();
+    let mut found: Vec<(usize, String, String)> = Vec::new();
     for statement in statements() {
         let Some((body, head)) = split(&statement) else {
             continue;
@@ -909,13 +870,14 @@ fn a_credibility_voiding_reaches_exactly_the_measured_set() {
             } else {
                 "+false"
             };
-            found.push((head_relation(head).to_owned(), polarity.to_owned()));
+            let arity = capture[2].split(',').count();
+            found.push((arity, head_relation(head).to_owned(), polarity.to_owned()));
         }
     }
     found.sort();
-    let declared: Vec<(String, String)> = VOIDING_READERS
+    let declared: Vec<(usize, String, String)> = VOIDING_READERS
         .iter()
-        .map(|(head, polarity)| ((*head).to_owned(), (*polarity).to_owned()))
+        .map(|(arity, head, polarity)| (*arity, (*head).to_owned(), (*polarity).to_owned()))
         .collect();
     assert_eq!(
         found, declared,
@@ -934,7 +896,7 @@ fn a_credibility_voiding_reaches_exactly_the_measured_set() {
         .compile_text(hostile)
         .expect("the hostile rule is well-formed, which is why the census matters");
     let mut with_hostile = found.clone();
-    with_hostile.push(("err".to_owned(), "+false".to_owned()));
+    with_hostile.push((1, "err".to_owned(), "+false".to_owned()));
     with_hostile.sort();
     assert_ne!(
         with_hostile, declared,
@@ -942,14 +904,9 @@ fn a_credibility_voiding_reaches_exactly_the_measured_set() {
     );
 }
 
-/// Expungement reaches every voiding that turns on a finding, and reaches the
-/// conflict-of-interest voiding deliberately not at all.
-///
-/// Article 5's rule tracks a judgment that is still on the record and still
-/// conflicted; forgiving the judge while the judgment stands would leave the
-/// conflict in force and call it repaired. Withdrawing the judgment is the
-/// repair there, so the asymmetry is asserted by membership rather than left
-/// to whoever next edits an article.
+/// Every personal or incident finding has an identifiable case and reads its
+/// restoration. Neither a parent/child judgment nor an amendment label nor an
+/// aggregate carried credential restriction is a separate personal-penalty route.
 #[test]
 fn a_recorded_expungement_reaches_every_voiding_that_turns_on_a_finding() {
     let mut reads_clean = Vec::new();
@@ -969,22 +926,19 @@ fn a_recorded_expungement_reaches_every_voiding_that_turns_on_a_finding() {
     }
     assert_eq!(
         reads_clean.len(),
-        3,
+        2,
         "the routes an expungement stops changed: {reads_clean:?}"
     );
-    assert_eq!(
-        ignores_clean.len(),
-        2,
-        "the routes an expungement does not stop changed: {ignores_clean:?}"
-    );
     assert!(
-        ignores_clean.iter().any(|w| w.contains("parent(")),
-        "Article 5's conflict rule is the deliberate exception and it is not in \
-         the set that ignores expungement: {ignores_clean:?}"
+        ignores_clean.is_empty(),
+        "a finding route bypasses restoration: {ignores_clean:?}"
     );
-    assert!(
-        ignores_clean.iter().any(|w| w.contains("suggest(")),
-        "the amendment route is the other one that ignores expungement, because \
-         a proposal is not a person: {ignores_clean:?}"
-    );
+    for body in reads_clean {
+        assert!(
+            body.contains("responsible($record, CredibilityFinding)")
+                && body.contains("list($record, $subject, $incident, CredibilityFinding)")
+                && body.contains("~clean($record, CredibilityFinding)"),
+            "a personal or incident consequence lacks its completed case or ending: {body}"
+        );
+    }
 }

@@ -1,0 +1,86 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+choose(Electorate, ProtocolSigner).
+authorized(ProtocolSigner, ClearStatus, Epoch_Previous).
+observe(Chronicle, ProtocolSigner, Epoch_Previous, ClearScope).
+observe(TemporalReview, ProtocolSigner, Epoch_Previous, ClearScope).
+carries(Chronicle, ProtocolSigner, Epoch_Current, Epoch_Previous, ClearCarry).
+carries(TemporalReview, ProtocolSigner, Epoch_Current, Epoch_Previous, ClearCarry).
+list(Finding_Lupo, ProtocolSigner, Lupo_Mira_Incident, CredibilityFinding).
+list(Finding_Lupo, CredibilityGroundDeceit, Evidence_Finding_Lupo, CredibilityGroundEvidence).
+judge(Gia, Finding_Lupo).
+capture(Gia, ProtocolSigner, Lupo_Mira_Incident).
+cite(Gia, CredibilityGroundDeceit, Finding_Lupo).
+authorized(Gia, IndependentReviewer, Finding_Lupo).
+observe(Gia, Finding_Lupo, ProtocolSigner, CredibilitySubjectScope).
+observe(Gia, Finding_Lupo, Lupo_Mira_Incident, CredibilityIncidentScope).
+observe(Gia, Finding_Lupo, CredibilityGroundDeceit, CredibilityGroundScope).
+observe(Gia, Finding_Lupo, Evidence_Finding_Lupo, CredibilityEvidenceScope).
+observe(Gia, Finding_Lupo, NoticeEvidenceAccessHearingAndReasons, CredibilityProcedureScope).
+judge(Hex, Finding_Lupo).
+capture(Hex, ProtocolSigner, Lupo_Mira_Incident).
+cite(Hex, CredibilityGroundDeceit, Finding_Lupo).
+authorized(Hex, IndependentReviewer, Finding_Lupo).
+observe(Hex, Finding_Lupo, ProtocolSigner, CredibilitySubjectScope).
+observe(Hex, Finding_Lupo, Lupo_Mira_Incident, CredibilityIncidentScope).
+observe(Hex, Finding_Lupo, CredibilityGroundDeceit, CredibilityGroundScope).
+observe(Hex, Finding_Lupo, Evidence_Finding_Lupo, CredibilityEvidenceScope).
+observe(Hex, Finding_Lupo, NoticeEvidenceAccessHearingAndReasons, CredibilityProcedureScope).
+observe(Chronicle, Finding_Lupo, Gia, CredibilityReviewSignerEligibleAtDecisionScope).
+observe(TemporalReview, Finding_Lupo, Gia, CredibilityReviewSignerEligibleAtDecisionScope).
+observe(Chronicle, Finding_Lupo, Hex, CredibilityTribunalSignerEligibleAtDecisionScope).
+observe(TemporalReview, Finding_Lupo, Hex, CredibilityTribunalSignerEligibleAtDecisionScope).
+list(Order_Finding_Lupo, Finding_Lupo, Epoch_Current, RecordSequence).
+observe(Chronicle, Order_Finding_Lupo, Finding_Lupo, RecordStartScope).
+observe(Chronicle, Order_Finding_Lupo, Epoch_Current, RecordEndScope).
+observe(TemporalReview, Order_Finding_Lupo, Finding_Lupo, RecordStartScope).
+observe(TemporalReview, Order_Finding_Lupo, Epoch_Current, RecordEndScope).
+list(Finding_Frisk, Frisk, Frisk_Incident, CredibilityFinding).
+list(Finding_Frisk, CredibilityGroundDeceit, Evidence_Finding_Frisk, CredibilityGroundEvidence).
+judge(ProtocolSigner, Finding_Frisk).
+capture(ProtocolSigner, Frisk, Frisk_Incident).
+cite(ProtocolSigner, CredibilityGroundDeceit, Finding_Frisk).
+authorized(ProtocolSigner, IndependentReviewer, Finding_Frisk).
+observe(ProtocolSigner, Finding_Frisk, Frisk, CredibilitySubjectScope).
+observe(ProtocolSigner, Finding_Frisk, Frisk_Incident, CredibilityIncidentScope).
+observe(ProtocolSigner, Finding_Frisk, CredibilityGroundDeceit, CredibilityGroundScope).
+observe(ProtocolSigner, Finding_Frisk, Evidence_Finding_Frisk, CredibilityEvidenceScope).
+observe(ProtocolSigner, Finding_Frisk, NoticeEvidenceAccessHearingAndReasons, CredibilityProcedureScope).
+judge(Hex, Finding_Frisk).
+capture(Hex, Frisk, Frisk_Incident).
+cite(Hex, CredibilityGroundDeceit, Finding_Frisk).
+authorized(Hex, IndependentReviewer, Finding_Frisk).
+observe(Hex, Finding_Frisk, Frisk, CredibilitySubjectScope).
+observe(Hex, Finding_Frisk, Frisk_Incident, CredibilityIncidentScope).
+observe(Hex, Finding_Frisk, CredibilityGroundDeceit, CredibilityGroundScope).
+observe(Hex, Finding_Frisk, Evidence_Finding_Frisk, CredibilityEvidenceScope).
+observe(Hex, Finding_Frisk, NoticeEvidenceAccessHearingAndReasons, CredibilityProcedureScope).
+list(Finding_Valid, NewSubject, New_Incident, CredibilityFinding).
+list(Finding_Valid, CredibilityGroundDeceit, Evidence_Finding_Valid, CredibilityGroundEvidence).
+judge(Gia, Finding_Valid).
+capture(Gia, NewSubject, New_Incident).
+cite(Gia, CredibilityGroundDeceit, Finding_Valid).
+authorized(Gia, IndependentReviewer, Finding_Valid).
+observe(Gia, Finding_Valid, NewSubject, CredibilitySubjectScope).
+observe(Gia, Finding_Valid, New_Incident, CredibilityIncidentScope).
+observe(Gia, Finding_Valid, CredibilityGroundDeceit, CredibilityGroundScope).
+observe(Gia, Finding_Valid, Evidence_Finding_Valid, CredibilityEvidenceScope).
+observe(Gia, Finding_Valid, NoticeEvidenceAccessHearingAndReasons, CredibilityProcedureScope).
+judge(Hex, Finding_Valid).
+capture(Hex, NewSubject, New_Incident).
+cite(Hex, CredibilityGroundDeceit, Finding_Valid).
+authorized(Hex, IndependentReviewer, Finding_Valid).
+observe(Hex, Finding_Valid, NewSubject, CredibilitySubjectScope).
+observe(Hex, Finding_Valid, New_Incident, CredibilityIncidentScope).
+observe(Hex, Finding_Valid, CredibilityGroundDeceit, CredibilityGroundScope).
+observe(Hex, Finding_Valid, Evidence_Finding_Valid, CredibilityEvidenceScope).
+observe(Hex, Finding_Valid, NoticeEvidenceAccessHearingAndReasons, CredibilityProcedureScope).
+
+# The unscoped examinations are retained to expose the weaker rule.
+judge(ProtocolSigner, Frisk).
+capture(ProtocolSigner, Frisk).
+cite(ProtocolSigner, CredibilityGroundDeceit, Frisk).
+authorized(ProtocolSigner, IndependentReviewer, Frisk).
+judge(Hex, Frisk).
+capture(Hex, Frisk).
+cite(Hex, CredibilityGroundDeceit, Frisk).
+authorized(Hex, IndependentReviewer, Frisk).

@@ -389,6 +389,27 @@ observe(OblReaderRemoval02Review, OblReaderRemoval02EffectResult, ReadIsolationF
 observe(OblReaderRemoval02Source, OblReaderRemoval02EffectResult, ReadIsolationFindingStandard, FindingReaderStandardScope).
 observe(OblReaderRemoval02Evidence, OblReaderRemoval02EffectResult, ReadIsolationFindingStandard, FindingReaderStandardScope).
 observe(OblReaderRemoval02Review, OblReaderRemoval02EffectResult, ReadIsolationFindingStandard, FindingReaderStandardScope).
+list(ObligationsIsolationFinding, Adam, ObligationsHolding, CustodyIsolationFinding).
+list(ObligationsIsolationFinding, ObligationsHolder, ObligationsPlace, CustodyConditionLocation).
+list(ObligationsIsolationFinding, ObligationsPeriod, ObligationsEvidence, CustodyConditionEvidenceWindow).
+authorized(ObligationsWitness, CustodyConditionWitness, ObligationsIsolationFinding).
+authorized(ObligationsConditionReview, IndependentCustodyConditionReviewer, ObligationsIsolationFinding).
+observe(ObligationsWitness, ObligationsIsolationFinding, Adam, CustodyConditionSubjectScope).
+observe(ObligationsWitness, ObligationsIsolationFinding, ObligationsHolding, CustodyConditionHoldingScope).
+observe(ObligationsWitness, ObligationsIsolationFinding, ObligationsHolder, CustodyConditionHolderScope).
+observe(ObligationsWitness, ObligationsIsolationFinding, ObligationsPlace, CustodyConditionPlaceScope).
+observe(ObligationsWitness, ObligationsIsolationFinding, ObligationsPeriod, CustodyConditionPeriodScope).
+observe(ObligationsWitness, ObligationsIsolationFinding, ObligationsEvidence, CustodyConditionEvidenceScope).
+observe(ObligationsWitness, ObligationsIsolationFinding, HumanPersonPhysicallyHeldAndDeniedAccessibleHumanContact, CustodyIsolationConditionScope).
+observe(ObligationsWitness, ObligationsIsolationFinding, PositiveEvidenceNoticeReasonsAndIndependentContest, CustodyConditionProcedureScope).
+observe(ObligationsConditionReview, ObligationsIsolationFinding, Adam, CustodyConditionSubjectScope).
+observe(ObligationsConditionReview, ObligationsIsolationFinding, ObligationsHolding, CustodyConditionHoldingScope).
+observe(ObligationsConditionReview, ObligationsIsolationFinding, ObligationsHolder, CustodyConditionHolderScope).
+observe(ObligationsConditionReview, ObligationsIsolationFinding, ObligationsPlace, CustodyConditionPlaceScope).
+observe(ObligationsConditionReview, ObligationsIsolationFinding, ObligationsPeriod, CustodyConditionPeriodScope).
+observe(ObligationsConditionReview, ObligationsIsolationFinding, ObligationsEvidence, CustodyConditionEvidenceScope).
+observe(ObligationsConditionReview, ObligationsIsolationFinding, HumanPersonPhysicallyHeldAndDeniedAccessibleHumanContact, CustodyIsolationConditionScope).
+observe(ObligationsConditionReview, ObligationsIsolationFinding, PositiveEvidenceNoticeReasonsAndIndependentContest, CustodyConditionProcedureScope).
 # The Isolation compatibility conclusion remains after reader ablation.
 ? obliged(Review, Adam).
 # => TRUE

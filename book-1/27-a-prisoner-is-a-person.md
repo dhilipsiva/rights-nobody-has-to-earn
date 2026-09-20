@@ -9,10 +9,13 @@ separates those consequences from the other standing routes.
 
 ## Zed
 
-Zed injured Ivo and was judged by Court in a named case. The record also
-supplies the custody authority, source, current window and two witnesses
-matching the person, court, judgment and injury. Injury and a generic judgment
-alone would not suffice.
+Zed's named case supplies criminal proof concerning the injury to Ivo,
+adjudicated defences, disclosed evidence, counsel, a fair hearing and an
+individually justified sentence. The adjudicator and independent merits
+reviewer are qualified for that case. Current authority also needs a reviewed
+named placement, accessible challenge intake, and matching evidence of the
+person, Court, judgment, injury, source and review window. Injury and a generic
+judgment alone would not suffice.
 
 The fixture deliberately supplies none of Zed's other standing roots: no direct
 personhood, birth, contact, presence, effective control, release or carried
@@ -54,10 +57,8 @@ other people in the record.
 The entitlement's representation matters as well. It contains an event-shaped
 term, not merely a label with a similar name. In the explicit counterfactual,
 rewriting that term as a plain label removes the tested entitlement and permits
-the hostile rule to load. The resulting confinement also produces the model's
-custody-based shelter and expression conclusions. Those conclusions establish
-no delivered housing or heard speech. They cannot be counted as an improvement
-in provision.
+the hostile rule to load. The resulting confinement is a defect of that altered
+source. It supplies neither a lawful placement nor evidence of shelter or speech.
 
 The refusal depends on the exact formal connections: confinement contributes
 to standing, standing to the event-shaped entitlement, and the hostile rule
@@ -89,9 +90,10 @@ is not constitutional approval.
 Each protective instrument needs its own standing connection and tests of
 floor-based coercive rules; the word *protective* supplies no safeguard.
 Interactions matter too. Witnessed parentage can establish standing and expose
-the conflict in judging one's child. Those connections also cause the engine
-to reject the tested rule that confines people because their credibility has
-not been voided. That extra refusal does not make credibility a floor right.
+the conflict in judging one's child. The prospective review rule separately
+excludes that conflict. A refusal caused by the dependencies among particular
+relations must not be mistaken for protection against every differently
+expressed rule with the same harmful purpose.
 
 These are properties of this constitution and this reasoning model. Engine
 regression tests and the substantive refusal pins check them directly. A changed
@@ -112,22 +114,19 @@ rules or trustworthy evidence unnecessary.
 
 ## The child with nobody
 
-Zed and Nell are both owed dwelling and expression. Custody-based shelter and
-expression derive for Zed without receipts; neither initially derives for Nell.
-That difference concerns the grounds of the conclusions, not whether either
-person was actually sheltered or heard.
+Zed and Nell are both owed dwelling and expression. Neither supplied record
+initially establishes delivered shelter or a record of speech. Zed's sentence
+and reviewed placement create no receipt. Nell's birth creates no receipt either.
 
 The child test then supplies a shelter receipt, a witness authorised for Nell
 and a matching shelter attestation from someone other than the provider.
 Dwelling derives. Matching food evidence also produces food actuality. Nell's
 personhood and floor debt remain, with neither confinement nor a void.
 
-Custody and witnessed delivery are different routes to these conclusions.
-The custody route does not authenticate a building or its conditions; the
-receipt route does not make Nell responsible for producing evidence before
-being entitled to help. Both people were owed the floor before either result.
-A comparison of provision must ask for evidence of actual conditions in both
-cases.
+Witnessed delivery is independent of sentence authority. The receipt route
+does not make Nell responsible for producing evidence before being entitled
+to help. Both people were owed the floor before either result. A comparison
+of provision needs evidence of actual conditions in both cases.
 
 The next chapter considers placement: where the model assigns people, how those
 assignments can fail to be unique, and why none may lower what the person is owed.

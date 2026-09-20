@@ -15,22 +15,27 @@ company during confinement, carry between witnessed records, conflicting clear a
 void histories, protected entries, event order, adulthood evidence, and current
 custody authority. They differ in what evidence they require and what follows.
 
-## An absence mistaken for isolation
+## Evidence of denied contact
 
-Every prisoner in the supplied record receives the isolation marker. Free people do
-not. Nia's relief and the shields protecting Rebel, Sly and Rex prevent custody and
-therefore this marker, even though the Court has judged them.
+The supplied prisoners have no matching company receipts. That absence produces
+no isolation finding. Missing evidence of company is not positive evidence that
+contact was denied.
 
-The isolation rule reads custody and the absence of a company conclusion. A
-recipient-side route can establish company, but the supplied cast has no matching
-receipt. The marker consequently fires on every confined person. It does not establish
-that any of them is isolated in the world.
+An isolation finding instead identifies a physically held person, the holding,
+responsible holder, place, period and evidence. An authorised witness and an
+independent reviewer must agree on those fields and positively record denied
+accessible human contact. Their record must provide notice, reasons and a way
+to contest it. The two actors must be distinct; neither may be the person held
+or the holder. Conflicting authorised descriptions prevent the finding from
+qualifying. An unrelated writer cannot create that conflict merely by adding
+a different description.
 
-This is a defect in what the signal claims. Missing evidence of company is not
-positive evidence of isolation. A valid receipt could silence the marker for one
-person, but that would not make the remaining absences into findings of deprivation.
-The chapter's isolation pins preserve this bad result as a defect to be resolved;
-their passing is not evidence that the alarm is sound.
+The condition case tests a person held without a valid sentence. The positive
+finding still creates a marker and Review's duty. Independent identification
+preserves personhood and the company debt even when the period or procedure is
+disputed. Unlawful holding cannot make its subject ineligible for protection.
+A company receipt from another encounter does not erase the recorded finding
+about the specified period.
 
 The private-power finding in chapter 11 illustrates a related evidence boundary
 without relying on absence. It requires a named ground, such as an essential function
@@ -58,8 +63,11 @@ location in the constitution nor its name makes it reliable.
 
 A placement or isolation marker derives Review's duty about the affected person.
 The direction matters: Review is obliged toward Ruk; Ruk is not obliged toward
-Review. In the supplied record, these duties arise through the defective isolation
-signal. Correctly connecting a reader does not repair the signal feeding it.
+Review. Routine custody review is also owed without either marker. Every
+prisoner in the supplied cast retains that review while no isolation finding
+derives. A person can open a conditions review by filing a complaint, without
+first obtaining a completed finding or the holder's permission. The complaint
+creates an investigation duty; it does not establish the alleged breach.
 
 Record and time defects use expressly named challenge routes. Missing or invented
 carry, conflicting histories, vanished protected entries, disputed adulthood evidence,
@@ -107,10 +115,12 @@ shortage established to be a budget choice cannot continue to authorise scarcity
 allocation. These are withdrawals of formal authority. They do not establish that
 publication resumed, surveillance stopped, or withheld provision arrived.
 
-Nor does every desirable safeguard automatically survive withdrawal. Chapter 19's
-record sequence also loses duties that depend on the holding authority, while a
-separate correction route remains. Retained data and past uses still need protection;
-removing permission is not by itself a complete response to their consequences.
+The duties attached to the recorded undertaking continue through withdrawal.
+Chapter 19's holder still owes accuracy, security, protection from retaliation,
+notification and explanation; human review and the subject's contest right
+remain. Chapter 20's inventory, return, compensation and audit duties remain too.
+Removing permission cannot discharge those obligations. Their continued
+derivation does not establish that retained data was protected or property returned.
 
 The defect is specific to the affected record. An unrelated holding does not fall
 merely because another one is defective. Where common-cause correction or affected-case
@@ -177,10 +187,11 @@ and what costs and limits remain.
 
 ## The child with nobody
 
-Nell has neither custody nor a placement report, so neither marker fires. Review's
-corresponding duty does not derive. The food debt does, while the record has no food
-receipt. These results establish an evidentiary gap, not that Nell has been fed or
-left hungry.
+Nell's birth-only record supplies neither a positive isolation finding nor a
+placement report, so neither marker fires. It supplies no custody or conditions
+complaint to trigger this particular review duty. The food debt does derive,
+while the record has no food receipt. These results establish an evidentiary gap,
+not that Nell has been fed or left hungry.
 
 A counterfactual marker based on an owed but unrecorded delivery fires for Nell.
 That shows such an inference can be written; it does not turn missing evidence into

@@ -2,153 +2,146 @@
 
 Bela's void closes the recognition routes and records a recognition loss.
 Standing, the floor, movement, the ballot and public answerability remain.
-A carried void also affects eligibility for the auditor's credential, as the
-previous chapters showed. None of these conclusions establishes that every
+A person with an effective credibility finding also cannot qualify a new
+adverse finding against somebody else. None of this establishes that every
 statement Bela makes is false.
 
-The paired finding needs two credentialed signers. Other routes concern an
-examiner's own conduct or a carried finding. Keeping those routes distinct
-matters: a safeguard in the paired rule is not automatically a safeguard in
-every rule that produces a void.
+The distinction is between a finding about an identified act and a judgment
+about a person's worth. The finding has a ground, a case, people responsible
+for it and a way to contest it. The person keeps their rights.
 
 ## The paired finding
 
-Gia and Hex examine Bela. Gia holds the Electorate-route credential, Hex the
-Convocation-route credential. Both record examinations, cite the same admitted
-adverse ground and carry affirmative independence entries for Bela. The paired
-void follows.
+Gia and Hex examine Bela. Their appointments come through different bodies.
+Both identify the same incident, adverse ground and evidence. Each has an
+independence finding for that case. Their records also affirm that notice,
+access to the evidence, a hearing and reasons were provided. The completed
+judgment includes independently witnessed evidence of their eligibility when
+they made it and of its place before the current evaluation. Bela's void
+follows from that completed case.
+
+Permission to make a finding is a separate question. Two currently eligible
+reviewers can qualify a proposed finding; that permission does not itself
+record a completed judgment or impose a penalty. Their subsequent act must
+have its own completed record. This separation lets the rule ask whether a
+reviewer may act now without treating a later disqualification as proof that
+every lawful earlier act was invalid.
 
 The ground must name deceit, a fabricated record, a concealed conflict or
-withheld evidence. A complaint alone is not one of those findings. In the test,
-Nogra and Nogrb both examine Targ4 on a complaint and receive recognition for
-their recorded examinations, but Targ4 is not voided. One signer's subsequent
-deceit citation still does not suffice. The second matching citation completes
-the pair.
+withheld evidence. A complaint alone is not one of those findings. Nogra and
+Nogrb receive recognition for examining Targ4 on a complaint. A proposed
+adverse finding still needs their agreement on the actual incident and ground.
+One signer's affirmation does not suffice. When both agree, the proposal can
+qualify; Targ4 is voided only when the completed case is also recorded.
 
-That tests the difference between an occasion for examination and a recognised
-adverse ground. It does not establish the allegation's truth. The formal entries
-identify a signer, the subject and a ground kind; they do not identify a
-separate case or the specific act of deceit. Matching the same ground kind
-cannot by itself prove that both signers examined the same incident.
+Matching a subject and the word *deceit* is insufficient. The incident and
+evidence must match too. An independence entry for another case cannot be
+borrowed, and conflicting descriptions invalidate the record. Represented
+family relationships with the subject or between the prospective signers
+also stop the pair. Missing relationship records do not establish independence:
+each reviewer still needs the affirmative finding for this case.
 
-Koa recorded a finding about Esa, but has no judgment or credential in that
-case. No void follows for Esa. The result concerns this incomplete pair; it
-does not establish that one entry can never have a consequence elsewhere.
-
-Ambi tests a different failure. Ambi holds both credentials and supplies the
-examination, ground and independence entry, but cannot count as two distinct
-signers. No void follows for Solo. A final explicit control adds a rule that
-allows one dual-credentialed signer, and the result changes. The original
-rule requires two names, not two credentials held by one name.
-
-Each signer must also have affirmative independence authority for the subject.
-A generic label or an entry for another subject cannot supply it. Missing
-family, friendship, household, financial or care records do not prove that a
-relationship is absent. The present formal independence entry binds the
-reviewer to the subject; it does not separately identify an incident or
-independence decision. Those are limits on the claim that the pair is
-independent for a particular matter.
+Koa recorded something about Esa, but supplies neither a judgment nor the
+required credential. No void follows. Ambi holds both credentials, but one
+person still cannot count as two signers. No void follows for Solo. Ambi's test
+supplies the other case premises, so the distinctness condition is doing the
+work.
 
 ## Findings against an examiner
 
-Dev is Esa's parent and judges Esa. That pair of entries produces a void of
-Dev. It does not require the two signers above. The rule treats the examiner's
-recorded conflict as a ground against the examiner.
+Dev is Esa's parent and judges Esa. That examination cannot earn examination
+recognition, and the relationship prevents Dev from qualifying an adverse
+finding about Esa. It does not automatically void Dev. A separate finding of
+concealed conflict needs the same case and process as any other adverse finding.
 
-Lupo's recorded deceit of Mira, together with a Review judgment of Lupo,
-produces a void of Lupo. Mira is not voided in the supplied case. Again, this
-is a separate route: the Review judgment supplies no case or purpose argument,
-and the entries do not establish that a fair hearing occurred.
+Lupo's deceit of Mira is the subject of such a completed case. Lupo is voided;
+Mira is not. A bare allegation, even beside a generic Review judgment naming
+Lupo, would not supply that case. The accusation cannot do the work of the
+particular judgment.
 
-These consequences can make an examiner's conduct answerable. They do not
-prove deterrence, prevent a first false entry or show that repeated abuse is
-impossible. The adequacy of the findings and their challenge routes must be
-assessed independently of whether the rules reproduce the expected result.
+That distinction also protects an examiner against an unsupported accusation.
+The recorded allegation alone does not remove recognition. It does not establish
+that the examiner was honest; it establishes what is required before an adverse
+personal consequence may follow.
 
 ## What has to cross the record
 
-Vex and Wren have recorded examinations of Tyr, but Vex's matched carried void
-blocks the required credential. Tyr is not voided. For that history to count,
-the later record must identify its predecessor; the inventories, predecessor
-finding and both reports of carry must agree; and the witnessed constitutional
-line must select that current record without a competing selection. A bare
-mark cannot supply the history.
+Vex and Wren have recorded examinations of Tyr. Vex's matched carried
+restriction blocks the required appointment, so the pair cannot qualify a new
+finding. Tyr is not voided. The history must have an identified predecessor,
+agreed inventories and carry reports, and a selected current constitutional
+record without a competing selection. A bare mark cannot supply it.
 
-The Lupo sequence exposes a different result within one record. Lupo is already
-voided for deceit. With a seating and witnessed clear history from the prior
-record, Lupo still receives a credential. Lupo and Partnr then complete a pair
-against Frisk, who is voided. Once a properly witnessed predecessor void and
-its carry are supplied for Lupo, the credential stops deriving.
+That carried restriction concerns public power. It is insufficient by itself
+to withhold ordinary recognition or record a clawback: those consequences need
+an identifiable finding the person can challenge. Vex's personal void rests
+on the separately recorded prior case.
 
-The current-void conclusion is therefore not a same-record disqualification.
-A direct attempt to make eligibility depend on its absence creates a negative
-cycle: eligibility contributes to the findings that produce that same
-conclusion. The engine refuses that encoding. This establishes a limitation
-of the attempted rule, not that the underlying policy cannot be represented
-another way.
+Current disqualification matters as well. Lupo has an appointment and a
+witnessed clearance from the prior record, but the current record also contains
+the effective finding against Lupo. Lupo and Partnr therefore cannot qualify
+a new finding against Frisk. The earlier clearance does not override the
+current judgment. A carried restriction, when present, independently blocks
+the appointment route.
 
-Witnessed predecessor history provides a boundary across records. It does not
-resolve the demonstrated same-record case. Nor does witnessing an order of
-events change a rule that does not consume that order. Reporting the result
-locates the problem; it does not justify leaving its subject exposed.
+The historical and current questions have different dates. A completed
+judgment needs evidence of eligibility when it was made. A proposed judgment
+needs eligibility now. Neither an old appointment nor an old clearance answers
+both questions.
 
 ## The way back, and who has to answer
 
-An Appeals forgiveness entry beside an Appeals judgment produces the clean
-status read by the paired-void, adjudicated-deceit and carried-void routes.
-Purga's test supplies the complete adverse pair as well as the Appeals pair.
-Clean status derives, while neither a void nor recognition loss does.
+Restoration names the particular finding and its subject. It requires the
+specific appellate act and its independent review, their purpose, evidence and
+procedure, and the eligibility and witnessed order belonging to that act.
+The decision-maker and reviewer must be distinct, and neither may be the
+subject. An independent alternate can act under the same case requirements
+when the ordinary body is a party.
+A generic judgment and a forgiveness flag restore nothing.
 
-The parent-judge route does not read clean status. Its void continues while
-the parent and judgment entries remain, even if forgiveness is supplied.
-That is an exception to restoration, not evidence that every route can be
-ended by the same act. Removing a premise changes the result; it does not by
-itself establish an adequate procedure for correcting a conflicted judgment
-while retaining its lawful history.
+Purga's complete adverse case remains in the record alongside the qualified
+restoration. Neither a void nor recognition loss follows. The history need not
+be erased to end its consequence. The same applies to an adjudicated concealed
+conflict: Dev's family relationship and examination can remain recorded after
+the finding is restored.
 
-Forgiveness also does not erase the matched history read by the credential
-rule. Restoring recognition therefore does not automatically restore that
-power. No automatic expiry ends a void when nobody reviews it.
+Renaming the restored finding does not revive it. Restoration follows the same
+subject, incident and ground across record names. A distinct incident or ground
+is assessed separately; one restoration is not permanent immunity from another
+finding. Restoring recognition also does not automatically restore a recalled
+or carried-void public appointment. No automatic expiry ends a finding merely
+because nobody reviews it.
 
-A voided person is owed an explanation of the ground by Review. A challenge
-creates an Appeals duty without either signer's permission or a prior merits
-finding. Bela's challenge produces the duty while the void continues. Neither
-duty proves that reasons were given or a review occurred.
-
-The explanation rule requires personhood, while the paired-void rule does not.
-Targo's test makes the mismatch explicit: a void derives, personhood does not,
-and the explanation duty does not follow for that handle. The supplied model
-therefore does not establish that every target of a void receives that duty.
+Every target of an effective finding is owed an explanation by Review. Targo's
+case tests that duty without a separate personhood entry: the finding and the
+reasons duty both derive. The subject's own challenge creates an Appeals duty
+without either signer's permission or a prior merits finding. Bela's challenge
+opens that route while the finding continues. Neither duty proves that reasons
+were delivered or a review occurred.
 
 ## What it costs
 
-The paired rule checks who is named, which credential each signer holds, which
-subject and ground they cite, and which independence entries accompany them.
-Two compromised signers can supply matching false premises. Requiring
-attributable entries creates things to challenge; it does not establish their
-truth or the independence of the people behind the names.
+The conditions identify who acted, in which case, on which evidence and with
+which authority. They cannot establish that the reported evidence was true or
+that the people behind the signatures were independent. Compromised reviewers
+and historical witnesses can agree on false accounts. The legal requirements
+remain; their fulfilment must be established outside the calculation.
 
-Positive independence avoids treating an omitted relationship as proof that
-no relationship exists. It still depends on the scope and adequacy of the
-independence finding. The subject-bound entries described above cannot prove
-a distinct review of every incident.
+Positive case requirements also mean that incomplete records cannot establish
+the adverse authority. A missing clearance prevents an appointment from
+qualifying. A missing incident, matching finding or required historical
+observation prevents the personal consequence. That does not establish that
+no wrongdoing occurred; it places the burden on the proposed use of power.
 
-The historical comparison likewise needs supplied evidence. A raw mark alone
-produces no carried void. Forged carry without a witnessed predecessor can
-produce a defect marker instead. Withholding required positive clearance keeps
-a credential from deriving, while a matched carried void blocks it explicitly.
-
-None of that makes the record self-authenticating. A fact deleted before the
-first attested record leaves no predecessor for this comparison. Two witnesses
-can agree on false inventories, and no rule makes a successor arrive. Results
-must be evaluated against the selected current record rather than treating an
-old answer as an enduring decision. Those boundaries do not turn a passing
-case into a guarantee that a person has been fairly judged.
+The record comparison has its own boundary. A fact deleted before the first
+attested record leaves no predecessor for that comparison, and no rule makes
+a successor arrive. Conclusions belong to the selected current record. A
+stale answer must not be treated as permission to act in a changed situation.
 
 ## The child with nobody
 
 Nell is not voided in this chapter's supplied child case. Every floor debt
-derive, while recognition and recognition loss do not. The test does not record
+derives, while recognition and recognition loss do not. The test does not record
 a completed void of Nell or prove that no false accusation could reach the child.
 
 The floor rules depend on personhood, not credibility. Bela's voided case

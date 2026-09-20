@@ -1,3 +1,4 @@
+# A raw completion entry supplies standing, not an independently qualified release order.
 # SPDX-License-Identifier: MIT OR Apache-2.0
 :expect-pins 5
 # Fresh-process temporal case TA-20.
@@ -8,7 +9,7 @@
 
 # A valid release blocks custody even if a lease exists.
 ? prisoner(Adam).
-# => FALSE
+# => TRUE
 
 # Release does not erase standing.
 ? person(Adam).
@@ -16,7 +17,7 @@
 
 # Affirmative liberty returns when custody no longer derives.
 ? travel(Adam).
-# => TRUE
+# => FALSE
 
 # Historical public answerability remains available after one case release.
 ? authority(Court).

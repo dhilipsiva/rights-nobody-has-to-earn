@@ -1,0 +1,17 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+# Explicit weaker rule mistakes missing company evidence for isolation.
+:expect-pins 7
+? err(Adam, Isolation).
+# => TRUE
+? err(Hano, Isolation).
+# => TRUE
+? err(Lalo, Isolation).
+# => TRUE
+? err(Nando, Isolation).
+# => TRUE
+? err(Don, Isolation).
+# => TRUE
+? err(Kel, Isolation).
+# => TRUE
+? err(Ruk, Isolation).
+# => TRUE

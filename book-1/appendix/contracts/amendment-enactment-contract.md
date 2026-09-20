@@ -2,6 +2,14 @@
 
 # Amendment enactment and effective-version contract
 
+**Final item-19 integration, 2026-09-20.** The current source passes 88,024
+pins across 16,087 cases in 1,169.06s, with complete contradiction checks and
+no findings. No active known-defect annotations remain. The focused and failed
+runs below are historical steps, not the final result. The five-minute target
+is unmet. These checks establish the loaded model, not outside authenticity
+or performed institutional acts. See `CLAUDE.md` for the development and
+manuscript checks. The fresh whole-manuscript review remains item 20.
+
 The ecological implementation (2026-09-14) adds separate positive certification findings
 for direct animal protected-subject status and the severe-avoidable-suffering
 and dispensable-killing core. Independently reviewed, exact-source core-breach
@@ -20,12 +28,25 @@ local host model, not an operating publication or deployment service.
 
 ## Scope and authority
 
-This implements the amendment-enactment TODO under the ratified state-form
-decision. It does not change amendment thresholds, the democratic corridor,
-the older Article 9 labels, or the supported ordinary-fact result-certificate
-interface. Political consent and compatibility remain separate requirements.
-`become` remains unread. A favourable label is neither a result certificate
-nor permission to replace source text.
+**2026-09-19 substantive supersession, under delegated author approval:** the
+separate Article 9 proposal-label rules are removed. They duplicated amendment
+status without candidate binding, let a targetless name receive a law label,
+and used the personal credibility relation for proposal rejection. A simple
+target requirement would leave the effect gap and personal-name collision;
+separating the rejection relation alone would leave the unsupported law label.
+The narrower resolution is to retain this exact-change interface as the
+constitutional amendment route. No constitutional commitment requires the
+weaker parallel mechanism. Its docket, tally and target examples remain as
+refused shortcuts, with an explicit counterfactual reproducing both old failures.
+
+Amendment thresholds, the democratic corridor and the ordinary-fact result
+certificate interface are unchanged. Political consent and compatibility
+remain separate requirements. Certification, publication and effective status
+belong to the exact record and candidate. `become` remains derived-only and
+unread, with no producing rule; neither it nor a proposal's declared target
+supplies enactment authority or a personal credibility finding. The retained
+`permanent` names identify protected commitments, without claiming to inspect
+or prevent an edit to the source file.
 
 The holders remain those in FSPOW_037. The source-binding authority, independent
 effect reviewer, publisher and effective-version selector are bounded functions,

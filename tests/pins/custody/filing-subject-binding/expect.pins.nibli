@@ -1,0 +1,16 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 5
+list(Filing_WrongSubject, SomeoneElse, Case_FilingBinding, CustodyChallengeFiling).
+observe(SomeoneElse, Filing_WrongSubject, Case_FilingBinding, CustodyChallengeSubmissionScope).
+? closed(Case_FilingBinding, CustodyChallengePending).
+# => FALSE
+? prisoner(FilingBinding).
+# => TRUE
+list(Filing_RightSubject, FilingBinding, Case_FilingBinding, CustodyChallengeFiling).
+observe(FilingBinding, Filing_RightSubject, Case_FilingBinding, CustodyChallengeSubmissionScope).
+? closed(Case_FilingBinding, CustodyChallengePending).
+# => TRUE
+? prisoner(FilingBinding).
+# => FALSE
+? prisoner(Hano).
+# => TRUE

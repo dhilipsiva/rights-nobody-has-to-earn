@@ -51,12 +51,12 @@ an institution or right, or governed by decree. The declaration no longer
 completes. Neither does the requisition joined to that exact declaration
 revision. Its restraint and loss conclusions stop deriving.
 
-The accounting duty tied to that requisition also stops deriving. The defect
-record separately requires evidence preservation, continued care and challenge,
-and an independent judicial remedy. Those conditions must not be mistaken for
-a continuing derivation of the original inventory, return or compensation duty.
-The sequence establishes withdrawal and a remedy route, not completed redress
-or a comprehensive account of every obligation after an unlawful taking.
+The operator's inventory, accounting, return or compensation duty continues.
+It belongs to the recorded requisition, even when its permission fails. The
+declaration's notification and immediate-challenge duties also continue. The
+defect record separately requires evidence preservation, continued care and
+challenge, and an independent judicial remedy. Withdrawing authority discharges
+none of those duties and establishes no completed return or compensation.
 
 The person retains standing and the floor throughout and does not become a
 prisoner. The declaration's defect creates no adverse finding about them.
@@ -113,10 +113,10 @@ within those limits and the force authorisation's specified restraint and loss.
 
 An independent finding that public coercive power was delegated to a private
 actor stops the structure from completing. The dependent force authorisation,
-restraint and loss stop too. The structure-dependent duty concerning ceilings,
-appropriation and audit also ceases to derive. As with the requisition, that
-withdrawal does not establish all the continuing obligations of an actual
-force or prove that its conduct stopped.
+restraint and loss stop too. The duty to keep the recorded structure within
+Assembly ceilings, appropriation and audit continues. An invalidated structure
+does not gain freedom from its limits. Neither withdrawal nor the continuing
+duty proves that the force's conduct stopped.
 
 The named person retains personhood and the floor; no prisoner conclusion follows.
 No rule in this sequence recalls a deployment, brings anyone home or stops

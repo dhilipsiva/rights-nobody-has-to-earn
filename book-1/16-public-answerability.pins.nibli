@@ -65,7 +65,7 @@ authority(Pax).
 # authority(Boss) above is TRUE *despite* broken(Boss) being TRUE.
 
 # "Rebel exposed Boss." / "Rebel is shielded because Boss is an authority."
-? show(Rebel, Boss).
+? show(Rebel, Disclosure_Rebel_Boss, Boss).
 # => TRUE
 
 ? defend(Rebel).

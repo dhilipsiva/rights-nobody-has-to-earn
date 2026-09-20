@@ -1,0 +1,297 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+# Case parties and fused functions cannot adjudicate restoration. Qualified
+# independent alternates use the same case, procedure and historical contract.
+:expect-pins 13
+list(Finding_Appellate_Party, Appeals, Incident_Finding_Appellate_Party, CredibilityFinding).
+list(Finding_Appellate_Party, CredibilityGroundDeceit, Evidence_Finding_Appellate_Party, CredibilityGroundEvidence).
+judge(Gia, Finding_Appellate_Party).
+capture(Gia, Appeals, Incident_Finding_Appellate_Party).
+cite(Gia, CredibilityGroundDeceit, Finding_Appellate_Party).
+authorized(Gia, IndependentReviewer, Finding_Appellate_Party).
+observe(Gia, Finding_Appellate_Party, Appeals, CredibilitySubjectScope).
+observe(Gia, Finding_Appellate_Party, Incident_Finding_Appellate_Party, CredibilityIncidentScope).
+observe(Gia, Finding_Appellate_Party, CredibilityGroundDeceit, CredibilityGroundScope).
+observe(Gia, Finding_Appellate_Party, Evidence_Finding_Appellate_Party, CredibilityEvidenceScope).
+observe(Gia, Finding_Appellate_Party, NoticeEvidenceAccessHearingAndReasons, CredibilityProcedureScope).
+judge(Hex, Finding_Appellate_Party).
+capture(Hex, Appeals, Incident_Finding_Appellate_Party).
+cite(Hex, CredibilityGroundDeceit, Finding_Appellate_Party).
+authorized(Hex, IndependentReviewer, Finding_Appellate_Party).
+observe(Hex, Finding_Appellate_Party, Appeals, CredibilitySubjectScope).
+observe(Hex, Finding_Appellate_Party, Incident_Finding_Appellate_Party, CredibilityIncidentScope).
+observe(Hex, Finding_Appellate_Party, CredibilityGroundDeceit, CredibilityGroundScope).
+observe(Hex, Finding_Appellate_Party, Evidence_Finding_Appellate_Party, CredibilityEvidenceScope).
+observe(Hex, Finding_Appellate_Party, NoticeEvidenceAccessHearingAndReasons, CredibilityProcedureScope).
+observe(Chronicle, Finding_Appellate_Party, Gia, CredibilityReviewSignerEligibleAtDecisionScope).
+observe(TemporalReview, Finding_Appellate_Party, Gia, CredibilityReviewSignerEligibleAtDecisionScope).
+observe(Chronicle, Finding_Appellate_Party, Hex, CredibilityTribunalSignerEligibleAtDecisionScope).
+observe(TemporalReview, Finding_Appellate_Party, Hex, CredibilityTribunalSignerEligibleAtDecisionScope).
+list(Order_Finding_Appellate_Party, Finding_Appellate_Party, Epoch_Current, RecordSequence).
+observe(Chronicle, Order_Finding_Appellate_Party, Finding_Appellate_Party, RecordStartScope).
+observe(Chronicle, Order_Finding_Appellate_Party, Epoch_Current, RecordEndScope).
+observe(TemporalReview, Order_Finding_Appellate_Party, Finding_Appellate_Party, RecordStartScope).
+observe(TemporalReview, Order_Finding_Appellate_Party, Epoch_Current, RecordEndScope).
+? false(Appeals).
+# => TRUE
+list(Restore_By_Party, Appeals, Finding_Appellate_Party, CredibilityRestoration).
+list(Restore_By_Party, RestoreCredibilityFinding, Evidence_Restore_By_Party, CredibilityAppealPurposeEvidence).
+judge(Appeals, Restore_By_Party).
+judge(Tribunal, Restore_By_Party).
+authorized(Appeals, CredibilityAppellateDisposition, Restore_By_Party).
+authorized(Tribunal, IndependentCredibilityAppealReview, Restore_By_Party).
+observe(Appeals, Restore_By_Party, Appeals, CredibilityAppealSubjectScope).
+observe(Appeals, Restore_By_Party, Finding_Appellate_Party, CredibilityAppealFindingScope).
+observe(Appeals, Restore_By_Party, RestoreCredibilityFinding, CredibilityAppealPurposeScope).
+observe(Appeals, Restore_By_Party, Evidence_Restore_By_Party, CredibilityAppealEvidenceScope).
+observe(Appeals, Restore_By_Party, NoticeEvidenceAccessHearingAndReasons, CredibilityAppealProcedureScope).
+observe(Tribunal, Restore_By_Party, Appeals, CredibilityAppealSubjectScope).
+observe(Tribunal, Restore_By_Party, Finding_Appellate_Party, CredibilityAppealFindingScope).
+observe(Tribunal, Restore_By_Party, RestoreCredibilityFinding, CredibilityAppealPurposeScope).
+observe(Tribunal, Restore_By_Party, Evidence_Restore_By_Party, CredibilityAppealEvidenceScope).
+observe(Tribunal, Restore_By_Party, NoticeEvidenceAccessHearingAndReasons, CredibilityAppealProcedureScope).
+observe(Chronicle, Restore_By_Party, Appeals, CredibilityAppealActorEligibleAtDecisionScope).
+observe(TemporalReview, Restore_By_Party, Appeals, CredibilityAppealActorEligibleAtDecisionScope).
+observe(Chronicle, Restore_By_Party, Tribunal, CredibilityAppealReviewActorEligibleAtDecisionScope).
+observe(TemporalReview, Restore_By_Party, Tribunal, CredibilityAppealReviewActorEligibleAtDecisionScope).
+list(Order_Before_Restore_By_Party, Finding_Appellate_Party, Restore_By_Party, RecordSequence).
+observe(Chronicle, Order_Before_Restore_By_Party, Finding_Appellate_Party, RecordStartScope).
+observe(Chronicle, Order_Before_Restore_By_Party, Restore_By_Party, RecordEndScope).
+observe(TemporalReview, Order_Before_Restore_By_Party, Finding_Appellate_Party, RecordStartScope).
+observe(TemporalReview, Order_Before_Restore_By_Party, Restore_By_Party, RecordEndScope).
+list(Order_After_Restore_By_Party, Restore_By_Party, Epoch_Current, RecordSequence).
+observe(Chronicle, Order_After_Restore_By_Party, Restore_By_Party, RecordStartScope).
+observe(Chronicle, Order_After_Restore_By_Party, Epoch_Current, RecordEndScope).
+observe(TemporalReview, Order_After_Restore_By_Party, Restore_By_Party, RecordStartScope).
+observe(TemporalReview, Order_After_Restore_By_Party, Epoch_Current, RecordEndScope).
+? responsible(Restore_By_Party, CredibilityRestoration).
+# => FALSE
+? false(Appeals).
+# => TRUE
+list(Restore_By_Alternate, Appeals, Finding_Appellate_Party, CredibilityRestoration).
+list(Restore_By_Alternate, RestoreCredibilityFinding, Evidence_Restore_By_Alternate, CredibilityAppealPurposeEvidence).
+judge(AppealsAlternate, Restore_By_Alternate).
+judge(Tribunal, Restore_By_Alternate).
+authorized(AppealsAlternate, CredibilityAppellateDisposition, Restore_By_Alternate).
+authorized(Tribunal, IndependentCredibilityAppealReview, Restore_By_Alternate).
+observe(AppealsAlternate, Restore_By_Alternate, Appeals, CredibilityAppealSubjectScope).
+observe(AppealsAlternate, Restore_By_Alternate, Finding_Appellate_Party, CredibilityAppealFindingScope).
+observe(AppealsAlternate, Restore_By_Alternate, RestoreCredibilityFinding, CredibilityAppealPurposeScope).
+observe(AppealsAlternate, Restore_By_Alternate, Evidence_Restore_By_Alternate, CredibilityAppealEvidenceScope).
+observe(AppealsAlternate, Restore_By_Alternate, NoticeEvidenceAccessHearingAndReasons, CredibilityAppealProcedureScope).
+observe(Tribunal, Restore_By_Alternate, Appeals, CredibilityAppealSubjectScope).
+observe(Tribunal, Restore_By_Alternate, Finding_Appellate_Party, CredibilityAppealFindingScope).
+observe(Tribunal, Restore_By_Alternate, RestoreCredibilityFinding, CredibilityAppealPurposeScope).
+observe(Tribunal, Restore_By_Alternate, Evidence_Restore_By_Alternate, CredibilityAppealEvidenceScope).
+observe(Tribunal, Restore_By_Alternate, NoticeEvidenceAccessHearingAndReasons, CredibilityAppealProcedureScope).
+observe(Chronicle, Restore_By_Alternate, AppealsAlternate, CredibilityAppealActorEligibleAtDecisionScope).
+observe(TemporalReview, Restore_By_Alternate, AppealsAlternate, CredibilityAppealActorEligibleAtDecisionScope).
+observe(Chronicle, Restore_By_Alternate, Tribunal, CredibilityAppealReviewActorEligibleAtDecisionScope).
+observe(TemporalReview, Restore_By_Alternate, Tribunal, CredibilityAppealReviewActorEligibleAtDecisionScope).
+list(Order_Before_Restore_By_Alternate, Finding_Appellate_Party, Restore_By_Alternate, RecordSequence).
+observe(Chronicle, Order_Before_Restore_By_Alternate, Finding_Appellate_Party, RecordStartScope).
+observe(Chronicle, Order_Before_Restore_By_Alternate, Restore_By_Alternate, RecordEndScope).
+observe(TemporalReview, Order_Before_Restore_By_Alternate, Finding_Appellate_Party, RecordStartScope).
+observe(TemporalReview, Order_Before_Restore_By_Alternate, Restore_By_Alternate, RecordEndScope).
+list(Order_After_Restore_By_Alternate, Restore_By_Alternate, Epoch_Current, RecordSequence).
+observe(Chronicle, Order_After_Restore_By_Alternate, Restore_By_Alternate, RecordStartScope).
+observe(Chronicle, Order_After_Restore_By_Alternate, Epoch_Current, RecordEndScope).
+observe(TemporalReview, Order_After_Restore_By_Alternate, Restore_By_Alternate, RecordStartScope).
+observe(TemporalReview, Order_After_Restore_By_Alternate, Epoch_Current, RecordEndScope).
+? responsible(Restore_By_Alternate, CredibilityRestoration).
+# => TRUE
+? false(Appeals).
+# => FALSE
+list(Finding_Review_Party, Tribunal, Incident_Finding_Review_Party, CredibilityFinding).
+list(Finding_Review_Party, CredibilityGroundDeceit, Evidence_Finding_Review_Party, CredibilityGroundEvidence).
+judge(Gia, Finding_Review_Party).
+capture(Gia, Tribunal, Incident_Finding_Review_Party).
+cite(Gia, CredibilityGroundDeceit, Finding_Review_Party).
+authorized(Gia, IndependentReviewer, Finding_Review_Party).
+observe(Gia, Finding_Review_Party, Tribunal, CredibilitySubjectScope).
+observe(Gia, Finding_Review_Party, Incident_Finding_Review_Party, CredibilityIncidentScope).
+observe(Gia, Finding_Review_Party, CredibilityGroundDeceit, CredibilityGroundScope).
+observe(Gia, Finding_Review_Party, Evidence_Finding_Review_Party, CredibilityEvidenceScope).
+observe(Gia, Finding_Review_Party, NoticeEvidenceAccessHearingAndReasons, CredibilityProcedureScope).
+judge(Hex, Finding_Review_Party).
+capture(Hex, Tribunal, Incident_Finding_Review_Party).
+cite(Hex, CredibilityGroundDeceit, Finding_Review_Party).
+authorized(Hex, IndependentReviewer, Finding_Review_Party).
+observe(Hex, Finding_Review_Party, Tribunal, CredibilitySubjectScope).
+observe(Hex, Finding_Review_Party, Incident_Finding_Review_Party, CredibilityIncidentScope).
+observe(Hex, Finding_Review_Party, CredibilityGroundDeceit, CredibilityGroundScope).
+observe(Hex, Finding_Review_Party, Evidence_Finding_Review_Party, CredibilityEvidenceScope).
+observe(Hex, Finding_Review_Party, NoticeEvidenceAccessHearingAndReasons, CredibilityProcedureScope).
+observe(Chronicle, Finding_Review_Party, Gia, CredibilityReviewSignerEligibleAtDecisionScope).
+observe(TemporalReview, Finding_Review_Party, Gia, CredibilityReviewSignerEligibleAtDecisionScope).
+observe(Chronicle, Finding_Review_Party, Hex, CredibilityTribunalSignerEligibleAtDecisionScope).
+observe(TemporalReview, Finding_Review_Party, Hex, CredibilityTribunalSignerEligibleAtDecisionScope).
+list(Order_Finding_Review_Party, Finding_Review_Party, Epoch_Current, RecordSequence).
+observe(Chronicle, Order_Finding_Review_Party, Finding_Review_Party, RecordStartScope).
+observe(Chronicle, Order_Finding_Review_Party, Epoch_Current, RecordEndScope).
+observe(TemporalReview, Order_Finding_Review_Party, Finding_Review_Party, RecordStartScope).
+observe(TemporalReview, Order_Finding_Review_Party, Epoch_Current, RecordEndScope).
+list(Restore_Reviewed_By_Party, Tribunal, Finding_Review_Party, CredibilityRestoration).
+list(Restore_Reviewed_By_Party, RestoreCredibilityFinding, Evidence_Restore_Reviewed_By_Party, CredibilityAppealPurposeEvidence).
+judge(Appeals, Restore_Reviewed_By_Party).
+judge(Tribunal, Restore_Reviewed_By_Party).
+authorized(Appeals, CredibilityAppellateDisposition, Restore_Reviewed_By_Party).
+authorized(Tribunal, IndependentCredibilityAppealReview, Restore_Reviewed_By_Party).
+observe(Appeals, Restore_Reviewed_By_Party, Tribunal, CredibilityAppealSubjectScope).
+observe(Appeals, Restore_Reviewed_By_Party, Finding_Review_Party, CredibilityAppealFindingScope).
+observe(Appeals, Restore_Reviewed_By_Party, RestoreCredibilityFinding, CredibilityAppealPurposeScope).
+observe(Appeals, Restore_Reviewed_By_Party, Evidence_Restore_Reviewed_By_Party, CredibilityAppealEvidenceScope).
+observe(Appeals, Restore_Reviewed_By_Party, NoticeEvidenceAccessHearingAndReasons, CredibilityAppealProcedureScope).
+observe(Tribunal, Restore_Reviewed_By_Party, Tribunal, CredibilityAppealSubjectScope).
+observe(Tribunal, Restore_Reviewed_By_Party, Finding_Review_Party, CredibilityAppealFindingScope).
+observe(Tribunal, Restore_Reviewed_By_Party, RestoreCredibilityFinding, CredibilityAppealPurposeScope).
+observe(Tribunal, Restore_Reviewed_By_Party, Evidence_Restore_Reviewed_By_Party, CredibilityAppealEvidenceScope).
+observe(Tribunal, Restore_Reviewed_By_Party, NoticeEvidenceAccessHearingAndReasons, CredibilityAppealProcedureScope).
+observe(Chronicle, Restore_Reviewed_By_Party, Appeals, CredibilityAppealActorEligibleAtDecisionScope).
+observe(TemporalReview, Restore_Reviewed_By_Party, Appeals, CredibilityAppealActorEligibleAtDecisionScope).
+observe(Chronicle, Restore_Reviewed_By_Party, Tribunal, CredibilityAppealReviewActorEligibleAtDecisionScope).
+observe(TemporalReview, Restore_Reviewed_By_Party, Tribunal, CredibilityAppealReviewActorEligibleAtDecisionScope).
+list(Order_Before_Restore_Reviewed_By_Party, Finding_Review_Party, Restore_Reviewed_By_Party, RecordSequence).
+observe(Chronicle, Order_Before_Restore_Reviewed_By_Party, Finding_Review_Party, RecordStartScope).
+observe(Chronicle, Order_Before_Restore_Reviewed_By_Party, Restore_Reviewed_By_Party, RecordEndScope).
+observe(TemporalReview, Order_Before_Restore_Reviewed_By_Party, Finding_Review_Party, RecordStartScope).
+observe(TemporalReview, Order_Before_Restore_Reviewed_By_Party, Restore_Reviewed_By_Party, RecordEndScope).
+list(Order_After_Restore_Reviewed_By_Party, Restore_Reviewed_By_Party, Epoch_Current, RecordSequence).
+observe(Chronicle, Order_After_Restore_Reviewed_By_Party, Restore_Reviewed_By_Party, RecordStartScope).
+observe(Chronicle, Order_After_Restore_Reviewed_By_Party, Epoch_Current, RecordEndScope).
+observe(TemporalReview, Order_After_Restore_Reviewed_By_Party, Restore_Reviewed_By_Party, RecordStartScope).
+observe(TemporalReview, Order_After_Restore_Reviewed_By_Party, Epoch_Current, RecordEndScope).
+? responsible(Restore_Reviewed_By_Party, CredibilityRestoration).
+# => FALSE
+? false(Tribunal).
+# => TRUE
+list(Restore_Independently_Reviewed, Tribunal, Finding_Review_Party, CredibilityRestoration).
+list(Restore_Independently_Reviewed, RestoreCredibilityFinding, Evidence_Restore_Independently_Reviewed, CredibilityAppealPurposeEvidence).
+judge(Appeals, Restore_Independently_Reviewed).
+judge(AppealReviewAlternate, Restore_Independently_Reviewed).
+authorized(Appeals, CredibilityAppellateDisposition, Restore_Independently_Reviewed).
+authorized(AppealReviewAlternate, IndependentCredibilityAppealReview, Restore_Independently_Reviewed).
+observe(Appeals, Restore_Independently_Reviewed, Tribunal, CredibilityAppealSubjectScope).
+observe(Appeals, Restore_Independently_Reviewed, Finding_Review_Party, CredibilityAppealFindingScope).
+observe(Appeals, Restore_Independently_Reviewed, RestoreCredibilityFinding, CredibilityAppealPurposeScope).
+observe(Appeals, Restore_Independently_Reviewed, Evidence_Restore_Independently_Reviewed, CredibilityAppealEvidenceScope).
+observe(Appeals, Restore_Independently_Reviewed, NoticeEvidenceAccessHearingAndReasons, CredibilityAppealProcedureScope).
+observe(AppealReviewAlternate, Restore_Independently_Reviewed, Tribunal, CredibilityAppealSubjectScope).
+observe(AppealReviewAlternate, Restore_Independently_Reviewed, Finding_Review_Party, CredibilityAppealFindingScope).
+observe(AppealReviewAlternate, Restore_Independently_Reviewed, RestoreCredibilityFinding, CredibilityAppealPurposeScope).
+observe(AppealReviewAlternate, Restore_Independently_Reviewed, Evidence_Restore_Independently_Reviewed, CredibilityAppealEvidenceScope).
+observe(AppealReviewAlternate, Restore_Independently_Reviewed, NoticeEvidenceAccessHearingAndReasons, CredibilityAppealProcedureScope).
+observe(Chronicle, Restore_Independently_Reviewed, Appeals, CredibilityAppealActorEligibleAtDecisionScope).
+observe(TemporalReview, Restore_Independently_Reviewed, Appeals, CredibilityAppealActorEligibleAtDecisionScope).
+observe(Chronicle, Restore_Independently_Reviewed, AppealReviewAlternate, CredibilityAppealReviewActorEligibleAtDecisionScope).
+observe(TemporalReview, Restore_Independently_Reviewed, AppealReviewAlternate, CredibilityAppealReviewActorEligibleAtDecisionScope).
+list(Order_Before_Restore_Independently_Reviewed, Finding_Review_Party, Restore_Independently_Reviewed, RecordSequence).
+observe(Chronicle, Order_Before_Restore_Independently_Reviewed, Finding_Review_Party, RecordStartScope).
+observe(Chronicle, Order_Before_Restore_Independently_Reviewed, Restore_Independently_Reviewed, RecordEndScope).
+observe(TemporalReview, Order_Before_Restore_Independently_Reviewed, Finding_Review_Party, RecordStartScope).
+observe(TemporalReview, Order_Before_Restore_Independently_Reviewed, Restore_Independently_Reviewed, RecordEndScope).
+list(Order_After_Restore_Independently_Reviewed, Restore_Independently_Reviewed, Epoch_Current, RecordSequence).
+observe(Chronicle, Order_After_Restore_Independently_Reviewed, Restore_Independently_Reviewed, RecordStartScope).
+observe(Chronicle, Order_After_Restore_Independently_Reviewed, Epoch_Current, RecordEndScope).
+observe(TemporalReview, Order_After_Restore_Independently_Reviewed, Restore_Independently_Reviewed, RecordStartScope).
+observe(TemporalReview, Order_After_Restore_Independently_Reviewed, Epoch_Current, RecordEndScope).
+? responsible(Restore_Independently_Reviewed, CredibilityRestoration).
+# => TRUE
+? false(Tribunal).
+# => FALSE
+list(Finding_Fused_Appeal, FusedAppealSubject, Incident_Finding_Fused_Appeal, CredibilityFinding).
+list(Finding_Fused_Appeal, CredibilityGroundDeceit, Evidence_Finding_Fused_Appeal, CredibilityGroundEvidence).
+judge(Gia, Finding_Fused_Appeal).
+capture(Gia, FusedAppealSubject, Incident_Finding_Fused_Appeal).
+cite(Gia, CredibilityGroundDeceit, Finding_Fused_Appeal).
+authorized(Gia, IndependentReviewer, Finding_Fused_Appeal).
+observe(Gia, Finding_Fused_Appeal, FusedAppealSubject, CredibilitySubjectScope).
+observe(Gia, Finding_Fused_Appeal, Incident_Finding_Fused_Appeal, CredibilityIncidentScope).
+observe(Gia, Finding_Fused_Appeal, CredibilityGroundDeceit, CredibilityGroundScope).
+observe(Gia, Finding_Fused_Appeal, Evidence_Finding_Fused_Appeal, CredibilityEvidenceScope).
+observe(Gia, Finding_Fused_Appeal, NoticeEvidenceAccessHearingAndReasons, CredibilityProcedureScope).
+judge(Hex, Finding_Fused_Appeal).
+capture(Hex, FusedAppealSubject, Incident_Finding_Fused_Appeal).
+cite(Hex, CredibilityGroundDeceit, Finding_Fused_Appeal).
+authorized(Hex, IndependentReviewer, Finding_Fused_Appeal).
+observe(Hex, Finding_Fused_Appeal, FusedAppealSubject, CredibilitySubjectScope).
+observe(Hex, Finding_Fused_Appeal, Incident_Finding_Fused_Appeal, CredibilityIncidentScope).
+observe(Hex, Finding_Fused_Appeal, CredibilityGroundDeceit, CredibilityGroundScope).
+observe(Hex, Finding_Fused_Appeal, Evidence_Finding_Fused_Appeal, CredibilityEvidenceScope).
+observe(Hex, Finding_Fused_Appeal, NoticeEvidenceAccessHearingAndReasons, CredibilityProcedureScope).
+observe(Chronicle, Finding_Fused_Appeal, Gia, CredibilityReviewSignerEligibleAtDecisionScope).
+observe(TemporalReview, Finding_Fused_Appeal, Gia, CredibilityReviewSignerEligibleAtDecisionScope).
+observe(Chronicle, Finding_Fused_Appeal, Hex, CredibilityTribunalSignerEligibleAtDecisionScope).
+observe(TemporalReview, Finding_Fused_Appeal, Hex, CredibilityTribunalSignerEligibleAtDecisionScope).
+list(Order_Finding_Fused_Appeal, Finding_Fused_Appeal, Epoch_Current, RecordSequence).
+observe(Chronicle, Order_Finding_Fused_Appeal, Finding_Fused_Appeal, RecordStartScope).
+observe(Chronicle, Order_Finding_Fused_Appeal, Epoch_Current, RecordEndScope).
+observe(TemporalReview, Order_Finding_Fused_Appeal, Finding_Fused_Appeal, RecordStartScope).
+observe(TemporalReview, Order_Finding_Fused_Appeal, Epoch_Current, RecordEndScope).
+list(Restore_Fused, FusedAppealSubject, Finding_Fused_Appeal, CredibilityRestoration).
+list(Restore_Fused, RestoreCredibilityFinding, Evidence_Restore_Fused, CredibilityAppealPurposeEvidence).
+judge(OneAppealActor, Restore_Fused).
+judge(OneAppealActor, Restore_Fused).
+authorized(OneAppealActor, CredibilityAppellateDisposition, Restore_Fused).
+authorized(OneAppealActor, IndependentCredibilityAppealReview, Restore_Fused).
+observe(OneAppealActor, Restore_Fused, FusedAppealSubject, CredibilityAppealSubjectScope).
+observe(OneAppealActor, Restore_Fused, Finding_Fused_Appeal, CredibilityAppealFindingScope).
+observe(OneAppealActor, Restore_Fused, RestoreCredibilityFinding, CredibilityAppealPurposeScope).
+observe(OneAppealActor, Restore_Fused, Evidence_Restore_Fused, CredibilityAppealEvidenceScope).
+observe(OneAppealActor, Restore_Fused, NoticeEvidenceAccessHearingAndReasons, CredibilityAppealProcedureScope).
+observe(OneAppealActor, Restore_Fused, FusedAppealSubject, CredibilityAppealSubjectScope).
+observe(OneAppealActor, Restore_Fused, Finding_Fused_Appeal, CredibilityAppealFindingScope).
+observe(OneAppealActor, Restore_Fused, RestoreCredibilityFinding, CredibilityAppealPurposeScope).
+observe(OneAppealActor, Restore_Fused, Evidence_Restore_Fused, CredibilityAppealEvidenceScope).
+observe(OneAppealActor, Restore_Fused, NoticeEvidenceAccessHearingAndReasons, CredibilityAppealProcedureScope).
+observe(Chronicle, Restore_Fused, OneAppealActor, CredibilityAppealActorEligibleAtDecisionScope).
+observe(TemporalReview, Restore_Fused, OneAppealActor, CredibilityAppealActorEligibleAtDecisionScope).
+observe(Chronicle, Restore_Fused, OneAppealActor, CredibilityAppealReviewActorEligibleAtDecisionScope).
+observe(TemporalReview, Restore_Fused, OneAppealActor, CredibilityAppealReviewActorEligibleAtDecisionScope).
+list(Order_Before_Restore_Fused, Finding_Fused_Appeal, Restore_Fused, RecordSequence).
+observe(Chronicle, Order_Before_Restore_Fused, Finding_Fused_Appeal, RecordStartScope).
+observe(Chronicle, Order_Before_Restore_Fused, Restore_Fused, RecordEndScope).
+observe(TemporalReview, Order_Before_Restore_Fused, Finding_Fused_Appeal, RecordStartScope).
+observe(TemporalReview, Order_Before_Restore_Fused, Restore_Fused, RecordEndScope).
+list(Order_After_Restore_Fused, Restore_Fused, Epoch_Current, RecordSequence).
+observe(Chronicle, Order_After_Restore_Fused, Restore_Fused, RecordStartScope).
+observe(Chronicle, Order_After_Restore_Fused, Epoch_Current, RecordEndScope).
+observe(TemporalReview, Order_After_Restore_Fused, Restore_Fused, RecordStartScope).
+observe(TemporalReview, Order_After_Restore_Fused, Epoch_Current, RecordEndScope).
+? responsible(Restore_Fused, CredibilityRestoration).
+# => FALSE
+? false(FusedAppealSubject).
+# => TRUE
+list(Restore_Separated, FusedAppealSubject, Finding_Fused_Appeal, CredibilityRestoration).
+list(Restore_Separated, RestoreCredibilityFinding, Evidence_Restore_Separated, CredibilityAppealPurposeEvidence).
+judge(OneAppealActor, Restore_Separated).
+judge(OtherAppealActor, Restore_Separated).
+authorized(OneAppealActor, CredibilityAppellateDisposition, Restore_Separated).
+authorized(OtherAppealActor, IndependentCredibilityAppealReview, Restore_Separated).
+observe(OneAppealActor, Restore_Separated, FusedAppealSubject, CredibilityAppealSubjectScope).
+observe(OneAppealActor, Restore_Separated, Finding_Fused_Appeal, CredibilityAppealFindingScope).
+observe(OneAppealActor, Restore_Separated, RestoreCredibilityFinding, CredibilityAppealPurposeScope).
+observe(OneAppealActor, Restore_Separated, Evidence_Restore_Separated, CredibilityAppealEvidenceScope).
+observe(OneAppealActor, Restore_Separated, NoticeEvidenceAccessHearingAndReasons, CredibilityAppealProcedureScope).
+observe(OtherAppealActor, Restore_Separated, FusedAppealSubject, CredibilityAppealSubjectScope).
+observe(OtherAppealActor, Restore_Separated, Finding_Fused_Appeal, CredibilityAppealFindingScope).
+observe(OtherAppealActor, Restore_Separated, RestoreCredibilityFinding, CredibilityAppealPurposeScope).
+observe(OtherAppealActor, Restore_Separated, Evidence_Restore_Separated, CredibilityAppealEvidenceScope).
+observe(OtherAppealActor, Restore_Separated, NoticeEvidenceAccessHearingAndReasons, CredibilityAppealProcedureScope).
+observe(Chronicle, Restore_Separated, OneAppealActor, CredibilityAppealActorEligibleAtDecisionScope).
+observe(TemporalReview, Restore_Separated, OneAppealActor, CredibilityAppealActorEligibleAtDecisionScope).
+observe(Chronicle, Restore_Separated, OtherAppealActor, CredibilityAppealReviewActorEligibleAtDecisionScope).
+observe(TemporalReview, Restore_Separated, OtherAppealActor, CredibilityAppealReviewActorEligibleAtDecisionScope).
+list(Order_Before_Restore_Separated, Finding_Fused_Appeal, Restore_Separated, RecordSequence).
+observe(Chronicle, Order_Before_Restore_Separated, Finding_Fused_Appeal, RecordStartScope).
+observe(Chronicle, Order_Before_Restore_Separated, Restore_Separated, RecordEndScope).
+observe(TemporalReview, Order_Before_Restore_Separated, Finding_Fused_Appeal, RecordStartScope).
+observe(TemporalReview, Order_Before_Restore_Separated, Restore_Separated, RecordEndScope).
+list(Order_After_Restore_Separated, Restore_Separated, Epoch_Current, RecordSequence).
+observe(Chronicle, Order_After_Restore_Separated, Restore_Separated, RecordStartScope).
+observe(Chronicle, Order_After_Restore_Separated, Epoch_Current, RecordEndScope).
+observe(TemporalReview, Order_After_Restore_Separated, Restore_Separated, RecordStartScope).
+observe(TemporalReview, Order_After_Restore_Separated, Epoch_Current, RecordEndScope).
+? responsible(Restore_Separated, CredibilityRestoration).
+# => TRUE
+? false(FusedAppealSubject).
+# => FALSE

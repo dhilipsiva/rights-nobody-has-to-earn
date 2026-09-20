@@ -25,3 +25,114 @@ observe(Chronicle, TA_Stale_Case, Epoch_Previous, RenewalScope).
 observe(TemporalReview, TA_Stale_Case, Epoch_Previous, RenewalScope).
 endorses(Electorate, TA_Stale_Case).
 endorses(TemporalReview, TA_Stale_Case).
+
+# The original scenario now supplies qualified fictional merits, signed
+# harm findings, placement and intake. Its original missing/conflicting
+# temporal premises and every original query remain independently tested.
+list(TA_Stale_Case, TA_Stale_Subject, Incident_TA_Stale_Case, CustodyMatter).
+list(TA_Stale_Case, PublicInjuryOffence, Evidence_TA_Stale_Case, CustodyOffenceEvidence).
+list(TA_Stale_Case, TA_Stale_Victim, Prosecution, CustodyParties).
+list(TA_Stale_Case, Court, CustodyMeritsReview, CustodyDecisionActors).
+judge(Court, TA_Stale_Case).
+judge(CustodyMeritsReview, TA_Stale_Case).
+authorized(Court, CustodyTrialAdjudicator, TA_Stale_Case).
+authorized(CustodyMeritsReview, IndependentCustodyMeritsReviewer, TA_Stale_Case).
+observe(Court, TA_Stale_Case, TA_Stale_Subject, CustodySubjectScope).
+observe(CustodyMeritsReview, TA_Stale_Case, TA_Stale_Subject, CustodySubjectScope).
+observe(Court, TA_Stale_Case, Incident_TA_Stale_Case, CustodyIncidentScope).
+observe(CustodyMeritsReview, TA_Stale_Case, Incident_TA_Stale_Case, CustodyIncidentScope).
+observe(Court, TA_Stale_Case, PublicInjuryOffence, CustodyOffenceScope).
+observe(CustodyMeritsReview, TA_Stale_Case, PublicInjuryOffence, CustodyOffenceScope).
+observe(Court, TA_Stale_Case, Evidence_TA_Stale_Case, CustodyEvidenceScope).
+observe(CustodyMeritsReview, TA_Stale_Case, Evidence_TA_Stale_Case, CustodyEvidenceScope).
+observe(Court, TA_Stale_Case, TA_Stale_Victim, CustodyVictimScope).
+observe(CustodyMeritsReview, TA_Stale_Case, TA_Stale_Victim, CustodyVictimScope).
+observe(Court, TA_Stale_Case, Prosecution, CustodyProsecutorScope).
+observe(CustodyMeritsReview, TA_Stale_Case, Prosecution, CustodyProsecutorScope).
+observe(Court, TA_Stale_Case, PublicLawInForceBeforeTheAct, CustodyPriorLawScope).
+observe(CustodyMeritsReview, TA_Stale_Case, PublicLawInForceBeforeTheAct, CustodyPriorLawScope).
+observe(Court, TA_Stale_Case, IdentityActCausationAndRequiredMentalElementProvedBeyondReasonableDoubt, CustodyProofScope).
+observe(CustodyMeritsReview, TA_Stale_Case, IdentityActCausationAndRequiredMentalElementProvedBeyondReasonableDoubt, CustodyProofScope).
+observe(Court, TA_Stale_Case, NoPunishmentForStatusOrProtectedConduct, CustodyConductScope).
+observe(CustodyMeritsReview, TA_Stale_Case, NoPunishmentForStatusOrProtectedConduct, CustodyConductScope).
+observe(Court, TA_Stale_Case, AdmissibleDisclosedEvidenceNoCoercionOrDecisiveSecretEvidence, CustodyAdmissibilityScope).
+observe(CustodyMeritsReview, TA_Stale_Case, AdmissibleDisclosedEvidenceNoCoercionOrDecisiveSecretEvidence, CustodyAdmissibilityScope).
+observe(Court, TA_Stale_Case, NoticeCounselAccessibleHearingAndPublicReasons, CustodyProcedureScope).
+observe(CustodyMeritsReview, TA_Stale_Case, NoticeCounselAccessibleHearingAndPublicReasons, CustodyProcedureScope).
+observe(Court, TA_Stale_Case, IndependentlyAdjudicatedDefencesAndExculpatoryEvidence, CustodyDefencesScope).
+observe(CustodyMeritsReview, TA_Stale_Case, IndependentlyAdjudicatedDefencesAndExculpatoryEvidence, CustodyDefencesScope).
+observe(Court, TA_Stale_Case, IndividualNecessaryProportionateLeastRestrictiveCustodialSentence, CustodySentenceScope).
+observe(CustodyMeritsReview, TA_Stale_Case, IndividualNecessaryProportionateLeastRestrictiveCustodialSentence, CustodySentenceScope).
+observe(Court, TA_Stale_Case, NoDoubleJeopardyOrUnexpiredBar, CustodyFinalityScope).
+observe(CustodyMeritsReview, TA_Stale_Case, NoDoubleJeopardyOrUnexpiredBar, CustodyFinalityScope).
+observe(Chronicle, TA_Stale_Case, Court, CustodyTrialActorEligibleAtDecisionScope).
+observe(TemporalReview, TA_Stale_Case, Court, CustodyTrialActorEligibleAtDecisionScope).
+observe(Chronicle, TA_Stale_Case, CustodyMeritsReview, CustodyMeritsReviewerEligibleAtDecisionScope).
+observe(TemporalReview, TA_Stale_Case, CustodyMeritsReview, CustodyMeritsReviewerEligibleAtDecisionScope).
+list(Merits_Order_TA_Stale_Case, TA_Stale_Case, Epoch_Current, RecordSequence).
+observe(Chronicle, Merits_Order_TA_Stale_Case, TA_Stale_Case, RecordStartScope).
+observe(Chronicle, Merits_Order_TA_Stale_Case, Epoch_Current, RecordEndScope).
+observe(TemporalReview, Merits_Order_TA_Stale_Case, TA_Stale_Case, RecordStartScope).
+observe(TemporalReview, Merits_Order_TA_Stale_Case, Epoch_Current, RecordEndScope).
+list(Severity_TA_Stale_Subject_InjuryToPerson_TA_Stale_Victim, TA_Stale_Subject, TA_Stale_Case, CustodySeverityFinding).
+list(Severity_TA_Stale_Subject_InjuryToPerson_TA_Stale_Victim, InjuryToPerson, Evidence_Severity_TA_Stale_Subject_InjuryToPerson_TA_Stale_Victim, CustodySeverityDimensionEvidence).
+list(Severity_TA_Stale_Subject_InjuryToPerson_TA_Stale_Victim, TA_Stale_Victim, Incident_TA_Stale_Case, CustodySeverityVictimIncident).
+authorized(Court, CustodySeverityAdjudicator, Severity_TA_Stale_Subject_InjuryToPerson_TA_Stale_Victim).
+authorized(CustodyMeritsReview, IndependentSeverityReviewer, Severity_TA_Stale_Subject_InjuryToPerson_TA_Stale_Victim).
+observe(Court, Severity_TA_Stale_Subject_InjuryToPerson_TA_Stale_Victim, TA_Stale_Case, SeverityCaseScope).
+observe(CustodyMeritsReview, Severity_TA_Stale_Subject_InjuryToPerson_TA_Stale_Victim, TA_Stale_Case, SeverityCaseScope).
+observe(Court, Severity_TA_Stale_Subject_InjuryToPerson_TA_Stale_Victim, TA_Stale_Subject, SeveritySubjectScope).
+observe(CustodyMeritsReview, Severity_TA_Stale_Subject_InjuryToPerson_TA_Stale_Victim, TA_Stale_Subject, SeveritySubjectScope).
+observe(Court, Severity_TA_Stale_Subject_InjuryToPerson_TA_Stale_Victim, Incident_TA_Stale_Case, SeverityIncidentScope).
+observe(CustodyMeritsReview, Severity_TA_Stale_Subject_InjuryToPerson_TA_Stale_Victim, Incident_TA_Stale_Case, SeverityIncidentScope).
+observe(Court, Severity_TA_Stale_Subject_InjuryToPerson_TA_Stale_Victim, TA_Stale_Victim, SeverityVictimScope).
+observe(CustodyMeritsReview, Severity_TA_Stale_Subject_InjuryToPerson_TA_Stale_Victim, TA_Stale_Victim, SeverityVictimScope).
+observe(Court, Severity_TA_Stale_Subject_InjuryToPerson_TA_Stale_Victim, InjuryToPerson, SeverityDimensionScope).
+observe(CustodyMeritsReview, Severity_TA_Stale_Subject_InjuryToPerson_TA_Stale_Victim, InjuryToPerson, SeverityDimensionScope).
+observe(Court, Severity_TA_Stale_Subject_InjuryToPerson_TA_Stale_Victim, Evidence_Severity_TA_Stale_Subject_InjuryToPerson_TA_Stale_Victim, SeverityEvidenceScope).
+observe(CustodyMeritsReview, Severity_TA_Stale_Subject_InjuryToPerson_TA_Stale_Victim, Evidence_Severity_TA_Stale_Subject_InjuryToPerson_TA_Stale_Victim, SeverityEvidenceScope).
+observe(Court, Severity_TA_Stale_Subject_InjuryToPerson_TA_Stale_Victim, AdjudicatedHarmAndMentalElementWithNoticeCounselChallengeAndReasons, SeverityProcedureScope).
+observe(CustodyMeritsReview, Severity_TA_Stale_Subject_InjuryToPerson_TA_Stale_Victim, AdjudicatedHarmAndMentalElementWithNoticeCounselChallengeAndReasons, SeverityProcedureScope).
+list(Placement_TA_Stale_Case, TA_Stale_Subject, TA_Stale_Case, CustodyPlacement).
+list(Placement_TA_Stale_Case, Place_TA_Stale_Subject, SupportedResidence, CustodyPlaceKind).
+list(Placement_TA_Stale_Case, TA_Stale_Case, Window_Custody, CustodyPlacementPeriod).
+authorized(State, CustodyPlacementAuthority, Placement_TA_Stale_Case).
+authorized(PlacementReview, IndependentPlacementReviewer, Placement_TA_Stale_Case).
+observe(State, Placement_TA_Stale_Case, TA_Stale_Subject, CustodyPlacementSubjectScope).
+observe(PlacementReview, Placement_TA_Stale_Case, TA_Stale_Subject, CustodyPlacementSubjectScope).
+observe(State, Placement_TA_Stale_Case, TA_Stale_Case, CustodyPlacementCaseScope).
+observe(PlacementReview, Placement_TA_Stale_Case, TA_Stale_Case, CustodyPlacementCaseScope).
+observe(State, Placement_TA_Stale_Case, Place_TA_Stale_Subject, CustodyPlacementPlaceScope).
+observe(PlacementReview, Placement_TA_Stale_Case, Place_TA_Stale_Subject, CustodyPlacementPlaceScope).
+observe(State, Placement_TA_Stale_Case, SupportedResidence, CustodyPlacementKindScope).
+observe(PlacementReview, Placement_TA_Stale_Case, SupportedResidence, CustodyPlacementKindScope).
+observe(State, Placement_TA_Stale_Case, TA_Stale_Case, CustodyPlacementLeaseScope).
+observe(PlacementReview, Placement_TA_Stale_Case, TA_Stale_Case, CustodyPlacementLeaseScope).
+observe(State, Placement_TA_Stale_Case, Window_Custody, CustodyPlacementWindowScope).
+observe(PlacementReview, Placement_TA_Stale_Case, Window_Custody, CustodyPlacementWindowScope).
+observe(State, Placement_TA_Stale_Case, Epoch_Previous, CustodyPlacementEpochScope).
+observe(PlacementReview, Placement_TA_Stale_Case, Epoch_Previous, CustodyPlacementEpochScope).
+observe(State, Placement_TA_Stale_Case, PositiveAccessibleAvailableConsentingPlaceAndIndividualLawfulConditions, CustodyPlacementAvailabilityScope).
+observe(PlacementReview, Placement_TA_Stale_Case, PositiveAccessibleAvailableConsentingPlaceAndIndividualLawfulConditions, CustodyPlacementAvailabilityScope).
+observe(State, Placement_TA_Stale_Case, NoticeCounselReasonsIndependentInspectionAndAccessibleChallenge, CustodyPlacementProcedureScope).
+observe(PlacementReview, Placement_TA_Stale_Case, NoticeCounselReasonsIndependentInspectionAndAccessibleChallenge, CustodyPlacementProcedureScope).
+observe(State, Placement_TA_Stale_Case, IndividuallyNecessaryLeastRestrictivePlacementAndContinuity, CustodyPlacementNecessityScope).
+observe(PlacementReview, Placement_TA_Stale_Case, IndividuallyNecessaryLeastRestrictivePlacementAndContinuity, CustodyPlacementNecessityScope).
+observe(State, Placement_TA_Stale_Case, NoSuitableConsentingHomeAvailableAndOrdinarySupportedResidenceSecured, CustodyPlacementAlternativeScope).
+observe(PlacementReview, Placement_TA_Stale_Case, NoSuitableConsentingHomeAvailableAndOrdinarySupportedResidenceSecured, CustodyPlacementAlternativeScope).
+authorized(CustodyIntake, CustodyIntakeAuthority, TA_Stale_Case).
+authorized(CustodyIntakeAudit, IndependentCustodyIntakeAuditor, TA_Stale_Case).
+observe(CustodyIntake, TA_Stale_Case, TA_Stale_Subject, CustodyIntakeSubjectScope).
+observe(CustodyIntakeAudit, TA_Stale_Case, TA_Stale_Subject, CustodyIntakeSubjectScope).
+observe(CustodyIntake, TA_Stale_Case, TA_Stale_Case, CustodyIntakeCaseScope).
+observe(CustodyIntakeAudit, TA_Stale_Case, TA_Stale_Case, CustodyIntakeCaseScope).
+observe(CustodyIntake, TA_Stale_Case, Epoch_Previous, CustodyIntakeEpochScope).
+observe(CustodyIntakeAudit, TA_Stale_Case, Epoch_Previous, CustodyIntakeEpochScope).
+observe(CustodyIntake, TA_Stale_Case, Window_Custody, CustodyIntakeWindowScope).
+observe(CustodyIntakeAudit, TA_Stale_Case, Window_Custody, CustodyIntakeWindowScope).
+observe(CustodyIntake, TA_Stale_Case, AccessiblePrimaryAndIndependentAlternateWithConfidentialCounselAndRetainedCopies, CustodyIntakeAccessScope).
+observe(CustodyIntakeAudit, TA_Stale_Case, AccessiblePrimaryAndIndependentAlternateWithConfidentialCounselAndRetainedCopies, CustodyIntakeAccessScope).
+observe(CustodyIntake, TA_Stale_Case, ReconciledPrimaryAlternateAndSubjectHeldFilingsBeforeEachRenewal, CustodyIntakeReconciliationScope).
+observe(CustodyIntakeAudit, TA_Stale_Case, ReconciledPrimaryAlternateAndSubjectHeldFilingsBeforeEachRenewal, CustodyIntakeReconciliationScope).
+observe(CustodyIntake, TA_Stale_Case, NoHolderPermissionNoRetaliationAndImmediateSuspensionOnFiling, CustodyIntakeProtectionScope).
+observe(CustodyIntakeAudit, TA_Stale_Case, NoHolderPermissionNoRetaliationAndImmediateSuspensionOnFiling, CustodyIntakeProtectionScope).

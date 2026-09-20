@@ -1,0 +1,8 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+# A proposal record reuses a person's name. It supplies no adverse personal finding.
+suggest(Assembly, Jala).
+ratifies(Electorate, Jala).
+adjust(Jala, Art_Floor).
+work(Jala, ProposalSeparationWork).
+suggest(Assembly, Amend_Sneak).
+ratifies(Electorate, Amend_Sneak).

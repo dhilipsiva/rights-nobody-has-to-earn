@@ -1,0 +1,93 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 6
+? prisoner(ReliefSentenceSatisfied).
+# => TRUE
+list(Order_ReliefSentenceSatisfied, ReliefSentenceSatisfied, Case_ReliefSentenceSatisfied, CustodyRelief).
+list(Order_ReliefSentenceSatisfied, SentenceSatisfied, Evidence_Order_ReliefSentenceSatisfied, CustodyReliefGroundEvidence).
+judge(Appeals, Order_ReliefSentenceSatisfied).
+judge(CustodyAppealReview, Order_ReliefSentenceSatisfied).
+authorized(Appeals, CustodyAppellateAuthority, Order_ReliefSentenceSatisfied).
+authorized(CustodyAppealReview, IndependentCustodyDispositionReviewer, Order_ReliefSentenceSatisfied).
+observe(Appeals, Order_ReliefSentenceSatisfied, ReliefSentenceSatisfied, CustodyReliefSubjectScope).
+observe(CustodyAppealReview, Order_ReliefSentenceSatisfied, ReliefSentenceSatisfied, CustodyReliefSubjectScope).
+observe(Appeals, Order_ReliefSentenceSatisfied, Case_ReliefSentenceSatisfied, CustodyReliefCaseScope).
+observe(CustodyAppealReview, Order_ReliefSentenceSatisfied, Case_ReliefSentenceSatisfied, CustodyReliefCaseScope).
+observe(Appeals, Order_ReliefSentenceSatisfied, Incident_Case_ReliefSentenceSatisfied, CustodyReliefIncidentScope).
+observe(CustodyAppealReview, Order_ReliefSentenceSatisfied, Incident_Case_ReliefSentenceSatisfied, CustodyReliefIncidentScope).
+observe(Appeals, Order_ReliefSentenceSatisfied, PublicInjuryOffence, CustodyReliefOffenceScope).
+observe(CustodyAppealReview, Order_ReliefSentenceSatisfied, PublicInjuryOffence, CustodyReliefOffenceScope).
+observe(Appeals, Order_ReliefSentenceSatisfied, SentenceSatisfied, CustodyReliefGroundScope).
+observe(CustodyAppealReview, Order_ReliefSentenceSatisfied, SentenceSatisfied, CustodyReliefGroundScope).
+observe(Appeals, Order_ReliefSentenceSatisfied, Evidence_Order_ReliefSentenceSatisfied, CustodyReliefEvidenceScope).
+observe(CustodyAppealReview, Order_ReliefSentenceSatisfied, Evidence_Order_ReliefSentenceSatisfied, CustodyReliefEvidenceScope).
+observe(Appeals, Order_ReliefSentenceSatisfied, NoticeCounselEvidenceAccessHearingAndReasons, CustodyReliefProcedureScope).
+observe(CustodyAppealReview, Order_ReliefSentenceSatisfied, NoticeCounselEvidenceAccessHearingAndReasons, CustodyReliefProcedureScope).
+observe(Chronicle, Order_ReliefSentenceSatisfied, Appeals, CustodyAppealActorEligibleAtDecisionScope).
+observe(TemporalReview, Order_ReliefSentenceSatisfied, Appeals, CustodyAppealActorEligibleAtDecisionScope).
+observe(Chronicle, Order_ReliefSentenceSatisfied, CustodyAppealReview, CustodyDispositionReviewerEligibleAtDecisionScope).
+observe(TemporalReview, Order_ReliefSentenceSatisfied, CustodyAppealReview, CustodyDispositionReviewerEligibleAtDecisionScope).
+list(Relief_Start_Order_ReliefSentenceSatisfied, Case_ReliefSentenceSatisfied, Order_ReliefSentenceSatisfied, RecordSequence).
+observe(Chronicle, Relief_Start_Order_ReliefSentenceSatisfied, Case_ReliefSentenceSatisfied, RecordStartScope).
+observe(Chronicle, Relief_Start_Order_ReliefSentenceSatisfied, Order_ReliefSentenceSatisfied, RecordEndScope).
+observe(TemporalReview, Relief_Start_Order_ReliefSentenceSatisfied, Case_ReliefSentenceSatisfied, RecordStartScope).
+observe(TemporalReview, Relief_Start_Order_ReliefSentenceSatisfied, Order_ReliefSentenceSatisfied, RecordEndScope).
+list(Relief_End_Order_ReliefSentenceSatisfied, Order_ReliefSentenceSatisfied, Epoch_Current, RecordSequence).
+observe(Chronicle, Relief_End_Order_ReliefSentenceSatisfied, Order_ReliefSentenceSatisfied, RecordStartScope).
+observe(Chronicle, Relief_End_Order_ReliefSentenceSatisfied, Epoch_Current, RecordEndScope).
+observe(TemporalReview, Relief_End_Order_ReliefSentenceSatisfied, Order_ReliefSentenceSatisfied, RecordStartScope).
+observe(TemporalReview, Relief_End_Order_ReliefSentenceSatisfied, Epoch_Current, RecordEndScope).
+? responsible(Order_ReliefSentenceSatisfied, CustodyRelief).
+# => TRUE
+? prisoner(ReliefSentenceSatisfied).
+# => FALSE
+? travel(ReliefSentenceSatisfied).
+# => TRUE
+? prisoner(Hano).
+# => TRUE
+list(Alias_ReliefSentenceSatisfied, ReliefSentenceSatisfied, Incident_Case_ReliefSentenceSatisfied, CustodyMatter).
+list(Alias_ReliefSentenceSatisfied, PublicInjuryOffence, Evidence_Alias_ReliefSentenceSatisfied, CustodyOffenceEvidence).
+list(Alias_ReliefSentenceSatisfied, Ivo, Prosecution, CustodyParties).
+list(Alias_ReliefSentenceSatisfied, Court, CustodyMeritsReview, CustodyDecisionActors).
+judge(Court, Alias_ReliefSentenceSatisfied).
+judge(CustodyMeritsReview, Alias_ReliefSentenceSatisfied).
+authorized(Court, CustodyTrialAdjudicator, Alias_ReliefSentenceSatisfied).
+authorized(CustodyMeritsReview, IndependentCustodyMeritsReviewer, Alias_ReliefSentenceSatisfied).
+observe(Court, Alias_ReliefSentenceSatisfied, ReliefSentenceSatisfied, CustodySubjectScope).
+observe(CustodyMeritsReview, Alias_ReliefSentenceSatisfied, ReliefSentenceSatisfied, CustodySubjectScope).
+observe(Court, Alias_ReliefSentenceSatisfied, Incident_Case_ReliefSentenceSatisfied, CustodyIncidentScope).
+observe(CustodyMeritsReview, Alias_ReliefSentenceSatisfied, Incident_Case_ReliefSentenceSatisfied, CustodyIncidentScope).
+observe(Court, Alias_ReliefSentenceSatisfied, PublicInjuryOffence, CustodyOffenceScope).
+observe(CustodyMeritsReview, Alias_ReliefSentenceSatisfied, PublicInjuryOffence, CustodyOffenceScope).
+observe(Court, Alias_ReliefSentenceSatisfied, Evidence_Alias_ReliefSentenceSatisfied, CustodyEvidenceScope).
+observe(CustodyMeritsReview, Alias_ReliefSentenceSatisfied, Evidence_Alias_ReliefSentenceSatisfied, CustodyEvidenceScope).
+observe(Court, Alias_ReliefSentenceSatisfied, Ivo, CustodyVictimScope).
+observe(CustodyMeritsReview, Alias_ReliefSentenceSatisfied, Ivo, CustodyVictimScope).
+observe(Court, Alias_ReliefSentenceSatisfied, Prosecution, CustodyProsecutorScope).
+observe(CustodyMeritsReview, Alias_ReliefSentenceSatisfied, Prosecution, CustodyProsecutorScope).
+observe(Court, Alias_ReliefSentenceSatisfied, PublicLawInForceBeforeTheAct, CustodyPriorLawScope).
+observe(CustodyMeritsReview, Alias_ReliefSentenceSatisfied, PublicLawInForceBeforeTheAct, CustodyPriorLawScope).
+observe(Court, Alias_ReliefSentenceSatisfied, IdentityActCausationAndRequiredMentalElementProvedBeyondReasonableDoubt, CustodyProofScope).
+observe(CustodyMeritsReview, Alias_ReliefSentenceSatisfied, IdentityActCausationAndRequiredMentalElementProvedBeyondReasonableDoubt, CustodyProofScope).
+observe(Court, Alias_ReliefSentenceSatisfied, NoPunishmentForStatusOrProtectedConduct, CustodyConductScope).
+observe(CustodyMeritsReview, Alias_ReliefSentenceSatisfied, NoPunishmentForStatusOrProtectedConduct, CustodyConductScope).
+observe(Court, Alias_ReliefSentenceSatisfied, AdmissibleDisclosedEvidenceNoCoercionOrDecisiveSecretEvidence, CustodyAdmissibilityScope).
+observe(CustodyMeritsReview, Alias_ReliefSentenceSatisfied, AdmissibleDisclosedEvidenceNoCoercionOrDecisiveSecretEvidence, CustodyAdmissibilityScope).
+observe(Court, Alias_ReliefSentenceSatisfied, NoticeCounselAccessibleHearingAndPublicReasons, CustodyProcedureScope).
+observe(CustodyMeritsReview, Alias_ReliefSentenceSatisfied, NoticeCounselAccessibleHearingAndPublicReasons, CustodyProcedureScope).
+observe(Court, Alias_ReliefSentenceSatisfied, IndependentlyAdjudicatedDefencesAndExculpatoryEvidence, CustodyDefencesScope).
+observe(CustodyMeritsReview, Alias_ReliefSentenceSatisfied, IndependentlyAdjudicatedDefencesAndExculpatoryEvidence, CustodyDefencesScope).
+observe(Court, Alias_ReliefSentenceSatisfied, IndividualNecessaryProportionateLeastRestrictiveCustodialSentence, CustodySentenceScope).
+observe(CustodyMeritsReview, Alias_ReliefSentenceSatisfied, IndividualNecessaryProportionateLeastRestrictiveCustodialSentence, CustodySentenceScope).
+observe(Court, Alias_ReliefSentenceSatisfied, NoDoubleJeopardyOrUnexpiredBar, CustodyFinalityScope).
+observe(CustodyMeritsReview, Alias_ReliefSentenceSatisfied, NoDoubleJeopardyOrUnexpiredBar, CustodyFinalityScope).
+observe(Chronicle, Alias_ReliefSentenceSatisfied, Court, CustodyTrialActorEligibleAtDecisionScope).
+observe(TemporalReview, Alias_ReliefSentenceSatisfied, Court, CustodyTrialActorEligibleAtDecisionScope).
+observe(Chronicle, Alias_ReliefSentenceSatisfied, CustodyMeritsReview, CustodyMeritsReviewerEligibleAtDecisionScope).
+observe(TemporalReview, Alias_ReliefSentenceSatisfied, CustodyMeritsReview, CustodyMeritsReviewerEligibleAtDecisionScope).
+list(Merits_Order_Alias_ReliefSentenceSatisfied, Alias_ReliefSentenceSatisfied, Epoch_Current, RecordSequence).
+observe(Chronicle, Merits_Order_Alias_ReliefSentenceSatisfied, Alias_ReliefSentenceSatisfied, RecordStartScope).
+observe(Chronicle, Merits_Order_Alias_ReliefSentenceSatisfied, Epoch_Current, RecordEndScope).
+observe(TemporalReview, Merits_Order_Alias_ReliefSentenceSatisfied, Alias_ReliefSentenceSatisfied, RecordStartScope).
+observe(TemporalReview, Merits_Order_Alias_ReliefSentenceSatisfied, Epoch_Current, RecordEndScope).
+? clean(Alias_ReliefSentenceSatisfied, CustodyConfinementBar).
+# => TRUE

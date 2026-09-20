@@ -23,12 +23,13 @@ A direct attempt to write a Review credential for Sock is refused. The
 credential is conclusion-only: its premises must be supplied and its rule
 satisfied. Refusal of the conclusion is not authentication of those premises.
 
-Even credentialed signers need affirmative independence entries for the
-subject and must cite the same recognised adverse ground. An empty kinship
-field proves no independence, an entry for another subject cannot be borrowed,
-and different ground kinds do not combine merely because two people signed
-them. These entries do not identify a separate incident; the next account of
-voiding examines that limit.
+Even credentialed signers need affirmative independence authority for the
+particular case. The subject, incident, recognised adverse ground and evidence
+must match. An empty kinship field proves no independence, an entry for another
+case cannot be borrowed, and different ground kinds do not combine merely
+because two people signed them. Permission to make a new finding also checks
+current credibility and the represented family conflicts. The next account of
+voiding distinguishes that permission from a completed judgment.
 
 Two issuing routes and separate independence entries divide the premises an
 attacker would need to control. A forged seating alone does not produce a
@@ -69,51 +70,47 @@ The counterfactual adds a rule granting a credential from an electorate seating
 alone. Boss and Vex then receive it despite the recall and carried void. An
 extra route can bypass conditions even while the full rule remains intact.
 
-The signing rule repeats the checks for recall and matched carried void. In
-that counterfactual they still prevent Boss and Vex from completing the paired
-attack. It does not repeat the positive clear-history condition, so the result
-cannot establish that every defect in credential issuance is caught again at
-signing. The control establishes what the repeated recall and carried-void
-checks prevent.
+The prospective signing rule has its own checks for recall, matched carried
+restriction and current credibility. Vex and Wren still cannot qualify their
+finding against Tyr. A second counterfactual removes those checks as well as
+bypassing the appointment guards; the proposed finding then qualifies. Even
+there, permission alone does not manufacture a completed judgment. These
+controls establish the work done by the particular guards. They do not prove
+that every defect in appointment is caught again at signing.
 
-Forgiveness tests a different boundary. An Appeals judgment and forgiveness
-can stop Vex's carried void from deriving, while the matched history remains.
-The credential reads that history, so neither forgiveness nor another seating
-restores it. Current voiding and a void carried into the current record are
-different premises; the credential does not read the current `false` conclusion.
-The distinction permits some consequences to change while eligibility for this
-power remains withheld. It is not a claim that Vex can never hold any office.
+Restoration tests a different boundary. A qualified appellate act can end
+Vex's particular personal finding while the carried credential restriction
+remains. That restoration, or another seating, does not clear the restriction.
+Conversely, an appointment does not override a current personal disqualification
+when a new finding is proposed. The acts need their own authority; restoring
+recognition does not automatically restore public power.
 
 ## Relief on appeal
 
-The relation used for an auditor's credential also has an Appeals use. There
-it concludes relief for a person rather than permission to examine others.
-Its formal arguments identify the body and person, without a case, purpose,
-decision or writer. Those omissions limit what the conclusion can establish.
+An auditor's credential and appellate relief are separate legal conclusions.
+Relief identifies the affected case and its subject, incident, offence, ground,
+evidence and procedure. The appellate authority and independent disposition
+reviewer must be qualified for the particular order. Neither may be a party,
+the prosecutor, the original adjudicator or the trial reviewer. Their matching
+observations and witnessed decision order must support the same act.
 
-Nia's record contains injury, a Court judgment and the other custody premises,
-but also a clearing entry and an Appeals judgment. Together the latter pair
-produces relief; no prisoner conclusion follows for Nia. Adam's test adds only
-a clearing entry, and the prisoner conclusion remains. Voss's test adds only
-an Appeals judgment beside complete custody premises, with the same result.
-Neither half alone supplies relief.
+Nia's record contains a qualified order quashing the conviction without retrial.
+Custody does not derive. Adam's raw clearing entry and a generic Appeals
+judgment supply no such order, separately or together. A judgment about
+somebody is not automatically a judgment on every case concerning them.
 
-The clearing entry names no author. The judgment names Appeals and the person,
-not the particular case or purpose. An existing generic judgment can therefore
-combine with a later clearing entry. The pair does not prove independent
-authorship or that Appeals decided this case. Raising the number of required
-facts does not by itself bind them to the same institutional act.
+Final relief follows the same person, incident and charged offence across
+case-name changes. A fresh label cannot recreate the barred confinement.
+Relief for another incident or offence does not clear this one. A finding that
+the original court lacked jurisdiction or independence stops that proceeding
+without declaring every fresh lawful proceeding impossible.
 
-Without relief, a conviction still needs every other custody premise. Missing
-relief alone confines nobody. Where those premises hold, an unrecorded remedy
-does not defeat the conclusion. The request, review and alternate routes in
-chapter 21 assign duties to address the case; they do not manufacture relief.
-A completed remedy omitted from the record remains a different problem from
-a remedy not yet granted.
-
-Both uses of the permission relation are conclusion-only. Their different
-premises and consequences must still be checked separately: a rule against
-writing the result cannot establish the adequacy of every route producing it.
+Missing relief alone confines nobody. Custody requires positive merits,
+defence, procedure, current authority and lawful placement evidence. Accessible
+challenge intake is a condition of renewal, and an unresolved filing suspends
+the case through an independent route. These safeguards distinguish permission
+to seek review, interim protection and the eventual judgment. They cannot
+establish that an outside order was honestly reported or physically obeyed.
 
 ## What this rests on
 
@@ -131,7 +128,7 @@ institutions performed those acts.
 
 An Electorate or Convocation seating in this chapter is not automatically a
 federal office or current mandate. Nor does a current public-power certificate
-silently replace the auditor's credential or its subject-bound independence
+silently replace the auditor's credential or its case-bound independence
 requirements. These boundaries locate what must be justified and verified;
 they are not a proof that all input failures are unavoidable or adequately
 controlled.

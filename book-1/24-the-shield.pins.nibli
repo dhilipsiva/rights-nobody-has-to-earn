@@ -14,13 +14,126 @@
 # is untouched. Pin a FALSE only where the KB could have said TRUE, and say in
 # the comment what would flip it.
 
-:expect-pins 47
+:expect-pins 51
 
 # DON — "Don injured Pax. Then Don exposed Pax."
+
+# The original scenario now supplies qualified fictional merits, signed
+# harm findings, placement and intake. Its original missing/conflicting
+# temporal premises and every original query remain independently tested.
+list(Case_Zeno, Zeno, Incident_Case_Zeno, CustodyMatter).
+list(Case_Zeno, PublicInjuryOffence, Evidence_Case_Zeno, CustodyOffenceEvidence).
+list(Case_Zeno, Yara, Prosecution, CustodyParties).
+list(Case_Zeno, Court, CustodyMeritsReview, CustodyDecisionActors).
+judge(Court, Case_Zeno).
+judge(CustodyMeritsReview, Case_Zeno).
+authorized(Court, CustodyTrialAdjudicator, Case_Zeno).
+authorized(CustodyMeritsReview, IndependentCustodyMeritsReviewer, Case_Zeno).
+observe(Court, Case_Zeno, Zeno, CustodySubjectScope).
+observe(CustodyMeritsReview, Case_Zeno, Zeno, CustodySubjectScope).
+observe(Court, Case_Zeno, Incident_Case_Zeno, CustodyIncidentScope).
+observe(CustodyMeritsReview, Case_Zeno, Incident_Case_Zeno, CustodyIncidentScope).
+observe(Court, Case_Zeno, PublicInjuryOffence, CustodyOffenceScope).
+observe(CustodyMeritsReview, Case_Zeno, PublicInjuryOffence, CustodyOffenceScope).
+observe(Court, Case_Zeno, Evidence_Case_Zeno, CustodyEvidenceScope).
+observe(CustodyMeritsReview, Case_Zeno, Evidence_Case_Zeno, CustodyEvidenceScope).
+observe(Court, Case_Zeno, Yara, CustodyVictimScope).
+observe(CustodyMeritsReview, Case_Zeno, Yara, CustodyVictimScope).
+observe(Court, Case_Zeno, Prosecution, CustodyProsecutorScope).
+observe(CustodyMeritsReview, Case_Zeno, Prosecution, CustodyProsecutorScope).
+observe(Court, Case_Zeno, PublicLawInForceBeforeTheAct, CustodyPriorLawScope).
+observe(CustodyMeritsReview, Case_Zeno, PublicLawInForceBeforeTheAct, CustodyPriorLawScope).
+observe(Court, Case_Zeno, IdentityActCausationAndRequiredMentalElementProvedBeyondReasonableDoubt, CustodyProofScope).
+observe(CustodyMeritsReview, Case_Zeno, IdentityActCausationAndRequiredMentalElementProvedBeyondReasonableDoubt, CustodyProofScope).
+observe(Court, Case_Zeno, NoPunishmentForStatusOrProtectedConduct, CustodyConductScope).
+observe(CustodyMeritsReview, Case_Zeno, NoPunishmentForStatusOrProtectedConduct, CustodyConductScope).
+observe(Court, Case_Zeno, AdmissibleDisclosedEvidenceNoCoercionOrDecisiveSecretEvidence, CustodyAdmissibilityScope).
+observe(CustodyMeritsReview, Case_Zeno, AdmissibleDisclosedEvidenceNoCoercionOrDecisiveSecretEvidence, CustodyAdmissibilityScope).
+observe(Court, Case_Zeno, NoticeCounselAccessibleHearingAndPublicReasons, CustodyProcedureScope).
+observe(CustodyMeritsReview, Case_Zeno, NoticeCounselAccessibleHearingAndPublicReasons, CustodyProcedureScope).
+observe(Court, Case_Zeno, IndependentlyAdjudicatedDefencesAndExculpatoryEvidence, CustodyDefencesScope).
+observe(CustodyMeritsReview, Case_Zeno, IndependentlyAdjudicatedDefencesAndExculpatoryEvidence, CustodyDefencesScope).
+observe(Court, Case_Zeno, IndividualNecessaryProportionateLeastRestrictiveCustodialSentence, CustodySentenceScope).
+observe(CustodyMeritsReview, Case_Zeno, IndividualNecessaryProportionateLeastRestrictiveCustodialSentence, CustodySentenceScope).
+observe(Court, Case_Zeno, NoDoubleJeopardyOrUnexpiredBar, CustodyFinalityScope).
+observe(CustodyMeritsReview, Case_Zeno, NoDoubleJeopardyOrUnexpiredBar, CustodyFinalityScope).
+observe(Chronicle, Case_Zeno, Court, CustodyTrialActorEligibleAtDecisionScope).
+observe(TemporalReview, Case_Zeno, Court, CustodyTrialActorEligibleAtDecisionScope).
+observe(Chronicle, Case_Zeno, CustodyMeritsReview, CustodyMeritsReviewerEligibleAtDecisionScope).
+observe(TemporalReview, Case_Zeno, CustodyMeritsReview, CustodyMeritsReviewerEligibleAtDecisionScope).
+list(Merits_Order_Case_Zeno, Case_Zeno, Epoch_Current, RecordSequence).
+observe(Chronicle, Merits_Order_Case_Zeno, Case_Zeno, RecordStartScope).
+observe(Chronicle, Merits_Order_Case_Zeno, Epoch_Current, RecordEndScope).
+observe(TemporalReview, Merits_Order_Case_Zeno, Case_Zeno, RecordStartScope).
+observe(TemporalReview, Merits_Order_Case_Zeno, Epoch_Current, RecordEndScope).
+list(Severity_Zeno_InjuryToPerson_Yara, Zeno, Case_Zeno, CustodySeverityFinding).
+list(Severity_Zeno_InjuryToPerson_Yara, InjuryToPerson, Evidence_Severity_Zeno_InjuryToPerson_Yara, CustodySeverityDimensionEvidence).
+list(Severity_Zeno_InjuryToPerson_Yara, Yara, Incident_Case_Zeno, CustodySeverityVictimIncident).
+authorized(Court, CustodySeverityAdjudicator, Severity_Zeno_InjuryToPerson_Yara).
+authorized(CustodyMeritsReview, IndependentSeverityReviewer, Severity_Zeno_InjuryToPerson_Yara).
+observe(Court, Severity_Zeno_InjuryToPerson_Yara, Case_Zeno, SeverityCaseScope).
+observe(CustodyMeritsReview, Severity_Zeno_InjuryToPerson_Yara, Case_Zeno, SeverityCaseScope).
+observe(Court, Severity_Zeno_InjuryToPerson_Yara, Zeno, SeveritySubjectScope).
+observe(CustodyMeritsReview, Severity_Zeno_InjuryToPerson_Yara, Zeno, SeveritySubjectScope).
+observe(Court, Severity_Zeno_InjuryToPerson_Yara, Incident_Case_Zeno, SeverityIncidentScope).
+observe(CustodyMeritsReview, Severity_Zeno_InjuryToPerson_Yara, Incident_Case_Zeno, SeverityIncidentScope).
+observe(Court, Severity_Zeno_InjuryToPerson_Yara, Yara, SeverityVictimScope).
+observe(CustodyMeritsReview, Severity_Zeno_InjuryToPerson_Yara, Yara, SeverityVictimScope).
+observe(Court, Severity_Zeno_InjuryToPerson_Yara, InjuryToPerson, SeverityDimensionScope).
+observe(CustodyMeritsReview, Severity_Zeno_InjuryToPerson_Yara, InjuryToPerson, SeverityDimensionScope).
+observe(Court, Severity_Zeno_InjuryToPerson_Yara, Evidence_Severity_Zeno_InjuryToPerson_Yara, SeverityEvidenceScope).
+observe(CustodyMeritsReview, Severity_Zeno_InjuryToPerson_Yara, Evidence_Severity_Zeno_InjuryToPerson_Yara, SeverityEvidenceScope).
+observe(Court, Severity_Zeno_InjuryToPerson_Yara, AdjudicatedHarmAndMentalElementWithNoticeCounselChallengeAndReasons, SeverityProcedureScope).
+observe(CustodyMeritsReview, Severity_Zeno_InjuryToPerson_Yara, AdjudicatedHarmAndMentalElementWithNoticeCounselChallengeAndReasons, SeverityProcedureScope).
+list(Placement_Case_Zeno, Zeno, Case_Zeno, CustodyPlacement).
+list(Placement_Case_Zeno, Place_Zeno, SupportedResidence, CustodyPlaceKind).
+list(Placement_Case_Zeno, Case_Zeno, Window_Custody, CustodyPlacementPeriod).
+authorized(State, CustodyPlacementAuthority, Placement_Case_Zeno).
+authorized(PlacementReview, IndependentPlacementReviewer, Placement_Case_Zeno).
+observe(State, Placement_Case_Zeno, Zeno, CustodyPlacementSubjectScope).
+observe(PlacementReview, Placement_Case_Zeno, Zeno, CustodyPlacementSubjectScope).
+observe(State, Placement_Case_Zeno, Case_Zeno, CustodyPlacementCaseScope).
+observe(PlacementReview, Placement_Case_Zeno, Case_Zeno, CustodyPlacementCaseScope).
+observe(State, Placement_Case_Zeno, Place_Zeno, CustodyPlacementPlaceScope).
+observe(PlacementReview, Placement_Case_Zeno, Place_Zeno, CustodyPlacementPlaceScope).
+observe(State, Placement_Case_Zeno, SupportedResidence, CustodyPlacementKindScope).
+observe(PlacementReview, Placement_Case_Zeno, SupportedResidence, CustodyPlacementKindScope).
+observe(State, Placement_Case_Zeno, Case_Zeno, CustodyPlacementLeaseScope).
+observe(PlacementReview, Placement_Case_Zeno, Case_Zeno, CustodyPlacementLeaseScope).
+observe(State, Placement_Case_Zeno, Window_Custody, CustodyPlacementWindowScope).
+observe(PlacementReview, Placement_Case_Zeno, Window_Custody, CustodyPlacementWindowScope).
+observe(State, Placement_Case_Zeno, Epoch_Current, CustodyPlacementEpochScope).
+observe(PlacementReview, Placement_Case_Zeno, Epoch_Current, CustodyPlacementEpochScope).
+observe(State, Placement_Case_Zeno, PositiveAccessibleAvailableConsentingPlaceAndIndividualLawfulConditions, CustodyPlacementAvailabilityScope).
+observe(PlacementReview, Placement_Case_Zeno, PositiveAccessibleAvailableConsentingPlaceAndIndividualLawfulConditions, CustodyPlacementAvailabilityScope).
+observe(State, Placement_Case_Zeno, NoticeCounselReasonsIndependentInspectionAndAccessibleChallenge, CustodyPlacementProcedureScope).
+observe(PlacementReview, Placement_Case_Zeno, NoticeCounselReasonsIndependentInspectionAndAccessibleChallenge, CustodyPlacementProcedureScope).
+observe(State, Placement_Case_Zeno, IndividuallyNecessaryLeastRestrictivePlacementAndContinuity, CustodyPlacementNecessityScope).
+observe(PlacementReview, Placement_Case_Zeno, IndividuallyNecessaryLeastRestrictivePlacementAndContinuity, CustodyPlacementNecessityScope).
+observe(State, Placement_Case_Zeno, NoSuitableConsentingHomeAvailableAndOrdinarySupportedResidenceSecured, CustodyPlacementAlternativeScope).
+observe(PlacementReview, Placement_Case_Zeno, NoSuitableConsentingHomeAvailableAndOrdinarySupportedResidenceSecured, CustodyPlacementAlternativeScope).
+authorized(CustodyIntake, CustodyIntakeAuthority, Case_Zeno).
+authorized(CustodyIntakeAudit, IndependentCustodyIntakeAuditor, Case_Zeno).
+observe(CustodyIntake, Case_Zeno, Zeno, CustodyIntakeSubjectScope).
+observe(CustodyIntakeAudit, Case_Zeno, Zeno, CustodyIntakeSubjectScope).
+observe(CustodyIntake, Case_Zeno, Case_Zeno, CustodyIntakeCaseScope).
+observe(CustodyIntakeAudit, Case_Zeno, Case_Zeno, CustodyIntakeCaseScope).
+observe(CustodyIntake, Case_Zeno, Epoch_Current, CustodyIntakeEpochScope).
+observe(CustodyIntakeAudit, Case_Zeno, Epoch_Current, CustodyIntakeEpochScope).
+observe(CustodyIntake, Case_Zeno, Window_Custody, CustodyIntakeWindowScope).
+observe(CustodyIntakeAudit, Case_Zeno, Window_Custody, CustodyIntakeWindowScope).
+observe(CustodyIntake, Case_Zeno, AccessiblePrimaryAndIndependentAlternateWithConfidentialCounselAndRetainedCopies, CustodyIntakeAccessScope).
+observe(CustodyIntakeAudit, Case_Zeno, AccessiblePrimaryAndIndependentAlternateWithConfidentialCounselAndRetainedCopies, CustodyIntakeAccessScope).
+observe(CustodyIntake, Case_Zeno, ReconciledPrimaryAlternateAndSubjectHeldFilingsBeforeEachRenewal, CustodyIntakeReconciliationScope).
+observe(CustodyIntakeAudit, Case_Zeno, ReconciledPrimaryAlternateAndSubjectHeldFilingsBeforeEachRenewal, CustodyIntakeReconciliationScope).
+observe(CustodyIntake, Case_Zeno, NoHolderPermissionNoRetaliationAndImmediateSuspensionOnFiling, CustodyIntakeProtectionScope).
+observe(CustodyIntakeAudit, Case_Zeno, NoHolderPermissionNoRetaliationAndImmediateSuspensionOnFiling, CustodyIntakeProtectionScope).
+
+
 ? injure(Don, Pax).
 # => TRUE
 
-? show(Don, Pax).
+? show(Don, Disclosure_Don_Pax, Pax).
 # => TRUE
 
 # "Pax has none." — the condition that fails
@@ -38,8 +151,11 @@
 ? injure(Sly, Pax).
 # => TRUE
 
-? show(Sly, Court).
+? show(Sly, Disclosure_Sly_Court, Court).
 # => TRUE
+
+? false(Sly, Disclosure_Sly_Court).
+# => FALSE
 
 ? authority(Court).
 # => TRUE
@@ -61,7 +177,10 @@
 # => FALSE
 
 # KEL — "Then the review body examined the exposure and found it deceitful."
-? show(Kel, Court).
+? show(Kel, Disclosure_Kel_Court, Court).
+# => TRUE
+
+? false(Kel, Disclosure_Kel_Court).
 # => TRUE
 
 ? deceive(Kel, Court).
@@ -85,7 +204,10 @@
 # The disclosed cost of scoping the shield to the exposure. If any of these six
 # flip, chapter 24's "Rex" section and the second item in "What it costs" are
 # both wrong, and so is the constitution's E1d commentary.
-? show(Rex, Court).
+? show(Rex, Disclosure_Rex_Court, Court).
+# => TRUE
+
+? false(Rex, Disclosure_Rex_Court).
 # => TRUE
 
 ? deceive(Rex, Court).
@@ -96,8 +218,11 @@
 # => TRUE
 
 # "Then Rex exposed the review body. Nobody has examined that one."
-? show(Rex, Review).
+? show(Rex, Disclosure_Rex_Review, Review).
 # => TRUE
+
+? false(Rex, Disclosure_Rex_Review).
+# => FALSE
 
 # ...and the body Rex exposed has standing, which is the other half of "a fresh
 # claim against an authority". `authority(Court)` is pinned five ways across the
@@ -114,7 +239,7 @@
 ? prisoner(Rex).
 # => FALSE
 
-# ── THE TIGHTENING THAT CANNOT BE MADE ───────────────────────────────────────
+# ── A PERSON GUARD REFUSED IN THIS REPRESENTATION ───────────────────────────────────────
 # The natural repair — shield persons only — closes a negative cycle through
 # the shield's own head (person <- prisoner, prisoner reads ~defend) and the
 # stratifier refuses it by name. The three queries after it are the hazard the
@@ -123,7 +248,7 @@
 # stop protecting. If the refusal ever stops firing, the engine's cycle
 # detection changed and Article 7's note is stale.
 :refuse reasoning /Unstratifiable/
-all $w: all $o: show($w, $o) & authority($o) & person($w) & ~deceive($w, $o) -> defend($w).
+all $w: all $o: all $incident: show($w, $incident, $o) & authority($o) & person($w) & ~false($w, $incident) -> defend($w).
 
 ? defend(Sly).
 # => TRUE
@@ -193,7 +318,7 @@ observe(ShieldAppointmentsReview, Case_Rex, Convocation, IndependentShieldReview
 ? defend(Rex).
 # => TRUE
 
-? show(Rex, Review).
+? show(Rex, Disclosure_Rex_Review, Review).
 # => TRUE
 
 # A prosecuting court cannot supply the independent case decision. Give
@@ -221,10 +346,10 @@ observe(ShieldAppointmentsReview, Case_Sly, Court, IndependentShieldReviewerScop
 
 # NAMING EVERY DECISION PARTICIPANT IS NOT A VETO. Positive eligibility and
 # the case finding remain; the disclosure remains protected in its own right.
-show(Rex, Appeals).
-show(Rex, Convocation).
-show(Rex, ShieldAppointments).
-show(Rex, ShieldAppointmentsReview).
+show(Rex, Disclosure_Rex_Appeals, Appeals).
+show(Rex, Disclosure_Rex_Convocation, Convocation).
+show(Rex, Disclosure_Rex_ShieldAppointments, ShieldAppointments).
+show(Rex, Disclosure_Rex_ShieldAppointmentsReview, ShieldAppointmentsReview).
 ? prisoner(Rex).
 # => TRUE
 ? defend(Rex).
@@ -277,7 +402,7 @@ endorses(TemporalReview, Case_Zeno).
 ? prisoner(Zeno).
 # => TRUE
 
-show(Zeno, Boss).
+show(Zeno, Disclosure_Zeno_Boss, Boss).
 
 ? prisoner(Zeno).
 # => FALSE

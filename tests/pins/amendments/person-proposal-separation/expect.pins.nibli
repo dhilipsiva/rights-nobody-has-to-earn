@@ -1,0 +1,16 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 7
+? person(Jala).
+# => TRUE
+? reward(Jala).
+# => TRUE
+? false(Jala).
+# => FALSE
+? lose(Points, Jala).
+# => FALSE
+? become(Jala, Law).
+# => FALSE
+? become(Amend_Sneak, Law).
+# => FALSE
+? become(Amend_Mint, Law).
+# => FALSE

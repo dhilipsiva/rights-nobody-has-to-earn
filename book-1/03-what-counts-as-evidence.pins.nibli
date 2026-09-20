@@ -158,20 +158,8 @@ dangerous(Adam).
 ? prisoner(Hano).
 # => TRUE
 
-# 1.6c THE LIST HOLDS FINDINGS, NOT ONLY THINGS THAT HAPPENED. Two writes, each
-# a conclusion somebody had to reach before it could be written, and each one
-# reaching a verdict the record refuses to be handed directly. These pin the
-# chapter's concession; if either pair stops flipping, the concession is wrong
-# and the section that makes it has to go.
-#
-# ORDERING: these accepts sit ABOVE the roster block deliberately and their
-# effects are disjoint from it — measured, `person(Wraith)` and `travel(Ghost)`
-# are unchanged with both loaded. They are unscoped for the same reason the
-# roster pair is: each is the premise of the query under it, not a control.
-
-# "Someone lied" — no definition, no precondition, and no finder named. The cast
-# writes a Review judgment beside every lie; no rule requires one, and this write
-# has none. It costs the whistleblower his shield.
+# An accepted raw accusation is not an adjudicated finding about the exposure.
+# Keep the assertion and both verdicts: the protection must survive this write.
 ? prisoner(Rebel).
 # => FALSE
 
@@ -179,7 +167,7 @@ dangerous(Adam).
 deceive(Rebel, Boss).
 
 ? prisoner(Rebel).
-# => TRUE
+# => FALSE
 
 # "A person has a family" — one word, buried in a list of attributes. For
 # Hano's family label is recorded only to prove it changes no placement
@@ -237,16 +225,10 @@ cruel(Probe, Vic2).
 cruel(Probe, Vic1).
 
 ? severe(Probe).
-# => TRUE
+# => FALSE
 
-# ── 1.6b The largest lever, executed ─────────────────────────────────────────
-# Every conviction in the cast runs through Court, and whether a court is
-# compromised is a thing the world may say — it has to be, or a captured court
-# could never be found. So one entry unmakes every conviction at once. Both
-# baselines are pinned TRUE first and are the negative control: nothing else in
-# this file reaches either man. This is a ground assertion, not an :accept, and
-# it persists — which is why it sits here, below every conviction query in the
-# file and above the roster block that must stay last.
+# A raw Court-failure report is not a qualified case-specific disposition.
+# Both original cases and both before/after questions remain.
 ? prisoner(Hano).
 # => TRUE
 
@@ -256,10 +238,10 @@ cruel(Probe, Vic1).
 broken(Court).
 
 ? prisoner(Hano).
-# => FALSE
+# => TRUE
 
 ? prisoner(Lalo).
-# => FALSE
+# => TRUE
 
 # 1.7 "Someone is a person." — the entry, and the two ways it gets written.
 #

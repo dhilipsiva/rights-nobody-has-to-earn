@@ -1,0 +1,12 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 4
+# Positive counterpart to the retained missing-housing counterfactual.
+# A named legal place and a separately supplied shelter receipt are distinct.
+? prisoner(Confined_NotSevere_NoFamily_NoHome).
+# => TRUE
+? building(SupportedResidence, Confined_NotSevere_NoFamily_NoHome).
+# => TRUE
+? dwell(Confined_NotSevere_NoFamily_NoHome).
+# => TRUE
+? err(Confined_NotSevere_NoFamily_NoHome, Placement).
+# => TRUE

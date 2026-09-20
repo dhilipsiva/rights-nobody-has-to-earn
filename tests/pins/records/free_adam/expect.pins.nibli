@@ -1,4 +1,5 @@
 # SPDX-License-Identifier: MIT OR Apache-2.0
+# Raw status flags cannot replace a qualified case decision.
 :expect-pins 8
 # Generated red-team queries for snapshot free_adam.
 # This file is ephemeral and outside chapter pin reconciliation.
@@ -29,8 +30,8 @@
 
 # Reviewed expected consequence in free_adam.
 ? prisoner(Adam).
-# => FALSE
+# => TRUE
 
 # Reviewed expected consequence in free_adam.
 ? travel(Adam).
-# => TRUE
+# => FALSE

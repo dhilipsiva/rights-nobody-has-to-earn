@@ -1,19 +1,20 @@
 # SPDX-License-Identifier: MIT OR Apache-2.0
+# Raw status flags cannot replace a qualified case decision.
 :expect-pins 6
 # Generated red-team queries for snapshot vex_both.
 # This file is ephemeral and outside chapter pin reconciliation.
 
 # Reviewed expected consequence in vex_both.
 ? clean(Vex).
-# => TRUE
+# => FALSE
 
 # Reviewed expected consequence in vex_both.
 ? false(Vex).
-# => FALSE
+# => TRUE
 
 # Reviewed expected consequence in vex_both.
 ? lose(Points, Vex).
-# => FALSE
+# => TRUE
 
 # Reviewed expected consequence in vex_both.
 ? permits(Review, Vex).
@@ -21,7 +22,7 @@
 
 # Reviewed expected consequence in vex_both.
 ? reward(Vex).
-# => TRUE
+# => FALSE
 
 # Reviewed expected consequence in vex_both.
 ? rotten(Vex).

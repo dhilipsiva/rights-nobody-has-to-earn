@@ -11,6 +11,6 @@
 ? put(State, Confined_NotSevere_NoFamily_NoHome, Homestay).
 # => TRUE
 
-# The constitutional placement alarm remains silent in this harmful candidate.
+# The current alarm catches this report without a matching derived placement.
 ? err(Confined_NotSevere_NoFamily_NoHome, Placement).
-# => FALSE
+# => TRUE

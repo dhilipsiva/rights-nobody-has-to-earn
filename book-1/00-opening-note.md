@@ -222,12 +222,13 @@ the main reading sequence; the method follows it as an optional technical part.
   essentiality, dominance, gatekeeping or absence of real exit. Size alone is
   not a ground.
 - **Shield:** protection against conviction-based imprisonment following an exposure
-  of authority, while no deceit is recorded against it. An unrelated case requires
+  of authority, while no effective deceit finding applies to that exposure.
+  An unrelated case requires
   a finding by authorised reviewers with positively established eligibility.
   An actual conflict blocks
   the affected decision; merely naming a reviewer does not.
 - **Voiding:** an adverse credibility finding that blocks recognition and records
-  a loss, without lowering the floor. Restoration depends on the ground for the void.
+  a loss, without lowering the floor. Restoration identifies the case and its ground.
 - **Clawback:** the loss of recognition that follows voiding.
 - **Placement:** the conclusion about where a confined person is put. It does not
   establish that the place exists or is adequate.

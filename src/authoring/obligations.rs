@@ -1333,7 +1333,32 @@ fn finding_fixture_facts(
     let entry = format!("{kind}Entry");
     let facts = match kind {
         "Placement" => vec![format!("put(State, {finding_subject}, Homestay)")],
-        "Isolation" => Vec::new(),
+        "Isolation" => {
+            // A missing company receipt is not evidence of isolation.
+            let record = "ObligationsIsolationFinding";
+            let mut facts = vec![
+                format!("list({record}, {finding_subject}, ObligationsHolding, CustodyIsolationFinding)"),
+                format!("list({record}, ObligationsHolder, ObligationsPlace, CustodyConditionLocation)"),
+                format!("list({record}, ObligationsPeriod, ObligationsEvidence, CustodyConditionEvidenceWindow)"),
+                format!("authorized(ObligationsWitness, CustodyConditionWitness, {record})"),
+                format!("authorized(ObligationsConditionReview, IndependentCustodyConditionReviewer, {record})"),
+            ];
+            for actor in ["ObligationsWitness", "ObligationsConditionReview"] {
+                for (value, scope) in [
+                    (finding_subject, "CustodyConditionSubjectScope"),
+                    ("ObligationsHolding", "CustodyConditionHoldingScope"),
+                    ("ObligationsHolder", "CustodyConditionHolderScope"),
+                    ("ObligationsPlace", "CustodyConditionPlaceScope"),
+                    ("ObligationsPeriod", "CustodyConditionPeriodScope"),
+                    ("ObligationsEvidence", "CustodyConditionEvidenceScope"),
+                    ("HumanPersonPhysicallyHeldAndDeniedAccessibleHumanContact", "CustodyIsolationConditionScope"),
+                    ("PositiveEvidenceNoticeReasonsAndIndependentContest", "CustodyConditionProcedureScope"),
+                ] {
+                    facts.push(format!("observe({actor}, {record}, {value}, {scope})"));
+                }
+            }
+            facts
+        },
         "StatusConflict" => vec![
             format!("person({finding_subject})"),
             format!("rotten({finding_subject})"),

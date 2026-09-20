@@ -2,10 +2,129 @@
 
 # Credibility findings: grounds, endings and answerability
 
+**Final item-19 integration, 2026-09-20.** The current source passes 88,024
+pins across 16,087 cases in 1,169.06s, with complete contradiction checks and
+no findings. No active known-defect annotations remain. The focused and failed
+runs below are historical steps, not the final result. The five-minute target
+is unmet. These checks establish the loaded model, not outside authenticity
+or performed institutional acts. See `CLAUDE.md` for the development and
+manuscript checks. The fresh whole-manuscript review remains item 20.
+
 Ruled 2026-09-18 under the standing delegated approval, against the revision
 tracker's *resolve before defending* rule. It changes Article 4's voiding rule
 and Article 8's expungement reach, adds two duties, and records the
 alternatives examined for the one limitation that survives.
+
+## Supersession, 2026-09-19: cases, historical decisions and new signatures
+
+The item-19 repair supersedes the September 18 mechanism and the claimed
+necessity of its same-record signing window. This section records the current
+implementation; the dated measurements below remain historical. The source and
+this text are session-drafted, author-approved under delegated approval
+(2026-09-13). Item 19 remains open while its other repairs and complete checks
+are unfinished.
+
+An effective finding now names a subject, incident, admissible ground and
+evidence. Two distinct reviewers must identify that same case, document its
+examination, have case-specific independence authority, and give matching
+observations of those fields and the notice, access to evidence, hearing and
+reasons. Conflicting subject/incident or ground/evidence bindings invalidate the
+record. A complaint remains a reason to examine, not an adverse ground.
+
+Completed historical judgments and permission to make a new judgment are
+separate conclusions. The historical record requires Chronicle and
+TemporalReview's matching, case-bound observations of each reviewer's
+eligibility at the decision, and witnessed record order before the selected
+current evaluation. An express historical disqualification defeats a positive
+eligibility observation. These inputs report outside acts and past eligibility;
+the model does not authenticate their writers or establish their truth. A later
+family relationship does not retrospectively invalidate a lawful past decision.
+
+The prospective finding reads current credibility, recall and carried-status
+restrictions, as well as the represented family conflicts with the subject and
+between signers. An appointment alone is insufficient. A currently voided signer
+cannot qualify a new finding even when the same snapshot contains their seat and
+an earlier clearance. The prospective conclusion itself imposes no personal
+penalty and cannot manufacture the separately required historical observations.
+Neither conclusion can be supplied as a ground assertion.
+
+This is a substantive replacement of the immediately effective, unscoped pair.
+Adding a negative credibility guard directly to the old recursive rule fails;
+that failure does not justify retaining the window. Separating the acts makes
+the current-disqualification test possible. An initial attempt also put that
+guard on the appointment relation, which created a dependency loop through other
+constitutional rules. The implemented rule checks the particular prospective
+act instead. The isolated eight-pin protocol and then the full-source eight-pin
+protocol passed; expanded full-source checks passed 28, 50 and 55 pins. The first
+55-pin run against the actual edited constitution took 10.94 seconds, including
+the contradiction check. These are focused results, not the complete verifier.
+
+A raw allegation of deceit removes neither examination recognition nor
+disclosure protection. Protection identifies the discloser and the particular
+exposure; an effective deceit finding must identify both. Another exposure to
+the same authority is assessed separately. A parent's judgment about their
+child is excluded from examination recognition and from a qualifying adverse
+pair; it does not automatically punish the parent personally. An adjudicated
+concealed conflict follows the ordinary case mechanism.
+
+Restoration identifies the finding, subject, appellate purpose and evidence,
+and requires the particular appellate judgment, its independent review,
+procedure, historical eligibility and witnessed order. Generic judgments or
+forgiveness flags do nothing. A restoration reaches its named finding,
+including a finding about a concealed conflict, and does not clear a separate
+finding. It does not restore a recalled or carried-void appointment. The unary
+`clean(subject)` result is descriptive; personal consequences read the
+case-specific restoration.
+
+The decision actor and independent reviewer must also be distinct and neither
+may be the subject. Both have case-specific authority; a qualified independent
+alternate follows the same contract when the ordinary body is a party. The
+13-pin adversarial case first found eight failures, including self-restoration
+and interested review. After the rule repair, four failures exposed a fixture
+error that renamed the subject along with the actor. Correcting those subject
+fields preserves the actual party and yields 13 passing pins in 10.87s. The
+62-pin case regression, chapter 25's two variants and chapter 26 also pass:
+314 pins across five selected executions in 46.51s, with their contradiction
+checks. The existing floor-vector development checks pass all 16 tests (1.31s).
+
+An aggregate carried credential restriction is insufficient to withhold
+recognition or impose a clawback: it supplies no identifiable case to contest.
+Its restriction on the appointment route remains. Personal consequences require
+the effective case record. Vex's existing fictional example therefore includes
+the actual prior judgment as well as the carried credential restriction. A new
+control with only the carried restriction retains ordinary recognition while
+remaining unable to obtain the public appointment.
+
+Every target of an effective finding is owed its reasons, without waiting for a
+separate personhood entry. The subject's own challenge opens appellate review.
+No such duty proves delivery, and none of these changes conditions a floor or
+standing on credibility. The personal effect remains the bounded recognition
+and recorded-loss mechanism; the incident-bound disclosure result has its own
+explicit two-place form.
+
+The ending also survives a changed record identifier. A red test supplied a
+second complete record for the restored subject, incident and ground. The first
+implementation revived the finding: three failures in 58 pins, no harness
+errors, 10.6 seconds of case execution. Restoration now follows that subject,
+incident and ground across record names and evidence labels, and a restored
+case cannot qualify as a new prospective finding. A distinct ground or incident
+needs its own disposition. The 58-pin repair passed, followed by an expanded
+62-pin case that exercises a different ground in the same incident and its
+separate restoration (11.03 seconds, including the requested contradiction
+check).
+
+The updated chapter 25 tests pass 198 pins across the actual constitution and
+the declared no-dead-conjuncts variant (14.24 seconds). They retain the original
+scenarios, add qualified case histories and appellate acts, and keep an explicit
+old-policy self-cosigning control. Chapter 24 passes 102 pins across both
+variants (10.63 seconds), including episode-specific deceit findings. Chapter
+26 passes 41 pins (10.27 seconds), including the inert generic forgiveness and
+the qualified restoration of Vex's named prior case. The two appointment-guard
+counterfactuals pass six and five pins respectively: removing appointment
+guards does not bypass the prospective act's guards; removing both permits the
+act, which still does not manufacture a historical judgment. The separate
+four-pin immediate-effect counterfactual reproduces the personal consequence.
+No full item-19 verifier result is claimed by these focused checks.
 
 ## What the finding was, measured before changing it
 
