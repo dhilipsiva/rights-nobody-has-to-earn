@@ -127,6 +127,74 @@ reinstate the retired tooling or workflow.
 Grouped by kind. Dates in each heading are the ratification dates; a ruling
 that was later implemented or narrowed carries that supersession inline.
 
+### Item 32 — rebuilt reading copies and reassessed sample, 2026-09-21
+
+The existing builder rebuilds the full 34-input book and the five-chapter
+sample as HTML, EPUB and PDF in ignored `output/book-1/`. No manuscript,
+formal source, pin, suite, manifest, builder or stylesheet changes were
+needed. The book README and publisher proposal now use the actual lengths
+and current Chapter 26 title, *The Limits of a Finding*. Their exact revised
+prose is `session-drafted, author-approved under delegated approval
+(2026-09-13)`.
+
+The rendered manuscript contains 57,838 whitespace-separated words, including
+notes before the generated cover and contents. Derived chapters contribute
+40,448 (69.93%); the sample contains 13,597. The separate Markdown measure
+remains 58,347 words excluding HTML comments. The full PDF has 169 pages and
+the sample 35. Chapter order, pin pairs, the one-entry child fixture, required
+child slots, three exempt prose channels and majority-derived rule remain.
+
+The reassessed sample retains complete Chapters 1, 5, 8, 21 and 31: standing,
+delivery, ordinary freedom, access to justice and the extended argument.
+Chapter 31 now supplies about 71% of the sample and 17% of the manuscript.
+The proposal states that emphasis and its purpose: an editor can examine the
+argument and its qualifications together. It does not present the selection
+as proportional to the book or as satisfying an unspecified press's limits.
+The September 20 review is identified as an earlier assessment; item 33's
+fresh review remains pending. Preparation does not initiate publisher contact,
+submission, release, Gate C or Book 2 work.
+
+Seven existing assembler development tests pass in 0.423s. Six existing
+reference-integrity tests pass in 1.57s. The 23 local links in the changed
+documentation resolve, and all 31 proposal chapter titles match the manifest.
+No new test, verification gate, receipt or inventory is introduced.
+
+Rendering used the builder's declared Playwright 1.63.0 and existing Chromium
+146.0.7680.80 through `--browser-executable`. Initial dependency retrieval
+failed inside the sandbox; the authorised retry supplied the pinned packages.
+The default browser build was absent, so the documented executable override
+used the existing browser. Neither initial attempt is counted as a successful
+PDF build. A temporary inspection selector also needed valid CSS syntax for
+numeric-leading IDs; this was an inspection-helper error, not a book defect.
+
+The 90 browser renders cover both HTML copies and every packaged EPUB XHTML
+document at 360px and 1280px. There is no document overflow, clipped code,
+missing local fragment, duplicate ID or unlabelled table. All nine full-book
+tables and the sample's table have labelled regions and scoped headers.
+All 16 note references and returns work in each HTML copy, and the keyboard
+skip link reaches the main content. Opening navigation and EPUB contents
+and method links were activated at both widths. The Tamil font loads.
+EPUBCheck 5.4.0 reports zero errors and warnings for both packages under
+EPUB 3.4 rules.
+
+The full/sample PDFs contain 297/46 bookmarks, 228/37 valid internal link
+destinations and 82/54 external links. Both retain tagged structure and
+embedded prose/font licences. All pages were checked for empty output and
+out-of-page text and visually inspected as contact sheets. Alphanumeric text
+comparison found all 1,487/257 checked source blocks; the Tamil source text
+also occurs exactly after whitespace removal. Selected contents, epigraph,
+tables, notes, diagrams, case index and method code were inspected at reading
+scale, with phone and desktop views where applicable. No material rendering
+defect was found. EPUB inspection covers its packaged XHTML in Chromium and
+the validator, without claiming every ebook application, actual-user
+accessibility, independent reader testing or editorial endorsement.
+
+`RIGHTS_VERIFY_JOBS=4 ./verify.sh` passes 88,815 pins across 16,137 cases
+in 1,133.59 seconds, with complete contradiction checks and no findings.
+No check is incomplete; the five-minute target remains unmet. The source
+and substantive inventory are unchanged. The final diff check passes, and
+the untracked `book-1/book-1.zip` is left untouched. Item 32 is complete.
+
 ### Item 31 — evidence, attribution and inference, 2026-09-21
 
 The source review corrects Part V and 21 existing registry entries under the

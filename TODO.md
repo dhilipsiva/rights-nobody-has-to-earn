@@ -5,8 +5,8 @@
 Created 2026-09-18 and refreshed 2026-09-20 at the author's request:
 "Refresh TODO to make book a 10/10."
 
-**Active: items 32–33 below are pending.** Items 01–23 were
-completed on 2026-09-20 and items 24–31 on 2026-09-21. The first round's
+**Active: item 33 below is pending.** Items 01–23 were
+completed on 2026-09-20 and items 24–32 on 2026-09-21. The first round's
 [final manuscript review](reviews/2026-09-20-final-manuscript-review.md),
 subsequent coherent commits and `CLAUDE.md` retain the assessments, repairs and
 validation. This refresh opens further work; it does not reverse those
@@ -134,30 +134,10 @@ solutions and development history stay outside the book's reading sequence.
 
 ## Ordered revision backlog
 
-Work in this order. Item 32 rebuilds and inspects the reading copies of
-the revised manuscript. Each item includes its
-own relevant validation under the execution contract; item 33 is a final
-integration review, not permission to defer earlier checks. Chapter numbers
+Item 33 is the final integration review. The preceding items include their
+own relevant validation under the execution contract; this final review is
+not permission to defer earlier checks. Chapter numbers
 refer to the [current reading sequence](book-1/contents.json).
-
-- [ ] **32. Rebuild and inspect the reading copies and sample.**
-
-  **Scope:** Opening navigation, full and sample HTML/EPUB/PDF, book README and
-  publisher proposal; use the existing builder and relevant development checks.
-
-  Rebuild the final revised manuscript. Check chapter and section links,
-  contents, glossary, case index, footnotes, diagrams and method references.
-  Inspect tables, Tamil text, code wrapping, page breaks and narrow-screen
-  reading in affected sections and across the full sequence. Validate the EPUB
-  and relevant PDF navigation with the established tools. Reassess the sample
-  after substantive changes and update measured manuscript/sample lengths and
-  proposal claims to match the actual text. Preserve the majority-derived rule.
-
-  **Done when:** the generated copies and selected sample reflect the current
-  source, navigation works and material rendering defects are repaired. The
-  proposal makes no stronger claim than the manuscript. Mechanical checks are
-  reported at their actual scope, without claiming actual-user accessibility
-  or initiating publisher contact, submission or release.
 
 - [ ] **33. Reassess the whole book and close only resolved work.**
 

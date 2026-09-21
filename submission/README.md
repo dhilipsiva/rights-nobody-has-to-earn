@@ -4,7 +4,7 @@
 
 **Book proposal · dhilipsiva · political nonfiction / constitutional design**
 
-**Approximately 52,000 words · complete draft with final internal review completed**
+**Approximately 58,000 words · complete revised draft; final internal reassessment pending**
 
 This proposal seeks an editorial and print partnership for an openly licensed
 book. It is prepared for a submission decision, without being addressed or sent
@@ -127,7 +127,7 @@ Epigraph; A Note Before the Design — both unnumbered.
 
 24. The Shield
 25. Voiding
-26. Clawback
+26. The Limits of a Finding
 27. A Prisoner Is a Person
 28. Where People Are Put
 29. The One Thing Taken
@@ -141,10 +141,15 @@ The Method — optional and unnumbered.
 
 ## Representative sample
 
-The selection contains five complete chapters, approximately 10,000 words.
+The selection contains five complete chapters, approximately 14,000 words.
 Their original numbering and citations are retained. It includes both short
 derived chapters and the longer closing argument so an editor can assess the
-book's two principal modes.
+book's two principal modes. The selection moves from standing to delivery,
+ordinary freedom and access to justice, then gives the opposing arguments
+and evidence in full. Chapter 31 occupies about 71% of the sample, compared
+with about 17% of the manuscript. Keeping it complete lets an editor assess
+the reasoning and its qualifications together. This selection can be adapted
+to a particular publisher's requirements before any submission.
 
 | Chapter | What the selection shows |
 |---|---|
@@ -162,7 +167,7 @@ uv run tools/build_book.py --sample
 ```
 
 This produces `book-1-sample.html`, `book-1-sample.epub` and
-`book-1-sample.pdf` in `output/book-1/`; the current PDF is 29 pages.
+`book-1-sample.pdf` in `output/book-1/`; the current PDF is 35 pages.
 Use `--no-pdf` for HTML and EPUB alone. The sample is labelled as selected
 chapters. Links outside the selection open the public manuscript or formal
 source on `main`, which can change; they do not bind a submitted copy to an
@@ -172,28 +177,31 @@ considered for submission.
 
 ## Completion and limits
 
-As of 2026-09-20, all 31 numbered chapters, the epigraph, opening note and
-method are drafted: approximately 52,000 words across 34 ordered inputs.
-About 77% of the rendered-text word count belongs to the 30 derived chapters.
-The full manuscript and sample are available locally as HTML, EPUB and PDF.
+As of 2026-09-21, all 31 numbered chapters, the epigraph, opening note and
+method are drafted: 57,838 words across 34 ordered inputs. The 30 derived
+chapters contain 40,448 words, or 69.93%; the sample contains 13,597.
+These counts use whitespace-separated rendered manuscript text, including
+notes, before the generated cover and contents. The full manuscript and
+sample are available locally as HTML, EPUB and PDF.
 
-The complete substantive run for this package passed 88,024 pins across
-16,087 cases in 1,198.57 seconds, with complete contradiction checks and no
+The latest completed substantive run passed 88,815 pins across
+16,137 cases in 1,133.59 seconds, with complete contradiction checks and no
 findings. No active known-defect expectations remain. Explicitly weakened
 counterfactuals still demonstrate the harms their altered rules permit; those
 results do not describe the enacted model. The five-minute verification target
 is not met.
 
-The identified final-check issues have substantive repairs and executed
-regressions. The [fresh whole-manuscript review](../reviews/2026-09-20-final-manuscript-review.md)
-is complete, including correction of its material findings. It records the
-manuscript's strengths, remaining weaknesses and the limits of review within
-the same AI-assisted project. The submission decision remains separate from
-this complete draft. The full PDF has 156 pages; the five-chapter sample has 29.
-Both EPUBs pass EPUBCheck
-with zero errors or warnings, and the browser and PDF inspections found no
-missing checked text or navigation failures. These are bounded formal and
-rendering checks, not independent editorial endorsement.
+The [September 20 review](../reviews/2026-09-20-final-manuscript-review.md)
+describes an earlier draft. Subsequent revisions address policy boundaries,
+worked conflicts, argument, readability and evidence. A fresh assessment of
+the resulting manuscript remains pending in [the revision backlog](../TODO.md).
+The submission decision remains separate from completing that review.
+The rebuilt full PDF has 169 pages; the five-chapter sample has 35.
+Both EPUBs pass EPUBCheck with zero errors or warnings. Inspection found
+no missing checked text or invalid internal PDF destinations; browser checks
+cover the full HTML and all packaged EPUB documents at 360px and 1280px.
+These are bounded formal and rendering checks within the same AI-assisted
+project, not independent editorial endorsement.
 
 The [method](../book-1/method.md) discloses AI assistance and explains what
 the checks establish. No independent expert endorsement, external reader
