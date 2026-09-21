@@ -5,8 +5,8 @@
 Created 2026-09-18 and refreshed 2026-09-20 at the author's request:
 "Refresh TODO to make book a 10/10."
 
-**Active: items 27–33 below are pending.** Items 01–23 were
-completed on 2026-09-20 and items 24–26 on 2026-09-21. The first round's
+**Active: items 28–33 below are pending.** Items 01–23 were
+completed on 2026-09-20 and items 24–27 on 2026-09-21. The first round's
 [final manuscript review](reviews/2026-09-20-final-manuscript-review.md),
 subsequent coherent commits and `CLAUDE.md` retain the assessments, repairs and
 validation. This refresh opens further work; it does not reverse those
@@ -134,28 +134,11 @@ solutions and development history stay outside the book's reading sequence.
 
 ## Ordered revision backlog
 
-Work in this order. Item 27 makes the cases easier to follow before the
-remaining editorial passes. Each item includes its
+Work in this order. Item 28 gives the catalogue-like chapters a clearer
+progression before the remaining editorial passes. Each item includes its
 own relevant validation under the execution contract; item 33 is a final
 integration review, not permission to defer earlier checks. Chapter numbers
 refer to the [current reading sequence](book-1/contents.json).
-
-- [ ] **27. Make the cases easy to identify and follow.**
-
-  **Scope:** Especially Chapters 9, 10 and 23–26; opening case index and all
-  recurring examples.
-
-  Reduce the memory burden of fixture-like labels such as Nogra, Nogrb, Targ4
-  and Partnr. Use clear role descriptions and brief reminders of relevant
-  premises, retaining an unambiguous connection to each executable case. Reuse
-  a case where it genuinely supports the next consequence; do not combine
-  separate fixtures into a person with an invented history. Avoid renaming
-  formal identifiers merely to improve prose.
-
-  **Done when:** a first-time reader can identify the claimant, actor, reviewer,
-  relevant evidence and changed result within each example without repeatedly
-  consulting the index. Existing cases remain distinguishable and traceable;
-  no dialogue, biography, mental state or outside event is invented.
 
 - [ ] **28. Restructure the chapters that read as catalogues.**
 

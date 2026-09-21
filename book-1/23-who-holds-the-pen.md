@@ -1,15 +1,14 @@
 # Who Holds the Pen
 
-Gia holds one auditor's credential; Wren holds the other. The credentials make
-eligible findings count toward a paired voiding. They do not create general
-public power, make the findings true or replace the conditions required in the
-particular case.
+Gia and Wren illustrate the two routes to an auditor's credential. Gia is
+seated by Electorate; Wren is seated by Convocation. A paired void needs
+distinct signers with one credential from each route. Their credentials make
+eligible findings count toward that pair. They do not create general public
+power, make the findings true or replace the conditions required in the case.
 
-One credential follows a seating by Electorate, the other a seating by
-Convocation. A paired void needs distinct signers with one credential from
-each route. Public answerability is separate: Court is answerable and holds
-neither credential, while Koa's recorded examination does not confer either
-credential or public answerability.
+Public answerability is separate. Court, the judging body, is answerable and
+holds neither auditor's credential. Koa, whose record contains an examination,
+has neither a credential nor public answerability from that entry.
 
 Both credentials require seating, no recall, and positively established clear
 history. The current record must carry that history from its witnessed
@@ -19,9 +18,10 @@ cannot substitute for a positive match.
 
 ## A credential must derive
 
-A direct attempt to write a Review credential for Sock is refused. The
-required evidence must support the credential; nobody can simply enter the
-conclusion. Refusal of the conclusion does not authenticate that evidence.
+A separate test tries to give Sock a Review credential by entering it directly.
+The attempt is refused. The required evidence must support the credential;
+nobody can simply enter the conclusion. Refusal of the conclusion does not
+authenticate that evidence.
 
 Even credentialed signers need affirmative independence authority for the
 particular case. The subject, incident, recognised adverse ground and evidence
@@ -46,11 +46,13 @@ credentials, and the later voiding chapter examines the finding's reach.
 
 ## Recall and carried history
 
-Boss is seated and recalled. Public answerability remains while the Review
+Boss is the recalled office-holder in this comparison. The record contains
+both a seating and a recall. Public answerability remains while the Review
 credential does not derive. This concerns that credential, not every power
 Boss could hold under another constitutional route.
 
-Vex is seated without recall but has a void carried from a predecessor record.
+Vex tests a different reason for withholding the same credential: a void
+carried from a predecessor record. Vex is seated without recall.
 The two public witnesses agree about the earlier finding and its transfer to
 the current record. The earlier finding and inventory entries have their own
 witnesses, and the current record has no competing selection. That matched
@@ -71,8 +73,9 @@ alone. Boss and Vex then receive it despite the recall and carried void. An
 extra route can bypass conditions even while the full rule remains intact.
 
 The prospective signing rule has its own checks for recall, matched carried
-restriction and current credibility. Vex and Wren still cannot qualify their
-finding against Tyr. A second counterfactual removes those checks as well as
+restriction and current credibility. In the proposed case against Tyr, Vex
+is the restricted signer and Wren the other examiner. Their pair still cannot
+qualify the finding. A second counterfactual removes those checks as well as
 bypassing the appointment guards; the proposed finding then qualifies. Even
 there, permission alone does not manufacture a completed judgment. These
 controls establish the work done by the particular guards. They do not prove
@@ -94,10 +97,11 @@ reviewer must be qualified for the particular order. Neither may be a party,
 the prosecutor, the original adjudicator or the trial reviewer. Their matching
 observations and witnessed decision order must support the same act.
 
-Nia's record contains a qualified order quashing the conviction without retrial.
-Custody does not derive. Adam's raw clearing entry and a generic Appeals
-judgment supply no such order, separately or together. A judgment about
-somebody is not automatically a judgment on every case concerning them.
+Nia is the subject of a qualified order quashing a conviction without retrial.
+Custody does not derive. The contrasting case concerns Adam: a raw clearing
+entry and a generic Appeals judgment supply no such order, separately or
+together. A judgment about somebody is not automatically a judgment on every
+case concerning them.
 
 Final relief follows the same person, incident and charged offence across
 case-name changes. A fresh label cannot recreate the barred confinement.

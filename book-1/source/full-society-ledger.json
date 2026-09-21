@@ -105487,7 +105487,7 @@
       ],
       "prose_refs": [
         "book-1/03-what-counts-as-evidence.md::A contribution entry records a",
-        "book-1/09-earning-above-the-floor.md::Marlo has a contribution record with Ledgerhouse under SchemeM.",
+        "book-1/09-earning-above-the-floor.md::Marlo is the claimant in the illness case.",
         "book-1/09-earning-above-the-floor.md::A contribution history has a limited purpose: the supplement.",
         "book-1/09-earning-above-the-floor.md::## A supplement above the floor",
         "book-1/00-opening-note.md::- **Contribution record:** an entry that someone paid into a named scheme. It"
@@ -110887,7 +110887,7 @@
       ],
       "residual_citations": [],
       "controls": {
-        "reintroduction_control_ref": "book-1/25-voiding.md::Koa recorded something about Esa"
+        "reintroduction_control_ref": "book-1/25-voiding.md::Two further cases isolate different missing conditions."
       }
     },
     {
@@ -112100,7 +112100,7 @@
       "envelope_id": "FS-ENV-00",
       "owner_ref": "CLAUDE.md::Claim-scoped resolution receipts replace confession-as-ending",
       "eligible_gate": "gate-a",
-      "reader_mapping_ref": "book-1/25-voiding.md::Koa recorded something about Esa"
+      "reader_mapping_ref": "book-1/25-voiding.md::Two further cases isolate different missing conditions."
     },
     {
       "id": "FS-RCP-06",

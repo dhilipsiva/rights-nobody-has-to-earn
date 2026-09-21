@@ -1,9 +1,10 @@
 # When the System Notices It Broke
 
-A reported home placement for ineligible Ruk produces a breach marker. The same
-report for eligible Hano does not. This is one way the constitution can describe a
-failure against its own rules. The marker also creates a duty: Review owes a response
-about the affected person.
+A report placing Ruk at home conflicts with Ruk's authorised secure placement
+and produces a breach marker. Hano's case authorises home placement, so the
+equivalent report produces no marker. The difference is the authority in each
+case, not a general ban on considering home confinement for Ruk. The marker
+also creates a duty: Review owes a response about the affected person.
 
 A finding needs a reader, a response,
 and a route onward if the response fails. Each connection can be checked separately.
@@ -46,10 +47,13 @@ assessment, not a guarantee of their independence or accuracy.
 
 ## A placement report against a rule
 
-The placement marker reads a reported act. Ruk and Lalo derive HighSec in the supplied
-record and have no reports placing them at home; the placement marker is silent about
-both. Add the home-placement report for Ruk, and it fires because Ruk is ineligible.
-Add the equivalent report for Hano, and it remains silent.
+The placement marker reads a reported act. Ruk and Lalo have authority for
+secure placement, identified as HighSec, and no report placing them at home;
+the placement marker is silent about both. Chapter 28 adds a home-placement
+report for Ruk. The marker then fires because that report conflicts with the
+authorised placement, even though Ruk is eligible for consideration of home
+confinement. The equivalent report for Hano matches Hano's authorised route
+and leaves the marker silent.
 
 This test distinguishes the reported act from a home option or a family entry.
 Chapter 28 also tests inappropriate secure placement, unknown destinations,

@@ -312,8 +312,10 @@ the main reading sequence; the method follows it as an optional technical part.
 - **The electorate and convocation:** separate sources of seating and the
   credentials used in accountability. See Chapters [16](16-public-answerability.md)
   and [23](23-who-holds-the-pen.md).
-- **An examiner or auditor:** records findings and is answerable for deceit or
-  prohibited closeness. See Chapters [10](10-contribution.md),
+- **An examiner or auditor:** supplies examination records. A credential and
+  case-specific independence are needed before an examination can count toward
+  an adverse finding. A finding against the examiner needs its own case.
+  See Chapters [10](10-contribution.md),
   [23](23-who-holds-the-pen.md) and [25](25-voiding.md).
 - **The court:** supplies a judgment. That alone does not establish a current
   authority to confine. See Chapters [24](24-the-shield.md) and
@@ -333,20 +335,30 @@ the main reading sequence; the method follows it as an optional technical part.
 
 ### Principal named cases
 
-The names identify formal test cases, not interviews or biographies.
+The names identify formal test cases, not interviews or biographies. A name
+may recur across isolated tests; a change supplied in one experiment does not
+become a life history carried into the next. Each chapter states the evidence
+relevant there. This index gives the principal roles for finding a case again.
 
-| Case | Question | Return to |
+| Case and roles | Question | Return to |
 |---|---|---|
-| Nell and Ori | A birth entry, and no entry at all | [1](01-the-child-with-nobody.md) |
-| Bela and Cira | Findings, contribution and the floor | [25](25-voiding.md), [26](26-clawback.md) |
-| Boss and Rebel | Exposure after an official loses office | [16](16-public-answerability.md) |
-| Esa | Teaching and the evidence of adulthood | [10](10-contribution.md), [18](18-the-vote-conviction-does-not-take.md) |
-| Don, Pax, Sly, Kel and Rex | Exposure, deceit and case-specific prosecution | [24](24-the-shield.md) |
-| Adam and Kel | Shelter, placement and release | [28](28-where-people-are-put.md), [29](29-the-one-thing-taken.md) |
-| Hano and Jala | Confinement and the free comparator | [29](29-the-one-thing-taken.md) |
-| Ruk, Lalo and Nando | Placement and breach markers | [28](28-where-people-are-put.md), [30](30-when-the-system-notices-it-broke.md) |
-| Sock, Puppet, Koa and Vex | Forged, absent or stale authority | [23](23-who-holds-the-pen.md), [25](25-voiding.md) |
-| Zed and Ivo | A defendant absent from the ordinary roster | [27](27-a-prisoner-is-a-person.md) |
+| Nell, whose only initial entry is a birth; Ori, with no standing entry | What establishes standing? | [1](01-the-child-with-nobody.md) |
+| Bela, subject of a credibility finding and teacher of Cira | What changes for the teacher, and what does not transfer to the learner? | [10](10-contribution.md), [25](25-voiding.md), [26](26-clawback.md) |
+| Ansel, certificate subject; Coll, wage recipient; Marlo, supplement claimant | What evidence supports each separate claim? | [9](09-earning-above-the-floor.md) |
+| Esa, teacher of Fin and child of Dev | What does an activity or family relationship establish about age? | [10](10-contribution.md), [18](18-the-vote-conviction-does-not-take.md) |
+| Nima, Pico's parent and teacher; Pico, also a teacher of Ona | Whose contribution is recorded? | [10](10-contribution.md) |
+| Boss, a recalled official; Rebel, who exposed Boss | Why does answerability survive recall? | [16](16-public-answerability.md) |
+| Gia and Wren, credential holders from different seating bodies | Who may sign an adverse finding? | [23](23-who-holds-the-pen.md) |
+| Vex, seated but barred from an auditor's credential by carried history | Why does personal restoration leave a separate appointment restriction? | [23](23-who-holds-the-pen.md), [26](26-clawback.md) |
+| Don, defendant and discloser; Pax, injured person and disclosure target | Does exposing a private person open the shield? | [24](24-the-shield.md#don-a-private-target) |
+| Sly and Kel, defendants exposing the court in separate cases | What changes when this exposure has a qualified deceit finding? | [24](24-the-shield.md#sly-an-unresolved-disclosure) |
+| Rex, defendant with two disclosures; Sena, injured person | Can a finding about one disclosure defeat another, or the prosecution proceed separately? | [24](24-the-shield.md#rex-a-separate-exposure) |
+| Lupo, subject of a finding for deceiving Mira, then a proposed examiner | Can earlier clearance override a current restriction on signing? | [25](25-voiding.md) |
+| Nia, with qualified appellate relief; Ruk, without it in the comparison | How does a duty to hear differ from relief already granted? | [21](21-a-way-to-be-heard.md) |
+| Hano, with qualified custody; Jala, with an injury entry but no conviction | What is required to restrict movement, and what remains protected? | [18](18-the-vote-conviction-does-not-take.md), [29](29-the-one-thing-taken.md) |
+| Ruk and Lalo, with authorised secure placements | Which reported placements conflict with the current authority? | [28](28-where-people-are-put.md), [30](30-when-the-system-notices-it-broke.md) |
+| Adam, Kel and Nando, with reviewed supported residences | Why is a placement record not a shelter receipt? | [28](28-where-people-are-put.md), [29](29-the-one-thing-taken.md) |
+| Zed, subject of a qualified custody case; Ivo, injured person | Does custody preserve standing without another recorded root? | [27](27-a-prisoner-is-a-person.md) |
 
 Historical cases belong to Part V's arguments over
 [valuation](31-the-five-joints.md#valuation),

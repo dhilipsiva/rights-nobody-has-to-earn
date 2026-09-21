@@ -9,6 +9,57 @@
 > author's standing delegated approval of 2026-09-13. Earlier dispositions,
 > including `OL-15-v1` in section 7a, remain visible as history.
 
+## Identifiable cases and explicit roles — item 27, 2026-09-21
+
+The exact current opening case index and Chapters 9, 10, 23–26 and 30 are
+`session-drafted, author-approved under delegated approval (2026-09-13)`.
+Names in the source and pins remain unchanged. The chapters identify the
+claimant, subject, payer, examiner, disclosure target or reviewer at the point
+needed to follow the case. They distinguish a separate example from a later
+step in an existing test. No case acquires a biography, motive, inner life,
+outside event or evidence borrowed from another fixture.
+
+Ansel's certification, Coll's compensation and Marlo's supplement are separate
+claims, with the attester or adjudicator named by role. Bela's added wage and
+illness records are introduced as Bela's own test. The appointment cases
+identify the credential routes, the restricted signer and the proposed
+subject. The shield headings name the distinction made by Don, Sly, Kel and
+Rex; the text identifies the injured person, target and deciding participants.
+Rex's two disclosures are described as records, without inventing an outside
+chronology. The voiding examples retain Nogra, Nogrb, Targ4 and Partnr but
+introduce them by role and follow the pair or subject through the result.
+Purga's restoration, Targo's reasons duty and Dev's conflict remain separate
+cases. Vex's return distinguishes the personal finding from the appointment
+restriction. The learner, deceived person and unaffected comparator are
+identified where a finding must not transfer to them.
+
+The optional case index gives roles, a question and a direct chapter or
+section destination. It states that isolated tests do not combine into a
+biography. The unused reader-index name Puppet is removed; the executable
+case and every substantive expectation remain. The index includes the
+ordinary contribution and earnings cases as well as coercion and review.
+The early Chapter 1 route and fixed child-argument sequence are unchanged.
+
+The review of recurring cases also found an inaccurate current premise in
+Chapter 30. The text called Ruk ineligible for home confinement. The current
+source and Chapter 28's pins instead make home eligibility true while the
+supplied placement authority supports a secure place. The placement-report
+alarm reads the authorised destination, not general home eligibility. Chapter
+30 now states that distinction and identifies the Chapter 28 experiment that
+adds the conflicting home report. This is a prose correction to the already
+enacted placement design, not a new policy, rule or expected verdict.
+
+The existing reader-coverage entries follow four renamed headings. Their
+case descriptions correct reversed Don/Pax roles, an unsupported description
+of Sly as guilty, an entitlement described as voting, and obsolete summaries
+of credibility loss. The placement entry names the correct condition and
+points to Chapter 28's executing pins. Its generated report retains all 238
+passage classifications. Two distinct prose locators, used three times in
+the full-society ledger, follow the revised Marlo and Koa passages; historical
+assurance findings are not renewed. No new inventory or verification gate is
+created. The current-design register, child slots and exemptions, chapter
+order, three exempt channels and Book 2 boundary remain.
+
 ## Reader consequences and optional implementation detail — item 26, 2026-09-21
 
 The exact current Markdown of Chapters 3, 4, 9, 18, 21, 22, 23, 26 and 27,

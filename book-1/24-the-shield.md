@@ -17,9 +17,10 @@ Those are conditions on the record. They establish neither an honest hearing
 nor anyone's physical freedom. The cases below show what follows when the
 conditions are present, absent or disputed.
 
-## Don
+## Don: a private target
 
-Don injured Pax. Then Don exposed Pax.
+Don is the defendant and discloser in this case. The record contains an injury
+to Pax and Don's disclosure against Pax, the injured person.
 
 Pax is not publicly answerable in the supplied record. There is no public-body
 entry or seating that would make Pax an eligible target of this protection.
@@ -33,10 +34,11 @@ shield and the conviction stops deriving. The machine cannot distinguish a
 true status entry from a forged one. The case demonstrates the trust placed
 in the supplied record, not a lawful way to appoint a victim to public office.
 
-## Sly
+## Sly: an unresolved disclosure
 
-Sly injured Pax and exposed the court. The court is publicly answerable, and
-there is no effective deceit finding against that exposure. Sly's shield holds.
+Sly's separate case also records an injury to Pax, but Sly's disclosure names
+the prosecuting court. The court is publicly answerable, and there is no
+effective deceit finding against that exposure. Sly's shield holds.
 
 A missing adverse finding is enough for protection to continue. It is not a
 finding that Sly told the truth. Nor does the recorded injury make the
@@ -63,10 +65,11 @@ on those conditions for the same case. The shield cannot substitute for that
 inquiry, and a finding that a prosecution is unrelated cannot bypass it.
 The reasoner checks the supplied findings; it does not decide a defence itself.
 
-## Kel
+## Kel: a finding about this disclosure
 
-Kel injured Pax and exposed the court. A completed case identifies Kel's
-exposure, the deceit finding and its evidence. It includes two independent
+Kel's case pairs an injury to Pax with a disclosure against the court too.
+Here, however, a completed case identifies Kel's exposure, a deceit finding
+and its evidence. It includes two independent
 reviewers, their eligibility at the decision, and matching records of notice,
 access to evidence, a hearing and reasons. That finding defeats this exposure's
 shield, so Kel's otherwise complete conviction derives. It also produces a
@@ -83,10 +86,11 @@ statement by Kel is false, and it does not make Kel ineligible for protection
 against a different act of retaliation. Another exposure to the same authority
 is assessed separately too.
 
-## Rex
+## Rex: a separate exposure
 
-Rex injured Sena and exposed the court. A completed case found that exposure
-deceitful. Rex then exposed the review body.
+Rex's record concerns an injury to Sena and two exposures: one against the
+court and another against the review body. A completed case found the
+court disclosure deceitful.
 
 The second exposure has no effective deceit finding against it, so the shield derives
 again. Rex is both discredited and shielded. Protection does not read the
@@ -101,9 +105,10 @@ list of people exposed.
 
 ## The case the shield stops covering
 
-The chapter's checks first record agreement by Appeals and the convocation
-that Rex's prosecution is unrelated to the disclosure. Agreement alone leaves
-Rex protected. The current authority and qualification evidence are missing.
+The test continues with Rex as defendant and Sena as the injured person.
+Appeals and the convocation are the proposed deciders of whether this
+prosecution is unrelated to the disclosure. Their recorded agreement alone
+leaves Rex protected: current authority and qualification evidence are missing.
 
 Each deciding reviewer needs authority for this case. A qualification
 function and a separate qualification-review function, both authorised for
@@ -124,9 +129,10 @@ on the record, the shield still derives, and the credibility finding is
 unchanged: the case finding removes this prosecution from the shield's coverage. A finding
 for this case provides no qualification or decision for another case.
 
-The next test names Appeals, the convocation and both qualification functions
-in fresh disclosures. Rex's conviction still derives. An allegation against a
-participant is not itself an adjudication of that participant's interests.
+The next step in this sequence names Appeals, the convocation and both
+qualification functions in fresh disclosures. Rex's conviction still derives.
+An allegation against a participant is not itself an adjudication of that
+participant's interests.
 Eligibility continues to require the positive independent finding; silence
 about family ties or a different institutional name cannot supply it.
 

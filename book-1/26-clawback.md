@@ -12,11 +12,12 @@ fine, a wage deduction or a judgment about every other act of Bela's life.
 
 ## A claim can be corrected without condemning every contribution
 
-The pins add an entry recording Bela's unrelated care. They also supply a
-wage promise from Foundry, an independent authorised attestation on the labour
-basis, and an independently supported illness claim under Ledgerhouse's
-contributory scheme. The care entry remains; the wage and supplement derive.
-Bela's general credibility finding decides none of them.
+Here Bela is the claimant, Foundry the wage payer and Ledgerhouse the carrier
+of the illness supplement. The test keeps Bela's finding and adds an unrelated
+care entry, Foundry's wage promise with an independent authorised attestation
+on the labour basis, and an independently supported illness claim under
+Ledgerhouse's contributory scheme. The care entry remains; the wage and
+supplement derive. Bela's general credibility finding decides none of them.
 
 Compensation has its own fraud rule. A Court finding on another basis leaves
 the wage conclusion intact. A finding on its attested labour basis stops that
@@ -37,13 +38,15 @@ No prisoner conclusion follows in this case. The compensation correction
 leaves the food debt intact too.
 
 The supplied record does not establish that food or shelter reached Bela.
-It does not establish that Jala received food either, although Jala is not
-voided. Neither absence establishes starvation or delivery. The comparison
-prevents a missing receipt from being presented as the effect of a finding.
+It does not establish that Jala received food either. Jala is the comparison
+subject without an effective credibility finding. Neither absence establishes
+starvation or delivery. The comparison prevents a missing receipt from being
+presented as the effect of a finding.
 
-Lupo's adverse case does not create a finding against Mira. Bela's case does
-not create one against Cira. An accusation supplies no lesser personal penalty
-while waiting for the case it cannot establish.
+Lupo's finding for deceiving Mira does not create a finding against Mira,
+the person deceived. Bela's case creates none against Cira, the learner Bela
+taught. An accusation supplies no lesser personal penalty while waiting for
+the case it cannot establish.
 
 ## Cira's separate claim
 
@@ -62,9 +65,11 @@ no corrected outside record or performed act of representation.
 
 ## Ending the restriction
 
-Vex's prior case produces an effective personal finding. A carried credential
-restriction separately blocks the appointment, while public answerability
-remains. Those conclusions have different grounds and need different endings.
+The restoration example returns to Vex, whose electorate seating is recorded
+but whose auditor's credential is blocked. Vex's prior case produces an
+effective personal finding. A carried credential restriction separately blocks
+the appointment, while public answerability remains. Those conclusions have
+different grounds and need different endings.
 
 The restoration test supplies a forgiveness flag and a generic Appeals
 judgment. Neither ends the case. The particular appellate act must identify

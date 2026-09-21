@@ -47,16 +47,18 @@ pay requirements. Recording the activity establishes none of those conditions.
 
 ## An examination is not authority
 
-Gia's documented examination of Bela and its stated ground remain in the
-record. Yano supplies a judgment and documented examination of Adam, then
-adds Hunch as the ground. The added word does not confer an auditor's
-credential, establish the ground's truth or complete an adverse case.
+Gia, one of the examiners in Bela's credibility case, has an examination and
+its stated ground in the record. A separate test records a judgment and
+examination by Yano about Adam, then adds a ground labelled Hunch. Giving
+Yano a ground to cite does not confer an auditor's credential, establish the
+ground's truth or complete an adverse case.
 
-Dev judges Dev's own child. That relationship bars the proposed adverse
-finding; it does not turn the examination into a finding against Dev. A
-separate case must establish any concealed conflict. Boss's examination and
-its ground also remain recorded beside Boss's recall. An examination entry
-cannot restore the recalled credential.
+Dev records a judgment about Esa, Dev's child. That relationship bars the
+proposed adverse finding; it does not turn the examination into a finding
+against Dev. A separate case must establish any concealed conflict. Boss
+supplies another contrast: recall blocks the auditor's credential, while the
+examination and its ground remain recorded. An examination entry cannot
+restore the recalled credential.
 
 An auditor's pay, if claimed, needs the ordinary compensation record. Merely
 examining someone creates no constitutional acknowledgment or payment. Whether
@@ -70,9 +72,10 @@ Bela from qualifying a new adverse finding against somebody else while the
 case remains effective. It does not establish that Bela never taught Cira,
 that Cira learned nothing, or that every other contribution was dishonest.
 
-The pins add an unrelated care entry for Bela and independently supported
-wage and illness-supplement claims. Those claims derive despite the personal
-finding. Compensation fraud on another basis does not defeat this wage;
+In a separate test, Bela is the claimant in both a wage and an illness case.
+The record supplies independent support for each claim and an unrelated care
+entry, while retaining Bela's personal finding. Both claims derive.
+Compensation fraud on another basis does not defeat this wage;
 a finding on the wage's own attested basis does. The supplement still derives,
 and Bela remains owed food. Correction follows the particular claim's rules.
 

@@ -127,6 +127,54 @@ reinstate the retired tooling or workflow.
 Grouped by kind. Dates in each heading are the ratification dates; a ruling
 that was later implemented or narrowed carries that supersession inline.
 
+### Item 27 — identifiable cases and explicit roles, 2026-09-21
+
+Under the standing delegated approval, the opening's optional case index and
+Chapters 9, 10, 23–26 and 30 identify people and bodies by their role in each
+example. The earnings claims remain separate; Bela's claims have their own
+records. The appointment and voiding cases identify the subject, signers and
+reviewer, with Nogra, Nogrb, Targ4 and Partnr retained as executable names.
+The shield headings state the distinction made by each defendant's case.
+Steps in one test are distinguished from separate examples, and the opening
+warns against assembling isolated cases into a biography. The existing
+narrative-register decision records the exact approved canonical prose.
+
+Reviewing the recurring cases found a stale premise in Chapter 30: Ruk is
+eligible for consideration of home confinement, but the supplied authority
+names secure placement. The alarm compares the placement report with that
+authority. The corrected explanation follows the current constitution and
+Chapter 28's existing positive home-eligibility and conflicting-report pins.
+There is no new policy or formal repair in this item. The source, pins,
+identifiers and suite inventory are unchanged.
+
+Two distinct prose locators, occurring three times, are updated in the
+existing full-society ledger. The reader-coverage JSON and generated report
+follow four renamed shield headings and correct the case descriptions that
+reversed Don/Pax roles, implied actual voting, or misstated the scope of a
+credibility finding. The placement entry now names the actual authority
+comparison and its executing Chapter 28 pins. All 238 passage classifications
+remain. These updates renew no historical assurance verdict and add no
+inventory or verification gate.
+
+Focused checks pass 56 Chapter 9 pins (12.93s), 34 Chapter 10 pins (12.66s),
+102 Chapter 24 pins across two cases (18.10s), 198 Chapter 25 pins across two
+cases (24.13s), 73 Chapter 28 pins (12.37s) and 37 Chapter 30 pins (13.54s).
+All five claim-discipline, six reference-integrity and ten reader-coverage
+checks pass. Initial reference and coverage failures identified the old
+locators and headings; the existing records are updated and both suites pass
+on recheck. The complete `RIGHTS_VERIFY_JOBS=4 ./verify.sh` passes
+**88,815 pins across 16,137 cases**, with complete contradiction checks and
+no findings, in **1,182.24s**. The five-minute target remains unmet. All formal
+inputs remained unchanged throughout the run. Item 27 is complete.
+
+The separate prose review measures 58,359 words across 34 ordered inputs,
+excluding HTML comments and splitting on whitespace. The derived chapters
+contain 41,038 words (70.32%); the opening is 3,938 words. The early Chapter 1
+link and required opening sequence remain. No biography, testimony or outside
+success is supplied, and this editorial review is not a reader study. The
+chapter order, three exempt channels, required child tests and their exemptions
+remain; Book 2 stays collection-only until Gate C.
+
 ### Item 26 — reader consequences and optional implementation detail, 2026-09-21
 
 Under the standing delegated approval, Chapters 3, 4, 9, 18, 21, 22, 23, 26

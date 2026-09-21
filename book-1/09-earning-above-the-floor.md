@@ -6,9 +6,10 @@ floor. It cannot become the price of standing, political membership or a
 remedy. The same boundary protects someone who has never been employed and a worker
 whose employer or insurer fails.
 
-The chapter's cases follow distinct claims: freedom to undertake employment, a record
-of compensation, and a supplement after illness. None measures a person's
-worth, and none establishes that money arrived.
+The chapter follows freedom to undertake employment, then three separate
+claims: Ansel's certificate, Coll's wage and Marlo's illness supplement.
+Each has its own issuer or payer and supporting evidence. None measures a
+person's worth, and none establishes that money arrived.
 
 ## What makes someone a worker
 
@@ -52,10 +53,12 @@ reconciliation record. Withdrawal and temporary control have separate powers.
 An expired term ends the restrictive authority without erasing ordinary rights
 or accrued claims.
 
-A certificate records a narrower claim. In the pins, Assayer is authorised to
-certify Ansel and attests welding in the certification scope. The certificate
-derives although Ansel has no personhood entry. Brix's attempt to certify Brix
-does not. Wrong scope or missing authority also prevents the conclusion.
+A certificate records a narrower claim. Ansel is the subject of a welding
+attestation; Assayer is the authorised certifier. The attestation covers Ansel
+and the certification purpose, so the certificate derives although Ansel has
+no personhood entry. In the separate self-certification test, Brix is both
+certifier and subject; no certificate derives. Wrong scope or missing
+authority also prevents the conclusion.
 
 No rule reads the certificate into standing or the floor. Nor
 does its derivation establish that Ansel can weld: the model checks the supplied
@@ -64,35 +67,38 @@ qualification a condition of basic rights.
 
 ## What a compensation record establishes
 
-Foundry promises Coll a wage. That alone derives no compensation. Steward, authorised
-as Coll's compensation attester and distinct from Foundry, attests the wage on
-the stated labour basis. The compensation conclusion then derives. A payer's
-self-attestation cannot complete the rule.
+In the wage case, Foundry is the payer and Coll the recipient. Foundry's
+promise alone derives no compensation. A separate authorised attester,
+Steward, attests Coll's wage on the stated labour basis. The compensation
+conclusion then derives. The payer cannot supply its own independent
+attestation.
 
 Compensation above the floor uses one relation with the kind named in it:
 wage, profit, return, grant, prize, subsidy or incentive. Matching matters. A
-wage attestation does not establish a prize. In another case Foundry promises
-Dunya an incentive while Steward attests a metric; no incentive derives. This
-tests a mismatch between records. It does not show that targets cannot be
-gamed or that an attester's matching statement is true.
+wage attestation does not establish a prize. A separate case keeps Foundry as
+payer and Steward as attester, but names Dunya as recipient. Foundry promises
+an incentive while Steward attests a metric; no incentive derives. The records
+do not match. That result does not show that targets cannot be gamed or that
+an attester's matching statement is true.
 
 Compensation is separate from standing, the floor, the vote and liberty. A
 certificate or wage does not pass to a child. A personal credibility finding
 does not by itself remove compensation.
 
-The fraud case is specific to the attested basis. A Court finding of Coll's
-compensation fraud on the labour basis stops the wage conclusion in this case
+The fraud test returns to Coll's wage. A Court finding of Coll's
+compensation fraud on the attested labour basis stops the wage conclusion
 and derives restitution from Coll to Foundry. A finding on another basis does
 not do so. These are conclusions about compensation and restitution, not a
 record of either payment; the floor remains outside the dispute.
 
 ## A supplement above the floor
 
-Marlo has a contribution record with Ledgerhouse under SchemeM. An illness
-supplement does not yet derive. Assay, authorised to adjudicate insurance for
-Marlo and distinct from the carrier, records illness under the same scheme.
-The supplement follows. Unemployment does not, and no personhood entry was
-needed to complete the illness claim.
+Marlo is the claimant in the illness case. Ledgerhouse is the carrier, and
+SchemeM names its contributory scheme. Marlo's contribution record alone
+derives no supplement. A separate authorised adjudicator, Assay, records
+Marlo's illness under that same scheme. The illness supplement then follows;
+an unemployment supplement does not. No personhood entry was needed to
+complete this claim.
 
 This is the route for contribution-based supplements for illness, disability,
 unemployment, caregiving, workplace injury, ageing or survivorship. The record
@@ -115,17 +121,19 @@ another consequence and rules may not invent them. The
 differ. The restriction is part of this design; it is not a claim that no
 harmful alternative can be written.
 
-No supplement derives for the supplied cast, whose record contains no
-contribution history. That is not evidence that anyone is uninsured. Marlo's
-case establishes the route; it supplies neither an amount nor a payment.
+Marlo's test adds evidence absent from the ordinary cast's record. No
+supplement derives for that cast, but missing contribution history is not
+proof that anyone is uninsured. The successful illness claim supplies neither
+an amount nor a payment.
 
 ## When the money runs out
 
-A Court finding that Ledgerhouse is insolvent under SchemeM makes Marlo's
-supplement derive against PublicGuarantee as well. It does not erase the
-carrier's conclusion. The same contribution record and independent illness
-finding remain necessary; insolvency at another scheme changes nothing here.
-The guarantee conclusion establishes no funded reserve or actual transfer.
+The next step keeps Marlo's claim and adds a Court finding that Ledgerhouse
+is insolvent under SchemeM. The supplement then also derives against the
+public guarantor, named PublicGuarantee. The carrier remains liable under the
+same conclusion. Marlo's contribution record and the independent illness
+finding are still necessary; insolvency at another scheme changes nothing
+here. The guarantee conclusion establishes no funded reserve or actual transfer.
 
 The wider requirement is effective protection of unpaid wages and earned
 pensions, including where an estate is empty. Shareholders bear residual risk
