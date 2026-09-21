@@ -2,6 +2,27 @@
 
 # The whistleblower shield: scoped to the case
 
+## Comparative argument — item 24, 2026-09-21
+
+The exact [Part V comparison](../../31-the-five-joints.md#protection-while-the-connection-is-disputed)
+is session-drafted and author-approved under the standing delegated approval.
+The competing procedure now receives its strongest form: an immediate
+case-specific protective order on a credible showing, followed by expedited
+independent review. It is not assumed to withhold all protection until final
+proof. Its initial burden remains relevant where an implicated authority
+controls needed evidence or access to a hearing. The present default instead
+protects pending the qualified finding while retaining the unrelated-case
+route, actual-conflict bar and the victim's separately grounded remedies.
+
+The account distinguishes deceit, unrelatedness and reviewer eligibility;
+additional signatures alone have no value. It identifies delay to an injured
+person and treats equal protection with fewer obstructed cases as evidence
+favouring the alternative. The permanent answerability comparison with an
+act-specific record remains conditional, not an impossibility claim. No new
+constitutional defect or inability to operate a timely alternative is inferred
+from missing supplied evidence. The item changes the argument, not the rule
+or the retained disclosure-veto counterfactual.
+
 ## Positive reviewer eligibility — item 10 supersession, 2026-09-19
 
 The current design replaces the blanket `~show` exclusions described in the

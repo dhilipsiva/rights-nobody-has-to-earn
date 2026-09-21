@@ -974,6 +974,30 @@
       "fetch": null,
       "book": "book-1",
       "notes": "The printed document is dated 2021 despite the 2020 filename. This is its stated scale, not a fresh census of every cooperative or subsidiary. It cannot be treated as the same measure, population or period as EPI’s CEO-to-industry-worker ratio."
+    },
+    {
+      "id": "german-basic-law-constructive-replacement",
+      "claim": "Article 67 of Germany's Basic Law requires the Bundestag to elect a successor when withdrawing confidence from the Chancellor; constructive replacement is compatible with a prime-ministerial executive.",
+      "value": null,
+      "units": null,
+      "source": "Federal Ministry of Justice and Federal Office of Justice, Grundgesetz, Article 67, https://www.gesetze-im-internet.de/gg/art_67.html",
+      "retrieved": "2026-09-21",
+      "method": "reference",
+      "fetch": null,
+      "book": "book-1",
+      "notes": "The current German statutory text was read on the retrieval date. This establishes a constitutional provision, not its causal effects or the superiority of either executive design."
+    },
+    {
+      "id": "iccpr-article-4-derogation",
+      "claim": "ICCPR Article 4 permits strictly required derogations in an officially proclaimed emergency threatening the life of the nation, subject to specified limits, non-derogable rights and notification.",
+      "value": null,
+      "units": null,
+      "source": "United Nations Office of the High Commissioner for Human Rights, International Covenant on Civil and Political Rights, Article 4, https://2covenants.ohchr.org/About-ICCPR.html",
+      "retrieved": "2026-09-21",
+      "method": "reference",
+      "fetch": null,
+      "book": "book-1",
+      "notes": "Article 4 was read in the OHCHR-hosted treaty text. Part V uses the framework to describe a bounded legal alternative, not to claim that a particular response complied with it or succeeded."
     }
   ]
 }

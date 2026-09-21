@@ -2,6 +2,27 @@
 
 # Book 1 Ecological, Future-Generation, Commons, and Non-Human-Animal Decision
 
+**Entrenchment argument — item 24, 2026-09-21.** The exact
+[Part V protected-core argument](../../31-the-five-joints.md#what-a-majority-may-not-remove)
+is session-drafted and author-approved under the standing delegated approval.
+It gives animal protection its own moral ground in suffering and continued
+life, rather than importing the human franchise argument. Revisable welfare
+law is the principal alternative; inability of animals to contest a benefiting
+majority through a ballot is the reason offered for direct protection beyond
+amendment. This is an explicitly defended normative choice, not a theorem or
+an empirical result about institutional success.
+
+The unamendable scope remains direct protection of credibly sentient animals,
+severe avoidable suffering and dispensable killing. Species evidence,
+protective standards, methods and lawful uses remain revisable within that
+core. The text identifies workers, food practices, cultural and Indigenous
+claims, and retains their own rights and least restrictive accommodation
+without treating them as blanket animal-core waivers. It preserves the
+separate human and ecological claims in item 23's water-service case. Actual
+effect review, reasons and challenge must distinguish an indispensable
+protection from a replaceable instrument. No new permission, empirical fact,
+unamendable institution or source rule is introduced.
+
 > **Status: author-ratified on 2026-08-08; formal implementation pending.**
 > This decision selects Book 1's ecological, future-generation, commons, and
 > non-human-animal baseline. It adds no predicate, rule, fact, pin, metric,

@@ -2,6 +2,19 @@
 
 # Book 1 Economic Pluralism and Protected Private Sphere Decision
 
+**Comparative argument — item 24, 2026-09-21.** The exact Part V comparisons
+under Capture and
+[Essentials, public responsibility and fiscal choice](../../31-the-five-joints.md#essentials-public-responsibility-and-fiscal-choice)
+are session-drafted and author-approved under the standing delegated approval.
+Exclusive public provision, an income guarantee, voluntary/contributory finance
+and a constitutional balanced-budget rule receive their own reasons and costs.
+The provider mix remains a democratic instrument within public responsibility
+for the floor. Contractor/agency blame shifting burdens the recipient;
+non-delegable continuity and independently justified intervention address it.
+Neither public ownership nor a cash payment establishes delivered provision.
+No market share, fiscal result, financing capacity or successful alternative
+is inferred from the permitted forms. The argument changes no economic rule.
+
 > **Status: author-ratified on 2026-08-07; formalized and prose-landed on
 > 2026-08-28; current-source repository audit pending.** This decision selects
 > Book 1's economic and protected-private-sphere settlement. Its formal

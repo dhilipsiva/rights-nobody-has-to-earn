@@ -127,6 +127,53 @@ reinstate the retired tooling or workflow.
 Grouped by kind. Dates in each heading are the ratification dates; a ruling
 that was later implemented or narrowed carries that supersession inline.
 
+### Item 24 — institutional alternatives and the protected cores, 2026-09-21
+
+Under the standing delegated approval, Part V now separates reasons to protect
+rights from reasons to choose or entrench an institutional instrument. Its
+exact approved text and comparative assessment are recorded in the existing
+state-form decision and the owning appointment, record-power, shield,
+economic, emergency and ecological records. No source rule, pin expectation,
+suite route or constitutional threshold changes in this item. The finding was
+an incomplete comparative argument, not an executed new constitutional defect.
+
+The revised comparisons cover appointment separation, privacy and coordination,
+immediate case-specific shield protection, unitary and federal authority,
+territorial and population-based representation, a prime minister and collective
+executive, formal presidential functions, residence and diaspora membership,
+provider forms and public continuity, and bounded emergency derogation. Each
+identifies people bearing the cost, existing safeguards and reasons to prefer
+an alternative. The protected-core argument separately addresses the continuing
+standing of a defeated political participant, children and people unable to
+participate, and animals' direct interests without a franchise. It distinguishes
+the core from revisable instruments and examines the costs of entrenched
+interpretation and the amendment threshold itself. Items 21–23 remain intact.
+
+The current official German Basic Law Article 67 and OHCHR-hosted ICCPR Article 4
+were read as primary legal comparisons and added to the existing claims registry
+and Part V bindings. They establish constitutional provisions, not successful
+operation or a causal case for this design. Historical examples retain their
+qualified evidential roles. No external testimony, operation or review is claimed.
+
+Focused checks pass 43 state-form pins, 102 shield pins across its chapter and
+selected counterfactual, and 32 amendment pins. The five existing claim-discipline
+tests and six reference-integrity tests pass on the final prose. The optional
+`cargo fmt --all -- --check` reports formatting differences in ten authoring
+files, reproduced against `HEAD` with the same formatter and edition settings;
+this item does not include an unrelated formatting sweep. The complete
+`RIGHTS_VERIFY_JOBS=4 ./verify.sh` passes **88,815 pins across 16,137 cases**,
+with complete contradiction checks and no findings, in **1,137.24s**.
+The five-minute target remains unmet. All formal inputs were in place before
+the run and remained unchanged throughout it; prose was reviewed separately.
+
+Separate prose review checked the current-rule account, serious alternatives,
+cost-bearers, actual safeguards, source qualifications and the distinction
+between commitments and instruments. The ordered manuscript remains 34 inputs
+and measures **56,409 whitespace-delimited words**, excluding HTML comments;
+**40,716 are derived (72.18%)**. Part V accounts for 9,338. The chapter order,
+unnumbered epigraph and method, child slots, exemptions and Book 2 boundary
+remain intact. No reader-facing revision history is added.
+
 ### Item 23 — comparative scarcity decisions and separate protected claims, 2026-09-20
 
 Under the standing delegated approval, the existing

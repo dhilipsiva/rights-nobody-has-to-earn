@@ -2,6 +2,27 @@
 
 # Book 1 Public-Safety, Defence, Emergency, and External-Power Decision
 
+## Emergency comparison — item 24, 2026-09-21
+
+The exact [Part V argument](../../31-the-five-joints.md#emergency-action-without-suspended-rights)
+is session-drafted and author-approved under the standing delegated approval.
+It compares the current rule with a temporary, necessary, independently
+reviewable derogation regime retaining specified rights. The OHCHR-hosted
+ICCPR Article 4 supplies a primary example of bounded derogation conditions;
+no empirical performance or universal compliance is attributed to the treaty.
+
+The current acceleration, resource, requisition and hazard-restriction routes
+remain available on their own grounds and ends. Rights and institutions,
+elections, mandate limits and the prohibition of decree government remain.
+The argument identifies both the restricted person and the person exposed to
+the hazard as possible cost-bearers. It requires examination of a specified
+additional power, protection, harms and alternatives, rather than treating
+speed or an emergency label as sufficient. A demonstrated inability of a
+constitutional route to address an identified need requires concrete repair;
+it is not defended as necessary merely because it is disclosed. No such new
+failure is established in this editorial item. No emergency rule, temporal
+contract or pin changes. Item 22's repaired custody boundary remains intact.
+
 ## Severity as a ceiling, 2026-09-20 — item 22
 
 This subsection and its exact source, test and reader text are

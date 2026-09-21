@@ -5,8 +5,9 @@
 Created 2026-09-18 and refreshed 2026-09-20 at the author's request:
 "Refresh TODO to make book a 10/10."
 
-**Active: items 24–33 below are pending.** Items 01–23 were
-completed on 2026-09-20. The first round's [final manuscript review](reviews/2026-09-20-final-manuscript-review.md),
+**Active: items 25–33 below are pending.** Items 01–23 were
+completed on 2026-09-20 and item 24 on 2026-09-21. The first round's
+[final manuscript review](reviews/2026-09-20-final-manuscript-review.md),
 subsequent coherent commits and `CLAUDE.md` retain the assessments, repairs and
 validation. This refresh opens further work; it does not reverse those
 completed implementations or declare a released edition or Gate C. Book 2
@@ -133,31 +134,11 @@ solutions and development history stay outside the book's reading sequence.
 
 ## Ordered revision backlog
 
-Work in this order. Item 24 settles the remaining substantive questions before the
-opening and editorial passes depend on its answers. Each item includes its
+Work in this order. Item 25 brings the substantive choices into the opening
+before the remaining editorial passes. Each item includes its
 own relevant validation under the execution contract; item 33 is a final
 integration review, not permission to defer earlier checks. Chapter numbers
 refer to the [current reading sequence](book-1/contents.json).
-
-- [ ] **24. Complete the argument for the consequential institutional choices.**
-
-  **Scope:** Part V, with the mechanisms explained in Chapters 8, 11–20, 22–24
-  and 29; incorporate the outcomes of items 21–23.
-
-  Reassess the strongest alternative to each major choice, including appointment
-  separation, the territorial chamber, collective executive, residence-first
-  membership, the shield's provisional reach, privacy and coordination,
-  emergency limits, and the scope of the unamendable human and animal cores.
-  Distinguish the reason to protect a right from the reason to entrench a
-  particular mechanism. Identify the person bearing each cost, the safeguard
-  that actually reaches it, and evidence that would favour an alternative.
-  Historical examples must support a stated comparison rather than stand as
-  warnings from which this design's success is inferred.
-
-  **Done when:** important choices have reasons beyond their compatibility with
-  the model or the author's preference. Strong alternatives receive fair
-  treatment. Any confirmed design failure is resolved under the standing rule;
-  disclosure and promises that Book 2 will answer it do not close the item.
 
 - [ ] **25. Bring the central choices into the opening and reading route.**
 

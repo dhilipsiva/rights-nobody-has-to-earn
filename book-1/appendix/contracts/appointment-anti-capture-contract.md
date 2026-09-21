@@ -2,6 +2,21 @@
 
 # Book 1 Appointment Anti-Capture Contract
 
+**Comparative argument — item 24, 2026-09-21.** The exact
+[Part V appointment argument](../../31-the-five-joints.md#independent-appointments)
+is session-drafted and author-approved under the standing delegated approval.
+Elected confirmation and professional self-government are treated as serious
+alternatives. Divided selection, qualification, nonrenewal and cause-only
+removal have separate reasons; neither different selector names nor a formal
+prohibition proves actual independence. The costs reach claimants waiting
+through vacancies and voters with less direct control, while professional
+qualification itself can shelter exclusion. The existing alternate route,
+public reasons and challenge address those risks without proving performance.
+Comparable independence with faster correction favours a simpler arrangement.
+No contract, scope, anti-capture vocabulary or substantive expectation changes.
+The older status and tooling language below records the original contract;
+the current verification ruling in `CLAUDE.md` governs this item.
+
 **Status: Specified contract card, session-drafted and author-approved
 2026-09-08, including the choices in section 11.** This is not a new author
 ruling. It is the contract card for the named source kinds and control modes of

@@ -2,6 +2,74 @@
 
 # Book 1 State Form and Political Membership Decision
 
+## Comparative justification — item 24, 2026-09-21
+
+The exact current text of [Part V](../../31-the-five-joints.md), including its
+new institutional comparisons and protected-core argument, is
+`session-drafted, author-approved under delegated approval (2026-09-13)`.
+This item repairs an incomplete argument. It changes no constitutional
+authority, amendment threshold, political membership condition or pin verdict.
+The implementation records below supersede the original pending status.
+
+The review checked the current state-form, appointment, membership, amendment,
+record-power, shield, emergency and ecological interfaces before revising the
+argument. Items 21–23 already supply the removal of general recognition and
+clawback, the gravity ceiling distinct from placement necessity, and comparative
+scarcity reasons with separate protected claims. The revised argument retains
+those outcomes. No new executed constitutional counterexample is claimed.
+An explanatory omission is not a proof that an institutional alternative is
+impossible, and ordinary comparative costs are not reclassified as necessary
+formal defects to avoid repair.
+
+The principal alternatives and reasons now appear in the reading sequence:
+
+- A unitary republic with delegated local administration competes with federal
+  self-government. The selected division protects authority from unilateral
+  common withdrawal; equality, portability, competence review and interim
+  floor protection address residents' exposure to unequal provision or a gap
+  between disputing offices. Repeated failure to assign a responsible holder
+  favours a simpler allocation.
+- A population-proportional single chamber with protected competence and
+  judicial review, or a population-weighted second chamber, competes with
+  equal regional weight. The selected Council gives regions a part in changing
+  their federal terms. Its ordinary return is limited to once and the Assembly
+  repasses under the same voting rule. Delay and unequal indirect influence
+  remain costs to residents; comparable protection without them would favour
+  the alternative.
+- A prime minister and cabinet compete with the collective executive. Shared
+  legal authority at decision, rather than the coordinator's discretion to
+  consult, is the reason for the Council. Constructive replacement is not
+  unique to it: the current official German Article 67 supplies a primary
+  comparison. Bargaining delay and difficulty assigning responsibility count
+  against collectivity. Individual answerability and public reasons do not
+  establish that those costs are cured in practice.
+- The Civic President is compared with a speaker or existing independent
+  officer performing bounded formal acts. Separate authorization and a finite
+  alternate route protect certified outcomes; an equally independent simpler
+  arrangement would remove the reason for a separate office.
+- Accessible citizenship and a diaspora franchise compete with residence-first
+  membership. The latter includes adults under the continuing government of
+  their home without citizenship or waiting-period gates. One voluntary home,
+  forced-displacement continuity and provisional independent review address
+  manipulation and exclusion. A former resident's retained petition, return
+  and protection are expressly not equivalent to a ballot. Children and
+  affected nonresidents retain claims outside the adult-resident franchise.
+- Successive supermajorities or referendums with a fully revisable core compete
+  with permanent human entrenchment. The selected core preserves the defeated
+  participant's standing, means to live, dissent and remedy. It does not
+  entrench a provider mix or justify every institutional means. The Assembly
+  supermajority plus referendum has a separate justification and a separate
+  cost in obstruction by an institutional minority. No optimal threshold is
+  inferred from the formal model.
+
+The appointment, record, shield, emergency and animal comparisons are recorded
+in their existing owning decisions and contracts. Primary legal comparisons
+are registered in `registry/claims.json` and the existing Part V claim bindings;
+they establish provisions, not successful institutional operation. Historical
+episodes and the observational democracy calculation retain their explicit
+limits. The formal checks and separate prose review are recorded in `CLAUDE.md`
+on completion; the argument itself is not a verification result.
+
 > **Status: author-ratified on 2026-08-07; formal implementation pending.**
 > This decision selects Book 1's constitutional state form and political-
 > membership rules. It adds no predicate, rule, fact, pin, institution in law,

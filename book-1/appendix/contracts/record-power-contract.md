@@ -2,6 +2,19 @@
 
 # Records, surveillance and automated power
 
+**Comparative argument — item 24, 2026-09-21.** The exact text of
+[Records and coordination](../../31-the-five-joints.md#records-and-coordination)
+is session-drafted and author-approved under the standing delegated approval.
+It compares the existing purpose limits with broader linked records under
+professional discretion. Both missed coordination and unrelated reuse can
+harm the person dependent on several services. Assistance, initiation,
+continuity, correction and independent review are existing duties, not new
+sharing authority. Floor access cannot buy consent to unrelated collection.
+The comparison must count missed care, repeated burdens and abandoned referrals
+alongside unwanted reuse and deterred access. A broader route meeting the same
+rights with better care would favour change; no operational result or inherent
+virtue of a smaller database is claimed. No source rule or verdict changes.
+
 **Final item-19 integration, 2026-09-20.** The current source passes 88,024
 pins across 16,087 cases in 1,169.06s, with complete contradiction checks and
 no findings. No active known-defect annotations remain. The focused and failed

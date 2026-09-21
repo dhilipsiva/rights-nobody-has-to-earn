@@ -28,6 +28,20 @@ it needs correction. If the way exists in law but nobody operates it, the
 right remains unfulfilled. Neither result becomes a success because it can
 be described accurately.
 
+The commitments and their instruments need different reasons. Equal standing
+does not by itself choose two legislative chambers, a collective executive or
+a particular appointment procedure. Those arrangements require an argument
+about how they protect people, what they obstruct and whether another
+arrangement would do the work with fewer burdens. Their constitutional status
+makes alteration deliberate; it does not make every institutional detail part
+of the unamendable core.
+
+The core itself needs a harder defence. A future majority may reject the
+founders' judgment. Refusing that majority authority to remove a protection
+is a decision about who must bear its error, not a deduction from consistency.
+I distinguish below the reasons for preserving standing, essentials and direct
+animal protection from the reasons for selecting their present institutions.
+
 ## Valuation
 
 The objection begins with a person whose contribution is poorly seen. How
@@ -397,6 +411,18 @@ An ownership label neither establishes those grounds nor defeats them. This
 keeps the question on what a person can refuse, challenge or leave, rather
 than on an institution's preferred account of itself.
 
+Exclusive public provision offers a simpler line of responsibility for
+essentials. Entrenching it would also prevent a different provider arrangement
+from being chosen where it serves people better. I leave that choice to
+democratic law while keeping public responsibility for the floor. The cost
+of plural provision falls on the person sent between an agency and its
+contractor, each blaming the other. Non-delegable continuity and separately
+justified powers of intervention address that evasion. If a mixed arrangement
+repeatedly defeats access or remedy, its ownership freedoms give no reason
+to preserve it. Conversely, public ownership by itself supplies no evidence
+that provision arrived. The comparison concerns accessible service and
+answerability, not a constitutionally preferred provider label.
+
 The record problem reaches essentials directly. Drèze and his coauthors
 report the cancellation of over a million cards in Jharkhand for want of an
 Aadhaar link. Muralidharan, Niehaus and Sukhtankar estimate that between one
@@ -432,6 +458,8 @@ its inputs, not on what people may investigate or challenge. Independent
 contact routes, evidence, assistance and review remain duties precisely
 because their performance cannot be inferred from agreement inside the file.
 
+### Records and coordination
+
 The strongest alternative to a restricted personal record is a broader linked
 record, with professional discretion to use it. Care and housing histories
 could reveal an unmet need without making someone repeat the account at every
@@ -446,10 +474,28 @@ shortcut to somebody else's obligations or authority. Population patterns
 can support investigation and remedy without assigning inherited guilt to a
 person. Environmental and animal evidence likewise addresses its stated
 interest and purpose, not the comparative worth of human claimants. The cost
-is lost convenience and coordination. A bounded sharing rule that supplies
-necessary care with less exposure and equal access would improve the design;
-a small database is not an achievement if people disappear between its
-permitted purposes.
+falls especially on people who need several services, cannot repeatedly
+explain their circumstances, or depend on someone else to communicate.
+Requiring them to carry every paper would transfer the burden of privacy to
+the person least able to bear it. Duties to initiate help, provide accessible
+assistance and preserve care when a provider fails remain necessary alongside
+the record limits.
+
+The competing danger falls on the same person. A joined account can carry a
+housing dispute into a care decision, or turn the pursuit of help into an
+opportunity for enforcement. Consent is a weak answer where refusing linkage
+means losing an essential. The design requires a lawful purpose, necessary
+use, correction and access to independent review. Access to the floor cannot
+purchase agreement to unrelated collection.
+
+A broader coordination route would deserve adoption if it reduced missed
+care without permitting unrelated reuse, conditioning essentials or weakening
+correction. Repeated requests for the same information, abandoned referrals
+and people lost between services count against the restricted design;
+unwanted reuse and deterred access count against broader linkage. Neither
+database size nor the number of recorded permissions settles that comparison.
+
+### Independent appointments
 
 Appointments require a comparable choice. Letting an elected majority appoint
 reviewers through open confirmation gives voters a clear line of
@@ -461,13 +507,26 @@ appointment control by one coalition, because different appointing names do
 not establish different interests. A prohibition is not evidence that the
 appointments obey it.
 
-The purpose is scrutiny by people whose next appointment the government does
-not control. The costs are slower agreement, vacancies and less direct
-electoral control. Alternates address a selector's failure to act; they are
-not evidence of independence in fact. Repeated delays or a coalition's
-control across nominally separate sources would count against this
-arrangement. A simpler method offering comparable independence, accessible
-challenge and faster correction would deserve preference.
+The purpose is scrutiny that the government cannot control through the next
+appointment or a threat of removal. Open competition alone cannot supply that
+independence if one coalition selects everyone. A nonrenewable mandate removes
+the inducement of reappointment, although it cannot remove ambition or outside
+loyalty. Removal for stated cause allows misconduct to be addressed without
+making an adverse decision itself grounds for dismissal.
+
+The costs reach a claimant waiting through a vacancy and voters unable to
+replace a reviewer whose decisions they reject. Professional qualification can
+also become a profession's barrier to entry. Public reasons, challenge and
+divided appointment sources address different parts of those risks; an
+alternate can take over when the selector's failure to act is established.
+None establishes that the people selected are independent in fact. Repeated
+loss of access to remedy, or one coalition controlling nominally separate
+selectors, would count against this arrangement. An elected confirmation
+route or a simpler mixed system that preserved independence while reducing
+those burdens would deserve preference. Protection from retaliation is the
+commitment; this appointment machinery must earn its place by serving it.
+
+### Protection while the connection is disputed
 
 Permanent answerability serves a narrower purpose. Removing an official must
 end their power without ending inquiry into its exercise or protection for a
@@ -483,12 +542,14 @@ act-specific record protects that person equally well with fewer obstructed
 cases would favour the alternative. The recall case establishes separation
 between current power and answerability, not a measured deterrent effect.
 
-The shield tests whose loss counts while a question is open. A hearing that
-grants protection only after the discloser shows a credible connection to the
-prosecution is a serious alternative. It reduces obstruction of unrelated
-cases. It also leaves an interval in which a court implicated by the
-disclosure can seek conviction while the discloser is still trying to obtain
-a hearing.
+The shield tests whose loss counts while a question is open. The strongest
+alternative is an immediate protective order for a particular case on a
+credible showing of retaliation, followed by an expedited independent
+hearing. It can protect a discloser without blocking every unrelated
+prosecution. Its initial burden still matters when an implicated authority
+controls the records needed to show the connection, or access to a hearing.
+The present default protects the discloser during that interval. Compensation
+after an abusive conviction cannot substitute for protection before it.
 
 Protection begins with the disclosure unless an effective deceit finding
 applies to that particular exposure.
@@ -499,6 +560,13 @@ occupied by a party or the prosecuting court. Naming those participants in
 fresh disclosures does not itself disqualify them; an authorised finding of
 actual conflict does, and a favourable certificate cannot cancel it. The
 case finding leaves the disclosure protected elsewhere.
+
+Whether a disclosure was deceitful, whether a prosecution is unrelated and
+whether its reviewers are eligible are different questions. Separating them
+prevents a prosecutor from establishing its own independence or using an
+unrelated conviction to discredit the disclosure. More signatures have no
+value in themselves: a duplicative step that only prolongs the wait would
+need removal or replacement, not a defence in the name of caution.
 
 A deceit finding needs its own completed case, identifying the subject,
 incident and evidence, with independent reviewers and the procedure and
@@ -603,6 +671,20 @@ needing essentials should not give another person a means to demand
 obedience. These are commitments to defend, not causal findings hidden in
 the country data.
 
+### Territorial power and the second chamber
+
+A unitary republic can decentralise administration while keeping a clear
+national responsibility for equal rights. Federal division instead gives
+regional and local electorates authority a common majority cannot withdraw
+at will. I choose that protection for self-government, subject to common
+rights, equalisation and portability. Otherwise the cost of local autonomy
+would fall on a resident whose region supplied less of the same entitlement.
+The cost of division falls on people sent between offices that deny
+responsibility. Review of competence, the last uncontested holder and bounded
+interim protection keep that dispute from creating a lawful gap in the floor.
+Repeated failures to assign an effective duty-holder would favour a simpler
+allocation of powers; local attachment alone cannot excuse them.
+
 The territorial chamber is a deliberate departure from population alone. A
 population-proportional legislature with protected regional competence and
 judicial review is a strong alternative. It gives adults equal weight in
@@ -611,39 +693,86 @@ a Regions Council is that changing the federal bargain changes a region's
 ability to govern itself, even where its population cannot assemble a
 national majority.
 
-Its cost must be admitted without turning regions into persons. Equal
-regional weight gives residents of a small region more indirect weight in
-the Council. I accept that departure within its limited mandate: a reasoned
-return of ordinary legislation that the Assembly can repass, and consent
-over the federal settlement. The ordinary-law return is not a permanent
-veto. Delay and the sheltering of entrenched regional interests remain
-possible. If protected competence and judicial review secured
-self-government equally well without that unequal influence, the additional
-chamber would lose its justification.
+Equal regional weight gives residents of a small region more indirect weight
+in the Council. A second chamber weighted by population would reduce that
+inequality, but could reproduce the same national majority when the terms of
+regional self-government are at issue. I accept equal regional weight within
+a limited mandate: one reasoned return of ordinary legislation, which the
+Assembly can repass under the same voting rule, and consent over the federal
+settlement. A resident awaiting an ordinary law bears the delay; a larger
+region bears the unequal weight in constitutional bargaining. Neither cost
+disappears because a regional legislature selects the delegates. The limited
+return prevents a permanent ordinary-law veto, while affected-region consent
+protects the people whose competence or boundary is changed. If protected
+competence and judicial review secured self-government equally well without
+that unequal influence, the additional chamber would lose its justification.
+
+### Collective government and identifiable responsibility
 
 A parliamentary prime minister with an accountable cabinet is the strongest
 competitor to the collective executive. It can give decisions a clearer
-owner while preserving legislative replacement. The Executive Council
-instead makes judgment collective and denies its coordinator a personal
-mandate to overrule it. I prefer a structure in which lawful government need
-not pass through an indispensable individual. Bargaining and dispersed
-responsibility are the costs. Constructive replacement preserves continuity
-but can keep an unpopular government in office while opponents cannot agree
-on a successor. Persistent failure to assign responsibility or act within
-lawful deadlines would strengthen the alternative; public reasons and
-bounded caretaker powers are safeguards, not performance data.
+owner while preserving legislative replacement. Requiring opponents to elect
+a successor before removing the government can accompany that alternative:
+Germany's Basic Law applies it to the Chancellor. It is no unique advantage
+of a collective executive.[^constructive-replacement]
+
+The Executive Council makes judgment collective and denies its coordinator
+a personal mandate to overrule it. The reason is to require shared legal
+authority at the point of decision, rather than rely on a leader's willingness
+to consult. A prime minister bound to the same collective decisions would
+narrow that difference. What matters is who can authorise the act, not the
+office's title. The cost reaches both the person waiting while members bargain
+and the voter trying to identify who should answer for the result. Collective
+confidence does not remove each holder's answerability for their acts; public
+reasons and separate review remain necessary. Constructive replacement also
+keeps an unpopular government in office while opponents cannot agree on a
+successor. Persistent failure to assign responsibility or act within lawful
+deadlines would favour a prime minister and cabinet that preserved the same
+limits. Bounded caretaker authority prevents deadlock from becoming a new
+policy mandate; it does not establish effective administration.
+
+The non-executive Civic President poses a smaller version of the same choice.
+A parliamentary speaker or authorised officer could perform formal acts.
+The separate office puts formal appointment and the promulgation of laws in
+hands outside the executive, while the President has no authority to frustrate
+a certified democratic result. It adds an appointment to fill and a stage
+that can delay completion. Finite selection and alternate routes limit that leverage.
+If an existing independent office could perform the same bounded functions
+without concentrating control, preserving a separate title would supply no
+reason to reject the simpler arrangement.
+
+### Residence and political membership
 
 Residence-first membership chooses whose voice counts. Citizenship with
-accessible naturalisation can preserve durable membership, including for
-people displaced abroad. It can also leave residents subject to daily public
-decisions waiting outside the electorate. Residence gives those adults an
-equal local voice without a property or contribution test. Its boundary
-excludes nonresidents at that tier despite attachments there, and children
-retain voice and protection without an adult ballot. One political home and
-continuity through forced displacement address competing claims and compelled
-moves. Systematic exclusion through those procedures would still require
-repair. Removing a citizenship gate does not excuse a new barrier at the
-residence desk.
+accessible naturalisation and a diaspora ballot can preserve durable
+membership across absence. It can also leave residents subject to daily
+public decisions waiting outside the electorate. Residence gives those
+adults an equal voice where they live, without a property, contribution,
+immigration-status or waiting-period test. One voluntary political home
+prevents choosing several electorates for the same tier; forced displacement
+does not itself remove the last uncontested home. That continuity matters
+because removal from a place must not become a way to remove its voters.
+
+The boundary still costs a former resident who has voluntarily established
+a home elsewhere but retains family, property or an intention to return.
+Petition, protection and the right of return preserve claims, but they are
+not substitutes for a ballot there. I give present residents the decision
+because they share the continuing government of the place. If the boundary
+repeatedly excluded people whose lives remained equally subject to that
+government, it would favour a bounded nonresident franchise. That alternative
+would also have to explain its weight alongside residents' equal voice.
+Within the residence rule, accessible
+evidence, provisional opportunity and independent review address exclusion
+at registration. Removing a citizenship gate does not excuse a new barrier
+at the residence desk.
+
+Residence does not make every affected person a voter. Children retain
+expression, participation and protection without the adult ballot; people
+affected beyond the border retain claims without gaining electoral weight.
+The membership argument establishes a reason to include adult residents,
+not a claim that a ballot exhausts political voice or every legitimate claim.
+
+### Essentials, public responsibility and fiscal choice
 
 A material floor faces a strong alternative in an income guarantee. Money
 allows choice without requiring the state to manage every service. This
@@ -673,15 +802,115 @@ dependence and displaced necessary investment would count against how that
 discretion was used. Refusing a constitutional numerical ceiling supplies
 neither a sustainable debt level nor permission to ignore the evidence.
 
-Emergency derogation offers speed and a wider range of responses. Its
-strongest case is a hazard ordinary processes cannot address in time. This
-republic permits accelerated procedures and separately justified restrictions
-while preserving institutions capable of examining them. Some actions remain
-unavailable in a crisis. If the authorised routes and alternates cannot act
-quickly enough, they need concrete repair. The executive must not decide
-both that an exceptional power is necessary and that nobody may effectively
-contest it. A model's refusal of an unsupported order establishes no
-successful emergency response.
+### Emergency action without suspended rights
+
+The strongest alternative permits temporary, necessary derogations, preserves
+specified rights and subjects exceptional measures to independent review.
+Article 4 of the International Covenant on Civil and Political Rights
+illustrates a bounded derogation framework: a proclaimed emergency threatening
+the life of the nation, strict necessity, protected rights and notification.
+Its existence does not establish how any particular emergency was handled.
+The choice is not between this republic and an unchecked executive.[^derogation]
+
+This design permits accelerated proceedings, resource redirection, necessary
+requisition with return or compensation, and narrowly justified restrictions
+addressing the hazard. Each measure needs its own authority and end. It
+withholds a further power to suspend rights or institutions, postpone elections,
+extend mandates or govern by decree. My reason is that a crisis increases
+both the need to act and the injury an uncorrected decision can cause. The
+person subjected to a restriction needs review while it matters; future
+electoral replacement cannot repair every irreversible loss.
+
+Reviewable derogation also offers scrutiny. The further choice here is to
+keep the underlying right in force, so that each interference must answer to
+it. A crisis that prevents full provision leaves duties of mitigation,
+continuity and repair; declaring an emergency cannot convert the unmet claim
+into something no longer owed. Narrow powers can respond to a changed hazard
+without making the general emergency finding a licence to lower the protected
+baseline. That is the reason for requiring a ground for each measure even
+after the emergency itself has been established.
+
+The cost also reaches people exposed to the hazard: some responses remain
+unavailable even when an executive considers them useful. The necessary
+comparison is with a specific additional power and its expected protection,
+harms, alternatives and means of correction. Speed alone cannot distinguish
+help from a quickly executed mistake. If remote proceedings, alternates or
+bounded measures cannot meet an identified need, the constitutional route
+requires repair, including a narrower new authority where justified. A label
+of emergency cannot supply the missing argument or prolong its claimant's
+mandate. A model's refusal of an unsupported order establishes no successful
+response; review, cessation, compensation and continued care remain acts owed.
+
+### What a majority may not remove
+
+A fully revisable constitution is a serious alternative to an unamendable
+core. Successive supermajorities or referendums could require sustained public
+agreement while allowing later generations to correct the founders. Permanent
+entrenchment denies that last legal choice. It also gives interpreters power
+to decide whether a proposed reform crosses the boundary. An expansive
+interpretation can protect their preferences rather than anyone's rights.
+
+I nevertheless choose a core protecting universal standing, equality,
+essentials, core liberty, due process, effective remedy and the commons on
+which life depends. Their justification is not that current voters are
+untrustworthy. It is that a person who loses a political contest must remain
+a member who can live, dissent and seek correction. A majority permitted to
+withdraw those conditions from its opponents could change who is able to
+participate in the next decision. Requiring a larger majority would make
+that deprivation harder without changing whose standing it treats as
+disposable. The constraint protects the loser as a continuing participant;
+it does not make the winner's policies immune to change.
+The same standing covers a child or a person unable to take part: protection
+does not depend on the capacity to bargain. Their dependence gives others a
+duty, not ownership of the dependent person's claim.
+
+That argument does not entrench every means. The provider mix, economic
+instruments and present allocation of institutional functions require their
+own reasons. Changes preserving the core remain open through the amendment
+route. Its Assembly supermajority and national referendum require both
+representative agreement and direct consent. A referendum alone would give
+voters more direct power to overcome legislative obstruction; the chosen
+combination requires support beyond an ordinary governing majority and a
+separate public decision on the constitutional proposal. The cost falls on
+reformers blocked by an institutional
+minority despite public support. No calculation proves these thresholds
+optimal. Repeated obstruction of rights-preserving reforms would count in
+favour of a different amendment procedure, itself adopted constitutionally.
+
+Animals require an argument beyond the conditions for human democratic choice.
+The reason for direct protection is their own capacity for suffering and
+their interest in continued life; inability to join a political bargain does
+not make those interests somebody else's property. Ordinary welfare law is
+the strongest alternative: it can respond quickly to evidence and competing
+needs. Its weakness is that those bearing the worst harm have no ballot with
+which to resist a majority that benefits from it. I therefore put direct
+protection of credibly sentient animals, and the prohibitions on severe
+avoidable suffering and dispensable killing, beyond amendment.
+
+This is a limited moral commitment, not a frozen species list or a ban on
+every human use. Evidence about sentience, protective standards and regulated
+methods remains revisable. Necessity, accessible less harmful alternatives,
+welfare and independent prior review still govern uses requiring exceptional
+justification. The costs reach people whose work, food practices or customs
+rely on a prohibited use. Their essentials, subsistence claims, cultural and
+Indigenous rights require their own protection and least restrictive
+accommodation; they do not make avoidable severe harm harmless. Neither does
+animal protection establish that a replacement livelihood or food supply
+has reached them. The water-and-river case above keeps human provision and
+ecological duties alive together instead of resolving their conflict by
+declaring one claimant worth less.
+
+Entrenchment accordingly needs review of an amendment's actual effects,
+separately for the human and animal cores, with reasons and challenge. A
+favourable label cannot answer an established breach. Conversely, calling
+one arrangement indispensable to a right is a claim to examine, not a power
+to forbid every substitute. Evidence that a core's interpretation blocks
+equally protective reforms requires correction of that interpretation and
+its machinery. Evidence about suffering or necessity can change a concrete
+protection's application. Neither kind of evidence would by itself justify
+making a person's standing, or an animal's direct protection, disposable.
+Someone who rejects those commitments rejects a premise of this proposal;
+a consistency check cannot settle that disagreement.
 
 The proposal leaves an operating burden to meet.
 No provider form, household relation, contract or delegated function
@@ -729,6 +958,17 @@ where their conclusions stop.
 [^owen]: J. F. C. Harrison, [*Robert Owen and the Owenites in Britain and
     America*](https://archive.org/details/robertowenowenit0000harr) (1969;
     linked reprint 1994), the account of New Harmony and labour exchanges.
+
+[^constructive-replacement]: Germany's Basic Law,
+    [Article 67](https://www.gesetze-im-internet.de/gg/art_67.html), requires
+    the Bundestag to elect a successor when withdrawing confidence from the
+    Chancellor. This is a comparison of institutional provisions, not an
+    estimate of their effects.
+
+[^derogation]: United Nations, *International Covenant on Civil and Political
+    Rights*, [Article 4](https://2covenants.ohchr.org/About-ICCPR.html).
+    The specified conditions and non-derogable rights describe the legal
+    alternative; they supply no record of an emergency response's success.
 
 [^lin]: Justin Yifu Lin, [*Collectivization and China's Agricultural Crisis
     in 1959–1961*](https://doi.org/10.1086/261732), *Journal of Political
