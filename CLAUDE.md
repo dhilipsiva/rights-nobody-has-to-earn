@@ -127,6 +127,65 @@ reinstate the retired tooling or workflow.
 Grouped by kind. Dates in each heading are the ratification dates; a ruling
 that was later implemented or narrowed carries that supersession inline.
 
+### Item 33 — final sequential assessment and shield precision, 2026-09-21
+
+The fresh [manuscript review](reviews/2026-09-21-final-manuscript-review.md)
+reads all 34 ordered inputs after items 21–32, starting at `ee588deb`, and
+rates the resulting manuscript 9/10. It separately assesses argument,
+precision, readability, pacing, evidence and navigation, with a rating and
+assessment for every input. It is an internal AI-assisted judgment, not a
+measurement, independent endorsement or required perfect score.
+
+One material overstatement was confirmed against the current source. Article
+6's shield guards conclude case-specific confinement and require a recorded
+conviction; they do not prevent the conviction from being recorded. The
+existing Rex sequence already retains `match(Rex, ConvictionRecorded)` while
+custody is blocked. Chapter 24, its Part V argument and the optional method
+now describe confinement under the conviction. The opening glossary already
+had that scope. The exact revised prose is
+`session-drafted, author-approved under delegated approval (2026-09-13)`;
+the existing shield and narrative-register decisions retain the correction
+and canonical text locations. The existing coverage entry and generated
+report are aligned. No constitutional rule or executable expectation changes;
+the chapter pin edit corrects only its explanatory comment.
+
+The review rechecks recognition, severity, scarcity, delegated discretion,
+capture and the difference between formal consequences and justified design.
+The existing repairs remain supported by the inspected rules and cases.
+An apparent standing conflict is disproved: seating derives `authority`, not
+the institutional `public` entry excluded by the birth rule. No additional
+material design defect is established, no unresolved defect is relabelled a
+Book 2 operating problem, and no new impossibility claim is made. Density,
+uneven pacing and the evidence's limited predictive force keep the editorial
+assessment below 10/10.
+
+The focused shield command passes 102 pins across two selected cases in
+12.51s. Five claim-discipline tests pass in 0.84s, ten reader-coverage tests
+in 0.27s, six reference-integrity tests in 1.61s and seven assembler tests
+in 0.235s. The first reference run caught the link to the not-yet-created
+review; creating its actual target resolves it without an exception. The
+required child slots and exemptions, one-line fixture, 240 coverage entries,
+manifest order, chapter/pin pairs and exempt prose channels remain intact.
+
+The full book and sample are rebuilt as HTML, EPUB and PDF. Current rendered
+word counts are 57,909 full, 40,481 derived (69.90%) and 13,633 sample;
+Markdown excluding HTML comments totals 58,418. The PDFs remain 169 and 35
+pages. Both EPUBs validate with zero errors or warnings. All 90 browser
+views, PDF text and destination checks, and the inspected affected layouts
+pass as detailed in the review. Rendering uses the same installed browser as
+item 32 and adds no new builder, test gate, receipt or inventory. The proposal
+and build README follow the current measurements. The reading artifacts stay
+in ignored `output/book-1/`; no publisher contact or release is performed.
+
+`RIGHTS_VERIFY_JOBS=4 ./verify.sh` passes 88,815 pins across 16,137 cases,
+with complete contradiction checks and no findings, in 1,188.54 seconds
+(19m 48.54s). No required check is incomplete; the five-minute target remains
+unmet. The run overlaps some artifact checks and supplies no new CPU or
+peak-memory measurement. The final documentation and diff checks pass.
+Item 33 is complete and removed; the ordered revision backlog has no pending
+items. Gate C and Book 2 activation remain separate. The unrelated untracked
+`book-1/book-1.zip` is untouched.
+
 ### Item 32 — rebuilt reading copies and reassessed sample, 2026-09-21
 
 The existing builder rebuilds the full 34-input book and the five-chapter

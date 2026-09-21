@@ -9,6 +9,25 @@
 > author's standing delegated approval of 2026-09-13. Earlier dispositions,
 > including `OL-15-v1` in section 7a, remain visible as history.
 
+## Final sequential review — item 33, 2026-09-21
+
+The fresh read covers all 34 manifest inputs after items 21–32. It finds one
+material overstatement in the shield account: Chapter 24 sometimes says the
+shield blocks a conviction, while Article 6 and the existing Rex pins block
+confinement with the conviction already recorded. The exact revised Chapter
+24, corresponding Part V argument and method paragraph are
+`session-drafted, author-approved under delegated approval (2026-09-13)`.
+Their canonical files retain the complete approved text.
+
+The [shield decision](shield-scope-decision.md) records the source comparison
+and correction. This is a repair to the projection and argument, not a change
+to constitutional law. The book describes the present protection directly;
+the review history remains here and in the [final assessment](../../../reviews/2026-09-21-final-manuscript-review.md).
+The assessment distinguishes manuscript quality from executed formal checks,
+bounded source inspection, rendered-artifact checks and actual operation.
+Closing the revision backlog neither promises a perfect rating nor declares
+Gate C or starts Book 2.
+
 ## Evidence and inference review — item 31, 2026-09-21
 
 The exact current Part V is

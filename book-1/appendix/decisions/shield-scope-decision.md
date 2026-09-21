@@ -2,6 +2,31 @@
 
 # The whistleblower shield: scoped to the case
 
+## Confinement and the conviction record — item 33, 2026-09-21
+
+The shield gates confinement under a conviction, not the recording of that
+conviction or every stage of a prosecution. Both Article 6 routes conclude
+`prisoner(subject, case)` and require `match(subject, ConvictionRecorded)`
+as a premise. The separate producer of that recorded-conviction summary does
+not read `defend`. Chapter 24's existing Rex sequence already has a recorded
+conviction and active authority while the shield keeps `prisoner(Rex)` false;
+qualified unrelatedness permits custody, and a subsequent conflict blocks it.
+
+The fresh manuscript review found broader wording in Chapter 24, its Part V
+argument and the optional method. Those passages now describe the actual
+confinement protection and retain the judgment, separate protective powers,
+independent-review conditions and the injured person's remedies. The opening
+glossary already uses the correct scope. No constitutional rule, substantive
+expectation or policy is changed. References to blocked "conviction" or
+"prosecution" in the earlier decision history below must be read with this
+correction; they are not an additional enacted immunity.
+
+The exact revised passages are retained in their canonical files as
+`session-drafted, author-approved under delegated approval (2026-09-13)`.
+The existing reader-coverage entry and its generated report use the same
+scope. The focused and complete execution results are recorded in the final
+manuscript review and CLAUDE.md.
+
 ## Comparative argument — item 24, 2026-09-21
 
 The exact [Part V comparison](../../31-the-five-joints.md#protection-while-the-connection-is-disputed)

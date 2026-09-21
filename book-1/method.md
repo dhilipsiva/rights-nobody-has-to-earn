@@ -223,8 +223,8 @@ The permission summaries display relief; the custody rule checks the bar against
 its exact case. Absence of a bar does not alone confine Ruk. Qualified merits,
 current authority, lawful placement and accessible challenge intake must also
 be present. A pending filing suspends that authority without pretending to be
-a final judgment. An unrelated prosecution still needs the independently
-qualified finding required to answer a disclosure shield.
+a final judgment. Confinement in an unrelated prosecution still needs the
+independently qualified finding required to answer a disclosure shield.
 
 Consider this proposed rule, which the test asks the engine to reject:
 

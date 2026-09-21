@@ -4,7 +4,7 @@
 
 **Book proposal · dhilipsiva · political nonfiction / constitutional design**
 
-**Approximately 58,000 words · complete revised draft; final internal reassessment pending**
+**Approximately 58,000 words · complete, internally reviewed manuscript**
 
 This proposal seeks an editorial and print partnership for an openly licensed
 book. It is prepared for a submission decision, without being addressed or sent
@@ -178,24 +178,24 @@ considered for submission.
 ## Completion and limits
 
 As of 2026-09-21, all 31 numbered chapters, the epigraph, opening note and
-method are drafted: 57,838 words across 34 ordered inputs. The 30 derived
-chapters contain 40,448 words, or 69.93%; the sample contains 13,597.
+method are drafted: 57,909 words across 34 ordered inputs. The 30 derived
+chapters contain 40,481 words, or 69.90%; the sample contains 13,633.
 These counts use whitespace-separated rendered manuscript text, including
 notes, before the generated cover and contents. The full manuscript and
 sample are available locally as HTML, EPUB and PDF.
 
 The latest completed substantive run passed 88,815 pins across
-16,137 cases in 1,133.59 seconds, with complete contradiction checks and no
+16,137 cases in 1,188.54 seconds, with complete contradiction checks and no
 findings. No active known-defect expectations remain. Explicitly weakened
 counterfactuals still demonstrate the harms their altered rules permit; those
 results do not describe the enacted model. The five-minute verification target
 is not met.
 
-The [September 20 review](../reviews/2026-09-20-final-manuscript-review.md)
-describes an earlier draft. Subsequent revisions address policy boundaries,
-worked conflicts, argument, readability and evidence. A fresh assessment of
-the resulting manuscript remains pending in [the revision backlog](../TODO.md).
-The submission decision remains separate from completing that review.
+The [September 21 review](../reviews/2026-09-21-final-manuscript-review.md)
+rates the manuscript 9/10 after reading all ordered inputs and correcting a
+shield-scope overstatement. It includes chapter assessments, remaining
+editorial limits and the scope of its checks. The [revision backlog](../TODO.md)
+is complete; the submission decision remains separate.
 The rebuilt full PDF has 169 pages; the five-chapter sample has 35.
 Both EPUBs pass EPUBCheck with zero errors or warnings. Inspection found
 no missing checked text or invalid internal PDF destinations; browser checks

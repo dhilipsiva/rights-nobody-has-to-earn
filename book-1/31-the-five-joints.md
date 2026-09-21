@@ -536,23 +536,29 @@ end their power without ending inquiry into its exercise or protection for a
 disclosure about it. A record tied to each past office and act could preserve
 that result while distinguishing subsequent private life more finely. The
 lasting marker keeps protection from depending on a complete history of the
-official's acts. Its breadth can also delay an unrelated prosecution. The
-independent case review described below can permit that prosecution without
+official's acts. Its breadth can also delay confinement in an unrelated case.
+The independent case review described below can permit that confinement without
 erasing answerability or protecting a disclosure from an adverse finding.
 I accept the broader starting protection because loss of office must not make
 unfinished scrutiny dangerous for the person pursuing it. Evidence that an
-act-specific record protects that person equally well with fewer obstructed
-cases would favour the alternative. The recall case establishes separation
-between current power and answerability, not a measured deterrent effect.
+act-specific record protects that person equally well with fewer delayed
+unrelated custody decisions would favour the alternative. The recall case
+establishes separation between current power and answerability, not a measured
+deterrent effect.
 
 The shield tests whose loss counts while a question is open. The strongest
 alternative is an immediate protective order for a particular case on a
 credible showing of retaliation, followed by an expedited independent
-hearing. It can protect a discloser without blocking every unrelated
-prosecution. Its initial burden still matters when an implicated authority
-controls the records needed to show the connection, or access to a hearing.
+hearing. It can protect a discloser without blocking confinement in every
+unrelated prosecution. Its initial burden still matters when an implicated
+authority controls the records needed to show the connection, or access to a
+hearing.
 The present default protects the discloser during that interval. Compensation
-after an abusive conviction cannot substitute for protection before it.
+after retaliatory imprisonment cannot substitute for protection before it.
+
+The protection concerns confinement under a conviction. It neither prevents
+the conviction from being recorded nor supplies an acquittal. Arrest and
+other protective restrictions need their own grounds and authority.
 
 Protection begins with the disclosure unless an effective deceit finding
 applies to that particular exposure.
@@ -580,11 +586,11 @@ does not give permission to retaliate against another.
 
 This default costs time, including time owed to an injured person awaiting a
 remedy. Separate protection, assistance and civil remedies remain available
-on their own grounds. Missing qualification keeps conviction blocked; it
+on their own grounds. Missing qualification keeps confinement blocked; it
 does not establish that the prosecution was retaliation or that the injured
 person has received help. A procedure delivering equally prompt protection
-with fewer obstructed unrelated cases would weaken the argument for this
-choice. The comparison must count missed retaliation as well as delay.
+with fewer delayed unrelated custody decisions would weaken the argument for
+this choice. The comparison must count missed retaliation as well as delay.
 
 The consequential records remain the constitutional source and the facts
 supplied to it. The source can be inspected and its represented consequences

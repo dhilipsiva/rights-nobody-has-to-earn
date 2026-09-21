@@ -59,7 +59,7 @@ Rendering is separate from the substantive verification below.
 The [publisher proposal](submission/README.md) includes the synopsis,
 readership, contents, sample chapters, completion statement and proposed
 editorial partnership under the existing open licences.
-The [final internal manuscript review](reviews/2026-09-20-final-manuscript-review.md)
+The [final internal manuscript review](reviews/2026-09-21-final-manuscript-review.md)
 records the completed revision backlog, corrected findings and remaining
 editorial weaknesses. It is not an external endorsement or a release decision.
 
@@ -128,10 +128,10 @@ the first build compiles the bundled C library using a C compiler and Make
 (available in the Nibli development shell). Other targets retain Rust's default
 allocator. The explicit authoring executable is unchanged.
 
-Latest full run measured on 2026-09-20 with four workers and the release binary
-already built against engine `b707dad`, now recorded in `engine.pin`: all 88,024 pins across
-16,087 cases passed, with complete formal contradiction scans and no findings,
-in **1,198.57 seconds (19m 58.57s)**. No active known-defect expectations remain;
+Latest full run measured on 2026-09-21 with four workers and the release binary
+already built against engine `b707dad`, recorded in `engine.pin`: all 88,815 pins across
+16,137 cases passed, with complete formal contradiction scans and no findings,
+in **1,188.54 seconds (19m 48.54s)**. No active known-defect expectations remain;
 explicitly weakened counterfactuals still demonstrate their harmful results.
 The engine packages used by this verifier are unchanged between the former
 `979fe8b` pin and `b707dad`; the pin now identifies the published revision
@@ -144,8 +144,8 @@ run was about 19,300,000 KiB; its user and system CPU totals were not captured.
 The last recorded CPU totals remain 3,371.05 s user and 81.71 s system, with
 395% utilisation and 21,924,220 KiB peak memory, from 2026-09-15's 14,892-case
 run. Other machine activity was not controlled. CPU and memory measurements
-were not collected for the latest run; the historical numbers are not estimates
-for the current inventory.
+were not collected for the latest run, which overlapped some reading-artifact
+checks; the historical numbers are not estimates for the current inventory.
 
 This **does not** meet the under-five-minute target. The earlier 275.04-second
 (4m35.04s) result was measured on the 4,190-case inventory that preceded the

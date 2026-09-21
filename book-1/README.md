@@ -61,11 +61,11 @@ The [publisher proposal](../submission/README.md) explains the selection.
 The sample keeps the original chapter numbers; references outside the
 selection open their public repository locations.
 
-The 2026-09-21 reading copies measure 57,838 words across the full book's
-34 ordered inputs and 13,597 words in the five-chapter sample. These counts
+The 2026-09-21 reading copies measure 57,909 words across the full book's
+34 ordered inputs and 13,633 words in the five-chapter sample. These counts
 use whitespace-separated rendered manuscript text, including notes, before
-the generated cover and contents. The derived chapters contain 40,448 words
-(69.93% of the full manuscript). The full PDF has 169 pages and the sample
+the generated cover and contents. The derived chapters contain 40,481 words
+(69.90% of the full manuscript). The full PDF has 169 pages and the sample
 35; pagination depends on the browser and typography used to rebuild them.
 The sample retains the complete closing argument, so that chapter occupies
 about 71% of the selection. The proposal explains the editorial purpose of

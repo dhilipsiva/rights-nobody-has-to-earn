@@ -1,12 +1,12 @@
 # The Shield
 
 A disclosure against a publicly answerable actor opens protection against
-conviction while no effective deceit finding applies to that particular
-exposure. The protection
-begins before anyone has decided whether the disclosure is true. A qualified,
-independent case finding can instead establish that a prosecution is unrelated
-to the disclosure. The person making the disclosure does not have
-to obtain that finding to receive protection.
+confinement under a conviction while no effective deceit finding applies to
+that particular exposure. The protection begins before anyone has decided
+whether the disclosure is true. A qualified, independent case finding can
+instead establish that a prosecution is unrelated to the disclosure. The
+person making the disclosure does not have to obtain that finding to receive
+protection.
 
 The case finding needs authorised, independently qualified reviewers. Neither
 the defendant nor the injured person nor the prosecuting court may decide it.
@@ -23,14 +23,14 @@ to Pax and Don's disclosure against Pax, the injured person.
 
 Pax is not publicly answerable in the supplied record. There is no public-body
 entry or seating that would make Pax an eligible target of this protection.
-Don therefore has no shield, and the otherwise complete conviction derives.
-An accusation against a private person does not become a disclosure against
-public power by being called one.
+Don therefore has no shield, and the otherwise complete case authorises
+confinement. An accusation against a private person does not become a
+disclosure against public power by being called one.
 
 The distinction depends on an entry. In an explicit counterfactual, a public
 status entry about Pax makes Pax answerable. Don's exposure then opens the
-shield and the conviction stops deriving. The machine cannot distinguish a
-true status entry from a forged one. The case demonstrates the trust placed
+shield and confinement is no longer authorised. The machine cannot distinguish
+a true status entry from a forged one. The case demonstrates the trust placed
 in the supplied record, not a lawful way to appoint a victim to public office.
 
 ## Sly: an unresolved disclosure
@@ -46,12 +46,13 @@ disclosure false. The two questions have separate evidence and consequences.
 The prosecution cannot answer the shield merely by asserting that it is
 unrelated. In this chapter's test, the court and the review body both record
 that assertion. Even when every positive qualification entry is supplied, the
-court cannot occupy a deciding role in its own prosecution. The conviction
+court cannot occupy a deciding role in its own prosecution. Confinement
 remains blocked. If the court's public-status entry is removed in a separate
 counterfactual, its exposure no longer opens the shield. The checks also
 preserve this dependence on the record.
 
-The shield reaches conviction. It does not exempt anyone from every
+The shield blocks confinement under a conviction; it does not erase the
+judgment or supply an acquittal. It does not exempt anyone from every
 protective measure. Arrest, search and hazard restrictions have their own
 individual grounds, current authority, evidence, review and remedy; a label
 of protection supplies none of those conditions. No such order appears in
@@ -71,9 +72,9 @@ Here, however, a completed case identifies Kel's exposure, a deceit finding
 and its evidence. It includes two independent
 reviewers, their eligibility at the decision, and matching records of notice,
 access to evidence, a hearing and reasons. That finding defeats this exposure's
-shield, so Kel's otherwise complete conviction derives. It also produces a
-personal finding that restricts new adverse signatures. It takes no wage,
-property, pension or floor right.
+shield, so Kel's otherwise complete case authorises confinement. It also
+produces a personal finding that restricts new adverse signatures. It takes
+no wage, property, pension or floor right.
 
 A raw accusation and a generic Review judgment do not supply the case. The
 same subject and incident must be identified in the completed finding. These
@@ -91,10 +92,11 @@ Rex's record concerns an injury to Sena and two exposures: one against the
 court and another against the review body. A completed case found the
 court disclosure deceitful.
 
-The second exposure has no effective deceit finding against it, so the shield derives
-again. Rex is both discredited and shielded. Protection does not read the
-claimant's general credibility: a restriction on signing adverse findings does
-not become permission to retaliate.
+The second exposure has no effective deceit finding against it, so the shield
+derives again. Rex's conviction remains recorded while confinement is blocked.
+Rex is both discredited and shielded. Protection does not read the claimant's
+general credibility: a restriction on signing adverse findings does not become
+permission to retaliate.
 
 A separate question remains about the injury to Sena. It can be answered
 without defeating the second disclosure. The case finding concerns whether
@@ -120,40 +122,40 @@ findings are bounded premises it has to be supplied with.
 The separation is explicit. The deciding reviewers must be different people
 or bodies. The qualifier and qualification reviewer must differ from one
 another and from both deciders. None may be the defendant, the injured person
-or the prosecuting court. The court cannot clear a route to its own
-conviction, and a reviewer cannot certify their own independence.
+or the prosecuting court. The court cannot clear a route to confinement under
+its own judgment, and a reviewer cannot certify their own independence.
 
-With those premises supplied, Rex's conviction derives. The disclosure stays
-on the record, the shield still derives, and the credibility finding is
-unchanged: the case finding removes this prosecution from the shield's coverage. A finding
-for this case provides no qualification or decision for another case.
+With those premises supplied, Rex's confinement is authorised. The disclosure
+stays on the record, the shield still derives, and the credibility finding is
+unchanged: the case finding removes this prosecution from the shield's coverage.
+A finding for this case provides no qualification or decision for another case.
 
 The next step in this sequence names Appeals, the convocation and both
-qualification functions in fresh disclosures. Rex's conviction still derives.
-An allegation against a participant is not itself an adjudication of that
-participant's interests.
+qualification functions in fresh disclosures. Rex's confinement remains
+authorised. An allegation against a participant is not itself an adjudication
+of that participant's interests.
 Eligibility continues to require the positive independent finding; silence
 about family ties or a different institutional name cannot supply it.
 
 Then the qualification reviewer records an actual conflict concerning
 Appeals in this case. The case finding can no longer overcome the shield,
-and Rex's conviction stops deriving. A favourable certificate left beside the
-conflict does not erase it. The same is true if a qualifier is found conflicted,
-and choosing a different favourable pair cannot bypass the recorded finding.
-An unauthorised accusation supplies no such result. A conflict recorded for a
-different case supplies none here.
+and Rex's confinement is no longer authorised. A favourable certificate left
+beside the conflict does not erase it. The same is true if a qualifier is found
+conflicted, and choosing a different favourable pair cannot bypass the recorded
+finding. An unauthorised accusation supplies no such result. A conflict recorded
+for a different case supplies none here.
 
 Someone who controls the trusted inputs can still lie about independence.
 The checks do not convert agreement into truth.
 
 ## What it costs
 
-The provisional shield can delay an unrelated prosecution while qualified
-review is unavailable. The person injured still holds a claim to assistance,
-protection and remedy. The defendant keeps the floor, standing and the ability
-to challenge. The existing justice routes govern the hearing, interim relief,
-reviewer nonresponse and independent alternatives; a duty to hear is not a
-hearing completed.
+The provisional shield can delay confinement under an unrelated prosecution
+while qualified review is unavailable. The person injured still holds a claim
+to assistance, protection and remedy. The defendant keeps the floor, standing
+and the ability to challenge. The existing justice routes govern the hearing,
+interim relief, reviewer nonresponse and independent alternatives; a duty to
+hear is not a hearing completed.
 
 A disclosure against any actor who remains publicly answerable can open the
 protection, including a recalled official. Recall cannot extinguish the
