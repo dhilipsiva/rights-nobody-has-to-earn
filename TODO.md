@@ -5,8 +5,8 @@
 Created 2026-09-18 and refreshed 2026-09-20 at the author's request:
 "Refresh TODO to make book a 10/10."
 
-**Active: items 28–33 below are pending.** Items 01–23 were
-completed on 2026-09-20 and items 24–27 on 2026-09-21. The first round's
+**Active: items 29–33 below are pending.** Items 01–23 were
+completed on 2026-09-20 and items 24–28 on 2026-09-21. The first round's
 [final manuscript review](reviews/2026-09-20-final-manuscript-review.md),
 subsequent coherent commits and `CLAUDE.md` retain the assessments, repairs and
 validation. This refresh opens further work; it does not reverse those
@@ -134,29 +134,11 @@ solutions and development history stay outside the book's reading sequence.
 
 ## Ordered revision backlog
 
-Work in this order. Item 28 gives the catalogue-like chapters a clearer
-progression before the remaining editorial passes. Each item includes its
+Work in this order. Item 29 reduces repetitive qualifications and sharpens
+the child returns before the final sequential edit. Each item includes its
 own relevant validation under the execution contract; item 33 is a final
 integration review, not permission to defer earlier checks. Chapter numbers
 refer to the [current reading sequence](book-1/contents.json).
-
-- [ ] **28. Restructure the chapters that read as catalogues.**
-
-  **Scope:** Chapters 7, 9, 11, 13, 17, 19, 20, 29 and 30.
-
-  Give each chapter a governing question and a coherent progression through
-  its supplied cases. In Chapter 7, follow responsibility through a particular
-  failure. In Chapter 13, distinguish environmental conditions, commons and
-  animal interests before introducing their institutions and remedies. In
-  Chapter 17, follow a decision and a bounded disagreement through the bodies.
-  In Chapter 29, distinguish sentence, protective powers, actual holding and
-  release without making every public-safety rule compete for attention at once.
-  Use compact tables or diagrams only where they clarify a real distinction.
-
-  **Done when:** the chapters retain every substantive protection while their
-  sequence explains what each new condition contributes. Lists no longer
-  substitute for an argument or worked case. Reading order, chapter/pin pairs
-  and the boundary between the manuscript and the carried appendix remain intact.
 
 - [ ] **29. Remove repeated qualifications and sharpen the child returns.**
 

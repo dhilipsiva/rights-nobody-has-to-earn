@@ -5,10 +5,10 @@ power claimed in its name. The design divides power by place and function,
 requires each office to show its authority, and preserves essential duties
 when an office is vacant or a government cannot be formed.
 
-Follow the ordinary sequence: a legislature authorises, an executive acts,
-and separate bodies review and remedy. Then interrupt it with a disputed
-competence, deadlock or successor. The question throughout is which authority
-continues and which must end.
+How can a proposal become law without disagreement becoming a permanent
+veto? The ordinary-bill cases distinguish Assembly passage, a reasoned
+return by the Regions Council and repassage. Other cases ask what authority
+remains when competence is disputed or a government cannot be formed.
 
 ## Which tier holds which power
 
@@ -41,6 +41,21 @@ The Executive Council administers and executes the law under the Assembly's
 confidence. Review and remedy do not return to the same hand merely because
 it performed the act.
 
+The ordinary-bill cases make the division concrete. A complete record of
+first passage, an unused return and public reasons gives the Regions Council
+authority to return that bill once. In the control, the record lacks the
+required unused-return finding and no return authority follows. A separate
+complete record of Assembly repassage under the same rule establishes its
+lawmaking authority. The Council cannot demand an extra threshold or an
+indefinite interval. Its objection requires reconsideration without acquiring
+a permanent veto over ordinary law.
+
+These are distinct supplied records for the stages, not evidence that a bill
+was debated or enacted. The lawmaking power also supplies neither revenue nor
+spending authority; each needs its separate authorisation. Execution belongs
+to the Executive Council under its own mandate. Court review does not become
+an executive function merely because the executive must give effect to law.
+
 | Institution | Function and limit |
 |---|---|
 | People's Assembly | Population-proportional law-making, revenue, spending, oversight and amendment initiation, each under separate authority. |
@@ -59,12 +74,46 @@ them, execute the result, audit itself and supply the final remedy. Dividing
 those functions creates routes for challenge; it does not prove that their
 holders are independent in practice.
 
+## What a public result has to contain
+
+A claim that the Assembly repassed a bill still needs a trustworthy basis.
+The same problem arises whenever a recorded public decision is supposed to
+change who may act. A result needs both a decision and a way to challenge
+whether the record includes the people entitled to take part.
+
+An election, a confidence decision, an initiative, a referendum, an amendment,
+a recall, an appointment, a removal, a succession or a secession all need the
+same thing before anything may be done on them: an authenticated, contestable
+record that identifies its authorised writer, the exact attested roster, a
+separate external assurance that the roster is complete, the proposal or
+candidate, person-bound effective submissions, the tally rule, the result, a
+challenge and recount route, correction, independent certification, and the
+source version the result affects. Missing approval never counts as approval.
+
+The process separates roles. Election administration
+authenticates and classifies submissions. Independently authored assurance
+attests that the roster is complete. A result service computes and certifies
+under the legal rules. Authorised institutions then perform the removal,
+installation or transfer. Completeness needs redundant or alternate writers,
+because whoever can withhold it could otherwise block every authority that
+depends on it.
+
+Without independent assurance, a supplied smaller roster does not reveal
+whether eligible people were omitted. The model can reason over a snapshot,
+count supplied witnesses and aggregate supplied weights. This constitutional
+route nevertheless relies on supplied result and completeness certificates;
+it does not authenticate them, resolve conflicting submissions or operate the
+changing electoral roll. A successful formal result proves no universal
+inclusion in an election.
+
 ## Keeping public decisions answerable
 
 Permission to act in an office is not the permanent answerability described
 earlier. A current, independently reviewed finding can withhold permission
 for an affected act without ending anyone's answerability or taking their
 standing, floor, ballot, speech or right to challenge.
+
+### Who controls the payment or the act
 
 The political-money record must name the nominal payer and the controlling
 payer, as well as the kinds of payer, instrument and recipient. A shell name
@@ -84,6 +133,8 @@ established failure by that reader creates a duty on an independent alternate;
 silence alone proves neither the undisclosed fact nor misconduct by the
 bearer. These duties do not require publishing protected small-payer identities.
 They do not establish that anyone filed, read or acted.
+
+### Who can participate and challenge
 
 A district plan may not be drawn to entrench a party, coalition or incumbent,
 or to dilute a protected ground. The finding must establish the forbidden
@@ -180,33 +231,6 @@ no military instrument against a unilateral exit. Legal invalidity, ordinary
 policing under the imminent-threat-to-life standard, and negotiation are the
 responses available, and defence, trade, border, payment and service levers may
 not be turned against a region seeking or completing a lawful exit.
-
-## What a public result has to contain
-
-An election, a confidence decision, an initiative, a referendum, an amendment,
-a recall, an appointment, a removal, a succession or a secession all need the
-same thing before anything may be done on them: an authenticated, contestable
-record that identifies its authorised writer, the exact attested roster, a
-separate external assurance that the roster is complete, the proposal or
-candidate, person-bound effective submissions, the tally rule, the result, a
-challenge and recount route, correction, independent certification, and the
-source version the result affects. Missing approval never counts as approval.
-
-The process separates roles. Election administration
-authenticates and classifies submissions. Independently authored assurance
-attests that the roster is complete. A result service computes and certifies
-under the legal rules. Authorised institutions then perform the removal,
-installation or transfer. Completeness needs redundant or alternate writers,
-because whoever can withhold it could otherwise block every authority that
-depends on it.
-
-Without independent assurance, a supplied smaller roster does not reveal
-whether eligible people were omitted. The model can reason over a snapshot,
-count supplied witnesses and aggregate supplied weights. This constitutional
-route nevertheless relies on supplied result and completeness certificates;
-it does not authenticate them, resolve conflicting submissions or operate the
-changing electoral roll. A successful formal result proves no universal
-inclusion in an election.
 
 ## The child with nobody
 

@@ -11,7 +11,7 @@ cannot be exchanged for a gain elsewhere, and what authority may prevent or
 remedy it. The constitution sets conditions for those decisions. It supplies
 no measurement of a river and no numerical ceiling.
 
-## A place in which life remains possible
+## Three claims in the same place
 
 You need not wait until polluted air has made you ill, or unsafe water has
 deprived you of a meal, to have a claim. Every person has an independently
@@ -27,14 +27,25 @@ must follow cumulative effects, exposed populations, supply chains, borders
 and harms that arrive much later. Unequal exposure requires equality
 protection, not a score assigning some people greater environmental worth.
 
-Immediate prevention, containment, care and necessary public restoration do
-not wait for a final finding of fault. Causally connected inherently hazardous
-activity carries restoration and reasonable response-cost liability even
-without intent or carelessness. Other restorative liability requires
-adjudicated causal contribution or control; being a worker, investor or
-relative is insufficient. An unknown, absent or insolvent responsible actor
-does not make urgent public repair wait. Punishment needs its separate proof
-of culpability and fair process.
+The environmental right is separate from the material floor. It can be violated
+before food, health or housing is lost; when ecological harm also deprives
+someone of the floor, both claims stand. Neither permits the other to be
+waived.
+
+The commons has distinct protected conditions: climate and atmosphere, clean
+air, waters and wetlands, living soil, biodiversity and habitat, ecosystem
+integrity and connectivity, regenerative and waste-absorption capacity, and
+the inheritance of land and nonrenewable resources. A gain on one axis cannot
+excuse failure on another. Future generations have no present entry, ballot
+or presumed preference; the protected object is the ecological capability and
+reasonable options inherited by whoever later exists.
+
+A credibly sentient animal is protected in its own interests, not merely as
+somebody's property or as a useful member of a species. Bodily integrity,
+continued life and species-appropriate conditions matter directly. That does
+not confer human personhood, the human floor, a ballot, property ownership or
+contract-making capacity. Protecting a habitat cannot substitute for caring
+for an individual animal, or the reverse.
 
 The human floor and the ecological ceiling are not alternatives. Where no
 present route meets both, immediate human continuity must follow the least
@@ -75,32 +86,10 @@ interests in life, bodily integrity and care even if saving them would not
 restore the river's flow. A proposed intervention must meet the animal
 protection rules independently. Neither claim cancels the other.
 
-In the case involving both offices, the Guardian states the river's claim and
-the Animal Advocate states the individual animals' claim. The independent court's supplied
-decision calls for least harmful interim water provision and a separately
-qualified rescue. It must apply hard prohibitions first and give public reasons
-addressing the distinct interests, alternatives, uncertainty and continuity.
-That decision alone permits no invasive intervention. A separate test supplies
-the serious conservation purpose, necessity, absence of a materially less
-harmful alternative, welfare safeguards and independent prior review; only
-that complete animal record permits the particular use. With its prior review
-missing, the permission does not follow even though the conflict decision
-still qualifies. Neither conclusion establishes that any fish was rescued.
-
 ## Axes that do not trade
 
-The environmental right is separate from the material floor. It can be violated
-before food, health or housing is lost; when ecological harm also deprives
-someone of the floor, both claims stand. Neither permits the other to be
-waived.
-
-The commons has distinct protected conditions: climate and atmosphere, clean
-air, waters and wetlands, living soil, biodiversity and habitat, ecosystem
-integrity and connectivity, regenerative and waste-absorption capacity, and
-the inheritance of land and nonrenewable resources. A gain on one axis cannot
-excuse failure on another. Future generations have no present entry, ballot
-or presumed preference; the protected object is the ecological capability and
-reasonable options inherited by whoever later exists.
+The river case keeps each claim visible. The wider commons rules apply the
+same discipline to the conditions a proposed activity would change.
 
 Each limit must name its condition, place, population, jurisdiction, period,
 and scientific and legal versions. Independently reviewed science supplies
@@ -115,6 +104,15 @@ is not safety. Replacing a standard requires independently established equal
 or stronger protected outcomes; corrected science can justify recalibration,
 but cost or convenience cannot excuse regression.
 
+Immediate prevention, containment, care and necessary public restoration do
+not wait for a final finding of fault. Causally connected inherently hazardous
+activity carries restoration and reasonable response-cost liability even
+without intent or carelessness. Other restorative liability requires
+adjudicated causal contribution or control; being a worker, investor or
+relative is insufficient. An unknown, absent or insolvent responsible actor
+does not make urgent public repair wait. Punishment needs its separate proof
+of culpability and fair process.
+
 Avoid harm, minimise it at source and restore in place. Only a positively
 replaceable residual permits bounded compensation, with additionality,
 durability, equivalent function and place, no double counting, monitoring and
@@ -128,26 +126,80 @@ establish separate prohibitions on erasing ecological ceilings, selecting
 floor loss and delaying restoration because the responsible party is insolvent.
 They establish no measured condition or completed restoration.
 
-## When the record the protection rested on was defective
+## Protection does not require being human
 
-A defective assessment or authorisation cannot support continued reliance
-merely because withdrawing it is inconvenient. Independent review needs
-positive evidence of the exact defect; an absence or unreviewed allegation
-is insufficient. The original writer or activity controller has no veto over
-the finding.
+The fish's claim requires attention to the individual animal, alongside the
+river's condition. The animal rules first identify who is protected, then
+what every controlled use owes, and finally which uses need further grounds.
 
-The finding assigns duties to separate actors. Its reader must stop relying on the affected
-record and obtain an independent remedy. A separate alternate must preserve
-urgent human and animal care and the challenge route. An auditor must examine
-what depended on the record, its lawful history and the measures needed to
-prevent repetition. The model also derives a defect marker.
+Vertebrates, cephalopods and decapod crustaceans begin with a presumption of
+sentience. Independently reviewed evidence of a realistic possibility extends
+protection; removing a presumption requires rigorous contrary evidence and
+review. The checks do not decide sentience themselves. Uncertain
+classification or missing ownership papers cannot make necessary urgent
+protection wait.
 
-Withdrawal reaches the affected reliance. It establishes neither safety nor
-guilt and removes no human standing, floor, ballot, liberty, collective right
-or animal care. Lawful history, protected evidence, reasons and challenge
-remain available. Correcting the record does not renew its permission: the
-replacement must meet its own complete conditions for authority. Neither the
-correction nor the duties prove that an activity stopped or care continued.
+### The baseline for every controlled use
+
+Every controlled use owes a non-waivable welfare baseline: suitable food,
+water, shelter, care, movement and social opportunity; humane handling;
+protection from abandonment, exploitative overwork, extreme confinement,
+harmful breeding and avoidable invasive intervention. Public, private,
+cooperative, customary, household and nonprofit control all face it. Price,
+affection, productivity, recognition and usefulness establish no animal's
+worth or permission to harm it.
+
+Ordinary non-food, non-research use that is nonlethal, non-invasive and not
+high-severity does not need an enhanced serious-purpose test merely because
+it is a use. Lethal, invasive or high-severity use does: a serious compatible
+purpose, necessity, no reasonably available materially less-harmful
+alternative, least harm, care, prior independent review and its own end.
+Passing that test alone authorises no activity.
+
+### Further conditions for food and research
+
+Every controlled use to produce food faces a further rule, including
+nonlethal production. No safe, accessible, nutritionally adequate, materially
+less-harmful alternative may be reasonably available to the affected people.
+Taste, habit, prestige, profit, advertising or price alone is insufficient.
+Making less-harmful nutrition available is a public duty; transition must
+protect the human food floor, workers, communities and animal care. Delay
+and underinvestment are not permanent permission for avoidable harm.
+
+Research, testing and education require a serious health, safety or ecological
+purpose. Replacement comes before reduction and refinement. A scientifically
+valid non-animal or materially less-harmful alternative defeats permission.
+Independent scientific and ethical review, the least-harm valid design, pain
+relief, humane endpoints, aftercare, registration and reporting of negative
+and inconclusive results are required. An unrelieved severe or prolonged
+procedure is prohibited whatever its claimed purpose.
+
+### Prohibited harm and exceptional intervention
+
+Fighting, sexual use, deliberate cruelty, punitive treatment, abandonment,
+extreme confinement, seriously harmful breeding and painful purposeless
+mutilation are forbidden. Convenience, profit, cosmetics or marketing cannot
+justify dispensable killing or severe suffering. Necessary humane euthanasia
+has its own qualified, least-distressing and independently reviewed route;
+owner inconvenience or ordinary cost does not supply it.
+
+Domestic, farmed, working, captive and wild animals keep the same direct
+core. Working animals need rest, care, safe limits and protected exit or
+retirement. Natural predation creates no offender and no duty to suppress
+every natural death. Human-caused pollution, infrastructure, entanglement,
+habitat destruction, capture, trade and killing require prevention and repair.
+
+Grave disease, danger or introduced-population harm needs authenticated,
+contestable evidence. Human causes and feasible prevention, exclusion,
+treatment, vaccination, relocation, fertility and habitat measures come
+first. Lethal control requires those routes to be unavailable, ineffective
+or more gravely harmful, then the least-painful reliable method, independent
+review, reassessment, repair and a fresh, bounded period of authority.
+An animal is never convicted for being dangerous or introduced.
+
+These are legal protections and conditions on supplied findings. They do not
+establish welfare, perform a rescue, operate a shelter or prove that a safer
+alternative is available in the world.
 
 ## Speaking for conditions nobody may spend away
 
@@ -199,77 +251,17 @@ score decides the conflict, and choosing a route does not supply its missing
 permissions. These interfaces establish no operating office, authentic
 decision, maintained record of prior resolutions or performed review.
 
-## Protection does not require being human
-
-A credibly sentient animal is protected in its own interests, not merely as
-somebody's property or as a useful member of a species. Bodily integrity,
-continued life and species-appropriate conditions matter directly. That does
-not confer human personhood, the human floor, a ballot, property ownership or
-contract-making capacity. Protecting a habitat cannot substitute for caring
-for an individual animal, or the reverse.
-
-Vertebrates, cephalopods and decapod crustaceans begin with a presumption of
-sentience. Independently reviewed evidence of a realistic possibility extends
-protection; removing a presumption requires rigorous contrary evidence and
-review. The checks do not decide sentience themselves. Uncertain
-classification or missing ownership papers cannot make necessary urgent
-protection wait.
-
-Every controlled use owes a non-waivable welfare baseline: suitable food,
-water, shelter, care, movement and social opportunity; humane handling;
-protection from abandonment, exploitative overwork, extreme confinement,
-harmful breeding and avoidable invasive intervention. Public, private,
-cooperative, customary, household and nonprofit control all face it. Price,
-affection, productivity, recognition and usefulness establish no animal's
-worth or permission to harm it.
-
-Ordinary non-food, non-research use that is nonlethal, non-invasive and not
-high-severity does not need an enhanced serious-purpose test merely because
-it is a use. Lethal, invasive or high-severity use does: a serious compatible
-purpose, necessity, no reasonably available materially less-harmful
-alternative, least harm, care, prior independent review and its own end.
-Passing that test alone authorises no activity.
-
-Every controlled use to produce food faces a further rule, including
-nonlethal production. No safe, accessible, nutritionally adequate, materially
-less-harmful alternative may be reasonably available to the affected people.
-Taste, habit, prestige, profit, advertising or price alone is insufficient.
-Making less-harmful nutrition available is a public duty; transition must
-protect the human food floor, workers, communities and animal care. Delay
-and underinvestment are not permanent permission for avoidable harm.
-
-Research, testing and education require a serious health, safety or ecological
-purpose. Replacement comes before reduction and refinement. A scientifically
-valid non-animal or materially less-harmful alternative defeats permission.
-Independent scientific and ethical review, the least-harm valid design, pain
-relief, humane endpoints, aftercare, registration and reporting of negative
-and inconclusive results are required. An unrelieved severe or prolonged
-procedure is prohibited whatever its claimed purpose.
-
-Fighting, sexual use, deliberate cruelty, punitive treatment, abandonment,
-extreme confinement, seriously harmful breeding and painful purposeless
-mutilation are forbidden. Convenience, profit, cosmetics or marketing cannot
-justify dispensable killing or severe suffering. Necessary humane euthanasia
-has its own qualified, least-distressing and independently reviewed route;
-owner inconvenience or ordinary cost does not supply it.
-
-Domestic, farmed, working, captive and wild animals keep the same direct
-core. Working animals need rest, care, safe limits and protected exit or
-retirement. Natural predation creates no offender and no duty to suppress
-every natural death. Human-caused pollution, infrastructure, entanglement,
-habitat destruction, capture, trade and killing require prevention and repair.
-
-Grave disease, danger or introduced-population harm needs authenticated,
-contestable evidence. Human causes and feasible prevention, exclusion,
-treatment, vaccination, relocation, fertility and habitat measures come
-first. Lethal control requires those routes to be unavailable, ineffective
-or more gravely harmful, then the least-painful reliable method, independent
-review, reassessment, repair and a fresh, bounded period of authority.
-An animal is never convicted for being dangerous or introduced.
-
-These are legal protections and conditions on supplied findings. They do not
-establish welfare, perform a rescue, operate a shelter or prove that a safer
-alternative is available in the world.
+In the case involving both offices, the Guardian states the river's claim and
+the Animal Advocate states the individual animals' claim. The independent court's supplied
+decision calls for least harmful interim water provision and a separately
+qualified rescue. It must apply hard prohibitions first and give public reasons
+addressing the distinct interests, alternatives, uncertainty and continuity.
+That decision alone permits no invasive intervention. A separate test supplies
+the serious conservation purpose, necessity, absence of a materially less
+harmful alternative, welfare safeguards and independent prior review; only
+that complete animal record permits the particular use. With its prior review
+missing, the permission does not follow even though the conflict decision
+still qualifies. Neither conclusion establishes that any fish was rescued.
 
 ## When a use has to be stopped
 
@@ -306,6 +298,30 @@ Each order distinguishes its duty from performance. It establishes no completed
 rescue, treatment, transfer, restoration or delivery. A non-repetition order
 likewise proves no successful prevention. The legal response names what must
 happen and who owes it; whether suffering stopped needs further evidence.
+
+## When the record the protection rested on was defective
+
+The preceding powers depend on reviewed evidence and authority. The defect
+case asks what remains owed when that support fails.
+
+A defective assessment or authorisation cannot support continued reliance
+merely because withdrawing it is inconvenient. Independent review needs
+positive evidence of the exact defect; an absence or unreviewed allegation
+is insufficient. The original writer or activity controller has no veto over
+the finding.
+
+The finding assigns duties to separate actors. Its reader must stop relying on the affected
+record and obtain an independent remedy. A separate alternate must preserve
+urgent human and animal care and the challenge route. An auditor must examine
+what depended on the record, its lawful history and the measures needed to
+prevent repetition. The model also derives a defect marker.
+
+Withdrawal reaches the affected reliance. It establishes neither safety nor
+guilt and removes no human standing, floor, ballot, liberty, collective right
+or animal care. Lawful history, protected evidence, reasons and challenge
+remain available. Correcting the record does not renew its permission: the
+replacement must meet its own complete conditions for authority. Neither the
+correction nor the duties prove that an activity stopped or care continued.
 
 ## The child with nobody
 

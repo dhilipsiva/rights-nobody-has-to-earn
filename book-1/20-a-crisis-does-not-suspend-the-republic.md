@@ -5,6 +5,7 @@ constitution. The design allows specified emergency measures, each with its
 own authority, review and end. It also keeps defence and external action within
 named public powers.
 
+What may urgent authority permit, and what remains owed when it fails?
 The cases follow a property requisition and an authorisation of force abroad.
 Each depends on a parent authorisation. An independent defect finding withdraws
 that reliance, while the affected person's standing and floor remain. The
@@ -12,6 +13,13 @@ withdrawal establishes a legal conclusion, not that the property was returned
 or a deployment stopped.
 
 ## What a declaration may actually do
+
+The requisition case begins with a complete declaration: a hazard, affected
+population, reasons and evidence, a current window, independent authorisation
+and notification to the Assembly and Constitutional Court. A separate record
+completes the requisition of specified property, with an inventory, return or
+compensation and a challenge route. The model derives a restraint on the
+specified use, records its loss and assigns the operator an accounting duty.
 
 An emergency declaration can accelerate specified procedures,
 redirect public resources, requisition necessary property with return or
@@ -39,13 +47,6 @@ the next record to arrive.
 
 ## When a declaration breaches the constitution
 
-The requisition case begins with a complete declaration: a hazard, affected
-population, reasons and evidence, a current window, independent authorisation
-and notification to the Assembly and Constitutional Court. A separate record
-completes the requisition of specified property, with an inventory, return or
-compensation and a challenge route. The model derives a restraint on the
-specified use, records its loss and assigns the operator an accounting duty.
-
 An independently reviewed finding then records that the declaration suspended
 an institution or right, or governed by decree. The declaration no longer
 completes. Neither does the requisition joined to that exact declaration
@@ -63,6 +64,13 @@ prisoner. The declaration's defect creates no adverse finding about them.
 
 ## Power does not grow at the border
 
+The defence case supplies a structure under civilian command, Assembly limits
+on size and armament, ordinary appropriation and independent audit. A separate
+authorisation of force abroad joins that structure. It identifies a permitted
+ground, actual Assembly authorisation, objective, legal basis, scope, geography,
+means, duration and reporting. The case derives the structure's duty to remain
+within those limits and the force authorisation's specified restraint and loss.
+
 Defence stays under civilian command, Assembly limits on size and armament,
 ordinary appropriation and full independent audit. No private force or outside
 funding route can acquire a public coercive power. Force abroad needs actual
@@ -77,6 +85,25 @@ assessable evidence; they create no separate response power. Credible evidence
 of prohibited arms use
 requires suspension. Children may not be recruited or used in hostilities.
 Civilian protection, humanitarian care and access apply in every condition.
+
+## When coercive power passes to a private force
+
+An independent finding that public coercive power was delegated to a private
+actor stops the structure from completing. The dependent force authorisation,
+restraint and loss stop too. The duty to keep the recorded structure within
+Assembly ceilings, appropriation and audit continues. An invalidated structure
+does not gain freedom from its limits. Neither withdrawal nor the continuing
+duty proves that the force's conduct stopped.
+
+The named person retains personhood and the floor; no prisoner conclusion follows.
+No rule in this sequence recalls a deployment, brings anyone home or stops
+payment to a contractor. Those acts cannot be inferred from absent authority.
+
+## Treaties, trade and a region's exit
+
+The force case concerns one kind of external action. It supplies no general
+foreign-affairs power: treaties, trade and a change of constitutional borders
+must follow their respective authorities.
 
 Treaty negotiation belongs to the executive; ratification belongs to the
 Assembly, with the Regions Council and each directly affected region's
@@ -101,26 +128,6 @@ consent for that holder, title, settlement revision and effect; consultation
 alone does not suffice. Military force and manipulation of trade, border access
 or services cannot be used against lawful exit. Other states' cooperation and
 readmission are not results this constitution can produce.
-
-## When coercive power passes to a private force
-
-The defence case supplies a structure under civilian command, Assembly limits
-on size and armament, ordinary appropriation and independent audit. A separate
-authorisation of force abroad joins that structure. It identifies a permitted
-ground, actual Assembly authorisation, objective, legal basis, scope, geography,
-means, duration and reporting. The case derives the structure's duty to remain
-within those limits and the force authorisation's specified restraint and loss.
-
-An independent finding that public coercive power was delegated to a private
-actor stops the structure from completing. The dependent force authorisation,
-restraint and loss stop too. The duty to keep the recorded structure within
-Assembly ceilings, appropriation and audit continues. An invalidated structure
-does not gain freedom from its limits. Neither withdrawal nor the continuing
-duty proves that the force's conduct stopped.
-
-The named person retains personhood and the floor; no prisoner conclusion follows.
-No rule in this sequence recalls a deployment, brings anyone home or stops
-payment to a contractor. Those acts cannot be inferred from absent authority.
 
 ## The child with nobody
 

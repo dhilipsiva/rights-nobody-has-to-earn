@@ -622,8 +622,38 @@
       "domain": "Material floor",
       "family": "OBLIGATIONS",
       "function": "ordinary",
-      "setting": "the third question: who has to answer",
+      "setting": "the waiting claimant and the particular bearer who must answer",
       "trajectory": "works",
+      "basis": "book-1/07-who-owes-and-what-follows.pins.nibli",
+      "pattern": "constructive",
+      "postures": [
+        "receives"
+      ]
+    },
+    {
+      "id": "07-07",
+      "chapter": "book-1/07-who-owes-and-what-follows.md",
+      "section": "The chain after a finding",
+      "domain": "Records and accountability",
+      "family": "OBLIGATIONS",
+      "function": "both",
+      "setting": "the waiting claim retains repair duties; distinct reader, alternate and remedy routes",
+      "trajectory": "continuity-remedy",
+      "basis": "book-1/07-who-owes-and-what-follows.pins.nibli",
+      "pattern": "records",
+      "postures": [
+        "challenges"
+      ]
+    },
+    {
+      "id": "07-08",
+      "chapter": "book-1/07-who-owes-and-what-follows.md",
+      "section": "Where delivery joins it",
+      "domain": "Material floor",
+      "family": "DELIVERY-RECEIPT",
+      "function": "continuity",
+      "setting": "a receipt that is absent, and what that does not establish",
+      "trajectory": "unresolved",
       "basis": "book-1/07-who-owes-and-what-follows.pins.nibli",
       "pattern": "constructive",
       "postures": [
@@ -688,36 +718,6 @@
       "pattern": "constructive",
       "postures": [
         "is acted upon",
-        "receives"
-      ]
-    },
-    {
-      "id": "07-07",
-      "chapter": "book-1/07-who-owes-and-what-follows.md",
-      "section": "The chain after a finding",
-      "domain": "Records and accountability",
-      "family": "OBLIGATIONS",
-      "function": "both",
-      "setting": "the waiting claim retains repair duties; distinct reader, alternate and remedy routes",
-      "trajectory": "continuity-remedy",
-      "basis": "book-1/07-who-owes-and-what-follows.pins.nibli",
-      "pattern": "records",
-      "postures": [
-        "challenges"
-      ]
-    },
-    {
-      "id": "07-08",
-      "chapter": "book-1/07-who-owes-and-what-follows.md",
-      "section": "Where delivery joins it",
-      "domain": "Material floor",
-      "family": "DELIVERY-RECEIPT",
-      "function": "continuity",
-      "setting": "a receipt that is absent, and what that does not establish",
-      "trajectory": "unresolved",
-      "basis": "book-1/07-who-owes-and-what-follows.pins.nibli",
-      "pattern": "constructive",
-      "postures": [
         "receives"
       ]
     },
@@ -1179,6 +1179,21 @@
       ]
     },
     {
+      "id": "11-07",
+      "chapter": "book-1/11-what-money-cannot-buy.md",
+      "section": "When an economic power ends, and what does not",
+      "domain": "Economy, property, work and commons",
+      "family": "ECONOMIC-CONSTITUTION",
+      "function": "continuity",
+      "setting": "temporary managerial authority ends while rights and continuity duties remain",
+      "trajectory": "fails",
+      "basis": "book-1/11-what-money-cannot-buy.pins.nibli",
+      "pattern": "constructive",
+      "postures": [
+        "is acted upon"
+      ]
+    },
+    {
       "id": "11-04",
       "chapter": "book-1/11-what-money-cannot-buy.md",
       "section": "Public money",
@@ -1221,21 +1236,6 @@
       "pattern": "constructive",
       "postures": [
         "governs"
-      ]
-    },
-    {
-      "id": "11-07",
-      "chapter": "book-1/11-what-money-cannot-buy.md",
-      "section": "When an economic power ends, and what does not",
-      "domain": "Economy, property, work and commons",
-      "family": "ECONOMIC-CONSTITUTION",
-      "function": "continuity",
-      "setting": "a power losing its current review; the floor and the service surviving it",
-      "trajectory": "fails",
-      "basis": "book-1/11-what-money-cannot-buy.pins.nibli",
-      "pattern": "constructive",
-      "postures": [
-        "is acted upon"
       ]
     },
     {
@@ -1453,11 +1453,11 @@
     {
       "id": "13-01",
       "chapter": "book-1/13-a-place-in-which-life-remains-possible.md",
-      "section": "A place in which life remains possible",
+      "section": "Three claims in the same place",
       "domain": "Ecology, future generations and commons",
       "family": "ECOLOGICAL-ANIMAL",
       "function": "ordinary",
-      "setting": "air, water, soil and food",
+      "setting": "distinct human environmental rights, future commons conditions and animal interests",
       "trajectory": "works",
       "basis": "book-1/13-a-place-in-which-life-remains-possible.pins.nibli",
       "pattern": "constructive",
@@ -1472,7 +1472,7 @@
       "domain": "Ecology, future generations and commons",
       "family": "ECOLOGICAL-ANIMAL",
       "function": "both",
-      "setting": "immediate health continuity, river failure, separate physical allocation and independently qualified animal intervention",
+      "setting": "essential water continuity, river shortfall and separate physical allocation",
       "trajectory": "continuity-remedy",
       "basis": "book-1/13-a-place-in-which-life-remains-possible.pins.nibli",
       "pattern": "constructive",
@@ -1496,37 +1496,6 @@
       ]
     },
     {
-      "id": "13-03",
-      "chapter": "book-1/13-a-place-in-which-life-remains-possible.md",
-      "section": "When the record the protection rested on was defective",
-      "domain": "Ecology, future generations and commons",
-      "family": "ECOLOGICAL-ANIMAL",
-      "function": "continuity",
-      "setting": "an ecological record found defective",
-      "trajectory": "continuity-remedy",
-      "basis": "book-1/13-a-place-in-which-life-remains-possible.pins.nibli",
-      "pattern": "records",
-      "postures": [
-        "is acted upon",
-        "challenges"
-      ]
-    },
-    {
-      "id": "13-04",
-      "chapter": "book-1/13-a-place-in-which-life-remains-possible.md",
-      "section": "Speaking for conditions nobody may spend away",
-      "domain": "Ecology, future generations and commons",
-      "family": "ECOLOGICAL-ANIMAL",
-      "function": "both",
-      "setting": "a commons or future-conditions claim",
-      "trajectory": "works",
-      "basis": "book-1/13-a-place-in-which-life-remains-possible.pins.nibli",
-      "pattern": "constructive",
-      "postures": [
-        "challenges"
-      ]
-    },
-    {
       "id": "13-05",
       "chapter": "book-1/13-a-place-in-which-life-remains-possible.md",
       "section": "Protection does not require being human",
@@ -1542,6 +1511,21 @@
       ]
     },
     {
+      "id": "13-04",
+      "chapter": "book-1/13-a-place-in-which-life-remains-possible.md",
+      "section": "Speaking for conditions nobody may spend away",
+      "domain": "Ecology, future generations and commons",
+      "family": "ECOLOGICAL-ANIMAL",
+      "function": "both",
+      "setting": "bounded advocacy stays, expiry, and the separately qualified water and animal response",
+      "trajectory": "works",
+      "basis": "book-1/13-a-place-in-which-life-remains-possible.pins.nibli",
+      "pattern": "constructive",
+      "postures": [
+        "challenges"
+      ]
+    },
+    {
       "id": "13-06",
       "chapter": "book-1/13-a-place-in-which-life-remains-possible.md",
       "section": "When a use has to be stopped",
@@ -1554,6 +1538,22 @@
       "pattern": "coercive",
       "postures": [
         "is acted upon"
+      ]
+    },
+    {
+      "id": "13-03",
+      "chapter": "book-1/13-a-place-in-which-life-remains-possible.md",
+      "section": "When the record the protection rested on was defective",
+      "domain": "Ecology, future generations and commons",
+      "family": "ECOLOGICAL-ANIMAL",
+      "function": "continuity",
+      "setting": "an ecological record found defective",
+      "trajectory": "continuity-remedy",
+      "basis": "book-1/13-a-place-in-which-life-remains-possible.pins.nibli",
+      "pattern": "records",
+      "postures": [
+        "is acted upon",
+        "challenges"
       ]
     },
     {
@@ -1999,7 +1999,7 @@
       "domain": "Public institutions",
       "family": "STATE-FORM",
       "function": "ordinary",
-      "setting": "what is actually fixed about public power",
+      "setting": "ordinary passage, bounded disagreement, and authority through an interruption",
       "trajectory": "works",
       "basis": "book-1/17-how-public-power-is-built.pins.nibli",
       "pattern": "democratic",
@@ -2029,8 +2029,23 @@
       "domain": "Public institutions",
       "family": "STATE-FORM",
       "function": "ordinary",
-      "setting": "the named institutions and their separate powers",
+      "setting": "one reasoned bill return and same-rule Assembly repassage in separate supplied records",
       "trajectory": "works",
+      "basis": "tests/pins/state-form/main-57/expect.pins.nibli",
+      "pattern": "democratic",
+      "postures": [
+        "governs"
+      ]
+    },
+    {
+      "id": "17-07",
+      "chapter": "book-1/17-how-public-power-is-built.md",
+      "section": "What a public result has to contain",
+      "domain": "Democracy and amendment",
+      "family": "STATE-FORM",
+      "function": "both",
+      "setting": "a result nobody can act on until the record holds together",
+      "trajectory": "unresolved",
       "basis": "book-1/17-how-public-power-is-built.pins.nibli",
       "pattern": "democratic",
       "postures": [
@@ -2091,21 +2106,6 @@
       "function": "protective",
       "setting": "a region seeking an exit",
       "trajectory": "contested",
-      "basis": "book-1/17-how-public-power-is-built.pins.nibli",
-      "pattern": "democratic",
-      "postures": [
-        "governs"
-      ]
-    },
-    {
-      "id": "17-07",
-      "chapter": "book-1/17-how-public-power-is-built.md",
-      "section": "What a public result has to contain",
-      "domain": "Democracy and amendment",
-      "family": "STATE-FORM",
-      "function": "both",
-      "setting": "a result nobody can act on until the record holds together",
-      "trajectory": "unresolved",
       "basis": "book-1/17-how-public-power-is-built.pins.nibli",
       "pattern": "democratic",
       "postures": [
@@ -2344,9 +2344,9 @@
       "domain": "Emergency and resilience",
       "family": "PUBLIC-SAFETY",
       "function": "protective",
-      "setting": "an emergency declaration",
+      "setting": "a complete declaration and the separate property requisition depending on it",
       "trajectory": "works",
-      "basis": "book-1/20-a-crisis-does-not-suspend-the-republic.pins.nibli",
+      "basis": "tests/pins/public-safety/review/declaration-conflict-withdraws-requisition/expect.pins.nibli",
       "pattern": "coercive",
       "postures": [
         "governs"
@@ -2374,9 +2374,9 @@
       "domain": "Defence and armed force",
       "family": "PUBLIC-SAFETY",
       "function": "protective",
-      "setting": "defence under civilian command",
+      "setting": "civilian defence structure and the separate force-abroad authorisation",
       "trajectory": "works",
-      "basis": "book-1/20-a-crisis-does-not-suspend-the-republic.pins.nibli",
+      "basis": "tests/pins/public-safety/review/defence-structure-conflict-withdraws-force-abroad/expect.pins.nibli",
       "pattern": "coercive",
       "postures": [
         "governs"
@@ -2395,6 +2395,21 @@
       "pattern": "coercive",
       "postures": [
         "is acted upon"
+      ]
+    },
+    {
+      "id": "20-07",
+      "chapter": "book-1/20-a-crisis-does-not-suspend-the-republic.md",
+      "section": "Treaties, trade and a region's exit",
+      "domain": "Locality, mobility and external relations",
+      "family": "PUBLIC-SAFETY",
+      "function": "protective",
+      "setting": "separate treaty powers, cross-border harm limits and protected lawful exit",
+      "trajectory": "works",
+      "basis": "book-1/20-a-crisis-does-not-suspend-the-republic.pins.nibli",
+      "pattern": "coercive",
+      "postures": [
+        "governs"
       ]
     },
     {
@@ -3253,6 +3268,81 @@
       ]
     },
     {
+      "id": "29-03",
+      "chapter": "book-1/29-the-one-thing-taken.md",
+      "section": "Why the legal loss stops at movement",
+      "domain": "Public safety, policing and use of force",
+      "family": "ARTICLES",
+      "function": "protective",
+      "setting": "custody as a single deprivation",
+      "trajectory": "works",
+      "basis": "book-1/29-the-one-thing-taken.pins.nibli",
+      "pattern": "coercive",
+      "postures": [
+        "is acted upon"
+      ]
+    },
+    {
+      "id": "29-05",
+      "chapter": "book-1/29-the-one-thing-taken.md",
+      "section": "The authority must be current",
+      "domain": "Public safety, policing and use of force",
+      "family": "CUSTODY-EXECUTION",
+      "function": "protective",
+      "setting": "positive intake access and independently preserved filings before current custody",
+      "trajectory": "works",
+      "basis": "book-1/29-the-one-thing-taken.pins.nibli",
+      "pattern": "coercive",
+      "postures": [
+        "is acted upon"
+      ]
+    },
+    {
+      "id": "29-04",
+      "chapter": "book-1/29-the-one-thing-taken.md",
+      "section": "What custody owes",
+      "domain": "Public safety, policing and use of force",
+      "family": "PUBLIC-SAFETY",
+      "function": "ordinary",
+      "setting": "custodial duties and the separate evidence needed for actual care",
+      "trajectory": "continuity-remedy",
+      "basis": "book-1/29-the-one-thing-taken.pins.nibli",
+      "pattern": "coercive",
+      "postures": [
+        "is acted upon"
+      ]
+    },
+    {
+      "id": "29-06",
+      "chapter": "book-1/29-the-one-thing-taken.md",
+      "section": "What leaving changes",
+      "domain": "Public safety, policing and use of force",
+      "family": "CUSTODY-ADJUDICATION",
+      "function": "continuity",
+      "setting": "qualified sentence completion and case-specific release",
+      "trajectory": "continuity-remedy",
+      "basis": "book-1/29-the-one-thing-taken.pins.nibli",
+      "pattern": "coercive",
+      "postures": [
+        "challenges"
+      ]
+    },
+    {
+      "id": "29-08",
+      "chapter": "book-1/29-the-one-thing-taken.md",
+      "section": "Physical holding is a further fact",
+      "domain": "Public safety, policing and use of force",
+      "family": "PUBLIC-SAFETY",
+      "function": "ordinary",
+      "setting": "care and independent review for a reported holding after authority ends",
+      "trajectory": "continuity-remedy",
+      "basis": "tests/pins/custody/condition-findings/expect.pins.nibli",
+      "pattern": "coercive",
+      "postures": [
+        "is acted upon"
+      ]
+    },
+    {
       "id": "29-01",
       "chapter": "book-1/29-the-one-thing-taken.md",
       "section": "Protection is not punishment",
@@ -3283,66 +3373,6 @@
       ]
     },
     {
-      "id": "29-03",
-      "chapter": "book-1/29-the-one-thing-taken.md",
-      "section": "Why the legal loss stops at movement",
-      "domain": "Public safety, policing and use of force",
-      "family": "ARTICLES",
-      "function": "protective",
-      "setting": "custody as a single deprivation",
-      "trajectory": "works",
-      "basis": "book-1/29-the-one-thing-taken.pins.nibli",
-      "pattern": "coercive",
-      "postures": [
-        "is acted upon"
-      ]
-    },
-    {
-      "id": "29-04",
-      "chapter": "book-1/29-the-one-thing-taken.md",
-      "section": "What custody owes",
-      "domain": "Public safety, policing and use of force",
-      "family": "PUBLIC-SAFETY",
-      "function": "ordinary",
-      "setting": "humane conditions and an independent route to challenge actual holding",
-      "trajectory": "continuity-remedy",
-      "basis": "book-1/29-the-one-thing-taken.pins.nibli",
-      "pattern": "coercive",
-      "postures": [
-        "is acted upon"
-      ]
-    },
-    {
-      "id": "29-05",
-      "chapter": "book-1/29-the-one-thing-taken.md",
-      "section": "The authority must be current",
-      "domain": "Public safety, policing and use of force",
-      "family": "CUSTODY-EXECUTION",
-      "function": "protective",
-      "setting": "positive intake access and independently preserved filings before current custody",
-      "trajectory": "works",
-      "basis": "book-1/29-the-one-thing-taken.pins.nibli",
-      "pattern": "coercive",
-      "postures": [
-        "is acted upon"
-      ]
-    },
-    {
-      "id": "29-06",
-      "chapter": "book-1/29-the-one-thing-taken.md",
-      "section": "What leaving changes",
-      "domain": "Public safety, policing and use of force",
-      "family": "CUSTODY-ADJUDICATION",
-      "function": "continuity",
-      "setting": "qualified sentence completion and case-specific release",
-      "trajectory": "continuity-remedy",
-      "basis": "book-1/29-the-one-thing-taken.pins.nibli",
-      "pattern": "coercive",
-      "postures": [
-        "challenges"
-      ]
-    },
-    {
       "id": "29-07",
       "chapter": "book-1/29-the-one-thing-taken.md",
       "section": "The child with nobody",
@@ -3364,24 +3394,9 @@
       "domain": "Records and accountability",
       "family": "ARTICLES",
       "function": "protective",
-      "setting": "a design that can state its own violations",
+      "setting": "a conflicting placement report, review duty and the route onward",
       "trajectory": "works",
       "basis": "book-1/30-when-the-system-notices-it-broke.pins.nibli",
-      "pattern": "records",
-      "postures": [
-        "is acted upon"
-      ]
-    },
-    {
-      "id": "30-01",
-      "chapter": "book-1/30-when-the-system-notices-it-broke.md",
-      "section": "Evidence of denied contact",
-      "domain": "Records and accountability",
-      "family": "ARTICLES",
-      "function": "protective",
-      "setting": "a positive condition finding tied to a holding, place and period",
-      "trajectory": "works",
-      "basis": "tests/pins/custody/condition-findings/expect.pins.nibli",
       "pattern": "records",
       "postures": [
         "is acted upon"
@@ -3403,6 +3418,21 @@
       ]
     },
     {
+      "id": "30-01",
+      "chapter": "book-1/30-when-the-system-notices-it-broke.md",
+      "section": "Evidence of denied contact",
+      "domain": "Records and accountability",
+      "family": "ARTICLES",
+      "function": "protective",
+      "setting": "a positive condition finding tied to a holding, place and period",
+      "trajectory": "works",
+      "basis": "tests/pins/custody/condition-findings/expect.pins.nibli",
+      "pattern": "records",
+      "postures": [
+        "is acted upon"
+      ]
+    },
+    {
       "id": "30-03",
       "chapter": "book-1/30-when-the-system-notices-it-broke.md",
       "section": "From a marker to a duty",
@@ -3415,6 +3445,21 @@
       "pattern": "records",
       "postures": [
         "requests"
+      ]
+    },
+    {
+      "id": "30-05",
+      "chapter": "book-1/30-when-the-system-notices-it-broke.md",
+      "section": "When the responsible office fails",
+      "domain": "Records and accountability",
+      "family": "OBLIGATIONS",
+      "function": "continuity",
+      "setting": "the office that should act does not act",
+      "trajectory": "fails",
+      "basis": "book-1/30-when-the-system-notices-it-broke.pins.nibli",
+      "pattern": "records",
+      "postures": [
+        "is acted upon"
       ]
     },
     {
@@ -3431,21 +3476,6 @@
       "postures": [
         "is acted upon",
         "challenges"
-      ]
-    },
-    {
-      "id": "30-05",
-      "chapter": "book-1/30-when-the-system-notices-it-broke.md",
-      "section": "When the responsible office fails",
-      "domain": "Records and accountability",
-      "family": "OBLIGATIONS",
-      "function": "continuity",
-      "setting": "the office that should act does not act",
-      "trajectory": "fails",
-      "basis": "book-1/30-when-the-system-notices-it-broke.pins.nibli",
-      "pattern": "records",
-      "postures": [
-        "is acted upon"
       ]
     },
     {

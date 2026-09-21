@@ -127,6 +127,60 @@ reinstate the retired tooling or workflow.
 Grouped by kind. Dates in each heading are the ratification dates; a ruling
 that was later implemented or narrowed carries that supersession inline.
 
+### Item 28 — governing questions and case progression, 2026-09-21
+
+Under the standing delegated approval, Chapters 7, 9, 11, 13, 17, 19, 20, 29
+and 30 now lead with a governing question and organise their supplied cases
+around the consequences readers need to distinguish. Chapter 7 begins with
+the waiting scarcity claimant and follows responsibility into review, repair
+and delivery evidence. Chapter 11 keeps an intervention's end beside its
+authority before turning to public finance. Chapter 13 introduces human
+environmental rights, commons and future conditions, and animal interests
+before their offices and remedies. The water case and the later disagreement
+between offices retain their separate permissions and limits.
+
+Chapter 17 follows the existing ordinary-bill records through a bounded
+Council return, its missing-condition control and Assembly repassage under
+the same rule. It explicitly distinguishes these supplied stages from an
+actual legislative event; fiscal, executive and judicial authorities remain
+separate. Public-result requirements precede the later institutional uses.
+Chapter 19 begins with the complete holding and dependent uses before the
+defect sequence. Chapter 20 keeps each authorisation with its withdrawal and
+separates treaties, trade and lawful exit. Chapter 29 keeps the sentence,
+current authority, duties and release together, then distinguishes physical
+holding and other protective powers. Chapter 30 proceeds from reported
+placement and evidenced conditions to review, nonresponse and withdrawal.
+Chapter 9 already had a coherent case progression after item 27 and needed
+only a clearer question and transitions; the review does not manufacture a
+larger defect there.
+
+The separate prose comparison retains every substantive protection and
+qualification through the moves. No dialogue, biography, outside event or
+successful operation is invented. The existing narrative-register decision
+records the exact canonical text as session-drafted and author-approved under
+the delegated 2026-09-13 instruction. The reader-coverage source and generated
+report follow the new order with existing IDs preserved; two newly separated
+sections bring the total to 240 passages. Two existing full-society locators
+follow the renamed environmental heading. No historical assurance judgment
+is renewed and no new verification gate is added.
+
+Focused `./verify.sh --only` checks pass state-form main-57's seven pins in
+12.90s and main-58's six pins in 12.63s, including the bill stages and the
+missing-return control. All five claim-discipline, six reference-integrity
+and ten reader-coverage development checks pass; the latter two pass again
+after the final heading and locator update. The complete
+`RIGHTS_VERIFY_JOBS=4 ./verify.sh` passes **88,815 pins across 16,137 cases**,
+with complete contradiction checks and no findings, in **1,175.87s**. The
+five-minute target remains unmet. The constitution, substantive pins and
+suite inventory are unchanged throughout the run. Item 28 is complete.
+
+The manuscript measures 59,116 whitespace-separated words excluding HTML
+comments across 34 ordered inputs. Derived chapters contain 41,795 words
+(70.70%); opening and method remain 3,938 and 3,936 words. Chapter order,
+pin pairs, required child slots and exemptions, the three exempt channels
+and the carried-appendix boundary remain. This is editorial assessment, not
+reader testing or a released edition. Book 2 stays collection-only until Gate C.
+
 ### Item 27 — identifiable cases and explicit roles, 2026-09-21
 
 Under the standing delegated approval, the opening's optional case index and

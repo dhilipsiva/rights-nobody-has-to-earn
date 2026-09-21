@@ -5,25 +5,27 @@ invest and pass on lawfully held wealth. But wealth cannot decide who receives
 what the floor owes, and owning a service does not give its owner unlimited
 power over the people who depend on it.
 
-The boundary runs from a dwelling to a contract, a private gatekeeper and
-public money. Both private control and public intervention must answer to
-constitutional limits.
+When does lawful control over property become power over another person's
+rights? The housing cases separate an asset from the floor. Harrow's entries
+then test the grounds for public duties on a private function. Public
+intervention, including taxation and the payment system, needs limits too.
 
 ## Owning without owning the floor
 
-Possession, use, transfer and inheritance are protected conditional liberties.
-Personal possessions, ordinary home use and lawful productive activity receive
-security against arbitrary deprivation. This is not a right to any particular
-asset.
-
-The housing floor makes the distinction concrete. It guarantees adequate secure
-housing, not ownership or perpetual possession of one building. Rental,
+The housing cases begin with two different claims. The floor guarantees adequate
+secure housing, not ownership or perpetual possession of one building. Rental,
 cooperative, customary, public, household and private tenure are all lawful.
 Imperfect title does not erase a dwelling claim. Eviction or foreclosure that
 threatens the floor requires legality, notice, a hearing, proportionality,
 review and a real public continuity route. A high-value asset can be reached
 while adequate housing and due process remain protected; the acceptance cases
 keep those claims separate.
+
+Alongside that floor, possession, use, transfer and inheritance are protected
+conditional liberties.
+Personal possessions, ordinary home use and lawful productive activity receive
+security against arbitrary deprivation. This is not a right to any particular
+asset.
 
 Compulsory acquisition requires its own public authority: law, a compatible
 purpose, necessity, public reasons, a hearing, review and compensation calibrated
@@ -39,6 +41,9 @@ access route, including a compulsory access licence where justified. The licence
 is a separate public power, not an unrestricted permission to take knowledge.
 
 ## A promise is not a trap
+
+Control also comes through agreements. Their enforceability depends on more
+than a signature, just as a property claim depends on more than an asset's value.
 
 People may contract or refuse. Deception, coercion, unconscionable dependency,
 material non-disclosure or the absence of meaningful exit can defeat the claim
@@ -97,7 +102,32 @@ into a public service. Coercion, captivity, violence and obstructed exit there
 belong to the justice and protection routes. The private-power finding cannot
 be used to impose a score on voluntary life.
 
+## When an economic power ends, and what does not
+
+A qualifying private-power finding can support an intervention, but it does
+not make the manager permanent. The expiry cases separate the manager's
+authority from the continuity owed to people using the service.
+
+Each temporary economic power needs a source, trigger, scope, review and end
+appropriate to that power. It cannot borrow the custody clock. Missing current
+authority withholds the restrictive or managerial conclusion rather than
+extending it. Review silence is not approval. A declared alternate must take
+up review when the ordinary reviewer is certified unavailable; the alternate's
+absence supplies neither approval nor an indefinite hold.
+
+The focused counterfactuals remove current independent review from each power
+and test the affected conclusions. Expiry cases separately show restrictive
+authority ending while ordinary rights and public continuity duties remain.
+Enterprise failure cannot extinguish a remedy or authorise interruption of an
+essential service. A lapsed manager loses authority, not the institution's
+responsibility to secure continuity. Whether the manager actually stops and
+the successor actually provides the service requires evidence beyond those
+conclusions.
+
 ## Public money
+
+The public body has to justify its powers too. A duty to finance the floor
+does not give every office authority to tax, borrow or spend.
 
 The tax system as a whole must reflect capacity to contribute. Democratic law
 chooses rates, bases, exemptions and their mixture. Collection may reach income
@@ -150,24 +180,6 @@ regional or local. Regions may protect more strongly, but cannot lower common
 floors or minima, obstruct portability, impose waiting periods or property
 qualifications, or use fiscal competition to defeat equality. The division
 allows different provision without making a move across regions a loss of rights.
-
-## When an economic power ends, and what does not
-
-Each temporary economic power needs a source, trigger, scope, review and end
-appropriate to that power. It cannot borrow the custody clock. Missing current
-authority withholds the restrictive or managerial conclusion rather than
-extending it. Review silence is not approval. A declared alternate must take
-up review when the ordinary reviewer is certified unavailable; the alternate's
-absence supplies neither approval nor an indefinite hold.
-
-The focused counterfactuals remove current independent review from each power
-and test the affected conclusions. Expiry cases separately show restrictive
-authority ending while ordinary rights and public continuity duties remain.
-Enterprise failure cannot extinguish a remedy or authorise interruption of an
-essential service. A lapsed manager loses authority, not the institution's
-responsibility to secure continuity. Whether the manager actually stops and
-the successor actually provides the service requires evidence beyond those
-conclusions.
 
 ## The child with nobody
 

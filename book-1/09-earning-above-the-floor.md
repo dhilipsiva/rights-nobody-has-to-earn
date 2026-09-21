@@ -6,8 +6,8 @@ floor. It cannot become the price of standing, political membership or a
 remedy. The same boundary protects someone who has never been employed and a worker
 whose employer or insurer fails.
 
-The chapter follows freedom to undertake employment, then three separate
-claims: Ansel's certificate, Coll's wage and Marlo's illness supplement.
+What can someone claim above the floor, and who owes it? The chapter follows
+freedom to undertake employment, then three separate claims: Ansel's certificate, Coll's wage and Marlo's illness supplement.
 Each has its own issuer or payer and supporting evidence. None measures a
 person's worth, and none establishes that money arrived.
 
@@ -67,6 +67,9 @@ qualification a condition of basic rights.
 
 ## What a compensation record establishes
 
+The certificate identifies a qualification claim. A wage needs a different
+connection: an obligation by a payer to a recipient on a stated basis.
+
 In the wage case, Foundry is the payer and Coll the recipient. Foundry's
 promise alone derives no compensation. A separate authorised attester,
 Steward, attests Coll's wage on the stated labour basis. The compensation
@@ -92,6 +95,9 @@ not do so. These are conclusions about compensation and restitution, not a
 record of either payment; the floor remains outside the dispute.
 
 ## A supplement above the floor
+
+An illness supplement asks a different question from the wage: whether a
+covered event activates a contributory scheme's obligation.
 
 Marlo is the claimant in the illness case. Ledgerhouse is the carrier, and
 SchemeM names its contributory scheme. Marlo's contribution record alone

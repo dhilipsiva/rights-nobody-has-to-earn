@@ -9,6 +9,63 @@
 > author's standing delegated approval of 2026-09-13. Earlier dispositions,
 > including `OL-15-v1` in section 7a, remain visible as history.
 
+## Governing questions and case progression — item 28, 2026-09-21
+
+The exact current Markdown of Chapters 7, 9, 11, 13, 17, 19, 20, 29 and 30 is
+`session-drafted, author-approved under delegated approval (2026-09-13)`.
+Each chapter identifies a governing question and follows the supplied cases
+before extending their distinctions to related powers or duties. This is an
+editorial reorganisation of the current design, not a constitutional policy
+change. Every substantive protection and qualification remains. Comparing the
+old paragraphs with their new locations establishes that the large moves
+retain their content; changed introductions and bridges preserve the same
+claims. No new person, biography, dialogue, motive or outside event is supplied.
+
+Chapter 7 begins with the scarcity claimant still owed provision, then follows
+repair, review, nonresponse, continuity and the separate need for delivery
+evidence. The delegation example remains a separate test. Chapter 9 already
+had a sound progression after item 27: its smaller change clarifies the
+question and the transitions from certification to wages and supplements.
+Chapter 11 starts with housing, follows private control into public duties,
+and places the end of an intervention beside its authority before turning to
+public finance. Its grounds, powers, continuity and rights remain distinct.
+
+Chapter 13 introduces the human environmental right, commons and future
+conditions, and direct animal interests before their institutions and
+remedies. The water case leads into separate environmental limits and animal
+use conditions. The later office-disagreement example returns to the river
+and fish after explaining the two offices. Its distinct animal-use test still
+needs its own prior review; no rescue or supply is reported as performed.
+Defective authority and surviving duties follow the substantive protections.
+
+Chapter 17 follows the ordinary-bill records: a first passage and unused
+reasoned return, a control lacking the unused-return finding, and a separate
+completed Assembly repassage. Existing state-form main-57 and main-58 pins
+execute those examples; they are not a new invented legislative history.
+Revenue, expenditure, executive mandate and judicial review remain separate.
+The public-result requirements now precede the later appointment, deadlock
+and exit consequences. The institutional table retains its bounded functions.
+
+Chapter 19 introduces its complete holding and dependent uses before explaining
+their separate permissions, then follows the unauthorised-input finding.
+Chapter 20 keeps each positive authorisation next to its defect sequence and
+separates treaties, trade and lawful exit from force abroad. Chapter 29 follows
+Hano's sentence through current authority, custodial duties and release, then
+distinguishes actual holding and separate protective powers. The force rules
+are grouped by function, necessity, information and refusal. Chapter 30 moves
+from the placement comparison to the distinct conditions finding, review,
+nonresponse and withdrawal. Missing evidence still proves no outside breach.
+
+The existing reader-coverage JSON follows the new section order, retaining
+stable passage IDs. Two newly separated sections make 240 passages; they
+introduce no new constitutional claims or verification gate. The existing
+full-society ledger's two references to the renamed environmental section
+follow its new heading. Historical assurance judgments are not renewed.
+The chapter order, pin pairs, required child slots and exemptions, three
+exempt prose channels and carried-appendix boundary remain. Book 2 stays
+collection-only until Gate C. The canonical files and coherent commit retain
+the approved text; CLAUDE.md records the completed checks and timing.
+
 ## Identifiable cases and explicit roles — item 27, 2026-09-21
 
 The exact current opening case index and Chapters 9, 10, 23–26 and 30 are

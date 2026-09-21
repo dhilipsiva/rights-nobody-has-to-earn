@@ -4,11 +4,20 @@ A record kept to provide a service is not permission to watch its recipient,
 combine their files or let a machine decide their rights. Each further use
 needs its own authority tied to the exact holding that was reviewed.
 
-The chapter follows that dependency through an authorised use and a defect,
-then asks how a state can count conditions without ranking people. A person's
+What happens to those permissions when the holding itself is defective?
+The chapter follows an authorised use through that failure, then asks how a
+state can count conditions without ranking people. A person's
 rights must survive both the presence of a file and its absence.
 
 ## Keeping, watching, and letting a machine help
+
+The chapter's positive case completes a holding, processing of that same record
+and automated decision support tied to both. The holder owes accuracy, security,
+protection from retaliation and an explanation; an independent reviewer owes a
+human decision, and the subject may contest the support. A holding about one
+subject cannot license processing about another.
+
+### Why the permissions are separate
 
 The rules cover identity, health, care, schooling, employment, housing, money,
 policing and public-decision records. A holding needs a declared purpose and
@@ -50,11 +59,7 @@ asked. When the stated end arrives or the purpose runs out, what is held must
 be deleted or narrowed, with a record of what was done, no quiet extension and
 no rebuilding it from copies.
 
-The chapter's positive case completes a holding, processing of that same record
-and automated decision support tied to both. The holder owes accuracy, security,
-protection from retaliation and an explanation; an independent reviewer owes a
-human decision, and the subject may contest the support. A holding about one
-subject cannot license processing about another.
+### When the input is unlawful
 
 The defect sequence then introduces an independently reviewed finding of an
 unauthorised input. The holding and its dependent permissions for processing
@@ -81,6 +86,10 @@ standing routes are separate from permission to hold or process records; a
 file is not a source of human worth or a licence to reduce rights.
 
 ## Counting without ranking people
+
+A file used for a decision about one person and a dataset used to describe
+conditions have different purposes. Population evidence needs a route that
+does not turn a group pattern into a judgment about an individual.
 
 A public institution needs to know what is happening without turning the
 people it counts into a ranked list. Censuses, representative samples,

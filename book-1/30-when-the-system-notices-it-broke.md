@@ -1,10 +1,9 @@
 # When the System Notices It Broke
 
-A report placing Ruk at home conflicts with Ruk's authorised secure placement
-and produces a breach marker. Hano's case authorises home placement, so the
-equivalent report produces no marker. The difference is the authority in each
-case, not a general ban on considering home confinement for Ruk. The marker
-also creates a duty: Review owes a response about the affected person.
+What must follow when the record identifies a breach? Ruk's placement report
+provides a starting point: it conflicts with the place authorised for Ruk,
+producing a marker and a duty on Review. The route from that finding to
+redress must identify who answers and what happens if they do not.
 
 A finding needs a reader, a response,
 and a route onward if the response fails. Each connection can be checked separately.
@@ -16,7 +15,30 @@ company during confinement, carry between witnessed records, conflicting clear a
 void histories, protected entries, event order, adulthood evidence, and current
 custody authority. They differ in what evidence they require and what follows.
 
+## A placement report against a rule
+
+The placement marker reads a reported act. Ruk and Lalo have authority for
+secure placement, identified as HighSec, and no report placing them at home;
+the placement marker is silent about both. Chapter 28 adds a home-placement
+report for Ruk. The marker then fires because that report conflicts with the
+authorised placement, even though Ruk is eligible for consideration of home
+confinement. The equivalent report for Hano matches Hano's authorised route
+and leaves the marker silent.
+
+This test distinguishes the reported act from a home option or a family entry.
+Chapter 28 also tests inappropriate secure placement, unknown destinations,
+competing reports and an exact place without permission for that case. Competing
+qualified placement records block custody authority. These are distinct checks;
+the home-placement example alone establishes none of the others. No unreported
+physical act can reach the placement-report alarm.
+
+The alarm therefore needs testing as much as the routing rule does. Neither its
+location in the constitution nor its name makes it reliable.
+
 ## Evidence of denied contact
+
+A placement alarm compares a report with an authority. Denied contact needs
+a different kind of evidence: a finding about the conditions of actual holding.
 
 The supplied prisoners have no matching company receipts. That absence produces
 no isolation finding. Missing evidence of company is not positive evidence that
@@ -44,26 +66,6 @@ or the inability to leave. Checking that the ground belongs to the permitted voc
 can reject an unsupported kind of claim. It cannot establish that an admitted claim
 is true of the world. Agreement among named reviewers is evidence submitted for
 assessment, not a guarantee of their independence or accuracy.
-
-## A placement report against a rule
-
-The placement marker reads a reported act. Ruk and Lalo have authority for
-secure placement, identified as HighSec, and no report placing them at home;
-the placement marker is silent about both. Chapter 28 adds a home-placement
-report for Ruk. The marker then fires because that report conflicts with the
-authorised placement, even though Ruk is eligible for consideration of home
-confinement. The equivalent report for Hano matches Hano's authorised route
-and leaves the marker silent.
-
-This test distinguishes the reported act from a home option or a family entry.
-Chapter 28 also tests inappropriate secure placement, unknown destinations,
-competing reports and an exact place without permission for that case. Competing
-qualified placement records block custody authority. These are distinct checks;
-the home-placement example alone establishes none of the others. No unreported
-physical act can reach the placement-report alarm.
-
-The alarm therefore needs testing as much as the routing rule does. Neither its
-location in the constitution nor its name makes it reliable.
 
 ## From a marker to a duty
 
@@ -110,40 +112,11 @@ that further consequences are technically possible, but the extension's missing 
 still does not establish real non-response. The ordinary constitutional route requires
 its positive evidence.
 
-## Withdrawing a defective authority
-
-Consider a restriction on publication. A reviewed harm finding, published reasons,
-and an available challenge route support a specific permission to enforce. An
-independent defect finding then identifies a missing harm ground, excessive reach,
-or viewpoint discrimination. The restriction no longer qualifies in the evaluated
-record, so its dependent enforcement permission stops deriving. The challenge reader
-owes review and correction; the imposing body owes publication of the correction.
-
-A record holding has a similar dependency. If its reviewed authority fails, the
-processing and automated-use permissions built on it also fail. A supposed physical
-shortage established to be a budget choice cannot continue to authorise scarcity
-allocation. These are withdrawals of formal authority. They do not establish that
-publication resumed, surveillance stopped, or withheld provision arrived.
-
-The duties attached to the recorded undertaking continue through withdrawal.
-Chapter 19's holder still owes accuracy, security, protection from retaliation,
-notification and explanation; human review and the subject's contest right
-remain. Chapter 20's inventory, return, compensation and audit duties remain too.
-Removing permission cannot discharge those obligations. Their continued
-derivation does not establish that retained data was protected or property returned.
-
-The defect is specific to the affected record. An unrelated holding does not fall
-merely because another one is defective. Where common-cause correction or affected-case
-re-examination is owed, that further duty has its own grounds; it does not make every
-decision by the body void. The subject's standing, floor debt and existing ballot
-entitlement remain through the tested withdrawal sequences. A defective restriction
-is not a finding that the person lost those rights.
-
-Correction also cannot erase what already happened. The record can require redress
-and publication without establishing either. The people affected need the performance
-of those duties, not another conclusion that they were owed.
-
 ## When the responsible office fails
+
+For the person whose placement or conditions triggered review, assigning
+that duty is only the first connection. Failure to answer needs its own
+finding before another office takes over.
 
 A positively established non-response activates the separated alternate and the
 continuity route. If that alternate also fails, naming it has not completed the
@@ -176,6 +149,43 @@ effective control cannot be defined out because they arrived recently.
 These routes assign responsibility and legal limits. Their adequacy remains a design
 question where a required connection is missing; their performance needs operational
 evidence. Naming an office settles neither question on its own.
+
+## Withdrawing a defective authority
+
+Sometimes review must also stop reliance on the authority behind an act.
+The restriction cases show what that withdrawal changes, and which duties
+remain attached to what the actor undertook.
+
+Consider a restriction on publication. A reviewed harm finding, published reasons,
+and an available challenge route support a specific permission to enforce. An
+independent defect finding then identifies a missing harm ground, excessive reach,
+or viewpoint discrimination. The restriction no longer qualifies in the evaluated
+record, so its dependent enforcement permission stops deriving. The challenge reader
+owes review and correction; the imposing body owes publication of the correction.
+
+A record holding has a similar dependency. If its reviewed authority fails, the
+processing and automated-use permissions built on it also fail. A supposed physical
+shortage established to be a budget choice cannot continue to authorise scarcity
+allocation. These are withdrawals of formal authority. They do not establish that
+publication resumed, surveillance stopped, or withheld provision arrived.
+
+The duties attached to the recorded undertaking continue through withdrawal.
+Chapter 19's holder still owes accuracy, security, protection from retaliation,
+notification and explanation; human review and the subject's contest right
+remain. Chapter 20's inventory, return, compensation and audit duties remain too.
+Removing permission cannot discharge those obligations. Their continued
+derivation does not establish that retained data was protected or property returned.
+
+The defect is specific to the affected record. An unrelated holding does not fall
+merely because another one is defective. Where common-cause correction or affected-case
+re-examination is owed, that further duty has its own grounds; it does not make every
+decision by the body void. The subject's standing, floor debt and existing ballot
+entitlement remain through the tested withdrawal sequences. A defective restriction
+is not a finding that the person lost those rights.
+
+Correction also cannot erase what already happened. The record can require redress
+and publication without establishing either. The people affected need the performance
+of those duties, not another conclusion that they were owed.
 
 ## What can be checked
 

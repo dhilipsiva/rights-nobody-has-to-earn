@@ -1,75 +1,9 @@
 # Who Owes, and What Follows
 
-A floor entitlement does not say which public function must answer a particular
-failure. A receipt does not say who must act when provision breaks down. This
-chapter follows responsibility from the duty to provide through a finding,
-review, continuity and remedy.
-
-The delegation case gives the first result. A provider undertakes a public
-function, and the rules assign its duty to that provider. They also retain
-the public duty. One conclusion does not replace the other. Contracting out
-the work cannot leave the person with nobody to answer to.
-
-## The forms public responsibility takes
-
-Public responsibility takes distinct forms. To respect a right is
-to refrain from interfering with it. To protect is to prevent, investigate
-and answer private interference through public powers. To fulfil is to secure
-what the public floor requires. To continue is to preserve protection when
-an ordinary bearer or provider fails. To remedy is to restore the person
-after a breach.
-
-The chapter's cases establish a duty of each kind. Each has a bearer, a
-function, a jurisdiction and a scope supplied by a current lawful source.
-Being a public body does not assign every public task to that body. A duty
-here is a legal consequence, not a record that anyone performed the work.
-
-## A duty cannot be contracted away
-
-A public function cannot shed its duties by being contracted out, insured,
-paid through a voucher or assigned to a public, cooperative, mutual,
-nonprofit, charitable, household or private provider. The performer carries
-the duties of that function and acquires no wider authority over the recipient.
-
-The public responsibility to finance, secure, and maintain the floor remains
-throughout. Price, wealth, credit, contribution, insurance status and ability
-to pay cannot decide access. Cash, a voucher or insurance approval is an
-instrument. Independent evidence from the receiving side must establish
-timely, accessible and adequate access before that instrument can count as
-fulfilling the duty.
-
-## What voluntary provision does not do
-
-Voluntary provision can meet a need without a duplicate public delivery.
-That conclusion requires independent evidence that the protected condition
-currently holds. It does not extinguish the entitlement or public responsibility.
-Withdrawal, dispute, inaccessibility, inadequacy or failure requires continuity.
-
-No household, relationship, association or charity is presumed to provide
-another person's floor. A private duty must be stated for a function undertaken
-or for independently established public-scale power. The test that supplies
-such a duty produces it; the test supplying subject matter alone does not.
-Ordinary ownership, exchange, care, dependency and intimacy do not create a
-general public power over private life.
-
-## Duties are not a price for rights
-
-A civic duty may have consequences when breached. Those consequences cannot
-remove standing, the floor, political voice, access to evidence or challenge,
-or an effective remedy. Lack of employment, payment, identification, compliance
-or contribution supplies no right to lower those protections. Any other
-consequence needs its own lawful source and process.
-
-Duties to a person, a protected common, an office or under a voluntary promise
-have no automatic priority over one another. A current priority rule and independently
-reviewed conflict evidence are needed to displace one by another. Missing or
-conflicting priority evidence decides nothing. A voluntary promise cannot
-waive a protection the constitution makes non-waivable.
-
-An excuse must be positively established, current and reviewable. It can
-suspend or move a bearer's performance without erasing the claim on the other
-side. Continuity needs a separately named alternate. Failing to answer does
-not create the bearer's own excuse.
+Who must act when a person is still waiting for what the floor owes? An
+entitlement names the claim; responsibility must also reach a particular
+bearer. The scarcity case from the preceding chapter follows that connection
+through a shortfall, a challenge and a duty to repair.
 
 ## The chain after a finding
 
@@ -122,7 +56,80 @@ proved by the existence of the previous duty. Recurrence checking likewise
 covers the supplied records within its declared horizon; it cannot certify
 that a failure will never happen again.
 
+## The forms public responsibility takes
+
+The waiting claimant needs more than an explanation of the allocation.
+The manager's repair duty and the reader's review duty illustrate why public
+responsibility has several forms.
+
+Public responsibility takes distinct forms. To respect a right is
+to refrain from interfering with it. To protect is to prevent, investigate
+and answer private interference through public powers. To fulfil is to secure
+what the public floor requires. To continue is to preserve protection when
+an ordinary bearer or provider fails. To remedy is to restore the person
+after a breach.
+
+The chapter's cases establish a duty of each kind. Each has a bearer, a
+function, a jurisdiction and a scope supplied by a current lawful source.
+Being a public body does not assign every public task to that body. A duty
+here is a legal consequence, not a record that anyone performed the work.
+
+## A duty cannot be contracted away
+
+A separate delegation case asks who owes the duty when a provider takes over.
+A provider undertakes a public function, and the rules assign its duty to
+that provider. They also retain the public duty. Contracting out the work
+cannot leave the person with nobody to answer to.
+
+A public function cannot shed its duties by being contracted out, insured,
+paid through a voucher or assigned to a public, cooperative, mutual,
+nonprofit, charitable, household or private provider. The performer carries
+the duties of that function and acquires no wider authority over the recipient.
+
+The public responsibility to finance, secure, and maintain the floor remains
+throughout. Price, wealth, credit, contribution, insurance status and ability
+to pay cannot decide access. Cash, a voucher or insurance approval is an
+instrument. Independent evidence from the receiving side must establish
+timely, accessible and adequate access before that instrument can count as
+fulfilling the duty.
+
+## What voluntary provision does not do
+
+Voluntary provision can meet a need without a duplicate public delivery.
+That conclusion requires independent evidence that the protected condition
+currently holds. It does not extinguish the entitlement or public responsibility.
+Withdrawal, dispute, inaccessibility, inadequacy or failure requires continuity.
+
+No household, relationship, association or charity is presumed to provide
+another person's floor. A private duty must be stated for a function undertaken
+or for independently established public-scale power. The test that supplies
+such a duty produces it; the test supplying subject matter alone does not.
+Ordinary ownership, exchange, care, dependency and intimacy do not create a
+general public power over private life.
+
+## Duties are not a price for rights
+
+A civic duty may have consequences when breached. Those consequences cannot
+remove standing, the floor, political voice, access to evidence or challenge,
+or an effective remedy. Lack of employment, payment, identification, compliance
+or contribution supplies no right to lower those protections. Any other
+consequence needs its own lawful source and process.
+
+Duties to a person, a protected common, an office or under a voluntary promise
+have no automatic priority over one another. A current priority rule and independently
+reviewed conflict evidence are needed to displace one by another. Missing or
+conflicting priority evidence decides nothing. A voluntary promise cannot
+waive a protection the constitution makes non-waivable.
+
+An excuse must be positively established, current and reviewable. It can
+suspend or move a bearer's performance without erasing the claim on the other
+side. Continuity needs a separately named alternate. Failing to answer does
+not create the bearer's own excuse.
+
 ## Economic wrongs, one route at a time
+
+The same sequence needs different actions for different wrongs. A duty to
+review identifies an entry point; the remedy must reach the particular harm.
 
 A wage denial needs a route to payment recovery. A failure of housing
 continuity may need interim provision or an eviction stay. An unlawful waiver
