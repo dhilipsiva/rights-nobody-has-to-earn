@@ -79,10 +79,6 @@ personhood and floor as the encounter cases in this chapter. A family,
 document or adulthood finding is absent from Nell's record and unnecessary to
 those conclusions.
 
-What does not follow is equally consistent across the cases. A route into
-personhood supplies neither a receipt nor an advocate's action. Adding another
-way to establish standing does not establish that anything arrived.
-
 ## What none of this observes
 
 No rule here discovers someone who has never been entered. Birth and encounter

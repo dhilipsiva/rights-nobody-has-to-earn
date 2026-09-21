@@ -5,10 +5,8 @@ provides a starting point: it conflicts with the place authorised for Ruk,
 producing a marker and a duty on Review. The route from that finding to
 redress must identify who answers and what happens if they do not.
 
-A finding needs a reader, a response,
-and a route onward if the response fails. Each connection can be checked separately.
-An accurate finding does not establish a remedy, and a duty cannot make an inaccurate
-finding true.
+Each connection needs checking. An accurate finding does not complete a
+remedy, and a response duty cannot make an inaccurate finding true.
 
 Placement is one of several kinds of fault the record can express. Others concern
 company during confinement, carry between witnessed records, conflicting clear and
@@ -84,7 +82,6 @@ corresponding challenge fact reaches the record. Custody also has a separate fil
 route: a retained subject submission or an independently received copy can suspend
 the case even when the primary registry's challenge entry is absent. If none of
 those inputs reaches the evaluated record, the reasoner cannot discover the filing.
-Naming its consequence does not establish that a submission was received.
 
 The adulthood case needs its own boundary. General adulthood attaches
 automatically at the common age; a registry entry is evidence, not the source
@@ -173,8 +170,7 @@ The duties attached to the recorded undertaking continue through withdrawal.
 Chapter 19's holder still owes accuracy, security, protection from retaliation,
 notification and explanation; human review and the subject's contest right
 remain. Chapter 20's inventory, return, compensation and audit duties remain too.
-Removing permission cannot discharge those obligations. Their continued
-derivation does not establish that retained data was protected or property returned.
+Removing permission cannot discharge those obligations.
 
 The defect is specific to the affected record. An unrelated holding does not fall
 merely because another one is defective. Where common-cause correction or affected-case
@@ -183,9 +179,8 @@ decision by the body void. The subject's standing, floor debt and existing ballo
 entitlement remain through the tested withdrawal sequences. A defective restriction
 is not a finding that the person lost those rights.
 
-Correction also cannot erase what already happened. The record can require redress
-and publication without establishing either. The people affected need the performance
-of those duties, not another conclusion that they were owed.
+Correction cannot erase what happened. A requirement to publish or redress
+it must still be carried out.
 
 ## What can be checked
 
@@ -209,12 +204,10 @@ and what costs and limits remain.
 
 Nell's birth-only record supplies neither a positive isolation finding nor a
 placement report, so neither marker fires. It supplies no custody or conditions
-complaint to trigger this particular review duty. The food debt does derive,
-while the record has no food receipt. These results establish an evidentiary gap,
-not that Nell has been fed or left hungry.
+complaint to trigger this review duty. Food remains owed but unrecorded as
+received; that gap establishes neither a meal nor a failure to provide one.
 
-A counterfactual marker based on an owed but unrecorded delivery fires for Nell.
-That shows such an inference can be written; it does not turn missing evidence into
-proof of non-delivery. An accurate account must distinguish an unverified arrival
-from an established failure and connect each to appropriate action. Nell's ordinary
-assistance and delivery duties do not wait for these custody alarms.
+A counterfactual marker based on an owed but unrecorded delivery fires for
+Nell. Its acceptance shows that the inference can be written, not that missing
+evidence proves non-delivery. Nell's ordinary assistance and delivery duties
+do not wait for these custody alarms.

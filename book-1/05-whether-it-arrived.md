@@ -116,26 +116,18 @@ does not follow. The test then supplies a receipt naming Nell, authorises an
 independent witness for Nell and gives that witness the matching observation.
 Food receipt follows. Shelter and confinement still do not.
 
-Nothing in this route requires Nell to choose or authorise the witness. The
-reviewed appointment described in the chapter on roles must identify a receipt
-witness, retain the person's voice and provide challenge and independent
-review. The acting body is obliged to authorise the person named for that role.
-That supplies an accountable route to the appointment; it does not itself make
-the appointment or authenticate the witness.
-
-The assistance duty and the receipt rule therefore answer different questions.
-Someone must begin help without waiting for Nell to ask. Evidence that food
-reached Nell still has to be supplied.
+Nell need not choose or authorise the witness. A reviewed appointment must
+name one, retain Nell's voice and provide challenge and independent review.
+The acting body owes authorisation of that witness; the duty neither appoints
+nor authenticates them. Assistance must begin without Nell asking, while the
+evidence of receipt remains a separate requirement.
 
 ## What none of this proves
 
-A matching receipt and witness make a delivery conclusion testable. They do
-not establish an operating service, an accessible offer, actual adequacy or a
-completed remedy. Meal logistics, care provision, facilities, staffing, capacity
-and the performance of these duties remain operating questions for the second
-book.
+The receiving evidence makes the delivery claim testable. Meal logistics,
+care provision, facilities, staffing and capacity belong to the second book
+and need evidence of operation.
 
-A missing receipt establishes none of the opposite claims. It does not prove
-non-delivery, end an entitlement or authorise punishment. Outreach and usable
-challenge remain necessary. The next chapter asks what follows when the record
+A missing receipt proves no failure to deliver, ends no entitlement and
+authorises no punishment. Outreach and usable challenge remain necessary. The next chapter asks what follows when the record
 contains a positive finding that there is genuinely not enough to provide.

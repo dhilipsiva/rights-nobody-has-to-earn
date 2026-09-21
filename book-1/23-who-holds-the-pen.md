@@ -20,8 +20,7 @@ cannot substitute for a positive match.
 
 A separate test tries to give Sock a Review credential by entering it directly.
 The attempt is refused. The required evidence must support the credential;
-nobody can simply enter the conclusion. Refusal of the conclusion does not
-authenticate that evidence.
+nobody can simply enter the conclusion.
 
 Even credentialed signers need affirmative independence authority for the
 particular case. The subject, incident, recognised adverse ground and evidence
@@ -126,9 +125,7 @@ different writers are independent in practice.
 Current public powers use a separate state-form route. Each requires its own
 source and version, lawful holder, jurisdiction, scope, time record and review.
 Election administration, completeness assurance, result certification and
-institutional execution have separate responsibilities. Agreement among their
-supplied records establishes the specified bounded authority, not that the
-institutions performed those acts.
+institutional execution have separate responsibilities.
 
 An Electorate or Convocation seating in this chapter is not automatically a
 federal office or current mandate. Nor does a current public-power certificate

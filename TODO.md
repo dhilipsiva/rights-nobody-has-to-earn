@@ -5,8 +5,8 @@
 Created 2026-09-18 and refreshed 2026-09-20 at the author's request:
 "Refresh TODO to make book a 10/10."
 
-**Active: items 29–33 below are pending.** Items 01–23 were
-completed on 2026-09-20 and items 24–28 on 2026-09-21. The first round's
+**Active: items 30–33 below are pending.** Items 01–23 were
+completed on 2026-09-20 and items 24–29 on 2026-09-21. The first round's
 [final manuscript review](reviews/2026-09-20-final-manuscript-review.md),
 subsequent coherent commits and `CLAUDE.md` retain the assessments, repairs and
 validation. This refresh opens further work; it does not reverse those
@@ -134,31 +134,11 @@ solutions and development history stay outside the book's reading sequence.
 
 ## Ordered revision backlog
 
-Work in this order. Item 29 reduces repetitive qualifications and sharpens
-the child returns before the final sequential edit. Each item includes its
+Work in this order. Item 30 reads and edits the complete current sequence
+after the targeted revisions. Each item includes its
 own relevant validation under the execution contract; item 33 is a final
 integration review, not permission to defer earlier checks. Chapter numbers
 refer to the [current reading sequence](book-1/contents.json).
-
-- [ ] **29. Remove repeated qualifications and sharpen the child returns.**
-
-  **Scope:** All numbered chapters, with particular attention to Chapters 4–7,
-  19, 20, 23 and 30.
-
-  Review repeated distinctions between evidence and truth, duties and acts,
-  authority and execution, missing evidence and proven failure, and legal rights
-  and actual provision. Keep each qualification where it prevents a specific
-  mistaken inference; compress repetitions that add no new limit. Treat the
-  fresh review's 62 instances of "does not establish" as a reading prompt,
-  not a deletion quota or a new automated gate. Preserve the required child
-  sections and exemptions, making each return state the chapter's distinctive
-  result for the one-entry case.
-
-  **Done when:** the sequential reading advances at each section and return.
-  Necessary scope qualifications remain close to the claims, no silence is
-  converted into evidence, and the child retains its exact test role without
-  a repeated miniature summary of the entire book. Book 2 references occur at
-  the relevant operating boundary without replacing missing constitutional work.
 
 - [ ] **30. Complete a sequential developmental and line edit.**
 

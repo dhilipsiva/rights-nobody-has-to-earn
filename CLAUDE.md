@@ -127,6 +127,56 @@ reinstate the retired tooling or workflow.
 Grouped by kind. Dates in each heading are the ratification dates; a ruling
 that was later implemented or narrowed carries that supersession inline.
 
+### Item 29 — necessary qualifications and distinctive child returns, 2026-09-21
+
+Under the standing delegated approval, 24 numbered chapters now keep each
+qualification beside the claim it limits and remove repeated summaries that
+add no further boundary. All numbered chapters received the review. Chapters
+10, 11, 12, 18, 22, 28 and Part V retain their text because their qualifications
+limit distinct claims. The separate prose comparison preserves the difference
+between supplied evidence and truth, duties and performance, lawful authority
+and execution, and absent evidence and proven failure. The cuts remove 1,096
+words without using a phrase count as a quota or verification gate.
+
+The child returns state their particular consequence. Nell's standing and
+floor need no request, service file or caregiver gate. The Chapter 5 food
+receipt and Chapter 27 shelter and food evidence remain added facts rather
+than conclusions from birth. Chapter 7's bystander observation opens review;
+it proves no delivery or breach. Chapter 6 supplies no evidence that Nell
+belongs to its scarcity population. Chapter 19 does not invent an access
+request or reviewer's nonresponse. Chapter 20's negative restraint result
+grants no general immunity from separately qualified measures. Chapter 30
+retains the silent positive-evidence alarms and the accepted counterfactual
+inference from missing receipt, without treating acceptance as proof of
+deprivation. Explanation and review following an adverse finding remain
+conditional on that finding. No child fact, inner life or outside success is
+invented, and the five child-section exemptions remain unchanged.
+
+The existing narrative-register decision records the exact canonical text as
+session-drafted and author-approved under delegated approval (2026-09-13).
+Six existing reader-coverage descriptions now name the precise baseline or
+additional evidence; the regenerated report retains all 240 passage IDs and
+classifications. One full-society locator follows the retained custody rule
+after its repeated summary was cut. An initial reference-integrity failure
+identified that stale locator; correcting its owning record resolves the
+failure without extending an exception or renewing historical assurance.
+
+Focused `./verify.sh --only` checks pass Chapter 5's 16 pins in 12.12s and
+Chapter 30's 37 pins in 13.16s. All six reference-integrity, ten reader-coverage
+and five claim-discipline development checks pass, as does `git diff --check`.
+The complete `RIGHTS_VERIFY_JOBS=4 ./verify.sh` passes **88,815 pins across
+16,137 cases**, with complete contradiction checks and no findings, in
+**1,123.37s**. The five-minute target remains unmet. The constitution,
+substantive pins and suite inventory are unchanged throughout the run.
+Item 29 is complete.
+
+The manuscript measures 58,020 whitespace-separated words excluding HTML
+comments across 34 ordered inputs. Derived chapters contain 40,699 words
+(70.15%); opening and method remain 3,938 and 3,936 words. Chapter order,
+pin pairs, required child slots and exemptions, the three exempt channels
+and the carried-appendix boundary remain. This is editorial assessment, not
+reader testing or a released edition. Book 2 stays collection-only until Gate C.
+
 ### Item 28 — governing questions and case progression, 2026-09-21
 
 Under the standing delegated approval, Chapters 7, 9, 11, 13, 17, 19, 20, 29

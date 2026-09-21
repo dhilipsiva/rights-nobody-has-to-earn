@@ -76,8 +76,7 @@ unexplained automated effects, machine-only decisions, uncorrected inaccuracy,
 retention past its end, blocked access, retaliation and breached separation
 between records. Withdrawal concerns the specified authority and the permissions
 that depend on it. It does not itself delete data, explain a past decision or
-perform a remedy. A continuing duty establishes what is owed; it does not
-establish that an operation occurred or that the duty was performed.
+perform a remedy.
 
 The subject is an opaque handle, not a compulsory personhood entry. The case
 completes without creating personhood, a void, confinement or recognition loss
@@ -126,23 +125,21 @@ manipulation, stale data, method drift, suppression and identity reuse are
 open to the same challenge. No statistical finding takes anyone's standing,
 floor, liberty, ballot or permanent public answerability.
 
-These are conditions on supplied evidence. They do not count a population,
-calculate a disparity, authenticate an identity, observe a deadline, publish
-a correction or make an institution answer.
+These rules use supplied statistics and findings. They neither count a
+population nor calculate a disparity, authenticate an identity or observe a
+deadline. Publication and response remain duties to perform.
 
 ## The child with nobody
 
-Nell is a person and is owed health without a health, school or administrative
-file in the supplied record. The legal floor does not depend on those files;
-the executable case still needs its birth entry to establish personhood.
+Nell's birth entry establishes personhood and the health debt. The case
+requires no health, school or administrative file and no enrolment through
+a service.
 
 The firewall forbids making service access a route into enforcement records.
-An appointment to assist Nell is subject to the same discipline: information
-limited to the matter, no reusable classification and no enrolment. The rights
-advocate's initiation duty does not require a request. By contrast, a personal
-access or correction request and a reviewer's nonresponse are separate triggers.
-None is supplied for Nell here, and no record check establishes that somebody
-looked for the child or acted on their behalf.
+An appointment to assist Nell uses only information needed for that matter,
+with no reusable classification or enrolment. The advocate must begin without
+a request. Nell's record supplies no personal access or correction request
+or finding of a reviewer's nonresponse to activate those separate routes.
 
 ## Giving the limits effect
 

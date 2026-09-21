@@ -92,9 +92,8 @@ conflict in judging one's child. The rule governing a proposed finding
 separately excludes that conflict. The confinement refusal cannot take credit
 for a safeguard supplied by another rule.
 
-These results hold for the tested constitution and reasoning system. Changing
-either requires checking them again. One refused rule supplies no universal
-guarantee against a differently expressed rule with the same harmful purpose.
+Changing the constitution or reasoning system requires checking these
+particular protections again.
 
 ## Standing that protects others
 
@@ -110,9 +109,9 @@ rules or trustworthy evidence unnecessary.
 
 ## The child with nobody
 
-Zed and Nell are both owed dwelling and expression. Neither supplied record
-initially establishes delivered shelter or a record of speech. Zed's sentence
-and reviewed placement create no receipt. Nell's birth creates no receipt either.
+Zed and Nell are both owed dwelling and expression. Neither the custody
+record nor the birth-only record initially supplies a shelter receipt or
+record of speech.
 
 The child test then supplies a shelter receipt, a witness authorised for Nell
 and a matching shelter attestation from someone other than the provider.

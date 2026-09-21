@@ -8,8 +8,7 @@ protection without treating them as human persons.
 
 The questions are connected but distinct: whose claim can be heard, which harm
 cannot be exchanged for a gain elsewhere, and what authority may prevent or
-remedy it. The constitution sets conditions for those decisions. It supplies
-no measurement of a river and no numerical ceiling.
+remedy it. The constitution sets conditions for those decisions.
 
 ## Three claims in the same place
 
@@ -197,9 +196,8 @@ or more gravely harmful, then the least-painful reliable method, independent
 review, reassessment, repair and a fresh, bounded period of authority.
 An animal is never convicted for being dangerous or introduced.
 
-These are legal protections and conditions on supplied findings. They do not
-establish welfare, perform a rescue, operate a shelter or prove that a safer
-alternative is available in the world.
+The availability of a less harmful alternative needs evidence about the
+affected people, animals and use. The rules cannot discover it.
 
 ## Speaking for conditions nobody may spend away
 
@@ -248,8 +246,8 @@ human floor, commons condition, animal interests, collective rights,
 alternatives, uncertainty, reversibility and continuity separate. Categorical
 prohibitions come first. Neither office's preference nor a single usefulness
 score decides the conflict, and choosing a route does not supply its missing
-permissions. These interfaces establish no operating office, authentic
-decision, maintained record of prior resolutions or performed review.
+permissions. The decisions and record of prior resolutions are supplied;
+these rules neither authenticate them nor perform the review.
 
 In the case involving both offices, the Guardian states the river's claim and
 the Animal Advocate states the individual animals' claim. The independent court's supplied
@@ -294,10 +292,8 @@ intentional or reckless serious violation, the applicable proof, defence,
 independent hearing and appeal. An aggregate pattern cannot reverse the
 criminal burden, and no animal is punished for the harm.
 
-Each order distinguishes its duty from performance. It establishes no completed
-rescue, treatment, transfer, restoration or delivery. A non-repetition order
-likewise proves no successful prevention. The legal response names what must
-happen and who owes it; whether suffering stopped needs further evidence.
+Each order names what must happen and who owes it. Evidence that care reached
+the animal, suffering stopped or a recurrence was prevented remains separate.
 
 ## When the record the protection rested on was defective
 

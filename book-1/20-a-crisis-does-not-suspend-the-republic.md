@@ -8,9 +8,7 @@ named public powers.
 What may urgent authority permit, and what remains owed when it fails?
 The cases follow a property requisition and an authorisation of force abroad.
 Each depends on a parent authorisation. An independent defect finding withdraws
-that reliance, while the affected person's standing and floor remain. The
-withdrawal establishes a legal conclusion, not that the property was returned
-or a deployment stopped.
+that reliance, while the affected person's standing and floor remain.
 
 ## What a declaration may actually do
 
@@ -92,12 +90,12 @@ An independent finding that public coercive power was delegated to a private
 actor stops the structure from completing. The dependent force authorisation,
 restraint and loss stop too. The duty to keep the recorded structure within
 Assembly ceilings, appropriation and audit continues. An invalidated structure
-does not gain freedom from its limits. Neither withdrawal nor the continuing
-duty proves that the force's conduct stopped.
+does not gain freedom from its limits.
 
 The named person retains personhood and the floor; no prisoner conclusion follows.
-No rule in this sequence recalls a deployment, brings anyone home or stops
-payment to a contractor. Those acts cannot be inferred from absent authority.
+No rule in this sequence stops the force's conduct, recalls a deployment,
+brings anyone home or stops payment to a contractor. Those acts cannot be
+inferred from absent authority.
 
 ## Treaties, trade and a region's exit
 
@@ -131,14 +129,13 @@ readmission are not results this constitution can produce.
 
 ## The child with nobody
 
-Nell remains a person, is owed security and retains free movement beside the
-supplied declaration and requisition. No restraint or prisoner conclusion
-follows for Nell. The emergency creates no general exception to the floor.
+Beside the supplied declaration and requisition, Nell remains a person, is
+owed security and retains free movement. Neither restraint nor a prisoner
+conclusion follows from this birth-only record.
 
-This case does not show that emergency powers can never affect a child.
-Measures can address particular people, property or hazards when their own
-conditions are met. It shows that declaring an emergency supplies no blanket
-permission to take the rights of a person whose record contains only a birth.
+That result supplies no general immunity from emergency measures. A measure
+concerning a child still needs its own grounds and authority; a declaration
+alone cannot suspend the floor or provide blanket permission to restrict.
 
 ## Withdrawal and redress
 
@@ -147,7 +144,5 @@ no emergency service or defence force. Capability, training, procurement,
 stockpiles, incident command, restoration and treaty administration require
 institutions and evidence beyond the rules.
 
-Withdrawing a formal authority does not perform its consequences, and naming a
-judicial remedy does not establish redress. The next chapter therefore turns
-to the route by which a person can demand an answer and what must follow when
-that route itself fails.
+The next chapter follows the judicial route these cases require: how a
+person can demand an answer and what must follow when that route itself fails.

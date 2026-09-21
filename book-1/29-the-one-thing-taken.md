@@ -19,12 +19,6 @@ not establish a sentence, make a secure place necessary, or keep an expired or
 challenged authority in force. Even a grave offence needs the independently
 justified place and current authority described here and in Chapter 28.
 
-The practical effects of confinement can nevertheless be wider than its direct
-legal punishment: interrupted employment, threatened tenure, disrupted care,
-inaccessible possessions. The constitution requires continuity and remedy
-against those harms. Keeping them out of the sentence does not establish
-that they were prevented.
-
 ## Why the legal loss stops at movement
 
 No rule in this source converts custody into a second legal loss. Conviction
@@ -39,10 +33,10 @@ The order authorising a restriction can support review and protection, but the
 restricted capability cannot become a reason to take something else. The checks
 inspect that distinction in the source.
 
-This prevents a legal cascade through those conclusions. It cannot prevent a
-practical cascade by itself. A person kept from their employment or a service may
-need active help to keep what remains legally theirs. The continuity duties address
-that need without making custody a transfer of employment, property, family, or
+These limits cannot by themselves prevent interrupted employment, threatened
+tenure, disrupted care or inaccessible possessions. The person may need active
+help to keep what remains legally theirs. Continuity and remedy address those
+harms without making custody a transfer of employment, property, family or
 decision authority.
 
 ## The authority must be current
@@ -106,10 +100,6 @@ requires an available named place and independently reviewed lawful conditions
 before authority may derive. A shelter receipt or evidence of an actual
 confidential visit answers a further question.
 
-The constitution specifies what an operator owes without describing an operating
-prison or home. Calling a place lawful cannot establish that those duties were
-carried out.
-
 ## What leaving changes
 
 Satisfaction of a sentence and relief from conviction are different grounds
@@ -132,9 +122,8 @@ or forgiveness as the price of leaving. Housing, care, documents, education,
 access to employment and community participation must continue across release,
 with private support rather than a general supervision or risk status.
 
-Hano retains standing and the dwelling debt. The State still owes provision.
-Neither the sentence nor the order ending it supplies a shelter receipt or
-establishes that Hano spoke. The same is true of Adam and Kel's named supported
+Hano retains standing and the dwelling debt. Neither the sentence nor the
+order ending it supplies a shelter receipt or establishes that Hano spoke. The same is true of Adam and Kel's named supported
 residences. Actual provision needs evidence independently of the legal change.
 
 ## Physical holding is a further fact
@@ -259,6 +248,4 @@ It is not a test of every consequence of punishing a child: Nell is not punished
 here. The result is that a child does not need a
 custody record to retain movement, standing, or the floor.
 
-The floor remains owed on both sides of release. Whether continuity duties were
-carried out must be established from the people and institutions involved.
 The next chapter asks what the record can do when it detects a breach.

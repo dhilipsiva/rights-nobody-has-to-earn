@@ -13,9 +13,8 @@ the defendant nor the injured person nor the prosecuting court may decide it.
 An established conflict defeats the affected decision; merely naming a reviewer
 in a disclosure does not. Rex's sequence below tests that distinction.
 
-Those are conditions on the record. They establish neither an honest hearing
-nor anyone's physical freedom. The cases below show what follows when the
-conditions are present, absent or disputed.
+The cases show what follows when those conditions are present, absent or
+disputed.
 
 ## Don: a private target
 
@@ -144,11 +143,8 @@ and choosing a different favourable pair cannot bypass the recorded finding.
 An unauthorised accusation supplies no such result. A conflict recorded for a
 different case supplies none here.
 
-No conclusion in that sequence says whether a prosecution was fair in the
-world. The rules require authority, separation and supplied findings, and
-refuse the result when required conditions fail. Someone who controls the
-trusted inputs can still lie about independence. The checks do not convert
-agreement into truth.
+Someone who controls the trusted inputs can still lie about independence.
+The checks do not convert agreement into truth.
 
 ## What it costs
 

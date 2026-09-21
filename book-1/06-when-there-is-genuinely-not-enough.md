@@ -142,16 +142,13 @@ establish that an actual dispute has been resolved.
 
 ## The child with nobody
 
-The affected population is supplied, not discovered by the rules. Nothing in
-the case establishes that Nell was included in it. Family status,
-documentation, nationality, citizenship, immigration status and manner of
-arrival are forbidden priority keys; they cannot justify sending a claim to
-the back of the queue.
+The scarcity sequence leaves Nell's personhood and food debt intact, without
+recognition loss or confinement. No food receipt follows. Nor does the case
+establish that Nell was included in the supplied affected population.
 
-With the scarcity sequence present, Nell's personhood and food debt still
-follow, and neither loss of recognition nor confinement does. Food receipt
-does not follow either. These checks establish retained rights, not inclusion
-in an allocation or a meal delivered to the child.
+Family status, documentation, nationality, citizenship, immigration status
+and manner of arrival are forbidden priority keys. They cannot justify
+sending Nell's claim to the back of the queue.
 
 ## What none of this counts
 

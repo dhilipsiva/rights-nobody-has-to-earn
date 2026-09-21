@@ -109,17 +109,14 @@ for Nell. The routes triggered by a request therefore establish no hearing for
 this child.
 
 The independent rights advocate's duty to initiate assistance and representation
-needs no request. It places responsibility for beginning outside the person
-who cannot begin alone. The appointment route must preserve Nell's voice and
+needs no request. The appointment route must preserve Nell's voice and
 separate interests; it does not create standing. Neither duty proves that an
 advocate arrived, a request was filed or the child was heard.
 
 ## A hearing and an effective remedy
 
 Court administration, legal aid, scheduling, interpretation, survivor support
-and enforcement require capacity and action beyond these records. A complete
-hearing record does not establish that a hearing occurred; a relief conclusion
-does not establish that compensation arrived.
+and enforcement require capacity and action beyond these records.
 
 The constitutional route must still specify an effective remedy, the authority
 to provide it and a response when the responsible institution fails. The next

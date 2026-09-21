@@ -68,8 +68,7 @@ delivery or making its absence a premise.
 
 Nell's personhood establishes the limits on coercion and prescription without
 an application or a family entry. The floor's entitlements to learning,
-expression, belief and company remain beside them. These are limits and
-obligations, not findings about what Nell has done or received.
+expression, belief and company remain beside them.
 
 The record supplies no teacher heard, receipt or recorded voice for Nell.
 No learning, belief or company conclusion follows. That absence is not a

@@ -46,9 +46,7 @@ A few rules address a particular recorded relationship, such as a marriage or
 a sibling. Where that relationship is absent, its specific rule has no case
 to address. It does not follow that the universal protections disappear.
 
-A limit on power is still not an event. None of these conclusions establishes
-that someone heard Nell, provided care or made a placement. To find a duty to
-act, we have to ask a further question.
+The next question is who must begin assistance without waiting for Nell to ask.
 
 ## Help that does not wait for a request
 
@@ -74,9 +72,8 @@ duty does not derive here. The duty to initiate assistance does. The requirement
 to begin is unconditional; a particular exercise of care authority needs its
 own grounds and limits.
 
-Neither duty proves that an advocate exists, notices the child, arrives or
-acts. The record can establish who owes the first move. It cannot establish
-that the move was made from the obligation alone.
+The duty names who owes the first move. It supplies no evidence that an
+advocate exists, noticed Nell or acted.
 
 ## What does not follow
 
@@ -102,9 +99,6 @@ None of these missing conclusions says Nell is hungry, homeless, ill, unsafe
 or alone. The record does not establish that food arrived; it also does not
 establish that food failed to arrive. An account of what the rules can conclude
 must preserve that distinction.
-
-The entitlement survives beside an unanswered question about provision.
-A rule establishing a food debt cannot stand in for evidence of receipt.
 
 ## The child the record never entered
 
@@ -135,10 +129,9 @@ assuming a family or requiring the child to ask.
 
 ## Where the case leads
 
-The record supplies the birth; the rules do not observe or authenticate it.
-They establish Nell's entitlement and the duty to begin assistance. They show
-no receipt, no completed care-continuity record and no performance of those duties.
-Those distinctions will recur whenever the book tests a public promise.
+The birth is supplied, not observed or authenticated by the rules. From it
+follow both the floor and the duty to begin assistance. Provision still needs
+evidence of what reached Nell.
 
 The next chapter widens the entry question. A birth is enough for Nell. What
 is enough for someone who arrives without a birth record?

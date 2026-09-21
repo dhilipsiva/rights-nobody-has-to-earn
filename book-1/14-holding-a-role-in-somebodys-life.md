@@ -160,7 +160,7 @@ No appointment completes for Nell. The positive case above shows what the
 route requires; it does not appoint anybody for this child. Nor can a substitute
 decision skip the required evidence of prior support. The record therefore
 names a duty-bearer without establishing representation, witness authority or
-delivered care. Legal responsibility is present; its performance is unproved.
+delivered care.
 
 ## What none of this decides
 

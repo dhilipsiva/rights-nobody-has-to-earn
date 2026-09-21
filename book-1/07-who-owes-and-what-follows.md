@@ -40,9 +40,8 @@ cause. A result requiring its own positive record does not follow from missing
 or conflicting evidence. Nor can an individual finding be reused to create
 the same duty concerning someone else.
 
-This chain does not discover the original wrong or perform the review.
-The bearer cannot certify its own excuse, and the existence of a remedy
-conclusion does not establish that the person was restored.
+The bearer cannot certify its own excuse. The chain starts from a supplied
+finding; completed review and restoration need further evidence.
 
 ## Where delivery joins it
 
@@ -71,8 +70,7 @@ after a breach.
 
 The chapter's cases establish a duty of each kind. Each has a bearer, a
 function, a jurisdiction and a scope supplied by a current lawful source.
-Being a public body does not assign every public task to that body. A duty
-here is a legal consequence, not a record that anyone performed the work.
+Being a public body does not assign every public task to that body.
 
 ## A duty cannot be contracted away
 
@@ -144,7 +142,6 @@ restitution, compensation, licence limits and protection against retaliation.
 Structural measures such as a public option, restructuring, separation,
 receivership or acquisition require their own grounds and must preserve
 workers, users, ordinary savers, floor recipients and essential services.
-Authorising a measure neither performs it nor proves that continuity held.
 
 ## A way in that does not need the operator's permission
 
@@ -175,7 +172,6 @@ and protection against retaliation do not wait for all those conclusions.
 A positively established missed deadline sends the unanswered review duty to
 an uninvolved alternate. An absent person-entry is not evidence against the
 person; it also does not prove that an unrecorded abuse was discovered.
-Nothing in this route establishes that an institution acted.
 
 ## When the finding is about conditions or an animal
 
@@ -221,27 +217,22 @@ witness, retained voice, limited information, an end, challenge and independent
 review. The duty to begin and the limits on that appointment are distinct.
 Neither a request nor the existence of the duty proves it was discharged.
 
-The rules cannot make anyone notice. They establish who must begin without
-waiting for the person to ask; they do not establish a funded advocate, an
-appointment or help that reached the person.
+The duty to begin does not establish a funded advocate, an appointment or
+help reaching the person.
 
 ## The child with nobody
 
-Nell has no recorded family, but the public food and shelter debts remain.
-The rules do not redirect them to a household presumed to exist. The duty to
-initiate assistance also follows from Nell's personhood alone.
+Nell's public food and shelter debts cannot be redirected to a presumed
+household. The duty to initiate assistance follows from personhood alone.
 
-A bystander's observation opens the independent review duty without taking
-away the floor or producing confinement or a credibility loss. Food receipt
-still does not follow. The test therefore shows both a route into review and
-the limit of what that route establishes for the child.
+The added bystander's observation opens independent review without reducing
+the floor or producing confinement or a credibility loss. Food receipt still
+does not follow: opening review has not supplied delivery evidence.
 
 ## Duties still need performance
 
-An action duty is not a performed review. A nonresponse conclusion is not an
-escalation received. Continuity is not care delivered, and a remedy is not
-restoration completed. Staffing, funding, capacity, facilities and the work
-of making these routes available belong to the operating account.
+Staffing, funding, capacity, facilities and the work of making these routes
+available belong to the operating account.
 
 The constitution still has to specify adequate duties and remedies. Calling
 an omitted legal route an operating problem would not supply it. Where the

@@ -9,6 +9,61 @@
 > author's standing delegated approval of 2026-09-13. Earlier dispositions,
 > including `OL-15-v1` in section 7a, remain visible as history.
 
+## Necessary qualifications and distinctive child returns — item 29, 2026-09-21
+
+The exact current Markdown of Chapters 1–9, 13–17, 19–21, 23–27, 29 and 30 is
+`session-drafted, author-approved under delegated approval (2026-09-13)`.
+All numbered chapters were reviewed for repeated qualifications and child
+returns. Chapters 10, 11, 12, 18, 22, 28 and Part V retain their text because
+their qualifications limit distinct claims. In particular, Part V's cautions
+about causal attribution, institutional performance, costs to affected people
+and its explicitly hypothetical kitchen remain beside the arguments they
+qualify. No phrase-count quota determines an edit.
+
+The cuts remove repeated statements that a duty is not an act or a legal
+permission is not performance, after the relevant passage already makes
+that distinction. Chapter 4 keeps the limited scope of refused attacks and
+separates each step of provision from its evidence. Chapter 5 keeps the
+receiving evidence, adequacy, consent and recurrence distinctions, without
+repeating them all at its ending. Chapter 7 retains source-bound responsibility,
+positive nonresponse, independent alternates and the need for adequate legal
+connections before an operating account can supply performance. Chapter 19
+keeps withdrawal separate from deletion and the subject's surviving duties.
+Chapter 20 retains the actual return, force, treaty and remedy limits at their
+particular cases. Chapters 23–27 retain input truth, actual independence,
+case-specific relief and the precise scope of each refusal or finding.
+
+The child returns keep their exact evidentiary role. Nell's birth establishes
+standing and the floor without proving care. The Chapter 5 test adds food
+receipt evidence; Chapter 27 separately adds shelter and food evidence.
+Chapter 7's added bystander observation opens review rather than proving a
+breach or delivery. Chapter 6 supplies no evidence of Nell's inclusion in
+its scarcity population. Chapter 19 needs no service file for health, and
+supplies no personal access request or nonresponse finding. Chapter 20's
+negative restraint result grants no general immunity from a separately
+qualified measure. Chapter 30 retains both the silent positive-evidence
+alarms and the accepted counterfactual inference from missing receipt;
+accepting that inference proves no failure to deliver. Explanation and review
+following an adverse finding remain conditional on that finding; Nell's
+unvoided case is not described as already having one.
+
+The five child-section exemptions remain unchanged. The whole of Chapter 1
+is its case; Chapter 10 retains Cira's activity without an age premise;
+Chapter 23 supplies no credential from a birth alone; Chapter 24 needs an
+exposure absent from the child record; Chapter 26 follows Cira's separate
+claim while Chapter 25 carries Nell's floor. No new child fact, age, inner
+life, actual deprivation, observed service or external action is invented.
+
+Six existing coverage descriptions identify the birth-only baseline and the
+separate added evidence or missing trigger where that distinction matters.
+The generated report retains 240 classifications and reflects the current
+wording without changing its boundary recogniser or any test expectation.
+One full-society locator follows the retained custody rule after its duplicate
+summary was shortened. Historical assurance judgments are not renewed.
+The constitutional source, substantive pins and execution inventory are
+unchanged. The canonical prose and coherent commit retain the exact approved
+text; CLAUDE.md records the completed checks and measured result.
+
 ## Governing questions and case progression — item 28, 2026-09-21
 
 The exact current Markdown of Chapters 7, 9, 11, 13, 17, 19, 20, 29 and 30 is

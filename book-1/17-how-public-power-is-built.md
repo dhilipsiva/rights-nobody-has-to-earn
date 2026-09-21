@@ -132,7 +132,6 @@ proportionate disclosure. The reader owes action on it. A separately
 established failure by that reader creates a duty on an independent alternate;
 silence alone proves neither the undisclosed fact nor misconduct by the
 bearer. These duties do not require publishing protected small-payer identities.
-They do not establish that anyone filed, read or acted.
 
 ### Who can participate and challenge
 
@@ -154,8 +153,7 @@ A finding about a coordinated operation concerns its coordination and control,
 not what any person believes or whether an opinion is true. Consequences
 require the separate public-scale finding and remain limited to the affected
 function: disclosure, attribution, access, audit, challenge and remedy. An
-uncoordinated speaker is outside this route. No finding proves that an
-institution acted or that the promised remedy arrived.
+uncoordinated speaker is outside this route.
 
 ## How somebody comes to hold an office
 
@@ -187,7 +185,7 @@ take no avoidable irreversible policy action. When independently supplied
 time evidence establishes the constitutional deadline, ordinary caretaker
 authority ends and the electoral body has both a duty and the authority to call
 a fresh election. Missing or disputed time evidence cannot preserve ordinary
-incumbent power. The duty to call an election does not establish that it occurs.
+incumbent power.
 
 The fresh-election case tests the point at which authority follows. A complete
 record includes matching source, evidence and review findings that the deadline
@@ -234,15 +232,13 @@ not be turned against a region seeking or completing a lawful exit.
 
 ## The child with nobody
 
-Nell remains a person and is owed expression. The chapter's vocabulary entries
-supply neither an office for Nell nor a ballot, void or prisoner conclusion.
-These checks concern the supplied child record; they do not make the exercise
-of public power irrelevant to the child.
+Nell remains a person and is owed expression. The vocabulary entries supply
+no office, ballot, void or prisoner conclusion for the child.
 
-The ombudsperson and rights advocate have mandates to assist people unable to
-act alone. A named mandate and the continuing floor establish responsibility,
-not the arrival of a helper. The institutions must serve Nell without making
-the child hold office or satisfy political eligibility first.
+The ombudsperson and rights advocate have mandates to assist people unable
+to act alone. The institutions must serve Nell without making officeholding
+or political eligibility a condition of help. A mandate does not establish
+that a helper arrived.
 
 ## Authority and performance
 

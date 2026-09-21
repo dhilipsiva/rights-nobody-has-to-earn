@@ -201,7 +201,4 @@ to enter a vulnerability classification, which is refused. Nell's protection
 requires no such classification, and the birth alone produces no adverse
 credibility finding.
 
-The admitted birth could still be false or never supplied. Nothing about a
-restricted vocabulary removes those possibilities. With the standing root
-present, however, the next question is no longer who counts. It is what every
-person is owed.
+With the standing root present, the next question is what every person is owed.

@@ -156,11 +156,9 @@ those need their own evidence and routes. Immediate help cannot wait for them.
 
 ## What none of this admits
 
-A coherent determination record proves no completed hearing. A consent record
-does not authenticate the consent supplied to it. The rules operate neither a
-border nor a membership roll and establish no actual admission, consultation
-or remedy. Reception, interpretation, registration and land administration
-need functioning institutions beyond these conclusions.
+Reception, interpretation, registration and land administration need
+functioning institutions beyond these records. The cases establish no actual
+admission, completed consultation or remedy.
 
 The next part asks how those institutions become answerable. The rights in
 this chapter need public functions capable of acting, and limits that prevent

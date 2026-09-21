@@ -156,8 +156,8 @@ a completed void of Nell or prove that no false accusation could reach the child
 The floor rules depend on personhood, not credibility. Bela's voided case
 separately retains personhood, food debt, movement and the ballot. An adverse
 finding cannot make the floor a reward for being believed. Explanation,
-representation and review must still reach a child in practice; their duties
-are not evidence that someone arrived.
+representation and independent review remain necessary when a child is
+affected by a finding.
 
 The next chapter follows the limits of the finding: what can be corrected,
 what remains owed and what must happen for the restriction to end.

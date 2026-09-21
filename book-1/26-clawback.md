@@ -60,8 +60,7 @@ or without rights; a teaching relationship and a standing record answer
 different questions.
 
 Parentage, care, household membership and support likewise do not transfer
-fraud, guilt or debt from an adult to a child. These legal separations establish
-no corrected outside record or performed act of representation.
+fraud, guilt or debt from an adult to a child.
 
 ## Ending the restriction
 

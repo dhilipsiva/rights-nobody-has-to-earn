@@ -163,15 +163,13 @@ service running.
 Nell has no recorded contribution, promise of pay or certifier's attestation.
 No supplement, compensation or certificate derives. The State still owes Nell
 food, and the prohibition on conditioning the floor on contributions holds.
-The absence of an earnings record changes none of that. It tells us nothing
-about what Nell has done or received outside the supplied record.
+This record says nothing about Nell's actual employment or receipts.
 
 ## What none of this counts
 
 These rules distinguish what a person may claim without calculating a wage,
 testing competence or moving money. Rates, budgets, examination standards,
 scheme funding and administration require institutions and operational design.
-Their adequacy cannot be inferred from a matching pair of records.
 
 Employment and its rewards may change
 what someone receives above the floor, but cannot become a price for the floor.

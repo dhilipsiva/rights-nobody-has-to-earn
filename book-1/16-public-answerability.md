@@ -132,6 +132,5 @@ for Nell to request help, complain or expose anybody. Nell acquires no office
 or public answerability by being owed the floor.
 
 The debt does not itself create the State's answerability: the supplied
-public-body entry does. The child case preserves that distinction without
-claiming a delivered meal or a completed inquiry. The next chapter asks how
-public functions acquire the authority needed to perform their duties.
+public-body entry does. The next chapter asks how public functions acquire
+the authority needed to perform their duties.

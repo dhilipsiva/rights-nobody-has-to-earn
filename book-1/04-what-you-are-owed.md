@@ -99,20 +99,13 @@ of arrival, challenge, interim continuity, individual remedy, common-cause
 correction, re-examination and recurrence checking. The chapter on who owes follows those duties and
 their independent readers.
 
-None of these conclusions performs the next act. A duty proves no offer;
-an offer proves no accessible or adequate receipt. A finding does not prove
-that its reader received it, and a remedy conclusion does not establish restoration. The
-record gives no evidence from which to conclude that Bela ate or that a remedy
-reached her. Those are questions about events, not alternative ways of asking
-what Bela is owed.
+An offer, accessible and adequate provision, a finding reaching its reader,
+and completed restoration each need separate evidence. Bela's debts establish
+none of those events.
 
 ## The child with nobody
 
-Nell is owed the same floor as Bela. The chapter's checks ask about each debt
-and entitlement by name, and each follows from the birth root. Nothing asks
-who is caring for Nell.
-
-The refusal concerning confinement applies to this case too. It does not
-establish a general inability to express every other harmful consequence,
-and it does not establish delivery. Nell's entitlement is unconditional;
-evidence that any item reached Nell is still absent.
+Nell is owed the same floor as Bela. Each debt and entitlement follows from
+the birth root, without asking who provides care. The tested confinement
+rule is refused for Nell too. Evidence that a floor item reached Nell is
+still absent.
