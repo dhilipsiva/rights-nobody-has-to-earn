@@ -25,9 +25,10 @@ may be used only within it. The inputs must come from named lawful sources. The
 collection must be no more than the purpose needs. It must be private, secure
 and access-controlled, accurate and correctable on request, held only to a
 stated end and then deleted or narrowed, and open to the person it is about.
-It may not be transferred, sold or linked outside the purpose it was kept for,
-and it may never be built by enrolling people through the door of a meal, a
-clinic, a school or a court.
+It may not be transferred, sold or linked outside the purpose it was kept for.
+Food, care, schooling and access to a court must not become routes into
+enforcement records. A service may not enrol a person in such a record as
+the price of access.
 
 Watching is a separate permission, and it points at the exact holding that was
 reviewed — the same person, the same domain, the same purpose, the same
@@ -78,9 +79,9 @@ between records. Withdrawal concerns the specified authority and the permissions
 that depend on it. It does not itself delete data, explain a past decision or
 perform a remedy.
 
-The subject is an opaque handle, not a compulsory personhood entry. The case
+The record can name its subject without supplying a personhood entry. The case
 completes without creating personhood, a void, confinement or recognition loss
-for that handle. Hano's floor and ballot conclusions remain. The legal
+for that name. Hano's floor and ballot conclusions remain. The legal
 standing routes are separate from permission to hold or process records; a
 file is not a source of human worth or a licence to reduce rights.
 

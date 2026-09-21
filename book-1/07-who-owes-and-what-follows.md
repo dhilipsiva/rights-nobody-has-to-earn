@@ -61,9 +61,8 @@ The waiting claimant needs more than an explanation of the allocation.
 The manager's repair duty and the reader's review duty illustrate why public
 responsibility has several forms.
 
-Public responsibility takes distinct forms. To respect a right is
-to refrain from interfering with it. To protect is to prevent, investigate
-and answer private interference through public powers. To fulfil is to secure
+To respect a right is to refrain from interfering with it. To protect is to
+prevent, investigate and answer private interference through public powers. To fulfil is to secure
 what the public floor requires. To continue is to preserve protection when
 an ordinary bearer or provider fails. To remedy is to restore the person
 after a breach.

@@ -41,9 +41,9 @@ witness report care delivered. It does not establish that the person is well,
 that the care was adequate in the world or that valid consent was obtained.
 Those questions need their own evidence.
 
-Learning has a distinct route through teaching that was heard. It is tied to
-hearing, does not control the writer in the same way and names a personal
-outcome. It cannot be treated as a complete account of accessible learning.
+Learning has a distinct route through teaching that was heard. Its supplied
+teaching and hearing entries need no separately authorised delivery witness.
+They support a learning conclusion, not a complete account of accessible learning.
 Belief and freedom of expression have no comparable delivery certificate.
 Protecting either does not authorise an institution to certify what someone
 believes or that they have exercised a liberty.
@@ -98,9 +98,9 @@ entry is no ground for confinement either. The relationship rules require
 positive evidence for the relationships they recognise and refuse the tested
 rules that would make missing family or parentage a ground for imprisonment.
 
-The supplied cast contains no recipient-side delivery receipts. Ending custody
-does not change that evidentiary position or cancel the floor debt. A separate
-test supplies an independently witnessed shelter receipt for a person reported
+The custody records just described contain no recipient-side delivery receipts.
+Ending custody does not change that evidentiary position or cancel the floor
+debt. A separate test supplies an independently witnessed shelter receipt for a person reported
 physically held without a lawful order. Shelter then derives through the same
 receipt rule available outside custody. Neither that receipt nor the person's
 right to care authorises the holding.

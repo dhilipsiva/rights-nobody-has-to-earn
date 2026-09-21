@@ -25,7 +25,7 @@ form is promised a profit, rescue, immunity or monopoly.
 
 Employment in custody must be voluntary and carry ordinary labour protection.
 Refusing it cannot remove the floor, and earning cannot shorten a sentence.
-The pins establish the corresponding prohibitions for Adam. They do not
+The checks establish the corresponding prohibitions for Adam. They do not
 establish that Adam is employed or that any workplace observes them.
 
 ## Acting together
@@ -150,7 +150,7 @@ asset stripping and evasion remain prohibited. A fraud exception requires an
 individualised finding through due process.
 
 Restructuring and receivership are temporary public powers. Their records
-must identify the estate and a valid end. The pins withhold completion for a
+must identify the estate and a valid end. The checks withhold completion for a
 missing estate, mismatched end or expired selection, and assign review to the
 declared alternate when the ordinary reviewer is certified unavailable. Missing
 review cannot prolong a manager's authority. Enterprise failure must also

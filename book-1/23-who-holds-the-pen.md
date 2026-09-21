@@ -75,9 +75,9 @@ The prospective signing rule has its own checks for recall, matched carried
 restriction and current credibility. In the proposed case against Tyr, Vex
 is the restricted signer and Wren the other examiner. Their pair still cannot
 qualify the finding. A second counterfactual removes those checks as well as
-bypassing the appointment guards; the proposed finding then qualifies. Even
+bypassing the credential conditions; the proposed finding then qualifies. Even
 there, permission alone does not manufacture a completed judgment. These
-controls establish the work done by the particular guards. They do not prove
+tests establish the work done by those conditions. They do not prove
 that every defect in appointment is caught again at signing.
 
 Restoration tests a different boundary. A qualified appellate act can end
@@ -122,7 +122,7 @@ can refuse a directly asserted credential and test the relationships among
 those inputs. It does not authenticate an election or establish that nominally
 different writers are independent in practice.
 
-Current public powers use a separate state-form route. Each requires its own
+The federal republic's public powers require separate records. Each needs its own
 source and version, lawful holder, jurisdiction, scope, time record and review.
 Election administration, completeness assurance, result certification and
 institutional execution have separate responsibilities.

@@ -127,6 +127,61 @@ reinstate the retired tooling or workflow.
 Grouped by kind. Dates in each heading are the ratification dates; a ruling
 that was later implemented or narrowed carries that supersession inline.
 
+### Item 30 — sequential developmental and line edit, 2026-09-21
+
+All 34 ordered inputs received a fresh sequential read after the targeted
+revisions: epigraph, opening, Chapters 1–31 and optional method. The review
+checked purpose, context, worked consequences, progression, terminology and
+endings. Twenty numbered chapters and the opening receive local edits; the
+remaining thirteen inputs retain their wording where no concrete improvement
+was needed. The existing narrative-register decision identifies the files and
+records their exact canonical prose as session-drafted and author-approved
+under delegated approval (2026-09-13).
+
+The material scope correction is in Chapter 19. The enforcement firewall
+prohibits using service access to enrol someone into an enforcement record;
+it does not exclude lawful service-purpose records generally. The correction
+follows the existing public-safety decision, record-power ruling and holding
+contract's `RecordEnforcementFirewallScope`, without changing their policy or
+formal implementation. Chapter 3 defines voiding on first sustained use;
+Chapter 5 distinguishes the custody records from Marisol's added receipts and
+explains the teaching-and-hearing rule's distinct evidence requirements.
+Chapter 12 identifies the comparison subject, Chapter 14 separates overloaded
+participation claims, and Chapters 18 and 21 keep Nell's right to be heard
+distinct from recorded speech, a request or a hearing.
+
+Other edits replace unexplained implementation terms with their meaning,
+introduce the custody lease before following it, and put Chapter 30's bridge
+to Part V after its final child case. Part V's five joints retain the sustained
+arguments for the revised choices, their alternatives, cost bearers and
+grounds for reconsideration; two local edits clarify a pronoun and amendment
+terminology. Its hypothetical kitchen and ending remain. The optional method's
+exact examples, limits and syntax remain unchanged. No case becomes biography,
+no missing entry becomes evidence of an outside event, and no revision history
+enters the reading sequence.
+
+Four stale prose locators identified by the initial reference check are
+updated in the existing full-society ledger and placement record. Historical
+assurance judgments are not renewed and no exception is widened. The
+reader-coverage generator retains the same 240 passages and unchanged report.
+All six reference-integrity, ten reader-coverage and five claim-discipline
+development checks pass, as does `git diff --check`.
+
+Focused `./verify.sh --only` checks pass Chapter 3's 45 pins in 12.12s,
+Chapter 19's 20 pins in 11.78s and Chapter 28's 73 pins in 12.61s. The complete
+`RIGHTS_VERIFY_JOBS=4 ./verify.sh` passes **88,815 pins across 16,137 cases**,
+with complete contradiction checks and no findings, in **1,152.03s**. The
+five-minute target remains unmet. The constitution, substantive pins and
+suite inventory are unchanged throughout the run. Item 30 is complete.
+
+The manuscript measures 58,090 whitespace-separated words excluding HTML
+comments. Derived chapters contain 40,763 words (70.17%); the opening contains
+3,943 and the method 3,936. Chapter order, pin pairs, the one-entry child
+fixture, required child slots and exemptions, three exempt prose channels and
+carried appendix remain. Evidence checking and reading-copy inspection retain
+their separate pending items. No independent reader study, release or Gate C
+completion is claimed. Book 2 stays collection-only.
+
 ### Item 29 — necessary qualifications and distinctive child returns, 2026-09-21
 
 Under the standing delegated approval, 24 numbered chapters now keep each

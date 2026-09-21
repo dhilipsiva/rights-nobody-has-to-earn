@@ -7,9 +7,10 @@ and the particular placement. Family status supplies no part of it.
 
 A lawful sentence does not authorise holding somebody anywhere convenient.
 Current custody authority also requires a reviewed placement naming the person,
-case, actual place, kind of placement, lease, window and current record. The
-placement authority and independent reviewer must agree on availability,
-individual necessity, lawful conditions, counsel, reasons, inspection and
+case, actual place, kind of placement, lease, window and current record.
+The custody lease ties the claimed authority to one case, review window and
+constitutional source. The placement authority and independent reviewer must
+agree on availability, individual necessity, lawful conditions, counsel, reasons, inspection and
 accessible challenge. Competing qualified accounts cannot be treated as a
 choice of whichever one permits the preferred destination.
 

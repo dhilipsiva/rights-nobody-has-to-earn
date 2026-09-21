@@ -9,6 +9,64 @@
 > author's standing delegated approval of 2026-09-13. Earlier dispositions,
 > including `OL-15-v1` in section 7a, remain visible as history.
 
+## Sequential developmental and line edit — item 30, 2026-09-21
+
+All 34 ordered inputs received a fresh sequential read after items 21–29:
+the epigraph, opening, Chapters 1–31 and optional method. The review examined
+purpose, context, progression, worked consequences, terminology, transitions
+and endings, including the strong passages. The exact current opening and
+Chapters 3, 5, 7, 9, 11–14, 16, 18–24 and 28–31 are
+`session-drafted, author-approved under delegated approval (2026-09-13)`.
+The epigraph, Chapters 1, 2, 4, 6, 8, 10, 15, 17 and 25–27, and method retain
+their wording: the read found no concrete benefit requiring an edit there.
+
+Chapter 19 contained a scope ambiguity: its account of the enforcement
+firewall could be read as excluding service records generally. The current
+prose specifies the prohibition on using access to food, care, schooling or
+courts to enrol someone in an enforcement record. This follows section 11
+of the existing public-safety decision, the record-power ruling in CLAUDE.md,
+and the `RecordEnforcementFirewallScope` field of the existing holding
+contract. Lawful service-purpose records retain their separate conditions.
+The correction changes no constitutional power, source field or expectation.
+
+Chapter 3 defines voiding at its first sustained use. Chapter 5 identifies
+which custody records lack receipts, keeping Marisol's added receiving
+evidence separate, and explains the teaching-and-hearing route directly from
+its rule rather than referring vaguely to control of a writer. Chapter 12
+identifies Cira as the comparison subject. Chapter 14 separates participation,
+independent assistance and decision-specific authority into clear sentences.
+Chapter 18 states Nell's right to be heard without implying recorded speech;
+Chapter 21 identifies the absent request as well as the absent hearing.
+
+The opening and case chapters replace unexplained implementation terms with
+their reader-facing meaning, while the method retains the exact syntax and
+executable examples. Chapter 28 explains the custody lease before Chapter 29
+uses it to follow current authority. Chapter 30 gives the child the final case
+before its transition to the argument. No heading, child slot, exemption,
+case identity or source/test pairing changes.
+
+Part V's five joints received the same read. Valuation distinguishes esteem,
+limited credibility authority and scarcity judgment; rotation separates labour
+recruitment from succession; coercion defends the available power and placement
+ceiling; capture examines records, appointments and disclosure protection;
+the state addresses institutions, political membership, finance, emergency
+limits and the cores. The argument gives the revised choices their alternatives,
+cost bearers and reasons for reconsideration. Two local wording changes clarify
+the referent of the formal checks and the scope of amendment comparisons.
+The hypothetical kitchen, historical qualifications and ending remain intact.
+The optional method still separates accepted experiments from enacted rules,
+formal results from performed acts, and verification from source checking.
+
+Four existing prose locators in the full-society ledger and placement record
+follow the edited passages; their historical assurance judgments are not
+renewed. The reader-coverage generator retains the existing 240 passages.
+The constitution, substantive pins, inventory, one-entry child fixture and
+three exempt prose channels are unchanged. No revision narrative, inner life,
+outside success or independent reader evidence is added. The canonical files
+and coherent commit retain the exact approved text. CLAUDE.md records the
+completed verification and measured result; evidence checking and rendered
+copies retain their separate pending items.
+
 ## Necessary qualifications and distinctive child returns — item 29, 2026-09-21
 
 The exact current Markdown of Chapters 1–9, 13–17, 19–21, 23–27, 29 and 30 is

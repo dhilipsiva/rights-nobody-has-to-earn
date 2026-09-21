@@ -53,8 +53,8 @@ and proportionality. Neither test may balance away the protected core.
 A credible barrier or group pattern can shift the burden in a remedial equality
 proceeding. It cannot reverse a criminal burden or establish guilt. The pattern
 case permits the claimant to pursue relief and obliges the reader to hear it;
-no confinement, void or recognition loss follows for the claimant, and the
-case also checks that it produces no confinement or void for Cira.
+no confinement, void or recognition loss follows for the claimant. The case
+also produces no confinement or void for Cira, the comparison subject.
 
 ## Accessibility makes rights usable
 
@@ -94,7 +94,7 @@ cannot become an individual verdict, and non-participation cannot be penalised.
 
 The remedial proceeding keeps individual relief separate from re-audit of
 related cases. A pattern therefore opens inquiry and correction without
-convicting, confining, voiding or docking anyone.
+convicting, confining, voiding or withdrawing anyone's recognition.
 
 ## A measure with an end
 
@@ -157,7 +157,7 @@ protection remains a standard those mechanisms must satisfy.
 ## The child with nobody
 
 Nell is owed equal protection without evidence of family, home or an adult's
-support. The pins establish the relevant prohibitions on substituting those
+support. The checks establish the relevant prohibitions on substituting those
 statuses for a finding, and the State still owes Nell learning. No accommodation
 or measure is recorded for Nell. That absence establishes neither equal access
 nor its denial; it leaves the duties intact and their delivery unproved.

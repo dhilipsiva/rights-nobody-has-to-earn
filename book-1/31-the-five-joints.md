@@ -354,9 +354,9 @@ without the primary registry's entry. That protection is not a final judgment
 on the merits. The person need not win the appeal before its question can
 interrupt the authority being challenged.
 
-They do not measure duration or open a cell. The record cannot establish that
-outside time advanced, that a later finding arrived, or that an official
-honoured release. Independent access, review of actual holding, continuing
+The formal checks do not measure duration or open a cell. The record cannot
+establish that outside time advanced, that a later finding arrived, or that
+an official honoured release. Independent access, review of actual holding, continuing
 care and a duty to secure release address those acts in law. Their
 performance needs outside evidence. A system that keeps people because its
 record stopped changing would violate the purpose of current authority; the
@@ -588,8 +588,8 @@ choice. The comparison must count missed retaliation as well as delay.
 The consequential records remain the constitutional source and the facts
 supplied to it. The source can be inspected and its represented consequences
 executed. A change still requires constitutional justification; passing a
-repository check is not democratic approval. The amendment interfaces and
-source comparisons establish only their stated bindings and bounded checks,
+repository check is not democratic approval. The amendment records and
+source comparisons establish only the specified connections and checks,
 not the justice of every candidate rule or a universal proof that a protected
 promise survives every future change. Whoever operates the system must not
 turn a successful calculation into authority to enact its inputs.

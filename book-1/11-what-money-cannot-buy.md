@@ -18,7 +18,7 @@ cooperative, customary, public, household and private tenure are all lawful.
 Imperfect title does not erase a dwelling claim. Eviction or foreclosure that
 threatens the floor requires legality, notice, a hearing, proportionality,
 review and a real public continuity route. A high-value asset can be reached
-while adequate housing and due process remain protected; the acceptance cases
+while adequate housing and due process remain protected; the cases
 keep those claims separate.
 
 Alongside that floor, possession, use, transfer and inheritance are protected
@@ -77,9 +77,9 @@ effects, information asymmetry or the absence of meaningful exit. Size and
 profit alone are not grounds. A small gatekeeper can control access that a
 large enterprise does not.
 
-Harrow's entries in the pins test that distinction. An attestation naming
-EssentialityTrigger is recognised as naming a permitted ground. An invented
-revenue threshold is not. A gatekeeping *function class* cannot be substituted
+Harrow's entries test that distinction. An attestation naming essentiality
+is recognised as naming a permitted ground. An invented revenue threshold
+is not. A gatekeeping *function class* cannot be substituted
 for a *ground*. The categories stay separate even when the same witness writes
 each entry. None of this proves that essentiality or gatekeeping exists in the
 world; it establishes which claims the finding can use.
@@ -87,7 +87,7 @@ world; it establishes which claims the finding can use.
 The finding must also concern a public-facing, delegated, essential, gatekeeping
 or system-steering function. Its tier must match its reach: a function confined
 to one region belongs to the regional route, while a function crossing regions
-belongs to the common route. The pins reject the vocabulary pairing for a
+belongs to the common route. The checks reject the vocabulary pairing for a
 cross-regional function under regional authority. Supplied entries cannot
 rewrite these categories by asserting membership directly.
 

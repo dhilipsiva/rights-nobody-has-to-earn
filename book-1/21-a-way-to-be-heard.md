@@ -68,8 +68,8 @@ personhood, a void, confinement or recognition loss for its subject.
 
 A request begins a particular review. It needs neither the decision-maker's
 permission nor a previous reviewer's approval nor a prior finding of merit.
-The bare-request case assigns review to IndependentJusticeReader. The request
-does not decide itself.
+The bare-request case assigns review to the independent justice reader.
+The request does not decide itself.
 
 The review duty covers error, evidence, rights and effective interim protection.
 An independently established failure to answer assigns action to a separate
@@ -80,7 +80,7 @@ arrived.
 Relief is a separate conclusion. Nia's case has a qualified final appellate
 order; custody does not derive. Ruk has no such disposition. A rule obliging
 Appeals to hear every prisoner's case creates a duty for Ruk without itself
-deciding the appeal. The pins keep that rule in force while testing the
+deciding the appeal. The checks keep that rule in force while testing the
 difference. A duty to hear is not a completed hearing or judgment.
 
 A filed custody challenge has a further protective effect: it suspends the
@@ -104,9 +104,9 @@ review. Both boundaries matter to the person waiting for an answer.
 ## The child with nobody
 
 Nell retains personhood, the security debt and protection against making
-wealth, documentation or status a condition of access. No hearing is supplied
-for Nell. The routes triggered by a request therefore establish no hearing for
-this child.
+wealth, documentation or status a condition of access. Nell's record supplies
+no request or hearing. The routes that begin with a request therefore yield
+no hearing conclusion for this child.
 
 The independent rights advocate's duty to initiate assistance and representation
 needs no request. The appointment route must preserve Nell's voice and

@@ -91,8 +91,8 @@ Amend_Decoy gains none by naming a harmless recognition target. The register
 names the floor article, prisoner personhood and itself; those names do not
 inspect the text or the effects of a candidate.
 
-The source-mutation cases test a different boundary. A manually edited copy
-can remove the food promise, including through a grammar change that leaves
+Tests that edit the source directly examine a different boundary. A manually
+edited copy can remove the food promise, including through a grammar change that leaves
 its structural safeguard against food-dependent confinement intact. Directly
 editing the writable vocabulary can likewise change what the record accepts.
 Those are consequences of the supplied candidate source, not authorised

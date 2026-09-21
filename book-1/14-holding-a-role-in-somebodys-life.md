@@ -28,11 +28,11 @@ separate standing, voice, privacy, confidential help and exit.
 ## The person must be heard
 
 The person must be heard without a minimum speaking age. The participation
-record carries their own account without certifying a preference or relationship,
-independent assistance is required where the adults' interests conflict, and
-authority grows decision by decision rather than arriving as a score for a whole
-person. That record must match the exact role it concerns, so a role reviewed for
-one decision domain licenses nothing in another.
+record carries their own account without certifying a preference or relationship.
+Independent assistance is required where the adults' interests conflict.
+Authority grows decision by decision rather than arriving as a score for a whole
+person. The participation record must match the exact role it concerns,
+so a role reviewed for one decision domain licenses nothing in another.
 
 ## Support assists; it does not replace
 
@@ -119,8 +119,9 @@ exists, a representative acted or a witness saw delivery.
 
 ## Adulthood and missing evidence
 
-Cira is a person and is owed the floor. The record supplies no typed evidence
-that Cira has reached the common adulthood threshold, so it derives no ballot.
+Cira is a person and is owed the floor. The record supplies no evidence in
+the required form that Cira has reached the common adulthood threshold,
+so it derives no ballot.
 That does not establish Cira's age. It cannot distinguish *not yet* adult
 from adult with missing evidence: the model has no outside clock.
 
@@ -131,8 +132,8 @@ The executable model still needs supplied age evidence to derive its ordinary
 franchise conclusion.
 
 Esa illustrates the gap. Teaching, having been examined and being somebody's
-recorded child prove no age. Esa's teaching remains recorded, but no typed
-adulthood evidence supports a ballot conclusion. That absence does not turn Esa into a child.
+recorded child prove no age. Esa's teaching remains recorded, but no adulthood
+entry supports a ballot conclusion. That absence does not turn Esa into a child.
 
 Esa can challenge the missing or disputed age evidence. The challenge creates
 a named dispute and a duty of independent determination and correction; it does

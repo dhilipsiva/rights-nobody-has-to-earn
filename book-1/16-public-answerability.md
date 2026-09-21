@@ -41,7 +41,7 @@ without guaranteeing that the facts supporting it will be preserved.
 ## Boss
 
 The record seats Boss through Electorate, records Boss's examination of Rebel,
-and records Rebel's exposure of Boss. Boss is also recalled. The pins derive
+and records Rebel's exposure of Boss. Boss is also recalled. The checks derive
 public answerability for Boss and a shield for Rebel, while deriving neither
 confinement nor a void for Rebel in this case.
 
@@ -77,7 +77,7 @@ an unrestricted power to investigate.
 ## Vex's restoration
 
 Vex has an electorate seat, a completed prior credibility case and a carried
-credential restriction. The pins show public answerability, the personal void
+credential restriction. The checks show public answerability, the personal void
 and refusal of the Review credential together. The finding prevents a new
 adverse finding from qualifying. It does not establish
 that every word Vex speaks is false.

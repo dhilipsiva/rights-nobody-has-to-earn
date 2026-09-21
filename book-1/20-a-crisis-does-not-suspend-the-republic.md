@@ -7,8 +7,8 @@ named public powers.
 
 What may urgent authority permit, and what remains owed when it fails?
 The cases follow a property requisition and an authorisation of force abroad.
-Each depends on a parent authorisation. An independent defect finding withdraws
-that reliance, while the affected person's standing and floor remain.
+Each depends on authority for the public power it uses. An independent defect
+finding withdraws that reliance, while the affected person's standing and floor remain.
 
 ## What a declaration may actually do
 

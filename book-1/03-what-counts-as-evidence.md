@@ -10,8 +10,8 @@ nothing about Adam's wealth or conduct. It says what this record may contain.
 
 The admitted kinds include births and encounters, employment and teaching, injuries
 and judgments, relationships, proposals, appointments, receipts and challenges.
-They also include specified evidence about sources, review windows and the
-carry of a status between records. They are not all direct observations.
+They also include specified evidence about sources, review windows and whether
+a status continues between records. They are not all direct observations.
 Some report a finding someone has already made.
 
 Personhood itself may be entered directly or follow from the roots in the
@@ -93,6 +93,10 @@ separate question from whether the verdict can be asserted directly.
 
 ## One finding is not a voiding
 
+Voiding restricts whose findings can count against another person. An effective
+credibility finding prevents its subject's new adverse signature from qualifying;
+it leaves personhood and the floor intact.
+
 Koa's finding about Esa is recorded. Esa is not voided, and Koa is not voided
 for having made it. The lone entry does not supply the route to either result.
 
@@ -116,22 +120,22 @@ when the entry is submitted; changing it later does not turn an earlier
 refusal into accepted evidence.
 
 An editor can nevertheless declare new vocabulary and use it in the source.
-The closure makes that a source change; it does not establish the editor's
-authority to make it. Nor does it determine whether the new word conceals a
-judgment that should require a separate decision.
+The declaration requirement makes that a source change; it does not establish
+the editor's authority to make it. Nor does it determine whether the new word
+conceals a judgment that should require a separate decision.
 
 The protected register names articles governing the floor, prisoner personhood
 and the register itself. A proposal's declared target establishes neither its
-effects nor authority to enact it. Docketing a person's name cannot create a
-personal credibility finding either. Adding a name to the register would not
-make it inspect what a source edit actually does.
+effects nor authority to enact it. Recording a proposal under a person's name
+cannot create a personal credibility finding either. Adding a name to the
+register would not make it inspect what a source edit actually does.
 
-The exact-change interface reviews the replacement itself. A proposed vocabulary
+The amendment route reviews the exact replacement text. A proposed vocabulary
 change must be explicitly reviewed as part of the same candidate text that
 received political consent and independent compatibility review. Matching
 those records is a condition of the formal result. It does not discover every
 consequence of a new word or prove that an unauthorised source cannot be installed.
-The amendment chapter distinguishes the interfaces and their remaining gaps.
+The amendment chapter follows that route and its limits.
 
 <!-- Coverage owner: FS-CVF-003. -->
 
@@ -184,9 +188,9 @@ contract. It does not authenticate the witnesses or physically release anyone.
 Other entries have narrower reach. Writing that someone has a family cannot
 worsen confinement. An absent parent, marriage or sibling entry cannot establish
 reviewer independence. Recording care as employment proves neither delivery
-nor consent nor authority to decide for another person. A typed adulthood entry can support
-the executable ballot conclusion, but the legal status of adulthood does not
-originate in the entry. A forged or withheld entry remains a hazard for the
+nor consent nor authority to decide for another person. An adulthood entry
+in the required form can support the executable ballot conclusion, but the
+legal status of adulthood does not originate in the entry. A forged or withheld entry remains a hazard for the
 ballot record; neither an age nor an outside clock is verified here.
 
 Reserved conclusions cannot be written directly. Their admitted premises can

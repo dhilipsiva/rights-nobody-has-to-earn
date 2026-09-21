@@ -140,7 +140,7 @@ conclusion follows. The record cannot distinguish being below the threshold
 from missing evidence that it has been reached. It establishes neither a
 punishment nor Nell's actual age.
 
-The child still has a voice: the prohibition on a minimum speaking age follows
-from personhood alone. Participation cannot be reduced to the franchise. The
-next chapter examines what institutions may record about a person, including
+Nell's right to be heard does not wait for adulthood: the prohibition on a
+minimum speaking age follows from personhood alone. Participation cannot be
+reduced to the franchise. The next chapter examines what institutions may record about a person, including
 the evidence on which political rights depend.

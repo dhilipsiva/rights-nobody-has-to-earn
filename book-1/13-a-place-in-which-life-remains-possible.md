@@ -120,7 +120,7 @@ loss of a unique, sacred or functionally irreplaceable system. Reparation to
 harmed people or a collective remains a separate debt.
 
 Changing a contractor, corporate form, supply chain or border cannot export
-harm forbidden at home. Conservation cannot justify dispossession. The pins
+harm forbidden at home. Conservation cannot justify dispossession. The checks
 establish separate prohibitions on erasing ecological ceilings, selecting
 floor loss and delaying restoration because the responsible party is insolvent.
 They establish no measured condition or completed restoration.
@@ -322,7 +322,7 @@ correction nor the duties prove that an activity stopped or care continued.
 ## The child with nobody
 
 Nell holds the environmental claim without owning land or having an adult
-speak first. The pins preserve access to environmental information and review,
+speak first. The checks preserve access to environmental information and review,
 prohibit ranking Nell by environmental worth, and retain the State's health
 debt. No claim or assessment is supplied for Nell. The birth entry establishes
 neither safe surroundings nor restored conditions; the duties do not wait for

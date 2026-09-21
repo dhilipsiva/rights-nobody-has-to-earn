@@ -48,9 +48,9 @@ the case, review window, renewal and exact constitutional source, with the
 separate approvals required for that exercise of power.
 
 Both event order and record-entry order must be unconflicted. The renewal must
-point to the selected end of the witnessed constitutional record line. A general
-renewal cannot serve every prisoner. Missing evidence or a competing witnessed
-account of the source, window, subject or lease prevents custody from deriving.
+identify the selected current record in a witnessed sequence of constitutional
+records. A general renewal cannot serve every prisoner. Missing evidence or a
+competing witnessed account of the source, window, subject or lease prevents custody from deriving.
 
 Each renewal also needs positive evidence of accessible primary and independent
 alternate challenge intake, confidential counsel, retained copies and
@@ -73,7 +73,7 @@ to publish a successor. It rejects unsupported authority in the record
 presented to it; that does not establish that the record is current in the world.
 
 Severity does not lengthen the interval. Recognition, employment, compliance,
-wealth and character cannot shorten or extend custody. The pins try both a
+wealth and character cannot shorten or extend custody. The checks try both a
 rule producing a raw release entry from recognition and a rule producing an
 operative bar against the sentence. The raw-entry rule loads; the operative
 bar is refused because it would defeat its own custody premise. A raw release
@@ -82,7 +82,7 @@ producer nor a reader in the enacted source. That protection needs its own
 check; the engine's acceptance of a proposed rule does not establish its
 constitutional legitimacy.
 
-The pins also admit a duration word and record a term for Ruk. Custody continues
+The checks also admit a duration word and record a term for Ruk. Custody continues
 and no release follows. A term label supplies neither a clock nor an enforceable
 end by itself.
 
@@ -140,7 +140,7 @@ The Hano sequence follows a sentence. Protective restrictions need another
 route; the presence or absence of a conviction cannot settle their authority.
 
 One direct punishment does not mean one permissible restriction of liberty.
-Arrest, pre-trial detention, search and seizure have separate contracts.
+Arrest, pre-trial detention, search and seizure have separate requirements.
 Each needs an individual recorded ground, an identified actor, reasons,
 accessible assistance, independent authorisation and review. Search normally
 requires prior independent authority. Its immediate-danger exception is narrow,
@@ -157,7 +157,7 @@ must also satisfy the actual asylum, individual-decision, suspensive-appeal
 and non-refoulement safeguards described in chapter 15. A favourable label
 cannot stand in for those records.
 
-Every coercive instrument has its own floor wall. None may be produced because
+The floor limits every coercive instrument. None may be authorised because
 someone lacks safety, food, shelter, care, learning, speech, belief or company.
 The capability it restricts is an endpoint: no rule may read that loss back
 into another consequence. The order itself may be read for review and
@@ -175,7 +175,7 @@ shared command or a reserve label cannot recreate a fused force. Civilians
 do not come under military jurisdiction. Individually authorised unarmed
 civil assistance carries no arrest, search, detention, interrogation,
 crowd-control or surveillance power. Defence, counsel and survivor protection
-remain independent parts of the justice interface.
+remain independent parts of the justice system.
 
 Ordinary policing is assistance, information, mediation and protection against
 harm, not a general power to enforce order as such. It cannot make someone's
@@ -240,7 +240,7 @@ member must refuse a manifestly unlawful order, and that refusal is protected.
 
 ## The child with nobody
 
-Nell's birth-only fixture derives movement and no restraint or custody. It also
+Nell's birth-only record derives movement and no restraint or custody. It also
 derives the food debt, with no void or recognition loss. This is a control for a
 person whom the confinement rules have no grounds to reach.
 

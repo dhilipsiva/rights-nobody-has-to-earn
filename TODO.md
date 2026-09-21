@@ -5,8 +5,8 @@
 Created 2026-09-18 and refreshed 2026-09-20 at the author's request:
 "Refresh TODO to make book a 10/10."
 
-**Active: items 30–33 below are pending.** Items 01–23 were
-completed on 2026-09-20 and items 24–29 on 2026-09-21. The first round's
+**Active: items 31–33 below are pending.** Items 01–23 were
+completed on 2026-09-20 and items 24–30 on 2026-09-21. The first round's
 [final manuscript review](reviews/2026-09-20-final-manuscript-review.md),
 subsequent coherent commits and `CLAUDE.md` retain the assessments, repairs and
 validation. This refresh opens further work; it does not reverse those
@@ -134,31 +134,11 @@ solutions and development history stay outside the book's reading sequence.
 
 ## Ordered revision backlog
 
-Work in this order. Item 30 reads and edits the complete current sequence
-after the targeted revisions. Each item includes its
+Work in this order. Item 31 checks the evidence and its interpretation in
+the revised manuscript. Each item includes its
 own relevant validation under the execution contract; item 33 is a final
 integration review, not permission to defer earlier checks. Chapter numbers
 refer to the [current reading sequence](book-1/contents.json).
-
-- [ ] **30. Complete a sequential developmental and line edit.**
-
-  **Scope:** Every ordered input in `book-1/contents.json`, including the stronger
-  chapters, opening, epigraph and method.
-
-  Read in order after the targeted revisions. Check each chapter's purpose,
-  opening, necessary context, worked consequence, progression and ending.
-  Correct ambiguous pronouns, unexplained terms, overloaded sentences, abrupt
-  transitions and inconsistent names for the same legal concept. Keep entitlement,
-  lawful power, supplied evidence, delivered conditions and remedy distinct.
-  Make Part V's five sections form a sustained argument with proportionate
-  attention to the revised choices. Preserve the epigraph and the flat register;
-  change strong passages only where the reading identifies a concrete benefit.
-
-  **Done when:** every ordered file has received the current-design review,
-  including all chapter-specific weaknesses identified in the fresh assessment.
-  The manuscript contains no revision narrative, unsupported inner lives or
-  semantic reversals. Its strongest demonstrations remain intact, and its ending
-  earns its claim without restating every limitation already explained.
 
 - [ ] **31. Check the evidence and the conclusions drawn from it.**
 

@@ -48,8 +48,8 @@ unrelated. In this chapter's test, the court and the review body both record
 that assertion. Even when every positive qualification entry is supplied, the
 court cannot occupy a deciding role in its own prosecution. The conviction
 remains blocked. If the court's public-status entry is removed in a separate
-counterfactual, its exposure no longer opens the shield. That is another
-record-dependence the checks preserve.
+counterfactual, its exposure no longer opens the shield. The checks also
+preserve this dependence on the record.
 
 The shield reaches conviction. It does not exempt anyone from every
 protective measure. Arrest, search and hazard restrictions have their own

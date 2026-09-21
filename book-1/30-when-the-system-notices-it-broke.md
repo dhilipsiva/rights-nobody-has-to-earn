@@ -101,9 +101,9 @@ only a qualified independent disposition can end its suspension. Other record
 challenges retain their specified readers and duties. A general right to justice
 does not silently supply every executable connection.
 
-Chapter 7 follows the source-bound bridge from the review duty into typed reader and
-action duties, positive findings of non-response, alternates, continuity and remedy.
-The chapter's pins also try a simpler extension: infer a duty breach whenever Review
+Chapter 7 follows the lawful source connecting a review duty to a named reader,
+required actions, positive findings of non-response, alternates, continuity and remedy.
+This chapter's checks also try a simpler extension: infer a duty breach whenever Review
 owes a response but has no capture entry. The engine accepts it. That demonstrates
 that further consequences are technically possible, but the extension's missing entry
 still does not establish real non-response. The ordinary constitutional route requires
@@ -191,14 +191,8 @@ conclusion from direct entry does not make the inputs trustworthy.
 
 The source gives selected findings a path through review, action, non-response,
 continuity, individual remedy, common-cause correction and recurrence checking. The
-pins establish particular links and limits in that path. They cannot receive a filing,
+checks establish particular links and limits in that path. They cannot receive a filing,
 convene an institution, restore a person, or establish that a wrong has stopped.
-
-This is the boundary of the derived chapters: rules and supplied records make claims
-that can be executed, challenged and compared. The defects exposed by that comparison
-remain defects until repaired or adequately resolved. The following argument asks
-what reason there is to choose the design, how its evidence bears on that choice,
-and what costs and limits remain.
 
 ## The child with nobody
 
@@ -211,3 +205,9 @@ A counterfactual marker based on an owed but unrecorded delivery fires for
 Nell. Its acceptance shows that the inference can be written, not that missing
 evidence proves non-delivery. Nell's ordinary assistance and delivery duties
 do not wait for these custody alarms.
+
+This is the boundary of the derived chapters: rules and supplied records make claims
+that can be executed, challenged and compared. The defects exposed by that comparison
+remain defects until repaired or adequately resolved. The following argument asks
+what reason there is to choose the design, how its evidence bears on that choice,
+and what costs and limits remain.

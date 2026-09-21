@@ -266,7 +266,8 @@ the main reading sequence; the method follows it as an optional technical part.
 - **Supplement:** protection against a recorded qualifying event through a scheme
   or public guarantee. The conclusion carries no amount and proves no payment.
 - **Competence certificate:** an authorised attestation of a person's competence
-  for a function. In the formal record it gates nothing and is not a licence.
+  for a function. No other entitlement or permission in the formal record
+  depends on it; it is not a licence.
 - **Compensation record:** a promised wage, profit, return, grant, prize, subsidy
   or incentive. A payment conclusion also needs independent attestation; neither
   entry carries an amount.
