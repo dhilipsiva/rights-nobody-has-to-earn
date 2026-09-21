@@ -50,18 +50,18 @@ someone who needs care? A uniform public acknowledgment is one possible answer.
 But if its purpose is to reveal neglected work, what does it establish about
 the duration, difficulty or cost of that work?
 
-Owen's New Harmony and his labour exchanges illustrate the difficulty of
-organising cooperation around a common valuation of employment. The Indiana
-community began in 1825 and dissolved in 1827; the exchanges' attempt to price
-labour by time still required judgments about unlike products and tasks.
-Harrison's history does not establish that valuation alone explains the
-community's failure, or that every measurement becomes domination.[^owen]
+Owen's New Harmony community began in 1825 and dissolved in 1827. His later
+labour exchanges sought a common measure in time, but the hours on their notes
+incorporated market valuations of labour and materials. Calling a unit an hour
+did not remove judgment about unlike products and tasks. That difficulty does
+not establish why New Harmony failed, or that every measurement becomes
+domination.[^owen]
 A sharper warning concerns exit. Justin Yifu Lin argues that Chinese
 collectives retained a right to withdraw until 1958, and that its removal
-undermined the agreement sustaining cooperation. His evidence supports that
-hypothesis; it does not settle the causes of the entire agricultural crisis.
-The constitutional question is whether essentials may be used to make someone
-accept a judgment of their contribution.[^lin]
+undermined the agreement sustaining cooperation. He presents evidence
+consistent with that hypothesis; it does not settle the causes of the entire
+agricultural crisis. The constitutional question is whether essentials may be
+used to make someone accept a judgment of their contribution.[^lin]
 
 This design separates contribution from human worth. Competence certification,
 compensation and contributory supplements each have limited grounds. Care can
@@ -265,10 +265,10 @@ while organising life around punishment. A person retains formal rights but
 loses relationships, employment or care in practice. A limited vocabulary can
 make that harm less visible without making it smaller.
 
-Tanzania's villagisation is a warning about that distance. The policy began
-with voluntary ujamaa villages and became compulsory. Scott estimates at
-least five million relocations; reported totals for people living in
-villages reach 13 million and do not measure the same thing as relocations.
+Tanzania's villagisation is a warning about that distance. The policy moved
+from voluntary ujamaa villages to compulsory settlement. For the 1973–1976
+campaign, Scott reports at least five million people relocated. He also quotes
+Nyerere's claim of over 13 million village residents, a different population.
 Those figures cannot be combined into an agreed count of coerced moves, and
 their disagreement alone establishes no cause. The relevant evidence is the
 use of compulsory relocation in a project justified as collective
@@ -398,12 +398,12 @@ alongside shared financial and employment arrangements. These are reported
 institutional arrangements, not a finding that cooperative ownership prevents
 capture.[^mondragon]
 
-For comparison, EPI's estimate for large American firms in 2025 is in the
-region of 300-to-1. The denominator is an industry average for production and
-nonsupervisory workers, not the lowest-paid worker or a median employee of
-each company. The dates, populations and pay measures differ. The figures
-illustrate different distributions; their ratio cannot measure the effect of
-cooperative governance.[^pay]
+For comparison, EPI's projected estimate for the largest 350 American firms by
+sales in 2025 is about 325-to-1. The denominator is an industry average for
+production and nonsupervisory workers, not the lowest-paid worker or a median
+employee of each company. The dates, populations and pay measures differ. The
+figures illustrate different distributions; their ratio cannot measure the
+effect of cooperative governance.[^pay]
 
 The design permits cooperative enterprise without giving it an exemption from
 labour rights, equality or scrutiny. The same is true of a public provider or
@@ -425,22 +425,23 @@ to preserve it. Conversely, public ownership by itself supplies no evidence
 that provision arrived. The comparison concerns accessible service and
 answerability, not a constitutionally preferred provider label.
 
-The record problem reaches essentials directly. Drèze and his coauthors
-report the cancellation of over a million cards in Jharkhand for want of an
-Aadhaar link. Muralidharan, Niehaus and Sukhtankar estimate that between one
-and a half and two million legitimate beneficiaries lost access at some
-point during the reforms. Cards and people are different units, and the
-studies do not supply one interchangeable population. Their evidence shows
-why reducing leakage is insufficient as a measure of a welfare reform:
+The record problem reaches essentials directly. Drèze and his coauthors report
+mass cancellation of ration cards in Jharkhand for want of an Aadhaar link,
+following a March 2017 order. Muralidharan, Niehaus and Sukhtankar estimate
+that between one and a half and two million legitimate beneficiaries lost
+access at some point during the reforms. Cards and people are different units,
+and the studies do not supply one interchangeable population. The latter study
+attributes much of the harm to how the transition was managed. Their evidence
+shows why reducing leakage is insufficient as a measure of a welfare reform:
 legitimate access can fall too.[^jharkhand]
 
 Santoshi Kumari's case must be stated with the dispute intact. Contemporary
-reporting records that the eleven-year-old died after her family's eligible
-ration card was cancelled and rations were refused. Her family and activists
-attributed the death to hunger; the district administration attributed it to
-malaria. The book does not decide the cause of death. The documented
-cancellation and refusal are enough to make the constitutional question
-urgent.[^santoshi]
+reporting records that the eleven-year-old died in September 2017 after her
+eligible family's ration card was cancelled and rations were refused. Her
+family and activists attributed the death to hunger; the district
+administration attributed it to malaria. The book does not decide the cause of
+death. The reported cancellation and refusal are enough to make the
+constitutional question urgent.[^santoshi]
 
 Standing attaches before identity reconciliation. Birth, encounter, presence
 or effective control can establish a human subject without a successful
@@ -612,17 +613,18 @@ body responsible for every essential while giving that body a complicated
 set of limits. If the limits prevent provision, the person waiting is not
 helped by the precision with which the failure can be named.
 
-Historical experience supplies no single answer about the state's role.
-Eden Medina's account of Chile's Cybersyn describes an economic coordination
-project using surplus telex machines under Allende's government. The coup
-ended the project; that political ending cannot establish how the design
-would have performed over time.[^cybersyn] Auroville presents a different
-relation. The Indian state's intervention and the Auroville Foundation Act
-placed its governance within a statutory framework. In its 2025 judgment in
-*Auroville Foundation v. Natasha Storey*, the Supreme Court held the
-Residents' Assembly's role subordinate to the Governing Board's statutory
-powers. A community's preferred constitution was not the whole law governing
-it.[^auroville]
+Historical experience supplies no single answer about the state's role. Eden
+Medina's account of Chile's Cybersyn describes an economic coordination
+project using an existing telex network under Allende's government. The coup
+ended the project; that political ending cannot establish how the design would
+have performed over time.[^cybersyn] Auroville presents a different relation.
+The Indian state's intervention and the Auroville Foundation Act placed its
+governance within a statutory framework. In its 2025 judgment in *Auroville
+Foundation v. Natasha Storey*, the Supreme Court held the Governing Board
+entitled to constitute its development council without reserved places for the
+Residents' Assembly. It distinguished consultation when the master plan was
+formulated from authority to implement the approved plan. A community's
+preferred constitution was not the whole law governing it.[^auroville]
 
 Switzerland's WIR, founded in 1934, supplies another case: a complementary
 credit arrangement within a national legal and monetary system. Stodder
@@ -640,13 +642,14 @@ decide and replace a government, protection against concentrated power, and
 continuity of the rights the state owes. Those criteria sometimes conflict.
 History does not select this institutional combination on my behalf.
 
-Nor does the book's democracy and wellbeing calculation. In the bundled
-country data, the correlation between electoral democracy and average life
-evaluation falls from about 0.5 to about 0.2 after adjustment for log income
-per person. Income might help explain both; democracy might affect income;
-other causes might affect all of them. Adjustment cannot decide among those
-accounts. In particular, controlling something democracy changes can remove
-part of the effect one hoped to measure.[^democracy-data]
+Nor does the book's democracy and wellbeing calculation. In the bundled data
+for 141 equally weighted countries, the correlation between electoral
+democracy and average life evaluation falls from about 0.5 to about 0.2 after
+adjustment for log income per person. Income might help explain both;
+democracy might affect income; other causes might affect all of them.
+Adjustment cannot decide among those accounts. In particular, controlling
+something democracy changes can remove part of the effect one hoped to
+measure.[^democracy-data]
 
 The group averages of closed and electoral autocracies are close together in
 that snapshot, while electoral and liberal democracies are further apart.
@@ -656,12 +659,13 @@ series' latest observation, and some years differ.
 
 The exploratory dispersion calculation is narrower still. Absolute residuals
 mix departures above and below a fitted line of country means. They measure
-neither the worst lives within countries nor a guaranteed lower bound. In
-the recorded comparison using alternative democracy indices on the same
-countries, both estimates point toward less dispersion, but only one passes
-the conventional statistical threshold. Gelman and Stern explain why that
-is no test of a difference between the estimates. It is also no warrant for
-calling the question meaningless.[^measurement]
+neither the worst lives within countries nor a guaranteed lower bound. The
+estimated association with electoral democracy is negative after income
+adjustment, with uncertainty calculated using conventional standard errors.
+A statistical threshold cannot turn that result into a protected minimum.
+Nor would one significant and one nonsignificant result, by themselves,
+establish a difference between estimates. Gelman and Stern explain that
+distinction.[^measurement]
 
 Comparable observations over time, defensible causal assumptions and measures
 of people's worst circumstances would support a stronger investigation.
@@ -957,9 +961,13 @@ supply.
 The optional method that follows explains how the formal checks work and
 where their conclusions stop.
 
-[^owen]: J. F. C. Harrison, [*Robert Owen and the Owenites in Britain and
+[^owen]: The Indiana Archives' [New Harmony history](https://www.in.gov/iara/services-for-public/search-archives-holdings/court-records/introduction-to-posey-county/new-harmony-indiana/)
+    dates the community. Frank Podmore, [*Robert Owen: A Biography*, vol. II](https://www.st-helens-spiritualist-church.co.uk/books/Frank%20Podmore/Robwert%20Owen%2C%20A%20Biography%20Vol%20II%20%281907%29.pdf)
+    (1907), pp. 406–407 and 410–411, describes the exchanges' valuation,
+    citing *The Crisis*. For the wider history, J. F. C. Harrison,
+    [*Robert Owen and the Owenites in Britain and
     America*](https://archive.org/details/robertowenowenit0000harr) (1969;
-    linked reprint 1994), the account of New Harmony and labour exchanges.
+    linked reprint 1994).
 
 [^constructive-replacement]: Germany's Basic Law,
     [Article 67](https://www.gesetze-im-internet.de/gg/art_67.html), requires
@@ -974,65 +982,76 @@ where their conclusions stop.
 
 [^lin]: Justin Yifu Lin, [*Collectivization and China's Agricultural Crisis
     in 1959–1961*](https://doi.org/10.1086/261732), *Journal of Political
-    Economy* (1990). The exit-rights explanation is Lin's hypothesis, not a
-    settled account of every cause.
+    Economy* 98(6), pp. 1228–1252 (1990), abstract. The exit-rights explanation
+    is Lin's hypothesis, not a settled account of every cause.
 
 [^kibbutz]: Ran Abramitzky, [*Lessons from the Kibbutz on the
     Equality–Incentives Trade-Off*](https://www.aeaweb.org/articles?id=10.1257/jep.25.1.185),
-    *Journal of Economic Perspectives* (2011), and *The Mystery of the Kibbutz*
-    (2018). The salary-reform share comes from Uriel Leviatan,
+    *Journal of Economic Perspectives* 25(1), pp. 185–208 (2011),
+    especially p. 186 for the 268 communities and pp. 192–200 for incentives,
+    selection and exit; [author copy](https://ranabr.people.stanford.edu/sites/g/files/sbiybj26066/files/media/file/abramitzky_jep.pdf).
+    The salary-reform share comes from Uriel Leviatan,
     [*Lessons from the Kibbutz as a Real Utopia*](https://www.sscc.wisc.edu/soc/faculty/pages/wright/ASA/Leviatan%20--%20lessons%20from%20the%20kibbutz%20as%20real%20utopia.pdf),
     p. 12: his series reports 76% in 2011. The community count and reform share
     describe their respective study periods, not a current census.
 
 [^ujamaa]: James C. Scott, [*Seeing Like a State*](https://www.jstor.org/stable/j.ctt1nq3vk)
-    (1998), chapter 7. The registry distinguishes his relocation estimate
-    from the higher, contested totals of village residents.
+    (1998), chapter 7, opening and “Bureaucratic Convenience, Bureaucratic
+    Interests.” The latter quotes Nyerere's village-resident total.
 
 [^mondragon]: MONDRAGON's [1956 institutional history](https://www.mondragon-corporation.com/en/timeline/1956/),
-    [2024 annual report](https://www.mondragon-corporation.com/people/site/assets/files/103207/annual-report-2024.pdf),
+    [2024 annual report](https://www.mondragon-corporation.com/people/site/assets/files/103207/annual-report-2024.pdf), p. 13,
     and [2021 extended report](https://www.mondragon-corporation.com/people/site/assets/files/103207/annual-report-2020-ext.pdf),
     pp. 6–7. The last document's printed title is 2021 despite its filename.
-    Its stated salary scale is not a census of every subsidiary's pay.
+    Workforce is not a count of cooperative members; the stated salary
+    scale is not a census of every subsidiary's pay.
 
 [^pay]: Economic Policy Institute, [*CEO Pay*](https://www.epi.org/publication/ceo-pay/)
-    (2026), the realised compensation estimate for 2025 and its denominator
-    definition. Different periods, populations and measures prevent a direct
-    governance-effect comparison with MONDRAGON.
+    (15 September 2026), Figure A, Table 1 and their notes: projected 2025
+    realised compensation, with a mean of firm-specific ratios. Different
+    periods, populations and measures prevent a direct governance-effect
+    comparison with MONDRAGON.
 
 [^jharkhand]: Drèze, Khalid, Khera and Somanchi,
     [*Aadhaar and Food Security in Jharkhand: Pain without Gain?*](https://www.epw.in/journal/2017/50/special-articles/aadhaar-and-food-security-jharkhand.html)
-    (2017); Muralidharan, Niehaus and Sukhtankar,
+    *Economic and Political Weekly* 52(50), pp. 50–60 (16 December 2017),
+    p. 58, “Postscript”; [coauthor-hosted copy](https://www.researchgate.net/profile/Nazar-Khalid-3/publication/322151401_Aadhaar_and_food_security_in_Jharkhand_Pain_without_gain/links/5be662a74585150b2bab8a2f/Aadhaar-and-food-security-in-Jharkhand-Pain-without-gain.pdf).
+    Muralidharan, Niehaus and Sukhtankar,
     [*Identity Verification Standards in Welfare Programs: Experimental
-    Evidence from India*](https://doi.org/10.1162/rest_a_01296) (2025),
-    with an [author manuscript](https://econweb.ucsd.edu/~kamurali/papers/Working%20Papers/ABBA%20%28Current%20WP%29.pdf).
+    Evidence from India*](https://doi.org/10.1162/rest_a_01296),
+    *Review of Economics and Statistics* 107(2), pp. 372–392 (2025),
+    abstract, also [distributed by the publisher through RePEc](https://ideas.repec.org/a/tpr/restat/v107y2025i2p372-392.html).
 
 [^santoshi]: [Contemporaneous reporting in *Scroll*](https://scroll.in/article/854225/denied-food-because-she-did-not-have-aadhaar-linked-ration-card-jharkhand-girl-dies-of-starvation)
-    (2017) records the family's account and the official response;
-    [the follow-up](https://scroll.in/article/895667/a-year-after-jharkhand-girl-died-of-starvation-aadhaar-tragedies-are-on-the-rise)
-    (2018) retains the dispute. This is reported testimony, not a medical
+    (Aarefa Johari, 16 October 2017) records the family's account and the
+    cancellation; [Jaideep Deogharia's report in *The Times of India*](https://timesofindia.indiatimes.com/city/ranchi/11-year-old-dies-activists-cry-hunger-jharkhand-government-says-malaria/articleshow/61110050.cms)
+    (17 October 2017), opening paragraphs, quotes the deputy commissioner's
+    malaria explanation. This is reported testimony, not a medical
     finding made by this book.
 
 [^cybersyn]: Eden Medina, [*Cybernetic Revolutionaries: Technology and
     Politics in Allende's Chile*](https://mitpress.mit.edu/9780262525961/cybernetic-revolutionaries/)
-    (2011).
+    (2011); her [*Designing Freedom, Regulating a Nation*](https://waste.informatik.hu-berlin.de/Lehre/ss11/SE_Kybernetik/reader/edenmedina_cinco.pdf),
+    *Journal of Latin American Studies* 38(3), pp. 571–606 (2006),
+    pp. 587, 592 and 606 for the existing telex network, its use and the ending.
 
 [^auroville]: Supreme Court of India,
     [*Auroville Foundation v. Natasha Storey*](https://api.sci.gov.in/supremecourt/2024/13723/13723_2024_9_1502_60151_Judgement_17-Mar-2025.pdf),
     Civil Appeal 13651 of 2024, judgment of 17 March 2025, especially
-    paragraphs 12–17. The judgment sets out the governing statutes and
-    distinguishes the Board's powers from the Assembly's advisory role.
+    paragraphs 12–17, pp. 23–29: consultation on the master plan and the
+    Board's authority over implementation committees are distinct.
 
 [^wir]: Bank WIR's [institutional history](https://www.wir.ch/fr/banque-wir/a-propos-de-nous/histoire/);
     James Stodder, [*Complementary Credit Networks and Macroeconomic
     Stability: Switzerland's Wirtschaftsring*](https://doi.org/10.1016/j.jebo.2009.06.002)
-    (2009).
+    *Journal of Economic Behavior & Organization* 72(1), pp. 79–95 (2009),
+    abstract, also [distributed through RePEc](https://ideas.repec.org/a/eee/jeborg/v72y2009i1p79-95.html).
 
 [^kerala]: Richard W. Franke,
     [*Local Planning: The Kerala Experiment*](https://msuweb.montclair.edu/~franker/KeralaExperiment.pdf)
-    (2008), pp. 1–4; Isaac and Franke, *Local Democracy and Development*
-    (2000). The training count concerns people trained, not total participants
-    or a verified count of unpaid volunteers alone.
+    (2008), author-copy p. 1 for the 35% development-budget share and
+    pp. 3–4 for training. The training count concerns people trained, not
+    total participants or a verified count of unpaid volunteers alone.
 
 [^democracy-data]: V-Dem's [electoral-democracy index](https://ourworldindata.org/grapher/electoral-democracy-index)
     and [Regimes of the World](https://ourworldindata.org/grapher/political-regime),
@@ -1040,16 +1059,21 @@ where their conclusions stop.
     and World Bank [income per person](https://ourworldindata.org/grapher/gdp-per-capita-worldbank),
     distributed by Our World in Data. The [bundled snapshot](../registry/data/vdem-happiness-2026-08-03.csv)
     and [reproduction instructions](../registry/data/README.md) retain the
-    inputs. On adjustment, see Cinelli, Forney and Pearl,
+    inputs. The 2025 life-evaluation label averages 2023–2025 surveys on a
+    0–10 scale; GDP per person is in purchasing-power-adjusted 2021 international
+    dollars. Three GDP observations are from 2024; the remaining year labels
+    are 2025. On adjustment, see Cinelli, Forney and Pearl,
     [*A Crash Course in Good and Bad Controls*](https://doi.org/10.1177/00491241221099552)
-    (2024; first published online 2022).
+    (2024; first published online 2022), Models 11–12 and the distinction
+    between total and direct effects.
 
 [^measurement]: Gelman and Stern,
     [*The Difference Between “Significant” and “Not Significant” Is Not
     Itself Statistically Significant*](https://sites.stat.columbia.edu/gelman/surveys.course/GelmanStern2006.pdf)
-    (2006); the American Statistical Association's
+    (2006), pp. 328–329; the American Statistical Association's
     [statement on significance and p-values](https://www.amstat.org/asa/files/pdfs/p-valuestatement.pdf)
-    (2016). The exploratory absolute-residual comparison uses conventional
-    standard errors and does not test a difference between the indices'
-    estimates. These are methodological references, not studies of this
+    (7 March 2016), p. 2, principles 3 and 5. The exploratory regression takes
+    absolute residuals from life evaluation on electoral democracy, then fits
+    them on electoral democracy and log GDP per person, using conventional
+    standard errors. These are methodological references, not studies of this
     constitution.

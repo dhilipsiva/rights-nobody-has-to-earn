@@ -9,6 +9,96 @@
 > author's standing delegated approval of 2026-09-13. Earlier dispositions,
 > including `OL-15-v1` in section 7a, remain visible as history.
 
+## Evidence and inference review — item 31, 2026-09-21
+
+The exact current Part V is
+`session-drafted, author-approved under delegated approval (2026-09-13)`.
+This review checks its empirical assertions, methodological references and
+historical comparisons, the epigraph attribution, the existing registry and
+the bundled democracy calculation. The preceding sequential read and the
+existing claim-discipline checks identify no additional empirical study or
+population statistic in the derived chapters. Formal examples in the optional
+method remain examples of the supplied rules, not observations of society.
+
+The review resolves concrete evidence problems rather than retaining their
+assertions behind a qualification:
+
+- The Drèze paper's Postscript supports mass cancellation following the
+  March 2017 order, but the previously attributed cancellation count was not
+  located. Part V and the existing registry entry withdraw that count. A
+  conditional extrapolation of transaction failures elsewhere in the paper
+  cannot replace it. The distinct beneficiary estimate from Muralidharan and
+  coauthors remains attributed to their published abstract, including their
+  conclusion about the importance of transition protocols.
+- The 2018 Santoshi follow-up does not repeat the official malaria explanation.
+  The footnote now pairs the contemporaneous family and activist reporting
+  with original reporting that quotes the deputy commissioner. The cause of
+  death stays disputed; neither report is treated as a medical finding.
+- The Auroville comparison now specifies the contested power to constitute
+  implementation committees and retains the distinction from consultation
+  when formulating the master plan. The judgment does not establish that
+  community residents lack every statutory function or that intervention is
+  generally justified.
+- The alternative democracy-index comparison lacks bundled inputs and was
+  not reproduced. It is removed from the reader argument. Its historical
+  working record and licensing restriction remain. The reproducible V-Dem
+  result and the methodological warning about comparing significance labels
+  remain separate, with no claim that another index was freshly tested.
+
+Other changes make the evidence's actual scope inspectable. Owen's exchange
+mechanism is described from specified Podmore pages rather than inferred from
+New Harmony's dissolution. Lin's account remains his hypothesis. The Tanzania
+passage separates people relocated during the campaign from the village
+residents reported in Nyerere's speech. MONDRAGON's dated, company-reported
+workforce and salary arrangements remain distinct from EPI's projected
+compensation estimate, its industry denominator and mean of firm-specific
+ratios. Cybersyn uses the existing network described in Medina's research
+article. No historical case is made evidence of successful operation of this
+constitution or of a single isolated causal effect.
+
+The source inspection was bounded and is recorded in the existing entries:
+
+- Direct passages: Project Madurai's poem 32 and fourth stanza; the university
+  biographical note's life years; Indiana Archives' New Harmony account;
+  Podmore's valuation pages; Scott's chapter 7 in a public transcription;
+  Abramitzky's JEP author copy and Leviatan's salary series; MONDRAGON's 1956
+  history and downloaded 2024 and 2021 reports; EPI's table and methods;
+  the Drèze coauthor-hosted article; contemporary reporting on Santoshi;
+  Medina's 2006 article; the original Auroville judgment and quoted statutes;
+  Bank WIR's history; Franke's author-copy pages; Germany's Article 67 and
+  ICCPR Article 4; and the cited methodological passages in Cinelli, Forney
+  and Pearl, Gelman and Stern, and the ASA release.
+- Abstract-only checks: Lin through the publisher; Muralidharan and Stodder
+  through their publisher-supplied RePEc records. Full-text access failed for
+  the latter papers; the UCSD manuscript also failed TLS verification on an
+  outside-sandbox retry. No certificate check was disabled. The retained
+  statements concern what those published abstracts report, not a newly
+  reviewed table, replicated field study or certified causal effect.
+- Background monographs by Harrison, Abramitzky, Medina, and Isaac and Franke
+  were not newly read in full. Exact supporting passages in accessible
+  articles or other histories are now named where used. The EPW site failed
+  retrieval, but its coauthor-hosted article was inspectable. A failed large
+  PDF retrieval did not prevent reading the downloaded MONDRAGON report.
+  Scott's cited text was inspected in a transcription, not a fresh collation
+  of the printed edition. The epigraph's approved English rendering remains
+  this book's translation, without invented independent endorsement.
+
+The existing snapshot command reproduces the V-Dem correlations, category
+summaries and exploratory residual regression. The merge weights countries
+equally and takes each series' latest value separately. Footnotes and the
+existing data README now specify the life-evaluation survey window, scale,
+GDP unit and differing year labels. Current distributor definitions were
+checked without replacing the snapshot or advancing its retrieval date.
+The working record states the actual reproduction scope. No new evidence
+inventory, receipt, freshness gate or data-validation claim is introduced.
+
+Four identifying phrases in the existing claim bindings follow the corrected
+prose; all 24 bindings and their source entries remain. The constitutional
+source, substantive pins, suite inventory, child fixture, chapter order,
+three exempt prose channels and majority-derived rule are unchanged.
+CLAUDE.md records the completed checks and measured timing. Reading-copy
+inspection and the fresh final assessment retain their separate items.
+
 ## Sequential developmental and line edit — item 30, 2026-09-21
 
 All 34 ordered inputs received a fresh sequential read after items 21–29:

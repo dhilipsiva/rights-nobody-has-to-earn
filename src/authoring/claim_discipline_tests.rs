@@ -59,7 +59,7 @@ const TRACED: [(&str, &str, &str); 24] = [
     (
         "the corporate pay comparison",
         "epi-2026-ceo-pay-ratio",
-        "300-to-1",
+        "325-to-1",
     ),
     ("Kerala's People's Plan", "kerala-peoples-plan", "1996"),
     (
@@ -67,13 +67,13 @@ const TRACED: [(&str, &str, &str); 24] = [
         "kerala-peoples-plan",
         "100,000 people",
     ),
-    ("Cybersyn", "medina-2011-cybersyn", "surplus telex machines"),
+    ("Cybersyn", "medina-2011-cybersyn", "existing telex network"),
     ("Auroville's governance", "auroville-governance", "Auroville"),
     ("the Swiss WIR", "stodder-2009-wir", "1934"),
     (
         "Jharkhand card cancellations",
         "dreze-2017-cancelled-cards",
-        "a million cards",
+        "mass cancellation of ration cards",
     ),
     (
         "the Jharkhand experimental study",
@@ -96,9 +96,9 @@ const TRACED: [(&str, &str, &str); 24] = [
         "closed and electoral autocracies",
     ),
     (
-        "the exploratory dispersion comparison",
+        "the exploratory dispersion calculation",
         "vdem-2026-floor-claim-instrument-fragile",
-        "only one passes the conventional statistical threshold",
+        "negative after income",
     ),
     (
         "the causal-control qualification",

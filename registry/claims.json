@@ -24,11 +24,11 @@
         2000000
       ],
       "units": "persons",
-      "source": "Muralidharan, Niehaus & Sukhtankar, \"Identity Verification Standards in Welfare Programs: Experimental Evidence from India\", Review of Economics and Statistics 107(2): 372-392 (2025), doi:10.1162/rest_a_01296, https://doi.org/10.1162/rest_a_01296",
-      "retrieved": "2026-08-02",
-      "method": "quoted from the published abstract",
+      "source": "Muralidharan, Niehaus & Sukhtankar, \"Identity Verification Standards in Welfare Programs: Experimental Evidence from India\", Review of Economics and Statistics 107(2): 372-392 (2025), doi:10.1162/rest_a_01296, https://doi.org/10.1162/rest_a_01296; published abstract distributed by MIT Press through RePEc, https://ideas.repec.org/a/tpr/restat/v107y2025i2p372-392.html",
+      "retrieved": "2026-09-21",
+      "method": "published abstract checked through the publisher-supplied RePEc record",
       "fetch": null,
-      "notes": "Supersedes NBER WP 26744; the WP-era '~2 million' and the spliced 10%/10.6% quotation are corrected in final-research.md (commit 1bcacc7). DOI resolver added 2026-09-19."
+      "notes": "The published abstract gives 1.5–2 million legitimate beneficiaries losing access at some point and attributes much of the adverse effect to transition protocols. The final full article was unavailable; the UCSD author manuscript failed TLS verification, including outside the sandbox, and NBER access returned 403. No fresh inspection of the final study’s tables or replication is claimed. The abstract’s range is retained as an attributed estimate, not a ration-card count."
     },
     {
       "id": "muralidharan-2025-reconciliation-nonreceipt",
@@ -54,14 +54,14 @@
     },
     {
       "id": "dreze-2017-cancelled-cards",
-      "claim": "11 lakh (1.1 million) ration cards were cancelled in Jharkhand for not being linked to Aadhaar.",
-      "value": 1100000,
-      "units": "ration cards",
-      "source": "Drèze, Khalid, Khera & Somanchi, \"Aadhaar and Food Security in Jharkhand: Pain without Gain?\", Economic and Political Weekly 52(50): 50-60 (16 December 2017), https://www.epw.in/journal/2017/50/special-articles/aadhaar-and-food-security-jharkhand.html",
-      "retrieved": "2026-09-19",
-      "method": "quoted",
+      "claim": "Drèze and coauthors report mass cancellation of Jharkhand ration cards not linked to Aadhaar after the chief secretary’s order of 27 March 2017, including exclusion of eligible people.",
+      "value": null,
+      "units": null,
+      "source": "Drèze, Khalid, Khera & Somanchi, \"Aadhaar and Food Security in Jharkhand: Pain without Gain?\", Economic and Political Weekly 52(50): 50-60 (16 December 2017), https://www.epw.in/journal/2017/50/special-articles/aadhaar-and-food-security-jharkhand.html; p. 58, Postscript; coauthor-hosted copy https://www.researchgate.net/profile/Nazar-Khalid-3/publication/322151401_Aadhaar_and_food_security_in_Jharkhand_Pain_without_gain/links/5be662a74585150b2bab8a2f/Aadhaar-and-food-security-in-Jharkhand-Pain-without-gain.pdf",
+      "retrieved": "2026-09-21",
+      "method": "reference",
       "fetch": null,
-      "notes": "Statewide administrative figure; distinct population from the study-district sample behind muralidharan-2025-genuine-cards. Locator added 2026-09-19."
+      "notes": "The EPW site returned 403; the coauthor-hosted article was inspected through the browser. Its Postscript supports mass cancellation but the previous 1.1-million-card figure was not located and is withdrawn from this entry and Part V. The 11.2-lakh figure on p. 52 is a conditional extrapolation of transaction failures, not the cancellation count. The study’s household sample is not a statewide card census."
     },
     {
       "id": "jacob-2022-psh-benefit-cost",
@@ -362,12 +362,12 @@
       "claim": "Stodder reports countercyclical patterns in Switzerland’s WIR complementary-credit activity and examines their relationship to macroeconomic stability.",
       "value": null,
       "units": null,
-      "source": "Stodder, \"Complementary credit networks and macroeconomic stability: Switzerland's Wirtschaftsring\", Journal of Economic Behavior & Organization 72(1): 79-95 (2009), doi:10.1016/j.jebo.2009.06.002, https://doi.org/10.1016/j.jebo.2009.06.002; Bank WIR CHW-System (2026); Bank WIR institutional history, https://www.wir.ch/fr/banque-wir/a-propos-de-nous/histoire/",
-      "retrieved": "2026-09-19",
+      "source": "Stodder, \"Complementary credit networks and macroeconomic stability: Switzerland's Wirtschaftsring\", Journal of Economic Behavior & Organization 72(1): 79-95 (2009), doi:10.1016/j.jebo.2009.06.002, https://doi.org/10.1016/j.jebo.2009.06.002; Bank WIR CHW-System (2026); Bank WIR institutional history, https://www.wir.ch/fr/banque-wir/a-propos-de-nous/histoire/; published abstract distributed through RePEc, https://ideas.repec.org/a/eee/jeborg/v72y2009i1p79-95.html",
+      "retrieved": "2026-09-21",
       "method": "reference",
       "fetch": null,
       "book": "book-1",
-      "notes": "One of the nine historical cases (Part V). Locator added 2026-09-19. The founding year 1934 is uncontested; Part V's span is arithmetic from it. Its persistence does not establish every motive for state tolerance or guarantee tolerance of another complementary currency."
+      "notes": "Checked Bank WIR’s 1934/1936 history entries and Stodder’s published abstract via RePEc. Publisher full-text access failed; a fresh inspection of the paper’s estimates or replication is not claimed. The bank supplies institutional chronology; the research abstract reports the countercyclical association. Neither identifies the state’s motives for tolerance."
     },
     {
       "id": "banerjee-2023-kenya-ubi",
@@ -587,15 +587,15 @@
     },
     {
       "id": "harrison-1969-owen",
-      "claim": "Owen’s New Harmony community began in 1825 and dissolved in 1827; his labour exchanges attempted time-based valuation while still requiring judgments about unlike products and tasks.",
+      "claim": "Owen’s New Harmony community ran from 1825 to 1827. His later labour exchanges used time notes whose valuations incorporated market prices for labour and materials.",
       "value": null,
       "units": null,
-      "source": "Harrison, Robert Owen and the Owenites in Britain and America, Routledge & Kegan Paul (1969), https://archive.org/details/robertowenowenit0000harr",
-      "retrieved": "2026-09-19",
+      "source": "Harrison, Robert Owen and the Owenites in Britain and America, Routledge & Kegan Paul (1969), https://archive.org/details/robertowenowenit0000harr; Indiana Archives and Records Administration, New Harmony Indiana, https://www.in.gov/iara/services-for-public/search-archives-holdings/court-records/introduction-to-posey-county/new-harmony-indiana/; Frank Podmore, Robert Owen: A Biography, vol. II (1907), pp. 406–407, 410–411, https://www.st-helens-spiritualist-church.co.uk/books/Frank%20Podmore/Robwert%20Owen%2C%20A%20Biography%20Vol%20II%20%281907%29.pdf",
+      "retrieved": "2026-09-21",
       "method": "reference",
       "fetch": null,
       "book": "book-1",
-      "notes": "One of the nine historical cases (Part V). The monograph remains the source of record and was not re-read in full. The community dates were checked against published accounts. The retained claim omits the settler and constitution counts and does not attribute the community’s failure to valuation alone."
+      "notes": "Checked the Indiana Archives account and the specified Podmore pages, including his references to The Crisis. Harrison remains background, not a monograph newly read in full. Neither chronology nor the exchange mechanism identifies the cause of New Harmony’s dissolution. The stable ID is retained."
     },
     {
       "id": "lin-1990-collectivization",
@@ -603,11 +603,11 @@
       "value": null,
       "units": null,
       "source": "Lin, \"Collectivization and China's Agricultural Crisis in 1959-1961\", Journal of Political Economy 98(6): 1228-1252 (1990), doi:10.1086/261732, https://www.journals.uchicago.edu/doi/abs/10.1086/261732; Lin, AER 82(1): 34-51 (1992); Li, Journal of Agrarian Change 18(1): 67-86 (2018)",
-      "retrieved": "2026-09-19",
+      "retrieved": "2026-09-21",
       "method": "reference",
       "fetch": null,
       "book": "book-1",
-      "notes": "Nine cases. The 1958 removal of the exit right re-checked 2026-09-19 against the published abstract and summaries of the JPE article. Lin's exit-rights thesis is contested: the 1993 Journal of Comparative Economics symposium collects the criticisms, and Li (2018) is the egalitarianism reading. Part V argues the exit right, which is the part the design turns on, not the famine's full causation. Interpretation clarified 2026-09-19: Part V attributes the causal explanation to Lin and does not present it as an isolated effect or a settled account of the entire crisis."
+      "notes": "Checked the publisher’s 1990 abstract, not the paywalled full paper or its empirical calculations. Part V attributes the exit-rights hypothesis to Lin and does not certify it as settled history or the entire crisis’s cause. The other works in the source field remain background, not newly inspected evidence."
     },
     {
       "id": "abramitzky-kibbutz",
@@ -617,54 +617,51 @@
         "differential_salary_share_2011": 0.76
       },
       "units": "share of kibbutzim",
-      "source": "For community count and incentive analysis: Abramitzky, \"Lessons from the Kibbutz on the Equality-Incentives Trade-Off\", Journal of Economic Perspectives 25(1): 185-208 (2011), doi:10.1257/jep.25.1.185, https://www.aeaweb.org/articles?id=10.1257/jep.25.1.185; Abramitzky, The Mystery of the Kibbutz, Princeton UP (2018). For the differential-salary series: Uriel Leviatan, Lessons from the Kibbutz as a Real Utopia, p. 12, https://www.sscc.wisc.edu/soc/faculty/pages/wright/ASA/Leviatan%20--%20lessons%20from%20the%20kibbutz%20as%20real%20utopia.pdf",
-      "retrieved": "2026-09-20",
+      "source": "For community count and incentive analysis: Abramitzky, \"Lessons from the Kibbutz on the Equality-Incentives Trade-Off\", Journal of Economic Perspectives 25(1): 185-208 (2011), doi:10.1257/jep.25.1.185, https://www.aeaweb.org/articles?id=10.1257/jep.25.1.185; Abramitzky, The Mystery of the Kibbutz, Princeton UP (2018). For the differential-salary series: Uriel Leviatan, Lessons from the Kibbutz as a Real Utopia, p. 12, https://www.sscc.wisc.edu/soc/faculty/pages/wright/ASA/Leviatan%20--%20lessons%20from%20the%20kibbutz%20as%20real%20utopia.pdf; JEP author copy, community count p. 186, https://ranabr.people.stanford.edu/sites/g/files/sbiybj26066/files/media/file/abramitzky_jep.pdf",
+      "retrieved": "2026-09-21",
       "method": "reference",
       "fetch": null,
       "book": "book-1",
-      "notes": "Nine cases. Fresh source check on 2026-09-20 locates the 1999 share (21%) and 2011 share (76%) in Leviatan's paper, p. 12, rather than attributing that series to the JEP article. Leviatan describes transformation to differential salaries; the registry does not independently reconstruct his census. Abramitzky's 2011 article reports 268 communities and supplies the incentive analysis. The counts concern their stated study periods, not a current census. Neither figure isolates leadership rotation as the cause, and the chapter does not infer that a universal minimum requires equal pay. The stable registry id is retained for its existing bindings."
+      "notes": "Checked the JEP article’s 268-community count and its discussion of incentives, selection and exit, and Leviatan p. 12 (21% in 1999; 76% in 2011). The 2018 monograph was not newly read. These are historical populations, not a current census; the review neither reconstructs the counts nor isolates leadership rotation as their cause."
     },
     {
       "id": "scott-1998-ujamaa",
-      "claim": "Nyerere's villagization: voluntary from the 1967 Arusha Declaration, compulsory from 1973, with at least five million people relocated on Scott's own estimate; totals for how many ended up in villages are contested and run far higher.",
+      "claim": "Scott reports at least five million people relocated during the 1973–1976 Tanzanian campaign. He quotes Nyerere’s higher claim for village residents; it is a different population, not an agreed count of forced moves.",
       "value": {
         "scott_relocated_minimum": 5000000,
-        "reported_totals_range": [
-          9000000,
-          13000000
-        ]
+        "nyerere_reported_village_residents": 13065000
       },
-      "units": "persons",
-      "source": "Scott, Seeing Like a State, Yale UP (1998), ch. 7, https://www.jstor.org/stable/j.ctt1nq3vk",
-      "retrieved": "2026-09-19",
+      "units": "people relocated; reported village residents (distinct populations)",
+      "source": "Scott, Seeing Like a State, Yale UP (1998), ch. 7, https://www.jstor.org/stable/j.ctt1nq3vk; chapter opening and “Bureaucratic Convenience, Bureaucratic Interests”; inspected transcription https://www.thetedkarchive.com/library/james-c-scott-seeing-like-a-state",
+      "retrieved": "2026-09-21",
       "method": "reference",
       "fetch": null,
       "book": "book-1",
-      "notes": "Scott’s relocation estimate and the higher totals for village residents measure different populations. The latter totals are disputed. Part V does not combine them into a count of coerced moves, infer a cause from their disagreement, or claim Scott proved a named total was padded. The case concerns coercive relocation justified as collective improvement; it does not establish that every public service is coercive."
+      "notes": "Checked the opening, compulsory-settlement discussion, quoted speech and their notes in the transcription. The opening’s note questions an official nine-million relocation claim; the later speech quotes 13,065,000 village residents. Neither number is an independent census. The reader keeps the populations distinct and draws no causal conclusion from their disagreement."
     },
     {
       "id": "medina-2011-cybersyn",
-      "claim": "Chile's Cybersyn: real-time economic coordination cut short; what the technology could and could not have carried.",
+      "claim": "Medina describes Cybersyn’s use of an existing telex network under Allende and its termination following the September 1973 coup.",
       "value": null,
       "units": null,
-      "source": "Medina, Cybernetic Revolutionaries: Technology and Politics in Allende's Chile, MIT Press (2011), ISBN 9780262525961, https://mitpress.mit.edu/9780262525961/cybernetic-revolutionaries/",
-      "retrieved": "2026-09-19",
+      "source": "Medina, Cybernetic Revolutionaries: Technology and Politics in Allende's Chile, MIT Press (2011), ISBN 9780262525961, https://mitpress.mit.edu/9780262525961/cybernetic-revolutionaries/; Medina, Designing Freedom, Regulating a Nation, Journal of Latin American Studies 38(3): 571–606 (2006), pp. 587, 592, 605–606, https://waste.informatik.hu-berlin.de/Lehre/ss11/SE_Kybernetik/reader/edenmedina_cinco.pdf",
+      "retrieved": "2026-09-21",
       "method": "reference",
       "fetch": null,
       "book": "book-1",
-      "notes": "Nine cases. The monograph is the source of record. Part V omits the disputed telex-machine count. The coup’s termination of the project does not establish how it would have performed over time or prove technical success or failure."
+      "notes": "Checked the specified pages of Medina’s research article, including her distinction between theoretical design and operation. The 2011 book remains background and was not newly read in full. Part V states existing telex network, omits a machine count and infers no long-term technical success or failure from the coup."
     },
     {
       "id": "auroville-governance",
-      "claim": "Auroville: a chartered intentional community whose governance passed to a state foundation — an emergency takeover in 1980, the Auroville Foundation Act in 1988, and in 2025 the Supreme Court holding that the Residents' Assembly may only advise the government-appointed Governing Board.",
+      "claim": "In Auroville Foundation v. Natasha Storey (2025), the Supreme Court upheld the Board’s authority to constitute its development council without reserved Assembly places, distinguishing consultation on formulating the master plan from its implementation.",
       "value": null,
       "units": null,
-      "source": "The Auroville (Emergency Provisions) Act, 1980; The Auroville Foundation Act, 1988; Auroville Foundation v. Natasha Storey, Civil Appeal 13651 of 2024, Supreme Court of India, 17 March 2025, paragraphs 12–17, https://api.sci.gov.in/supremecourt/2024/13723/13723_2024_9_1502_60151_Judgement_17-Mar-2025.pdf",
-      "retrieved": "2026-09-19",
+      "source": "The Auroville (Emergency Provisions) Act, 1980; The Auroville Foundation Act, 1988; Auroville Foundation v. Natasha Storey, Civil Appeal 13651 of 2024, Supreme Court of India, 17 March 2025, paragraphs 3–4 and 12–17, pp. 23–29 for the operative distinction, https://api.sci.gov.in/supremecourt/2024/13723/13723_2024_9_1502_60151_Judgement_17-Mar-2025.pdf",
+      "retrieved": "2026-09-21",
       "method": "reference",
       "fetch": null,
       "book": "book-1",
-      "notes": "The original judgment supports the subordinate advisory role described in Part V. It is distinct from the same day’s environmental-jurisdiction judgment in Auroville Foundation v. Navroz Kersasp Mody. The original PDF and relevant paragraphs were checked on 2026-09-19."
+      "notes": "Read the original judgment, including the quoted statutes and paragraphs 12–17. The Assembly’s statutory consultation role in formulating the master plan is not erased. The case concerns Board authority over implementation committees, not a finding that all state intervention is justified. It is distinct from the same day’s environmental-jurisdiction case."
     },
     {
       "id": "mondragon-2025",
@@ -674,12 +671,12 @@
         "industrial_beginning_year": 1956
       },
       "units": "persons; calendar year",
-      "source": "MONDRAGON, Annual Report 2024, Business Areas, https://www.mondragon-corporation.com/people/site/assets/files/103207/annual-report-2024.pdf; institutional history, https://www.mondragon-corporation.com/en/timeline/1956/",
-      "retrieved": "2026-09-19",
+      "source": "MONDRAGON, Annual Report 2024, Business Areas, p. 13, https://www.mondragon-corporation.com/people/site/assets/files/103207/annual-report-2024.pdf; institutional history, https://www.mondragon-corporation.com/en/timeline/1956/",
+      "retrieved": "2026-09-21",
       "method": "reference",
       "fetch": null,
       "book": "book-1",
-      "notes": "The headcount describes the 2024 reporting period, not a live census. It counts workers, not only cooperative members. The report text was available in the primary-source search extract; the full PDF exceeded the browser tool’s size limit. The former undated widest-pay-ratio claim is replaced in Part V by the explicitly dated company-reported scale in mondragon-2021-pay-range."
+      "notes": "Downloaded and read the 2024 report’s p. 13 and the 1956 timeline entry. The 70,085 figure is average workforce, not a live census or a member-only count. The history dates the first production plant to 1956 and notes bylaws approved in 1959. Both are institutional accounts, not independent evidence of governance effects."
     },
     {
       "id": "kerala-peoples-plan",
@@ -689,12 +686,12 @@
         "people_trained_lower_bound": 100000
       },
       "units": "share of the development budget; people trained (strict lower bound)",
-      "source": "Richard W. Franke, Local Planning: The Kerala Experiment, in Real Utopia (2008), pp. 1–4 of author copy, https://msuweb.montclair.edu/~franker/KeralaExperiment.pdf; Isaac and Franke, Local Democracy and Development (2000).",
-      "retrieved": "2026-09-19",
+      "source": "Richard W. Franke, Local Planning: The Kerala Experiment, in Real Utopia (2008), author-copy p. 1 (budget) and pp. 3–4 (training), https://msuweb.montclair.edu/~franker/KeralaExperiment.pdf; Isaac and Franke, Local Democracy and Development (2000).",
+      "retrieved": "2026-09-21",
       "method": "reference",
       "fetch": null,
       "book": "book-1",
-      "notes": "The author copy states more than 100,000 people, not a separately measured total of unpaid volunteers. Part V preserves that population and attributes the account. The programme combines money, organisation and training; these figures do not isolate the effect of any component."
+      "notes": "Read the specified pages of Franke’s 2008 author copy. The denominator is the state development budget; the training total counts people trained, not all participants or unpaid volunteers alone. These are the author’s programme figures, not an independent reconstruction. The 2000 book was not newly read and is omitted from the reader footnote. No component’s causal effect is isolated."
     },
     {
       "id": "fssai-licensing",
@@ -809,12 +806,12 @@
       "claim": "Bharati's Varam Kettal, stanza 4, supplies Book 1's single unnumbered epigraph; stanzas 4–5 are also preserved in the legacy manuscript.",
       "value": null,
       "units": null,
-      "source": "Subramania Bharati, Varam Kettal [வரங் கேட்டல்], headed Yoga Sakthi [யோக சக்தி] in Thothirap Padalgal; Project Madurai, https://www.projectmadurai.org/pm_etexts/utf8/pmuni0012_02.html",
-      "retrieved": "2026-09-19",
+      "source": "Subramania Bharati, Varam Kettal [வரங் கேட்டல்], headed Yoga Sakthi [யோக சக்தி] as poem 32 in Thothirap Padalgal; Project Madurai, https://www.projectmadurai.org/pm_etexts/utf8/pmuni0012_02.html; life years: Bharathiar University, Mahakavi Bharathiar, https://b-u.ac.in/164/MahakaviBharathi",
+      "retrieved": "2026-09-21",
       "method": "reference",
       "fetch": null,
       "book": "book-1",
-      "notes": "Fourth stanza and surrounding address to Shakti checked against the linked Tamil transcription on 2026-09-19. Reader attribution uses Varam Kettal; the stable registry id retains the Yoga Siddhi title used by the legacy manuscript. The exact plainer English rendering is session-drafted, author-approved under delegated approval (2026-09-13), recorded in narrative-register-decision.md, revision item 13. Tamil wording is retained; the poem does not determine the chapter structure."
+      "notes": "Checked poem 32, subtitle Varam Kettal, fourth stanza and surrounding address to Shakti against Project Madurai’s Tamil transcription. Unicode composition and caesura placement differ without changing the words. The book’s own English rendering retains its delegated approval recorded under item 13. The stable ID preserves the legacy title; no independent translation endorsement is claimed. The biographical note confirms the printed life years 1882–1921."
     },
     {
       "id": "vdem-2026-democracy-happiness-partial",
@@ -832,7 +829,7 @@
       "method": "fetched-by-script",
       "fetch": "vdem_happiness.py --from-snapshot registry/data/vdem-happiness-2026-08-03.csv",
       "book": "book-1",
-      "notes": "Snapshot reproduced 2026-09-19. Countries are equally weighted; three GDP observations are from 2024 while the other year labels are 2025. Adjustment can remove confounding or part of a causal pathway; this analysis does not identify which. It establishes neither material provision as the cause of most wellbeing differences nor an ordering of political and material rights. See book-1/source/vdem-rederivation.md."
+      "notes": "Snapshot reproduced 2026-09-21 without refetching or advancing its retrieval date. Countries are equally weighted; three GDP observations are from 2024 while the other year labels are 2025. Adjustment can remove confounding or part of a causal pathway; this analysis does not identify which. It establishes neither material provision as the cause of most wellbeing differences nor an ordering of political and material rights. See book-1/source/vdem-rederivation.md. OWID’s source definitions were checked: the 2025 ladder label averages 2023–2025 surveys (0–10); GDP is PPP per capita in constant 2021 international dollars."
     },
     {
       "id": "vdem-2026-regime-ladder-steps",
@@ -868,11 +865,11 @@
       "method": "fetched-by-script",
       "fetch": "vdem_happiness.py --from-snapshot registry/data/vdem-happiness-2026-08-03.csv",
       "book": "book-1",
-      "notes": "Snapshot reproduced 2026-09-19. Category means are unadjusted for income and other country differences. Steps use unrounded means. The small lowest-category difference is not evidence that partial democratisation has no benefit. A cross-section does not supply a transition counterfactual."
+      "notes": "Snapshot reproduced 2026-09-21 without refetching or advancing its retrieval date. Category means are unadjusted for income and other country differences. Steps use unrounded means. The small lowest-category difference is not evidence that partial democratisation has no benefit. A cross-section does not supply a transition counterfactual."
     },
     {
       "id": "vdem-2026-floor-claim-instrument-fragile",
-      "claim": "The exploratory absolute-residual regression on the bundled V-Dem snapshot has a negative democracy coefficient after income adjustment. Its uncertainty is sensitive to measurement choices; it does not measure a guaranteed wellbeing floor or the lower tail of individual lives.",
+      "claim": "The exploratory absolute-residual regression on the bundled V-Dem snapshot has a negative democracy coefficient after income adjustment, using conventional standard errors. It measures neither a guaranteed wellbeing floor nor the lower tail of individual lives.",
       "value": {
         "b_polyarchy_alone": -0.655,
         "p_alone": 0.001,
@@ -889,7 +886,7 @@
       "method": "fetched-by-script",
       "fetch": "vdem_happiness.py --from-snapshot registry/data/vdem-happiness-2026-08-03.csv",
       "book": "book-1",
-      "notes": "Snapshot reproduced 2026-09-19. Absolute residuals include both tails of a fitted line through country means; standard errors are conventional, not heteroskedasticity-robust. The archived same-sample EIU comparison also has a negative coefficient but does not pass the conventional significance threshold. That contrast does not test a difference between coefficients, prove the phenomenon false, or identify a causal effect. No EIU-derived values are reproduced in this CC0 registry. Working-record interpretations are superseded by its 2026-09-19 correction."
+      "notes": "Snapshot reproduced 2026-09-21 without refetching or advancing its retrieval date. Absolute residuals from ladder~polyarchy are fitted on polyarchy and log GDP; they include both tails of country means. Standard errors are conventional, not heteroskedasticity-robust. The EIU comparison in the working record was not reproduced and its inputs are not bundled; Part V no longer uses it as empirical support. The historical record and licensing restriction remain. A significance-label contrast would not itself test a difference between coefficients."
     },
     {
       "id": "demo-happy-prior-analysis",
@@ -908,24 +905,24 @@
       "claim": "Santoshi Kumari, eleven, died on 28 September 2017 in Simdega district, Jharkhand, months after her family's ration card was cancelled for want of an Aadhaar link; her family said she died asking for rice, and the district administration said the cause was malaria rather than starvation.",
       "value": null,
       "units": null,
-      "source": "Scroll.in, \"Jharkhand death: Girl dies of hunger because her family did not have an Aadhaar-linked ration card\" (October 2017), https://scroll.in/article/854225/denied-food-because-she-did-not-have-aadhaar-linked-ration-card-jharkhand-girl-dies-of-starvation; Scroll.in, \"Remembering Santoshi Kumari: a year after\" (2018), https://scroll.in/article/895667/a-year-after-jharkhand-girl-died-of-starvation-aadhaar-tragedies-are-on-the-rise",
-      "retrieved": "2026-09-19",
-      "method": "quoted from contemporaneous reporting",
+      "source": "Aarefa Johari, Scroll.in, 16 October 2017, opening account and “Died asking for rice”, https://scroll.in/article/854225/denied-food-because-she-did-not-have-aadhaar-linked-ration-card-jharkhand-girl-dies-of-starvation; Jaideep Deogharia, The Times of India, 17 October 2017, opening paragraphs quoting deputy commissioner Manjunath Bhajantri, https://timesofindia.indiatimes.com/city/ranchi/11-year-old-dies-activists-cry-hunger-jharkhand-government-says-malaria/articleshow/61110050.cms",
+      "retrieved": "2026-09-21",
+      "method": "comparison of contemporaneous original reporting",
       "fetch": null,
-      "notes": "The cancellation is not in dispute: the block development officer confirmed the family's card was deleted for want of an Aadhaar link, and the family was eligible under the National Food Security Act. The CAUSE OF DEATH IS DISPUTED — activists and the family said starvation, the district administration said malaria — and any use of this entry must carry that dispute. Part V argues the cancellation and the family's account, attributed, and does not assert the cause."
+      "notes": "Checked the family and activist account, reported confirmation of cancellation, and the deputy commissioner’s contrary malaria explanation. Neither account is adjudicated here. Scroll’s 28 September 2018 follow-up does not repeat the malaria dispute and no longer supplies that citation. These are reports of testimony and official statements, not medical records or an independent cause-of-death finding."
     },
     {
       "id": "epi-2026-ceo-pay-ratio",
-      "claim": "EPI estimates that realized CEO compensation at the largest 350 US firms was about 325 times typical-worker compensation in 2025.",
+      "claim": "EPI’s projected 2025 estimate puts realized CEO compensation at the largest 350 US firms by sales at about 325 times typical-worker compensation.",
       "value": {
         "realized_ratio_2025": 324.7
       },
-      "units": "ratio of CEO compensation to average compensation of production and nonsupervisory workers in the firms’ industries",
-      "source": "Bivens, Gould and Kandra, CEO Pay, Economic Policy Institute (15 September 2026), Figure A and its methods notes, https://www.epi.org/publication/ceo-pay/",
-      "retrieved": "2026-09-19",
+      "units": "mean of firm-specific CEO-to-industry-worker compensation ratios",
+      "source": "Bivens, Gould and Kandra, CEO Pay, Economic Policy Institute (15 September 2026), Figure A, Table 1 and their methods notes, https://www.epi.org/publication/ceo-pay/",
+      "retrieved": "2026-09-21",
       "method": "quoted",
       "fetch": null,
-      "notes": "Rechecked against the 2026 table and definition. Typical worker means an industry average for production and nonsupervisory workers, not a median employee at each firm or its lowest-paid worker. The 2025 figure is an estimate. Part V gives its rough scale and does not calculate a governance effect from unlike MONDRAGON and EPI ratios. Earlier mixed-vintage values and the median gloss are superseded."
+      "notes": "Checked Figure A, Table 1 and notes. The 324.7 ratio is projected from partial reporting. Worker compensation is average wages and benefits for full-time, full-year production and nonsupervisory workers in each firm’s industry. It is neither the firm’s median nor its lowest salary. Realized CEO compensation includes exercised options and vested awards. Unlike MONDRAGON’s salary scale, this cannot identify a governance effect."
     },
     {
       "id": "cinelli-forney-pearl-controls",
@@ -933,11 +930,11 @@
       "value": null,
       "units": null,
       "source": "Cinelli, Carlos, Andrew Forney and Judea Pearl. A Crash Course in Good and Bad Controls. Sociological Methods & Research 53(3), 1071–1104 (2024; online 2022). https://doi.org/10.1177/00491241221099552; author-hosted reprint https://ftp.cs.ucla.edu/pub/stat_ser/r493-reprint.pdf",
-      "retrieved": "2026-09-19",
+      "retrieved": "2026-09-21",
       "method": "reference",
       "fetch": null,
       "book": "book-1",
-      "notes": "Methodological reference for Part V; no empirical estimate about this constitution or causal estimate of democracy is attributed to this source."
+      "notes": "Checked the publisher’s full text, Models 11–12 and total versus direct effects. This is methodological guidance, not an empirical study of the proposed constitution."
     },
     {
       "id": "gelman-stern-2006-significance",
@@ -945,11 +942,11 @@
       "value": null,
       "units": null,
       "source": "Gelman, Andrew and Hal Stern. The Difference Between Significant and Not Significant Is Not Itself Statistically Significant. The American Statistician 60(4), 328–331 (2006). https://doi.org/10.1198/000313006X152649; author-hosted copy https://sites.stat.columbia.edu/gelman/surveys.course/GelmanStern2006.pdf",
-      "retrieved": "2026-09-19",
+      "retrieved": "2026-09-21",
       "method": "reference",
       "fetch": null,
       "book": "book-1",
-      "notes": "Methodological reference for Part V; no empirical estimate about this constitution or causal estimate of democracy is attributed to this source."
+      "notes": "Checked the author-hosted article, pp. 328–329. This is methodological guidance, not an empirical study of the proposed constitution."
     },
     {
       "id": "asa-2016-p-values",
@@ -957,11 +954,11 @@
       "value": null,
       "units": null,
       "source": "American Statistical Association, Statement on Statistical Significance and P-Values (2016). https://www.amstat.org/asa/files/pdfs/p-valuestatement.pdf; full statement https://doi.org/10.1080/00031305.2016.1154108",
-      "retrieved": "2026-09-19",
+      "retrieved": "2026-09-21",
       "method": "reference",
       "fetch": null,
       "book": "book-1",
-      "notes": "Methodological reference for Part V; no empirical estimate about this constitution or causal estimate of democracy is attributed to this source."
+      "notes": "Checked the ASA release dated 7 March 2016, p. 2, principles 3 and 5. This is methodological guidance, not an empirical study of the proposed constitution."
     },
     {
       "id": "mondragon-2021-pay-range",
@@ -969,11 +966,11 @@
       "value": 6,
       "units": "reported ratio of maximum to minimum salary",
       "source": "MONDRAGON, 2021 Annual Report, extended edition, pp. 6–7, https://www.mondragon-corporation.com/people/site/assets/files/103207/annual-report-2020-ext.pdf",
-      "retrieved": "2026-09-19",
+      "retrieved": "2026-09-21",
       "method": "quoted from the company report",
       "fetch": null,
       "book": "book-1",
-      "notes": "The printed document is dated 2021 despite the 2020 filename. This is its stated scale, not a fresh census of every cooperative or subsidiary. It cannot be treated as the same measure, population or period as EPI’s CEO-to-industry-worker ratio."
+      "notes": "Downloaded and read the cover and pp. 6–7: printed title 2021 despite the 2020 filename. The scale is stated on p. 6; p. 7 describes inter-cooperation. It is not a subsidiary census and is not the same measure, population or period as EPI’s ratio."
     },
     {
       "id": "german-basic-law-constructive-replacement",

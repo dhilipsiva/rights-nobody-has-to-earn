@@ -1,5 +1,25 @@
 # The V-Dem re-derivation — working record (2026-08-03)
 
+## Reproduction and reader scope — 2026-09-21
+
+Revision item 31 reran the command below against the unchanged bundled CSV.
+All reported V-Dem coefficients, category summaries and conventional
+uncertainty measures reproduced. The source-data retrieval date remains
+2026-08-03; this is a reproduction, not a new fetch. The current OWID
+definitions were also inspected: the ladder label 2025 averages 2023–2025
+surveys on a 0–10 scale, while GDP is per capita in constant 2021
+international dollars at purchasing-power parity.
+
+The EIU comparison remains historical working material. Its inputs are not
+in the distributed bundle and it was not reproduced in this review. Part V
+therefore no longer uses that comparison as empirical support. It retains
+the reproducible V-Dem description and Gelman and Stern's methodological
+point without claiming that two indices were freshly compared. No licensed
+EIU values are added to the CC0 registry. This supersedes the reader use of
+the archived comparison described in the next section, not its retained
+history. The exact current Part V is
+`session-drafted, author-approved under delegated approval (2026-09-13)`.
+
 ## Interpretation corrected — 2026-09-19
 
 The numerical derivation below is retained as a working record. Its causal

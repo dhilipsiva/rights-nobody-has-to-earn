@@ -127,6 +127,74 @@ reinstate the retired tooling or workflow.
 Grouped by kind. Dates in each heading are the ratification dates; a ruling
 that was later implemented or narrowed carries that supersession inline.
 
+### Item 31 — evidence, attribution and inference, 2026-09-21
+
+The source review corrects Part V and 21 existing registry entries under the
+standing delegated approval. The exact canonical Part V is session-drafted
+and author-approved under delegated approval (2026-09-13), recorded in the
+existing narrative-register decision. The epigraph's Tamil wording and approved
+English rendering remain unchanged; its poem, stanza and life-year attribution
+were checked. The other ordered inputs introduce no additional empirical
+study or population statistic requiring a source correction.
+
+The Jharkhand cancellation count is withdrawn because it was not located in
+the cited paper. The paper's mass-cancellation finding remains, with the
+Postscript's precise locator. Its conditional transaction-failure extrapolation
+cannot substitute for a card-cancellation count. The separate beneficiary
+estimate remains attributed to the published research abstract, with its
+qualification about transition management. Santoshi Kumari's death stays
+disputed: contemporary family and activist reporting is now paired with a
+report quoting the deputy commissioner's malaria explanation. The previously
+cited follow-up did not repeat that dispute.
+
+The Auroville passage specifies the power to constitute implementation
+committees while retaining the distinction from master-plan consultation.
+Owen's valuation mechanism and Cybersyn's existing network receive inspected
+passage references. Tanzania's relocation and village-resident populations
+remain separate. MONDRAGON's reports are identified as institutional accounts,
+with workforce distinct from membership; EPI's projected compensation ratio
+has a different denominator, period and population. History supplies no
+isolated governance effect or demonstrated operation of this constitution.
+
+The unchanged V-Dem snapshot reproduces its correlations, category summaries
+and exploratory residual regression. The data README and footnotes now state
+the survey window, scale, GDP unit, equal country weights and differing year
+labels. Reproduction does not advance the snapshot's retrieval date. The
+unbundled alternative-index comparison was not reproduced and is removed from
+the reader argument; its historical record and licensing boundary remain.
+The methodological distinction between comparing significance labels and
+testing a difference remains, without implying a freshly executed comparison.
+
+The registry and decision state the actual source-checking scope. Lin,
+Muralidharan and Stodder were checked through published abstracts, not newly
+inspected full empirical methods. Accessible original reports, articles,
+legal texts, testimony and historical passages supply the other stated
+checks. Full-text retrieval failures and background monographs not newly
+read in full remain explicit. No unavailable study is labelled replicated,
+and no source locator is treated as proof of the claim.
+
+All five claim-discipline, six reference-integrity and ten reader-coverage
+development checks pass in 0.74s, 1.30s and 0.20s respectively, following a
+65-second incremental compilation. Four binding phrases follow corrected
+prose; all 24 bindings remain. `git diff --check` passes. A direct `rustfmt`
+check reports seven pre-existing differences in the touched test file; the
+committed baseline produces the same seven differences. No formatting sweep
+or exception expansion is included.
+
+`RIGHTS_VERIFY_JOBS=4 ./verify.sh` passes 88,815 pins across 16,137 cases;
+contradiction checks complete with no findings in 1,146.40 seconds. No check
+is incomplete. The five-minute target remains unmet. The constitution,
+substantive pins and suite inventory are unchanged.
+
+The manuscript measures 58,347 whitespace-separated words excluding HTML
+comments across 34 ordered inputs; derived chapters contain 40,763 words
+(69.86%). The opening and optional method retain 3,943 and 3,936 words.
+Chapter order, pin pairs, the one-entry child fixture, required child slots,
+three exempt channels and carried appendix remain. Reading-copy inspection
+and final assessment are separate pending items. No reader study, independent
+endorsement, release or Gate C completion is claimed. Book 2 stays
+collection-only.
+
 ### Item 30 — sequential developmental and line edit, 2026-09-21
 
 All 34 ordered inputs received a fresh sequential read after the targeted

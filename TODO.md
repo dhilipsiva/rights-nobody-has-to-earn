@@ -5,8 +5,8 @@
 Created 2026-09-18 and refreshed 2026-09-20 at the author's request:
 "Refresh TODO to make book a 10/10."
 
-**Active: items 31–33 below are pending.** Items 01–23 were
-completed on 2026-09-20 and items 24–30 on 2026-09-21. The first round's
+**Active: items 32–33 below are pending.** Items 01–23 were
+completed on 2026-09-20 and items 24–31 on 2026-09-21. The first round's
 [final manuscript review](reviews/2026-09-20-final-manuscript-review.md),
 subsequent coherent commits and `CLAUDE.md` retain the assessments, repairs and
 validation. This refresh opens further work; it does not reverse those
@@ -134,31 +134,11 @@ solutions and development history stay outside the book's reading sequence.
 
 ## Ordered revision backlog
 
-Work in this order. Item 31 checks the evidence and its interpretation in
+Work in this order. Item 32 rebuilds and inspects the reading copies of
 the revised manuscript. Each item includes its
 own relevant validation under the execution contract; item 33 is a final
 integration review, not permission to defer earlier checks. Chapter numbers
 refer to the [current reading sequence](book-1/contents.json).
-
-- [ ] **31. Check the evidence and the conclusions drawn from it.**
-
-  **Scope:** Part V, epigraph attribution, empirical claims elsewhere in the
-  reading sequence, and the existing registry and bundled calculations.
-
-  Check each statistic and named study against its primary source where
-  available, with precise location, date, population, unit and qualification.
-  Preserve disputed testimony as disputed and separate institutional accounts
-  from independent evidence. Verify that each historical comparison supports
-  the inference actually made. Reproduce the bundled democracy calculations
-  and check their interpretation; a source retrieval failure must remain an
-  explicit evidence limit rather than a claimed verification. Update existing
-  registry entries instead of creating another truth inventory.
-
-  **Done when:** empirical assertions have traceable support and appropriate
-  scope; unsupported assertions are repaired, narrowed or removed. Denominators,
-  periods, causal limits and statistical uncertainty remain visible where needed.
-  The result records the actual extent of source checking without claiming a
-  reader study, independent endorsement or operational evidence for this design.
 
 - [ ] **32. Rebuild and inspect the reading copies and sample.**
 
