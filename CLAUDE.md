@@ -127,6 +127,55 @@ reinstate the retired tooling or workflow.
 Grouped by kind. Dates in each heading are the ratification dates; a ruling
 that was later implemented or narrowed carries that supersession inline.
 
+### Item 26 — reader consequences and optional implementation detail, 2026-09-21
+
+Under the standing delegated approval, Chapters 3, 4, 9, 18, 21, 22, 23, 26
+and 27 now explain the supplied premises, tested consequences and relevant
+limits without an engine lesson. The optional method integrates whole-input
+rollback, ballot-rule coexistence, floor and shield dependency examples,
+purpose-use inspection, and the separate amendment host's byte comparisons
+and in-memory transitions with its existing worked cases. Its added formal
+excerpts are existing executable statements and expectations. The host's
+development command remains separate from routine Nibli verification.
+
+The prisoner chapter leads with standing and its tested protective effect
+beyond the prisoner. The ordinary chapters retain the sparse-record limits,
+accepted harmful alternatives, exact scope of refused rules, absence of
+delivery, distinction between review and relief, and lack of authenticated
+approval or actual publication. No consequence or limitation requires a method
+link to discover it. The review's arity lesson was already absent from the
+current ordinary chapters; this finding is corrected, not treated as another
+unperformed edit. The existing narrative-register decision records the exact
+canonical prose as author-approved under the delegated 2026-09-13 authority.
+
+The constitution, substantive pins and suite inventory are unchanged. Five
+affected prose locators are updated in their existing records. The ecological
+locator now names the actual environmental distinction, and the older
+record-integrity summary is corrected from a general monotonicity claim to
+the two tested ballot rules. Three renamed section entries are updated in
+the owning reader-coverage JSON and its generated report; all 238 passage
+classifications remain. These edits renew no historical assurance finding
+and introduce no new inventory or verification gate.
+
+Focused runs pass all 70 Chapter 4 pins (22.30s), 31 Chapter 18 pins (18.30s),
+38 Chapter 27 pins (17.30s) and 32 Chapter 22 pins (12.39s). All five
+claim-discipline, six reference-integrity, ten reader-coverage and sixteen
+floor development tests pass. The amendment host's fourteen development
+tests pass in 121.72s, including exact-source transitions on the actual
+constitution. Initial reference and coverage failures identified the five
+old locators and three old section names; the existing records are corrected
+and both suites pass on recheck. The complete
+`RIGHTS_VERIFY_JOBS=4 ./verify.sh` passes **88,815 pins across 16,137 cases**,
+with complete contradiction checks and no findings, in **1,145.04s**. The
+five-minute target remains unmet. All formal inputs remained unchanged
+throughout the run. Item 26 is complete.
+
+The separate prose review measures 57,645 words across the 34 ordered inputs,
+excluding HTML comments and splitting on whitespace; 40,642 words are derived
+(70.50%). The method is 3,936 words. The chapter order, three exempt prose
+channels, unnumbered epigraph and method, single birth fixture, required child
+slots and their exemptions remain. Book 2 stays collection-only until Gate C.
+
 ### Item 25 — choices in the opening and direct routes to their arguments, 2026-09-21
 
 Under the standing delegated approval, the opening now introduces the main

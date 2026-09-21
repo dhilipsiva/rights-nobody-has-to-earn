@@ -111,9 +111,9 @@ The recorded act of examination and the adverse conclusion are distinct.
 ## Changing the vocabulary
 
 A new kind of entry needs an explicit declaration. Using an undeclared word
-does not widen the record by itself. Declaration order matters too: an entry
-is refused if its required declaration has not been loaded. A declaration
-added afterwards does not rescue that rejected input.
+does not widen the record by itself. The permission must already be present
+when the entry is submitted; changing it later does not turn an earlier
+refusal into accepted evidence.
 
 An editor can nevertheless declare new vocabulary and use it in the source.
 The closure makes that a source change; it does not establish the editor's

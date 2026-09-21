@@ -92,10 +92,11 @@ and reasons. None of those requirements makes the filing itself a final
 finding of innocence.
 
 The contrasting test would make every confinement automatically produce a
-final bar against that same case. The engine refuses the resulting negative
-cycle: custody requires the bar to be absent, while the proposed rule would
-produce it from custody. The refusal concerns that encoding. It prevents
-neither a right to review nor the separate suspension attached to a filing.
+final bar against that same case. That proposed rule is refused. The result
+does not rule out a right to review or the separate suspension attached to a
+filing. The [method's appeal example](method.md#a-request-a-duty-and-relief)
+explains why a duty to hear, pending protection and final relief have different
+formal consequences.
 
 Access cannot depend on winning, and a duty cannot be counted as a completed
 review. Both boundaries matter to the person waiting for an answer.

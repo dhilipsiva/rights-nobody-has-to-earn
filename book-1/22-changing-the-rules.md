@@ -41,11 +41,12 @@ candidate priority. A transition cannot be reused against a later base.
 Returning to earlier wording needs fresh authority and a new transition while
 preserving the intervening record.
 
-The separate host reference model exercises exact byte comparisons and
-transitions using trusted local inputs and in-memory state. It does not
-establish authentic democratic approval, public publication or deployment.
-Its tests and the Nibli conclusions answer different questions; a successful
-result from one cannot supply the other's missing premises.
+These checks can test whether the supplied records concern the same text.
+They do not establish that democratic approval was authentic, publication
+occurred or an institution adopted the replacement. The
+[method](method.md#comparing-and-selecting-an-amendment) distinguishes the
+formal evidence requirements from the separate checks of exact text and
+version changes.
 
 Anyone may request independent review without the operator's permission or a
 valid candidate certificate. A current reviewed source defect withholds the
@@ -131,7 +132,7 @@ The integrity of the record those rules are written in also remains necessary.
 A person with access to a source file can change it outside the authorised
 process. Formal refusal of a candidate is not physical prevention of that edit,
 and a passing suite is not authentication of its authors or effects. The
-current exact-change and host checks establish bounded relationships between
+current checks establish bounded relationships between
 supplied objects; they are not a self-enforcing republic.
 
 ## The child with nobody

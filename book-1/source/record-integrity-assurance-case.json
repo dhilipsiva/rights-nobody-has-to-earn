@@ -996,10 +996,10 @@
       "future_trigger": "Narrow, never erase, when scoped external assurance evidence exists; genesis, truth, exhaustive disclosure, storage integrity, and liveness limits remain."
     },
     {
-      "artifact_ref": "book-1/18-the-vote-conviction-does-not-take.md::Adding a narrower sufficient route does not remove an existing",
-      "current_claim": "Within one engine run, derivation only adds conclusions, so a narrower permission does not retract a surviving wider permission.",
-      "classification": "preserved",
-      "reason": "The assurance case explicitly distinguishes monotone in-run derivation from an append-only source or storage history and adds no retraction semantics.",
+      "artifact_ref": "book-1/18-the-vote-conviction-does-not-take.md::An additional grant has not repealed the existing",
+      "current_claim": "The tested narrower ballot rule remains loaded while Hano retains the entitlement supplied by the unchanged broader rule. This is no general claim that added facts or rules cannot withdraw conclusions.",
+      "classification": "revised_and_scoped",
+      "reason": "The Chapter 18 resident-rule case establishes this particular coexistence. Conditions depending on absence elsewhere can fail when facts are added; the prose makes that limit explicit. The item-26 locator update corrects the older summary and does not renew the historical assurance finding.",
       "future_trigger": "Re-review the prose, pins, Part V verdict, and any counted-claim guard if non-monotone derivation, rule replacement, supersession, or retraction changes the legal effect."
     },
     {

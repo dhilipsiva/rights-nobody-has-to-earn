@@ -5,8 +5,8 @@
 Created 2026-09-18 and refreshed 2026-09-20 at the author's request:
 "Refresh TODO to make book a 10/10."
 
-**Active: items 26–33 below are pending.** Items 01–23 were
-completed on 2026-09-20 and items 24–25 on 2026-09-21. The first round's
+**Active: items 27–33 below are pending.** Items 01–23 were
+completed on 2026-09-20 and items 24–26 on 2026-09-21. The first round's
 [final manuscript review](reviews/2026-09-20-final-manuscript-review.md),
 subsequent coherent commits and `CLAUDE.md` retain the assessments, repairs and
 validation. This refresh opens further work; it does not reverse those
@@ -134,29 +134,11 @@ solutions and development history stay outside the book's reading sequence.
 
 ## Ordered revision backlog
 
-Work in this order. Item 26 separates the reader explanation from technical
-method before the remaining editorial passes. Each item includes its
+Work in this order. Item 27 makes the cases easier to follow before the
+remaining editorial passes. Each item includes its
 own relevant validation under the execution contract; item 33 is a final
 integration review, not permission to defer earlier checks. Chapter numbers
 refer to the [current reading sequence](book-1/contents.json).
-
-- [ ] **26. Separate reader explanation from implementation detail.**
-
-  **Scope:** Especially Chapters 3, 4, 9, 18, 21–23, 26 and 27; optional method.
-
-  Relocate arity, host byte comparisons, in-memory transitions, assertion
-  rollback, source-inspection mechanics and extended dependency explanations
-  where they serve the method rather than the chapter's human question. Retain
-  each consequential result and its exact limitation beside the claim it
-  qualifies. Keep the prisoner's contribution to the floor protection legible
-  without requiring a technical lesson before its importance is understood.
-  Consolidate the relocated explanation with existing worked method examples.
-
-  **Done when:** each ordinary chapter can be understood without learning the
-  engine's implementation vocabulary. The method remains optional and usable,
-  with current executable examples and accurate running instructions. No move
-  hides a limitation, changes a tested verdict, or makes a reader follow a
-  technical link to discover that a claimed protection is narrower than stated.
 
 - [ ] **27. Make the cases easy to identify and follow.**
 

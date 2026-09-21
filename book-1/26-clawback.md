@@ -36,10 +36,10 @@ Bela is a person, retains the ballot and free movement, and is owed the floor.
 No prisoner conclusion follows in this case. The compensation correction
 leaves the food debt intact too.
 
-Food and dwelling actuality do not derive for Bela in the supplied record.
-Food does not derive for Jala either, although Jala is not voided. Neither
-absence establishes starvation or delivery. The comparison prevents a missing
-receipt from being presented as the effect of a finding.
+The supplied record does not establish that food or shelter reached Bela.
+It does not establish that Jala received food either, although Jala is not
+voided. Neither absence establishes starvation or delivery. The comparison
+prevents a missing receipt from being presented as the effect of a finding.
 
 Lupo's adverse case does not create a finding against Mira. Bela's case does
 not create one against Cira. An accusation supplies no lesser personal penalty

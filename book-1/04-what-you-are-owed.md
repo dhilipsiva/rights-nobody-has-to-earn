@@ -26,16 +26,18 @@ that food, shelter or care reached a person.
 
 The floor rules refuse a particular kind of hostile condition: a rule making
 the absence of a protected floor condition, or of the debt owing it, a ground
-for conviction-based confinement. Such a rule cannot be combined with this
-unconditional floor in the tested form. The optional method explains the
-circular dependency that causes the refusal.
+for conviction-based confinement. The tested rule is refused before it can
+change anyone's status. This result depends on the particular way the rule
+uses the missing condition; it is not a general prohibition on writing
+harmful alternatives. The optional [method](method.md#why-the-hostile-floor-rule-is-refused)
+explains why this form is refused.
 
-That is narrower than saying no harmful rule can be written. The tests can
-load a rule that makes an absence of company remove recognition. That
-consequence does not create the same forbidden dependency. The tested rule
-making an absence of belief void credibility is refused by the current
-dependencies. Neither result settles every differently expressed attack.
-Accepted controls are tested and discarded; they are not enacted rules.
+The contrast is visible in the tests. A hypothetical rule recording a loss
+of recognition for an absence of company can be accepted, although this design
+has no general recognition status to withdraw. A rule making an absence of
+belief void credibility is refused. Neither result settles every differently
+expressed attack. These experiments are discarded after the check; an accepted
+alternative acquires no authority in the constitution.
 
 Separate constitutional limits protect private life and economic rights.
 Belief, speech, friendship, intimacy, association, voluntary care, gifts,
@@ -50,9 +52,9 @@ whether people are being sent along unjustifiably different routes to what
 they are owed. These protections have their own rules and cannot be credited
 to the floor's refusal mechanism alone.
 
-Movement has a separate dependency that also refuses the tested hostile rule.
-The floor checks keep that result separate. Otherwise a protection arising
-from the movement rules would be counted as evidence about the floor.
+Movement has its own protection against the tested hostile rule. That result
+is checked separately; it cannot establish a protection for food, shelter or
+another floor item.
 
 ## Owed by whom
 
@@ -79,18 +81,18 @@ receipt or establishes that the person spoke. A separate isolation finding
 requires positive evidence of denied contact for a specified holding, place
 and period. Missing company evidence cannot supply it.
 
-The source can also be made to flatter itself. In a counterfactual, add a rule
-saying every person has a selected floor condition. The corresponding query
-becomes true without a receipt. The rule supplies the answer it was supposed to
-justify. It does not erase a separately evidenced isolation finding.
-Restricting direct assertions does not prevent every rule from doing
-this, so a delivery claim must be checked against its actual premises.
+An altered rule can supply a misleading answer. In one experiment, a rule
+simply says that every person has a selected floor condition. The altered
+model then reports that condition without a receipt. It does not erase a
+separately evidenced isolation finding. Refusing to let someone enter a
+delivery conclusion directly cannot prevent a changed rule from producing
+one without evidence. A delivery claim must be checked against what supports it.
 
-A different counterfactual alters the object of a floor debt. The changed rule
-still looks like a rule owing something to a person, but it no longer owes the
-selected item. The ordinary check for that debt fails while the other debts
-continue to follow. Testing each item matters: the outward shape of a promise
-is not enough to preserve its content.
+A different experiment changes what one floor debt promises. The changed rule
+still owes something to a person, but it no longer owes the selected item.
+The check for that debt fails while the other debts continue to follow.
+Testing each item matters: the outward shape of a promise is not enough to
+preserve its content.
 
 The rules distinguish entitlement, the responsible public function, evidence
 of arrival, challenge, interim continuity, individual remedy, common-cause

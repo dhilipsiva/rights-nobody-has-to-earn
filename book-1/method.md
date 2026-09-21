@@ -289,6 +289,8 @@ prisoner(Zed).
 
 The first statement uses a relation outside this record's admitted base
 vocabulary. The second tries to write a conclusion that must be derived.
+An admission must precede the input that needs it; a later declaration does
+not retroactively admit a rejected statement.
 The directive specifies the expected error class and a distinguishing part
 of its message. If the statement loads, or fails for the wrong reason, the
 test fails. The complete cases are in
@@ -299,6 +301,45 @@ establish which statements this input interface accepts. A permitted injury
 or judgment entry can still be false, and a changed constitutional source
 can widen the interface. The language checks the record supplied under its
 rules; it does not appoint or authenticate the people supplying it.
+
+### Rejecting a whole input
+
+The ballot case tests what happens when an otherwise permissible assertion
+shares an input with a forged conclusion:
+
+```nibli
+:accept
+admits("decide").
+
+:refuse reasoning /`decide` is declared derived-only/
+person(Vote_Probe) & decide(Vote_Probe, Ballot).
+
+? person(Vote_Probe).
+# => FALSE
+```
+
+The exact-name admission remains loaded, but it cannot override the
+derived-only restriction on `decide`. The refusal rolls back the whole mixed
+assertion, including the otherwise admissible person entry. This checks the
+boundary of that input operation; it establishes neither an actual person's
+standing nor the authenticity of a different, accepted entry. The complete
+sequence is in [Chapter 18's pins](18-the-vote-conviction-does-not-take.pins.nibli).
+
+That file then keeps this added rule loaded while asking about Hano:
+
+```nibli
+:accept
+all $x: person($x) & match($x, GeneralAdult) & ~prisoner($x) -> decide($x, Ballot).
+
+? decide(Hano, Ballot).
+# => TRUE
+```
+
+Hano's entitlement still follows from the broader ballot rule. The added
+sufficient route does not replace it. This result is specific to those rules;
+elsewhere an added fact can defeat a condition expressed through absence.
+
+### Why the hostile floor rule is refused
 
 The floor has a different protection. In the current source, adding this
 rule is refused:
@@ -315,21 +356,93 @@ feed the absence of eating back into custody through that dependency and is
 refused. The entitlement and actuality queries test both sides of this
 distinction: the right derives while the meal does not.
 
-This prevents the displayed use of a missing floor actuality as a ground of
-punishment. The [floor tests](source/rights-floor.pins.nibli) distinguish
-refused uses from accepted controls across the relevant relations. They do
-not establish that every hostile rule is unwritable. For example, a base
-contribution record does not acquire the floor's structural protection
-merely because using it to punish someone would be unjust. Removing an
-entitlement from the source is a different attack. Rule review and the amendment's
-source-effect tests therefore matter alongside the stratifier.
+The counterfactual removing the prisoner-to-person rule permits the
+belief-absence attack. Another replaces
+the event-shaped entitlement with a plain label; the tested entitlement
+disappears and the hostile rule can load. These changes affect the rules'
+meaning, not merely their presentation. Chapter 27 keeps both results and
+their limits beside Zed's case.
 
-The layers used by that check are not the book's reading order. The engine
+The refusal prevents the displayed use of a missing floor actuality as a
+ground of punishment. The [floor tests](source/rights-floor.pins.nibli)
+distinguish refused uses from accepted controls across the relevant relations.
+They do not establish that every hostile rule is unwritable. Removing an
+entitlement from the source is a different attack. Rule review and the
+amendment's source-effect tests therefore matter alongside the stratifier.
+
+The stratifier does not judge intention. Adding a personhood condition to the
+disclosure shield also creates a negative cycle: personhood can follow from
+custody, while custody checks for the shield's absence. The proposed rule is
+refused in [Chapter 24's pins](24-the-shield.pins.nibli), leaving the existing
+shield in force. That failure of one encoding establishes no impossibility
+of expressing the policy another way. The appeal example above illustrates
+why distinguishing a duty from accomplished relief can change the result.
+
+The stratifier's layers are not the book's reading order. The engine
 computes dependencies among relations. The [contents](contents.json) place
 chapters in an editorial sequence: standing and provision, ordinary life,
 public power, then coercion and correction. A later chapter can explain a
 premise used earlier without changing the order in which the logic depends
 on it.
+
+### Checking how a record is used
+
+Contribution records illustrate a separate check. They are base inputs, so
+the stratifier can accept a hostile rule that confines someone for lacking
+one: there is no cycle back through a derived contribution. The executable
+counterfactual demonstrates the harmful consequence. Acceptance therefore
+cannot establish that the rule respects the record's purpose.
+
+The development check
+`a_purpose_limited_record_is_read_only_for_its_purpose` inspects the
+constitution's statements. Contribution records may be read only to support
+their supplement; pay promises may be read only to support their compensation.
+Neither may be read under negation, produced by a rule, or asserted by the
+constitution itself. The hostile contribution and compensation alternatives
+are negative controls: the same inspection must detect their violations.
+
+A companion check, `floor_actualities_have_no_downstream_consumer`, finds
+any rule using a floor delivery conclusion as a premise, whether present or
+absent. It rejects both kinds of added consumer. This prevents a receipt or
+its absence from becoming a penalty or a breach finding through such a rule.
+Both checks are in [the floor development tests](../src/authoring/floor_vector_tests.rs).
+They inspect the current written rule forms. They are separate from executing
+Nibli, and neither promises to recognise every semantically equivalent attack
+written in a different form. They add no lawful power to an accepted experiment.
+
+## Comparing and selecting an amendment
+
+The amendment cases distinguish records claiming to concern the same text
+from a program comparing that text. Nibli checks the supplied certification,
+publication and effective-selection evidence. The separate
+[amendment host](../src/amendment_host.rs) compares the exact source strings
+and version identifiers in a trusted local review, then models selection in
+memory. It interprets permission under the effective base, not a candidate's
+self-authored authority.
+
+One [development test](../src/amendment_host_tests.rs) appends a single newline
+to a reviewed candidate. Certification fails because the submitted bytes no
+longer match; the effective version and transition history remain unchanged.
+Changing the base text or its identifier also fails. Exact comparison protects
+the identity of the supplied text, even where a difference might leave its
+meaning unchanged. It does not establish that the review was honest.
+
+Other tests follow the transitions. Certification alone does not select a
+version. Publication evidence must concern the same bytes. After one successor
+is selected, another candidate authorised against the previous base is stale.
+A query must use the selected source and a current lease: the host's record
+of the version and selection generation it may query. Returning to identical
+earlier text needs fresh authority and a new version occurrence; it does not
+revive an old lease. A fresh session loads the selected text before the host
+changes its effective version, so it cannot silently keep querying the old
+rules as if they were the new ones.
+
+These are single-process, in-memory checks over trusted input. They perform
+no authentication, public publication, institutional adoption or deployment,
+and write no replacement constitution. The host's development tests can be
+run separately with `cargo test --release --bin amendment-assurance`; they
+are not an additional routine verification gate. Chapter 22 states the legal
+conditions and the same limits without requiring this implementation lesson.
 
 ## What a contradiction check establishes
 
@@ -456,9 +569,7 @@ and [counterfactual expectations](../tests/pins/amendments/person-proposal-separ
 The cases also check that docketing a person's name supplies no personal
 credibility loss on the actual source, while the weaker rules do produce
 that loss. This is why the case's base and expected consequence matter as
-much as its pass status. The separate amendment host uses trusted local
-input and in-memory state. Its successful transitions establish no real
-authentication, democratic approval, publication or deployment.
+much as its pass status.
 
 The isolation cases make the same distinction between a rule and its tested
 alternative. The [ordinary cases](../tests/pins/custody/condition-findings/expect.pins.nibli)

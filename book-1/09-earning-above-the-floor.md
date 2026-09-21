@@ -106,13 +106,14 @@ determine standing, the floor, the vote or liberty, and a general judgment of
 someone's contribution cannot substitute for it. A person without a
 contribution history keeps the floor in full.
 
-This separation depends in part on a check of the constitution's text. The
-engine can load a hostile rule that confines someone for lacking a contribution
-record: the record is a base entry, so that rule creates no negative cycle for
-the engine to reject. The existing development check instead restricts reads
-of contribution records to the supplement rules, forbids negated reads and
-forbids rules from manufacturing the records. Its hostile control demonstrates
-why an engine acceptance alone cannot establish constitutional compliance.
+The computer's acceptance of a rule cannot establish that it respects this
+boundary. An isolated experiment can load a rule confining someone for having
+no contribution record. Separate checks of the constitution exclude that use:
+contribution records may support supplements, but their absence may not justify
+another consequence and rules may not invent them. The
+[method](method.md#checking-how-a-record-is-used) explains how those checks
+differ. The restriction is part of this design; it is not a claim that no
+harmful alternative can be written.
 
 No supplement derives for the supplied cast, whose record contains no
 contribution history. That is not evidence that anyone is uninsured. Marlo's
@@ -160,4 +161,4 @@ Their adequacy cannot be inferred from a matching pair of records.
 
 Employment and its rewards may change
 what someone receives above the floor, but cannot become a price for the floor.
-Recognition makes a different claim again. That is the next chapter's subject.
+The next chapter asks what a record of contribution establishes.

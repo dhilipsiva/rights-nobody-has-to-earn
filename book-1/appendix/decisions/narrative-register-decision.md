@@ -2,12 +2,60 @@
 
 # Book 1 Narrative Register Decision
 
-> **Status: author-ratified on 2026-08-08; amended through 2026-09-19.**
+> **Status: author-ratified on 2026-08-08; amended through 2026-09-21.**
 > The dated rulings below govern the current opening, epigraph and Part V
 > passage and its treatment of criticism. The register, trace, location and evidence rules
 > remain binding. Section 15's separate approval pauses are superseded by the
 > author's standing delegated approval of 2026-09-13. Earlier dispositions,
 > including `OL-15-v1` in section 7a, remain visible as history.
+
+## Reader consequences and optional implementation detail — item 26, 2026-09-21
+
+The exact current Markdown of Chapters 3, 4, 9, 18, 21, 22, 23, 26 and 27,
+and the optional method, is
+`session-drafted, author-approved under delegated approval (2026-09-13)`.
+The ordinary chapters state the supplied premises, consequence and relevant
+limit without requiring a lesson in the engine. The method owns the extended
+dependency explanation, input rollback, purpose-use inspection and trusted
+amendment host's byte comparisons and in-memory transitions. The manuscript
+contains no rule, pin or policy change from this editorial relocation.
+
+Chapter 27 leads with the two tested consequences of the custody standing
+rule: Zed retains standing and the floor, and particular hostile confinement
+rules are refused. Its sparse record, rule-deletion loss, changed-entitlement
+failure, accepted home-absence attack, refused shield encoding, independent
+conflict guard and absence of delivery remain in that chapter. No link is
+needed to discover that the protection is specific or that a failed encoding
+settles no policy question. Chapter 4 likewise retains each accepted/refused
+contrast and distinguishes hypothetical recognition loss from an enacted
+general recognition status. Chapter 18 retains the whole-input refusal and
+the surviving broad ballot entitlement without presenting the latter as
+general monotonicity. Chapter 22 retains the absence of authentic approval,
+publication or institutional adoption beside its legal requirements.
+
+The method integrates these mechanics with the existing fact, receipt,
+appeal and refusal examples. Its new ballot excerpt is an existing executable
+case, not an invented demonstration. The amendment-host explanation points
+to its actual development tests and identifies their separate scope; those
+tests add no routine verification gate. The method stays unnumbered,
+optional and without companion pins, machine-rendered prose, proof traces,
+the full constitution, a compute-backend discussion or an ordinary-life
+vignette. Every numbered chapter retains its consequential qualifications.
+
+The review's arity lesson was not present in the current ordinary chapters;
+the actual implementation detours, rather than that stale premise, determine
+this edit. Chapter 26 needed only plainer delivery language after its earlier
+substantive revision. Existing prose locators follow the revised chapter
+passages. The record-integrity assurance summary is narrowed to the particular
+ballot coexistence it tests, and the ecological coverage locator now points
+to Chapter 4's environmental distinction. These corrections renew no historical
+assurance verdict and create no new coverage inventory.
+
+The current-design register, chapter order, required child returns, three
+exempt channels and Book 2's collection-only status remain. The actual text
+is retained in the canonical files and this item's coherent commit. This
+decision records editorial approval; completion and measured verification
+are recorded in `CLAUDE.md` after the checks run.
 
 ## Current opening and epigraph — 2026-09-19, revision item 13
 

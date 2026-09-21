@@ -5,7 +5,7 @@ travel freely under the custody rules, but remains part of the electorate.
 
 Here, conviction and custody take neither franchise nor candidacy. Political
 rights have their own basis, and punishment status does not supply an exception.
-The basic ballot relation reads personhood and typed evidence of general
+The basic ballot entitlement follows from personhood and recorded general
 adulthood. Hano has both. Adulthood itself attaches in law at the common age;
 a registrar records evidence and cannot grant or withhold the status.
 
@@ -81,44 +81,44 @@ individualised, relevant, proportionate, time-limited and reviewable. It cannot
 affect the person's vote. A later move cannot silently end or extend a current
 office.
 
-These legal conditions do not discover residence or age. Removing a necessary
-personhood root or withholding typed age evidence can prevent the basic
+These legal conditions do not discover residence or age. Removing necessary
+personhood evidence or withholding the age record can prevent the basic
 franchise conclusion even where the entitlement exists in law. Esa's case
 makes that distinction visible: no ballot derives until the adulthood evidence
 is supplied. Challenge, independent determination, continuity and provisional
 opportunity address disputed evidence; none observes a birthday or delivers
 a ballot by itself.
 
-## How the executable protection works
+## What protects the entitlement
 
-The pins load a rule granting the ballot to adults who are not prisoners. It
-is accepted. Hano nevertheless retains the ballot because the broader rule
-also remains. Adding a narrower sufficient route does not remove an existing
-one. Replacing the broader rule with the narrower rule is a different change,
-and the prisoner ballot tests expose its consequence.
+One test adds a rule granting the ballot to adults who are not prisoners.
+The rule is accepted. Hano nevertheless retains the ballot because the broader
+entitlement also remains. An additional grant has not repealed the existing
+one. Replacing the broader rule would be a different change; losing Hano's
+entitlement would fail the prisoner ballot check.
 
-This is not a general claim that adding facts or rules can never withdraw a
-conclusion. Negated conditions elsewhere in the model can do that. The claim
-here concerns these two ballot rules: the additional route neither repeals nor
-changes the existing one.
+This result concerns these two rules. Elsewhere, a new entry can defeat a
+condition that depended on its absence. The example does not establish that
+every addition leaves all previous conclusions intact.
 
-The franchise word is conclusion-only. It cannot be asserted directly, even
-when an entry tries to add that exact word to the writable vocabulary. The
-mixed-assertion test also checks that a refused forged ballot rolls back the
-otherwise admissible person entry beside it. A cast ballot, tally or reported
-institutional decision needs a separate representation; this relation records
-an entitlement, not those events.
+An attempted entry simply declaring a ballot entitlement is refused; the
+evidence required by the rule must support it. Even an entry purporting to
+permit direct declarations does not bypass that condition. When a test submits
+a person entry together with a forged entitlement, neither is accepted. The
+[method](method.md#rejecting-a-whole-input) follows this case through its exact
+inputs. These checks concern entitlement. A cast ballot, tally or reported
+institutional decision needs separate evidence.
 
-The safeguards answer different attacks. Admission rules stop a forged
-conclusion. Regression pins test the entitlement under conviction. The
-amendment system governs proposed changes to the constitutional source. None
-of these turns every syntactically accepted rule into a lawful amendment.
+These safeguards answer different attacks. Refusing a direct declaration does
+not authenticate the evidence submitted instead. Testing the entitlement under
+conviction does not prevent someone from editing its rule. The amendment
+system governs proposed changes; a rule the computer accepts is not thereby
+a lawful amendment.
 
-The floor's negative-cycle refusal is a different mechanism again. It rejects
-the tested shape that makes confinement depend on lacking a floor actuality.
-It does not reject every possible attack on the floor, and it does not by
-itself protect a ballot rule from replacement. Each guarantee needs the checks
-appropriate to how it can be changed.
+The floor has a separate protection against the tested rule that confines
+someone for lacking a floor condition. That refusal does not prevent every
+possible attack on the floor or protect the ballot rule from replacement.
+Each guarantee needs the checks appropriate to how it can be changed.
 
 ## A right still needs a ballot
 
@@ -135,7 +135,7 @@ just as an entitlement to food is not a meal.
 
 ## The child with nobody
 
-Nell's birth entry supplies no typed evidence of general adulthood, so no ballot
+Nell's birth entry supplies no evidence of general adulthood, so no ballot
 conclusion follows. The record cannot distinguish being below the threshold
 from missing evidence that it has been reached. It establishes neither a
 punishment nor Nell's actual age.

@@ -11,17 +11,17 @@ each route. Public answerability is separate: Court is answerable and holds
 neither credential, while Koa's recorded examination does not confer either
 credential or public answerability.
 
-Both credential rules require seating, no recall, and positive clear history
-carried into the selected current record. That record must be the uncontested
-end of a witnessed constitutional record line. A reconciled carried void blocks
-the credential. Missing clear history or a missing witness cannot substitute
-for a positive match.
+Both credentials require seating, no recall, and positively established clear
+history. The current record must carry that history from its witnessed
+predecessor and be selected without a rival claim to be current. A matched
+earlier void blocks the credential. Missing clear history or a missing witness
+cannot substitute for a positive match.
 
 ## A credential must derive
 
 A direct attempt to write a Review credential for Sock is refused. The
-credential is conclusion-only: its premises must be supplied and its rule
-satisfied. Refusal of the conclusion is not authentication of those premises.
+required evidence must support the credential; nobody can simply enter the
+conclusion. Refusal of the conclusion does not authenticate that evidence.
 
 Even credentialed signers need affirmative independence authority for the
 particular case. The subject, incident, recognised adverse ground and evidence
@@ -50,13 +50,13 @@ Boss is seated and recalled. Public answerability remains while the Review
 credential does not derive. This concerns that credential, not every power
 Boss could hold under another constitutional route.
 
-Vex is seated without recall but has a reconciled void from a predecessor
-record. The current record names the one it replaces. The inventory entries
-and predecessor finding are separately witnessed, both public bodies report
-the same carry, and the constitutional record line selects the current end
-without a competing selection. The matched history blocks Vex's credential.
-A bare carried mark cannot do so alone; the integrity rules can report an
-omitted or invented carry where their comparison premises are present.
+Vex is seated without recall but has a void carried from a predecessor record.
+The two public witnesses agree about the earlier finding and its transfer to
+the current record. The earlier finding and inventory entries have their own
+witnesses, and the current record has no competing selection. That matched
+history blocks Vex's credential. A bare carried mark cannot do so alone.
+An omitted or invented carry can be reported only when the evidence needed
+to compare the records is supplied.
 
 The positive route is equally specific: the predecessor clear status and both
 reports of its carry must match in the selected current record. Neither
