@@ -2,6 +2,43 @@
 
 # Book 1 Reading Order, Names, and the Appendix
 
+## Choices before the institutional detail — item 25, 2026-09-21
+
+The exact current [opening note](../../00-opening-note.md), its argument map
+and glossary changes are
+`session-drafted, author-approved under delegated approval (2026-09-13)`.
+This is an editorial application of the settled reading order. It changes no
+constitutional commitment, source rule, pin, chapter number or manifest role.
+
+The opening now introduces public responsibility with plural provision,
+residence-based political membership, divided government, collective execution,
+independent appointments, purpose-limited records, the provisional shield,
+emergency limits and unamendable human and animal protections. It distinguishes
+those commitments from chosen instruments and names decision delay and harder
+attribution as costs requiring argument. An early direct link reaches Chapter 1
+without requiring the map, glossary or formal method.
+
+The optional map pairs the chapters explaining mechanisms with their actual
+Part V arguments. A heading over the existing scarcity argument supplies a
+direct destination; the argument itself is unchanged. The protected-core and
+institutional-mechanism definitions explain why a constitutional rule can bind
+current government while remaining lawfully revisable. Normative justification
+stays in the exempt opening and Part V. The competence-certificate glossary
+label distinguishes that specific record from certificates of political results
+and amendment candidates elsewhere in the book. The existing qualifications
+entry in `full-society-ledger.json` points to that label; no new coverage row
+or changed formal expectation is introduced.
+
+The fixed child-argument sequence remains: the structural absence of recorded
+private support and public action; the methodological claim explicitly marked
+as argument beside its bounded standing result; the prisoner pairing; the
+warning against attributed feelings; and the book's title. The opening claims
+no delivered service, universal proof, outside testimony or successful operation.
+The chapter order, optional method, unnumbered epigraph, child slots and three
+exempt prose channels remain. The historical ruling below retains its original
+ratification and implementation language; current scope and verification follow
+`CLAUDE.md` and `book-1/contents.json`.
+
 > **Status: author-ratified 2026-09-16, ratified but unimplemented.** Four
 > rulings and the design that executes them: the reading order is editorial
 > and runs engines before breaks; both books are named; the planning record

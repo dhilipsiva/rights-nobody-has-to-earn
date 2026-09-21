@@ -117,6 +117,8 @@ Evidence that an additional public acknowledgment meets a concrete unmet need
 without becoming a status hierarchy would reopen the case for it. Its absence
 of formal consumers alone would not settle that question.
 
+### Scarcity and separate claims
+
 Scarcity tests the separation more severely. Where an essential resource
 cannot meet every claim, refusing to rank people does not allocate the
 resource. A lottery among everyone in need is a serious alternative: it

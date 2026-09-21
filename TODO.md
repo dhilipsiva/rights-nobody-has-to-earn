@@ -5,8 +5,8 @@
 Created 2026-09-18 and refreshed 2026-09-20 at the author's request:
 "Refresh TODO to make book a 10/10."
 
-**Active: items 25–33 below are pending.** Items 01–23 were
-completed on 2026-09-20 and item 24 on 2026-09-21. The first round's
+**Active: items 26–33 below are pending.** Items 01–23 were
+completed on 2026-09-20 and items 24–25 on 2026-09-21. The first round's
 [final manuscript review](reviews/2026-09-20-final-manuscript-review.md),
 subsequent coherent commits and `CLAUDE.md` retain the assessments, repairs and
 validation. This refresh opens further work; it does not reverse those
@@ -134,28 +134,11 @@ solutions and development history stay outside the book's reading sequence.
 
 ## Ordered revision backlog
 
-Work in this order. Item 25 brings the substantive choices into the opening
-before the remaining editorial passes. Each item includes its
+Work in this order. Item 26 separates the reader explanation from technical
+method before the remaining editorial passes. Each item includes its
 own relevant validation under the execution contract; item 33 is a final
 integration review, not permission to defer earlier checks. Chapter numbers
 refer to the [current reading sequence](book-1/contents.json).
-
-- [ ] **25. Bring the central choices into the opening and reading route.**
-
-  **Scope:** Opening note, its map and glossary, and navigation to Part V.
-
-  Give the reader a concise account of the proposal's central disputed choices
-  and why they matter before the detailed institutional chapters. Make the
-  distinction between unconditional commitments and chosen instruments clear.
-  Link the important mechanisms to their substantive arguments in Part V,
-  while preserving the direct route to Chapter 1 and the optional reference
-  material. Keep normative justification in the exempt channels.
-
-  **Done when:** the opening states the question, commitments, central choices,
-  evidence boundary and reading route without requiring the glossary first.
-  Navigation reaches the actual arguments. It promises neither operational
-  success nor a universal proof and adds no new prerequisite to understanding
-  the child case.
 
 - [ ] **26. Separate reader explanation from implementation detail.**
 

@@ -127,6 +127,44 @@ reinstate the retired tooling or workflow.
 Grouped by kind. Dates in each heading are the ratification dates; a ruling
 that was later implemented or narrowed carries that supersession inline.
 
+### Item 25 — choices in the opening and direct routes to their arguments, 2026-09-21
+
+Under the standing delegated approval, the opening now introduces the main
+institutional choices before their detailed chapters. Public responsibility,
+plural providers, residence-based voting, divided government, collective
+execution, independent appointments, purpose limits, provisional disclosure
+protection, emergency limits and the protected cores are stated as choices
+requiring reasons. The text separates their aims from successful operation
+and distinguishes rights from the instruments selected to serve them.
+
+An early direct route reaches Chapter 1 before the optional reference material.
+The argument map pairs mechanisms with the substantive Part V sections, and
+a heading over the existing scarcity argument gives it a direct destination.
+The glossary distinguishes the protected core from amendable institutions and
+identifies the competence certificate separately from other certificates.
+The exact approved text and retained child-argument sequence are recorded in
+the existing reading-order decision. The child definition, bounded standing
+result, methodological argument, prisoner pair, affect warning and book title
+remain in their required order. No new prerequisite to the child case, source
+rule, pin expectation, institutional permission or outside result is added.
+
+The six reference-integrity checks and all 58 Chapter 1 pins pass; the focused
+pin run takes 11.97s. A later reference check caught the glossary label's old
+locator in `full-society-ledger.json`; its existing prose reference now names
+the competence certificate explicitly, and all six reference checks pass again.
+The complete `RIGHTS_VERIFY_JOBS=4 ./verify.sh` passes **88,815 pins across
+16,137 cases**, with complete contradiction checks and no findings, in
+**1,148.88s**. The five-minute target remains unmet. All formal inputs remained
+unchanged throughout the run; the ledger edit changes only a prose locator.
+
+The separate prose review confirms the question, commitments, choices,
+evidence boundary and reading routes without relying on the glossary. The
+early Chapter 1 link follows 279 whitespace-delimited words. The 34 ordered
+inputs now contain **56,943 words**, excluding HTML comments, of which
+**40,716 are derived (71.50%)**; the opening and its optional reference material
+contain 3,620. Child slots, exemptions, chapter order, unnumbered epigraph
+and method, and Book 2's collection-only status remain unchanged.
+
 ### Item 24 — institutional alternatives and the protected cores, 2026-09-21
 
 Under the standing delegated approval, Part V now separates reasons to protect

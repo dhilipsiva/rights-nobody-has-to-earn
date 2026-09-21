@@ -3,12 +3,36 @@
 What must a society provide for a person who can offer it nothing in return?
 And how can that person hold it to the promise?
 
-I propose a constitution in which being a person is enough to establish what
-is owed. Employment, wealth, citizenship, family and good behaviour are not entrance
-requirements. Food, shelter, care, learning, safety, expression, belief and
-company form a **floor**: a set of entitlements that neither private dependence
-nor public punishment may withdraw. Above it, people choose lives the
+I propose a constitution in which being a person establishes standing in law
+and a claim to essentials. Employment, wealth, citizenship, family and good
+behaviour are not entrance requirements. Food, shelter, care, learning,
+safety, expression, belief and company form a **floor**: a set of entitlements
+that neither private dependence nor public punishment may withdraw.
+Above it, people choose lives the
 constitution does not prescribe.
+
+Those commitments leave important choices open. I put responsibility for
+usable essentials on public bodies while allowing different providers.
+Government is divided by place and function. Adult voting rights rest on
+residence rather than citizenship. A collective executive answers to the
+elected Assembly, a second chamber represents the regions with limited
+powers, and independent appointments divide control of review. The aim is
+to limit concentrated power; the cost can be delay and responsibility that
+is harder to locate. Equal standing alone does not establish that this is
+the best way to protect it.
+
+Other boundaries concern what power may do while a dispute remains open.
+Personal records may not be reused for unrelated purposes. Exposing authority
+can trigger protection before its connection to a prosecution is settled.
+Emergency powers leave rights and institutions in force. Each can obstruct a convenient or urgent
+action. Core protections for people, commons and animals cannot be amended
+away, even by a future majority.
+Part V gives the reasons for these choices, their costs and their strongest
+alternatives. Protecting a right and preserving one particular institution
+are different claims.
+
+**You can begin directly with [The Child With Nobody](01-the-child-with-nobody.md).**
+No glossary or technical preparation is needed.
 
 This book invites you to examine that proposal, including reasons to doubt it.
 You need no knowledge of formal logic. The chapters
@@ -53,19 +77,20 @@ people. Any feelings you imagine belong to your reading, not to their evidence.
 *The Rights Nobody Has to Earn* makes its commitments inspectable. That cannot
 make them just. I speak directly in this opening, in Part V's arguments and
 in the optional method; the intervening chapters state the consequences of
-the formal design. Part V weighs these arrangements against their alternatives
-and costs. An exposed failure still needs resolution. A constitutional
+the formal design. An exposed failure still needs resolution. A constitutional
 duty still needs people and resources to fulfil it. This volume specifies the
 destination; *What It Would Take*, the second book, owns operation and transition.
 
 **Begin with [Chapter 1: The Child With Nobody](01-the-child-with-nobody.md).**
-The reference sections below can wait. Read the chapters in order through
-Part V; the argument ends there. Continue to the method only if you want to
-inspect how the checks work.
+Read the cases in order through Part V, where the argument ends. If you want
+the reasons before the institutional detail, the [choices below](#the-choices-and-their-arguments)
+lead directly to them. The remaining map and glossary can wait. Continue to
+the method only if you want to inspect how the checks work.
 
 ## Reader's Map
 
-Return here for [contents](#annotated-contents), [terms](#concise-glossary),
+Return here for [choices and arguments](#the-choices-and-their-arguments),
+[contents](#annotated-contents), [terms](#concise-glossary),
 [roles and cases](#roles-bodies-and-cases), [subjects](#domains-and-chapters),
 or [diagrams](#accessible-diagrams). Each is a way into the chapters, not a
 separate source of constitutional rules.
@@ -74,7 +99,32 @@ The order is editorial: provision and ordinary freedom come before the powers
 and failures that threaten them. The rules' dependency order is a separate
 technical matter explained in the [method](method.md#a-refusal-is-a-result-about-an-input).
 
+### The choices and their arguments
+
+Use this map to put a mechanism beside its justification. The case chapters
+show consequences of the supplied rules and evidence. The linked arguments
+explain why I choose them and what would favour a different arrangement.
+
+| Choice and its consequences | Argument in Part V |
+|---|---|
+| [Public responsibility for essentials](07-who-owes-and-what-follows.md), with [different providers and public finance](11-what-money-cannot-buy.md) | [Usable provision, cash, taxation and borrowing](31-the-five-joints.md#essentials-public-responsibility-and-fiscal-choice) |
+| [Allocation when claims conflict](06-when-there-is-genuinely-not-enough.md) | [Comparative need, equal claims and separate human, ecological and animal protections](31-the-five-joints.md#scarcity-and-separate-claims) |
+| [Regional powers and a collective executive](17-how-public-power-is-built.md) | [Territorial representation](31-the-five-joints.md#territorial-power-and-the-second-chamber) and [collective responsibility](31-the-five-joints.md#collective-government-and-identifiable-responsibility) |
+| [Independent appointments](17-how-public-power-is-built.md#how-somebody-comes-to-hold-an-office) | [Divided selection, elected confirmation and professional control](31-the-five-joints.md#independent-appointments) |
+| [Residence and the retained vote](18-the-vote-conviction-does-not-take.md) | [Residence, citizenship and nonresident membership](31-the-five-joints.md#residence-and-political-membership) |
+| [Limits on records and their reuse](19-what-may-be-kept-about-you.md) | [Privacy, coordination and people lost between services](31-the-five-joints.md#records-and-coordination) |
+| [Protection after exposing authority](24-the-shield.md) | [Immediate protection and the delay of unrelated cases](31-the-five-joints.md#protection-while-the-connection-is-disputed) |
+| [Custody and retained rights](29-the-one-thing-taken.md) | [The case for confinement and the limits on its place and effects](31-the-five-joints.md#coercion) |
+| [Emergency powers](20-a-crisis-does-not-suspend-the-republic.md) | [Urgent action with continuing rights](31-the-five-joints.md#emergency-action-without-suspended-rights) |
+| [The unamendable cores](22-changing-the-rules.md) | [Human standing, direct animal protection and later generations' freedom to change the rules](31-the-five-joints.md#what-a-majority-may-not-remove) |
+
 ### Where a decision belongs
+
+The **protected core** is what constitutional amendment must preserve.
+An **institutional mechanism**, such as an appointment procedure, is a chosen
+means of serving those commitments. It binds the government while in force,
+but it can be changed through the lawful amendment route while preserving the
+core. A rule's current constitutional status does not make it unamendable.
 
 The book distinguishes five kinds of question. A **constitutional invariant**
 binds every public decision. A **democratic choice** belongs to public law
@@ -202,6 +252,11 @@ the main reading sequence; the method follows it as an optional technical part.
   in the paired voiding route.
 - **Floor:** what every person is owed without conditions of employment,
   registration, belonging, payment or approved behaviour.
+- **Protected core:** standing, the floor and other specified human rights,
+  commons and direct animal protections that lawful constitutional amendment
+  must preserve. It does not include every present institution.
+- **Institutional mechanism:** a chosen arrangement for making, carrying out
+  or reviewing decisions. Its justification is separate from the right it serves.
 - **Delivery:** the protected condition reaching a person. A debt, payment or
   institutional output is not enough to establish it.
 - **Receipt:** a report of delivery. The ordinary receipt route needs matching
@@ -210,8 +265,8 @@ the main reading sequence; the method follows it as an optional technical part.
   supports a supplement, never standing, the floor, the vote, liberty or recognition.
 - **Supplement:** protection against a recorded qualifying event through a scheme
   or public guarantee. The conclusion carries no amount and proves no payment.
-- **Certificate:** an authorised attestation of a person's competence for a
-  function. In the formal record it gates nothing and is not a licence.
+- **Competence certificate:** an authorised attestation of a person's competence
+  for a function. In the formal record it gates nothing and is not a licence.
 - **Compensation record:** a promised wage, profit, return, grant, prize, subsidy
   or incentive. A payment conclusion also needs independent attestation; neither
   entry carries an amount.
