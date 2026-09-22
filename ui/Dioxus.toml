@@ -1,0 +1,14 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+[application]
+name = "rights-book-ui"
+default_platform = "web"
+
+[web.app]
+title = "The Rights Nobody Has to Earn"
+base_path = "rights-nobody-has-to-earn"
+
+[bundle]
+identifier = "dev.dhilipsiva.rights-book"
+publisher = "dhilipsiva"
+short_description = "Book 1 reader and executable companion"
+resources = ["assets"]

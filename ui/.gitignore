@@ -1,0 +1,5 @@
+/generated/*
+/dist/
+/artifacts/
+/target/
+/node_modules/

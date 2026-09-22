@@ -45,6 +45,8 @@ AUTHOR = "dhilipsiva"
 REPOSITORY = "https://github.com/dhilipsiva/rights-nobody-has-to-earn/blob/main/"
 EPUB_NS = "http://www.idpf.org/2007/ops"
 SAMPLE_CHAPTERS = (1, 5, 8, 21, 31)
+UI_PREFIX = "/rights-nobody-has-to-earn/"
+UI_ORIGIN = "https://dhilipsiva.dev"
 
 
 @dataclass
@@ -216,6 +218,8 @@ def resolve_link(href: str, source: Document, documents: list[Document], mode: s
         if fragment and fragment not in target.targets:
             raise ValueError(f"{source.path}: missing fragment {href}")
         anchor = target.targets[fragment] if fragment else target.stem
+        if mode == "ui":
+            return f"{UI_PREFIX}read/{target.stem}/#{anchor}"
         prefix = "" if mode == "html" else f"{target.stem}.xhtml"
         return f"{prefix}#{anchor}"
     # Formal source, fixtures, registry and instructions remain repository links.
@@ -259,6 +263,52 @@ def select_sample(documents: list[Document]) -> list[Document]:
     if tuple(doc.number for doc in selected) != SAMPLE_CHAPTERS:
         raise ValueError('The publisher sample chapters must exist in reading order')
     return selected
+
+
+def ui_markdown(doc: Document, documents: list[Document]) -> str:
+    """Keep source Markdown; rewrite only link destinations via the same validator."""
+    source = re.sub(r"<!--.*?-->", "", doc.path.read_text(encoding="utf-8"), flags=re.S)
+    # Use parser offsets indirectly: destinations themselves are replaced, so nested
+    # labels, balanced URL parentheses, note definitions and Tamil stay verbatim.
+    for node in doc.tree.iter("a"):
+        href = node.get("href", "")
+        if node.get("role") in {"doc-noteref", "doc-backlink"}:
+            continue
+        resolved = resolve_link(href, doc, documents, "ui")
+        if resolved != href:
+            source = source.replace(f"]({href})", f"]({UI_ORIGIN}{resolved})" if resolved.startswith("/") else f"]({resolved})")
+            source = re.sub(r"(?m)^(\s*\[[^\]]+\]:\s*)" + re.escape(href) + r"(?=\s|$)",
+                            lambda m: m[1] + (UI_ORIGIN if resolved.startswith("/") else "") + resolved, source)
+    return source.strip() + "\n"
+
+
+def export_ui(output: Path, documents: list[Document]) -> None:
+    """Export reader data, without introducing a second Markdown renderer."""
+    output.mkdir(parents=True, exist_ok=True)
+    pages = []
+    for index, doc in enumerate(documents):
+        body = article(doc, documents, "ui")
+        text = " ".join(" ".join(doc.tree.itertext()).split())
+        paragraphs = [" ".join(p.itertext()).strip() for p in doc.tree.findall("p")]
+        description = next((p for p in paragraphs if len(p) > 40), doc.title)
+        description = description[:197].rsplit(" ", 1)[0] + "…" if len(description) > 200 else description
+        pages.append({
+            "stem": doc.stem, "title": doc.title, "label": doc.label,
+            "number": doc.number, "part": doc.part, "order": index,
+            "path": f"{UI_PREFIX}read/{doc.stem}/",
+            "canonical": f"{UI_ORIGIN}{UI_PREFIX}read/{doc.stem}/",
+            "source": REPOSITORY + "book-1/" + doc.path.name,
+            "description": description, "html": body, "text": text,
+            "markdown": ui_markdown(doc, documents),
+            "sections": [{"id": n.get("id"), "title": "".join(n.itertext()), "level": int(n.tag[1])}
+                         for n in doc.tree.iter() if re.fullmatch(r"h[1-6]", n.tag) and n.get("id")],
+            "previous": documents[index - 1].stem if index else None,
+            "next": documents[index + 1].stem if index + 1 < len(documents) else None,
+        })
+    result = {"title": TITLE, "author": AUTHOR, "license": "CC-BY-4.0",
+              "prefix": UI_PREFIX, "origin": UI_ORIGIN, "pages": pages,
+              "word_count": sum(len(p["text"].split()) for p in pages)}
+    (output / "book.json").write_text(json.dumps(result, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 
 
 def cover(sample: bool = False) -> str:
@@ -400,8 +450,15 @@ def main() -> None:
     args_parser.add_argument('--browser-executable', help='Optional existing Chromium executable')
     args_parser.add_argument('--no-pdf', action='store_true', help='Build HTML and EPUB without launching Chromium')
     args_parser.add_argument('--sample', action='store_true', help='Build the selected publisher sample: chapters 1, 5, 8, 21 and 31')
+    args_parser.add_argument('--ui-export', type=Path, help='Export the full reader JSON only, using the existing renderer and link checks')
     args = args_parser.parse_args()
     docs = read_documents()
+    if args.ui_export:
+        if args.sample:
+            args_parser.error('--ui-export always exports the complete book')
+        export_ui(args.ui_export, docs)
+        print(f'Exported {len(docs)} ordered UI inputs in {args.ui_export}')
+        return
     if args.sample:
         docs = select_sample(docs)
     output = args.output_dir.resolve()

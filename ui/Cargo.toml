@@ -1,0 +1,55 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+[workspace]
+members = ["reason"]
+resolver = "2"
+
+[package]
+name = "rights-book-ui"
+version = "0.1.0"
+edition = "2024"
+license = "MIT OR Apache-2.0"
+publish = false
+default-run = "rights-book-ui"
+
+[features]
+default = []
+web = ["dioxus/web", "dep:dioxus-web", "dep:web-sys"]
+ssg = ["dep:dioxus-ssr", "dep:dioxus-fullstack-core", "dep:base64"]
+desktop = ["dioxus/desktop", "dep:directories", "dep:book-reason", "dep:futures-channel", "dep:flate2", "dep:postcard"]
+
+[dependencies]
+dioxus = { version = "=0.7.10", default-features = false, features = ["macro", "html", "signals", "hooks", "launch", "document"] }
+dioxus-web = { version = "=0.7.10", optional = true, features = ["hydrate"] }
+dioxus-ssr = { version = "=0.7.10", optional = true }
+dioxus-fullstack-core = { version = "=0.7.10", optional = true }
+base64 = { version = "0.22", optional = true }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+web-sys = { version = "0.3", optional = true, features = ["Window", "Storage", "Location"] }
+postcard = { version = "1", optional = true, features = ["use-std"] }
+flate2 = { version = "1", optional = true }
+directories = { version = "6", optional = true }
+futures-channel = { version = "0.3", optional = true }
+book-reason = { path = "reason", optional = true }
+
+[[bin]]
+name = "export-site"
+path = "src/bin/export_site.rs"
+required-features = ["ssg"]
+
+[[bin]]
+name = "desktop-check"
+path = "src/bin/desktop_check.rs"
+required-features = ["desktop"]
+
+[profile.release]
+opt-level = "s"
+lto = "thin"
+codegen-units = 1
+strip = true
+
+[profile.release.package.book-reason]
+opt-level = 3
+
+[profile.release.package.nibli-reason]
+opt-level = 3

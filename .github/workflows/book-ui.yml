@@ -1,0 +1,100 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+name: Book UI
+on:
+  push:
+    paths: ['ui/**', 'tools/build_book.py', 'tools/book_assets/**', 'book-1/**', 'tests/pins/suites.json', 'engine.pin', '.github/workflows/book-ui.yml']
+  pull_request:
+    paths: ['ui/**', 'tools/build_book.py', 'tools/book_assets/**', 'book-1/**', 'tests/pins/suites.json', 'engine.pin', '.github/workflows/book-ui.yml']
+  workflow_dispatch:
+permissions:
+  contents: read
+env:
+  CARGO_BUILD_JOBS: 2
+jobs:
+  desktop:
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-24.04, windows-latest]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          path: book
+          persist-credentials: false
+      - uses: dtolnay/rust-toolchain@stable
+      - uses: astral-sh/setup-uv@v6
+      - name: Set up the pinned engine
+        shell: bash
+        working-directory: book
+        run: ./bootstrap.sh
+      - name: Linux system webview dependencies
+        if: runner.os == 'Linux'
+        run: sudo apt-get update && sudo apt-get install -y libwebkit2gtk-4.1-dev libgtk-3-dev libxdo-dev libayatana-appindicator3-dev librsvg2-dev xvfb
+      - name: Build offline native bundle and compare source/compiled scenarios
+        working-directory: book
+        run: python ui/scripts/build.py desktop
+      - name: Build native integration test
+        working-directory: book
+        run: cargo build --manifest-path ui/Cargo.toml --locked --release --features desktop --bin desktop-check
+      - name: Exercise native Linux webview
+        if: runner.os == 'Linux'
+        working-directory: book
+        env:
+          LIBGL_ALWAYS_SOFTWARE: '1'
+          GDK_BACKEND: x11
+        run: |
+          timeout 300 xvfb-run -a ui/target/release/desktop-check ui/artifacts/desktop-check.json
+          cp ui/artifacts/desktop-check.json ui/artifacts/desktop-scenarios.json
+          timeout 60 xvfb-run -a ui/target/release/desktop-check ui/artifacts/desktop-check.json --resume
+      - name: Exercise native Windows WebView2
+        if: runner.os == 'Windows'
+        working-directory: book
+        run: |
+          .\ui\target\release\desktop-check.exe ui\artifacts\desktop-check.json
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+          Copy-Item ui\artifacts\desktop-check.json ui\artifacts\desktop-scenarios.json
+          .\ui\target\release\desktop-check.exe ui\artifacts\desktop-check.json --resume
+      - uses: actions/upload-artifact@v4
+        with:
+          name: book-ui-${{ runner.os }}
+          path: book/ui/artifacts/
+  web:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          path: book
+          persist-credentials: false
+      - uses: dtolnay/rust-toolchain@stable
+        with:
+          targets: wasm32-unknown-unknown
+      - uses: astral-sh/setup-uv@v6
+      - working-directory: book
+        run: ./bootstrap.sh
+      - name: Matching Wasm bindings
+        run: cargo install wasm-bindgen-cli --version 0.2.128 --locked
+      - name: Build full static section and execute scenarios
+        working-directory: book
+        run: python ui/scripts/build.py web
+      - name: Assembler development tests
+        working-directory: book
+        run: uv run --with markdown-it-py==4.2.0 --with mdit-py-plugins==0.6.1 python -m unittest tests.test_build_book
+      - name: Focused adapter test and Rust formatting
+        working-directory: book
+        run: |
+          cargo test --manifest-path ui/Cargo.toml --locked -p book-reason
+          cargo fmt --manifest-path ui/Cargo.toml --all -- --check
+      - name: Browser dependencies
+        run: uv run --with playwright==1.63.0 playwright install --with-deps chromium
+      - name: Browser acceptance
+        working-directory: book
+        run: |
+          python ui/scripts/serve.py > /tmp/book-ui-server.log 2>&1 &
+          uv run --script ui/tests/browser.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: book-ui-web
+          path: |
+            book/ui/dist/
+            book/ui/artifacts/browser/

@@ -1,0 +1,327 @@
+{
+  "license": "CC-BY-4.0",
+  "questions": [
+    {
+      "id": "q1",
+      "text": "Who must start helping if I can't ask?",
+      "chapters": [
+        1
+      ],
+      "part": 1
+    },
+    {
+      "id": "q2",
+      "text": "Do I count without papers, citizenship or a family?",
+      "chapters": [
+        2
+      ],
+      "part": 1
+    },
+    {
+      "id": "q3",
+      "text": "What does the record accept as evidence — and what can a temporary name not prove?",
+      "chapters": [
+        3
+      ],
+      "part": 1
+    },
+    {
+      "id": "q4",
+      "text": "What am I owed — and do I have to earn it?",
+      "chapters": [
+        4
+      ],
+      "part": 1
+    },
+    {
+      "id": "q5",
+      "text": "Does a receipt prove I was fed?",
+      "chapters": [
+        5
+      ],
+      "part": 1
+    },
+    {
+      "id": "q6",
+      "text": "What if there is genuinely not enough — and who owes when the ordinary route fails?",
+      "chapters": [
+        6,
+        7
+      ],
+      "part": 1
+    },
+    {
+      "id": "q8",
+      "text": "What does nobody need permission for?",
+      "chapters": [
+        8
+      ],
+      "part": 2
+    },
+    {
+      "id": "q9",
+      "text": "Can a wage or a supplement be a condition on essentials?",
+      "chapters": [
+        9
+      ],
+      "part": 2
+    },
+    {
+      "id": "q10",
+      "text": "Can money or contribution buy standing?",
+      "chapters": [
+        10,
+        11
+      ],
+      "part": 2
+    },
+    {
+      "id": "q12",
+      "text": "Is the route the same for everyone?",
+      "chapters": [
+        12
+      ],
+      "part": 2
+    },
+    {
+      "id": "q13",
+      "text": "Do ecological limits and animals have claims of their own?",
+      "chapters": [
+        13
+      ],
+      "part": 2
+    },
+    {
+      "id": "q14",
+      "text": "Who may hold a role in my life?",
+      "chapters": [
+        14
+      ],
+      "part": 2
+    },
+    {
+      "id": "q15",
+      "text": "Does arriving put a price on personhood?",
+      "chapters": [
+        15
+      ],
+      "part": 2
+    },
+    {
+      "id": "q16",
+      "text": "Does answerability end when an official leaves office?",
+      "chapters": [
+        16
+      ],
+      "part": 3
+    },
+    {
+      "id": "q17",
+      "text": "How is public power built and divided?",
+      "chapters": [
+        17
+      ],
+      "part": 3
+    },
+    {
+      "id": "q18",
+      "text": "Can a conviction take my vote?",
+      "chapters": [
+        18
+      ],
+      "part": 3
+    },
+    {
+      "id": "q19",
+      "text": "What may be kept about me — and reused?",
+      "chapters": [
+        19
+      ],
+      "part": 3
+    },
+    {
+      "id": "q20",
+      "text": "Does a crisis suspend the republic?",
+      "chapters": [
+        20
+      ],
+      "part": 3
+    },
+    {
+      "id": "q21",
+      "text": "How do I get heard, and what can a court order?",
+      "chapters": [
+        21
+      ],
+      "part": 3
+    },
+    {
+      "id": "q22",
+      "text": "Can a future majority remove the floor?",
+      "chapters": [
+        22
+      ],
+      "part": 3
+    },
+    {
+      "id": "q23",
+      "text": "Whose findings count when authority is absent, forged or stale?",
+      "chapters": [
+        23
+      ],
+      "part": 3
+    },
+    {
+      "id": "q24",
+      "text": "Am I protected after exposing authority?",
+      "chapters": [
+        24
+      ],
+      "part": 4
+    },
+    {
+      "id": "q25",
+      "text": "Can a credibility finding erase what I have done?",
+      "chapters": [
+        25,
+        26
+      ],
+      "part": 4
+    },
+    {
+      "id": "q27",
+      "text": "Can they hold me — and what stays mine?",
+      "chapters": [
+        27,
+        29
+      ],
+      "part": 4
+    },
+    {
+      "id": "q28",
+      "text": "Is a recorded placement an actual place?",
+      "chapters": [
+        28
+      ],
+      "part": 4
+    },
+    {
+      "id": "q30",
+      "text": "What happens when the system notices it broke?",
+      "chapters": [
+        30
+      ],
+      "part": 4
+    }
+  ],
+  "terms": [
+    {
+      "name": "entry",
+      "definition": "A supplied report, such as a birth, judgment or receipt.",
+      "chapter": 3
+    },
+    {
+      "name": "record",
+      "definition": "The entries supplied for the rules to read. Its vocabulary can be restricted while its contents are false, incomplete or stale.",
+      "chapter": 3
+    },
+    {
+      "name": "rule",
+      "definition": "A route from specified premises to a conclusion. It does not verify the premises for itself.",
+      "chapter": null
+    },
+    {
+      "name": "derived",
+      "definition": "Established from the exact rules and supplied record being checked. It does not mean observed in the world.",
+      "chapter": null
+    },
+    {
+      "name": "person",
+      "definition": "The status from which the floor follows. A birth or encounter can establish it; custody and release supply independent backstops.",
+      "chapter": 2
+    },
+    {
+      "name": "standing",
+      "definition": "The universal status every person holds. It is neither a rank nor permission to act on someone.",
+      "chapter": 2
+    },
+    {
+      "name": "floor",
+      "definition": "What every person is owed without conditions of employment, registration, belonging, payment or approved behaviour.",
+      "chapter": 4
+    },
+    {
+      "name": "delivery",
+      "definition": "The protected condition reaching a person. A debt, payment or institutional output is not enough to establish it.",
+      "chapter": 5
+    },
+    {
+      "name": "receipt",
+      "definition": "A report of delivery. The ordinary receipt route needs matching independent evidence before delivery can be concluded.",
+      "chapter": 5
+    },
+    {
+      "name": "shield",
+      "definition": "Protection against conviction-based imprisonment following an exposure of authority, while no effective deceit finding applies to that exposure.",
+      "chapter": 24
+    },
+    {
+      "name": "voiding",
+      "definition": "An effective credibility finding that prevents a new adverse signature from qualifying. It leaves the floor intact.",
+      "chapter": 25
+    },
+    {
+      "name": "placement",
+      "definition": "Reviewed authority for a named place of confinement. It does not establish that anyone was moved there or received shelter.",
+      "chapter": 28
+    },
+    {
+      "name": "breach marker",
+      "definition": "A conclusion naming a defect in the supplied record. It does not itself investigate, correct, compensate or release anyone.",
+      "chapter": 30
+    },
+    {
+      "name": "democratic corridor",
+      "definition": "The range of public choices within constitutional invariants and protected freedoms, with review and peaceful change.",
+      "chapter": 22
+    }
+  ],
+  "steps": [
+    {
+      "title": "Ask first",
+      "heading": "Ask before anything is written",
+      "lead": "The record says nothing about Marisol. Ask whether food arrived.",
+      "note": "Not derivable describes the supplied record. It does not establish that anyone went hungry."
+    },
+    {
+      "title": "Add a receipt",
+      "heading": "A provider reports a delivery",
+      "lead": "Provender reports food for Marisol. A receipt is one side of the route.",
+      "note": "The ordinary delivery rule still needs an authorised, independent witness and a matching observation."
+    },
+    {
+      "title": "Authorise a witness",
+      "heading": "Somebody is allowed to watch",
+      "lead": "Ledgerwitness is authorised to witness delivery for Marisol.",
+      "note": "Authority is not attestation. No matching observation has been supplied."
+    },
+    {
+      "title": "The observation",
+      "heading": "The match is specific",
+      "lead": "Ledgerwitness attests this item, for this recipient, at food scope.",
+      "note": "Every repeated variable must refer to the same thing. The witness differs from the provider."
+    },
+    {
+      "title": "The wrong witness",
+      "heading": "The provider as its own witness",
+      "lead": "Replace the independent witness with Provender. Supply its self-attestation for food and shelter.",
+      "note": "The canonical rules reject both self-attestations. The declared counterfactual removes only the food rule’s independence condition."
+    },
+    {
+      "title": "What this proves",
+      "heading": "Derived is not observed",
+      "lead": "Restore the independent food witness. Ask about personhood and shelter too.",
+      "note": "Food can derive without a prior personhood entry. Food evidence supplies no shelter conclusion. These answers do not establish that a report is true."
+    }
+  ]
+}

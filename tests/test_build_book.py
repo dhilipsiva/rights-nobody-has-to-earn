@@ -119,5 +119,42 @@ class CurrentEditionTests(unittest.TestCase):
                         self.assertIn(fragment, ids, (name, href))
 
 
+class UiExportTests(unittest.TestCase):
+    def test_all_inputs_share_renderer_order_notes_and_citation_links(self):
+        import json
+        docs = book.read_documents()
+        with tempfile.TemporaryDirectory() as directory:
+            book.export_ui(Path(directory), docs)
+            result = json.loads((Path(directory) / 'book.json').read_text())
+        self.assertEqual(len(result['pages']), 34)
+        self.assertEqual([p['stem'] for p in result['pages']], [d.stem for d in docs])
+        ids = {p['path']: {e.get('id') for e in ET.fromstring(p['html']).iter() if e.get('id')}
+               for p in result['pages']}
+        for row, doc in zip(result['pages'], docs):
+            self.assertNotIn('<!--', row['markdown'])
+            self.assertEqual(row['html'], book.article(doc, docs, 'ui'))
+            self.assertIn(''.join(doc.tree.find('h1').itertext()), row['text'])
+            for node in ET.fromstring(row['html']).iter('a'):
+                href = node.get('href', '')
+                if href.startswith(book.UI_PREFIX):
+                    path, _, anchor = href.partition('#')
+                    self.assertIn(path, ids)
+                    self.assertIn(anchor, ids[path])
+        self.assertIn('lang="ta"', result['pages'][0]['html'])
+        self.assertIn('footnote-backref', result['pages'][-2]['html'])
+
+    def test_ui_markdown_keeps_balanced_external_urls_and_note_definitions(self):
+        with tempfile.TemporaryDirectory() as directory, patch.object(book, 'ROOT', Path(directory)):
+            first = Path(directory) / 'one.md'
+            first.write_text('# One\n\n<!-- editorial -->\n\n[Next](two.md#second)\n\nA claim.[^n]\n\n[^n]: [Study](https://example.org/study_(2020)).\n')
+            second = Path(directory) / 'two.md'
+            second.write_text('# Two\n\n## Second\n')
+            docs = [book.document(first), book.document(second)]
+            md = book.ui_markdown(docs[0], docs)
+            self.assertNotIn('editorial', md)
+            self.assertIn('https://dhilipsiva.dev/rights-nobody-has-to-earn/read/two/#two-second', md)
+            self.assertIn('[^n]: [Study](https://example.org/study_(2020)).', md)
+
+
 if __name__ == "__main__":
     unittest.main()
