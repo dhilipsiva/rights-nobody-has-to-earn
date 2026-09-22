@@ -49,6 +49,9 @@ Windows needs the MSVC Rust toolchain, Visual Studio C++ build tools and the
 Microsoft Edge WebView2 runtime. Windows 10/11 installations with WebView2 are
 the supported Windows configuration. A Windows build is not produced by a
 Linux `cargo build` invocation.
+For a Windows checkout, enable Git's `core.longpaths` before cloning; the
+repository's existing constitutional test paths exceed the legacy path limit.
+The Windows CI job enables this before checkout.
 
 Linux needs GTK 3, WebKitGTK **4.1**, libxdo, OpenSSL and their runtime
 libraries. For a Debian/Ubuntu development host:
