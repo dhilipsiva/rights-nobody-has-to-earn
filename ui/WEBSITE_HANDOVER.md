@@ -1,176 +1,210 @@
 <!-- SPDX-License-Identifier: CC-BY-4.0 -->
-# Paste-ready prompt for the website’s Claude session
+# Live companion: website integration handover
 
-Integrate the completed standalone Book 1 section into **https://dhilipsiva.dev/rights-nobody-has-to-earn/**.
-Keep this task separate from any migration of the website’s framework. Use the
-existing hosting arrangement unless an actual hosting constraint requires a change.
+Mount the standalone Book 1 section at
+**https://dhilipsiva.dev/rights-nobody-has-to-earn/** using the existing website
+hosting arrangement. This implementation does not change or deploy that host.
+Keep integration separate from any website framework migration.
 
-The implementation belongs to the book repository:
+## Artifacts and source
 
 - Repository: <https://github.com/dhilipsiva/rights-nobody-has-to-earn>
-- Local checkout: `/home/dhilipsiva/projects/dhilipsiva/rights-nobody-has-to-earn`
-- Source and build instructions: `ui/README.md`
-- Ready static directory: `ui/dist/rights-nobody-has-to-earn/`
-- Linux native ZIP: `ui/artifacts/rights-book-linux.zip`
-- Windows native ZIP: `ui/artifacts/rights-book-windows.zip`
-- Browser results and 24 screenshots: `ui/artifacts/browser/`
-- Native scenario and restart results: `ui/artifacts/native/`
-- Build checks: `.github/workflows/book-ui.yml` (web, Ubuntu 24.04, Windows).
+- Checkout: `/home/dhilipsiva/projects/dhilipsiva/rights-nobody-has-to-earn`
+- Build instructions and architecture: [README.md](README.md)
+- Static section: `ui/dist/rights-nobody-has-to-earn/`
+- Native bundles: `ui/artifacts/rights-book-linux.zip` and
+  `ui/artifacts/rights-book-windows.zip`
+- Browser report and 18 screenshots: `ui/artifacts/browser/`
+- Source/compiled execution report: `ui/artifacts/source-execution.json`
+- Native execution and restart reports: `ui/artifacts/native/`
+- CI definition: `.github/workflows/book-ui.yml`
 
-Generated outputs are ignored by Git. Use the local artifacts or rebuild; do not
-expect `dist/` or ZIP files to appear in a fresh clone. Do not modify the original
-wireframes, constitutional source, substantive pins, or engine pin for integration.
-Do not run `verify.sh` as part of this UI task.
+Generated artifacts are ignored by Git. Use these local artifacts or rebuild;
+a fresh clone does not contain the ZIPs or static output. The constitutional
+source, substantive pins, engine pin and original wireframes remain unchanged.
+`verify.sh` was not run and is outside this UI build and workflow.
 
-## What to mount
+The companion contains 12 people, 30 forks with 64 executable steps, 12 design
+joints and 21 authored dossier entries. Seven joints have explicit executable
+counterfactuals. Those add 14 records, making 78 executable records in total.
+The seven comparisons always execute both the canonical and modified records.
+No expected verdict is packaged in the application or public data.
 
-Copy the **contents** of `ui/dist/rights-nobody-has-to-earn/` into the host’s static
-directory for `/rights-nobody-has-to-earn/`. Preserve every nested path. The build
-already includes the book navigation, fonts and styles. It has no website header
-or footer, and needs no iframe or production application server.
+## Mounting, routes and redirects
 
-Serve this section **before the website’s general routing fallback**. Existing
-directories resolve to their `index.html`; a missing book path must return HTTP
-**404**, with the provided `404.html` if the host supports a custom error body.
-Never send the website shell or the companion home with status 200 for a missing
-book page. Normalize directory URLs to a trailing slash without losing fragments
-or query strings.
+Copy the **contents** of `ui/dist/rights-nobody-has-to-earn/` into the host's
+static directory for `/rights-nobody-has-to-earn/`, preserving nested paths.
+The section includes its own navigation, styles and bundled fonts. It needs
+neither an iframe nor a production application server.
 
-Preserve these routes:
+Serve this section before the website's general routing fallback. Directories
+resolve to `index.html`. Missing book paths return HTTP **404**, using the
+provided `404.html` where supported. Do not serve the website shell or game
+with a 200 response for a missing path.
 
-| Path beneath the prefix | Content |
+| Path beneath the book prefix | Response |
 | --- | --- |
-| `/` | Companion floor |
-| `/map/` | 26 questions and glossary |
-| `/walkthrough/food-delivery/` | Six-step walkthrough |
-| `/about/` | Explanation, sources and licences |
-| `/read/` | Complete contents |
-| `/read/<source-file-stem>/` | 34 reading inputs, individually generated |
-| `/search/` | Local search, marked noindex |
+| `/` | Live companion game |
+| `/read/` | Complete book contents |
+| `/read/<source-file-stem>/` | One of 34 complete reading inputs |
+| `/search/` | Local search; noindex |
+| `/map/` | HTTP 301 to `/rights-nobody-has-to-earn/` |
+| `/walkthrough/food-delivery/` | HTTP 301 to `/rights-nobody-has-to-earn/` |
+| `/about/` | HTTP 301 to `/rights-nobody-has-to-earn/#dossier` |
 
-All 40 routes contain complete Dioxus-generated HTML before hydration. Preserve
-their titles, descriptions, canonical URLs, Open Graph metadata, Book/Chapter
-structured data, namespaced heading IDs, and Markdown alternate links. Reading
-and document navigation work without JavaScript. Do not replace this output with
-a client-only router.
+`redirects.json` exports the three redirect rules with full prefixed paths.
+Implement them for GET and HEAD, preserving query strings. The supplied local
+server implements the manifest. There are **37 generated routes**, plus a
+separate 404 document; the three retired routes are redirects, not extra HTML
+pages. Preserve trailing-slash URLs, fragments and query strings.
 
-## Entry and discovery
+All routes contain Dioxus-rendered HTML before hydration. Preserve complete
+reader text, titles, descriptions, canonical URLs, Open Graph metadata,
+Book/Chapter structured data, namespaced headings and Markdown alternate links.
+The game's initial HTML includes its introduction, controls, sources and reader
+links, but no verdicts. Without JavaScript it explains that gameplay requires
+local execution; the complete book remains readable and navigable.
 
-Add a normal navigation anchor to `/rights-nobody-has-to-earn/` with a clear label
-such as “The Rights Nobody Has to Earn”. Disable any framework-specific link
-prefetching for this destination. Other website routes must not import, preload,
-prefetch or download this section’s CSS, fonts, JavaScript, Wasm or constitution.
+## Automatic local execution
+
+Entering the game automatically starts a persistent same-origin module worker
+at `assets/engine-worker.js`. It loads `assets/engine/book_reason.js`, engine
+Wasm and the full `assets/engine/constitution.bin.gz`. Ordinary reader pages do
+not start the engine. Unrelated website pages must not import, preload or
+prefetch any book resource. Add a normal navigation anchor to the section and
+disable framework-specific prefetching for that link.
+
+Loaded engine resources stay in memory. Every move constructs a fresh knowledge
+base, including replays, evidence removal and counterfactual restoration.
+Pending, cancelled, failed and incomplete executions produce no substitute
+answer or completion. Retry executes again. Refusal remains distinct from FALSE;
+unexpected definitive results remain visible unchanged. Costs, tally categories
+and dossier arguments are explicitly authored interpretation, not findings.
+
+Game history is stored separately from reader preferences under `b1game:v2`
+(`b1game-v2.json` natively). Saved and shared history carries completed fork IDs,
+joint settings and measured-joint IDs, never trusted totals or verdicts. On
+restoration, background execution checks history before awarding dependent
+progress; foreground moves take priority. Reset clears only game state.
+Storage failure uses memory, and sharing provides a selectable-link fallback.
+Objections open a prefilled GitHub issue composer without submitting anything.
+
+Serve Wasm as `application/wasm`, and use appropriate JavaScript, JSON and UTF-8
+Markdown MIME types. The constitution gzip can be served as a gzip resource;
+the worker also handles transparent HTTP decompression. Keep reader and engine
+assets separate. Current resource sizes are:
+
+| Resource | Bytes |
+| --- | ---: |
+| Compressed compiled constitution and executable inputs | 25,023,214 |
+| Decoded compiled input | 127,375,269 |
+| Engine Wasm | 1,452,759 |
+| Reader/game Wasm | 4,554,701 |
+
+These are resource sizes, not peak memory measurements. Knowledge-base
+construction also uses memory. Check the host's Content Security Policy against
+Dioxus hydration, the document-evaluation bridge, module workers and Wasm.
+Apply any required changes narrowly to this section and validate them. Deploy
+HTML and unversioned assets atomically to avoid mixing builds. HTTP compression
+of HTML, CSS, JavaScript and Wasm is useful.
+
+## Discovery
 
 Register `https://dhilipsiva.dev/rights-nobody-has-to-earn/sitemap.xml` in the
-website’s sitemap index and/or robots.txt sitemap directives. Link the section’s
-`llms.txt` and `content.json` from the website’s existing agent discovery files.
-Preserve `llms-full.txt`, `cases.json`, and each route’s `index.md`. These are static
-reading/citation interfaces. llms.txt is a discovery proposal, not a guarantee
-that agents use it. Add no MCP server, chatbot or execution API.
+website's sitemap index or robots.txt. Link `llms.txt` and `content.json` from
+existing agent discovery. Preserve `llms-full.txt`, `game.json`, versioned
+input-only `cases.json`, and route `index.md` files. The inputs include source
+references, complete records, queries and declared transformations. Development
+expectations and execution reports are not public exports. Search is excluded
+from the sitemap. No execution API, chatbot or MCP server is needed.
 
-## Asset handling
+## Local preview and rebuild
 
-Keep assets under this prefix. Use correct MIME types, especially
-`application/wasm`, JavaScript, JSON and UTF-8 Markdown. “Run locally” creates a
-same-origin module worker at `assets/engine-worker.js`; only then does it load
-`assets/engine/book_reason.js`, its Wasm, and `constitution.bin.gz`. Keep those
-resources separate from the initial reader download. The gzip file can be served
-as a gzip resource; the worker also handles transparent HTTP decompression.
-
-If the host has a Content Security Policy, check it against Dioxus’s hydration
-bootstrap, document-evaluation bridge, module worker and WebAssembly. Apply any
-necessary compatibility changes narrowly to this section and validate them;
-do not silently weaken the entire website’s policy. Deploy the section atomically
-and revalidate unversioned HTML/assets together to avoid mixing build versions.
-Ordinary HTTP compression of HTML, CSS, JS and Wasm is useful.
-
-The compiled full constitution is **24,907,985 compressed bytes**, approximately
-125 MB decoded before knowledge-base construction, and the engine Wasm is about
-1.4 MB. The reader Wasm is about 2.3 MB. A failed, cancelled or incomplete run must
-retain clearly labelled **precomputed** examples. Only successful execution is
-labelled **live**. Keep the distinction between a formal conclusion and an
-observed event, and the canonical/counterfactual distinction.
-
-## Rebuild commands
-
-From the book repository, with Rust, Python 3.11+ and uv installed:
+With Python 3.11+, uv, Rust and the pinned sibling Nibli checkout available:
 
 ```sh
-./bootstrap.sh
 rustup target add wasm32-unknown-unknown
 cargo install wasm-bindgen-cli --version 0.2.128 --locked
 python3 ui/scripts/build.py web
 python3 ui/scripts/serve.py
 ```
 
-The local URL is <http://127.0.0.1:8789/rights-nobody-has-to-earn/>. The build uses
-Dioxus 0.7.10 with an explicit SSR static exporter and hydration bootstrap. It
-executes nine curated scenarios against the whole source constitution, then
-compares every result with execution from all compiled constitution statements.
-It does not run the complete constitutional verifier. `--reuse-results` is only
-for UI-only development iteration; omit it for source/content release builds.
+Open <http://127.0.0.1:8789/rights-nobody-has-to-earn/>. `--port` selects another
+preview port. The server root is an unrelated-host fixture for resource checks.
+The build compiles inputs; it does not execute examples to manufacture displayed
+answers. There is no result-reuse option. See the README for the separate
+source/compiled comparison and browser acceptance commands.
 
-Native builds run `python3 ui/scripts/build.py desktop` on each target OS; see the
-README for system WebView dependencies. The local Linux ZIP is a **Nix-built
-x86_64 binary**, includes its Nix shell, and requires that runtime environment.
-It is not an AppImage or an Ubuntu binary. The Windows ZIP contains an actual
-x64 MSVC build, requires WebView2, and is unsigned. Both embed the book, fonts,
-search and reasoning resources for offline use. Native releases need not be
-published to integrate the web section.
+Native builds use `python3 ui/scripts/build.py desktop` on each target OS. Both
+embed reader text, fonts, search and reasoning inputs for offline use. The engine
+initializes on a background thread when the game opens. The Linux x86_64 ZIP
+requires the included Nix runtime configuration; it is not an AppImage or an
+Ubuntu binary. The Windows x64 MSVC ZIP requires WebView2 and is unsigned.
+Neither includes the development test harness. Source and website links still
+need a network connection.
 
-## Validation already performed in the book repository
+## Verification performed on 2026-09-23
 
-- Nine assembler tests passed, covering all 34 inputs in manuscript order,
-  chapter links, footnotes, tables, Tamil and Markdown export without editorial
-  comments. Public JSON citation links, sitemap exclusions and the declared
-  counterfactual export were checked.
-- All 40 routes passed initial-HTML, no-JavaScript reading, canonical/metadata,
-  heading-fragment and genuine-404 checks under the production prefix. Browser
-  refresh, saved position, fragment navigation and footnote return links passed.
-- Four companion screens were inspected at 390, 768 and 1280 pixels in both
-  themes; 24 screenshots were captured. Keyboard skip/focus, reduced motion and
-  solid-background text contrast checks passed. This is focused testing, not an
-  accessibility certification.
-- Search (including Tamil), question progress, walkthrough/self-check, resets,
-  theme restoration and unavailable browser storage passed.
-- Source and compiled execution matched for all nine scenarios. The final Linux
-  source/compiled preparation took **193.19 seconds**. No rules or pins changed.
-  Windows source/compiled execution also matched the Linux output exactly and
-  took **245.42 seconds** in a separate native MSVC run.
-- Chromium **151.0.7922.34** matched every precomputed verdict for all nine live
-  scenarios. Measured local startup/execution was **8.00–12.11 seconds**, including
-  an **8.93-second** first scenario, with concurrent build activity on this host.
-  The UI remained responsive during execution. Resource failure, retry,
-  cancellation, incomplete responses, stale responses, evidence removal,
-  backwards steps and counterfactual restoration passed.
-- Native Linux WebKitGTK and Windows WebView2 **153** passed all nine scenarios,
-  offline reading/search/fonts, and native chapter navigation. Both restored
-  theme, step, chapter and scroll position in a second process.
-- The local unrelated-host fixture downloaded zero book resources. Initial book
-  navigation downloaded no engine worker, engine Wasm or constitution.
+- All 78 records matched source and compiled execution, including fixture-backed
+  records and all seven measured joints. An additional seven-run sequence checked
+  replay, evidence removal and rule restoration. The source/compiled check took
+  **1,422.75 seconds** (23 minutes 42.75 seconds).
+- Six input-boundary tests, five game-state tests, the engine cancellation test
+  and nine reader-assembler tests passed. These cover complete source snapshots,
+  scoped controls, fixture isolation, trusted source preconditions, history trust,
+  Nell's tally, duplicate completion and foreground priority.
+- Chromium **151.0.7922.34** matched all 78 complete worker outcomes to source
+  execution. Automatic game startup took **5.017 seconds**. Individual worker
+  executions took **5.910–9.488 seconds**. Theme changes during execution took
+  **34.9–63.7 ms**, demonstrating that the worker kept UI interaction responsive.
+- Browser checks covered Nell's live **+3 held / +2 limited**, evidence removal,
+  repeated completion, counterfactual restoration, persistent worker reuse,
+  saved/shared history replay and reset preserving reader preferences. Worker,
+  Wasm and input-resource failures, cancellation, retry, incomplete, stale and
+  unexpected responses, unavailable storage and clipboard fallback passed.
+  None supplied a precomputed substitute answer.
+- All 37 routes passed initial-HTML, metadata, no-JavaScript reading, fragment,
+  redirect and genuine-404 checks. All 34 reading inputs, English/Tamil search,
+  saved reading positions and footnote return links passed. The unrelated-host
+  fixture downloaded zero book resources; reader routes loaded no engine.
+- Hero, completed Nell play and dossier states were inspected at **390, 768 and
+  1280px**, in both themes, with 18 screenshots. Overflow, keyboard skip/focus,
+  44px control dimensions, reduced motion and solid-background text-contrast
+  checks passed. Contrast checks use 4.5:1 for ordinary text and 3:1 for large
+  text. This is focused
+  accessibility testing, not certification.
+- Native Linux WebKitGTK passed all 78 records through the production background
+  adapter, with exact source-outcome equality, offline reading, Tamil, search,
+  chapter/fragment navigation, cancellation and retry. Native record execution
+  took **5.439–6.966 seconds**. A second process restored reader preferences,
+  reading position and game history, replaying Nell before showing its tally.
+  Reports: `linux-game-scenarios.json` and `linux-game.json` in the native folder.
+- Native Windows x64 MSVC with Edge WebView2 **153** passed all 78 records,
+  with exact source-outcome equality, offline reading, Tamil, search, native
+  navigation, cancellation and retry. Executions took **10.312–14.961 seconds**.
+  A second process restored reader preferences and position and replayed saved
+  game history before counting it. Reports: `windows-game-scenarios.json` and
+  `windows-game-persistence.json` in the native folder.
 
-The actual dhilipsiva.dev host has **not** been changed or validated by the book
-implementation. Firefox, Safari and low-memory mobile live execution have not
-been measured. The local timings are not internet download benchmarks. Hosted
-CI status should be checked for the commit being integrated; local build/test
-results above do not assert a completed GitHub Actions run.
+Browser and Linux timings include concurrent activity on this host. They are
+local measurements, not internet download benchmarks. Firefox, Safari and live
+execution on low-memory mobile hardware have not been measured. The actual
+website's routing, asset policy and deployment have not been changed or tested.
+Hosted CI status must be checked for the commit being integrated; these local
+results do not assert a successful GitHub Actions run.
 
-## Checks to perform on the real website
+## Checks on the real host
 
-1. Load and refresh every generated route directly, including
-   `/read/epigraph/`, `/read/31-the-five-joints/` and `/read/method/`.
-   Check a heading fragment, a footnote/backlink, and a missing page returning 404.
-2. Disable JavaScript: inspect page source, metadata and complete chapter text;
-   follow contents, chapter and previous/next links.
-3. Open unrelated website pages with cache disabled, then hover/focus the book
-   link. Record that no book resource downloads until document navigation.
-4. Enter the section and inspect network requests: no engine resources until
-   “Run locally”. Run an example successfully and test a blocked engine request.
-5. Check mobile layouts, both themes, Tamil, keyboard focus, search and restored
-   progress. Confirm the host’s policies do not break hydration or the worker.
-6. Fetch the sitemap, agent indexes, Markdown counterparts and JSON directly.
-   Check source attribution, licences, MIME types and canonical URLs.
-
-Report the concrete website changes, deployed artifact location, checks run and
-any remaining host limitations. Do not combine this integration with a framework
-migration.
+1. Load and refresh reader, game and search URLs directly. Follow a heading
+   fragment and footnote backlink. Check all three HTTP 301 redirects and a
+   missing path's 404 response.
+2. Disable JavaScript and verify complete reader text, metadata, contents and
+   previous/next links. Confirm the game has no initial verdicts.
+3. With cache disabled, open unrelated pages and hover/focus the book link;
+   no book resources should download. Reader navigation loads no engine.
+4. Open the game and confirm automatic engine requests. Execute Nell, block an
+   engine resource, then retry. Check that failure shows no substitute result.
+5. Check both themes, small-screen controls, keyboard focus, Tamil, search and
+   restored history. Validate the host's CSP, MIME types and gzip handling.
+6. Fetch discovery files, input JSON and Markdown directly. Report the deployed
+   location, actual checks and remaining host limitations.

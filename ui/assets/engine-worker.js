@@ -1,22 +1,23 @@
 // SPDX-License-Identifier: MIT OR Apache-2.0
-self.onmessage = async ({data: {id, request}}) => {
+let engine;
+self.onmessage = async ({data}) => {
+  const {request} = data;
   try {
-    const [engine, response] = await Promise.all([
-      import('./engine/book_reason.js'),
-      fetch('./engine/constitution.bin.gz')
-    ]);
-    if (!response.ok) throw new Error(`Constitution download failed (${response.status})`);
-    if (!self.DecompressionStream) throw new Error('This browser does not support the compressed local engine resource.');
-    const bytes = new Uint8Array(await response.arrayBuffer());
-    const decoded = bytes[0] === 31 && bytes[1] === 139
-      ? await new Response(new Blob([bytes]).stream().pipeThrough(new DecompressionStream('gzip'))).arrayBuffer()
-      : bytes.buffer;
-    const input = new Uint8Array(decoded);
-    await engine.default();
-    const outcome = JSON.parse(engine.execute(input, id));
-    self.postMessage({request, outcome});
-  } catch (error) {
-    console.error(error.stack || error);
-    self.postMessage({request, error: String(error.message || error)});
-  }
+    if (data.kind === 'initialize') {
+      const module = await import('./engine/book_reason.js');
+      await module.default();
+      const bytes = new Uint8Array(data.bytes);
+      let decoded = bytes;
+      if (bytes[0] === 31 && bytes[1] === 139) {
+        if (!self.DecompressionStream) throw new Error('Compressed engine resources are unsupported in this browser.');
+        decoded = new Uint8Array(await new Response(new Blob([bytes]).stream().pipeThrough(new DecompressionStream('gzip'))).arrayBuffer());
+      }
+      engine = new module.Engine(decoded);
+      self.postMessage({request,ready:true});
+    } else {
+      if (!engine) throw new Error('Engine is not initialized');
+      const outcome = JSON.parse(engine.execute(data.id));
+      self.postMessage({request,outcome});
+    }
+  } catch(error) { self.postMessage({request,error:String(error.message || error)}); }
 };

@@ -1,7 +1,9 @@
 // SPDX-License-Identifier: MIT OR Apache-2.0
 pub mod data;
+mod game;
+pub mod game_state;
 mod pages;
-mod reasoning;
+pub mod reasoning;
 mod state;
 use data::*;
 use dioxus::prelude::*;
@@ -155,9 +157,10 @@ pub fn App() -> Element {
                             button { class: "q-btn q-btn--ghost", aria_label: "Book back", disabled: history.read().is_empty(), onclick: move |_| session.back(), "←" }
                             button { class: "q-btn q-btn--ghost", aria_label: "Book forward", disabled: future.read().is_empty(), onclick: move |_| session.forward(), "→" }
                         }
-                        for (route, label) in [("", "floor"), ("map", "map"), ("walkthrough", "walkthrough"), ("read", "read"), ("search", "search"), ("about", "about")] {
-                            NavLink { to: format!("{PREFIX}{}", match route { "" => "".into(), "walkthrough" => "walkthrough/food-delivery/".into(), _ => format!("{route}/") }), current: if section == route { "page" } else { "" }, "{label}" }
+                        for (route, label) in [("", "play"), ("read", "read"), ("search", "search")] {
+                            NavLink { to: format!("{PREFIX}{}", if route.is_empty() { String::new() } else { format!("{route}/") }), current: if section == route { "page" } else { "" }, "{label}" }
                         }
+                        NavLink { to: format!("{PREFIX}#dossier"), "dossier" }
                         button { class: "q-btn q-btn--ghost theme-control", aria_label: "Switch colour theme", onclick: move |_| {
                             let theme = if session.preferences.peek().theme == "dark" { "light" } else { "dark" };
                             session.preferences.write().theme = theme.into(); session.save();
@@ -166,10 +169,7 @@ pub fn App() -> Element {
                 }
             }
             main { id: "main-content", tabindex: "-1", aria_label: "{title}",
-                if path == PREFIX { pages::Floor {} }
-                else if path == format!("{PREFIX}map/") { pages::Map {} }
-                else if path == format!("{PREFIX}walkthrough/food-delivery/") { pages::Walkthrough {} }
-                else if path == format!("{PREFIX}about/") { pages::About {} }
+                if path == PREFIX { game::Game {} }
                 else if path == format!("{PREFIX}read/") { pages::Contents {} }
                 else if path == format!("{PREFIX}search/") { pages::Search {} }
                 else if let Some(page) = book().pages.iter().find(|p| p.path == path) { pages::Reader { key: "{page.stem}", page: page.clone() } }
@@ -180,7 +180,7 @@ pub fn App() -> Element {
                 div { class: "sources-strip",
                     span { "dhilipsiva · prose CC BY 4.0" }
                     a { href: public_url(format!("{path}index.md")), "Markdown" }
-                    NavLink { to: format!("{PREFIX}about/"), "Sources & licences" }
+                    NavLink { to: format!("{PREFIX}#sources"), "Sources & licences" }
                     a { href: public_url(format!("{PREFIX}llms.txt")), "Agent index" }
                 }
             }

@@ -31,14 +31,11 @@ def bindgen():
                 return candidate
     raise SystemExit(f'Install wasm-bindgen-cli {version}, or set WASM_BINDGEN to its executable. See README.md.')
 
-def prepare(skip_results=False):
+def prepare():
     run('uv', 'run', '--script', 'tools/build_book.py', '--ui-export', 'ui/generated')
     run(sys.executable, UI / 'scripts/prepare.py')
-    if not skip_results:
-        run('cargo', 'run', '--locked', '--release', '-p', 'book-reason', '--bin', 'precompute', '--',
-            'generated/reason-inputs.json', 'generated/cases.json', 'generated/constitution.bin', cwd=UI)
-    elif not (UI / 'generated/cases.json').is_file():
-        raise SystemExit('No precomputed cases; omit --reuse-results.')
+    run('cargo', 'run', '--locked', '--release', '-p', 'book-reason', '--bin', 'precompute', '--',
+        'generated/reason-inputs.json', 'generated/constitution.bin', cwd=UI)
     (UI / 'generated/constitution.bin.gz').write_bytes(gzip.compress((UI / 'generated/constitution.bin').read_bytes(), mtime=0))
     css = '\n'.join((UI / 'assets' / f).read_text(encoding='utf-8') for f in ['fonts.css','quine.css','app.css'])
     for font in (UI / 'assets/fonts').glob('*.ttf'):
@@ -103,13 +100,12 @@ def main():
     parser.add_argument('--binary', type=Path, help='Already-built native executable, for package only')
     parser.add_argument('--platform', choices=['linux','windows'], help='Target OS, for package only')
     parser.add_argument('--nix-runtime', action='store_true', help='Label an already-built Linux binary as requiring Nix')
-    parser.add_argument('--reuse-results', action='store_true', help='Development only: reuse executed cases while changing UI code; final builds omit this')
     args = parser.parse_args()
     if args.target == 'package':
         if not args.binary or not args.platform: parser.error('package requires --binary and --platform')
         package_desktop(args.binary, args.platform, args.nix_runtime)
         return
-    prepare(args.reuse_results)
+    prepare()
     if args.target == 'web': web()
     if args.target == 'desktop': desktop()
 if __name__ == '__main__': main()

@@ -1,0 +1,1108 @@
+{
+  "license": "CC0-1.0",
+  "version": 2,
+  "cases": {
+    "silence:0": {
+      "snapshots": [],
+      "add": [
+        "receives(Marisol, FoodForMarisol, Provender)."
+      ],
+      "references": [
+        "book-1/05-whether-it-arrived.pins.nibli"
+      ]
+    },
+    "silence:1": {
+      "snapshots": [],
+      "add": [
+        "receives(Marisol, FoodForMarisol, Provender).",
+        "authorized(Provender, DeliveryWitness, Marisol).",
+        "observe(Provender, FoodForMarisol, Marisol, FoodScope)."
+      ],
+      "references": [
+        "book-1/05-whether-it-arrived.pins.nibli"
+      ]
+    },
+    "conviction:0": {
+      "snapshots": [
+        {
+          "source": "book-1/27-a-prisoner-is-a-person.pins.nibli",
+          "through": "travel(Zed).",
+          "occurrence": 1
+        }
+      ],
+      "add": [],
+      "references": [
+        "book-1/27-a-prisoner-is-a-person.pins.nibli"
+      ]
+    },
+    "conviction:1": {
+      "snapshots": [
+        {
+          "source": "book-1/27-a-prisoner-is-a-person.pins.nibli",
+          "through": "travel(Zed).",
+          "occurrence": 1
+        }
+      ],
+      "add": [],
+      "references": [
+        "book-1/27-a-prisoner-is-a-person.pins.nibli"
+      ]
+    },
+    "shield:0": {
+      "snapshots": [
+        {
+          "source": "book-1/24-the-shield.pins.nibli",
+          "through": "prisoner(Sly).",
+          "occurrence": 1
+        }
+      ],
+      "add": [],
+      "references": [
+        "book-1/24-the-shield.pins.nibli",
+        "book-1/16-public-answerability.pins.nibli"
+      ]
+    },
+    "shield:1": {
+      "snapshots": [
+        {
+          "source": "book-1/24-the-shield.pins.nibli",
+          "through": "false(Kel).",
+          "occurrence": 1
+        }
+      ],
+      "add": [],
+      "references": [
+        "book-1/24-the-shield.pins.nibli",
+        "book-1/21-a-way-to-be-heard.pins.nibli"
+      ]
+    },
+    "shield:2": {
+      "snapshots": [
+        {
+          "source": "book-1/24-the-shield.pins.nibli",
+          "through": "prisoner(Don).",
+          "occurrence": 1
+        }
+      ],
+      "add": [],
+      "references": [
+        "book-1/24-the-shield.pins.nibli"
+      ]
+    },
+    "void:0": {
+      "snapshots": [
+        {
+          "source": "book-1/25-voiding.pins.nibli",
+          "through": "false(Esa).",
+          "occurrence": 1
+        }
+      ],
+      "add": [],
+      "references": [
+        "book-1/25-voiding.pins.nibli",
+        "book-1/03-what-counts-as-evidence.pins.nibli"
+      ]
+    },
+    "void:1": {
+      "snapshots": [
+        {
+          "source": "book-1/25-voiding.pins.nibli",
+          "through": "false(Esa).",
+          "occurrence": 1
+        }
+      ],
+      "add": [],
+      "references": [
+        "book-1/25-voiding.pins.nibli",
+        "book-1/10-contribution.pins.nibli",
+        "book-1/18-the-vote-conviction-does-not-take.pins.nibli",
+        "book-1/26-clawback.pins.nibli"
+      ]
+    },
+    "ballot:0": {
+      "snapshots": [
+        {
+          "source": "book-1/18-the-vote-conviction-does-not-take.pins.nibli",
+          "through": "lose(Points, Hano).",
+          "occurrence": 1
+        }
+      ],
+      "add": [],
+      "references": [
+        "book-1/18-the-vote-conviction-does-not-take.pins.nibli",
+        "book-1/03-what-counts-as-evidence.pins.nibli",
+        "book-1/19-what-may-be-kept-about-you.pins.nibli",
+        "book-1/29-the-one-thing-taken.pins.nibli",
+        "book-1/27-a-prisoner-is-a-person.pins.nibli"
+      ]
+    },
+    "ballot:1": {
+      "snapshots": [
+        {
+          "source": "book-1/18-the-vote-conviction-does-not-take.pins.nibli",
+          "through": "decide(Cira, Ballot).",
+          "occurrence": 1
+        }
+      ],
+      "add": [],
+      "references": [
+        "book-1/18-the-vote-conviction-does-not-take.pins.nibli",
+        "book-1/14-holding-a-role-in-somebodys-life.pins.nibli",
+        "book-1/10-contribution.pins.nibli"
+      ]
+    },
+    "nell:0": {
+      "snapshots": [],
+      "add": [
+        "born(Nell)."
+      ],
+      "references": [
+        "book-1/01-the-child-with-nobody.pins.nibli",
+        "book-1/05-whether-it-arrived.pins.nibli",
+        "tests/pins/delivery/received-outside-custody/fixture.nibli",
+        "book-1/22-changing-the-rules.pins.nibli",
+        "book-1/07-who-owes-and-what-follows.pins.nibli",
+        "book-1/30-when-the-system-notices-it-broke.pins.nibli"
+      ]
+    },
+    "nell:1": {
+      "snapshots": [],
+      "add": [
+        "born(Nell).",
+        "receives(Nell, FoodForNell, Provender).",
+        "authorized(Ledgerwitness, DeliveryWitness, Nell).",
+        "observe(Ledgerwitness, FoodForNell, Nell, FoodScope)."
+      ],
+      "references": [
+        "book-1/01-the-child-with-nobody.pins.nibli",
+        "book-1/05-whether-it-arrived.pins.nibli",
+        "tests/pins/delivery/received-outside-custody/fixture.nibli",
+        "book-1/07-who-owes-and-what-follows.pins.nibli",
+        "book-1/28-where-people-are-put.pins.nibli"
+      ]
+    },
+    "nell:2": {
+      "snapshots": [],
+      "add": [
+        "born(Nell).",
+        "receives(Nell, FoodForNell, Provender).",
+        "authorized(Ledgerwitness, DeliveryWitness, Nell).",
+        "observe(Ledgerwitness, FoodForNell, Nell, FoodScope)."
+      ],
+      "references": [
+        "book-1/01-the-child-with-nobody.pins.nibli",
+        "book-1/05-whether-it-arrived.pins.nibli",
+        "tests/pins/delivery/received-outside-custody/fixture.nibli",
+        "book-1/18-the-vote-conviction-does-not-take.pins.nibli",
+        "book-1/17-how-public-power-is-built.pins.nibli",
+        "book-1/14-holding-a-role-in-somebodys-life.pins.nibli"
+      ]
+    },
+    "newcomer:0": {
+      "snapshots": [],
+      "add": [
+        "at(MPNewcomer, RepublicJurisdiction)."
+      ],
+      "references": [
+        "book-1/15-arriving-and-belonging.pins.nibli"
+      ]
+    },
+    "newcomer:1": {
+      "snapshots": [],
+      "add": [],
+      "references": [
+        "book-1/15-arriving-and-belonging.pins.nibli"
+      ]
+    },
+    "release:0": {
+      "snapshots": [
+        {
+          "source": "book-1/27-a-prisoner-is-a-person.pins.nibli",
+          "through": "travel(Zed).",
+          "occurrence": 1
+        }
+      ],
+      "add": [],
+      "references": [
+        "book-1/27-a-prisoner-is-a-person.pins.nibli"
+      ]
+    },
+    "release:1": {
+      "snapshots": [
+        {
+          "source": "book-1/27-a-prisoner-is-a-person.pins.nibli",
+          "through": "travel(Nemo).",
+          "occurrence": 1
+        }
+      ],
+      "add": [],
+      "references": [
+        "book-1/27-a-prisoner-is-a-person.pins.nibli"
+      ]
+    },
+    "emergency:0": {
+      "snapshots": [
+        {
+          "source": "book-1/20-a-crisis-does-not-suspend-the-republic.pins.nibli",
+          "through": "complete(PSMandateConflictrequisitionRecord, PSCompensatedRequisitionMeasure, PSMandateConflictrequisitionSubject).",
+          "occurrence": 1
+        }
+      ],
+      "add": [],
+      "references": [
+        "book-1/20-a-crisis-does-not-suspend-the-republic.pins.nibli"
+      ]
+    },
+    "emergency:1": {
+      "snapshots": [
+        {
+          "source": "book-1/20-a-crisis-does-not-suspend-the-republic.pins.nibli",
+          "through": "travel(Nell).",
+          "occurrence": 1
+        }
+      ],
+      "add": [],
+      "references": [
+        "book-1/20-a-crisis-does-not-suspend-the-republic.pins.nibli",
+        "book-1/29-the-one-thing-taken.pins.nibli"
+      ]
+    },
+    "scarcity:0": {
+      "snapshots": [
+        {
+          "source": "book-1/06-when-there-is-genuinely-not-enough.pins.nibli",
+          "through": "obliged(ScarcitySequenceManager, PublishScarcityEvidenceReasonsAndReassessment, ScarcitySequenceAuthorization).",
+          "occurrence": 1
+        }
+      ],
+      "add": [
+        "at(MPNewcomer, RepublicJurisdiction)."
+      ],
+      "references": [
+        "book-1/06-when-there-is-genuinely-not-enough.pins.nibli",
+        "book-1/15-arriving-and-belonging.pins.nibli"
+      ]
+    },
+    "scarcity:1": {
+      "snapshots": [
+        {
+          "source": "book-1/06-when-there-is-genuinely-not-enough.pins.nibli",
+          "through": "member(Wealth, ForbiddenPriorityKeyVocabulary).",
+          "occurrence": 1
+        }
+      ],
+      "add": [
+        "at(MPNewcomer, RepublicJurisdiction)."
+      ],
+      "references": [
+        "book-1/06-when-there-is-genuinely-not-enough.pins.nibli",
+        "book-1/15-arriving-and-belonging.pins.nibli"
+      ]
+    },
+    "scarcity:2": {
+      "snapshots": [
+        {
+          "source": "tests/pins/scarcity/priority/false-scarcity-stops-the-allocation/expect.pins.nibli",
+          "through": "complete(ScarcityUnmetRecord, ReviewedScarcityShortfall, ScarcitySequenceResource).",
+          "occurrence": 2
+        }
+      ],
+      "add": [
+        "at(MPNewcomer, RepublicJurisdiction)."
+      ],
+      "references": [
+        "book-1/06-when-there-is-genuinely-not-enough.pins.nibli",
+        "book-1/15-arriving-and-belonging.pins.nibli"
+      ]
+    },
+    "amend:0": {
+      "snapshots": [
+        {
+          "source": "book-1/22-changing-the-rules.pins.nibli",
+          "through": "become(Amend_Floor, Law).",
+          "occurrence": 1
+        }
+      ],
+      "add": [],
+      "references": [
+        "book-1/22-changing-the-rules.pins.nibli",
+        "book-1/03-what-counts-as-evidence.pins.nibli"
+      ]
+    },
+    "amend:1": {
+      "snapshots": [
+        {
+          "source": "book-1/22-changing-the-rules.pins.nibli",
+          "through": "become(Amend_Meta, Law).",
+          "occurrence": 1
+        }
+      ],
+      "add": [],
+      "references": [
+        "book-1/22-changing-the-rules.pins.nibli"
+      ]
+    },
+    "amend:2": {
+      "snapshots": [
+        {
+          "source": "book-1/22-changing-the-rules.pins.nibli",
+          "through": "become(Amend_Sneak, Law).",
+          "occurrence": 1
+        }
+      ],
+      "add": [],
+      "references": [
+        "book-1/22-changing-the-rules.pins.nibli",
+        "book-1/03-what-counts-as-evidence.pins.nibli"
+      ]
+    },
+    "nell-record:0": {
+      "snapshots": [
+        {
+          "source": "book-1/19-what-may-be-kept-about-you.pins.nibli",
+          "through": "obliged(RecordSequenceHolder, ProtectRecordSubjectsAndObjectorsFromRetaliation, RecordSequenceAuthorization).",
+          "occurrence": 1
+        }
+      ],
+      "add": [],
+      "references": [
+        "book-1/19-what-may-be-kept-about-you.pins.nibli"
+      ]
+    },
+    "nell-record:1": {
+      "snapshots": [
+        {
+          "source": "book-1/19-what-may-be-kept-about-you.pins.nibli",
+          "through": "obliged(RecordSupportReviewer, DecideWithHumanAndIndependentReview, RecordSupportRecord).",
+          "occurrence": 1
+        }
+      ],
+      "add": [],
+      "references": [
+        "book-1/19-what-may-be-kept-about-you.pins.nibli"
+      ]
+    },
+    "nell-record:2": {
+      "snapshots": [
+        {
+          "source": "book-1/19-what-may-be-kept-about-you.pins.nibli",
+          "through": "false(Nell).",
+          "occurrence": 1
+        }
+      ],
+      "add": [],
+      "references": [
+        "book-1/19-what-may-be-kept-about-you.pins.nibli",
+        "book-1/07-who-owes-and-what-follows.pins.nibli",
+        "book-1/13-a-place-in-which-life-remains-possible.pins.nibli"
+      ]
+    },
+    "nell-placement:0": {
+      "snapshots": [
+        {
+          "source": "book-1/28-where-people-are-put.pins.nibli",
+          "through": "prisoner(Nell).",
+          "occurrence": 1
+        }
+      ],
+      "add": [],
+      "references": [
+        "book-1/28-where-people-are-put.pins.nibli",
+        "book-1/07-who-owes-and-what-follows.pins.nibli",
+        "book-1/30-when-the-system-notices-it-broke.pins.nibli"
+      ]
+    },
+    "nell-placement:1": {
+      "snapshots": [
+        {
+          "source": "book-1/28-where-people-are-put.pins.nibli",
+          "through": "owe(State, Dwell, Nell).",
+          "occurrence": 1
+        }
+      ],
+      "add": [],
+      "references": [
+        "book-1/28-where-people-are-put.pins.nibli",
+        "book-1/07-who-owes-and-what-follows.pins.nibli",
+        "book-1/05-whether-it-arrived.pins.nibli",
+        "book-1/04-what-you-are-owed.pins.nibli"
+      ]
+    },
+    "marisol-witness:0": {
+      "snapshots": [],
+      "add": [
+        "receives(Marisol, FoodForMarisol, Provender).",
+        "authorized(Ledgerwitness, DeliveryWitness, Marisol)."
+      ],
+      "references": [
+        "book-1/05-whether-it-arrived.pins.nibli"
+      ]
+    },
+    "marisol-witness:1": {
+      "snapshots": [],
+      "add": [
+        "receives(Marisol, FoodForMarisol, Provender).",
+        "authorized(Ledgerwitness, DeliveryWitness, Marisol).",
+        "observe(Ledgerwitness, FoodForMarisol, Marisol, FoodScope)."
+      ],
+      "references": [
+        "book-1/05-whether-it-arrived.pins.nibli"
+      ]
+    },
+    "hano-placement:0": {
+      "snapshots": [
+        {
+          "source": "book-1/28-where-people-are-put.pins.nibli",
+          "through": "building(Homestay, Hano).",
+          "occurrence": 1
+        }
+      ],
+      "add": [],
+      "references": [
+        "book-1/28-where-people-are-put.pins.nibli",
+        "book-1/03-what-counts-as-evidence.pins.nibli"
+      ]
+    },
+    "hano-placement:1": {
+      "snapshots": [
+        {
+          "source": "book-1/28-where-people-are-put.pins.nibli",
+          "through": "dwell(Hano).",
+          "occurrence": 2
+        }
+      ],
+      "add": [],
+      "references": [
+        "book-1/28-where-people-are-put.pins.nibli",
+        "book-1/04-what-you-are-owed.pins.nibli",
+        "book-1/30-when-the-system-notices-it-broke.pins.nibli"
+      ]
+    },
+    "hano-release:0": {
+      "snapshots": [
+        {
+          "source": "book-1/29-the-one-thing-taken.pins.nibli",
+          "through": "decide(Hano, Ballot).",
+          "occurrence": 1
+        }
+      ],
+      "add": [],
+      "references": [
+        "book-1/29-the-one-thing-taken.pins.nibli",
+        "book-1/03-what-counts-as-evidence.pins.nibli",
+        "book-1/18-the-vote-conviction-does-not-take.pins.nibli",
+        "book-1/19-what-may-be-kept-about-you.pins.nibli"
+      ]
+    },
+    "hano-release:1": {
+      "snapshots": [
+        {
+          "source": "book-1/29-the-one-thing-taken.pins.nibli",
+          "through": "dwell(Hano).",
+          "occurrence": 2
+        }
+      ],
+      "add": [],
+      "references": [
+        "book-1/29-the-one-thing-taken.pins.nibli",
+        "book-1/03-what-counts-as-evidence.pins.nibli",
+        "book-1/18-the-vote-conviction-does-not-take.pins.nibli",
+        "book-1/28-where-people-are-put.pins.nibli"
+      ]
+    },
+    "bela-work:0": {
+      "snapshots": [
+        {
+          "source": "book-1/26-clawback.pins.nibli",
+          "through": "insure(Ledgerhouse, Bela, Illness).",
+          "occurrence": 1
+        }
+      ],
+      "add": [],
+      "references": [
+        "book-1/26-clawback.pins.nibli",
+        "book-1/10-contribution.pins.nibli",
+        "book-1/25-voiding.pins.nibli"
+      ]
+    },
+    "bela-work:1": {
+      "snapshots": [
+        {
+          "source": "book-1/26-clawback.pins.nibli",
+          "through": "owe(State, Eats, Bela).",
+          "occurrence": 2
+        }
+      ],
+      "add": [],
+      "references": [
+        "book-1/26-clawback.pins.nibli",
+        "book-1/10-contribution.pins.nibli"
+      ]
+    },
+    "pen:0": {
+      "snapshots": [
+        {
+          "source": "book-1/23-who-holds-the-pen.pins.nibli",
+          "through": "permits(Review, Gia).",
+          "occurrence": 1
+        }
+      ],
+      "add": [],
+      "references": [
+        "book-1/23-who-holds-the-pen.pins.nibli",
+        "book-1/25-voiding.pins.nibli"
+      ]
+    },
+    "pen:1": {
+      "snapshots": [
+        {
+          "source": "book-1/23-who-holds-the-pen.pins.nibli",
+          "through": "permits(Review, Boss).",
+          "occurrence": 1
+        }
+      ],
+      "add": [],
+      "references": [
+        "book-1/23-who-holds-the-pen.pins.nibli",
+        "book-1/16-public-answerability.pins.nibli"
+      ]
+    },
+    "pen:2": {
+      "snapshots": [
+        {
+          "source": "book-1/23-who-holds-the-pen.pins.nibli",
+          "through": "permits(Review, Vex).",
+          "occurrence": 1
+        }
+      ],
+      "add": [],
+      "references": [
+        "book-1/23-who-holds-the-pen.pins.nibli",
+        "book-1/26-clawback.pins.nibli",
+        "book-1/16-public-answerability.pins.nibli"
+      ]
+    },
+    "cira-ballot:0": {
+      "snapshots": [
+        {
+          "source": "book-1/18-the-vote-conviction-does-not-take.pins.nibli",
+          "through": "decide(Cira, Ballot).",
+          "occurrence": 1
+        }
+      ],
+      "add": [],
+      "references": [
+        "book-1/18-the-vote-conviction-does-not-take.pins.nibli",
+        "book-1/14-holding-a-role-in-somebodys-life.pins.nibli",
+        "book-1/10-contribution.pins.nibli"
+      ]
+    },
+    "cira-ballot:1": {
+      "snapshots": [
+        {
+          "source": "book-1/18-the-vote-conviction-does-not-take.pins.nibli",
+          "through": "decide(Esa, Ballot).",
+          "occurrence": 2
+        }
+      ],
+      "add": [],
+      "references": [
+        "book-1/18-the-vote-conviction-does-not-take.pins.nibli"
+      ]
+    },
+    "cira-clawback:0": {
+      "snapshots": [
+        {
+          "source": "book-1/26-clawback.pins.nibli",
+          "through": "false(Cira).",
+          "occurrence": 1
+        }
+      ],
+      "add": [],
+      "references": [
+        "book-1/26-clawback.pins.nibli",
+        "book-1/10-contribution.pins.nibli",
+        "book-1/18-the-vote-conviction-does-not-take.pins.nibli",
+        "book-1/04-what-you-are-owed.pins.nibli"
+      ]
+    },
+    "cira-clawback:1": {
+      "snapshots": [
+        {
+          "source": "book-1/26-clawback.pins.nibli",
+          "through": "false(Esa).",
+          "occurrence": 1
+        }
+      ],
+      "add": [],
+      "references": [
+        "book-1/26-clawback.pins.nibli",
+        "book-1/10-contribution.pins.nibli",
+        "book-1/03-what-counts-as-evidence.pins.nibli"
+      ]
+    },
+    "rex:0": {
+      "snapshots": [
+        {
+          "source": "book-1/24-the-shield.pins.nibli",
+          "through": "false(Rex).",
+          "occurrence": 1
+        }
+      ],
+      "add": [],
+      "references": [
+        "book-1/24-the-shield.pins.nibli"
+      ]
+    },
+    "rex:1": {
+      "snapshots": [
+        {
+          "source": "book-1/24-the-shield.pins.nibli",
+          "through": "prisoner(Rex).",
+          "occurrence": 1
+        }
+      ],
+      "add": [],
+      "references": [
+        "book-1/24-the-shield.pins.nibli"
+      ]
+    },
+    "rex:2": {
+      "snapshots": [
+        {
+          "source": "book-1/24-the-shield.pins.nibli",
+          "through": "defend(Rex).",
+          "occurrence": 2
+        }
+      ],
+      "add": [],
+      "references": [
+        "book-1/24-the-shield.pins.nibli"
+      ]
+    },
+    "rex:3": {
+      "snapshots": [
+        {
+          "source": "book-1/24-the-shield.pins.nibli",
+          "through": "prisoner(Rex).",
+          "occurrence": 5
+        }
+      ],
+      "add": [],
+      "references": [
+        "book-1/24-the-shield.pins.nibli"
+      ]
+    },
+    "adam:0": {
+      "snapshots": [
+        {
+          "source": "book-1/09-earning-above-the-floor.pins.nibli",
+          "through": "prevents(Adam, CustodyLabourProtectionDenial).",
+          "occurrence": 1
+        }
+      ],
+      "add": [],
+      "references": [
+        "book-1/09-earning-above-the-floor.pins.nibli",
+        "book-1/28-where-people-are-put.pins.nibli"
+      ]
+    },
+    "adam:1": {
+      "snapshots": [
+        {
+          "source": "book-1/09-earning-above-the-floor.pins.nibli",
+          "through": "prevents(Adam, TaxCollectionFloorAssetDeprivation).",
+          "occurrence": 1
+        }
+      ],
+      "add": [],
+      "references": [
+        "book-1/09-earning-above-the-floor.pins.nibli",
+        "book-1/11-what-money-cannot-buy.pins.nibli",
+        "book-1/28-where-people-are-put.pins.nibli"
+      ]
+    },
+    "nia:0": {
+      "snapshots": [
+        {
+          "source": "book-1/23-who-holds-the-pen.pins.nibli",
+          "through": "prisoner(Nia).",
+          "occurrence": 1
+        }
+      ],
+      "add": [],
+      "references": [
+        "book-1/23-who-holds-the-pen.pins.nibli",
+        "book-1/21-a-way-to-be-heard.pins.nibli"
+      ]
+    },
+    "nia:1": {
+      "snapshots": [
+        {
+          "source": "book-1/23-who-holds-the-pen.pins.nibli",
+          "through": "travel(Adam).",
+          "occurrence": 1
+        }
+      ],
+      "add": [],
+      "references": [
+        "book-1/23-who-holds-the-pen.pins.nibli"
+      ]
+    },
+    "jala:0": {
+      "snapshots": [
+        {
+          "source": "book-1/29-the-one-thing-taken.pins.nibli",
+          "through": "travel(Jala).",
+          "occurrence": 1
+        }
+      ],
+      "add": [
+        "put(State, Jala, UnknownCustodyKind)."
+      ],
+      "references": [
+        "book-1/29-the-one-thing-taken.pins.nibli",
+        "book-1/28-where-people-are-put.pins.nibli",
+        "book-1/18-the-vote-conviction-does-not-take.pins.nibli"
+      ]
+    },
+    "sly-selfcert:0": {
+      "snapshots": [
+        {
+          "source": "book-1/24-the-shield.pins.nibli",
+          "through": "defend(Sly).",
+          "occurrence": 3
+        }
+      ],
+      "add": [],
+      "references": [
+        "book-1/24-the-shield.pins.nibli"
+      ]
+    },
+    "sly-selfcert:1": {
+      "snapshots": [
+        {
+          "source": "book-1/24-the-shield.pins.nibli",
+          "through": "defend(Sly).",
+          "occurrence": 3
+        }
+      ],
+      "add": [],
+      "references": [
+        "book-1/24-the-shield.pins.nibli",
+        "book-1/30-when-the-system-notices-it-broke.pins.nibli"
+      ]
+    },
+    "rex-veto:0": {
+      "snapshots": [
+        {
+          "source": "book-1/24-the-shield.pins.nibli",
+          "through": "defend(Rex).",
+          "occurrence": 3
+        }
+      ],
+      "add": [],
+      "references": [
+        "book-1/24-the-shield.pins.nibli"
+      ]
+    },
+    "adam-earn:0": {
+      "snapshots": [
+        {
+          "source": "book-1/09-earning-above-the-floor.pins.nibli",
+          "through": "grant(Assayer, Welding, Adam).",
+          "occurrence": 1
+        }
+      ],
+      "add": [],
+      "references": [
+        "book-1/09-earning-above-the-floor.pins.nibli"
+      ]
+    },
+    "adam-earn:1": {
+      "snapshots": [
+        {
+          "source": "book-1/09-earning-above-the-floor.pins.nibli",
+          "through": "grant(Assayer, Welding, Adam).",
+          "occurrence": 1
+        }
+      ],
+      "add": [],
+      "references": [
+        "book-1/09-earning-above-the-floor.pins.nibli",
+        "book-1/12-the-same-route-for-everyone.pins.nibli"
+      ]
+    },
+    "nia-free:0": {
+      "snapshots": [
+        {
+          "source": "book-1/23-who-holds-the-pen.pins.nibli",
+          "through": "prisoner(Nia).",
+          "occurrence": 1
+        }
+      ],
+      "add": [],
+      "references": [
+        "book-1/23-who-holds-the-pen.pins.nibli",
+        "book-1/21-a-way-to-be-heard.pins.nibli",
+        "book-1/30-when-the-system-notices-it-broke.pins.nibli"
+      ]
+    },
+    "jala-floor:0": {
+      "snapshots": [
+        {
+          "source": "book-1/29-the-one-thing-taken.pins.nibli",
+          "through": "travel(Jala).",
+          "occurrence": 1
+        }
+      ],
+      "add": [],
+      "references": [
+        "book-1/29-the-one-thing-taken.pins.nibli",
+        "book-1/18-the-vote-conviction-does-not-take.pins.nibli",
+        "book-1/26-clawback.pins.nibli",
+        "book-1/04-what-you-are-owed.pins.nibli"
+      ]
+    },
+    "zed-compare:0": {
+      "snapshots": [
+        {
+          "source": "book-1/27-a-prisoner-is-a-person.pins.nibli",
+          "through": "travel(Zed).",
+          "occurrence": 1
+        }
+      ],
+      "add": [
+        "born(Nell)."
+      ],
+      "references": [
+        "book-1/27-a-prisoner-is-a-person.pins.nibli",
+        "book-1/01-the-child-with-nobody.pins.nibli",
+        "book-1/07-who-owes-and-what-follows.pins.nibli",
+        "book-1/28-where-people-are-put.pins.nibli"
+      ]
+    },
+    "zed-compare:1": {
+      "snapshots": [
+        {
+          "source": "book-1/27-a-prisoner-is-a-person.pins.nibli",
+          "through": "travel(Zed).",
+          "occurrence": 1
+        }
+      ],
+      "add": [
+        "born(Nell)."
+      ],
+      "references": [
+        "book-1/27-a-prisoner-is-a-person.pins.nibli",
+        "book-1/01-the-child-with-nobody.pins.nibli",
+        "book-1/07-who-owes-and-what-follows.pins.nibli",
+        "book-1/17-how-public-power-is-built.pins.nibli"
+      ]
+    },
+    "j-birth:canonical": {
+      "snapshots": [
+        {
+          "source": "book-1/source/counterfactual/no-birth-standing.pins.nibli",
+          "through": "err(Nell, Isolation).",
+          "occurrence": 1
+        }
+      ],
+      "add": [],
+      "references": [
+        "book-1/source/counterfactual/no-birth-standing.pins.nibli"
+      ],
+      "counterfactual": null
+    },
+    "j-birth:modified": {
+      "snapshots": [
+        {
+          "source": "book-1/source/counterfactual/no-birth-standing.pins.nibli",
+          "through": "err(Nell, Isolation).",
+          "occurrence": 1
+        }
+      ],
+      "add": [],
+      "references": [
+        "book-1/source/counterfactual/no-birth-standing.pins.nibli"
+      ],
+      "counterfactual": "counterfactual/no-birth-standing"
+    },
+    "j-personline:canonical": {
+      "snapshots": [
+        {
+          "source": "book-1/source/counterfactual/no-person-line.pins.nibli",
+          "through": "entitled(Zed, event { eats() }).",
+          "occurrence": 1
+        }
+      ],
+      "add": [],
+      "references": [
+        "book-1/source/counterfactual/no-person-line.pins.nibli"
+      ],
+      "counterfactual": null
+    },
+    "j-personline:modified": {
+      "snapshots": [
+        {
+          "source": "book-1/source/counterfactual/no-person-line.pins.nibli",
+          "through": "entitled(Zed, event { eats() }).",
+          "occurrence": 1
+        }
+      ],
+      "add": [],
+      "references": [
+        "book-1/source/counterfactual/no-person-line.pins.nibli"
+      ],
+      "counterfactual": "counterfactual/no-person-line"
+    },
+    "j-pen:canonical": {
+      "snapshots": [
+        {
+          "source": "book-1/source/counterfactual/unguarded-pen.pins.nibli",
+          "through": "false(Tyr).",
+          "occurrence": 1
+        }
+      ],
+      "add": [],
+      "references": [
+        "book-1/source/counterfactual/unguarded-pen.pins.nibli"
+      ],
+      "counterfactual": null
+    },
+    "j-pen:modified": {
+      "snapshots": [
+        {
+          "source": "book-1/source/counterfactual/unguarded-pen.pins.nibli",
+          "through": "false(Tyr).",
+          "occurrence": 1
+        }
+      ],
+      "add": [],
+      "references": [
+        "book-1/source/counterfactual/unguarded-pen.pins.nibli"
+      ],
+      "counterfactual": "counterfactual/unguarded-pen"
+    },
+    "j-court:canonical": {
+      "snapshots": [
+        {
+          "source": "book-1/source/counterfactual/no-public-court.pins.nibli",
+          "through": "prisoner(Sly).",
+          "occurrence": 1
+        }
+      ],
+      "add": [],
+      "references": [
+        "book-1/source/counterfactual/no-public-court.pins.nibli"
+      ],
+      "counterfactual": null
+    },
+    "j-court:modified": {
+      "snapshots": [
+        {
+          "source": "book-1/source/counterfactual/no-public-court.pins.nibli",
+          "through": "prisoner(Sly).",
+          "occurrence": 1
+        }
+      ],
+      "add": [],
+      "references": [
+        "book-1/source/counterfactual/no-public-court.pins.nibli"
+      ],
+      "counterfactual": "counterfactual/no-public-court"
+    },
+    "j-work:canonical": {
+      "snapshots": [
+        {
+          "source": "book-1/source/counterfactual/no-economic-work-freedom.pins.nibli",
+          "through": "prevents(Adam, WorkConstitutionalGate).",
+          "occurrence": 1
+        }
+      ],
+      "add": [],
+      "references": [
+        "book-1/source/counterfactual/no-economic-work-freedom.pins.nibli"
+      ],
+      "counterfactual": null
+    },
+    "j-work:modified": {
+      "snapshots": [
+        {
+          "source": "book-1/source/counterfactual/no-economic-work-freedom.pins.nibli",
+          "through": "prevents(Adam, WorkConstitutionalGate).",
+          "occurrence": 1
+        }
+      ],
+      "add": [],
+      "references": [
+        "book-1/source/counterfactual/no-economic-work-freedom.pins.nibli"
+      ],
+      "counterfactual": "counterfactual/no-economic-work-freedom"
+    },
+    "j-floorgate:canonical": {
+      "snapshots": [
+        {
+          "source": "book-1/source/counterfactual/no-economic-floor-gate.pins.nibli",
+          "through": "prevents(Adam, PaymentInstrumentAsDelivery).",
+          "occurrence": 1
+        }
+      ],
+      "add": [],
+      "references": [
+        "book-1/source/counterfactual/no-economic-floor-gate.pins.nibli"
+      ],
+      "counterfactual": null
+    },
+    "j-floorgate:modified": {
+      "snapshots": [
+        {
+          "source": "book-1/source/counterfactual/no-economic-floor-gate.pins.nibli",
+          "through": "prevents(Adam, PaymentInstrumentAsDelivery).",
+          "occurrence": 1
+        }
+      ],
+      "add": [],
+      "references": [
+        "book-1/source/counterfactual/no-economic-floor-gate.pins.nibli"
+      ],
+      "counterfactual": "counterfactual/no-economic-floor-gate"
+    },
+    "j-independence:canonical": {
+      "snapshots": [],
+      "add": [
+        "receives(Marisol, FoodForMarisol, Provender).",
+        "authorized(Provender, DeliveryWitness, Marisol).",
+        "observe(Provender, FoodForMarisol, Marisol, FoodScope)."
+      ],
+      "references": [
+        "book-1/source/counterfactual/no-delivery-independence.pins.nibli",
+        "book-1/05-whether-it-arrived.pins.nibli"
+      ],
+      "renames": {
+        "Jae": "Marisol",
+        "Meal": "FoodForMarisol",
+        "Kitchen": "Provender"
+      },
+      "counterfactual": null
+    },
+    "j-independence:modified": {
+      "snapshots": [],
+      "add": [
+        "receives(Marisol, FoodForMarisol, Provender).",
+        "authorized(Provender, DeliveryWitness, Marisol).",
+        "observe(Provender, FoodForMarisol, Marisol, FoodScope)."
+      ],
+      "references": [
+        "book-1/source/counterfactual/no-delivery-independence.pins.nibli",
+        "book-1/05-whether-it-arrived.pins.nibli"
+      ],
+      "renames": {
+        "Jae": "Marisol",
+        "Meal": "FoodForMarisol",
+        "Kitchen": "Provender"
+      },
+      "counterfactual": "counterfactual/no-delivery-independence"
+    }
+  }
+}

@@ -4,10 +4,7 @@ use dioxus::{
     desktop::{Config, WindowBuilder},
     prelude::*,
 };
-use rights_book_ui::{
-    App, PreferencesDirectory,
-    data::{PREFIX, cases},
-};
+use rights_book_ui::{App, PreferencesDirectory, data::PREFIX, reasoning};
 use std::path::PathBuf;
 #[derive(Clone)]
 struct Output(PathBuf);
@@ -25,14 +22,41 @@ fn Harness() -> Element {
         let output = output.clone();
         spawn(async move {
             let mut eval = document::eval(include_str!("../../tests/desktop.js"));
-            let _ = eval.send(serde_json::json!({"cases":cases().cases,"resume":resume,"reader_only":reader_only}));
-            let result = eval.recv::<serde_json::Value>().await;
+            let expectations: serde_json::Value =
+                serde_json::from_str(include_str!("../../tests/expectations.json")).unwrap();
+            let _ = eval.send(serde_json::json!({"expectations":expectations,"resume":resume,"reader_only":reader_only}));
+            let result = loop {
+                let message = eval.recv::<serde_json::Value>().await;
+                if let Ok(value) = &message {
+                    if value["kind"] == "execute" {
+                        let result = reasoning::execute(
+                            value["id"].as_str().unwrap().into(),
+                            std::sync::Arc::new(std::sync::atomic::AtomicBool::new(false)),
+                        )
+                        .await;
+                        let response = match result {
+                            Ok(r) => {
+                                serde_json::json!({"outcome":r.outcome,"elapsed_ms":r.elapsed_ms})
+                            }
+                            Err(e) => serde_json::json!({"error":e}),
+                        };
+                        let _ = eval.send(response);
+                        continue;
+                    }
+                }
+                break message;
+            };
             let success = result.as_ref().is_ok_and(|r| r["ok"] == true);
             let json =
                 result.unwrap_or_else(|e| serde_json::json!({"ok":false,"error":e.to_string()}));
             std::fs::write(&output, serde_json::to_vec_pretty(&json).unwrap())
                 .expect("test output");
-            println!("Desktop check: {}", json);
+            println!(
+                "Desktop check: ok={}, scenarios={}, output={}",
+                success,
+                json["scenarios"],
+                output.display()
+            );
             std::process::exit(if success { 0 } else { 1 });
         });
     });

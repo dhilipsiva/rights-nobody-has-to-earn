@@ -61,18 +61,10 @@ pub struct Term {
     pub definition: String,
     pub chapter: Option<u8>,
 }
-#[derive(Clone, Deserialize)]
-pub struct Step {
-    pub title: String,
-    pub heading: String,
-    pub lead: String,
-    pub note: String,
-}
 #[derive(Deserialize)]
 pub struct Companion {
     pub questions: Vec<Question>,
     pub terms: Vec<Term>,
-    pub steps: Vec<Step>,
 }
 #[derive(Clone, Deserialize, Serialize, PartialEq)]
 pub struct Verdict {
@@ -83,34 +75,27 @@ pub struct Verdict {
 #[derive(Clone, Deserialize, Serialize, PartialEq)]
 pub struct Outcome {
     pub id: String,
-    pub counterfactual: bool,
+    pub counterfactual: Option<String>,
     pub complete: bool,
     pub verdicts: Vec<Verdict>,
 }
 #[derive(Clone, Deserialize, Serialize, PartialEq)]
-pub struct Query {
-    pub text: String,
-    pub expected: String,
-}
-#[derive(Clone, Deserialize, Serialize, PartialEq)]
 pub struct Scenario {
     pub id: String,
-    pub title: String,
-    pub source: String,
-    pub counterfactual: bool,
+    pub counterfactual: Option<String>,
     pub record: Vec<String>,
-    pub queries: Vec<Query>,
+    pub queries: Vec<String>,
+    pub sources: Vec<Source>,
 }
 #[derive(Clone, Deserialize, Serialize, PartialEq)]
-pub struct Case {
-    pub scenario: Scenario,
-    pub outcome: Outcome,
+pub struct Source {
+    pub path: String,
+    pub through_line: Option<usize>,
 }
 #[derive(Deserialize)]
 pub struct Cases {
     pub engine_revision: String,
-    pub scope: String,
-    pub cases: Vec<Case>,
+    pub cases: Vec<Scenario>,
 }
 pub fn book() -> &'static Book {
     static B: OnceLock<Book> = OnceLock::new();
@@ -127,7 +112,7 @@ pub fn companion() -> &'static Companion {
 pub fn cases() -> &'static Cases {
     static C: OnceLock<Cases> = OnceLock::new();
     C.get_or_init(|| {
-        serde_json::from_str(include_str!("../generated/cases.json")).expect("executed scenarios")
+        serde_json::from_str(include_str!("../generated/cases.json")).expect("input-only scenarios")
     })
 }
 pub fn chapter(number: u8) -> &'static Page {
@@ -141,18 +126,14 @@ pub fn page(stem: &str) -> Option<&'static Page> {
     book().pages.iter().find(|p| p.stem == stem)
 }
 pub fn question_path(q: &Question) -> String {
-    if q.id == "q5" {
-        format!("{PREFIX}walkthrough/food-delivery/")
-    } else {
-        chapter(q.chapters[0]).path.clone()
-    }
+    chapter(q.chapters[0]).path.clone()
 }
 pub fn route_title(path: &str) -> String {
     if let Some(p) = book().pages.iter().find(|p| p.path == path) {
         return p.label.clone();
     }
     match path.strip_prefix(PREFIX).unwrap_or("404") {
-        "" => "A floor nobody has to earn",
+        "" => "Pick a person. Walk their forks.",
         "map/" => "Reader’s map",
         "walkthrough/food-delivery/" => "Does a receipt prove I was fed?",
         "about/" => "About the book and companion",
@@ -163,18 +144,11 @@ pub fn route_title(path: &str) -> String {
     .into()
 }
 pub fn routes() -> Vec<String> {
-    [
-        "",
-        "map/",
-        "walkthrough/food-delivery/",
-        "about/",
-        "read/",
-        "search/",
-    ]
-    .iter()
-    .map(|p| format!("{PREFIX}{p}"))
-    .chain(book().pages.iter().map(|p| p.path.clone()))
-    .collect()
+    ["", "read/", "search/"]
+        .iter()
+        .map(|p| format!("{PREFIX}{p}"))
+        .chain(book().pages.iter().map(|p| p.path.clone()))
+        .collect()
 }
 pub fn search(query: &str) -> Vec<(&'static Page, String)> {
     let needle = query.trim().to_lowercase();

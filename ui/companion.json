@@ -285,43 +285,5 @@
       "definition": "The range of public choices within constitutional invariants and protected freedoms, with review and peaceful change.",
       "chapter": 22
     }
-  ],
-  "steps": [
-    {
-      "title": "Ask first",
-      "heading": "Ask before anything is written",
-      "lead": "The record says nothing about Marisol. Ask whether food arrived.",
-      "note": "Not derivable describes the supplied record. It does not establish that anyone went hungry."
-    },
-    {
-      "title": "Add a receipt",
-      "heading": "A provider reports a delivery",
-      "lead": "Provender reports food for Marisol. A receipt is one side of the route.",
-      "note": "The ordinary delivery rule still needs an authorised, independent witness and a matching observation."
-    },
-    {
-      "title": "Authorise a witness",
-      "heading": "Somebody is allowed to watch",
-      "lead": "Ledgerwitness is authorised to witness delivery for Marisol.",
-      "note": "Authority is not attestation. No matching observation has been supplied."
-    },
-    {
-      "title": "The observation",
-      "heading": "The match is specific",
-      "lead": "Ledgerwitness attests this item, for this recipient, at food scope.",
-      "note": "Every repeated variable must refer to the same thing. The witness differs from the provider."
-    },
-    {
-      "title": "The wrong witness",
-      "heading": "The provider as its own witness",
-      "lead": "Replace the independent witness with Provender. Supply its self-attestation for food and shelter.",
-      "note": "The canonical rules reject both self-attestations. The declared counterfactual removes only the food rule’s independence condition."
-    },
-    {
-      "title": "What this proves",
-      "heading": "Derived is not observed",
-      "lead": "Restore the independent food witness. Ask about personhood and shelter too.",
-      "note": "Food can derive without a prior personhood entry. Food evidence supplies no shelter conclusion. These answers do not establish that a report is true."
-    }
   ]
 }

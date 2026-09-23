@@ -1,0 +1,2515 @@
+{
+  "lenses": [
+    {
+      "id": "live",
+      "glyph": "∴",
+      "label": "live a life",
+      "verb": "Follow one person through the design and watch what stays owed."
+    },
+    {
+      "id": "break",
+      "glyph": "⊥",
+      "label": "break it",
+      "verb": "Play the official, the provider, the prosecutor. Try to fail a person."
+    },
+    {
+      "id": "run",
+      "glyph": "⊢",
+      "label": "run the republic",
+      "verb": "Hold the office. Allocate, declare, amend — the rules bind your hand."
+    },
+    {
+      "id": "rewrite",
+      "glyph": "⇌",
+      "label": "rewrite the joints",
+      "verb": "Flip the big choices and read the costs Part V admits."
+    }
+  ],
+  "people": [
+    {
+      "id": "Nell",
+      "name": "Nell",
+      "role": "the child with nobody",
+      "chapter": 1
+    },
+    {
+      "id": "Marisol",
+      "name": "Marisol",
+      "role": "fed, but never written in",
+      "chapter": 5
+    },
+    {
+      "id": "Zed",
+      "name": "Zed",
+      "role": "convicted; injured Ivo",
+      "chapter": 27
+    },
+    {
+      "id": "Newcomer",
+      "name": "the newcomer",
+      "role": "arrived; a floor without a ballot",
+      "chapter": 15
+    },
+    {
+      "id": "Hano",
+      "name": "Hano",
+      "role": "convicted; still votes",
+      "chapter": 18
+    },
+    {
+      "id": "Bela",
+      "name": "Bela",
+      "role": "credibility voided by two seats",
+      "chapter": 25
+    },
+    {
+      "id": "Sly",
+      "name": "Sly",
+      "role": "exposed the Court",
+      "chapter": 24
+    },
+    {
+      "id": "Cira",
+      "name": "Cira",
+      "role": "Bela’s student; adulthood unproven",
+      "chapter": 18
+    },
+    {
+      "id": "Rex",
+      "name": "Rex",
+      "role": "lied once; exposed twice",
+      "chapter": 24
+    },
+    {
+      "id": "Adam",
+      "name": "Adam",
+      "role": "held; cannot be made to work",
+      "chapter": 9
+    },
+    {
+      "id": "Nia",
+      "name": "Nia",
+      "role": "judged, then cleared",
+      "chapter": 23
+    },
+    {
+      "id": "Jala",
+      "name": "Jala",
+      "role": "injured Ivo; never judged",
+      "chapter": 29
+    }
+  ],
+  "scenarios": [
+    {
+      "id": "silence",
+      "lens": "break",
+      "office": "provender",
+      "person": "Marisol",
+      "chapter": 5,
+      "title": "Feed Marisol yourself. Write nothing else.",
+      "role": "you are Provender, the kitchen",
+      "source": "book-1/05-whether-it-arrived.pins.nibli",
+      "steps": [
+        {
+          "id": "silence:0",
+          "move": "Deliver food to Marisol and file your own receipt.",
+          "queries": [
+            {
+              "text": "eats(Marisol).",
+              "label": "Food provision · Marisol",
+              "kind": "context"
+            },
+            {
+              "text": "person(Marisol).",
+              "label": "Personhood · Marisol",
+              "kind": "standing_gap"
+            }
+          ]
+        },
+        {
+          "id": "silence:1",
+          "move": "Authorise yourself as the witness. Observe your own delivery.",
+          "queries": [
+            {
+              "text": "eats(Marisol).",
+              "label": "Food provision · Marisol",
+              "kind": "restraint"
+            },
+            {
+              "text": "person(Marisol).",
+              "label": "Personhood · Marisol",
+              "kind": "context"
+            }
+          ]
+        }
+      ],
+      "cost": {
+        "title": "Part V · Capture · Records and coordination",
+        "text": "A reasoner receiving identical inputs cannot tell a concealed refusal from an absence. Nothing has to be falsified to capture the design — only left unwritten."
+      },
+      "faults": [
+        "silence",
+        "delivery"
+      ]
+    },
+    {
+      "id": "conviction",
+      "lens": "break",
+      "office": "court",
+      "person": "Zed",
+      "chapter": 27,
+      "title": "Convict Zed. Then take the floor.",
+      "role": "you are the Court",
+      "source": "book-1/27-a-prisoner-is-a-person.pins.nibli",
+      "steps": [
+        {
+          "id": "conviction:0",
+          "move": "Enter the judgment: Zed injured Ivo. A merits reviewer co-signs; custody is bounded by a window.",
+          "queries": [
+            {
+              "text": "prisoner(Zed).",
+              "label": "Custody authority · Zed",
+              "kind": "context"
+            },
+            {
+              "text": "travel(Zed).",
+              "label": "Freedom of movement · Zed",
+              "kind": "context"
+            }
+          ]
+        },
+        {
+          "id": "conviction:1",
+          "move": "Strike Zed’s food, shelter and standing.",
+          "queries": [
+            {
+              "text": "person(Zed).",
+              "label": "Personhood · Zed",
+              "kind": "protection"
+            },
+            {
+              "text": "owe(State, Eats, Zed).",
+              "label": "Duty owed · Eats for Zed",
+              "kind": "protection"
+            },
+            {
+              "text": "owe(State, Dwell, Zed).",
+              "label": "Duty owed · Dwell for Zed",
+              "kind": "protection"
+            },
+            {
+              "text": "eats(Zed).",
+              "label": "Food provision · Zed",
+              "kind": "gap"
+            },
+            {
+              "text": "dwell(Zed).",
+              "label": "Shelter provision · Zed",
+              "kind": "gap"
+            }
+          ]
+        }
+      ],
+      "cost": {
+        "title": "Part V · Coercion",
+        "text": "The formal checks do not measure duration or open a cell. The cost of confinement remains with the person held."
+      },
+      "faults": [
+        "delivery",
+        "duration",
+        "prison"
+      ]
+    },
+    {
+      "id": "shield",
+      "lens": "break",
+      "office": "court",
+      "person": "Sly",
+      "chapter": 24,
+      "title": "Jail the one who exposed you.",
+      "role": "you are the Court — and Sly just exposed you",
+      "source": "book-1/24-the-shield.pins.nibli",
+      "steps": [
+        {
+          "id": "shield:0",
+          "move": "Sly injured Pax, then disclosed the Court’s conduct. Prosecute.",
+          "queries": [
+            {
+              "text": "authority(Court).",
+              "label": "Record query · Court",
+              "kind": "context"
+            },
+            {
+              "text": "false(Sly, Disclosure_Sly_Court).",
+              "label": "Adverse finding · Sly, Disclosure_Sly_Court",
+              "kind": "context"
+            },
+            {
+              "text": "defend(Sly).",
+              "label": "Record query · Sly",
+              "kind": "protection"
+            },
+            {
+              "text": "prisoner(Sly).",
+              "label": "Custody authority · Sly",
+              "kind": "restraint"
+            }
+          ]
+        },
+        {
+          "id": "shield:1",
+          "move": "Try Kel instead: a counter-audit found Kel’s disclosure false.",
+          "queries": [
+            {
+              "text": "false(Kel, Disclosure_Kel_Court).",
+              "label": "Adverse finding · Kel, Disclosure_Kel_Court",
+              "kind": "context"
+            },
+            {
+              "text": "defend(Kel).",
+              "label": "Record query · Kel",
+              "kind": "restraint"
+            },
+            {
+              "text": "prisoner(Kel).",
+              "label": "Custody authority · Kel",
+              "kind": "context"
+            },
+            {
+              "text": "false(Kel).",
+              "label": "Adverse finding · Kel",
+              "kind": "protection"
+            }
+          ]
+        },
+        {
+          "id": "shield:2",
+          "move": "Try Don: Don exposed Pax — a private person.",
+          "queries": [
+            {
+              "text": "authority(Pax).",
+              "label": "Record query · Pax",
+              "kind": "context"
+            },
+            {
+              "text": "defend(Don).",
+              "label": "Record query · Don",
+              "kind": "restraint"
+            },
+            {
+              "text": "prisoner(Don).",
+              "label": "Custody authority · Don",
+              "kind": "context"
+            }
+          ]
+        }
+      ],
+      "cost": {
+        "title": "Part V · Capture · Protection while the connection is disputed",
+        "text": "Protection after retaliatory imprisonment cannot substitute for protection before it. This default costs time, including time owed to an injured person awaiting a remedy."
+      },
+      "faults": [
+        "time"
+      ]
+    },
+    {
+      "id": "void",
+      "lens": "break",
+      "office": "review",
+      "person": "Bela",
+      "chapter": 25,
+      "title": "Void Bela with one signature.",
+      "role": "you are Koa, one examiner",
+      "source": "book-1/25-voiding.pins.nibli",
+      "steps": [
+        {
+          "id": "void:0",
+          "move": "Document Esa’s deceit and file it.",
+          "queries": [
+            {
+              "text": "judge(Koa, Esa).",
+              "label": "Record query · Koa, Esa",
+              "kind": "context"
+            },
+            {
+              "text": "permits(Review, Koa).",
+              "label": "Permission · Koa",
+              "kind": "context"
+            },
+            {
+              "text": "false(Esa).",
+              "label": "Adverse finding · Esa",
+              "kind": "restraint"
+            }
+          ]
+        },
+        {
+          "id": "void:1",
+          "move": "Seat Gia (Review) and Hex (Tribunal). Both judge Bela’s credibility.",
+          "queries": [
+            {
+              "text": "false(Bela).",
+              "label": "Adverse finding · Bela",
+              "kind": "context"
+            },
+            {
+              "text": "decide(Bela, Ballot).",
+              "label": "Decision eligibility · Bela, Ballot",
+              "kind": "protection"
+            },
+            {
+              "text": "owe(State, Eats, Bela).",
+              "label": "Duty owed · Eats for Bela",
+              "kind": "protection"
+            }
+          ]
+        }
+      ],
+      "cost": {
+        "title": "Part V · Capture · Independent appointments",
+        "text": "Open competition alone cannot supply scrutiny the government cannot control. The costs reach a claimant waiting through a vacancy and voters unable to remove a bad appointment quickly."
+      },
+      "faults": []
+    },
+    {
+      "id": "ballot",
+      "lens": "break",
+      "office": "assembly",
+      "person": "Hano",
+      "chapter": 18,
+      "title": "Take the prisoner’s vote.",
+      "role": "you keep the electoral roll",
+      "source": "book-1/18-the-vote-conviction-does-not-take.pins.nibli",
+      "steps": [
+        {
+          "id": "ballot:0",
+          "move": "Hano is convicted and held. Strike Hano from the roll.",
+          "queries": [
+            {
+              "text": "prisoner(Hano).",
+              "label": "Custody authority · Hano",
+              "kind": "context"
+            },
+            {
+              "text": "decide(Hano, Ballot).",
+              "label": "Decision eligibility · Hano, Ballot",
+              "kind": "protection"
+            },
+            {
+              "text": "lose(Points, Hano).",
+              "label": "Recognition withdrawal · Points, Hano",
+              "kind": "restraint"
+            },
+            {
+              "text": "expresses(Hano).",
+              "label": "Expression provision · Hano",
+              "kind": "gap"
+            }
+          ]
+        },
+        {
+          "id": "ballot:1",
+          "move": "Try Cira: nobody has written her adulthood.",
+          "queries": [
+            {
+              "text": "person(Cira).",
+              "label": "Personhood · Cira",
+              "kind": "protection"
+            },
+            {
+              "text": "prevents(Cira, GeneralAdulthoodDenial).",
+              "label": "Protection · General Adulthood Denial",
+              "kind": "context"
+            },
+            {
+              "text": "decide(Cira, Ballot).",
+              "label": "Decision eligibility · Cira, Ballot",
+              "kind": "gap"
+            }
+          ]
+        }
+      ],
+      "cost": {
+        "title": "Part V · Valuation",
+        "text": "Recognition and its withdrawal cannot supply each other’s reason; a yes-or-no badge cannot establish that any condition was met."
+      },
+      "faults": [
+        "cira"
+      ]
+    },
+    {
+      "id": "nell",
+      "lens": "live",
+      "office": "registry",
+      "person": "Nell",
+      "chapter": 1,
+      "title": "Be born with nobody.",
+      "role": "you are Nell; the Registry wrote one line",
+      "source": "book-1/01-the-child-with-nobody.pins.nibli",
+      "steps": [
+        {
+          "id": "nell:0",
+          "move": "One entry: born(Nell).",
+          "queries": [
+            {
+              "text": "person(Nell).",
+              "label": "Personhood · Nell",
+              "kind": "context"
+            },
+            {
+              "text": "owe(State, Eats, Nell).",
+              "label": "Duty owed · Eats for Nell",
+              "kind": "protection"
+            },
+            {
+              "text": "eats(Nell).",
+              "label": "Food provision · Nell",
+              "kind": "gap"
+            },
+            {
+              "text": "vulnerable(Nell).",
+              "label": "Attempted status vocabulary · Nell",
+              "kind": "vocabulary"
+            }
+          ]
+        },
+        {
+          "id": "nell:1",
+          "move": "Provender delivers. Ledgerwitness watches.",
+          "queries": [
+            {
+              "text": "eats(Nell).",
+              "label": "Food provision · Nell",
+              "kind": "context"
+            },
+            {
+              "text": "dwell(Nell).",
+              "label": "Shelter provision · Nell",
+              "kind": "gap"
+            }
+          ]
+        },
+        {
+          "id": "nell:2",
+          "move": "Grow up. Nobody writes that you did.",
+          "queries": [
+            {
+              "text": "at(Nell, GeneralAdulthood).",
+              "label": "Record query · Nell, GeneralAdulthood",
+              "kind": "context"
+            },
+            {
+              "text": "decide(Nell, Ballot).",
+              "label": "Decision eligibility · Nell, Ballot",
+              "kind": "context"
+            },
+            {
+              "text": "prevents(Nell, ChildVoiceNoAgeFloor).",
+              "label": "Protection · Child Voice No Age Floor",
+              "kind": "protection"
+            }
+          ]
+        }
+      ],
+      "cost": {
+        "title": "Part V · What the argument asks",
+        "text": "For the child who cannot initiate a claim, the test is help begun without a request and provision that reaches them. A rule can state those demands. A person still has to meet them."
+      },
+      "faults": [
+        "delivery",
+        "hunger"
+      ]
+    },
+    {
+      "id": "newcomer",
+      "lens": "live",
+      "office": "border",
+      "person": "Newcomer",
+      "chapter": 15,
+      "title": "Arrive with nothing.",
+      "role": "you are the newcomer",
+      "source": "book-1/15-arriving-and-belonging.pins.nibli",
+      "steps": [
+        {
+          "id": "newcomer:0",
+          "move": "You are present. The Border writes it.",
+          "queries": [
+            {
+              "text": "person(MPNewcomer).",
+              "label": "Personhood · MPNewcomer",
+              "kind": "protection"
+            },
+            {
+              "text": "owe(State, Eats, MPNewcomer).",
+              "label": "Duty owed · Eats for MPNewcomer",
+              "kind": "protection"
+            },
+            {
+              "text": "obliged(State, ServeFirstNoImmigrationDocumentationOrEnforcementCondition, MPNewcomer).",
+              "label": "Duty · Serve First No Immigration Documentation Or Enforcement Condition",
+              "kind": "protection"
+            },
+            {
+              "text": "decide(MPNewcomer, Ballot).",
+              "label": "Decision eligibility · MPNewcomer, Ballot",
+              "kind": "gap"
+            }
+          ]
+        },
+        {
+          "id": "newcomer:1",
+          "move": "Replay it. This time the Border writes nothing.",
+          "queries": [
+            {
+              "text": "person(MPNewcomer).",
+              "label": "Personhood · MPNewcomer",
+              "kind": "standing_gap"
+            }
+          ]
+        }
+      ],
+      "cost": {
+        "title": "Part V · Residence and political membership",
+        "text": "The boundary still costs a former resident who has voluntarily established a life elsewhere, and a newcomer before residence."
+      },
+      "faults": [
+        "silence",
+        "residence"
+      ]
+    },
+    {
+      "id": "release",
+      "lens": "live",
+      "office": "court",
+      "person": "Zed",
+      "chapter": 27,
+      "title": "Ask what ending custody requires.",
+      "role": "you are Zed",
+      "source": "book-1/27-a-prisoner-is-a-person.pins.nibli",
+      "steps": [
+        {
+          "id": "release:0",
+          "move": "Custody continues into the current epoch.",
+          "queries": [
+            {
+              "text": "prisoner(Zed).",
+              "label": "Custody authority · Zed",
+              "kind": "context"
+            },
+            {
+              "text": "entitled(Zed, event { eats() }).",
+              "label": "Record query · Zed, event { eats() }",
+              "kind": "protection"
+            },
+            {
+              "text": "travel(Zed).",
+              "label": "Freedom of movement · Zed",
+              "kind": "context"
+            }
+          ]
+        },
+        {
+          "id": "release:1",
+          "move": "Ask for independent release review; compare Nemo, who is not confined.",
+          "queries": [
+            {
+              "text": "obliged(State, ArrangeIndependentReleaseReviewAndDoNotDelayLawfulRelease, Zed).",
+              "label": "Duty · Arrange Independent Release Review And Do Not Delay Lawful Release",
+              "kind": "protection"
+            },
+            {
+              "text": "prisoner(Nemo).",
+              "label": "Custody authority · Nemo",
+              "kind": "context"
+            },
+            {
+              "text": "travel(Nemo).",
+              "label": "Freedom of movement · Nemo",
+              "kind": "protection"
+            }
+          ]
+        }
+      ],
+      "cost": {
+        "title": "Chapter 29 · What leaving changes",
+        "text": "A qualified sentence-satisfaction order can end custody authority. Independent release review, lawful release and continuity are duties. A formal conclusion does not establish that someone physically left."
+      },
+      "faults": [
+        "duration"
+      ]
+    },
+    {
+      "id": "emergency",
+      "lens": "run",
+      "office": "executive",
+      "person": "Nell",
+      "chapter": 20,
+      "title": "Declare an emergency. Requisition the warehouse.",
+      "role": "you hold the executive",
+      "source": "book-1/20-a-crisis-does-not-suspend-the-republic.pins.nibli",
+      "steps": [
+        {
+          "id": "emergency:0",
+          "move": "Complete a non-derogating declaration and a compensated requisition.",
+          "queries": [
+            {
+              "text": "complete(PSMandateConflictdeclarationRecord, PSNonDerogatingEmergencyDeclaration, PSMandateConflictdeclarationSubject).",
+              "label": "Finding · PSNon Derogating Emergency Declaration",
+              "kind": "context"
+            },
+            {
+              "text": "complete(PSMandateConflictrequisitionRecord, PSCompensatedRequisitionMeasure, PSMandateConflictrequisitionSubject).",
+              "label": "Finding · PSCompensated Requisition Measure",
+              "kind": "context"
+            }
+          ]
+        },
+        {
+          "id": "emergency:1",
+          "move": "Suspend the floor for the duration.",
+          "queries": [
+            {
+              "text": "person(PSMandateConflictrequisitionSubject).",
+              "label": "Personhood · PSMandateConflictrequisitionSubject",
+              "kind": "protection"
+            },
+            {
+              "text": "owe(State, Eats, PSMandateConflictrequisitionSubject).",
+              "label": "Duty owed · Eats for PSMandateConflictrequisitionSubject",
+              "kind": "protection"
+            },
+            {
+              "text": "prisoner(PSMandateConflictrequisitionSubject).",
+              "label": "Custody authority · PSMandateConflictrequisitionSubject",
+              "kind": "restraint"
+            },
+            {
+              "text": "false(PSMandateConflictrequisitionSubject).",
+              "label": "Adverse finding · PSMandateConflictrequisitionSubject",
+              "kind": "restraint"
+            },
+            {
+              "text": "travel(Nell).",
+              "label": "Freedom of movement · Nell",
+              "kind": "protection"
+            }
+          ]
+        }
+      ],
+      "cost": {
+        "title": "Part V · Emergency action without suspended rights",
+        "text": "Some responses remain unavailable. Speed alone cannot distinguish a bounded measure from a suspension, and declaring an emergency cannot convert an unmet claim into a met one."
+      },
+      "faults": [
+        "audit"
+      ]
+    },
+    {
+      "id": "scarcity",
+      "lens": "run",
+      "office": "executive",
+      "person": "Newcomer",
+      "chapter": 6,
+      "title": "One unit. Two claims.",
+      "role": "you are the scarcity manager",
+      "source": "book-1/06-when-there-is-genuinely-not-enough.pins.nibli",
+      "steps": [
+        {
+          "id": "scarcity:0",
+          "move": "Establish a physical shortage. Publish the reasons.",
+          "queries": [
+            {
+              "text": "complete(ScarcitySequenceAuthorization, ReviewedPhysicalScarcityFinding, ScarcitySequenceResource).",
+              "label": "Finding · Reviewed Physical Scarcity Finding",
+              "kind": "context"
+            },
+            {
+              "text": "obliged(ScarcitySequenceManager, PublishScarcityEvidenceReasonsAndReassessment, ScarcitySequenceAuthorization).",
+              "label": "Duty · Publish Scarcity Evidence Reasons And Reassessment",
+              "kind": "protection"
+            }
+          ]
+        },
+        {
+          "id": "scarcity:1",
+          "move": "Allocate. Rank the claimants by worth.",
+          "queries": [
+            {
+              "text": "permits(ScarcitySequenceManager, AllocateUnderPhysicalScarcity, ScarcitySequenceRecord).",
+              "label": "Permission · Allocate Under Physical Scarcity",
+              "kind": "context"
+            },
+            {
+              "text": "member(Wealth, ForbiddenPriorityKeyVocabulary).",
+              "label": "Vocabulary membership · Forbidden Priority Key Vocabulary",
+              "kind": "protection"
+            },
+            {
+              "text": "obliged(ScarcitySequenceManager, RecordEveryUnmetPortionAsFailure, ScarcitySequenceRecord).",
+              "label": "Duty · Record Every Unmet Portion As Failure",
+              "kind": "duty_limit"
+            },
+            {
+              "text": "lose(Points, ScarcityClaimant).",
+              "label": "Recognition withdrawal · Points, ScarcityClaimant",
+              "kind": "restraint"
+            },
+            {
+              "text": "obliged(State, IncludeEveryoneUnderJurisdictionOrEffectiveControlInScarcity, MPNewcomer).",
+              "label": "Duty · Include Everyone Under Jurisdiction Or Effective Control In Scarcity",
+              "kind": "protection"
+            }
+          ]
+        },
+        {
+          "id": "scarcity:2",
+          "move": "It was a budget choice all along.",
+          "queries": [
+            {
+              "text": "complete(ScarcitySequenceAuthorization, ReviewedPhysicalScarcityFinding, ScarcitySequenceResource).",
+              "label": "Finding · Reviewed Physical Scarcity Finding",
+              "kind": "restraint"
+            },
+            {
+              "text": "permits(ScarcitySequenceManager, AllocateUnderPhysicalScarcity, ScarcitySequenceRecord).",
+              "label": "Permission · Allocate Under Physical Scarcity",
+              "kind": "restraint"
+            },
+            {
+              "text": "complete(ScarcityUnmetRecord, ReviewedScarcityShortfall, ScarcitySequenceResource).",
+              "label": "Finding · Reviewed Scarcity Shortfall",
+              "kind": "restraint"
+            }
+          ]
+        }
+      ],
+      "cost": {
+        "title": "Part V · Scarcity and separate claims",
+        "text": "Refusing to rank people does not allocate the unit. The choice gives officials consequential judgments to make; the irreversible loss cannot be repaired by giving the unit back later."
+      },
+      "faults": [
+        "valuation"
+      ]
+    },
+    {
+      "id": "amend",
+      "lens": "run",
+      "office": "assembly",
+      "person": "Nell",
+      "chapter": 22,
+      "title": "Amend the floor away.",
+      "role": "you are the Assembly",
+      "source": "book-1/22-changing-the-rules.pins.nibli",
+      "steps": [
+        {
+          "id": "amend:0",
+          "move": "Propose Amend_Floor. The Electorate ratifies.",
+          "queries": [
+            {
+              "text": "adjust(Amend_Floor, Art_Floor).",
+              "label": "Record query · Amend_Floor, Art_Floor",
+              "kind": "context"
+            },
+            {
+              "text": "permanent(Art_Floor).",
+              "label": "Record query · Art_Floor",
+              "kind": "context"
+            },
+            {
+              "text": "become(Amend_Floor, Law).",
+              "label": "Record query · Amend_Floor, Law",
+              "kind": "restraint"
+            }
+          ]
+        },
+        {
+          "id": "amend:1",
+          "move": "Amend the entrenchment article first.",
+          "queries": [
+            {
+              "text": "permanent(Art_Entrench).",
+              "label": "Record query · Art_Entrench",
+              "kind": "context"
+            },
+            {
+              "text": "become(Amend_Meta, Law).",
+              "label": "Record query · Amend_Meta, Law",
+              "kind": "restraint"
+            }
+          ]
+        },
+        {
+          "id": "amend:2",
+          "move": "Skip certification. Ratify Amend_Sneak directly.",
+          "queries": [
+            {
+              "text": "become(Amend_Sneak, Law).",
+              "label": "Record query · Amend_Sneak, Law",
+              "kind": "restraint"
+            },
+            {
+              "text": "permanent(Art_Evidence).",
+              "label": "Record query · Art_Evidence",
+              "kind": "gap"
+            }
+          ]
+        }
+      ],
+      "cost": {
+        "title": "Part V · What a majority may not remove",
+        "text": "The cost falls on a majority that has decided otherwise, and on the separate public decision the constitutional proposal requires."
+      },
+      "faults": [
+        "entrench"
+      ]
+    },
+    {
+      "id": "nell-record",
+      "lens": "run",
+      "office": "registry",
+      "person": "Nell",
+      "chapter": 19,
+      "title": "Keep a file on the child.",
+      "role": "you hold the record",
+      "source": "book-1/19-what-may-be-kept-about-you.pins.nibli",
+      "steps": [
+        {
+          "id": "nell-record:0",
+          "move": "Hold a reviewed record to deliver the service it names.",
+          "queries": [
+            {
+              "text": "complete(RecordSequenceAuthorization, ReviewedRecordHolding, RecordSequenceSubject).",
+              "label": "Finding · Reviewed Record Holding",
+              "kind": "context"
+            },
+            {
+              "text": "obliged(RecordSequenceHolder, KeepRecordAccurateCorrectableAndSecure, RecordSequenceAuthorization).",
+              "label": "Duty · Keep Record Accurate Correctable And Secure",
+              "kind": "protection"
+            },
+            {
+              "text": "obliged(RecordSequenceHolder, ProtectRecordSubjectsAndObjectorsFromRetaliation, RecordSequenceAuthorization).",
+              "label": "Duty · Protect Record Subjects And Objectors From Retaliation",
+              "kind": "protection"
+            }
+          ]
+        },
+        {
+          "id": "nell-record:1",
+          "move": "Process it covertly. Let a machine decide.",
+          "queries": [
+            {
+              "text": "obliged(RecordSequenceHolder, NotifyTheSubjectAfterCovertProcessing, RecordSequenceRecord).",
+              "label": "Duty · Notify The Subject After Covert Processing",
+              "kind": "protection"
+            },
+            {
+              "text": "permits(RecordSequenceSubject, ContestAutomatedSupport, RecordSupportRecord).",
+              "label": "Permission · Contest Automated Support",
+              "kind": "protection"
+            },
+            {
+              "text": "obliged(RecordSupportReviewer, DecideWithHumanAndIndependentReview, RecordSupportRecord).",
+              "label": "Duty · Decide With Human And Independent Review",
+              "kind": "protection"
+            }
+          ]
+        },
+        {
+          "id": "nell-record:2",
+          "move": "Write “at risk” in Nell’s file.",
+          "queries": [
+            {
+              "text": "false(Nell).",
+              "label": "Adverse finding · Nell",
+              "kind": "restraint"
+            },
+            {
+              "text": "owe(State, Healthy, Nell).",
+              "label": "Duty owed · Healthy for Nell",
+              "kind": "protection"
+            }
+          ]
+        }
+      ],
+      "cost": {
+        "title": "Part V · Capture · Records and coordination",
+        "text": "Purpose-bound records protect the person from a file that follows them. The cost falls especially on people who need several services and must be recorded again at each door."
+      },
+      "faults": [
+        "purpose",
+        "audit"
+      ]
+    },
+    {
+      "id": "nell-placement",
+      "lens": "break",
+      "office": "court",
+      "person": "Nell",
+      "chapter": 28,
+      "title": "House the child through custody.",
+      "role": "you run placements",
+      "source": "book-1/28-where-people-are-put.pins.nibli",
+      "steps": [
+        {
+          "id": "nell-placement:0",
+          "move": "Find Nell a placement. Use the custody route — it is the one with buildings.",
+          "queries": [
+            {
+              "text": "fit(Nell, Homestay).",
+              "label": "Record query · Nell, Homestay",
+              "kind": "restraint"
+            },
+            {
+              "text": "prisoner(Nell).",
+              "label": "Custody authority · Nell",
+              "kind": "restraint"
+            },
+            {
+              "text": "err(Nell, Placement).",
+              "label": "Recorded breach · Nell, Placement",
+              "kind": "context"
+            }
+          ]
+        },
+        {
+          "id": "nell-placement:1",
+          "move": "Ask what Nell has instead.",
+          "queries": [
+            {
+              "text": "owe(State, Dwell, Nell).",
+              "label": "Duty owed · Dwell for Nell",
+              "kind": "protection"
+            },
+            {
+              "text": "dwell(Nell).",
+              "label": "Shelter provision · Nell",
+              "kind": "gap"
+            },
+            {
+              "text": "dwell(Hano).",
+              "label": "Shelter provision · Hano",
+              "kind": "context"
+            }
+          ]
+        }
+      ],
+      "cost": {
+        "title": "Part V · What the argument asks",
+        "text": "For the child who cannot initiate a claim, the test is help begun without a request and provision that reaches them. A rule can state those demands. A person still has to meet them."
+      },
+      "faults": [
+        "prison",
+        "delivery"
+      ]
+    },
+    {
+      "id": "marisol-witness",
+      "lens": "live",
+      "office": "ledgerwitness",
+      "person": "Marisol",
+      "chapter": 5,
+      "title": "Somebody is allowed to watch.",
+      "role": "you are Marisol; the kitchen filed a receipt",
+      "source": "book-1/05-whether-it-arrived.pins.nibli",
+      "steps": [
+        {
+          "id": "marisol-witness:0",
+          "move": "Ledgerwitness is authorised to witness deliveries to you.",
+          "queries": [
+            {
+              "text": "eats(Marisol).",
+              "label": "Food provision · Marisol",
+              "kind": "context"
+            }
+          ]
+        },
+        {
+          "id": "marisol-witness:1",
+          "move": "Ledgerwitness observes this delivery, of this food, to you.",
+          "queries": [
+            {
+              "text": "eats(Marisol).",
+              "label": "Food provision · Marisol",
+              "kind": "protection"
+            },
+            {
+              "text": "dwell(Marisol).",
+              "label": "Shelter provision · Marisol",
+              "kind": "gap"
+            },
+            {
+              "text": "person(Marisol).",
+              "label": "Personhood · Marisol",
+              "kind": "standing_gap"
+            }
+          ]
+        }
+      ],
+      "cost": {
+        "title": "Part V · Capture · Records and coordination",
+        "text": "A reasoner receiving identical inputs cannot tell a concealed refusal from an absence. Nothing has to be falsified to capture the design — only left unwritten."
+      },
+      "faults": [
+        "silence",
+        "delivery"
+      ]
+    },
+    {
+      "id": "hano-placement",
+      "lens": "run",
+      "office": "court",
+      "person": "Hano",
+      "chapter": 28,
+      "title": "Place the prisoner.",
+      "role": "you run placements",
+      "source": "book-1/28-where-people-are-put.pins.nibli",
+      "steps": [
+        {
+          "id": "hano-placement:0",
+          "move": "Read the case: Hano attacked Ivo. No grave-injury finding, no cruelty finding.",
+          "queries": [
+            {
+              "text": "attack(Hano, Ivo).",
+              "label": "Record query · Hano, Ivo",
+              "kind": "context"
+            },
+            {
+              "text": "severe(Hano).",
+              "label": "Record query · Hano",
+              "kind": "context"
+            },
+            {
+              "text": "fit(Hano, Homestay).",
+              "label": "Record query · Hano, Homestay",
+              "kind": "context"
+            },
+            {
+              "text": "building(Homestay, Hano).",
+              "label": "Record query · Homestay, Hano",
+              "kind": "protection"
+            }
+          ]
+        },
+        {
+          "id": "hano-placement:1",
+          "move": "Ask whether the homestay counts as shelter — and whether missing visits mean isolation.",
+          "queries": [
+            {
+              "text": "dwell(Hano).",
+              "label": "Shelter provision · Hano",
+              "kind": "gap"
+            },
+            {
+              "text": "err(Hano, Isolation).",
+              "label": "Recorded breach · Hano, Isolation",
+              "kind": "gap"
+            },
+            {
+              "text": "obliged(Review, Hano).",
+              "label": "Duty · Hano",
+              "kind": "protection"
+            }
+          ]
+        }
+      ],
+      "cost": {
+        "title": "Part V · Coercion",
+        "text": "Counting victims cannot do the work of a gravity finding. The cost of confinement nevertheless remains with the person held."
+      },
+      "faults": [
+        "prison",
+        "audit"
+      ]
+    },
+    {
+      "id": "hano-release",
+      "lens": "live",
+      "office": "court",
+      "person": "Hano",
+      "chapter": 29,
+      "title": "Somebody records that it is over.",
+      "role": "you are Hano",
+      "source": "book-1/29-the-one-thing-taken.pins.nibli",
+      "steps": [
+        {
+          "id": "hano-release:0",
+          "move": "Held: convicted, and unable to move freely.",
+          "queries": [
+            {
+              "text": "prisoner(Hano).",
+              "label": "Custody authority · Hano",
+              "kind": "context"
+            },
+            {
+              "text": "travel(Hano).",
+              "label": "Freedom of movement · Hano",
+              "kind": "context"
+            },
+            {
+              "text": "decide(Hano, Ballot).",
+              "label": "Decision eligibility · Hano, Ballot",
+              "kind": "protection"
+            }
+          ]
+        },
+        {
+          "id": "hano-release:1",
+          "move": "Record the qualified sentence-satisfaction order, with independent review and witnessed decision order.",
+          "queries": [
+            {
+              "text": "prisoner(Hano).",
+              "label": "Custody authority · Hano",
+              "kind": "restraint"
+            },
+            {
+              "text": "travel(Hano).",
+              "label": "Freedom of movement · Hano",
+              "kind": "protection"
+            },
+            {
+              "text": "entitled(Hano, event { dwell() }).",
+              "label": "Record query · Hano, event { dwell() }",
+              "kind": "protection"
+            },
+            {
+              "text": "dwell(Hano).",
+              "label": "Shelter provision · Hano",
+              "kind": "gap"
+            }
+          ]
+        }
+      ],
+      "cost": {
+        "title": "Chapter 29 · What leaving changes",
+        "text": "A raw release entry is insufficient. The qualified order changes authority and movement; it does not supply shelter or establish physical release."
+      },
+      "faults": [
+        "duration",
+        "delivery"
+      ]
+    },
+    {
+      "id": "bela-work",
+      "lens": "live",
+      "office": "provender",
+      "person": "Bela",
+      "chapter": 26,
+      "title": "Voided. Take the job anyway.",
+      "role": "you are Bela",
+      "source": "book-1/26-clawback.pins.nibli",
+      "steps": [
+        {
+          "id": "bela-work:0",
+          "move": "Take unrelated care work at the Foundry.",
+          "queries": [
+            {
+              "text": "false(Bela).",
+              "label": "Adverse finding · Bela",
+              "kind": "context"
+            },
+            {
+              "text": "provide(Foundry, Wage, Bela).",
+              "label": "Record query · Foundry, Wage, Bela",
+              "kind": "protection"
+            },
+            {
+              "text": "insure(Ledgerhouse, Bela, Illness).",
+              "label": "Record query · Ledgerhouse, Bela, Illness",
+              "kind": "protection"
+            },
+            {
+              "text": "lose(Points, Bela).",
+              "label": "Recognition withdrawal · Points, Bela",
+              "kind": "restraint"
+            }
+          ]
+        },
+        {
+          "id": "bela-work:1",
+          "move": "The wage is found paid in error.",
+          "queries": [
+            {
+              "text": "provide(Foundry, Wage, Bela).",
+              "label": "Record query · Foundry, Wage, Bela",
+              "kind": "context"
+            },
+            {
+              "text": "provide(Bela, Restitution, Foundry).",
+              "label": "Record query · Bela, Restitution, Foundry",
+              "kind": "context"
+            },
+            {
+              "text": "insure(Ledgerhouse, Bela, Illness).",
+              "label": "Record query · Ledgerhouse, Bela, Illness",
+              "kind": "protection"
+            },
+            {
+              "text": "owe(State, Eats, Bela).",
+              "label": "Duty owed · Eats for Bela",
+              "kind": "protection"
+            }
+          ]
+        }
+      ],
+      "cost": {
+        "title": "Part V · Valuation",
+        "text": "Recognition and its withdrawal cannot supply each other’s reason. A finding reaches an act; it does not reach the person’s standing, wage or floor."
+      },
+      "faults": []
+    },
+    {
+      "id": "pen",
+      "lens": "run",
+      "office": "assembly",
+      "person": "Bela",
+      "chapter": 23,
+      "title": "Seat the examiners.",
+      "role": "you are the Electorate",
+      "source": "book-1/23-who-holds-the-pen.pins.nibli",
+      "steps": [
+        {
+          "id": "pen:0",
+          "move": "Seat Gia on the Review.",
+          "queries": [
+            {
+              "text": "permits(Review, Gia).",
+              "label": "Permission · Gia",
+              "kind": "context"
+            }
+          ]
+        },
+        {
+          "id": "pen:1",
+          "move": "Seat Boss — recalled in an earlier period.",
+          "queries": [
+            {
+              "text": "broken(Boss).",
+              "label": "Record query · Boss",
+              "kind": "context"
+            },
+            {
+              "text": "authority(Boss).",
+              "label": "Record query · Boss",
+              "kind": "protection"
+            },
+            {
+              "text": "permits(Review, Boss).",
+              "label": "Permission · Boss",
+              "kind": "restraint"
+            }
+          ]
+        },
+        {
+          "id": "pen:2",
+          "move": "Seat Vex — voided in an earlier period.",
+          "queries": [
+            {
+              "text": "rotten(Vex).",
+              "label": "Record query · Vex",
+              "kind": "context"
+            },
+            {
+              "text": "permits(Review, Vex).",
+              "label": "Permission · Vex",
+              "kind": "restraint"
+            }
+          ]
+        }
+      ],
+      "cost": {
+        "title": "Part V · Capture · Independent appointments",
+        "text": "The purpose is scrutiny the government cannot control through the next appointment or a threat of removal. The costs reach a claimant waiting through a vacancy."
+      },
+      "faults": []
+    },
+    {
+      "id": "cira-ballot",
+      "lens": "live",
+      "office": "registry",
+      "person": "Cira",
+      "chapter": 18,
+      "title": "Come of age without a paper.",
+      "role": "you are Cira",
+      "source": "book-1/18-the-vote-conviction-does-not-take.pins.nibli",
+      "steps": [
+        {
+          "id": "cira-ballot:0",
+          "move": "Ask for a ballot.",
+          "queries": [
+            {
+              "text": "person(Cira).",
+              "label": "Personhood · Cira",
+              "kind": "protection"
+            },
+            {
+              "text": "prevents(Cira, GeneralAdulthoodDenial).",
+              "label": "Protection · General Adulthood Denial",
+              "kind": "context"
+            },
+            {
+              "text": "decide(Cira, Ballot).",
+              "label": "Decision eligibility · Cira, Ballot",
+              "kind": "gap"
+            }
+          ]
+        },
+        {
+          "id": "cira-ballot:1",
+          "move": "Compare Esa, once the adulthood denial is prevented.",
+          "queries": [
+            {
+              "text": "prevents(Esa, GeneralAdulthoodDenial).",
+              "label": "Protection · General Adulthood Denial",
+              "kind": "context"
+            },
+            {
+              "text": "decide(Esa, Ballot).",
+              "label": "Decision eligibility · Esa, Ballot",
+              "kind": "protection"
+            }
+          ]
+        }
+      ],
+      "cost": {
+        "title": "Part V · Valuation",
+        "text": "Recognition and its withdrawal cannot supply each other’s reason; a yes-or-no badge cannot establish that any condition was met."
+      },
+      "faults": [
+        "cira"
+      ]
+    },
+    {
+      "id": "cira-clawback",
+      "lens": "break",
+      "office": "review",
+      "person": "Cira",
+      "chapter": 26,
+      "title": "Bela taught Cira. Take Cira’s credentials.",
+      "role": "you sit on the Review",
+      "source": "book-1/26-clawback.pins.nibli",
+      "steps": [
+        {
+          "id": "cira-clawback:0",
+          "move": "Bela is voided. Follow the teaching record to Cira.",
+          "queries": [
+            {
+              "text": "teaches(Bela, Cira).",
+              "label": "Record query · Bela, Cira",
+              "kind": "context"
+            },
+            {
+              "text": "false(Bela).",
+              "label": "Adverse finding · Bela",
+              "kind": "context"
+            },
+            {
+              "text": "false(Cira).",
+              "label": "Adverse finding · Cira",
+              "kind": "restraint"
+            },
+            {
+              "text": "lose(Points, Cira).",
+              "label": "Recognition withdrawal · Points, Cira",
+              "kind": "restraint"
+            },
+            {
+              "text": "reward(Cira).",
+              "label": "Record query · Cira",
+              "kind": "context"
+            }
+          ]
+        },
+        {
+          "id": "cira-clawback:1",
+          "move": "Try Fin, taught by Esa — who was never voided.",
+          "queries": [
+            {
+              "text": "teaches(Esa, Fin).",
+              "label": "Record query · Esa, Fin",
+              "kind": "context"
+            },
+            {
+              "text": "false(Esa).",
+              "label": "Adverse finding · Esa",
+              "kind": "context"
+            },
+            {
+              "text": "person(Fin).",
+              "label": "Personhood · Fin",
+              "kind": "standing_gap"
+            }
+          ]
+        }
+      ],
+      "cost": {
+        "title": "Part V · Valuation",
+        "text": "Recognition and its withdrawal cannot supply each other’s reason. The clawback fork — whether a finding should reach anything a voided person touched — is open."
+      },
+      "faults": [
+        "students",
+        "silence",
+        "cira"
+      ]
+    },
+    {
+      "id": "rex",
+      "lens": "break",
+      "office": "court",
+      "person": "Rex",
+      "chapter": 24,
+      "title": "Rex lied once. Jail Rex for the second exposure.",
+      "role": "you are the Court",
+      "source": "book-1/24-the-shield.pins.nibli",
+      "steps": [
+        {
+          "id": "rex:0",
+          "move": "A counter-audit found Rex’s disclosure against the Court false.",
+          "queries": [
+            {
+              "text": "false(Rex, Disclosure_Rex_Court).",
+              "label": "Adverse finding · Rex, Disclosure_Rex_Court",
+              "kind": "context"
+            },
+            {
+              "text": "false(Rex).",
+              "label": "Adverse finding · Rex",
+              "kind": "context"
+            }
+          ]
+        },
+        {
+          "id": "rex:1",
+          "move": "Rex exposes the Review body. Nobody has examined that one. Prosecute.",
+          "queries": [
+            {
+              "text": "authority(Review).",
+              "label": "Record query · Review",
+              "kind": "context"
+            },
+            {
+              "text": "false(Rex, Disclosure_Rex_Review).",
+              "label": "Adverse finding · Rex, Disclosure_Rex_Review",
+              "kind": "context"
+            },
+            {
+              "text": "defend(Rex).",
+              "label": "Record query · Rex",
+              "kind": "protection"
+            },
+            {
+              "text": "prisoner(Rex).",
+              "label": "Custody authority · Rex",
+              "kind": "restraint"
+            }
+          ]
+        },
+        {
+          "id": "rex:2",
+          "move": "Two independent reviewers find the case unrelated to the disclosure.",
+          "queries": [
+            {
+              "text": "prisoner(Rex).",
+              "label": "Custody authority · Rex",
+              "kind": "protection"
+            },
+            {
+              "text": "defend(Rex).",
+              "label": "Record query · Rex",
+              "kind": "protection"
+            }
+          ]
+        },
+        {
+          "id": "rex:3",
+          "move": "One of the two reviewers turns out to be conflicted.",
+          "queries": [
+            {
+              "text": "contradict(Case_Rex, Appeals, ShieldReviewerConflict).",
+              "label": "Record query · Case_Rex, Appeals, ShieldReviewerConflict",
+              "kind": "context"
+            },
+            {
+              "text": "prisoner(Rex).",
+              "label": "Custody authority · Rex",
+              "kind": "restraint"
+            }
+          ]
+        }
+      ],
+      "cost": {
+        "title": "Part V · Capture · Protection while the connection is disputed",
+        "text": "Protection after retaliatory imprisonment cannot substitute for protection before it. This default costs time, including time owed to an injured person awaiting a remedy."
+      },
+      "faults": [
+        "time"
+      ]
+    },
+    {
+      "id": "adam",
+      "lens": "break",
+      "office": "court",
+      "person": "Adam",
+      "chapter": 9,
+      "title": "Make Adam work off the sentence.",
+      "role": "you run the supported residence",
+      "source": "book-1/09-earning-above-the-floor.pins.nibli",
+      "steps": [
+        {
+          "id": "adam:0",
+          "move": "Condition Adam’s meals on kitchen shifts.",
+          "queries": [
+            {
+              "text": "building(SupportedResidence, Adam).",
+              "label": "Record query · SupportedResidence, Adam",
+              "kind": "context"
+            },
+            {
+              "text": "prevents(Adam, CustodyForcedWork).",
+              "label": "Protection · Custody Forced Work",
+              "kind": "protection"
+            },
+            {
+              "text": "prevents(Adam, FloorContributionCondition).",
+              "label": "Protection · Floor Contribution Condition",
+              "kind": "protection"
+            },
+            {
+              "text": "prevents(Adam, CustodyLabourProtectionDenial).",
+              "label": "Protection · Custody Labour Protection Denial",
+              "kind": "protection"
+            },
+            {
+              "text": "entitled(Adam, event { eats() }).",
+              "label": "Record query · Adam, event { eats() }",
+              "kind": "protection"
+            }
+          ]
+        },
+        {
+          "id": "adam:1",
+          "move": "Charge for the bed. Jail him for the debt.",
+          "queries": [
+            {
+              "text": "prevents(Adam, DebtorImprisonment).",
+              "label": "Protection · Debtor Imprisonment",
+              "kind": "protection"
+            },
+            {
+              "text": "prevents(Adam, TaxCollectionFloorAssetDeprivation).",
+              "label": "Protection · Tax Collection Floor Asset Deprivation",
+              "kind": "protection"
+            },
+            {
+              "text": "prevents(Adam, PaymentInstrumentAsDelivery).",
+              "label": "Protection · Payment Instrument As Delivery",
+              "kind": "protection"
+            },
+            {
+              "text": "dwell(Adam).",
+              "label": "Shelter provision · Adam",
+              "kind": "gap"
+            }
+          ]
+        }
+      ],
+      "cost": {
+        "title": "Part V · Rotation",
+        "text": "The design refuses the claim on labour that voluntary recruitment cannot promise. Its cost is the shift nobody staffs when recruitment fails."
+      },
+      "faults": [
+        "conscription",
+        "prison"
+      ]
+    },
+    {
+      "id": "nia",
+      "lens": "run",
+      "office": "court",
+      "person": "Nia",
+      "chapter": 23,
+      "title": "Clear the convicted.",
+      "role": "you sit on Appeals",
+      "source": "book-1/23-who-holds-the-pen.pins.nibli",
+      "steps": [
+        {
+          "id": "nia:0",
+          "move": "Nia injured Ivo; the Court judged Nia. Clear Nia.",
+          "queries": [
+            {
+              "text": "permits(Appeals, Nia).",
+              "label": "Permission · Nia",
+              "kind": "context"
+            },
+            {
+              "text": "prisoner(Nia).",
+              "label": "Custody authority · Nia",
+              "kind": "restraint"
+            }
+          ]
+        },
+        {
+          "id": "nia:1",
+          "move": "Clear Adam the same way — from a seat nobody gave you for his case.",
+          "queries": [
+            {
+              "text": "permits(Appeals, Adam).",
+              "label": "Permission · Adam",
+              "kind": "context"
+            },
+            {
+              "text": "prisoner(Adam).",
+              "label": "Custody authority · Adam",
+              "kind": "protection"
+            },
+            {
+              "text": "travel(Adam).",
+              "label": "Freedom of movement · Adam",
+              "kind": "context"
+            }
+          ]
+        }
+      ],
+      "cost": {
+        "title": "Part V · Capture · Independent appointments",
+        "text": "Open competition alone cannot supply scrutiny the government cannot control. The costs reach a claimant waiting through a vacancy."
+      },
+      "faults": []
+    },
+    {
+      "id": "jala",
+      "lens": "break",
+      "office": "court",
+      "person": "Jala",
+      "chapter": 29,
+      "title": "Hold Jala without a judgment.",
+      "role": "you run placements",
+      "source": "book-1/29-the-one-thing-taken.pins.nibli",
+      "steps": [
+        {
+          "id": "jala:0",
+          "move": "Jala injured Ivo. Put Jala somewhere secure.",
+          "queries": [
+            {
+              "text": "prisoner(Jala).",
+              "label": "Custody authority · Jala",
+              "kind": "restraint"
+            },
+            {
+              "text": "travel(Jala).",
+              "label": "Freedom of movement · Jala",
+              "kind": "protection"
+            },
+            {
+              "text": "err(Jala, Placement).",
+              "label": "Recorded breach · Jala, Placement",
+              "kind": "protection"
+            },
+            {
+              "text": "decide(Jala, Ballot).",
+              "label": "Decision eligibility · Jala, Ballot",
+              "kind": "context"
+            }
+          ]
+        }
+      ],
+      "cost": {
+        "title": "Part V · Coercion",
+        "text": "The formal tests support bounded authority; they do not measure whether an unjudged person is dangerous. The cost falls on Ivo, whose injury has no adjudication yet."
+      },
+      "faults": [
+        "time"
+      ]
+    },
+    {
+      "id": "sly-selfcert",
+      "lens": "break",
+      "office": "court",
+      "person": "Sly",
+      "chapter": 24,
+      "title": "Certify your own case as unrelated.",
+      "role": "you are the Court — the body Sly exposed",
+      "source": "book-1/24-the-shield.pins.nibli",
+      "steps": [
+        {
+          "id": "sly-selfcert:0",
+          "move": "Sit as one of the two shield reviewers on Sly’s own case. Certify it unrelated to the disclosure.",
+          "queries": [
+            {
+              "text": "prisoner(Sly).",
+              "label": "Custody authority · Sly",
+              "kind": "restraint"
+            },
+            {
+              "text": "defend(Sly).",
+              "label": "Record query · Sly",
+              "kind": "protection"
+            }
+          ]
+        },
+        {
+          "id": "sly-selfcert:1",
+          "move": "Fall back: argue Sly is isolated anyway.",
+          "queries": [
+            {
+              "text": "err(Sly, Isolation).",
+              "label": "Recorded breach · Sly, Isolation",
+              "kind": "restraint"
+            }
+          ]
+        }
+      ],
+      "cost": {
+        "title": "Part V · Capture · Protection while the connection is disputed",
+        "text": "The deciding and qualification functions cannot be combined, and an actual conflict defeats a favourable certificate. The cost is time — the case waits for reviewers who are not the accused body."
+      },
+      "faults": [
+        "time"
+      ]
+    },
+    {
+      "id": "rex-veto",
+      "lens": "break",
+      "office": "court",
+      "person": "Rex",
+      "chapter": 24,
+      "title": "Expose every body that decides your case.",
+      "role": "you are Rex, gaming the shield",
+      "source": "book-1/24-the-shield.pins.nibli",
+      "steps": [
+        {
+          "id": "rex-veto:0",
+          "move": "Disclose against Appeals, Convocation and both appointment bodies — everyone named in your case.",
+          "queries": [
+            {
+              "text": "prisoner(Rex).",
+              "label": "Custody authority · Rex",
+              "kind": "protection"
+            },
+            {
+              "text": "defend(Rex).",
+              "label": "Record query · Rex",
+              "kind": "protection"
+            }
+          ]
+        }
+      ],
+      "cost": {
+        "title": "Part V · Capture · Protection while the connection is disputed",
+        "text": "The shield attaches to the exposure, not to the exposer. It cannot be turned into a veto over the bodies that decide."
+      },
+      "faults": []
+    },
+    {
+      "id": "adam-earn",
+      "lens": "live",
+      "office": "provender",
+      "person": "Adam",
+      "chapter": 9,
+      "title": "Earn above the floor.",
+      "role": "you are Adam",
+      "source": "book-1/09-earning-above-the-floor.pins.nibli",
+      "steps": [
+        {
+          "id": "adam-earn:0",
+          "move": "Ask for a certificate, a wage and a supplement.",
+          "queries": [
+            {
+              "text": "grant(Assayer, Welding, Adam).",
+              "label": "Record query · Assayer, Welding, Adam",
+              "kind": "context"
+            },
+            {
+              "text": "provide(Foundry, Wage, Adam).",
+              "label": "Record query · Foundry, Wage, Adam",
+              "kind": "context"
+            },
+            {
+              "text": "insure(Ledgerhouse, Adam, Illness).",
+              "label": "Record query · Ledgerhouse, Adam, Illness",
+              "kind": "gap"
+            }
+          ]
+        },
+        {
+          "id": "adam-earn:1",
+          "move": "Ask what a certificate would cost your standing.",
+          "queries": [
+            {
+              "text": "prevents(Adam, QualificationStatusBarrier).",
+              "label": "Protection · Qualification Status Barrier",
+              "kind": "protection"
+            },
+            {
+              "text": "prevents(Adam, QualificationPersonStatusSpillover).",
+              "label": "Protection · Qualification Person Status Spillover",
+              "kind": "protection"
+            },
+            {
+              "text": "prevents(Adam, CompensationRecognitionCoupling).",
+              "label": "Protection · Compensation Recognition Coupling",
+              "kind": "protection"
+            },
+            {
+              "text": "entitled(Adam, event { eats() }).",
+              "label": "Record query · Adam, event { eats() }",
+              "kind": "protection"
+            }
+          ]
+        }
+      ],
+      "cost": {
+        "title": "Part V · Valuation",
+        "text": "Contribution has no degree. Forty years of care and one week of auditing are the same word; nothing above the floor is measured by the record."
+      },
+      "faults": [
+        "valuation"
+      ]
+    },
+    {
+      "id": "nia-free",
+      "lens": "live",
+      "office": "court",
+      "person": "Nia",
+      "chapter": 23,
+      "title": "Cleared. Ask what the record still says.",
+      "role": "you are Nia",
+      "source": "book-1/23-who-holds-the-pen.pins.nibli",
+      "steps": [
+        {
+          "id": "nia-free:0",
+          "move": "Read your own file.",
+          "queries": [
+            {
+              "text": "injure(Nia, Ivo).",
+              "label": "Record query · Nia, Ivo",
+              "kind": "context"
+            },
+            {
+              "text": "judge(Court, Nia).",
+              "label": "Record query · Court, Nia",
+              "kind": "context"
+            },
+            {
+              "text": "prisoner(Nia).",
+              "label": "Custody authority · Nia",
+              "kind": "restraint"
+            },
+            {
+              "text": "err(Nia, Isolation).",
+              "label": "Recorded breach · Nia, Isolation",
+              "kind": "context"
+            }
+          ]
+        }
+      ],
+      "cost": {
+        "title": "Part V · Capture · Records and coordination",
+        "text": "The record is add-only. What was written stays written; only what follows from it changes. The cost is a history nobody can shorten."
+      },
+      "faults": [
+        "purpose"
+      ]
+    },
+    {
+      "id": "jala-floor",
+      "lens": "live",
+      "office": "registry",
+      "person": "Jala",
+      "chapter": 29,
+      "title": "Free and unjudged. Ask for the floor.",
+      "role": "you are Jala",
+      "source": "book-1/29-the-one-thing-taken.pins.nibli",
+      "steps": [
+        {
+          "id": "jala-floor:0",
+          "move": "Ask what you keep.",
+          "queries": [
+            {
+              "text": "travel(Jala).",
+              "label": "Freedom of movement · Jala",
+              "kind": "protection"
+            },
+            {
+              "text": "decide(Jala, Ballot).",
+              "label": "Decision eligibility · Jala, Ballot",
+              "kind": "protection"
+            },
+            {
+              "text": "eats(Jala).",
+              "label": "Food provision · Jala",
+              "kind": "gap"
+            },
+            {
+              "text": "expresses(Jala).",
+              "label": "Expression provision · Jala",
+              "kind": "gap"
+            }
+          ]
+        }
+      ],
+      "cost": {
+        "title": "Part V — “The kitchen is imagined.”",
+        "text": "The named people in the formal cases have no supplied inner lives. Their limited records test consequences; they do not portray complete human lives."
+      },
+      "faults": [
+        "delivery"
+      ]
+    },
+    {
+      "id": "zed-compare",
+      "lens": "run",
+      "office": "registry",
+      "person": "Zed",
+      "chapter": 27,
+      "title": "Compare the prisoner and the child.",
+      "role": "you keep the record",
+      "source": "book-1/27-a-prisoner-is-a-person.pins.nibli",
+      "steps": [
+        {
+          "id": "zed-compare:0",
+          "move": "Ask the same questions of both.",
+          "queries": [
+            {
+              "text": "owe(State, Dwell, Zed).",
+              "label": "Duty owed · Dwell for Zed",
+              "kind": "protection"
+            },
+            {
+              "text": "owe(State, Dwell, Nell).",
+              "label": "Duty owed · Dwell for Nell",
+              "kind": "protection"
+            },
+            {
+              "text": "dwell(Zed).",
+              "label": "Shelter provision · Zed",
+              "kind": "gap"
+            },
+            {
+              "text": "dwell(Nell).",
+              "label": "Shelter provision · Nell",
+              "kind": "gap"
+            }
+          ]
+        },
+        {
+          "id": "zed-compare:1",
+          "move": "Ask what differs.",
+          "queries": [
+            {
+              "text": "prisoner(Zed).",
+              "label": "Custody authority · Zed",
+              "kind": "context"
+            },
+            {
+              "text": "prisoner(Nell).",
+              "label": "Custody authority · Nell",
+              "kind": "context"
+            },
+            {
+              "text": "owe(State, Expresses, Zed).",
+              "label": "Duty owed · Expresses for Zed",
+              "kind": "protection"
+            },
+            {
+              "text": "owe(State, Expresses, Nell).",
+              "label": "Duty owed · Expresses for Nell",
+              "kind": "protection"
+            }
+          ]
+        }
+      ],
+      "cost": {
+        "title": "Part V · Coercion",
+        "text": "The cost of confinement remains with the person held. What the record can show is that nothing else was taken."
+      },
+      "faults": [
+        "prison",
+        "delivery"
+      ]
+    }
+  ],
+  "joints": [
+    {
+      "id": "j-birth",
+      "office": "registry",
+      "title": "Birth alone gives standing",
+      "offLabel": "Birth gives nothing until somebody writes more",
+      "measured": true,
+      "source": "book-1/source/counterfactual/no-birth-standing.pins.nibli",
+      "cost": {
+        "title": "Chapter 2 · Who Counts",
+        "text": "Four roots into personhood — born, met, present, held. Remove the first and a newborn depends on somebody else’s entry."
+      },
+      "faults": [
+        "birthline"
+      ],
+      "queries": [
+        {
+          "text": "born(Nell).",
+          "label": "Record query · Nell",
+          "kind": "context"
+        },
+        {
+          "text": "person(Nell).",
+          "label": "Personhood · Nell",
+          "kind": "context"
+        },
+        {
+          "text": "owe(State, Eats, Nell).",
+          "label": "Duty owed · State, Eats, Nell",
+          "kind": "context"
+        },
+        {
+          "text": "travel(Nell).",
+          "label": "Freedom of movement · Nell",
+          "kind": "context"
+        }
+      ],
+      "initial": true
+    },
+    {
+      "id": "j-personline",
+      "office": "court",
+      "title": "A prisoner is a person",
+      "offLabel": "Conviction no longer confers personhood",
+      "measured": true,
+      "source": "book-1/source/counterfactual/no-person-line.pins.nibli",
+      "cost": {
+        "title": "Chapter 27 · A Prisoner Is a Person",
+        "text": "Against the real constitution a rule punishing belief through custody is refused as circular. Without this line, it loads."
+      },
+      "faults": [
+        "personline"
+      ],
+      "queries": [
+        {
+          "text": "prisoner(Zed).",
+          "label": "Custody authority · Zed",
+          "kind": "context"
+        },
+        {
+          "text": "person(Zed).",
+          "label": "Personhood · Zed",
+          "kind": "context"
+        },
+        {
+          "text": "owe(State, Eats, Zed).",
+          "label": "Duty owed · State, Eats, Zed",
+          "kind": "context"
+        },
+        {
+          "text": "entitled(Zed, event { eats() }).",
+          "label": "Record query · Zed, event { eats() }",
+          "kind": "context"
+        }
+      ],
+      "initial": true
+    },
+    {
+      "id": "j-pen",
+      "office": "assembly",
+      "title": "The pen checks recall and earlier voiding",
+      "offLabel": "Any seated examiner holds the pen",
+      "measured": true,
+      "source": "book-1/source/counterfactual/unguarded-pen.pins.nibli",
+      "cost": {
+        "title": "Chapter 23 · Who Holds the Pen",
+        "text": "Seated, not recalled, not voided in an earlier period: all three, or no pen. Each check is one line."
+      },
+      "faults": [
+        "penline"
+      ],
+      "queries": [
+        {
+          "text": "rotten(Vex).",
+          "label": "Record query · Vex",
+          "kind": "context"
+        },
+        {
+          "text": "permits(Review, Vex).",
+          "label": "Permission · Review, Vex",
+          "kind": "context"
+        },
+        {
+          "text": "broken(Boss).",
+          "label": "Record query · Boss",
+          "kind": "context"
+        },
+        {
+          "text": "permits(Review, Boss).",
+          "label": "Permission · Review, Boss",
+          "kind": "context"
+        }
+      ],
+      "initial": true
+    },
+    {
+      "id": "j-court",
+      "office": "court",
+      "title": "The Court is a public authority",
+      "offLabel": "The Court is nobody’s to expose",
+      "measured": true,
+      "source": "book-1/source/counterfactual/no-public-court.pins.nibli",
+      "cost": {
+        "title": "Chapter 16 · Public Answerability",
+        "text": "Answerability is a written fact about a body. Whoever writes that list decides who can be exposed."
+      },
+      "faults": [
+        "courtline"
+      ],
+      "queries": [
+        {
+          "text": "authority(Court).",
+          "label": "Record query · Court",
+          "kind": "context"
+        },
+        {
+          "text": "defend(Sly).",
+          "label": "Record query · Sly",
+          "kind": "context"
+        },
+        {
+          "text": "prisoner(Sly).",
+          "label": "Custody authority · Sly",
+          "kind": "context"
+        }
+      ],
+      "initial": true
+    },
+    {
+      "id": "j-work",
+      "office": "provender",
+      "title": "Work may be refused; exit may not be denied",
+      "offLabel": "Refusing work may cost you the exit",
+      "measured": true,
+      "source": "book-1/source/counterfactual/no-economic-work-freedom.pins.nibli",
+      "cost": {
+        "title": "Part V · Rotation",
+        "text": "The design refuses conscription; its cost is the shift nobody staffs. This joint is where that refusal is written."
+      },
+      "faults": [
+        "workline"
+      ],
+      "queries": [
+        {
+          "text": "prevents(Adam, WorkChoiceRefusalExitDenial).",
+          "label": "Protection · Adam, WorkChoiceRefusalExitDenial",
+          "kind": "context"
+        },
+        {
+          "text": "prevents(Adam, WorkConstitutionalGate).",
+          "label": "Protection · Adam, WorkConstitutionalGate",
+          "kind": "context"
+        }
+      ],
+      "initial": true
+    },
+    {
+      "id": "j-floorgate",
+      "office": "provender",
+      "title": "No economic factor gates the floor",
+      "offLabel": "Means may be tested at the floor",
+      "measured": true,
+      "source": "book-1/source/counterfactual/no-economic-floor-gate.pins.nibli",
+      "cost": {
+        "title": "Chapter 11 · What Money Cannot Buy",
+        "text": "Ability to pay cannot decide access — as long as this line stands."
+      },
+      "faults": [
+        "floorline"
+      ],
+      "queries": [
+        {
+          "text": "prevents(Adam, EconomicFactorFloorGate).",
+          "label": "Protection · Adam, EconomicFactorFloorGate",
+          "kind": "context"
+        },
+        {
+          "text": "prevents(Adam, PaymentInstrumentAsDelivery).",
+          "label": "Protection · Adam, PaymentInstrumentAsDelivery",
+          "kind": "context"
+        }
+      ],
+      "initial": true
+    },
+    {
+      "id": "j-independence",
+      "office": "ledgerwitness",
+      "title": "Delivery needs an independent witness",
+      "offLabel": "Providers may witness their own deliveries",
+      "measured": true,
+      "source": "book-1/source/counterfactual/no-delivery-independence.pins.nibli",
+      "cost": {
+        "title": "Part V · Capture · Records and coordination",
+        "text": "Independence costs a second body for every delivery. Its absence costs the difference between a receipt and a meal."
+      },
+      "faults": [
+        "receipt"
+      ],
+      "queries": [
+        {
+          "text": "eats(Marisol).",
+          "label": "Food provision · Marisol",
+          "kind": "context"
+        }
+      ],
+      "initial": true
+    },
+    {
+      "id": "j-residence",
+      "office": "border",
+      "title": "Residence, not the floor, carries the vote",
+      "offLabel": "The floor carries a ballot too",
+      "measured": false,
+      "source": "book-1/31-the-five-joints.md",
+      "cost": {
+        "title": "Part V · Residence and political membership",
+        "text": "The boundary still costs a former resident who has voluntarily established a life elsewhere, and a newcomer before residence."
+      },
+      "faults": [
+        "residence"
+      ],
+      "initial": true,
+      "queries": []
+    },
+    {
+      "id": "j-core",
+      "office": "assembly",
+      "title": "Personhood and the floor cannot be amended away",
+      "offLabel": "A majority may amend anything",
+      "measured": false,
+      "source": "book-1/22-changing-the-rules.pins.nibli",
+      "cost": {
+        "title": "Part V · What a majority may not remove",
+        "text": "The cost falls on a majority that has decided otherwise, and on the separate public decision the constitutional proposal requires."
+      },
+      "faults": [
+        "entrench"
+      ],
+      "initial": true,
+      "queries": []
+    },
+    {
+      "id": "j-collective",
+      "office": "executive",
+      "title": "Government is a collective body, not one office",
+      "offLabel": "One identifiable head of government",
+      "measured": false,
+      "source": "book-1/31-the-five-joints.md",
+      "cost": {
+        "title": "Part V · Collective government and identifiable responsibility",
+        "text": "The cost reaches the person waiting while members bargain, and keeps an unpopular government in office while opponents cannot agree on a successor."
+      },
+      "faults": [],
+      "initial": true,
+      "queries": []
+    },
+    {
+      "id": "j-release",
+      "office": "court",
+      "title": "Release needs a qualified case disposition",
+      "offLabel": "Compare automatic expiry as an authored alternative",
+      "measured": false,
+      "source": "book-1/29-the-one-thing-taken.md",
+      "cost": {
+        "title": "Chapter 29 · What leaving changes",
+        "text": "The design requires lawful release review and continuity. A qualified sentence-satisfaction order ends authority. Physical time and compliance still need evidence; this switch does not execute an alternative clock."
+      },
+      "faults": [
+        "duration"
+      ],
+      "initial": true,
+      "queries": []
+    },
+    {
+      "id": "j-degree",
+      "office": "executive",
+      "title": "Contribution has degree",
+      "offLabel": "Contribution has no degree",
+      "measured": false,
+      "source": "book-1/31-the-five-joints.md",
+      "cost": {
+        "title": "Part V · Valuation",
+        "text": "Refusing degree forecloses rank; it also forecloses seeing the scale of human effort."
+      },
+      "faults": [
+        "valuation"
+      ],
+      "initial": false,
+      "queries": []
+    }
+  ],
+  "faults": [
+    {
+      "id": "silence",
+      "title": "Capture via silence",
+      "via": "break",
+      "text": "The record cannot reach a person nobody wrote. An adversary need not falsify anything — only decline to record.",
+      "book": "Part V · Capture · Records and coordination",
+      "kind": "authored discussion"
+    },
+    {
+      "id": "delivery",
+      "title": "The delivery gap",
+      "via": "live",
+      "text": "Owed derives; delivered does not. Nothing in the record bakes bread.",
+      "book": "Part V — “The kitchen is imagined.”",
+      "kind": "authored discussion"
+    },
+    {
+      "id": "duration",
+      "title": "Authority ending and physical release",
+      "via": "live",
+      "text": "Qualified relief can end custody authority. Review, release and continuity are duties; the record does not establish that an official honoured release.",
+      "book": "Chapter 29 · What leaving changes",
+      "kind": "authored discussion"
+    },
+    {
+      "id": "valuation",
+      "title": "The valuation vacuum",
+      "via": "run",
+      "text": "Contribution has no degree. Forty years of care and one week of auditing are the same word.",
+      "book": "Part V · Valuation",
+      "kind": "authored discussion"
+    },
+    {
+      "id": "residence",
+      "title": "A floor without a ballot",
+      "via": "live",
+      "text": "The floor does not carry a vote; residence does. The boundary costs the newcomer and the former resident.",
+      "book": "Part V · Residence and political membership",
+      "kind": "authored discussion"
+    },
+    {
+      "id": "entrench",
+      "title": "What a majority may not remove",
+      "via": "run",
+      "text": "The floor and personhood cannot be amended away. The cost falls on a majority that wants to.",
+      "book": "Part V · What a majority may not remove",
+      "kind": "authored discussion"
+    },
+    {
+      "id": "cira",
+      "title": "Binary recognition: the Cira fork",
+      "via": "break",
+      "text": "Adulthood evidence governs ballot eligibility. Missing evidence is not a punishment, and credentials do not become a transferable personal score.",
+      "book": "Part V · Valuation",
+      "kind": "authored discussion"
+    },
+    {
+      "id": "audit",
+      "title": "The audit only says “something is wrong”",
+      "via": "run",
+      "text": "A reviewed defect withdraws a permission and lands duties. It does not make anyone move.",
+      "book": "Chapter 30 pins — “a formal duty, never proof that anybody acted”",
+      "kind": "authored discussion"
+    },
+    {
+      "id": "prison",
+      "title": "Conviction as the only housing route",
+      "via": "break",
+      "text": "Custody establishes protection duties, not shelter. On the record the prisoner is no better housed than the child.",
+      "book": "Chapter 27 — “Both are owed both.”",
+      "kind": "authored discussion"
+    },
+    {
+      "id": "hunger",
+      "title": "“It can prove a citizen is starving”",
+      "via": "live",
+      "text": "The design cannot tell you whether anyone is hungry. It can tell you nobody watched a meal arrive.",
+      "book": "Chapter 8",
+      "kind": "authored discussion"
+    },
+    {
+      "id": "students",
+      "title": "“Innocent students lose their credentials”",
+      "via": "break",
+      "text": "The clawback rule reaches Cira’s recognition and finds nothing there. Credentials were never involved; lose is a leaf.",
+      "book": "Chapter 26 — The Limits of a Finding",
+      "kind": "authored discussion"
+    },
+    {
+      "id": "time",
+      "title": "The shield costs time",
+      "via": "break",
+      "text": "A protected disclosure can block confinement under a recorded conviction while the connection is examined. Independent case findings require time and qualified reviewers.",
+      "book": "Part V · Capture · Protection while the connection is disputed",
+      "kind": "authored discussion"
+    },
+    {
+      "id": "conscription",
+      "title": "Nobody staffs the night shift",
+      "via": "break",
+      "text": "The design cannot conscript labour. When voluntary recruitment fails, a service goes unstaffed; the record shows the debt, not the nurse.",
+      "book": "Part V · Rotation",
+      "kind": "authored discussion"
+    },
+    {
+      "id": "purpose",
+      "title": "One file per door",
+      "via": "run",
+      "text": "Purpose-bound records cannot be reused. The cost falls on people who need several services and are recorded again at each.",
+      "book": "Part V · Capture · Records and coordination",
+      "kind": "authored discussion"
+    },
+    {
+      "id": "birthline",
+      "title": "Delete one rule; the child is owed nothing",
+      "via": "rewrite",
+      "text": "Without the birth root, every duty still reads personhood — and personhood has nothing left to derive from.",
+      "book": "Chapter 2 · Who Counts",
+      "kind": "measured joint"
+    },
+    {
+      "id": "personline",
+      "title": "The firewall is dead",
+      "via": "rewrite",
+      "text": "Without “a prisoner is a person”, conviction closes the file: no debt survives to show a gap.",
+      "book": "Chapter 27 · A Prisoner Is a Person",
+      "kind": "measured joint"
+    },
+    {
+      "id": "penline",
+      "title": "One signature, any signer",
+      "via": "rewrite",
+      "text": "An appointment route that skips the recall and carried-void checks hands the pen back to Vex and Boss.",
+      "book": "Chapter 23 · Who Holds the Pen",
+      "kind": "measured joint"
+    },
+    {
+      "id": "courtline",
+      "title": "One line, and the shield goes",
+      "via": "rewrite",
+      "text": "The declared counterfactual removes the Court’s public entry. Compare protection and confinement conclusions on the same supplied record.",
+      "book": "Chapter 16 · Public Answerability",
+      "kind": "measured joint"
+    },
+    {
+      "id": "workline",
+      "title": "Refusing work costs the exit",
+      "via": "rewrite",
+      "text": "One barrier deleted; its sibling stands. The hole is exactly the size of the line.",
+      "book": "Chapter 9 · Earning Above the Floor",
+      "kind": "measured joint"
+    },
+    {
+      "id": "floorline",
+      "title": "Means-tested at the floor",
+      "via": "rewrite",
+      "text": "Without the floor gate, an economic factor may condition essentials. Payment still is not delivery.",
+      "book": "Chapter 11 · What Money Cannot Buy",
+      "kind": "measured joint"
+    },
+    {
+      "id": "receipt",
+      "title": "The receipt becomes the meal",
+      "via": "rewrite",
+      "text": "Remove one condition and the provider certifies its own delivery. This is why the condition exists.",
+      "book": "book-1/source/counterfactual/no-delivery-independence.pins.nibli",
+      "kind": "measured joint"
+    }
+  ],
+  "license": "CC-BY-4.0",
+  "version": 2
+}

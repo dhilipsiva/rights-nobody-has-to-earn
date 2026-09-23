@@ -34,7 +34,7 @@ jobs:
       - name: Linux system webview dependencies
         if: runner.os == 'Linux'
         run: sudo apt-get update && sudo apt-get install -y libwebkit2gtk-4.1-dev libgtk-3-dev libxdo-dev libayatana-appindicator3-dev librsvg2-dev xvfb
-      - name: Build offline native bundle and compare source/compiled scenarios
+      - name: Build offline native bundle
         working-directory: book
         run: python ui/scripts/build.py desktop
       - name: Build native integration test
@@ -47,9 +47,9 @@ jobs:
           LIBGL_ALWAYS_SOFTWARE: '1'
           GDK_BACKEND: x11
         run: |
-          timeout 300 xvfb-run -a ui/target/release/desktop-check ui/artifacts/desktop-check.json
+          timeout 1800 xvfb-run -a ui/target/release/desktop-check ui/artifacts/desktop-check.json
           cp ui/artifacts/desktop-check.json ui/artifacts/desktop-scenarios.json
-          timeout 60 xvfb-run -a ui/target/release/desktop-check ui/artifacts/desktop-check.json --resume
+          timeout 180 xvfb-run -a ui/target/release/desktop-check ui/artifacts/desktop-check.json --resume
       - name: Exercise native Windows WebView2
         if: runner.os == 'Windows'
         working-directory: book
@@ -77,9 +77,17 @@ jobs:
         run: ./bootstrap.sh
       - name: Matching Wasm bindings
         run: cargo install wasm-bindgen-cli --version 0.2.128 --locked
-      - name: Build full static section and execute scenarios
+      - name: Build static section and executable inputs
         working-directory: book
         run: python ui/scripts/build.py web
+      - name: Compare executable records against source and compiled engine
+        working-directory: book/ui
+        run: cargo run --locked --release -p book-reason --bin precompute -- generated/reason-inputs.json generated/constitution.bin tests/expectations.json
+      - name: Input boundary and game state checks
+        working-directory: book
+        run: |
+          python -m unittest discover -s ui/tests -p 'test_*.py'
+          cargo test --manifest-path ui/Cargo.toml --locked --lib
       - name: Assembler development tests
         working-directory: book
         run: uv run --with markdown-it-py==4.2.0 --with mdit-py-plugins==0.6.1 python -m unittest tests.test_build_book
@@ -101,3 +109,4 @@ jobs:
           path: |
             book/ui/dist/
             book/ui/artifacts/browser/
+            book/ui/artifacts/source-execution.json

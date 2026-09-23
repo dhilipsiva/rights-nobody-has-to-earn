@@ -19,58 +19,31 @@ fn companion_markdown(route: &str) -> String {
         route_title(route)
     );
     match route.strip_prefix(PREFIX).unwrap_or("") {
-        "map/" => {
-            text += "Questions are routes into the manuscript, not separate constitutional rules. Visits are saved locally.\n\n";
-            for q in &companion().questions {
-                text += &format!("- [{}]({ORIGIN}{})\n", q.text, question_path(q));
-            }
-            text += "\n## Glossary\n\n";
-            for term in &companion().terms {
-                text += &format!("### {}\n\n{}\n\n", term.name, term.definition);
-            }
-        }
-        "walkthrough/food-delivery/" => {
-            text += "Derived is not observed. Initial results are precomputed against the full constitution, not a claim of a freshly verified book.\n\n";
-            for (i, step) in companion().steps.iter().enumerate() {
-                text += &format!(
-                    "## {}. {}\n\n{}\n\n{}\n\n",
-                    i + 1,
-                    step.heading,
-                    step.lead,
-                    step.note
-                );
-                let case = &cases()
-                    .cases
-                    .iter()
-                    .find(|c| c.scenario.id == format!("delivery-{i}"))
-                    .unwrap();
-                text += &format!("```nibli\n{}\n```\n\n", case.scenario.record.join("\n"));
-                for v in &case.outcome.verdicts {
-                    text += &format!("- `{}`: **{}** (precomputed)\n", v.query, v.status);
-                }
-                text += "\n";
-            }
-            text += &format!(
-                "Counterfactual details: [cases.json]({ORIGIN}{PREFIX}cases.json). The isolated edit removes only the food independence condition.\n\nSelf-check: the canonical rule does not derive food from a provider witnessing its own delivery.\n"
-            );
-        }
         "read/" => {
             for p in &book().pages {
                 text += &format!("- [{}]({}index.md)\n", p.label, p.canonical);
             }
         }
         "search/" => {
-            text += "Search runs locally in the interactive reader. All search terms must occur in a chapter. Use the [complete contents](../read/) for static navigation. Search results are excluded from indexing.\n";
-        }
-        "about/" => {
-            text += &format!(
-                "A constitutional design offered for discussion and criticism, not an account of a society operating these arrangements. By dhilipsiva. Book 2 concerns operation and transition and stays inactive until Book 1’s release decision.\n\nThe full manuscript lives in [the repository]({REPOSITORY}/tree/main/book-1). This companion cannot override the formal source.\n\n## Reasoning and privacy\n\nPrecomputed examples are executed during the UI build. Run locally executes one example on your device using the full constitution. Neither label claims the full verifier or contradiction scanner has just run. FALSE means not derivable from the supplied record; TRUE does not establish an observed event. Refusal and incomplete execution are separate.\n\nThe host serves static files. Engine resources download only when requested. Reasoning, search and saved progress stay on this device. External source links open their respective hosts.\n\n## Authorship, licences and sources\n\nThe author speaks in the opening, Part V and method; the derived chapters project the constitution. Case names are formal test records. Prose: CC BY 4.0. Code: MIT OR Apache-2.0. Constitution: CC0. Fonts: SIL OFL 1.1. See the [licence map]({REPOSITORY}/blob/main/LICENSING.md), [font sources]({ORIGIN}{PREFIX}assets/fonts/README.md), and [contribution guide]({REPOSITORY}/blob/main/CONTRIBUTING.md).\n\nAgent discovery uses the [llms.txt proposal](https://llmstxt.org/), with no guaranteed adoption, MCP server, chatbot or execution API.\n"
-            );
+            text += "Search runs locally in the interactive reader. Reading and browser Find remain available without JavaScript.\n";
         }
         _ => {
-            text += "What must a society provide for a person who can offer it nothing in return?\n\nFood, shelter, care, learning, safety, expression, belief and company form an unconditional floor. Being a person establishes standing and a claim to essentials. Employment, wealth, citizenship, family and good behaviour are not entrance requirements.\n\n## Owed is not delivered\n\nNell’s starting record is `born(Nell).` All eight duties follow; none of the delivery conclusions follow. A food receipt, an authorised independent witness and a matching food observation derive `eats(Nell)`. Removing those entries restores the original result. No other delivery result changes. Belief has no delivery route by design.\n\nNell is a test record. FALSE means not derivable, not real-world absence. TRUE is a derived conclusion, not an observation. These examples are precomputed until Run locally succeeds.\n\n";
+            text += "Pick a person. Walk their forks.\n\nThe game starts the local engine automatically. Each move executes a complete isolated record against the pinned constitution. There are no embedded game verdicts. Gameplay requires JavaScript; the complete reader remains available without it.\n\nAuthored costs and discussion are identified separately from engine responses. Saved and shared history is replayed live before it contributes to the tally.\n\n";
+            for f in &rights_book_ui::game_state::game().scenarios {
+                text += &format!("## {}\n\n{}\n\n", f.title, f.role);
+                for step in &f.steps {
+                    text += &format!("- {}\n", step.label);
+                }
+                text += &format!(
+                    "\n[Read chapter {}]({ORIGIN}{}) · [Source]({REPOSITORY}/blob/main/{})\n\nAuthored cost: {}\n\n",
+                    f.chapter,
+                    chapter(f.chapter).path,
+                    f.source,
+                    f.cost.text
+                );
+            }
             text += &format!(
-                "[Read Book 1]({ORIGIN}{PREFIX}read/index.md) · [26 questions]({ORIGIN}{PREFIX}map/index.md) · [Delivery walkthrough]({ORIGIN}{PREFIX}walkthrough/food-delivery/index.md)\n"
+                "[Complete reader]({ORIGIN}{PREFIX}read/) · [Game data]({ORIGIN}{PREFIX}game.json) · [Versioned executable inputs]({ORIGIN}{PREFIX}cases.json)\n"
             );
         }
     }
@@ -97,7 +70,7 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
         let page = book().pages.iter().find(|p| p.path == route);
         let title = format!("{} · {}", route_title(&route), book().title);
         let description = page.map(|p| p.description.clone()).unwrap_or_else(|| match route.strip_prefix(PREFIX).unwrap_or("") {
-            "" => "What must a society provide for someone who can offer it nothing in return? Read Book 1 and explore its executable constitutional design.",
+            "" => "Pick a person, walk their forks, and execute each record locally against the full constitutional design. Read the complete Book 1.",
             "map/" => "26 questions about personhood, the unconditional floor, ordinary life and public power, with a glossary and routes into Book 1.",
             "walkthrough/food-delivery/" => "Follow six delivery records. Explore why a receipt and an independent witness derive a conclusion, and what that conclusion cannot prove.",
             "about/" => "Authorship, sources, licensing, privacy and the limits of the executable Book 1 companion.",
@@ -175,8 +148,18 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
         full += &format!("\n---\n\nCitation: {}\n\n{}", page.canonical, page.markdown);
     }
     index += &format!(
-        "\n## Companion and structured data\n\n- [Questions and glossary]({ORIGIN}{PREFIX}map/index.md)\n- [Delivery walkthrough]({ORIGIN}{PREFIX}walkthrough/food-delivery/index.md)\n- [Sources and licences]({ORIGIN}{PREFIX}about/index.md)\n- [Chapter and section index]({ORIGIN}{PREFIX}content.json)\n- [Structured cases]({ORIGIN}{PREFIX}cases.json)\n\n## Optional\n\n- [Full reader text]({ORIGIN}{PREFIX}llms-full.txt)\n"
+        "\n## Companion and structured data\n\n- [Live execution game]({ORIGIN}{PREFIX}index.md)\n- [Authored game data]({ORIGIN}{PREFIX}game.json)\n- [Chapter and section index]({ORIGIN}{PREFIX}content.json)\n- [Versioned executable inputs; no answers]({ORIGIN}{PREFIX}cases.json)\n\n## Optional\n\n- [Full reader text]({ORIGIN}{PREFIX}llms-full.txt)\n"
     );
+    write(&root.join("game.json"), include_str!("../../game.json"))?;
+    let redirects = serde_json::json!({"version":1,"redirects":[
+        {"from":format!("{PREFIX}map/"),"to":PREFIX,"status":301},
+        {"from":format!("{PREFIX}walkthrough/food-delivery/"),"to":PREFIX,"status":301},
+        {"from":format!("{PREFIX}about/"),"to":format!("{PREFIX}#dossier"),"status":301}
+    ]});
+    write(
+        &root.join("redirects.json"),
+        serde_json::to_string_pretty(&redirects)?,
+    )?;
     write(&root.join("llms.txt"), index)?;
     write(&root.join("llms-full.txt"), full)?;
     println!(

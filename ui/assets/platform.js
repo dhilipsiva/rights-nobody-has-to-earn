@@ -1,48 +1,63 @@
 // SPDX-License-Identifier: MIT OR Apache-2.0
-// This module contains no engine import. The worker and its resources are
-// constructed only in response to the explicit Run locally action.
+// Game entry starts this service. Reader routes never call start().
 (() => {
-  let worker = null;
-  let pending = null;
-  let sequence = 0;
+  let worker = null, ready = false, starting = null, resource = null, sequence = 0;
+  let download = null;
+  const pending = new Map();
+  const fail = error => {
+    if (worker) worker.terminate();
+    worker = null; ready = false; starting = null;
+    for (const p of pending.values()) { clearTimeout(p.timer); p.reject(error); }
+    pending.clear();
+  };
+  const request = (message, transfer=[]) => new Promise((resolve,reject) => {
+    const request = ++sequence;
+    const timer = setTimeout(() => fail(new Error('Local execution timed out. Retry when resources are available.')),180000);
+    pending.set(request,{resolve,reject,timer});
+    try { worker.postMessage({...message,request},transfer); } catch(error) { fail(error); }
+  });
   window.bookUI = {
-    cancel() {
-      sequence++;
-      if (worker) worker.terminate();
-      worker = null;
-      if (pending) pending.reject(new Error('Cancelled'));
-      pending = null;
+    cancel() { if (pending.size || starting) { if(download) download.abort(); fail(new Error('Cancelled')); } },
+    start() {
+      if (ready) return Promise.resolve({ready:true});
+      if (starting) return starting;
+      const current = new Worker('/rights-nobody-has-to-earn/assets/engine-worker.js',{type:'module'});
+      worker = current;
+      worker.onmessage = ({data}) => {
+        if (worker !== current) return;
+        const p=pending.get(data.request);
+        if (!p) return;
+        clearTimeout(p.timer); pending.delete(data.request);
+        if (data.error) { p.reject(new Error(data.error)); fail(new Error(data.error)); }
+        else p.resolve(data);
+      };
+      worker.onerror = event => { if (worker===current) fail(new Error(event.message || 'Engine worker failed')); };
+      // Keep downloaded input in memory for cancellation/retry; never cache a verdict.
+      if (!resource) {
+        download=new AbortController();
+        const timer=setTimeout(()=>download?.abort(),180000);
+        resource = fetch('/rights-nobody-has-to-earn/assets/engine/constitution.bin.gz',{signal:download.signal}).then(r=>{
+        if (!r.ok) throw new Error(`Constitution download failed (${r.status})`);
+        return r.arrayBuffer();
+      }).catch(error=>{resource=null;throw error;}).finally(()=>{clearTimeout(timer);download=null;});
+      }
+      starting=(async()=>{
+        try {
+          const bytes=(await resource).slice(0);
+          if (worker!==current) throw new Error('Cancelled');
+          await request({kind:'initialize',bytes},[bytes]);
+          if (worker!==current) throw new Error('Cancelled');
+          ready=true; starting=null;
+          return {ready:true};
+        } catch(error) { if(worker===current) fail(error); throw error; }
+      })();
+      return starting;
     },
-    run(id) {
-      this.cancel();
-      const request = sequence;
-      const started = performance.now();
-      return new Promise((resolve, reject) => {
-        pending = {reject};
-        worker = new Worker('/rights-nobody-has-to-earn/assets/engine-worker.js', {type:'module'});
-        const timer = setTimeout(() => {
-          if (request !== sequence) return;
-          this.cancel();
-        }, 180000);
-        const finish = () => {
-          clearTimeout(timer);
-          if (worker) worker.terminate();
-          worker = null;
-          pending = null;
-        };
-        worker.onmessage = ({data}) => {
-          if (request !== sequence || data.request !== request) return;
-          finish();
-          if (data.error) reject(new Error(data.error));
-          else resolve({outcome:data.outcome, elapsed_ms: performance.now()-started});
-        };
-        worker.onerror = (event) => {
-          if (request !== sequence) return;
-          finish();
-          reject(new Error(event.message || 'The local engine could not run.'));
-        };
-        worker.postMessage({id, request});
-      });
+    async run(id) {
+      const started=performance.now();
+      await this.start();
+      const data=await request({kind:'run',id});
+      return {outcome:data.outcome, elapsed_ms:performance.now()-started};
     },
     async reading(config, send) {
       if (this.stopReading) this.stopReading();

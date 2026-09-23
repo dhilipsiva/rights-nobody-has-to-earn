@@ -5,10 +5,31 @@ from functools import partial
 from http.server import SimpleHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
 import argparse
+import json
+from urllib.parse import urlsplit, urlunsplit
 
 ROOT = Path(__file__).resolve().parents[1] / 'dist'
 class Handler(SimpleHTTPRequestHandler):
+    def redirect(self):
+        manifest = ROOT / 'rights-nobody-has-to-earn/redirects.json'
+        if not manifest.is_file():
+            return False
+        requested = urlsplit(self.path)
+        for rule in json.loads(manifest.read_text())['redirects']:
+            if requested.path == rule['from']:
+                target = urlsplit(rule['to'])
+                self.send_response(rule['status'])
+                self.send_header('Location', urlunsplit(('', '', target.path, requested.query, target.fragment)))
+                self.send_header('Content-Length', '0')
+                self.end_headers()
+                return True
+        return False
+    def do_HEAD(self):
+        if not self.redirect():
+            super().do_HEAD()
     def do_GET(self):
+        if self.redirect():
+            return
         if self.path == '/':
             content = b'<!doctype html><html lang="en"><title>Host test page</title><h1>Unrelated host page</h1><a href="/rights-nobody-has-to-earn/">Book 1</a></html>'
             self.send_response(200)
