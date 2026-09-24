@@ -16,9 +16,9 @@ spec.loader.exec_module(prepare)
 class ExecutableInputs(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
-        cls.public = json.loads((UI/'generated/cases.json').read_text())
+        cls.public = json.loads((UI/'generated/cases.json').read_text(encoding='utf-8'))
         cls.cases = {c['id']: c for c in cls.public['cases']}
-        cls.game = json.loads((UI/'game.json').read_text())
+        cls.game = json.loads((UI/'game.json').read_text(encoding='utf-8'))
 
     def test_complete_catalogue_and_no_answer_fields(self):
         self.assertEqual(len(self.game['scenarios']), 30)
@@ -54,7 +54,7 @@ class ExecutableInputs(unittest.TestCase):
         self.assertNotIn('public(Pax).', self.cases['shield:2']['record'])
 
     def test_counterfactuals_compare_identical_records(self):
-        source = (ROOT/'book-1/source/constitution.nibli').read_text()
+        source = (ROOT/'book-1/source/constitution.nibli').read_text(encoding='utf-8')
         for joint in self.game['joints']:
             if not joint['measured']:
                 self.assertFalse(joint['queries'])
@@ -77,10 +77,10 @@ class ExecutableInputs(unittest.TestCase):
     def test_existing_trusted_source_preconditions(self):
         # These repository-authored shell preconditions remain development checks.
         commands = set()
-        for spec in json.loads((UI/'case-map.json').read_text())['cases'].values():
+        for spec in json.loads((UI/'case-map.json').read_text(encoding='utf-8'))['cases'].values():
             for checkpoint in spec['snapshots']:
                 _, end = prepare.statements(checkpoint['source'],checkpoint['through'],checkpoint['occurrence'])
-                for line in (ROOT/checkpoint['source']).read_text().splitlines()[:end]:
+                for line in (ROOT/checkpoint['source']).read_text(encoding='utf-8').splitlines()[:end]:
                     if line.startswith(':require '): commands.add(line.removeprefix(':require '))
         for command in sorted(commands):
             subprocess.run(command, shell=True, cwd=ROOT, check=True)

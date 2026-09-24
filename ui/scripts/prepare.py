@@ -40,11 +40,11 @@ def statements(path, through=None, occurrence=1):
 
 
 def main():
-    suites = json.loads((ROOT / 'tests/pins/suites.json').read_text())
-    game = json.loads((UI / 'game.json').read_text())
-    mapping = json.loads((UI / 'case-map.json').read_text())['cases']
-    source = (ROOT / 'book-1/source/constitution.nibli').read_text()
-    fields = dict(line.split() for line in (ROOT / 'engine.pin').read_text().splitlines()
+    suites = json.loads((ROOT / 'tests/pins/suites.json').read_text(encoding='utf-8'))
+    game = json.loads((UI / 'game.json').read_text(encoding='utf-8'))
+    mapping = json.loads((UI / 'case-map.json').read_text(encoding='utf-8'))['cases']
+    source = (ROOT / 'book-1/source/constitution.nibli').read_text(encoding='utf-8')
+    fields = dict(line.split() for line in (ROOT / 'engine.pin').read_text(encoding='utf-8').splitlines()
                   if line and not line.startswith('#'))
     queries = {step['id']: step['queries'] for fork in game['scenarios'] for step in fork['steps']}
     for joint in game['joints']:
@@ -92,8 +92,8 @@ def main():
               'cases': cases, 'counterfactuals': edits}
     out = UI / 'generated'
     out.mkdir(exist_ok=True)
-    (out / 'cases.json').write_text(json.dumps(public, ensure_ascii=False, indent=2) + '\n')
-    (out / 'reason-inputs.json').write_text(json.dumps({**public, 'constitution': source}, ensure_ascii=False))
+    (out / 'cases.json').write_text(json.dumps(public, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
+    (out / 'reason-inputs.json').write_text(json.dumps({**public, 'constitution': source}, ensure_ascii=False), encoding='utf-8')
     print(f'Prepared complete constitution and {len(cases)} input-only records')
 
 

@@ -15,7 +15,7 @@ class Handler(SimpleHTTPRequestHandler):
         if not manifest.is_file():
             return False
         requested = urlsplit(self.path)
-        for rule in json.loads(manifest.read_text())['redirects']:
+        for rule in json.loads(manifest.read_text(encoding='utf-8'))['redirects']:
             if requested.path == rule['from']:
                 target = urlsplit(rule['to'])
                 self.send_response(rule['status'])

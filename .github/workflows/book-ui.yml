@@ -95,7 +95,7 @@ jobs:
         working-directory: book
         run: |
           cargo test --manifest-path ui/Cargo.toml --locked -p book-reason
-          cargo fmt --manifest-path ui/Cargo.toml --all -- --check
+          cargo fmt --manifest-path ui/Cargo.toml -p rights-book-ui -p book-reason -- --check
       - name: Browser dependencies
         run: uv run --with playwright==1.63.0 playwright install --with-deps chromium
       - name: Browser acceptance

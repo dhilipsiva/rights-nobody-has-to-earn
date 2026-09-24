@@ -27,9 +27,9 @@ def main():
     if args.nix_browser_libraries:
         os.environ['LD_LIBRARY_PATH'] = ':'.join(str(p/'lib') for p in Path('/nix/store').iterdir() if p.is_dir() and any(x in p.name for x in ['-nss-','-nspr-','-alsa-lib-']))
     out = UI/'artifacts/browser'; out.mkdir(parents=True, exist_ok=True)
-    content = json.loads((UI/'dist/rights-nobody-has-to-earn/content.json').read_text())
-    cases = json.loads((UI/'generated/cases.json').read_text())['cases']
-    expected = json.loads((UI/'tests/expectations.json').read_text())
+    content = json.loads((UI/'dist/rights-nobody-has-to-earn/content.json').read_text(encoding='utf-8'))
+    cases = json.loads((UI/'generated/cases.json').read_text(encoding='utf-8'))['cases']
+    expected = json.loads((UI/'tests/expectations.json').read_text(encoding='utf-8'))
     routes = ['', 'read/', 'search/'] + [f'read/{Path(p["source"]).stem}/' for p in content['pages']]
     assert len(routes) == 37 and len(content['pages']) == 34 and len(cases) == 78
     for path in ['game.json', 'cases.json']:
@@ -39,13 +39,13 @@ def main():
                 for v in value.values(): inspect(v)
             elif isinstance(value, list):
                 for v in value: inspect(v)
-        inspect(json.loads((UI/'dist/rights-nobody-has-to-earn'/path).read_text()))
+        inspect(json.loads((UI/'dist/rights-nobody-has-to-earn'/path).read_text(encoding='utf-8')))
     for item in content['pages']:
         assert all(s['url'] == item['canonical']+'#'+s['id'] for s in item['sections'])
         md = UI/'dist'/Path(item['markdown'].split('https://dhilipsiva.dev/')[1])
-        assert md.is_file() and '<!--' not in md.read_text()
-    assert '/search/' not in (UI/'dist/rights-nobody-has-to-earn/sitemap.xml').read_text()
-    assert 'precomputed' not in (UI/'dist/rights-nobody-has-to-earn/index.md').read_text()
+        assert md.is_file() and '<!--' not in md.read_text(encoding='utf-8')
+    assert '/search/' not in (UI/'dist/rights-nobody-has-to-earn/sitemap.xml').read_text(encoding='utf-8')
+    assert 'precomputed' not in (UI/'dist/rights-nobody-has-to-earn/index.md').read_text(encoding='utf-8')
     report = {'routes':37, 'reader_inputs':34, 'screens':[], 'engine':[], 'contrast':[]}
     errors = []
     with sync_playwright() as p:
@@ -70,7 +70,7 @@ def main():
                 if href.startswith(PREFIX) and '#' in href:
                     dest, fragment = href.split('#',1)
                     target = UI/'dist'/dest.lstrip('/')/'index.html'
-                    assert target.is_file() and f'id="{unquote(fragment)}"' in target.read_text(), href
+                    assert target.is_file() and f'id="{unquote(fragment)}"' in target.read_text(encoding='utf-8'), href
         for old, target in [('map/',PREFIX),('walkthrough/food-delivery/',PREFIX),('about/',PREFIX+'#dossier')]:
             response = context.request.get(args.url+PREFIX+old, max_redirects=0)
             assert response.status == 301 and response.headers['location'] == target
@@ -126,7 +126,7 @@ def main():
                 for state_name, selector in [('hero','.game-hero'),('nell','.play-card'),('dossier','#dossier')]:
                     page.locator(selector).scroll_into_view_if_needed()
                     name=f'{state_name}-{theme}-{width}';page.screenshot(path=str(out/(name+'.png')));report['screens'].append(name)
-                contrast = page.evaluate((UI/'tests/contrast.js').read_text())
+                contrast = page.evaluate((UI/'tests/contrast.js').read_text(encoding='utf-8'))
                 report['contrast'].append({'theme':theme,'width':width,**contrast})
                 assert not contrast['failures'], contrast['failures']
         page.set_viewport_size({'width':1280,'height':1000})
@@ -177,7 +177,7 @@ def main():
                 print('PASS: worker',case['id'],report['engine'][-1]['seconds'],flush=True)
             source_report=UI/'artifacts/source-execution.json'
             if source_report.is_file():
-                source={o['id']:o for o in json.loads(source_report.read_text())['outcomes']}
+                source={o['id']:o for o in json.loads(source_report.read_text(encoding='utf-8'))['outcomes']}
                 assert all(row['outcome']==source[row['id']] for row in report['engine'])
         # Test response validation with modified live responses, never a runtime answer table.
         page.locator('[data-person=Nell]').click()
@@ -238,7 +238,7 @@ def main():
         sp.get_by_role('button',name='Share progress',exact=True).click();expect(sp.locator('#share-game')).to_be_visible()
         storage.close();browser.close()
     assert not errors,errors
-    (out/('partial-results.json' if args.skip_reasoning else 'results.json')).write_text(json.dumps(report,indent=2)+'\n')
+    (out/('partial-results.json' if args.skip_reasoning else 'results.json')).write_text(json.dumps(report,indent=2)+'\n', encoding='utf-8')
     print('PASS: browser acceptance; results in',out,flush=True)
 
 
