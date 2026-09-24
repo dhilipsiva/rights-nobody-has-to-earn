@@ -167,7 +167,8 @@ Chapter 24's two cases pass 118 pins, and the shield-independence, credibility,
 red-team, counterfactual and `temporal-T2` cases pass 578 pins (focused,
 partial). All authoring development tests pass once four stale resolution
 receipts, left by the 2026-09-21 prose revisions, were rebound in a separate
-commit. VERIFY_PLACEHOLDER
+commit. `RIGHTS_VERIFY_JOBS=4 ./verify.sh` passes 88,846 pins across 16,137
+cases with complete contradiction checks and no findings in 1,207.62s.
 
 ### Item 36 — the floor's bearer by tier, and one name per item, 2026-09-24
 
