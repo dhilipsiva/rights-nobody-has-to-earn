@@ -98,24 +98,34 @@ therefore prefer correcting consequential records and restricting relevant
 official acts to maintaining a parallel system of public esteem.
 
 The retained credibility finding illustrates the distinction. Deceit,
-fabrication, concealed conflict or withheld evidence bears directly on the
-power to sign a new adverse finding about another person. An effective case
-blocks that act; it does not cancel unrelated work, wages or political rights.
-A qualified appeal can end the finding, and Appeals owes review of the
-continuing restriction without waiting for a request. A challenge remains
-available independently. A generic forgiveness flag is insufficient.
+fabrication, concealed conflict or withheld evidence bears directly on the power
+to sign a new credibility finding about another person. An effective case blocks
+that act; it does not cancel unrelated work, wages or political rights. Nor does
+it reach the other offices that make adverse findings. An inspector,
+investigator or adjudicator in another part of the constitution acts under that
+part's own independence, review and challenge requirements, and a conflict of
+interest proved against the office withholds its permission for the affected
+act. Extending the restriction to all of them would turn a finding about one act
+into a bar from public office and employment, and a deception proved in one
+matter is not evidence of bias in an unrelated one. The cost falls on anyone
+assessed by such an official; their protection is those requirements, not the
+official's record in another matter. Evidence that officials under a credibility
+finding were distorting findings elsewhere would reopen the question. A
+qualified appeal can end the finding, and Appeals owes review of the continuing
+restriction without waiting for a request. A challenge remains available
+independently. A generic forgiveness flag is insufficient.
 
-The restriction has no automatic expiry in the model. Someone whose review
-never happens remains unable to qualify that adverse act. That is a serious
+The restriction has no automatic expiry in the model. Someone whose review never
+happens remains unable to sign a credibility finding. That is a serious
 institutional failure, and the duty is no evidence that it was discharged.
 Letting silence restore coercive authority would make failure to review a route
-back to power over a third person. The narrower restriction keeps ordinary
-life and earned claims outside it while requiring a qualified disposition.
-Evidence that this separation cannot protect those awaiting review would
-require a stronger ending and remedy, not a defence of permanent exclusion.
-Evidence that an additional public acknowledgment meets a concrete unmet need
-without becoming a status hierarchy would reopen the case for it. Its absence
-of formal consumers alone would not settle that question.
+back to power over a third person. The narrower restriction keeps ordinary life
+and earned claims outside it while requiring a qualified disposition. Evidence
+that this separation cannot protect those awaiting review would require a
+stronger ending and remedy, not a defence of permanent exclusion. Evidence that
+an additional public acknowledgment meets a concrete unmet need without becoming
+a status hierarchy would reopen the case for it. Its absence of formal consumers
+alone would not settle that question.
 
 ### Scarcity and separate claims
 

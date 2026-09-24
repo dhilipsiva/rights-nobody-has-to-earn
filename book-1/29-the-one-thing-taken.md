@@ -250,12 +250,12 @@ member must refuse a manifestly unlawful order, and that refusal is protected.
 
 ## The child with nobody
 
-Nell's birth-only record derives movement and no restraint or custody. It also
-derives the food debt, with no void or recognition loss. This is a control for a
-person whom the confinement rules have no grounds to reach.
+Nell's birth-only record yields movement and no restraint or custody. The food
+debt follows too, with no credibility finding. This is a control for a person
+whom the confinement rules have no grounds to reach.
 
-It is not a test of every consequence of punishing a child: Nell is not punished
-here. The result is that a child does not need a
-custody record to retain movement, standing, or the floor.
+Punishing a child is outside this test, since nothing here punishes Nell. The
+result is that a child does not need a custody record to retain movement,
+standing, or the floor.
 
 The next chapter asks what the record can do when it detects a breach.

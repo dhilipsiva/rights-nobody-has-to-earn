@@ -211,8 +211,8 @@ the main reading sequence; the method follows it as an optional technical part.
 
 - [Chapter 24: The Shield](24-the-shield.md) — protection for exposing authority,
   and the conditions for an unrelated prosecution to proceed.
-- [Chapter 25: Voiding](25-voiding.md) — adverse credibility findings, their
-  grounds, review and limits.
+- [Chapter 25: Credibility Findings](25-voiding.md) — adverse credibility
+  findings, their grounds, review and limits.
 - [Chapter 26: The Limits of a Finding](26-clawback.md) — correcting a claim without condemning unrelated work.
 - [Chapter 27: A Prisoner Is a Person](27-a-prisoner-is-a-person.md) — custody as
   an independent backstop to personhood, never its price.
@@ -255,7 +255,7 @@ the main reading sequence; the method follows it as an optional technical part.
 - **Political home:** the chosen local connection from which a resident's regional
   and common democratic home follows. Compelled placement cannot move it.
 - **Pen or credential:** a derived permission for an examiner's finding to count
-  in the paired voiding route.
+  in the paired credibility-finding route.
 - **Floor:** what every person is owed without conditions of employment,
   registration, belonging, payment or approved behaviour.
 - **Protected core:** standing, the floor and other specified human rights,
@@ -268,7 +268,7 @@ the main reading sequence; the method follows it as an optional technical part.
 - **Receipt:** a report of delivery. The ordinary receipt route needs matching
   independent evidence before delivery can be concluded.
 - **Contribution record:** an entry that someone paid into a named scheme. It
-  supports a supplement, never standing, the floor, the vote, liberty or recognition.
+  supports a supplement, never standing, the floor, the vote or liberty.
 - **Supplement:** protection against a recorded qualifying event through a scheme
   or public guarantee. The conclusion carries no amount and proves no payment.
 - **Competence certificate:** an authorised attestation of a person's competence
@@ -289,11 +289,12 @@ the main reading sequence; the method follows it as an optional technical part.
   a finding by authorised reviewers with positively established eligibility.
   An actual conflict blocks
   the affected decision; merely naming a reviewer does not.
-- **Voiding:** an effective credibility finding that prevents a new adverse
-  signature from qualifying. It leaves the floor intact; restoration identifies
-  the case and its ground.
+- **Signing restriction:** an effective credibility finding prevents its
+  subject's signature on a new credibility finding from qualifying. Other
+  offices are unaffected. It leaves the floor intact; restoration identifies the
+  case and its ground.
 - **Correction:** a claim is assessed on its own grounds. A credibility finding
-  does not erase unrelated contributions or create a general recognition loss.
+  does not erase unrelated contributions.
 - **Placement:** reviewed authority for a named place of confinement, requiring
   evidence of availability and lawful conditions. It does not establish that
   anyone was moved there or received shelter.
@@ -355,7 +356,7 @@ relevant there. This index gives the principal roles for finding a case again.
 | Esa, teacher of Fin and child of Dev | What does an activity or family relationship establish about age? | [10](10-contribution.md), [18](18-the-vote-conviction-does-not-take.md) |
 | Nima, Pico's parent and teacher; Pico, also a teacher of Ona | Whose contribution is recorded? | [10](10-contribution.md) |
 | Boss, a recalled official; Rebel, who exposed Boss | Why does answerability survive recall? | [16](16-public-answerability.md) |
-| Gia and Wren, credential holders from different seating bodies | Who may sign an adverse finding? | [23](23-who-holds-the-pen.md) |
+| Gia and Wren, credential holders from different seating bodies | Who may sign a credibility finding? | [23](23-who-holds-the-pen.md) |
 | Vex, seated but barred from an auditor's credential by carried history | Why does personal restoration leave a separate appointment restriction? | [23](23-who-holds-the-pen.md), [26](26-clawback.md) |
 | Don, defendant and discloser; Pax, injured person and disclosure target | Does exposing a private person open the shield? | [24](24-the-shield.md#don-a-private-target) |
 | Sly and Kel, defendants exposing the court in separate cases | What changes when this exposure has a qualified deceit finding? | [24](24-the-shield.md#sly-an-unresolved-disclosure) |

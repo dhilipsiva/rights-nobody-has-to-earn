@@ -52,9 +52,9 @@ and proportionality. Neither test may balance away the protected core.
 
 A credible barrier or group pattern can shift the burden in a remedial equality
 proceeding. It cannot reverse a criminal burden or establish guilt. The pattern
-case permits the claimant to pursue relief and obliges the reader to hear it;
-no confinement, void or recognition loss follows for the claimant. The case
-also produces no confinement or void for Cira, the comparison subject.
+case permits the claimant to pursue relief and obliges the reader to hear it; no
+confinement or credibility finding follows for the claimant. The case also
+produces no confinement or credibility finding for Cira, the comparison subject.
 
 ## Accessibility makes rights usable
 
@@ -72,11 +72,11 @@ continuity must secure an equivalent alternative without making the person
 start again.
 
 Distinct source, evidence and review attesters, a challenge reader and an
-independent alternate, separate from the actor and the person, complete the record. It produces a duty
-to provide the adjustment or secure the alternative, permission for the person
-to use the right with it, and the alternate's continuity duty. These conclusions
-derive without a personhood entry for the requester and without a void or
-prisoner conclusion.
+independent alternate, separate from the actor and the person, complete the
+record. It produces a duty to provide the adjustment or secure the alternative,
+permission for the person to use the right with it, and the alternate's
+continuity duty. These conclusions derive without a personhood entry for the
+requester and without a credibility finding or prisoner conclusion.
 
 The available barrier kinds also cover sensory, cognitive, linguistic, digital,
 geographic, financial and procedural obstacles. An unrecognised kind cannot
@@ -94,7 +94,7 @@ cannot become an individual verdict, and non-participation cannot be penalised.
 
 The remedial proceeding keeps individual relief separate from re-audit of
 related cases. A pattern therefore opens inquiry and correction without
-convicting, confining, voiding or withdrawing anyone's recognition.
+convicting, confining or making a credibility finding against anyone.
 
 ## A measure with an end
 
@@ -145,14 +145,14 @@ interrupt equality duties or defeat the remedy.
 ## The design must meet its own test
 
 The design's distinctions are subject to the same limits. Family or home status,
-a maturity score, conviction, custody, official status, placement, a void or a
-qualification cannot substitute for the finding needed to justify a particular
-consequence. Recognition cannot become a general allocation rule.
+a maturity score, conviction, custody, official status, placement, a credibility
+finding or a qualification cannot substitute for the finding needed to justify a
+particular consequence. Recognition cannot become a general allocation rule.
 
 These prohibitions do not certify the adequacy of every other rule. The later
 chapters must show what each distinction does: which facts support placement,
-which authority permits confinement, and which findings support a void. Equal
-protection remains a standard those mechanisms must satisfy.
+which authority permits confinement, and what a credibility finding requires.
+Equal protection remains a standard those mechanisms must satisfy.
 
 ## The child with nobody
 

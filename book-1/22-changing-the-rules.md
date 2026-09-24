@@ -103,10 +103,10 @@ including its vocabulary disposition.
 
 A proposal decision concerns the proposal and its candidate text. It does not
 supply a finding about a person's credibility. The test dockets Jala's name,
-declares a protected target and supplies an approval. Those entries produce
-neither a void nor a recognition loss against Jala. Her recorded contribution
-still identifies her act; it confers no general recognition status. The proposal called Amend_Floor likewise receives
-no personal recognition-loss verdict.
+declares a protected target and supplies an approval. Those entries produce no
+credibility finding against Jala. Her recorded contribution still identifies her
+act; it confers no general recognition status. The proposal called Amend_Floor
+likewise receives no personal credibility finding.
 
 A personal finding needs its own legal grounds and process. Conversely, an
 absence of personal wrongdoing supplies no authority to amend the constitution.
@@ -137,10 +137,10 @@ supplied objects; they are not a self-enforcing republic.
 
 ## The child with nobody
 
-Nell is a person and is owed food in the supplied constitution. The registered
-floor and personhood names do not secure those source rules by themselves.
-A concealed source edit can change what derives without supplying any
-authority for that change.
+Nell is a person and is owed food under this constitution. The registered floor
+and personhood names do not secure those source rules by themselves. A concealed
+source edit can change what derives without supplying any authority for that
+change.
 
 The exact-change route instead requires positive compatibility review tied to
 the actual candidate, including the universal floor. Its conclusion remains

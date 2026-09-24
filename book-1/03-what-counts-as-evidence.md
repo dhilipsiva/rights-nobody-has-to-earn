@@ -34,10 +34,10 @@ decision about the person.
 
 Economic records illustrate the distinction. A contribution entry records a
 payment into a named scheme; it can support a supplement above the floor.
-It cannot determine standing, essentials, liberty, the vote or recognition.
-A compensation entry records a promised payment of a named kind. A competence
-entry records an authorised attestation of a function. Neither is a general
-assessment of the recipient.
+It cannot determine standing, essentials, liberty or the vote.
+A compensation entry records a promised payment of a named kind. A
+competence entry records an authorised attestation of a function. Neither
+is a general assessment of the recipient.
 
 Worker status, title, liability, licensing, taxation, credit, insolvency,
 private economic power and scarcity may require decisions. The constitutional
@@ -91,24 +91,25 @@ all its inputs observations. The rules can forbid a direct verdict while
 accepting a reported finding that has almost the same effect. That is a
 separate question from whether the verdict can be asserted directly.
 
-## One finding is not a voiding
+## One examination is not a credibility finding
 
-Voiding restricts whose findings can count against another person. An effective
-credibility finding prevents its subject's new adverse signature from qualifying;
-it leaves personhood and the floor intact.
+A credibility finding restricts whose findings can count against another person.
+An effective credibility finding prevents its subject's signature on a new
+credibility finding from qualifying; it leaves personhood and the floor intact.
 
-Koa's finding about Esa is recorded. Esa is not voided, and Koa is not voided
-for having made it. The lone entry does not supply the route to either result.
+Koa's finding about Esa is recorded. No credibility finding applies to Esa, or
+to Koa for having made it. The lone entry does not supply the route to either
+result.
 
 The paired route requires distinct qualified examiners, matching findings about
 the same subject, incident, ground and evidence, and positive independence
 authority for that case. Permission to make a finding also checks the signers'
-current disqualifications. Personal consequences require the completed case
-and its historical eligibility and procedure. The chapter on voiding follows
-those conditions and the case-specific route to restoration.
+current disqualifications. Personal consequences require the completed case and
+its historical eligibility and procedure. The chapter on credibility findings
+follows those conditions and the case-specific route to restoration.
 
-The conclusion here is limited to the case: Koa's entry does not establish
-that Esa's credibility is void. It is not a claim that every investigation is
+The conclusion here is limited to the case: Koa's entry does not establish a
+credibility finding against Esa. It is not a claim that every investigation is
 costless or that a lone finding can have no consequence anywhere in the design.
 The recorded act of examination and the adverse conclusion are distinct.
 

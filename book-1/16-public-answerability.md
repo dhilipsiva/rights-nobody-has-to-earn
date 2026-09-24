@@ -29,9 +29,10 @@ unrelated private or expressive life.
 
 ## Why recall leaves answerability intact
 
-**Recall does not remove public answerability.** Neither does a void. The
-answerability rules contain no condition that makes either finding an exit.
-That keeps an actor within the exposure rules after losing current authority.
+**Recall does not remove public answerability.** Neither does a credibility
+finding. The answerability rules contain no condition that makes either finding
+an exit. That keeps an actor within the exposure rules after losing current
+authority.
 
 This is permanence within the rules over retained premises, not an immutable
 record. Removing the public-body or seating entry can change the conclusion.
@@ -43,7 +44,7 @@ without guaranteeing that the facts supporting it will be preserved.
 The record seats Boss through Electorate, records Boss's examination of Rebel,
 and records Rebel's exposure of Boss. Boss is also recalled. The checks derive
 public answerability for Boss and a shield for Rebel, while deriving neither
-confinement nor a void for Rebel in this case.
+confinement nor a credibility finding for Rebel in this case.
 
 Boss holds no Review credential. That is a specific consequence in the
 accountability mechanism; it does not prove that every capacity Boss has
@@ -77,10 +78,10 @@ an unrestricted power to investigate.
 ## Vex's restoration
 
 Vex has an electorate seat, a completed prior credibility case and a carried
-credential restriction. The checks show public answerability, the personal void
-and refusal of the Review credential together. The finding prevents a new
-adverse finding from qualifying. It does not establish
-that every word Vex speaks is false.
+credential restriction. The checks show public answerability, the personal
+credibility finding and refusal of the Review credential together. The finding
+prevents its subject's signature on a new credibility finding from qualifying.
+It does not establish that every word Vex speaks is false.
 
 The restoration case separates the conclusions again. A qualified appellate
 act naming the prior case ends its personal consequence. A generic judgment
@@ -94,11 +95,12 @@ calling someone answerable cannot settle them.
 
 ## What it costs
 
-The rules provide no exit from answerability through recall or voiding. As
-qualifying entries accumulate, so can the set of actors whose exposure supports
-a shield. Exposure of a long-retired actor can still matter. The shield's
-case-specific limits must prevent that protection from becoming impunity for
-unrelated conduct without making removal from office a way to defeat it.
+The rules provide no exit from answerability through recall or a credibility
+finding. As qualifying entries accumulate, so can the set of actors whose
+exposure supports a shield. Exposure of a long-retired actor can still matter.
+The shield's case-specific limits must prevent that protection from becoming
+impunity for unrelated conduct without making removal from office a way to
+defeat it.
 
 The input boundary is equally significant. A seating is a writable entry. A
 forged seating can derive answerability and expand the set of exposures that

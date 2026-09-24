@@ -225,33 +225,6 @@ changes it.
 
 ### Resolve the design questions, source and pins first
 
-- [ ] **41. State the signing restriction's reach, and name it for what it
-  does.**
-
-  **Scope:** every chapter that says "void"; the
-  [credibility decision](book-1/appendix/decisions/credibility-finding-decision.md)
-  and the
-  [recognition decision](book-1/appendix/decisions/recognition-purpose-decision.md);
-  plan §6.2 and §7.6.
-
-  A credibility finding now restricts permission to sign new adverse findings
-  (item 19) and no longer reaches recognition, which the design removed
-  (item 21). "Void" and "voiding", used more than fifty times, invite a far
-  broader reading, and "recognition loss" still appears thirteen times,
-  mostly in lists of what does not follow. Decide whether the restriction's
-  purpose widens to every office that makes adverse findings, such as
-  inspectors and investigators, or stays with credentialed examiners, and pin
-  the answer. Rename the mechanism in prose (the plan suggests "signing
-  restriction" or "restriction on adverse-finding authority"), keeping
-  credibility distinct from standing and public answerability. Chapter 25
-  takes a new title and keeps its file path. Remove the recognition residue
-  except where the book explains why the design keeps no recognition status.
-
-  **Done when:** pins show a restricted signer, an unrestricted one,
-  restoration and an office outside the restriction; the reach is stated
-  where the mechanism is introduced; and neither "void" nor "recognition
-  loss" remains in prose in this sense.
-
 - [ ] **42. Measure the procedural load.**
 
   **Scope:** every rule family and its generator; plan §7.5; ruling D6.

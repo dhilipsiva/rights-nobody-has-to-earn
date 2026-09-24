@@ -60,11 +60,11 @@ Completing an enforcement record does not establish compliance with the remedy.
 
 ## Asking again
 
-Access is owed before the merits are decided. Independent assistance is part
-of what is owed, rather than something a person must already have to begin.
-The hearing case completes a record and assigns the
-operator a fair, reasoned and contestable hearing duty without deriving
-personhood, a void, confinement or recognition loss for its subject.
+Access is owed before the merits are decided. Independent assistance is part of
+what is owed, rather than something a person must already have to begin. The
+hearing case completes a record and assigns the operator a fair, reasoned and
+contestable hearing duty without deriving personhood, a credibility finding or
+confinement for its subject.
 
 A request begins a particular review. It needs neither the decision-maker's
 permission nor a previous reviewer's approval nor a prior finding of merit.

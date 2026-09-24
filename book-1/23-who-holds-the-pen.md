@@ -1,7 +1,7 @@
 # Who Holds the Pen
 
-Gia and Wren illustrate the two routes to an auditor's credential. Gia is
-seated by Electorate; Wren is seated by Convocation. A paired void needs
+Gia and Wren illustrate the two routes to an auditor's credential. Gia is seated
+by Electorate; Wren is seated by Convocation. A paired credibility finding needs
 distinct signers with one credential from each route. Their credentials make
 eligible findings count toward that pair. They do not create general public
 power, make the findings true or replace the conditions required in the case.
@@ -13,8 +13,8 @@ has neither a credential nor public answerability from that entry.
 Both credentials require seating, no recall, and positively established clear
 history. The current record must carry that history from its witnessed
 predecessor and be selected without a rival claim to be current. A matched
-earlier void blocks the credential. Missing clear history or a missing witness
-cannot substitute for a positive match.
+earlier credibility finding blocks the credential. Missing clear history or a
+missing witness cannot substitute for a positive match.
 
 ## A credential must derive
 
@@ -27,8 +27,8 @@ particular case. The subject, incident, recognised adverse ground and evidence
 must match. An empty kinship field proves no independence, an entry for another
 case cannot be borrowed, and different ground kinds do not combine merely
 because two people signed them. Permission to make a new finding also checks
-current credibility and the represented family conflicts. The next account of
-voiding distinguishes that permission from a completed judgment.
+current credibility and the represented family conflicts. The chapter on
+credibility findings distinguishes that permission from a completed judgment.
 
 Two issuing routes and separate independence entries divide the premises an
 attacker would need to control. A forged seating alone does not produce a
@@ -37,11 +37,12 @@ compromised witnesses can nevertheless report the same invented history. The
 model checks agreement and scope; it does not determine that the witnesses
 told the truth.
 
-The paired-void rule also does not require its target to have a personhood
+The paired-finding rule also does not require its target to have a personhood
 entry. A completed qualified case can therefore produce a finding against a
 handle absent from the person record. That result establishes no actual person
 or wrongdoing. It is a separate question from whether the signers held valid
-credentials, and the later voiding chapter examines the finding's reach.
+credentials, and the later chapter on credibility findings examines the
+finding's reach.
 
 ## Recall and carried history
 
@@ -50,14 +51,14 @@ both a seating and a recall. Public answerability remains while the Review
 credential does not derive. This concerns that credential, not every power
 Boss could hold under another constitutional route.
 
-Vex tests a different reason for withholding the same credential: a void
-carried from a predecessor record. Vex is seated without recall.
-The two public witnesses agree about the earlier finding and its transfer to
-the current record. The earlier finding and inventory entries have their own
-witnesses, and the current record has no competing selection. That matched
-history blocks Vex's credential. A bare carried mark cannot do so alone.
-An omitted or invented carry can be reported only when the evidence needed
-to compare the records is supplied.
+Vex tests a different reason for withholding the same credential: a credibility
+finding carried from a predecessor record. Vex is seated without recall. The two
+public witnesses agree about the earlier finding and its transfer to the current
+record. The earlier finding and inventory entries have their own witnesses, and
+the current record has no competing selection. That matched history blocks Vex's
+credential. A bare carried mark cannot do so alone. An omitted or invented carry
+can be reported only when the evidence needed to compare the records is
+supplied.
 
 The positive route is equally specific: the predecessor clear status and both
 reports of its carry must match in the selected current record. Neither
@@ -68,8 +69,8 @@ arrival of a successor.
 ## A shortcut to a credential
 
 The counterfactual adds a rule granting a credential from an electorate seating
-alone. Boss and Vex then receive it despite the recall and carried void. An
-extra route can bypass conditions even while the full rule remains intact.
+alone. Boss and Vex then receive it despite the recall and the carried finding.
+An extra route can bypass conditions even while the full rule remains intact.
 
 The prospective signing rule has its own checks for recall, matched carried
 restriction and current credibility. In the proposed case against Tyr, Vex

@@ -8,10 +8,11 @@ redress must identify who answers and what happens if they do not.
 Each connection needs checking. An accurate finding does not complete a
 remedy, and a response duty cannot make an inaccurate finding true.
 
-Placement is one of several kinds of fault the record can express. Others concern
-company during confinement, carry between witnessed records, conflicting clear and
-void histories, protected entries, event order, adulthood evidence, and current
-custody authority. They differ in what evidence they require and what follows.
+Placement is one of several kinds of fault the record can express. Others
+concern company during confinement, carry between witnessed records, conflicting
+clear and credibility-finding histories, protected entries, event order,
+adulthood evidence, and current custody authority. They differ in what evidence
+they require and what follows.
 
 ## A placement report against a rule
 
@@ -174,12 +175,13 @@ notification and explanation; human review and the subject's contest right
 remain. Chapter 20's inventory, return, compensation and audit duties remain too.
 Removing permission cannot discharge those obligations.
 
-The defect is specific to the affected record. An unrelated holding does not fall
-merely because another one is defective. Where common-cause correction or affected-case
-re-examination is owed, that further duty has its own grounds; it does not make every
-decision by the body void. The subject's standing, floor debt and existing ballot
-entitlement remain through the tested withdrawal sequences. A defective restriction
-is not a finding that the person lost those rights.
+The defect is specific to the affected record. An unrelated holding does not
+fall merely because another one is defective. Where common-cause correction or
+affected-case re-examination is owed, that further duty has its own grounds; it
+does not invalidate every decision by the body. The subject's standing, floor
+debt and existing ballot entitlement remain through the tested withdrawal
+sequences. A defective restriction is not a finding that the person lost those
+rights.
 
 Correction cannot erase what happened. A requirement to publish or redress
 it must still be carried out.

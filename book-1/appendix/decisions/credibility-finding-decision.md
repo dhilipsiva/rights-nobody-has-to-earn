@@ -2,6 +2,41 @@
 
 # Credibility findings: grounds, endings and answerability
 
+## Item 41 — the reach, stated and named, 2026-09-24
+
+Measured on the current source: the personal finding `false/1` is read by the
+rule that qualifies a new credibility-finding candidate, where both signers
+must be free of one, and by three duties owed to its subject: reasons,
+continuing review, and review on the subject's own challenge. A finding on the
+deceit ground also concludes the incident-scoped `false/2`, whose only readers
+are the shield routes for that exposure. Nothing else reads either. The
+chapters described the restricted act as "a new adverse finding" or "adverse
+signature" and the mechanism as "voiding", both wider than the source. They now
+say that the subject cannot sign a new credibility finding, and Chapter 25 is
+titled *Credibility Findings*; its file path is kept.
+
+**The reach stays with credibility findings.** Widening it to every office that
+makes adverse findings, such as inspectors, investigators and adjudicators in
+other families, was examined and refused. Every record completion in those
+families already holds its attesters apart and requires an independent
+reviewer; most also carry a challenge reader and an independent alternate; and
+the integrity rules let a conflict of interest proved against an office
+withhold its permission for the affected act.
+The widening would turn a finding about one act into a bar from public office
+and employment, a general status this design refuses elsewhere, and a deception
+proved in one matter is not evidence of bias in an unrelated inspection. The
+cost falls on a person assessed in another family by an official under a
+credibility finding; that family's own independence, review and challenge
+requirements are the safeguard. Evidence that officials under a finding were distorting findings
+in other families would reopen the question. Part V states the argument.
+
+Chapter 25's pins now show Bela, under an effective finding, as the source of a
+floor-shortfall pattern certification that obliges the Constitutional Court to
+decide: an office outside the restriction. Beside it are the existing cases of
+a restricted signer (Lupo proposed with Partnr against Frisk), unrestricted
+signers (the Targ4 pair) and restoration (Purga, and Dev's concealed-conflict
+finding).
+
 ## Item-21 supersession, 2026-09-20
 
 The [recognition decision](recognition-purpose-decision.md) removes the general

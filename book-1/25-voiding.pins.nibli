@@ -1,6 +1,6 @@
 # Chapter 25 fidelity pins: Voiding.
 # Cases use the actual constitution and the declared no-dead-conjuncts variant.
-:expect-pins 99
+:expect-pins 101
 
 # Bela: the two appointments and the particular completed case.
 ? permits(Review, Gia).
@@ -674,6 +674,22 @@ observe(TemporalReview, Order_After_Restore_Dev_Conflict, Epoch_Current, RecordE
 # => TRUE
 ? false(Dev).
 # => FALSE
+
+# "Nothing else follows": an office outside the restriction. Bela, under an
+# effective finding, is the source of a floor-shortfall pattern certification
+# beside a separate reviewer, and the certification obliges the Constitutional
+# Court to decide. That family has its own independence and conflict rules;
+# the credibility finding is not among them.
+public(ShortfallTier_Bela).
+authorized(Bela, FloorShortfallPatternSourceAuthority, Pattern_Bela).
+authorized(PatternReviewer_Bela, IndependentFloorShortfallPatternReviewAuthority, Pattern_Bela).
+observe(Bela, Pattern_Bela, ShortfallTier_Bela, FloorShortfallPatternTierScope).
+observe(PatternReviewer_Bela, Pattern_Bela, ShortfallTier_Bela, FloorShortfallPatternTierScope).
+? false(Bela).
+# => TRUE
+
+? obliged(FSBOD_18, DecideWhetherTheCertifiedFloorShortfallIsAnUnconstitutionalStateOfAffairs, Pattern_Bela).
+# => TRUE
 
 # Personal credibility does not condition standing, the floor or the ballot.
 ? person(Bela).

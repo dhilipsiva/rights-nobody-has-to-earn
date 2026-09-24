@@ -180,7 +180,7 @@ Front matter: `epigraph.md`, `00-opening-note.md`.
 | 23 | Who Holds the Pen | `23-who-holds-the-pen.md` | derived | engine | landed |
 | **Part IV — What the design does to a person, and how it catches itself** | | | | | |
 | 24 | The Shield | `24-the-shield.md` | derived | break | landed |
-| 25 | Voiding | `25-voiding.md` | derived | break | landed |
+| 25 | Credibility Findings | `25-voiding.md` | derived | break | landed |
 | 26 | The Limits of a Finding | `26-clawback.md` | derived | break | landed |
 | 27 | A Prisoner Is a Person | `27-a-prisoner-is-a-person.md` | derived | break | landed |
 | 28 | Where People Are Put | `28-where-people-are-put.md` | derived | break | landed |
@@ -232,7 +232,7 @@ The generated table supplies the current layers of `defend`, `permits`,
    only until deceit is found. **Don**, who claimed protection for exposing his own
    victim. **Sly**, protected during a window the author chose to leave open.
    **Kel**, whose shield falls.
-5. **Voiding.** `false` — multi-sig, independence, counter-audit, epoch carry.
+5. **Credibility findings.** `false` — multi-sig, independence, counter-audit, epoch carry.
    **Vex**, the auditor voided last epoch who is still seated on paper.
 6. **Clawback.** `lose` — what taking back looks like when the floor cannot be
    touched. The fairness problem it carried — a contamination rule docking a

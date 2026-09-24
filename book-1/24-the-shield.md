@@ -70,11 +70,11 @@ The reasoner checks the supplied findings; it does not decide a defence itself.
 
 Kel's case pairs an injury to Pax with a disclosure against the court too.
 Here, however, a completed case identifies Kel's exposure, a deceit finding
-and its evidence. It includes two independent
-reviewers, their eligibility at the decision, and matching records of notice,
-access to evidence, a hearing and reasons. That finding defeats this exposure's
-shield, so Kel's otherwise complete case authorises confinement. It also
-produces a personal finding that restricts new adverse signatures. It takes
+and its evidence. It includes two independent reviewers, their eligibility
+at the decision, and matching records of notice, access to evidence, a
+hearing and reasons. That finding defeats this exposure's shield, so Kel's
+otherwise complete case authorises confinement. It also produces a
+personal finding that restricts signing new credibility findings. It takes
 no wage, property, pension or floor right.
 
 A raw accusation and a generic Review judgment do not supply the case. The
@@ -96,8 +96,8 @@ court disclosure deceitful.
 The second exposure has no effective deceit finding against it, so the shield
 derives again. Rex's conviction remains recorded while confinement is blocked.
 Rex is both discredited and shielded. Protection does not read the claimant's
-general credibility: a restriction on signing adverse findings does not become
-permission to retaliate.
+general credibility: a restriction on signing credibility findings does not
+become permission to retaliate.
 
 A separate question remains about the injury to Sena. It can be answered
 without defeating the second disclosure. The case finding concerns whether
@@ -197,5 +197,5 @@ identify the findings still needed; it cannot supply them for the people
 waiting on either side of the case.
 
 The shield separates protection from approval of the claimant's conduct. The
-next chapter turns to the adverse findings themselves: what a void requires,
-what it reaches and what must remain untouched.
+next chapter turns to the adverse findings themselves: what a credibility
+finding requires, what it reaches and what must remain untouched.

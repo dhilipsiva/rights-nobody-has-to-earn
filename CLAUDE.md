@@ -133,6 +133,44 @@ reinstate the retired tooling or workflow.
 Grouped by kind. Dates in each heading are the ratification dates; a ruling
 that was later implemented or narrowed carries that supersession inline.
 
+### Item 41 — the signing restriction, stated and named, 2026-09-24
+
+A credibility finding no longer reaches recognition, which the design removed
+(item 21), and restricts only its subject's signature on a new credibility
+finding (item 19): measured, `false/1` is read by the rule qualifying a new
+candidate and by three duties owed to the subject, and a finding on the deceit
+ground also withdraws the shield for that disclosure alone. The chapters called
+it "voiding" more than fifty times and described the restricted act as "a new
+adverse finding", both wider than the source, and listed "recognition loss"
+among consequences that do not follow. The prose now names the mechanism as a
+credibility finding and its effect as a signing restriction; Chapter 25 is
+titled *Credibility Findings* with its file path kept, its opening states the
+whole reach, and the recognition residue is gone except where the book explains
+why no recognition status exists, uses recognition as a forbidden priority key
+or tests a hostile rule.
+
+**The reach stays with credibility findings.** Widening it to every office that
+makes adverse findings was refused: every record completion elsewhere already
+holds its attesters apart and requires an independent reviewer, the integrity
+rules let a conflict of interest proved against an office withhold its
+permission for the affected act, and the widening would turn a finding about one
+act into a bar from public office and employment. Part V states the argument,
+who bears its cost and what would reopen it; the credibility and recognition
+decisions record it. Chapter 25's pins now show Bela, under a finding, as the
+source of a floor-shortfall certification that obliges the Constitutional Court
+to decide, beside the existing restricted signer (Lupo with Partnr),
+unrestricted signers (the Targ4 pair) and restorations. The exact prose is
+`session-drafted, author-approved under delegated approval (2026-09-13)`.
+
+The rewrap moved three reviewed needles, held whole again; one ledger locator
+follows the reworded Chapter 24 sentence, and two coverage headings follow their
+renamed sections. No rule changes. Chapter 25's two cases and the credibility
+cases pass 375 pins in 18.60s (focused, partial); the reference,
+reader-coverage, claim-discipline, receipt and floor-vector development tests
+pass, and the prose check passes with lower recorded figures for most chapters.
+`RIGHTS_VERIFY_JOBS=4 ./verify.sh` passes 88,886 pins across 16,139 cases with
+complete contradiction checks and no findings in 1,120.42s.
+
 ### Item 40 — who attests a scarcity comparison, 2026-09-24
 
 The revision plan read Chapter 6 as letting the manager write the comparison it

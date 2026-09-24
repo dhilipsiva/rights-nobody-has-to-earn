@@ -67,10 +67,10 @@ procedure and authority described in the later chapters.
 
 ## A finding does not cancel a life of work
 
-Bela's adverse case identifies conduct that can be challenged. It prevents
-Bela from qualifying a new adverse finding against somebody else while the
-case remains effective. It does not establish that Bela never taught Cira,
-that Cira learned nothing, or that every other contribution was dishonest.
+Bela's adverse case identifies conduct that can be challenged. It prevents Bela
+from signing a new credibility finding against somebody else while the case
+remains effective. It does not establish that Bela never taught Cira, that Cira
+learned nothing, or that every other contribution was dishonest.
 
 In a separate test, Bela is the claimant in both a wage and an illness case.
 The record supplies independent support for each claim and an unrelated care
@@ -86,9 +86,8 @@ conclusion follows.
 
 Restoration concerns the finding and the powers it restricts. Recorded
 contributions do not depend on it. There is no constitutional recognition
-balance to rebuild and no general
-recognition loss to record. The qualified appellate route and the continuing
-review duty are examined in the chapters on findings.
+balance to rebuild and no general loss of it to record. The qualified appellate
+route and the continuing review duty are examined in the chapters on findings.
 
 ## What remains outside these entries
 

@@ -148,8 +148,8 @@ establish that an actual dispute has been resolved.
 ## The child with nobody
 
 The scarcity sequence leaves Nell's personhood and food debt intact, without
-recognition loss or confinement. No food receipt follows. Nor does the case
-establish that Nell was included in the supplied affected population.
+confinement. The case holds no food receipt, and it leaves open whether Nell
+belonged to the affected population.
 
 Family status, documentation, nationality, citizenship, immigration status
 and manner of arrival are forbidden priority keys. They cannot justify

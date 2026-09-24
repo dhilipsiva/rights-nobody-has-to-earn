@@ -83,11 +83,11 @@ checked here.
 | Borders, migration, asylum and expulsion | 2 | 3 | 5 |
 | Collective and plurality rights | 1 | 1 | 2 |
 | Defence and armed force | 1 | 1 | 1 |
-| Democracy and amendment | 8 | 6 | 8 |
+| Democracy and amendment | 8 | 6 | 7 |
 | Ecology, future generations and commons | 5 | 4 | 6 |
 | Economy, property, work and commons | 17 | 15 | 19 |
 | Emergency and resilience | 3 | 2 | 3 |
-| Justice and coercion | 14 | 12 | 15 |
+| Justice and coercion | 14 | 12 | 16 |
 | Knowledge, communication and culture | 3 | 2 | 3 |
 | Life course, family, care and reproduction | 12 | 4 | 8 |
 | Locality, mobility and external relations | 2 | 2 | 3 |
@@ -119,7 +119,7 @@ checked here.
 | 03-00 | 03-what-counts-as-evidence.md | (preamble) | Records and accountability | ARTICLES | protective | the closed list of what may be said about you | is acted upon | works | yes | records | `book-1/03-what-counts-as-evidence.pins.nibli` |
 | 03-01 | 03-what-counts-as-evidence.md | What is missing | Records and accountability | ARTICLES | protective | the closed evidence list | is acted upon | works | no | records | `book-1/03-what-counts-as-evidence.pins.nibli` |
 | 03-02 | 03-what-counts-as-evidence.md | Facts and conclusions are kept apart | Records and accountability | ARTICLES | protective | the evidence/conclusion split | is acted upon | works | yes | records | `book-1/03-what-counts-as-evidence.pins.nibli` |
-| 03-03 | 03-what-counts-as-evidence.md | One finding is not a voiding | Records and accountability | ARTICLES | protective | one auditor's report | is acted upon | works | yes | records | `book-1/03-what-counts-as-evidence.pins.nibli` |
+| 03-03 | 03-what-counts-as-evidence.md | One examination is not a credibility finding | Records and accountability | ARTICLES | protective | one auditor's report | is acted upon | works | yes | records | `book-1/03-what-counts-as-evidence.pins.nibli` |
 | 03-04 | 03-what-counts-as-evidence.md | Changing the vocabulary | Records and accountability | ARTICLES | protective | widening the record | is acted upon | contested | yes | records | `book-1/03-what-counts-as-evidence.pins.nibli` |
 | 03-05 | 03-what-counts-as-evidence.md | False or missing inputs | Records and accountability | ARTICLES | protective | a fabricated direct entry | is acted upon | unresolved | yes | records | `book-1/03-what-counts-as-evidence.pins.nibli` |
 | 03-06 | 03-what-counts-as-evidence.md | The child with nobody | Records and accountability | ARTICLES | protective | the child with nobody: one birth entry and nothing else | is acted upon | works | no | records | `book-1/03-what-counts-as-evidence.pins.nibli` |
@@ -247,7 +247,7 @@ checked here.
 | 17-09 | 17-how-public-power-is-built.md | Authority and performance | Public institutions | STATE-FORM | protective | the boundary of an unstaffed state | governs | unresolved | no | democratic | `book-1/17-how-public-power-is-built.pins.nibli` |
 | 18-00 | 18-the-vote-conviction-does-not-take.md | (preamble) | Democracy and amendment | ARTICLES | ordinary | a person whose custody coexists with a ballot entitlement | is acted upon | works | yes | democratic | `book-1/18-the-vote-conviction-does-not-take.pins.nibli` |
 | 18-01 | 18-the-vote-conviction-does-not-take.md | What conviction leaves intact | Democracy and amendment | ARTICLES | ordinary | the ballot a conviction does not take | is acted upon | works | yes | democratic | `book-1/18-the-vote-conviction-does-not-take.pins.nibli` |
-| 18-02 | 18-the-vote-conviction-does-not-take.md | A void does not remove the vote | Records and accountability | ARTICLES | protective | Bela's credibility finding restricts new adverse signatures while preserving the ballot | is acted upon | contested | no | records | `book-1/18-the-vote-conviction-does-not-take.pins.nibli` |
+| 18-02 | 18-the-vote-conviction-does-not-take.md | A credibility finding does not remove the vote | Records and accountability | ARTICLES | protective | Bela's credibility finding restricts new adverse signatures while preserving the ballot | is acted upon | contested | no | records | `book-1/18-the-vote-conviction-does-not-take.pins.nibli` |
 | 18-03 | 18-the-vote-conviction-does-not-take.md | The home custody does not move | Locality, mobility and external relations | STATE-FORM | ordinary | the political home | is acted upon | works | yes | private-civic | `book-1/18-the-vote-conviction-does-not-take.pins.nibli` |
 | 18-04 | 18-the-vote-conviction-does-not-take.md | What protects the entitlement | Democracy and amendment | ARTICLES | protective | the franchise against the floor | is acted upon | fails | yes | democratic | `book-1/18-the-vote-conviction-does-not-take.pins.nibli` |
 | 18-05 | 18-the-vote-conviction-does-not-take.md | A right still needs a ballot | Democracy and amendment | STATE-FORM | ordinary | what a supplied result can show | is acted upon | unresolved | no | democratic | `book-1/18-the-vote-conviction-does-not-take.pins.nibli` |
@@ -278,7 +278,7 @@ checked here.
 | 22-01 | 22-changing-the-rules.md | Certification, publication and effect | Democracy and amendment | AMENDMENT-ENACTMENT | protective | exact candidate certification, publication and effective selection | governs | works | yes | democratic | `book-1/22-changing-the-rules.pins.nibli` |
 | 22-02 | 22-changing-the-rules.md | The protected core | Democracy and amendment | AMENDMENT-ENACTMENT | protective | unamendable human, commons and animal cores | governs | works | no | democratic | `book-1/22-changing-the-rules.pins.nibli` |
 | 22-05 | 22-changing-the-rules.md | What a proposal entry establishes | Democracy and amendment | AMENDMENT-ENACTMENT | protective | bare proposal entries versus candidate-bound amendment authority | governs | works | no | democratic | `book-1/22-changing-the-rules.pins.nibli` |
-| 22-03 | 22-changing-the-rules.md | People and proposal names | Democracy and amendment | ARTICLES | protective | personal findings are separate from proposal entries | governs | works | yes | democratic | `tests/pins/amendments/person-proposal-separation/expect.pins.nibli` |
+| 22-03 | 22-changing-the-rules.md | People and proposal names | Democracy and amendment | ARTICLES | protective | personal findings are separate from proposal entries | governs | works | no | democratic | `tests/pins/amendments/person-proposal-separation/expect.pins.nibli` |
 | 22-04 | 22-changing-the-rules.md | What entrenchment requires | Democracy and amendment | AMENDMENT-ENACTMENT | protective | the democratic cost and evidence requirements of entrenchment | governs | contested | no | democratic | `book-1/22-changing-the-rules.pins.nibli` |
 | 22-06 | 22-changing-the-rules.md | The child with nobody | Democracy and amendment | AMENDMENT-ENACTMENT | protective | the child with nobody: one birth entry and nothing else | receives | contested | no | democratic | `book-1/22-changing-the-rules.pins.nibli` |
 | 23-00 | 23-who-holds-the-pen.md | (preamble) | Public institutions | ARTICLES | ordinary | the credential that makes a finding count | governs | works | yes | democratic | `book-1/23-who-holds-the-pen.pins.nibli` |
@@ -328,7 +328,7 @@ checked here.
 | 29-08 | 29-the-one-thing-taken.md | Physical holding is a further fact | Public safety, policing and use of force | PUBLIC-SAFETY | ordinary | care and independent review for a reported holding after authority ends | is acted upon | continuity-remedy | no | coercive | `tests/pins/custody/condition-findings/expect.pins.nibli` |
 | 29-01 | 29-the-one-thing-taken.md | Protection is not punishment | Public safety, policing and use of force | PUBLIC-SAFETY | protective | arrest, detention, search and seizure | is acted upon | works | yes | coercive | `book-1/29-the-one-thing-taken.pins.nibli` |
 | 29-02 | 29-the-one-thing-taken.md | The actor who uses force must answer | Public safety, policing and use of force | PUBLIC-SAFETY | protective | separated protective functions | governs | works | yes | coercive | `book-1/29-the-one-thing-taken.pins.nibli` |
-| 29-07 | 29-the-one-thing-taken.md | The child with nobody | Justice and coercion | ARTICLES | protective | the child with nobody: one birth entry and nothing else | receives | works | no | coercive | `book-1/29-the-one-thing-taken.pins.nibli` |
+| 29-07 | 29-the-one-thing-taken.md | The child with nobody | Justice and coercion | ARTICLES | protective | the child with nobody: one birth entry and nothing else | receives | works | yes | coercive | `book-1/29-the-one-thing-taken.pins.nibli` |
 | 30-00 | 30-when-the-system-notices-it-broke.md | (preamble) | Records and accountability | ARTICLES | protective | a conflicting placement report, review duty and the route onward | is acted upon | works | no | records | `book-1/30-when-the-system-notices-it-broke.pins.nibli` |
 | 30-02 | 30-when-the-system-notices-it-broke.md | A placement report against a rule | Records and accountability | PLACEMENT | continuity | a placement report tested against the authorised placement, separately from eligibility | is acted upon | continuity-remedy | yes | records | `book-1/28-where-people-are-put.pins.nibli` |
 | 30-01 | 30-when-the-system-notices-it-broke.md | Evidence of denied contact | Records and accountability | ARTICLES | protective | a positive condition finding tied to a holding, place and period | is acted upon | works | yes | records | `tests/pins/custody/condition-findings/expect.pins.nibli` |

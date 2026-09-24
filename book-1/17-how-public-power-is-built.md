@@ -232,8 +232,8 @@ not be turned against a region seeking or completing a lawful exit.
 
 ## The child with nobody
 
-Nell remains a person and is owed expression. The vocabulary entries supply
-no office, ballot, void or prisoner conclusion for the child.
+Nell remains a person and is owed expression. The vocabulary entries supply no
+office, ballot, credibility finding or prisoner conclusion for the child.
 
 The ombudsperson and rights advocate have mandates to assist people unable
 to act alone. The institutions must serve Nell without making officeholding

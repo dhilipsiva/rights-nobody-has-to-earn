@@ -80,10 +80,10 @@ that depend on it. It does not itself delete data, explain a past decision or
 perform a remedy.
 
 The record can name its subject without supplying a personhood entry. The case
-completes without creating personhood, a void, confinement or recognition loss
-for that name. Hano's floor and ballot conclusions remain. The legal
-standing routes are separate from permission to hold or process records; a
-file is not a source of human worth or a licence to reduce rights.
+completes without creating personhood, a credibility finding or confinement for
+that name. Hano's floor and ballot conclusions remain. The legal standing routes
+are separate from permission to hold or process records; a file is not a source
+of human worth or a licence to reduce rights.
 
 ## Counting without ranking people
 

@@ -27,10 +27,10 @@ calling them enterprises.
 ## What conviction leaves intact
 
 The conviction mechanism withdraws free movement while preserving the person's
-other rights. Hano remains a person, is owed the floor including expression,
-and retains the ballot conclusion. Neither a void nor a recognition loss
-follows for Hano in this case. No recorded act of expression follows from
-custody, and the ballot entitlement is not evidence that Hano cast a vote.
+other rights. Hano remains a person, is owed the floor including expression, and
+retains the ballot conclusion. No credibility finding follows for Hano in this
+case. No recorded act of expression follows from custody, and the ballot
+entitlement is not evidence that Hano cast a vote.
 
 The retained franchise matters because people subject to confinement remain
 entitled to participate in choosing the government responsible for it. Voting
@@ -38,16 +38,16 @@ is not their only way to object: speech, challenge and remedy remain separate
 rights. Conviction does not convert political membership into a reward for
 conduct the State approves.
 
-## A void does not remove the vote
+## A credibility finding does not remove the vote
 
-Bela is voided and still holds the ballot conclusion. The finding prevents a
-new adverse signature from qualifying; it is not a withdrawal
-of citizenship, residence or adulthood. Nor does it establish that Bela is
-incapable of political judgment.
+Bela is under a credibility finding and still holds the ballot conclusion. The
+finding bars its subject's signature on a new credibility finding; it is not a
+withdrawal of citizenship, residence or adulthood. Nor does it establish that
+Bela is incapable of political judgment.
 
 Hano and Bela test different routes to the same boundary. A custody conclusion
-and a void each coexist with the franchise. Neither verdict supplies a reason
-to subtract political weight.
+and a credibility finding each coexist with the franchise. Neither verdict
+supplies a reason to subtract political weight.
 
 ## The home custody does not move
 

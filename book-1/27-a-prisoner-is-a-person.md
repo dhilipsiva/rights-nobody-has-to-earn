@@ -79,10 +79,10 @@ rule matters.
 
 Other hostile rules can be accepted. An isolated experiment accepts a rule
 confining a person for lacking a home record. Home status is separate from
-evidence of delivered shelter; this protection does not cover both. A rule
-using missing floor evidence to alter placement or record recognition loss
-also needs its own check. Separate checks of the constitution prohibit using
-floor delivery conclusions as grounds for further consequences. The
+evidence of delivered shelter; this protection does not cover both. A rule using
+missing floor evidence to alter placement or record a loss of recognition also
+needs its own check. Separate checks of the constitution prohibit using floor
+delivery conclusions as grounds for further consequences. The
 [method](method.md#checking-how-a-record-is-used) distinguishes those checks
 from the refusal above. An accepted experiment is not a lawful public power.
 
@@ -114,10 +114,10 @@ record nor the birth-only record initially supplies a shelter receipt or
 record of speech.
 
 The child test then supplies a shelter receipt, a witness authorised for Nell
-and a matching shelter attestation from someone other than the provider.
-The model then records delivered shelter. Matching food evidence also
-establishes delivered food in the model. Nell's personhood and floor debt
-remain, with neither confinement nor a void.
+and a matching shelter attestation from someone other than the provider. The
+model then records delivered shelter. Matching food evidence also establishes
+delivered food in the model. Nell's personhood and floor debt remain, with
+neither confinement nor a credibility finding.
 
 Witnessed delivery is independent of sentence authority. The receipt route
 does not make Nell responsible for producing evidence before being entitled

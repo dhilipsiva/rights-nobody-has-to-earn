@@ -2,6 +2,14 @@
 
 # Why recognition exists, and what it buys
 
+## Item 41 — the residue, 2026-09-24
+
+The chapters no longer list "recognition loss" among the consequences a finding
+does not have, since no recognition status exists for a finding to reach. The
+word remains where the book explains why the design keeps no such status, where
+recognition in the ordinary social sense is a forbidden allocation or priority
+key, and where a pinned experiment tests a hostile rule recording such a loss.
+
 ## Supersession, 2026-09-20: remove the constitutional badge and blanket loss
 
 Item 21's source and prose are session-drafted, author-approved under delegated

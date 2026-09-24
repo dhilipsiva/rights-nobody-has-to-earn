@@ -32,11 +32,12 @@ uses the missing condition; it is not a general prohibition on writing
 harmful alternatives. The optional [method](method.md#why-the-hostile-floor-rule-is-refused)
 explains why this form is refused.
 
-The contrast is visible in the tests. A hypothetical rule recording a loss
-of recognition for an absence of company can be accepted, although this design
-has no general recognition status to withdraw. A rule making an absence of
-belief void credibility is refused. Neither result settles every differently
-expressed attack. These experiments are discarded after the check; an accepted
+The contrast is visible in the tests. A hypothetical rule recording a
+loss of recognition for an absence of company can be accepted,
+although this design has no general recognition status to withdraw. A
+rule making an absence of belief a ground for a credibility finding
+is refused. Neither result settles every differently expressed
+attack. These experiments are discarded after the check; an accepted
 alternative acquires no authority in the constitution.
 
 Separate constitutional limits protect private life and economic rights.
@@ -76,7 +77,7 @@ for lacking the debt is.
 The State is itself publicly answerable: an exposure against it can attract the
 shield on the same terms as an exposure against another answerable actor. The
 State's supplied record gives it no examiner's credential. Owing the floor does
-not grant the power to void someone's credibility.
+not grant the power to make a credibility finding against someone.
 
 The floor debt is not a receipt. Bela is owed food and shelter. In the supplied
 record, neither delivery conclusion follows for Bela. The obligation survives

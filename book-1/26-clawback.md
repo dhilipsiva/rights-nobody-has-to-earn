@@ -1,11 +1,11 @@
 # The Limits of a Finding
 
 Bela's completed credibility case remains effective. Bela's teaching of Cira
-also remains recorded. The finding does not erase the teaching, confer a
-general judgment of worth or create a recognition loss. The constitution has
-no personal recognition status to withdraw.
+also remains recorded. The finding does not erase the teaching or confer a
+general judgment of worth. The constitution has no personal recognition status
+to withdraw.
 
-The finding has a specific effect on power: Bela cannot qualify a new adverse
+The finding has a specific effect on power: Bela cannot sign a new credibility
 finding against somebody else. A finding of deceit about a disclosure also
 reaches the shield for that particular disclosure. Neither consequence is a
 fine, a wage deduction or a judgment about every other act of Bela's life.
@@ -54,10 +54,10 @@ Bela taught Cira. Being taught confers no recognition status, transfers no
 fraud and imposes no debt on Cira. Cira's own employment is a separate act.
 Nothing about the teacher's finding decides whether Cira performed it.
 
-Fin, taught by Esa, also incurs no recognition loss. The supplied case derives
-no personhood for Fin. That missing entry is not evidence that Fin is unreal
-or without rights; a teaching relationship and a standing record answer
-different questions.
+Fin, taught by Esa, loses nothing either. The supplied case derives no
+personhood for Fin. That missing entry is not evidence that Fin is unreal or
+without rights; a teaching relationship and a standing record answer different
+questions.
 
 Parentage, care, household membership and support likewise do not transfer
 fraud, guilt or debt from an adult to a child.
@@ -85,10 +85,10 @@ about the person was mistaken.
 Every effective personal finding incurs a duty on Appeals to review the
 continuing restriction, without waiting for a challenge. The subject's own
 challenge supplies a further route to an appellate duty. Neither duty is a
-completed disposition. An unanswered review leaves the restriction on new
-adverse findings in force; it cannot become a loss of ordinary rights, pay or
-unrelated contributions. No elapsed time or automatic expiry is inferred from
-the record.
+completed disposition. An unanswered review leaves the restriction on signing
+new credibility findings in force; it cannot become a loss of ordinary rights,
+pay or unrelated contributions. No elapsed time or automatic expiry is inferred
+from the record.
 
 This places a continuing obligation on the institution and leaves a real cost
 for the person awaiting review. The rules do not establish that a reviewer

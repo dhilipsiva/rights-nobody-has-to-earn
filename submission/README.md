@@ -129,7 +129,7 @@ Epigraph; A Note Before the Design — both unnumbered.
 **Part IV — What the design does to a person, and how it catches itself**
 
 24. The Shield
-25. Voiding
+25. Credibility Findings
 26. The Limits of a Finding
 27. A Prisoner Is a Person
 28. Where People Are Put
