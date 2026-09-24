@@ -241,6 +241,22 @@ development tests pass, and the prose check passes with lower recorded figures
 for five chapters. `RIGHTS_VERIFY_JOBS=4 ./verify.sh` passes 88,830 pins across
 16,137 cases with complete contradiction checks and no findings in 1,197.58s.
 
+### Item 35 — the companion's CI, 2026-09-24
+
+Every Book UI workflow run on `main` had failed since the companion landed. The
+web job's formatting step ran `cargo fmt --all`, which follows path dependencies
+into the adjacent Nibli checkout and stopped at its generated, ignored
+`bindings.rs`; it now formats this repository's own packages, `rights-book-ui`
+and `book-reason`, which were already formatted. The Windows desktop job failed
+in `ui/scripts/prepare.py` with a `charmap` UnicodeDecodeError because bare
+`read_text()` and `write_text()` use the platform encoding; every file read and
+write in `ui/scripts/` and `ui/tests/` now names UTF-8. Locally `prepare.py`
+runs with `EncodingWarning` raised as an error and writes a byte-identical
+`cases.json`, and the UI input tests pass the same way. Run 36000105151 on
+`5c0b10c9` passes all three jobs, web, Windows desktop and Ubuntu desktop, with
+no check removed. No formal input changed, so the item 34 complete run on the
+same source stands for the verifier.
+
 ### Item 34 — prose measurement as a development check, 2026-09-24
 
 `tools/prose_lint.py` adapts the revision plan's lint, moved there from

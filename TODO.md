@@ -223,24 +223,6 @@ items 01–33, which `CLAUDE.md` records. Chapter numbers refer to the [current
 reading sequence](book-1/contents.json), which the plan also uses, until item 53
 changes it.
 
-### Measure and stabilise
-
-- [ ] **35. Restore the companion's CI before the rewrite changes its inputs.**
-
-  **Scope:** `.github/workflows/book-ui.yml` and `ui/scripts/`.
-
-  Every Book UI run on `main` has failed. The `web` job stops at "Focused
-  adapter test and Rust formatting": `cargo fmt --all` follows path
-  dependencies into Nibli's gitignored `bindings.rs`, so format only this
-  repository's packages (`-p rights-book-ui -p book-reason`). The Windows
-  desktop job stops at "Build offline native bundle"; the cause found on
-  2026-09-24 is that `ui/scripts/prepare.py` reads text without
-  `encoding="utf-8"`. Confirm both causes on a fresh run. The rewrite changes
-  the reader text the companion exports, and a failing workflow hides new
-  breakage.
-
-  **Done when:** every job passes on `main` without removing a check.
-
 ### Resolve the design questions, source and pins first
 
 - [ ] **39. Guard confinement against absent entries, and price a lapse.**
