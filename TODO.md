@@ -225,26 +225,6 @@ changes it.
 
 ### Resolve the design questions, source and pins first
 
-- [ ] **40. Correct the scarcity account: the manager does not attest the
-  comparison.**
-
-  **Scope:** Chapter 6 and the
-  [scarcity and conflict contract](book-1/appendix/contracts/scarcity-and-conflict-contract.md);
-  plan §7.6.
-
-  The plan's premise is not true of the source. Every allocation field,
-  including the comparison outcome, must be attested identically by a source,
-  an evidence and a review writer, each distinct from the manager
-  (`src/authoring/scarcity.rs:79-84`), and anyone may open review of a
-  finding, allocation or shortfall without the manager's permission (`:193`).
-  Chapter 6's "The manager's stated decision… Its reasons…" invites the
-  misreading. Check whether a claimant's counter-evidence can reach the
-  comparison itself or only review, and repair if it cannot.
-
-  **Done when:** Chapter 6 shows who attests the comparison and how a
-  claimant contests it, the contract records the disproved premise, and any
-  added route is pinned.
-
 - [ ] **41. State the signing restriction's reach, and name it for what it
   does.**
 

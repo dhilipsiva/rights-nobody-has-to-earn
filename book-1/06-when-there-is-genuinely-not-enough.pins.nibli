@@ -36,7 +36,7 @@
 # WHAT FALSE MEANS HERE: a FALSE is pinned only where the KB could have said
 # TRUE, and the comment says what would flip it.
 
-:expect-pins 78
+:expect-pins 80
 
 # ── The ordinary sequence, from the fixture ────────────────────────────────
 # "A physical shortage has to be established" — and when it is, the manager
@@ -242,9 +242,22 @@ observe(ScarcityChapterRequester, ScarcityChapterRequest, ScarcityChapterResourc
 ? obliged(ScarcityChapterReader, ReviewScarcityFindingAllocationOrShortfall, ScarcityChapterRequest).
 # => TRUE
 
+# "evidence the claimant submits with it must be weighed in that review" —
+# the request alone creates no weighing duty; the requester's own evidence entry
+# does. The allocation's attesters must separately record that each compared
+# claimant's evidence was considered before the comparison
+# (scarcity/allocation/without-ScarcityClaimantEvidenceScope).
+? obliged(ScarcityChapterReader, WeighTheClaimantsSubmittedEvidenceAgainstTheComparison, ScarcityChapterRequest).
+# => FALSE
+observe(ScarcityChapterRequester, ScarcityChapterRequest, ScarcityChapterRequesterEvidence, ScarcityChallengeEvidenceScope).
+? obliged(ScarcityChapterReader, WeighTheClaimantsSubmittedEvidenceAgainstTheComparison, ScarcityChapterRequest).
+# => TRUE
+
 # "the duty moves only on a positive, independently certified finding that the
-# reader did not respond" — and no such record has been written here.
-? obliged(ScarcityChapterAlternate, ReviewScarcityRequestAndSecureIndependentRemedy, ScarcityChapterRequest).
+# reader did not respond" — and no such record has been written here. The same
+# query reads TRUE once the certification is supplied
+# (scarcity/priority/request-and-certified-nonresponse).
+? obliged(ScarcityChapterAlternate, ReviewScarcityRequestSecureTheMinimumAndEscalateCourtRemedy, ScarcityChapterRequest).
 # => FALSE
 
 # ── The conclusions cannot be written, only derived. ───────────────────────

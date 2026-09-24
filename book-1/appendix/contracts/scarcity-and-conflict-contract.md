@@ -2,6 +2,21 @@
 
 # Physical scarcity, priority, and cross-domain conflict
 
+**Who attests the comparison — item 40, 2026-09-24.** The revision plan read
+Chapter 6 as saying the manager writes the comparison it is then reviewed on.
+The source says otherwise: every allocation field, the comparison outcome
+included, must be attested identically by a source, an evidence and a review
+writer, each distinct from the manager, and anyone may open review of a finding,
+allocation or shortfall without the manager's permission. The premise is
+disproved, and Chapter 6 now says who attests. The review found a narrower gap
+it did not name: nothing required a claimant's own evidence to reach the
+comparison. The allocation now carries a field,
+`EachComparedClaimantsSubmittedEvidenceConsideredBeforeTheComparison` at
+`ScarcityClaimantEvidenceScope`, that all three attesters must record, and
+evidence submitted with a later challenge obliges the reader to weigh it
+(`WeighTheClaimantsSubmittedEvidenceAgainstTheComparison`). Neither establishes
+that the evidence was persuasive or that anything was delivered.
+
 Implementation contract for the author-directed TODO item of the same name,
 under the 2026-08-07 economic ruling's physical-scarcity contract, the
 2026-08-08 ecological and protective rulings that repeat it, and the

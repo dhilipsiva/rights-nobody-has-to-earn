@@ -55,11 +55,16 @@ provision. The comparison concerns this allocation window:
 | Accessibility | Each claim must be assessed with the accommodation needed to use the resource. |
 
 The manager's stated decision is to continue the unit for this window. Its
-reasons put the irreversible harm of interruption and continuity ahead of
-the waiting claim's earlier need and larger likely benefit. The allocation
-names both claims, the chosen use, the comparison and the rejected alternative.
-The manager owes publication of those comparative reasons. Independent review,
-accessible challenge and an end remain conditions of its authority.
+reasons put the irreversible harm of interruption and continuity ahead of the
+waiting claim's earlier need and larger likely benefit. The allocation names
+both claims, the chosen use, the comparison and the rejected alternative. The
+comparison rests on three attesters separate from the manager: a source, an
+independent evidence attester and an independent reviewer must each record the
+same claims, grounds and outcome, and each must record that every compared
+claimant's submitted evidence was considered before the comparison. If the
+three records disagree, the allocation fails. The manager owes publication of
+those comparative reasons. Independent review, accessible challenge and an end
+remain conditions of its authority.
 
 The rules permit that qualified decision. They do not calculate the relative
 weights, discover that the supplied evidence is true or select the recipient.
@@ -112,15 +117,15 @@ respond, with authenticated notice and a real opportunity to act already in
 the record; then the predeclared independent alternate carries it. Silence is
 never approval, and it is never an adverse fact about the person who asked.
 
-The waiting person challenges the comparative decision. That request creates
-the reader's review duty while the allocation still qualifies. A further,
+The waiting person challenges the comparative decision. That request creates the
+reader's review duty while the allocation still qualifies, and evidence the
+claimant submits with it must be weighed in that review. A further,
 independently established finding that its comparison or reasons are unsupported
-withdraws authority for that allocation. The genuine scarcity finding and
-the waiting claim's shortfall duties remain. The defect creates no adverse
-finding about either claimant and does not prove that the unit was reassigned
-or a remedy delivered.
-The reader owes review and correction of the unsupported use; the manager
-owes publication of the correction.
+withdraws authority for that allocation. The genuine scarcity finding and the
+waiting claim's shortfall duties remain. The defect creates no adverse finding
+about either claimant and does not prove that the unit was reassigned or a
+remedy delivered. The reader owes review and correction of the unsupported use;
+the manager owes publication of the correction.
 
 The false-scarcity control changes a different premise. A qualified finding
 establishes that the supposed shortage arose from refusal to procure. The

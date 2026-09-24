@@ -133,6 +133,43 @@ reinstate the retired tooling or workflow.
 Grouped by kind. Dates in each heading are the ratification dates; a ruling
 that was later implemented or narrowed carries that supersession inline.
 
+### Item 40 — who attests a scarcity comparison, 2026-09-24
+
+The revision plan read Chapter 6 as letting the manager write the comparison it
+is then reviewed on. The source disproves that premise: every allocation field,
+the comparison outcome included, must be attested identically by a source, an
+evidence and a review writer, each distinct from the manager, and anyone may
+request review of a finding, allocation or shortfall without the manager's
+permission. Chapter 6 now names the three attesters and says a disagreement
+between their records defeats the allocation; the scarcity contract records the
+disproved premise.
+
+The review found a narrower gap it did not name: nothing required a claimant's
+own evidence to reach the comparison. The allocation now carries a field,
+`EachComparedClaimantsSubmittedEvidenceConsideredBeforeTheComparison` at the
+single-valued `ScarcityClaimantEvidenceScope`, that all three attesters must
+record, and the generated omission case withholds the allocation without it.
+Evidence the requester submits with a later challenge obliges the reader to
+weigh it (`WeighTheClaimantsSubmittedEvidenceAgainstTheComparison`). An entry
+written by somebody who did not make the request creates no such duty, and the
+duty leaves the allocation's authority intact. The worked challenge case and
+Chapter 6's pins carry both steps. Neither conclusion establishes that the
+evidence was persuasive or that anything was delivered.
+
+Chapter 6's pins also asked whether the alternate reviewer owed a duty under the
+name item 08 retired, so that FALSE pin could never fail. It now queries the
+current `ReviewScarcityRequestSecureTheMinimumAndEscalateCourtRemedy`, which the
+generated nonresponse case shows turning TRUE on certification. The exact prose
+is `session-drafted, author-approved under delegated approval (2026-09-13)`.
+
+Rules move from 7,412 to 7,414 and the inventory gains one case. The 403
+scarcity and Chapter 6 cases pass 1,718 pins in 30.40s (focused, partial); the
+reference, claim-discipline, reader-coverage, receipt and seventeen floor-vector
+tests pass, and the prose check passes after one new sentence was reworded to
+hold the chapter's figures. `RIGHTS_VERIFY_JOBS=4 ./verify.sh` passes 88,882
+pins across 16,139 cases with complete contradiction checks and no findings in
+1,181.35s.
+
 ### Item 39 — confinement guards and a lapse that is not an extension, 2026-09-24
 
 No rule reads a missing home or family entry, but the floor firewall covers

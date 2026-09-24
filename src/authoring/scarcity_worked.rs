@@ -167,6 +167,17 @@ pub(super) fn generate(
         ),
         true,
     ));
+    // Evidence the claimant submits with the request must be weighed. An entry
+    // somebody else writes on the claimant's behalf does not create that duty,
+    // and weighing is owed without the allocation losing its authority.
+    let weigh = format!(
+        "obliged({reader}, WeighTheClaimantsSubmittedEvidenceAgainstTheComparison, ScarcityWorkedRecord)"
+    );
+    steps.push_str(&query(&weigh, false));
+    steps.push_str("observe(ScarcityWorkedSource, ScarcityWorkedRecord, ScarcityWaitingClaimantsSubmittedEvidence, ScarcityChallengeEvidenceScope).\n");
+    steps.push_str(&query(&weigh, false));
+    steps.push_str("observe(ScarcityWaitingClaimant, ScarcityWorkedRecord, ScarcityWaitingClaimantsSubmittedEvidence, ScarcityChallengeEvidenceScope).\n");
+    steps.push_str(&query(&weigh, true));
     steps.push_str(&queries(allocation, &values, true));
     let defect = get("defect");
     let mut defect_values = bindings(source, defect, "ScarcityComparisonDefect");

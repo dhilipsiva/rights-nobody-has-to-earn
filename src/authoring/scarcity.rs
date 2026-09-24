@@ -191,6 +191,11 @@ fn rules(source: &Source) -> Vec<String> {
     // Asking for review of a finding, an allocation or a shortfall does not
     // require the manager's permission and does not itself decide the request.
     rules.push("all $requester: all $reader: all $request: all $resource: challenge($requester, $reader, $request) & authorized($reader, ScarcityChallengeReaderAuthority, $request) & observe($requester, $request, $resource, ScarcityChallengeResourceScope) & ~($requester = $reader) -> obliged($reader, ReviewScarcityFindingAllocationOrShortfall, $request).".into());
+    // Evidence a claimant submits with that request must be weighed in the
+    // review. The allocation itself already requires its attesters to record
+    // that each compared claimant's evidence was considered before the
+    // comparison; this reaches evidence that arrives afterwards.
+    rules.push("all $requester: all $reader: all $request: all $resource: all $evidence: challenge($requester, $reader, $request) & authorized($reader, ScarcityChallengeReaderAuthority, $request) & observe($requester, $request, $resource, ScarcityChallengeResourceScope) & observe($requester, $request, $evidence, ScarcityChallengeEvidenceScope) & ~($requester = $reader) -> obliged($reader, WeighTheClaimantsSubmittedEvidenceAgainstTheComparison, $request).".into());
     rules
 }
 

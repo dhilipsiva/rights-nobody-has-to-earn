@@ -1,5 +1,5 @@
 # SPDX-License-Identifier: MIT OR Apache-2.0
-:expect-pins 49
+:expect-pins 52
 
 ? permits(ScarcityWorkedManager, AllocateUnderPhysicalScarcity, ScarcityWorkedRecord).
 # => TRUE
@@ -44,6 +44,14 @@
 challenge(ScarcityWaitingClaimant, ScarcityWorkedReader, ScarcityWorkedRecord).
 observe(ScarcityWaitingClaimant, ScarcityWorkedRecord, IndivisibleEssentialPowerUnit, ScarcityChallengeResourceScope).
 ? obliged(ScarcityWorkedReader, ReviewScarcityFindingAllocationOrShortfall, ScarcityWorkedRecord).
+# => TRUE
+? obliged(ScarcityWorkedReader, WeighTheClaimantsSubmittedEvidenceAgainstTheComparison, ScarcityWorkedRecord).
+# => FALSE
+observe(ScarcityWorkedSource, ScarcityWorkedRecord, ScarcityWaitingClaimantsSubmittedEvidence, ScarcityChallengeEvidenceScope).
+? obliged(ScarcityWorkedReader, WeighTheClaimantsSubmittedEvidenceAgainstTheComparison, ScarcityWorkedRecord).
+# => FALSE
+observe(ScarcityWaitingClaimant, ScarcityWorkedRecord, ScarcityWaitingClaimantsSubmittedEvidence, ScarcityChallengeEvidenceScope).
+? obliged(ScarcityWorkedReader, WeighTheClaimantsSubmittedEvidenceAgainstTheComparison, ScarcityWorkedRecord).
 # => TRUE
 ? permits(ScarcityWorkedManager, AllocateUnderPhysicalScarcity, ScarcityWorkedRecord).
 # => TRUE
