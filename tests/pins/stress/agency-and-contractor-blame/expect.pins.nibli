@@ -1,0 +1,98 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+#
+# Stress test: an agency and its contractor blame each other.
+#
+# Pell is present in EastRegion, whose provision agency has contracted
+# FoodContractor to deliver. Food does not arrive. The region says the
+# contractor failed; the contractor says the region failed it. This file asks
+# what the dispute can take from Pell, and where the design stops answering.
+:expect-pins 15
+
+at(Pell, FirstContact).
+authorized(PellPresenceClerk, FloorPresenceWitness, Pell).
+observe(PellPresenceClerk, Pell, EastRegion, FloorPresenceRegionScope).
+
+# ── What the dispute cannot touch ────────────────────────────────────────────
+# The debt, the common tier's backstop and the region's duty to provide all read
+# personhood and presence. None reads who is at fault, so blame moves none.
+? owe(State, Eats, Pell).
+# => TRUE
+? obliged(CommonTier, BackstopTheFloorForEveryPersonInTheJurisdiction, Pell).
+# => TRUE
+? obliged(EastRegion, ProvideTheFloorWhereThePersonIsPresent, Pell).
+# => TRUE
+# The contractor is no tier and owes the floor no duty of its own.
+? obliged(FoodContractor, ProvideTheFloorWhereThePersonIsPresent, Pell).
+# => FALSE
+
+# A delegated public duty binds the delegate and leaves the public principal
+# bound as well: the delegation record's own case.
+? obliged(OblPositive203Bearer, OblPositive203Duty, OblPositive203Standard).
+# => TRUE
+? obliged(State, OblPositive203Duty, OblPositive203Standard).
+# => TRUE
+
+# ── Split blame moves no continuity ──────────────────────────────────────────
+# Continuity passes up a tier only when a source and an independent reviewer
+# certify the same failure. Here they name different failed bodies, so nothing
+# moves, and nothing needs to: the common tier's backstop never depended on it.
+authorized(PellOmbud, FloorFailureSourceAuthority, PellSplitFinding).
+authorized(PellAuditor, IndependentFloorFailureReviewAuthority, PellSplitFinding).
+observe(PellOmbud, PellSplitFinding, FoodContractor, FloorFailedTierScope).
+observe(PellAuditor, PellSplitFinding, EastRegion, FloorFailedTierScope).
+observe(PellOmbud, PellSplitFinding, CommonTier, FloorContinuityTierScope).
+observe(PellAuditor, PellSplitFinding, CommonTier, FloorContinuityTierScope).
+? obliged(CommonTier, AssumeFloorContinuityForTheCertifiedFailure, PellSplitFinding).
+# => FALSE
+? obliged(CommonTier, BackstopTheFloorForEveryPersonInTheJurisdiction, Pell).
+# => TRUE
+
+# ── An agreed certification moves it ─────────────────────────────────────────
+authorized(PellOmbud, FloorFailureSourceAuthority, PellAgreedFinding).
+authorized(PellAuditor, IndependentFloorFailureReviewAuthority, PellAgreedFinding).
+observe(PellOmbud, PellAgreedFinding, EastRegion, FloorFailedTierScope).
+observe(PellAuditor, PellAgreedFinding, EastRegion, FloorFailedTierScope).
+observe(PellOmbud, PellAgreedFinding, CommonTier, FloorContinuityTierScope).
+observe(PellAuditor, PellAgreedFinding, CommonTier, FloorContinuityTierScope).
+? obliged(CommonTier, AssumeFloorContinuityForTheCertifiedFailure, PellAgreedFinding).
+# => TRUE
+# The failed body's own duty stands beside the continuity duty.
+? obliged(EastRegion, ProvideTheFloorWhereThePersonIsPresent, Pell).
+# => TRUE
+
+# ── Continuity certified onto the contractor ─────────────────────────────────
+# The rule obliges whatever body the certification names. Nothing requires it
+# to be a public tier, so a certification can hand the public continuity duty
+# to the private contractor.
+authorized(PellOmbud, FloorFailureSourceAuthority, PellHandoffFinding).
+authorized(PellAuditor, IndependentFloorFailureReviewAuthority, PellHandoffFinding).
+observe(PellOmbud, PellHandoffFinding, EastRegion, FloorFailedTierScope).
+observe(PellAuditor, PellHandoffFinding, EastRegion, FloorFailedTierScope).
+observe(PellOmbud, PellHandoffFinding, FoodContractor, FloorContinuityTierScope).
+observe(PellAuditor, PellHandoffFinding, FoodContractor, FloorContinuityTierScope).
+:defect "continuity passing only to a public tier (item 70)"
+? obliged(FoodContractor, AssumeFloorContinuityForTheCertifiedFailure, PellHandoffFinding).
+# => TRUE
+
+# ── Who may say that the food arrived ────────────────────────────────────────
+# The contractor cannot certify its own delivery.
+receives(Pell, PellMeal, FoodContractor).
+authorized(FoodContractor, DeliveryWitness, Pell).
+observe(FoodContractor, PellMeal, Pell, FoodScope).
+? eats(Pell).
+# => FALSE
+# The region that contracted it can, if it holds the witness role for Pell:
+# the witness is held apart from the provider by identity only, not from the
+# public body whose duty the delivery would discharge.
+authorized(EastRegion, DeliveryWitness, Pell).
+observe(EastRegion, PellMeal, Pell, FoodScope).
+:defect "a delivery witness held apart from the duty-bearing principal as well as the provider (item 70)"
+? eats(Pell).
+# => TRUE
+
+# ── Where it stops ───────────────────────────────────────────────────────────
+# Nothing here finds anyone at fault, and the dispute costs Pell nothing.
+? prisoner(Pell).
+# => FALSE
+? false(Pell).
+# => FALSE

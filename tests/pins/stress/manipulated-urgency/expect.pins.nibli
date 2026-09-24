@@ -1,0 +1,62 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+#
+# Stress test: scarcity with manipulated urgency evidence.
+#
+# One indivisible essential unit, two claimants. The allocation continues the
+# unit for the continuity claimant because its interruption would be imminent
+# and irreversible. In this fixture that claimant is also the allocation's
+# evidence attester: the person who gains attests the evidence that decides.
+:expect-pins 14
+
+# ── The claimant attests the harm that favours them ──────────────────────────
+? authorized(ScarcityContinuityClaimant, IndependentScarcityEvidenceAuthority, ScarcityWorkedRecord).
+# => TRUE
+# Nothing holds an attester apart from the claimants the record compares, so
+# the allocation qualifies exactly as it would with an independent attester.
+:defect "an attester who is also a compared claimant disqualifying the allocation (item 69)"
+? complete(ScarcityWorkedRecord, ReviewedScarcityAllocation, IndivisibleEssentialPowerUnit).
+# => TRUE
+? permits(ScarcityWorkedManager, AllocateUnderPhysicalScarcity, ScarcityWorkedRecord).
+# => TRUE
+
+# ── The other claimant challenges with their own evidence ────────────────────
+# The request needs nobody's permission, and evidence submitted with it obliges
+# the reader to weigh it against the comparison. A duty to weigh is not a
+# finding that the urgency was false, so the allocation still stands.
+challenge(ScarcityWaitingClaimant, ScarcityWorkedReader, StressUrgencyRequest).
+authorized(ScarcityWorkedReader, ScarcityChallengeReaderAuthority, StressUrgencyRequest).
+observe(ScarcityWaitingClaimant, StressUrgencyRequest, IndivisibleEssentialPowerUnit, ScarcityChallengeResourceScope).
+observe(ScarcityWaitingClaimant, StressUrgencyRequest, StressIndependentHarmAssessment, ScarcityChallengeEvidenceScope).
+? obliged(ScarcityWorkedReader, ReviewScarcityFindingAllocationOrShortfall, StressUrgencyRequest).
+# => TRUE
+? obliged(ScarcityWorkedReader, WeighTheClaimantsSubmittedEvidenceAgainstTheComparison, StressUrgencyRequest).
+# => TRUE
+? complete(ScarcityWorkedRecord, ReviewedScarcityAllocation, IndivisibleEssentialPowerUnit).
+# => TRUE
+
+# ── One honest attester disagrees about the key ──────────────────────────────
+# The mitigation key is single-valued. When the independent reviewer records a
+# different key from the one the claimant attested, the record is ambiguous and
+# the allocation, its permission and its duties fall together.
+observe(ScarcityWorkedReview, ScarcityWorkedRecord, Urgency, ScarcityMitigationKeyScope).
+? related(ScarcityWorkedRecord, ScarcityRecordAmbiguity).
+# => TRUE
+? complete(ScarcityWorkedRecord, ReviewedScarcityAllocation, IndivisibleEssentialPowerUnit).
+# => FALSE
+? permits(ScarcityWorkedManager, AllocateUnderPhysicalScarcity, ScarcityWorkedRecord).
+# => FALSE
+
+# ── What survives, and what is never concluded ───────────────────────────────
+# The recorded shortfall rests on the finding, not on the allocation, so the
+# duty to repair it remains. Neither claimant loses anything: a manipulated
+# record is a defect in the record, not a finding about a person.
+? obliged(ScarcityWorkedManager, RepairAndReassessTheRecordedShortfall, ScarcityWaitingShortfallRecord).
+# => TRUE
+? person(ScarcityContinuityClaimant).
+# => TRUE
+? false(ScarcityContinuityClaimant).
+# => FALSE
+? owe(State, Healthy, ScarcityWaitingClaimant).
+# => TRUE
+? healthy(ScarcityWaitingClaimant).
+# => FALSE

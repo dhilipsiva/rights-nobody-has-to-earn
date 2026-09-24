@@ -134,6 +134,53 @@ reinstate the retired tooling or workflow.
 Grouped by kind. Dates in each heading are the ratification dates; a ruling
 that was later implemented or narrowed carries that supersession inline.
 
+### Item 45 — six stress tests, and the defects they found, 2026-09-24
+
+Six scenarios the revision plan named now run as cases under
+`tests/pins/stress/`, each stating what the design does and where it stops, with
+a `:defect` pin marking each confirmed gap and a tracker item for each, 67–72,
+placed right after this one under the resolve-before-defending rule. Three
+read-only surveys of the source mapped the rules first; every gap below was then
+reproduced by a pin, not taken from the survey.
+
+**Captured appointments.** A selection takes effect only when its source,
+evidence and review attesters all certify that no source holds majority control,
+and one attester's refusal withholds it. Once certified, a later contrary record
+reaches nothing and no independent appointment-control finding exists, although
+the state-form ruling makes concentration independently challengeable (item 67).
+**An election that cannot be held.** A declaration used to delay an election or
+extend a mandate falls with its requisition when reviewers find it, the
+requisitioned person keeps standing and the floor, and a caretaker holds no
+confidence mandate. Calling a fresh election is a power, not a duty, and nothing
+governs a lapsed Assembly (item 68). **Manipulated urgency.** One honest
+attester recording a different mitigation key makes the allocation ambiguous and
+it falls, while the shortfall's repair duty survives; the rival's challenge
+obliges the reader to weigh their evidence. A compared claimant may attest,
+however (item 69).
+
+**Agency and contractor blame.** The debt, the common tier's backstop and the
+region's duty read personhood and presence, never fault; a delegated duty binds
+the delegate and keeps the principal bound; and split blame moves no continuity,
+which the backstop never depended on. Continuity can be certified onto the
+private contractor, and the region can witness its own contractor's delivery
+(item 70). **An expansive reading of the core.** A contrary compatibility value
+with no reasons blocks one amendment record and creates no right; a fresh record
+is not reached by it. The proponent's challenge reaches no decision that can
+certify (item 71). **A person nobody has recorded.** A first-contact entry by
+whoever made the contact yields standing, every debt, the advocate's duty,
+serve-first and the enrolment firewall, and no adverse conclusion; a report that
+nobody acts for the person reaches nothing until the encounter is also written
+(item 72).
+
+The disclosure, non-delivery and lapse scenarios the plan also named are items
+37–39, and the cultural-practice case waits for item 58. The red-team index
+gains the six entries. No rule, chapter or generator changes. The six cases pass
+78 pins, six of them reproducing the confirmed defects (focused, partial); the
+reference, claim-discipline and reader-coverage development tests and the prose
+check pass. `RIGHTS_VERIFY_JOBS=4 ./verify.sh` passes 89,723 pins across 16,280
+cases with complete contradiction checks and no findings in 1,138.68s, the six
+defect pins still reproducing.
+
 ### Item 44 — bodily safety and material security, 2026-09-24
 
 Ruling D8 is implemented, and the floor has nine items. `secure` is bodily
@@ -5882,7 +5929,8 @@ The repo is deliberately **mixed-licence** — see `LICENSING.md` before adding 
 
 - `TODO.md` — the ordered revision backlog created 2026-09-24 from the outside
   [revision plan](new-reviwes/revision-plan-9.5.md) and its prose lint. Its items
-  34–66 continue the numbering of the completed items 01–33, and the author's
+  34–72 continue the numbering of the completed items 01–33, items 67–72 being
+  the defects item 45's stress tests confirmed, and the author's
   rulings on its reserved questions are recorded in *The revision rulings D1–D9*
   above.
   Its predecessor, the backlog requested on 2026-09-18 after the manuscript

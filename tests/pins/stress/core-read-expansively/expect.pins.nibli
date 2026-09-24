@@ -1,0 +1,49 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+#
+# Stress test: a rights-preserving amendment blocked by an expansive reading of
+# the core.
+#
+# The candidate is bound, consented, reviewed for its exact effects and found
+# by its binder to be compatible with the corridor. The independent effect
+# reviewer reads the core more widely than the candidate's effects warrant and
+# records its own value in the compatibility field instead. This file shows what
+# that reading does to the amendment, and what the proponent can do about it.
+:expect-pins 8
+
+# ── The contrary reading withholds certification ─────────────────────────────
+# Certification needs positive compatibility from both attesters, and the
+# compatibility field is single-valued, so two different values make the record
+# ambiguous. The reviewer gave no reasons and named no provision or effect.
+? related(EnactRecord, AmendmentRecordAmbiguity).
+# => TRUE
+? complete(EnactRecord, AmendmentCertifiedCandidate, EnactCandidate).
+# => FALSE
+? complete(EnactRecord, AmendmentPublishedCandidate, EnactCandidate).
+# => FALSE
+? complete(EnactRecord, AmendmentEffectiveVersion, EnactCandidate).
+# => FALSE
+
+# ── The reading creates nothing ──────────────────────────────────────────────
+# A reviewer's reading withholds one amendment. It adds no protected right and
+# no refusal about anyone, and it cannot be mistaken for a finding that the
+# candidate breaches the core.
+? contradict(EnactRecord, AmendmentSourceAuthorization).
+# => FALSE
+? complete(EnactRecord, AmendmentCertifiedCandidate, CoreReadExpansively).
+# => FALSE
+
+# ── The proponent challenges ─────────────────────────────────────────────────
+# The challenge needs nobody's permission and obliges the reader to review the
+# dispute. Nothing reads that duty, and no decision it could produce stands in
+# for the missing positive review, so the amendment stays uncertified however
+# the challenge ends.
+challenge(AmendmentProponent, EnactReader, StressCoreReadingRequest).
+authorized(EnactReader, AmendmentChallengeReaderAuthority, StressCoreReadingRequest).
+? obliged(EnactReader, ReviewAmendmentSourceDispute, StressCoreReadingRequest).
+# => TRUE
+:defect "an independent decision on a challenged unreasoned incompatibility that can certify the candidate (item 71)"
+? complete(EnactRecord, AmendmentCertifiedCandidate, EnactCandidate).
+# => FALSE
+
+# The block holds this record only. A fresh record, with a fresh transition and
+# its own independent reviewer, is not reached by it; nothing here writes one.

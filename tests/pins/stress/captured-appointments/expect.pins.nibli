@@ -1,0 +1,48 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+#
+# Stress test: two nominally separate appointment selectors controlled by one
+# coalition.
+#
+# The ruling calls majority appointment control by one government, chamber,
+# coalition, profession or appointing source a legal incompatibility, and says
+# divided sources do not by themselves prove its absence. Here the selectors
+# carry different names and one coalition directs both.
+:expect-pins 7
+
+# ── Certified absence of control ─────────────────────────────────────────────
+# A selection takes effect only when its source, evidence and review attesters
+# all certify that no source holds direct or de facto majority control, having
+# examined every kind of source and both modes of control.
+? complete(SFMainP045Result, FSPOW_028, SFMainP045Record).
+# => TRUE
+? authority(FSBOD_02, FSPOW_028, SFMainP045Record).
+# => TRUE
+
+# ── One attester sees the coalition ──────────────────────────────────────────
+# In the copy, the evidence attester records the shared control in place of the
+# certification. One attester's refusal to certify is enough: the selection and
+# the Assembly's authority over it are withheld.
+? complete(StressCapturedResult, FSPOW_028, StressCapturedRecord).
+# => FALSE
+? authority(FSBOD_02, FSPOW_028, StressCapturedRecord).
+# => FALSE
+
+# ── The coalition is found after certification ───────────────────────────────
+# Once the three attesters have certified, nothing reads a later contrary
+# record. The same attester now records the shared control on the certified
+# selection, and the selection stands: the finding has no route to withhold
+# it, and no challenge or independent finding of appointment control exists.
+observe(SFMainP045Evidence, SFMainP045Result, OneCoalitionControlsBothNominallySeparateSelectors, AntiCaptureScope).
+:defect "a contrary anti-capture record, or an independent appointment-control finding, withholding a certified selection (item 67)"
+? authority(FSBOD_02, FSPOW_028, SFMainP045Record).
+# => TRUE
+
+# ── Where it stops ───────────────────────────────────────────────────────────
+# Detection belongs to the attesters. Three who agree that there is no
+# coalition complete the selection whether or not one exists, as the red-team
+# collusion case shows for every record family. Nothing here concludes anything
+# about a person.
+? prisoner(SFMainP045Evidence).
+# => FALSE
+? false(SFMainP045Evidence).
+# => FALSE

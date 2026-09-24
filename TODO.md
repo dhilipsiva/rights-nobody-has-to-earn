@@ -216,8 +216,9 @@ unimplemented until the items named here land.
 
 ## Ordered revision backlog
 
-Work in this order. Items 34–52 measure, repair and prepare; items 53–63 carry
-the structure and the rewrite under the ratified rulings; item 64 finishes
+Work in this order: items 67–72, the defects item 45's stress tests confirmed,
+then items 46–52, which measure, repair and prepare; items 53–63 carry the
+structure and the rewrite under the ratified rulings; item 64 finishes
 production, 65 closes the revision, and 66 is optional. Numbering continues from
 items 01–33, which `CLAUDE.md` records. Chapter numbers refer to the [current
 reading sequence](book-1/contents.json), which the plan also uses, until item 53
@@ -225,22 +226,121 @@ changes it.
 
 ### Resolve the design questions, source and pins first
 
-- [ ] **45. Pin the remaining stress tests.**
+- [ ] **67. Let an appointment-control finding withhold a certified selection.**
 
-  **Scope:** plan §7.7. Items 37–39 carry the disclosure, non-delivery and
-  lapse cases, and item 58 the cultural-practice case.
+  **Scope:** the STATE-FORM appointment branches (FSPOW_028, FSPOW_030,
+  FSPOW_035), the integrity family's finding route, and
+  `tests/pins/stress/captured-appointments`; the state-form ruling's
+  "independently challengeable concentration".
 
-  Write pin sets for: two nominally separate appointment selectors controlled
-  by one coalition; an emergency that makes a scheduled election physically
-  impossible; scarcity with manipulated urgency evidence; an agency and its
-  contractor blaming each other in plural provision; a rights-preserving
-  amendment blocked by an expansive reading of the core; and a person never
-  recorded, such as Ori, reached through outreach. Each states what the
-  design does and where it stops. A confirmed defect gets its own item under
-  the resolve-before-defending rule.
+  A selection takes effect when three attesters certify that no source holds
+  majority control. Once they have, nothing reads a later contrary record: an
+  attester who later records that one coalition directs both nominally separate
+  selectors changes nothing, and no independent finding of appointment control
+  exists, although the ruling makes concentration independently challengeable
+  and the integrity family already withholds an office's permission on a
+  reviewed controlling-payer finding. Give the anti-capture field a
+  record-ambiguity rule or add a reviewed appointment-control finding, bound to
+  the exact selection, that withholds it without touching any person. Decide
+  whether the captured-source fallback and the ordinary selection may both hold
+  one seat.
 
-  **Done when:** each case runs in the suite, and each confirmed defect is
-  repaired or has its own item.
+  **Done when:** the stress case's defect pin resolves, the finding needs
+  independent review and names the controller, and no person-side conclusion
+  follows.
+
+- [ ] **68. Say what governs when an election cannot be held.**
+
+  **Scope:** the STATE-FORM term, caretaker and fresh-election branches
+  (FSPOW_031, FSPOW_041–FSPOW_044), the public-safety non-derogation rules, and
+  `tests/pins/stress/election-cannot-be-held`.
+
+  An emergency cannot postpone an election or extend a mandate, and a
+  declaration used to do either is withdrawn when found. But calling a fresh
+  election is a power, not a duty; nothing obliges anyone to hold the election
+  as soon as it can be held; and nothing says what governs when the People's
+  Assembly's own term ends and its successor cannot be elected. The caretaker's
+  limits govern a failed executive, and the ledger says a default outside them
+  needs a new ruling. Compare the alternatives — the outgoing chamber continuing
+  under caretaker limits until its successor meets, a duty to hold the election
+  at the first lawful opportunity with independent review of the impossibility
+  finding, and the corridor's requirement that the Assembly can still sit — and
+  implement the one that extends no mandate's powers.
+
+  **Done when:** a duty to hold the election and the lapsed-Assembly default
+  are formal and pinned, with the impossibility finding reviewed, and no
+  mandate gains power by the delay.
+
+- [ ] **69. Keep a compared claimant out of the allocation's attesters.**
+
+  **Scope:** `src/authoring/scarcity.rs`, the SCARCITY-AND-CONFLICT allocation
+  rules, and `tests/pins/stress/manipulated-urgency`.
+
+  The allocation holds its three attesters apart from the manager, reader and
+  alternate, but not from the claimants it compares. The continuity claimant
+  can attest the imminent harm that decides the allocation in their favour, and
+  the allocation qualifies. The compared claims already name each claimant
+  (`list($claims, $claim, $claimant, ScarcityComparedClaim)`), so an attester who
+  is a compared claimant can be refused. Check the shortfall and defect records
+  for the same gap.
+
+  **Done when:** the stress case's defect pin resolves, the generated cases
+  include a claimant-attester refusal for each record kind that compares
+  claims, and honest allocations still qualify.
+
+- [ ] **70. Keep public continuity public, and delivery witnesses independent
+  of the duty-bearer.**
+
+  **Scope:** Article 1b's continuity rule, the recipient-side delivery routes
+  (`FS-CVF-015`), and `tests/pins/stress/agency-and-contractor-blame`.
+
+  Blame cannot move the debt, the common tier's backstop or the region's duty,
+  and split blame moves no continuity. But the continuity rule obliges whatever
+  body a certification names, so continuity can be certified onto a private
+  contractor; and a delivery witness is held apart from the provider by identity
+  only, so the region whose duty the delivery discharges can certify its own
+  contractor's delivery. Require the continuity tier to be a public tier, and
+  hold the delivery witness apart from the duty-bearing principal as well as the
+  provider, without making any floor item conditional.
+
+  **Done when:** both defect pins in the stress case resolve, the existing
+  delivery and continuity pins still hold, and no route gains a new veto.
+
+- [ ] **71. Give a blocked amendment a reasoned, reviewable answer.**
+
+  **Scope:** the AMENDMENT-ENACTMENT certification and challenge rules, the
+  amendment-enactment contract, and `tests/pins/stress/core-read-expansively`.
+
+  The effect reviewer can withhold certification by recording any contrary
+  compatibility value, with no reasons, provision or changed effect, and the
+  proponent's challenge creates a duty nothing reads. The contract says neither
+  reviewer has a final veto; for that record, one does. The animal core already
+  requires an exact, reasoned breach finding. Require the reviewer's contrary
+  value to name the core provision and the candidate change with reasons, and
+  route a challenge to the independent final review so that its decision can
+  certify or refuse, without letting any reading of the core create a right.
+
+  **Done when:** the stress case's defect pin resolves, an unreasoned contrary
+  value no longer blocks on its own, and a reasoned breach still refuses the
+  candidate.
+
+- [ ] **72. Let an outreach report reach the person it reports.**
+
+  **Scope:** Article 1c, the standing roots, the life-course initiation card,
+  and `tests/pins/stress/never-recorded-person`.
+
+  The escalation built for the person nobody has come for reads personhood, and
+  a report that nobody is acting for someone is not a first-contact entry. So a
+  report about a person nobody has entered derives nothing until the worker also
+  writes the encounter. Meanwhile the initiation card can complete an
+  appointment for somebody the design owes nothing, because it never reads
+  personhood. Decide whether the report counts as the encounter it records or
+  the escalation drops its person guard, and give the initiation card the same
+  standing basis.
+
+  **Done when:** the stress case's defect pin resolves, the report creates no
+  adverse conclusion and no enrolment, and an appointment cannot complete for
+  someone without standing.
 
 ### Evidence and lineage
 

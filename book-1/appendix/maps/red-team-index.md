@@ -31,12 +31,13 @@ any real body is independent.
 
 **Patronage — one source controlling appointments.** *Gains:* the appointing
 source. *Needs:* control of a nomination route. *Hidden cost:* everyone the
-appointed body reviews. *Detected:* the appointment anti-capture idiom —
-divided sources, staggered nonrenewable mandates, cause-only removal, majority
-control by one government, chamber, coalition, profession or source as a legal
-incompatibility. *Cases:* the state-form appointment family. *New veto,
-surveillance or score:* none. *Limit:* divided sources do not by themselves
-prove capture is absent, and the ruling says so.
+appointed body reviews. *Detected:* the appointment anti-capture idiom — divided
+sources, staggered nonrenewable mandates, cause-only removal, majority control
+by one government, chamber, coalition, profession or source as a legal
+incompatibility. *Cases:* the state-form appointment family and
+`tests/pins/stress/captured-appointments`. *New veto, surveillance or score:*
+none. *Limit:* divided sources do not by themselves prove capture is absent, and
+the ruling says so.
 
 **Bribery — paying for a decision.** *Gains:* the payer. *Needs:* a payment and
 a willing office. *Hidden cost:* whoever the decision was supposed to serve.
@@ -101,6 +102,61 @@ named — budget choice, price exclusion, administrative delay, artificial
 withholding, monopoly, provider failure, refusal to procure — each with its own
 case, each withholding the finding it targets and owing back what was withheld.
 *Cases:* `tests/pins/scarcity/priority/not-a-shortage-*`.
+
+## Stress tests — 2026-09-24
+
+Item 45 of the revision tracker pins six scenarios the outside revision plan
+named, each in `tests/pins/stress/`. Each case states what the design does and
+where it stops; a `:defect` pin marks each confirmed gap, and each gap has its
+own tracker item (67–72) under the resolve-before-defending rule.
+
+**Captured appointments — two nominally separate selectors, one coalition.**
+*Gains:* the coalition. *Needs:* three attesters willing to certify that no
+source holds majority control. *Hidden cost:* everyone the appointed body
+reviews. *Detected:* one attester's refusal to certify withholds the selection.
+*Gap:* once certified, a later contrary record or independent finding of
+appointment control reaches nothing (item 67). *Case:*
+`tests/pins/stress/captured-appointments`. *New veto, surveillance or score:*
+none.
+
+**An election that cannot be held.** *Gains:* whoever holds office when the
+election falls due. *Needs:* a real hazard. *Hidden cost:* the electorate.
+*Detected:* a declaration used to delay the election or extend a mandate is
+withdrawn with every measure resting on it, and the caretaker holds no
+confidence mandate. *Gap:* holding the election is a power, not a duty, and
+nothing governs a lapsed Assembly (item 68). *Case:*
+`tests/pins/stress/election-cannot-be-held`.
+
+**Manipulated urgency in a scarcity allocation.** *Gains:* the claimant whose
+urgency decides the allocation. *Needs:* an attester's credential for the
+allocation record. *Hidden cost:* the other claimant. *Detected:* one honest
+attester who records a different mitigation key makes the record ambiguous and
+the allocation falls; a challenge with the requester's own evidence obliges the
+reader to weigh it. *Gap:* a compared claimant may attest (item 69). *Case:*
+`tests/pins/stress/manipulated-urgency`.
+
+**Agency and contractor blaming each other.** *Gains:* both, by delay. *Needs:*
+a dispute. *Hidden cost:* the person waiting. *Detected:* not needed — the debt,
+the common tier's backstop and the region's duty read personhood and presence,
+not fault, and split blame moves no continuity because the backstop never
+depended on it. *Gaps:* continuity can be certified onto a private contractor,
+and the duty-bearing region can witness its own contractor's delivery (item 70).
+*Case:* `tests/pins/stress/agency-and-contractor-blame`.
+
+**An amendment blocked by an expansive reading of the core.** *Gains:* whoever
+holds the effect reviewer's seat. *Needs:* that seat. *Hidden cost:* the
+proponent and everyone the amendment would protect. *Detected:* the block holds
+one record only; a fresh record with its own reviewer is not reached by it, and
+the reading creates no right. *Gap:* the contrary value needs no reasons, and
+the proponent's challenge reaches no decision that can certify (item 71).
+*Case:* `tests/pins/stress/core-read-expansively`.
+
+**A person nobody has recorded.** *Gains:* nobody; this is the design's own
+blind spot. *Hidden cost:* the person. *Detected:* a first-contact entry by
+whoever made the contact gives standing, every debt and the advocate's duty,
+with serve-first and no enrolment. *Gap:* a report that nobody is acting for
+the person reaches nothing until the encounter is also written (item 72).
+*Case:* `tests/pins/stress/never-recorded-person`.
 
 ## The wall that is not there
 
