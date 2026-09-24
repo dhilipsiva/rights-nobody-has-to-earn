@@ -1307,9 +1307,47 @@ fn render_vocabulary_rules() -> Vec<String> {
     rules
 }
 
+/// The roles whose attestation completes a state-form result.
+const RESULT_ATTESTER_AUTHORITIES: [&str; 3] = [
+    "StateFormSourceAuthority",
+    "StateFormEvidenceAuthority",
+    "IndependentStateFormReviewAuthority",
+];
+
+/// Item 67: each examined-kind anchor certifies an absence, and until now an
+/// attester who later recorded anything else in that field changed nothing,
+/// because a result needs only the anchor. An anchor field holds one value,
+/// so a different value from any of the result's own attesters is a
+/// disagreement about the record, and it withholds the record the way record
+/// ambiguity does in every newer family. Nobody outside the record's attesters
+/// can reach it this way; an outside finding uses the integrity family.
+fn render_contrary_anchor_rules() -> Vec<String> {
+    let mut rules = Vec::new();
+    for family in &EXAMINED_KIND_FAMILIES {
+        let (anchor, scope) = family.anchor;
+        for authority in RESULT_ATTESTER_AUTHORITIES {
+            rules.push(format!(
+                "all $writer: all $record: all $result: all $value: authorized($writer, {authority}, $record) & observe($writer, $record, $result, ResultScope) & observe($writer, $result, $value, {scope}) & ~($value = {anchor}) -> contradict($record, DemocraticIntegrityAuthorization)."
+            ));
+        }
+    }
+    rules
+}
+
+/// Item 67: a missing, captured, conflicted or silent source's fallback
+/// appointment is temporary and ends on a lawful appointment. Withholding the
+/// fallback when the ordinary selection completes would read `complete` under
+/// negation inside its own cone, so where both are current for one seat the
+/// body holding the fallback owes its end. The duty is read by nothing.
+fn render_fallback_end_rule() -> String {
+    "all $selection: all $selection_record: all $selection_source: all $fallback: all $fallback_record: all $fallback_source: all $seat: all $holder: complete($selection, FSPOW_028, $selection_record) & authorized($selection_source, StateFormSourceAuthority, $selection_record) & observe($selection_source, $selection, $seat, SeatScope) & complete($fallback, FSPOW_030, $fallback_record) & authorized($fallback_source, StateFormSourceAuthority, $fallback_record) & observe($fallback_source, $fallback, $seat, SeatScope) & authority($holder, FSPOW_030, $fallback_record) -> obliged($holder, EndTheFallbackAppointmentNowTheSeatIsLawfullyFilled, $fallback_record).".into()
+}
+
 fn draft_rule_block(source: &SemanticSource) -> StateFormResult<Vec<String>> {
     let mut rules = vec![render_current_rule()];
     rules.extend(render_vocabulary_rules());
+    rules.extend(render_contrary_anchor_rules());
+    rules.push(render_fallback_end_rule());
     for branch in &source.branches {
         rules.extend(v2_rules_for_branch(branch)?);
     }

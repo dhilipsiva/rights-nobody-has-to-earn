@@ -1,0 +1,18 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 7
+
+? authority(FSBOD_02, FSPOW_028, IntegritySelectionRecord).
+# => TRUE
+observe(IntegritySelectionEvidence, IntegritySelectionResult, OneCoalitionControlsBothNominallySeparateSelectors, AntiCaptureScope).
+? contradict(IntegritySelectionRecord, DemocraticIntegrityAuthorization).
+# => TRUE
+? authority(FSBOD_02, FSPOW_028, IntegritySelectionRecord).
+# => FALSE
+? authority(Boss).
+# => TRUE
+? person(Hano).
+# => TRUE
+? decide(Hano, Ballot).
+# => TRUE
+? owe(State, Eats, Hano).
+# => TRUE

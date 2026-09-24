@@ -216,7 +216,7 @@ unimplemented until the items named here land.
 
 ## Ordered revision backlog
 
-Work in this order: items 67–72, the defects item 45's stress tests confirmed,
+Work in this order: items 68–72, the defects item 45's stress tests confirmed,
 then items 46–52, which measure, repair and prepare; items 53–63 carry the
 structure and the rewrite under the ratified rulings; item 64 finishes
 production, 65 closes the revision, and 66 is optional. Numbering continues from
@@ -225,29 +225,6 @@ reading sequence](book-1/contents.json), which the plan also uses, until item 53
 changes it.
 
 ### Resolve the design questions, source and pins first
-
-- [ ] **67. Let an appointment-control finding withhold a certified selection.**
-
-  **Scope:** the STATE-FORM appointment branches (FSPOW_028, FSPOW_030,
-  FSPOW_035), the integrity family's finding route, and
-  `tests/pins/stress/captured-appointments`; the state-form ruling's
-  "independently challengeable concentration".
-
-  A selection takes effect when three attesters certify that no source holds
-  majority control. Once they have, nothing reads a later contrary record: an
-  attester who later records that one coalition directs both nominally separate
-  selectors changes nothing, and no independent finding of appointment control
-  exists, although the ruling makes concentration independently challengeable
-  and the integrity family already withholds an office's permission on a
-  reviewed controlling-payer finding. Give the anti-capture field a
-  record-ambiguity rule or add a reviewed appointment-control finding, bound to
-  the exact selection, that withholds it without touching any person. Decide
-  whether the captured-source fallback and the ordinary selection may both hold
-  one seat.
-
-  **Done when:** the stress case's defect pin resolves, the finding needs
-  independent review and names the controller, and no person-side conclusion
-  follows.
 
 - [ ] **68. Say what governs when an election cannot be held.**
 

@@ -20,7 +20,7 @@ What has to act before each effect in the constitution takes effect: every compl
 
 | Class | Effects | Inherited from a record they read |
 |---|---|---|
-| adverse | 201 | 35 |
+| adverse | 202 | 35 |
 | beneficial | 67 | 0 |
 | institutional | 125 | 33 |
 | oversight | 52 | 6 |
@@ -33,7 +33,7 @@ Where more than one role writes exactly the same fields onto one record, the att
 - **AMENDMENT-ENACTMENT** — effect reviewer + publisher: institutional 1
 - **AMENDMENT-ENACTMENT** — effect reviewer + source: institutional 1
 - **AMENDMENT-ENACTMENT** — evidence attester + independent reviewer: oversight 1
-- **DEMOCRATIC-INTEGRITY** — evidence attester + independent reviewer + source: adverse 4, beneficial 1, institutional 2, oversight 2
+- **DEMOCRATIC-INTEGRITY** — evidence attester + independent reviewer + source: adverse 5, beneficial 1, institutional 2, oversight 2
 - **ECOLOGICAL-ANIMAL** — completeness assurer + decision administrator + result service; independent reviewer + source: institutional 4
 - **ECOLOGICAL-ANIMAL** — ethical reviewer + scientific reviewer; independent reviewer + source: adverse 1
 - **ECOLOGICAL-ANIMAL** — independent reviewer + source: adverse 64, beneficial 17, institutional 12, oversight 6, power-over-others 5
@@ -168,6 +168,7 @@ Ruling D6 lets an act that only gives or preserves something for its subject tak
 |---|---|---|---|---|---|---|
 | `authority` ElectoralDistrictPlan | institutional | Certifies or configures an electoral, collective or institutional result. | 5 | 0 |  | — |
 | `authority` InternalDemocraticCandidateSelection | institutional | Certifies or configures an electoral, collective or institutional result. | 5 | 0 |  | — |
+| AppointmentControlIncompatibilityFinding | adverse | Finds against an office-holder, candidate, association or coordinated actor. | 5 | 3 | evidence attester + independent reviewer + source | — |
 | CoordinatedOperationFinding | adverse | Finds against an office-holder, candidate, association or coordinated actor. | 5 | 3 | evidence attester + independent reviewer + source | — |
 | ForbiddenDistrictingPurposeFinding | oversight | Finds a public act or record defective, unsupported or ended. | 5 | 3 | evidence attester + independent reviewer + source | — |
 | InternalDemocraticMinimumFailureFinding | adverse | Finds against an office-holder, candidate, association or coordinated actor. | 5 | 3 | evidence attester + independent reviewer + source | — |
@@ -742,4 +743,4 @@ Ruling D6 lets an act that only gives or preserves something for its subject tak
 
 ## Outside this table
 
-Duties are owed rather than taking effect, and barriers read no authorised role, so neither is listed: 693 rules conclude a duty (`obliged`) and 546 conclude a barrier (`prevents`). Where a duty accompanies a restriction, the restriction is measured through the conclusion that takes effect, such as the `interrupt` stays in the ecological family.
+Duties are owed rather than taking effect, and barriers read no authorised role, so neither is listed: 695 rules conclude a duty (`obliged`) and 546 conclude a barrier (`prevents`). Where a duty accompanies a restriction, the restriction is measured through the conclusion that takes effect, such as the `interrupt` stays in the ecological family.

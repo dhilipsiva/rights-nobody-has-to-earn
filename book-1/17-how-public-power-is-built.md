@@ -165,9 +165,17 @@ stated cause after independent fact-finding and confirmation by another body.
 It is unlawful for one current government, chamber, party coalition, profession or
 appointing source to hold majority appointment control of a court or an
 independent oversight body. Divided sources do not by themselves prove that
-the same coalition does not control them. The records allow direct and de
-facto control to be stated and challenged.
-They do not demonstrate that capture has been detected or prevented.
+the same coalition does not control them. A selection takes effect only when
+its source, evidence and review attesters each certify that no source holds
+direct or de facto majority control. If one of them records anything else in
+that field, even after certifying, the selection is withheld. An integrity
+finding, independently reviewed, that one controller directs nominally separate
+selectors withholds the selection it names, and only that selection. The
+finding must name the controller, who cannot be one of its attesters. A
+temporary appointment made because a source was captured or missing must end
+once a lawful selection fills the seat, and the body that made it owes that
+end. These records allow control to be stated and challenged. They do not
+demonstrate that capture has been detected or prevented.
 
 Every office needs a democratic or legal source, a mandate, a jurisdiction, a
 delegation boundary, conflict and recusal rules, a finite end condition, a

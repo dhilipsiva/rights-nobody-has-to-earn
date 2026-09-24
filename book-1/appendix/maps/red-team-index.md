@@ -113,11 +113,12 @@ own tracker item (67–72) under the resolve-before-defending rule.
 **Captured appointments — two nominally separate selectors, one coalition.**
 *Gains:* the coalition. *Needs:* three attesters willing to certify that no
 source holds majority control. *Hidden cost:* everyone the appointed body
-reviews. *Detected:* one attester's refusal to certify withholds the selection.
-*Gap:* once certified, a later contrary record or independent finding of
-appointment control reaches nothing (item 67). *Case:*
-`tests/pins/stress/captured-appointments`. *New veto, surveillance or score:*
-none.
+reviews. *Detected:* one attester's refusal to certify withholds the selection;
+after certification, a contrary record by one of its own attesters, or an
+independently reviewed appointment-control finding naming the controller,
+withholds it (item 67), and a fallback for the same seat is owed its end.
+*Case:* `tests/pins/stress/captured-appointments`. *New veto, surveillance or
+score:* none.
 
 **An election that cannot be held.** *Gains:* whoever holds office when the
 election falls due. *Needs:* a real hazard. *Hidden cost:* the electorate.

@@ -94,3 +94,43 @@ suite, not a resurrected repository-audit gate. Contract-specific cards name
 the evidence boundary and Book 2 handoff. None of these cases establishes an
 institutional action, a complete register, independence in practice, or future
 delivery of a duty.
+
+## Appointment control — item 67, 2026-09-24
+
+The state-form ruling makes majority appointment control by one government,
+chamber, coalition, profession or appointing source a legal incompatibility and
+calls concentration independently challengeable. A selection took effect when
+its source, evidence and review attesters certified that no source held
+majority control, and once they had, nothing read a later contrary record: the
+stress case `tests/pins/stress/captured-appointments` reproduced a selection
+standing after one of its own attesters recorded that one coalition directed
+both nominally separate selectors.
+
+Three routes now answer it. **A contrary anchor record.** Each examined-kind
+anchor (no majority control, no conflict of interest, no prohibited political
+finance, no forbidden districting purpose) certifies an absence in a field that
+holds one value. Any other value there, written by one of the result's own
+source, evidence or review attesters, withholds the record through
+`contradict($record, DemocraticIntegrityAuthorization)`, the way record
+ambiguity withholds a record in the newer families. An uncredentialed writer
+reaches nothing. **An appointment-control finding.** The contract
+`appointment-finding` (`AppointmentControlIncompatibilityFinding`) names the
+target selection, the controller, the kind of source, the mode of control and
+the nominally separate selectors, under the three attesters, reader and
+alternate every integrity finding carries; the controller cannot be one of its
+attesters. It withholds the selection it names and obliges the reader to review
+and correct it. It concludes nothing about any person. **A fallback that has
+outlived its reason.** A temporary appointment made because a source was
+missing, captured, conflicted or silent ends on a lawful appointment. Withholding
+the fallback when the ordinary selection completes would read `complete` under
+negation inside its own cone, which the engine refuses, so where both are
+current for one seat the body holding the fallback owes its end
+(`EndTheFallbackAppointmentNowTheSeatIsLawfullyFilled`), read by nothing.
+
+The integrity cases under `tests/pins/integrity/appointment-finding/` include a
+selection withheld by the finding with every personal protection unchanged, a
+different selection left standing, a controller who attests refused, a contrary
+anchor record withholding the selection, an uncredentialed contrary record
+reaching nothing, and the fallback duty for the same seat but not another.
+Attesters who agree that no coalition exists still complete a selection whether
+or not one does; detection begins with somebody's record.

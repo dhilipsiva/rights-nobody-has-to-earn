@@ -7,7 +7,7 @@
 # coalition, profession or appointing source a legal incompatibility, and says
 # divided sources do not by themselves prove its absence. Here the selectors
 # carry different names and one coalition directs both.
-:expect-pins 7
+:expect-pins 8
 
 # ── Certified absence of control ─────────────────────────────────────────────
 # A selection takes effect only when its source, evidence and review attesters
@@ -28,20 +28,22 @@
 # => FALSE
 
 # ── The coalition is found after certification ───────────────────────────────
-# Once the three attesters have certified, nothing reads a later contrary
-# record. The same attester now records the shared control on the certified
-# selection, and the selection stands: the finding has no route to withhold
-# it, and no challenge or independent finding of appointment control exists.
+# The anti-capture field holds one value. When one of the certified selection's
+# own attesters later records the shared control there, the record disagrees
+# with itself and the selection is withheld. An outside body reaches it through
+# an independently reviewed appointment-control finding instead.
 observe(SFMainP045Evidence, SFMainP045Result, OneCoalitionControlsBothNominallySeparateSelectors, AntiCaptureScope).
-:defect "a contrary anti-capture record, or an independent appointment-control finding, withholding a certified selection (item 67)"
-? authority(FSBOD_02, FSPOW_028, SFMainP045Record).
+? contradict(SFMainP045Record, DemocraticIntegrityAuthorization).
 # => TRUE
+? authority(FSBOD_02, FSPOW_028, SFMainP045Record).
+# => FALSE
 
 # ── Where it stops ───────────────────────────────────────────────────────────
-# Detection belongs to the attesters. Three who agree that there is no
-# coalition complete the selection whether or not one exists, as the red-team
-# collusion case shows for every record family. Nothing here concludes anything
-# about a person.
+# Detection still begins with somebody's record: three attesters who agree
+# that there is no coalition complete the selection whether or not one exists,
+# as the red-team collusion case shows for every record family, until a
+# reviewed finding says otherwise. Nothing here concludes anything about a
+# person.
 ? prisoner(SFMainP045Evidence).
 # => FALSE
 ? false(SFMainP045Evidence).

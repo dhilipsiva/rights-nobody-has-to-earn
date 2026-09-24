@@ -134,6 +134,51 @@ reinstate the retired tooling or workflow.
 Grouped by kind. Dates in each heading are the ratification dates; a ruling
 that was later implemented or narrowed carries that supersession inline.
 
+### Item 67 — appointment control made challengeable, 2026-09-24
+
+Item 45's captured-appointments case showed a certified selection standing after
+one of its own attesters recorded that one coalition directed both nominally
+separate selectors: nothing read a record written after certification, and no
+independent finding of appointment control existed, although the state-form
+ruling makes concentration independently challengeable. Three routes now answer
+it. Each examined-kind anchor — no majority control, no conflict of interest, no
+prohibited political finance, no forbidden districting purpose — certifies an
+absence in a one-value field, and twelve generated rules make any other value
+there, written by one of the result's own source, evidence or review attesters,
+withhold the record through `contradict($record,
+DemocraticIntegrityAuthorization)`, as record ambiguity does in the newer
+families; an uncredentialed writer reaches nothing. The integrity contract
+`appointment-finding` names the target selection, the controller, the kind of
+source, the mode of control and the selectors, under the three attesters, reader
+and alternate every integrity finding carries, with the controller barred from
+attesting; it withholds that selection alone and obliges the reader to correct
+it.
+
+The item also asked whether the captured-source fallback and the ordinary
+selection may both hold one seat. They may not, but withholding the fallback
+when the selection completes would read `complete` under negation inside its own
+cone, which the engine refuses. The fallback therefore ends as its own record
+says, on the lawful appointment, and where both are current for one seat the
+body holding the fallback owes its end
+(`EndTheFallbackAppointmentNowTheSeatIsLawfullyFilled`), read by nothing. The
+finding is classified adverse in the procedural-load table. Chapter 17 states
+the three routes, the integrity contract card and the state-form note above
+record them, and the stress case's defect pin now passes as a withheld
+selection. The exact prose is `session-drafted, author-approved under delegated
+approval (2026-09-13)`.
+
+Rules move from 7,527 to 7,550. The integrity generator writes 46 appointment
+cases: the positive record and every omission, kind and identity variant, a
+selection withheld with every personal protection unchanged, a different
+selection left standing, a controller who attests refused, a contrary anchor
+record withholding the selection, an uncredentialed one reaching nothing, and
+the fallback duty for the same seat but not another. The integrity, state-form
+and captured-appointments cases pass 1,681 pins across 459 cases (focused,
+partial). All 137 authoring development tests pass, with five declared ignored,
+and the prose check passes. `RIGHTS_VERIFY_JOBS=4 ./verify.sh` passes 89,868
+pins across 16,326 cases with complete contradiction checks and no findings in
+1,146.01s, five defect pins still reproducing for items 68–72.
+
 ### Item 45 — six stress tests, and the defects they found, 2026-09-24
 
 Six scenarios the revision plan named now run as cases under
@@ -1609,6 +1654,12 @@ That structural landing leaves every power, body, and `FS-CLM-18` at
 operation, delivery, institutional action, or changing-result authentication.
 Controlling record:
 `book-1/appendix/decisions/state-form-and-political-membership-decision.md`.
+
+**Appointment control made challengeable, 2026-09-24 (item 67).** A contrary
+anchor record from one of a result's own attesters, or an independently reviewed
+appointment-control finding naming the controller, withholds a certified
+selection; a fallback appointment for a seat a lawful selection fills is owed
+its end. The integrity contract card records the design.
 
 #### Substantive equality and anti-subordination — 2026-08-07
 

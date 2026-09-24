@@ -544,6 +544,142 @@ pub(crate) fn generate(context: &Context, export: &mut Export) -> Result<(), Err
     Ok(())
 }
 
+/// Item 67: an appointment-control finding and a contrary anti-capture record
+/// each reach an actual Assembly appointment selection and nothing else, and a
+/// lawful selection obliges the end of a fallback appointment to the same seat.
+fn appointment_cases(
+    context: &Context,
+    export: &mut Export,
+    source: &Source,
+    outcome: &dyn Fn(&str, bool) -> String,
+) -> Result<(), Error> {
+    let (selection, map, authority) = super::state_form::integrity_fixture(
+        context,
+        28,
+        "assembly_appointment_selection",
+        "IntegritySelection",
+    )?;
+    let tag = format!("contradict({}, DemocraticIntegrityAuthorization)", map["$record"]);
+    let unaffected = |pins: &mut String| {
+        pins.push_str(&outcome("authority(Boss)", true));
+        pins.push_str(&outcome("person(Hano)", true));
+        pins.push_str(&outcome("decide(Hano, Ballot)", true));
+        pins.push_str(&outcome("owe(State, Eats, Hano)", true));
+    };
+
+    let contract = source
+        .contracts
+        .iter()
+        .find(|c| c.id == "appointment-finding")
+        .unwrap();
+    let mut bindings = grounding(source, contract, "IntegrityAdverse");
+    bindings.insert("$target".into(), map["$record"].clone());
+    let facts = fixture(source, contract, &bindings).join("\n");
+    let mut pins = outcome(&authority, true) + &outcome(&tag, false);
+    pins.push_str(&format!("{facts}\n"));
+    pins.push_str(&outcome(&tag, true));
+    pins.push_str(&outcome(&authority, false));
+    pins.push_str(&outcome(
+        &ground(
+            "obliged($reader, ReviewAndCorrectTheCapturedAppointmentSelection, $target)",
+            &bindings,
+        ),
+        true,
+    ));
+    unaffected(&mut pins);
+    add_case(
+        context,
+        export,
+        "appointment-finding/selection-withheld-sequence",
+        "live",
+        &selection,
+        &pins,
+    )?;
+    // A finding whose named controller is one of its own attesters is refused.
+    let mut conflicted = bindings.clone();
+    conflicted.insert("$controller".into(), conflicted["$evidence"].clone());
+    add_case(
+        context,
+        export,
+        "appointment-finding/controller-attests",
+        "live",
+        &format!("{selection}{}\n", fixture(source, contract, &conflicted).join("\n")),
+        &(outcome(&tag, false) + &outcome(&authority, true)),
+    )?;
+    bindings.insert("$target".into(), "DifferentAppointmentSelection".into());
+    add_case(
+        context,
+        export,
+        "appointment-finding/different-selection",
+        "live",
+        &format!("{selection}{}\n", fixture(source, contract, &bindings).join("\n")),
+        &outcome(&authority, true),
+    )?;
+
+    // One of the selection's own attesters records the coalition in the
+    // anchor field after certifying its absence.
+    let contrary = |writer: &str| {
+        format!(
+            "observe({writer}, {}, OneCoalitionControlsBothNominallySeparateSelectors, AntiCaptureScope).\n",
+            map["$result"]
+        )
+    };
+    let mut pins = outcome(&authority, true);
+    pins.push_str(&contrary(&map["$evidence"]));
+    pins.push_str(&outcome(&tag, true));
+    pins.push_str(&outcome(&authority, false));
+    unaffected(&mut pins);
+    add_case(
+        context,
+        export,
+        "appointment-finding/contrary-anchor-sequence",
+        "live",
+        &selection,
+        &pins,
+    )?;
+    add_case(
+        context,
+        export,
+        "appointment-finding/uncredentialed-contrary-anchor",
+        "live",
+        &format!("{selection}{}", contrary("AppointmentBystander")),
+        &(outcome(&tag, false) + &outcome(&authority, true)),
+    )?;
+
+    // A captured-source fallback to the seat the lawful selection fills.
+    let (fallback, fallback_map, fallback_authority) = super::state_form::integrity_fixture(
+        context,
+        30,
+        "assembly_captured_source_fallback_appointment",
+        "IntegrityFallback",
+    )?;
+    let seat = Regex::new(&format!(r"\b{}\b", regex::escape(&fallback_map["$seat"]))).unwrap();
+    let same_seat = seat.replace_all(&fallback, map["$seat"].as_str()).into_owned();
+    let duty = format!(
+        "obliged(FSBOD_02, EndTheFallbackAppointmentNowTheSeatIsLawfullyFilled, {})",
+        fallback_map["$record"]
+    );
+    let mut pins = outcome(&authority, true) + &outcome(&fallback_authority, true);
+    pins.push_str(&outcome(&duty, true));
+    add_case(
+        context,
+        export,
+        "appointment-finding/fallback-ends-on-lawful-selection",
+        "live",
+        &format!("{selection}{same_seat}"),
+        &pins,
+    )?;
+    add_case(
+        context,
+        export,
+        "appointment-finding/fallback-to-another-seat",
+        "live",
+        &format!("{selection}{fallback}"),
+        &(outcome(&fallback_authority, true) + &outcome(&duty, false)),
+    )?;
+    Ok(())
+}
+
 fn integration_cases(context: &Context, export: &mut Export, source: &Source) -> Result<(), Error> {
     let (office, mapping, authority) = super::state_form::integrity_fixture(
         context,
@@ -626,6 +762,7 @@ fn integration_cases(context: &Context, export: &mut Export, source: &Source) ->
             &outcome(&authority, true),
         )?;
     }
+    appointment_cases(context, export, source, &outcome)?;
     for (lawful_id, finding_id) in [
         ("district-plan", "district-finding"),
         ("party-selection", "party-finding"),

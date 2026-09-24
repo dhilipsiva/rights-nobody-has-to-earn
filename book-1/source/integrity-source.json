@@ -9,7 +9,9 @@
     ["IntegrityDistrictPurposeScope", "IntegrityDistrictPurposeVocabulary", ["PartyOrCoalitionEntrenchment", "IncumbentEntrenchment", "ProtectedGroundDilution"]],
     ["IntegrityOppositionRightScope", "IntegrityOppositionRightVocabulary", ["EqualAssemblyInformation", "IndependentConstitutionalAndElectoralChallenge", "GuaranteedAssemblyProceedingsPlace"]],
     ["IntegrityPartyMinimumScope", "IntegrityPartyMinimumVocabulary", ["MemberElectedLeadership", "MemberControlledCandidateSelection", "EqualMemberVoice", "FreeMemberExit"]],
-    ["IntegrityOperationKindScope", "IntegrityOperationKindVocabulary", ["FundedOperation", "CommonControlNetwork", "EnterpriseOperation", "OutsideJurisdictionControlledOperation"]]
+    ["IntegrityOperationKindScope", "IntegrityOperationKindVocabulary", ["FundedOperation", "CommonControlNetwork", "EnterpriseOperation", "OutsideJurisdictionControlledOperation"]],
+    ["IntegrityAppointmentSourceKindScope", "IntegrityAppointmentSourceKindVocabulary", ["CurrentGovernmentAppointmentSource", "ChamberAppointmentSource", "PartyCoalitionAppointmentSource", "ProfessionAppointmentSource", "SingleAppointingBodyAppointmentSource"]],
+    ["IntegrityAppointmentControlModeScope", "IntegrityAppointmentControlModeVocabulary", ["DirectAppointmentControl", "DeFactoAppointmentControl"]]
   ],
   "contracts": [
     {
@@ -48,6 +50,26 @@
         "contradict($target, DemocraticIntegrityAuthorization)",
         "obliged($office, RecuseAndReferToIndependentAlternate, $target)",
         "obliged($alternate, ReviewOfficeIntegrityChallengeAndRemedy, $target)"
+      ],
+      "bindings": {},
+      "dependency": null
+    },
+    {
+      "id": "appointment-finding",
+      "kind": "AppointmentControlIncompatibilityFinding",
+      "fields": [
+        ["$controller", "IntegrityAppointmentControllerScope"],
+        ["$source_kind", "IntegrityAppointmentSourceKindScope"],
+        ["$mode", "IntegrityAppointmentControlModeScope"],
+        ["$selectors", "IntegrityAppointmentSelectorsScope"],
+        ["MajorityAppointmentControlByOneSourceEstablished", "IntegrityFindingDispositionScope"],
+        ["ControllerAndEveryNominallySeparateSelectorExamined", "IntegrityControlEvidenceScope"],
+        ["AppointmentSelectionActOnly", "IntegrityConsequenceLimitScope"]
+      ],
+      "extra": ["~($source = $controller)", "~($evidence = $controller)", "~($review = $controller)"],
+      "heads": [
+        "contradict($target, DemocraticIntegrityAuthorization)",
+        "obliged($reader, ReviewAndCorrectTheCapturedAppointmentSelection, $target)"
       ],
       "bindings": {},
       "dependency": null

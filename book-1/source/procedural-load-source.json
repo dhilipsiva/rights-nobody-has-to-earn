@@ -1876,6 +1876,13 @@
     {
       "family": "DEMOCRATIC-INTEGRITY",
       "head": "complete",
+      "key": "AppointmentControlIncompatibilityFinding",
+      "class": "adverse",
+      "because": "integrity-finding"
+    },
+    {
+      "family": "DEMOCRATIC-INTEGRITY",
+      "head": "complete",
       "key": "InternalDemocraticMinimumFailureFinding",
       "class": "adverse",
       "because": "integrity-finding"
