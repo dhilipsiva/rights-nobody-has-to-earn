@@ -2,6 +2,17 @@
 
 # Book 1 Delivery and Receipt Decision
 
+**Revision ruling D8, 2026-09-24.** The author's ruling D8 on the revision
+tracker (recorded in `CLAUDE.md` under *The revision rulings D1–D9*) resolves an
+ambiguity this decision carried: §3 groups `secure` with the material
+conditions, while the book glosses that floor item as being safe. `secure`
+splits into two floor items: bodily safety, a protection guarantee with no
+receipt route, and material security, essential goods that keep the current
+receipt route and its witness distinct from the source. Care keeps `healthy`,
+and company keeps its route. The floor becomes nine items once TODO item 44
+lands the completed coverage-map contract, a refusal pin for every item and
+formal proof; until then the routes recorded below are unchanged.
+
 **Final item-19 integration, 2026-09-20.** The current source passes 88,024
 pins across 16,087 cases in 1,169.06s, with complete contradiction checks and
 no findings. No active known-defect annotations remain. The focused and failed

@@ -2,6 +2,13 @@
 
 # Book 1 Constitutional Taxonomy
 
+**Revision ruling D8, 2026-09-24.** The author's ruling D8 (recorded in
+`CLAUDE.md` under *The revision rulings D1–D9*) takes the split this map
+anticipated for `secure`: bodily safety and material security become separate
+floor items. The map's condition on that split still governs it. The current
+protection is neither rewired nor weakened until replacement rules, pins and
+counterfactuals show the new arrangement to be at least as safe (TODO item 44).
+
 The verified case-level implementation (2026-09-14) is recorded in
 [Environmental rights, commons and direct animal protection](../contracts/ecological-and-animal-protection-contract.md).
 It supplies separate Class 3 human environmental, Class 9 commons and Class 10

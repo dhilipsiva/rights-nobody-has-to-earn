@@ -19,6 +19,12 @@ the labelled opening note, Part V's argument and evidence, and the optional
 method part, Book 1's claims derive from that constitution. The reader chapters
 remain jargon-free. Generated reports and prose do not override the formal source.
 
+**Ratified 2026-09-24, not yet implemented:** each derived chapter will also
+close with one labelled argument section, and documented cases will also appear
+in the opening and at the head of each Part (D2 and D3 of *The revision rulings
+D1–D9* below). Until those items land, the paragraph above describes the
+edition.
+
 Book 2 owns operation and transition within a declared reference envelope:
 staffing, costs, resources, technology, workflows, capacity, and empirical
 feasibility. Its tracker is collection-only until Book 1 ships at Gate C.
@@ -126,6 +132,113 @@ reinstate the retired tooling or workflow.
 
 Grouped by kind. Dates in each heading are the ratification dates; a ruling
 that was later implemented or narrowed carries that supersession inline.
+
+### The revision rulings D1–D9 — 2026-09-24
+
+The author ratified nine rulings and two follow-ups on 2026-09-24, answering the
+questions the [revision tracker](TODO.md) reserved after the outside [revision
+plan](new-reviwes/revision-plan-9.5.md). Another AI assistant wrote that plan
+from the 170-page review PDF built at `93fa5662`; the rulings are the author's,
+taken in one sitting. **Each is ratified but unimplemented** in the standing
+sense: it creates no predicate, rule, pin, chapter or built artefact, and the
+edition's text stays as it is until the implementing TODO item lands and adds
+its dated supersession note here. Each ruling supersedes only what it names, and
+each superseded passage below points back to this subsection.
+
+**D1 — subtitle, reader and promise.** The subtitle becomes *A worked design for
+a society, with its formal claims made executable.* The primary reader is the
+serious non-specialist, with lawyers and policymakers second. The first page and
+back cover carry: *"A constitution designed from the person with nothing, argued
+in plain language, with every rule published so you can test it."* This
+supersedes the subtitle in the title ruling, including its "catches its own
+failures" clause; that ruling's warning about dropping the clause was put to the
+author, who chose the new subtitle knowing it. The title is unchanged. Items 60
+and 64 implement it.
+
+**D2 — an argument section in every derived chapter.** Each derived chapter
+keeps its pinned, flat account and then ends with one labelled, first-person
+argument section: the reason for the rule, the strongest alternative with its
+evidence, and what would change the choice. Part V becomes a synthesis of how
+the choices fit together. This supersedes, for argument only, the voice
+boundary's limit of the author's first person to three elements, the statements
+that exactly three elements are exempt, and the register decision's closure of
+derived chapters to non-derived content. The flat register of the derived
+sections, the ban on inner lives, the refusal of composite citizens and
+dramatised scenes, and the rule that argument creates no right, power or
+exception all stand. Derived sections stay exactly as derived as before. The
+length invariant and the digit rule come to be measured by section rather than
+by file once item 53 builds that tooling. Items 53–59 and 63 implement it.
+
+**D3 — documented cases outside Part V.** Documented, registry-sourced cases may
+appear in the opening (Santoshi Kumari first, with the dispute over her death
+intact), in a short labelled case opening each Part, and in argument sections.
+They never appear in a derived section, and no case gains an invented inner
+life. This supersedes the rule that the historical cases stay in Part V. Items
+46, 47, 54–57 and 60 implement it.
+
+**D4 — the constitution in plain language, in the companion.** Numbered
+plain-language articles are published in the companion, not printed in the book,
+and chapters cite article numbers. Articles trace to the rule families,
+contracts and pins that implement them — by family, because most rules sit in
+generated blocks with no article banner. The method stays the book's technical
+appendix within its sealed scope. An interpretation article is added. Its burden
+half (a restrictive conclusion needs complete positive evidence, and absence
+never extends a power) traces to existing fail-closed rules and their pins. Its
+protective-reading half (where a standard is open, the reading more protective
+of the floor and of liberty prevails) is a declared non-formal article, listed
+as a deliberate traceability gap. R4 stands, as does the rule that the formal
+source lives beside the ordered inputs. Items 61 and 62 implement it.
+
+**D5 — the child returns where the result differs.** R1's criterion becomes
+"produces a different or instructive result" instead of "can run the rule".
+Chapter 1 stays the case. Each removed section is recorded in
+`CHILD_SLOT_EXEMPT` with its reason, so the membership test still decides. Items
+52 and 54–57 implement it.
+
+**D6 — fast for help, slow for harm.** An act that only gives or preserves
+something for its subject — immediate care continuity, an accommodation, interim
+protection — takes effect on one authorised actor, and prompt independent review
+can correct it. Any appointment giving someone power over another person, and
+every adverse act, keep full prior procedure; delivery evidence keeps its
+independent witness. This supersedes, for that class only, the 2026-09-15
+symmetry under which every record completion carries a distinctness constraint
+and an independent review authority before it takes effect. Item 42 measures the
+load first; item 43 implements the ruling and revises
+`every_power_record_is_independently_reviewed` into the ruled property.
+
+**D7 — the structure.** The revision plan's table is adopted: Chapters 1 and 2,
+9 and 10, and 23, 25 and 26 merge; Chapter 13 splits into commons and animals;
+"An Ordinary Week" joins Part II and "Where This Could Fail" joins Part V; and
+the map, glossary, roles and subject index move to the back matter beside the
+method, so that at most five pages precede Chapter 1. R3's ordering rule stands.
+This supersedes the reading-order decision's refusal to merge Voiding with
+Clawback: its mechanical reason, the unscoped `:accept` closing chapter 25's
+pins, is met by ordering the merged pins so that it comes last. Item 53
+implements it, with the manifest, relocation and test changes it needs.
+
+**D8 — nine floor items.** `secure` splits into bodily safety, a protection
+guarantee with no receipt route, and material security, essential goods keeping
+the current receipt route. Care keeps `healthy` and is called care throughout;
+company is unchanged. This supersedes the eight-item floor, and the split still
+needs the completed coverage-map contract, a refusal pin for every item and
+formal proof. Item 44 implements it.
+
+**D9 — the animal core as enacted.** The unamendable core stays as enacted:
+direct protected-subject status, the ban on severe avoidable suffering, and the
+ban on killing solely for the closed list of dispensable purposes. The
+alternative-sensitive food rule stays ordinary amendable constitutional law,
+bounded by the core, so a food purpose never licenses avoidable suffering. Item
+58 defines "direct protection", "avoidable" and "dispensable" accordingly and
+argues the result, including its implications for farming, subsistence and
+culture. Nothing is superseded.
+
+Controlling records: the dated 2026-09-24 section in
+`book-1/appendix/decisions/narrative-register-decision.md` (D2, D3),
+`child-with-nobody-decision.md` (D5), `reading-order-and-appendix-decision.md`
+(D1, D4, D7), `delivery-and-receipt-decision.md` with
+`book-1/appendix/maps/constitutional-taxonomy.md` (D8), and the ecological
+decision (D9). D6 is recorded here and moves into the affected contract cards
+when item 43 lands.
 
 ### Item 33 — final sequential assessment and shield precision, 2026-09-21
 
@@ -2290,6 +2403,12 @@ stay closed by three standing rulings; no fourth exempt element exists. (R4 of
 the book: `book-1/appendix/` is a carried archive, and the book's exempt elements
 remain three.)
 
+**Superseded in part 2026-09-24, not yet implemented (D2 and D3 of *The revision
+rulings D1–D9*):** each derived chapter will close with one labelled argument
+section, and documented cases may also appear in the opening, a labelled case
+opening each Part, and those argument sections. The flat register, the ban on
+inner lives and the refusal of composite citizens and dramatised scenes stand.
+
 **Superseding prose-supply protocol — author-approved 2026-08-20.** Sessions may
 draft the Book 1 manuscript, including its epigraph, opening note, numbered
 chapters, Part V, and method, plus the launch essay and Book 1 companion prose.
@@ -2611,6 +2730,12 @@ families carry it on every completion, `ECONOMIC-CONSTITUTION` and `STATE-FORM`
 predate it and carry it on none, and `AMENDMENT-ENACTMENT` is partial. Those
 three sets are asserted by membership, so retrofitting an older family is
 welcome but is a ruled change that has to move its contract card too.
+
+**Narrowed 2026-09-24, not yet implemented (D6 of *The revision rulings
+D1–D9*):** an act that only gives or preserves something for its subject will
+take effect on one authorised actor, with prompt independent review able to
+correct it. Appointments giving power over another person and every adverse act
+keep full prior procedure. Item 43 revises the check into the ruled property.
 
 **The asymmetries, and which are formal.** Recognition is optional, binary,
 non-ranked and non-operative — checked, by arity, by no reader, by no self-join.
@@ -3431,6 +3556,11 @@ winner — the re-measurement the 2026-08-17 ruling required is recorded by
 method in the record. Controlling record:
 `book-1/appendix/decisions/child-with-nobody-decision.md`.
 
+**Criterion narrowed 2026-09-24, not yet implemented (D5 of *The revision
+rulings D1–D9*):** the section returns where the one-entry record produces a
+different or instructive result, not wherever the rule can run, and each removal
+is recorded as an exemption with its reason.
+
 **R2 — Names.** Book 1 keeps *The Rights Nobody Has to Earn* and now speaks
 it. **Book 2 is *What It Would Take*.** Both names are used in every exempt
 element, the front matter, the READMEs, both trackers and the appendix;
@@ -3460,6 +3590,12 @@ tests enforce it; the stratification remains the derivation record. Chapter
 numbers in rulings dated before 2026-09-16 are pre-reorder and are not
 rewritten; the applied maps under `tools/maps/` are the key. Controlling
 record: `book-1/appendix/decisions/reading-order-and-appendix-decision.md`.
+
+**Chapter table superseded 2026-09-24, not yet implemented (D7 of *The revision
+rulings D1–D9*):** Chapters 1 and 2, 9 and 10, and 23, 25 and 26 merge; Chapter
+13 splits; two chapters are added; and the reference material moves to the back.
+The refusal to merge Voiding with Clawback is superseded. The ordering rule
+stands.
 
 **R4 — The appendix is a carried archive, not a fourth channel.** *(Landed
 2026-09-17 with the move; confirmed by measurement 2026-09-18 — the
@@ -5330,22 +5466,25 @@ The repo is deliberately **mixed-licence** — see `LICENSING.md` before adding 
 - `manifesto.md` — a companion manifesto, structurally independent of the book.
 - `tmp.txt` — the author's scratch notes/instructions for the section currently being drafted; absent when nothing is in flight. Read it for context on what's in progress; don't treat it as book content.
 
-- `TODO.md` — the ordered revision backlog requested on 2026-09-18 after the
-  manuscript review, covering substantive corrections, evidence, editing and
-  publication preparation, **completed 2026-09-20**. All twenty items landed;
-  their decisions and validation are recorded above and the final assessment
-  is in `reviews/2026-09-20-final-manuscript-review.md`. Completion does not
-  declare Book 1 released or activate Book 2.
-  Its predecessor was **retired 2026-09-18, its work complete** (git retains
-  it): the ordered tracker for the 2026-09-16 rebuild of Book 1, placing the
-  child with nobody at the heart, engines before breaks, every family rendered, both books
-  named, and the former `new-book-plans/` merged under `book-1/`. Every item
-  landed. What it produced is recorded where it belongs rather than in a work
-  list — the seven rulings and their supersession notes in *The rebuild of Book
-  1* above, the design in the two controlling decision records under
-  `book-1/appendix/decisions/`, the chapter table in `book-1/contents.json`,
-  and the standing measurements under R3 and R6. The root tracker it replaced
-  was retired the same way on 2026-09-16.
+- `TODO.md` — the ordered revision backlog created 2026-09-24 from the outside
+  [revision plan](new-reviwes/revision-plan-9.5.md) and its prose lint. Its items
+  34–66 continue the numbering of the completed items 01–33, and the author's
+  rulings on its reserved questions are recorded in *The revision rulings D1–D9*
+  above.
+  Its predecessor, the backlog requested on 2026-09-18 after the manuscript
+  review, completed items 01–20 on 2026-09-20 and items 21–33 on 2026-09-21; the
+  final assessment is in `reviews/2026-09-21-final-manuscript-review.md`.
+  Completion did not declare Book 1 released or activate Book 2. The tracker
+  before that was **retired 2026-09-18, its work complete** (git retains it):
+  the ordered tracker for the 2026-09-16 rebuild of Book 1, placing the child
+  with nobody at the heart, engines before breaks, every family rendered, both
+  books named, and the former `new-book-plans/` merged under `book-1/`. What it
+  produced is recorded where it belongs rather than in a work list — the seven
+  rulings and their supersession notes in *The rebuild of Book 1* above, the
+  design in the two controlling decision records under
+  `book-1/appendix/decisions/`, the chapter table in `book-1/contents.json`, and
+  the standing measurements under R3 and R6. The root tracker it replaced was
+  retired the same way on 2026-09-16.
 - `book-2/TODO.md` — Book 2's own tracker, collection-only until Book 1 — First
   Edition actually ships at Gate C. Collect there; rule in this file.
 - `book-1/appendix/` — the planning record carried with the book (R4/R5 of *The
@@ -5423,9 +5562,9 @@ Note the manifesto's heading convention differs deliberately from the book's: it
 
 **book-1 (the new book) — titled *The Rights Nobody Has to Earn*:**
 
-- **The current formal floor is eight rights**, spelled `entitled(every person, event { P() })`, and its protection is a **compile-time prohibition**: a rule punishing someone for lacking a floor right is refused by the stratifier. The floor is protected *because* it is reachable — it sits inside the `prisoner` cone. This is the verified kernel, not the final social taxonomy under the 2026-08-03 mandate; any expansion still needs a completed map contract and formal proof. Do not restate the older claim that "nothing derives it, so nothing can retract it"; that had the mechanism backwards.
+- **The current formal floor is eight rights**, spelled `entitled(every person, event { P() })`, and its protection is a **compile-time prohibition**: a rule punishing someone for lacking a floor right is refused by the stratifier. The floor is protected *because* it is reachable — it sits inside the `prisoner` cone. This is the verified kernel, not the final social taxonomy under the 2026-08-03 mandate; any expansion still needs a completed map contract and formal proof. Do not restate the older claim that "nothing derives it, so nothing can retract it"; that had the mechanism backwards. **Ratified 2026-09-24, not yet implemented (D8 of *The revision rulings D1–D9*):** `secure` splits into bodily safety and material security, making nine items, once the coverage-map contract, refusal pins and formal proof land in item 44.
 - **The current formal duty-bearer is a thin constitutional layer** — an agent with real taxing and inter-community equalisation power, carefully limited. Mutual covenants was rejected because the constitution has no membership concept and covenants would gate the floor on one; naming-the-gap was rejected as evasion of a solved question. The book concedes coercion plainly and states its social-democratic ends outright — the novelty is the constraint mechanism, not the absence of a provider. Under the 2026-08-03 mandate, this is not the final public-branch or remedy architecture.
-- **The title is *The Rights Nobody Has to Earn*, subtitled *A design for a society worked out to the point where it catches its own failures*.** Not "utopia" — the word invites the naive-utopianism dismissal and belongs to the legacy book. **The title is chosen for legibility to a stranger, and that outranks elegance.** Two predecessors are dead and neither should be revived. *"Eight things every person is owed, and why no law can take them away"* carried two overclaims: "no law can take them away" is verified false — the refusal covers **imprisonment** and stops there, and a law voiding your credibility or docking your recognition for lacking a floor right loads fine (`04-what-you-are-owed.pins.nibli:52-57`) — and a count on a cover is the most permanent counted claim the project could make, in the one place it can never be revised chapter by chapter; the floor has already been six, then ten, then eight. *"Nothing Has to Happen First"* was accurate, survived every constraint, and failed the only test nobody had run: a stranger reads it and cannot tell what the book is about. **Test any future candidate on a reader who knows nothing, before testing it on the constraints.** Two things in the current wording are load-bearing and must not be tidied: **"nobody"**, because the universality is the thesis (`08:94`) — the same reason the dead subtitle needed "every person" rather than "you"; and **"catches its own failures"**, because "rights" is a settled noun that implies these things hold in practice and the book's second half is that they mostly do not. Drop that clause and the title overclaims. Do not restore *"and where the protection stops"* alongside "rights" — it says what "rights" already says.
+- **The title is *The Rights Nobody Has to Earn*, subtitled *A design for a society worked out to the point where it catches its own failures*.** Not "utopia" — the word invites the naive-utopianism dismissal and belongs to the legacy book. **The title is chosen for legibility to a stranger, and that outranks elegance.** Two predecessors are dead and neither should be revived. *"Eight things every person is owed, and why no law can take them away"* carried two overclaims: "no law can take them away" is verified false — the refusal covers **imprisonment** and stops there, and a law voiding your credibility or docking your recognition for lacking a floor right loads fine (`04-what-you-are-owed.pins.nibli:52-57`) — and a count on a cover is the most permanent counted claim the project could make, in the one place it can never be revised chapter by chapter; the floor has already been six, then ten, then eight. *"Nothing Has to Happen First"* was accurate, survived every constraint, and failed the only test nobody had run: a stranger reads it and cannot tell what the book is about. **Test any future candidate on a reader who knows nothing, before testing it on the constraints.** Two things in the current wording are load-bearing and must not be tidied: **"nobody"**, because the universality is the thesis (`08:94`) — the same reason the dead subtitle needed "every person" rather than "you"; and **"catches its own failures"**, because "rights" is a settled noun that implies these things hold in practice and the book's second half is that they mostly do not. Drop that clause and the title overclaims. Do not restore *"and where the protection stops"* alongside "rights" — it says what "rights" already says. **Subtitle superseded 2026-09-24 (D1 of *The revision rulings D1–D9*):** it becomes *A worked design for a society, with its formal claims made executable.* The author chose it knowing this entry's warning about the dropped clause. The title and the test on a stranger stand.
 - **"Standing" is reserved for universal personhood; the office sense is "public
   answerability"** — renamed book-wide 2026-08-18 (`13d0a7e`). The state-form and
   family/life-course rulings reserve the word, and the bodies specification already
@@ -5819,6 +5958,10 @@ Note the manifesto's heading convention differs deliberately from the book's: it
   disposition is superseded.** Its location rule remains: `method.md` is
   excluded from the ordinary-life passage channel despite being one of the three
   exempt elements, because its scope is sealed, not because it is less exempt.
+  **Superseded in part 2026-09-24, not yet implemented (D2 of *The revision
+  rulings D1–D9*):** each derived chapter will close with one labelled
+  first-person argument section, so the seam moves inside the chapter rather
+  than disappearing. Derived sections stay flat and derived.
 
 - **The method part's scope is sealed — `book-1/method.md`, landed 2026-08-03.** Five
   decisions, each load-bearing: **(a) the filename is unnumbered and must never be
@@ -6019,8 +6162,8 @@ Note the manifesto's heading convention differs deliberately from the book's: it
 
 - **Two severity refusals, both on lexical/structural grounds rather than taste.** **Directness is refused**: the committed corpus has exactly five relations with a `victim` place — `attack`, `bad`, `cruel`, `dangerous`, `injure` — and none means "directly"; `cause` (rinka) compiles but puts the person in the *effect* slot and is true of every injury in the cast, so as a boolean it routes nothing. Do not re-propose without a corpus name that carries the meaning. **Graded tiers are refused**: `building(MedSec, $x)` compiles and the constant is free, but `building/2` has no exclusivity constraint. Its relation-wide closure blocks direct ground assertions; it does not stop rules from deriving two placements for an offender matching two combinations, and `err(_, Placement)` is blind to that conflict at runtime. The full verifier's generated placement audit rejects a conflicting source outcome when run; it does not give the deployed society a reader or remedy. A graded outcome needs a mutual-exclusion marker built in the same edit.
 - **Never route a constitutional judgment through the compute backend**, and the reason is not performance. An external predicate is a **trusted oracle, not something nibli proves**: a `true` reply is auto-asserted as a ground fact mid-query and never re-derived or checked (nibli `README.md:18`, and the *Trust boundary* callout in its compute-backend section — **cite that one by its heading, not a line number**; the citation has rotted twice, `:333` then `:323`, and is `:325` today). So a grade, tier or severity computed there enters the record as *a conclusion someone wrote*, which is exactly what chapter 1 says this design makes impossible. Embedding the backend changes who operates the oracle, not whether the result is derived. **Built-in arithmetic is different on trust and identical on lifecycle** — `product`/`sum`/`quotient` are computed locally with no third party, but the arithmetic fast path calls the same `assert_typed_fact`, so they leave the same untracked ground fact; "carries none of the oracle problem" is true of trust only. Two engine behaviours worth stating precisely because the earlier wording overstated both: an unreachable backend yields `UNKNOWN(BackendUnavailable)` and never `FALSE`, but a tuple already computed in that session still answers TRUE from the auto-asserted fact — an outage-*cache*, not a stall. And a universal over a number-bearing predicate is still vacuously true. It is **sometimes** no longer silent, and the earlier wording here overstated that twice. Since nibli `95cba22` a `[Domain]` note fires — but only where the restricting relation is **asserted**; put one rule in between and it goes quiet again (their corrected repro: `sum(every dog, 2, 2)` notes, the one-hop twin `sum(every animal, 2, 2)` does not). And **neither the note nor the proof step is reachable from `nibli-pin`**, which is the only binary this repo runs — verified 2026-08-01, no flag exposes it, and `nibli-host` still fails outright on a stale wasm. So treat the diagnostic as absent here, not as a safety net. What actually contains this is that there is nothing numeric to quantify over. The digit ban that kept it that way was a `verify.sh` section the 2026-09-12 decision retired; it is re-established as the development test `floor_vector_tests::nothing_in_the_enacted_lines_is_a_quantity`, which is negative-controlled and, being a development test, adds no gate to verification. Compute is legitimate for the claim registry and the method part; never for the society's own conclusions.
-- **Chapter order is editorial — superseded 2026-09-16.** The sentence that stood here, "strictly computed, never chosen", was never true of the repository: `3-spine.md` generates the stratification and hand-lists the chapters, and the runtime order is the filename prefix. The rule is now *engines before breaks*, recorded in `book-1/contents.json` and enforced by development tests (R3 of *The rebuild of Book 1*). Exactly three elements remain exempt from the derivation gate and each is labelled in the text: the opening note, Part V, and the final method part.
-- **The length invariant is "book-1 stays majority-derived, measured across the whole book"** — the derived chapters must outweigh the opening note plus Part V plus the method part, combined. **The ~38,000 target for Parts I–IV is retired — ruled 2026-08-03: content governs.** The book's length is an outcome, not a goal: expansion happens only where verified-untold material exists (TRUE in the engine, absent from prose), and every non-derived part landed under its old budget by exactly that rule (Part V ~5,500 against ~12,000; the method part ~4,100 against ~5,000). Figures are hand-maintained and go stale — re-run `wc -w book-1/*.md` before trusting any; measured 2026-08-03: derived 29,440 against 10,545 non-derived, the invariant holding with a wide margin. Do **not** restate the old cap — *"~14,500 against ~36,000 derived keeps it near 29%"* — and do not restate the retired 38,000 as a target; both belong to git history now. Since 2026-09-16 the measurement covers the ordered inputs only: `book-1/appendix/` and `book-1/source/` are outside it (R4).
+- **Chapter order is editorial — superseded 2026-09-16.** The sentence that stood here, "strictly computed, never chosen", was never true of the repository: `3-spine.md` generates the stratification and hand-lists the chapters, and the runtime order is the filename prefix. The rule is now *engines before breaks*, recorded in `book-1/contents.json` and enforced by development tests (R3 of *The rebuild of Book 1*). Exactly three elements remain exempt from the derivation gate and each is labelled in the text: the opening note, Part V, and the final method part. **From 2026-09-24, once implemented (D2 of *The revision rulings D1–D9*):** each derived chapter's closing argument section is a labelled exempt section as well.
+- **The length invariant is "book-1 stays majority-derived, measured across the whole book"** — the derived chapters must outweigh the opening note plus Part V plus the method part, combined. **The ~38,000 target for Parts I–IV is retired — ruled 2026-08-03: content governs.** The book's length is an outcome, not a goal: expansion happens only where verified-untold material exists (TRUE in the engine, absent from prose), and every non-derived part landed under its old budget by exactly that rule (Part V ~5,500 against ~12,000; the method part ~4,100 against ~5,000). Figures are hand-maintained and go stale — re-run `wc -w book-1/*.md` before trusting any; measured 2026-08-03: derived 29,440 against 10,545 non-derived, the invariant holding with a wide margin. Do **not** restate the old cap — *"~14,500 against ~36,000 derived keeps it near 29%"* — and do not restate the retired 38,000 as a target; both belong to git history now. Since 2026-09-16 the measurement covers the ordered inputs only: `book-1/appendix/` and `book-1/source/` are outside it (R4). **From 2026-09-24, once implemented (D2 of *The revision rulings D1–D9*):** measured by section, derived sections against everything argued or exempt.
 
 **Legacy `book.md` (below) — historical; do not port these into book-1 without re-checking them against the constitution:**
 

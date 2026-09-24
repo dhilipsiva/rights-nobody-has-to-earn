@@ -9,6 +9,19 @@
 > itself; the tracker items that implement it are listed in §8. Where this
 > record and `CLAUDE.md` diverge, this record controls.
 
+## Revision ruling D5 — 2026-09-24
+
+The author's ruling D5 on the revision tracker (recorded in `CLAUDE.md` under
+*The revision rulings D1–D9*) narrows the third element of §2's ruling. The
+closing test section returns in a chapter where the one-entry record produces a
+different or instructive result, not in every engine chapter that can run the
+rule. Chapter 1 stays the case, the opening argument and the pairing with the
+prisoner stand, and the fixture stays one line. Each chapter that loses its
+section joins `CHILD_SLOT_EXEMPT` in `src/authoring/reader_coverage_tests.rs`
+with its reason, such as a result that repeats another chapter's, so
+`every_derived_chapter_runs_the_child_or_says_why_not` still decides membership.
+The ruling is ratified but unimplemented until TODO items 52 and 54–57 land.
+
 ## 1. What the author said
 
 The instruction of 2026-09-16, in the author's own words:

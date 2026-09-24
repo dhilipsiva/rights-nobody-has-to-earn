@@ -2,6 +2,42 @@
 
 # Book 1 Reading Order, Names, and the Appendix
 
+## Revision rulings D1, D4 and D7 — 2026-09-24
+
+The author ruled on the revision tracker's reserved questions on 2026-09-24;
+`CLAUDE.md` records all nine under *The revision rulings D1–D9*. Three bear on
+this decision. Each is ratified but unimplemented until its TODO item lands.
+
+**D1 — the subtitle, the reader and the promise (§2's names).** The title is
+unchanged. Book 1's subtitle becomes *A worked design for a society, with its
+formal claims made executable.*, superseding the subtitle in `CLAUDE.md`'s title
+ruling. The primary reader is the serious non-specialist, with lawyers and
+policymakers second. The first page and back cover carry: *"A constitution
+designed from the person with nothing, argued in plain language, with every rule
+published so you can test it."* Items 60 and 64.
+
+**D4 — the constitution in plain language, in the companion (§3).** Numbered
+plain-language articles are published in the companion, not printed in the book,
+and chapters cite article numbers. The articles trace to the rule families,
+contracts and pins that implement them. R4 is unchanged, and the formal source
+stays outside the book's ordered inputs. The method stays the book's technical
+appendix within its sealed scope. The articles include an interpretation
+article. Its burden half (a restrictive conclusion needs complete positive
+evidence, and absence never extends a power) traces to existing fail-closed
+rules and their pins. Its protective-reading half (where a standard is open, the
+reading more protective of the floor and of liberty prevails) is a declared
+non-formal article, listed as a deliberate traceability gap. Items 61 and 62.
+
+**D7 — the structure (§1 and §6).** The chapter table becomes the revision
+plan's. Chapters 1 and 2, 9 and 10, and 23, 25 and 26 merge; Chapter 13 splits
+into commons and animals; "An Ordinary Week" joins Part II and "Where This Could
+Fail" joins Part V; and the map, glossary, roles and subject index move to the
+back matter beside the method, so that at most five pages precede Chapter 1.
+This supersedes §6's refusal to merge Voiding with Clawback: its mechanical
+reason, the unscoped `:accept` closing chapter 25's pins, is met by ordering the
+merged pins so that it comes last. The ordering rule of §1 stands. Item 53
+carries the manifest, relocation and test changes the structure needs.
+
 ## Choices before the institutional detail — item 25, 2026-09-21
 
 The exact current [opening note](../../00-opening-note.md), its argument map

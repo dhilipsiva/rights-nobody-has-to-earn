@@ -2,6 +2,18 @@
 
 # Book 1 Ecological, Future-Generation, Commons, and Non-Human-Animal Decision
 
+**Revision ruling D9, 2026-09-24.** The author's ruling D9 on the revision
+tracker (recorded in `CLAUDE.md` under *The revision rulings D1–D9*) keeps the
+animal core as enacted: direct protected-subject status, the prohibition of
+severe avoidable suffering, and the prohibition of killing solely for one of the
+dispensable purposes the formal source lists. The alternative-sensitive food
+rule stays ordinary amendable constitutional law bounded by that core, so a food
+purpose cannot license avoidable suffering, and the amendment gate continues to
+read breach findings for those three elements only. TODO item 58 defines "direct
+protection", "avoidable" and "dispensable" on that basis and argues the result,
+with its implications for farming, household production, subsistence and
+culture. Nothing in this decision is superseded.
+
 **Entrenchment argument — item 24, 2026-09-21.** The exact
 [Part V protected-core argument](../../31-the-five-joints.md#what-a-majority-may-not-remove)
 is session-drafted and author-approved under the standing delegated approval.

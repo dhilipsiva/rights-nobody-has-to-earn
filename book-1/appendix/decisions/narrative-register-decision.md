@@ -2,12 +2,41 @@
 
 # Book 1 Narrative Register Decision
 
-> **Status: author-ratified on 2026-08-08; amended through 2026-09-21.**
+> **Status: author-ratified on 2026-08-08; amended through 2026-09-24.**
 > The dated rulings below govern the current opening, epigraph and Part V
 > passage and its treatment of criticism. The register, trace, location and evidence rules
 > remain binding. Section 15's separate approval pauses are superseded by the
 > author's standing delegated approval of 2026-09-13. Earlier dispositions,
 > including `OL-15-v1` in section 7a, remain visible as history.
+
+## Revision rulings D2 and D3 — 2026-09-24
+
+The author ruled on the revision tracker's reserved questions on 2026-09-24;
+`CLAUDE.md` records all nine under *The revision rulings D1–D9*. Two bear on
+this decision. Both are ratified but unimplemented until TODO items 53–60 land;
+until then the channels below describe the edition.
+
+**D2 — an argument section in every derived chapter.** Each derived chapter
+keeps its pinned, flat account and ends with one labelled, first-person argument
+section: the reason for the rule, the strongest alternative with its evidence,
+and what would change the choice. Part V becomes a synthesis. For argument only,
+this supersedes §5's closure of derived chapters to non-derived content and
+§1a's refusal of labelled boxes inside derived chapters, together with the
+voice-boundary limit of the author's first person to three elements. The
+register of the derived sections stays flat, no record-person gains an inner
+life, and composite citizens, invented antagonists and dramatised cast scenes
+remain refused. The ordinary-life passage keeps its location rule. An argument
+section argues for rules its chapter's derived sections state: no claim about
+what the design does first appears there, every empirical claim carries a
+registry source, and no argument creates a right, power or exception.
+
+**D3 — documented cases outside Part V.** Documented, registry-sourced cases may
+appear in the opening (Santoshi Kumari first, with the dispute over her death
+intact), in a short labelled case opening each Part, and in argument sections.
+This supersedes the rule that the historical cases stay in Part V. They never
+appear in a derived section, they remain evidence about other societies rather
+than a substitute for derived ordinary life, and no case gains an invented inner
+life.
 
 ## Final sequential review — item 33, 2026-09-21
 

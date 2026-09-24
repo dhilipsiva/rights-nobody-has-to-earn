@@ -3,16 +3,20 @@
 ## Authority, Scope & Structure
 
 `CLAUDE.md` describes the project. Read it before work. The root `TODO.md`
-is the ordered revision backlog requested on 2026-09-18 after the manuscript
-review. The 2026-09-16 rebuild completed on 2026-09-18 and its earlier tracker
-was retired, with the rulings, measurements and chapter table recorded in
+is the ordered revision backlog created on 2026-09-24 from the outside revision
+plan in `new-reviwes/`; its predecessor, requested on 2026-09-18, is complete.
+The author's rulings D1–D9 of 2026-09-24 on that backlog's reserved questions
+are recorded in `CLAUDE.md` and are ratified but not yet implemented. The
+2026-09-16 rebuild's rulings, measurements and chapter table are recorded in
 `CLAUDE.md` and `book-1/contents.json`. `book-2/TODO.md` is Book 2's tracker
 and is collection-only until Book 1 ships at Gate C.
 The constitution and substantive Nibli pins live under `book-1/source/`;
 `book-1/` is their reader projection, with chapter/pin pairs. Its labelled
-opening note, Part V, and method are the non-derived exceptions. Book 2 remains
-inactive until Gate C and owns operation and transition. Preserve the legacy
-manuscripts until their TODO harvest. Keep epigraph and method unnumbered.
+opening note, Part V, and method are the non-derived exceptions until ruling
+D2's items land; each derived chapter then closes with one labelled argument
+section. Book 2 remains inactive until Gate C and owns operation and
+transition. Preserve the legacy manuscripts until their TODO harvest. Keep
+epigraph and method unnumbered.
 `ui/` is the Book 1 reader and live companion, published at
 https://dhilipsiva.dev/rights-nobody-has-to-earn/ by the separate website
 repository from this repository's `main`; derived chapters never name it.
