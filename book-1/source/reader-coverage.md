@@ -52,7 +52,7 @@ carried in single figures, which is where the rebalance has most to do.
 | works | 11 |
 | associates | 6 |
 | requests | 8 |
-| receives | 76 |
+| receives | 77 |
 | challenges | 25 |
 | governs | 34 |
 | is acted upon | 72 |
@@ -65,7 +65,7 @@ what matters is the book's shape, not the chapter's.
 
 | Pattern | Passages |
 | --- | ---: |
-| constructive | 93 |
+| constructive | 94 |
 | private-civic | 28 |
 | democratic | 35 |
 | coercive | 46 |
@@ -91,7 +91,7 @@ checked here.
 | Knowledge, communication and culture | 3 | 2 | 3 |
 | Life course, family, care and reproduction | 12 | 4 | 8 |
 | Locality, mobility and external relations | 2 | 2 | 3 |
-| Material floor | 10 | 20 | 20 |
+| Material floor | 10 | 21 | 20 |
 | Non-human animals | 1 | 1 | 1 |
 | Personhood and equality | 20 | 10 | 15 |
 | Public institutions | 11 | 10 | 14 |
@@ -155,6 +155,7 @@ checked here.
 | 07-13 | 07-who-owes-and-what-follows.md | When the actor is a protective power | Public safety, policing and use of force | PUBLIC-SAFETY | continuity | unlawful force, and a record that was never written | is acted upon | fails | yes | coercive | `book-1/07-who-owes-and-what-follows.pins.nibli` |
 | 07-14 | 07-who-owes-and-what-follows.md | When the finding is about conditions or an animal | Ecology, future generations and commons | ECOLOGICAL-ANIMAL | continuity | a defective ecological record and an animal needing care | challenges | continuity-remedy | no | constructive | `book-1/07-who-owes-and-what-follows.pins.nibli` |
 | 07-15 | 07-who-owes-and-what-follows.md | The duty to begin without a request | Material floor | OBLIGATIONS | protective | a person nobody has come for | receives | works | yes | constructive | `book-1/07-who-owes-and-what-follows.pins.nibli` |
+| 07-18 | 07-who-owes-and-what-follows.md | When failure is general | Material floor | ARTICLES | both | a certified pattern of shortfalls by a publicly answerable tier leads to a declaration, a public plan, monitoring and interim measures | receives | continuity-remedy | no | constructive | `book-1/07-who-owes-and-what-follows.pins.nibli` |
 | 07-16 | 07-who-owes-and-what-follows.md | The child with nobody | Material floor | OBLIGATIONS | protective | birth-only duties, then a bystander's observation opening review | receives | unresolved | no | constructive | `book-1/07-who-owes-and-what-follows.pins.nibli` |
 | 07-17 | 07-who-owes-and-what-follows.md | Duties still need performance | Records and accountability | OBLIGATIONS | protective | the boundary where the lifecycle stops being evidence | receives | unresolved | no | records | `book-1/07-who-owes-and-what-follows.pins.nibli` |
 | 08-00 | 08-what-nobody-has-to-ask-permission-for.md | (preamble) | Knowledge, communication and culture | KNOWLEDGE-AND-FREE-FIELD | ordinary | the free field, and what narrowing it has to establish | chooses, creates, associates | works | yes | private-civic | `book-1/08-what-nobody-has-to-ask-permission-for.pins.nibli` |

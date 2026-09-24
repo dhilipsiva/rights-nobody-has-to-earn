@@ -29,7 +29,7 @@
 # WHAT FALSE MEANS HERE: a FALSE is pinned only where the KB could have said
 # TRUE, and the comment says what would flip it.
 
-:expect-pins 30
+:expect-pins 45
 
 # ── "Public responsibility around it takes distinct forms." ────────────────
 # Respect, protection, fulfilment, continuity, remedy — one typed duty each.
@@ -147,5 +147,96 @@ observe(Bystander, NellAlone, Nell, UninitiatedAssistanceScope).
 # => TRUE
 ? owe(State, Healthy, ScarcityWaitingClaimant).
 # => TRUE
+? healthy(ScarcityWaitingClaimant).
+# => FALSE
+
+# ── When failure is general (revision item 38) ─────────────────────────────
+# "A pattern arrives as an independently certified finding about a publicly
+#  answerable tier, never a count and never a finding about a person." Fresh
+#  constants, so no cast verdict moves.
+public(NorthProvision).
+authorized(PatternSource, FloorShortfallPatternSourceAuthority, Pattern_North).
+authorized(PatternReviewer, IndependentFloorShortfallPatternReviewAuthority, Pattern_North).
+observe(PatternSource, Pattern_North, NorthProvision, FloorShortfallPatternTierScope).
+observe(PatternReviewer, Pattern_North, NorthProvision, FloorShortfallPatternTierScope).
+
+? obliged(FSBOD_18, DecideWhetherTheCertifiedFloorShortfallIsAnUnconstitutionalStateOfAffairs, Pattern_North).
+# => TRUE
+
+# Certification alone obliges no plan: the Constitutional Court decides first.
+? obliged(FSBOD_02, AdoptAPublicPlanWithReasonsDeadlinesAndASourceBoundEnd, Pattern_North).
+# => FALSE
+
+# "Its declaration obliges the Assembly to adopt a public plan with reasons,
+#  deadlines and a source-bound end, the failing tier to carry it out, and the
+#  audit body to monitor it and publish the follow-up."
+authorized(FSBOD_18, UnconstitutionalStateOfAffairsDeclarationAuthority, Pattern_North).
+observe(FSBOD_18, Pattern_North, NorthProvision, UnconstitutionalFloorShortfallDeclarationScope).
+
+? obliged(FSBOD_02, AdoptAPublicPlanWithReasonsDeadlinesAndASourceBoundEnd, Pattern_North).
+# => TRUE
+? obliged(NorthProvision, CarryOutThePublicPlanForTheCertifiedShortfall, Pattern_North).
+# => TRUE
+? obliged(FSBOD_19, MonitorThePlanAndPublishTheFollowUp, Pattern_North).
+# => TRUE
+? obliged(FSBOD_18, OrderInterimMeasuresSecuringTheMinimumWithoutAdministeringTheService, Pattern_North).
+# => FALSE
+
+# "If the monitor and a separate reviewer certify that the Assembly has not
+#  adopted a plan, the Court owes interim measures that secure the minimum
+#  without administering the service, and the treasury owes the minimum the
+#  first claim on funds."
+authorized(FSBOD_19, FloorPlanNonresponseSourceAuthority, Pattern_North).
+authorized(PlanReviewer, IndependentFloorPlanNonresponseReviewAuthority, Pattern_North).
+observe(FSBOD_19, Pattern_North, FSBOD_02, FloorPlanNonresponseScope).
+observe(PlanReviewer, Pattern_North, FSBOD_02, FloorPlanNonresponseScope).
+
+? obliged(FSBOD_18, OrderInterimMeasuresSecuringTheMinimumWithoutAdministeringTheService, Pattern_North).
+# => TRUE
+? obliged(FSBOD_07, GiveTheFloorMinimumTheFirstClaimOnFunds, Pattern_North).
+# => TRUE
+
+# A tier cannot certify its own pattern.
+public(SouthProvision).
+authorized(SouthProvision, FloorShortfallPatternSourceAuthority, Pattern_South).
+authorized(PatternReviewer, IndependentFloorShortfallPatternReviewAuthority, Pattern_South).
+observe(SouthProvision, Pattern_South, SouthProvision, FloorShortfallPatternTierScope).
+observe(PatternReviewer, Pattern_South, SouthProvision, FloorShortfallPatternTierScope).
+
+? obliged(FSBOD_18, DecideWhetherTheCertifiedFloorShortfallIsAnUnconstitutionalStateOfAffairs, Pattern_South).
+# => FALSE
+
+# One attester alone certifies nothing.
+authorized(PatternSource, FloorShortfallPatternSourceAuthority, Pattern_Lone).
+observe(PatternSource, Pattern_Lone, NorthProvision, FloorShortfallPatternTierScope).
+
+? obliged(FSBOD_18, DecideWhetherTheCertifiedFloorShortfallIsAnUnconstitutionalStateOfAffairs, Pattern_Lone).
+# => FALSE
+
+# A declaration without a certified pattern obliges no plan.
+authorized(FSBOD_18, UnconstitutionalStateOfAffairsDeclarationAuthority, Pattern_Bare).
+observe(FSBOD_18, Pattern_Bare, NorthProvision, UnconstitutionalFloorShortfallDeclarationScope).
+
+? obliged(FSBOD_02, AdoptAPublicPlanWithReasonsDeadlinesAndASourceBoundEnd, Pattern_Bare).
+# => FALSE
+
+# "Never a finding about a person." A pattern naming someone who holds no
+# public answerability certifies nothing and gives that person no duty.
+authorized(PatternSource, FloorShortfallPatternSourceAuthority, Pattern_Person).
+authorized(PatternReviewer, IndependentFloorShortfallPatternReviewAuthority, Pattern_Person).
+observe(PatternSource, Pattern_Person, Bela, FloorShortfallPatternTierScope).
+observe(PatternReviewer, Pattern_Person, Bela, FloorShortfallPatternTierScope).
+authorized(FSBOD_18, UnconstitutionalStateOfAffairsDeclarationAuthority, Pattern_Person).
+observe(FSBOD_18, Pattern_Person, Bela, UnconstitutionalFloorShortfallDeclarationScope).
+
+? authority(Bela).
+# => FALSE
+? obliged(FSBOD_18, DecideWhetherTheCertifiedFloorShortfallIsAnUnconstitutionalStateOfAffairs, Pattern_Person).
+# => FALSE
+? obliged(Bela, CarryOutThePublicPlanForTheCertifiedShortfall, Pattern_Person).
+# => FALSE
+
+# A plan duty is not provision: the waiting claimant's care remains owed and
+# undelivered.
 ? healthy(ScarcityWaitingClaimant).
 # => FALSE

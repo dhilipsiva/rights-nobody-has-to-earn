@@ -118,7 +118,9 @@ finding before another office takes over.
 A positively established non-response activates the separated alternate and the
 continuity route. If that alternate also fails, naming it has not completed the
 remedy. The bounded chain ends with duties still owed; it does not create an unlimited
-series of substitute offices. Failure grants neither office additional authority and
+series of substitute offices. A failure that recurs across a whole tier takes the
+general route in Chapter 7: a certified pattern, a declaration, a public plan and
+interim measures. Failure grants neither office additional authority and
 does not take the subject's standing or floor. These are limits on the legal effects
 of non-response, not evidence of an adequate response.
 

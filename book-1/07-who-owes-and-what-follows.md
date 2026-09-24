@@ -223,6 +223,32 @@ Neither a request nor the existence of the duty proves it was discharged.
 The duty to begin does not establish a funded advocate, an appointment or
 help reaching the person.
 
+## When failure is general
+
+A claim nobody answers ends with a recorded duty nobody has discharged. That
+answers one ignored claim, while a region under-providing food for a year needs
+a different route. Scale is handled through a certified finding about the
+failing tier; the rules count nothing and find nothing about any person.
+
+A source and a separate independent reviewer, both distinct from the failing
+tier, must record the same publicly answerable tier. The Constitutional Court
+then owes a decision on whether the pattern is an unconstitutional state of
+affairs. A plan waits for that decision, and a tier cannot certify its own
+pattern.
+
+A declaration obliges the People's Assembly to adopt a public plan with reasons,
+deadlines and an end fixed by its source. The failing tier must carry it out,
+and the integrity and audit body must monitor it and publish the follow-up. If
+the monitor and a separate reviewer certify that the Assembly has adopted no
+plan, the Court owes interim measures that secure the minimum while leaving the
+service to the tier, and the treasury owes the floor's minimum the first claim
+on funds.
+
+Each step is a duty and shows only that the duty is owed; the waiting person's
+care remains owed until evidence shows it arrived. A pattern that names a
+private person in place of a tier certifies nothing and gives that person no
+duty.
+
 ## The child with nobody
 
 What is publicly owed to Nell for food and shelter cannot be redirected to a

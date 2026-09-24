@@ -825,6 +825,20 @@ dependence and displaced necessary investment would count against how that
 discretion was used. Refusing a constitutional numerical ceiling supplies
 neither a sustainable debt level nor permission to ignore the evidence.
 
+When a tier under-delivers at scale, individual duties multiply without
+compelling the next act. I choose a certified pattern, a declared
+unconstitutional state of affairs, a public plan with reasons and an end,
+independent monitoring and, if the Assembly fails to act, interim measures and a
+first claim on funds. Two alternatives are weaker. Courts administering services
+themselves would fuse adjudication with execution and leave nobody to review the
+administrator. Leaving the response to ordinary politics lets a majority absorb
+a shortfall that falls on people outside it. The price is the time between
+certification and a binding plan, borne by the people going without; the common
+tier's unconditional backstop duty and the interim measures bound it, but
+neither delivers anything by itself. Evidence that declared plans are adopted no
+faster than ordinary budgets, or that interim measures displace services they
+were meant to secure, would count against this choice.
+
 ### Emergency action without suspended rights
 
 The strongest alternative permits temporary, necessary derogations, preserves

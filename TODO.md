@@ -243,32 +243,6 @@ changes it.
 
 ### Resolve the design questions, source and pins first
 
-- [ ] **38. Answer systemic non-performance.**
-
-  **Scope:** Chapters 7 and 30 and Part V; the obligations and
-  [official-statistics](book-1/appendix/contracts/official-statistics-contract.md)
-  contracts; plan §7.4.
-
-  A claim nobody answers ends at the alternate, in a recorded duty nobody has
-  discharged (item 08). That answers one ignored claim, not a State
-  under-delivering at scale. Compare
-  the plan's routes: a declared unconstitutional state of affairs that
-  triggers a public plan with deadlines and monitored follow-up (Colombia,
-  T-025 of 2004); supervisory orders with independent monitoring commissioners
-  (*PUCL v Union of India*); floor finance with first claim on
-  appropriations, under-appropriation triggering expedited review; and a
-  mandatory, reasoned Assembly response to a certified pattern. A pattern must
-  arrive as an independently certified finding in the statistics contract's
-  idiom: the rules count nothing, and no aggregate becomes a finding about a
-  person. A new route may read a certified finding, never a duty. Verify the
-  precedents under item 46 before relying on them.
-
-  **Done when:** pins run a certified pattern through a declaration, a duty
-  to adopt a public plan with reasons and a source-bound end, and independent
-  monitoring, with nonresponse, conflict and alternate routes; nothing in the
-  sequence reaches a person's standing, floor or liberty; and the chapters
-  describe the route.
-
 - [ ] **39. Guard confinement against absent entries, and price a lapse.**
 
   **Scope:** `src/authoring/floor_vector_tests.rs`, Chapters 28 and 29, and

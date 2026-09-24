@@ -2,6 +2,23 @@
 
 # Book 1 Obligations and Non-reciprocity Decision
 
+**When failure is general — item 38, 2026-09-24.** The obligation chain answers
+one ignored claim by moving the duty to a separated alternate, and ends in a
+recorded duty nobody has discharged. Six rules in Article 1b answer failure at
+scale. A source and a separate independent reviewer, neither of them the failing
+tier, must certify the same publicly answerable tier; the Constitutional Court
+then owes a decision on whether the pattern is an unconstitutional state of
+affairs. Its declaration obliges the People's Assembly to adopt a public plan
+with reasons, deadlines and a source-bound end, the tier to carry it out, and
+integrity and audit to monitor it. A certified Assembly nonresponse obliges the
+Court to order interim measures that secure the minimum without administering
+the service, and the treasury to give the minimum the first claim on funds.
+Courts administering services directly, and leaving the response to ordinary
+politics, were compared and rejected. The rules read certified findings only;
+nothing reads the duties, no pattern concerns a person, and nothing here
+establishes that a plan was adopted or anything delivered. The precedents the
+plan cites for this shape await verification under item 46.
+
 **Author-ratified 2026-08-24.** This record settles Book 1's obligation
 architecture: who may be bound, where a duty comes from, what survives breach,
 conflict, delegation, or excuse, and why no right becomes payment for performing

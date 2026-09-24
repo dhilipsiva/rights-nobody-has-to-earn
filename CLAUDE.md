@@ -133,6 +133,38 @@ reinstate the retired tooling or workflow.
 Grouped by kind. Dates in each heading are the ratification dates; a ruling
 that was later implemented or narrowed carries that supersession inline.
 
+### Item 38 — failure at scale, 2026-09-24
+
+The chain after an ignored claim ends at the alternate in a recorded duty nobody
+has discharged (item 08), which answers one claim, not a tier under-delivering
+at scale. Six rules in Article 1b now answer failure at scale without counting
+anything or finding anything about a person. A source and a separate independent
+reviewer, neither of them the failing tier, must certify the same publicly
+answerable tier (`authority($tier)`); the Constitutional Court (`FSBOD_18`) then
+owes a decision on whether the pattern is an unconstitutional state of affairs.
+Its declaration obliges the People's Assembly (`FSBOD_02`) to adopt a public
+plan with reasons, deadlines and a source-bound end, the tier to carry it out,
+and integrity and audit (`FSBOD_19`) to monitor it. A certified Assembly
+nonresponse obliges the Court to order interim measures that secure the minimum
+without administering the service, and provision and treasury (`FSBOD_07`) to
+give the minimum the first claim on funds. Each rule states the certification in
+full: an intermediate `related` conclusion reading `authority` joined the cycle
+through `contradict` and was refused at load, while `obliged` is read by
+nothing. The precedents the plan cites wait for item 46.
+
+Chapter 7 gains fifteen pins (45) covering the whole sequence, a tier's
+self-certification, a lone attester, a declaration without certification, a
+pattern naming a private person, and care that stays undelivered. Chapter 7's
+new section "When failure is general", a pointer from Chapter 30's bounded chain
+and a Part V paragraph comparing the alternatives describe the route; the exact
+prose is `session-drafted, author-approved under delegated approval
+(2026-09-13)`. The coverage ledger reaches 242 passages, and the obligations
+decision records the choice. Rules move from 7,404 to 7,410. Chapter 7's 45 pins
+pass in 12.28s (focused, partial); the reference, claim-discipline,
+reader-coverage, receipt and floor-vector development tests and the prose check
+pass. `RIGHTS_VERIFY_JOBS=4 ./verify.sh` passes 88,861 pins across 16,137 cases
+with complete contradiction checks and no findings in 1,178.59s.
+
 ### Item 37 — the shield and a disclosure made after the charge, 2026-09-24
 
 Any defendant could disclose against the prosecuting court after the charge and
