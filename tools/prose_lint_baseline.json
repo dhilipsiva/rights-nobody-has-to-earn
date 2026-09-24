@@ -56,8 +56,8 @@
     "harness": 0
   },
   "book-1/07-who-owes-and-what-follows.md": {
-    "negation": 29.5,
-    "jargon": 14.2,
+    "negation": 27.7,
+    "jargon": 13.2,
     "names": 1,
     "disclaimers": 4,
     "banned": 0,
@@ -192,8 +192,8 @@
     "harness": 1
   },
   "book-1/24-the-shield.md": {
-    "negation": 37.5,
-    "jargon": 21.1,
+    "negation": 37.3,
+    "jargon": 19.2,
     "names": 6,
     "disclaimers": 4,
     "banned": 6,
@@ -224,32 +224,32 @@
     "harness": 0
   },
   "book-1/28-where-people-are-put.md": {
-    "negation": 45.6,
-    "jargon": 17.0,
+    "negation": 44.4,
+    "jargon": 16.8,
     "names": 13,
     "disclaimers": 8,
     "banned": 1,
     "harness": 3
   },
   "book-1/29-the-one-thing-taken.md": {
-    "negation": 42.2,
-    "jargon": 15.4,
+    "negation": 42.0,
+    "jargon": 14.6,
     "names": 7,
     "disclaimers": 7,
     "banned": 6,
     "harness": 0
   },
   "book-1/30-when-the-system-notices-it-broke.md": {
-    "negation": 33.7,
-    "jargon": 17.6,
+    "negation": 33.2,
+    "jargon": 17.4,
     "names": 5,
     "disclaimers": 9,
     "banned": 3,
     "harness": 1
   },
   "book-1/31-the-five-joints.md": {
-    "negation": 25.3,
-    "jargon": 7.9,
+    "negation": 24.8,
+    "jargon": 7.6,
     "names": 2,
     "disclaimers": 17,
     "banned": 3,

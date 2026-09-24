@@ -2,6 +2,21 @@
 
 # Book 1 Time-Model Decision
 
+**A lapse is not an extension — item 39, 2026-09-24.** When the renewal that
+keeps custody current is not made, confinement under that case loses its
+authority, even after a conviction for grave injury, and nothing extends it. The
+merits stand, no release is manufactured, and the duty to arrange release
+review, which attaches to current custody, ends with it; a person still held is
+owed humane care, voice and independent review of the holding through the
+independent holding report. Two rules now owe the review that prevents an
+administrative lapse: justice and appeal (`FSBOD_17`) must review each current
+custody authority before its source-bound end, and a nonresponse certified by a
+source and a separate independent reviewer moves that review to the predeclared
+alternate constitutional panel (`FSBOD_25`). Both exist only while custody is
+current and neither is a renewal; automatic extension was refused because
+authority that continues when nobody renews it is the power this model exists to
+deny. The `custody/authority-lapse` case pins the sequence.
+
 **Final item-19 integration, 2026-09-20.** The current source passes 88,024
 pins across 16,087 cases in 1,169.06s, with complete contradiction checks and
 no findings. No active known-defect annotations remain. The focused and failed

@@ -225,32 +225,6 @@ changes it.
 
 ### Resolve the design questions, source and pins first
 
-- [ ] **39. Guard confinement against absent entries, and price a lapse.**
-
-  **Scope:** `src/authoring/floor_vector_tests.rs`, Chapters 28 and 29, and
-  Part V; plan §7.6.
-
-  No rule reads a missing home or family entry: `~home` and `~family` occur in
-  no rule, and `~parent`, `~married` and `~sibling` only in Article 4's
-  co-signer independence check. The floor firewall covers floor items only,
-  though, so a new rule confining someone for lacking a home record would
-  load, while Chapter 28 says family form, kinship, poverty and similar
-  grounds "cannot justify harsher confinement". Add a development check, with
-  a sabotage control, that no rule concluding custody, placement or severity
-  reads an absent home, family, kinship, status or wealth entry, and align the
-  chapter with exactly what is checked.
-
-  Establish and pin what follows when custody authority lapses through an
-  administrative failure, including for a person convicted of grave injury:
-  confinement loses its authority, and nothing manufactures the release
-  itself. State in Part V who bears that cost, and consider a pre-expiry
-  review duty with a predeclared alternate, never an automatic extension.
-  Staffing a priority lane is Book 2.
-
-  **Done when:** the check fails on a planted rule and passes on the source,
-  the lapse sequence is pinned, and the chapters and Part V state the current
-  consequence and its cost.
-
 - [ ] **40. Correct the scarcity account: the manager does not attest the
   comparison.**
 

@@ -133,6 +133,41 @@ reinstate the retired tooling or workflow.
 Grouped by kind. Dates in each heading are the ratification dates; a ruling
 that was later implemented or narrowed carries that supersession inline.
 
+### Item 39 — confinement guards and a lapse that is not an extension, 2026-09-24
+
+No rule reads a missing home or family entry, but the floor firewall covers
+floor items only, so a new rule confining someone for lacking a home record
+would load while Chapter 28 said such grounds "cannot justify harsher
+confinement". The development test
+`no_confinement_reads_an_absent_home_family_or_work_entry` now fails if any rule
+concluding custody (`prisoner`), placement (`fit`, `dwell`, `building`),
+severity or a restraint reads an absent `home`, `family`, `parent`, `married`,
+`sibling` or `work` entry, with three planted controls; no current rule does. It
+checks written rule forms, and Chapter 28 now states exactly what is checked.
+
+When a custody renewal is not made, confinement under that case loses its
+authority, even after a conviction for grave injury, and nothing extends it. The
+new `custody/authority-lapse` case, the severe placement fixture without its
+current renewal, pins twelve results: the merits stand, custody authority and
+confinement are absent, nothing manufactures release, the release-review duty
+ends with current custody, a person still held is owed humane care, voice and
+independent holding review through the independent holding report, and the
+renewal made in time restores custody. Two rules owe the review that prevents an
+administrative lapse: justice and appeal (`FSBOD_17`) must review each current
+custody authority before its source-bound end, and a certified nonresponse moves
+the review to the predeclared alternate constitutional panel (`FSBOD_25`).
+Neither is a renewal. Chapter 29 states the consequence and Part V who bears it;
+the time-model and public-safety decisions record both changes, and the exact
+prose is `session-drafted, author-approved under delegated approval
+(2026-09-13)`.
+
+Rules move from 7,410 to 7,412. The lapse case passes twelve pins in 11.13s
+(focused, partial); seventeen floor-vector tests and the reference,
+claim-discipline, reader-coverage and receipt tests pass, and the prose check
+passes after one Chapter 28 sentence was reworded to hold its negation figure.
+`RIGHTS_VERIFY_JOBS=4 ./verify.sh` passes 88,873 pins across 16,138 cases with
+complete contradiction checks and no findings in 1,182.16s.
+
 ### Item 38 — failure at scale, 2026-09-24
 
 The chain after an ignored claim ends at the alternate in a recorded duty nobody

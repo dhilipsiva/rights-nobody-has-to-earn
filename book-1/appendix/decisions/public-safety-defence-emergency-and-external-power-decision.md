@@ -2,6 +2,18 @@
 
 # Book 1 Public-Safety, Defence, Emergency, and External-Power Decision
 
+## Confinement and absent status entries — item 39, 2026-09-24
+
+Chapter 28 says family form, kinship, caregiving, poverty and similar grounds
+cannot justify harsher confinement. The floor firewall refuses a confining rule
+only for a missing floor item, so the development test
+`no_confinement_reads_an_absent_home_family_or_work_entry` now fails if any rule
+concluding custody, placement, severity or a restraint reads an absent home,
+family, kinship or work entry, with three planted controls. No current rule
+does. It checks written rule forms: an absence laundered through an intermediate
+relation would pass it, and the chapter states only what is checked. Pregnancy,
+disability, poverty and culture have no admitted entry at all.
+
 ## Emergency comparison — item 24, 2026-09-21
 
 The exact [Part V argument](../../31-the-five-joints.md#emergency-action-without-suspended-rights)

@@ -1,0 +1,48 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+# Revision item 39: custody authority that lapses through an administrative
+# failure. The fixture is the severe placement case without its current renewal.
+:expect-pins 12
+? responsible(Case_LapsedCustodyAuthority, CustodyMerits).
+# => TRUE
+? correct(Case_LapsedCustodyAuthority, ActivePower).
+# => FALSE
+? prisoner(LapsedCustodyAuthority).
+# => FALSE
+# Nothing manufactures the release itself, and the release-review duty that
+# attaches to current custody ends with it.
+? free(LapsedCustodyAuthority).
+# => FALSE
+? obliged(State, ArrangeIndependentReleaseReviewAndDoNotDelayLawfulRelease, LapsedCustodyAuthority).
+# => FALSE
+? obliged(FSBOD_17, ReviewTheCustodyAuthorityBeforeItsSourceBoundEnd, Case_LapsedCustodyAuthority).
+# => FALSE
+# A person still held after authority ends is owed humane care, voice and an
+# independent review of the holding.
+authorized(HoldingMonitor, PSIndependentHoldingReportAuthority, Holding_LapsedCustodyAuthority).
+observe(HoldingMonitor, Holding_LapsedCustodyAuthority, LapsedCustodyAuthority, PSHoldingReportSubjectScope).
+observe(HoldingMonitor, Holding_LapsedCustodyAuthority, CredibleCurrentPhysicalHoldingReport, PSHoldingReportFindingScope).
+? obliged(State, SecureImmediateHumaneCareVoiceAndIndependentHoldingStatusReview, LapsedCustodyAuthority).
+# => TRUE
+# The renewal made in time: custody authority is current again, and the
+# review before its end is owed.
+continue(Case_LapsedCustodyAuthority, Epoch_Current).
+observe(Chronicle, Case_LapsedCustodyAuthority, Epoch_Current, RenewalScope).
+observe(TemporalReview, Case_LapsedCustodyAuthority, Epoch_Current, RenewalScope).
+endorses(Electorate, Case_LapsedCustodyAuthority).
+endorses(TemporalReview, Case_LapsedCustodyAuthority).
+? prisoner(LapsedCustodyAuthority).
+# => TRUE
+? obliged(FSBOD_17, ReviewTheCustodyAuthorityBeforeItsSourceBoundEnd, Case_LapsedCustodyAuthority).
+# => TRUE
+? obliged(FSBOD_25, ReviewTheCustodyAuthorityInPlaceOfTheOrdinaryReviewer, Case_LapsedCustodyAuthority).
+# => FALSE
+# A certified nonresponse of the ordinary reviewer moves the review to the
+# predeclared alternate; the ordinary reviewer cannot certify its own silence.
+authorized(CustodyAudit, CustodyReviewNonresponseSourceAuthority, Case_LapsedCustodyAuthority).
+authorized(CustodyAuditReview, IndependentCustodyReviewNonresponseReviewAuthority, Case_LapsedCustodyAuthority).
+observe(CustodyAudit, Case_LapsedCustodyAuthority, FSBOD_17, CustodyReviewNonresponseScope).
+observe(CustodyAuditReview, Case_LapsedCustodyAuthority, FSBOD_17, CustodyReviewNonresponseScope).
+? obliged(FSBOD_25, ReviewTheCustodyAuthorityInPlaceOfTheOrdinaryReviewer, Case_LapsedCustodyAuthority).
+# => TRUE
+? obliged(FSBOD_17, ReviewTheCustodyAuthorityBeforeItsSourceBoundEnd, Case_LapsedCustodyAuthority).
+# => TRUE

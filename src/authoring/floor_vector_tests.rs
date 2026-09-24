@@ -938,3 +938,48 @@ fn a_recorded_expungement_reaches_every_voiding_that_turns_on_a_finding() {
         );
     }
 }
+
+/// Chapter 28 says family form, kinship, caregiving, poverty and similar
+/// grounds cannot justify harsher confinement. The floor firewall refuses a
+/// confining rule only for a missing floor item, so absent home, family,
+/// kinship and work entries need their own guard: no rule concluding custody,
+/// placement, severity or a restraint reads one under negation. Like the other
+/// guards here it reads written rule forms; a rule laundering the absence
+/// through an intermediate relation would pass it, which is why the chapter
+/// states only what is checked.
+const CONFINEMENT_HEADS: [&str; 6] = ["prisoner", "severe", "fit", "dwell", "building", "restrain"];
+const STATUS_ENTRIES: [&str; 6] = ["home", "family", "parent", "married", "sibling", "work"];
+
+fn absent_status_reads(statements: &[String]) -> Vec<String> {
+    let negated = Regex::new(&format!(r"~\s*(?:{})\s*\(", STATUS_ENTRIES.join("|"))).unwrap();
+    statements
+        .iter()
+        .filter_map(|statement| {
+            let (body, head) = split(statement)?;
+            (CONFINEMENT_HEADS.contains(&head_relation(head)) && negated.is_match(body))
+                .then(|| statement.clone())
+        })
+        .collect()
+}
+
+#[test]
+fn no_confinement_reads_an_absent_home_family_or_work_entry() {
+    let found = absent_status_reads(&statements());
+    assert!(
+        found.is_empty(),
+        "a custody, placement, severity or restraint rule reads an absent home, \
+         family, kinship or work entry: {:?}",
+        &found[..found.len().min(3)]
+    );
+    for hostile in [
+        "all $x: person($x) & ~home($x) -> prisoner($x).",
+        "all $x: all $y: prisoner($x) & ~parent($y, $x) -> severe($x).",
+        "all $x: prisoner($x) & ~work($x, Care) -> fit($x, HighSec).",
+    ] {
+        assert_eq!(
+            absent_status_reads(&[hostile.to_owned()]).len(),
+            1,
+            "the guard missed {hostile}; the control must fail"
+        );
+    }
+}

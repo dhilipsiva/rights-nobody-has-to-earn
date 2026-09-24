@@ -72,6 +72,16 @@ unusable. The model counts no days and cannot compel an outside time service
 to publish a successor. It rejects unsupported authority in the record
 presented to it; that does not establish that the record is current in the world.
 
+When the renewal is not made, confinement under that case loses its authority,
+even after a conviction for grave injury, and nothing extends it. The conviction
+stands and no release is manufactured; the duty to arrange release review ends
+with current custody, while a person still held is owed humane care, voice and
+independent review of the holding. To prevent a lapse caused by administrative
+failure, the justice body must review each current custody authority before its
+source-bound end. When a source and a separate independent reviewer certify that
+it has not, the predeclared alternate panel must review in its place. Neither
+duty renews anything.
+
 Severity does not lengthen the interval. Recognition, employment, compliance,
 wealth and character cannot shorten or extend custody. The checks try both a
 rule producing a raw release entry from recognition and a rule producing an

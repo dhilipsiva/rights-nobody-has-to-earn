@@ -24,8 +24,9 @@ proves no delivered housing.
 
 A family entry does no placement work. Family form, kinship, caregiving,
 pregnancy, disability, poverty or culture cannot justify harsher confinement.
-A restriction needs evidence of the particular harm and necessity, not an
-assumption drawn from the existence or shape of a household.
+Among these, the record admits entries only for home, family, kinship and work,
+which includes caregiving, and a development check fails if any rule concluding
+custody, placement, severity or a restraint reads a missing one.
 
 ## What makes an offence severe
 
