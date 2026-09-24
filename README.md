@@ -38,6 +38,7 @@ Earn*, is the destination.
 | `book-1/appendix/contracts/scarcity-and-conflict-contract.md` | Physical-scarcity findings, allocation, recorded shortfall, forbidden priority keys and typed cross-domain conflicts. |
 | `book-1/appendix/maps/red-team-index.md` | One entry per strategic behaviour: who gains, who pays, what stops it, and where nothing does. |
 | `book-1/source/adversarial-audit-source.json` | Fifteen review lenses bound to the checks that encode them and to what each finds. |
+| `book-1/source/procedural-load-source.json` | Every gated effect classified as beneficial, adverse, power over others, oversight or institutional; the generated table lists the roles each needs and the attestations that repeat. |
 | `book-1/source/reader-coverage-source.json` | Every derived-chapter and Part V passage classified by domain, function, posture and trajectory. |
 | `book-1/source/resolution-receipts-source.json` | Every repair thread's ending: what failed, what changed, how the attack is rerun, what still does not follow. |
 | `book-1/appendix/contracts/public-safety-contract.md` | Separated protective powers, non-derogating emergencies, humane holding, external limits and exact review. |
@@ -179,6 +180,7 @@ Generation is separate from verification and happens only when requested:
 ./generate.sh justice
 ./generate.sh knowledge
 ./generate.sh family-life
+./generate.sh procedural-load
 ./generate.sh reader-coverage
 ./generate.sh record-power
 ./generate.sh resolution-receipts

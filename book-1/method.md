@@ -491,6 +491,42 @@ different again: the input failed to enter the knowledge base. The engine's
 [guarantees document](https://github.com/dhilipsiva/nibli/blob/main/GUARANTEES.md)
 states its inference contract and the scope of its own testing and proofs.
 
+## What an act needs before it takes effect
+
+Every record that takes effect names the roles that must act on it first. A
+generated table lists them for each effect in the constitution:
+[`book-1/source/procedural-load.md`](source/procedural-load.md), produced by
+`./generate.sh procedural-load` from the constitution and a reviewed
+classification. Each effect is classed as beneficial (it gives, preserves or
+releases something for its subject), adverse (it restricts, takes, confines or
+finds against), power over others, oversight of a public act, or institutional
+configuration. The roles are read from the rules; the class is a judgment the
+classification records with its reason.
+
+The table is a list, not a score. For the effects classed beneficial, what each
+needs today is:
+
+- An accommodation, care continuity, participation of the affected person,
+  access to one's own origin records, or a recorded shortfall: a source, an
+  evidence attester and an independent reviewer who record the same fields, a
+  challenge reader and an independent alternate.
+- Access to a process, a hearing, an appeal, assistance, release review or case
+  relief in the justice family, and nationality, membership, cultural
+  protection, title or a remedy in the mobility family: the same three matching
+  attesters, a challenge reader, an independent alternate and an audit reader.
+- A protection claim, a continuity measure or a reparation in the ecological
+  family: a source and an independent reviewer who record the same fields, a
+  challenge reader, an independent alternate, an audit reader and an acting
+  body.
+- A delivery conclusion, an insurance supplement, a compensation or a
+  certificate: one authorised witness, adjudicator, attester or certifier.
+
+Where more than one role writes the same fields onto one record, the
+attestation is repeated. The table lists each such pattern with its family. The
+most common are the matching source, evidence attester and independent reviewer
+of the newer families and the matching source and independent reviewer of the
+ecological family.
+
 ## Running the checks
 
 The repository needs its Rust toolchain and the Nibli repository checked

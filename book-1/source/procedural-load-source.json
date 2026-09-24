@@ -1,0 +1,3201 @@
+{
+  "classes": {
+    "beneficial": "Gives, preserves or releases something for its subject and binds nobody else to anything beyond an existing duty.",
+    "adverse": "Restricts, takes, confines, compels or finds against a person, an animal's custodian, an association or a private actor, or permits harm to an animal.",
+    "power-over-others": "Confers a public power, office, representative or decision role that other people must answer to.",
+    "oversight": "Finds a public act defective or unsupported, certifies that a public body failed to act, or corrects or ends a public power.",
+    "institutional": "Configures a public institution, record or process without deciding anything for or against an individual subject."
+  },
+  "functions": [
+    [
+      "ReplayReview",
+      "replay reviewer"
+    ],
+    [
+      "ReplayRegistry",
+      "replay registry"
+    ],
+    [
+      "Alternate",
+      "independent alternate"
+    ],
+    [
+      "ChallengeReader",
+      "challenge reader"
+    ],
+    [
+      "FindingReader",
+      "finding reader"
+    ],
+    [
+      "Audit",
+      "audit reader"
+    ],
+    [
+      "Completeness",
+      "completeness assurer"
+    ],
+    [
+      "ResultService",
+      "result service"
+    ],
+    [
+      "DecisionAdministration",
+      "decision administrator"
+    ],
+    [
+      "TemporalReview",
+      "temporal reviewer"
+    ],
+    [
+      "Temporal",
+      "temporal witness"
+    ],
+    [
+      "RecordReview",
+      "record reviewer"
+    ],
+    [
+      "FinalReview",
+      "final reviewer"
+    ],
+    [
+      "EffectReview",
+      "effect reviewer"
+    ],
+    [
+      "StatisticsMethod",
+      "method reviewer"
+    ],
+    [
+      "EthicalReview",
+      "ethical reviewer"
+    ],
+    [
+      "ScientificReview",
+      "scientific reviewer"
+    ],
+    [
+      "ProtectedFactReview",
+      "independent reviewer"
+    ],
+    [
+      "Evidence",
+      "evidence attester"
+    ],
+    [
+      "Authorizing",
+      "authorising body"
+    ],
+    [
+      "ShieldQualificationReview",
+      "qualification reviewer"
+    ],
+    [
+      "ShieldQualification",
+      "qualification body"
+    ],
+    [
+      "ShieldConnection",
+      "case reviewer"
+    ],
+    [
+      "DisclosureRecipient",
+      "disclosure recipient"
+    ],
+    [
+      "ProtectiveInvestigation",
+      "investigator"
+    ],
+    [
+      "Review",
+      "independent reviewer"
+    ],
+    [
+      "Source",
+      "source"
+    ],
+    [
+      "Publication",
+      "publisher"
+    ],
+    [
+      "EffectiveSelection",
+      "selection authority"
+    ],
+    [
+      "Execution",
+      "acting body"
+    ],
+    [
+      "Executor",
+      "acting body"
+    ],
+    [
+      "Actor",
+      "acting body"
+    ],
+    [
+      "Witness",
+      "witness"
+    ],
+    [
+      "Certifier",
+      "certifier"
+    ],
+    [
+      "Attester",
+      "attester"
+    ],
+    [
+      "Adjudicator",
+      "adjudicator"
+    ],
+    [
+      "ActiveCustody",
+      "custody authority"
+    ],
+    [
+      "StandingStatus",
+      "standing witness"
+    ],
+    [
+      "EarlyDecision",
+      "early-decision authority"
+    ],
+    [
+      "PoliticalHomeChoice",
+      "the person choosing"
+    ]
+  ],
+  "reasons": {
+    "competence": "Allocates or exercises a tier's or body's jurisdiction.",
+    "lawmaking": "Makes, funds or executes law that binds others.",
+    "office": "Selects, appoints, seats or replaces an office-holder or public body.",
+    "election": "Certifies or configures an electoral, collective or institutional result.",
+    "local": "Protected local control over a local budget, administration, space, facility or service.",
+    "court-relief": "Case relief for a person against a public or coercive act.",
+    "invalidation": "Invalidates or reviews a law or procedure.",
+    "removal": "Removes or rejects a person from an office or candidacy.",
+    "political-home": "Determines or transfers where a person votes.",
+    "restricts-private": "Restricts, takes from, or compels a private actor or enterprise.",
+    "fiscal": "Raises, appropriates, spends, borrows or regulates money or payment.",
+    "scarcity": "Declares scarcity or allocates what is short, so some claims go unmet.",
+    "shortfall": "Records an unmet claim, which obliges repair without finding against anyone.",
+    "carry-benefit": "Carries a person's existing benefit or title into the current record.",
+    "carry-liability": "Carries an existing liability into the current record.",
+    "coercive-order": "An individual coercive order or measure against a person.",
+    "mandate": "Confers a protective mandate on a public function.",
+    "emergency": "Declares, renews or acts under an emergency or armed-response power.",
+    "external": "Treaty, trade, defence structure or exit settlement, deciding nothing for an individual.",
+    "defect": "Finds a public act or record defective, unsupported or ended.",
+    "nonresponse": "Certifies that a public body did not respond, moving its duty to an alternate.",
+    "holding-found": "Finds that a person is held, which obliges care, voice and review for them.",
+    "disclosure-protected": "Protects a person who disclosed wrongdoing.",
+    "force-found": "Finds force necessary, which permits harm.",
+    "access": "Gives a person access, assistance, a hearing, an appeal or continuity.",
+    "remedy": "Gives a remedy or relief to the person harmed.",
+    "charging": "Charges, investigates or enforces against a person.",
+    "record-holding": "Holds, processes, retains or uses records about people.",
+    "own-record": "Gives a person access to or correction of their own record.",
+    "statistics-release": "Releases or rebuts aggregate statistics with no individual subject.",
+    "presumption": "Raises a presumption against a public body in an equality proceeding.",
+    "amendment": "Certifies, publishes or selects a constitutional version.",
+    "accommodation": "An accommodation for the person who needs it.",
+    "positive-measure": "A positive measure that allocates chances between people.",
+    "equality-proceeding": "A remedial equality proceeding against a respondent.",
+    "determination": "Determines a claim whose outcome can go against the claimant.",
+    "nationality": "Recognises a person's nationality.",
+    "collective-effect": "Permits an effect on a collective or its land without its consent.",
+    "collective-consent": "Records a collective's own consent, consultation or finding.",
+    "cultural": "Protects a collective's culture or title.",
+    "self-government": "Confers governing or representative authority within a collective.",
+    "membership": "Records a person's membership of a collective.",
+    "private-evidence": "Opens private evidence to inspection.",
+    "integrity-finding": "Finds against an office-holder, candidate, association or coordinated actor.",
+    "opposition": "Records a member's opposition, which gives them opposition rights.",
+    "cross-domain": "Resolves a conflict between protected claims, so one side yields.",
+    "knowledge-restriction": "Restricts or enforces a restriction on learning, speech or association.",
+    "knowledge-duty": "Owes accessible communication, public information or creative autonomy to people.",
+    "concentration": "Finds against a concentrated communication actor.",
+    "acts-for-person": "Lets someone act for, decide with, or hold a role over another person.",
+    "care-continuity": "Continuing care or bodily autonomy for the person concerned.",
+    "claim": "Opens a protection claim for a person, animal or the commons, restricting nobody by itself.",
+    "animal-order": "An order against the person or body responsible for an animal or habitat.",
+    "animal-use": "Tests or permits a use that can harm animals.",
+    "custodian-duty": "Imposes welfare duties on the custodians of animals.",
+    "animal-coverage": "Extends protection to an animal or a class of animals.",
+    "office-function": "An independent office's collective result or exercise of its function.",
+    "information-demand": "Demands information or evidence from others.",
+    "liability": "Imposes liability or a duty to cease, restore or pay.",
+    "ceiling": "Sets or applies a legal ecological ceiling or precaution that restricts activity.",
+    "science": "Records scientific findings, compliance or finality with no individual subject.",
+    "reparation": "Gives separate reparation to the people harmed.",
+    "continuity": "Preserves the floor, care or restoration while a failure is repaired.",
+    "custody": "Confines a person under a conviction.",
+    "standing": "Recognises a person's standing.",
+    "delivery": "Concludes that something owed reached the person, on an independent witness.",
+    "supplement": "Concludes an above-floor supplement, compensation, certificate or restitution for its subject.",
+    "ballot": "Concludes a person's ballot.",
+    "credibility-candidate": "Qualifies a proposed credibility finding against a person.",
+    "request": "Lets a person make a request, contest or challenge, binding nobody to grant it.",
+    "pause": "Interrupts or pauses an authorised activity.",
+    "restraint": "Restrains a person or their property."
+  },
+  "effects": [
+    {
+      "family": "STATE-FORM",
+      "head": "complete",
+      "key": "FSPOW_001",
+      "class": "power-over-others",
+      "because": "competence"
+    },
+    {
+      "family": "STATE-FORM",
+      "head": "complete",
+      "key": "FSPOW_002",
+      "class": "power-over-others",
+      "because": "competence"
+    },
+    {
+      "family": "STATE-FORM",
+      "head": "complete",
+      "key": "FSPOW_003",
+      "class": "institutional",
+      "because": "competence"
+    },
+    {
+      "family": "STATE-FORM",
+      "head": "complete",
+      "key": "FSPOW_004",
+      "class": "institutional",
+      "because": "competence"
+    },
+    {
+      "family": "STATE-FORM",
+      "head": "complete",
+      "key": "FSPOW_005",
+      "class": "power-over-others",
+      "because": "lawmaking"
+    },
+    {
+      "family": "STATE-FORM",
+      "head": "complete",
+      "key": "FSPOW_006",
+      "class": "power-over-others",
+      "because": "lawmaking"
+    },
+    {
+      "family": "STATE-FORM",
+      "head": "complete",
+      "key": "FSPOW_007",
+      "class": "power-over-others",
+      "because": "lawmaking"
+    },
+    {
+      "family": "STATE-FORM",
+      "head": "complete",
+      "key": "FSPOW_008",
+      "class": "oversight",
+      "because": "defect"
+    },
+    {
+      "family": "STATE-FORM",
+      "head": "complete",
+      "key": "FSPOW_009",
+      "class": "institutional",
+      "because": "amendment"
+    },
+    {
+      "family": "STATE-FORM",
+      "head": "complete",
+      "key": "FSPOW_010",
+      "class": "institutional",
+      "because": "election"
+    },
+    {
+      "family": "STATE-FORM",
+      "head": "complete",
+      "key": "FSPOW_011",
+      "class": "institutional",
+      "because": "office"
+    },
+    {
+      "family": "STATE-FORM",
+      "head": "complete",
+      "key": "FSPOW_012",
+      "class": "institutional",
+      "because": "election"
+    },
+    {
+      "family": "STATE-FORM",
+      "head": "complete",
+      "key": "FSPOW_013",
+      "class": "institutional",
+      "because": "election"
+    },
+    {
+      "family": "STATE-FORM",
+      "head": "complete",
+      "key": "FSPOW_014",
+      "class": "power-over-others",
+      "because": "lawmaking"
+    },
+    {
+      "family": "STATE-FORM",
+      "head": "complete",
+      "key": "FSPOW_015",
+      "class": "institutional",
+      "because": "election"
+    },
+    {
+      "family": "STATE-FORM",
+      "head": "complete",
+      "key": "FSPOW_016",
+      "class": "institutional",
+      "because": "office"
+    },
+    {
+      "family": "STATE-FORM",
+      "head": "complete",
+      "key": "FSPOW_017",
+      "class": "institutional",
+      "because": "office"
+    },
+    {
+      "family": "STATE-FORM",
+      "head": "complete",
+      "key": "FSPOW_018",
+      "class": "power-over-others",
+      "because": "office"
+    },
+    {
+      "family": "STATE-FORM",
+      "head": "complete",
+      "key": "FSPOW_019",
+      "class": "institutional",
+      "because": "election"
+    },
+    {
+      "family": "STATE-FORM",
+      "head": "complete",
+      "key": "FSPOW_020",
+      "class": "institutional",
+      "because": "election"
+    },
+    {
+      "family": "STATE-FORM",
+      "head": "complete",
+      "key": "FSPOW_021",
+      "class": "institutional",
+      "because": "office"
+    },
+    {
+      "family": "STATE-FORM",
+      "head": "complete",
+      "key": "FSPOW_022",
+      "class": "beneficial",
+      "because": "court-relief"
+    },
+    {
+      "family": "STATE-FORM",
+      "head": "complete",
+      "key": "FSPOW_023",
+      "class": "oversight",
+      "because": "invalidation"
+    },
+    {
+      "family": "STATE-FORM",
+      "head": "complete",
+      "key": "FSPOW_024",
+      "class": "oversight",
+      "because": "invalidation"
+    },
+    {
+      "family": "STATE-FORM",
+      "head": "complete",
+      "key": "FSPOW_025",
+      "class": "oversight",
+      "because": "invalidation"
+    },
+    {
+      "family": "STATE-FORM",
+      "head": "complete",
+      "key": "FSPOW_026",
+      "class": "power-over-others",
+      "because": "office"
+    },
+    {
+      "family": "STATE-FORM",
+      "head": "complete",
+      "key": "FSPOW_027",
+      "class": "adverse",
+      "because": "removal"
+    },
+    {
+      "family": "STATE-FORM",
+      "head": "complete",
+      "key": "FSPOW_028",
+      "class": "power-over-others",
+      "because": "office"
+    },
+    {
+      "family": "STATE-FORM",
+      "head": "complete",
+      "key": "FSPOW_029",
+      "class": "adverse",
+      "because": "removal"
+    },
+    {
+      "family": "STATE-FORM",
+      "head": "complete",
+      "key": "FSPOW_030",
+      "class": "power-over-others",
+      "because": "office"
+    },
+    {
+      "family": "STATE-FORM",
+      "head": "complete",
+      "key": "FSPOW_031",
+      "class": "institutional",
+      "because": "election"
+    },
+    {
+      "family": "STATE-FORM",
+      "head": "complete",
+      "key": "FSPOW_032",
+      "class": "institutional",
+      "because": "office"
+    },
+    {
+      "family": "STATE-FORM",
+      "head": "complete",
+      "key": "FSPOW_033",
+      "class": "power-over-others",
+      "because": "office"
+    },
+    {
+      "family": "STATE-FORM",
+      "head": "complete",
+      "key": "FSPOW_034",
+      "class": "institutional",
+      "because": "office"
+    },
+    {
+      "family": "STATE-FORM",
+      "head": "complete",
+      "key": "FSPOW_035",
+      "class": "power-over-others",
+      "because": "office"
+    },
+    {
+      "family": "STATE-FORM",
+      "head": "complete",
+      "key": "FSPOW_036",
+      "class": "adverse",
+      "because": "political-home"
+    },
+    {
+      "family": "STATE-FORM",
+      "head": "complete",
+      "key": "FSPOW_037",
+      "class": "institutional",
+      "because": "amendment"
+    },
+    {
+      "family": "STATE-FORM",
+      "head": "complete",
+      "key": "FSPOW_038",
+      "class": "institutional",
+      "because": "amendment"
+    },
+    {
+      "family": "STATE-FORM",
+      "head": "complete",
+      "key": "FSPOW_039",
+      "class": "institutional",
+      "because": "election"
+    },
+    {
+      "family": "STATE-FORM",
+      "head": "complete",
+      "key": "FSPOW_040",
+      "class": "institutional",
+      "because": "office"
+    },
+    {
+      "family": "STATE-FORM",
+      "head": "complete",
+      "key": "FSPOW_041",
+      "class": "power-over-others",
+      "because": "office"
+    },
+    {
+      "family": "STATE-FORM",
+      "head": "complete",
+      "key": "FSPOW_042",
+      "class": "institutional",
+      "because": "election"
+    },
+    {
+      "family": "STATE-FORM",
+      "head": "complete",
+      "key": "FSPOW_043",
+      "class": "institutional",
+      "because": "competence"
+    },
+    {
+      "family": "STATE-FORM",
+      "head": "complete",
+      "key": "FSPOW_044",
+      "class": "institutional",
+      "because": "office"
+    },
+    {
+      "family": "STATE-FORM",
+      "head": "complete",
+      "key": "FSPOW_045",
+      "class": "institutional",
+      "because": "external"
+    },
+    {
+      "family": "STATE-FORM",
+      "head": "complete",
+      "key": "FSPOW_046",
+      "class": "power-over-others",
+      "because": "local"
+    },
+    {
+      "family": "STATE-FORM",
+      "head": "complete",
+      "key": "FSPOW_047",
+      "class": "power-over-others",
+      "because": "local"
+    },
+    {
+      "family": "STATE-FORM",
+      "head": "complete",
+      "key": "FSPOW_048",
+      "class": "power-over-others",
+      "because": "local"
+    },
+    {
+      "family": "STATE-FORM",
+      "head": "complete",
+      "key": "FSPOW_049",
+      "class": "power-over-others",
+      "because": "local"
+    },
+    {
+      "family": "STATE-FORM",
+      "head": "complete",
+      "key": "FSPOW_050",
+      "class": "power-over-others",
+      "because": "local"
+    },
+    {
+      "family": "STATE-FORM",
+      "head": "complete",
+      "key": "FSPOW_051",
+      "class": "institutional",
+      "because": "office"
+    },
+    {
+      "family": "STATE-FORM",
+      "head": "complete",
+      "key": "StateFormCurrent",
+      "class": "institutional",
+      "because": "election"
+    },
+    {
+      "family": "ECONOMIC-CONSTITUTION",
+      "head": "complete",
+      "key": "FSPOW_061",
+      "class": "adverse",
+      "because": "restricts-private"
+    },
+    {
+      "family": "ECONOMIC-CONSTITUTION",
+      "head": "complete",
+      "key": "EconomicCurrent_061",
+      "class": "adverse",
+      "because": "restricts-private"
+    },
+    {
+      "family": "ECONOMIC-CONSTITUTION",
+      "head": "complete",
+      "key": "FSPOW_062",
+      "class": "adverse",
+      "because": "restricts-private"
+    },
+    {
+      "family": "ECONOMIC-CONSTITUTION",
+      "head": "complete",
+      "key": "EconomicCurrent_062",
+      "class": "adverse",
+      "because": "restricts-private"
+    },
+    {
+      "family": "ECONOMIC-CONSTITUTION",
+      "head": "complete",
+      "key": "FSPOW_063",
+      "class": "adverse",
+      "because": "restricts-private"
+    },
+    {
+      "family": "ECONOMIC-CONSTITUTION",
+      "head": "complete",
+      "key": "EconomicCurrent_063",
+      "class": "adverse",
+      "because": "restricts-private"
+    },
+    {
+      "family": "ECONOMIC-CONSTITUTION",
+      "head": "complete",
+      "key": "FSPOW_064",
+      "class": "adverse",
+      "because": "restricts-private"
+    },
+    {
+      "family": "ECONOMIC-CONSTITUTION",
+      "head": "complete",
+      "key": "EconomicCurrent_064",
+      "class": "adverse",
+      "because": "restricts-private"
+    },
+    {
+      "family": "ECONOMIC-CONSTITUTION",
+      "head": "complete",
+      "key": "FSPOW_065",
+      "class": "adverse",
+      "because": "restricts-private"
+    },
+    {
+      "family": "ECONOMIC-CONSTITUTION",
+      "head": "complete",
+      "key": "EconomicCurrent_065",
+      "class": "adverse",
+      "because": "restricts-private"
+    },
+    {
+      "family": "ECONOMIC-CONSTITUTION",
+      "head": "complete",
+      "key": "FSPOW_066",
+      "class": "institutional",
+      "because": "fiscal"
+    },
+    {
+      "family": "ECONOMIC-CONSTITUTION",
+      "head": "complete",
+      "key": "EconomicCurrent_066",
+      "class": "institutional",
+      "because": "fiscal"
+    },
+    {
+      "family": "ECONOMIC-CONSTITUTION",
+      "head": "complete",
+      "key": "FSPOW_067",
+      "class": "adverse",
+      "because": "restricts-private"
+    },
+    {
+      "family": "ECONOMIC-CONSTITUTION",
+      "head": "complete",
+      "key": "EconomicCurrent_067",
+      "class": "adverse",
+      "because": "restricts-private"
+    },
+    {
+      "family": "ECONOMIC-CONSTITUTION",
+      "head": "complete",
+      "key": "FSPOW_068",
+      "class": "adverse",
+      "because": "restricts-private"
+    },
+    {
+      "family": "ECONOMIC-CONSTITUTION",
+      "head": "complete",
+      "key": "EconomicCurrent_068",
+      "class": "adverse",
+      "because": "restricts-private"
+    },
+    {
+      "family": "ECONOMIC-CONSTITUTION",
+      "head": "complete",
+      "key": "FSPOW_069",
+      "class": "adverse",
+      "because": "restricts-private"
+    },
+    {
+      "family": "ECONOMIC-CONSTITUTION",
+      "head": "complete",
+      "key": "EconomicCurrent_069",
+      "class": "adverse",
+      "because": "restricts-private"
+    },
+    {
+      "family": "ECONOMIC-CONSTITUTION",
+      "head": "complete",
+      "key": "FSPOW_070",
+      "class": "adverse",
+      "because": "restricts-private"
+    },
+    {
+      "family": "ECONOMIC-CONSTITUTION",
+      "head": "complete",
+      "key": "EconomicCurrent_070",
+      "class": "adverse",
+      "because": "restricts-private"
+    },
+    {
+      "family": "ECONOMIC-CONSTITUTION",
+      "head": "complete",
+      "key": "FSPOW_071",
+      "class": "adverse",
+      "because": "restricts-private"
+    },
+    {
+      "family": "ECONOMIC-CONSTITUTION",
+      "head": "complete",
+      "key": "EconomicCurrent_071",
+      "class": "adverse",
+      "because": "restricts-private"
+    },
+    {
+      "family": "ECONOMIC-CONSTITUTION",
+      "head": "complete",
+      "key": "FSPOW_072",
+      "class": "adverse",
+      "because": "fiscal"
+    },
+    {
+      "family": "ECONOMIC-CONSTITUTION",
+      "head": "complete",
+      "key": "EconomicCurrent_072",
+      "class": "adverse",
+      "because": "fiscal"
+    },
+    {
+      "family": "ECONOMIC-CONSTITUTION",
+      "head": "complete",
+      "key": "FSPOW_073",
+      "class": "institutional",
+      "because": "fiscal"
+    },
+    {
+      "family": "ECONOMIC-CONSTITUTION",
+      "head": "complete",
+      "key": "EconomicCurrent_073",
+      "class": "institutional",
+      "because": "fiscal"
+    },
+    {
+      "family": "ECONOMIC-CONSTITUTION",
+      "head": "complete",
+      "key": "FSPOW_074",
+      "class": "institutional",
+      "because": "fiscal"
+    },
+    {
+      "family": "ECONOMIC-CONSTITUTION",
+      "head": "complete",
+      "key": "EconomicCurrent_074",
+      "class": "institutional",
+      "because": "fiscal"
+    },
+    {
+      "family": "ECONOMIC-CONSTITUTION",
+      "head": "complete",
+      "key": "FSPOW_075",
+      "class": "institutional",
+      "because": "fiscal"
+    },
+    {
+      "family": "ECONOMIC-CONSTITUTION",
+      "head": "complete",
+      "key": "EconomicCurrent_075",
+      "class": "institutional",
+      "because": "fiscal"
+    },
+    {
+      "family": "ECONOMIC-CONSTITUTION",
+      "head": "complete",
+      "key": "FSPOW_076",
+      "class": "institutional",
+      "because": "fiscal"
+    },
+    {
+      "family": "ECONOMIC-CONSTITUTION",
+      "head": "complete",
+      "key": "EconomicCurrent_076",
+      "class": "institutional",
+      "because": "fiscal"
+    },
+    {
+      "family": "ECONOMIC-CONSTITUTION",
+      "head": "complete",
+      "key": "FSPOW_077",
+      "class": "power-over-others",
+      "because": "fiscal"
+    },
+    {
+      "family": "ECONOMIC-CONSTITUTION",
+      "head": "complete",
+      "key": "EconomicCurrent_077",
+      "class": "power-over-others",
+      "because": "fiscal"
+    },
+    {
+      "family": "ECONOMIC-CONSTITUTION",
+      "head": "complete",
+      "key": "FSPOW_078",
+      "class": "adverse",
+      "because": "determination"
+    },
+    {
+      "family": "ECONOMIC-CONSTITUTION",
+      "head": "complete",
+      "key": "EconomicCurrent_078",
+      "class": "adverse",
+      "because": "determination"
+    },
+    {
+      "family": "ECONOMIC-CONSTITUTION",
+      "head": "complete",
+      "key": "FSPOW_079",
+      "class": "adverse",
+      "because": "restricts-private"
+    },
+    {
+      "family": "ECONOMIC-CONSTITUTION",
+      "head": "complete",
+      "key": "EconomicCurrent_079",
+      "class": "adverse",
+      "because": "restricts-private"
+    },
+    {
+      "family": "ECONOMIC-CONSTITUTION",
+      "head": "complete",
+      "key": "FSPOW_080",
+      "class": "adverse",
+      "because": "restricts-private"
+    },
+    {
+      "family": "ECONOMIC-CONSTITUTION",
+      "head": "complete",
+      "key": "EconomicCurrent_080",
+      "class": "adverse",
+      "because": "restricts-private"
+    },
+    {
+      "family": "ECONOMIC-CONSTITUTION",
+      "head": "complete",
+      "key": "FSPOW_081",
+      "class": "adverse",
+      "because": "scarcity"
+    },
+    {
+      "family": "ECONOMIC-CONSTITUTION",
+      "head": "complete",
+      "key": "EconomicCurrent_081",
+      "class": "adverse",
+      "because": "scarcity"
+    },
+    {
+      "family": "ECONOMIC-CONSTITUTION",
+      "head": "complete",
+      "key": "FSPOW_082",
+      "class": "adverse",
+      "because": "scarcity"
+    },
+    {
+      "family": "ECONOMIC-CONSTITUTION",
+      "head": "complete",
+      "key": "EconomicCurrent_082",
+      "class": "adverse",
+      "because": "scarcity"
+    },
+    {
+      "family": "ECONOMIC-CONSTITUTION",
+      "head": "complete",
+      "key": "FSPOW_083",
+      "class": "adverse",
+      "because": "restricts-private"
+    },
+    {
+      "family": "ECONOMIC-CONSTITUTION",
+      "head": "complete",
+      "key": "EconomicCurrent_083",
+      "class": "adverse",
+      "because": "restricts-private"
+    },
+    {
+      "family": "ECONOMIC-CONSTITUTION",
+      "head": "complete",
+      "key": "FSPOW_084",
+      "class": "adverse",
+      "because": "restricts-private"
+    },
+    {
+      "family": "ECONOMIC-CONSTITUTION",
+      "head": "complete",
+      "key": "EconomicCurrent_084",
+      "class": "adverse",
+      "because": "restricts-private"
+    },
+    {
+      "family": "ECONOMIC-CONSTITUTION",
+      "head": "complete",
+      "key": "FSPOW_085",
+      "class": "adverse",
+      "because": "fiscal"
+    },
+    {
+      "family": "ECONOMIC-CONSTITUTION",
+      "head": "complete",
+      "key": "EconomicCurrent_085",
+      "class": "adverse",
+      "because": "fiscal"
+    },
+    {
+      "family": "ECONOMIC-CONSTITUTION",
+      "head": "complete",
+      "key": "FSPOW_086",
+      "class": "institutional",
+      "because": "fiscal"
+    },
+    {
+      "family": "ECONOMIC-CONSTITUTION",
+      "head": "complete",
+      "key": "EconomicCurrent_086",
+      "class": "institutional",
+      "because": "fiscal"
+    },
+    {
+      "family": "ECONOMIC-CONSTITUTION",
+      "head": "complete",
+      "key": "FSPOW_087",
+      "class": "institutional",
+      "because": "fiscal"
+    },
+    {
+      "family": "ECONOMIC-CONSTITUTION",
+      "head": "complete",
+      "key": "EconomicCurrent_087",
+      "class": "institutional",
+      "because": "fiscal"
+    },
+    {
+      "family": "ECONOMIC-CONSTITUTION",
+      "head": "complete",
+      "key": "FSPOW_088",
+      "class": "adverse",
+      "because": "restricts-private"
+    },
+    {
+      "family": "ECONOMIC-CONSTITUTION",
+      "head": "complete",
+      "key": "EconomicCurrent_088",
+      "class": "adverse",
+      "because": "restricts-private"
+    },
+    {
+      "family": "ECONOMIC-CONSTITUTION",
+      "head": "complete",
+      "key": "EconomicBenefitCarryCurrent",
+      "class": "beneficial",
+      "because": "carry-benefit"
+    },
+    {
+      "family": "ECONOMIC-CONSTITUTION",
+      "head": "complete",
+      "key": "EconomicBenefitCarryResult",
+      "class": "beneficial",
+      "because": "carry-benefit"
+    },
+    {
+      "family": "ECONOMIC-CONSTITUTION",
+      "head": "complete",
+      "key": "EconomicTitleCarryCurrent",
+      "class": "beneficial",
+      "because": "carry-benefit"
+    },
+    {
+      "family": "ECONOMIC-CONSTITUTION",
+      "head": "complete",
+      "key": "EconomicTitleCarryResult",
+      "class": "beneficial",
+      "because": "carry-benefit"
+    },
+    {
+      "family": "ECONOMIC-CONSTITUTION",
+      "head": "complete",
+      "key": "EconomicLiabilityCarryCurrent",
+      "class": "adverse",
+      "because": "carry-liability"
+    },
+    {
+      "family": "ECONOMIC-CONSTITUTION",
+      "head": "complete",
+      "key": "EconomicLiabilityCarryResult",
+      "class": "adverse",
+      "because": "carry-liability"
+    },
+    {
+      "family": "PUBLIC-SAFETY",
+      "head": "complete",
+      "key": "PSIndividualAdultBorderHold",
+      "class": "adverse",
+      "because": "coercive-order"
+    },
+    {
+      "family": "PUBLIC-SAFETY",
+      "head": "complete",
+      "key": "PSIndividualAdultPreExpulsionDetention",
+      "class": "adverse",
+      "because": "coercive-order"
+    },
+    {
+      "family": "PUBLIC-SAFETY",
+      "head": "complete",
+      "key": "PSIndividualArrestOrder",
+      "class": "adverse",
+      "because": "coercive-order"
+    },
+    {
+      "family": "PUBLIC-SAFETY",
+      "head": "complete",
+      "key": "PSIndividualExpulsionOrder",
+      "class": "adverse",
+      "because": "coercive-order"
+    },
+    {
+      "family": "PUBLIC-SAFETY",
+      "head": "complete",
+      "key": "PSIndividualHazardRestrictionMeasure",
+      "class": "adverse",
+      "because": "coercive-order"
+    },
+    {
+      "family": "PUBLIC-SAFETY",
+      "head": "complete",
+      "key": "PSIndividualInternationalTransferOrder",
+      "class": "adverse",
+      "because": "coercive-order"
+    },
+    {
+      "family": "PUBLIC-SAFETY",
+      "head": "complete",
+      "key": "PSIndividualProtectiveExclusionOrder",
+      "class": "adverse",
+      "because": "coercive-order"
+    },
+    {
+      "family": "PUBLIC-SAFETY",
+      "head": "complete",
+      "key": "PSIndividualQuarantineOrder",
+      "class": "adverse",
+      "because": "coercive-order"
+    },
+    {
+      "family": "PUBLIC-SAFETY",
+      "head": "complete",
+      "key": "PSIndividualSearchOrder",
+      "class": "adverse",
+      "because": "coercive-order"
+    },
+    {
+      "family": "PUBLIC-SAFETY",
+      "head": "complete",
+      "key": "PSIndividualSeizureOrder",
+      "class": "adverse",
+      "because": "coercive-order"
+    },
+    {
+      "family": "PUBLIC-SAFETY",
+      "head": "complete",
+      "key": "PSIndividualSurveillanceOrder",
+      "class": "adverse",
+      "because": "coercive-order"
+    },
+    {
+      "family": "PUBLIC-SAFETY",
+      "head": "complete",
+      "key": "PSLifeProtectingLethalForceOrder",
+      "class": "adverse",
+      "because": "coercive-order"
+    },
+    {
+      "family": "PUBLIC-SAFETY",
+      "head": "complete",
+      "key": "PSNonLethalForceOrder",
+      "class": "adverse",
+      "because": "coercive-order"
+    },
+    {
+      "family": "PUBLIC-SAFETY",
+      "head": "complete",
+      "key": "PSPretrialDetentionOrder",
+      "class": "adverse",
+      "because": "coercive-order"
+    },
+    {
+      "family": "PUBLIC-SAFETY",
+      "head": "complete",
+      "key": "PSImmediateDangerSearchException",
+      "class": "adverse",
+      "because": "coercive-order"
+    },
+    {
+      "family": "PUBLIC-SAFETY",
+      "head": "complete",
+      "key": "PSCompensatedRequisitionMeasure",
+      "class": "adverse",
+      "because": "coercive-order"
+    },
+    {
+      "family": "PUBLIC-SAFETY",
+      "head": "complete",
+      "key": "PSCollectiveLifeSavingEvacuationMeasure",
+      "class": "adverse",
+      "because": "coercive-order"
+    },
+    {
+      "family": "PUBLIC-SAFETY",
+      "head": "complete",
+      "key": "PSBoundedMutualLegalAssistance",
+      "class": "adverse",
+      "because": "coercive-order"
+    },
+    {
+      "family": "PUBLIC-SAFETY",
+      "head": "complete",
+      "key": "PSBoundedExternalTradeOrSanctionsMeasure",
+      "class": "adverse",
+      "because": "coercive-order"
+    },
+    {
+      "family": "PUBLIC-SAFETY",
+      "head": "complete",
+      "key": "PSAdjudicationMandate",
+      "class": "power-over-others",
+      "because": "mandate"
+    },
+    {
+      "family": "PUBLIC-SAFETY",
+      "head": "complete",
+      "key": "PSCustodialExecutionMandate",
+      "class": "power-over-others",
+      "because": "mandate"
+    },
+    {
+      "family": "PUBLIC-SAFETY",
+      "head": "complete",
+      "key": "PSExternalDefenceMandate",
+      "class": "power-over-others",
+      "because": "mandate"
+    },
+    {
+      "family": "PUBLIC-SAFETY",
+      "head": "complete",
+      "key": "PSPolicingMandate",
+      "class": "power-over-others",
+      "because": "mandate"
+    },
+    {
+      "family": "PUBLIC-SAFETY",
+      "head": "complete",
+      "key": "PSProsecutionMandate",
+      "class": "power-over-others",
+      "because": "mandate"
+    },
+    {
+      "family": "PUBLIC-SAFETY",
+      "head": "complete",
+      "key": "PSSecurityIntelligenceMandate",
+      "class": "power-over-others",
+      "because": "mandate"
+    },
+    {
+      "family": "PUBLIC-SAFETY",
+      "head": "complete",
+      "key": "PSPredeclaredAlternateAuthorization",
+      "class": "power-over-others",
+      "because": "mandate"
+    },
+    {
+      "family": "PUBLIC-SAFETY",
+      "head": "complete",
+      "key": "PSNonDerogatingEmergencyDeclaration",
+      "class": "power-over-others",
+      "because": "emergency"
+    },
+    {
+      "family": "PUBLIC-SAFETY",
+      "head": "complete",
+      "key": "PSFreshEmergencyRenewal",
+      "class": "power-over-others",
+      "because": "emergency"
+    },
+    {
+      "family": "PUBLIC-SAFETY",
+      "head": "complete",
+      "key": "PSImmediateResponseToActualArmedAttack",
+      "class": "power-over-others",
+      "because": "emergency"
+    },
+    {
+      "family": "PUBLIC-SAFETY",
+      "head": "complete",
+      "key": "PSAssemblyAuthorisedForceAbroad",
+      "class": "power-over-others",
+      "because": "emergency"
+    },
+    {
+      "family": "PUBLIC-SAFETY",
+      "head": "complete",
+      "key": "PSIndependentlyEvidencedCyberAttackEquivalence",
+      "class": "power-over-others",
+      "because": "emergency"
+    },
+    {
+      "family": "PUBLIC-SAFETY",
+      "head": "complete",
+      "key": "PSAssemblyBoundedDefenceStructure",
+      "class": "institutional",
+      "because": "external"
+    },
+    {
+      "family": "PUBLIC-SAFETY",
+      "head": "complete",
+      "key": "PSConstitutionallyBoundedTreatyRatification",
+      "class": "institutional",
+      "because": "external"
+    },
+    {
+      "family": "PUBLIC-SAFETY",
+      "head": "complete",
+      "key": "PSConstitutionallyBoundedTreatyWithdrawal",
+      "class": "institutional",
+      "because": "external"
+    },
+    {
+      "family": "PUBLIC-SAFETY",
+      "head": "complete",
+      "key": "PSExpressBoundedCommonCompetence",
+      "class": "institutional",
+      "because": "external"
+    },
+    {
+      "family": "PUBLIC-SAFETY",
+      "head": "complete",
+      "key": "PSReviewedArmsTransfer",
+      "class": "institutional",
+      "because": "external"
+    },
+    {
+      "family": "PUBLIC-SAFETY",
+      "head": "complete",
+      "key": "PSRightsContinuousExitWithActualCollectiveConsent",
+      "class": "institutional",
+      "because": "external"
+    },
+    {
+      "family": "PUBLIC-SAFETY",
+      "head": "complete",
+      "key": "PSRightsContinuousExternalExitSettlement",
+      "class": "institutional",
+      "because": "external"
+    },
+    {
+      "family": "PUBLIC-SAFETY",
+      "head": "complete",
+      "key": "PSFirstOpportunityAlternateRatification",
+      "class": "institutional",
+      "because": "external"
+    },
+    {
+      "family": "PUBLIC-SAFETY",
+      "head": "complete",
+      "key": "PSFirstOpportunitySubstituteRatification",
+      "class": "institutional",
+      "because": "external"
+    },
+    {
+      "family": "PUBLIC-SAFETY",
+      "head": "complete",
+      "key": "PSProceduralAccelerationMeasure",
+      "class": "institutional",
+      "because": "external"
+    },
+    {
+      "family": "PUBLIC-SAFETY",
+      "head": "complete",
+      "key": "PSPublicResourceRedirectionMeasure",
+      "class": "institutional",
+      "because": "external"
+    },
+    {
+      "family": "PUBLIC-SAFETY",
+      "head": "complete",
+      "key": "PSUnarmedCivilAssistance",
+      "class": "institutional",
+      "because": "external"
+    },
+    {
+      "family": "PUBLIC-SAFETY",
+      "head": "complete",
+      "key": "PSIndependentProtectiveDefectFinding",
+      "class": "oversight",
+      "because": "defect"
+    },
+    {
+      "family": "PUBLIC-SAFETY",
+      "head": "complete",
+      "key": "PSRecordedProtectiveAuthorityEnd",
+      "class": "oversight",
+      "because": "defect"
+    },
+    {
+      "family": "PUBLIC-SAFETY",
+      "head": "complete",
+      "key": "PSPositiveProtectiveIncidentFinding",
+      "class": "oversight",
+      "because": "defect"
+    },
+    {
+      "family": "PUBLIC-SAFETY",
+      "head": "complete",
+      "key": "PSPredeclaredIndependentSubstituteReview",
+      "class": "oversight",
+      "because": "defect"
+    },
+    {
+      "family": "PUBLIC-SAFETY",
+      "head": "complete",
+      "key": "PSActualConstitutionalCourtGeneralRemedy",
+      "class": "oversight",
+      "because": "defect"
+    },
+    {
+      "family": "PUBLIC-SAFETY",
+      "head": "complete",
+      "key": "PSUninvolvedProtectiveCompositionRemedy",
+      "class": "oversight",
+      "because": "defect"
+    },
+    {
+      "family": "PUBLIC-SAFETY",
+      "head": "complete",
+      "key": "PSIndependentlyEvidencedProtectiveNonresponse",
+      "class": "oversight",
+      "because": "nonresponse"
+    },
+    {
+      "family": "PUBLIC-SAFETY",
+      "head": "complete",
+      "key": "PSActualCourtBoundCaseRemedy",
+      "class": "beneficial",
+      "because": "remedy"
+    },
+    {
+      "family": "PUBLIC-SAFETY",
+      "head": "complete",
+      "key": "PSPositiveActualPublicHoldingFinding",
+      "class": "beneficial",
+      "because": "holding-found"
+    },
+    {
+      "family": "PUBLIC-SAFETY",
+      "head": "complete",
+      "key": "PSProtectedPublicInterestDisclosureFinding",
+      "class": "beneficial",
+      "because": "disclosure-protected"
+    },
+    {
+      "family": "PUBLIC-SAFETY",
+      "head": "complete",
+      "key": "PSPublicActorForceNecessityFinding",
+      "class": "adverse",
+      "because": "force-found"
+    },
+    {
+      "family": "NON-CARCERAL-JUSTICE",
+      "head": "complete",
+      "key": "JusticeAccessibleProcess",
+      "class": "beneficial",
+      "because": "access"
+    },
+    {
+      "family": "NON-CARCERAL-JUSTICE",
+      "head": "complete",
+      "key": "JusticeCaseSpecificRelief",
+      "class": "beneficial",
+      "because": "remedy"
+    },
+    {
+      "family": "NON-CARCERAL-JUSTICE",
+      "head": "complete",
+      "key": "JusticeChargingProcedure",
+      "class": "adverse",
+      "because": "charging"
+    },
+    {
+      "family": "NON-CARCERAL-JUSTICE",
+      "head": "complete",
+      "key": "JusticeConfidentialDefence",
+      "class": "beneficial",
+      "because": "access"
+    },
+    {
+      "family": "NON-CARCERAL-JUSTICE",
+      "head": "complete",
+      "key": "JusticeConstitutionalInvalidation",
+      "class": "oversight",
+      "because": "invalidation"
+    },
+    {
+      "family": "NON-CARCERAL-JUSTICE",
+      "head": "complete",
+      "key": "JusticeCustodialSafeguards",
+      "class": "beneficial",
+      "because": "access"
+    },
+    {
+      "family": "NON-CARCERAL-JUSTICE",
+      "head": "complete",
+      "key": "JusticeEstablishedNonresponse",
+      "class": "oversight",
+      "because": "nonresponse"
+    },
+    {
+      "family": "NON-CARCERAL-JUSTICE",
+      "head": "complete",
+      "key": "JusticeFairHearing",
+      "class": "beneficial",
+      "because": "access"
+    },
+    {
+      "family": "NON-CARCERAL-JUSTICE",
+      "head": "complete",
+      "key": "JusticeIndependentAppeal",
+      "class": "beneficial",
+      "because": "access"
+    },
+    {
+      "family": "NON-CARCERAL-JUSTICE",
+      "head": "complete",
+      "key": "JusticeIndependentAssistance",
+      "class": "beneficial",
+      "because": "access"
+    },
+    {
+      "family": "NON-CARCERAL-JUSTICE",
+      "head": "complete",
+      "key": "JusticeInvestigationProcedure",
+      "class": "adverse",
+      "because": "charging"
+    },
+    {
+      "family": "NON-CARCERAL-JUSTICE",
+      "head": "complete",
+      "key": "JusticeNoncoerciveEnforcement",
+      "class": "adverse",
+      "because": "charging"
+    },
+    {
+      "family": "NON-CARCERAL-JUSTICE",
+      "head": "complete",
+      "key": "JusticeReleaseContinuity",
+      "class": "beneficial",
+      "because": "access"
+    },
+    {
+      "family": "NON-CARCERAL-JUSTICE",
+      "head": "complete",
+      "key": "JusticeReleaseReview",
+      "class": "beneficial",
+      "because": "access"
+    },
+    {
+      "family": "NON-CARCERAL-JUSTICE",
+      "head": "complete",
+      "key": "JusticeReviewedDefect",
+      "class": "oversight",
+      "because": "defect"
+    },
+    {
+      "family": "NON-CARCERAL-JUSTICE",
+      "head": "complete",
+      "key": "JusticeSurvivorProtection",
+      "class": "beneficial",
+      "because": "access"
+    },
+    {
+      "family": "NON-CARCERAL-JUSTICE",
+      "head": "complete",
+      "key": "JusticeUninvolvedCompositionReview",
+      "class": "oversight",
+      "because": "defect"
+    },
+    {
+      "family": "NON-CARCERAL-JUSTICE",
+      "head": "complete",
+      "key": "JusticeVoluntaryRestoration",
+      "class": "beneficial",
+      "because": "remedy"
+    },
+    {
+      "family": "RECORD-POWER",
+      "head": "complete",
+      "key": "CertifiedRecordReaderNonresponse",
+      "class": "oversight",
+      "because": "nonresponse"
+    },
+    {
+      "family": "RECORD-POWER",
+      "head": "complete",
+      "key": "ReviewedAutomatedDecisionSupport",
+      "class": "adverse",
+      "because": "record-holding"
+    },
+    {
+      "family": "RECORD-POWER",
+      "head": "complete",
+      "key": "ReviewedRecordHolding",
+      "class": "adverse",
+      "because": "record-holding"
+    },
+    {
+      "family": "RECORD-POWER",
+      "head": "complete",
+      "key": "ReviewedRecordProcessing",
+      "class": "adverse",
+      "because": "record-holding"
+    },
+    {
+      "family": "RECORD-POWER",
+      "head": "complete",
+      "key": "ReviewedRecordUseDefect",
+      "class": "oversight",
+      "because": "defect"
+    },
+    {
+      "family": "RECORD-POWER",
+      "head": "complete",
+      "key": "ReviewedRetentionAndDeletion",
+      "class": "adverse",
+      "because": "record-holding"
+    },
+    {
+      "family": "RECORD-POWER",
+      "head": "complete",
+      "key": "ReviewedSubjectAccessAndCorrection",
+      "class": "beneficial",
+      "because": "own-record"
+    },
+    {
+      "family": "OFFICIAL-STATISTICS",
+      "head": "complete",
+      "key": "CertifiedStatisticsReaderNonresponse",
+      "class": "oversight",
+      "because": "nonresponse"
+    },
+    {
+      "family": "OFFICIAL-STATISTICS",
+      "head": "complete",
+      "key": "RebuttableAggregateEqualityPresumption",
+      "class": "oversight",
+      "because": "presumption"
+    },
+    {
+      "family": "OFFICIAL-STATISTICS",
+      "head": "complete",
+      "key": "ReviewedAggregatePresumptionRebuttal",
+      "class": "institutional",
+      "because": "statistics-release"
+    },
+    {
+      "family": "OFFICIAL-STATISTICS",
+      "head": "complete",
+      "key": "ReviewedStatisticalEvidenceAccess",
+      "class": "adverse",
+      "because": "private-evidence"
+    },
+    {
+      "family": "OFFICIAL-STATISTICS",
+      "head": "complete",
+      "key": "ReviewedStatisticalRelease",
+      "class": "institutional",
+      "because": "statistics-release"
+    },
+    {
+      "family": "OFFICIAL-STATISTICS",
+      "head": "complete",
+      "key": "ReviewedStatisticalUse",
+      "class": "adverse",
+      "because": "record-holding"
+    },
+    {
+      "family": "OFFICIAL-STATISTICS",
+      "head": "complete",
+      "key": "ReviewedStatisticalUseDefect",
+      "class": "oversight",
+      "because": "defect"
+    },
+    {
+      "family": "AMENDMENT-ENACTMENT",
+      "head": "complete",
+      "key": "AmendmentCertifiedCandidate",
+      "class": "institutional",
+      "because": "amendment"
+    },
+    {
+      "family": "AMENDMENT-ENACTMENT",
+      "head": "complete",
+      "key": "AmendmentEffectiveVersion",
+      "class": "institutional",
+      "because": "amendment"
+    },
+    {
+      "family": "AMENDMENT-ENACTMENT",
+      "head": "complete",
+      "key": "AmendmentPublishedCandidate",
+      "class": "institutional",
+      "because": "amendment"
+    },
+    {
+      "family": "AMENDMENT-ENACTMENT",
+      "head": "complete",
+      "key": "AmendmentNonresponseEscalation",
+      "class": "oversight",
+      "because": "nonresponse"
+    },
+    {
+      "family": "SUBSTANTIVE-EQUALITY-ORDINARY",
+      "head": "complete",
+      "key": "IndependentEqualityRecordDefect",
+      "class": "oversight",
+      "because": "defect"
+    },
+    {
+      "family": "SUBSTANTIVE-EQUALITY-ORDINARY",
+      "head": "complete",
+      "key": "IndependentlyEvidencedEqualityNonresponse",
+      "class": "oversight",
+      "because": "nonresponse"
+    },
+    {
+      "family": "SUBSTANTIVE-EQUALITY-ORDINARY",
+      "head": "complete",
+      "key": "ReviewedMeasureContinuationFinding",
+      "class": "adverse",
+      "because": "positive-measure"
+    },
+    {
+      "family": "SUBSTANTIVE-EQUALITY-ORDINARY",
+      "head": "complete",
+      "key": "ReviewedPositiveMeasure",
+      "class": "adverse",
+      "because": "positive-measure"
+    },
+    {
+      "family": "SUBSTANTIVE-EQUALITY-ORDINARY",
+      "head": "complete",
+      "key": "ReviewedReasonableAccommodation",
+      "class": "beneficial",
+      "because": "accommodation"
+    },
+    {
+      "family": "SUBSTANTIVE-EQUALITY-ORDINARY",
+      "head": "complete",
+      "key": "ReviewedRemedialEqualityProceeding",
+      "class": "adverse",
+      "because": "equality-proceeding"
+    },
+    {
+      "family": "MOBILITY-PLURALITY",
+      "head": "complete",
+      "key": "ExternalArrangementCompatibility",
+      "class": "institutional",
+      "because": "external"
+    },
+    {
+      "family": "MOBILITY-PLURALITY",
+      "head": "complete",
+      "key": "MobilityFairDetermination",
+      "class": "adverse",
+      "because": "determination"
+    },
+    {
+      "family": "MOBILITY-PLURALITY",
+      "head": "complete",
+      "key": "MobilityNationalityRecognition",
+      "class": "beneficial",
+      "because": "nationality"
+    },
+    {
+      "family": "MOBILITY-PLURALITY",
+      "head": "complete",
+      "key": "MobilityPluralityNonresponse",
+      "class": "oversight",
+      "because": "nonresponse"
+    },
+    {
+      "family": "MOBILITY-PLURALITY",
+      "head": "complete",
+      "key": "MobilityPluralityReviewedDefect",
+      "class": "oversight",
+      "because": "defect"
+    },
+    {
+      "family": "MOBILITY-PLURALITY",
+      "head": "complete",
+      "key": "MobilityRemovalCompatibility",
+      "class": "adverse",
+      "because": "coercive-order"
+    },
+    {
+      "family": "MOBILITY-PLURALITY",
+      "head": "complete",
+      "key": "PluralityActualConsent",
+      "class": "institutional",
+      "because": "collective-consent"
+    },
+    {
+      "family": "MOBILITY-PLURALITY",
+      "head": "complete",
+      "key": "PluralityBoundedCommunityFinding",
+      "class": "institutional",
+      "because": "collective-consent"
+    },
+    {
+      "family": "MOBILITY-PLURALITY",
+      "head": "complete",
+      "key": "PluralityConsentedEffectCompatibility",
+      "class": "institutional",
+      "because": "collective-consent"
+    },
+    {
+      "family": "MOBILITY-PLURALITY",
+      "head": "complete",
+      "key": "PluralityConsultedEffectCompatibility",
+      "class": "adverse",
+      "because": "collective-effect"
+    },
+    {
+      "family": "MOBILITY-PLURALITY",
+      "head": "complete",
+      "key": "PluralityCulturalProtection",
+      "class": "beneficial",
+      "because": "cultural"
+    },
+    {
+      "family": "MOBILITY-PLURALITY",
+      "head": "complete",
+      "key": "PluralityEvacuationCompatibility",
+      "class": "adverse",
+      "because": "collective-effect"
+    },
+    {
+      "family": "MOBILITY-PLURALITY",
+      "head": "complete",
+      "key": "PluralityIndigenousSelfGovernment",
+      "class": "power-over-others",
+      "because": "self-government"
+    },
+    {
+      "family": "MOBILITY-PLURALITY",
+      "head": "complete",
+      "key": "PluralityInternalDecision",
+      "class": "power-over-others",
+      "because": "self-government"
+    },
+    {
+      "family": "MOBILITY-PLURALITY",
+      "head": "complete",
+      "key": "PluralityLawfulRepresentation",
+      "class": "power-over-others",
+      "because": "self-government"
+    },
+    {
+      "family": "MOBILITY-PLURALITY",
+      "head": "complete",
+      "key": "PluralityMembershipOccurrence",
+      "class": "beneficial",
+      "because": "membership"
+    },
+    {
+      "family": "MOBILITY-PLURALITY",
+      "head": "complete",
+      "key": "PluralityMinorityTerritorialGovernment",
+      "class": "power-over-others",
+      "because": "self-government"
+    },
+    {
+      "family": "MOBILITY-PLURALITY",
+      "head": "complete",
+      "key": "PluralityPriorConsultation",
+      "class": "institutional",
+      "because": "collective-consent"
+    },
+    {
+      "family": "MOBILITY-PLURALITY",
+      "head": "complete",
+      "key": "PluralityPrivateEvidenceAccess",
+      "class": "adverse",
+      "because": "private-evidence"
+    },
+    {
+      "family": "MOBILITY-PLURALITY",
+      "head": "complete",
+      "key": "PluralityProtectedTitle",
+      "class": "beneficial",
+      "because": "cultural"
+    },
+    {
+      "family": "MOBILITY-PLURALITY",
+      "head": "complete",
+      "key": "PluralityRightsBoundedRemedy",
+      "class": "beneficial",
+      "because": "remedy"
+    },
+    {
+      "family": "DEMOCRATIC-INTEGRITY",
+      "head": "complete",
+      "key": "CoordinatedOperationFinding",
+      "class": "adverse",
+      "because": "integrity-finding"
+    },
+    {
+      "family": "DEMOCRATIC-INTEGRITY",
+      "head": "complete",
+      "key": "ForbiddenDistrictingPurposeFinding",
+      "class": "oversight",
+      "because": "defect"
+    },
+    {
+      "family": "DEMOCRATIC-INTEGRITY",
+      "head": "complete",
+      "key": "InternalDemocraticMinimumFailureFinding",
+      "class": "adverse",
+      "because": "integrity-finding"
+    },
+    {
+      "family": "DEMOCRATIC-INTEGRITY",
+      "head": "complete",
+      "key": "OfficeIntegrityIncompatibilityFinding",
+      "class": "adverse",
+      "because": "integrity-finding"
+    },
+    {
+      "family": "DEMOCRATIC-INTEGRITY",
+      "head": "complete",
+      "key": "OppositionRightWithholdingFinding",
+      "class": "oversight",
+      "because": "defect"
+    },
+    {
+      "family": "DEMOCRATIC-INTEGRITY",
+      "head": "complete",
+      "key": "PoliticalFinanceIncompatibilityFinding",
+      "class": "adverse",
+      "because": "integrity-finding"
+    },
+    {
+      "family": "DEMOCRATIC-INTEGRITY",
+      "head": "complete",
+      "key": "RecordedOppositionPosition",
+      "class": "beneficial",
+      "because": "opposition"
+    },
+    {
+      "family": "DEMOCRATIC-INTEGRITY",
+      "head": "complete",
+      "key": "ReviewedElectoralDistrictPlan",
+      "class": "institutional",
+      "because": "election"
+    },
+    {
+      "family": "DEMOCRATIC-INTEGRITY",
+      "head": "complete",
+      "key": "ReviewedInternalDemocraticSelection",
+      "class": "institutional",
+      "because": "election"
+    },
+    {
+      "family": "SCARCITY-AND-CONFLICT",
+      "head": "complete",
+      "key": "CertifiedScarcityReaderNonresponse",
+      "class": "oversight",
+      "because": "nonresponse"
+    },
+    {
+      "family": "SCARCITY-AND-CONFLICT",
+      "head": "complete",
+      "key": "ReviewedCrossDomainConflict",
+      "class": "adverse",
+      "because": "cross-domain"
+    },
+    {
+      "family": "SCARCITY-AND-CONFLICT",
+      "head": "complete",
+      "key": "ReviewedFalseScarcityFinding",
+      "class": "oversight",
+      "because": "defect"
+    },
+    {
+      "family": "SCARCITY-AND-CONFLICT",
+      "head": "complete",
+      "key": "ReviewedPhysicalScarcityFinding",
+      "class": "adverse",
+      "because": "scarcity"
+    },
+    {
+      "family": "SCARCITY-AND-CONFLICT",
+      "head": "complete",
+      "key": "ReviewedScarcityAllocation",
+      "class": "adverse",
+      "because": "scarcity"
+    },
+    {
+      "family": "SCARCITY-AND-CONFLICT",
+      "head": "complete",
+      "key": "ReviewedScarcityDefect",
+      "class": "oversight",
+      "because": "defect"
+    },
+    {
+      "family": "SCARCITY-AND-CONFLICT",
+      "head": "complete",
+      "key": "ReviewedScarcityShortfall",
+      "class": "beneficial",
+      "because": "shortfall"
+    },
+    {
+      "family": "KNOWLEDGE-AND-FREE-FIELD",
+      "head": "complete",
+      "key": "CertifiedKnowledgeReaderNonresponse",
+      "class": "oversight",
+      "because": "nonresponse"
+    },
+    {
+      "family": "KNOWLEDGE-AND-FREE-FIELD",
+      "head": "complete",
+      "key": "ReviewedAccessibleCommunicationDuty",
+      "class": "beneficial",
+      "because": "knowledge-duty"
+    },
+    {
+      "family": "KNOWLEDGE-AND-FREE-FIELD",
+      "head": "complete",
+      "key": "ReviewedCommunicationConcentrationFinding",
+      "class": "adverse",
+      "because": "concentration"
+    },
+    {
+      "family": "KNOWLEDGE-AND-FREE-FIELD",
+      "head": "complete",
+      "key": "ReviewedInquiryAndCreationAutonomy",
+      "class": "beneficial",
+      "because": "knowledge-duty"
+    },
+    {
+      "family": "KNOWLEDGE-AND-FREE-FIELD",
+      "head": "complete",
+      "key": "ReviewedKnowledgeRecordDefect",
+      "class": "oversight",
+      "because": "defect"
+    },
+    {
+      "family": "KNOWLEDGE-AND-FREE-FIELD",
+      "head": "complete",
+      "key": "ReviewedKnowledgeRestriction",
+      "class": "adverse",
+      "because": "knowledge-restriction"
+    },
+    {
+      "family": "KNOWLEDGE-AND-FREE-FIELD",
+      "head": "complete",
+      "key": "ReviewedKnowledgeRestrictionEnforcement",
+      "class": "adverse",
+      "because": "knowledge-restriction"
+    },
+    {
+      "family": "KNOWLEDGE-AND-FREE-FIELD",
+      "head": "complete",
+      "key": "ReviewedPublicInformationDuty",
+      "class": "beneficial",
+      "because": "knowledge-duty"
+    },
+    {
+      "family": "KNOWLEDGE-AND-FREE-FIELD",
+      "head": "complete",
+      "key": "UnrestrictedKnowledgeActivity",
+      "class": "beneficial",
+      "because": "knowledge-duty"
+    },
+    {
+      "family": "FAMILY-LIFE-ORDINARY",
+      "head": "complete",
+      "key": "BoundedBestInterpretationRoute",
+      "class": "power-over-others",
+      "because": "acts-for-person"
+    },
+    {
+      "family": "FAMILY-LIFE-ORDINARY",
+      "head": "complete",
+      "key": "IndependentLifeCourseRecordDefect",
+      "class": "oversight",
+      "because": "defect"
+    },
+    {
+      "family": "FAMILY-LIFE-ORDINARY",
+      "head": "complete",
+      "key": "IndependentlyEvidencedLifeCourseNonresponse",
+      "class": "oversight",
+      "because": "nonresponse"
+    },
+    {
+      "family": "FAMILY-LIFE-ORDINARY",
+      "head": "complete",
+      "key": "LifeCourseCareContinuity",
+      "class": "beneficial",
+      "because": "care-continuity"
+    },
+    {
+      "family": "FAMILY-LIFE-ORDINARY",
+      "head": "complete",
+      "key": "OwnOriginAndIdentityRecordAccess",
+      "class": "beneficial",
+      "because": "own-record"
+    },
+    {
+      "family": "FAMILY-LIFE-ORDINARY",
+      "head": "complete",
+      "key": "ReviewedAssistanceInitiation",
+      "class": "power-over-others",
+      "because": "acts-for-person"
+    },
+    {
+      "family": "FAMILY-LIFE-ORDINARY",
+      "head": "complete",
+      "key": "ReviewedDecisionSupportArrangement",
+      "class": "power-over-others",
+      "because": "acts-for-person"
+    },
+    {
+      "family": "FAMILY-LIFE-ORDINARY",
+      "head": "complete",
+      "key": "ReviewedLifeCourseRole",
+      "class": "power-over-others",
+      "because": "acts-for-person"
+    },
+    {
+      "family": "FAMILY-LIFE-ORDINARY",
+      "head": "complete",
+      "key": "ReviewedParticipationOfTheAffectedPerson",
+      "class": "beneficial",
+      "because": "access"
+    },
+    {
+      "family": "FAMILY-LIFE-ORDINARY",
+      "head": "complete",
+      "key": "ReviewedReproductiveAndBodilyCareAutonomy",
+      "class": "beneficial",
+      "because": "care-continuity"
+    },
+    {
+      "family": "FAMILY-LIFE-ORDINARY",
+      "head": "complete",
+      "key": "ReviewedTreatmentChoiceOrder",
+      "class": "power-over-others",
+      "because": "acts-for-person"
+    },
+    {
+      "family": "ECOLOGICAL-ANIMAL",
+      "head": "complete",
+      "key": "ECAffectedHumanAnimalProtectionClaim",
+      "class": "beneficial",
+      "because": "claim"
+    },
+    {
+      "family": "ECOLOGICAL-ANIMAL",
+      "head": "complete",
+      "key": "ECAlternateAnimalAdvocateProtectionClaim",
+      "class": "beneficial",
+      "because": "claim"
+    },
+    {
+      "family": "ECOLOGICAL-ANIMAL",
+      "head": "complete",
+      "key": "ECAnimalAdvocateProtectionClaim",
+      "class": "beneficial",
+      "because": "claim"
+    },
+    {
+      "family": "ECOLOGICAL-ANIMAL",
+      "head": "complete",
+      "key": "ECAssociationAnimalProtectionClaim",
+      "class": "beneficial",
+      "because": "claim"
+    },
+    {
+      "family": "ECOLOGICAL-ANIMAL",
+      "head": "complete",
+      "key": "ECAssociationCommonsClaim",
+      "class": "beneficial",
+      "because": "claim"
+    },
+    {
+      "family": "ECOLOGICAL-ANIMAL",
+      "head": "complete",
+      "key": "ECChosenSupporterAnimalProtectionClaim",
+      "class": "beneficial",
+      "because": "claim"
+    },
+    {
+      "family": "ECOLOGICAL-ANIMAL",
+      "head": "complete",
+      "key": "ECEnvironmentalRightClaim",
+      "class": "beneficial",
+      "because": "claim"
+    },
+    {
+      "family": "ECOLOGICAL-ANIMAL",
+      "head": "complete",
+      "key": "ECGuardianCommonsClaim",
+      "class": "beneficial",
+      "because": "claim"
+    },
+    {
+      "family": "ECOLOGICAL-ANIMAL",
+      "head": "complete",
+      "key": "ECPresentPersonCommonsClaim",
+      "class": "beneficial",
+      "because": "claim"
+    },
+    {
+      "family": "ECOLOGICAL-ANIMAL",
+      "head": "complete",
+      "key": "ECProfessionalAnimalProtectionClaim",
+      "class": "beneficial",
+      "because": "claim"
+    },
+    {
+      "family": "ECOLOGICAL-ANIMAL",
+      "head": "complete",
+      "key": "ECRegulatorAnimalProtectionClaim",
+      "class": "beneficial",
+      "because": "claim"
+    },
+    {
+      "family": "ECOLOGICAL-ANIMAL",
+      "head": "complete",
+      "key": "ECRightsAdvocateCommonsClaim",
+      "class": "beneficial",
+      "because": "claim"
+    },
+    {
+      "family": "ECOLOGICAL-ANIMAL",
+      "head": "complete",
+      "key": "ECUrgentPlausibleAnimalProtection",
+      "class": "beneficial",
+      "because": "claim"
+    },
+    {
+      "family": "ECOLOGICAL-ANIMAL",
+      "head": "complete",
+      "key": "ECAnimalAdvocateAppointment",
+      "class": "power-over-others",
+      "because": "office"
+    },
+    {
+      "family": "ECOLOGICAL-ANIMAL",
+      "head": "complete",
+      "key": "ECAnimalAlternateAppointment",
+      "class": "power-over-others",
+      "because": "office"
+    },
+    {
+      "family": "ECOLOGICAL-ANIMAL",
+      "head": "complete",
+      "key": "ECGuardianAppointment",
+      "class": "power-over-others",
+      "because": "office"
+    },
+    {
+      "family": "ECOLOGICAL-ANIMAL",
+      "head": "complete",
+      "key": "ECGuardianAlternateAppointment",
+      "class": "power-over-others",
+      "because": "office"
+    },
+    {
+      "family": "ECOLOGICAL-ANIMAL",
+      "head": "complete",
+      "key": "ECSubstituteReviewerAppointment",
+      "class": "power-over-others",
+      "because": "office"
+    },
+    {
+      "family": "ECOLOGICAL-ANIMAL",
+      "head": "complete",
+      "key": "ECAnimalAdvocateCollegialResult",
+      "class": "institutional",
+      "because": "office-function"
+    },
+    {
+      "family": "ECOLOGICAL-ANIMAL",
+      "head": "complete",
+      "key": "ECAnimalAlternateCollegialResult",
+      "class": "institutional",
+      "because": "office-function"
+    },
+    {
+      "family": "ECOLOGICAL-ANIMAL",
+      "head": "complete",
+      "key": "ECGuardianCollegialResult",
+      "class": "institutional",
+      "because": "office-function"
+    },
+    {
+      "family": "ECOLOGICAL-ANIMAL",
+      "head": "complete",
+      "key": "ECGuardianAlternateCollegialResult",
+      "class": "institutional",
+      "because": "office-function"
+    },
+    {
+      "family": "ECOLOGICAL-ANIMAL",
+      "head": "complete",
+      "key": "ECAnimalAlternateFunction",
+      "class": "institutional",
+      "because": "office-function"
+    },
+    {
+      "family": "ECOLOGICAL-ANIMAL",
+      "head": "complete",
+      "key": "ECGuardianAlternateFunction",
+      "class": "institutional",
+      "because": "office-function"
+    },
+    {
+      "family": "ECOLOGICAL-ANIMAL",
+      "head": "complete",
+      "key": "ECSubstituteReviewerFunction",
+      "class": "institutional",
+      "because": "office-function"
+    },
+    {
+      "family": "ECOLOGICAL-ANIMAL",
+      "head": "complete",
+      "key": "ECIndependentGuardianAnimalConflictDecision",
+      "class": "institutional",
+      "because": "office-function"
+    },
+    {
+      "family": "ECOLOGICAL-ANIMAL",
+      "head": "complete",
+      "key": "ECAnimalAdvocateInformationFunction",
+      "class": "adverse",
+      "because": "information-demand"
+    },
+    {
+      "family": "ECOLOGICAL-ANIMAL",
+      "head": "complete",
+      "key": "ECAlternateAnimalInformationFunction",
+      "class": "adverse",
+      "because": "information-demand"
+    },
+    {
+      "family": "ECOLOGICAL-ANIMAL",
+      "head": "complete",
+      "key": "ECAlternateGuardianInformationFunction",
+      "class": "adverse",
+      "because": "information-demand"
+    },
+    {
+      "family": "ECOLOGICAL-ANIMAL",
+      "head": "complete",
+      "key": "ECGuardianInformationFunction",
+      "class": "adverse",
+      "because": "information-demand"
+    },
+    {
+      "family": "ECOLOGICAL-ANIMAL",
+      "head": "complete",
+      "key": "ECAnimalActivityLicenceOrder",
+      "class": "adverse",
+      "because": "animal-order"
+    },
+    {
+      "family": "ECOLOGICAL-ANIMAL",
+      "head": "complete",
+      "key": "ECAnimalCareRestitutionOrder",
+      "class": "adverse",
+      "because": "animal-order"
+    },
+    {
+      "family": "ECOLOGICAL-ANIMAL",
+      "head": "complete",
+      "key": "ECAnimalCessationOrder",
+      "class": "adverse",
+      "because": "animal-order"
+    },
+    {
+      "family": "ECOLOGICAL-ANIMAL",
+      "head": "complete",
+      "key": "ECAnimalCustodyOrder",
+      "class": "adverse",
+      "because": "animal-order"
+    },
+    {
+      "family": "ECOLOGICAL-ANIMAL",
+      "head": "complete",
+      "key": "ECAnimalHabitatRestorationOrder",
+      "class": "adverse",
+      "because": "animal-order"
+    },
+    {
+      "family": "ECOLOGICAL-ANIMAL",
+      "head": "complete",
+      "key": "ECAnimalMonitoringOrder",
+      "class": "adverse",
+      "because": "animal-order"
+    },
+    {
+      "family": "ECOLOGICAL-ANIMAL",
+      "head": "complete",
+      "key": "ECAnimalNonRepetitionOrder",
+      "class": "adverse",
+      "because": "animal-order"
+    },
+    {
+      "family": "ECOLOGICAL-ANIMAL",
+      "head": "complete",
+      "key": "ECAnimalRecordCorrectionOrder",
+      "class": "adverse",
+      "because": "animal-order"
+    },
+    {
+      "family": "ECOLOGICAL-ANIMAL",
+      "head": "complete",
+      "key": "ECAnimalRehabilitationOrder",
+      "class": "adverse",
+      "because": "animal-order"
+    },
+    {
+      "family": "ECOLOGICAL-ANIMAL",
+      "head": "complete",
+      "key": "ECAnimalRehomingOrder",
+      "class": "adverse",
+      "because": "animal-order"
+    },
+    {
+      "family": "ECOLOGICAL-ANIMAL",
+      "head": "complete",
+      "key": "ECAnimalRescueOrder",
+      "class": "adverse",
+      "because": "animal-order"
+    },
+    {
+      "family": "ECOLOGICAL-ANIMAL",
+      "head": "complete",
+      "key": "ECAnimalSanctuaryOrder",
+      "class": "adverse",
+      "because": "animal-order"
+    },
+    {
+      "family": "ECOLOGICAL-ANIMAL",
+      "head": "complete",
+      "key": "ECAnimalStructuralRemedyOrder",
+      "class": "adverse",
+      "because": "animal-order"
+    },
+    {
+      "family": "ECOLOGICAL-ANIMAL",
+      "head": "complete",
+      "key": "ECAnimalUseDisqualificationOrder",
+      "class": "adverse",
+      "because": "animal-order"
+    },
+    {
+      "family": "ECOLOGICAL-ANIMAL",
+      "head": "complete",
+      "key": "ECAnimalVeterinaryOrder",
+      "class": "adverse",
+      "because": "animal-order"
+    },
+    {
+      "family": "ECOLOGICAL-ANIMAL",
+      "head": "complete",
+      "key": "ECSeparateHumanJusticeForAnimalViolation",
+      "class": "adverse",
+      "because": "animal-order"
+    },
+    {
+      "family": "ECOLOGICAL-ANIMAL",
+      "head": "complete",
+      "key": "ECWildHumanCausedAnimalHarm",
+      "class": "adverse",
+      "because": "animal-order"
+    },
+    {
+      "family": "ECOLOGICAL-ANIMAL",
+      "head": "complete",
+      "key": "ECBoundedWildAnimalInterventionTest",
+      "class": "adverse",
+      "because": "animal-use"
+    },
+    {
+      "family": "ECOLOGICAL-ANIMAL",
+      "head": "complete",
+      "key": "ECEnhancedAnimalUseTest",
+      "class": "adverse",
+      "because": "animal-use"
+    },
+    {
+      "family": "ECOLOGICAL-ANIMAL",
+      "head": "complete",
+      "key": "ECGraveAnimalRiskResponseTest",
+      "class": "adverse",
+      "because": "animal-use"
+    },
+    {
+      "family": "ECOLOGICAL-ANIMAL",
+      "head": "complete",
+      "key": "ECStrictAllAnimalFoodTest",
+      "class": "adverse",
+      "because": "animal-use"
+    },
+    {
+      "family": "ECOLOGICAL-ANIMAL",
+      "head": "complete",
+      "key": "ECStrictAllAnimalResearchTest",
+      "class": "adverse",
+      "because": "animal-use"
+    },
+    {
+      "family": "ECOLOGICAL-ANIMAL",
+      "head": "complete",
+      "key": "ECHighConsequenceAuthorizationBasis",
+      "class": "adverse",
+      "because": "animal-use"
+    },
+    {
+      "family": "ECOLOGICAL-ANIMAL",
+      "head": "complete",
+      "key": "ECActualPhysicalScarcityDuringDualFailure",
+      "class": "adverse",
+      "because": "animal-use"
+    },
+    {
+      "family": "ECOLOGICAL-ANIMAL",
+      "head": "complete",
+      "key": "ECAnimalCategoricalRefusal",
+      "class": "adverse",
+      "because": "custodian-duty"
+    },
+    {
+      "family": "ECOLOGICAL-ANIMAL",
+      "head": "complete",
+      "key": "ECCaptiveWildAnimalProtection",
+      "class": "adverse",
+      "because": "custodian-duty"
+    },
+    {
+      "family": "ECOLOGICAL-ANIMAL",
+      "head": "complete",
+      "key": "ECControlledAnimalWelfareDuties",
+      "class": "adverse",
+      "because": "custodian-duty"
+    },
+    {
+      "family": "ECOLOGICAL-ANIMAL",
+      "head": "complete",
+      "key": "ECDomesticAnimalProtection",
+      "class": "adverse",
+      "because": "custodian-duty"
+    },
+    {
+      "family": "ECOLOGICAL-ANIMAL",
+      "head": "complete",
+      "key": "ECFarmedAnimalProtection",
+      "class": "adverse",
+      "because": "custodian-duty"
+    },
+    {
+      "family": "ECOLOGICAL-ANIMAL",
+      "head": "complete",
+      "key": "ECWorkingAnimalCareAndExit",
+      "class": "adverse",
+      "because": "custodian-duty"
+    },
+    {
+      "family": "ECOLOGICAL-ANIMAL",
+      "head": "complete",
+      "key": "ECCrediblySentientAnimalCoverage",
+      "class": "beneficial",
+      "because": "animal-coverage"
+    },
+    {
+      "family": "ECOLOGICAL-ANIMAL",
+      "head": "complete",
+      "key": "ECAnimalTaxonExtension",
+      "class": "beneficial",
+      "because": "animal-coverage"
+    },
+    {
+      "family": "ECOLOGICAL-ANIMAL",
+      "head": "complete",
+      "key": "ECContributionOrControlLiability",
+      "class": "adverse",
+      "because": "liability"
+    },
+    {
+      "family": "ECOLOGICAL-ANIMAL",
+      "head": "complete",
+      "key": "ECHazardousRestorationLiability",
+      "class": "adverse",
+      "because": "liability"
+    },
+    {
+      "family": "ECOLOGICAL-ANIMAL",
+      "head": "complete",
+      "key": "ECImmediateNoFaultProtection",
+      "class": "adverse",
+      "because": "liability"
+    },
+    {
+      "family": "ECOLOGICAL-ANIMAL",
+      "head": "complete",
+      "key": "ECNonfungibleProtectionFinding",
+      "class": "adverse",
+      "because": "liability"
+    },
+    {
+      "family": "ECOLOGICAL-ANIMAL",
+      "head": "complete",
+      "key": "ECEcologicalNonEvasionProtection",
+      "class": "adverse",
+      "because": "liability"
+    },
+    {
+      "family": "ECOLOGICAL-ANIMAL",
+      "head": "complete",
+      "key": "ECCurrentLegalCeiling",
+      "class": "adverse",
+      "because": "ceiling"
+    },
+    {
+      "family": "ECOLOGICAL-ANIMAL",
+      "head": "complete",
+      "key": "ECProportionatePrecaution",
+      "class": "adverse",
+      "because": "ceiling"
+    },
+    {
+      "family": "ECOLOGICAL-ANIMAL",
+      "head": "complete",
+      "key": "ECFinalGuardianMerits",
+      "class": "adverse",
+      "because": "ceiling"
+    },
+    {
+      "family": "ECOLOGICAL-ANIMAL",
+      "head": "complete",
+      "key": "ECSubstituteFinalGuardianMerits",
+      "class": "adverse",
+      "because": "ceiling"
+    },
+    {
+      "family": "ECOLOGICAL-ANIMAL",
+      "head": "complete",
+      "key": "ECIndependentScientificFinding",
+      "class": "institutional",
+      "because": "science"
+    },
+    {
+      "family": "ECOLOGICAL-ANIMAL",
+      "head": "complete",
+      "key": "ECReviewedAxisCompliance",
+      "class": "institutional",
+      "because": "science"
+    },
+    {
+      "family": "ECOLOGICAL-ANIMAL",
+      "head": "complete",
+      "key": "ECOutcomePreservingReplacement",
+      "class": "institutional",
+      "because": "science"
+    },
+    {
+      "family": "ECOLOGICAL-ANIMAL",
+      "head": "complete",
+      "key": "ECOrdinaryNaturalProcessBoundary",
+      "class": "institutional",
+      "because": "science"
+    },
+    {
+      "family": "ECOLOGICAL-ANIMAL",
+      "head": "complete",
+      "key": "ECHistoricalGuardianFinalDisposition",
+      "class": "institutional",
+      "because": "science"
+    },
+    {
+      "family": "ECOLOGICAL-ANIMAL",
+      "head": "complete",
+      "key": "ECActualCollectiveConsentForEcologicalEffect",
+      "class": "institutional",
+      "because": "collective-consent"
+    },
+    {
+      "family": "ECOLOGICAL-ANIMAL",
+      "head": "complete",
+      "key": "ECActualPriorCollectiveEcologicalConsultation",
+      "class": "institutional",
+      "because": "collective-consent"
+    },
+    {
+      "family": "ECOLOGICAL-ANIMAL",
+      "head": "complete",
+      "key": "ECSeparateCollectiveEnvironmentalReparation",
+      "class": "beneficial",
+      "because": "reparation"
+    },
+    {
+      "family": "ECOLOGICAL-ANIMAL",
+      "head": "complete",
+      "key": "ECSeparateHumanEnvironmentalReparation",
+      "class": "beneficial",
+      "because": "reparation"
+    },
+    {
+      "family": "ECOLOGICAL-ANIMAL",
+      "head": "complete",
+      "key": "ECAnimalFoodFloorAndCareContinuity",
+      "class": "beneficial",
+      "because": "continuity"
+    },
+    {
+      "family": "ECOLOGICAL-ANIMAL",
+      "head": "complete",
+      "key": "ECPublicRestorationContinuity",
+      "class": "beneficial",
+      "because": "continuity"
+    },
+    {
+      "family": "ECOLOGICAL-ANIMAL",
+      "head": "complete",
+      "key": "ECDualFloorAndCeilingContinuity",
+      "class": "beneficial",
+      "because": "continuity"
+    },
+    {
+      "family": "ECOLOGICAL-ANIMAL",
+      "head": "complete",
+      "key": "ECIndependentEcologicalAnimalCorrection",
+      "class": "oversight",
+      "because": "defect"
+    },
+    {
+      "family": "ECOLOGICAL-ANIMAL",
+      "head": "complete",
+      "key": "ECIndependentEcologicalAnimalEndFinding",
+      "class": "oversight",
+      "because": "defect"
+    },
+    {
+      "family": "ECOLOGICAL-ANIMAL",
+      "head": "complete",
+      "key": "ECIndependentEcologicalAnimalRecordDefect",
+      "class": "oversight",
+      "because": "defect"
+    },
+    {
+      "family": "ECOLOGICAL-ANIMAL",
+      "head": "complete",
+      "key": "ECCeilingLegalityReview",
+      "class": "oversight",
+      "because": "defect"
+    },
+    {
+      "family": "ECOLOGICAL-ANIMAL",
+      "head": "complete",
+      "key": "ECUnequalEnvironmentalExposure",
+      "class": "oversight",
+      "because": "defect"
+    },
+    {
+      "family": "ECOLOGICAL-ANIMAL",
+      "head": "complete",
+      "key": "ECIndependentEcologicalAnimalNonresponse",
+      "class": "oversight",
+      "because": "nonresponse"
+    },
+    {
+      "family": "ARTICLES",
+      "head": "agree",
+      "key": "",
+      "class": "adverse",
+      "because": "credibility-candidate"
+    },
+    {
+      "family": "ARTICLES",
+      "head": "decide",
+      "key": "",
+      "class": "beneficial",
+      "because": "ballot"
+    },
+    {
+      "family": "ARTICLES",
+      "head": "person",
+      "key": "",
+      "class": "beneficial",
+      "because": "standing"
+    },
+    {
+      "family": "ARTICLES",
+      "head": "prisoner",
+      "key": "",
+      "class": "adverse",
+      "because": "custody"
+    },
+    {
+      "family": "DELIVERY-RECEIPT",
+      "head": "dwell",
+      "key": "",
+      "class": "beneficial",
+      "because": "delivery"
+    },
+    {
+      "family": "DELIVERY-RECEIPT",
+      "head": "eats",
+      "key": "",
+      "class": "beneficial",
+      "because": "delivery"
+    },
+    {
+      "family": "DELIVERY-RECEIPT",
+      "head": "healthy",
+      "key": "",
+      "class": "beneficial",
+      "because": "delivery"
+    },
+    {
+      "family": "DELIVERY-RECEIPT",
+      "head": "meets",
+      "key": "",
+      "class": "beneficial",
+      "because": "delivery"
+    },
+    {
+      "family": "DELIVERY-RECEIPT",
+      "head": "secure",
+      "key": "",
+      "class": "beneficial",
+      "because": "delivery"
+    },
+    {
+      "family": "DEMOCRATIC-INTEGRITY",
+      "head": "authority",
+      "key": "ElectoralDistrictPlan",
+      "class": "institutional",
+      "because": "election"
+    },
+    {
+      "family": "DEMOCRATIC-INTEGRITY",
+      "head": "authority",
+      "key": "InternalDemocraticCandidateSelection",
+      "class": "institutional",
+      "because": "election"
+    },
+    {
+      "family": "DEMOCRATIC-INTEGRITY",
+      "head": "permits",
+      "key": "ConstitutionalCourtChallenge",
+      "class": "beneficial",
+      "because": "request"
+    },
+    {
+      "family": "DEMOCRATIC-INTEGRITY",
+      "head": "permits",
+      "key": "ElectoralAdministrationChallenge",
+      "class": "beneficial",
+      "because": "request"
+    },
+    {
+      "family": "DEMOCRATIC-INTEGRITY",
+      "head": "permits",
+      "key": "EqualAssemblyInformation",
+      "class": "beneficial",
+      "because": "opposition"
+    },
+    {
+      "family": "ECOLOGICAL-ANIMAL",
+      "head": "interrupt",
+      "key": "ECGuardianAutomaticStay",
+      "class": "adverse",
+      "because": "pause"
+    },
+    {
+      "family": "ECOLOGICAL-ANIMAL",
+      "head": "interrupt",
+      "key": "ECJudicialInterimStay",
+      "class": "adverse",
+      "because": "pause"
+    },
+    {
+      "family": "ECOLOGICAL-ANIMAL",
+      "head": "interrupt",
+      "key": "ECFinalJudicialProtection",
+      "class": "adverse",
+      "because": "pause"
+    },
+    {
+      "family": "ECOLOGICAL-ANIMAL",
+      "head": "permits",
+      "key": "ECOnlyBoundedEnhancedWildAnimalIntervention",
+      "class": "adverse",
+      "because": "animal-use"
+    },
+    {
+      "family": "ECOLOGICAL-ANIMAL",
+      "head": "permits",
+      "key": "ECOnlyEnhancedNonlethalAnimalRiskResponse",
+      "class": "adverse",
+      "because": "animal-use"
+    },
+    {
+      "family": "ECOLOGICAL-ANIMAL",
+      "head": "permits",
+      "key": "ECOnlyExactLawfulInformationAndReviewedEvidenceDemand",
+      "class": "adverse",
+      "because": "information-demand"
+    },
+    {
+      "family": "ECOLOGICAL-ANIMAL",
+      "head": "permits",
+      "key": "ECOnlyExactLawfullyAccessibleAnimalInspection",
+      "class": "adverse",
+      "because": "information-demand"
+    },
+    {
+      "family": "ECOLOGICAL-ANIMAL",
+      "head": "permits",
+      "key": "ECOnlyExistingRightsPreservingPhysicalScarcityAllocation",
+      "class": "adverse",
+      "because": "scarcity"
+    },
+    {
+      "family": "ECOLOGICAL-ANIMAL",
+      "head": "permits",
+      "key": "ECOnlyLastResortLeastPainfulLethalAnimalRiskResponse",
+      "class": "adverse",
+      "because": "animal-use"
+    },
+    {
+      "family": "ECOLOGICAL-ANIMAL",
+      "head": "permits",
+      "key": "ECOnlyReviewedReversibleEssentialContinuity",
+      "class": "beneficial",
+      "because": "continuity"
+    },
+    {
+      "family": "ECOLOGICAL-ANIMAL",
+      "head": "permits",
+      "key": "ECOnlyStrictEnhancedAnimalFoodProduction",
+      "class": "adverse",
+      "because": "animal-use"
+    },
+    {
+      "family": "ECOLOGICAL-ANIMAL",
+      "head": "permits",
+      "key": "ECOnlyStrictEnhancedAnimalResearchTestingOrEducation",
+      "class": "adverse",
+      "because": "animal-use"
+    },
+    {
+      "family": "ECOLOGICAL-ANIMAL",
+      "head": "permits",
+      "key": "ECReplaceableResidualMeasure",
+      "class": "adverse",
+      "because": "liability"
+    },
+    {
+      "family": "FAMILY-LIFE-ORDINARY",
+      "head": "authority",
+      "key": "$role_kind",
+      "class": "power-over-others",
+      "because": "acts-for-person"
+    },
+    {
+      "family": "FAMILY-LIFE-ORDINARY",
+      "head": "authority",
+      "key": "$support_kind",
+      "class": "power-over-others",
+      "because": "acts-for-person"
+    },
+    {
+      "family": "FAMILY-LIFE-ORDINARY",
+      "head": "permits",
+      "key": "$request_kind",
+      "class": "beneficial",
+      "because": "request"
+    },
+    {
+      "family": "INCOME-SECURITY",
+      "head": "insure",
+      "key": "",
+      "class": "beneficial",
+      "because": "supplement"
+    },
+    {
+      "family": "KNOWLEDGE-AND-FREE-FIELD",
+      "head": "authority",
+      "key": "$restriction_kind",
+      "class": "adverse",
+      "because": "knowledge-restriction"
+    },
+    {
+      "family": "KNOWLEDGE-AND-FREE-FIELD",
+      "head": "permits",
+      "key": "$request_kind",
+      "class": "beneficial",
+      "because": "request"
+    },
+    {
+      "family": "KNOWLEDGE-AND-FREE-FIELD",
+      "head": "permits",
+      "key": "InitiateIndependentPluralityReview",
+      "class": "oversight",
+      "because": "defect"
+    },
+    {
+      "family": "KNOWLEDGE-AND-FREE-FIELD",
+      "head": "permits",
+      "key": "PublishInquiryOrCreationWithoutApproval",
+      "class": "beneficial",
+      "because": "knowledge-duty"
+    },
+    {
+      "family": "MOBILITY-PLURALITY",
+      "head": "permits",
+      "key": "InspectExactPrivatePluralityEvidence",
+      "class": "adverse",
+      "because": "private-evidence"
+    },
+    {
+      "family": "MOBILITY-PLURALITY",
+      "head": "permits",
+      "key": "RelyOnExactExternalCompatibilityFinding",
+      "class": "institutional",
+      "because": "external"
+    },
+    {
+      "family": "NON-CARCERAL-JUSTICE",
+      "head": "permits",
+      "key": "FacilitateSpecifiedVoluntaryRestoration",
+      "class": "beneficial",
+      "because": "remedy"
+    },
+    {
+      "family": "NON-CARCERAL-JUSTICE",
+      "head": "permits",
+      "key": "RelyOnSpecifiedCaseRelief",
+      "class": "beneficial",
+      "because": "remedy"
+    },
+    {
+      "family": "OFFICIAL-STATISTICS",
+      "head": "authority",
+      "key": "$purpose",
+      "class": "adverse",
+      "because": "record-holding"
+    },
+    {
+      "family": "OFFICIAL-STATISTICS",
+      "head": "permits",
+      "key": "$request_kind",
+      "class": "beneficial",
+      "because": "request"
+    },
+    {
+      "family": "PUBLIC-SAFETY",
+      "head": "person",
+      "key": "",
+      "class": "beneficial",
+      "because": "standing"
+    },
+    {
+      "family": "PUBLIC-SAFETY",
+      "head": "restrain",
+      "key": "FreeMovement",
+      "class": "adverse",
+      "because": "restraint"
+    },
+    {
+      "family": "PUBLIC-SAFETY",
+      "head": "restrain",
+      "key": "SpecifiedCommunicationPrivacy",
+      "class": "adverse",
+      "because": "restraint"
+    },
+    {
+      "family": "PUBLIC-SAFETY",
+      "head": "restrain",
+      "key": "SpecifiedPhysicalAutonomy",
+      "class": "adverse",
+      "because": "restraint"
+    },
+    {
+      "family": "PUBLIC-SAFETY",
+      "head": "restrain",
+      "key": "SpecifiedPrivacy",
+      "class": "adverse",
+      "because": "restraint"
+    },
+    {
+      "family": "PUBLIC-SAFETY",
+      "head": "restrain",
+      "key": "SpecifiedPropertyUse",
+      "class": "adverse",
+      "because": "restraint"
+    },
+    {
+      "family": "QUALIFICATIONS-COMPENSATION",
+      "head": "grant",
+      "key": "$function",
+      "class": "beneficial",
+      "because": "supplement"
+    },
+    {
+      "family": "QUALIFICATIONS-COMPENSATION",
+      "head": "provide",
+      "key": "$kind",
+      "class": "beneficial",
+      "because": "supplement"
+    },
+    {
+      "family": "QUALIFICATIONS-COMPENSATION",
+      "head": "provide",
+      "key": "Restitution",
+      "class": "adverse",
+      "because": "liability"
+    },
+    {
+      "family": "RECORD-POWER",
+      "head": "authority",
+      "key": "$purpose",
+      "class": "adverse",
+      "because": "record-holding"
+    },
+    {
+      "family": "RECORD-POWER",
+      "head": "permits",
+      "key": "$request_kind",
+      "class": "beneficial",
+      "because": "request"
+    },
+    {
+      "family": "RECORD-POWER",
+      "head": "permits",
+      "key": "ContestAutomatedSupport",
+      "class": "beneficial",
+      "because": "request"
+    },
+    {
+      "family": "SCARCITY-AND-CONFLICT",
+      "head": "authority",
+      "key": "AdministerPhysicalScarcity",
+      "class": "adverse",
+      "because": "scarcity"
+    },
+    {
+      "family": "SUBSTANTIVE-EQUALITY-ORDINARY",
+      "head": "authority",
+      "key": "$measure_kind",
+      "class": "adverse",
+      "because": "positive-measure"
+    },
+    {
+      "family": "SUBSTANTIVE-EQUALITY-ORDINARY",
+      "head": "permits",
+      "key": "ApplyTheBoundedPositiveMeasure",
+      "class": "adverse",
+      "because": "positive-measure"
+    },
+    {
+      "family": "SUBSTANTIVE-EQUALITY-ORDINARY",
+      "head": "permits",
+      "key": "PursueTheRemedialEqualityProceeding",
+      "class": "beneficial",
+      "because": "request"
+    },
+    {
+      "family": "SUBSTANTIVE-EQUALITY-ORDINARY",
+      "head": "permits",
+      "key": "UseTheRightServiceRoleOrProcedureWithTheAdjustment",
+      "class": "beneficial",
+      "because": "accommodation"
+    },
+    {
+      "family": "MOBILITY-PLURALITY",
+      "head": "authority",
+      "key": "BoundedMinorityTerritorialGovernment",
+      "class": "power-over-others",
+      "because": "self-government"
+    },
+    {
+      "family": "MOBILITY-PLURALITY",
+      "head": "authority",
+      "key": "IndigenousInternalAndLocalGovernment",
+      "class": "power-over-others",
+      "because": "self-government"
+    },
+    {
+      "family": "MOBILITY-PLURALITY",
+      "head": "authority",
+      "key": "RightsBoundedInternalDecision",
+      "class": "power-over-others",
+      "because": "self-government"
+    },
+    {
+      "family": "MOBILITY-PLURALITY",
+      "head": "permits",
+      "key": "RelyOnConsultationForExactCollectiveEffect",
+      "class": "adverse",
+      "because": "collective-effect"
+    },
+    {
+      "family": "NON-CARCERAL-JUSTICE",
+      "head": "permits",
+      "key": "ImplementSpecifiedNoncoerciveRemedy",
+      "class": "adverse",
+      "because": "charging"
+    },
+    {
+      "family": "OFFICIAL-STATISTICS",
+      "head": "permits",
+      "key": "InitiateIndependentSystemicEqualityAudit",
+      "class": "oversight",
+      "because": "presumption"
+    },
+    {
+      "family": "OFFICIAL-STATISTICS",
+      "head": "permits",
+      "key": "PublishPrivacySafeStatistics",
+      "class": "institutional",
+      "because": "statistics-release"
+    },
+    {
+      "family": "FAMILY-LIFE-ORDINARY",
+      "head": "permits",
+      "key": "ParticipateInTheAffectedLifeCourseDecision",
+      "class": "beneficial",
+      "because": "access"
+    }
+  ]
+}

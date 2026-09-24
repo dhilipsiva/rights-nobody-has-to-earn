@@ -225,22 +225,6 @@ changes it.
 
 ### Resolve the design questions, source and pins first
 
-- [ ] **42. Measure the procedural load.**
-
-  **Scope:** every rule family and its generator; plan §7.5; ruling D6.
-
-  Classify each consequential conclusion as beneficial (it gives, preserves
-  or releases) or adverse (it restricts, takes, confines or finds against),
-  and generate from the source the distinct roles each needs before it takes
-  effect: the plan's "signature budget". Mark duplicated steps. Part V already
-  says "More signatures have no value in themselves". The table goes in the
-  method as a list, not a score. This item changes no rule; item 43 applies
-  ruling D6 from its table.
-
-  **Done when:** the generator and its table exist, the classification has
-  been reviewed against the source, and each duplicated step is listed with
-  its family.
-
 - [ ] **43. Apply ruling D6: fast for help, slow for harm.**
 
   **Scope:** every family item 42 classifies, their contract cards, and

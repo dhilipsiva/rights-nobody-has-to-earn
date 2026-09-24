@@ -112,7 +112,8 @@ Useful authoring generators remain behind `./generate.sh adversarial-audit`,
 `./generate.sh obligations`, `./generate.sh integrity`,
 `./generate.sh statistics`, `./generate.sh amendment`, `./generate.sh mobility`,
 `./generate.sh justice`, `./generate.sh knowledge`,
-`./generate.sh reader-coverage`, `./generate.sh record-power`,
+`./generate.sh procedural-load`, `./generate.sh reader-coverage`,
+`./generate.sh record-power`,
 `./generate.sh resolution-receipts`, `./generate.sh scarcity`,
 `./generate.sh public-safety`, `./generate.sh ecology`, and
 `./generate.sh spine`. They write semantic
@@ -132,6 +133,42 @@ reinstate the retired tooling or workflow.
 
 Grouped by kind. Dates in each heading are the ratification dates; a ruling
 that was later implemented or narrowed carries that supersession inline.
+
+### Item 42 — the procedural load, measured, 2026-09-24
+
+`./generate.sh procedural-load` reads every gated effect in the constitution —
+each completed record, permission, authority, restraint, stay, custody, standing
+and delivery conclusion that rests on an authorised role — and writes
+`book-1/source/procedural-load.md`: the roles that act on each effect's own
+record, the roles that write identical fields onto it, and the roles on every
+completed record it reads. `book-1/source/procedural-load-source.json`
+classifies each effect as beneficial, adverse, power over others, oversight or
+institutional, with a reason; 422 explicit entries cover every record kind and
+every effect gated directly on raw records, and 94 permissions and authorities
+inherit the class of the record they read, seven of them overridden where the
+inherited class was wrong. The classification is conservative: an act that also
+binds a custodian, an owner or a third party is adverse, and an appointment or a
+role acting for somebody is power over others. Duties and barriers are outside
+the table, which says so and counts them.
+
+**The duplicated steps are listed by family.** The newer families attest each
+record three times over: a source, an evidence attester and an independent
+reviewer write the same fields. Public safety adds its authorising body to that
+set, the ecological family has a source and a reviewer writing the same fields
+on almost every record, and state-form and economic records repeat source,
+record-review and acting-body attestations. Of the 516 effects, 83 are
+beneficial; most need five or six roles today, and the delivery, supplement,
+compensation and certificate conclusions need one. The table is a list, not a
+score, and totals nothing.
+
+Six development tests hold it: the classification covers the source and uses
+every class; an unclassified record kind, a classification naming no effect and
+a role with no function each fail; the three matching accommodation attesters
+are found; and the report is current. The method gains "What an act needs before
+it takes effect", a list of what the beneficial effects need, `session-drafted,
+author-approved under delegated approval (2026-09-13)`. No rule or pin changes,
+so item 41's complete run on the same formal inputs stands: 88,886 pins across
+16,139 cases with no findings. Item 43 applies ruling D6 from the table.
 
 ### Item 41 — the signing restriction, stated and named, 2026-09-24
 
@@ -5561,6 +5598,7 @@ set of things a command cannot teach you and a rename cannot re-derive.
 ./generate.sh amendment
 ./generate.sh mobility
 ./generate.sh knowledge
+./generate.sh procedural-load
 ./generate.sh reader-coverage
 ./generate.sh record-power
 ./generate.sh resolution-receipts
