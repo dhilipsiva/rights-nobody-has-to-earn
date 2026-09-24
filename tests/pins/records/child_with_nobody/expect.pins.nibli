@@ -11,7 +11,7 @@
 #
 # Register: every pin is an entry present, an entry absent, a conclusion that
 # derives, or one that does not. Nothing here is a finding about Nell.
-:expect-pins 150
+:expect-pins 153
 
 # The one entry.
 ? born(Nell).
@@ -68,6 +68,9 @@
 ? owe(State, Secure, Nell).
 # => TRUE
 
+? owe(State, Suffice, Nell).
+# => TRUE
+
 ? owe(State, Expresses, Nell).
 # => TRUE
 
@@ -78,6 +81,9 @@
 # => TRUE
 
 ? entitled(Nell, event { secure() }).
+# => TRUE
+
+? entitled(Nell, event { suffice() }).
 # => TRUE
 
 ? entitled(Nell, event { eats() }).
@@ -438,6 +444,9 @@
 # => FALSE
 
 ? secure(Nell).
+# => FALSE
+
+? suffice(Nell).
 # => FALSE
 
 ? meets(Nell).

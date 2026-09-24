@@ -130,8 +130,8 @@ readmission are not results this constitution can produce.
 ## The child with nobody
 
 Beside the supplied declaration and requisition, Nell remains a person, is
-owed security and retains free movement. Neither restraint nor a prisoner
-conclusion follows from this birth-only record.
+owed bodily safety and material security, and retains free movement. Neither
+restraint nor a prisoner conclusion follows from this birth-only record.
 
 That result supplies no general immunity from emergency measures. A measure
 concerning a child still needs its own grounds and authority; a declaration

@@ -1,5 +1,5 @@
 # SPDX-License-Identifier: MIT OR Apache-2.0
-:expect-pins 26
+:expect-pins 27
 ? complete(ECExtendedTaxonV16, ECAnimalTaxonExtension, ECExtendedTaxonV24).
 # => TRUE
 ? obliged(FSBOD_28, ECExtendThePresumptionOnCredibleRealisticPossibilityNotCertainty, ECExtendedTaxonV16).
@@ -27,6 +27,8 @@ authorized(ECRemovedTaxonV20, ECIndependentReviewAuthority, ECRemovedTaxonV18).
 ? person(ECExtendedAnimalV23).
 # => FALSE
 ? entitled(ECExtendedAnimalV23, event { secure() }).
+# => FALSE
+? entitled(ECExtendedAnimalV23, event { suffice() }).
 # => FALSE
 ? entitled(ECExtendedAnimalV23, event { eats() }).
 # => FALSE

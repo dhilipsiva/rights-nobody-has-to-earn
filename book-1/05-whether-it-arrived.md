@@ -7,10 +7,10 @@ by checking them against each other.
 
 ## Owed is not the same as delivered
 
-No food-delivery conclusion follows for Bela in the supplied record.
-Shelter, care, material security and
-company are likewise unsupported by recipient-side evidence. This does not
-establish that Bela is hungry, homeless, ill, unsafe or alone.
+No food-delivery conclusion follows for Bela in the supplied record. Shelter,
+care, material security and company are likewise unsupported by recipient-side
+evidence. This does not establish that Bela is hungry, homeless, ill, without
+essential goods or alone.
 
 Marisol supplies the positive comparison. The test records a receipt of food
 from Provender. That alone produces no food-delivery conclusion. It then gives
@@ -43,10 +43,12 @@ Those questions need their own evidence.
 
 Learning has a distinct route through teaching that was heard. Its supplied
 teaching and hearing entries need no separately authorised delivery witness.
-They support a learning conclusion, not a complete account of accessible learning.
-Belief and freedom of expression have no comparable delivery certificate.
-Protecting either does not authorise an institution to certify what someone
-believes or that they have exercised a liberty.
+They support a learning conclusion, not a complete account of accessible
+learning. Bodily safety, belief and freedom of expression have no comparable
+delivery certificate. Safety is guaranteed as protection, answered by the
+protective duties rather than by a receipt. Protecting either does not authorise
+an institution to certify what someone believes or that they have exercised a
+liberty.
 
 ## Different kinds of claim
 

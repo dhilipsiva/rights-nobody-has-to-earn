@@ -23,7 +23,7 @@
 # is untouched. Pin a FALSE only where the KB could have said TRUE, and say in
 # the comment what would flip it.
 
-:expect-pins 102
+:expect-pins 104
 # --- v0.1 regression pins ---
 ? false(Bela).
 # => TRUE
@@ -124,6 +124,8 @@
 # => FALSE
 ? secure(Bela).
 # => FALSE
+? suffice(Bela).
+# => FALSE
 ? learn(Cira).
 # => FALSE
 ? believe(Bela).
@@ -148,6 +150,9 @@ all $x: person($x) & ~eats($x) -> prisoner($x).
 
 :refuse reasoning /'prisoner' -> 'secure'/
 all $x: person($x) & ~secure($x) -> prisoner($x).
+
+:refuse reasoning /Unstratifiable negation: strongly-connected component containing/
+all $x: person($x) & ~suffice($x) -> prisoner($x).
 
 # ── ARTICLE 0: closed relations refuse direct assertion ──────────────────────
 :refuse reasoning /declared derived-only/

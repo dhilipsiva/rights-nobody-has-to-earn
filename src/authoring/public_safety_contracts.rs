@@ -55,6 +55,7 @@ impl Card {
 
 pub(super) const FLOOR: &[&str] = &[
     "secure",
+    "suffice",
     "eats",
     "dwell",
     "healthy",

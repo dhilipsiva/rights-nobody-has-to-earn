@@ -3,13 +3,12 @@
 What must a society provide for a person who can offer it nothing in return?
 And how can that person hold it to the promise?
 
-I propose a constitution in which being a person establishes standing in law
-and a claim to essentials. Employment, wealth, citizenship, family and good
-behaviour are not entrance requirements. Food, shelter, care, learning,
-safety, expression, belief and company form a **floor**: a set of entitlements
-that neither private dependence nor public punishment may withdraw.
-Above it, people choose lives the
-constitution does not prescribe.
+I propose a constitution in which being a person establishes standing in law and
+a claim to essentials. Employment, wealth, citizenship, family and good
+behaviour are not entrance requirements. Food, shelter, care, learning, bodily
+safety, material security, expression, belief and company form a **floor**: a
+set of entitlements that neither private dependence nor public punishment may
+withdraw. Above it, people choose lives the constitution does not prescribe.
 
 Those commitments leave important choices open. I put responsibility for
 usable essentials on public bodies while allowing different providers.
@@ -258,6 +257,10 @@ the main reading sequence; the method follows it as an optional technical part.
   in the paired credibility-finding route.
 - **Floor:** what every person is owed without conditions of employment,
   registration, belonging, payment or approved behaviour.
+- **Bodily safety:** freedom from violence and threats to the person; a floor
+  item guaranteed as protection rather than shown by a receipt.
+- **Material security:** the essential goods a person needs beyond food and
+  shelter; a floor item whose arrival a recipient-side receipt can show.
 - **Protected core:** standing, the floor and other specified human rights,
   commons and direct animal protections that lawful constitutional amendment
   must preserve. It does not include every present institution.

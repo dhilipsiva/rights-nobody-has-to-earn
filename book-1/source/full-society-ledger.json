@@ -134056,7 +134056,7 @@
       "id": "FS-CCE-09",
       "title": "Material-floor inventory boundary",
       "effect_key": "material-floor-inventory",
-      "applicability": "The eight existing material-floor entitlements remain unchanged; environmental conditions are a distinct right and never a ninth floor item.",
+      "applicability": "The existing floor entitlements remain unchanged, with bodily safety and material security as separate items under ruling D8; environmental conditions are a distinct right and never a floor item.",
       "layer": "constitutional-invariant",
       "status": "current",
       "severity": "critical if the boundary is omitted or collapsed",
@@ -134106,11 +134106,11 @@
         "The retained T3 custody record borrowed as floor or ecology evidence"
       ],
       "permitted_downstream_effects": [
-        "The eight existing material-floor entitlements remain unchanged; environmental conditions are a distinct right and never a ninth floor item."
+        "The existing floor entitlements remain unchanged, with bodily safety and material security as separate items under ruling D8; environmental conditions are a distinct right and never a floor item."
       ],
       "contract_terms": {
         "lawful_source": {
-          "text": "Material-floor inventory boundary assigns its lawful source boundary to this direct effect: The eight existing material-floor entitlements remain unchanged; environmental conditions are a distinct right and never a ninth floor item. The record remains contestable and cannot establish operation.",
+          "text": "Material-floor inventory boundary assigns its lawful source boundary to this direct effect: The existing floor entitlements remain unchanged, with bodily safety and material security as separate items under ruling D8; environmental conditions are a distinct right and never a floor item. The record remains contestable and cannot establish operation.",
           "basis": "source-specified",
           "source_refs": [
             "book-1/appendix/decisions/ecological-future-generation-commons-and-non-human-animal-decision.md::## 1. Decision",
@@ -134118,7 +134118,7 @@
           ]
         },
         "trigger": {
-          "text": "Material-floor inventory boundary assigns its trigger boundary to this direct effect: The eight existing material-floor entitlements remain unchanged; environmental conditions are a distinct right and never a ninth floor item. The record remains contestable and cannot establish operation.",
+          "text": "Material-floor inventory boundary assigns its trigger boundary to this direct effect: The existing floor entitlements remain unchanged, with bodily safety and material security as separate items under ruling D8; environmental conditions are a distinct right and never a floor item. The record remains contestable and cannot establish operation.",
           "basis": "source-specified",
           "source_refs": [
             "book-1/appendix/decisions/ecological-future-generation-commons-and-non-human-animal-decision.md::## 1. Decision",
@@ -134126,7 +134126,7 @@
           ]
         },
         "evidence_rule": {
-          "text": "Material-floor inventory boundary assigns its evidence rule boundary to this direct effect: The eight existing material-floor entitlements remain unchanged; environmental conditions are a distinct right and never a ninth floor item. The record remains contestable and cannot establish operation.",
+          "text": "Material-floor inventory boundary assigns its evidence rule boundary to this direct effect: The existing floor entitlements remain unchanged, with bodily safety and material security as separate items under ruling D8; environmental conditions are a distinct right and never a floor item. The record remains contestable and cannot establish operation.",
           "basis": "source-specified",
           "source_refs": [
             "book-1/appendix/decisions/ecological-future-generation-commons-and-non-human-animal-decision.md::## 1. Decision",
@@ -134134,7 +134134,7 @@
           ]
         },
         "bounded_effect": {
-          "text": "Material-floor inventory boundary assigns its bounded effect boundary to this direct effect: The eight existing material-floor entitlements remain unchanged; environmental conditions are a distinct right and never a ninth floor item. The record remains contestable and cannot establish operation.",
+          "text": "Material-floor inventory boundary assigns its bounded effect boundary to this direct effect: The existing floor entitlements remain unchanged, with bodily safety and material security as separate items under ruling D8; environmental conditions are a distinct right and never a floor item. The record remains contestable and cannot establish operation.",
           "basis": "source-specified",
           "source_refs": [
             "book-1/appendix/decisions/ecological-future-generation-commons-and-non-human-animal-decision.md::## 1. Decision",
@@ -134142,7 +134142,7 @@
           ]
         },
         "forbidden_preconditions": {
-          "text": "Material-floor inventory boundary assigns its forbidden preconditions boundary to this direct effect: The eight existing material-floor entitlements remain unchanged; environmental conditions are a distinct right and never a ninth floor item. The record remains contestable and cannot establish operation.",
+          "text": "Material-floor inventory boundary assigns its forbidden preconditions boundary to this direct effect: The existing floor entitlements remain unchanged, with bodily safety and material security as separate items under ruling D8; environmental conditions are a distinct right and never a floor item. The record remains contestable and cannot establish operation.",
           "basis": "source-specified",
           "source_refs": [
             "book-1/appendix/decisions/ecological-future-generation-commons-and-non-human-animal-decision.md::## 1. Decision",
@@ -134150,7 +134150,7 @@
           ]
         },
         "immediate_access": {
-          "text": "Material-floor inventory boundary assigns its immediate access boundary to this direct effect: The eight existing material-floor entitlements remain unchanged; environmental conditions are a distinct right and never a ninth floor item. The record remains contestable and cannot establish operation.",
+          "text": "Material-floor inventory boundary assigns its immediate access boundary to this direct effect: The existing floor entitlements remain unchanged, with bodily safety and material security as separate items under ruling D8; environmental conditions are a distinct right and never a floor item. The record remains contestable and cannot establish operation.",
           "basis": "source-specified",
           "source_refs": [
             "book-1/appendix/decisions/ecological-future-generation-commons-and-non-human-animal-decision.md::## 1. Decision",
@@ -134158,7 +134158,7 @@
           ]
         },
         "record_boundary": {
-          "text": "Material-floor inventory boundary assigns its record boundary boundary to this direct effect: The eight existing material-floor entitlements remain unchanged; environmental conditions are a distinct right and never a ninth floor item. The record remains contestable and cannot establish operation.",
+          "text": "Material-floor inventory boundary assigns its record boundary boundary to this direct effect: The existing floor entitlements remain unchanged, with bodily safety and material security as separate items under ruling D8; environmental conditions are a distinct right and never a floor item. The record remains contestable and cannot establish operation.",
           "basis": "source-specified",
           "source_refs": [
             "book-1/appendix/decisions/ecological-future-generation-commons-and-non-human-animal-decision.md::## 1. Decision",
@@ -134166,7 +134166,7 @@
           ]
         },
         "challenge_correction": {
-          "text": "Material-floor inventory boundary assigns its challenge correction boundary to this direct effect: The eight existing material-floor entitlements remain unchanged; environmental conditions are a distinct right and never a ninth floor item. The record remains contestable and cannot establish operation.",
+          "text": "Material-floor inventory boundary assigns its challenge correction boundary to this direct effect: The existing floor entitlements remain unchanged, with bodily safety and material security as separate items under ruling D8; environmental conditions are a distinct right and never a floor item. The record remains contestable and cannot establish operation.",
           "basis": "source-specified",
           "source_refs": [
             "book-1/appendix/decisions/ecological-future-generation-commons-and-non-human-animal-decision.md::## 1. Decision",
@@ -134174,7 +134174,7 @@
           ]
         },
         "independent_check": {
-          "text": "Material-floor inventory boundary assigns its independent check boundary to this direct effect: The eight existing material-floor entitlements remain unchanged; environmental conditions are a distinct right and never a ninth floor item. The record remains contestable and cannot establish operation.",
+          "text": "Material-floor inventory boundary assigns its independent check boundary to this direct effect: The existing floor entitlements remain unchanged, with bodily safety and material security as separate items under ruling D8; environmental conditions are a distinct right and never a floor item. The record remains contestable and cannot establish operation.",
           "basis": "source-specified",
           "source_refs": [
             "book-1/appendix/decisions/ecological-future-generation-commons-and-non-human-animal-decision.md::## 1. Decision",
@@ -134182,7 +134182,7 @@
           ]
         },
         "failure_default": {
-          "text": "Material-floor inventory boundary assigns its failure default boundary to this direct effect: The eight existing material-floor entitlements remain unchanged; environmental conditions are a distinct right and never a ninth floor item. The record remains contestable and cannot establish operation.",
+          "text": "Material-floor inventory boundary assigns its failure default boundary to this direct effect: The existing floor entitlements remain unchanged, with bodily safety and material security as separate items under ruling D8; environmental conditions are a distinct right and never a floor item. The record remains contestable and cannot establish operation.",
           "basis": "source-specified",
           "source_refs": [
             "book-1/appendix/decisions/ecological-future-generation-commons-and-non-human-animal-decision.md::## 1. Decision",
@@ -134190,7 +134190,7 @@
           ]
         },
         "end_or_retention": {
-          "text": "Material-floor inventory boundary assigns its end or retention boundary to this direct effect: The eight existing material-floor entitlements remain unchanged; environmental conditions are a distinct right and never a ninth floor item. The record remains contestable and cannot establish operation.",
+          "text": "Material-floor inventory boundary assigns its end or retention boundary to this direct effect: The existing floor entitlements remain unchanged, with bodily safety and material security as separate items under ruling D8; environmental conditions are a distinct right and never a floor item. The record remains contestable and cannot establish operation.",
           "basis": "source-specified",
           "source_refs": [
             "book-1/appendix/decisions/ecological-future-generation-commons-and-non-human-animal-decision.md::## 1. Decision",

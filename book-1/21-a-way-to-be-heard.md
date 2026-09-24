@@ -103,10 +103,10 @@ review. Both boundaries matter to the person waiting for an answer.
 
 ## The child with nobody
 
-Nell retains personhood, the security debt and protection against making
-wealth, documentation or status a condition of access. Nell's record supplies
-no request or hearing. The routes that begin with a request therefore yield
-no hearing conclusion for this child.
+Nell retains personhood, the debts for bodily safety and material security,
+and protection against making wealth, documentation or status a condition of
+access. Nell's record supplies no request or hearing. The routes that begin
+with a request therefore yield no hearing conclusion for this child.
 
 The independent rights advocate's duty to initiate assistance and representation
 needs no request. The appointment route must preserve Nell's voice and

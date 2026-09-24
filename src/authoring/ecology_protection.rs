@@ -6,6 +6,7 @@ use super::Card;
 
 pub(super) const FLOOR: &[&str] = &[
     "secure",
+    "suffice",
     "eats",
     "dwell",
     "healthy",

@@ -12,6 +12,32 @@
 > prose cannot complete or upgrade the specification. Neither repository status
 > proves lawful enactment or deployment.
 
+## Bodily safety and material security — 2026-09-24
+
+Ruling D8 splits the floor's safety item in two, and item 44 implements it.
+`secure` is bodily safety and `suffice` is material security; each is a separate
+unconditional entitlement, debt and firewall-protected floor item. The contract
+for each, in this map's fields:
+
+| Field | Bodily safety (`secure`) | Material security (`suffice`) |
+|---|---|---|
+| Holder | Every person, on personhood alone. | Every person, on personhood alone. |
+| Duty-bearer | The public body owing the floor, through its tiers (Article 1b), and the protective functions the public-safety family separates. | The public body owing the floor, through its tiers (Article 1b). |
+| Minimum or limit | Freedom from violence and threats to the person; no one may be confined, restrained or otherwise coerced for lacking it. | The essential goods a person needs beyond food and shelter; no one may be confined or coerced for lacking them. |
+| Admissible evidence | No receipt route: safety is answered by protective duties, incident findings and their remedies, never by a record that it arrived. | A recipient-side receipt independently attested by a witness authorised for the person and distinct from the source (`FS-CCE-193`). |
+| Failure | A protective incident, holding or force finding, or a breach of a protective duty; absence of a record is never a finding. | A missing receipt establishes nothing; a certified shortfall or tier failure engages continuity. |
+| Interim continuity and remedy | The protective duties, the holding and disclosure protections, and the public-safety remedies. | Tier continuity on a certified failure, the scarcity shortfall route and individual remedy. |
+| Appeal | The justice family's access, hearing and appeal routes. | The same routes. |
+| Audit | The integrity and audit function's review of protective records. | The same audit route as the other material items. |
+| Independent check | Independent investigation of protective incidents by a body other than the deploying one. | The receipt witness's separation from the provider and the independent reviewers of the certification routes. |
+| Book 2 handoff | Policing, protection and incident operation, capacity and staffing. | Provision of essential goods, supply, logistics and cost. |
+
+`floor_vector_tests` holds both in the floor list; Chapter 4's pins refuse a
+confinement rule for lacking any item, bodily safety and material security
+separately, and the delivery case derives material security from a receipt
+while the same receipt derives no bodily safety. This creates no operation,
+arrival or measure of either item.
+
 ## Contribution and credibility scope update — 2026-09-20
 
 The [recognition decision](../decisions/recognition-purpose-decision.md) removes

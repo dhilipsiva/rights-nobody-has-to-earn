@@ -2,7 +2,7 @@
 # Owed is not delivered, and the record says which it has. Every floor item
 # is owed to Oren and not one of them arrives, because nothing was recorded
 # as having reached him. This is the chapter-4 claim, executable.
-:expect-pins 12
+:expect-pins 13
 
 ? eats(Oren).
 # => FALSE
@@ -11,6 +11,8 @@
 ? healthy(Oren).
 # => FALSE
 ? secure(Oren).
+# => FALSE
+? suffice(Oren).
 # => FALSE
 ? meets(Oren).
 # => FALSE

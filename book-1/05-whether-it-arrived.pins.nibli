@@ -18,7 +18,7 @@
 # WHAT FALSE MEANS HERE: a FALSE is pinned only where the KB could have said
 # TRUE, and the comment says what would flip it.
 
-:expect-pins 16
+:expect-pins 17
 
 # "Ask whether Bela eats in the record supplied with this book ... The answer
 # is no." — the routes ship dormant in the cast.
@@ -32,6 +32,9 @@
 # => FALSE
 
 ? secure(Bela).
+# => FALSE
+
+? suffice(Bela).
 # => FALSE
 
 ? meets(Bela).

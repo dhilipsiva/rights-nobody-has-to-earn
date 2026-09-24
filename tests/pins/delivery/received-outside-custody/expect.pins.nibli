@@ -5,8 +5,10 @@
 # witness who is not the provider, and the floor arrives without a conviction.
 #
 # This establishes what FOLLOWS from a supplied receipt. It does not establish
-# that anybody was fed, housed, treated, protected or visited.
-:expect-pins 9
+# that anybody was fed, housed, treated, materially provided for or visited.
+# Material security arrives on its receipt; bodily safety has no receipt route,
+# so the same receipt establishes no safety.
+:expect-pins 10
 
 ? eats(Yenna).
 # => TRUE
@@ -14,8 +16,10 @@
 # => TRUE
 ? healthy(Yenna).
 # => TRUE
-? secure(Yenna).
+? suffice(Yenna).
 # => TRUE
+? secure(Yenna).
+# => FALSE
 ? meets(Yenna).
 # => TRUE
 

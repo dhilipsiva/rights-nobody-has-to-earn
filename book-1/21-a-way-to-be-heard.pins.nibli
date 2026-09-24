@@ -35,7 +35,7 @@
 # up, and do not scope it: the block's whole point is to ask what the accepted
 # rule derived.
 
-:expect-pins 31
+:expect-pins 32
 
 # ── "A right needs a way to be heard when somebody denies it." ─────────────
 ? complete(JCaseRecord, JusticeFairHearing, JCaseCase).
@@ -75,6 +75,9 @@
 # => TRUE
 
 ? owe(State, Secure, Nell).
+# => TRUE
+
+? owe(State, Suffice, Nell).
 # => TRUE
 
 # "money, documents and immigration status cannot be the price of entry" — the

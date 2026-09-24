@@ -1,5 +1,5 @@
 # SPDX-License-Identifier: MIT OR Apache-2.0
-:expect-pins 17
+:expect-pins 18
 ? complete(ECMinimumAnimalV16, ECCrediblySentientAnimalCoverage, ECMinimumAnimalV23).
 # => TRUE
 ? class(ECMinimumAnimalV23, ECCrediblySentientProtectedAnimal, ECMinimumAnimalV16).
@@ -9,6 +9,8 @@
 ? person(ECMinimumAnimalV23).
 # => FALSE
 ? entitled(ECMinimumAnimalV23, event { secure() }).
+# => FALSE
+? entitled(ECMinimumAnimalV23, event { suffice() }).
 # => FALSE
 ? entitled(ECMinimumAnimalV23, event { eats() }).
 # => FALSE

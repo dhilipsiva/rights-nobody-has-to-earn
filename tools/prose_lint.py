@@ -45,10 +45,13 @@ DISCLAIMER = re.compile(
 )
 # Terms kept out of chapter prose; the plan allows them in "Run it" lines and
 # the technical appendix.
+# "material security" left this list when ruling D8 (2026-09-24, item 44) made
+# it the canonical name of a floor item; the plan banned it only while the book
+# used it loosely for what is now bodily safety.
 BANNED = [
     r"\bpins?\b", r"\bfixtures?\b", r"\bcounterfactual\w*", r"\bstratif\w*",
     r"\bthe model\b", r"\bthe checks\b", r"\bdwelling debt\b", r"\bsecurity debt\b",
-    r"\bhealth debt\b", r"\bmaterial security\b", r"\bvoid(?:ed|ing|s)?\b",
+    r"\bhealth debt\b", r"\bvoid(?:ed|ing|s)?\b",
     r"\brecognition loss\b",
 ]
 HARNESS = [

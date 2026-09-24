@@ -1,5 +1,5 @@
 # SPDX-License-Identifier: MIT OR Apache-2.0
-:expect-pins 21
+:expect-pins 22
 ? permits(ECAnimalProhibitedUseV143, ECOnlyStrictEnhancedAnimalResearchTestingOrEducation, ECAnimalProhibitedUseV156).
 # => TRUE
 :accept
@@ -17,6 +17,8 @@ authorized(ECAnimalHardBarV44, ECIndependentReviewAuthority, ECAnimalHardBarV42)
 ? person(ECAnimalProhibitedUseV163).
 # => FALSE
 ? entitled(ECAnimalProhibitedUseV163, event { secure() }).
+# => FALSE
+? entitled(ECAnimalProhibitedUseV163, event { suffice() }).
 # => FALSE
 ? entitled(ECAnimalProhibitedUseV163, event { eats() }).
 # => FALSE

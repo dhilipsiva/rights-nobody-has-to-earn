@@ -19,9 +19,9 @@ breaks* — and its one statement is `book-1/contents.json`, rendered in section
 <!-- BEGIN GENERATED: stratification -->
 | measurement | predicates | derived | rules | strata |
 |---|---|---|---|---|
-| computed from the constitution | **92** | **57** | **7524** | **10** |
+| computed from the constitution | **93** | **57** | **7527** | **10** |
 
-The floor is **8** rights — `secure`, `eats`, `dwell`, `healthy`, `learn`, `expresses`, `believe`, `meets` — each derived from `person`, which is why they sit at stratum 8 rather than 0. That is the firewall: being inside the `person` cone is what makes a punishing rule a negative cycle.
+The floor is **9** rights — `secure`, `suffice`, `eats`, `dwell`, `healthy`, `learn`, `expresses`, `believe`, `meets` — each derived from `person`, which is why they sit at stratum 8 rather than 0. That is the firewall: being inside the `person` cone is what makes a punishing rule a negative cycle.
 
 | Stratum | Predicates |
 |---|---|
@@ -33,10 +33,10 @@ The floor is **8** rights — `secure`, `eats`, `dwell`, `healthy`, `learn`, `ex
 | **5** | `answer`, `attribute`, `clean`, `interrupt`, `oppose`, `reference`, `responsible`, `severe`, `succeed`, `time` |
 | **6** | `approves`, `closed`, `false`, `fit`, `problem` |
 | **7** | `correct`, `defend`, `match`, `ready` |
-| **8** | **believe**, `building`, `decide`, **dwell**, **eats**, `entitled`, **expresses**, `family`, **healthy**, **learn**, **meets**, `owe`, `parent`, `permits`, `person`, `prisoner`, **secure** |
+| **8** | **believe**, `building`, `decide`, **dwell**, **eats**, `entitled`, **expresses**, `family`, **healthy**, **learn**, **meets**, `owe`, `parent`, `permits`, `person`, `prisoner`, **secure**, **suffice** |
 | **9** | `agree`, `err`, `obliged`, `prevents`, `travel` |
 
-Engine base predicates excluding builtins (34): `at`, `authorized`, `believe`, `born`, `broken`, `capture`, `carries`, `challenge`, `choose`, `cite`, `continue`, `date`, `endorses`, `expresses`, `free`, `hears`, `home`, `injure`, `judge`, `limit`, `list`, `married`, `observe`, `passport`, `pay`, `promise`, `public`, `put`, `receives`, `replace`, `rotten`, `show`, `sibling`, `teaches`. This is a dependency classification, not the writable vocabulary; mixed asserted/derived relations require the separate `admits` and `derived_only` rosters.
+Engine base predicates excluding builtins (35): `at`, `authorized`, `believe`, `born`, `broken`, `capture`, `carries`, `challenge`, `choose`, `cite`, `continue`, `date`, `endorses`, `expresses`, `free`, `hears`, `home`, `injure`, `judge`, `limit`, `list`, `married`, `observe`, `passport`, `pay`, `promise`, `public`, `put`, `receives`, `replace`, `rotten`, `secure`, `show`, `sibling`, `teaches`. This is a dependency classification, not the writable vocabulary; mixed asserted/derived relations require the separate `admits` and `derived_only` rosters.
 
 Strata, base/derived and edge polarity are the engine's, via `nibli-pin --strata`. Two filters are this document's choice and are named so they are visible: the compiler artifacts `event` and `__abs_<hash>` are dropped, and `equals` — which exists because `~($a = $b)` is a real negative edge — counts as a predicate but is excluded from the base list as a builtin.
 <!-- END GENERATED: stratification -->

@@ -2,6 +2,14 @@
 
 # Book 1 Delivery and Receipt Decision
 
+**Implemented 2026-09-24 (item 44).** `secure` is bodily safety and keeps its
+entitlement, debt and refusals but no receipt route: the protective duties
+answer for it. `suffice` is material security, with its own entitlement and
+debt, and the recipient-side route below now concludes it on the same receipt
+and independent witness. `delivery/counterfactual-receipt-certifies-safety` puts
+the route back on `secure` and shows the receipt certifying safety, which the
+split removes.
+
 **Revision ruling D8, 2026-09-24.** The author's ruling D8 on the revision
 tracker (recorded in `CLAUDE.md` under *The revision rulings D1–D9*) resolves an
 ambiguity this decision carried: §3 groups `secure` with the material

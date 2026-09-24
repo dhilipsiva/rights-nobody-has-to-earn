@@ -55,7 +55,7 @@ fn cards_have_distinct_effects_and_no_personal_or_coercive_heads() {
         cards.iter().map(|c| c.kind).collect::<BTreeSet<_>>().len(),
         cards.len()
     );
-    let forbidden = Regex::new(r"^(person|prisoner|free|travel|decide|reward|false|lose|eats|dwell|healthy|secure|believe|expresses|learn|meets)\(").unwrap();
+    let forbidden = Regex::new(r"^(person|prisoner|free|travel|decide|reward|false|lose|eats|dwell|healthy|secure|suffice|believe|expresses|learn|meets)\(").unwrap();
     for c in &cards {
         assert!(heads(c).iter().all(|h| !forbidden.is_match(h)), "{}", c.id);
         assert_eq!(

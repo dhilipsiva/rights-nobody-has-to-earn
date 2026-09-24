@@ -168,12 +168,12 @@ and non-refoulement safeguards described in chapter 15. A favourable label
 cannot stand in for those records.
 
 The floor limits every coercive instrument. None may be authorised because
-someone lacks safety, food, shelter, care, learning, speech, belief or company.
-The capability it restricts is an endpoint: no rule may read that loss back
-into another consequence. The order itself may be read for review and
-protection. The distinction matters. A movement restriction must affect the
-movement conclusion, but losing movement must not become the next reason to
-take something else.
+someone lacks bodily safety, material security, food, shelter, care, learning,
+speech, belief or company. The capability it restricts is an endpoint: no rule
+may read that loss back into another consequence. The order itself may be read
+for review and protection. The distinction matters. A movement restriction must
+affect the movement conclusion, but losing movement must not become the next
+reason to take something else.
 
 ## The actor who uses force must answer
 

@@ -1,5 +1,5 @@
 # SPDX-License-Identifier: MIT OR Apache-2.0
-:expect-pins 53
+:expect-pins 54
 
 ? obliged(State, PreserveBodilyIntegrityHumaneConditionsAndConfidentialCommunication, Hano).
 # => TRUE
@@ -94,6 +94,8 @@
 ? healthy(JUnrecordedPerson).
 # => FALSE
 ? secure(JUnrecordedPerson).
+# => FALSE
+? suffice(JUnrecordedPerson).
 # => FALSE
 ? learn(JUnrecordedPerson).
 # => FALSE

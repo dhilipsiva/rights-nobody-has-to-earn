@@ -34,7 +34,7 @@
 # admitted premise or complete source route is needed to change the result;
 # derived-only conclusions cannot be written directly. Ori has no standing root.
 
-:expect-pins 58
+:expect-pins 61
 
 # "The record supplied for this chapter says one thing about Nell"
 ? born(Nell).
@@ -71,6 +71,9 @@
 ? owe(State, Secure, Nell).
 # => TRUE
 
+? owe(State, Suffice, Nell).
+# => TRUE
+
 ? owe(State, Expresses, Nell).
 # => TRUE
 
@@ -93,6 +96,9 @@
 # => TRUE
 
 ? entitled(Nell, event { secure() }).
+# => TRUE
+
+? entitled(Nell, event { suffice() }).
 # => TRUE
 
 ? entitled(Nell, event { expresses() }).
@@ -164,6 +170,9 @@ vulnerable(Nell).
 # => FALSE
 
 ? secure(Nell).
+# => FALSE
+
+? suffice(Nell).
 # => FALSE
 
 ? meets(Nell).

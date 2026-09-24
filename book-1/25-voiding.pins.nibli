@@ -1,6 +1,6 @@
 # Chapter 25 fidelity pins: Voiding.
 # Cases use the actual constitution and the declared no-dead-conjuncts variant.
-:expect-pins 101
+:expect-pins 102
 
 # Bela: the two appointments and the particular completed case.
 ? permits(Review, Gia).
@@ -730,7 +730,7 @@ carries(TemporalReview, Forga, Epoch_Current, Epoch_Previous, VoidCarry).
 ? false(Forga).
 # => FALSE
 
-# The one-line child fixture: all eight debts remain unconditional.
+# The one-line child fixture: every debt remains unconditional.
 ? false(Nell).
 # => FALSE
 
@@ -747,6 +747,9 @@ carries(TemporalReview, Forga, Epoch_Current, Epoch_Previous, VoidCarry).
 # => TRUE
 
 ? owe(State, Secure, Nell).
+# => TRUE
+
+? owe(State, Suffice, Nell).
 # => TRUE
 
 ? owe(State, Expresses, Nell).

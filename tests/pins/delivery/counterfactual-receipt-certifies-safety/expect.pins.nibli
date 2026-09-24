@@ -1,0 +1,20 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+# Ruling D8 as a counterfactual. The base `counterfactual/receipt-certifies-safety`
+# puts the material-security receipt route back on `secure`, the single item
+# safety and material security were before the split. The same receipt that
+# shows Yenna received essential goods then concludes that Yenna is safe: a
+# service record standing in for bodily safety. On the live source the receipt
+# concludes material security only, and bodily safety has no receipt route.
+:expect-pins 4
+
+? secure(Yenna).
+# => TRUE
+? suffice(Yenna).
+# => FALSE
+
+# The firewall is unchanged either way: confinement for lacking either item is
+# refused.
+:refuse reasoning /Unstratifiable negation: strongly-connected component containing/
+all $x: person($x) & ~secure($x) -> prisoner($x).
+:refuse reasoning /Unstratifiable negation: strongly-connected component containing/
+all $x: person($x) & ~suffice($x) -> prisoner($x).

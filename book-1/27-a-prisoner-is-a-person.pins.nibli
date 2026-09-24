@@ -20,7 +20,7 @@
 # is untouched. Pin a FALSE only where the KB could have said TRUE, and say in
 # the comment what would flip it.
 
-:expect-pins 38
+:expect-pins 39
 
 # "Zed injured Ivo. A court judged Zed."
 injure(Zed, Ivo).
@@ -192,6 +192,9 @@ observe(CustodyIntakeAudit, Case_Zed, NoHolderPermissionNoRetaliationAndImmediat
 # => TRUE
 
 ? owe(State, Secure, Zed).
+# => TRUE
+
+? owe(State, Suffice, Zed).
 # => TRUE
 
 ? owe(State, Expresses, Zed).

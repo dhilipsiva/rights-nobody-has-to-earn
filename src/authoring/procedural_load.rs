@@ -27,7 +27,7 @@ const CONSTITUTION: &str = "book-1/source/constitution.nibli";
 /// Heads that take effect. Duties (`obliged`) are owed rather than taking
 /// effect, and barriers (`prevents`) read no authorised role, so neither is
 /// here; the report says so.
-const EFFECT_HEADS: [&str; 17] = [
+const EFFECT_HEADS: [&str; 18] = [
     "complete",
     "permits",
     "authority",
@@ -39,6 +39,7 @@ const EFFECT_HEADS: [&str; 17] = [
     "dwell",
     "healthy",
     "secure",
+    "suffice",
     "meets",
     "insure",
     "grant",

@@ -8,6 +8,10 @@ anticipated for `secure`: bodily safety and material security become separate
 floor items. The map's condition on that split still governs it. The current
 protection is neither rewired nor weakened until replacement rules, pins and
 counterfactuals show the new arrangement to be at least as safe (TODO item 44).
+**Implemented 2026-09-24 (item 44):** `secure` keeps every refusal as bodily
+safety, `suffice` gains its own, and the receipt route moves to material
+security; the delivery counterfactual shows the old arrangement letting a
+receipt certify safety.
 
 The verified case-level implementation (2026-09-14) is recorded in
 [Environmental rights, commons and direct animal protection](../contracts/ecological-and-animal-protection-contract.md).

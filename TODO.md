@@ -225,23 +225,6 @@ changes it.
 
 ### Resolve the design questions, source and pins first
 
-- [ ] **44. Split `secure` into bodily safety and material security.**
-
-  **Scope:** Articles 1 and 1b, the delivery routes (`FS-CVF-015`), the coverage
-  map, the glossary and every chapter that names the floor; ruling D8.
-
-  Implement ruling D8. Bodily safety becomes a floor item guaranteed as
-  protection, with no receipt route; material security keeps the current receipt
-  route and its witness distinct from the source. Complete the coverage-map
-  contract and the formal proof the kernel requires, give the new item its
-  entitlement, debt and refusal pins, keep every existing refusal, and carry the
-  two names through every chapter and the glossary. Care keeps `healthy`, and
-  company keeps its route.
-
-  **Done when:** all nine floor items have their entitlement, debt, refusals and
-  delivery status pinned, bodily safety has no receipt route, and the prose uses
-  the ruled names.
-
 - [ ] **45. Pin the remaining stress tests.**
 
   **Scope:** plan §7.7. Items 37–39 carry the disclosure, non-delivery and

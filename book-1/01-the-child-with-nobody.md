@@ -15,9 +15,10 @@ conditions waiting to be satisfied.
 
 ## Everything owed
 
-Every person is owed the floor: food, shelter, care, learning, safety,
-expression, belief and company. Each duty has the same condition — personhood.
-None requires employment, payment, family membership or good behaviour.
+Every person is owed the floor: food, shelter, care, learning, bodily safety,
+material security, expression, belief and company. Each duty has the same
+condition — personhood. None requires employment, payment, family membership or
+good behaviour.
 
 Nell is owed the whole floor. The checks ask about each debt and each
 entitlement, and each follows. There is no smaller entitlement pending a
@@ -77,9 +78,10 @@ advocate exists, noticed Nell or acted.
 
 ## What does not follow
 
-Nell is owed food, but the record does not establish that food reached Nell.
-The same distinction holds for shelter, care, safety and company. Entitlement
-follows; delivery does not.
+Nell is owed food, but the record does not establish that food reached Nell. The
+same distinction holds for shelter, care, material security and company. Bodily
+safety has no delivery conclusion at all: it is guaranteed as protection.
+Entitlement follows; delivery does not.
 
 For these ordinary delivery conclusions, the rules need a report of receipt
 and matching independent evidence. The witness must be authorised for this

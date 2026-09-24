@@ -2792,7 +2792,7 @@
     },
     {
       "family": "DELIVERY-RECEIPT",
-      "head": "secure",
+      "head": "suffice",
       "key": "",
       "class": "beneficial",
       "because": "delivery"

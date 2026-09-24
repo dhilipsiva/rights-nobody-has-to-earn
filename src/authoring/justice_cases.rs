@@ -608,6 +608,7 @@ fn remedies_and_boundaries(
         "dwell",
         "healthy",
         "secure",
+        "suffice",
         "learn",
         "believe",
         "expresses",

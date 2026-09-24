@@ -12,18 +12,20 @@
 #
 # Nothing here establishes that anything arrived. Every probe fact below is
 # written by this file, not by the world.
-:expect-pins 28
+:expect-pins 31
 
 # ── The routes ship dormant ──────────────────────────────────────────────────
 # Adam is confined, so shelter and recorded speech derive for him through the
-# carceral routes that already existed. Food, care, security and company do not
-# derive for anyone at all, and that is the delivery gap this family makes
-# representable without closing.
+# carceral routes that already existed. Food, care, material security and company
+# do not derive for anyone at all, and that is the delivery gap this family makes
+# representable without closing. Bodily safety has no receipt route at all.
 ? eats(Adam).
 # => FALSE
 ? healthy(Adam).
 # => FALSE
 ? secure(Adam).
+# => FALSE
+? suffice(Adam).
 # => FALSE
 ? meets(Adam).
 # => FALSE
@@ -89,8 +91,13 @@ observe(Inspector, Treatment, Fen, CareScope).
 receives(Gita, Kit, Depot).
 authorized(Inspector, DeliveryWitness, Gita).
 observe(Inspector, Kit, Gita, SecurityScope).
-? secure(Gita).
+? suffice(Gita).
 # => TRUE
+
+# The receipt concludes material security and never bodily safety, which is
+# guaranteed as protection and has no receipt route.
+? secure(Gita).
+# => FALSE
 
 # FS-CCE-193 negative: one route does not leak into another. Gita's security
 # arrival says nothing about whether she ate.
@@ -182,6 +189,8 @@ observe(Inspector, Meal, Oke, FoodScope).
 ? healthy(Bela).
 # => FALSE
 ? secure(Bela).
+# => FALSE
+? suffice(Bela).
 # => FALSE
 ? meets(Bela).
 # => FALSE

@@ -89,7 +89,7 @@ fn run_actual_cases() {
 fn cards_are_scoped_and_do_not_create_courts_people_or_coercion() {
     let context = Context::discover().unwrap();
     let cards = cards(&context).unwrap();
-    let forbidden = Regex::new(r"^(authority|person|prisoner|free|travel|decide|reward|false|lose|eats|dwell|healthy|secure|believe|expresses|learn|meets)\(").unwrap();
+    let forbidden = Regex::new(r"^(authority|person|prisoner|free|travel|decide|reward|false|lose|eats|dwell|healthy|secure|suffice|believe|expresses|learn|meets)\(").unwrap();
     for c in &cards {
         assert!(heads(c).iter().all(|h| !forbidden.is_match(h)), "{}", c.id);
         assert_eq!(

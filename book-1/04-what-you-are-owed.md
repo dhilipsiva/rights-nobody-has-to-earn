@@ -1,14 +1,21 @@
 # What You Are Owed
 
-Every person is owed food, shelter, care, learning, safety, expression, belief
-and the company of other people. Each entitlement follows from personhood.
-Employment, payment, registration, citizenship and approved conduct are not further
-conditions.
+Every person is owed food, shelter, care, learning, bodily safety, material
+security, expression, belief and the company of other people. Each entitlement
+follows from personhood. Employment, payment, registration, citizenship and
+approved conduct are not further conditions.
 
 Shelter means protection from the weather, warmth sufficient for safety,
 clean water and sanitation. Calling an inadequate roof a home does not fulfil
 that obligation. The entitlement names a protected condition, not whatever
 an institution happens to provide under its name.
+
+Bodily safety and material security are separate items. Bodily safety is freedom
+from violence and threats to the person. It is guaranteed as protection: the
+protective duties and their remedies answer for it, and no receipt can show that
+it arrived. Material security is the essential goods a person needs beyond food
+and shelter. Like food, shelter, care and company, its arrival can be shown by a
+recipient-side receipt. Neither item stands in for the other.
 
 Belief and expression are distinct. A person can be free to speak while their
 beliefs are subjected to an official test. This design permits neither an

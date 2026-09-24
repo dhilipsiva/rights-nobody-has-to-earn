@@ -12,9 +12,11 @@ use super::*;
 use regex::Regex;
 use std::collections::{BTreeMap, BTreeSet};
 
-/// The eight floor actualities, spelled as the constitution spells them.
-const FLOOR: [&str; 8] = [
+/// The floor actualities, spelled as the constitution spells them: bodily
+/// safety (`secure`) and material security (`suffice`) are separate items.
+const FLOOR: [&str; 9] = [
     "secure",
+    "suffice",
     "eats",
     "dwell",
     "healthy",

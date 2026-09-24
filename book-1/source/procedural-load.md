@@ -70,7 +70,7 @@ Ruling D6 lets an act that only gives or preserves something for its subject tak
 | DELIVERY-RECEIPT | `eats` | 1 | 1 | witness |  |
 | DELIVERY-RECEIPT | `healthy` | 1 | 1 | witness |  |
 | DELIVERY-RECEIPT | `meets` | 1 | 1 | witness |  |
-| DELIVERY-RECEIPT | `secure` | 1 | 1 | witness |  |
+| DELIVERY-RECEIPT | `suffice` | 1 | 1 | witness |  |
 | DEMOCRATIC-INTEGRITY | RecordedOppositionPosition | 5 | 3 | evidence attester, finding reader, independent alternate, independent reviewer, source | evidence attester + independent reviewer + source |
 | DEMOCRATIC-INTEGRITY | `permits` ConstitutionalCourtChallenge | 4–5 | 0 | evidence attester, finding reader, independent alternate, independent reviewer, source |  |
 | DEMOCRATIC-INTEGRITY | `permits` ElectoralAdministrationChallenge | 4–5 | 0 | evidence attester, finding reader, independent alternate, independent reviewer, source |  |
@@ -160,7 +160,7 @@ Ruling D6 lets an act that only gives or preserves something for its subject tak
 | `eats` | beneficial | Concludes that something owed reached the person, on an independent witness. | 1 | 1 |  | — |
 | `healthy` | beneficial | Concludes that something owed reached the person, on an independent witness. | 1 | 1 |  | — |
 | `meets` | beneficial | Concludes that something owed reached the person, on an independent witness. | 1 | 1 |  | — |
-| `secure` | beneficial | Concludes that something owed reached the person, on an independent witness. | 1 | 1 |  | — |
+| `suffice` | beneficial | Concludes that something owed reached the person, on an independent witness. | 1 | 1 |  | — |
 
 ### DEMOCRATIC-INTEGRITY
 
