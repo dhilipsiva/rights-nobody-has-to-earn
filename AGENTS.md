@@ -13,6 +13,9 @@ The constitution and substantive Nibli pins live under `book-1/source/`;
 opening note, Part V, and method are the non-derived exceptions. Book 2 remains
 inactive until Gate C and owns operation and transition. Preserve the legacy
 manuscripts until their TODO harvest. Keep epigraph and method unnumbered.
+`ui/` is the Book 1 reader and live companion, published at
+https://dhilipsiva.dev/rights-nobody-has-to-earn/ by the separate website
+repository from this repository's `main`; derived chapters never name it.
 
 All reader-facing parts describe the current design of their edition, including
 the opening, Part V and method. Keep the book's development and revision history

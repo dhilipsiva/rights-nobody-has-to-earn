@@ -34,6 +34,14 @@ Run `../verify.sh` to check every pinned claim against the constitution.
 
 ## Read or assemble the book
 
+The same ordered inputs are published at
+[dhilipsiva.dev/rights-nobody-has-to-earn/read/](https://dhilipsiva.dev/rights-nobody-has-to-earn/read/),
+each as a web page with a Markdown counterpart, beside the
+[live companion](https://dhilipsiva.dev/rights-nobody-has-to-earn/) that
+executes selected records in the browser. The site is rebuilt from this
+repository's `main`, so it follows the current manuscript and does not
+identify an immutable edition.
+
 Start with [the epigraph](epigraph.md), then [the opening note](00-opening-note.md).
 The opening's annotated contents describe the route through the book;
 [contents.json](contents.json) supplies the same order to the assembler.

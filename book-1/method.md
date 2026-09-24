@@ -18,7 +18,11 @@ files keep each statement on one line. The examples contain no
 machine-written explanation or proof transcript. Each example names the
 source or test a reader can inspect. The complete constitution stays in the
 [repository](https://github.com/dhilipsiva/rights-nobody-has-to-earn), beside
-the chapters and their companion files.
+the chapters and their companion files. A browser companion at
+[the book's website](https://dhilipsiva.dev/rights-nobody-has-to-earn/)
+executes a selected set of records against the same compiled constitution on
+the reader's own device and displays the returned verdicts; it packages no
+expected answers.
 
 ## From a supplied fact to a consequence
 
@@ -512,6 +516,13 @@ example alone:
 The focused command reports a partial result. It cannot establish that a
 change preserves the rest of the book. The full command reports measured
 runtime; a duration describes that run, not the strength of its conclusions.
+
+Without a toolchain, the [published companion](https://dhilipsiva.dev/rights-nobody-has-to-earn/)
+runs its own selected records in the browser. It loads the compiled
+constitution once, builds a fresh knowledge base for each record, and shows
+`TRUE`, `FALSE` or a refusal exactly as returned. Its records are a chosen
+subset, not this inventory, and a result there carries the same limits as
+one here.
 
 The [suite inventory](../tests/pins/suites.json) identifies the source,
 fixtures, pin files, explicit source edits and contradiction-check setting

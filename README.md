@@ -43,12 +43,22 @@ Earn*, is the destination.
 | `book-1/appendix/contracts/public-safety-contract.md` | Separated protective powers, non-derogating emergencies, humane holding, external limits and exact review. |
 | `src/amendment_host.rs` | Separate trusted-input, in-memory enactment reference model; no real authentication or deployment. |
 | `book-1/source/3-spine.md` | The chapter-order projection generated from the engine's dependency layers. |
+| `ui/` | The Book 1 reader and live companion, published at [dhilipsiva.dev/rights-nobody-has-to-earn](https://dhilipsiva.dev/rights-nobody-has-to-earn/). |
 | `verify.sh` | Run the pins and contradiction checks. |
 | `generate.sh` | Explicitly regenerate authored rule, fixture, pin, or spine outputs. |
 | `bootstrap.sh` | Put the pinned Nibli engine beside this checkout. |
 | `engine.pin` | The exact engine revision this repository verifies against. |
 
 ## Read the book
+
+The complete book is published at
+[dhilipsiva.dev/rights-nobody-has-to-earn](https://dhilipsiva.dev/rights-nobody-has-to-earn/):
+every ordered input as a web page with a Markdown counterpart, beside a
+[live companion](https://dhilipsiva.dev/rights-nobody-has-to-earn/) that
+executes selected records against the full compiled constitution in your own
+browser. The [ui](ui/README.md) directory holds that companion; the website
+rebuilds it from this repository's `main`, so the site follows the current
+manuscript rather than an immutable edition.
 
 Start with the [epigraph](book-1/epigraph.md) and
 [opening note](book-1/00-opening-note.md). The opening includes annotated

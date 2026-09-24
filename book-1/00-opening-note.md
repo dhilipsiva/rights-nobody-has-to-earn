@@ -87,6 +87,12 @@ the reasons before the institutional detail, the [choices below](#the-choices-an
 lead directly to them. The remaining map and glossary can wait. Continue to
 the method only if you want to inspect how the checks work.
 
+The current text and a companion that executes selected cases in your own
+browser are published at
+[dhilipsiva.dev/rights-nobody-has-to-earn](https://dhilipsiva.dev/rights-nobody-has-to-earn/).
+What that companion returns are answers about supplied records; it is not
+evidence that any society delivered anything.
+
 ## Reader's Map
 
 Return here for [choices and arguments](#the-choices-and-their-arguments),

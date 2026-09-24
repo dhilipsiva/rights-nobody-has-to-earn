@@ -8,6 +8,11 @@ fork track, live play card, floor panel, design joints and an authored dossier.
 Companion prose is session-drafted, author-approved under delegated approval
 (2026-09-13); its exact text is retained in `game.json` and `src/game.rs`.
 
+The section is published at <https://dhilipsiva.dev/rights-nobody-has-to-earn/>
+by the separate website repository, which fetches this repository's `main`
+and its `engine.pin` and runs the build below at each of its own deploys.
+[WEBSITE_HANDOVER.md](WEBSITE_HANDOVER.md) records the hosting contract.
+
 ## Build and preview
 
 From the repository root, with Python 3.11+, uv, Rust and the Nibli revision

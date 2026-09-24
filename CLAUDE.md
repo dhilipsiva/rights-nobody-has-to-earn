@@ -5379,6 +5379,11 @@ The repo is deliberately **mixed-licence** — see `LICENSING.md` before adding 
 - `tests/pins/suites.json` — explicit execution inventory, shared bases,
   fixtures, and semantic counterfactual edits. Tests previously generated inside
   audit checkers now live under `tests/pins/`. Keep them substantive and readable.
+- `ui/` — the Book 1 reader and live companion, published at
+  https://dhilipsiva.dev/rights-nobody-has-to-earn/ by the separate website
+  repository (`~/projects/dhilipsiva/dhilipsiva.dev`), which rebuilds it from
+  this repository's `main` at each of its own deploys. Derived chapters never
+  name it; the exempt elements, READMEs and proposal do.
 - `verify.sh` — incrementally builds the native runner, then checks all pins and
   contradictions. `--only <pin-file>` is partial; `--list` shows inventory.
   There is no quick/full split, hash gate, receipt, commit gate, source revision

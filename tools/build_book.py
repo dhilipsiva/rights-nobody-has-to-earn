@@ -317,6 +317,8 @@ def cover(sample: bool = False) -> str:
                  'selection open the public manuscript.</p>') if sample else ''
     return f'''<header class="cover"><h1>{TITLE}</h1>
 <p>{AUTHOR}</p><p class="edition-status">{status}</p>{selection}
+<p class="read-online">The current manuscript, with a companion that runs its cases in the
+browser, is published at <a href="{UI_ORIGIN}{UI_PREFIX}">dhilipsiva.dev{UI_PREFIX}</a>.</p>
 <p class="licence">Book prose: <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>.
 The repository contains separately licensed formal source, code and data;
 see <a href="{REPOSITORY}LICENSING.md">the licence map</a>.

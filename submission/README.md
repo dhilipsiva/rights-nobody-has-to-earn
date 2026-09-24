@@ -10,7 +10,10 @@ This proposal seeks an editorial and print partnership for an openly licensed
 book. It is prepared for a submission decision, without being addressed or sent
 to a particular publisher. The [public manuscript](../book-1/README.md) and
 [repository](https://github.com/dhilipsiva/rights-nobody-has-to-earn) provide the
-text, its formal source and its evidence trail.
+text, its formal source and its evidence trail. The current manuscript is
+also readable at
+[dhilipsiva.dev/rights-nobody-has-to-earn](https://dhilipsiva.dev/rights-nobody-has-to-earn/),
+where a companion lets a reader execute its cases in the browser.
 
 ## Synopsis
 
@@ -182,7 +185,8 @@ method are drafted: 57,909 words across 34 ordered inputs. The 30 derived
 chapters contain 40,481 words, or 69.90%; the sample contains 13,633.
 These counts use whitespace-separated rendered manuscript text, including
 notes, before the generated cover and contents. The full manuscript and
-sample are available locally as HTML, EPUB and PDF.
+sample are available locally as HTML, EPUB and PDF, and the current
+manuscript is published online at the address above.
 
 The latest completed substantive run passed 88,815 pins across
 16,137 cases in 1,188.54 seconds, with complete contradiction checks and no

@@ -7,7 +7,11 @@ You can [open an issue](https://github.com/dhilipsiva/rights-nobody-has-to-earn/
 with a file, passage and explanation, without knowing Nibli or running the
 tools. For an edit, fork the repository, make a branch and open a
 [pull request](https://github.com/dhilipsiva/rights-nobody-has-to-earn/pulls)
-against `main`. Keep each proposal focused on one problem.
+against `main`. Keep each proposal focused on one problem. The current
+manuscript is readable at
+[dhilipsiva.dev/rights-nobody-has-to-earn](https://dhilipsiva.dev/rights-nobody-has-to-earn/),
+and each entry in its companion's dossier carries an objection link that
+opens a prefilled issue.
 
 Describe what is wrong, the proposed result, the evidence and the checks you
 ran. Say plainly when a check was not run or failed. An issue can report an
@@ -23,6 +27,7 @@ unresolved problem; it does not need to claim a repair.
 | Generated rules or cases | The owning JSON under `book-1/source/` or generator under `src/authoring/`; the [authoring instructions](README.md#author) identify the commands. |
 | A rendering problem | [build_book.py](tools/build_book.py), [book.css](tools/book_assets/book.css) and the affected source passage. |
 | Operation or transition | [Book 2's tracker](book-2/TODO.md), which remains collection-only until Book 1's release gate. |
+| The website or its companion | [ui](ui/README.md); the [published section](https://dhilipsiva.dev/rights-nobody-has-to-earn/) is rebuilt from `main` by the separate website repository. |
 
 Read the current instructions at the start of [CLAUDE.md](CLAUDE.md) and in
 [AGENTS.md](AGENTS.md). Historical decisions and scripts do not restore retired
