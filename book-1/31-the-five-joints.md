@@ -562,6 +562,17 @@ other protective restrictions need their own grounds and authority.
 
 Protection begins with the disclosure unless an effective deceit finding
 applies to that particular exposure.
+
+A prosecution can answer only for what came before it, so a disclosure that both
+of a case's temporal witnesses date after its charge does not delay confinement
+in that case; it still protects its maker in any later one. The alternative I
+reject gives every later disclosure provisional protection pending an expedited
+review. It would let any defendant buy delay by accusing the court, at the
+injured person's cost, while guarding against nothing the disclosure could have
+caused. The price is that retaliation within a pending case must be met by the
+custody requirements themselves, and that protection for an earlier disclosure
+depends on the case's witnesses dating it honestly: both must agree to remove it
+from that case, and a missing entry keeps it.
 The unrelated-case route requires a finding from qualified, independent reviewers.
 Separate qualification and review functions must positively establish their
 eligibility. The deciding and qualification functions cannot be combined or
@@ -584,8 +595,8 @@ shield. Otherwise an authority could answer exposure by supplying the very
 accusation against which protection was needed. A finding about one disclosure
 does not give permission to retaliate against another.
 
-This default costs time, including time owed to an injured person awaiting a
-remedy. Separate protection, assistance and civil remedies remain available
+This default costs time for a disclosure not shown to follow the charge,
+including time owed to an injured person awaiting a remedy. Separate protection, assistance and civil remedies remain available
 on their own grounds. Missing qualification keeps confinement blocked; it
 does not establish that the prosecution was retaliation or that the injured
 person has received help. A procedure delivering equally prompt protection

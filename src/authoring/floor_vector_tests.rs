@@ -837,14 +837,18 @@ fn a_purpose_limited_record_is_read_only_for_its_purpose() {
 /// The personal finding and the incident finding have different readers.
 /// Personal findings close prospective signing and trigger reasons and review
 /// duties. Only the subject/incident form affects
-/// the protection attached to that disclosure. Neither form supplies a floor,
+/// the protection attached to that disclosure: the one-place shield and, since
+/// revision item 37, the two case-bound shield rules (one per temporal witness)
+/// that the conviction route reads. Neither form supplies a floor,
 /// personhood, ballot, appointment, or custody conclusion directly.
-const VOIDING_READERS: [(usize, &str, &str); 6] = [
+const VOIDING_READERS: [(usize, &str, &str); 8] = [
     (1, "agree", "~false"),
     (1, "agree", "~false"),
     (1, "obliged", "+false"),
     (1, "obliged", "+false"),
     (1, "obliged", "+false"),
+    (2, "defend", "~false"),
+    (2, "defend", "~false"),
     (2, "defend", "~false"),
 ];
 

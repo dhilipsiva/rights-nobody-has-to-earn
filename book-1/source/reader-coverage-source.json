@@ -2863,6 +2863,21 @@
       ]
     },
     {
+      "id": "24-07",
+      "chapter": "book-1/24-the-shield.md",
+      "section": "A disclosure made after the charge",
+      "domain": "Justice and coercion",
+      "family": "ARTICLES",
+      "function": "protective",
+      "setting": "both case witnesses date a disclosure after the charge, so it no longer blocks confinement in that case while it still bears on any other",
+      "trajectory": "works",
+      "basis": "book-1/24-the-shield.pins.nibli",
+      "pattern": "coercive",
+      "postures": [
+        "challenges"
+      ]
+    },
+    {
       "id": "24-06",
       "chapter": "book-1/24-the-shield.md",
       "section": "What it costs",

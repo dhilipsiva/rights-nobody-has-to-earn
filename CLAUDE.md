@@ -133,6 +133,42 @@ reinstate the retired tooling or workflow.
 Grouped by kind. Dates in each heading are the ratification dates; a ruling
 that was later implemented or narrowed carries that supersession inline.
 
+### Item 37 — the shield and a disclosure made after the charge, 2026-09-24
+
+Any defendant could disclose against the prosecuting court after the charge and
+hold confinement until qualified reviewers found the prosecution unrelated; a
+later deceit finding removed only that disclosure's protection. The repair
+follows causation: a prosecution can answer only for what came before it.
+Conviction route 1 now reads a two-place shield, `defend($w, $case)`, which
+derives for each case in which the maker is cited unless both of the case's
+temporal witnesses, `Chronicle` and `TemporalReview`, record that the disclosure
+was made after that case's charge. Two rules, one per witness, express "not
+both" over base facts. The one-place shield, route 2 and every existing verdict
+are unchanged; the `temporal-T2` base's replacement of the court gate follows
+the new text. Automatic pre-charge protection with an expedited review for later
+disclosures, a specificity threshold and a costed universal review stage were
+compared and rejected in the shield-scope decision, which names the protection
+traded as the 2026-08-02 exposure-surface ruling requires: retaliation within a
+pending case is answered by the custody requirements, and protection for an
+earlier disclosure depends on the case's witnesses dating it honestly, both of
+them, with a missing entry keeping it.
+
+Chapter 24 gains eight pins (59): one witness's entry leaves protection in
+place; both restore confinement for a disclosure against a recalled official and
+for one against the prosecuting court; the one-place shield and a later case
+keep the disclosure's protection; and a second, undated disclosure blocks again.
+The credibility-voiding census now lists the two new rules, which read an
+incident finding exactly as the one-place shield does. Chapter 24's opening, a
+new section "A disclosure made after the charge", its cost paragraph and Part
+V's shield argument describe the rule; the exact prose is `session-drafted,
+author-approved under delegated approval (2026-09-13)`.
+
+Chapter 24's two cases pass 118 pins, and the shield-independence, credibility,
+red-team, counterfactual and `temporal-T2` cases pass 578 pins (focused,
+partial). All authoring development tests pass once four stale resolution
+receipts, left by the 2026-09-21 prose revisions, were rebound in a separate
+commit. VERIFY_PLACEHOLDER
+
 ### Item 36 — the floor's bearer by tier, and one name per item, 2026-09-24
 
 Article 1b named only a bearer: "the public body named State" owed every floor

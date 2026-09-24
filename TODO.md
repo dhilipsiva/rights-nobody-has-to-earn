@@ -243,39 +243,6 @@ changes it.
 
 ### Resolve the design questions, source and pins first
 
-- [ ] **37. Settle the shield's post-charge disclosure option.**
-
-  **Scope:** Article 6's shield, Chapter 24 and Part V; the
-  [shield-scope decision](book-1/appendix/decisions/shield-scope-decision.md);
-  plan §7.1.
-
-  `show` is admitted vocabulary, and
-  `show($w, $incident, $o) & authority($o) & ~false($w, $incident) -> defend($w)`
-  (`book-1/source/constitution.nibli:2930`). A later deceit finding removes
-  only that disclosure's protection. Any defendant can therefore disclose
-  against the prosecuting court and hold confinement under a conviction until
-  independent, positively qualified reviewers find the prosecution unrelated.
-  Chapter 24 and the decision price the delay; neither examines the incentive,
-  which could make the shield an extra stage in every custodial case. Pin a
-  post-charge disclosure against the prosecuting court, a pre-charge
-  disclosure, a review completed in time, and a reviewer and alternate both
-  unavailable. Then compare the plan's options: automatic protection for a
-  disclosure made, or lodged with an independent recipient, before charge (A);
-  provisional protection with an expedited review and a predeclared alternate
-  after charge (B); a specificity threshold, which the implicated authority
-  would judge (C); or accepting and costing a universal review stage (D). The
-  plan recommends A with B. Option A makes protection depend on the order of
-  disclosure and charge, which the shield does not read, and the 2026-08-02
-  ruling on its unbounded exposure surface asks any bound to name the
-  protection it trades. Staffing a review is Book 2; the route, its alternate
-  and its end are constitutional.
-
-  **Done when:** a chosen design is pinned, keeping the protection a
-  whistleblower needs and removing the delay that protects no disclosure, or a
-  remaining limitation meets the resolve-before-defending standard; the
-  decision records the comparison; and Chapter 24 and Part V describe the
-  current rule.
-
 - [ ] **38. Answer systemic non-performance.**
 
   **Scope:** Chapters 7 and 30 and Part V; the obligations and

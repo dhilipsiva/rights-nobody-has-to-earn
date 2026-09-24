@@ -53,7 +53,7 @@ carried in single figures, which is where the rebalance has most to do.
 | associates | 6 |
 | requests | 8 |
 | receives | 76 |
-| challenges | 24 |
+| challenges | 25 |
 | governs | 34 |
 | is acted upon | 72 |
 
@@ -68,7 +68,7 @@ what matters is the book's shape, not the chapter's.
 | constructive | 93 |
 | private-civic | 28 |
 | democratic | 35 |
-| coercive | 45 |
+| coercive | 46 |
 | records | 32 |
 | argument | 7 |
 
@@ -87,7 +87,7 @@ checked here.
 | Ecology, future generations and commons | 5 | 4 | 6 |
 | Economy, property, work and commons | 17 | 15 | 19 |
 | Emergency and resilience | 3 | 2 | 3 |
-| Justice and coercion | 13 | 12 | 15 |
+| Justice and coercion | 14 | 12 | 15 |
 | Knowledge, communication and culture | 3 | 2 | 3 |
 | Life course, family, care and reproduction | 12 | 4 | 8 |
 | Locality, mobility and external relations | 2 | 2 | 3 |
@@ -292,6 +292,7 @@ checked here.
 | 24-03 | 24-the-shield.md | Kel: a finding about this disclosure | Justice and coercion | ARTICLES | protective | a qualified deceit finding defeats protection for Kel's particular exposure | challenges | works | yes | coercive | `book-1/24-the-shield.pins.nibli` |
 | 24-04 | 24-the-shield.md | Rex: a separate exposure | Justice and coercion | ARTICLES | protective | protection assessed separately for a second exposure incident | challenges | contested | no | coercive | `book-1/24-the-shield.pins.nibli` |
 | 24-05 | 24-the-shield.md | The case the shield stops covering | Justice and coercion | ARTICLES | both | a qualified independent finding that Rex's prosecution is unrelated to the disclosure | challenges | continuity-remedy | no | coercive | `book-1/24-the-shield.pins.nibli` |
+| 24-07 | 24-the-shield.md | A disclosure made after the charge | Justice and coercion | ARTICLES | protective | both case witnesses date a disclosure after the charge, so it no longer blocks confinement in that case while it still bears on any other | challenges | works | no | coercive | `book-1/24-the-shield.pins.nibli` |
 | 24-06 | 24-the-shield.md | What it costs | Justice and coercion | ARTICLES | protective | the cost of continuing protection while qualified unrelated-case review is unavailable | challenges | unresolved | no | coercive | `book-1/24-the-shield.pins.nibli` |
 | 25-00 | 25-voiding.md | (preamble) | Records and accountability | CREDIBILITY | protective | Bela's effective finding restricts new adverse signatures without removing ordinary rights | is acted upon | contested | yes | records | `book-1/25-voiding.pins.nibli` |
 | 25-01 | 25-voiding.md | The paired finding | Records and accountability | CREDIBILITY | protective | a completed incident-bound finding and separate prospective permission | is acted upon | works | yes | records | `book-1/25-voiding.pins.nibli` |

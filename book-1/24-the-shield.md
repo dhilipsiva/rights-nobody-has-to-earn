@@ -1,11 +1,12 @@
 # The Shield
 
 A disclosure against a publicly answerable actor opens protection against
-confinement under a conviction while no effective deceit finding applies to
-that particular exposure. The protection begins before anyone has decided
-whether the disclosure is true. A qualified, independent case finding can
-instead establish that a prosecution is unrelated to the disclosure. The
-person making the disclosure does not have to obtain that finding to receive
+confinement under a conviction while no effective deceit finding applies to that
+particular exposure. The protection begins before anyone has decided whether the
+disclosure is true. A disclosure the case's witnesses record as made after its
+charge does not block confinement in that case. A qualified, independent case
+finding can instead establish that a prosecution is unrelated to the disclosure.
+The person making the disclosure does not have to obtain that finding to receive
 protection.
 
 The case finding needs authorised, independently qualified reviewers. Neither
@@ -148,10 +149,34 @@ for a different case supplies none here.
 Someone who controls the trusted inputs can still lie about independence.
 The checks do not convert agreement into truth.
 
+## A disclosure made after the charge
+
+A prosecution can answer only for what came before it. Each case has two
+temporal witnesses, the ones that record its subject, court, judgment and
+injured person. When both record that a disclosure was made after that case's
+charge, the disclosure cannot have prompted the prosecution, and it no longer
+blocks confinement in that case.
+
+Sly's disclosure names the prosecuting court. Once both witnesses date it after
+the charge, confinement under Sly's case is authorised, and the shield itself
+still derives. A defendant cannot buy delay by accusing the court that tries
+them. One witness's entry is not enough; without both, the disclosure keeps its
+effect, as a missing record always has. A second disclosure that neither witness
+has dated bears on the case again, and a disclosure dated after one charge still
+bears on any other case in which its maker is cited.
+
+The timing record decides only what came first. It does not find the disclosure
+false, and it cannot remove protection in another case. Retaliation within a
+pending case is answered by the requirements that already govern confinement:
+the merits, the necessity of the place, independent review and challenge. A
+disclosure made before the charge keeps its protection until a qualified case
+finding removes the prosecution from its coverage.
+
 ## What it costs
 
 The provisional shield can delay confinement under an unrelated prosecution
-while qualified review is unavailable. The person injured still holds a claim
+while qualified review is unavailable, but only for a disclosure the case's
+witnesses have not dated after the charge. The person injured still holds a claim
 to assistance, protection and remedy. The defendant keeps the floor, standing
 and the ability to challenge. The existing justice routes govern the hearing,
 interim relief, reviewer nonresponse and independent alternatives; a duty to

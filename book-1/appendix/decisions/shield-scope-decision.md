@@ -2,6 +2,51 @@
 
 # The whistleblower shield: scoped to the case
 
+## A disclosure made after the charge — item 37, 2026-09-24
+
+The one-place shield blocked confinement in every case against its maker, so a
+defendant could disclose against the prosecuting court after the charge and hold
+confinement until qualified reviewers found the prosecution unrelated. A later
+deceit finding removed only that disclosure's protection. Chapter 24 and this
+record priced the delay; neither examined the incentive, which made the shield
+an extra stage available to every defendant.
+
+Four arrangements were compared. Automatic protection for a disclosure made, or
+lodged with an independent recipient, before the charge, with provisional
+protection and an expedited review for later disclosures, keeps the delay for
+every later disclosure while guarding against nothing it could have caused. A
+specificity threshold would be judged by the implicated authority. Accepting and
+costing a universal review stage leaves the free option in place. The adopted
+rule follows causation: a prosecution can answer only for what came before it.
+Conviction route 1 now reads a two-place shield, `defend($w, $case)`, which
+derives for each case in which the maker is cited unless both of the case's
+temporal witnesses, `Chronicle` and `TemporalReview`, record that the disclosure
+was made after that case's charge. Two rules, one per witness, express "not
+both" over base facts without an intermediate relation. The one-place shield,
+route 2 and every existing verdict are unchanged.
+
+The 2026-08-02 ruling on the unbounded exposure surface asks any bound to name
+the protection it trades. This rule bounds nothing about whom a disclosure may
+name or how long it lasts. It trades one thing: a disclosure made after a charge
+no longer shields its maker from confinement in that case, so retaliation within
+a pending case is answered by the custody requirements (merits, necessity of the
+place, independent review and challenge) rather than by the shield. Protection
+for an earlier disclosure now also depends on the case's temporal witnesses
+dating it honestly. Both must agree to remove it, a missing entry keeps it, and
+the dating removes nothing in another case. Who bears the remaining cost: an
+injured person still waits while a disclosure that preceded the charge awaits
+qualified review, with assistance, protection and remedy available on their own
+grounds. Evidence that the case witnesses misdate disclosures, or that
+retaliation inside pending cases escapes the custody review, would require
+reconsideration.
+
+Chapter 24 gains eight pins: one witness's entry leaves protection in place;
+both restore confinement for a disclosure against a recalled official and for
+one against the prosecuting court; the one-place shield and a later case keep
+the disclosure's protection; and a second, undated disclosure blocks again. The
+exact prose in Chapter 24 and Part V is `session-drafted, author-approved under
+delegated approval (2026-09-13)`.
+
 ## Confinement and the conviction record — item 33, 2026-09-21
 
 The shield gates confinement under a conviction, not the recording of that

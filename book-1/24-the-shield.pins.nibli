@@ -14,7 +14,7 @@
 # is untouched. Pin a FALSE only where the KB could have said TRUE, and say in
 # the comment what would flip it.
 
-:expect-pins 51
+:expect-pins 59
 
 # DON — "Don injured Pax. Then Don exposed Pax."
 
@@ -413,4 +413,52 @@ show(Zeno, Disclosure_Zeno_Boss, Boss).
 # ...and the man he reached back to was recalled long since. The shield does
 # not ask.
 ? broken(Boss).
+# => TRUE
+
+# ── A disclosure made after the charge (revision item 37) ─────────────────
+# "A prosecution can answer only for what came before it. When both of the
+#  case's temporal witnesses record that a disclosure was made after the
+#  charge, it cannot have prompted that prosecution: it no longer blocks
+#  confinement in that case, and its protection in any later case stands."
+# One witness's entry is not enough; without both the disclosure bears on the case.
+observe(Chronicle, Disclosure_Zeno_Boss, Case_Zeno, DisclosureFollowsTheChargeScope).
+
+? prisoner(Zeno).
+# => FALSE
+
+observe(TemporalReview, Disclosure_Zeno_Boss, Case_Zeno, DisclosureFollowsTheChargeScope).
+
+? prisoner(Zeno).
+# => TRUE
+
+? defend(Zeno, Case_Zeno).
+# => FALSE
+
+# The one-place shield is unchanged, and the same disclosure still bears on a
+# case in which Zeno is cited without that record.
+? defend(Zeno).
+# => TRUE
+
+cite(Court, Case_Zeno_Later, Zeno).
+
+? defend(Zeno, Case_Zeno_Later).
+# => TRUE
+
+# A second disclosure the witnesses have not dated bears on the case again. The
+# unrelated-case review in tests/pins/shield-independence remains the route for
+# a disclosure that preceded the charge; without qualified reviewers, protection
+# holds, as Sly's section shows above.
+show(Zeno, Disclosure_Zeno_Review, Review).
+
+? prisoner(Zeno).
+# => FALSE
+
+# "A defendant cannot buy delay by accusing the court that tries them."
+observe(Chronicle, Disclosure_Sly_Court, Case_Sly, DisclosureFollowsTheChargeScope).
+observe(TemporalReview, Disclosure_Sly_Court, Case_Sly, DisclosureFollowsTheChargeScope).
+
+? prisoner(Sly).
+# => TRUE
+
+? defend(Sly).
 # => TRUE
