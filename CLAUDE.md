@@ -133,6 +133,45 @@ reinstate the retired tooling or workflow.
 Grouped by kind. Dates in each heading are the ratification dates; a ruling
 that was later implemented or narrowed carries that supersession inline.
 
+### Item 36 — the floor's bearer by tier, and one name per item, 2026-09-24
+
+Article 1b named only a bearer: "the public body named State" owed every floor
+item, while Chapter 7 requires each duty to have a bearer, a function, a
+jurisdiction and a scope. Five hand-written rules now divide the work, applying
+the economic ruling's allocation of floor finance, equalisation, portability and
+minimum standards to the common tier and of provision to regions and localities.
+Every person is owed two common-tier duties, to finance, equalise and set
+minimum standards and to backstop the floor, on personhood alone. A region owes
+provision, and a locality reach and delivery, where a witness authorised for the
+person records the person as present there. A failure certified identically by a
+source and a separate independent reviewer, neither of them the failed body,
+obliges the tier the certification names to assume continuity; the failed body's
+own duty stands. The eight `owe(State, K, $x)` debts are unchanged and unread,
+nothing reads the new duties, and none conditions the floor: a person no witness
+has recorded keeps every entitlement, debt and common-tier duty.
+
+Chapter 4's pins gain fifteen: the common-tier duties for a fresh person and for
+the child's one-line record; regional and local duties from an authorised
+presence record, and none from an unauthorised writer or from no record; no
+delivery conclusion from presence; continuity passing up a tier on a two-party
+certification but not on self-certification or a lone attester; and the refusal
+of a rule confining a person for lacking the common tier's duty. The engine
+reports another edge of the same cycle, so that pin matches the stratification
+refusal itself. Chapters 4 and 7 describe the allocation. The floor's names now
+read care and shelter where "health debt", "health entitlement", "dwelling
+debt", "shelter debts" and "housing entitlement" stood; "personal-care debt" in
+Chapters 1 and 14 names a private obligation kinship does not create, and stays.
+The security split is item 44. The exact prose is `session-drafted,
+author-approved under delegated approval (2026-09-13)`; the economic decision
+records the allocation.
+
+Rules move from 7,397 to 7,402; predicates, derived predicates and strata are
+unchanged. Chapter 4's 85 pins pass in 21.55s (focused, partial). The sixteen
+floor-vector, six reference, five claim-discipline and ten reader-coverage
+development tests pass, and the prose check passes with lower recorded figures
+for five chapters. `RIGHTS_VERIFY_JOBS=4 ./verify.sh` passes 88,830 pins across
+16,137 cases with complete contradiction checks and no findings in 1,197.58s.
+
 ### Item 34 — prose measurement as a development check, 2026-09-24
 
 `tools/prose_lint.py` adapts the revision plan's lint, moved there from
@@ -5607,7 +5646,7 @@ Note the manifesto's heading convention differs deliberately from the book's: it
 **book-1 (the new book) — titled *The Rights Nobody Has to Earn*:**
 
 - **The current formal floor is eight rights**, spelled `entitled(every person, event { P() })`, and its protection is a **compile-time prohibition**: a rule punishing someone for lacking a floor right is refused by the stratifier. The floor is protected *because* it is reachable — it sits inside the `prisoner` cone. This is the verified kernel, not the final social taxonomy under the 2026-08-03 mandate; any expansion still needs a completed map contract and formal proof. Do not restate the older claim that "nothing derives it, so nothing can retract it"; that had the mechanism backwards. **Ratified 2026-09-24, not yet implemented (D8 of *The revision rulings D1–D9*):** `secure` splits into bodily safety and material security, making nine items, once the coverage-map contract, refusal pins and formal proof land in item 44.
-- **The current formal duty-bearer is a thin constitutional layer** — an agent with real taxing and inter-community equalisation power, carefully limited. Mutual covenants was rejected because the constitution has no membership concept and covenants would gate the floor on one; naming-the-gap was rejected as evasion of a solved question. The book concedes coercion plainly and states its social-democratic ends outright — the novelty is the constraint mechanism, not the absence of a provider. Under the 2026-08-03 mandate, this is not the final public-branch or remedy architecture.
+- **The current formal duty-bearer is a thin constitutional layer** — an agent with real taxing and inter-community equalisation power, carefully limited. Mutual covenants was rejected because the constitution has no membership concept and covenants would gate the floor on one; naming-the-gap was rejected as evasion of a solved question. The book concedes coercion plainly and states its social-democratic ends outright — the novelty is the constraint mechanism, not the absence of a provider. Under the 2026-08-03 mandate, this is not the final public-branch or remedy architecture. **Tiers allocated 2026-09-24 (item 36):** the State remains the bearer of the unconditional debt, while the common tier, regions and localities carry its finance, backstop, provision and delivery duties, and a certified failure passes continuity up a tier.
 - **The title is *The Rights Nobody Has to Earn*, subtitled *A design for a society worked out to the point where it catches its own failures*.** Not "utopia" — the word invites the naive-utopianism dismissal and belongs to the legacy book. **The title is chosen for legibility to a stranger, and that outranks elegance.** Two predecessors are dead and neither should be revived. *"Eight things every person is owed, and why no law can take them away"* carried two overclaims: "no law can take them away" is verified false — the refusal covers **imprisonment** and stops there, and a law voiding your credibility or docking your recognition for lacking a floor right loads fine (`04-what-you-are-owed.pins.nibli:52-57`) — and a count on a cover is the most permanent counted claim the project could make, in the one place it can never be revised chapter by chapter; the floor has already been six, then ten, then eight. *"Nothing Has to Happen First"* was accurate, survived every constraint, and failed the only test nobody had run: a stranger reads it and cannot tell what the book is about. **Test any future candidate on a reader who knows nothing, before testing it on the constraints.** Two things in the current wording are load-bearing and must not be tidied: **"nobody"**, because the universality is the thesis (`08:94`) — the same reason the dead subtitle needed "every person" rather than "you"; and **"catches its own failures"**, because "rights" is a settled noun that implies these things hold in practice and the book's second half is that they mostly do not. Drop that clause and the title overclaims. Do not restore *"and where the protection stops"* alongside "rights" — it says what "rights" already says. **Subtitle superseded 2026-09-24 (D1 of *The revision rulings D1–D9*):** it becomes *A worked design for a society, with its formal claims made executable.* The author chose it knowing this entry's warning about the dropped clause. The title and the test on a stranger stand.
 - **"Standing" is reserved for universal personhood; the office sense is "public
   answerability"** — renamed book-wide 2026-08-18 (`13d0a7e`). The state-form and

@@ -94,8 +94,8 @@ or one population licenses nothing about another.
 
 The waiting claim is named in its own shortfall record. Its essential provision
 for this window remains unmet, and the responsible manager owes continuity,
-repair and reassessment. The waiting person's health entitlement and adult
-ballot remain. Health delivery, personal fault and confinement do not follow.
+repair and reassessment. The waiting person's entitlement to care and adult
+ballot remain. Delivered care, personal fault and confinement do not follow.
 The allocation's permission settles none of those other questions.
 
 ## When somebody asks and nobody answers

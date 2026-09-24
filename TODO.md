@@ -243,39 +243,6 @@ changes it.
 
 ### Resolve the design questions, source and pins first
 
-- [ ] **36. Give the floor a bearer with a jurisdiction, and each item one
-  name.**
-
-  **Scope:** Article 1b, Chapters 4, 5 and 7, the opening glossary, and the
-  [economic decision](book-1/appendix/decisions/economic-pluralism-and-protected-private-sphere-decision.md);
-  plan §7.2 and §7.3.
-
-  One constant owes every floor item, `owe(State, K, $x)`
-  (`book-1/source/constitution.nibli:2697`), and Chapter 4 says "The public
-  body named State owes each floor item to every person". Chapter 7 says each
-  duty it establishes has "a bearer, a function, a jurisdiction and a scope
-  supplied by a current lawful source". The economic ruling already gives the
-  common tier floor finance, equalisation, portability and minimum standards,
-  and leaves provision to regions and localities under subsidiarity. Allocate
-  the duties accordingly, each with its jurisdiction and scope, and pass
-  continuity up a tier on a certified failure. The unconditional debt keeps
-  its place inside the firewall: `owe` stays unread, every floor item keeps its
-  refusal pin, and no tier's record, registration or funding becomes a
-  condition of the floor. Serve first.
-
-  The names drift. `secure` is "safety" in Chapter 4 and "material security"
-  in Chapter 5; care appears as "care debt", "health debt" and "health
-  entitlement"; shelter as "shelter debt", "dwelling debt" and "housing
-  entitlement". Establish each item's meaning from the source and its
-  decisions, then give it one reader name everywhere, without rule-like "debt"
-  forms. Ruling D8 splits `secure` into bodily safety and material security;
-  item 44 implements that split and its names.
-
-  **Done when:** pins show each tier's duty and jurisdiction, the failover,
-  and the entitlement and debt still following for a person no tier has
-  recorded; the chapters describe the allocation; and care and shelter each have
-  one name.
-
 - [ ] **37. Settle the shield's post-charge disclosure option.**
 
   **Scope:** Article 6's shield, Chapter 24 and Part V; the

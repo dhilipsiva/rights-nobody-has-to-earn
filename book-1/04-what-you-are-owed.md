@@ -58,11 +58,25 @@ another floor item.
 
 ## Owed by whom
 
-The public body named State owes each floor item to every person. It is itself
-publicly answerable: an exposure against it can attract the shield on the same
-terms as an exposure against another answerable actor. The State's supplied
-record gives it no examiner's credential. Owing the floor does not grant the
-power to void someone's credibility.
+The public body named State owes each floor item to every person, and the rules
+divide the work among its tiers. The common tier finances the floor, equalises
+between regions, sets its minimum standards and backstops it for every person;
+its duties need nothing but personhood. A region must provide the floor, and a
+locality must reach the person and deliver it, where a witness authorised for
+that person records the person as present there. When a source and a separate
+independent reviewer, neither of them the failed body, certify that a region or
+locality has failed, the tier they name must assume continuity. The failed
+body's own duty stands.
+
+None of these allocations is a condition of the floor. A person no witness has
+recorded is owed everything, and the common tier's duties reach them. A rule
+confining someone for lacking a tier's duty is refused, as one confining them
+for lacking the debt is.
+
+The State is itself publicly answerable: an exposure against it can attract the
+shield on the same terms as an exposure against another answerable actor. The
+State's supplied record gives it no examiner's credential. Owing the floor does
+not grant the power to void someone's credibility.
 
 The floor debt is not a receipt. Bela is owed food and shelter. In the supplied
 record, neither delivery conclusion follows for Bela. The obligation survives
@@ -105,7 +119,8 @@ none of those events.
 
 ## The child with nobody
 
-Nell is owed the same floor as Bela. Each debt and entitlement follows from
-the birth root, without asking who provides care. The tested confinement
-rule is refused for Nell too. Evidence that a floor item reached Nell is
-still absent.
+Nell is owed the same floor as Bela. Each debt and entitlement follows from the
+birth root, without asking who provides care. The common tier's duties reach
+Nell as well, while no region owes provision on a presence nobody recorded. The
+tested confinement rule is refused for Nell too. Evidence that a floor item
+reached Nell is still absent.

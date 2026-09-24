@@ -69,7 +69,11 @@ after a breach.
 
 The chapter's cases establish a duty of each kind. Each has a bearer, a
 function, a jurisdiction and a scope supplied by a current lawful source.
-Being a public body does not assign every public task to that body.
+Being a public body does not assign every public task to that body. The floor's
+own duties are divided the same way, as Chapter 4 sets out: the common tier
+finances and backstops it for every person, a region provides it where a person
+is recorded as present, a locality reaches and delivers, and a certified
+failure passes continuity to the tier above.
 
 ## A duty cannot be contracted away
 
@@ -221,8 +225,9 @@ help reaching the person.
 
 ## The child with nobody
 
-Nell's public food and shelter debts cannot be redirected to a presumed
-household. The duty to initiate assistance follows from personhood alone.
+What is publicly owed to Nell for food and shelter cannot be redirected to a
+presumed household. The duty to initiate assistance follows from personhood
+alone.
 
 The added bystander's observation opens independent review without reducing
 the floor or producing confinement or a credibility loss. Food receipt still

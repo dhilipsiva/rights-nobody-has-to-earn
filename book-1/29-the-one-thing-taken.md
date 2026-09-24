@@ -23,7 +23,7 @@ justified place and current authority described here and in Chapter 28.
 
 No rule in this source converts custody into a second legal loss. Conviction
 does not by itself terminate worker status, wages already owed, pension claims,
-housing entitlement, lawful property, contractual capacity, credit rights,
+entitlement to shelter, lawful property, contractual capacity, credit rights,
 parentage, caregiving, household membership, support, political membership, or
 remedy. Each further restriction needs its own lawful source, evidence,
 process, review, and end.
@@ -122,7 +122,7 @@ or forgiveness as the price of leaving. Housing, care, documents, education,
 access to employment and community participation must continue across release,
 with private support rather than a general supervision or risk status.
 
-Hano retains standing and the dwelling debt. Neither the sentence nor the
+Hano retains standing and the shelter owed. Neither the sentence nor the
 order ending it supplies a shelter receipt or establishes that Hano spoke. The same is true of Adam and Kel's named supported
 residences. Actual provision needs evidence independently of the legal change.
 

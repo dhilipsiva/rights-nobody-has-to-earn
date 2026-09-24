@@ -132,7 +132,7 @@ deadline. Publication and response remain duties to perform.
 
 ## The child with nobody
 
-Nell's birth entry establishes personhood and the health debt. The case
+Nell's birth entry is enough for personhood and for the care owed. The case
 requires no health, school or administrative file and no enrolment through
 a service.
 

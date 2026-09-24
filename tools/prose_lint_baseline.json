@@ -32,8 +32,8 @@
     "harness": 1
   },
   "book-1/04-what-you-are-owed.md": {
-    "negation": 34.9,
-    "jargon": 8.7,
+    "negation": 33.3,
+    "jargon": 7.4,
     "names": 2,
     "disclaimers": 3,
     "banned": 2,
@@ -56,8 +56,8 @@
     "harness": 0
   },
   "book-1/07-who-owes-and-what-follows.md": {
-    "negation": 30.3,
-    "jargon": 14.6,
+    "negation": 29.5,
+    "jargon": 14.2,
     "names": 1,
     "disclaimers": 4,
     "banned": 0,
@@ -152,11 +152,11 @@
     "harness": 0
   },
   "book-1/19-what-may-be-kept-about-you.md": {
-    "negation": 28.5,
-    "jargon": 5.2,
+    "negation": 28.4,
+    "jargon": 4.5,
     "names": 2,
     "disclaimers": 4,
-    "banned": 4,
+    "banned": 3,
     "harness": 0
   },
   "book-1/20-a-crisis-does-not-suspend-the-republic.md": {
@@ -224,11 +224,11 @@
     "harness": 0
   },
   "book-1/28-where-people-are-put.md": {
-    "negation": 45.7,
-    "jargon": 17.8,
+    "negation": 45.6,
+    "jargon": 17.0,
     "names": 13,
     "disclaimers": 8,
-    "banned": 2,
+    "banned": 1,
     "harness": 3
   },
   "book-1/29-the-one-thing-taken.md": {
@@ -236,7 +236,7 @@
     "jargon": 15.4,
     "names": 7,
     "disclaimers": 7,
-    "banned": 7,
+    "banned": 6,
     "harness": 0
   },
   "book-1/30-when-the-system-notices-it-broke.md": {

@@ -151,7 +151,7 @@
 # rehabilitation, sanctuary, habitat, monitoring, structural, licence and
 # record-correction orders are the same shape and have their own cases. None
 # infers a performed rescue, treatment, transfer, restoration or delivery.
-:expect-pins 70
+:expect-pins 85
 
 ? complete(ECReaderClaim, ECEnvironmentalRightClaim, Bela).
 # => FALSE
@@ -390,6 +390,78 @@ hears(Cira, Bela).
 ? reward(Cira).
 # => FALSE
 
+# ── Owed by whom: the tiers (revision item 36) ────────────────────────────
+# "The common tier finances the floor, equalises between regions, sets its
+#  minimum standards and backstops it for every person; its duties need nothing
+#  but personhood." Fresh constants, so no cast verdict moves.
+person(Loma).
+? obliged(CommonTier, FinanceEqualiseAndSetMinimumStandardsForTheFloor, Loma).
+# => TRUE
+? obliged(CommonTier, BackstopTheFloorForEveryPersonInTheJurisdiction, Loma).
+# => TRUE
+
+# "A region must provide the floor, and a locality must reach the person and
+#  deliver it, where a witness authorised for that person records the person as
+#  present there."
+authorized(PresenceClerk, FloorPresenceWitness, Loma).
+observe(PresenceClerk, Loma, NorthRegion, FloorPresenceRegionScope).
+observe(PresenceClerk, Loma, RiverTown, FloorPresenceLocalityScope).
+? obliged(NorthRegion, ProvideTheFloorWhereThePersonIsPresent, Loma).
+# => TRUE
+? obliged(RiverTown, ReachAndDeliverTheFloorLocally, Loma).
+# => TRUE
+
+# An entry by a writer nobody authorised for the person allocates nothing.
+observe(Tavi, Loma, SouthRegion, FloorPresenceRegionScope).
+? obliged(SouthRegion, ProvideTheFloorWhereThePersonIsPresent, Loma).
+# => FALSE
+
+# A presence record allocates a duty; it is not a delivery.
+? eats(Loma).
+# => FALSE
+? dwell(Loma).
+# => FALSE
+
+# "When a source and a separate independent reviewer, neither of them the failed
+#  body, certify that a region or locality has failed, the tier they name must
+#  assume continuity. The failed body's own duty stands."
+authorized(FloorOmbud, FloorFailureSourceAuthority, FailRiver).
+authorized(FloorAuditor, IndependentFloorFailureReviewAuthority, FailRiver).
+observe(FloorOmbud, FailRiver, RiverTown, FloorFailedTierScope).
+observe(FloorAuditor, FailRiver, RiverTown, FloorFailedTierScope).
+observe(FloorOmbud, FailRiver, NorthRegion, FloorContinuityTierScope).
+observe(FloorAuditor, FailRiver, NorthRegion, FloorContinuityTierScope).
+? obliged(NorthRegion, AssumeFloorContinuityForTheCertifiedFailure, FailRiver).
+# => TRUE
+? obliged(RiverTown, ReachAndDeliverTheFloorLocally, Loma).
+# => TRUE
+
+# A failed body cannot certify its own failure.
+authorized(RiverTown, FloorFailureSourceAuthority, FailSelf).
+authorized(FloorAuditor, IndependentFloorFailureReviewAuthority, FailSelf).
+observe(RiverTown, FailSelf, RiverTown, FloorFailedTierScope).
+observe(FloorAuditor, FailSelf, RiverTown, FloorFailedTierScope).
+observe(RiverTown, FailSelf, NorthRegion, FloorContinuityTierScope).
+observe(FloorAuditor, FailSelf, NorthRegion, FloorContinuityTierScope).
+? obliged(NorthRegion, AssumeFloorContinuityForTheCertifiedFailure, FailSelf).
+# => FALSE
+
+# One attester alone certifies nothing.
+authorized(FloorOmbud, FloorFailureSourceAuthority, FailLone).
+observe(FloorOmbud, FailLone, RiverTown, FloorFailedTierScope).
+observe(FloorOmbud, FailLone, NorthRegion, FloorContinuityTierScope).
+? obliged(NorthRegion, AssumeFloorContinuityForTheCertifiedFailure, FailLone).
+# => FALSE
+
+# "None of these allocations is a condition of the floor." A rule confining a
+# person for lacking the common tier's duty is refused exactly as one confining
+# them for lacking the debt. The engine names whichever edge of the resulting
+# cycle it meets first, so the pin matches the stratification refusal itself;
+# the `~home` control in rights-floor.pins.nibli shows that a rule reading
+# something outside the person cone still loads.
+:refuse reasoning /Unstratifiable negation: strongly-connected component containing/
+all $x: person($x) & ~obliged(CommonTier, BackstopTheFloorForEveryPersonInTheJurisdiction, $x) -> prisoner($x).
+
 # ── The child with nobody ──────────────────────────────────────────────────
 # "The pins ask every debt and every entitlement of the child by name rather
 # than sampling, because the claim of this chapter is that the list does not
@@ -417,6 +489,16 @@ hears(Cira, Bela).
 
 ? owe(State, Meets, Nell).
 # => TRUE
+
+# The tiers reach the child without any record beyond the birth entry: the
+# common tier's duties follow, and no region owes provision on a presence nobody
+# recorded.
+? obliged(CommonTier, FinanceEqualiseAndSetMinimumStandardsForTheFloor, Nell).
+# => TRUE
+? obliged(CommonTier, BackstopTheFloorForEveryPersonInTheJurisdiction, Nell).
+# => TRUE
+? obliged(NorthRegion, ProvideTheFloorWhereThePersonIsPresent, Nell).
+# => FALSE
 
 ? entitled(Nell, event { eats() }).
 # => TRUE

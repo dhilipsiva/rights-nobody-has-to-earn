@@ -2,6 +2,19 @@
 
 # Book 1 Economic Pluralism and Protected Private Sphere Decision
 
+**Floor duties by tier — item 36, 2026-09-24.** The competence list below gives
+the common tier floor finance, portability and equalisation, and leaves
+provision to regions and localities under subsidiarity. Article 1b now applies
+it to the floor itself. The common tier owes every person the duties to finance,
+equalise and set minimum standards for the floor and to backstop it, on
+personhood alone. A region owes provision, and a locality reach and delivery,
+where a witness authorised for the person records the person as present there. A
+failure certified by a source and a separate independent reviewer, neither of
+them the failed body, obliges the tier they name to assume continuity, and the
+failed body's duty stands. The unconditional debts are unchanged, nothing reads
+the new duties, and none conditions the floor. No tier's performance, capacity
+or funding follows.
+
 **Comparative argument — item 24, 2026-09-21.** The exact Part V comparisons
 under Capture and
 [Essentials, public responsibility and fiscal choice](../../31-the-five-joints.md#essentials-public-responsibility-and-fiscal-choice)

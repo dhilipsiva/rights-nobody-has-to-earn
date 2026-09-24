@@ -145,8 +145,8 @@ cancel it, and continuity requires action rather than a favourable label.
 
 ## The child with nobody
 
-Nell's birth entry derives standing and the dwelling debt. It supplies no
-custody, placement or shelter receipt. This is not evidence that Nell has
+Nell's birth entry is enough for standing and for the shelter owed. It supplies
+no custody, placement or shelter receipt. This is not evidence that Nell has
 nowhere to live.
 
 Nell needs the ordinary floor and its delivery duties, without a custody case
