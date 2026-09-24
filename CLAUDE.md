@@ -133,6 +133,45 @@ reinstate the retired tooling or workflow.
 Grouped by kind. Dates in each heading are the ratification dates; a ruling
 that was later implemented or narrowed carries that supersession inline.
 
+### Item 34 — prose measurement as a development check, 2026-09-24
+
+`tools/prose_lint.py` adapts the revision plan's lint, moved there from
+`new-reviwes/`, into a development measurement of every ordered input the
+manifest names. It reports negations and terms of art per 1,000 words, distinct
+case names, sentences saying something is not established, terms the plan keeps
+out of chapter prose, and harness names, at the file's own line numbers. Four
+defects in the plan's script are repaired. Stripping fenced code shifted every
+later line number, so all 63 findings in the method pointed at the wrong line;
+link targets were scanned as prose, so 33 banned-term hits lived only in URLs;
+the name list omitted the institutional fixtures the plan's own counts include;
+and the term patterns missed inflections. Comments, inline code and bare URLs
+are blanked in place, and only tokens with a letter or digit count as words.
+
+Profiles follow the element. Chapters, derived and Part V alike, meet the plan's
+thresholds; the opening meets them except for case names, which wait for its
+reference material to move; the method is measured without limits because the
+plan allows its terms there. Each input is held to the plan's threshold or its
+figure recorded in `tools/prose_lint_baseline.json`, whichever is looser.
+`--ratchet` only lowers a figure, and a restructure admits a new file explicitly
+with `--admit`. It is a development check and adds no gate to `verify.sh`.
+
+On the current manuscript it reproduces the plan's appendix: word counts within
+three words, negation within 0.1 per 1,000 words, and case names exactly for all
+30 derived chapters, including Chapter 25's 21 and Chapter 9's 14. Terms of art
+read up to 1.7 per 1,000 higher where plurals now count. Part V and the method
+differ because the plan excluded Part V's notes and measured the method with its
+code. Every ordered input fails the plan's negation threshold today; the
+baseline records where each starts.
+
+Fourteen unit tests pass (`python3 -m unittest discover -s tests -p
+test_prose_lint.py`, about one second): every check fires on a planted example
+and stays silent on clean text, line numbers survive code, the ratchet only
+lowers, every input has exactly one record, and no input regresses. A banned
+term planted in Chapter 19 failed the manuscript test and was removed. The
+contribution guide lists the commands. `RIGHTS_VERIFY_JOBS=4 ./verify.sh` passes
+88,815 pins across 16,137 cases with complete contradiction checks and no
+findings in 1,228.64s; the constitution, pins and chapters are unchanged.
+
 ### The revision rulings D1–D9 — 2026-09-24
 
 The author ratified nine rulings and two follow-ups on 2026-09-24, answering the
@@ -5502,6 +5541,11 @@ The repo is deliberately **mixed-licence** — see `LICENSING.md` before adding 
   derived chapter), that the opening note's contents follow it, that every
   relative link resolves, and that every reviewed `path::needle` reference
   resolves exactly once against a dated baseline.
+- `tools/prose_lint.py` — the prose measurement (item 34): negation, terms of
+  art, case names, disclaimers, banned terms and harness names per ordered
+  input, held to the plan's thresholds or to `tools/prose_lint_baseline.json`,
+  whichever is looser. `--check`, `--ratchet`, `--admit`. A development check,
+  not a verification gate.
 - `tools/relocate.py` — `plan`, `apply`, `check`: derives a rename map from the
   manifest against the directory, git-moves the files, rewrites every reference
   (path stems longest-first, guarded basenames, chapter labels in one

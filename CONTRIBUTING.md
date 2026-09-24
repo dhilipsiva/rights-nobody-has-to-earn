@@ -83,6 +83,15 @@ RUST_MIN_STACK=67108864 cargo test --release --locked --bin generate reference_i
 RUST_MIN_STACK=67108864 cargo test --release --locked --bin generate claim_discipline_tests
 ```
 
+Chapter prose is also measured for reader load: negation, terms of art, case
+names, repeated disclaimers and terms kept out of chapters. No chapter may get
+worse than its recorded figures; record an improvement with `--ratchet`:
+
+```bash
+python3 tools/prose_lint.py --check --locations
+python3 -m unittest discover -s tests -p test_prose_lint.py
+```
+
 For machinery changes, run its relevant development tests. For changes to
 layout or navigation, [rebuild the review copies](book-1/README.md#read-or-assemble-the-book)
 and inspect the affected HTML, EPUB and PDF output. A Markdown check cannot

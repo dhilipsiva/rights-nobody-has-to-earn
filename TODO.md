@@ -4,7 +4,7 @@
 
 Created 2026-09-24 at the author's request, "Create a TODO.md file", from the
 [revision plan](new-reviwes/revision-plan-9.5.md) and its
-[prose lint](new-reviwes/prose_lint.py). Another AI assistant wrote the plan
+[prose lint](tools/prose_lint.py). Another AI assistant wrote the plan
 outside this repository, from the 170-page review PDF built at `93fa5662`. Its
 target is 9.5, "the best book in its genre that a serious reader could pick
 up", and it places the manuscript at about 6: ideas 8, honesty 9, argument 7,
@@ -29,7 +29,7 @@ repository were checked against `93fa5662` on 2026-09-24.
   reviewed on (item 40).
 - **Reproduced:** run over the Markdown, `prose_lint.py` matches the plan's
   per-chapter figures within rounding, and every ordered input fails its
-  negation threshold today (item 34).
+  negation threshold today; `tools/prose_lint.py` now holds each to its figures.
 - **Unverified:** the plan's citations, which it says were written from memory
   (item 46).
 
@@ -97,8 +97,9 @@ ratified 2026-09-24* and recorded in `CLAUDE.md`.
   free-hand paraphrase.
 - Use focused substantive checks during implementation, then the complete
   `./verify.sh` for item completion, plus relevant existing development checks
-  when their machinery changes. Once item 34 lands, measure changed prose with
-  the lint; it is a development check and adds no gate to `./verify.sh`.
+  when their machinery changes. Measure changed prose with
+  `tools/prose_lint.py --check`, and record improvements with `--ratchet`; it is
+  a development check and adds no gate to `./verify.sh`.
   Review prose consistency separately. Report actual commands, elapsed time,
   failures, contradictions and incomplete checks. Do not introduce receipts,
   hashes, freshness gates or administrative audits.
@@ -223,36 +224,6 @@ reading sequence](book-1/contents.json), which the plan also uses, until item 53
 changes it.
 
 ### Measure and stabilise
-
-- [ ] **34. Land the prose lint as a development measurement.**
-
-  **Scope:** `new-reviwes/prose_lint.py`, moved under `tools/` with a unit
-  test beside `tests/test_build_book.py`; plan §6.3.
-
-  Run over the Markdown, the script reproduces the plan's appendix within
-  rounding: Chapter 1's negations measure 57.7 per 1,000 words against the
-  plan's 58.0, and both count 21 names in Chapter 25. Four defects need
-  fixing before anything relies on it. Reported line numbers drift after
-  fenced code: all 63 findings in `method.md` point at the wrong line. Link
-  targets are scanned as prose: 33 banned-term hits exist only inside URLs,
-  and linked file names add negations. The name list omits the fixtures the
-  plan counts, so Chapter 9 scores 9 names against the plan's 14, and it
-  counts each harness name twice. The term patterns miss inflections such as
-  readers, windows, leases and carries. Add a profile for each kind of
-  element, so that terms the plan allows in the method are not failures
-  there.
-
-  Every ordered input fails the negation threshold today. Record the current
-  figures per input and fail only a regression, tightening toward the plan's
-  thresholds as chapters are rewritten, the way the counted-claims ratchet
-  ran to zero. It is a development check under the 2026-09-12 decision, not a
-  gate in `./verify.sh`. Its measures are proxies, as the plan says, and none
-  overrides meaning.
-
-  **Done when:** each check fires on a planted example and stays silent on
-  clean text, reported locations are exact, the recorded figures reproduce the
-  plan's appendix within rounding or explain the difference, and the tests
-  pass.
 
 - [ ] **35. Restore the companion's CI before the rewrite changes its inputs.**
 
