@@ -199,6 +199,16 @@ still include judgments rather than observations. Naming the finder and requirin
 independent review make responsibility explicit; a closed vocabulary cannot
 authenticate those actors or establish the truth of their account.
 
+How many people must act before a record takes effect depends on what it does. A
+record that only gives or preserves something for the person it concerns, such
+as an accommodation, continuing care, access to a hearing, interim protection or
+a claim that opens review, takes effect on its source's record alone. The
+independent reviewer it names owes prompt review and can withdraw it. A record
+that restricts, takes, confines, finds against somebody or gives one person
+power over another takes effect only after its independent attesters and
+reviewer agree. Help given on one record never becomes the completed record that
+other rules read, so it cannot be used to shortcut harm.
+
 ## The child with nobody
 
 Nell's birth entry is admitted and personhood follows. The test also attempts

@@ -66,6 +66,7 @@ pub(super) fn generate(
         counterfactual(export, authored, name, atom);
     }
 
+    let beneficial = beneficial_kinds(context)?;
     for card in cards {
         let v = values(cards, card, "MPCase");
         let facts = fixture(cards, card, &v);
@@ -211,6 +212,25 @@ pub(super) fn generate(
             &completion(card, &v, false),
         )?;
 
+        let helped = beneficial.contains(card.kind);
+        add_case(
+            context,
+            export,
+            &format!("{}/single-actor", card.id),
+            "live",
+            &single_actor_facts(&facts, &v),
+            &fast_queries(card, &v, helped),
+        )?;
+        if helped {
+            add_case(
+                context,
+                export,
+                &format!("{}/single-actor-withdrawn-on-review", card.id),
+                "live",
+                &(single_actor_facts(&facts, &v) + &withdrawal(&v)),
+                &fast_queries(card, &v, false),
+            )?;
+        }
         for dep in &card.dependencies {
             let dep = self::card(cards, dep);
             let d = dependency_values(cards, card, dep, &v);

@@ -2,6 +2,26 @@
 
 # Environmental rights, commons and direct animal protection
 
+**Ruling D6 — item 43, 2026-09-24.** `ECAffectedHumanAnimalProtectionClaim`,
+`ECAlternateAnimalAdvocateProtectionClaim`, `ECAnimalAdvocateProtectionClaim`,
+`ECAnimalFoodFloorAndCareContinuity`, `ECAssociationAnimalProtectionClaim`,
+`ECAssociationCommonsClaim`, `ECChosenSupporterAnimalProtectionClaim`,
+`ECDualFloorAndCeilingContinuity`, `ECEnvironmentalRightClaim`,
+`ECGuardianCommonsClaim`, `ECPresentPersonCommonsClaim`,
+`ECProfessionalAnimalProtectionClaim`, `ECPublicRestorationContinuity`,
+`ECRegulatorAnimalProtectionClaim`, `ECRightsAdvocateCommonsClaim` and
+`ECUrgentPlausibleAnimalProtection` take effect on the source's record alone.
+The duties and permissions follow at once; the independent reviewer named on the
+record owes prompt review (`ReviewTheSingleActorRecordPromptly`) and can
+withdraw them (`SingleActorEffectWithdrawnOnReview` at
+`SingleActorReviewScope`). The completed record keeps the full procedure this
+card sets out, and no rule reads a permission given on one record, so nothing
+adverse is built on it. Every other record here, including every adverse record
+and every role that gives one person power over another, is unchanged. The
+classification is `book-1/source/procedural-load-source.json`, and
+`floor_vector_tests::help_takes_effect_on_one_actor_and_harm_waits_for_review`
+checks the property.
+
 Status: **Implemented and verified against the repository sources, 2026-09-14;
 not an operational or empirical claim.**
 Session-drafted choices and exact retained reader text have delegated author

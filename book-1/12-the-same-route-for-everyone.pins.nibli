@@ -4,7 +4,8 @@
 #   ./verify.sh --only book-1/12-the-same-route-for-everyone.pins.nibli
 #   ./verify.sh          # all substantive pins and contradiction checks
 #
-# The chapter's case lists tests/pins/records/child_with_nobody/fixture.nibli.
+# The chapter's case lists tests/pins/records/child_with_nobody/fixture.nibli
+# and tests/pins/equality/accommodation/single-actor/fixture.nibli.
 # Quillon, the one probe witness below, is fresh.
 #
 # The families this chapter renders carry their own executable coverage:
@@ -20,7 +21,7 @@
 # WHAT FALSE MEANS HERE: a FALSE is pinned only where the KB could have said
 # TRUE, and the comment says what would flip it.
 
-:expect-pins 71
+:expect-pins 79
 
 # Every person is owed equal and effective protection — the baseline, the grounds and the forms
 ? prevents(Adam, SubstantiveEqualityStatus).
@@ -214,6 +215,33 @@ observe(Quillon, QuillonRecordInvented, QuillonInventedBarrier, EqualityBarrierK
 observe(Quillon, QuillonRecordMeasure, BoundedQuota, EqualityMeasureKindScope).
 ? member(BoundedQuota, EqualityMeasureKindVocabulary).
 # => TRUE
+
+# "The adjustment does not wait for all of them": the fixture
+# tests/pins/equality/accommodation/single-actor/fixture.nibli records the
+# accommodation by its source alone, with the reviewer, challenge reader and
+# alternate named but not attesting. The duty and the permission take effect;
+# the completed record, which needs every attester, does not; the named
+# reviewer owes prompt review.
+? obliged(EqualityCaseActor, ProvideTheEffectiveAdjustmentOrSecureAnEquivalentAlternative, EqualityCaseRecord).
+# => TRUE
+? permits(EqualityCaseRequester, UseTheRightServiceRoleOrProcedureWithTheAdjustment, EqualityCaseRecord).
+# => TRUE
+? complete(EqualityCaseRecord, ReviewedReasonableAccommodation, EqualityCaseDecision).
+# => FALSE
+? obliged(EqualityCaseReview, ReviewTheSingleActorRecordPromptly, EqualityCaseRecord).
+# => TRUE
+
+# "If that review withdraws the record ... the adjustment's duty and
+# permission stop; nothing about the person follows from the withdrawal."
+observe(EqualityCaseReview, EqualityCaseRecord, SingleActorEffectWithdrawnOnReview, SingleActorReviewScope).
+? permits(EqualityCaseRequester, UseTheRightServiceRoleOrProcedureWithTheAdjustment, EqualityCaseRecord).
+# => FALSE
+? obliged(EqualityCaseActor, ProvideTheEffectiveAdjustmentOrSecureAnEquivalentAlternative, EqualityCaseRecord).
+# => FALSE
+? false(EqualityCaseRequester).
+# => FALSE
+? prisoner(EqualityCaseRequester).
+# => FALSE
 
 # Every head the ordinary half concludes is derived-only: a forged measure,
 # continuation or accommodation is refused at assertion.

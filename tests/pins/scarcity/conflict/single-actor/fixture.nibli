@@ -1,0 +1,27 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+authorized(ScarcityCaseSource, ScarcitySourceAuthority, ScarcityCaseRecord).
+authorized(ScarcityCaseReview, IndependentScarcityReviewAuthority, ScarcityCaseRecord).
+authorized(ScarcityCaseReader, ScarcityChallengeReaderAuthority, ScarcityCaseRecord).
+authorized(ScarcityCaseAlternate, ScarcityAlternateReviewAuthority, ScarcityCaseRecord).
+observe(ScarcityCaseSource, ScarcityCaseRecord, ScarcityCaseResource, ScarcityResourceScope).
+observe(ScarcityCaseSource, ScarcityCaseRecord, ScarcityCasePopulation, ScarcityAffectedPopulationScope).
+observe(ScarcityCaseSource, ScarcityCaseRecord, ScarcityCaseManager, ScarcityManagerScope).
+observe(ScarcityCaseSource, ScarcityCaseRecord, ScarcityCaseVersion, ScarcitySourceVersionScope).
+observe(ScarcityCaseSource, ScarcityCaseRecord, ScarcityCasePeriod, ScarcityEvidencePeriodScope).
+observe(ScarcityCaseSource, ScarcityCaseRecord, ScarcityCaseJurisdiction, ScarcityJurisdictionScope).
+observe(ScarcityCaseSource, ScarcityCaseRecord, ScarcityCaseScope, ScarcityLegalScope).
+observe(ScarcityCaseSource, ScarcityCaseRecord, ScarcityCaseEnd, ScarcitySourceBoundEndScope).
+observe(ScarcityCaseSource, ScarcityCaseRecord, CurrentReconciledScarcityRecord, ScarcityCurrentDispositionScope).
+observe(ScarcityCaseSource, ScarcityCaseRecord, ScarcityCaseReader, ScarcityChallengeReaderScope).
+observe(ScarcityCaseSource, ScarcityCaseRecord, ScarcityCaseAlternate, ScarcityIndependentAlternateScope).
+observe(ScarcityCaseSource, ScarcityCaseRecord, ScarcityCaseChallenge, ScarcityChallengeScope).
+observe(ScarcityCaseSource, ScarcityCaseRecord, ScarcityCaseCorrection, ScarcityCorrectionScope).
+observe(ScarcityCaseSource, ScarcityCaseRecord, ScarcityCaseRemedy, ScarcityRemedyScope).
+observe(ScarcityCaseSource, ScarcityCaseRecord, ConstitutionalReviewOrIndependentSubstitute, ScarcityFinalReviewScope).
+observe(ScarcityCaseSource, ScarcityCaseRecord, NoStandingEmergencyPowerAndNoReducedRationRenamedAsTheMinimum, ScarcityCorridorScope).
+observe(ScarcityCaseSource, ScarcityCaseRecord, ReviewedCrossDomainConflict, ScarcityRecordKindScope).
+observe(ScarcityCaseSource, ScarcityCaseRecord, PropertyVersusFloorOrCommons, ScarcityConflictKindScope).
+observe(ScarcityCaseSource, ScarcityCaseRecord, ScarcityCaseResolution, ScarcityResolutionScope).
+observe(ScarcityCaseSource, ScarcityCaseRecord, TypedRuleStatedInAdvanceNotAHiddenPriority, ScarcityTypedRuleScope).
+observe(ScarcityCaseSource, ScarcityCaseRecord, NonDerogableProtectionsAndTheCorridorSurvive, ScarcityCorridorSurvivalScope).
+observe(ScarcityCaseSource, ScarcityCaseRecord, PublicReasonsChallengeAndIndependentReview, ScarcityReasonsScope).

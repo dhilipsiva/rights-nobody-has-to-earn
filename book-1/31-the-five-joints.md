@@ -633,6 +633,23 @@ not the justice of every candidate rule or a universal proof that a protected
 promise survives every future change. Whoever operates the system must not
 turn a successful calculation into authority to enact its inputs.
 
+The procedure follows that distinction. An act that only gives or preserves
+something for the person it concerns, such as an accommodation, continuing care,
+a hearing, interim protection of an animal or a claim that opens review, takes
+effect on its source's record, and the reviewer it names owes prompt review and
+can withdraw it. An act that restricts, takes, confines, finds against somebody
+or gives one person power over another still waits for its independent attesters
+and reviewer. The cost of speed falls where help was given wrongly: a provider
+or public body carries a duty until review withdraws it. The slower route costs
+whoever waits for an order that protects one person by restricting another, and
+I accept that cost because an adverse act done wrongly is harder to undo than
+help given wrongly. Help given on one record never becomes the completed record
+other rules read, so it cannot shortcut harm. Evidence that help given on one
+record is routinely abused, or that the promised review does not come, would
+require narrowing the class. Evidence that adverse acts wait without the wait
+catching errors would argue for a different review design, not for acting on one
+record.
+
 Explicit grounds,
 separated functions and contestable records can make a consequence answerable
 to something more precise than an official's discretion. They cannot make

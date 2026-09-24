@@ -1,0 +1,10 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 4
+? family(PSProtectedsubject).
+# => FALSE
+? obliged(PSProtectedreader, PreserveMinimalPrivateProtectedFactEvidenceAndAccessibleCorrection, PSProtectedrecord).
+# => FALSE
+? obliged(PSProtectedreader, SecureCareAndRightsContinuityThroughoutFactDispute, PSProtectedrecord).
+# => FALSE
+? obliged(PSProtectedreview, ReviewTheSingleActorRecordPromptly, PSProtectedrecord).
+# => FALSE

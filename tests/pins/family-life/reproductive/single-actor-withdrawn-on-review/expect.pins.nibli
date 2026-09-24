@@ -1,0 +1,11 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 4
+
+? obliged(LifeCourseCaseActor, RequireNoThirdPartyAuthorizationForReproductiveAndBodilyCare, LifeCourseCaseRecord).
+# => FALSE
+? obliged(LifeCourseCaseActor, RecordNoBodilyDecisionAsAnAdverseFactAboutThePerson, LifeCourseCaseRecord).
+# => FALSE
+? complete(LifeCourseCaseRecord, ReviewedReproductiveAndBodilyCareAutonomy, LifeCourseCaseDecision).
+# => FALSE
+? obliged(LifeCourseCaseReview, ReviewTheSingleActorRecordPromptly, LifeCourseCaseRecord).
+# => FALSE

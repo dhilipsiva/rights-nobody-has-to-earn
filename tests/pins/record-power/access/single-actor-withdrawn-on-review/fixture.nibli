@@ -1,0 +1,29 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+authorized(RecordCaseSource, RecordSourceAuthority, RecordCaseRecord).
+authorized(RecordCaseReview, IndependentRecordReviewAuthority, RecordCaseRecord).
+authorized(RecordCaseReader, RecordChallengeReaderAuthority, RecordCaseRecord).
+authorized(RecordCaseAlternate, RecordAlternateReviewAuthority, RecordCaseRecord).
+observe(RecordCaseSource, RecordCaseRecord, RecordCaseSubject, RecordSubjectScope).
+observe(RecordCaseSource, RecordCaseRecord, IdentityAndStatusRecord, RecordDomainScope).
+observe(RecordCaseSource, RecordCaseRecord, RecordCaseHolder, RecordHolderScope).
+observe(RecordCaseSource, RecordCaseRecord, DeliverTheServiceRecorded, RecordPurposeScope).
+observe(RecordCaseSource, RecordCaseRecord, RecordCaseVersion, RecordSourceVersionScope).
+observe(RecordCaseSource, RecordCaseRecord, RecordCasePeriod, RecordEvidencePeriodScope).
+observe(RecordCaseSource, RecordCaseRecord, RecordCaseJurisdiction, RecordJurisdictionScope).
+observe(RecordCaseSource, RecordCaseRecord, RecordCaseScope, RecordLegalScope).
+observe(RecordCaseSource, RecordCaseRecord, RecordCaseEnd, RecordSourceBoundEndScope).
+observe(RecordCaseSource, RecordCaseRecord, CurrentReconciledRecordEntry, RecordCurrentDispositionScope).
+observe(RecordCaseSource, RecordCaseRecord, RecordCaseReader, RecordChallengeReaderScope).
+observe(RecordCaseSource, RecordCaseRecord, RecordCaseAlternate, RecordIndependentAlternateScope).
+observe(RecordCaseSource, RecordCaseRecord, RecordCaseChallenge, RecordChallengeScope).
+observe(RecordCaseSource, RecordCaseRecord, RecordCaseCorrection, RecordCorrectionScope).
+observe(RecordCaseSource, RecordCaseRecord, RecordCaseRemedy, RecordRemedyScope).
+observe(RecordCaseSource, RecordCaseRecord, ConstitutionalReviewOrIndependentSubstitute, RecordFinalReviewScope).
+observe(RecordCaseSource, RecordCaseRecord, NoStandingFloorLibertyBallotSanctionRiskOrWorthConsequence, RecordCorridorScope).
+observe(RecordCaseSource, RecordCaseRecord, ReviewedSubjectAccessAndCorrection, RecordEntryKindScope).
+observe(RecordCaseSource, RecordCaseRecord, RecordCaseRequester, RecordRequesterScope).
+observe(RecordCaseSource, RecordCaseRecord, InspectOwnRecord, RecordRequestKindScope).
+observe(RecordCaseSource, RecordCaseRecord, CaseBoundAccessToOwnRecordNotAReusableIdentity, RecordOwnAccessAuthorityScope).
+observe(RecordCaseSource, RecordCaseRecord, PrivateAccessibleCorrectionDeletionAndObjection, RecordAccessLimitScope).
+observe(RecordCaseSource, RecordCaseRecord, NoPublicationOfPrivateRecordOrIdentity, RecordPrivateAccessScope).
+observe(RecordCaseReview, RecordCaseRecord, SingleActorEffectWithdrawnOnReview, SingleActorReviewScope).

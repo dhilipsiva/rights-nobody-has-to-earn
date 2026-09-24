@@ -1,0 +1,11 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 4
+
+? complete(JCaseRecord, JusticeReviewedDefect, JCaseCase).
+# => FALSE
+? contradict(JCaseTarget, JEffectPermission).
+# => FALSE
+? obliged(JCaseOperator, PreserveCorrectAndRemedyJusticeDefect, JCaseRecord).
+# => FALSE
+? obliged(JCaseReview, ReviewTheSingleActorRecordPromptly, JCaseRecord).
+# => FALSE

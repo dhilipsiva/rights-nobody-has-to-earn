@@ -19,7 +19,7 @@ breaks* — and its one statement is `book-1/contents.json`, rendered in section
 <!-- BEGIN GENERATED: stratification -->
 | measurement | predicates | derived | rules | strata |
 |---|---|---|---|---|
-| computed from the constitution | **92** | **57** | **7414** | **10** |
+| computed from the constitution | **92** | **57** | **7524** | **10** |
 
 The floor is **8** rights — `secure`, `eats`, `dwell`, `healthy`, `learn`, `expresses`, `believe`, `meets` — each derived from `person`, which is why they sit at stratum 8 rather than 0. That is the firewall: being inside the `person` cone is what makes a punishing rule a negative cycle.
 

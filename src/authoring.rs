@@ -329,6 +329,8 @@ mod tests {
         for path in [
             "book-1/source/constitution.nibli",
             &format!("book-1/source/{family}-source.json"),
+            // The classification ruling D6 reads to find what one actor may give.
+            "book-1/source/procedural-load-source.json",
         ] {
             std::fs::copy(live.path(path), context.path(path)).unwrap();
         }

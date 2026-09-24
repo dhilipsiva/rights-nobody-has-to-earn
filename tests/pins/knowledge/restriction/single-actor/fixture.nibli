@@ -1,0 +1,32 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+authorized(KnowledgeCaseSource, KnowledgeSourceAuthority, KnowledgeCaseRecord).
+authorized(KnowledgeCaseReview, IndependentKnowledgeReviewAuthority, KnowledgeCaseRecord).
+authorized(KnowledgeCaseReader, KnowledgeChallengeReaderAuthority, KnowledgeCaseRecord).
+authorized(KnowledgeCaseAlternate, KnowledgeAlternateReviewAuthority, KnowledgeCaseRecord).
+observe(KnowledgeCaseSource, KnowledgeCaseRecord, KnowledgeCaseMatter, KnowledgeMatterScope).
+observe(KnowledgeCaseSource, KnowledgeCaseRecord, LearningAndInformationAccess, KnowledgeFieldScope).
+observe(KnowledgeCaseSource, KnowledgeCaseRecord, KnowledgeCaseActor, KnowledgeActorScope).
+observe(KnowledgeCaseSource, KnowledgeCaseRecord, KnowledgeCaseVersion, KnowledgeSourceVersionScope).
+observe(KnowledgeCaseSource, KnowledgeCaseRecord, KnowledgeCasePeriod, KnowledgeEvidencePeriodScope).
+observe(KnowledgeCaseSource, KnowledgeCaseRecord, KnowledgeCaseJurisdiction, KnowledgeJurisdictionScope).
+observe(KnowledgeCaseSource, KnowledgeCaseRecord, KnowledgeCaseScope, KnowledgeLegalScope).
+observe(KnowledgeCaseSource, KnowledgeCaseRecord, KnowledgeCaseEnd, KnowledgeSourceBoundEndScope).
+observe(KnowledgeCaseSource, KnowledgeCaseRecord, CurrentReconciledKnowledgeRecord, KnowledgeCurrentDispositionScope).
+observe(KnowledgeCaseSource, KnowledgeCaseRecord, KnowledgeCaseReader, KnowledgeChallengeReaderScope).
+observe(KnowledgeCaseSource, KnowledgeCaseRecord, KnowledgeCaseAlternate, KnowledgeIndependentAlternateScope).
+observe(KnowledgeCaseSource, KnowledgeCaseRecord, KnowledgeCaseChallenge, KnowledgeChallengeScope).
+observe(KnowledgeCaseSource, KnowledgeCaseRecord, KnowledgeCaseCorrection, KnowledgeCorrectionScope).
+observe(KnowledgeCaseSource, KnowledgeCaseRecord, KnowledgeCaseRemedy, KnowledgeRemedyScope).
+observe(KnowledgeCaseSource, KnowledgeCaseRecord, ConstitutionalReviewOrIndependentSubstitute, KnowledgeFinalReviewScope).
+observe(KnowledgeCaseSource, KnowledgeCaseRecord, NoOfficialTruthTasteBeliefCreativityRelationshipOrFulfilmentCertified, KnowledgeCorridorScope).
+observe(KnowledgeCaseSource, KnowledgeCaseRecord, ReviewedKnowledgeRestriction, KnowledgeRecordKindScope).
+observe(KnowledgeCaseSource, KnowledgeCaseRecord, EvidencedRightsHarm, KnowledgeHarmKindScope).
+observe(KnowledgeCaseSource, KnowledgeCaseRecord, ReviewedConductRestriction, KnowledgeRestrictionKindScope).
+observe(KnowledgeCaseSource, KnowledgeCaseRecord, EvidencedHarmNotOffenceDisagreementOrOfficialTruth, KnowledgeHarmEvidenceScope).
+observe(KnowledgeCaseSource, KnowledgeCaseRecord, LeastRestrictiveEffectiveMeansConsidered, KnowledgeNecessityScope).
+observe(KnowledgeCaseSource, KnowledgeCaseRecord, DefinedActivityReachAndAffectedPeople, KnowledgeRestrictionReachScope).
+observe(KnowledgeCaseSource, KnowledgeCaseRecord, PublicReasonsAndAccessibleNotice, KnowledgeReasonsScope).
+observe(KnowledgeCaseSource, KnowledgeCaseRecord, IndependentReviewAndSuspensiveChallenge, KnowledgeReviewRouteScope).
+observe(KnowledgeCaseSource, KnowledgeCaseRecord, NoViewpointBeliefOrIdentityTargeting, KnowledgeNeutralityScope).
+observe(KnowledgeCaseSource, KnowledgeCaseRecord, NoPriorPermissionForUnrestrictedActivity, KnowledgeResidualFreedomScope).
+observe(KnowledgeCaseSource, KnowledgeCaseRecord, NoCertificationOfTruthTasteOrCreativeMerit, KnowledgeNonCertificationScope).

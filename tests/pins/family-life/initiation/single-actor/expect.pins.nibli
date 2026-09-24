@@ -1,0 +1,13 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 5
+
+? obliged(LifeCourseCaseRepresentative, ActForThePersonWithinTheAppointedMatterOnly, LifeCourseCaseRecord).
+# => FALSE
+? obliged(LifeCourseCaseReader, HearTheChallengeToTheAppointmentAndCorrectIt, LifeCourseCaseRecord).
+# => FALSE
+? obliged(LifeCourseCaseActor, AuthorizeTheNamedReceiptWitnessForThePerson, LifeCourseCaseRecord).
+# => FALSE
+? complete(LifeCourseCaseRecord, ReviewedAssistanceInitiation, LifeCourseCaseDecision).
+# => FALSE
+? obliged(LifeCourseCaseReview, ReviewTheSingleActorRecordPromptly, LifeCourseCaseRecord).
+# => FALSE

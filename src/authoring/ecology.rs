@@ -296,11 +296,15 @@ fn validate(cards: &[Card]) -> Result<(), Error> {
     Ok(())
 }
 
-fn render(source: &str, cards: &[Card]) -> Result<String, Error> {
+fn render(source: &str, cards: &[Card], beneficial: &BTreeSet<String>) -> Result<String, Error> {
     validate(cards)?;
     let block = format!(
         "{BEGIN}\n# Exact supplied findings. No measurement, authentication, clock, institution or performed remedy is inferred.\n{}\n{END}",
-        records::rules(cards).join("\n")
+        records::rules(cards)
+            .into_iter()
+            .chain(records::single_actor_rules(cards, beneficial))
+            .collect::<Vec<_>>()
+            .join("\n")
     );
     match (source.matches(BEGIN).count(), source.matches(END).count()) {
         (0, 0) => Ok(format!("{}\n\n{block}\n", source.trim_end())),
@@ -355,7 +359,8 @@ fn pin_count(pins: &str) -> usize {
 pub(crate) fn generate(context: &Context, export: &mut super::Export) -> Result<(), Error> {
     let cards = cards(context)?;
     let path = "book-1/source/constitution.nibli";
-    let output = render(&context.read(path)?, &cards)?;
+    let beneficial = super::procedural_load::beneficial_kinds(context)?;
+    let output = render(&context.read(path)?, &cards, &beneficial)?;
     for card in &cards {
         let mut common = cases::common_for(&cards, card);
         for (family, width) in (1..=8)
@@ -421,6 +426,7 @@ pub(crate) fn generate(context: &Context, export: &mut super::Export) -> Result<
         .chain(corridor::boundaries(context, &cards)?)
         .chain(domain_cases::boundaries(&cards))
         .chain(scarcity_cases::boundaries(&cards))
+        .chain(cases::single_actor(&cards, &beneficial))
     {
         add_case(context, export, &case.id, &case.facts, &case.pins)?;
     }
@@ -460,6 +466,10 @@ pub(crate) fn generate(context: &Context, export: &mut super::Export) -> Result<
 mod tests {
     use super::*;
     use crate::pin::{LoadedSource, PinOptions, PreparedPinEngine};
+
+    fn beneficial_for_tests() -> BTreeSet<String> {
+        super::super::procedural_load::beneficial_kinds(&Context::discover().unwrap()).unwrap()
+    }
 
     #[test]
     fn replay_tuple_preserves_case_authorization_evidence_and_ground() {
@@ -640,7 +650,7 @@ mod tests {
                 let compiler = nibli_session::CoreSession::new();
                 // Fail immediately on a malformed or unstratified candidate,
                 // before the pin harness's per-statement diagnostic fallback.
-                let source = render(&canonical, &cards).unwrap();
+                let source = render(&canonical, &cards, &beneficial_for_tests()).unwrap();
                 let statements = source
                     .lines()
                     .map(str::trim)
@@ -692,7 +702,7 @@ mod tests {
             .unwrap()
             .read("book-1/source/constitution.nibli")
             .unwrap();
-        let first = render(&source, &cards).unwrap();
+        let first = render(&source, &cards, &beneficial_for_tests()).unwrap();
         let floor =
             regex::Regex::new(r"(?m)^entitled\(every person, event \{ ([a-z]+)\(\) \}\)\.$")
                 .unwrap();
@@ -707,8 +717,8 @@ mod tests {
                 .map(|name| (*name).to_owned())
                 .collect()
         );
-        assert_eq!(first, render(&first, &cards).unwrap());
-        assert!(render(&format!("{source}\n{BEGIN}"), &cards).is_err());
+        assert_eq!(first, render(&first, &cards, &beneficial_for_tests()).unwrap());
+        assert!(render(&format!("{source}\n{BEGIN}"), &cards, &beneficial_for_tests()).is_err());
         assert!(!records::rules(&cards).iter().any(|rule| {
             ["person(", "reward(", "healthy(", "prisoner("]
                 .iter()
@@ -810,6 +820,7 @@ mod tests {
                 let source = render(
                     &context.read("book-1/source/constitution.nibli").unwrap(),
                     &cards,
+                    &beneficial_for_tests(),
                 )
                 .unwrap();
                 let engine =
@@ -841,6 +852,7 @@ mod tests {
                 let source = render(
                     &context.read("book-1/source/constitution.nibli").unwrap(),
                     &cards,
+                    &beneficial_for_tests(),
                 )
                 .unwrap();
                 let engine =
@@ -872,6 +884,7 @@ mod tests {
                 let source = render(
                     &context.read("book-1/source/constitution.nibli").unwrap(),
                     &cards,
+                    &beneficial_for_tests(),
                 )
                 .unwrap();
                 let engine =
@@ -904,6 +917,7 @@ mod tests {
                 let source = render(
                     &context.read("book-1/source/constitution.nibli").unwrap(),
                     &cards,
+                    &beneficial_for_tests(),
                 )
                 .unwrap();
                 let engine =
@@ -935,6 +949,7 @@ mod tests {
                 let source = render(
                     &context.read("book-1/source/constitution.nibli").unwrap(),
                     &cards,
+                    &beneficial_for_tests(),
                 )
                 .unwrap();
                 let engine =
@@ -966,6 +981,7 @@ mod tests {
                 let source = render(
                     &context.read("book-1/source/constitution.nibli").unwrap(),
                     &cards,
+                    &beneficial_for_tests(),
                 )
                 .unwrap();
                 let live =
@@ -1032,6 +1048,7 @@ mod tests {
                 let source = render(
                     &context.read("book-1/source/constitution.nibli").unwrap(),
                     &cards,
+                    &beneficial_for_tests(),
                 )
                 .unwrap();
                 let engine =
@@ -1080,7 +1097,7 @@ mod tests {
         std::thread::Builder::new().stack_size(32 * 1024 * 1024).spawn(|| {
             let context = Context::discover().unwrap();
             let cards = cards(&context).unwrap();
-            let source = render(&context.read("book-1/source/constitution.nibli").unwrap(), &cards).unwrap();
+            let source = render(&context.read("book-1/source/constitution.nibli").unwrap(), &cards, &beneficial_for_tests()).unwrap();
             let engine = PreparedPinEngine::new(&[LoadedSource::new("live-plus-candidate", &source)]);
             let execution = card(&cards, "high-consequence");
             let stay = card(&cards, "guardian-stay");
@@ -1110,6 +1127,7 @@ mod tests {
                 let source = render(
                     &context.read("book-1/source/constitution.nibli").unwrap(),
                     &cards,
+                    &beneficial_for_tests(),
                 )
                 .unwrap();
                 let engine =
@@ -1140,6 +1158,7 @@ mod tests {
                 let source = render(
                     &context.read("book-1/source/constitution.nibli").unwrap(),
                     &cards,
+                    &beneficial_for_tests(),
                 )
                 .unwrap();
                 let engine =
@@ -1171,6 +1190,7 @@ mod tests {
                 let source = render(
                     &context.read("book-1/source/constitution.nibli").unwrap(),
                     &cards,
+                    &beneficial_for_tests(),
                 )
                 .unwrap();
                 let engine =
@@ -1200,6 +1220,7 @@ mod tests {
         let source = render(
             &context.read("book-1/source/constitution.nibli").unwrap(),
             &cards,
+            &beneficial_for_tests(),
         )
         .unwrap();
         eprintln!("ecological composition: loading candidate model");

@@ -1,0 +1,30 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+authorized(EqualityCaseSource, EqualitySourceAuthority, EqualityCaseRecord).
+authorized(EqualityCaseReview, IndependentEqualityReviewAuthority, EqualityCaseRecord).
+authorized(EqualityCaseReader, EqualityChallengeReaderAuthority, EqualityCaseRecord).
+authorized(EqualityCaseAlternate, EqualityAlternateReviewAuthority, EqualityCaseRecord).
+observe(EqualityCaseSource, EqualityCaseRecord, EqualityCaseDecision, EqualityDecisionScope).
+observe(EqualityCaseSource, EqualityCaseRecord, PublicFunction, EqualityDomainScope).
+observe(EqualityCaseSource, EqualityCaseRecord, EqualityCaseActor, EqualityActorScope).
+observe(EqualityCaseSource, EqualityCaseRecord, EqualityCaseVersion, EqualitySourceVersionScope).
+observe(EqualityCaseSource, EqualityCaseRecord, EqualityCasePeriod, EqualityEvidencePeriodScope).
+observe(EqualityCaseSource, EqualityCaseRecord, EqualityCaseJurisdiction, EqualityJurisdictionScope).
+observe(EqualityCaseSource, EqualityCaseRecord, EqualityCaseScope, EqualityLegalScope).
+observe(EqualityCaseSource, EqualityCaseRecord, EqualityCaseEnd, EqualitySourceBoundEndScope).
+observe(EqualityCaseSource, EqualityCaseRecord, CurrentReconciledEqualityRecord, EqualityCurrentDispositionScope).
+observe(EqualityCaseSource, EqualityCaseRecord, EqualityCaseReader, EqualityChallengeReaderScope).
+observe(EqualityCaseSource, EqualityCaseRecord, EqualityCaseAlternate, EqualityIndependentAlternateScope).
+observe(EqualityCaseSource, EqualityCaseRecord, EqualityCaseChallenge, EqualityChallengeScope).
+observe(EqualityCaseSource, EqualityCaseRecord, EqualityCaseCorrection, EqualityCorrectionScope).
+observe(EqualityCaseSource, EqualityCaseRecord, EqualityCaseRemedy, EqualityRemedyScope).
+observe(EqualityCaseSource, EqualityCaseRecord, ConstitutionalCourtFinalGeneralInvalidationOnly, EqualityFinalReviewScope).
+observe(EqualityCaseSource, EqualityCaseRecord, NoStandingFloorCoreLibertyDueProcessOrEqualBallotBalancedAway, EqualityCorridorScope).
+observe(EqualityCaseSource, EqualityCaseRecord, ReviewedReasonableAccommodation, EqualityRecordKindScope).
+observe(EqualityCaseSource, EqualityCaseRecord, PhysicalBarrier, EqualityBarrierKindScope).
+observe(EqualityCaseSource, EqualityCaseRecord, EqualityCaseRequester, EqualityRequesterScope).
+observe(EqualityCaseSource, EqualityCaseRecord, ConsultationOfTheAffectedPersonAndTheirStatedRequirements, EqualityAccommodationConsultationScope).
+observe(EqualityCaseSource, EqualityCaseRecord, EffectiveAdjustmentOfferedWithReasonsAndAPromptChallengeRoute, EqualityAccommodationOfferScope).
+observe(EqualityCaseSource, EqualityCaseRecord, NoCostToThePersonAndNoInferiorStatus, EqualityAccommodationCostScope).
+observe(EqualityCaseSource, EqualityCaseRecord, UndueBurdenReadAcrossTheInstitutionAsAWholeNotALocalBudgetLine, EqualityAccommodationBurdenScope).
+observe(EqualityCaseSource, EqualityCaseRecord, EquivalentAlternativeThroughPublicContinuityWhereTheProviderGenuinelyCannot, EqualityAccommodationAlternativeScope).
+observe(EqualityCaseReview, EqualityCaseRecord, SingleActorEffectWithdrawnOnReview, SingleActorReviewScope).

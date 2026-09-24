@@ -3,6 +3,9 @@
 //! Explicit semantic authoring for the 2026-09-09 integrity rulings.
 //! No findings, duties, or verification results are persisted by the verifier.
 
+use super::procedural_load::{
+    beneficial_kinds, fast_head, single_actor, PROMPT_REVIEW, REVIEW_SCOPE, WITHDRAWN,
+};
 use super::{Base, Edit, Export};
 use crate::{cli::Error, context::Context};
 use regex::Regex;
@@ -137,7 +140,7 @@ fn heads(contract: &Contract) -> Vec<String> {
     heads
 }
 
-fn rules(source: &Source) -> Vec<String> {
+fn rules(source: &Source, beneficial: &BTreeSet<String>) -> Vec<String> {
     let mut rules = Vec::new();
     for (scope, vocabulary, members) in &source.vocabularies {
         for member in members {
@@ -149,6 +152,17 @@ fn rules(source: &Source) -> Vec<String> {
         for head in heads(contract) {
             rules.push(rule(&atoms, &head));
         }
+    }
+    // Ruling D6: a record that only gives its subject something — a member's
+    // own recorded opposition — takes effect on the source alone. Its
+    // permissions follow at once, the named reviewer owes prompt review and
+    // may withdraw them, and the completed record stays behind full procedure.
+    for contract in source.contracts.iter().filter(|c| beneficial.contains(&c.kind)) {
+        let fast = single_actor(&premises(source, contract), &["$evidence"], "$review");
+        for head in heads(contract).iter().filter(|h| fast_head(h)) {
+            rules.push(rule(&fast, head));
+        }
+        rules.push(rule(&fast, &format!("obliged($review, {PROMPT_REVIEW}, $record)")));
     }
     // Dilution invokes the existing substantive-equality review, not a new
     // metric or an inference about an individual's protected ground.
@@ -229,6 +243,41 @@ fn fixture(
         .collect()
 }
 
+/// The facts of a record the source alone attests.
+fn single_actor_facts(facts: &[String], bindings: &BTreeMap<String, String>) -> Vec<String> {
+    let evidence = &bindings["$evidence"];
+    let review = &bindings["$review"];
+    let record = &bindings["$record"];
+    facts
+        .iter()
+        .filter(|l| {
+            !l.starts_with(&format!("authorized({evidence},"))
+                && !l.starts_with(&format!("observe({evidence},"))
+                && !l.starts_with(&format!("observe({review}, {record},"))
+        })
+        .cloned()
+        .collect()
+}
+
+/// What follows when one actor records a record: for a beneficial record its
+/// permissions and duties and the prompt-review duty, never the completed
+/// record; for anything else, nothing.
+fn fast_queries(contract: &Contract, bindings: &BTreeMap<String, String>, beneficial: bool) -> String {
+    let mut heads = heads(contract);
+    heads.push(format!("obliged($review, {PROMPT_REVIEW}, $record)"));
+    heads
+        .into_iter()
+        .map(|head| {
+            let holds = beneficial && (fast_head(&head) && !head.starts_with("complete("));
+            format!(
+                "? {}.\n# => {}\n",
+                ground(&head, bindings),
+                if holds { "TRUE" } else { "FALSE" }
+            )
+        })
+        .collect()
+}
+
 fn queries(contract: &Contract, bindings: &BTreeMap<String, String>, expected: bool) -> String {
     heads(contract)
         .into_iter()
@@ -278,7 +327,8 @@ fn add_case(
 
 pub(crate) fn generate(context: &Context, export: &mut Export) -> Result<(), Error> {
     let source: Source = serde_json::from_str(&context.read(SOURCE)?)?;
-    let rules = rules(&source);
+    let beneficial = beneficial_kinds(context)?;
+    let rules = rules(&source, &beneficial);
     let block = format!(
         "{BEGIN}\n# Supplied, current, independent records only; no authentication, clock, or arrival.\n{}\n{END}",
         rules.join("\n")
@@ -401,14 +451,43 @@ pub(crate) fn generate(context: &Context, export: &mut Export) -> Result<(), Err
                 bindings["$review"], bindings["$record"]
             ),
         );
+        let helped = beneficial.contains(&contract.kind);
         add_case(
             context,
             export,
             &format!("{}/mismatched-version", contract.id),
             "live",
             &mismatch,
-            &queries(contract, &bindings, false),
+            // The reviewer's differing version defeats the full route; a
+            // single-actor record stands until the reviewer withdraws it.
+            &if helped {
+                fast_queries(contract, &bindings, true)
+            } else {
+                queries(contract, &bindings, false)
+            },
         )?;
+        let alone = single_actor_facts(&facts, &bindings).join("\n");
+        add_case(
+            context,
+            export,
+            &format!("{}/single-actor", contract.id),
+            "live",
+            &format!("{dependency}{alone}\n"),
+            &fast_queries(contract, &bindings, helped),
+        )?;
+        if helped {
+            add_case(
+                context,
+                export,
+                &format!("{}/single-actor-withdrawn-on-review", contract.id),
+                "live",
+                &format!(
+                    "{dependency}{alone}\nobserve({}, {}, {WITHDRAWN}, {REVIEW_SCOPE}).\n",
+                    bindings["$review"], bindings["$record"]
+                ),
+                &fast_queries(contract, &bindings, false),
+            )?;
+        }
         let mut fused = bindings.clone();
         fused.insert("$review".into(), fused["$source"].clone());
         let full = format!(
@@ -750,7 +829,8 @@ mod tests {
     fn live_operation_consumers_reject_the_watched_person_side_fixture() {
         let context = Context::discover().unwrap();
         let source: Source = serde_json::from_str(&context.read(SOURCE).unwrap()).unwrap();
-        let allowed = rules(&source).into_iter().collect::<BTreeSet<_>>();
+        let beneficial = super::super::procedural_load::beneficial_kinds(&context).unwrap();
+        let allowed = rules(&source, &beneficial).into_iter().collect::<BTreeSet<_>>();
         let watched = Regex::new(r"\b(IntegrityOperation\w*|CoordinatedOperationFinding|DiscloseCoordinationAndFunding|AttributeCoordinatedAdvocacy|ProvideCalibratedAccessAuditChallengeAndRemedy)\b").unwrap();
         let check = |text: &str| {
             text.lines()

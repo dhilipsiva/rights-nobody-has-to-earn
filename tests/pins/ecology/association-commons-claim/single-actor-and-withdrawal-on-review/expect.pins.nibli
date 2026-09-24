@@ -1,0 +1,13 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 5
+? complete(ECSingleActorV18, ECAssociationCommonsClaim, ECSingleActorV25).
+# => FALSE
+? obliged(ECSingleActorV16, ECReceiveAndIndependentlyReviewCommonsClaim, ECSingleActorV18).
+# => TRUE
+? obliged(ECSingleActorV20, ReviewTheSingleActorRecordPromptly, ECSingleActorV18).
+# => TRUE
+observe(ECSingleActorV20, ECSingleActorV18, SingleActorEffectWithdrawnOnReview, SingleActorReviewScope).
+? obliged(ECSingleActorV16, ECReceiveAndIndependentlyReviewCommonsClaim, ECSingleActorV18).
+# => FALSE
+? obliged(ECSingleActorV20, ReviewTheSingleActorRecordPromptly, ECSingleActorV18).
+# => FALSE

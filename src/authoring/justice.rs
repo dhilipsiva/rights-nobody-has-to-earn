@@ -2,6 +2,9 @@
 
 //! Explicit case-process authoring. No court creation or execution semantics.
 
+use super::procedural_load::{
+    beneficial_kinds, fast_head, single_actor, PROMPT_REVIEW, REVIEW_SCOPE, WITHDRAWN,
+};
 use super::{Base, Edit, Export};
 use crate::{cli::Error, context::Context};
 use regex::Regex;
@@ -328,7 +331,7 @@ fn rule(atoms: &[String], head: &str) -> String {
     )
 }
 
-fn rules(cards: &[Card]) -> Vec<String> {
+fn rules(cards: &[Card], beneficial: &BTreeSet<String>) -> Vec<String> {
     let mut result = Vec::new();
     for (name, values) in contracts::vocabularies() {
         for value in values {
@@ -442,7 +445,58 @@ fn rules(cards: &[Card]) -> Vec<String> {
             result.push(rule(&premises(cards, card), &head));
         }
     }
+    // Ruling D6: access, assistance, a hearing, an appeal, safeguards, release
+    // continuity, survivor support and voluntary restoration take effect on the
+    // source alone. Their duties follow at once, the named reviewer owes prompt
+    // review and may withdraw them, and the completed record — which relief
+    // and custody read — stays behind full procedure.
+    for card in cards.iter().filter(|c| beneficial.contains(c.kind)) {
+        let fast = single_actor(&premises(cards, card), &["$evidence"], "$review");
+        for head in heads(card).iter().filter(|h| fast_head(h)) {
+            result.push(rule(&fast, head));
+        }
+        result.push(rule(&fast, &format!("obliged($review, {PROMPT_REVIEW}, $record)")));
+    }
     result
+}
+
+/// The facts of a record the source alone attests.
+fn single_actor_facts(facts: &str, values: &Values) -> String {
+    let evidence = &values["$evidence"];
+    let review = &values["$review"];
+    let record = &values["$record"];
+    facts
+        .lines()
+        .filter(|l| {
+            !l.starts_with(&format!("authorized({evidence},"))
+                && !l.starts_with(&format!("observe({evidence},"))
+                && !l.starts_with(&format!("observe({review}, {record},"))
+        })
+        .map(|l| format!("{l}\n"))
+        .collect()
+}
+
+/// What follows when one actor records a record: for a beneficial record its
+/// duties and permissions and the prompt-review duty, never the completed
+/// record; for anything else, nothing.
+fn fast_queries(card: &Card, values: &Values, beneficial: bool) -> String {
+    let mut steps: String = heads(card)
+        .iter()
+        .map(|h| query(&ground(h, values), beneficial && fast_head(h)))
+        .collect();
+    steps.push_str(&query(
+        &ground(&format!("obliged($review, {PROMPT_REVIEW}, $record)"), values),
+        beneficial,
+    ));
+    steps
+}
+
+/// The named reviewer's withdrawal of a single-actor record.
+fn withdrawal(values: &Values) -> String {
+    format!(
+        "observe({}, {}, {WITHDRAWN}, {REVIEW_SCOPE}).\n",
+        values["$review"], values["$record"]
+    )
 }
 
 fn ground(text: &str, values: &Values) -> String {
@@ -650,7 +704,8 @@ fn add_case(
 
 pub(crate) fn generate(context: &Context, export: &mut Export) -> Result<(), Error> {
     let cards = cards(context)?;
-    let authored = rules(&cards);
+    let beneficial = beneficial_kinds(context)?;
+    let authored = rules(&cards, &beneficial);
     let block = format!(
         "{BEGIN}\n# Case-process findings and duties; no court holder, coercive power, verdict or actual remedy is created.\n{}\n{END}",
         authored.join("\n")

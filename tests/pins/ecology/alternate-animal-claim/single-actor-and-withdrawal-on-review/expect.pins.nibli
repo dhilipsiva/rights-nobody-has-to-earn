@@ -1,0 +1,13 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 5
+? complete(ECSingleActorV185, ECAlternateAnimalAdvocateProtectionClaim, ECSingleActorV192).
+# => FALSE
+? obliged(ECSingleActorV183, ECIndependentlyReceiveAnimalProtectionClaimAndAvailableInterimRemedyRequest, ECSingleActorV185).
+# => TRUE
+? obliged(ECSingleActorV187, ReviewTheSingleActorRecordPromptly, ECSingleActorV185).
+# => TRUE
+observe(ECSingleActorV187, ECSingleActorV185, SingleActorEffectWithdrawnOnReview, SingleActorReviewScope).
+? obliged(ECSingleActorV183, ECIndependentlyReceiveAnimalProtectionClaimAndAvailableInterimRemedyRequest, ECSingleActorV185).
+# => FALSE
+? obliged(ECSingleActorV187, ReviewTheSingleActorRecordPromptly, ECSingleActorV185).
+# => FALSE

@@ -78,6 +78,14 @@ permission for the person to use the right with it, and the alternate's
 continuity duty. These conclusions derive without a personhood entry for the
 requester and without a credibility finding or prisoner conclusion.
 
+The adjustment does not wait for all of them. Because it only gives the person
+what the provider already owes, the source's record alone makes the duty and the
+permission take effect. The independent reviewer named on the record owes prompt
+review. If that review withdraws the record, the adjustment's duty and
+permission stop; nothing about the person follows from the withdrawal. The
+completed record still needs every attester, and nothing adverse reads what one
+record gave.
+
 The available barrier kinds also cover sensory, cognitive, linguistic, digital,
 geographic, financial and procedural obstacles. An unrecognised kind cannot
 complete the record. A missing accommodation record is not itself proof of

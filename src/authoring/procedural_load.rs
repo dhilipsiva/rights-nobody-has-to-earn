@@ -91,6 +91,11 @@ pub(crate) struct Effect {
     pub(crate) rules: usize,
     pub(crate) min_roles: usize,
     pub(crate) max_roles: usize,
+    /// Roles that write fields onto the record before the effect, as opposed
+    /// to roles only named on it (a reader, an alternate, a reviewer who acts
+    /// afterwards).
+    pub(crate) min_acting: usize,
+    pub(crate) max_acting: usize,
     pub(crate) authorities: BTreeSet<String>,
     /// Groups of authorities whose holders write exactly the same fields onto
     /// the effect's own record: the same attestation made more than once.
@@ -105,6 +110,62 @@ pub(crate) struct Analysis {
     pub(crate) duties: usize,
     pub(crate) barriers: usize,
 }
+
+/// The duty every single-actor effect carries under ruling D6: the named
+/// independent reviewer reviews the record promptly, and a defect found on
+/// review withdraws the effect through the family's ordinary defect route.
+pub(crate) const PROMPT_REVIEW: &str = "ReviewTheSingleActorRecordPromptly";
+
+/// Record kinds the reviewed classification places in the beneficial class.
+pub(crate) fn beneficial_kinds(context: &Context) -> Result<BTreeSet<String>, Error> {
+    Ok(source(context)?
+        .effects
+        .into_iter()
+        .filter(|e| e.head == "complete" && e.class == "beneficial")
+        .map(|e| e.key)
+        .collect())
+}
+
+/// The heads a single-actor route may conclude: duties, permissions and
+/// barriers. A completed record, an authority or standing stays behind full
+/// procedure, so nothing else can be built on help one actor gave.
+pub(crate) fn fast_head(head: &str) -> bool {
+    head.starts_with("obliged(") || head.starts_with("permits(") || head.starts_with("prevents(")
+}
+
+/// Derive a family's single-actor premises from its full premises. The other
+/// attesters' authorisations and observations of the record go, with every
+/// separation that names them; the reviewer stays named and observes nothing.
+/// Every other condition — the fields, the vocabularies, the ambiguity and
+/// withdrawal guards, the challenge reader and the alternate — stays.
+pub(crate) fn single_actor(full: &[String], dropped: &[&str], review: &str) -> Vec<String> {
+    let names = |atom: &str, variable: &str| {
+        [",", ")", " "]
+            .iter()
+            .any(|end| atom.contains(&format!("{variable}{end}")))
+    };
+    let mut atoms: Vec<String> = full
+        .iter()
+        .filter(|atom| !atom.starts_with(&format!("observe({review}, $record,")))
+        .filter(|atom| {
+            dropped.iter().all(|variable| {
+                !(atom.starts_with(&format!("authorized({variable}, "))
+                    && atom.ends_with(", $record)"))
+                    && !atom.starts_with(&format!("observe({variable}, $record,"))
+                    && !(atom.starts_with("~(") && names(atom, variable))
+            })
+        })
+        .cloned()
+        .collect();
+    atoms.push(format!("~observe({review}, $record, {WITHDRAWN}, {REVIEW_SCOPE})"));
+    atoms
+}
+
+/// What the named reviewer records to correct a single-actor effect on
+/// review. It withdraws the effect and nothing else: the full route stays
+/// open, and no adverse fact about anybody follows.
+pub(crate) const WITHDRAWN: &str = "SingleActorEffectWithdrawnOnReview";
+pub(crate) const REVIEW_SCOPE: &str = "SingleActorReviewScope";
 
 pub(crate) fn source(context: &Context) -> Result<Source, Error> {
     Ok(serde_json::from_str(&context.read(SOURCE)?)?)
@@ -197,6 +258,7 @@ pub(crate) fn measure(constitution: &str) -> (BTreeMap<Key, Effect>, usize, usiz
             }
         }
         let mut repeated = BTreeSet::new();
+        let mut acting = roles.len();
         if let Some(record) = record {
             let mut writes: BTreeMap<&str, BTreeSet<&str>> = BTreeMap::new();
             for caught in observe.captures_iter(body) {
@@ -216,6 +278,7 @@ pub(crate) fn measure(constitution: &str) -> (BTreeMap<Key, Effect>, usize, usiz
                         .push((*authority).to_owned());
                 }
             }
+            acting = roles.keys().filter(|h| writes.contains_key(*h)).count();
             for (_, mut group) in groups {
                 if group.len() > 1 {
                     group.sort();
@@ -230,6 +293,12 @@ pub(crate) fn measure(constitution: &str) -> (BTreeMap<Key, Effect>, usize, usiz
             effect.min_roles.min(roles.len())
         };
         effect.max_roles = effect.max_roles.max(roles.len());
+        effect.min_acting = if effect.rules == 0 {
+            acting
+        } else {
+            effect.min_acting.min(acting)
+        };
+        effect.max_acting = effect.max_acting.max(acting);
         effect.rules += 1;
         effect
             .authorities
@@ -401,12 +470,20 @@ fn repeated(source: &Source, effect: &Effect) -> String {
         .join("; ")
 }
 
-fn roles(effect: &Effect) -> String {
-    if effect.min_roles == effect.max_roles {
-        effect.max_roles.to_string()
+fn range(low: usize, high: usize) -> String {
+    if low == high {
+        high.to_string()
     } else {
-        format!("{}–{}", effect.min_roles, effect.max_roles)
+        format!("{low}–{high}")
     }
+}
+
+fn roles(effect: &Effect) -> String {
+    range(effect.min_roles, effect.max_roles)
+}
+
+fn acting(effect: &Effect) -> String {
+    range(effect.min_acting, effect.max_acting)
 }
 
 pub(crate) fn render(source: &Source, analysis: &Analysis) -> Result<String, Error> {
@@ -428,7 +505,7 @@ pub(crate) fn render(source: &Source, analysis: &Analysis) -> Result<String, Err
     );
     let _ = writeln!(
         out,
-        "*Roles on its own record* counts the authorised roles that act on the effect's own record, with a range where its rules differ. *Repeated attestation* names roles that write exactly the same fields onto that record. *Roles across its prerequisites* counts the roles on every completed record the effect reads, directly or through another.\n"
+        "*Roles on its own record* counts the authorised roles named on the effect's own record, with a range where its rules differ. *Acting before effect* counts those that write fields onto it before it takes effect; under ruling D6 a beneficial effect's single-actor route needs one, and the reviewer it names acts afterwards. *Repeated attestation* names roles that write exactly the same fields onto that record. *Roles across its prerequisites* counts the roles on every completed record the effect reads, directly or through another.\n"
     );
     let _ = writeln!(out, "## The classes\n");
     for (class, meaning) in &source.classes {
@@ -490,19 +567,20 @@ pub(crate) fn render(source: &Source, analysis: &Analysis) -> Result<String, Err
     );
     let _ = writeln!(
         out,
-        "| Family | Effect | Roles on its own record | Functions | Repeated attestation |"
+        "| Family | Effect | Roles on its own record | Acting before effect | Functions | Repeated attestation |"
     );
-    let _ = writeln!(out, "|---|---|---|---|---|");
+    let _ = writeln!(out, "|---|---|---|---|---|---|");
     for (key, effect) in &analysis.effects {
         if analysis.classes[key].0 != "beneficial" {
             continue;
         }
         let _ = writeln!(
             out,
-            "| {} | {} | {} | {} | {} |",
+            "| {} | {} | {} | {} | {} | {} |",
             key.0,
             label(key),
             roles(effect),
+            acting(effect),
             functions(source, &effect.authorities),
             repeated(source, effect)
         );
@@ -515,9 +593,9 @@ pub(crate) fn render(source: &Source, analysis: &Analysis) -> Result<String, Err
         let _ = writeln!(out, "### {family}\n");
         let _ = writeln!(
             out,
-            "| Effect | Class | Why | Roles on its own record | Repeated attestation | Roles across its prerequisites |"
+            "| Effect | Class | Why | Roles on its own record | Acting before effect | Repeated attestation | Roles across its prerequisites |"
         );
-        let _ = writeln!(out, "|---|---|---|---|---|---|");
+        let _ = writeln!(out, "|---|---|---|---|---|---|---|");
         for (key, effect) in analysis.effects.iter().filter(|(k, _)| &k.0 == family) {
             let (class, because, inherited) = &analysis.classes[key];
             let why = &source.reasons[because];
@@ -529,12 +607,13 @@ pub(crate) fn render(source: &Source, analysis: &Analysis) -> Result<String, Err
                 .sum();
             let _ = writeln!(
                 out,
-                "| {} | {}{} | {} | {} | {} | {} |",
+                "| {} | {}{} | {} | {} | {} | {} | {} |",
                 label(key),
                 class,
                 if *inherited { " (inherited)" } else { "" },
                 why,
                 roles(effect),
+                acting(effect),
                 repeated(source, effect),
                 if prerequisites.is_empty() {
                     String::from("—")

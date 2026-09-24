@@ -1,0 +1,17 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 7
+? complete(ECSingleActorV19, ECEnvironmentalRightClaim, ECSingleActorV26).
+# => FALSE
+? obliged(ECSingleActorV13, ECProtectIndependentEnvironmentalClaim, ECSingleActorV19).
+# => TRUE
+? obliged(ECSingleActorV17, ECReviewEnvironmentalInformationParticipationProtectionAndRemedy, ECSingleActorV19).
+# => TRUE
+? obliged(ECSingleActorV21, ReviewTheSingleActorRecordPromptly, ECSingleActorV19).
+# => TRUE
+observe(ECSingleActorV21, ECSingleActorV19, SingleActorEffectWithdrawnOnReview, SingleActorReviewScope).
+? obliged(ECSingleActorV13, ECProtectIndependentEnvironmentalClaim, ECSingleActorV19).
+# => FALSE
+? obliged(ECSingleActorV17, ECReviewEnvironmentalInformationParticipationProtectionAndRemedy, ECSingleActorV19).
+# => FALSE
+? obliged(ECSingleActorV21, ReviewTheSingleActorRecordPromptly, ECSingleActorV19).
+# => FALSE

@@ -2,6 +2,19 @@
 
 # Protective power without a security exception
 
+**Ruling D6 — item 43, 2026-09-24.** `PSPositiveActualPublicHoldingFinding` and
+`PSProtectedPublicInterestDisclosureFinding` take effect on the source's record
+alone. The duties and permissions follow at once; the independent reviewer named
+on the record owes prompt review (`ReviewTheSingleActorRecordPromptly`) and can
+withdraw them (`SingleActorEffectWithdrawnOnReview` at
+`SingleActorReviewScope`). The completed record keeps the full procedure this
+card sets out, and no rule reads a permission given on one record, so nothing
+adverse is built on it. Every other record here, including every adverse record
+and every role that gives one person power over another, is unchanged. The
+classification is `book-1/source/procedural-load-source.json`, and
+`floor_vector_tests::help_takes_effect_on_one_actor_and_harm_waits_for_review`
+checks the property.
+
 **Final item-19 integration, 2026-09-20.** The current source passes 88,024
 pins across 16,087 cases in 1,169.06s, with complete contradiction checks and
 no findings. No active known-defect annotations remain. The focused and failed

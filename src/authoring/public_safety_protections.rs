@@ -2,6 +2,9 @@
 
 //! Positive protected facts and duties, never an authorization to coerce.
 
+use super::super::procedural_load::{
+    fast_head, single_actor, PROMPT_REVIEW, REVIEW_SCOPE, WITHDRAWN,
+};
 use super::{
     cases::{Scenario, query},
     records,
@@ -17,6 +20,11 @@ struct Fact {
     premises: Vec<&'static str>,
     heads: Vec<&'static str>,
 }
+
+const READER_DUTIES: [&str; 2] = [
+    "PreserveMinimalPrivateProtectedFactEvidenceAndAccessibleCorrection",
+    "SecureCareAndRightsContinuityThroughoutFactDispute",
+];
 
 const WRITERS: &[(&str, &str)] = &[
     ("$source", "PSProtectedFactSourceAuthority"),
@@ -274,7 +282,7 @@ fn premises(fact: &Fact) -> Vec<String> {
     atoms
 }
 
-pub(super) fn rules() -> Vec<String> {
+pub(super) fn rules(beneficial: &BTreeSet<String>) -> Vec<String> {
     let facts = facts();
     let mut result = Vec::new();
     for (_, role) in WRITERS {
@@ -311,13 +319,31 @@ pub(super) fn rules() -> Vec<String> {
         for head in &fact.heads {
             result.push(records::rule(&atoms, head));
         }
-        for duty in [
-            "PreserveMinimalPrivateProtectedFactEvidenceAndAccessibleCorrection",
-            "SecureCareAndRightsContinuityThroughoutFactDispute",
-        ] {
+        for duty in READER_DUTIES {
             result.push(records::rule(
                 &atoms,
                 &format!("obliged($reader, {duty}, $record)"),
+            ));
+        }
+        // Ruling D6: a finding that somebody is held, or that a disclosure is
+        // protected, takes effect on the source alone. The duties of care,
+        // voice, independent review and protection follow at once; the named
+        // reviewer owes prompt review and may withdraw them. The completed
+        // record and standing stay behind full procedure.
+        if beneficial.contains(fact.kind) {
+            let fast = single_actor(&atoms, &[], "$review");
+            for head in fact.heads.iter().filter(|h| fast_head(h)) {
+                result.push(records::rule(&fast, head));
+            }
+            for duty in READER_DUTIES {
+                result.push(records::rule(
+                    &fast,
+                    &format!("obliged($reader, {duty}, $record)"),
+                ));
+            }
+            result.push(records::rule(
+                &fast,
+                &format!("obliged($review, {PROMPT_REVIEW}, $record)"),
             ));
         }
     }
@@ -424,7 +450,38 @@ fn checks(fact: &Fact, values: &Values, expected: bool) -> String {
     result
 }
 
-pub(super) fn scenarios() -> Vec<Scenario> {
+/// What follows when the source alone records a fact: for a beneficial fact
+/// its duties and the prompt-review duty, never the completed record or
+/// standing; for anything else, nothing.
+fn fast_checks(fact: &Fact, values: &Values, beneficial: bool) -> String {
+    let mut result = if matches!(fact.id, "family" | "parent") {
+        String::new()
+    } else {
+        query(
+            &records::ground(
+                &format!("complete($record, {}, $subject)", fact.kind),
+                values,
+            ),
+            false,
+        )
+    };
+    for head in &fact.heads {
+        result += &query(&records::ground(head, values), beneficial && fast_head(head));
+    }
+    for duty in READER_DUTIES {
+        result += &query(
+            &records::ground(&format!("obliged($reader, {duty}, $record)"), values),
+            beneficial,
+        );
+    }
+    result += &query(
+        &records::ground(&format!("obliged($review, {PROMPT_REVIEW}, $record)"), values),
+        beneficial,
+    );
+    result
+}
+
+pub(super) fn scenarios(beneficial: &BTreeSet<String>) -> Vec<Scenario> {
     let mut result = Vec::new();
     for fact in facts() {
         let values = values(&fact, "PSProtected");
@@ -454,6 +511,13 @@ pub(super) fn scenarios() -> Vec<Scenario> {
                     .map(|line| format!("{line}\n"))
                     .collect::<String>();
                 assert!(missing != given, "{} {actor} {scope}", fact.id);
+                // Without a reviewer's field the full route fails; a
+                // beneficial fact still takes effect on the source alone.
+                let expected = if *actor == "$review" && beneficial.contains(fact.kind) {
+                    fast_checks(&fact, &values, true)
+                } else {
+                    checks(&fact, &values, false)
+                };
                 result.push(Scenario::new(
                     format!(
                         "protection/{}/without-{}-{scope}",
@@ -461,7 +525,7 @@ pub(super) fn scenarios() -> Vec<Scenario> {
                         actor.trim_start_matches('$')
                     ),
                     missing,
-                    checks(&fact, &values, false),
+                    expected,
                 ));
             }
         }
@@ -483,6 +547,30 @@ pub(super) fn scenarios() -> Vec<Scenario> {
             given.clone() + &noise,
             positive,
         ));
+        let helped = beneficial.contains(fact.kind);
+        let alone = given
+            .lines()
+            .filter(|line| {
+                !line.starts_with(&format!("observe({}, {},", values["$review"], values["$record"]))
+            })
+            .map(|line| format!("{line}\n"))
+            .collect::<String>();
+        result.push(Scenario::new(
+            format!("protection/{}/single-actor", fact.id),
+            alone.clone(),
+            fast_checks(&fact, &values, helped),
+        ));
+        if helped {
+            result.push(Scenario::new(
+                format!("protection/{}/single-actor-withdrawn-on-review", fact.id),
+                alone
+                    + &format!(
+                        "observe({}, {}, {WITHDRAWN}, {REVIEW_SCOPE}).\n",
+                        values["$review"], values["$record"]
+                    ),
+                fast_checks(&fact, &values, false),
+            ));
+        }
         let fused = given.replace(&values["$review"], &values["$source"]);
         result.push(Scenario::new(
             format!("protection/{}/self-review", fact.id),
@@ -577,11 +665,12 @@ mod tests {
         std::thread::Builder::new().stack_size(32 * 1024 * 1024).spawn(|| {
             let context = Context::discover().unwrap();
             let cards = super::super::cards(&context).unwrap();
+            let beneficial = super::super::super::procedural_load::beneficial_kinds(&context).unwrap();
             let candidate = super::super::render(
-                &context.read("book-1/source/constitution.nibli").unwrap(), &cards
+                &context.read("book-1/source/constitution.nibli").unwrap(), &cards, &beneficial
             ).unwrap();
             let engine = PreparedPinEngine::new(&[LoadedSource::new("protected fact candidate", &candidate)]);
-            for case in super::scenarios() {
+            for case in super::scenarios(&beneficial) {
                 let out = engine.run_case(&[LoadedSource::new(&case.id, &case.facts)], &[LoadedSource::new(&case.id, &case.pins)], PinOptions::default(), true);
                 assert_eq!(out.exit_code, 0, "{}: {out:?}", case.id);
             }

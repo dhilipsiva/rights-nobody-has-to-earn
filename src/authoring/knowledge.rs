@@ -4,6 +4,9 @@
 //! field: what a public actor must establish before it may restrict, and what
 //! it owes when it does not.
 
+use super::procedural_load::{
+    beneficial_kinds, fast_head, single_actor, PROMPT_REVIEW, REVIEW_SCOPE, WITHDRAWN,
+};
 use super::{Base, Edit, Export};
 use crate::{cli::Error, context::Context};
 use regex::Regex;
@@ -142,6 +145,42 @@ fn rule(atoms: &[String], head: &str) -> String {
     format!("{quantifiers}{} -> {head}.", atoms.join(" & "))
 }
 
+fn fast_premises(source: &Source, contract: &Contract) -> Vec<String> {
+    single_actor(&premises(source, contract), &["$evidence"], "$review")
+}
+
+/// The facts of a record the source alone attests: the other attesters'
+/// authorisations and observations removed, the reviewer still named.
+fn single_actor_facts(facts: &str, values: &BTreeMap<String, String>) -> String {
+    let evidence = &values["$evidence"];
+    let review = &values["$review"];
+    let record = &values["$record"];
+    facts
+        .lines()
+        .filter(|l| {
+            !l.starts_with(&format!("authorized({evidence},"))
+                && !l.starts_with(&format!("observe({evidence},"))
+                && !l.starts_with(&format!("observe({review}, {record},"))
+        })
+        .map(|l| format!("{l}\n"))
+        .collect()
+}
+
+/// What follows when one actor records a record: for a beneficial record its
+/// duties and permissions and the prompt-review duty, never the completed
+/// record; for anything else, nothing.
+fn fast_queries(contract: &Contract, values: &BTreeMap<String, String>, beneficial: bool) -> String {
+    let mut steps: String = heads(contract)
+        .iter()
+        .map(|h| query(&ground(h, values), beneficial && fast_head(h)))
+        .collect();
+    steps.push_str(&query(
+        &ground(&format!("obliged($review, {PROMPT_REVIEW}, $record)"), values),
+        beneficial,
+    ));
+    steps
+}
+
 fn heads(contract: &Contract) -> Vec<String> {
     let mut heads = contract.heads.clone();
     if !heads.iter().any(|h| h.starts_with("complete(")) {
@@ -150,7 +189,7 @@ fn heads(contract: &Contract) -> Vec<String> {
     heads
 }
 
-fn rules(source: &Source) -> Vec<String> {
+fn rules(source: &Source, beneficial: &BTreeSet<String>) -> Vec<String> {
     let mut rules = Vec::new();
     for (scope, vocabulary, values) in &source.vocabularies {
         for value in values {
@@ -174,6 +213,18 @@ fn rules(source: &Source) -> Vec<String> {
         for head in heads(contract) {
             rules.push(rule(&premises(source, contract), &head));
         }
+    }
+    // Ruling D6: help takes effect on one authorised actor. The source alone
+    // records a beneficial record; its duties and permissions follow at once,
+    // the named reviewer owes prompt review, and a defect found on review
+    // withdraws them. The completed record stays behind full procedure, so
+    // nothing adverse can be built on help one actor gave.
+    for contract in source.contracts.iter().filter(|c| beneficial.contains(&c.kind)) {
+        let fast = fast_premises(source, contract);
+        for head in heads(contract).iter().filter(|h| fast_head(h)) {
+            rules.push(rule(&fast, head));
+        }
+        rules.push(rule(&fast, &format!("obliged($review, {PROMPT_REVIEW}, $record)")));
     }
     // Asking for review of a restriction, an access refusal or a correction
     // does not require the restricting actor's permission and does not itself
@@ -304,7 +355,8 @@ fn without_scope(facts: &str, scope: &str) -> String {
 
 pub(crate) fn generate(context: &Context, export: &mut Export) -> Result<(), Error> {
     let source: Source = serde_json::from_str(&context.read(SOURCE)?)?;
-    let authored = rules(&source);
+    let beneficial = beneficial_kinds(context)?;
+    let authored = rules(&source, &beneficial);
     let block = format!(
         "{BEGIN}\n# Supplied permissions, duties and reviewed findings. Nothing here certifies\n# truth, taste, belief, creativity, a relationship or personal fulfilment.\n{}\n{END}",
         authored.join("\n")
@@ -404,13 +456,43 @@ pub(crate) fn generate(context: &Context, export: &mut Export) -> Result<(), Err
                 .filter(|l| !l.starts_with(&format!("authorized({},", values[actor])))
                 .map(|l| format!("{l}\n"))
                 .collect::<String>();
-            emit(
+            let label = format!("unauthorized-{}", actor.trim_start_matches('$'));
+            if actor == "$evidence" && beneficial.contains(&contract.kind) {
+                // Without the evidence attester the full route fails, and the
+                // single-actor route still gives the help it carries.
+                add_case(
+                    context,
+                    export,
+                    &format!("{}/{label}", contract.id),
+                    "live",
+                    &(dep.clone() + &reduced),
+                    &fast_queries(contract, &values, true),
+                )?;
+                continue;
+            }
+            emit(export, &label, "live", &reduced, &values, false)?;
+        }
+        add_case(
+            context,
+            export,
+            &format!("{}/single-actor", contract.id),
+            "live",
+            &(dep.clone() + &single_actor_facts(&facts, &values)),
+            &fast_queries(contract, &values, beneficial.contains(&contract.kind)),
+        )?;
+        if beneficial.contains(&contract.kind) {
+            // The named reviewer's withdrawal on review switches the help off.
+            let withdrawn = format!(
+                "observe({}, {}, {WITHDRAWN}, {REVIEW_SCOPE}).\n",
+                values["$review"], values["$record"]
+            );
+            add_case(
+                context,
                 export,
-                &format!("unauthorized-{}", actor.trim_start_matches('$')),
+                &format!("{}/single-actor-withdrawn-on-review", contract.id),
                 "live",
-                &reduced,
-                &values,
-                false,
+                &(dep.clone() + &single_actor_facts(&facts, &values) + &withdrawn),
+                &fast_queries(contract, &values, false),
             )?;
         }
         for [value, scope] in fields(&source, contract) {

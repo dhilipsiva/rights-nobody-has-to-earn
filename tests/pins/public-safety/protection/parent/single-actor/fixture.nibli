@@ -1,0 +1,30 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+authorized(PSProtectedalternate, PSProtectedFactAlternateReaderAuthority, PSProtectedrecord).
+authorized(PSProtectedreader, PSProtectedFactChallengeReaderAuthority, PSProtectedrecord).
+authorized(PSProtectedreview, PSIndependentProtectedFactReviewAuthority, PSProtectedrecord).
+authorized(PSProtectedsource, PSProtectedFactSourceAuthority, PSProtectedrecord).
+observe(PSProtectedsource, PSProtectedrecord, ActualParentRelationshipNoBiologicalMarriageOrHouseholdPresumption, PSFactFindingScope).
+observe(PSProtectedsource, PSProtectedrecord, NoCompulsoryDisclosureOrUnrelatedConfinementGround, PSFactFamilyLibertyScope).
+observe(PSProtectedsource, PSProtectedrecord, NoUnrelatedPersonScoreOrEligibilityUseAndNoAdverseInferenceFromAbsence, PSFactRecordBoundaryScope).
+observe(PSProtectedsource, PSProtectedrecord, PSPositivelyWitnessedParentRelationship, PSFactKindScope).
+observe(PSProtectedsource, PSProtectedrecord, PSProtectedalternate, PSFactIndependentAlternateReaderScope).
+observe(PSProtectedsource, PSProtectedrecord, PSProtectedbasis, PSFactPositiveEvidenceScope).
+observe(PSProtectedsource, PSProtectedrecord, PSProtectedcase, PSFactCaseScope).
+observe(PSProtectedsource, PSProtectedrecord, PSProtectedchild, PSFactChildScope).
+observe(PSProtectedsource, PSProtectedrecord, PSProtectedcorrection, PSFactCorrectionRouteScope).
+observe(PSProtectedsource, PSProtectedrecord, PSProtectedepoch, PSFactEpochScope).
+observe(PSProtectedsource, PSProtectedrecord, PSProtectedjurisdiction, PSFactJurisdictionScope).
+observe(PSProtectedsource, PSProtectedrecord, PSProtectedreader, PSFactIndependentChallengeReaderScope).
+observe(PSProtectedsource, PSProtectedrecord, PSProtectedremedy, PSFactRemedyRouteScope).
+observe(PSProtectedsource, PSProtectedrecord, PSProtectedrevision, PSFactCurrentSelectedRevisionScope).
+observe(PSProtectedsource, PSProtectedrecord, PSProtectedrevision, PSFactRecordRevisionScope).
+observe(PSProtectedsource, PSProtectedrecord, PSProtectedscope, PSFactScopeScope).
+observe(PSProtectedsource, PSProtectedrecord, PSProtectedsubject, PSFactSubjectScope).
+observe(PSProtectedsource, PSProtectedrecord, PSProtectedversion, PSFactConstitutionVersionScope).
+observe(PSProtectedsource, PSProtectedrecord, PSProtectedwindow, PSFactWindowScope).
+observe(PSProtectedsource, PSProtectedrecord, PositiveExternallyEstablishedCurrentFactNotAnInstitutionalAct, PSFactCurrentDispositionScope).
+observe(PSProtectedsource, PSProtectedrecord, PurposeBoundMinimalPrivateEvidenceAccessibleChallengeCorrectionRetentionAndErasure, PSFactPrivacyScope).
+observe(PSProtectedsource, PSProtectedrecord, RelationshipRecognitionCorrectionChildProtectionAndCareOnly, PSFactPurposeScope).
+observe(PSProtectedsource, PSProtectedrecord, ServeAndProtectFirstWhileIdentityOrRecordIsReconciled, PSFactContinuityScope).
+at(PSProtectedsubject, RepublicJurisdiction).
+at(PSProtectedchild, RepublicJurisdiction).

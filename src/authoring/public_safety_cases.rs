@@ -449,6 +449,7 @@ mod tests {
                 let candidate = super::super::render(
                     &context.read("book-1/source/constitution.nibli").unwrap(),
                     &cards,
+                    &super::super::beneficial_for_tests(),
                 )
                 .unwrap();
                 let engine = PreparedPinEngine::new(&[LoadedSource::new(
@@ -480,6 +481,7 @@ mod tests {
                 let candidate = super::super::render(
                     &context.read("book-1/source/constitution.nibli").unwrap(),
                     &cards,
+                    &super::super::beneficial_for_tests(),
                 )
                 .unwrap();
                 let engine = PreparedPinEngine::new(&[LoadedSource::new(
@@ -511,6 +513,7 @@ mod tests {
                 let candidate = super::super::render(
                     &context.read("book-1/source/constitution.nibli").unwrap(),
                     &cards,
+                    &super::super::beneficial_for_tests(),
                 )
                 .unwrap();
                 let engine = PreparedPinEngine::new(&[LoadedSource::new(
@@ -544,6 +547,7 @@ mod tests {
                 let candidate = super::super::render(
                     &context.read("book-1/source/constitution.nibli").unwrap(),
                     &cards,
+                    &super::super::beneficial_for_tests(),
                 )
                 .unwrap();
                 let engine = PreparedPinEngine::new(&[LoadedSource::new(
@@ -578,6 +582,7 @@ mod tests {
                 let candidate = super::super::render(
                     &context.read("book-1/source/constitution.nibli").unwrap(),
                     &cards,
+                    &super::super::beneficial_for_tests(),
                 )
                 .unwrap();
                 let engine = PreparedPinEngine::new(&[LoadedSource::new(
@@ -606,7 +611,7 @@ mod tests {
         std::thread::Builder::new().stack_size(32 * 1024 * 1024).spawn(|| {
             let context = Context::discover().unwrap();
             let cards = super::super::cards(&context).unwrap();
-            let candidate = super::super::render(&context.read("book-1/source/constitution.nibli").unwrap(), &cards).unwrap();
+            let candidate = super::super::render(&context.read("book-1/source/constitution.nibli").unwrap(), &cards, &super::super::beneficial_for_tests()).unwrap();
             let engine = PreparedPinEngine::new(&[LoadedSource::new("protective candidate", &candidate)]);
             for case in super::firewalls(&cards) {
                 let out = engine.run_case(&[], &[LoadedSource::new(&case.id, &case.pins)], PinOptions::default(), true);
@@ -621,7 +626,7 @@ mod tests {
                 }
             }
             let mut counterfactual = candidate.clone();
-            for rule in super::super::protections::rules().iter().filter(|rule| rule.ends_with("-> family($subject).") || rule.ends_with("-> parent($subject, $child).")) {
+            for rule in super::super::protections::rules(&super::super::beneficial_for_tests()).iter().filter(|rule| rule.ends_with("-> family($subject).") || rule.ends_with("-> parent($subject, $child).")) {
                 assert_eq!(counterfactual.matches(rule).count(), 1);
                 counterfactual = counterfactual.replacen(rule, "", 1);
             }

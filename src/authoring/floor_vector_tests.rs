@@ -499,6 +499,121 @@ fn every_power_record_is_independently_reviewed() {
     assert!(!distinct.is_match(body) && !reviewer.is_match(body));
 }
 
+/// Ruling D6: help takes effect on one authorised actor; harm waits for
+/// independent review. A rule whose named reviewer observes nothing acts
+/// before review, so it may only give or preserve something: it concludes a
+/// duty, a permission or a barrier, never a completed record, an authority or
+/// standing; its record is of a kind the reviewed classification calls
+/// beneficial; the reviewer's withdrawal on review switches it off; the
+/// reviewer owes prompt review in a sibling rule with the same body; and no
+/// rule reads a permission it grants, so nothing is built on help one actor
+/// gave. The completion half of the symmetry is the test above.
+fn check_single_actor(statements: &[String], beneficial: &BTreeSet<String>) -> Result<usize, String> {
+    use super::procedural_load::{PROMPT_REVIEW, REVIEW_SCOPE, WITHDRAWN};
+    let named = Regex::new(r"authorized\(\$review, \w*Review\w*, \$record\)").unwrap();
+    // An observation the reviewer has made, not the negated withdrawal guard.
+    let observed = Regex::new(r"(?:^|[^~])observe\(\$review,").unwrap();
+    let constant = Regex::new(r"\b[A-Z][A-Za-z0-9_]*\b").unwrap();
+    let action = Regex::new(r"^permits\([^,]+, ([A-Z]\w*), ").unwrap();
+    let guard = format!("~observe($review, $record, {WITHDRAWN}, {REVIEW_SCOPE})");
+    let duty = format!("obliged($review, {PROMPT_REVIEW}, $record).");
+    let mut bodies_with_duty = BTreeSet::new();
+    let mut fast = Vec::new();
+    for statement in statements {
+        let Some((body, head)) = split(statement) else {
+            continue;
+        };
+        if !named.is_match(body) || observed.is_match(body) {
+            continue;
+        }
+        if head == duty {
+            bodies_with_duty.insert(body.to_owned());
+        } else {
+            fast.push((body.to_owned(), head.to_owned()));
+        }
+    }
+    let mut granted = BTreeSet::new();
+    for (body, head) in &fast {
+        let relation = head_relation(head);
+        if !matches!(relation, "obliged" | "permits" | "prevents") {
+            return Err(format!("a single-actor rule concludes {relation}: {head}"));
+        }
+        if !constant
+            .find_iter(body)
+            .any(|m| beneficial.contains(m.as_str()))
+        {
+            return Err(format!("a single-actor rule names no beneficial record kind: {head}"));
+        }
+        if !body.contains(&guard) {
+            return Err(format!("a single-actor rule cannot be withdrawn on review: {head}"));
+        }
+        if !bodies_with_duty.contains(body) {
+            return Err(format!("a single-actor rule owes no prompt review: {head}"));
+        }
+        if let Some(caught) = action.captures(head) {
+            granted.insert(caught[1].to_owned());
+        }
+    }
+    for statement in statements {
+        let Some((body, _)) = split(statement) else {
+            continue;
+        };
+        for permission in &granted {
+            let reads = Regex::new(&format!(r"permits\([^,()]+, {permission}, ")).unwrap();
+            if reads.is_match(body) {
+                return Err(format!("a rule reads the single-actor permission {permission}"));
+            }
+        }
+    }
+    Ok(fast.len())
+}
+
+#[test]
+fn help_takes_effect_on_one_actor_and_harm_waits_for_review() {
+    let context = Context::discover().expect("repository");
+    let beneficial = super::procedural_load::beneficial_kinds(&context).expect("classification");
+    let rules = statements();
+    let count = check_single_actor(&rules, &beneficial).expect("the ruled property holds");
+    assert!(
+        count > 40,
+        "only {count} single-actor rules were found; check the detection before trusting the pass"
+    );
+    let first = rules
+        .iter()
+        .find(|r| {
+            r.contains("~observe($review, $record, SingleActorEffectWithdrawnOnReview")
+                && r.ends_with("ProvideTheEffectiveAdjustmentOrSecureAnEquivalentAlternative, $record).")
+        })
+        .expect("the accommodation's single-actor rule")
+        .clone();
+    let with = |changed: String| {
+        let mut copy = rules.clone();
+        copy.push(changed);
+        copy
+    };
+    // An adverse record kind acting on one actor.
+    let adverse = first.replace("ReviewedReasonableAccommodation", "ReviewedPositiveMeasure");
+    assert!(check_single_actor(&with(adverse), &beneficial).is_err());
+    // A completed record concluded on one actor.
+    let (body, _) = split(&first).unwrap();
+    let completed = format!("{body}-> complete($record, ReviewedReasonableAccommodation, $decision).");
+    assert!(check_single_actor(&with(completed), &beneficial).is_err());
+    // Help nobody can withdraw on review.
+    let unguarded = first.replace(
+        " & ~observe($review, $record, SingleActorEffectWithdrawnOnReview, SingleActorReviewScope)",
+        "",
+    );
+    assert_ne!(unguarded, first);
+    assert!(check_single_actor(&with(unguarded), &beneficial).is_err());
+    // Help with no prompt review owed.
+    let reviewless: Vec<String> = rules
+        .iter()
+        .filter(|r| !r.ends_with("obliged($review, ReviewTheSingleActorRecordPromptly, $record)."))
+        .cloned()
+        .collect();
+    assert!(check_single_actor(&reviewless, &beneficial).is_err());
+}
+
 #[test]
 fn the_challenge_and_alternate_skeleton_holds_where_it_was_adopted() {
     let challenge = Regex::new(r"authorized\(\$\w+, \w*(?:Challenge|Alternate)\w*, ").unwrap();

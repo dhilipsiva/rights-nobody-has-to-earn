@@ -1,0 +1,35 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+authorized(JCaseAlternate, JAlternateReviewAuthority, JCaseRecord).
+authorized(JCaseAuditor, JAuditAuthority, JCaseRecord).
+authorized(JCaseReader, JChallengeReaderAuthority, JCaseRecord).
+authorized(JCaseReview, JIndependentReviewAuthority, JCaseRecord).
+authorized(JCaseSource, JSourceAuthority, JCaseRecord).
+observe(JCaseSource, JCaseRecord, JCaseAlternate, JAlternateReaderScope).
+observe(JCaseSource, JCaseRecord, JCaseAuditor, JAuditReaderScope).
+observe(JCaseSource, JCaseRecord, JCaseBasis, JEvidenceRecordScope).
+observe(JCaseSource, JCaseRecord, JCaseCase, JCaseScope).
+observe(JCaseSource, JCaseRecord, JCaseChallenge, JChallengeScope).
+observe(JCaseSource, JCaseRecord, JCaseCorrection, JCorrectionScope).
+observe(JCaseSource, JCaseRecord, CivilJustice, JDomainScope).
+observe(JCaseSource, JCaseRecord, JCaseEnd, JSourceBoundEndScope).
+observe(JCaseSource, JCaseRecord, JCaseEpoch, JEpochScope).
+observe(JCaseSource, JCaseRecord, JCaseJurisdiction, JJurisdictionScope).
+observe(JCaseSource, JCaseRecord, JCaseOperator, JOperatorScope).
+observe(JCaseSource, JCaseRecord, JCaseOtherParty, JOtherPartyScope).
+observe(JCaseSource, JCaseRecord, JCaseReader, JChallengeReaderScope).
+observe(JCaseSource, JCaseRecord, JCaseRemedy, JRemedyScope).
+observe(JCaseSource, JCaseRecord, JCaseScope, JLegalScopeScope).
+observe(JCaseSource, JCaseRecord, JCaseSubject, JSubjectScope).
+observe(JCaseSource, JCaseRecord, JCaseVersion, JSourceVersionScope).
+observe(JCaseSource, JCaseRecord, JCaseWindow, JWindowScope).
+observe(JCaseSource, JCaseRecord, AccessibleInformationInterpreterAccommodationAndNonDigitalRoute, JAccessScope).
+observe(JCaseSource, JCaseRecord, AffirmativeCaseBoundIndependenceRecusalAndConflictReview, JIndependenceScope).
+observe(JCaseSource, JCaseRecord, CurrentReconciledFinding, JCurrentDispositionScope).
+observe(JCaseSource, JCaseRecord, EffectiveHearingChallengePublicReasonsAndRemedy, JProcessScope).
+observe(JCaseSource, JCaseRecord, FreshExactCaseSourceAndWindowNoAutomaticCarry, JCarryScope).
+observe(JCaseSource, JCaseRecord, IndependentCounselOrAdvocateWithoutWealthDocumentationOrStatusBar, JAssistanceScope).
+observe(JCaseSource, JCaseRecord, JusticeAccessibleProcess, JRecordKindScope).
+observe(JCaseSource, JCaseRecord, PreserveRightsEvidenceAndInterimProtectionDuringChallengeCorrectionOrEnd, JContinuityScope).
+observe(JCaseSource, JCaseRecord, PublicAccessibleReasonsPrivatePurposeBoundEvidenceRetentionAndCorrection, JPrivacyScope).
+observe(JCaseSource, JCaseRecord, StandingFloorLibertyVoiceEqualityAndEffectiveRemedyPreserved, JCorridorScope).
+observe(JCaseSource, JCaseRecord, TimelyUnderstandableNoticeAndPreparationTime, JNoticeScope).

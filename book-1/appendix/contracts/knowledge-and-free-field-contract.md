@@ -2,6 +2,20 @@
 
 # Knowledge, communication, culture and the free social field
 
+**Ruling D6 — item 43, 2026-09-24.** `ReviewedAccessibleCommunicationDuty`,
+`ReviewedInquiryAndCreationAutonomy`, `ReviewedPublicInformationDuty` and
+`UnrestrictedKnowledgeActivity` take effect on the source's record alone. The
+duties and permissions follow at once; the independent reviewer named on the
+record owes prompt review (`ReviewTheSingleActorRecordPromptly`) and can
+withdraw them (`SingleActorEffectWithdrawnOnReview` at
+`SingleActorReviewScope`). The completed record keeps the full procedure this
+card sets out, and no rule reads a permission given on one record, so nothing
+adverse is built on it. Every other record here, including every adverse record
+and every role that gives one person power over another, is unchanged. The
+classification is `book-1/source/procedural-load-source.json`, and
+`floor_vector_tests::help_takes_effect_on_one_actor_and_harm_waits_for_review`
+checks the property.
+
 Implementation contract for the author-directed TODO item of the same name,
 under the 2026-08-03 expanded mandate and the 2026-09-12 verification ruling.
 It implements the conditions under which a public actor may restrict these

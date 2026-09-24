@@ -1,0 +1,51 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+authorized(ECSingleActorV21, ECSourceAuthority, ECSingleActorV16).
+authorized(ECSingleActorV18, ECIndependentReviewAuthority, ECSingleActorV16).
+authorized(ECSingleActorV14, ECChallengeReaderAuthority, ECSingleActorV16).
+authorized(ECSingleActorV0, ECAlternateReaderAuthority, ECSingleActorV16).
+authorized(ECSingleActorV1, ECAuditReaderAuthority, ECSingleActorV16).
+authorized(ECSingleActorV11, ECCaseScopedActor, ECSingleActorV16).
+observe(ECSingleActorV21, ECSingleActorV16, ECSingleActorV23, ECSubjectScope).
+observe(ECSingleActorV21, ECSingleActorV16, ECSingleActorV2, ECCaseScope).
+observe(ECSingleActorV21, ECSingleActorV16, ECSingleActorV19, ECRevisionScope).
+observe(ECSingleActorV21, ECSingleActorV16, ECSingleActorV26, ECConstitutionVersionScope).
+observe(ECSingleActorV21, ECSingleActorV16, ECSingleActorV7, ECEvidenceRecordScope).
+observe(ECSingleActorV21, ECSingleActorV16, ECSingleActorV8, ECEvidenceVersionScope).
+observe(ECSingleActorV21, ECSingleActorV16, ECSingleActorV10, ECMethodVersionScope).
+observe(ECSingleActorV21, ECSingleActorV16, ECSingleActorV12, ECPlaceScope).
+observe(ECSingleActorV21, ECSingleActorV16, ECSingleActorV24, ECTerritoryScope).
+observe(ECSingleActorV21, ECSingleActorV16, ECSingleActorV13, ECAffectedPopulationScope).
+observe(ECSingleActorV21, ECSingleActorV16, ECSingleActorV9, ECJurisdictionScope).
+observe(ECSingleActorV21, ECSingleActorV16, ECSingleActorV20, ECLegalScopeScope).
+observe(ECSingleActorV21, ECSingleActorV16, ECSingleActorV11, ECResponsibleActorScope).
+observe(ECSingleActorV21, ECSingleActorV16, ECSingleActorV14, ECChallengeReaderScope).
+observe(ECSingleActorV21, ECSingleActorV16, ECSingleActorV0, ECAlternateReaderScope).
+observe(ECSingleActorV21, ECSingleActorV16, ECSingleActorV1, ECAuditReaderScope).
+observe(ECSingleActorV21, ECSingleActorV16, ECSingleActorV15, ECPublicReasonsScope).
+observe(ECSingleActorV21, ECSingleActorV16, ECSingleActorV3, ECChallengeRouteScope).
+observe(ECSingleActorV21, ECSingleActorV16, ECSingleActorV4, ECCorrectionRouteScope).
+observe(ECSingleActorV21, ECSingleActorV16, ECSingleActorV17, ECRemedyRouteScope).
+observe(ECSingleActorV21, ECSingleActorV16, ECSingleActorV27, ECWindowScope).
+observe(ECSingleActorV21, ECSingleActorV16, ECSingleActorV22, ECStartScope).
+observe(ECSingleActorV21, ECSingleActorV16, ECSingleActorV5, ECEndScope).
+observe(ECSingleActorV21, ECSingleActorV16, ECSingleActorV6, ECFreshEvaluationScope).
+observe(ECSingleActorV21, ECSingleActorV16, ECSingleActorV19, ECSelectedRevisionScope).
+observe(ECSingleActorV21, ECSingleActorV16, ECIndependentlyEstablishedCurrentWindow, ECCurrentDispositionScope).
+observe(ECSingleActorV21, ECSingleActorV16, ECStartBeforeEndAndEvaluationWithinOwnWindow, ECTemporalFindingScope).
+observe(ECSingleActorV21, ECSingleActorV16, ECNoCarryAcrossVersionScopeSubjectOrWindow, ECCarryScope).
+observe(ECSingleActorV21, ECSingleActorV16, ECPositiveConflictRecusalAndIndependenceReview, ECIndependenceScope).
+observe(ECSingleActorV21, ECSingleActorV16, ECPurposeLimitedNecessaryPrivateEvidenceAndIndependentAccess, ECPrivacyScope).
+observe(ECSingleActorV21, ECSingleActorV16, ECAccessibleReasonsUncertaintyAndSourceLimitations, ECDisclosureScope).
+observe(ECSingleActorV21, ECSingleActorV16, ECReviewableRetentionDeletionCorrectionAndLawfulHistory, ECRecordControlScope).
+observe(ECSingleActorV21, ECSingleActorV16, ECPreserveUrgentProtectionAndRemedyDuringRecordFailure, ECContinuityScope).
+observe(ECSingleActorV21, ECSingleActorV16, ECSingleActorV25, ECUrgentAnimalThreatScope).
+observe(ECSingleActorV21, ECSingleActorV16, ECCredibleUrgentThreatWhereCoveredAnimalInterestPlausiblyExists, ECPlausibleProtectedInterestScope).
+observe(ECSingleActorV21, ECSingleActorV16, ECProtectFirstReconcileLaterWithoutOwnerChipPurchaseCivilIdentityOrCompletedTaxonRecord, ECUrgentNoPaperworkGateScope).
+observe(ECSingleActorV21, ECSingleActorV16, ECTemporaryLocalSubjectHandleNotUniversalWildRegistryOrHumanIdentity, ECUrgentSubjectHandleScope).
+observe(ECSingleActorV21, ECSingleActorV16, ECNecessaryLeastHarmRescueVeterinaryCareShelterAndContinuityRoute, ECUrgentAnimalResponseScope).
+observe(ECSingleActorV21, ECSingleActorV16, ECPromptIndependentReviewAndSeparateHumanDueProcessForCoerciveSteps, ECUrgentReviewBoundaryScope).
+observe(ECSingleActorV21, ECSingleActorV16, ECNeitherOwnerConsentNorFinalFaultDeterminationPrerequisite, ECUrgentNoOwnerVetoScope).
+observe(ECSingleActorV21, ECSingleActorV16, ECNoSearchEntrySeizureHumanCustodyOrPunishmentPowerFromThisFinding, ECUrgentNoCoerciveShortcutScope).
+observe(ECSingleActorV21, ECSingleActorV16, ECUrgentPlausibleAnimalProtection, ECKindScope).
+observe(ECSingleActorV21, ECSingleActorV16, Class6UrgentDirectAnimalProtection, ECDirectEffectClassScope).
+observe(ECSingleActorV21, ECSingleActorV16, ECUrgentPlausibleAnimalProtectionTemporalContract, ECTemporalContractKindScope).

@@ -1,0 +1,13 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 5
+
+? authority(ScarcityCaseManager, AdministerPhysicalScarcity, ScarcityCaseRecord).
+# => FALSE
+? obliged(ScarcityCaseManager, PublishScarcityEvidenceReasonsAndReassessment, ScarcityCaseRecord).
+# => FALSE
+? obliged(ScarcityCaseReader, HearScarcityChallengeAndCorrect, ScarcityCaseRecord).
+# => FALSE
+? complete(ScarcityCaseRecord, ReviewedPhysicalScarcityFinding, ScarcityCaseResource).
+# => FALSE
+? obliged(ScarcityCaseReview, ReviewTheSingleActorRecordPromptly, ScarcityCaseRecord).
+# => FALSE

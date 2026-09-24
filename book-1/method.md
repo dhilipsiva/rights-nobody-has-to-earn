@@ -498,28 +498,39 @@ generated table lists them for each effect in the constitution:
 [`book-1/source/procedural-load.md`](source/procedural-load.md), produced by
 `./generate.sh procedural-load` from the constitution and a reviewed
 classification. Each effect is classed as beneficial (it gives, preserves or
-releases something for its subject), adverse (it restricts, takes, confines or
+releases something for its subject and finds against nobody), adverse (it restricts, takes, confines or
 finds against), power over others, oversight of a public act, or institutional
 configuration. The roles are read from the rules; the class is a judgment the
 classification records with its reason.
 
-The table is a list, not a score. For the effects classed beneficial, what each
-needs today is:
+The table is a list, not a score. An effect classed beneficial takes effect on
+its source's record alone: the source records every field, the independent
+reviewer, challenge reader and alternate are named, and the reviewer owes
+prompt review and can withdraw the effect. The table's *acting before effect*
+column shows that single actor. The completed record of each beneficial kind
+still needs its family's full procedure:
 
 - An accommodation, care continuity, participation of the affected person,
-  access to one's own origin records, or a recorded shortfall: a source, an
-  evidence attester and an independent reviewer who record the same fields, a
-  challenge reader and an independent alternate.
-- Access to a process, a hearing, an appeal, assistance, release review or case
-  relief in the justice family, and nationality, membership, cultural
-  protection, title or a remedy in the mobility family: the same three matching
-  attesters, a challenge reader, an independent alternate and an audit reader.
-- A protection claim, a continuity measure or a reparation in the ecological
-  family: a source and an independent reviewer who record the same fields, a
-  challenge reader, an independent alternate, an audit reader and an acting
-  body.
+  bodily and reproductive autonomy, access to one's own origin or other
+  records, accessible communication, public information, inquiry and creative
+  autonomy, a member's recorded opposition, or a recorded shortfall: a source,
+  an evidence attester and an independent reviewer who record the same fields,
+  a reader and an independent alternate.
+- Access to a process, a hearing, an appeal, assistance, custodial safeguards,
+  release review or continuity, survivor support or voluntary restoration in
+  the justice family, and nationality recognition or cultural protection in
+  the mobility family: the same three matching attesters, a challenge reader,
+  an independent alternate and an audit reader.
+- A finding that somebody is held, or that a disclosure is protected: a source
+  and an independent reviewer who record the same fields, a challenge reader
+  and an independent alternate.
+- A protection claim, interim protection or a continuity measure in the
+  ecological family: a source and an independent reviewer who record the same
+  fields, a challenge reader, an independent alternate, an audit reader and an
+  acting body.
 - A delivery conclusion, an insurance supplement, a compensation or a
-  certificate: one authorised witness, adjudicator, attester or certifier.
+  certificate, which have no separate completed record: one authorised witness,
+  adjudicator, attester or certifier.
 
 Where more than one role writes the same fields onto one record, the
 attestation is repeated. The table lists each such pattern with its family. The

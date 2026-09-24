@@ -1,0 +1,50 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+authorized(ECSingleActorV22, ECSourceAuthority, ECSingleActorV17).
+authorized(ECSingleActorV19, ECIndependentReviewAuthority, ECSingleActorV17).
+authorized(ECSingleActorV15, ECChallengeReaderAuthority, ECSingleActorV17).
+authorized(ECSingleActorV1, ECAlternateReaderAuthority, ECSingleActorV17).
+authorized(ECSingleActorV2, ECAuditReaderAuthority, ECSingleActorV17).
+authorized(ECSingleActorV12, ECCaseScopedActor, ECSingleActorV17).
+observe(ECSingleActorV22, ECSingleActorV17, ECSingleActorV24, ECSubjectScope).
+observe(ECSingleActorV22, ECSingleActorV17, ECSingleActorV3, ECCaseScope).
+observe(ECSingleActorV22, ECSingleActorV17, ECSingleActorV20, ECRevisionScope).
+observe(ECSingleActorV22, ECSingleActorV17, ECSingleActorV27, ECConstitutionVersionScope).
+observe(ECSingleActorV22, ECSingleActorV17, ECSingleActorV8, ECEvidenceRecordScope).
+observe(ECSingleActorV22, ECSingleActorV17, ECSingleActorV9, ECEvidenceVersionScope).
+observe(ECSingleActorV22, ECSingleActorV17, ECSingleActorV11, ECMethodVersionScope).
+observe(ECSingleActorV22, ECSingleActorV17, ECSingleActorV13, ECPlaceScope).
+observe(ECSingleActorV22, ECSingleActorV17, ECSingleActorV26, ECTerritoryScope).
+observe(ECSingleActorV22, ECSingleActorV17, ECSingleActorV14, ECAffectedPopulationScope).
+observe(ECSingleActorV22, ECSingleActorV17, ECSingleActorV10, ECJurisdictionScope).
+observe(ECSingleActorV22, ECSingleActorV17, ECSingleActorV21, ECLegalScopeScope).
+observe(ECSingleActorV22, ECSingleActorV17, ECSingleActorV12, ECResponsibleActorScope).
+observe(ECSingleActorV22, ECSingleActorV17, ECSingleActorV15, ECChallengeReaderScope).
+observe(ECSingleActorV22, ECSingleActorV17, ECSingleActorV1, ECAlternateReaderScope).
+observe(ECSingleActorV22, ECSingleActorV17, ECSingleActorV2, ECAuditReaderScope).
+observe(ECSingleActorV22, ECSingleActorV17, ECSingleActorV16, ECPublicReasonsScope).
+observe(ECSingleActorV22, ECSingleActorV17, ECSingleActorV4, ECChallengeRouteScope).
+observe(ECSingleActorV22, ECSingleActorV17, ECSingleActorV5, ECCorrectionRouteScope).
+observe(ECSingleActorV22, ECSingleActorV17, ECSingleActorV18, ECRemedyRouteScope).
+observe(ECSingleActorV22, ECSingleActorV17, ECSingleActorV28, ECWindowScope).
+observe(ECSingleActorV22, ECSingleActorV17, ECSingleActorV23, ECStartScope).
+observe(ECSingleActorV22, ECSingleActorV17, ECSingleActorV6, ECEndScope).
+observe(ECSingleActorV22, ECSingleActorV17, ECSingleActorV7, ECFreshEvaluationScope).
+observe(ECSingleActorV22, ECSingleActorV17, ECSingleActorV20, ECSelectedRevisionScope).
+observe(ECSingleActorV22, ECSingleActorV17, ECIndependentlyEstablishedCurrentWindow, ECCurrentDispositionScope).
+observe(ECSingleActorV22, ECSingleActorV17, ECStartBeforeEndAndEvaluationWithinOwnWindow, ECTemporalFindingScope).
+observe(ECSingleActorV22, ECSingleActorV17, ECNoCarryAcrossVersionScopeSubjectOrWindow, ECCarryScope).
+observe(ECSingleActorV22, ECSingleActorV17, ECPositiveConflictRecusalAndIndependenceReview, ECIndependenceScope).
+observe(ECSingleActorV22, ECSingleActorV17, ECPurposeLimitedNecessaryPrivateEvidenceAndIndependentAccess, ECPrivacyScope).
+observe(ECSingleActorV22, ECSingleActorV17, ECAccessibleReasonsUncertaintyAndSourceLimitations, ECDisclosureScope).
+observe(ECSingleActorV22, ECSingleActorV17, ECReviewableRetentionDeletionCorrectionAndLawfulHistory, ECRecordControlScope).
+observe(ECSingleActorV22, ECSingleActorV17, ECPreserveUrgentProtectionAndRemedyDuringRecordFailure, ECContinuityScope).
+observe(ECSingleActorV22, ECSingleActorV17, ECSingleActorV0, ECAffectedFoodRecipientsScope).
+observe(ECSingleActorV22, ECSingleActorV17, ECSingleActorV25, ECActualNutritionAccessibilityOrTransitionFailureScope).
+observe(ECSingleActorV22, ECSingleActorV17, ECSafeAdequateAccessibleLessHarmNutritionMustBeMadeAvailable, ECLessHarmNutritionDutyScope).
+observe(ECSingleActorV22, ECSingleActorV17, ECNoHumanFoodLossWhileSupplyWorkersCommunitiesOrLocalCapacityAreNotReady, ECFoodFloorContinuityScope).
+observe(ECSingleActorV22, ECSingleActorV17, ECSourceBoundSupportWithWorkerIndigenousSubsistenceProducerAndRegionalParticipationEqualityAndDueProcess, ECFoodTransitionProtectionScope).
+observe(ECSingleActorV22, ECSingleActorV17, ECDelayAndUnderinvestmentRemainPublicFailureNotPermanentAvoidableHarmPermission, ECFoodDelayFailureScope).
+observe(ECSingleActorV22, ECSingleActorV17, ECNoSupplyArrivalOperationalFeasibilityOrTransitionSuccessInferred, ECFoodNoOperationInferenceScope).
+observe(ECSingleActorV22, ECSingleActorV17, ECAnimalFoodFloorAndCareContinuity, ECKindScope).
+observe(ECSingleActorV22, ECSingleActorV17, Class6LessHarmNutritionAndProtectedFoodContinuity, ECDirectEffectClassScope).
+observe(ECSingleActorV22, ECSingleActorV17, ECAnimalFoodFloorAndCareContinuityTemporalContract, ECTemporalContractKindScope).

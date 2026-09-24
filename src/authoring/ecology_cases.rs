@@ -546,6 +546,48 @@ pub(super) fn common_for(cards: &[Card], card: &Card) -> Vec<Scenario> {
     cases
 }
 
+/// Ruling D6: a beneficial ecological record the source alone attests takes
+/// effect at once, the completed record does not derive, and the named
+/// reviewer's withdrawal on review switches the effect off.
+pub(super) fn single_actor(
+    cards: &[Card],
+    beneficial: &std::collections::BTreeSet<String>,
+) -> Vec<Scenario> {
+    use super::super::procedural_load::{fast_head, PROMPT_REVIEW, REVIEW_SCOPE, WITHDRAWN};
+    let mut cases = Vec::new();
+    for card in cards.iter().filter(|c| beneficial.contains(c.kind)) {
+        let values = records::values(cards, card, "ECSingleActor");
+        let review = format!("observe({}, {},", values["$review"], values["$record"]);
+        let facts: String = records::fixture(cards, card, &values)
+            .lines()
+            .filter(|line| !line.starts_with(&review))
+            .map(|line| format!("{line}\n"))
+            .collect();
+        let heads = records::heads(card);
+        let duty = records::ground(&format!("obliged($review, {PROMPT_REVIEW}, $record)"), &values);
+        let effects = |holds: bool| -> String {
+            let mut pins = String::new();
+            for head in heads.iter().skip(1).filter(|h| fast_head(h)) {
+                pins += &super::query(&records::ground(head, &values), holds);
+            }
+            pins + &super::query(&duty, holds)
+        };
+        let mut pins = conclusion(card, &values, false);
+        pins += &effects(true);
+        pins += &format!(
+            "observe({}, {}, {WITHDRAWN}, {REVIEW_SCOPE}).\n",
+            values["$review"], values["$record"]
+        );
+        pins += &effects(false);
+        cases.push(Scenario {
+            id: format!("{}/single-actor-and-withdrawal-on-review", card.id),
+            facts,
+            pins,
+        });
+    }
+    cases
+}
+
 fn deduplicate(facts: &str) -> String {
     let mut seen = std::collections::BTreeSet::new();
     facts

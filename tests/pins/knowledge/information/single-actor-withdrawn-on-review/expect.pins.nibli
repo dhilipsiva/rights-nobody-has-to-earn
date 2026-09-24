@@ -1,0 +1,11 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 4
+
+? permits(KnowledgeCaseRequester, AccessPublicInformation, KnowledgeCaseRecord).
+# => FALSE
+? obliged(KnowledgeCaseActor, ProvideAccessiblePublicInformation, KnowledgeCaseRecord).
+# => FALSE
+? complete(KnowledgeCaseRecord, ReviewedPublicInformationDuty, KnowledgeCaseMatter).
+# => FALSE
+? obliged(KnowledgeCaseReview, ReviewTheSingleActorRecordPromptly, KnowledgeCaseRecord).
+# => FALSE

@@ -1,0 +1,13 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 5
+
+? obliged(RecordCaseHolder, ExplainAutomatedSupportAndAllowContest, RecordCaseRecord).
+# => FALSE
+? obliged(RecordCaseReviewer, DecideWithHumanAndIndependentReview, RecordCaseRecord).
+# => FALSE
+? permits(RecordCaseSubject, ContestAutomatedSupport, RecordCaseRecord).
+# => FALSE
+? complete(RecordCaseRecord, ReviewedAutomatedDecisionSupport, RecordCaseSubject).
+# => FALSE
+? obliged(RecordCaseReview, ReviewTheSingleActorRecordPromptly, RecordCaseRecord).
+# => FALSE

@@ -1,0 +1,41 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+authorized(MPCaseAlternate, MPAlternateReviewAuthority, MPCaseRecord).
+authorized(MPCaseAuditor, MPAuditAuthority, MPCaseRecord).
+authorized(MPCaseReader, MPChallengeReaderAuthority, MPCaseRecord).
+authorized(MPCaseReview, MPIndependentReviewAuthority, MPCaseRecord).
+authorized(MPCaseSource, MPSourceAuthority, MPCaseRecord).
+observe(MPCaseSource, MPCaseRecord, AccessibleAdvocateInterpreterAndHearing, MPProcessScope).
+observe(MPCaseSource, MPCaseRecord, AffirmativeCaseBoundIndependenceAndConflictReview, MPIndependenceScope).
+observe(MPCaseSource, MPCaseRecord, AssuranceNotSubstituteForEvidenceOrExceptionToBar, MPDiplomaticAssuranceScope).
+observe(MPCaseSource, MPCaseRecord, CompatibilityOnlySeparateCoerciveAuthorityRequired, MPNonExecutionScope).
+observe(MPCaseSource, MPCaseRecord, ConnectionsFamilyResidenceAndEachChildConsidered, MPPersonalConnectionsScope).
+observe(MPCaseSource, MPCaseRecord, ConstitutionalProceedingProtectionsEstablished, MPForeignProcessScope).
+observe(MPCaseSource, MPCaseRecord, CurrentReconciledFinding, MPCurrentDispositionScope).
+observe(MPCaseSource, MPCaseRecord, DomesticOffenceNoPoliticalOrIdentityBeliefExpressionPretext, MPTransferGroundScope).
+observe(MPCaseSource, MPCaseRecord, EffectiveIndependentSuspensiveAppeal, MPAppealScope).
+observe(MPCaseSource, MPCaseRecord, FreshExactSourceAndWindowNoAutomaticCarry, MPCarryScope).
+observe(MPCaseSource, MPCaseRecord, FullOnwardChainReviewedNoRefoulementOrCategoricalAbuse, MPTransferSafetyScope).
+observe(MPCaseSource, MPCaseRecord, IndependentConstitutionalCourtReviewOrLawfulSubstitute, MPFinalReviewScope).
+observe(MPCaseSource, MPCaseRecord, IndividualExpulsion, MPTransferKindScope).
+observe(MPCaseSource, MPCaseRecord, IndividualJudicialDecisionAndDisclosedReasons, MPDecisionScope).
+observe(MPCaseSource, MPCaseRecord, IndividualStandingFloorLibertyEqualityVoiceBallotAndRemedyIntact, MPCorridorScope).
+observe(MPCaseSource, MPCaseRecord, MPCaseAlternate, MPAlternateReaderScope).
+observe(MPCaseSource, MPCaseRecord, MPCaseAuditor, MPAuditReaderScope).
+observe(MPCaseSource, MPCaseRecord, MPCaseBasis, MPEvidenceRecordScope).
+observe(MPCaseSource, MPCaseRecord, MPCaseChallenge, MPChallengeScope).
+observe(MPCaseSource, MPCaseRecord, MPCaseCorrection, MPCorrectionScope).
+observe(MPCaseSource, MPCaseRecord, MPCaseEnd, MPSourceBoundEndScope).
+observe(MPCaseSource, MPCaseRecord, MPCaseEpoch, MPEpochScope).
+observe(MPCaseSource, MPCaseRecord, MPCaseHolder, MPHolderScope).
+observe(MPCaseSource, MPCaseRecord, MPCaseJurisdiction, MPJurisdictionScope).
+observe(MPCaseSource, MPCaseRecord, MPCaseObject, MPObjectScope).
+observe(MPCaseSource, MPCaseRecord, MPCaseOperator, MPOperatorScope).
+observe(MPCaseSource, MPCaseRecord, MPCaseReader, MPChallengeReaderScope).
+observe(MPCaseSource, MPCaseRecord, MPCaseRemedy, MPRemedyScope).
+observe(MPCaseSource, MPCaseRecord, MPCaseScope, MPLegalScopeScope).
+observe(MPCaseSource, MPCaseRecord, MPCaseVersion, MPSourceVersionScope).
+observe(MPCaseSource, MPCaseRecord, MPCaseWindow, MPWindowScope).
+observe(MPCaseSource, MPCaseRecord, MinimalPrivatePurposeBoundEvidenceNoWorthRiskOrEligibilityReuse, MPPrivacyScope).
+observe(MPCaseSource, MPCaseRecord, MobilityRemovalCompatibility, MPRecordKindScope).
+observe(MPCaseSource, MPCaseRecord, NoStatelessnessNoCollectiveExpulsionNoDutyEvasion, MPRemovalLimitsScope).
+observe(MPCaseSource, MPCaseRecord, PreserveRecordProvenanceAndRightsDuringChallengeCorrectionOrEnd, MPContinuityScope).

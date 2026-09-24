@@ -1,6 +1,6 @@
 {
   "classes": {
-    "beneficial": "Gives, preserves or releases something for its subject and binds nobody else to anything beyond an existing duty.",
+    "beneficial": "Gives, preserves or releases something for its subject, finds against nobody, and asks of anybody else only what they already owe.",
     "adverse": "Restricts, takes, confines, compels or finds against a person, an animal's custodian, an association or a private actor, or permits harm to an animal.",
     "power-over-others": "Confers a public power, office, representative or decision role that other people must answer to.",
     "oversight": "Finds a public act defective or unsupported, certifies that a public body failed to act, or corrects or ends a public power.",
@@ -174,7 +174,7 @@
     "office": "Selects, appoints, seats or replaces an office-holder or public body.",
     "election": "Certifies or configures an electoral, collective or institutional result.",
     "local": "Protected local control over a local budget, administration, space, facility or service.",
-    "court-relief": "Case relief for a person against a public or coercive act.",
+    "court-relief": "Case relief for a person that finds a public or coercive act unlawful.",
     "invalidation": "Invalidates or reviews a law or procedure.",
     "removal": "Removes or rejects a person from an office or candidacy.",
     "political-home": "Determines or transfers where a person votes.",
@@ -182,8 +182,7 @@
     "fiscal": "Raises, appropriates, spends, borrows or regulates money or payment.",
     "scarcity": "Declares scarcity or allocates what is short, so some claims go unmet.",
     "shortfall": "Records an unmet claim, which obliges repair without finding against anyone.",
-    "carry-benefit": "Carries a person's existing benefit or title into the current record.",
-    "carry-liability": "Carries an existing liability into the current record.",
+    "carry-benefit": "Carries an existing benefit, title or liability into the current constitutional record; it reconciles records rather than deciding anything.",
     "coercive-order": "An individual coercive order or measure against a person.",
     "mandate": "Confers a protective mandate on a public function.",
     "emergency": "Declares, renews or acts under an emergency or armed-response power.",
@@ -195,6 +194,8 @@
     "force-found": "Finds force necessary, which permits harm.",
     "access": "Gives a person access, assistance, a hearing, an appeal or continuity.",
     "remedy": "Gives a remedy or relief to the person harmed.",
+    "binding-remedy": "A remedy, reparation or relief that binds the party found responsible.",
+    "title": "Determines protected title, which binds competing claimants.",
     "charging": "Charges, investigates or enforces against a person.",
     "record-holding": "Holds, processes, retains or uses records about people.",
     "own-record": "Gives a person access to or correction of their own record.",
@@ -210,7 +211,6 @@
     "collective-consent": "Records a collective's own consent, consultation or finding.",
     "cultural": "Protects a collective's culture or title.",
     "self-government": "Confers governing or representative authority within a collective.",
-    "membership": "Records a person's membership of a collective.",
     "private-evidence": "Opens private evidence to inspection.",
     "integrity-finding": "Finds against an office-holder, candidate, association or coordinated actor.",
     "opposition": "Records a member's opposition, which gives them opposition rights.",
@@ -224,13 +224,12 @@
     "animal-order": "An order against the person or body responsible for an animal or habitat.",
     "animal-use": "Tests or permits a use that can harm animals.",
     "custodian-duty": "Imposes welfare duties on the custodians of animals.",
-    "animal-coverage": "Extends protection to an animal or a class of animals.",
+    "animal-coverage": "Extends the protected class to an animal or a taxon, which changes whose welfare duties apply.",
     "office-function": "An independent office's collective result or exercise of its function.",
     "information-demand": "Demands information or evidence from others.",
     "liability": "Imposes liability or a duty to cease, restore or pay.",
     "ceiling": "Sets or applies a legal ecological ceiling or precaution that restricts activity.",
     "science": "Records scientific findings, compliance or finality with no individual subject.",
-    "reparation": "Gives separate reparation to the people harmed.",
     "continuity": "Preserves the floor, care or restoration while a failure is repaired.",
     "custody": "Confines a person under a conviction.",
     "standing": "Recognises a person's standing.",
@@ -394,7 +393,7 @@
       "family": "STATE-FORM",
       "head": "complete",
       "key": "FSPOW_022",
-      "class": "beneficial",
+      "class": "oversight",
       "because": "court-relief"
     },
     {
@@ -1003,43 +1002,43 @@
       "family": "ECONOMIC-CONSTITUTION",
       "head": "complete",
       "key": "EconomicBenefitCarryCurrent",
-      "class": "beneficial",
+      "class": "institutional",
       "because": "carry-benefit"
     },
     {
       "family": "ECONOMIC-CONSTITUTION",
       "head": "complete",
       "key": "EconomicBenefitCarryResult",
-      "class": "beneficial",
+      "class": "institutional",
       "because": "carry-benefit"
     },
     {
       "family": "ECONOMIC-CONSTITUTION",
       "head": "complete",
       "key": "EconomicTitleCarryCurrent",
-      "class": "beneficial",
+      "class": "institutional",
       "because": "carry-benefit"
     },
     {
       "family": "ECONOMIC-CONSTITUTION",
       "head": "complete",
       "key": "EconomicTitleCarryResult",
-      "class": "beneficial",
+      "class": "institutional",
       "because": "carry-benefit"
     },
     {
       "family": "ECONOMIC-CONSTITUTION",
       "head": "complete",
       "key": "EconomicLiabilityCarryCurrent",
-      "class": "adverse",
-      "because": "carry-liability"
+      "class": "institutional",
+      "because": "carry-benefit"
     },
     {
       "family": "ECONOMIC-CONSTITUTION",
       "head": "complete",
       "key": "EconomicLiabilityCarryResult",
-      "class": "adverse",
-      "because": "carry-liability"
+      "class": "institutional",
+      "because": "carry-benefit"
     },
     {
       "family": "PUBLIC-SAFETY",
@@ -1395,8 +1394,8 @@
       "family": "PUBLIC-SAFETY",
       "head": "complete",
       "key": "PSActualCourtBoundCaseRemedy",
-      "class": "beneficial",
-      "because": "remedy"
+      "class": "oversight",
+      "because": "court-relief"
     },
     {
       "family": "PUBLIC-SAFETY",
@@ -1430,8 +1429,8 @@
       "family": "NON-CARCERAL-JUSTICE",
       "head": "complete",
       "key": "JusticeCaseSpecificRelief",
-      "class": "beneficial",
-      "because": "remedy"
+      "class": "oversight",
+      "because": "court-relief"
     },
     {
       "family": "NON-CARCERAL-JUSTICE",
@@ -1822,8 +1821,8 @@
       "family": "MOBILITY-PLURALITY",
       "head": "complete",
       "key": "PluralityMembershipOccurrence",
-      "class": "beneficial",
-      "because": "membership"
+      "class": "institutional",
+      "because": "collective-consent"
     },
     {
       "family": "MOBILITY-PLURALITY",
@@ -1850,15 +1849,15 @@
       "family": "MOBILITY-PLURALITY",
       "head": "complete",
       "key": "PluralityProtectedTitle",
-      "class": "beneficial",
-      "because": "cultural"
+      "class": "adverse",
+      "because": "title"
     },
     {
       "family": "MOBILITY-PLURALITY",
       "head": "complete",
       "key": "PluralityRightsBoundedRemedy",
-      "class": "beneficial",
-      "because": "remedy"
+      "class": "adverse",
+      "because": "binding-remedy"
     },
     {
       "family": "DEMOCRATIC-INTEGRITY",
@@ -2536,14 +2535,14 @@
       "family": "ECOLOGICAL-ANIMAL",
       "head": "complete",
       "key": "ECCrediblySentientAnimalCoverage",
-      "class": "beneficial",
+      "class": "institutional",
       "because": "animal-coverage"
     },
     {
       "family": "ECOLOGICAL-ANIMAL",
       "head": "complete",
       "key": "ECAnimalTaxonExtension",
-      "class": "beneficial",
+      "class": "institutional",
       "because": "animal-coverage"
     },
     {
@@ -2662,15 +2661,15 @@
       "family": "ECOLOGICAL-ANIMAL",
       "head": "complete",
       "key": "ECSeparateCollectiveEnvironmentalReparation",
-      "class": "beneficial",
-      "because": "reparation"
+      "class": "adverse",
+      "because": "binding-remedy"
     },
     {
       "family": "ECOLOGICAL-ANIMAL",
       "head": "complete",
       "key": "ECSeparateHumanEnvironmentalReparation",
-      "class": "beneficial",
-      "because": "reparation"
+      "class": "adverse",
+      "because": "binding-remedy"
     },
     {
       "family": "ECOLOGICAL-ANIMAL",
@@ -3005,8 +3004,8 @@
       "family": "NON-CARCERAL-JUSTICE",
       "head": "permits",
       "key": "RelyOnSpecifiedCaseRelief",
-      "class": "beneficial",
-      "because": "remedy"
+      "class": "oversight",
+      "because": "court-relief"
     },
     {
       "family": "OFFICIAL-STATISTICS",

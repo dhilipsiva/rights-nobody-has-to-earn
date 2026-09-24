@@ -1,0 +1,21 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 9
+? complete(ECSingleActorV19, ECDualFloorAndCeilingContinuity, ECSingleActorV27).
+# => FALSE
+? obliged(ECSingleActorV14, ECPreserveImmediateFloorWhileObtainingAlternativesAndRepairingBreach, ECSingleActorV19).
+# => TRUE
+? prevents(ECSingleActorV19, ECUnmetFloorRenamedSuccess).
+# => TRUE
+? prevents(ECSingleActorV19, ECCeilingBreachRenamedCompliance).
+# => TRUE
+? obliged(ECSingleActorV21, ReviewTheSingleActorRecordPromptly, ECSingleActorV19).
+# => TRUE
+observe(ECSingleActorV21, ECSingleActorV19, SingleActorEffectWithdrawnOnReview, SingleActorReviewScope).
+? obliged(ECSingleActorV14, ECPreserveImmediateFloorWhileObtainingAlternativesAndRepairingBreach, ECSingleActorV19).
+# => FALSE
+? prevents(ECSingleActorV19, ECUnmetFloorRenamedSuccess).
+# => FALSE
+? prevents(ECSingleActorV19, ECCeilingBreachRenamedCompliance).
+# => FALSE
+? obliged(ECSingleActorV21, ReviewTheSingleActorRecordPromptly, ECSingleActorV19).
+# => FALSE

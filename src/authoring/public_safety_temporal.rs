@@ -368,6 +368,7 @@ mod tests {
                 let candidate = super::super::render(
                     &context.read("book-1/source/constitution.nibli").unwrap(),
                     &cards,
+                    &super::super::beneficial_for_tests(),
                 )
                 .unwrap();
                 let engine =

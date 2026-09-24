@@ -56,9 +56,29 @@ pub(super) fn generate(
         counterfactual(export, authored, name, atom);
     }
 
+    let beneficial = beneficial_kinds(context)?;
     for c in cards {
         let v = values(cards, c, "JCase");
         let facts = fixture(context, cards, c, &v)?;
+        let helped = beneficial.contains(c.kind);
+        add_case(
+            context,
+            export,
+            &format!("{}/single-actor", c.id),
+            "live",
+            &single_actor_facts(&facts, &v),
+            &fast_queries(c, &v, helped),
+        )?;
+        if helped {
+            add_case(
+                context,
+                export,
+                &format!("{}/single-actor-withdrawn-on-review", c.id),
+                "live",
+                &(single_actor_facts(&facts, &v) + &withdrawal(&v)),
+                &fast_queries(c, &v, false),
+            )?;
+        }
         add_case(
             context,
             export,

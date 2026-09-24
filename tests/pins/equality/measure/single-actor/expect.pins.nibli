@@ -1,0 +1,13 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+:expect-pins 5
+
+? authority(EqualityCaseActor, BarrierRemoval, EqualityCaseRecord).
+# => FALSE
+? permits(EqualityCaseActor, ApplyTheBoundedPositiveMeasure, EqualityCaseRecord).
+# => FALSE
+? obliged(EqualityCaseReader, ReviewTheMeasureAndEndItWhenTheObjectiveIsSustainablyAchieved, EqualityCaseRecord).
+# => FALSE
+? complete(EqualityCaseRecord, ReviewedPositiveMeasure, EqualityCaseDecision).
+# => FALSE
+? obliged(EqualityCaseReview, ReviewTheSingleActorRecordPromptly, EqualityCaseRecord).
+# => FALSE

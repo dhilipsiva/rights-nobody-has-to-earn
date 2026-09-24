@@ -408,6 +408,28 @@ pub(super) fn rules(cards: &[Card]) -> Vec<String> {
     rules
 }
 
+/// Ruling D6: a claim, an interim protection or a continuity record that
+/// only gives its subject something takes effect on the source alone. Its
+/// duties follow at once from every alternative body, the named reviewer owes
+/// prompt review and may withdraw them, and the completed record — which the
+/// Guardian's stay, merits and every adverse route read — stays behind full
+/// procedure.
+pub(super) fn single_actor_rules(cards: &[Card], beneficial: &BTreeSet<String>) -> Vec<String> {
+    use super::super::procedural_load::{fast_head, single_actor, PROMPT_REVIEW};
+    let mut rules = Vec::new();
+    for card in cards.iter().filter(|c| beneficial.contains(c.kind)) {
+        let heads = heads(card);
+        for body in rule_bodies(cards, card) {
+            let fast = single_actor(&body, &[], "$review");
+            for effect in heads.iter().skip(1).filter(|h| fast_head(h)) {
+                rules.push(rule(&fast, effect));
+            }
+            rules.push(rule(&fast, &format!("obliged($review, {PROMPT_REVIEW}, $record)")));
+        }
+    }
+    rules
+}
+
 pub(super) fn ground(text: &str, values: &Values) -> String {
     pattern()
         .replace_all(text, |m: &regex::Captures<'_>| {

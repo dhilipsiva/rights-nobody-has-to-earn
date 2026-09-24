@@ -1,0 +1,57 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+authorized(ECSingleActorV24, ECSourceAuthority, ECSingleActorV19).
+authorized(ECSingleActorV21, ECIndependentReviewAuthority, ECSingleActorV19).
+authorized(ECSingleActorV17, ECChallengeReaderAuthority, ECSingleActorV19).
+authorized(ECSingleActorV0, ECAlternateReaderAuthority, ECSingleActorV19).
+authorized(ECSingleActorV1, ECAuditReaderAuthority, ECSingleActorV19).
+authorized(ECSingleActorV13, ECCaseScopedActor, ECSingleActorV19).
+observe(ECSingleActorV24, ECSingleActorV19, ECSingleActorV26, ECSubjectScope).
+observe(ECSingleActorV24, ECSingleActorV19, ECSingleActorV2, ECCaseScope).
+observe(ECSingleActorV24, ECSingleActorV19, ECSingleActorV22, ECRevisionScope).
+observe(ECSingleActorV24, ECSingleActorV19, ECSingleActorV28, ECConstitutionVersionScope).
+observe(ECSingleActorV24, ECSingleActorV19, ECSingleActorV8, ECEvidenceRecordScope).
+observe(ECSingleActorV24, ECSingleActorV19, ECSingleActorV9, ECEvidenceVersionScope).
+observe(ECSingleActorV24, ECSingleActorV19, ECSingleActorV12, ECMethodVersionScope).
+observe(ECSingleActorV24, ECSingleActorV19, ECSingleActorV14, ECPlaceScope).
+observe(ECSingleActorV24, ECSingleActorV19, ECSingleActorV27, ECTerritoryScope).
+observe(ECSingleActorV24, ECSingleActorV19, ECSingleActorV15, ECAffectedPopulationScope).
+observe(ECSingleActorV24, ECSingleActorV19, ECSingleActorV11, ECJurisdictionScope).
+observe(ECSingleActorV24, ECSingleActorV19, ECSingleActorV23, ECLegalScopeScope).
+observe(ECSingleActorV24, ECSingleActorV19, ECSingleActorV13, ECResponsibleActorScope).
+observe(ECSingleActorV24, ECSingleActorV19, ECSingleActorV17, ECChallengeReaderScope).
+observe(ECSingleActorV24, ECSingleActorV19, ECSingleActorV0, ECAlternateReaderScope).
+observe(ECSingleActorV24, ECSingleActorV19, ECSingleActorV1, ECAuditReaderScope).
+observe(ECSingleActorV24, ECSingleActorV19, ECSingleActorV18, ECPublicReasonsScope).
+observe(ECSingleActorV24, ECSingleActorV19, ECSingleActorV3, ECChallengeRouteScope).
+observe(ECSingleActorV24, ECSingleActorV19, ECSingleActorV5, ECCorrectionRouteScope).
+observe(ECSingleActorV24, ECSingleActorV19, ECSingleActorV20, ECRemedyRouteScope).
+observe(ECSingleActorV24, ECSingleActorV19, ECSingleActorV29, ECWindowScope).
+observe(ECSingleActorV24, ECSingleActorV19, ECSingleActorV25, ECStartScope).
+observe(ECSingleActorV24, ECSingleActorV19, ECSingleActorV6, ECEndScope).
+observe(ECSingleActorV24, ECSingleActorV19, ECSingleActorV7, ECFreshEvaluationScope).
+observe(ECSingleActorV24, ECSingleActorV19, ECSingleActorV22, ECSelectedRevisionScope).
+observe(ECSingleActorV24, ECSingleActorV19, ECIndependentlyEstablishedCurrentWindow, ECCurrentDispositionScope).
+observe(ECSingleActorV24, ECSingleActorV19, ECStartBeforeEndAndEvaluationWithinOwnWindow, ECTemporalFindingScope).
+observe(ECSingleActorV24, ECSingleActorV19, ECNoCarryAcrossVersionScopeSubjectOrWindow, ECCarryScope).
+observe(ECSingleActorV24, ECSingleActorV19, ECPositiveConflictRecusalAndIndependenceReview, ECIndependenceScope).
+observe(ECSingleActorV24, ECSingleActorV19, ECPurposeLimitedNecessaryPrivateEvidenceAndIndependentAccess, ECPrivacyScope).
+observe(ECSingleActorV24, ECSingleActorV19, ECAccessibleReasonsUncertaintyAndSourceLimitations, ECDisclosureScope).
+observe(ECSingleActorV24, ECSingleActorV19, ECReviewableRetentionDeletionCorrectionAndLawfulHistory, ECRecordControlScope).
+observe(ECSingleActorV24, ECSingleActorV19, ECPreserveUrgentProtectionAndRemedyDuringRecordFailure, ECContinuityScope).
+observe(ECSingleActorV24, ECSingleActorV19, ECCleanAirInterest, ECEnvironmentalInterestScope).
+observe(ECSingleActorV24, ECSingleActorV19, ECCreatesOrControlsHarm, ECDirectReachScope).
+observe(ECSingleActorV24, ECSingleActorV19, ECCredibleThreatenedSeriousOrIrreversibleInterference, ECClaimGroundScope).
+observe(ECSingleActorV24, ECSingleActorV19, ECPositivePresentHumanClaimantWithoutCivilIdentityGuiltOrPermissionCondition, ECHumanClaimantFindingScope).
+observe(ECSingleActorV24, ECSingleActorV19, ECNoProprietaryInjuryOrOwnershipPrerequisite, ECClaimAccessScope).
+observe(ECSingleActorV24, ECSingleActorV19, ECComprehensibleTimelyInformation, ECInformationScope).
+observe(ECSingleActorV24, ECSingleActorV19, ECDisclosedUncertaintyAndSourceLimits, ECUncertaintyScope).
+observe(ECSingleActorV24, ECSingleActorV19, ECAccessiblePriorParticipationWithExposedPeopleAndCollectives, ECParticipationScope).
+observe(ECSingleActorV24, ECSingleActorV19, ECPriorDirectIndirectCumulativeDistributionalCrossBoundaryLongLatencyAssessment, ECAssessmentScope).
+observe(ECSingleActorV24, ECSingleActorV19, ECReasonsAddressingAlternativesAndMaterialObjections, ECReasonsDutyScope).
+observe(ECSingleActorV24, ECSingleActorV19, ECProtectionFromReportingInvestigationAndChallengeRetaliation, ECRetaliationScope).
+observe(ECSingleActorV24, ECSingleActorV19, ECIndependentInterimProtectionCorrectionAndEffectiveRemedy, ECProtectionRouteScope).
+observe(ECSingleActorV24, ECSingleActorV19, ECPublicContinuityWhenPrivateControllerOrProviderFails, ECPrivateFailureContinuityScope).
+observe(ECSingleActorV24, ECSingleActorV19, ECNoNewFloorItemAndNoPersonalOutcomeCertification, ECFloorBoundaryScope).
+observe(ECSingleActorV24, ECSingleActorV19, ECEnvironmentalRightClaim, ECKindScope).
+observe(ECSingleActorV24, ECSingleActorV19, Class3EnvironmentalRight, ECDirectEffectClassScope).
+observe(ECSingleActorV24, ECSingleActorV19, ECEnvironmentalRightClaimTemporalContract, ECTemporalContractKindScope).

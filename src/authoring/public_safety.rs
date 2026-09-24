@@ -24,11 +24,20 @@ fn cards(context: &crate::context::Context) -> Result<Vec<contracts::Card>, crat
     Ok(cards)
 }
 
-fn rules(cards: &[contracts::Card]) -> Vec<String> {
+fn rules(
+    cards: &[contracts::Card],
+    beneficial: &std::collections::BTreeSet<String>,
+) -> Vec<String> {
     let mut rules = records::rules(cards);
-    rules.extend(protections::rules());
+    rules.extend(protections::rules(beneficial));
     rules.extend(review::rules(cards));
     rules
+}
+
+/// The reviewed beneficial kinds, for tests that render the real constitution.
+#[cfg(test)]
+fn beneficial_for_tests() -> std::collections::BTreeSet<String> {
+    super::procedural_load::beneficial_kinds(&crate::context::Context::discover().unwrap()).unwrap()
 }
 
 const BEGIN: &str = "# <PUBLIC-SAFETY-RULES-BEGIN>";
@@ -37,7 +46,11 @@ const OLD_TRAVEL: &str = "all $anyone: person($anyone) & ~prisoner($anyone) -> t
 const PROTECTED_TRAVEL: &str =
     "all $anyone: person($anyone) & ~prisoner($anyone) & ~restrain($anyone) -> travel($anyone).";
 
-fn render(source: &str, cards: &[contracts::Card]) -> Result<String, crate::cli::Error> {
+fn render(
+    source: &str,
+    cards: &[contracts::Card],
+    beneficial: &std::collections::BTreeSet<String>,
+) -> Result<String, crate::cli::Error> {
     use crate::cli::Error;
     let source = match (
         source.matches(OLD_TRAVEL).count(),
@@ -53,7 +66,7 @@ fn render(source: &str, cards: &[contracts::Card]) -> Result<String, crate::cli:
     };
     let block = format!(
         "{BEGIN}\n# Separated protective powers and safeguards. Supplied findings do not authenticate evidence, advance time or perform an act.\nderived_only(\"restrain\").\n{}\n{END}",
-        rules(cards).join("\n")
+        rules(cards, beneficial).join("\n")
     );
     match (source.matches(BEGIN).count(), source.matches(END).count()) {
         (0, 0) => Ok(format!("{}\n\n{block}\n", source.trim_end())),
@@ -73,11 +86,12 @@ pub(crate) fn generate(
     export: &mut super::Export,
 ) -> Result<(), crate::cli::Error> {
     let cards = cards(context)?;
+    let beneficial = super::procedural_load::beneficial_kinds(context)?;
     let path = "book-1/source/constitution.nibli";
-    let rendered = render(&context.read(path)?, &cards)?;
+    let rendered = render(&context.read(path)?, &cards, &beneficial)?;
     let mut scenarios = cases::core(&cards);
     scenarios.extend(external::scenarios(&cards)?);
-    scenarios.extend(protections::scenarios());
+    scenarios.extend(protections::scenarios(&beneficial));
     scenarios.extend(review::scenarios(&cards));
     scenarios.extend(cases::composed_windows(&cards));
     scenarios.extend(cases::economic_boundary(context, &cards)?);
@@ -102,7 +116,7 @@ pub(crate) fn generate(
             true,
         )?;
     }
-    let relationship_edits = protections::rules()
+    let relationship_edits = protections::rules(&beneficial)
         .into_iter()
         .filter(|rule| {
             rule.ends_with("-> family($subject).") || rule.ends_with("-> parent($subject, $child).")
@@ -138,12 +152,12 @@ mod tests {
         let context = Context::discover().unwrap();
         let cards = super::cards(&context).unwrap();
         let source = context.read("book-1/source/constitution.nibli").unwrap();
-        let first = super::render(&source, &cards).unwrap();
-        let second = super::render(&first, &cards).unwrap();
+        let first = super::render(&source, &cards, &super::beneficial_for_tests()).unwrap();
+        let second = super::render(&first, &cards, &super::beneficial_for_tests()).unwrap();
         assert!(first == second);
         assert_eq!(first.matches(super::BEGIN).count(), 1);
         assert_eq!(first.matches(super::PROTECTED_TRAVEL).count(), 1);
-        assert!(super::render(&format!("{source}\n{}", super::OLD_TRAVEL), &cards).is_err());
+        assert!(super::render(&format!("{source}\n{}", super::OLD_TRAVEL), &cards, &super::beneficial_for_tests()).is_err());
     }
 
     #[test]
@@ -157,6 +171,7 @@ mod tests {
             "book-1/source/state-form-source.json",
             "book-1/source/economic-power-081.pins.nibli",
             "book-1/source/economic-power-082.pins.nibli",
+            "book-1/source/procedural-load-source.json",
         ] {
             std::fs::copy(live.path(path), context.path(path)).unwrap();
         }

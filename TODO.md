@@ -225,26 +225,6 @@ changes it.
 
 ### Resolve the design questions, source and pins first
 
-- [ ] **43. Apply ruling D6: fast for help, slow for harm.**
-
-  **Scope:** every family item 42 classifies, their contract cards, and
-  `src/authoring/floor_vector_tests.rs`; ruling D6.
-
-  Apply the ruling family by family, from item 42's table. An act that only
-  gives or preserves something for its subject (immediate care continuity, an
-  accommodation, interim protection) takes effect on one authorised actor, and
-  prompt independent review can correct it. Any appointment giving someone power
-  over another person, and every adverse act, keep full prior procedure;
-  delivery evidence keeps its independent witness. Revise
-  `every_power_record_is_independently_reviewed` into the ruled property with
-  its sabotage controls, move the change into each affected contract card, and
-  remove the duplicated steps item 42 found.
-
-  **Done when:** pins show a beneficial act taking effect on one actor and being
-  corrected on review, an appointment of power over another person and an
-  adverse act each refused without full procedure, and the revised development
-  check passing with its controls.
-
 - [ ] **44. Split `secure` into bodily safety and material security.**
 
   **Scope:** Articles 1 and 1b, the delivery routes (`FS-CVF-015`), the coverage

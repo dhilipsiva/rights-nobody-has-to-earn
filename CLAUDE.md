@@ -134,6 +134,56 @@ reinstate the retired tooling or workflow.
 Grouped by kind. Dates in each heading are the ratification dates; a ruling
 that was later implemented or narrowed carries that supersession inline.
 
+### Item 43 — fast for help, slow for harm, 2026-09-24
+
+Ruling D6 is implemented. Every beneficial record kind in item 42's table gains
+a single-actor route: its source's record alone makes its duties, permissions
+and barriers take effect, the independent reviewer named on the record owes
+prompt review (`ReviewTheSingleActorRecordPromptly`), and the reviewer's
+withdrawal on review (`SingleActorEffectWithdrawnOnReview`) switches them off; a
+family's defect route withdraws them too where it has one. The completed record,
+standing and every authority stay behind full procedure, so an adverse effect
+that reads a completion cannot be reached through help one actor gave. Forty-two
+routes cover the equality, life-course, knowledge, record-power, scarcity,
+integrity, mobility, justice, public-safety and ecological families. Adverse
+records and appointments over another person are unchanged, and generated cases
+show both refused on one actor.
+
+Before applying it, item 42's beneficial class was tightened to effects that
+find against nobody and ask of others only what they already owe. Case relief
+and court remedies become oversight; protected title, binding remedies and the
+separate reparations become adverse; membership, which rests on a collective's
+own acceptance, animal-coverage extensions, which change whose duties apply, and
+the economic carries, which reconcile records, become institutional. Sixty-seven
+effects remain beneficial. The duplicated attestation item 42 listed is removed
+for them by this route; for adverse records and appointments it is the
+independent confirmation D6 retains.
+
+`floor_vector_tests::help_takes_effect_on_one_actor_and_harm_waits_for_review`
+states the ruled property beside the unchanged completion symmetry: a rule whose
+named reviewer observes nothing must conclude a duty, permission or barrier,
+name a beneficial record kind, carry the withdrawal guard, owe prompt review in
+a sibling rule and grant no permission another rule reads. Four sabotage
+controls (an adverse kind, a completion, a missing guard, a missing review duty)
+each fail, and a count guard caught a first draft that matched nothing. Each
+family's generated cases show a single-actor record taking effect or refused by
+class and its withdrawal on review; an accommodation corrected by a reviewed
+defect is an integration case; Chapter 12's pins run the accommodation; and the
+procedural-load table gains an acting-before-effect column. Four temporary-root
+tests needed the classification copied into their roots.
+
+Chapters 3 and 12, Part V's capture joint and the method describe the route, and
+the ten families' contract cards record it; the exact prose is `session-drafted,
+author-approved under delegated approval (2026-09-13)`. Rules move from 7,414 to
+7,524, and the constitution grows to 57.7 MB, under the 75 MB trigger. Focused
+runs pass the six template-shaped families and integrity (9,722 pins across
+2,766 cases), mobility (1,597 across 384), justice (1,285 across 341), public
+safety's protected facts (1,101 across 286), the affected ecological cases
+(8,167 across 1,179) and the sixteen ecological single-actor cases (90). All 137
+authoring development tests pass, with five declared ignored, and the prose
+check passes. `RIGHTS_VERIFY_JOBS=4 ./verify.sh` passes 89,561 pins across
+16,273 cases with complete contradiction checks and no findings in 1,116.54s.
+
 ### Item 42 — the procedural load, measured, 2026-09-24
 
 `./generate.sh procedural-load` reads every gated effect in the constitution —
@@ -514,7 +564,10 @@ independent witness. This supersedes, for that class only, the 2026-09-15
 symmetry under which every record completion carries a distinctness constraint
 and an independent review authority before it takes effect. Item 42 measures the
 load first; item 43 implements the ruling and revises
-`every_power_record_is_independently_reviewed` into the ruled property.
+`every_power_record_is_independently_reviewed` into the ruled property. **Implemented 2026-09-24 (item 43):** the
+single-actor route concludes a beneficial record's duties and permissions, never
+its completion, so the completion symmetry still holds and
+`help_takes_effect_on_one_actor_and_harm_waits_for_review` states the rest.
 
 **D7 — the structure.** The revision plan's table is adopted: Chapters 1 and 2,
 9 and 10, and 23, 25 and 26 merge; Chapter 13 splits into commons and animals;
@@ -3041,11 +3094,13 @@ predate it and carry it on none, and `AMENDMENT-ENACTMENT` is partial. Those
 three sets are asserted by membership, so retrofitting an older family is
 welcome but is a ruled change that has to move its contract card too.
 
-**Narrowed 2026-09-24, not yet implemented (D6 of *The revision rulings
-D1–D9*):** an act that only gives or preserves something for its subject will
-take effect on one authorised actor, with prompt independent review able to
-correct it. Appointments giving power over another person and every adverse act
-keep full prior procedure. Item 43 revises the check into the ruled property.
+**Narrowed 2026-09-24 and implemented the same day (D6 of *The revision rulings
+D1–D9*, item 43):** an act that only gives or preserves something for its
+subject takes effect on one authorised actor, with prompt independent review
+able to withdraw it. Its completed record still carries both guards, so this
+test still holds; appointments giving power over another person and every
+adverse act keep full prior procedure, and
+`help_takes_effect_on_one_actor_and_harm_waits_for_review` states that half.
 
 **The asymmetries, and which are formal.** Recognition is optional, binary,
 non-ranked and non-operative — checked, by arity, by no reader, by no self-join.

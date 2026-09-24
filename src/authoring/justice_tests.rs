@@ -127,6 +127,7 @@ fn generation_is_idempotent_and_preserves_other_families() {
     for path in [
         "book-1/source/constitution.nibli",
         "book-1/source/state-form-source.json",
+        "book-1/source/procedural-load-source.json",
     ] {
         std::fs::copy(live.path(path), context.path(path)).unwrap();
     }
