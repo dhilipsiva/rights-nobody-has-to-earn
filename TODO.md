@@ -216,7 +216,7 @@ unimplemented until the items named here land.
 
 ## Ordered revision backlog
 
-Work in this order: items 68–72, the defects item 45's stress tests confirmed,
+Work in this order: items 69–72, the defects item 45's stress tests confirmed,
 then items 46–52, which measure, repair and prepare; items 53–63 carry the
 structure and the rewrite under the ratified rulings; item 64 finishes
 production, 65 closes the revision, and 66 is optional. Numbering continues from
@@ -225,28 +225,6 @@ reading sequence](book-1/contents.json), which the plan also uses, until item 53
 changes it.
 
 ### Resolve the design questions, source and pins first
-
-- [ ] **68. Say what governs when an election cannot be held.**
-
-  **Scope:** the STATE-FORM term, caretaker and fresh-election branches
-  (FSPOW_031, FSPOW_041–FSPOW_044), the public-safety non-derogation rules, and
-  `tests/pins/stress/election-cannot-be-held`.
-
-  An emergency cannot postpone an election or extend a mandate, and a
-  declaration used to do either is withdrawn when found. But calling a fresh
-  election is a power, not a duty; nothing obliges anyone to hold the election
-  as soon as it can be held; and nothing says what governs when the People's
-  Assembly's own term ends and its successor cannot be elected. The caretaker's
-  limits govern a failed executive, and the ledger says a default outside them
-  needs a new ruling. Compare the alternatives — the outgoing chamber continuing
-  under caretaker limits until its successor meets, a duty to hold the election
-  at the first lawful opportunity with independent review of the impossibility
-  finding, and the corridor's requirement that the Assembly can still sit — and
-  implement the one that extends no mandate's powers.
-
-  **Done when:** a duty to hold the election and the lapsed-Assembly default
-  are formal and pinned, with the impossibility finding reviewed, and no
-  mandate gains power by the delay.
 
 - [ ] **69. Keep a compared claimant out of the allocation's attesters.**
 

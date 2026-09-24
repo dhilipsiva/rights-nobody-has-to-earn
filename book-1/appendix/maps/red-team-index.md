@@ -124,8 +124,12 @@ score:* none.
 election falls due. *Needs:* a real hazard. *Hidden cost:* the electorate.
 *Detected:* a declaration used to delay the election or extend a mandate is
 withdrawn with every measure resting on it, and the caretaker holds no
-confidence mandate. *Gap:* holding the election is a power, not a duty, and
-nothing governs a lapsed Assembly (item 68). *Case:*
+confidence mandate. An independent term-end certification now obliges the
+electoral body to hold the election at the first lawful opportunity and lets the
+outgoing chamber sit only under caretaker limits until its successor meets; an
+impossibility finding from outside the chamber and the executive obliges the
+Court's prompt review, and a certified failure to hold a possible election
+obliges the Court to order it (item 68). *Case:*
 `tests/pins/stress/election-cannot-be-held`.
 
 **Manipulated urgency in a scarcity allocation.** *Gains:* the claimant whose

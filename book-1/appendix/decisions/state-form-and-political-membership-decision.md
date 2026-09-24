@@ -921,3 +921,59 @@ fallback count, and it does not ask Nibli to calculate or authenticate one.
 The family may move from `coverage-ready` only after every row above has an
 executable disposition and every `revise_and_pin` row's exact canonical Book 1
 wording has completed the author-approval lifecycle.
+
+## 14. An election that cannot be held — item 68, 2026-09-24
+
+Section 7 gives the electoral body "a legal duty and authority to call a fresh
+election", but only the authority was formal: the stress case
+`tests/pins/stress/election-cannot-be-held` found no rule obliging anyone to
+hold an election, and none saying what governs when the People's Assembly's own
+term ends and its successor cannot be elected. The caretaker limits govern a
+failed executive, and the ledger records that a default outside them needs a
+new ruling. This section is that ruling, taken under the delegated approval of
+2026-09-13 and implemented as Article 2b.
+
+**The alternatives compared.** *No sitting chamber until the election*: an
+emergency would leave the executive with no chamber to answer to, and the
+corridor requires the Assembly to remain able to sit, so this is refused.
+*The outgoing chamber continues with full powers*: that is a mandate extension
+by another name, which the emergency ruling refuses. *A standing committee of
+the outgoing chamber*: it keeps oversight alive but concentrates the chamber's
+remaining voice in fewer hands chosen by the old majority. *The outgoing chamber
+sits under caretaker limits until its successor first meets*: every member keeps
+their seat, the chamber can oversee and legislate what the election needs, and
+it can make no amendment and take no irreversible measure. The last is chosen.
+*A court-set date*: a court can order that the election be secured, but a date
+does not make an impossible election possible; the order is kept as the
+nonresponse remedy, not as the default.
+
+**The rule.** A term-end certification by a source and an independent reviewer,
+neither of them the chamber, obliges the electoral body to hold the election at
+the first lawful opportunity, permits the outgoing chamber to sit only under
+caretaker limits, and obliges it to act only under existing law, the floor,
+oversight and the election's needs, with no amendment and no irreversible
+measure. The permission and the limit end when the reviewer records that the
+successor has first met. A finding that the election cannot yet be held needs
+its own source and independent reviewer, neither of them the chamber or the
+Executive Council, and obliges the Constitutional Court to review it promptly;
+it does not lift the election duty. A certified failure by the electoral body to
+hold an election that could be held obliges the Court to order it and secure its
+conditions.
+
+**Who bears the cost, and what bounds it.** The electorate bears the delay: the
+chamber sitting is the one they chose last, for longer than they chose it. The
+bounds are that the chamber gains nothing from the delay — no amendment, no
+irreversible measure, no ordinary policy mandate — that the impossibility must
+be found by someone other than the incumbents, reviewed promptly by the Court,
+and cannot suspend the duty to hold the election, and that a failure to hold it
+when it could be held reaches the Court. **What would reopen it:** evidence that
+caretaker limits cannot be kept by a sitting chamber in practice, or that
+independent impossibility findings are routinely captured, would favour a
+shorter, court-supervised sitting or a standing committee with a fixed
+cross-party composition.
+
+The rules read certifications only and conclude duties and one permission that
+nothing reads. None holds an election, sets a date, advances a clock or proves
+that anything happened; the Assembly's ordinary powers still need their own
+current records, which the temporal attesters must stop giving at the term's
+end.

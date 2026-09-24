@@ -202,6 +202,7 @@
     "statistics-release": "Releases or rebuts aggregate statistics with no individual subject.",
     "presumption": "Raises a presumption against a public body in an equality proceeding.",
     "amendment": "Certifies, publishes or selects a constitutional version.",
+    "chamber-continuity": "Keeps a chamber whose term has ended able to sit under caretaker limits until its successor meets.",
     "accommodation": "An accommodation for the person who needs it.",
     "positive-measure": "A positive measure that allocates chances between people.",
     "equality-proceeding": "A remedial equality proceeding against a respondent.",
@@ -2747,6 +2748,13 @@
       "key": "",
       "class": "adverse",
       "because": "credibility-candidate"
+    },
+    {
+      "family": "ARTICLES",
+      "head": "permits",
+      "key": "SitUnderCaretakerLimitsUntilTheSuccessorFirstMeets",
+      "class": "institutional",
+      "because": "chamber-continuity"
     },
     {
       "family": "ARTICLES",

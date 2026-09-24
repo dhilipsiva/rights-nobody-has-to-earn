@@ -60,6 +60,32 @@ none of those duties and establishes no completed return or compensation.
 The person retains standing and the floor throughout and does not become a
 prisoner. The declaration's defect creates no adverse finding about them.
 
+## When the election cannot be held
+
+A declaration is barred from delaying an election, yet a hazard can still make
+one impossible for a time. The design answers the gap with duties rather than
+extra power. When a source and an independent reviewer, both from outside the
+chamber, certify that the People's Assembly's term has ended, the electoral
+body owes the election at the first lawful opportunity. Until the reviewer
+records that the successor has met, the outgoing chamber may sit, so the
+republic always has an Assembly able to sit. It sits under caretaker limits:
+existing law and the floor, oversight of the government, and what the election
+needs, with constitutional amendment and irreversible measures beyond its
+reach.
+
+A finding that the election is impossible for now must come from its own source
+and independent reviewer, both from outside the chamber and the Executive
+Council. It obliges the Constitutional Court to review the finding promptly,
+and the duty to hold the election stays in place. If a monitor and a separate
+reviewer certify that the electoral body has failed to hold an election that
+could be held, the Court owes an order securing the election and its
+conditions.
+
+These rules name who owes what while an election is late. Holding the
+election, choosing its date and every power beyond the caretaker limits lie
+outside them, and the sitting chamber's permission ends when its successor
+meets.
+
 ## Power does not grow at the border
 
 The defence case supplies a structure under civilian command, Assembly limits

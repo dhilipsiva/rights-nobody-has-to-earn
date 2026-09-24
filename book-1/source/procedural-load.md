@@ -22,7 +22,7 @@ What has to act before each effect in the constitution takes effect: every compl
 |---|---|---|
 | adverse | 202 | 35 |
 | beneficial | 67 | 0 |
-| institutional | 125 | 33 |
+| institutional | 126 | 33 |
 | oversight | 52 | 6 |
 | power-over-others | 71 | 20 |
 
@@ -33,6 +33,7 @@ Where more than one role writes exactly the same fields onto one record, the att
 - **AMENDMENT-ENACTMENT** — effect reviewer + publisher: institutional 1
 - **AMENDMENT-ENACTMENT** — effect reviewer + source: institutional 1
 - **AMENDMENT-ENACTMENT** — evidence attester + independent reviewer: oversight 1
+- **ARTICLES** — independent reviewer + source: institutional 1
 - **DEMOCRATIC-INTEGRITY** — evidence attester + independent reviewer + source: adverse 5, beneficial 1, institutional 2, oversight 2
 - **ECOLOGICAL-ANIMAL** — completeness assurer + decision administrator + result service; independent reviewer + source: institutional 4
 - **ECOLOGICAL-ANIMAL** — ethical reviewer + scientific reviewer; independent reviewer + source: adverse 1
@@ -149,6 +150,7 @@ Ruling D6 lets an act that only gives or preserves something for its subject tak
 |---|---|---|---|---|---|---|
 | `agree` | adverse | Qualifies a proposed credibility finding against a person. | 2 | 2 |  | — |
 | `decide` | beneficial | Concludes a person's ballot. | 1 | 1 |  | — |
+| `permits` SitUnderCaretakerLimitsUntilTheSuccessorFirstMeets | institutional | Keeps a chamber whose term has ended able to sit under caretaker limits until its successor meets. | 2 | 2 | independent reviewer + source | — |
 | `person` | beneficial | Recognises a person's standing. | 1–2 | 1–2 |  | — |
 | `prisoner` | adverse | Confines a person under a conviction. | 1–5 | 1–5 |  | — |
 
@@ -743,4 +745,4 @@ Ruling D6 lets an act that only gives or preserves something for its subject tak
 
 ## Outside this table
 
-Duties are owed rather than taking effect, and barriers read no authorised role, so neither is listed: 695 rules conclude a duty (`obliged`) and 546 conclude a barrier (`prevents`). Where a duty accompanies a restriction, the restriction is measured through the conclusion that takes effect, such as the `interrupt` stays in the ecological family.
+Duties are owed rather than taking effect, and barriers read no authorised role, so neither is listed: 699 rules conclude a duty (`obliged`) and 546 conclude a barrier (`prevents`). Where a duty accompanies a restriction, the restriction is measured through the conclusion that takes effect, such as the `interrupt` stays in the ecological family.

@@ -134,6 +134,45 @@ reinstate the retired tooling or workflow.
 Grouped by kind. Dates in each heading are the ratification dates; a ruling
 that was later implemented or narrowed carries that supersession inline.
 
+### Item 68 — who owes an election that cannot be held, 2026-09-24
+
+Item 45's election case found the state-form decision promising the electoral
+body "a legal duty and authority to call a fresh election" with only the
+authority formal, and no rule for a People's Assembly whose term ends before its
+successor can be elected; the ledger reserved any default outside the caretaker
+limits for a new ruling. The state-form decision's new section 14 takes it under
+the delegated approval, comparing no sitting chamber (refused: the corridor
+keeps the Assembly able to sit), full continuation (a mandate extension), a
+standing committee, a caretaker sitting and a court-set date, and naming who
+bears the delay and what would reopen the choice.
+
+Article 2b, hand-written after the franchise, holds five rules. A term-end
+certification by a source and an independent reviewer, neither of them the
+chamber, obliges the electoral body (`FSBOD_06`) to hold the election at the
+first lawful opportunity, permits the outgoing chamber to sit and obliges it to
+act only under existing law, the floor, oversight and the election's needs,
+without amendment or irreversible measure; the permission and limit end when the
+reviewer records that the successor has first met. A finding that the election
+cannot yet be held, from a source and reviewer outside the chamber and the
+Executive Council, obliges the Constitutional Court to review it promptly and
+lifts no duty. A certified failure by the electoral body to hold an election
+that could be held obliges the Court to order it. Nothing reads the duties or
+the permission, which the procedural-load table classes as institutional.
+
+The election stress case now runs the whole sequence, including a self-certified
+term end and an executive impossibility finding that oblige nobody, and Chapter
+20's pins carry the core of it. Chapter 20's new section "When the election
+cannot be held" states the rules; the red-team index and the decision record
+them; the exact prose is `session-drafted, author-approved under delegated
+approval (2026-09-13)`. Rules move from 7,550 to 7,555. The stress cases and
+Chapter 20 pass 106 pins across seven cases, the remaining five defect pins
+still reproducing (focused, partial). The reader-coverage ledger gains the new
+passage (243). All 137 authoring development tests pass, with five declared
+ignored, once the reader-coverage failure that caught the unclassified section
+was answered, and the prose check passes. `RIGHTS_VERIFY_JOBS=4 ./verify.sh`
+passes 89,882 pins across 16,326 cases with complete contradiction checks and no
+findings in 1,139.88s.
+
 ### Item 67 — appointment control made challengeable, 2026-09-24
 
 Item 45's captured-appointments case showed a certified selection standing after
@@ -1660,6 +1699,12 @@ anchor record from one of a result's own attesters, or an independently reviewed
 appointment-control finding naming the controller, withholds a certified
 selection; a fallback appointment for a seat a lawful selection fills is owed
 its end. The integrity contract card records the design.
+
+**An election that cannot be held, 2026-09-24 (item 68).** Article 2b makes the
+electoral body's duty formal, lets an outgoing chamber sit only under caretaker
+limits until its successor meets, and sends impossibility findings and failures
+to hold an election to the Constitutional Court; decision section 14 records the
+compared alternatives.
 
 #### Substantive equality and anti-subordination — 2026-08-07
 

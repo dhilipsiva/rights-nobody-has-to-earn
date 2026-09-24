@@ -46,7 +46,7 @@ carried in single figures, which is where the rebalance has most to do.
 
 | Posture | Passages |
 | --- | ---: |
-| chooses | 13 |
+| chooses | 14 |
 | creates | 3 |
 | cares | 6 |
 | works | 11 |
@@ -67,7 +67,7 @@ what matters is the book's shape, not the chapter's.
 | --- | ---: |
 | constructive | 94 |
 | private-civic | 28 |
-| democratic | 35 |
+| democratic | 36 |
 | coercive | 46 |
 | records | 32 |
 | argument | 7 |
@@ -83,7 +83,7 @@ checked here.
 | Borders, migration, asylum and expulsion | 2 | 3 | 5 |
 | Collective and plurality rights | 1 | 1 | 2 |
 | Defence and armed force | 1 | 1 | 1 |
-| Democracy and amendment | 8 | 6 | 7 |
+| Democracy and amendment | 8 | 7 | 7 |
 | Ecology, future generations and commons | 5 | 4 | 6 |
 | Economy, property, work and commons | 17 | 15 | 19 |
 | Emergency and resilience | 3 | 2 | 3 |
@@ -260,6 +260,7 @@ checked here.
 | 20-00 | 20-a-crisis-does-not-suspend-the-republic.md | (preamble) | Emergency and resilience | PUBLIC-SAFETY | ordinary | the clause this design does not have | is acted upon | works | no | coercive | `book-1/20-a-crisis-does-not-suspend-the-republic.pins.nibli` |
 | 20-01 | 20-a-crisis-does-not-suspend-the-republic.md | What a declaration may actually do | Emergency and resilience | PUBLIC-SAFETY | protective | a complete declaration and the separate property requisition depending on it | governs | works | yes | coercive | `tests/pins/public-safety/review/declaration-conflict-withdraws-requisition/expect.pins.nibli` |
 | 20-02 | 20-a-crisis-does-not-suspend-the-republic.md | When a declaration breaches the constitution | Emergency and resilience | PUBLIC-SAFETY | continuity | a defective declaration loses authority while requisition duties remain | is acted upon | continuity-remedy | yes | coercive | `tests/pins/public-safety/review/declaration-conflict-withdraws-requisition/expect.pins.nibli` |
+| 20-08 | 20-a-crisis-does-not-suspend-the-republic.md | When the election cannot be held | Democracy and amendment | ARTICLES | continuity | a certified term end obliges the election, lets the outgoing chamber sit under caretaker limits until its successor meets, and sends impossibility and nonresponse to the Constitutional Court | chooses | continuity-remedy | no | democratic | `tests/pins/stress/election-cannot-be-held/expect.pins.nibli` |
 | 20-03 | 20-a-crisis-does-not-suspend-the-republic.md | Power does not grow at the border | Defence and armed force | PUBLIC-SAFETY | protective | civilian defence structure and the separate force-abroad authorisation | governs | works | no | coercive | `tests/pins/public-safety/review/defence-structure-conflict-withdraws-force-abroad/expect.pins.nibli` |
 | 20-04 | 20-a-crisis-does-not-suspend-the-republic.md | When coercive power passes to a private force | Defence and armed force | PUBLIC-SAFETY | continuity | a defective defence structure loses authority while its limits and audit remain | is acted upon | continuity-remedy | yes | coercive | `tests/pins/public-safety/review/defence-structure-conflict-withdraws-force-abroad/expect.pins.nibli` |
 | 20-07 | 20-a-crisis-does-not-suspend-the-republic.md | Treaties, trade and a region's exit | Locality, mobility and external relations | PUBLIC-SAFETY | protective | separate treaty powers, cross-border harm limits and protected lawful exit | governs | works | yes | coercive | `book-1/20-a-crisis-does-not-suspend-the-republic.pins.nibli` |

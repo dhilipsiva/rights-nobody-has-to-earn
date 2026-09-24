@@ -2383,6 +2383,21 @@
       ]
     },
     {
+      "id": "20-08",
+      "chapter": "book-1/20-a-crisis-does-not-suspend-the-republic.md",
+      "section": "When the election cannot be held",
+      "domain": "Democracy and amendment",
+      "family": "ARTICLES",
+      "function": "continuity",
+      "setting": "a certified term end obliges the election, lets the outgoing chamber sit under caretaker limits until its successor meets, and sends impossibility and nonresponse to the Constitutional Court",
+      "trajectory": "continuity-remedy",
+      "basis": "tests/pins/stress/election-cannot-be-held/expect.pins.nibli",
+      "pattern": "democratic",
+      "postures": [
+        "chooses"
+      ]
+    },
+    {
       "id": "20-03",
       "chapter": "book-1/20-a-crisis-does-not-suspend-the-republic.md",
       "section": "Power does not grow at the border",

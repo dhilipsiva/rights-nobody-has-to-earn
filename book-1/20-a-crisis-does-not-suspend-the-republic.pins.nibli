@@ -41,7 +41,7 @@
 # WHAT FALSE MEANS HERE: a FALSE is pinned only where the KB could have said
 # TRUE, and the comment says what would flip it.
 
-:expect-pins 13
+:expect-pins 17
 
 # ── "Start with a declaration that completed" ──────────────────────────────
 # A named hazard, a named affected population, published reasons and evidence,
@@ -75,9 +75,32 @@
 ? lose(Points, PSMandateConflictrequisitionSubject).
 # => FALSE
 
+# ── When the election cannot be held ───────────────────────────────────────
+# An independent term-end certification obliges the electoral body to hold the
+# election and lets the outgoing chamber sit only under caretaker limits, until
+# the reviewer records that the successor has met. The full sequence, with the
+# impossibility review and the nonresponse order, is the stress case
+# tests/pins/stress/election-cannot-be-held.
+authorized(ChapterTermEndClerk, TermEndSourceAuthority, ChapterTermEnd).
+authorized(ChapterTermEndAuditor, IndependentTermEndReviewAuthority, ChapterTermEnd).
+observe(ChapterTermEndClerk, ChapterTermEnd, FSBOD_02, ExpiredTermChamberScope).
+observe(ChapterTermEndAuditor, ChapterTermEnd, FSBOD_02, ExpiredTermChamberScope).
+? obliged(FSBOD_06, HoldTheElectionAtTheFirstLawfulOpportunity, ChapterTermEnd).
+# => TRUE
+
+? permits(FSBOD_02, SitUnderCaretakerLimitsUntilTheSuccessorFirstMeets, ChapterTermEnd).
+# => TRUE
+
+? obliged(FSBOD_02, ActOnlyUnderExistingLawTheFloorOversightAndTheElectionWithoutAmendmentOrIrreversibleMeasure, ChapterTermEnd).
+# => TRUE
+
+observe(ChapterTermEndAuditor, ChapterTermEnd, SuccessorChamberFirstMet, TermEndDispositionScope).
+? permits(FSBOD_02, SitUnderCaretakerLimitsUntilTheSuccessorFirstMeets, ChapterTermEnd).
+# => FALSE
+
 # ── The child with nobody ──────────────────────────────────────────────────
-# The supplied declaration and requisition preserve Nell's standing, security
-# debt and movement. No conclusion here claims every possible measure leaves
+# The supplied declaration and requisition preserve Nell's standing, the debts
+# for bodily safety and material security, and movement. No conclusion here claims every possible measure leaves
 # every child unaffected.
 ? person(Nell).
 # => TRUE

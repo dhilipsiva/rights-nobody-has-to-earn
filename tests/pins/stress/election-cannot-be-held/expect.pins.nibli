@@ -5,8 +5,8 @@
 #
 # A hazard is declared, property is requisitioned, and the government cannot
 # be formed in time. This file shows the limits the design keeps on each power
-# during the crisis, and marks where it has no answer.
-:expect-pins 12
+# during the crisis, and who owes the election while it cannot be held.
+:expect-pins 22
 
 # ── The declaration and the measure it carries ───────────────────────────────
 ? complete(PSMandateConflictdeclarationRecord, PSNonDerogatingEmergencyDeclaration, PSMandateConflictdeclarationSubject).
@@ -243,11 +243,69 @@ observe(PSMandateDefectrevieweddefectSource, PSMandateDefectrevieweddefectRecord
 ? authority(FSBOD_06, FSPOW_042, SFMainP122Record).
 # => TRUE
 
+# ── The Assembly's term ends before its successor can be elected ─────────────
+# A source and an independent reviewer, neither of them the chamber, certify
+# that the People's Assembly's term has ended. The electoral body now owes the
+# election at the first lawful opportunity, and the outgoing chamber may sit,
+# but only under caretaker limits.
+authorized(TermEndClerk, TermEndSourceAuthority, AssemblyTermEnd).
+authorized(TermEndAuditor, IndependentTermEndReviewAuthority, AssemblyTermEnd).
+observe(TermEndClerk, AssemblyTermEnd, FSBOD_02, ExpiredTermChamberScope).
+observe(TermEndAuditor, AssemblyTermEnd, FSBOD_02, ExpiredTermChamberScope).
+? obliged(FSBOD_06, HoldTheElectionAtTheFirstLawfulOpportunity, AssemblyTermEnd).
+# => TRUE
+? permits(FSBOD_02, SitUnderCaretakerLimitsUntilTheSuccessorFirstMeets, AssemblyTermEnd).
+# => TRUE
+? obliged(FSBOD_02, ActOnlyUnderExistingLawTheFloorOversightAndTheElectionWithoutAmendmentOrIrreversibleMeasure, AssemblyTermEnd).
+# => TRUE
+
+# The chamber cannot certify the end of its own term.
+authorized(FSBOD_02, TermEndSourceAuthority, SelfCertifiedTermEnd).
+authorized(TermEndAuditor, IndependentTermEndReviewAuthority, SelfCertifiedTermEnd).
+observe(FSBOD_02, SelfCertifiedTermEnd, FSBOD_02, ExpiredTermChamberScope).
+observe(TermEndAuditor, SelfCertifiedTermEnd, FSBOD_02, ExpiredTermChamberScope).
+? permits(FSBOD_02, SitUnderCaretakerLimitsUntilTheSuccessorFirstMeets, SelfCertifiedTermEnd).
+# => FALSE
+
+# ── The election cannot yet be held ──────────────────────────────────────────
+# A finding of impossibility by the Executive Council is not independent and
+# obliges nobody. One by an independent source and reviewer obliges the
+# Constitutional Court to review it promptly, and the election duty stays.
+authorized(FSBOD_04, ElectionImpossibilitySourceAuthority, ExecutiveImpossibility).
+authorized(ImpossibilityReviewer, IndependentElectionImpossibilityReviewAuthority, ExecutiveImpossibility).
+observe(FSBOD_04, ExecutiveImpossibility, FSBOD_02, ImpossibleElectionChamberScope).
+observe(ImpossibilityReviewer, ExecutiveImpossibility, FSBOD_02, ImpossibleElectionChamberScope).
+? obliged(FSBOD_18, ReviewTheElectionImpossibilityFindingPromptly, ExecutiveImpossibility).
+# => FALSE
+authorized(HazardAssessor, ElectionImpossibilitySourceAuthority, HazardImpossibility).
+authorized(ImpossibilityReviewer, IndependentElectionImpossibilityReviewAuthority, HazardImpossibility).
+observe(HazardAssessor, HazardImpossibility, FSBOD_02, ImpossibleElectionChamberScope).
+observe(ImpossibilityReviewer, HazardImpossibility, FSBOD_02, ImpossibleElectionChamberScope).
+? obliged(FSBOD_18, ReviewTheElectionImpossibilityFindingPromptly, HazardImpossibility).
+# => TRUE
+? obliged(FSBOD_06, HoldTheElectionAtTheFirstLawfulOpportunity, AssemblyTermEnd).
+# => TRUE
+
+# ── The election could be held and is not ────────────────────────────────────
+authorized(ElectionMonitor, ElectionNonresponseSourceAuthority, ElectionNotHeld).
+authorized(ElectionAuditor, IndependentElectionNonresponseReviewAuthority, ElectionNotHeld).
+observe(ElectionMonitor, ElectionNotHeld, FSBOD_06, ElectionNonresponseBodyScope).
+observe(ElectionAuditor, ElectionNotHeld, FSBOD_06, ElectionNonresponseBodyScope).
+? obliged(FSBOD_18, OrderTheElectionAndSecureItsConditions, ElectionNotHeld).
+# => TRUE
+
+# ── The successor meets ──────────────────────────────────────────────────────
+# The outgoing chamber's sitting ends when the reviewer records that its
+# successor has first met. The delay gave it nothing to keep.
+observe(TermEndAuditor, AssemblyTermEnd, SuccessorChamberFirstMet, TermEndDispositionScope).
+? permits(FSBOD_02, SitUnderCaretakerLimitsUntilTheSuccessorFirstMeets, AssemblyTermEnd).
+# => FALSE
+? obliged(FSBOD_02, ActOnlyUnderExistingLawTheFloorOversightAndTheElectionWithoutAmendmentOrIrreversibleMeasure, AssemblyTermEnd).
+# => FALSE
+
 # ── Where it stops ───────────────────────────────────────────────────────────
-# Calling an election is a power, not a duty: no rule obliges anyone to hold
-# the election as soon as it can be held. Nor does any rule say what governs
-# when the People's Assembly's own term ends and its successor cannot be
-# elected. The caretaker's limits govern a failed executive, not a lapsed
-# legislature (item 68). Nothing here advances a clock or holds an election.
+# Nothing here holds an election, sets a date or advances a clock. A duty to
+# hold the election is not an election, and an order to secure it is not a
+# vote cast.
 ? authority(FSBOD_06, FSPOW_042, SFMainP120Record).
 # => FALSE
