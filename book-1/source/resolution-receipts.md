@@ -15,7 +15,7 @@ gives disclosure no credit for closure.
 
 ### writable-credential — resolved-for-claim
 
-*Told in* `23-who-holds-the-pen.md`, "The gap that used to be here".
+*Told in* `23-who-holds-the-pen.md`, "A credential must derive".
 
 **What failed.** An examiner's pen could be written down directly, so the credential a voiding needs was a fact somebody typed rather than a conclusion anything derived.
 
@@ -29,7 +29,7 @@ gives disclosure no credit for closure.
 
 ### writable-franchise-word — resolved-for-claim
 
-*Told in* `18-the-vote-conviction-does-not-take.md`, "The part that is weaker than it looks".
+*Told in* `18-the-vote-conviction-does-not-take.md`, "What protects the entitlement".
 
 **What failed.** The franchise conclusion sat on neither guarded list — not the words the world may write, not the words only rules may conclude — so a forged conclusion was refused only because nobody had added that exact word to the writable list. Tested by adding it, a hand could write the conclusion directly and skip the rule that grants it.
 
@@ -43,7 +43,7 @@ gives disclosure no credit for closure.
 
 ### student-clawback — resolved-for-claim
 
-*Told in* `26-clawback.md`, "Cira, and the loss that does not reach her".
+*Told in* `26-clawback.md`, "Cira's separate claim".
 
 **What failed.** A student's recognition was docked for a teacher's adjudicated fraud — negative scoring of somebody who did nothing.
 
@@ -57,21 +57,21 @@ gives disclosure no credit for closure.
 
 ### placement-marker — resolved-for-claim
 
-*Told in* `28-where-people-are-put.md`, "The alarm that did not work".
+*Told in* `28-where-people-are-put.md`, "What the placement alarm sees".
 
 **What failed.** The marker meant to report bad placements fired on correctly placed people and on nobody who was misplaced — wrong every time it spoke.
 
-**What changed.** The marker was repaired, and the audit now constructs every placement combination from writable premises rather than asserting the ones it expects.
+**What changed.** Every reported category and exact case/place is checked against qualified placement; competing reviewed candidates withhold custody. A positive named supported residence is available only under its own evidence, not by default from a missing home.
 
-**How the former attack is rerun.** `tests/pins/placement/opposite-destination/observations.pins.nibli`
+**How the former attack is rerun.** `book-1/28-where-people-are-put.pins.nibli`
 
 **What still does not follow.** That anyone reads the marker, acts on it, or moves anybody. It is an alarm, not a remedy.
 
-**What remains external or open.** The placement-input authority, provenance and challenge gaps stay with the justice interface.
+**What remains external or open.** Matching attestations do not authenticate the real actors, make a place available or prove a performed remedy.
 
 ### family-ordinary-half — resolved-for-claim
 
-*Told in* `14-holding-a-role-in-somebodys-life.md`, "Children, the difference between not yet and taken — and a third thing".
+*Told in* `14-holding-a-role-in-somebodys-life.md`, "Adulthood and missing evidence".
 
 **What failed.** The family, dependency, reproduction and care baseline landed its person-held barriers and no ordinary-operation interface, so the domain appears only under strain.
 
@@ -85,7 +85,7 @@ gives disclosure no credit for closure.
 
 ### shield-without-a-target — resolved-for-claim
 
-*Told in* `24-the-shield.md`, "Don".
+*Told in* `24-the-shield.md`, "Don: a private target".
 
 **What failed.** The shield asked what you exposed and not whom: any defendant could name their own accuser or victim and become unjailable.
 
@@ -99,17 +99,17 @@ gives disclosure no credit for closure.
 
 ### borrowed-void-word — resolved-for-claim
 
-*Told in* `22-changing-the-rules.md`, "The word the machinery borrows, and the person it nearly cost".
+*Told in* `22-changing-the-rules.md`, "People and proposal names".
 
 **What failed.** The voiding rule read anything recorded as touching a protected item, so one entry written by anyone about anyone could void a person.
 
-**What changed.** The rule was narrowed to the amendment machinery it was written for, and the reuse of one word across two machineries is disclosed rather than tidied away.
+**What changed.** Both targetless Article 9 label rules are removed. Docketing a person's name, naming a protected target and recording an approval have no personal consequence. Exact candidate enactment remains separately qualified.
 
 **How the former attack is rerun.** `book-1/22-changing-the-rules.pins.nibli`
 
-**What still does not follow.** That reusing a word is safe in general. It was frugal, it nearly cost somebody their credibility, and the saving is still taken.
+**What still does not follow.** That a person cannot receive a separately adjudicated personal finding or that any proposed amendment has actually been enacted.
 
-**What remains external or open.** Nothing external. The cost of every future reuse is the argument this section exists to make.
+**What remains external or open.** No unresolved name-collision mechanism remains in the tested proposal/person path.
 
 ### appeal-read-as-relief — resolved-for-claim
 
@@ -117,21 +117,21 @@ gives disclosure no credit for closure.
 
 **What failed.** The book read one predicate in the sense it wanted rather than the sense it carries. Appellate relief already granted was described as the right to appeal, and the stratifier's refusal of a rule granting it to every confined person was printed as proof that a universal right of appeal could not be expressed at all.
 
-**What changed.** The stages are separated where the interface lives — access, the request, the duty to hear with its interim protection and its alternate, and relief — and the replacement encoding is executed rather than asserted: a universal duty on the appeal body loads, and with it in force the confined person is still confined and nobody is free.
+**What changed.** Access, filing, hearing duty, interim suspension and final relief are distinct. Positive independent intake access gates custody; a retained subject filing or independent receipt suspends its case pending qualified disposition. Final relief is case- and purpose-bound.
 
 **How the former attack is rerun.** `book-1/21-a-way-to-be-heard.pins.nibli`
 
-**What still does not follow.** That anybody was heard. Every stage but relief concludes a duty, and no rule reads a duty, so a request that lands one proves no review happened and no interim protection reached anyone.
+**What still does not follow.** That the institutions received the material, held a hearing, complied with a disposition or physically released anyone.
 
-**What remains external or open.** The asking itself. The route begins when somebody files, and nothing here obliges anybody to notice a person who has not.
+**What remains external or open.** An outside event concealed from all supplied evidence is not discoverable by calculation. Independent intake, counsel, retained copies, reconciliation and continuing duties address that risk without presuming a performed act.
 
 ### voiding-without-a-ground — resolved-for-claim
 
-*Told in* `25-voiding.md`, "It takes two, from two places".
+*Told in* `25-voiding.md`, "The paired finding".
 
 **What failed.** A credibility finding took two documented examinations from two independently credentialed signers and asked nothing about what they had found, so the record could always show who destroyed a person's word and never on what. Requiring a shared cited ground alone was not enough either: the entry naming a ground is the entry an examiner is paid for, and two examiners who looked on a complaint and found nothing would have voided the person they cleared.
 
-**What changed.** Both signers must cite the same ground and the ground must be one of a closed vocabulary of findings — a recorded lie, a fabricated record, a concealed conflict, evidence withheld — built the way every landed family builds one, with `member` conclusion-only and one rule per admitted value. The pins run the clean pair first: both are paid for the look and the person keeps their word; one finding is still one signer; the second matching finding lands it.
+**What changed.** The completed case binds subject, incident, closed ground, evidence, independent signers, procedure and eligibility at decision. A prospective permission alone imposes no finding. Conflicting case fields and borrowed incidents do not qualify.
 
 **How the former attack is rerun.** `book-1/25-voiding.pins.nibli`
 
@@ -145,13 +145,13 @@ gives disclosure no credit for closure.
 
 **What failed.** A recorded expungement stopped only the mark carried out of an earlier record. The pair of examinations that voided somebody in this record, and an adjudicated lie, both derived the finding again in the same breath, so the appeals body could declare a voiding spent and the record would disagree with it.
 
-**What changed.** Every route that reaches a credibility finding on a person now reads the same recorded expungement, and Article 5's conflict rule deliberately does not, because that void tracks a judgment still on the record and still conflicted. The split is asserted by membership in the development tests rather than left to whoever next edits an article.
+**What changed.** Qualified independent restoration identifies the finding and subject, incident, ground, evidence, procedure and decision history. It ends the same personal consequence across record names, including an adjudicated family conflict, while distinct incidents and grounds remain separate.
 
 **How the former attack is rerun.** `book-1/25-voiding.pins.nibli`
 
-**What still does not follow.** That anybody writes the pair. Nothing obliges a body to forgive, the two entries authenticate neither writer nor purpose, and a generic judgment can sit ready before a mark exists.
+**What still does not follow.** That an external court acted or that public credentials are restored. Personal restoration does not remove a separate carried appointment restriction.
 
-**What remains external or open.** The pen, which follows the recall precedent and needs re-seating rather than automatic return.
+**What remains external or open.** Authenticity and performed review remain outside the calculation; independent case-specific authority and challenge are legal requirements.
 
 ### shield-as-general-immunity — resolved-for-claim
 
@@ -173,19 +173,19 @@ gives disclosure no credit for closure.
 
 **What failed.** The book's central comparison read a derived legal consequence as an arrival. Shelter for a confined person is concluded from the confinement — no receipt names them, no witness attests anything, and the rule asks for neither — and the prose called it the floor actually arriving, and called the prisoner the one person who has the thing. That is a liveness claim resting on a formal obligation, which is the one posture the assurance portfolio says may never be derived.
 
-**What changed.** The pair is run with equivalent evidence on both sides: give the child a receipt and a witness authorised for that child who is not the provider, and shelter and food derive identically, with no finding, status or consequence attaching to the child. The prose states the real asymmetry, which is sharper — the design concludes the floor for the person it holds and demands three facts from the person it has never touched.
+**What changed.** Custody, placement and physical holding no longer produce shelter or speech actuality. Duties remain, and independently witnessed recipient evidence supplies the shelter conclusion through the ordinary delivery route. The child and confined person both lack initial receipts.
 
 **How the former attack is rerun.** `book-1/27-a-prisoner-is-a-person.pins.nibli`
 
-**What still does not follow.** That anybody was sheltered or fed, on either side. A receipt with a witness establishes what the record says reached a person; it authenticates neither, and the custody conclusion establishes only that the design owes a roof to somebody it is holding.
+**What still does not follow.** That anybody was sheltered, fed or heard in the world. Independent recipient-side evidence is supplied to the computation and must be authenticated outside it.
 
-**What remains external or open.** The shipped record contains no receipt for anyone, so outside custody the routes stand open and unused.
+**What remains external or open.** The canonical cast has no recipient receipts. Fictional positive controls demonstrate the route without claiming delivered services.
 
 ## operationally-unresolved
 
 ### unread-duty — operationally-unresolved
 
-*Told in* `30-when-the-system-notices-it-broke.md`, "And then a duty, which no longer has to be the end".
+*Told in* `30-when-the-system-notices-it-broke.md`, "From a marker to a duty".
 
 **What failed.** A recorded breach concluded a two-place duty that nothing read, so the audit ended in a determination and stopped.
 
@@ -199,7 +199,7 @@ gives disclosure no credit for closure.
 
 ### nobody-obliged-to-begin — operationally-unresolved
 
-*Told in* `07-who-owes-and-what-follows.md`, "The one duty that does not wait to be asked".
+*Told in* `07-who-owes-and-what-follows.md`, "The duty to begin without a request".
 
 **What failed.** Every route into this design began with a record somebody wrote — a request, a challenge, a receipt, a reviewed finding — and each was unconditional in the ways that usually stop people while still waiting for an act. For a person nobody had come for, the whole apparatus sat downstream of an act nobody was obliged to perform.
 
@@ -219,7 +219,7 @@ gives disclosure no credit for closure.
 
 **What failed.** Independence was manufactured from missing parent, marriage and sibling entries, so a missing record looked exactly like no relationship.
 
-**What changed.** Both signers now need affirmative, case-bound independent-reviewer findings that are challengeable and cannot be borrowed across cases.
+**What changed.** Completed findings and proposed signatures are separated. Both bind the case, incident, ground, evidence, independent actors and procedure; new signatures additionally require current qualification and conflict checks.
 
 **How the former attack is rerun.** `book-1/source/counterfactual/no-missing-kinship-independence.pins.nibli`
 
@@ -229,7 +229,7 @@ gives disclosure no credit for closure.
 
 ### roster-standing — externally-bounded
 
-*Told in* `02-who-counts.md`, "The standing roots do not replace this line".
+*Told in* `02-who-counts.md`, "Standing without a roster".
 
 **What failed.** Personhood waited on somebody maintaining a roster, so a person never entered was indistinguishable from a person who does not exist.
 
@@ -241,49 +241,47 @@ gives disclosure no credit for closure.
 
 **What remains external or open.** The first-record boundary is external and is disclosed rather than closed.
 
-## irreducible-limitation
-
-### attester-collusion — irreducible-limitation
-
-*Told in* `25-voiding.md`, "It takes two, from two places".
-
-**What failed.** Nothing authenticates a witness or checks that attested evidence is true.
-
-**What changed.** Nothing, and nothing can here. The design raises the price instead — distinct named writers from different bodies, a reader, an alternate, published reasons, all attributable.
-
-**How the former attack is rerun.** `tests/pins/red-team/collusion-three-attesters-who-agree/expect.pins.nibli`
-
-**What still does not follow.** That agreement means truth. A record founded on matching lies completes exactly as one founded on matching truths.
-
-**What remains external or open.** Detection is external and belongs to operational assurance, which is unbuilt.
-
-### one-sided-closure — irreducible-limitation
-
-*Told in* `03-what-counts-as-evidence.md`, "The way this gets taken apart".
-
-**What failed.** The closed record is extensional and one-sided: a word never used can be declared and used in the same breath, and a direct vocabulary widening bypasses the amendment machinery entirely.
-
-**What changed.** Nothing, deliberately. A list that could never grow would be a design that could never learn, so the closure makes widening source-visible rather than impossible.
-
-**How the former attack is rerun.** `tests/pins/amendments/AS-09/expect.pins.nibli`
-
-**What still does not follow.** That widening is approved, authenticated or entrenched. Article 9 marks a label, not a change; nothing reads the law label at all.
-
-**What remains external or open.** Whoever reviews the source is the control. A future entrenchment design would have to bind an exact change, an independent effect review and an effective version.
-
-## open-defect
-
-### floor-delivery-markers — open-defect
+### floor-delivery-markers — externally-bounded
 
 *Told in* `05-whether-it-arrived.md`, "Owed is not the same as delivered".
 
 **What failed.** Nothing watches the floor debt against arrival: the design audits what it does and not what it owes.
 
-**What changed.** Nothing. A marker was measured and refused while the record holds no arrival facts, because one that fires on everybody discriminates nobody.
+**What changed.** A missing receipt is not classified as a delivery breach. Separate recipient evidence, unconditional assistance and representation, accessible challenge and reviewed remedy preserve the distinction. The explicit absence-marker counterfactual retains the false-positive exhibit.
 
 **How the former attack is rerun.** `book-1/source/counterfactual/undelivered-marker.pins.nibli`
 
-**What still does not follow.** Any claim that the floor arrives. The supplied record derives floor actualities only through confinement.
+**What still does not follow.** Whether an unobserved delivery occurred. Identical supplied records can describe a world with an unrecorded arrival and one without arrival, so no function of those records alone can decide which world occurred.
 
-**What remains external or open.** The refusal expires with its premise: Book 2's delivery layer generating arrival facts is what reopens it.
+**What remains external or open.** Positive evidence must establish a breach or arrival. The State's itemised floor debts and Advocate's unconditional initiation duty remain; uncertainty does not suspend help. See the delivery decision's 2026-09-20 bounded observation disposition.
+
+## irreducible-limitation
+
+### attester-collusion — irreducible-limitation
+
+*Told in* `25-voiding.md`, "What it costs".
+
+**What failed.** Nothing authenticates a witness or checks that attested evidence is true.
+
+**What changed.** Independent case-specific actors, disclosed grounds, historical eligibility, current signature checks, challenge and restoration constrain authority. A deterministic computation still cannot distinguish honest and dishonest matching inputs when the supplied records are identical.
+
+**How the former attack is rerun.** `tests/pins/red-team/collusion-three-attesters-who-agree/expect.pins.nibli`
+
+**What still does not follow.** That agreement means truth. A record founded on matching lies completes exactly as one founded on matching truths.
+
+**What remains external or open.** This is a supplied-record indistinguishability limit, not a proof that institutional capture cannot be prevented or detected. Independent review, preserved evidence and outside investigation remain required.
+
+### one-sided-closure — irreducible-limitation
+
+*Told in* `03-what-counts-as-evidence.md`, "Changing the vocabulary".
+
+**What failed.** The closed record is extensional and one-sided: a word never used can be declared and used in the same breath, and a direct vocabulary widening bypasses the amendment machinery entirely.
+
+**What changed.** Direct source edits are distinguished from legal enactment. The amendment contract binds exact candidate changes, independent effect review, certification, publication and effective selection. A source editor can still alter the file outside that legal route.
+
+**How the former attack is rerun.** `tests/pins/amendments/AS-09/expect.pins.nibli`
+
+**What still does not follow.** That the deployed source is authenticated or physically protected. Rules within a writable file cannot prevent an outside editor changing the file that contains those rules.
+
+**What remains external or open.** Trusted deployment and authentication must establish the text actually in use. This input boundary does not excuse missing legal enactment safeguards.
 
