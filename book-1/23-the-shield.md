@@ -211,6 +211,9 @@ The shield separates protection from approval of the claimant's conduct. The
 next chapter turns to the adverse findings themselves: what a credibility
 finding requires, what it reaches and what must remain untouched.
 
+*Run it:* the companion runs this chapter's cases on your own device, at
+[dhilipsiva.dev/rights-nobody-has-to-earn/cases](https://dhilipsiva.dev/rights-nobody-has-to-earn/cases/#chapter-23).
+
 ## Argument: Protection that follows the charge
 
 *The companion states these rules as [Article 24](https://dhilipsiva.dev/rights-nobody-has-to-earn/constitution/#article-24).*

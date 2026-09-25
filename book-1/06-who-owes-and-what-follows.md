@@ -300,6 +300,9 @@ These public responsibilities serve a life beyond claiming and receiving.
 The next part begins with what people may do without first asking an office
 for permission.
 
+*Run it:* the companion runs this chapter's cases on your own device, at
+[dhilipsiva.dev/rights-nobody-has-to-earn/cases](https://dhilipsiva.dev/rights-nobody-has-to-earn/cases/#chapter-6).
+
 ## Argument: Named bearers, and a court that secures the minimum
 
 *The companion states these rules as [Article 6](https://dhilipsiva.dev/rights-nobody-has-to-earn/constitution/#article-6).*

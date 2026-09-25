@@ -82,7 +82,7 @@ def main():
         qs = [q['text'] for q in queries[ident]]
         if person:
             for item, predicate in [('Eats','eats'),('Dwell','dwell'),('Healthy','healthy'),('Learn','learn'),
-                                    ('Secure','secure'),('Expresses','expresses'),('Believe','believe'),('Meets','meets')]:
+                                    ('Secure','secure'),('Suffice','suffice'),('Expresses','expresses'),('Believe','believe'),('Meets','meets')]:
                 qs += [f'owe(State, {item}, {person}).', f'{predicate}({person}).']
         cases.append({'id': ident, 'record': list(dict.fromkeys(record)),
                       'queries': list(dict.fromkeys(qs)), 'counterfactual': cf,

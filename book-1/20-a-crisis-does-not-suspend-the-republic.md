@@ -172,6 +172,9 @@ The next chapter, *A Way to Be Heard*, follows the judicial route these cases
 require: how a person can demand an answer and what must follow when that
 route itself fails.
 
+*Run it:* the companion runs this chapter's cases on your own device, at
+[dhilipsiva.dev/rights-nobody-has-to-earn/cases](https://dhilipsiva.dev/rights-nobody-has-to-earn/cases/#chapter-20).
+
 ## Argument: Four powers and every right in force
 
 *The companion states these rules as Articles [16](https://dhilipsiva.dev/rights-nobody-has-to-earn/constitution/#article-16), [20](https://dhilipsiva.dev/rights-nobody-has-to-earn/constitution/#article-20) and [21](https://dhilipsiva.dev/rights-nobody-has-to-earn/constitution/#article-21).*

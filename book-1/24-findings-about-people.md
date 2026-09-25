@@ -236,6 +236,9 @@ a restoration, belong to the second book.
 The next chapters examine the separate power to restrict movement and the rights
 a confined person retains.
 
+*Run it:* the companion runs this chapter's cases on your own device, at
+[dhilipsiva.dev/rights-nobody-has-to-earn/cases](https://dhilipsiva.dev/rights-nobody-has-to-earn/cases/#chapter-24).
+
 ## Argument: A restriction the size of the act
 
 *The companion states these rules as [Article 25](https://dhilipsiva.dev/rights-nobody-has-to-earn/constitution/#article-25).*

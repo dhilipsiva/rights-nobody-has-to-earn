@@ -140,6 +140,9 @@ An offer, accessible and adequate provision, a finding reaching the office
 that must act, and completed restoration each need evidence of their own,
 beyond the debt. Whether any of them happens is a question for the second book.
 
+*Run it:* the companion runs this chapter's cases on your own device, at
+[dhilipsiva.dev/rights-nobody-has-to-earn/cases](https://dhilipsiva.dev/rights-nobody-has-to-earn/cases/#chapter-3).
+
 ## Argument: Owed to everyone, by someone
 
 *The companion states these rules as [Article 3](https://dhilipsiva.dev/rights-nobody-has-to-earn/constitution/#article-3).*

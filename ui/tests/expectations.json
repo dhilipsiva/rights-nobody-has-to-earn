@@ -1090,5 +1090,195 @@
       "query": "eats(Marisol).",
       "status": "TRUE"
     }
+  ],
+  "week:0": [
+    {
+      "query": "person(Selin).",
+      "status": "TRUE"
+    },
+    {
+      "query": "travel(Selin).",
+      "status": "TRUE"
+    },
+    {
+      "query": "decide(Selin, Ballot).",
+      "status": "FALSE"
+    }
+  ],
+  "week:1": [
+    {
+      "query": "decide(Selin, Ballot).",
+      "status": "TRUE"
+    },
+    {
+      "query": "prevents(Selin, WorkChoiceRefusalExitDenial).",
+      "status": "TRUE"
+    },
+    {
+      "query": "prevents(Selin, FloorContributionCondition).",
+      "status": "TRUE"
+    }
+  ],
+  "week:2": [
+    {
+      "query": "provide(SelinEmployer, Wage, Selin).",
+      "status": "TRUE"
+    },
+    {
+      "query": "provide(SelinEmployer, Prize, Selin).",
+      "status": "FALSE"
+    },
+    {
+      "query": "prevents(Selin, EvictionForeclosureWithoutContinuity).",
+      "status": "TRUE"
+    }
+  ],
+  "week:3": [
+    {
+      "query": "healthy(Selin).",
+      "status": "TRUE"
+    },
+    {
+      "query": "eats(Selin).",
+      "status": "FALSE"
+    }
+  ],
+  "week:4": [
+    {
+      "query": "obliged(SelinHousingOffice, ReviewJusticeRequest, SelinTenancyRequest).",
+      "status": "TRUE"
+    }
+  ],
+  "week:5": [
+    {
+      "query": "complete(SelinStopRecord, PSIndividualSearchOrder, Selin).",
+      "status": "FALSE"
+    },
+    {
+      "query": "restrain(Selin, SelinStopRecord, SpecifiedPrivacy).",
+      "status": "FALSE"
+    },
+    {
+      "query": "prisoner(Selin).",
+      "status": "FALSE"
+    },
+    {
+      "query": "travel(Selin).",
+      "status": "TRUE"
+    },
+    {
+      "query": "decide(Selin, Ballot).",
+      "status": "TRUE"
+    }
+  ],
+  "adam-free:0": [
+    {
+      "query": "prevents(Adam, PrescribedExpression).",
+      "status": "TRUE"
+    },
+    {
+      "query": "prevents(Adam, CompelledConscience).",
+      "status": "TRUE"
+    },
+    {
+      "query": "prevents(Adam, CoercedAssociation).",
+      "status": "TRUE"
+    },
+    {
+      "query": "prevents(Adam, ArbitraryPrivacyInterference).",
+      "status": "TRUE"
+    }
+  ],
+  "river:0": [
+    {
+      "query": "complete(RiverWaterContinuityRecord, ECDualFloorAndCeilingContinuity, ExistingEssentialWaterService).",
+      "status": "TRUE"
+    },
+    {
+      "query": "prevents(RiverWaterContinuityRecord, ECUnmetFloorRenamedSuccess).",
+      "status": "TRUE"
+    },
+    {
+      "query": "prevents(RiverWaterContinuityRecord, ECCeilingBreachRenamedCompliance).",
+      "status": "TRUE"
+    },
+    {
+      "query": "permits(FSBOD_09, ECOnlyExistingRightsPreservingPhysicalScarcityAllocation, RiverWaterAllocationRecord).",
+      "status": "FALSE"
+    },
+    {
+      "query": "decide(RiverWaterClaimant, Ballot).",
+      "status": "TRUE"
+    }
+  ],
+  "river:1": [
+    {
+      "query": "complete(RiverIndependentConflictRecord, ECIndependentGuardianAnimalConflictDecision, RiverConflictV340).",
+      "status": "TRUE"
+    },
+    {
+      "query": "obliged(FSBOD_17, ECPublishAndApplyIndependentHardBarFirstAxisSeparatedLeastHarmConflictDecision, RiverIndependentConflictRecord).",
+      "status": "TRUE"
+    },
+    {
+      "query": "permits(RiverFishCareController, ECOnlyEnhancedNonFoodNonResearchAnimalUse, RiverFishRescueRecord).",
+      "status": "FALSE"
+    }
+  ],
+  "j-recall:canonical": [
+    {
+      "query": "authority(Tove).",
+      "status": "TRUE"
+    },
+    {
+      "query": "defend(Iris).",
+      "status": "TRUE"
+    },
+    {
+      "query": "prisoner(Iris).",
+      "status": "FALSE"
+    }
+  ],
+  "j-recall:modified": [
+    {
+      "query": "authority(Tove).",
+      "status": "FALSE"
+    },
+    {
+      "query": "defend(Iris).",
+      "status": "FALSE"
+    },
+    {
+      "query": "prisoner(Iris).",
+      "status": "TRUE"
+    }
+  ],
+  "j-label:canonical": [
+    {
+      "query": "entitled(Bela, event { believe() }).",
+      "status": "TRUE"
+    },
+    {
+      "query": "entitled(Bela, event { eats() }).",
+      "status": "TRUE"
+    },
+    {
+      "query": "person(Bela).",
+      "status": "TRUE"
+    }
+  ],
+  "j-label:modified": [
+    {
+      "query": "entitled(Bela, event { believe() }).",
+      "status": "FALSE"
+    },
+    {
+      "query": "entitled(Bela, event { eats() }).",
+      "status": "TRUE"
+    },
+    {
+      "query": "person(Bela).",
+      "status": "TRUE"
+    }
   ]
 }

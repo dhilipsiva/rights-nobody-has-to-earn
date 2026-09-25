@@ -160,6 +160,9 @@ The next part asks how those institutions become answerable. The rights in
 this chapter need public functions capable of acting, and limits that prevent
 the power to act from becoming power to decide whose rights count.
 
+*Run it:* the companion runs this chapter's cases on your own device, at
+[dhilipsiva.dev/rights-nobody-has-to-earn/cases](https://dhilipsiva.dev/rights-nobody-has-to-earn/cases/#chapter-15).
+
 ## Argument: The person before the status
 
 *The companion states these rules as [Article 14](https://dhilipsiva.dev/rights-nobody-has-to-earn/constitution/#article-14).*

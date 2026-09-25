@@ -206,6 +206,9 @@ The floor follows from personhood rather than purchasing power, and public
 duties bind wealth as they bind everyone. The next chapter asks how equal
 access works when the obstacle is something other than price.
 
+*Run it:* the companion runs this chapter's cases on your own device, at
+[dhilipsiva.dev/rights-nobody-has-to-earn/cases](https://dhilipsiva.dev/rights-nobody-has-to-earn/cases/#chapter-10).
+
 ## Argument: Ownership under the floor, borrowing under law
 
 *The companion states these rules as [Article 9](https://dhilipsiva.dev/rights-nobody-has-to-earn/constitution/#article-9).*

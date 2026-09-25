@@ -158,6 +158,9 @@ favourable label. Authority to restrict movement, the place where that
 authority may be used, and the shelter owed on either side of release must
 each be settled on its own terms.
 
+*Run it:* the companion runs this chapter's cases on your own device, at
+[dhilipsiva.dev/rights-nobody-has-to-earn/cases](https://dhilipsiva.dev/rights-nobody-has-to-earn/cases/#chapter-26).
+
 ## Argument: Proved harm opens the harshest place
 
 *The companion states these rules as [Article 27](https://dhilipsiva.dev/rights-nobody-has-to-earn/constitution/#article-27).*

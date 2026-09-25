@@ -14,7 +14,8 @@
 The author ruled on the revision tracker's reserved questions on 2026-09-24;
 `CLAUDE.md` records all nine under *The revision rulings D1–D9*. Two bear on
 this decision. Items 53–60 implemented both, for the chapters, every Part
-and the opening.
+and the opening, and item 63 closed each derived account with a pointer to the
+companion cases that run it.
 
 **D2 — an argument section in every derived chapter.** Each derived chapter
 keeps its pinned, flat account and ends with one labelled, first-person argument
@@ -1302,3 +1303,19 @@ district administration's. Part V's capture joint keeps the Jharkhand
 cancellation evidence and points to the opening for her case. No inner life is
 attributed to anyone named. The exact prose is `session-drafted,
 author-approved under delegated approval (2026-09-13)`.
+
+## Each chapter points to the cases that run it — item 63, 2026-09-25
+
+Ruling D2's chapter shape ends each derived account with a line pointing to
+the companion cases the chapter can run. The line sits last in the derived
+text, before the argument section, and links to that chapter's entry on the
+companion's `cases/` page. The entry lists the forks that walk a person through
+the chapter's rules and the measured joints that compare the constitution with
+one declared change, each opening the game ready to run, and records under the
+chapter what its prose no longer carries: the carry mechanics of versions of
+the record, the floor refusal's mechanism, the people Chapter 9 no longer
+names, the source edits and exact-text checks of amendment, and the findings
+cases Chapter 24 leaves to its tests, each with where it now lives. The line
+is navigation, not a claim, and states nothing the derived sections do not.
+The exact prose is `session-drafted, author-approved under delegated approval
+(2026-09-13)`.

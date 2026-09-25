@@ -194,6 +194,9 @@ book.
 
 The next chapter asks what else may enter this limited record about the person.
 
+*Run it:* the companion runs this chapter's cases on your own device, at
+[dhilipsiva.dev/rights-nobody-has-to-earn/cases](https://dhilipsiva.dev/rights-nobody-has-to-earn/cases/#chapter-1).
+
 ## Argument: Standing before identity
 
 *The companion states these rules as [Article 1](https://dhilipsiva.dev/rights-nobody-has-to-earn/constitution/#article-1).*

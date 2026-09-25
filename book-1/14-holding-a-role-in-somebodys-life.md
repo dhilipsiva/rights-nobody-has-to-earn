@@ -202,6 +202,9 @@ Through every role the boundary is the same: assistance confers no ownership,
 and the absence of a private helper leaves public responsibility in place. The
 next chapter takes that boundary across a border.
 
+*Run it:* the companion runs this chapter's cases on your own device, at
+[dhilipsiva.dev/rights-nobody-has-to-earn/cases](https://dhilipsiva.dev/rights-nobody-has-to-earn/cases/#chapter-14).
+
 ## Argument: Support before substitution
 
 *The companion states these rules as [Article 13](https://dhilipsiva.dev/rights-nobody-has-to-earn/constitution/#article-13).*

@@ -218,30 +218,15 @@ unimplemented until the items named here land.
 
 ## Ordered revision backlog
 
-Work in this order: item 63 carries the rewrite under the ratified rulings;
-item 64 finishes production, 65 closes the revision, and 66 is optional.
-Numbering continues from items 01–33, which `CLAUDE.md` records; items 34–62
+Work in this order: item 64 finishes production, 65 closes the revision, and
+66 is optional.
+Numbering continues from items 01–33, which `CLAUDE.md` records; items 34–63
 and 67–72 are complete and recorded there too. Chapter numbers refer to the
 [current reading sequence](book-1/contents.json), which item 53 made the plan's
 §4.2 table; the plan's own §14 punch list uses the earlier numbers, which
 `tools/maps/2026-09-25-restructure.json` maps to these.
 
 ### Appendices, companion and production
-
-- [ ] **63. Map every chapter to runnable companion cases.**
-
-  **Scope:** `ui/case-map.json`, `ui/game.json` and each chapter's pointer;
-  plan §10.6; ruling D2.
-
-  Close each chapter's derived account with a line pointing to the companion
-  cases it can run, as ruling D2's chapter shape sets, and move there what left
-  the prose (counterfactuals, harness cases, carry mechanics, byte-level
-  amendment checks) with its explanation. The companion executes records live
-  and packages no expected answers; keep it so. The website picks up the change
-  at its next deploy from `main`.
-
-  **Done when:** every pointer opens a case that runs, the companion's tests
-  pass, and nothing that left the prose is lost.
 
 - [ ] **64. Production and accessibility.**
 

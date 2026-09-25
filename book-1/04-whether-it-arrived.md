@@ -126,6 +126,9 @@ provision, facilities, staffing and capacity, belongs to the second book.
 The next chapter asks what follows when the record holds a positive finding
 of genuine shortage.
 
+*Run it:* the companion runs this chapter's cases on your own device, at
+[dhilipsiva.dev/rights-nobody-has-to-earn/cases](https://dhilipsiva.dev/rights-nobody-has-to-earn/cases/#chapter-4).
+
 ## Argument: Evidence from the person served
 
 *The companion states these rules as [Article 4](https://dhilipsiva.dev/rights-nobody-has-to-earn/constitution/#article-4).*

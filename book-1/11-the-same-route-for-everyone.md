@@ -188,6 +188,9 @@ Equality changes the route to a right when identical treatment leaves a barrier
 in place. The next chapter asks about the conditions of life that no individual
 route can secure alone: land, water, living systems and the commons.
 
+*Run it:* the companion runs this chapter's cases on your own device, at
+[dhilipsiva.dev/rights-nobody-has-to-earn/cases](https://dhilipsiva.dev/rights-nobody-has-to-earn/cases/#chapter-11).
+
 ## Argument: Effects, adjustments and measures that end
 
 *The companion states these rules as [Article 10](https://dhilipsiva.dev/rights-nobody-has-to-earn/constitution/#article-10).*

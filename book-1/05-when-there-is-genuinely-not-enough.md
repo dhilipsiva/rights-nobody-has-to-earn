@@ -188,6 +188,9 @@ The constitutional question continues after the finding: who must answer for
 the unmet claim, maintain continuity and pursue remedy? The next chapter
 follows those public duties.
 
+*Run it:* the companion runs this chapter's cases on your own device, at
+[dhilipsiva.dev/rights-nobody-has-to-earn/cases](https://dhilipsiva.dev/rights-nobody-has-to-earn/cases/#chapter-5).
+
 ## Argument: A shortage must be proved, and need decides it
 
 *The companion states these rules as [Article 5](https://dhilipsiva.dev/rights-nobody-has-to-earn/constitution/#article-5).*

@@ -249,6 +249,9 @@ adequately resolved. Part V, *The argument*, asks what reason there is to
 choose the design, how its evidence bears on that choice, and what costs and
 limits remain.
 
+*Run it:* the companion runs this chapter's cases on your own device, at
+[dhilipsiva.dev/rights-nobody-has-to-earn/cases](https://dhilipsiva.dev/rights-nobody-has-to-earn/cases/#chapter-28).
+
 ## Argument: Findings from outside the walls
 
 *The companion states these rules as Articles [6](https://dhilipsiva.dev/rights-nobody-has-to-earn/constitution/#article-6) and [29](https://dhilipsiva.dev/rights-nobody-has-to-earn/constitution/#article-29).*

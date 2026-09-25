@@ -155,6 +155,9 @@ to provide it and a response when the responsible institution fails. The next
 chapter asks how the republic may change those rules without treating the act
 of amendment as permission to discard their limits.
 
+*Run it:* the companion runs this chapter's cases on your own device, at
+[dhilipsiva.dev/rights-nobody-has-to-earn/cases](https://dhilipsiva.dev/rights-nobody-has-to-earn/cases/#chapter-21).
+
 ## Argument: Four stages, and a meeting beside them
 
 *The companion states these rules as [Article 22](https://dhilipsiva.dev/rights-nobody-has-to-earn/constitution/#article-22).*

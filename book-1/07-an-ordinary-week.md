@@ -156,6 +156,9 @@ against it; somebody must still notice the missing record and prove the stop.
 Whether the wage was paid, the care was sound and the review took place
 belongs to the second book.
 
+*Run it:* the companion runs this chapter's cases on your own device, at
+[dhilipsiva.dev/rights-nobody-has-to-earn/cases](https://dhilipsiva.dev/rights-nobody-has-to-earn/cases/#chapter-7).
+
 ## Argument: Power that must write before it touches
 
 *The companion states these rules as Articles [1](https://dhilipsiva.dev/rights-nobody-has-to-earn/constitution/#article-1), [3](https://dhilipsiva.dev/rights-nobody-has-to-earn/constitution/#article-3), [7](https://dhilipsiva.dev/rights-nobody-has-to-earn/constitution/#article-7), [8](https://dhilipsiva.dev/rights-nobody-has-to-earn/constitution/#article-8) and [22](https://dhilipsiva.dev/rights-nobody-has-to-earn/constitution/#article-22).*

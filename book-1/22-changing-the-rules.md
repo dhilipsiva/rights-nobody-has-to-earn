@@ -170,6 +170,9 @@ possible, and who made it and what it changes lie outside what they read.
 The next chapters turn to what the design may do to a person, beginning with
 protection for someone who exposes authority.
 
+*Run it:* the companion runs this chapter's cases on your own device, at
+[dhilipsiva.dev/rights-nobody-has-to-earn/cases](https://dhilipsiva.dev/rights-nobody-has-to-earn/cases/#chapter-22).
+
 ## Argument: A fixed core behind an open route
 
 *The companion states these rules as Articles [23](https://dhilipsiva.dev/rights-nobody-has-to-earn/constitution/#article-23) and [30](https://dhilipsiva.dev/rights-nobody-has-to-earn/constitution/#article-30).*

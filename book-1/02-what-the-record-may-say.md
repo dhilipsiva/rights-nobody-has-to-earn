@@ -205,6 +205,9 @@ credibility is untouched.
 
 With the standing root present, the next question is what every person is owed.
 
+*Run it:* the companion runs this chapter's cases on your own device, at
+[dhilipsiva.dev/rights-nobody-has-to-earn/cases](https://dhilipsiva.dev/rights-nobody-has-to-earn/cases/#chapter-2).
+
 ## Argument: Why the record is closed by name
 
 *The companion states these rules as Articles [2](https://dhilipsiva.dev/rights-nobody-has-to-earn/constitution/#article-2) and [31](https://dhilipsiva.dev/rights-nobody-has-to-earn/constitution/#article-31).*

@@ -210,6 +210,9 @@ scientific findings with independent review; the rules take each as a recorded
 premise. Measurement, inventories, monitoring and restoration capacity, and
 whether any order was obeyed, belong to the second book.
 
+*Run it:* the companion runs this chapter's cases on your own device, at
+[dhilipsiva.dev/rights-nobody-has-to-earn/cases](https://dhilipsiva.dev/rights-nobody-has-to-earn/cases/#chapter-12).
+
 ## Argument: Conditions kept apart
 
 *The companion states these rules as [Article 11](https://dhilipsiva.dev/rights-nobody-has-to-earn/constitution/#article-11).*

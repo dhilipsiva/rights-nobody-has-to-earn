@@ -1,0 +1,61 @@
+{
+  "license": "CC-BY-4.0",
+  "title": "Run the chapters",
+  "note": "Each chapter's cases, executed on this device against the pinned constitution: the forks walk a person through a chapter's rules, and the joints compare the constitution with one declared change to it. Some material the chapters once carried now lives in the tests or the method instead; it is listed under its chapter with where it went. The chapters describe people by their role, and the tests keep the names their records use.",
+  "moved": [
+    {
+      "chapter": 2,
+      "title": "How a status passes from one version of the record to the next",
+      "text": "The chapter states that a status recorded in an earlier version counts in the version in force only where both timing witnesses carry it, and that standing survives an omission. The mechanics, from lineage collisions to the named defects for an omitted or forged carry, are set out in the method and run in the temporal cases.",
+      "links": [
+        {"label": "The method: versions of the record", "path": "book-1/method.md#versions-of-the-record"},
+        {"label": "The temporal cases", "path": "tests/pins/temporal"}
+      ]
+    },
+    {
+      "chapter": 3,
+      "title": "Why a rule confining someone for a missing floor item is refused",
+      "text": "The chapter states the protection and its reach. How the engine refuses the rule, why the refusal depends on how each entitlement is written, and which differently written attacks load are explained in the method and run in the floor suite; the plain-label and prisoner-to-person variants also run as joints under Chapter 25.",
+      "links": [
+        {"label": "The method: why the hostile floor rule is refused", "path": "book-1/method.md#why-the-hostile-floor-rule-is-refused"},
+        {"label": "The floor suite", "path": "book-1/source/rights-floor.pins.nibli"}
+      ]
+    },
+    {
+      "chapter": 9,
+      "title": "The people the chapter no longer names",
+      "text": "The chapter follows a handful of people through work, pay and contribution. The cases of the others it once named stay in its pins with their original expectations.",
+      "links": [
+        {"label": "Chapter 9's pins", "path": "book-1/09-work-pay-and-contribution.pins.nibli"}
+      ]
+    },
+    {
+      "chapter": 22,
+      "title": "Edits to the constitution's text, and the proposals' names",
+      "text": "The chapter states what a proposal entry establishes and what entrenchment requires. The exhibits that change the source itself, deleting the food entitlement, altering it by one token so it no longer follows, widening the vocabulary, or labelling a proposal with a false target, run as the amendment-semantics cases under the proposal names the chapter no longer uses.",
+      "links": [
+        {"label": "The amendment-semantics cases", "path": "tests/pins/amendments"},
+        {"label": "Chapter 22's pins", "path": "book-1/22-changing-the-rules.pins.nibli"}
+      ]
+    },
+    {
+      "chapter": 22,
+      "title": "Comparing an amendment's exact text",
+      "text": "Whether a certified candidate is byte for byte the reviewed text, whether certification alone selects a version, and whether a candidate written against a replaced base is stale are checked by the amendment host's development tests, outside the engine. The method explains them and their limits.",
+      "links": [
+        {"label": "The method: comparing and selecting an amendment", "path": "book-1/method.md#comparing-and-selecting-an-amendment"},
+        {"label": "The amendment host's tests", "path": "src/amendment_host_tests.rs"}
+      ]
+    },
+    {
+      "chapter": 24,
+      "title": "The findings cases the chapter leaves to its tests",
+      "text": "The chapter is built on four cases. Its pins keep the rest: a signer restricted by a finding carried from an earlier version, a student with no personhood entry, signers seated through different bodies, and the variants that remove the signer checks or add a route that omits them.",
+      "links": [
+        {"label": "Chapter 24's pins", "path": "book-1/24-findings-about-people.pins.nibli"},
+        {"label": "A route that omits the signer checks", "path": "book-1/source/counterfactual/unguarded-pen.pins.nibli"},
+        {"label": "The same route with the checks removed", "path": "book-1/source/counterfactual/unguarded-pen-and-no-conjuncts.pins.nibli"}
+      ]
+    }
+  ]
+}

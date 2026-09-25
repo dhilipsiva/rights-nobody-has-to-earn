@@ -1103,6 +1103,189 @@
         "Kitchen": "Provender"
       },
       "counterfactual": "counterfactual/no-delivery-independence"
+    },
+    "week:0": {
+      "snapshots": [
+        {
+          "source": "book-1/07-an-ordinary-week.pins.nibli",
+          "through": "decide(Selin, Ballot).",
+          "occurrence": 1
+        }
+      ],
+      "add": [],
+      "references": [
+        "book-1/07-an-ordinary-week.pins.nibli",
+        "book-1/01-the-child-with-nobody.pins.nibli"
+      ]
+    },
+    "week:1": {
+      "snapshots": [
+        {
+          "source": "book-1/07-an-ordinary-week.pins.nibli",
+          "through": "decide(Selin, Ballot).",
+          "occurrence": 2
+        }
+      ],
+      "add": [],
+      "references": [
+        "book-1/07-an-ordinary-week.pins.nibli",
+        "book-1/18-the-vote-conviction-does-not-take.pins.nibli"
+      ]
+    },
+    "week:2": {
+      "snapshots": [
+        {
+          "source": "book-1/07-an-ordinary-week.pins.nibli",
+          "through": "provide(SelinEmployer, Wage, Selin).",
+          "occurrence": 3
+        }
+      ],
+      "add": [],
+      "references": [
+        "book-1/07-an-ordinary-week.pins.nibli",
+        "book-1/09-work-pay-and-contribution.pins.nibli"
+      ]
+    },
+    "week:3": {
+      "snapshots": [
+        {
+          "source": "book-1/07-an-ordinary-week.pins.nibli",
+          "through": "healthy(Selin).",
+          "occurrence": 3
+        }
+      ],
+      "add": [],
+      "references": [
+        "book-1/07-an-ordinary-week.pins.nibli",
+        "book-1/04-whether-it-arrived.pins.nibli"
+      ]
+    },
+    "week:4": {
+      "snapshots": [
+        {
+          "source": "book-1/07-an-ordinary-week.pins.nibli",
+          "through": "obliged(SelinHousingOffice, ReviewJusticeRequest, SelinTenancyRequest).",
+          "occurrence": 2
+        }
+      ],
+      "add": [],
+      "references": [
+        "book-1/07-an-ordinary-week.pins.nibli",
+        "book-1/21-a-way-to-be-heard.pins.nibli"
+      ]
+    },
+    "week:5": {
+      "snapshots": [
+        {
+          "source": "book-1/07-an-ordinary-week.pins.nibli",
+          "through": "complete(SelinStopRecord, PSIndividualSearchOrder, Selin).",
+          "occurrence": 1
+        }
+      ],
+      "add": [],
+      "references": [
+        "book-1/07-an-ordinary-week.pins.nibli"
+      ]
+    },
+    "adam-free:0": {
+      "snapshots": [
+        {
+          "source": "book-1/08-what-nobody-has-to-ask-permission-for.pins.nibli",
+          "through": "prevents(Adam, ArbitraryPrivacyInterference).",
+          "occurrence": 1
+        }
+      ],
+      "add": [],
+      "references": [
+        "book-1/08-what-nobody-has-to-ask-permission-for.pins.nibli"
+      ]
+    },
+    "river:0": {
+      "snapshots": [
+        {
+          "source": "book-1/12-a-place-in-which-life-remains-possible.pins.nibli",
+          "through": "complete(RiverWaterContinuityRecord, ECDualFloorAndCeilingContinuity, ExistingEssentialWaterService).",
+          "occurrence": 1
+        }
+      ],
+      "add": [],
+      "references": [
+        "book-1/12-a-place-in-which-life-remains-possible.pins.nibli",
+        "book-1/05-when-there-is-genuinely-not-enough.pins.nibli"
+      ]
+    },
+    "river:1": {
+      "snapshots": [
+        {
+          "source": "book-1/13-creatures-without-a-ballot.pins.nibli",
+          "through": "complete(RiverIndependentConflictRecord, ECIndependentGuardianAnimalConflictDecision, RiverConflictV340).",
+          "occurrence": 1
+        }
+      ],
+      "add": [],
+      "references": [
+        "book-1/13-creatures-without-a-ballot.pins.nibli"
+      ]
+    },
+    "j-recall:canonical": {
+      "snapshots": [
+        {
+          "source": "book-1/source/counterfactual/no-choose-tove.pins.nibli",
+          "through": "prisoner(Iris).",
+          "occurrence": 1
+        }
+      ],
+      "add": [],
+      "references": [
+        "book-1/source/counterfactual/no-choose-tove.pins.nibli",
+        "book-1/16-answerability-and-authority.pins.nibli"
+      ],
+      "counterfactual": null
+    },
+    "j-recall:modified": {
+      "snapshots": [
+        {
+          "source": "book-1/source/counterfactual/no-choose-tove.pins.nibli",
+          "through": "prisoner(Iris).",
+          "occurrence": 1
+        }
+      ],
+      "add": [],
+      "references": [
+        "book-1/source/counterfactual/no-choose-tove.pins.nibli",
+        "book-1/16-answerability-and-authority.pins.nibli"
+      ],
+      "counterfactual": "counterfactual/no-choose-tove"
+    },
+    "j-label:canonical": {
+      "snapshots": [
+        {
+          "source": "book-1/source/counterfactual/entitlement-as-plain-label.pins.nibli",
+          "through": "entitled(Bela, event { believe() }).",
+          "occurrence": 1
+        }
+      ],
+      "add": [],
+      "references": [
+        "book-1/source/counterfactual/entitlement-as-plain-label.pins.nibli",
+        "book-1/25-a-prisoner-is-a-person.pins.nibli"
+      ],
+      "counterfactual": null
+    },
+    "j-label:modified": {
+      "snapshots": [
+        {
+          "source": "book-1/source/counterfactual/entitlement-as-plain-label.pins.nibli",
+          "through": "entitled(Bela, event { believe() }).",
+          "occurrence": 1
+        }
+      ],
+      "add": [],
+      "references": [
+        "book-1/source/counterfactual/entitlement-as-plain-label.pins.nibli",
+        "book-1/25-a-prisoner-is-a-person.pins.nibli"
+      ],
+      "counterfactual": "counterfactual/entitlement-as-plain-label"
     }
   }
 }

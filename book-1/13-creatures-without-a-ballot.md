@@ -301,6 +301,9 @@ order was performed belong to the second book.
 The next chapter turns to another relation that ownership and usefulness leave
 unmeasured: the roles people hold in one another's lives.
 
+*Run it:* the companion runs this chapter's cases on your own device, at
+[dhilipsiva.dev/rights-nobody-has-to-earn/cases](https://dhilipsiva.dev/rights-nobody-has-to-earn/cases/#chapter-13).
+
 ## Argument: A claim of its own
 
 *The companion states these rules as [Article 12](https://dhilipsiva.dev/rights-nobody-has-to-earn/constitution/#article-12).*

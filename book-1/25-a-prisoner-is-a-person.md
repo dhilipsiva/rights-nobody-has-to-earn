@@ -115,6 +115,9 @@ actual conditions for both. *Where People Are Put* turns to placement: where
 the rules assign a confined person, and why the assignment leaves what the
 person is owed where it was.
 
+*Run it:* the companion runs this chapter's cases on your own device, at
+[dhilipsiva.dev/rights-nobody-has-to-earn/cases](https://dhilipsiva.dev/rights-nobody-has-to-earn/cases/#chapter-25).
+
 ## Argument: Liberty is what a sentence takes
 
 *The companion states these rules as Articles [3](https://dhilipsiva.dev/rights-nobody-has-to-earn/constitution/#article-3) and [26](https://dhilipsiva.dev/rights-nobody-has-to-earn/constitution/#article-26).*

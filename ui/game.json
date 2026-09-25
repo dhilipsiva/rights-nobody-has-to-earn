@@ -97,6 +97,18 @@
       "name": "Jala",
       "role": "injured Ivo; never judged",
       "chapter": 27
+    },
+    {
+      "id": "Selin",
+      "name": "Selin",
+      "role": "an ordinary week",
+      "chapter": 7
+    },
+    {
+      "id": "RiverWaterClaimant",
+      "name": "the water claimant",
+      "role": "relies on a river the fish also need",
+      "chapter": 12
     }
   ],
   "scenarios": [
@@ -2027,6 +2039,256 @@
         "prison",
         "delivery"
       ]
+    },
+    {
+      "id": "week",
+      "lens": "live",
+      "office": "registry",
+      "person": "Selin",
+      "chapter": 7,
+      "title": "Live an ordinary week.",
+      "role": "you are Selin, and the record holds only what the week writes",
+      "source": "book-1/07-an-ordinary-week.pins.nibli",
+      "cost": {
+        "title": "Chapter 7 · What the lightness costs",
+        "text": "A wage the employer alone attests, or care the clinic alone attests, stays unconcluded until someone independent writes, and Selin bears the wait. An officer who records only an identification has no search to rely on. Whether the clinic, the school or the housing office acted is a separate fact."
+      },
+      "faults": [],
+      "steps": [
+        {
+          "id": "week:0",
+          "move": "Arrive. The record holds only that you are here.",
+          "queries": [
+            {
+              "text": "person(Selin).",
+              "label": "Personhood · Selin",
+              "kind": "protection"
+            },
+            {
+              "text": "travel(Selin).",
+              "label": "Free movement · Selin",
+              "kind": "protection"
+            },
+            {
+              "text": "decide(Selin, Ballot).",
+              "label": "Ballot without adulthood evidence · Selin",
+              "kind": "context"
+            }
+          ]
+        },
+        {
+          "id": "week:1",
+          "move": "Add the evidence of adulthood.",
+          "queries": [
+            {
+              "text": "decide(Selin, Ballot).",
+              "label": "Ballot · Selin",
+              "kind": "protection"
+            },
+            {
+              "text": "prevents(Selin, WorkChoiceRefusalExitDenial).",
+              "label": "Work may be refused · Selin",
+              "kind": "protection"
+            },
+            {
+              "text": "prevents(Selin, FloorContributionCondition).",
+              "label": "The floor asks for no contribution · Selin",
+              "kind": "protection"
+            }
+          ]
+        },
+        {
+          "id": "week:2",
+          "move": "Take a job. Someone other than the employer attests the wage.",
+          "queries": [
+            {
+              "text": "provide(SelinEmployer, Wage, Selin).",
+              "label": "Wage · Selin",
+              "kind": "protection"
+            },
+            {
+              "text": "provide(SelinEmployer, Prize, Selin).",
+              "label": "A prize nobody recorded · Selin",
+              "kind": "context"
+            },
+            {
+              "text": "prevents(Selin, EvictionForeclosureWithoutContinuity).",
+              "label": "Eviction without continuity barred · Selin",
+              "kind": "protection"
+            }
+          ]
+        },
+        {
+          "id": "week:3",
+          "move": "See the clinic. A witness other than the clinic records the care.",
+          "queries": [
+            {
+              "text": "healthy(Selin).",
+              "label": "Care received · Selin",
+              "kind": "protection"
+            },
+            {
+              "text": "eats(Selin).",
+              "label": "Food, which nothing here records · Selin",
+              "kind": "context"
+            }
+          ]
+        },
+        {
+          "id": "week:4",
+          "move": "Ask the housing office to review the landlord’s notice.",
+          "queries": [
+            {
+              "text": "obliged(SelinHousingOffice, ReviewJusticeRequest, SelinTenancyRequest).",
+              "label": "Duty to review the request · housing office",
+              "kind": "protection"
+            }
+          ]
+        },
+        {
+          "id": "week:5",
+          "move": "Be stopped. The officer records identification and nothing else.",
+          "queries": [
+            {
+              "text": "complete(SelinStopRecord, PSIndividualSearchOrder, Selin).",
+              "label": "Search order · Selin",
+              "kind": "restraint"
+            },
+            {
+              "text": "restrain(Selin, SelinStopRecord, SpecifiedPrivacy).",
+              "label": "Privacy restraint · Selin",
+              "kind": "restraint"
+            },
+            {
+              "text": "prisoner(Selin).",
+              "label": "Custody authority · Selin",
+              "kind": "restraint"
+            },
+            {
+              "text": "travel(Selin).",
+              "label": "Free movement · Selin",
+              "kind": "protection"
+            },
+            {
+              "text": "decide(Selin, Ballot).",
+              "label": "Ballot · Selin",
+              "kind": "protection"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "adam-free",
+      "lens": "live",
+      "office": "registry",
+      "person": "Adam",
+      "chapter": 8,
+      "title": "Think, speak and meet without asking.",
+      "role": "you are Adam, held, and still nobody’s to prescribe",
+      "source": "book-1/08-what-nobody-has-to-ask-permission-for.pins.nibli",
+      "cost": {
+        "title": "Chapter 8 · Who bears the cost",
+        "text": "A restricting body must assemble evidence, agreeing attesters, reasons and review before it acts, and the people a restriction would protect wait meanwhile; people hurt only by offence or disagreement find no restriction route at all. The barriers themselves deliver no voice, belief or company."
+      },
+      "faults": [],
+      "steps": [
+        {
+          "id": "adam-free:0",
+          "move": "Hold an opinion, keep a faith, join others, keep your life to yourself.",
+          "queries": [
+            {
+              "text": "prevents(Adam, PrescribedExpression).",
+              "label": "Expression not prescribed · Adam",
+              "kind": "protection"
+            },
+            {
+              "text": "prevents(Adam, CompelledConscience).",
+              "label": "Conscience not compelled · Adam",
+              "kind": "protection"
+            },
+            {
+              "text": "prevents(Adam, CoercedAssociation).",
+              "label": "Association not coerced · Adam",
+              "kind": "protection"
+            },
+            {
+              "text": "prevents(Adam, ArbitraryPrivacyInterference).",
+              "label": "Privacy not arbitrarily entered · Adam",
+              "kind": "protection"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "river",
+      "lens": "run",
+      "office": "guardian",
+      "person": "RiverWaterClaimant",
+      "chapter": 12,
+      "title": "Keep the water on. Keep the river alive.",
+      "role": "you hold the water service, the river’s guardian and the fish’s advocate at once",
+      "source": "book-1/12-a-place-in-which-life-remains-possible.pins.nibli",
+      "cost": {
+        "title": "Chapter 12 · Essential water and a river’s limit",
+        "text": "Keeping the floor while the river is below its limit records both failures rather than calling either met. The court decides between the offices; the fish’s rescue still needs its own reviewed record."
+      },
+      "faults": [],
+      "steps": [
+        {
+          "id": "river:0",
+          "move": "Keep the town’s water running while the river is below its minimum flow.",
+          "queries": [
+            {
+              "text": "complete(RiverWaterContinuityRecord, ECDualFloorAndCeilingContinuity, ExistingEssentialWaterService).",
+              "label": "Continuity of essential water",
+              "kind": "protection"
+            },
+            {
+              "text": "prevents(RiverWaterContinuityRecord, ECUnmetFloorRenamedSuccess).",
+              "label": "An unmet floor is not renamed success",
+              "kind": "protection"
+            },
+            {
+              "text": "prevents(RiverWaterContinuityRecord, ECCeilingBreachRenamedCompliance).",
+              "label": "A breached limit is not renamed compliance",
+              "kind": "protection"
+            },
+            {
+              "text": "permits(FSBOD_09, ECOnlyExistingRightsPreservingPhysicalScarcityAllocation, RiverWaterAllocationRecord).",
+              "label": "A scarcity allocation from continuity alone",
+              "kind": "restraint"
+            },
+            {
+              "text": "decide(RiverWaterClaimant, Ballot).",
+              "label": "Ballot · the water claimant",
+              "kind": "context"
+            }
+          ]
+        },
+        {
+          "id": "river:1",
+          "move": "Ask the independent court to decide between the river and the fish.",
+          "queries": [
+            {
+              "text": "complete(RiverIndependentConflictRecord, ECIndependentGuardianAnimalConflictDecision, RiverConflictV340).",
+              "label": "The court’s decision between the two claims",
+              "kind": "protection"
+            },
+            {
+              "text": "obliged(FSBOD_17, ECPublishAndApplyIndependentHardBarFirstAxisSeparatedLeastHarmConflictDecision, RiverIndependentConflictRecord).",
+              "label": "Duty to publish and apply it, hard prohibitions first",
+              "kind": "protection"
+            },
+            {
+              "text": "permits(RiverFishCareController, ECOnlyEnhancedNonFoodNonResearchAnimalUse, RiverFishRescueRecord).",
+              "label": "An invasive rescue from that decision alone",
+              "kind": "restraint"
+            }
+          ]
+        }
+      ]
     }
   ],
   "joints": [
@@ -2066,7 +2328,8 @@
           "kind": "context"
         }
       ],
-      "initial": true
+      "initial": true,
+      "chapter": 1
     },
     {
       "id": "j-personline",
@@ -2104,7 +2367,8 @@
           "kind": "context"
         }
       ],
-      "initial": true
+      "initial": true,
+      "chapter": 25
     },
     {
       "id": "j-pen",
@@ -2142,7 +2406,8 @@
           "kind": "context"
         }
       ],
-      "initial": true
+      "initial": true,
+      "chapter": 24
     },
     {
       "id": "j-court",
@@ -2175,7 +2440,8 @@
           "kind": "context"
         }
       ],
-      "initial": true
+      "initial": true,
+      "chapter": 16
     },
     {
       "id": "j-work",
@@ -2203,7 +2469,8 @@
           "kind": "context"
         }
       ],
-      "initial": true
+      "initial": true,
+      "chapter": 9
     },
     {
       "id": "j-floorgate",
@@ -2231,7 +2498,8 @@
           "kind": "context"
         }
       ],
-      "initial": true
+      "initial": true,
+      "chapter": 10
     },
     {
       "id": "j-independence",
@@ -2254,7 +2522,8 @@
           "kind": "context"
         }
       ],
-      "initial": true
+      "initial": true,
+      "chapter": 4
     },
     {
       "id": "j-residence",
@@ -2271,7 +2540,8 @@
         "residence"
       ],
       "initial": true,
-      "queries": []
+      "queries": [],
+      "chapter": 15
     },
     {
       "id": "j-core",
@@ -2288,7 +2558,8 @@
         "entrench"
       ],
       "initial": true,
-      "queries": []
+      "queries": [],
+      "chapter": 22
     },
     {
       "id": "j-collective",
@@ -2303,7 +2574,8 @@
       },
       "faults": [],
       "initial": true,
-      "queries": []
+      "queries": [],
+      "chapter": 17
     },
     {
       "id": "j-release",
@@ -2320,7 +2592,8 @@
         "duration"
       ],
       "initial": true,
-      "queries": []
+      "queries": [],
+      "chapter": 27
     },
     {
       "id": "j-degree",
@@ -2337,7 +2610,72 @@
         "valuation"
       ],
       "initial": false,
-      "queries": []
+      "queries": [],
+      "chapter": 29
+    },
+    {
+      "id": "j-recall",
+      "office": "assembly",
+      "chapter": 16,
+      "title": "The electorate’s choice of Tove is on the record",
+      "offLabel": "Tove’s election was never written",
+      "measured": true,
+      "initial": true,
+      "source": "book-1/source/counterfactual/no-choose-tove.pins.nibli",
+      "cost": {
+        "title": "Chapter 16 · Why recall leaves answerability intact",
+        "text": "Answerability follows from the recorded choice and outlasts the recall. Delete the one entry that seated Tove and Tove is answerable for nothing, so exposing Tove shields nobody: the honest disclosure loses its protection with the forgotten election."
+      },
+      "faults": [],
+      "queries": [
+        {
+          "text": "authority(Tove).",
+          "label": "Public answerability · Tove",
+          "kind": "context"
+        },
+        {
+          "text": "defend(Iris).",
+          "label": "Disclosure protection · Iris",
+          "kind": "context"
+        },
+        {
+          "text": "prisoner(Iris).",
+          "label": "Custody authority · Iris",
+          "kind": "context"
+        }
+      ]
+    },
+    {
+      "id": "j-label",
+      "office": "assembly",
+      "chapter": 25,
+      "title": "Each entitlement is written as something that happens",
+      "offLabel": "The belief entitlement is written as a label",
+      "measured": true,
+      "initial": true,
+      "source": "book-1/source/counterfactual/entitlement-as-plain-label.pins.nibli",
+      "cost": {
+        "title": "Chapter 25 · A protection reaching beyond Zed",
+        "text": "The refusal to confine anyone for a missing floor item rests on how each entitlement is written. Written as a label, the belief entitlement still reads like a floor, but it no longer follows, and a rule confining people for a missing belief record loads."
+      },
+      "faults": [],
+      "queries": [
+        {
+          "text": "entitled(Bela, event { believe() }).",
+          "label": "Belief entitlement · Bela",
+          "kind": "context"
+        },
+        {
+          "text": "entitled(Bela, event { eats() }).",
+          "label": "Food entitlement · Bela",
+          "kind": "context"
+        },
+        {
+          "text": "person(Bela).",
+          "label": "Personhood · Bela",
+          "kind": "context"
+        }
+      ]
     }
   ],
   "faults": [

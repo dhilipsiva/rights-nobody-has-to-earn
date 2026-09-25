@@ -272,6 +272,9 @@ The permission to keep a record stays bounded by its purpose even when another
 use would be convenient. The next chapter puts that discipline under a more
 urgent claim: that a crisis requires the ordinary limits to give way.
 
+*Run it:* the companion runs this chapter's cases on your own device, at
+[dhilipsiva.dev/rights-nobody-has-to-earn/cases](https://dhilipsiva.dev/rights-nobody-has-to-earn/cases/#chapter-19).
+
 ## Argument: Uses bound to their holding, decisions to a person
 
 *The companion states these rules as [Article 19](https://dhilipsiva.dev/rights-nobody-has-to-earn/constitution/#article-19).*

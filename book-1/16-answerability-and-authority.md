@@ -141,6 +141,9 @@ recovering a lost entry.
 The next chapter asks how public functions acquire the authority needed to
 perform their duties.
 
+*Run it:* the companion runs this chapter's cases on your own device, at
+[dhilipsiva.dev/rights-nobody-has-to-earn/cases](https://dhilipsiva.dev/rights-nobody-has-to-earn/cases/#chapter-16).
+
 ## Argument: Answerable for good, empowered for now
 
 *The companion states these rules as Articles [15](https://dhilipsiva.dev/rights-nobody-has-to-earn/constitution/#article-15) and [30](https://dhilipsiva.dev/rights-nobody-has-to-earn/constitution/#article-30).*

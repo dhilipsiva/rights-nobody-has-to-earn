@@ -288,6 +288,9 @@ The structure gives each public act a source, limits, an end and a route to
 challenge. The next chapter turns to the person who helps authorise that
 structure, including the voter whom the State has confined.
 
+*Run it:* the companion runs this chapter's cases on your own device, at
+[dhilipsiva.dev/rights-nobody-has-to-earn/cases](https://dhilipsiva.dev/rights-nobody-has-to-earn/cases/#chapter-17).
+
 ## Argument: Divided without deadlock
 
 *The companion states these rules as Articles [16](https://dhilipsiva.dev/rights-nobody-has-to-earn/constitution/#article-16) and [17](https://dhilipsiva.dev/rights-nobody-has-to-earn/constitution/#article-17).*

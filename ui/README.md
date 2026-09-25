@@ -33,7 +33,8 @@ The unrelated root page in the preview server is a resource-isolation fixture.
 The build exports reader text, prepares complete executable records, compiles
 all constitutional statements using the pinned engine, and packages the reader
 and engine as separate Wasm modules. It exports an HTML route for every reading
-input and three others, their Markdown counterparts, structured reading data
+input and for the game, contents, search, constitution and cases pages, their
+Markdown counterparts, structured reading data
 and the redirect manifest. Compilation supplies inputs, never displayed
 answers. There is no result-reuse build mode.
 `verify.sh` is deliberately outside this UI task and workflow.
@@ -48,6 +49,17 @@ Constitute Project and what it adds. The reader publishes them at
 repository's `articles_tests` development tests check the map against the
 formal source in both directions and resolve every citation.
 
+`chapter-cases.json` lists, chapter by chapter, what the chapters no longer
+carry in their prose and where it now lives, with its explanation. The reader
+publishes it at `cases/` beside each chapter's runnable forks and measured
+joints: a fork or joint belongs to a chapter when it names that chapter or its
+records draw on that chapter's pins. Every derived chapter closes its derived
+account with a pointer to its entry there, and a link to `#fork=<id>` or
+`#joint=<id>` opens that case in the game ready to run. `tests/test_inputs.py`
+checks that every derived chapter has a runnable case and points to its own
+entry, that every authored cost and fault cites a heading that exists, and that
+every link to moved material resolves.
+
 `game.json` holds authored moves, query labels, interpretation categories, costs,
 and dossier discussion. `case-map.json` explicitly maps each move to source
 checkpoints, suite fixtures, additional premises and cross-chapter references.
@@ -57,8 +69,9 @@ scoped acceptance controls do not become lasting facts.
 
 The public, versioned `cases.json` contains records, queries, source references,
 engine revision and the declared counterfactual transformations. It has no
-outcomes or expected answers. Every step includes the selected person's floor
-queries, so its floor panel never borrows another record's conclusions. Expected
+outcomes or expected answers. Every step includes the selected person's
+queries for all nine floor items, so its floor panel never borrows another
+record's conclusions. Expected
 answers belong only to `tests/expectations.json` and development test binaries.
 
 The engine caches immutable compiled resources in memory, then constructs a new

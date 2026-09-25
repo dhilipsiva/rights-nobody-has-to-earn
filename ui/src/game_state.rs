@@ -51,6 +51,7 @@ pub struct Fork {
 #[derive(Clone, Deserialize)]
 pub struct Joint {
     pub id: String,
+    pub chapter: u8,
     pub title: String,
     pub initial: bool,
     #[serde(rename = "offLabel")]
@@ -189,6 +190,27 @@ pub fn ids(owner: &str) -> Vec<String> {
         return vec![format!("{owner}:canonical"), format!("{owner}:modified")];
     }
     vec![]
+}
+/// The chapters a fork or measured joint runs: its own, and every chapter whose
+/// pins its records are drawn from or refer to.
+pub fn chapters_of(owner: &str, primary: u8) -> BTreeSet<u8> {
+    let mut found = BTreeSet::from([primary]);
+    for id in ids(owner) {
+        let Some(case) = cases().cases.iter().find(|c| c.id == id) else {
+            continue;
+        };
+        for source in &case.sources {
+            let Some(rest) = source.path.strip_prefix("book-1/") else {
+                continue;
+            };
+            if rest.as_bytes().get(2) == Some(&b'-') {
+                if let Some(Ok(n)) = rest.get(..2).map(str::parse::<u8>) {
+                    found.insert(n);
+                }
+            }
+        }
+    }
+    found
 }
 pub fn valid(outcome: &Outcome, id: &str) -> bool {
     let Some(case) = cases().cases.iter().find(|c| c.id == id) else {

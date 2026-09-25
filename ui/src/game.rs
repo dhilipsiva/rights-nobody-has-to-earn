@@ -46,6 +46,50 @@ fn select(mut state: Signal<Play>, flag: Signal<Arc<AtomicBool>>, id: &str) {
     }
     state.write().select(id);
 }
+#[cfg(not(feature = "desktop"))]
+fn location_fragment() -> String {
+    #[cfg(feature = "web")]
+    {
+        web_sys::window()
+            .and_then(|w| w.location().hash().ok())
+            .map(|h| h.trim_start_matches('#').to_string())
+            .unwrap_or_default()
+    }
+    #[cfg(not(feature = "web"))]
+    {
+        String::new()
+    }
+}
+fn open_link(mut state: Signal<Play>, flag: Signal<Arc<AtomicBool>>, fragment: &str) {
+    let person = if let Some(id) = fragment.strip_prefix("fork=") {
+        game()
+            .scenarios
+            .iter()
+            .find(|f| f.id == id)
+            .map(|f| (f.id.clone(), Some(f.person.clone())))
+    } else if let Some(id) = fragment.strip_prefix("joint=") {
+        game()
+            .joints
+            .iter()
+            .find(|j| j.id == id)
+            .map(|j| (j.id.clone(), None))
+    } else {
+        None
+    };
+    let Some((id, person)) = person else {
+        return;
+    };
+    if state.peek().selection == id {
+        return;
+    }
+    select(state, flag, &id);
+    if let Some(person) = person {
+        state.write().person = person;
+    }
+    let _ = document::eval(
+        "setTimeout(()=>{const e=document.querySelector('.play-card');if(e){e.scrollIntoView({behavior:'instant'});}},50);",
+    );
+}
 fn queue(mut state: Signal<Play>, flag: Signal<Arc<AtomicBool>>, id: String) {
     reasoning::cancel(&flag.peek());
     let mut s = state.write();
@@ -89,6 +133,17 @@ pub fn Game() -> Element {
             Err(e) => state.write().storage = e,
         }
         boot(state, cancellation);
+    });
+    // A link to `#fork=<id>` or `#joint=<id>` opens that case, so a chapter's
+    // pointer lands on a record ready to run.
+    #[cfg(feature = "desktop")]
+    let session = use_context::<crate::Session>();
+    use_effect(move || {
+        #[cfg(feature = "desktop")]
+        let fragment = (session.fragment)();
+        #[cfg(not(feature = "desktop"))]
+        let fragment = location_fragment();
+        open_link(state, cancellation, &fragment);
     });
     use_effect(move || {
         let Some(job) = state.read().job() else {
@@ -311,13 +366,13 @@ pub fn Game() -> Element {
                 }
                 aside{class:"game-sidebar",
                     section{class:"q-card floor-panel",h2{"The floor · {person.name}"}p{"Duties and provision in the current record."}
-                        div{class:"floor-indicators",for (name,item,pred) in [("Food","Eats","eats"),("Shelter","Dwell","dwell"),("Care","Healthy","healthy"),("Learning","Learn","learn"),("Safety","Secure","secure"),("Expression","Expresses","expresses"),("Belief","Believe","believe"),("Company","Meets","meets")]{{
+                        div{class:"floor-indicators",for (name,item,pred) in [("Food","Eats","eats"),("Shelter","Dwell","dwell"),("Care","Healthy","healthy"),("Learning","Learn","learn"),("Safety","Secure","secure"),("Material security","Suffice","suffice"),("Expression","Expresses","expresses"),("Belief","Believe","believe"),("Company","Meets","meets")]{{
                             let who=if s.person=="Newcomer"{"MPNewcomer"}else{&s.person};
                             let status=|q:String|if fork.is_some(){shown.and_then(|o|o.verdicts.iter().find(|v|v.query==q)).map(|v|v.status.as_str()).unwrap_or("pending")}else{"unqueried"};
                             let owed=status(format!("owe(State, {item}, {who})."));let delivered=status(format!("{pred}({who})."));
                             rsx!{div{class:"floor-indicator","data-floor":pred,strong{"{name}"}span{"owed · {owed}"}span{"provided · {delivered}"}}}
                         }}}
-                        p{class:"term-note","Provision is a formal conclusion. Belief has no delivery route by design."}
+                        p{class:"term-note","Provision is a formal conclusion. Bodily safety and belief have no delivery route by design."}
                     }
                     section{class:"q-card joint-panel",h2{"Rewrite the joints"}p{"Change a choice, examine its cost."}
                         for j in &game().joints{{let id=j.id.clone();rsx!{button{class:if s.selection==j.id{"joint selected"}else{"joint"},"data-joint":"{j.id}",aria_pressed:s.selection==j.id,onclick:move |_|select(state,cancellation,&id),span{"⇌"}span{strong{"{j.title}"}small{if j.measured{"live comparison"}else{"authored cost"}}}}}}}

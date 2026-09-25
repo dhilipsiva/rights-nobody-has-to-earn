@@ -265,6 +265,9 @@ never its price. The distinction to keep is between evidence of an act and
 authority over a person. The next chapter asks what money may buy, and where
 that permission ends.
 
+*Run it:* the companion runs this chapter's cases on your own device, at
+[dhilipsiva.dev/rights-nobody-has-to-earn/cases](https://dhilipsiva.dev/rights-nobody-has-to-earn/cases/#chapter-9).
+
 ## Argument: Work above the floor
 
 *The companion states these rules as [Article 8](https://dhilipsiva.dev/rights-nobody-has-to-earn/constitution/#article-8).*

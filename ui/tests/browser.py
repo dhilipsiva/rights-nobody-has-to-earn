@@ -30,12 +30,12 @@ def main():
     content = json.loads((UI/'dist/rights-nobody-has-to-earn/content.json').read_text(encoding='utf-8'))
     cases = json.loads((UI/'generated/cases.json').read_text(encoding='utf-8'))['cases']
     expected = json.loads((UI/'tests/expectations.json').read_text(encoding='utf-8'))
-    routes = ['', 'read/', 'search/', 'constitution/'] + [f'read/{Path(p["source"]).stem}/' for p in content['pages']]
+    routes = ['', 'read/', 'search/', 'constitution/', 'cases/'] + [f'read/{Path(p["source"]).stem}/' for p in content['pages']]
     manifest = json.loads((UI.parent/'book-1/contents.json').read_text(encoding='utf-8'))
     inputs = len(manifest['front']) + len(manifest['back']) + sum(
         (p.get('opener', {}).get('status') == 'landed') + sum(c['status'] == 'landed' for c in p['chapters'])
         for p in manifest['parts'])
-    assert len(content['pages']) == inputs and len(routes) == inputs + 4 and len(cases) == 78
+    assert len(content['pages']) == inputs and len(routes) == inputs + 5 and len(cases) == 91
     for path in ['game.json', 'cases.json']:
         def inspect(value):
             if isinstance(value, dict):
@@ -53,6 +53,9 @@ def main():
     articles = json.loads((UI/'articles.json').read_text(encoding='utf-8'))['articles']
     constitution = (UI/'dist/rights-nobody-has-to-earn/constitution/index.html').read_text(encoding='utf-8')
     assert all(f'id="article-{a["number"]}"' in constitution for a in articles), 'an article has no anchor'
+    chapter_cases = (UI/'dist/rights-nobody-has-to-earn/cases/index.html').read_text(encoding='utf-8')
+    derived = [c['number'] for p in manifest['parts'] for c in p['chapters'] if c.get('role') == 'derived' and c['status'] == 'landed']
+    assert all(f'id="chapter-{n}"' in chapter_cases for n in derived), 'a chapter has no cases anchor'
     report = {'routes':len(routes), 'reader_inputs':inputs, 'screens':[], 'engine':[], 'contrast':[]}
     errors = []
     with sync_playwright() as p:
@@ -167,6 +170,12 @@ def main():
         assert page.locator('.game').get_attribute('data-selection') == 'silence'
         expect(page.locator('.restore-message')).to_have_count(0,timeout=180000)
         assert page.locator('[data-tally=held]').inner_text() == '3'
+        # A chapter's pointer opens its case: the cases page links into the game.
+        link_context=browser.new_context();lp=link_context.new_page();lp.goto(args.url+PREFIX+'cases/')
+        lp.locator('#chapter-7 [data-run=fork]').first.click()
+        expect(lp.locator('.game')).to_have_attribute('data-selection','week',timeout=90000)
+        assert lp.locator('.person.selected').get_attribute('data-person') == 'Selin'
+        link_context.close()
         shared_context=browser.new_context();sp=shared_context.new_page();sp.goto(args.url+PREFIX+shared.split(PREFIX,1)[1])
         expect(sp.locator('.restore-message')).to_contain_text('Checking saved progress')
         expect(sp.locator('.restore-message')).to_have_count(0,timeout=180000)

@@ -45,6 +45,52 @@ fn companion_markdown(route: &str) -> String {
                 }
             }
         }
+        "cases/" => {
+            use rights_book_ui::game_state::{chapters_of, game};
+            let doc = chapter_cases();
+            text += &format!("{}\n\n", doc.note);
+            for page in book().pages.iter().filter(|p| p.number.is_some()) {
+                let n = page.number.unwrap();
+                let runs = |owner: &str, primary: u8| chapters_of(owner, primary).contains(&n);
+                if !game().scenarios.iter().any(|f| runs(&f.id, f.chapter))
+                    && !game()
+                        .joints
+                        .iter()
+                        .any(|j| j.measured && runs(&j.id, j.chapter))
+                    && !doc.moved.iter().any(|m| m.chapter == n)
+                {
+                    continue;
+                }
+                text += &format!("## {}\n\n", page.label);
+                for f in game()
+                    .scenarios
+                    .iter()
+                    .filter(|f| chapters_of(&f.id, f.chapter).contains(&n))
+                {
+                    text += &format!(
+                        "- [{}]({ORIGIN}{PREFIX}#fork={}) · {}\n",
+                        f.title, f.id, f.role
+                    );
+                }
+                for j in game()
+                    .joints
+                    .iter()
+                    .filter(|j| j.measured && chapters_of(&j.id, j.chapter).contains(&n))
+                {
+                    text += &format!(
+                        "- [{}]({ORIGIN}{PREFIX}#joint={}) · compared live with “{}”\n",
+                        j.title, j.id, j.off_label
+                    );
+                }
+                for m in doc.moved.iter().filter(|m| m.chapter == n) {
+                    text += &format!("\n### {}\n\n{}\n\n", m.title, m.text);
+                    for link in &m.links {
+                        text += &format!("- [{}]({})\n", link.label, repository_url(&link.path));
+                    }
+                }
+                text += "\n";
+            }
+        }
         _ => {
             text += "Pick a person. Walk their forks.\n\nThe game starts the local engine automatically. Each move executes a complete isolated record against the pinned constitution. There are no embedded game verdicts. Gameplay requires JavaScript; the complete reader remains available without it.\n\nAuthored costs and discussion are identified separately from engine responses. Saved and shared history is replayed live before it contributes to the tally.\n\n";
             for f in &rights_book_ui::game_state::game().scenarios {
@@ -94,7 +140,8 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
             "about/" => "Authorship, sources, licensing, privacy and the limits of the executable Book 1 companion.",
             "read/" => "Read the complete Book 1 in manuscript order: epigraph, opening note, every chapter and Part opening case, the optional method, and a map, glossary and index.",
             "search/" => "Search the complete text of Book 1 locally on your device.",
-            "constitution/" => "The constitution Book 1 describes, as numbered plain-language articles traced to the rules and tests that implement them.", _ => "This page does not exist in Book 1.",
+            "constitution/" => "The constitution Book 1 describes, as numbered plain-language articles traced to the rules and tests that implement them.",
+            "cases/" => "Each chapter's cases, run on your own device against the pinned constitution, and where the material the chapters no longer carry now lives.", _ => "This page does not exist in Book 1.",
         }.into());
         let is_404 = route.ends_with("/404/");
         let noindex = route.ends_with("/search/") || is_404;
@@ -167,7 +214,7 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
         full += &format!("\n---\n\nCitation: {}\n\n{}", page.canonical, page.markdown);
     }
     index += &format!(
-        "\n## Companion and structured data\n\n- [Live execution game]({ORIGIN}{PREFIX}index.md)\n- [Authored game data]({ORIGIN}{PREFIX}game.json)\n- [Chapter and section index]({ORIGIN}{PREFIX}content.json)\n- [Versioned executable inputs; no answers]({ORIGIN}{PREFIX}cases.json)\n\n## Optional\n\n- [Full reader text]({ORIGIN}{PREFIX}llms-full.txt)\n"
+        "\n## Companion and structured data\n\n- [Live execution game]({ORIGIN}{PREFIX}index.md)\n- [Each chapter's runnable cases]({ORIGIN}{PREFIX}cases/index.md)\n- [The constitution in plain language]({ORIGIN}{PREFIX}constitution/index.md)\n- [Authored game data]({ORIGIN}{PREFIX}game.json)\n- [Chapter and section index]({ORIGIN}{PREFIX}content.json)\n- [Versioned executable inputs; no answers]({ORIGIN}{PREFIX}cases.json)\n\n## Optional\n\n- [Full reader text]({ORIGIN}{PREFIX}llms-full.txt)\n"
     );
     write(&root.join("game.json"), include_str!("../../game.json"))?;
     let redirects = serde_json::json!({"version":1,"redirects":[

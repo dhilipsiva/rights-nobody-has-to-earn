@@ -136,6 +136,9 @@ age follows from personhood alone. Participation is wider than the franchise.
 *What May Be Kept About You* examines what institutions may record about a
 person, including the evidence on which political rights depend.
 
+*Run it:* the companion runs this chapter's cases on your own device, at
+[dhilipsiva.dev/rights-nobody-has-to-earn/cases](https://dhilipsiva.dev/rights-nobody-has-to-earn/cases/#chapter-18).
+
 ## Argument: The vote outside the sentence
 
 *The companion states these rules as [Article 18](https://dhilipsiva.dev/rights-nobody-has-to-earn/constitution/#article-18).*

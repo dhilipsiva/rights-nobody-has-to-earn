@@ -96,6 +96,43 @@ pub struct Articles {
     pub parts: Vec<String>,
     pub articles: Vec<Article>,
 }
+#[derive(Clone, Deserialize)]
+pub struct Link {
+    pub label: String,
+    pub path: String,
+}
+#[derive(Clone, Deserialize)]
+pub struct Moved {
+    pub chapter: u8,
+    pub title: String,
+    pub text: String,
+    pub links: Vec<Link>,
+}
+#[derive(Deserialize)]
+pub struct ChapterCases {
+    pub title: String,
+    pub note: String,
+    pub moved: Vec<Moved>,
+}
+/// A repository link for a file, a directory or a heading in a Markdown file.
+pub fn repository_url(path: &str) -> String {
+    let (file, anchor) = path.split_once('#').unwrap_or((path, ""));
+    let kind = if file
+        .rsplit('/')
+        .next()
+        .is_some_and(|name| name.contains('.'))
+    {
+        "blob"
+    } else {
+        "tree"
+    };
+    let anchor = if anchor.is_empty() {
+        String::new()
+    } else {
+        format!("#{anchor}")
+    };
+    format!("{REPOSITORY}/{kind}/main/{file}{anchor}")
+}
 #[derive(Clone, Deserialize, Serialize, PartialEq)]
 pub struct Verdict {
     pub query: String,
@@ -145,6 +182,12 @@ pub fn articles() -> &'static Articles {
         serde_json::from_str(include_str!("../articles.json")).expect("plain-language articles")
     })
 }
+pub fn chapter_cases() -> &'static ChapterCases {
+    static C: OnceLock<ChapterCases> = OnceLock::new();
+    C.get_or_init(|| {
+        serde_json::from_str(include_str!("../chapter-cases.json")).expect("chapter cases")
+    })
+}
 pub fn cases() -> &'static Cases {
     static C: OnceLock<Cases> = OnceLock::new();
     C.get_or_init(|| {
@@ -176,12 +219,13 @@ pub fn route_title(path: &str) -> String {
         "read/" => "Read Book 1",
         "search/" => "Search Book 1",
         "constitution/" => "The constitution in plain language",
+        "cases/" => "Run the chapters",
         _ => "Page not found",
     }
     .into()
 }
 pub fn routes() -> Vec<String> {
-    ["", "read/", "search/", "constitution/"]
+    ["", "read/", "search/", "constitution/", "cases/"]
         .iter()
         .map(|p| format!("{PREFIX}{p}"))
         .chain(book().pages.iter().map(|p| p.path.clone()))

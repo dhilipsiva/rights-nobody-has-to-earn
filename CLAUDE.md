@@ -133,6 +133,55 @@ reinstate the retired tooling or workflow.
 Grouped by kind. Dates in each heading are the ratification dates; a ruling
 that was later implemented or narrowed carries that supersession inline.
 
+### Item 63 — every chapter runs in the companion, 2026-09-25
+
+Each derived chapter's derived account now closes, just before its argument
+section, with a pointer: "*Run it:* the companion runs this chapter's cases on
+your own device, at dhilipsiva.dev/rights-nobody-has-to-earn/cases", the
+address printed so it survives paper and linked to the chapter's own entry.
+The companion's new `cases/` page lists, for every chapter with something to
+run, the forks that name it or whose records draw on its pins and the measured
+joints that compare the constitution with one declared change; each link opens
+the game at `#fork=<id>` or `#joint=<id>` with that case selected, on the web
+from the location and on desktop from the navigation fragment. Chapters 7, 8
+and 13 had no case, so three forks now run them from their own pins: Selin's
+ordinary week in six steps (presence, adulthood evidence, an independently
+attested wage, independently witnessed care, a review request, a stop that
+records identification only), Adam's free field, and the water claimant's river
+across Chapters 12 and 13 (continuity recorded as both failures, then the
+independent court's decision, which permits no rescue by itself). Two measured
+joints carry material from the prose: `j-recall`, the deleted choice of Tove
+that item 56 moved out of Chapter 16, and `j-label`, item 62's plain-label
+entitlement. `ui/chapter-cases.json` records, under its chapter, what the prose
+no longer carries and where it lives, with links: the carry mechanics of
+versions of the record (2), the floor refusal's mechanism (3), the people
+Chapter 9 no longer names (9), the amendment source edits and exact-text checks
+(22), and Chapter 24's other findings cases (24). Part V's chapters argue
+rather than state rules and have no entry.
+
+The floor panel, and every record's floor queries, now cover all nine items:
+material security had been missing since item 44, and the panel's note says
+bodily safety, like belief, has no delivery route. Selin and the water claimant
+join the people, joints carry their chapter, and the companion README describes
+the page, the links and the checks. Six new companion input tests hold it:
+every derived chapter has a runnable case, with a sabotage control that removes
+the week; every derived chapter points once to its own entry; every authored
+cost and fault cites a heading that exists, which all do; every link to moved
+material resolves; and fork and joint ids are safe in a link. The browser suite
+follows a Chapter 7 link into the game. The companion holds 33 forks of 73
+steps and 14 joints, nine measured, for 91 records. The exact prose is
+`session-drafted, author-approved under delegated approval (2026-09-13)`; the
+narrative-register decision records the pointer.
+
+No rule, pin or suite changes, so item 62's complete run on the same formal
+inputs stands. The engine comparison matches every recorded expectation across
+the 91 records in 1,661.24s. All 149 authoring development tests pass, with five
+declared ignored, as do the twelve companion input tests, its five library tests
+and one `book-reason` test, the sixteen prose-lint and nine book-builder unit
+tests, formatting and the prose check. The web build type-checks for wasm32 and
+the desktop build inside `ui/shell.nix`; the static exporter renders 44 routes.
+The browser suite, which needs a served build, was not run here.
+
 ### Item 62 — the method as the technical appendix, 2026-09-25
 
 The method is the book's technical appendix under ruling D4, within its sealed
@@ -1700,7 +1749,8 @@ by file once item 53 builds that tooling. Items 53–59 and 63 implement it.
 **Implemented for Part I 2026-09-25 (item 54):** Chapters 1–6 each close
 with an argument section. **And for Part II the same day (item 55):**
 Chapters 7–15; **for Part III (item 56):** Chapters 16–22; **and for Part IV
-(item 57):** Chapters 23–28.
+(item 57):** Chapters 23–28. **Item 63** closed each derived account with a pointer to
+the companion cases that run it.
 
 **D3 — documented cases outside Part V.** Documented, registry-sourced cases may
 appear in the opening (Santoshi Kumari first, with the dispute over her death

@@ -150,6 +150,9 @@ A defect finding corrects the record; a remedy for the person a restriction
 reached needs its own route. Whether any office publishes, hears, corrects or
 holds back is a question for the second book.
 
+*Run it:* the companion runs this chapter's cases on your own device, at
+[dhilipsiva.dev/rights-nobody-has-to-earn/cases](https://dhilipsiva.dev/rights-nobody-has-to-earn/cases/#chapter-8).
+
 ## Argument: Two grounds and an end
 
 *The companion states these rules as [Article 7](https://dhilipsiva.dev/rights-nobody-has-to-earn/constitution/#article-7).*
