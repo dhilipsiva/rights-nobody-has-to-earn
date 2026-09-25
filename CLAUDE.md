@@ -135,6 +135,44 @@ reinstate the retired tooling or workflow.
 Grouped by kind. Dates in each heading are the ratification dates; a ruling
 that was later implemented or narrowed carries that supersession inline.
 
+### Item 66 closed, and the submissions drafted, 2026-09-25
+
+The author closed the optional item 66, independent validation, on 2026-09-25.
+Asked whether to keep it open, close it or prepare invitations, the author
+chose to close it. No outside expert, reader, reproduction or red-team evidence
+exists, and none is claimed. The 2026-08-15 ruling had already made such
+evidence no completion condition. It remains welcome as optional evidence under
+the existing provenance rules, but seeking it again needs a new decision.
+
+The same day the author chose all seven presses in the TODO: MIT Press,
+punctum, UCL Press, Westminster, Polity, Pluto and Verso. The author made that
+choice knowing four conflicts the presses' own pages state:
+- Verso is "firmly opposed to the use of generative AI at any stage in the
+  creation of our books";
+- UCL Press says Gen AI "shouldn't replace key authoring tasks", forbids it
+  for code and formulas, and charges £7,500 at this length unless a waiver is
+  won;
+- punctum reads complete manuscripts only from May to July;
+- Westminster publishes books CC BY-NC-ND.
+
+`submission/presses.md` records each press's requirements with their sources.
+The Verso, punctum and Westminster statements were confirmed on the presses'
+live pages. UCL Press's policy was confirmed from a copy of its page saved
+during the research, because the live page refuses automated reading, and MIT
+Press's requirements were read from archived copies for the same reason.
+`submission/drafts/` holds a message ready for each press and a chapter
+outline with a paragraph per chapter.
+
+Every draft discloses the AI assistance in the opening note's terms and says
+that the book is already public under CC BY 4.0. Every draft says that other
+presses are considering it. Each of the four conflicts is raised first in its
+own draft. Nothing about the author is invented: biography, reasons for
+writing, reviewers, promotion and contact details are marked `[AUTHOR: …]`.
+The session has no means of sending email, and no press has been contacted;
+the author sends each message. The exact drafts are `session-drafted,
+author-approved under delegated approval (2026-09-13)` as drafts, and the
+author approves each before it is sent.
+
 ### Item 65 — the revision read fresh, verified and submitted, 2026-09-25
 
 All 40 ordered inputs were read in sequence after items 34–64, in five passes
@@ -187,10 +225,10 @@ stays at 7,583.
 subtitle and promise, the opening case, the chapter shape, the contents, the
 sample (Chapters 1, 4, 8, 21 and 29), the summary edition and the companion.
 It describes `be51db06`, the commit this item records, named in the next
-commit because a commit cannot name itself. The version sent before describes `93fa5662`, which
-stays identifiable. No press has been contacted. The reading-order decision
-records the item, and the TODO's required items are complete; item 66 stays
-optional. The exact prose is `session-drafted, author-approved under delegated
+commit because a commit cannot name itself. The version sent before describes
+`93fa5662`, which stays identifiable. No press has been contacted. The
+reading-order decision records the item, and the TODO's required items are
+complete; item 66 stays optional. The exact prose is `session-drafted, author-approved under delegated
 approval (2026-09-13)`.
 
 The 40 inputs hold 98,299 whitespace-separated Markdown words excluding HTML

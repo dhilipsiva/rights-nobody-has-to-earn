@@ -20,6 +20,10 @@ own page again immediately before sending.
 
 ## The decisions that come first
 
+On 25 September 2026 the author decided to approach all seven presses, knowing
+the conflicts below. The messages are in [drafts](drafts/README.md), and each
+of these four raises its conflict first.
+
 Four presses' own policies raise a question the author must settle before
 anything is sent. All seven are silent on a book that is already public under
 CC BY, so every press would be publishing a text others may already reuse; say

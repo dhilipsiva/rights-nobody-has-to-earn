@@ -117,8 +117,9 @@ ratified 2026-09-24* and recorded in `CLAUDE.md`.
   manuscript at the commit item 65 records; any proposal already sent to a
   publisher describes `93fa5662`, which stays identifiable.
 - External human review is optional, not a completion dependency (2026-08-15
-  ruling); the plan's readers, experts, reproduction and red team are welcome
-  under item 66. Never invent reader testing, expert endorsement, empirical
+  ruling); the plan's readers, experts, reproduction and red team remain
+  welcome as optional evidence, though the author closed item 66 on
+  2026-09-25. Never invent reader testing, expert endorsement, empirical
   evidence or operational success. Do not treat AI agreement as independent
   validation.
 
@@ -218,35 +219,13 @@ unimplemented until the items named here land.
 
 ## Ordered revision backlog
 
-The revision is complete; item 66 is optional and never blocks the
-submissions below.
-Numbering continues from items 01–33, which `CLAUDE.md` records; items 34–65
-and 67–72 are complete and recorded there too. Chapter numbers refer to the
-[current reading sequence](book-1/contents.json), which item 53 made the plan's
-§4.2 table; the plan's own §14 punch list uses the earlier numbers, which
-`tools/maps/2026-09-25-restructure.json` maps to these.
-
-### Completion
-
-- [ ] **66. Optional: independent validation.**
-
-  **Scope:** plan §8.3, §10.5 and §12. Never a completion condition
-  (2026-08-15 ruling).
-
-  Welcome evidence: a comparative constitutional lawyer, a scholar of
-  economic and social rights, a formal-methods specialist, an animal-law or
-  ethics scholar, frontline practitioners, and three lay readers with a
-  confusion log and recall questions; an opponent test for each contested
-  choice; an independent reproduction; a public red-team challenge ("write a
-  rule that harms Nell or a prisoner and still passes the suite"); and a
-  peer-reviewed paper on the flow constraints. Recruit early, because their
-  calendars are the longest dependency. Anything published or sent needs the
-  author's go-ahead. Record any such evidence under the existing provenance,
-  custody and disposition rules for outside review and reader evidence; never
-  invent a reader, endorsement or result, and do not count AI reviews as
-  validation.
-
-  **Done when:** the author closes it. It never blocks another item.
+The revision is complete. Numbering continues from items 01–33, which
+`CLAUDE.md` records; items 34–65 and 67–72 are complete and recorded there too.
+The author closed the optional item 66, independent validation, on 2026-09-25
+without outside validation. Only the submissions below remain. Chapter numbers
+refer to the [current reading sequence](book-1/contents.json), which item 53
+made the plan's §4.2 table; the plan's own §14 punch list uses the earlier
+numbers, which `tools/maps/2026-09-25-restructure.json` maps to these.
 
 ## Licence
 
@@ -271,11 +250,15 @@ Start from the publisher-neutral proposal in `submission/README.md`, updated to
 the finished text, and adapt it to each press's current official submission
 requirements. No press is contacted before then.
 
-Prepared 2026-09-25, nothing sent: [`submission/presses.md`](submission/presses.md)
-records each press's current requirements with its sources. It drafts the
-synopsis, the description and the AI disclosure, and lists what only the author
-can supply. Four presses' own policies need the author's decision first:
+On 2026-09-25 the author chose all seven, knowing that four presses' own
+policies stand in the way:
 - Verso's opposition to generative AI;
 - UCL Press's AI policy and its charge;
 - punctum's window, open only from May to July;
 - Westminster's CC BY-NC-ND book licence.
+
+[`submission/presses.md`](submission/presses.md) records each press's
+requirements with their sources. [`submission/drafts/`](submission/drafts/README.md)
+holds a message ready for each press; the messages to those four raise the
+conflict first. The author sends each one after filling the gaps marked
+`[AUTHOR: …]`. Nothing has been sent.
