@@ -341,7 +341,7 @@ checked here.
 | 31-00 | 31-the-five-joints.md | (preamble) | Personhood and equality | exempt | argument | the author speaking, unchecked by the machine | chooses | unresolved | yes | argument | `exempt-element` |
 | 31-01 | 31-the-five-joints.md | Valuation | Economy, property, work and commons | exempt | argument | Owen's New Harmony and the valuation joint | chooses | contested | yes | argument | `exempt-element` |
 | 31-02 | 31-the-five-joints.md | Rotation | Economy, property, work and commons | exempt | argument | the kibbutzim and the rotation joint | works | contested | no | argument | `exempt-element` |
-| 31-03 | 31-the-five-joints.md | Coercion | Justice and coercion | exempt | argument | ujamaa and the coercion joint | is acted upon | fails | yes | argument | `exempt-element` |
+| 31-03 | 31-the-five-joints.md | Coercion | Justice and coercion | exempt | argument | incarceration evidence, abolition and the coercion joint | is acted upon | fails | yes | argument | `exempt-element` |
 | 31-04 | 31-the-five-joints.md | Capture | Public institutions | exempt | argument | Mondragon and the capture joint | governs | contested | yes | argument | `exempt-element` |
 | 31-05 | 31-the-five-joints.md | The State | Locality, mobility and external relations | exempt | argument | Cybersyn, and four fates at the hands of a state | governs | contested | yes | argument | `exempt-element` |
 | 31-06 | 31-the-five-joints.md | What the argument asks | Personhood and equality | exempt | argument | why there is no score at the end | chooses | unresolved | yes | argument | `exempt-element` |

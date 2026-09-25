@@ -217,35 +217,13 @@ unimplemented until the items named here land.
 
 ## Ordered revision backlog
 
-Work in this order: items 47–52, which measure, repair and prepare; items
+Work in this order: items 48–52, which measure, repair and prepare; items
 53–63 carry the structure and the rewrite under the ratified rulings; item 64
 finishes production, 65 closes the revision, and 66 is optional. Numbering
-continues from items 01–33, which `CLAUDE.md` records; items 34–46 and 67–72
+continues from items 01–33, which `CLAUDE.md` records; items 34–47 and 67–72
 are complete and recorded there too. Chapter numbers refer to the [current
 reading sequence](book-1/contents.json), which the plan also uses, until item 53
 changes it.
-
-### Evidence and lineage
-
-- [ ] **47. Correct Part V's evidence and credit its lineage.**
-
-  **Scope:** Part V and the opening; plan §9 and §9.1.
-
-  The coercion argument opens with Tanzania's villagisation, which concerns
-  forced relocation, not criminal confinement. Replace it with evidence on
-  incarceration and its alternatives, such as the Nordic comparisons and the
-  recidivism and employment research the plan lists. Tie the communes and
-  cooperatives to the choices they bear on, valuation and rotation, and add
-  republic-level evidence for the others. Credit the lineage the book builds
-  on where the argument uses each idea: Shue on basic rights; the respect,
-  protect and fulfil framework; Sen and Drèze on entitlements; Pettit on
-  non-domination; Anderson; Rawls on the social minimum; Rahman; Raworth and
-  Rockström; Ostrom; Nissenbaum; the 3Rs; the CRPD and the UNCRC; Kymlicka
-  and Shachar; Crépeau and Hastie; the Quebec Reference. Each source is
-  registered by item 46; use its claim and notes, not the plan's description.
-
-  **Done when:** each historical example supports a stated comparison, every
-  credit is verified and registered, and the Part V figure bindings pass.
 
 ### The formal layer
 

@@ -36,6 +36,17 @@ arrangement would do the work with fewer burdens. Their constitutional status
 makes alteration deliberate; it does not make every institutional detail part
 of the unamendable core.
 
+The commitments have a lineage. Henry Shue argued that subsistence is a basic
+right beside security, and that each basic right carries duties to avoid
+depriving, to protect from deprivation and to aid the deprived.[^shue] Asbjørn
+Eide's studies for the United Nations described obligations to respect, protect
+and fulfil the right to food, which the UN committee on economic rights adopted
+along with a minimum core of essentials every state
+owes.[^respect-protect-fulfil] This design departs from that tradition at one
+point. The committee's duty to provide food applies where people cannot feed
+themselves for reasons beyond their control; this floor asks nothing of the
+person owed.
+
 The core itself needs a harder defence. A future majority may reject the
 founders' judgment. Refusing that majority authority to remove a protection
 is a decision about who must bear its error, not a deduction from consistency.
@@ -69,6 +80,21 @@ count as employment without creating a duty to a spouse or relative. Ordinary
 democratic law may allow different wages, returns and incentives above the
 floor. None requires a constitutional judgment that its recipient belongs to
 the class of recognised people.
+
+Cooperatives show a community setting its own pay spread above whatever
+minimum it guarantees. Mondragon's industrial beginning dates to 1956; its 2024
+annual report records an average workforce of about seventy thousand. Its own
+2021 account describes a wage scale of six to one between maximum and minimum
+salaries, alongside shared financial and employment arrangements. These are
+reported institutional arrangements, not a finding that cooperative pay
+arrangements improve on others.[^mondragon]
+
+For comparison, EPI's projected estimate for the largest 350 American firms by
+sales in 2025 is about 325-to-1. The denominator is an industry average for
+production and nonsupervisory workers, not the lowest-paid worker or a median
+employee of each company. The dates, populations and pay measures differ. The
+figures illustrate different distributions; their ratio cannot measure the
+effect of cooperative governance.[^pay]
 
 I choose to confer no such status. People can honour care and creation through
 expression and association; a public service can account for the acts it relies
@@ -144,6 +170,13 @@ lottery. A high price, a withheld stock or an administrative refusal does not
 itself establish physical scarcity. The evidence must concern the resource,
 people affected and reasonable alternatives.
 
+The distinction is Amartya Sen's. His study of the 1943 Bengal famine found
+that people starved because they lost the means to command food, not because
+the supply had fallen, and Drèze and Sen argued for public action that protects
+those entitlements rather than waiting for prosperity.[^entitlement] A shortage
+of money or a refused purchase is a failure of entitlement, and the design
+treats it as a failure rather than as scarcity.
+
 This choice gives officials consequential judgments to make. The cost falls
 on those given lower priority and those whose needs the evidence understates.
 Maximising aggregate benefit or expected years of life could sometimes yield
@@ -192,6 +225,9 @@ bounded transition, alternatives and repair still owed. This is a duty to end
 the collision. It does not declare the river expendable or make present use
 compliant by renaming the breach. A feasible route meeting both protections
 removes the basis for this interim choice. Budget refusal cannot supply it.
+A human floor beneath an ecological ceiling is Kate Raworth's doughnut, whose
+ceiling draws on the planetary boundaries Rockström and colleagues proposed in
+2009.[^doughnut]
 
 That priority concerns immediate human continuity under an established present
 incompatibility. It gives no general priority to a human purpose over an animal's
@@ -275,15 +311,22 @@ while organising life around punishment. A person retains formal rights but
 loses relationships, employment or care in practice. A limited vocabulary can
 make that harm less visible without making it smaller.
 
-Tanzania's villagisation is a warning about that distance. The policy moved
-from voluntary ujamaa villages to compulsory settlement. For the 1973–1976
-campaign, Scott reports at least five million people relocated. He also quotes
-Nyerere's claim of over 13 million village residents, a different population.
-Those figures cannot be combined into an agreed count of coerced moves, and
-their disagreement alone establishes no cause. The relevant evidence is the
-use of compulsory relocation in a project justified as collective
-improvement. It does not establish that every public service or village is
-coercive.[^ujamaa]
+The evidence on confinement points in more than one direction. In Norway,
+where criminal cases are assigned to judges at random, Bhuller, Dahl, Løken and
+Mogstad compared defendants whose sentences depended on the judge they happened
+to draw. Imprisonment reduced reoffending over the following five years, and
+the fall came from defendants who had not been working before prison, whose
+job training and later employment rose. Defendants who had been working lost
+employment and did not recover it, with no clear change in reoffending. The
+estimates concern one country's prisons and the defendants whose sentence
+turned on the judge assigned; they show neither that confinement helps
+elsewhere nor which feature of Norwegian custody mattered.[^incarceration]
+John Pratt ties the Nordic combination of low imprisonment and humane conditions
+to the equality of the Scandinavian welfare state, and warns that it weakens as
+social solidarity declines.[^nordic] Elsewhere the losses outlast the sentence:
+Gabriel Chin argues that restrictions on employment, benefits, residence and
+civil rights after conviction have revived civil death under another
+name.[^civil-death]
 
 Here conviction's direct deprivation is movement. Standing, the material
 floor and political voice do not become rewards for good conduct. Separate
@@ -292,8 +335,13 @@ cannot silently supply them. Neither employment nor a favourable character
 judgment buys or extends liberty. The restriction is consequential enough
 without making hunger, homelessness or civic exclusion additional penalties.
 
-A serious alternative uses compulsory restitution, cessation and compensation
-alongside voluntary restorative agreements, while refusing penal confinement.
+Abolitionists make the strongest case against keeping the power. Angela Davis
+argues for decarceration through schools, health care and a justice of
+reparation that would crowd the prison out, and Ruth Wilson Gilmore traces
+California's prison expansion to economic surplus rather than to rising
+crime.[^abolition] A serious alternative in that spirit uses compulsory
+restitution, cessation and compensation alongside voluntary restorative
+agreements, while refusing penal confinement.
 Rejecting a voluntary settlement does not defeat those compulsory remedies
 and cannot by itself justify imprisonment. This constitution has non-carceral
 remedy routes and does not make survivor support depend on prosecution or
@@ -364,7 +412,11 @@ without the primary registry's entry. That protection is not a final judgment
 on the merits. The person need not win the appeal before its question can
 interrupt the authority being challenged.
 
-The formal checks do not measure duration or open a cell. The record cannot
+In 1979 India's Supreme Court found undertrial prisoners in Bihar held for
+three to ten years without trial for offences that might have carried months of
+punishment, ordered their release on personal bond and held a speedy trial
+implicit in the right to life and liberty.[^undertrials] The formal checks do
+not measure duration or open a cell. The record cannot
 establish that outside time advanced, that a later finding arrived, or that
 an official honoured release. Independent access, review of actual holding, continuing
 care and a duty to secure release address those acts in law. Their
@@ -411,28 +463,19 @@ challenge. This is the strongest objection to governing through explicit
 records: the certainty of the conclusion can conceal uncertainty about its
 premises.
 
-Mondragon provides a useful counterexample to the claim that cooperation must
-remain small. Its industrial beginning dates to 1956; its 2024 annual report
-records an average workforce of about seventy thousand. Its own 2021 account
-describes a wage scale of six to one between maximum and minimum salaries,
-alongside shared financial and employment arrangements. These are reported
-institutional arrangements, not a finding that cooperative ownership prevents
-capture.[^mondragon]
-
-For comparison, EPI's projected estimate for the largest 350 American firms by
-sales in 2025 is about 325-to-1. The denominator is an industry average for
-production and nonsupervisory workers, not the lowest-paid worker or a median
-employee of each company. The dates, populations and pay measures differ. The
-figures illustrate different distributions; their ratio cannot measure the
-effect of cooperative governance.[^pay]
-
-The design permits cooperative enterprise without giving it an exemption from
-labour rights, equality or scrutiny. The same is true of a public provider or
+Ownership does not settle the question. The design permits cooperative
+enterprise without giving it an exemption from labour rights, equality or
+scrutiny. The same is true of a public provider or
 private company. Concentrated private power receives duties when a finding
 establishes a particular dependency, essential function or gatekeeping power.
 An ownership label neither establishes those grounds nor defeats them. This
 keeps the question on what a person can refuse, challenge or leave, rather
 than on an institution's preferred account of itself.
+Elizabeth Anderson describes most workplaces as private governments, whose
+authority over workers they have no say in, and K. Sabeel Rahman argues that
+firms controlling infrastructure many others depend on should be regulated as
+public utilities.[^private-power] The function-specific duties follow that
+line; neither author supplies the finding a particular case needs.
 
 Exclusive public provision offers a simpler line of responsibility for
 essentials. Entrenching it would also prevent a different provider arrangement
@@ -445,6 +488,17 @@ repeatedly defeats access or remedy, its ownership freedoms give no reason
 to preserve it. Conversely, public ownership by itself supplies no evidence
 that provision arrived. The comparison concerns accessible service and
 answerability, not a constitutionally preferred provider label.
+
+Record systems have failed at the scale of a republic. Australia's Royal
+Commission into the Robodebt Scheme found that its automated debt-raising, which
+averaged tax data into welfare debts, was “a crude and cruel mechanism, neither
+fair nor legal”, and the government refunded some 381,000 people.[^robodebt]
+The Dutch parliamentary inquiry into the childcare-benefits affair found that
+fundamental principles of the rule of law had been violated, and named the
+legislature and the administrative courts beside the tax
+administration.[^childcare-benefits] Neither shows that recorded rules must
+fail. Both show a procedure followed while the people subject to it lost what
+they were owed.
 
 The record problem reaches essentials directly. Drèze and his coauthors report
 mass cancellation of ration cards in Jharkhand for want of an Aadhaar link,
@@ -490,24 +544,33 @@ could reveal an unmet need without making someone repeat the account at every
 door. A validated prediction can be more informative than an official's
 unrecorded intuition. The objection is serious: privacy should not be
 purchased by abandoning someone whom a service could have found.
+The District Court of The Hague tested one such system in 2020. It held the
+legislation for SyRI, the Dutch risk-indication system for benefit and tax
+fraud, incompatible with the right to private life because its safeguards,
+transparency and verifiability were insufficient, not because linking data was
+disproportionate in itself.[^syri]
 
 This design permits necessary records for particular purposes and independent
-statistics. It refuses a reusable classification of personal worth or risk
-that can travel into standing, the floor or liberty. Family status is no
-shortcut to somebody else's obligations or authority. Population patterns
-can support investigation and remedy without assigning inherited guilt to a
-person. Environmental and animal evidence likewise addresses its stated
-interest and purpose, not the comparative worth of human claimants. The cost
-falls especially on people who need several services, cannot repeatedly
-explain their circumstances, or depend on someone else to communicate.
-Requiring them to carry every paper would transfer the burden of privacy to
-the person least able to bear it. Duties to initiate help, provide accessible
-assistance and preserve care when a provider fails remain necessary alongside
-the record limits.
+statistics. The idea is Helen Nissenbaum's contextual integrity, in which an
+information flow is judged by the norms of the context it came from, and the
+purpose limitation European data protection law already applies.[^purpose] It
+refuses a reusable classification of personal worth or risk that can travel into
+standing, the floor or liberty. Family status is no shortcut to somebody else's
+obligations or authority. Population patterns can support investigation and
+remedy without assigning inherited guilt to a person. Environmental and animal
+evidence likewise addresses its stated interest and purpose, not the comparative
+worth of human claimants. The cost falls especially on people who need several
+services, cannot repeatedly explain their circumstances, or depend on someone
+else to communicate. Requiring them to carry every paper would transfer the
+burden of privacy to the person least able to bear it. Duties to initiate help,
+provide accessible assistance and preserve care when a provider fails remain
+necessary alongside the record limits.
 
 The competing danger falls on the same person. A joined account can carry a
 housing dispute into a care decision, or turn the pursuit of help into an
-opportunity for enforcement. Consent is a weak answer where refusing linkage
+opportunity for enforcement. The firewall between services and enforcement
+is the one Crépeau and Hastie propose for irregular migrants.[^firewall]
+Consent is a weak answer where refusing linkage
 means losing an essential. The design requires a lawful purpose, necessary
 use, correction and access to independent review. Access to the floor cannot
 purchase agreement to unrelated collection.
@@ -530,6 +593,14 @@ mandates and limits removal to stated cause. It also prohibits majority
 appointment control by one coalition, because different appointing names do
 not establish different interests. A prohibition is not evidence that the
 appointments obey it.
+
+India's Supreme Court shows the other side of the choice. In 2015 it struck
+down the National Judicial Appointments Commission, which would have seated the
+law minister and two eminent persons beside senior judges, and restored
+appointment by the judges themselves, holding that the Commission threatened
+judicial independence.[^njac] That judgment protects independence by letting
+the profession select itself, the cost this design's divided sources try to
+avoid.
 
 The purpose is scrutiny that the government cannot control through the next
 appointment or a threat of removal. Open competition alone cannot supply that
@@ -722,15 +793,16 @@ Nor would one significant and one nonsignificant result, by themselves,
 establish a difference between estimates. Gelman and Stern explain that
 distinction.[^measurement]
 
-Comparable observations over time, defensible causal assumptions and measures
-of people's worst circumstances would support a stronger investigation.
-Results that survive plausible measures and specifications would strengthen
-it; results that do not would weaken it. Neither settles who deserves a
-vote. My reason for equal voice is that people subject to public power
-should have an equal part in directing it. My reason for the floor is that
-needing essentials should not give another person a means to demand
-obedience. These are commitments to defend, not causal findings hidden in
-the country data.
+Comparable observations over time, defensible causal assumptions and measures of
+people's worst circumstances would support a stronger investigation. Results
+that survive plausible measures and specifications would strengthen it; results
+that do not would weaken it. Neither settles who deserves a vote. My reason for
+equal voice is that people subject to public power should have an equal part in
+directing it. My reason for the floor is that needing essentials should not give
+another person a means to demand obedience. That is Philip Pettit's freedom as
+non-domination: a person is unfree to the extent another can interfere in their
+choices at will, even if the other never does.[^pettit] These are commitments to
+defend, not causal findings hidden in the country data.
 
 ### Territorial power and the second chamber
 
@@ -738,7 +810,11 @@ A unitary republic can decentralise administration while keeping a clear
 national responsibility for equal rights. Federal division instead gives
 regional and local electorates authority a common majority cannot withdraw
 at will. I choose that protection for self-government, subject to common
-rights, equalisation and portability. Otherwise the cost of local autonomy
+rights, equalisation and portability. Evidence that people can govern shared
+resources themselves supports it: Elinor Ostrom found that long-enduring
+commons shared rules fitted to local conditions, collective choice, monitoring
+and accessible conflict resolution, observed practices rather than
+guarantees.[^commons] Otherwise the cost of local autonomy
 would fall on a resident whose region supplied less of the same entitlement.
 The cost of division falls on people sent between offices that deny
 responsibility. Review of competence, the last uncontested holder and bounded
@@ -752,7 +828,13 @@ judicial review is a strong alternative. It gives adults equal weight in
 national lawmaking and leaves the federal boundary to courts. The reason for
 a Regions Council is that changing the federal bargain changes a region's
 ability to govern itself, even where its population cannot assemble a
-national majority.
+national majority. Switzerland's Council of States, with two members from
+each canton whatever its population, is the familiar precedent, and it sits as
+an equal chamber beside the population-based National Council.[^swiss] The
+Regions Council here holds far less. Leaving the federation is by negotiated
+settlement, as the Supreme Court of Canada held for Quebec: no unilateral
+secession, but a duty on every party to negotiate once a clear majority clearly
+asks.[^secession]
 
 Equal regional weight gives residents of a small region more indirect weight
 in the Council. A second chamber weighted by population would reduce that
@@ -778,7 +860,11 @@ Germany's Basic Law applies it to the Chancellor. It is no unique advantage
 of a collective executive.[^constructive-replacement]
 
 The Executive Council makes judgment collective and denies its coordinator
-a personal mandate to overrule it. The reason is to require shared legal
+a personal mandate to overrule it. Switzerland's seven-member Federal Council
+decides as a collegial body. Uruguay was governed by a nine-member council from
+1952 to 1966 and returned to a presidency amid economic decline; the historian
+Martin Weinstein argues that the failure lay in political leadership rather than
+in the collegial form.[^collegial] The reason is to require shared legal
 authority at the point of decision, rather than rely on a leader's willingness
 to consult. A prime minister bound to the same collective decisions would
 narrow that difference. What matters is who can authorise the act, not the
@@ -814,6 +900,15 @@ prevents choosing several electorates for the same tier; forced displacement
 does not itself remove the last uncontested home. That continuity matters
 because removal from a place must not become a way to remove its voters.
 
+Resident voting is not untested. Permanent residents of New Zealand vote after
+a year's residence, foreign residents of Chile after ten uninterrupted years
+under its 2025 amendment, and citizens of the European Union in the municipal
+elections where they live.[^resident-vote] Claudio López-Guerra argues that
+resident non-citizens should vote and that excluding nonresident citizens is
+permissible. Robert Goodin's principle of enfranchising all affected interests
+reaches much further, toward everyone a decision might affect, and is the
+strongest alternative to drawing the line at residence.[^franchise]
+
 The boundary still costs a former resident who has voluntarily established
 a home elsewhere but retains family, property or an intention to return.
 Petition, protection and the right of return preserve claims, but they are
@@ -832,6 +927,12 @@ expression, participation and protection without the adult ballot; people
 affected beyond the border retain claims without gaining electoral weight.
 The membership argument establishes a reason to include adult residents,
 not a claim that a ballot exhausts political voice or every legitimate claim.
+Membership in a collective works the same way: belonging to an Indigenous people
+or a minority community cannot cost a person the rights every resident holds.
+That follows Will Kymlicka's distinction between protections a group holds
+against the wider society and restrictions it places on its own members, with
+Ayelet Shachar's warning that accommodating a group can expose its most
+vulnerable members.[^plurality]
 
 ### Essentials, public responsibility and fiscal choice
 
@@ -854,28 +955,38 @@ secure housing and remedy limits collection; it does not make collection
 voluntary. Fiscal evidence must establish what the available tax base and
 real resources can sustain. An entitlement cannot prove its own feasibility.
 
-A constitutional balanced-budget rule offers a simple restraint against
-passing costs to later taxpayers. It can also require essentials to contract
-when revenue falls, regardless of available resources or the reasons for
-borrowing. The design permits borrowing under legislative authority,
-reporting, audit and common resource limits. Debt-service burdens, creditor
-dependence and displaced necessary investment would count against how that
-discretion was used. Refusing a constitutional numerical ceiling supplies
-neither a sustainable debt level nor permission to ignore the evidence.
+A constitutional balanced-budget rule offers a simple restraint against passing
+costs to later taxpayers. It can also require essentials to contract when
+revenue falls, regardless of available resources or the reasons for borrowing.
+Germany's Basic Law, as amended in 2009, requires budgets to balance in
+principle, with limited structural borrowing and an emergency exception; in 2023
+the Federal Constitutional Court struck down a supplementary budget that moved
+unused pandemic borrowing authority into a climate fund.[^debt-brake] The rule
+binds as written, whatever the reason for the borrowing it forbids. The design
+permits borrowing under legislative authority, reporting, audit and common
+resource limits. Debt-service burdens, creditor dependence and displaced
+necessary investment would count against how that discretion was used. Refusing
+a constitutional numerical ceiling supplies neither a sustainable debt level nor
+permission to ignore the evidence.
 
 When a tier under-delivers at scale, individual duties multiply without
 compelling the next act. I choose a certified pattern, a declared
 unconstitutional state of affairs, a public plan with reasons and an end,
 independent monitoring and, if the Assembly fails to act, interim measures and a
-first claim on funds. Two alternatives are weaker. Courts administering services
-themselves would fuse adjudication with execution and leave nobody to review the
-administrator. Leaving the response to ordinary politics lets a majority absorb
-a shortfall that falls on people outside it. The price is the time between
-certification and a binding plan, borne by the people going without; the common
-tier's unconditional backstop duty and the interim measures bound it, but
-neither delivers anything by itself. Evidence that declared plans are adopted no
-faster than ordinary budgets, or that interim measures displace services they
-were meant to secure, would count against this choice.
+first claim on funds. Colombia's Constitutional Court took a similar route in
+2004, declaring an unconstitutional state of affairs for internally displaced
+people and ordering an action plan with deadlines and their participation. South
+Africa's Constitutional Court in Grootboom instead asked whether housing policy
+was reasonable, and held that one making no provision for people in desperate
+need was not.[^structural] Two alternatives are weaker. Courts administering
+services themselves would fuse adjudication with execution and leave nobody to
+review the administrator. Leaving the response to ordinary politics lets a
+majority absorb a shortfall that falls on people outside it. The price is the
+time between certification and a binding plan, borne by the people going
+without; the common tier's unconditional backstop duty and the interim measures
+bound it, but neither delivers anything by itself. Evidence that declared plans
+are adopted no faster than ordinary budgets, or that interim measures displace
+services they were meant to secure, would count against this choice.
 
 ### Emergency action without suspended rights
 
@@ -886,6 +997,10 @@ illustrates a bounded derogation framework: a proclaimed emergency threatening
 the life of the nation, strict necessity, protected rights and notification.
 Its existence does not establish how any particular emergency was handled.
 The choice is not between this republic and an unchecked executive.[^derogation]
+India shows what a suspension can reach. In 1976 its Supreme Court held that,
+while the presidential order stood, no detainee could seek habeas corpus even
+against an unlawful or malicious detention; the Forty-fourth Amendment later put
+the rights to life and liberty beyond emergency suspension.[^adm-jabalpur]
 
 This design permits accelerated proceedings, resource redirection, necessary
 requisition with return or compensation, and narrowly justified restrictions
@@ -924,19 +1039,32 @@ agreement while allowing later generations to correct the founders. Permanent
 entrenchment denies that last legal choice. It also gives interpreters power
 to decide whether a proposed reform crosses the boundary. An expansive
 interpretation can protect their preferences rather than anyone's rights.
+Jeremy Waldron makes the democratic case against courts striking down
+legislation, for societies with working institutions and reasonable
+disagreement about rights.[^waldron] The record of unamendable limits is mixed.
+Germany's Basic Law puts dignity and the federal and democratic principles
+beyond amendment, and India's Supreme Court held in Kesavananda Bharati that
+Parliament cannot alter the Constitution's basic structure; David Landau finds
+such doctrines hard to use against would-be autocrats who amend their way into
+power.[^entrenchment]
 
 I nevertheless choose a core protecting universal standing, equality,
-essentials, core liberty, due process, effective remedy and the commons on
-which life depends. Their justification is not that current voters are
-untrustworthy. It is that a person who loses a political contest must remain
-a member who can live, dissent and seek correction. A majority permitted to
-withdraw those conditions from its opponents could change who is able to
-participate in the next decision. Requiring a larger majority would make
-that deprivation harder without changing whose standing it treats as
-disposable. The constraint protects the loser as a continuing participant;
-it does not make the winner's policies immune to change.
-The same standing covers a child or a person unable to take part: protection
-does not depend on the capacity to bargain. Their dependence gives others a
+essentials, core liberty, due process, effective remedy and the commons on which
+life depends. Their justification is not that current voters are untrustworthy.
+It is that a person who loses a political contest must remain a member who can
+live, dissent and seek correction. Elizabeth Anderson's democratic equality asks
+what people need to function as equal citizens; she allows functionings that
+need an income to be conditioned on work, which this design refuses.[^anderson]
+A majority permitted to withdraw those conditions from its opponents could
+change who is able to participate in the next decision. Requiring a larger
+majority would make that deprivation harder without changing whose standing it
+treats as disposable. The constraint protects the loser as a continuing
+participant; it does not make the winner's policies immune to change. The same
+standing covers a child or a person unable to take part: protection does not
+depend on the capacity to bargain. The child is heard without a minimum age, as
+the Committee on the Rights of the Child reads Article 12 of its Convention, and
+support comes before any substituted decision, as the disability committee reads
+Article 12 of the disability convention.[^voice] Their dependence gives others a
 duty, not ownership of the dependent person's claim.
 
 That argument does not entrench every means. The provider mix, economic
@@ -964,7 +1092,9 @@ avoidable suffering and dispensable killing, beyond amendment.
 
 This is a limited moral commitment, not a frozen species list or a ban on
 every human use. Evidence about sentience, protective standards and regulated
-methods remains revisable. Necessity, accessible less harmful alternatives,
+methods remains revisable. Research answers to replacement, reduction and
+refinement, the principles Russell and Burch set out in 1959 and European law
+makes binding.[^three-rs] Necessity, accessible less harmful alternatives,
 welfare and independent prior review still govern uses requiring exceptional
 justification. The costs reach people whose work, food practices or customs
 rely on a prohibited use. Their essentials, subsistence claims, cultural and
@@ -1064,10 +1194,6 @@ where their conclusions stop.
     p. 12: his series reports 76% in 2011. The community count and reform share
     describe their respective study periods, not a current census.
 
-[^ujamaa]: James C. Scott, [*Seeing Like a State*](https://www.jstor.org/stable/j.ctt1nq3vk)
-    (1998), chapter 7, opening and “Bureaucratic Convenience, Bureaucratic
-    Interests.” The latter quotes Nyerere's village-resident total.
-
 [^mondragon]: MONDRAGON's [1956 institutional history](https://www.mondragon-corporation.com/en/timeline/1956/),
     [2024 annual report](https://www.mondragon-corporation.com/people/site/assets/files/103207/annual-report-2024.pdf), p. 13,
     and [2021 extended report](https://www.mondragon-corporation.com/people/site/assets/files/103207/annual-report-2020-ext.pdf),
@@ -1146,3 +1272,158 @@ where their conclusions stop.
     them on electoral democracy and log GDP per person, using conventional
     standard errors. These are methodological references, not studies of this
     constitution.
+
+[^shue]: Henry Shue, [*Basic Rights: Subsistence, Affluence, and U.S. Foreign
+    Policy*](https://press.princeton.edu/books/paperback/9780691202280/basic-rights)
+    (1980; 2nd ed. 1996), chapters 1 and 2.
+
+[^respect-protect-fulfil]: Asbjørn Eide, *Report on the right to adequate food
+    as a human right*, [E/CN.4/Sub.2/1987/23](https://documents.un.org/api/symbol/access?s=E/CN.4/Sub.2/1987/23&l=en&t=pdf),
+    paras 66–69; UN Committee on Economic, Social and Cultural Rights,
+    [General Comment 3](https://tbinternet.ohchr.org/_layouts/15/treatybodyexternal/Download.aspx?symbolno=INT%2FCESCR%2FGEC%2F4758&Lang=en)
+    (1990), para. 10, and [General Comment 12](https://documents.un.org/api/symbol/access?s=E/C.12/1999/5&l=en&t=pdf)
+    (1999), paras 6, 15 and 17. Paragraph 15 limits the duty to provide to
+    people unable to enjoy the right for reasons beyond their control.
+
+[^entitlement]: Amartya Sen, *Poverty and Famines* (Oxford: Clarendon Press,
+    1981), chapter 6, on the 1943 Bengal famine; Jean Drèze and Amartya Sen,
+    *Hunger and Public Action* (Oxford: Clarendon Press, 1989), chapters 2 and
+    5. Locators and the limits of what was read are in the
+    [claims registry](../registry/claims.json).
+
+[^doughnut]: Kate Raworth, [*Doughnut Economics*](https://www.kateraworth.com/doughnut/)
+    (2017); Johan Rockström et al., [“A safe operating space for
+    humanity”](https://doi.org/10.1038/461472a), *Nature* 461 (2009),
+    472–475. The boundaries and their transgression are 2009 estimates.
+
+[^incarceration]: Manudeep Bhuller, Gordon B. Dahl, Katrine V. Løken and Magne
+    Mogstad, [“Incarceration, Recidivism, and
+    Employment”](https://doi.org/10.1086/705330), *Journal of Political
+    Economy* 128(4) (2020), 1269–1324. The subgroup effects are reported in the
+    authors' manuscript and may differ slightly from the printed article.
+
+[^nordic]: John Pratt, “Scandinavian Exceptionalism in an Era of Penal Excess”,
+    [Part I](https://doi.org/10.1093/bjc/azm072) and
+    [Part II](https://doi.org/10.1093/bjc/azm073), *British Journal of
+    Criminology* 48 (2008). The papers concern Finland, Norway and Sweden, and
+    the thesis has been contested.
+
+[^civil-death]: Gabriel J. Chin, [“The New Civil Death: Rethinking Punishment
+    in the Era of Mass Conviction”](https://scholarship.law.upenn.edu/penn_law_review/vol160/iss6/6),
+    *University of Pennsylvania Law Review* 160 (2012), 1789–1833.
+
+[^abolition]: Angela Y. Davis, [*Are Prisons Obsolete?*](https://www.sevenstories.com/books/2907-are-prisons-obsolete)
+    (2003); Ruth Wilson Gilmore, [*Golden Gulag*](https://www.ucpress.edu/books/golden-gulag/paper)
+    (2007). Both are arguments, not evidence that abolition works.
+
+[^undertrials]: *Hussainara Khatoon v. Home Secretary, State of Bihar*,
+    [Supreme Court of India, 12 February 1979](https://indiankanoon.org/doc/1007347/),
+    (1980) 1 SCC 81.
+
+[^private-power]: Elizabeth Anderson, [*Private Government*](https://doi.org/10.1515/9781400887781)
+    (2017), lecture 2; K. Sabeel Rahman, [“The New
+    Utilities”](https://larc.cardozo.yu.edu/clr/vol39/iss5/3/), *Cardozo Law
+    Review* 39 (2018), 1621–1689.
+
+[^robodebt]: Royal Commission into the Robodebt Scheme,
+    [*Report*](https://robodebt.royalcommission.gov.au/publications/report)
+    (7 July 2023), vol. 1, pp. xxvi–xxix.
+
+[^childcare-benefits]: Parlementaire ondervragingscommissie
+    Kinderopvangtoeslag, [*Ongekend onrecht*](https://zoek.officielebekendmakingen.nl/kst-35510-2.html),
+    Kamerstukken II 2020/21, 35 510, nr. 2 (17 December 2020), pp. 7–8.
+
+[^syri]: District Court of The Hague, 5 February 2020,
+    [ECLI:NL:RBDHA:2020:865](https://uitspraken.rechtspraak.nl/details?id=ECLI:NL:RBDHA:2020:865)
+    (English translation ECLI:NL:RBDHA:2020:1878), paras 6.7, 6.72, 6.86, 6.95
+    and 7.2.
+
+[^purpose]: Helen Nissenbaum, [“Privacy as Contextual
+    Integrity”](https://digitalcommons.law.uw.edu/wlr/vol79/iss1/10),
+    *Washington Law Review* 79 (2004), 119; General Data Protection Regulation,
+    [Article 5(1)(b)](https://eur-lex.europa.eu/eli/reg/2016/679/oj).
+
+[^firewall]: François Crépeau and Bethany Hastie, [“The Case for ‘Firewall’
+    Protections for Irregular Migrants”](https://doi.org/10.1163/15718166-12342076),
+    *European Journal of Migration and Law* 17 (2015), 157–183.
+
+[^njac]: *Supreme Court Advocates-on-Record Association v. Union of India*,
+    Supreme Court of India, 16 October 2015, [2015] 13 SCR 1, (2016) 5 SCC 1;
+    locators in the [claims registry](../registry/claims.json).
+
+[^pettit]: Philip Pettit, *Republicanism: A Theory of Freedom and Government*
+    (Oxford: Clarendon Press, 1997), chapters 1 and 2; *On the People's Terms*
+    (Cambridge: Cambridge University Press, 2012).
+
+[^commons]: Elinor Ostrom, [*Governing the Commons*](https://doi.org/10.1017/CBO9780511807763)
+    (1990), chapter 3.
+
+[^swiss]: Federal Constitution of the Swiss Confederation,
+    [arts 148, 150 and 174–177](https://www.fedlex.admin.ch/eli/cc/1999/404/en)
+    (English translation, which has no legal force).
+
+[^secession]: [*Reference re Secession of Quebec*](https://decisions.scc-csc.ca/scc-csc/scc-csc/en/item/1643/index.do),
+    [1998] 2 SCR 217, paras 84–92, 104, 151 and 155.
+
+[^collegial]: Martin Weinstein, [“Uruguay,
+    Colegiado”](https://www.encyclopedia.com/humanities/encyclopedias-almanacs-transcripts-and-maps/uruguay-colegiado),
+    *Encyclopedia of Latin American History and Culture*.
+
+[^resident-vote]: New Zealand, [Electoral Act 1993, s 74](https://www.legislation.govt.nz/act/public/1993/0087/latest/whole.html);
+    Chile, Constitution art. 14 as amended by Ley 21.773 (2025), in force from
+    2026; Treaty on the Functioning of the European Union art. 22(1) and
+    [Council Directive 94/80/EC](https://eur-lex.europa.eu/eli/dir/1994/80/oj).
+
+[^franchise]: Claudio López-Guerra, [*Democracy and
+    Disenfranchisement*](https://doi.org/10.1093/acprof:oso/9780198705789.001.0001)
+    (2014), chapter 4; Robert E. Goodin, [“Enfranchising All Affected
+    Interests, and Its Alternatives”](https://doi.org/10.1111/j.1088-4963.2007.00098.x),
+    *Philosophy & Public Affairs* 35 (2007), 40–68.
+
+[^plurality]: Will Kymlicka, *Multicultural Citizenship* (Oxford: Clarendon
+    Press, 1995), chapter 3; Ayelet Shachar, *Multicultural Jurisdictions*
+    (Cambridge: Cambridge University Press, 2001), chapter 6. Locators are in
+    the [claims registry](../registry/claims.json).
+
+[^debt-brake]: Basic Law for the Federal Republic of Germany,
+    [arts 109(3) and 115(2)](https://www.gesetze-im-internet.de/englisch_gg/englisch_gg.html)
+    as amended in 2009 and again in 2025; Federal Constitutional Court, judgment
+    of 15 November 2023, 2 BvF 1/22.
+
+[^structural]: Constitutional Court of Colombia, [Judgment
+    T-025 of 2004](https://www.corteconstitucional.gov.co/relatoria/2004/t-025-04.htm),
+    a review chamber's decision; *Government of the Republic of South Africa v
+    Grootboom*, [2000] ZACC 19, paras 41–44 and 66–69. The Court in Grootboom
+    declined to define a minimum core on its record; it did not reject the idea.
+
+[^adm-jabalpur]: *Additional District Magistrate, Jabalpur v. S. S. Shukla*,
+    [Supreme Court of India, 28 April 1976](https://indiankanoon.org/doc/1735815/),
+    (1976) 2 SCC 521, with Khanna J's dissent; Constitution (Forty-fourth
+    Amendment) Act, 1978, s 40, amending Article 359.
+
+[^waldron]: Jeremy Waldron, [“The Core of the Case Against Judicial
+    Review”](https://doi.org/10.2307/20455656), *Yale Law Journal* 115 (2006),
+    1346–1406. The argument targets strong review and holds under four stated
+    assumptions.
+
+[^entrenchment]: Basic Law for the Federal Republic of Germany, Article 79(3);
+    *Kesavananda Bharati v. State of Kerala*, Supreme Court of India, 24 April
+    1973, (1973) 4 SCC 225; David Landau, [“Abusive
+    Constitutionalism”](https://lawreview.law.ucdavis.edu/sites/g/files/dgvnsk15026/files/media/documents/47-1_Landau.pdf),
+    *UC Davis Law Review* 47 (2013), 189–260. Yaniv Roznai,
+    [*Unconstitutional Constitutional Amendments*](https://doi.org/10.1093/law/9780198768791.001.0001)
+    (2017), surveys the doctrine comparatively.
+
+[^anderson]: Elizabeth S. Anderson, [“What Is the Point of
+    Equality?”](https://doi.org/10.1086/233897), *Ethics* 109 (1999),
+    287–337, at 289, 316 and 318.
+
+[^voice]: Convention on the Rights of the Child, Article 12, read with the
+    Committee on the Rights of the Child's General Comment 12 (2009), paras
+    20–21; Committee on the Rights of Persons with Disabilities, General
+    Comment 1 (2014), paras 17, 21 and 26–29. Locators are in the
+    [claims registry](../registry/claims.json).
+
+[^three-rs]: W. M. S. Russell and R. L. Burch, *The Principles of Humane
+    Experimental Technique* (London: Methuen, 1959), chapter 4; Directive
+    2010/63/EU, [Article 4](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02010L0063-20190626).

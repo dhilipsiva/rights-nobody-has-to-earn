@@ -1123,3 +1123,33 @@ its recomputed aggregate. This approval record changes no formal rule, fact,
 fixture, query, verdict, claim posture, or evidence ceiling. The installed
 economic prose still establishes no operation, delivery, liveness,
 affordability, supply, capacity, stability, or empirical feasibility.
+
+## Part V's evidence and lineage — item 47, 2026-09-25
+
+Part V now argues from sources item 46 checked and registered, and it credits
+the ideas it builds on where its argument uses them. The coercion joint opens
+with evidence on confinement rather than Tanzania's villagisation, which
+concerned forced relocation: the Norwegian random-judge study of incarceration,
+recidivism and employment, read with its limits; Pratt on Nordic penal
+exceptionalism; Chin on the collateral consequences of conviction; and the
+Bihar undertrials. Davis and Gilmore state the abolitionist case the joint
+answers. The cooperatives' pay evidence moves from the capture joint to the
+valuation joint, where it bears on the choice. Republic-level evidence joins
+the other joints: Robodebt and the Dutch childcare-benefits inquiry on records,
+SyRI on linked records, the NJAC judgment on appointments, Switzerland and
+Uruguay on the chambers and the collective executive, the residence franchises
+of New Zealand, Chile and the European Union, the German debt brake and its
+2023 ruling, Colombia's T-025 and Grootboom on failure at scale, ADM Jabalpur
+on emergency, and Kesavananda, Article 79(3), Landau and Waldron on the core.
+
+The credits are Shue, the respect/protect/fulfil framework and the minimum
+core, Sen and Drèze, Pettit, Anderson (on democratic equality and on private
+government), Rahman, Raworth and Rockström, Ostrom, Nissenbaum and purpose
+limitation, the three Rs, the CRC's and CRPD's Article 12, Kymlicka and
+Shachar, Crépeau and Hastie, and the Quebec Secession Reference. Each is stated
+as its registry entry supports, including where the design departs from it:
+the UN committee's duty to provide food and Anderson's guarantee both allow
+conditions this floor refuses. Rawls is not credited, because item 46 could not
+verify the sentence the plan attributed to *Political Liberalism*. The opening
+names the principal lineage and points to Part V. The exact prose is
+`session-drafted, author-approved under delegated approval (2026-09-13)`.

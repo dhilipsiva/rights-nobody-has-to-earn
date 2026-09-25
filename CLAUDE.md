@@ -134,6 +134,44 @@ reinstate the retired tooling or workflow.
 Grouped by kind. Dates in each heading are the ratification dates; a ruling
 that was later implemented or narrowed carries that supersession inline.
 
+### Item 47 — Part V's evidence corrected and its lineage credited, 2026-09-25
+
+The coercion joint opened with Tanzania's villagisation, which concerned forced
+relocation rather than criminal confinement. It now opens with evidence on
+confinement, each item stated as its item 46 entry supports: the Norwegian
+random-judge study (imprisonment reduced reoffending, the gain coming from
+defendants not working before prison while the previously employed lost
+employment, for one country's prisons and the defendants whose sentence turned
+on the judge), Pratt on Nordic penal exceptionalism, Chin on collateral
+consequences, and the Bihar undertrials in the lapse paragraph. Davis and
+Gilmore state the abolitionist case the joint answers. The cooperative pay
+evidence moves to the valuation joint, where it bears on the choice, and
+republic-level evidence joins the rest: Robodebt, the Dutch childcare-benefits
+inquiry, SyRI, the NJAC judgment, Switzerland's chambers, Uruguay's colegiado,
+the New Zealand, Chilean and EU resident franchises with López-Guerra and
+Goodin, the debt brake and its 2023 ruling, T-025 and Grootboom, ADM Jabalpur
+and the Forty-fourth Amendment, and Kesavananda, Article 79(3), Landau and
+Waldron.
+
+The lineage is credited where the argument uses each idea, and where the design
+departs from it: Shue, respect/protect/fulfil and the minimum core (the UN
+committee's duty to provide is conditional; this floor is not), Sen and Drèze,
+Pettit, Anderson (her guarantee allows work conditions this design refuses),
+Rahman, Raworth and Rockström, Ostrom, Nissenbaum and purpose limitation, the
+three Rs, Article 12 of the CRC and the CRPD, Kymlicka and Shachar, Crépeau and
+Hastie, and the Quebec Reference. Rawls is not credited, because item 46 could
+not verify the plan's sentence. The opening names the principal lineage and
+points to Part V. Every new footnote's locator was checked against the
+registry, three replaced where the draft had not used the recorded one. The
+Part V figure bindings drop Tanzania and gain sixteen rows (39). The
+narrative-register decision records the change; the exact prose is
+`session-drafted, author-approved under delegated approval (2026-09-13)`.
+
+No rule, pin or suite changes, so item 72's complete run on the same formal
+inputs stands. The claim-discipline, reference, reader-coverage and receipt
+development tests pass, as does the prose check once one new "voided" became
+"struck down".
+
 ### Item 46 — the plan's sources, checked and registered, 2026-09-25
 
 The revision plan named about 150 sources in §8.2, §8.5, §9.1, §9.2 and §10 and

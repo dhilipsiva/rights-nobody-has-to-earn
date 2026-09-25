@@ -36,7 +36,7 @@ fn part_v(context: &Context) -> String {
 /// leans on it. One source may carry several figures — Tanzania's relocation
 /// count and Mondragon's headcount are not one claim each — so the rows are
 /// keyed by case, not by entry.
-const TRACED: [(&str, &str, &str); 24] = [
+const TRACED: [(&str, &str, &str); 39] = [
     ("Owen's New Harmony", "harrison-1969-owen", "New Harmony"),
     ("the kibbutzim", "abramitzky-kibbutz", "270 communities"),
     (
@@ -49,7 +49,54 @@ const TRACED: [(&str, &str, &str); 24] = [
         "lin-1990-collectivization",
         "until 1958",
     ),
-    ("Tanzanian villagization", "scott-1998-ujamaa", "13 million"),
+    (
+        "the Norwegian incarceration study",
+        "bhuller-2020-incarceration-recidivism-employment",
+        "judge they happened",
+    ),
+    (
+        "Nordic penal exceptionalism",
+        "pratt-2008-scandinavian-exceptionalism",
+        "low imprisonment",
+    ),
+    ("the new civil death", "chin-2012-new-civil-death", "civil death"),
+    ("the Bihar undertrials", "hussainara-khatoon-1979", "three to ten years"),
+    ("Robodebt", "robodebt-royal-commission-2023", "crude and cruel"),
+    (
+        "the Dutch childcare-benefits affair",
+        "nl-ongekend-onrecht-2020",
+        "childcare-benefits affair",
+    ),
+    ("the SyRI judgment", "syri-hague-district-court-2020", "SyRI"),
+    (
+        "the NJAC judgment",
+        "scaora-v-union-of-india-njac-2015",
+        "Judicial Appointments Commission",
+    ),
+    (
+        "Switzerland's chambers",
+        "swiss-constitution-1999-federal-council-council-of-states",
+        "Council of States",
+    ),
+    ("Uruguay's colegiado", "uruguay-colegiado-1952", "1966"),
+    ("New Zealand's resident vote", "nz-electoral-act-1993-s74", "New Zealand"),
+    (
+        "Chile's resident vote",
+        "chile-constitution-art14-foreign-residents-2025",
+        "ten uninterrupted years",
+    ),
+    (
+        "the German budget ruling",
+        "bverfg-2023-second-supplementary-budget-2021",
+        "supplementary budget",
+    ),
+    (
+        "Colombia's displacement judgment",
+        "colombia-t025-2004-displacement",
+        "unconstitutional state of affairs for internally displaced",
+    ),
+    ("ADM Jabalpur", "adm-jabalpur-1976", "habeas corpus"),
+    ("Kesavananda Bharati", "kesavananda-bharati-1973", "basic structure"),
     ("Mondragon", "mondragon-2025", "1956"),
     (
         "Mondragon's reported pay scale",

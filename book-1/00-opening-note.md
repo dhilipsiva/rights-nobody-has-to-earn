@@ -81,6 +81,15 @@ the formal design. An exposed failure still needs resolution. A constitutional
 duty still needs people and resources to fulfil it. This volume specifies the
 destination; *What It Would Take*, the second book, owns operation and transition.
 
+The commitments have a lineage, and Part V credits each idea where its argument
+uses it: Henry Shue's case that subsistence is a basic right; the duties to
+respect, protect and fulfil the right to food; Amartya Sen's and Jean Drèze's
+account of hunger as a failure of entitlement; Philip Pettit's freedom as
+non-domination; and Elizabeth Anderson's democratic equality. The design departs
+from several of them where it matters most, in asking nothing of the person
+owed: the UN committee's duty to provide food, and Anderson's guarantee, both
+allow conditions this floor refuses.
+
 **Begin with [Chapter 1: The Child With Nobody](01-the-child-with-nobody.md).**
 Read the cases in order through Part V, where the argument ends. If you want
 the reasons before the institutional detail, the [choices below](#the-choices-and-their-arguments)
