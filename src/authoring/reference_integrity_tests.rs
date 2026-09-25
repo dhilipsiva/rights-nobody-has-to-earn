@@ -219,6 +219,18 @@ fn contents_manifest_matches_the_directory() {
             }
         }
     }
+    // A landed Part opener exists and its H1 is the manifest's title.
+    for part in &contents.parts {
+        if let (Some(file), Some(title)) = (&part.opener.file, &part.opener.title) {
+            let heading = context
+                .read(&format!("book-1/{file}"))
+                .expect("opener")
+                .lines()
+                .find_map(|line| line.strip_prefix("# ").map(str::trim).map(str::to_owned))
+                .unwrap_or_default();
+            assert_eq!(&heading, title, "{file}'s H1 and the manifest's opener title differ");
+        }
+    }
     // Each derived chapter is one live, scanned case in the execution inventory,
     // identified by its path sans extension.
     let inventory: Value =

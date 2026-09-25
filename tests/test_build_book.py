@@ -126,7 +126,12 @@ class UiExportTests(unittest.TestCase):
         with tempfile.TemporaryDirectory() as directory:
             book.export_ui(Path(directory), docs)
             result = json.loads((Path(directory) / 'book.json').read_text())
-        self.assertEqual(len(result['pages']), 32)
+        manifest = json.loads((book.BOOK / 'contents.json').read_text(encoding='utf-8'))
+        inputs = len(manifest['front']) + len(manifest['back']) + sum(
+            (part.get('opener', {}).get('status') == 'landed')
+            + sum(c['status'] == 'landed' for c in part['chapters'])
+            for part in manifest['parts'])
+        self.assertEqual(len(result['pages']), inputs)
         self.assertEqual([p['stem'] for p in result['pages']], [d.stem for d in docs])
         ids = {p['path']: {e.get('id') for e in ET.fromstring(p['html']).iter() if e.get('id')}
                for p in result['pages']}

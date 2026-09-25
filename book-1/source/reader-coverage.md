@@ -46,14 +46,14 @@ carried in single figures, which is where the rebalance has most to do.
 
 | Posture | Passages |
 | --- | ---: |
-| chooses | 14 |
+| chooses | 20 |
 | creates | 3 |
 | cares | 6 |
 | works | 10 |
 | associates | 6 |
 | requests | 8 |
 | receives | 58 |
-| challenges | 26 |
+| challenges | 27 |
 | governs | 34 |
 | is acted upon | 73 |
 
@@ -70,7 +70,7 @@ what matters is the book's shape, not the chapter's.
 | democratic | 33 |
 | coercive | 42 |
 | records | 31 |
-| argument | 7 |
+| argument | 13 |
 
 Whether a passage follows its pattern's own arc — seeks, responds,
 receipt, challenge, continuity, boundary — is prose review and is not
@@ -87,16 +87,16 @@ checked here.
 | Ecology, future generations and commons | 4 | 4 | 5 |
 | Economy, property, work and commons | 15 | 14 | 14 |
 | Emergency and resilience | 2 | 2 | 3 |
-| Justice and coercion | 13 | 11 | 12 |
+| Justice and coercion | 13 | 11 | 13 |
 | Knowledge, communication and culture | 2 | 1 | 1 |
-| Life course, family, care and reproduction | 12 | 4 | 8 |
+| Life course, family, care and reproduction | 12 | 4 | 6 |
 | Locality, mobility and external relations | 2 | 2 | 2 |
-| Material floor | 9 | 20 | 18 |
+| Material floor | 9 | 25 | 11 |
 | Non-human animals | 2 | 3 | 3 |
-| Personhood and equality | 18 | 8 | 11 |
+| Personhood and equality | 17 | 9 | 10 |
 | Public institutions | 10 | 9 | 13 |
-| Public safety, policing and use of force | 5 | 4 | 7 |
-| Records and accountability | 13 | 14 | 19 |
+| Public safety, policing and use of force | 5 | 4 | 6 |
+| Records and accountability | 13 | 15 | 17 |
 
 ## Every passage
 
@@ -104,42 +104,46 @@ checked here.
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | 01-00 | 01-the-child-with-nobody.md | (preamble) | Personhood and equality | UNIVERSAL-STANDING | ordinary | one entry, and what the rules make of it | receives | works | yes | constructive | `book-1/01-the-child-with-nobody.pins.nibli` |
 | 01-01 | 01-the-child-with-nobody.md | Everything owed | Material floor | ARTICLES | ordinary | the whole floor on the strength of a birth | receives | works | no | constructive | `book-1/01-the-child-with-nobody.pins.nibli` |
-| 01-02 | 01-the-child-with-nobody.md | No one is presumed to provide | Life course, family, care and reproduction | FAMILY-LIFE-COURSE | protective | the barriers personhood alone puts in place | receives | works | yes | constructive | `book-1/01-the-child-with-nobody.pins.nibli` |
-| 01-03 | 01-the-child-with-nobody.md | Help that does not wait for a request | Life course, family, care and reproduction | FAMILY-LIFE-ORDINARY | ordinary | unconditional initiation and specific care continuity without a family role | receives | works | yes | constructive | `book-1/01-the-child-with-nobody.pins.nibli` |
-| 01-04 | 01-the-child-with-nobody.md | What delivery needs | Material floor | DELIVERY-RECEIPT | both | owed without a receipt, a witness or a cell | receives | unresolved | yes | constructive | `book-1/01-the-child-with-nobody.pins.nibli` |
-| 01-05 | 01-the-child-with-nobody.md | The child the record never entered | Personhood and equality | UNIVERSAL-STANDING | protective | the child with no entry, and the birth rule deleted | receives | fails | no | constructive | `book-1/01-the-child-with-nobody.pins.nibli` |
-| 01-06 | 01-the-child-with-nobody.md | Who counts | Personhood and equality | UNIVERSAL-STANDING | ordinary | whether the answer depended on the birth | receives | works | yes | constructive | `book-1/01-the-child-with-nobody.pins.nibli` |
-| 01-07 | 01-the-child-with-nobody.md | The ways in | Personhood and equality | UNIVERSAL-STANDING | ordinary | a birth, an encounter, a presence, a holding | receives | works | no | constructive | `book-1/01-the-child-with-nobody.pins.nibli` |
+| 01-02 | 01-the-child-with-nobody.md | No one is presumed to provide | Life course, family, care and reproduction | FAMILY-LIFE-COURSE | protective | the barriers personhood alone puts in place | receives | works | no | constructive | `book-1/01-the-child-with-nobody.pins.nibli` |
+| 01-03 | 01-the-child-with-nobody.md | Help that does not wait for a request | Life course, family, care and reproduction | FAMILY-LIFE-ORDINARY | ordinary | unconditional initiation and specific care continuity without a family role | receives | works | no | constructive | `book-1/01-the-child-with-nobody.pins.nibli` |
+| 01-04 | 01-the-child-with-nobody.md | What delivery needs | Material floor | DELIVERY-RECEIPT | both | owed without a receipt, a witness or a cell | receives | unresolved | no | constructive | `book-1/01-the-child-with-nobody.pins.nibli` |
+| 01-06 | 01-the-child-with-nobody.md | Who counts | Personhood and equality | UNIVERSAL-STANDING | ordinary | whether the answer depended on the birth | receives | works | no | constructive | `book-1/01-the-child-with-nobody.pins.nibli` |
 | 01-08 | 01-the-child-with-nobody.md | A name at an encounter is a handle | Personhood and equality | UNIVERSAL-STANDING | protective | a name that turns out to be wrong | receives | works | no | constructive | `book-1/01-the-child-with-nobody.pins.nibli` |
 | 01-09 | 01-the-child-with-nobody.md | What cannot take it away | Personhood and equality | UNIVERSAL-STANDING | protective | a broken registry entry alongside a valid standing root | is acted upon | works | no | constructive | `book-1/01-the-child-with-nobody.pins.nibli` |
-| 01-10 | 01-the-child-with-nobody.md | Standing without a roster | Personhood and equality | UNIVERSAL-STANDING | ordinary | standing without a roster | receives | works | yes | constructive | `book-1/01-the-child-with-nobody.pins.nibli` |
+| 01-10 | 01-the-child-with-nobody.md | Standing without a roster | Personhood and equality | UNIVERSAL-STANDING | ordinary | standing without a roster | receives | works | no | constructive | `book-1/01-the-child-with-nobody.pins.nibli` |
+| 01-05 | 01-the-child-with-nobody.md | The child the record never entered | Personhood and equality | UNIVERSAL-STANDING | protective | the child with no entry, whom every route and every alarm misses | receives | fails | no | constructive | `book-1/01-the-child-with-nobody.pins.nibli` |
 | 01-11 | 01-the-child-with-nobody.md | What this cannot settle | Personhood and equality | UNIVERSAL-STANDING | protective | the boundary of a route nobody has to walk down | receives | unresolved | yes | constructive | `book-1/01-the-child-with-nobody.pins.nibli` |
-| 02-00 | 02-what-the-record-may-say.md | (preamble) | Records and accountability | ARTICLES | protective | the closed list of what may be said about you | is acted upon | works | yes | records | `book-1/02-what-the-record-may-say.pins.nibli` |
+| 01-12 | 01-the-child-with-nobody.md | Argument: Standing before identity | Personhood and equality | exempt | argument | standing before identity, against a verified registry and a check at the counter | chooses | contested | yes | argument | `exempt-element` |
+| 02-00 | 02-what-the-record-may-say.md | (preamble) | Records and accountability | ARTICLES | protective | the closed list of what may be said about you | is acted upon | works | no | records | `book-1/02-what-the-record-may-say.pins.nibli` |
 | 02-01 | 02-what-the-record-may-say.md | What is missing | Records and accountability | ARTICLES | protective | the closed evidence list | is acted upon | works | no | records | `book-1/02-what-the-record-may-say.pins.nibli` |
-| 02-02 | 02-what-the-record-may-say.md | Facts and conclusions are kept apart | Records and accountability | ARTICLES | protective | the evidence/conclusion split | is acted upon | works | yes | records | `book-1/02-what-the-record-may-say.pins.nibli` |
-| 02-03 | 02-what-the-record-may-say.md | One examination is not a credibility finding | Records and accountability | ARTICLES | protective | one auditor's report | is acted upon | works | yes | records | `book-1/02-what-the-record-may-say.pins.nibli` |
+| 02-02 | 02-what-the-record-may-say.md | Facts and conclusions are kept apart | Records and accountability | ARTICLES | protective | the evidence/conclusion split | is acted upon | works | no | records | `book-1/02-what-the-record-may-say.pins.nibli` |
+| 02-03 | 02-what-the-record-may-say.md | One examination is not a credibility finding | Records and accountability | ARTICLES | protective | one auditor's report | is acted upon | works | no | records | `book-1/02-what-the-record-may-say.pins.nibli` |
 | 02-04 | 02-what-the-record-may-say.md | Changing the vocabulary | Records and accountability | ARTICLES | protective | widening the record | is acted upon | contested | yes | records | `book-1/02-what-the-record-may-say.pins.nibli` |
-| 02-05 | 02-what-the-record-may-say.md | False or missing inputs | Records and accountability | ARTICLES | protective | a fabricated direct entry | is acted upon | unresolved | yes | records | `book-1/02-what-the-record-may-say.pins.nibli` |
+| 02-05 | 02-what-the-record-may-say.md | What this cannot settle | Records and accountability | ARTICLES | protective | a fabricated direct entry, a forged adulthood entry and a defect marker with its cause unknown | is acted upon | unresolved | yes | records | `book-1/02-what-the-record-may-say.pins.nibli` |
 | 02-06 | 02-what-the-record-may-say.md | The child with nobody | Records and accountability | ARTICLES | protective | the child with nobody: one birth entry and nothing else | is acted upon | works | no | records | `book-1/02-what-the-record-may-say.pins.nibli` |
-| 03-00 | 03-what-you-are-owed.md | (preamble) | Material floor | ARTICLES | ordinary | the floor in one breath | receives | works | yes | constructive | `book-1/03-what-you-are-owed.pins.nibli` |
+| 02-07 | 02-what-the-record-may-say.md | Argument: Why the record is closed by name | Records and accountability | exempt | argument | a record closed by name, against the integrated case file | chooses | contested | yes | argument | `exempt-element` |
+| 03-00 | 03-what-you-are-owed.md | (preamble) | Material floor | ARTICLES | ordinary | the floor in one breath | receives | works | no | constructive | `book-1/03-what-you-are-owed.pins.nibli` |
 | 03-01 | 03-what-you-are-owed.md | Where the protection stops | Material floor | ARTICLES | protective | where the anti-punishment firewall stops | is acted upon | contested | yes | constructive | `book-1/03-what-you-are-owed.pins.nibli` |
 | 03-02 | 03-what-you-are-owed.md | Owed by whom | Material floor | STATE-FORM | ordinary | the duty-bearer | receives | works | yes | constructive | `book-1/03-what-you-are-owed.pins.nibli` |
+| 03-03 | 03-what-you-are-owed.md | What this cannot settle | Material floor | ARTICLES | protective | a presence record naming the wrong place, and a changed rule that reports a floor condition without a receipt | receives | unresolved | yes | constructive | `book-1/03-what-you-are-owed.pins.nibli` |
+| 03-04 | 03-what-you-are-owed.md | Argument: Owed to everyone, by someone | Material floor | exempt | argument | named goods owed to everyone, against conditional support and a cash income | chooses | contested | no | argument | `exempt-element` |
 | 04-00 | 04-whether-it-arrived.md | (preamble) | Material floor | DELIVERY-RECEIPT | ordinary | the debt, and the next thing the debt does not contain | receives | works | yes | constructive | `book-1/04-whether-it-arrived.pins.nibli` |
 | 04-01 | 04-whether-it-arrived.md | Owed is not the same as delivered | Material floor | DELIVERY-RECEIPT | ordinary | whether food reached anybody | receives | fails | yes | constructive | `book-1/04-whether-it-arrived.pins.nibli` |
-| 04-02 | 04-whether-it-arrived.md | Different kinds of claim | Material floor | DELIVERY-RECEIPT | both | a word that means two different things on two routes | receives | contested | yes | records | `book-1/04-whether-it-arrived.pins.nibli` |
-| 04-03 | 04-whether-it-arrived.md | What holding requires | Material floor | DELIVERY-RECEIPT | ordinary | custody and holding create duties; independent evidence establishes shelter | receives | continuity-remedy | yes | constructive | `tests/pins/public-safety/protection/actual-holding/independent-shelter-receipt/expect.pins.nibli` |
-| 04-04 | 04-whether-it-arrived.md | The child with nobody | Material floor | DELIVERY-RECEIPT | protective | birth-only baseline, then independent evidence of food receipt | receives | unresolved | yes | constructive | `book-1/04-whether-it-arrived.pins.nibli` |
+| 04-02 | 04-whether-it-arrived.md | Different kinds of claim | Material floor | DELIVERY-RECEIPT | both | a word that means two different things on two routes | receives | contested | no | records | `book-1/04-whether-it-arrived.pins.nibli` |
+| 04-04 | 04-whether-it-arrived.md | The child with nobody | Material floor | DELIVERY-RECEIPT | protective | birth-only baseline, then independent evidence of food receipt | receives | unresolved | no | constructive | `book-1/04-whether-it-arrived.pins.nibli` |
 | 04-05 | 04-whether-it-arrived.md | What this cannot settle | Material floor | DELIVERY-RECEIPT | protective | the boundary of a record that proves no arrival | receives | unresolved | yes | constructive | `book-1/04-whether-it-arrived.pins.nibli` |
+| 04-06 | 04-whether-it-arrived.md | Argument: Evidence from the person served | Material floor | exempt | argument | evidence from the person served, against verification at the counter | chooses | contested | yes | argument | `exempt-element` |
 | 05-00 | 05-when-there-is-genuinely-not-enough.md | (preamble) | Material floor | SCARCITY-AND-CONFLICT | ordinary | an indivisible essential unit, two protected claims and a supplied comparative decision | receives | contested | no | constructive | `book-1/05-when-there-is-genuinely-not-enough.pins.nibli` |
-| 05-01 | 05-when-there-is-genuinely-not-enough.md | What has to be true before the word may be used | Material floor | SCARCITY-AND-CONFLICT | protective | what a shortage finding has to establish first | receives | contested | yes | constructive | `book-1/05-when-there-is-genuinely-not-enough.pins.nibli` |
+| 05-01 | 05-when-there-is-genuinely-not-enough.md | What has to be true before the word may be used | Material floor | SCARCITY-AND-CONFLICT | protective | what a shortage finding has to establish first | receives | contested | no | constructive | `book-1/05-when-there-is-genuinely-not-enough.pins.nibli` |
 | 05-02 | 05-when-there-is-genuinely-not-enough.md | What a finding lets anybody do | Material floor | SCARCITY-AND-CONFLICT | continuity | an allocation bounded by the finding it rejoins | receives | continuity-remedy | no | constructive | `book-1/05-when-there-is-genuinely-not-enough.pins.nibli` |
-| 05-09 | 05-when-there-is-genuinely-not-enough.md | One unit, two protected claims | Material floor | SCARCITY-AND-CONFLICT | both | opposed permitted considerations, comparative reasons, usable share priority and equal-claim lottery | receives | contested | yes | constructive | `book-1/05-when-there-is-genuinely-not-enough.pins.nibli` |
+| 05-09 | 05-when-there-is-genuinely-not-enough.md | One unit, two protected claims | Material floor | SCARCITY-AND-CONFLICT | both | opposed permitted considerations, comparative reasons, usable share priority and equal-claim lottery | receives | contested | no | constructive | `book-1/05-when-there-is-genuinely-not-enough.pins.nibli` |
 | 05-03 | 05-when-there-is-genuinely-not-enough.md | What may never decide it | Material floor | SCARCITY-AND-CONFLICT | protective | the priority keys refused by name | receives | works | no | constructive | `book-1/05-when-there-is-genuinely-not-enough.pins.nibli` |
 | 05-04 | 05-when-there-is-genuinely-not-enough.md | What is still owed afterwards | Material floor | SCARCITY-AND-CONFLICT | continuity | the waiting claim is named as unmet and retains repair and reassessment | receives | continuity-remedy | no | constructive | `book-1/05-when-there-is-genuinely-not-enough.pins.nibli` |
-| 05-05 | 05-when-there-is-genuinely-not-enough.md | When somebody asks and nobody answers | Material floor | SCARCITY-AND-CONFLICT | both | request, comparison defect preserving the shortfall, and false scarcity defeating its basis | challenges | unresolved | yes | constructive | `book-1/05-when-there-is-genuinely-not-enough.pins.nibli` |
-| 05-06 | 05-when-there-is-genuinely-not-enough.md | The conflicts that are not about supply | Material floor | SCARCITY-AND-CONFLICT | protective | the named cross-domain conflicts | receives | contested | yes | constructive | `book-1/05-when-there-is-genuinely-not-enough.pins.nibli` |
+| 05-05 | 05-when-there-is-genuinely-not-enough.md | When somebody asks and nobody answers | Material floor | SCARCITY-AND-CONFLICT | both | request, comparison defect preserving the shortfall, and false scarcity defeating its basis | challenges | unresolved | no | constructive | `book-1/05-when-there-is-genuinely-not-enough.pins.nibli` |
+| 05-06 | 05-when-there-is-genuinely-not-enough.md | The conflicts that are not about supply | Material floor | SCARCITY-AND-CONFLICT | protective | the named cross-domain conflicts | receives | contested | no | constructive | `book-1/05-when-there-is-genuinely-not-enough.pins.nibli` |
 | 05-07 | 05-when-there-is-genuinely-not-enough.md | The child with nobody | Material floor | SCARCITY-AND-CONFLICT | protective | Nell's retained rights without evidence of inclusion in the scarcity population | receives | unresolved | no | constructive | `book-1/05-when-there-is-genuinely-not-enough.pins.nibli` |
 | 05-08 | 05-when-there-is-genuinely-not-enough.md | What this cannot settle | Material floor | SCARCITY-AND-CONFLICT | protective | the boundary of a record that counts no stock | receives | unresolved | yes | constructive | `book-1/05-when-there-is-genuinely-not-enough.pins.nibli` |
+| 05-10 | 05-when-there-is-genuinely-not-enough.md | Argument: A shortage must be proved, and need decides it | Material floor | exempt | argument | a proved shortage decided by need, against price and against queues | chooses | contested | no | argument | `exempt-element` |
 | 06-00 | 06-who-owes-and-what-follows.md | (preamble) | Material floor | OBLIGATIONS | ordinary | the waiting claimant and the particular bearer who must answer | receives | works | no | constructive | `book-1/06-who-owes-and-what-follows.pins.nibli` |
 | 06-07 | 06-who-owes-and-what-follows.md | The chain after a finding | Records and accountability | OBLIGATIONS | both | the waiting claim retains repair duties; distinct reader, alternate and remedy routes | challenges | continuity-remedy | yes | records | `book-1/06-who-owes-and-what-follows.pins.nibli` |
 | 06-08 | 06-who-owes-and-what-follows.md | Where delivery joins it | Material floor | DELIVERY-RECEIPT | continuity | a receipt that is absent, and what that does not establish | receives | unresolved | no | constructive | `book-1/06-who-owes-and-what-follows.pins.nibli` |
@@ -149,11 +153,13 @@ checked here.
 | 06-06 | 06-who-owes-and-what-follows.md | Duties are not a price for rights | Personhood and equality | OBLIGATIONS | protective | rights retained through civic breach, competing duties and reviewed excuses | is acted upon, receives | contested | yes | constructive | `book-1/06-who-owes-and-what-follows.pins.nibli` |
 | 06-10 | 06-who-owes-and-what-follows.md | Economic wrongs, one route at a time | Economy, property, work and commons | ECONOMIC-CONSTITUTION | both | a wage denial, an eviction, an unlawful licence | works | continuity-remedy | no | constructive | `book-1/06-who-owes-and-what-follows.pins.nibli` |
 | 06-12 | 06-who-owes-and-what-follows.md | A way in that does not need the operator's permission | Justice and coercion | NON-CARCERAL-JUSTICE | both | a request to review that the operator did not authorise | challenges | works | no | coercive | `book-1/06-who-owes-and-what-follows.pins.nibli` |
-| 06-13 | 06-who-owes-and-what-follows.md | When the actor is a protective power | Public safety, policing and use of force | PUBLIC-SAFETY | continuity | unlawful force, and a record that was never written | is acted upon | fails | yes | coercive | `book-1/06-who-owes-and-what-follows.pins.nibli` |
+| 06-13 | 06-who-owes-and-what-follows.md | When the actor is a protective power | Public safety, policing and use of force | PUBLIC-SAFETY | continuity | unlawful force, and a record that was never written | is acted upon | fails | no | coercive | `book-1/06-who-owes-and-what-follows.pins.nibli` |
 | 06-14 | 06-who-owes-and-what-follows.md | When the finding is about conditions or an animal | Ecology, future generations and commons | ECOLOGICAL-ANIMAL | continuity | a defective ecological record and an animal needing care | challenges | continuity-remedy | no | constructive | `book-1/06-who-owes-and-what-follows.pins.nibli` |
-| 06-15 | 06-who-owes-and-what-follows.md | The duty to begin without a request | Material floor | OBLIGATIONS | protective | a person nobody has come for | receives | works | yes | constructive | `book-1/06-who-owes-and-what-follows.pins.nibli` |
+| 06-15 | 06-who-owes-and-what-follows.md | The duty to begin without a request | Material floor | OBLIGATIONS | protective | a person nobody has come for | receives | works | no | constructive | `book-1/06-who-owes-and-what-follows.pins.nibli` |
 | 06-18 | 06-who-owes-and-what-follows.md | When failure is general | Material floor | ARTICLES | both | a certified pattern of shortfalls by a publicly answerable tier leads to a declaration, a public plan, monitoring and interim measures | receives | continuity-remedy | no | constructive | `book-1/06-who-owes-and-what-follows.pins.nibli` |
-| 06-17 | 06-who-owes-and-what-follows.md | Duties still need performance | Records and accountability | OBLIGATIONS | protective | the boundary where the lifecycle stops being evidence | receives | unresolved | yes | records | `book-1/06-who-owes-and-what-follows.pins.nibli` |
+| 06-19 | 06-who-owes-and-what-follows.md | A claim that fails | Material floor | OBLIGATIONS | continuity | one claim followed through every office that fails it, from first contact to the Court's interim measures | receives, challenges | continuity-remedy | yes | constructive | `book-1/06-who-owes-and-what-follows.pins.nibli` |
+| 06-17 | 06-who-owes-and-what-follows.md | What this cannot settle | Records and accountability | OBLIGATIONS | protective | the boundary where the lifecycle stops being evidence | receives | unresolved | yes | records | `book-1/06-who-owes-and-what-follows.pins.nibli` |
+| 06-20 | 06-who-owes-and-what-follows.md | Argument: Named bearers, and a court that secures the minimum | Material floor | exempt | argument | named bearers and a court that secures the minimum, against reasonableness review | chooses | contested | no | argument | `exempt-element` |
 | 08-00 | 08-what-nobody-has-to-ask-permission-for.md | (preamble) | Knowledge, communication and culture | KNOWLEDGE-AND-FREE-FIELD | ordinary | the free field, and what narrowing it has to establish | chooses, creates, associates | works | yes | private-civic | `book-1/08-what-nobody-has-to-ask-permission-for.pins.nibli` |
 | 08-01 | 08-what-nobody-has-to-ask-permission-for.md | The things power may not prescribe | Knowledge, communication and culture | LIBERTY-ECOLOGY | protective | the walls on public power over private and civic life | chooses | works | no | private-civic | `book-1/08-what-nobody-has-to-ask-permission-for.pins.nibli` |
 | 09-00 | 09-work-pay-and-contribution.md | (preamble) | Economy, property, work and commons | ECONOMIC-CONSTITUTION | ordinary | what may be earned above a floor that is never earned | works, chooses | works | no | constructive | `book-1/09-work-pay-and-contribution.pins.nibli` |
@@ -300,7 +306,7 @@ checked here.
 | 25-05 | 25-a-prisoner-is-a-person.md | The child with nobody | Material floor | ARTICLES | protective | Nell's standing and floor before and after added shelter and food evidence | receives | contested | yes | coercive | `book-1/25-a-prisoner-is-a-person.pins.nibli` |
 | 26-00 | 26-where-people-are-put.md | (preamble) | Justice and coercion | CUSTODY-EXECUTION | ordinary | qualified merits, individually justified placement and a named available place | is acted upon | works | yes | coercive | `book-1/26-where-people-are-put.pins.nibli` |
 | 26-01 | 26-where-people-are-put.md | What makes an offence severe | Justice and coercion | CUSTODY-EXECUTION | protective | qualified grave injury or aggravated cruelty; gravity limits secure eligibility without selecting the place | is acted upon | contested | yes | coercive | `book-1/26-where-people-are-put.pins.nibli` |
-| 26-02 | 26-where-people-are-put.md | What the placement alarm sees | Justice and coercion | PLACEMENT | continuity | reports in every destination category, conflicting candidates and review | is acted upon | continuity-remedy | no | coercive | `book-1/26-where-people-are-put.pins.nibli` |
+| 26-02 | 26-where-people-are-put.md | What the placement alarm sees | Justice and coercion | PLACEMENT | continuity | reports in every destination category, conflicting candidates and review | is acted upon | continuity-remedy | yes | coercive | `book-1/26-where-people-are-put.pins.nibli` |
 | 26-03 | 26-where-people-are-put.md | A fixed route still depends on evidence | Justice and coercion | PLACEMENT | ordinary | family neutrality, forbidden wealth and poverty grounds, and missing or conflicting placement evidence | is acted upon | works | yes | coercive | `book-1/26-where-people-are-put.pins.nibli` |
 | 26-04 | 26-where-people-are-put.md | Eligible, with no home option recorded | Justice and coercion | CUSTODY-EXECUTION | protective | positive supported-residence evidence or no custody authority | is acted upon | continuity-remedy | yes | coercive | `book-1/26-where-people-are-put.pins.nibli` |
 | 26-05 | 26-where-people-are-put.md | Housing with independent evidence | Material floor | PLACEMENT | continuity | a named placement creates a duty; recipient evidence establishes shelter | is acted upon | continuity-remedy | yes | constructive | `tests/pins/placement/independent-shelter-control/expect.pins.nibli` |

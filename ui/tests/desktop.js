@@ -63,7 +63,7 @@ try {
   const search=document.querySelector('#book-search');search.value='independent witness';search.dispatchEvent(new Event('input',{bubbles:true}));
   await wait(()=>document.querySelector('.search-results li'),'search results');
   click('read');await wait(()=>document.querySelector('.toc-list'),'contents');
-  if (document.querySelectorAll('.toc-list > li').length!==32) throw new Error('incomplete reader');
+  if (document.querySelectorAll('.toc-list > li').length!==config.reader_inputs) throw new Error('incomplete reader');
   click('Epigraph');await wait(()=>document.querySelector('[lang=ta]'),'Tamil reader');
   await document.fonts.load('18px "Noto Serif Tamil"');
   if (!document.fonts.check('18px "Noto Serif Tamil"')) throw new Error('Tamil font');
@@ -92,6 +92,6 @@ try {
   window.scrollTo({top:1800,behavior:'instant'});await sleep(600);
   if (document.documentElement.dataset.theme!=='light') document.querySelector('[aria-label="Switch colour theme"]').click();
   await sleep(200);
-    dioxus.send({ok:true,scenarios:results.length,results,reader_inputs:32,tamil:true,search:true,offline:true,user_agent:navigator.userAgent});
+    dioxus.send({ok:true,scenarios:results.length,results,reader_inputs:config.reader_inputs,tamil:true,search:true,offline:true,user_agent:navigator.userAgent});
   }
 } catch(error) {dioxus.send({ok:false,error:String(error.message)+' '+String(error.stack),stage,results,body:document.body.innerText.slice(-2500)});}

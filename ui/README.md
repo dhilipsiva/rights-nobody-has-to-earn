@@ -2,7 +2,7 @@
 # Book 1 reader and live companion
 
 A standalone Dioxus 0.7.10 application for Book 1 and its executable game.
-The complete reader still comes from `book-1/contents.json` and its 32 ordered
+The complete reader still comes from `book-1/contents.json` and its ordered
 inputs through `tools/build_book.py`. The companion has a person selector,
 fork track, live play card, floor panel, design joints and an authored dossier.
 Companion prose is session-drafted, author-approved under delegated approval
@@ -32,9 +32,10 @@ The unrelated root page in the preview server is a resource-isolation fixture.
 
 The build exports reader text, prepares complete executable records, compiles
 all constitutional statements using the pinned engine, and packages the reader
-and engine as separate Wasm modules. It exports 35 HTML routes, their Markdown
-counterparts, structured reading data and the redirect manifest. Compilation
-supplies inputs, never displayed answers. There is no result-reuse build mode.
+and engine as separate Wasm modules. It exports an HTML route for every reading
+input and three others, their Markdown counterparts, structured reading data
+and the redirect manifest. Compilation supplies inputs, never displayed
+answers. There is no result-reuse build mode.
 `verify.sh` is deliberately outside this UI task and workflow.
 
 ## Inputs and execution

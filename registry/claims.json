@@ -46,7 +46,7 @@
       "claim": "88% of cancelled ration cards sampled in the study districts belonged to genuine households.",
       "value": 88,
       "units": "percent of sampled cancelled cards",
-      "source": "Muralidharan, Niehaus & Sukhtankar (2025), REStat 107(2)",
+      "source": "Muralidharan, Niehaus & Sukhtankar (2025), \"Identity Verification Standards in Welfare Programs: Experimental Evidence from India\", Review of Economics and Statistics 107(2): 372-392, doi:10.1162/rest_a_01296",
       "retrieved": "2026-08-02",
       "method": "quoted; authors label the figure 'purely descriptive' (non-causal)",
       "fetch": null,
@@ -143,15 +143,15 @@
     },
     {
       "id": "verho-2022-welfare-traps",
-      "claim": "Removing welfare traps in the Finnish basic income experiment produced small positive employment responses, not the feared withdrawal from work.",
+      "claim": "Replacing minimum unemployment benefits with a basic income of equal size in the Finnish experiment had minor employment effects at best; days in employment were statistically unchanged in the first year.",
       "value": null,
       "units": null,
       "source": "Verho, Hämäläinen & Kanninen, AEJ: Economic Policy 14(1): 501–522 (2022), doi:10.1257/pol.20200143",
-      "retrieved": "2026-07",
+      "retrieved": "2026-09-25",
       "method": "reference",
       "fetch": null,
       "book": "book-1",
-      "notes": "Peer-reviewed companion to kangas-2020-finnish-bi."
+      "notes": "Peer-reviewed companion to kangas-2020-finnish-bi. Checked 2026-09-25 against the AEA article page abstract: 2,000 benefit recipients randomised; the claim quotes the abstract, which does not address the wider fear of withdrawal from work."
     },
     {
       "id": "plfs-2024-annual",
@@ -551,15 +551,15 @@
     },
     {
       "id": "aadhaar-act-2016-s7",
-      "claim": "Aadhaar Act s.7 makes proof of identity a condition for subsidies — the statutory hinge of the exclusion cases.",
+      "claim": "Section 7 of the Aadhaar Act, 2016 permits the Central or a State Government, to establish identity as a condition for receipt of a subsidy, benefit or service paid from the Consolidated Fund of India, to require authentication or proof of an Aadhaar number (or an application for enrolment), and provides that a person not assigned an Aadhaar number shall be offered alternate and viable means of identification.",
       "value": null,
       "units": null,
-      "source": "The Aadhaar Act, 2016, No. 18 of 2016, s.7; UIDAI Aadhaar Dashboard (2026)",
-      "retrieved": "2026-07",
+      "source": "The Aadhaar (Targeted Delivery of Financial and Other Subsidies, Benefits and Services) Act, 2016 (No. 18 of 2016), s.7; text hosted by UIDAI, https://uidai.gov.in/images/targeted_delivery_of_financial_and_other_subsidies_benefits_and_services_13072016.pdf",
+      "retrieved": "2026-09-25",
       "method": "reference",
       "fetch": null,
       "book": "book-1",
-      "notes": "Part V Aadhaar/PDS chain, beside dreze-2017-cancelled-cards and the muralidharan-2025 entries."
+      "notes": "Section 7 read verbatim in the UIDAI-hosted PDF of the Act on 2026-09-25. The power is permissive ('may ... require that such individual undergo authentication, or furnish proof of possession of Aadhaar number'), and its proviso requires that a person not assigned a number 'shall be offered alternate and viable means of identification for delivery of the subsidy, benefit or service'. The entry's earlier wording, that s.7 'makes proof of identity a condition for subsidies', overstated the section: the condition is one a government may impose. Later amendments were not checked. Part V's Aadhaar/PDS chain sits beside dreze-2017-cancelled-cards and the muralidharan-2025 entries; the UIDAI dashboard figures once cited here are not part of this entry."
     },
     {
       "id": "idinsight-hrw-puttaswamy",
@@ -1049,7 +1049,7 @@
       "claim": "Amartya Sen argues that starvation concerns people's ability to command food through the legal means available to them (their entitlements), not the food supply as such. His case study of the 1943 Bengal famine rejects an explanation based on a decline in food availability.",
       "value": null,
       "units": null,
-      "source": "Amartya Sen, Poverty and Famines: An Essay on Entitlement and Deprivation (Oxford: Clarendon Press, 1981), ch. 1 'Poverty and Entitlements' (pp. 1-8), ch. 5 'The Entitlement Approach' (pp. 45-51), ch. 6 'The Great Bengal Famine' (pp. 52-85), ch. 10 'Entitlements and Deprivation' (pp. 154-166); Oxford Scholarship Online DOI 10.1093/0198284632.001.0001",
+      "source": "Amartya Sen, Poverty and Famines: An Essay on Entitlement and Deprivation (Oxford: Clarendon Press, 1981), ch. 1 'Poverty and Entitlements' (pp. 1-8), ch. 5 'The Entitlement Approach' (pp. 45-51), ch. 6 'The Great Bengal Famine' (pp. 52-85), ch. 10 'Entitlements and Deprivation' (pp. 154-166); Oxford Scholarship Online, doi:10.1093/0198284632.001.0001",
       "retrieved": "2026-09-25",
       "method": "reference",
       "fetch": null,
@@ -1061,7 +1061,7 @@
       "claim": "Drèze and Sen argue that eliminating hunger needs public action in a broad sense. They treat famine prevention as a problem of protecting entitlements, including through employment provision and cash support. They distinguish growth-mediated security from support-led security, in which public support such as health care, education and food subsidies raises living standards without first waiting for prosperity.",
       "value": null,
       "units": null,
-      "source": "Jean Drèze and Amartya Sen, Hunger and Public Action (Oxford: Clarendon Press, 1989), ch. 2 'Entitlement and Deprivation' (pp. 20-34), ch. 5 'Famines and Social Response' (pp. 65-84), ch. 6 'Famines, Markets and Intervention' (pp. 85-103), ch. 7 'Strategies of Entitlement Protection' (pp. 104-121), ch. 10 'Economic Growth and Public Support' (pp. 179-203), ch. 12 'Experiences of Direct Support' (pp. 226-254), ch. 13 'The Economy, the State and the Public' (pp. 257-280); Oxford Scholarship Online DOI 10.1093/0198283652.001.0001",
+      "source": "Jean Drèze and Amartya Sen, Hunger and Public Action (Oxford: Clarendon Press, 1989), ch. 2 'Entitlement and Deprivation' (pp. 20-34), ch. 5 'Famines and Social Response' (pp. 65-84), ch. 6 'Famines, Markets and Intervention' (pp. 85-103), ch. 7 'Strategies of Entitlement Protection' (pp. 104-121), ch. 10 'Economic Growth and Public Support' (pp. 179-203), ch. 12 'Experiences of Direct Support' (pp. 226-254), ch. 13 'The Economy, the State and the Public' (pp. 257-280); Oxford Scholarship Online, doi:10.1093/0198283652.001.0001",
       "retrieved": "2026-09-25",
       "method": "reference",
       "fetch": null,
@@ -1181,7 +1181,7 @@
       "claim": "In Privacy in Context, Nissenbaum develops contextual integrity into a framework in which information flows are assessed against context-relative informational norms, specified in terms of actors, information attributes and transmission principles.",
       "value": null,
       "units": null,
-      "source": "Helen Nissenbaum, Privacy in Context: Technology, Policy, and the Integrity of Social Life (Stanford, CA: Stanford University Press, 2010), ch. 7 'Contexts, Informational Norms, Actors, Attributes, and Transmission Principles' (pp. 129-157); DOI 10.1515/9780804772891",
+      "source": "Helen Nissenbaum, Privacy in Context: Technology, Policy, and the Integrity of Social Life (Stanford, CA: Stanford University Press, 2010), ch. 7 'Contexts, Informational Norms, Actors, Attributes, and Transmission Principles' (pp. 129-157); doi:10.1515/9780804772891",
       "retrieved": "2026-09-25",
       "method": "reference",
       "fetch": null,
@@ -1493,7 +1493,7 @@
       "claim": "Waldron argues against strong judicial review of legislation, meaning courts' authority to decline to apply statutes or to strike them down, on outcome-related and democratic-legitimacy grounds, but only for societies meeting four assumptions: working democratic institutions, working judicial institutions, a general commitment to rights, and disagreement about rights.",
       "value": null,
       "units": null,
-      "source": "Jeremy Waldron, 'The Core of the Case Against Judicial Review' (2006) 115 Yale Law Journal 1346-1406, abstract p. 1346, strong and weak review p. 1354, four assumptions pp. 1359-1369, non-core cases p. 1401; DOI 10.2307/20455656",
+      "source": "Jeremy Waldron, 'The Core of the Case Against Judicial Review' (2006) 115 Yale Law Journal 1346-1406, abstract p. 1346, strong and weak review p. 1354, four assumptions pp. 1359-1369, non-core cases p. 1401; doi:10.2307/20455656",
       "retrieved": "2026-09-25",
       "method": "reference",
       "fetch": null,
@@ -1871,6 +1871,18 @@
       "fetch": null,
       "book": "book-1",
       "notes": "saflii.org returned 403; read the judgment via Internet Archive captures of SAFLII's HTML page (for the citations and date) and its PDF (for the text). Verified: 'Decided on: 4 October 2000'; Yacoob J with the other ten members concurring; para 33 (the 'real question' is whether measures are reasonable; not enough information to determine a minimum core); para 41 (court will not ask whether more desirable measures could have been adopted); para 42 (reasonable in conception and implementation); para 43 (a programme excluding a significant segment of society is not reasonable); para 44 (measures must not ignore those whose needs are most urgent; statistical advance not enough); paras 66 and 69 (failure to provide for people in desperate need); para 99 (declaratory order; the Court ordered no individual housing). The plan's description 'reasonableness review of housing policy' is accurate. The Court did not reject a minimum core outright here; it declined to determine one on the record."
+    },
+    {
+      "id": "grootboom-2000-eviction-facts",
+      "claim": "The Grootboom judgment records that the respondents, 510 children and 390 adults, had lived in the Wallacedene informal settlement, where many had waited as long as seven years for subsidised housing; that in September 1998 they moved onto vacant private land earmarked for low-cost housing; that on 18 May 1999, at the start of the Cape winter, they were forcibly evicted at the municipality's expense, their homes bulldozed and burnt and their possessions destroyed; that they then sheltered on the Wallacedene sports field under plastic sheeting; and that the Court held neither section 26 nor section 28 entitled them to claim shelter or housing immediately upon demand, making a declaratory order.",
+      "value": null,
+      "units": null,
+      "source": "Government of the Republic of South Africa and Others v Grootboom and Others (CCT 11/00) [2000] ZACC 19; 2001 (1) SA 46 (CC), decided 4 October 2000, per Yacoob J, paras 7-11 and fn 2 (the facts), para 95 (no claim immediately upon demand), para 99 (the order); https://www.saflii.org/za/cases/ZACC/2000/19.html",
+      "retrieved": "2026-09-25",
+      "method": "reference",
+      "fetch": null,
+      "book": "book-1",
+      "notes": "saflii.org returned 403 to a direct request; read the judgment's HTML through an Internet Archive capture of the SAFLII page (web.archive.org/web/2021id_/ of the source URL), retrieved with curl on 2026-09-25. Verified verbatim: para 7 (Wallacedene on the edge of Oostenberg; a quarter of households without income), the following paragraphs (about half the population children; no water, sewage or refuse removal; many on the waiting list for as long as seven years; moved out at the end of September 1998 onto privately owned vacant land earmarked for low-cost housing, called New Rust; ejectment order of 8 December 1998; eviction on 18 May 1999 'at the beginning of the cold, windy and rainy Cape winter', 'at the municipality's expense', 'prematurely and inhumanely', homes 'bulldozed and burnt and their possessions destroyed'), para 11 (sheltered on the Wallacedene sports field; plastic sheeting afforded scant protection), footnote 2 ('The respondents are 510 children and 390 adults'), para 95 ('Neither section 26 nor section 28 entitles the respondents to claim shelter or housing immediately upon demand'), para 96 (declaratory order) and para 99 (the order's text). The HTML interleaves footnote and paragraph markers, so the facts are cited as paras 7-11 rather than sentence by sentence. The judgment's outcome for the families after 2000 was not checked."
     },
     {
       "id": "tac-no2-2002-nevirapine",

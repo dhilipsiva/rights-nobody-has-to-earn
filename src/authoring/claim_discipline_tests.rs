@@ -21,14 +21,14 @@ use regex::Regex;
 use serde_json::Value;
 use std::collections::BTreeSet;
 
-/// The book's argued text, read from the manifest: Part V's chapters and every
-/// derived chapter's argument section, whitespace-normalised so a binding does
-/// not break when a line is rewrapped.
+/// The book's argued text, read from the manifest: Part V's chapters, each
+/// Part's labelled opening case and every derived chapter's argument section,
+/// whitespace-normalised so a binding does not break when a line is rewrapped.
 fn argued_text(context: &Context) -> String {
     let contents = contents::Contents::load(context).expect("manifest");
     let mut text = String::new();
-    for path in contents.part_v().expect("Part V") {
-        text.push_str(&context.read(&path).expect("Part V"));
+    for path in contents.part_v().expect("Part V").into_iter().chain(contents.openers()) {
+        text.push_str(&context.read(&path).expect("argued input"));
         text.push('\n');
     }
     for path in contents.derived() {
@@ -50,7 +50,17 @@ fn argued_text(context: &Context) -> String {
 /// leans on it. One source may carry several figures — Tanzania's relocation
 /// count and Mondragon's headcount are not one claim each — so the rows are
 /// keyed by case, not by entry.
-const TRACED: [(&str, &str, &str); 39] = [
+const TRACED: [(&str, &str, &str); 78] = [
+    (
+        "the Wallacedene eviction",
+        "grootboom-2000-eviction-facts",
+        "510 children and 390 adults",
+    ),
+    (
+        "Grootboom's declaratory order",
+        "grootboom-2000-reasonableness",
+        "It ordered housing for nobody",
+    ),
     ("Owen's New Harmony", "harrison-1969-owen", "New Harmony"),
     ("the kibbutzim", "abramitzky-kibbutz", "270 communities"),
     (
@@ -185,6 +195,187 @@ const TRACED: [(&str, &str, &str); 39] = [
         "a bounded emergency derogation framework",
         "iccpr-article-4-derogation",
         "International Covenant on Civil and Political Rights",
+    ),
+    (
+        "the legal-identity target",
+        "sdg-target-16-9-legal-identity-2015",
+        "Target 16.9",
+    ),
+    (
+        "the 1954 statelessness convention",
+        "stateless-persons-convention-1954",
+        "The 1954 Convention",
+    ),
+    (
+        "the 1961 statelessness convention",
+        "statelessness-reduction-convention-1961",
+        "the 1961 Convention",
+    ),
+    (
+        "the Aadhaar Act's section 7",
+        "aadhaar-act-2016-s7",
+        "section 7 of the Aadhaar Act",
+    ),
+    (
+        "the genuine cancelled cards",
+        "muralidharan-2025-genuine-cards",
+        "88 per cent",
+    ),
+    (
+        "Robodebt's refunds",
+        "robodebt-royal-commission-2023",
+        "381,000",
+    ),
+    (
+        "automated punishment of the poor",
+        "eubanks-2018-automating-inequality",
+        "Virginia Eubanks",
+    ),
+    (
+        "contextual integrity",
+        "nissenbaum-2004-contextual-integrity",
+        "contextual integrity",
+    ),
+    (
+        "privacy in context",
+        "nissenbaum-2010-privacy-in-context",
+        "Helen Nissenbaum",
+    ),
+    (
+        "purpose limitation",
+        "gdpr-2016-art-5-1-b-purpose-limitation",
+        "further processing incompatible",
+    ),
+    (
+        "solely automated decisions",
+        "gdpr-2016-art-22-automated-decisions",
+        "based solely on automated processing",
+    ),
+    (
+        "Shue's basic rights",
+        "shue-1980-basic-rights",
+        "Henry Shue",
+    ),
+    (
+        "Eide's three levels",
+        "eide-1987-right-to-food-study",
+        "respect, protect and fulfil the right to food",
+    ),
+    (
+        "the food comment",
+        "cescr-gc12-1999-right-to-food",
+        "General Comment 12",
+    ),
+    (
+        "the minimum core",
+        "cescr-gc3-1990-minimum-core",
+        "General Comment 3",
+    ),
+    (
+        "adequate housing",
+        "cescr-gc4-adequate-housing-1991",
+        "security of tenure",
+    ),
+    (
+        "health's four elements",
+        "cescr-gc14-health-aaaq-2000",
+        "availability, accessibility, acceptability and quality",
+    ),
+    (
+        "an unconditional basic income",
+        "van-parijs-vanderborght-2017-basic-income",
+        "Van Parijs",
+    ),
+    (
+        "Finland's experiment",
+        "kangas-2020-finnish-bi",
+        "evaluated it officially",
+    ),
+    (
+        "Finland's employment effects",
+        "verho-2022-welfare-traps",
+        "minor at best",
+    ),
+    (
+        "the Rajasthan public hearings",
+        "goetz-jenkins-mkss-jan-sunwai-2007",
+        "Mazdoor Kisan Shakti Sangathan",
+    ),
+    (
+        "the social audit rules",
+        "mgnrega-audit-of-schemes-rules-2011",
+        "muster rolls",
+    ),
+    (
+        "the right-to-food orders",
+        "pucl-right-to-food-order-2001",
+        "right-to-food case",
+    ),
+    (
+        "the food schemes by interim order",
+        "pucl-right-to-food-order-2001",
+        "eight food and social-security schemes",
+    ),
+    (
+        "the Bengal famine",
+        "sen-1981-poverty-and-famines",
+        "1943 Bengal famine",
+    ),
+    (
+        "famine prevention",
+        "dreze-sen-1989-hunger-public-action",
+        "famine prevention",
+    ),
+    (
+        "the complete lives system",
+        "persad-2009-complete-lives-system",
+        "complete lives system",
+    ),
+    (
+        "Covid-19 allocation",
+        "emanuel-2020-covid-allocation",
+        "During Covid-19",
+    ),
+    (
+        "Alabama's ventilator criteria",
+        "hhs-ocr-alabama-ventilator-2020",
+        "ventilator-triage criteria",
+    ),
+    (
+        "a disclosed lottery",
+        "elster-1989-solomonic-judgements",
+        "Jon Elster",
+    ),
+    (
+        "Eide's 1987 study",
+        "eide-1987-right-to-food-study",
+        "Eide's 1987 study",
+    ),
+    (
+        "Treatment Action Campaign",
+        "tac-no2-2002-nevirapine",
+        "Treatment Action Campaign",
+    ),
+    ("Mazibuko", "mazibuko-2009-water-quantity", "In Mazibuko"),
+    (
+        "weak-form review",
+        "tushnet-2008-weak-courts",
+        "weak-form review",
+    ),
+    (
+        "the case against judicial review",
+        "waldron-2006-case-against-judicial-review",
+        "Jeremy Waldron",
+    ),
+    (
+        "the minimum core defended",
+        "bilchitz-2007-minimum-core",
+        "David Bilchitz",
+    ),
+    (
+        "destabilization rights",
+        "sabel-simon-2004-destabilization-rights",
+        "Charles Sabel and William Simon",
     ),
 ];
 

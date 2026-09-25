@@ -153,7 +153,7 @@ Front matter: `epigraph.md`, `00-opening-note.md`.
 | # | Chapter | File | Role | Group | Status |
 |---|---|---|---|---|---|
 | **Part I — Who counts, and what they are owed** | | | | | |
-| — | Opening case | — | exempt | — | planned |
+| — | Opening case: The Sports Field at Wallacedene | `part-1-the-sports-field-at-wallacedene.md` | exempt | — | landed |
 | 01 | The Child With Nobody | `01-the-child-with-nobody.md` | derived | engine | landed |
 | 02 | What the Record May Say | `02-what-the-record-may-say.md` | derived | engine | landed |
 | 03 | What You Are Owed | `03-what-you-are-owed.md` | derived | engine | landed |

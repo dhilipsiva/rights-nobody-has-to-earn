@@ -2,7 +2,7 @@
 
 # Book 1 Narrative Register Decision
 
-> **Status: author-ratified on 2026-08-08; amended through 2026-09-24.**
+> **Status: author-ratified on 2026-08-08; amended through 2026-09-25.**
 > The dated rulings below govern the current opening, epigraph and Part V
 > passage and its treatment of criticism. The register, trace, location and evidence rules
 > remain binding. Section 15's separate approval pauses are superseded by the
@@ -54,6 +54,25 @@ argument section apart, as `path#argument`; and the majority-derived length
 rule compares the derived text with everything argued or exempt, section by
 section. Each Part's labelled opening case is a planned manifest entry until it
 is written, named `part-N-<slug>.md`, and counts as exempt text.
+
+## Part I in the ruled shape — item 54, 2026-09-25
+
+Part I now carries both channels. Its labelled opening case, *The Sports Field
+at Wallacedene*, tells the Grootboom eviction from the South African
+Constitutional Court's own record and states what the judgment declined to
+determine; it asserts nothing about what this design does. Chapters 1–6 each
+keep their pinned account in flat derived sections, with at most one "What this
+cannot settle" and the child section where the child decision keeps it, and
+close with one argument section in the author's first person: the reason for
+the rule, the strongest alternative with the evidence for it, the cost and who
+bears it, and what would reopen the choice. Every documented case in them rests
+on a registry entry bound to a phrase in the prose, and none appears in a
+derived section. Chapter 6 adds "A claim that fails", which follows one person
+from first contact through every office that fails them to the Court's interim
+measures, each step pinned. The custody material Chapter 4 carried moved to
+Chapters 26 and 27. The opening note now names the argument sections and the
+opening case among the places the author speaks. The exact prose is
+`session-drafted, author-approved under delegated approval (2026-09-13)`.
 
 ## Final sequential review — item 33, 2026-09-21
 

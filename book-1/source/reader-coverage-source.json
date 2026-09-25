@@ -76,21 +76,6 @@
       ]
     },
     {
-      "id": "01-05",
-      "chapter": "book-1/01-the-child-with-nobody.md",
-      "section": "The child the record never entered",
-      "domain": "Personhood and equality",
-      "family": "UNIVERSAL-STANDING",
-      "function": "protective",
-      "setting": "the child with no entry, and the birth rule deleted",
-      "trajectory": "fails",
-      "basis": "book-1/01-the-child-with-nobody.pins.nibli",
-      "pattern": "constructive",
-      "postures": [
-        "receives"
-      ]
-    },
-    {
       "id": "01-06",
       "chapter": "book-1/01-the-child-with-nobody.md",
       "section": "Who counts",
@@ -98,21 +83,6 @@
       "family": "UNIVERSAL-STANDING",
       "function": "ordinary",
       "setting": "whether the answer depended on the birth",
-      "trajectory": "works",
-      "basis": "book-1/01-the-child-with-nobody.pins.nibli",
-      "pattern": "constructive",
-      "postures": [
-        "receives"
-      ]
-    },
-    {
-      "id": "01-07",
-      "chapter": "book-1/01-the-child-with-nobody.md",
-      "section": "The ways in",
-      "domain": "Personhood and equality",
-      "family": "UNIVERSAL-STANDING",
-      "function": "ordinary",
-      "setting": "a birth, an encounter, a presence, a holding",
       "trajectory": "works",
       "basis": "book-1/01-the-child-with-nobody.pins.nibli",
       "pattern": "constructive",
@@ -166,6 +136,21 @@
       ]
     },
     {
+      "id": "01-05",
+      "chapter": "book-1/01-the-child-with-nobody.md",
+      "section": "The child the record never entered",
+      "domain": "Personhood and equality",
+      "family": "UNIVERSAL-STANDING",
+      "function": "protective",
+      "setting": "the child with no entry, whom every route and every alarm misses",
+      "trajectory": "fails",
+      "basis": "book-1/01-the-child-with-nobody.pins.nibli",
+      "pattern": "constructive",
+      "postures": [
+        "receives"
+      ]
+    },
+    {
       "id": "01-11",
       "chapter": "book-1/01-the-child-with-nobody.md",
       "section": "What this cannot settle",
@@ -178,6 +163,21 @@
       "pattern": "constructive",
       "postures": [
         "receives"
+      ]
+    },
+    {
+      "id": "01-12",
+      "chapter": "book-1/01-the-child-with-nobody.md",
+      "section": "Argument: Standing before identity",
+      "domain": "Personhood and equality",
+      "family": "exempt",
+      "function": "argument",
+      "setting": "standing before identity, against a verified registry and a check at the counter",
+      "trajectory": "contested",
+      "basis": "exempt-element",
+      "pattern": "argument",
+      "postures": [
+        "chooses"
       ]
     },
     {
@@ -258,11 +258,11 @@
     {
       "id": "02-05",
       "chapter": "book-1/02-what-the-record-may-say.md",
-      "section": "False or missing inputs",
+      "section": "What this cannot settle",
       "domain": "Records and accountability",
       "family": "ARTICLES",
       "function": "protective",
-      "setting": "a fabricated direct entry",
+      "setting": "a fabricated direct entry, a forged adulthood entry and a defect marker with its cause unknown",
       "trajectory": "unresolved",
       "basis": "book-1/02-what-the-record-may-say.pins.nibli",
       "pattern": "records",
@@ -283,6 +283,21 @@
       "pattern": "records",
       "postures": [
         "is acted upon"
+      ]
+    },
+    {
+      "id": "02-07",
+      "chapter": "book-1/02-what-the-record-may-say.md",
+      "section": "Argument: Why the record is closed by name",
+      "domain": "Records and accountability",
+      "family": "exempt",
+      "function": "argument",
+      "setting": "a record closed by name, against the integrated case file",
+      "trajectory": "contested",
+      "basis": "exempt-element",
+      "pattern": "argument",
+      "postures": [
+        "chooses"
       ]
     },
     {
@@ -331,6 +346,36 @@
       ]
     },
     {
+      "id": "03-03",
+      "chapter": "book-1/03-what-you-are-owed.md",
+      "section": "What this cannot settle",
+      "domain": "Material floor",
+      "family": "ARTICLES",
+      "function": "protective",
+      "setting": "a presence record naming the wrong place, and a changed rule that reports a floor condition without a receipt",
+      "trajectory": "unresolved",
+      "basis": "book-1/03-what-you-are-owed.pins.nibli",
+      "pattern": "constructive",
+      "postures": [
+        "receives"
+      ]
+    },
+    {
+      "id": "03-04",
+      "chapter": "book-1/03-what-you-are-owed.md",
+      "section": "Argument: Owed to everyone, by someone",
+      "domain": "Material floor",
+      "family": "exempt",
+      "function": "argument",
+      "setting": "named goods owed to everyone, against conditional support and a cash income",
+      "trajectory": "contested",
+      "basis": "exempt-element",
+      "pattern": "argument",
+      "postures": [
+        "chooses"
+      ]
+    },
+    {
       "id": "04-00",
       "chapter": "book-1/04-whether-it-arrived.md",
       "section": "(preamble)",
@@ -376,21 +421,6 @@
       ]
     },
     {
-      "id": "04-03",
-      "chapter": "book-1/04-whether-it-arrived.md",
-      "section": "What holding requires",
-      "domain": "Material floor",
-      "family": "DELIVERY-RECEIPT",
-      "function": "ordinary",
-      "setting": "custody and holding create duties; independent evidence establishes shelter",
-      "trajectory": "continuity-remedy",
-      "basis": "tests/pins/public-safety/protection/actual-holding/independent-shelter-receipt/expect.pins.nibli",
-      "pattern": "constructive",
-      "postures": [
-        "receives"
-      ]
-    },
-    {
       "id": "04-04",
       "chapter": "book-1/04-whether-it-arrived.md",
       "section": "The child with nobody",
@@ -418,6 +448,21 @@
       "pattern": "constructive",
       "postures": [
         "receives"
+      ]
+    },
+    {
+      "id": "04-06",
+      "chapter": "book-1/04-whether-it-arrived.md",
+      "section": "Argument: Evidence from the person served",
+      "domain": "Material floor",
+      "family": "exempt",
+      "function": "argument",
+      "setting": "evidence from the person served, against verification at the counter",
+      "trajectory": "contested",
+      "basis": "exempt-element",
+      "pattern": "argument",
+      "postures": [
+        "chooses"
       ]
     },
     {
@@ -568,6 +613,21 @@
       "pattern": "constructive",
       "postures": [
         "receives"
+      ]
+    },
+    {
+      "id": "05-10",
+      "chapter": "book-1/05-when-there-is-genuinely-not-enough.md",
+      "section": "Argument: A shortage must be proved, and need decides it",
+      "domain": "Material floor",
+      "family": "exempt",
+      "function": "argument",
+      "setting": "a proved shortage decided by need, against price and against queues",
+      "trajectory": "contested",
+      "basis": "exempt-element",
+      "pattern": "argument",
+      "postures": [
+        "chooses"
       ]
     },
     {
@@ -767,9 +827,25 @@
       ]
     },
     {
+      "id": "06-19",
+      "chapter": "book-1/06-who-owes-and-what-follows.md",
+      "section": "A claim that fails",
+      "domain": "Material floor",
+      "family": "OBLIGATIONS",
+      "function": "continuity",
+      "setting": "one claim followed through every office that fails it, from first contact to the Court's interim measures",
+      "trajectory": "continuity-remedy",
+      "basis": "book-1/06-who-owes-and-what-follows.pins.nibli",
+      "pattern": "constructive",
+      "postures": [
+        "receives",
+        "challenges"
+      ]
+    },
+    {
       "id": "06-17",
       "chapter": "book-1/06-who-owes-and-what-follows.md",
-      "section": "Duties still need performance",
+      "section": "What this cannot settle",
       "domain": "Records and accountability",
       "family": "OBLIGATIONS",
       "function": "protective",
@@ -779,6 +855,21 @@
       "pattern": "records",
       "postures": [
         "receives"
+      ]
+    },
+    {
+      "id": "06-20",
+      "chapter": "book-1/06-who-owes-and-what-follows.md",
+      "section": "Argument: Named bearers, and a court that secures the minimum",
+      "domain": "Material floor",
+      "family": "exempt",
+      "function": "argument",
+      "setting": "named bearers and a court that secures the minimum, against reasonableness review",
+      "trajectory": "contested",
+      "basis": "exempt-element",
+      "pattern": "argument",
+      "postures": [
+        "chooses"
       ]
     },
     {

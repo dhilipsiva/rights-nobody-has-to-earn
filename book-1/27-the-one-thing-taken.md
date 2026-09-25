@@ -141,11 +141,29 @@ ending it; so does shelter at Adam and Kel's named supported residences.
 
 ## Physical holding is a further fact
 
-A credible independent report that somebody remains held triggers humane
-care, voice and independent review even after sentence authority ends. A
-complete holding finding also identifies the duties owed by the operator.
-Neither route authorises continued holding or counts shelter and communication
-as already provided.
+Someone physically held by public power is owed a voice whether the hold
+follows a conviction, a protective order or an unlawful act. Permission to hold
+someone leaves open whether the holding occurred. A positive report of holding
+answers that question, and it creates protection duties while leaving speech
+and delivery to their own records.
+
+A credible independent report that somebody remains held triggers humane care,
+voice and independent review, even after sentence authority ends and even where
+the order is incomplete or disputed: humane treatment waits on neither. The
+person need not first ask for judicial examination. Confidential counsel,
+interpretation, accommodation, independent access and notice to a person they
+choose remain owed, and the holding body may not act as its own final reviewer.
+A complete holding finding also identifies the duties owed by the operator.
+Neither route authorises continued holding, makes an unlawful hold lawful, or
+counts shelter and communication as already provided.
+
+A disputed or ended order also leaves in place the human subject independently
+identified in its record. That identification is a separate standing route;
+civil identity and guilt each need evidence of their own. Suppose a separate
+record holds an independently witnessed shelter receipt for a person reported
+held without a lawful order. Shelter then follows through the same receipt rule
+that serves people outside custody, and neither the receipt nor the person's
+right to care authorises the holding.
 
 ## Protection is not punishment
 

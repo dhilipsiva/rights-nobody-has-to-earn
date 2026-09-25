@@ -22,8 +22,8 @@ remain jargon-free. Generated reports and prose do not override the formal sourc
 **Ratified 2026-09-24, not yet implemented:** each derived chapter will also
 close with one labelled argument section, and documented cases will also appear
 in the opening and at the head of each Part (D2 and D3 of *The revision rulings
-D1–D9* below). Until those items land, the paragraph above describes the
-edition.
+D1–D9* below). Part I carries both since item 54; until items 55–57 land,
+the paragraph above describes the other Parts.
 
 Book 2 owns operation and transition within a declared reference envelope:
 staffing, costs, resources, technology, workflows, capacity, and empirical
@@ -133,6 +133,64 @@ reinstate the retired tooling or workflow.
 
 Grouped by kind. Dates in each heading are the ratification dates; a ruling
 that was later implemented or narrowed carries that supersession inline.
+
+### Item 54 — Part I in the ruled shape, 2026-09-25
+
+Part I is the first Part rewritten under rulings D2, D3 and D5. Its labelled
+opening case, *The Sports Field at Wallacedene*
+(`book-1/part-1-the-sports-field-at-wallacedene.md`, the manifest's first
+landed opener), tells the Grootboom eviction from the Constitutional Court's
+own record — 510 children and 390 adults on a sports field, a judgment that
+declined to determine a minimum core and ordered housing for nobody — and
+states what Part I writes down instead. Chapters 1–6 keep their pinned
+accounts in flat derived sections, each with at most one "What this cannot
+settle", and each closes with one `## Argument:` section: the reason for the
+rule, the strongest alternative with its evidence, the cost and who bears it,
+and what would reopen the choice. Standing before identity is argued against
+identity-first welfare (the Aadhaar Act and the Jharkhand study); the closed
+record against the integrated case file (Robodebt, the childcare-benefits
+inquiry, SyRI); the unconditional named floor against the UN committee's
+conditional duty and a basic income; recipient-side evidence against
+verification at the counter; a proved shortage decided by need against
+benefit-maximising triage; and named bearers with a court that secures the
+minimum against reasonableness review.
+
+Chapter 6 gains "A claim that fails": Juno, met at first contact, is followed
+through a kitchen that witnesses its own meal, an advocate and alternate who
+both stay silent, a region certified as failing, and a general pattern that
+reaches the Court's interim measures and the minimum's first claim on funds,
+keeping standing and free movement throughout while food stays unshown. A new
+block in its pins carries every step (75). Chapter 2 gains a pin refusing a
+direct credibility finding (46). The custody passages Chapter 4 carried moved
+to Chapter 27's "Physical holding is a further fact" and Chapter 26's alarm
+section, and the birth-rule counterfactual leaves Chapter 1's prose while its
+case stays in the suite for item 63. The opening note names the opening case
+and the argument sections among the places the author speaks. The companion, the
+book builder's tests and the UI tests now read the number of reading inputs
+from the manifest rather than a fixed figure; the companion crate and its
+export binary compile and are formatted, and the desktop harness, which needs
+GTK, was not built here.
+
+Checking the sources against their primary texts corrected three: section 7 of
+the Aadhaar Act *lets* a government require authentication, with other
+identification for anyone never assigned a number, and the registry, Chapter 1
+and Chapter 4 now say so; the Finnish experiment's employment effects were
+"minor at best", with days in employment unchanged in the first year, rather
+than the registry's "small positive" responses; and the Waldron and
+Nissenbaum entries carry their DOIs as locators. `grootboom-2000-eviction-facts`
+is new, and 37 new bindings tie each argument section's sources and figures to
+the registry (78). The reader-coverage ledger follows the new and renamed
+sections (231 passages); the lint admits the six argument sections and the
+opening case, and `Juno` joins its home table. The exact prose is
+`session-drafted, author-approved under delegated approval (2026-09-13)`.
+
+No rule changes; the rule count stays at 7,583. Chapter 2's and Chapter 6's
+pins pass 46 and 75 (focused, partial). All 145 authoring development tests
+pass, with five declared ignored, as do the sixteen prose-lint, nine
+book-builder and six companion input unit tests and the prose check.
+`registry/check.py` passes with 222 claims. `RIGHTS_VERIFY_JOBS=4 ./verify.sh`
+passes 90,110 pins across 16,351 cases with complete contradiction checks and
+no findings in 1,198.45s.
 
 ### Item 53 — the book restructured, and the channels for argument built, 2026-09-25
 
@@ -1253,6 +1311,8 @@ dramatised scenes, and the rule that argument creates no right, power or
 exception all stand. Derived sections stay exactly as derived as before. The
 length invariant and the digit rule come to be measured by section rather than
 by file once item 53 builds that tooling. Items 53–59 and 63 implement it.
+**Implemented for Part I 2026-09-25 (item 54):** Chapters 1–6 each close
+with an argument section.
 
 **D3 — documented cases outside Part V.** Documented, registry-sourced cases may
 appear in the opening (Santoshi Kumari first, with the dispute over her death
@@ -1260,6 +1320,8 @@ intact), in a short labelled case opening each Part, and in argument sections.
 They never appear in a derived section, and no case gains an invented inner
 life. This supersedes the rule that the historical cases stay in Part V. Items
 46, 47, 54–57 and 60 implement it.
+**Implemented for Part I 2026-09-25 (item 54):** its opening case is *The
+Sports Field at Wallacedene*, and its argument sections carry their cases.
 
 **D4 — the constitution in plain language, in the companion.** Numbered
 plain-language articles are published in the companion, not printed in the book,
@@ -3513,7 +3575,8 @@ remain three.)
 rulings D1–D9*):** each derived chapter will close with one labelled argument
 section, and documented cases may also appear in the opening, a labelled case
 opening each Part, and those argument sections. The flat register, the ban on
-inner lives and the refusal of composite citizens and dramatised scenes stand.
+inner lives and the refusal of composite citizens and dramatised scenes stand. Part I
+carries both since item 54 (2026-09-25).
 
 **Superseding prose-supply protocol — author-approved 2026-08-20.** Sessions may
 draft the Book 1 manuscript, including its epigraph, opening note, numbered
@@ -7095,7 +7158,8 @@ Note the manifesto's heading convention differs deliberately from the book's: it
   **Superseded in part 2026-09-24, not yet implemented (D2 of *The revision
   rulings D1–D9*):** each derived chapter will close with one labelled
   first-person argument section, so the seam moves inside the chapter rather
-  than disappearing. Derived sections stay flat and derived.
+  than disappearing. Derived sections stay flat and derived. Part I's
+  chapters carry theirs since item 54 (2026-09-25).
 
 - **The method part's scope is sealed — `book-1/method.md`, landed 2026-08-03.** Five
   decisions, each load-bearing: **(a) the filename is unnumbered and must never be

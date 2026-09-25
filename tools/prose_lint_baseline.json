@@ -9,54 +9,108 @@
     "strays": 0
   },
   "book-1/01-the-child-with-nobody.md": {
-    "negation": 43.3,
+    "negation": 9.9,
     "jargon": 1.2,
     "names": 2,
-    "disclaimers": 2,
+    "disclaimers": 0,
+    "banned": 0,
+    "harness": 0,
+    "strays": 0
+  },
+  "book-1/01-the-child-with-nobody.md#argument": {
+    "negation": 2.9,
+    "jargon": 0.0,
+    "names": 0,
+    "disclaimers": 0,
     "banned": 0,
     "harness": 0,
     "strays": 0
   },
   "book-1/02-what-the-record-may-say.md": {
-    "negation": 31.8,
+    "negation": 4.8,
     "jargon": 0.5,
-    "names": 8,
-    "disclaimers": 2,
+    "names": 4,
+    "disclaimers": 0,
+    "banned": 0,
+    "harness": 0,
+    "strays": 0
+  },
+  "book-1/02-what-the-record-may-say.md#argument": {
+    "negation": 8.0,
+    "jargon": 0.0,
+    "names": 0,
+    "disclaimers": 0,
     "banned": 0,
     "harness": 0,
     "strays": 0
   },
   "book-1/03-what-you-are-owed.md": {
-    "negation": 28.7,
+    "negation": 8.6,
     "jargon": 0.0,
     "names": 1,
+    "disclaimers": 0,
+    "banned": 0,
+    "harness": 0,
+    "strays": 0
+  },
+  "book-1/03-what-you-are-owed.md#argument": {
+    "negation": 2.2,
+    "jargon": 0.0,
+    "names": 0,
     "disclaimers": 0,
     "banned": 0,
     "harness": 0,
     "strays": 0
   },
   "book-1/04-whether-it-arrived.md": {
-    "negation": 42.4,
+    "negation": 10.9,
     "jargon": 0.0,
-    "names": 5,
+    "names": 3,
+    "disclaimers": 0,
+    "banned": 0,
+    "harness": 0,
+    "strays": 0
+  },
+  "book-1/04-whether-it-arrived.md#argument": {
+    "negation": 6.3,
+    "jargon": 0.0,
+    "names": 0,
     "disclaimers": 0,
     "banned": 0,
     "harness": 0,
     "strays": 0
   },
   "book-1/05-when-there-is-genuinely-not-enough.md": {
-    "negation": 26.6,
-    "jargon": 0.7,
+    "negation": 2.5,
+    "jargon": 0.6,
     "names": 1,
     "disclaimers": 0,
     "banned": 0,
     "harness": 0,
     "strays": 0
   },
+  "book-1/05-when-there-is-genuinely-not-enough.md#argument": {
+    "negation": 0.0,
+    "jargon": 0.0,
+    "names": 0,
+    "disclaimers": 0,
+    "banned": 0,
+    "harness": 0,
+    "strays": 0
+  },
   "book-1/06-who-owes-and-what-follows.md": {
-    "negation": 24.3,
+    "negation": 7.9,
     "jargon": 0.0,
     "names": 1,
+    "disclaimers": 0,
+    "banned": 0,
+    "harness": 0,
+    "strays": 0
+  },
+  "book-1/06-who-owes-and-what-follows.md#argument": {
+    "negation": 6.8,
+    "jargon": 0.0,
+    "names": 0,
     "disclaimers": 0,
     "banned": 0,
     "harness": 0,
@@ -207,7 +261,7 @@
     "strays": 0
   },
   "book-1/24-findings-about-people.md": {
-    "negation": 26.8,
+    "negation": 26.6,
     "jargon": 0.3,
     "names": 14,
     "disclaimers": 0,
@@ -225,7 +279,7 @@
     "strays": 0
   },
   "book-1/26-where-people-are-put.md": {
-    "negation": 35.9,
+    "negation": 35.1,
     "jargon": 0.0,
     "names": 8,
     "disclaimers": 0,
@@ -234,7 +288,7 @@
     "strays": 0
   },
   "book-1/27-the-one-thing-taken.md": {
-    "negation": 36.3,
+    "negation": 35.5,
     "jargon": 0.0,
     "names": 6,
     "disclaimers": 1,
@@ -269,9 +323,18 @@
     "harness": 0,
     "strays": 0
   },
+  "book-1/part-1-the-sports-field-at-wallacedene.md": {
+    "negation": 13.1,
+    "jargon": 0.0,
+    "names": 0,
+    "disclaimers": 0,
+    "banned": 0,
+    "harness": 0,
+    "strays": 0
+  },
   "book-1/reference.md": {
-    "negation": 17.4,
-    "jargon": 0.9,
+    "negation": 16.8,
+    "jargon": 0.6,
     "names": 43,
     "disclaimers": 1,
     "banned": 0,

@@ -72,7 +72,7 @@ RECURRING = [
     "Kel", "Gia", "Wren", "Iris", "Tove", "Mael",
 ]
 HOME = {
-    "Ori": "01", "Marlo": "09", "Ansel": "09", "Coll": "09", "Nima": "09",
+    "Ori": "01", "Juno": "06", "Marlo": "09", "Ansel": "09", "Coll": "09", "Nima": "09",
     "Pico": "09", "Ona": "09", "Quin": "09", "Sata": "09", "Yano": "09",
     "Koa": "16", "Nia": "21", "Faro": "23", "Pax": "23", "Lior": "23",
     "Dara": "23", "Sena": "23", "Dev": "24", "Edo": "24", "Mira": "24",
@@ -143,6 +143,10 @@ def ordered_inputs():
         if name == "00-opening-note.md":
             out.append((f"book-1/{name}", "opening"))
     for part in manifest["parts"]:
+        # A Part's labelled opening case (ruling D3) is argued text.
+        opener = part.get("opener", {})
+        if opener.get("status") == "landed":
+            out.append((f"book-1/{opener['file']}", "argument"))
         for chapter in part["chapters"]:
             if chapter.get("file"):
                 out.append((f"book-1/{chapter['file']}", "chapter"))

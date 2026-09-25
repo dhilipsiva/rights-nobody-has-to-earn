@@ -66,6 +66,9 @@ and this reference material follow them.
 
 ### Part I — Who counts, and what they are owed
 
+- [Opening case: The Sports Field at Wallacedene](part-1-the-sports-field-at-wallacedene.md)
+  — families evicted in the Cape winter, and a judgment that declined to define
+  what everyone is owed.
 - [Chapter 1: The Child With Nobody](01-the-child-with-nobody.md) — what follows
   from a birth entry, what remains invisible when no entry exists, and every
   other way into the record, without papers, citizenship or a family.
@@ -78,7 +81,8 @@ and this reference material follow them.
 - [Chapter 5: When There Is Genuinely Not Enough](05-when-there-is-genuinely-not-enough.md)
   — the evidence and limits governing a shortage, and what remains owed.
 - [Chapter 6: Who Owes, and What Follows](06-who-owes-and-what-follows.md) — public
-  responsibility, continuity and remedy when an ordinary route fails.
+  responsibility, continuity and remedy when an ordinary route fails, with one
+  claim followed through every office that fails it.
 
 ### Part II — The life the design leaves alone
 
@@ -289,6 +293,7 @@ finding a case again.
 |---|---|---|
 | Nell, whose only initial entry is a birth; Ori, with no standing entry | What gives a person standing? | [1](01-the-child-with-nobody.md) |
 | Marisol, with a food receipt and a matching observation by an independent witness | What shows that provision arrived? | [4](04-whether-it-arrived.md) |
+| Juno, met at first contact and followed through every office that fails to act | What does each failure leave owed, and to whom? | [6](06-who-owes-and-what-follows.md#a-claim-that-fails) |
 | Ansel, certificate subject; Coll, wage recipient; Marlo, supplement claimant | What evidence supports each separate claim? | [9](09-work-pay-and-contribution.md) |
 | Bela, subject of a credibility finding and teacher of Cira | What changes for the teacher, and what does not transfer to the learner? | [9](09-work-pay-and-contribution.md), [24](24-findings-about-people.md) |
 | Esa, a teacher and the child of a parent who judges Esa | What does an activity or family relationship show about age? | [9](09-work-pay-and-contribution.md), [18](18-the-vote-conviction-does-not-take.md) |
@@ -315,7 +320,8 @@ finding a case again.
 | Hano, held under a properly made custody case | What is required to restrict movement, and what remains protected? | [18](18-the-vote-conviction-does-not-take.md), [27](27-the-one-thing-taken.md) |
 | Jala, with a recorded injury to Ivo but no conviction | Does sharing an injury entry with a convicted person's case restrict movement? | [27](27-the-one-thing-taken.md) |
 
-Historical cases belong to Part V's arguments over
+Documented historical cases open Part I and support the chapters' argument
+sections; Part V draws them together in its arguments over
 [valuation](29-the-five-joints.md#valuation),
 [rotation](29-the-five-joints.md#rotation),
 [coercion](29-the-five-joints.md#coercion),

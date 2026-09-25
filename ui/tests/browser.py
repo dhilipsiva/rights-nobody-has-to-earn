@@ -31,7 +31,11 @@ def main():
     cases = json.loads((UI/'generated/cases.json').read_text(encoding='utf-8'))['cases']
     expected = json.loads((UI/'tests/expectations.json').read_text(encoding='utf-8'))
     routes = ['', 'read/', 'search/'] + [f'read/{Path(p["source"]).stem}/' for p in content['pages']]
-    assert len(routes) == 35 and len(content['pages']) == 32 and len(cases) == 78
+    manifest = json.loads((UI.parent/'book-1/contents.json').read_text(encoding='utf-8'))
+    inputs = len(manifest['front']) + len(manifest['back']) + sum(
+        (p.get('opener', {}).get('status') == 'landed') + sum(c['status'] == 'landed' for c in p['chapters'])
+        for p in manifest['parts'])
+    assert len(content['pages']) == inputs and len(routes) == inputs + 3 and len(cases) == 78
     for path in ['game.json', 'cases.json']:
         def inspect(value):
             if isinstance(value, dict):
@@ -46,7 +50,7 @@ def main():
         assert md.is_file() and '<!--' not in md.read_text(encoding='utf-8')
     assert '/search/' not in (UI/'dist/rights-nobody-has-to-earn/sitemap.xml').read_text(encoding='utf-8')
     assert 'precomputed' not in (UI/'dist/rights-nobody-has-to-earn/index.md').read_text(encoding='utf-8')
-    report = {'routes':35, 'reader_inputs':32, 'screens':[], 'engine':[], 'contrast':[]}
+    report = {'routes':len(routes), 'reader_inputs':inputs, 'screens':[], 'engine':[], 'contrast':[]}
     errors = []
     with sync_playwright() as p:
         browser = p.chromium.launch(executable_path=args.browser_executable)
@@ -80,7 +84,7 @@ def main():
         page.locator('.chapter-navigation a').last.click()
         assert '/00-opening-note/' in page.url
         context.close()
-        print('PASS: 35 static routes, 32 reading inputs, redirects and 404', flush=True)
+        print(f'PASS: {len(routes)} static routes, {inputs} reading inputs, redirects and 404', flush=True)
 
         context = browser.new_context(viewport={'width':1280,'height':1000})
         page = context.new_page(); page.on('pageerror', lambda e: errors.append(str(e)))

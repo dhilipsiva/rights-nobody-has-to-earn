@@ -92,7 +92,10 @@ obligation.
 The alarm reads reports, so a placement nobody reports raises no alarm.
 Authority does not default to any place: positive lawful placement evidence is
 required before confinement may follow. Permission, a report of use, a finding
-of fault and a performed remedy answer different questions.
+of fault and a performed remedy answer different questions. The alarm watches
+where the design puts someone it confines. Whether every person owed housing
+received it is a separate question, answered by recipient-side evidence, even
+though each concerns a roof.
 
 ## A fixed route still depends on evidence
 

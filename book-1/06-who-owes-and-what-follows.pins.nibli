@@ -29,7 +29,7 @@
 # WHAT FALSE MEANS HERE: a FALSE is pinned only where the KB could have said
 # TRUE, and the comment says what would flip it.
 
-:expect-pins 50
+:expect-pins 75
 
 # ── "Public responsibility around it takes distinct forms." ────────────────
 # Respect, protection, fulfilment, continuity, remedy — one typed duty each.
@@ -266,4 +266,122 @@ observe(FSBOD_18, Pattern_Person, Bela, UnconstitutionalFloorShortfallDeclaratio
 # A plan duty is not provision: the waiting claimant's care remains owed and
 # undelivered.
 ? healthy(ScarcityWaitingClaimant).
+# => FALSE
+
+# ── A claim that fails, from first contact to remedy ─────────────────────────
+# "A claim that fails": one person followed through every office that owes
+# them something, each failing in turn. Every constant is fresh, so nothing
+# here reaches the cast, and the section adds no timing or staffing.
+
+# First contact makes Juno a person, owed the floor, the advocate's first move
+# and the common tier's backstop, with nothing asked about papers or family.
+at(Juno, FirstContact).
+
+? person(Juno).
+# => TRUE
+? owe(State, Eats, Juno).
+# => TRUE
+? obliged(RightsAdvocate, InitiateAssistanceAndRepresentationWithoutARequest, Juno).
+# => TRUE
+? obliged(CommonTier, BackstopTheFloorForEveryPersonInTheJurisdiction, Juno).
+# => TRUE
+
+# A witness authorised for Juno records where Juno is present: the region owes
+# provision and the locality reach and delivery.
+authorized(JunoPresenceWitness, FloorPresenceWitness, Juno).
+observe(JunoPresenceWitness, Juno, JunoRegion, FloorPresenceRegionScope).
+observe(JunoPresenceWitness, Juno, JunoLocality, FloorPresenceLocalityScope).
+
+? obliged(JunoRegion, ProvideTheFloorWhereThePersonIsPresent, Juno).
+# => TRUE
+? obliged(JunoLocality, ReachAndDeliverTheFloorLocally, Juno).
+# => TRUE
+
+# Provision recorded only by the provider: a kitchen records serving Juno and
+# witnesses its own record. No food conclusion follows; the debt stands.
+receives(Juno, JunoMeal, JunoKitchen).
+authorized(JunoKitchen, DeliveryWitness, Juno).
+observe(JunoKitchen, JunoMeal, Juno, FoodScope).
+
+? eats(Juno).
+# => FALSE
+? owe(State, Eats, Juno).
+# => TRUE
+
+# Nobody begins. Until somebody records that, the alternate owes no review; a
+# passerby's entry lands the review duty, and anybody may write it.
+? obliged(IndependentRightsAlternate, ReviewWhetherAssistanceWasInitiatedForThisPerson, Juno).
+# => FALSE
+
+observe(JunoPasserby, JunoAloneEntry, Juno, UninitiatedAssistanceScope).
+
+? obliged(IndependentRightsAlternate, ReviewWhetherAssistanceWasInitiatedForThisPerson, Juno).
+# => TRUE
+
+# Neither office acts. No rule reads a duty, so their silence concludes nothing
+# about Juno: no credibility finding, no custody, and both duties still owed.
+? false(Juno).
+# => FALSE
+? prisoner(Juno).
+# => FALSE
+? obliged(RightsAdvocate, InitiateAssistanceAndRepresentationWithoutARequest, Juno).
+# => TRUE
+? obliged(IndependentRightsAlternate, ReviewWhetherAssistanceWasInitiatedForThisPerson, Juno).
+# => TRUE
+
+# The region fails. An auditor and an independent reviewer, neither of them the
+# region, certify the failure and name the common tier: continuity passes up,
+# the region's own duty stands, and Juno is still owed food nobody has shown.
+authorized(JunoAuditor, FloorFailureSourceAuthority, JunoFailure).
+authorized(JunoFailureReviewer, IndependentFloorFailureReviewAuthority, JunoFailure).
+observe(JunoAuditor, JunoFailure, JunoRegion, FloorFailedTierScope).
+observe(JunoFailureReviewer, JunoFailure, JunoRegion, FloorFailedTierScope).
+observe(JunoAuditor, JunoFailure, CommonTier, FloorContinuityTierScope).
+observe(JunoFailureReviewer, JunoFailure, CommonTier, FloorContinuityTierScope).
+
+? obliged(CommonTier, AssumeFloorContinuityForTheCertifiedFailure, JunoFailure).
+# => TRUE
+? obliged(JunoRegion, ProvideTheFloorWhereThePersonIsPresent, Juno).
+# => TRUE
+? eats(Juno).
+# => FALSE
+
+# The failure is general. A certified pattern in Juno's region reaches the
+# Constitutional Court; its declaration obliges the Assembly's plan; the
+# Assembly's certified nonresponse obliges interim measures and gives the
+# minimum the first claim on funds.
+public(JunoRegion).
+authorized(JunoPatternSource, FloorShortfallPatternSourceAuthority, JunoPattern).
+authorized(JunoPatternReviewer, IndependentFloorShortfallPatternReviewAuthority, JunoPattern).
+observe(JunoPatternSource, JunoPattern, JunoRegion, FloorShortfallPatternTierScope).
+observe(JunoPatternReviewer, JunoPattern, JunoRegion, FloorShortfallPatternTierScope).
+
+? obliged(FSBOD_18, DecideWhetherTheCertifiedFloorShortfallIsAnUnconstitutionalStateOfAffairs, JunoPattern).
+# => TRUE
+
+authorized(FSBOD_18, UnconstitutionalStateOfAffairsDeclarationAuthority, JunoPattern).
+observe(FSBOD_18, JunoPattern, JunoRegion, UnconstitutionalFloorShortfallDeclarationScope).
+
+? obliged(FSBOD_02, AdoptAPublicPlanWithReasonsDeadlinesAndASourceBoundEnd, JunoPattern).
+# => TRUE
+? obliged(JunoRegion, CarryOutThePublicPlanForTheCertifiedShortfall, JunoPattern).
+# => TRUE
+
+authorized(FSBOD_19, FloorPlanNonresponseSourceAuthority, JunoPattern).
+authorized(JunoPlanReviewer, IndependentFloorPlanNonresponseReviewAuthority, JunoPattern).
+observe(FSBOD_19, JunoPattern, FSBOD_02, FloorPlanNonresponseScope).
+observe(JunoPlanReviewer, JunoPattern, FSBOD_02, FloorPlanNonresponseScope).
+
+? obliged(FSBOD_18, OrderInterimMeasuresSecuringTheMinimumWithoutAdministeringTheService, JunoPattern).
+# => TRUE
+? obliged(FSBOD_07, GiveTheFloorMinimumTheFirstClaimOnFunds, JunoPattern).
+# => TRUE
+
+# The remedy is owed, not performed. Juno keeps standing and free movement
+# throughout, and nothing yet shows that food arrived.
+? person(Juno).
+# => TRUE
+? travel(Juno).
+# => TRUE
+? eats(Juno).
 # => FALSE

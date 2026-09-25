@@ -73,7 +73,7 @@
 # is untouched. Pin a FALSE only where the KB could have said TRUE, and say in
 # the comment what would flip it.
 
-:expect-pins 45
+:expect-pins 46
 
 # 1.2 "Hano injured Ivo. A court judged Hano. Both of those are facts."
 ? injure(Hano, Ivo).
@@ -99,6 +99,11 @@ authority(Pax).
 # chapter's three cannot-write claims, and the only one that was unpinned.
 :refuse reasoning /declared derived-only/
 severe(Zed).
+
+# "So are direct assertions of ... a credibility finding." A credibility
+# finding follows only from the paired route; nobody may write one.
+:refuse reasoning /declared derived-only/
+false(Zed).
 
 # 1.4 cont. "Either a seating body chose you, or you hold a public office.
 #            Those are the only routes."
@@ -130,11 +135,10 @@ severe(Zed).
 ? false(Koa).
 # => FALSE
 
-# 1.6 "Three names sit on an amendment register. ... The list of what counts
-#      as evidence is not on that register."
-# This pin is DELIBERATELY the uncomfortable one. It is the chapter's closing
-# admission. A TRUE would change the label verdict and require a rewrite, but
-# would still not prove that an `admits` edit was semantically entrenched.
+# 1.6 The protected register names the floor article and leaves the evidence
+# vocabulary off it; the chapter on changing the rules describes the register.
+# Here the pair stands beside "Changing the vocabulary": an `admits` edit is a
+# visible source change, and the register does not inspect it.
 ? permanent(Art_Floor).
 # => TRUE
 

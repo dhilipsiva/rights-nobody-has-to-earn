@@ -93,12 +93,14 @@ no fear, comfort or hope to their named people. Any feelings you imagine
 belong to your reading, not to their evidence.
 
 *The Rights Nobody Has to Earn* makes its commitments inspectable. That cannot
-make them just. I speak directly in this opening, in Part V's arguments and
-in the optional method; the intervening chapters state the consequences of
-the formal design. An exposed failure still needs resolution.
+make them just. I speak directly in this opening, in the documented case that
+opens Part I, in the labelled argument section that closes each of its
+chapters, in Part V's arguments and in the optional method; every other
+section states the consequences of the formal design. An exposed failure still
+needs resolution.
 
-The commitments have a lineage, and Part V credits each idea where its argument
-uses it: Henry Shue's case that subsistence is a basic right; the duties to
+The commitments have a lineage, and the arguments credit each idea where they
+use it: Henry Shue's case that subsistence is a basic right; the duties to
 respect, protect and fulfil the right to food; Amartya Sen's and Jean Drèze's
 account of hunger as a failure of entitlement; Philip Pettit's freedom as
 non-domination; and Elizabeth Anderson's democratic equality. The design departs

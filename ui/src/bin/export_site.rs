@@ -74,7 +74,7 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
             "map/" => "26 questions about personhood, the unconditional floor, ordinary life and public power, with a glossary and routes into Book 1.",
             "walkthrough/food-delivery/" => "Follow six delivery records. Explore why a receipt and an independent witness derive a conclusion, and what that conclusion cannot prove.",
             "about/" => "Authorship, sources, licensing, privacy and the limits of the executable Book 1 companion.",
-            "read/" => "Read the complete Book 1 in manuscript order: epigraph, opening note, 28 chapters, the optional method, and a map, glossary and index.",
+            "read/" => "Read the complete Book 1 in manuscript order: epigraph, opening note, every chapter and Part opening case, the optional method, and a map, glossary and index.",
             "search/" => "Search the complete text of Book 1 locally on your device.", _ => "This page does not exist in Book 1.",
         }.into());
         let is_404 = route.ends_with("/404/");

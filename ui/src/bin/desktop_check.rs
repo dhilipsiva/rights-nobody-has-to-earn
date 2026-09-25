@@ -4,7 +4,11 @@ use dioxus::{
     desktop::{Config, WindowBuilder},
     prelude::*,
 };
-use rights_book_ui::{App, PreferencesDirectory, data::PREFIX, reasoning};
+use rights_book_ui::{
+    App, PreferencesDirectory,
+    data::{PREFIX, book},
+    reasoning,
+};
 use std::path::PathBuf;
 #[derive(Clone)]
 struct Output(PathBuf);
@@ -24,7 +28,7 @@ fn Harness() -> Element {
             let mut eval = document::eval(include_str!("../../tests/desktop.js"));
             let expectations: serde_json::Value =
                 serde_json::from_str(include_str!("../../tests/expectations.json")).unwrap();
-            let _ = eval.send(serde_json::json!({"expectations":expectations,"resume":resume,"reader_only":reader_only}));
+            let _ = eval.send(serde_json::json!({"expectations":expectations,"resume":resume,"reader_only":reader_only,"reader_inputs":book().pages.len()}));
             let result = loop {
                 let message = eval.recv::<serde_json::Value>().await;
                 if let Ok(value) = &message {
