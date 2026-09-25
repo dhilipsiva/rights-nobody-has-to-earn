@@ -30,8 +30,9 @@ repository were checked against `93fa5662` on 2026-09-24.
 - **Reproduced:** run over the Markdown, `prose_lint.py` matches the plan's
   per-chapter figures within rounding, and every ordered input fails its
   negation threshold today; `tools/prose_lint.py` now holds each to its figures.
-- **Unverified:** the plan's citations, which it says were written from memory
-  (item 46).
+- **Checked:** the plan's citations, which it says were written from memory,
+  against primary sources (item 46); `registry/plan-sources-2026-09.md` records
+  the one that failed and where the plan misdescribed a source.
 
 Several of its central recommendations would supersede author-ratified rulings.
 The author ruled on each of them on 2026-09-24; the answers are under *Rulings
@@ -216,32 +217,15 @@ unimplemented until the items named here land.
 
 ## Ordered revision backlog
 
-Work in this order: items 46–52, which measure, repair and prepare; items
+Work in this order: items 47–52, which measure, repair and prepare; items
 53–63 carry the structure and the rewrite under the ratified rulings; item 64
 finishes production, 65 closes the revision, and 66 is optional. Numbering
-continues from items 01–33, which `CLAUDE.md` records; items 34–45 and 67–72
+continues from items 01–33, which `CLAUDE.md` records; items 34–46 and 67–72
 are complete and recorded there too. Chapter numbers refer to the [current
 reading sequence](book-1/contents.json), which the plan also uses, until item 53
 changes it.
 
 ### Evidence and lineage
-
-- [ ] **46. Verify and register the plan's sources.**
-
-  **Scope:** `registry/claims.json` and every source named in plan §5–§10.
-
-  The plan says its citations were written from memory and must be checked.
-  Check each against a primary source before use: for case law, the court, date,
-  citation and the passage that decides the point the prose relies on; for books
-  and articles, the edition and page. Register each with a locator a reader can
-  follow. The registry's lessons apply: an identifier is not a source, and a
-  court is not a judgment. Under rulings D2 and D3 these sources may support the
-  opening, the Part openers, the argument sections and Part V, never a derived
-  section. Record any source that fails, with the claim it would have supported.
-
-  **Done when:** every source a later item uses has a registry entry with a
-  working locator, `registry/check.py` and the claim-discipline tests pass,
-  and failures are recorded rather than dropped.
 
 - [ ] **47. Correct Part V's evidence and credit its lineage.**
 
@@ -257,8 +241,8 @@ changes it.
   protect and fulfil framework; Sen and Drèze on entitlements; Pettit on
   non-domination; Anderson; Rawls on the social minimum; Rahman; Raworth and
   Rockström; Ostrom; Nissenbaum; the 3Rs; the CRPD and the UNCRC; Kymlicka
-  and Shachar; Crépeau and Hastie; the Quebec Reference. Each source passes
-  item 46 first.
+  and Shachar; Crépeau and Hastie; the Quebec Reference. Each source is
+  registered by item 46; use its claim and notes, not the plan's description.
 
   **Done when:** each historical example supports a stated comparison, every
   credit is verified and registered, and the Part V figure bindings pass.
@@ -501,7 +485,7 @@ changes it.
   voting, Switzerland and Uruguay's colegiado on the executive, and abolitionist
   arguments, with the incarceration evidence, on confinement. Each argument goes
   in the argument section of the chapter that states the rule (D2), and its
-  sources pass item 46 first.
+  sources are the ones item 46 registered, read with their notes.
 
   **Done when:** each commitment has its strongest alternative stated fairly,
   its cost and who bears it, and the evidence that would change the choice.

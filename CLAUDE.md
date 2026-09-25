@@ -134,6 +134,39 @@ reinstate the retired tooling or workflow.
 Grouped by kind. Dates in each heading are the ratification dates; a ruling
 that was later implemented or narrowed carries that supersession inline.
 
+### Item 46 — the plan's sources, checked and registered, 2026-09-25
+
+The revision plan named about 150 sources in §8.2, §8.5, §9.1, §9.2 and §10 and
+said its citations were written from memory. Seven research passes checked each
+against a primary source or the most authoritative reachable copy: for case law
+the court, date, citation and deciding passage; for statutes and treaties the
+article and official text; for books and articles the edition, publisher,
+pages or DOI where they could be read. The registry gains 144 entries, each with
+a URL or DOI and notes saying what was actually read — full text, official page,
+abstract or publisher's description — and the pinpoint verified; a book whose
+page could not be read carries that limit rather than an invented page. Two
+locators were supplied by a later publisher-page search, and both entries say
+so.
+
+Three sources are not registered, and `registry/plan-sources-2026-09.md`
+records them with the claim each would have supported: Rawls's *Political
+Liberalism*, whose sentence on the social minimum was found only in secondary
+quotation, with the locators to check; and the Finnish basic-income report and
+the 2018 Aadhaar judgment, already registered. The same record lists where the
+plan described a source more strongly than it supports — among them that
+Anderson's guarantee is conditional on working, that General Comment 12's duty
+to provide applies where people cannot help themselves, that Neubauer gives
+future generations no present rights, that the 2019 German sanctions ruling
+declared the rules incompatible rather than void, that Chile now requires ten
+years' residence, that Refugee Convention Article 33 has exceptions, and that
+the incarceration study's gains are for defendants not working before prison.
+Items 47 and 54–59 read those notes rather than the plan. The TODO's references
+to item 46 now point there.
+
+No rule, pin, chapter or suite changes, so item 72's complete run on the same
+formal inputs stands. `registry/check.py` passes with 221 claims, and the
+claim-discipline and reference development tests pass.
+
 ### Item 72 — an outreach report reaches the person it reports, 2026-09-25
 
 Item 45's never-recorded-person case found that Article 1c's escalation, built

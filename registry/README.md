@@ -13,6 +13,11 @@ For the submission and review workflow, see the
 [contribution guide](../CONTRIBUTING.md). The registry supports evidence review;
 it does not make a claim true merely by containing it.
 
+The sources the 2026-09-24 revision plan named were checked against primary
+sources before use; [the record of that check](plan-sources-2026-09.md) lists
+the one that failed, the two already registered, and the places where the
+plan described a source differently from what the source supports.
+
 ## Edit a claim
 
 `claims.json` contains a `spec` block describing the fields and a `claims`
