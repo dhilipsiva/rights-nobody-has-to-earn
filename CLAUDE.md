@@ -216,10 +216,10 @@ sixteen book-builder tests, the sixteen prose-lint tests, the twelve companion
 input tests, its five library tests and one `book-reason` test. Formatting,
 the prose check, and the works-cited and index `--check` modes pass too. The
 static exporter renders 45 routes, and the companion's engine comparison
-matches every recorded expectation across its 91 records. The review, sample
-and summary PDFs have 256, 36 and 16 pages, tagged, with the subtitle in
-their metadata and first, the promise last, and no return arrow or web
-closing. All three EPUBs pass EPUBCheck 5.3.0, run through nix, with no errors
+matches every recorded expectation across its 91 records in 2,741.56s. The
+review, sample and summary PDFs have 256, 36 and 16 pages, tagged, with the
+subtitle in their metadata and first, the promise last, and no return arrow or
+web closing. All three EPUBs pass EPUBCheck 5.3.0, run through nix, with no errors
 or warnings. The cover, back cover and revised pages were inspected.
 
 ### Item 64 — production and accessibility, 2026-09-25
