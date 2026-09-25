@@ -20,9 +20,11 @@ own page again immediately before sending.
 
 ## The decisions that come first
 
-On 25 September 2026 the author decided to approach all seven presses, knowing
-the conflicts below. The messages are in [drafts](drafts/README.md), and each
-of these four raises its conflict first.
+On 25 September 2026 the author first chose all seven presses, knowing the
+conflicts below, and then decided not to approach UCL Press. The messages to
+the other six are in [drafts](drafts/README.md). The three conflicted presses
+still approached, Verso, punctum and Westminster, each have their conflict
+raised first.
 
 Four presses' own policies raise a question the author must settle before
 anything is sent. All seven are silent on a book that is already public under

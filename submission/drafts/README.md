@@ -2,9 +2,11 @@
 
 # Submission drafts
 
-These are ready-to-send messages to the seven presses the author chose on
-25 September 2026. **None has been sent.** The author sends each one; the
-session that drafted them has no way to send email and has contacted no one.
+These are ready-to-send messages to the six presses the author chose on 25
+September 2026. The author later decided not to approach UCL Press, whose AI
+policy the book appears to fall outside. **None has been sent.** The author
+sends each one; the session that drafted them has no way to send email and has
+contacted no one.
 
 Before sending any message:
 
@@ -30,7 +32,6 @@ the same time. Leave those three statements in.
 |---|---|---|
 | MIT Press | [mit.md](mit.md) | A short inquiry to one editor, with no attachments. |
 | punctum books | [punctum.md](punctum.md) | A very brief pitch with no attachments. The manuscript itself can go only from May to July. |
-| UCL Press | [ucl.md](ucl.md) | A brief outline, asking first whether the press's AI policy can accommodate the book. |
 | University of Westminster Press | [westminster.md](westminster.md) | A proposal, asking first whether the press will publish under CC BY. |
 | Polity | [polity.md](polity.md) | A proposal to the politics editor. |
 | Pluto Press | [pluto.md](pluto.md) | A proposal in the press's own headings, with sample chapters. |

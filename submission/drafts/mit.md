@@ -4,12 +4,11 @@
 
 **Status:** unsent.
 
-**To:** `[AUTHOR: one editor's address, from the acquisitions staff page]`.
-The press asks authors to contact one editor only. No editor is listed for
-politics or law. The nearest fits are:
-- Philip Laughlin, for philosophy;
-- Justin Kehoe, for science, technology and society, because of the
-  executable rules.
+**To:** Justin Kehoe, Acquisitions Editor for Science, Technology & Society.
+The staff page links his profile at https://mitpress.mit.edu/Justin-Kehoe but
+shows no address; take it from that page. The author chose him on 25 September
+2026 because of the executable rules. The press asks authors to contact one
+editor only, and no editor is listed for politics or law.
 
 **Attach:** nothing. The press asks for no chapters until it invites them.
 
@@ -18,7 +17,7 @@ executable rules (complete, about 98,000 words)
 
 ---
 
-Dear `[AUTHOR: editor's name]`,
+Dear Justin Kehoe,
 
 I am writing to ask whether you would consider a proposal for *The Rights
 Nobody Has to Earn: A worked design for a society, with its formal claims made

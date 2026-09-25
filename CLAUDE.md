@@ -168,6 +168,10 @@ that the book is already public under CC BY 4.0. Every draft says that other
 presses are considering it. Each of the four conflicts is raised first in its
 own draft. Nothing about the author is invented: biography, reasons for
 writing, reviewers, promotion and contact details are marked `[AUTHOR: …]`.
+Asked next, the author chose Justin Kehoe as MIT Press's editor and said the
+Pluto proposal should be open to cutting the book towards the press's length.
+The author added no further reason in the Verso draft. The author also decided
+not to approach UCL Press, and its draft is removed.
 The session has no means of sending email, and no press has been contacted;
 the author sends each message. The exact drafts are `session-drafted,
 author-approved under delegated approval (2026-09-13)` as drafts, and the

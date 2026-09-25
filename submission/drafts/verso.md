@@ -30,7 +30,6 @@ rulings are mine. An AI assistant drafted the prose, the formal rules and their
 tests, and I approved it. I know Verso is firmly opposed to generative AI at
 any stage of a book's creation. I am sending the proposal with that fact
 first, so that you can decide with it in front of you.
-`[AUTHOR: optionally, your own reason for offering the book to Verso.]`
 
 **Themes.** The book asks what a society owes a person who can offer it nothing
 in return, and how that person can hold it to the promise. It opens on

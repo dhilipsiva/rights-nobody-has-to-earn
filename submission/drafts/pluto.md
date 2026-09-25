@@ -57,8 +57,8 @@ a paragraph for each of the thirty chapters and the five Part openers.
 
 **Format and length.** About 98,000 words, above your preferred range. That
 figure includes the notes, works cited and reference material, and the book has
-five diagrams and several tables. `[AUTHOR: whether you would cut the book to a
-length the press prefers, and how.]`
+five diagrams and several tables. I would be glad to work with you towards your
+preferred length, for example by moving the optional method online.
 
 **Delivery.** The manuscript is complete and can be sent now.
 
