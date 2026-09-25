@@ -102,13 +102,16 @@ all $p: all $item: all $src: all $w:
   receives($p, $item, $src) &
   authorized($w, DeliveryWitness, $p) &
   observe($w, $item, $p, FoodScope) &
-  ~($w = $src) -> eats($p).
+  ~($w = $src) & ~related($w, $p, FloorDutyBearer) &
+  ~($w = State) & ~($w = CommonTier) -> eats($p).
 ```
 
 Every repeated variable must refer to the same thing. The witness must be
 authorised for this recipient, attest this item at food scope, and differ
-from its source. An attestation about another item, person or kind of
-provision cannot fill the gap.
+from its source. It must also be none of the public bodies whose duty the
+delivery discharges: the State, the common tier, or a region or locality
+recorded as providing for the recipient. An attestation about another item,
+person or kind of provision cannot fill the gap.
 
 Chapter 5 supplies the evidence in stages:
 

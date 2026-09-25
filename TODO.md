@@ -216,7 +216,7 @@ unimplemented until the items named here land.
 
 ## Ordered revision backlog
 
-Work in this order: items 70–72, the defects item 45's stress tests confirmed,
+Work in this order: items 71–72, the defects item 45's stress tests confirmed,
 then items 46–52, which measure, repair and prepare; items 53–63 carry the
 structure and the rewrite under the ratified rulings; item 64 finishes
 production, 65 closes the revision, and 66 is optional. Numbering continues from
@@ -225,24 +225,6 @@ reading sequence](book-1/contents.json), which the plan also uses, until item 53
 changes it.
 
 ### Resolve the design questions, source and pins first
-
-- [ ] **70. Keep public continuity public, and delivery witnesses independent
-  of the duty-bearer.**
-
-  **Scope:** Article 1b's continuity rule, the recipient-side delivery routes
-  (`FS-CVF-015`), and `tests/pins/stress/agency-and-contractor-blame`.
-
-  Blame cannot move the debt, the common tier's backstop or the region's duty,
-  and split blame moves no continuity. But the continuity rule obliges whatever
-  body a certification names, so continuity can be certified onto a private
-  contractor; and a delivery witness is held apart from the provider by identity
-  only, so the region whose duty the delivery discharges can certify its own
-  contractor's delivery. Require the continuity tier to be a public tier, and
-  hold the delivery witness apart from the duty-bearing principal as well as the
-  provider, without making any floor item conditional.
-
-  **Done when:** both defect pins in the stress case resolve, the existing
-  delivery and continuity pins still hold, and no route gains a new veto.
 
 - [ ] **71. Give a blocked amendment a reasoned, reviewable answer.**
 

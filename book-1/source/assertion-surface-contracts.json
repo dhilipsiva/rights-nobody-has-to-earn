@@ -2142,7 +2142,7 @@
         ],
         "effect": "A floor actuality is certified from entries the recipient never controlled, and the delivery gap reads as closed for that person.",
         "target": "eats",
-        "evidence_ref": "book-1/source/constitution.nibli::observe($w, $item, $p, FoodScope) & ~($w = $src) -> eats($p)."
+        "evidence_ref": "book-1/source/constitution.nibli::observe($w, $item, $p, FoodScope) & ~($w = $src) & ~related($w, $p, FloorDutyBearer) & ~($w = State) & ~($w = CommonTier) -> eats($p)."
       },
       "withholding_deletion_harm": {
         "operation": "withhold_or_delete",
@@ -2151,7 +2151,7 @@
         ],
         "effect": "The floor actuality stops deriving; absence is not a finding of non-delivery and must trigger outreach rather than terminate the entitlement.",
         "target": "eats",
-        "evidence_ref": "book-1/source/constitution.nibli::observe($w, $item, $p, FoodScope) & ~($w = $src) -> eats($p)."
+        "evidence_ref": "book-1/source/constitution.nibli::observe($w, $item, $p, FoodScope) & ~($w = $src) & ~related($w, $p, FloorDutyBearer) & ~($w = State) & ~($w = CommonTier) -> eats($p)."
       },
       "current_challenge_route": "No recipient correction, outreach, or accessible alternative is attached; the entry is a bare report and the engine authenticates nothing about it.",
       "required_challenge_route": "Recipient contest, correction, outreach on a missing receipt, and medium-neutral alternatives that do not require the recipient to act.",

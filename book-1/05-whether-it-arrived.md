@@ -19,10 +19,12 @@ observation of the same food for the same recipient. Ledgerwitness is distinct
 from Provender. With that evidence, the food conclusion follows.
 
 The match is specific. A food receipt does not establish shelter. A report of
-care paired with a food observation does not establish care. If the witness
-is also the source of the provision, the corresponding delivery conclusion
-does not follow. The provider cannot certify success through that route merely
-by writing both sides of it.
+care paired with a food observation does not establish care. If the witness is
+also the source of the provision, the corresponding delivery conclusion does
+not follow. The provider cannot certify success through that route merely by
+writing both sides of it. The same separation keeps the public bodies whose
+duty the delivery discharges out of the witness role: the State, the common
+tier, and any region or locality recorded as providing for the person.
 
 Marisol does not have to appear on the personhood roster first. The delivery
 rule recognises the matching evidence without reading that status. The record

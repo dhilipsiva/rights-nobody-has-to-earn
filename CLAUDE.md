@@ -134,6 +134,41 @@ reinstate the retired tooling or workflow.
 Grouped by kind. Dates in each heading are the ratification dates; a ruling
 that was later implemented or narrowed carries that supersession inline.
 
+### Item 70 — continuity stays public, witnesses stay independent, 2026-09-25
+
+Item 45's agency-and-contractor case confirmed two gaps. The item 36 continuity
+rule obliged whatever body a failure certification named, so continuity could be
+certified onto a private contractor; and each recipient-side receipt route held
+its witness apart from the provider by identity only, so the region that
+contracted a provider could witness that provider's delivery, the duty-bearer
+certifying its own discharge. The continuity rule now requires the named tier to
+be publicly answerable (`authority($upper)`), and `public(CommonTier)` joins
+`public(State)`. The five receipt rules now also hold the witness apart from the
+State, the common tier and any body a presence witness records as the person's
+region or locality, through two helper rules concluding `related($body, $x,
+FloorDutyBearer)` from base facts, so the floor actualities' new negative read
+sits outside every cycle. Those bodies are exactly the ones that owe a person
+the floor, so a public principal behind a contracted provider is among them
+without reading the delegation record.
+
+The two counterfactuals quoting the receipt rules and the placement case that
+removes the shelter route follow the new text; that case's edit lives on the
+case itself, which a first update of the bases alone missed. Chapter 4's pins
+require a public continuity tier and refuse one certified onto a private
+provider, Chapter 5's refuse a delivery witnessed by the person's recorded
+region, and the stress case now runs both refusals beside an independent
+inspector completing the receipt. Chapters 4 and 5 state the rules, one Chapter
+4 clause reworded to hold its negation figure, and the delivery and economic
+decisions and the red-team index record them; the exact prose is
+`session-drafted, author-approved under delegated approval (2026-09-13)`. Rules
+move from 7,556 to 7,558. The fourteen affected cases pass 308 pins (focused,
+partial). The first full development run caught the method's verbatim quotation
+of the food receipt rule and one assertion-surface needle on its tail; both
+follow the new text, and all 137 authoring development tests pass, with five
+declared ignored, as does the prose check. `RIGHTS_VERIFY_JOBS=4 ./verify.sh`
+passes 89,922 pins across 16,335 cases with complete contradiction checks and no
+findings in 1,224.87s, the defect pins for items 71 and 72 still reproducing.
+
 ### Item 69 — a compared claimant cannot attest, 2026-09-24
 
 Item 45's manipulated-urgency case found that a scarcity allocation held its

@@ -15,6 +15,21 @@ failed body's duty stands. The unconditional debts are unchanged, nothing reads
 the new duties, and none conditions the floor. No tier's performance, capacity
 or funding follows.
 
+**Public continuity and independent witnesses — item 70, 2026-09-25.** Item 45's
+agency-and-contractor case found that the continuity rule obliged whatever body
+a certification named, so continuity could be certified onto a private
+contractor, and that a delivery witness was held apart from the provider by
+identity only, so the region whose duty a delivery discharges could witness its
+own contractor's delivery. The continuity rule now requires the named tier to be
+publicly answerable (`authority($upper)`), and the common tier is declared a
+public body. Each recipient-side receipt route now holds its witness apart from
+the State, the common tier and any region or locality a presence witness records
+for the person, through `related($body, $x, FloorDutyBearer)`, a helper reading
+base facts only. A provider label still transfers nothing: blame between a
+public body and its contractor moves no debt, backstop or duty, and split blame
+moves no continuity. The receipt still needs a witness authorised for the
+person; an independent inspector authorised for them completes it.
+
 **Comparative argument — item 24, 2026-09-21.** The exact Part V comparisons
 under Capture and
 [Essentials, public responsibility and fiscal choice](../../31-the-five-joints.md#essentials-public-responsibility-and-fiscal-choice)

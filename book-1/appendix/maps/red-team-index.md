@@ -145,9 +145,10 @@ nor attest a defect finding against it (item 69). *Case:*
 a dispute. *Hidden cost:* the person waiting. *Detected:* not needed — the debt,
 the common tier's backstop and the region's duty read personhood and presence,
 not fault, and split blame moves no continuity because the backstop never
-depended on it. *Gaps:* continuity can be certified onto a private contractor,
-and the duty-bearing region can witness its own contractor's delivery (item 70).
-*Case:* `tests/pins/stress/agency-and-contractor-blame`.
+depended on it. Continuity passes only to a publicly answerable tier, and a
+delivery witness is held apart from the State, the common tier and the person's
+recorded region and locality as well as from the provider (item 70). *Case:*
+`tests/pins/stress/agency-and-contractor-blame`.
 
 **An amendment blocked by an expansive reading of the core.** *Gains:* whoever
 holds the effect reviewer's seat. *Needs:* that seat. *Hidden cost:* the

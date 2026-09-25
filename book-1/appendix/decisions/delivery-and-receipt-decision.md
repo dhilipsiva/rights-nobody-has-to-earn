@@ -306,3 +306,22 @@ provider-independence counterfactual, and approved `DLV-B1-v1` Book 1 prose are
 now installed. That implementation changes no cast fact and supplies no offer,
 accessibility, adequacy, service operation, actual-world arrival, completed
 remedy, recurrence monitoring, future non-recurrence, or institutional liveness.
+
+## Witnesses and the duty-bearer — item 70, 2026-09-25
+
+The recipient-side routes held the witness apart from the provider by identity
+only. Item 45's agency-and-contractor case showed the region that contracted a
+provider witnessing that provider's delivery, which is the duty-bearer
+certifying its own discharge. Each of the five receipt rules now also requires
+that the witness is not the State, not the common tier and not a body a presence
+witness records as the person's region or locality (`~related($w, $p,
+FloorDutyBearer) & ~($w = State) & ~($w = CommonTier)`). The helper reads base
+facts only, so the floor actualities' new negative read sits outside every
+cycle, and the floor-vector guards still find no reader of a floor actuality.
+The two counterfactuals that quote the receipt rules, and the placement case
+that removes the shelter route, follow the new text. The public bodies that owe
+a person the floor are exactly these: the State's debt, the common tier's
+finance and backstop, and a region's provision and a locality's delivery where
+the person is recorded as present. A public principal behind a contracted floor
+provider is therefore one of them, so the exclusion reaches it without reading
+the delegation record, whose own conclusion is a duty nothing reads.

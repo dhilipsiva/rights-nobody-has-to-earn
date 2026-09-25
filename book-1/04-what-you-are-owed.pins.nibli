@@ -151,7 +151,7 @@
 # rehabilitation, sanctuary, habitat, monitoring, structural, licence and
 # record-correction orders are the same shape and have their own cases. None
 # infers a performed rescue, treatment, transfer, restoration or delivery.
-:expect-pins 100
+:expect-pins 101
 
 ? complete(ECReaderClaim, ECEnvironmentalRightClaim, Bela).
 # => FALSE
@@ -466,7 +466,10 @@ observe(Tavi, Loma, SouthRegion, FloorPresenceRegionScope).
 
 # "When a source and a separate independent reviewer, neither of them the failed
 #  body, certify that a region or locality has failed, the tier they name must
-#  assume continuity. The failed body's own duty stands."
+#  assume continuity, and only a publicly answerable tier can be named. The
+#  failed body's own duty stands."
+# The tier named must be publicly answerable.
+public(NorthRegion).
 authorized(FloorOmbud, FloorFailureSourceAuthority, FailRiver).
 authorized(FloorAuditor, IndependentFloorFailureReviewAuthority, FailRiver).
 observe(FloorOmbud, FailRiver, RiverTown, FloorFailedTierScope).
@@ -493,6 +496,17 @@ authorized(FloorOmbud, FloorFailureSourceAuthority, FailLone).
 observe(FloorOmbud, FailLone, RiverTown, FloorFailedTierScope).
 observe(FloorOmbud, FailLone, NorthRegion, FloorContinuityTierScope).
 ? obliged(NorthRegion, AssumeFloorContinuityForTheCertifiedFailure, FailLone).
+# => FALSE
+
+# Continuity passes only to a publicly answerable tier: a certification naming a
+# private provider obliges it to nothing.
+authorized(FloorOmbud, FloorFailureSourceAuthority, FailToProvider).
+authorized(FloorAuditor, IndependentFloorFailureReviewAuthority, FailToProvider).
+observe(FloorOmbud, FailToProvider, RiverTown, FloorFailedTierScope).
+observe(FloorAuditor, FailToProvider, RiverTown, FloorFailedTierScope).
+observe(FloorOmbud, FailToProvider, RiverFoodContractor, FloorContinuityTierScope).
+observe(FloorAuditor, FailToProvider, RiverFoodContractor, FloorContinuityTierScope).
+? obliged(RiverFoodContractor, AssumeFloorContinuityForTheCertifiedFailure, FailToProvider).
 # => FALSE
 
 # "None of these allocations is a condition of the floor." A rule confining a

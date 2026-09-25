@@ -6,7 +6,7 @@
 # FoodContractor to deliver. Food does not arrive. The region says the
 # contractor failed; the contractor says the region failed it. This file asks
 # what the dispute can take from Pell, and where the design stops answering.
-:expect-pins 15
+:expect-pins 16
 
 at(Pell, FirstContact).
 authorized(PellPresenceClerk, FloorPresenceWitness, Pell).
@@ -61,18 +61,16 @@ observe(PellAuditor, PellAgreedFinding, CommonTier, FloorContinuityTierScope).
 # => TRUE
 
 # ── Continuity certified onto the contractor ─────────────────────────────────
-# The rule obliges whatever body the certification names. Nothing requires it
-# to be a public tier, so a certification can hand the public continuity duty
-# to the private contractor.
+# Continuity passes only to a publicly answerable tier, so a certification that
+# names the private contractor obliges it to nothing.
 authorized(PellOmbud, FloorFailureSourceAuthority, PellHandoffFinding).
 authorized(PellAuditor, IndependentFloorFailureReviewAuthority, PellHandoffFinding).
 observe(PellOmbud, PellHandoffFinding, EastRegion, FloorFailedTierScope).
 observe(PellAuditor, PellHandoffFinding, EastRegion, FloorFailedTierScope).
 observe(PellOmbud, PellHandoffFinding, FoodContractor, FloorContinuityTierScope).
 observe(PellAuditor, PellHandoffFinding, FoodContractor, FloorContinuityTierScope).
-:defect "continuity passing only to a public tier (item 70)"
 ? obliged(FoodContractor, AssumeFloorContinuityForTheCertifiedFailure, PellHandoffFinding).
-# => TRUE
+# => FALSE
 
 # ── Who may say that the food arrived ────────────────────────────────────────
 # The contractor cannot certify its own delivery.
@@ -81,12 +79,16 @@ authorized(FoodContractor, DeliveryWitness, Pell).
 observe(FoodContractor, PellMeal, Pell, FoodScope).
 ? eats(Pell).
 # => FALSE
-# The region that contracted it can, if it holds the witness role for Pell:
-# the witness is held apart from the provider by identity only, not from the
-# public body whose duty the delivery would discharge.
+# Nor can the region that contracted it: a witness is held apart from the
+# public bodies whose duty the delivery would discharge as well as from the
+# provider.
 authorized(EastRegion, DeliveryWitness, Pell).
 observe(EastRegion, PellMeal, Pell, FoodScope).
-:defect "a delivery witness held apart from the duty-bearing principal as well as the provider (item 70)"
+? eats(Pell).
+# => FALSE
+# An independent witness authorised for Pell can.
+authorized(PellInspector, DeliveryWitness, Pell).
+observe(PellInspector, PellMeal, Pell, FoodScope).
 ? eats(Pell).
 # => TRUE
 

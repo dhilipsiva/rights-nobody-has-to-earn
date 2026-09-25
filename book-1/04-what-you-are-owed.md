@@ -73,8 +73,8 @@ its duties need nothing but personhood. A region must provide the floor, and a
 locality must reach the person and deliver it, where a witness authorised for
 that person records the person as present there. When a source and a separate
 independent reviewer, neither of them the failed body, certify that a region or
-locality has failed, the tier they name must assume continuity. The failed
-body's own duty stands.
+locality has failed, the tier they name must assume continuity, and only a
+publicly answerable tier can be named. The failed body's own duty stands.
 
 None of these allocations is a condition of the floor. A person no witness has
 recorded is owed everything, and the common tier's duties reach them. A rule
