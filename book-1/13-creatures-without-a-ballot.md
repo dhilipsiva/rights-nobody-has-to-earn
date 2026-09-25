@@ -16,8 +16,8 @@ must meet the rules this chapter follows.
 ## Protection does not require being human
 
 The animal rules first identify who is protected, then what every controlled
-use owes, then which uses need further grounds, and last which protections lie
-beyond amendment.
+use owes, then which uses need further grounds and which protections lie beyond
+amendment, and last what the food rule means for farming and subsistence.
 
 Vertebrates, cephalopods and decapod crustaceans begin with a presumption of
 sentience. Independently reviewed evidence of a realistic possibility of
@@ -49,30 +49,29 @@ count for nothing in setting its worth or licensing harm to it.
 Ordinary use, such as companionship, rescue, sanctuary, observation or safe
 coexistence, that is nonlethal, non-invasive and low in severity needs the
 baseline and an independent welfare review; being a use is no reason to demand
-a serious purpose. Lethal, invasive or high-severity use needs
-more: a serious compatible purpose, necessity for that exact purpose, the
-absence of any safe, accessible and materially less-harmful alternative, the
-least harmful method, care, independent review before use, and its own end.
-Passing that test is a condition, and each kind of use still needs its own
-permission.
+a serious purpose. Lethal, invasive or high-severity use needs more: a serious
+purpose from a closed list, necessity for that exact purpose, the absence of any
+safe, accessible and materially less-harmful alternative reasonably available,
+the least harmful method, care, independent review before use, and its own end.
+The serious purposes are immediate necessary nourishment, the prevention or
+treatment of serious illness in people or animals, protection against grave
+danger to safety or public health, conservation or restoration grounded in
+evidence, assistance or work compatible with the animal's welfare, and
+scientific research that passes its own test. Passing that test is a
+condition, and each kind of use still needs its own permission.
 
 ### Further conditions for food and research
 
-Every controlled use of an animal to produce food, nonlethal production
-included, faces a further test: the people it would feed must have no safe,
-accessible, nutritionally adequate and materially less-harmful alternative
-reasonably available. Taste, habit, prestige, profit, advertising or price alone
-is insufficient. Cost and geography matter only for whether an alternative can
-really be reached, and the test withholds nobody's human food floor. Breeding,
-housing, handling, transport and killing stay under care standards, independent
-inspection and remedy, and where death occurs it requires effective stunning or
-an independently shown least-suffering method. Avoidable suffering stays
-unlawful whatever the food purpose.
-
-Making less-harmful nutrition available is a public duty, and transition must
-protect the human food floor, workers, communities and animal care. Delay and
-underinvestment count as a public failure rather than a lasting permission for
-avoidable harm.
+Every controlled use of a credibly sentient animal to produce food, nonlethal
+and non-severe production included, faces a further test: the people it would
+feed must have no safe, accessible, nutritionally adequate and materially
+less-harmful alternative reasonably available. Taste, habit, prestige, profit,
+advertising or price alone is insufficient. Cost and geography matter only for
+whether an alternative can really be reached, and the test withholds nobody's
+human food floor. Breeding, housing, handling, transport and killing stay under
+care standards, independent inspection and remedy, and where death occurs it
+requires effective stunning or an independently shown least-suffering method.
+Avoidable suffering stays unlawful whatever the food purpose.
 
 Research, testing and education require a serious health, safety or ecological
 purpose. Replacement comes before reduction and refinement. A scientifically
@@ -86,11 +85,13 @@ is prohibited whatever its claimed purpose.
 
 Fighting, sexual use, deliberate cruelty, punitive treatment, abandonment,
 extreme confinement, seriously harmful breeding and painful purposeless
-mutilation are forbidden. So are killing and severe suffering for dispensable
-purposes such as spectacle, sport, fashion, convenience or profit. Ownership,
-sector, licence, contract, tradition, religion and culture give no exemption
-from these prohibitions; the people whose practices they reach keep meaningful
-consultation, equality, accommodation and their human rights. Necessary humane
+mutilation are forbidden. So are killing and severe suffering for a dispensable
+purpose, and the list of those purposes is closed: spectacle, gambling,
+amusement, sport or trophy, prestige, fashion, cosmetics or marketing, novelty,
+convenience and profit. Ownership, sector, licence, contract, tradition,
+religion and culture give no exemption from these prohibitions; the people
+whose practices they reach keep meaningful consultation, equality,
+accommodation and their human rights. Necessary humane
 euthanasia has its own route, which must be complete, least-distressing and
 independently reviewed; owner inconvenience, shelter delay, ordinary cost and
 reduced commercial value are insufficient grounds for it.
@@ -115,12 +116,96 @@ offender.
 
 Three of these protections lie beyond amendment: a credibly sentient animal's
 direct protected status, the ban on severe avoidable suffering, and the ban on
-killing solely for one of the dispensable purposes the rules list. An
-independently reviewed finding that a candidate amendment removes that status or
-weakens either ban blocks the candidate; *Changing the Rules* follows the
-procedure. The food rule and the detailed standards are constitutional law an
-amendment may change, always inside those three, so that no food purpose
-licenses avoidable suffering.
+killing solely for one of the dispensable purposes the rules list. The words
+that define them have fixed meanings in the rules.
+
+*Direct protection* is the animal's own status as a protected subject. A
+covered animal is recorded as a credibly sentient protected animal with
+interests of its own: bodily integrity against avoidable pain, fear, distress,
+injury, disease and deprivation; continued life, a serious interest though not
+an absolute one; and conditions suited to its species and its dependency, with
+humane handling, transport, treatment and death. The status is protection
+rather than membership, and brings no personhood, floor, ballot, candidacy,
+office, property title, capacity to contract or political weight. The rules
+rank no animal by owner, wealth, price, affection, productivity or rarity, or
+by any score of its worth, and because the interests are its own, no owner or
+contract can waive them.
+
+Whether harm is *avoidable* turns, in each test, on an alternative. A lethal,
+invasive or high-severity use needs a finding that no safe, accessible and
+materially less-harmful alternative is reasonably available; a food use, that
+none which is also nutritionally adequate is reasonably available to the
+people it would feed; research, that no scientifically valid non-animal or
+materially less-harmful method can serve its purpose. Where such a route
+exists, the harm is avoidable and the use lacks the finding it needs.
+
+A purpose is *dispensable* when it is on the closed list above, and the core
+bars killing solely for one. The categorical prohibition rests on independent
+evidence of the exact conduct, and the rules weigh no profit, ownership,
+custom, research or ecological office against it. The list of serious purposes
+closes the other side of the line: only a purpose on that list supports a
+lethal, invasive or high-severity use.
+
+An independently reviewed finding that a candidate amendment removes the
+animal's status or weakens either ban blocks the candidate; *Changing the
+Rules* follows the procedure. The finding compares the exact base, candidate
+and reviewed effects rather than a label, and no majority, emergency, profit,
+custom, necessity or general finding of compatibility waives it. It refuses
+reliance on that candidate alone: discussion, challenge, existing rights, care
+and lawful history remain. The food rule and the detailed standards are
+constitutional law an amendment may change, always inside those three, so that
+no food purpose licenses avoidable suffering.
+
+### What the food rule means for farming and subsistence
+
+For farming the rules work out as follows. Production that keeps the animal
+alive needs a positive finding that it is nonlethal, non-invasive and outside
+high severity, together with the food test, the welfare baseline and a
+permission of its own from the public animal regulator. Production that kills
+the animal is a lethal use. It needs the food test, the welfare baseline and
+its own permission, and also the further test for lethal use, with immediate
+necessary nourishment as its purpose, necessity for that exact purpose, the
+least harmful method, care and independent review before the use. Where a safe,
+accessible, nutritionally adequate and materially less-harmful alternative is
+reasonably available to the people the production would feed, the food test
+fails and neither permission follows, however well the animals are kept. Profit
+is a dispensable purpose rather than a food purpose: where independent evidence
+of the conduct shows killing for profit, the categorical prohibition follows
+and withdraws the food permission already in force for that animal and use.
+
+A household that keeps animals for its own food is a controller like any other.
+A farmed animal has the same protection under household and customary control
+as under public, cooperative, nonprofit and private control, and whoever
+controls it owes respect for the direct core and the care its setting needs,
+with no exemption for ownership.
+
+For subsistence the test turns on what the people concerned can actually
+reach. Cost and geography count for whether an alternative is really
+accessible, so a community with no safe and adequate alternative within its
+reach can meet the test's alternative condition, while habit or price alone
+meets it for nobody. Every permission, food included, records that ownership,
+sector, licence, contract, tradition, religion and culture give no exemption
+from the animal core. Where a collective's consent to an ecological project,
+or its prior consultation on one, is recorded, the record includes meaningful
+accommodation for Indigenous, subsistence, religious and conscience practice
+that keeps the ban on severe avoidable suffering whole, and it keeps customary
+and Indigenous title against ecological limits and animal protection alike.
+The body acting must respect both the collective's actual process and the
+separate human, animal and ecological limits, and consent and consultation
+authorise no breach of the animal core.
+
+Making less-harmful nutrition available is a public duty. A record of an actual
+failure of nutrition, access or transition obliges the body responsible to
+provide accessible, less-harmful nutrition and to keep human food and animal
+care continuous, and obliges the alternate named on the record to answer the
+failure without turning it into a lasting permission for harm. The record
+states that nobody loses food while supply, workers, communities or local
+capacity are unready, and it provides for source-bound support in which workers,
+Indigenous peoples, people living by subsistence, producers and regions take
+part, with equality and due process. These duties take effect on one authorised
+actor's record, and the reviewer named on it owes prompt review, which can
+withdraw them. Delay and underinvestment count as a public failure rather than
+a lasting permission for avoidable harm.
 
 ## An advocate for animals, and a court between the offices
 
@@ -206,11 +291,12 @@ Each order names what must happen and who owes it.
 
 ## What this cannot settle
 
-Sentience is classified by independent review and causation by adjudication,
-and the rules read both from their records. Whether a less harmful alternative
-is within reach of particular people is a matter of evidence about those
-people, animals and uses. Veterinary capacity, the transitions in food and
-research, and whether any order was performed belong to the second book.
+Sentience is classified by independent review, causation by adjudication and a
+use's purpose by independent evidence of the conduct, and the rules read each
+from its record. Whether a less harmful alternative is within reach of
+particular people is a matter of evidence about those people, animals and uses.
+Veterinary capacity, the transitions in food and research, and whether any
+order was performed belong to the second book.
 
 The next chapter turns to another relation that ownership and usefulness leave
 unmeasured: the roles people hold in one another's lives.
@@ -224,14 +310,29 @@ owner can consent to the harm, a contract can settle it, a policy can find a
 human interest weightier. Christine Korsgaard argues on Kantian grounds that we
 have direct obligations to the other animals and should treat sentient animals
 as ends in themselves, rejecting Kant's own view that duties regarding animals
-are only indirect.[^korsgaard] Someone has to put the animal's claim, and the
-owner may be the party whose conduct is in question, so I give it to a
-separate Advocate and the routes beside it. I keep the Advocate apart from the
-Guardian because saving a river and saving the fish in it can pull in
-different directions.
+are only indirect.[^korsgaard] The owner may be the party whose conduct is in
+question, so I give the animal's claim to a separate Advocate and the routes
+beside it, and I keep the Advocate apart from the Guardian because saving a
+river and saving the fish in it can pull in different directions.
 
-The strongest alternative, held in versions by the European Union and the
-United Kingdom, is a welfare regime: policy must regard animals' welfare,
+Political theories of animal rights ask for more. Sue Donaldson and Will
+Kymlicka argue that, beyond universal basic rights for all animals,
+domesticated animals should be treated as co-citizens, wild animals as members
+of sovereign communities, and liminal animals living among people as
+denizens.[^zoopolis] Martha Nussbaum extends her capabilities approach to
+animals and argues that humans share a collective responsibility for enabling
+them to flourish in their own characteristic ways.[^nussbaum] I stop at a core
+of prohibitions. An animal can use no ballot, candidacy or political weight,
+and its interests are better put by an Advocate whose claims a responding office
+must receive and a court can decide. A mandate for flourishing would make
+public offices judge the good life of every kind of animal, wild ones included;
+the core bars the harms evidence can find, and leaves the fuller good to
+standards an amendment may raise. The cost falls on animals: a domesticated
+animal gains no say in its society, and a wild population is protected through
+its habitat and the commons rather than as a community of its own.
+
+The strongest alternative in law is a welfare regime, held in versions by the
+European Union and the United Kingdom: policy must regard animals' welfare,
 weighed with other interests, and the animal holds no claim. Article 13 of the
 Treaty on the Functioning of the European Union requires the Union and the
 member states, in listed policy areas, "since animals are sentient beings", to
@@ -245,30 +346,88 @@ studies recommended regarding all cephalopods and decapods as sentient for the
 purposes of welfare law.[^birch] The regime's best evidence is that it binds: a
 European directive obliges member states to ensure that a scientifically
 satisfactory method without live animals is used wherever possible, that
-numbers are reduced and that methods are refined,[^directive] the replacement,
-reduction and refinement Russell and Burch set out in 1959.[^three-rs]
+numbers are reduced and that methods are refined,[^directive] the three R's
+Russell and Burch set out in 1959.[^three-rs]
 
-My rule costs more, and particular people bear it. Owners, farmers,
-researchers and people whose traditions use animals lose the power to settle
-an animal's interests, and must justify food, research and every lethal,
-invasive or high-severity use against its alternatives; a practice reaching
-the core keeps consultation and accommodation and gains no exemption. The
-animals bear a cost too: the river's fish wait for their separate review. I
-accept both, because a duty of regard can be outweighed by the interests of
-whoever does the weighing, while a claim the animal holds must be answered on
-its own terms.
+On food the strongest alternative is humane farming: raising and killing
+animals for food is acceptable when they live well and die without fear or
+pain, so the wrong lies in how animals are kept and killed rather than in
+keeping and killing them. It keeps farming livelihoods and familiar diets, and
+asks of farmers what they can do. My rules ask for that life and that death
+through the welfare baseline, the care standards for breeding, transport and
+killing, and stunning or the least-suffering method. They part from it at one
+point: a food use must also show that the people it feeds have no safe,
+adequate and less harmful alternative within reach. I count a death that could
+have been avoided as a harm to the animal however well it lived. That
+judgement sits in the food rule, which an amendment may change inside the
+core, and the core keeps any food purpose from licensing severe avoidable
+suffering.
 
-I would reconsider if welfare regimes with duties of regard and advisory
-committees were shown to prevent severe avoidable suffering as reliably where
-owners or industries gain from it, or if a separate Advocate were shown to be
-captured by the uses it watches, or to stall decisions a single office would
-make better.
+Culture tests the core most sharply. In 2014 a two-judge bench of India's
+Supreme Court held that jallikattu and bullock-cart races as such violated
+the Prevention of Cruelty to Animals Act 1960, read the internationally
+recognised five freedoms into it, held Tamil Nadu's 2009 statute regulating
+jallikattu repugnant to it, and declared that Parliament is expected to make
+animal rights constitutional.[^nagaraja] In 2017 Tamil Nadu amended the Act to
+permit jallikattu, and in 2023 a Constitution Bench upheld the amendment. It
+left to the legislature whether the practice is integral to Tamil culture,
+added that cultural tradition cannot justify what offends the law, and
+proceeded on the basis that the Constitution recognises no fundamental right
+for animals.[^awbi-2023]
+
+My core would set heritage aside and ask two questions of what is actually
+done, on independent evidence: whether the animals suffer severely where that
+could be avoided, and whether any is killed or made to suffer severely for
+spectacle, amusement, sport or prestige. If either is shown, the practice is
+barred whatever its tradition, and an amendment weakening the bar would be
+refused; if the evidence shows neither, the welfare baseline and the detailed
+standards govern. I agree with the 2023 bench that tradition cannot justify
+what offends the law, and I put the ban on severe avoidable suffering where
+the 2014 bench expected Parliament to put animal rights, in the constitution,
+and beyond amendment, out of reach of a legislature's judgement of heritage.
+The community is owed meaningful consultation, equal treatment, accommodation
+up to the line the core draws and every human right its members hold, and a
+finding about the practice takes no member's standing, floor or vote.
+
+My rules cost more than these alternatives, and particular people bear it.
+Owners, farmers, researchers and households lose the power to settle an
+animal's interests and must justify every food, research, lethal, invasive or
+high-severity use against its alternatives. People whose livelihoods or diets
+rest on animal food bear the food rule. The constitution owes them the floor,
+food that stays continuous while the transition is unready, and source-bound
+support for their livelihoods that they help to shape; the form and size of
+that support belong to ordinary law, and whether it arrives to the second book.
+A community whose practice reaches the core gains no exemption. I accept these
+costs because a duty of regard can be outweighed by the interests of whoever
+does the weighing, while a claim the animal holds must be answered on its own
+terms.
+
+I would reconsider if welfare regimes were shown to prevent severe avoidable
+suffering as reliably where owners or industries gain from it, or if a
+separate Advocate were shown to be captured by the uses it watches or to stall
+decisions a single office would make better. Evidence that the food rule left
+people short of adequate food despite the floor, or that humane standards
+reliably spared farmed animals severe suffering in life and at death, would
+favour narrowing the food rule. Evidence that animals fared better where
+institutions gave them a representative voice or a duty to their flourishing
+would favour going beyond the core.
 
 [^korsgaard]: Christine M. Korsgaard, [*Fellow Creatures: Our Obligations to
     the Other Animals*](https://doi.org/10.1093/oso/9780198753858.001.0001)
     (Oxford: Oxford University Press, 2018), Part Two. The thesis and the
     location of the argument against Kant are taken from Mark H. Bernstein's
     review in *Notre Dame Philosophical Reviews* (2019.05.02).
+
+[^zoopolis]: Sue Donaldson and Will Kymlicka, [*Zoopolis: A Political Theory
+    of Animal Rights*](https://global.oup.com/academic/product/zoopolis-9780199599660)
+    (Oxford: Oxford University Press, 2011), chapters 2 and 5–7. The framework
+    is taken from the authors' own summary and the chapter titles from the
+    Library of Congress table of contents; no page is cited.
+
+[^nussbaum]: Martha C. Nussbaum, [*Justice for Animals: Our Collective
+    Responsibility*](https://www.simonandschuster.com/books/Justice-for-Animals/Martha-C-Nussbaum/9781982102517)
+    (New York: Simon & Schuster, 2023). The summary follows the *Leonardo*
+    review (2023) and the publisher's description; no chapter or page is cited.
 
 [^tfeu]: [Consolidated version of the Treaty on the Functioning of the European
     Union](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:12012E/TXT),
@@ -305,3 +464,16 @@ make better.
     R's", in the online special edition, which omits the original page numbers.
     The three R's are principles for reducing inhumanity within animal use
     rather than for prohibiting it.
+
+[^nagaraja]: *Animal Welfare Board of India v. A. Nagaraja*, Civil Appeal No.
+    5387 of 2014, Supreme Court of India, judgment of 7 May 2014, (2014) 7 SCC
+    547, [paras 54 and 77](https://indiankanoon.org/doc/39696860/), in the
+    Indian Kanoon text, which is unofficial. The holding concerned the Act as
+    it then stood.
+
+[^awbi-2023]: *The Animal Welfare Board of India v. Union of India*, Writ
+    Petition (Civil) No. 23 of 2016, Supreme Court of India, Constitution
+    Bench, judgment of 18 May 2023, 2023 INSC 548,
+    [paras 37 and 40](https://api.sci.gov.in/pdfdate/index1.php?filename=supremecourt%2F2016%2F1216%2F1216_2016_3_1501_44624_Judgement_18-May-2023.pdf&dno=12162016&dt=2023-05-18),
+    official copy. The same judgment upheld the Maharashtra and Karnataka
+    amendments, which concern bullock-cart races and kambala (para 41).

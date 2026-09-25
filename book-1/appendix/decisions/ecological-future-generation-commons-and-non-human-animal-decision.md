@@ -14,6 +14,38 @@ protection", "avoidable" and "dispensable" on that basis and argues the result,
 with its implications for farming, household production, subsistence and
 culture. Nothing in this decision is superseded.
 
+**Ruling D9 argued — item 58, 2026-09-25.** Chapter 13 now defines the three
+terms from the source. Direct protection is the credibly sentient animal's own
+protected-subject status: its interests in bodily integrity, continued life and
+species-appropriate conditions, which no owner or contract can waive, with no
+personhood, floor, ballot or rank. Avoidable turns on whether a reasonably
+available, materially less harmful alternative exists, as each enhanced, food
+and research test asks. Dispensable is the closed list of purposes the source
+bars — spectacle, gambling, amusement, sport or trophy, prestige, fashion,
+cosmetics or marketing, novelty, convenience and profit — found on independent
+evidence of the conduct. The chapter states what the food rule means for
+farming, household and customary production and subsistence, and argues the
+core against welfare regimes, political theories of animal rights and
+humane farming, with the jallikattu judgments of 2014 and 2023 as the test of
+culture against the core.
+
+The review of the source found three limits, recorded here rather than in the
+reader text. The concluded transition duty runs to less-harmful nutrition and
+to continuous human food and animal care; the food-continuity record must also
+carry source-bound support shaped with worker, Indigenous, subsistence,
+producer and regional participation, which is the livelihood transition
+section 14 names, its form left to the source's law and its operation to Book
+2, as the chapter states. The ban on severe avoidable
+suffering works through the amendment gate and the enhanced, food and research
+tests rather than through a categorical bar of its own. And the ordinary-use
+purposes (companionship, rescue, sanctuary, observation, coexistence) give no
+permission route to a low-harm spectacle, so the chapter says only that the
+welfare baseline and detailed standards govern where the core is not reached.
+None of these is a constitutional defect under ruling D9: the ruling keeps the
+core as enacted and leaves the food rule and standards to amendable law. The
+exact prose is `session-drafted, author-approved under delegated approval
+(2026-09-13)`.
+
 **Entrenchment argument — item 24, 2026-09-21.** The exact
 [Part V protected-core argument](../../29-the-five-joints.md#what-a-majority-may-not-remove)
 is session-drafted and author-approved under the standing delegated approval.

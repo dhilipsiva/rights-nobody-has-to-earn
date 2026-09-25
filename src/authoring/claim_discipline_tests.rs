@@ -50,7 +50,7 @@ fn argued_text(context: &Context) -> String {
 /// leans on it. One source may carry several figures — Tanzania's relocation
 /// count and Mondragon's headcount are not one claim each — so the rows are
 /// keyed by case, not by entry.
-const TRACED: [(&str, &str, &str); 169] = [
+const TRACED: [(&str, &str, &str); 176] = [
     (
         "the Wallacedene eviction",
         "grootboom-2000-eviction-facts",
@@ -831,6 +831,41 @@ const TRACED: [(&str, &str, &str); 169] = [
         "national human rights institutions",
         "paris-principles-1993",
         "appointed by an official act for a set term",
+    ),
+    (
+        "planetary boundaries",
+        "rockstrom-2009-safe-operating-space",
+        "nine planetary boundaries",
+    ),
+    (
+        "the all-affected principle",
+        "goodin-2007-all-affected-interests",
+        "virtually everyone would vote on virtually everything",
+    ),
+    (
+        "the Council of States",
+        "swiss-constitution-1999-federal-council-council-of-states",
+        "whatever their populations",
+    ),
+    (
+        "animals in political theory",
+        "donaldson-kymlicka-2011-zoopolis",
+        "liminal animals living among people as denizens",
+    ),
+    (
+        "capabilities for animals",
+        "nussbaum-2023-justice-for-animals",
+        "flourish in their own characteristic ways",
+    ),
+    (
+        "jallikattu in 2014",
+        "awbi-v-nagaraja-2014",
+        "read the internationally recognised five freedoms into it",
+    ),
+    (
+        "jallikattu in 2023",
+        "awbi-v-union-of-india-2023",
+        "the Constitution recognises no fundamental right for animals",
     ),
 ];
 

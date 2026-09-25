@@ -96,7 +96,7 @@ checked here.
 | Personhood and equality | 19 | 14 | 9 |
 | Public institutions | 7 | 12 | 8 |
 | Public safety, policing and use of force | 6 | 5 | 6 |
-| Records and accountability | 13 | 19 | 10 |
+| Records and accountability | 13 | 19 | 11 |
 
 ## Every passage
 
@@ -328,7 +328,7 @@ checked here.
 | 24-17 | 24-findings-about-people.md | A signer under a finding | Records and accountability | CREDIBILITY | protective | a signer who keeps an appointment while a signature on a new finding stops counting | is acted upon | works | no | records | `book-1/24-findings-about-people.pins.nibli` |
 | 24-18 | 24-findings-about-people.md | Family ties bar the pair | Records and accountability | CREDIBILITY | protective | a parent examining their own child, and signer pairs tied by parentage or marriage | is acted upon | works | no | records | `book-1/24-findings-about-people.pins.nibli` |
 | 24-13 | 24-findings-about-people.md | The way back, and who has to answer | Records and accountability | CREDIBILITY | continuity | case-bound restoration, finality and reasons for every target | challenges | continuity-remedy | no | records | `book-1/24-findings-about-people.pins.nibli` |
-| 24-15 | 24-findings-about-people.md | What it costs | Records and accountability | CREDIBILITY | protective | independence found, not guessed from silence | is acted upon | unresolved | no | records | `book-1/24-findings-about-people.pins.nibli` |
+| 24-15 | 24-findings-about-people.md | What it costs | Records and accountability | CREDIBILITY | protective | independence found, not guessed from silence | is acted upon | unresolved | yes | records | `book-1/24-findings-about-people.pins.nibli` |
 | 24-16 | 24-findings-about-people.md | What this cannot settle | Public institutions | ARTICLES | protective | the seating fact the design is told | governs | unresolved | yes | democratic | `book-1/24-findings-about-people.pins.nibli` |
 | 24-19 | 24-findings-about-people.md | Argument: A restriction the size of the act | Records and accountability | exempt | argument | a finding that restricts only a signature, against disqualification and collateral consequences | chooses | contested | no | argument | `exempt-element` |
 | 25-00 | 25-a-prisoner-is-a-person.md | (preamble) | Personhood and equality | ARTICLES | protective | one line that reads like sentiment | is acted upon | works | no | constructive | `book-1/25-a-prisoner-is-a-person.pins.nibli` |

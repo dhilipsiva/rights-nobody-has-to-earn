@@ -176,6 +176,19 @@ Zealand enrols permanent residents who have lived there continuously for a
 year, and Chile, from 2026, lets foreigners vote after more than ten
 uninterrupted years counted from permanent residence.[^resident-vote]
 
+The residence line takes a side in a live dispute over who belongs in a
+demos: everyone a decision affects, or everyone subject to the government that
+makes it. Robert Goodin argues that the principle of enfranchising all affected
+interests, read coherently, gives a say to everyone who might possibly be
+affected by any possible decision, so that in principle virtually everyone
+would vote on virtually everything; he then looks for second-best institutions
+that approximate it.[^goodin] That principle cuts against any bounded
+electorate, this one included. I draw the line at the people a government
+governs directly, day to day, because they are the ones its decisions bind and
+the ones who can hold it to account at the next election. People affected from
+outside keep what the design owes anyone within its jurisdiction or effective
+control, and receive no ballot.
+
 For collectives I require actual consent only where the harm is existential.
 A consent requirement for relocation or lost title limits the wider society's
 power over a group: what Will Kymlicka calls an external protection, which he
@@ -202,21 +215,30 @@ procedures when consent cannot be obtained.[^c169]
 My rules cost something against each. The firewall takes a source of
 information from enforcement, and the bar on return leaves the republic to meet
 a dangerous person's danger within its own law, at its residents' risk. A
-former resident who made a home abroad loses the vote in the place left behind.
-A people facing a large but reversible harm receives consultation and reasons
+former resident who made a home abroad loses the vote in the place left behind,
+and people outside the republic whom its decisions affect gain no vote there. A
+people facing a large but reversible harm receives consultation and reasons
 where the Saramaka standard would let it refuse.
 
 I would reconsider the firewall if people without papers used services as
 readily where enforcement reads service records as where it cannot; the
 residence line if former residents stayed as bound by a place's decisions as
-the people living there; and the consent line if harms classed as reversible
-repeatedly proved permanent once consultation had let them proceed.
+the people living there, or if a workable institution gave people affected from
+outside a say without taking the government's accountability from those it
+governs; and the consent line if harms classed as reversible repeatedly proved
+permanent once consultation had let them proceed.
 
 [^firewall]: François Crépeau and Bethany Hastie, "The Case for 'Firewall'
     Protections for Irregular Migrants: Safeguarding Fundamental Rights",
     *European Journal of Migration and Law* 17, no. 2-3 (2015): 157-183,
     [doi:10.1163/15718166-12342076](https://doi.org/10.1163/15718166-12342076).
     The abstract was checked; the full text is paywalled.
+
+[^goodin]: Robert E. Goodin, "Enfranchising All Affected Interests, and Its
+    Alternatives", *Philosophy & Public Affairs* 35, no. 1 (2007): 40–68,
+    [doi:10.1111/j.1088-4963.2007.00098.x](https://doi.org/10.1111/j.1088-4963.2007.00098.x).
+    The argument is given as Koenig-Archibugi summarises and quotes it, at p.
+    64; the article itself was not read.
 
 [^lopez-guerra]: Claudio López-Guerra, *Democracy and Disenfranchisement: The
     Morality of Electoral Exclusions* (Oxford: Oxford University Press, 2014),

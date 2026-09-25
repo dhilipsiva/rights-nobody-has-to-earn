@@ -134,6 +134,48 @@ reinstate the retired tooling or workflow.
 Grouped by kind. Dates in each heading are the ratification dates; a ruling
 that was later implemented or narrowed carries that supersession inline.
 
+### Item 58 — the largest commitments argued in proportion, 2026-09-25
+
+Ruling D9 is argued. Chapter 13's derived text now defines the core's words as
+the source uses them: direct protection is the animal's own protected-subject
+status, bringing no personhood, floor or ballot and waivable by no owner;
+avoidable harm is harm where the use's own test finds a safe, accessible and
+materially less-harmful alternative reasonably available (nutritionally
+adequate for food, scientifically valid for research); and a dispensable
+purpose is one on the closed list the core bars killing solely for. A new
+subsection says what the food rule means for farming, household production and
+subsistence: lethal production takes the food test, the baseline, its own
+permission and the lethal-use test; profit is dispensable rather than a food
+purpose; cost and geography count only for whether an alternative is really
+within reach; consent and consultation authorise no breach of the core; and a
+recorded nutrition, access or transition failure obliges accessible
+nutrition, continuous food and care, and source-bound support shaped with
+workers, Indigenous peoples, subsistence communities, producers and regions.
+Its argument answers political theories of animal rights (*Zoopolis*),
+Nussbaum's capabilities account and humane farming, and works the jallikattu
+judgments of 2014 and 2023, naming who bears the food rule.
+
+Chapter 12's argument gives the commons their own case after the 2021 climate
+order, with Rockström's boundaries as 2009 estimates, and confronts the power
+entrenchment gives interpreters by pointing to the reasoned-reading and final-
+review rules of Chapter 22 and to ceilings made by law. Chapter 15 engages
+Goodin's all-affected principle and names who bears its refusal; Chapter 17
+compares the Regions Council with Switzerland's Council of States. Chapters 22
+and 27 already carried the entrenchment debate with Waldron, Roznai and Landau,
+and the abolitionist case with the incarceration evidence, and are unchanged.
+Seven new bindings tie the arguments to the registry (176), and the ecological
+decision records the definitions and the three places the argument stops at
+its sources. The coverage report regenerates, now reading Chapter 24's cost
+section as bounded. The exact prose is `session-drafted, author-approved under
+delegated approval (2026-09-13)`.
+
+No rule, pin or suite changes; the rule count stays at 7,583. All 145
+authoring development tests pass, with five declared ignored, as do the
+sixteen prose-lint, nine book-builder and six companion input unit tests and
+the prose check. `registry/check.py` passes with 222 claims.
+`RIGHTS_VERIFY_JOBS=4 ./verify.sh` passes 90,169 pins across 16,352 cases with
+complete contradiction checks and no findings in 1,162.81s.
+
 ### Item 57 — Part IV in the ruled shape, 2026-09-25
 
 Part IV now carries rulings D2 and D3, so every Part of the derived book does.

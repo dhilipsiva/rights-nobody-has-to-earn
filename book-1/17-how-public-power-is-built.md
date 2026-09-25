@@ -321,11 +321,15 @@ self-government is at stake. George Tsebelis and Jeannette Money argue that two
 chambers make the status quo harder to change than one.[^tsebelis] So I give
 the Council a lasting say only over the federal bargain, which Canada's Supreme
 Court held a province has no right to leave unilaterally, without
-negotiation.[^quebec] For reviewers, India's Supreme Court in 2015 struck down
-a commission that included the Union Law Minister and two eminent persons, and
-declared the earlier collegium system of judicial appointment operative
-again.[^njac] I divide the sources rather than trust either a minister or the
-judiciary's own choice.
+negotiation.[^quebec] Switzerland goes further: its Council of States, of equal
+standing with the popular chamber, seats two representatives from most cantons
+and one from six, whatever their populations.[^swiss-states] My Council stays
+weaker than that, its objection to ordinary law only suspensive, because it
+overrides the equal weight of the Assembly's voters. For reviewers, India's
+Supreme Court in 2015 struck down a commission that included the Union Law
+Minister and two eminent persons, and declared the earlier collegium system of
+judicial appointment operative again.[^njac] I divide the sources rather than
+trust either a minister or the judiciary's own choice.
 
 The price falls on identifiable people. A voter seeking whom to punish finds a
 council and an Assembly majority. A government that has lost support stays
@@ -357,6 +361,10 @@ lower cost.
 [^swiss]: Federal Constitution of the Swiss Confederation of 18 April 1999
     (SR 101), [arts 174, 175 and 177(1)](https://www.fedlex.admin.ch/eli/cc/1999/404/en),
     English translation as at 3 March 2024, which has no legal force.
+
+[^swiss-states]: The same Constitution,
+    [arts 148(2) and 150](https://www.fedlex.admin.ch/eli/cc/1999/404/en),
+    English translation as at 3 March 2024.
 
 [^article67]: Basic Law for the Federal Republic of Germany,
     [Article 67](https://www.gesetze-im-internet.de/gg/art_67.html). This

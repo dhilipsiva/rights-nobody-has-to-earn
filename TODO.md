@@ -212,49 +212,20 @@ unimplemented until the items named here land.
 - **D9. The animal core as enacted.** The core keeps direct subject status and
   the bans on severe avoidable suffering and on killing solely for a listed
   dispensable purpose. The alternative-sensitive food rule stays ordinary
-  amendable law bounded by the core. Item 58 defines the terms and argues the
-  result.
+  amendable law bounded by the core. Item 58 defined the terms and argued the
+  result in Chapter 13.
 
 ## Ordered revision backlog
 
-Work in this order: items 58–63 carry the rewrite under the ratified rulings;
+Work in this order: items 59–63 carry the rewrite under the ratified rulings;
 item 64 finishes production, 65 closes the revision, and 66 is optional.
-Numbering continues from items 01–33, which `CLAUDE.md` records; items 34–57
+Numbering continues from items 01–33, which `CLAUDE.md` records; items 34–58
 and 67–72 are complete and recorded there too. Chapter numbers refer to the
 [current reading sequence](book-1/contents.json), which item 53 made the plan's
 §4.2 table; the plan's own §14 punch list uses the earlier numbers, which
 `tools/maps/2026-09-25-restructure.json` maps to these.
 
 ### Structure and rewrite
-
-- [ ] **58. Argue the largest commitments in proportion to their stakes.**
-
-  **Scope:** the animal food rule and core, the entrenched commons, the
-  unamendable core, residence-based voting, the collective executive and the
-  equal-weight chamber, and retained confinement; plan §8.2; rulings D2 and D9.
-
-  Ruling D9 keeps the animal core as enacted. Define "direct protection",
-  "avoidable" and "dispensable" on that basis, from the source: dispensable
-  killing is killing solely for a purpose on its closed list, and the
-  alternative-sensitive food rule is ordinary amendable law bounded by the core.
-  Say plainly what that means for farming, household production and subsistence;
-  argue against welfare regimes, political theories of animal rights and
-  humane-farming positions; work the jallikattu case (*Animal Welfare Board of
-  India v A. Nagaraja*, 2014, and the 2023 Constitution Bench decision); and
-  spell out transition duties to the food floor, to workers and to communities.
-
-  Give the commons their own argument, intertemporal freedom after *Neubauer*,
-  and confront the power entrenchment gives interpreters: the basic-structure
-  doctrine, Article 79(3) of the Basic Law, the substitution doctrine, Roznai
-  and Landau. Engage Waldron by name and say what stops interpreters from
-  expanding the core. Engage the all-affected and all-subjected debate on
-  voting, Switzerland and Uruguay's colegiado on the executive, and abolitionist
-  arguments, with the incarceration evidence, on confinement. Each argument goes
-  in the argument section of the chapter that states the rule (D2), and its
-  sources are the ones item 46 registered, read with their notes.
-
-  **Done when:** each commitment has its strongest alternative stated fairly,
-  its cost and who bears it, and the evidence that would change the choice.
 
 - [ ] **59. Make Part V a synthesis, and rank where the design could fail.**
 

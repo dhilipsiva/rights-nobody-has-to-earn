@@ -227,6 +227,22 @@ being offloaded onto the future, and held that future generations hold no
 fundamental rights now.[^climate-order] I adopt that shape: a present person's
 claim, and conditions held for whoever later exists.
 
+The commons reach further than any present person's claim: biodiversity,
+connectivity, and the inheritance of land and nonrenewable resources, each on
+its own axis. I put them in the core for the reason the climate order gave for
+present freedoms, carried one step further: a condition spent now is gone for
+everyone after, and the people who will live without it cannot vote against
+spending it. Johan Rockström and his colleagues proposed nine planetary
+boundaries marking a safe operating space for humanity, and estimated in 2009
+that three had already been crossed;[^rockstrom] later work has revised the
+framework, which is why the design writes no number into the constitution and
+leaves the ceilings to democratic law inside an independently reviewed
+scientific envelope. Entrenching the commons gives interpreters power over what
+counts as spending a condition. The design limits that power as *Changing the
+Rules* sets out: a reading that refuses an amendment must name the provision,
+the change and its reasons, an independent final review can answer it, and the
+ceilings themselves are made by law rather than by a ruling.
+
 The strongest alternative, argued most sharply in William Nordhaus's review of
 the Stern Review, is cost-benefit climate economics: one figure that discounts
 later welfare and lets a gain on one condition pay for a loss on another.
@@ -241,18 +257,20 @@ ties the comparison to observed behaviour.
 
 My rule costs something against it. An activity that would raise welfare on the
 whole remains a breach if it fails one condition, and the people who would have
-gained bear that. A Guardian's pause delays the irreversible part of an
-authorised activity, a delay its proponent and those awaiting its benefits
-bear. I accept both because, on Nordhaus's own account, the case for sharp cuts
-turns on how later welfare is discounted and valued, and that choice decides
-what later people inherit. A single figure hides it from the people it binds; a
-ceiling enacted in law puts it to them. The Guardian therefore gets more than
-advice and less than a veto. Wales's Future Generations Commissioner reviews
-public bodies and recommends, and a body may depart for good reason;[^wales]
-the office of Hungary's first commissioner for future generations described its
-statements as not binding.[^hungary] Advice can arrive after an irreversible
-step; a bounded pause secures review first, and a veto would move democratic
-ceilings into one office.
+gained bear that. A later majority that judges a commons axis worth trading for
+prosperity cannot make the trade, however large it is. A Guardian's pause
+delays the irreversible part of an authorised activity, a delay its proponent
+and those awaiting its benefits bear. I accept both because, on Nordhaus's own
+account, the case for sharp cuts turns on how later welfare is discounted and
+valued, and that choice decides what later people inherit. A single figure
+hides it from the people it binds; a ceiling enacted in law puts it to them.
+The Guardian therefore gets more than advice and less than a veto. Wales's
+Future Generations Commissioner reviews public bodies and recommends, and a
+body may depart for good reason;[^wales] the office of Hungary's first
+commissioner for future generations described its statements as not
+binding.[^hungary] Advice can arrive after an irreversible step; a bounded
+pause secures review first, and a veto would move democratic ceilings into one
+office.
 
 I would reconsider if separate ceilings were shown repeatedly to stop
 activities that independent review found would have left the commons better
@@ -277,6 +295,13 @@ secured review before irreversible commitments would favour removing the pause.
     headnote 4 and paras 109, 146, 183 and 192–194. The complainants succeeded
     on their own fundamental rights; the duty towards future generations is
     objective only.
+
+[^rockstrom]: Johan Rockström et al., "A safe operating space for humanity",
+    *Nature* 461 (2009): 472–475,
+    [doi:10.1038/461472a](https://doi.org/10.1038/461472a); the nine
+    boundaries, seven quantified and three transgressed, as stated in the
+    abstract of the open-access companion article in *Ecology and Society* 14,
+    no. 2 (2009), art. 32. These are 2009 estimates.
 
 [^stern]: Nicholas Stern, [*The Economics of Climate Change: The Stern
     Review*](https://doi.org/10.1017/CBO9780511817434) (Cambridge: Cambridge
