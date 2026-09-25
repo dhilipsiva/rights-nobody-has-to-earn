@@ -19,7 +19,7 @@ sentence, the necessity of a secure place and the currency of authority each
 rest on their own grounds: an expired authority stays expired and a challenged
 one stays suspended, however grave the offence. Even a grave offence needs the
 independently justified place and current authority described here and in
-*Where People Are Put*.
+*Where People Are Put* (Chapter 26).
 
 ## Why the legal loss stops at movement
 
@@ -207,10 +207,10 @@ recognition, and a risk or dangerousness score is barred as their basis.
 Immigration detention of a child is prohibited. An adult's immigration
 detention needs individual necessity, judicial authority, a maximum,
 independent review and a real alternative shown insufficient. Expulsion and
-international transfer must also satisfy the actual asylum, individual-decision,
-suspensive-appeal and non-refoulement safeguards described in *Arriving and
-Belonging*. Those safeguards are met by records of their own, whatever label
-the measure bears.
+international transfer must also satisfy the actual asylum,
+individual-decision, suspensive-appeal and non-refoulement safeguards described
+in *Arriving and Belonging* (Chapter 15). Those safeguards are met by records
+of their own, whatever label the measure bears.
 
 The floor limits every coercive instrument: lacking bodily safety, material
 security, food, shelter, care, learning, speech, belief or company is never a

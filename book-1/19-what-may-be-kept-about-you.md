@@ -188,10 +188,10 @@ effect, a consequential decision made by the machine alone, uncorrected
 inaccuracy, unlawful retention, blocked access or correction, retaliation for
 objecting, and a breach of the separation between records.
 
-Every office relying on the holding loses its uses at once, and the cost of
-the defect falls there. Withdrawal ends authority. Deleting data, explaining a
-past decision and remedying harm already done each need a record of their
-own, and the subject's remedy follows the routes in *A Way to Be Heard*.
+Every office relying on the holding loses its uses at once, and the cost of the
+defect falls there. Withdrawal ends authority. Deleting data, explaining a past
+decision and remedying harm already done each need a record of their own, and
+the subject's remedy follows the routes in *A Way to Be Heard* (Chapter 21).
 
 ### What the record says about the person
 
@@ -301,9 +301,9 @@ record.
 
 The strongest alternative is the tell-us-once state. It keeps purpose limits
 but lets facts flow, which makes it narrower than the integrated file of *What
-the Record May Say* and the discretionary linked record of Part V. A person
-tells the state a fact once, such as a birth, a move or a death, and every
-office that needs it updates its own record, while routine changes to
+the Record May Say* (Chapter 2) and the discretionary linked record of Part V.
+A person tells the state a fact once, such as a birth, a move or a death, and
+every office that needs it updates its own record, while routine changes to
 entitlements take effect automatically, with a human review available on
 request. It is held by those who design services around the person rather than
 the office. Its best case is that the people whose circumstances change most

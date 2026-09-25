@@ -14,7 +14,8 @@ separate source of constitutional rules.
 
 The order is editorial: provision and ordinary freedom come before the powers
 and failures that threaten them. The rules' dependency order is a separate
-technical matter explained in the [method](method.md#a-refusal-is-a-result-about-an-input).
+technical matter explained in the method's section [*A refusal is a result
+about an input*](method.md#a-refusal-is-a-result-about-an-input).
 
 ### The choices and their arguments
 
@@ -25,16 +26,16 @@ arrangement, and Part V draws the choices together.
 
 | Choice and its consequences | Where it is argued |
 |---|---|
-| [Public responsibility for essentials](06-who-owes-and-what-follows.md), with [different providers and public finance](10-what-money-cannot-buy.md) | [Named goods rather than cash](03-what-you-are-owed.md#argument-owed-to-everyone-by-someone), [named bearers](06-who-owes-and-what-follows.md#argument-named-bearers-and-a-court-that-secures-the-minimum) and [borrowing under law](10-what-money-cannot-buy.md#argument-ownership-under-the-floor-borrowing-under-law) |
-| [Allocation when claims conflict](05-when-there-is-genuinely-not-enough.md) | [Proved shortage and need](05-when-there-is-genuinely-not-enough.md#argument-a-shortage-must-be-proved-and-need-decides-it), and [separate human, ecological and animal claims](29-the-five-joints.md#valuation) |
-| [Regional powers and a collective executive](17-how-public-power-is-built.md) | [A divided government that can still decide](17-how-public-power-is-built.md#argument-divided-without-deadlock) |
-| [Independent appointments](17-how-public-power-is-built.md#how-somebody-comes-to-hold-an-office) | [Divided sources against a minister's or the judiciary's own choice](17-how-public-power-is-built.md#argument-divided-without-deadlock) |
-| [Residence and the retained vote](18-the-vote-conviction-does-not-take.md) | [Residence and the all-affected alternative](15-arriving-and-belonging.md#argument-the-person-before-the-status) and [the vote outside the sentence](18-the-vote-conviction-does-not-take.md#argument-the-vote-outside-the-sentence) |
-| [Limits on records and their reuse](19-what-may-be-kept-about-you.md) | [The closed record](02-what-the-record-may-say.md#argument-why-the-record-is-closed-by-name), [uses bound to their holding](19-what-may-be-kept-about-you.md#argument-uses-bound-to-their-holding-decisions-to-a-person) and [privacy against coordination](29-the-five-joints.md#capture) |
-| [Protection after exposing authority](23-the-shield.md) | [Lasting answerability](16-answerability-and-authority.md#argument-answerable-for-good-empowered-for-now) and [protection that follows the charge](23-the-shield.md#argument-protection-that-follows-the-charge) |
-| [Custody and retained rights](27-the-one-thing-taken.md) | [A power that takes movement and then expires](27-the-one-thing-taken.md#argument-a-power-that-takes-movement-and-then-expires), [severity as a ceiling](26-where-people-are-put.md#argument-proved-harm-opens-the-harshest-place) and [the coercion joint](29-the-five-joints.md#coercion) |
-| [Emergency powers](20-a-crisis-does-not-suspend-the-republic.md) | [Four powers and every right in force](20-a-crisis-does-not-suspend-the-republic.md#argument-four-powers-and-every-right-in-force) |
-| [The unamendable cores](22-changing-the-rules.md) | [A fixed core behind an open route](22-changing-the-rules.md#argument-a-fixed-core-behind-an-open-route) and [the animal core](13-creatures-without-a-ballot.md#argument-a-claim-of-its-own) |
+| [Public responsibility for essentials](06-who-owes-and-what-follows.md) (Chapter 6), with [different providers and public finance](10-what-money-cannot-buy.md) (Chapter 10) | [Named goods rather than cash](03-what-you-are-owed.md#argument-owed-to-everyone-by-someone) (Chapter 3), [named bearers](06-who-owes-and-what-follows.md#argument-named-bearers-and-a-court-that-secures-the-minimum) (Chapter 6) and [borrowing under law](10-what-money-cannot-buy.md#argument-ownership-under-the-floor-borrowing-under-law) (Chapter 10) |
+| [Allocation when claims conflict](05-when-there-is-genuinely-not-enough.md) (Chapter 5) | [Proved shortage and need](05-when-there-is-genuinely-not-enough.md#argument-a-shortage-must-be-proved-and-need-decides-it) (Chapter 5), and [separate human, ecological and animal claims](29-the-five-joints.md#valuation) (Chapter 29) |
+| [Regional powers and a collective executive](17-how-public-power-is-built.md) (Chapter 17) | [A divided government that can still decide](17-how-public-power-is-built.md#argument-divided-without-deadlock) (Chapter 17) |
+| [Independent appointments](17-how-public-power-is-built.md#how-somebody-comes-to-hold-an-office) (Chapter 17) | [Divided sources against a minister's or the judiciary's own choice](17-how-public-power-is-built.md#argument-divided-without-deadlock) (Chapter 17) |
+| [Residence and the retained vote](18-the-vote-conviction-does-not-take.md) (Chapter 18) | [Residence and the all-affected alternative](15-arriving-and-belonging.md#argument-the-person-before-the-status) (Chapter 15) and [the vote outside the sentence](18-the-vote-conviction-does-not-take.md#argument-the-vote-outside-the-sentence) (Chapter 18) |
+| [Limits on records and their reuse](19-what-may-be-kept-about-you.md) (Chapter 19) | [The closed record](02-what-the-record-may-say.md#argument-why-the-record-is-closed-by-name) (Chapter 2), [uses bound to their holding](19-what-may-be-kept-about-you.md#argument-uses-bound-to-their-holding-decisions-to-a-person) (Chapter 19) and [privacy against coordination](29-the-five-joints.md#capture) (Chapter 29) |
+| [Protection after exposing authority](23-the-shield.md) (Chapter 23) | [Lasting answerability](16-answerability-and-authority.md#argument-answerable-for-good-empowered-for-now) (Chapter 16) and [protection that follows the charge](23-the-shield.md#argument-protection-that-follows-the-charge) (Chapter 23) |
+| [Custody and retained rights](27-the-one-thing-taken.md) (Chapter 27) | [A power that takes movement and then expires](27-the-one-thing-taken.md#argument-a-power-that-takes-movement-and-then-expires) (Chapter 27), [severity as a ceiling](26-where-people-are-put.md#argument-proved-harm-opens-the-harshest-place) (Chapter 26) and [the coercion joint](29-the-five-joints.md#coercion) (Chapter 29) |
+| [Emergency powers](20-a-crisis-does-not-suspend-the-republic.md) (Chapter 20) | [Four powers and every right in force](20-a-crisis-does-not-suspend-the-republic.md#argument-four-powers-and-every-right-in-force) (Chapter 20) |
+| [The unamendable cores](22-changing-the-rules.md) (Chapter 22) | [A fixed core behind an open route](22-changing-the-rules.md#argument-a-fixed-core-behind-an-open-route) (Chapter 22) and [the animal core](13-creatures-without-a-ballot.md#argument-a-claim-of-its-own) (Chapter 13) |
 
 ### Where a decision belongs
 
@@ -168,7 +169,10 @@ and this reference material follow them.
 - [The Method](method.md) — worked rules, queries, refusals and contradiction
   checks; what each assurance covers and where it stops; and instructions for
   running the book's examples.
-- This map, glossary and index.
+- [Works Cited](bibliography.md) — every work the notes cite, in alphabetical
+  order, with the chapters that cite it.
+- This map, glossary and index, with the diagrams and an alphabetical index of
+  terms, bodies, people and cases.
 
 ## Concise glossary
 
@@ -339,8 +343,8 @@ finding a case again.
 | Hano, held under a properly made custody case | What is required to restrict movement, and what remains protected? | [18](18-the-vote-conviction-does-not-take.md), [27](27-the-one-thing-taken.md) |
 | Jala, with a recorded injury to Ivo but no conviction | Does sharing an injury entry with a convicted person's case restrict movement? | [27](27-the-one-thing-taken.md) |
 
-Documented historical cases open each Part and support the chapters'
-argument sections; Part V draws them together in its arguments over
+Documented historical cases open each Part and support the chapters' argument
+sections; Part V draws them together in Chapter 29's arguments over
 [valuation](29-the-five-joints.md#valuation),
 [rotation](29-the-five-joints.md#rotation),
 [coercion](29-the-five-joints.md#coercion),
@@ -354,24 +358,24 @@ not that it specifies every institution or proves that a service operates.
 
 | Subject | Main chapters |
 |---|---|
-| Personhood and life course | [Standing](01-the-child-with-nobody.md), [care and agency](14-holding-a-role-in-somebodys-life.md), [adulthood](18-the-vote-conviction-does-not-take.md) |
-| Body, health, care, family and intimacy | [The floor](03-what-you-are-owed.md), [relationships and support](14-holding-a-role-in-somebodys-life.md) |
-| Learning, media, science, religion and culture | [Protected freedoms](08-what-nobody-has-to-ask-permission-for.md), [contribution](09-work-pay-and-contribution.md) |
-| Food, housing, land, utilities and infrastructure | [Delivery](04-whether-it-arrived.md), [scarcity](05-when-there-is-genuinely-not-enough.md), [public duties](06-who-owes-and-what-follows.md) |
-| Employment, property, enterprise, money, credit and public finance | [Earning](09-work-pay-and-contribution.md), [economic limits](10-what-money-cannot-buy.md) |
-| Democracy, government and administration | [Institutions](17-how-public-power-is-built.md), [the vote](18-the-vote-conviction-does-not-take.md), [amendment](22-changing-the-rules.md) |
-| Justice, safety and repair | [Access and remedy](21-a-way-to-be-heard.md), [custody and protective powers](27-the-one-thing-taken.md), [institutional correction](28-when-the-system-notices-it-broke.md) |
-| Records, surveillance and automated decisions | [Evidence](02-what-the-record-may-say.md), [record powers](19-what-may-be-kept-about-you.md), [public safety](27-the-one-thing-taken.md) |
-| Locality, mobility, migration and external relations | [Arrival and belonging](15-arriving-and-belonging.md), [political home](18-the-vote-conviction-does-not-take.md), [external powers](20-a-crisis-does-not-suspend-the-republic.md) |
-| Emergencies, security and defence | [Crises](20-a-crisis-does-not-suspend-the-republic.md), [protective powers](27-the-one-thing-taken.md) |
-| Equality and discrimination | [Equal routes, accommodation and remedy](11-the-same-route-for-everyone.md) |
-| Environment, future conditions and animals | [Ecological rights](12-a-place-in-which-life-remains-possible.md), [animal protection](13-creatures-without-a-ballot.md) |
-| Friendship, leisure, mutual aid and associations | [Private and civic freedom](08-what-nobody-has-to-ask-permission-for.md), [voluntary provision](06-who-owes-and-what-follows.md), [relationships](14-holding-a-role-in-somebodys-life.md) |
+| Personhood and life course | [Standing](01-the-child-with-nobody.md) (1), [care and agency](14-holding-a-role-in-somebodys-life.md) (14), [adulthood](18-the-vote-conviction-does-not-take.md) (18) |
+| Body, health, care, family and intimacy | [The floor](03-what-you-are-owed.md) (3), [relationships and support](14-holding-a-role-in-somebodys-life.md) (14) |
+| Learning, media, science, religion and culture | [Protected freedoms](08-what-nobody-has-to-ask-permission-for.md) (8), [contribution](09-work-pay-and-contribution.md) (9) |
+| Food, housing, land, utilities and infrastructure | [Delivery](04-whether-it-arrived.md) (4), [scarcity](05-when-there-is-genuinely-not-enough.md) (5), [public duties](06-who-owes-and-what-follows.md) (6) |
+| Employment, property, enterprise, money, credit and public finance | [Earning](09-work-pay-and-contribution.md) (9), [economic limits](10-what-money-cannot-buy.md) (10) |
+| Democracy, government and administration | [Institutions](17-how-public-power-is-built.md) (17), [the vote](18-the-vote-conviction-does-not-take.md) (18), [amendment](22-changing-the-rules.md) (22) |
+| Justice, safety and repair | [Access and remedy](21-a-way-to-be-heard.md) (21), [custody and protective powers](27-the-one-thing-taken.md) (27), [institutional correction](28-when-the-system-notices-it-broke.md) (28) |
+| Records, surveillance and automated decisions | [Evidence](02-what-the-record-may-say.md) (2), [record powers](19-what-may-be-kept-about-you.md) (19), [public safety](27-the-one-thing-taken.md) (27) |
+| Locality, mobility, migration and external relations | [Arrival and belonging](15-arriving-and-belonging.md) (15), [political home](18-the-vote-conviction-does-not-take.md) (18), [external powers](20-a-crisis-does-not-suspend-the-republic.md) (20) |
+| Emergencies, security and defence | [Crises](20-a-crisis-does-not-suspend-the-republic.md) (20), [protective powers](27-the-one-thing-taken.md) (27) |
+| Equality and discrimination | [Equal routes, accommodation and remedy](11-the-same-route-for-everyone.md) (11) |
+| Environment, future conditions and animals | [Ecological rights](12-a-place-in-which-life-remains-possible.md) (12), [animal protection](13-creatures-without-a-ballot.md) (13) |
+| Friendship, leisure, mutual aid and associations | [Private and civic freedom](08-what-nobody-has-to-ask-permission-for.md) (8), [voluntary provision](06-who-owes-and-what-follows.md) (6), [relationships](14-holding-a-role-in-somebodys-life.md) (14) |
 
 ## Accessible diagrams
 
 These reading aids describe relationships, not proof that an event or action
-occurs. Each has a prose equivalent; none depends on colour or position.
+occurs. Each has a prose equivalent, and none depends on colour.
 
 ### From the world to a conclusion
 
@@ -384,28 +388,82 @@ can begin without a civil identity match. That name does not authenticate an
 identity or import another person's history. A conclusion still needs a
 separate action if it is to change anyone's circumstances.
 
-### The floor, duty, delivery, and repair
+### The duty chain
 
-**Text diagram:** person → floor → public duty → delivery → receipt.
-Failure → challenge → remedy → restored condition → recheck.
+![The duty chain: a person is owed the floor; the common tier, the region and the locality each owe part of it; a certified failure passes continuity up a tier; a pattern of failure goes to the Constitutional Court.](diagrams/duty-chain.svg)
 
-**Prose equivalent:** Personhood grounds the entitlement. A separate lawful
-source names the public bearer and scope of a duty. Neither stocks a service or
-proves delivery. Matching recipient-side evidence supports a conclusion
-that provision arrived. A failure requires a usable route to challenge and
-remedy, with continuity while it is resolved. Rechecking asks whether the
-protected condition holds; a renewed failure needs further correction.
+**Prose equivalent:** Standing, from a birth, first contact, presence,
+effective control or a report that nobody is acting for the person, makes each
+of the nine floor items an entitlement of that person and a debt of the State
+(Chapter 3). The common tier finances, equalises and sets minimum standards,
+and backstops the floor for everyone; a region provides, and a locality reaches
+and delivers, where a witness authorised for the person records them present
+(Chapter 6). When a source and an independent reviewer, neither of them the
+failing body, certify a failure, the publicly answerable tier they name assumes
+continuity, and the failing body still owes its own duty. A certified pattern
+of failure goes to the Constitutional Court, whose declaration obliges the
+Assembly to plan and, if the Assembly does not answer, the Court to order
+interim measures that secure the minimum. Each arrow is a duty; whether anyone
+acted is a separate fact.
+
+### Delivery evidence
+
+![Delivery evidence: a receipt, an authorisation of the witness for the recipient and a matching observation, from a witness held apart from the source and from every body that owes the floor, conclude delivery of that item.](diagrams/delivery-evidence.svg)
+
+**Prose equivalent:** Delivery of one item to one person is concluded when
+three entries match: a receipt saying the person received the item from a
+source, an authorisation of a witness for that person, and that witness's
+observation of the same item at its scope. The witness must be neither the
+source nor a body that owes the floor: the State, the common tier, or the
+person's recorded region or locality (Chapter 4). A provider's own receipt and
+observation conclude nothing. Bodily safety, expression and belief have no
+delivery route; protective duties answer them. The conclusion rests on the
+entries, so a false entry in the required shape concludes the same thing.
+
+### The placement ceiling
+
+![The placement ceiling: a finding of severity in the case raises the most restrictive place that may be considered to a secure place; without it the ceiling is home confinement or ordinary supported residence; every place still needs its own findings.](diagrams/placement-ceiling.svg)
+
+**Prose equivalent:** A lawful sentence is the start: the merits, the custody
+authorisation and its review period are properly made for the case. An
+adjudicated finding of grave injury or aggravated cruelty in that case allows a
+secure place to be considered beside home confinement and ordinary supported
+residence; without it, the most restrictive place is ordinary supported
+residence. Victim counts, raw acts, family, wealth and poverty never raise the
+ceiling. Whatever the ceiling, the chosen place needs its own availability,
+individual necessity, lawful conditions and independent review, and a secure
+place also needs a finding that less restrictive places are insufficient
+(Chapter 26).
 
 ### The democratic corridor
 
-**Text diagram:** constitutional limits → public choice → certified result →
-rule in force → review and peaceful correction.
+![The democratic corridor: ordinary public choice runs inside amendable constitutional law, inside a protected core no amendment may remove.](diagrams/democratic-corridor.svg)
 
 **Prose equivalent:** Public choices must respect the floor and protected
-freedoms. The rules distinguish an authorised decision from its certified
-result, and both from publication and actual application. Independent review
-and peaceful change remain necessary. No arrow proves that an election was run
-or that its recorded result is true.
+freedoms. A protected core, among them standing, the floor, equality, due
+process, core liberties, the commons, the animal core, the absolute
+prohibitions and an Assembly and Court able to sit, is beyond amendment. The
+rest of the constitution changes only with two-thirds of the full Assembly and
+more affirmative than negative valid referendum votes, with regional approvals
+where the federal settlement is directly affected (Chapter 22). The rules distinguish an
+authorised decision from its certified result, and both from publication and
+selection into force. Independent review and peaceful change remain necessary.
+No arrow proves that an election was run or that its recorded result is true.
+
+### Six ways a fact is kept from a consequence
+
+![Six ways a fact is kept from a consequence: closed inputs, conclusions nobody may write, purpose-bound reads, endpoints nothing reads, no confinement from absence and scope binding.](diagrams/flow-constraints.svg)
+
+**Prose equivalent:** A fact about a person reaches a consequence for them only
+through six constraints. Only admitted kinds of entry may be written; custody,
+ballot and answerability conclusions may only be derived; a contribution or pay
+record may be read only for its own purpose; duties, deliveries and recorded
+losses feed no further rule; no rule confines anyone for a missing floor
+condition or a missing home, family or work entry; and a finding about one
+subject, case or record cannot be lent to another. Each is checked on the
+written form of the rules, as the method's section *Six ways a fact is kept
+from a consequence* explains, so a rule reaching the same consequence another
+way needs its own check.
 
 ### Institutions and accountability
 
@@ -417,5 +475,205 @@ examines it, an affected person retains a route to contest it, and review has
 to be capable of correction. A recorded separation of roles does not prove
 actual independence, availability or a completed remedy.
 
-[Continue to Chapter 1](01-the-child-with-nobody.md), or return to the
-[contents](#annotated-contents).
+<!-- index:begin; generated by tools/book_index.py -->
+## Index
+
+The principal places for each term, body, person and documented case.
+Numbers are chapters; *opening* is the opening note, *Part I case* and the
+like are the documented cases that open the Parts, and *method* is the
+optional method. A common term lists the chapters that use it most.
+
+### A
+
+- Aadhaar: opening, 1, 4, 29
+- accommodation: 2, 5, 6, 11, 13, 15, 21, 27
+- Adam: 2, 8, 9, 10, 11, 26, 27, method
+- adulthood: 1, 2, 7, 9, 14, 15, 18, 28
+- advocate for the person: 6, 12, 14, 17
+- alternate, independent: 6, 14, 15, 19
+- amendment: 13, Part III case, 17, 18, 22, 29, method
+- Anderson, Elizabeth: 29
+- Animal Protection Advocate: 13, method
+- animals: 3, 6, 12, 13, 15, 22, 29, method
+- answerability, public: 2, 3, 6, 16, 17, 23, 24, 29
+- appeal: 15, 16, 21, 23, 24
+- appointment: 6, 14, 17, 23, 24, 29, 30, method
+- asylum: 15, 27
+- authority to sign findings: 2, 3, 9, 16, 24
+
+### B
+
+- ballot: 7, 12, 13, 14, 15, 18, 25, method
+- Bela: 3, 4, 9, 18, 24, 25, 28
+- belief: 1, 3, 4, 8, 25, method
+- bodily safety: opening, 1, 3, 4, 7, 21, 25, 27
+
+### C
+
+- care: 3, 4, 7, 9, 13, 14, 27, 29
+- child with nobody: opening, 5, 29
+- childcare-benefits affair: 2
+- Cira: 9, 11, 14, 24
+- Civic President: 16, 17
+- common tier: 3, 4, 6, 10, 17, 30
+- commons: 10, 12, 13, 17, 29
+- company: 1, 3, 4, 8, 25, 28
+- compensation: 9, 10, 20, method
+- competence certificate: 4, 9, 22, 23, 24, method
+- confinement: 18, 21, 23, 25, 26, 27, 28, 29
+- Constitutional Court: 6, 9, 17, 20, 22
+- continuity: 5, 6, 10, 12, 14, 17, 28, 29
+- contradiction check: method
+- contribution: 6, 9, 10, 22, 29, method
+- correction: 5, 6, 10, 14, 15, 19, 28, 29
+- credibility finding: 2, 9, 11, 16, 18, 22, 23, 24
+- custody: 18, 21, 25, 26, 27, 28, 29, method
+- custody authorisation: 10, 26, 27, method
+
+### D
+
+- delivery: opening, 1, 3, 4, 6, 7, 29, method
+- disclosure: 17, 23, 24, 27
+- discrimination: 11, 28
+
+### E
+
+- ecology: 3, 12, 13, 15, 29, 30
+- emergency: 5, 10, Part III case, 17, 20
+- entitlement: opening, 1, 3, 5, 6, 18, 29, method
+- equality: 10, 11, 13, 17, 29
+- Esa: 2, 14, 16, 18
+- eviction: 6, 7, 10, 18, 26, 29
+- Executive Council: 16, 17
+- expression: 3, 4, 8, 18, 25
+
+### F
+
+- family: opening, Part I case, 1, 2, 5, 14, 26, method
+- first contact: opening, 1, 2, 6, 14, 25, 30
+- floor: 1, 3, 6, 9, 10, 25, 29, 30
+- food: 1, 3, 4, 6, 9, 13, 25, method
+- free movement: 6, 7, 9, 15, 18, 24, 25, 27
+- future conditions: 12
+- Future Conditions Guardian: 12, 13
+
+### G
+
+- Grootboom: Part I case, 6, Part V case
+
+### H
+
+- Hano: 2, 3, 18, 26, 27, 28
+- harm: 2, 5, 8, 12, 13, 15, 26, 27
+
+### I
+
+- initiation duty: 6, 14, 29
+- interpretation: 14, 15, 21, 27, 30, method
+- Iris: 16
+- Ivo: 25, 27
+
+### J
+
+- Juno: 6
+
+### K
+
+- Kel: 21, 23, 26, 27
+- Kesavananda Bharati: 22
+- Kumari, Santoshi: opening
+
+### L
+
+- learning: 1, 4, 7, 8, 9, 14, 27
+- locality: 3, 4, 6, 17, 30
+- lottery: 5, 29
+
+### M
+
+- Mael: 16, 24
+- Marisol: 4
+- material security: 1, 3, 4, 7, 21, 25
+- membership: 8, 15, 17, 18, 27, 28
+
+### N
+
+- Nell: 1, 2, 4, 14, 18, 21, 25, 28
+- Nia: 21, method
+- Nissenbaum, Helen: 2, method
+- non-refoulement: 27
+
+### O
+
+- Ostrom, Elinor: 29
+
+### P
+
+- People's Assembly: 6, 16, 17, 20, 22, 25, 29, 30
+- personhood: 1, 2, 3, 4, 7, 9, 18, 25
+- Pettit, Philip: 7, 29
+- placement: 2, 11, 25, 26, 27, 28
+- political home: 15, 18, 28
+- presence: 1, 3, 4, 7, 15, 25
+- prisoner: opening, 2, 18, Part IV case, 25, 28, 29, method
+- privacy: 3, 7, 13, 14, 27
+- property: 9, 10, 12, 13, 14, 20, 27
+- protected core: 11, 22
+- public finance: 2, 5, 6, 10, 17, 28, 29, 30
+
+### R
+
+- recall: 16, 17, 23, 24, Part V case, 29
+- receipt: 1, 3, 4, 6, 7, 25, 26, 27
+- recognition status: 9, 24, 27
+- region: 3, 4, 6, 10, 17, 20
+- Regions Council: 16, 17, 20, 22
+- release: opening, 1, 19, 25, 26, 27, 28, 29
+- remedy: 6, 10, 11, 15, 19, 21, 27, 29
+- requisition: 20
+- residence: 15, 17, 18, 26
+- restoration: 9, 12, 13, 16, 20, 21, 24
+- Robodebt: 2
+- Ruk: 21, 26, 28, method
+
+### S
+
+- scarcity: 5, 6, 12, 28, 29, 30
+- search: 7, 19, 21, 27, method
+- secure placement: 26, 27, 28
+- Selin: 7
+- Sen, Amartya: opening, 5, 29
+- severity: 2, 13, 22, 25, 26, 27, 29
+- shelter: 1, 3, 4, 7, 13, 25, 26, 27
+- shield: 2, 3, 16, 23, 24, 29, method
+- Shue, Henry: opening, 3, 29
+- signing restriction: 23
+- standing: 1, 2, 6, 9, 11, 25, 28, 29
+- subsidiarity: 17
+- supplement: 2, 9, 24, 29, method
+- surveillance: 19, 27
+- SyRI: 2
+
+### T
+
+- Tove: 16
+
+### U
+
+- Urgenda: 12
+
+### V
+
+- versions of the record: 2, 9, 16, 22, 24, 28, method
+
+### W
+
+- wage: 7, 9, 24, 29
+- witness: 3, 4, 6, 7, 14, 23, 24, method
+- work: 2, 3, 6, 7, 9, 26, 27, 29
+
+### Z
+
+- Zed: 25, method
+
+<!-- index:end -->

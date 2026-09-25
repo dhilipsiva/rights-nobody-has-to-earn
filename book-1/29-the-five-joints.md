@@ -23,12 +23,12 @@ way exists in law and nobody operates it, the right remains unfulfilled. An
 accurate description of either failure is still a failure.
 
 The commitments and their instruments need different reasons. Equal standing
-does not by itself choose two legislative chambers, a collective executive or
-a particular appointment procedure. Those arrangements need an argument about
-how they protect people, what they obstruct and whether another arrangement
-would do the work with fewer burdens, and the chapters give it. Their
-constitutional status makes alteration deliberate; only the core in *Changing
-the Rules* lies beyond amendment.
+does not by itself choose two legislative chambers, a collective executive or a
+particular appointment procedure. Those arrangements need an argument about how
+they protect people, what they obstruct and whether another arrangement would
+do the work with fewer burdens, and the chapters give it. Their constitutional
+status makes alteration deliberate; only the core in *Changing the Rules*
+(Chapter 22) lies beyond amendment.
 
 ## The commitments beneath the choices
 
@@ -41,9 +41,9 @@ shortage, and productivity, contribution and usefulness are forbidden keys.
 Work, its refusal and its pay sit above the floor, and a prisoner remains among
 the persons it is owed to. The lineage runs through Henry Shue's basic rights,
 the levels of duty the United Nations committee adopted and Amartya Sen's
-entitlements, and *What You Are Owed* marks where the design parts from them:
-the committee's duty to provide waits on a finding that a person cannot provide
-for themselves, and this floor asks nothing of the person owed.
+entitlements, and *What You Are Owed* (Chapter 3) marks where the design parts
+from them: the committee's duty to provide waits on a finding that a person
+cannot provide for themselves, and this floor asks nothing of the person owed.
 
 **A fact reaches a person only by a route written for it.** The record admits
 only declared kinds of entry. The conclusions that confine, restrict or
@@ -128,13 +128,13 @@ its chapter, and each is small enough to adopt elsewhere without the rest.
 
 The obvious objection to building from the child with nobody and the prisoner
 is that ordinary life then bears machinery meant for the worst case. *An
-Ordinary Week* answers it by following one adult through work, a rented home,
-a clinic, a child at school, an election, a dispute with a landlord and a
-police stop. Two entries give that adult personhood, the floor and the ballot,
-and most of the week touches nothing further. The rules engage where a record
-would decide something about the person, and there they ask for writing before
-touching: a stop that only identifies a human being restricts nothing, and a
-search needs a record of its own.
+Ordinary Week* (Chapter 7) answers it by following one adult through work, a
+rented home, a clinic, a child at school, an election, a dispute with a
+landlord and a police stop. Two entries give that adult personhood, the floor
+and the ballot, and most of the week touches nothing further. The rules engage
+where a record would decide something about the person, and there they ask for
+writing before touching: a stop that only identifies a human being restricts
+nothing, and a search needs a record of its own.
 
 The weight falls on whoever seeks to act against someone. Help takes effect on
 the record of the one actor who gives it, with an independent reviewer owing
@@ -144,7 +144,7 @@ eviction and an office seeking a restriction bear procedure, and a person
 asking for help mostly does not. Where procedure lands instead on the person
 the rules serve, as when a wage attested only by the employer stays
 unconcluded, the design has failed in one of the ways *Where This Could Fail*
-ranks.
+(Chapter 30) ranks.
 
 Designing from the extreme case also finds defects an average case hides. A
 floor tested on a registered adult with a home and a job would never have shown
@@ -292,10 +292,10 @@ without secure confinement on that ground. In each case I answer the cost with
 a duty and a separate route rather than with more coercion: review owed before
 authority ends, protective measures on their own grounds, and compulsory
 non-carceral remedies. The abolitionist case, which *The One Thing Taken*
-answers, would remove the power altogether; I retain it for the case where an
-adjudicator finds that nothing less restrictive can protect another person.
-That is an argument for keeping the power available; whether any particular use
-is necessary is for the adjudication in that case.
+(Chapter 27) answers, would remove the power altogether; I retain it for the
+case where an adjudicator finds that nothing less restrictive can protect
+another person. That is an argument for keeping the power available; whether
+any particular use is necessary is for the adjudication in that case.
 
 The pair of stress cases shows what custody adds. The prisoner and the child
 are owed the same floor, and neither a sentence nor a birth record is evidence
@@ -346,8 +346,8 @@ The joint's trade-offs are between price and barrier, and between speed and
 review. Separate attesters, a responding office, an alternate, public reasons
 and a challenge route raise the price of a false record, since each is a named
 person who can be found out; they leave its possibility, which *Where This
-Could Fail* ranks among the larger risks. Help taking effect on one
-actor's record reaches people before review, and help given wrongly binds a
+Could Fail* (Chapter 30) ranks among the larger risks. Help taking effect on
+one actor's record reaches people before review, and help given wrongly binds a
 provider or public body until review withdraws it. Adverse acts wait, because
 an adverse act done wrongly is harder to undo than help given wrongly, and help
 given on one record never becomes the completed record that other rules read.

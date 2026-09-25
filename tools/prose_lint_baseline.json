@@ -1,6 +1,6 @@
 {
   "book-1/00-opening-note.md": {
-    "negation": 18.0,
+    "negation": 17.9,
     "jargon": 2.3,
     "names": 0,
     "disclaimers": 0,
@@ -171,7 +171,7 @@
     "strays": 0
   },
   "book-1/10-what-money-cannot-buy.md": {
-    "negation": 8.9,
+    "negation": 8.8,
     "jargon": 1.8,
     "names": 0,
     "disclaimers": 0,
@@ -207,7 +207,7 @@
     "strays": 0
   },
   "book-1/12-a-place-in-which-life-remains-possible.md": {
-    "negation": 13.4,
+    "negation": 13.3,
     "jargon": 0.6,
     "names": 0,
     "disclaimers": 0,
@@ -279,7 +279,7 @@
     "strays": 0
   },
   "book-1/16-answerability-and-authority.md": {
-    "negation": 9.1,
+    "negation": 9.0,
     "jargon": 0.0,
     "names": 5,
     "disclaimers": 0,
@@ -315,7 +315,7 @@
     "strays": 0
   },
   "book-1/18-the-vote-conviction-does-not-take.md": {
-    "negation": 15.2,
+    "negation": 15.1,
     "jargon": 0.0,
     "names": 4,
     "disclaimers": 0,
@@ -387,8 +387,8 @@
     "strays": 0
   },
   "book-1/22-changing-the-rules.md": {
-    "negation": 15.0,
-    "jargon": 0.7,
+    "negation": 14.9,
+    "jargon": 0.6,
     "names": 0,
     "disclaimers": 0,
     "banned": 0,
@@ -441,7 +441,7 @@
     "strays": 0
   },
   "book-1/25-a-prisoner-is-a-person.md": {
-    "negation": 9.9,
+    "negation": 9.7,
     "jargon": 2.3,
     "names": 2,
     "disclaimers": 0,
@@ -495,7 +495,7 @@
     "strays": 0
   },
   "book-1/28-when-the-system-notices-it-broke.md": {
-    "negation": 6.2,
+    "negation": 6.1,
     "jargon": 0.4,
     "names": 3,
     "disclaimers": 0,
@@ -530,8 +530,17 @@
     "harness": 0,
     "strays": 0
   },
+  "book-1/bibliography.md": {
+    "negation": 5.6,
+    "jargon": 0.2,
+    "names": 0,
+    "disclaimers": 0,
+    "banned": 0,
+    "harness": 0,
+    "strays": 0
+  },
   "book-1/method.md": {
-    "negation": 18.3,
+    "negation": 18.2,
     "jargon": 7.6,
     "names": 6,
     "disclaimers": 1,
@@ -585,7 +594,7 @@
     "strays": 0
   },
   "book-1/reference.md": {
-    "negation": 15.9,
+    "negation": 12.9,
     "jargon": 0.6,
     "names": 30,
     "disclaimers": 1,

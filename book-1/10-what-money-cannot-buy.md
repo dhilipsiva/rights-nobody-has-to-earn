@@ -72,8 +72,8 @@ withdrawing it. Beneficial control must be disclosed.
 Enterprises may petition, testify and publish attributed views. Their
 treasuries are barred from funding candidates or parties and from buying
 independent electoral advocacy. An association that fields candidates remains
-bound by the rule under any label; *How Public Power Is Built* describes the
-finding that brings such conduct within the prohibition.
+bound by the rule under any label; *How Public Power Is Built* (Chapter 17)
+describes the finding that brings such conduct within the prohibition.
 
 Public, cooperative, commons, mutual, nonprofit, household and private
 provision are all lawful, each without a guaranteed market share, profit,
@@ -174,12 +174,12 @@ There is no general entitlement to credit. Credit and insurance decisions must
 use lawful criteria, give reasons, respect equality, allow correction of the
 data relied on and provide a challenge route. Private insurance cannot gate a
 floor service. The purpose limits described in *Work, Pay and Contribution*
-also prevent reuse of a contribution record as a standing, worth, risk or
-political score.
+(Chapter 9) also prevent reuse of a contribution record as a standing, worth,
+risk or political score.
 
 Cash, vouchers and insurance approvals are instruments. Showing that food,
 housing or care reached someone still requires the receiving-side evidence
-described in *Whether It Arrived*.
+described in *Whether It Arrived* (Chapter 4).
 
 ## Which tier decides
 

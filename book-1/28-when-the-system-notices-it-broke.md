@@ -19,18 +19,19 @@ duty.
 The placement marker reads a reported act. The recorded authority for Ruk, and
 for another person held in secure custody, names a secure facility, and the
 record reports no placement for either of them, so the marker is silent about
-both, as it is about Hano. *Where People Are Put* supposes a report placing Ruk
-at home. The marker then fires because that report conflicts with the
-authorised placement, even though Ruk is eligible for consideration of home
-confinement. The same report for Hano matches Hano's authorised route and
+both, as it is about Hano. *Where People Are Put* (Chapter 26) supposes a
+report placing Ruk at home. The marker then fires because that report conflicts
+with the authorised placement, even though Ruk is eligible for consideration of
+home confinement. The same report for Hano matches Hano's authorised route and
 leaves the marker silent.
 
 This test separates the reported act from a home option or a family entry.
-*Where People Are Put* also tests inappropriate secure placement, unknown
-destinations, competing reports and an exact place without permission for that
-case, and competing complete placement records block custody authority. Each is
-a distinct test, and the home-placement example settles only its own. A
-physical act that nobody reports stays outside the placement alarm's reach.
+*Where People Are Put* (Chapter 26) also tests inappropriate secure placement,
+unknown destinations, competing reports and an exact place without permission
+for that case, and competing complete placement records block custody
+authority. Each is a distinct test, and the home-placement example settles only
+its own. A physical act that nobody reports stays outside the placement alarm's
+reach.
 
 The alarm therefore needs testing as much as the routing rule does. Its place
 in the constitution and its name add nothing to its reliability.
@@ -61,9 +62,9 @@ or procedure is disputed, and an unlawful holding still leaves its subject
 eligible for protection. A company receipt from another encounter shows company
 on that occasion, and the recorded finding about the specified period stands.
 
-The private-power finding in *What Money Cannot Buy* illustrates a related
-evidence boundary, and it too rests on positive entries. It requires a named
-ground, such as an essential function or the absence of meaningful exit.
+The private-power finding in *What Money Cannot Buy* (Chapter 10) illustrates a
+related evidence boundary, and it too rests on positive entries. It requires a
+named ground, such as an essential function or the absence of meaningful exit.
 Checking the ground against the permitted list rejects a claim of an unlisted
 kind, while an untrue claim of a listed kind passes the check. Agreement among
 named reviewers is evidence to assess, and it leaves their independence and
@@ -114,12 +115,12 @@ decision can end its suspension. Other record challenges keep their specified
 responding offices and duties. Each connection is written as its own rule,
 since a general right to justice leaves them unstated.
 
-*Who Owes, and What Follows* traces the lawful source connecting a review duty
-to a named responding office, required actions, positive findings of
-non-response, alternates, continuity and remedy. A simpler extension is tried
-here as well: mark a breach of duty whenever the review body owes a person
-review and no entry records its response. Added to the rules, it marks a breach
-for Ruk, which shows that further consequences can be written. The
+*Who Owes, and What Follows* (Chapter 6) traces the lawful source connecting a
+review duty to a named responding office, required actions, positive findings
+of non-response, alternates, continuity and remedy. A simpler extension is
+tried here as well: mark a breach of duty whenever the review body owes a
+person review and no entry records its response. Added to the rules, it marks a
+breach for Ruk, which shows that further consequences can be written. The
 constitution's own route asks instead for positive evidence of non-response,
 since a missing entry is only silence.
 
@@ -133,9 +134,9 @@ A non-response shown by positive evidence activates the separated alternate and
 the continuity route. If that alternate also fails, the bounded chain ends
 there, with the duties still owed, rather than producing substitute offices
 without end. A failure that recurs across a whole tier takes the general route
-in *Who Owes, and What Follows*: a certified pattern, a declaration, a public
-plan and interim measures. Failure leaves each office with the authority it had
-and the subject with standing and the floor.
+in *Who Owes, and What Follows* (Chapter 6): a certified pattern, a
+declaration, a public plan and interim measures. Failure leaves each office
+with the authority it had and the subject with standing and the floor.
 
 Other cases need different continuity rules. A budget deadlock permits the
 treasury to continue an enumerated set under the last lawful authority, subject
@@ -185,11 +186,11 @@ physical shortage shown to be a budget choice stops authorising scarcity
 allocation. These are withdrawals of formal authority.
 
 The duties attached to the recorded undertaking continue through withdrawal.
-The holder in *What May Be Kept About You* still owes accuracy, security,
-protection from retaliation, notification and explanation, and human review and
-the subject's right to contest remain. The inventory, return, compensation and
-audit duties in *A Crisis Does Not Suspend the Republic* remain too. Removing
-permission leaves those obligations owed.
+The holder in *What May Be Kept About You* (Chapter 19) still owes accuracy,
+security, protection from retaliation, notification and explanation, and human
+review and the subject's right to contest remain. The inventory, return,
+compensation and audit duties in *A Crisis Does Not Suspend the Republic*
+(Chapter 20) remain too. Removing permission leaves those obligations owed.
 
 The defect is specific to the affected record, and an unrelated holding stands
 when another is found defective. Where common-cause correction or affected-case

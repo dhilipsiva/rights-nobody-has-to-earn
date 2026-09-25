@@ -71,6 +71,22 @@ acceptance comes last as this decision's §6 required; the pen strand's
 persisting clearance and custody facts precede the other two and change none of
 their verdicts. The map is `tools/maps/2026-09-25-restructure.json`.
 
+## Production — item 64, 2026-09-25
+
+Ruling D1 is complete: every edition prints the subtitle on its cover and
+carries it, with the promise, in its EPUB and PDF metadata, and ends on a back
+cover that opens with the promise. The back matter gains the works cited,
+generated from the notes, between the method and the reference; the reference
+keeps its title and gains five drawn diagrams, each beside its prose
+equivalent, and an alphabetical index generated into its closing region. Print
+drops the web artefacts: the reference's closing navigation line, the notes'
+return links and any link whose target paper cannot follow, which now prints
+its repository path. Chapter titles cited in prose carry their numbers. A
+plain-language summary edition prints the companion's numbered articles as a
+book of its own, so the constitution the book describes can be read, and
+printed, in the plain language it asks of public bodies. R4 stands: the
+appendix remains a carried archive outside the reading order.
+
 ## The method as the technical appendix — item 62, 2026-09-25
 
 The method keeps its name, its place after Part V and the scope this decision

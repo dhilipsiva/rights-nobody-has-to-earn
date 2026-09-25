@@ -44,8 +44,8 @@ The prisoner supplies the paired test. Public power has acted on this person.
 Does the same floor survive confinement? Can the person contest the restriction
 and leave when authority ends? The child tests what begins without a request;
 the prisoner tests what remains under power. Neither is a model of ordinary
-life, and *An Ordinary Week* shows how lightly the design touches a person the
-record has no reason to decide anything about.
+life, and *An Ordinary Week* (Chapter 7) shows how lightly the design touches a
+person the record has no reason to decide anything about.
 
 Three distinctions hold on every page, with one limit beside them, and the
 chapters leave them unstated.
@@ -105,8 +105,8 @@ good, and no independent expert has reviewed the whole design.
 No glossary or technical preparation is needed. Read the cases in order through
 Part V. If you want the reasons before the institutional detail, the
 [map of choices](reference.md#the-choices-and-their-arguments) at the back
-leads to them, beside the glossary and index. Continue to the method only if
-you want to see how the rules are run and tested. The current text, the
+leads to them, beside the glossary, the index and the works cited. Continue
+to the method only if you want to see how the rules are run and tested. The current text, the
 constitution itself in numbered plain-language articles, and a companion that
 runs selected cases in your browser are at
 [dhilipsiva.dev/rights-nobody-has-to-earn](https://dhilipsiva.dev/rights-nobody-has-to-earn/);

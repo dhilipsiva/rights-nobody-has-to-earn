@@ -129,10 +129,11 @@ The computer would accept a rule confining someone for lacking a contribution
 record; acceptance shows only that a rule can run. A separate development test
 of the constitution's written rules holds contribution records to their
 purpose. They may support a supplement and nothing else, their absence may
-justify nothing, and only a recorded entry creates one. The
-[method](method.md#checking-how-a-record-is-used) explains how that test
-differs from running the rules. The restriction is part of this design, and a
-harmful alternative can still be written; the test exists to find it.
+justify nothing, and only a recorded entry creates one. The method's section
+[*Checking how a record is used*](method.md#checking-how-a-record-is-used)
+explains how that test differs from running the rules. The restriction is part
+of this design, and a harmful alternative can still be written; the test exists
+to find it.
 
 ## When the money runs out
 
@@ -222,13 +223,13 @@ evidence beyond the recorded activity.
 
 ## An examination is not authority
 
-An examination is an entry of the same kind. Suppose another examiner records
-a judgment and an examination of Adam and cites a hunch as the ground. Citing a
+An examination is an entry of the same kind. Suppose another examiner records a
+judgment and an examination of Adam and cites a hunch as the ground. Citing a
 ground leaves its truth open, gives the examiner no authority to sign findings
 and completes no adverse case. Pay for examining, if claimed, needs the
 ordinary compensation record. Whether an examination supports an adverse
 conclusion depends on the case, evidence, procedure and authority set out in
-*Findings About People*.
+*Findings About People* (Chapter 24).
 
 ## A finding does not cancel a life of work
 
@@ -246,7 +247,7 @@ Cira's own, just as the child in the care case has an act of their own.
 Restoration concerns the finding and the powers it restricts. Recorded
 contributions stand independently of it, with nothing to rebuild. Restoration
 by a properly made appellate decision, and the continuing review duty, are
-examined in *Findings About People*.
+examined in *Findings About People* (Chapter 24).
 
 ## What this cannot settle
 

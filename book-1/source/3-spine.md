@@ -193,7 +193,7 @@ Front matter: `epigraph.md`, `00-opening-note.md`.
 | 29 | The Five Joints | `29-the-five-joints.md` | exempt | — | landed |
 | 30 | Where This Could Fail | `30-where-this-could-fail.md` | exempt | — | landed |
 
-Back matter: `method.md`, `reference.md`.
+Back matter: `method.md`, `bibliography.md`, `reference.md`.
 <!-- END GENERATED: contents -->
 
 ### The hand list — superseded 2026-09-17, pre-reorder numbers

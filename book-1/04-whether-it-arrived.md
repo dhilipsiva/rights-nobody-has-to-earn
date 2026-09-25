@@ -81,10 +81,10 @@ Similar words can conceal different claims. Each statement needs a clear scope.
 | Legal consequence | What the rules conclude from the recorded findings |
 | Recipient-side delivery evidence | A matching receipt and independent attestation for a particular person, item and scope |
 
-Custody marks the difference between the last two rows: the named place where
-a person may be held, and the duties owed there, are legal consequences and
-never a receipt of shelter, as the chapter *A Prisoner Is a Person* goes on to
-show.
+Custody marks the difference between the last two rows: the named place where a
+person may be held, and the duties owed there, are legal consequences and never
+a receipt of shelter, as the chapter *A Prisoner Is a Person* (Chapter 25) goes
+on to show.
 
 Making an offer is one event, its accessibility another, and an adequate
 receipt a third.
@@ -92,9 +92,9 @@ receipt a third.
 Where a route fails, challenge must remain available while protection
 continues. Remedy must address the individual loss; common-cause correction,
 re-examination of affected cases and recurrence checking are separate duties,
-which the chapter *Who Owes, and What Follows* sets out. A recorded remedy is
-a duty, and restoration needs evidence of its own; a recurrence check speaks
-only for the period its records cover.
+which the chapter *Who Owes, and What Follows* (Chapter 6) sets out. A recorded
+remedy is a duty, and restoration needs evidence of its own; a recurrence check
+speaks only for the period its records cover.
 
 ## The child with nobody
 

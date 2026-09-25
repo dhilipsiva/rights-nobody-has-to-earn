@@ -108,10 +108,10 @@ can withhold it could otherwise block every authority that depends on it.
 ## Keeping public decisions answerable
 
 Permission to act in an office differs from the permanent answerability
-described in *Answerability and Authority*. A current, independently reviewed
-finding can withhold permission for an affected act while the answerability,
-standing, floor, ballot, speech and right to challenge of everyone involved
-stay in place.
+described in *Answerability and Authority* (Chapter 16). A current,
+independently reviewed finding can withhold permission for an affected act
+while the answerability, standing, floor, ballot, speech and right to challenge
+of everyone involved stay in place.
 
 ### Who controls the payment or the act
 
@@ -209,7 +209,7 @@ passed. In the comparison case those findings are withheld while the rest of
 the record remains, and the authority is absent. Naming a deadline and an
 electoral body is insufficient; the finding itself is required. The duty to
 hold an election when a term ends, and what governs the chamber meanwhile,
-belong to *A Crisis Does Not Suspend the Republic*.
+belong to *A Crisis Does Not Suspend the Republic* (Chapter 20).
 
 Budget deadlock leaves the floor and essential services legally in place. The
 treasury continues the last lawful authority for an enumerated continuity set

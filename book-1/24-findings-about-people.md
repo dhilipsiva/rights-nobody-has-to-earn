@@ -2,11 +2,11 @@
 
 A credibility finding in force restricts one act of its subject: a signature on
 a new credibility finding. A finding on the deceit ground also withdraws the
-shield for the disclosure it concerns, and for that disclosure alone, as
-*The Shield* shows. Three duties are owed to the subject: the review body must
-explain the finding's ground, the appeals body must review the continuing
-restriction without waiting to be asked, and a challenge by the subject places a
-further duty of review on the appeals body.
+shield for the disclosure it concerns, and for that disclosure alone, as *The
+Shield* (Chapter 23) shows. Three duties are owed to the subject: the review
+body must explain the finding's ground, the appeals body must review the
+continuing restriction without waiting to be asked, and a challenge by the
+subject places a further duty of review on the appeals body.
 
 Everything else stays as it was. The subject remains a person, is owed the
 floor, retains the ballot and free movement, and keeps any public answerability.
@@ -70,11 +70,12 @@ and the food debt remains. Each consequence answers to a finding about its own
 basis, and the rules calculate no sum.
 
 Suppose too that Bela, under the finding, is the source of a certification that
-a public tier is failing to deliver the floor, and a separate reviewer certifies
-the same tier. The certification obliges the Constitutional Court to decide
-whether the pattern is an unconstitutional state of affairs, as
-*Who Owes, and What Follows* sets out. That route keeps its own independence and
-conflict rules, and the credibility finding stands outside them.
+a public tier is failing to deliver the floor, and a separate reviewer
+certifies the same tier. The certification obliges the Constitutional Court to
+decide whether the pattern is an unconstitutional state of affairs, as *Who
+Owes, and What Follows* (Chapter 6) sets out. That route keeps its own
+independence and conflict rules, and the credibility finding stands outside
+them.
 
 ## Cira's separate claim
 
@@ -94,8 +95,8 @@ authority, and a convocation seating gives the tribunal's. An examiner seated
 only by the electorate holds the first and lacks the second. Each route needs a
 seating, no recall, and a positive record of clear history, witnessed in an
 earlier version of the record and kept in the version in force. A recalled
-official stays answerable and loses the authority, as
-*Answerability and Authority* describes.
+official stays answerable and loses the authority, as *Answerability and
+Authority* (Chapter 16) describes.
 
 A restriction recorded in an earlier version and kept in the version in force
 withholds the authority. For it to count, the earlier version must be
@@ -161,15 +162,15 @@ decision-maker and reviewer must be distinct, and neither may be the subject. An
 independent alternate can act under the same case requirements when the ordinary
 body is a party. A generic judgment and a forgiveness flag restore nothing.
 
-Mael is seated by the electorate and under a finding in force, and a restriction
-recorded in an earlier version and kept in the version in force separately
-withholds Mael's authority to sign; Mael stays publicly answerable.
+Mael is seated by the electorate and under a finding in force, and a
+restriction recorded in an earlier version and kept in the version in force
+separately withholds Mael's authority to sign; Mael stays publicly answerable.
 The restoration test supplies a forgiveness flag and a generic judgment by the
 appeals body, and the finding stays in force. When the test also records the
 particular appellate act for Mael's finding, the personal finding ends, and the
 duty to review its continuation ends with it. The earlier restriction remains,
-so the authority to sign stays withheld; *Answerability and Authority* follows
-that half.
+so the authority to sign stays withheld; *Answerability and Authority*
+(Chapter 16) follows that half.
 
 The concealed-conflict finding against the parent ends in the same way, while
 the relationship and the examination stay recorded. The history stays; only its
@@ -189,10 +190,10 @@ duty follows, and the finding continues meanwhile.
 Relief from a conviction is built the same way. A properly made appellate order
 names its case, subject, incident, offence, ground, evidence and procedure. A
 raw clearing entry or a generic judgment by the appeals body is a different
-thing, and the rules still conclude custody for a person whose record holds only
-those entries. Missing relief alone confines nobody. Custody needs its own
+thing, and the rules still conclude custody for a person whose record holds
+only those entries. Missing relief alone confines nobody. Custody needs its own
 positive merits, defence, procedure, current authority and lawful placement
-evidence, as *The One Thing Taken* sets out.
+evidence, as *The One Thing Taken* (Chapter 27) sets out.
 
 ## What it costs
 

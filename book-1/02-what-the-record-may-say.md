@@ -163,9 +163,10 @@ chapter shows.
 
 The record also changes from one version to the next. A status recorded in an
 earlier version counts in the version in force only where independent witnesses
-keep it there; the [method](method.md#versions-of-the-record) sets out how.
-Standing works the other way round, because it protects. An accepted later
-version must state that a witnessed standing is kept.
+keep it there; the method's section [*Versions of the
+record*](method.md#versions-of-the-record) sets out how. Standing works the
+other way round, because it protects. An accepted later version must state that
+a witnessed standing is kept.
 Omitting that statement does not erase both protection and the evidence of the
 mismatch: the standing continues, and the omission is marked as a defect.
 

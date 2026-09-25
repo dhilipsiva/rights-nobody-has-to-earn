@@ -166,8 +166,8 @@ an already held franchise as punishment differs from a threshold not yet
 reached. Missing evidence can nevertheless block an executable conclusion about
 an entitlement already held in law, and the person whose evidence is missing
 bears that gap. The challenge and the provisional route address it without
-proving anyone's birthday. *The Vote Conviction Does Not Take* follows those
-routes.
+proving anyone's birthday. *The Vote Conviction Does Not Take* (Chapter 18)
+follows those routes.
 
 ## The child with nobody
 

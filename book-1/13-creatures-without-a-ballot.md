@@ -1,11 +1,11 @@
 # Creatures Without a Ballot
 
-*A Place in Which Life Remains Possible* named a third claim beside the
-environmental right and the commons: a credibly sentient animal is protected in
-its own interests. This chapter follows that claim. The animal's protection is
-its own kind, outside human personhood, the ballot and the human floor, and what
-the animal is owed follows from its interests rather than from who owns it or
-what it is good for.
+*A Place in Which Life Remains Possible* (Chapter 12) named a third claim
+beside the environmental right and the commons: a credibly sentient animal is
+protected in its own interests. This chapter follows that claim. The animal's
+protection is its own kind, outside human personhood, the ballot and the human
+floor, and what the animal is owed follows from its interests rather than from
+who owns it or what it is good for.
 
 The river case in that chapter left one claim open. The fish exposed by the
 water's withdrawal have interests in life, bodily integrity and care, even where
@@ -148,13 +148,13 @@ lethal, invasive or high-severity use.
 
 An independently reviewed finding that a candidate amendment removes the
 animal's status or weakens either ban blocks the candidate; *Changing the
-Rules* follows the procedure. The finding compares the exact base, candidate
-and reviewed effects rather than a label, and no majority, emergency, profit,
-custom, necessity or general finding of compatibility waives it. It refuses
-reliance on that candidate alone: discussion, challenge, existing rights, care
-and lawful history remain. The food rule and the detailed standards are
-constitutional law an amendment may change, always inside those three, so that
-no food purpose licenses avoidable suffering.
+Rules* (Chapter 22) follows the procedure. The finding compares the exact base,
+candidate and reviewed effects rather than a label, and no majority, emergency,
+profit, custom, necessity or general finding of compatibility waives it. It
+refuses reliance on that candidate alone: discussion, challenge, existing
+rights, care and lawful history remain. The food rule and the detailed
+standards are constitutional law an amendment may change, always inside those
+three, so that no food purpose licenses avoidable suffering.
 
 ### What the food rule means for farming and subsistence
 

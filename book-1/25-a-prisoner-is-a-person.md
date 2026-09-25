@@ -2,15 +2,15 @@
 
 *If you are a prisoner, you are a person.*
 
-A person the State holds keeps standing and the whole floor. The rules
-conclude personhood from custody itself, so a prisoner with no other standing
-entry is still owed food, shelter, care, learning, bodily safety, material
-security, expression, belief and company. The same rule protects people who are
-never held: because a prisoner remains a person, a rule confining anyone for
-lacking a floor item is refused. Zed's case shows both consequences. The
-sentence takes free movement; *The One Thing Taken* explains why the legal loss
-stops there, and *The Vote Conviction Does Not Take* follows the ballot, which
-conviction and custody leave in place.
+A person the State holds keeps standing and the whole floor. The rules conclude
+personhood from custody itself, so a prisoner with no other standing entry is
+still owed food, shelter, care, learning, bodily safety, material security,
+expression, belief and company. The same rule protects people who are never
+held: because a prisoner remains a person, a rule confining anyone for lacking
+a floor item is refused. Zed's case shows both consequences. The sentence takes
+free movement; *The One Thing Taken* (Chapter 27) explains why the legal loss
+stops there, and *The Vote Conviction Does Not Take* (Chapter 18) follows the
+ballot, which conviction and custody leave in place.
 
 ## Zed
 
@@ -51,19 +51,20 @@ rule would make custody depend on its own consequence; that loop is what is
 refused. The refusal therefore covers everyone the record holds, confined or
 free. It also rests on the way each entitlement is written, as an entitlement
 to a condition: written as a plain label instead, the entitlement disappears
-and the hostile rule loads. The optional
-[method](method.md#why-the-hostile-floor-rule-is-refused) shows how the refusal
-works and why a differently written attack needs its own test.
+and the hostile rule loads. The optional method's section [*Why the hostile
+floor rule is refused*](method.md#why-the-hostile-floor-rule-is-refused) shows
+how the refusal works and why a differently written attack needs its own test.
 
 The refusal reaches confinement for a missing floor item. A rule confining
 someone for lacking a home entry loads, because a home entry lies outside the
 floor; a separate test of the written rules rejects any rule that concludes
-custody, placement, severity or a restraint from a missing home, family or
-work entry. Another test rejects any rule that takes a floor item's delivery,
+custody, placement, severity or a restraint from a missing home, family or work
+entry. Another test rejects any rule that takes a floor item's delivery,
 present or absent, as a premise, so an absent meal leaves the debt in place and
 becomes a ground for nothing, whether a placement or a finding about the
-person. The [method](method.md#checking-how-a-record-is-used) distinguishes
-those tests from the refusal.
+person. The method's section [*Checking how a record is
+used*](method.md#checking-how-a-record-is-used) distinguishes those tests from
+the refusal.
 
 ## Standing that protects others
 
@@ -108,12 +109,12 @@ conclude that Nell received shelter, and matching food evidence lets them
 conclude that Nell received food. Nell keeps personhood and the floor debt,
 and stays free of confinement and of any credibility finding.
 
-Witnessed delivery is independent of sentence authority. The receipt route
-asks nothing of Nell before help is owed: both people were owed the floor
-before either result, and a comparison of what each received needs evidence of
-actual conditions for both. *Where People Are Put* turns to placement: where
-the rules assign a confined person, and why the assignment leaves what the
-person is owed where it was.
+Witnessed delivery is independent of sentence authority. The receipt route asks
+nothing of Nell before help is owed: both people were owed the floor before
+either result, and a comparison of what each received needs evidence of actual
+conditions for both. *Where People Are Put* (Chapter 26) turns to placement:
+where the rules assign a confined person, and why the assignment leaves what
+the person is owed where it was.
 
 *Run it:* the companion runs this chapter's cases on your own device, at
 [dhilipsiva.dev/rights-nobody-has-to-earn/cases](https://dhilipsiva.dev/rights-nobody-has-to-earn/cases/#chapter-25).
@@ -128,17 +129,17 @@ class owed the floor, the office that prosecutes would also decide whom the
 State owes anything, and the people it holds can least look elsewhere. The rule
 protects people who are never held as well, since the refusal to confine anyone
 for lacking a floor item rests on the prisoner remaining a person. The ballot
-stays for the reasons *The Vote Conviction Does Not Take* gives. The United
-Nations' Standard Minimum Rules for the Treatment of Prisoners, adopted by the
-General Assembly in 2015 as the Nelson Mandela Rules, draw the same line: every
-prisoner is to be treated with respect for their inherent dignity, imprisonment
-is "afflictive by the very fact" of the loss of liberty, and the prison system
-is to add nothing to the suffering inherent in that loss.[^mandela] They are a
-resolution, not a treaty, and set out "what is generally accepted as being good
-principles and practice"; they record agreement on principle and show nothing
-about any prison. The case that opens this Part turned on a like premise: a
-court found a speedy trial within the right to life and liberty of people held
-for years untried.[^khatoon]
+stays for the reasons *The Vote Conviction Does Not Take* (Chapter 18) gives.
+The United Nations' Standard Minimum Rules for the Treatment of Prisoners,
+adopted by the General Assembly in 2015 as the Nelson Mandela Rules, draw the
+same line: every prisoner is to be treated with respect for their inherent
+dignity, imprisonment is "afflictive by the very fact" of the loss of liberty,
+and the prison system is to add nothing to the suffering inherent in that
+loss.[^mandela] They are a resolution, not a treaty, and set out "what is
+generally accepted as being good principles and practice"; they record
+agreement on principle and show nothing about any prison. The case that opens
+this Part turned on a like premise: a court found a speedy trial within the
+right to life and liberty of people held for years untried.[^khatoon]
 
 The strongest alternative suspends a convicted person's civil standing for the
 length of the sentence and restores it on release. While the sentence runs,

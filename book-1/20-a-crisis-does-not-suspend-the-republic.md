@@ -150,14 +150,14 @@ matter security or foreign affairs adds nothing to them. Regional and local
 functions, residual competences and stronger compatible protections remain.
 
 A region leaves only by the lawful exit route set out in *How Public Power Is
-Built*, whatever recognition it gains abroad. The settlement must preserve
-rights, including nationality, minority protection, nonmoving residents,
-family relations and records. Transfer or impairment of collective title
-requires actual prior informed consent for that holder, title, settlement
+Built* (Chapter 17), whatever recognition it gains abroad. The settlement must
+preserve rights, including nationality, minority protection, nonmoving
+residents, family relations and records. Transfer or impairment of collective
+title requires actual prior informed consent for that holder, title, settlement
 revision and effect; consultation alone falls short of it. Military force, and
-manipulation of trade, border access or services, are barred as weapons
-against a lawful exit. Other states' cooperation and readmission lie beyond
-what this constitution can produce.
+manipulation of trade, border access or services, are barred as weapons against
+a lawful exit. Other states' cooperation and readmission lie beyond what this
+constitution can produce.
 
 ## What this cannot settle
 
@@ -168,9 +168,9 @@ capability, training, procurement, stockpiles, incident command, restoration
 and treaty administration. Operating them, and whether any duty in these cases
 is performed, belongs to the second book.
 
-The next chapter, *A Way to Be Heard*, follows the judicial route these cases
-require: how a person can demand an answer and what must follow when that
-route itself fails.
+The next chapter, *A Way to Be Heard* (Chapter 21), follows the judicial route
+these cases require: how a person can demand an answer and what must follow
+when that route itself fails.
 
 *Run it:* the companion runs this chapter's cases on your own device, at
 [dhilipsiva.dev/rights-nobody-has-to-earn/cases](https://dhilipsiva.dev/rights-nobody-has-to-earn/cases/#chapter-20).

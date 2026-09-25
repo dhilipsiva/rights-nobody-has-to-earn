@@ -41,8 +41,12 @@ ROOT = Path(__file__).resolve().parent.parent
 BOOK = ROOT / "book-1"
 ASSETS = Path(__file__).resolve().parent / "book_assets"
 TITLE = "The Rights Nobody Has to Earn"
+SUBTITLE = "A worked design for a society, with its formal claims made executable."
+PROMISE = ("A constitution designed from the person with nothing, argued in plain "
+           "language, with every rule published so you can test it.")
 AUTHOR = "dhilipsiva"
 REPOSITORY = "https://github.com/dhilipsiva/rights-nobody-has-to-earn/blob/main/"
+RAW = "https://raw.githubusercontent.com/dhilipsiva/rights-nobody-has-to-earn/main/"
 EPUB_NS = "http://www.idpf.org/2007/ops"
 SAMPLE_CHAPTERS = (1, 4, 8, 21, 29)
 UI_PREFIX = "/rights-nobody-has-to-earn/"
@@ -139,7 +143,13 @@ def document(path: Path, number: int | None = None, part: str | None = None) -> 
         if element.tag == "th":
             element.set("scope", "col")
         if element.tag == "img":
-            raise ValueError(f"{path}: image assets need an explicit inclusion and text-alternative decision")
+            # Only the book's own drawn diagrams may appear, each with a text
+            # alternative; its prose equivalent follows it in the chapter.
+            source = element.get("src", "")
+            if not re.fullmatch(r"diagrams/[a-z0-9-]+\.svg", source) or not (path.parent / source).is_file():
+                raise ValueError(f"{path}: an image must be a diagram in book-1/diagrams: {source}")
+            if not element.get("alt", "").strip():
+                raise ValueError(f"{path}: diagram {source} needs a text alternative")
         if element.get("class") == "footnotes":
             element.set("role", "doc-endnotes")
             heading = ET.Element("h2")
@@ -235,12 +245,37 @@ def resolve_link(href: str, source: Document, documents: list[Document], mode: s
     return REPOSITORY + quote(relative, safe="/") + suffix
 
 
+def diagrams(doc: Document) -> list[str]:
+    """The diagram files a document shows, in order."""
+    return [image.get("src", "") for image in doc.tree.iter("img")]
+
+
 def article(doc: Document, documents: list[Document], mode: str) -> str:
     tree = copy.deepcopy(doc.tree)
+    for image in tree.iter("img"):
+        source = image.get("src", "")
+        if mode != "epub":
+            # A single-file HTML copy, its PDF and the reader carry the drawing inline.
+            data = base64.b64encode((doc.path.parent / source).read_bytes()).decode("ascii")
+            image.set("src", f"data:image/svg+xml;base64,{data}")
+        image.set("class", "diagram")
     for link in tree.iter("a"):
         link.set("href", resolve_link(link.get("href", ""), doc, documents, mode))
         if mode == "epub" and link.get("role") == "doc-noteref":
             link.set("epub:type", "noteref")
+    if mode == "html":
+        # On paper a link to a repository file loses its target, so print the
+        # path after it; the screen copy keeps the link alone.
+        for parent in list(tree.iter()):
+            for index, child in reversed(list(enumerate(parent))):
+                href = child.get("href", "") if child.tag == "a" else ""
+                if not href.startswith(REPOSITORY):
+                    continue
+                path = unquote(urlsplit(href).path.split("/blob/main/", 1)[1])
+                note = ET.Element("span", {"class": "print-only"})
+                note.text = f" (repository: {path})"
+                note.tail, child.tail = child.tail, None
+                parent.insert(index + 1, note)
     body = "".join(ET.tostring(child, encoding="unicode", method="xml") for child in tree)
     part = f'<p class="part-label">{html.escape(doc.part)}</p>' if doc.part else ""
     kind = ' class="epigraph"' if doc.stem == "epigraph" else ""
@@ -285,6 +320,9 @@ def ui_markdown(doc: Document, documents: list[Document]) -> str:
             source = source.replace(f"]({href})", f"]({UI_ORIGIN}{resolved})" if resolved.startswith("/") else f"]({resolved})")
             source = re.sub(r"(?m)^(\s*\[[^\]]+\]:\s*)" + re.escape(href) + r"(?=\s|$)",
                             lambda m: m[1] + (UI_ORIGIN if resolved.startswith("/") else "") + resolved, source)
+    # A diagram's Markdown copy points at the repository's file.
+    for src in diagrams(doc):
+        source = source.replace(f"]({src})", f"]({RAW}book-1/{src})")
     return source.strip() + "\n"
 
 
@@ -317,13 +355,19 @@ def export_ui(output: Path, documents: list[Document]) -> None:
     (output / "book.json").write_text(json.dumps(result, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 
 
-def cover(sample: bool = False) -> str:
-    status = 'Book 1 · Selected chapters' if sample else 'Book 1 · Review copy'
+def cover(sample: bool | str = False) -> str:
+    kind = sample if isinstance(sample, str) else ("sample" if sample else "review")
+    status = {"sample": 'Book 1 · Selected chapters', "review": 'Book 1 · Review copy',
+              "summary": 'Book 1 · The constitution in plain language'}[kind]
     numbers = [str(n) for n in SAMPLE_CHAPTERS]
     listed = ", ".join(numbers[:-1]) + " and " + numbers[-1]
     selection = (f'<p>Chapters {listed}. Cross-references beyond this '
-                 'selection open the public manuscript.</p>') if sample else ''
+                 'selection open the public manuscript.</p>') if kind == "sample" else ''
+    if kind == "summary":
+        selection = ('<p>A summary edition: the constitution the book describes, as numbered '
+                     'articles in plain language. The book argues each choice.</p>')
     return f'''<header class="cover"><h1>{TITLE}</h1>
+<p class="subtitle">{SUBTITLE}</p>
 <p>{AUTHOR}</p><p class="edition-status">{status}</p>{selection}
 <p class="read-online">The current manuscript, with a companion that runs its cases in the
 browser, is published at <a href="{UI_ORIGIN}{UI_PREFIX}">dhilipsiva.dev{UI_PREFIX}</a>.</p>
@@ -334,17 +378,56 @@ Tamil typography uses Noto Serif Tamil, Copyright 2022 The Noto Project Authors,
 under the SIL Open Font License 1.1.</p></header>'''
 
 
-def html_document(documents: list[Document], css: str, sample: bool = False) -> str:
+def back_cover() -> str:
+    return f'''<section class="back-cover" aria-label="Back cover">
+<p class="promise">{PROMISE}</p>
+<p>What does a society owe a person who can offer it nothing in return, and how can
+that person hold it to the promise? This book answers with a constitution: standing
+and a floor of essentials for every person, owed by named public bodies, followed from
+a child nobody has come for to a person the state holds, and argued chapter by chapter
+against the strongest alternatives.</p>
+<p>The constitution, its tests and a companion that runs them are published at
+dhilipsiva.dev{UI_PREFIX}.</p></section>'''
+
+
+def summary_markdown() -> str:
+    """The plain-language summary edition, from the companion's numbered articles."""
+    doc = json.loads((ROOT / "ui" / "articles.json").read_text(encoding="utf-8"))
+    lines = [f"# {doc['title'][0].upper()}{doc['title'][1:]}", "", f"*{PROMISE}*", "", doc["note"], "",
+             "This edition gives the articles alone. The book, *The Rights Nobody Has to Earn*, "
+             "follows each rule through cases and argues it against the strongest alternative; "
+             "the chapters named under each article are where.", ""]
+    for index, part in enumerate(doc["parts"], 1):
+        lines += [f"## {part}", ""]
+        for article in (a for a in doc["articles"] if a["part"] == index):
+            lines += [f"### Article {article['number']}. {article['title']}", ""]
+            if article["core"] == "whole":
+                lines += ["*Protected core: beyond amendment.*", ""]
+            elif article["core"].startswith("part: "):
+                lines += [f"*Protected core in part: {article['core'][6:]}.*", ""]
+            lines += [f"{i}. {clause}" for i, clause in enumerate(article["text"], 1)] + [""]
+            if article.get("gap"):
+                lines += [f"*Not formal in part.* {article['gap']}", ""]
+            chapters = [str(n) for n in article["chapters"]]
+            if chapters:
+                named = chapters[0] if len(chapters) == 1 else ", ".join(chapters[:-1]) + " and " + chapters[-1]
+                lines += [("Argued in Chapter " if len(chapters) == 1 else "Argued in Chapters ") + named + ".", ""]
+    return "\n".join(lines).rstrip() + "\n"
+
+
+def html_document(documents: list[Document], css: str, sample: bool | str = False) -> str:
     font = base64.b64encode((ASSETS / "NotoSerifTamil.ttf").read_bytes()).decode("ascii")
     css = css.replace('url("NotoSerifTamil.ttf")', f'url("data:font/ttf;base64,{font}")')
     licence = (ASSETS / "OFL-NotoSerifTamil.txt").read_text(encoding="utf-8")
     return f'''<!doctype html><html lang="en"><head><meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>{TITLE}</title><meta name="author" content="{AUTHOR}"/>
+<title>{TITLE}: {SUBTITLE[:-1]}</title><meta name="author" content="{AUTHOR}"/>
+<meta name="description" content="{PROMISE}"/>
 <style>{css}</style><!-- Embedded font licence:\n{licence}\n--></head><body>
 <a class="skip-link" href="#main-content">Skip to the book</a>{cover(sample)}
 <nav class="book-contents" aria-label="Book contents"><h1>Contents</h1>{contents(documents, "html")}</nav>
 <main id="main-content" tabindex="-1">{''.join(article(d, documents, "html") for d in documents)}</main>
+{back_cover()}
 </body></html>'''
 
 
@@ -355,21 +438,27 @@ def xhtml(title: str, body: str) -> str:
 <link rel="stylesheet" href="book.css"/></head><body class="ebook">{body}</body></html>'''
 
 
-def write_epub(path: Path, documents: list[Document], css: str, sample: bool = False) -> None:
+def write_epub(path: Path, documents: list[Document], css: str, sample: bool | str = False) -> None:
     items = [('cover', 'cover.xhtml', 'application/xhtml+xml', ''),
              ('nav', 'nav.xhtml', 'application/xhtml+xml', ' properties="nav"'),
              ('css', 'book.css', 'text/css', ''),
              ('font', 'NotoSerifTamil.ttf', 'font/ttf', ''),
              ('font-licence', 'OFL-NotoSerifTamil.txt', 'text/plain', '')]
     items += [(f"doc-{d.stem}", f"{d.stem}.xhtml", 'application/xhtml+xml', '') for d in documents]
+    items += [('back-cover', 'back-cover.xhtml', 'application/xhtml+xml', '')]
+    drawn = list(dict.fromkeys(src for d in documents for src in diagrams(d)))
+    items += [(f"diagram-{Path(src).stem}", src, 'image/svg+xml', '') for src in drawn]
     modified = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
     manifest = ''.join(f'<item id="{ident}" href="{name}" media-type="{mime}"{extra}/>' for ident, name, mime, extra in items)
-    spine = '<itemref idref="cover"/>' + ''.join(f'<itemref idref="doc-{d.stem}"/>' for d in documents)
+    spine = ('<itemref idref="cover"/>' + ''.join(f'<itemref idref="doc-{d.stem}"/>' for d in documents)
+             + '<itemref idref="back-cover"/>')
     package = f'''<?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://www.idpf.org/2007/opf" version="3.0" unique-identifier="book-id" xml:lang="en">
 <metadata xmlns:dc="http://purl.org/dc/elements/1.1/">
-<dc:identifier id="book-id">https://github.com/dhilipsiva/rights-nobody-has-to-earn/book-1{'/sample' if sample else ''}</dc:identifier>
-<dc:title>{TITLE}</dc:title><dc:creator>{AUTHOR}</dc:creator><dc:language>en</dc:language>
+<dc:identifier id="book-id">https://github.com/dhilipsiva/rights-nobody-has-to-earn/book-1{('/' + sample) if isinstance(sample, str) else ('/sample' if sample else '')}</dc:identifier>
+<dc:title id="main-title">{TITLE}</dc:title><meta refines="#main-title" property="title-type">main</meta>
+<dc:title id="subtitle">{SUBTITLE[:-1]}</dc:title><meta refines="#subtitle" property="title-type">subtitle</meta>
+<dc:creator>{AUTHOR}</dc:creator><dc:language>en</dc:language><dc:description>{PROMISE}</dc:description>
 <dc:rights>Book prose CC BY 4.0; embedded Noto Serif Tamil under SIL OFL 1.1.</dc:rights>
 <meta property="dcterms:modified">{modified}</meta></metadata>
 <manifest>{manifest}</manifest><spine>{spine}</spine></package>'''
@@ -383,10 +472,13 @@ def write_epub(path: Path, documents: list[Document], css: str, sample: bool = F
         archive.write(ASSETS / 'NotoSerifTamil.ttf', 'EPUB/NotoSerifTamil.ttf')
         archive.write(ASSETS / 'OFL-NotoSerifTamil.txt', 'EPUB/OFL-NotoSerifTamil.txt')
         archive.writestr('EPUB/cover.xhtml', xhtml(TITLE, cover(sample)))
+        archive.writestr('EPUB/back-cover.xhtml', xhtml('Back cover', back_cover()))
         nav = f'<nav epub:type="toc" role="doc-toc" class="book-contents" title="Book contents"><h1 id="contents-title">Contents</h1>{contents(documents, "epub")}</nav>'
         archive.writestr('EPUB/nav.xhtml', xhtml('Contents', nav))
         for doc in documents:
             archive.writestr(f'EPUB/{doc.stem}.xhtml', xhtml(doc.label, '<main>' + article(doc, documents, 'epub') + '</main>'))
+        for src in drawn:
+            archive.write(BOOK / src, f'EPUB/{src}')
 
 
 class QuietHandler(SimpleHTTPRequestHandler):
@@ -416,7 +508,7 @@ def repair_outline(pdf: object, documents: list[Document]) -> None:
 
 
 def write_pdf(html_path: Path, pdf_path: Path, executable: str | None,
-              documents: list[Document], sample: bool = False) -> None:
+              documents: list[Document], sample: bool | str = False) -> None:
     from playwright.sync_api import sync_playwright
     import pymupdf
 
@@ -443,8 +535,9 @@ def write_pdf(html_path: Path, pdf_path: Path, executable: str | None,
     temporary = pdf_path.with_suffix('.tmp.pdf')
     with pymupdf.open(pdf_path) as pdf:
         metadata = pdf.metadata
-        metadata.update(title=TITLE, author=AUTHOR,
-                        subject='Book 1 selected chapters' if sample else 'Book 1 review copy')
+        edition = {'summary': 'Book 1 plain-language summary edition', True: 'Book 1 selected chapters',
+                   False: 'Book 1 review copy'}[sample]
+        metadata.update(title=TITLE, author=AUTHOR, subject=SUBTITLE[:-1], keywords=edition + '; ' + PROMISE)
         pdf.set_metadata(metadata)
         repair_outline(pdf, documents)
         for name, source in [('OFL-NotoSerifTamil.txt', ASSETS / 'OFL-NotoSerifTamil.txt'),
@@ -460,8 +553,25 @@ def main() -> None:
     args_parser.add_argument('--browser-executable', help='Optional existing Chromium executable')
     args_parser.add_argument('--no-pdf', action='store_true', help='Build HTML and EPUB without launching Chromium')
     args_parser.add_argument('--sample', action='store_true', help='Build the selected publisher sample: chapters 1, 4, 8, 21 and 29')
+    args_parser.add_argument('--summary', action='store_true', help='Build the plain-language summary edition from ui/articles.json')
     args_parser.add_argument('--ui-export', type=Path, help='Export the full reader JSON only, using the existing renderer and link checks')
     args = args_parser.parse_args()
+    if args.summary:
+        if args.sample or args.ui_export:
+            args_parser.error('--summary builds its own edition')
+        output = args.output_dir.resolve()
+        output.mkdir(parents=True, exist_ok=True)
+        source = output / 'constitution-in-plain-language.md'
+        source.write_text(summary_markdown(), encoding='utf-8')
+        docs = [document(source)]
+        css = (ASSETS / 'book.css').read_text(encoding='utf-8')
+        html_path = output / 'book-1-summary.html'
+        html_path.write_text(html_document(docs, css, 'summary'), encoding='utf-8')
+        write_epub(output / 'book-1-summary.epub', docs, css, 'summary')
+        if not args.no_pdf:
+            write_pdf(html_path, output / 'book-1-summary.pdf', args.browser_executable, docs, 'summary')
+        print(f'Built the plain-language summary edition in {output}')
+        return
     docs = read_documents()
     if args.ui_export:
         if args.sample:

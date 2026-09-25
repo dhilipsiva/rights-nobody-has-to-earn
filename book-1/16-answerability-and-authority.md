@@ -57,9 +57,10 @@ recall. That is a specific consequence in the accountability mechanism;
 capacities Tove holds outside it are a separate question.
 
 The protection begins with the exposure, before anyone decides whether it is
-true. A shield leaves future proceedings open. *The Shield* sets out how deceit
-or a properly made finding that a particular prosecution is unrelated can
-affect its operation. Both routes leave the exposed actor answerable.
+true. A shield leaves future proceedings open. *The Shield* (Chapter 23) sets
+out how deceit or a properly made finding that a particular prosecution is
+unrelated can affect its operation. Both routes leave the exposed actor
+answerable.
 
 ## Answerability does not grant authority
 
@@ -95,8 +96,9 @@ restriction kept in the version in force remains uncleared.
 
 Ending a personal finding and renewing an appointment are different questions.
 A seating leaves that history in place, since the authority to sign also needs
-a positive clear history. *Findings About People* examines the reach and cost
-of those consequences; answerability leaves each of them to be settled there.
+a positive clear history. *Findings About People* (Chapter 24) examines the
+reach and cost of those consequences; answerability leaves each of them to be
+settled there.
 
 ## What it costs
 
@@ -105,9 +107,9 @@ actors whose exposure supports a shield grows as seating and public-body
 entries accumulate, and an exposure of a long-retired official can still open
 it. The cost falls on people injured in the cases the shield holds back:
 confinement in those cases waits on the shield's case-specific limits, set out
-in *The Shield*. Those limits have to keep the protection from becoming
-impunity for unrelated conduct without making removal from office a way to
-defeat it.
+in *The Shield* (Chapter 23). Those limits have to keep the protection from
+becoming impunity for unrelated conduct without making removal from office a
+way to defeat it.
 
 ## What this cannot settle
 

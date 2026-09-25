@@ -24,8 +24,8 @@ papers, immigration status and length of residence all absent, and standing,
 the floor and free movement follow. The ballot has its own route. It follows
 from recorded adulthood, and the full franchise adds ordinary residence and a
 chosen political home at each tier, as *The Vote Conviction Does Not Take*
-sets out. Citizenship is absent from both tests, and presence alone gives no
-ballot. Immediate help comes first, ahead of all of it.
+(Chapter 18) sets out. Citizenship is absent from both tests, and presence
+alone gives no ballot. Immediate help comes first, ahead of all of it.
 
 Food, shelter, care, education, communication, courts and the reporting of
 violence stay separate from immigration enforcement. A service is barred from

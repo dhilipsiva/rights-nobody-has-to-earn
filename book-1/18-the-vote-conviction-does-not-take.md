@@ -100,15 +100,16 @@ needs separate evidence.
 
 An additional grant has not repealed the existing entitlement: with a narrower
 rule added that gives the ballot only to adults outside custody, Hano's ballot
-still follows from the broader rule, as the
-[method](method.md#rejecting-a-whole-input) shows through the exact inputs.
+still follows from the broader rule, as the method's section [*Rejecting a
+whole input*](method.md#rejecting-a-whole-input) shows through the exact
+inputs.
 
 The ballot rule itself can still be narrowed or replaced. Such an edit is a
-proposed amendment, governed by the rules *Changing the Rules* describes, and a
-rule the computer accepts is not thereby a lawful amendment. The floor has a
-separate protection, since a rule confining someone for lacking a floor item is
-refused outright, and that refusal protects the floor alone. Each guarantee
-needs safeguards suited to how it can be changed.
+proposed amendment, governed by the rules *Changing the Rules* (Chapter 22)
+describes, and a rule the computer accepts is not thereby a lawful amendment.
+The floor has a separate protection, since a rule confining someone for lacking
+a floor item is refused outright, and that refusal protects the floor alone.
+Each guarantee needs safeguards suited to how it can be changed.
 
 ## A right still needs a ballot
 
@@ -133,8 +134,8 @@ record is silent on Nell's actual age.
 
 Nell's right to be heard is already hers: the prohibition on a minimum speaking
 age follows from personhood alone. Participation is wider than the franchise.
-*What May Be Kept About You* examines what institutions may record about a
-person, including the evidence on which political rights depend.
+*What May Be Kept About You* (Chapter 19) examines what institutions may record
+about a person, including the evidence on which political rights depend.
 
 *Run it:* the companion runs this chapter's cases on your own device, at
 [dhilipsiva.dev/rights-nobody-has-to-earn/cases](https://dhilipsiva.dev/rights-nobody-has-to-earn/cases/#chapter-18).

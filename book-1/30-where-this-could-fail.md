@@ -47,9 +47,9 @@ A fix would take capacity, staff and money, which belong to the second book. On
 the constitution's side, if plans with deadlines still lag behind certified
 patterns, the interim measures would need to arrive sooner and reach further,
 and that would be a change to this constitution rather than to its operation.
-The courts whose structural orders *Who Owes, and What Follows* discusses
-ordered plans; what followed their orders is evidence this book has not
-examined, and it bears directly on whether the route works.
+The courts whose structural orders *Who Owes, and What Follows* (Chapter 6)
+discusses ordered plans; what followed their orders is evidence this book has
+not examined, and it bears directly on whether the route works.
 
 ## Open standards are read narrowly
 

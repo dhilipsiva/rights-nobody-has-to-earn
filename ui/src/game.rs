@@ -372,7 +372,7 @@ pub fn Game() -> Element {
                             let owed=status(format!("owe(State, {item}, {who})."));let delivered=status(format!("{pred}({who})."));
                             rsx!{div{class:"floor-indicator","data-floor":pred,strong{"{name}"}span{"owed · {owed}"}span{"provided · {delivered}"}}}
                         }}}
-                        p{class:"term-note","Provision is a formal conclusion. Bodily safety and belief have no delivery route by design."}
+                        p{class:"term-note","Provision is a formal conclusion. Bodily safety, expression and belief have no delivery route by design."}
                     }
                     section{class:"q-card joint-panel",h2{"Rewrite the joints"}p{"Change a choice, examine its cost."}
                         for j in &game().joints{{let id=j.id.clone();rsx!{button{class:if s.selection==j.id{"joint selected"}else{"joint"},"data-joint":"{j.id}",aria_pressed:s.selection==j.id,onclick:move |_|select(state,cancellation,&id),span{"⇌"}span{strong{"{j.title}"}small{if j.measured{"live comparison"}else{"authored cost"}}}}}}}

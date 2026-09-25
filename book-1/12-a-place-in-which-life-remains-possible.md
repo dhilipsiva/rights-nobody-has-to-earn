@@ -5,7 +5,7 @@ depend on air, water, soil and living systems that everyone in that place
 shares. This chapter follows two protections: the person's own environmental
 conditions, and the commons inherited by whoever lives later. A third claim,
 the direct protection of animals as subjects rather than human persons, is
-named here and followed in *Creatures Without a Ballot*.
+named here and followed in *Creatures Without a Ballot* (Chapter 13).
 
 The questions are connected but distinct: whose claim can be heard, which harm
 cannot be exchanged for a gain elsewhere, and what authority may prevent or
@@ -92,8 +92,8 @@ The fish exposed by the withdrawal raise another question. The river's
 protected condition concerns the living system and its continuity. Individual
 fish have interests in life, bodily integrity and care even if saving them
 would not restore the river's flow. A proposed intervention must meet the
-animal protection rules of *Creatures Without a Ballot* on their own terms, and
-both claims stand.
+animal protection rules of *Creatures Without a Ballot* (Chapter 13) on their
+own terms, and both claims stand.
 
 ## Axes that do not trade
 
@@ -244,9 +244,9 @@ framework, which is why the design writes no number into the constitution and
 leaves the ceilings to democratic law inside an independently reviewed
 scientific envelope. Entrenching the commons gives interpreters power over what
 counts as spending a condition. The design limits that power as *Changing the
-Rules* sets out: a reading that refuses an amendment must name the provision,
-the change and its reasons, an independent final review can answer it, and the
-ceilings themselves are made by law rather than by a ruling.
+Rules* (Chapter 22) sets out: a reading that refuses an amendment must name the
+provision, the change and its reasons, an independent final review can answer
+it, and the ceilings themselves are made by law rather than by a ruling.
 
 The strongest alternative, argued most sharply in William Nordhaus's review of
 the Stern Review, is cost-benefit climate economics: one figure that discounts

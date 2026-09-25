@@ -2,6 +2,8 @@
 
 # The Rights Nobody Has to Earn
 
+*A worked design for a society, with its formal claims made executable.*
+
 This directory is the reader-facing Book 1 projection of the principal formally
 audited constitutional specification. It is not the specification itself and
 cannot override, complete, or upgrade it. It contains the epigraph, opening note,
@@ -78,16 +80,31 @@ The [publisher proposal](../submission/README.md) explains the selection.
 The sample keeps the original chapter numbers; references outside the
 selection open their public repository locations.
 
-The 2026-09-25 reading copies, built after the restructure of ruling D7,
-hold 32 ordered inputs: 65,645 Markdown words, HTML comments aside, of which
-the derived chapters contain 41,503 (63.2%). The five-chapter sample holds
-17,173. The full PDF has 183 pages and the sample 43; pagination depends on
-the browser and typography used to rebuild them. The sample retains the
-complete closing argument, so that chapter occupies about 74% of the
-selection. The proposal explains the editorial purpose of this balance.
+Add `--summary` instead to build the plain-language summary edition,
+`book-1-summary.html`, `.epub` and `.pdf`: the constitution the book describes,
+as the numbered articles of `../ui/articles.json`, with the chapters that argue
+each. It is the same text the companion publishes at `constitution/`.
 
-HTML provides a linked contents list, keyboard skip link and labelled table
-regions. EPUB carries the chapter order and nested contents. PDF includes
+Three parts of the back matter are generated and must be regenerated when
+their sources change: `tools/book_diagrams.py` draws the diagrams in
+`diagrams/`, each shown in the back matter beside its prose equivalent;
+`tools/bibliography.py` writes the works cited in `bibliography.md` from the
+notes; and `tools/book_index.py` writes the index at the end of `reference.md`
+from the text. The book-builder tests fail when the works cited or the index
+fall behind.
+
+The 2026-09-25 reading copies hold 40 ordered inputs: 97,988 Markdown words,
+HTML comments aside, of which the derived chapters' derived text holds 49,906
+and their argument sections 21,960; the works cited add 5,220. The
+five-chapter sample holds 13,997. The full PDF has 256 pages, the sample 36
+and the summary edition 16; pagination depends on the browser and typography
+used to rebuild them. The proposal explains the sample's selection.
+
+Every copy carries the subtitle on its cover and the promise on its back
+cover, and the EPUB and PDF carry both in their metadata. The print layout
+hides the notes' return links and prints the path of any link to a repository
+file, which paper cannot follow. HTML provides a linked contents list,
+keyboard skip link and labelled table regions. EPUB carries the chapter order and nested contents. PDF includes
 page numbers, a linked contents list and bookmarks. All three embed the
 Tamil font used by the epigraph. In the full copy, chapter links stay within the edition;
 links to formal files and the claim registry open their repository locations.

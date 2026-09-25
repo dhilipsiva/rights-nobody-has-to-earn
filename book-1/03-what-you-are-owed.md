@@ -40,8 +40,9 @@ it, a ground for confinement is refused before it can change anyone's status.
 The protection covers confinement, and it depends on how such a rule is
 written. Other uses of a missing floor condition are held back by separate
 checks on how delivery conclusions may be used, and each needs its own test.
-The optional [method](method.md#why-the-hostile-floor-rule-is-refused) shows how
-the refusal works and where it stops.
+The optional method's section [*Why the hostile floor rule is
+refused*](method.md#why-the-hostile-floor-rule-is-refused) shows how the
+refusal works and where it stops.
 
 Separate constitutional limits protect private life and economic rights.
 Belief, speech, friendship, intimacy, association, voluntary care, gifts,

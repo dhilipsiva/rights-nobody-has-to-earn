@@ -57,3 +57,5 @@ button,a,input,summary{touch-action:manipulation}button{cursor:pointer}button:di
 .book-bar a,.book-bar button{display:inline-flex;align-items:center;justify-content:center;min-width:44px;min-height:44px}
 .game input{min-height:44px}
 @media(min-width:981px){.joint-panel{max-height:730px;overflow-y:auto;scrollbar-width:thin}}
+.reader img.diagram,img.diagram{display:block;max-width:100%;height:auto;margin:20px auto;background:#fff;border-radius:6px}
+.chapter-cases .case-links{padding-left:20px}.chapter-cases .moved{margin-top:12px}

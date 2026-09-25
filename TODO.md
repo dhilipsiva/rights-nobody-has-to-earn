@@ -218,35 +218,12 @@ unimplemented until the items named here land.
 
 ## Ordered revision backlog
 
-Work in this order: item 64 finishes production, 65 closes the revision, and
-66 is optional.
-Numbering continues from items 01–33, which `CLAUDE.md` records; items 34–63
+Work in this order: item 65 closes the revision, and 66 is optional.
+Numbering continues from items 01–33, which `CLAUDE.md` records; items 34–64
 and 67–72 are complete and recorded there too. Chapter numbers refer to the
 [current reading sequence](book-1/contents.json), which item 53 made the plan's
 §4.2 table; the plan's own §14 punch list uses the earlier numbers, which
 `tools/maps/2026-09-25-restructure.json` maps to these.
-
-### Appendices, companion and production
-
-- [ ] **64. Production and accessibility.**
-
-  **Scope:** `tools/build_book.py`, the opening's navigation text, the READMEs,
-  the proposal and new diagrams; plan §13; ruling D1.
-
-  Print ruling D1's subtitle, *A worked design for a society, with its formal
-  claims made executable.*, on the cover and in the EPUB and PDF metadata, the
-  READMEs and the proposal, and its promise on the back cover. Remove web
-  artefacts from print: the closing "Continue to Chapter 1, or return to the
-  contents." at the end of `book-1/reference.md`, which repeats the opening's
-  "Begin with Chapter 1"; the "↩︎" returns the footnote renderer adds; and
-  phrasing that fails on paper. Make cross-references numeric. Draw the duty chain, delivery
-  evidence, the placement ceiling, the democratic corridor and the flow
-  constraints as diagrams, each with its prose equivalent. Add a bibliography
-  and an index. Publish a plain-language summary edition, since the constitution
-  asks plain language of public bodies.
-
-  **Done when:** rebuilt HTML, EPUB and PDF pass the renderer tests, EPUBCheck
-  and inspection, with no web artefact in print.
 
 ### Completion
 

@@ -17,8 +17,8 @@ Selin food, shelter, care, learning, bodily safety, material security,
 expression, belief and company. Free movement follows as well.
 
 The ballot needs both entries. Presence gives personhood and the floor; the
-adulthood evidence adds the basic ballot entitlement. *The Vote Conviction
-Does Not Take* sets out what the full franchise adds to it.
+adulthood evidence adds the basic ballot entitlement. *The Vote Conviction Does
+Not Take* (Chapter 18) sets out what the full franchise adds to it.
 
 All of this holds before the record says anything about work, a home, a
 clinic, a child, a vote, a dispute or a stop. Those are the week's business,
@@ -50,11 +50,11 @@ and the ballot were concluded before the employer appeared in the record.
 ## A rented home
 
 The tenancy is outside the record. Selin is protected against the suppression
-of a lawful form of tenure, against treating the housing floor as a question
-of ownership, and against an eviction that threatens the floor without a route
-that keeps housing continuous. *What Money Cannot Buy* follows what such an
-eviction must meet. Shelter was owed to Selin from the first entry, whatever
-the tenancy says.
+of a lawful form of tenure, against treating the housing floor as a question of
+ownership, and against an eviction that threatens the floor without a route
+that keeps housing continuous. *What Money Cannot Buy* (Chapter 10) follows
+what such an eviction must meet. Shelter was owed to Selin from the first
+entry, whatever the tenancy says.
 
 ## The clinic
 
@@ -107,8 +107,8 @@ review of the request.
 
 The rule reads the request, the person who made it and the office's authority
 to receive it. The landlord's agreement is outside the rule, and the landlord
-is absent from every entry. What review leads to is the subject of *A Way to
-Be Heard*.
+is absent from every entry. What review leads to is the subject of *A Way to Be
+Heard* (Chapter 21).
 
 ## A police stop
 
@@ -127,7 +127,7 @@ authorising body, a review and an end.
 
 Under this record the search order stays incomplete, Selin's privacy stays
 unrestricted and Selin keeps free movement. Nothing here approaches custody.
-*The One Thing Taken* follows what a search requires.
+*The One Thing Taken* (Chapter 27) follows what a search requires.
 
 A pattern seen across a group decides nothing about Selin either: Selin is
 protected against a diagnostic pattern being turned into a verdict about an

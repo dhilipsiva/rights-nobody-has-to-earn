@@ -2,6 +2,8 @@
 
 # The Rights Nobody Has to Earn
 
+*A worked design for a society, with its formal claims made executable.*
+
 **Book proposal · dhilipsiva · political nonfiction / constitutional design**
 
 **Approximately 58,000 words · complete, internally reviewed manuscript**

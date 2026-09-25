@@ -106,9 +106,9 @@ filing decides nothing about the merits.
 A rule that made every confinement produce a final bar against its own case,
 so that custody defeated itself, is refused. The refusal concerns that rule's
 form, and a right to review and the separate suspension a filing brings both
-remain. The [method's appeal example](method.md#a-request-a-duty-and-relief)
-explains why a duty to hear, pending protection and final relief have different
-formal consequences.
+remain. The method's section [*A request, a duty and
+relief*](method.md#a-request-a-duty-and-relief) explains why a duty to hear,
+pending protection and final relief have different formal consequences.
 
 ## Who bears the cost
 

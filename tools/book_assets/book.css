@@ -19,6 +19,9 @@ a:focus-visible, [tabindex]:focus-visible { outline: 3px solid #a84816; outline-
 .skip-link:focus { left: 1rem; top: 1rem; background: white; padding: .7rem; z-index: 2; }
 .cover { margin: 3rem 0 5rem; }
 .cover h1 { font-size: 2.4rem; max-width: 15em; }
+.subtitle { font-size: 1.25rem; font-style: italic; max-width: 26em; }
+.back-cover { margin-top: 5rem; padding-top: 2rem; border-top: 1px solid #999; }
+.back-cover .promise { font-size: 1.2rem; font-style: italic; }
 .edition-status, .part-label { font-family: "DejaVu Sans", sans-serif; }
 .edition-status { font-size: .95rem; }
 .licence { font-size: .88rem; }
@@ -52,6 +55,8 @@ th { background: #f1f1f1; font-weight: bold; }
 .footnote-ref { line-height: 0; }
 .footnote-backref { padding: .1rem .3rem; }
 .sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); }
+img.diagram { display: block; max-width: 100%; height: auto; margin: 1.2rem auto; }
+.print-only { display: none; }
 @media (max-width: 480px) {
   body { padding: 1rem; font-size: 1rem; }
   h1 { font-size: 1.65rem; }
@@ -62,6 +67,7 @@ th { background: #f1f1f1; font-weight: bold; }
   @page { size: A4; margin: 19mm 18mm 21mm; }
   body { max-width: none; padding: 0; font-size: 11pt; line-height: 1.48; }
   .cover { break-after: page; margin: 35mm 0 0; }
+  .back-cover { break-before: page; border-top: none; margin-top: 60mm; }
   .book-contents { break-after: page; margin-bottom: 0; }
   article { break-before: page; margin-top: 0; }
   h1 { font-size: 23pt; }
@@ -76,4 +82,7 @@ th { background: #f1f1f1; font-weight: bold; }
   a { color: inherit; }
   .skip-link, .sr-only { display: none; }
   .footnotes { font-size: 9.5pt; padding-right: 3pt; }
+  .footnote-backref { display: none; }
+  .print-only { display: inline; }
+  img.diagram { break-inside: avoid; max-height: 205mm; }
 }

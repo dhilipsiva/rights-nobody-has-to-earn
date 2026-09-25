@@ -61,8 +61,8 @@ Correcting a source leaves each individual judgment and remedy to its own
 process.
 
 Whether publication occurred and an institution adopted the replacement belongs
-to the second book. The
-[method](method.md#comparing-and-selecting-an-amendment) distinguishes the
+to the second book. The method's section [*Comparing and selecting an
+amendment*](method.md#comparing-and-selecting-an-amendment) distinguishes the
 formal evidence requirements from the separate comparison of exact text and
 version changes.
 

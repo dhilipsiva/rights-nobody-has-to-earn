@@ -14,11 +14,12 @@ design; it does not make every policy Nibli accepts defensible.
 
 The examples quote formal statements and the verdicts executable tests expect,
 wrapped for the page, with no machine-written explanation or proof transcript.
-The complete constitution is in the
-[repository](https://github.com/dhilipsiva/rights-nobody-has-to-earn). [The
-book's website](https://dhilipsiva.dev/rights-nobody-has-to-earn/) publishes
-the same constitution as numbered plain-language articles and runs selected
-records against it in the browser.
+The complete constitution is in the repository at
+[github.com/dhilipsiva/rights-nobody-has-to-earn](https://github.com/dhilipsiva/rights-nobody-has-to-earn).
+The book's website,
+[dhilipsiva.dev/rights-nobody-has-to-earn](https://dhilipsiva.dev/rights-nobody-has-to-earn/),
+publishes the same constitution as numbered plain-language articles and runs
+selected records against it in the browser.
 
 ## From a supplied fact to a consequence
 
@@ -323,9 +324,9 @@ assertion is different again: it never entered the knowledge base.
 | `UNKNOWN` | The search did not decide the query. |
 | `RESOURCE_EXCEEDED` | A resource bound stopped the search; the verifier counts that as a failure to complete. |
 
-The engine's [guarantees
-document](https://github.com/dhilipsiva/nibli/blob/main/GUARANTEES.md) states
-its inference contract.
+The engine's guarantees document,
+[`GUARANTEES.md` in the Nibli repository](https://github.com/dhilipsiva/nibli/blob/main/GUARANTEES.md),
+states its inference contract.
 
 ## What has been checked, and where each check stops
 
