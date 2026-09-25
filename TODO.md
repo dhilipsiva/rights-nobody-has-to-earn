@@ -270,3 +270,12 @@ submit to these presses in parallel:
 Start from the publisher-neutral proposal in `submission/README.md`, updated to
 the finished text, and adapt it to each press's current official submission
 requirements. No press is contacted before then.
+
+Prepared 2026-09-25, nothing sent: [`submission/presses.md`](submission/presses.md)
+records each press's current requirements with its sources. It drafts the
+synopsis, the description and the AI disclosure, and lists what only the author
+can supply. Four presses' own policies need the author's decision first:
+- Verso's opposition to generative AI;
+- UCL Press's AI policy and its charge;
+- punctum's window, open only from May to July;
+- Westminster's CC BY-NC-ND book licence.

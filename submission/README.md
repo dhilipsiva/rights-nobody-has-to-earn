@@ -248,7 +248,8 @@ edition, how contributors are credited, and what services and rights the
 agreement covers. No publisher's acceptance of open editing is assumed from
 its support for open access. Before adapting this proposal to a named press,
 check its current official requirements, including sample length, author
-information, rights and AI-disclosure policies. Contact, submission and any
+information, rights and AI-disclosure policies. The [press-by-press
+note](presses.md) records what seven presses asked for on 25 September 2026. Contact, submission and any
 contract are separate decisions; none has taken place through this package.
 
 This proposal is licensed under [CC BY 4.0](https://github.com/dhilipsiva/rights-nobody-has-to-earn/blob/be51db06/book-1/LICENSE-CC-BY).
