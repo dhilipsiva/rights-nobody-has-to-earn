@@ -20,7 +20,7 @@ judgment. Neither the prose nor agreement by an AI reviewer upgrades it to
 Derived, operationally established or independently validated. The prohibition
 on an aggregate assurance score and the distinctions between warrants stand.
 
-The exact approved text is retained in `book-1/31-the-five-joints.md`; the
+The exact approved text is retained in `book-1/29-the-five-joints.md`; the
 register and hypothetical passage are governed by the dated current ruling in
 `narrative-register-decision.md`. This presentation change adds no verification
 gate and reinstates none of the retired audit workflow.

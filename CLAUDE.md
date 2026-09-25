@@ -134,6 +134,76 @@ reinstate the retired tooling or workflow.
 Grouped by kind. Dates in each heading are the ratification dates; a ruling
 that was later implemented or narrowed carries that supersession inline.
 
+### Item 53 — the book restructured, and the channels for argument built, 2026-09-25
+
+Ruling D7 is implemented. Chapters 1 and 2 are now *The Child With Nobody*, 9
+and 10 *Work, Pay and Contribution*, and 23, 25 and 26 *Findings About People*,
+which joins Part IV beside the shield; Chapter 13 splits into *A Place in Which
+Life Remains Possible* (commons and future conditions) and *Creatures Without a
+Ballot* (animals); Chapter 3 is *What the Record May Say*, Chapter 16
+*Answerability and Authority*, and Part V *The argument*, as the plan's table
+names them. Chapter 7, *An Ordinary Week*, and Chapter 30, *Where This Could
+Fail*, are reserved as planned entries for items 55 and 59, and every Part
+carries a planned labelled opening case (ruling D3), named `part-N-<slug>.md`
+once it lands. The opening note keeps the question, the thesis, the paired
+tests, the general limits and how to read the book, about 1,200 words before
+Chapter 1; its map, choices table, annotated contents, glossary, roles and
+cases, subject index and diagrams moved to `book-1/reference.md`, *Map,
+Glossary and Index*, after the method.
+
+`tools/relocate.py` gained `merges` and `splits`. A destination is written by
+hand; the tool removes the retired sources, rewrites references, sends a
+`::needle` reference to a split source to the destination holding it, relabels
+chapter numbers outside footnote definitions (a footnote's "chapter 6" cites
+another book), keys the merged chapters' coverage records afresh in heading
+order, and `check` proves that the sources' pin statements at HEAD are exactly
+the destinations', that the pin counts agree, and lists every source paragraph
+no destination carries verbatim. It also now reaches the companion's data and
+tests. The findings pins run the pen strand, the limits strand and then the
+paired finding, whose unscoped acceptance closes the file as ruling D7
+required. The merged and split chapters pass 177, 90, 90, 38 and 3 pins, the
+findings file also under the no-dead-conjuncts variant (focused, partial).
+The map is `tools/maps/2026-09-25-restructure.json`; the submission proposal's
+links now name `93fa5662`, the manuscript it describes.
+
+The channels rulings D2 and D3 open are built, though no chapter carries an
+argument section yet. A derived chapter's argument section is headed
+`## Argument: <title>`, one at most and last (`contents::split_argument`). The
+digit rule reads only the derived text; Part V's figure bindings search Part V
+and every argument section; a coverage passage takes the `argument` pattern and
+the exempt-element basis exactly when it is argued text
+(`argued_and_derived_passages_are_classified_apart`, sabotage-tested both
+ways); the prose measurement holds derived text to the chapter thresholds and
+measures an argument section apart as `path#argument`; and
+`the_book_stays_majority_derived_by_section` compares derived text with
+everything argued or exempt. `part_v()` returns Part V's chapters. The book
+builder skips reserved entries, renders a landed opener at the head of its
+Part, and assembles the sample as Chapters 1, 4, 8, 21 and 29. The companion's
+case map, game data, questions, counts and tests follow the new numbers; its
+two snapshots from the merged findings file take the added occurrence offset.
+
+The child section stands in Chapters 2, 4, 5, 14, 18, 21, 25 and 28, with
+nineteen exemptions. The coverage ledger holds 225 passages, the merged
+chapters' seams re-keyed and three new records for the animal chapter; one
+full-society ledger needle follows a relabelled chapter number. The prose lint
+admits the restructured inputs, the opening included, at their measured
+figures. The development check for the book builder had been failing since item
+48 on a method link to a directory; the link now names a file. The rule count is
+unchanged at 7,583, as is every constitutional rule. All 145 authoring
+development tests pass, with five declared ignored, as do the runner's 32 with
+three declared ignored, the sixteen prose-lint and nine book-builder unit tests
+and the prose check. The
+companion's six input tests pass, and its engine comparison matches every
+recorded expectation across its 78 records in 1,435.74s. The HTML, EPUB and
+PDF copies rebuild (183 and 43 pages), with no horizontal overflow at 360px or
+1,280px on the inspected pages; EPUBCheck was not available to run. A first
+attempt ran the verifier, the development tests and the comparison at once and
+the system stopped all three for low memory; each was then run alone.
+`RIGHTS_VERIFY_JOBS=4 ./verify.sh` passes 90,084 pins across 16,351 cases with
+complete contradiction checks and no findings in 1,205.46s; the 75 added pins
+are the no-dead-conjuncts counterfactual now running the whole merged findings
+file.
+
 ### Item 52 — the general limits stated once, 2026-09-25
 
 The opening now states four limits that hold on every page, and the chapters
@@ -1233,6 +1303,9 @@ This supersedes the reading-order decision's refusal to merge Voiding with
 Clawback: its mechanical reason, the unscoped `:accept` closing chapter 25's
 pins, is met by ordering the merged pins so that it comes last. Item 53
 implements it, with the manifest, relocation and test changes it needs.
+**Implemented 2026-09-25 (item 53):** the manifest carries the table, with
+Chapters 7 and 30 and every Part's opening case reserved, and the reference
+material is `book-1/reference.md`.
 
 **D8 — nine floor items.** `secure` splits into bodily safety, a protection
 guarantee with no receipt route, and material security, essential goods keeping
@@ -1936,7 +2009,7 @@ supplements, exact-basis correction, restitution, floors and restoration.
 Chapter 29 retains the now-accepted raw-release rule as a control; the actual
 custody-bar rule still refuses. This dependency change is reflected in prose.
 Chapters 10 and 26 are rewritten; 26 is titled *The Limits of a Finding* while
-its stable file path remains `26-clawback.md`. Related reader references and
+its stable file path remains `24-findings-about-people.md`. Related reader references and
 existing coverage owners are updated. Part V gives the comparative argument
 and states the cost of review that never happens. The chapter 26 child exemption
 now rests on Cira’s separate claim beside chapter 25’s Nell case; its membership
@@ -4638,7 +4711,7 @@ record: `book-1/appendix/decisions/reading-order-and-appendix-decision.md`.
 rulings D1–D9*):** Chapters 1 and 2, 9 and 10, and 23, 25 and 26 merge; Chapter
 13 splits; two chapters are added; and the reference material moves to the back.
 The refusal to merge Voiding with Clawback is superseded. The ordering rule
-stands.
+stands. **Implemented 2026-09-25 (item 53)**, with Chapters 7 and 30 reserved.
 
 **R4 — The appendix is a carried archive, not a fourth channel.** *(Landed
 2026-09-17 with the move; confirmed by measurement 2026-09-18 — the
@@ -5202,7 +5275,7 @@ evidence, a credible alternative, the cost and a reasoned conclusion. Detailed
 constitutional inventories return to the derived chapters that own them. The
 current chapter describes no superseded design or repair sequence and makes
 no inference from AI agreement, human endorsement or invented reader testimony.
-The exact text is retained in `book-1/31-the-five-joints.md` as
+The exact text is retained in `book-1/29-the-five-joints.md` as
 `session-drafted, author-approved under delegated approval (2026-09-13)`.
 The same approval covers the method's short opening bridge, which is adjusted
 to match Part V's actual closing promise; the full method rewrite is recorded
@@ -6363,7 +6436,7 @@ not every sentence of prose or the truth of outside evidence.
   later rule taking `~P` into that cone is an unstratifiable negative cycle and is
   refused. The floor is protected **because** it is reachable — at stratum 0 there would
   be no cycle to close and no protection at all. Where it stops is pinned in
-  `04-what-you-are-owed.pins.nibli`: `~P -> false`, `~P -> lose(Points, ·)` and positive
+  `03-what-you-are-owed.pins.nibli`: `~P -> false`, `~P -> lose(Points, ·)` and positive
   compulsion `prisoner -> P` all still load — each under `:accept-scoped`, so the control
   proves loadability without leaving the forbidden shape resident. It blocks punishment for
   ABSENCE, never manufacture, and it reaches `prisoner` only. Upstream the asymmetry is
@@ -6498,7 +6571,7 @@ deceit adjudication and `broken(Court).` is a universal amnesty. The rule is a h
 - **"The Furnished Prison" — a rejected title that is a good part title.** Scored highest
   of the twenty title candidates on pick-up and lowest on legibility, so it lost the cover
   and is wasted sitting in git. It is the sentence that closes chapter 13's delivery-gap
-  passage (`29-the-one-thing-taken.md`) — *"A society whose only working provision runs
+  passage (`27-the-one-thing-taken.md`) — *"A society whose only working provision runs
   through its prisons has not built a floor; it has built a prison that happens to be
   furnished."* Primary candidate since the reach ruling
   (2026-08-02): the launch-essay headline; the Part-title and back-cover uses stay
@@ -6542,26 +6615,32 @@ The repo is deliberately **mixed-licence** — see `LICENSING.md` before adding 
   forty-seven files arrived with the 2026-09-17 move; the two 2026-09-16
   controlling records sit among them. Non-derived, outside the reading order and the
   length measurement, never the sole support for a chapter's claim.
-- `book-1/contents.json` — the chapter manifest: front matter, parts, every
-  chapter with its number, file, title, role (derived/exempt), group
-  (engine/break) and status (landed/planned), and — once the tree follows it —
-  the ordering rule. `src/authoring/contents.rs` reads it; the digit gate, the
+- `book-1/contents.json` — the chapter manifest: front matter, parts, each
+  Part's opening case (ruling D3; planned until written), every chapter with its
+  number, file, title, role (derived/exempt), group (engine/break) and status
+  (landed/planned), the back matter (`method.md`, then `reference.md`, the map,
+  glossary and index), and the ordering rule. The exempt chapters form the last
+  Part, Part V. `src/authoring/contents.rs` reads it; the digit gate, the
   coverage ledger, the receipts and the spine's generated reading-order block
   all take the chapter list from it, and `reference_integrity_tests` prove it
   matches the directory (prefix == position, pins paired, one live case per
-  derived chapter), that the opening note's contents follow it, that every
-  relative link resolves, and that every reviewed `path::needle` reference
-  resolves exactly once against a dated baseline.
+  derived chapter), that the annotated contents in `reference.md` follow it,
+  that every relative link resolves, and that every reviewed `path::needle`
+  reference resolves exactly once against a dated baseline.
+  `contents::split_argument` finds a derived chapter's one closing
+  `## Argument:` section (ruling D2), which every derived-text check skips.
 - `tools/prose_lint.py` — the prose measurement (item 34): negation, terms of
   art, case names, disclaimers, banned terms and harness names per ordered
   input, held to the plan's thresholds or to `tools/prose_lint_baseline.json`,
   whichever is looser. `--check`, `--ratchet`, `--admit`. A development check,
   not a verification gate.
-- `tools/relocate.py` — `plan`, `apply`, `check`: derives a rename map from the
-  manifest against the directory, git-moves the files, rewrites every reference
-  (path stems longest-first, guarded basenames, chapter labels in one
-  simultaneous pass, reader-coverage ids and order), and proves afterwards that
-  no old reference survives and that the never-touched set is byte-identical.
+- `tools/relocate.py` — `plan`, `apply`, `check`, `resort`: derives a rename map
+  from the manifest against the directory, git-moves the files, rewrites every
+  reference (path stems longest-first, guarded basenames, chapter labels in one
+  simultaneous pass outside footnotes, reader-coverage ids and order), and
+  proves afterwards that no old reference survives and that the never-touched
+  set is byte-identical. Since item 53 a map may also `merge` and `split`
+  chapters written by hand, with every pin statement accounted for.
   Applied maps live in `tools/maps/` and are the key between pre- and
   post-reorder chapter numbers.
 - `book-1/source/` — the formal source and everything beside it, moved here by
@@ -6619,7 +6698,7 @@ Note the manifesto's heading convention differs deliberately from the book's: it
 
 - **The current formal floor is nine rights**, spelled `entitled(every person, event { P() })`, and its protection is a **compile-time prohibition**: a rule punishing someone for lacking a floor right is refused by the stratifier. The floor is protected *because* it is reachable — it sits inside the `prisoner` cone. This is the verified kernel, not the final social taxonomy under the 2026-08-03 mandate; any expansion still needs a completed map contract and formal proof. Do not restate the older claim that "nothing derives it, so nothing can retract it"; that had the mechanism backwards. **Nine items since 2026-09-24 (D8 of *The revision rulings D1–D9*, item 44):** `secure` is bodily safety, guaranteed as protection with no receipt route, and `suffice` is material security, carrying the receipt route; each has its entitlement, debt and refusal pinned.
 - **The current formal duty-bearer is a thin constitutional layer** — an agent with real taxing and inter-community equalisation power, carefully limited. Mutual covenants was rejected because the constitution has no membership concept and covenants would gate the floor on one; naming-the-gap was rejected as evasion of a solved question. The book concedes coercion plainly and states its social-democratic ends outright — the novelty is the constraint mechanism, not the absence of a provider. Under the 2026-08-03 mandate, this is not the final public-branch or remedy architecture. **Tiers allocated 2026-09-24 (item 36):** the State remains the bearer of the unconditional debt, while the common tier, regions and localities carry its finance, backstop, provision and delivery duties, and a certified failure passes continuity up a tier.
-- **The title is *The Rights Nobody Has to Earn*, subtitled *A design for a society worked out to the point where it catches its own failures*.** Not "utopia" — the word invites the naive-utopianism dismissal and belongs to the legacy book. **The title is chosen for legibility to a stranger, and that outranks elegance.** Two predecessors are dead and neither should be revived. *"Eight things every person is owed, and why no law can take them away"* carried two overclaims: "no law can take them away" is verified false — the refusal covers **imprisonment** and stops there, and a law voiding your credibility or docking your recognition for lacking a floor right loads fine (`04-what-you-are-owed.pins.nibli:52-57`) — and a count on a cover is the most permanent counted claim the project could make, in the one place it can never be revised chapter by chapter; the floor has already been six, then ten, then eight. *"Nothing Has to Happen First"* was accurate, survived every constraint, and failed the only test nobody had run: a stranger reads it and cannot tell what the book is about. **Test any future candidate on a reader who knows nothing, before testing it on the constraints.** Two things in the current wording are load-bearing and must not be tidied: **"nobody"**, because the universality is the thesis (`08:94`) — the same reason the dead subtitle needed "every person" rather than "you"; and **"catches its own failures"**, because "rights" is a settled noun that implies these things hold in practice and the book's second half is that they mostly do not. Drop that clause and the title overclaims. Do not restore *"and where the protection stops"* alongside "rights" — it says what "rights" already says. **Subtitle superseded 2026-09-24 (D1 of *The revision rulings D1–D9*):** it becomes *A worked design for a society, with its formal claims made executable.* The author chose it knowing this entry's warning about the dropped clause. The title and the test on a stranger stand.
+- **The title is *The Rights Nobody Has to Earn*, subtitled *A design for a society worked out to the point where it catches its own failures*.** Not "utopia" — the word invites the naive-utopianism dismissal and belongs to the legacy book. **The title is chosen for legibility to a stranger, and that outranks elegance.** Two predecessors are dead and neither should be revived. *"Eight things every person is owed, and why no law can take them away"* carried two overclaims: "no law can take them away" is verified false — the refusal covers **imprisonment** and stops there, and a law voiding your credibility or docking your recognition for lacking a floor right loads fine (`03-what-you-are-owed.pins.nibli:52-57`) — and a count on a cover is the most permanent counted claim the project could make, in the one place it can never be revised chapter by chapter; the floor has already been six, then ten, then eight. *"Nothing Has to Happen First"* was accurate, survived every constraint, and failed the only test nobody had run: a stranger reads it and cannot tell what the book is about. **Test any future candidate on a reader who knows nothing, before testing it on the constraints.** Two things in the current wording are load-bearing and must not be tidied: **"nobody"**, because the universality is the thesis (`08:94`) — the same reason the dead subtitle needed "every person" rather than "you"; and **"catches its own failures"**, because "rights" is a settled noun that implies these things hold in practice and the book's second half is that they mostly do not. Drop that clause and the title overclaims. Do not restore *"and where the protection stops"* alongside "rights" — it says what "rights" already says. **Subtitle superseded 2026-09-24 (D1 of *The revision rulings D1–D9*):** it becomes *A worked design for a society, with its formal claims made executable.* The author chose it knowing this entry's warning about the dropped clause. The title and the test on a stranger stand.
 - **"Standing" is reserved for universal personhood; the office sense is "public
   answerability"** — renamed book-wide 2026-08-18 (`13d0a7e`). The state-form and
   family/life-course rulings reserve the word, and the bodies specification already
@@ -6630,7 +6709,7 @@ Note the manifesto's heading convention differs deliberately from the book's: it
   `authority` carries the office sense and the `Standing*` constants feeding `person`
   carry universal personhood — so no pin query depends on the word and the suite moved
   by two comments and a filename. `book-1/02-standing.md` and its pin file are now
-  `16-public-answerability.*`, and the path is hard-coded in
+  `16-answerability-and-authority.*`, and the path is hard-coded in
   `9-record-integrity-red-team.py`'s `REQUIRED_NARROWNESS_FILES`, one reviewed
   `artifact_ref`, two ledger path lists, eight opening-note links, and `3-spine.md`'s
   hand-authored chapter list, **which no generator covers**. **Three senses are held
@@ -6645,7 +6724,7 @@ Note the manifesto's heading convention differs deliberately from the book's: it
   reserved; the opening note's glossary carries an entry for each sense; and the
   personhood and adjectival uses elsewhere are deliberately untouched.
 
-- **Recognition is a bare fact and is never ranked** — not by writing a mark, not by counting entries. Decided 2026-07-30 against the proposal that verified learning mint grades for the student and outcome-conditioned perks for the teacher; all three halves are refused. **(a) Students earn nothing for being taught.** Being taught is not a contribution, the doors in `10-contribution.md:3-8` are the doors, and the constitution is **not** edited to add a student minting rule — that would commit the design to paying a child (Cira is `person` without `mature`, which is the whole of `09:43-51`). **(b) Counted degree on the reward side is refused, not merely unbuilt.** Degree needs no arithmetic here, only the same relation twice with the objects held apart — the idiom the severity rules use at `constitution.nibli:452-453` — and the cast already supplies the mirror, since Cira has two teachers. **(c) Article 3 stays unconditional**: a teacher's recognition does not depend on whether the student learned, the same shape as the auditor rule that pays for the examination and not the outcome (`10:85-87`). **State the disanalogy, never "there is no score here"** — that is verified false and its source sentence was deleted in `c0bede6`. Chapter 1 concedes a computed rating already — the paragraph opening *“Even that concedes something, and it should be said out loud rather than found later”*: severity rates an **act**, is reached through a process the accused was part of, and ends with the sentence; a grade rates a **person's capability**, with nothing adjudicated and no end. That concession is an exception the design paid for once, not a precedent. Enforced, not merely recorded — `floor_vector_tests::recognition_is_minted_never_read_and_never_counted` checks that nothing reads `reward`, that no rule joins `teaches` or `work` with itself, and that `reward` stays arity one and is still minted; all negative-controlled against the actual source. It replaces `verify.sh` sections 4, 4a and 4b, retired with the old script on 2026-09-12, and is a development test rather than a verification gate. Neither is a proof: a new name for a learning record (`studies` is in the corpus, unused) routes around both, and is caught by the evidence-count gate instead, which is the only reason the pair is sufficient. **This does not block the delivery route**: teaching that delivers `learn` is a floor actuality, not recognition. Delivering learning is not grading the learner.
+- **Recognition is a bare fact and is never ranked** — not by writing a mark, not by counting entries. Decided 2026-07-30 against the proposal that verified learning mint grades for the student and outcome-conditioned perks for the teacher; all three halves are refused. **(a) Students earn nothing for being taught.** Being taught is not a contribution, the doors in `09-work-pay-and-contribution.md:3-8` are the doors, and the constitution is **not** edited to add a student minting rule — that would commit the design to paying a child (Cira is `person` without `mature`, which is the whole of `09:43-51`). **(b) Counted degree on the reward side is refused, not merely unbuilt.** Degree needs no arithmetic here, only the same relation twice with the objects held apart — the idiom the severity rules use at `constitution.nibli:452-453` — and the cast already supplies the mirror, since Cira has two teachers. **(c) Article 3 stays unconditional**: a teacher's recognition does not depend on whether the student learned, the same shape as the auditor rule that pays for the examination and not the outcome (`10:85-87`). **State the disanalogy, never "there is no score here"** — that is verified false and its source sentence was deleted in `c0bede6`. Chapter 1 concedes a computed rating already — the paragraph opening *“Even that concedes something, and it should be said out loud rather than found later”*: severity rates an **act**, is reached through a process the accused was part of, and ends with the sentence; a grade rates a **person's capability**, with nothing adjudicated and no end. That concession is an exception the design paid for once, not a precedent. Enforced, not merely recorded — `floor_vector_tests::recognition_is_minted_never_read_and_never_counted` checks that nothing reads `reward`, that no rule joins `teaches` or `work` with itself, and that `reward` stays arity one and is still minted; all negative-controlled against the actual source. It replaces `verify.sh` sections 4, 4a and 4b, retired with the old script on 2026-09-12, and is a development test rather than a verification gate. Neither is a proof: a new name for a learning record (`studies` is in the corpus, unused) routes around both, and is caught by the evidence-count gate instead, which is the only reason the pair is sufficient. **This does not block the delivery route**: teaching that delivers `learn` is a floor actuality, not recognition. Delivering learning is not grading the learner.
 - **`person` is on chapter 1's evidence list**, decided 2026-07-30 and extended
   by T1 on 2026-08-05. The list had claimed to be everything the record can hold
   while omitting the entry every floor claim hangs from. “Roster membership is
@@ -6733,7 +6812,7 @@ Note the manifesto's heading convention differs deliberately from the book's: it
   and `06:81-85` says whoever writes the narrower rule "will find they have written a repeal".
   **Enforced by the recognition guard's minting count, because nothing else can see it arrive.** Three TRUE pins
   (`reward(Esa/Quin/Gia)`) catch a *rewrite* of the heads, but **five** other `reward` pins go
-  vacuous in that same edit — three more in chapter 10 plus `reward(Cira)` in `26-clawback` and
+  vacuous in that same edit — three more in chapter 10 plus `reward(Cira)` in `24-findings-about-people` and
   `reward(Dev)` in `rights-floor` — because `reward/1` stops existing and a FALSE pin against a
   vanished relation still reads FALSE. Worse, the **additive** shape is invisible to everything:
   a fourth head at arity 2 added *beside* the three leaves `reward/1` deriving, so the absence

@@ -36,13 +36,13 @@
       "id": "Marisol",
       "name": "Marisol",
       "role": "fed, but never written in",
-      "chapter": 5
+      "chapter": 4
     },
     {
       "id": "Zed",
       "name": "Zed",
       "role": "convicted; injured Ivo",
-      "chapter": 27
+      "chapter": 25
     },
     {
       "id": "Newcomer",
@@ -60,13 +60,13 @@
       "id": "Bela",
       "name": "Bela",
       "role": "credibility voided by two seats",
-      "chapter": 25
+      "chapter": 24
     },
     {
       "id": "Lior",
       "name": "Lior",
       "role": "exposed the Court",
-      "chapter": 24
+      "chapter": 23
     },
     {
       "id": "Cira",
@@ -78,7 +78,7 @@
       "id": "Dara",
       "name": "Dara",
       "role": "lied once; exposed twice",
-      "chapter": 24
+      "chapter": 23
     },
     {
       "id": "Adam",
@@ -90,13 +90,13 @@
       "id": "Nia",
       "name": "Nia",
       "role": "judged, then cleared",
-      "chapter": 23
+      "chapter": 24
     },
     {
       "id": "Jala",
       "name": "Jala",
       "role": "injured Ivo; never judged",
-      "chapter": 29
+      "chapter": 27
     }
   ],
   "scenarios": [
@@ -105,10 +105,10 @@
       "lens": "break",
       "office": "provender",
       "person": "Marisol",
-      "chapter": 5,
+      "chapter": 4,
       "title": "Feed Marisol yourself. Write nothing else.",
       "role": "you are Provender, the kitchen",
-      "source": "book-1/05-whether-it-arrived.pins.nibli",
+      "source": "book-1/04-whether-it-arrived.pins.nibli",
       "steps": [
         {
           "id": "silence:0",
@@ -157,10 +157,10 @@
       "lens": "break",
       "office": "court",
       "person": "Zed",
-      "chapter": 27,
+      "chapter": 25,
       "title": "Convict Zed. Then take the floor.",
       "role": "you are the Court",
-      "source": "book-1/27-a-prisoner-is-a-person.pins.nibli",
+      "source": "book-1/25-a-prisoner-is-a-person.pins.nibli",
       "steps": [
         {
           "id": "conviction:0",
@@ -225,10 +225,10 @@
       "lens": "break",
       "office": "court",
       "person": "Lior",
-      "chapter": 24,
+      "chapter": 23,
       "title": "Jail the one who exposed you.",
       "role": "you are the Court — and Lior just exposed you",
-      "source": "book-1/24-the-shield.pins.nibli",
+      "source": "book-1/23-the-shield.pins.nibli",
       "steps": [
         {
           "id": "shield:0",
@@ -317,10 +317,10 @@
       "lens": "break",
       "office": "review",
       "person": "Bela",
-      "chapter": 25,
+      "chapter": 24,
       "title": "Void Bela with one signature.",
       "role": "you are Koa, one examiner",
-      "source": "book-1/25-voiding.pins.nibli",
+      "source": "book-1/24-findings-about-people.pins.nibli",
       "steps": [
         {
           "id": "void:0",
@@ -582,10 +582,10 @@
       "lens": "live",
       "office": "court",
       "person": "Zed",
-      "chapter": 27,
+      "chapter": 25,
       "title": "Ask what ending custody requires.",
       "role": "you are Zed",
-      "source": "book-1/27-a-prisoner-is-a-person.pins.nibli",
+      "source": "book-1/25-a-prisoner-is-a-person.pins.nibli",
       "steps": [
         {
           "id": "release:0",
@@ -709,10 +709,10 @@
       "lens": "run",
       "office": "executive",
       "person": "Newcomer",
-      "chapter": 6,
+      "chapter": 5,
       "title": "One unit. Two claims.",
       "role": "you are the scarcity manager",
-      "source": "book-1/06-when-there-is-genuinely-not-enough.pins.nibli",
+      "source": "book-1/05-when-there-is-genuinely-not-enough.pins.nibli",
       "steps": [
         {
           "id": "scarcity:0",
@@ -946,10 +946,10 @@
       "lens": "break",
       "office": "court",
       "person": "Nell",
-      "chapter": 28,
+      "chapter": 26,
       "title": "House the child through custody.",
       "role": "you run placements",
-      "source": "book-1/28-where-people-are-put.pins.nibli",
+      "source": "book-1/26-where-people-are-put.pins.nibli",
       "steps": [
         {
           "id": "nell-placement:0",
@@ -1008,10 +1008,10 @@
       "lens": "live",
       "office": "ledgerwitness",
       "person": "Marisol",
-      "chapter": 5,
+      "chapter": 4,
       "title": "Somebody is allowed to watch.",
       "role": "you are Marisol; the kitchen filed a receipt",
-      "source": "book-1/05-whether-it-arrived.pins.nibli",
+      "source": "book-1/04-whether-it-arrived.pins.nibli",
       "steps": [
         {
           "id": "marisol-witness:0",
@@ -1060,10 +1060,10 @@
       "lens": "run",
       "office": "court",
       "person": "Hano",
-      "chapter": 28,
+      "chapter": 26,
       "title": "Place the prisoner.",
       "role": "you run placements",
-      "source": "book-1/28-where-people-are-put.pins.nibli",
+      "source": "book-1/26-where-people-are-put.pins.nibli",
       "steps": [
         {
           "id": "hano-placement:0",
@@ -1127,10 +1127,10 @@
       "lens": "live",
       "office": "court",
       "person": "Hano",
-      "chapter": 29,
+      "chapter": 27,
       "title": "Somebody records that it is over.",
       "role": "you are Hano",
-      "source": "book-1/29-the-one-thing-taken.pins.nibli",
+      "source": "book-1/27-the-one-thing-taken.pins.nibli",
       "steps": [
         {
           "id": "hano-release:0",
@@ -1194,10 +1194,10 @@
       "lens": "live",
       "office": "provender",
       "person": "Bela",
-      "chapter": 26,
+      "chapter": 24,
       "title": "Voided. Take the job anyway.",
       "role": "you are Bela",
-      "source": "book-1/26-clawback.pins.nibli",
+      "source": "book-1/24-findings-about-people.pins.nibli",
       "steps": [
         {
           "id": "bela-work:0",
@@ -1263,10 +1263,10 @@
       "lens": "run",
       "office": "assembly",
       "person": "Bela",
-      "chapter": 23,
+      "chapter": 24,
       "title": "Seat the examiners.",
       "role": "you are the Electorate",
-      "source": "book-1/23-who-holds-the-pen.pins.nibli",
+      "source": "book-1/24-findings-about-people.pins.nibli",
       "steps": [
         {
           "id": "pen:0",
@@ -1384,10 +1384,10 @@
       "lens": "break",
       "office": "review",
       "person": "Cira",
-      "chapter": 26,
+      "chapter": 24,
       "title": "Bela taught Cira. Take Cira’s credentials.",
       "role": "you sit on the Review",
-      "source": "book-1/26-clawback.pins.nibli",
+      "source": "book-1/24-findings-about-people.pins.nibli",
       "steps": [
         {
           "id": "cira-clawback:0",
@@ -1457,10 +1457,10 @@
       "lens": "break",
       "office": "court",
       "person": "Dara",
-      "chapter": 24,
+      "chapter": 23,
       "title": "Dara lied once. Jail Dara for the second exposure.",
       "role": "you are the Court",
-      "source": "book-1/24-the-shield.pins.nibli",
+      "source": "book-1/23-the-shield.pins.nibli",
       "steps": [
         {
           "id": "rex:0",
@@ -1553,7 +1553,7 @@
       "chapter": 9,
       "title": "Make Adam work off the sentence.",
       "role": "you run the supported residence",
-      "source": "book-1/09-earning-above-the-floor.pins.nibli",
+      "source": "book-1/09-work-pay-and-contribution.pins.nibli",
       "steps": [
         {
           "id": "adam:0",
@@ -1627,10 +1627,10 @@
       "lens": "run",
       "office": "court",
       "person": "Nia",
-      "chapter": 23,
+      "chapter": 24,
       "title": "Clear the convicted.",
       "role": "you sit on Appeals",
-      "source": "book-1/23-who-holds-the-pen.pins.nibli",
+      "source": "book-1/24-findings-about-people.pins.nibli",
       "steps": [
         {
           "id": "nia:0",
@@ -1681,10 +1681,10 @@
       "lens": "break",
       "office": "court",
       "person": "Jala",
-      "chapter": 29,
+      "chapter": 27,
       "title": "Hold Jala without a judgment.",
       "role": "you run placements",
-      "source": "book-1/29-the-one-thing-taken.pins.nibli",
+      "source": "book-1/27-the-one-thing-taken.pins.nibli",
       "steps": [
         {
           "id": "jala:0",
@@ -1726,10 +1726,10 @@
       "lens": "break",
       "office": "court",
       "person": "Lior",
-      "chapter": 24,
+      "chapter": 23,
       "title": "Certify your own case as unrelated.",
       "role": "you are the Court — the body Lior exposed",
-      "source": "book-1/24-the-shield.pins.nibli",
+      "source": "book-1/23-the-shield.pins.nibli",
       "steps": [
         {
           "id": "sly-selfcert:0",
@@ -1772,10 +1772,10 @@
       "lens": "break",
       "office": "court",
       "person": "Dara",
-      "chapter": 24,
+      "chapter": 23,
       "title": "Expose every body that decides your case.",
       "role": "you are Dara, gaming the shield",
-      "source": "book-1/24-the-shield.pins.nibli",
+      "source": "book-1/23-the-shield.pins.nibli",
       "steps": [
         {
           "id": "rex-veto:0",
@@ -1808,7 +1808,7 @@
       "chapter": 9,
       "title": "Earn above the floor.",
       "role": "you are Adam",
-      "source": "book-1/09-earning-above-the-floor.pins.nibli",
+      "source": "book-1/09-work-pay-and-contribution.pins.nibli",
       "steps": [
         {
           "id": "adam-earn:0",
@@ -1871,10 +1871,10 @@
       "lens": "live",
       "office": "court",
       "person": "Nia",
-      "chapter": 23,
+      "chapter": 24,
       "title": "Cleared. Ask what the record still says.",
       "role": "you are Nia",
-      "source": "book-1/23-who-holds-the-pen.pins.nibli",
+      "source": "book-1/24-findings-about-people.pins.nibli",
       "steps": [
         {
           "id": "nia-free:0",
@@ -1916,10 +1916,10 @@
       "lens": "live",
       "office": "registry",
       "person": "Jala",
-      "chapter": 29,
+      "chapter": 27,
       "title": "Free and unjudged. Ask for the floor.",
       "role": "you are Jala",
-      "source": "book-1/29-the-one-thing-taken.pins.nibli",
+      "source": "book-1/27-the-one-thing-taken.pins.nibli",
       "steps": [
         {
           "id": "jala-floor:0",
@@ -1961,10 +1961,10 @@
       "lens": "run",
       "office": "registry",
       "person": "Zed",
-      "chapter": 27,
+      "chapter": 25,
       "title": "Compare the prisoner and the child.",
       "role": "you keep the record",
-      "source": "book-1/27-a-prisoner-is-a-person.pins.nibli",
+      "source": "book-1/25-a-prisoner-is-a-person.pins.nibli",
       "steps": [
         {
           "id": "zed-compare:0",
@@ -2262,7 +2262,7 @@
       "title": "Residence, not the floor, carries the vote",
       "offLabel": "The floor carries a ballot too",
       "measured": false,
-      "source": "book-1/31-the-five-joints.md",
+      "source": "book-1/29-the-five-joints.md",
       "cost": {
         "title": "Part V · Residence and political membership",
         "text": "The boundary still costs a former resident who has voluntarily established a life elsewhere, and a newcomer before residence."
@@ -2296,7 +2296,7 @@
       "title": "Government is a collective body, not one office",
       "offLabel": "One identifiable head of government",
       "measured": false,
-      "source": "book-1/31-the-five-joints.md",
+      "source": "book-1/29-the-five-joints.md",
       "cost": {
         "title": "Part V · Collective government and identifiable responsibility",
         "text": "The cost reaches the person waiting while members bargain, and keeps an unpopular government in office while opponents cannot agree on a successor."
@@ -2311,7 +2311,7 @@
       "title": "Release needs a qualified case disposition",
       "offLabel": "Compare automatic expiry as an authored alternative",
       "measured": false,
-      "source": "book-1/29-the-one-thing-taken.md",
+      "source": "book-1/27-the-one-thing-taken.md",
       "cost": {
         "title": "Chapter 29 · What leaving changes",
         "text": "The design requires lawful release review and continuity. A qualified sentence-satisfaction order ends authority. Physical time and compliance still need evidence; this switch does not execute an alternative clock."
@@ -2328,7 +2328,7 @@
       "title": "Contribution has degree",
       "offLabel": "Contribution has no degree",
       "measured": false,
-      "source": "book-1/31-the-five-joints.md",
+      "source": "book-1/29-the-five-joints.md",
       "cost": {
         "title": "Part V · Valuation",
         "text": "Refusing degree forecloses rank; it also forecloses seeing the scale of human effort."

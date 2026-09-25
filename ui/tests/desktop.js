@@ -28,7 +28,7 @@ try {
     await wait(()=>document.documentElement.dataset.theme==='light','saved theme');
     await wait(()=>document.querySelector('[data-tally=held]')?.textContent==='3','replayed native history',180000);
     click('read');await wait(()=>document.querySelector('.toc-list'),'contents');click('Resume reading →');
-    await wait(()=>document.documentElement.dataset.readerReady?.endsWith('/31-the-five-joints/'),'saved chapter');
+    await wait(()=>document.documentElement.dataset.readerReady?.endsWith('/29-the-five-joints/'),'saved chapter');
     await wait(()=>Math.abs(scrollY-1800)<5,'saved native scroll');
     dioxus.send({ok:true,persistence:true,user_agent:navigator.userAgent});
   } else {
@@ -63,7 +63,7 @@ try {
   const search=document.querySelector('#book-search');search.value='independent witness';search.dispatchEvent(new Event('input',{bubbles:true}));
   await wait(()=>document.querySelector('.search-results li'),'search results');
   click('read');await wait(()=>document.querySelector('.toc-list'),'contents');
-  if (document.querySelectorAll('.toc-list > li').length!==34) throw new Error('incomplete reader');
+  if (document.querySelectorAll('.toc-list > li').length!==32) throw new Error('incomplete reader');
   click('Epigraph');await wait(()=>document.querySelector('[lang=ta]'),'Tamil reader');
   await document.fonts.load('18px "Noto Serif Tamil"');
   if (!document.fonts.check('18px "Noto Serif Tamil"')) throw new Error('Tamil font');
@@ -78,8 +78,8 @@ try {
   const destination=cross.getAttribute('href').split('#')[0];cross.click();
   await wait(()=>document.documentElement.dataset.readerReady===destination,'manuscript cross-reference');
   click('← Contents');await wait(()=>document.querySelector('.toc-list'),'contents');
-  [...document.querySelectorAll('.toc-list a')].find(a=>a.getAttribute('href').endsWith('/31-the-five-joints/')).click();
-  await wait(()=>document.documentElement.dataset.readerReady?.endsWith('/31-the-five-joints/'),'last reader input');
+  [...document.querySelectorAll('.toc-list a')].find(a=>a.getAttribute('href').endsWith('/29-the-five-joints/')).click();
+  await wait(()=>document.documentElement.dataset.readerReady?.endsWith('/29-the-five-joints/'),'last reader input');
   document.querySelector('.reader-nav details').open=true;
   const section=document.querySelector('.reader-nav a[href^="#"]');
   section.click();
@@ -92,6 +92,6 @@ try {
   window.scrollTo({top:1800,behavior:'instant'});await sleep(600);
   if (document.documentElement.dataset.theme!=='light') document.querySelector('[aria-label="Switch colour theme"]').click();
   await sleep(200);
-    dioxus.send({ok:true,scenarios:results.length,results,reader_inputs:34,tamil:true,search:true,offline:true,user_agent:navigator.userAgent});
+    dioxus.send({ok:true,scenarios:results.length,results,reader_inputs:32,tamil:true,search:true,offline:true,user_agent:navigator.userAgent});
   }
 } catch(error) {dioxus.send({ok:false,error:String(error.message)+' '+String(error.stack),stage,results,body:document.body.innerText.slice(-2500)});}

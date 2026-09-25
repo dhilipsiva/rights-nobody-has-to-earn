@@ -321,11 +321,23 @@ fn every_relative_link_in_the_book_and_its_appendix_resolves() {
     assert!(broken.is_empty(), "dangling links:\n{}", broken.join("\n"));
 }
 
+/// The annotated contents sit in the back matter with the map, glossary and
+/// index (ruling D7), and they list exactly the manifest's parts and landed
+/// chapters, in order. The opening note keeps no contents of its own.
 #[test]
 fn opening_note_navigation_matches_the_manifest() {
     let context = Context::discover().expect("repository");
     let contents = Contents::load(&context).expect("manifest");
-    let note = context.read("book-1/00-opening-note.md").unwrap();
+    assert!(
+        contents.back.iter().any(|name| name == "reference.md"),
+        "the back matter carries the reference material"
+    );
+    let opening = context.read("book-1/00-opening-note.md").unwrap();
+    assert!(
+        !opening.contains("## Annotated contents"),
+        "the annotated contents belong to the back matter, not the opening note"
+    );
+    let note = context.read("book-1/reference.md").unwrap();
     let start = note.find("## Annotated contents").expect("annotated contents");
     let end = note[start..]
         .find("\n## ")

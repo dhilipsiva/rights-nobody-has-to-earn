@@ -276,7 +276,7 @@ building(HighSec, Ghost).
 # `entitled` is queried across the suite and until now was never controlled, so
 # every TRUE proved reach rather than derivation. Three directions at once: the
 # floor reaches a person; it does not carry what is not on it — home is a fact
-# the world reports, never a floor item, and chapter 4 turns on the difference;
+# the world reports, never a floor item, and chapter 3 turns on the difference;
 # and it does not reach a non-person.
 ? entitled(Adam, event { eats() }).
 # => TRUE
@@ -351,7 +351,7 @@ observe(TemporalReview, Relief_End_Floor_Hano_Completion, Epoch_Current, RecordE
 
 # Personhood survives — for Hano because it is asserted, and for someone
 # convicted into the roster because of Article 1's `free -> person` line. The
-# derived case is pinned on Zed in 27-a-prisoner-is-a-person.pins.nibli.
+# derived case is pinned on Zed in 25-a-prisoner-is-a-person.pins.nibli.
 ? person(Hano).
 # => TRUE
 

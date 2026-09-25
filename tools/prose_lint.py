@@ -72,12 +72,12 @@ RECURRING = [
     "Kel", "Gia", "Wren", "Iris", "Tove", "Mael",
 ]
 HOME = {
-    "Ori": "01", "Marlo": "09", "Ansel": "09", "Coll": "09", "Nima": "10",
-    "Pico": "10", "Ona": "10", "Quin": "10", "Sata": "10", "Yano": "10",
-    "Koa": "16", "Nia": "21", "Faro": "24", "Pax": "24", "Lior": "24",
-    "Dara": "24", "Sena": "24", "Dev": "25", "Edo": "25", "Mira": "25",
-    "Tyr": "25", "Saba": "25", "Fin": "26", "Zed": "27", "Lalo": "28",
-    "Nando": "28", "Opal": "28", "Jala": "29",
+    "Ori": "01", "Marlo": "09", "Ansel": "09", "Coll": "09", "Nima": "09",
+    "Pico": "09", "Ona": "09", "Quin": "09", "Sata": "09", "Yano": "09",
+    "Koa": "16", "Nia": "21", "Faro": "23", "Pax": "23", "Lior": "23",
+    "Dara": "23", "Sena": "23", "Dev": "24", "Edo": "24", "Mira": "24",
+    "Tyr": "24", "Saba": "24", "Fin": "24", "Zed": "25", "Lalo": "26",
+    "Nando": "26", "Opal": "26", "Jala": "27",
 }
 CAST = RECURRING + sorted(HOME)
 # A case name is anything a reader must hold in mind as a particular: the cast,
@@ -95,8 +95,44 @@ PROFILES = {
                 "banned": 0, "harness": 0, "strays": None},
     "method": {"negation": None, "jargon": None, "names": None, "disclaimers": None,
                "banned": None, "harness": None, "strays": None},
+    # A derived chapter's labelled argument section (ruling D2) is argued text:
+    # held to the opening's prose thresholds, and free to name the documented
+    # cases it argues from.
+    "argument": {"negation": 20.0, "jargon": 5.0, "names": None, "disclaimers": 2,
+                 "banned": 0, "harness": 0, "strays": None},
 }
+ARGUMENT = "## Argument: "
 METRICS = ("negation", "jargon", "names", "disclaimers", "banned", "harness", "strays")
+
+
+def split_argument(raw):
+    """A chapter's derived text and its argument section, if it has one. The
+    argument section is headed `## Argument: ` and closes the chapter."""
+    lines = raw.split("\n")
+    for index, line in enumerate(lines):
+        if line.startswith(ARGUMENT):
+            # Keep the derived text's line numbers; blank the argued lines.
+            derived = "\n".join(lines[:index] + [""] * (len(lines) - index))
+            argued = "\n".join([""] * index + lines[index:])
+            return derived, argued
+    return raw, None
+
+
+def measured_pieces(inputs):
+    """(label, profile, text) for each measured piece: a chapter's derived text
+    under its own path, and its argument section, when it has one, as
+    `path#argument` under the argument profile."""
+    pieces = []
+    for path, profile in inputs:
+        raw = (ROOT / path).read_text(encoding="utf-8")
+        if profile == "chapter":
+            derived, argued = split_argument(raw)
+            pieces.append((path, profile, derived))
+            if argued is not None:
+                pieces.append((f"{path}#argument", "argument", argued))
+        else:
+            pieces.append((path, profile, raw))
+    return pieces
 
 
 def ordered_inputs():
@@ -246,9 +282,9 @@ def main(argv=None):
     baseline = load_baseline()
     measured = []
     failed = False
-    for path, profile in inputs:
+    for path, profile, raw in measured_pieces(inputs):
         chapter = Path(path).name[:2] if profile == "chapter" else None
-        figures, names, locations = measure((ROOT / path).read_text(encoding="utf-8"), chapter)
+        figures, names, locations = measure(raw, chapter)
         measured.append((path, profile, figures))
         problems = regressions(path, profile, figures, baseline)
         failed |= bool(problems)

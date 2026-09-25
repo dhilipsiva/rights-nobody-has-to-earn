@@ -74,7 +74,7 @@ manuscript review and CLAUDE.md.
 
 ## Comparative argument — item 24, 2026-09-21
 
-The exact [Part V comparison](../../31-the-five-joints.md#protection-while-the-connection-is-disputed)
+The exact [Part V comparison](../../29-the-five-joints.md#protection-while-the-connection-is-disputed)
 is session-drafted and author-approved under the standing delegated approval.
 The competing procedure now receives its strongest form: an immediate
 case-specific protective order on a credible showing, followed by expedited
@@ -251,7 +251,7 @@ Rule count 7107 → 7108. Predicates, derived predicates, strata and the floor
 are unchanged; the shipped cast holds no `ShieldConnectionScope` observation,
 so the route ships dormant and no conviction moves.
 
-The Rex sequence resolves in `book-1/24-the-shield.pins.nibli`: Rex exposed the
+The Rex sequence resolves in `book-1/23-the-shield.pins.nibli`: Rex exposed the
 court and the review body, so neither may decide; `Appeals` and `Convocation`
 record the finding, `prisoner(Rex)` derives, and `defend(Rex)` and
 `show(Rex, Review)` both stay TRUE.

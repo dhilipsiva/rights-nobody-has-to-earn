@@ -5,25 +5,32 @@
 This directory is the reader-facing Book 1 projection of the principal formally
 audited constitutional specification. It is not the specification itself and
 cannot override, complete, or upgrade it. It contains the epigraph, opening note,
-derived chapters in the ruled reading order, Part V, and method part. The
+derived chapters in the ruled reading order, Part V, the method part, and the
+map, glossary and index at the back. The
 numbered chapters between the opening note and Part V are the derived
 spine—their order is editorial, *engines before breaks*, ruled on 2026-09-16 and
 recorded in `contents.json`, of which the filename prefix is a checked
 projection; their claims derive from the constitution and are pinned by the
 `*.pins.nibli` files beside them. Its companion volume is Book 2, *What
-It Would Take*: this book is the destination, that one is the road. Exactly three elements are exempt from the
+It Would Take*: this book is the destination, that one is the road. Three elements are exempt from the
 derivation gate and labelled so in their own text: the opening note, Part V, and
-the method part.
+the method part. The opening's map, glossary and index sit at the back in
+`reference.md`. Ruling D2 lets a derived chapter close with one argument
+section, headed `## Argument:`, which every derived-chapter check reads as
+argued text; ruling D3 lets each Part open with a labelled documented case,
+reserved in `contents.json` until it is written.
 
 A chapter lands with the rules it renders: its paired pins file, its case in
 `../tests/pins/suites.json`, its rows in the coverage ledger and its entry in
-the opening note's contents, verified by `../verify.sh` and the development
+the annotated contents in `reference.md`, verified by `../verify.sh` and the development
 tests. The receipt, audit and closure chain that once gated this was retired
 on 2026-09-12.
 
-Two files are deliberately unnumbered — `epigraph.md` and `method.md`.
-The epigraph is a poem; the optional method quotes the machinery kept outside
-the ordinary reader chapters. Both remain in the manifest's reading sequence.
+Three files are deliberately unnumbered — `epigraph.md`, `method.md` and
+`reference.md`. The epigraph is a poem; the optional method quotes the
+machinery kept outside the ordinary reader chapters; the reference file holds
+the map, contents, glossary and index. All three remain in the manifest's
+reading sequence.
 Two subdirectories are
 not chapters and are outside the reading order and the length measurement:
 `appendix/` carries the planning record (decisions, contracts, briefs, maps —
@@ -43,7 +50,8 @@ repository's `main`, so it follows the current manuscript and does not
 identify an immutable edition.
 
 Start with [the epigraph](epigraph.md), then [the opening note](00-opening-note.md).
-The opening's annotated contents describe the route through the book;
+The annotated contents in the [map, glossary and index](reference.md) describe
+the route through the book;
 [contents.json](contents.json) supplies the same order to the assembler.
 
 From the repository root, with Python and [uv](https://docs.astral.sh/uv/) installed:
@@ -63,21 +71,19 @@ without a browser, or `--output-dir PATH` to choose another output directory.
 The script declares its exact Python dependencies. Generated review copies
 are ignored by Git; rebuilding reads the current ordered source files.
 
-Add `--sample` to assemble chapters 1, 5, 8, 21 and 31 as
+Add `--sample` to assemble chapters 1, 4, 8, 21 and 29 as
 `book-1-sample.html`, `book-1-sample.epub` and `book-1-sample.pdf` instead.
 The [publisher proposal](../submission/README.md) explains the selection.
 The sample keeps the original chapter numbers; references outside the
 selection open their public repository locations.
 
-The 2026-09-21 reading copies measure 57,909 words across the full book's
-34 ordered inputs and 13,633 words in the five-chapter sample. These counts
-use whitespace-separated rendered manuscript text, including notes, before
-the generated cover and contents. The derived chapters contain 40,481 words
-(69.90% of the full manuscript). The full PDF has 169 pages and the sample
-35; pagination depends on the browser and typography used to rebuild them.
-The sample retains the complete closing argument, so that chapter occupies
-about 71% of the selection. The proposal explains the editorial purpose of
-this balance.
+The 2026-09-25 reading copies, built after the restructure of ruling D7,
+hold 32 ordered inputs: 65,645 Markdown words, HTML comments aside, of which
+the derived chapters contain 41,503 (63.2%). The five-chapter sample holds
+17,173. The full PDF has 183 pages and the sample 43; pagination depends on
+the browser and typography used to rebuild them. The sample retains the
+complete closing argument, so that chapter occupies about 74% of the
+selection. The proposal explains the editorial purpose of this balance.
 
 HTML provides a linked contents list, keyboard skip link and labelled table
 regions. EPUB carries the chapter order and nested contents. PDF includes

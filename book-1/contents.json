@@ -7,6 +7,9 @@
   "parts": [
     {
       "title": "Who counts, and what they are owed",
+      "opener": {
+        "status": "planned"
+      },
       "chapters": [
         {
           "number": 1,
@@ -18,47 +21,39 @@
         },
         {
           "number": 2,
-          "file": "02-who-counts.md",
-          "title": "Who Counts",
+          "file": "02-what-the-record-may-say.md",
+          "title": "What the Record May Say",
           "role": "derived",
           "group": "engine",
           "status": "landed"
         },
         {
           "number": 3,
-          "file": "03-what-counts-as-evidence.md",
-          "title": "What Counts as Evidence",
-          "role": "derived",
-          "group": "engine",
-          "status": "landed"
-        },
-        {
-          "number": 4,
-          "file": "04-what-you-are-owed.md",
+          "file": "03-what-you-are-owed.md",
           "title": "What You Are Owed",
           "role": "derived",
           "group": "engine",
           "status": "landed"
         },
         {
-          "number": 5,
-          "file": "05-whether-it-arrived.md",
+          "number": 4,
+          "file": "04-whether-it-arrived.md",
           "title": "Whether It Arrived",
           "role": "derived",
           "group": "engine",
           "status": "landed"
         },
         {
-          "number": 6,
-          "file": "06-when-there-is-genuinely-not-enough.md",
+          "number": 5,
+          "file": "05-when-there-is-genuinely-not-enough.md",
           "title": "When There Is Genuinely Not Enough",
           "role": "derived",
           "group": "engine",
           "status": "landed"
         },
         {
-          "number": 7,
-          "file": "07-who-owes-and-what-follows.md",
+          "number": 6,
+          "file": "06-who-owes-and-what-follows.md",
           "title": "Who Owes, and What Follows",
           "role": "derived",
           "group": "engine",
@@ -68,7 +63,17 @@
     },
     {
       "title": "The life the design leaves alone",
+      "opener": {
+        "status": "planned"
+      },
       "chapters": [
+        {
+          "number": 7,
+          "title": "An Ordinary Week",
+          "role": "derived",
+          "group": "engine",
+          "status": "planned"
+        },
         {
           "number": 8,
           "file": "08-what-nobody-has-to-ask-permission-for.md",
@@ -79,40 +84,40 @@
         },
         {
           "number": 9,
-          "file": "09-earning-above-the-floor.md",
-          "title": "Earning Above the Floor",
+          "file": "09-work-pay-and-contribution.md",
+          "title": "Work, Pay and Contribution",
           "role": "derived",
           "group": "engine",
           "status": "landed"
         },
         {
           "number": 10,
-          "file": "10-contribution.md",
-          "title": "Contribution",
-          "role": "derived",
-          "group": "engine",
-          "status": "landed"
-        },
-        {
-          "number": 11,
-          "file": "11-what-money-cannot-buy.md",
+          "file": "10-what-money-cannot-buy.md",
           "title": "What Money Cannot Buy",
           "role": "derived",
           "group": "engine",
           "status": "landed"
         },
         {
-          "number": 12,
-          "file": "12-the-same-route-for-everyone.md",
+          "number": 11,
+          "file": "11-the-same-route-for-everyone.md",
           "title": "The Same Route for Everyone",
           "role": "derived",
           "group": "engine",
           "status": "landed"
         },
         {
-          "number": 13,
-          "file": "13-a-place-in-which-life-remains-possible.md",
+          "number": 12,
+          "file": "12-a-place-in-which-life-remains-possible.md",
           "title": "A Place in Which Life Remains Possible",
+          "role": "derived",
+          "group": "engine",
+          "status": "landed"
+        },
+        {
+          "number": 13,
+          "file": "13-creatures-without-a-ballot.md",
+          "title": "Creatures Without a Ballot",
           "role": "derived",
           "group": "engine",
           "status": "landed"
@@ -137,11 +142,14 @@
     },
     {
       "title": "The public power that serves it",
+      "opener": {
+        "status": "planned"
+      },
       "chapters": [
         {
           "number": 16,
-          "file": "16-public-answerability.md",
-          "title": "Public Answerability, and Why It Is Never Revoked",
+          "file": "16-answerability-and-authority.md",
+          "title": "Answerability and Authority",
           "role": "derived",
           "group": "engine",
           "status": "landed"
@@ -193,71 +201,58 @@
           "role": "derived",
           "group": "engine",
           "status": "landed"
-        },
-        {
-          "number": 23,
-          "file": "23-who-holds-the-pen.md",
-          "title": "Who Holds the Pen",
-          "role": "derived",
-          "group": "engine",
-          "status": "landed"
         }
       ]
     },
     {
       "title": "What the design does to a person, and how it catches itself",
+      "opener": {
+        "status": "planned"
+      },
       "chapters": [
         {
-          "number": 24,
-          "file": "24-the-shield.md",
+          "number": 23,
+          "file": "23-the-shield.md",
           "title": "The Shield",
           "role": "derived",
           "group": "break",
           "status": "landed"
         },
         {
+          "number": 24,
+          "file": "24-findings-about-people.md",
+          "title": "Findings About People",
+          "role": "derived",
+          "group": "break",
+          "status": "landed"
+        },
+        {
           "number": 25,
-          "file": "25-voiding.md",
-          "title": "Credibility Findings",
-          "role": "derived",
-          "group": "break",
-          "status": "landed"
-        },
-        {
-          "number": 26,
-          "file": "26-clawback.md",
-          "title": "The Limits of a Finding",
-          "role": "derived",
-          "group": "break",
-          "status": "landed"
-        },
-        {
-          "number": 27,
-          "file": "27-a-prisoner-is-a-person.md",
+          "file": "25-a-prisoner-is-a-person.md",
           "title": "A Prisoner Is a Person",
           "role": "derived",
           "group": "break",
           "status": "landed"
         },
         {
-          "number": 28,
-          "file": "28-where-people-are-put.md",
+          "number": 26,
+          "file": "26-where-people-are-put.md",
           "title": "Where People Are Put",
           "role": "derived",
           "group": "break",
           "status": "landed"
         },
         {
-          "number": 29,
-          "file": "29-the-one-thing-taken.md",
+          "number": 27,
+          "file": "27-the-one-thing-taken.md",
           "title": "The One Thing Taken",
           "role": "derived",
           "group": "break",
           "status": "landed"
         },
         {
-          "number": 30,
-          "file": "30-when-the-system-notices-it-broke.md",
+          "number": 28,
+          "file": "28-when-the-system-notices-it-broke.md",
           "title": "When the System Notices It Broke",
           "role": "derived",
           "group": "break",
@@ -266,19 +261,29 @@
       ]
     },
     {
-      "title": "Outside the graph",
+      "title": "The argument",
+      "opener": {
+        "status": "planned"
+      },
       "chapters": [
         {
-          "number": 31,
-          "file": "31-the-five-joints.md",
+          "number": 29,
+          "file": "29-the-five-joints.md",
           "title": "The Five Joints",
           "role": "exempt",
           "status": "landed"
+        },
+        {
+          "number": 30,
+          "title": "Where This Could Fail",
+          "role": "exempt",
+          "status": "planned"
         }
       ]
     }
   ],
   "back": [
-    "method.md"
+    "method.md",
+    "reference.md"
   ]
 }

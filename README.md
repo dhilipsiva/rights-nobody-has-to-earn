@@ -62,8 +62,9 @@ rebuilds it from this repository's `main`, so the site follows the current
 manuscript rather than an immutable edition.
 
 Start with the [epigraph](book-1/epigraph.md) and
-[opening note](book-1/00-opening-note.md). The opening includes annotated
-contents. To assemble the current manifest as HTML, EPUB and PDF review copies,
+[opening note](book-1/00-opening-note.md). Annotated contents, a glossary and
+an index are at the back, in the [map, glossary and index](book-1/reference.md).
+To assemble the current manifest as HTML, EPUB and PDF review copies,
 follow the [book's build instructions](book-1/README.md#read-or-assemble-the-book).
 Rendering is separate from the substantive verification below.
 
@@ -109,7 +110,7 @@ tree.
 ```bash
 ./verify.sh
 ./verify.sh --list
-./verify.sh --only book-1/04-what-you-are-owed.pins.nibli
+./verify.sh --only book-1/03-what-you-are-owed.pins.nibli
 ```
 
 The default command runs all substantive pins, including counterfactuals, and

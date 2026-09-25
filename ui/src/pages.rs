@@ -5,7 +5,7 @@ use dioxus::prelude::*;
 pub fn Contents() -> Element {
     let session = use_context::<Session>();
     rsx! { div { class: "container page",
-        PageHeading { eyebrow: "the complete book", title: "The Rights Nobody Has to Earn", p { "By dhilipsiva. Epigraph, opening note, 31 chapters, and an unnumbered optional method. The manuscript is the source of every reader page." } }
+        PageHeading { eyebrow: "the complete book", title: "The Rights Nobody Has to Earn", p { "By dhilipsiva. Epigraph, opening note, 28 chapters, an unnumbered optional method, and a map, glossary and index. The manuscript is the source of every reader page." } }
         div { class: "two-column", div { class: "q-card pad",
             ol { class: "toc-list", for (i, page) in book().pages.iter().enumerate() {
                 li {
@@ -110,7 +110,7 @@ pub fn Search() -> Element {
     let mut query = use_signal(String::new);
     let results = search(&query());
     rsx! { div { class: "container page",
-        PageHeading { eyebrow: "local full-text search", title: "Find a passage", p { "Search all 34 reading inputs, including footnotes and Tamil. All search terms must occur in the chapter; matching ignores case. Your query stays on this device." } }
+        PageHeading { eyebrow: "local full-text search", title: "Find a passage", p { "Search all 32 reading inputs, including footnotes and Tamil. All search terms must occur in the chapter; matching ignores case. Your query stays on this device." } }
         div { style: "max-width:800px",
             label { r#for: "book-search", "Words or phrase" }
             input { id: "book-search", class: "search-input", r#type: "search", value: "{query}", placeholder: "Try: independent witness", oninput: move |event| query.set(event.value()), autocomplete: "off" }

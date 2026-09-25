@@ -33,7 +33,7 @@ class MeasurementTests(unittest.TestCase):
         source = (
             "<!-- SPDX-License-Identifier: CC-BY-4.0 -->\n"
             "See [the chapter](18-the-vote-conviction-does-not-take.md) and "
-            "[the pins](../book-1/25-voiding.pins.nibli) at https://example.org/none.\n"
+            "[the pins](../book-1/24-findings-about-people.pins.nibli) at https://example.org/none.\n"
         )
         f = figures(source)
         self.assertEqual((f["negation"], f["banned"]), (0, 1))  # the link text "pins" stays prose
@@ -115,17 +115,29 @@ class RatchetTests(unittest.TestCase):
             self.assertEqual(lint.load_baseline(path)["b"]["negation"], 1.0)
 
 
+    def test_an_argument_section_is_measured_apart_from_the_derived_text(self):
+        raw = "# A\n\nIt is not owed.\n\n## Argument: why\n\nIn 1996 Santoshi Kumari's case, not this.\n"
+        derived, argued = lint.split_argument(raw)
+        self.assertNotIn("1996", derived)
+        self.assertIn("Santoshi", argued)
+        # Line numbers survive on both sides of the split.
+        self.assertEqual(len(derived.split("\n")), len(raw.split("\n")))
+        self.assertEqual(argued.split("\n")[4], "## Argument: why")
+        self.assertEqual(lint.split_argument("# A\n\nOnly derived.\n"), ("# A\n\nOnly derived.\n", None))
+
+
 class ManuscriptTests(unittest.TestCase):
     def test_every_measured_input_has_a_record_and_nothing_else_does(self):
-        inputs = {path for path, _ in lint.ordered_inputs()}
-        self.assertEqual(set(lint.load_baseline()), inputs)
+        pieces = {label for label, _, _ in lint.measured_pieces(lint.ordered_inputs())}
+        self.assertEqual(set(lint.load_baseline()), pieces)
 
     def test_no_ordered_input_regresses(self):
         baseline = lint.load_baseline()
         failures = []
-        for path, profile in lint.ordered_inputs():
-            f = lint.measure((lint.ROOT / path).read_text(encoding="utf-8"))[0]
-            failures += [f"{path}: {p}" for p in lint.regressions(path, profile, f, baseline)]
+        for label, profile, raw in lint.measured_pieces(lint.ordered_inputs()):
+            chapter = Path(label).name[:2] if profile == "chapter" else None
+            f = lint.measure(raw, chapter)[0]
+            failures += [f"{label}: {p}" for p in lint.regressions(label, profile, f, baseline)]
         self.assertEqual(failures, [], "\n".join(failures))
 
 

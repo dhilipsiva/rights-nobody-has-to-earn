@@ -305,41 +305,33 @@ fn every_constitutional_family_is_projected_by_a_passage() {
 /// membership rather than counted, so a chapter landing without a slot and
 /// without a reason fails here.
 ///
-/// Chapter 1 is the child: the whole chapter is the case, and a section inside
-/// it would be a section about its own subject. Chapter 10 recognises
-/// contribution and already runs the no-age-premise case with Cira's work
-/// entry. Missing adulthood evidence establishes no age, so a second child would
-/// duplicate the exhibit rather than add one. Chapter 23 is about who holds a
-/// credential; a record of one birth entry holds none, and the honest slot
-/// would say only that, which the chapter says already about everybody who is
-/// not seated. Chapter 24 needs an exposure the one-entry child has not made.
-/// Chapter 26 follows Cira's separate claim beside the teacher's finding;
-/// chapter 25 already runs Nell's one-entry case and the unaffected floor.
-/// The 2026-09-20 recognition removal supersedes the former clawback rationale
-/// while preserving the exemption and its actual child-facing coverage.
-const CHILD_SLOT_EXEMPT: [(&str, &str); 22] = [
-    ("01-the-child-with-nobody.md", "the chapter is the case"),
-    ("02-who-counts.md", "the birth entry reaches standing as the chapter's encounters do"),
-    ("04-what-you-are-owed.md", "the floor follows for the child as for every person; chapter 1 runs it"),
-    ("07-who-owes-and-what-follows.md", "the bystander's entry about the child is already the chapter's own case"),
+/// Ruling D5 keeps the section where the one-entry record produces a different
+/// or instructive result. Chapter 1 is the child: the whole chapter is the case,
+/// and a section inside it would be a section about its own subject. Chapter 9
+/// already runs the no-age-premise case with Cira's work entry, and chapter 24
+/// follows Cira's separate claim beside the teacher's finding. The rest follow
+/// for the child exactly as for anyone, or need a record the child does not
+/// have.
+const CHILD_SLOT_EXEMPT: [(&str, &str); 19] = [
+    ("01-the-child-with-nobody.md", "the chapter is the case, and its encounters reach standing as the birth does"),
+    ("03-what-you-are-owed.md", "the floor follows for the child as for every person; chapter 1 runs it"),
+    ("06-who-owes-and-what-follows.md", "the bystander's entry about the child is already the chapter's own case"),
     ("08-what-nobody-has-to-ask-permission-for.md", "the liberties follow from personhood alone, as for anyone"),
-    ("09-earning-above-the-floor.md", "a record with no contribution yields no supplement, as for anyone without one"),
-    ("10-contribution.md", "Cira already carries the child exhibit"),
-    ("11-what-money-cannot-buy.md", "the economic prohibitions hold for any person; no property adds nothing"),
-    ("12-the-same-route-for-everyone.md", "the anti-substitution barriers hold for every person alike"),
-    ("13-a-place-in-which-life-remains-possible.md", "the environmental claim needs no owner or spokesperson for anyone"),
+    ("09-work-pay-and-contribution.md", "no contribution yields no supplement, as for anyone; Cira carries the child exhibit"),
+    ("10-what-money-cannot-buy.md", "the economic prohibitions hold for any person; no property adds nothing"),
+    ("11-the-same-route-for-everyone.md", "the anti-substitution barriers hold for every person alike"),
+    ("12-a-place-in-which-life-remains-possible.md", "the environmental claim needs no owner or spokesperson for anyone"),
+    ("13-creatures-without-a-ballot.md", "an animal's protection reads no human record at all"),
     ("15-arriving-and-belonging.md", "the newcomer is the chapter's person with little on record"),
-    ("16-public-answerability.md", "answerability concerns public bodies; the child holds none"),
+    ("16-answerability-and-authority.md", "answerability concerns public bodies; the child holds none"),
     ("17-how-public-power-is-built.md", "the institutions' mandates run to everyone alike"),
     ("19-what-may-be-kept-about-you.md", "a birth-only record holds no file to keep, use or correct"),
     ("20-a-crisis-does-not-suspend-the-republic.md", "an emergency leaves the child's floor as it leaves anyone's"),
     ("22-changing-the-rules.md", "the amendment rules protect the floor for everyone alike"),
-    ("23-who-holds-the-pen.md", "a record of one entry holds no authority to sign findings"),
-    ("24-the-shield.md", "the shield needs an exposure this child has not made"),
-    ("25-voiding.md", "no finding reaches a person with a birth entry alone"),
-    ("26-clawback.md", "Cira's separate claim is tested here"),
-    ("28-where-people-are-put.md", "placement needs a custody case the child's record does not have"),
-    ("29-the-one-thing-taken.md", "confinement needs a custody case; chapter 27 runs the child beside the prisoner"),
+    ("23-the-shield.md", "the shield needs an exposure this child has not made"),
+    ("24-findings-about-people.md", "no finding reaches a birth entry, which holds no authority to sign; Cira's claim is tested here"),
+    ("26-where-people-are-put.md", "placement needs a custody case the child's record does not have"),
+    ("27-the-one-thing-taken.md", "confinement needs a custody case; chapter 25 runs the child beside the prisoner"),
 ];
 
 #[test]
@@ -402,4 +394,73 @@ fn every_child_slot_loads_the_one_line_record() {
         }
     }
     assert!(missing.is_empty(), "{}", missing.join("\n"));
+}
+
+/// Argued text and derived text are classified apart: a derived passage never
+/// takes the `argument` pattern or the exempt-element basis, and Part V's
+/// passages, like any labelled argument section (ruling D2), always take both.
+#[test]
+fn argued_and_derived_passages_are_classified_apart() {
+    let context = Context::discover().expect("repository");
+    let records = records(&context).expect("ledger source");
+    validate(&context, &records).expect("the ledger as it stands");
+    // Sabotage both ways: a derived passage labelled argument, and a Part V
+    // passage labelled as derived text.
+    let mut derived_as_argument = records.clone();
+    let row = derived_as_argument
+        .iter_mut()
+        .find(|record| record.pattern != "argument")
+        .expect("a derived passage");
+    row.pattern = "argument".to_owned();
+    row.basis = "exempt-element".to_owned();
+    assert!(validate(&context, &derived_as_argument).is_err());
+    let mut argument_as_derived = records.clone();
+    let row = argument_as_derived
+        .iter_mut()
+        .find(|record| record.pattern == "argument")
+        .expect("an argued passage");
+    row.pattern = "constructive".to_owned();
+    assert!(validate(&context, &argument_as_derived).is_err());
+}
+
+/// Words a reader reads, HTML comments aside.
+fn words(text: &str) -> usize {
+    let comment = regex::Regex::new(r"(?s)<!--.*?-->").unwrap();
+    comment.replace_all(text, " ").split_whitespace().count()
+}
+
+/// The length invariant, measured by section (ruling D2): the derived text of
+/// the derived chapters outweighs everything argued or exempt combined — the
+/// front and back matter, the Part openers, Part V and every argument section.
+/// The appendix and the formal source are outside the ordered inputs and
+/// outside the measurement.
+#[test]
+fn the_book_stays_majority_derived_by_section() {
+    let context = Context::discover().expect("repository");
+    let contents = Contents::load(&context).expect("manifest");
+    let mut derived = 0;
+    let mut other = 0;
+    for path in contents.derived() {
+        let chapter = context.read(&path).expect("chapter");
+        let (flat, argued) = crate::authoring::contents::split_argument(&chapter).expect("well formed");
+        derived += words(flat);
+        other += words(argued);
+    }
+    let mut exempt: Vec<String> = contents
+        .front
+        .iter()
+        .chain(contents.back.iter())
+        .map(|name| format!("book-1/{name}"))
+        .collect();
+    exempt.extend(contents.part_v().expect("Part V"));
+    exempt.extend(contents.openers());
+    for path in exempt {
+        other += words(&context.read(&path).expect("exempt input"));
+    }
+    assert!(derived > 0 && other > 0, "the measurement read nothing");
+    assert!(
+        derived > other,
+        "the book is no longer majority-derived: {derived} derived words against \
+         {other} argued or exempt"
+    );
 }

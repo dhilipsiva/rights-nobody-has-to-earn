@@ -15,7 +15,7 @@ with its implications for farming, household production, subsistence and
 culture. Nothing in this decision is superseded.
 
 **Entrenchment argument — item 24, 2026-09-21.** The exact
-[Part V protected-core argument](../../31-the-five-joints.md#what-a-majority-may-not-remove)
+[Part V protected-core argument](../../29-the-five-joints.md#what-a-majority-may-not-remove)
 is session-drafted and author-approved under the standing delegated approval.
 It gives animal protection its own moral ground in suffering and continued
 life, rather than importing the human franchise argument. Revisable welfare

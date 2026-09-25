@@ -4,7 +4,7 @@
 
 ## Comparative justification — item 24, 2026-09-21
 
-The exact current text of [Part V](../../31-the-five-joints.md), including its
+The exact current text of [Part V](../../29-the-five-joints.md), including its
 new institutional comparisons and protected-core argument, is
 `session-drafted, author-approved under delegated approval (2026-09-13)`.
 This item repairs an incomplete argument. It changes no constitutional

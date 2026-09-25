@@ -11,6 +11,12 @@
 //! convenient. A `planned` entry reserves a number for a chapter not yet
 //! written and has no file, so the whole final table can be ruled once and
 //! each chapter can fill its slot without renumbering the rest.
+//!
+//! Each Part also carries its opening case (ruling D3, 2026-09-24): a short,
+//! labelled, documented case that heads the Part. An opener is exempt text,
+//! unnumbered and outside every derived-chapter check, and it is `planned`
+//! until it is written. Part V is the last Part and holds the exempt
+//! chapters, the synthesis and its companion (ruling D7).
 
 use crate::{cli::Error, context::Context};
 use serde::Deserialize;
@@ -36,7 +42,21 @@ pub(crate) struct Contents {
 #[serde(deny_unknown_fields)]
 pub(crate) struct Part {
     pub(crate) title: String,
+    pub(crate) opener: Opener,
     pub(crate) chapters: Vec<Chapter>,
+}
+
+/// A Part's labelled opening case. Its file, once landed, is named
+/// `part-N-<slug>.md` for the Part's position N, so no numbered-chapter check
+/// can mistake it for a chapter.
+#[derive(Debug, Deserialize)]
+#[serde(deny_unknown_fields)]
+pub(crate) struct Opener {
+    #[serde(default)]
+    pub(crate) file: Option<String>,
+    #[serde(default)]
+    pub(crate) title: Option<String>,
+    pub(crate) status: Status,
 }
 
 #[derive(Debug, Deserialize)]
@@ -145,6 +165,43 @@ impl Contents {
         if expected == 1 {
             return Err(Error::new(format!("{MANIFEST}: no chapters")));
         }
+        for (index, part) in self.parts.iter().enumerate() {
+            let opener = &part.opener;
+            match (opener.status, &opener.file, &opener.title) {
+                (Status::Landed, Some(file), Some(_)) => {
+                    let prefix = format!("part-{}-", index + 1);
+                    if !file.starts_with(&prefix) || !file.ends_with(".md") {
+                        return Err(Error::new(format!(
+                            "{MANIFEST}: Part {}'s opener is {file}; an opener is named {prefix}<slug>.md",
+                            index + 1
+                        )));
+                    }
+                }
+                (Status::Landed, _, _) => {
+                    return Err(Error::new(format!(
+                        "{MANIFEST}: Part {}'s opener is landed but lacks a file or a title",
+                        index + 1
+                    )));
+                }
+                (Status::Planned, Some(_), _) => {
+                    return Err(Error::new(format!(
+                        "{MANIFEST}: Part {}'s opener is planned and must not name a file",
+                        index + 1
+                    )));
+                }
+                (Status::Planned, None, _) => {}
+            }
+        }
+        let last = self.parts.last().expect("parts");
+        if last.chapters.iter().any(|c| c.role == Role::Derived)
+            || self.parts[..self.parts.len() - 1]
+                .iter()
+                .any(|part| part.chapters.iter().any(|c| c.role == Role::Exempt))
+        {
+            return Err(Error::new(format!(
+                "{MANIFEST}: the exempt chapters form the last Part, Part V, and only it"
+            )));
+        }
         if !self.front.iter().any(|f| f == "00-opening-note.md") {
             return Err(Error::new(format!(
                 "{MANIFEST}: the front matter must carry the opening note"
@@ -171,20 +228,29 @@ impl Contents {
         self.chapters().filter_map(Chapter::path).collect()
     }
 
-    /// Part V: the landed exempt chapter. The book has exactly one.
-    pub(crate) fn part_v(&self) -> Result<String, Error> {
+    /// Part V's landed chapters, in reading order: the exempt chapters, which
+    /// are the last Part. At least one has landed; the synthesis is first.
+    pub(crate) fn part_v(&self) -> Result<Vec<String>, Error> {
         let exempt: Vec<String> = self
             .chapters()
             .filter(|c| c.role == Role::Exempt)
             .filter_map(Chapter::path)
             .collect();
-        match exempt.as_slice() {
-            [one] => Ok(one.clone()),
-            _ => Err(Error::new(format!(
-                "{MANIFEST}: expected exactly one landed exempt chapter (Part V), found {}",
-                exempt.len()
-            ))),
+        if exempt.is_empty() {
+            return Err(Error::new(format!(
+                "{MANIFEST}: Part V has no landed chapter"
+            )));
         }
+        Ok(exempt)
+    }
+
+    /// Landed Part openers, in reading order.
+    pub(crate) fn openers(&self) -> Vec<String> {
+        self.parts
+            .iter()
+            .filter_map(|part| part.opener.file.as_ref())
+            .map(|file| format!("book-1/{file}"))
+            .collect()
     }
 
     pub(crate) fn planned(&self) -> Vec<&Chapter> {
@@ -231,6 +297,24 @@ impl Contents {
                 roman(index + 1),
                 part.title
             );
+            let _ = writeln!(
+                out,
+                "| — | Opening case{} | {} | exempt | — | {} |",
+                part.opener
+                    .title
+                    .as_ref()
+                    .map(|t| format!(": {t}"))
+                    .unwrap_or_default(),
+                part.opener
+                    .file
+                    .as_ref()
+                    .map(|f| format!("`{f}`"))
+                    .unwrap_or_else(|| "—".to_owned()),
+                match part.opener.status {
+                    Status::Landed => "landed",
+                    Status::Planned => "planned",
+                },
+            );
             for chapter in &part.chapters {
                 let _ = writeln!(
                     out,
@@ -268,6 +352,40 @@ impl Contents {
                 .join(", ")
         );
         out.trim_end().to_owned()
+    }
+}
+
+/// The heading that opens a derived chapter's argument section (ruling D2,
+/// 2026-09-24): `## Argument: <title>`. The label is part of the heading, so
+/// every rendering — Markdown, the assembled book, a table of contents — shows
+/// the reader where the chapter stops stating consequences and starts arguing.
+pub(crate) const ARGUMENT: &str = "## Argument: ";
+
+/// A derived chapter split at its argument section: the derived text, which
+/// every derived-chapter check reads, and the argued text, which is empty when
+/// the chapter has no argument section.
+pub(crate) fn split_argument(text: &str) -> Result<(&str, &str), String> {
+    let starts: Vec<usize> = text
+        .match_indices('\n')
+        .map(|(at, _)| at + 1)
+        .chain(std::iter::once(0))
+        .filter(|&at| text[at..].starts_with(ARGUMENT))
+        .collect();
+    match starts.as_slice() {
+        [] => Ok((text, "")),
+        [at] => {
+            let argued = &text[*at..];
+            if argued.lines().skip(1).any(|line| line.starts_with("## ")) {
+                return Err(
+                    "the argument section must be the chapter's last `## ` section".to_owned(),
+                );
+            }
+            Ok((&text[..*at], argued))
+        }
+        _ => Err(format!(
+            "a derived chapter carries one argument section, and this one has {}",
+            starts.len()
+        )),
     }
 }
 
@@ -318,5 +436,21 @@ mod tests {
         assert_eq!(super::roman(4), "IV");
         assert_eq!(super::roman(5), "V");
         assert_eq!(super::roman(9), "IX");
+    }
+
+    #[test]
+    fn an_argument_section_is_labelled_single_and_last() {
+        use super::split_argument;
+        let plain = "# A\n\nDerived.\n\n## Rule\n\nMore.\n";
+        assert_eq!(split_argument(plain), Ok((plain, "")));
+        let argued = "# A\n\nDerived.\n\n## Argument: why\n\nIn 1996, I argue.\n\n### A case\n\nMore.\n";
+        let (derived, argument) = split_argument(argued).expect("one last argument section");
+        assert!(derived.ends_with("Derived.\n\n") && !derived.contains("1996"));
+        assert!(argument.starts_with("## Argument: why") && argument.contains("1996"));
+        // Sabotage: a derived section after the argument, and a second argument.
+        assert!(split_argument("# A\n\n## Argument: why\n\nI argue.\n\n## Rule\n\nMore.\n").is_err());
+        assert!(split_argument("# A\n\n## Argument: one\n\n## Argument: two\n").is_err());
+        // An unlabelled heading is derived text, whatever it says.
+        assert_eq!(split_argument("# A\n\n## Why this rule\n\nIt.\n").map(|(_, a)| a), Ok(""));
     }
 }

@@ -13,7 +13,7 @@
       "id": "q2",
       "text": "Do I count without papers, citizenship or a family?",
       "chapters": [
-        2
+        1
       ],
       "part": 1
     },
@@ -21,7 +21,7 @@
       "id": "q3",
       "text": "What does the record accept as evidence — and what can a temporary name not prove?",
       "chapters": [
-        3
+        2
       ],
       "part": 1
     },
@@ -29,7 +29,7 @@
       "id": "q4",
       "text": "What am I owed — and do I have to earn it?",
       "chapters": [
-        4
+        3
       ],
       "part": 1
     },
@@ -37,7 +37,7 @@
       "id": "q5",
       "text": "Does a receipt prove I was fed?",
       "chapters": [
-        5
+        4
       ],
       "part": 1
     },
@@ -45,8 +45,8 @@
       "id": "q6",
       "text": "What if there is genuinely not enough — and who owes when the ordinary route fails?",
       "chapters": [
-        6,
-        7
+        5,
+        6
       ],
       "part": 1
     },
@@ -70,8 +70,8 @@
       "id": "q10",
       "text": "Can money or contribution buy standing?",
       "chapters": [
-        10,
-        11
+        9,
+        10
       ],
       "part": 2
     },
@@ -79,7 +79,7 @@
       "id": "q12",
       "text": "Is the route the same for everyone?",
       "chapters": [
-        12
+        11
       ],
       "part": 2
     },
@@ -87,6 +87,7 @@
       "id": "q13",
       "text": "Do ecological limits and animals have claims of their own?",
       "chapters": [
+        12,
         13
       ],
       "part": 2
@@ -164,16 +165,16 @@
       "part": 3
     },
     {
-      "id": "q23",
-      "text": "Whose findings count when authority is absent, forged or stale?",
+      "id": "q24",
+      "text": "Am I protected after exposing authority?",
       "chapters": [
         23
       ],
-      "part": 3
+      "part": 4
     },
     {
-      "id": "q24",
-      "text": "Am I protected after exposing authority?",
+      "id": "q23",
+      "text": "Whose findings count when authority is absent, forged or stale?",
       "chapters": [
         24
       ],
@@ -183,8 +184,7 @@
       "id": "q25",
       "text": "Can a credibility finding erase what I have done?",
       "chapters": [
-        25,
-        26
+        24
       ],
       "part": 4
     },
@@ -192,8 +192,8 @@
       "id": "q27",
       "text": "Can they hold me — and what stays mine?",
       "chapters": [
-        27,
-        29
+        25,
+        27
       ],
       "part": 4
     },
@@ -201,7 +201,7 @@
       "id": "q28",
       "text": "Is a recorded placement an actual place?",
       "chapters": [
-        28
+        26
       ],
       "part": 4
     },
@@ -209,7 +209,7 @@
       "id": "q30",
       "text": "What happens when the system notices it broke?",
       "chapters": [
-        30
+        28
       ],
       "part": 4
     }
@@ -218,12 +218,12 @@
     {
       "name": "entry",
       "definition": "A supplied report, such as a birth, judgment or receipt.",
-      "chapter": 3
+      "chapter": 2
     },
     {
       "name": "record",
       "definition": "The entries supplied for the rules to read. Its vocabulary can be restricted while its contents are false, incomplete or stale.",
-      "chapter": 3
+      "chapter": 2
     },
     {
       "name": "rule",
@@ -238,47 +238,47 @@
     {
       "name": "person",
       "definition": "The status from which the floor follows. A birth or encounter can establish it; custody and release supply independent backstops.",
-      "chapter": 2
+      "chapter": 1
     },
     {
       "name": "standing",
       "definition": "The universal status every person holds. It is neither a rank nor permission to act on someone.",
-      "chapter": 2
+      "chapter": 1
     },
     {
       "name": "floor",
       "definition": "What every person is owed without conditions of employment, registration, belonging, payment or approved behaviour.",
-      "chapter": 4
+      "chapter": 3
     },
     {
       "name": "delivery",
       "definition": "The protected condition reaching a person. A debt, payment or institutional output is not enough to establish it.",
-      "chapter": 5
+      "chapter": 4
     },
     {
       "name": "receipt",
       "definition": "A report of delivery. The ordinary receipt route needs matching independent evidence before delivery can be concluded.",
-      "chapter": 5
+      "chapter": 4
     },
     {
       "name": "shield",
       "definition": "Protection against conviction-based imprisonment following an exposure of authority, while no effective deceit finding applies to that exposure.",
-      "chapter": 24
+      "chapter": 23
     },
     {
       "name": "voiding",
       "definition": "An effective credibility finding that prevents a new adverse signature from qualifying. It leaves the floor intact.",
-      "chapter": 25
+      "chapter": 24
     },
     {
       "name": "placement",
       "definition": "Reviewed authority for a named place of confinement. It does not establish that anyone was moved there or received shelter.",
-      "chapter": 28
+      "chapter": 26
     },
     {
       "name": "breach marker",
       "definition": "A conclusion naming a defect in the supplied record. It does not itself investigate, correct, compensate or release anyone.",
-      "chapter": 30
+      "chapter": 28
     },
     {
       "name": "democratic corridor",

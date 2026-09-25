@@ -32,7 +32,7 @@ person; an independent inspector authorised for them completes it.
 
 **Comparative argument — item 24, 2026-09-21.** The exact Part V comparisons
 under Capture and
-[Essentials, public responsibility and fiscal choice](../../31-the-five-joints.md#essentials-public-responsibility-and-fiscal-choice)
+[Essentials, public responsibility and fiscal choice](../../29-the-five-joints.md#essentials-public-responsibility-and-fiscal-choice)
 are session-drafted and author-approved under the standing delegated approval.
 Exclusive public provision, an income guarantee, voluntary/contributory finance
 and a constitutional balanced-budget rule receive their own reasons and costs.

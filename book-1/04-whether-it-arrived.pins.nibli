@@ -1,0 +1,120 @@
+# ── Chapter 4 fidelity pins: "Whether It Arrived" ──────────────────────────
+#
+# KIND: CONTENT pin. Run:
+#   ./verify.sh --only book-1/04-whether-it-arrived.pins.nibli
+#   ./verify.sh          # all substantive pins and required contradiction checks
+# Prose consistency is reviewed separately.
+#
+# The chapter's case lists tests/pins/records/child_with_nobody/fixture.nibli.
+# Marisol, Provender and Ledgerwitness are fresh probe names.
+#
+# The delivery family's own coverage:
+#   book-1/source/delivery-receipt.pins.nibli
+#   tests/pins/delivery/received-outside-custody   every actuality for a person
+#                                                   nobody convicted
+#   book-1/source/counterfactual/undelivered-marker.pins.nibli
+#   tests/pins/records/child_with_nobody/undelivered.pins.nibli
+#
+# WHAT FALSE MEANS HERE: a FALSE is pinned only where the KB could have said
+# TRUE, and the comment says what would flip it.
+
+:expect-pins 20
+
+# "Ask whether Bela eats in the record supplied with this book ... The answer
+# is no." — the routes ship dormant in the cast.
+? eats(Bela).
+# => FALSE
+
+? dwell(Bela).
+# => FALSE
+
+? healthy(Bela).
+# => FALSE
+
+? secure(Bela).
+# => FALSE
+
+? suffice(Bela).
+# => FALSE
+
+? meets(Bela).
+# => FALSE
+
+# "A record says that something reached a particular person from a particular
+# source. An authorised witness for that person independently attests the same
+# thing and the same kind of delivery."
+receives(Marisol, FoodForMarisol, Provender).
+# The receipt alone concludes nothing.
+? eats(Marisol).
+# => FALSE
+
+authorized(Ledgerwitness, DeliveryWitness, Marisol).
+observe(Ledgerwitness, FoodForMarisol, Marisol, FoodScope).
+? eats(Marisol).
+# => TRUE
+
+# "independently witnessed food can count as having reached someone whom the
+# record has never entered as a person"
+? person(Marisol).
+# => FALSE
+
+# A food receipt is not a shelter receipt.
+? dwell(Marisol).
+# => FALSE
+
+# "The witness cannot be the source."
+receives(Marisol, ShelterForMarisol, Ledgerwitness).
+observe(Ledgerwitness, ShelterForMarisol, Marisol, ShelterScope).
+? dwell(Marisol).
+# => FALSE
+
+# "An attestation about the wrong person, item, or kind of delivery establishes
+# nothing."
+receives(Marisol, CareForMarisol, Provender).
+observe(Ledgerwitness, CareForMarisol, Marisol, FoodScope).
+? healthy(Marisol).
+# => FALSE
+
+# "For the child with nobody, this is the chapter where the design's honesty
+# costs the most."
+? owe(State, Eats, Nell).
+# => TRUE
+
+? eats(Nell).
+# => FALSE
+
+authorized(Ledgerwitness, DeliveryWitness, Nell).
+receives(Nell, FoodForNell, Provender).
+observe(Ledgerwitness, FoodForNell, Nell, FoodScope).
+# "a receipt naming Nell and an authorised witness who is not the provider derive
+# that food reached Nell" — actual appointment and authorization remain supplied
+# inputs; the reviewed representation route assigns the duty to authorize.
+? eats(Nell).
+# => TRUE
+
+? dwell(Nell).
+# => FALSE
+
+# The public bodies whose duty a delivery discharges cannot witness it: not the
+# State or the common tier, and not a region or locality a presence witness
+# records for the person.
+authorized(MarisolClerk, FloorPresenceWitness, Marisol).
+observe(MarisolClerk, Marisol, MarisolRegion, FloorPresenceRegionScope).
+authorized(MarisolRegion, DeliveryWitness, Marisol).
+receives(Marisol, CompanyForMarisol, Provender).
+observe(MarisolRegion, CompanyForMarisol, Marisol, CompanyScope).
+? meets(Marisol).
+# => FALSE
+
+# "Learning has a distinct route through teaching that was heard." A hearing
+# entry alone concludes nothing; the teaching it heard completes the route.
+hears(Listenera, Speakera).
+? learn(Listenera).
+# => FALSE
+
+teaches(Speakera, Listenera).
+? learn(Listenera).
+# => TRUE
+
+? prisoner(Nell).
+# => FALSE

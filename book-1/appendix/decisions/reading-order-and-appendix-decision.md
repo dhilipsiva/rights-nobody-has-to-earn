@@ -38,6 +38,39 @@ reason, the unscoped `:accept` closing chapter 25's pins, is met by ordering the
 merged pins so that it comes last. The ordering rule of §1 stands. Item 53
 carries the manifest, relocation and test changes the structure needs.
 
+## The structure implemented — item 53, 2026-09-25
+
+Ruling D7's table is the manifest. Chapters 1 and 2 are *The Child With Nobody*;
+9 and 10 are *Work, Pay and Contribution*; 23, 25 and 26 are *Findings About
+People*, which moves to Part IV beside the shield; Chapter 13 becomes *A Place in
+Which Life Remains Possible* (commons and future conditions) and *Creatures
+Without a Ballot* (animals). Chapter 3 is retitled *What the Record May Say* and
+Chapter 16 *Answerability and Authority*, as the plan's table names them, and
+Part V is *The argument*. Chapter 7, *An Ordinary Week*, and Chapter 30, *Where
+This Could Fail*, are reserved as planned entries until items 55 and 59 write
+them, so the reading sequence runs 1–6, 8–29 in the meantime. Every Part carries
+a planned labelled opening case (ruling D3), named `part-N-<slug>.md` once it
+lands, and Part V may hold more than one exempt chapter.
+
+The opening note keeps the question, the thesis, the child and the prisoner,
+the general limits and how to read the book, and Chapter 1 begins after about
+1,200 words. The map, choices table, annotated contents, glossary, roles and
+cases, subject index and diagrams moved unchanged, apart from their contents
+entries, to `reference.md`, *Map, Glossary and Index*, after the method.
+
+The merges kept every pin statement. `tools/relocate.py` gained `merges` and
+`splits`: a destination is written by hand, the tool removes the retired sources
+and rewrites references, sending a `::needle` reference to a split source to the
+destination that holds it, and `check` holds each group to account — the
+sources' pin statements at HEAD are exactly the destinations', the pin counts
+agree, and every source paragraph no destination carries verbatim is listed for
+review. Chapter labels are no longer rewritten inside footnote definitions,
+where "chapter 6" cites another book. The findings pins run the pen strand,
+then the limits strand, then the paired finding, whose closing unscoped
+acceptance comes last as this decision's §6 required; the pen strand's
+persisting clearance and custody facts precede the other two and change none of
+their verdicts. The map is `tools/maps/2026-09-25-restructure.json`.
+
 ## Choices before the institutional detail — item 25, 2026-09-21
 
 The exact current [opening note](../../00-opening-note.md), its argument map

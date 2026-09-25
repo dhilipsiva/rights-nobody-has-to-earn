@@ -4,7 +4,7 @@
 
 Session-drafted, author-approved under delegated approval (2026-09-13). The two
 sections below are inserted unchanged: the first in
-`book-1/04-what-you-are-owed.md`, between "Rights do not stop at arrival" and "A
+`book-1/03-what-you-are-owed.md`, between "Rights do not stop at arrival" and "A
 way to be heard"; the second in
 `book-1/18-the-vote-conviction-does-not-take.md`, between "Belonging without
 surrendering rights" and "The home custody does not move". Their supporting

@@ -46,7 +46,7 @@ with a 200 response for a missing path.
 | --- | --- |
 | `/` | Live companion game |
 | `/read/` | Complete book contents |
-| `/read/<source-file-stem>/` | One of 34 complete reading inputs |
+| `/read/<source-file-stem>/` | One of 32 complete reading inputs |
 | `/search/` | Local search; noindex |
 | `/map/` | HTTP 301 to `/rights-nobody-has-to-earn/` |
 | `/walkthrough/food-delivery/` | HTTP 301 to `/rights-nobody-has-to-earn/` |
@@ -54,7 +54,7 @@ with a 200 response for a missing path.
 
 `redirects.json` exports the three redirect rules with full prefixed paths.
 Implement them for GET and HEAD, preserving query strings. The supplied local
-server implements the manifest. There are **37 generated routes**, plus a
+server implements the manifest. There are **35 generated routes**, plus a
 separate 404 document; the three retired routes are redirects, not extra HTML
 pages. Preserve trailing-slash URLs, fragments and query strings.
 

@@ -8,7 +8,7 @@
 
 This proposal seeks an editorial and print partnership for an openly licensed
 book. It is prepared for a submission decision, without being addressed or sent
-to a particular publisher. The [public manuscript](../book-1/README.md) and
+to a particular publisher. The [public manuscript](https://github.com/dhilipsiva/rights-nobody-has-to-earn/blob/93fa5662/book-1/README.md) and
 [repository](https://github.com/dhilipsiva/rights-nobody-has-to-earn) provide the
 text, its formal source and its evidence trail. The current manuscript is
 also readable at
@@ -88,9 +88,9 @@ These are points of intellectual comparison, not sales forecasts or endorsements
 
 ## Contents
 
-The [opening note's annotated contents](../book-1/00-opening-note.md#annotated-contents)
+The [opening note's annotated contents](https://github.com/dhilipsiva/rights-nobody-has-to-earn/blob/93fa5662/book-1/00-opening-note.md#annotated-contents)
 give the longer chapter descriptions. The sequence below matches
-[the current contents manifest](../book-1/contents.json).
+[the current contents manifest](https://github.com/dhilipsiva/rights-nobody-has-to-earn/blob/93fa5662/book-1/contents.json).
 
 Epigraph; A Note Before the Design — both unnumbered.
 
@@ -156,14 +156,14 @@ to a particular publisher's requirements before any submission.
 
 | Chapter | What the selection shows |
 |---|---|
-| [1. The Child With Nobody](../book-1/01-the-child-with-nobody.md) | Unconditional standing tested from a minimal birth record. |
-| [5. Whether It Arrived](../book-1/05-whether-it-arrived.md) | The difference between an entitlement, a receipt and established delivery. |
-| [8. What Nobody Has to Ask Permission For](../book-1/08-what-nobody-has-to-ask-permission-for.md) | Ordinary freedom and the limits on public interference. |
-| [21. A Way to Be Heard](../book-1/21-a-way-to-be-heard.md) | Accessible claims, institutional duties and the conditions for relief. |
-| [31. The Five Joints](../book-1/31-the-five-joints.md) | The extended argument, historical sources, objections and costs. |
+| [1. The Child With Nobody](https://github.com/dhilipsiva/rights-nobody-has-to-earn/blob/93fa5662/book-1/01-the-child-with-nobody.md) | Unconditional standing tested from a minimal birth record. |
+| [5. Whether It Arrived](https://github.com/dhilipsiva/rights-nobody-has-to-earn/blob/93fa5662/book-1/05-whether-it-arrived.md) | The difference between an entitlement, a receipt and established delivery. |
+| [8. What Nobody Has to Ask Permission For](https://github.com/dhilipsiva/rights-nobody-has-to-earn/blob/93fa5662/book-1/08-what-nobody-has-to-ask-permission-for.md) | Ordinary freedom and the limits on public interference. |
+| [21. A Way to Be Heard](https://github.com/dhilipsiva/rights-nobody-has-to-earn/blob/93fa5662/book-1/21-a-way-to-be-heard.md) | Accessible claims, institutional duties and the conditions for relief. |
+| [31. The Five Joints](https://github.com/dhilipsiva/rights-nobody-has-to-earn/blob/93fa5662/book-1/31-the-five-joints.md) | The extended argument, historical sources, objections and costs. |
 
 To assemble the sample from this checkout, follow the
-[browser setup instructions](../book-1/README.md#read-or-assemble-the-book), then run:
+[browser setup instructions](https://github.com/dhilipsiva/rights-nobody-has-to-earn/blob/93fa5662/book-1/README.md#read-or-assemble-the-book), then run:
 
 ```bash
 uv run tools/build_book.py --sample
@@ -207,7 +207,7 @@ cover the full HTML and all packaged EPUB documents at 360px and 1280px.
 These are bounded formal and rendering checks within the same AI-assisted
 project, not independent editorial endorsement.
 
-The [method](../book-1/method.md) discloses AI assistance and explains what
+The [method](https://github.com/dhilipsiva/rights-nobody-has-to-earn/blob/93fa5662/book-1/method.md) discloses AI assistance and explains what
 the checks establish. No independent expert endorsement, external reader
 testing or successful operation of the proposed society is claimed. Real-world
 inputs, honest institutions, resources and successful remedies cannot be
@@ -241,4 +241,4 @@ check its current official requirements, including sample length, author
 information, rights and AI-disclosure policies. Contact, submission and any
 contract are separate decisions; none has taken place through this package.
 
-This proposal is licensed under [CC BY 4.0](../book-1/LICENSE-CC-BY).
+This proposal is licensed under [CC BY 4.0](https://github.com/dhilipsiva/rights-nobody-has-to-earn/blob/93fa5662/book-1/LICENSE-CC-BY).

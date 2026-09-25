@@ -66,9 +66,9 @@ ratified 2026-09-24* and recorded in `CLAUDE.md`.
   Gate C. Preserve the legacy manuscripts.
 - Preserve the unnumbered epigraph and method, editorial order and the
   majority-derived length rule. Ruling D2 adds one labelled argument section to
-  each derived chapter and measures the length rule by section; until item 53
-  builds that tooling, the opening, Part V and the method remain the only
-  non-derived text. The existing appendix is a carried archive, not an extra
+  each derived chapter and measures the length rule by section; item 53 built
+  that tooling, and until items 54–57 write the sections, the opening, Part V
+  and the method remain the only non-derived text. The existing appendix is a carried archive, not an extra
   channel for new reader-facing arguments.
 - **Current design throughout — author instruction, 2026-09-18.** Every
   reader-facing part, including the opening, Part V and optional method, must
@@ -217,44 +217,19 @@ unimplemented until the items named here land.
 
 ## Ordered revision backlog
 
-Work in this order: items 53–63 carry the structure and the rewrite under the
-ratified rulings; item 64 finishes production, 65 closes the revision, and 66
-is optional. Numbering continues from items 01–33, which `CLAUDE.md` records;
-items 34–52 and 67–72 are complete and recorded there too. Chapter numbers
-refer to the [current reading sequence](book-1/contents.json), which the plan
-also uses, until item 53 changes it.
+Work in this order: items 54–63 carry the rewrite under the ratified rulings;
+item 64 finishes production, 65 closes the revision, and 66 is optional.
+Numbering continues from items 01–33, which `CLAUDE.md` records; items 34–53
+and 67–72 are complete and recorded there too. Chapter numbers refer to the
+[current reading sequence](book-1/contents.json), which item 53 made the plan's
+§4.2 table; the plan's own §14 punch list uses the earlier numbers, which
+`tools/maps/2026-09-25-restructure.json` maps to these.
 
 ### Structure and rewrite
 
-- [ ] **53. Restructure the manuscript and build the tooling the rulings need.**
-
-  **Scope:** `book-1/contents.json`, `src/authoring/contents.rs`,
-  `tools/relocate.py`, `tools/build_book.py`, the development tests, file names,
-  pin pairs, suites, coverage, receipts and every locator; plan §4.2; rulings
-  D2, D3, D5 and D7.
-
-  Apply ruling D7's table. `tools/relocate.py` performs renames and renumbering
-  only, so extend it to merges and splits, or script them under the same checks:
-  nothing lost, every non-comment pins line accounted for, and no stale
-  reference left. Merge chapter 25's pins so that its closing unscoped `:accept`
-  comes last. Extend the manifest for a labelled case opening each Part (D3) and
-  for Part V's two chapters, since `part_v()` expects exactly one. Move the
-  opening's reference material to the back matter and update
-  `opening_note_navigation_matches_the_manifest`, and update `SAMPLE_CHAPTERS`
-  and the sample's cover.
-
-  Mark argument sections (D2) so that the digit rule, the figure bindings,
-  reader coverage and the length measure treat derived and argued text
-  separately, with the majority-derived rule measured by section. Every derived
-  chapter keeps its paired pins and live case, and engines still precede breaks.
-
-  **Done when:** the manifest, directory and assembled copies agree, every
-  reference resolves, the development tests pass with their section-aware
-  checks, and the complete verifier passes.
-
 - [ ] **54. Rewrite Part I.**
 
-  **Scope:** current Chapters 1–7; plan §4.3, §8.6 and §14; rulings D2, D3 and
+  **Scope:** Part I, Chapters 1–6; plan §4.3, §8.6 and §14; rulings D2, D3 and
   D5.
 
   Rewrite each chapter in the shape ruling D2 sets. The derived account comes
@@ -267,11 +242,11 @@ also uses, until item 53 changes it.
 
   Take the P1 chapters first, following the plan's punch list. In the child
   chapter, keep the four ways a person enters the record and move the birth-rule
-  counterfactual to the companion. Cut Chapter 3's cases to four and move out
-  its vocabulary-change and carry mechanics. Make Chapter 5 the showcase for
+  counterfactual to the companion. Cut Chapter 2's cases to four and move out
+  its vocabulary-change and carry mechanics. Make Chapter 4 the showcase for
   recipient-side evidence, keep its claims table and move its custody material
   to Part IV. Bring the allocation literature and the triage cases to Chapter
-  6's argument, and the tiered bearer and systemic remedy to Chapter 7. Add the
+  5's argument, and the tiered bearer and systemic remedy to Chapter 6. Add the
   walkthrough of a claim that fails: one claim from first contact through
   assistance, provision, evidence and dispute to failed responses from both
   reviewer and alternate, and on to remedy, with no timings or staffing, which
@@ -284,7 +259,7 @@ also uses, until item 53 changes it.
 
 - [ ] **55. Rewrite Part II, and add "An Ordinary Week".**
 
-  **Scope:** current Chapters 8–15; plan §8.6 and §14; rulings D2, D3, D7 and
+  **Scope:** Part II, Chapters 7–15; plan §8.6 and §14; rulings D2, D3, D7 and
   D9.
 
   Rewrite in item 54's shape. Write the merged work and contribution chapter
@@ -302,7 +277,7 @@ also uses, until item 53 changes it.
 
 - [ ] **56. Rewrite Part III.**
 
-  **Scope:** current Chapters 16–22; plan §14; rulings D2 and D3.
+  **Scope:** Part III, Chapters 16–22; plan §14; rulings D2 and D3.
 
   Rewrite in item 54's shape. Keep the recall insight at the front of Chapter 16
   and move its counterfactual to the companion. Add a diagram of the bodies to
@@ -316,15 +291,15 @@ also uses, until item 53 changes it.
 
 - [ ] **57. Rewrite Part IV.**
 
-  **Scope:** current Chapters 23–30; plan §14; rulings D2, D3, D5 and D7.
+  **Scope:** Part IV, Chapters 23–28; plan §14; rulings D2, D3, D5 and D7.
 
   Rewrite in item 54's shape. Write the merged chapter on findings about people,
   with its reach stated first (item 41) and its cases cut to four. Keep the
   distinction that a disclosure against a private person opens no shield.
-  Rebuild Chapter 27 on its principle, keeping its title and first line. Keep
-  Chapter 28's severity table and cut its names to five. Keep Chapter 29's
+  Rebuild Chapter 25 on its principle, keeping its title and first line. Keep
+  Chapter 26's severity table and cut its names to five. Keep Chapter 27's
   absolute prohibitions and add the cost of a lapse (item 39). Compare Chapter
-  30 with national preventive mechanisms and human rights institutions in its
+  28 with national preventive mechanisms and human rights institutions in its
   argument section. Part IV opens with a documented case such as *Hussainara
   Khatoon*.
 
@@ -397,7 +372,7 @@ also uses, until item 53 changes it.
   written for the serious non-specialist. Make the statement of AI assistance
   specific: which parts were drafted, edited, coded or tested with it, and how
   the outputs were checked. Disclose that the constitution, pins and engine
-  share a maintainer. The reference material moves to the back under item 53.
+  share a maintainer. The reference material is at the back (item 53).
 
   **Done when:** Chapter 1 begins within five pages, the opening reads without
   the glossary, and it promises neither operation nor proof.
@@ -469,10 +444,9 @@ also uses, until item 53 changes it.
   claims made executable.*, on the cover and in the EPUB and PDF metadata, the
   READMEs and the proposal, and its promise on the back cover. Remove web
   artefacts from print: the closing "Continue to Chapter 1, or return to the
-  contents." (`book-1/00-opening-note.md:447`), which repeats "Begin with
-  Chapter 1" (`:84`); the "↩︎" returns the footnote renderer adds; and phrasing
-  that fails on paper, such as "the choices below lead directly to them"
-  (`:86-87`). Make cross-references numeric. Draw the duty chain, delivery
+  contents." at the end of `book-1/reference.md`, which repeats the opening's
+  "Begin with Chapter 1"; the "↩︎" returns the footnote renderer adds; and
+  phrasing that fails on paper. Make cross-references numeric. Draw the duty chain, delivery
   evidence, the placement ceiling, the democratic corridor and the flow
   constraints as diagrams, each with its prose equivalent. Add a bibliography
   and an index. Publish a plain-language summary edition, since the constitution

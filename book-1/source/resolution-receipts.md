@@ -15,7 +15,7 @@ gives disclosure no credit for closure.
 
 ### writable-credential — resolved-for-claim
 
-*Told in* `23-who-holds-the-pen.md`, "The authority to sign must follow from evidence".
+*Told in* `24-findings-about-people.md`, "The authority to sign must follow from evidence".
 
 **What failed.** An examiner's pen could be written down directly, so the credential a voiding needs was a fact somebody typed rather than a conclusion anything derived.
 
@@ -43,13 +43,13 @@ gives disclosure no credit for closure.
 
 ### student-clawback — resolved-for-claim
 
-*Told in* `26-clawback.md`, "Cira's separate claim".
+*Told in* `24-findings-about-people.md`, "Cira's separate claim".
 
 **What failed.** A student's recognition was docked for a teacher's adjudicated fraud — negative scoring of somebody who did nothing.
 
 **What changed.** The rule was deleted outright rather than narrowed, because students never mint and narrowing would have been repeal.
 
-**How the former attack is rerun.** `book-1/26-clawback.pins.nibli`
+**How the former attack is rerun.** `book-1/24-findings-about-people.pins.nibli`
 
 **What still does not follow.** That anything is ever un-minted. Loss stays a leaf and derivation stays monotone; the surviving guards never-mint rather than subtract.
 
@@ -57,13 +57,13 @@ gives disclosure no credit for closure.
 
 ### placement-marker — resolved-for-claim
 
-*Told in* `28-where-people-are-put.md`, "What the placement alarm sees".
+*Told in* `26-where-people-are-put.md`, "What the placement alarm sees".
 
 **What failed.** The marker meant to report bad placements fired on correctly placed people and on nobody who was misplaced — wrong every time it spoke.
 
 **What changed.** Every reported category and exact case/place is checked against qualified placement; competing reviewed candidates withhold custody. A positive named supported residence is available only under its own evidence, not by default from a missing home.
 
-**How the former attack is rerun.** `book-1/28-where-people-are-put.pins.nibli`
+**How the former attack is rerun.** `book-1/26-where-people-are-put.pins.nibli`
 
 **What still does not follow.** That anyone reads the marker, acts on it, or moves anybody. It is an alarm, not a remedy.
 
@@ -85,13 +85,13 @@ gives disclosure no credit for closure.
 
 ### shield-without-a-target — resolved-for-claim
 
-*Told in* `24-the-shield.md`, "Faro: a private target".
+*Told in* `23-the-shield.md`, "Faro: a private target".
 
 **What failed.** The shield asked what you exposed and not whom: any defendant could name their own accuser or victim and become unjailable.
 
 **What changed.** The rule now asks who was exposed, so exposing the person you injured earns nothing.
 
-**How the former attack is rerun.** `book-1/24-the-shield.pins.nibli`
+**How the former attack is rerun.** `book-1/23-the-shield.pins.nibli`
 
 **What still does not follow.** That the exposure was true or made in good faith. Absence of a deceit finding protects, and that default is priced rather than removed.
 
@@ -127,13 +127,13 @@ gives disclosure no credit for closure.
 
 ### voiding-without-a-ground — resolved-for-claim
 
-*Told in* `25-voiding.md`, "The paired finding".
+*Told in* `24-findings-about-people.md`, "The paired finding".
 
 **What failed.** A credibility finding took two documented examinations from two independently credentialed signers and asked nothing about what they had found, so the record could always show who destroyed a person's word and never on what. Requiring a shared cited ground alone was not enough either: the entry naming a ground is the entry an examiner is paid for, and two examiners who looked on a complaint and found nothing would have voided the person they cleared.
 
 **What changed.** The completed case binds subject, incident, closed ground, evidence, independent signers, procedure and eligibility at decision. A prospective permission alone imposes no finding. Conflicting case fields and borrowed incidents do not qualify.
 
-**How the former attack is rerun.** `book-1/25-voiding.pins.nibli`
+**How the former attack is rerun.** `book-1/24-findings-about-people.pins.nibli`
 
 **What still does not follow.** That a named finding is true. Two signers who cite a lie where there was none void an innocent exactly as smoothly as two honest ones void a liar; what the closure buys is that the word must be one of the named findings and that widening the list is a visible edit.
 
@@ -141,13 +141,13 @@ gives disclosure no credit for closure.
 
 ### voiding-with-no-way-back — resolved-for-claim
 
-*Told in* `25-voiding.md`, "The way back, and who has to answer".
+*Told in* `24-findings-about-people.md`, "The way back, and who has to answer".
 
 **What failed.** A recorded expungement stopped only the mark carried out of an earlier record. The pair of examinations that voided somebody in this record, and an adjudicated lie, both derived the finding again in the same breath, so the appeals body could declare a voiding spent and the record would disagree with it.
 
 **What changed.** Qualified independent restoration identifies the finding and subject, incident, ground, evidence, procedure and decision history. It ends the same personal consequence across record names, including an adjudicated family conflict, while distinct incidents and grounds remain separate.
 
-**How the former attack is rerun.** `book-1/25-voiding.pins.nibli`
+**How the former attack is rerun.** `book-1/24-findings-about-people.pins.nibli`
 
 **What still does not follow.** That an external court acted or that public credentials are restored. Personal restoration does not remove a separate carried appointment restriction.
 
@@ -155,13 +155,13 @@ gives disclosure no credit for closure.
 
 ### shield-as-general-immunity — resolved-for-claim
 
-*Told in* `24-the-shield.md`, "The case the shield stops covering".
+*Told in* `23-the-shield.md`, "The case the shield stops covering".
 
 **What failed.** The conviction rule read the shield unscoped, so one exposure of one authority blocked every conviction of that person, for anything, without limit and without the exposure ever being examined. That is not a protection against retaliation; it is a general immunity bought with a single write, and the harm it never names falls on whoever the unrelated offence was against.
 
 **What changed.** The shield can be answered only for a named unrelated prosecution. Each deciding reviewer needs case-specific authority and positive eligibility findings from separate authorised qualification and qualification-review functions. All functions are distinct and exclude defendant, injured person and prosecuting court. An authorised actual-conflict finding blocks the participant across favourable certifier pairs. A mere disclosure does not determine reviewer eligibility. Missing evidence preserves protection; no general credibility score gates it.
 
-**How the former attack is rerun.** `book-1/24-the-shield.pins.nibli`
+**How the former attack is rerun.** `book-1/23-the-shield.pins.nibli`
 
 **What still does not follow.** That a prosecution is just, that the supplied appointments and independence findings are authentic, or that any hearing, notice, challenge or remedy occurred. The rules establish only the consequences of the supplied case-bound premises.
 
@@ -169,13 +169,13 @@ gives disclosure no credit for closure.
 
 ### custody-shelter-read-as-arrival — resolved-for-claim
 
-*Told in* `27-a-prisoner-is-a-person.md`, "The child with nobody".
+*Told in* `25-a-prisoner-is-a-person.md`, "The child with nobody".
 
 **What failed.** The book's central comparison read a derived legal consequence as an arrival. Shelter for a confined person is concluded from the confinement — no receipt names them, no witness attests anything, and the rule asks for neither — and the prose called it the floor actually arriving, and called the prisoner the one person who has the thing. That is a liveness claim resting on a formal obligation, which is the one posture the assurance portfolio says may never be derived.
 
 **What changed.** Custody, placement and physical holding no longer produce shelter or speech actuality. Duties remain, and independently witnessed recipient evidence supplies the shelter conclusion through the ordinary delivery route. The child and confined person both lack initial receipts.
 
-**How the former attack is rerun.** `book-1/27-a-prisoner-is-a-person.pins.nibli`
+**How the former attack is rerun.** `book-1/25-a-prisoner-is-a-person.pins.nibli`
 
 **What still does not follow.** That anybody was sheltered, fed or heard in the world. Independent recipient-side evidence is supplied to the computation and must be authenticated outside it.
 
@@ -185,7 +185,7 @@ gives disclosure no credit for closure.
 
 ### unread-duty — operationally-unresolved
 
-*Told in* `30-when-the-system-notices-it-broke.md`, "From a marker to a duty".
+*Told in* `28-when-the-system-notices-it-broke.md`, "From a marker to a duty".
 
 **What failed.** A recorded breach concluded a two-place duty that nothing read, so the audit ended in a determination and stopped.
 
@@ -199,13 +199,13 @@ gives disclosure no credit for closure.
 
 ### nobody-obliged-to-begin — operationally-unresolved
 
-*Told in* `07-who-owes-and-what-follows.md`, "The duty to begin without a request".
+*Told in* `06-who-owes-and-what-follows.md`, "The duty to begin without a request".
 
 **What failed.** Every route into this design began with a record somebody wrote — a request, a challenge, a receipt, a reviewed finding — and each was unconditional in the ways that usually stop people while still waiting for an act. For a person nobody had come for, the whole apparatus sat downstream of an act nobody was obliged to perform.
 
 **What changed.** The initiation of assistance and representation is owed by a named office to every person without a request, its whole condition being personhood, and an entry from any writer at all lands a review duty on a separate office. What discharging it must contain is a reviewed appointment in the life-course family: a closed list of triggers, a representative for one named matter, a named receipt witness the acting body must authorise, the person's own voice retained, minimum information, a source-bound end, a challenge reader and an independent alternate. The entry is also a standing root, so it reaches a person no other record has entered, and the appointment completes only for somebody a standing encounter has reached.
 
-**How the former attack is rerun.** `book-1/07-who-owes-and-what-follows.pins.nibli`
+**How the former attack is rerun.** `book-1/06-who-owes-and-what-follows.pins.nibli`
 
 **What still does not follow.** That anybody notices. No rule reads a duty, so nothing establishes that an advocate exists, was funded, was told, arrived or acted, and the entry that opens the escalation must still be written by somebody who saw.
 
@@ -215,7 +215,7 @@ gives disclosure no credit for closure.
 
 ### kinship-silence — externally-bounded
 
-*Told in* `25-voiding.md`, "What it costs".
+*Told in* `24-findings-about-people.md`, "What it costs".
 
 **What failed.** Independence was manufactured from missing parent, marriage and sibling entries, so a missing record looked exactly like no relationship.
 
@@ -229,7 +229,7 @@ gives disclosure no credit for closure.
 
 ### roster-standing — externally-bounded
 
-*Told in* `02-who-counts.md`, "Standing without a roster".
+*Told in* `01-the-child-with-nobody.md`, "Standing without a roster".
 
 **What failed.** Personhood waited on somebody maintaining a roster, so a person never entered was indistinguishable from a person who does not exist.
 
@@ -243,7 +243,7 @@ gives disclosure no credit for closure.
 
 ### floor-delivery-markers — externally-bounded
 
-*Told in* `05-whether-it-arrived.md`, "Owed is not the same as delivered".
+*Told in* `04-whether-it-arrived.md`, "Owed is not the same as delivered".
 
 **What failed.** Nothing watches the floor debt against arrival: the design audits what it does and not what it owes.
 
@@ -259,7 +259,7 @@ gives disclosure no credit for closure.
 
 ### attester-collusion — irreducible-limitation
 
-*Told in* `25-voiding.md`, "What it costs".
+*Told in* `24-findings-about-people.md`, "What it costs".
 
 **What failed.** Nothing authenticates a witness or checks that attested evidence is true.
 
@@ -273,7 +273,7 @@ gives disclosure no credit for closure.
 
 ### one-sided-closure — irreducible-limitation
 
-*Told in* `03-what-counts-as-evidence.md`, "Changing the vocabulary".
+*Told in* `02-what-the-record-may-say.md`, "Changing the vocabulary".
 
 **What failed.** The closed record is extensional and one-sided: a word never used can be declared and used in the same breath, and a direct vocabulary widening bypasses the amendment machinery entirely.
 

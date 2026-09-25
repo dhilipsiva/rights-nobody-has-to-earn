@@ -594,7 +594,7 @@
   ],
   "narrowness_impacts": [
     {
-      "artifact_ref": "book-1/03-what-counts-as-evidence.md::A proposal's declared target shows neither its effects",
+      "artifact_ref": "book-1/02-what-the-record-may-say.md::A proposal's declared target shows neither its effects",
       "current_claim": "Declared names confer neither amendment authority nor personal credibility consequences. Vocabulary changes require review bound to the exact candidate, political consent and compatibility evidence.",
       "classification": "revised_and_scoped",
       "reason": "The enacted source has no parallel law-label producer. The bounded cases distinguish unauthorised source edits and weaker target-label counterfactuals from exact-candidate certification, publication and effective selection.",
@@ -615,7 +615,7 @@
       "future_trigger": "Reassess if candidate-binding, core review, publication, effective selection or their personal-consequence limits change."
     },
     {
-      "artifact_ref": "book-1/31-the-five-joints.md::The consequential records remain the constitutional source and the facts",
+      "artifact_ref": "book-1/29-the-five-joints.md::The consequential records remain the constitutional source and the facts",
       "current_claim": "The constitutional source and supplied record remain separate consequential capture surfaces, and neither authenticates itself.",
       "classification": "revised_and_scoped",
       "reason": "The audit changes temporary source copies directly and therefore exposes source capture rather than collapsing it into fact-record capture.",
@@ -629,7 +629,7 @@
       "future_trigger": "Reassess when delivery, funding, comprehensive hostile-rule coverage, or authenticated source preservation becomes current and executable."
     },
     {
-      "artifact_ref": "book-1/31-the-five-joints.md::repository check is not democratic approval.",
+      "artifact_ref": "book-1/29-the-five-joints.md::repository check is not democratic approval.",
       "current_claim": "Repository review can reject an unreviewed vocabulary widening but is not constitutional approval, entrenchment, or complete semantic certification.",
       "classification": "revised_and_scoped",
       "reason": "The admission-widening case is accepted by the engine and then rejected by the current assertion-surface pipeline at source/inventory reconciliation; this is repository exposure, not an Article 9 verdict.",

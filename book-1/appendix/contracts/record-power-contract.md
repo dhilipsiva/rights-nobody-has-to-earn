@@ -16,7 +16,7 @@ power over another, is unchanged. The classification is
 checks the property.
 
 **Comparative argument — item 24, 2026-09-21.** The exact text of
-[Records and coordination](../../31-the-five-joints.md#records-and-coordination)
+[Records and coordination](../../29-the-five-joints.md#records-and-coordination)
 is session-drafted and author-approved under the standing delegated approval.
 It compares the existing purpose limits with broader linked records under
 professional discretion. Both missed coordination and unrelated reuse can

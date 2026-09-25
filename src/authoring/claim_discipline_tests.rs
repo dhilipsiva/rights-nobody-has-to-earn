@@ -2,11 +2,13 @@
 
 //! Claim-type discipline, where it is mechanical.
 //!
-//! The derived chapters carry no figures at all — that is the counted-claims
-//! rule. Part V does, as hand-written prose, and every one of them rests on a
-//! registry entry. This binds the two together by name, so a case cannot be
-//! argued in the book without a source in the registry, and a source cannot be
-//! dropped from the registry while the book still leans on it.
+//! The derived text carries no figures at all — that is the counted-claims
+//! rule. The argued text does, as hand-written prose: Part V, and since ruling
+//! D2 the one labelled argument section that may close each derived chapter.
+//! Every figure there rests on a registry entry. This binds the two together by
+//! name, so a case cannot be argued in the book without a source in the
+//! registry, and a source cannot be dropped from the registry while the book
+//! still leans on it.
 //!
 //! Ruled 2026-09-15 under delegated approval: Part V's figures **stay
 //! hand-written**, and traceability is this binding rather than inline registry
@@ -19,12 +21,24 @@ use regex::Regex;
 use serde_json::Value;
 use std::collections::BTreeSet;
 
-/// Part V, read from the manifest: the one landed exempt chapter.
-fn part_v(context: &Context) -> String {
-    contents::Contents::load(context)
-        .expect("manifest")
-        .part_v()
-        .expect("Part V")
+/// The book's argued text, read from the manifest: Part V's chapters and every
+/// derived chapter's argument section, whitespace-normalised so a binding does
+/// not break when a line is rewrapped.
+fn argued_text(context: &Context) -> String {
+    let contents = contents::Contents::load(context).expect("manifest");
+    let mut text = String::new();
+    for path in contents.part_v().expect("Part V") {
+        text.push_str(&context.read(&path).expect("Part V"));
+        text.push('\n');
+    }
+    for path in contents.derived() {
+        let chapter = context.read(&path).expect("chapter");
+        let (_, argued) = contents::split_argument(&chapter)
+            .unwrap_or_else(|problem| panic!("{path}: {problem}"));
+        text.push_str(argued);
+        text.push('\n');
+    }
+    text.split_whitespace().collect::<Vec<_>>().join(" ")
 }
 
 /// Each historical case Part V argues from, the registry entry it rests on, and
@@ -184,12 +198,7 @@ fn every_part_v_figure_rests_on_a_registry_entry() {
     let context = Context::discover().expect("repository");
     // Match against whitespace-normalised prose: these phrases sit across line
     // wraps, and a binding that broke on rewrapping would be noise, not a check.
-    let prose = context
-        .read(part_v(&context))
-        .expect("Part V")
-        .split_whitespace()
-        .collect::<Vec<_>>()
-        .join(" ");
+    let prose = argued_text(&context);
     let registry = registry(&context);
     let ids: Vec<&str> = registry["claims"]
         .as_array()
@@ -205,9 +214,10 @@ fn every_part_v_figure_rests_on_a_registry_entry() {
         );
         assert!(
             prose.contains(figure),
-            "the registry still carries '{id}' for {case}, but Part V no longer \
-             says '{figure}'. Either the prose changed and this binding is \
-             stale, or the entry is now unused."
+            "the registry still carries '{id}' for {case}, but no argued text \
+             says '{figure}' — neither Part V nor an argument section. Either \
+             the prose changed and this binding is stale, or the entry is now \
+             unused."
         );
     }
     // One source may legitimately carry several of Part V's figures, so the
@@ -266,10 +276,16 @@ fn the_derived_chapters_still_carry_no_figures() {
     // The derived set is the manifest's, not a count: `reference_integrity_tests`
     // proves the manifest and the directory agree, so a chapter on disk that the
     // manifest does not know fails there rather than here.
+    // An argument section (ruling D2) is argued text and may cite a year or a
+    // figure with its registry source; the check reads the derived text before
+    // it, which is every line up to the section's labelled heading.
     let files = contents::Contents::load(&context).expect("manifest").derived();
     assert!(!files.is_empty(), "the manifest lists no derived chapters");
     for path in files {
-        for (index, line) in context.read(&path).expect("chapter").lines().enumerate() {
+        let chapter = context.read(&path).expect("chapter");
+        let (derived, _) = contents::split_argument(&chapter)
+            .unwrap_or_else(|problem| panic!("{path}: {problem}"));
+        for (index, line) in derived.lines().enumerate() {
             if line.starts_with("# ") || line.starts_with("{") {
                 continue;
             }
@@ -285,6 +301,27 @@ fn the_derived_chapters_still_carry_no_figures() {
             );
         }
     }
+}
+
+/// Ruling D2 lets each derived chapter close with one labelled argument
+/// section. Every derived chapter either has none or has exactly one, headed
+/// `## Argument: …` and last, so the derived-text checks and the argued-text
+/// bindings always read the text they are meant to.
+#[test]
+fn every_argument_section_is_labelled_single_and_last() {
+    let context = Context::discover().expect("repository");
+    for path in contents::Contents::load(&context).expect("manifest").derived() {
+        let chapter = context.read(&path).expect("chapter");
+        if let Err(problem) = contents::split_argument(&chapter) {
+            panic!("{path}: {problem}");
+        }
+    }
+    // Sabotage: a figure in derived text before the label still counts; the
+    // same figure after the label does not.
+    let (derived, argued) =
+        contents::split_argument("# A\n\nIt reached 1996 homes.\n\n## Argument: why\n\nIn 1996, I argue.\n")
+            .expect("well formed");
+    assert!(derived.contains("1996") && argued.contains("1996"));
 }
 
 /// Every rule the method part quotes has to be a rule some file actually holds.

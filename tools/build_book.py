@@ -44,7 +44,7 @@ TITLE = "The Rights Nobody Has to Earn"
 AUTHOR = "dhilipsiva"
 REPOSITORY = "https://github.com/dhilipsiva/rights-nobody-has-to-earn/blob/main/"
 EPUB_NS = "http://www.idpf.org/2007/ops"
-SAMPLE_CHAPTERS = (1, 5, 8, 21, 31)
+SAMPLE_CHAPTERS = (1, 4, 8, 21, 29)
 UI_PREFIX = "/rights-nobody-has-to-earn/"
 UI_ORIGIN = "https://dhilipsiva.dev"
 
@@ -175,7 +175,13 @@ def read_documents() -> list[Document]:
     rows = [(name, None, None, None) for name in manifest["front"]]
     for index, part in enumerate(manifest["parts"], 1):
         label = f"Part {roman(index)} — {part['title']}"
-        rows.extend((c["file"], c["number"], label, c["title"]) for c in part["chapters"])
+        # A Part's opening case, once written, heads the Part; a reserved
+        # chapter or opener has no file yet and is not an input.
+        opener = part.get("opener", {})
+        if opener.get("status") == "landed":
+            rows.append((opener["file"], None, label, opener["title"]))
+        rows.extend((c["file"], c["number"], label, c["title"])
+                    for c in part["chapters"] if c["status"] == "landed")
     rows.extend((name, None, None, None) for name in manifest["back"])
     documents = []
     seen = set()
@@ -236,7 +242,7 @@ def article(doc: Document, documents: list[Document], mode: str) -> str:
         if mode == "epub" and link.get("role") == "doc-noteref":
             link.set("epub:type", "noteref")
     body = "".join(ET.tostring(child, encoding="unicode", method="xml") for child in tree)
-    part = f'<p class="part-label">{html.escape(doc.part)}</p>' if doc.number and doc.part else ""
+    part = f'<p class="part-label">{html.escape(doc.part)}</p>' if doc.part else ""
     kind = ' class="epigraph"' if doc.stem == "epigraph" else ""
     return f'<article id="{doc.stem}"{kind}>{part}{body}</article>'
 
@@ -313,7 +319,9 @@ def export_ui(output: Path, documents: list[Document]) -> None:
 
 def cover(sample: bool = False) -> str:
     status = 'Book 1 · Selected chapters' if sample else 'Book 1 · Review copy'
-    selection = ('<p>Chapters 1, 5, 8, 21 and 31. Cross-references beyond this '
+    numbers = [str(n) for n in SAMPLE_CHAPTERS]
+    listed = ", ".join(numbers[:-1]) + " and " + numbers[-1]
+    selection = (f'<p>Chapters {listed}. Cross-references beyond this '
                  'selection open the public manuscript.</p>') if sample else ''
     return f'''<header class="cover"><h1>{TITLE}</h1>
 <p>{AUTHOR}</p><p class="edition-status">{status}</p>{selection}

@@ -148,35 +148,35 @@ The exact reviewed source implements cumulative T1 reconciliation, a witnessed c
 
 ## Narrowness-impact manifest
 
-### `book-1/03-what-counts-as-evidence.md`
+### `book-1/02-what-the-record-may-say.md`
 
 - **Standing claim:** The record/evidence distinction and deletion boundary include independently witnessed transitions. T1 can preserve supplied dual-witness predecessor standing but cannot turn that evidence route into universal standing.
 - **Classification:** `revised_and_pinned`.
 - **Test route:** T1 manifest, injection, omission, forgery, dual-witness standing-continuity, standing-witness-withholding, and source-binding cases plus the assertion-surface and record-assurance contracts.
 - **Change trigger:** Any new temporal premise, writer, member scope, or effective source changes this claim and its pins.
 
-### `book-1/24-the-shield.md`
+### `book-1/23-the-shield.md`
 
 - **Standing claim:** The shield remains historically unbounded by event order; T2 can represent sequence but does not retrospectively erase exposure or answerability.
 - **Classification:** `preserved_and_pinned`.
 - **Test route:** T2 order-conflict cases and existing shield pins preserve exposure consequences in both order narratives.
 - **Change trigger:** Any shield consumer of precede, time, renewal, or expiry must revise this claim.
 
-### `book-1/25-voiding.md`
+### `book-1/24-findings-about-people.md`
 
 - **Standing claim:** Raw carry no longer acts alone; only reconciled carried status on the canonical TerminalTransition has legal effect, while forgiveness remains distinct from correction.
 - **Classification:** `revised_and_pinned`.
 - **Test route:** T1 canonical, disjoint, omitted, forged, injected, disappeared, replayed, successor-without-carry, status-conflict, and authority-polarity cases plus the bounded record red-team.
 - **Change trigger:** Any new carry consumer, disposition, correction, or clean-authority status changes this account.
 
-### `book-1/27-a-prisoner-is-a-person.md`
+### `book-1/25-a-prisoner-is-a-person.md`
 
 - **Standing claim:** A missed or disputed temporal renewal removes authority to confine without fabricating free or consuming personhood already supplied or derived through an independent route. T3 does not repair a withheld standing root.
 - **Classification:** `revised_and_pinned`.
 - **Test route:** T3 missing-renewal, canonical-successor, withheld-power-witness, judgment/victim-withholding, valid-release, typed-collision, wrong-case, and source-mismatch cases pin fail-closed custody, visible defects where readers exist, personhood, travel, the absence of fabricated free, and a full-source opaque floor entitlement in TA-22. Chapter, red-team, amendment, and placement suites add independent full-source entitlement coverage.
 - **Change trigger:** Any release, sentence, custody, standing, or post-release route changes this claim.
 
-### `book-1/04-what-you-are-owed.md`
+### `book-1/03-what-you-are-owed.md`
 
 - **Standing claim:** Once personhood is supplied or independently derived, T3 adds no temporal delivery or withholding gate to the entitlements and itemised debts. Universal standing itself remains a separate root contract.
 - **Classification:** `preserved_and_pinned`.
@@ -190,21 +190,21 @@ The exact reviewed source implements cumulative T1 reconciliation, a witnessed c
 - **Test route:** The withheld-adulthood-evidence case pins personhood, challenge, and Appeals duty independently of the typed age record; existing floor pins separately own event-abstraction compatibility.
 - **Change trigger:** Any change to the common-tier adulthood contract, its typed evidence, or the election interface must revise this boundary.
 
-### `book-1/29-the-one-thing-taken.md`
+### `book-1/27-the-one-thing-taken.md`
 
 - **Standing claim:** Custody remains the sole deprivation derived by conviction; an exact judgment- and victim-bound symbolic renewal on the canonical terminal lineage limits that power without duration arithmetic or a severity-to-time schedule.
 - **Classification:** `revised_and_pinned`.
 - **Test route:** T3 case, judgment, victim, collision, terminal-lineage, expiry-polarity, release, and no-personal-time-score cases plus the counted-claim guard preserve the title and scope.
 - **Change trigger:** Any second deprivation, metric duration, automatic release fact, or personal-duration rule retires the title, prose, registry claim, and counted-claim guard together.
 
-### `book-1/30-when-the-system-notices-it-broke.md`
+### `book-1/28-when-the-system-notices-it-broke.md`
 
 - **Standing claim:** Supplied temporal errors plus supplied challenge facts derive Appeals compatibility duties that feed exact source-bound typed reader/action routes. Withheld intake can suppress the premise, and neither compatibility nor typed duty performs correction or remedy.
 - **Classification:** `revised_and_pinned`.
 - **Test route:** Challenge-present and challenge-absent fresh processes query lease suspension, named errors, and compatibility duties; the obligations suite separately pins every current finding kind, wrong recipients, the typed bridge, positive nonresponse, alternates, continuity, remedies, systemic work, and individual non-delay while proving no filing receipt or automatic action.
 - **Change trigger:** Any change to the err/2 inventory, typed obliged bridge, source-bound reader route, or external receipt and action evidence must revise this endpoint.
 
-### `book-1/31-the-five-joints.md`
+### `book-1/29-the-five-joints.md`
 
 - **Standing claim:** Part V now distinguishes T3's supplied-record safety from external clock, publication, action, and remedy liveness.
 - **Classification:** `boundary_rewritten`.

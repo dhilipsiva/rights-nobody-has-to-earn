@@ -151,5 +151,5 @@ process. Formal refusal of a candidate leaves that edit physically possible,
 and a passing suite authenticates neither its authors nor its effects; it shows
 bounded relationships between recorded objects.
 
-The next chapter examines another claim that needs more than a name: who may
-sign a finding about someone else.
+The next chapters turn to what the design may do to a person, beginning with
+protection for someone who exposes authority.

@@ -12,9 +12,11 @@ are recorded in `CLAUDE.md` and are ratified but not yet implemented. The
 and is collection-only until Book 1 ships at Gate C.
 The constitution and substantive Nibli pins live under `book-1/source/`;
 `book-1/` is their reader projection, with chapter/pin pairs. Its labelled
-opening note, Part V, and method are the non-derived exceptions until ruling
-D2's items land; each derived chapter then closes with one labelled argument
-section. Book 2 remains inactive until Gate C and owns operation and
+opening note (whose map, glossary and index sit at the back in `reference.md`),
+Part V, and method are the non-derived exceptions; a derived chapter may close
+with one argument section headed `## Argument:` (ruling D2), which the checks
+read as argued text, and each Part may open with a labelled documented case
+(ruling D3), reserved in `contents.json` until written. Book 2 remains inactive until Gate C and owns operation and
 transition. Preserve the legacy manuscripts until their TODO harvest. Keep
 epigraph and method unnumbered.
 `ui/` is the Book 1 reader and live companion, published at
@@ -42,7 +44,7 @@ closure-successor, staged-candidate, and multi-hour batch requirement.
 ```bash
 ./verify.sh                 # all substantive pins and contradiction checks
 ./verify.sh --list          # show the execution inventory
-./verify.sh --only book-1/03-what-counts-as-evidence.pins.nibli
+./verify.sh --only book-1/02-what-the-record-may-say.pins.nibli
 ./generate.sh state-form    # explicit authoring, separate from verification
 ./generate.sh obligations
 ./generate.sh integrity

@@ -16,7 +16,7 @@ disability, poverty and culture have no admitted entry at all.
 
 ## Emergency comparison — item 24, 2026-09-21
 
-The exact [Part V argument](../../31-the-five-joints.md#emergency-action-without-suspended-rights)
+The exact [Part V argument](../../29-the-five-joints.md#emergency-action-without-suspended-rights)
 is session-drafted and author-approved under the standing delegated approval.
 It compares the current rule with a temporary, necessary, independently
 reviewable derogation regime retaining specified rights. The OHCHR-hosted

@@ -106,7 +106,7 @@ Encoded by:
 
 Encoded by:
 
-- `book-1/10-contribution.pins.nibli`
+- `book-1/09-work-pay-and-contribution.pins.nibli`
 - `src/authoring/floor_vector_tests.rs`
 
 - **held** (totalising-rule) — Recognition is arity one, minted by three doors, read by nothing and never joined with itself.
@@ -126,7 +126,7 @@ Encoded by:
 
 Encoded by:
 
-- `book-1/29-the-one-thing-taken.pins.nibli`
+- `book-1/27-the-one-thing-taken.pins.nibli`
 - `tests/pins/public-safety/firewalls/arrest/expect.pins.nibli`
 - `tests/pins/red-team/an-accusation-nobody-signed/expect.pins.nibli`
 - `tests/pins/red-team/counterfactual-severity-without-the-court/expect.pins.nibli`

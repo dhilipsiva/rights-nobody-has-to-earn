@@ -1,0 +1,379 @@
+# ── Chapter 9 fidelity pins: "Work, Pay and Contribution" ──────────────────────
+#
+# KIND: CONTENT pin. Run:
+#   ./verify.sh --only book-1/09-work-pay-and-contribution.pins.nibli
+#   ./verify.sh          # all substantive pins and contradiction checks
+#
+# The chapter's case lists tests/pins/records/child_with_nobody/fixture.nibli,
+# so Nell is in the record with one entry. Every other probe name below is
+# fresh: a scheme, a carrier, a certifier, a payer and an attester that the
+# cast never mentions, so nothing here can complete a rule for a cast member.
+#
+# The families this chapter renders carry their own executable coverage, cited
+# rather than duplicated:
+#   book-1/source/economic-constitution.pins.nibli      every barrier, FS-CCE-223..
+#   book-1/source/income-security.pins.nibli            the supplement family
+#   book-1/source/qualifications-compensation.pins.nibli the certificate and pay family
+#   book-1/source/economic-power-061.pins.nibli         mandatory occupational licence
+#   book-1/source/economic-power-070.pins.nibli         licence withdrawal
+#   book-1/source/economic-power-080.pins.nibli         temporary licence control
+#   book-1/source/economic-power-083.pins.nibli         narrow compulsory service continuity
+#   book-1/source/economic-power-079.pins.nibli         insolvency restructuring
+#   book-1/source/economic-power-069.pins.nibli         receivership
+#   book-1/source/counterfactual/no-economic-work-freedom.pins.nibli
+#   book-1/source/counterfactual/no-economic-floor-gate.pins.nibli
+#   book-1/source/counterfactual/no-certificate-rule.pins.nibli
+#   book-1/source/counterfactual/no-income-supplement-rule.pins.nibli
+#   book-1/source/counterfactual/no-income-adjudicator-independence.pins.nibli
+#   book-1/source/counterfactual/no-compensation-attester-independence.pins.nibli
+#   book-1/source/counterfactual/unguarded-contribution-reader.pins.nibli
+#   book-1/source/counterfactual/unguarded-compensation-reader.pins.nibli
+#       the two hostile readers the engine accepts; the development test
+#       floor_vector_tests::a_purpose_limited_record_is_read_only_for_its_purpose
+#       is the guard, and these copies are its watched failing controls.
+#
+# WHAT FALSE MEANS HERE: a FALSE is pinned only where the KB could have said
+# TRUE, and the comment says what would flip it.
+
+:expect-pins 90
+
+# Constitutional prohibitions hold for a cast member by name. A prevents
+# conclusion alone is not proof that the engine rejects every prohibited rule.
+? prevents(Adam, FloorContributionCondition).
+# => TRUE
+
+? prevents(Adam, WorkChoiceRefusalExitDenial).
+# => TRUE
+
+? prevents(Adam, WorkConstitutionalGate).
+# => TRUE
+
+? prevents(Adam, WorkerStatusLabelControl).
+# => TRUE
+
+? prevents(Adam, LabourLabelAsProof).
+# => TRUE
+
+? prevents(Adam, CustodyForcedWork).
+# => TRUE
+
+? prevents(Adam, CustodyLabourProtectionDenial).
+# => TRUE
+
+? prevents(Adam, OwnershipBasedLabourMinimumDenial).
+# => TRUE
+
+? prevents(Adam, CollectiveActionSuppression).
+# => TRUE
+
+? prevents(Adam, MinimumServiceIndividualCompulsion).
+# => TRUE
+
+? prevents(Adam, IndividualWorkConscription).
+# => TRUE
+
+? prevents(Adam, BlanketStrikeBan).
+# => TRUE
+
+? prevents(Adam, QualificationPersonStatusSpillover).
+# => TRUE
+
+? prevents(Adam, QualificationStatusBarrier).
+# => TRUE
+
+? prevents(Adam, CompensationRecognitionCoupling).
+# => TRUE
+
+? prevents(Adam, CompensationFalseVerdictCoupling).
+# => TRUE
+
+? prevents(Adam, CompensationLossVerdictCoupling).
+# => TRUE
+
+? prevents(Adam, ContributionRecordPurposeReuse).
+# => TRUE
+
+? prevents(Adam, EconomicScoreReuse).
+# => TRUE
+
+? prevents(Adam, ContributionSupplementNonportability).
+# => TRUE
+
+? prevents(Adam, EarnedSupplementInsolvencyLoss).
+# => TRUE
+
+? prevents(Adam, PrivateInsuranceFloorGate).
+# => TRUE
+
+? prevents(Adam, InsolvencyFloorEssentialsToolsDeprivation).
+# => TRUE
+
+? prevents(Adam, InsolvencyAssetEvasion).
+# => TRUE
+
+? prevents(Adam, EstateDebtBeyondInheritedValue).
+# => TRUE
+
+? prevents(Adam, DebtorImprisonment).
+# => TRUE
+
+? prevents(Adam, TaxCollectionFloorAssetDeprivation).
+# => TRUE
+
+? prevents(Adam, ShareholderResidualRiskTransfer).
+# => TRUE
+
+? prevents(Adam, OwnershipFormGuaranteedBailout).
+# => TRUE
+
+# "The family ships dormant" — nobody in the cast holds a supplement, a wage or
+# a certificate. Each needs its complete authorised, matching premises to derive.
+? insure(Ledgerhouse, Adam, Illness).
+# => FALSE
+
+? provide(Foundry, Wage, Adam).
+# => FALSE
+
+? grant(Assayer, Welding, Adam).
+# => FALSE
+
+# "supply the record and an independent finding for a fresh person and the
+# supplement derives, without that person ever appearing on the roster"
+pay(Marlo, Contribution, Ledgerhouse, SchemeM).
+# The record alone concludes nothing.
+? insure(Ledgerhouse, Marlo, Illness).
+# => FALSE
+
+authorized(Assay, InsuranceAdjudicator, Marlo).
+observe(Assay, Illness, Marlo, SchemeM).
+? insure(Ledgerhouse, Marlo, Illness).
+# => TRUE
+
+# Serve first: the supplement derived for someone the roster never entered.
+? person(Marlo).
+# => FALSE
+
+# Only the event found; another peril does not follow.
+? insure(Ledgerhouse, Marlo, Unemployment).
+# => FALSE
+
+# "made ... by someone who is not the carrier that would owe the supplement"
+pay(Teodora, Contribution, Ledgerhouse, SchemeM).
+authorized(Ledgerhouse, InsuranceAdjudicator, Teodora).
+observe(Ledgerhouse, Illness, Teodora, SchemeM).
+? insure(Ledgerhouse, Teodora, Illness).
+# => FALSE
+
+# "When the carrier fails, the same record and the same finding conclude the
+# supplement against the public guarantee as well."
+? insure(PublicGuarantee, Marlo, Illness).
+# => FALSE
+
+observe(Court, CarrierInsolvency, Ledgerhouse, SchemeM).
+? insure(PublicGuarantee, Marlo, Illness).
+# => TRUE
+
+# "A body authorised as a certifier attests that a person can do a named thing"
+authorized(Assayer, Certifier, Ansel).
+observe(Assayer, Welding, Ansel, CertificationScope).
+? grant(Assayer, Welding, Ansel).
+# => TRUE
+
+# The certificate needs no roster entry either.
+? person(Ansel).
+# => FALSE
+
+authorized(Brix, Certifier, Brix).
+observe(Brix, Welding, Brix, CertificationScope).
+# "A person may not certify themself"
+? grant(Brix, Welding, Brix).
+# => FALSE
+
+# "A payer promises it, and it is concluded only when someone authorised for
+# that person, who is not the payer, attests the same kind on a stated basis."
+promise(Foundry, Wage, Coll).
+? provide(Foundry, Wage, Coll).
+# => FALSE
+
+authorized(Steward, CompensationAttester, Coll).
+observe(Steward, Wage, Coll, LabourBasis).
+? provide(Foundry, Wage, Coll).
+# => TRUE
+
+# "A wage attested is not a prize promised"
+? provide(Foundry, Prize, Coll).
+# => FALSE
+
+promise(Foundry, Incentive, Dunya).
+authorized(Steward, CompensationAttester, Dunya).
+observe(Steward, Metric, Dunya, PerformanceBasis).
+# "an incentive promised is not concluded by a metric attested"
+? provide(Foundry, Incentive, Dunya).
+# => FALSE
+
+# Nothing reads a compensation conclusion into recognition.
+? reward(Coll).
+# => FALSE
+
+# A Court finding on the attested basis stops this compensation conclusion
+# and derives restitution. Neither conclusion establishes payment.
+? provide(Coll, Restitution, Foundry).
+# => FALSE
+
+observe(Court, CompensationFraud, Coll, LabourBasis).
+? provide(Foundry, Wage, Coll).
+# => FALSE
+
+? provide(Coll, Restitution, Foundry).
+# => TRUE
+
+# "The floor is not in the sentence" — after every record above, the floor is what it was.
+? entitled(Adam, event { eats() }).
+# => TRUE
+
+# No supplement, compensation or certificate derives for the supplied child.
+? insure(Ledgerhouse, Nell, Illness).
+# => FALSE
+
+? provide(Foundry, Wage, Nell).
+# => FALSE
+
+? grant(Assayer, Welding, Nell).
+# => FALSE
+
+? prevents(Nell, FloorContributionCondition).
+# => TRUE
+
+? owe(State, Eats, Nell).
+# => TRUE
+
+# ── Contribution: evidence of an act, never a status ────────────────────────────
+# Contribution without a constitutional recognition status.
+# Original contribution, accusation, child and restoration scenarios retained.
+# The 2026-09-20 removal supersedes their recognition and clawback verdicts.
+# The removed producers and blanket penalty execute in the explicit
+# credibility/counterfactual-blanket-recognition-loss regression.
+
+? teaches(Esa, Fin).
+# => TRUE
+
+? reward(Esa).
+# => FALSE
+
+? work(Quin, Census).
+# => TRUE
+
+? reward(Quin).
+# => FALSE
+
+? judge(Gia, Bela).
+# => TRUE
+
+? capture(Gia, Bela).
+# => TRUE
+
+? reward(Gia).
+# => FALSE
+
+? teaches(Bela, Cira).
+# => TRUE
+
+? false(Bela).
+# => TRUE
+
+? reward(Bela).
+# => FALSE
+
+? reward(Edo).
+# => FALSE
+
+? reward(Dev).
+# => FALSE
+
+? false(Mael).
+# => TRUE
+
+? reward(Mael).
+# => FALSE
+
+person(Nima).
+parent(Nima, Pico).
+teaches(Nima, Pico).
+
+? parent(Nima, Pico).
+# => TRUE
+
+? reward(Nima).
+# => FALSE
+
+person(Sata).
+work(Sata, Care).
+
+? reward(Sata).
+# => FALSE
+
+? reward(Pico).
+# => FALSE
+
+? prevents(Cira, GeneralAdulthoodDenial).
+# => FALSE
+
+work(Cira, Chores).
+
+? reward(Cira).
+# => FALSE
+
+teaches(Pico, Ona).
+
+? reward(Pico).
+# => FALSE
+
+judge(Bela, Ivo).
+capture(Bela, Ivo).
+cite(Bela, Query, Ivo).
+
+? reward(Bela).
+# => FALSE
+
+? lose(Points, Bela).
+# => FALSE
+
+judge(Yano, Adam).
+capture(Yano, Adam).
+
+? reward(Yano).
+# => FALSE
+
+cite(Yano, Hunch, Adam).
+
+? reward(Yano).
+# => FALSE
+
+? reward(Tove).
+# => FALSE
+
+cite(Tove, Findings, Iris).
+
+? reward(Tove).
+# => FALSE
+
+? person(Bela).
+# => TRUE
+
+? owe(State, Eats, Bela).
+# => TRUE
+
+? decide(Bela, Ballot).
+# => TRUE
+
+? travel(Bela).
+# => TRUE
+
+? prisoner(Bela).
+# => FALSE
+
+? reward(Cira).
+# => FALSE
+
+? lose(Points, Cira).
+# => FALSE

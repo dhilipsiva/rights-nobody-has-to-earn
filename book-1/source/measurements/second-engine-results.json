@@ -8,13 +8,13 @@
       "seconds": 58.7,
       "differences": []
     },
-    "book-1/24-the-shield": {
+    "book-1/23-the-shield": {
       "queries": 59,
       "solves": 59,
       "seconds": 57.0,
       "differences": []
     },
-    "book-1/05-whether-it-arrived": {
+    "book-1/04-whether-it-arrived": {
       "queries": 20,
       "solves": 20,
       "seconds": 55.6,
@@ -266,13 +266,13 @@
       "seconds": 58.3,
       "differences": []
     },
-    "book-1/27-a-prisoner-is-a-person": {
+    "book-1/25-a-prisoner-is-a-person": {
       "queries": 36,
       "solves": 36,
       "seconds": 56.5,
       "differences": []
     },
-    "book-1/28-where-people-are-put": {
+    "book-1/26-where-people-are-put": {
       "queries": 73,
       "solves": 73,
       "seconds": 59.4,
@@ -518,19 +518,19 @@
       "seconds": 48.7,
       "differences": []
     },
-    "book-1/02-who-counts": {
+    "book-1/01-the-child-with-nobody": {
       "queries": 29,
       "solves": 29,
       "seconds": 57.4,
       "differences": []
     },
-    "book-1/04-what-you-are-owed": {
+    "book-1/03-what-you-are-owed": {
       "queries": 83,
       "solves": 83,
       "seconds": 57.8,
       "differences": []
     },
-    "book-1/29-the-one-thing-taken": {
+    "book-1/27-the-one-thing-taken": {
       "queries": 41,
       "solves": 41,
       "seconds": 56.0,

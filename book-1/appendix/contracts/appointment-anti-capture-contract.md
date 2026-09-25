@@ -3,7 +3,7 @@
 # Book 1 Appointment Anti-Capture Contract
 
 **Comparative argument — item 24, 2026-09-21.** The exact
-[Part V appointment argument](../../31-the-five-joints.md#independent-appointments)
+[Part V appointment argument](../../29-the-five-joints.md#independent-appointments)
 is session-drafted and author-approved under the standing delegated approval.
 Elected confirmation and professional self-government are treated as serious
 alternatives. Divided selection, qualification, nonrenewal and cause-only

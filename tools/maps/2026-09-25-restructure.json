@@ -1,0 +1,206 @@
+{
+  "name": "restructure",
+  "date": "2026-09-25",
+  "notes": "Ruling D7: chapters 1 and 2, 9 and 10, and 23, 25 and 26 merge; chapter 13 splits into commons and animals; chapter 7 and Part V's second chapter are reserved; the opening's reference material moves to the back matter. Label 13 is left unmapped because the old chapter became two; its references were placed by hand.",
+  "moves": [
+    {
+      "from": "book-1/03-what-counts-as-evidence.md",
+      "to": "book-1/02-what-the-record-may-say.md"
+    },
+    {
+      "from": "book-1/03-what-counts-as-evidence.pins.nibli",
+      "to": "book-1/02-what-the-record-may-say.pins.nibli"
+    },
+    {
+      "from": "book-1/04-what-you-are-owed.md",
+      "to": "book-1/03-what-you-are-owed.md"
+    },
+    {
+      "from": "book-1/04-what-you-are-owed.pins.nibli",
+      "to": "book-1/03-what-you-are-owed.pins.nibli"
+    },
+    {
+      "from": "book-1/05-whether-it-arrived.md",
+      "to": "book-1/04-whether-it-arrived.md"
+    },
+    {
+      "from": "book-1/05-whether-it-arrived.pins.nibli",
+      "to": "book-1/04-whether-it-arrived.pins.nibli"
+    },
+    {
+      "from": "book-1/06-when-there-is-genuinely-not-enough.md",
+      "to": "book-1/05-when-there-is-genuinely-not-enough.md"
+    },
+    {
+      "from": "book-1/06-when-there-is-genuinely-not-enough.pins.nibli",
+      "to": "book-1/05-when-there-is-genuinely-not-enough.pins.nibli"
+    },
+    {
+      "from": "book-1/07-who-owes-and-what-follows.md",
+      "to": "book-1/06-who-owes-and-what-follows.md"
+    },
+    {
+      "from": "book-1/07-who-owes-and-what-follows.pins.nibli",
+      "to": "book-1/06-who-owes-and-what-follows.pins.nibli"
+    },
+    {
+      "from": "book-1/11-what-money-cannot-buy.md",
+      "to": "book-1/10-what-money-cannot-buy.md"
+    },
+    {
+      "from": "book-1/11-what-money-cannot-buy.pins.nibli",
+      "to": "book-1/10-what-money-cannot-buy.pins.nibli"
+    },
+    {
+      "from": "book-1/12-the-same-route-for-everyone.md",
+      "to": "book-1/11-the-same-route-for-everyone.md"
+    },
+    {
+      "from": "book-1/12-the-same-route-for-everyone.pins.nibli",
+      "to": "book-1/11-the-same-route-for-everyone.pins.nibli"
+    },
+    {
+      "from": "book-1/24-the-shield.md",
+      "to": "book-1/23-the-shield.md"
+    },
+    {
+      "from": "book-1/24-the-shield.pins.nibli",
+      "to": "book-1/23-the-shield.pins.nibli"
+    },
+    {
+      "from": "book-1/27-a-prisoner-is-a-person.md",
+      "to": "book-1/25-a-prisoner-is-a-person.md"
+    },
+    {
+      "from": "book-1/27-a-prisoner-is-a-person.pins.nibli",
+      "to": "book-1/25-a-prisoner-is-a-person.pins.nibli"
+    },
+    {
+      "from": "book-1/28-where-people-are-put.md",
+      "to": "book-1/26-where-people-are-put.md"
+    },
+    {
+      "from": "book-1/28-where-people-are-put.pins.nibli",
+      "to": "book-1/26-where-people-are-put.pins.nibli"
+    },
+    {
+      "from": "book-1/29-the-one-thing-taken.md",
+      "to": "book-1/27-the-one-thing-taken.md"
+    },
+    {
+      "from": "book-1/29-the-one-thing-taken.pins.nibli",
+      "to": "book-1/27-the-one-thing-taken.pins.nibli"
+    },
+    {
+      "from": "book-1/30-when-the-system-notices-it-broke.md",
+      "to": "book-1/28-when-the-system-notices-it-broke.md"
+    },
+    {
+      "from": "book-1/30-when-the-system-notices-it-broke.pins.nibli",
+      "to": "book-1/28-when-the-system-notices-it-broke.pins.nibli"
+    },
+    {
+      "from": "book-1/16-public-answerability.md",
+      "to": "book-1/16-answerability-and-authority.md"
+    },
+    {
+      "from": "book-1/16-public-answerability.pins.nibli",
+      "to": "book-1/16-answerability-and-authority.pins.nibli"
+    },
+    {
+      "from": "book-1/31-the-five-joints.md",
+      "to": "book-1/29-the-five-joints.md"
+    }
+  ],
+  "rewrites": [],
+  "labels": {
+    "1": "1",
+    "2": "1",
+    "3": "2",
+    "4": "3",
+    "5": "4",
+    "6": "5",
+    "7": "6",
+    "10": "9",
+    "11": "10",
+    "12": "11",
+    "23": "24",
+    "24": "23",
+    "25": "24",
+    "26": "24",
+    "27": "25",
+    "28": "26",
+    "29": "27",
+    "30": "28",
+    "31": "29"
+  },
+  "merges": [
+    {
+      "into": "book-1/01-the-child-with-nobody.md",
+      "from": [
+        "book-1/01-the-child-with-nobody.md",
+        "book-1/02-who-counts.md"
+      ]
+    },
+    {
+      "into": "book-1/01-the-child-with-nobody.pins.nibli",
+      "from": [
+        "book-1/01-the-child-with-nobody.pins.nibli",
+        "book-1/02-who-counts.pins.nibli"
+      ]
+    },
+    {
+      "into": "book-1/09-work-pay-and-contribution.md",
+      "from": [
+        "book-1/09-earning-above-the-floor.md",
+        "book-1/10-contribution.md"
+      ]
+    },
+    {
+      "into": "book-1/09-work-pay-and-contribution.pins.nibli",
+      "from": [
+        "book-1/09-earning-above-the-floor.pins.nibli",
+        "book-1/10-contribution.pins.nibli"
+      ]
+    },
+    {
+      "into": "book-1/24-findings-about-people.md",
+      "from": [
+        "book-1/23-who-holds-the-pen.md",
+        "book-1/26-clawback.md",
+        "book-1/25-voiding.md"
+      ]
+    },
+    {
+      "into": "book-1/24-findings-about-people.pins.nibli",
+      "from": [
+        "book-1/23-who-holds-the-pen.pins.nibli",
+        "book-1/26-clawback.pins.nibli",
+        "book-1/25-voiding.pins.nibli"
+      ]
+    }
+  ],
+  "splits": [
+    {
+      "from": "book-1/13-a-place-in-which-life-remains-possible.md",
+      "into": [
+        "book-1/12-a-place-in-which-life-remains-possible.md",
+        "book-1/13-creatures-without-a-ballot.md"
+      ]
+    },
+    {
+      "from": "book-1/13-a-place-in-which-life-remains-possible.pins.nibli",
+      "into": [
+        "book-1/12-a-place-in-which-life-remains-possible.pins.nibli",
+        "book-1/13-creatures-without-a-ballot.pins.nibli"
+      ]
+    },
+    {
+      "from": "book-1/00-opening-note.md",
+      "into": [
+        "book-1/00-opening-note.md",
+        "book-1/reference.md"
+      ]
+    }
+  ]
+}

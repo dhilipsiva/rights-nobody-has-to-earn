@@ -1,0 +1,142 @@
+# ── Chapter 16 fidelity pins: "Answerability and Authority" ─────────────────────
+#
+# FS-CVF-003 executable coverage is delegated to book-1/source/state-form.pins.nibli.
+#
+# KIND: CONTENT pin. Run:
+#   ./verify.sh --only book-1/16-answerability-and-authority.pins.nibli
+#   ./verify.sh          # all substantive pins and contradiction checks
+#
+# One entry per load-bearing sentence. Private to the author.
+
+# WHAT FALSE MEANS HERE — three kinds, and only one is a verdict. A FALSE on a
+# corpus name this KB never mentions is real but empty: nothing could have made
+# it TRUE. A non-corpus name is not a FALSE at all — the run aborts, pins not
+# trustworthy. And a well-formed query on an argument its relation never
+# carries is a vacuous green that passes forever. Article 0a closed the
+# ASSERTION side only — a widening fact now aborts the run instead of loading —
+# but a QUERY on an unmentioned name still answers a clean FALSE, so kind one
+# is untouched. Pin a FALSE only where the KB could have said TRUE, and say in
+# the comment what would flip it.
+
+:expect-pins 25
+
+# "The court has standing... They have it by being what they are."
+? public(Court).
+# => TRUE
+
+? authority(Court).
+# => TRUE
+
+# "The second is to be seated. The electorate seats people..."
+? choose(Electorate, Tove).
+# => TRUE
+
+? authority(Tove).
+# => TRUE
+
+# "...and so does the convocation — and a seat from either carries standing on
+# the same terms." Wren holds only a convocation seat — no office, no
+# electorate entry — and is answerable the same way. Chapter 2 pins Saba on the
+# same rule; two witnesses in two files, because the sentence this replaced
+# denied the route existed in both chapters.
+? choose(Convocation, Wren).
+# => TRUE
+
+? authority(Wren).
+# => TRUE
+
+# "no route that runs through your own hands" — standing cannot be self-conferred
+:refuse reasoning /declared derived-only/
+authority(Pax).
+
+# "Someone with a great deal of power and no standing cannot write themselves in."
+# Ivo was never seated and is not a public body.
+? authority(Ivo).
+# => FALSE
+
+# "Then the electorate recalled Tove." / "Tove holds no credential"
+? broken(Tove).
+# => TRUE
+
+? permits(Review, Tove).
+# => FALSE
+
+# "But Tove still has standing. Permanently." — the chapter's whole argument.
+# authority(Tove) above is TRUE *despite* broken(Tove) being TRUE.
+
+# "Iris exposed Tove." / "Iris is shielded because Tove is an authority."
+? show(Iris, Disclosure_Iris_Tove, Tove).
+# => TRUE
+
+? defend(Iris).
+# => TRUE
+
+# "Iris is not imprisoned, and the case against Iris does not proceed."
+? prisoner(Iris).
+# => FALSE
+
+? false(Iris).
+# => FALSE
+
+# ── The opening definition ───────────────────────────────────────────────────
+# "Standing is not the power to act on anyone ... someone can examine you and
+#  record what they find while holding no standing at all."
+# Koa is that person: two facts in the whole constitution, no seat, no office.
+# An earlier draft opened by defining standing AS the capacity to examine and
+# record, which these two pins falsify together.
+? capture(Koa, Esa).
+# => TRUE
+
+? authority(Koa).
+# => FALSE
+
+# Public answerability does not itself issue an auditor credential.
+# The Court is the complement: standing it can never convert into a pen, because
+# `public` deliberately does not flow into the Review credential rule.
+? authority(Court).
+# => TRUE
+
+? permits(Review, Court).
+# => FALSE
+
+# [v0.7] Both pens, or the claim is only half-tested. Chapter 24 says the court
+# "is answerable and holds neither pen"; with two issuers, a pin on one of them would
+# leave the other free to drift.
+? permits(Tribunal, Court).
+# => FALSE
+
+# ── The two senses of one English word, held apart ───────────────────────────
+# The manuscript used "standing" for BOTH `authority` and `false` until v0.6,
+# and carried two bolded sentences six chapters apart saying opposite things
+# about the same noun. `false` is now "credibility" in the prose, and `authority`
+# is "public answerability" since the state-form ruling reserved "standing" for
+# universal personhood. These three
+# pins are the guard against the senses re-merging: they must sit ADJACENT, on
+# one person, so that a future edit collapsing them cannot pass green.
+#
+# Mael is the case that proves they are independent rather than opposite —
+# voided last period, seated by the electorate, and holding no pen. All three
+# verdicts differ, on one person, in one snapshot. This is also the cast case
+# chapter 24's new distinguishing paragraph rests on.
+? false(Mael).
+# => TRUE
+
+? authority(Mael).
+# => TRUE
+
+? permits(Review, Mael).
+# => FALSE
+
+# ── The child with nobody ──────────────────────────────────────────────────
+# "the body owing this child the floor is answerable for it" — the owing body
+# holds public answerability, and the child holds the debt.
+? authority(State).
+# => TRUE
+
+? owe(State, Eats, Nell).
+# => TRUE
+
+# The State's answerability does not depend on a request or exposure by Nell.
+# The child holds no office and acquires none by being owed something.
+? authority(Nell).
+# => FALSE

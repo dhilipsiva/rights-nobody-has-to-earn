@@ -76,9 +76,9 @@ class CurrentEditionTests(unittest.TestCase):
 
     def test_sample_keeps_chapter_numbers_and_links_outside_the_selection(self):
         docs = book.select_sample(book.read_documents())
-        self.assertEqual([d.number for d in docs], [1, 5, 8, 21, 31])
-        self.assertEqual(book.resolve_link("02-who-counts.md#who-counts", docs[0], docs, "html"),
-                         book.REPOSITORY + "book-1/02-who-counts.md#who-counts")
+        self.assertEqual([d.number for d in docs], [1, 4, 8, 21, 29])
+        self.assertEqual(book.resolve_link("02-what-the-record-may-say.md#the-child-with-nobody", docs[0], docs, "html"),
+                         book.REPOSITORY + "book-1/02-what-the-record-may-say.md#the-child-with-nobody")
         with self.assertRaises(ValueError):
             book.select_sample(docs[:-1])
         self.check_epub(docs, sample=True)
@@ -126,7 +126,7 @@ class UiExportTests(unittest.TestCase):
         with tempfile.TemporaryDirectory() as directory:
             book.export_ui(Path(directory), docs)
             result = json.loads((Path(directory) / 'book.json').read_text())
-        self.assertEqual(len(result['pages']), 34)
+        self.assertEqual(len(result['pages']), 32)
         self.assertEqual([p['stem'] for p in result['pages']], [d.stem for d in docs])
         ids = {p['path']: {e.get('id') for e in ET.fromstring(p['html']).iter() if e.get('id')}
                for p in result['pages']}
@@ -141,7 +141,8 @@ class UiExportTests(unittest.TestCase):
                     self.assertIn(path, ids)
                     self.assertIn(anchor, ids[path])
         self.assertIn('lang="ta"', result['pages'][0]['html'])
-        self.assertIn('footnote-backref', result['pages'][-2]['html'])
+        part_v = next(p for p in result['pages'] if p['number'] == 29)
+        self.assertIn('footnote-backref', part_v['html'])
 
     def test_ui_markdown_keeps_balanced_external_urls_and_note_definitions(self):
         with tempfile.TemporaryDirectory() as directory, patch.object(book, 'ROOT', Path(directory)):

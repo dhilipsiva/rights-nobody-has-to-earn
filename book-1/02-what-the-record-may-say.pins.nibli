@@ -1,0 +1,301 @@
+# ── Chapter 2 fidelity pins: "What the Record May Say" ────────────────────────
+#
+# FS-CVF-003 executable coverage is delegated to book-1/source/state-form.pins.nibli.
+# Exact-change and vocabulary review also use:
+#   tests/pins/amendment-enactment/unauthorized-vocabulary/expect.pins.nibli
+#   tests/pins/amendment-enactment/reviewed-vocabulary/expect.pins.nibli
+#   tests/pins/amendment-enactment/candidate-not-consented/expect.pins.nibli
+# The host's actual byte/admission checks are separate development tests.
+#
+# Statistical permissions and the no-person-score boundary are checked in:
+#   tests/pins/statistics/use/positive/expect.pins.nibli
+#   tests/pins/statistics/release/positive/expect.pins.nibli
+#   tests/pins/statistics/use/defect-and-rights-sequence/expect.pins.nibli
+#   tests/pins/statistics/release/authorization-withdrawal-sequence/expect.pins.nibli
+#   tests/pins/statistics/data-wall/reuse-constitutional_record/expect.pins.nibli
+#   tests/pins/statistics/data-wall/counterfactual-record-reuse/expect.pins.nibli
+#   tests/pins/statistics/data-wall/IndividualRisk/expect.pins.nibli
+#   tests/pins/statistics/data-wall/counterfactual-individual-risk/expect.pins.nibli
+#   tests/pins/statistics/pattern/defect-and-rights-sequence/expect.pins.nibli
+#   tests/pins/statistics/data-wall/criminal-burden/expect.pins.nibli
+#   tests/pins/statistics/data-wall/counterfactual-criminal-burden/expect.pins.nibli
+#   tests/pins/statistics/access/positive/expect.pins.nibli
+#   tests/pins/statistics/challenge/nonresponse-sequence/expect.pins.nibli
+#   tests/pins/statistics/data-wall/nonparticipation-is-not-a-penalty/expect.pins.nibli
+# Full interface and evidence limits:
+#   book-1/appendix/contracts/official-statistics-contract.md
+#
+# "Keeping, watching, and letting a machine help" rests on these
+# actual-constitution record-power cases:
+#   tests/pins/record-power/holding/positive/expect.pins.nibli
+#   tests/pins/record-power/holding/without-RecordEnforcementFirewallScope/expect.pins.nibli
+#   tests/pins/record-power/holding/kind-RecordPurposeScope-UnapprovedRecordKind/expect.pins.nibli
+#   tests/pins/record-power/processing/positive/expect.pins.nibli
+#   tests/pins/record-power/processing/without-RecordBulkRefusalScope/expect.pins.nibli
+#   tests/pins/record-power/processing/without-authorization/expect.pins.nibli
+#   tests/pins/record-power/automated/positive/expect.pins.nibli
+#   tests/pins/record-power/automated/without-RecordAssessmentExclusionScope/expect.pins.nibli
+#   tests/pins/record-power/automated/without-RecordSoleAutomationRefusalScope/expect.pins.nibli
+#   tests/pins/record-power/access/positive/expect.pins.nibli
+#   tests/pins/record-power/retention/positive/expect.pins.nibli
+#   tests/pins/record-power/power/holding-defect-and-rights-sequence/expect.pins.nibli
+#   tests/pins/record-power/power/holding-does-not-cover-another-subject/expect.pins.nibli
+#   tests/pins/record-power/power/holding-does-not-cover-another-domain/expect.pins.nibli
+#   tests/pins/record-power/power/automated-reviewer-cannot-be-the-holder/expect.pins.nibli
+#   tests/pins/record-power/power/counterfactual-automated-reviewer-is-the-holder/expect.pins.nibli
+#   tests/pins/record-power/power/request-and-certified-nonresponse/expect.pins.nibli
+#   tests/pins/record-power/power/a-noted-entry-is-not-a-conclusion/expect.pins.nibli
+#   tests/pins/record-power/power/forged-conclusions/expect.pins.nibli
+# The per-scope omission, unauthorized-attester, stale, conflicting-value and
+# remaining counterfactual cases stay separate. They establish what must be
+# shown before a record is kept, watched or automated over, and what is owed
+# while it has not been; they authenticate no record and observe no execution.
+# Full interface and evidence limits:
+#   book-1/appendix/contracts/record-power-contract.md
+#
+# KIND: CONTENT pin. The fixture is the subject, so it is loaded rather than
+# inlined. Run:
+#   ./verify.sh --only book-1/02-what-the-record-may-say.pins.nibli
+#   ./verify.sh          # all substantive pins and formal contradiction checks
+# Markdown consistency is reviewed separately; the pins do not certify prose.
+#
+# One entry per load-bearing sentence in the chapter. Private to the author; the
+# reader never sees this file. If a verdict flips, the sentence it guards has
+# started lying — fix the prose or the constitution, never the pin.
+
+# WHAT FALSE MEANS HERE — three kinds, and only one is a verdict. A FALSE on a
+# corpus name this KB never mentions is real but empty: nothing could have made
+# it TRUE. A non-corpus name is not a FALSE at all — the run aborts, pins not
+# trustworthy. And a well-formed query on an argument its relation never
+# carries is a vacuous green that passes forever. Article 0a closed the
+# ASSERTION side only — a widening fact now aborts the run instead of loading —
+# but a QUERY on an unmentioned name still answers a clean FALSE, so kind one
+# is untouched. Pin a FALSE only where the KB could have said TRUE, and say in
+# the comment what would flip it.
+
+:expect-pins 45
+
+# 1.2 "Hano injured Ivo. A court judged Hano. Both of those are facts."
+? injure(Hano, Ivo).
+# => TRUE
+
+? judge(Court, Hano).
+# => TRUE
+
+# 1.2 cont. "Hano is also a prisoner — but that is not a fact anyone recorded."
+# TRUE, and reached only by derivation; the two refusals below prove the second half.
+? prisoner(Hano).
+# => TRUE
+
+# 1.3 "You cannot simply declare someone guilty. There is no way to write it."
+:refuse reasoning /declared derived-only/
+prisoner(Zed).
+
+# 1.4 "Nor can you hand yourself the authority to judge."
+:refuse reasoning /declared derived-only/
+authority(Pax).
+
+# 1.3b "Nor can you write down that an offence was serious." — the third of the
+# chapter's three cannot-write claims, and the only one that was unpinned.
+:refuse reasoning /declared derived-only/
+severe(Zed).
+
+# 1.4 cont. "Either a seating body chose you, or you hold a public office.
+#            Those are the only routes."
+? public(Court).
+# => TRUE
+
+? authority(Court).
+# => TRUE
+
+# ...and the seating body need not be the electorate. Saba holds a seat the
+# convocation gave — no office, no electorate entry — and answerability follows
+# the same way. This is the route the sentence used to deny: it said "the
+# electorate seated you" and "only two routes", stale since the second seating
+# body was added. Saba isolates the third rule: nothing else confers it.
+? choose(Convocation, Saba).
+# => TRUE
+
+? authority(Saba).
+# => TRUE
+
+# 1.5 "Koa documented something about Esa. ... Esa's credibility is untouched."
+? capture(Koa, Esa).
+# => TRUE
+
+? false(Esa).
+# => FALSE
+
+# 1.5 cont. "Nor is Koa marked for having looked."
+? false(Koa).
+# => FALSE
+
+# 1.6 "Three names sit on an amendment register. ... The list of what counts
+#      as evidence is not on that register."
+# This pin is DELIBERATELY the uncomfortable one. It is the chapter's closing
+# admission. A TRUE would change the label verdict and require a rewrite, but
+# would still not prove that an `admits` edit was semantically entrenched.
+? permanent(Art_Floor).
+# => TRUE
+
+? permanent(Art_Evidence).
+# => FALSE
+
+# 1.6b "they cannot. Not *may not*. Cannot. There is nowhere to put it."
+# [v0.9] THIS SENTENCE WAS FALSE UNTIL ARTICLE 0a. nibli's lexicon is
+# fail-closed, so an invented word never loaded — but `rich` is a real corpus
+# name and `rich(Adam).` answered TRUE. The closure was at nibli's vocabulary,
+# not at this book's. `admits` moved it here, and these two pins are the whole
+# of the chapter's opening claim: a name off the list is refused, and adding one
+# has to be a visible edit above the first use.
+:refuse reasoning /not admitted vocabulary/
+rich(Adam).
+
+:refuse reasoning /not admitted vocabulary/
+dangerous(Adam).
+
+# and the closure is EXTENSIONAL — conclusions still derive
+? prisoner(Hano).
+# => TRUE
+
+# An accepted raw accusation is not an adjudicated finding about the exposure.
+# Keep the assertion and both verdicts: the protection must survive this write.
+? prisoner(Iris).
+# => FALSE
+
+:accept
+deceive(Iris, Tove).
+
+? prisoner(Iris).
+# => FALSE
+
+# "A person has a family" — one word, buried in a list of attributes. For
+# Hano's family label is recorded only to prove it changes no placement
+# result; severity and the separate placement-home record decide the route.
+? fit(Hano, Homestay).
+# => TRUE
+
+? building(Homestay, Hano).
+# => TRUE
+
+:accept
+family(Hano).
+
+? fit(Hano, Homestay).
+# => TRUE
+
+? building(Homestay, Hano).
+# => TRUE
+
+? building(LowSec, Hano).
+# => FALSE
+
+# 1.3c THE PAIRING IS THE RULE. "An offence is severe when two of those stand
+# together in the record: an attack and a cruelty landing on the same person,
+# or either of them landing on one person while an injury lands on another."
+# The gloss this replaced — "any two of the three are present" — was refuted by
+# exactly these verdicts: attack and cruelty toward DIFFERENT people derive
+# nothing, and the same pair on one person derives severity. Fresh names;
+# effects disjoint from everything below — severe feeds placement only through
+# prisoner, and Probe is nobody's prisoner. Unscoped for the file's usual
+# reason: each accept is the premise of the query under it.
+#
+# The court facts below were added on 2026-09-16, when severity became
+# court-bound: it reads the Court's judgment and its cited case besides the
+# pairing. They are here so this exhibit keeps demonstrating what it is about —
+# the PAIRING — rather than silently becoming a demonstration of the new
+# conjuncts. That severity is now court-bound has its own case, in
+# tests/pins/red-team/an-accusation-nobody-signed.
+:accept
+judge(Court, Probe).
+
+:accept
+cite(Court, ProbeCase, Probe).
+
+:accept
+attack(Probe, Vic1).
+
+:accept
+cruel(Probe, Vic2).
+
+? severe(Probe).
+# => FALSE
+
+:accept
+cruel(Probe, Vic1).
+
+? severe(Probe).
+# => FALSE
+
+# A raw Court-failure report is not a qualified case-specific disposition.
+# Both original cases and both before/after questions remain.
+? prisoner(Hano).
+# => TRUE
+
+? prisoner(Lalo).
+# => TRUE
+
+broken(Court).
+
+? prisoner(Hano).
+# => TRUE
+
+? prisoner(Lalo).
+# => TRUE
+
+# 1.7 "Someone is a person." — the entry, and the two ways it gets written.
+#
+# THESE MUST BE LAST IN THE FILE AND THAT IS NOT COSMETIC. An accepted assertion
+# loads into the KB and stays there. `person(Ghost).` puts a name on the roster
+# with every floor right, `travel`, and a public body owing it things; the
+# `free` route does the same by a longer path. Any pin querying the roster after
+# this point measures a polluted KB and passes for the wrong reason —
+# `rights-floor.pins.nibli:285` records a real vacuous green from exactly this.
+# Put new queries ABOVE this block.
+#
+# DO NOT CONVERT THESE TO `:accept-scoped`. Each accepted statement here is the
+# premise of the query under it, not a control — scoped, it is retracted before
+# that query runs and the verdict flips from TRUE to FALSE (measured 2026-08-01
+# against nibli 425567b; the accept itself still passes, so the loss surfaces
+# only below it). The conversion does not fail quietly — it fails as a finding,
+# which reads like the design regressed, and this file's rule is never to fix
+# the pin.
+#
+# It does not reach the other thirteen files: each gets a fresh KB. Proof —
+# `rights-floor.pins.nibli` runs first and its controls would make
+# `travel(Bela)` FALSE, yet `24-findings-about-people.pins.nibli` pins it TRUE in the same
+# green run.
+
+# "Someone's sentence is finished" is ON the list, and it confers personhood.
+# This is the pin the chapter's decision turned on: the list already reached the
+# roster before anybody decided whether `person` belonged on it.
+:accept
+free(Wraith).
+
+? person(Wraith).
+# => TRUE
+
+# And the entry itself is writable, with nothing asked and nobody consulted.
+# "a name belonging to nobody acquires every right on the floor ... the freedom
+#  to move ... Nothing anywhere asks who this is."
+:accept
+person(Ghost).
+
+? travel(Ghost).
+# => TRUE
+
+# ── The child with nobody ──────────────────────────────────────────────────
+# "It could be written, because a birth is a fact somebody reports and the list
+# admits it" — the exposure this chapter concedes, asked of the thinnest record.
+? person(Nell).
+# => TRUE
+
+# "the record admits no word for what the child is" — the refusal happens at
+# the closed vocabulary, before the rule loads, not after somebody notices.
+:refuse syntax /unknown predicate "vulnerable"/
+vulnerable(Nell).
+
+# And the conclusions this chapter keeps apart stay apart for the child too:
+# nothing about one birth entry concludes anything about them.
+? false(Nell).
+# => FALSE

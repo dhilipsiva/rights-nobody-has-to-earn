@@ -3,7 +3,7 @@
 # Record power — the exact Book 1 addition
 
 Session-drafted, author-approved under delegated approval (2026-09-13). The
-text below is inserted unchanged in `book-1/03-what-counts-as-evidence.md`, as
+text below is inserted unchanged in `book-1/02-what-the-record-may-say.md`, as
 a new section between "Counting without ranking people" and "Facts and
 conclusions are kept apart". Its supporting cases are listed in the chapter's
 pin file.

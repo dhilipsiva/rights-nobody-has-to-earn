@@ -1,0 +1,1255 @@
+# ── Chapter 24 fidelity pins: "Findings About People" ───────────────────────────
+#
+# FS-CVF-003 executable coverage is delegated to book-1/source/state-form.pins.nibli.
+#
+# KIND: CONTENT pin. Run:
+#   ./verify.sh --only book-1/24-findings-about-people.pins.nibli
+#   ./verify.sh          # all substantive pins and contradiction checks
+
+# WHAT FALSE MEANS HERE — three kinds, and only one is a verdict. A FALSE on a
+# corpus name this KB never mentions is real but empty: nothing could have made
+# it TRUE. A non-corpus name is not a FALSE at all — the run aborts, pins not
+# trustworthy. And a well-formed query on an argument its relation never
+# carries is a vacuous green that passes forever. Article 0a closed the
+# ASSERTION side only — a widening fact now aborts the run instead of loading —
+# but a QUERY on an unmentioned name still answers a clean FALSE, so kind one
+# is untouched. Pin a FALSE only where the KB could have said TRUE, and say in
+# the comment what would flip it.
+
+:expect-pins 177
+
+# The file runs the chapter's three strands in the order their state allows:
+# who holds the authority to sign, then the limits of a finding, then the
+# paired finding and its reach, whose closing weaker-rule control is an
+# unscoped acceptance and must come last.
+
+# ── Who holds the authority to sign ───────────────────────────────────────────
+
+# "The electorate seated you. You have not been recalled. And you were not
+#  voided in an earlier period." — all three holding gives the pen.
+
+# The original scenario now supplies qualified fictional merits, signed
+# harm findings, placement and intake. Its original missing/conflicting
+# temporal premises and every original query remain independently tested.
+list(Case_Voss, Voss, Incident_Case_Voss, CustodyMatter).
+list(Case_Voss, PublicInjuryOffence, Evidence_Case_Voss, CustodyOffenceEvidence).
+list(Case_Voss, Ivo, Prosecution, CustodyParties).
+list(Case_Voss, Court, CustodyMeritsReview, CustodyDecisionActors).
+judge(Court, Case_Voss).
+judge(CustodyMeritsReview, Case_Voss).
+authorized(Court, CustodyTrialAdjudicator, Case_Voss).
+authorized(CustodyMeritsReview, IndependentCustodyMeritsReviewer, Case_Voss).
+observe(Court, Case_Voss, Voss, CustodySubjectScope).
+observe(CustodyMeritsReview, Case_Voss, Voss, CustodySubjectScope).
+observe(Court, Case_Voss, Incident_Case_Voss, CustodyIncidentScope).
+observe(CustodyMeritsReview, Case_Voss, Incident_Case_Voss, CustodyIncidentScope).
+observe(Court, Case_Voss, PublicInjuryOffence, CustodyOffenceScope).
+observe(CustodyMeritsReview, Case_Voss, PublicInjuryOffence, CustodyOffenceScope).
+observe(Court, Case_Voss, Evidence_Case_Voss, CustodyEvidenceScope).
+observe(CustodyMeritsReview, Case_Voss, Evidence_Case_Voss, CustodyEvidenceScope).
+observe(Court, Case_Voss, Ivo, CustodyVictimScope).
+observe(CustodyMeritsReview, Case_Voss, Ivo, CustodyVictimScope).
+observe(Court, Case_Voss, Prosecution, CustodyProsecutorScope).
+observe(CustodyMeritsReview, Case_Voss, Prosecution, CustodyProsecutorScope).
+observe(Court, Case_Voss, PublicLawInForceBeforeTheAct, CustodyPriorLawScope).
+observe(CustodyMeritsReview, Case_Voss, PublicLawInForceBeforeTheAct, CustodyPriorLawScope).
+observe(Court, Case_Voss, IdentityActCausationAndRequiredMentalElementProvedBeyondReasonableDoubt, CustodyProofScope).
+observe(CustodyMeritsReview, Case_Voss, IdentityActCausationAndRequiredMentalElementProvedBeyondReasonableDoubt, CustodyProofScope).
+observe(Court, Case_Voss, NoPunishmentForStatusOrProtectedConduct, CustodyConductScope).
+observe(CustodyMeritsReview, Case_Voss, NoPunishmentForStatusOrProtectedConduct, CustodyConductScope).
+observe(Court, Case_Voss, AdmissibleDisclosedEvidenceNoCoercionOrDecisiveSecretEvidence, CustodyAdmissibilityScope).
+observe(CustodyMeritsReview, Case_Voss, AdmissibleDisclosedEvidenceNoCoercionOrDecisiveSecretEvidence, CustodyAdmissibilityScope).
+observe(Court, Case_Voss, NoticeCounselAccessibleHearingAndPublicReasons, CustodyProcedureScope).
+observe(CustodyMeritsReview, Case_Voss, NoticeCounselAccessibleHearingAndPublicReasons, CustodyProcedureScope).
+observe(Court, Case_Voss, IndependentlyAdjudicatedDefencesAndExculpatoryEvidence, CustodyDefencesScope).
+observe(CustodyMeritsReview, Case_Voss, IndependentlyAdjudicatedDefencesAndExculpatoryEvidence, CustodyDefencesScope).
+observe(Court, Case_Voss, IndividualNecessaryProportionateLeastRestrictiveCustodialSentence, CustodySentenceScope).
+observe(CustodyMeritsReview, Case_Voss, IndividualNecessaryProportionateLeastRestrictiveCustodialSentence, CustodySentenceScope).
+observe(Court, Case_Voss, NoDoubleJeopardyOrUnexpiredBar, CustodyFinalityScope).
+observe(CustodyMeritsReview, Case_Voss, NoDoubleJeopardyOrUnexpiredBar, CustodyFinalityScope).
+observe(Chronicle, Case_Voss, Court, CustodyTrialActorEligibleAtDecisionScope).
+observe(TemporalReview, Case_Voss, Court, CustodyTrialActorEligibleAtDecisionScope).
+observe(Chronicle, Case_Voss, CustodyMeritsReview, CustodyMeritsReviewerEligibleAtDecisionScope).
+observe(TemporalReview, Case_Voss, CustodyMeritsReview, CustodyMeritsReviewerEligibleAtDecisionScope).
+list(Merits_Order_Case_Voss, Case_Voss, Epoch_Current, RecordSequence).
+observe(Chronicle, Merits_Order_Case_Voss, Case_Voss, RecordStartScope).
+observe(Chronicle, Merits_Order_Case_Voss, Epoch_Current, RecordEndScope).
+observe(TemporalReview, Merits_Order_Case_Voss, Case_Voss, RecordStartScope).
+observe(TemporalReview, Merits_Order_Case_Voss, Epoch_Current, RecordEndScope).
+list(Severity_Voss_InjuryToPerson_Ivo, Voss, Case_Voss, CustodySeverityFinding).
+list(Severity_Voss_InjuryToPerson_Ivo, InjuryToPerson, Evidence_Severity_Voss_InjuryToPerson_Ivo, CustodySeverityDimensionEvidence).
+list(Severity_Voss_InjuryToPerson_Ivo, Ivo, Incident_Case_Voss, CustodySeverityVictimIncident).
+authorized(Court, CustodySeverityAdjudicator, Severity_Voss_InjuryToPerson_Ivo).
+authorized(CustodyMeritsReview, IndependentSeverityReviewer, Severity_Voss_InjuryToPerson_Ivo).
+observe(Court, Severity_Voss_InjuryToPerson_Ivo, Case_Voss, SeverityCaseScope).
+observe(CustodyMeritsReview, Severity_Voss_InjuryToPerson_Ivo, Case_Voss, SeverityCaseScope).
+observe(Court, Severity_Voss_InjuryToPerson_Ivo, Voss, SeveritySubjectScope).
+observe(CustodyMeritsReview, Severity_Voss_InjuryToPerson_Ivo, Voss, SeveritySubjectScope).
+observe(Court, Severity_Voss_InjuryToPerson_Ivo, Incident_Case_Voss, SeverityIncidentScope).
+observe(CustodyMeritsReview, Severity_Voss_InjuryToPerson_Ivo, Incident_Case_Voss, SeverityIncidentScope).
+observe(Court, Severity_Voss_InjuryToPerson_Ivo, Ivo, SeverityVictimScope).
+observe(CustodyMeritsReview, Severity_Voss_InjuryToPerson_Ivo, Ivo, SeverityVictimScope).
+observe(Court, Severity_Voss_InjuryToPerson_Ivo, InjuryToPerson, SeverityDimensionScope).
+observe(CustodyMeritsReview, Severity_Voss_InjuryToPerson_Ivo, InjuryToPerson, SeverityDimensionScope).
+observe(Court, Severity_Voss_InjuryToPerson_Ivo, Evidence_Severity_Voss_InjuryToPerson_Ivo, SeverityEvidenceScope).
+observe(CustodyMeritsReview, Severity_Voss_InjuryToPerson_Ivo, Evidence_Severity_Voss_InjuryToPerson_Ivo, SeverityEvidenceScope).
+observe(Court, Severity_Voss_InjuryToPerson_Ivo, AdjudicatedHarmAndMentalElementWithNoticeCounselChallengeAndReasons, SeverityProcedureScope).
+observe(CustodyMeritsReview, Severity_Voss_InjuryToPerson_Ivo, AdjudicatedHarmAndMentalElementWithNoticeCounselChallengeAndReasons, SeverityProcedureScope).
+list(Placement_Case_Voss, Voss, Case_Voss, CustodyPlacement).
+list(Placement_Case_Voss, Place_Voss, SupportedResidence, CustodyPlaceKind).
+list(Placement_Case_Voss, Case_Voss, Window_Custody, CustodyPlacementPeriod).
+authorized(State, CustodyPlacementAuthority, Placement_Case_Voss).
+authorized(PlacementReview, IndependentPlacementReviewer, Placement_Case_Voss).
+observe(State, Placement_Case_Voss, Voss, CustodyPlacementSubjectScope).
+observe(PlacementReview, Placement_Case_Voss, Voss, CustodyPlacementSubjectScope).
+observe(State, Placement_Case_Voss, Case_Voss, CustodyPlacementCaseScope).
+observe(PlacementReview, Placement_Case_Voss, Case_Voss, CustodyPlacementCaseScope).
+observe(State, Placement_Case_Voss, Place_Voss, CustodyPlacementPlaceScope).
+observe(PlacementReview, Placement_Case_Voss, Place_Voss, CustodyPlacementPlaceScope).
+observe(State, Placement_Case_Voss, SupportedResidence, CustodyPlacementKindScope).
+observe(PlacementReview, Placement_Case_Voss, SupportedResidence, CustodyPlacementKindScope).
+observe(State, Placement_Case_Voss, Case_Voss, CustodyPlacementLeaseScope).
+observe(PlacementReview, Placement_Case_Voss, Case_Voss, CustodyPlacementLeaseScope).
+observe(State, Placement_Case_Voss, Window_Custody, CustodyPlacementWindowScope).
+observe(PlacementReview, Placement_Case_Voss, Window_Custody, CustodyPlacementWindowScope).
+observe(State, Placement_Case_Voss, Epoch_Current, CustodyPlacementEpochScope).
+observe(PlacementReview, Placement_Case_Voss, Epoch_Current, CustodyPlacementEpochScope).
+observe(State, Placement_Case_Voss, PositiveAccessibleAvailableConsentingPlaceAndIndividualLawfulConditions, CustodyPlacementAvailabilityScope).
+observe(PlacementReview, Placement_Case_Voss, PositiveAccessibleAvailableConsentingPlaceAndIndividualLawfulConditions, CustodyPlacementAvailabilityScope).
+observe(State, Placement_Case_Voss, NoticeCounselReasonsIndependentInspectionAndAccessibleChallenge, CustodyPlacementProcedureScope).
+observe(PlacementReview, Placement_Case_Voss, NoticeCounselReasonsIndependentInspectionAndAccessibleChallenge, CustodyPlacementProcedureScope).
+observe(State, Placement_Case_Voss, IndividuallyNecessaryLeastRestrictivePlacementAndContinuity, CustodyPlacementNecessityScope).
+observe(PlacementReview, Placement_Case_Voss, IndividuallyNecessaryLeastRestrictivePlacementAndContinuity, CustodyPlacementNecessityScope).
+observe(State, Placement_Case_Voss, NoSuitableConsentingHomeAvailableAndOrdinarySupportedResidenceSecured, CustodyPlacementAlternativeScope).
+observe(PlacementReview, Placement_Case_Voss, NoSuitableConsentingHomeAvailableAndOrdinarySupportedResidenceSecured, CustodyPlacementAlternativeScope).
+authorized(CustodyIntake, CustodyIntakeAuthority, Case_Voss).
+authorized(CustodyIntakeAudit, IndependentCustodyIntakeAuditor, Case_Voss).
+observe(CustodyIntake, Case_Voss, Voss, CustodyIntakeSubjectScope).
+observe(CustodyIntakeAudit, Case_Voss, Voss, CustodyIntakeSubjectScope).
+observe(CustodyIntake, Case_Voss, Case_Voss, CustodyIntakeCaseScope).
+observe(CustodyIntakeAudit, Case_Voss, Case_Voss, CustodyIntakeCaseScope).
+observe(CustodyIntake, Case_Voss, Epoch_Current, CustodyIntakeEpochScope).
+observe(CustodyIntakeAudit, Case_Voss, Epoch_Current, CustodyIntakeEpochScope).
+observe(CustodyIntake, Case_Voss, Window_Custody, CustodyIntakeWindowScope).
+observe(CustodyIntakeAudit, Case_Voss, Window_Custody, CustodyIntakeWindowScope).
+observe(CustodyIntake, Case_Voss, AccessiblePrimaryAndIndependentAlternateWithConfidentialCounselAndRetainedCopies, CustodyIntakeAccessScope).
+observe(CustodyIntakeAudit, Case_Voss, AccessiblePrimaryAndIndependentAlternateWithConfidentialCounselAndRetainedCopies, CustodyIntakeAccessScope).
+observe(CustodyIntake, Case_Voss, ReconciledPrimaryAlternateAndSubjectHeldFilingsBeforeEachRenewal, CustodyIntakeReconciliationScope).
+observe(CustodyIntakeAudit, Case_Voss, ReconciledPrimaryAlternateAndSubjectHeldFilingsBeforeEachRenewal, CustodyIntakeReconciliationScope).
+observe(CustodyIntake, Case_Voss, NoHolderPermissionNoRetaliationAndImmediateSuspensionOnFiling, CustodyIntakeProtectionScope).
+observe(CustodyIntakeAudit, Case_Voss, NoHolderPermissionNoRetaliationAndImmediateSuspensionOnFiling, CustodyIntakeProtectionScope).
+
+
+? choose(Electorate, Gia).
+# => TRUE
+
+? permits(Review, Gia).
+# => TRUE
+
+? permits(Tribunal, Wren).
+# => TRUE
+
+# "Gia is seated by Electorate; Wren is seated by Convocation." Each route gives
+# its own credential: Gia's positively established clear history gives her the
+# review credential, not the Tribunal's, because the Convocation did not seat her.
+? permits(Tribunal, Gia).
+# => FALSE
+
+# "Writing it down directly is not forbidden-and-punished; it is refused."
+:refuse reasoning /declared derived-only/
+permits(Review, Sock).
+
+# "Tove keeps standing permanently and loses the credential immediately."
+? choose(Electorate, Tove).
+# => TRUE
+
+? broken(Tove).
+# => TRUE
+
+? authority(Tove).
+# => TRUE
+
+? permits(Review, Tove).
+# => FALSE
+
+# "Mael was also seated, and was never recalled — but Mael was voided in an
+#  earlier period. Mael has no pen either."
+? choose(Electorate, Mael).
+# => TRUE
+
+? rotten(Mael).
+# => TRUE
+
+? permits(Review, Mael).
+# => FALSE
+
+# "On the account so far, Nia should be a prisoner — the injury, the judgment,
+# the machinery." The premises are pinned so the relief verdict below cannot go
+# vacuous: prisoner(Nia) FALSE means something only while a conviction is there
+# to be relieved.
+? injure(Nia, Ivo).
+# => TRUE
+
+? judge(Court, Nia).
+# => TRUE
+
+# "Nia is not a prisoner, because Nia was cleared."
+? clear(Nia).
+# => TRUE
+
+# [v0.9] ...and the adjudication the relief now requires
+? judge(Appeals, Nia).
+# => TRUE
+
+? permits(Appeals, Nia).
+# => TRUE
+
+? prisoner(Nia).
+# => FALSE
+
+# ── THE BARE FLAG DERIVES NOTHING. Ground fact persists; keep this last ──────
+# "The clearing entry still names no author. The judgment names a body and
+# person, not a case, purpose, act or writer." Adam — convicted, homeless,
+# housed by confinement — is written as cleared, with no generic Appeals
+# judgment beside the word, and nothing moves. Negative-controlled against the pre-guard
+# constitution: these three flip (the flag alone sprang him), and Nia's pins
+# above stand either way.
+clear(Adam).
+
+? permits(Appeals, Adam).
+# => FALSE
+
+? prisoner(Adam).
+# => TRUE
+
+? travel(Adam).
+# => FALSE
+
+# ── THE BARE JUDGMENT DERIVES NOTHING EITHER — the other half, ruled 2026-08-02.
+# The chapter's new default paragraph stands on this pair: an appeals
+# examination that cleared nobody leaves the conviction exactly where it stood.
+# Relief takes both entries. Missing relief permits the prisoner conclusion
+# only when all other custody premises hold. Voss is fresh (Adam's
+# persisting clear-flag above must not meet a judgment fact, or the two halves
+# would combine and free him). Self-controlling against Nia's block above:
+# both entries together lift a conviction, either alone lifts nothing.
+person(Voss).
+injure(Voss, Ivo).
+judge(Court, Voss).
+# T3 fixture: the judgment names one case and the current review binds that
+# exact case, person, Court, custody authority, window, and renewal.
+cite(Court, Case_Voss, Voss).
+observe(Chronicle, Case_Voss, Voss, CaseScope).
+observe(TemporalReview, Case_Voss, Voss, CaseScope).
+observe(Chronicle, Case_Voss, Court, HolderScope).
+observe(TemporalReview, Case_Voss, Court, HolderScope).
+observe(Chronicle, Case_Voss, CourtJudgment, JudgmentScope).
+observe(TemporalReview, Case_Voss, CourtJudgment, JudgmentScope).
+observe(Chronicle, Case_Voss, Ivo, InjuryVictimScope).
+observe(TemporalReview, Case_Voss, Ivo, InjuryVictimScope).
+authorized(Case_Voss, ActiveCustody, Case_Voss).
+observe(Chronicle, Case_Voss, ActiveCustody, PowerScope).
+observe(TemporalReview, Case_Voss, ActiveCustody, PowerScope).
+observe(Chronicle, Case_Voss, Case_Voss, CaseBindingScope).
+observe(TemporalReview, Case_Voss, Case_Voss, CaseBindingScope).
+limit(Case_Voss, Case_Voss, Window_Custody).
+observe(Chronicle, Case_Voss, Window_Custody, LimitScope).
+observe(TemporalReview, Case_Voss, Window_Custody, LimitScope).
+continue(Case_Voss, Epoch_Current).
+observe(Chronicle, Case_Voss, Epoch_Current, RenewalScope).
+observe(TemporalReview, Case_Voss, Epoch_Current, RenewalScope).
+endorses(Electorate, Case_Voss).
+endorses(TemporalReview, Case_Voss).
+
+? prisoner(Voss).
+# => TRUE
+
+judge(Appeals, Voss).
+
+? permits(Appeals, Voss).
+# => FALSE
+
+? prisoner(Voss).
+# => TRUE
+
+# ── The limits of a finding ─────────────────────────────────────────────────────
+# The limits of a finding.
+# Original contribution, accusation, child and restoration scenarios retained.
+# The 2026-09-20 removal supersedes their recognition and clawback verdicts.
+# The removed producers and blanket penalty execute in the explicit
+# credibility/counterfactual-blanket-recognition-loss regression.
+
+? false(Bela).
+# => TRUE
+
+? reward(Bela).
+# => FALSE
+
+? lose(Points, Bela).
+# => FALSE
+
+? person(Bela).
+# => TRUE
+
+? travel(Bela).
+# => TRUE
+
+? prisoner(Bela).
+# => FALSE
+
+? decide(Bela, Ballot).
+# => TRUE
+
+? entitled(Bela, event { eats() }).
+# => TRUE
+
+? owe(State, Eats, Bela).
+# => TRUE
+
+? eats(Bela).
+# => FALSE
+
+? dwell(Bela).
+# => FALSE
+
+? eats(Jala).
+# => FALSE
+
+? teaches(Bela, Cira).
+# => TRUE
+
+? lose(Points, Cira).
+# => FALSE
+
+? reward(Cira).
+# => FALSE
+
+? false(Cira).
+# => FALSE
+
+? teaches(Esa, Fin).
+# => TRUE
+
+? person(Fin).
+# => FALSE
+
+? false(Esa).
+# => FALSE
+
+? lose(Points, Fin).
+# => FALSE
+
+? false(Edo).
+# => TRUE
+
+? lose(Points, Edo).
+# => FALSE
+
+? lose(Points, Mira).
+# => FALSE
+
+? rotten(Mael).
+# => TRUE
+
+? false(Mael).
+# => TRUE
+
+? lose(Points, Mael).
+# => FALSE
+
+? permits(Review, Mael).
+# => FALSE
+
+? authority(Mael).
+# => TRUE
+
+# A general finding does not determine unrelated care, wages or insurance.
+work(Bela, UnrelatedCare).
+? work(Bela, UnrelatedCare).
+# => TRUE
+promise(Foundry, Wage, Bela).
+authorized(Steward, CompensationAttester, Bela).
+observe(Steward, Wage, Bela, LabourBasis).
+? provide(Foundry, Wage, Bela).
+# => TRUE
+pay(Bela, Contribution, Ledgerhouse, SchemeM).
+authorized(Assay, InsuranceAdjudicator, Bela).
+observe(Assay, Illness, Bela, SchemeM).
+? insure(Ledgerhouse, Bela, Illness).
+# => TRUE
+# A finding on a different compensation basis does not remove this wage.
+observe(Court, CompensationFraud, Bela, OtherBasis).
+? provide(Foundry, Wage, Bela).
+# => TRUE
+observe(Court, CompensationFraud, Bela, LabourBasis).
+? provide(Foundry, Wage, Bela).
+# => FALSE
+? provide(Bela, Restitution, Foundry).
+# => TRUE
+? insure(Ledgerhouse, Bela, Illness).
+# => TRUE
+? owe(State, Eats, Bela).
+# => TRUE
+? obliged(Appeals, ReviewContinuingCredibilityRestriction, Mael).
+# => TRUE
+
+forgive(Appeals, Mael).
+
+? false(Mael).
+# => TRUE
+
+judge(Appeals, Mael).
+
+? clean(Mael).
+# => FALSE
+? false(Mael).
+# => TRUE
+
+list(Restore_Mael_Recognition, Mael, Credibility_Mael_Finding, CredibilityRestoration).
+list(Restore_Mael_Recognition, RestoreCredibilityFinding, Evidence_Restore_Mael_Recognition, CredibilityAppealPurposeEvidence).
+judge(Appeals, Restore_Mael_Recognition).
+judge(Tribunal, Restore_Mael_Recognition).
+authorized(Appeals, CredibilityAppellateDisposition, Restore_Mael_Recognition).
+authorized(Tribunal, IndependentCredibilityAppealReview, Restore_Mael_Recognition).
+observe(Appeals, Restore_Mael_Recognition, Mael, CredibilityAppealSubjectScope).
+observe(Appeals, Restore_Mael_Recognition, Credibility_Mael_Finding, CredibilityAppealFindingScope).
+observe(Appeals, Restore_Mael_Recognition, RestoreCredibilityFinding, CredibilityAppealPurposeScope).
+observe(Appeals, Restore_Mael_Recognition, Evidence_Restore_Mael_Recognition, CredibilityAppealEvidenceScope).
+observe(Appeals, Restore_Mael_Recognition, NoticeEvidenceAccessHearingAndReasons, CredibilityAppealProcedureScope).
+observe(Tribunal, Restore_Mael_Recognition, Mael, CredibilityAppealSubjectScope).
+observe(Tribunal, Restore_Mael_Recognition, Credibility_Mael_Finding, CredibilityAppealFindingScope).
+observe(Tribunal, Restore_Mael_Recognition, RestoreCredibilityFinding, CredibilityAppealPurposeScope).
+observe(Tribunal, Restore_Mael_Recognition, Evidence_Restore_Mael_Recognition, CredibilityAppealEvidenceScope).
+observe(Tribunal, Restore_Mael_Recognition, NoticeEvidenceAccessHearingAndReasons, CredibilityAppealProcedureScope).
+observe(Chronicle, Restore_Mael_Recognition, Appeals, CredibilityAppealActorEligibleAtDecisionScope).
+observe(TemporalReview, Restore_Mael_Recognition, Appeals, CredibilityAppealActorEligibleAtDecisionScope).
+observe(Chronicle, Restore_Mael_Recognition, Tribunal, CredibilityAppealReviewActorEligibleAtDecisionScope).
+observe(TemporalReview, Restore_Mael_Recognition, Tribunal, CredibilityAppealReviewActorEligibleAtDecisionScope).
+list(Order_Before_Restore_Mael_Recognition, Credibility_Mael_Finding, Restore_Mael_Recognition, RecordSequence).
+observe(Chronicle, Order_Before_Restore_Mael_Recognition, Credibility_Mael_Finding, RecordStartScope).
+observe(Chronicle, Order_Before_Restore_Mael_Recognition, Restore_Mael_Recognition, RecordEndScope).
+observe(TemporalReview, Order_Before_Restore_Mael_Recognition, Credibility_Mael_Finding, RecordStartScope).
+observe(TemporalReview, Order_Before_Restore_Mael_Recognition, Restore_Mael_Recognition, RecordEndScope).
+list(Order_After_Restore_Mael_Recognition, Restore_Mael_Recognition, Epoch_Current, RecordSequence).
+observe(Chronicle, Order_After_Restore_Mael_Recognition, Restore_Mael_Recognition, RecordStartScope).
+observe(Chronicle, Order_After_Restore_Mael_Recognition, Epoch_Current, RecordEndScope).
+observe(TemporalReview, Order_After_Restore_Mael_Recognition, Restore_Mael_Recognition, RecordStartScope).
+observe(TemporalReview, Order_After_Restore_Mael_Recognition, Epoch_Current, RecordEndScope).
+
+? clean(Mael).
+# => TRUE
+
+? false(Mael).
+# => FALSE
+
+? lose(Points, Mael).
+# => FALSE
+
+? permits(Review, Mael).
+# => FALSE
+
+? reward(Mael).
+# => FALSE
+
+? rotten(Mael).
+# => TRUE
+
+# The restored case no longer incurs the continuing personal-restriction duty.
+? obliged(Appeals, ReviewContinuingCredibilityRestriction, Mael).
+# => FALSE
+
+:accept
+admits("lose").
+
+:refuse reasoning /`lose` is declared derived-only/
+person(Loss_Probe) & lose(Points, Loss_Probe).
+
+? person(Loss_Probe).
+# => FALSE
+
+:refuse reasoning /`lose` is declared derived-only/
+lose(Points, Ghost, Case).
+
+# ── Credibility findings: the paired finding and its reach ──────────────────────
+# Cases use the actual constitution and the declared no-dead-conjuncts variant.
+
+# Bela: the two appointments and the particular completed case.
+? permits(Review, Gia).
+# => TRUE
+
+? permits(Tribunal, Saba).
+# => TRUE
+
+? judge(Gia, Credibility_Bela_Finding).
+# => TRUE
+
+? capture(Gia, Bela, Credibility_Bela_Incident).
+# => TRUE
+
+? judge(Saba, Credibility_Bela_Finding).
+# => TRUE
+
+? capture(Saba, Bela, Credibility_Bela_Incident).
+# => TRUE
+
+? false(Bela).
+# => TRUE
+
+# Koa: documentation alone supplies neither judgment nor appointment.
+? capture(Koa, Esa).
+# => TRUE
+
+? judge(Koa, Esa).
+# => FALSE
+
+? permits(Review, Koa).
+# => FALSE
+
+? false(Esa).
+# => FALSE
+
+# Parent/child judgment alone imposes no personal credibility finding.
+? parent(Dev, Esa).
+# => TRUE
+
+? judge(Dev, Esa).
+# => TRUE
+
+? false(Dev).
+# => FALSE
+
+# Edo: the case identifies whose deceit was adjudicated; Mira is untouched.
+? deceive(Edo, Mira).
+# => TRUE
+
+? false(Mira).
+# => FALSE
+
+? false(Edo).
+# => TRUE
+
+? rotten(Mael).
+# => TRUE
+
+? permits(Tribunal, Wren).
+# => TRUE
+
+? false(Tyr).
+# => FALSE
+
+# Prospective cases: each new signer has a fully witnessed current clearance.
+authorized(Sirefa, ClearStatus, Epoch_Previous).
+observe(Chronicle, Sirefa, Epoch_Previous, ClearScope).
+observe(TemporalReview, Sirefa, Epoch_Previous, ClearScope).
+carries(Chronicle, Sirefa, Epoch_Current, Epoch_Previous, ClearCarry).
+carries(TemporalReview, Sirefa, Epoch_Current, Epoch_Previous, ClearCarry).
+authorized(Scionfa, ClearStatus, Epoch_Previous).
+observe(Chronicle, Scionfa, Epoch_Previous, ClearScope).
+observe(TemporalReview, Scionfa, Epoch_Previous, ClearScope).
+carries(Chronicle, Scionfa, Epoch_Current, Epoch_Previous, ClearCarry).
+carries(TemporalReview, Scionfa, Epoch_Current, Epoch_Previous, ClearCarry).
+authorized(Unrela, ClearStatus, Epoch_Previous).
+observe(Chronicle, Unrela, Epoch_Previous, ClearScope).
+observe(TemporalReview, Unrela, Epoch_Previous, ClearScope).
+carries(Chronicle, Unrela, Epoch_Current, Epoch_Previous, ClearCarry).
+carries(TemporalReview, Unrela, Epoch_Current, Epoch_Previous, ClearCarry).
+authorized(Unrelb, ClearStatus, Epoch_Previous).
+observe(Chronicle, Unrelb, Epoch_Previous, ClearScope).
+observe(TemporalReview, Unrelb, Epoch_Previous, ClearScope).
+carries(Chronicle, Unrelb, Epoch_Current, Epoch_Previous, ClearCarry).
+carries(TemporalReview, Unrelb, Epoch_Current, Epoch_Previous, ClearCarry).
+authorized(Ambi, ClearStatus, Epoch_Previous).
+observe(Chronicle, Ambi, Epoch_Previous, ClearScope).
+observe(TemporalReview, Ambi, Epoch_Previous, ClearScope).
+carries(Chronicle, Ambi, Epoch_Current, Epoch_Previous, ClearCarry).
+carries(TemporalReview, Ambi, Epoch_Current, Epoch_Previous, ClearCarry).
+authorized(Edo, ClearStatus, Epoch_Previous).
+observe(Chronicle, Edo, Epoch_Previous, ClearScope).
+observe(TemporalReview, Edo, Epoch_Previous, ClearScope).
+carries(Chronicle, Edo, Epoch_Current, Epoch_Previous, ClearCarry).
+carries(TemporalReview, Edo, Epoch_Current, Epoch_Previous, ClearCarry).
+authorized(Partnr, ClearStatus, Epoch_Previous).
+observe(Chronicle, Partnr, Epoch_Previous, ClearScope).
+observe(TemporalReview, Partnr, Epoch_Previous, ClearScope).
+carries(Chronicle, Partnr, Epoch_Current, Epoch_Previous, ClearCarry).
+carries(TemporalReview, Partnr, Epoch_Current, Epoch_Previous, ClearCarry).
+authorized(Mara, ClearStatus, Epoch_Previous).
+observe(Chronicle, Mara, Epoch_Previous, ClearScope).
+observe(TemporalReview, Mara, Epoch_Previous, ClearScope).
+carries(Chronicle, Mara, Epoch_Current, Epoch_Previous, ClearCarry).
+carries(TemporalReview, Mara, Epoch_Current, Epoch_Previous, ClearCarry).
+authorized(Maro, ClearStatus, Epoch_Previous).
+observe(Chronicle, Maro, Epoch_Previous, ClearScope).
+observe(TemporalReview, Maro, Epoch_Previous, ClearScope).
+carries(Chronicle, Maro, Epoch_Current, Epoch_Previous, ClearCarry).
+carries(TemporalReview, Maro, Epoch_Current, Epoch_Previous, ClearCarry).
+authorized(Una, ClearStatus, Epoch_Previous).
+observe(Chronicle, Una, Epoch_Previous, ClearScope).
+observe(TemporalReview, Una, Epoch_Previous, ClearScope).
+carries(Chronicle, Una, Epoch_Current, Epoch_Previous, ClearCarry).
+carries(TemporalReview, Una, Epoch_Current, Epoch_Previous, ClearCarry).
+authorized(Uno, ClearStatus, Epoch_Previous).
+observe(Chronicle, Uno, Epoch_Previous, ClearScope).
+observe(TemporalReview, Uno, Epoch_Previous, ClearScope).
+carries(Chronicle, Uno, Epoch_Current, Epoch_Previous, ClearCarry).
+carries(TemporalReview, Uno, Epoch_Current, Epoch_Previous, ClearCarry).
+
+# The parent/child relationship between signers is the live exclusion.
+choose(Electorate, Sirefa).
+choose(Convocation, Scionfa).
+parent(Sirefa, Scionfa).
+judge(Sirefa, Targ).
+capture(Sirefa, Targ).
+judge(Scionfa, Targ).
+capture(Scionfa, Targ).
+cite(Sirefa, CredibilityGroundDeceit, Targ).
+cite(Scionfa, CredibilityGroundDeceit, Targ).
+
+? permits(Review, Sirefa).
+# => TRUE
+
+? permits(Tribunal, Scionfa).
+# => TRUE
+
+list(Finding_Targ, Targ, Incident_Targ, CredibilityFinding).
+list(Finding_Targ, CredibilityGroundDeceit, Evidence_Finding_Targ, CredibilityGroundEvidence).
+judge(Sirefa, Finding_Targ).
+capture(Sirefa, Targ, Incident_Targ).
+cite(Sirefa, CredibilityGroundDeceit, Finding_Targ).
+authorized(Sirefa, IndependentReviewer, Finding_Targ).
+observe(Sirefa, Finding_Targ, Targ, CredibilitySubjectScope).
+observe(Sirefa, Finding_Targ, Incident_Targ, CredibilityIncidentScope).
+observe(Sirefa, Finding_Targ, CredibilityGroundDeceit, CredibilityGroundScope).
+observe(Sirefa, Finding_Targ, Evidence_Finding_Targ, CredibilityEvidenceScope).
+observe(Sirefa, Finding_Targ, NoticeEvidenceAccessHearingAndReasons, CredibilityProcedureScope).
+judge(Scionfa, Finding_Targ).
+capture(Scionfa, Targ, Incident_Targ).
+cite(Scionfa, CredibilityGroundDeceit, Finding_Targ).
+authorized(Scionfa, IndependentReviewer, Finding_Targ).
+observe(Scionfa, Finding_Targ, Targ, CredibilitySubjectScope).
+observe(Scionfa, Finding_Targ, Incident_Targ, CredibilityIncidentScope).
+observe(Scionfa, Finding_Targ, CredibilityGroundDeceit, CredibilityGroundScope).
+observe(Scionfa, Finding_Targ, Evidence_Finding_Targ, CredibilityEvidenceScope).
+observe(Scionfa, Finding_Targ, NoticeEvidenceAccessHearingAndReasons, CredibilityProcedureScope).
+? agree(Finding_Targ, CredibilityFindingCandidate).
+# => FALSE
+? false(Targ).
+# => FALSE
+
+# Unrelated control: permission first, personal effect only from completed history.
+choose(Electorate, Unrela).
+choose(Convocation, Unrelb).
+judge(Unrela, Targo).
+capture(Unrela, Targo).
+judge(Unrelb, Targo).
+capture(Unrelb, Targo).
+cite(Unrela, CredibilityGroundDeceit, Targo).
+cite(Unrelb, CredibilityGroundDeceit, Targo).
+authorized(Unrela, IndependentReviewer, Targo).
+authorized(Unrelb, IndependentReviewer, Targo).
+
+list(Finding_Targo, Targo, Incident_Targo, CredibilityFinding).
+list(Finding_Targo, CredibilityGroundDeceit, Evidence_Finding_Targo, CredibilityGroundEvidence).
+judge(Unrela, Finding_Targo).
+capture(Unrela, Targo, Incident_Targo).
+cite(Unrela, CredibilityGroundDeceit, Finding_Targo).
+authorized(Unrela, IndependentReviewer, Finding_Targo).
+observe(Unrela, Finding_Targo, Targo, CredibilitySubjectScope).
+observe(Unrela, Finding_Targo, Incident_Targo, CredibilityIncidentScope).
+observe(Unrela, Finding_Targo, CredibilityGroundDeceit, CredibilityGroundScope).
+observe(Unrela, Finding_Targo, Evidence_Finding_Targo, CredibilityEvidenceScope).
+observe(Unrela, Finding_Targo, NoticeEvidenceAccessHearingAndReasons, CredibilityProcedureScope).
+judge(Unrelb, Finding_Targo).
+capture(Unrelb, Targo, Incident_Targo).
+cite(Unrelb, CredibilityGroundDeceit, Finding_Targo).
+authorized(Unrelb, IndependentReviewer, Finding_Targo).
+observe(Unrelb, Finding_Targo, Targo, CredibilitySubjectScope).
+observe(Unrelb, Finding_Targo, Incident_Targo, CredibilityIncidentScope).
+observe(Unrelb, Finding_Targo, CredibilityGroundDeceit, CredibilityGroundScope).
+observe(Unrelb, Finding_Targo, Evidence_Finding_Targo, CredibilityEvidenceScope).
+observe(Unrelb, Finding_Targo, NoticeEvidenceAccessHearingAndReasons, CredibilityProcedureScope).
+? agree(Finding_Targo, CredibilityFindingCandidate).
+# => TRUE
+? false(Targo).
+# => FALSE
+observe(Chronicle, Finding_Targo, Unrela, CredibilityReviewSignerEligibleAtDecisionScope).
+observe(TemporalReview, Finding_Targo, Unrela, CredibilityReviewSignerEligibleAtDecisionScope).
+observe(Chronicle, Finding_Targo, Unrelb, CredibilityTribunalSignerEligibleAtDecisionScope).
+observe(TemporalReview, Finding_Targo, Unrelb, CredibilityTribunalSignerEligibleAtDecisionScope).
+list(Order_Finding_Targo, Finding_Targo, Epoch_Current, RecordSequence).
+observe(Chronicle, Order_Finding_Targo, Finding_Targo, RecordStartScope).
+observe(Chronicle, Order_Finding_Targo, Epoch_Current, RecordEndScope).
+observe(TemporalReview, Order_Finding_Targo, Finding_Targo, RecordStartScope).
+observe(TemporalReview, Order_Finding_Targo, Epoch_Current, RecordEndScope).
+? responsible(Finding_Targo, CredibilityFinding).
+# => TRUE
+? false(Targo).
+# => TRUE
+
+# One holder of two appointments is still one signer.
+choose(Electorate, Ambi).
+choose(Convocation, Ambi).
+judge(Ambi, Solo).
+capture(Ambi, Solo).
+cite(Ambi, CredibilityGroundDeceit, Solo).
+authorized(Ambi, IndependentReviewer, Solo).
+authorized(Ambi, IndependentReviewer, Solo).
+
+? permits(Review, Ambi).
+# => TRUE
+
+? permits(Tribunal, Ambi).
+# => TRUE
+
+list(Finding_Solo, Solo, Incident_Solo, CredibilityFinding).
+list(Finding_Solo, CredibilityGroundDeceit, Evidence_Finding_Solo, CredibilityGroundEvidence).
+judge(Ambi, Finding_Solo).
+capture(Ambi, Solo, Incident_Solo).
+cite(Ambi, CredibilityGroundDeceit, Finding_Solo).
+authorized(Ambi, IndependentReviewer, Finding_Solo).
+observe(Ambi, Finding_Solo, Solo, CredibilitySubjectScope).
+observe(Ambi, Finding_Solo, Incident_Solo, CredibilityIncidentScope).
+observe(Ambi, Finding_Solo, CredibilityGroundDeceit, CredibilityGroundScope).
+observe(Ambi, Finding_Solo, Evidence_Finding_Solo, CredibilityEvidenceScope).
+observe(Ambi, Finding_Solo, NoticeEvidenceAccessHearingAndReasons, CredibilityProcedureScope).
+judge(Ambi, Finding_Solo).
+capture(Ambi, Solo, Incident_Solo).
+cite(Ambi, CredibilityGroundDeceit, Finding_Solo).
+authorized(Ambi, IndependentReviewer, Finding_Solo).
+observe(Ambi, Finding_Solo, Solo, CredibilitySubjectScope).
+observe(Ambi, Finding_Solo, Incident_Solo, CredibilityIncidentScope).
+observe(Ambi, Finding_Solo, CredibilityGroundDeceit, CredibilityGroundScope).
+observe(Ambi, Finding_Solo, Evidence_Finding_Solo, CredibilityEvidenceScope).
+observe(Ambi, Finding_Solo, NoticeEvidenceAccessHearingAndReasons, CredibilityProcedureScope).
+? agree(Finding_Solo, CredibilityFindingCandidate).
+# => FALSE
+? false(Solo).
+# => FALSE
+
+# Current disqualification blocks Frisk's proposed finding despite appointment.
+choose(Electorate, Edo).
+
+? false(Edo).
+# => TRUE
+
+? permits(Review, Edo).
+# => TRUE
+
+choose(Convocation, Partnr).
+judge(Edo, Frisk).
+capture(Edo, Frisk).
+judge(Partnr, Frisk).
+capture(Partnr, Frisk).
+cite(Edo, CredibilityGroundFabricatedRecord, Frisk).
+cite(Partnr, CredibilityGroundFabricatedRecord, Frisk).
+authorized(Edo, IndependentReviewer, Frisk).
+authorized(Partnr, IndependentReviewer, Frisk).
+
+list(Finding_Frisk_Chapter, Frisk, Incident_Frisk, CredibilityFinding).
+list(Finding_Frisk_Chapter, CredibilityGroundFabricatedRecord, Evidence_Finding_Frisk_Chapter, CredibilityGroundEvidence).
+judge(Edo, Finding_Frisk_Chapter).
+capture(Edo, Frisk, Incident_Frisk).
+cite(Edo, CredibilityGroundFabricatedRecord, Finding_Frisk_Chapter).
+authorized(Edo, IndependentReviewer, Finding_Frisk_Chapter).
+observe(Edo, Finding_Frisk_Chapter, Frisk, CredibilitySubjectScope).
+observe(Edo, Finding_Frisk_Chapter, Incident_Frisk, CredibilityIncidentScope).
+observe(Edo, Finding_Frisk_Chapter, CredibilityGroundFabricatedRecord, CredibilityGroundScope).
+observe(Edo, Finding_Frisk_Chapter, Evidence_Finding_Frisk_Chapter, CredibilityEvidenceScope).
+observe(Edo, Finding_Frisk_Chapter, NoticeEvidenceAccessHearingAndReasons, CredibilityProcedureScope).
+judge(Partnr, Finding_Frisk_Chapter).
+capture(Partnr, Frisk, Incident_Frisk).
+cite(Partnr, CredibilityGroundFabricatedRecord, Finding_Frisk_Chapter).
+authorized(Partnr, IndependentReviewer, Finding_Frisk_Chapter).
+observe(Partnr, Finding_Frisk_Chapter, Frisk, CredibilitySubjectScope).
+observe(Partnr, Finding_Frisk_Chapter, Incident_Frisk, CredibilityIncidentScope).
+observe(Partnr, Finding_Frisk_Chapter, CredibilityGroundFabricatedRecord, CredibilityGroundScope).
+observe(Partnr, Finding_Frisk_Chapter, Evidence_Finding_Frisk_Chapter, CredibilityEvidenceScope).
+observe(Partnr, Finding_Frisk_Chapter, NoticeEvidenceAccessHearingAndReasons, CredibilityProcedureScope).
+? agree(Finding_Frisk_Chapter, CredibilityFindingCandidate).
+# => FALSE
+? false(Frisk).
+# => FALSE
+
+? false(Tyr).
+# => FALSE
+
+# An independently witnessed carry separately blocks the appointment route.
+authorized(Edo, VoidStatus, Epoch_Previous).
+observe(Chronicle, Edo, Epoch_Previous, VoidScope).
+observe(TemporalReview, Edo, Epoch_Previous, VoidScope).
+carries(Chronicle, Edo, Epoch_Current, Epoch_Previous, VoidCarry).
+carries(TemporalReview, Edo, Epoch_Current, Epoch_Previous, VoidCarry).
+rotten(Edo).
+
+? permits(Review, Edo).
+# => FALSE
+
+# Spousal conflict is live; the unrelated pair is the positive control.
+choose(Electorate, Mara).
+choose(Convocation, Maro).
+married(Mara, Maro).
+judge(Mara, Targ2).
+capture(Mara, Targ2).
+judge(Maro, Targ2).
+capture(Maro, Targ2).
+cite(Mara, CredibilityGroundDeceit, Targ2).
+cite(Maro, CredibilityGroundDeceit, Targ2).
+
+list(Finding_Targ2, Targ2, Incident_Targ2, CredibilityFinding).
+list(Finding_Targ2, CredibilityGroundDeceit, Evidence_Finding_Targ2, CredibilityGroundEvidence).
+judge(Mara, Finding_Targ2).
+capture(Mara, Targ2, Incident_Targ2).
+cite(Mara, CredibilityGroundDeceit, Finding_Targ2).
+authorized(Mara, IndependentReviewer, Finding_Targ2).
+observe(Mara, Finding_Targ2, Targ2, CredibilitySubjectScope).
+observe(Mara, Finding_Targ2, Incident_Targ2, CredibilityIncidentScope).
+observe(Mara, Finding_Targ2, CredibilityGroundDeceit, CredibilityGroundScope).
+observe(Mara, Finding_Targ2, Evidence_Finding_Targ2, CredibilityEvidenceScope).
+observe(Mara, Finding_Targ2, NoticeEvidenceAccessHearingAndReasons, CredibilityProcedureScope).
+judge(Maro, Finding_Targ2).
+capture(Maro, Targ2, Incident_Targ2).
+cite(Maro, CredibilityGroundDeceit, Finding_Targ2).
+authorized(Maro, IndependentReviewer, Finding_Targ2).
+observe(Maro, Finding_Targ2, Targ2, CredibilitySubjectScope).
+observe(Maro, Finding_Targ2, Incident_Targ2, CredibilityIncidentScope).
+observe(Maro, Finding_Targ2, CredibilityGroundDeceit, CredibilityGroundScope).
+observe(Maro, Finding_Targ2, Evidence_Finding_Targ2, CredibilityEvidenceScope).
+observe(Maro, Finding_Targ2, NoticeEvidenceAccessHearingAndReasons, CredibilityProcedureScope).
+? agree(Finding_Targ2, CredibilityFindingCandidate).
+# => FALSE
+? false(Targ2).
+# => FALSE
+
+choose(Electorate, Una).
+choose(Convocation, Uno).
+judge(Una, Targ3).
+capture(Una, Targ3).
+judge(Uno, Targ3).
+capture(Uno, Targ3).
+cite(Una, CredibilityGroundDeceit, Targ3).
+cite(Uno, CredibilityGroundDeceit, Targ3).
+authorized(Una, IndependentReviewer, Targ3).
+authorized(Uno, IndependentReviewer, Targ3).
+
+list(Finding_Targ3, Targ3, Incident_Targ3, CredibilityFinding).
+list(Finding_Targ3, CredibilityGroundDeceit, Evidence_Finding_Targ3, CredibilityGroundEvidence).
+judge(Una, Finding_Targ3).
+capture(Una, Targ3, Incident_Targ3).
+cite(Una, CredibilityGroundDeceit, Finding_Targ3).
+authorized(Una, IndependentReviewer, Finding_Targ3).
+observe(Una, Finding_Targ3, Targ3, CredibilitySubjectScope).
+observe(Una, Finding_Targ3, Incident_Targ3, CredibilityIncidentScope).
+observe(Una, Finding_Targ3, CredibilityGroundDeceit, CredibilityGroundScope).
+observe(Una, Finding_Targ3, Evidence_Finding_Targ3, CredibilityEvidenceScope).
+observe(Una, Finding_Targ3, NoticeEvidenceAccessHearingAndReasons, CredibilityProcedureScope).
+judge(Uno, Finding_Targ3).
+capture(Uno, Targ3, Incident_Targ3).
+cite(Uno, CredibilityGroundDeceit, Finding_Targ3).
+authorized(Uno, IndependentReviewer, Finding_Targ3).
+observe(Uno, Finding_Targ3, Targ3, CredibilitySubjectScope).
+observe(Uno, Finding_Targ3, Incident_Targ3, CredibilityIncidentScope).
+observe(Uno, Finding_Targ3, CredibilityGroundDeceit, CredibilityGroundScope).
+observe(Uno, Finding_Targ3, Evidence_Finding_Targ3, CredibilityEvidenceScope).
+observe(Uno, Finding_Targ3, NoticeEvidenceAccessHearingAndReasons, CredibilityProcedureScope).
+? agree(Finding_Targ3, CredibilityFindingCandidate).
+# => TRUE
+? false(Targ3).
+# => FALSE
+observe(Chronicle, Finding_Targ3, Una, CredibilityReviewSignerEligibleAtDecisionScope).
+observe(TemporalReview, Finding_Targ3, Una, CredibilityReviewSignerEligibleAtDecisionScope).
+observe(Chronicle, Finding_Targ3, Uno, CredibilityTribunalSignerEligibleAtDecisionScope).
+observe(TemporalReview, Finding_Targ3, Uno, CredibilityTribunalSignerEligibleAtDecisionScope).
+list(Order_Finding_Targ3, Finding_Targ3, Epoch_Current, RecordSequence).
+observe(Chronicle, Order_Finding_Targ3, Finding_Targ3, RecordStartScope).
+observe(Chronicle, Order_Finding_Targ3, Epoch_Current, RecordEndScope).
+observe(TemporalReview, Order_Finding_Targ3, Finding_Targ3, RecordStartScope).
+observe(TemporalReview, Order_Finding_Targ3, Epoch_Current, RecordEndScope).
+? false(Targ3).
+# => TRUE
+
+# A complaint pays for examination; an adverse pair must affirm the same case.
+authorized(Nogra, ClearStatus, Epoch_Previous).
+observe(Chronicle, Nogra, Epoch_Previous, ClearScope).
+observe(TemporalReview, Nogra, Epoch_Previous, ClearScope).
+carries(Chronicle, Nogra, Epoch_Current, Epoch_Previous, ClearCarry).
+carries(TemporalReview, Nogra, Epoch_Current, Epoch_Previous, ClearCarry).
+authorized(Nogrb, ClearStatus, Epoch_Previous).
+observe(Chronicle, Nogrb, Epoch_Previous, ClearScope).
+observe(TemporalReview, Nogrb, Epoch_Previous, ClearScope).
+carries(Chronicle, Nogrb, Epoch_Current, Epoch_Previous, ClearCarry).
+carries(TemporalReview, Nogrb, Epoch_Current, Epoch_Previous, ClearCarry).
+choose(Electorate, Nogra).
+choose(Convocation, Nogrb).
+judge(Nogra, Targ4).
+capture(Nogra, Targ4).
+authorized(Nogra, IndependentReviewer, Targ4).
+cite(Nogra, Complaint, Targ4).
+judge(Nogrb, Targ4).
+capture(Nogrb, Targ4).
+authorized(Nogrb, IndependentReviewer, Targ4).
+cite(Nogrb, Complaint, Targ4).
+
+? permits(Review, Nogra).
+# => TRUE
+
+? permits(Tribunal, Nogrb).
+# => TRUE
+
+? reward(Nogra).
+# => FALSE
+
+? reward(Nogrb).
+# => FALSE
+
+? false(Targ4).
+# => FALSE
+
+list(Finding_Targ4, Targ4, Incident_Targ4, CredibilityFinding).
+list(Finding_Targ4, CredibilityGroundDeceit, Evidence_Finding_Targ4, CredibilityGroundEvidence).
+judge(Nogra, Finding_Targ4).
+capture(Nogra, Targ4, Incident_Targ4).
+authorized(Nogra, IndependentReviewer, Finding_Targ4).
+observe(Nogra, Finding_Targ4, Targ4, CredibilitySubjectScope).
+observe(Nogra, Finding_Targ4, Incident_Targ4, CredibilityIncidentScope).
+observe(Nogra, Finding_Targ4, Evidence_Finding_Targ4, CredibilityEvidenceScope).
+observe(Nogra, Finding_Targ4, NoticeEvidenceAccessHearingAndReasons, CredibilityProcedureScope).
+judge(Nogrb, Finding_Targ4).
+capture(Nogrb, Targ4, Incident_Targ4).
+authorized(Nogrb, IndependentReviewer, Finding_Targ4).
+observe(Nogrb, Finding_Targ4, Targ4, CredibilitySubjectScope).
+observe(Nogrb, Finding_Targ4, Incident_Targ4, CredibilityIncidentScope).
+observe(Nogrb, Finding_Targ4, Evidence_Finding_Targ4, CredibilityEvidenceScope).
+observe(Nogrb, Finding_Targ4, NoticeEvidenceAccessHearingAndReasons, CredibilityProcedureScope).
+? agree(Finding_Targ4, CredibilityFindingCandidate).
+# => FALSE
+cite(Nogra, CredibilityGroundDeceit, Targ4).
+cite(Nogra, CredibilityGroundDeceit, Finding_Targ4).
+observe(Nogra, Finding_Targ4, CredibilityGroundDeceit, CredibilityGroundScope).
+? agree(Finding_Targ4, CredibilityFindingCandidate).
+# => FALSE
+
+? false(Targ4).
+# => FALSE
+
+cite(Nogrb, CredibilityGroundDeceit, Targ4).
+cite(Nogrb, CredibilityGroundDeceit, Finding_Targ4).
+observe(Nogrb, Finding_Targ4, CredibilityGroundDeceit, CredibilityGroundScope).
+? agree(Finding_Targ4, CredibilityFindingCandidate).
+# => TRUE
+? false(Targ4).
+# => FALSE
+observe(Chronicle, Finding_Targ4, Nogra, CredibilityReviewSignerEligibleAtDecisionScope).
+observe(TemporalReview, Finding_Targ4, Nogra, CredibilityReviewSignerEligibleAtDecisionScope).
+observe(Chronicle, Finding_Targ4, Nogrb, CredibilityTribunalSignerEligibleAtDecisionScope).
+observe(TemporalReview, Finding_Targ4, Nogrb, CredibilityTribunalSignerEligibleAtDecisionScope).
+list(Order_Finding_Targ4, Finding_Targ4, Epoch_Current, RecordSequence).
+observe(Chronicle, Order_Finding_Targ4, Finding_Targ4, RecordStartScope).
+observe(Chronicle, Order_Finding_Targ4, Epoch_Current, RecordEndScope).
+observe(TemporalReview, Order_Finding_Targ4, Finding_Targ4, RecordStartScope).
+observe(TemporalReview, Order_Finding_Targ4, Epoch_Current, RecordEndScope).
+
+? false(Targ4).
+# => TRUE
+
+# Restoration needs a qualified appellate case; generic forgiveness is inert.
+authorized(Reva, ClearStatus, Epoch_Previous).
+observe(Chronicle, Reva, Epoch_Previous, ClearScope).
+observe(TemporalReview, Reva, Epoch_Previous, ClearScope).
+carries(Chronicle, Reva, Epoch_Current, Epoch_Previous, ClearCarry).
+carries(TemporalReview, Reva, Epoch_Current, Epoch_Previous, ClearCarry).
+authorized(Revb, ClearStatus, Epoch_Previous).
+observe(Chronicle, Revb, Epoch_Previous, ClearScope).
+observe(TemporalReview, Revb, Epoch_Previous, ClearScope).
+carries(Chronicle, Revb, Epoch_Current, Epoch_Previous, ClearCarry).
+carries(TemporalReview, Revb, Epoch_Current, Epoch_Previous, ClearCarry).
+choose(Electorate, Reva).
+choose(Convocation, Revb).
+judge(Reva, Purga).
+capture(Reva, Purga).
+authorized(Reva, IndependentReviewer, Purga).
+cite(Reva, CredibilityGroundConcealedConflict, Purga).
+judge(Revb, Purga).
+capture(Revb, Purga).
+authorized(Revb, IndependentReviewer, Purga).
+cite(Revb, CredibilityGroundConcealedConflict, Purga).
+list(Finding_Purga, Purga, Incident_Purga, CredibilityFinding).
+list(Finding_Purga, CredibilityGroundConcealedConflict, Evidence_Finding_Purga, CredibilityGroundEvidence).
+judge(Reva, Finding_Purga).
+capture(Reva, Purga, Incident_Purga).
+cite(Reva, CredibilityGroundConcealedConflict, Finding_Purga).
+authorized(Reva, IndependentReviewer, Finding_Purga).
+observe(Reva, Finding_Purga, Purga, CredibilitySubjectScope).
+observe(Reva, Finding_Purga, Incident_Purga, CredibilityIncidentScope).
+observe(Reva, Finding_Purga, CredibilityGroundConcealedConflict, CredibilityGroundScope).
+observe(Reva, Finding_Purga, Evidence_Finding_Purga, CredibilityEvidenceScope).
+observe(Reva, Finding_Purga, NoticeEvidenceAccessHearingAndReasons, CredibilityProcedureScope).
+judge(Revb, Finding_Purga).
+capture(Revb, Purga, Incident_Purga).
+cite(Revb, CredibilityGroundConcealedConflict, Finding_Purga).
+authorized(Revb, IndependentReviewer, Finding_Purga).
+observe(Revb, Finding_Purga, Purga, CredibilitySubjectScope).
+observe(Revb, Finding_Purga, Incident_Purga, CredibilityIncidentScope).
+observe(Revb, Finding_Purga, CredibilityGroundConcealedConflict, CredibilityGroundScope).
+observe(Revb, Finding_Purga, Evidence_Finding_Purga, CredibilityEvidenceScope).
+observe(Revb, Finding_Purga, NoticeEvidenceAccessHearingAndReasons, CredibilityProcedureScope).
+observe(Chronicle, Finding_Purga, Reva, CredibilityReviewSignerEligibleAtDecisionScope).
+observe(TemporalReview, Finding_Purga, Reva, CredibilityReviewSignerEligibleAtDecisionScope).
+observe(Chronicle, Finding_Purga, Revb, CredibilityTribunalSignerEligibleAtDecisionScope).
+observe(TemporalReview, Finding_Purga, Revb, CredibilityTribunalSignerEligibleAtDecisionScope).
+list(Order_Finding_Purga, Finding_Purga, Epoch_Current, RecordSequence).
+observe(Chronicle, Order_Finding_Purga, Finding_Purga, RecordStartScope).
+observe(Chronicle, Order_Finding_Purga, Epoch_Current, RecordEndScope).
+observe(TemporalReview, Order_Finding_Purga, Finding_Purga, RecordStartScope).
+observe(TemporalReview, Order_Finding_Purga, Epoch_Current, RecordEndScope).
+forgive(Appeals, Purga).
+judge(Appeals, Purga).
+? clean(Purga).
+# => FALSE
+? false(Purga).
+# => TRUE
+list(Restore_Purga, Purga, Finding_Purga, CredibilityRestoration).
+list(Restore_Purga, RestoreCredibilityFinding, Evidence_Restore_Purga, CredibilityAppealPurposeEvidence).
+judge(Appeals, Restore_Purga).
+judge(Tribunal, Restore_Purga).
+authorized(Appeals, CredibilityAppellateDisposition, Restore_Purga).
+authorized(Tribunal, IndependentCredibilityAppealReview, Restore_Purga).
+observe(Appeals, Restore_Purga, Purga, CredibilityAppealSubjectScope).
+observe(Appeals, Restore_Purga, Finding_Purga, CredibilityAppealFindingScope).
+observe(Appeals, Restore_Purga, RestoreCredibilityFinding, CredibilityAppealPurposeScope).
+observe(Appeals, Restore_Purga, Evidence_Restore_Purga, CredibilityAppealEvidenceScope).
+observe(Appeals, Restore_Purga, NoticeEvidenceAccessHearingAndReasons, CredibilityAppealProcedureScope).
+observe(Tribunal, Restore_Purga, Purga, CredibilityAppealSubjectScope).
+observe(Tribunal, Restore_Purga, Finding_Purga, CredibilityAppealFindingScope).
+observe(Tribunal, Restore_Purga, RestoreCredibilityFinding, CredibilityAppealPurposeScope).
+observe(Tribunal, Restore_Purga, Evidence_Restore_Purga, CredibilityAppealEvidenceScope).
+observe(Tribunal, Restore_Purga, NoticeEvidenceAccessHearingAndReasons, CredibilityAppealProcedureScope).
+observe(Chronicle, Restore_Purga, Appeals, CredibilityAppealActorEligibleAtDecisionScope).
+observe(TemporalReview, Restore_Purga, Appeals, CredibilityAppealActorEligibleAtDecisionScope).
+observe(Chronicle, Restore_Purga, Tribunal, CredibilityAppealReviewActorEligibleAtDecisionScope).
+observe(TemporalReview, Restore_Purga, Tribunal, CredibilityAppealReviewActorEligibleAtDecisionScope).
+list(Order_Before_Restore_Purga, Finding_Purga, Restore_Purga, RecordSequence).
+observe(Chronicle, Order_Before_Restore_Purga, Finding_Purga, RecordStartScope).
+observe(Chronicle, Order_Before_Restore_Purga, Restore_Purga, RecordEndScope).
+observe(TemporalReview, Order_Before_Restore_Purga, Finding_Purga, RecordStartScope).
+observe(TemporalReview, Order_Before_Restore_Purga, Restore_Purga, RecordEndScope).
+list(Order_After_Restore_Purga, Restore_Purga, Epoch_Current, RecordSequence).
+observe(Chronicle, Order_After_Restore_Purga, Restore_Purga, RecordStartScope).
+observe(Chronicle, Order_After_Restore_Purga, Epoch_Current, RecordEndScope).
+observe(TemporalReview, Order_After_Restore_Purga, Restore_Purga, RecordStartScope).
+observe(TemporalReview, Order_After_Restore_Purga, Epoch_Current, RecordEndScope).
+
+? permits(Review, Reva).
+# => TRUE
+
+? permits(Tribunal, Revb).
+# => TRUE
+
+? clean(Purga).
+# => TRUE
+
+? false(Purga).
+# => FALSE
+
+? lose(Points, Purga).
+# => FALSE
+
+# Reasons and subject-initiated review; neither establishes actual delivery.
+? obliged(Review, ExplainTheGroundOfACredibilityFinding, Bela).
+# => TRUE
+
+? obliged(Appeals, Bela).
+# => FALSE
+
+challenge(Bela, Complaint, CredibilityReview).
+
+? obliged(Appeals, Bela).
+# => TRUE
+
+? false(Bela).
+# => TRUE
+
+# The reasons duty does not wait for a separate personhood entry.
+? person(Targo).
+# => FALSE
+
+? obliged(Review, ExplainTheGroundOfACredibilityFinding, Targo).
+# => TRUE
+
+# A separately adjudicated concealed conflict can end while the relationship remains.
+list(Finding_Dev_Conflict, Dev, Examination_Dev_Esa, CredibilityFinding).
+list(Finding_Dev_Conflict, CredibilityGroundConcealedConflict, Evidence_Finding_Dev_Conflict, CredibilityGroundEvidence).
+judge(Gia, Finding_Dev_Conflict).
+capture(Gia, Dev, Examination_Dev_Esa).
+cite(Gia, CredibilityGroundConcealedConflict, Finding_Dev_Conflict).
+authorized(Gia, IndependentReviewer, Finding_Dev_Conflict).
+observe(Gia, Finding_Dev_Conflict, Dev, CredibilitySubjectScope).
+observe(Gia, Finding_Dev_Conflict, Examination_Dev_Esa, CredibilityIncidentScope).
+observe(Gia, Finding_Dev_Conflict, CredibilityGroundConcealedConflict, CredibilityGroundScope).
+observe(Gia, Finding_Dev_Conflict, Evidence_Finding_Dev_Conflict, CredibilityEvidenceScope).
+observe(Gia, Finding_Dev_Conflict, NoticeEvidenceAccessHearingAndReasons, CredibilityProcedureScope).
+judge(Saba, Finding_Dev_Conflict).
+capture(Saba, Dev, Examination_Dev_Esa).
+cite(Saba, CredibilityGroundConcealedConflict, Finding_Dev_Conflict).
+authorized(Saba, IndependentReviewer, Finding_Dev_Conflict).
+observe(Saba, Finding_Dev_Conflict, Dev, CredibilitySubjectScope).
+observe(Saba, Finding_Dev_Conflict, Examination_Dev_Esa, CredibilityIncidentScope).
+observe(Saba, Finding_Dev_Conflict, CredibilityGroundConcealedConflict, CredibilityGroundScope).
+observe(Saba, Finding_Dev_Conflict, Evidence_Finding_Dev_Conflict, CredibilityEvidenceScope).
+observe(Saba, Finding_Dev_Conflict, NoticeEvidenceAccessHearingAndReasons, CredibilityProcedureScope).
+observe(Chronicle, Finding_Dev_Conflict, Gia, CredibilityReviewSignerEligibleAtDecisionScope).
+observe(TemporalReview, Finding_Dev_Conflict, Gia, CredibilityReviewSignerEligibleAtDecisionScope).
+observe(Chronicle, Finding_Dev_Conflict, Saba, CredibilityTribunalSignerEligibleAtDecisionScope).
+observe(TemporalReview, Finding_Dev_Conflict, Saba, CredibilityTribunalSignerEligibleAtDecisionScope).
+list(Order_Finding_Dev_Conflict, Finding_Dev_Conflict, Epoch_Current, RecordSequence).
+observe(Chronicle, Order_Finding_Dev_Conflict, Finding_Dev_Conflict, RecordStartScope).
+observe(Chronicle, Order_Finding_Dev_Conflict, Epoch_Current, RecordEndScope).
+observe(TemporalReview, Order_Finding_Dev_Conflict, Finding_Dev_Conflict, RecordStartScope).
+observe(TemporalReview, Order_Finding_Dev_Conflict, Epoch_Current, RecordEndScope).
+? false(Dev).
+# => TRUE
+list(Restore_Dev_Conflict, Dev, Finding_Dev_Conflict, CredibilityRestoration).
+list(Restore_Dev_Conflict, RestoreCredibilityFinding, Evidence_Restore_Dev_Conflict, CredibilityAppealPurposeEvidence).
+judge(Appeals, Restore_Dev_Conflict).
+judge(Tribunal, Restore_Dev_Conflict).
+authorized(Appeals, CredibilityAppellateDisposition, Restore_Dev_Conflict).
+authorized(Tribunal, IndependentCredibilityAppealReview, Restore_Dev_Conflict).
+observe(Appeals, Restore_Dev_Conflict, Dev, CredibilityAppealSubjectScope).
+observe(Appeals, Restore_Dev_Conflict, Finding_Dev_Conflict, CredibilityAppealFindingScope).
+observe(Appeals, Restore_Dev_Conflict, RestoreCredibilityFinding, CredibilityAppealPurposeScope).
+observe(Appeals, Restore_Dev_Conflict, Evidence_Restore_Dev_Conflict, CredibilityAppealEvidenceScope).
+observe(Appeals, Restore_Dev_Conflict, NoticeEvidenceAccessHearingAndReasons, CredibilityAppealProcedureScope).
+observe(Tribunal, Restore_Dev_Conflict, Dev, CredibilityAppealSubjectScope).
+observe(Tribunal, Restore_Dev_Conflict, Finding_Dev_Conflict, CredibilityAppealFindingScope).
+observe(Tribunal, Restore_Dev_Conflict, RestoreCredibilityFinding, CredibilityAppealPurposeScope).
+observe(Tribunal, Restore_Dev_Conflict, Evidence_Restore_Dev_Conflict, CredibilityAppealEvidenceScope).
+observe(Tribunal, Restore_Dev_Conflict, NoticeEvidenceAccessHearingAndReasons, CredibilityAppealProcedureScope).
+observe(Chronicle, Restore_Dev_Conflict, Appeals, CredibilityAppealActorEligibleAtDecisionScope).
+observe(TemporalReview, Restore_Dev_Conflict, Appeals, CredibilityAppealActorEligibleAtDecisionScope).
+observe(Chronicle, Restore_Dev_Conflict, Tribunal, CredibilityAppealReviewActorEligibleAtDecisionScope).
+observe(TemporalReview, Restore_Dev_Conflict, Tribunal, CredibilityAppealReviewActorEligibleAtDecisionScope).
+list(Order_Before_Restore_Dev_Conflict, Finding_Dev_Conflict, Restore_Dev_Conflict, RecordSequence).
+observe(Chronicle, Order_Before_Restore_Dev_Conflict, Finding_Dev_Conflict, RecordStartScope).
+observe(Chronicle, Order_Before_Restore_Dev_Conflict, Restore_Dev_Conflict, RecordEndScope).
+observe(TemporalReview, Order_Before_Restore_Dev_Conflict, Finding_Dev_Conflict, RecordStartScope).
+observe(TemporalReview, Order_Before_Restore_Dev_Conflict, Restore_Dev_Conflict, RecordEndScope).
+list(Order_After_Restore_Dev_Conflict, Restore_Dev_Conflict, Epoch_Current, RecordSequence).
+observe(Chronicle, Order_After_Restore_Dev_Conflict, Restore_Dev_Conflict, RecordStartScope).
+observe(Chronicle, Order_After_Restore_Dev_Conflict, Epoch_Current, RecordEndScope).
+observe(TemporalReview, Order_After_Restore_Dev_Conflict, Restore_Dev_Conflict, RecordStartScope).
+observe(TemporalReview, Order_After_Restore_Dev_Conflict, Epoch_Current, RecordEndScope).
+? parent(Dev, Esa).
+# => TRUE
+? judge(Dev, Esa).
+# => TRUE
+? clean(Finding_Dev_Conflict, CredibilityFinding).
+# => TRUE
+? false(Dev).
+# => FALSE
+
+# "Nothing else follows": an office outside the restriction. Bela, under an
+# effective finding, is the source of a floor-shortfall pattern certification
+# beside a separate reviewer, and the certification obliges the Constitutional
+# Court to decide. That family has its own independence and conflict rules;
+# the credibility finding is not among them.
+public(ShortfallTier_Bela).
+authorized(Bela, FloorShortfallPatternSourceAuthority, Pattern_Bela).
+authorized(PatternReviewer_Bela, IndependentFloorShortfallPatternReviewAuthority, Pattern_Bela).
+observe(Bela, Pattern_Bela, ShortfallTier_Bela, FloorShortfallPatternTierScope).
+observe(PatternReviewer_Bela, Pattern_Bela, ShortfallTier_Bela, FloorShortfallPatternTierScope).
+? false(Bela).
+# => TRUE
+
+? obliged(FSBOD_18, DecideWhetherTheCertifiedFloorShortfallIsAnUnconstitutionalStateOfAffairs, Pattern_Bela).
+# => TRUE
+
+# Personal credibility does not condition standing, the floor or the ballot.
+? person(Bela).
+# => TRUE
+
+? owe(State, Eats, Bela).
+# => TRUE
+
+? travel(Bela).
+# => TRUE
+
+? decide(Bela, Ballot).
+# => TRUE
+
+? prisoner(Bela).
+# => FALSE
+
+? reward(Bela).
+# => FALSE
+
+? lose(Points, Bela).
+# => FALSE
+
+? false(Tyr).
+# => FALSE
+
+# Unwitnessed carry cannot impose a personal finding.
+? false(Forga).
+# => FALSE
+
+rotten(Forga).
+carries(Chronicle, Forga, Epoch_Current, Epoch_Previous, VoidCarry).
+carries(TemporalReview, Forga, Epoch_Current, Epoch_Previous, VoidCarry).
+
+? err(Forga, CarryForgery).
+# => TRUE
+
+? false(Forga).
+# => FALSE
+
+# The one-line child fixture: every debt remains unconditional.
+? false(Nell).
+# => FALSE
+
+? owe(State, Eats, Nell).
+# => TRUE
+
+? owe(State, Dwell, Nell).
+# => TRUE
+
+? owe(State, Healthy, Nell).
+# => TRUE
+
+? owe(State, Learn, Nell).
+# => TRUE
+
+? owe(State, Secure, Nell).
+# => TRUE
+
+? owe(State, Suffice, Nell).
+# => TRUE
+
+? owe(State, Expresses, Nell).
+# => TRUE
+
+? owe(State, Believe, Nell).
+# => TRUE
+
+? owe(State, Meets, Nell).
+# => TRUE
+
+? reward(Nell).
+# => FALSE
+
+? lose(Points, Nell).
+# => FALSE
+
+# Explicit weaker prospective rule: remove only distinctness. It permits the
+# single signer's proposal, which by itself still imposes no personal finding.
+:accept
+all $a: all $b: all $evidence: all $ground: all $incident: all $record: all $subject: list($record, $subject, $incident, CredibilityFinding) & list($record, $ground, $evidence, CredibilityGroundEvidence) & member($ground, CredibilityGroundVocabulary) & judge($a, $record) & judge($b, $record) & capture($a, $subject, $incident) & capture($b, $subject, $incident) & cite($a, $ground, $record) & cite($b, $ground, $record) & authorized($a, IndependentReviewer, $record) & authorized($b, IndependentReviewer, $record) & ~($a = $subject) & ~($b = $subject) & ~parent($a, $subject) & ~parent($b, $subject) & ~parent($subject, $a) & ~parent($subject, $b) & ~married($a, $subject) & ~married($b, $subject) & ~sibling($a, $subject) & ~sibling($b, $subject) & ~collide($record, CredibilityCaseBinding) & observe($a, $record, $subject, CredibilitySubjectScope) & observe($b, $record, $subject, CredibilitySubjectScope) & observe($a, $record, $incident, CredibilityIncidentScope) & observe($b, $record, $incident, CredibilityIncidentScope) & observe($a, $record, $ground, CredibilityGroundScope) & observe($b, $record, $ground, CredibilityGroundScope) & observe($a, $record, $evidence, CredibilityEvidenceScope) & observe($b, $record, $evidence, CredibilityEvidenceScope) & observe($a, $record, NoticeEvidenceAccessHearingAndReasons, CredibilityProcedureScope) & observe($b, $record, NoticeEvidenceAccessHearingAndReasons, CredibilityProcedureScope) & ~parent($a, $b) & ~parent($b, $a) & ~married($a, $b) & ~married($b, $a) & ~sibling($a, $b) & ~sibling($b, $a) & permits(Review, $a) & permits(Tribunal, $b) & ~false($a) & ~false($b) & ~broken($a) & ~broken($b) & ~match($a, CarriedVoid) & ~match($b, CarriedVoid) & ~clean($record, CredibilityFinding) -> agree($record, CredibilityFindingCandidate).
+? agree(Finding_Solo, CredibilityFindingCandidate).
+# => TRUE
+? false(Solo).
+# => FALSE
+# Retain the old unscoped single-signer rule as an attempted widening.
+# The current case-relief and custody graph refuses its negative dependency.
+:refuse reasoning /Unstratifiable/
+all $a: all $audited: all $ground: permits(Review, $a) & permits(Tribunal, $a) & authorized($a, IndependentReviewer, $audited) & judge($a, $audited) & capture($a, $audited) & cite($a, $ground, $audited) & ~deceive($a, $audited) & ~broken($a) & ~match($a, CarriedVoid) & ~clean($audited) -> false($audited).
+
+? false(Solo).
+# => FALSE

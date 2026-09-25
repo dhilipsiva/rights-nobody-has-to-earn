@@ -35,6 +35,12 @@ often that the floor and the chapter's protection follow for the child as for
 anyone the chapter already names. Items 54–57 may revisit a chapter's section
 as they rewrite it.
 
+**Renumbered 2026-09-25 (item 53).** After ruling D7's restructure the section
+stands in Chapters 2, 4, 5, 14, 18, 21, 25 and 28, the same eight passages under
+their new numbers. The merged chapters carry one exemption each with the
+reasons of the chapters they joined, and the animal chapter is exempt because
+an animal's protection reads no human record at all: nineteen exemptions.
+
 ## 1. What the author said
 
 The instruction of 2026-09-16, in the author's own words:

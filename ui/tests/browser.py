@@ -31,7 +31,7 @@ def main():
     cases = json.loads((UI/'generated/cases.json').read_text(encoding='utf-8'))['cases']
     expected = json.loads((UI/'tests/expectations.json').read_text(encoding='utf-8'))
     routes = ['', 'read/', 'search/'] + [f'read/{Path(p["source"]).stem}/' for p in content['pages']]
-    assert len(routes) == 37 and len(content['pages']) == 34 and len(cases) == 78
+    assert len(routes) == 35 and len(content['pages']) == 32 and len(cases) == 78
     for path in ['game.json', 'cases.json']:
         def inspect(value):
             if isinstance(value, dict):
@@ -46,7 +46,7 @@ def main():
         assert md.is_file() and '<!--' not in md.read_text(encoding='utf-8')
     assert '/search/' not in (UI/'dist/rights-nobody-has-to-earn/sitemap.xml').read_text(encoding='utf-8')
     assert 'precomputed' not in (UI/'dist/rights-nobody-has-to-earn/index.md').read_text(encoding='utf-8')
-    report = {'routes':37, 'reader_inputs':34, 'screens':[], 'engine':[], 'contrast':[]}
+    report = {'routes':35, 'reader_inputs':32, 'screens':[], 'engine':[], 'contrast':[]}
     errors = []
     with sync_playwright() as p:
         browser = p.chromium.launch(executable_path=args.browser_executable)
@@ -80,7 +80,7 @@ def main():
         page.locator('.chapter-navigation a').last.click()
         assert '/00-opening-note/' in page.url
         context.close()
-        print('PASS: 37 static routes, 34 reading inputs, redirects and 404', flush=True)
+        print('PASS: 35 static routes, 32 reading inputs, redirects and 404', flush=True)
 
         context = browser.new_context(viewport={'width':1280,'height':1000})
         page = context.new_page(); page.on('pageerror', lambda e: errors.append(str(e)))
@@ -202,13 +202,13 @@ def main():
         page.get_by_role('searchbox').fill('independent witness');expect(page.locator('.search-results li').first).to_be_visible()
         page.get_by_role('searchbox').fill('வீழ்வே');expect(page.locator('.search-results li').first).to_be_visible()
         page.get_by_role('searchbox').fill('<script>not in manuscript</script>');expect(page.locator('.search-results li')).to_have_count(0)
-        page.goto(args.url+PREFIX+'read/31-the-five-joints/');expect(page.locator('#book-app')).to_have_attribute('data-ready','true')
-        expect(page.locator('html')).to_have_attribute('data-reader-ready',PREFIX+'read/31-the-five-joints/');page.evaluate("window.scrollTo({top:1800,behavior:'instant'})");page.wait_for_timeout(600)
-        position=page.evaluate('window.scrollY');page.reload();expect(page.locator('html')).to_have_attribute('data-reader-ready',PREFIX+'read/31-the-five-joints/');page.wait_for_timeout(200)
+        page.goto(args.url+PREFIX+'read/29-the-five-joints/');expect(page.locator('#book-app')).to_have_attribute('data-ready','true')
+        expect(page.locator('html')).to_have_attribute('data-reader-ready',PREFIX+'read/29-the-five-joints/');page.evaluate("window.scrollTo({top:1800,behavior:'instant'})");page.wait_for_timeout(600)
+        position=page.evaluate('window.scrollY');page.reload();expect(page.locator('html')).to_have_attribute('data-reader-ready',PREFIX+'read/29-the-five-joints/');page.wait_for_timeout(200)
         assert abs(page.evaluate('window.scrollY')-position)<5,('scroll restore',position,page.evaluate('window.scrollY'),page.evaluate("localStorage.getItem('rights-book.preferences.v1')"))
-        section=next(p for p in content['pages'] if p['number']==31)['sections'][1]['id']
-        page.goto(args.url+PREFIX+'read/31-the-five-joints/#'+section)
-        expect(page.locator('html')).to_have_attribute('data-reader-ready',PREFIX+'read/31-the-five-joints/')
+        section=next(p for p in content['pages'] if p['number']==29)['sections'][1]['id']
+        page.goto(args.url+PREFIX+'read/29-the-five-joints/#'+section)
+        expect(page.locator('html')).to_have_attribute('data-reader-ready',PREFIX+'read/29-the-five-joints/')
         page.wait_for_function('(id)=>Math.abs(document.getElementById(id).getBoundingClientRect().top)<80',arg=section)
         page.locator('article a[role=doc-noteref]').first.click()
         expect(page.locator('a[role=doc-backlink]').first).to_be_in_viewport()

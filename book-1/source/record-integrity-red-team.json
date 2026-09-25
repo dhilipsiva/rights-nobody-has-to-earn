@@ -1537,49 +1537,49 @@
   ],
   "narrowness_impacts": [
     {
-      "artifact_ref": "book-1/03-what-counts-as-evidence.md::reports, detect a deletion before the compared records, establish an honest",
+      "artifact_ref": "book-1/02-what-the-record-may-say.md::reports, detect a deletion before the compared records, establish an honest",
       "current_claim": "An unreported birth or encounter remains invisible; supplied standing roots and accepted predecessor carry narrow registry dependence without proving completeness.",
       "classification": "preserved_but_scoped",
       "reason": "The roster equivalence case preserves the unreported-input boundary; the universal-standing roots and implemented T1 carry narrow different record-gating failures.",
       "future_trigger": "Any closed-world completeness, provenance, or runtime deletion claim requires re-review."
     },
     {
-      "artifact_ref": "book-1/16-public-answerability.md::## Mael's restoration",
+      "artifact_ref": "book-1/16-answerability-and-authority.md::## Mael's restoration",
       "current_claim": "Restoration requires the particular appellate act and independent review, exact subject/finding/purpose/evidence, procedure, historical eligibility and witnessed order. Generic judgments and forgiveness flags are inert. A restored incident and ground cannot be revived by renaming the record; another case or carried appointment restriction remains separate.",
       "classification": "revised_and_scoped",
       "reason": "The 2026-09-19 case-bound finding and restoration rules supersede the historical raw-flag matrix; new substantive case, alias and party regressions test the current mechanism.",
       "future_trigger": "Reassess any change to case binding, historical eligibility, qualified alternate actors, finality, recognition consequences or appointment separation."
     },
     {
-      "artifact_ref": "book-1/23-who-holds-the-pen.md::Missing relief alone confines nobody.",
+      "artifact_ref": "book-1/24-findings-about-people.md::Missing relief alone confines nobody.",
       "current_claim": "The second relief fact raises a mechanical fact count but is neither case-bound nor independently authored.",
       "classification": "revised_and_scoped",
       "reason": "The generic-judgment reuse case disproved the earlier prose claim that `judge/2` recorded an examination of this case.",
       "future_trigger": "Any purpose-bound relief relation, case identity, writer authority, or independence mechanism requires re-review."
     },
     {
-      "artifact_ref": "book-1/23-who-holds-the-pen.pins.nibli::The judgment names a body and",
+      "artifact_ref": "book-1/24-findings-about-people.pins.nibli::The judgment names a body and",
       "current_claim": "The pin commentary states the same writer, case, and purpose limit as the revised chapter while the executable bare-flag control remains unchanged.",
       "classification": "revised_and_scoped",
       "reason": "The former quoted comment said the judgment named the body that made it, which `judge/2` cannot authenticate.",
       "future_trigger": "Any relief-rule or relief-pin change requires the chapter prose and this comment to be reviewed together."
     },
     {
-      "artifact_ref": "book-1/25-voiding.md::A bare mark cannot supply it.",
+      "artifact_ref": "book-1/24-findings-about-people.md::A bare mark cannot supply it.",
       "current_claim": "A bare carried report is inert; accepted lineage and dual witnesses produce reconciled carry, omission, and forgery conclusions while outside witness honesty and successor publication remain external.",
       "classification": "revised_and_scoped",
       "reason": "The raw-input negative control replaces the retired one-write-void attack, and the temporal handoff prevents this flat-snapshot suite from claiming script 12's transition assurance.",
       "future_trigger": "Any carry-head, witness, predecessor-basis, clear-status, status-conflict, correction, replay, or liveness change requires re-review."
     },
     {
-      "artifact_ref": "book-1/26-clawback.md::The restoration test supplies a forgiveness flag",
+      "artifact_ref": "book-1/24-findings-about-people.md::The restoration test supplies a forgiveness flag",
       "current_claim": "Restoration requires the particular appellate act and independent review, exact subject/finding/purpose/evidence, procedure, historical eligibility and witnessed order. Generic judgments and forgiveness flags are inert. A restored incident and ground cannot be revived by renaming the record; another case or carried appointment restriction remains separate.",
       "classification": "revised_and_scoped",
       "reason": "The 2026-09-19 case-bound finding and restoration rules supersede the historical raw-flag matrix; new substantive case, alias and party regressions test the current mechanism.",
       "future_trigger": "Reassess any change to case binding, historical eligibility, qualified alternate actors, finality, recognition consequences or appointment separation."
     },
     {
-      "artifact_ref": "book-1/02-who-counts.md::The custody and release rules remain valid independent routes.",
+      "artifact_ref": "book-1/01-the-child-with-nobody.md::The custody and release rules remain valid independent routes.",
       "current_claim": "A release entry remains an independent route to personhood, while birth and encounter roots mean it is no longer the sole alternative to a roster.",
       "classification": "preserved_but_scoped",
       "reason": "The Adam case executes the one-write consequence without selecting a new release gate.",
@@ -1593,28 +1593,28 @@
       "future_trigger": "Any outside-clock assurance, identity assurance, ballot continuity, or new franchise condition requires re-review."
     },
     {
-      "artifact_ref": "book-1/10-contribution.md::Restoration concerns the finding and the powers it restricts.",
+      "artifact_ref": "book-1/09-work-pay-and-contribution.md::Restoration concerns the finding and the powers it restricts.",
       "current_claim": "Restoration requires the particular appellate act and independent review, exact subject/finding/purpose/evidence, procedure, historical eligibility and witnessed order. Generic judgments and forgiveness flags are inert. A restored incident and ground cannot be revived by renaming the record; another case or carried appointment restriction remains separate.",
       "classification": "revised_and_scoped",
       "reason": "The 2026-09-19 case-bound finding and restoration rules supersede the historical raw-flag matrix; new substantive case, alias and party regressions test the current mechanism.",
       "future_trigger": "Reassess any change to case binding, historical eligibility, qualified alternate actors, finality, recognition consequences or appointment separation."
     },
     {
-      "artifact_ref": "book-1/29-the-one-thing-taken.md::Conviction has not cancelled Hano's other claims.",
+      "artifact_ref": "book-1/27-the-one-thing-taken.md::Conviction has not cancelled Hano's other claims.",
       "current_claim": "The current narrow constitution removes movement through conviction and release remains a written act.",
       "classification": "preserved_but_scoped",
       "reason": "The release test changes the existing consequence but adds no new deprivation or rule family.",
       "future_trigger": "Any custody, temporal, release, delivery, placement, or sanction rule requires re-review of the title, prose, registry, and counted-claim guard."
     },
     {
-      "artifact_ref": "book-1/31-the-five-joints.md::The consequential records remain the constitutional source and the facts",
+      "artifact_ref": "book-1/29-the-five-joints.md::The consequential records remain the constitutional source and the facts",
       "current_claim": "Universal standing removes a missing identity entry as a constitutional eligibility gate, while the constitutional source and supplied facts remain separate consequential capture surfaces whose outside trust roots are not authenticated.",
       "classification": "preserved_but_scoped",
       "reason": "The roster case exposes an uncovered capture consequence, the raw carry control confirms the closed input boundary, and the temporal handoff names the selected protections script 12 now owns.",
       "future_trigger": "Any completeness, operational integrity, independent reader, or capture-prevention claim requires re-review."
     },
     {
-      "artifact_ref": "book-1/31-the-five-joints.md::Standing attaches before identity reconciliation.",
+      "artifact_ref": "book-1/29-the-five-joints.md::Standing attaches before identity reconciliation.",
       "current_claim": "Birth and encounter roots prevent a missing identity match from removing formal standing, while observation, service access, identity-system liveness, and delivery remain outside the executable claim.",
       "classification": "revised_and_scoped",
       "reason": "The universal-standing pins and deletion counterfactual repair the earlier roster-gated constitutional defect without claiming that an encounter is observed or a meal is delivered.",

@@ -113,7 +113,7 @@ delivery discharges: the State, the common tier, or a region or locality
 recorded as providing for the recipient. An attestation about another item,
 person or kind of provision cannot fill the gap.
 
-Chapter 5 supplies the evidence in stages:
+Chapter 4 supplies the evidence in stages:
 
 ```nibli
 receives(Marisol, FoodForMarisol, Provender).
@@ -153,7 +153,7 @@ source asks what that condition prevents. The runner applies the declared
 edit to an isolated copy; the experiment does not amend the constitution.
 The [receipt suite](source/delivery-receipt.pins.nibli), its
 [source counterfactual](source/counterfactual/no-delivery-independence.pins.nibli)
-and [chapter 5's sequence](05-whether-it-arrived.pins.nibli) retain the
+and [chapter 4's sequence](04-whether-it-arrived.pins.nibli) retain the
 complete cases.
 
 Even the positive result rests on supplied statements. The engine has not
@@ -283,7 +283,7 @@ tests. Separate case snapshots prevent it from changing another case.
 
 Some inputs are refused before an ordinary query can be answered. The
 constitution declares its permitted base vocabulary with `admits`, and
-marks certain conclusions with `derived_only`. Chapter 3 executes both
+marks certain conclusions with `derived_only`. Chapter 2 executes both
 boundaries:
 
 ```nibli
@@ -301,7 +301,7 @@ not retroactively admit a rejected statement.
 The directive specifies the expected error class and a distinguishing part
 of its message. If the statement loads, or fails for the wrong reason, the
 test fails. The complete cases are in
-[chapter 3's pins](03-what-counts-as-evidence.pins.nibli).
+[chapter 2's pins](02-what-the-record-may-say.pins.nibli).
 
 Neither refusal establishes that Adam is poor or Zed is innocent. They
 establish which statements this input interface accepts. A permitted injury
@@ -374,8 +374,8 @@ status to withdraw. A rule making an absence of belief a ground for a
 credibility finding is refused, because the credibility finding lies inside
 the same custody graph. Neither result settles every differently expressed
 attack, and an accepted alternative acquires no authority in the constitution;
-each experiment is discarded after its check. [Chapter 4's
-pins](04-what-you-are-owed.pins.nibli) hold both. A rule producing an operative
+each experiment is discarded after its check. [Chapter 3's
+pins](03-what-you-are-owed.pins.nibli) hold both. A rule producing an operative
 bar against a custody case is refused for the same reason: the bar would feed
 back into the custody it is written to end.
 
@@ -383,7 +383,7 @@ The counterfactual removing the prisoner-to-person rule permits the
 belief-absence attack. Another replaces
 the event-shaped entitlement with a plain label; the tested entitlement
 disappears and the hostile rule can load. These changes affect the rules'
-meaning, not merely their presentation. Chapter 27 keeps both results and
+meaning, not merely their presentation. Chapter 25 keeps both results and
 their limits beside Zed's case.
 
 The refusal prevents the displayed use of a missing floor actuality as a
@@ -396,7 +396,7 @@ amendment's source-effect tests therefore matter alongside the stratifier.
 The stratifier does not judge intention. Adding a personhood condition to the
 disclosure shield also creates a negative cycle: personhood can follow from
 custody, while custody checks for the shield's absence. The proposed rule is
-refused in [Chapter 24's pins](24-the-shield.pins.nibli), leaving the existing
+refused in [Chapter 23's pins](23-the-shield.pins.nibli), leaving the existing
 shield in force. That failure of one encoding establishes no impossibility
 of expressing the policy another way. The appeal example above illustrates
 why distinguishing a duty from accomplished relief can change the result.
@@ -442,15 +442,16 @@ particular place:
 
 | Constraint | What it stops | Where it is enforced |
 |---|---|---|
-| Closed inputs | An entry of a kind the constitution does not admit, such as a record that someone is rich or dangerous. | `admits` declarations, refused at input; [Chapter 3's pins](03-what-counts-as-evidence.pins.nibli). |
-| Conclusions nobody may write | A written custody, ballot or answerability conclusion. | `derived_only` declarations, refused at input; Chapters 3 and 18's pins. |
+| Closed inputs | An entry of a kind the constitution does not admit, such as a record that someone is rich or dangerous. | `admits` declarations, refused at input; [Chapter 2's pins](02-what-the-record-may-say.pins.nibli). |
+| Conclusions nobody may write | A written custody, ballot or answerability conclusion. | `derived_only` declarations, refused at input; Chapters 2 and 18's pins. |
 | Purpose-bound reads | A contribution or pay record read for anything but its supplement or compensation. | `a_purpose_limited_record_is_read_only_for_its_purpose`. |
 | Endpoints nothing reads | A duty, a delivery conclusion or a recorded loss used as a premise for something else. | `a_duty_is_not_an_action_because_nothing_reads_one` and `floor_actualities_have_no_downstream_consumer`. |
-| No confinement from absence | A missing floor condition, or a missing home, family or work entry, used as a ground for confinement. | The refusal above, pinned in [the floor suite](source/rights-floor.pins.nibli) and Chapter 4; `no_confinement_reads_an_absent_home_family_or_work_entry`. |
+| No confinement from absence | A missing floor condition, or a missing home, family or work entry, used as a ground for confinement. | The refusal above, pinned in [the floor suite](source/rights-floor.pins.nibli) and Chapter 3; `no_confinement_reads_an_absent_home_family_or_work_entry`. |
 | Scope binding | A finding about one subject, case, incident or record lent to another. | The case- and record-bound joins in each family and their generated wrong-case and borrowed-record cases; `scoped_authority_is_not_unary_permanent_answerability` and `global_findings_cannot_lend_effects_to_unqualified_records`. |
 
-The named checks are development tests in the repository's
-[authoring code](../src/authoring/); the rest are pins the verifier executes.
+The named checks are development tests in the repository's authoring code,
+most of them in [the floor development tests](../src/authoring/floor_vector_tests.rs);
+the rest are pins the verifier executes.
 
 These are information-flow constraints. Dorothy Denning's lattice model asked
 which classes of information may flow into which others, and Andrew Myers and
@@ -819,7 +820,7 @@ person, holding, place and period. Missing company receipts do not qualify.
 The [counterfactual](../tests/pins/custody/condition-findings/counterfactual.pins.nibli)
 adds a weaker rule that treats every prisoner's missing company conclusion as
 isolation; its expected markers reproduce that unsound inference.
-[Chapter 30's pins](30-when-the-system-notices-it-broke.pins.nibli) separately
+[Chapter 28's pins](28-when-the-system-notices-it-broke.pins.nibli) separately
 check that routine custody review remains owed without a breach finding.
 
 The `:defect` markers are a list of declared defect expectations, not a

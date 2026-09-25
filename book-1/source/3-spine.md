@@ -153,43 +153,47 @@ Front matter: `epigraph.md`, `00-opening-note.md`.
 | # | Chapter | File | Role | Group | Status |
 |---|---|---|---|---|---|
 | **Part I — Who counts, and what they are owed** | | | | | |
+| — | Opening case | — | exempt | — | planned |
 | 01 | The Child With Nobody | `01-the-child-with-nobody.md` | derived | engine | landed |
-| 02 | Who Counts | `02-who-counts.md` | derived | engine | landed |
-| 03 | What Counts as Evidence | `03-what-counts-as-evidence.md` | derived | engine | landed |
-| 04 | What You Are Owed | `04-what-you-are-owed.md` | derived | engine | landed |
-| 05 | Whether It Arrived | `05-whether-it-arrived.md` | derived | engine | landed |
-| 06 | When There Is Genuinely Not Enough | `06-when-there-is-genuinely-not-enough.md` | derived | engine | landed |
-| 07 | Who Owes, and What Follows | `07-who-owes-and-what-follows.md` | derived | engine | landed |
+| 02 | What the Record May Say | `02-what-the-record-may-say.md` | derived | engine | landed |
+| 03 | What You Are Owed | `03-what-you-are-owed.md` | derived | engine | landed |
+| 04 | Whether It Arrived | `04-whether-it-arrived.md` | derived | engine | landed |
+| 05 | When There Is Genuinely Not Enough | `05-when-there-is-genuinely-not-enough.md` | derived | engine | landed |
+| 06 | Who Owes, and What Follows | `06-who-owes-and-what-follows.md` | derived | engine | landed |
 | **Part II — The life the design leaves alone** | | | | | |
+| — | Opening case | — | exempt | — | planned |
+| 07 | An Ordinary Week | — | derived | engine | planned |
 | 08 | What Nobody Has to Ask Permission For | `08-what-nobody-has-to-ask-permission-for.md` | derived | engine | landed |
-| 09 | Earning Above the Floor | `09-earning-above-the-floor.md` | derived | engine | landed |
-| 10 | Contribution | `10-contribution.md` | derived | engine | landed |
-| 11 | What Money Cannot Buy | `11-what-money-cannot-buy.md` | derived | engine | landed |
-| 12 | The Same Route for Everyone | `12-the-same-route-for-everyone.md` | derived | engine | landed |
-| 13 | A Place in Which Life Remains Possible | `13-a-place-in-which-life-remains-possible.md` | derived | engine | landed |
+| 09 | Work, Pay and Contribution | `09-work-pay-and-contribution.md` | derived | engine | landed |
+| 10 | What Money Cannot Buy | `10-what-money-cannot-buy.md` | derived | engine | landed |
+| 11 | The Same Route for Everyone | `11-the-same-route-for-everyone.md` | derived | engine | landed |
+| 12 | A Place in Which Life Remains Possible | `12-a-place-in-which-life-remains-possible.md` | derived | engine | landed |
+| 13 | Creatures Without a Ballot | `13-creatures-without-a-ballot.md` | derived | engine | landed |
 | 14 | Holding a Role in Somebody's Life | `14-holding-a-role-in-somebodys-life.md` | derived | engine | landed |
 | 15 | Arriving and Belonging | `15-arriving-and-belonging.md` | derived | engine | landed |
 | **Part III — The public power that serves it** | | | | | |
-| 16 | Public Answerability, and Why It Is Never Revoked | `16-public-answerability.md` | derived | engine | landed |
+| — | Opening case | — | exempt | — | planned |
+| 16 | Answerability and Authority | `16-answerability-and-authority.md` | derived | engine | landed |
 | 17 | How Public Power Is Built | `17-how-public-power-is-built.md` | derived | engine | landed |
 | 18 | The Vote Conviction Does Not Take | `18-the-vote-conviction-does-not-take.md` | derived | engine | landed |
 | 19 | What May Be Kept About You | `19-what-may-be-kept-about-you.md` | derived | engine | landed |
 | 20 | A Crisis Does Not Suspend the Republic | `20-a-crisis-does-not-suspend-the-republic.md` | derived | engine | landed |
 | 21 | A Way to Be Heard | `21-a-way-to-be-heard.md` | derived | engine | landed |
 | 22 | Changing the Rules | `22-changing-the-rules.md` | derived | engine | landed |
-| 23 | Who Holds the Pen | `23-who-holds-the-pen.md` | derived | engine | landed |
 | **Part IV — What the design does to a person, and how it catches itself** | | | | | |
-| 24 | The Shield | `24-the-shield.md` | derived | break | landed |
-| 25 | Credibility Findings | `25-voiding.md` | derived | break | landed |
-| 26 | The Limits of a Finding | `26-clawback.md` | derived | break | landed |
-| 27 | A Prisoner Is a Person | `27-a-prisoner-is-a-person.md` | derived | break | landed |
-| 28 | Where People Are Put | `28-where-people-are-put.md` | derived | break | landed |
-| 29 | The One Thing Taken | `29-the-one-thing-taken.md` | derived | break | landed |
-| 30 | When the System Notices It Broke | `30-when-the-system-notices-it-broke.md` | derived | break | landed |
-| **Part V — Outside the graph** | | | | | |
-| 31 | The Five Joints | `31-the-five-joints.md` | exempt | — | landed |
+| — | Opening case | — | exempt | — | planned |
+| 23 | The Shield | `23-the-shield.md` | derived | break | landed |
+| 24 | Findings About People | `24-findings-about-people.md` | derived | break | landed |
+| 25 | A Prisoner Is a Person | `25-a-prisoner-is-a-person.md` | derived | break | landed |
+| 26 | Where People Are Put | `26-where-people-are-put.md` | derived | break | landed |
+| 27 | The One Thing Taken | `27-the-one-thing-taken.md` | derived | break | landed |
+| 28 | When the System Notices It Broke | `28-when-the-system-notices-it-broke.md` | derived | break | landed |
+| **Part V — The argument** | | | | | |
+| — | Opening case | — | exempt | — | planned |
+| 29 | The Five Joints | `29-the-five-joints.md` | exempt | — | landed |
+| 30 | Where This Could Fail | — | exempt | — | planned |
 
-Back matter: `method.md`.
+Back matter: `method.md`, `reference.md`.
 <!-- END GENERATED: contents -->
 
 ### The hand list — superseded 2026-09-17, pre-reorder numbers

@@ -4,7 +4,7 @@
 
 Session-drafted, author-approved under delegated approval (2026-09-13). The
 text below is inserted unchanged in
-`book-1/30-when-the-system-notices-it-broke.md`, as a new section between "And
+`book-1/28-when-the-system-notices-it-broke.md`, as a new section between "And
 then a duty, which no longer has to be the end" and "What it does have". Its
 supporting cases are listed in the chapter's pin file.
 

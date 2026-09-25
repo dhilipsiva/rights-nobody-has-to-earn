@@ -156,8 +156,27 @@ fn validate(context: &Context, records: &[Record]) -> Result<(), Error> {
              Records with no passage: {extra:?}"
         )));
     }
+    // Argued text is classified as argument and derived text never is: Part V's
+    // passages, and a derived chapter's labelled argument section (ruling D2),
+    // carry the `argument` pattern and the exempt-element basis, and every other
+    // passage carries neither, so the ledger keeps the two kinds of text apart.
+    let part_v: BTreeSet<String> = Contents::load(context)?.part_v()?.into_iter().collect();
     let mut seen = BTreeSet::new();
     for record in records {
+        let argued = part_v.contains(&record.chapter)
+            || record
+                .section
+                .starts_with(super::contents::ARGUMENT.trim_start_matches("## "));
+        if argued != (record.pattern == "argument") || argued != (record.basis == "exempt-element") {
+            return Err(Error::new(format!(
+                "{}: {} passage classified with pattern {} and basis {}; argued text takes \
+                 the argument pattern and the exempt-element basis, and derived text neither",
+                record.id,
+                if argued { "an argued" } else { "a derived" },
+                record.pattern,
+                record.basis
+            )));
+        }
         if !seen.insert(&record.id) {
             return Err(Error::new(format!("duplicate record {}", record.id)));
         }
