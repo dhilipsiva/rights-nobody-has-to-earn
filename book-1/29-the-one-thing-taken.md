@@ -85,8 +85,8 @@ duty renews anything.
 Severity does not lengthen the interval. Recognition, employment, compliance,
 wealth and character cannot shorten or extend custody. The checks try both a
 rule producing a raw release entry from recognition and a rule producing an
-operative bar against the sentence. The raw-entry rule loads; the operative
-bar is refused because it would defeat its own custody premise. A raw release
+operative bar against the sentence. The raw-entry rule loads and the operative
+bar is refused; the optional method explains the refusal. A raw release
 entry by itself supplies no release authority. Recognition has neither a
 producer nor a reader in the enacted source. That protection needs its own
 check; the engine's acceptance of a proposed rule does not establish its

@@ -134,6 +134,46 @@ reinstate the retired tooling or workflow.
 Grouped by kind. Dates in each heading are the ratification dates; a ruling
 that was later implemented or narrowed carries that supersession inline.
 
+### Item 48 — the flow constraints named and the engine situated, 2026-09-25
+
+The method gains "Six ways a fact is kept from a consequence", a table of the
+constraints the design already uses — closed inputs (`admits`), conclusions
+nobody may write (`derived_only`), purpose-bound reads, endpoints nothing reads,
+no confinement from absence, and scope binding — each pointing to the pins or
+development tests that enforce it (`a_purpose_limited_record_is_read_only_for_its_purpose`,
+`a_duty_is_not_an_action_because_nothing_reads_one`,
+`floor_actualities_have_no_downstream_consumer`,
+`no_confinement_reads_an_absent_home_family_or_work_entry`,
+`scoped_authority_is_not_unary_permanent_answerability` and
+`global_findings_cannot_lend_effects_to_unqualified_records`). It relates them
+to information-flow control (Denning; Myers and Liskov), taint analysis and
+contextual integrity, and says they check written rule forms and can miss a
+semantically equivalent attack. "Where the engine comes from" says Nibli is
+written and maintained by the book's author, so its agreement with the
+constitution and tests is a consistency check within one project; relates it to
+Datalog with stratified negation (Apt, Blair and Walker), Sergot et al.'s
+British Nationality Act program, Catala and the OECD's Rules as Code paper, with
+Hildebrandt's textbook on automated compliance; and states what is new — the
+use, not the logic. Each citation is an item 46 registry entry.
+
+The stratification refusals leave the chapters. Chapter 4's "Where the
+protection stops" and Chapter 27's two protection sections state the protection
+and its reach and point to the method, which now says the refusal is designed —
+entitlements written as events downstream of personhood, with a prisoner still
+a person — and specific to how a rule is written, the home-record variant
+loading; it also carries the recognition and belief results from Chapter 4 and
+Chapter 29's operative-bar refusal. The method's sealed scope stands: excerpts
+with pointers, no rendered English, no proof traces, no compute backend. Two
+amendment-audit needles follow their text into the method; one coverage setting
+is relabelled. The exact prose is `session-drafted, author-approved under
+delegated approval (2026-09-13)`.
+
+No rule, pin or suite changes, so item 72's complete run on the same formal
+inputs stands. The claim-discipline (including the method's quotation test),
+reference, reader-coverage, receipt and floor-vector development tests pass, as
+does the prose check once three new Chapter 27 sentences were rephrased to hold
+its negation figure.
+
 ### Item 47 — Part V's evidence corrected and its lineage credited, 2026-09-25
 
 The coercion joint opened with Tanzania's villagisation, which concerned forced

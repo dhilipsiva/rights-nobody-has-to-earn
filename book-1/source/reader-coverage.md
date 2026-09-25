@@ -93,7 +93,7 @@ checked here.
 | Locality, mobility and external relations | 2 | 2 | 3 |
 | Material floor | 10 | 21 | 20 |
 | Non-human animals | 1 | 1 | 1 |
-| Personhood and equality | 20 | 10 | 15 |
+| Personhood and equality | 20 | 10 | 14 |
 | Public institutions | 11 | 10 | 14 |
 | Public safety, policing and use of force | 5 | 4 | 8 |
 | Records and accountability | 14 | 15 | 19 |
@@ -310,7 +310,7 @@ checked here.
 | 26-04 | 26-clawback.md | Ending the restriction | Economy, property, work and commons | ARTICLES | protective | case-specific restoration, carried appointment restriction and review nonresponse | is acted upon | contested | yes | private-civic | `book-1/26-clawback.pins.nibli` |
 | 27-00 | 27-a-prisoner-is-a-person.md | (preamble) | Personhood and equality | ARTICLES | protective | one line that reads like sentiment | is acted upon | works | no | constructive | `book-1/27-a-prisoner-is-a-person.pins.nibli` |
 | 27-01 | 27-a-prisoner-is-a-person.md | Zed | Personhood and equality | ARTICLES | ordinary | a convicted person's standing | is acted upon | works | yes | constructive | `book-1/27-a-prisoner-is-a-person.pins.nibli` |
-| 27-02 | 27-a-prisoner-is-a-person.md | A protection reaching beyond Zed | Personhood and equality | ARTICLES | protective | the compile-time refusal of a belief prison | is acted upon | works | yes | constructive | `book-1/27-a-prisoner-is-a-person.pins.nibli` |
+| 27-02 | 27-a-prisoner-is-a-person.md | A protection reaching beyond Zed | Personhood and equality | ARTICLES | protective | confinement refused for a gap in the record about belief or eating | is acted upon | works | no | constructive | `book-1/27-a-prisoner-is-a-person.pins.nibli` |
 | 27-03 | 27-a-prisoner-is-a-person.md | What this protection does not decide | Personhood and equality | ARTICLES | protective | the refusal is structural, not judgement | is acted upon | contested | yes | constructive | `book-1/27-a-prisoner-is-a-person.pins.nibli` |
 | 27-04 | 27-a-prisoner-is-a-person.md | Standing that protects others | Personhood and equality | ARTICLES | protective | rights that do not thin out | is acted upon | works | no | constructive | `book-1/27-a-prisoner-is-a-person.pins.nibli` |
 | 27-05 | 27-a-prisoner-is-a-person.md | The child with nobody | Material floor | ARTICLES | protective | Nell's standing and floor before and after added shelter and food evidence | receives | contested | yes | coercive | `book-1/27-a-prisoner-is-a-person.pins.nibli` |

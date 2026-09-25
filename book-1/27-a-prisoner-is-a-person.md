@@ -43,48 +43,27 @@ receiving help.
 
 ## A protection reaching beyond Zed
 
-One test tries to add a rule confining a person because the record contains
-no conclusion about belief. The rule is refused. So is the corresponding rule
-using missing food evidence. Neither absence would establish what a person
-believes or whether they had eaten; the proposed rule tries to turn a gap in
-the record into a ground for confinement.
-
-Remove the prisoner-to-person rule in the tested copy and the hostile belief
-rule is accepted. Preserving prisoners' standing therefore helps prevent a
-new confinement route affecting other people in the record as well.
-
-The exact entitlement also matters. Another experiment replaces its protected
-condition with a plain label. The tested entitlement then disappears and the
-hostile rule is accepted. Its resulting confinement supplies neither a lawful
-placement nor evidence of shelter or speech. A familiar-looking promise can
-lose its protection when its meaning in the rules changes.
-
-These results concern particular rules and their connections. They do not
-establish that every attack on the floor is impossible to write. The optional
-[method](method.md#why-the-hostile-floor-rule-is-refused) explains the circular
-reasoning that causes these refusals and why a differently written attack
-needs a separate test.
+A rule confining a person because the record is silent about what they believe
+or whether they ate is refused. A gap in the record shows nothing about either,
+and the protection stops such a gap from becoming a ground for confinement. Because a prisoner remains a
+person, it covers everyone the record holds, confined or not, and preserving
+prisoners' standing is part of what keeps it whole. The exact entitlement
+matters too: a promise that keeps its outward shape but loses its content loses
+its protection. The optional [method](method.md#why-the-hostile-floor-rule-is-refused)
+shows how the refusal works and why a differently written attack needs its own
+test.
 
 ## What this protection does not decide
 
-A refusal does not judge whether a proposal has a good purpose. A proposed
-version of the disclosure shield limited to people is refused too. The
-broader existing shield remains in force.
-
-That result concerns one way of writing the restriction. It cannot establish
-that no such policy can be expressed differently, and it settles no argument
-about who should hold the shield. Chapter 21's distinction between a duty to
-hear an appeal and relief already granted shows why the exact meaning of a
-rule matters.
-
-Other hostile rules can be accepted. An isolated experiment accepts a rule
-confining a person for lacking a home record. Home status is separate from
-evidence of delivered shelter; this protection does not cover both. A rule using
-missing floor evidence to alter placement or record a loss of recognition also
-needs its own check. Separate checks of the constitution prohibit using floor
-delivery conclusions as grounds for further consequences. The
-[method](method.md#checking-how-a-record-is-used) distinguishes those checks
-from the refusal above. An accepted experiment is not a lawful public power.
+The protection leaves open whether a proposal has a good purpose and who should
+hold a power. It covers confinement for a
+missing floor condition. Confinement for lacking a home record is a different
+case, which a separate check of the written rules forbids; a rule using missing
+floor evidence to alter placement or record a loss of recognition is caught by
+other checks, which bar using delivery conclusions as grounds for further
+consequences. The [method](method.md#checking-how-a-record-is-used) distinguishes
+those checks from the refusal. An experiment the rules accept still lacks lawful
+authority.
 
 Each protection needs tests of whom it covers and what it permits.
 Witnessed parentage, for example, can establish standing and expose the

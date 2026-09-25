@@ -217,42 +217,15 @@ unimplemented until the items named here land.
 
 ## Ordered revision backlog
 
-Work in this order: items 48–52, which measure, repair and prepare; items
+Work in this order: items 49–52, which measure, repair and prepare; items
 53–63 carry the structure and the rewrite under the ratified rulings; item 64
 finishes production, 65 closes the revision, and 66 is optional. Numbering
-continues from items 01–33, which `CLAUDE.md` records; items 34–47 and 67–72
+continues from items 01–33, which `CLAUDE.md` records; items 34–48 and 67–72
 are complete and recorded there too. Chapter numbers refer to the [current
 reading sequence](book-1/contents.json), which the plan also uses, until item 53
 changes it.
 
 ### The formal layer
-
-- [ ] **48. Name the flow constraints and situate the engine.**
-
-  **Scope:** the optional method, and Chapters 4 and 27, which demonstrate
-  the stratification refusals; plan §10.1–§10.3 and §11.
-
-  Six kinds of constraint already govern how facts flow into consequences:
-  closed inputs (`admits`), conclusions that cannot be written directly
-  (`derived_only`), purpose-bound reads (the `pay` and `promise` guards),
-  endpoints nothing reads (the no-reader census), no punishment from absence
-  (the floor firewall), and scope binding (case- and incident-bound
-  findings). Name them, map each to the rules and development checks that
-  enforce it, relate them to information-flow control, taint analysis and
-  contextual integrity, and say that they check written rule forms and can
-  miss a semantically equivalent attack. Move the stratification refusals out
-  of chapter prose and describe them accurately: designed consequences of
-  writing entitlements as events downstream of personhood, specific to how a
-  rule is written. Say who builds and maintains Nibli, that the constitution,
-  pins and engine share a maintainer, how it relates to Datalog with
-  stratified negation and to earlier law-as-code work (Sergot et al., Catala,
-  Rules as Code), and what is new. The method's sealed scope stands: no
-  machine-rendered English, no proof traces, no compute backend, excerpts
-  with pointers.
-
-  **Done when:** every named constraint points to its enforcing check, the
-  method's quoted rules pass the quotation test, and no chapter explains
-  stratification.
 
 - [ ] **49. Run mutation testing over the rules.**
 

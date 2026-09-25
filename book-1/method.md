@@ -348,8 +348,8 @@ elsewhere an added fact can defeat a condition expressed through absence.
 
 ### Why the hostile floor rule is refused
 
-The floor has a different protection. In the current source, adding this
-rule is refused:
+The floor has a different protection, and it is designed rather than
+incidental. In the current source, adding this rule is refused:
 
 ```nibli
 :refuse reasoning /'prisoner' -> 'eats'/
@@ -362,6 +362,22 @@ downstream of custody: a prisoner remains a person. The proposed rule would
 feed the absence of eating back into custody through that dependency and is
 refused. The entitlement and actuality queries test both sides of this
 distinction: the right derives while the meal does not.
+
+The protection is specific to how the hostile rule is written. Entitlements are
+written as events downstream of personhood, and a rule that feeds a floor
+condition's absence back into custody closes a loop the engine refuses. A rule
+confining someone for lacking a home record loads, because home status sits
+outside that loop; a development check described below forbids it instead. Two
+further results show the edge. A rule recording a loss of recognition for an
+absence of company loads, although the design has no general recognition
+status to withdraw. A rule making an absence of belief a ground for a
+credibility finding is refused, because the credibility finding lies inside
+the same custody graph. Neither result settles every differently expressed
+attack, and an accepted alternative acquires no authority in the constitution;
+each experiment is discarded after its check. [Chapter 4's
+pins](04-what-you-are-owed.pins.nibli) hold both. A rule producing an operative
+bar against a custody case is refused for the same reason: the bar would feed
+back into the custody it is written to end.
 
 The counterfactual removing the prisoner-to-person rule permits the
 belief-absence attack. Another replaces
@@ -416,6 +432,42 @@ Both checks are in [the floor development tests](../src/authoring/floor_vector_t
 They inspect the current written rule forms. They are separate from executing
 Nibli, and neither promises to recognise every semantically equivalent attack
 written in a different form. They add no lawful power to an accepted experiment.
+
+## Six ways a fact is kept from a consequence
+
+A right is protected not only by stating it, but by limiting what the rest of
+the law may do with facts about the person. Six kinds of constraint govern how
+a fact in the record can become a consequence, and each is enforced in a
+particular place:
+
+| Constraint | What it stops | Where it is enforced |
+|---|---|---|
+| Closed inputs | An entry of a kind the constitution does not admit, such as a record that someone is rich or dangerous. | `admits` declarations, refused at input; [Chapter 3's pins](03-what-counts-as-evidence.pins.nibli). |
+| Conclusions nobody may write | A written custody, ballot or answerability conclusion. | `derived_only` declarations, refused at input; Chapters 3 and 18's pins. |
+| Purpose-bound reads | A contribution or pay record read for anything but its supplement or compensation. | `a_purpose_limited_record_is_read_only_for_its_purpose`. |
+| Endpoints nothing reads | A duty, a delivery conclusion or a recorded loss used as a premise for something else. | `a_duty_is_not_an_action_because_nothing_reads_one` and `floor_actualities_have_no_downstream_consumer`. |
+| No confinement from absence | A missing floor condition, or a missing home, family or work entry, used as a ground for confinement. | The refusal above, pinned in [the floor suite](source/rights-floor.pins.nibli) and Chapter 4; `no_confinement_reads_an_absent_home_family_or_work_entry`. |
+| Scope binding | A finding about one subject, case, incident or record lent to another. | The case- and record-bound joins in each family and their generated wrong-case and borrowed-record cases; `scoped_authority_is_not_unary_permanent_answerability` and `global_findings_cannot_lend_effects_to_unqualified_records`. |
+
+The named checks are development tests in the repository's
+[authoring code](../src/authoring/); the rest are pins the verifier executes.
+
+These are information-flow constraints. Dorothy Denning's lattice model asked
+which classes of information may flow into which others, and Andrew Myers and
+Barbara Liskov let the owners of data control where it passes; taint analysis
+asks whether an untrusted input reaches a sensitive use.[^flow] Here the
+information is a fact about a person and the sensitive use is a consequence for
+them. Closed inputs and unwritable conclusions limit what may enter and what
+may be claimed; purpose-bound reads and endpoints are taint rules; and the
+purpose-bound reads apply the norm Helen Nissenbaum calls contextual integrity,
+that a flow of information answers to the context it came from.
+
+Each constraint is checked on the written form of the rules. A rule that
+reaches the same consequence under a new relation name, or through a shape a
+check does not inspect, can pass it. The endpoint and floor checks inspect rule
+shape rather than vocabulary for that reason, and none of the checks
+establishes that every harmful rule is unwritable. A refused rule proves a
+property of one encoding; an accepted one proves only that it loads.
 
 ## Comparing and selecting an amendment
 
@@ -541,6 +593,42 @@ most common are the matching source, evidence attester and independent reviewer
 of the newer families and the matching source and independent reviewer of the
 ecological family.
 
+## Where the engine comes from
+
+Nibli is written and maintained by the author of this book, who also wrote the
+constitution and its tests. Its agreement with them is therefore a consistency
+check within one project, not an independent confirmation; a reimplementation
+elsewhere would be a different kind of evidence. Nibli compiles its rule
+language into first-order logic and answers queries by backward chaining over
+the supplied facts, under the closed-world and closed-domain assumptions
+described above.
+
+Its negation follows the stratified semantics of Apt, Blair and Walker: a rule
+may use the absence of a relation only when that relation is settled at a lower
+level, and a program in which a relation depends on its own absence has no
+canonical meaning and is refused.[^stratified] In substance this is Datalog
+with stratified negation, with events, a fixed lexicon of relation names and
+declarations such as `admits` and `derived_only` added.
+
+Writing law as a logic program is older than this book. Marek Sergot and
+colleagues wrote much of the British Nationality Act 1981 as a logic program in
+1986; they treated the Act's negations as failures to prove, justified under a
+closed-world assumption, and found its rule for abandoned infants to be a
+default that later information could withdraw, the question this book's child
+case meets from the other side.[^sergot] Catala is a programming language for
+statutes built around their general cases and exceptions,[^catala] and the
+OECD's *Cracking the Code* describes governments publishing an official
+machine-consumable version of their rules beside the human-readable one, with a
+warning that a technical fix can become the default without asking whether it
+is appropriate and legitimate.[^rules-as-code] Mireille Hildebrandt's textbook
+on law for computer scientists examines how automated compliance can execute
+rules without and beyond the law.[^hildebrandt]
+
+What is new here is the use, not the logic: a constitution's protections
+written as limits on how facts about a person may flow into consequences, and
+tested against paired edge cases, a child nobody has come for and a person the
+state holds.
+
 ## Running the checks
 
 The repository needs its Rust toolchain and the Nibli repository checked
@@ -663,3 +751,33 @@ own argument and evidence. A clean contradiction report cannot supply them.
 tests. *What It Would Take* owns the account of operation and transition.
 A constitutional defect belongs to the first book; a claim that provision
 or release actually occurred needs evidence beyond either book's rules.
+
+[^flow]: Dorothy E. Denning, [“A Lattice Model of Secure Information
+    Flow”](https://doi.org/10.1145/360051.360056), *Communications of the ACM*
+    19(5) (1976), 236–243; Andrew C. Myers and Barbara Liskov, [“A Decentralized
+    Model for Information Flow Control”](https://doi.org/10.1145/268998.266669),
+    SOSP '97, 129–142; Helen Nissenbaum, [“Privacy as Contextual
+    Integrity”](https://digitalcommons.law.uw.edu/wlr/vol79/iss1/10),
+    *Washington Law Review* 79 (2004), 119.
+
+[^stratified]: Krzysztof R. Apt, Howard A. Blair and Adrian Walker, [“Towards
+    a Theory of Declarative
+    Knowledge”](https://doi.org/10.1016/B978-0-934613-40-8.50006-3), in
+    *Foundations of Deductive Databases and Logic Programming* (1988), 89–148.
+
+[^sergot]: M. J. Sergot, F. Sadri, R. A. Kowalski, F. Kriwaczek, P. Hammond and
+    H. T. Cory, [“The British Nationality Act as a Logic
+    Program”](https://doi.org/10.1145/5689.5920), *Communications of the ACM*
+    29(5) (1986), 370–386, at 379 and 381–382.
+
+[^catala]: Denis Merigoux, Nicolas Chataing and Jonathan Protzenko, [“Catala: A
+    Programming Language for the Law”](https://doi.org/10.1145/3473582),
+    *Proceedings of the ACM on Programming Languages* 5 (ICFP) (2021).
+
+[^rules-as-code]: James Mohun and Alex Roberts, [*Cracking the Code: Rulemaking
+    for Humans and Machines*](https://doi.org/10.1787/3afe6ba5-en), OECD
+    Working Papers on Public Governance No. 42 (2020), pp. 2 and 13.
+
+[^hildebrandt]: Mireille Hildebrandt, [*Law for Computer Scientists and Other
+    Folk*](https://doi.org/10.1093/oso/9780198860877.001.0001) (Oxford
+    University Press, 2020), chapter 10.

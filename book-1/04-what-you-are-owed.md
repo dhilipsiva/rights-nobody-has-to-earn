@@ -31,21 +31,13 @@ that food, shelter or care reached a person.
 
 ## Where the protection stops
 
-The floor rules refuse a particular kind of hostile condition: a rule making
-the absence of a protected floor condition, or of the debt owing it, a ground
-for conviction-based confinement. The tested rule is refused before it can
-change anyone's status. This result depends on the particular way the rule
-uses the missing condition; it is not a general prohibition on writing
-harmful alternatives. The optional [method](method.md#why-the-hostile-floor-rule-is-refused)
-explains why this form is refused.
-
-The contrast is visible in the tests. A hypothetical rule recording a
-loss of recognition for an absence of company can be accepted,
-although this design has no general recognition status to withdraw. A
-rule making an absence of belief a ground for a credibility finding
-is refused. Neither result settles every differently expressed
-attack. These experiments are discarded after the check; an accepted
-alternative acquires no authority in the constitution.
+A rule making the absence of a protected floor condition, or of the debt owing
+it, a ground for confinement is refused before it can change anyone's status.
+The protection covers confinement, and it depends on how such a rule is
+written. Other uses of a missing floor condition are held back by separate
+checks on how delivery conclusions may be used, and each needs its own test.
+The optional [method](method.md#why-the-hostile-floor-rule-is-refused) shows how
+the refusal works and where it stops.
 
 Separate constitutional limits protect private life and economic rights.
 Belief, speech, friendship, intimacy, association, voluntary care, gifts,
@@ -60,9 +52,8 @@ whether people are being sent along unjustifiably different routes to what
 they are owed. These protections have their own rules and cannot be credited
 to the floor's refusal mechanism alone.
 
-Movement has its own protection against the tested hostile rule. That result
-is checked separately; it cannot establish a protection for food, shelter or
-another floor item.
+Movement has its own protection, checked separately; it establishes no
+protection for food, shelter or another floor item.
 
 ## Owed by whom
 
