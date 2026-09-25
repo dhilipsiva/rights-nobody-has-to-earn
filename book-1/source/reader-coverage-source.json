@@ -2348,6 +2348,37 @@
       ]
     },
     {
+      "id": "16-06",
+      "chapter": "book-1/16-answerability-and-authority.md",
+      "section": "What this cannot settle",
+      "domain": "Public institutions",
+      "family": "ARTICLES",
+      "function": "protective",
+      "setting": "a forged seating, the State's public-body entry and a witnessed move",
+      "trajectory": "unresolved",
+      "basis": "book-1/16-answerability-and-authority.pins.nibli",
+      "pattern": "democratic",
+      "postures": [
+        "governs"
+      ]
+    },
+    {
+      "id": "16-07",
+      "chapter": "book-1/16-answerability-and-authority.md",
+      "section": "Argument: Answerable for good, empowered for now",
+      "domain": "Public institutions",
+      "family": "exempt",
+      "function": "argument",
+      "setting": "permanent answerability and protection from the exposure, against a hearing-first protective order",
+      "trajectory": "contested",
+      "basis": "exempt-element",
+      "pattern": "argument",
+      "postures": [
+        "chooses",
+        "governs"
+      ]
+    },
+    {
       "id": "17-00",
       "chapter": "book-1/17-how-public-power-is-built.md",
       "section": "(preamble)",
@@ -2468,9 +2499,24 @@
       ]
     },
     {
+      "id": "17-10",
+      "chapter": "book-1/17-how-public-power-is-built.md",
+      "section": "Who bears the cost",
+      "domain": "Public institutions",
+      "family": "STATE-FORM",
+      "function": "protective",
+      "setting": "the delay and deadlock divided bodies can cause, and who waits",
+      "trajectory": "contested",
+      "basis": "book-1/17-how-public-power-is-built.pins.nibli",
+      "pattern": "democratic",
+      "postures": [
+        "governs"
+      ]
+    },
+    {
       "id": "17-09",
       "chapter": "book-1/17-how-public-power-is-built.md",
-      "section": "Authority and performance",
+      "section": "What this cannot settle",
       "domain": "Public institutions",
       "family": "STATE-FORM",
       "function": "protective",
@@ -2479,6 +2525,22 @@
       "basis": "book-1/17-how-public-power-is-built.pins.nibli",
       "pattern": "democratic",
       "postures": [
+        "governs"
+      ]
+    },
+    {
+      "id": "17-11",
+      "chapter": "book-1/17-how-public-power-is-built.md",
+      "section": "Argument: Divided without deadlock",
+      "domain": "Public institutions",
+      "family": "exempt",
+      "function": "argument",
+      "setting": "a collective executive and a suspensive territorial chamber, against Westminster government",
+      "trajectory": "contested",
+      "basis": "exempt-element",
+      "pattern": "argument",
+      "postures": [
+        "chooses",
         "governs"
       ]
     },
@@ -2588,6 +2650,22 @@
       ]
     },
     {
+      "id": "18-07",
+      "chapter": "book-1/18-the-vote-conviction-does-not-take.md",
+      "section": "Argument: The vote outside the sentence",
+      "domain": "Democracy and amendment",
+      "family": "exempt",
+      "function": "argument",
+      "setting": "the vote kept through conviction and custody, against disenfranchisement as punishment",
+      "trajectory": "contested",
+      "basis": "exempt-element",
+      "pattern": "argument",
+      "postures": [
+        "chooses",
+        "governs"
+      ]
+    },
+    {
       "id": "19-00",
       "chapter": "book-1/19-what-may-be-kept-about-you.md",
       "section": "(preamble)",
@@ -2635,7 +2713,7 @@
     {
       "id": "19-04",
       "chapter": "book-1/19-what-may-be-kept-about-you.md",
-      "section": "Giving the limits effect",
+      "section": "What this cannot settle",
       "domain": "Records and accountability",
       "family": "RECORD-POWER",
       "function": "protective",
@@ -2645,6 +2723,21 @@
       "pattern": "records",
       "postures": [
         "is acted upon"
+      ]
+    },
+    {
+      "id": "19-05",
+      "chapter": "book-1/19-what-may-be-kept-about-you.md",
+      "section": "Argument: Uses bound to their holding, decisions to a person",
+      "domain": "Records and accountability",
+      "family": "exempt",
+      "function": "argument",
+      "setting": "uses bound to one holding and a person deciding, against a tell-us-once state",
+      "trajectory": "contested",
+      "basis": "exempt-element",
+      "pattern": "argument",
+      "postures": [
+        "chooses"
       ]
     },
     {
@@ -2755,7 +2848,7 @@
     {
       "id": "20-06",
       "chapter": "book-1/20-a-crisis-does-not-suspend-the-republic.md",
-      "section": "Withdrawal and redress",
+      "section": "What this cannot settle",
       "domain": "Emergency and resilience",
       "family": "PUBLIC-SAFETY",
       "function": "protective",
@@ -2765,6 +2858,21 @@
       "pattern": "coercive",
       "postures": [
         "is acted upon"
+      ]
+    },
+    {
+      "id": "20-09",
+      "chapter": "book-1/20-a-crisis-does-not-suspend-the-republic.md",
+      "section": "Argument: Four powers and every right in force",
+      "domain": "Emergency and resilience",
+      "family": "exempt",
+      "function": "argument",
+      "setting": "an emergency with no power to suspend a right, against derogation and a supermajoritarian escalator",
+      "trajectory": "contested",
+      "basis": "exempt-element",
+      "pattern": "argument",
+      "postures": [
+        "chooses"
       ]
     },
     {
@@ -2873,6 +2981,21 @@
       ]
     },
     {
+      "id": "21-09",
+      "chapter": "book-1/21-a-way-to-be-heard.md",
+      "section": "Who bears the cost",
+      "domain": "Justice and coercion",
+      "family": "NON-CARCERAL-JUSTICE",
+      "function": "protective",
+      "setting": "review owed on anyone's request, and who waits while a filing is decided",
+      "trajectory": "contested",
+      "basis": "book-1/21-a-way-to-be-heard.pins.nibli",
+      "pattern": "coercive",
+      "postures": [
+        "requests"
+      ]
+    },
+    {
       "id": "21-07",
       "chapter": "book-1/21-a-way-to-be-heard.md",
       "section": "The child with nobody",
@@ -2890,7 +3013,7 @@
     {
       "id": "21-08",
       "chapter": "book-1/21-a-way-to-be-heard.md",
-      "section": "A hearing and an effective remedy",
+      "section": "What this cannot settle",
       "domain": "Justice and coercion",
       "family": "NON-CARCERAL-JUSTICE",
       "function": "protective",
@@ -2899,6 +3022,22 @@
       "basis": "book-1/21-a-way-to-be-heard.pins.nibli",
       "pattern": "coercive",
       "postures": [
+        "requests"
+      ]
+    },
+    {
+      "id": "21-10",
+      "chapter": "book-1/21-a-way-to-be-heard.md",
+      "section": "Argument: Four stages, and a meeting beside them",
+      "domain": "Justice and coercion",
+      "family": "exempt",
+      "function": "argument",
+      "setting": "separate stages of access, hearing and relief, and voluntary restoration beside adjudication, against a prosecution-centred model",
+      "trajectory": "contested",
+      "basis": "exempt-element",
+      "pattern": "argument",
+      "postures": [
+        "chooses",
         "requests"
       ]
     },
@@ -2989,6 +3128,22 @@
       "basis": "book-1/22-changing-the-rules.pins.nibli",
       "pattern": "democratic",
       "postures": [
+        "governs"
+      ]
+    },
+    {
+      "id": "22-06",
+      "chapter": "book-1/22-changing-the-rules.md",
+      "section": "Argument: A fixed core behind an open route",
+      "domain": "Democracy and amendment",
+      "family": "exempt",
+      "function": "argument",
+      "setting": "an unamendable core beside a demanding open route, against a fully revisable constitution",
+      "trajectory": "contested",
+      "basis": "exempt-element",
+      "pattern": "argument",
+      "postures": [
+        "chooses",
         "governs"
       ]
     },

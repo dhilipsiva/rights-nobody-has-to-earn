@@ -46,15 +46,15 @@ carried in single figures, which is where the rebalance has most to do.
 
 | Posture | Passages |
 | --- | ---: |
-| chooses | 34 |
+| chooses | 41 |
 | creates | 4 |
 | cares | 8 |
 | works | 12 |
 | associates | 7 |
-| requests | 10 |
+| requests | 12 |
 | receives | 65 |
 | challenges | 29 |
-| governs | 35 |
+| governs | 41 |
 | is acted upon | 77 |
 
 ## Chapter patterns
@@ -67,10 +67,10 @@ what matters is the book's shape, not the chapter's.
 | --- | ---: |
 | constructive | 102 |
 | private-civic | 26 |
-| democratic | 34 |
-| coercive | 43 |
+| democratic | 36 |
+| coercive | 44 |
 | records | 31 |
-| argument | 22 |
+| argument | 29 |
 
 Whether a passage follows its pattern's own arc — seeks, responds,
 receipt, challenge, continuity, boundary — is prose review and is not
@@ -83,20 +83,20 @@ checked here.
 | Borders, migration, asylum and expulsion | 2 | 3 | 2 |
 | Collective and plurality rights | 1 | 1 | 0 |
 | Defence and armed force | 1 | 1 | 1 |
-| Democracy and amendment | 9 | 6 | 7 |
+| Democracy and amendment | 9 | 8 | 5 |
 | Ecology, future generations and commons | 4 | 5 | 5 |
 | Economy, property, work and commons | 17 | 16 | 12 |
-| Emergency and resilience | 2 | 2 | 3 |
-| Justice and coercion | 14 | 11 | 13 |
+| Emergency and resilience | 2 | 3 | 4 |
+| Justice and coercion | 14 | 13 | 10 |
 | Knowledge, communication and culture | 4 | 6 | 2 |
 | Life course, family, care and reproduction | 13 | 5 | 3 |
 | Locality, mobility and external relations | 2 | 2 | 2 |
 | Material floor | 10 | 25 | 11 |
 | Non-human animals | 2 | 4 | 1 |
 | Personhood and equality | 19 | 13 | 10 |
-| Public institutions | 10 | 9 | 13 |
+| Public institutions | 10 | 13 | 12 |
 | Public safety, policing and use of force | 6 | 5 | 8 |
-| Records and accountability | 13 | 15 | 17 |
+| Records and accountability | 13 | 16 | 18 |
 
 ## Every passage
 
@@ -256,27 +256,33 @@ checked here.
 | 16-02 | 16-answerability-and-authority.md | Tove | Public institutions | ARTICLES | protective | a recalled official and the person who exposed them | challenges | works | yes | democratic | `book-1/16-answerability-and-authority.pins.nibli` |
 | 16-03 | 16-answerability-and-authority.md | Answerability does not grant authority | Public institutions | ARTICLES | ordinary | answerability against capacity to act | governs | works | yes | democratic | `book-1/16-answerability-and-authority.pins.nibli` |
 | 16-04 | 16-answerability-and-authority.md | Mael's restoration | Public institutions | ARTICLES | protective | answerability, capacity and credibility held apart | governs | works | yes | democratic | `book-1/24-findings-about-people.pins.nibli` |
-| 16-05 | 16-answerability-and-authority.md | What it costs | Public institutions | ARTICLES | protective | the growing pool of answerable people | governs | unresolved | yes | democratic | `book-1/16-answerability-and-authority.pins.nibli` |
+| 16-05 | 16-answerability-and-authority.md | What it costs | Public institutions | ARTICLES | protective | the growing pool of answerable people | governs | unresolved | no | democratic | `book-1/16-answerability-and-authority.pins.nibli` |
+| 16-06 | 16-answerability-and-authority.md | What this cannot settle | Public institutions | ARTICLES | protective | a forged seating, the State's public-body entry and a witnessed move | governs | unresolved | yes | democratic | `book-1/16-answerability-and-authority.pins.nibli` |
+| 16-07 | 16-answerability-and-authority.md | Argument: Answerable for good, empowered for now | Public institutions | exempt | argument | permanent answerability and protection from the exposure, against a hearing-first protective order | chooses, governs | contested | no | argument | `exempt-element` |
 | 17-00 | 17-how-public-power-is-built.md | (preamble) | Public institutions | STATE-FORM | ordinary | ordinary passage, bounded disagreement, and authority through an interruption | governs | works | no | democratic | `book-1/17-how-public-power-is-built.pins.nibli` |
 | 17-01 | 17-how-public-power-is-built.md | Which tier holds which power | Public institutions | STATE-FORM | ordinary | an enumerated common competence and a disputed power | governs | contested | no | democratic | `book-1/17-how-public-power-is-built.pins.nibli` |
-| 17-02 | 17-how-public-power-is-built.md | The bodies, and what none of them may do alone | Public institutions | STATE-FORM | ordinary | one reasoned bill return and same-rule Assembly repassage in separate supplied records | governs | works | yes | democratic | `tests/pins/state-form/main-57/expect.pins.nibli` |
+| 17-02 | 17-how-public-power-is-built.md | The bodies, and what none of them may do alone | Public institutions | STATE-FORM | ordinary | one reasoned bill return and same-rule Assembly repassage in separate supplied records | governs | works | no | democratic | `tests/pins/state-form/main-57/expect.pins.nibli` |
 | 17-07 | 17-how-public-power-is-built.md | What a public result has to contain | Democracy and amendment | STATE-FORM | both | a result nobody can act on until the record holds together | governs | unresolved | no | democratic | `book-1/17-how-public-power-is-built.pins.nibli` |
-| 17-03 | 17-how-public-power-is-built.md | Keeping public decisions answerable | Democracy and amendment | DEMOCRATIC-INTEGRITY | protective | office integrity and political money | governs | works | yes | democratic | `book-1/17-how-public-power-is-built.pins.nibli` |
-| 17-04 | 17-how-public-power-is-built.md | How somebody comes to hold an office | Public institutions | STATE-FORM | protective | an appointment one coalition could otherwise control | governs | contested | no | democratic | `book-1/17-how-public-power-is-built.pins.nibli` |
-| 17-05 | 17-how-public-power-is-built.md | When nobody can agree | Public institutions | STATE-FORM | continuity | a government that could not be formed and a budget that failed | governs | continuity-remedy | yes | democratic | `book-1/17-how-public-power-is-built.pins.nibli` |
+| 17-03 | 17-how-public-power-is-built.md | Keeping public decisions answerable | Democracy and amendment | DEMOCRATIC-INTEGRITY | protective | office integrity and political money | governs | works | no | democratic | `book-1/17-how-public-power-is-built.pins.nibli` |
+| 17-04 | 17-how-public-power-is-built.md | How somebody comes to hold an office | Public institutions | STATE-FORM | protective | an appointment one coalition could otherwise control | governs | contested | yes | democratic | `book-1/17-how-public-power-is-built.pins.nibli` |
+| 17-05 | 17-how-public-power-is-built.md | When nobody can agree | Public institutions | STATE-FORM | continuity | a government that could not be formed and a budget that failed | governs | continuity-remedy | no | democratic | `book-1/17-how-public-power-is-built.pins.nibli` |
 | 17-06 | 17-how-public-power-is-built.md | Leaving | Locality, mobility and external relations | STATE-FORM | protective | a region seeking an exit | governs | contested | no | democratic | `book-1/17-how-public-power-is-built.pins.nibli` |
-| 17-09 | 17-how-public-power-is-built.md | Authority and performance | Public institutions | STATE-FORM | protective | the boundary of an unstaffed state | governs | unresolved | yes | democratic | `book-1/17-how-public-power-is-built.pins.nibli` |
+| 17-10 | 17-how-public-power-is-built.md | Who bears the cost | Public institutions | STATE-FORM | protective | the delay and deadlock divided bodies can cause, and who waits | governs | contested | no | democratic | `book-1/17-how-public-power-is-built.pins.nibli` |
+| 17-09 | 17-how-public-power-is-built.md | What this cannot settle | Public institutions | STATE-FORM | protective | the boundary of an unstaffed state | governs | unresolved | yes | democratic | `book-1/17-how-public-power-is-built.pins.nibli` |
+| 17-11 | 17-how-public-power-is-built.md | Argument: Divided without deadlock | Public institutions | exempt | argument | a collective executive and a suspensive territorial chamber, against Westminster government | chooses, governs | contested | no | argument | `exempt-element` |
 | 18-00 | 18-the-vote-conviction-does-not-take.md | (preamble) | Democracy and amendment | ARTICLES | ordinary | a person whose custody coexists with a ballot entitlement | is acted upon | works | yes | democratic | `book-1/18-the-vote-conviction-does-not-take.pins.nibli` |
 | 18-01 | 18-the-vote-conviction-does-not-take.md | What conviction leaves intact | Democracy and amendment | ARTICLES | ordinary | the ballot a conviction does not take | is acted upon | works | no | democratic | `book-1/18-the-vote-conviction-does-not-take.pins.nibli` |
 | 18-02 | 18-the-vote-conviction-does-not-take.md | A credibility finding does not remove the vote | Records and accountability | ARTICLES | protective | Bela's credibility finding restricts new adverse signatures while preserving the ballot | is acted upon | contested | no | records | `book-1/18-the-vote-conviction-does-not-take.pins.nibli` |
 | 18-03 | 18-the-vote-conviction-does-not-take.md | The home custody does not move | Locality, mobility and external relations | STATE-FORM | ordinary | the political home | is acted upon | works | no | private-civic | `book-1/18-the-vote-conviction-does-not-take.pins.nibli` |
 | 18-04 | 18-the-vote-conviction-does-not-take.md | What protects the entitlement | Democracy and amendment | ARTICLES | protective | the franchise against the floor | is acted upon | fails | no | democratic | `book-1/18-the-vote-conviction-does-not-take.pins.nibli` |
 | 18-05 | 18-the-vote-conviction-does-not-take.md | A right still needs a ballot | Democracy and amendment | STATE-FORM | ordinary | what a supplied result can show | is acted upon | unresolved | yes | democratic | `book-1/18-the-vote-conviction-does-not-take.pins.nibli` |
-| 18-06 | 18-the-vote-conviction-does-not-take.md | The child with nobody | Democracy and amendment | ARTICLES | protective | the child with nobody: one birth entry and nothing else | receives | unresolved | yes | democratic | `book-1/18-the-vote-conviction-does-not-take.pins.nibli` |
+| 18-06 | 18-the-vote-conviction-does-not-take.md | The child with nobody | Democracy and amendment | ARTICLES | protective | the child with nobody: one birth entry and nothing else | receives | unresolved | no | democratic | `book-1/18-the-vote-conviction-does-not-take.pins.nibli` |
+| 18-07 | 18-the-vote-conviction-does-not-take.md | Argument: The vote outside the sentence | Democracy and amendment | exempt | argument | the vote kept through conviction and custody, against disenfranchisement as punishment | chooses, governs | contested | yes | argument | `exempt-element` |
 | 19-00 | 19-what-may-be-kept-about-you.md | (preamble) | Records and accountability | RECORD-POWER | ordinary | the records kept about a person, and the permissions over them | is acted upon | works | no | records | `book-1/19-what-may-be-kept-about-you.pins.nibli` |
-| 19-01 | 19-what-may-be-kept-about-you.md | Keeping, watching, and letting a machine help | Records and accountability | RECORD-POWER | both | record authority withdrawn while duties and contest continue | is acted upon | works | no | records | `tests/pins/record-power/power/holding-defect-and-rights-sequence/expect.pins.nibli` |
+| 19-01 | 19-what-may-be-kept-about-you.md | Keeping, watching, and letting a machine help | Records and accountability | RECORD-POWER | both | record authority withdrawn while duties and contest continue | is acted upon | works | yes | records | `tests/pins/record-power/power/holding-defect-and-rights-sequence/expect.pins.nibli` |
 | 19-02 | 19-what-may-be-kept-about-you.md | Counting without ranking people | Records and accountability | OFFICIAL-STATISTICS | both | official statistics and planning | is acted upon | works | yes | records | `book-1/19-what-may-be-kept-about-you.pins.nibli` |
-| 19-04 | 19-what-may-be-kept-about-you.md | Giving the limits effect | Records and accountability | RECORD-POWER | protective | the boundary of a record family that stores nothing | is acted upon | unresolved | yes | records | `book-1/19-what-may-be-kept-about-you.pins.nibli` |
+| 19-04 | 19-what-may-be-kept-about-you.md | What this cannot settle | Records and accountability | RECORD-POWER | protective | the boundary of a record family that stores nothing | is acted upon | unresolved | yes | records | `book-1/19-what-may-be-kept-about-you.pins.nibli` |
+| 19-05 | 19-what-may-be-kept-about-you.md | Argument: Uses bound to their holding, decisions to a person | Records and accountability | exempt | argument | uses bound to one holding and a person deciding, against a tell-us-once state | chooses | contested | no | argument | `exempt-element` |
 | 20-00 | 20-a-crisis-does-not-suspend-the-republic.md | (preamble) | Emergency and resilience | PUBLIC-SAFETY | ordinary | the clause this design does not have | is acted upon | works | no | coercive | `book-1/20-a-crisis-does-not-suspend-the-republic.pins.nibli` |
 | 20-01 | 20-a-crisis-does-not-suspend-the-republic.md | What a declaration may actually do | Emergency and resilience | PUBLIC-SAFETY | protective | a complete declaration and the separate property requisition depending on it | governs | works | yes | coercive | `tests/pins/public-safety/review/declaration-conflict-withdraws-requisition/expect.pins.nibli` |
 | 20-02 | 20-a-crisis-does-not-suspend-the-republic.md | When a declaration breaches the constitution | Emergency and resilience | PUBLIC-SAFETY | continuity | a defective declaration loses authority while requisition duties remain | is acted upon | continuity-remedy | yes | coercive | `tests/pins/public-safety/review/declaration-conflict-withdraws-requisition/expect.pins.nibli` |
@@ -284,22 +290,26 @@ checked here.
 | 20-03 | 20-a-crisis-does-not-suspend-the-republic.md | Power does not grow at the border | Defence and armed force | PUBLIC-SAFETY | protective | civilian defence structure and the separate force-abroad authorisation | governs | works | no | coercive | `tests/pins/public-safety/review/defence-structure-conflict-withdraws-force-abroad/expect.pins.nibli` |
 | 20-04 | 20-a-crisis-does-not-suspend-the-republic.md | When coercive power passes to a private force | Defence and armed force | PUBLIC-SAFETY | continuity | a defective defence structure loses authority while its limits and audit remain | is acted upon | continuity-remedy | yes | coercive | `tests/pins/public-safety/review/defence-structure-conflict-withdraws-force-abroad/expect.pins.nibli` |
 | 20-07 | 20-a-crisis-does-not-suspend-the-republic.md | Treaties, trade and a region's exit | Locality, mobility and external relations | PUBLIC-SAFETY | protective | separate treaty powers, cross-border harm limits and protected lawful exit | governs | works | yes | coercive | `book-1/20-a-crisis-does-not-suspend-the-republic.pins.nibli` |
-| 20-06 | 20-a-crisis-does-not-suspend-the-republic.md | Withdrawal and redress | Emergency and resilience | PUBLIC-SAFETY | protective | the boundary of a withdrawal that is not an event | is acted upon | unresolved | yes | coercive | `book-1/20-a-crisis-does-not-suspend-the-republic.pins.nibli` |
+| 20-06 | 20-a-crisis-does-not-suspend-the-republic.md | What this cannot settle | Emergency and resilience | PUBLIC-SAFETY | protective | the boundary of a withdrawal that is not an event | is acted upon | unresolved | yes | coercive | `book-1/20-a-crisis-does-not-suspend-the-republic.pins.nibli` |
+| 20-09 | 20-a-crisis-does-not-suspend-the-republic.md | Argument: Four powers and every right in force | Emergency and resilience | exempt | argument | an emergency with no power to suspend a right, against derogation and a supermajoritarian escalator | chooses | contested | yes | argument | `exempt-element` |
 | 21-00 | 21-a-way-to-be-heard.md | (preamble) | Justice and coercion | NON-CARCERAL-JUSTICE | ordinary | a right nobody will hear | requests | works | no | coercive | `book-1/21-a-way-to-be-heard.pins.nibli` |
-| 21-01 | 21-a-way-to-be-heard.md | The way in | Justice and coercion | NON-CARCERAL-JUSTICE | both | a hearing for a denied right | requests | works | yes | coercive | `book-1/21-a-way-to-be-heard.pins.nibli` |
+| 21-01 | 21-a-way-to-be-heard.md | The way in | Justice and coercion | NON-CARCERAL-JUSTICE | both | a hearing for a denied right | requests | works | no | coercive | `book-1/21-a-way-to-be-heard.pins.nibli` |
 | 21-02 | 21-a-way-to-be-heard.md | Nobody may hold two of these functions in the same case | Justice and coercion | NON-CARCERAL-JUSTICE | protective | an investigator who would rather also decide | is acted upon | works | no | coercive | `book-1/21-a-way-to-be-heard.pins.nibli` |
 | 21-03 | 21-a-way-to-be-heard.md | Support that does not decide anybody's guilt | Justice and coercion | NON-CARCERAL-JUSTICE | ordinary | a survivor who wants help and not a trial | requests | works | yes | coercive | `book-1/21-a-way-to-be-heard.pins.nibli` |
 | 21-04 | 21-a-way-to-be-heard.md | What a court may order, and which court | Justice and coercion | NON-CARCERAL-JUSTICE | both | relief for one case, and invalidation for everyone | challenges | works | no | coercive | `book-1/21-a-way-to-be-heard.pins.nibli` |
 | 21-05 | 21-a-way-to-be-heard.md | Enforcement that stays inside the remedy | Justice and coercion | NON-CARCERAL-JUSTICE | continuity | a remedy being enforced without a coercive power | is acted upon | works | no | coercive | `book-1/21-a-way-to-be-heard.pins.nibli` |
-| 21-06 | 21-a-way-to-be-heard.md | Asking again | Justice and coercion | NON-CARCERAL-JUSTICE | both | a decision that went against somebody | challenges | contested | yes | coercive | `book-1/21-a-way-to-be-heard.pins.nibli` |
-| 21-07 | 21-a-way-to-be-heard.md | The child with nobody | Justice and coercion | NON-CARCERAL-JUSTICE | protective | the child with nobody: one birth entry and nothing else | receives | unresolved | yes | coercive | `book-1/21-a-way-to-be-heard.pins.nibli` |
-| 21-08 | 21-a-way-to-be-heard.md | A hearing and an effective remedy | Justice and coercion | NON-CARCERAL-JUSTICE | protective | the boundary of a route that needs somebody to file | requests | unresolved | yes | coercive | `book-1/21-a-way-to-be-heard.pins.nibli` |
+| 21-06 | 21-a-way-to-be-heard.md | Asking again | Justice and coercion | NON-CARCERAL-JUSTICE | both | a decision that went against somebody | challenges | contested | no | coercive | `book-1/21-a-way-to-be-heard.pins.nibli` |
+| 21-09 | 21-a-way-to-be-heard.md | Who bears the cost | Justice and coercion | NON-CARCERAL-JUSTICE | protective | review owed on anyone's request, and who waits while a filing is decided | requests | contested | no | coercive | `book-1/21-a-way-to-be-heard.pins.nibli` |
+| 21-07 | 21-a-way-to-be-heard.md | The child with nobody | Justice and coercion | NON-CARCERAL-JUSTICE | protective | the child with nobody: one birth entry and nothing else | receives | unresolved | no | coercive | `book-1/21-a-way-to-be-heard.pins.nibli` |
+| 21-08 | 21-a-way-to-be-heard.md | What this cannot settle | Justice and coercion | NON-CARCERAL-JUSTICE | protective | the boundary of a route that needs somebody to file | requests | unresolved | yes | coercive | `book-1/21-a-way-to-be-heard.pins.nibli` |
+| 21-10 | 21-a-way-to-be-heard.md | Argument: Four stages, and a meeting beside them | Justice and coercion | exempt | argument | separate stages of access, hearing and relief, and voluntary restoration beside adjudication, against a prosecution-centred model | chooses, requests | contested | no | argument | `exempt-element` |
 | 22-00 | 22-changing-the-rules.md | (preamble) | Democracy and amendment | AMENDMENT-ENACTMENT | ordinary | how a society changes its rules | governs | works | no | democratic | `book-1/22-changing-the-rules.pins.nibli` |
 | 22-01 | 22-changing-the-rules.md | Certification, publication and effect | Democracy and amendment | AMENDMENT-ENACTMENT | protective | exact candidate certification, publication and effective selection | governs | works | yes | democratic | `book-1/22-changing-the-rules.pins.nibli` |
-| 22-02 | 22-changing-the-rules.md | The protected core | Democracy and amendment | AMENDMENT-ENACTMENT | protective | unamendable human, commons and animal cores | governs | works | yes | democratic | `book-1/22-changing-the-rules.pins.nibli` |
+| 22-02 | 22-changing-the-rules.md | The protected core | Democracy and amendment | AMENDMENT-ENACTMENT | protective | unamendable human, commons and animal cores | governs | works | no | democratic | `book-1/22-changing-the-rules.pins.nibli` |
 | 22-05 | 22-changing-the-rules.md | What a proposal entry establishes | Democracy and amendment | AMENDMENT-ENACTMENT | protective | bare proposal entries versus candidate-bound amendment authority | governs | works | no | democratic | `book-1/22-changing-the-rules.pins.nibli` |
-| 22-03 | 22-changing-the-rules.md | People and proposal names | Democracy and amendment | ARTICLES | protective | personal findings are separate from proposal entries | governs | works | no | democratic | `tests/pins/amendments/person-proposal-separation/expect.pins.nibli` |
-| 22-04 | 22-changing-the-rules.md | What entrenchment requires | Democracy and amendment | AMENDMENT-ENACTMENT | protective | the democratic cost and evidence requirements of entrenchment | governs | contested | yes | democratic | `book-1/22-changing-the-rules.pins.nibli` |
+| 22-03 | 22-changing-the-rules.md | People and proposal names | Democracy and amendment | ARTICLES | protective | personal findings are separate from proposal entries | governs | works | yes | democratic | `tests/pins/amendments/person-proposal-separation/expect.pins.nibli` |
+| 22-04 | 22-changing-the-rules.md | What entrenchment requires | Democracy and amendment | AMENDMENT-ENACTMENT | protective | the democratic cost and evidence requirements of entrenchment | governs | contested | no | democratic | `book-1/22-changing-the-rules.pins.nibli` |
+| 22-06 | 22-changing-the-rules.md | Argument: A fixed core behind an open route | Democracy and amendment | exempt | argument | an unamendable core beside a demanding open route, against a fully revisable constitution | chooses, governs | contested | no | argument | `exempt-element` |
 | 23-00 | 23-the-shield.md | (preamble) | Justice and coercion | ARTICLES | protective | exposing power while facing prosecution | challenges | works | yes | coercive | `book-1/23-the-shield.pins.nibli` |
 | 23-01 | 23-the-shield.md | Faro: a private target | Justice and coercion | ARTICLES | protective | Faro exposes Pax, the person injured in Faro's case, without a public-answerability basis | challenges | works | no | coercive | `book-1/23-the-shield.pins.nibli` |
 | 23-02 | 23-the-shield.md | Lior: an unresolved disclosure | Justice and coercion | ARTICLES | protective | Lior's court disclosure has no effective deceit finding and blocks confinement under the supplied prosecution | challenges | contested | no | coercive | `book-1/23-the-shield.pins.nibli` |

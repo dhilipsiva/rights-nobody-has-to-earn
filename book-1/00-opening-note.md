@@ -94,7 +94,7 @@ belong to your reading, not to their evidence.
 
 *The Rights Nobody Has to Earn* makes its commitments inspectable. That cannot
 make them just. I speak directly in this opening, in the documented cases that
-open Parts I and II, in the labelled argument section that closes each of
+open Parts I, II and III, in the labelled argument section that closes each of
 their chapters, in Part V's arguments and in the optional method; every other
 section states the consequences of the formal design. An exposed failure still
 needs resolution.

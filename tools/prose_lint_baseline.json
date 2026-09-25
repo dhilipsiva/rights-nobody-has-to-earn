@@ -1,6 +1,6 @@
 {
   "book-1/00-opening-note.md": {
-    "negation": 21.2,
+    "negation": 21.1,
     "jargon": 2.5,
     "names": 0,
     "disclaimers": 0,
@@ -252,7 +252,7 @@
     "strays": 0
   },
   "book-1/14-holding-a-role-in-somebodys-life.md#argument": {
-    "negation": 13.0,
+    "negation": 12.8,
     "jargon": 0.0,
     "names": 0,
     "disclaimers": 0,
@@ -279,16 +279,34 @@
     "strays": 0
   },
   "book-1/16-answerability-and-authority.md": {
-    "negation": 26.6,
+    "negation": 9.2,
     "jargon": 0.0,
-    "names": 7,
+    "names": 5,
+    "disclaimers": 0,
+    "banned": 0,
+    "harness": 0,
+    "strays": 0
+  },
+  "book-1/16-answerability-and-authority.md#argument": {
+    "negation": 0.0,
+    "jargon": 0.0,
+    "names": 0,
     "disclaimers": 0,
     "banned": 0,
     "harness": 0,
     "strays": 0
   },
   "book-1/17-how-public-power-is-built.md": {
-    "negation": 27.6,
+    "negation": 7.4,
+    "jargon": 0.0,
+    "names": 0,
+    "disclaimers": 0,
+    "banned": 0,
+    "harness": 0,
+    "strays": 0
+  },
+  "book-1/17-how-public-power-is-built.md#argument": {
+    "negation": 9.0,
     "jargon": 0.0,
     "names": 0,
     "disclaimers": 0,
@@ -297,7 +315,7 @@
     "strays": 0
   },
   "book-1/18-the-vote-conviction-does-not-take.md": {
-    "negation": 34.2,
+    "negation": 15.4,
     "jargon": 0.0,
     "names": 4,
     "disclaimers": 0,
@@ -305,8 +323,17 @@
     "harness": 0,
     "strays": 0
   },
+  "book-1/18-the-vote-conviction-does-not-take.md#argument": {
+    "negation": 10.9,
+    "jargon": 0.0,
+    "names": 0,
+    "disclaimers": 0,
+    "banned": 0,
+    "harness": 0,
+    "strays": 0
+  },
   "book-1/19-what-may-be-kept-about-you.md": {
-    "negation": 19.9,
+    "negation": 11.2,
     "jargon": 0.0,
     "names": 1,
     "disclaimers": 0,
@@ -314,8 +341,26 @@
     "harness": 0,
     "strays": 0
   },
+  "book-1/19-what-may-be-kept-about-you.md#argument": {
+    "negation": 6.6,
+    "jargon": 0.0,
+    "names": 0,
+    "disclaimers": 0,
+    "banned": 0,
+    "harness": 0,
+    "strays": 0
+  },
   "book-1/20-a-crisis-does-not-suspend-the-republic.md": {
-    "negation": 24.3,
+    "negation": 7.6,
+    "jargon": 0.0,
+    "names": 0,
+    "disclaimers": 0,
+    "banned": 0,
+    "harness": 0,
+    "strays": 0
+  },
+  "book-1/20-a-crisis-does-not-suspend-the-republic.md#argument": {
+    "negation": 8.5,
     "jargon": 0.0,
     "names": 0,
     "disclaimers": 0,
@@ -324,17 +369,35 @@
     "strays": 0
   },
   "book-1/21-a-way-to-be-heard.md": {
-    "negation": 30.3,
-    "jargon": 3.1,
+    "negation": 10.3,
+    "jargon": 1.5,
     "names": 3,
     "disclaimers": 0,
     "banned": 0,
     "harness": 0,
     "strays": 0
   },
+  "book-1/21-a-way-to-be-heard.md#argument": {
+    "negation": 9.3,
+    "jargon": 0.0,
+    "names": 0,
+    "disclaimers": 0,
+    "banned": 0,
+    "harness": 0,
+    "strays": 0
+  },
   "book-1/22-changing-the-rules.md": {
-    "negation": 26.8,
-    "jargon": 0.8,
+    "negation": 15.1,
+    "jargon": 0.7,
+    "names": 0,
+    "disclaimers": 0,
+    "banned": 0,
+    "harness": 0,
+    "strays": 0
+  },
+  "book-1/22-changing-the-rules.md#argument": {
+    "negation": 11.4,
+    "jargon": 0.0,
     "names": 0,
     "disclaimers": 0,
     "banned": 0,
@@ -431,8 +494,17 @@
     "harness": 0,
     "strays": 0
   },
+  "book-1/part-3-the-brooding-spirit-of-the-law.md": {
+    "negation": 13.3,
+    "jargon": 0.0,
+    "names": 0,
+    "disclaimers": 0,
+    "banned": 0,
+    "harness": 0,
+    "strays": 0
+  },
   "book-1/reference.md": {
-    "negation": 16.7,
+    "negation": 16.6,
     "jargon": 0.6,
     "names": 39,
     "disclaimers": 1,

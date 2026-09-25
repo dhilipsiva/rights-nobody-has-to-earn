@@ -111,6 +111,9 @@ and this reference material follow them.
 
 ### Part III — The public power that serves it
 
+- [Opening case: The Brooding Spirit of the Law](part-3-the-brooding-spirit-of-the-law.md)
+  — a court that closed its doors to detainees in an emergency, and the
+  amendment that reopened them.
 - [Chapter 16: Answerability and Authority](16-answerability-and-authority.md)
   — permanent answerability, current office and lawful power as separate things.
 - [Chapter 17: How Public Power Is Built](17-how-public-power-is-built.md) — the

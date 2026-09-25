@@ -50,11 +50,21 @@ fn argued_text(context: &Context) -> String {
 /// leans on it. One source may carry several figures — Tanzania's relocation
 /// count and Mondragon's headcount are not one claim each — so the rows are
 /// keyed by case, not by entry.
-const TRACED: [(&str, &str, &str); 128] = [
+const TRACED: [(&str, &str, &str); 159] = [
     (
         "the Wallacedene eviction",
         "grootboom-2000-eviction-facts",
         "510 children and 390 adults",
+    ),
+    (
+        "the Part III opening case",
+        "adm-jabalpur-1976",
+        "brooding spirit of the law",
+    ),
+    (
+        "the Forty-fourth Amendment",
+        "india-44th-amendment-1978-art359",
+        "on a secure footing",
     ),
     (
         "the Dutch childcare-benefits opening case",
@@ -626,6 +636,151 @@ const TRACED: [(&str, &str, &str); 128] = [
         "consultation under ILO C169",
         "ilo-c169-1989-consultation-consent",
         "relocation proceed through national procedures",
+    ),
+    (
+        "retaliation against reporters",
+        "gbes-retaliation-rates",
+        "across the ten countries surveyed",
+    ),
+    (
+        "the whistleblower burden reversal",
+        "eu-whistleblower-directive-2019-art21-5",
+        "rested on duly justified grounds",
+    ),
+    (
+        "the Westminster and consensus models",
+        "lijphart-2012-patterns-of-democracy",
+        "a consensus model across thirty-six democracies",
+    ),
+    (
+        "Uruguay's collegial executive, in the public-power chapter",
+        "uruguay-colegiado-1952",
+        "rather than the collegial form",
+    ),
+    (
+        "Switzerland's Federal Council",
+        "swiss-constitution-1999-federal-council-council-of-states",
+        "seven-member Federal Council decides as a collegial body",
+    ),
+    (
+        "the constructive vote of no confidence",
+        "german-basic-law-constructive-replacement",
+        "elect a successor when it withdraws confidence",
+    ),
+    (
+        "bicameralism and the status quo",
+        "tsebelis-money-1997-bicameralism",
+        "make the status quo harder to change",
+    ),
+    (
+        "leaving without negotiation",
+        "quebec-secession-reference-1998",
+        "no right to leave unilaterally",
+    ),
+    (
+        "judicial appointments",
+        "scaora-v-union-of-india-njac-2015",
+        "collegium system of judicial appointment operative again",
+    ),
+    (
+        "prisoners' vote in South Africa",
+        "august-v-electoral-commission-1999",
+        "arrangements for eligible prisoners to register and vote",
+    ),
+    (
+        "the municipal vote in the EU",
+        "eu-municipal-vote-tfeu22-dir-94-80-1994",
+        "on the same conditions as its nationals",
+    ),
+    (
+        "the blanket prisoner ban",
+        "hirst-v-uk-no2-2005",
+        "left the choice of means to the State",
+    ),
+    (
+        "prisoners serving two years or more",
+        "sauve-v-canada-2002",
+        "prisoners serving two years or more",
+    ),
+    (
+        "the blanket exclusion in South Africa",
+        "minister-home-affairs-v-nicro-2004",
+        "wholly inadequate information",
+    ),
+    (
+        "the social credit system",
+        "merics-2021-social-credit",
+        "fragmented and mostly regulatory",
+    ),
+    (
+        "blocked travel purchases",
+        "state-council-2014-plan",
+        "17.5 million times",
+    ),
+    (
+        "Weimar's Article 48",
+        "weimar-constitution-1919-art48",
+        "could demand their revocation",
+    ),
+    (
+        "derogation under the Covenant",
+        "iccpr-article-4-derogation",
+        "certain rights non-derogable and notification required",
+    ),
+    (
+        "the supermajoritarian escalator",
+        "ackerman-2004-emergency-constitution",
+        "prevent normalisation",
+    ),
+    (
+        "models of emergency law",
+        "gross-ni-aolain-2006-law-in-times-of-crisis",
+        "London attacks of July 2005",
+    ),
+    (
+        "the writ in the opening case",
+        "adm-jabalpur-1976",
+        "the writ survived while the standing to ask for it was suspended",
+    ),
+    (
+        "restorative justice conferencing",
+        "strang-2013-restorative-justice-conferencing",
+        "more satisfied with how their cases were handled",
+    ),
+    (
+        "limits on amendment",
+        "roznai-2017-unconstitutional-amendments",
+        "comparative study of amendment limits",
+    ),
+    (
+        "the eternity clause",
+        "german-basic-law-1949-article-79-3",
+        "a democratic and social federal state under the rule of law",
+    ),
+    (
+        "the basic structure, in the amendment chapter",
+        "kesavananda-bharati-1973",
+        "alter the Constitution's basic structure",
+    ),
+    (
+        "the second re-election referendum",
+        "colombia-cc-c-141-2010",
+        "alternation in office and the separation of powers",
+    ),
+    (
+        "abusive constitutionalism",
+        "landau-2013-abusive-constitutionalism",
+        "probably did prevent a significant erosion of democracy",
+    ),
+    (
+        "the case against strong review, in the amendment chapter",
+        "waldron-2006-case-against-judicial-review",
+        "judges should not strike down their laws",
+    ),
+    (
+        "the endurance of constitutions",
+        "elkins-ginsburg-melton-2009-endurance-of-constitutions",
+        "imperilled by crises",
     ),
 ];
 

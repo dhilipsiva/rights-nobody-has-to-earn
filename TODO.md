@@ -67,9 +67,8 @@ ratified 2026-09-24* and recorded in `CLAUDE.md`.
 - Preserve the unnumbered epigraph and method, editorial order and the
   majority-derived length rule. Ruling D2 adds one labelled argument section to
   each derived chapter and measures the length rule by section; item 53 built
-  that tooling, and items 54 and 55 wrote the sections and opening cases of
-  Parts I and II. Until items 56 and 57 write the rest, the chapters of Parts
-  III and IV stay wholly derived. The existing appendix is a carried archive, not an extra
+  that tooling, and items 54–56 wrote the sections and opening cases of Parts
+  I–III. Until item 57 writes Part IV's, its chapters stay wholly derived. The existing appendix is a carried archive, not an extra
   channel for new reader-facing arguments.
 - **Current design throughout — author instruction, 2026-09-18.** Every
   reader-facing part, including the opening, Part V and optional method, must
@@ -218,9 +217,9 @@ unimplemented until the items named here land.
 
 ## Ordered revision backlog
 
-Work in this order: items 56–63 carry the rewrite under the ratified rulings;
+Work in this order: items 57–63 carry the rewrite under the ratified rulings;
 item 64 finishes production, 65 closes the revision, and 66 is optional.
-Numbering continues from items 01–33, which `CLAUDE.md` records; items 34–55
+Numbering continues from items 01–33, which `CLAUDE.md` records; items 34–56
 and 67–72 are complete and recorded there too. Chapter numbers refer to the
 [current reading sequence](book-1/contents.json), which item 53 made the plan's
 §4.2 table; the plan's own §14 punch list uses the earlier numbers, which
@@ -228,47 +227,32 @@ and 67–72 are complete and recorded there too. Chapter numbers refer to the
 
 ### Structure and rewrite
 
-- [ ] **56. Rewrite Part III.**
+- [ ] **57. Rewrite Part IV.**
 
-  **Scope:** Part III, Chapters 16–22; plan §14; rulings D2 and D3.
+  **Scope:** Part IV, Chapters 23–28; plan §14; rulings D2, D3, D5 and D7.
 
-  Rewrite each chapter in the shape Parts I and II now have (items 54 and 55,
-  recorded in `CLAUDE.md`). The derived account comes first: the situation as a
-  pinned case, the rule and how it works, what it costs and who bears it, and at
-  most one "What this cannot settle". One labelled argument section closes the
+  Rewrite each chapter in the shape Parts I–III now have (items 54–56, recorded
+  in `CLAUDE.md`). The derived account comes first: the situation as a pinned
+  case, the rule and how it works, what it costs and who bears it, and at most
+  one "What this cannot settle". One labelled argument section closes the
   chapter: the reason, the strongest alternative with its evidence, and what
   would change the choice. Documented cases appear only there and in the Part's
   opening case (D3), each registered and bound to its phrase; child sections
   follow D5; the line pointing to companion cases waits for item 63.
 
-  Keep the recall insight at the front of Chapter 16 and move its counterfactual
-  to the companion. Add a diagram of the bodies to Chapter 17. Halve Chapter
-  18's negation and move out its formal account of why an added rule does not
-  repeal an existing one. Make Chapter 19 one of the strongest in the book. Move
-  Chapter 22's source-editing tests and proposal names to the companion. The
-  argument sections carry the precedents the plan lists, and Part III opens with
-  a documented case such as *ADM Jabalpur*.
+  Write the merged chapter on findings about people, with its reach stated first
+  (item 41) and its cases cut to four. Keep the distinction that a disclosure
+  against a private person opens no shield. Rebuild Chapter 25 on its principle,
+  keeping its title and first line. Keep Chapter 26's severity table and cut its
+  names to five. Keep Chapter 27's absolute prohibitions and add the cost of a
+  lapse (item 39). Compare Chapter 28 with national preventive mechanisms and
+  human rights institutions in its argument section. Part IV opens with a
+  documented case such as *Hussainara Khatoon*.
 
   **Done when:** each chapter's derived sections pass the lint's thresholds with
   five or fewer case names and keep their pinned claims exact, and each
   argument section states the reason, the strongest alternative and what would
   change the choice, with every source registered.
-
-- [ ] **57. Rewrite Part IV.**
-
-  **Scope:** Part IV, Chapters 23–28; plan §14; rulings D2, D3, D5 and D7.
-
-  Rewrite in item 56's shape. Write the merged chapter on findings about people,
-  with its reach stated first (item 41) and its cases cut to four. Keep the
-  distinction that a disclosure against a private person opens no shield.
-  Rebuild Chapter 25 on its principle, keeping its title and first line. Keep
-  Chapter 26's severity table and cut its names to five. Keep Chapter 27's
-  absolute prohibitions and add the cost of a lapse (item 39). Compare Chapter
-  28 with national preventive mechanisms and human rights institutions in its
-  argument section. Part IV opens with a documented case such as *Hussainara
-  Khatoon*.
-
-  **Done when:** item 56's conditions hold.
 
 - [ ] **58. Argue the largest commitments in proportion to their stakes.**
 

@@ -74,6 +74,17 @@ Chapters 26 and 27. The opening note now names the argument sections and the
 opening case among the places the author speaks. The exact prose is
 `session-drafted, author-approved under delegated approval (2026-09-13)`.
 
+## Part III in the ruled shape — item 56, 2026-09-25
+
+Part III carries both channels. Its labelled opening case, *The Brooding
+Spirit of the Law*, tells *ADM Jabalpur* and the Forty-fourth Amendment from
+the judgment and the amending Act, and the argument sections of Chapters 20
+and 21 refer to it as the case that opens the Part rather than retelling it.
+Chapters 16–22 close with argument sections, each against its own strongest
+alternative, and Chapter 19's argument leaves the closed-record argument to
+Chapter 2. The exact prose is `session-drafted, author-approved under delegated
+approval (2026-09-13)`.
+
 ## Part II in the ruled shape — item 55, 2026-09-25
 
 Part II carries both channels as Part I does. Its labelled opening case,

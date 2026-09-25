@@ -22,8 +22,8 @@ remain jargon-free. Generated reports and prose do not override the formal sourc
 **Ratified 2026-09-24, not yet implemented:** each derived chapter will also
 close with one labelled argument section, and documented cases will also appear
 in the opening and at the head of each Part (D2 and D3 of *The revision rulings
-D1–D9* below). Parts I and II carry both since items 54 and 55; until items
-56 and 57 land, the paragraph above describes Parts III and IV.
+D1–D9* below). Parts I–III carry both since items 54–56; until item 57
+lands, the paragraph above describes Part IV.
 
 Book 2 owns operation and transition within a declared reference envelope:
 staffing, costs, resources, technology, workflows, capacity, and empirical
@@ -133,6 +133,63 @@ reinstate the retired tooling or workflow.
 
 Grouped by kind. Dates in each heading are the ratification dates; a ruling
 that was later implemented or narrowed carries that supersession inline.
+
+### Item 56 — Part III in the ruled shape, 2026-09-25
+
+Part III now carries rulings D2 and D3. Its labelled opening case, *The
+Brooding Spirit of the Law* (`book-1/part-3-the-brooding-spirit-of-the-law.md`),
+tells *ADM Jabalpur* from the judgment and the amendment that answered it: in
+1976 a four-to-one majority held that while the emergency order stood no
+detainee had standing to seek habeas corpus, the writ surviving while the right
+to use it was suspended; Justice Khanna dissented; and the Forty-fourth
+Amendment put the right to go to court for life and liberty beyond an
+emergency order. Chapters 16–22 each close with an argument section:
+permanent answerability and protection from the exposure against a
+hearing-first protective order (16); a collective executive and a suspensive
+territorial chamber against Westminster government (17); the vote kept through
+conviction and custody against disenfranchisement as punishment (18); uses
+bound to one holding and a person deciding against a tell-us-once state (19);
+an emergency with no power to suspend a right against derogation and a
+supermajoritarian escalator (20); separate stages of access, hearing and
+relief, with voluntary restoration beside adjudication, against a
+prosecution-centred model (21); and an unamendable core beside a demanding open
+route against a fully revisable constitution (22). Derived negation in the
+seven chapters falls from 19.9–34.2 to 7.4–15.4 per 1,000 words, and Chapter
+16 names five people where it named seven.
+
+The plan's structural asks are met. Chapter 16 keeps the recall insight at its
+head, and the case that removes the recalled official's seating leaves its
+prose for the companion. Chapter 17 gains a table of the common bodies — how
+each is formed, what it may do and what checks it — and two overstatements
+are corrected: a failed formation gives the electoral body authority, not a
+duty, to call a fresh election, and no rule ends caretaker authority on a
+deadline finding. Chapter 18's account of why an added grant repeals nothing
+is now a sentence pointing to the method. Chapter 19 follows its pinned cases
+in order and doubles in length. Chapter 22 states ruling D9's core scope,
+lists the fourteen protected provisions the amendment source names, and moves
+its source-editing exhibits and proposal names to the companion.
+
+Checking the arguments' sources against their primary texts corrected three
+legacy entries. The retaliation figures are from the Ethics & Compliance
+Initiative's 2020 survey, reported in 2021, and the unverified 2023 figure is
+dropped. The social-credit travel figures are counts of blocked purchases by
+the end of 2018 — courts barring flights, blacklists barring trains — rather
+than purchases by judgment defaulters. MERICS describes the system as
+fragmented and limited to tracking compliance with laws and regulations. Each
+entry now carries its locator and what was read. Chapter 17 gains one limit so
+the democratic-integrity family states one: the rules authenticate no payment,
+and who controlled one needs its own evidence. Thirty-one new bindings tie the
+opening case and the arguments to the registry (159). The coverage ledger
+holds 268 passages, four renamed limits records keeping their keys. The exact
+prose is `session-drafted, author-approved under delegated approval
+(2026-09-13)`.
+
+No rule, pin or suite changes; the rule count stays at 7,583. All 145
+authoring development tests pass, with five declared ignored, as do the
+sixteen prose-lint, nine book-builder and six companion input unit tests and
+the prose check. `registry/check.py` passes with 222 claims.
+`RIGHTS_VERIFY_JOBS=4 ./verify.sh` passes 90,169 pins across 16,352 cases with
+complete contradiction checks and no findings in 1,214.38s.
 
 ### Item 55 — Part II in the ruled shape, and an ordinary week, 2026-09-25
 
@@ -1371,7 +1428,7 @@ length invariant and the digit rule come to be measured by section rather than
 by file once item 53 builds that tooling. Items 53–59 and 63 implement it.
 **Implemented for Part I 2026-09-25 (item 54):** Chapters 1–6 each close
 with an argument section. **And for Part II the same day (item 55):**
-Chapters 7–15.
+Chapters 7–15; **and for Part III (item 56):** Chapters 16–22.
 
 **D3 — documented cases outside Part V.** Documented, registry-sourced cases may
 appear in the opening (Santoshi Kumari first, with the dispute over her death
@@ -1381,7 +1438,8 @@ life. This supersedes the rule that the historical cases stay in Part V. Items
 46, 47, 54–57 and 60 implement it.
 **Implemented for Part I 2026-09-25 (item 54):** its opening case is *The
 Sports Field at Wallacedene*, and its argument sections carry their cases.
-**And for Part II (item 55):** its opening case is *Unprecedented Injustice*.
+**And for Part II (item 55):** its opening case is *Unprecedented Injustice*;
+**and for Part III (item 56):** *The Brooding Spirit of the Law*.
 
 **D4 — the constitution in plain language, in the companion.** Numbered
 plain-language articles are published in the companion, not printed in the book,
@@ -3635,8 +3693,8 @@ remain three.)
 rulings D1–D9*):** each derived chapter will close with one labelled argument
 section, and documented cases may also appear in the opening, a labelled case
 opening each Part, and those argument sections. The flat register, the ban on
-inner lives and the refusal of composite citizens and dramatised scenes stand. Parts I
-and II carry both since items 54 and 55 (2026-09-25).
+inner lives and the refusal of composite citizens and dramatised scenes stand. Parts
+I–III carry both since items 54–56 (2026-09-25).
 
 **Superseding prose-supply protocol — author-approved 2026-08-20.** Sessions may
 draft the Book 1 manuscript, including its epigraph, opening note, numbered
@@ -7219,7 +7277,7 @@ Note the manifesto's heading convention differs deliberately from the book's: it
   rulings D1–D9*):** each derived chapter will close with one labelled
   first-person argument section, so the seam moves inside the chapter rather
   than disappearing. Derived sections stay flat and derived. The chapters of
-  Parts I and II carry theirs since items 54 and 55 (2026-09-25).
+  Parts I–III carry theirs since items 54–56 (2026-09-25).
 
 - **The method part's scope is sealed — `book-1/method.md`, landed 2026-08-03.** Five
   decisions, each load-bearing: **(a) the filename is unnumbered and must never be

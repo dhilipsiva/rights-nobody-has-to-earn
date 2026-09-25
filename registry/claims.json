@@ -104,18 +104,18 @@
     },
     {
       "id": "gbes-retaliation-rates",
-      "claim": "Among employees who reported misconduct: 79% (US) and a 61% global median said they experienced retaliation (2021 wave); 46% globally in the 2023 wave, consistent with 2020.",
+      "claim": "In the Ethics & Compliance Initiative's 2020 Global Business Ethics Survey, reported in March 2021, 79% of US employees who reported misconduct said they experienced retaliation, against a global median of 61% across the ten countries surveyed.",
       "value": {
-        "us_2021_pct": 79,
-        "global_median_2021_pct": 61,
-        "global_2023_pct": 46
+        "us_2020_pct": 79,
+        "global_median_2020_pct": 61
       },
       "units": "percent of employees who reported misconduct",
-      "source": "Ethics & Compliance Initiative, Global Business Ethics Survey, 2021 and 2023 waves",
-      "retrieved": "2026-08-02",
-      "method": "quoted",
+      "source": "Ethics & Compliance Initiative (Ethics Research Center), The State of Ethics & Compliance in the Workplace: A Look at Global Trends, 2021 Global Business Ethics Survey Report (March 2021), pp. 22-23, 29 and 32; copy hosted by Board Agenda at https://boardagenda.com/wp-content/uploads/2021/04/ECI-2021-State-of-Ethics-and-Compliance-002.pdf",
+      "retrieved": "2026-09-25",
+      "method": "reference",
       "fetch": null,
-      "notes": "Rates among REPORTERS — misreading them as workforce-wide statistics is the error corrected in commit 2e41a05. 61% is a median across the ten 2021-wave countries."
+      "book": "book-1",
+      "notes": "Read the report PDF (a copy hosted by Board Agenda; ECI's own copy was not located). p. 22: 'In 2020, the rate of retaliation against employees for reporting wrongdoing in the U.S. was 79%', up from 44% in 2017; its footnote 18 says the response options changed from Yes/No in 2017 to graded options in 2020, so the trend spans a change of question. p. 23: 'In 2020, the global median for retaliation was 61%'. pp. 29 and 32: over 14,000 employees in 10 countries, about 5,000 in the US and 1,000 in each other country. Rates among employees who reported misconduct, not workforce-wide statistics (the error corrected in commit 2e41a05). The 2021 report describes the 2020 survey, so 'the 2021 wave' in the earlier entry was imprecise. The earlier entry's 2023 global figure of 46% was not verified here and is dropped. The survey concerns employees in workplaces and says nothing about public officials or prosecutions."
     },
     {
       "id": "example-worldbank-electricity-access",
@@ -527,27 +527,27 @@
     },
     {
       "id": "merics-2021-social-credit",
-      "claim": "China's social credit system is fragmented and mostly regulatory — and still the cautionary comparator.",
+      "claim": "MERICS reports that China's Social Credit System is fragmented, regulated by thousands of documents with no clear definition of 'credit', has no unified score rating individual behaviour, and remains limited to tracking compliance with, and enforcement of, laws and regulations.",
       "value": null,
       "units": null,
-      "source": "Drinhausen & Brussee, MERICS report (2021); Brussee, Social Credit, Palgrave (2023), doi:10.1007/978-981-99-2189-8",
-      "retrieved": "2026-07",
+      "source": "Katja Drinhausen and Vincent Brussee, China's Social Credit System in 2021: From fragmentation towards integration, MERICS China Monitor 67 (3 March 2021, updated 9 May 2022), https://merics.org/en/report/chinas-social-credit-system-2021-fragmentation-towards-integration ; Vincent Brussee, Social Credit (Palgrave Macmillan, 2023), doi:10.1007/978-981-99-2189-8",
+      "retrieved": "2026-09-25",
       "method": "reference",
       "fetch": null,
       "book": "book-1",
-      "notes": "Part V: the not-a-social-credit-system answer rests on mechanism differences, not on China's system being mythical."
+      "notes": "Read the MERICS report page's key findings (2026-09-25): 'The flexibility of the system also comes at a cost: fragmentation'; 'regulated by thousands of documents, but there is no clear definition of \"credit\"'; 'There will not be a unified \"Social Credit Score\" that rates individual behaviour'; the system 'remains limited to tracking compliance with, and enforcement of, laws and regulations'; only 10 to 25 per cent of sectoral blacklist records are effectively shared with the central databases. 'Mostly regulatory' in the book paraphrases the last of these. The Brussee monograph was not read. Part V and Chapter 19 use it as the cautionary comparator: the answer rests on mechanism differences, not on China's system being mythical."
     },
     {
       "id": "state-council-2014-plan",
-      "claim": "The 2014 Planning Outline and its enforcement edge: ~23 million ticket purchases blocked for judgment defaulters by 2019.",
+      "claim": "The Guardian reported, citing the National Public Credit Information Centre, that by the end of 2018 Chinese courts had banned would-be travellers from buying flights 17.5 million times and that people on blacklists for social credit offences had been prevented from buying train tickets 5.5 million times.",
       "value": null,
       "units": null,
-      "source": "State Council, Planning Outline GF [2014] No. 21 (China Law Translate); Kuo, The Guardian, 1 March 2019",
-      "retrieved": "2026-07",
+      "source": "Lily Kuo, 'China bans 23m from buying travel tickets as part of social credit system', The Guardian, 1 March 2019, https://www.theguardian.com/world/2019/mar/01/china-bans-23m-discredited-citizens-from-buying-travel-tickets-social-credit-system ; State Council, Planning Outline for the Construction of a Social Credit System, GF [2014] No. 21 (China Law Translate)",
+      "retrieved": "2026-09-25",
       "method": "reference",
       "fetch": null,
       "book": "book-1",
-      "notes": "Part V. The 23m figure counts blocked purchases, not persons — keep the unit straight."
+      "notes": "Read a 2019 Wayback Machine capture of the Guardian article (the Guardian site refused a direct fetch): 'According to the National Public Credit Information Centre, Chinese courts banned would-be travellers from buying flights 17.5 million times by the end of 2018. Citizens placed on black lists for social credit offences were prevented from buying train tickets 5.5 million times.' The figures count blocked purchases, not persons, despite the headline's '23m'; the offences the article lists run from unpaid taxes and fines to minor infractions, so they are wider than judgment defaults. The Planning Outline's text was not re-read here; the id is kept for stability."
     },
     {
       "id": "aadhaar-act-2016-s7",

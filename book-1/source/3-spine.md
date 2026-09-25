@@ -172,7 +172,7 @@ Front matter: `epigraph.md`, `00-opening-note.md`.
 | 14 | Holding a Role in Somebody's Life | `14-holding-a-role-in-somebodys-life.md` | derived | engine | landed |
 | 15 | Arriving and Belonging | `15-arriving-and-belonging.md` | derived | engine | landed |
 | **Part III — The public power that serves it** | | | | | |
-| — | Opening case | — | exempt | — | planned |
+| — | Opening case: The Brooding Spirit of the Law | `part-3-the-brooding-spirit-of-the-law.md` | exempt | — | landed |
 | 16 | Answerability and Authority | `16-answerability-and-authority.md` | derived | engine | landed |
 | 17 | How Public Power Is Built | `17-how-public-power-is-built.md` | derived | engine | landed |
 | 18 | The Vote Conviction Does Not Take | `18-the-vote-conviction-does-not-take.md` | derived | engine | landed |
