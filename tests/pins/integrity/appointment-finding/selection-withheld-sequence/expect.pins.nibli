@@ -85,7 +85,7 @@ observe(IntegrityAdverseReview, IntegrityAdverseRecord, AppointmentSelectionActO
 # => FALSE
 ? obliged(IntegrityAdverseReader, ReviewAndCorrectTheCapturedAppointmentSelection, IntegritySelectionRecord).
 # => TRUE
-? authority(Boss).
+? authority(Tove).
 # => TRUE
 ? person(Hano).
 # => TRUE

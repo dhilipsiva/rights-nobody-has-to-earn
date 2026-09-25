@@ -1799,12 +1799,12 @@
           "purpose": "The prior endpoint cannot retain terminal legal effect in the fresh evaluation."
         },
         {
-          "expression": "match(Vex, CarriedVoid)",
+          "expression": "match(Mael, CarriedVoid)",
           "expected": "FALSE",
           "purpose": "No new carry lets the prior adverse status persist into the successor."
         },
         {
-          "expression": "err(Vex, CarryOmission)",
+          "expression": "err(Mael, CarryOmission)",
           "expected": "FALSE",
           "purpose": "The current model has no materialised successor-status premise from which to name a second-hop omission."
         },
@@ -2235,12 +2235,12 @@
           "purpose": "A conflicted constitutional-lineage binding cannot select a terminal legal endpoint."
         },
         {
-          "expression": "match(Vex, CarriedVoid)",
+          "expression": "match(Mael, CarriedVoid)",
           "expected": "FALSE",
           "purpose": "Adverse carry loses effect when canonical lineage is ambiguous."
         },
         {
-          "expression": "false(Vex)",
+          "expression": "false(Mael)",
           "expected": "FALSE",
           "purpose": "The source cannot choose a convenient lineage version to preserve the adverse consequence."
         }

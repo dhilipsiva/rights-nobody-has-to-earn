@@ -2,13 +2,13 @@
 # Accusations and their actual consequences; every original scenario retained.
 :expect-pins 21
 
-? authority(Boss).
+? authority(Tove).
 # => TRUE
 ? defend(Torvi).
 # => TRUE
 
 # The unsigned allegation cannot defeat this disclosure.
-deceive(Torvi, Boss).
+deceive(Torvi, Tove).
 
 ? defend(Torvi).
 # => TRUE
@@ -51,7 +51,7 @@ cruel(Marn, Sepp).
 
 ? severe(Lalo).
 # => TRUE
-? severe(Don).
+? severe(Faro).
 # => TRUE
 ? severe(Ruk).
 # => TRUE

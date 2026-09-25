@@ -413,7 +413,7 @@ None.
 | kind | evidence role | supports | reference |
 | --- | --- | --- | --- |
 | formal | `sets_boundary` | `RI-13` | `book-1/source/constitution.nibli::unadjudicated accusation and an unperformed remedy are different absences,` |
-| generated | `exposes_gap` | `RI-13` | ``book-1/source/assertion-surface-audit.md::withhold or delete a true `married(Gia, Hex)` entry.`` |
+| generated | `exposes_gap` | `RI-13` | ``book-1/source/assertion-surface-audit.md::withhold or delete a true `married(Gia, Saba)` entry.`` |
 | generated | `exposes_gap` | `RI-13` | `book-1/source/record-integrity-red-team.md::## Flat-snapshot indistinguishability boundary` |
 
 **Acceptance evidence still required**

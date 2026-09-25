@@ -6,7 +6,7 @@
 ? permits(Review, Gia).
 # => TRUE
 
-? permits(Tribunal, Hex).
+? permits(Tribunal, Saba).
 # => TRUE
 
 ? judge(Gia, Credibility_Bela_Finding).
@@ -15,10 +15,10 @@
 ? capture(Gia, Bela, Credibility_Bela_Incident).
 # => TRUE
 
-? judge(Hex, Credibility_Bela_Finding).
+? judge(Saba, Credibility_Bela_Finding).
 # => TRUE
 
-? capture(Hex, Bela, Credibility_Bela_Incident).
+? capture(Saba, Bela, Credibility_Bela_Incident).
 # => TRUE
 
 ? false(Bela).
@@ -47,17 +47,17 @@
 ? false(Dev).
 # => FALSE
 
-# Lupo: the case identifies whose deceit was adjudicated; Mira is untouched.
-? deceive(Lupo, Mira).
+# Edo: the case identifies whose deceit was adjudicated; Mira is untouched.
+? deceive(Edo, Mira).
 # => TRUE
 
 ? false(Mira).
 # => FALSE
 
-? false(Lupo).
+? false(Edo).
 # => TRUE
 
-? rotten(Vex).
+? rotten(Mael).
 # => TRUE
 
 ? permits(Tribunal, Wren).
@@ -92,11 +92,11 @@ observe(Chronicle, Ambi, Epoch_Previous, ClearScope).
 observe(TemporalReview, Ambi, Epoch_Previous, ClearScope).
 carries(Chronicle, Ambi, Epoch_Current, Epoch_Previous, ClearCarry).
 carries(TemporalReview, Ambi, Epoch_Current, Epoch_Previous, ClearCarry).
-authorized(Lupo, ClearStatus, Epoch_Previous).
-observe(Chronicle, Lupo, Epoch_Previous, ClearScope).
-observe(TemporalReview, Lupo, Epoch_Previous, ClearScope).
-carries(Chronicle, Lupo, Epoch_Current, Epoch_Previous, ClearCarry).
-carries(TemporalReview, Lupo, Epoch_Current, Epoch_Previous, ClearCarry).
+authorized(Edo, ClearStatus, Epoch_Previous).
+observe(Chronicle, Edo, Epoch_Previous, ClearScope).
+observe(TemporalReview, Edo, Epoch_Previous, ClearScope).
+carries(Chronicle, Edo, Epoch_Current, Epoch_Previous, ClearCarry).
+carries(TemporalReview, Edo, Epoch_Current, Epoch_Previous, ClearCarry).
 authorized(Partnr, ClearStatus, Epoch_Previous).
 observe(Chronicle, Partnr, Epoch_Previous, ClearScope).
 observe(TemporalReview, Partnr, Epoch_Previous, ClearScope).
@@ -256,35 +256,35 @@ observe(Ambi, Finding_Solo, NoticeEvidenceAccessHearingAndReasons, CredibilityPr
 # => FALSE
 
 # Current disqualification blocks Frisk's proposed finding despite appointment.
-choose(Electorate, Lupo).
+choose(Electorate, Edo).
 
-? false(Lupo).
+? false(Edo).
 # => TRUE
 
-? permits(Review, Lupo).
+? permits(Review, Edo).
 # => TRUE
 
 choose(Convocation, Partnr).
-judge(Lupo, Frisk).
-capture(Lupo, Frisk).
+judge(Edo, Frisk).
+capture(Edo, Frisk).
 judge(Partnr, Frisk).
 capture(Partnr, Frisk).
-cite(Lupo, CredibilityGroundFabricatedRecord, Frisk).
+cite(Edo, CredibilityGroundFabricatedRecord, Frisk).
 cite(Partnr, CredibilityGroundFabricatedRecord, Frisk).
-authorized(Lupo, IndependentReviewer, Frisk).
+authorized(Edo, IndependentReviewer, Frisk).
 authorized(Partnr, IndependentReviewer, Frisk).
 
 list(Finding_Frisk_Chapter, Frisk, Incident_Frisk, CredibilityFinding).
 list(Finding_Frisk_Chapter, CredibilityGroundFabricatedRecord, Evidence_Finding_Frisk_Chapter, CredibilityGroundEvidence).
-judge(Lupo, Finding_Frisk_Chapter).
-capture(Lupo, Frisk, Incident_Frisk).
-cite(Lupo, CredibilityGroundFabricatedRecord, Finding_Frisk_Chapter).
-authorized(Lupo, IndependentReviewer, Finding_Frisk_Chapter).
-observe(Lupo, Finding_Frisk_Chapter, Frisk, CredibilitySubjectScope).
-observe(Lupo, Finding_Frisk_Chapter, Incident_Frisk, CredibilityIncidentScope).
-observe(Lupo, Finding_Frisk_Chapter, CredibilityGroundFabricatedRecord, CredibilityGroundScope).
-observe(Lupo, Finding_Frisk_Chapter, Evidence_Finding_Frisk_Chapter, CredibilityEvidenceScope).
-observe(Lupo, Finding_Frisk_Chapter, NoticeEvidenceAccessHearingAndReasons, CredibilityProcedureScope).
+judge(Edo, Finding_Frisk_Chapter).
+capture(Edo, Frisk, Incident_Frisk).
+cite(Edo, CredibilityGroundFabricatedRecord, Finding_Frisk_Chapter).
+authorized(Edo, IndependentReviewer, Finding_Frisk_Chapter).
+observe(Edo, Finding_Frisk_Chapter, Frisk, CredibilitySubjectScope).
+observe(Edo, Finding_Frisk_Chapter, Incident_Frisk, CredibilityIncidentScope).
+observe(Edo, Finding_Frisk_Chapter, CredibilityGroundFabricatedRecord, CredibilityGroundScope).
+observe(Edo, Finding_Frisk_Chapter, Evidence_Finding_Frisk_Chapter, CredibilityEvidenceScope).
+observe(Edo, Finding_Frisk_Chapter, NoticeEvidenceAccessHearingAndReasons, CredibilityProcedureScope).
 judge(Partnr, Finding_Frisk_Chapter).
 capture(Partnr, Frisk, Incident_Frisk).
 cite(Partnr, CredibilityGroundFabricatedRecord, Finding_Frisk_Chapter).
@@ -303,14 +303,14 @@ observe(Partnr, Finding_Frisk_Chapter, NoticeEvidenceAccessHearingAndReasons, Cr
 # => FALSE
 
 # An independently witnessed carry separately blocks the appointment route.
-authorized(Lupo, VoidStatus, Epoch_Previous).
-observe(Chronicle, Lupo, Epoch_Previous, VoidScope).
-observe(TemporalReview, Lupo, Epoch_Previous, VoidScope).
-carries(Chronicle, Lupo, Epoch_Current, Epoch_Previous, VoidCarry).
-carries(TemporalReview, Lupo, Epoch_Current, Epoch_Previous, VoidCarry).
-rotten(Lupo).
+authorized(Edo, VoidStatus, Epoch_Previous).
+observe(Chronicle, Edo, Epoch_Previous, VoidScope).
+observe(TemporalReview, Edo, Epoch_Previous, VoidScope).
+carries(Chronicle, Edo, Epoch_Current, Epoch_Previous, VoidCarry).
+carries(TemporalReview, Edo, Epoch_Current, Epoch_Previous, VoidCarry).
+rotten(Edo).
 
-? permits(Review, Lupo).
+? permits(Review, Edo).
 # => FALSE
 
 # Spousal conflict is live; the unrelated pair is the positive control.
@@ -616,19 +616,19 @@ observe(Gia, Finding_Dev_Conflict, Examination_Dev_Esa, CredibilityIncidentScope
 observe(Gia, Finding_Dev_Conflict, CredibilityGroundConcealedConflict, CredibilityGroundScope).
 observe(Gia, Finding_Dev_Conflict, Evidence_Finding_Dev_Conflict, CredibilityEvidenceScope).
 observe(Gia, Finding_Dev_Conflict, NoticeEvidenceAccessHearingAndReasons, CredibilityProcedureScope).
-judge(Hex, Finding_Dev_Conflict).
-capture(Hex, Dev, Examination_Dev_Esa).
-cite(Hex, CredibilityGroundConcealedConflict, Finding_Dev_Conflict).
-authorized(Hex, IndependentReviewer, Finding_Dev_Conflict).
-observe(Hex, Finding_Dev_Conflict, Dev, CredibilitySubjectScope).
-observe(Hex, Finding_Dev_Conflict, Examination_Dev_Esa, CredibilityIncidentScope).
-observe(Hex, Finding_Dev_Conflict, CredibilityGroundConcealedConflict, CredibilityGroundScope).
-observe(Hex, Finding_Dev_Conflict, Evidence_Finding_Dev_Conflict, CredibilityEvidenceScope).
-observe(Hex, Finding_Dev_Conflict, NoticeEvidenceAccessHearingAndReasons, CredibilityProcedureScope).
+judge(Saba, Finding_Dev_Conflict).
+capture(Saba, Dev, Examination_Dev_Esa).
+cite(Saba, CredibilityGroundConcealedConflict, Finding_Dev_Conflict).
+authorized(Saba, IndependentReviewer, Finding_Dev_Conflict).
+observe(Saba, Finding_Dev_Conflict, Dev, CredibilitySubjectScope).
+observe(Saba, Finding_Dev_Conflict, Examination_Dev_Esa, CredibilityIncidentScope).
+observe(Saba, Finding_Dev_Conflict, CredibilityGroundConcealedConflict, CredibilityGroundScope).
+observe(Saba, Finding_Dev_Conflict, Evidence_Finding_Dev_Conflict, CredibilityEvidenceScope).
+observe(Saba, Finding_Dev_Conflict, NoticeEvidenceAccessHearingAndReasons, CredibilityProcedureScope).
 observe(Chronicle, Finding_Dev_Conflict, Gia, CredibilityReviewSignerEligibleAtDecisionScope).
 observe(TemporalReview, Finding_Dev_Conflict, Gia, CredibilityReviewSignerEligibleAtDecisionScope).
-observe(Chronicle, Finding_Dev_Conflict, Hex, CredibilityTribunalSignerEligibleAtDecisionScope).
-observe(TemporalReview, Finding_Dev_Conflict, Hex, CredibilityTribunalSignerEligibleAtDecisionScope).
+observe(Chronicle, Finding_Dev_Conflict, Saba, CredibilityTribunalSignerEligibleAtDecisionScope).
+observe(TemporalReview, Finding_Dev_Conflict, Saba, CredibilityTribunalSignerEligibleAtDecisionScope).
 list(Order_Finding_Dev_Conflict, Finding_Dev_Conflict, Epoch_Current, RecordSequence).
 observe(Chronicle, Order_Finding_Dev_Conflict, Finding_Dev_Conflict, RecordStartScope).
 observe(Chronicle, Order_Finding_Dev_Conflict, Epoch_Current, RecordEndScope).

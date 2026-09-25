@@ -728,7 +728,7 @@ fn integration_cases(context: &Context, export: &mut Export, source: &Source) ->
         ("person(Hano)".into(), true),
         ("owe(State, Eats, Hano)".into(), true),
         ("decide(Hano, Ballot)".into(), true),
-        ("authority(Boss)".into(), true),
+        ("authority(Tove)".into(), true),
     ] {
         steps.push_str(&query(&atom, expected));
     }

@@ -1,16 +1,16 @@
 # The Five Joints
 
 The chapters have shown what follows from the constitution when particular
-facts are supplied. That leaves the harder question: why choose these rules?
+facts are recorded. That leaves the harder question: why choose these rules?
 A consistent arrangement can be oppressive, impractical or beside the point.
-A passing check cannot choose the people whose losses matter or establish
-that an institution will serve them.
+A passing check cannot choose the people whose losses matter or show that an
+institution will serve them.
 
 This part is my argument for the design. It examines valuation,
 rotation, coercion, capture and the state. At each joint I ask what the
 strongest objection reaches, what the current mechanism answers, and what a
-credible alternative offers. History supplies evidence about particular
-arrangements. It does not supply a rehearsal of this constitution, and a
+credible alternative offers. History offers evidence about particular
+arrangements. It does not offer a rehearsal of this constitution, and a
 failure elsewhere is not proof that my preferred alternative succeeds.
 
 Imagine your household receiving the food it is owed, living in the shelter
@@ -37,7 +37,7 @@ makes alteration deliberate; it does not make every institutional detail part
 of the unamendable core.
 
 The commitments have a lineage. Henry Shue argued that subsistence is a basic
-right beside security, and that each basic right carries duties to avoid
+right beside security, and that each basic right imposes duties to avoid
 depriving, to protect from deprivation and to aid the deprived.[^shue] Asbjørn
 Eide's studies for the United Nations described obligations to respect, protect
 and fulfil the right to food, which the UN committee on economic rights adopted
@@ -58,14 +58,14 @@ animal protection from the reasons for selecting their present institutions.
 The objection begins with a person whose contribution is poorly seen. How
 does a society acknowledge a lifetime of care without ranking its carer above
 someone who needs care? A uniform public acknowledgment is one possible answer.
-But if its purpose is to reveal neglected work, what does it establish about
+But if its purpose is to reveal neglected work, what does it show about
 the duration, difficulty or cost of that work?
 
 Owen's New Harmony community began in 1825 and dissolved in 1827. His later
 labour exchanges sought a common measure in time, but the hours on their notes
 incorporated market valuations of labour and materials. Calling a unit an hour
 did not remove judgment about unlike products and tasks. That difficulty does
-not establish why New Harmony failed, or that every measurement becomes
+not show why New Harmony failed, or that every measurement becomes
 domination.[^owen]
 A sharper warning concerns exit. Justin Yifu Lin argues that Chinese
 collectives retained a right to withdraw until 1958, and that its removal
@@ -103,7 +103,7 @@ contest consequential decisions. It does not need to add an official badge
 that says who contributed. This choice gives up a common public acknowledgment.
 It also leaves neglected work vulnerable to social disregard. Labour rights,
 care duties and contestable compensation address concrete claims arising from
-that disregard; a yes-or-no badge cannot establish that any of them was met.
+that disregard; a yes-or-no badge cannot show that any of them was met.
 
 The strongest alternative is acknowledgment with no legal consequence. Its
 attraction is that the public can see a contribution while owing everyone the
@@ -111,8 +111,8 @@ same minimum. But a badge can acquire social meaning even when the rules never
 spend it. Its absence can stigmatise someone whose work was unrecorded, and
 withdrawing it for one dishonest act would condemn unrelated teaching or care.
 Making the sanction unspendable limits its material reach; it does not justify
-that breadth. Recognition and its withdrawal cannot supply each other's reason
-to exist.
+that breadth. Recognition and its withdrawal cannot serve as each other's
+reason to exist.
 
 Narrowing the withdrawal to the disputed contribution is more defensible. It
 still needs a record identifying what is disputed and what consequence follows.
@@ -125,9 +125,9 @@ official acts to maintaining a parallel system of public esteem.
 
 The retained credibility finding illustrates the distinction. Deceit,
 fabrication, concealed conflict or withheld evidence bears directly on the power
-to sign a new credibility finding about another person. An effective case blocks
-that act; it does not cancel unrelated work, wages or political rights. Nor does
-it reach the other offices that make adverse findings. An inspector,
+to sign a new credibility finding about another person. A finding in force
+blocks that act; it does not cancel unrelated work, wages or political rights.
+Nor does it reach the other offices that make adverse findings. An inspector,
 investigator or adjudicator in another part of the constitution acts under that
 part's own independence, review and challenge requirements, and a conflict of
 interest proved against the office withholds its permission for the affected
@@ -136,22 +136,22 @@ into a bar from public office and employment, and a deception proved in one
 matter is not evidence of bias in an unrelated one. The cost falls on anyone
 assessed by such an official; their protection is those requirements, not the
 official's record in another matter. Evidence that officials under a credibility
-finding were distorting findings elsewhere would reopen the question. A
-qualified appeal can end the finding, and Appeals owes review of the continuing
-restriction without waiting for a request. A challenge remains available
-independently. A generic forgiveness flag is insufficient.
+finding were distorting findings elsewhere would reopen the question. A properly
+made appellate decision can end the finding, and the appeals body owes review of
+the continuing restriction without waiting for a request. A challenge remains
+available independently. A generic forgiveness flag is insufficient.
 
-The restriction has no automatic expiry in the model. Someone whose review never
+The design gives the restriction no automatic expiry. Someone whose review never
 happens remains unable to sign a credibility finding. That is a serious
 institutional failure, and the duty is no evidence that it was discharged.
 Letting silence restore coercive authority would make failure to review a route
 back to power over a third person. The narrower restriction keeps ordinary life
-and earned claims outside it while requiring a qualified disposition. Evidence
-that this separation cannot protect those awaiting review would require a
-stronger ending and remedy, not a defence of permanent exclusion. Evidence that
-an additional public acknowledgment meets a concrete unmet need without becoming
-a status hierarchy would reopen the case for it. Its absence of formal consumers
-alone would not settle that question.
+and earned claims outside it while requiring a properly made decision to end it.
+Evidence that this separation cannot protect those awaiting review would require
+a stronger ending and remedy, not a defence of permanent exclusion. Evidence
+that an additional public acknowledgment meets a concrete unmet need without
+becoming a status hierarchy would reopen the case for it. Its lack of any legal
+consequence would not by itself settle that question.
 
 ### Scarcity and separate claims
 
@@ -167,7 +167,7 @@ possible, then permits distinctions tied to the resource: urgency,
 accessibility, irreversible harm, harm from interrupted provision, and likely
 benefit after accommodation. Materially equal claims reach rotation or a
 lottery. A high price, a withheld stock or an administrative refusal does not
-itself establish physical scarcity. The evidence must concern the resource,
+itself show physical scarcity. The evidence must concern the resource,
 people affected and reasonable alternatives.
 
 The distinction is Amartya Sen's. His study of the 1943 Bengal famine found
@@ -188,10 +188,10 @@ treatment. If it reproduces social disadvantage, calling it specific to a
 resource does not excuse it.
 
 Chapter 6 makes the choice concrete. One indivisible unit cannot serve both
-claims in the supplied window. Earlier need and larger likely benefit favour
+claims in the recorded period. Earlier need and larger likely benefit favour
 the waiting claim; imminent irreversible harm from interruption and continuity
 favour continuing provision. The manager's reviewed decision gives those last
-two reasons priority for that window. I defend permitting that judgment because
+two reasons priority for that period. I defend permitting that judgment because
 the irreversible loss cannot be repaired simply by giving the unit back later.
 The waiting person's earlier need remains a serious reason against the choice,
 and their unfulfilled claim remains a failure requiring continuity and repair.
@@ -216,7 +216,7 @@ the claimed irreversible harm is unsupported, or that another usable supply
 exists requires reconsideration. Discretion cannot cure unavailable evidence
 by inventing a finer ranking.
 
-The river case in Chapter 13 exposes a different cost. If the supplied premises
+The river case in Chapter 13 exposes a different cost. If the recorded premises
 are true, stopping all existing essential water provision immediately protects
 the river by imposing an immediate human deprivation; unrestricted continuation
 protects today's recipients by spending the river and later people's conditions.
@@ -224,12 +224,12 @@ The design requires the least harmful route for immediate continuity, with a
 bounded transition, alternatives and repair still owed. This is a duty to end
 the collision. It does not declare the river expendable or make present use
 compliant by renaming the breach. A feasible route meeting both protections
-removes the basis for this interim choice. Budget refusal cannot supply it.
+removes the basis for this interim choice. Budget refusal cannot provide it.
 A human floor beneath an ecological ceiling is Kate Raworth's doughnut, whose
 ceiling draws on the planetary boundaries Rockström and colleagues proposed in
 2009.[^doughnut]
 
-That priority concerns immediate human continuity under an established present
+That priority concerns immediate human continuity under a proven present
 incompatibility. It gives no general priority to a human purpose over an animal's
 life or bodily integrity. The fish's protection needs its own reasons and
 authority; a court cannot purchase the river's recovery with an unexamined
@@ -237,9 +237,9 @@ animal intervention. Keeping those claims separate is demanding, but a single
 total of human benefit, ecological gain and animal loss would conceal which
 protection was surrendered and who must answer for it.
 
-Contribution and scarcity require different, contestable decisions. The model
-demonstrates their separation under its supplied premises. It establishes
-neither the adequacy of compensation nor the accuracy of a real allocation. The
+Contribution and scarcity require different, contestable decisions. The rules
+keep them apart on the premises they are given. That shows neither the
+adequacy of compensation nor the accuracy of a real allocation. The
 argument stands only while the distinction protects people better than the
 alternatives; a score that becomes a condition of essentials defeats it.
 
@@ -254,7 +254,7 @@ The kibbutzim make this a question to investigate rather than a verdict to
 announce. Abramitzky's account concerns roughly 270 communities and examines
 shared commitments, selection, monitoring, incentives and exit. Leviatan reports
 that by 2011, roughly three in four kibbutzim had adopted differential salaries.
-Their history supplies evidence of durable cooperation and pressure to change
+Their history offers evidence of durable cooperation and pressure to change
 its terms. It does not isolate leadership rotation as the cause of reform,
 or show that an unconditional minimum requires equal pay.[^kibbutz]
 
@@ -287,8 +287,7 @@ can make their own continuation indispensable. Current power depends on its
 own lawful mandate, scope and end. Recall or succession can end authority
 without ending answerability for its use. A caretaker has essential
 continuity powers, not the ordinary mandate. These are conditions on the
-supplied record; the reasoner does not hold an election or make a successor
-arrive.
+record; the rules do not hold an election or make a successor arrive.
 
 Continuing the last authority until a successor appears is a credible
 alternative. It reduces interruption and the danger of a missing record
@@ -331,7 +330,7 @@ name.[^civil-death]
 Here conviction's direct deprivation is movement. Standing, the material
 floor and political voice do not become rewards for good conduct. Separate
 protective restrictions need their own grounds and authority; conviction
-cannot silently supply them. Neither employment nor a favourable character
+cannot silently provide them. Neither employment nor a favourable character
 judgment buys or extends liberty. The restriction is consequential enough
 without making hunger, homelessness or civic exclusion additional penalties.
 
@@ -353,14 +352,14 @@ an adjudicator finds that less restrictive measures cannot adequately protect
 another person. That is an argument for an available power, not a finding
 that any particular use is necessary or effective. The burden belongs to
 the adjudication, including its treatment of defences and alternatives. The
-recorded judgment and current custody authority are supplied premises, not
-an independent assessment of that burden. The machine does not decide the
+recorded judgment and current custody authority enter as premises, not as
+an independent assessment of that burden. The rules do not decide the
 offence or choose a sentence from an injury report.
 
 Secure confinement needs a further limit. Necessity on its own would leave
 the most restrictive placement available for any offence: an official could
 accept the proved offence and then invoke a prediction to justify the place.
-The gravity ceiling instead asks what harm this case has established. Death,
+The gravity ceiling instead asks what harm has been proved in this case. Death,
 life-threatening injury, serious enduring physical or psychological harm, or
 deliberately inflicted severe suffering can make secure placement eligible.
 Counting victims cannot do that work. Two injuries need not be graver than
@@ -381,11 +380,12 @@ character assessment.
 A simpler rule could leave everything to the individual necessity decision.
 Its advantage is flexibility, including a response to repeated lesser harms.
 Its cost is an open route from a comparatively minor offence to secure
-confinement through a prediction. The explicit alternative tested in the model
-permits secure placement without a qualified finding of grave injury or
-aggravated cruelty. I reject that latitude. Injuries below the ceiling still
-require protection, support, lawful remedies and an individual sentence where its separate grounds are met;
-their number cannot stand in for the missing gravity finding. At the other
+confinement through a prediction. Tested as an explicit variant of the rules,
+that alternative permits secure placement without a properly made finding of
+grave injury or aggravated cruelty. I reject that latitude. Injuries below the
+ceiling still require protection, support, lawful remedies and an individual
+sentence where its separate grounds are met; their number cannot stand in for
+the missing gravity finding. At the other
 extreme, mandatory secure placement for every grave offence discards the
 less restrictive place even where it is sufficient. Neither shortcut gives
 an adequate reason for the additional loss of liberty.
@@ -393,44 +393,44 @@ an adequate reason for the additional loss of liberty.
 The boundary leaves judgment about serious enduring harm and severe suffering.
 Public law, disclosed evidence, the criminal proof standard, counsel, reasons,
 independent review and the custody challenge must govern that judgment. Neither
-a label nor an expert's unexplained score establishes it. A person's existing
+a label nor an expert's unexplained score settles it. A person's existing
 disability, income or social position cannot diminish the significance of the
 harm done to them. Mistaken classification burdens the person confined;
 insufficient protection burdens the person exposed to further harm. Evidence
 that a stated distinction repeatedly misclassifies harms, or that an available
 less restrictive arrangement protects the same rights, is a reason to change
-the classification or refuse that placement. The formal result establishes
-which premises are required; it supplies no empirical proof of protection.
+the classification or refuse that placement. The formal result shows which
+premises are required; it offers no empirical proof of protection.
 
-The custody conclusion requires a case tied to the person, judgment and
-injured person, with current authority on the witnessed constitutional record.
-Missing authority stops that conclusion when the supplied record is evaluated
-afresh. Appellate relief already granted can end it. A custody filing suspends
-the case while independent review is pending, with assistance and a duty to
-hear. A retained subject copy or independent receipt can establish the filing
-without the primary registry's entry. That protection is not a final judgment
-on the merits. The person need not win the appeal before its question can
-interrupt the authority being challenged.
+The custody conclusion requires a case tied to the person, judgment and injured
+person, with current authority, independently witnessed, in the version of the
+record in force. Missing authority stops that conclusion when the record is
+evaluated afresh. Appellate relief already granted can end it. A custody filing
+suspends the case while independent review is pending, with assistance and a
+duty to hear. A copy the person kept, or an independent receipt, can prove the
+filing without the primary registry's entry. That protection is not a final
+judgment on the merits. The person need not win the appeal before its question
+can interrupt the authority being challenged.
 
 In 1979 India's Supreme Court found undertrial prisoners in Bihar held for
 three to ten years without trial for offences that might have carried months of
 punishment, ordered their release on personal bond and held a speedy trial
 implicit in the right to life and liberty.[^undertrials] The formal checks do
-not measure duration or open a cell. The record cannot
-establish that outside time advanced, that a later finding arrived, or that
-an official honoured release. Independent access, review of actual holding, continuing
-care and a duty to secure release address those acts in law. Their
+not measure duration or open a cell. The record cannot show that outside time
+advanced, that a later finding arrived, or that an official honoured release.
+Independent access, review of actual holding, continuing care and a duty to
+secure release address those acts in law. Their
 performance needs outside evidence. A system that keeps people because its
 record stopped changing would violate the purpose of current authority; the
 absence of a new computation would not defend it.
 
 The prisoner and the child expose another distinction. Both are owed the floor;
 custody adds protection and continuity duties. Neither a sentence nor Nell's
-birth-only record supplies evidence of provision. When the child is supplied
-with matching recipient-side receipt and witness evidence, food and shelter
-derive through the same arrival routes available to anyone. A reported holding
-likewise needs separate evidence of its conditions. Neither lawful placement
-nor an entitlement proves a roof reached someone.
+birth-only record is evidence of provision. Suppose a matching receipt and an
+independent witness authorised for the child were recorded: food and shelter
+would then follow through the same arrival routes available to anyone. A
+reported holding likewise needs separate evidence of its conditions. Neither
+lawful placement nor an entitlement proves a roof reached someone.
 
 The cost of confinement nevertheless remains with the person held and with
 people whose lives depend on them. Retaining rights does not reimburse time
@@ -467,15 +467,15 @@ Ownership does not settle the question. The design permits cooperative
 enterprise without giving it an exemption from labour rights, equality or
 scrutiny. The same is true of a public provider or
 private company. Concentrated private power receives duties when a finding
-establishes a particular dependency, essential function or gatekeeping power.
-An ownership label neither establishes those grounds nor defeats them. This
+shows a particular dependency, essential function or gatekeeping power.
+An ownership label neither proves those grounds nor defeats them. This
 keeps the question on what a person can refuse, challenge or leave, rather
 than on an institution's preferred account of itself.
 Elizabeth Anderson describes most workplaces as private governments, whose
 authority over workers they have no say in, and K. Sabeel Rahman argues that
 firms controlling infrastructure many others depend on should be regulated as
 public utilities.[^private-power] The function-specific duties follow that
-line; neither author supplies the finding a particular case needs.
+line; neither author provides the finding a particular case needs.
 
 Exclusive public provision offers a simpler line of responsibility for
 essentials. Entrenching it would also prevent a different provider arrangement
@@ -485,7 +485,7 @@ of plural provision falls on the person sent between an agency and its
 contractor, each blaming the other. Non-delegable continuity and separately
 justified powers of intervention address that evasion. If a mixed arrangement
 repeatedly defeats access or remedy, its ownership freedoms give no reason
-to preserve it. Conversely, public ownership by itself supplies no evidence
+to preserve it. Conversely, public ownership by itself is no evidence
 that provision arrived. The comparison concerns accessible service and
 answerability, not a constitutionally preferred provider label.
 
@@ -505,7 +505,7 @@ mass cancellation of ration cards in Jharkhand for want of an Aadhaar link,
 following a March 2017 order. Muralidharan, Niehaus and Sukhtankar estimate
 that between one and a half and two million legitimate beneficiaries lost
 access at some point during the reforms. Cards and people are different units,
-and the studies do not supply one interchangeable population. The latter study
+and the studies do not describe one interchangeable population. The latter study
 attributes much of the harm to how the transition was managed. Their evidence
 shows why reducing leakage is insufficient as a measure of a welfare reform:
 legitimate access can fall too.[^jharkhand]
@@ -519,7 +519,7 @@ death. The reported cancellation and refusal are enough to make the
 constitutional question urgent.[^santoshi]
 
 Standing attaches before identity reconciliation. Birth, encounter, presence
-or effective control can establish a human subject without a successful
+or effective control can give a human being standing without a successful
 registry match. A temporary handle imports no other person's debts, guilt,
 relationships or authority. Assistance need not wait for the person to make a
 request. The initiation duty and bounded representation route matter
@@ -527,12 +527,12 @@ especially for the child who has nobody recorded to ask on their behalf.
 A service may not turn a disputed identity into a lawful reason to withhold
 the floor.
 
-This does not make omissions observable. Identical supplied records can
-correspond to a real encounter or a fabricated one, to an honest omission or
-a concealed refusal. A reasoner receiving those identical inputs cannot tell
-which outside event occurred. Adding a field that says "true" would reproduce
-the problem. The necessary limit is on what computation can establish from
-its inputs, not on what people may investigate or challenge. Independent
+This does not make omissions observable. Identical records can correspond
+to a real encounter or a fabricated one, to an honest omission or a concealed
+refusal. Anything reasoning from those identical inputs cannot tell which
+outside event occurred. Adding a field that says "true" would reproduce the
+problem. The necessary limit is on what computation can conclude from its
+inputs, not on what people may investigate or challenge. Independent
 contact routes, evidence, assistance and review remain duties precisely
 because their performance cannot be inferred from agreement inside the file.
 
@@ -561,12 +561,12 @@ remedy without assigning inherited guilt to a person. Environmental and animal
 evidence likewise addresses its stated interest and purpose, not the comparative
 worth of human claimants. The cost falls especially on people who need several
 services, cannot repeatedly explain their circumstances, or depend on someone
-else to communicate. Requiring them to carry every paper would transfer the
+else to communicate. Requiring them to bring every paper would transfer the
 burden of privacy to the person least able to bear it. Duties to initiate help,
 provide accessible assistance and preserve care when a provider fails remain
 necessary alongside the record limits.
 
-The competing danger falls on the same person. A joined account can carry a
+The competing danger falls on the same person. A joined account can bring a
 housing dispute into a care decision, or turn the pursuit of help into an
 opportunity for enforcement. The firewall between services and enforcement
 is the one Crépeau and Hastie propose for irregular migrants.[^firewall]
@@ -588,10 +588,10 @@ Appointments require a comparable choice. Letting an elected majority appoint
 reviewers through open confirmation gives voters a clear line of
 responsibility. Professional self-government offers expertise, at the cost
 of a profession controlling entry to its own ranks. This republic divides
-appointment sources, requires positive qualification, staggers nonrenewable
-mandates and limits removal to stated cause. It also prohibits majority
-appointment control by one coalition, because different appointing names do
-not establish different interests. A prohibition is not evidence that the
+appointment sources, requires positive evidence of qualification, staggers
+nonrenewable mandates and limits removal to stated cause. It also prohibits
+majority appointment control by one coalition, because different appointing
+names do not show different interests. A prohibition is not evidence that the
 appointments obey it.
 
 India's Supreme Court shows the other side of the choice. In 2015 it struck
@@ -603,7 +603,7 @@ the profession select itself, the cost this design's divided sources try to
 avoid.
 
 The purpose is scrutiny that the government cannot control through the next
-appointment or a threat of removal. Open competition alone cannot supply that
+appointment or a threat of removal. Open competition alone cannot secure that
 independence if one coalition selects everyone. A nonrenewable mandate removes
 the inducement of reappointment, although it cannot remove ambition or outside
 loyalty. Removal for stated cause allows misconduct to be addressed without
@@ -613,8 +613,8 @@ The costs reach a claimant waiting through a vacancy and voters unable to
 replace a reviewer whose decisions they reject. Professional qualification can
 also become a profession's barrier to entry. Public reasons, challenge and
 divided appointment sources address different parts of those risks; an
-alternate can take over when the selector's failure to act is established.
-None establishes that the people selected are independent in fact. Repeated
+alternate can take over when the selector's failure to act is certified.
+None shows that the people selected are independent in fact. Repeated
 loss of access to remedy, or one coalition controlling nominally separate
 selectors, would count against this arrangement. An elected confirmation
 route or a simpler mixed system that preserved independence while reducing
@@ -635,7 +635,7 @@ I accept the broader starting protection because loss of office must not make
 unfinished scrutiny dangerous for the person pursuing it. Evidence that an
 act-specific record protects that person equally well with fewer delayed
 unrelated custody decisions would favour the alternative. The recall case
-establishes separation between current power and answerability, not a measured
+shows separation between current power and answerability, not a measured
 deterrent effect.
 
 The shield tests whose loss counts while a question is open. The strongest
@@ -649,10 +649,10 @@ The present default protects the discloser during that interval. Compensation
 after retaliatory imprisonment cannot substitute for protection before it.
 
 The protection concerns confinement under a conviction. It neither prevents
-the conviction from being recorded nor supplies an acquittal. Arrest and
+the conviction from being recorded nor amounts to an acquittal. Arrest and
 other protective restrictions need their own grounds and authority.
 
-Protection begins with the disclosure unless an effective deceit finding
+Protection begins with the disclosure unless a deceit finding in force
 applies to that particular exposure.
 
 A prosecution can answer only for what came before it, so a disclosure that both
@@ -665,17 +665,17 @@ caused. The price is that retaliation within a pending case must be met by the
 custody requirements themselves, and that protection for an earlier disclosure
 depends on the case's witnesses dating it honestly: both must agree to remove it
 from that case, and a missing entry keeps it.
-The unrelated-case route requires a finding from qualified, independent reviewers.
-Separate qualification and review functions must positively establish their
-eligibility. The deciding and qualification functions cannot be combined or
-occupied by a party or the prosecuting court. Naming those participants in
-fresh disclosures does not itself disqualify them; an authorised finding of
-actual conflict does, and a favourable certificate cannot cancel it. The
-case finding leaves the disclosure protected elsewhere.
+The unrelated-case route requires a finding from independent reviewers who are
+shown to be eligible. Separate qualification and review functions must
+positively show that eligibility. The deciding and qualification functions
+cannot be combined or occupied by a party or the prosecuting court. Naming those
+participants in fresh disclosures does not itself disqualify them; an authorised
+finding of actual conflict does, and a favourable certificate cannot cancel it.
+The case finding leaves the disclosure protected elsewhere.
 
 Whether a disclosure was deceitful, whether a prosecution is unrelated and
 whether its reviewers are eligible are different questions. Separating them
-prevents a prosecutor from establishing its own independence or using an
+prevents a prosecutor from certifying its own independence or using an
 unrelated conviction to discredit the disclosure. More signatures have no
 value in themselves: a duplicative step that only prolongs the wait would
 need removal or replacement, not a defence in the name of caution.
@@ -683,23 +683,24 @@ need removal or replacement, not a defence in the name of caution.
 A deceit finding needs its own completed case, identifying the subject,
 incident and evidence, with independent reviewers and the procedure and
 eligibility belonging to that decision. A raw accusation does not defeat the
-shield. Otherwise an authority could answer exposure by supplying the very
+shield. Otherwise an authority could answer exposure by entering the very
 accusation against which protection was needed. A finding about one disclosure
 does not give permission to retaliate against another.
 
 This default costs time for a disclosure not shown to follow the charge,
-including time owed to an injured person awaiting a remedy. Separate protection, assistance and civil remedies remain available
-on their own grounds. Missing qualification keeps confinement blocked; it
-does not establish that the prosecution was retaliation or that the injured
-person has received help. A procedure delivering equally prompt protection
+including time owed to an injured person awaiting a remedy. Separate
+protection, assistance and civil remedies remain available on their own
+grounds. A missing eligibility finding keeps confinement blocked; it does not
+show that the prosecution was retaliation or that the injured person has
+received help. A procedure delivering equally prompt protection
 with fewer delayed unrelated custody decisions would weaken the argument for
 this choice. The comparison must count missed retaliation as well as delay.
 
 The consequential records remain the constitutional source and the facts
-supplied to it. The source can be inspected and its represented consequences
+given to it. The source can be inspected and its represented consequences
 executed. A change still requires constitutional justification; passing a
 repository check is not democratic approval. The amendment records and
-source comparisons establish only the specified connections and checks,
+source comparisons show only the specified connections and checks,
 not the justice of every candidate rule or a universal proof that a protected
 promise survives every future change. Whoever operates the system must not
 turn a successful calculation into authority to enact its inputs.
@@ -711,7 +712,7 @@ effect on its source's record, and the reviewer it names owes prompt review and
 can withdraw it. An act that restricts, takes, confines, finds against somebody
 or gives one person power over another still waits for its independent attesters
 and reviewer. The cost of speed falls where help was given wrongly: a provider
-or public body carries a duty until review withdraws it. The slower route costs
+or public body bears a duty until review withdraws it. The slower route costs
 whoever waits for an order that protects one person by restricting another, and
 I accept that cost because an adverse act done wrongly is harder to undo than
 help given wrongly. Help given on one record never becomes the completed record
@@ -739,10 +740,10 @@ body responsible for every essential while giving that body a complicated
 set of limits. If the limits prevent provision, the person waiting is not
 helped by the precision with which the failure can be named.
 
-Historical experience supplies no single answer about the state's role. Eden
+Historical experience offers no single answer about the state's role. Eden
 Medina's account of Chile's Cybersyn describes an economic coordination
 project using an existing telex network under Allende's government. The coup
-ended the project; that political ending cannot establish how the design would
+ended the project; that political ending cannot show how the design would
 have performed over time.[^cybersyn] Auroville presents a different relation.
 The Indian state's intervention and the Auroville Foundation Act placed its
 governance within a statutory framework. In its 2025 judgment in *Auroville
@@ -752,7 +753,7 @@ Residents' Assembly. It distinguished consultation when the master plan was
 formulated from authority to implement the approved plan. A community's
 preferred constitution was not the whole law governing it.[^auroville]
 
-Switzerland's WIR, founded in 1934, supplies another case: a complementary
+Switzerland's WIR, founded in 1934, offers another case: a complementary
 credit arrangement within a national legal and monetary system. Stodder
 examines countercyclical patterns in its activity. Its persistence does not
 identify every reason for state tolerance or predict the treatment of a
@@ -790,7 +791,7 @@ estimated association with electoral democracy is negative after income
 adjustment, with uncertainty calculated using conventional standard errors.
 A statistical threshold cannot turn that result into a protected minimum.
 Nor would one significant and one nonsignificant result, by themselves,
-establish a difference between estimates. Gelman and Stern explain that
+show a difference between estimates. Gelman and Stern explain that
 distinction.[^measurement]
 
 Comparable observations over time, defensible causal assumptions and measures of
@@ -815,7 +816,7 @@ resources themselves supports it: Elinor Ostrom found that long-enduring
 commons shared rules fitted to local conditions, collective choice, monitoring
 and accessible conflict resolution, observed practices rather than
 guarantees.[^commons] Otherwise the cost of local autonomy
-would fall on a resident whose region supplied less of the same entitlement.
+would fall on a resident whose region provided less of the same entitlement.
 The cost of division falls on people sent between offices that deny
 responsibility. Review of competence, the last uncontested holder and bounded
 interim protection keep that dispute from creating a lawful gap in the floor.
@@ -876,7 +877,7 @@ keeps an unpopular government in office while opponents cannot agree on a
 successor. Persistent failure to assign responsibility or act within lawful
 deadlines would favour a prime minister and cabinet that preserved the same
 limits. Bounded caretaker authority prevents deadlock from becoming a new
-policy mandate; it does not establish effective administration.
+policy mandate; it does not guarantee effective administration.
 
 The non-executive Civic President poses a smaller version of the same choice.
 A parliamentary speaker or authorised officer could perform formal acts.
@@ -885,7 +886,7 @@ hands outside the executive, while the President has no authority to frustrate
 a certified democratic result. It adds an appointment to fill and a stage
 that can delay completion. Finite selection and alternate routes limit that leverage.
 If an existing independent office could perform the same bounded functions
-without concentrating control, preserving a separate title would supply no
+without concentrating control, preserving a separate title would be no
 reason to reject the simpler arrangement.
 
 ### Residence and political membership
@@ -909,8 +910,8 @@ permissible. Robert Goodin's principle of enfranchising all affected interests
 reaches much further, toward everyone a decision might affect, and is the
 strongest alternative to drawing the line at residence.[^franchise]
 
-The boundary still costs a former resident who has voluntarily established
-a home elsewhere but retains family, property or an intention to return.
+The boundary still costs a former resident who has voluntarily made a home
+elsewhere but retains family, property or an intention to return.
 Petition, protection and the right of return preserve claims, but they are
 not substitutes for a ballot there. I give present residents the decision
 because they share the continuing government of the place. If the boundary
@@ -925,7 +926,7 @@ at the residence desk.
 Residence does not make every affected person a voter. Children retain
 expression, participation and protection without the adult ballot; people
 affected beyond the border retain claims without gaining electoral weight.
-The membership argument establishes a reason to include adult residents,
+The membership argument gives a reason to include adult residents,
 not a claim that a ballot exhausts political voice or every legitimate claim.
 Membership in a collective works the same way: belonging to an Indigenous people
 or a minority community cannot cost a person the rights every resident holds.
@@ -942,8 +943,8 @@ constitution permits money, vouchers and insurance as instruments; it keeps
 the obligation tied to usable essentials. Otherwise a price increase, an
 inaccessible service or a monopoly's refusal remains the recipient's loss.
 The choice imposes more responsibility on public bodies and more disputes
-about adequacy. A cash route that reliably supplies accessible provision with
-less intrusion can fulfil the duty. Its payment alone cannot establish
+about adequacy. A cash route that reliably secures accessible provision with
+less intrusion can fulfil the duty. Its payment alone cannot show
 success when the essential remains unreachable.
 
 Public funding has a cost that no language of entitlement removes: compulsory
@@ -952,7 +953,7 @@ the child without a contributor dependent on somebody choosing to pay. I
 choose public responsibility financed according to capacity to contribute,
 subject to democratic control and challenge. Protection of subsistence,
 secure housing and remedy limits collection; it does not make collection
-voluntary. Fiscal evidence must establish what the available tax base and
+voluntary. Fiscal evidence must show what the available tax base and
 real resources can sustain. An entitlement cannot prove its own feasibility.
 
 A constitutional balanced-budget rule offers a simple restraint against passing
@@ -966,7 +967,7 @@ binds as written, whatever the reason for the borrowing it forbids. The design
 permits borrowing under legislative authority, reporting, audit and common
 resource limits. Debt-service burdens, creditor dependence and displaced
 necessary investment would count against how that discretion was used. Refusing
-a constitutional numerical ceiling supplies neither a sustainable debt level nor
+a constitutional numerical ceiling provides neither a sustainable debt level nor
 permission to ignore the evidence.
 
 When a tier under-delivers at scale, individual duties multiply without
@@ -995,7 +996,7 @@ specified rights and subjects exceptional measures to independent review.
 Article 4 of the International Covenant on Civil and Political Rights
 illustrates a bounded derogation framework: a proclaimed emergency threatening
 the life of the nation, strict necessity, protected rights and notification.
-Its existence does not establish how any particular emergency was handled.
+Its existence does not show how any particular emergency was handled.
 The choice is not between this republic and an unchecked executive.[^derogation]
 India shows what a suspension can reach. In 1976 its Supreme Court held that,
 while the presidential order stood, no detainee could seek habeas corpus even
@@ -1018,7 +1019,7 @@ continuity and repair; declaring an emergency cannot convert the unmet claim
 into something no longer owed. Narrow powers can respond to a changed hazard
 without making the general emergency finding a licence to lower the protected
 baseline. That is the reason for requiring a ground for each measure even
-after the emergency itself has been established.
+after the emergency itself has been shown to exist.
 
 The cost also reaches people exposed to the hazard: some responses remain
 unavailable even when an executive considers them useful. The necessary
@@ -1027,9 +1028,10 @@ harms, alternatives and means of correction. Speed alone cannot distinguish
 help from a quickly executed mistake. If remote proceedings, alternates or
 bounded measures cannot meet an identified need, the constitutional route
 requires repair, including a narrower new authority where justified. A label
-of emergency cannot supply the missing argument or prolong its claimant's
-mandate. A model's refusal of an unsupported order establishes no successful
-response; review, cessation, compensation and continued care remain acts owed.
+of emergency cannot provide the missing argument or prolong its claimant's
+mandate. That the rules refuse an unsupported order is no evidence of a
+successful response; review, cessation, compensation and continued care remain
+acts owed.
 
 ### What a majority may not remove
 
@@ -1099,15 +1101,15 @@ welfare and independent prior review still govern uses requiring exceptional
 justification. The costs reach people whose work, food practices or customs
 rely on a prohibited use. Their essentials, subsistence claims, cultural and
 Indigenous rights require their own protection and least restrictive
-accommodation; they do not make avoidable severe harm harmless. Neither does
-animal protection establish that a replacement livelihood or food supply
+accommodation; they do not make avoidable severe harm harmless. Nor does
+animal protection show that a replacement livelihood or food supply
 has reached them. The water-and-river case above keeps human provision and
 ecological duties alive together instead of resolving their conflict by
 declaring one claimant worth less.
 
 Entrenchment accordingly needs review of an amendment's actual effects,
 separately for the human and animal cores, with reasons and challenge. A
-favourable label cannot answer an established breach. Conversely, calling
+favourable label cannot answer a proven breach. Conversely, calling
 one arrangement indispensable to a right is a claim to examine, not a power
 to forbid every substitute. Evidence that a core's interpretation blocks
 equally protective reforms requires correction of that interpretation and
@@ -1121,8 +1123,8 @@ The proposal leaves an operating burden to meet.
 No provider form, household relation, contract or delegated function
 removes the public responsibility. Offer, accessible provision, receipt,
 challenge, continuity and remedy remain distinct requirements. A recorded duty
-does not supply the next act, and independently attested receipt does not
-establish a service system's capacity. Book 2's task is to make an operating
+does not perform the next act, and independently attested receipt does not
+show a service system's capacity. Book 2's task is to make an operating
 account answer those demands with resources and evidence. It cannot turn a
 constitutional defect into a staffing question or make an unmet entitlement
 count as fulfilment.
@@ -1135,15 +1137,15 @@ claim is that a person does not have to earn standing or essentials and that
 public power must answer for the burdens it imposes. Its means remain open
 to challenge where a better arrangement can protect the same commitments.
 
-The named people in the formal cases have no supplied inner lives. Giving
+The named people in the formal cases have no recorded inner lives. Giving
 Nell fear or Hano relief would add evidence the cases do not contain. Their
 limited records test consequences; they neither portray complete human lives
 nor stand in for people who have lived under this proposal. The kitchen is
 imagined. The historical cases are documented experiences under other
-arrangements. None supplies testimony from a society operating these rules.
+arrangements. None offers testimony from a society operating these rules.
 
 The [claims registry](../registry/claims.json) records the empirical claims,
-sources, dates, units and qualifications. The democracy calculation includes
+sources, dates, units and caveats. The democracy calculation includes
 its script and bundled inputs so a reader can repeat it. The registry's
 claims are public domain; source publications and the data snapshot retain
 their own terms. A locator makes evidence inspectable, not true by decree.
@@ -1155,7 +1157,7 @@ restriction with lawful limits, retained rights, review and actual release
 when authority ends. A rule can state those demands and expose a consequence
 that violates them. A person still has to meet them. That is what the second
 book must account for, and what no favourable verdict about this one can
-supply.
+provide.
 
 The optional method that follows explains how the formal checks work and
 where their conclusions stop.

@@ -561,7 +561,7 @@ fn appointment_cases(
     )?;
     let tag = format!("contradict({}, DemocraticIntegrityAuthorization)", map["$record"]);
     let unaffected = |pins: &mut String| {
-        pins.push_str(&outcome("authority(Boss)", true));
+        pins.push_str(&outcome("authority(Tove)", true));
         pins.push_str(&outcome("person(Hano)", true));
         pins.push_str(&outcome("decide(Hano, Ballot)", true));
         pins.push_str(&outcome("owe(State, Eats, Hano)", true));
@@ -737,7 +737,7 @@ fn integration_cases(context: &Context, export: &mut Export, source: &Source) ->
         pins.push_str(&format!("{facts}\n"));
         pins.push_str(&outcome(&tag, true));
         pins.push_str(&outcome(&authority, false));
-        pins.push_str(&outcome("authority(Boss)", true));
+        pins.push_str(&outcome("authority(Tove)", true));
         pins.push_str(&outcome("person(Hano)", true));
         pins.push_str(&outcome("decide(Hano, Ballot)", true));
         pins.push_str(&outcome("owe(State, Eats, Hano)", true));

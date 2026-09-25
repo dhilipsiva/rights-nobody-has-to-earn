@@ -129,5 +129,5 @@ observe(KnowledgeRestrictionDefectReview, KnowledgeRestrictionDefectRecord, NoAd
 # => TRUE
 ? decide(Hano, Ballot).
 # => TRUE
-? authority(Boss).
+? authority(Tove).
 # => TRUE

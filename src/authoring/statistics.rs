@@ -672,7 +672,7 @@ fn integration_cases(context: &Context, export: &mut Export, source: &Source) ->
             ("decide(Hano, Ballot)", true),
             // Custody supplies a protection duty, not a record of speech.
             ("expresses(Hano)", false),
-            ("authority(Boss)", true),
+            ("authority(Tove)", true),
             ("false(StatisticsParticipant)", false),
             ("prisoner(StatisticsParticipant)", false),
             ("lose(Points, StatisticsParticipant)", false),

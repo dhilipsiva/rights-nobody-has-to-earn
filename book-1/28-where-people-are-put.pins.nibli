@@ -55,11 +55,11 @@
 ? building(HighSec, Lalo).
 # => TRUE
 
-? severe(Don).
+? severe(Faro).
 # => TRUE
-? at(Don, PlacementHome).
+? at(Faro, PlacementHome).
 # => FALSE
-? building(HighSec, Don).
+? building(HighSec, Faro).
 # => TRUE
 
 ? err(Ruk, Placement).
@@ -98,7 +98,7 @@
 # => FALSE
 ? dwell(Nando).
 # => FALSE
-? dwell(Don).
+? dwell(Faro).
 # => FALSE
 
 ? dwell(Bela).

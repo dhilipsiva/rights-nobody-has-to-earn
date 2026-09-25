@@ -88,8 +88,8 @@ keep remedy and execution powers joined to the exact reviewed result consumed.
 | Variant | Deleted statement | Tested consequence |
 |---|---|---|
 | `no-person-line` | Prisoner-to-person standing rule | A heresy rule can load and make the population imprisonable for belief. |
-| `no-public-court` | `public(Court).` | Court answerability and Sly's shield disappear. |
-| `no-choose-boss` | `choose(Electorate, Boss).` | Boss's answerability disappears and the whistleblower Rebel is confined. |
+| `no-public-court` | `public(Court).` | Court answerability and Lior's shield disappear. |
+| `no-choose-tove` | `choose(Electorate, Tove).` | Tove's answerability disappears and the whistleblower Iris is confined. |
 | `no-first-contact-standing` | First-contact standing rule | An unregistered contact loses that standing root, floor, and State debt; other roots remain controls. |
 
 ## Liberty and ecological fixtures

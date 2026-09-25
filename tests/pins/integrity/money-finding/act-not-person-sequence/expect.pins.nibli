@@ -89,7 +89,7 @@ observe(IntegrityAdverseReview, IntegrityAdverseRecord, OfficeOrCandidacyActOnly
 # => TRUE
 ? authority(FSBOD_06, FSPOW_036, IntegrityOfficeRecord).
 # => FALSE
-? authority(Boss).
+? authority(Tove).
 # => TRUE
 ? person(Hano).
 # => TRUE

@@ -70,7 +70,7 @@ class ExecutableInputs(unittest.TestCase):
     def test_later_release_and_conflict_premises_are_not_in_earlier_records(self):
         self.assertFalse(any('Chapter29_Hano_Completion' in s for s in self.cases['hano-release:0']['record']))
         self.assertTrue(any('Chapter29_Hano_Completion' in s for s in self.cases['hano-release:1']['record']))
-        conflict='observe(ShieldAppointmentsReview, Case_Rex, Appeals, ConflictedShieldReviewerScope).'
+        conflict='observe(ShieldAppointmentsReview, Case_Dara, Appeals, ConflictedShieldReviewerScope).'
         self.assertNotIn(conflict,self.cases['rex:2']['record'])
         self.assertIn(conflict,self.cases['rex:3']['record'])
 

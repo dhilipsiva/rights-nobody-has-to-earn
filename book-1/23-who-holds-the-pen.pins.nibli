@@ -152,28 +152,28 @@ observe(CustodyIntakeAudit, Case_Voss, NoHolderPermissionNoRetaliationAndImmedia
 :refuse reasoning /declared derived-only/
 permits(Review, Sock).
 
-# "Boss keeps standing permanently and loses the credential immediately."
-? choose(Electorate, Boss).
+# "Tove keeps standing permanently and loses the credential immediately."
+? choose(Electorate, Tove).
 # => TRUE
 
-? broken(Boss).
+? broken(Tove).
 # => TRUE
 
-? authority(Boss).
+? authority(Tove).
 # => TRUE
 
-? permits(Review, Boss).
+? permits(Review, Tove).
 # => FALSE
 
-# "Vex was also seated, and was never recalled — but Vex was voided in an
-#  earlier period. Vex has no pen either."
-? choose(Electorate, Vex).
+# "Mael was also seated, and was never recalled — but Mael was voided in an
+#  earlier period. Mael has no pen either."
+? choose(Electorate, Mael).
 # => TRUE
 
-? rotten(Vex).
+? rotten(Mael).
 # => TRUE
 
-? permits(Review, Vex).
+? permits(Review, Mael).
 # => FALSE
 
 # "On the account so far, Nia should be a prisoner — the injury, the judgment,

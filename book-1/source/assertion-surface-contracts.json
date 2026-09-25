@@ -900,9 +900,9 @@
       "withholding_deletion_harm": {
         "operation": "withhold_or_delete",
         "operations": [
-          "delete `broken(Boss)`"
+          "delete `broken(Tove)`"
         ],
-        "effect": "Boss's Review pen reappears from the surviving seating fact.",
+        "effect": "Tove's Review pen reappears from the surviving seating fact.",
         "target": "permits",
         "evidence_ref": "book-1/source/constitution.nibli::choose(Convocation, $a) & match($a, CarriedClear) & ~match($a, CarriedVoid) & ~broken($a) -> permits(Tribunal, $a)"
       },
@@ -979,9 +979,9 @@
       "withholding_deletion_harm": {
         "operation": "withhold_or_delete",
         "operations": [
-          "withhold or delete `carries(TemporalReview, Vex, Epoch_Current, Epoch_Previous, VoidCarry)`"
+          "withhold or delete `carries(TemporalReview, Mael, Epoch_Current, Epoch_Previous, VoidCarry)`"
         ],
-        "effect": "Vex's effective carried void and re-derived `false` disappear and a CarryOmission error appears. Positive carried clearance still prevents the missing witness from restoring a public pen.",
+        "effect": "Mael's effective carried void and re-derived `false` disappear and a CarryOmission error appears. Positive carried clearance still prevents the missing witness from restoring a public pen.",
         "target": "match",
         "evidence_ref": "book-1/source/constitution.nibli::# when both independent witnesses report the same predecessor-to-successor"
       },
@@ -1056,9 +1056,9 @@
       "withholding_deletion_harm": {
         "operation": "withhold_or_delete",
         "operations": [
-          "delete `choose(Electorate, Boss)`"
+          "delete `choose(Electorate, Tove)`"
         ],
-        "effect": "Boss ceases to be an authority, Rebel's shield disappears, and Rebel is convicted.",
+        "effect": "Tove ceases to be an authority, Iris's shield disappears, and Iris is convicted.",
         "target": "authority",
         "evidence_ref": "book-1/source/constitution.nibli::choose(Electorate, $o) -> authority($o)"
       },
@@ -1290,7 +1290,7 @@
       "cheapest_harm": {
         "operation": "assert",
         "operations": [
-          "assert `deceive(Rebel, Boss)`"
+          "assert `deceive(Iris, Tove)`"
         ],
         "effect": "These legacy raw writes or omissions have no constitutional consequence under the current case-bound rules.",
         "target": "none",
@@ -1299,7 +1299,7 @@
       "withholding_deletion_harm": {
         "operation": "withhold_or_delete",
         "operations": [
-          "delete `deceive(Lupo, Mira)`"
+          "delete `deceive(Edo, Mira)`"
         ],
         "effect": "These legacy raw writes or omissions have no constitutional consequence under the current case-bound rules.",
         "target": "none",
@@ -1412,7 +1412,7 @@
       "withholding_deletion_harm": {
         "operation": "withhold_or_delete",
         "operations": [
-          "withhold `forgive(Appeals, Vex)` from an otherwise valid expungement"
+          "withhold `forgive(Appeals, Mael)` from an otherwise valid expungement"
         ],
         "effect": "These legacy raw writes or omissions have no constitutional consequence under the current case-bound rules.",
         "target": "none",
@@ -1713,7 +1713,7 @@
       "cheapest_harm": {
         "operation": "assert",
         "operations": [
-          "assert `married(Gia, Hex)`"
+          "assert `married(Gia, Saba)`"
         ],
         "effect": "The record gains a private married label, but Bela’s decision is unchanged because independence requires affirmative case-bound authorised records.",
         "target": "prevents",
@@ -1722,7 +1722,7 @@
       "withholding_deletion_harm": {
         "operation": "withhold_or_delete",
         "operations": [
-          "withhold or delete a true `married(Gia, Hex)` entry"
+          "withhold or delete a true `married(Gia, Saba)` entry"
         ],
         "effect": "The relationship record becomes incomplete, but the absence cannot prove independence or change the voiding result.",
         "target": "prevents",
@@ -2026,7 +2026,7 @@
         "operations": [
           "assert `public(Pax)`"
         ],
-        "effect": "Pax becomes an authority; Don's existing show fact now creates a shield and suppresses conviction.",
+        "effect": "Pax becomes an authority; Faro's existing show fact now creates a shield and suppresses conviction.",
         "target": "authority",
         "evidence_ref": "book-1/source/constitution.nibli::public($o) -> authority($o)"
       },
@@ -2228,9 +2228,9 @@
       "withholding_deletion_harm": {
         "operation": "withhold_or_delete",
         "operations": [
-          "delete `rotten(Vex)`"
+          "delete `rotten(Mael)`"
         ],
-        "effect": "Deleting the raw carry can remove the matched credential restriction and expose carry forgery. Vex's separately recorded personal credibility case remains effective; an appointment still needs positive clear history.",
+        "effect": "Deleting the raw carry can remove the matched credential restriction and expose carry forgery. Mael's separately recorded personal credibility case remains effective; an appointment still needs positive clear history.",
         "target": "match",
         "evidence_ref": "book-1/source/constitution.nibli::Article 4: Findings and prospective signatures"
       },
@@ -2266,9 +2266,9 @@
       "withholding_deletion_harm": {
         "operation": "withhold_or_delete",
         "operations": [
-          "delete `show(Rebel, Disclosure_Rebel_Boss, Boss)`"
+          "delete `show(Iris, Disclosure_Iris_Tove, Tove)`"
         ],
-        "effect": "Rebel's shield disappears and the conviction derives.",
+        "effect": "Iris's shield disappears and the conviction derives.",
         "target": "defend",
         "evidence_ref": "book-1/source/constitution.nibli::show($w, $incident, $o) & authority($o) & ~false($w, $incident) -> defend($w)"
       },
@@ -2297,7 +2297,7 @@
       "cheapest_harm": {
         "operation": "assert",
         "operations": [
-          "assert `sibling(Gia, Hex)`"
+          "assert `sibling(Gia, Saba)`"
         ],
         "effect": "The record gains a private sibling label, but Bela’s decision is unchanged because independence requires affirmative case-bound authorised records.",
         "target": "prevents",
@@ -2306,7 +2306,7 @@
       "withholding_deletion_harm": {
         "operation": "withhold_or_delete",
         "operations": [
-          "withhold or delete a true `sibling(Gia, Hex)` entry"
+          "withhold or delete a true `sibling(Gia, Saba)` entry"
         ],
         "effect": "The relationship record becomes incomplete, but the absence cannot prove independence or change the voiding result.",
         "target": "prevents",

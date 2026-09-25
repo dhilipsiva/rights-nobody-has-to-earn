@@ -217,41 +217,15 @@ unimplemented until the items named here land.
 
 ## Ordered revision backlog
 
-Work in this order: items 51–52, which repair and prepare; items
+Work in this order: item 52, which prepares; items
 53–63 carry the structure and the rewrite under the ratified rulings; item 64
 finishes production, 65 closes the revision, and 66 is optional. Numbering
-continues from items 01–33, which `CLAUDE.md` records; items 34–50 and 67–72
+continues from items 01–33, which `CLAUDE.md` records; items 34–51 and 67–72
 are complete and recorded there too. Chapter numbers refer to the [current
 reading sequence](book-1/contents.json), which the plan also uses, until item 53
 changes it.
 
 ### Prose that does not wait for the structure
-
-- [ ] **51. Settle the vocabulary and the cast, and apply them.**
-
-  **Scope:** all ordered inputs, the cast and its pins, and the lint's lists;
-  plan §6.2 and §6.4.
-
-  Apply the plan's replacements in reader prose. "Derive" becomes "follows"
-  or "the rules conclude"; "supplied" becomes "recorded" or "given"; a
-  "qualified" or "effective" finding becomes one "properly made" or "in
-  force"; "reader", for an institution, becomes "the responding office"; "pen"
-  and "credential" become "authority to sign findings"; "lease" becomes
-  "custody authorisation and its review date"; "window" becomes "period"; and
-  "selected current record" becomes "the version in force". Carry mechanics
-  move to the method. Harness names (Targ4, Nogra, Nogrb, Partnr, Sock, the
-  Amend_ proposals and the rest) and institutional fixtures become
-  descriptions in prose, while the pins keep them, as item 27 did. Names that
-  prejudge the case, Sly, Boss and Rebel, and Vex, Hex, Rex, Lupo and Don
-  after checking, change in the cast and pins as well, because neutrality is
-  a reason of substance: take a census first and move every locator. Choose a
-  stable recurring cast of fifteen or fewer whose facts do not change between
-  chapters, without assembling separate cases into one invented life. When a
-  case changes the facts, write "Suppose instead…" or use another person.
-
-  **Done when:** the lint's lists match the chosen vocabulary and cast,
-  renamed identifiers leave the suites, coverage, receipts and reference
-  tests passing, and no qualification is lost.
 
 - [ ] **52. State the general limits once, and keep only each chapter's own.**
 

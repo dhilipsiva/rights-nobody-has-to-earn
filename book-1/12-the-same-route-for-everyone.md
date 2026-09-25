@@ -23,10 +23,10 @@ on association. It also covers denied accommodation, imposed segregation,
 inferior parallel provision, harassment through a grave act or cumulative
 pattern, and retaliation for complaining. A single comparator is not required.
 
-The proceeding must identify a recognised form. Quillon's entry naming
+The proceeding must identify a recognised form. A witness's entry naming
 retaliation matches the permitted vocabulary; an invented form does not. This
-keeps the formal route tied to its defined claims. It does not establish that
-all discrimination has been identified or that any allegation is true.
+keeps the formal route tied to its defined claims. It does not show that all
+discrimination has been identified or that any allegation is true.
 
 ## Who is bound, and where private life stays private
 
@@ -51,10 +51,11 @@ purpose, evidential fit, necessity, the least discriminatory effective means
 and proportionality. Neither test may balance away the protected core.
 
 A credible barrier or group pattern can shift the burden in a remedial equality
-proceeding. It cannot reverse a criminal burden or establish guilt. The pattern
-case permits the claimant to pursue relief and obliges the reader to hear it; no
-confinement or credibility finding follows for the claimant. The case also
-produces no confinement or credibility finding for Cira, the comparison subject.
+proceeding. It cannot reverse a criminal burden or prove guilt. The pattern
+case permits the claimant to pursue relief and obliges the responding office
+to hear it; no confinement or credibility finding follows for the claimant.
+The case also produces no confinement or credibility finding for Cira, the
+comparison subject.
 
 ## Accessibility makes rights usable
 
@@ -71,12 +72,13 @@ desk's budget. If the provider genuinely cannot make the adjustment, public
 continuity must secure an equivalent alternative without making the person
 start again.
 
-Distinct source, evidence and review attesters, a challenge reader and an
-independent alternate, separate from the actor and the person, complete the
-record. It produces a duty to provide the adjustment or secure the alternative,
-permission for the person to use the right with it, and the alternate's
-continuity duty. These conclusions derive without a personhood entry for the
-requester and without a credibility finding or prisoner conclusion.
+Distinct source, evidence and review attesters, an office that must answer
+challenges and an independent alternate, separate from the actor and the
+person, complete the record. It produces a duty to provide the adjustment or
+secure the alternative, permission for the person to use the right with it,
+and the alternate's continuity duty. These conclusions follow without a
+personhood entry for the requester and without a credibility finding or
+prisoner conclusion.
 
 The adjustment does not wait for all of them. Because it only gives the person
 what the provider already owes, the source's record alone makes the duty and the
@@ -90,8 +92,8 @@ The available barrier kinds also cover sensory, cognitive, linguistic, digital,
 geographic, financial and procedural obstacles. An unrecognised kind cannot
 complete the record. A missing accommodation record is not itself proof of
 withholding, and the equality remedy must itself be accessible. Equal standing
-can require unequal resources; the model identifies duties but does not supply
-those resources or establish that an adjustment arrived.
+can require unequal resources; the rules identify duties but do not provide
+those resources or show that an adjustment arrived.
 
 ## Patterns without verdicts
 
@@ -137,8 +139,8 @@ intended recipients into people entitled to less.
 Public institutions must repair continuing historical barriers while preserving
 official provenance and public answerability. Affected people, chosen
 supporters, qualified associations and the independent rights advocate may
-initiate review. A request creates the reader's duty without the acting body's
-permission; it does not decide the claim.
+initiate review. A request creates the responding office's duty without the
+acting body's permission; it does not decide the claim.
 
 A positive finding that the deadline passed without action transfers the duty
 to a declared alternate and escalates it to the court. Silence neither approves
@@ -165,17 +167,18 @@ Equal protection remains a standard those mechanisms must satisfy.
 ## The child with nobody
 
 Nell is owed equal protection without evidence of family, home or an adult's
-support. The checks establish the relevant prohibitions on substituting those
+support. The rules conclude the relevant prohibitions on substituting those
 statuses for a finding, and the State still owes Nell learning. No accommodation
-or measure is recorded for Nell. That absence establishes neither equal access
-nor its denial; it leaves the duties intact and their delivery unproved.
+or measure is recorded for Nell. That absence shows neither equal access nor
+its denial; it leaves the duties intact and their delivery unproved.
 
 ## What this does not show
 
-A completed accommodation record establishes no delivered adjustment; a
-completed measure establishes no achieved objective. Opening a proceeding on
-a pattern does not prove the pattern true. Collection methods, implementation
-and empirical evaluation need evidence beyond these formal conclusions.
+A completed accommodation record is not evidence that an adjustment was
+delivered, and a completed measure is not evidence that its objective was
+achieved. Opening a proceeding on a pattern does not prove the pattern true.
+Collection methods, implementation and empirical evaluation need evidence
+beyond these formal conclusions.
 
 Equality changes the route to a right when identical treatment leaves a barrier
 in place. The next chapter asks about the conditions of life that no individual

@@ -55,29 +55,30 @@ proof of physical scarcity. The existing scarcity safeguards still apply.
 
 ## Essential water and a river's limit
 
-The water case supplies a present conflict: continuing an existing essential
+The water case records a present conflict: continuing an existing essential
 water service for immediate health conflicts with the river's minimum flow.
-Qualified evidence states that no presently available route meets both, after
-examining feasible alternatives and procurement. The specified interim route
-requires essential supply to continue by the least harmful available means
-and identifies a bounded transition to an alternative supply. These are supplied
-premises, not measured water levels or a claim that another supply has arrived.
+A properly made evidence record states that no presently available route meets
+both, after examining feasible alternatives and procurement. The specified
+interim route requires essential supply to continue by the least harmful
+available means and identifies a bounded transition to an alternative supply.
+These are recorded premises, not measured water levels or a claim that another
+supply has arrived.
 
 The conclusion is a duty to preserve immediate human continuity, obtain
 alternatives, repair the breach and reassess. Every unmet part of the human
 floor remains a failure; every breach of the river condition remains a breach.
 Protecting today's claimant does not write off the river or the conditions
-later people need. The record carries its own end; fresh authority would
-require its conditions to be met again. It supplies no permission for a new
+later people need. The record states its own end; fresh authority would
+require its conditions to be met again. It gives no permission for a new
 irreversible activity.
 
-The tests withhold the route when positive evidence of the incompatibility or
-examination of procurement is missing. They retain the person's health
-entitlement. The qualifying ecological record also supplies no authority to
-divide water among people. A separate comparison supplies the actual physical
-scarcity finding and allocation conditions; only then does that bounded
-allocation permission follow. An ecological limit is not itself proof that
-usable supply cannot meet the affected claims.
+The route is withheld when positive evidence of the incompatibility or of the
+examination of procurement is missing. The person is still owed care. The
+complete ecological record also gives no authority to divide water among people.
+A separate comparison records the actual physical scarcity finding and
+allocation conditions; only then does that bounded allocation permission follow.
+An ecological limit is not itself proof that usable supply cannot meet the
+affected claims.
 
 The fish exposed by withdrawal raise another question. The river's protected
 condition concerns the living system and its continuity. Individual fish have
@@ -91,7 +92,7 @@ The river case keeps each claim visible. The wider commons rules apply the
 same discipline to the conditions a proposed activity would change.
 
 Each limit must name its condition, place, population, jurisdiction, period,
-and scientific and legal versions. Independently reviewed science supplies
+and scientific and legal versions. Independently reviewed science provides
 evidence. Democratic law enacts ceilings, minimum conditions and resource
 budgets within that evidence and may choose stronger protection. Scientific
 assessment, law-making, advocacy and adjudication remain separate functions.
@@ -99,13 +100,13 @@ A scientist's finding does not enact law.
 
 Credible serious or irreversible risk requires proportionate precaution and
 shifts the burden of assessment and alternatives to the proponent. Uncertainty
-is not safety. Replacing a standard requires independently established equal
-or stronger protected outcomes; corrected science can justify recalibration,
+is not safety. Replacing a standard requires independently shown equal or
+stronger protected outcomes; corrected science can justify recalibration,
 but cost or convenience cannot excuse regression.
 
 Immediate prevention, containment, care and necessary public restoration do
 not wait for a final finding of fault. Causally connected inherently hazardous
-activity carries restoration and reasonable response-cost liability even
+activity bears restoration and reasonable response-cost liability even
 without intent or carelessness. Other restorative liability requires
 adjudicated causal contribution or control; being a worker, investor or
 relative is insufficient. An unknown, absent or insolvent responsible actor
@@ -120,10 +121,10 @@ loss of a unique, sacred or functionally irreplaceable system. Reparation to
 harmed people or a collective remains a separate debt.
 
 Changing a contractor, corporate form, supply chain or border cannot export
-harm forbidden at home. Conservation cannot justify dispossession. The checks
-establish separate prohibitions on erasing ecological ceilings, selecting
-floor loss and delaying restoration because the responsible party is insolvent.
-They establish no measured condition or completed restoration.
+harm forbidden at home. Conservation cannot justify dispossession. The rules
+separately prohibit erasing ecological ceilings, selecting floor loss and
+delaying restoration because the responsible party is insolvent. They show no
+measured condition or completed restoration.
 
 ## Protection does not require being human
 
@@ -134,7 +135,7 @@ what every controlled use owes, and finally which uses need further grounds.
 Vertebrates, cephalopods and decapod crustaceans begin with a presumption of
 sentience. Independently reviewed evidence of a realistic possibility extends
 protection; removing a presumption requires rigorous contrary evidence and
-review. The checks do not decide sentience themselves. Uncertain
+review. The rules do not decide sentience themselves. Uncertain
 classification or missing ownership papers cannot make necessary urgent
 protection wait.
 
@@ -145,8 +146,8 @@ water, shelter, care, movement and social opportunity; humane handling;
 protection from abandonment, exploitative overwork, extreme confinement,
 harmful breeding and avoidable invasive intervention. Public, private,
 cooperative, customary, household and nonprofit control all face it. Price,
-affection, productivity, recognition and usefulness establish no animal's
-worth or permission to harm it.
+affection, productivity, recognition and usefulness settle no animal's worth
+or permission to harm it.
 
 Ordinary non-food, non-research use that is nonlethal, non-invasive and not
 high-severity does not need an enhanced serious-purpose test merely because
@@ -179,8 +180,9 @@ Fighting, sexual use, deliberate cruelty, punitive treatment, abandonment,
 extreme confinement, seriously harmful breeding and painful purposeless
 mutilation are forbidden. Convenience, profit, cosmetics or marketing cannot
 justify dispensable killing or severe suffering. Necessary humane euthanasia
-has its own qualified, least-distressing and independently reviewed route;
-owner inconvenience or ordinary cost does not supply it.
+has its own route, which must be complete, least-distressing and
+independently reviewed; owner inconvenience or ordinary cost is not a ground
+for it.
 
 Domestic, farmed, working, captive and wild animals keep the same direct
 core. Working animals need rest, care, safe limits and protected exit or
@@ -208,28 +210,28 @@ ask a court for interim protection, but the request itself does not stop an act.
 
 The collegial Future Conditions Guardian has a narrower special instrument.
 Its evidence-supported objection pauses the irreversible part of the exact
-challenged activity through a fresh, bounded window pending expedited
+challenged activity through a fresh, bounded period pending expedited
 independent review. Essential continuity remains. A predeclared alternate
-advocate can act in its place when independently established failure prevents
-it from functioning. A separate substitute reviewer replaces a failed or
+advocate can act in its place when an independently shown failure prevents it
+from functioning. A separate substitute reviewer replaces a failed or
 conflicted reviewer; advocacy and judgment never become one function.
 
 The expiry case follows a permitted activity through that distinction. The
-current Guardian stay stops permission for its irreversible execution from
-deriving, while a separately reviewed route permits reversible essential
-continuity. When the stay is recorded as ended, the activity's permission
-derives again from its still-complete authority. An unrelated, unauthorised
-activity receives no permission. The ordinary rights advocate's claim, by
-contrast, creates review duties without imposing that automatic stay.
+current Guardian stay withholds permission for its irreversible execution, while
+a separately reviewed route permits reversible essential continuity. When the
+stay is recorded as ended, the activity's permission follows again from its
+still-complete authority. An unrelated, unauthorised activity receives no
+permission. The ordinary rights advocate's claim, by contrast, creates review
+duties without imposing that automatic stay.
 
 Related submissions by the Guardian, alternate, successors and reviewers must
 identify the same case, challenged authorisation and its version, evidence
-version and ground. A final resolution cannot be restarted by changing the office, record
-name or clock. Another window needs materially new authenticated evidence or
-a materially changed authorisation, independently compared with what was
-resolved. An authenticated past disposition can preserve that finality after
-its current authority ends; it does not preserve an expired restriction.
-Silence is neither approval nor an indefinite stay.
+version and ground. A final resolution cannot be restarted by changing the
+office, record name or clock. Another pause period needs materially new
+authenticated evidence or a materially changed authorisation, independently
+compared with what was resolved. An authenticated past disposition can preserve
+that finality after its current authority ends; it does not preserve an expired
+restriction. Silence is neither approval nor an indefinite stay.
 
 The Animal Protection Advocate is a separate office. It can initiate claims,
 seek evidence and lawful inspection, and request rescue, cessation and remedy.
@@ -245,21 +247,22 @@ When the offices disagree, an independent court must keep the human right,
 human floor, commons condition, animal interests, collective rights,
 alternatives, uncertainty, reversibility and continuity separate. Categorical
 prohibitions come first. Neither office's preference nor a single usefulness
-score decides the conflict, and choosing a route does not supply its missing
-permissions. The decisions and record of prior resolutions are supplied;
-these rules neither authenticate them nor perform the review.
+score decides the conflict, and choosing a route does not provide its missing
+permissions. The rules take the decisions and the record of prior resolutions
+as given; they neither authenticate them nor perform the review.
 
 In the case involving both offices, the Guardian states the river's claim and
-the Animal Advocate states the individual animals' claim. The independent court's supplied
-decision calls for least harmful interim water provision and a separately
-qualified rescue. It must apply hard prohibitions first and give public reasons
-addressing the distinct interests, alternatives, uncertainty and continuity.
-That decision alone permits no invasive intervention. A separate test supplies
-the serious conservation purpose, necessity, absence of a materially less
-harmful alternative, welfare safeguards and independent prior review; only
-that complete animal record permits the particular use. With its prior review
-missing, the permission does not follow even though the conflict decision
-still qualifies. Neither conclusion establishes that any fish was rescued.
+the Animal Advocate states the individual animals' claim. The independent
+court's recorded decision calls for least harmful interim water provision and
+a rescue that needs its own complete permission. It must apply hard
+prohibitions first and give public reasons addressing the distinct interests,
+alternatives, uncertainty and continuity. That decision alone permits no
+invasive intervention. The rescue needs its own record of the serious
+conservation purpose, necessity, absence of a materially less harmful
+alternative, welfare safeguards and independent prior review; only that
+complete animal record permits the particular use. With its prior review
+missing, the permission does not follow even though the conflict decision is
+still complete. Neither conclusion shows that any fish was rescued.
 
 ## When a use has to be stopped
 
@@ -282,12 +285,12 @@ must have a scope and end and create no score about a person.
 
 Disqualification from a use must be individual and reviewable. It cannot take
 standing, the floor, the vote or unrelated private freedoms. Adjudicated care
-costs must be paid and non-repetition measures carried out.
+costs must be paid and non-repetition measures taken.
 
 Payment does not discharge the other orders. Rescue, care, restoration and
-non-repetition remain due. Nor does an order regulating a use supply a search,
+non-repetition remain due. Nor does an order regulating a use confer a search,
 entry, seizure, punishment or human detention power. Those require their
-separate lawful justice routes; punishment requires an individually established
+separate lawful justice routes; punishment requires an individually proved
 intentional or reckless serious violation, the applicable proof, defence,
 independent hearing and appeal. An aggregate pattern cannot reverse the
 criminal burden, and no animal is punished for the harm.
@@ -306,15 +309,16 @@ positive evidence of the exact defect; an absence or unreviewed allegation
 is insufficient. The original writer or activity controller has no veto over
 the finding.
 
-The finding assigns duties to separate actors. Its reader must stop relying on the affected
-record and obtain an independent remedy. A separate alternate must preserve
-urgent human and animal care and the challenge route. An auditor must examine
-what depended on the record, its lawful history and the measures needed to
-prevent repetition. The model also derives a defect marker.
+The finding assigns duties to separate actors. The responding office must stop
+relying on the affected record and obtain an independent remedy. A separate
+alternate must preserve urgent human and animal care and the challenge route.
+An auditor must examine what depended on the record, its lawful history and
+the measures needed to prevent repetition. The rules also raise a marker that
+the record is defective.
 
-Withdrawal reaches the affected reliance. It establishes neither safety nor
-guilt and removes no human standing, floor, ballot, liberty, collective right
-or animal care. Lawful history, protected evidence, reasons and challenge
+Withdrawal reaches the affected reliance. It shows neither safety nor guilt
+and removes no human standing, floor, ballot, liberty, collective right or
+animal care. Lawful history, protected evidence, reasons and challenge
 remain available. Correcting the record does not renew its permission: the
 replacement must meet its own complete conditions for authority. Neither the
 correction nor the duties prove that an activity stopped or care continued.
@@ -322,15 +326,15 @@ correction nor the duties prove that an activity stopped or care continued.
 ## The child with nobody
 
 Nell holds the environmental claim without owning land or having an adult
-speak first. The checks preserve access to environmental information and review,
-prohibit ranking Nell by environmental worth, and retain the State's health
-debt. No claim or assessment is supplied for Nell. The birth entry establishes
-neither safe surroundings nor restored conditions; the duties do not wait for
-proof that the child can assert them.
+speak first. The rules preserve the child's access to environmental
+information and review, prohibit ranking Nell by environmental worth, and keep
+the debt of care the State owes the child. No claim or assessment is recorded
+for Nell. The birth entry shows neither safe surroundings nor restored
+conditions; the duties do not wait for proof that the child can assert them.
 
 ## What none of this measures
 
-The model determines no ceiling number, sentience, causation or authentic
+The rules determine no ceiling number, sentience, causation or authentic
 scientific finding. A completed authorisation is not a performed activity;
 a withdrawal is not a stopped use. Measurements, inventories, monitoring,
 restoration and veterinary capacity, and transitions in food and research

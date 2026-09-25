@@ -1,13 +1,13 @@
 # Explicit counterfactual: an appointment route omits recall and carry checks.
 # The prospective finding retains its own current-disqualification checks.
 :expect-pins 6
-? rotten(Vex).
+? rotten(Mael).
 # => TRUE
-? permits(Review, Vex).
+? permits(Review, Mael).
 # => TRUE
-? broken(Boss).
+? broken(Tove).
 # => TRUE
-? permits(Review, Boss).
+? permits(Review, Tove).
 # => TRUE
 ? agree(Credibility_Tyr_Candidate, CredibilityFindingCandidate).
 # => FALSE

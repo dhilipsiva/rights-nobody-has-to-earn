@@ -8,16 +8,17 @@ The tests try to record that Adam is rich or dangerous. Both are refused because
 those kinds of assertion are outside the constitutional record. Refusal says
 nothing about Adam's wealth or conduct. It says what this record may contain.
 
-The admitted kinds include births and encounters, employment and teaching, injuries
-and judgments, relationships, proposals, appointments, receipts and challenges.
-They also include specified evidence about sources, review windows and whether
-a status continues between records. They are not all direct observations.
-Some report a finding someone has already made.
+The admitted kinds include births and encounters, employment and teaching,
+injuries and judgments, relationships, proposals, appointments, receipts and
+challenges. They also include specified evidence about sources, review periods
+and whether a status continues from one version of the record to the next.
+They are not all direct observations. Some report a finding someone has
+already made.
 
 Personhood itself may be entered directly or follow from the roots in the
 previous chapter. The name used at first contact may be temporary. Neither
 that name nor the birth entry authenticates a civil identity. The rules can
-control the form of a report without establishing that its content is true.
+control the form of a report without showing that its content is true.
 
 ## What is missing
 
@@ -45,7 +46,7 @@ record takes the narrow, challengeable result needed for the specified purpose,
 not an unrestricted economic dossier. The result must meet that route's
 requirements for authority and review; merely naming it does not authenticate it.
 
-The design still classifies. It distinguishes adjudicated acts and derives
+The design still classifies. It distinguishes adjudicated acts and draws
 consequences from them. Severity binds the person, case and incident; its
 summary about a person cannot authorise placement in another case. That
 classification matters for confinement and cannot be described as an absence
@@ -54,61 +55,65 @@ on personal worth.
 
 ## Facts and conclusions are kept apart
 
-The supplied record says Hano injured Ivo and the Court judged Hano. Those are
+The record says Hano injured Ivo and the Court judged Hano. Those are
 inputs. That Hano is a prisoner is a conclusion: it follows through the injury,
 judgment, cited case and the required conviction and custody evidence. The
 conclusion also depends on the relevant protections and grounds for refusal.
 An injury and a judgment are not the entire authority to confine.
 
-Try to bypass that route by writing directly that Zed is a prisoner. The
+Try to bypass that route by writing directly that someone is a prisoner. The
 entry is refused. So are direct assertions of public answerability and
-severity. These are reserved conclusions; a writer must supply their premises
+severity. These are reserved conclusions; a writer must record their premises
 and let the rules determine what follows.
 
 Public answerability follows from an institution's public status or a seating
 by the electorate or convocation. The Court has it through its public-body
-entry; Hex has it through the convocation's seating. Answerability is not
-permission to judge. The later chapters distinguish it from an examiner's
-credential and from authority for a particular public act.
+entry; a person the convocation seated has it through that seating.
+Answerability is not permission to judge. The later chapters distinguish it
+from an examiner's authority to sign findings and from authority for a
+particular public act.
 
 Severity shows why the premises must be read together. The underlying case
-needs qualified criminal proof, adjudicated defences and fair procedure.
+needs properly made criminal proof, adjudicated defences and fair procedure.
 An independently reviewed finding of grave injury or aggravated cruelty must
 identify the subject, case, incident, person harmed, evidence and procedure.
 Counting people injured cannot substitute for either finding. A raw attack
 or cruelty entry supplies none of its authority.
 
-The test gives Probe an attack against one person and cruelty against another.
-Severity does not follow. Adding cruelty against the person already attacked
-still supplies no qualified finding. The placement chapter follows the positive
-cases: Ruk has a grave-injury finding; Lalo and Don have aggravated-cruelty
+In a test, a person the Court judged in a cited case has a raw attack entry
+against one person and a cruelty entry against another. Severity does not
+follow. Adding cruelty against the person already attacked still gives no
+properly made finding. The placement chapter follows the positive cases: Ruk
+has a grave-injury finding, and two other people have aggravated-cruelty
 findings. Those findings permit consideration of secure placement. A separate
-decision must establish why a less restrictive place is insufficient. Severity
+decision must show why a less restrictive place is insufficient. Severity
 alone cannot choose a destination or supply current authority to confine.
 
-A derived conclusion is not necessarily supported by a long chain. Nor are
-all its inputs observations. The rules can forbid a direct verdict while
-accepting a reported finding that has almost the same effect. That is a
+A conclusion the rules reach is not necessarily supported by a long chain.
+Nor are all its inputs observations. The rules can forbid a direct verdict
+while accepting a reported finding that has almost the same effect. That is a
 separate question from whether the verdict can be asserted directly.
 
 ## One examination is not a credibility finding
 
-A credibility finding restricts whose findings can count against another person.
-An effective credibility finding prevents its subject's signature on a new
-credibility finding from qualifying; it leaves personhood and the floor intact.
+A credibility finding restricts whose findings can count against another
+person. A credibility finding in force keeps its subject's signature from
+counting toward a new credibility finding; it leaves personhood and the floor
+intact.
 
-Koa's finding about Esa is recorded. No credibility finding applies to Esa, or
-to Koa for having made it. The lone entry does not supply the route to either
-result.
+The record holds a single examination of Esa, the examiner's only recorded act.
+No credibility finding applies to Esa, or to the examiner for having made it.
+The lone entry opens the route to neither result.
 
-The paired route requires distinct qualified examiners, matching findings about
-the same subject, incident, ground and evidence, and positive independence
-authority for that case. Permission to make a finding also checks the signers'
-current disqualifications. Personal consequences require the completed case and
-its historical eligibility and procedure. The chapter on credibility findings
-follows those conditions and the case-specific route to restoration.
+The paired route requires distinct examiners, each authorised to sign,
+matching findings about the same subject, incident, ground and evidence, and
+positive independence authority for that case. Permission to make a finding
+also checks the signers' current disqualifications. Personal consequences
+require the completed case and its historical eligibility and procedure. The
+chapter on credibility findings follows those conditions and the
+case-specific route to restoration.
 
-The conclusion here is limited to the case: Koa's entry does not establish a
+The conclusion here is limited to the case: the examiner's entry makes no
 credibility finding against Esa. It is not a claim that every investigation is
 costless or that a lone finding can have no consequence anywhere in the design.
 The recorded act of examination and the adverse conclusion are distinct.
@@ -121,7 +126,7 @@ when the entry is submitted; changing it later does not turn an earlier
 refusal into accepted evidence.
 
 An editor can nevertheless declare new vocabulary and use it in the source.
-The declaration requirement makes that a source change; it does not establish
+The declaration requirement makes that a source change; it does not prove
 the editor's authority to make it. Nor does it determine whether the new word
 conceals a judgment that should require a separate decision.
 
@@ -147,10 +152,10 @@ authenticate the premises or entrench meaning by checking a label.
 
 ## False or missing inputs
 
-No vocabulary change is needed to supply a false report. A fabricated direct
+No vocabulary change is needed to enter a false report. A fabricated direct
 person entry can produce floor entitlements. A fabricated birth or encounter
 can do the same for a name that is not a known public body. The rules do not
-establish that a human being answers to it.
+show that a human being answers to it.
 
 The opposite omission also matters. A temporary encounter name can start
 standing before civil identity is reconciled, but an encounter that nobody
@@ -158,46 +163,50 @@ reports has no consequences in the record. The duty to serve cannot observe
 or enter the person for itself.
 
 There is a protection for a status already witnessed in an accepted earlier
-record. An accepted later transition must account for its carry. If the
-required carry is missing, the earlier standing continues and the omission is
-marked as a defect. Omitting the carry does not erase both protection and the
-evidence of the mismatch.
+version of the record. An accepted later version must state that the status
+is kept. If that statement is missing, the earlier standing continues and
+the omission is marked as a defect.
+Omitting that statement does not erase both protection and the evidence of
+the mismatch.
 
-That marker establishes a mismatch between supplied records, not its cause.
-The route has no representation of lawful retirement of the protected entry,
-so it reports a missing required carry even where an outside account would
-call the removal proper. Neither mechanism can find an encounter nobody
+That marker shows a mismatch between recorded versions, not its cause. The
+route has no representation of lawful retirement of the protected entry, so
+it reports the required statement as missing even where an outside account
+would call the removal proper. Neither mechanism can find an encounter nobody
 reports, detect a deletion before the compared records, establish an honest
 witness or make the next record arrive.
 
 The shield case distinguishes an accusation from the adjudication it needs.
-Rebel's disclosure concerns Boss, an answerable official. A raw entry alleging
-that Rebel deceived Boss does not supply an effective finding about that
-exposure. The shield continues, and the prisoner conclusion remains blocked.
-A raw accusation likewise cannot supply a personal credibility finding. The
-adverse case must bind its subject, incident, evidence and independent reviewers;
-merely naming the accused and a public body does not establish the act.
+Iris's disclosure concerns Tove, an answerable official. Suppose a raw entry
+alleged that Iris deceived Tove. It would give no finding in force about that
+exposure: the shield would continue, and the prisoner conclusion would remain
+blocked. A raw accusation likewise cannot supply a personal credibility
+finding. The adverse case must bind its subject, incident, evidence and
+independent reviewers; merely naming the accused and a public body does not
+make the finding.
 
 A bare claim that the Court is broken also leaves the custody cases unchanged.
-A defect in a court's jurisdiction or independence needs a qualified disposition
-of the affected case. The disposition identifies the subject, offence, ground,
-evidence and independent appellate actors; a party or the original adjudicator
-cannot decide the appeal. Successful review ends the affected authority without
-erasing the injury record or deciding another case. The reasoner checks that
-contract. It does not authenticate the witnesses or physically release anyone.
+A defect in a court's jurisdiction or independence needs a properly made
+disposition of the affected case. The disposition identifies the subject,
+offence, ground, evidence and independent appellate actors; a party or the
+original adjudicator cannot decide the appeal. Successful review ends the
+affected authority without erasing the injury record or deciding another case.
+The reasoner checks that contract. It does not authenticate the witnesses or
+physically release anyone.
 
 Other entries have narrower reach. Writing that someone has a family cannot
-worsen confinement. An absent parent, marriage or sibling entry cannot establish
+worsen confinement. An absent parent, marriage or sibling entry cannot show
 reviewer independence. Recording care as employment proves neither delivery
 nor consent nor authority to decide for another person. An adulthood entry
 in the required form can support the executable ballot conclusion, but the
-legal status of adulthood does not originate in the entry. A forged or withheld entry remains a hazard for the
-ballot record; neither an age nor an outside clock is verified here.
+legal status of adulthood does not originate in the entry. A forged or
+withheld entry remains a hazard for the ballot record; neither an age nor an
+outside clock is verified here.
 
 Reserved conclusions cannot be written directly. Their admitted premises can
 still include judgments rather than observations. Naming the finder and requiring
 independent review make responsibility explicit; a closed vocabulary cannot
-authenticate those actors or establish the truth of their account.
+authenticate those actors or prove the truth of their account.
 
 How many people must act before a record takes effect depends on what it does. A
 record that only gives or preserves something for the person it concerns, such

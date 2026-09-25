@@ -43,15 +43,15 @@ it performed the act.
 
 The ordinary-bill cases make the division concrete. A complete record of
 first passage, an unused return and public reasons gives the Regions Council
-authority to return that bill once. In the control, the record lacks the
-required unused-return finding and no return authority follows. A separate
-complete record of Assembly repassage under the same rule establishes its
-lawmaking authority. The Council cannot demand an extra threshold or an
+authority to return that bill once. In the comparison case, the record lacks
+the required unused-return finding and no return authority follows. From a
+separate complete record of Assembly repassage under the same rule, its
+lawmaking authority follows. The Council cannot demand an extra threshold or an
 indefinite interval. Its objection requires reconsideration without acquiring
 a permanent veto over ordinary law.
 
-These are distinct supplied records for the stages, not evidence that a bill
-was debated or enacted. The lawmaking power also supplies neither revenue nor
+These are distinct records entered for each stage, not evidence that a bill
+was debated or enacted. The lawmaking power also gives neither revenue nor
 spending authority; each needs its separate authorisation. Execution belongs
 to the Executive Council under its own mandate. Court review does not become
 an executive function merely because the executive must give effect to law.
@@ -69,7 +69,7 @@ Regional legislatures supply proportionate delegations to the Regions Council.
 Its equal aggregate regional weight is a territorial exception confined to its
 limited mandate, not a second population-based chamber.
 
-No institution may establish the decisive facts of its own legitimacy, judge
+No institution may find the decisive facts of its own legitimacy, judge
 them, execute the result, audit itself and supply the final remedy. Dividing
 those functions creates routes for challenge; it does not prove that their
 holders are independent in practice.
@@ -86,9 +86,10 @@ a recall, an appointment, a removal, a succession or a secession all need the
 same thing before anything may be done on them: an authenticated, contestable
 record that identifies its authorised writer, the exact attested roster, a
 separate external assurance that the roster is complete, the proposal or
-candidate, person-bound effective submissions, the tally rule, the result, a
-challenge and recount route, correction, independent certification, and the
-source version the result affects. Missing approval never counts as approval.
+candidate, the submission in force for each person, the tally rule, the
+result, a challenge and recount route, correction, independent certification,
+and the source version the result affects. Missing approval never counts as
+approval.
 
 The process separates roles. Election administration
 authenticates and classifies submissions. Independently authored assurance
@@ -98,13 +99,13 @@ installation or transfer. Completeness needs redundant or alternate writers,
 because whoever can withhold it could otherwise block every authority that
 depends on it.
 
-Without independent assurance, a supplied smaller roster does not reveal
-whether eligible people were omitted. The model can reason over a snapshot,
-count supplied witnesses and aggregate supplied weights. This constitutional
-route nevertheless relies on supplied result and completeness certificates;
-it does not authenticate them, resolve conflicting submissions or operate the
-changing electoral roll. A successful formal result proves no universal
-inclusion in an election.
+Without independent assurance, a smaller roster in the record does not reveal
+whether eligible people were omitted. The engine that applies the rules can
+reason over a snapshot, count the witnesses entered and add up the weights
+given. This constitutional route nevertheless relies on recorded result and
+completeness certificates; it does not authenticate them, resolve conflicting
+submissions or operate the changing electoral roll. A successful formal result
+proves no universal inclusion in an election.
 
 ## Keeping public decisions answerable
 
@@ -128,16 +129,16 @@ not a general ban on private employment. Amounts and cooling-off periods are
 left to ordinary law.
 
 Office holders, candidates, parties and named political actors owe
-proportionate disclosure. The reader owes action on it. A separately
-established failure by that reader creates a duty on an independent alternate;
+proportionate disclosure. The responding office owes action on it. A failure
+by that office, separately shown, creates a duty on an independent alternate;
 silence alone proves neither the undisclosed fact nor misconduct by the
 bearer. These duties do not require publishing protected small-payer identities.
 
 ### Who can participate and challenge
 
 A district plan may not be drawn to entrench a party, coalition or incumbent,
-or to dilute a protected ground. The finding must establish the forbidden
-purpose; an outcome alone does not establish it. Independent electoral and
+or to dilute a protected ground. The finding must prove the forbidden
+purpose; an outcome alone does not prove it. Independent electoral and
 constitutional review remain available, with protected-ground dilution also
 reaching equality review.
 
@@ -189,19 +190,19 @@ borrowed as an office term or an election clock.
 Failure to form a government does not create emergency power. The last lawful
 government continues under a tightly limited caretaker mandate: it preserves
 the floor and essential legal continuity, administers existing law, and may
-take no avoidable irreversible policy action. When independently supplied
-time evidence establishes the constitutional deadline, ordinary caretaker
-authority ends and the electoral body has both a duty and the authority to call
-a fresh election. Missing or disputed time evidence cannot preserve ordinary
-incumbent power.
+take no avoidable irreversible policy action. When independently recorded
+time evidence shows that the constitutional deadline has passed, ordinary
+caretaker authority ends and the electoral body has both a duty and the
+authority to call a fresh election. Missing or disputed time evidence cannot
+preserve ordinary incumbent power.
 
 The fresh-election case tests the point at which authority follows. A complete
 record includes matching source, evidence and review findings that the deadline
-has passed. The electoral body derives authority to call the election. In the
-control, those findings are withheld while the rest of the record remains;
-the authority does not derive. Naming a deadline and an electoral body cannot
-substitute for the required finding, and that finding still does not establish
-that a vote took place.
+has passed. The rules conclude that the electoral body has authority to call
+the election. In the comparison case, those findings are withheld while the
+rest of the record remains; the authority does not follow. Naming a deadline
+and an electoral body cannot substitute for the required finding, and that
+finding still does not show that a vote took place.
 
 Budget deadlock cannot suspend the floor or essential services. The treasury
 functions continue the last lawful authority for an enumerated continuity set
@@ -240,17 +241,17 @@ not be turned against a region seeking or completing a lawful exit.
 
 ## The child with nobody
 
-Nell remains a person and is owed expression. The vocabulary entries supply no
-office, ballot, credibility finding or prisoner conclusion for the child.
+Nell remains a person and is owed expression. The vocabulary entries give the
+child no office, ballot, credibility finding or custody conclusion.
 
 The ombudsperson and rights advocate have mandates to assist people unable
 to act alone. The institutions must serve Nell without making officeholding
-or political eligibility a condition of help. A mandate does not establish
-that a helper arrived.
+or political eligibility a condition of help. A mandate does not show that a
+helper arrived.
 
 ## Authority and performance
 
-A complete power record establishes the specified legal authority, not a
+A complete power record is enough for the specified legal authority, not for a
 staffed or funded institution, a convened Assembly or an election held. Seats,
 selector allocations and calendars must be implemented within the constitutional
 constraints. Actual independence and performance need evidence beyond the rules.

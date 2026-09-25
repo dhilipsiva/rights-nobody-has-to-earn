@@ -3,11 +3,11 @@
 # The remaining case, procedure, independence and distinctness premises are live.
 # Permission to act still does not manufacture a completed historical judgment.
 :expect-pins 5
-? permits(Review, Vex).
+? permits(Review, Mael).
 # => TRUE
 ? permits(Tribunal, Wren).
 # => TRUE
-? match(Vex, CarriedVoid).
+? match(Mael, CarriedVoid).
 # => TRUE
 ? agree(Credibility_Tyr_Candidate, CredibilityFindingCandidate).
 # => TRUE

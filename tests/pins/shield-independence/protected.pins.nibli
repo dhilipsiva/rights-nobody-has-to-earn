@@ -2,26 +2,26 @@
 # Case-specific reviewer qualification; the live constitution is loaded.
 :expect-pins 8
 
-? prisoner(Rex).
+? prisoner(Dara).
 # => FALSE
 
-? defend(Rex).
+? defend(Dara).
 # => TRUE
 
-? person(Rex).
+? person(Dara).
 # => TRUE
 
-? owe(State, Eats, Rex).
+? owe(State, Eats, Dara).
 # => TRUE
 
-? false(Rex).
+? false(Dara).
 # => TRUE
 
-? free(Rex).
+? free(Dara).
 # => FALSE
 
-? show(Rex, Disclosure_Rex_Review, Review).
+? show(Dara, Disclosure_Dara_Review, Review).
 # => TRUE
 
-? prisoner(Sly).
+? prisoner(Lior).
 # => FALSE

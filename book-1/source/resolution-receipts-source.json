@@ -3,7 +3,7 @@
     {
       "id": "writable-credential",
       "chapter": "book-1/23-who-holds-the-pen.md",
-      "section": "A credential must derive",
+      "section": "The authority to sign must follow from evidence",
       "what_failed": "An examiner's pen could be written down directly, so the credential a voiding needs was a fact somebody typed rather than a conclusion anything derived.",
       "what_changed": "The credential became derivable only, and the two doors that reach it carry word-for-word the same conditions.",
       "state": "resolved-for-claim",
@@ -44,7 +44,7 @@
       "what_changed": "Every reported category and exact case/place is checked against qualified placement; competing reviewed candidates withhold custody. A positive named supported residence is available only under its own evidence, not by default from a missing home.",
       "state": "resolved-for-claim",
       "rerun": "book-1/28-where-people-are-put.pins.nibli",
-      "phrase": "The marker identifies the affected person and creates Review's obligation",
+      "phrase": "The marker identifies the affected person and creates the review body's obligation",
       "still_not_established": "That anyone reads the marker, acts on it, or moves anybody. It is an alarm, not a remedy.",
       "external_or_open": "Matching attestations do not authenticate the real actors, make a place available or prove a performed remedy."
     },
@@ -56,7 +56,7 @@
       "what_changed": "One allowlisted bridge reads that compatibility conclusion and concludes typed reader, action, non-response, alternate, continuity, remedy, correction, re-audit and recurrence duties.",
       "state": "operationally-unresolved",
       "rerun": "tests/pins/obligations/case-001/expect.pins.nibli",
-      "phrase": "A placement or isolation marker derives Review's duty",
+      "phrase": "A placement or isolation marker gives the review body a duty",
       "still_not_established": "That a reader received anything, acted, corrected an abuse, completed a remedy or prevented recurrence. No rule proves receipt or action.",
       "external_or_open": "Every liveness premise here belongs to Book 2 or to operational assurance, which is unbuilt."
     },
@@ -123,12 +123,12 @@
     {
       "id": "shield-without-a-target",
       "chapter": "book-1/24-the-shield.md",
-      "section": "Don: a private target",
+      "section": "Faro: a private target",
       "what_failed": "The shield asked what you exposed and not whom: any defendant could name their own accuser or victim and become unjailable.",
       "what_changed": "The rule now asks who was exposed, so exposing the person you injured earns nothing.",
       "state": "resolved-for-claim",
       "rerun": "book-1/24-the-shield.pins.nibli",
-      "phrase": "Pax is not publicly answerable in the supplied record",
+      "phrase": "Pax is not publicly answerable in the record",
       "still_not_established": "That the exposure was true or made in good faith. Absence of a deceit finding protects, and that default is priced rather than removed.",
       "external_or_open": "The exposure surface stays unbounded by design; every proposed bound trades one of three protections."
     },

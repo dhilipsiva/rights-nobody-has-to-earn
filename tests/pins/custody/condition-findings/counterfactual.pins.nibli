@@ -9,7 +9,7 @@
 # => TRUE
 ? err(Nando, Isolation).
 # => TRUE
-? err(Don, Isolation).
+? err(Faro, Isolation).
 # => TRUE
 ? err(Kel, Isolation).
 # => TRUE

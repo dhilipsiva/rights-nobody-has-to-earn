@@ -134,6 +134,66 @@ reinstate the retired tooling or workflow.
 Grouped by kind. Dates in each heading are the ratification dates; a ruling
 that was later implemented or narrowed carries that supersession inline.
 
+### Item 51 — the vocabulary and the cast settled, 2026-09-25
+
+The plan's replacements now hold in the reader prose of the opening, Chapters
+1–30 and Part V. "Derive" became "follows" or "the rules conclude";
+"supplied" became "recorded" or "given"; a "qualified" finding became one
+"properly made"; an "effective" finding or version became one "in force",
+while an effective remedy, alternative or control keeps its word; "reader",
+for an institution, became "the responding office"; "pen" and "credential"
+became "the authority to sign findings"; "lease" and "window" became the
+custody authorisation and its review date or period; and "selected current
+record" became "the version in force". Carrying a status between versions of
+the record is now described plainly, with its mechanics in the method's new
+"Versions of the record", which quotes the lineage-collision and standing
+rules verbatim. Harness and fixture names in prose (Targ4, Nogra, Nogrb,
+Partnr, Sock, the Amend_ proposals, SchemeM, PublicGuarantee, HighSec,
+Homestay, Provender, Ledgerwitness and the rest) and institutional constants
+(Review, Appeals, Convocation, Electorate, Chronicle, TemporalReview) became
+descriptions, and the pins keep them. The opening's glossary defines
+"properly made", "in force", "the version in force" and the custody
+authorisation. Where a chapter's test adds a fact about a cast member, the
+prose says "Suppose…". One Chapter 14 sentence that denied the case
+participant's personhood was corrected: since item 72 the first-contact entry
+makes the participant a person.
+
+The names that prejudged their cases are neutral everywhere the current
+design is stated or tested: Boss is Tove, Rebel Iris, Sly Lior, Vex Mael, Hex
+Saba, Rex Dara, Lupo Edo, Don Faro, and the victim fixture Scapegoat is
+Tamsin — in the constitution's facts, pins, cases, generators, reviewed JSON,
+generated reports, the red-team index and the companion's data, with eleven
+paths moved (`records/mael_*`, the `party-*-dara` shield-independence cases
+and `counterfactual/no-choose-tove`). Dated records keep the names they were
+written with: this file, the tracker, the appendix decisions and briefs, the
+reviews, the reader drafts and the retired receipts. The companion's scenario
+keys (`rex`, `sly-selfcert`) stay, so shared links keep working. Regenerating
+the integrity, knowledge, record-power and statistics families reproduces the
+renamed output byte for byte.
+
+The recurring cast is fifteen people whose facts stay the same wherever they
+appear: Nell, Hano, Ruk, Bela, Cira, Marisol, Esa, Adam, Ivo, Kel, Gia, Wren,
+Iris, Tove and Mael. Every other name appears only in its home chapter; the
+opening's index names everyone with that chapter. `tools/prose_lint.py` now
+holds `RECURRING` and `HOME`, counts a name outside its home chapter as a
+stray held at zero in every chapter, and counts "pen" and "credential" as
+terms of art; Brix, Dunya, Zeno and Voss, which no ordered input uses, left
+its list. Its baseline ratchets down: every chapter's terms of art are within
+the plan's five per 1,000 words (from as high as 27.6), no chapter carries a
+banned term or a harness name, disclaimers fell in most chapters, and
+negation held or fell. Distinct names still exceed five in Chapters 3, 10,
+16, 24, 25, 28 and 29, which the restructure's merges and rewrites address.
+
+Twelve changed sentences and headings moved their reviewed references in the
+full-society ledger, the record-integrity case, the receipts source and the
+reader-coverage source; the coverage report (243 passages) and receipts are
+regenerated. The exact prose is `session-drafted, author-approved under
+delegated approval (2026-09-13)`. The rule count is unchanged at 7,558. All
+141 authoring development tests pass, with five declared ignored, the fifteen
+prose-lint unit tests pass, and the prose check passes. `RIGHTS_VERIFY_JOBS=4
+./verify.sh` passes 90,009 pins across 16,354 cases with complete
+contradiction checks and no findings in 1,201.00s.
+
 ### Item 50 — the core replayed in a second engine, 2026-09-25
 
 `tools/second_engine.py` translates the constitution statement by statement

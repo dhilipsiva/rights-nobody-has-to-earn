@@ -33,7 +33,7 @@
 # => FALSE
 ? false(Mira).
 # => FALSE
-? false(Lupo).
+? false(Edo).
 # => TRUE
 ? prisoner(Ivo).
 # => FALSE
@@ -47,11 +47,11 @@
 # => TRUE
 ? expresses(Adam).
 # => FALSE
-? defend(Rebel).
+? defend(Iris).
 # => TRUE
-? prisoner(Rebel).
+? prisoner(Iris).
 # => FALSE
-? false(Rebel).
+? false(Iris).
 # => FALSE
 ? building(HighSec, Lalo).
 # => TRUE
@@ -60,27 +60,27 @@
 ? dwell(Hano).
 # => FALSE
 # --- E1/E2/E3 closures ---
-? defend(Don).
+? defend(Faro).
 # => FALSE
-? prisoner(Don).
+? prisoner(Faro).
 # => TRUE
-? defend(Sly).
+? defend(Lior).
 # => TRUE
 ? defend(Kel).
 # => FALSE
 ? false(Kel).
 # => TRUE
-? permits(Review, Vex).
+? permits(Review, Mael).
 # => FALSE
 ? permits(Tribunal, Wren).
 # => TRUE
-? false(Vex).
+? false(Mael).
 # => TRUE
 ? false(Tyr).
 # => FALSE
-? authority(Boss).
+? authority(Tove).
 # => TRUE
-? permits(Review, Boss).
+? permits(Review, Tove).
 # => FALSE
 ? prisoner(Ruk).
 # => TRUE
@@ -228,7 +228,7 @@ building(HighSec, Ghost).
 # [v0.5] Severity's complement, and it needs all three routes, because the
 # threshold is what makes the closure worth having. Lalo reaches it through
 # intent and kind on one act; Ruk through intent and a second victim recorded
-# separately; Don through kind and a second victim. Hano is the control that
+# separately; Faro through kind and a second victim. Hano is the control that
 # can actually fail: one dimension, and severity does not follow.
 ? severe(Lalo).
 # => TRUE
@@ -236,7 +236,7 @@ building(HighSec, Ghost).
 ? severe(Ruk).
 # => TRUE
 
-? severe(Don).
+? severe(Faro).
 # => TRUE
 
 ? attack(Hano, Ivo).

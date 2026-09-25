@@ -15,8 +15,8 @@ Newcomers, migrants, refugees and stateless people keep standing, the floor,
 liberty, fair process and remedy wherever the republic has jurisdiction or
 effective control. Citizenship, documents, manner of arrival and time spent
 there cannot become conditions of help. The rules cannot discover an
-unrecorded arrival. The public duty is to serve
-first and reconcile afterwards.
+unrecorded arrival. The public duty is to serve first and reconcile
+afterwards.
 
 Food, shelter, care, education, communication, courts and reporting violence
 cannot become immigration-enforcement checkpoints. A service may not enrol
@@ -46,24 +46,24 @@ export labour exploitation, ecological damage or rights violations forbidden
 at home. The relevant control and supply chain must be examined; changing a
 contractor, affiliate, flag or forum does not remove the duty.
 
-These are rights, limits and duties over supplied evidence. A compatibility
-finding is not an order to detain, expel or move anyone. The checks establish
-no operating border, truthful foreign assurance, cooperation by another
-state, or completed remedy.
+These are rights, limits and duties over recorded evidence. A compatibility
+finding is not an order to detain, expel or move anyone. Nothing in them shows
+an operating border, a truthful foreign assurance, cooperation by another
+state, or a completed remedy.
 
 ## Conflicting versions stop the finding
 
 The asylum case completes a fair-determination record. It identifies the case,
-constitutional version, current window, evidence, independent review, challenge
+constitutional version, current period, evidence, independent review, challenge
 route and alternate reviewer. Completion produces the specified legal
 conclusions; it does not prove that a hearing occurred or asylum was granted.
 
-The conflicting-version case tests what happens when an authorised writer
-supplies a second constitutional version in a field that must hold one value.
+The conflicting-version case asks what happens when an authorised writer
+enters a second constitutional version in a field that must hold one value.
 Completion stops. The rules choose neither the later entry nor a preferred
 writer to settle the conflict.
 
-That withholds reliance on an ambiguous record. It does not establish which
+That withholds reliance on an ambiguous record. It does not show which
 entry is false, resolve the disagreement or protect the claimant from delay
 by itself. A usable determination still needs the ambiguity resolved and its
 conditions met. Independent review, correction and the alternate route for
@@ -81,7 +81,7 @@ institutions, language, culture, education, collective land and resource
 title, participation and remedy. Linguistic, religious, ethnic and other
 minorities hold culture, language, education, media, association, accessible
 services and participation rights. Cultural difference alone does not confer
-territorial government: that needs an independently established historical
+territorial government: that needs an independently shown historical
 or territorial basis and the constitutional democratic route.
 
 Membership needs both self-identification and the community's lawful
@@ -98,14 +98,14 @@ review. Nonmember residents retain common services, housing and property
 protections and their equal general-government ballot. Internal autonomy
 creates neither another general-government vote nor unilateral secession.
 
-Permanent relocation, extinguishing or irreversibly impairing collective
-title, transferring sovereignty over collective lands, destroying a sacred
-site, placing hazardous material or inflicting comparable existential harm
-requires free, prior, informed, actual collective consent. That consent must
-concern the same people, land, proposed act, version and harm. A convenient
-spokesperson, silence, missing participation or a conflicting result cannot
-supply it. Collective consent does not authorise force against an individual
-or waive ecological ceilings and direct animal protection.
+Permanent relocation, extinguishing or irreversibly impairing collective title,
+transferring sovereignty over collective lands, destroying a sacred site,
+placing hazardous material or inflicting comparable existential harm requires
+free, prior, informed, actual collective consent. That consent must concern the
+same people, land, proposed act, version and harm. A convenient spokesperson,
+silence, missing participation or a conflicting result cannot stand in for it.
+Collective consent does not authorise force against an individual or waive
+ecological ceilings and direct animal protection.
 
 Other material effects require consultation before commitment: accessible
 information, adequate time, lawful representatives and affected members,
@@ -118,10 +118,10 @@ dispossession or forced assimilation.
 A current, independently reviewed defect can withhold the affected permission
 and require preservation, correction, restitution or other rights-respecting
 remedy. Anyone may request review without the operator's permission; private
-evidence access needs a separate entitlement. A positively established failure
-to respond places a duty on an independent alternate. None of these findings
-decides collective identity for itself, authenticates consent, advances a
-clock or proves that an institution acted.
+evidence access needs a separate entitlement. A failure to respond, shown by
+positive evidence, places a duty on an independent alternate. None of these
+findings decides collective identity for itself, authenticates consent, advances
+a clock or proves that an institution acted.
 
 ## When a consent record is defective
 
@@ -130,34 +130,34 @@ version and harm completes with its required representation, review and
 challenge route. A second record permits the specific effect by joining that
 consent.
 
-An independent defect finding then withdraws reliance on the consent record.
-The consent conclusion and its dependent permission both stop deriving. The reader
-owes preservation, correction and remedy; the auditor owes review of related
-cases and non-repetition. Another collective's unaffected record continues
-to complete. One defective consent is no finding against a people or against
-consent in general.
+An independent defect finding then withdraws reliance on the consent record. The
+rules withhold both the consent conclusion and its dependent permission.
+The responding office owes preservation, correction and remedy; the auditor owes
+review of related cases and non-repetition. Another collective's unaffected
+record continues to complete. One defective consent is no finding against a
+people or against consent in general.
 
-Withdrawal does not undo an act already performed. It establishes neither
-returned land nor a protected site nor removed hazardous material. The sequence
-shows where permission ends and repair is owed; whether repair happens requires
+Withdrawal does not undo an act already performed. It shows neither returned
+land nor a protected site nor removed hazardous material. The sequence marks
+where permission ends and repair is owed; whether repair happens requires
 further evidence.
 
 ## The child with nobody
 
-The newcomer case supplies presence and the republic's reach without papers,
+The newcomer case records presence and the republic's reach without papers,
 immigration status or a length of residence. Standing, the floor, free movement
 and the prohibitions on service-based enforcement follow. The State owes
 inclusion in the population considered for scarcity.
 
 Nell's birth entry independently supports standing and the floor. Neither that
-entry nor the newcomer's limited premises establishes a ballot entitlement.
+entry nor the newcomer's limited premises supports a ballot conclusion.
 This does not determine either person's actual age or political eligibility;
 those need their own evidence and routes. Immediate help cannot wait for them.
 
 ## What none of this admits
 
 Reception, interpretation, registration and land administration need
-functioning institutions beyond these records. The cases establish no actual
+functioning institutions beyond these records. The cases show no actual
 admission, completed consultation or remedy.
 
 The next part asks how those institutions become answerable. The rights in

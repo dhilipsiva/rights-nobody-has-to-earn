@@ -8,7 +8,7 @@ observe(IntegritySelectionEvidence, IntegritySelectionResult, OneCoalitionContro
 # => TRUE
 ? authority(FSBOD_02, FSPOW_028, IntegritySelectionRecord).
 # => FALSE
-? authority(Boss).
+? authority(Tove).
 # => TRUE
 ? person(Hano).
 # => TRUE

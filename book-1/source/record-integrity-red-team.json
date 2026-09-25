@@ -250,27 +250,27 @@
       "deletions": []
     },
     {
-      "id": "vex_forgive_only",
+      "id": "mael_forgive_only",
       "description": "Only the first half of the current forgiveness shape is added.",
       "additions": [
-        "forgive(Appeals, Vex)."
+        "forgive(Appeals, Mael)."
       ],
       "deletions": []
     },
     {
-      "id": "vex_judgment_only",
+      "id": "mael_judgment_only",
       "description": "Only the generic Appeals-judgment half of the current forgiveness shape is added.",
       "additions": [
-        "judge(Appeals, Vex)."
+        "judge(Appeals, Mael)."
       ],
       "deletions": []
     },
     {
-      "id": "vex_both",
+      "id": "mael_both",
       "description": "Both writable halves of the current forgiveness shape are added by an indistinguishable writer context.",
       "additions": [
-        "forgive(Appeals, Vex).",
-        "judge(Appeals, Vex)."
+        "forgive(Appeals, Mael).",
+        "judge(Appeals, Mael)."
       ],
       "deletions": []
     },
@@ -782,7 +782,7 @@
         },
         {
           "state": "no_person_bela",
-          "expression": "permits(Tribunal, Hex)",
+          "expression": "permits(Tribunal, Saba)",
           "expected": "TRUE",
           "purpose": "The second voiding credential remains live."
         },
@@ -1013,126 +1013,126 @@
       ],
       "state_refs": [
         "base",
-        "vex_forgive_only",
-        "vex_judgment_only",
-        "vex_both"
+        "mael_forgive_only",
+        "mael_judgment_only",
+        "mael_both"
       ],
       "queries": [
         {
           "state": "base",
-          "expression": "clean(Vex)",
+          "expression": "clean(Mael)",
           "expected": "FALSE",
           "purpose": "Neither entry produces no forgiveness."
         },
         {
           "state": "base",
-          "expression": "false(Vex)",
+          "expression": "false(Mael)",
           "expected": "TRUE",
           "purpose": "The adverse state is live with neither entry."
         },
         {
           "state": "base",
-          "expression": "rotten(Vex)",
+          "expression": "rotten(Mael)",
           "expected": "TRUE",
           "purpose": "The carried mark is live with neither entry."
         },
         {
           "state": "base",
-          "expression": "permits(Review, Vex)",
+          "expression": "permits(Review, Mael)",
           "expected": "FALSE",
           "purpose": "The carried mark blocks the pen with neither entry."
         },
         {
-          "state": "vex_forgive_only",
-          "expression": "clean(Vex)",
+          "state": "mael_forgive_only",
+          "expression": "clean(Mael)",
           "expected": "FALSE",
           "purpose": "The first entry alone does not forgive."
         },
         {
-          "state": "vex_forgive_only",
-          "expression": "false(Vex)",
+          "state": "mael_forgive_only",
+          "expression": "false(Mael)",
           "expected": "TRUE",
           "purpose": "Withholding the judgment half preserves the adverse state."
         },
         {
-          "state": "vex_judgment_only",
-          "expression": "clean(Vex)",
+          "state": "mael_judgment_only",
+          "expression": "clean(Mael)",
           "expected": "FALSE",
           "purpose": "The second entry alone does not forgive."
         },
         {
-          "state": "vex_judgment_only",
-          "expression": "false(Vex)",
+          "state": "mael_judgment_only",
+          "expression": "false(Mael)",
           "expected": "TRUE",
           "purpose": "Withholding the forgiveness half preserves the adverse state."
         },
         {
-          "state": "vex_both",
-          "expression": "clean(Vex)",
+          "state": "mael_both",
+          "expression": "clean(Mael)",
           "expected": "TRUE",
           "purpose": "Both writable entries derive clean."
         },
         {
-          "state": "vex_both",
-          "expression": "false(Vex)",
+          "state": "mael_both",
+          "expression": "false(Mael)",
           "expected": "FALSE",
           "purpose": "Both entries stop the personal void."
         },
         {
-          "state": "vex_both",
-          "expression": "lose(Points, Vex)",
+          "state": "mael_both",
+          "expression": "lose(Points, Mael)",
           "expected": "FALSE",
           "purpose": "No constitutional recognition status or personal recognition-loss conclusion is conferred."
         },
         {
-          "state": "vex_both",
-          "expression": "reward(Vex)",
+          "state": "mael_both",
+          "expression": "reward(Mael)",
           "expected": "FALSE",
           "purpose": "No constitutional recognition status or personal recognition-loss conclusion is conferred."
         },
         {
-          "state": "vex_both",
-          "expression": "rotten(Vex)",
+          "state": "mael_both",
+          "expression": "rotten(Mael)",
           "expected": "TRUE",
           "purpose": "The carried mark remains."
         },
         {
-          "state": "vex_both",
-          "expression": "permits(Review, Vex)",
+          "state": "mael_both",
+          "expression": "permits(Review, Mael)",
           "expected": "FALSE",
           "purpose": "The pen stays lost because forgiveness is not erasure."
         }
       ],
       "comparisons": [
         {
-          "expression": "clean(Vex)",
-          "from_state": "vex_forgive_only",
+          "expression": "clean(Mael)",
+          "from_state": "mael_forgive_only",
           "from_expected": "FALSE",
-          "to_state": "vex_both",
+          "to_state": "mael_both",
           "to_expected": "TRUE",
           "claim": "Withholding the judgment companion vetoes forgiveness."
         },
         {
-          "expression": "clean(Vex)",
-          "from_state": "vex_judgment_only",
+          "expression": "clean(Mael)",
+          "from_state": "mael_judgment_only",
           "from_expected": "FALSE",
-          "to_state": "vex_both",
+          "to_state": "mael_both",
           "to_expected": "TRUE",
           "claim": "Withholding the forgiveness companion vetoes forgiveness."
         }
       ],
       "preserved_invariants": [
         {
-          "expression": "rotten(Vex)",
+          "expression": "rotten(Mael)",
           "from_state": "base",
-          "to_state": "vex_both",
+          "to_state": "mael_both",
           "expected": "TRUE",
           "claim": "Forgiveness leaves the carried mark in place."
         },
         {
-          "expression": "permits(Review, Vex)",
+          "expression": "permits(Review, Mael)",
           "from_state": "base",
-          "to_state": "vex_both",
+          "to_state": "mael_both",
           "expected": "FALSE",
           "claim": "Forgiveness does not restore the pen."
         }
@@ -1523,11 +1523,11 @@
       "snapshot_ref": "base",
       "queries": [
         {
-          "expression": "clean(Vex)",
+          "expression": "clean(Mael)",
           "expected": "FALSE"
         },
         {
-          "expression": "false(Vex)",
+          "expression": "false(Mael)",
           "expected": "TRUE"
         }
       ],
@@ -1544,7 +1544,7 @@
       "future_trigger": "Any closed-world completeness, provenance, or runtime deletion claim requires re-review."
     },
     {
-      "artifact_ref": "book-1/16-public-answerability.md::## Vex's restoration",
+      "artifact_ref": "book-1/16-public-answerability.md::## Mael's restoration",
       "current_claim": "Restoration requires the particular appellate act and independent review, exact subject/finding/purpose/evidence, procedure, historical eligibility and witnessed order. Generic judgments and forgiveness flags are inert. A restored incident and ground cannot be revived by renaming the record; another case or carried appointment restriction remains separate.",
       "classification": "revised_and_scoped",
       "reason": "The 2026-09-19 case-bound finding and restoration rules supersede the historical raw-flag matrix; new substantive case, alias and party regressions test the current mechanism.",

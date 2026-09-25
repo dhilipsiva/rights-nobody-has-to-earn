@@ -58,6 +58,13 @@ class MeasurementTests(unittest.TestCase):
         self.assertEqual(f["harness"], 2)
         self.assertEqual([t for _, k, t in locations if k == "harness name"], ["Targ4", "Targ4"])
 
+    def test_a_name_outside_its_home_chapter_is_a_stray(self):
+        text = "Nell and Koa met."
+        self.assertEqual(lint.measure(text, chapter="03")[0]["strays"], 1)
+        self.assertEqual(lint.measure(text, chapter="16")[0]["strays"], 0)
+        self.assertEqual(lint.measure(text)[0]["strays"], 0)
+        self.assertEqual(lint.measure("Tove and Iris met.", chapter="03")[0]["strays"], 0)
+
     def test_disclaimer_sentences(self):
         f = figures("This does not establish delivery. It proves no arrival. Nell is owed food.")
         self.assertEqual(f["disclaimers"], 2)
@@ -66,7 +73,7 @@ class MeasurementTests(unittest.TestCase):
 class RatchetTests(unittest.TestCase):
     def test_an_input_is_held_to_its_record_or_the_threshold(self):
         recorded = {"negation": 40.0, "jargon": 3.0, "names": 9, "disclaimers": 1,
-                    "banned": 2, "harness": 0}
+                    "banned": 2, "harness": 0, "strays": 0}
         baseline = {"book-1/x.md": recorded}
         worse = dict(recorded, negation=40.1, jargon=4.9)
         self.assertEqual(lint.regressions("book-1/x.md", "chapter", dict(worse, words=1), baseline),
@@ -75,12 +82,15 @@ class RatchetTests(unittest.TestCase):
         self.assertEqual(lint.regressions("book-1/x.md", "chapter", dict(better, words=1), baseline), [])
 
     def test_an_input_without_a_record_meets_the_plan_thresholds(self):
-        f = dict(words=1, negation=21.0, jargon=5.0, names=6, disclaimers=2, banned=1, harness=0)
+        f = dict(words=1, negation=21.0, jargon=5.0, names=6, disclaimers=2, banned=1, harness=0,
+                 strays=1)
         self.assertEqual(lint.regressions("book-1/new.md", "chapter", f, {}),
-                         ["negation 21.0 exceeds 20.0", "names 6 exceeds 5", "banned 1 exceeds 0"])
+                         ["negation 21.0 exceeds 20.0", "names 6 exceeds 5", "banned 1 exceeds 0",
+                          "strays 1 exceeds 0"])
 
     def test_the_method_is_measured_but_not_limited(self):
-        f = dict(words=1, negation=90.0, jargon=90.0, names=40, disclaimers=20, banned=30, harness=5)
+        f = dict(words=1, negation=90.0, jargon=90.0, names=40, disclaimers=20, banned=30, harness=5,
+                 strays=3)
         self.assertEqual(lint.regressions("book-1/method.md", "method", f, {}), [])
 
     def test_ratchet_only_lowers_and_admits_explicitly(self):

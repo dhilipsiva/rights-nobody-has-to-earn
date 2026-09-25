@@ -1,6 +1,6 @@
 # SPDX-License-Identifier: MIT OR Apache-2.0
 :expect-pins 62
-? responsible(Finding_Lupo, CredibilityFinding).
+? responsible(Finding_Edo, CredibilityFinding).
 # => TRUE
 ? false(ProtocolSigner).
 # => TRUE
@@ -30,7 +30,7 @@ judge(Review, RawAccused).
 # => TRUE
 ? false(RawAccused).
 # => FALSE
-show(ProtocolSigner, Lupo_Mira_Incident, Court).
+show(ProtocolSigner, Edo_Mira_Incident, Court).
 ? defend(ProtocolSigner).
 # => FALSE
 show(ProtocolSigner, AnotherDisclosure, Court).
@@ -46,39 +46,39 @@ judge(Appeals, ProtocolSigner).
 # => FALSE
 ? false(ProtocolSigner).
 # => TRUE
-list(Restore_Lupo, ProtocolSigner, Finding_Lupo, CredibilityRestoration).
-list(Restore_Lupo, RestoreCredibilityFinding, Evidence_Restore_Lupo, CredibilityAppealPurposeEvidence).
-judge(Appeals, Restore_Lupo).
-judge(Tribunal, Restore_Lupo).
-authorized(Appeals, CredibilityAppellateDisposition, Restore_Lupo).
-authorized(Tribunal, IndependentCredibilityAppealReview, Restore_Lupo).
-observe(Appeals, Restore_Lupo, ProtocolSigner, CredibilityAppealSubjectScope).
-observe(Appeals, Restore_Lupo, Finding_Lupo, CredibilityAppealFindingScope).
-observe(Appeals, Restore_Lupo, RestoreCredibilityFinding, CredibilityAppealPurposeScope).
-observe(Appeals, Restore_Lupo, Evidence_Restore_Lupo, CredibilityAppealEvidenceScope).
-observe(Appeals, Restore_Lupo, NoticeEvidenceAccessHearingAndReasons, CredibilityAppealProcedureScope).
-observe(Tribunal, Restore_Lupo, ProtocolSigner, CredibilityAppealSubjectScope).
-observe(Tribunal, Restore_Lupo, Finding_Lupo, CredibilityAppealFindingScope).
-observe(Tribunal, Restore_Lupo, RestoreCredibilityFinding, CredibilityAppealPurposeScope).
-observe(Tribunal, Restore_Lupo, Evidence_Restore_Lupo, CredibilityAppealEvidenceScope).
-observe(Tribunal, Restore_Lupo, NoticeEvidenceAccessHearingAndReasons, CredibilityAppealProcedureScope).
-observe(Chronicle, Restore_Lupo, Appeals, CredibilityAppealActorEligibleAtDecisionScope).
-observe(TemporalReview, Restore_Lupo, Appeals, CredibilityAppealActorEligibleAtDecisionScope).
-observe(Chronicle, Restore_Lupo, Tribunal, CredibilityAppealReviewActorEligibleAtDecisionScope).
-observe(TemporalReview, Restore_Lupo, Tribunal, CredibilityAppealReviewActorEligibleAtDecisionScope).
-list(Order_Before_Restore_Lupo, Finding_Lupo, Restore_Lupo, RecordSequence).
-observe(Chronicle, Order_Before_Restore_Lupo, Finding_Lupo, RecordStartScope).
-observe(Chronicle, Order_Before_Restore_Lupo, Restore_Lupo, RecordEndScope).
-observe(TemporalReview, Order_Before_Restore_Lupo, Finding_Lupo, RecordStartScope).
-observe(TemporalReview, Order_Before_Restore_Lupo, Restore_Lupo, RecordEndScope).
-list(Order_After_Restore_Lupo, Restore_Lupo, Epoch_Current, RecordSequence).
-observe(Chronicle, Order_After_Restore_Lupo, Restore_Lupo, RecordStartScope).
-observe(Chronicle, Order_After_Restore_Lupo, Epoch_Current, RecordEndScope).
-observe(TemporalReview, Order_After_Restore_Lupo, Restore_Lupo, RecordStartScope).
-observe(TemporalReview, Order_After_Restore_Lupo, Epoch_Current, RecordEndScope).
-? responsible(Restore_Lupo, CredibilityRestoration).
+list(Restore_Edo, ProtocolSigner, Finding_Edo, CredibilityRestoration).
+list(Restore_Edo, RestoreCredibilityFinding, Evidence_Restore_Edo, CredibilityAppealPurposeEvidence).
+judge(Appeals, Restore_Edo).
+judge(Tribunal, Restore_Edo).
+authorized(Appeals, CredibilityAppellateDisposition, Restore_Edo).
+authorized(Tribunal, IndependentCredibilityAppealReview, Restore_Edo).
+observe(Appeals, Restore_Edo, ProtocolSigner, CredibilityAppealSubjectScope).
+observe(Appeals, Restore_Edo, Finding_Edo, CredibilityAppealFindingScope).
+observe(Appeals, Restore_Edo, RestoreCredibilityFinding, CredibilityAppealPurposeScope).
+observe(Appeals, Restore_Edo, Evidence_Restore_Edo, CredibilityAppealEvidenceScope).
+observe(Appeals, Restore_Edo, NoticeEvidenceAccessHearingAndReasons, CredibilityAppealProcedureScope).
+observe(Tribunal, Restore_Edo, ProtocolSigner, CredibilityAppealSubjectScope).
+observe(Tribunal, Restore_Edo, Finding_Edo, CredibilityAppealFindingScope).
+observe(Tribunal, Restore_Edo, RestoreCredibilityFinding, CredibilityAppealPurposeScope).
+observe(Tribunal, Restore_Edo, Evidence_Restore_Edo, CredibilityAppealEvidenceScope).
+observe(Tribunal, Restore_Edo, NoticeEvidenceAccessHearingAndReasons, CredibilityAppealProcedureScope).
+observe(Chronicle, Restore_Edo, Appeals, CredibilityAppealActorEligibleAtDecisionScope).
+observe(TemporalReview, Restore_Edo, Appeals, CredibilityAppealActorEligibleAtDecisionScope).
+observe(Chronicle, Restore_Edo, Tribunal, CredibilityAppealReviewActorEligibleAtDecisionScope).
+observe(TemporalReview, Restore_Edo, Tribunal, CredibilityAppealReviewActorEligibleAtDecisionScope).
+list(Order_Before_Restore_Edo, Finding_Edo, Restore_Edo, RecordSequence).
+observe(Chronicle, Order_Before_Restore_Edo, Finding_Edo, RecordStartScope).
+observe(Chronicle, Order_Before_Restore_Edo, Restore_Edo, RecordEndScope).
+observe(TemporalReview, Order_Before_Restore_Edo, Finding_Edo, RecordStartScope).
+observe(TemporalReview, Order_Before_Restore_Edo, Restore_Edo, RecordEndScope).
+list(Order_After_Restore_Edo, Restore_Edo, Epoch_Current, RecordSequence).
+observe(Chronicle, Order_After_Restore_Edo, Restore_Edo, RecordStartScope).
+observe(Chronicle, Order_After_Restore_Edo, Epoch_Current, RecordEndScope).
+observe(TemporalReview, Order_After_Restore_Edo, Restore_Edo, RecordStartScope).
+observe(TemporalReview, Order_After_Restore_Edo, Epoch_Current, RecordEndScope).
+? responsible(Restore_Edo, CredibilityRestoration).
 # => TRUE
-? clean(Finding_Lupo, CredibilityFinding).
+? clean(Finding_Edo, CredibilityFinding).
 # => TRUE
 ? false(ProtocolSigner).
 # => FALSE
@@ -87,30 +87,30 @@ observe(TemporalReview, Order_After_Restore_Lupo, Epoch_Current, RecordEndScope)
 ? false(Frisk).
 # => FALSE
 # Renaming the same subject/incident/ground cannot evade its restoration.
-list(Finding_Repeat_By_Renaming, ProtocolSigner, Lupo_Mira_Incident, CredibilityFinding).
+list(Finding_Repeat_By_Renaming, ProtocolSigner, Edo_Mira_Incident, CredibilityFinding).
 list(Finding_Repeat_By_Renaming, CredibilityGroundDeceit, Evidence_Finding_Repeat_By_Renaming, CredibilityGroundEvidence).
 judge(Gia, Finding_Repeat_By_Renaming).
-capture(Gia, ProtocolSigner, Lupo_Mira_Incident).
+capture(Gia, ProtocolSigner, Edo_Mira_Incident).
 cite(Gia, CredibilityGroundDeceit, Finding_Repeat_By_Renaming).
 authorized(Gia, IndependentReviewer, Finding_Repeat_By_Renaming).
 observe(Gia, Finding_Repeat_By_Renaming, ProtocolSigner, CredibilitySubjectScope).
-observe(Gia, Finding_Repeat_By_Renaming, Lupo_Mira_Incident, CredibilityIncidentScope).
+observe(Gia, Finding_Repeat_By_Renaming, Edo_Mira_Incident, CredibilityIncidentScope).
 observe(Gia, Finding_Repeat_By_Renaming, CredibilityGroundDeceit, CredibilityGroundScope).
 observe(Gia, Finding_Repeat_By_Renaming, Evidence_Finding_Repeat_By_Renaming, CredibilityEvidenceScope).
 observe(Gia, Finding_Repeat_By_Renaming, NoticeEvidenceAccessHearingAndReasons, CredibilityProcedureScope).
-judge(Hex, Finding_Repeat_By_Renaming).
-capture(Hex, ProtocolSigner, Lupo_Mira_Incident).
-cite(Hex, CredibilityGroundDeceit, Finding_Repeat_By_Renaming).
-authorized(Hex, IndependentReviewer, Finding_Repeat_By_Renaming).
-observe(Hex, Finding_Repeat_By_Renaming, ProtocolSigner, CredibilitySubjectScope).
-observe(Hex, Finding_Repeat_By_Renaming, Lupo_Mira_Incident, CredibilityIncidentScope).
-observe(Hex, Finding_Repeat_By_Renaming, CredibilityGroundDeceit, CredibilityGroundScope).
-observe(Hex, Finding_Repeat_By_Renaming, Evidence_Finding_Repeat_By_Renaming, CredibilityEvidenceScope).
-observe(Hex, Finding_Repeat_By_Renaming, NoticeEvidenceAccessHearingAndReasons, CredibilityProcedureScope).
+judge(Saba, Finding_Repeat_By_Renaming).
+capture(Saba, ProtocolSigner, Edo_Mira_Incident).
+cite(Saba, CredibilityGroundDeceit, Finding_Repeat_By_Renaming).
+authorized(Saba, IndependentReviewer, Finding_Repeat_By_Renaming).
+observe(Saba, Finding_Repeat_By_Renaming, ProtocolSigner, CredibilitySubjectScope).
+observe(Saba, Finding_Repeat_By_Renaming, Edo_Mira_Incident, CredibilityIncidentScope).
+observe(Saba, Finding_Repeat_By_Renaming, CredibilityGroundDeceit, CredibilityGroundScope).
+observe(Saba, Finding_Repeat_By_Renaming, Evidence_Finding_Repeat_By_Renaming, CredibilityEvidenceScope).
+observe(Saba, Finding_Repeat_By_Renaming, NoticeEvidenceAccessHearingAndReasons, CredibilityProcedureScope).
 observe(Chronicle, Finding_Repeat_By_Renaming, Gia, CredibilityReviewSignerEligibleAtDecisionScope).
 observe(TemporalReview, Finding_Repeat_By_Renaming, Gia, CredibilityReviewSignerEligibleAtDecisionScope).
-observe(Chronicle, Finding_Repeat_By_Renaming, Hex, CredibilityTribunalSignerEligibleAtDecisionScope).
-observe(TemporalReview, Finding_Repeat_By_Renaming, Hex, CredibilityTribunalSignerEligibleAtDecisionScope).
+observe(Chronicle, Finding_Repeat_By_Renaming, Saba, CredibilityTribunalSignerEligibleAtDecisionScope).
+observe(TemporalReview, Finding_Repeat_By_Renaming, Saba, CredibilityTribunalSignerEligibleAtDecisionScope).
 list(Order_Finding_Repeat_By_Renaming, Finding_Repeat_By_Renaming, Epoch_Current, RecordSequence).
 observe(Chronicle, Order_Finding_Repeat_By_Renaming, Finding_Repeat_By_Renaming, RecordStartScope).
 observe(Chronicle, Order_Finding_Repeat_By_Renaming, Epoch_Current, RecordEndScope).
@@ -123,30 +123,30 @@ observe(TemporalReview, Order_Finding_Repeat_By_Renaming, Epoch_Current, RecordE
 ? false(ProtocolSigner).
 # => FALSE
 # A different ground in the same incident requires its own disposition.
-list(Finding_Different_Ground, ProtocolSigner, Lupo_Mira_Incident, CredibilityFinding).
+list(Finding_Different_Ground, ProtocolSigner, Edo_Mira_Incident, CredibilityFinding).
 list(Finding_Different_Ground, CredibilityGroundFabricatedRecord, Evidence_Finding_Different_Ground, CredibilityGroundEvidence).
 judge(Gia, Finding_Different_Ground).
-capture(Gia, ProtocolSigner, Lupo_Mira_Incident).
+capture(Gia, ProtocolSigner, Edo_Mira_Incident).
 cite(Gia, CredibilityGroundFabricatedRecord, Finding_Different_Ground).
 authorized(Gia, IndependentReviewer, Finding_Different_Ground).
 observe(Gia, Finding_Different_Ground, ProtocolSigner, CredibilitySubjectScope).
-observe(Gia, Finding_Different_Ground, Lupo_Mira_Incident, CredibilityIncidentScope).
+observe(Gia, Finding_Different_Ground, Edo_Mira_Incident, CredibilityIncidentScope).
 observe(Gia, Finding_Different_Ground, CredibilityGroundFabricatedRecord, CredibilityGroundScope).
 observe(Gia, Finding_Different_Ground, Evidence_Finding_Different_Ground, CredibilityEvidenceScope).
 observe(Gia, Finding_Different_Ground, NoticeEvidenceAccessHearingAndReasons, CredibilityProcedureScope).
-judge(Hex, Finding_Different_Ground).
-capture(Hex, ProtocolSigner, Lupo_Mira_Incident).
-cite(Hex, CredibilityGroundFabricatedRecord, Finding_Different_Ground).
-authorized(Hex, IndependentReviewer, Finding_Different_Ground).
-observe(Hex, Finding_Different_Ground, ProtocolSigner, CredibilitySubjectScope).
-observe(Hex, Finding_Different_Ground, Lupo_Mira_Incident, CredibilityIncidentScope).
-observe(Hex, Finding_Different_Ground, CredibilityGroundFabricatedRecord, CredibilityGroundScope).
-observe(Hex, Finding_Different_Ground, Evidence_Finding_Different_Ground, CredibilityEvidenceScope).
-observe(Hex, Finding_Different_Ground, NoticeEvidenceAccessHearingAndReasons, CredibilityProcedureScope).
+judge(Saba, Finding_Different_Ground).
+capture(Saba, ProtocolSigner, Edo_Mira_Incident).
+cite(Saba, CredibilityGroundFabricatedRecord, Finding_Different_Ground).
+authorized(Saba, IndependentReviewer, Finding_Different_Ground).
+observe(Saba, Finding_Different_Ground, ProtocolSigner, CredibilitySubjectScope).
+observe(Saba, Finding_Different_Ground, Edo_Mira_Incident, CredibilityIncidentScope).
+observe(Saba, Finding_Different_Ground, CredibilityGroundFabricatedRecord, CredibilityGroundScope).
+observe(Saba, Finding_Different_Ground, Evidence_Finding_Different_Ground, CredibilityEvidenceScope).
+observe(Saba, Finding_Different_Ground, NoticeEvidenceAccessHearingAndReasons, CredibilityProcedureScope).
 observe(Chronicle, Finding_Different_Ground, Gia, CredibilityReviewSignerEligibleAtDecisionScope).
 observe(TemporalReview, Finding_Different_Ground, Gia, CredibilityReviewSignerEligibleAtDecisionScope).
-observe(Chronicle, Finding_Different_Ground, Hex, CredibilityTribunalSignerEligibleAtDecisionScope).
-observe(TemporalReview, Finding_Different_Ground, Hex, CredibilityTribunalSignerEligibleAtDecisionScope).
+observe(Chronicle, Finding_Different_Ground, Saba, CredibilityTribunalSignerEligibleAtDecisionScope).
+observe(TemporalReview, Finding_Different_Ground, Saba, CredibilityTribunalSignerEligibleAtDecisionScope).
 list(Order_Finding_Different_Ground, Finding_Different_Ground, Epoch_Current, RecordSequence).
 observe(Chronicle, Order_Finding_Different_Ground, Finding_Different_Ground, RecordStartScope).
 observe(Chronicle, Order_Finding_Different_Ground, Epoch_Current, RecordEndScope).
@@ -190,40 +190,40 @@ observe(TemporalReview, Order_After_Restore_Different_Ground, Epoch_Current, Rec
 # => TRUE
 ? false(ProtocolSigner).
 # => FALSE
-list(Finding_Lupo_Second, ProtocolSigner, SecondIncident, CredibilityFinding).
-list(Finding_Lupo_Second, CredibilityGroundDeceit, Evidence_Finding_Lupo_Second, CredibilityGroundEvidence).
-judge(Gia, Finding_Lupo_Second).
+list(Finding_Edo_Second, ProtocolSigner, SecondIncident, CredibilityFinding).
+list(Finding_Edo_Second, CredibilityGroundDeceit, Evidence_Finding_Edo_Second, CredibilityGroundEvidence).
+judge(Gia, Finding_Edo_Second).
 capture(Gia, ProtocolSigner, SecondIncident).
-cite(Gia, CredibilityGroundDeceit, Finding_Lupo_Second).
-authorized(Gia, IndependentReviewer, Finding_Lupo_Second).
-observe(Gia, Finding_Lupo_Second, ProtocolSigner, CredibilitySubjectScope).
-observe(Gia, Finding_Lupo_Second, SecondIncident, CredibilityIncidentScope).
-observe(Gia, Finding_Lupo_Second, CredibilityGroundDeceit, CredibilityGroundScope).
-observe(Gia, Finding_Lupo_Second, Evidence_Finding_Lupo_Second, CredibilityEvidenceScope).
-observe(Gia, Finding_Lupo_Second, NoticeEvidenceAccessHearingAndReasons, CredibilityProcedureScope).
-judge(Hex, Finding_Lupo_Second).
-capture(Hex, ProtocolSigner, SecondIncident).
-cite(Hex, CredibilityGroundDeceit, Finding_Lupo_Second).
-authorized(Hex, IndependentReviewer, Finding_Lupo_Second).
-observe(Hex, Finding_Lupo_Second, ProtocolSigner, CredibilitySubjectScope).
-observe(Hex, Finding_Lupo_Second, SecondIncident, CredibilityIncidentScope).
-observe(Hex, Finding_Lupo_Second, CredibilityGroundDeceit, CredibilityGroundScope).
-observe(Hex, Finding_Lupo_Second, Evidence_Finding_Lupo_Second, CredibilityEvidenceScope).
-observe(Hex, Finding_Lupo_Second, NoticeEvidenceAccessHearingAndReasons, CredibilityProcedureScope).
-observe(Chronicle, Finding_Lupo_Second, Gia, CredibilityReviewSignerEligibleAtDecisionScope).
-observe(TemporalReview, Finding_Lupo_Second, Gia, CredibilityReviewSignerEligibleAtDecisionScope).
-observe(Chronicle, Finding_Lupo_Second, Hex, CredibilityTribunalSignerEligibleAtDecisionScope).
-observe(TemporalReview, Finding_Lupo_Second, Hex, CredibilityTribunalSignerEligibleAtDecisionScope).
-list(Order_Finding_Lupo_Second, Finding_Lupo_Second, Epoch_Current, RecordSequence).
-observe(Chronicle, Order_Finding_Lupo_Second, Finding_Lupo_Second, RecordStartScope).
-observe(Chronicle, Order_Finding_Lupo_Second, Epoch_Current, RecordEndScope).
-observe(TemporalReview, Order_Finding_Lupo_Second, Finding_Lupo_Second, RecordStartScope).
-observe(TemporalReview, Order_Finding_Lupo_Second, Epoch_Current, RecordEndScope).
+cite(Gia, CredibilityGroundDeceit, Finding_Edo_Second).
+authorized(Gia, IndependentReviewer, Finding_Edo_Second).
+observe(Gia, Finding_Edo_Second, ProtocolSigner, CredibilitySubjectScope).
+observe(Gia, Finding_Edo_Second, SecondIncident, CredibilityIncidentScope).
+observe(Gia, Finding_Edo_Second, CredibilityGroundDeceit, CredibilityGroundScope).
+observe(Gia, Finding_Edo_Second, Evidence_Finding_Edo_Second, CredibilityEvidenceScope).
+observe(Gia, Finding_Edo_Second, NoticeEvidenceAccessHearingAndReasons, CredibilityProcedureScope).
+judge(Saba, Finding_Edo_Second).
+capture(Saba, ProtocolSigner, SecondIncident).
+cite(Saba, CredibilityGroundDeceit, Finding_Edo_Second).
+authorized(Saba, IndependentReviewer, Finding_Edo_Second).
+observe(Saba, Finding_Edo_Second, ProtocolSigner, CredibilitySubjectScope).
+observe(Saba, Finding_Edo_Second, SecondIncident, CredibilityIncidentScope).
+observe(Saba, Finding_Edo_Second, CredibilityGroundDeceit, CredibilityGroundScope).
+observe(Saba, Finding_Edo_Second, Evidence_Finding_Edo_Second, CredibilityEvidenceScope).
+observe(Saba, Finding_Edo_Second, NoticeEvidenceAccessHearingAndReasons, CredibilityProcedureScope).
+observe(Chronicle, Finding_Edo_Second, Gia, CredibilityReviewSignerEligibleAtDecisionScope).
+observe(TemporalReview, Finding_Edo_Second, Gia, CredibilityReviewSignerEligibleAtDecisionScope).
+observe(Chronicle, Finding_Edo_Second, Saba, CredibilityTribunalSignerEligibleAtDecisionScope).
+observe(TemporalReview, Finding_Edo_Second, Saba, CredibilityTribunalSignerEligibleAtDecisionScope).
+list(Order_Finding_Edo_Second, Finding_Edo_Second, Epoch_Current, RecordSequence).
+observe(Chronicle, Order_Finding_Edo_Second, Finding_Edo_Second, RecordStartScope).
+observe(Chronicle, Order_Finding_Edo_Second, Epoch_Current, RecordEndScope).
+observe(TemporalReview, Order_Finding_Edo_Second, Finding_Edo_Second, RecordStartScope).
+observe(TemporalReview, Order_Finding_Edo_Second, Epoch_Current, RecordEndScope).
 ? false(ProtocolSigner).
 # => TRUE
 ? agree(Finding_Frisk, CredibilityFindingCandidate).
 # => FALSE
-? clean(Finding_Lupo_Second, CredibilityFinding).
+? clean(Finding_Edo_Second, CredibilityFinding).
 # => FALSE
 parent(ParentOnly, ChildOnly).
 judge(ParentOnly, ChildOnly).
@@ -246,18 +246,18 @@ observe(Gia, Finding_Mixed, Incident_A, CredibilityIncidentScope).
 observe(Gia, Finding_Mixed, CredibilityGroundDeceit, CredibilityGroundScope).
 observe(Gia, Finding_Mixed, Evidence_Finding_Mixed, CredibilityEvidenceScope).
 observe(Gia, Finding_Mixed, NoticeEvidenceAccessHearingAndReasons, CredibilityProcedureScope).
-judge(Hex, Finding_Mixed).
-capture(Hex, MixedSubject, Incident_B).
-cite(Hex, CredibilityGroundDeceit, Finding_Mixed).
-authorized(Hex, IndependentReviewer, Finding_Mixed).
-observe(Hex, Finding_Mixed, MixedSubject, CredibilitySubjectScope).
-observe(Hex, Finding_Mixed, Incident_A, CredibilityIncidentScope).
-observe(Hex, Finding_Mixed, CredibilityGroundDeceit, CredibilityGroundScope).
-observe(Hex, Finding_Mixed, Evidence_Finding_Mixed, CredibilityEvidenceScope).
-observe(Hex, Finding_Mixed, NoticeEvidenceAccessHearingAndReasons, CredibilityProcedureScope).
+judge(Saba, Finding_Mixed).
+capture(Saba, MixedSubject, Incident_B).
+cite(Saba, CredibilityGroundDeceit, Finding_Mixed).
+authorized(Saba, IndependentReviewer, Finding_Mixed).
+observe(Saba, Finding_Mixed, MixedSubject, CredibilitySubjectScope).
+observe(Saba, Finding_Mixed, Incident_A, CredibilityIncidentScope).
+observe(Saba, Finding_Mixed, CredibilityGroundDeceit, CredibilityGroundScope).
+observe(Saba, Finding_Mixed, Evidence_Finding_Mixed, CredibilityEvidenceScope).
+observe(Saba, Finding_Mixed, NoticeEvidenceAccessHearingAndReasons, CredibilityProcedureScope).
 ? agree(Finding_Mixed, CredibilityFindingCandidate).
 # => FALSE
-capture(Hex, MixedSubject, Incident_A).
+capture(Saba, MixedSubject, Incident_A).
 ? agree(Finding_Mixed, CredibilityFindingCandidate).
 # => TRUE
 list(Finding_Grant, GrantSubject, GrantIncident, CredibilityFinding).
@@ -271,18 +271,18 @@ observe(Gia, Finding_Grant, GrantIncident, CredibilityIncidentScope).
 observe(Gia, Finding_Grant, CredibilityGroundDeceit, CredibilityGroundScope).
 observe(Gia, Finding_Grant, Evidence_Finding_Grant, CredibilityEvidenceScope).
 observe(Gia, Finding_Grant, NoticeEvidenceAccessHearingAndReasons, CredibilityProcedureScope).
-judge(Hex, Finding_Grant).
-capture(Hex, GrantSubject, GrantIncident).
-cite(Hex, CredibilityGroundDeceit, Finding_Grant).
-authorized(Hex, IndependentReviewer, AnotherGrantCase).
-observe(Hex, Finding_Grant, GrantSubject, CredibilitySubjectScope).
-observe(Hex, Finding_Grant, GrantIncident, CredibilityIncidentScope).
-observe(Hex, Finding_Grant, CredibilityGroundDeceit, CredibilityGroundScope).
-observe(Hex, Finding_Grant, Evidence_Finding_Grant, CredibilityEvidenceScope).
-observe(Hex, Finding_Grant, NoticeEvidenceAccessHearingAndReasons, CredibilityProcedureScope).
+judge(Saba, Finding_Grant).
+capture(Saba, GrantSubject, GrantIncident).
+cite(Saba, CredibilityGroundDeceit, Finding_Grant).
+authorized(Saba, IndependentReviewer, AnotherGrantCase).
+observe(Saba, Finding_Grant, GrantSubject, CredibilitySubjectScope).
+observe(Saba, Finding_Grant, GrantIncident, CredibilityIncidentScope).
+observe(Saba, Finding_Grant, CredibilityGroundDeceit, CredibilityGroundScope).
+observe(Saba, Finding_Grant, Evidence_Finding_Grant, CredibilityEvidenceScope).
+observe(Saba, Finding_Grant, NoticeEvidenceAccessHearingAndReasons, CredibilityProcedureScope).
 ? agree(Finding_Grant, CredibilityFindingCandidate).
 # => FALSE
-authorized(Hex, IndependentReviewer, Finding_Grant).
+authorized(Saba, IndependentReviewer, Finding_Grant).
 ? agree(Finding_Grant, CredibilityFindingCandidate).
 # => TRUE
 list(Finding_Unregistered, UnregisteredTarget, UnregisteredIncident, CredibilityFinding).
@@ -296,18 +296,18 @@ observe(Gia, Finding_Unregistered, UnregisteredIncident, CredibilityIncidentScop
 observe(Gia, Finding_Unregistered, CredibilityGroundDeceit, CredibilityGroundScope).
 observe(Gia, Finding_Unregistered, Evidence_Finding_Unregistered, CredibilityEvidenceScope).
 observe(Gia, Finding_Unregistered, NoticeEvidenceAccessHearingAndReasons, CredibilityProcedureScope).
-judge(Hex, Finding_Unregistered).
-capture(Hex, UnregisteredTarget, UnregisteredIncident).
-cite(Hex, CredibilityGroundDeceit, Finding_Unregistered).
-authorized(Hex, IndependentReviewer, Finding_Unregistered).
-observe(Hex, Finding_Unregistered, UnregisteredTarget, CredibilitySubjectScope).
-observe(Hex, Finding_Unregistered, UnregisteredIncident, CredibilityIncidentScope).
-observe(Hex, Finding_Unregistered, CredibilityGroundDeceit, CredibilityGroundScope).
-observe(Hex, Finding_Unregistered, Evidence_Finding_Unregistered, CredibilityEvidenceScope).
-observe(Hex, Finding_Unregistered, NoticeEvidenceAccessHearingAndReasons, CredibilityProcedureScope).
+judge(Saba, Finding_Unregistered).
+capture(Saba, UnregisteredTarget, UnregisteredIncident).
+cite(Saba, CredibilityGroundDeceit, Finding_Unregistered).
+authorized(Saba, IndependentReviewer, Finding_Unregistered).
+observe(Saba, Finding_Unregistered, UnregisteredTarget, CredibilitySubjectScope).
+observe(Saba, Finding_Unregistered, UnregisteredIncident, CredibilityIncidentScope).
+observe(Saba, Finding_Unregistered, CredibilityGroundDeceit, CredibilityGroundScope).
+observe(Saba, Finding_Unregistered, Evidence_Finding_Unregistered, CredibilityEvidenceScope).
+observe(Saba, Finding_Unregistered, NoticeEvidenceAccessHearingAndReasons, CredibilityProcedureScope).
 observe(Chronicle, Finding_Unregistered, Gia, CredibilityReviewSignerEligibleAtDecisionScope).
 observe(TemporalReview, Finding_Unregistered, Gia, CredibilityReviewSignerEligibleAtDecisionScope).
-observe(Chronicle, Finding_Unregistered, Hex, CredibilityTribunalSignerEligibleAtDecisionScope).
+observe(Chronicle, Finding_Unregistered, Saba, CredibilityTribunalSignerEligibleAtDecisionScope).
 list(Order_Finding_Unregistered, Finding_Unregistered, Epoch_Current, RecordSequence).
 observe(Chronicle, Order_Finding_Unregistered, Finding_Unregistered, RecordStartScope).
 observe(Chronicle, Order_Finding_Unregistered, Epoch_Current, RecordEndScope).
@@ -317,7 +317,7 @@ observe(TemporalReview, Order_Finding_Unregistered, Epoch_Current, RecordEndScop
 # => FALSE
 ? false(UnregisteredTarget).
 # => FALSE
-observe(TemporalReview, Finding_Unregistered, Hex, CredibilityTribunalSignerEligibleAtDecisionScope).
+observe(TemporalReview, Finding_Unregistered, Saba, CredibilityTribunalSignerEligibleAtDecisionScope).
 ? responsible(Finding_Unregistered, CredibilityFinding).
 # => TRUE
 ? false(UnregisteredTarget).
@@ -326,7 +326,7 @@ observe(TemporalReview, Finding_Unregistered, Hex, CredibilityTribunalSignerElig
 # => FALSE
 ? obliged(Review, ExplainTheGroundOfACredibilityFinding, UnregisteredTarget).
 # => TRUE
-observe(Chronicle, Finding_Unregistered, Hex, CredibilitySignerDisqualifiedAtDecisionScope).
+observe(Chronicle, Finding_Unregistered, Saba, CredibilitySignerDisqualifiedAtDecisionScope).
 ? responsible(Finding_Unregistered, CredibilityFinding).
 # => FALSE
 ? false(UnregisteredTarget).
@@ -342,19 +342,19 @@ observe(Gia, Finding_Ambiguous, AmbiguousIncident, CredibilityIncidentScope).
 observe(Gia, Finding_Ambiguous, CredibilityGroundDeceit, CredibilityGroundScope).
 observe(Gia, Finding_Ambiguous, Evidence_Finding_Ambiguous, CredibilityEvidenceScope).
 observe(Gia, Finding_Ambiguous, NoticeEvidenceAccessHearingAndReasons, CredibilityProcedureScope).
-judge(Hex, Finding_Ambiguous).
-capture(Hex, AmbiguousSubject, AmbiguousIncident).
-cite(Hex, CredibilityGroundDeceit, Finding_Ambiguous).
-authorized(Hex, IndependentReviewer, Finding_Ambiguous).
-observe(Hex, Finding_Ambiguous, AmbiguousSubject, CredibilitySubjectScope).
-observe(Hex, Finding_Ambiguous, AmbiguousIncident, CredibilityIncidentScope).
-observe(Hex, Finding_Ambiguous, CredibilityGroundDeceit, CredibilityGroundScope).
-observe(Hex, Finding_Ambiguous, Evidence_Finding_Ambiguous, CredibilityEvidenceScope).
-observe(Hex, Finding_Ambiguous, NoticeEvidenceAccessHearingAndReasons, CredibilityProcedureScope).
+judge(Saba, Finding_Ambiguous).
+capture(Saba, AmbiguousSubject, AmbiguousIncident).
+cite(Saba, CredibilityGroundDeceit, Finding_Ambiguous).
+authorized(Saba, IndependentReviewer, Finding_Ambiguous).
+observe(Saba, Finding_Ambiguous, AmbiguousSubject, CredibilitySubjectScope).
+observe(Saba, Finding_Ambiguous, AmbiguousIncident, CredibilityIncidentScope).
+observe(Saba, Finding_Ambiguous, CredibilityGroundDeceit, CredibilityGroundScope).
+observe(Saba, Finding_Ambiguous, Evidence_Finding_Ambiguous, CredibilityEvidenceScope).
+observe(Saba, Finding_Ambiguous, NoticeEvidenceAccessHearingAndReasons, CredibilityProcedureScope).
 observe(Chronicle, Finding_Ambiguous, Gia, CredibilityReviewSignerEligibleAtDecisionScope).
 observe(TemporalReview, Finding_Ambiguous, Gia, CredibilityReviewSignerEligibleAtDecisionScope).
-observe(Chronicle, Finding_Ambiguous, Hex, CredibilityTribunalSignerEligibleAtDecisionScope).
-observe(TemporalReview, Finding_Ambiguous, Hex, CredibilityTribunalSignerEligibleAtDecisionScope).
+observe(Chronicle, Finding_Ambiguous, Saba, CredibilityTribunalSignerEligibleAtDecisionScope).
+observe(TemporalReview, Finding_Ambiguous, Saba, CredibilityTribunalSignerEligibleAtDecisionScope).
 list(Order_Finding_Ambiguous, Finding_Ambiguous, Epoch_Current, RecordSequence).
 observe(Chronicle, Order_Finding_Ambiguous, Finding_Ambiguous, RecordStartScope).
 observe(Chronicle, Order_Finding_Ambiguous, Epoch_Current, RecordEndScope).
@@ -382,15 +382,15 @@ observe(Gia, Finding_Parent, KinshipIncident, CredibilityIncidentScope).
 observe(Gia, Finding_Parent, CredibilityGroundDeceit, CredibilityGroundScope).
 observe(Gia, Finding_Parent, Evidence_Finding_Parent, CredibilityEvidenceScope).
 observe(Gia, Finding_Parent, NoticeEvidenceAccessHearingAndReasons, CredibilityProcedureScope).
-judge(Hex, Finding_Parent).
-capture(Hex, KinshipSubject, KinshipIncident).
-cite(Hex, CredibilityGroundDeceit, Finding_Parent).
-authorized(Hex, IndependentReviewer, Finding_Parent).
-observe(Hex, Finding_Parent, KinshipSubject, CredibilitySubjectScope).
-observe(Hex, Finding_Parent, KinshipIncident, CredibilityIncidentScope).
-observe(Hex, Finding_Parent, CredibilityGroundDeceit, CredibilityGroundScope).
-observe(Hex, Finding_Parent, Evidence_Finding_Parent, CredibilityEvidenceScope).
-observe(Hex, Finding_Parent, NoticeEvidenceAccessHearingAndReasons, CredibilityProcedureScope).
+judge(Saba, Finding_Parent).
+capture(Saba, KinshipSubject, KinshipIncident).
+cite(Saba, CredibilityGroundDeceit, Finding_Parent).
+authorized(Saba, IndependentReviewer, Finding_Parent).
+observe(Saba, Finding_Parent, KinshipSubject, CredibilitySubjectScope).
+observe(Saba, Finding_Parent, KinshipIncident, CredibilityIncidentScope).
+observe(Saba, Finding_Parent, CredibilityGroundDeceit, CredibilityGroundScope).
+observe(Saba, Finding_Parent, Evidence_Finding_Parent, CredibilityEvidenceScope).
+observe(Saba, Finding_Parent, NoticeEvidenceAccessHearingAndReasons, CredibilityProcedureScope).
 ? agree(Finding_Parent, CredibilityFindingCandidate).
 # => TRUE
 parent(Gia, KinshipSubject).

@@ -40,7 +40,7 @@
 # => TRUE
 
 # Reviewed expected consequence in no_person_bela.
-? permits(Tribunal, Hex).
+? permits(Tribunal, Saba).
 # => TRUE
 
 # Reviewed expected consequence in no_person_bela.

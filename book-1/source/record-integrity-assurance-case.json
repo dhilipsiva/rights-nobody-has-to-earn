@@ -538,7 +538,7 @@
           "kind": "generated",
           "role": "exposes_gap",
           "supports": "RI-13",
-          "ref": "book-1/source/assertion-surface-audit.md::withhold or delete a true `married(Gia, Hex)` entry."
+          "ref": "book-1/source/assertion-surface-audit.md::withhold or delete a true `married(Gia, Saba)` entry."
         },
         {
           "kind": "generated",
@@ -1010,7 +1010,7 @@
       "future_trigger": "Revise with the later semantic-amendment and source-transition rule family and its counterfactuals."
     },
     {
-      "artifact_ref": "book-1/07-who-owes-and-what-follows.md::A finding reaches an independently named reader and produces an action duty",
+      "artifact_ref": "book-1/07-who-owes-and-what-follows.md::A finding reaches an independently named responding office and produces an action duty",
       "current_claim": "Every current formal finding kind reaches an exact source-bound typed reader/action route; the route proves no receipt, action, delivery, completed remedy, recurrence control, or institutional liveness.",
       "classification": "revised",
       "reason": "FS-CVF-016 retires the historical unread-duty endpoint with exact reader, nonresponse, alternate, continuity, individual-remedy, correction, re-audit, recurrence, and non-delay controls.",

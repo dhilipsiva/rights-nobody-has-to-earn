@@ -52,7 +52,7 @@
       "snapshots": [
         {
           "source": "book-1/24-the-shield.pins.nibli",
-          "through": "prisoner(Sly).",
+          "through": "prisoner(Lior).",
           "occurrence": 1
         }
       ],
@@ -80,7 +80,7 @@
       "snapshots": [
         {
           "source": "book-1/24-the-shield.pins.nibli",
-          "through": "prisoner(Don).",
+          "through": "prisoner(Faro).",
           "occurrence": 1
         }
       ],
@@ -557,7 +557,7 @@
       "snapshots": [
         {
           "source": "book-1/23-who-holds-the-pen.pins.nibli",
-          "through": "permits(Review, Boss).",
+          "through": "permits(Review, Tove).",
           "occurrence": 1
         }
       ],
@@ -571,7 +571,7 @@
       "snapshots": [
         {
           "source": "book-1/23-who-holds-the-pen.pins.nibli",
-          "through": "permits(Review, Vex).",
+          "through": "permits(Review, Mael).",
           "occurrence": 1
         }
       ],
@@ -645,7 +645,7 @@
       "snapshots": [
         {
           "source": "book-1/24-the-shield.pins.nibli",
-          "through": "false(Rex).",
+          "through": "false(Dara).",
           "occurrence": 1
         }
       ],
@@ -658,7 +658,7 @@
       "snapshots": [
         {
           "source": "book-1/24-the-shield.pins.nibli",
-          "through": "prisoner(Rex).",
+          "through": "prisoner(Dara).",
           "occurrence": 1
         }
       ],
@@ -671,7 +671,7 @@
       "snapshots": [
         {
           "source": "book-1/24-the-shield.pins.nibli",
-          "through": "defend(Rex).",
+          "through": "defend(Dara).",
           "occurrence": 2
         }
       ],
@@ -684,7 +684,7 @@
       "snapshots": [
         {
           "source": "book-1/24-the-shield.pins.nibli",
-          "through": "prisoner(Rex).",
+          "through": "prisoner(Dara).",
           "occurrence": 5
         }
       ],
@@ -770,7 +770,7 @@
       "snapshots": [
         {
           "source": "book-1/24-the-shield.pins.nibli",
-          "through": "defend(Sly).",
+          "through": "defend(Lior).",
           "occurrence": 3
         }
       ],
@@ -783,7 +783,7 @@
       "snapshots": [
         {
           "source": "book-1/24-the-shield.pins.nibli",
-          "through": "defend(Sly).",
+          "through": "defend(Lior).",
           "occurrence": 3
         }
       ],
@@ -797,7 +797,7 @@
       "snapshots": [
         {
           "source": "book-1/24-the-shield.pins.nibli",
-          "through": "defend(Rex).",
+          "through": "defend(Dara).",
           "occurrence": 3
         }
       ],
@@ -988,7 +988,7 @@
       "snapshots": [
         {
           "source": "book-1/source/counterfactual/no-public-court.pins.nibli",
-          "through": "prisoner(Sly).",
+          "through": "prisoner(Lior).",
           "occurrence": 1
         }
       ],
@@ -1002,7 +1002,7 @@
       "snapshots": [
         {
           "source": "book-1/source/counterfactual/no-public-court.pins.nibli",
-          "through": "prisoner(Sly).",
+          "through": "prisoner(Lior).",
           "occurrence": 1
         }
       ],

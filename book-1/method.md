@@ -469,6 +469,53 @@ shape rather than vocabulary for that reason, and none of the checks
 establishes that every harmful rule is unwritable. A refused rule proves a
 property of one encoding; an accepted one proves only that it loads.
 
+## Versions of the record
+
+The chapters speak of the version of the record in force, and of a finding
+recorded in an earlier version and kept in the one in force. This is how the
+source represents that.
+
+A snapshot of the record gives way to a successor only through a transition
+both timing witnesses attest. `replace($after, $before, Chronicle)` names the
+one predecessor; each snapshot's manifest carries matching observations from
+`Chronicle` and `TemporalReview`; and a successor naming two predecessors, a
+predecessor with two successors, or two snapshots replacing each other is a
+collision that no accepted transition survives:
+
+```nibli
+all $after: all $first: all $second: replace($after, $first, Chronicle) & replace($after, $second, Chronicle) & ~($first = $second) -> collide($after, TransitionLineage).
+```
+
+Only the last accepted successor, on the lineage the witnessed passport
+selects, gives an adverse status or a public power its effect in a fresh
+evaluation. A later accepted snapshot makes the earlier one non-terminal; the
+source cannot make that later snapshot arrive.
+
+A status passes from one version to the next only when the transition says
+it does: both witnesses record a `carries` entry for that person, that pair of
+snapshots and that kind of status. A credibility finding or a clearance that
+the transition does not carry ends with the old version, and the omission is
+a named defect (`CarryOmission`, `ClearOmission`) rather than a silent loss. A
+carry with no status behind it is also a defect (`CarryForgery`,
+`ClearForgery`), and a finding and a clearance both carried for one person
+conflict. Standing works the other way round, because it protects:
+
+```nibli
+all $x: all $after: all $before: succeed($after, Transition) & replace($after, $before, Chronicle) & authorized($x, StandingStatus, $before) & complete($x, StandingScope) & observe(Chronicle, $x, $before, StandingScope) & observe(TemporalReview, $x, $before, StandingScope) -> person($x).
+```
+
+An independently witnessed standing status in the predecessor keeps its
+subject a person even when the successor omits it, and the omission is the
+`StandingOmission` defect. The affected person can contest any of these
+defects, which gives the appeals body a duty to hear the challenge.
+
+The custody authorisation and its review date that the chapters describe are
+the same mechanism applied to one case: the source calls the authorisation a
+lease and the period until review its window. Custody follows only while a
+lease names the case, the court, the subject, the period and the exact
+constitutional source, each independently witnessed, and a missing, stale or
+conflicting renewal ends the authority without releasing anyone.
+
 ## Comparing and selecting an amendment
 
 The amendment cases distinguish records claiming to concern the same text

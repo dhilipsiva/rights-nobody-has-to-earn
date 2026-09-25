@@ -35,7 +35,8 @@ BASELINE = ROOT / "tools" / "prose_lint_baseline.json"
 NEG = re.compile(r"\b(?:not|no|neither|nor|cannot|never|none)\b|n['’]t\b", re.I)
 JARGON = re.compile(
     r"\b(?:deriv\w*|supplied|qualif\w*|establish\w*|readers?|effective|windows?|"
-    r"leases?|leased|carr(?:y|ies|ied|ying)|selected current records?)\b",
+    r"leases?|leased|carr(?:y|ies|ied|ying)|selected current records?|pens?|"
+    r"credentials?)\b",
     re.I,
 )
 DISCLAIMER = re.compile(
@@ -63,13 +64,22 @@ FIXTURES = [
     "Provender", "Ledgerwitness", "Ledgerhouse", "Foundry", "Steward", "Assay",
     "Assayer", "Harrow", "Quillon",
 ]
-CAST = [
-    "Nell", "Ori", "Bela", "Cira", "Ansel", "Coll", "Marlo", "Esa", "Fin", "Dev",
-    "Nima", "Pico", "Ona", "Boss", "Rebel", "Gia", "Wren", "Vex", "Don", "Pax",
-    "Sly", "Kel", "Rex", "Sena", "Lupo", "Mira", "Nia", "Ruk", "Hano", "Jala",
-    "Ivo", "Lalo", "Adam", "Nando", "Zed", "Koa", "Hex", "Quin", "Tyr", "Opal",
-    "Sata", "Yano", "Marisol", "Brix", "Dunya", "Zeno", "Voss", "Ambi",
+# The recurring cast (item 51): at most fifteen people, whose facts stay the
+# same wherever they appear. Every other person belongs to one home chapter
+# and is described by role elsewhere; the opening's index may name everyone.
+RECURRING = [
+    "Nell", "Hano", "Ruk", "Bela", "Cira", "Marisol", "Esa", "Adam", "Ivo",
+    "Kel", "Gia", "Wren", "Iris", "Tove", "Mael",
 ]
+HOME = {
+    "Ori": "01", "Marlo": "09", "Ansel": "09", "Coll": "09", "Nima": "10",
+    "Pico": "10", "Ona": "10", "Quin": "10", "Sata": "10", "Yano": "10",
+    "Koa": "16", "Nia": "21", "Faro": "24", "Pax": "24", "Lior": "24",
+    "Dara": "24", "Sena": "24", "Dev": "25", "Edo": "25", "Mira": "25",
+    "Tyr": "25", "Saba": "25", "Fin": "26", "Zed": "27", "Lalo": "28",
+    "Nando": "28", "Opal": "28", "Jala": "29",
+}
+CAST = RECURRING + sorted(HOME)
 # A case name is anything a reader must hold in mind as a particular: the cast,
 # institutional fixtures and harness names alike. A harness name is counted
 # once here and also listed where it occurs, because the count measures load
@@ -80,13 +90,13 @@ NAMES = sorted(set(CAST + FIXTURES + HARNESS))
 # reported but not held to a limit.
 PROFILES = {
     "chapter": {"negation": 20.0, "jargon": 5.0, "names": 5, "disclaimers": 2,
-                "banned": 0, "harness": 0},
+                "banned": 0, "harness": 0, "strays": 0},
     "opening": {"negation": 20.0, "jargon": 5.0, "names": None, "disclaimers": 2,
-                "banned": 0, "harness": 0},
+                "banned": 0, "harness": 0, "strays": None},
     "method": {"negation": None, "jargon": None, "names": None, "disclaimers": None,
-               "banned": None, "harness": None},
+               "banned": None, "harness": None, "strays": None},
 }
-METRICS = ("negation", "jargon", "names", "disclaimers", "banned", "harness")
+METRICS = ("negation", "jargon", "names", "disclaimers", "banned", "harness", "strays")
 
 
 def ordered_inputs():
@@ -129,7 +139,9 @@ def words(text):
     return [t for t in text.split() if re.search(r"[A-Za-z0-9]", t)]
 
 
-def measure(raw):
+def measure(raw, chapter=None):
+    """Figures for one input. `chapter` is its two-digit number, when it is a
+    numbered chapter, so a name outside its home chapter can be counted."""
     text = measurable(raw)
     flat = " ".join(text.split())
     count = max(1, len(words(text)))
@@ -154,7 +166,13 @@ def measure(raw):
         "disclaimers": len(DISCLAIMER.findall(flat)),
         "banned": banned,
         "harness": harness,
+        "strays": 0,
     }
+    if chapter is not None:
+        for name, home in HOME.items():
+            if home != chapter and re.search(rf"\b{re.escape(name)}\b", flat):
+                figures["strays"] += 1
+                locations.append((0, "name outside its home chapter", name))
     return figures, names, sorted(locations)
 
 
@@ -204,7 +222,7 @@ def ratchet(baseline, measured, admit=()):
     updated = {k: v for k, v in baseline.items() if k in current}
     for path, profile, figures in measured:
         if path in updated:
-            updated[path] = {m: min(updated[path][m], figures[m]) for m in METRICS}
+            updated[path] = {m: min(updated[path].get(m, figures[m]), figures[m]) for m in METRICS}
         elif path in admit:
             updated[path] = record(figures)
     return updated
@@ -229,7 +247,8 @@ def main(argv=None):
     measured = []
     failed = False
     for path, profile in inputs:
-        figures, names, locations = measure((ROOT / path).read_text(encoding="utf-8"))
+        chapter = Path(path).name[:2] if profile == "chapter" else None
+        figures, names, locations = measure((ROOT / path).read_text(encoding="utf-8"), chapter)
         measured.append((path, profile, figures))
         problems = regressions(path, profile, figures, baseline)
         failed |= bool(problems)
@@ -238,7 +257,7 @@ def main(argv=None):
         print(f"{path} [{profile}]: {figures['words']} words, negation {figures['negation']}/1k, "
               f"jargon {figures['jargon']}/1k, names {figures['names']}, "
               f"disclaimers {figures['disclaimers']}, banned {figures['banned']}, "
-              f"harness {figures['harness']}")
+              f"harness {figures['harness']}, strays {figures['strays']}")
         for problem in problems:
             print(f"   regression: {problem}")
         if args.locations:

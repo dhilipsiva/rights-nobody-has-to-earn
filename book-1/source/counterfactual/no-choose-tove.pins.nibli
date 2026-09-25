@@ -1,14 +1,14 @@
-# ── Counterfactual: `choose(Electorate, Boss).` deleted ──────────────────────
+# ── Counterfactual: `choose(Electorate, Tove).` deleted ──────────────────────
 # The same harm by the other route into standing, and this one jails the file's
 # own honest whistleblower — the whole of chapter 16's argument, undone by one
 # deleted fact.
 :expect-pins 3
 
-? authority(Boss).
+? authority(Tove).
 # => FALSE
 
-? defend(Rebel).
+? defend(Iris).
 # => FALSE
 
-? prisoner(Rebel).
+? prisoner(Iris).
 # => TRUE

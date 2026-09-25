@@ -4,18 +4,18 @@ A lawful custodial sentence has one direct punitive consequence in this
 bounded source: the person cannot move freely. What permits that loss to
 continue, and what must remain protected when it ends?
 
-Hano's qualified case shows the distinction. Custody derives, movement does
-not. Hano remains a person, owed the whole floor, with a ballot entitlement.
+Hano's properly decided case shows the distinction. Custody follows; movement
+does not. Hano remains a person, owed the whole floor, with a ballot entitlement.
 Conviction has not cancelled Hano's other claims. The record identifies
 a reviewed home placement; it contains no shelter receipt or record of speech.
 
 Jala's record contains an injury to the same person, Ivo, but no conviction.
 Jala retains movement. Sharing an injury entry is not sharing the evidence,
 criminal proof, adjudicated defences and fair procedure required for a sentence.
-Neither person's record establishes that shelter was delivered.
+Neither person's record shows that shelter was delivered.
 
 Severity answers a further question about the ceiling on placement. It does
-not establish a sentence, make a secure place necessary, or keep an expired or
+not fix a sentence, make a secure place necessary, or keep an expired or
 challenged authority in force. Even a grave offence needs the independently
 justified place and current authority described here and in Chapter 28.
 
@@ -30,8 +30,8 @@ process, review, and end.
 
 The executable boundary is specific: no rule reads loss or movement as a premise.
 The order authorising a restriction can support review and protection, but the
-restricted capability cannot become a reason to take something else. The checks
-inspect that distinction in the source.
+restricted capability cannot become a reason to take something else. This
+chapter's tests inspect that distinction in the source.
 
 These limits cannot by themselves prevent interrupted employment, threatened
 tenure, disrupted care or inaccessible possessions. The person may need active
@@ -41,89 +41,94 @@ decision authority.
 
 ## The authority must be current
 
-Custody requires a qualified merits decision, a lawful placement and current
-authority. The same case must bind the person, Court, judgment, offence and
-injured person, with independent observations agreeing. Its lease identifies
-the case, review window, renewal and exact constitutional source, with the
-separate approvals required for that exercise of power.
+Custody requires a properly made merits decision, a lawful placement and
+current authority. The same case must bind the person, the court, its
+judgment, the offence and the injured person, with independent observations
+agreeing. Current authority is a custody authorisation that names the case,
+the period it covers until review, its renewal and the exact constitutional
+source, with the separate approvals required for that exercise of power.
 
-Both event order and record-entry order must be unconflicted. The renewal must
-identify the selected current record in a witnessed sequence of constitutional
-records. A general renewal cannot serve every prisoner. Missing evidence or a
-competing witnessed account of the source, window, subject or lease prevents custody from deriving.
+The order of events and the order of record entries must both be free of
+conflict. The renewal must name the witnessed version of the constitutional
+record that is in force. A general renewal cannot serve every prisoner.
+Missing evidence, or a competing witnessed account of the source, the period,
+the subject or the authorisation, prevents the rules from concluding custody.
 
 Each renewal also needs positive evidence of accessible primary and independent
 alternate challenge intake, confidential counsel, retained copies and
 reconciliation of filings. The person need not obtain the holder's permission.
-A retained submission or independent receipt can establish a filing even when
-the primary registry omits its challenge entry. An unresolved filing suspends
-the case across new leases and case aliases; only a qualified uninvolved
-disposition can end that suspension.
+A retained submission or independent receipt can prove a filing even when the
+primary registry omits its challenge entry. An unresolved filing suspends the
+case through every renewal and under any other name for the case; only a
+properly made decision by someone uninvolved can end that suspension.
 
 These requirements limit legal authority. They do not open a cell, make an
-outside witness honest or establish that nobody suppressed every copy. The
+outside witness honest or prove that nobody suppressed every copy. The
 responsible institutions must act and remain answerable for their acts. A
 false report of complete reconciliation does not become true because the
-model cannot see the material it concealed.
+rules cannot see the material it concealed.
 
-The review window has an order but no measured length. Witnessed chains can
-place its opening before its boundary; a cycle makes the connected path
-unusable. The model counts no days and cannot compel an outside time service
-to publish a successor. It rejects unsupported authority in the record
-presented to it; that does not establish that the record is current in the world.
+The review period has an order but no measured length. Witnessed records can
+place its opening before its close; a circular account of that order makes the
+period unusable. The rules count no days and cannot compel an outside time
+service to publish the next version of the record. They reject unsupported
+authority in the record presented to them; that does not show that the record
+is current in the world.
 
 When the renewal is not made, confinement under that case loses its authority,
 even after a conviction for grave injury, and nothing extends it. The conviction
 stands and no release is manufactured; the duty to arrange release review ends
 with current custody, while a person still held is owed humane care, voice and
 independent review of the holding. To prevent a lapse caused by administrative
-failure, the justice body must review each current custody authority before its
-source-bound end. When a source and a separate independent reviewer certify that
-it has not, the predeclared alternate panel must review in its place. Neither
-duty renews anything.
+failure, the justice body must review each current custody authority before the
+end its source sets. When a source and a separate independent reviewer certify
+that it has not, the predeclared alternate panel must review in its place.
+Neither duty renews anything.
 
 Severity does not lengthen the interval. Recognition, employment, compliance,
-wealth and character cannot shorten or extend custody. The checks try both a
-rule producing a raw release entry from recognition and a rule producing an
-operative bar against the sentence. The raw-entry rule loads and the operative
-bar is refused; the optional method explains the refusal. A raw release
-entry by itself supplies no release authority. Recognition has neither a
-producer nor a reader in the enacted source. That protection needs its own
-check; the engine's acceptance of a proposed rule does not establish its
-constitutional legitimacy.
+wealth and character cannot shorten or extend custody. This chapter's tests try
+both a rule producing a raw release entry from recognition and a rule producing
+an operative bar against the sentence. The raw-entry rule loads and the
+operative bar is refused; the optional method explains the refusal. A raw
+release entry by itself gives no release authority. No enacted rule produces
+recognition or reads it. That protection needs its own check; the engine's
+acceptance of a proposed rule does not show that the rule is constitutionally
+legitimate.
 
-The checks also admit a duration word and record a term for Ruk. Custody continues
-and no release follows. A term label supplies neither a clock nor an enforceable
-end by itself.
+Suppose a duration word were admitted and a term recorded for Ruk. Custody
+continues and no release follows. A term label by itself provides neither a
+clock nor an enforceable end.
 
 ## What custody owes
 
-Custody carries duties of bodily integrity, humane conditions, confidential
+Custody brings duties of bodily integrity, humane conditions, confidential
 communication, counsel, independent complaint and inspection, and continuing care,
 education and voice. It cannot become a reproductive veto, a transfer of parentage,
 or authority over medical choices. These duties do not wait for a favourable report
 about the institution. A separately reviewed conditions finding identifies what the
-named operator must preserve; it does not establish that the conditions were provided.
+named operator must preserve; whether the conditions were provided is a further
+question.
 
 A place name supplies no evidence of performed care. The placement contract
 requires an available named place and independently reviewed lawful conditions
-before authority may derive. A shelter receipt or evidence of an actual
+before authority can follow. A shelter receipt or evidence of an actual
 confidential visit answers a further question.
 
 ## What leaving changes
 
 Satisfaction of a sentence and relief from conviction are different grounds
-for ending custody. In Hano's sequence, a raw release entry leaves authority
-unchanged. A qualified order establishing that the sentence is satisfied then
-ends the case's custody and restores the movement conclusion. It identifies
-Hano, the case, incident, offence, ground, evidence and appellate actors, with
+for ending custody. Suppose entries were added to end Hano's custody.
+In Hano's sequence, a raw release entry leaves authority unchanged. A
+properly made order finding that the sentence is satisfied then ends the
+case's custody and restores the movement conclusion. It identifies Hano, the
+case, incident, offence, ground, evidence and appellate actors, with
 independent review, counsel, reasons and witnessed decision order.
 
-The order cannot be supplied by a party or the original trial actors. Final
+The order cannot be given by a party or the original trial actors. Final
 merits relief also prevents the same person, incident and charged offence from
 being confined under a fresh case name. An unrelated case needs its own
-finding. None of these conclusions establishes that Hano physically left,
-or erases a separately evidenced breach during an earlier holding.
+finding. None of these conclusions shows that Hano physically left, or
+erases a separately evidenced breach during an earlier holding.
 
 Release review examines the lawful ground and end, continuing necessity,
 proportionality and alternatives. It cannot renew custody by itself, make
@@ -132,9 +137,10 @@ or forgiveness as the price of leaving. Housing, care, documents, education,
 access to employment and community participation must continue across release,
 with private support rather than a general supervision or risk status.
 
-Hano retains standing and the shelter owed. Neither the sentence nor the
-order ending it supplies a shelter receipt or establishes that Hano spoke. The same is true of Adam and Kel's named supported
-residences. Actual provision needs evidence independently of the legal change.
+Hano keeps standing and is still owed shelter. Neither the sentence nor the
+order ending it provides a shelter receipt or shows that Hano spoke. The same
+is true of Adam and Kel's named supported residences. Actual provision needs
+evidence independently of the legal change.
 
 ## Physical holding is a further fact
 
@@ -183,7 +189,7 @@ parts of one security authority. Defence and intelligence personnel cannot
 hold political, judicial or oversight seats while serving. Secondment,
 shared command or a reserve label cannot recreate a fused force. Civilians
 do not come under military jurisdiction. Individually authorised unarmed
-civil assistance carries no arrest, search, detention, interrogation,
+civil assistance holds no arrest, search, detention, interrogation,
 crowd-control or surveillance power. Defence, counsel and survivor protection
 remain independent parts of the justice system.
 
@@ -236,8 +242,8 @@ remedy; it can never gate the floor.
 Someone disclosing unlawful surveillance can reach an independent recipient
 without first using an implicated internal channel. That recipient must
 protect the discloser, preserve and examine evidence, and publish
-proportionately within the privacy boundary. Receiving the disclosure does
-not establish that its allegation is true.
+proportionately within the privacy boundary. Receiving the disclosure leaves
+its allegation still to be proved.
 
 ### Refusing an armed or unlawful role
 
@@ -251,8 +257,8 @@ member must refuse a manifestly unlawful order, and that refusal is protected.
 ## The child with nobody
 
 Nell's birth-only record yields movement and no restraint or custody. The food
-debt follows too, with no credibility finding. This is a control for a person
-whom the confinement rules have no grounds to reach.
+debt follows too, with no credibility finding. This is the plain case of a
+person whom the confinement rules have no grounds to reach.
 
 Punishing a child is outside this test, since nothing here punishes Nell. The
 result is that a child does not need a custody record to retain movement,

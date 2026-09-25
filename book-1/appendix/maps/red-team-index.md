@@ -216,7 +216,7 @@ The same relations were raising severity, which decides where the confined perso
 is then held, with nothing at all. Severity now reads the Court's judgment and
 its cited case: the two facts the confinement it decides had already required, so
 every person severity can reach already had them and the repair moved nobody —
-Lalo, Don and Ruk are pinned unchanged. *Control:*
+Lalo, Faro and Ruk are pinned unchanged. *Control:*
 `tests/pins/red-team/counterfactual-severity-without-the-court` strips the
 conjuncts and watches two unsigned entries derive severity again.
 

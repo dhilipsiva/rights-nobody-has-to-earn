@@ -108,15 +108,15 @@ severe(Zed).
 ? authority(Court).
 # => TRUE
 
-# ...and the seating body need not be the electorate. Hex holds a seat the
+# ...and the seating body need not be the electorate. Saba holds a seat the
 # convocation gave — no office, no electorate entry — and answerability follows
 # the same way. This is the route the sentence used to deny: it said "the
 # electorate seated you" and "only two routes", stale since the second seating
-# body was added. Hex isolates the third rule: nothing else confers it.
-? choose(Convocation, Hex).
+# body was added. Saba isolates the third rule: nothing else confers it.
+? choose(Convocation, Saba).
 # => TRUE
 
-? authority(Hex).
+? authority(Saba).
 # => TRUE
 
 # 1.5 "Koa documented something about Esa. ... Esa's credibility is untouched."
@@ -160,13 +160,13 @@ dangerous(Adam).
 
 # An accepted raw accusation is not an adjudicated finding about the exposure.
 # Keep the assertion and both verdicts: the protection must survive this write.
-? prisoner(Rebel).
+? prisoner(Iris).
 # => FALSE
 
 :accept
-deceive(Rebel, Boss).
+deceive(Iris, Tove).
 
-? prisoner(Rebel).
+? prisoner(Iris).
 # => FALSE
 
 # "A person has a family" — one word, buried in a list of attributes. For

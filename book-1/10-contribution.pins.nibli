@@ -36,16 +36,16 @@
 ? reward(Bela).
 # => FALSE
 
-? reward(Lupo).
+? reward(Edo).
 # => FALSE
 
 ? reward(Dev).
 # => FALSE
 
-? false(Vex).
+? false(Mael).
 # => TRUE
 
-? reward(Vex).
+? reward(Mael).
 # => FALSE
 
 person(Nima).
@@ -101,12 +101,12 @@ cite(Yano, Hunch, Adam).
 ? reward(Yano).
 # => FALSE
 
-? reward(Boss).
+? reward(Tove).
 # => FALSE
 
-cite(Boss, Findings, Rebel).
+cite(Tove, Findings, Iris).
 
-? reward(Boss).
+? reward(Tove).
 # => FALSE
 
 ? person(Bela).

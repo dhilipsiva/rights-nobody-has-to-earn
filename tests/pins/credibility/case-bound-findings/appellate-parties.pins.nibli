@@ -13,19 +13,19 @@ observe(Gia, Finding_Appellate_Party, Incident_Finding_Appellate_Party, Credibil
 observe(Gia, Finding_Appellate_Party, CredibilityGroundDeceit, CredibilityGroundScope).
 observe(Gia, Finding_Appellate_Party, Evidence_Finding_Appellate_Party, CredibilityEvidenceScope).
 observe(Gia, Finding_Appellate_Party, NoticeEvidenceAccessHearingAndReasons, CredibilityProcedureScope).
-judge(Hex, Finding_Appellate_Party).
-capture(Hex, Appeals, Incident_Finding_Appellate_Party).
-cite(Hex, CredibilityGroundDeceit, Finding_Appellate_Party).
-authorized(Hex, IndependentReviewer, Finding_Appellate_Party).
-observe(Hex, Finding_Appellate_Party, Appeals, CredibilitySubjectScope).
-observe(Hex, Finding_Appellate_Party, Incident_Finding_Appellate_Party, CredibilityIncidentScope).
-observe(Hex, Finding_Appellate_Party, CredibilityGroundDeceit, CredibilityGroundScope).
-observe(Hex, Finding_Appellate_Party, Evidence_Finding_Appellate_Party, CredibilityEvidenceScope).
-observe(Hex, Finding_Appellate_Party, NoticeEvidenceAccessHearingAndReasons, CredibilityProcedureScope).
+judge(Saba, Finding_Appellate_Party).
+capture(Saba, Appeals, Incident_Finding_Appellate_Party).
+cite(Saba, CredibilityGroundDeceit, Finding_Appellate_Party).
+authorized(Saba, IndependentReviewer, Finding_Appellate_Party).
+observe(Saba, Finding_Appellate_Party, Appeals, CredibilitySubjectScope).
+observe(Saba, Finding_Appellate_Party, Incident_Finding_Appellate_Party, CredibilityIncidentScope).
+observe(Saba, Finding_Appellate_Party, CredibilityGroundDeceit, CredibilityGroundScope).
+observe(Saba, Finding_Appellate_Party, Evidence_Finding_Appellate_Party, CredibilityEvidenceScope).
+observe(Saba, Finding_Appellate_Party, NoticeEvidenceAccessHearingAndReasons, CredibilityProcedureScope).
 observe(Chronicle, Finding_Appellate_Party, Gia, CredibilityReviewSignerEligibleAtDecisionScope).
 observe(TemporalReview, Finding_Appellate_Party, Gia, CredibilityReviewSignerEligibleAtDecisionScope).
-observe(Chronicle, Finding_Appellate_Party, Hex, CredibilityTribunalSignerEligibleAtDecisionScope).
-observe(TemporalReview, Finding_Appellate_Party, Hex, CredibilityTribunalSignerEligibleAtDecisionScope).
+observe(Chronicle, Finding_Appellate_Party, Saba, CredibilityTribunalSignerEligibleAtDecisionScope).
+observe(TemporalReview, Finding_Appellate_Party, Saba, CredibilityTribunalSignerEligibleAtDecisionScope).
 list(Order_Finding_Appellate_Party, Finding_Appellate_Party, Epoch_Current, RecordSequence).
 observe(Chronicle, Order_Finding_Appellate_Party, Finding_Appellate_Party, RecordStartScope).
 observe(Chronicle, Order_Finding_Appellate_Party, Epoch_Current, RecordEndScope).
@@ -112,19 +112,19 @@ observe(Gia, Finding_Review_Party, Incident_Finding_Review_Party, CredibilityInc
 observe(Gia, Finding_Review_Party, CredibilityGroundDeceit, CredibilityGroundScope).
 observe(Gia, Finding_Review_Party, Evidence_Finding_Review_Party, CredibilityEvidenceScope).
 observe(Gia, Finding_Review_Party, NoticeEvidenceAccessHearingAndReasons, CredibilityProcedureScope).
-judge(Hex, Finding_Review_Party).
-capture(Hex, Tribunal, Incident_Finding_Review_Party).
-cite(Hex, CredibilityGroundDeceit, Finding_Review_Party).
-authorized(Hex, IndependentReviewer, Finding_Review_Party).
-observe(Hex, Finding_Review_Party, Tribunal, CredibilitySubjectScope).
-observe(Hex, Finding_Review_Party, Incident_Finding_Review_Party, CredibilityIncidentScope).
-observe(Hex, Finding_Review_Party, CredibilityGroundDeceit, CredibilityGroundScope).
-observe(Hex, Finding_Review_Party, Evidence_Finding_Review_Party, CredibilityEvidenceScope).
-observe(Hex, Finding_Review_Party, NoticeEvidenceAccessHearingAndReasons, CredibilityProcedureScope).
+judge(Saba, Finding_Review_Party).
+capture(Saba, Tribunal, Incident_Finding_Review_Party).
+cite(Saba, CredibilityGroundDeceit, Finding_Review_Party).
+authorized(Saba, IndependentReviewer, Finding_Review_Party).
+observe(Saba, Finding_Review_Party, Tribunal, CredibilitySubjectScope).
+observe(Saba, Finding_Review_Party, Incident_Finding_Review_Party, CredibilityIncidentScope).
+observe(Saba, Finding_Review_Party, CredibilityGroundDeceit, CredibilityGroundScope).
+observe(Saba, Finding_Review_Party, Evidence_Finding_Review_Party, CredibilityEvidenceScope).
+observe(Saba, Finding_Review_Party, NoticeEvidenceAccessHearingAndReasons, CredibilityProcedureScope).
 observe(Chronicle, Finding_Review_Party, Gia, CredibilityReviewSignerEligibleAtDecisionScope).
 observe(TemporalReview, Finding_Review_Party, Gia, CredibilityReviewSignerEligibleAtDecisionScope).
-observe(Chronicle, Finding_Review_Party, Hex, CredibilityTribunalSignerEligibleAtDecisionScope).
-observe(TemporalReview, Finding_Review_Party, Hex, CredibilityTribunalSignerEligibleAtDecisionScope).
+observe(Chronicle, Finding_Review_Party, Saba, CredibilityTribunalSignerEligibleAtDecisionScope).
+observe(TemporalReview, Finding_Review_Party, Saba, CredibilityTribunalSignerEligibleAtDecisionScope).
 list(Order_Finding_Review_Party, Finding_Review_Party, Epoch_Current, RecordSequence).
 observe(Chronicle, Order_Finding_Review_Party, Finding_Review_Party, RecordStartScope).
 observe(Chronicle, Order_Finding_Review_Party, Epoch_Current, RecordEndScope).
@@ -209,19 +209,19 @@ observe(Gia, Finding_Fused_Appeal, Incident_Finding_Fused_Appeal, CredibilityInc
 observe(Gia, Finding_Fused_Appeal, CredibilityGroundDeceit, CredibilityGroundScope).
 observe(Gia, Finding_Fused_Appeal, Evidence_Finding_Fused_Appeal, CredibilityEvidenceScope).
 observe(Gia, Finding_Fused_Appeal, NoticeEvidenceAccessHearingAndReasons, CredibilityProcedureScope).
-judge(Hex, Finding_Fused_Appeal).
-capture(Hex, FusedAppealSubject, Incident_Finding_Fused_Appeal).
-cite(Hex, CredibilityGroundDeceit, Finding_Fused_Appeal).
-authorized(Hex, IndependentReviewer, Finding_Fused_Appeal).
-observe(Hex, Finding_Fused_Appeal, FusedAppealSubject, CredibilitySubjectScope).
-observe(Hex, Finding_Fused_Appeal, Incident_Finding_Fused_Appeal, CredibilityIncidentScope).
-observe(Hex, Finding_Fused_Appeal, CredibilityGroundDeceit, CredibilityGroundScope).
-observe(Hex, Finding_Fused_Appeal, Evidence_Finding_Fused_Appeal, CredibilityEvidenceScope).
-observe(Hex, Finding_Fused_Appeal, NoticeEvidenceAccessHearingAndReasons, CredibilityProcedureScope).
+judge(Saba, Finding_Fused_Appeal).
+capture(Saba, FusedAppealSubject, Incident_Finding_Fused_Appeal).
+cite(Saba, CredibilityGroundDeceit, Finding_Fused_Appeal).
+authorized(Saba, IndependentReviewer, Finding_Fused_Appeal).
+observe(Saba, Finding_Fused_Appeal, FusedAppealSubject, CredibilitySubjectScope).
+observe(Saba, Finding_Fused_Appeal, Incident_Finding_Fused_Appeal, CredibilityIncidentScope).
+observe(Saba, Finding_Fused_Appeal, CredibilityGroundDeceit, CredibilityGroundScope).
+observe(Saba, Finding_Fused_Appeal, Evidence_Finding_Fused_Appeal, CredibilityEvidenceScope).
+observe(Saba, Finding_Fused_Appeal, NoticeEvidenceAccessHearingAndReasons, CredibilityProcedureScope).
 observe(Chronicle, Finding_Fused_Appeal, Gia, CredibilityReviewSignerEligibleAtDecisionScope).
 observe(TemporalReview, Finding_Fused_Appeal, Gia, CredibilityReviewSignerEligibleAtDecisionScope).
-observe(Chronicle, Finding_Fused_Appeal, Hex, CredibilityTribunalSignerEligibleAtDecisionScope).
-observe(TemporalReview, Finding_Fused_Appeal, Hex, CredibilityTribunalSignerEligibleAtDecisionScope).
+observe(Chronicle, Finding_Fused_Appeal, Saba, CredibilityTribunalSignerEligibleAtDecisionScope).
+observe(TemporalReview, Finding_Fused_Appeal, Saba, CredibilityTribunalSignerEligibleAtDecisionScope).
 list(Order_Finding_Fused_Appeal, Finding_Fused_Appeal, Epoch_Current, RecordSequence).
 observe(Chronicle, Order_Finding_Fused_Appeal, Finding_Fused_Appeal, RecordStartScope).
 observe(Chronicle, Order_Finding_Fused_Appeal, Epoch_Current, RecordEndScope).

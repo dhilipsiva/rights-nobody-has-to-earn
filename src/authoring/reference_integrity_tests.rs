@@ -37,7 +37,7 @@ const KNOWN_MISSING: [&str; 32] = [
     "book-1/source/16-constitutional-closure.py",
     "book-1/source/7-assertion-surface.py",
     "book-1/source/9-record-integrity-red-team.py",
-    "book-1/source/counterfactual/no-choose-boss.nibli",
+    "book-1/source/counterfactual/no-choose-tove.nibli",
     "book-1/source/counterfactual/no-dead-conjuncts.nibli",
     "book-1/source/counterfactual/no-person-line.nibli",
     "book-1/source/counterfactual/no-public-court.nibli",

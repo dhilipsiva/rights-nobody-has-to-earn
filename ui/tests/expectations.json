@@ -57,15 +57,15 @@
       "status": "TRUE"
     },
     {
-      "query": "false(Sly, Disclosure_Sly_Court).",
+      "query": "false(Lior, Disclosure_Lior_Court).",
       "status": "FALSE"
     },
     {
-      "query": "defend(Sly).",
+      "query": "defend(Lior).",
       "status": "TRUE"
     },
     {
-      "query": "prisoner(Sly).",
+      "query": "prisoner(Lior).",
       "status": "FALSE"
     }
   ],
@@ -93,11 +93,11 @@
       "status": "FALSE"
     },
     {
-      "query": "defend(Don).",
+      "query": "defend(Faro).",
       "status": "FALSE"
     },
     {
-      "query": "prisoner(Don).",
+      "query": "prisoner(Faro).",
       "status": "TRUE"
     }
   ],
@@ -561,25 +561,25 @@
   ],
   "pen:1": [
     {
-      "query": "broken(Boss).",
+      "query": "broken(Tove).",
       "status": "TRUE"
     },
     {
-      "query": "authority(Boss).",
+      "query": "authority(Tove).",
       "status": "TRUE"
     },
     {
-      "query": "permits(Review, Boss).",
+      "query": "permits(Review, Tove).",
       "status": "FALSE"
     }
   ],
   "pen:2": [
     {
-      "query": "rotten(Vex).",
+      "query": "rotten(Mael).",
       "status": "TRUE"
     },
     {
-      "query": "permits(Review, Vex).",
+      "query": "permits(Review, Mael).",
       "status": "FALSE"
     }
   ],
@@ -645,11 +645,11 @@
   ],
   "rex:0": [
     {
-      "query": "false(Rex, Disclosure_Rex_Court).",
+      "query": "false(Dara, Disclosure_Dara_Court).",
       "status": "TRUE"
     },
     {
-      "query": "false(Rex).",
+      "query": "false(Dara).",
       "status": "TRUE"
     }
   ],
@@ -659,35 +659,35 @@
       "status": "TRUE"
     },
     {
-      "query": "false(Rex, Disclosure_Rex_Review).",
+      "query": "false(Dara, Disclosure_Dara_Review).",
       "status": "FALSE"
     },
     {
-      "query": "defend(Rex).",
+      "query": "defend(Dara).",
       "status": "TRUE"
     },
     {
-      "query": "prisoner(Rex).",
+      "query": "prisoner(Dara).",
       "status": "FALSE"
     }
   ],
   "rex:2": [
     {
-      "query": "prisoner(Rex).",
+      "query": "prisoner(Dara).",
       "status": "TRUE"
     },
     {
-      "query": "defend(Rex).",
+      "query": "defend(Dara).",
       "status": "TRUE"
     }
   ],
   "rex:3": [
     {
-      "query": "contradict(Case_Rex, Appeals, ShieldReviewerConflict).",
+      "query": "contradict(Case_Dara, Appeals, ShieldReviewerConflict).",
       "status": "TRUE"
     },
     {
-      "query": "prisoner(Rex).",
+      "query": "prisoner(Dara).",
       "status": "FALSE"
     }
   ],
@@ -775,27 +775,27 @@
   ],
   "sly-selfcert:0": [
     {
-      "query": "prisoner(Sly).",
+      "query": "prisoner(Lior).",
       "status": "FALSE"
     },
     {
-      "query": "defend(Sly).",
+      "query": "defend(Lior).",
       "status": "TRUE"
     }
   ],
   "sly-selfcert:1": [
     {
-      "query": "err(Sly, Isolation).",
+      "query": "err(Lior, Isolation).",
       "status": "FALSE"
     }
   ],
   "rex-veto:0": [
     {
-      "query": "prisoner(Rex).",
+      "query": "prisoner(Dara).",
       "status": "TRUE"
     },
     {
-      "query": "defend(Rex).",
+      "query": "defend(Dara).",
       "status": "TRUE"
     }
   ],
@@ -977,37 +977,37 @@
   ],
   "j-pen:canonical": [
     {
-      "query": "rotten(Vex).",
+      "query": "rotten(Mael).",
       "status": "TRUE"
     },
     {
-      "query": "permits(Review, Vex).",
+      "query": "permits(Review, Mael).",
       "status": "FALSE"
     },
     {
-      "query": "broken(Boss).",
+      "query": "broken(Tove).",
       "status": "TRUE"
     },
     {
-      "query": "permits(Review, Boss).",
+      "query": "permits(Review, Tove).",
       "status": "FALSE"
     }
   ],
   "j-pen:modified": [
     {
-      "query": "rotten(Vex).",
+      "query": "rotten(Mael).",
       "status": "TRUE"
     },
     {
-      "query": "permits(Review, Vex).",
+      "query": "permits(Review, Mael).",
       "status": "TRUE"
     },
     {
-      "query": "broken(Boss).",
+      "query": "broken(Tove).",
       "status": "TRUE"
     },
     {
-      "query": "permits(Review, Boss).",
+      "query": "permits(Review, Tove).",
       "status": "TRUE"
     }
   ],
@@ -1017,11 +1017,11 @@
       "status": "TRUE"
     },
     {
-      "query": "defend(Sly).",
+      "query": "defend(Lior).",
       "status": "TRUE"
     },
     {
-      "query": "prisoner(Sly).",
+      "query": "prisoner(Lior).",
       "status": "FALSE"
     }
   ],
@@ -1031,11 +1031,11 @@
       "status": "FALSE"
     },
     {
-      "query": "defend(Sly).",
+      "query": "defend(Lior).",
       "status": "FALSE"
     },
     {
-      "query": "prisoner(Sly).",
+      "query": "prisoner(Lior).",
       "status": "TRUE"
     }
   ],

@@ -71,7 +71,7 @@
 ? err(Nando, Isolation).
 # => FALSE
 
-? err(Don, Isolation).
+? err(Faro, Isolation).
 # => FALSE
 
 ? err(Kel, Isolation).
@@ -84,10 +84,10 @@
 ? err(Nia, Isolation).
 # => FALSE
 
-? err(Rebel, Isolation).
+? err(Iris, Isolation).
 # => FALSE
 
-? err(Sly, Isolation).
+? err(Lior, Isolation).
 # => FALSE
 
 # "Ask which free people are, and the answer is none."
@@ -150,16 +150,16 @@
 ? obliged(Adam, Review).
 # => FALSE
 
-# silent where the markers are silent: Bela is not confined, Rex is shielded.
+# silent where the markers are silent: Bela is not confined, Dara is shielded.
 ? obliged(Review, Bela).
 # => FALSE
 
-? obliged(Review, Rex).
+? obliged(Review, Dara).
 # => FALSE
 
-# "Several of the judged are not held" — Rex is the newest of them and was
+# "Several of the judged are not held" — Dara is the newest of them and was
 # missing from the roster above, which is how a count in the prose went stale.
-? err(Rex, Isolation).
+? err(Dara, Isolation).
 # => FALSE
 
 # ── the exhibit: what else was available and was not built ───────────────────

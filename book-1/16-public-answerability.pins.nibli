@@ -28,15 +28,15 @@
 # => TRUE
 
 # "The second is to be seated. The electorate seats people..."
-? choose(Electorate, Boss).
+? choose(Electorate, Tove).
 # => TRUE
 
-? authority(Boss).
+? authority(Tove).
 # => TRUE
 
 # "...and so does the convocation — and a seat from either carries standing on
 # the same terms." Wren holds only a convocation seat — no office, no
-# electorate entry — and is answerable the same way. Chapter 3 pins Hex on the
+# electorate entry — and is answerable the same way. Chapter 3 pins Saba on the
 # same rule; two witnesses in two files, because the sentence this replaced
 # denied the route existed in both chapters.
 ? choose(Convocation, Wren).
@@ -54,28 +54,28 @@ authority(Pax).
 ? authority(Ivo).
 # => FALSE
 
-# "Then the electorate recalled Boss." / "Boss holds no credential"
-? broken(Boss).
+# "Then the electorate recalled Tove." / "Tove holds no credential"
+? broken(Tove).
 # => TRUE
 
-? permits(Review, Boss).
+? permits(Review, Tove).
 # => FALSE
 
-# "But Boss still has standing. Permanently." — the chapter's whole argument.
-# authority(Boss) above is TRUE *despite* broken(Boss) being TRUE.
+# "But Tove still has standing. Permanently." — the chapter's whole argument.
+# authority(Tove) above is TRUE *despite* broken(Tove) being TRUE.
 
-# "Rebel exposed Boss." / "Rebel is shielded because Boss is an authority."
-? show(Rebel, Disclosure_Rebel_Boss, Boss).
+# "Iris exposed Tove." / "Iris is shielded because Tove is an authority."
+? show(Iris, Disclosure_Iris_Tove, Tove).
 # => TRUE
 
-? defend(Rebel).
+? defend(Iris).
 # => TRUE
 
-# "Rebel is not imprisoned, and the case against Rebel does not proceed."
-? prisoner(Rebel).
+# "Iris is not imprisoned, and the case against Iris does not proceed."
+? prisoner(Iris).
 # => FALSE
 
-? false(Rebel).
+? false(Iris).
 # => FALSE
 
 # ── The opening definition ───────────────────────────────────────────────────
@@ -114,17 +114,17 @@ authority(Pax).
 # pins are the guard against the senses re-merging: they must sit ADJACENT, on
 # one person, so that a future edit collapsing them cannot pass green.
 #
-# Vex is the case that proves they are independent rather than opposite —
+# Mael is the case that proves they are independent rather than opposite —
 # voided last period, seated by the electorate, and holding no pen. All three
 # verdicts differ, on one person, in one snapshot. This is also the cast case
 # chapter 23's new distinguishing paragraph rests on.
-? false(Vex).
+? false(Mael).
 # => TRUE
 
-? authority(Vex).
+? authority(Mael).
 # => TRUE
 
-? permits(Review, Vex).
+? permits(Review, Mael).
 # => FALSE
 
 # ── The child with nobody ──────────────────────────────────────────────────

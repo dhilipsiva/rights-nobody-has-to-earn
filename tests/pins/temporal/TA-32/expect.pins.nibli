@@ -19,11 +19,11 @@
 # => FALSE
 
 # No new carry lets the prior adverse status persist into the successor.
-? match(Vex, CarriedVoid).
+? match(Mael, CarriedVoid).
 # => FALSE
 
 # The current model has no materialised successor-status premise from which to name a second-hop omission.
-? err(Vex, CarryOmission).
+? err(Mael, CarryOmission).
 # => FALSE
 
 # The old case renewal cannot survive the loss of its terminal-transition premise.

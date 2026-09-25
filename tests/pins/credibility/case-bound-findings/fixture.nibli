@@ -5,35 +5,35 @@ observe(Chronicle, ProtocolSigner, Epoch_Previous, ClearScope).
 observe(TemporalReview, ProtocolSigner, Epoch_Previous, ClearScope).
 carries(Chronicle, ProtocolSigner, Epoch_Current, Epoch_Previous, ClearCarry).
 carries(TemporalReview, ProtocolSigner, Epoch_Current, Epoch_Previous, ClearCarry).
-list(Finding_Lupo, ProtocolSigner, Lupo_Mira_Incident, CredibilityFinding).
-list(Finding_Lupo, CredibilityGroundDeceit, Evidence_Finding_Lupo, CredibilityGroundEvidence).
-judge(Gia, Finding_Lupo).
-capture(Gia, ProtocolSigner, Lupo_Mira_Incident).
-cite(Gia, CredibilityGroundDeceit, Finding_Lupo).
-authorized(Gia, IndependentReviewer, Finding_Lupo).
-observe(Gia, Finding_Lupo, ProtocolSigner, CredibilitySubjectScope).
-observe(Gia, Finding_Lupo, Lupo_Mira_Incident, CredibilityIncidentScope).
-observe(Gia, Finding_Lupo, CredibilityGroundDeceit, CredibilityGroundScope).
-observe(Gia, Finding_Lupo, Evidence_Finding_Lupo, CredibilityEvidenceScope).
-observe(Gia, Finding_Lupo, NoticeEvidenceAccessHearingAndReasons, CredibilityProcedureScope).
-judge(Hex, Finding_Lupo).
-capture(Hex, ProtocolSigner, Lupo_Mira_Incident).
-cite(Hex, CredibilityGroundDeceit, Finding_Lupo).
-authorized(Hex, IndependentReviewer, Finding_Lupo).
-observe(Hex, Finding_Lupo, ProtocolSigner, CredibilitySubjectScope).
-observe(Hex, Finding_Lupo, Lupo_Mira_Incident, CredibilityIncidentScope).
-observe(Hex, Finding_Lupo, CredibilityGroundDeceit, CredibilityGroundScope).
-observe(Hex, Finding_Lupo, Evidence_Finding_Lupo, CredibilityEvidenceScope).
-observe(Hex, Finding_Lupo, NoticeEvidenceAccessHearingAndReasons, CredibilityProcedureScope).
-observe(Chronicle, Finding_Lupo, Gia, CredibilityReviewSignerEligibleAtDecisionScope).
-observe(TemporalReview, Finding_Lupo, Gia, CredibilityReviewSignerEligibleAtDecisionScope).
-observe(Chronicle, Finding_Lupo, Hex, CredibilityTribunalSignerEligibleAtDecisionScope).
-observe(TemporalReview, Finding_Lupo, Hex, CredibilityTribunalSignerEligibleAtDecisionScope).
-list(Order_Finding_Lupo, Finding_Lupo, Epoch_Current, RecordSequence).
-observe(Chronicle, Order_Finding_Lupo, Finding_Lupo, RecordStartScope).
-observe(Chronicle, Order_Finding_Lupo, Epoch_Current, RecordEndScope).
-observe(TemporalReview, Order_Finding_Lupo, Finding_Lupo, RecordStartScope).
-observe(TemporalReview, Order_Finding_Lupo, Epoch_Current, RecordEndScope).
+list(Finding_Edo, ProtocolSigner, Edo_Mira_Incident, CredibilityFinding).
+list(Finding_Edo, CredibilityGroundDeceit, Evidence_Finding_Edo, CredibilityGroundEvidence).
+judge(Gia, Finding_Edo).
+capture(Gia, ProtocolSigner, Edo_Mira_Incident).
+cite(Gia, CredibilityGroundDeceit, Finding_Edo).
+authorized(Gia, IndependentReviewer, Finding_Edo).
+observe(Gia, Finding_Edo, ProtocolSigner, CredibilitySubjectScope).
+observe(Gia, Finding_Edo, Edo_Mira_Incident, CredibilityIncidentScope).
+observe(Gia, Finding_Edo, CredibilityGroundDeceit, CredibilityGroundScope).
+observe(Gia, Finding_Edo, Evidence_Finding_Edo, CredibilityEvidenceScope).
+observe(Gia, Finding_Edo, NoticeEvidenceAccessHearingAndReasons, CredibilityProcedureScope).
+judge(Saba, Finding_Edo).
+capture(Saba, ProtocolSigner, Edo_Mira_Incident).
+cite(Saba, CredibilityGroundDeceit, Finding_Edo).
+authorized(Saba, IndependentReviewer, Finding_Edo).
+observe(Saba, Finding_Edo, ProtocolSigner, CredibilitySubjectScope).
+observe(Saba, Finding_Edo, Edo_Mira_Incident, CredibilityIncidentScope).
+observe(Saba, Finding_Edo, CredibilityGroundDeceit, CredibilityGroundScope).
+observe(Saba, Finding_Edo, Evidence_Finding_Edo, CredibilityEvidenceScope).
+observe(Saba, Finding_Edo, NoticeEvidenceAccessHearingAndReasons, CredibilityProcedureScope).
+observe(Chronicle, Finding_Edo, Gia, CredibilityReviewSignerEligibleAtDecisionScope).
+observe(TemporalReview, Finding_Edo, Gia, CredibilityReviewSignerEligibleAtDecisionScope).
+observe(Chronicle, Finding_Edo, Saba, CredibilityTribunalSignerEligibleAtDecisionScope).
+observe(TemporalReview, Finding_Edo, Saba, CredibilityTribunalSignerEligibleAtDecisionScope).
+list(Order_Finding_Edo, Finding_Edo, Epoch_Current, RecordSequence).
+observe(Chronicle, Order_Finding_Edo, Finding_Edo, RecordStartScope).
+observe(Chronicle, Order_Finding_Edo, Epoch_Current, RecordEndScope).
+observe(TemporalReview, Order_Finding_Edo, Finding_Edo, RecordStartScope).
+observe(TemporalReview, Order_Finding_Edo, Epoch_Current, RecordEndScope).
 list(Finding_Frisk, Frisk, Frisk_Incident, CredibilityFinding).
 list(Finding_Frisk, CredibilityGroundDeceit, Evidence_Finding_Frisk, CredibilityGroundEvidence).
 judge(ProtocolSigner, Finding_Frisk).
@@ -45,15 +45,15 @@ observe(ProtocolSigner, Finding_Frisk, Frisk_Incident, CredibilityIncidentScope)
 observe(ProtocolSigner, Finding_Frisk, CredibilityGroundDeceit, CredibilityGroundScope).
 observe(ProtocolSigner, Finding_Frisk, Evidence_Finding_Frisk, CredibilityEvidenceScope).
 observe(ProtocolSigner, Finding_Frisk, NoticeEvidenceAccessHearingAndReasons, CredibilityProcedureScope).
-judge(Hex, Finding_Frisk).
-capture(Hex, Frisk, Frisk_Incident).
-cite(Hex, CredibilityGroundDeceit, Finding_Frisk).
-authorized(Hex, IndependentReviewer, Finding_Frisk).
-observe(Hex, Finding_Frisk, Frisk, CredibilitySubjectScope).
-observe(Hex, Finding_Frisk, Frisk_Incident, CredibilityIncidentScope).
-observe(Hex, Finding_Frisk, CredibilityGroundDeceit, CredibilityGroundScope).
-observe(Hex, Finding_Frisk, Evidence_Finding_Frisk, CredibilityEvidenceScope).
-observe(Hex, Finding_Frisk, NoticeEvidenceAccessHearingAndReasons, CredibilityProcedureScope).
+judge(Saba, Finding_Frisk).
+capture(Saba, Frisk, Frisk_Incident).
+cite(Saba, CredibilityGroundDeceit, Finding_Frisk).
+authorized(Saba, IndependentReviewer, Finding_Frisk).
+observe(Saba, Finding_Frisk, Frisk, CredibilitySubjectScope).
+observe(Saba, Finding_Frisk, Frisk_Incident, CredibilityIncidentScope).
+observe(Saba, Finding_Frisk, CredibilityGroundDeceit, CredibilityGroundScope).
+observe(Saba, Finding_Frisk, Evidence_Finding_Frisk, CredibilityEvidenceScope).
+observe(Saba, Finding_Frisk, NoticeEvidenceAccessHearingAndReasons, CredibilityProcedureScope).
 list(Finding_Valid, NewSubject, New_Incident, CredibilityFinding).
 list(Finding_Valid, CredibilityGroundDeceit, Evidence_Finding_Valid, CredibilityGroundEvidence).
 judge(Gia, Finding_Valid).
@@ -65,22 +65,22 @@ observe(Gia, Finding_Valid, New_Incident, CredibilityIncidentScope).
 observe(Gia, Finding_Valid, CredibilityGroundDeceit, CredibilityGroundScope).
 observe(Gia, Finding_Valid, Evidence_Finding_Valid, CredibilityEvidenceScope).
 observe(Gia, Finding_Valid, NoticeEvidenceAccessHearingAndReasons, CredibilityProcedureScope).
-judge(Hex, Finding_Valid).
-capture(Hex, NewSubject, New_Incident).
-cite(Hex, CredibilityGroundDeceit, Finding_Valid).
-authorized(Hex, IndependentReviewer, Finding_Valid).
-observe(Hex, Finding_Valid, NewSubject, CredibilitySubjectScope).
-observe(Hex, Finding_Valid, New_Incident, CredibilityIncidentScope).
-observe(Hex, Finding_Valid, CredibilityGroundDeceit, CredibilityGroundScope).
-observe(Hex, Finding_Valid, Evidence_Finding_Valid, CredibilityEvidenceScope).
-observe(Hex, Finding_Valid, NoticeEvidenceAccessHearingAndReasons, CredibilityProcedureScope).
+judge(Saba, Finding_Valid).
+capture(Saba, NewSubject, New_Incident).
+cite(Saba, CredibilityGroundDeceit, Finding_Valid).
+authorized(Saba, IndependentReviewer, Finding_Valid).
+observe(Saba, Finding_Valid, NewSubject, CredibilitySubjectScope).
+observe(Saba, Finding_Valid, New_Incident, CredibilityIncidentScope).
+observe(Saba, Finding_Valid, CredibilityGroundDeceit, CredibilityGroundScope).
+observe(Saba, Finding_Valid, Evidence_Finding_Valid, CredibilityEvidenceScope).
+observe(Saba, Finding_Valid, NoticeEvidenceAccessHearingAndReasons, CredibilityProcedureScope).
 
 # The unscoped examinations are retained to expose the weaker rule.
 judge(ProtocolSigner, Frisk).
 capture(ProtocolSigner, Frisk).
 cite(ProtocolSigner, CredibilityGroundDeceit, Frisk).
 authorized(ProtocolSigner, IndependentReviewer, Frisk).
-judge(Hex, Frisk).
-capture(Hex, Frisk).
-cite(Hex, CredibilityGroundDeceit, Frisk).
-authorized(Hex, IndependentReviewer, Frisk).
+judge(Saba, Frisk).
+capture(Saba, Frisk).
+cite(Saba, CredibilityGroundDeceit, Frisk).
+authorized(Saba, IndependentReviewer, Frisk).

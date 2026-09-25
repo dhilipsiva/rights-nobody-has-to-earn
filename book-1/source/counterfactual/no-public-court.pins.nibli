@@ -5,10 +5,10 @@
 ? authority(Court).
 # => FALSE
 
-? defend(Sly).
+? defend(Lior).
 # => FALSE
 
-# Sly was protected by the fail-open window; with the Court no longer an
+# Lior was protected by the fail-open window; with the Court no longer an
 # authority there is nothing to have exposed, and the conviction proceeds.
-? prisoner(Sly).
+? prisoner(Lior).
 # => TRUE

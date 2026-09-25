@@ -17,7 +17,7 @@
 # => FALSE
 
 # Reviewed expected consequence in base.
-? clean(Vex).
+? clean(Mael).
 # => FALSE
 
 # Reviewed expected consequence in base.
@@ -61,7 +61,7 @@
 # => TRUE
 
 # Reviewed expected consequence in base.
-? false(Vex).
+? false(Mael).
 # => TRUE
 
 # Reviewed expected consequence in base.
@@ -89,7 +89,7 @@
 # => TRUE
 
 # Reviewed expected consequence in base.
-? permits(Review, Vex).
+? permits(Review, Mael).
 # => FALSE
 
 # Reviewed expected consequence in base.
@@ -121,7 +121,7 @@
 # => FALSE
 
 # Reviewed expected consequence in base.
-? rotten(Vex).
+? rotten(Mael).
 # => TRUE
 
 # Reviewed expected consequence in base.

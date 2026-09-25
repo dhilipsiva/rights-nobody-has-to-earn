@@ -1153,3 +1153,24 @@ conditions this floor refuses. Rawls is not credited, because item 46 could not
 verify the sentence the plan attributed to *Political Liberalism*. The opening
 names the principal lineage and points to Part V. The exact prose is
 `session-drafted, author-approved under delegated approval (2026-09-13)`.
+
+## The vocabulary and the cast — item 51, 2026-09-25
+
+Reader prose uses the settled vocabulary: a conclusion follows or the rules
+conclude it; a fact is recorded or given; a finding is properly made and in
+force; an institution that must act is the responding office; the authority
+to sign findings replaces "pen" and "credential"; custody runs on an
+authorisation and its review date; and the version in force replaces the
+selected current record. The mechanics of carrying a status between versions
+of the record belong to the method's "Versions of the record". Harness and
+fixture names become descriptions in prose while the pins keep them.
+
+The recurring cast is fifteen people whose facts stay the same wherever they
+appear — Nell, Hano, Ruk, Bela, Cira, Marisol, Esa, Adam, Ivo, Kel, Gia, Wren,
+Iris, Tove and Mael — and every other name appears only in its home chapter.
+When a test adds a fact about a cast member, the prose says "Suppose…". Names
+that prejudged their cases are neutral in the source, the pins and the prose:
+Boss is Tove, Rebel Iris, Sly Lior, Vex Mael, Hex Saba, Rex Dara, Lupo Edo, Don
+Faro, and the victim fixture Scapegoat is Tamsin. The sections above keep the
+names in use when they were written. The exact prose is `session-drafted,
+author-approved under delegated approval (2026-09-13)`.

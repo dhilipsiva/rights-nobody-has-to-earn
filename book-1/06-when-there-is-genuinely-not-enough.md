@@ -7,15 +7,15 @@ owed.
 
 The chapter follows one indivisible essential power unit and two protected
 claims. One person is waiting for it; another would lose continuing provision
-if it were reassigned. The supplied evidence supports different priorities.
-A reviewed decision can qualify, and the person who goes without retains a
-claim to provision and repair. The case supplies its shortage and comparative
-evidence; it establishes no actual inventory or delivery.
+if it were reassigned. The recorded evidence supports different priorities.
+A reviewed decision can meet every requirement, and the person who goes
+without retains a claim to provision and repair. The case records a shortage
+and comparative evidence; it shows no actual inventory or delivery.
 
 The ground for using this route matters. A budget choice, exclusion by price,
 administrative delay, artificial withholding, monopoly, provider failure or
 refusal to procure is not an authorised substitute for physical scarcity.
-A separate test establishes that the claimed shortage was a budget choice.
+Suppose a separate finding shows that the claimed shortage was a budget choice.
 The scarcity finding, allocation and shortfall conclusions then cease to
 follow. The person's floor entitlement remains.
 
@@ -29,7 +29,7 @@ challenge, an independent reviewer who is not the body managing the shortage,
 fresh evidence for any reassessment, and an end. A finding grants no standing
 power: when its authority lapses, authority to administer the shortage stops
 following. The floor and continuity obligations remain. The rules do not
-establish that the manager actually stops.
+show that the manager actually stops.
 
 ## What a finding lets anybody do
 
@@ -43,10 +43,10 @@ accommodation. These are grounds for this allocation, not a general ranking of p
 
 ## One unit, two protected claims
 
-In the supplied case, sharing the unit would leave neither claim with usable
-provision. The comparison concerns this allocation window:
+In this case, sharing the unit would leave neither claim with usable
+provision. The comparison concerns this allocation period:
 
-| Relevant ground | What the supplied comparison says |
+| Relevant ground | What the recorded comparison says |
 | --- | --- |
 | Urgency | The waiting claim has the earlier need. |
 | Imminent irreversible harm | Interrupting the continuing claim risks an irreversible loss. |
@@ -54,7 +54,7 @@ provision. The comparison concerns this allocation window:
 | Benefit after accommodation | The waiting claim has the larger likely benefit from this resource. |
 | Accessibility | Each claim must be assessed with the accommodation needed to use the resource. |
 
-The manager's stated decision is to continue the unit for this window. Its
+The manager's stated decision is to continue the unit for this period. Its
 reasons put the irreversible harm of interruption and continuity ahead of the
 waiting claim's earlier need and larger likely benefit. The allocation names
 both claims, the chosen use, the comparison and the rejected alternative. The
@@ -69,19 +69,20 @@ challenge. The manager owes publication of those comparative reasons.
 Independent review, accessible challenge and an end remain conditions of its
 authority.
 
-The rules permit that qualified decision. They do not calculate the relative
-weights, discover that the supplied evidence is true or select the recipient.
-Continuity is an allowed ground for this decision; possession alone gives no
-priority. Neither urgency nor likely benefit is an automatic trump over every
-other permitted ground.
+The rules permit that properly made decision. They do not calculate the
+relative weights, discover that the recorded evidence is true or select the
+recipient. Continuity is an allowed ground for this decision; possession alone
+gives no priority. Neither urgency nor likely benefit is an automatic trump
+over every other permitted ground.
 
-A second comparison makes the claims materially equal after accommodation.
-No usable equal share exists there either, so a disclosed lottery is a permitted
-method. Separate tests supply each possible recipient and qualify each result.
-The rules do not conduct the draw. Using that lottery on the unequal comparison
-does not qualify. If an effective equal share is available, that share takes
-priority over either selective allocation or a lottery.
-Missing comparison evidence does not establish material equality.
+Suppose instead that a second comparison finds the claims materially equal
+after accommodation. No usable equal share exists there either, so a disclosed
+lottery is a permitted method. Whichever recipient the draw is recorded as
+choosing, the allocation meets the rules. The rules do not conduct the draw.
+Using that lottery on the unequal comparison fails the rules. If an effective
+equal share is available, that share takes priority over either selective
+allocation or a lottery. Missing comparison evidence does not show material
+equality.
 
 ## What may never decide it
 
@@ -90,7 +91,7 @@ conviction, family status, a stereotype about disability, expected
 productivity, social usefulness, a general figure for how long someone might
 live, political favour, nationality, citizenship, immigration status,
 documentation, and how somebody arrived. An allocation using any of these keys
-cannot qualify under the rules. Among claims that are
+fails under the rules. Among claims that are
 materially equal, and only there, a disclosed rotation or lottery decides.
 
 ## What is still owed afterwards
@@ -101,7 +102,7 @@ an adverse finding about the claimant. A shortage found for one resource
 or one population licenses nothing about another.
 
 The waiting claim is named in its own shortfall record. Its essential provision
-for this window remains unmet, and the responsible manager owes continuity,
+for this period remains unmet, and the responsible manager owes continuity,
 repair and reassessment. The waiting person's entitlement to care and adult
 ballot remain. Delivered care, personal fault and confinement do not follow.
 The allocation's permission settles none of those other questions.
@@ -110,30 +111,32 @@ The allocation's permission settles none of those other questions.
 
 A finding remains open to challenge. A request to review
 the finding, the allocation, or the recorded shortfall places a duty on the
-reader named in the record, and that duty does not wait for the request to be
-granted. The request creates that review duty; it supplies no record-access
-permission, authority over the resource, or finding either way.
+responding office named in the record, and that duty does not wait for the
+request to be granted. The request creates that review duty; it gives no
+record-access permission, authority over the resource, or finding either way.
 
-If the reader does not act, silence decides nothing by itself. The duty moves
-only on a positive, independently certified finding that the reader did not
+If that office does not act, silence decides nothing by itself. The duty moves
+only on a positive, independently certified finding that the office did not
 respond, with authenticated notice and a real opportunity to act already in
-the record; then the predeclared independent alternate carries it. Silence is
-never approval, and it is never an adverse fact about the person who asked.
+the record; then the duty falls to the predeclared independent alternate.
+Silence is never approval, and it is never an adverse fact about the person
+who asked.
 
-The waiting person challenges the comparative decision. That request creates the
-reader's review duty while the allocation still qualifies, and evidence the
-claimant submits with it must be weighed in that review. A further,
-independently established finding that its comparison or reasons are unsupported
-withdraws authority for that allocation. The genuine scarcity finding and the
-waiting claim's shortfall duties remain. The defect creates no adverse finding
-about either claimant and does not prove that the unit was reassigned or a
-remedy delivered. The reader owes review and correction of the unsupported use;
-the manager owes publication of the correction.
+The waiting person challenges the comparative decision. That request creates
+the responding office's review duty while the allocation still meets the
+rules, and evidence the claimant submits with it must be weighed in that
+review. A further finding, made independently, that the comparison or reasons
+are unsupported withdraws authority for that allocation. The genuine scarcity
+finding and the waiting claim's shortfall duties remain. The defect creates no
+adverse finding about either claimant and does not prove that the unit was
+reassigned or a remedy delivered. The responding office owes review and
+correction of the unsupported use; the manager owes publication of the
+correction.
 
-The false-scarcity control changes a different premise. A qualified finding
-establishes that the supposed shortage arose from refusal to procure. The
-finding's scarcity authority and the allocation under it cease to qualify;
-the scarcity shortfall record loses that basis too. Duties to treat the refusal
+The false-scarcity case changes a different premise. There, a properly made
+finding shows that the supposed shortage arose from refusal to procure. The
+finding's scarcity authority and the allocation under it then fail; the
+scarcity shortfall record loses that basis too. Duties to treat the refusal
 as failure and restore or procure what was withheld follow. Neither person's
 floor is cancelled. An official cannot use a refused procurement to turn
 ordinary responsibility into permission to ration.
@@ -146,7 +149,7 @@ public accountability, local choice against portability, present claims against
 future conditions, and emergency action against what may never be suspended.
 Each requires the applicable constitutional limit and a reviewable resolution.
 Naming the conflict does not authorise a reviewer to invent a priority or
-establish that an actual dispute has been resolved.
+show that an actual dispute has been resolved.
 
 ## The child with nobody
 
@@ -161,7 +164,7 @@ sending Nell's claim to the back of the queue.
 ## What none of this counts
 
 The formal record tests the required evidence and permitted grounds. It does
-not count stock, forecast supply or establish that a shortage is real.
+not count stock, forecast supply or prove that a shortage is real.
 Inventories, reserves, production, capacity, queues and the work of delivering
 what is available belong to the second book's operating account.
 

@@ -102454,7 +102454,7 @@
         "book-1/30-when-the-system-notices-it-broke.pins.nibli"
       ],
       "counterfactual_refs": [
-        "book-1/source/counterfactual/no-choose-boss.nibli",
+        "book-1/source/counterfactual/no-choose-tove.nibli",
         "book-1/source/counterfactual/no-dead-conjuncts.nibli",
         "book-1/source/counterfactual/no-person-line.nibli",
         "book-1/source/counterfactual/no-public-court.nibli",
@@ -104055,7 +104055,7 @@
         "book-1/03-what-counts-as-evidence.md::Economic records illustrate the distinction.",
         "book-1/16-public-answerability.md::The economic rules likewise confer no permanent public status",
         "book-1/24-the-shield.md::personal finding that restricts signing new credibility findings.",
-        "book-1/26-clawback.md::Bela's completed credibility case remains effective.",
+        "book-1/26-clawback.md::Bela's completed credibility case remains in force.",
         "book-1/07-who-owes-and-what-follows.md::A public function cannot shed its duties by being contracted out, insured,",
         "book-1/07-who-owes-and-what-follows.md::The public responsibility to finance, secure, and maintain the floor remains",
         "book-1/07-who-owes-and-what-follows.md::No household, relationship, association or charity is presumed to provide",
@@ -104880,7 +104880,7 @@
       "prose_refs": [
         "book-1/00-opening-note.md::| Personhood and life course |",
         "book-1/03-what-counts-as-evidence.md::Other entries have narrower reach.",
-        "book-1/23-who-holds-the-pen.md::## A credential must derive",
+        "book-1/23-who-holds-the-pen.md::## The authority to sign must follow from evidence",
         "book-1/25-voiding.md::each reviewer still needs the affirmative finding for this case.",
         "book-1/26-clawback.md::Parentage, care, household membership and support likewise do not transfer",
         "book-1/14-holding-a-role-in-somebodys-life.md::**Care is not a family invoice.**",
@@ -104939,7 +104939,7 @@
         "book-1/source/counterfactual/no-delivery-independence.pins.nibli::# Counterfactual: the provider-independence conjunct stripped from the food route"
       ],
       "prose_refs": [
-        "book-1/05-whether-it-arrived.md::No food-delivery conclusion follows for Bela in the supplied record.",
+        "book-1/05-whether-it-arrived.md::No food-delivery conclusion follows for Bela in the record.",
         "book-1/04-what-you-are-owed.md::The floor debt is not a receipt.",
         "book-1/04-what-you-are-owed.md::The rules distinguish entitlement, the responsible public function, evidence",
         "book-1/29-the-one-thing-taken.md::No rule in this source converts custody into a second legal loss.",
@@ -105080,9 +105080,9 @@
       ],
       "prose_refs": [
         "book-1/00-opening-note.md::Public duties distinguish respecting a right, protecting it from interference,",
-        "book-1/16-public-answerability.md::A challenge creates an Appeals duty with a named action route,",
+        "book-1/16-public-answerability.md::A challenge creates a duty on the appeals body with a named action route,",
         "book-1/07-who-owes-and-what-follows.md::To respect a right is to refrain from interfering with it.",
-        "book-1/07-who-owes-and-what-follows.md::A finding reaches an independently named reader and produces an action duty",
+        "book-1/07-who-owes-and-what-follows.md::A finding reaches an independently named responding office and produces an action duty",
         "book-1/07-who-owes-and-what-follows.md::## The forms public responsibility takes"
       ],
       "part_v_refs": [
@@ -105422,7 +105422,7 @@
         "book-1/03-what-counts-as-evidence.md::Economic records illustrate the distinction.",
         "book-1/16-public-answerability.md::The economic rules likewise confer no permanent public status",
         "book-1/24-the-shield.md::personal finding that restricts signing new credibility findings.",
-        "book-1/26-clawback.md::Bela's completed credibility case remains effective.",
+        "book-1/26-clawback.md::Bela's completed credibility case remains in force.",
         "book-1/07-who-owes-and-what-follows.md::A public function cannot shed its duties by being contracted out, insured,",
         "book-1/07-who-owes-and-what-follows.md::The public responsibility to finance, secure, and maintain the floor remains",
         "book-1/07-who-owes-and-what-follows.md::No household, relationship, association or charity is presumed to provide",
@@ -110682,7 +110682,7 @@
       ],
       "residual_citations": [],
       "controls": {
-        "reintroduction_control_ref": "book-1/10-contribution.pins.nibli::? reward(Vex)."
+        "reintroduction_control_ref": "book-1/10-contribution.pins.nibli::? reward(Mael)."
       }
     },
     {
@@ -110747,7 +110747,7 @@
       "residual_citations": [],
       "controls": {
         "containment_control_refs": [
-          "book-1/03-what-counts-as-evidence.md::Omitting the carry does not erase both protection and the",
+          "book-1/03-what-counts-as-evidence.md::Omitting that statement does not erase both protection and the",
           "book-1/source/temporal-assurance-case.md::ESTABLISHED FOR SUPPLIED RECORDS; EXTERNAL LIVENESS NOT ESTABLISHED."
         ]
       }
@@ -112038,7 +112038,7 @@
       "envelope_id": "FS-ENV-00",
       "owner_ref": "CLAUDE.md::Claim-scoped resolution receipts replace confession-as-ending",
       "eligible_gate": "gate-a",
-      "reader_mapping_ref": "book-1/22-changing-the-rules.md::The test dockets Jala"
+      "reader_mapping_ref": "book-1/22-changing-the-rules.md::placed on the docket as a proposal, with a protected target declared and an"
     },
     {
       "id": "FS-RCP-04",
@@ -112058,7 +112058,7 @@
       "why_it_failed": "The examiner rule carried deceit and broken guards but not the voiding guard the other two doors already had.",
       "response_change": "The examiner rule gained the voiding guard, the same shape as the other doors.",
       "now_follows": "Constitutional recognition and its personal clawback are removed by the 2026-09-20 decision. The original blanket penalty is retained in the explicit credibility counterfactual.",
-      "proof_ref": "book-1/10-contribution.pins.nibli::? reward(Vex).",
+      "proof_ref": "book-1/10-contribution.pins.nibli::? reward(Mael).",
       "negative_control_ref": "tests/pins/credibility/recognition-removal/counterfactual.pins.nibli::? lose(Points, Bela).",
       "still_does_not_follow": "The examination route names an occasion and does not authenticate the underlying evidence; recognition is distinct from permission to sign an adverse finding.",
       "residuals": [

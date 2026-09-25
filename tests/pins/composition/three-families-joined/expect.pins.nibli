@@ -47,5 +47,5 @@
 # And the shipped cast is untouched by all three.
 ? person(Hano).
 # => TRUE
-? authority(Boss).
+? authority(Tove).
 # => TRUE

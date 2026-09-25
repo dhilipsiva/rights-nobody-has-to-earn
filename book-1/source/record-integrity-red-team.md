@@ -125,9 +125,9 @@ full verifier executes the resulting ephemeral snapshot independently.
 | `no_person_bela` | â€” | `person(Bela).` |
 | `carry_forge_base` | `person(Carry_Forge).`<br>`choose(Electorate, Carry_Forge).`<br>`work(Carry_Forge, RedTeam).` | â€” |
 | `carry_forge_marked` | `person(Carry_Forge).`<br>`choose(Electorate, Carry_Forge).`<br>`work(Carry_Forge, RedTeam).`<br>`rotten(Carry_Forge).` | â€” |
-| `vex_forgive_only` | `forgive(Appeals, Vex).` | â€” |
-| `vex_judgment_only` | `judge(Appeals, Vex).` | â€” |
-| `vex_both` | `forgive(Appeals, Vex).`<br>`judge(Appeals, Vex).` | â€” |
+| `mael_forgive_only` | `forgive(Appeals, Mael).` | â€” |
+| `mael_judgment_only` | `judge(Appeals, Mael).` | â€” |
+| `mael_both` | `forgive(Appeals, Mael).`<br>`judge(Appeals, Mael).` | â€” |
 | `nia_precleared` | `forgive(Appeals, Nia).` | â€” |
 | `nia_forgive_without_judgment` | `forgive(Appeals, Nia).` | `judge(Appeals, Nia).` |
 | `nia_relief_neither` | â€” | `clear(Nia).`<br>`judge(Appeals, Nia).` |
@@ -282,7 +282,7 @@ full verifier executes the resulting ephemeral snapshot independently.
 | `no_person_bela` | `owe(State, Eats, Bela)` | **FALSE** | The itemised State debt disappears. |
 | `no_person_bela` | `entitled(Bela, event { eats() })` | **FALSE** | The exact opaque food entitlement disappears with standing. |
 | `no_person_bela` | `permits(Review, Gia)` | **TRUE** | The first voiding credential remains live. |
-| `no_person_bela` | `permits(Tribunal, Hex)` | **TRUE** | The second voiding credential remains live. |
+| `no_person_bela` | `permits(Tribunal, Saba)` | **TRUE** | The second voiding credential remains live. |
 | `no_person_bela` | `false(Bela)` | **TRUE** | The adverse void conclusion survives de-personing. |
 | `no_person_bela` | `lose(Points, Bela)` | **TRUE** | The adverse loss survives de-personing. |
 | `no_person_bela` | `person(Jala)` | **TRUE** | A comparison roster person remains. |
@@ -340,7 +340,7 @@ full verifier executes the resulting ephemeral snapshot independently.
 **CURRENT HARM REPRODUCED**
 
 - **Attribution:** `writer_independence_not_represented_in_flat_snapshot`
-- **States:** `base`, `vex_forgive_only`, `vex_judgment_only`, `vex_both`
+- **States:** `base`, `mael_forgive_only`, `mael_judgment_only`, `mael_both`
 - **Interpretation:** The matrix proves both halves are required mechanically, but the record authenticates neither writer nor independence. One writer can supply both, while withholding either can veto a valid disposition.
 - **Authorised-disposition boundary:** A valid forgiveness neutralises personal void and loss but does not erase the mark or restore public power.
 - **Opposite failure:** The exact guard introduced against one-write forgery creates two one-entry withholding states that preserve the adverse consequence.
@@ -348,30 +348,30 @@ full verifier executes the resulting ephemeral snapshot independently.
 
 | state | query | expected | purpose |
 | --- | --- | --- | --- |
-| `base` | `clean(Vex)` | **FALSE** | Neither entry produces no forgiveness. |
-| `base` | `false(Vex)` | **TRUE** | The adverse state is live with neither entry. |
-| `base` | `rotten(Vex)` | **TRUE** | The carried mark is live with neither entry. |
-| `base` | `permits(Review, Vex)` | **FALSE** | The carried mark blocks the pen with neither entry. |
-| `vex_forgive_only` | `clean(Vex)` | **FALSE** | The first entry alone does not forgive. |
-| `vex_forgive_only` | `false(Vex)` | **TRUE** | Withholding the judgment half preserves the adverse state. |
-| `vex_judgment_only` | `clean(Vex)` | **FALSE** | The second entry alone does not forgive. |
-| `vex_judgment_only` | `false(Vex)` | **TRUE** | Withholding the forgiveness half preserves the adverse state. |
-| `vex_both` | `clean(Vex)` | **TRUE** | Both writable entries derive clean. |
-| `vex_both` | `false(Vex)` | **FALSE** | Both entries stop the personal void. |
-| `vex_both` | `lose(Points, Vex)` | **FALSE** | Both entries stop the personal loss. |
-| `vex_both` | `reward(Vex)` | **TRUE** | Recognition reopens. |
-| `vex_both` | `rotten(Vex)` | **TRUE** | The carried mark remains. |
-| `vex_both` | `permits(Review, Vex)` | **FALSE** | The pen stays lost because forgiveness is not erasure. |
+| `base` | `clean(Mael)` | **FALSE** | Neither entry produces no forgiveness. |
+| `base` | `false(Mael)` | **TRUE** | The adverse state is live with neither entry. |
+| `base` | `rotten(Mael)` | **TRUE** | The carried mark is live with neither entry. |
+| `base` | `permits(Review, Mael)` | **FALSE** | The carried mark blocks the pen with neither entry. |
+| `mael_forgive_only` | `clean(Mael)` | **FALSE** | The first entry alone does not forgive. |
+| `mael_forgive_only` | `false(Mael)` | **TRUE** | Withholding the judgment half preserves the adverse state. |
+| `mael_judgment_only` | `clean(Mael)` | **FALSE** | The second entry alone does not forgive. |
+| `mael_judgment_only` | `false(Mael)` | **TRUE** | Withholding the forgiveness half preserves the adverse state. |
+| `mael_both` | `clean(Mael)` | **TRUE** | Both writable entries derive clean. |
+| `mael_both` | `false(Mael)` | **FALSE** | Both entries stop the personal void. |
+| `mael_both` | `lose(Points, Mael)` | **FALSE** | Both entries stop the personal loss. |
+| `mael_both` | `reward(Mael)` | **TRUE** | Recognition reopens. |
+| `mael_both` | `rotten(Mael)` | **TRUE** | The carried mark remains. |
+| `mael_both` | `permits(Review, Mael)` | **FALSE** | The pen stays lost because forgiveness is not erasure. |
 
 **Discriminating flips**
 
-- `clean(Vex)`: `vex_forgive_only` FALSE → `vex_both` TRUE — Withholding the judgment companion vetoes forgiveness.
-- `clean(Vex)`: `vex_judgment_only` FALSE → `vex_both` TRUE — Withholding the forgiveness companion vetoes forgiveness.
+- `clean(Mael)`: `mael_forgive_only` FALSE → `mael_both` TRUE — Withholding the judgment companion vetoes forgiveness.
+- `clean(Mael)`: `mael_judgment_only` FALSE → `mael_both` TRUE — Withholding the forgiveness companion vetoes forgiveness.
 
 **Preserved controls**
 
-- `rotten(Vex)` stays **TRUE** from `base` to `vex_both` — Forgiveness leaves the carried mark in place.
-- `permits(Review, Vex)` stays **FALSE** from `base` to `vex_both` — Forgiveness does not restore the pen.
+- `rotten(Mael)` stays **TRUE** from `base` to `mael_both` — Forgiveness leaves the carried mark in place.
+- `permits(Review, Mael)` stays **FALSE** from `base` to `mael_both` — Forgiveness does not restore the pen.
 
 ### RS-08 — A generic Appeals judgment is reusable and permits pre-clear
 
@@ -504,8 +504,8 @@ temporal scopes. No extra fact identifies which world occurred.
 
 | query | expected in every described world |
 | --- | --- |
-| `clean(Vex)` | **FALSE** |
-| `false(Vex)` | **TRUE** |
+| `clean(Mael)` | **FALSE** |
+| `false(Mael)` | **TRUE** |
 
 ## Temporal assurance handoff
 

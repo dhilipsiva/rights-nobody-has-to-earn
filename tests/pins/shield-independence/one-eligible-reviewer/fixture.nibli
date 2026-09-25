@@ -1,21 +1,21 @@
 # SPDX-License-Identifier: MIT OR Apache-2.0
 # One qualified reviewer cannot occupy both deciding roles.
-observe(Appeals, Case_Rex, ShieldUnrelatedToTheDisclosure, ShieldConnectionScope).
-observe(Appeals, Case_Rex, ShieldUnrelatedToTheDisclosure, ShieldConnectionScope).
-observe(Appeals, Case_Rex, Rex, ShieldSubjectScope).
-observe(Appeals, Case_Rex, Rex, ShieldSubjectScope).
-authorized(Appeals, ShieldConnectionReviewer, Case_Rex).
-authorized(Appeals, ShieldConnectionReviewer, Case_Rex).
-authorized(ShieldAppointments, ShieldQualificationAuthority, Case_Rex).
-authorized(ShieldAppointmentsReview, ShieldQualificationReviewAuthority, Case_Rex).
-observe(ShieldAppointments, Case_Rex, Appeals, IndependentShieldReviewerScope).
-observe(ShieldAppointments, Case_Rex, Appeals, IndependentShieldReviewerScope).
-observe(ShieldAppointmentsReview, Case_Rex, Appeals, IndependentShieldReviewerScope).
-observe(ShieldAppointmentsReview, Case_Rex, Appeals, IndependentShieldReviewerScope).
-show(Rex, Disclosure_Rex_Court, Court).
-show(Rex, Disclosure_Rex_Review, Review).
-show(Rex, Disclosure_Rex_Appeals, Appeals).
-show(Rex, Disclosure_Rex_Appeals, Appeals).
-show(Rex, Disclosure_Rex_State, State).
-show(Rex, Disclosure_Rex_ShieldAppointments, ShieldAppointments).
-show(Rex, Disclosure_Rex_ShieldAppointmentsReview, ShieldAppointmentsReview).
+observe(Appeals, Case_Dara, ShieldUnrelatedToTheDisclosure, ShieldConnectionScope).
+observe(Appeals, Case_Dara, ShieldUnrelatedToTheDisclosure, ShieldConnectionScope).
+observe(Appeals, Case_Dara, Dara, ShieldSubjectScope).
+observe(Appeals, Case_Dara, Dara, ShieldSubjectScope).
+authorized(Appeals, ShieldConnectionReviewer, Case_Dara).
+authorized(Appeals, ShieldConnectionReviewer, Case_Dara).
+authorized(ShieldAppointments, ShieldQualificationAuthority, Case_Dara).
+authorized(ShieldAppointmentsReview, ShieldQualificationReviewAuthority, Case_Dara).
+observe(ShieldAppointments, Case_Dara, Appeals, IndependentShieldReviewerScope).
+observe(ShieldAppointments, Case_Dara, Appeals, IndependentShieldReviewerScope).
+observe(ShieldAppointmentsReview, Case_Dara, Appeals, IndependentShieldReviewerScope).
+observe(ShieldAppointmentsReview, Case_Dara, Appeals, IndependentShieldReviewerScope).
+show(Dara, Disclosure_Dara_Court, Court).
+show(Dara, Disclosure_Dara_Review, Review).
+show(Dara, Disclosure_Dara_Appeals, Appeals).
+show(Dara, Disclosure_Dara_Appeals, Appeals).
+show(Dara, Disclosure_Dara_State, State).
+show(Dara, Disclosure_Dara_ShieldAppointments, ShieldAppointments).
+show(Dara, Disclosure_Dara_ShieldAppointmentsReview, ShieldAppointmentsReview).

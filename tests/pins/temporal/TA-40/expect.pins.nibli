@@ -15,9 +15,9 @@
 # => FALSE
 
 # Adverse carry loses effect when canonical lineage is ambiguous.
-? match(Vex, CarriedVoid).
+? match(Mael, CarriedVoid).
 # => FALSE
 
 # The source cannot choose a convenient lineage version to preserve the adverse consequence.
-? false(Vex).
+? false(Mael).
 # => FALSE

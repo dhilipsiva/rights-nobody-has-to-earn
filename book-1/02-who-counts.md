@@ -1,7 +1,7 @@
 # Who Counts
 
 Nell enters the record through a birth. Someone without a birth record can
-enter through an encounter. The routes differ; the personhood they establish
+enter through an encounter. The routes differ; the personhood they lead to
 does not.
 
 ## The ways in
@@ -21,7 +21,7 @@ person was granted permission to be there. Effective control reaches someone
 under the republic's power without making protection depend on the location.
 Moving a person across a border does not remove this ground of obligation.
 
-Each route leads to the same floor. The chapter's cases supply a birth for one
+Each route leads to the same floor. The chapter's cases record a birth for one
 person, first contact for another, presence for another and effective control
 for another. Food is owed in each case. The entitlement and protections attach
 to the resulting personhood, without a further test of how it was reached.
@@ -29,14 +29,14 @@ to the resulting personhood, without a further test of how it was reached.
 ## A name at an encounter is a handle
 
 An encounter needs a way to refer to the person. Its temporary name can serve
-that purpose without establishing a civil identity. It proves no citizenship,
+that purpose without settling a civil identity. It proves no citizenship,
 family relationship, liability or guilt. Assistance need not wait for a match
 against another record.
 
-A claimed alias does not merge identities. The test records a claimed link between encounter names
-and asks whether either becomes the other. Neither does.
-The claim therefore imports no conviction, sentence or history through an
-assumed match. Consequential identity links remain separate, challengeable
+A claimed alias does not merge identities. The test records a claimed link
+between encounter names and asks whether either becomes the other. Neither
+does. The claim therefore imports no conviction, sentence or history through
+an assumed match. Consequential identity links remain separate, challengeable
 claims.
 
 The entry rules also distinguish people from public bodies. A first-contact
@@ -48,7 +48,7 @@ An office cannot acquire human standing merely by recording an encounter.
 
 A broken status record does not erase a valid standing root. In the test,
 a registry entry concerning a person is marked as broken. The entry remains
-visible, and the person's first-contact root still establishes personhood.
+visible, and personhood still follows from the person's first-contact root.
 A defect in that record does not undo the encounter.
 
 Missing or disputed age evidence also leaves standing intact. The executable
@@ -62,7 +62,7 @@ to withhold what the unreconciled person is owed.
 
 ## Standing without a roster
 
-Standing does not depend on a maintained roster. A supplied birth or encounter
+Standing does not depend on a maintained roster. A recorded birth or encounter
 is enough, including an encounter held under a temporary name. Missing identity
 papers do not create a waiting period for the floor, process or remedy.
 
@@ -72,10 +72,10 @@ with confinement. Protective-order and independently witnessed physical-holding
 routes provide further backstops. The prisoner chapter tests what happens when
 only the conviction route is present.
 
-These routes do not observe anyone. They establish a legal consequence from
-supplied evidence. A custody conclusion can establish personhood without proving
-that the holding was entered accurately, just as an encounter entry can do so
-without authenticating the name attached to it.
+These routes do not observe anyone. They draw a legal consequence from
+recorded evidence. Personhood can follow from a custody conclusion without
+proof that the holding was entered accurately, just as it can follow from an
+encounter entry without authentication of the name attached to it.
 
 ## The child with nobody
 

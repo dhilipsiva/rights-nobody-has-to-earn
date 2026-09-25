@@ -6,8 +6,8 @@ what the floor owes, and owning a service does not give its owner unlimited
 power over the people who depend on it.
 
 When does lawful control over property become power over another person's
-rights? The housing cases separate an asset from the floor. Harrow's entries
-then test the grounds for public duties on a private function. Public
+rights? The housing cases separate an asset from the floor. One witness's
+entries then test the grounds for public duties on a private function. Public
 intervention, including taxation and the payment system, needs limits too.
 
 ## Owning without owning the floor
@@ -77,18 +77,18 @@ effects, information asymmetry or the absence of meaningful exit. Size and
 profit alone are not grounds. A small gatekeeper can control access that a
 large enterprise does not.
 
-Harrow's entries test that distinction. An attestation naming essentiality
+That witness's entries test the distinction. An attestation naming essentiality
 is recognised as naming a permitted ground. An invented revenue threshold
 is not. A gatekeeping *function class* cannot be substituted
 for a *ground*. The categories stay separate even when the same witness writes
 each entry. None of this proves that essentiality or gatekeeping exists in the
-world; it establishes which claims the finding can use.
+world; it settles which claims the finding can use.
 
 The finding must also concern a public-facing, delegated, essential, gatekeeping
 or system-steering function. Its tier must match its reach: a function confined
 to one region belongs to the regional route, while a function crossing regions
-belongs to the common route. The checks reject the vocabulary pairing for a
-cross-regional function under regional authority. Supplied entries cannot
+belongs to the common route. The rules reject the vocabulary pairing for a
+cross-regional function under regional authority. Entries in the record cannot
 rewrite these categories by asserting membership directly.
 
 A complete finding identifies the actor, function, affected people, evidence,
@@ -104,7 +104,7 @@ be used to impose a score on voluntary life.
 
 ## When an economic power ends, and what does not
 
-A qualifying private-power finding can support an intervention, but it does
+A properly made private-power finding can support an intervention, but it does
 not make the manager permanent. The expiry cases separate the manager's
 authority from the continuity owed to people using the service.
 
@@ -115,8 +115,8 @@ extending it. Review silence is not approval. A declared alternate must take
 up review when the ordinary reviewer is certified unavailable; the alternate's
 absence supplies neither approval nor an indefinite hold.
 
-The focused counterfactuals remove current independent review from each power
-and test the affected conclusions. Expiry cases separately show restrictive
+Focused tests remove current independent review from each power and examine
+the affected conclusions. Expiry cases separately show restrictive
 authority ending while ordinary rights and public continuity duties remain.
 Enterprise failure cannot extinguish a remedy or authorise interruption of an
 essential service. A lapsed manager loses authority, not the institution's
@@ -143,7 +143,7 @@ making either a constitutional requirement.
 
 During budget deadlock, prior authority for essential provision continues
 without creating new spending power. That rule allocates legal
-responsibility; it does not establish that funds, staff or supplies exist.
+responsibility; it does not show that funds, staff or supplies exist.
 
 ## Money you can hold in your hand
 
@@ -160,8 +160,9 @@ policy.
 There is no general entitlement to credit. Credit and insurance decisions must
 use lawful criteria, give reasons, respect equality, allow correction of the
 data relied on and provide a challenge route. Private insurance cannot gate a
-floor service. The purpose limits described in chapter 9 also prevent reuse of
-a contribution record as a standing, worth, risk or political score.
+floor service. The purpose limits described in the chapter on earning above
+the floor also prevent reuse of a contribution record as a standing, worth,
+risk or political score.
 
 Cash, vouchers and insurance approvals are instruments, not evidence that food,
 housing or care reached someone. Delivery still requires the receiving-side
@@ -183,7 +184,7 @@ allows different provision without making a move across regions a loss of rights
 
 ## The child with nobody
 
-Nell's record supplies no property, contract, enterprise, debt or account. It
+Nell's record holds no property, contract, enterprise, debt or account. It
 still produces the prohibitions on economic gates, payment instruments counted
 as delivery, presumed household provision and scoring voluntary life. The State
 owes Nell a dwelling. None of these claims waits for evidence of purchasing
@@ -192,18 +193,18 @@ possessions.
 
 ## What none of this counts
 
-A complete power record establishes formal authority, not its exercise.
-It proves no acquisition, tax payment or functioning market. A permitted ground for regulating private
-power does not prove the ground true. A prohibition does not establish that a
-court enforced it. The model values no property, measures no dominance and
-operates no payment system.
+A complete power record shows formal authority, not its exercise. It proves
+no acquisition, tax payment or functioning market. A permitted ground for
+regulating private power does not prove the ground true. A prohibition does not
+show that a court enforced it. The rules value no property, measure no
+dominance and operate no payment system.
 
 Those limits leave constitutional choices open to assessment: whether the
 powers are sufficiently bounded, whether the duties protect their intended
 recipients, and whether a remedy can answer the specified failure. Operational
-rates, budgets and institutions need further design; they cannot be supplied
+rates, budgets and institutions need further design; they cannot be produced
 by calling a formal result complete.
 
-The floor cannot depend on purchasing power, and wealth supplies no exemption
-from public duties. The next chapter asks how equal access works when the obstacle is something other
-than price.
+The floor cannot depend on purchasing power, and wealth gives no exemption
+from public duties. The next chapter asks how equal access works when the
+obstacle is something other than price.

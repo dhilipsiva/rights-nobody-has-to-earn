@@ -229,11 +229,11 @@ The generated table supplies the current layers of `defend`, `permits`,
    claimed. Two derivations: Review credentials from clean seating, Appeals relief
    from `clear`.
 4. **The Shield.** `defend` — exposure protects, but only against an authority, and
-   only until deceit is found. **Don**, who claimed protection for exposing his own
-   victim. **Sly**, protected during a window the author chose to leave open.
+   only until deceit is found. **Faro**, who claimed protection for exposing his own
+   victim. **Lior**, protected during a window the author chose to leave open.
    **Kel**, whose shield falls.
 5. **Credibility findings.** `false` — multi-sig, independence, counter-audit, epoch carry.
-   **Vex**, the auditor voided last epoch who is still seated on paper.
+   **Mael**, the auditor voided last epoch who is still seated on paper.
 6. **Clawback.** `lose` — what taking back looks like when the floor cannot be
    touched. The fairness problem it carried — a contamination rule docking a
    student for a teacher's fraud — was ruled 2026-08-02: the student rule is

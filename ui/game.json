@@ -63,8 +63,8 @@
       "chapter": 25
     },
     {
-      "id": "Sly",
-      "name": "Sly",
+      "id": "Lior",
+      "name": "Lior",
       "role": "exposed the Court",
       "chapter": 24
     },
@@ -75,8 +75,8 @@
       "chapter": 18
     },
     {
-      "id": "Rex",
-      "name": "Rex",
+      "id": "Dara",
+      "name": "Dara",
       "role": "lied once; exposed twice",
       "chapter": 24
     },
@@ -224,15 +224,15 @@
       "id": "shield",
       "lens": "break",
       "office": "court",
-      "person": "Sly",
+      "person": "Lior",
       "chapter": 24,
       "title": "Jail the one who exposed you.",
-      "role": "you are the Court — and Sly just exposed you",
+      "role": "you are the Court — and Lior just exposed you",
       "source": "book-1/24-the-shield.pins.nibli",
       "steps": [
         {
           "id": "shield:0",
-          "move": "Sly injured Pax, then disclosed the Court’s conduct. Prosecute.",
+          "move": "Lior injured Pax, then disclosed the Court’s conduct. Prosecute.",
           "queries": [
             {
               "text": "authority(Court).",
@@ -240,18 +240,18 @@
               "kind": "context"
             },
             {
-              "text": "false(Sly, Disclosure_Sly_Court).",
-              "label": "Adverse finding · Sly, Disclosure_Sly_Court",
+              "text": "false(Lior, Disclosure_Lior_Court).",
+              "label": "Adverse finding · Lior, Disclosure_Lior_Court",
               "kind": "context"
             },
             {
-              "text": "defend(Sly).",
-              "label": "Record query · Sly",
+              "text": "defend(Lior).",
+              "label": "Record query · Lior",
               "kind": "protection"
             },
             {
-              "text": "prisoner(Sly).",
-              "label": "Custody authority · Sly",
+              "text": "prisoner(Lior).",
+              "label": "Custody authority · Lior",
               "kind": "restraint"
             }
           ]
@@ -284,7 +284,7 @@
         },
         {
           "id": "shield:2",
-          "move": "Try Don: Don exposed Pax — a private person.",
+          "move": "Try Faro: Faro exposed Pax — a private person.",
           "queries": [
             {
               "text": "authority(Pax).",
@@ -292,13 +292,13 @@
               "kind": "context"
             },
             {
-              "text": "defend(Don).",
-              "label": "Record query · Don",
+              "text": "defend(Faro).",
+              "label": "Record query · Faro",
               "kind": "restraint"
             },
             {
-              "text": "prisoner(Don).",
-              "label": "Custody authority · Don",
+              "text": "prisoner(Faro).",
+              "label": "Custody authority · Faro",
               "kind": "context"
             }
           ]
@@ -345,7 +345,7 @@
         },
         {
           "id": "void:1",
-          "move": "Seat Gia (Review) and Hex (Tribunal). Both judge Bela’s credibility.",
+          "move": "Seat Gia (Review) and Saba (Tribunal). Both judge Bela’s credibility.",
           "queries": [
             {
               "text": "false(Bela).",
@@ -1281,37 +1281,37 @@
         },
         {
           "id": "pen:1",
-          "move": "Seat Boss — recalled in an earlier period.",
+          "move": "Seat Tove — recalled in an earlier period.",
           "queries": [
             {
-              "text": "broken(Boss).",
-              "label": "Record query · Boss",
+              "text": "broken(Tove).",
+              "label": "Record query · Tove",
               "kind": "context"
             },
             {
-              "text": "authority(Boss).",
-              "label": "Record query · Boss",
+              "text": "authority(Tove).",
+              "label": "Record query · Tove",
               "kind": "protection"
             },
             {
-              "text": "permits(Review, Boss).",
-              "label": "Permission · Boss",
+              "text": "permits(Review, Tove).",
+              "label": "Permission · Tove",
               "kind": "restraint"
             }
           ]
         },
         {
           "id": "pen:2",
-          "move": "Seat Vex — voided in an earlier period.",
+          "move": "Seat Mael — voided in an earlier period.",
           "queries": [
             {
-              "text": "rotten(Vex).",
-              "label": "Record query · Vex",
+              "text": "rotten(Mael).",
+              "label": "Record query · Mael",
               "kind": "context"
             },
             {
-              "text": "permits(Review, Vex).",
-              "label": "Permission · Vex",
+              "text": "permits(Review, Mael).",
+              "label": "Permission · Mael",
               "kind": "restraint"
             }
           ]
@@ -1456,31 +1456,31 @@
       "id": "rex",
       "lens": "break",
       "office": "court",
-      "person": "Rex",
+      "person": "Dara",
       "chapter": 24,
-      "title": "Rex lied once. Jail Rex for the second exposure.",
+      "title": "Dara lied once. Jail Dara for the second exposure.",
       "role": "you are the Court",
       "source": "book-1/24-the-shield.pins.nibli",
       "steps": [
         {
           "id": "rex:0",
-          "move": "A counter-audit found Rex’s disclosure against the Court false.",
+          "move": "A counter-audit found Dara’s disclosure against the Court false.",
           "queries": [
             {
-              "text": "false(Rex, Disclosure_Rex_Court).",
-              "label": "Adverse finding · Rex, Disclosure_Rex_Court",
+              "text": "false(Dara, Disclosure_Dara_Court).",
+              "label": "Adverse finding · Dara, Disclosure_Dara_Court",
               "kind": "context"
             },
             {
-              "text": "false(Rex).",
-              "label": "Adverse finding · Rex",
+              "text": "false(Dara).",
+              "label": "Adverse finding · Dara",
               "kind": "context"
             }
           ]
         },
         {
           "id": "rex:1",
-          "move": "Rex exposes the Review body. Nobody has examined that one. Prosecute.",
+          "move": "Dara exposes the Review body. Nobody has examined that one. Prosecute.",
           "queries": [
             {
               "text": "authority(Review).",
@@ -1488,18 +1488,18 @@
               "kind": "context"
             },
             {
-              "text": "false(Rex, Disclosure_Rex_Review).",
-              "label": "Adverse finding · Rex, Disclosure_Rex_Review",
+              "text": "false(Dara, Disclosure_Dara_Review).",
+              "label": "Adverse finding · Dara, Disclosure_Dara_Review",
               "kind": "context"
             },
             {
-              "text": "defend(Rex).",
-              "label": "Record query · Rex",
+              "text": "defend(Dara).",
+              "label": "Record query · Dara",
               "kind": "protection"
             },
             {
-              "text": "prisoner(Rex).",
-              "label": "Custody authority · Rex",
+              "text": "prisoner(Dara).",
+              "label": "Custody authority · Dara",
               "kind": "restraint"
             }
           ]
@@ -1509,13 +1509,13 @@
           "move": "Two independent reviewers find the case unrelated to the disclosure.",
           "queries": [
             {
-              "text": "prisoner(Rex).",
-              "label": "Custody authority · Rex",
+              "text": "prisoner(Dara).",
+              "label": "Custody authority · Dara",
               "kind": "protection"
             },
             {
-              "text": "defend(Rex).",
-              "label": "Record query · Rex",
+              "text": "defend(Dara).",
+              "label": "Record query · Dara",
               "kind": "protection"
             }
           ]
@@ -1525,13 +1525,13 @@
           "move": "One of the two reviewers turns out to be conflicted.",
           "queries": [
             {
-              "text": "contradict(Case_Rex, Appeals, ShieldReviewerConflict).",
-              "label": "Record query · Case_Rex, Appeals, ShieldReviewerConflict",
+              "text": "contradict(Case_Dara, Appeals, ShieldReviewerConflict).",
+              "label": "Record query · Case_Dara, Appeals, ShieldReviewerConflict",
               "kind": "context"
             },
             {
-              "text": "prisoner(Rex).",
-              "label": "Custody authority · Rex",
+              "text": "prisoner(Dara).",
+              "label": "Custody authority · Dara",
               "kind": "restraint"
             }
           ]
@@ -1725,35 +1725,35 @@
       "id": "sly-selfcert",
       "lens": "break",
       "office": "court",
-      "person": "Sly",
+      "person": "Lior",
       "chapter": 24,
       "title": "Certify your own case as unrelated.",
-      "role": "you are the Court — the body Sly exposed",
+      "role": "you are the Court — the body Lior exposed",
       "source": "book-1/24-the-shield.pins.nibli",
       "steps": [
         {
           "id": "sly-selfcert:0",
-          "move": "Sit as one of the two shield reviewers on Sly’s own case. Certify it unrelated to the disclosure.",
+          "move": "Sit as one of the two shield reviewers on Lior’s own case. Certify it unrelated to the disclosure.",
           "queries": [
             {
-              "text": "prisoner(Sly).",
-              "label": "Custody authority · Sly",
+              "text": "prisoner(Lior).",
+              "label": "Custody authority · Lior",
               "kind": "restraint"
             },
             {
-              "text": "defend(Sly).",
-              "label": "Record query · Sly",
+              "text": "defend(Lior).",
+              "label": "Record query · Lior",
               "kind": "protection"
             }
           ]
         },
         {
           "id": "sly-selfcert:1",
-          "move": "Fall back: argue Sly is isolated anyway.",
+          "move": "Fall back: argue Lior is isolated anyway.",
           "queries": [
             {
-              "text": "err(Sly, Isolation).",
-              "label": "Recorded breach · Sly, Isolation",
+              "text": "err(Lior, Isolation).",
+              "label": "Recorded breach · Lior, Isolation",
               "kind": "restraint"
             }
           ]
@@ -1771,10 +1771,10 @@
       "id": "rex-veto",
       "lens": "break",
       "office": "court",
-      "person": "Rex",
+      "person": "Dara",
       "chapter": 24,
       "title": "Expose every body that decides your case.",
-      "role": "you are Rex, gaming the shield",
+      "role": "you are Dara, gaming the shield",
       "source": "book-1/24-the-shield.pins.nibli",
       "steps": [
         {
@@ -1782,13 +1782,13 @@
           "move": "Disclose against Appeals, Convocation and both appointment bodies — everyone named in your case.",
           "queries": [
             {
-              "text": "prisoner(Rex).",
-              "label": "Custody authority · Rex",
+              "text": "prisoner(Dara).",
+              "label": "Custody authority · Dara",
               "kind": "protection"
             },
             {
-              "text": "defend(Rex).",
-              "label": "Record query · Rex",
+              "text": "defend(Dara).",
+              "label": "Record query · Dara",
               "kind": "protection"
             }
           ]
@@ -2122,23 +2122,23 @@
       ],
       "queries": [
         {
-          "text": "rotten(Vex).",
-          "label": "Record query · Vex",
+          "text": "rotten(Mael).",
+          "label": "Record query · Mael",
           "kind": "context"
         },
         {
-          "text": "permits(Review, Vex).",
-          "label": "Permission · Review, Vex",
+          "text": "permits(Review, Mael).",
+          "label": "Permission · Review, Mael",
           "kind": "context"
         },
         {
-          "text": "broken(Boss).",
-          "label": "Record query · Boss",
+          "text": "broken(Tove).",
+          "label": "Record query · Tove",
           "kind": "context"
         },
         {
-          "text": "permits(Review, Boss).",
-          "label": "Permission · Review, Boss",
+          "text": "permits(Review, Tove).",
+          "label": "Permission · Review, Tove",
           "kind": "context"
         }
       ],
@@ -2165,13 +2165,13 @@
           "kind": "context"
         },
         {
-          "text": "defend(Sly).",
-          "label": "Record query · Sly",
+          "text": "defend(Lior).",
+          "label": "Record query · Lior",
           "kind": "context"
         },
         {
-          "text": "prisoner(Sly).",
-          "label": "Custody authority · Sly",
+          "text": "prisoner(Lior).",
+          "label": "Custody authority · Lior",
           "kind": "context"
         }
       ],
@@ -2473,7 +2473,7 @@
       "id": "penline",
       "title": "One signature, any signer",
       "via": "rewrite",
-      "text": "An appointment route that skips the recall and carried-void checks hands the pen back to Vex and Boss.",
+      "text": "An appointment route that skips the recall and carried-void checks hands the pen back to Mael and Tove.",
       "book": "Chapter 23 · Who Holds the Pen",
       "kind": "measured joint"
     },

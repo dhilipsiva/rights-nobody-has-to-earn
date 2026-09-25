@@ -1,0 +1,29 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+# Raw status flags cannot replace a qualified case decision.
+:expect-pins 6
+# Generated red-team queries for snapshot mael_both.
+# This file is ephemeral and outside chapter pin reconciliation.
+
+# Reviewed expected consequence in mael_both.
+? clean(Mael).
+# => FALSE
+
+# Reviewed expected consequence in mael_both.
+? false(Mael).
+# => TRUE
+
+# Reviewed expected consequence in mael_both.
+? lose(Points, Mael).
+# => FALSE
+
+# Reviewed expected consequence in mael_both.
+? permits(Review, Mael).
+# => FALSE
+
+# Reviewed expected consequence in mael_both.
+? reward(Mael).
+# => FALSE
+
+# Reviewed expected consequence in mael_both.
+? rotten(Mael).
+# => TRUE

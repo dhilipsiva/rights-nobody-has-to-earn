@@ -138,5 +138,5 @@ observe(RecordHoldingDefectReview, RecordHoldingDefectRecord, NoAdverseSubjectFa
 # => TRUE
 ? decide(Hano, Ballot).
 # => TRUE
-? authority(Boss).
+? authority(Tove).
 # => TRUE

@@ -52,8 +52,8 @@ whether people are being sent along unjustifiably different routes to what
 they are owed. These protections have their own rules and cannot be credited
 to the floor's refusal mechanism alone.
 
-Movement has its own protection, checked separately; it establishes no
-protection for food, shelter or another floor item.
+Movement has its own protection, checked separately; it gives no protection
+for food, shelter or another floor item.
 
 ## Owed by whom
 
@@ -74,47 +74,48 @@ for lacking the debt is.
 
 The State is itself publicly answerable: an exposure against it can attract the
 shield on the same terms as an exposure against another answerable actor. The
-State's supplied record gives it no examiner's credential. Owing the floor does
-not grant the power to make a credibility finding against someone.
+State's record gives it no authority to sign findings as an examiner. Owing
+the floor does not grant the power to make a credibility finding against
+someone.
 
-The floor debt is not a receipt. Bela is owed food and shelter. In the supplied
-record, neither delivery conclusion follows for Bela. The obligation survives
-that absence.
-No rule reads the debt itself and turns it into something received.
+The floor debt is not a receipt. Bela is owed food and shelter. On the record
+as it stands, neither delivery conclusion follows for Bela. The obligation
+survives that absence. No rule reads the debt itself and turns it into
+something received.
 
 Ordinary delivery needs its own evidence: a recipient-side report, a witness
 authorised for that person, a matching item and scope, and separation between
 witness and provider. An alternate witness must meet the same conditions.
 The next chapter follows that route. No receipt means the route is unsupported;
-it does not establish a failed delivery or withdraw the entitlement.
+it does not show a failed delivery or withdraw the entitlement.
 
 Custody adds duties to secure shelter, voice, care and independent access.
 Neither a lawful sentence nor a report of physical holding supplies a shelter
-receipt or establishes that the person spoke. A separate isolation finding
+receipt or shows that the person spoke. A separate isolation finding
 requires positive evidence of denied contact for a specified holding, place
 and period. Missing company evidence cannot supply it.
 
 An altered rule can supply a misleading answer. In one experiment, a rule
 simply says that every person has a selected floor condition. The altered
-model then reports that condition without a receipt. It does not erase a
+design then reports that condition without a receipt. It does not erase a
 separately evidenced isolation finding. Refusing to let someone enter a
 delivery conclusion directly cannot prevent a changed rule from producing
 one without evidence. A delivery claim must be checked against what supports it.
 
 A different experiment changes what one floor debt promises. The changed rule
-still owes something to a person, but it no longer owes the selected item.
-The check for that debt fails while the other debts continue to follow.
+still owes something to a person, but not the selected item. The test for
+that debt fails while the other debts continue to follow.
 Testing each item matters: the outward shape of a promise is not enough to
 preserve its content.
 
 The rules distinguish entitlement, the responsible public function, evidence
 of arrival, challenge, interim continuity, individual remedy, common-cause
-correction, re-examination and recurrence checking. The chapter on who owes follows those duties and
-their independent readers.
+correction, re-examination and recurrence checking. The chapter on who owes
+follows those duties and the independent offices that must act on them.
 
-An offer, accessible and adequate provision, a finding reaching its reader,
-and completed restoration each need separate evidence. Bela's debts establish
-none of those events.
+An offer, accessible and adequate provision, a finding reaching the office
+that must act, and completed restoration each need separate evidence. Bela's
+debts are evidence of none of those events.
 
 ## The child with nobody
 

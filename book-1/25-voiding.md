@@ -1,14 +1,15 @@
 # Credibility Findings
 
-Bela's effective credibility finding restricts one use of public power: Bela
-cannot sign a new credibility finding against somebody else. A finding that a
-particular disclosure was itself a deception also withdraws the shield for that
-disclosure alone, as Chapter 24 shows. Those are its only restrictions; what
-else follows are duties owed to Bela, to give reasons and to review the finding.
-Standing, the floor, movement, the ballot and public answerability remain, and
-so does Bela's ability to act as a source, witness or reviewer in the other
-records the constitution keeps, each under its own independence and conflict
-rules. None of this establishes that every statement Bela makes is false.
+A credibility finding is in force against Bela, and it restricts one use of
+public power: Bela cannot sign a new credibility finding against somebody else.
+A finding that a particular disclosure was itself a deception also withdraws
+the shield for that disclosure alone, as Chapter 24 shows. Those are its only
+restrictions; what else follows are duties owed to Bela, to give reasons and to
+review the finding. Standing, the floor, movement, the ballot and public
+answerability remain, and so does Bela's ability to act as a source, witness or
+reviewer in the other records the constitution keeps, each under its own
+independence and conflict rules. None of this shows that every statement Bela
+makes is false.
 
 The distinction is between a finding about an identified act and a judgment
 about a person's worth. The finding has a ground, a case, people responsible
@@ -16,83 +17,86 @@ for it and a way to contest it. The person keeps their rights.
 
 ## The paired finding
 
-Gia and Hex are the examiners; Bela is the subject of their finding. Gia's
-credential comes through Electorate and Hex's through Convocation. Both identify
-the same incident, adverse ground and evidence. Each has an independence finding
-for that case. Their records also affirm that notice, access to the evidence, a
-hearing and reasons were provided. The completed judgment includes independently
-witnessed evidence of their eligibility when they made it and of its place
-before the current evaluation. Bela's credibility finding follows from that
-completed case.
+Gia and Saba are the examiners; Bela is the subject of their finding. Gia holds
+the authority to sign findings by appointment of the electorate, and Saba by
+appointment of the convocation. Both identify the same incident, adverse ground
+and evidence. Each has an independence finding for that case. Their records
+also affirm that notice, access to the evidence, a hearing and reasons were
+provided. The completed judgment includes independently witnessed evidence of
+their eligibility when they made it and of its place before the current
+evaluation. Bela's credibility finding follows from that completed case.
 
-Permission to make a finding is a separate question. Two currently eligible
-reviewers can qualify a proposed finding; that permission does not itself
-record a completed judgment or impose a penalty. Their subsequent act must
-have its own completed record. This separation lets the rule ask whether a
-reviewer may act now without treating a later disqualification as proof that
-every lawful earlier act was invalid.
+Permission to make a finding is a separate question. Two reviewers who are
+eligible now can together make a proposed finding properly; that permission
+does not itself record a completed judgment or impose a penalty. Their
+subsequent act must have its own completed record. This separation lets the
+rule ask whether a reviewer may act now without treating a later
+disqualification as proof that every lawful earlier act was invalid.
 
 The ground must name deceit, a fabricated record, a concealed conflict or
 withheld evidence. A complaint alone is not one of those findings. A separate
-test starts with a complaint about a subject named Targ4 and examinations by two
-credentialed reviewers, Nogra and Nogrb. The proposed finding still needs both
-reviewers' agreement on the actual incident and ground. One affirmation does not
-suffice. When the second reviewer agrees, the proposal qualifies, but no finding
-yet applies to the subject. That consequence follows only when the completed
-case is also recorded.
+test starts with a complaint about another subject and examinations of that
+subject by two reviewers who each hold the authority to sign. The proposed
+finding still needs both reviewers' agreement on the actual incident and
+ground. One affirmation does not suffice. When the second reviewer agrees, the
+proposal is properly made, but no finding yet applies to the subject. That
+consequence follows only when the completed case is also recorded.
 
 Matching a subject and the word *deceit* is insufficient. The incident and
 evidence must match too. An independence entry for another case cannot be
-borrowed, and conflicting descriptions invalidate the record. Represented
-family relationships with the subject or between the prospective signers
-also stop the pair. Missing relationship records do not establish independence:
+borrowed, and conflicting descriptions invalidate the record. Recorded family
+relationships with the subject or between the prospective signers also stop
+the pair. Missing relationship records do not prove independence:
 each reviewer still needs the affirmative finding for this case.
 
-Two further cases isolate different missing conditions. Koa, the lone examiner,
-recorded an examination of Esa but supplies neither a judgment nor the required
-credential; no finding follows. In the other case Ambi holds both credentials
-and proposes a finding against Solo. The other case premises are present, but
-one person cannot count as two signers. No finding follows for Solo. These are
-separate failures, not successive stages of one case.
+Two further cases isolate different missing conditions. In the first, a person
+whose only recorded act is an examination of Esa has no judgment and no
+authority to sign; no finding follows. In the other, one person holds both
+appointments and proposes a finding against a further subject. Every other
+element of the case is present, but one person cannot count as two signers, and
+no finding follows. These are separate failures, not successive stages of one
+case.
 
 ## Findings against an examiner
 
-Dev is Esa's parent and judges Esa. The relationship prevents Dev from
-qualifying an adverse finding about Esa. It does not automatically put Dev under
-a finding. A separate finding of concealed conflict needs the same case and
-process as any other adverse finding.
+Dev is Esa's parent and judges Esa. The relationship bars Dev from signing an
+adverse finding about Esa. It does not automatically put Dev under a finding. A
+separate finding of concealed conflict needs the same case and process as any
+other adverse finding.
 
-Another completed case concerns Lupo's deceit of Mira. Lupo is the subject of
-the adverse finding; Mira is the person deceived. The finding applies to Lupo
-and not to Mira. A bare allegation, even beside a generic Review judgment naming
-Lupo, would not supply that case. The accusation cannot do the work of the
-particular judgment.
+Another completed case concerns Edo's deceit of Mira. Edo is the subject of
+the adverse finding; Mira is the person deceived. The finding applies to Edo
+and not to Mira. A bare allegation, even beside a generic judgment by the
+review body naming Edo, would not make that case. The accusation cannot do the
+work of the particular judgment.
 
 That distinction also protects an examiner against an unsupported accusation.
-The recorded allegation alone does not create a personal finding. That does not
-establish that the examiner was honest; it establishes what is required before
-an adverse personal consequence may follow.
+The recorded allegation alone does not create a personal finding. That settles
+what is required before an adverse personal consequence may follow; it does not
+show that the examiner was honest.
 
 ## What has to cross the record
 
-Tyr is the subject in the carried-history example. The examiners, Vex and Wren,
-have recorded examinations of Tyr. Vex's matched carried restriction blocks the
-required appointment, so the pair cannot qualify a new finding. No finding
-applies to Tyr. The history must have an identified predecessor, agreed
-inventories and carry reports, and a selected current constitutional record
-without a competing selection. A bare mark cannot supply it.
+Tyr is the subject of a case that turns on an earlier version of the record.
+The examiners, Mael and Wren, have recorded examinations of Tyr. A restriction on
+Mael, recorded in an earlier version of the record and kept in the version in
+force, blocks the appointment Mael needs, so the pair cannot properly propose a
+new finding. No finding applies to Tyr. For that earlier restriction to count,
+the earlier version must be identified, the witnesses' inventories and their
+reports of what was kept must agree, and one version must be in force with no
+competing choice. A bare mark cannot supply it.
 
-That carried restriction concerns the appointment. It is insufficient by itself
-to create a personal finding. Vex's own finding rests on the separately recorded
-prior case, which Vex can challenge. Neither conclusion cancels ordinary
-contributions or confers a recognition status.
+That earlier restriction concerns the appointment. It is insufficient by itself
+to create a personal finding. Mael's own finding rests on the separately
+recorded prior case, which Mael can challenge. Neither conclusion cancels
+ordinary contributions or confers a recognition status.
 
-Current disqualification matters as well. The next test gives Lupo an
-appointment and witnessed clearance from the prior record, while retaining
-the effective finding for deceiving Mira. Lupo now appears as a proposed
-examiner, paired with a second examiner named Partnr, in a case against Frisk.
-The pair cannot qualify that new finding: Lupo's earlier clearance does not
-override the current judgment. A carried restriction, when present,
+Current disqualification matters as well. Suppose Edo is appointed by the
+electorate and has witnessed clearance from an earlier version of the record,
+while the finding for deceiving Mira stays in force. Suppose too that Edo and
+a second examiner propose a finding against another person. The pair cannot
+properly propose that finding: Edo's earlier clearance does not override the
+current judgment. A restriction kept from an earlier version, when present,
 independently blocks the appointment route.
 
 The historical and current questions have different dates. A completed
@@ -110,53 +114,54 @@ subject. An independent alternate can act under the same case requirements
 when the ordinary body is a party.
 A generic judgment and a forgiveness flag restore nothing.
 
-Purga is the subject of the restoration test. A completed adverse case remains
-in the record alongside qualified appellate restoration, and no effective
-personal finding follows. The history need not be erased to end its consequence.
-A separate sequence returns to Dev, the parent who examined Esa: a completed
-concealed-conflict finding can be restored while Dev's family relationship
-and examination remain recorded.
+In one test a subject's completed adverse case stays in the record beside a
+properly made appellate restoration of it, and no personal finding stays in
+force. The history need not be erased to end its consequence. Suppose instead
+that a completed concealed-conflict finding were recorded against Dev, the
+parent who examined Esa: it can be restored while Dev's family relationship and
+examination remain recorded.
 
 Renaming the restored finding does not revive it. Restoration follows the same
 subject, incident and ground across record names. A distinct incident or ground
 is assessed separately; one restoration is not permanent immunity from another
 finding. Ending the personal finding also does not automatically restore a
-recalled appointment or one carrying a prior finding. No automatic expiry ends a
-finding merely because nobody reviews it.
+recalled appointment, or one that a restriction from an earlier version of the
+record still blocks. No automatic expiry ends a finding merely because nobody
+reviews it.
 
-Every target of an effective finding is owed an explanation by Review and an
-independent review of the continuing restriction by Appeals, without having to
-ask. A separate subject, Targo, has a completed finding but no personhood
-entry. The explanation duty still derives. The subject's own challenge creates
-an Appeals duty without either signer's permission or a prior merits finding.
-That test returns to Bela: Bela's challenge opens the route while the finding
-continues. None of these duties proves that reasons were delivered or a review
-occurred.
+Every target of a finding in force is owed an explanation by the review body
+and an independent review of the continuing restriction by the appeals body,
+without having to ask. The explanation duty follows even for a subject with a
+completed finding and no personhood entry. The subject's own challenge creates
+a duty on the appeals body without either signer's permission or a prior merits
+finding. Suppose Bela challenges the finding: the challenge opens that route
+while the finding continues. None of these duties proves that reasons were
+delivered or a review occurred.
 
 ## What it costs
 
 The conditions identify who acted, in which case, on which evidence and with
-which authority. They cannot establish that the reported evidence was true or
-that the people behind the signatures were independent. Compromised reviewers
+which authority. They cannot show that the reported evidence was true or that
+the people behind the signatures were independent. Compromised reviewers
 and historical witnesses can agree on false accounts. The legal requirements
-remain; their fulfilment must be established outside the calculation.
+remain; their fulfilment must be shown outside the calculation.
 
-Positive case requirements also mean that incomplete records cannot establish
-the adverse authority. A missing clearance prevents an appointment from
-qualifying. A missing incident, matching finding or required historical
-observation prevents the personal consequence. That does not establish that
-no wrongdoing occurred; it places the burden on the proposed use of power.
+Positive case requirements also mean that the adverse authority needs a
+complete record. A missing clearance keeps an appointment from giving the
+authority to sign. A missing incident, matching finding or required historical
+observation prevents the personal consequence. That places the burden on the
+proposed use of power; it does not show that no wrongdoing occurred.
 
 The record comparison has its own boundary. A fact deleted before the first
 attested record leaves no predecessor for that comparison, and no rule makes
-a successor arrive. Conclusions belong to the selected current record. A
-stale answer must not be treated as permission to act in a changed situation.
+a successor arrive. Conclusions belong to the version in force. A stale
+answer must not be treated as permission to act in a changed situation.
 
 ## The child with nobody
 
-No finding applies to Nell in this chapter's supplied child case. Every floor
-debt derives. The test does not record a completed finding against Nell or prove
-that no false accusation could reach the child.
+No finding applies to Nell, and every floor debt follows from Nell's birth
+entry. Nell's record holds no completed finding, and nothing here proves that
+no false accusation could reach the child.
 
 The floor rules depend on personhood, not credibility. Bela, under a finding,
 separately retains personhood, food debt, movement and the ballot. An adverse

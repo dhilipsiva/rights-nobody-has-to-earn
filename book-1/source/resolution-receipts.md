@@ -15,7 +15,7 @@ gives disclosure no credit for closure.
 
 ### writable-credential — resolved-for-claim
 
-*Told in* `23-who-holds-the-pen.md`, "A credential must derive".
+*Told in* `23-who-holds-the-pen.md`, "The authority to sign must follow from evidence".
 
 **What failed.** An examiner's pen could be written down directly, so the credential a voiding needs was a fact somebody typed rather than a conclusion anything derived.
 
@@ -85,7 +85,7 @@ gives disclosure no credit for closure.
 
 ### shield-without-a-target — resolved-for-claim
 
-*Told in* `24-the-shield.md`, "Don: a private target".
+*Told in* `24-the-shield.md`, "Faro: a private target".
 
 **What failed.** The shield asked what you exposed and not whom: any defendant could name their own accuser or victim and become unjailable.
 
