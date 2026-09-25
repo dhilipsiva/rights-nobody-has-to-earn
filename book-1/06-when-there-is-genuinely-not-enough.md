@@ -62,9 +62,12 @@ comparison rests on three attesters separate from the manager: a source, an
 independent evidence attester and an independent reviewer must each record the
 same claims, grounds and outcome, and each must record that every compared
 claimant's submitted evidence was considered before the comparison. If the
-three records disagree, the allocation fails. The manager owes publication of
-those comparative reasons. Independent review, accessible challenge and an end
-remain conditions of its authority.
+three records disagree, the allocation fails. The attesters and the manager
+must all be outside the claims the allocation compares, as must anyone
+attesting a finding that it is defective; a claimant's own route is the
+challenge. The manager owes publication of those comparative reasons.
+Independent review, accessible challenge and an end remain conditions of its
+authority.
 
 The rules permit that qualified decision. They do not calculate the relative
 weights, discover that the supplied evidence is true or select the recipient.

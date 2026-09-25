@@ -137,7 +137,8 @@ urgency decides the allocation. *Needs:* an attester's credential for the
 allocation record. *Hidden cost:* the other claimant. *Detected:* one honest
 attester who records a different mitigation key makes the record ambiguous and
 the allocation falls; a challenge with the requester's own evidence obliges the
-reader to weigh it. *Gap:* a compared claimant may attest (item 69). *Case:*
+reader to weigh it. A compared claimant may not attest or manage the allocation,
+nor attest a defect finding against it (item 69). *Case:*
 `tests/pins/stress/manipulated-urgency`.
 
 **Agency and contractor blaming each other.** *Gains:* both, by delay. *Needs:*

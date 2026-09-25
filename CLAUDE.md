@@ -134,6 +134,34 @@ reinstate the retired tooling or workflow.
 Grouped by kind. Dates in each heading are the ratification dates; a ruling
 that was later implemented or narrowed carries that supersession inline.
 
+### Item 69 — a compared claimant cannot attest, 2026-09-24
+
+Item 45's manipulated-urgency case found that a scarcity allocation held its
+three attesters apart from the manager, reader and alternate but not from the
+claimants it compared, so the continuity claimant could attest the imminent harm
+that decided the allocation in their favour. The compared claims already named
+each claimant, so a helper rule reading only base facts concludes
+`related($claimant, $record, ScarcityInterestedClaimant)` for each claimant the
+record's own source lists. The allocation requires its source, evidence
+attester, reviewer and manager to be outside that set, and a defect finding
+requires its attesters to be outside its target's set, so a losing claimant
+cannot attest the withdrawal of the winner's allocation either. Recorded
+shortfalls were checked and left alone: a claimant attesting their own unmet
+claim finds against nobody and only raises a repair duty. A claimant's route is
+the challenge.
+
+The scarcity generator adds a refusal for each allocation attester and the
+manager and each defect attester who is a compared claimant, with a control that
+still qualifies. The stress case shows the honest allocation qualifying and the
+claimant-attested one refused. Chapter 6 states the rule, and the scarcity
+contract card and red-team index record it; the exact prose is `session-drafted,
+author-approved under delegated approval (2026-09-13)`. Rules move from 7,555 to
+7,556. The scarcity, Chapter 6 and stress cases pass 1,805 pins across 421 cases
+(focused, partial). All 137 authoring development tests pass, with five declared
+ignored, and the prose check passes. `RIGHTS_VERIFY_JOBS=4 ./verify.sh` passes
+89,919 pins across 16,335 cases with complete contradiction checks and no
+findings in 1,162.84s, four defect pins still reproducing for items 70–72.
+
 ### Item 68 — who owes an election that cannot be held, 2026-09-24
 
 Item 45's election case found the state-form decision promising the electoral

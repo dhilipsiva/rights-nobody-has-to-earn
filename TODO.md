@@ -216,7 +216,7 @@ unimplemented until the items named here land.
 
 ## Ordered revision backlog
 
-Work in this order: items 69–72, the defects item 45's stress tests confirmed,
+Work in this order: items 70–72, the defects item 45's stress tests confirmed,
 then items 46–52, which measure, repair and prepare; items 53–63 carry the
 structure and the rewrite under the ratified rulings; item 64 finishes
 production, 65 closes the revision, and 66 is optional. Numbering continues from
@@ -225,23 +225,6 @@ reading sequence](book-1/contents.json), which the plan also uses, until item 53
 changes it.
 
 ### Resolve the design questions, source and pins first
-
-- [ ] **69. Keep a compared claimant out of the allocation's attesters.**
-
-  **Scope:** `src/authoring/scarcity.rs`, the SCARCITY-AND-CONFLICT allocation
-  rules, and `tests/pins/stress/manipulated-urgency`.
-
-  The allocation holds its three attesters apart from the manager, reader and
-  alternate, but not from the claimants it compares. The continuity claimant
-  can attest the imminent harm that decides the allocation in their favour, and
-  the allocation qualifies. The compared claims already name each claimant
-  (`list($claims, $claim, $claimant, ScarcityComparedClaim)`), so an attester who
-  is a compared claimant can be refused. Check the shortfall and defect records
-  for the same gap.
-
-  **Done when:** the stress case's defect pin resolves, the generated cases
-  include a claimant-attester refusal for each record kind that compares
-  claims, and honest allocations still qualify.
 
 - [ ] **70. Keep public continuity public, and delivery witnesses independent
   of the duty-bearer.**
@@ -744,3 +727,20 @@ changes it.
 This new planning text is licensed under CC-BY-4.0. See the full
 [licence text](book-1/LICENSE-CC-BY) and the repository's
 [licensing policy](LICENSING.md).
+
+## Submissions — after every other item
+
+Author's note, 2026-09-25. Once every other item in this tracker is complete,
+submit to these presses in parallel:
+
+- [MIT Press — Direct to Open](https://direct.mit.edu/books/pages/direct-to-open)
+- [punctum books](https://punctumbooks.com/)
+- [UCL Press](https://uclpress.co.uk/)
+- [University of Westminster Press](https://uwestminsterpress.co.uk/)
+- [Polity](https://www.politybooks.com/)
+- [Pluto Press](https://www.plutobooks.com/)
+- [Verso](https://www.versobooks.com/en-gb)
+
+Start from the publisher-neutral proposal in `submission/README.md`, updated to
+the finished text, and adapt it to each press's current official submission
+requirements. No press is contacted before then.

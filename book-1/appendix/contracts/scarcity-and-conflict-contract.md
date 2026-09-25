@@ -281,3 +281,34 @@ major page faults and no swaps; other machine activity was not controlled.
 That is a result about the represented model over supplied records. It counts no
 stock, forecasts no supply, measures no shortage, and is not evidence that
 anything anywhere was procured, allocated, restored or repaired.
+
+## A compared claimant as an attester — item 69, 2026-09-24
+
+Item 45's manipulated-urgency case found that an allocation held its three
+attesters apart from the manager, the reader and the alternate but not from the
+claimants it compared: the continuity claimant could attest the imminent harm
+that decided the allocation in their favour, and the allocation qualified. The
+compared claims already named each claimant through
+`list($claims, $claim, $claimant, ScarcityComparedClaim)`, so the repair reads
+the record rather than inventing a party role.
+
+A helper rule concludes `related($claimant, $record, ScarcityInterestedClaimant)`
+for each claimant the record's own source lists among its compared claims. The
+allocation now requires its source, evidence attester, reviewer and manager to
+be outside that set, and a defect finding against a record requires its three
+attesters to be outside the target's set, so the losing claimant cannot attest
+the finding that withdraws the winner's allocation either. The helper reads
+base facts only, which keeps the allocation's negative reading clear of any
+cycle. Recorded shortfalls were checked and left as they are: a claimant who
+attests their own unmet claim finds against nobody and only raises the repair
+duty review can correct. A claimant's route into the comparison is the
+challenge, which needs nobody's permission and obliges the reader to weigh the
+evidence submitted with it.
+
+The generated cases add a refusal for each allocation attester and the manager
+and for each defect attester who is a compared claimant, beside a control in
+which a named claimant attests nothing and the record qualifies. The stress case
+now shows the honest allocation qualifying and the claimant-attested one
+refused. Three attesters who are not claimants and agree on a false urgency
+still complete the allocation; detection there begins with a challenge or a
+dissenting attester.

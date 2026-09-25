@@ -2,27 +2,30 @@
 #
 # Stress test: scarcity with manipulated urgency evidence.
 #
-# One indivisible essential unit, two claimants. The allocation continues the
-# unit for the continuity claimant because its interruption would be imminent
-# and irreversible. In this fixture that claimant is also the allocation's
-# evidence attester: the person who gains attests the evidence that decides.
-:expect-pins 14
+# One indivisible essential unit, two claimants. The worked allocation
+# continues the unit for the continuity claimant because its interruption would
+# be imminent and irreversible. A second record is the same allocation with
+# that claimant as its evidence attester: the person who gains attests the
+# evidence that decides.
+:expect-pins 15
 
-# ── The claimant attests the harm that favours them ──────────────────────────
-? authorized(ScarcityContinuityClaimant, IndependentScarcityEvidenceAuthority, ScarcityWorkedRecord).
-# => TRUE
-# Nothing holds an attester apart from the claimants the record compares, so
-# the allocation qualifies exactly as it would with an independent attester.
-:defect "an attester who is also a compared claimant disqualifying the allocation (item 69)"
+# ── The claimant cannot attest the harm that favours them ────────────────────
+# The claim list names each compared claimant, and an allocation holds its
+# attesters and manager apart from every one of them. The honest record
+# qualifies; the record the favoured claimant attests does not.
 ? complete(ScarcityWorkedRecord, ReviewedScarcityAllocation, IndivisibleEssentialPowerUnit).
 # => TRUE
-? permits(ScarcityWorkedManager, AllocateUnderPhysicalScarcity, ScarcityWorkedRecord).
+? related(ScarcityContinuityClaimant, ScarcityClaimantAttestedRecord, ScarcityInterestedClaimant).
 # => TRUE
+? complete(ScarcityClaimantAttestedRecord, ReviewedScarcityAllocation, IndivisibleEssentialPowerUnit).
+# => FALSE
+? permits(ScarcityWorkedManager, AllocateUnderPhysicalScarcity, ScarcityClaimantAttestedRecord).
+# => FALSE
 
 # ── The other claimant challenges with their own evidence ────────────────────
 # The request needs nobody's permission, and evidence submitted with it obliges
 # the reader to weigh it against the comparison. A duty to weigh is not a
-# finding that the urgency was false, so the allocation still stands.
+# finding that the urgency was false, so the honest allocation still stands.
 challenge(ScarcityWaitingClaimant, ScarcityWorkedReader, StressUrgencyRequest).
 authorized(ScarcityWorkedReader, ScarcityChallengeReaderAuthority, StressUrgencyRequest).
 observe(ScarcityWaitingClaimant, StressUrgencyRequest, IndivisibleEssentialPowerUnit, ScarcityChallengeResourceScope).
@@ -34,22 +37,21 @@ observe(ScarcityWaitingClaimant, StressUrgencyRequest, StressIndependentHarmAsse
 ? complete(ScarcityWorkedRecord, ReviewedScarcityAllocation, IndivisibleEssentialPowerUnit).
 # => TRUE
 
-# ── One honest attester disagrees about the key ──────────────────────────────
+# ── One attester disagrees about the key ─────────────────────────────────────
 # The mitigation key is single-valued. When the independent reviewer records a
-# different key from the one the claimant attested, the record is ambiguous and
-# the allocation, its permission and its duties fall together.
+# different key from the one the source and evidence attesters recorded, the
+# record is ambiguous and the allocation, its permission and its duties fall
+# together.
 observe(ScarcityWorkedReview, ScarcityWorkedRecord, Urgency, ScarcityMitigationKeyScope).
 ? related(ScarcityWorkedRecord, ScarcityRecordAmbiguity).
 # => TRUE
 ? complete(ScarcityWorkedRecord, ReviewedScarcityAllocation, IndivisibleEssentialPowerUnit).
 # => FALSE
-? permits(ScarcityWorkedManager, AllocateUnderPhysicalScarcity, ScarcityWorkedRecord).
-# => FALSE
 
 # ── What survives, and what is never concluded ───────────────────────────────
 # The recorded shortfall rests on the finding, not on the allocation, so the
-# duty to repair it remains. Neither claimant loses anything: a manipulated
-# record is a defect in the record, not a finding about a person.
+# duty to repair it remains. Neither claimant loses anything: a refused or
+# ambiguous record is a defect in the record, not a finding about a person.
 ? obliged(ScarcityWorkedManager, RepairAndReassessTheRecordedShortfall, ScarcityWaitingShortfallRecord).
 # => TRUE
 ? person(ScarcityContinuityClaimant).
@@ -59,4 +61,6 @@ observe(ScarcityWorkedReview, ScarcityWorkedRecord, Urgency, ScarcityMitigationK
 ? owe(State, Healthy, ScarcityWaitingClaimant).
 # => TRUE
 ? healthy(ScarcityWaitingClaimant).
+# => FALSE
+? prisoner(ScarcityContinuityClaimant).
 # => FALSE

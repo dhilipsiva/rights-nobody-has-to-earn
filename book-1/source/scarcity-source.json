@@ -283,7 +283,11 @@
         "obliged($manager, PublishComparativeAllocationReasonsAndRejectedAlternatives, $record)"
       ],
       "extra": [
-        "member($allocation_method, $comparison_outcome)"
+        "member($allocation_method, $comparison_outcome)",
+        "~related($source, $record, ScarcityInterestedClaimant)",
+        "~related($evidence, $record, ScarcityInterestedClaimant)",
+        "~related($review, $record, ScarcityInterestedClaimant)",
+        "~related($manager, $record, ScarcityInterestedClaimant)"
       ],
       "record_dependency": true,
       "bindings": {}
@@ -433,7 +437,10 @@
         "observe($target_source, $target, $period, ScarcityEvidencePeriodScope)",
         "observe($target_source, $target, $jurisdiction, ScarcityJurisdictionScope)",
         "observe($target_source, $target, $scope, ScarcityLegalScope)",
-        "observe($target_source, $target, $end, ScarcitySourceBoundEndScope)"
+        "observe($target_source, $target, $end, ScarcitySourceBoundEndScope)",
+        "~related($source, $target, ScarcityInterestedClaimant)",
+        "~related($evidence, $target, ScarcityInterestedClaimant)",
+        "~related($review, $target, ScarcityInterestedClaimant)"
       ],
       "record_dependency": false,
       "bindings": {}

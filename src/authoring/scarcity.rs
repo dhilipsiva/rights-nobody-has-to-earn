@@ -222,6 +222,12 @@ fn rules(source: &Source, beneficial: &BTreeSet<String>) -> Vec<String> {
         rules.push(format!("all $writer: all $record: authorized($writer, {role}, $record) -> related($writer, $record, ScarcityRecordAttester)."));
     }
     rules.push("all $first: all $second: all $record: all $scope: all $a: all $b: related($first, $record, ScarcityRecordAttester) & related($second, $record, ScarcityRecordAttester) & member($scope, ScarcitySingleValueScope) & observe($first, $record, $a, $scope) & observe($second, $record, $b, $scope) & ~($a = $b) -> related($record, ScarcityRecordAmbiguity).".into());
+    // Item 69: a compared claimant is an interested party to the record that
+    // decides between the claims. The record's own source names the claims and
+    // the claim list names each claimant; the allocation and any defect finding
+    // against the record hold their attesters, and the allocation its manager,
+    // apart from every claimant so named. Base facts only, so no cycle.
+    rules.push("all $source: all $record: all $claims: all $claim: all $claimant: authorized($source, ScarcitySourceAuthority, $record) & observe($source, $record, $claims, ScarcityComparedClaimsScope) & list($claims, $claim, $claimant, ScarcityComparedClaim) -> related($claimant, $record, ScarcityInterestedClaimant).".into());
     for contract in &source.contracts {
         for head in heads(contract) {
             rules.push(rule(&premises(source, contract), &head));
@@ -575,6 +581,52 @@ pub(crate) fn generate(context: &Context, export: &mut Export) -> Result<(), Err
             "SupersededScarcityRecord",
         );
         emit(export, "stale", "live", &stale, &values, false)?;
+        // Item 69: a claimant the record compares may not attest it or manage
+        // it, and may not attest a defect finding against it.
+        if matches!(contract.id.as_str(), "allocation" | "defect") {
+            let allocation = contract.id == "allocation";
+            let (claims, prefix) = if allocation {
+                (values["$claims"].clone(), String::new())
+            } else {
+                (
+                    "InterestedDefectClaims".to_owned(),
+                    format!(
+                        "observe({}, {}, InterestedDefectClaims, ScarcityComparedClaimsScope).\n",
+                        values["$target_source"], values["$target"]
+                    ),
+                )
+            };
+            let actors: &[&str] = if allocation {
+                &["$source", "$evidence", "$review", "$manager"]
+            } else {
+                &["$source", "$evidence", "$review"]
+            };
+            for actor in actors {
+                let named = format!(
+                    "{prefix}list({claims}, InterestedClaim, {}, ScarcityComparedClaim).\n",
+                    values[*actor]
+                );
+                emit(
+                    export,
+                    &format!("claimant-attests-{}", actor.trim_start_matches('$')),
+                    "live",
+                    &(facts.clone() + &named),
+                    &values,
+                    false,
+                )?;
+            }
+            let other = format!(
+                "{prefix}list({claims}, InterestedClaim, UninvolvedScarcityClaimant, ScarcityComparedClaim).\n"
+            );
+            emit(
+                export,
+                "claimant-not-an-attester",
+                "live",
+                &(facts.clone() + &other),
+                &values,
+                true,
+            )?;
+        }
         for (label, variable, replacement) in [
             ("self-review", "$review", "$source"),
             ("manager-review", "$review", "$manager"),
