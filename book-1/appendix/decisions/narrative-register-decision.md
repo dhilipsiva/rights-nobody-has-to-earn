@@ -13,8 +13,9 @@
 
 The author ruled on the revision tracker's reserved questions on 2026-09-24;
 `CLAUDE.md` records all nine under *The revision rulings D1–D9*. Two bear on
-this decision. Both are ratified but unimplemented until TODO items 53–60 land;
-until then the channels below describe the edition.
+this decision. Items 53–59 implemented both for the chapters and every Part;
+item 60 brings the documented case into the opening. Until it lands, the
+opening's channel below describes the edition.
 
 **D2 — an argument section in every derived chapter.** Each derived chapter
 keeps its pinned, flat account and ends with one labelled, first-person argument
@@ -1256,3 +1257,39 @@ points to the second book once where its limit is whether anyone acted. The
 child with nobody returns in the eight chapters named in the child decision.
 The exact prose is `session-drafted, author-approved under delegated approval
 (2026-09-13)`.
+
+## Part V as synthesis — item 59, 2026-09-25
+
+Rulings D2, D3 and D7 are implemented for Part V. With every derived chapter
+closing on its own argument, *The Five Joints* no longer repeats those
+arguments. It states five commitments beneath the chapters' choices, the four
+contributions the book claims, and the answer to the objection that designing
+from the extreme case burdens ordinary life, using *An Ordinary Week*; the five
+joints then say which chapters' choices meet at each, how they fit, and where
+one costs another. The historical cases whose subject is a whole society stay
+there: Owen and Lin on valuation, MONDRAGON beside the corporate pay ratio, the
+kibbutzim on rotation, the Jharkhand cancellations and Santoshi Kumari on
+capture until the opening takes her case, and Cybersyn, Auroville, the WIR and
+Kerala on the state, with the democracy calculation. Arguments a chapter now
+carries point to it, and the links that led to them follow.
+
+*Where This Could Fail* is Chapter 30. It ranks six failures by an argued
+order, how much of the design fails with each and how little the rules can
+catch it: performance at scale, open standards read narrowly, captured review,
+slow and costly procedure, input integrity, and fiscal feasibility, which comes
+last because this book cannot test it. Each states the evidence that would show
+it, what the design does now and what a fix would take. The identical-input
+limit moves there from Part V's capture joint. It adds no disclaimer the
+chapters already carry: a limit specific to a rule stays beside the rule.
+
+Part V's opening case, *After the Judgment*, follows the Wallacedene families
+after the judgment that opens Part I: temporary relief, a place in a phased
+development, most of the litigants housed by 2011 on one leader's account, and
+Irene Grootboom's death in her shack in 2008, before her house was built. The
+dispute over what failed stays intact: the judge who wrote the judgment blamed
+corruption and neglect, and her lawyer the lack of follow-up. The date of her
+death differs between the two reports, and the chapter gives both; her age,
+on which they also differ, is omitted.
+
+The hypothetical kitchen paragraph is unchanged. The exact prose is
+`session-drafted, author-approved under delegated approval (2026-09-13)`.

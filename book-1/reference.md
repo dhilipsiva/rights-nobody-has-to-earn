@@ -19,21 +19,22 @@ technical matter explained in the [method](method.md#a-refusal-is-a-result-about
 ### The choices and their arguments
 
 Use this map to put a mechanism beside its justification. The case chapters
-show consequences of the rules and the recorded evidence. The linked arguments
-explain why I choose them and what would favour a different arrangement.
+show consequences of the rules and the recorded evidence; each closes with an
+argument explaining why I choose its rule and what would favour a different
+arrangement, and Part V draws the choices together.
 
-| Choice and its consequences | Argument in Part V |
+| Choice and its consequences | Where it is argued |
 |---|---|
-| [Public responsibility for essentials](06-who-owes-and-what-follows.md), with [different providers and public finance](10-what-money-cannot-buy.md) | [Usable provision, cash, taxation and borrowing](29-the-five-joints.md#essentials-public-responsibility-and-fiscal-choice) |
-| [Allocation when claims conflict](05-when-there-is-genuinely-not-enough.md) | [Comparative need, equal claims and separate human, ecological and animal protections](29-the-five-joints.md#scarcity-and-separate-claims) |
-| [Regional powers and a collective executive](17-how-public-power-is-built.md) | [Territorial representation](29-the-five-joints.md#territorial-power-and-the-second-chamber) and [collective responsibility](29-the-five-joints.md#collective-government-and-identifiable-responsibility) |
-| [Independent appointments](17-how-public-power-is-built.md#how-somebody-comes-to-hold-an-office) | [Divided selection, elected confirmation and professional control](29-the-five-joints.md#independent-appointments) |
-| [Residence and the retained vote](18-the-vote-conviction-does-not-take.md) | [Residence, citizenship and nonresident membership](29-the-five-joints.md#residence-and-political-membership) |
-| [Limits on records and their reuse](19-what-may-be-kept-about-you.md) | [Privacy, coordination and people lost between services](29-the-five-joints.md#records-and-coordination) |
-| [Protection after exposing authority](23-the-shield.md) | [Immediate protection and the delay of unrelated cases](29-the-five-joints.md#protection-while-the-connection-is-disputed) |
-| [Custody and retained rights](27-the-one-thing-taken.md) | [The case for confinement and the limits on its place and effects](29-the-five-joints.md#coercion) |
-| [Emergency powers](20-a-crisis-does-not-suspend-the-republic.md) | [Urgent action with continuing rights](29-the-five-joints.md#emergency-action-without-suspended-rights) |
-| [The unamendable cores](22-changing-the-rules.md) | [Human standing, direct animal protection and later generations' freedom to change the rules](29-the-five-joints.md#what-a-majority-may-not-remove) |
+| [Public responsibility for essentials](06-who-owes-and-what-follows.md), with [different providers and public finance](10-what-money-cannot-buy.md) | [Named goods rather than cash](03-what-you-are-owed.md#argument-owed-to-everyone-by-someone), [named bearers](06-who-owes-and-what-follows.md#argument-named-bearers-and-a-court-that-secures-the-minimum) and [borrowing under law](10-what-money-cannot-buy.md#argument-ownership-under-the-floor-borrowing-under-law) |
+| [Allocation when claims conflict](05-when-there-is-genuinely-not-enough.md) | [Proved shortage and need](05-when-there-is-genuinely-not-enough.md#argument-a-shortage-must-be-proved-and-need-decides-it), and [separate human, ecological and animal claims](29-the-five-joints.md#valuation) |
+| [Regional powers and a collective executive](17-how-public-power-is-built.md) | [A divided government that can still decide](17-how-public-power-is-built.md#argument-divided-without-deadlock) |
+| [Independent appointments](17-how-public-power-is-built.md#how-somebody-comes-to-hold-an-office) | [Divided sources against a minister's or the judiciary's own choice](17-how-public-power-is-built.md#argument-divided-without-deadlock) |
+| [Residence and the retained vote](18-the-vote-conviction-does-not-take.md) | [Residence and the all-affected alternative](15-arriving-and-belonging.md#argument-the-person-before-the-status) and [the vote outside the sentence](18-the-vote-conviction-does-not-take.md#argument-the-vote-outside-the-sentence) |
+| [Limits on records and their reuse](19-what-may-be-kept-about-you.md) | [The closed record](02-what-the-record-may-say.md#argument-why-the-record-is-closed-by-name), [uses bound to their holding](19-what-may-be-kept-about-you.md#argument-uses-bound-to-their-holding-decisions-to-a-person) and [privacy against coordination](29-the-five-joints.md#capture) |
+| [Protection after exposing authority](23-the-shield.md) | [Lasting answerability](16-answerability-and-authority.md#argument-answerable-for-good-empowered-for-now) and [protection that follows the charge](23-the-shield.md#argument-protection-that-follows-the-charge) |
+| [Custody and retained rights](27-the-one-thing-taken.md) | [A power that takes movement and then expires](27-the-one-thing-taken.md#argument-a-power-that-takes-movement-and-then-expires), [severity as a ceiling](26-where-people-are-put.md#argument-proved-harm-opens-the-harshest-place) and [the coercion joint](29-the-five-joints.md#coercion) |
+| [Emergency powers](20-a-crisis-does-not-suspend-the-republic.md) | [Four powers and every right in force](20-a-crisis-does-not-suspend-the-republic.md#argument-four-powers-and-every-right-in-force) |
+| [The unamendable cores](22-changing-the-rules.md) | [A fixed core behind an open route](22-changing-the-rules.md#argument-a-fixed-core-behind-an-open-route) and [the animal core](13-creatures-without-a-ballot.md#argument-a-claim-of-its-own) |
 
 ### Where a decision belongs
 
@@ -151,9 +152,16 @@ and this reference material follow them.
 
 ### Part V — The argument
 
-- [Chapter 29: The Five Joints](29-the-five-joints.md) — the argument over
-  valuation, rotation, coercion, capture and the state, tested against alternatives
-  and historical evidence.
+- [Opening case: After the Judgment](part-5-after-the-judgment.md) — the
+  Wallacedene families after their judgment, and a litigant who died in her
+  shack before her house was built.
+- [Chapter 29: The Five Joints](29-the-five-joints.md) — the commitments
+  beneath the choices, what the design adds, and how the choices fit together
+  and trade off over valuation, rotation, coercion, capture and the state.
+- [Chapter 30: Where This Could Fail](30-where-this-could-fail.md) — the
+  failures that cross chapters, ranked by an argued order, each with the
+  evidence that would show it, what the design does now and what a fix would
+  take.
 
 ### Back matter
 
@@ -330,8 +338,8 @@ finding a case again.
 | Hano, held under a properly made custody case | What is required to restrict movement, and what remains protected? | [18](18-the-vote-conviction-does-not-take.md), [27](27-the-one-thing-taken.md) |
 | Jala, with a recorded injury to Ivo but no conviction | Does sharing an injury entry with a convicted person's case restrict movement? | [27](27-the-one-thing-taken.md) |
 
-Documented historical cases open Part I and support the chapters' argument
-sections; Part V draws them together in its arguments over
+Documented historical cases open each Part and support the chapters'
+argument sections; Part V draws them together in its arguments over
 [valuation](29-the-five-joints.md#valuation),
 [rotation](29-the-five-joints.md#rotation),
 [coercion](29-the-five-joints.md#coercion),

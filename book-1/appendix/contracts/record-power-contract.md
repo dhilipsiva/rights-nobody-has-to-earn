@@ -16,7 +16,9 @@ power over another, is unchanged. The classification is
 checks the property.
 
 **Comparative argument — item 24, 2026-09-21.** The exact text of
-[Records and coordination](../../29-the-five-joints.md#records-and-coordination)
+Records and coordination (since item 59 argued in
+[Chapter 19](../../19-what-may-be-kept-about-you.md#argument-uses-bound-to-their-holding-decisions-to-a-person)
+and Part V's [capture joint](../../29-the-five-joints.md#capture))
 is session-drafted and author-approved under the standing delegated approval.
 It compares the existing purpose limits with broader linked records under
 professional discretion. Both missed coordination and unrelated reuse can

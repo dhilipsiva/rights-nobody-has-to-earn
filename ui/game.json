@@ -144,7 +144,7 @@
         }
       ],
       "cost": {
-        "title": "Part V · Capture · Records and coordination",
+        "title": "Chapter 30 · The inputs lack integrity",
         "text": "A reasoner receiving identical inputs cannot tell a concealed refusal from an absence. Nothing has to be falsified to capture the design — only left unwritten."
       },
       "faults": [
@@ -305,7 +305,7 @@
         }
       ],
       "cost": {
-        "title": "Part V · Capture · Protection while the connection is disputed",
+        "title": "Chapter 23 · Argument: Protection that follows the charge",
         "text": "Protection after retaliatory imprisonment cannot substitute for protection before it. This default costs time, including time owed to an injured person awaiting a remedy."
       },
       "faults": [
@@ -366,7 +366,7 @@
         }
       ],
       "cost": {
-        "title": "Part V · Capture · Independent appointments",
+        "title": "Chapter 17 · Argument: Divided without deadlock",
         "text": "Open competition alone cannot supply scrutiny the government cannot control. The costs reach a claimant waiting through a vacancy and voters unable to remove a bad appointment quickly."
       },
       "faults": []
@@ -569,8 +569,8 @@
         }
       ],
       "cost": {
-        "title": "Part V · Residence and political membership",
-        "text": "The boundary still costs a former resident who has voluntarily established a life elsewhere, and a newcomer before residence."
+        "title": "Chapter 15 · Argument: The person before the status",
+        "text": "A former resident who made a home abroad loses the vote in the place left behind, and people outside the republic whom its decisions affect gain no vote there."
       },
       "faults": [
         "silence",
@@ -697,7 +697,7 @@
         }
       ],
       "cost": {
-        "title": "Part V · Emergency action without suspended rights",
+        "title": "Chapter 20 · Argument: Four powers and every right in force",
         "text": "Some responses remain unavailable. Speed alone cannot distinguish a bounded measure from a suspension, and declaring an emergency cannot convert an unmet claim into a met one."
       },
       "faults": [
@@ -784,7 +784,7 @@
         }
       ],
       "cost": {
-        "title": "Part V · Scarcity and separate claims",
+        "title": "Chapter 5 · Argument: A shortage must be proved, and need decides it",
         "text": "Refusing to rank people does not allocate the unit. The choice gives officials consequential judgments to make; the irreversible loss cannot be repaired by giving the unit back later."
       },
       "faults": [
@@ -856,7 +856,7 @@
         }
       ],
       "cost": {
-        "title": "Part V · What a majority may not remove",
+        "title": "Chapter 22 · Argument: A fixed core behind an open route",
         "text": "The cost falls on a majority that has decided otherwise, and on the separate public decision the constitutional proposal requires."
       },
       "faults": [
@@ -933,7 +933,7 @@
         }
       ],
       "cost": {
-        "title": "Part V · Capture · Records and coordination",
+        "title": "Chapter 19 · Argument: Uses bound to their holding, decisions to a person",
         "text": "Purpose-bound records protect the person from a file that follows them. The cost falls especially on people who need several services and must be recorded again at each door."
       },
       "faults": [
@@ -1047,7 +1047,7 @@
         }
       ],
       "cost": {
-        "title": "Part V · Capture · Records and coordination",
+        "title": "Chapter 30 · The inputs lack integrity",
         "text": "A reasoner receiving identical inputs cannot tell a concealed refusal from an absence. Nothing has to be falsified to capture the design — only left unwritten."
       },
       "faults": [
@@ -1318,7 +1318,7 @@
         }
       ],
       "cost": {
-        "title": "Part V · Capture · Independent appointments",
+        "title": "Chapter 17 · Argument: Divided without deadlock",
         "text": "The purpose is scrutiny the government cannot control through the next appointment or a threat of removal. The costs reach a claimant waiting through a vacancy."
       },
       "faults": []
@@ -1538,7 +1538,7 @@
         }
       ],
       "cost": {
-        "title": "Part V · Capture · Protection while the connection is disputed",
+        "title": "Chapter 23 · Argument: Protection that follows the charge",
         "text": "Protection after retaliatory imprisonment cannot substitute for protection before it. This default costs time, including time owed to an injured person awaiting a remedy."
       },
       "faults": [
@@ -1671,7 +1671,7 @@
         }
       ],
       "cost": {
-        "title": "Part V · Capture · Independent appointments",
+        "title": "Chapter 17 · Argument: Divided without deadlock",
         "text": "Open competition alone cannot supply scrutiny the government cannot control. The costs reach a claimant waiting through a vacancy."
       },
       "faults": []
@@ -1760,7 +1760,7 @@
         }
       ],
       "cost": {
-        "title": "Part V · Capture · Protection while the connection is disputed",
+        "title": "Chapter 23 · Argument: Protection that follows the charge",
         "text": "The deciding and qualification functions cannot be combined, and an actual conflict defeats a favourable certificate. The cost is time — the case waits for reviewers who are not the accused body."
       },
       "faults": [
@@ -1795,7 +1795,7 @@
         }
       ],
       "cost": {
-        "title": "Part V · Capture · Protection while the connection is disputed",
+        "title": "Chapter 23 · Argument: Protection that follows the charge",
         "text": "The shield attaches to the exposure, not to the exposer. It cannot be turned into a veto over the bodies that decide."
       },
       "faults": []
@@ -1904,7 +1904,7 @@
         }
       ],
       "cost": {
-        "title": "Part V · Capture · Records and coordination",
+        "title": "Part V · Capture",
         "text": "The record is add-only. What was written stays written; only what follows from it changes. The cost is a history nobody can shorten."
       },
       "faults": [
@@ -2241,7 +2241,7 @@
       "measured": true,
       "source": "book-1/source/counterfactual/no-delivery-independence.pins.nibli",
       "cost": {
-        "title": "Part V · Capture · Records and coordination",
+        "title": "Chapter 4 · Argument: Evidence from the person served",
         "text": "Independence costs a second body for every delivery. Its absence costs the difference between a receipt and a meal."
       },
       "faults": [
@@ -2262,10 +2262,10 @@
       "title": "Residence, not the floor, carries the vote",
       "offLabel": "The floor carries a ballot too",
       "measured": false,
-      "source": "book-1/29-the-five-joints.md",
+      "source": "book-1/15-arriving-and-belonging.md",
       "cost": {
-        "title": "Part V · Residence and political membership",
-        "text": "The boundary still costs a former resident who has voluntarily established a life elsewhere, and a newcomer before residence."
+        "title": "Chapter 15 · Argument: The person before the status",
+        "text": "A former resident who made a home abroad loses the vote in the place left behind, and people outside the republic whom its decisions affect gain no vote there."
       },
       "faults": [
         "residence"
@@ -2281,7 +2281,7 @@
       "measured": false,
       "source": "book-1/22-changing-the-rules.pins.nibli",
       "cost": {
-        "title": "Part V · What a majority may not remove",
+        "title": "Chapter 22 · Argument: A fixed core behind an open route",
         "text": "The cost falls on a majority that has decided otherwise, and on the separate public decision the constitutional proposal requires."
       },
       "faults": [
@@ -2296,9 +2296,9 @@
       "title": "Government is a collective body, not one office",
       "offLabel": "One identifiable head of government",
       "measured": false,
-      "source": "book-1/29-the-five-joints.md",
+      "source": "book-1/17-how-public-power-is-built.md",
       "cost": {
-        "title": "Part V · Collective government and identifiable responsibility",
+        "title": "Chapter 17 · Argument: Divided without deadlock",
         "text": "The cost reaches the person waiting while members bargain, and keeps an unpopular government in office while opponents cannot agree on a successor."
       },
       "faults": [],
@@ -2346,7 +2346,7 @@
       "title": "Capture via silence",
       "via": "break",
       "text": "The record cannot reach a person nobody wrote. An adversary need not falsify anything — only decline to record.",
-      "book": "Part V · Capture · Records and coordination",
+      "book": "Chapter 30 · The inputs lack integrity",
       "kind": "authored discussion"
     },
     {
@@ -2378,7 +2378,7 @@
       "title": "A floor without a ballot",
       "via": "live",
       "text": "The floor does not carry a vote; residence does. The boundary costs the newcomer and the former resident.",
-      "book": "Part V · Residence and political membership",
+      "book": "Chapter 15 · Argument: The person before the status",
       "kind": "authored discussion"
     },
     {
@@ -2386,7 +2386,7 @@
       "title": "What a majority may not remove",
       "via": "run",
       "text": "The floor and personhood cannot be amended away. The cost falls on a majority that wants to.",
-      "book": "Part V · What a majority may not remove",
+      "book": "Chapter 22 · Argument: A fixed core behind an open route",
       "kind": "authored discussion"
     },
     {
@@ -2434,7 +2434,7 @@
       "title": "The shield costs time",
       "via": "break",
       "text": "A protected disclosure can block confinement under a recorded conviction while the connection is examined. Independent case findings require time and qualified reviewers.",
-      "book": "Part V · Capture · Protection while the connection is disputed",
+      "book": "Chapter 23 · Argument: Protection that follows the charge",
       "kind": "authored discussion"
     },
     {
@@ -2450,7 +2450,7 @@
       "title": "One file per door",
       "via": "run",
       "text": "Purpose-bound records cannot be reused. The cost falls on people who need several services and are recorded again at each.",
-      "book": "Part V · Capture · Records and coordination",
+      "book": "Chapter 19 · Argument: Uses bound to their holding, decisions to a person",
       "kind": "authored discussion"
     },
     {

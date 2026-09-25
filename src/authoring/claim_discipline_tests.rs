@@ -50,7 +50,17 @@ fn argued_text(context: &Context) -> String {
 /// leans on it. One source may carry several figures — Tanzania's relocation
 /// count and Mondragon's headcount are not one claim each — so the rows are
 /// keyed by case, not by entry.
-const TRACED: [(&str, &str, &str); 176] = [
+const TRACED: [(&str, &str, &str); 177] = [
+    (
+        "the Part V opening case",
+        "grootboom-2008-death-mail-and-guardian",
+        "still homeless and penniless",
+    ),
+    (
+        "the Wallacedene housing after the judgment",
+        "grootboom-2020-unbuilt-house",
+        "phase four of a ten-phase housing",
+    ),
     (
         "the Wallacedene eviction",
         "grootboom-2000-eviction-facts",
@@ -112,11 +122,6 @@ const TRACED: [(&str, &str, &str); 176] = [
         "childcare-benefits affair",
     ),
     ("the SyRI judgment", "syri-hague-district-court-2020", "SyRI"),
-    (
-        "the NJAC judgment",
-        "scaora-v-union-of-india-njac-2015",
-        "Judicial Appointments Commission",
-    ),
     (
         "Switzerland's chambers",
         "swiss-constitution-1999-federal-council-council-of-states",

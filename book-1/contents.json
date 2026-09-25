@@ -272,7 +272,9 @@
     {
       "title": "The argument",
       "opener": {
-        "status": "planned"
+        "file": "part-5-after-the-judgment.md",
+        "title": "After the Judgment",
+        "status": "landed"
       },
       "chapters": [
         {
@@ -284,9 +286,10 @@
         },
         {
           "number": 30,
+          "file": "30-where-this-could-fail.md",
           "title": "Where This Could Fail",
           "role": "exempt",
-          "status": "planned"
+          "status": "landed"
         }
       ]
     }

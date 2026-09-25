@@ -3967,12 +3967,58 @@
       "domain": "Personhood and equality",
       "family": "exempt",
       "function": "argument",
-      "setting": "the author speaking, unchecked by the machine",
+      "setting": "the kitchen imagined, and the standard the argument holds itself to",
       "trajectory": "unresolved",
       "basis": "exempt-element",
       "pattern": "argument",
       "postures": [
         "chooses"
+      ]
+    },
+    {
+      "id": "29-07",
+      "chapter": "book-1/29-the-five-joints.md",
+      "section": "The commitments beneath the choices",
+      "domain": "Personhood and equality",
+      "family": "exempt",
+      "function": "argument",
+      "setting": "five commitments beneath the chapters' choices, from nothing earned to silence deciding nothing",
+      "trajectory": "contested",
+      "basis": "exempt-element",
+      "pattern": "argument",
+      "postures": [
+        "chooses"
+      ]
+    },
+    {
+      "id": "29-08",
+      "chapter": "book-1/29-the-five-joints.md",
+      "section": "What the design adds",
+      "domain": "Records and accountability",
+      "family": "exempt",
+      "function": "argument",
+      "setting": "entitlement, duty, evidence and delivery kept apart, flow constraints, paired edge cases and small mechanisms",
+      "trajectory": "contested",
+      "basis": "exempt-element",
+      "pattern": "argument",
+      "postures": [
+        "chooses"
+      ]
+    },
+    {
+      "id": "29-09",
+      "chapter": "book-1/29-the-five-joints.md",
+      "section": "Designing from the extreme case",
+      "domain": "Personhood and equality",
+      "family": "exempt",
+      "function": "argument",
+      "setting": "an ordinary week as the answer to building from the worst case",
+      "trajectory": "contested",
+      "basis": "exempt-element",
+      "pattern": "argument",
+      "postures": [
+        "chooses",
+        "works"
       ]
     },
     {
@@ -3982,7 +4028,7 @@
       "domain": "Economy, property, work and commons",
       "family": "exempt",
       "function": "argument",
-      "setting": "Owen's New Harmony and the valuation joint",
+      "setting": "worth kept out of every computation, with Owen, Lin and MONDRAGON",
       "trajectory": "contested",
       "basis": "exempt-element",
       "pattern": "argument",
@@ -3997,7 +4043,7 @@
       "domain": "Economy, property, work and commons",
       "family": "exempt",
       "function": "argument",
-      "setting": "the kibbutzim and the rotation joint",
+      "setting": "nobody acquired through need or silence, with the kibbutzim",
       "trajectory": "contested",
       "basis": "exempt-element",
       "pattern": "argument",
@@ -4012,8 +4058,8 @@
       "domain": "Justice and coercion",
       "family": "exempt",
       "function": "argument",
-      "setting": "incarceration evidence, abolition and the coercion joint",
-      "trajectory": "fails",
+      "setting": "one thing taken, and the evidence on confinement read together",
+      "trajectory": "contested",
       "basis": "exempt-element",
       "pattern": "argument",
       "postures": [
@@ -4027,7 +4073,7 @@
       "domain": "Public institutions",
       "family": "exempt",
       "function": "argument",
-      "setting": "Mondragon and the capture joint",
+      "setting": "no party certifies itself, with the Jharkhand cancellations",
       "trajectory": "contested",
       "basis": "exempt-element",
       "pattern": "argument",
@@ -4042,7 +4088,7 @@
       "domain": "Locality, mobility and external relations",
       "family": "exempt",
       "function": "argument",
-      "setting": "Cybersyn, and four fates at the hands of a state",
+      "setting": "how the state criteria conflict, with Cybersyn and the democracy calculation",
       "trajectory": "contested",
       "basis": "exempt-element",
       "pattern": "argument",
@@ -4059,6 +4105,126 @@
       "function": "argument",
       "setting": "why there is no score at the end",
       "trajectory": "unresolved",
+      "basis": "exempt-element",
+      "pattern": "argument",
+      "postures": [
+        "chooses"
+      ]
+    },
+    {
+      "id": "30-00",
+      "chapter": "book-1/30-where-this-could-fail.md",
+      "section": "(preamble)",
+      "domain": "Public institutions",
+      "family": "exempt",
+      "function": "argument",
+      "setting": "failures that cross chapters, ranked by an argued order",
+      "trajectory": "contested",
+      "basis": "exempt-element",
+      "pattern": "argument",
+      "postures": [
+        "chooses"
+      ]
+    },
+    {
+      "id": "30-01",
+      "chapter": "book-1/30-where-this-could-fail.md",
+      "section": "The State fails to perform at scale",
+      "domain": "Material floor",
+      "family": "exempt",
+      "function": "argument",
+      "setting": "debts no rule can make anyone pay, and the structural route that holds the failure in view",
+      "trajectory": "unresolved",
+      "basis": "exempt-element",
+      "pattern": "argument",
+      "postures": [
+        "chooses"
+      ]
+    },
+    {
+      "id": "30-02",
+      "chapter": "book-1/30-where-this-could-fail.md",
+      "section": "Open standards are read narrowly",
+      "domain": "Personhood and equality",
+      "family": "exempt",
+      "function": "argument",
+      "setting": "adequate, usable and reasonably available read to deny",
+      "trajectory": "unresolved",
+      "basis": "exempt-element",
+      "pattern": "argument",
+      "postures": [
+        "chooses"
+      ]
+    },
+    {
+      "id": "30-03",
+      "chapter": "book-1/30-where-this-could-fail.md",
+      "section": "Independent review is captured",
+      "domain": "Public institutions",
+      "family": "exempt",
+      "function": "argument",
+      "setting": "attesters who agree on a lie, and divided sources directed by one coalition",
+      "trajectory": "unresolved",
+      "basis": "exempt-element",
+      "pattern": "argument",
+      "postures": [
+        "chooses"
+      ]
+    },
+    {
+      "id": "30-04",
+      "chapter": "book-1/30-where-this-could-fail.md",
+      "section": "Procedure is too slow and too costly",
+      "domain": "Justice and coercion",
+      "family": "exempt",
+      "function": "argument",
+      "setting": "waits, abandoned claims and help that arrives after the harm",
+      "trajectory": "unresolved",
+      "basis": "exempt-element",
+      "pattern": "argument",
+      "postures": [
+        "chooses"
+      ]
+    },
+    {
+      "id": "30-05",
+      "chapter": "book-1/30-where-this-could-fail.md",
+      "section": "The inputs lack integrity",
+      "domain": "Records and accountability",
+      "family": "exempt",
+      "function": "argument",
+      "setting": "omitted, forged and never-made records, and the limit on identical inputs",
+      "trajectory": "unresolved",
+      "basis": "exempt-element",
+      "pattern": "argument",
+      "postures": [
+        "chooses"
+      ]
+    },
+    {
+      "id": "30-06",
+      "chapter": "book-1/30-where-this-could-fail.md",
+      "section": "The floor is fiscally infeasible",
+      "domain": "Economy, property, work and commons",
+      "family": "exempt",
+      "function": "argument",
+      "setting": "whether the resources exist, left to the second book",
+      "trajectory": "unresolved",
+      "basis": "exempt-element",
+      "pattern": "argument",
+      "postures": [
+        "chooses"
+      ]
+    },
+    {
+      "id": "30-07",
+      "chapter": "book-1/30-where-this-could-fail.md",
+      "section": "What would change the ranking",
+      "domain": "Public institutions",
+      "family": "exempt",
+      "function": "argument",
+      "setting": "evidence that would reorder the failures",
+      "trajectory": "contested",
       "basis": "exempt-element",
       "pattern": "argument",
       "postures": [

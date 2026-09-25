@@ -189,9 +189,9 @@ Front matter: `epigraph.md`, `00-opening-note.md`.
 | 27 | The One Thing Taken | `27-the-one-thing-taken.md` | derived | break | landed |
 | 28 | When the System Notices It Broke | `28-when-the-system-notices-it-broke.md` | derived | break | landed |
 | **Part V — The argument** | | | | | |
-| — | Opening case | — | exempt | — | planned |
+| — | Opening case: After the Judgment | `part-5-after-the-judgment.md` | exempt | — | landed |
 | 29 | The Five Joints | `29-the-five-joints.md` | exempt | — | landed |
-| 30 | Where This Could Fail | — | exempt | — | planned |
+| 30 | Where This Could Fail | `30-where-this-could-fail.md` | exempt | — | landed |
 
 Back matter: `method.md`, `reference.md`.
 <!-- END GENERATED: contents -->

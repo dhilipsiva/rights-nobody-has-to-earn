@@ -47,7 +47,9 @@ exact prose is `session-drafted, author-approved under delegated approval
 (2026-09-13)`.
 
 **Entrenchment argument — item 24, 2026-09-21.** The exact
-[Part V protected-core argument](../../29-the-five-joints.md#what-a-majority-may-not-remove)
+Part V protected-core argument (since item 59 argued in
+[Chapter 22](../../22-changing-the-rules.md#argument-a-fixed-core-behind-an-open-route)
+and, for animals, [Chapter 13](../../13-creatures-without-a-ballot.md#argument-a-claim-of-its-own))
 is session-drafted and author-approved under the standing delegated approval.
 It gives animal protection its own moral ground in suffering and continued
 life, rather than importing the human franchise argument. Revisable welfare

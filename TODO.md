@@ -67,9 +67,10 @@ ratified 2026-09-24* and recorded in `CLAUDE.md`.
 - Preserve the unnumbered epigraph and method, editorial order and the
   majority-derived length rule. Ruling D2 adds one labelled argument section to
   each derived chapter and measures the length rule by section; item 53 built
-  that tooling, and items 54–57 wrote the sections and opening cases of Parts
-  I–IV. The existing appendix is a carried archive, not an extra
-  channel for new reader-facing arguments.
+  that tooling, items 54–57 wrote the sections and opening cases of Parts
+  I–IV, and item 59 made Part V a synthesis with its own opening case. The
+  existing appendix is a carried archive, not an extra channel for new
+  reader-facing arguments.
 - **Current design throughout — author instruction, 2026-09-18.** Every
   reader-facing part, including the opening, Part V and optional method, must
   describe the design of the edition being read. Remove accounts of the book's
@@ -217,39 +218,15 @@ unimplemented until the items named here land.
 
 ## Ordered revision backlog
 
-Work in this order: items 59–63 carry the rewrite under the ratified rulings;
+Work in this order: items 60–63 carry the rewrite under the ratified rulings;
 item 64 finishes production, 65 closes the revision, and 66 is optional.
-Numbering continues from items 01–33, which `CLAUDE.md` records; items 34–58
+Numbering continues from items 01–33, which `CLAUDE.md` records; items 34–59
 and 67–72 are complete and recorded there too. Chapter numbers refer to the
 [current reading sequence](book-1/contents.json), which item 53 made the plan's
 §4.2 table; the plan's own §14 punch list uses the earlier numbers, which
 `tools/maps/2026-09-25-restructure.json` maps to these.
 
 ### Structure and rewrite
-
-- [ ] **59. Make Part V a synthesis, and rank where the design could fail.**
-
-  **Scope:** Part V; plan §8.1 and §8.4; rulings D2, D3 and D7.
-
-  With each chapter carrying its own argument (D2), rewrite Part V as synthesis:
-  how the choices fit together, where they trade off, and the commitments
-  beneath them. State the contributions: keeping entitlement, duty, evidence and
-  delivery apart as a principle of design; constraints on how facts flow into
-  consequences (item 48); testing by paired edge cases; and the specific
-  mechanisms, namely the one thing taken, answerability that survives recall,
-  severity as a ceiling rather than a selector, false-scarcity controls, silence
-  never counting as approval, and the firewall between services and enforcement.
-  Answer the objection that designing from the extreme case burdens ordinary
-  life, using the ordinary-week chapter. Add "Where This Could Fail": at-scale
-  non-performance, open standards read narrowly, captured review, slow and
-  costly procedure, input integrity, and fiscal feasibility (Book 2's), each
-  with the evidence that would show it failing, what the design does now and
-  what a fix would take. The ranking is argued, not scored. Part V takes its
-  opening case as D3 directs.
-
-  **Done when:** no argument depends on a passage moved elsewhere, each ranked
-  limitation has its falsifier, and the chapter replaces distributed
-  disclaimers rather than adding to them.
 
 - [ ] **60. Rewrite the opening.**
 
@@ -276,7 +253,11 @@ and 67–72 are complete and recorded there too. Chapter numbers refer to the
 
   **Scope:** plain-language articles in the companion (`ui/`), an article map to
   rule families, contracts and pins, a traceability check, and the chapters'
-  article citations; plan §5; ruling D4.
+  article citations; plan §5; ruling D4. The companion's game data
+  (`ui/game.json`) also quotes the book in its authored costs and fault notes;
+  item 59 pointed each at the section that now holds its argument, and some of
+  their texts and chapter references predate the restructure and still need
+  bringing into line with the current chapters.
 
   Write numbered plain-language articles, organised by the book's Parts, with
   the protected core marked. Map each article to the rule families, contracts

@@ -1885,6 +1885,30 @@
       "notes": "saflii.org returned 403 to a direct request; read the judgment's HTML through an Internet Archive capture of the SAFLII page (web.archive.org/web/2021id_/ of the source URL), retrieved with curl on 2026-09-25. Verified verbatim: para 7 (Wallacedene on the edge of Oostenberg; a quarter of households without income), the following paragraphs (about half the population children; no water, sewage or refuse removal; many on the waiting list for as long as seven years; moved out at the end of September 1998 onto privately owned vacant land earmarked for low-cost housing, called New Rust; ejectment order of 8 December 1998; eviction on 18 May 1999 'at the beginning of the cold, windy and rainy Cape winter', 'at the municipality's expense', 'prematurely and inhumanely', homes 'bulldozed and burnt and their possessions destroyed'), para 11 (sheltered on the Wallacedene sports field; plastic sheeting afforded scant protection), footnote 2 ('The respondents are 510 children and 390 adults'), para 95 ('Neither section 26 nor section 28 entitles the respondents to claim shelter or housing immediately upon demand'), para 96 (declaratory order) and para 99 (the order's text). The HTML interleaves footnote and paragraph markers, so the facts are cited as paras 7-11 rather than sentence by sentence. The judgment's outcome for the families after 2000 was not checked."
     },
     {
+      "id": "grootboom-2008-death-mail-and-guardian",
+      "claim": "Irene Grootboom, whose name the Constitutional Court's 2000 housing judgment bears, died in the week before 8 August 2008 still homeless and penniless, eight years after the ruling; her lawyer Ismail Jamie said that 'the fact that she died homeless shows how the legal system and civil society failed her' and that he was sorry they had not done enough following up after judgment was given in her favour.",
+      "value": null,
+      "units": null,
+      "source": "Pearlie Joubert, 'Grootboom dies homeless and penniless', Mail & Guardian, 8 August 2008, opening paragraphs and the quotations of Ismail Jamie; https://mg.co.za/article/2008-08-08-grootboom-dies-homeless-and-penniless/",
+      "retrieved": "2026-09-25",
+      "method": "reference",
+      "fetch": null,
+      "book": "book-1",
+      "notes": "Read the article on the Mail & Guardian site. Verified: 'when she died this week in her forties, she was still homeless and penniless'; the court ruled 'eight years ago'; Jamie's quoted words 'the fact that she died homeless shows how the legal system and civil society failed her' and 'I am sorry that we didn't do enough following-up after judgement was given in her favour.' The report gives her age only as 'in her forties', which other accounts contradict, so the book states no age. It dates her death to the week of publication; New Frame (2020) places it in late July 2008, so the book gives both. This is contemporaneous reporting with a quotation from her legal representative, not an official record."
+    },
+    {
+      "id": "grootboom-2020-unbuilt-house",
+      "claim": "After the Grootboom judgment the Wallacedene community received temporary relief (building materials, a patch of land on which to build and basic services) and was assigned to phase four of a ten-phase housing development; Irene Grootboom died in her self-built shack on the temporary relocation site in late July 2008; a community leader, Mawethu Sila, said that he and most of the others in the case had received state housing by 2011; the house she would have occupied was built after her death and her family lives in it. Justice Zak Yacoob, who wrote the judgment, said the temporary-housing case had been settled between the government and the community on the second day of argument, and attributed the judgment's failure to corruption, greed, selfishness and lack of attention to poor people that the Court could not have foreseen.",
+      "value": null,
+      "units": null,
+      "source": "Matthew Wilhelm-Solomon, 'Irene Grootboom's unbuilt house', New Frame, 5 October 2020, republished by Public Interest Legal Services; https://www.pils.org.za/irene-grootbooms-unbuilt-house/",
+      "retrieved": "2026-09-25",
+      "method": "reference",
+      "fetch": null,
+      "book": "book-1",
+      "notes": "Read the republished text on the PILS site; the New Frame original and the allAfrica copy refused direct retrieval. Verified: 'The judgment was authored by Justice Zak Yacoob'; Yacoob's words 'the temporary housing case was actually settled between the government and the community concerned on the second day on which we heard argument'; 'temporary relief through the provision of building materials and a patch of land on which to build homes, and basic services'; 'phase four of a 10-phase development plan'; 'According to Sila, he and most of the others in the case had finally received state housing by 2011'; 'Grootboom died in her self-built shack on the temporary relocation site'; her last interview 'just days before she died in late July 2008'; the house built after her death, where members of her family live. Yacoob's explanation of the failure is quoted with an ellipsis in the article and is his opinion, not a finding. Sila's account is one resident's testimony, not an audit of allocations."
+    },
+    {
       "id": "tac-no2-2002-nevirapine",
       "claim": "In Treatment Action Campaign (No 2) the South African Constitutional Court held that sections 26 and 27 do not give everyone a self-standing right to demand a minimum core, reviewed the government's mother-to-child HIV transmission policy for reasonableness, and ordered the government without delay to remove restrictions preventing nevirapine being made available at public hospitals and clinics beyond the research and training sites.",
       "value": null,

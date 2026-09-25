@@ -74,7 +74,8 @@ manuscript review and CLAUDE.md.
 
 ## Comparative argument — item 24, 2026-09-21
 
-The exact [Part V comparison](../../29-the-five-joints.md#protection-while-the-connection-is-disputed)
+The exact Part V comparison (since item 59 argued in
+[Chapter 23](../../23-the-shield.md#argument-protection-that-follows-the-charge))
 is session-drafted and author-approved under the standing delegated approval.
 The competing procedure now receives its strongest form: an immediate
 case-specific protective order on a credible showing, followed by expedited

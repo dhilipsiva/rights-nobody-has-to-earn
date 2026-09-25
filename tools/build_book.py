@@ -459,7 +459,7 @@ def main() -> None:
     args_parser.add_argument('--output-dir', type=Path, default=ROOT / 'output/book-1')
     args_parser.add_argument('--browser-executable', help='Optional existing Chromium executable')
     args_parser.add_argument('--no-pdf', action='store_true', help='Build HTML and EPUB without launching Chromium')
-    args_parser.add_argument('--sample', action='store_true', help='Build the selected publisher sample: chapters 1, 5, 8, 21 and 31')
+    args_parser.add_argument('--sample', action='store_true', help='Build the selected publisher sample: chapters 1, 4, 8, 21 and 29')
     args_parser.add_argument('--ui-export', type=Path, help='Export the full reader JSON only, using the existing renderer and link checks')
     args = args_parser.parse_args()
     docs = read_documents()

@@ -513,9 +513,18 @@
     "strays": 0
   },
   "book-1/29-the-five-joints.md": {
-    "negation": 22.1,
-    "jargon": 1.0,
+    "negation": 13.9,
+    "jargon": 0.7,
     "names": 2,
+    "disclaimers": 0,
+    "banned": 0,
+    "harness": 0,
+    "strays": 0
+  },
+  "book-1/30-where-this-could-fail.md": {
+    "negation": 16.0,
+    "jargon": 0.5,
+    "names": 0,
     "disclaimers": 0,
     "banned": 0,
     "harness": 0,
@@ -566,8 +575,17 @@
     "harness": 0,
     "strays": 0
   },
+  "book-1/part-5-after-the-judgment.md": {
+    "negation": 8.8,
+    "jargon": 0.0,
+    "names": 0,
+    "disclaimers": 0,
+    "banned": 0,
+    "harness": 0,
+    "strays": 0
+  },
   "book-1/reference.md": {
-    "negation": 16.4,
+    "negation": 15.9,
     "jargon": 0.6,
     "names": 30,
     "disclaimers": 1,

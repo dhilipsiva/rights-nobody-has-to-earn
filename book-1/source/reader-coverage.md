@@ -46,10 +46,10 @@ carried in single figures, which is where the rebalance has most to do.
 
 | Posture | Passages |
 | --- | ---: |
-| chooses | 47 |
+| chooses | 58 |
 | creates | 4 |
 | cares | 8 |
-| works | 12 |
+| works | 13 |
 | associates | 7 |
 | requests | 13 |
 | receives | 65 |
@@ -70,7 +70,7 @@ what matters is the book's shape, not the chapter's.
 | democratic | 32 |
 | coercive | 45 |
 | records | 32 |
-| argument | 35 |
+| argument | 46 |
 
 Whether a passage follows its pattern's own arc — seeks, responds,
 receipt, challenge, continuity, boundary — is prose review and is not
@@ -85,18 +85,18 @@ checked here.
 | Defence and armed force | 1 | 1 | 1 |
 | Democracy and amendment | 9 | 8 | 6 |
 | Ecology, future generations and commons | 4 | 5 | 5 |
-| Economy, property, work and commons | 16 | 14 | 10 |
+| Economy, property, work and commons | 16 | 15 | 11 |
 | Emergency and resilience | 2 | 3 | 4 |
-| Justice and coercion | 14 | 17 | 8 |
+| Justice and coercion | 14 | 18 | 8 |
 | Knowledge, communication and culture | 4 | 6 | 2 |
 | Life course, family, care and reproduction | 13 | 5 | 3 |
 | Locality, mobility and external relations | 2 | 2 | 2 |
-| Material floor | 10 | 25 | 10 |
+| Material floor | 10 | 26 | 11 |
 | Non-human animals | 2 | 4 | 1 |
-| Personhood and equality | 19 | 14 | 9 |
-| Public institutions | 7 | 12 | 8 |
+| Personhood and equality | 19 | 17 | 10 |
+| Public institutions | 7 | 15 | 8 |
 | Public safety, policing and use of force | 6 | 5 | 6 |
-| Records and accountability | 13 | 19 | 11 |
+| Records and accountability | 13 | 21 | 13 |
 
 ## Every passage
 
@@ -364,10 +364,21 @@ checked here.
 | 28-07 | 28-when-the-system-notices-it-broke.md | The child with nobody | Records and accountability | ARTICLES | protective | the child with nobody: one birth entry and nothing else | receives | unresolved | no | records | `book-1/28-when-the-system-notices-it-broke.pins.nibli` |
 | 28-06 | 28-when-the-system-notices-it-broke.md | What this cannot settle | Records and accountability | OBLIGATIONS | protective | a marker nobody writes, and vocabulary for the system's own violation | requests | unresolved | yes | records | `book-1/28-when-the-system-notices-it-broke.pins.nibli` |
 | 28-09 | 28-when-the-system-notices-it-broke.md | Argument: Findings from outside the walls | Records and accountability | exempt | argument | breaches found by independent witnesses raising duties on named offices, against internal inspection | chooses | contested | no | argument | `exempt-element` |
-| 29-00 | 29-the-five-joints.md | (preamble) | Personhood and equality | exempt | argument | the author speaking, unchecked by the machine | chooses | unresolved | yes | argument | `exempt-element` |
-| 29-01 | 29-the-five-joints.md | Valuation | Economy, property, work and commons | exempt | argument | Owen's New Harmony and the valuation joint | chooses | contested | yes | argument | `exempt-element` |
-| 29-02 | 29-the-five-joints.md | Rotation | Economy, property, work and commons | exempt | argument | the kibbutzim and the rotation joint | works | contested | no | argument | `exempt-element` |
-| 29-03 | 29-the-five-joints.md | Coercion | Justice and coercion | exempt | argument | incarceration evidence, abolition and the coercion joint | is acted upon | fails | yes | argument | `exempt-element` |
-| 29-04 | 29-the-five-joints.md | Capture | Public institutions | exempt | argument | Mondragon and the capture joint | governs | contested | yes | argument | `exempt-element` |
-| 29-05 | 29-the-five-joints.md | The State | Locality, mobility and external relations | exempt | argument | Cybersyn, and four fates at the hands of a state | governs | contested | yes | argument | `exempt-element` |
+| 29-00 | 29-the-five-joints.md | (preamble) | Personhood and equality | exempt | argument | the kitchen imagined, and the standard the argument holds itself to | chooses | unresolved | yes | argument | `exempt-element` |
+| 29-07 | 29-the-five-joints.md | The commitments beneath the choices | Personhood and equality | exempt | argument | five commitments beneath the chapters' choices, from nothing earned to silence deciding nothing | chooses | contested | yes | argument | `exempt-element` |
+| 29-08 | 29-the-five-joints.md | What the design adds | Records and accountability | exempt | argument | entitlement, duty, evidence and delivery kept apart, flow constraints, paired edge cases and small mechanisms | chooses | contested | yes | argument | `exempt-element` |
+| 29-09 | 29-the-five-joints.md | Designing from the extreme case | Personhood and equality | exempt | argument | an ordinary week as the answer to building from the worst case | chooses, works | contested | no | argument | `exempt-element` |
+| 29-01 | 29-the-five-joints.md | Valuation | Economy, property, work and commons | exempt | argument | worth kept out of every computation, with Owen, Lin and MONDRAGON | chooses | contested | yes | argument | `exempt-element` |
+| 29-02 | 29-the-five-joints.md | Rotation | Economy, property, work and commons | exempt | argument | nobody acquired through need or silence, with the kibbutzim | works | contested | yes | argument | `exempt-element` |
+| 29-03 | 29-the-five-joints.md | Coercion | Justice and coercion | exempt | argument | one thing taken, and the evidence on confinement read together | is acted upon | contested | yes | argument | `exempt-element` |
+| 29-04 | 29-the-five-joints.md | Capture | Public institutions | exempt | argument | no party certifies itself, with the Jharkhand cancellations | governs | contested | yes | argument | `exempt-element` |
+| 29-05 | 29-the-five-joints.md | The State | Locality, mobility and external relations | exempt | argument | how the state criteria conflict, with Cybersyn and the democracy calculation | governs | contested | yes | argument | `exempt-element` |
 | 29-06 | 29-the-five-joints.md | What the argument asks | Personhood and equality | exempt | argument | why there is no score at the end | chooses | unresolved | yes | argument | `exempt-element` |
+| 30-00 | 30-where-this-could-fail.md | (preamble) | Public institutions | exempt | argument | failures that cross chapters, ranked by an argued order | chooses | contested | no | argument | `exempt-element` |
+| 30-01 | 30-where-this-could-fail.md | The State fails to perform at scale | Material floor | exempt | argument | debts no rule can make anyone pay, and the structural route that holds the failure in view | chooses | unresolved | yes | argument | `exempt-element` |
+| 30-02 | 30-where-this-could-fail.md | Open standards are read narrowly | Personhood and equality | exempt | argument | adequate, usable and reasonably available read to deny | chooses | unresolved | no | argument | `exempt-element` |
+| 30-03 | 30-where-this-could-fail.md | Independent review is captured | Public institutions | exempt | argument | attesters who agree on a lie, and divided sources directed by one coalition | chooses | unresolved | no | argument | `exempt-element` |
+| 30-04 | 30-where-this-could-fail.md | Procedure is too slow and too costly | Justice and coercion | exempt | argument | waits, abandoned claims and help that arrives after the harm | chooses | unresolved | no | argument | `exempt-element` |
+| 30-05 | 30-where-this-could-fail.md | The inputs lack integrity | Records and accountability | exempt | argument | omitted, forged and never-made records, and the limit on identical inputs | chooses | unresolved | yes | argument | `exempt-element` |
+| 30-06 | 30-where-this-could-fail.md | The floor is fiscally infeasible | Economy, property, work and commons | exempt | argument | whether the resources exist, left to the second book | chooses | unresolved | no | argument | `exempt-element` |
+| 30-07 | 30-where-this-could-fail.md | What would change the ranking | Public institutions | exempt | argument | evidence that would reorder the failures | chooses | contested | no | argument | `exempt-element` |

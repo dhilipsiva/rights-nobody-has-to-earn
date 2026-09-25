@@ -19,11 +19,11 @@ the labelled opening note, Part V's argument and evidence, and the optional
 method part, Book 1's claims derive from that constitution. The reader chapters
 remain jargon-free. Generated reports and prose do not override the formal source.
 
-**Ratified 2026-09-24 and implemented for Parts I–IV (items 54–57):** each
-derived chapter also closes with one labelled argument section, and a
-documented case opens each of Parts I–IV (D2 and D3 of *The revision rulings
-D1–D9* below). The opening's documented case and Part V's wait for items 60
-and 59.
+**Ratified 2026-09-24 and implemented for every Part (items 54–59):** each
+derived chapter also closes with one labelled argument section, a documented
+case opens each Part, and Part V is a synthesis followed by *Where This Could
+Fail* (D2, D3 and D7 of *The revision rulings D1–D9* below). The opening's
+documented case waits for item 60.
 
 Book 2 owns operation and transition within a declared reference envelope:
 staffing, costs, resources, technology, workflows, capacity, and empirical
@@ -133,6 +133,55 @@ reinstate the retired tooling or workflow.
 
 Grouped by kind. Dates in each heading are the ratification dates; a ruling
 that was later implemented or narrowed carries that supersession inline.
+
+### Item 59 — Part V as synthesis, and where the design could fail, 2026-09-25
+
+Part V now carries rulings D2, D3 and D7. *The Five Joints* no longer repeats
+the arguments each chapter closes with. It states five commitments beneath the
+choices (nothing owed waits on merit; a fact reaches a person only by a route
+written for it; no party certifies itself; power is current and answerability
+lasts; silence decides nothing), the book's four contributions (entitlement,
+duty, evidence and delivery kept apart; the flow constraints the method names;
+paired edge cases; and the small mechanisms), and the answer to the objection
+that designing from the extreme case burdens ordinary life, from *An Ordinary
+Week*. Each joint then says which chapters' choices meet there, how they fit
+and where one costs another. The historical cases about whole societies stay:
+Owen and Lin, MONDRAGON beside the corporate pay ratio, the kibbutzim, the
+Jharkhand cancellations and Santoshi Kumari until item 60 takes her case, and
+Cybersyn, Auroville, the WIR and Kerala, with the democracy calculation. It
+falls from 12,625 to 5,735 words and negation from 22.1 to 13.9 per 1,000. The
+kitchen paragraph and the seven sentences reviewed records quote are kept.
+
+Chapter 30, *Where This Could Fail*, ranks six failures by an argued order —
+how much of the design fails with each and how little the rules can catch it:
+performance at scale, open standards read narrowly, captured review, slow and
+costly procedure, input integrity, and fiscal feasibility, last because this
+book cannot test it. Each states the evidence that would show it, what the
+design does now and what a fix would take; the identical-input limit moves
+there from the capture joint. Part V's opening case, *After the Judgment*
+(`book-1/part-5-after-the-judgment.md`), follows the Wallacedene families after
+the judgment that opens Part I: temporary relief, a phased development, most
+litigants housed by 2011 on one leader's account, and Irene Grootboom's death
+in her shack in 2008 before her house was built, with the dispute over what
+failed and the reports' differing dates kept. Two registry entries source it
+(224 claims), two bindings tie it to them and one stale Part V row goes (177).
+
+The choices map in `reference.md` now points at the chapters' argument
+sections, its contents list the opener and Chapter 30, and six dated appendix
+records follow the arguments they cite to their new homes. The companion's game
+data follows its authored costs to the sections that hold them; item 61 now
+also carries bringing those texts, some of which predate the restructure, into
+line. The coverage ledger holds 280 passages, three new for Part V's sections
+and eight for Chapter 30. The book builder's sample help names the current
+chapters. The exact prose is `session-drafted, author-approved under delegated
+approval (2026-09-13)`.
+
+No rule, pin or suite changes, so item 58's complete run on the same formal
+inputs stands. All 145 authoring development tests pass, with five declared
+ignored, as do the sixteen prose-lint, nine book-builder and six companion
+input unit tests and the prose check; `registry/check.py` passes with 224
+claims, and the HTML and EPUB copies assemble the opener, Chapter 29 and
+Chapter 30 in order before the method.
 
 ### Item 58 — the largest commitments argued in proportion, 2026-09-25
 
