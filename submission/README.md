@@ -14,7 +14,7 @@ language, with every rule published so you can test it.*
 This proposal seeks an editorial and print partnership for an openly licensed
 book. It is prepared for a submission decision, without being addressed or sent
 to a particular publisher. It describes the manuscript at commit
-`MANUSCRIPT_COMMIT`; the [public manuscript](https://github.com/dhilipsiva/rights-nobody-has-to-earn/blob/MANUSCRIPT_COMMIT/book-1/README.md)
+`be51db06`; the [public manuscript](https://github.com/dhilipsiva/rights-nobody-has-to-earn/blob/be51db06/book-1/README.md)
 and [repository](https://github.com/dhilipsiva/rights-nobody-has-to-earn)
 provide the text, its formal source and its evidence trail. The version of
 this proposal prepared on 21 September 2026 described the earlier manuscript
@@ -99,9 +99,9 @@ These are points of intellectual comparison, not sales forecasts or endorsements
 
 ## Contents
 
-The [annotated contents](https://github.com/dhilipsiva/rights-nobody-has-to-earn/blob/MANUSCRIPT_COMMIT/book-1/reference.md#annotated-contents)
+The [annotated contents](https://github.com/dhilipsiva/rights-nobody-has-to-earn/blob/be51db06/book-1/reference.md#annotated-contents)
 give a sentence for each chapter; the sequence below matches
-[the contents manifest](https://github.com/dhilipsiva/rights-nobody-has-to-earn/blob/MANUSCRIPT_COMMIT/book-1/contents.json).
+[the contents manifest](https://github.com/dhilipsiva/rights-nobody-has-to-earn/blob/be51db06/book-1/contents.json).
 
 Epigraph; A Note Before the Design — both unnumbered.
 
@@ -171,14 +171,14 @@ publisher's requirements before any submission.
 
 | Chapter | What the selection shows |
 |---|---|
-| [1. The Child With Nobody](https://github.com/dhilipsiva/rights-nobody-has-to-earn/blob/MANUSCRIPT_COMMIT/book-1/01-the-child-with-nobody.md) | Unconditional standing tested from a one-line birth record, and the argument against identity-first welfare. |
-| [4. Whether It Arrived](https://github.com/dhilipsiva/rights-nobody-has-to-earn/blob/MANUSCRIPT_COMMIT/book-1/04-whether-it-arrived.md) | The difference between an entitlement, a receipt and concluded delivery, and why evidence comes from the person served. |
-| [8. What Nobody Has to Ask Permission For](https://github.com/dhilipsiva/rights-nobody-has-to-earn/blob/MANUSCRIPT_COMMIT/book-1/08-what-nobody-has-to-ask-permission-for.md) | Ordinary freedom and the two grounds on which public power may restrict it. |
-| [21. A Way to Be Heard](https://github.com/dhilipsiva/rights-nobody-has-to-earn/blob/MANUSCRIPT_COMMIT/book-1/21-a-way-to-be-heard.md) | Access, a duty to hear, interim protection and relief kept apart. |
-| [29. The Five Joints](https://github.com/dhilipsiva/rights-nobody-has-to-earn/blob/MANUSCRIPT_COMMIT/book-1/29-the-five-joints.md) | The synthesis: valuation, rotation, coercion, capture and the state, with the evidence and its limits. |
+| [1. The Child With Nobody](https://github.com/dhilipsiva/rights-nobody-has-to-earn/blob/be51db06/book-1/01-the-child-with-nobody.md) | Unconditional standing tested from a one-line birth record, and the argument against identity-first welfare. |
+| [4. Whether It Arrived](https://github.com/dhilipsiva/rights-nobody-has-to-earn/blob/be51db06/book-1/04-whether-it-arrived.md) | The difference between an entitlement, a receipt and concluded delivery, and why evidence comes from the person served. |
+| [8. What Nobody Has to Ask Permission For](https://github.com/dhilipsiva/rights-nobody-has-to-earn/blob/be51db06/book-1/08-what-nobody-has-to-ask-permission-for.md) | Ordinary freedom and the two grounds on which public power may restrict it. |
+| [21. A Way to Be Heard](https://github.com/dhilipsiva/rights-nobody-has-to-earn/blob/be51db06/book-1/21-a-way-to-be-heard.md) | Access, a duty to hear, interim protection and relief kept apart. |
+| [29. The Five Joints](https://github.com/dhilipsiva/rights-nobody-has-to-earn/blob/be51db06/book-1/29-the-five-joints.md) | The synthesis: valuation, rotation, coercion, capture and the state, with the evidence and its limits. |
 
 To assemble the sample from this checkout, follow the
-[browser setup instructions](https://github.com/dhilipsiva/rights-nobody-has-to-earn/blob/MANUSCRIPT_COMMIT/book-1/README.md#read-or-assemble-the-book), then run:
+[browser setup instructions](https://github.com/dhilipsiva/rights-nobody-has-to-earn/blob/be51db06/book-1/README.md#read-or-assemble-the-book), then run:
 
 ```bash
 uv run tools/build_book.py --sample
@@ -251,4 +251,4 @@ check its current official requirements, including sample length, author
 information, rights and AI-disclosure policies. Contact, submission and any
 contract are separate decisions; none has taken place through this package.
 
-This proposal is licensed under [CC BY 4.0](https://github.com/dhilipsiva/rights-nobody-has-to-earn/blob/MANUSCRIPT_COMMIT/book-1/LICENSE-CC-BY).
+This proposal is licensed under [CC BY 4.0](https://github.com/dhilipsiva/rights-nobody-has-to-earn/blob/be51db06/book-1/LICENSE-CC-BY).

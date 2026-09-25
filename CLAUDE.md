@@ -186,8 +186,8 @@ stays at 7,583.
 `submission/README.md` is rewritten for the revised manuscript: the D1
 subtitle and promise, the opening case, the chapter shape, the contents, the
 sample (Chapters 1, 4, 8, 21 and 29), the summary edition and the companion.
-It describes the commit this item records, named in the next commit because a
-commit cannot name itself. The version sent before describes `93fa5662`, which
+It describes `be51db06`, the commit this item records, named in the next
+commit because a commit cannot name itself. The version sent before describes `93fa5662`, which
 stays identifiable. No press has been contacted. The reading-order decision
 records the item, and the TODO's required items are complete; item 66 stays
 optional. The exact prose is `session-drafted, author-approved under delegated
