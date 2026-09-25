@@ -102,11 +102,10 @@ Protection follows the exposure, whatever the claimant's general credibility: a
 restriction on signing credibility findings gives nobody permission to
 retaliate.
 
-A separate question remains about the injury itself, and it can be answered
-while the second disclosure stands. The case finding asks whether this
-prosecution is unrelated, and its effect stays with that prosecution. Dara
-cannot decide that question by adding the decision participants to the list of
-people exposed.
+Whether this prosecution is unrelated to the disclosure remains a separate
+question, and it can be answered while the second disclosure stands; the case
+finding's effect stays with that prosecution. Dara cannot block it by naming
+the decision participants in fresh disclosures.
 
 ## The case the shield stops covering
 

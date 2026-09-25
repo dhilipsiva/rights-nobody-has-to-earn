@@ -3,7 +3,8 @@
 *A documented case, told from the record of South Africa's Constitutional
 Court.*
 
-Wallacedene was an informal settlement on the eastern edge of Cape Town. When
+Wallacedene was an informal settlement on the edge of Oostenberg, in the Cape
+metropolitan area. When
 the Constitutional Court described it, about half its people were children.
 Their shacks lacked water, sewerage and refuse removal, and many families had
 waited as long as seven years on the list for subsidised housing. In September
@@ -29,9 +30,9 @@ constitution owes anything to; what exactly is owed, without being earned or
 waited for; what evidence would show that it arrived; what happens when there
 is genuinely too little to go round; and who must act when nothing reaches the
 person. This design writes down what the Court left undetermined: a floor owed
-to every person on personhood alone, with a named public body that owes it.
-Writing it down would have put a roof over nobody on that sports field by
-itself. The chapters show what the rules can say, and where saying it stops.
+to every person on personhood alone, with a named public body that owes it. By
+itself, writing it down would have housed nobody on that sports field. The
+chapters show what the rules can say, and where saying it stops.
 
 [^grootboom-facts]: *Government of the Republic of South Africa v Grootboom*
     (CCT 11/00) [2000] ZACC 19, 2001 (1) SA 46 (CC), decided 4 October 2000,

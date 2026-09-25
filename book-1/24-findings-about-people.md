@@ -190,10 +190,11 @@ duty follows, and the finding continues meanwhile.
 Relief from a conviction is built the same way. A properly made appellate order
 names its case, subject, incident, offence, ground, evidence and procedure. A
 raw clearing entry or a generic judgment by the appeals body is a different
-thing, and the rules still conclude custody for a person whose record holds
-only those entries. Missing relief alone confines nobody. Custody needs its own
-positive merits, defence, procedure, current authority and lawful placement
-evidence, as *The One Thing Taken* (Chapter 27) sets out.
+thing, and the rules still conclude custody for a person whose custody case is
+otherwise complete and whose only relief entries are those.
+Missing relief alone confines nobody. Custody needs its own positive merits,
+defence, procedure, current authority and lawful placement evidence, as *The
+One Thing Taken* (Chapter 27) sets out.
 
 ## What it costs
 

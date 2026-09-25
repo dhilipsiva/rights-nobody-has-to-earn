@@ -19,7 +19,7 @@
 # WHAT FALSE MEANS HERE: a FALSE is pinned only where the KB could have said
 # TRUE, and the comment says what would flip it.
 
-:expect-pins 27
+:expect-pins 28
 
 # "The things power may not prescribe" — held for a cast member by name.
 ? prevents(Adam, ArbitraryPrivacyInterference).
@@ -61,6 +61,9 @@
 # => TRUE
 
 ? prevents(Nell, UnsupportedMovementRestriction).
+# => TRUE
+
+? prevents(Nell, UnreviewedConsequentialDecision).
 # => TRUE
 
 ? prevents(Nell, CoercedAssociation).

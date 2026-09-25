@@ -11,15 +11,15 @@ an auditor's authority to sign findings; a person can record an examination
 without being answerable at all.
 
 A public-body entry makes the court, the review body, the appeals body, the
-convocation and the State answerable. A seating by the electorate or the
-convocation does the same for the person seated: Tove holds an electorate seat,
-and a person seated only by the convocation is answerable on the same terms.
-Answerability follows from these two routes alone, and someone outside both
-lacks it. A direct assertion of public answerability is refused because the
-conclusion must follow from the rules.
+convocation, the State and the common tier answerable. A seating by the
+electorate or the convocation does the same for the person seated: Tove holds
+an electorate seat, and a person seated only by the convocation is answerable
+on the same terms. Answerability follows from these two routes alone, and
+someone outside both lacks it. A direct assertion of public answerability is
+refused because the conclusion must follow from the rules.
 
-These seating routes belong to the accountability rules. The federal government
-has its own institutions and records: the People's Assembly, Regions Council,
+These seating routes belong to the accountability rules. The common tier has
+its own institutions and records: the People's Assembly, Regions Council,
 Executive Council, Civic President, courts and independent bodies. Current
 lawful power needs a positive record of its own, tied to its source and end and
 separate from answerability.
@@ -129,8 +129,10 @@ A witnessed move to a new version of the record can report a missing seating
 if the earlier version separately declared it a protected entry. The report
 records the loss, and restoring the seat and the shield takes more than the
 report.
-A challenge creates a duty on the appeals body with a named action route,
-certified nonresponse, alternate escalation, continuity and individual remedy.
+
+A challenge obliges the appeals body to act on a named route; a certified
+failure to respond moves the duty to an alternate, with continuity and
+individual remedy.
 Whether the appeals body acts and the protection is restored belongs to the
 second book.
 

@@ -141,10 +141,11 @@ the record of the one actor who gives it, with an independent reviewer owing
 prompt review; a restriction, a finding or an appointment giving power over
 another person waits for its attesters and reviewer. So a landlord seeking an
 eviction and an office seeking a restriction bear procedure, and a person
-asking for help mostly does not. Where procedure lands instead on the person
-the rules serve, as when a wage attested only by the employer stays
-unconcluded, the design has failed in one of the ways *Where This Could Fail*
-(Chapter 30) ranks.
+asking for help mostly does not. The nearest exception is a wage the employer
+alone attests: it waits for an attester authorised for the worker, who may be
+the worker, to record the payer, the kind and the basis. Where procedure lands
+on the person the rules serve more heavily than that, the design has failed in
+one of the ways *Where This Could Fail* (Chapter 30) ranks.
 
 Designing from the extreme case also finds defects an average case hides. A
 floor tested on a registered adult with a home and a job would never have shown
@@ -303,8 +304,12 @@ of provision. Custody adds duties: humane care, recorded voice, review of the
 holding and continuity at release. The child's protection is owed by an office
 that must begin without being asked. A record that stopped changing once a
 person was held would reproduce what the case opening Part IV found: people
-held for years because nobody moved their case. Custody authority that lapses
-unless renewed is the design's answer to it.
+held for years because nobody moved their case. The design's answer is
+authority that must stay current. Custody under a sentence lapses unless
+renewed, and detention before trial needs prompt judicial review that nobody
+has to request. A lapse ends the lawful authority without releasing anyone:
+release is a further act, and a person still held is owed humane care and
+review of the holding until it happens.
 
 ## Capture
 
@@ -432,9 +437,11 @@ difference estimates nothing about a country changing its government. The
 exploratory dispersion calculation is narrower still. Absolute residuals mix
 departures above and below a fitted line of country means, and measure neither
 the worst lives within countries nor a guaranteed lower bound. The estimated
-association with electoral democracy is negative after income adjustment, and
-one significant and one nonsignificant result would show no difference between
-estimates by themselves, as Gelman and Stern explain.[^measurement] Comparable
+association with electoral democracy is negative after income adjustment. It is
+one estimate from one snapshot: another index could return a nonsignificant
+estimate, and the contrast between a significant and a nonsignificant result
+would not itself show a difference between them, as Gelman and Stern
+explain.[^measurement] Comparable
 observations over time, defensible causal assumptions and measures of people's
 worst circumstances would support a stronger investigation.
 
@@ -445,14 +452,14 @@ These are commitments to defend, and the country data hides no causal finding
 behind them.
 
 The proposal leaves an operating burden to meet.
-No provider form, household relation, contract or delegated function
-removes the public responsibility. Offer, accessible provision, receipt,
-challenge, continuity and remedy remain distinct requirements. A recorded duty
-does not perform the next act, and independently attested receipt does not
-show a service system's capacity. Book 2's task is to make an operating
-account answer those demands with resources and evidence. It cannot turn a
-constitutional defect into a staffing question or make an unmet entitlement
-count as fulfilment.
+No provider form, household relation, contract or delegated function removes
+the public responsibility. Offer, accessible provision, receipt, challenge,
+continuity and remedy remain distinct requirements. A recorded duty does not
+perform the next act, and independently attested receipt does not show a
+service system's capacity. The task of *What It Would Take* is to make an
+operating account answer those demands with resources and evidence. It cannot
+turn a constitutional defect into a staffing question or make an unmet
+entitlement count as fulfilment.
 
 ## What the argument asks
 

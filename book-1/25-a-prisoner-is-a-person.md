@@ -24,9 +24,10 @@ record holds a reviewed placement in a named supported residence and
 accessible challenge intake. Custody follows from that whole case; an injury
 and a general judgment would be too little.
 
-Every other root of standing is absent from Zed's record: a direct personhood
-entry, birth, first contact, presence, effective control, release, and a
-standing status kept from an earlier version of the record. The record is
+Zed's record holds none of the other roots of standing, among them a direct
+personhood entry, birth, first contact, presence, effective control, a report
+that nobody is acting for Zed, release, and a standing status kept from an
+earlier version of the record. The record is
 sparser than an actual custody encounter should be, and that isolates one
 rule. From the case alone the rules conclude that Zed is a prisoner and
 therefore a person, and that the State owes Zed every floor item. The
@@ -94,7 +95,8 @@ or under a new name, needs a test of its own, and loading gives a rule no
 lawful authority. Because the protection is a property of how the rules are
 written and how the engine treats them, a change to either calls for testing
 it again. A release entry needs nobody to have found anything: whoever writes
-one gives the name on it standing and free movement.
+one gives the name on it standing, which brings free movement only where no
+custody case or restraint holds that person.
 
 ## The child with nobody
 
@@ -134,12 +136,13 @@ The United Nations' Standard Minimum Rules for the Treatment of Prisoners,
 adopted by the General Assembly in 2015 as the Nelson Mandela Rules, draw the
 same line: every prisoner is to be treated with respect for their inherent
 dignity, imprisonment is "afflictive by the very fact" of the loss of liberty,
-and the prison system is to add nothing to the suffering inherent in that
-loss.[^mandela] They are a resolution, not a treaty, and set out "what is
-generally accepted as being good principles and practice"; they record
-agreement on principle and show nothing about any prison. The case that opens
-this Part turned on a like premise: a court found a speedy trial within the
-right to life and liberty of people held for years untried.[^khatoon]
+and the prison system is not to aggravate the suffering inherent in that loss
+except as justifiable separation or discipline requires.[^mandela] They are a
+resolution, not a treaty, and set out "what is generally accepted as being good
+principles and practice"; they record agreement on principle and show nothing
+about any prison. The case that opens this Part turned on a like premise: a
+court found a speedy trial within the right to life and liberty of
+people held for years untried.[^khatoon]
 
 The strongest alternative suspends a convicted person's civil standing for the
 length of the sentence and restores it on release. While the sentence runs,

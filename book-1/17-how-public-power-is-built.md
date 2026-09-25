@@ -53,8 +53,8 @@ reviewed it.
 | Executive Council | Composed by the Assembly; holds office on the Assembly's certified confidence | Execute and administer the law as a collective body | Removal by the Assembly, which must elect a successor in the same decision; decree, dissolution, veto, extending its own term and standing emergency authority lie outside its powers |
 | Civic President | Chosen jointly by both chambers in a finite ballot that can yield at most one President | Formally appoint the certified government, promulgate laws and receive certificates, each a formal act without discretion over the decision it completes | A predeclared alternate performs the same formal acts, for a finite time, after a refusal, vacancy, failed selection or removal, without gaining policy power; removal for stated cause, found independently and confirmed by a separate body |
 | Ordinary courts | Independent appointment through divided sources | Relief in the case before them, with public reasons | Review of each decision; general invalidation belongs to the Constitutional Court |
-| Constitutional Court | Independent appointment through divided sources | Invalidate unlawful public action generally and finally; review the legality of election, amendment and secession procedure; allocate a disputed power in the interim | Public reasons and a remedy that works; ordinary policy and administration lie outside its powers; a challenge to its own composition goes to an alternate panel of uninvolved members |
-| Electoral administration | An independent administration | Administer elections and certify results open to recount and challenge; call a fresh election once a deadline is found to have passed | Constitutional Court review of election procedure; recount, challenge and correction |
+| Constitutional Court | Independent appointment through divided sources | Invalidate unlawful public action generally and finally; review the legality of election, amendment and secession procedure; allocate a disputed power in the interim | Its duty to give public reasons and an effective remedy; ordinary policy and administration lie outside its powers; a challenge to its own composition goes to an alternate panel of uninvolved members |
+| Electoral administration | An independent administration | Administer elections, authenticating and classifying submissions, while a separate result service computes and certifies results open to recount and challenge; call a fresh election once a deadline is found to have passed | Constitutional Court review of election procedure; recount, challenge and correction |
 | Appointments function | A dedicated function, separate from audit | Receive open nominations and referrals, act on each referral, and decide with reasons whether a nominee is fit for the office | Selection belongs to divided appointing sources; silence approves and rejects nothing, and inaction passes the referral to an alternate |
 | Audit, integrity, ombudsperson and rights advocate | Separate mandates | Examine public action and the integrity of public decisions; assist people unable to act alone | An integrity finding needs independent review and withholds only the act it names |
 
@@ -307,18 +307,19 @@ staggered, nonrenewable terms, so one government, chamber or coalition cannot
 fill a court with its own.
 
 The strongest alternative is Westminster cabinet government: a prime minister
-and cabinet drawn from the majority, beside a second chamber that defers.
-Arend Lijphart names it the Westminster model and sets it against a consensus
-model across thirty-six democracies.[^lijphart] Its defenders value one visible
-owner of each decision, whom voters can dismiss. Their best evidence against my
-executive is Uruguay, governed from 1952 to 1966 by a nine-member council
-before it returned to a presidency amid economic decline, inflation and social
-unrest. The council was blamed, though the historian Martin Weinstein places
-the failure in political leadership rather than the collegial form.[^colegiado]
-Against that, Switzerland's seven-member Federal Council decides as a collegial
-body.[^swiss] Constructive replacement gives my design nothing the alternative
-lacks: Germany's Basic Law requires the Bundestag to elect a successor when it
-withdraws confidence from the Chancellor.[^article67]
+and cabinet drawn from the majority, beside a second chamber that defers. Arend
+Lijphart names it the Westminster model and sets it against
+a consensus model across thirty-six democracies.[^lijphart] Its defenders value
+one visible owner of each decision, whom voters can dismiss. Their best
+evidence against my executive is Uruguay, governed from 1952 to 1966 by a
+nine-member council before it returned to a presidency amid economic decline,
+inflation and social unrest. The council was blamed, though the historian
+Martin Weinstein places the failure in political leadership
+rather than the collegial form.[^colegiado] Against that, Switzerland's
+seven-member Federal Council decides as a collegial body.[^swiss] Constructive
+replacement is nothing a prime-ministerial system cannot also adopt:
+Germany's Basic Law requires the Bundestag to
+elect a successor when it withdraws confidence from the Chancellor.[^article67]
 
 A second chamber apportioned by population would give every adult equal weight
 twice, but would reproduce the national majority exactly where a region's
@@ -329,12 +330,12 @@ Court held a province has no right to leave unilaterally, without
 negotiation.[^quebec] Switzerland goes further: its Council of States, of equal
 standing with the popular chamber, seats two representatives from most cantons
 and one from six, whatever their populations.[^swiss-states] My Council stays
-weaker than that, its objection to ordinary law only suspensive, because it
-overrides the equal weight of the Assembly's voters. For reviewers, India's
-Supreme Court in 2015 struck down a commission that included the Union Law
-Minister and two eminent persons, and declared the earlier collegium system of
-judicial appointment operative again.[^njac] I divide the sources rather than
-trust either a minister or the judiciary's own choice.
+weaker than that, its objection to ordinary law only suspensive, because a
+lasting veto would override the equal weight of the Assembly's voters. For
+reviewers, India's Supreme Court in 2015 struck down a commission that included
+the Union Law Minister and two eminent persons, and declared the earlier
+collegium system of judicial appointment operative again.[^njac] I divide the
+sources rather than trust either a minister or the judiciary's own choice.
 
 The price falls on identifiable people. A voter seeking whom to punish finds a
 council and an Assembly majority. A government that has lost support stays

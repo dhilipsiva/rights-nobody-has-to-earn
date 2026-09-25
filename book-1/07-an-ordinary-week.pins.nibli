@@ -123,17 +123,19 @@ promise(SelinEmployer, Wage, Selin).
 # the same attestation by anyone else flips it, as the next block shows.
 authorized(SelinEmployer, CompensationAttester, Selin).
 observe(SelinEmployer, Wage, Selin, SelinPayBasis).
+observe(SelinEmployer, SelinEmployer, Selin, SelinPayBasis).
 
 ? provide(SelinEmployer, Wage, Selin).
 # => FALSE
 
 authorized(SelinPayOffice, CompensationAttester, Selin).
 observe(SelinPayOffice, Wage, Selin, SelinPayBasis).
+observe(SelinPayOffice, SelinEmployer, Selin, SelinPayBasis).
 
 ? provide(SelinEmployer, Wage, Selin).
 # => TRUE
 
-# "The attestation covers only the kind of pay it names, here a wage."
+# "The attestation covers only the kind of pay and the payer it names"
 ? provide(SelinEmployer, Prize, Selin).
 # => FALSE
 

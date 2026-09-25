@@ -51,9 +51,10 @@ TERMS: list[tuple[str, list[str]]] = [
     ("commons", ["commons"]),
     ("company", ["company"]),
     ("compensation", ["compensation"]),
-    ("competence certificate", ["competence certificate", "certificate"]),
+    ("competence certificate", ["competence certificate", "certificate opens no door", "certifier"]),
     ("confinement", ["confinement", "confine", "confined"]),
-    ("Constitutional Court", ["Constitutional Court"]),
+    # Not Germany's Federal Constitutional Court.
+    ("Constitutional Court", ["re:(?<!Federal )(?<!Germany's )Constitutional Court"]),
     ("continuity", ["continuity"]),
     ("contradiction check", ["contradiction"]),
     ("contribution", ["contribution"]),
@@ -82,7 +83,6 @@ TERMS: list[tuple[str, list[str]]] = [
     ("Future Conditions Guardian", ["Future Conditions Guardian", "re:the Guardian(?! reported)"]),
     ("harm", ["harm"]),
     ("initiation duty", ["initiation", "initiate"]),
-    ("interpretation", ["interpretation"]),
     ("learning", ["learning", "teaching"]),
     ("locality", ["locality", "localities"]),
     ("lottery", ["lottery", "rotation"]),
@@ -100,7 +100,7 @@ TERMS: list[tuple[str, list[str]]] = [
     ("protected core", ["protected core", "unamendable"]),
     ("public finance", ["public finance", "taxation", "tax", "budget"]),
     ("receipt", ["receipt", "receipts"]),
-    ("recall", ["recall", "recalled"]),
+    ("recall", ["recall"]),
     ("recognition status", ["recognition"]),
     ("region", ["region", "regions"]),
     ("Regions Council", ["Regions Council"]),
@@ -110,12 +110,12 @@ TERMS: list[tuple[str, list[str]]] = [
     ("residence", ["residence", "resident"]),
     ("restoration", ["restoration", "restorative"]),
     ("scarcity", ["scarcity", "shortage"]),
-    ("search", ["search"]),
+    ("search", ["search order", "searches", "a search"]),
     ("secure placement", ["secure placement", "secure place"]),
     ("severity", ["severity", "severe"]),
     ("shelter", ["shelter"]),
     ("shield", ["shield"]),
-    ("signing restriction", ["signing restriction", "restriction on signing"]),
+    ("signing restriction", ["signing restriction", "restriction on signing", "restricted signer", "restricts only a signature", "restricts one act", "bears the restriction"]),
     ("single-actor route", ["single actor", "one authorised actor"]),
     ("standing", ["standing"]),
     ("subsidiarity", ["subsidiarity"]),
@@ -131,6 +131,8 @@ TERMS: list[tuple[str, list[str]]] = [
     ("Juno", ["Juno"]), ("Kel", ["Kel"]), ("Mael", ["Mael"]), ("Marisol", ["Marisol"]),
     ("Nell", ["Nell"]), ("Nia", ["Nia"]), ("Ruk", ["Ruk"]), ("Selin", ["Selin"]),
     ("Tove", ["Tove"]), ("Wren", ["Wren"]), ("Zed", ["Zed"]),
+    ("Dara", ["Dara"]), ("Edo", ["Edo"]), ("Faro", ["Faro"]), ("Jala", ["Jala"]),
+    ("Koa", ["Koa"]), ("Lior", ["Lior"]), ("Ori", ["Ori"]), ("Teo", ["Teo"]),
     # Documented cases and credited authors.
     ("Aadhaar", ["Aadhaar"]),
     ("ADM Jabalpur", ["ADM Jabalpur", "Jabalpur"]),
@@ -164,13 +166,21 @@ def places() -> list[tuple[str, str]]:
     return rows
 
 
+def plain_title(name: str) -> str:
+    """A reading input's title, lower-cased."""
+    for line in (BOOK / name).read_text(encoding="utf-8").splitlines():
+        if line.startswith("# "):
+            return line[2:].strip().lower()
+    return ""
+
+
 def plain(text: str) -> str:
     """The prose a reader meets: no comments, code, link targets or note definitions."""
     text = re.sub(r"<!--.*?-->", "", text, flags=re.S)
     text = re.sub(r"^\[\^[^\]]+\]:.*(?:\n(?:    .*|))*", "", text, flags=re.M)
     text = re.sub(r"```.*?```", " ", text, flags=re.S)
     text = re.sub(r"\]\([^)]*\)", "]", text)
-    return re.sub(r"[*_`]", "", text)
+    return " ".join(re.sub(r"[*_`]", "", text).split())
 
 
 MOST = 8
@@ -187,6 +197,7 @@ def count(pattern: str, text: str) -> int:
 def entries() -> list[tuple[str, list[str]]]:
     texts = [(label, plain((BOOK / name).read_text(encoding="utf-8"))) for name, label in places()]
     order = {label: index for index, (label, _) in enumerate(texts)}
+    titled = {label: plain_title(name) for name, label in places()}
     found = []
     for term, patterns in TERMS:
         counts = {label: sum(count(p, text) for p in patterns) for label, text in texts}
@@ -194,6 +205,9 @@ def entries() -> list[tuple[str, list[str]]]:
         if len(where) > MOST:
             principal = sorted((label for label in where if counts[label] > 1),
                                key=lambda label: (-counts[label], order[label]))[:MOST]
+            # A chapter titled by the term is always one of its places.
+            principal += [label for label in where if label not in principal
+                          and term.lower() in titled[label]]
             where = sorted(principal, key=order.get)
         if where:
             found.append((term, where))

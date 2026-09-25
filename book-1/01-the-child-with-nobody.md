@@ -10,8 +10,9 @@ and what Nell feels are questions it leaves open. The question here is what
 follows from the birth entry alone.
 
 For anyone other than a public body, a recorded birth is enough for the rules
-to conclude personhood. The rule asks for the birth and nothing else: a
-parent, an age, a document and a match against a registry are all outside it.
+to conclude personhood. The rule asks for the birth and that the name is not
+a public body's: a parent, an age, a document and a match against a registry
+are all outside it.
 Nell therefore enters the design as a person. The entries Nell lacks are
 simply absent, and nothing in the rules waits for them.
 

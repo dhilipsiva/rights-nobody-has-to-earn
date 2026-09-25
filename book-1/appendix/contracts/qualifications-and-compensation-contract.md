@@ -24,8 +24,9 @@ justified public power, and this card adds no gate to it. Above the floor,
 compensation of every named kind — wage, profit, return, grant, prize,
 subsidy, and bounded incentive — is one record relation with the kind as a
 constant, and it concludes only when an attester authorised for that person
-and distinct from the payer attests the same kind at a stated basis, under the
-Court's absent individualised finding of compensation fraud on that basis. The
+and distinct from the payer attests the same kind and names the payer at one
+stated basis, under the Court's absent individualised finding of compensation
+fraud on that basis. The
 compensation conclusion is read by no rule; no compensation rule reads
 recognition, the credibility verdict, or the loss leaf. Neither a certificate
 nor a compensation conclusion passes to a child, a spouse, or anyone else. A
@@ -57,9 +58,9 @@ advantage, metric gaming, and proportionate restitution.
 | Field | Contract |
 | --- | --- |
 | Holder | Every person for whom a certifier attests a function, and every person to whom a payer has promised compensation of a named kind. Personhood is not a premise of either rule. |
-| Source | For a certificate, the certifying body and the certification scope. For compensation, the promise record's kind and the attester's stated basis; a promise of one kind attested as another kind derives nothing. |
+| Source | For a certificate, the certifying body and the certification scope. For compensation, the promise record's payer and kind and the attester's stated basis; a promise of one kind attested as another kind derives nothing, and an attestation naming one payer concludes no other payer's promise. |
 | Writer | The certificate record is the certifier's attestation, and the certifier must be distinct from the person. The compensation record is the payer's promise; the attestation is by a writer authorised as compensation attester for that person and distinct from the payer. Both distinctness conditions are conjuncts in the rules. |
-| Evidence rule | Certificate: authorised certifier plus attestation at certification scope. Compensation: promise plus authorised independent attestation of the same kind at a basis, plus the Court's absent fraud finding on that basis. Either half alone derives nothing. |
+| Evidence rule | Certificate: authorised certifier plus attestation at certification scope. Compensation: promise plus an authorised independent attestation recording the same kind and the payer at one basis, plus the Court's absent fraud finding on that basis. Either half alone derives nothing. |
 | Scope and permitted effects | Two derived conclusions, a certificate and a compensation, each read by no other rule. Neither carries an amount, a rank, a tier, or a comparison; amounts are outside evidence. |
 | Independent reader | The attester is the independent reader of the basis; the Court is the seat for the individualised fraud finding; the integrity-and-audit function and the ombudsperson keep their general challenge routes. |
 | Privacy boundary | The compensation record is readable only by the compensation and restitution rules, enforced by a verifier guard with a watched failing control. A metric or performance attestation has no reader at all and cannot reach the floor, standing, the vote, liberty, or recognition. |
@@ -120,6 +121,8 @@ conclusion relation, with the person as payer and the payer as recipient.
 | Uncertified person | Identical floor, standing, liberty, and recognition conclusions to a certified person. |
 | Compensation of each kind | A promise of a kind plus an independent attestation of that kind derives that kind and no other. |
 | Payer self-attestation | The payer attesting its own promise derives nothing. |
+| Two payers | An attestation naming one payer concludes that payer's promise and no other's, and a fraud finding on its basis concludes restitution to that payer alone. |
+| Recipient as attester | The recipient, authorised to attest their own pay, may be the attester; the promise still comes from the payer. |
 | Metric gaming | An attestation of a metric where an incentive was promised derives nothing; no rule reads a metric attestation. |
 | Inherited advantage | A parent's certificate or compensation derives nothing for the child. |
 | Recognition, credibility, loss | Never read by any rule of this family; recognition stays unchanged for every compensated or certified person. |
@@ -166,3 +169,25 @@ moment they land.
    the payer as recipient, bound to the attested basis.
 4. Prose in the chapters on what a person is owed and on contribution, one
    Part V sentence, one method paragraph, two glossary entries.
+
+## 12. The payer named on the attestation — 2026-09-25
+
+The item 65 reading found that the compensation attestation recorded the kind,
+the person and the basis but not the payer. Measured on the family's pins, one
+attester's wage record for a person concluded the wage of every payer who had
+promised that person a wage, and a Court fraud finding on that basis concluded
+restitution by the person to each of those payers, including a payer the
+attested basis never concerned. The second is an adverse conclusion reaching
+someone's relation with a payer that no evidence named.
+
+Three repairs were compared. Carrying the basis on the promise needs a fourth
+place on `promise`, whose corpus arity is three. Leaving the rule and relying on
+the fraud route leaves the unrelated restitution standing. The chosen repair
+asks the attester to record the payer at the same basis as the kind,
+`observe($a, $payer, $p, $basis)`, beside `observe($a, $kind, $p, $basis)`, in
+both the compensation and the restitution rules. The attester writes one more
+entry; the recipient, where authorised to attest their own pay, may be that
+attester. The regression in the family's pins failed four ways on the earlier
+rule and passes on the repaired one, and Chapter 9's pins carry the second
+payer. The exact prose in Chapters 7 and 9, Part V, Chapter 30 and the glossary
+is `session-drafted, author-approved under delegated approval (2026-09-13)`.

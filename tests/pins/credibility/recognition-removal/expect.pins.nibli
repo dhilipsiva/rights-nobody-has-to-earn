@@ -37,6 +37,7 @@ work(Bela, UnrelatedCare).
 promise(Foundry, Wage, Bela).
 authorized(Steward, CompensationAttester, Bela).
 observe(Steward, Wage, Bela, LabourBasis).
+observe(Steward, Foundry, Bela, LabourBasis).
 ? provide(Foundry, Wage, Bela).
 # => TRUE
 pay(Bela, Contribution, Ledgerhouse, SchemeM).

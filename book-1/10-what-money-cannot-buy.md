@@ -71,9 +71,10 @@ withdrawing it. Beneficial control must be disclosed.
 
 Enterprises may petition, testify and publish attributed views. Their
 treasuries are barred from funding candidates or parties and from buying
-independent electoral advocacy. An association that fields candidates remains
-bound by the rule under any label; *How Public Power Is Built* (Chapter 17)
-describes the finding that brings such conduct within the prohibition.
+independent electoral advocacy. An enterprise stays bound by that bar when it
+calls itself a civic association or anything else; *How Public Power Is Built*
+(Chapter 17) describes the finding that brings such conduct within the
+prohibition.
 
 Public, cooperative, commons, mutual, nonprofit, household and private
 provision are all lawful, each without a guaranteed market share, profit,
@@ -151,12 +152,13 @@ legislative source, reporting, audit and disclosure of fiscal risk. Each tier
 acts on its own authority. Public debt leaves the floor ahead of creditors and
 leaves commons duties and constitutional limits intact. Whether a budget
 balances, and how much the public body may owe, are for legislation to decide
-under those conditions; writing a balanced-budget rule or a numeric debt
-ceiling into the constitution is itself prohibited.
+under those conditions; the current text itself bars writing a balanced-budget
+rule or a numeric debt ceiling into the constitution, a bar that lies outside
+the protected core and that an amendment could change.
 
 During budget deadlock, prior authority for essential provision continues
 without creating new spending power. That rule allocates legal
-responsibility.
+responsibility and supplies no funds.
 
 ## Money you can hold in your hand
 

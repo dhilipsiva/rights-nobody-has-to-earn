@@ -16,14 +16,12 @@ duty.
 
 ## A placement report against a rule
 
-The placement marker reads a reported act. The recorded authority for Ruk, and
-for another person held in secure custody, names a secure facility, and the
-record reports no placement for either of them, so the marker is silent about
-both, as it is about Hano. *Where People Are Put* (Chapter 26) supposes a
-report placing Ruk at home. The marker then fires because that report conflicts
-with the authorised placement, even though Ruk is eligible for consideration of
-home confinement. The same report for Hano matches Hano's authorised route and
-leaves the marker silent.
+The placement marker reads a reported act. With no placement reported, it is
+silent about Ruk, about another person held in secure custody and about Hano.
+The report this chapter began with places Ruk at home against an authorised
+secure placement, so the marker fires even though Ruk is eligible for
+consideration of home confinement; the same report for Hano matches Hano's
+authorised route and leaves the marker silent.
 
 This test separates the reported act from a home option or a family entry.
 *Where People Are Put* (Chapter 26) also tests inappropriate secure placement,
@@ -33,7 +31,7 @@ authority. Each is a distinct test, and the home-placement example settles only
 its own. A physical act that nobody reports stays outside the placement alarm's
 reach.
 
-The alarm therefore needs testing as much as the routing rule does. Its place
+The alarm needs testing as much as the routing rule does. Its place
 in the constitution and its name add nothing to its reliability.
 
 ## Evidence of denied contact
@@ -81,7 +79,7 @@ it rests on are recorded.
 Routine custody review is owed with or without a marker. The review body owes
 it to every confined person in the record, Ruk and Hano among them, though the
 rules find none of them isolated. Bela, who is free, is owed a review only once
-a complaint about custody conditions is filed. A person can open a conditions
+Bela files a complaint about custody conditions. A person can open a conditions
 review by filing a complaint, without first obtaining a completed finding or
 the holder's permission. The complaint creates a duty to investigate, and the
 alleged breach remains to be proved.
@@ -107,11 +105,9 @@ Likewise, a vanished protected entry shows a mismatch between recorded
 versions. The comparison treats every missing entry alike, a lawfully retired
 one included, so its report alone leaves an unlawful deletion unproved.
 
-These duties arise kind by kind. Custody renewal requires evidence of
-accessible primary and independent alternate intake, counsel, retained copies
-and filing reconciliation. A pending filing follows the case through renewals
-and under any other name for the case, and only a properly made independent
-decision can end its suspension. Other record challenges keep their specified
+These duties arise kind by kind. Custody renewal and a pending filing follow the
+intake rules of *The One Thing Taken* (Chapter 27). Other record challenges keep
+their specified
 responding offices and duties. Each connection is written as its own rule,
 since a general right to justice leaves them unstated.
 
@@ -139,7 +135,8 @@ declaration, a public plan and interim measures. Failure leaves each office
 with the authority it had and the subject with standing and the floor.
 
 Other cases need different continuity rules. A budget deadlock permits the
-treasury to continue an enumerated set under the last lawful authority, subject
+treasury to continue an enumerated set of existing programmes under the last
+lawful authority, subject
 to expedited court review and independent audit. Its reach ends at that set; a
 new programme or a permanent spending power lies outside it. An office term
 ending during a remedy leaves the remedy owed, and missing or disputed time
@@ -157,13 +154,14 @@ documents.
 Release and scarcity expose the material stakes. Release requires continuity of
 housing, care, documents, education, access to employment and participation,
 without a debt, labour or obedience price. Emergency rationing remains subject
-to the physical-scarcity contract, including its prohibited priority keys, the
+to the scarcity rules, including its prohibited priority keys, the
 minimum wherever usable supply permits it, and a recorded shortfall wherever
 supply falls short. People within the jurisdiction or its effective control
 count in full, however recently they arrived.
 
-These routes assign responsibility and legal limits. Where a required
-connection is missing, their adequacy remains a design question.
+These routes assign responsibility and legal limits; each connection a route
+needs is written as its own rule, and a connection nobody wrote would be a
+design defect rather than an operating one.
 
 ## Withdrawing a defective authority
 
@@ -246,7 +244,7 @@ institution, restores a person or stops a wrong belongs to the second book.
 This is the last chapter whose account is drawn from the rules, where rules and
 recorded facts make claims that can be run, challenged and compared. The
 defects that comparison exposes remain defects until they are repaired or
-adequately resolved. Part V, *The argument*, asks what reason there is to
+adequately defended. Part V, *The argument*, asks what reason there is to
 choose the design, how its evidence bears on that choice, and what costs and
 limits remain.
 

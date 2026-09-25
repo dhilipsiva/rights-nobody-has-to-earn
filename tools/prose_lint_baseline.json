@@ -172,7 +172,7 @@
   },
   "book-1/10-what-money-cannot-buy.md": {
     "negation": 8.8,
-    "jargon": 1.8,
+    "jargon": 1.7,
     "names": 0,
     "disclaimers": 0,
     "banned": 0,
@@ -324,7 +324,7 @@
     "strays": 0
   },
   "book-1/18-the-vote-conviction-does-not-take.md#argument": {
-    "negation": 10.8,
+    "negation": 10.6,
     "jargon": 0.0,
     "names": 0,
     "disclaimers": 0,
@@ -342,7 +342,7 @@
     "strays": 0
   },
   "book-1/19-what-may-be-kept-about-you.md#argument": {
-    "negation": 6.5,
+    "negation": 6.4,
     "jargon": 0.0,
     "names": 0,
     "disclaimers": 0,
@@ -369,7 +369,7 @@
     "strays": 0
   },
   "book-1/21-a-way-to-be-heard.md": {
-    "negation": 10.2,
+    "negation": 10.1,
     "jargon": 1.5,
     "names": 3,
     "disclaimers": 0,
@@ -387,7 +387,7 @@
     "strays": 0
   },
   "book-1/22-changing-the-rules.md": {
-    "negation": 14.9,
+    "negation": 14.8,
     "jargon": 0.6,
     "names": 0,
     "disclaimers": 0,
@@ -423,7 +423,7 @@
     "strays": 0
   },
   "book-1/24-findings-about-people.md": {
-    "negation": 9.1,
+    "negation": 9.0,
     "jargon": 0.3,
     "names": 4,
     "disclaimers": 0,
@@ -522,7 +522,7 @@
     "strays": 0
   },
   "book-1/30-where-this-could-fail.md": {
-    "negation": 15.7,
+    "negation": 15.5,
     "jargon": 0.5,
     "names": 0,
     "disclaimers": 0,
@@ -531,7 +531,7 @@
     "strays": 0
   },
   "book-1/bibliography.md": {
-    "negation": 5.6,
+    "negation": 5.5,
     "jargon": 0.2,
     "names": 0,
     "disclaimers": 0,
@@ -540,8 +540,8 @@
     "strays": 0
   },
   "book-1/method.md": {
-    "negation": 18.2,
-    "jargon": 7.6,
+    "negation": 18.1,
+    "jargon": 7.3,
     "names": 6,
     "disclaimers": 1,
     "banned": 31,
@@ -558,7 +558,7 @@
     "strays": 0
   },
   "book-1/part-2-unprecedented-injustice.md": {
-    "negation": 15.3,
+    "negation": 15.1,
     "jargon": 0.0,
     "names": 0,
     "disclaimers": 0,
@@ -576,7 +576,7 @@
     "strays": 0
   },
   "book-1/part-4-three-to-ten-years.md": {
-    "negation": 19.0,
+    "negation": 18.9,
     "jargon": 0.0,
     "names": 0,
     "disclaimers": 0,
@@ -596,7 +596,7 @@
   "book-1/reference.md": {
     "negation": 12.9,
     "jargon": 0.6,
-    "names": 30,
+    "names": 28,
     "disclaimers": 1,
     "banned": 0,
     "harness": 0,

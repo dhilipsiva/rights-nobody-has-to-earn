@@ -132,7 +132,7 @@ threshold and for one who has passed it unrecorded. Either way the absence is
 no taking: custody and a credibility finding are both absent for Nell, and the
 record is silent on Nell's actual age.
 
-Nell's right to be heard is already hers: the prohibition on a minimum speaking
+Nell already holds the right to be heard: the prohibition on a minimum speaking
 age follows from personhood alone. Participation is wider than the franchise.
 *What May Be Kept About You* (Chapter 19) examines what institutions may record
 about a person, including the evidence on which political rights depend.
@@ -162,19 +162,21 @@ would let whoever assigns the prison choose the electorate.
 
 The strongest alternative makes disenfranchisement part of a sentence, fitted
 to the offence. The United Kingdom, Canada and South Africa each enacted
-broader bans, and the courts that ruled against them left room for this
-narrower one. In *Hirst v United Kingdom (No. 2)* the European Court of Human
+broader bans; in striking them down, the European court and South Africa's left
+room for a narrower ban, while Canada's left open only restrictions on standing
+for office. In *Hirst v United Kingdom (No. 2)* the European Court of Human
 Rights held, by twelve votes to five, that the ban on voting by all convicted
 prisoners in custody violated the Convention as a "general, automatic and
 indiscriminate restriction on a vitally important Convention right", applied
-whatever the sentence or offence; it left the choice of means to the
-State.[^hirst] The Supreme Court of Canada, five judges to four, struck down a
-bar on prisoners serving two years or more and left open whether standing for
-office could be restricted.[^sauve] In *NICRO* the South African court accepted
-that denouncing crime could be a legitimate purpose, and declared a blanket
-exclusion invalid because the government had put wholly inadequate information
-before it.[^nicro] The alternative's best case is that a grave offence against
-a community can justify a bounded loss of a share in governing it.
+whatever the sentence or offence; it
+left the choice of means to the State.[^hirst] The Supreme Court of Canada,
+five judges to four, struck down a bar on prisoners serving two years or more
+and left open whether standing for office could be restricted.[^sauve] In
+*NICRO* the South African court accepted that denouncing crime could be a
+legitimate purpose, and declared a blanket exclusion invalid because the
+government had put wholly inadequate information before it.[^nicro] The
+alternative's best case is that a grave offence against a community can justify
+a bounded loss of a share in governing it.
 
 My rule gives that up. A person convicted of the gravest crime keeps the vote
 and may stand for office, and the people the crime harmed see the offender keep
@@ -187,8 +189,8 @@ I would reconsider if disenfranchisement fitted by a judge to each offence were
 shown to cut reoffending or protect elections while falling evenly across
 groups. I would reconsider the home rule if long confinement left people so cut
 off from their last home that its decisions stopped reaching them, and then
-only toward letting the person, never the custodian, choose the place of
-confinement.
+only toward letting the person, never the custodian, choose whether the place
+of confinement becomes the person's political home.
 
 [^august]: Constitutional Court of South Africa, [*August and Another v
     Electoral Commission and Others*](https://collections.concourt.org.za/handle/20.500.12144/2071),

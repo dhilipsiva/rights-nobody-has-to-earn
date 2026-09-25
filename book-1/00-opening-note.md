@@ -11,7 +11,7 @@ cancelled and its rations were refused. On 28 September 2017 Santoshi, who was
 eleven, died in Simdega district. Her family said she died asking for rice; the
 district administration said she died of malaria.[^santoshi] That dispute is
 unresolved, and this book leaves it so. The order of events is not in dispute:
-a record failed to match, an eligible family's entitlement stopped, and the
+a card was not linked, an eligible family's entitlement stopped, and the
 rations stopped with it.
 
 This book asks what a society must provide for a person who can offer it
@@ -73,7 +73,7 @@ for the records it gives them, which executable tests check, and that its
 choices can be defended against their strongest alternatives, which it argues.
 It does not claim that the society operates or is affordable, that consistency
 makes the rules just, or that any test proves them right. Part V draws the
-arguments together, names what the book contributes, chief among them keeping
+arguments together, names the book's contributions, chief among them keeping
 entitlement, duty, evidence and delivery apart, and ranks where the design
 could fail. The ideas it builds on are credited where they are used, from Henry
 Shue's case for subsistence as a basic right to Amartya Sen's account of hunger
@@ -103,12 +103,12 @@ good, and no independent expert has reviewed the whole design.
 
 **Begin with [Chapter 1: The Child With Nobody](01-the-child-with-nobody.md).**
 No glossary or technical preparation is needed. Read the cases in order through
-Part V. If you want the reasons before the institutional detail, the
-[map of choices](reference.md#the-choices-and-their-arguments) at the back
-leads to them, beside the glossary, the index and the works cited. Continue
-to the method only if you want to see how the rules are run and tested. The current text, the
-constitution itself in numbered plain-language articles, and a companion that
-runs selected cases in your browser are at
+Part V. If you want the reasons before the institutional detail, the [map of
+choices](reference.md#the-choices-and-their-arguments) at the back leads to
+them, beside the glossary, the index and the works cited. Continue to the
+method only if you want to see how the rules are run and tested. The current
+text, the constitution itself in numbered plain-language articles, and a
+companion that runs selected cases in your browser are at
 [dhilipsiva.dev/rights-nobody-has-to-earn](https://dhilipsiva.dev/rights-nobody-has-to-earn/);
 its answers concern the records given to it, not what any society delivered.
 

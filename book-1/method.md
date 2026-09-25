@@ -229,10 +229,11 @@ an accepted alternative acquires no authority in the constitution; each
 experiment is discarded after its check. Two counterfactuals show what the
 refusal rests on: [removing the
 rule](source/counterfactual/no-person-line.pins.nibli) that keeps a prisoner a
-person lets the belief rule load, and [writing the belief entitlement as a
-plain label](source/counterfactual/entitlement-as-plain-label.pins.nibli) makes
-it disappear and lets the same rule load, while the food entitlement, still
-written as an event, keeps its refusal. [Chapter 3's
+person lets a rule confining someone for lacking belief load, and [writing the
+belief entitlement as a plain
+label](source/counterfactual/entitlement-as-plain-label.pins.nibli) makes that
+entitlement disappear and lets the same rule load, while the food entitlement,
+still written as an event, keeps its refusal. [Chapter 3's
 pins](03-what-you-are-owed.pins.nibli) and the [floor
 suite](source/rights-floor.pins.nibli) hold the rest.
 
@@ -241,10 +242,10 @@ suite](source/rights-floor.pins.nibli) hold the rest.
 A contribution record is a base input, so the engine accepts a rule confining
 someone for lacking one; no cycle forms. Two development checks in [the floor
 development tests](../src/authoring/floor_vector_tests.rs) do that work
-instead: one lets a contribution or pay record be read only for its supplement
-or compensation, never under negation, and the other rejects any rule taking a
-delivery conclusion, present or absent, as a premise. Both read the written
-rules, so an equivalent rule in another form can pass them.
+instead: one lets a contribution or compensation record be read only for its
+supplement or compensation, never under negation, and the other rejects any
+rule taking a delivery conclusion, present or absent, as a premise. Both read
+the written rules, so an equivalent rule in another form can pass them.
 
 ## Six ways a fact is kept from a consequence
 
@@ -255,7 +256,7 @@ about the person:
 |---|---|---|
 | Closed inputs | An entry of a kind not admitted, such as a record that someone is rich or dangerous. | `admits`, refused at input; [Chapter 2's pins](02-what-the-record-may-say.pins.nibli). |
 | Conclusions nobody may write | A written custody, ballot or answerability conclusion. | `derived_only`, refused at input; Chapters 2 and 18. |
-| Purpose-bound reads | A contribution or pay record read for anything but its own purpose. | `a_purpose_limited_record_is_read_only_for_its_purpose`. |
+| Purpose-bound reads | A contribution or compensation record read for anything but its own purpose. | `a_purpose_limited_record_is_read_only_for_its_purpose`. |
 | Endpoints nothing reads | A duty, a delivery conclusion or a recorded loss used as a premise. | `a_duty_is_not_an_action_because_nothing_reads_one`; `floor_actualities_have_no_downstream_consumer`. |
 | No confinement from absence | A missing floor condition, or a missing home, family or work entry, used to confine. | The refusal above; `no_confinement_reads_an_absent_home_family_or_work_entry`. |
 | Scope binding | A finding about one subject, case or record lent to another. | Case-bound joins and their wrong-case cases; `scoped_authority_is_not_unary_permanent_answerability`; `global_findings_cannot_lend_effects_to_unqualified_records`. |
@@ -309,13 +310,14 @@ input: they authenticate, publish and deploy nothing.
 
 A query can match its expected answer while the model holds a conflict
 elsewhere, so the runner also asks for a contradiction report wherever a case
-declares one; supplied `person(Ara).` and `~person(Ara).`, its development test
-fails. The engine checks represented constraints, explicit negative assertions,
-arity and equality conflicts, and reports separately any check it could not
-finish; both lists must be empty. It is not a decision procedure for
-unrestricted first-order consistency, and an injustice the model does not
-represent as a conflict does not become one because a scan completed. A refused
-assertion is different again: it never entered the knowledge base.
+declares one. Given `person(Ara).` and `~person(Ara).`, the runner reports a
+contradiction and fails the case, and a development test checks that it does.
+The engine checks represented constraints, explicit negative assertions, arity
+and equality conflicts, and reports separately any check it could not finish;
+both lists must be empty. It is not a decision procedure for unrestricted
+first-order consistency, and an injustice the model does not represent as a
+conflict does not become one because a scan completed. A refused assertion is
+different again: it never entered the knowledge base.
 
 | Outcome | What it says |
 |---|---|
@@ -324,8 +326,8 @@ assertion is different again: it never entered the knowledge base.
 | `UNKNOWN` | The search did not decide the query. |
 | `RESOURCE_EXCEEDED` | A resource bound stopped the search; the verifier counts that as a failure to complete. |
 
-The engine's guarantees document,
-[`GUARANTEES.md` in the Nibli repository](https://github.com/dhilipsiva/nibli/blob/main/GUARANTEES.md),
+The engine's guarantees document, [`GUARANTEES.md` in the Nibli
+repository](https://github.com/dhilipsiva/nibli/blob/main/GUARANTEES.md),
 states its inference contract.
 
 ## What has been checked, and where each check stops
@@ -342,7 +344,7 @@ consequences of the supplied records under the loaded rules, and stops at the
 prose, the truth of the evidence and every question of operation.
 
 **Rules checked by their shape.** Development tests inspect the written rules
-rather than run them: the six constraints above; four checks that every
+rather than run them: four of the six constraints above; four checks that every
 attester records every field of its record, that each field is attested the
 same way across its family, that a single-actor route asks its one actor for
 everything the full route asks, and that both timing witnesses record every

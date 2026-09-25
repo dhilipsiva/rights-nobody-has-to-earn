@@ -23,9 +23,9 @@ that had not come, and their detention continued from one day to the next.
 
 Part IV is about what the design does to a person and how it notices its own
 failures: the protection a disclosure gives, findings about a person's
-credibility, the standing a prisoner keeps, where a confined person is put,
-the one thing a sentence takes, and the alarms that tell an office it has
-broken the rules. Each chapter shows what authority must be current before
+credibility, the standing a prisoner keeps, where a confined person is put, the
+one thing a sentence takes, and the alarms that tell an office it has broken
+the rules. Together the chapters show what authority must be current before
 anyone is held, what survives confinement, and who must answer when the
 authority runs out and the holding goes on.
 

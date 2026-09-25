@@ -35,7 +35,7 @@
 # WHAT FALSE MEANS HERE: a FALSE is pinned only where the KB could have said
 # TRUE, and the comment says what would flip it.
 
-:expect-pins 90
+:expect-pins 93
 
 # Constitutional prohibitions hold for a cast member by name. A prevents
 # conclusion alone is not proof that the engine rejects every prohibited rule.
@@ -197,8 +197,15 @@ promise(Foundry, Wage, Coll).
 
 authorized(Steward, CompensationAttester, Coll).
 observe(Steward, Wage, Coll, LabourBasis).
+observe(Steward, Foundry, Coll, LabourBasis).
 ? provide(Foundry, Wage, Coll).
 # => TRUE
+
+# "An attestation naming one payer concludes no other payer's promise" — a
+# second employer's promise to Coll waits for an attestation naming it.
+promise(Tannery, Wage, Coll).
+? provide(Tannery, Wage, Coll).
+# => FALSE
 
 # "A wage attested is not a prize promised"
 ? provide(Foundry, Prize, Coll).
@@ -207,6 +214,7 @@ observe(Steward, Wage, Coll, LabourBasis).
 promise(Foundry, Incentive, Dunya).
 authorized(Steward, CompensationAttester, Dunya).
 observe(Steward, Metric, Dunya, PerformanceBasis).
+observe(Steward, Foundry, Dunya, PerformanceBasis).
 # "an incentive promised is not concluded by a metric attested"
 ? provide(Foundry, Incentive, Dunya).
 # => FALSE
@@ -226,6 +234,12 @@ observe(Court, CompensationFraud, Coll, LabourBasis).
 
 ? provide(Coll, Restitution, Foundry).
 # => TRUE
+
+# "so a fraud finding on its basis owes restitution to that payer alone"
+? provide(Coll, Restitution, Tannery).
+# => FALSE
+? provide(Tannery, Wage, Coll).
+# => FALSE
 
 # "The floor is not in the sentence" — after every record above, the floor is what it was.
 ? entitled(Adam, event { eats() }).

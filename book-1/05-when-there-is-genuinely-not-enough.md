@@ -4,12 +4,12 @@ An entitlement stays in force when usable supply is too small to meet every
 claim. The constitution therefore needs a way to allocate what is available
 while the unmet part stays owed to the person who goes without.
 
-The chapter follows one indivisible essential power unit and two protected
-claims. One person is waiting for it; another would lose continuing provision
-if it were reassigned. The recorded evidence supports different priorities. A
-reviewed decision can meet every requirement, and the person who goes without
-keeps a claim to provision and repair. The case records a shortage and
-comparative evidence.
+The chapter follows one indivisible unit of an essential power supply and two
+protected claims. One person is waiting for it; another would lose continuing
+provision if it were reassigned. The recorded evidence supports different
+priorities. A reviewed decision can meet every requirement, and the person who
+goes without keeps a claim to provision and repair. The case records a shortage
+and comparative evidence.
 
 The ground for using this route matters. The one admissible ground is a
 physical shortage, shown for this resource and these people. A budget choice,
@@ -17,8 +17,8 @@ exclusion by price, administrative delay, artificial withholding, monopoly,
 provider failure and refusal to procure are named as false scarcity, and a
 finding that any of them lies behind a claimed shortage withholds the scarcity
 finding it targets. Suppose a separate finding shows that the claimed shortage
-was a budget choice. The scarcity finding, allocation and shortfall conclusions
-then cease to follow. The person's floor entitlement remains.
+arose from a refusal to procure. The scarcity finding, allocation and shortfall
+conclusions then cease to follow. The person's floor entitlement remains.
 
 ## What has to be true before the word may be used
 
@@ -162,13 +162,13 @@ than a priority of the reviewer's own.
 ## The child with nobody
 
 The scarcity sequence leaves Nell's personhood and food debt intact, without
-confinement. Whether Nell belonged to the affected population stays open: her
-one-line record holds nothing that places her in it or outside it.
+confinement. Whether Nell belonged to the affected population stays open: the
+one-line record holds nothing that places the child in it or outside it.
 
 Family status, documentation, nationality, citizenship, immigration status and
 manner of arrival are forbidden priority keys. An allocation that used any of
 them to place Nell's claim behind another would fail under the rules, so the
-entries her record lacks weigh nothing against her there.
+entries the record lacks weigh nothing against the child there.
 
 ## What this cannot settle
 

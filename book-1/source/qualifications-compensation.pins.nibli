@@ -13,7 +13,7 @@
 #
 # Nothing here establishes competence, adequacy, payment, or repayment. Every
 # probe fact below is written by this file, not by the world.
-:expect-pins 42
+:expect-pins 49
 
 # ── The family ships dormant ────────────────────────────────────────────────
 ? grant(Guild, Welding, Adam).
@@ -47,11 +47,13 @@ observe(Club, Welding, Sol, CertificationScope).
 # => FALSE
 
 # ── Compensation derives from a promise and an independent attestation ────────
+# The attester records the kind and the payer on one stated basis.
 promise(Firm, Wage, Tam).
 ? provide(Firm, Wage, Tam).
 # => FALSE
 authorized(Arbiter, CompensationAttester, Tam).
 observe(Arbiter, Wage, Tam, LabourBasis).
+observe(Arbiter, Firm, Tam, LabourBasis).
 ? provide(Firm, Wage, Tam).
 # => TRUE
 # The kinds are distinct constants: a wage attested is not a prize promised.
@@ -61,24 +63,61 @@ promise(Fund, Prize, Tam).
 ? provide(Fund, Prize, Tam).
 # => FALSE
 observe(Arbiter, Prize, Tam, CompetitionBasis).
+observe(Arbiter, Fund, Tam, CompetitionBasis).
 ? provide(Fund, Prize, Tam).
 # => TRUE
 # The payer may not attest its own promise.
 promise(Firm, Wage, Ugo).
 authorized(Firm, CompensationAttester, Ugo).
 observe(Firm, Wage, Ugo, LabourBasis).
+observe(Firm, Firm, Ugo, LabourBasis).
 ? provide(Firm, Wage, Ugo).
 # => FALSE
 # An attestation with no promise derives nothing.
 authorized(Arbiter, CompensationAttester, Vin).
 observe(Arbiter, Grant, Vin, ResearchBasis).
+observe(Arbiter, Fund, Vin, ResearchBasis).
 ? provide(Fund, Grant, Vin).
 # => FALSE
 # An attester authorised for one person cannot attest for another.
 promise(Fund, Grant, Wen).
 observe(Arbiter, Grant, Wen, ResearchBasis).
+observe(Arbiter, Fund, Wen, ResearchBasis).
 ? provide(Fund, Grant, Wen).
 # => FALSE
+
+# ── An attestation names its payer ───────────────────────────────────────────
+# Two payers promise one person a wage. The attestation names one of them on
+# its basis, so that payer's wage follows and the other's waits for its own.
+promise(Firm, Wage, Brin).
+promise(Mill, Wage, Brin).
+authorized(Arbiter, CompensationAttester, Brin).
+observe(Arbiter, Wage, Brin, LabourBasis).
+observe(Arbiter, Firm, Brin, LabourBasis).
+? provide(Firm, Wage, Brin).
+# => TRUE
+? provide(Mill, Wage, Brin).
+# => FALSE
+# Naming the other payer on another basis borrows nothing from this one.
+observe(Arbiter, Mill, Brin, OtherBasis).
+? provide(Mill, Wage, Brin).
+# => FALSE
+# A fraud finding on the basis owes restitution to the payer attested there.
+observe(Court, CompensationFraud, Brin, LabourBasis).
+? provide(Brin, Restitution, Firm).
+# => TRUE
+? provide(Brin, Restitution, Mill).
+# => FALSE
+# The recipient, authorised to attest their own pay, may be the attester; the
+# record names the kind and the payer on one basis before anything follows.
+promise(Firm, Wage, Cato).
+authorized(Cato, CompensationAttester, Cato).
+observe(Cato, Wage, Cato, LabourBasis).
+? provide(Firm, Wage, Cato).
+# => FALSE
+observe(Cato, Firm, Cato, LabourBasis).
+? provide(Firm, Wage, Cato).
+# => TRUE
 
 # ── Metric gaming ────────────────────────────────────────────────────────────
 # An incentive was promised; a metric was attested. The kinds differ, so
@@ -86,6 +125,7 @@ observe(Arbiter, Grant, Wen, ResearchBasis).
 promise(Firm, Incentive, Xan).
 authorized(Assessor, CompensationAttester, Xan).
 observe(Assessor, Metric, Xan, PerformanceBasis).
+observe(Assessor, Firm, Xan, PerformanceBasis).
 ? provide(Firm, Incentive, Xan).
 # => FALSE
 observe(Assessor, Incentive, Xan, PerformanceBasis).
@@ -112,6 +152,7 @@ observe(Guild, Welding, Zia, CertificationScope).
 promise(Firm, Wage, Zia).
 authorized(Arbiter, CompensationAttester, Zia).
 observe(Arbiter, Wage, Zia, LabourBasis).
+observe(Arbiter, Firm, Zia, LabourBasis).
 ? grant(Guild, Welding, Zia).
 # => TRUE
 ? provide(Firm, Wage, Zia).
@@ -139,6 +180,7 @@ person(Nul).
 promise(Firm, Wage, Yul).
 authorized(Arbiter, CompensationAttester, Yul).
 observe(Arbiter, Wage, Yul, LabourBasis).
+observe(Arbiter, Firm, Yul, LabourBasis).
 ? provide(Yul, Restitution, Firm).
 # => FALSE
 observe(Court, CompensationFraud, Yul, LabourBasis).
@@ -150,6 +192,7 @@ observe(Court, CompensationFraud, Yul, LabourBasis).
 promise(Firm, Wage, Ada).
 authorized(Arbiter, CompensationAttester, Ada).
 observe(Arbiter, Wage, Ada, LabourBasis).
+observe(Arbiter, Firm, Ada, LabourBasis).
 observe(Court, CompensationFraud, Ada, OtherBasis).
 ? provide(Firm, Wage, Ada).
 # => TRUE

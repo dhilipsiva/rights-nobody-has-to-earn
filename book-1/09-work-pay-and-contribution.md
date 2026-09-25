@@ -27,11 +27,11 @@ enterprise owes the same minimum as a private employer. Every ownership form is
 lawful, and the design promises none of them a profit, rescue, immunity or
 monopoly.
 
-Employment in custody must be voluntary and come with ordinary labour protection.
-Refusing it leaves the floor in place, and earning shortens no sentence. These
-prohibitions, with the others in this chapter, follow from personhood alone:
-the rules conclude each of them for Adam, who is held in custody and has no
-employment entry.
+Employment in custody must be voluntary and come with ordinary labour
+protection. Refusing it leaves the floor in place, and earning shortens no
+sentence. These prohibitions, with the others in this chapter, follow from
+personhood alone: the rules conclude each of them for Adam, who is held in
+custody and has no employment entry.
 
 ## Acting together
 
@@ -42,8 +42,9 @@ bargaining parties to arrange continuity. Conscripting a named worker,
 criminalising one person's refusal to work and taking that person's floor are
 all prohibited, and so is a blanket ban on striking across a sector.
 
-The continuity power requires current authority and a standard that names no
-worker and requires a bargaining substitute. The duty then lands on the
+The continuity power requires current authority, a standard that conscripts no
+named worker, and an effective substitute for the strike in bargaining or
+adjudication. The duty then lands on the
 provider or the parties. It follows only with current authority, one
 consistent record of the version in force and the right duty named. Protecting
 a service therefore gives no authority to compel whichever worker happens to
@@ -77,8 +78,11 @@ connection: a payer's obligation to a recipient on a stated basis.
 
 In the wage case an employer is the payer and Coll the recipient. The
 employer's promise alone yields no compensation. A separate authorised
-attester, who must be someone other than the payer, attests Coll's wage on the
-stated labour basis, and the compensation conclusion then follows.
+attester, who must be someone other than the payer, attests Coll's wage and
+names the employer on the stated labour basis, and the compensation conclusion
+then follows. An attestation naming one payer concludes no other payer's
+promise, so a fraud finding on its basis owes restitution to that payer
+alone.
 
 Compensation above the floor uses one relation with the kind named in it:
 wage, profit, return, grant, prize, subsidy or incentive. The kinds must match:
@@ -89,7 +93,8 @@ matching attestation. The rules compare records, so a target can still be
 gamed, and an attester's matching statement can still be false.
 
 Compensation sits apart from standing, the floor, the vote and liberty. A
-certificate or a wage belongs to its holder and passes to no child. A personal
+certificate or a wage is concluded for the person its records name, and for
+nobody else through kinship. A personal
 credibility finding, by itself, leaves compensation to its own rules.
 
 The fraud test returns to Coll's wage. A court finding of compensation fraud by
@@ -125,7 +130,7 @@ floor, the vote and liberty follow without it, and a general judgment of
 someone's contribution is no substitute for the record. A person without any
 contribution history keeps the floor in full.
 
-The computer would accept a rule confining someone for lacking a contribution
+The engine loads a rule confining someone for lacking a contribution
 record; acceptance shows only that a rule can run. A separate development test
 of the constitution's written rules holds contribution records to their
 purpose. They may support a supplement and nothing else, their absence may
@@ -205,8 +210,8 @@ certification, compensation and contribution-based supplements. A teaching or
 employment entry stands in for none of the records they require, a wage is
 silent about competence, and a certificate is silent about pay.
 
-A payer's promise needs an independent authorised attestation on the matching
-basis. A supplement needs a contribution history and an independently
+A payer's promise needs an independent authorised attestation naming that
+payer and the kind on one basis. A supplement needs a contribution history and an independently
 adjudicated event under the same scheme. These claims identify what is owed and
 why, and each stays confined to its own consequence. Each follows only from
 evidence added for its case: the ordinary cast's record lacks that evidence,
@@ -322,10 +327,10 @@ My rule costs what reciprocity would collect. Some people able to work will
 choose otherwise and keep the floor, whoever funds the floor pays for them, and
 the design gives up whatever push into work a sanction brings. I would
 reconsider on evidence that a work condition with a hardship exception moves
-people into lasting work without the debt and ill health the York study
-recorded, and without the discretion the auditors found; and I would narrow the
-control test if written terms proved to track who controls the work as
-reliably as the facts do.
+people into lasting work without the debt and ill health the Welfare
+Conditionality project recorded, and without the discretion the auditors found;
+and I would narrow the control test if written terms proved to track who
+controls the work as reliably as the facts do.
 
 [^c029]: International Labour Organization, [Forced Labour Convention, 1930
     (No. 29)](https://www.ilo.org/media/21026/download), adopted 28 June 1930,

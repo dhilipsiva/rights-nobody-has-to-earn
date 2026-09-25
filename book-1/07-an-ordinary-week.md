@@ -41,11 +41,12 @@ Suppose an employer promises Selin a wage. The promise alone concludes
 nothing. Suppose next that the employer, authorised to attest pay for Selin,
 attests its own promise. That concludes nothing either, because the rule asks
 for an attester other than the payer. Suppose, last, that a separate pay office
-authorised for Selin attests the same wage on the same stated basis. The rules
-now conclude the wage the employer promised Selin.
+authorised for Selin attests the same wage, naming the employer, on the same
+stated basis. The rules now conclude the wage the employer promised Selin.
 
-The attestation covers only the kind of pay it names, here a wage. The floor
-and the ballot were concluded before the employer appeared in the record.
+The attestation covers only the kind of pay and the payer it names, here this
+employer's wage. The floor and the ballot were concluded before the employer
+appeared in the record.
 
 ## A rented home
 
@@ -87,7 +88,7 @@ now conclude that learning reached Teo. The route reads the teaching and the
 hearing, and Selin's own learning stays where it was.
 
 Suppose, too, that the record names Selin as Teo's parent. Teo's standing,
-the learning owed and received, and the protections above were all concluded
+the learning owed and concluded, and the protections above all followed
 before that entry was written.
 
 ## Election day
@@ -140,12 +141,13 @@ the start, and what followed from the first entries still holds: Selin is
 a person, is owed the floor and holds the ballot.
 
 That lightness has a price, and it falls on whoever needs the rules to see
-something. A wage attested only by the employer stays unconcluded, and so does
-care attested only by the clinic; Selin bears both until someone independent
-writes. A request filed with an office lacking authority to receive it waits
-until that authority is recorded. An officer who holds only an identification
-lacks a search under the record, and whoever that search might have protected
-bears the cost of the record it still lacks.
+something. A wage attested only by the employer stays unconcluded until another
+attester authorised for Selin records it, and care attested only by the clinic
+waits for a witness authorised for Selin; Selin bears both waits. A request
+filed with an office lacking authority to receive it waits until that authority
+is recorded. An officer who holds only an identification lacks a search under
+the record, and whoever that search might have protected bears the cost of the
+record it still lacks.
 
 ## What this cannot settle
 

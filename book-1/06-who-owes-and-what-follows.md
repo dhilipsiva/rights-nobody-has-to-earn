@@ -22,9 +22,10 @@ reasons are unsupported withdraws that allocation's authority. The genuine
 shortage and the claimant's repair route survive. A defect in the decision
 leaves every duty owed to the person still waiting.
 
-A finding reaches an independently named responding office and produces an action duty
-for the specified kind of case. It is not enough that some body somewhere is
-answerable: the finding, source, scope and recipient must match the route.
+A finding is addressed to an independently named responding office and places on
+it an action duty for the specified kind of case. It is not enough that some
+body somewhere is answerable: the finding, source, scope and recipient must
+match the route.
 
 A missed response needs its own evidence. Silence does not approve an act,
 renew an expired power or prove a case against the claimant. A positively
@@ -70,15 +71,10 @@ The chapter's cases show a duty of each kind. Each has a bearer, a function, a
 jurisdiction and a scope given by a current lawful source. A public body holds
 the public tasks its source assigns to it, and those alone.
 
-The floor's own duties are divided the same way, as Chapter 3 sets out. The
-State owes every item of the floor to every person. The common tier finances
-the floor, equalises between regions, sets its minimum standards and backstops
-it for every person, on personhood alone. A region owes provision, and a
-locality reach and delivery, where a witness authorised for the person records
-the person as present there. When a source and a separate independent
-reviewer, both distinct from the failed body, certify that a region or
-locality has failed, the publicly answerable tier they name must assume
-continuity, and the failed body's own duty stands.
+The floor's own duties are divided the same way, as Chapter 3 sets out: the
+common tier finances and backstops the floor, a region provides and a locality
+delivers, and a certified failure passes continuity to the publicly answerable
+tier the certification names while the failed body's own duty stands.
 
 ## A duty cannot be contracted away
 
@@ -125,7 +121,7 @@ consequence needs its own lawful source and process.
 
 Duties to a person, a protected common, an office or under a voluntary promise
 stand level with one another until a current priority rule and independently
-reviewed conflict evidence displace one by another. Missing or conflicting
+reviewed conflict evidence rank one above another. Missing or conflicting
 priority evidence decides nothing. A protection the constitution makes
 non-waivable survives any voluntary promise.
 
@@ -188,8 +184,8 @@ an uninvolved alternate.
 
 An environmental or animal finding needs its own current basis, jurisdiction,
 scope, authorised evidence, independent review and end. A defect found
-independently reaches a named responding office even if the original actor
-withholds its record. Conflicting decisive evidence withholds reliance; an
+independently places a duty on a named responding office even if the original
+actor withholds its record. Conflicting decisive evidence withholds reliance; an
 unauthorised assertion cannot veto a sound record.
 
 Urgent protection comes before the paperwork. In the chapter's example, an
@@ -219,12 +215,12 @@ the person it protects.
 
 Anybody may also record that nobody appears to have begun assistance for
 someone. Suppose a stranger to Nell, a bystander without a seat, makes such an
-entry about her. That entry gives a separate rights office a duty to review
-whether assistance was initiated. It concludes nothing about Nell's capacity
-or conduct and nothing adverse against her, and her floor stays intact. The
-same entry records an encounter, so it also gives standing to the person it
-names, even someone this report alone has entered, and the review duty reaches
-them too.
+entry about the child. That entry gives a separate rights office a duty to
+review whether assistance was initiated. It concludes nothing about Nell's
+capacity or conduct and nothing adverse against the child, whose floor stays
+intact. The same entry records an encounter, so it also gives standing to the
+person it names, even someone this report alone has entered, and the review
+duty reaches them too.
 
 The reviewed appointment described in the chapter on roles provides a more
 specific route: a named trigger, a representative for one matter, a receipt
@@ -239,10 +235,10 @@ a different route. Scale is handled through a certified finding about the
 failing tier; the rules count nothing and find nothing about any person.
 
 A source and a separate independent reviewer, both distinct from the failing
-tier, must record the same publicly answerable tier. The Constitutional Court
-then owes a decision on whether the pattern is an unconstitutional state of
-affairs, and a plan waits for that decision. The plan duty follows only from a
-declaration on a certified pattern.
+tier, must certify the same publicly answerable tier as failing. The
+Constitutional Court then owes a decision on whether the pattern is an
+unconstitutional state of affairs, and a plan waits for that decision. The plan
+duty follows only from a declaration on a certified pattern.
 
 A declaration obliges the People's Assembly to adopt a public plan with reasons,
 deadlines and an end fixed by its source. The failing tier must implement it,
@@ -275,7 +271,8 @@ and both duties remain owed.
 The region fails. An auditor and an independent reviewer, both separate from
 the region, certify the failure and name the common tier, which now owes
 continuity while the region's own duty stands. When the failure is general, a
-certified pattern in Juno's region reaches the Constitutional Court, whose
+certified pattern in Juno's region obliges the Constitutional Court to decide.
+Suppose the Court declares an unconstitutional state of affairs: that
 declaration obliges the Assembly to adopt a public plan and the region to carry
 it out. Once integrity and audit and a reviewer certify the Assembly's
 nonresponse, the Court owes interim measures that secure the minimum, and the
@@ -297,8 +294,8 @@ staffing, funding, capacity and facilities that make these routes available,
 belong to the second book.
 
 These public responsibilities serve a life beyond claiming and receiving.
-The next part begins with what people may do without first asking an office
-for permission.
+The next part follows a person through an ordinary week, and then what people
+may do without first asking an office for permission.
 
 *Run it:* the companion runs this chapter's cases on your own device, at
 [dhilipsiva.dev/rights-nobody-has-to-earn/cases](https://dhilipsiva.dev/rights-nobody-has-to-earn/cases/#chapter-6).

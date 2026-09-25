@@ -219,7 +219,8 @@ and this reference material follow them.
 - **Bodily safety:** freedom from violence and threats to the person; a floor
   item guaranteed as protection rather than shown by a receipt.
 - **Material security:** the essential goods a person needs beyond food and
-  shelter; a floor item whose arrival a recipient-side receipt can show.
+  shelter; a floor item whose delivery can be concluded from a receipt and an
+  independent witness.
 - **Protected core:** standing, the floor and other specified human rights,
   commons and direct animal protections that lawful constitutional amendment
   must preserve. It does not include every present institution.
@@ -238,7 +239,8 @@ and this reference material follow them.
   for a function. No other entitlement or permission in the formal record
   depends on it; it is not a licence.
 - **Compensation record:** a promised wage, profit, return, grant, prize, subsidy
-  or incentive. A payment conclusion also needs independent attestation; neither
+  or incentive. A compensation conclusion also needs an attestation by someone
+  other than the payer, naming the payer and the kind on one basis; neither
   entry states an amount.
 - **Public-scale finding:** a finding that one private function carries public
   duties on a named constitutional ground. It does not bind every activity of
@@ -248,8 +250,9 @@ and this reference material follow them.
   not a ground.
 - **Shield:** protection against conviction-based imprisonment following an
   exposure of authority, while no deceit finding in force applies to that
-  exposure. An unrelated case requires a finding by authorised reviewers whose
-  eligibility is positively shown. An actual conflict blocks the affected
+  exposure. It does not reach a case whose two timing witnesses both record that
+  the disclosure came after that case's charge. An unrelated case requires a
+  finding by authorised reviewers whose eligibility is positively shown. An actual conflict blocks the affected
   decision; merely naming a reviewer does not.
 - **Signing restriction:** a credibility finding in force prevents its subject's
   signature from counting toward a new credibility finding. Other offices are
@@ -306,12 +309,11 @@ and this reference material follow them.
 ### Principal named cases
 
 The names identify formal test cases, not interviews or biographies. Nell,
-Hano, Ruk, Bela, Cira, Marisol, Esa, Adam, Ivo, Kel, Gia, Wren, Iris, Tove and
-Mael recur across chapters; every other name appears only in its home chapter,
-the one listed for it here. A fact added in one test is stated there and does
-not become a life history that follows the name into the next. Each chapter
-states the evidence relevant there. This index gives the principal roles for
-finding a case again.
+Hano, Ruk, Bela, Cira, Esa, Adam, Ivo, Kel and Mael recur across chapters;
+every other name appears only in its home chapter, the one listed for it here.
+A fact added in one test is stated there and does not become a life history
+that follows the name into the next. Each chapter states the evidence relevant
+there. This index gives the principal roles for finding a case again.
 
 | Case and roles | Question | Return to |
 |---|---|---|
@@ -445,10 +447,11 @@ process, core liberties, the commons, the animal core, the absolute
 prohibitions and an Assembly and Court able to sit, is beyond amendment. The
 rest of the constitution changes only with two-thirds of the full Assembly and
 more affirmative than negative valid referendum votes, with regional approvals
-where the federal settlement is directly affected (Chapter 22). The rules distinguish an
-authorised decision from its certified result, and both from publication and
-selection into force. Independent review and peaceful change remain necessary.
-No arrow proves that an election was run or that its recorded result is true.
+where the federal settlement is directly affected (Chapter 22). The rules
+distinguish an authorised decision from its certified result, and both from
+publication and selection into force. Independent review and peaceful change
+remain necessary. No arrow proves that an election was run or that its recorded
+result is true.
 
 ### Six ways a fact is kept from a consequence
 
@@ -489,7 +492,7 @@ optional method. A common term lists the chapters that use it most.
 - accommodation: 2, 5, 6, 11, 13, 15, 21, 27
 - Adam: 2, 8, 9, 10, 11, 26, 27, method
 - adulthood: 1, 2, 7, 9, 14, 15, 18, 28
-- advocate for the person: 6, 12, 14, 17
+- advocate for the person: 6, 12, 14, 17, 30
 - alternate, independent: 6, 14, 15, 19
 - amendment: 13, Part III case, 17, 18, 22, 29, method
 - Anderson, Elizabeth: 29
@@ -511,27 +514,28 @@ optional method. A common term lists the chapters that use it most.
 ### C
 
 - care: 3, 4, 7, 9, 13, 14, 27, 29
-- child with nobody: opening, 5, 29
+- child with nobody: opening, 1, 5, 29
 - childcare-benefits affair: 2
 - Cira: 9, 11, 14, 24
 - Civic President: 16, 17
-- common tier: 3, 4, 6, 10, 17, 30
+- common tier: 3, 4, 6, 10, 16, 17, 30
 - commons: 10, 12, 13, 17, 29
 - company: 1, 3, 4, 8, 25, 28
 - compensation: 9, 10, 20, method
-- competence certificate: 4, 9, 22, 23, 24, method
+- competence certificate: 9, method
 - confinement: 18, 21, 23, 25, 26, 27, 28, 29
-- Constitutional Court: 6, 9, 17, 20, 22
+- Constitutional Court: Part I case, 6, 17, 20, 22
 - continuity: 5, 6, 10, 12, 14, 17, 28, 29
 - contradiction check: method
 - contribution: 6, 9, 10, 22, 29, method
 - correction: 5, 6, 10, 14, 15, 19, 28, 29
-- credibility finding: 2, 9, 11, 16, 18, 22, 23, 24
+- credibility finding: 2, 9, 11, 16, 18, 23, 24, 29
 - custody: 18, 21, 25, 26, 27, 28, 29, method
-- custody authorisation: 10, 26, 27, method
+- custody authorisation: 10, 25, 26, 27, method
 
 ### D
 
+- Dara: 23
 - delivery: opening, 1, 3, 4, 6, 7, 29, method
 - disclosure: 17, 23, 24, 27
 - discrimination: 11, 28
@@ -539,22 +543,24 @@ optional method. A common term lists the chapters that use it most.
 ### E
 
 - ecology: 3, 12, 13, 15, 29, 30
+- Edo: 24
 - emergency: 5, 10, Part III case, 17, 20
 - entitlement: opening, 1, 3, 5, 6, 18, 29, method
 - equality: 10, 11, 13, 17, 29
 - Esa: 2, 14, 16, 18
 - eviction: 6, 7, 10, 18, 26, 29
-- Executive Council: 16, 17
+- Executive Council: 16, 17, 20
 - expression: 3, 4, 8, 18, 25
 
 ### F
 
 - family: opening, Part I case, 1, 2, 5, 14, 26, method
+- Faro: 23
 - first contact: opening, 1, 2, 6, 14, 25, 30
 - floor: 1, 3, 6, 9, 10, 25, 29, 30
 - food: 1, 3, 4, 6, 9, 13, 25, method
 - free movement: 6, 7, 9, 15, 18, 24, 25, 27
-- future conditions: 12
+- future conditions: 3, 5, 12, 13
 - Future Conditions Guardian: 12, 13
 
 ### G
@@ -569,23 +575,25 @@ optional method. A common term lists the chapters that use it most.
 ### I
 
 - initiation duty: 6, 14, 29
-- interpretation: 14, 15, 21, 27, 30, method
 - Iris: 16
 - Ivo: 25, 27
 
 ### J
 
+- Jala: 27
 - Juno: 6
 
 ### K
 
 - Kel: 21, 23, 26, 27
 - Kesavananda Bharati: 22
+- Koa: 16
 - Kumari, Santoshi: opening
 
 ### L
 
 - learning: 1, 4, 7, 8, 9, 14, 27
+- Lior: 23
 - locality: 3, 4, 6, 17, 30
 - lottery: 5, 29
 
@@ -593,7 +601,7 @@ optional method. A common term lists the chapters that use it most.
 
 - Mael: 16, 24
 - Marisol: 4
-- material security: 1, 3, 4, 7, 21, 25
+- material security: opening, 1, 3, 4, 7, 21, 25, 27
 - membership: 8, 15, 17, 18, 27, 28
 
 ### N
@@ -605,6 +613,7 @@ optional method. A common term lists the chapters that use it most.
 
 ### O
 
+- Ori: 1
 - Ostrom, Elinor: 29
 
 ### P
@@ -618,14 +627,14 @@ optional method. A common term lists the chapters that use it most.
 - prisoner: opening, 2, 18, Part IV case, 25, 28, 29, method
 - privacy: 3, 7, 13, 14, 27
 - property: 9, 10, 12, 13, 14, 20, 27
-- protected core: 11, 22
+- protected core: 10, 11, 22
 - public finance: 2, 5, 6, 10, 17, 28, 29, 30
 
 ### R
 
-- recall: 16, 17, 23, 24, Part V case, 29
+- recall: 16, 17, 23, 24, 29
 - receipt: 1, 3, 4, 6, 7, 25, 26, 27
-- recognition status: 9, 24, 27
+- recognition status: 5, 9, 20, 22, 24, 26, 27, method
 - region: 3, 4, 6, 10, 17, 20
 - Regions Council: 16, 17, 20, 22
 - release: opening, 1, 19, 25, 26, 27, 28, 29
@@ -639,15 +648,16 @@ optional method. A common term lists the chapters that use it most.
 ### S
 
 - scarcity: 5, 6, 12, 28, 29, 30
-- search: 7, 19, 21, 27, method
-- secure placement: 26, 27, 28
+- search: 7, 19, 29
+- secure placement: 2, 26, 27, 28
 - Selin: 7
 - Sen, Amartya: opening, 5, 29
 - severity: 2, 13, 22, 25, 26, 27, 29
 - shelter: 1, 3, 4, 7, 13, 25, 26, 27
 - shield: 2, 3, 16, 23, 24, 29, method
 - Shue, Henry: opening, 3, 29
-- signing restriction: 23
+- signing restriction: 23, 24
+- single-actor route: 13
 - standing: 1, 2, 6, 9, 11, 25, 28, 29
 - subsidiarity: 17
 - supplement: 2, 9, 24, 29, method
@@ -656,6 +666,7 @@ optional method. A common term lists the chapters that use it most.
 
 ### T
 
+- Teo: 7
 - Tove: 16
 
 ### U
@@ -664,12 +675,12 @@ optional method. A common term lists the chapters that use it most.
 
 ### V
 
-- versions of the record: 2, 9, 16, 22, 24, 28, method
+- versions of the record: 2, 9, 16, 22, 24, 28, 30, method
 
 ### W
 
 - wage: 7, 9, 24, 29
-- witness: 3, 4, 6, 7, 14, 23, 24, method
+- witness: 3, 4, 7, 14, 23, 24, 28, method
 - work: 2, 3, 6, 7, 9, 26, 27, 29
 
 ### Z

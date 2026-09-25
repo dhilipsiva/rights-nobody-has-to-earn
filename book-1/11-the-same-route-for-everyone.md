@@ -151,9 +151,9 @@ supporters, qualified associations and the independent rights advocate may
 initiate review. A request creates the responding office's duty without the
 acting body's permission, and leaves the claim itself to be decided.
 
-A positive finding that the deadline passed without action transfers the duty
-to a declared alternate and escalates it to the court. Silence leaves the
-challenged conduct unapproved and accommodation running.
+A certified finding that the responding office did not answer transfers the
+duty to a declared alternate and escalates it to the court. Silence approves
+nothing.
 
 Advocacy, audit, adjudication, execution and final review remain separate.
 Ordinary courts give case-specific relief; the Constitutional Court alone gives
@@ -166,7 +166,7 @@ region and cross-boundary arrangement.
 The design's own distinctions face the same limits. A particular consequence
 needs the finding that justifies it, and family or home status, a maturity
 score, conviction, custody, official status, placement, a credibility finding
-or a qualification is no substitute. Recognition allocates nothing.
+or a qualification is no substitute.
 
 These prohibitions leave the adequacy of every other rule to be shown on its
 own terms. The later chapters show what each distinction does: which facts

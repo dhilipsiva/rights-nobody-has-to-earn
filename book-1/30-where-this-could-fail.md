@@ -8,8 +8,9 @@ a fix would take.
 
 The ranking is an argument, and I give its reasons rather than a score. Two
 considerations order it: how much of the design fails if this does, and how
-little the rules themselves can do to catch it. The first five are failures of
-the constitution's own machinery, which a better design could reduce. The last
+little the rules themselves can do to catch it. The first five turn on
+the constitution's own machinery, though several can be fixed only through
+operation. The last
 is of a different kind. It asks whether the resources exist, a question this
 book cannot test, and it comes last so that the other five are not mistaken
 for the whole risk.
@@ -115,14 +116,15 @@ make the wait longer and the capture no harder.
 ## Procedure is too slow and too costly
 
 Separated functions, attesters and review take time, and the time falls on
-someone. This ranks fourth because the design keeps the floor and interim
-protection running during the wait, so slowness costs time and cost rather than
-the minimum itself.
+someone. This ranks fourth because the floor's debts and the duty of interim
+protection stay in force during the wait, so slowness costs time and money
+rather than the minimum itself.
 
 The failure would show as long waits between a claim and a decision, people
 abandoning claims part way, the cost of producing evidence landing on the
-claimant, and interim protection that arrives after the harm it was meant to
-prevent.
+claimant, as when a wage the employer alone attests waits because nobody else
+is authorised to attest the worker's pay, and interim protection that arrives
+after the harm it was meant to prevent.
 
 The design lets help take effect on the record of the one actor who gives it,
 with prompt review that can withdraw it, while adverse acts keep their full
@@ -144,7 +146,7 @@ Every conclusion is only as true as its inputs. Records can be omitted,
 forged or never made, witnesses can attest falsely, and a person can live
 unrecorded. This ranks fifth because the design already assumes inputs may be
 false and routes much of its protection around them: the floor needs no record
-beyond personhood, and any encounter gives that.
+beyond personhood, and any recorded encounter gives that.
 
 The failure would show as people turned away because no record found them,
 fabricated receipts closing debts, entries missing between versions of the

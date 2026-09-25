@@ -19,10 +19,12 @@ the labelled opening note, Part V's argument and evidence, and the optional
 method part, Book 1's claims derive from that constitution. The reader chapters
 remain jargon-free. Generated reports and prose do not override the formal source.
 
-**Ratified 2026-09-24 and implemented (items 53–60):** each derived chapter
+**Ratified 2026-09-24 and implemented (items 53–65):** each derived chapter
 also closes with one labelled argument section, a documented case opens the
 book and each Part, and Part V is a synthesis followed by *Where This Could
-Fail* (D2, D3 and D7 of *The revision rulings D1–D9* below).
+Fail* (D2, D3 and D7 of *The revision rulings D1–D9* below). The constitution
+is published as numbered plain-language articles in the companion (D4), and
+item 65's fresh read closed the revision on 2026-09-25.
 
 Book 2 owns operation and transition within a declared reference envelope:
 staffing, costs, resources, technology, workflows, capacity, and empirical
@@ -132,6 +134,93 @@ reinstate the retired tooling or workflow.
 
 Grouped by kind. Dates in each heading are the ratification dates; a ruling
 that was later implemented or narrowed carries that supersession inline.
+
+### Item 65 — the revision read fresh, verified and submitted, 2026-09-25
+
+All 40 ordered inputs were read in sequence after items 34–64, in five passes
+(one for each Part with its opener, one for Part V and the back matter), each
+checking suspicious claims against the pins, the constitution, the registry
+and the measurement records. `reviews/2026-09-25-revision-review.md` rates the
+manuscript 8/10 and publisher readiness 7.5/10, with separate judgments and a
+rating for every input. It is an AI-assisted judgment within the project, not
+an independent review. Every material finding was confirmed against the text,
+its pins or the source before anything changed.
+
+The corrections are listed in the review. Sentences the source contradicts
+were corrected: Chapter 25's release entry that gave free movement, and Part
+V's custody lapse offered as the answer to undertrial detention, among nine.
+Arrival verbs and overclaims became duties and conditions, and "solely"
+returned twice to the animal core. The sources are stated more exactly: the
+Mandela Rules' exception, *Sauvé* beside *Hirst* and *NICRO*, Oostenberg, a
+ration card cancelled for not being linked, and Gelman and Stern. Nell has no
+pronoun, duplicated passages are gone, and cross-references and glossary
+entries follow the text. The works-cited generator now reads every sentence of
+a note, trims trailing commentary and sorts by the author a possessive or a
+parenthesis names (166 works). The index narrows its false positives, gains a
+chapter-title rule and eight people (132 entries). Chapter 8 pins its tenth
+freedom limit (28). The kept findings are the notes' research remarks and the
+editorial limits of density and repetition.
+
+Asking whether Part V was right to call a wage the employer alone attests a
+failure found a defect the question had not named. The compensation
+attestation recorded the kind, the person and the basis, but not the payer.
+Measured on a regression that failed four ways on the earlier rule, one
+attester's wage record concluded every payer's promised wage to that person,
+and a fraud finding on its basis concluded restitution to payers it never
+concerned. The attester now records the payer on the same basis,
+`observe($a, $payer, $p, $basis)`, in the compensation and restitution rules
+alike. Carrying the basis on the promise would need a fourth place, which
+`promise` lacks, and relying on the fraud route leaves the unrelated
+restitution standing.
+
+Every wage fixture now records its payer, the attester-independence
+counterfactual's edit follows, and Chapter 9 pins a second payer (93). The
+payer's own attestation stays refused, since no party certifies itself; a
+recipient authorised to attest their own pay may be the attester. Part V now
+calls the wage the nearest exception to procedure falling on the party who
+acts. Chapter 30 gives, as the sign of failure, a worker whose pay nobody else
+is authorised to attest. The compensation contract card's section 12 records
+the repair, one assertion-surface needle follows the rule, and the rule count
+stays at 7,583.
+
+`submission/README.md` is rewritten for the revised manuscript: the D1
+subtitle and promise, the opening case, the chapter shape, the contents, the
+sample (Chapters 1, 4, 8, 21 and 29), the summary edition and the companion.
+It describes the commit this item records, named in the next commit because a
+commit cannot name itself. The version sent before describes `93fa5662`, which
+stays identifiable. No press has been contacted. The reading-order decision
+records the item, and the TODO's required items are complete; item 66 stays
+optional. The exact prose is `session-drafted, author-approved under delegated
+approval (2026-09-13)`.
+
+The 40 inputs hold 98,299 whitespace-separated Markdown words excluding HTML
+comments. By the lint's measure these divide as follows:
+
+| Part of the book | Words |
+|---|---:|
+| Derived text, Chapters 1–28 | 49,592 |
+| Their argument sections | 21,965 |
+| Part openers | 2,131 |
+| Part V | 7,695 |
+| Opening note | 1,283 |
+| Method | 3,582 |
+| Works cited | 5,059 |
+| Reference | 5,344 |
+
+The sample's Markdown holds 14,064 words, and the lint baseline ratchets down.
+
+`RIGHTS_VERIFY_JOBS=4 ./verify.sh` passes 90,187 pins across 16,353 cases with
+complete contradiction checks and no findings in 2,169.48s. The complete
+development tests pass 149, with five declared ignored. Also passing are the
+sixteen book-builder tests, the sixteen prose-lint tests, the twelve companion
+input tests, its five library tests and one `book-reason` test. Formatting,
+the prose check, and the works-cited and index `--check` modes pass too. The
+static exporter renders 45 routes, and the companion's engine comparison
+matches every recorded expectation across its 91 records. The review, sample
+and summary PDFs have 256, 36 and 16 pages, tagged, with the subtitle in
+their metadata and first, the promise last, and no return arrow or web
+closing. All three EPUBs pass EPUBCheck 5.3.0, run through nix, with no errors
+or warnings. The cover, back cover and revised pages were inspected.
 
 ### Item 64 — production and accessibility, 2026-09-25
 
@@ -3109,6 +3198,12 @@ the no-reader list holds `insure`, `provide`, and `grant`. Inherited advantage,
 metric gaming, and proportionate restitution are pinned. `certify`, `license`,
 `award`, `compensate`, and `hire` are not corpus names. Contract card:
 `book-1/appendix/contracts/qualifications-and-compensation-contract.md`.
+
+**The payer named on the attestation, 2026-09-25 (item 65).** The attester now
+records the payer on the same basis as the kind, so one attestation concludes
+only the promise of the payer it names, and a fraud finding on that basis owes
+restitution to that payer alone. The contract card's section 12 records the
+defect, the alternatives compared and the regression.
 
 #### Family, dependency, reproduction, and collective plurality — 2026-08-08
 

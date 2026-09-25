@@ -11,6 +11,7 @@
 promise(Firm, Wage, Ugo).
 authorized(Firm, CompensationAttester, Ugo).
 observe(Firm, Wage, Ugo, LabourBasis).
+observe(Firm, Firm, Ugo, LabourBasis).
 ? provide(Firm, Wage, Ugo).
 # => TRUE
 # The independent route still works, so this fixture removes a guard rather
@@ -18,6 +19,7 @@ observe(Firm, Wage, Ugo, LabourBasis).
 promise(Firm, Wage, Tam).
 authorized(Arbiter, CompensationAttester, Tam).
 observe(Arbiter, Wage, Tam, LabourBasis).
+observe(Arbiter, Firm, Tam, LabourBasis).
 ? provide(Firm, Wage, Tam).
 # => TRUE
 # Only the compensation rule lost its guard: the restitution rule still refuses

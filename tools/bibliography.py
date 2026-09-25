@@ -149,7 +149,16 @@ def key(work: str) -> str:
     first = re.split(r" and ", head)[0].split()
     person = (not titled and 2 <= len(first) <= 4 and not INSTITUTIONAL.search(head) and not YEAR.search(head)
               and all(re.match(r"^[A-ZÀ-Ž][\w.\-’']*$", w) for w in first) and "," in plain)
-    base = f"{first[-1]} {head}" if person else plain
+    surname = first[-1] if person else ""
+    if person and len(first) >= 3 and first[-2] in {"Van", "Von", "De", "Del", "Della", "Di", "Le", "La", "Du"}:
+        surname = f"{first[-2]} {first[-1]}"
+    possessive = re.match(r"([A-ZÀ-Ž]\w+) ([A-ZÀ-Ž][\w\-]+)['’]s ", plain)
+    reporter = re.search(r"\(([A-ZÀ-Ž]\w+) ([A-ZÀ-Ž][\w\-]+), \d", plain)
+    if not person and possessive and not INSTITUTIONAL.search(possessive.group(0)):
+        surname = possessive.group(2)
+    elif not person and reporter:
+        surname = reporter.group(2)
+    base = f"{surname} {plain}" if surname else plain
     base = unicodedata.normalize("NFKD", base).encode("ascii", "ignore").decode().lower()
     return re.sub(r"^(the|a|an) ", "", base)
 
@@ -178,23 +187,59 @@ def author(work: str) -> str:
     return ""
 
 
+# Where a later sentence of a note begins to cite a work: an author and a
+# title, an italic case name, or a link to a legal provision.
+WORK_START = re.compile(
+    r"(?:(?:[A-ZÀ-Ž][\w.'’\-]*\.? ){0,3}[A-ZÀ-Ž][\w'’\-]+(?: et al\.)?"
+    r"(?:(?:, | and )(?:[A-ZÀ-Ž][\w.'’\-]*\.? ){0,3}[A-ZÀ-Ž][\w'’\-]+)*, \[?[*\"“])"
+    r"|\*[A-Z][^*]*? v\.? [^*]+\*"
+    r"|\[(?:Article|Section|Art\.) [^\]]*\]\([^)]+\)")
+# Commentary that follows a citation inside its sentence.
+TRAILING = re.compile(r",? (?:describes|dates|records|quotes|reports|found|finds|shows|states|notes|explains)\b.*$"
+                      r"|: (?:his|her|their|its|the|a|an)\b.*$")
+
+
+def trim(work: str) -> str:
+    """Drop commentary a sentence adds after the citation itself."""
+    work = re.sub(r": (?:his|her|their|its|the|a|an)\b.*$", "", work)
+    year = YEAR.search(work)
+    start = year.end() if year else 0
+    match = TRAILING.search(work, start)
+    return work[:match.start()] if match else work
+
+
+def cited_parts(note: str) -> list[str]:
+    """The citation text of a note: its first citing sentence, then any later
+    sentence from the point where it begins to cite a work."""
+    parts = [citation(note).rstrip(".")]
+    rest = note[len(citation(note).rstrip(".")):]
+    for sentence in sentences(rest.lstrip(". ")):
+        found = WORK_START.search(sentence)
+        if found and (YEAR.search(sentence[found.start():]) or LINK.search(sentence[found.start():])):
+            parts.append(sentence[found.start():].rstrip("."))
+    return parts
+
+
 def note_works(note: str) -> list[str]:
     """The works one note cites, each with its further locators joined to it."""
     merged: list[str] = []
-    for work in top_level_split(citation(note).rstrip("."), "; "):
+    segments = [(index == 0 and n > 0, w) for n, part in enumerate(cited_parts(note))
+                for index, w in enumerate(top_level_split(trim(part), "; "))]
+    for fresh, work in segments:
         work = re.sub(r"^(and |see |also )", "", work).strip().rstrip(".,")
         # A further locator for the same work ("2006 web edition, ch. 2A",
         # "[author copy](...)", "the lecture version ...") stays with it.
         further = (re.match(r"^[0-9]", work) or re.match(r"^\[[a-z]", work)
                    or (re.match(r"^[a-z]", work) and not re.match(r"^the [A-Z]", work))
                    or re.fullmatch(r"\[[^*“\"\]][^\]]*\]\([^)]*\)", work))
-        if merged and further:
+        if merged and further and not fresh:
             merged[-1] += "; " + work
             continue
         if (YEAR.search(work) or LINK.search(work)) and not COMMENTARY.match(work):
             # A second work by the same author in one note names no author;
             # give it the author of the work before it.
-            if merged and work.startswith(("*", '"', "“", "[*", "[“")) and author(merged[-1]):
+            case = re.match(r"\*[^*]* v\.? ", work)
+            if merged and not case and work.startswith(("*", '"', "“", "[*", "[“")) and author(merged[-1]):
                 work = f"{author(merged[-1])}, {work}"
             merged.append(work[0].upper() + work[1:])
     return [w + "." for w in merged]

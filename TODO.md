@@ -113,9 +113,9 @@ ratified 2026-09-24* and recorded in `CLAUDE.md`.
   tracker items; the coherent commit and current source retain their result.
   The website rebuilds the book and its companion from `main` at each of its
   deploys, so leave `main` coherent after every item.
-- The [submission proposal](submission/README.md), and any proposal already
-  sent to a publisher, describe the manuscript at `93fa5662`. Keep that commit
-  identifiable; item 65 refreshes the submission when the revision is complete.
+- The [submission proposal](submission/README.md) describes the revised
+  manuscript at the commit item 65 records; any proposal already sent to a
+  publisher describes `93fa5662`, which stays identifiable.
 - External human review is optional, not a completion dependency (2026-08-15
   ruling); the plan's readers, experts, reproduction and red team are welcome
   under item 66. Never invent reader testing, expert endorsement, empirical
@@ -218,30 +218,15 @@ unimplemented until the items named here land.
 
 ## Ordered revision backlog
 
-Work in this order: item 65 closes the revision, and 66 is optional.
-Numbering continues from items 01–33, which `CLAUDE.md` records; items 34–64
+The revision is complete; item 66 is optional and never blocks the
+submissions below.
+Numbering continues from items 01–33, which `CLAUDE.md` records; items 34–65
 and 67–72 are complete and recorded there too. Chapter numbers refer to the
 [current reading sequence](book-1/contents.json), which item 53 made the plan's
 §4.2 table; the plan's own §14 punch list uses the earlier numbers, which
 `tools/maps/2026-09-25-restructure.json` maps to these.
 
 ### Completion
-
-- [ ] **65. Read the revision fresh, verify it, and refresh the submission.**
-
-  **Scope:** all ordered inputs, `reviews/`, `submission/README.md`, the
-  reading copies and `CLAUDE.md`.
-
-  Read every ordered input in sequence and record a fresh assessment, as items
-  20 and 33 did, without protecting either review's diagnosis. Run the
-  complete verifier and the development checks, rebuild and inspect every
-  format, and remeasure with the lint. Refresh the proposal and sample to the
-  revised text; a proposal already sent describes `93fa5662`, which stays
-  identifiable. Record the revision's rulings and measurements in
-  `CLAUDE.md`.
-
-  **Done when:** the assessment, verification, measurements and submission
-  all describe the same commit.
 
 - [ ] **66. Optional: independent validation.**
 

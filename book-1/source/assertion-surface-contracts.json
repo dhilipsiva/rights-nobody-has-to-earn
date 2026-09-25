@@ -1991,7 +1991,7 @@
         ],
         "effect": "An above-floor compensation conclusion derives from a record the person never controlled; the floor, standing, and recognition are unchanged.",
         "target": "provide",
-        "evidence_ref": "book-1/source/constitution.nibli::observe($a, $kind, $p, $basis) & ~($a = $payer) & ~observe(Court, CompensationFraud, $p, $basis) -> provide($payer, $kind, $p)."
+        "evidence_ref": "book-1/source/constitution.nibli::observe($a, $payer, $p, $basis) & ~($a = $payer) & ~observe(Court, CompensationFraud, $p, $basis) -> provide($payer, $kind, $p)."
       },
       "withholding_deletion_harm": {
         "operation": "withhold_or_delete",
@@ -2000,7 +2000,7 @@
         ],
         "effect": "The compensation conclusion stops deriving and nothing else moves; absence is a trigger for a wage claim, never a floor effect.",
         "target": "provide",
-        "evidence_ref": "book-1/source/constitution.nibli::observe($a, $kind, $p, $basis) & ~($a = $payer) & ~observe(Court, CompensationFraud, $p, $basis) -> provide($payer, $kind, $p)."
+        "evidence_ref": "book-1/source/constitution.nibli::observe($a, $payer, $p, $basis) & ~($a = $payer) & ~observe(Court, CompensationFraud, $p, $basis) -> provide($payer, $kind, $p)."
       },
       "current_challenge_route": "No contest or correction is attached; the entry is a bare report and the engine authenticates nothing about it.",
       "required_challenge_route": "Contest, correction by replacement entry, an adjudicated wage or equity claim, and the Court's individualised fraud finding as the only block.",

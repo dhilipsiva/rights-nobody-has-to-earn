@@ -98,17 +98,17 @@ speaks only for the period its records cover.
 
 ## The child with nobody
 
-Nell is owed food, and her record holds only her birth, so food receipt stays
-unshown. Suppose a receipt naming Nell were recorded, a witness other than the
-provider were authorised for her, and that witness's matching observation were
-entered. Food receipt then follows, and only food: shelter stays unshown, and
-nothing confines her.
+Nell is owed food, and Nell's record holds only the birth, so food receipt
+stays unshown. Suppose a receipt naming Nell were recorded, a witness other than
+the provider were authorised for Nell, and that witness's matching observation
+were entered. Food receipt then follows, and only food: shelter stays unshown,
+and nothing confines Nell.
 
-The witness is authorised for Nell rather than by her. A reviewed appointment
-must name one, retain Nell's voice and provide challenge and independent
-review. The acting body owes that authorisation; the duty itself appoints
-nobody and vouches for nobody. Assistance must begin without Nell asking,
-while the evidence of receipt remains a separate requirement.
+The witness is authorised for Nell rather than by the child. A reviewed
+appointment must name one, retain Nell's voice and provide challenge and
+independent review. The acting body owes that authorisation; the duty itself
+appoints nobody and vouches for nobody. Assistance must begin without Nell
+asking, while the evidence of receipt remains a separate requirement.
 
 ## What this cannot settle
 
@@ -159,13 +159,10 @@ Sukhtankar, whose experimental study of Jharkhand's reforms is the most direct
 evidence I have, attribute much of the harm to the protocols by which the
 transition was run.[^identity-study]
 
-The same study estimates that one and a half to two million legitimate
-beneficiaries lost access at some point.[^identity-study] Drèze and his
-coauthors report mass cancellation of ration cards lacking an Aadhaar link,
-eligible people among them.[^dreze] Of the cancelled cards Muralidharan and his
-coauthors sampled in their study districts, 88 per cent belonged to genuine
-households, a figure they call purely descriptive.[^identity-study] A check at
-the counter decides who is served, so its errors fall on the people it was
+Chapter 1's argument sets out what those reforms cost the eligible people they
+excluded, and Drèze and his coauthors report mass cancellation of ration cards
+lacking an Aadhaar link, eligible people among them.[^dreze] A check at the
+counter decides who is served, so its errors fall on the people it was
 meant to serve, and they go without. The rule I choose decides what the record
 may conclude. When it fails, a delivery goes unshown and the debt stays open.
 Its cost falls on honest providers, who must find a witness; on whoever pays
@@ -214,8 +211,6 @@ shown to turn away nobody entitled.
     Evidence from India*](https://doi.org/10.1162/rest_a_01296),
     *Review of Economics and Statistics* 107(2), pp. 372–392 (2025),
     abstract, also [distributed by the publisher through RePEc](https://ideas.repec.org/a/tpr/restat/v107y2025i2p372-392.html).
-    The 88 per cent figure covers cancellations in the study's districts, and
-    this study and Drèze's count different units.
 
 [^dreze]: Drèze, Khalid, Khera and Somanchi,
     [*Aadhaar and Food Security in Jharkhand: Pain without Gain?*](https://www.epw.in/journal/2017/50/special-articles/aadhaar-and-food-security-jharkhand.html)

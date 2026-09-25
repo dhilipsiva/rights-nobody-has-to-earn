@@ -56,8 +56,8 @@ defendants, one of them with a recorded family, have findings of aggravated
 cruelty. In each case the finding produces severity, and home and family
 circumstances play no part.
 
-The companion comparisons hold the merits and procedural requirements constant
-while separating the harm from the placement decision:
+The chapter's paired test cases hold the merits and procedural requirements
+constant while separating the harm from the placement decision:
 
 | Properly made findings and placement evidence | What follows |
 | --- | --- |
@@ -109,12 +109,11 @@ by recipient-side evidence, even though each concerns a roof.
 Cooperation, employment, wealth and recognition earn nothing in placement.
 Nobody holds authority to withhold a fact the placement depends on in order to
 obtain a preferred result. Evidence retention, disclosure, independent
-challenge and correction remain necessary.
+challenge and correction remain necessary. Removing a required signed finding
+can make a route unsupported, and adding a bare accusation leaves it
+unsupported.
 
-Removing a required signed finding can make a route unsupported, and adding a
-bare accusation leaves it unsupported.
-
-The companion cases vary confinement, severity inputs, family presence and
+The paired test cases vary confinement, severity inputs, family presence and
 home availability. Family changes leave severity and placement unchanged. The
 required finding of individual necessity must rest on the case, whatever the
 person's wealth or poverty. Separate cases remove required placement evidence,

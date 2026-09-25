@@ -33,8 +33,8 @@ Investigators must preserve evidence that helps the accused as well as
 evidence against them. A decision whether to charge needs independent judgment
 and reasons. Defence needs usable evidence, preparation, confidential advice
 and a real opportunity to answer. Privacy and survivor protection require
-arrangements that keep a meaningful defence, so the accused always meets a
-case open to contest.
+arrangements that keep a meaningful defence, so the accused is owed a case
+open to contest.
 
 ## Support that does not decide anybody's guilt
 
@@ -96,12 +96,12 @@ own case otherwise authorises confinement, files a custody challenge in that
 case and keeps a copy. The case is suspended while independent review is
 pending, the rules conclude no confinement for Kel, and the appeals body owes
 Kel an independent hearing of the challenge with counsel and reasons. Ruk, in
-another case, stays confined. Kel's retained copy proves the filing without
-the primary registry's entry, as a submission received independently would.
-The suspension also covers the case when it is renewed. Dismissing the
-challenge requires uninvolved reviewers who are recorded as eligible when they
-decide, counsel, evidence access and reasons. The suspension is interim: the
-filing decides nothing about the merits.
+another case, stays confined. Kel's retained copy establishes the filing for
+the rules without the primary registry's entry, as a submission received
+independently would. The suspension also covers the case when it is renewed.
+Dismissing the challenge requires uninvolved reviewers who are recorded as
+eligible when they decide, counsel, evidence access and reasons. The suspension
+is interim: the filing decides nothing about the merits.
 
 A rule that made every confinement produce a final bar against its own case,
 so that custody defeated itself, is refused. The refusal concerns that rule's
@@ -112,15 +112,15 @@ pending protection and final relief have different formal consequences.
 
 ## Who bears the cost
 
-Because a request from anyone creates a review duty, review offices owe
-answers to weak requests as well as strong ones, and whoever funds them pays
-for both. Because relief waits for a properly made order, a confined person
-without relief or a pending filing stays confined while an owed hearing waits,
-as Ruk does. Because a filing suspends its case until uninvolved reviewers
-decide, a challenge that will fail still interrupts the custody it challenges,
-and whoever that custody protects bears the interval. And because an agreement
-leaves public accountability in place, a person who has made amends to a
-willing survivor can still face the public case.
+Because a request from anyone creates a review duty, review offices owe answers
+to weak requests as well as strong ones, and whoever funds them pays for both.
+Because relief waits for a properly made order, a confined person without
+relief or a pending filing stays confined, as Ruk does, and is owed a hearing
+only once a request is made. Because a filing suspends its case until
+uninvolved reviewers decide, a challenge that will fail still interrupts the
+custody it challenges, and whoever that custody protects bears the interval.
+And because an agreement leaves public accountability in place, a person who
+has made amends to a willing survivor can still face the public case.
 
 ## The child with nobody
 

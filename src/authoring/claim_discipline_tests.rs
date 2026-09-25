@@ -817,7 +817,7 @@ const TRACED: [(&str, &str, &str); 179] = [
     (
         "the Mandela Rules",
         "nelson-mandela-rules-2015",
-        "add nothing to the suffering inherent in that loss",
+        "not to aggravate the suffering inherent in that loss",
     ),
     (
         "the speedy-trial holding, in the prisoner chapter",

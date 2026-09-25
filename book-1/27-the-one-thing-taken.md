@@ -1,14 +1,14 @@
 # The One Thing Taken
 
 A lawful custodial sentence has one direct punitive consequence in this
-bounded source: it takes the person's free movement. What keeps that loss
+constitution: it takes the person's free movement. What keeps that loss
 lawful while it lasts, and what must remain protected when it ends?
 
-Hano's properly decided case shows the distinction. Custody follows, and with
-it the loss of movement. Hano remains a person, owed the whole floor, with a
-ballot entitlement. Conviction has not cancelled Hano's other claims. The
-record identifies a reviewed home placement; it contains no shelter receipt or
-record of speech.
+Hano's properly decided case, for injuring Ivo, shows the distinction. Custody
+follows, and with it the loss of movement. Hano remains a person, owed the
+whole floor, with a ballot entitlement.
+Conviction has not cancelled Hano's other claims. The record identifies a
+reviewed home placement; it contains no shelter receipt or record of speech.
 
 Jala's record contains an injury to the same person, Ivo, but no conviction.
 Jala keeps free movement. A shared injury entry is one fact; a sentence also
@@ -126,8 +126,8 @@ These duties begin with custody itself, ahead of any report about the
 institution. A separately reviewed conditions finding identifies what the named
 operator must preserve.
 
-A place name supplies no evidence of performed care. The placement contract
-requires an available named place and independently reviewed lawful conditions
+A place name supplies no evidence of performed care. The placement rules
+require an available named place and independently reviewed lawful conditions
 before authority can follow. A shelter receipt or evidence of an actual
 confidential visit answers a further question.
 

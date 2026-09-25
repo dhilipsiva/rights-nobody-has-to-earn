@@ -18,13 +18,13 @@ unequal civic status; and prescription of his private or civic life.
 Personhood is the whole premise of each.
 
 For Nell, whose record holds a birth entry and nothing more, these rules ask
-for nothing and forbid a great deal: the same limits follow for her. She is
-also owed learning, expression, belief and company, each by the State, and the
-limits stand apart from those debts. Learning follows where a teacher teaches
-her and she hears; company follows from a matching receipt attested by an
-independent witness authorised for her. Expression and belief lie beyond any
-provider's power to certify, so the rules stay silent about what she says and
-believes. On her one-line record all four remain debts.
+for nothing and forbid a great deal: the same limits follow for the child, who
+is also owed learning, expression, belief and company, each by the State, and
+the limits stand apart from those debts. Learning follows where a teacher
+teaches the child and the child hears; company follows from a matching receipt
+attested by an independent witness authorised for Nell. Expression and belief
+lie beyond any provider's power to certify, so the rules stay silent about what
+Nell says and believes. On the one-line record all four remain debts.
 
 The limits bind public power directly and oblige public institutions to
 prevent, investigate and answer private interference; a private person owes
@@ -103,8 +103,8 @@ attesters.
 
 A record that merely notes someone's belief or association concludes nothing
 about them. They remain a person, owed food and holding the ballot, and keep
-the limits against compelled conscience, coerced association and involuntary
-association.
+the limits against compelled conscience and against association that is
+coerced or involuntary.
 
 ## Information, inquiry and concentration
 

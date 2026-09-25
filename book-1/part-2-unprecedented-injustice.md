@@ -22,12 +22,13 @@ late, incompletely and incorrectly.[^ongekend-findings]
 The allowance belonged to ordinary working life: parents at work, children in
 care, a claim the law itself offered. The committee's findings describe rules
 that left no room for a particular family's circumstances, applied to parents
-as a group, and a chain of institutions each of which upheld the one before.
+as a group, and institutions that each failed to correct the others.
 
 Part II is about that ordinary life: what a person may do without asking
 anyone's permission, what work, pay and contribution come to, what money cannot
-buy, the same route to what is owed for everyone, the conditions and creatures
-a life depends on, the roles people hold in each other's lives, and arrival. It
+buy, the same route to what is owed for everyone, the conditions a life depends
+on and the creatures owed protection in their own right, the roles people hold
+in each other's lives, and arrival. It
 begins with one week in which the rules touch a single person and mostly stay
 out of sight. The chapters show where each rule reaches and where it stops, and
 why a pattern seen across a group decides nothing about any one person in it.
@@ -35,8 +36,8 @@ why a pattern seen across a group decides nothing about any one person in it.
 [^ongekend]: Parlementaire ondervragingscommissie Kinderopvangtoeslag,
     [*Ongekend onrecht*](https://zoek.officielebekendmakingen.nl/kst-35510-2.html),
     Kamerstukken II 2020/21, 35 510, nr. 2, covering letter of 17 December
-    2020. The committee was a parliamentary interrogation with sworn
-    hearings; the translation of its title is mine.
+    2020. The committee held a parliamentary *ondervraging*, an inquiry
+    with sworn hearings; the translation of its title is mine.
 
 [^ongekend-findings]: The same report, pp. 7–8, "Constateringen: De
     rechtsstaat in het geding"; translations mine. The report's conclusions

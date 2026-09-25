@@ -71,11 +71,11 @@ one impossible for a time. The design answers the gap with duties rather than
 extra power. When a source and an independent reviewer, both from outside the
 chamber, certify that the People's Assembly's term has ended, the electoral
 body owes the election at the first lawful opportunity. Until the reviewer
-records that the successor has met, the outgoing chamber may sit, so the
-republic always has an Assembly able to sit. It sits under caretaker limits:
-existing law and the floor, oversight of the government, and what the election
-needs, with constitutional amendment and irreversible measures beyond its
-reach.
+records that the successor has met, the outgoing chamber may sit, so a chamber
+whose term is certified as ended can still sit until its successor meets. It
+sits under caretaker limits: existing law and the floor, oversight of the
+government, and what the election needs, with constitutional amendment and
+irreversible measures beyond its reach.
 
 A finding that the election is impossible for now must come from its own source
 and independent reviewer, both from outside the chamber and the Executive
@@ -112,7 +112,8 @@ continuing force needs actual Assembly authorisation, and the
 immediate-response exception is spent. Treating a cyber attack as an armed
 attack requires independently assessable evidence of its attribution and
 equivalence, and the response it then allows is the one any armed attack
-allows. Credible evidence of prohibited arms use requires suspension. The
+allows. Credible evidence that transferred arms are being misused requires the
+transfer to be suspended. The
 recruitment or use of children in hostilities is prohibited. Civilian
 protection, humanitarian care and access apply in every condition.
 
@@ -150,14 +151,10 @@ matter security or foreign affairs adds nothing to them. Regional and local
 functions, residual competences and stronger compatible protections remain.
 
 A region leaves only by the lawful exit route set out in *How Public Power Is
-Built* (Chapter 17), whatever recognition it gains abroad. The settlement must
-preserve rights, including nationality, minority protection, nonmoving
-residents, family relations and records. Transfer or impairment of collective
-title requires actual prior informed consent for that holder, title, settlement
-revision and effect; consultation alone falls short of it. Military force, and
-manipulation of trade, border access or services, are barred as weapons against
-a lawful exit. Other states' cooperation and readmission lie beyond what this
-constitution can produce.
+Built* (Chapter 17), whatever recognition it gains abroad, with the rights and
+consent that route requires and no force or economic pressure against it.
+Other states' cooperation and readmission lie beyond what this constitution can
+produce.
 
 ## What this cannot settle
 
@@ -218,14 +215,14 @@ with the crisis. Against Ackerman, a renewal renews the same four powers
 however large its majority; broader consent buys no broader power, and whoever
 a wider measure would have protected bears that.
 
-I would reconsider on evidence that emergencies bring needs a hazard-specific,
-reviewable measure cannot meet and an Article 4 derogation can, with the
-derogation ending on time and review correcting its errors. Oren Gross and
-Fionnuala Ní Aoláin's comparative study of three models of the law's response
-to crisis, from the Roman republic to the responses to the London attacks of
-July 2005, is where I would look.[^gross] I would add Ackerman's escalator to
-renewals if separately renewed measures hardened into standing power all the
-same.
+I would reconsider on evidence that emergencies bring needs that no
+hazard-specific, reviewable measure can meet but an Article 4 derogation can,
+with the derogation ending on time and review correcting its errors. Oren Gross
+and Fionnuala Ní Aoláin's comparative study of three models of the law's
+response to crisis, from the Roman republic to the responses to the
+London attacks of July 2005, is where I would look.[^gross] I would add
+Ackerman's escalator to renewals if separately renewed measures hardened into
+standing power all the same.
 
 [^weimar]: *Die Verfassung des Deutschen Reichs* ("Weimarer
     Reichsverfassung") of 11 August 1919, Reichsgesetzblatt 1919, p. 1383,

@@ -170,8 +170,9 @@ accessible, nutritionally adequate and materially less-harmful alternative is
 reasonably available to the people the production would feed, the food test
 fails and neither permission follows, however well the animals are kept. Profit
 is a dispensable purpose rather than a food purpose: where independent evidence
-of the conduct shows killing for profit, the categorical prohibition follows
-and withdraws the food permission already in force for that animal and use.
+of the conduct shows killing solely for profit, the categorical prohibition
+follows and withdraws the food permission already in force for that animal and
+use.
 
 A household that keeps animals for its own food is a controller like any other.
 A farmed animal has the same protection under household and customary control
@@ -382,8 +383,8 @@ for animals.[^awbi-2023]
 
 My core would set heritage aside and ask two questions of what is actually
 done, on independent evidence: whether the animals suffer severely where that
-could be avoided, and whether any is killed or made to suffer severely for
-spectacle, amusement, sport or prestige. If either is shown, the practice is
+could be avoided, and whether any is killed solely for spectacle, amusement,
+sport or prestige. If either is shown, the practice is
 barred whatever its tradition, and an amendment weakening the bar would be
 refused; if the evidence shows neither, the welfare baseline and the detailed
 standards govern. I agree with the 2023 bench that tradition cannot justify

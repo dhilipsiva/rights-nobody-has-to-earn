@@ -28,7 +28,7 @@ entitlement remains when someone is confined, and confinement never makes
 isolation an acceptable substitute.
 
 The environmental right and protections for ecological commons, future
-conditions and animals have their own grounds and chapter. They stand beside
+conditions and animals have their own grounds and chapters. They stand beside
 the floor items rather than in place of one, and a claim that an environment
 is protected is separate from evidence that food, shelter or care reached a
 person.
@@ -190,7 +190,8 @@ and 2018 and evaluated it officially,[^finland] and a peer-reviewed analysis
 found its employment effects minor at best, with days in employment unchanged
 in the first year.[^finland-work] I keep named goods because the entitlement
 names a condition and a payment is an input: money can be paid in a town with
-nothing to rent, and company and bodily safety are sold nowhere. Recipients who
+nothing to rent, and no payment secures company or bodily safety for someone
+who cannot arrange them. Recipients who
 would rather choose for themselves bear that cost.
 
 I would reconsider the named goods if cash brought shelter, care and company

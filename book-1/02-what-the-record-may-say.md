@@ -167,7 +167,7 @@ keep it there; the method's section [*Versions of the
 record*](method.md#versions-of-the-record) sets out how. Standing works the
 other way round, because it protects. An accepted later version must state that
 a witnessed standing is kept.
-Omitting that statement does not erase both protection and the evidence of the
+Omitting that statement erases neither the protection nor the evidence of the
 mismatch: the standing continues, and the omission is marked as a defect.
 
 ## What this cannot settle
@@ -201,8 +201,8 @@ witness or make the next record arrive.
 Nell's birth entry is admitted, and personhood follows. The test also tries to
 enter a classification of Nell as vulnerable, and the closed vocabulary refuses
 it as an unknown word before any rule could read it. Nell's protection follows
-from personhood alone, and nothing adverse follows from the birth entry: her
-credibility is untouched.
+from personhood alone, and nothing adverse follows from the birth entry:
+Nell's credibility is untouched.
 
 With the standing root present, the next question is what every person is owed.
 

@@ -13,6 +13,7 @@ observe(Guild, Welding, Oke, CertificationScope).
 promise(Firm, Wage, Oke).
 authorized(Arbiter, CompensationAttester, Oke).
 observe(Arbiter, Wage, Oke, LabourBasis).
+observe(Arbiter, Firm, Oke, LabourBasis).
 ? provide(Firm, Wage, Oke).
 # => TRUE
 ? entitled(Adam, event { eats() }).

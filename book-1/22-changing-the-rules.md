@@ -51,12 +51,13 @@ intervening record.
 
 Anyone may request independent review without the operator's permission or a
 valid candidate certificate. The request binds the office authorised to hear
-such disputes, whenever someone other than that office makes it. A current reviewed source defect withholds certification,
-publication and the version in force, even from a text already in force, and
-obliges the operator to preserve the amendment history and correct the
-affected use; every person's floor remains owed throughout. Only a positively
-certified failure to respond moves the review duty to an independent alternate,
-and silence counts as neither consent nor a finding against the requester.
+such disputes, whenever someone other than that office makes it. A current
+reviewed source defect withholds certification and publication, takes away the
+status of version in force even from a text that already has it, and obliges
+the operator to preserve the amendment history and correct the affected use;
+every person's floor remains owed throughout. Only a positively certified
+failure to respond moves the review duty to an independent alternate, and
+silence counts as neither consent nor a finding against the requester.
 Correcting a source leaves each individual judgment and remedy to its own
 process.
 
@@ -106,7 +107,8 @@ for that decision, and the request obliges it to decide. The final reviewer
 stands apart from the record's attesters, its operator, the political bodies
 and whoever administered the result. Its finding that the candidate is
 compatible stands in for the reviewer's positive reading and answers a reasoned
-refusal, while every other field of the record still needs both attesters. An
+refusal, while every other field of the record still needs the reviewer who
+binds the candidate and the independent effect reviewer alike. An
 independently found animal-core breach still blocks certification whatever the
 final review finds. A reading of the core, however wide, creates no right; it
 decides only whether this candidate proceeds.
@@ -154,8 +156,8 @@ who did not choose it. They bear its cost: a majority that wants to change what
 the core protects, however large and however lasting, has no lawful route to
 that change. Everything outside the core, from economic instruments to the food
 rule and the institutions themselves, stays open to the same demanding route,
-whose cost falls on reformers whose proposal has majority support but falls
-short of two-thirds of the full Assembly.
+whose cost falls on reformers whose proposal has majority support but lacks
+two-thirds of the full Assembly.
 
 The route holds only where each connection holds: the political result includes
 the entitled electorate, approval concerns the candidate actually reviewed,

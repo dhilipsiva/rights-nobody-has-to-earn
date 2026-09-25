@@ -114,12 +114,12 @@ is not safety. Replacing a standard requires independently shown equal or
 stronger protected outcomes; corrected science can justify recalibration,
 while cost and convenience leave a weakened standard unjustified.
 
-Immediate prevention, containment, care and necessary public restoration go
-ahead before any final finding of fault. Causally connected inherently
+Immediate prevention, containment, care and necessary public restoration are
+owed before any final finding of fault. Causally connected inherently
 hazardous activity bears restoration and reasonable response-cost liability
 even without intent or carelessness. Other restorative liability requires
 adjudicated causal contribution or control; being a worker, investor or
-relative is insufficient. Urgent public repair proceeds when the responsible
+relative is insufficient. Urgent public repair stays owed when the responsible
 actor is unknown, absent or insolvent. Punishment needs its separate proof of
 culpability and fair process.
 

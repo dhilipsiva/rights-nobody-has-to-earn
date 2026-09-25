@@ -300,8 +300,8 @@ the holder, so the one who checks the machine has no stake in the office's own
 record.
 
 The strongest alternative is the tell-us-once state. It keeps purpose limits
-but lets facts flow, which makes it narrower than the integrated file of *What
-the Record May Say* (Chapter 2) and the discretionary linked record of Part V.
+but lets facts flow, which makes it narrower than the integrated case record of
+*What the Record May Say* (Chapter 2) and the broader linked record of Part V.
 A person tells the state a fact once, such as a birth, a move or a death, and
 every office that needs it updates its own record, while routine changes to
 entitlements take effect automatically, with a human review available on

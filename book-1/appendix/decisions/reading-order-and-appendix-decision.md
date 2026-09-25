@@ -71,6 +71,18 @@ acceptance comes last as this decision's §6 required; the pen strand's
 persisting clearance and custody facts precede the other two and change none of
 their verdicts. The map is `tools/maps/2026-09-25-restructure.json`.
 
+## The revision read fresh — item 65, 2026-09-25
+
+All 40 ordered inputs were read in sequence after items 34–64, and the
+assessment is `reviews/2026-09-25-revision-review.md`. Every material finding
+was checked against the text, its pins or the source before anything changed.
+The reading order, the Part structure and the back matter stand as items 53
+and 64 left them; the corrections are to sentences, cross-references, the
+generated works cited and index, one added Chapter 8 pin, and the compensation
+rule, whose attestation now names its payer. The proposal and the sample now
+describe the commit the review, the verification and the measurements
+describe, and the revision closes with it.
+
 ## Production — item 64, 2026-09-25
 
 Ruling D1 is complete: every edition prints the subtitle on its cover and

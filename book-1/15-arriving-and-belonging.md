@@ -213,7 +213,7 @@ security, or convicted of a particularly serious crime and a danger to the
 community.[^art33] For collectives the strongest alternative asks more. The
 Inter-American Court required the Saramaka people's free, prior and informed
 consent for large-scale projects with a major impact within their
-territory,[^saramaka] where ILO Convention 169 makes agreement or consent the
+territory,[^saramaka] whereas ILO Convention 169 makes agreement or consent the
 objective of consultation and lets relocation proceed through national
 procedures when consent cannot be obtained.[^c169]
 

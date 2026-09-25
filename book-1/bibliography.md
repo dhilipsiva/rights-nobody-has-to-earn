@@ -21,6 +21,7 @@ use are also recorded, with their sources, in the book's evidence registry.
 - *Animal Welfare Board of India v. A. Nagaraja*, Civil Appeal No. 5387 of 2014, Supreme Court of India, judgment of 7 May 2014, (2014) 7 SCC 547, [paras 54 and 77](https://indiankanoon.org/doc/39696860/), in the Indian Kanoon text, which is unofficial. Cited in Chapter 13.
 - *The Animal Welfare Board of India v. Union of India*, Writ Petition (Civil) No. 23 of 2016, Supreme Court of India, Constitution Bench, judgment of 18 May 2023, 2023 INSC 548, [paras 37 and 40](https://api.sci.gov.in/pdfdate/index1.php?filename=supremecourt%2F2016%2F1216%2F1216_2016_3_1501_44624_Judgement_18-May-2023.pdf&dno=12162016&dt=2023-05-18), official copy. Cited in Chapter 13.
 - Krzysztof R. Apt, Howard A. Blair and Adrian Walker, [“Towards a Theory of Declarative Knowledge”](https://doi.org/10.1016/B978-0-934613-40-8.50006-3), in *Foundations of Deductive Databases and Logic Programming* (1988), 89–148. Cited in the method.
+- [Article 30(3) of the Fundamental Law](https://njt.jog.gov.hu/jogszabaly/en/2011-4301-02-00). Cited in Chapter 12.
 
 ## B
 
@@ -39,19 +40,14 @@ use are also recorded, with their sources, in the book's evidence registry.
 
 ## C
 
-- Chile, Constitución Política, art. 14, as replaced by Ley 21.773 (Diario Oficial, 7 October 2025) and applying from 2026 under transitional provision 54, [bcn.cl](https://www.bcn.cl/leychile/navegar?idNorma=1217272). Cited in Chapter 15.
 - Gabriel J. Chin, ["The New Civil Death: Rethinking Punishment in the Era of Mass Conviction"](https://scholarship.law.upenn.edu/penn_law_review/vol160/iss6/6), *University of Pennsylvania Law Review* 160(6) (2012), 1789–1833. Cited in Chapters 24 and 29.
+- Cinelli, Forney and Pearl, [*A Crash Course in Good and Bad Controls*](https://doi.org/10.1177/00491241221099552) (2024; first published online 2022), Models 11–12 and the distinction between total and direct effects. Cited in Chapter 29.
 - Comptroller and Auditor General, [*Benefit sanctions*](https://www.nao.org.uk/wp-content/uploads/2016/11/Benefit-sanctions.pdf), HC 628, Session 2016–17 (National Audit Office, 30 November 2016), summary paras 18 and 22. Cited in Chapter 9.
 - [Consolidated version of the Treaty on the Functioning of the European Union](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:12012E/TXT), Article 13, OJ C 326, 26.10.2012, pp. 47–390. Cited in Chapter 13.
 - The Constitution (Forty-fourth Amendment) Act, 1978, s. 40, amending article 359, and the Statement of Objects and Reasons, paras 6 and 8; [Legislative Department, Government of India](https://cdnbbsr.s3waas.gov.in/s380537a945c7aaa788ccfcdf1b99b5d8f/uploads/2023/03/2023030242-2.pdf). Cited in Part III's opening case.
 - Constitutional Court of South Africa, [*August and Another v Electoral Commission and Others*](https://collections.concourt.org.za/handle/20.500.12144/2071), CCT 8/99, [1999] ZACC 3, 1999 (3) SA 1 (CC), decided 1 April 1999, per Sachs J with eight judges concurring, paras 17 and 33 and the order at para 42. Cited in Chapter 18.
 - Constitutional Court of South Africa, [*Minister of Home Affairs v National Institute for Crime Prevention and the Re-integration of Offenders (NICRO)*](https://collections.concourt.org.za/handle/20.500.12144/2233), CCT 03/04, [2004] ZACC 10, decided 3 March 2004, per Chaskalson CJ, paras 57 and 65-67 and the order at para 80. Cited in Chapter 18.
-- [Contemporaneous reporting in *Scroll*](https://scroll.in/article/854225/denied-food-because-she-did-not-have-aadhaar-linked-ration-card-jharkhand-girl-dies-of-starvation) (Aarefa Johari, 16 October 2017) records the family's account and the cancellation. Cited in the opening note.
-- [*Convention on the Reduction of Statelessness*](https://treaties.un.org/Pages/ViewDetailsII.aspx?src=TREATY&mtdsg_no=V-4&chapter=5) (New York, 30 August 1961), 989 UNTS 175, Article 1(1), p. 176. Cited in Chapter 1.
-- Convention on the Rights of Persons with Disabilities (New York, 13 December 2006; in force 3 May 2008), 2515 UNTS 3, articles 2, 5(3) and 5(4), [UN text](https://www.un.org/disabilities/documents/convention/convoptprot-e.pdf). Cited in Chapters 11 and 14.
-- *Convention on the Rights of the Child* (New York, 20 November 1989; in force 2 September 1990), United Nations Treaty Series, vol. 1577, p. 3, [Article 12](https://treaties.un.org/Pages/ViewDetails.aspx?src=IND&mtdsg_no=IV-11&chapter=4&clang=_en), read with Committee on the Rights of the Child, [General Comment No. 12 (2009): The right of the child to be heard](https://documents.un.org/api/symbol/access?s=CRC/C/GC/12&l=en&t=pdf), CRC/C/GC/12 (20 July 2009), paras 20–21. Cited in Chapter 14.
 - [Convention relating to the Status of Refugees](https://treaties.un.org/doc/Publication/UNTS/Volume%20189/volume-189-I-2545-English.pdf) (Geneva, 28 July 1951), 189 UNTS 137, Article 33(1) and (2), p. 176. Cited in Chapter 15.
-- [*Convention relating to the Status of Stateless Persons*](https://treaties.un.org/Pages/ViewDetailsII.aspx?src=TREATY&mtdsg_no=V-3&chapter=5) (New York, 28 September 1954), 360 UNTS 117, Article 1(1), p. 136, and Article 27, p. 150. Cited in Chapter 1.
 - Corte Constitucional de Colombia, [Sentencia C-141 de 2010](https://www.corteconstitucional.gov.co/relatoria/2010/C-141-10.htm) (26 February 2010), Part V section 6 and Part VI, reviewing Law 1354 of 2009, which the Court declared unconstitutional in its entirety. Cited in Chapter 22.
 - Corte Constitucional de Colombia, Third Review Chamber, [Sentencia T-025 de 2004](https://www.corteconstitucional.gov.co/relatoria/2004/t-025-04.htm) (22 January 2004), section 7 and the first and second orders. Cited in Chapter 6.
 - Kimberlé Crenshaw, "Demarginalizing the Intersection of Race and Sex: A Black Feminist Critique of Antidiscrimination Doctrine, Feminist Theory and Antiracist Politics", *University of Chicago Legal Forum* 1989, no. 1, art. 8, 139–167, at 139–141, [chicagounbound.uchicago.edu](https://chicagounbound.uchicago.edu/uclf/vol1989/iss1/8). Cited in Chapter 11.
@@ -60,6 +56,7 @@ use are also recorded, with their sources, in the book's evidence registry.
 ## D
 
 - Angela Y. Davis, [*Are Prisons Obsolete?*](https://www.sevenstories.com/books/2907-are-prisons-obsolete) (New York: Seven Stories Press, 2003), the "Abolitionist Alternatives" material, read in the publisher-authorised [excerpt](https://www.bookforum.com/politics/an-excerpt-from-are-prisons-obsolete-24084) (Bookforum, 23 June 2020). Cited in Chapter 27.
+- *DeGraffenreid v. General Motors*, 413 F. Supp. 142 (E.D. Mo. 1976), discussed at 141. Cited in Chapter 11.
 - Dorothy E. Denning, [“A Lattice Model of Secure Information Flow”](https://doi.org/10.1145/360051.360056), *Communications of the ACM* 19(5) (1976), 236–243. Cited in the method.
 - *Die Verfassung des Deutschen Reichs* ("Weimarer Reichsverfassung") of 11 August 1919, Reichsgesetzblatt 1919, p. 1383, Article 48(2)–(3); [German text at documentArchiv.de](http://www.documentarchiv.de/wr/wrv.html). Cited in Chapter 20.
 - Directive (EU) 2019/1937 of the European Parliament and of the Council of 23 October 2019 on the protection of persons who report breaches of Union law, OJ L 305, 26.11.2019, p. 17, [Article 21(5)](https://eur-lex.europa.eu/eli/dir/2019/1937/oj), with its rationale in recital 93. Cited in Chapter 16.
@@ -73,12 +70,12 @@ use are also recorded, with their sources, in the book's evidence registry.
 
 ## E
 
-- Economic Policy Institute, [*CEO Pay*](https://www.epi.org/publication/ceo-pay/) (15 September 2026), Figure A, Table 1 and their notes: projected 2025 realised compensation, with a mean of firm-specific ratios. Cited in Chapter 29.
+- Economic Policy Institute, [*CEO Pay*](https://www.epi.org/publication/ceo-pay/) (15 September 2026), Figure A, Table 1 and their. Cited in Chapter 29.
 - Asbjørn Eide, *Report on the right to adequate food as a human right*, [E/CN.4/Sub.2/1987/23](https://documents.un.org/api/symbol/access?s=E/CN.4/Sub.2/1987/23&l=en&t=pdf) (7 July 1987), paras 66–69 and 112–115, where fulfilment is the last level; the [updated study](https://documents.un.org/api/symbol/access?s=E/CN.4/Sub.2/1999/12&l=en&t=pdf), E/CN.4/Sub.2/1999/12 (28 June 1999), paras 52–53. Cited in Chapters 3 and 6.
 - Zachary Elkins, Tom Ginsburg and James Melton, [*The Endurance of National Constitutions*](https://doi.org/10.1017/CBO9780511817595) (Cambridge University Press, 2009), chapters 5 and 7. Cited in Chapter 22.
 - Jon Elster, *Solomonic Judgements: Studies in the Limitations of Rationality* (Cambridge University Press and Editions de la Maison des Sciences de l'Homme, 1989); the argument was read in its lecture version, "Taming Chance: Randomization in Individual and Social Decisions", *The Tanner Lectures on Human Values* IX (1988), 105–179, at 109 and 162–164, [tannerlectures.org](https://tannerlectures.org/wp-content/uploads/2024/06/Elster88.pdf). Cited in Chapter 5.
 - Ezekiel J. Emanuel et al., "Fair Allocation of Scarce Medical Resources in the Time of Covid-19", *New England Journal of Medicine* 382(21) (2020), 2049–2055, [doi:10.1056/NEJMsb2005114](https://doi.org/10.1056/NEJMsb2005114), Recommendations 1–3. Cited in Chapter 5.
-- Ethics & Compliance Initiative, [*The State of Ethics & Compliance in the Workplace: A Look at Global Trends*](https://boardagenda.com/wp-content/uploads/2021/04/ECI-2021-State-of-Ethics-and-Compliance-002.pdf) (2021 Global Business Ethics Survey report, March 2021), pp. 22–23: the 2020 survey of over 14,000 employees in ten countries. Cited in Chapter 16.
+- Ethics & Compliance Initiative, [*The State of Ethics & Compliance in the Workplace: A Look at Global Trends*](https://boardagenda.com/wp-content/uploads/2021/04/ECI-2021-State-of-Ethics-and-Compliance-002.pdf) (2021 Global Business Ethics Survey report, March 2021), pp. 22–23. Cited in Chapter 16.
 - Virginia Eubanks, [*Automating Inequality: How High-Tech Tools Profile, Police, and Punish the Poor*](https://us.macmillan.com/books/9781250074317/automatinginequality/) (New York: St. Martin's Press, 2018). Cited in Chapter 2.
 - European Court of Human Rights (Grand Chamber), [*Hirst v. the United Kingdom (No. 2)*](https://hudoc.echr.coe.int/eng?i=001-70442), application no. 74025/01, judgment of 6 October 2005, § 82 and operative point 1. Cited in Chapter 18.
 
@@ -101,13 +98,14 @@ use are also recorded, with their sources, in the book's evidence registry.
 
 ## H
 
+- J. F. C. Harrison, [*Robert Owen and the Owenites in Britain and America*](https://archive.org/details/robertowenowenit0000harr) (1969; linked reprint 1994). Cited in Chapter 29.
 - Mireille Hildebrandt, [*Law for Computer Scientists and Other Folk*](https://doi.org/10.1093/oso/9780198860877.001.0001) (Oxford University Press, 2020), chapter 10. Cited in the method.
 - Hoge Raad der Nederlanden, *State of the Netherlands v. Stichting Urgenda*, No. 19/00135, 20 December 2019, [ECLI:NL:HR:2019:2007](https://uitspraken.rechtspraak.nl/details?id=ECLI:NL:HR:2019:2007) (unofficial English translation; the Dutch text, ECLI:NL:HR:2019:2006, is authentic), paras 5.2.2, 5.3.2, 5.7.1–5.8 and 8.2.7. Cited in Chapter 12.
 - *Hussainara Khatoon v. Home Secretary, State of Bihar*, Supreme Court of India, 12 February 1979, (1980) 1 SCC 81, [1979] 3 SCR 169, at 173; [Indian Kanoon](https://indiankanoon.org/doc/1007347/). Cited in Chapters 25, 26, 27 and 28; Part IV's opening case.
 
 ## I
 
-- The Indiana Archives' [New Harmony history](https://www.in.gov/iara/services-for-public/search-archives-holdings/court-records/introduction-to-posey-county/new-harmony-indiana/) dates the community. Cited in Chapter 29.
+- The Indiana Archives' [New Harmony history](https://www.in.gov/iara/services-for-public/search-archives-holdings/court-records/introduction-to-posey-county/new-harmony-indiana/). Cited in Chapter 29.
 - *Indra Sawhney v. Union of India*, Supreme Court of India, 16 November 1992, 1992 Supp (3) SCC 217, leading judgment of B.P. Jeevan Reddy J. for four of the nine judges, paras 86, 94A–95, 115 and 121 in that judgment's own numbering, read on [Indian Kanoon](https://indiankanoon.org/doc/1363234/), a secondary host. Cited in Chapter 11.
 - Inter-American Court of Human Rights, [*Case of the Saramaka People v. Suriname*](https://www.corteidh.or.cr/docs/casos/articulos/seriec_172_ing.pdf), judgment of 28 November 2007, Series C No. 172, paras 129-137, esp. 134. Cited in Chapter 15.
 - International Labour Conference, [Employment Relationship Recommendation, 2006 (No. 198)](https://www.ilo.org/media/153276/download), adopted 15 June 2006, para. 9. Cited in Chapter 9.
@@ -117,7 +115,7 @@ use are also recorded, with their sources, in the book's evidence registry.
 
 ## J
 
-- [Jaideep Deogharia's report in *The Times of India*](https://timesofindia.indiatimes.com/city/ranchi/11-year-old-dies-activists-cry-hunger-jharkhand-government-says-malaria/articleshow/61110050.cms) (17 October 2017), opening paragraphs, quotes the deputy commissioner's malaria explanation. Cited in the opening note.
+- [Contemporaneous reporting in *Scroll*](https://scroll.in/article/854225/denied-food-because-she-did-not-have-aadhaar-linked-ration-card-jharkhand-girl-dies-of-starvation) (Aarefa Johari, 16 October 2017). Cited in the opening note.
 - Pearlie Joubert, ["Grootboom dies homeless and penniless"](https://mg.co.za/article/2008-08-08-grootboom-dies-homeless-and-penniless/), *Mail & Guardian*, 8 August 2008. Cited in Part V's opening case.
 
 ## K
@@ -131,6 +129,7 @@ use are also recorded, with their sources, in the book's evidence registry.
 ## L
 
 - David Landau, ["Abusive Constitutionalism"](https://lawreview.law.ucdavis.edu/sites/g/files/dgvnsk15026/files/media/documents/47-1_Landau.pdf), *UC Davis Law Review* 47 (2013), 189–260, at 189, 202–203 and 231–239. Cited in Chapter 22.
+- Uriel Leviatan, [*Lessons from the Kibbutz as a Real Utopia*](https://www.sscc.wisc.edu/soc/faculty/pages/wright/ASA/Leviatan%20--%20lessons%20from%20the%20kibbutz%20as%20real%20utopia.pdf), p. 12. Cited in Chapter 29.
 - Arend Lijphart, [*Patterns of Democracy: Government Forms and Performance in Thirty-Six Countries*](https://yalebooks.yale.edu/book/9780300172027/patterns-of-democracy/), 2nd ed. (New Haven: Yale University Press, 2012), chapters 2 and 3, [doi:10.12987/9780300189124](https://doi.org/10.12987/9780300189124). Cited in Chapter 17.
 - Justin Yifu Lin, [*Collectivization and China's Agricultural Crisis in 1959–1961*](https://doi.org/10.1086/261732), *Journal of Political Economy* 98(6), pp. 1228–1252 (1990), abstract. Cited in Chapter 29.
 - Claudio López-Guerra, *Democracy and Disenfranchisement: The Morality of Electoral Exclusions* (Oxford: Oxford University Press, 2014), chapter 4, "Disenfranchisement on the Basis of Nonresidency and Noncitizenship", pp. 83-108, [doi:10.1093/acprof:oso/9780198705789.001.0001](https://doi.org/10.1093/acprof:oso/9780198705789.001.0001). Cited in Chapter 15.
@@ -145,7 +144,7 @@ use are also recorded, with their sources, in the book's evidence registry.
 - Ministry of Rural Development (India), [*Mahatma Gandhi National Rural Employment Guarantee Audit of Schemes Rules, 2011*](https://mnregaweb4.nic.in/netnrega/SocialAudit/guidelines/document/MGNREGS%20Audit%20of%20Scheme%20Rules,%202011.pdf), G.S.R. 495(E), 30 June 2011, rules 3(1), 4(1)–(2), 5(1)–(4) and 6(2)(i). Cited in Chapter 4.
 - James Mohun and Alex Roberts, [*Cracking the Code: Rulemaking for Humans and Machines*](https://doi.org/10.1787/3afe6ba5-en), OECD Working Papers on Public Governance No. 42 (2020), pp. 2 and 13. Cited in the method.
 - MONDRAGON's [1956 institutional history](https://www.mondragon-corporation.com/en/timeline/1956/), [2024 annual report](https://www.mondragon-corporation.com/people/site/assets/files/103207/annual-report-2024.pdf), p. 13, and [2021 extended report](https://www.mondragon-corporation.com/people/site/assets/files/103207/annual-report-2020-ext.pdf), pp. 6–7. Cited in Chapter 29.
-- Muralidharan, Niehaus and Sukhtankar, [*Identity Verification Standards in Welfare Programs: Experimental Evidence from India*](https://doi.org/10.1162/rest_a_01296), *Review of Economics and Statistics* 107(2), pp. 372–392 (2025), abstract, also [distributed by the publisher through RePEc](https://ideas.repec.org/a/tpr/restat/v107y2025i2p372-392.html). Cited in Chapters 1 and 4.
+- Muralidharan, Niehaus and Sukhtankar, [*Identity Verification Standards in Welfare Programs: Experimental Evidence from India*](https://doi.org/10.1162/rest_a_01296), *Review of Economics and Statistics* 107(2), pp. 372–392 (2025), abstract, also [distributed by the publisher through RePEc](https://ideas.repec.org/a/tpr/restat/v107y2025i2p372-392.html). Cited in Chapters 1, 4 and 29.
 - Andrew C. Myers and Barbara Liskov, [“A Decentralized Model for Information Flow Control”](https://doi.org/10.1145/268998.266669), SOSP '97, 129–142. Cited in the method.
 
 ## N
@@ -159,18 +158,19 @@ use are also recorded, with their sources, in the book's evidence registry.
 ## O
 
 - Office of the Parliamentary Commissioners of Hungary, [*Comprehensive Summary of the Report of the Parliamentary Commissioner for Future Generations of Hungary 2008–2009*](https://www.theioi.org/downloads/5elqn/Europe_Hungary_Parliamentary%20Commissioner%20for%20Future%20Generations_Annual%20Report_2009_English.pdf) (Budapest, 2010), p. 6, the office's own account. Cited in Chapter 12.
+- Chile, Constitución Política, art. 14, as replaced by Ley 21.773 (Diario Oficial, 7 October 2025) and applying from 2026 under transitional provision 54, [bcn.cl](https://www.bcn.cl/leychile/navegar?idNorma=1217272). Cited in Chapter 15.
 - Optional Protocol to the Convention against Torture and Other Cruel, Inhuman or Degrading Treatment or Punishment, UN General Assembly resolution 57/199 of 18 December 2002, annex, UN Doc. [A/RES/57/199](https://documents.un.org/api/symbol/access?s=A/RES/57/199&l=en&t=pdf), Articles 3, 17–20, 21(1), 22 and 24; in force 22 June 2006, 2375 UNTS 237. Cited in Chapter 28.
 - Elinor Ostrom, [*Governing the Commons*](https://doi.org/10.1017/CBO9780511807763) (1990), chapter 3. Cited in Chapter 29.
 
 ## P
 
-- Philippe Van Parijs and Yannick Vanderborght, [*Basic Income: A Radical Proposal for a Free Society and a Sane Economy*](https://www.hup.harvard.edu/books/9780674237469) (Cambridge, MA: Harvard University Press, 2017), chapter 5, "Ethically Justifiable? Free Riding versus Fair Shares", on the objection that it rewards free riding. Cited in Chapter 3.
 - Parlementaire ondervragingscommissie Kinderopvangtoeslag, [*Ongekend onrecht*](https://zoek.officielebekendmakingen.nl/kst-35510-2.html), Kamerstukken II 2020/21, 35 510, nr. 2, covering letter of 17 December 2020. Cited in Part II's opening case.
 - Govind Persad, Alan Wertheimer and Ezekiel J. Emanuel, "Principles for allocation of scarce medical interventions", *The Lancet* 373(9661) (2009), 423–431, [doi:10.1016/S0140-6736(09)60137-9](https://doi.org/10.1016/S0140-6736(09)60137-9), section "The complete lives system". Cited in Chapter 5.
-- Philip Pettit, *Republicanism: A Theory of Freedom and Government* (Oxford: Clarendon Press, 1997), chapter 1, "Before Negative and Positive Liberty", and chapter 2, "Liberty as Non-Domination", [doi:10.1093/0198296428.001.0001](https://doi.org/10.1093/0198296428.001.0001). Cited in Chapters 7 and 29.
 - Philip Pettit, *On the People's Terms: A Republican Theory and Model of Democracy* (Cambridge: Cambridge University Press, 2012), chapters 3–5, [doi:10.1017/CBO9781139017428](https://doi.org/10.1017/CBO9781139017428). Cited in Chapters 7 and 29.
-- John Pratt, "Scandinavian Exceptionalism in an Era of Penal Excess: Part I: The Nature and Roots of Scandinavian Exceptionalism", *British Journal of Criminology* 48(2) (2008), 119–137, [doi:10.1093/bjc/azm072](https://doi.org/10.1093/bjc/azm072). Cited in Chapters 26 and 29.
+- Philip Pettit, *Republicanism: A Theory of Freedom and Government* (Oxford: Clarendon Press, 1997), chapter 1, "Before Negative and Positive Liberty", and chapter 2, "Liberty as Non-Domination", [doi:10.1093/0198296428.001.0001](https://doi.org/10.1093/0198296428.001.0001). Cited in Chapters 7 and 29.
+- Frank Podmore, [*Robert Owen: A Biography*, vol. II](https://www.st-helens-spiritualist-church.co.uk/books/Frank%20Podmore/Robwert%20Owen%2C%20A%20Biography%20Vol%20II%20%281907%29.pdf) (1907), pp. 406–407 and 410–411. Cited in Chapter 29.
 - John Pratt, "Part II: Does Scandinavian Exceptionalism Have a Future?", *British Journal of Criminology* 48(3) (2008), 275–292, [doi:10.1093/bjc/azm073](https://doi.org/10.1093/bjc/azm073). Cited in Chapter 26.
+- John Pratt, "Scandinavian Exceptionalism in an Era of Penal Excess: Part I: The Nature and Roots of Scandinavian Exceptionalism", *British Journal of Criminology* 48(2) (2008), 119–137, [doi:10.1093/bjc/azm072](https://doi.org/10.1093/bjc/azm072). Cited in Chapters 26 and 29.
 
 ## R
 
@@ -219,12 +219,12 @@ use are also recorded, with their sources, in the book's evidence registry.
 - UN General Assembly resolution 48/134, "National institutions for the promotion and protection of human rights", 20 December 1993, UN Doc. [A/RES/48/134](https://documents.un.org/api/symbol/access?s=A/RES/48/134&l=en&t=pdf), annex, "Competence and responsibilities" para. 2 and "Composition and guarantees of independence and pluralism" paras 1–3. Cited in Chapter 28.
 - Uniform Law Commission, [*Collateral Consequences of Conviction Act*](https://www.uniformlaws.org/HigherLogic/System/DownloadDocumentFile.ashx?DocumentFileKey=663b42c8-f9d1-f365-dd70-8f71ae3a3697) (last amended 2010; redesignated a model act in 2022), ss. 4–8 and 10–11. Cited in Chapter 24.
 - United Nations General Assembly, Resolution 70/175, [*United Nations Standard Minimum Rules for the Treatment of Prisoners (the Nelson Mandela Rules)*](https://documents.un.org/api/symbol/access?s=A/RES/70/175&l=en&t=pdf), adopted 17 December 2015, A/RES/70/175 (distributed 8 January 2016), annex, rules 1 and 3, p. 8; the phrase on good principles and practice is preliminary observation 1, p. 7, which also says the rules describe no model system of prisons. Cited in Chapter 25.
-- United Nations General Assembly, [*Transforming our world: the 2030 Agenda for Sustainable Development*](https://docs.un.org/en/A/RES/70/1), A/RES/70/1 (adopted 25 September 2015), Goal 16, target 16.9, p. 25. Cited in Chapter 1.
 - United Nations, *International Covenant on Civil and Political Rights*, [Article 4](https://2covenants.ohchr.org/About-ICCPR.html), read in the treaty text hosted by the UN human rights office. Cited in Chapter 20.
 
 ## V
 
 - V-Dem's [electoral-democracy index](https://ourworldindata.org/grapher/electoral-democracy-index) and [Regimes of the World](https://ourworldindata.org/grapher/political-regime), the World Happiness Report's [Cantril ladder](https://ourworldindata.org/grapher/happiness-cantril-ladder), and World Bank [income per person](https://ourworldindata.org/grapher/gdp-per-capita-worldbank), distributed by Our World in Data. Cited in Chapter 29.
+- Philippe Van Parijs and Yannick Vanderborght, [*Basic Income: A Radical Proposal for a Free Society and a Sane Economy*](https://www.hup.harvard.edu/books/9780674237469) (Cambridge, MA: Harvard University Press, 2017), chapter 5, "Ethically Justifiable? Free Riding versus Fair Shares", on the objection that it rewards free riding. Cited in Chapter 3.
 - Jouko Verho, Kari Hämäläinen and Ohto Kanninen, "Removing Welfare Traps: Employment Responses in the Finnish Basic Income Experiment", *American Economic Journal: Economic Policy* 14, no. 1 (2022): 501–522, [doi:10.1257/pol.20200143](https://doi.org/10.1257/pol.20200143). Cited in Chapter 3.
 
 ## W
@@ -235,3 +235,10 @@ use are also recorded, with their sources, in the book's evidence registry.
 - Christopher Heath Wellman, "Immigration and Freedom of Association", *Ethics* 119, no. 1 (2008): 109-141, [doi:10.1086/592311](https://doi.org/10.1086/592311), at pp. 109, 119 and 141 as quoted in Sarah Fine, "Freedom of Association Is Not the Answer", *Ethics* 120 (2010): 338-356. Cited in Chapter 15.
 - Stuart White, [*The Civic Minimum: On the Rights and Obligations of Economic Citizenship*](https://doi.org/10.1093/0198295057.001.0001) (Oxford University Press, 2003). Cited in Chapter 9.
 - Matthew Wilhelm-Solomon, "Irene Grootboom's unbuilt house", *New Frame*, 5 October 2020, [republished by Public Interest Legal Services](https://www.pils.org.za/irene-grootbooms-unbuilt-house/). Cited in Part V's opening case.
+
+## Y
+
+- [*Convention on the Reduction of Statelessness*](https://treaties.un.org/Pages/ViewDetailsII.aspx?src=TREATY&mtdsg_no=V-4&chapter=5) (New York, 30 August 1961), 989 UNTS 175, Article 1(1), p. 176. Cited in Chapter 1.
+- Convention on the Rights of Persons with Disabilities (New York, 13 December 2006; in force 3 May 2008), 2515 UNTS 3, articles 2, 5(3) and 5(4), [UN text](https://www.un.org/disabilities/documents/convention/convoptprot-e.pdf). Cited in Chapters 11 and 14.
+- *Convention on the Rights of the Child* (New York, 20 November 1989; in force 2 September 1990), United Nations Treaty Series, vol. 1577, p. 3, [Article 12](https://treaties.un.org/Pages/ViewDetails.aspx?src=IND&mtdsg_no=IV-11&chapter=4&clang=_en), read with Committee on the Rights of the Child, [General Comment No. 12 (2009): The right of the child to be heard](https://documents.un.org/api/symbol/access?s=CRC/C/GC/12&l=en&t=pdf), CRC/C/GC/12 (20 July 2009), paras 20–21. Cited in Chapter 14.
+- [*Convention relating to the Status of Stateless Persons*](https://treaties.un.org/Pages/ViewDetailsII.aspx?src=TREATY&mtdsg_no=V-3&chapter=5) (New York, 28 September 1954), 360 UNTS 117, Article 1(1), p. 136, and Article 27, p. 150. Cited in Chapter 1.

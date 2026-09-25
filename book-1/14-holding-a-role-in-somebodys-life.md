@@ -92,8 +92,8 @@ correction leaves the lawful history intact.
 ## When one of these records is defective
 
 An independent defect finding withdraws exactly what it names and creates
-duties to correct and publish the correction. A request for review goes ahead
-without the acting body's permission, and a certified failure to answer moves
+duties to correct and publish the correction. A request for review needs no
+permission from the acting body, and a certified failure to answer moves
 the duty to an independent alternate.
 
 ## When nobody holds a role at all
@@ -155,19 +155,20 @@ absence says nothing about whether Esa is a child.
 
 Esa can challenge the missing or disputed age evidence. The challenge creates
 a named dispute and a duty of independent determination and correction; the age
-and the missing entry are left to that determination. The last uncontested
-adult status also continues, and a separate provisional opportunity is
+and the missing entry are left to that determination. Where a recorded
+adulthood is itself disputed, the last uncontested status continues, and a
+separate provisional opportunity is
 available where credible evidence indicates the common threshold may have been
 crossed and a ballot or candidacy would otherwise expire. Each route needs
 positive evidence; missing evidence and a reviewer's silence give no approval.
 
-The distinction from disenfranchisement is legal as well as formal. Withholding
-an already held franchise as punishment differs from a threshold not yet
-reached. Missing evidence can nevertheless block an executable conclusion about
-an entitlement already held in law, and the person whose evidence is missing
-bears that gap. The challenge and the provisional route address it without
-proving anyone's birthday. *The Vote Conviction Does Not Take* (Chapter 18)
-follows those routes.
+The distinction from disenfranchisement is one of law, not only of form.
+Withholding an already held franchise as punishment differs from a threshold
+not yet reached. Missing evidence can nevertheless block an executable
+conclusion about an entitlement already held in law, and the person whose
+evidence is missing bears that gap. The challenge and the provisional route
+address it without proving anyone's birthday. *The Vote Conviction Does Not
+Take* (Chapter 18) follows those routes.
 
 ## The child with nobody
 

@@ -105080,9 +105080,9 @@
       ],
       "prose_refs": [
         "book-1/reference.md::Public duties distinguish respecting a right, protecting it from interference,",
-        "book-1/16-answerability-and-authority.md::A challenge creates a duty on the appeals body with a named action route,",
+        "book-1/16-answerability-and-authority.md::A challenge obliges the appeals body to act on a named route; a certified",
         "book-1/06-who-owes-and-what-follows.md::To respect a right is to refrain from interfering with it.",
-        "book-1/06-who-owes-and-what-follows.md::A finding reaches an independently named responding office and produces an action duty",
+        "book-1/06-who-owes-and-what-follows.md::A finding is addressed to an independently named responding office and places on",
         "book-1/06-who-owes-and-what-follows.md::## The forms public responsibility takes"
       ],
       "part_v_refs": [
@@ -110747,7 +110747,7 @@
       "residual_citations": [],
       "controls": {
         "containment_control_refs": [
-          "book-1/02-what-the-record-may-say.md::Omitting that statement does not erase both protection and the",
+          "book-1/02-what-the-record-may-say.md::Omitting that statement erases neither the protection nor the evidence of the",
           "book-1/source/temporal-assurance-case.md::ESTABLISHED FOR SUPPLIED RECORDS; EXTERNAL LIVENESS NOT ESTABLISHED."
         ]
       }
