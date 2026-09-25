@@ -47,8 +47,8 @@ the next record to arrive.
 ## When a declaration breaches the constitution
 
 An independently reviewed finding then records that the declaration suspended
-an institution or right, or governed by decree. The declaration no longer
-completes. Neither does the requisition joined to that exact declaration
+an institution or right, or governed by decree. The declaration stops
+completing, and so does the requisition joined to that exact declaration
 revision. Its restraint and loss conclusions stop following.
 
 The operator's inventory, accounting, return or compensation duty continues.
@@ -118,12 +118,11 @@ An independent finding that public coercive power was delegated to a private
 actor stops the structure from completing. The dependent force authorisation,
 restraint and loss stop too. The duty to keep the recorded structure within
 Assembly ceilings, appropriation and audit continues. An invalidated structure
-does not gain freedom from its limits.
+stays bound by its limits.
 
 The named person retains personhood and the floor; no prisoner conclusion
-follows. No rule in this sequence stops the force's conduct, recalls a deployment,
-brings anyone home or stops payment to a contractor. Those acts cannot be
-inferred from absent authority.
+follows. No rule in this sequence stops the force's conduct, recalls a
+deployment, brings anyone home or stops payment to a contractor.
 
 ## Treaties, trade and a region's exit
 
@@ -154,24 +153,15 @@ Transfer or impairment of collective title requires actual prior informed
 consent for that holder, title, settlement revision and effect; consultation
 alone does not suffice. Military force and manipulation of trade, border access
 or services cannot be used against lawful exit. Other states' cooperation and
-readmission are not results this constitution can produce.
-
-## The child with nobody
-
-Beside that declaration and requisition, Nell remains a person, is
-owed bodily safety and material security, and retains free movement. Neither
-restraint nor a prisoner conclusion follows from this birth-only record.
-
-That result gives no general immunity from emergency measures. A measure
-concerning a child still needs its own grounds and authority; a declaration
-alone cannot suspend the floor or provide blanket permission to restrict.
+readmission lie beyond what this constitution can produce.
 
 ## Withdrawal and redress
 
-The rules detect no outside threat, assess no actual necessity and operate no
-emergency service or defence force. Capability, training, procurement,
-stockpiles, incident command, restoration and treaty administration require
-institutions and evidence beyond the rules.
+The rules read the findings they are given: they detect no outside threat and
+assess no actual necessity. Emergency services and a defence force need
+capability, training, procurement, stockpiles, incident command, restoration
+and treaty administration. Operating them, and whether any duty in these cases
+is performed, belongs to the second book.
 
 The next chapter follows the judicial route these cases require: how a
 person can demand an answer and what must follow when that route itself fails.

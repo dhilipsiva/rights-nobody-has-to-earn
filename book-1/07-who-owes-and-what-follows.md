@@ -41,18 +41,16 @@ or conflicting evidence. Nor can an individual finding be reused to create
 the same duty concerning someone else.
 
 The bearer cannot certify its own excuse. The chain starts from a recorded
-finding; completed review and restoration need further evidence.
+finding.
 
 ## Where delivery joins it
 
 Delivery evidence answers the receiving-side question. A matching receipt
-can support a conclusion that an item reached a person. Its absence cannot
-prove failure or terminate the entitlement. Outreach and a usable
-challenge are still needed.
+can support a conclusion that an item reached a person. Its absence leaves
+the entitlement in force. Outreach and a usable challenge are still needed.
 
-Offer, accessibility, adequacy, receipt and remedy are distinct. None is
-proved by the existence of the previous duty. Recurrence checking likewise
-covers the records it is given, within its declared period; it cannot
+Offer, accessibility, adequacy, receipt and remedy are distinct. Recurrence
+checking covers the records it is given, within its declared period; it cannot
 certify that a failure will never happen again.
 
 ## The forms public responsibility takes
@@ -98,7 +96,7 @@ fulfilling the duty.
 
 Voluntary provision can meet a need without a duplicate public delivery.
 That conclusion requires independent evidence that the protected condition
-currently holds. It does not extinguish the entitlement or public responsibility.
+currently holds. The entitlement and public responsibility survive it.
 Withdrawal, dispute, inaccessibility, inadequacy or failure requires continuity.
 
 No household, relationship, association or charity is presumed to provide
@@ -112,7 +110,7 @@ general public power over private life.
 
 A civic duty may have consequences when breached. Those consequences cannot
 remove standing, the floor, political voice, access to evidence or challenge,
-or an effective remedy. Lack of employment, payment, identification, compliance
+or a remedy that works. Lack of employment, payment, identification, compliance
 or contribution gives no right to lower those protections. Any other
 consequence needs its own lawful source and process.
 
@@ -174,7 +172,7 @@ and protection against retaliation do not wait for all those conclusions.
 
 A positively recorded missed deadline sends the unanswered review duty to
 an uninvolved alternate. An absent person-entry is not evidence against the
-person; it also does not prove that an unrecorded abuse was discovered.
+person.
 
 ## When the finding is about conditions or an animal
 
@@ -187,7 +185,7 @@ unauthorised assertion cannot veto a sound record.
 Urgent protection does not wait for every paper. In the chapter's example, an
 urgent animal-care request produces a duty on the State before any owner, taxon
 or complete official record is recorded. It does not give the animal human
-personhood or show that a rescue occurred.
+personhood.
 
 The remedies remain bounded: rescue and care, custody or rehoming, cessation
 of a use, licence review, restitution of care costs, habitat repair and
@@ -211,19 +209,15 @@ person it protects.
 Anybody may also record that assistance appears not to have begun for someone.
 Suppose a bystander with no seat or relationship to Nell makes such an entry
 about her. That entry gives a separate rights office a duty to review whether
-assistance was initiated. It shows no incapacity, breach or fault and makes no
-adverse finding against Nell. The same entry records an encounter, so it also
-gives standing to the person it names, even someone this report alone has
-entered, and the review duty reaches them too.
+assistance was initiated. It shows no incapacity, breach or fault, makes no
+adverse finding against Nell and leaves her floor intact. The same entry
+records an encounter, so it also gives standing to the person it names, even
+someone this report alone has entered, and the review duty reaches them too.
 
 The reviewed appointment described in the chapter on roles provides a more
 specific route: a named trigger, a representative for one matter, a receipt
 witness, retained voice, limited information, an end, challenge and independent
 review. The duty to begin and the limits on that appointment are distinct.
-Neither a request nor the existence of the duty proves it was discharged.
-
-The duty to begin is not evidence of a funded advocate, an appointment or
-help reaching the person.
 
 ## When failure is general
 
@@ -246,30 +240,16 @@ plan, the Court owes interim measures that secure the minimum while leaving the
 service to the tier, and the treasury owes the floor's minimum the first claim
 on funds.
 
-Each step is a duty and shows only that the duty is owed; the waiting person's
-care remains owed until evidence shows it arrived. A pattern that names a
-private person in place of a tier certifies nothing and gives that person no
-duty.
-
-## The child with nobody
-
-What is publicly owed to Nell for food and shelter cannot be redirected to a
-presumed household. The duty to initiate assistance follows from personhood
-alone.
-
-The bystander's entry about Nell opens independent review without reducing
-the floor or producing confinement or a credibility loss. Food receipt still
-does not follow: opening a review is not delivery evidence.
+A pattern that names a private person in place of a tier certifies nothing
+and gives that person no duty.
 
 ## Duties still need performance
 
-Staffing, funding, capacity, facilities and the work of making these routes
-available belong to the operating account.
-
 The constitution still has to specify adequate duties and remedies. Calling
-an omitted legal route an operating problem would not provide it. Where the
-route is present, the remaining claim about performance needs evidence of
-what institutions actually did.
+an omitted legal route an operating problem would not provide it. Whether an
+advocate is funded, an appointment made, a plan adopted or a remedy
+performed, and the staffing, funding, capacity and facilities that make these
+routes available, belong to the second book.
 
 These public responsibilities serve a life beyond claiming and receiving.
 The next part begins with what people may do without first asking an office

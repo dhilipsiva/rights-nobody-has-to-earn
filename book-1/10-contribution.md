@@ -17,10 +17,10 @@ it was done, whether it was paid or what its recipient received. Entering a
 contribution is not an assessment of the person who made it.
 
 The care cases make those limits visible. Nima is Pico's parent and teaches
-Pico. Sata has an employment entry naming care. Neither entry shows that care
-arrived, that it was safe, that its recipient consented or that the
-caregiver acquired authority over them. Pico acquires no contribution merely
-from being taught. When Pico teaches Ona, the record identifies Pico's own act.
+Pico. Sata has an employment entry naming care. Neither entry shows that the
+care was safe, that its recipient consented or that the caregiver acquired
+authority over them. Pico acquires no contribution merely from being taught.
+When Pico teaches Ona, the record identifies Pico's own act.
 
 Caregiver and dependant keep separate rights. The public duty to maintain care
 does not become a family invoice, and a care entry cannot discharge it. A
@@ -38,14 +38,13 @@ In the compensation case, a payer's promise needs an independent authorised
 attestation on the matching basis. The supplement case needs a contribution
 history and an independently adjudicated event under the same scheme. These
 claims identify what is owed and why; they do not confer a general rank.
-Their conclusions are not evidence of payment.
 
 A contribution entry has no age premise. An employment entry could be
 recorded for Cira without any recorded evidence of general adulthood. That
 would settle neither Cira's age nor permission to employ a child. Child
 activity must remain voluntary, safe, compatible with education and protected
-by the applicable labour and pay requirements. Recording the activity shows
-none of those conditions to be met.
+by the applicable labour and pay requirements. Each of those conditions needs
+evidence beyond the recorded activity.
 
 ## An examination is not authority
 
@@ -88,12 +87,12 @@ teaching Pico received. Bela keeps personhood, the ballot and free movement in
 this case. No prisoner conclusion follows.
 
 Restoration concerns the finding and the powers it restricts. Recorded
-contributions do not depend on it. There is no constitutional recognition
+contributions stand independently of it. There is no constitutional recognition
 balance to rebuild and no general loss of it to record. Restoration by a
 properly made appellate decision, and the continuing review duty, are examined
 in the chapters on findings.
 
-## What remains outside these entries
+## What this cannot settle
 
 People can praise, criticise, associate and refuse association within the
 ordinary protections of expression, equality and other people's rights.

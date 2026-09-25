@@ -134,6 +134,54 @@ reinstate the retired tooling or workflow.
 Grouped by kind. Dates in each heading are the ratification dates; a ruling
 that was later implemented or narrowed carries that supersession inline.
 
+### Item 52 — the general limits stated once, 2026-09-25
+
+The opening now states four limits that hold on every page, and the chapters
+leave them unstated: the rules read records, and an absent entry is silence
+rather than a finding about the world; a conclusion is only as true as its
+inputs, the rules checking that evidence is present and properly made but not
+that it is honest; an entitlement names a debt, and whether it arrived is a
+separate fact; and operation belongs to the second book. The limits are worded
+positively, so the opening's negation figure fell. Its paragraph on record and
+conclusion is folded into them, and the later sentence handing operation to
+*What It Would Take* is gone because the fourth limit says it.
+
+Chapters 1–30 lose their generic restatements of those four and keep each
+chapter's own limits beside the claims they qualify: a witness who may be false
+on a particular route, a kind of record nobody keeps, a clock that may stop, a
+remedy that may never be performed. Where a chapter's limit is whether anyone
+acted, it points once to the second book. The disclaimer headings ("What none
+of this proves", "counts", "certifies", "decides", "measures", "admits",
+"observes", "What this does not show", "What this rests on", "What remains
+outside these entries", "What this protection does not decide") became at most
+one `## What this cannot settle` per chapter, or went where nothing
+chapter-specific remained; Chapter 1's became "What delivery needs", which
+states what delivery evidence requires. Paired negations became positive
+sentences where they said the same thing.
+
+Ruling D5 is implemented for the sections: the child with nobody returns in
+eight chapters, where the one-line record gives a different result — Chapters
+3, 5, 6, 14, 18, 21, 27 and 30 — and the other seventeen joined
+`CHILD_SLOT_EXEMPT`, each with its reason, their chapter-specific
+qualifications moved beside the claims they limit. The child decision records
+the eight.
+
+Reader coverage follows: twelve records take the new headings and nineteen for
+removed sections go, leaving 224 passages. The coverage ledger's boundary
+detector read only negative phrasings ("does not show", "none of this"), so the positive
+limits the item writes ("the rules measure no dominance", "whether it arrived
+belongs to the second book") made the record-power and public-scale families
+look unbounded; it now also reads those forms, and 128 of the 224 passages
+match, so it still discriminates. One ledger locator and one
+amendment-audit locator follow their text. Every chapter's disclaimer figure is
+now zero to two, negation fell in every chapter, Chapter 19 reaching the plan's
+threshold, and the lint baseline ratchets down. Derived chapters hold 41,341 of
+65,451 words. The exact prose is `session-drafted, author-approved under
+delegated approval (2026-09-13)`. No rule, pin or suite changes, so item 51's
+complete run on the same formal inputs stands; all 141 authoring development
+tests pass, with five declared ignored, as do the fifteen lint unit tests and
+the prose check.
+
 ### Item 51 — the vocabulary and the cast settled, 2026-09-25
 
 The plan's replacements now hold in the reader prose of the opening, Chapters
@@ -4553,7 +4601,8 @@ method in the record. Controlling record:
 **Criterion narrowed 2026-09-24, not yet implemented (D5 of *The revision
 rulings D1–D9*):** the section returns where the one-entry record produces a
 different or instructive result, not wherever the rule can run, and each removal
-is recorded as an exemption with its reason.
+is recorded as an exemption with its reason. **Implemented 2026-09-25 (item 52):** eight
+chapters keep the section and seventeen are exemptions with reasons.
 
 **R2 — Names.** Book 1 keeps *The Rights Nobody Has to Earn* and now speaks
 it. **Book 2 is *What It Would Take*.** Both names are used in every exempt

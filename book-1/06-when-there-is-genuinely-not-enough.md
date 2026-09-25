@@ -10,7 +10,7 @@ claims. One person is waiting for it; another would lose continuing provision
 if it were reassigned. The recorded evidence supports different priorities.
 A reviewed decision can meet every requirement, and the person who goes
 without retains a claim to provision and repair. The case records a shortage
-and comparative evidence; it shows no actual inventory or delivery.
+and comparative evidence.
 
 The ground for using this route matters. A budget choice, exclusion by price,
 administrative delay, artificial withholding, monopoly, provider failure or
@@ -70,16 +70,15 @@ Independent review, accessible challenge and an end remain conditions of its
 authority.
 
 The rules permit that properly made decision. They do not calculate the
-relative weights, discover that the recorded evidence is true or select the
-recipient. Continuity is an allowed ground for this decision; possession alone
-gives no priority. Neither urgency nor likely benefit is an automatic trump
-over every other permitted ground.
+relative weights or select the recipient. Continuity is an allowed ground for
+this decision; possession alone gives no priority. Neither urgency nor likely
+benefit is an automatic trump over every other permitted ground.
 
 Suppose instead that a second comparison finds the claims materially equal
 after accommodation. No usable equal share exists there either, so a disclosed
 lottery is a permitted method. Whichever recipient the draw is recorded as
 choosing, the allocation meets the rules. The rules do not conduct the draw.
-Using that lottery on the unequal comparison fails the rules. If an effective
+Using that lottery on the unequal comparison fails the rules. If a usable
 equal share is available, that share takes priority over either selective
 allocation or a lottery. Missing comparison evidence does not show material
 equality.
@@ -104,7 +103,7 @@ or one population licenses nothing about another.
 The waiting claim is named in its own shortfall record. Its essential provision
 for this period remains unmet, and the responsible manager owes continuity,
 repair and reassessment. The waiting person's entitlement to care and adult
-ballot remain. Delivered care, personal fault and confinement do not follow.
+ballot remain. Personal fault and confinement do not follow.
 The allocation's permission settles none of those other questions.
 
 ## When somebody asks and nobody answers
@@ -137,8 +136,8 @@ The false-scarcity case changes a different premise. There, a properly made
 finding shows that the supposed shortage arose from refusal to procure. The
 finding's scarcity authority and the allocation under it then fail; the
 scarcity shortfall record loses that basis too. Duties to treat the refusal
-as failure and restore or procure what was withheld follow. Neither person's
-floor is cancelled. An official cannot use a refused procurement to turn
+as failure and restore or procure what was withheld follow. Both people's
+floors remain. An official cannot use a refused procurement to turn
 ordinary responsibility into permission to ration.
 
 ## The conflicts that are not about supply
@@ -148,20 +147,18 @@ the floor and the commons, expression against evidenced harm, privacy against
 public accountability, local choice against portability, present claims against
 future conditions, and emergency action against what may never be suspended.
 Each requires the applicable constitutional limit and a reviewable resolution.
-Naming the conflict does not authorise a reviewer to invent a priority or
-show that an actual dispute has been resolved.
+Naming the conflict does not authorise a reviewer to invent a priority.
 
 ## The child with nobody
 
 The scarcity sequence leaves Nell's personhood and food debt intact, without
-confinement. The case holds no food receipt, and it leaves open whether Nell
-belonged to the affected population.
+confinement. Whether Nell belonged to the affected population stays open.
 
 Family status, documentation, nationality, citizenship, immigration status
 and manner of arrival are forbidden priority keys. They cannot justify
 sending Nell's claim to the back of the queue.
 
-## What none of this counts
+## What this cannot settle
 
 The formal record tests the required evidence and permitted grounds. It does
 not count stock, forecast supply or prove that a shortage is real.

@@ -18,6 +18,12 @@ there cannot become conditions of help. The rules cannot discover an
 unrecorded arrival. The public duty is to serve first and reconcile
 afterwards.
 
+The newcomer case records presence under the republic's reach without papers,
+immigration status or a length of residence, and standing, the floor and free
+movement follow. Those premises support no ballot conclusion: age and political
+eligibility need their own evidence and routes, and immediate help cannot wait
+for them.
+
 Food, shelter, care, education, communication, courts and reporting violence
 cannot become immigration-enforcement checkpoints. A service may not enrol
 someone into an enforcement record as its price, collect status for that
@@ -46,17 +52,15 @@ export labour exploitation, ecological damage or rights violations forbidden
 at home. The relevant control and supply chain must be examined; changing a
 contractor, affiliate, flag or forum does not remove the duty.
 
-These are rights, limits and duties over recorded evidence. A compatibility
-finding is not an order to detain, expel or move anyone. Nothing in them shows
-an operating border, a truthful foreign assurance, cooperation by another
-state, or a completed remedy.
+These are rights, limits and duties. A compatibility finding under them is
+not an order to detain, expel or move anyone.
 
 ## Conflicting versions stop the finding
 
 The asylum case completes a fair-determination record. It identifies the case,
 constitutional version, current period, evidence, independent review, challenge
 route and alternate reviewer. Completion produces the specified legal
-conclusions; it does not prove that a hearing occurred or asylum was granted.
+conclusions about the determination, not a grant of asylum.
 
 The conflicting-version case asks what happens when an authorised writer
 enters a second constitutional version in a field that must hold one value.
@@ -67,7 +71,7 @@ That withholds reliance on an ambiguous record. It does not show which
 entry is false, resolve the disagreement or protect the claimant from delay
 by itself. A usable determination still needs the ambiguity resolved and its
 conditions met. Independent review, correction and the alternate route for
-certified nonresponse remain necessary duties, not evidence of an answer.
+certified nonresponse remain necessary duties.
 
 The failure concerns the determination's record. It weakens no substantive
 claim and removes neither the floor nor the service firewall. Refusing an
@@ -120,8 +124,8 @@ and require preservation, correction, restitution or other rights-respecting
 remedy. Anyone may request review without the operator's permission; private
 evidence access needs a separate entitlement. A failure to respond, shown by
 positive evidence, places a duty on an independent alternate. None of these
-findings decides collective identity for itself, authenticates consent, advances
-a clock or proves that an institution acted.
+findings decides collective identity for itself, authenticates consent or
+advances a clock.
 
 ## When a consent record is defective
 
@@ -137,28 +141,15 @@ review of related cases and non-repetition. Another collective's unaffected
 record continues to complete. One defective consent is no finding against a
 people or against consent in general.
 
-Withdrawal does not undo an act already performed. It shows neither returned
-land nor a protected site nor removed hazardous material. The sequence marks
-where permission ends and repair is owed; whether repair happens requires
-further evidence.
+Withdrawal does not undo an act already performed. The sequence marks where
+permission ends and repair is owed.
 
-## The child with nobody
+## What this cannot settle
 
-The newcomer case records presence and the republic's reach without papers,
-immigration status or a length of residence. Standing, the floor, free movement
-and the prohibitions on service-based enforcement follow. The State owes
-inclusion in the population considered for scarcity.
-
-Nell's birth entry independently supports standing and the floor. Neither that
-entry nor the newcomer's limited premises supports a ballot conclusion.
-This does not determine either person's actual age or political eligibility;
-those need their own evidence and routes. Immediate help cannot wait for them.
-
-## What none of this admits
-
-Reception, interpretation, registration and land administration need
-functioning institutions beyond these records. The cases show no actual
-admission, completed consultation or remedy.
+Whether a foreign assurance is truthful, and whether another state cooperates,
+lie beyond these records. The institutions of reception, interpretation,
+registration and land administration, and whether any admission, consultation
+or repair takes place, belong to the second book.
 
 The next part asks how those institutions become answerable. The rights in
 this chapter need public functions capable of acting, and limits that prevent

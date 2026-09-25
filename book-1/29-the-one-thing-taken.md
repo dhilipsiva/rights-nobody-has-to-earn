@@ -12,7 +12,6 @@ a reviewed home placement; it contains no shelter receipt or record of speech.
 Jala's record contains an injury to the same person, Ivo, but no conviction.
 Jala retains movement. Sharing an injury entry is not sharing the evidence,
 criminal proof, adjudicated defences and fair procedure required for a sentence.
-Neither person's record shows that shelter was delivered.
 
 Severity answers a further question about the ceiling on placement. It does
 not fix a sentence, make a secure place necessary, or keep an expired or
@@ -33,11 +32,11 @@ The order authorising a restriction can support review and protection, but the
 restricted capability cannot become a reason to take something else. This
 chapter's tests inspect that distinction in the source.
 
-These limits cannot by themselves prevent interrupted employment, threatened
-tenure, disrupted care or inaccessible possessions. The person may need active
-help to keep what remains legally theirs. Continuity and remedy address those
-harms without making custody a transfer of employment, property, family or
-decision authority.
+Custody can still interrupt employment, threaten tenure, disrupt care or put
+possessions out of reach, and these limits cannot by themselves prevent that.
+The person may need active help to keep what remains legally theirs. Continuity
+and remedy address those harms without making custody a transfer of employment,
+property, family or decision authority.
 
 ## The authority must be current
 
@@ -62,17 +61,16 @@ primary registry omits its challenge entry. An unresolved filing suspends the
 case through every renewal and under any other name for the case; only a
 properly made decision by someone uninvolved can end that suspension.
 
-These requirements limit legal authority. They do not open a cell, make an
-outside witness honest or prove that nobody suppressed every copy. The
-responsible institutions must act and remain answerable for their acts. A
-false report of complete reconciliation does not become true because the
-rules cannot see the material it concealed.
+These requirements limit legal authority; they do not open a cell. An outside
+witness may still be dishonest, and a false report of complete reconciliation
+stays false although the rules cannot see the material it concealed or tell
+whether every copy was suppressed.
 
 The review period has an order but no measured length. Witnessed records can
 place its opening before its close; a circular account of that order makes the
 period unusable. The rules count no days and cannot compel an outside time
 service to publish the next version of the record. They reject unsupported
-authority in the record presented to them; that does not show that the record
+authority in the record presented to them and cannot tell whether that record
 is current in the world.
 
 When the renewal is not made, confinement under that case loses its authority,
@@ -102,12 +100,11 @@ clock nor an enforceable end.
 ## What custody owes
 
 Custody brings duties of bodily integrity, humane conditions, confidential
-communication, counsel, independent complaint and inspection, and continuing care,
-education and voice. It cannot become a reproductive veto, a transfer of parentage,
-or authority over medical choices. These duties do not wait for a favourable report
-about the institution. A separately reviewed conditions finding identifies what the
-named operator must preserve; whether the conditions were provided is a further
-question.
+communication, counsel, independent complaint and inspection, and continuing
+care, education and voice. It cannot become a reproductive veto, a transfer of
+parentage, or authority over medical choices. These duties do not wait for a
+favourable report about the institution. A separately reviewed conditions
+finding identifies what the named operator must preserve.
 
 A place name supplies no evidence of performed care. The placement contract
 requires an available named place and independently reviewed lawful conditions
@@ -127,8 +124,9 @@ independent review, counsel, reasons and witnessed decision order.
 The order cannot be given by a party or the original trial actors. Final
 merits relief also prevents the same person, incident and charged offence from
 being confined under a fresh case name. An unrelated case needs its own
-finding. None of these conclusions shows that Hano physically left, or
-erases a separately evidenced breach during an earlier holding.
+finding. These conclusions govern Hano's legal custody; a separately evidenced
+breach during an earlier holding stands, and whether Hano physically left
+belongs to the second book.
 
 Release review examines the lawful ground and end, continuing necessity,
 proportionality and alternatives. It cannot renew custody by itself, make
@@ -137,18 +135,17 @@ or forgiveness as the price of leaving. Housing, care, documents, education,
 access to employment and community participation must continue across release,
 with private support rather than a general supervision or risk status.
 
-Hano keeps standing and is still owed shelter. Neither the sentence nor the
-order ending it provides a shelter receipt or shows that Hano spoke. The same
-is true of Adam and Kel's named supported residences. Actual provision needs
-evidence independently of the legal change.
+Hano keeps standing and is still owed shelter. Shelter received, or speech
+made, needs evidence of its own, independent of the sentence and of the order
+ending it; so does shelter at Adam and Kel's named supported residences.
 
 ## Physical holding is a further fact
 
 A credible independent report that somebody remains held triggers humane
-care, voice and independent review even after
-sentence authority ends. A complete holding finding also identifies the duties
-owed by the operator. Neither route authorises continued holding or counts
-shelter and communication as already provided.
+care, voice and independent review even after sentence authority ends. A
+complete holding finding also identifies the duties owed by the operator.
+Neither route authorises continued holding or counts shelter and communication
+as already provided.
 
 ## Protection is not punishment
 
@@ -225,14 +222,14 @@ core abuse or its remedy.
 ### Information and independent disclosure
 
 Intelligence requires individualised prior judicial authority, the least
-intrusive effective means, a defined scope and duration, fresh authorisation
-on renewal, minimised retention and notification once it no longer defeats
-the lawful purpose. Data about people never individually suspected cannot be
-retained. Purchase, partnership or foreign exchange cannot supply material
-the republic could not lawfully collect itself. Bulk or suspicionless
+intrusive means that would work, a defined scope and duration, fresh
+authorisation on renewal, minimised retention and notification once it no longer
+defeats the lawful purpose. Data about people never individually suspected
+cannot be retained. Purchase, partnership or foreign exchange cannot supply
+material the republic could not lawfully collect itself. Bulk or suspicionless
 collection is prohibited; an authorisation cannot be permanently undisclosable.
-Secret evidence can never be sole or decisive, and a consequence cannot
-rest on material that cannot be disclosed as required. Risk, threat, loyalty,
+Secret evidence can never be sole or decisive, and a consequence cannot rest on
+material that cannot be disclosed as required. Risk, threat, loyalty,
 dangerousness, clearance and watchlist products stay out of the consequential
 person record and cannot condition standing, the floor, the ballot, candidacy,
 liberty, remedy or allocation. Employment vetting needs a specified necessary
@@ -253,15 +250,5 @@ tribunal. Any civilian alternative must be genuinely equivalent and
 non-punitive, without loss of employment, education or other civil rights,
 and without repeated punishment for the continuing objection. A protective
 member must refuse a manifestly unlawful order, and that refusal is protected.
-
-## The child with nobody
-
-Nell's birth-only record yields movement and no restraint or custody. The food
-debt follows too, with no credibility finding. This is the plain case of a
-person whom the confinement rules have no grounds to reach.
-
-Punishing a child is outside this test, since nothing here punishes Nell. The
-result is that a child does not need a custody record to retain movement,
-standing, or the floor.
 
 The next chapter asks what the record can do when it detects a breach.

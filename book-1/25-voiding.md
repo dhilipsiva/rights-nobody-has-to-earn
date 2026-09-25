@@ -8,8 +8,9 @@ restrictions; what else follows are duties owed to Bela, to give reasons and to
 review the finding. Standing, the floor, movement, the ballot and public
 answerability remain, and so does Bela's ability to act as a source, witness or
 reviewer in the other records the constitution keeps, each under its own
-independence and conflict rules. None of this shows that every statement Bela
-makes is false.
+independence and conflict rules. The floor follows from personhood alone,
+whatever a finding says of credibility. None of this shows that every
+statement Bela makes is false.
 
 The distinction is between a finding about an identified act and a judgment
 about a person's worth. The finding has a ground, a case, people responsible
@@ -27,11 +28,11 @@ their eligibility when they made it and of its place before the current
 evaluation. Bela's credibility finding follows from that completed case.
 
 Permission to make a finding is a separate question. Two reviewers who are
-eligible now can together make a proposed finding properly; that permission
-does not itself record a completed judgment or impose a penalty. Their
-subsequent act must have its own completed record. This separation lets the
-rule ask whether a reviewer may act now without treating a later
-disqualification as proof that every lawful earlier act was invalid.
+eligible now can together make a proposed finding properly; a completed
+judgment, and with it any penalty, needs a separate record of their subsequent
+act. This separation lets the rule ask whether a reviewer may act now without
+treating a later disqualification as proof that every lawful earlier act was
+invalid.
 
 The ground must name deceit, a fabricated record, a concealed conflict or
 withheld evidence. A complaint alone is not one of those findings. A separate
@@ -39,8 +40,8 @@ test starts with a complaint about another subject and examinations of that
 subject by two reviewers who each hold the authority to sign. The proposed
 finding still needs both reviewers' agreement on the actual incident and
 ground. One affirmation does not suffice. When the second reviewer agrees, the
-proposal is properly made, but no finding yet applies to the subject. That
-consequence follows only when the completed case is also recorded.
+proposal is properly made; a finding applies to the subject only when the
+completed case is also recorded.
 
 Matching a subject and the word *deceit* is insufficient. The incident and
 evidence must match too. An independence entry for another case cannot be
@@ -66,14 +67,14 @@ other adverse finding.
 
 Another completed case concerns Edo's deceit of Mira. Edo is the subject of
 the adverse finding; Mira is the person deceived. The finding applies to Edo
-and not to Mira. A bare allegation, even beside a generic judgment by the
-review body naming Edo, would not make that case. The accusation cannot do the
-work of the particular judgment.
+alone. A bare allegation, even beside a generic judgment by the review body
+naming Edo, would not make that case. The accusation cannot do the work of the
+particular judgment.
 
 That distinction also protects an examiner against an unsupported accusation.
 The recorded allegation alone does not create a personal finding. That settles
-what is required before an adverse personal consequence may follow; it does not
-show that the examiner was honest.
+what is required before an adverse personal consequence may follow, and leaves
+the examiner's honesty an open question.
 
 ## What has to cross the record
 
@@ -129,22 +130,21 @@ recalled appointment, or one that a restriction from an earlier version of the
 record still blocks. No automatic expiry ends a finding merely because nobody
 reviews it.
 
-Every target of a finding in force is owed an explanation by the review body
-and an independent review of the continuing restriction by the appeals body,
-without having to ask. The explanation duty follows even for a subject with a
-completed finding and no personhood entry. The subject's own challenge creates
-a duty on the appeals body without either signer's permission or a prior merits
-finding. Suppose Bela challenges the finding: the challenge opens that route
-while the finding continues. None of these duties proves that reasons were
-delivered or a review occurred.
+Every target of a finding in force, a child included, is owed an explanation
+by the review body and an independent review of the continuing restriction by
+the appeals body, without having to ask. The explanation duty follows even for
+a subject with a completed finding and no personhood entry. The subject's own
+challenge creates a duty on the appeals body without either signer's
+permission or a prior merits finding. Suppose Bela challenges the finding: the
+challenge opens that route while the finding continues.
 
 ## What it costs
 
 The conditions identify who acted, in which case, on which evidence and with
-which authority. They cannot show that the reported evidence was true or that
-the people behind the signatures were independent. Compromised reviewers
-and historical witnesses can agree on false accounts. The legal requirements
-remain; their fulfilment must be shown outside the calculation.
+which authority. Whether the people behind the signatures were in fact
+independent lies outside them. Compromised reviewers and historical witnesses
+can agree on false accounts. The legal requirements remain; their fulfilment
+must be shown outside the calculation.
 
 Positive case requirements also mean that the adverse authority needs a
 complete record. A missing clearance keeps an appointment from giving the
@@ -154,20 +154,9 @@ proposed use of power; it does not show that no wrongdoing occurred.
 
 The record comparison has its own boundary. A fact deleted before the first
 attested record leaves no predecessor for that comparison, and no rule makes
-a successor arrive. Conclusions belong to the version in force. A stale
-answer must not be treated as permission to act in a changed situation.
-
-## The child with nobody
-
-No finding applies to Nell, and every floor debt follows from Nell's birth
-entry. Nell's record holds no completed finding, and nothing here proves that
-no false accusation could reach the child.
-
-The floor rules depend on personhood, not credibility. Bela, under a finding,
-separately retains personhood, food debt, movement and the ballot. An adverse
-finding cannot make the floor a reward for being believed. Explanation,
-representation and independent review remain necessary when a child is affected
-by a finding.
+a successor arrive; whether one does belongs to the second book. Conclusions
+belong to the version in force. A stale answer must not be treated as
+permission to act in a changed situation.
 
 The next chapter follows the limits of the finding: what can be corrected,
 what remains owed and what must happen for the restriction to end.

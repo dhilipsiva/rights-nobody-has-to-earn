@@ -56,8 +56,6 @@ scope and end. It requires notice, an opportunity to comply and contest,
 independent review and proportionate means that preserve essentials and
 third parties' rights. It grants no authority for arrest, search, seizure
 or imprisonment.
-Completing an enforcement record does not show that anyone complied with the
-remedy.
 
 ## Asking again
 
@@ -72,11 +70,10 @@ permission nor a previous reviewer's approval nor a prior finding of merit.
 The bare-request case assigns the review to an independent justice office that
 must act on it. The request does not decide itself.
 
-The review duty covers error, evidence, rights and effective interim protection.
-An independently certified failure to answer assigns action to a separate
-alternate. Silence therefore cannot supply legal approval or erase the request.
-What moves is a duty; nothing in the record shows that the alternate acted or
-that interim protection arrived.
+The review duty covers error, evidence, rights and interim protection that
+works. An independently certified failure to answer assigns action to a
+separate alternate. Silence therefore cannot supply legal approval or erase the
+request. What moves is a duty.
 
 Relief is a separate conclusion. Nia's case has a properly made final
 appellate order, and custody does not follow. Ruk has no such order. Suppose a
@@ -95,14 +92,11 @@ None of those requirements makes the filing itself a final finding of
 innocence.
 
 The contrasting test would make every confinement automatically produce a
-final bar against that same case. That proposed rule is refused. The result
-does not rule out a right to review or the separate suspension attached to a
-filing. The [method's appeal example](method.md#a-request-a-duty-and-relief)
+final bar against that same case. That proposed rule is refused. The refusal
+leaves room for a right to review and for the separate suspension attached to
+a filing. The [method's appeal example](method.md#a-request-a-duty-and-relief)
 explains why a duty to hear, pending protection and final relief have different
 formal consequences.
-
-Access cannot depend on winning, and a duty cannot be counted as a completed
-review. Both boundaries matter to the person waiting for an answer.
 
 ## The child with nobody
 
@@ -111,15 +105,15 @@ and protection against making wealth, documentation or status a condition of
 access. Nell's record holds no request or hearing. The routes that begin
 with a request therefore yield no hearing conclusion for this child.
 
-The independent rights advocate's duty to initiate assistance and representation
-needs no request. The appointment route must preserve Nell's voice and
-separate interests; it does not create standing. Neither duty proves that an
-advocate arrived, a request was filed or the child was heard.
+The independent rights advocate owes Nell the initiation of assistance and
+representation, and that duty needs no request. The appointment route must
+preserve Nell's voice and separate interests; it does not create standing.
 
 ## A hearing and an effective remedy
 
 Court administration, legal aid, scheduling, interpretation, survivor support
-and enforcement require capacity and action beyond these records.
+and enforcement require capacity and action beyond these records, and belong
+to the second book.
 
 The constitutional route must still specify an effective remedy, the authority
 to provide it and a response when the responsible institution fails. The next

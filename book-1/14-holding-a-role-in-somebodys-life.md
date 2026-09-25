@@ -12,9 +12,9 @@ turning their need into a status of incapacity.
 immediate and cannot be delegated away by naming a parent, partner, child, or other
 relative. A caregiver and a dependant each keep a separate floor, privacy, voice,
 exit, and remedy. No adult inherits a compulsory personal-care duty or support debt
-merely through kinship. A record of care as employment identifies an activity.
-It does not prove that care reached another person, that the care was safe, that
-anyone consented, or that the worker acquired authority over them.
+merely through kinship. A record of care as employment identifies an activity;
+it does not show that the care was safe, that anyone consented, or that the
+worker acquired authority over the person cared for.
 
 ## Each role has its own limits
 
@@ -51,14 +51,13 @@ skipping the step before it.
 
 Public responsibility for care continuity is immediate and non-delegable. Its
 reviewed record can complete with no family role present: a family, household,
-association or charity is not presumed to provide the floor. The duty does not
-wait for a chosen supporter. Respite, exit and relocation must preserve care
-rather than making a relationship the price of receiving it.
+association or charity is not presumed to provide the floor. The duty is owed
+with or without a chosen supporter. Respite, exit and relocation must preserve
+care rather than making a relationship the price of receiving it.
 
-The formal continuity conclusion still needs its own recorded premises.
-Absence of a family does not manufacture that record or show that care
-arrived. The ordinary case is about independence from a family role, not about
-automatic performance of the duty.
+The formal continuity conclusion still needs its own recorded premises;
+absence of a family does not manufacture them. The ordinary case turns on
+independence from a family role.
 
 ## Reproductive and bodily care, and the order of a treatment decision
 
@@ -75,14 +74,14 @@ place of residence do not themselves give authority to override that choice.
 Birth, adoption, donor and gestational-origin records must be kept accurately, and
 the person the record is about can reach and correct their own. That access
 brings no automatic contact or relationship right in either direction, and a
-correction does not erase the lawful history.
+correction leaves the lawful history intact.
 
 ## When one of these records is defective
 
 An independent defect finding withdraws exactly what it names and creates
-duties to correct and publish the correction. A
-request for review does not need the acting body's permission, and a certified
-failure to answer moves the duty to an independent alternate.
+duties to correct and publish the correction. A request for review goes ahead
+without the acting body's permission, and a certified failure to answer moves
+the duty to an independent alternate.
 
 ## When nobody holds a role at all
 
@@ -120,8 +119,7 @@ fields. The representative cannot be the acting body, the reviewer, the office
 that hears challenges, the alternate or the affected person. A conflicting
 authorised entry on a single-valued field blocks completion. An independent
 alternate supports the challenge route. These conditions complete a reviewed
-appointment record; they do not show that an advocate exists, a representative
-acted or a witness saw delivery.
+appointment record.
 
 ## Adulthood and missing evidence
 
@@ -154,29 +152,28 @@ The distinction from disenfranchisement is legal as well as formal. Withholding
 an already held franchise as punishment differs from a threshold not yet
 reached. Missing evidence can nevertheless prevent an executable conclusion
 about an entitlement already held in law. A challenge and provisional route
-address that failure without proving anyone's birthday, making a reviewer act
-or delivering a ballot. The later chapter on the vote follows those routes.
+address that failure without proving anyone's birthday. The later chapter on
+the vote follows those routes.
 
 ## The child with nobody
 
 Nell's one-entry record identifies no family, supporter or appointment. The
-public care duties remain, kinship creates no compulsory personal-care debt,
-and family absence authorises no confinement. The rights advocate's initiation
-duty follows without a request.
+public care duties remain, and the rights advocate's initiation duty follows
+without a request. Kinship creates no compulsory personal-care debt, and
+family absence authorises no confinement.
 
-No appointment completes for Nell. The appointment described above shows what
-the route requires; it appoints nobody for this child. Nor can a substitute
-decision skip the required evidence of prior support. The record therefore
-names a duty-bearer without showing representation, witness authority or
-delivered care.
+No appointment completes for Nell: the appointment described above shows what
+the route requires and appoints nobody for this child. Nor can a substitute
+decision skip the required evidence of prior support. The record names a
+duty-bearer and holds no representation or witness authority.
 
-## What none of this decides
+## What this cannot settle
 
-The rules determine no outside best interests, capacity, consent, pregnancy,
-parentage, age or death. They test the recorded grounds for roles and decisions,
-and preserve rights when the authority is absent, challenged or withdrawn.
+The rules test the recorded grounds for roles and decisions, and preserve
+rights when the authority is absent, challenged or withdrawn. They determine no
+outside best interests, capacity, consent, pregnancy, parentage, age or death.
 Service capacity, clinical practice and the operation of family proceedings
-need evidence and institutions beyond those conclusions.
+belong to the second book.
 
 The boundary is the same through every role: assistance does not confer
 ownership, and the absence of a private helper does not remove public

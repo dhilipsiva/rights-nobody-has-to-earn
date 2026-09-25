@@ -9,11 +9,13 @@ or cooperation.
 
 Restriction requires evidence of harm to someone's rights or to the commons.
 Taking offence, disagreeing or announcing an official view of the truth cannot
-provide that ground. The restriction must be the least restrictive effective
-response, name the activity and people it reaches, and give usable public reasons.
-It must have an end and a challenge that suspends it during independent review.
-It may not target a viewpoint, belief or identity. The restricting body, the
-reviewer and the office that hears challenges must remain separate.
+provide that ground, and the rules certify neither the truth of a statement nor
+the sincerity of a belief. The restriction must be the least restrictive
+response that works, name the activity and people it reaches, and give usable
+public reasons. It must have an end and a challenge that suspends it during
+independent review. It may not target a viewpoint, belief or identity. The
+restricting body, the reviewer and the office that hears challenges must
+remain separate.
 
 Enforcement must identify the exact restriction reviewed: its matter, activity,
 version, period and end. A restriction reviewed for one thing cannot be
@@ -54,32 +56,15 @@ with consequences for a person may be made without review. Nobody may be
 forced into an association, told what to express, compelled in conscience, or
 prescribed a form of family. Nobody holds an unequal civic status, and
 nobody's private or civic life may be prescribed. Each barrier follows from
-personhood; the rules conclude them for a cast member and for the child
-with nobody.
+personhood, without an application or a family entry; the rules conclude them
+for a cast member and for the child with nobody.
 
 These limits bind public power directly. They also require public institutions
 to prevent, investigate and answer private interference, without creating a
 general duty from every private person to every other. A prohibition on compelled
 expression gives no recorded voice; a prohibition on coercing bodily choice
-gives no care receipt. The barrier rules protect freedom without proving
-delivery or making its absence a premise.
-
-## The child with nobody
-
-The limits on coercion and prescription follow from Nell's personhood, without
-an application or a family entry. The floor's entitlements to learning,
-expression, belief and company remain beside them.
-
-The record holds no teacher heard, receipt or recorded voice for Nell.
-No learning, belief or company conclusion follows. That absence is not a
-finding that Nell has no beliefs or associations in the world.
-
-## What none of this certifies
-
-These rules set out freedoms and bound restrictions. They certify neither
-the truth of a statement nor the sincerity of a belief. A completed restriction
-record does not prove that its alleged harm existed; a duty to protect
-expression does not show that anyone could speak or publish.
+gives no care receipt. The barrier rules protect freedom without making the
+absence of delivery a premise.
 
 The next chapter turns to employment and what a person may earn without having
 to earn this protected starting point.

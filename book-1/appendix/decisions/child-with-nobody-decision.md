@@ -22,6 +22,19 @@ with its reason, such as a result that repeats another chapter's, so
 `every_derived_chapter_runs_the_child_or_says_why_not` still decides membership.
 The ruling is ratified but unimplemented until TODO items 52 and 54–57 land.
 
+**Implemented 2026-09-25 (item 52).** The section stays in eight chapters, where
+the one-line record gives a result another chapter does not: Chapter 3 (the
+vulnerability status the record refuses to hold), 5 (receipt evidence the child
+cannot be asked to arrange), 6 (the forbidden priority keys that cannot send
+the child to the back of a queue), 14 (the appointment route with no family or
+supporter behind it), 18 (no ballot, and a voice with no minimum age), 21 (the
+routes that start with a request, beside the duty to begin without one), 27
+(the pair with the prisoner) and 30 (the marker that would fire for everyone).
+The other seventeen joined `CHILD_SLOT_EXEMPT`, each with its reason, most
+often that the floor and the chapter's protection follow for the child as for
+anyone the chapter already names. Items 54–57 may revisit a chapter's section
+as they rewrite it.
+
 ## 1. What the author said
 
 The instruction of 2026-09-16, in the author's own words:

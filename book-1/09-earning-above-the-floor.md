@@ -9,8 +9,7 @@ worker whose employer or insurer fails.
 What can someone claim above the floor, and who owes it? The chapter follows
 freedom to undertake employment, then three separate claims: Ansel's
 certificate, Coll's wage and Marlo's illness supplement. Each has its own
-issuer or payer and supporting evidence. None measures a person's worth, and
-none shows that money arrived.
+issuer or payer and supporting evidence, and none measures a person's worth.
 
 ## What makes someone a worker
 
@@ -26,8 +25,8 @@ form is promised a profit, rescue, immunity or monopoly.
 
 Employment in custody must be voluntary and come with ordinary labour
 protection. Refusing it cannot remove the floor, and earning cannot shorten a
-sentence. The rules conclude the corresponding prohibitions for Adam. They do
-not show that Adam is employed or that any workplace observes them.
+sentence. The rules conclude the corresponding prohibitions for Adam without
+showing that Adam is employed.
 
 ## Acting together
 
@@ -58,15 +57,14 @@ or accrued claims.
 
 A certificate records a narrower claim. Ansel is the subject of a welding
 attestation made by an authorised certifier. The attestation covers Ansel and
-the certification purpose, so the certificate follows although Ansel has no
-personhood entry. In a separate self-certification test, one person is both
+the certification purpose, so the certificate follows without a personhood
+entry for Ansel. In a separate self-certification test, one person is both
 certifier and subject; no certificate follows. Wrong scope or missing
 authority also prevents the conclusion.
 
-No rule reads the certificate into standing or the floor. Nor does the
-certificate show that Ansel can weld: the rules read the recorded attestation,
-not Ansel's practical ability. The certificate is available without making a
-qualification a condition of basic rights.
+No rule reads the certificate into standing or the floor. The certificate
+rests on the recorded attestation, not on Ansel's practical ability to weld. It
+is available without becoming a condition of basic rights.
 
 ## What a compensation record establishes
 
@@ -84,8 +82,8 @@ wage, profit, return, grant, prize, subsidy or incentive. Matching matters. A
 wage attestation supports a wage, not a prize. A separate case keeps the same
 payer and attester but names another recipient. The payer promises an
 incentive while the attester attests a metric; no incentive follows. The
-records do not match. That result does not show that targets cannot be gamed
-or that an attester's matching statement is true.
+records do not match. The rules compare records: a target can still be gamed,
+and an attester's matching statement can still be false.
 
 Compensation is separate from standing, the floor, the vote and liberty. A
 certificate or wage does not pass to a child. A personal credibility finding
@@ -94,8 +92,8 @@ does not by itself remove compensation.
 The fraud test returns to Coll's wage. A court finding of Coll's
 compensation fraud on the attested labour basis stops the wage conclusion,
 and restitution from Coll to the employer follows. A finding on another basis
-does not do so. These are conclusions about compensation and restitution, not a
-record of either payment; the floor remains outside the dispute.
+does not do so. These conclusions concern compensation and restitution; the
+floor remains outside the dispute.
 
 ## A supplement above the floor
 
@@ -106,12 +104,12 @@ Marlo is the claimant in the illness case. Marlo's contribution record names
 an insurance carrier and its contributory scheme. That record alone yields no
 supplement. A separate authorised adjudicator records Marlo's illness under
 that same scheme. The illness supplement then follows; an unemployment
-supplement does not. No personhood entry was needed to complete this claim.
+supplement does not. The claim completes without a personhood entry.
 
 This is the route for contribution-based supplements for illness, disability,
 unemployment, caregiving, workplace injury, ageing or survivorship. The record
-and the independent event finding must match the person and scheme. Neither
-alone suffices. The carrier cannot adjudicate its own liability. A court
+and the independent event finding must match the person and scheme, and both
+are needed. The carrier cannot adjudicate its own liability. A court
 finding of contribution fraud for that person and scheme blocks the
 supplement; the carrier's accusation or a finding about another scheme does not.
 
@@ -126,13 +124,11 @@ no contribution record. Separate checks of the constitution exclude that use:
 contribution records may support supplements, but their absence may not justify
 another consequence and rules may not invent them. The
 [method](method.md#checking-how-a-record-is-used) explains how those checks
-differ. The restriction is part of this design; it is not a claim that no
-harmful alternative can be written.
+differ. The restriction is part of this design; as the experiment shows, a
+harmful alternative can still be written.
 
-Marlo's test adds evidence absent from the ordinary cast's record. No
-supplement follows for that cast, but missing contribution history is not
-proof that anyone is uninsured. The successful illness claim supplies neither
-an amount nor a payment.
+Marlo's test adds evidence absent from the ordinary cast's record, so no
+supplement follows for that cast.
 
 ## When the money runs out
 
@@ -141,7 +137,7 @@ is insolvent under that scheme. The supplement then also follows against the
 public guarantor. The carrier remains liable under the same conclusion.
 Marlo's contribution record and the independent illness finding are still
 necessary; insolvency at another scheme changes nothing here. The guarantee
-conclusion is not evidence of a funded reserve or an actual transfer.
+names a liable guarantor, not a funded reserve.
 
 The wider requirement is effective protection of unpaid wages and earned
 pensions, including where an estate is empty. Shareholders bear residual risk
@@ -157,21 +153,13 @@ missing estate, a mismatched end or a version that has ceased to be in force,
 and assign review to the declared alternate when the ordinary reviewer is
 certified unavailable. Missing review cannot prolong a manager's authority.
 Enterprise failure must also preserve public continuity of essential services
-and constitutional remedies. Those duties remain demands on institutions;
-concluding them does not keep a service running.
+and constitutional remedies.
 
-## The child with nobody
+## What this cannot settle
 
-Nell has no recorded contribution, promise of pay or certifier's attestation.
-No supplement, compensation or certificate follows. The State still owes Nell
-food, and the prohibition on conditioning the floor on contributions holds.
-This record says nothing about Nell's actual employment or receipts.
-
-## What none of this counts
-
-These rules distinguish what a person may claim without calculating a wage,
-testing competence or moving money. Rates, budgets, examination standards,
-scheme funding and administration require institutions and operational design.
+These rules distinguish what a person may claim; they calculate no amount of
+wage or supplement. Rates, budgets, examination standards, scheme funding and
+administration, and whether anyone is paid, belong to the second book.
 
 Employment and its rewards may change what someone receives above the floor,
 but cannot become a price for the floor. The next chapter asks what a record of

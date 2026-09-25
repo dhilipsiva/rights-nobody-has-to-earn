@@ -25,14 +25,16 @@ pub(crate) const PREAMBLE: &str = "(preamble)";
 /// Trajectories that show the design under strain rather than working.
 const TROUBLE: [&str; 4] = ["contested", "fails", "continuity-remedy", "unresolved"];
 
-/// A passage states a boundary when it says what it does NOT establish. This is
-/// read out of the prose rather than declared in the source, so a record cannot
-/// claim a disclosure the section does not make. Measured 2026-09-15: 55 of the
-/// 86 passages match, which is why it discriminates rather than passing
-/// everything.
+/// A passage states a boundary when it says what it does NOT establish, in the
+/// negative ("does not show") or in the positive form the book leads with ("the
+/// rules measure no dominance", "whether it arrived belongs to the second
+/// book"). This is read out of the prose rather than declared in the source, so
+/// a record cannot claim a disclosure the section does not make. Measured
+/// 2026-09-25: 128 of the 224 passages match, which is why it discriminates
+/// rather than passing everything.
 fn boundary() -> Regex {
     Regex::new(
-        r"(?i)\b(?:establish(?:es)? no|prove[sd]? no|do(?:es)? not (?:establish|prove|claim|show|mean|make|create|authorize|authorise|say|tell|reach|decide)|none of (?:this|these|it)|nothing (?:here|in this)|is not (?:evidence|proof|a claim)|remains? (?:an )?external assumption|neither [a-z ]{1,40} nor |no rule (?:in this|reads|converts)|cannot (?:prove|establish|show|tell))",
+        r"(?i)\b(?:establish(?:es)? no|prove[sd]? no|do(?:es)? not (?:establish|prove|claim|show|mean|make|create|authorize|authorise|say|tell|reach|decide)|none of (?:this|these|it)|nothing (?:here|in this)|is not (?:evidence|proof|a claim)|remains? (?:an )?external assumption|neither [a-z ]{1,40} nor |no rule (?:in this|reads|converts)|cannot (?:prove|establish|show|tell)|belongs? to the second book|a question for the second book|(?:measures?|evaluates?|values?|operates?|authenticates?|calculates?|counts?|shows?) no\b|(?:is|are) a (?:separate|further) (?:fact|question)|leaves? (?:that |this |it |them )?open\b|needs? (?:its|their) own evidence)",
     )
     .expect("boundary pattern")
 }

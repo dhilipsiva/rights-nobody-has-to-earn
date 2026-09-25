@@ -9,7 +9,8 @@ them against each other.
 
 No food-delivery conclusion follows for Bela in the record. Shelter,
 care, material security and company are likewise unsupported by recipient-side
-evidence. This does not show that Bela is hungry, homeless, ill, without
+evidence. The record is silent about what reached her, and that silence shows
+neither a failure to deliver nor that Bela is hungry, homeless, ill, without
 essential goods or alone.
 
 Marisol gives the positive comparison. Suppose a receipt of food from a food
@@ -27,22 +28,22 @@ writing both sides of it. The same separation keeps the public bodies whose
 duty the delivery discharges out of the witness role: the State, the common
 tier, and any region or locality recorded as providing for the person.
 
-Marisol does not have to appear on the personhood roster first. The delivery
-rule recognises the matching evidence without reading that status. The rules
-can therefore conclude food receipt while personhood remains unproven for the
-name used. Receipt neither authenticates an identity nor provides all the
-other facts that may be needed about the encounter.
+The delivery rule recognises the matching evidence without reading whether
+Marisol is on the personhood roster. The rules can therefore conclude food
+receipt while personhood remains unproven for the name used. Receipt neither
+authenticates an identity nor provides all the other facts that may be needed
+about the encounter.
 
-The witness need not be the recipient. An authorised alternate can serve where
-the ordinary witness cannot, under the same conditions. A recipient who cannot
-acknowledge through an available channel does not have to become their own
-witness before the rule can operate.
+The witness may be someone other than the recipient. An authorised alternate
+can serve where the ordinary witness cannot, under the same conditions. A
+recipient unable to acknowledge through an available channel need not become
+their own witness before the rule can operate.
 
 The ordinary routes for food, shelter, care, material security and company
 share this matching structure. The care conclusion means that a receipt and
-witness report care delivered. It does not show that the person is well,
-that the care was adequate in the world or that valid consent was obtained.
-Those questions need their own evidence.
+witness report care delivered. Whether the person is well, whether the care
+was adequate in the world and whether valid consent was obtained each need
+their own evidence.
 
 Learning has a distinct route through teaching that was heard. The teaching
 and hearing entries on that route need no separately authorised delivery
@@ -66,9 +67,7 @@ Similar words can conceal different claims. Each statement needs a clear scope.
 | Recipient-side delivery evidence | A matching receipt and independent attestation for a particular person, item and scope |
 
 An offer is another event. It is not accessible merely because it was made,
-and an accessible offer is not proof of an adequate receipt. A formal route
-connecting evidence to a delivery conclusion does not provide the service that
-would make the evidence true.
+and an accessible offer is not proof of an adequate receipt.
 
 If a route fails, challenge must remain available while protection continues.
 Remedy must address the individual loss; common-cause correction, re-examination
@@ -97,16 +96,17 @@ notification to a chosen person remain required. The holding body cannot
 act as its own final reviewer, and these duties do not make an unlawful hold
 lawful.
 
-A disputed or ended order also does not erase the human subject independently
-identified in its record. That evidence is a separate standing route; it does
-not authenticate civil identity or prove guilt. An absent family or parent
-entry is no ground for confinement either. The relationship rules require
-positive evidence for the relationships they recognise and refuse the tested
-rules that would make missing family or parentage a ground for imprisonment.
+A disputed or ended order also leaves in place the human subject
+independently identified in its record. That evidence is a separate standing
+route; it does not authenticate civil identity or prove guilt. An absent
+family or parent entry is no ground for confinement either. The relationship
+rules require positive evidence for the relationships they recognise and refuse
+the tested rules that would make missing family or parentage a ground for
+imprisonment.
 
 The custody records just described contain no recipient-side delivery receipts.
-Ending custody does not change that evidentiary position or cancel the floor
-debt. Suppose a separate record holds an independently witnessed shelter
+Ending custody leaves that evidentiary position and the floor debt as they
+were. Suppose a separate record holds an independently witnessed shelter
 receipt for a person reported physically held without a lawful order. Shelter
 then follows through the same receipt rule available outside custody. Neither
 that receipt nor the person's right to care authorises the holding.
@@ -129,13 +129,14 @@ The acting body owes authorisation of that witness; the duty neither appoints
 nor authenticates them. Assistance must begin without Nell asking, while the
 evidence of receipt remains a separate requirement.
 
-## What none of this proves
+## What this cannot settle
 
-The receiving evidence makes the delivery claim testable. Meal logistics,
-care provision, facilities, staffing and capacity belong to the second book
-and need evidence of operation.
+The receiving evidence makes the delivery claim testable; the rule that reads
+it does not provide the service that would make the evidence true. Meal
+logistics, care provision, facilities, staffing and capacity belong to the
+second book.
 
-A missing receipt proves no failure to deliver, ends no entitlement and
-authorises no punishment. Outreach and usable challenge remain necessary. The
-next chapter asks what follows when the record contains a positive finding
-that there is genuinely not enough to provide.
+A missing receipt ends no entitlement and authorises no punishment. Outreach
+and usable challenge remain necessary. The next chapter asks what follows when
+the record contains a positive finding that there is genuinely not enough to
+provide.

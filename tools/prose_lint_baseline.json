@@ -1,6 +1,6 @@
 {
   "book-1/00-opening-note.md": {
-    "negation": 19.0,
+    "negation": 18.6,
     "jargon": 0.9,
     "names": 35,
     "disclaimers": 1,
@@ -9,53 +9,53 @@
     "strays": 0
   },
   "book-1/01-the-child-with-nobody.md": {
-    "negation": 54.1,
+    "negation": 46.3,
     "jargon": 0.0,
     "names": 2,
-    "disclaimers": 3,
+    "disclaimers": 2,
     "banned": 0,
     "harness": 0,
     "strays": 0
   },
   "book-1/02-who-counts.md": {
-    "negation": 38.5,
-    "jargon": 4.3,
+    "negation": 36.5,
+    "jargon": 3.0,
     "names": 1,
-    "disclaimers": 1,
+    "disclaimers": 0,
     "banned": 0,
     "harness": 0,
     "strays": 0
   },
   "book-1/03-what-counts-as-evidence.md": {
-    "negation": 35.0,
-    "jargon": 1.0,
+    "negation": 31.8,
+    "jargon": 0.5,
     "names": 8,
-    "disclaimers": 3,
+    "disclaimers": 2,
     "banned": 0,
     "harness": 0,
     "strays": 0
   },
   "book-1/04-what-you-are-owed.md": {
-    "negation": 30.5,
+    "negation": 28.7,
     "jargon": 0.0,
-    "names": 2,
+    "names": 1,
     "disclaimers": 0,
     "banned": 0,
     "harness": 0,
     "strays": 0
   },
   "book-1/05-whether-it-arrived.md": {
-    "negation": 47.0,
+    "negation": 42.4,
     "jargon": 0.0,
     "names": 5,
-    "disclaimers": 1,
+    "disclaimers": 0,
     "banned": 0,
     "harness": 0,
     "strays": 0
   },
   "book-1/06-when-there-is-genuinely-not-enough.md": {
-    "negation": 28.0,
-    "jargon": 1.4,
+    "negation": 26.6,
+    "jargon": 0.7,
     "names": 1,
     "disclaimers": 0,
     "banned": 0,
@@ -63,8 +63,8 @@
     "strays": 0
   },
   "book-1/07-who-owes-and-what-follows.md": {
-    "negation": 27.1,
-    "jargon": 0.4,
+    "negation": 24.3,
+    "jargon": 0.0,
     "names": 1,
     "disclaimers": 0,
     "banned": 0,
@@ -72,25 +72,25 @@
     "strays": 0
   },
   "book-1/08-what-nobody-has-to-ask-permission-for.md": {
-    "negation": 42.6,
-    "jargon": 1.3,
-    "names": 1,
+    "negation": 38.2,
+    "jargon": 0.0,
+    "names": 0,
     "disclaimers": 0,
     "banned": 0,
     "harness": 0,
     "strays": 0
   },
   "book-1/09-earning-above-the-floor.md": {
-    "negation": 42.3,
-    "jargon": 2.8,
-    "names": 5,
+    "negation": 33.8,
+    "jargon": 2.3,
+    "names": 4,
     "disclaimers": 0,
     "banned": 0,
     "harness": 0,
     "strays": 0
   },
   "book-1/10-contribution.md": {
-    "negation": 39.6,
+    "negation": 37.9,
     "jargon": 0.0,
     "names": 12,
     "disclaimers": 0,
@@ -99,34 +99,34 @@
     "strays": 0
   },
   "book-1/11-what-money-cannot-buy.md": {
-    "negation": 39.2,
-    "jargon": 2.4,
-    "names": 1,
-    "disclaimers": 2,
+    "negation": 36.8,
+    "jargon": 2.0,
+    "names": 0,
+    "disclaimers": 0,
     "banned": 0,
     "harness": 0,
     "strays": 0
   },
   "book-1/12-the-same-route-for-everyone.md": {
-    "negation": 31.7,
-    "jargon": 4.8,
-    "names": 2,
+    "negation": 27.6,
+    "jargon": 4.6,
+    "names": 1,
     "disclaimers": 0,
     "banned": 0,
     "harness": 0,
     "strays": 0
   },
   "book-1/13-a-place-in-which-life-remains-possible.md": {
-    "negation": 35.9,
+    "negation": 33.3,
     "jargon": 0.4,
-    "names": 1,
+    "names": 0,
     "disclaimers": 0,
     "banned": 0,
     "harness": 0,
     "strays": 0
   },
   "book-1/14-holding-a-role-in-somebodys-life.md": {
-    "negation": 36.4,
+    "negation": 34.7,
     "jargon": 0.0,
     "names": 3,
     "disclaimers": 0,
@@ -135,52 +135,43 @@
     "strays": 0
   },
   "book-1/15-arriving-and-belonging.md": {
-    "negation": 39.3,
+    "negation": 36.0,
     "jargon": 0.8,
-    "names": 1,
+    "names": 0,
     "disclaimers": 0,
     "banned": 0,
     "harness": 0,
     "strays": 0
   },
   "book-1/16-public-answerability.md": {
-    "negation": 37.8,
-    "jargon": 0.8,
-    "names": 8,
-    "disclaimers": 1,
+    "negation": 27.4,
+    "jargon": 0.0,
+    "names": 7,
+    "disclaimers": 0,
     "banned": 0,
     "harness": 0,
     "strays": 0
   },
   "book-1/17-how-public-power-is-built.md": {
-    "negation": 32.1,
-    "jargon": 0.9,
-    "names": 1,
-    "disclaimers": 2,
+    "negation": 27.6,
+    "jargon": 0.0,
+    "names": 0,
+    "disclaimers": 0,
     "banned": 0,
     "harness": 0,
     "strays": 0
   },
   "book-1/18-the-vote-conviction-does-not-take.md": {
-    "negation": 48.8,
+    "negation": 34.2,
     "jargon": 0.0,
     "names": 4,
-    "disclaimers": 1,
+    "disclaimers": 0,
     "banned": 0,
     "harness": 0,
     "strays": 0
   },
   "book-1/19-what-may-be-kept-about-you.md": {
-    "negation": 28.3,
-    "jargon": 0.0,
-    "names": 2,
-    "disclaimers": 2,
-    "banned": 0,
-    "harness": 0,
-    "strays": 0
-  },
-  "book-1/20-a-crisis-does-not-suspend-the-republic.md": {
-    "negation": 30.3,
+    "negation": 19.9,
     "jargon": 0.0,
     "names": 1,
     "disclaimers": 0,
@@ -188,9 +179,18 @@
     "harness": 0,
     "strays": 0
   },
+  "book-1/20-a-crisis-does-not-suspend-the-republic.md": {
+    "negation": 24.3,
+    "jargon": 0.0,
+    "names": 0,
+    "disclaimers": 0,
+    "banned": 0,
+    "harness": 0,
+    "strays": 0
+  },
   "book-1/21-a-way-to-be-heard.md": {
-    "negation": 33.6,
-    "jargon": 4.0,
+    "negation": 30.3,
+    "jargon": 3.1,
     "names": 3,
     "disclaimers": 0,
     "banned": 0,
@@ -198,16 +198,16 @@
     "strays": 0
   },
   "book-1/22-changing-the-rules.md": {
-    "negation": 28.6,
-    "jargon": 1.4,
-    "names": 1,
+    "negation": 26.8,
+    "jargon": 0.8,
+    "names": 0,
     "disclaimers": 0,
     "banned": 0,
     "harness": 0,
     "strays": 0
   },
   "book-1/23-who-holds-the-pen.md": {
-    "negation": 26.5,
+    "negation": 25.4,
     "jargon": 1.5,
     "names": 5,
     "disclaimers": 0,
@@ -216,7 +216,7 @@
     "strays": 0
   },
   "book-1/24-the-shield.md": {
-    "negation": 34.8,
+    "negation": 29.1,
     "jargon": 0.0,
     "names": 6,
     "disclaimers": 0,
@@ -225,16 +225,16 @@
     "strays": 0
   },
   "book-1/25-voiding.md": {
-    "negation": 31.4,
+    "negation": 25.9,
     "jargon": 0.0,
-    "names": 11,
+    "names": 10,
     "disclaimers": 0,
     "banned": 0,
     "harness": 0,
     "strays": 0
   },
   "book-1/26-clawback.md": {
-    "negation": 36.2,
+    "negation": 28.9,
     "jargon": 0.0,
     "names": 5,
     "disclaimers": 0,
@@ -243,7 +243,7 @@
     "strays": 0
   },
   "book-1/27-a-prisoner-is-a-person.md": {
-    "negation": 26.1,
+    "negation": 23.3,
     "jargon": 2.3,
     "names": 2,
     "disclaimers": 0,
@@ -252,25 +252,25 @@
     "strays": 0
   },
   "book-1/28-where-people-are-put.md": {
-    "negation": 41.7,
+    "negation": 35.9,
     "jargon": 0.0,
-    "names": 9,
+    "names": 8,
     "disclaimers": 0,
     "banned": 0,
     "harness": 0,
     "strays": 0
   },
   "book-1/29-the-one-thing-taken.md": {
-    "negation": 38.9,
-    "jargon": 0.4,
-    "names": 7,
+    "negation": 36.3,
+    "jargon": 0.0,
+    "names": 6,
     "disclaimers": 1,
     "banned": 0,
     "harness": 0,
     "strays": 0
   },
   "book-1/30-when-the-system-notices-it-broke.md": {
-    "negation": 30.7,
+    "negation": 26.1,
     "jargon": 0.5,
     "names": 3,
     "disclaimers": 1,
@@ -288,7 +288,7 @@
     "strays": 0
   },
   "book-1/method.md": {
-    "negation": 20.8,
+    "negation": 20.2,
     "jargon": 11.7,
     "names": 7,
     "disclaimers": 16,

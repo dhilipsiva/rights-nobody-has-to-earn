@@ -4,9 +4,9 @@ The record says that Nell was born. It names no parent, family, home,
 household, supporter or teacher. It records no case against Nell and no order
 placing Nell anywhere. Nothing says that anyone has provided anything.
 
-Those are absences in a record. They do not tell us whether Nell has a family,
-where Nell lives or what Nell feels. The question is what follows from the
-birth entry alone.
+Those are absences in a record. Whether Nell has a family, where Nell lives
+and what Nell feels are questions it leaves open. The question here is what
+follows from the birth entry alone.
 
 For someone who is not a public body, a recorded birth is enough for the rules
 to conclude personhood. The rule asks for no parent, age, document or match
@@ -26,8 +26,7 @@ or a later registration.
 
 Nor does anyone have to classify Nell as vulnerable. That word cannot enter
 the formal record; the attempted entry is refused. Protection follows without
-it. The record's lack of a family does not increase what is owed, and recording
-a family would not reduce it.
+it. What is owed is the same with a family recorded or without one.
 
 ## No one is presumed to provide
 
@@ -40,12 +39,11 @@ Personhood also sets limits on power. Children hold rights independently.
 No minimum speaking age may exclude their voice. Information and assistance must be
 accessible; support comes before removal, and separation is a last resort.
 An absent relationship proves neither independence nor a ground for confinement.
-A recorded care status is not care delivered.
 
 These limits hold for Nell without a parent, household or chosen supporter.
 A few rules address a particular recorded relationship, such as a marriage or
 a sibling. Where that relationship is absent, its specific rule has no case
-to address. It does not follow that the universal protections disappear.
+to address, and the universal protections remain.
 
 The next question is who must begin assistance without waiting for Nell to ask.
 
@@ -53,8 +51,8 @@ The next question is who must begin assistance without waiting for Nell to ask.
 
 The independent rights advocate owes every person the initiation of assistance
 and representation without a request. Nell is a person, so that duty follows.
-It needs no finding about ability, no family record and no application from
-Nell. It does not wait for the child to begin a proceeding.
+It needs no finding about ability, no family record and no application or
+proceeding begun by Nell.
 
 There is also a route for somebody else to raise the concern. A passerby may
 record that assistance appears not to have begun. That entry gives a separate
@@ -73,15 +71,14 @@ duty does not follow here. The duty to initiate assistance does. The requirement
 to begin is unconditional; a particular exercise of care authority needs its
 own grounds and limits.
 
-The duty names who owes the first move. It supplies no evidence that an
-advocate exists, noticed Nell or acted.
+The duty names who owes the first move. Whether an advocate exists, noticed
+Nell and acted is a question for the second book.
 
-## What does not follow
+## What delivery needs
 
 Nell is owed food; nothing in the record yet shows that food reached Nell. The
 same distinction holds for shelter, care, material security and company. Bodily
 safety has no delivery conclusion at all: it is guaranteed as protection.
-Entitlement follows; delivery does not.
 
 For these ordinary delivery conclusions, the rules need a report of receipt
 and matching independent evidence. The witness must be authorised for this
@@ -96,11 +93,6 @@ person believes; its protection does not require such a conclusion. Custody
 adds duties to secure shelter and voice, but supplies neither a shelter receipt
 nor evidence that somebody spoke. Nell is not confined in this case and needs
 no custody record to be owed either protection.
-
-None of these missing conclusions says Nell is hungry, homeless, ill, unsafe
-or alone. The record does not show that food arrived; it also does not show
-that food failed to arrive. An account of what the rules can conclude
-must preserve that distinction.
 
 ## The child the record never entered
 
@@ -131,9 +123,8 @@ assuming a family or requiring the child to ask.
 
 ## Where the case leads
 
-The birth is an entry given to the rules, not observed or authenticated by
-them. From it follow both the floor and the duty to begin assistance.
-Provision still needs evidence of what reached Nell.
+From the birth entry alone follow both the floor and the duty to begin
+assistance. Provision needs its own evidence of what reached Nell.
 
 The next chapter widens the entry question. A birth is enough for Nell. What
 is enough for someone who arrives without a birth record?

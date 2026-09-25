@@ -4,8 +4,7 @@ Gia and Wren illustrate the two routes to an auditor's authority to sign
 findings. Gia is seated by the electorate; Wren is seated by the convocation. A
 paired credibility finding needs distinct signers, one authorised through each
 route. That authority makes their eligible findings count toward the pair. It
-does not create general public power, make the findings true or replace the
-conditions required in the case.
+creates no general public power; the conditions the case requires still apply.
 
 Public answerability is separate. The court, the judging body, is answerable
 and holds neither auditor's authority to sign. A person whose only recorded act
@@ -37,9 +36,8 @@ that permission from a completed judgment.
 Two issuing routes and separate independence entries divide the premises an
 attacker would need to control. A forged seating alone does not produce the
 authority to sign without clear history reconciled across witnessed records. Two
-compromised witnesses can nevertheless report the same invented history. The
-rules test agreement and scope; they do not determine that the witnesses told
-the truth.
+compromised witnesses can nevertheless report the same invented history; the
+rules test their agreement and scope.
 
 The paired-finding rule also does not require its target to have a personhood
 entry. A complete, properly made case can therefore produce a finding against a
@@ -85,8 +83,8 @@ Wren the other examiner. Even with the extra route, their pair cannot obtain
 permission for the finding. Suppose those conditions were removed as well as the
 conditions for the authority to sign: the proposed finding would then receive
 permission. Even there, permission alone does not manufacture a completed
-judgment. These comparisons show the work those conditions do. They do not
-prove that every defect in appointment is caught again at signing.
+judgment. These comparisons show the work those conditions do; they leave open
+whether every defect in appointment is caught again at signing.
 
 Restoration marks a different boundary. Suppose a properly made appellate act
 ended Mael's personal finding: the restriction on Mael's authority to sign,
@@ -122,14 +120,13 @@ Missing relief alone confines nobody. Custody requires positive merits,
 defence, procedure, current authority and lawful placement evidence. Accessible
 challenge intake is a condition of renewal, and an unresolved filing suspends
 the case through an independent route. These safeguards distinguish permission
-to seek review, interim protection and the eventual judgment. They cannot
-show that an outside order was honestly reported or physically obeyed.
+to seek review, interim protection and the eventual judgment. Whether an order
+was obeyed belongs to the second book.
 
-## What this rests on
+## What this cannot settle
 
-The version in force, witnessed history and case evidence are recorded inputs.
-The formal constitution can refuse a directly entered authority to sign and test
-the relationships among those inputs.
+The formal constitution tests how the version in force, witnessed history and
+case evidence relate.
 It does not authenticate an election or establish that nominally
 different writers are independent in practice.
 
@@ -141,9 +138,7 @@ institutional execution have separate responsibilities.
 A seating by the electorate or the convocation in this chapter is not
 automatically a federal office or current mandate. Nor does a current
 public-power certificate silently replace the auditor's authority to sign or its
-case-bound independence requirements. These boundaries locate what must be
-justified and verified; they are not a proof that all input failures are
-unavoidable or adequately controlled.
+case-bound independence requirements.
 
 The next chapter follows the protection of someone who exposes an answerable
 actor, before turning to the findings an authorised pair may make.

@@ -81,8 +81,8 @@ That witness's entries test the distinction. An attestation naming essentiality
 is recognised as naming a permitted ground. An invented revenue threshold
 is not. A gatekeeping *function class* cannot be substituted
 for a *ground*. The categories stay separate even when the same witness writes
-each entry. None of this proves that essentiality or gatekeeping exists in the
-world; it settles which claims the finding can use.
+each entry. The rules measure no dominance, essentiality or gatekeeping; the
+test settles which claims the finding can use.
 
 The finding must also concern a public-facing, delegated, essential, gatekeeping
 or system-steering function. Its tier must match its reach: a function confined
@@ -120,9 +120,7 @@ the affected conclusions. Expiry cases separately show restrictive
 authority ending while ordinary rights and public continuity duties remain.
 Enterprise failure cannot extinguish a remedy or authorise interruption of an
 essential service. A lapsed manager loses authority, not the institution's
-responsibility to secure continuity. Whether the manager actually stops and
-the successor actually provides the service requires evidence beyond those
-conclusions.
+responsibility to secure continuity.
 
 ## Public money
 
@@ -143,7 +141,7 @@ making either a constitutional requirement.
 
 During budget deadlock, prior authority for essential provision continues
 without creating new spending power. That rule allocates legal
-responsibility; it does not show that funds, staff or supplies exist.
+responsibility.
 
 ## Money you can hold in your hand
 
@@ -164,9 +162,9 @@ floor service. The purpose limits described in the chapter on earning above
 the floor also prevent reuse of a contribution record as a standing, worth,
 risk or political score.
 
-Cash, vouchers and insurance approvals are instruments, not evidence that food,
-housing or care reached someone. Delivery still requires the receiving-side
-evidence described earlier.
+Cash, vouchers and insurance approvals are instruments. Showing that food,
+housing or care reached someone still requires the receiving-side evidence
+described earlier.
 
 ## Which tier decides
 
@@ -179,31 +177,14 @@ taxation or pre-emption power.
 Residual ownership, land, enterprise, service and local-development policy is
 regional or local. Regions may protect more strongly, but cannot lower common
 floors or minima, obstruct portability, impose waiting periods or property
-qualifications, or use fiscal competition to defeat equality. The division
+requirements, or use fiscal competition to defeat equality. The division
 allows different provision without making a move across regions a loss of rights.
 
-## The child with nobody
+## What this cannot settle
 
-Nell's record holds no property, contract, enterprise, debt or account. It
-still produces the prohibitions on economic gates, payment instruments counted
-as delivery, presumed household provision and scoring voluntary life. The State
-owes Nell a dwelling. None of these claims waits for evidence of purchasing
-power, and the absent financial record proves nothing about Nell's actual
-possessions.
-
-## What none of this counts
-
-A complete power record shows formal authority, not its exercise. It proves
-no acquisition, tax payment or functioning market. A permitted ground for
-regulating private power does not prove the ground true. A prohibition does not
-show that a court enforced it. The rules value no property, measure no
-dominance and operate no payment system.
-
-Those limits leave constitutional choices open to assessment: whether the
-powers are sufficiently bounded, whether the duties protect their intended
-recipients, and whether a remedy can answer the specified failure. Operational
-rates, budgets and institutions need further design; they cannot be produced
-by calling a formal result complete.
+The rules value no property and operate no payment system. Whether funds, staff
+and supplies exist, a manager stops, a tax is paid or a service continues
+belongs to the second book.
 
 The floor cannot depend on purchasing power, and wealth gives no exemption
 from public duties. The next chapter asks how equal access works when the

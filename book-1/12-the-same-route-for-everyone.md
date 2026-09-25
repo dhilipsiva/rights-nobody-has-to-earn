@@ -25,8 +25,8 @@ pattern, and retaliation for complaining. A single comparator is not required.
 
 The proceeding must identify a recognised form. A witness's entry naming
 retaliation matches the permitted vocabulary; an invented form does not. This
-keeps the formal route tied to its defined claims. It does not show that all
-discrimination has been identified or that any allegation is true.
+keeps the formal route tied to its defined claims; it does not show that all
+discrimination has been identified.
 
 ## Who is bound, and where private life stays private
 
@@ -53,9 +53,8 @@ and proportionality. Neither test may balance away the protected core.
 A credible barrier or group pattern can shift the burden in a remedial equality
 proceeding. It cannot reverse a criminal burden or prove guilt. The pattern
 case permits the claimant to pursue relief and obliges the responding office
-to hear it; no confinement or credibility finding follows for the claimant.
-The case also produces no confinement or credibility finding for Cira, the
-comparison subject.
+to hear it. No confinement or credibility finding follows for the claimant or
+for Cira, the comparison subject.
 
 ## Accessibility makes rights usable
 
@@ -65,12 +64,12 @@ extra entitlement available only after the ordinary route fails.
 
 The accommodation case concerns a physical barrier. Its reviewed record states
 that the person was consulted, identifies their requirements, and records an
-effective adjustment with reasons and a prompt challenge route. The adjustment
-must impose neither cost on the person nor inferior status. A provider's claim
-of undue burden is assessed across the responsible institution, not a local
-desk's budget. If the provider genuinely cannot make the adjustment, public
-continuity must secure an equivalent alternative without making the person
-start again.
+adjustment that meets them, with reasons and a prompt challenge route. The
+adjustment must impose neither cost on the person nor inferior status. A
+provider's claim of undue burden is assessed across the responsible
+institution, not a local desk's budget. If the provider genuinely cannot make
+the adjustment, public continuity must secure an equivalent alternative without
+making the person start again.
 
 Distinct source, evidence and review attesters, an office that must answer
 challenges and an independent alternate, separate from the actor and the
@@ -90,10 +89,9 @@ record gave.
 
 The available barrier kinds also cover sensory, cognitive, linguistic, digital,
 geographic, financial and procedural obstacles. An unrecognised kind cannot
-complete the record. A missing accommodation record is not itself proof of
-withholding, and the equality remedy must itself be accessible. Equal standing
-can require unequal resources; the rules identify duties but do not provide
-those resources or show that an adjustment arrived.
+complete the record. The equality remedy must itself be accessible. Equal
+standing can require unequal resources; whether they are provided and an
+adjustment arrives belongs to the second book.
 
 ## Patterns without verdicts
 
@@ -163,22 +161,6 @@ These prohibitions do not certify the adequacy of every other rule. The later
 chapters must show what each distinction does: which facts support placement,
 which authority permits confinement, and what a credibility finding requires.
 Equal protection remains a standard those mechanisms must satisfy.
-
-## The child with nobody
-
-Nell is owed equal protection without evidence of family, home or an adult's
-support. The rules conclude the relevant prohibitions on substituting those
-statuses for a finding, and the State still owes Nell learning. No accommodation
-or measure is recorded for Nell. That absence shows neither equal access nor
-its denial; it leaves the duties intact and their delivery unproved.
-
-## What this does not show
-
-A completed accommodation record is not evidence that an adjustment was
-delivered, and a completed measure is not evidence that its objective was
-achieved. Opening a proceeding on a pattern does not prove the pattern true.
-Collection methods, implementation and empirical evaluation need evidence
-beyond these formal conclusions.
 
 Equality changes the route to a right when identical treatment leaves a barrier
 in place. The next chapter asks about the conditions of life that no individual

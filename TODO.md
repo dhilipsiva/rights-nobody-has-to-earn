@@ -217,36 +217,12 @@ unimplemented until the items named here land.
 
 ## Ordered revision backlog
 
-Work in this order: item 52, which prepares; items
-53–63 carry the structure and the rewrite under the ratified rulings; item 64
-finishes production, 65 closes the revision, and 66 is optional. Numbering
-continues from items 01–33, which `CLAUDE.md` records; items 34–51 and 67–72
-are complete and recorded there too. Chapter numbers refer to the [current
-reading sequence](book-1/contents.json), which the plan also uses, until item 53
-changes it.
-
-### Prose that does not wait for the structure
-
-- [ ] **52. State the general limits once, and keep only each chapter's own.**
-
-  **Scope:** the opening and every chapter; plan §6.1 and §6.5.
-
-  Write one opening page stating the general limits: the rules read records,
-  not the world; a conclusion does not prove its inputs; an entitlement is not
-  a delivery; and operation belongs to Book 2. Then remove restatements of
-  them from the chapters, keeping each chapter's own limit (a false witness,
-  an absent record, a stopped clock, an unperformed remedy) beside the claim
-  it qualifies, as item 29 required. Replace the limitation headings with at
-  most one short passage per chapter on what it cannot settle, and update the
-  coverage entries they anchor. Lead with what is true, then what is not:
-  "Nell is owed food; nobody has yet shown that food arrived." Where a
-  chapter's limit is a liveness limit, point once across the seam to the
-  second book. Reduce the child sections as ruling D5 directs, recording each
-  removal in `CHILD_SLOT_EXEMPT` with its reason.
-
-  **Done when:** each chapter's disclaimer and negation figures fall toward
-  the lint's thresholds, every claim keeps the qualification it needs, and no
-  sentence implies an arrival.
+Work in this order: items 53–63 carry the structure and the rewrite under the
+ratified rulings; item 64 finishes production, 65 closes the revision, and 66
+is optional. Numbering continues from items 01–33, which `CLAUDE.md` records;
+items 34–52 and 67–72 are complete and recorded there too. Chapter numbers
+refer to the [current reading sequence](book-1/contents.json), which the plan
+also uses, until item 53 changes it.
 
 ### Structure and rewrite
 

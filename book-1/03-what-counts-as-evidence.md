@@ -12,13 +12,12 @@ The admitted kinds include births and encounters, employment and teaching,
 injuries and judgments, relationships, proposals, appointments, receipts and
 challenges. They also include specified evidence about sources, review periods
 and whether a status continues from one version of the record to the next.
-They are not all direct observations. Some report a finding someone has
-already made.
+Some are direct observations; others report a finding someone has already
+made.
 
 Personhood itself may be entered directly or follow from the roots in the
 previous chapter. The name used at first contact may be temporary. Neither
-that name nor the birth entry authenticates a civil identity. The rules can
-control the form of a report without showing that its content is true.
+that name nor the birth entry authenticates a civil identity.
 
 ## What is missing
 
@@ -27,7 +26,7 @@ productivity or predicted risk. An institution cannot add one merely by
 asserting it. Nor does the constitutional record admit an unrestricted file
 of someone's wealth, religion, ancestry, politics, health or associations.
 
-That limit does not prohibit every record an operating society needs. Records
+That limit leaves room for the records an operating society needs: records
 for a particular lawful purpose have separate permissions, access rights and
 limits on use, set out in the chapter on what may be kept about you. Permission
 to hold a record is not permission to copy its contents into every constitutional
@@ -89,10 +88,11 @@ findings. Those findings permit consideration of secure placement. A separate
 decision must show why a less restrictive place is insufficient. Severity
 alone cannot choose a destination or supply current authority to confine.
 
-A conclusion the rules reach is not necessarily supported by a long chain.
-Nor are all its inputs observations. The rules can forbid a direct verdict
-while accepting a reported finding that has almost the same effect. That is a
-separate question from whether the verdict can be asserted directly.
+A conclusion the rules reach may follow from a short chain, and some of its
+inputs report judgments rather than observations. The rules can forbid a direct
+verdict while accepting a reported finding that has almost the same effect.
+Naming the finder and requiring independent review make responsibility for
+that finding explicit.
 
 ## One examination is not a credibility finding
 
@@ -113,10 +113,9 @@ require the completed case and its historical eligibility and procedure. The
 chapter on credibility findings follows those conditions and the
 case-specific route to restoration.
 
-The conclusion here is limited to the case: the examiner's entry makes no
-credibility finding against Esa. It is not a claim that every investigation is
-costless or that a lone finding can have no consequence anywhere in the design.
-The recorded act of examination and the adverse conclusion are distinct.
+The recorded act of examination and the adverse conclusion are distinct. That
+holds for this case; it is not a claim that every investigation is costless or
+that a lone finding can have no consequence anywhere in the design.
 
 ## Changing the vocabulary
 
@@ -131,8 +130,8 @@ the editor's authority to make it. Nor does it determine whether the new word
 conceals a judgment that should require a separate decision.
 
 The protected register names articles governing the floor, prisoner personhood
-and the register itself. A proposal's declared target establishes neither its
-effects nor authority to enact it. Recording a proposal under a person's name
+and the register itself. A proposal's declared target shows neither its effects
+nor authority to enact it. Recording a proposal under a person's name
 cannot create a personal credibility finding either. Adding a name to the
 register would not make it inspect what a source edit actually does.
 
@@ -147,8 +146,8 @@ The amendment chapter follows that route and its limits.
 
 The source review for governmental and membership rules likewise identifies
 the constitutional power and decision supporting a proposed change. That
-makes the claimed authority inspectable. It does not prove democratic adoption,
-authenticate the premises or entrench meaning by checking a label.
+makes the claimed authority inspectable. It does not prove democratic adoption
+or entrench meaning by checking a label.
 
 ## False or missing inputs
 
@@ -158,9 +157,8 @@ can do the same for a name that is not a known public body. The rules do not
 show that a human being answers to it.
 
 The opposite omission also matters. A temporary encounter name can start
-standing before civil identity is reconciled, but an encounter that nobody
-reports has no consequences in the record. The duty to serve cannot observe
-or enter the person for itself.
+standing before civil identity is reconciled, but only once the encounter is
+reported: the duty to serve cannot observe or enter the person for itself.
 
 There is a protection for a status already witnessed in an accepted earlier
 version of the record. An accepted later version must state that the status
@@ -190,9 +188,8 @@ A defect in a court's jurisdiction or independence needs a properly made
 disposition of the affected case. The disposition identifies the subject,
 offence, ground, evidence and independent appellate actors; a party or the
 original adjudicator cannot decide the appeal. Successful review ends the
-affected authority without erasing the injury record or deciding another case.
-The reasoner checks that contract. It does not authenticate the witnesses or
-physically release anyone.
+affected authority without erasing the injury record or deciding another case,
+and without itself releasing anyone.
 
 Other entries have narrower reach. Writing that someone has a family cannot
 worsen confinement. An absent parent, marriage or sibling entry cannot show
@@ -202,11 +199,6 @@ in the required form can support the executable ballot conclusion, but the
 legal status of adulthood does not originate in the entry. A forged or
 withheld entry remains a hazard for the ballot record; neither an age nor an
 outside clock is verified here.
-
-Reserved conclusions cannot be written directly. Their admitted premises can
-still include judgments rather than observations. Naming the finder and requiring
-independent review make responsibility explicit; a closed vocabulary cannot
-authenticate those actors or prove the truth of their account.
 
 How many people must act before a record takes effect depends on what it does. A
 record that only gives or preserves something for the person it concerns, such

@@ -67,19 +67,35 @@ begins without a request; the prisoner tests what remains under power. Neither
 is a model of ordinary life. Employment, friendship, care, inquiry, belief and
 political choice are what the institutions must serve.
 
-Two distinctions will matter from the first chapter. A **record** is what the
-rules are told; it is not the whole world. A **conclusion** follows from that
-record and the rules; it does not prove the record true or make a promised
-service arrive. The child's entitlements can all follow while no
-delivery is shown. The cases attribute no fear, comfort or hope to their named
-people. Any feelings you imagine belong to your reading, not to their evidence.
+Four limits hold on every page, and the chapters leave them unstated.
+
+- **The rules read records.** A record is what the rules are told, and what
+  nobody entered is silence: the rules treat an absent entry as absent, never
+  as a finding about the world.
+- **A conclusion is only as true as its inputs.** It follows from the record
+  and the rules, and a false entry yields a false conclusion as reliably as a
+  true one yields a true one. The rules check that a conclusion's evidence is
+  present and properly made, and leave its honesty to people who can
+  investigate.
+- **An entitlement names a debt.** When the rules conclude that a person is
+  owed food, they say who owes it and what evidence would show that it
+  arrived; whether it arrived is a separate fact. A duty stays owed until it
+  is performed, and an alarm calls for a response it cannot give.
+- **Operation belongs to the second book.** Whether offices are staffed,
+  services funded and duties carried out is the subject of *What It Would
+  Take*; this volume specifies the destination.
+
+Each chapter keeps only the limits particular to it, such as a witness who may
+be false, a record of a kind nobody keeps, a clock that may stop or a remedy
+that may never be performed, beside the claim it qualifies. The child's
+entitlements can all follow while no delivery is shown. The cases attribute
+no fear, comfort or hope to their named people. Any feelings you imagine
+belong to your reading, not to their evidence.
 
 *The Rights Nobody Has to Earn* makes its commitments inspectable. That cannot
 make them just. I speak directly in this opening, in Part V's arguments and
 in the optional method; the intervening chapters state the consequences of
-the formal design. An exposed failure still needs resolution. A constitutional
-duty still needs people and resources to fulfil it. This volume specifies the
-destination; *What It Would Take*, the second book, owns operation and transition.
+the formal design. An exposed failure still needs resolution.
 
 The commitments have a lineage, and Part V credits each idea where its argument
 uses it: Henry Shue's case that subsistence is a basic right; the duties to

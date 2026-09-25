@@ -1174,3 +1174,15 @@ Boss is Tove, Rebel Iris, Sly Lior, Vex Mael, Hex Saba, Rex Dara, Lupo Edo, Don
 Faro, and the victim fixture Scapegoat is Tamsin. The sections above keep the
 names in use when they were written. The exact prose is `session-drafted,
 author-approved under delegated approval (2026-09-13)`.
+
+## The general limits, stated once — item 52, 2026-09-25
+
+The opening states four limits that hold on every page — the rules read
+records; a conclusion is only as true as its inputs; an entitlement names a
+debt; operation belongs to the second book — and the chapters leave them
+unstated. Each chapter keeps the limits particular to its own rules beside the
+claims they qualify, holds at most one "What this cannot settle" passage, and
+points to the second book once where its limit is whether anyone acted. The
+child with nobody returns in the eight chapters named in the child decision.
+The exact prose is `session-drafted, author-approved under delegated approval
+(2026-09-13)`.

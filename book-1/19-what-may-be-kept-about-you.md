@@ -51,14 +51,14 @@ computed score would enter; these rules read no computed value and draw no
 conclusion from one.
 
 A person may seek inspection, correction, lawful deletion or review of the use
-of their own record, without being handed a reusable classification
-in return, and without anyone else's private record being exposed. Asking
-creates a duty to review the request; it does not decide it. When an
-independent finding shows that the reviewer failed to answer, the duty moves to
-an independent alternate, and silence still proves nothing about the person who
-asked. When the stated end arrives or the purpose runs out, what is held must
-be deleted or narrowed, with a record of what was done, no quiet extension and
-no rebuilding it from copies.
+of their own record, without being handed a reusable classification in return,
+and without anyone else's private record being exposed. Asking creates a duty to
+review the request and leaves the decision to that review. When an independent
+finding shows that the reviewer failed to answer, the duty moves to an
+independent alternate, and the silence says nothing about the person who asked.
+When the stated end arrives or the purpose runs out, what is held must be
+deleted or narrowed, with a record of what was done, no quiet extension and no
+rebuilding it from copies.
 
 ### When the input is unlawful
 
@@ -70,7 +70,7 @@ explanation and human review. The subject keeps the right to contest the
 automated support. Withdrawing permission cannot discharge those obligations
 while the record of the undertaking remains. The defect finding also creates
 duties to review and correct the unsupported use and publish the correction.
-An unrelated defect does not withdraw an unaffected use.
+An unrelated defect leaves an unaffected use standing.
 
 Other recognised defects include purpose drift, bulk or purchased data,
 unexplained automated effects, machine-only decisions, uncorrected inaccuracy,
@@ -103,8 +103,8 @@ The statistical record stays apart from the record that decides a person's
 rights, and from records used for eligibility or enforcement. Small groups
 and unusual intersections need protection against being identified through
 an aggregate. Permission for one dataset, purpose, method version and evidence
-period does not license another use. Refusing to participate does not reduce
-any right.
+period does not license another use. Refusing to participate leaves every
+right intact.
 
 A credible group pattern can open an independent equality audit and require
 a respondent to explain and justify a challenged measure. The presumption
@@ -116,39 +116,27 @@ A person can seek access to their own lawfully held evidence, correction,
 lawful deletion and independent challenge without receiving a reusable
 identity classification. A request creates a duty to review it, not permission
 to expose somebody else's private record. A failure to respond, separately
-shown, creates a duty on an independent alternate; silence alone proves
+shown, creates a duty on an independent alternate; silence alone shows
 neither approval nor misconduct by the person who asked.
 
 A current reviewed defect can stop the affected use and require correction.
-Undercount is not disqualifying merely because it exists: the finding must
-show why it makes that use unsupported. Classification harm, political
-manipulation, stale data, method drift, suppression and identity reuse are
-open to the same challenge. No statistical finding takes anyone's standing,
-floor, liberty, ballot or permanent public answerability.
+Undercount disqualifies a use only when the finding shows why it makes that use
+unsupported. Classification harm, political manipulation, stale data, method
+drift, suppression and identity reuse are open to the same challenge. No
+statistical finding takes anyone's standing, floor, liberty, ballot or permanent
+public answerability.
 
-These rules use the statistics and findings they are given. They neither
-count a population nor calculate a disparity, authenticate an identity or
-observe a deadline. Publication and response remain duties to perform.
-
-## The child with nobody
-
-Nell's birth entry is enough for personhood and for the care owed. The case
-requires no health, school or administrative file and no enrolment through
-a service.
-
-The firewall forbids making service access a route into enforcement records.
-An appointment to assist Nell uses only information needed for that matter,
-with no reusable classification or enrolment. The advocate must begin without
-a request. Nell's record contains no personal access or correction request
-or finding of a reviewer's nonresponse to activate those separate routes.
+These rules use the statistics and findings they are given. Counting a
+population, calculating a disparity, authenticating an identity and observing a
+deadline fall outside them.
 
 ## Giving the limits effect
 
-The rules test authority and duties over the evidence they are given. They
-authenticate no input, store no file, evaluate no deployed model and perform no
-deletion.
-Storage, security, retention engineering and case administration must give
-practical effect to the legal limits.
+The rules test authority and duties over the evidence they are given, and they
+evaluate no deployed model. Storage, security, retention engineering and case
+administration must give practical effect to the legal limits; whether files
+are kept securely, data deleted, corrections published and requests answered
+belongs to the second book.
 
 The permission to keep a record stays bounded by its purpose even when another
 use would be convenient. The next chapter puts that discipline under a more

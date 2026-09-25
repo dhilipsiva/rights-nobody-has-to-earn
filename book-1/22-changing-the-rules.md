@@ -18,7 +18,7 @@ settlement is directly affected.
 Those are legal requirements over recorded results. The rules do not count
 a changing electorate, authenticate submissions or discover an omitted voter.
 The resulting authority is bounded to the recorded proposal and current source;
-it does not identify, publish or install a replacement by itself.
+identifying, publishing and installing a replacement are separate stages.
 
 ## Certification, publication and effect
 
@@ -41,9 +41,9 @@ candidate priority. A transition cannot be reused against a later base.
 Returning to earlier wording needs fresh authority and a new transition while
 preserving the intervening record.
 
-Comparing the records can show whether they concern the same text. It does
-not show that democratic approval was authentic, that publication occurred or
-that an institution adopted the replacement. The
+Comparing the records can show whether they concern the same text, though not
+whether democratic approval was authentic. Whether publication occurred and an
+institution adopted the replacement belongs to the second book. The
 [method](method.md#comparing-and-selecting-an-amendment) distinguishes the
 formal evidence requirements from the separate comparison of exact text and
 version changes.
@@ -60,8 +60,8 @@ correction does not itself undo an individual judgment or perform a remedy.
 The economic constitution entrenches no single ownership form, provider mix,
 market share, profit, bailout, immunity or monopoly. Democratic law may change
 economic instruments above the floor. It cannot use that freedom to evade
-universal standing, equality, the floor, core liberty, due process, effective
-remedy or protected commons.
+universal standing, equality, the floor, core liberty, due process, a remedy
+that works or protected commons.
 
 Direct protection of credibly sentient animals and the prohibitions on severe
 avoidable suffering and dispensable killing are also unamendable. Exact-change
@@ -88,8 +88,8 @@ candidate proceeds.
 
 Refusing authority for such a candidate does not forbid discussing it, remove
 anyone's human rights or suspend necessary animal care. It remains a conclusion
-over the recorded evidence of the candidate's effects. The rules do not discover
-every concealed change or authenticate the evidence for themselves.
+over the recorded evidence of the candidate's effects, so the rules can miss a
+change concealed from that evidence.
 
 ## What a proposal entry establishes
 
@@ -147,20 +147,9 @@ of those questions by itself.
 
 The integrity of the record those rules are written in also remains necessary.
 A person with access to a source file can change it outside the authorised
-process. Formal refusal of a candidate is not physical prevention of that edit,
-and a passing suite is not authentication of its authors or effects. It
-shows bounded relationships between recorded objects; it is not a
-self-enforcing republic.
+process. Formal refusal of a candidate leaves that edit physically possible,
+and a passing suite authenticates neither its authors nor its effects; it shows
+bounded relationships between recorded objects.
 
-## The child with nobody
-
-Nell is a person and is owed food under this constitution. The registered floor
-and personhood names do not secure those source rules by themselves. A concealed
-source edit can change what follows without giving any authority for that
-change.
-
-The exact-change route instead requires positive compatibility review tied to
-the actual candidate, including the universal floor. Its conclusion remains
-conditional on that evidence. The child needs preservation of the entitlement,
-not a proposal with an acceptable name. The next chapter examines another
-claim that needs more than a name: who may sign a finding about someone else.
+The next chapter examines another claim that needs more than a name: who may
+sign a finding about someone else.

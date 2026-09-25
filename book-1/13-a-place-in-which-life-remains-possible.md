@@ -61,8 +61,7 @@ A properly made evidence record states that no presently available route meets
 both, after examining feasible alternatives and procurement. The specified
 interim route requires essential supply to continue by the least harmful
 available means and identifies a bounded transition to an alternative supply.
-These are recorded premises, not measured water levels or a claim that another
-supply has arrived.
+These are recorded premises, not measured water levels.
 
 The conclusion is a duty to preserve immediate human continuity, obtain
 alternatives, repair the breach and reassess. Every unmet part of the human
@@ -123,8 +122,7 @@ harmed people or a collective remains a separate debt.
 Changing a contractor, corporate form, supply chain or border cannot export
 harm forbidden at home. Conservation cannot justify dispossession. The rules
 separately prohibit erasing ecological ceilings, selecting floor loss and
-delaying restoration because the responsible party is insolvent. They show no
-measured condition or completed restoration.
+delaying restoration because the responsible party is insolvent.
 
 ## Protection does not require being human
 
@@ -249,7 +247,7 @@ alternatives, uncertainty, reversibility and continuity separate. Categorical
 prohibitions come first. Neither office's preference nor a single usefulness
 score decides the conflict, and choosing a route does not provide its missing
 permissions. The rules take the decisions and the record of prior resolutions
-as given; they neither authenticate them nor perform the review.
+as given.
 
 In the case involving both offices, the Guardian states the river's claim and
 the Animal Advocate states the individual animals' claim. The independent
@@ -262,7 +260,7 @@ conservation purpose, necessity, absence of a materially less harmful
 alternative, welfare safeguards and independent prior review; only that
 complete animal record permits the particular use. With its prior review
 missing, the permission does not follow even though the conflict decision is
-still complete. Neither conclusion shows that any fish was rescued.
+still complete.
 
 ## When a use has to be stopped
 
@@ -295,8 +293,7 @@ intentional or reckless serious violation, the applicable proof, defence,
 independent hearing and appeal. An aggregate pattern cannot reverse the
 criminal burden, and no animal is punished for the harm.
 
-Each order names what must happen and who owes it. Evidence that care reached
-the animal, suffering stopped or a recurrence was prevented remains separate.
+Each order names what must happen and who owes it.
 
 ## When the record the protection rested on was defective
 
@@ -320,25 +317,15 @@ Withdrawal reaches the affected reliance. It shows neither safety nor guilt
 and removes no human standing, floor, ballot, liberty, collective right or
 animal care. Lawful history, protected evidence, reasons and challenge
 remain available. Correcting the record does not renew its permission: the
-replacement must meet its own complete conditions for authority. Neither the
-correction nor the duties prove that an activity stopped or care continued.
+replacement must meet its own complete conditions for authority.
 
-## The child with nobody
+## What this cannot settle
 
-Nell holds the environmental claim without owning land or having an adult
-speak first. The rules preserve the child's access to environmental
-information and review, prohibit ranking Nell by environmental worth, and keep
-the debt of care the State owes the child. No claim or assessment is recorded
-for Nell. The birth entry shows neither safe surroundings nor restored
-conditions; the duties do not wait for proof that the child can assert them.
-
-## What none of this measures
-
-The rules determine no ceiling number, sentience, causation or authentic
-scientific finding. A completed authorisation is not a performed activity;
-a withdrawal is not a stopped use. Measurements, inventories, monitoring,
-restoration and veterinary capacity, and transitions in food and research
-require evidence and operation beyond the rules.
+Ceiling numbers rest with democratic law, causation with adjudication and
+scientific findings with independent review; the rules determine none of them.
+Measurement, inventories, monitoring, restoration and veterinary capacity, the
+transitions in food and research, and whether any order was obeyed belong to
+the second book.
 
 The constitutional demand is that these claims remain distinct when decisions
 conflict: a human floor, an environmental right, a commons condition and an

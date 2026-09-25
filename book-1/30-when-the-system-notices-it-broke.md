@@ -3,10 +3,8 @@
 What must follow when the record identifies a breach? Suppose a placement
 report conflicts with the place authorised for Ruk. It produces a marker and a
 duty on the review body. The route from that finding to redress must identify
-who answers and what happens if they do not.
-
-Each connection needs checking. An accurate finding does not complete a
-remedy, and a response duty cannot make an inaccurate finding true.
+who answers and what happens if they do not, and each connection needs
+checking.
 
 Placement is one of several kinds of fault the record can express. Others
 concern company during confinement, what passes from one witnessed version of
@@ -39,9 +37,8 @@ location in the constitution nor its name makes it reliable.
 A placement alarm compares a report with an authority. Denied contact needs
 a different kind of evidence: a finding about the conditions of actual holding.
 
-The prisoners in the record have no matching company receipts. That absence
-produces no isolation finding. Missing evidence of company is not positive
-evidence that contact was denied.
+The prisoners in the record have no matching company receipts, and that
+absence produces no isolation finding.
 
 An isolation finding instead identifies a physically held person, the holding,
 responsible holder, place, period and evidence. An authorised witness and an
@@ -60,11 +57,11 @@ for protection. A company receipt from another encounter does not erase the
 recorded finding about the specified period.
 
 The private-power finding in chapter 11 illustrates a related evidence boundary
-without relying on absence. It requires a named ground, such as an essential function
-or the inability to leave. Checking that the ground belongs to the permitted vocabulary
-can reject an unsupported kind of claim. It cannot prove that an admitted claim
-is true of the world. Agreement among named reviewers is evidence submitted for
-assessment, not a guarantee of their independence or accuracy.
+without relying on absence. It requires a named ground, such as an essential
+function or the inability to leave. Checking that the ground belongs to the
+permitted vocabulary can reject an unsupported kind of claim, but not an untrue
+claim of an admitted kind. Agreement among named reviewers is evidence to
+assess, and it leaves their independence and accuracy open.
 
 ## From a marker to a duty
 
@@ -90,8 +87,8 @@ The adulthood case needs its own boundary. General adulthood attaches
 automatically at the common age; a registry entry is evidence, not the source
 of status. Missing or disputed evidence cannot lawfully prolong childhood, and an
 expiring right requires provisional adult treatment while evidence is reconciled.
-The executable challenge does not determine an outside age, provide the evidence,
-deliver a ballot, or make the appeals body act.
+The executable challenge does not determine an outside age or provide the
+evidence for it.
 
 Likewise, a vanished protected entry shows a mismatch between recorded versions.
 The comparison between versions has no way to represent the lawful retirement of
@@ -110,10 +107,9 @@ Chapter 7 follows the lawful source connecting a review duty to a named
 responding office, required actions, positive findings of non-response,
 alternates, continuity and remedy. This chapter's tests also try a simpler
 extension: infer a duty breach whenever the review body owes a response and no
-entry records its response. The engine accepts it. That demonstrates that
-further consequences are technically possible, but the missing entry still does
-not prove real non-response. The ordinary constitutional route requires its
-positive evidence.
+entry records its response. The engine accepts it, which shows that further
+consequences can be written; the ordinary constitutional route requires
+positive evidence of non-response instead of a missing entry.
 
 ## When the responsible office fails
 
@@ -122,13 +118,12 @@ that duty is only the first connection. Failure to answer needs its own
 finding before another office takes over.
 
 A non-response shown by positive evidence activates the separated alternate and
-the continuity route. If that alternate also fails, naming it has not completed
-the remedy. The bounded chain ends with duties still owed; it does not create
-an unlimited series of substitute offices. A failure that recurs across a whole
-tier takes the general route in Chapter 7: a certified pattern, a declaration, a
-public plan and interim measures. Failure grants neither office additional
-authority and does not take the subject's standing or floor. These are limits
-on the legal effects of non-response, not evidence of an adequate response.
+the continuity route. If that alternate also fails, the bounded chain ends with
+duties still owed; it does not create an unlimited series of substitute offices.
+A failure that recurs across a whole tier takes the general route in Chapter 7:
+a certified pattern, a declaration, a public plan and interim measures. Failure
+grants neither office additional authority and does not take the subject's
+standing or floor.
 
 Other cases need different continuity rules. A budget deadlock permits the treasury
 to continue an enumerated set under the last lawful authority, subject to expedited
@@ -151,9 +146,8 @@ contract, including prohibited priority keys, the minimum wherever usable supply
 permits, and recorded shortfall wherever it does not. People within jurisdiction or
 effective control cannot be defined out because they arrived recently.
 
-These routes assign responsibility and legal limits. Their adequacy remains a design
-question where a required connection is missing; their performance needs operational
-evidence. Naming an office settles neither question on its own.
+These routes assign responsibility and legal limits. Where a required
+connection is missing, their adequacy remains a design question.
 
 ## Withdrawing a defective authority
 
@@ -170,10 +164,9 @@ concluded. The office that must answer the challenge owes review and correction;
 the imposing body owes publication of the correction.
 
 A record holding has a similar dependency. If its reviewed authority fails, the
-processing and automated-use permissions built on it also fail. A supposed physical
-shortage shown to be a budget choice cannot continue to authorise scarcity
-allocation. These are withdrawals of formal authority. Whether publication resumed,
-surveillance stopped or withheld provision arrived is a further question.
+processing and automated-use permissions built on it also fail. A supposed
+physical shortage shown to be a budget choice cannot continue to authorise
+scarcity allocation. These are withdrawals of formal authority.
 
 The duties attached to the recorded undertaking continue through withdrawal.
 Chapter 19's holder still owes accuracy, security, protection from retaliation,
@@ -194,22 +187,22 @@ it must still be met.
 
 ## What can be checked
 
-The audit markers are conclusions. Directly asserting one is refused, so a writer
-cannot simply enter the audit's verdict. But false premises, omitted reports, or an
-incorrect rule can still produce a false or incomplete result. Protecting the
-conclusion from direct entry does not make the inputs trustworthy.
+The audit markers are conclusions. Directly asserting one is refused, so a
+writer cannot simply enter the audit's verdict. An omitted report or an
+incorrect rule can still leave a marker silent or wrong.
 
-The source gives particular findings a path through review, action, non-response,
-continuity, individual remedy, common-cause correction and recurrence checking. The
-book's tests show particular links and limits in that path. They cannot receive a
-filing, convene an institution, restore a person, or prove that a wrong has stopped.
+The source gives particular findings a path through review, action,
+non-response, continuity, individual remedy, common-cause correction and
+recurrence checking, and the book's tests show particular links and limits in
+that path. Whether anyone receives a filing, convenes an institution, restores
+a person or stops a wrong belongs to the second book.
 
 ## The child with nobody
 
 Nell's birth-only record holds neither a positive isolation finding nor a
 placement report, so neither marker fires. It holds no custody or conditions
 complaint to trigger this review duty. Nell is owed food, and nothing records
-food as received; that gap shows neither a meal nor a failure to provide one.
+food as received.
 
 Suppose a further rule were added: a marker that fires whenever a delivery is
 owed but unrecorded. It fires for Nell. That shows the inference can be written,

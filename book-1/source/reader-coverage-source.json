@@ -63,7 +63,7 @@
     {
       "id": "01-04",
       "chapter": "book-1/01-the-child-with-nobody.md",
-      "section": "What does not follow",
+      "section": "What delivery needs",
       "domain": "Material floor",
       "family": "DELIVERY-RECEIPT",
       "function": "both",
@@ -181,24 +181,9 @@
       ]
     },
     {
-      "id": "02-05",
-      "chapter": "book-1/02-who-counts.md",
-      "section": "The child with nobody",
-      "domain": "Personhood and equality",
-      "family": "UNIVERSAL-STANDING",
-      "function": "protective",
-      "setting": "the child with nobody: one birth entry and nothing else",
-      "trajectory": "works",
-      "basis": "book-1/02-who-counts.pins.nibli",
-      "pattern": "constructive",
-      "postures": [
-        "receives"
-      ]
-    },
-    {
       "id": "02-06",
       "chapter": "book-1/02-who-counts.md",
-      "section": "What none of this observes",
+      "section": "What this cannot settle",
       "domain": "Personhood and equality",
       "family": "UNIVERSAL-STANDING",
       "function": "protective",
@@ -361,21 +346,6 @@
       ]
     },
     {
-      "id": "04-03",
-      "chapter": "book-1/04-what-you-are-owed.md",
-      "section": "The child with nobody",
-      "domain": "Material floor",
-      "family": "ARTICLES",
-      "function": "protective",
-      "setting": "the child with nobody: one birth entry and nothing else",
-      "trajectory": "works",
-      "basis": "book-1/04-what-you-are-owed.pins.nibli",
-      "pattern": "constructive",
-      "postures": [
-        "receives"
-      ]
-    },
-    {
       "id": "05-00",
       "chapter": "book-1/05-whether-it-arrived.md",
       "section": "(preamble)",
@@ -453,7 +423,7 @@
     {
       "id": "05-05",
       "chapter": "book-1/05-whether-it-arrived.md",
-      "section": "What none of this proves",
+      "section": "What this cannot settle",
       "domain": "Material floor",
       "family": "DELIVERY-RECEIPT",
       "function": "protective",
@@ -603,7 +573,7 @@
     {
       "id": "06-08",
       "chapter": "book-1/06-when-there-is-genuinely-not-enough.md",
-      "section": "What none of this counts",
+      "section": "What this cannot settle",
       "domain": "Material floor",
       "family": "SCARCITY-AND-CONFLICT",
       "function": "protective",
@@ -812,21 +782,6 @@
       ]
     },
     {
-      "id": "07-16",
-      "chapter": "book-1/07-who-owes-and-what-follows.md",
-      "section": "The child with nobody",
-      "domain": "Material floor",
-      "family": "OBLIGATIONS",
-      "function": "protective",
-      "setting": "birth-only duties, then a bystander's observation opening review",
-      "trajectory": "unresolved",
-      "basis": "book-1/07-who-owes-and-what-follows.pins.nibli",
-      "pattern": "constructive",
-      "postures": [
-        "receives"
-      ]
-    },
-    {
       "id": "07-17",
       "chapter": "book-1/07-who-owes-and-what-follows.md",
       "section": "Duties still need performance",
@@ -871,36 +826,6 @@
       "pattern": "private-civic",
       "postures": [
         "chooses"
-      ]
-    },
-    {
-      "id": "08-02",
-      "chapter": "book-1/08-what-nobody-has-to-ask-permission-for.md",
-      "section": "The child with nobody",
-      "domain": "Knowledge, communication and culture",
-      "family": "KNOWLEDGE-AND-FREE-FIELD",
-      "function": "protective",
-      "setting": "the child with nobody: one birth entry and nothing else",
-      "trajectory": "works",
-      "basis": "book-1/08-what-nobody-has-to-ask-permission-for.pins.nibli",
-      "pattern": "private-civic",
-      "postures": [
-        "receives"
-      ]
-    },
-    {
-      "id": "08-03",
-      "chapter": "book-1/08-what-nobody-has-to-ask-permission-for.md",
-      "section": "What none of this certifies",
-      "domain": "Knowledge, communication and culture",
-      "family": "KNOWLEDGE-AND-FREE-FIELD",
-      "function": "protective",
-      "setting": "the boundary of a record that certifies nothing",
-      "trajectory": "unresolved",
-      "basis": "book-1/08-what-nobody-has-to-ask-permission-for.pins.nibli",
-      "pattern": "private-civic",
-      "postures": [
-        "receives"
       ]
     },
     {
@@ -1011,24 +936,9 @@
       ]
     },
     {
-      "id": "09-07",
-      "chapter": "book-1/09-earning-above-the-floor.md",
-      "section": "The child with nobody",
-      "domain": "Economy, property, work and commons",
-      "family": "INCOME-SECURITY",
-      "function": "protective",
-      "setting": "the child with nobody: one birth entry and nothing else",
-      "trajectory": "works",
-      "basis": "book-1/09-earning-above-the-floor.pins.nibli",
-      "pattern": "constructive",
-      "postures": [
-        "receives"
-      ]
-    },
-    {
       "id": "09-08",
       "chapter": "book-1/09-earning-above-the-floor.md",
-      "section": "What none of this counts",
+      "section": "What this cannot settle",
       "domain": "Economy, property, work and commons",
       "family": "ECONOMIC-CONSTITUTION",
       "function": "protective",
@@ -1120,7 +1030,7 @@
     {
       "id": "10-05",
       "chapter": "book-1/10-contribution.md",
-      "section": "What remains outside these entries",
+      "section": "What this cannot settle",
       "domain": "Economy, property, work and commons",
       "family": "ARTICLES",
       "function": "ordinary",
@@ -1254,24 +1164,9 @@
       ]
     },
     {
-      "id": "11-08",
-      "chapter": "book-1/11-what-money-cannot-buy.md",
-      "section": "The child with nobody",
-      "domain": "Economy, property, work and commons",
-      "family": "ECONOMIC-CONSTITUTION",
-      "function": "protective",
-      "setting": "the child with nobody: one birth entry and nothing else",
-      "trajectory": "works",
-      "basis": "book-1/11-what-money-cannot-buy.pins.nibli",
-      "pattern": "constructive",
-      "postures": [
-        "receives"
-      ]
-    },
-    {
       "id": "11-09",
       "chapter": "book-1/11-what-money-cannot-buy.md",
-      "section": "What none of this counts",
+      "section": "What this cannot settle",
       "domain": "Economy, property, work and commons",
       "family": "ECONOMIC-CONSTITUTION",
       "function": "protective",
@@ -1421,36 +1316,6 @@
       ]
     },
     {
-      "id": "12-09",
-      "chapter": "book-1/12-the-same-route-for-everyone.md",
-      "section": "The child with nobody",
-      "domain": "Personhood and equality",
-      "family": "SUBSTANTIVE-EQUALITY",
-      "function": "protective",
-      "setting": "the child with nobody: one birth entry and nothing else",
-      "trajectory": "works",
-      "basis": "book-1/12-the-same-route-for-everyone.pins.nibli",
-      "pattern": "constructive",
-      "postures": [
-        "receives"
-      ]
-    },
-    {
-      "id": "12-10",
-      "chapter": "book-1/12-the-same-route-for-everyone.md",
-      "section": "What this does not show",
-      "domain": "Personhood and equality",
-      "family": "SUBSTANTIVE-EQUALITY",
-      "function": "protective",
-      "setting": "the boundary of a record that finds no pattern",
-      "trajectory": "unresolved",
-      "basis": "book-1/12-the-same-route-for-everyone.pins.nibli",
-      "pattern": "constructive",
-      "postures": [
-        "receives"
-      ]
-    },
-    {
       "id": "13-00",
       "chapter": "book-1/13-a-place-in-which-life-remains-possible.md",
       "section": "(preamble)",
@@ -1572,24 +1437,9 @@
       ]
     },
     {
-      "id": "13-07",
-      "chapter": "book-1/13-a-place-in-which-life-remains-possible.md",
-      "section": "The child with nobody",
-      "domain": "Ecology, future generations and commons",
-      "family": "ECOLOGICAL-ANIMAL",
-      "function": "protective",
-      "setting": "the child with nobody: one birth entry and nothing else",
-      "trajectory": "works",
-      "basis": "book-1/13-a-place-in-which-life-remains-possible.pins.nibli",
-      "pattern": "constructive",
-      "postures": [
-        "receives"
-      ]
-    },
-    {
       "id": "13-08",
       "chapter": "book-1/13-a-place-in-which-life-remains-possible.md",
-      "section": "What none of this measures",
+      "section": "What this cannot settle",
       "domain": "Ecology, future generations and commons",
       "family": "ECOLOGICAL-ANIMAL",
       "function": "protective",
@@ -1784,7 +1634,7 @@
     {
       "id": "14-12",
       "chapter": "book-1/14-holding-a-role-in-somebodys-life.md",
-      "section": "What none of this decides",
+      "section": "What this cannot settle",
       "domain": "Life course, family, care and reproduction",
       "family": "FAMILY-LIFE-ORDINARY",
       "function": "protective",
@@ -1873,24 +1723,9 @@
       ]
     },
     {
-      "id": "15-05",
-      "chapter": "book-1/15-arriving-and-belonging.md",
-      "section": "The child with nobody",
-      "domain": "Borders, migration, asylum and expulsion",
-      "family": "MOBILITY-PLURALITY",
-      "function": "protective",
-      "setting": "the child with nobody: one birth entry and nothing else",
-      "trajectory": "unresolved",
-      "basis": "book-1/15-arriving-and-belonging.pins.nibli",
-      "pattern": "constructive",
-      "postures": [
-        "receives"
-      ]
-    },
-    {
       "id": "15-06",
       "chapter": "book-1/15-arriving-and-belonging.md",
-      "section": "What none of this admits",
+      "section": "What this cannot settle",
       "domain": "Borders, migration, asylum and expulsion",
       "family": "MOBILITY-PLURALITY",
       "function": "protective",
@@ -1990,21 +1825,6 @@
       "pattern": "democratic",
       "postures": [
         "governs"
-      ]
-    },
-    {
-      "id": "16-06",
-      "chapter": "book-1/16-public-answerability.md",
-      "section": "The child with nobody",
-      "domain": "Public institutions",
-      "family": "ARTICLES",
-      "function": "protective",
-      "setting": "the child with nobody: one birth entry and nothing else",
-      "trajectory": "works",
-      "basis": "book-1/16-public-answerability.pins.nibli",
-      "pattern": "democratic",
-      "postures": [
-        "receives"
       ]
     },
     {
@@ -2125,21 +1945,6 @@
       "pattern": "democratic",
       "postures": [
         "governs"
-      ]
-    },
-    {
-      "id": "17-08",
-      "chapter": "book-1/17-how-public-power-is-built.md",
-      "section": "The child with nobody",
-      "domain": "Public institutions",
-      "family": "STATE-FORM",
-      "function": "protective",
-      "setting": "the child with nobody: one birth entry and nothing else",
-      "trajectory": "unresolved",
-      "basis": "book-1/17-how-public-power-is-built.pins.nibli",
-      "pattern": "democratic",
-      "postures": [
-        "receives"
       ]
     },
     {
@@ -2308,21 +2113,6 @@
       ]
     },
     {
-      "id": "19-03",
-      "chapter": "book-1/19-what-may-be-kept-about-you.md",
-      "section": "The child with nobody",
-      "domain": "Records and accountability",
-      "family": "RECORD-POWER",
-      "function": "protective",
-      "setting": "health owed without service files; no personal request or nonresponse finding",
-      "trajectory": "unresolved",
-      "basis": "book-1/19-what-may-be-kept-about-you.pins.nibli",
-      "pattern": "records",
-      "postures": [
-        "receives"
-      ]
-    },
-    {
       "id": "19-04",
       "chapter": "book-1/19-what-may-be-kept-about-you.md",
       "section": "Giving the limits effect",
@@ -2440,21 +2230,6 @@
       "pattern": "coercive",
       "postures": [
         "governs"
-      ]
-    },
-    {
-      "id": "20-05",
-      "chapter": "book-1/20-a-crisis-does-not-suspend-the-republic.md",
-      "section": "The child with nobody",
-      "domain": "Emergency and resilience",
-      "family": "PUBLIC-SAFETY",
-      "function": "protective",
-      "setting": "a birth-only child beside a declaration, without a particular restraint",
-      "trajectory": "works",
-      "basis": "book-1/20-a-crisis-does-not-suspend-the-republic.pins.nibli",
-      "pattern": "coercive",
-      "postures": [
-        "receives"
       ]
     },
     {
@@ -2698,21 +2473,6 @@
       ]
     },
     {
-      "id": "22-06",
-      "chapter": "book-1/22-changing-the-rules.md",
-      "section": "The child with nobody",
-      "domain": "Democracy and amendment",
-      "family": "AMENDMENT-ENACTMENT",
-      "function": "protective",
-      "setting": "the child with nobody: one birth entry and nothing else",
-      "trajectory": "contested",
-      "basis": "book-1/22-changing-the-rules.pins.nibli",
-      "pattern": "democratic",
-      "postures": [
-        "receives"
-      ]
-    },
-    {
       "id": "23-00",
       "chapter": "book-1/23-who-holds-the-pen.md",
       "section": "(preamble)",
@@ -2790,7 +2550,7 @@
     {
       "id": "23-05",
       "chapter": "book-1/23-who-holds-the-pen.md",
-      "section": "What this rests on",
+      "section": "What this cannot settle",
       "domain": "Public institutions",
       "family": "ARTICLES",
       "function": "protective",
@@ -3013,21 +2773,6 @@
       ]
     },
     {
-      "id": "25-06",
-      "chapter": "book-1/25-voiding.md",
-      "section": "The child with nobody",
-      "domain": "Records and accountability",
-      "family": "ARTICLES",
-      "function": "protective",
-      "setting": "the child with nobody: one birth entry and nothing else",
-      "trajectory": "works",
-      "basis": "book-1/25-voiding.pins.nibli",
-      "pattern": "coercive",
-      "postures": [
-        "is acted upon"
-      ]
-    },
-    {
       "id": "26-00",
       "chapter": "book-1/26-clawback.md",
       "section": "(preamble)",
@@ -3150,7 +2895,7 @@
     {
       "id": "27-03",
       "chapter": "book-1/27-a-prisoner-is-a-person.md",
-      "section": "What this protection does not decide",
+      "section": "What this cannot settle",
       "domain": "Personhood and equality",
       "family": "ARTICLES",
       "function": "protective",
@@ -3283,21 +3028,6 @@
       ]
     },
     {
-      "id": "28-06",
-      "chapter": "book-1/28-where-people-are-put.md",
-      "section": "The child with nobody",
-      "domain": "Justice and coercion",
-      "family": "PLACEMENT",
-      "function": "protective",
-      "setting": "the child with nobody: one birth entry and nothing else",
-      "trajectory": "unresolved",
-      "basis": "book-1/28-where-people-are-put.pins.nibli",
-      "pattern": "coercive",
-      "postures": [
-        "receives"
-      ]
-    },
-    {
       "id": "29-00",
       "chapter": "book-1/29-the-one-thing-taken.md",
       "section": "(preamble)",
@@ -3415,21 +3145,6 @@
       "pattern": "coercive",
       "postures": [
         "governs"
-      ]
-    },
-    {
-      "id": "29-07",
-      "chapter": "book-1/29-the-one-thing-taken.md",
-      "section": "The child with nobody",
-      "domain": "Justice and coercion",
-      "family": "ARTICLES",
-      "function": "protective",
-      "setting": "the child with nobody: one birth entry and nothing else",
-      "trajectory": "works",
-      "basis": "book-1/29-the-one-thing-taken.pins.nibli",
-      "pattern": "coercive",
-      "postures": [
-        "receives"
       ]
     },
     {

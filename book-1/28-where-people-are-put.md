@@ -18,11 +18,10 @@ destination.
 
 The economic constitution keeps another boundary beside that one. A dwelling
 claim, tenancy, cooperative share, customary tenure, public housing, household
-residence and private ownership are different legal relations. Imperfect title
-does not erase the claim to an adequate secure dwelling. Eviction or foreclosure
-that threatens the floor requires law, notice, a hearing, proportionality,
-review and a real continuity route. A placement record gives no title and
-shows no delivered housing.
+residence and private ownership are different legal relations. The claim to an
+adequate secure dwelling survives imperfect title. Eviction or foreclosure that
+threatens the floor requires law, notice, a hearing, proportionality, review
+and a real continuity route. A placement record gives no title.
 
 A family entry does no placement work. Family form, kinship, caregiving,
 pregnancy, disability, poverty or culture cannot justify harsher confinement.
@@ -44,7 +43,8 @@ evidence and procedure. The adjudicator and independent merits reviewer must
 be authorised for that finding and agree on those fields. Their case must
 itself satisfy the criminal proof, defence and procedure requirements. A raw
 injury, attack or cruelty entry cannot stand in for a signed finding. The
-reasoner checks that record; it does not assess the harm itself.
+reasoner checks that record; the harm itself is assessed in the adjudicated
+finding.
 
 Hano's findings about Ivo show neither grave injury nor aggravated cruelty.
 Ruk has a separately supported finding of grave injury to Opal. Ruk's recorded
@@ -87,12 +87,12 @@ Competing reported destinations also trigger review. Competing fully reviewed
 placement records do more: they block custody authority until a lawful placement
 is settled. They cannot be resolved by choosing a favourable record name.
 The marker identifies the affected person and creates the review body's
-obligation; it does not show that an investigation or relocation occurred.
+obligation.
 
-The absence of a report means no finding about an unobserved physical
-placement. Authority does not default to any place: positive lawful placement
-evidence is required before confinement may follow. Permission, a report of
-use, a finding of fault and a performed remedy answer different questions.
+The alarm reads reports, so a placement nobody reports raises no alarm.
+Authority does not default to any place: positive lawful placement evidence is
+required before confinement may follow. Permission, a report of use, a finding
+of fault and a performed remedy answer different questions.
 
 ## A fixed route still depends on evidence
 
@@ -102,9 +102,7 @@ depends on merely to obtain a preferred result. Evidence retention, disclosure,
 independent challenge and correction remain necessary.
 
 Removing a required signed finding can make a route unsupported. Adding a bare
-accusation cannot restore it. The reasoner can check those relationships in the
-record; it cannot show that the evidence was honestly gathered, retained or
-reported.
+accusation cannot restore it.
 
 The companion cases vary confinement, severity inputs, family presence and
 home availability. Family changes leave severity and placement unchanged.
@@ -112,30 +110,28 @@ Neither wealth nor poverty provides the required finding of individual
 necessity. Separate cases remove required placement evidence, introduce
 competing places, report inappropriate destinations and attempt direct
 assertions of legal conclusions.
-A missing result and an unauthorised extra result are both tested. These checks
-verify the rules; they do not make an outside place available.
+A missing result and an unauthorised extra result are both tested.
 
 ## Eligible, with no home option recorded
 
-Nando, Kel and Adam have no home option recorded. That omission shows neither
-homelessness nor the impossibility of home confinement. Their custody cases
-instead record positive evidence that no suitable consenting home is available
-and identify reviewed ordinary supported residences.
+Nando, Kel and Adam have no home option recorded. Their custody cases record
+positive evidence that no suitable consenting home is available and identify
+reviewed ordinary supported residences.
 
 A supported residence is not a secure facility under another name. It needs its
 own positive availability and least-restrictive-placement findings. Poverty or
 a missing home entry cannot justify escalating to a secure facility.
 
 Confinement authority follows only with a suitable named place. The State still
-owes a lawful least restrictive placement or a noncustodial alternative. A duty
-to find somewhere does not complete that task, and a housing label cannot fill
-the blank.
+owes a lawful least restrictive placement or a noncustodial alternative. A
+housing label cannot fill the blank; whether anyone finds such a place belongs
+to the second book.
 
 ## Housing with independent evidence
 
-None of these placement records shows delivered shelter. Hano's named home
-option and Adam's reviewed residence must be distinguished from evidence that
-either person actually received an adequate place to live.
+Placement records name places, and shelter needs its own evidence. Hano's
+named home option and Adam's reviewed residence must be distinguished from
+evidence that either person actually received an adequate place to live.
 
 A separate receipt test records such evidence: a recipient-side report and
 matching attestation by an authorised witness other than the provider. Shelter
@@ -145,15 +141,6 @@ place records cannot substitute for it.
 
 Every person was owed adequate shelter before a sentence or receipt. Neither
 custody nor evidence of delivery creates that right. Release cannot cancel it,
-and continuity requires action rather than a favourable label.
-
-## The child with nobody
-
-Nell's birth entry is enough for standing and for the shelter owed. Nell's
-record holds no custody case, placement or shelter receipt. This is not
-evidence that Nell has nowhere to live.
-
-Nell needs the ordinary floor and its delivery duties, without a custody case
-as an entry condition. The same distinction follows a person through release:
-authority to restrict movement, the place where that authority may be used,
-and the shelter owed on either side must each be settled on its own terms.
+and continuity requires action rather than a favourable label. Authority to
+restrict movement, the place where that authority may be used, and the shelter
+owed on either side of release must each be settled on its own terms.

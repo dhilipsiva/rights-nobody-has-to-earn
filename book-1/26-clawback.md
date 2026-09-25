@@ -26,9 +26,8 @@ illness supplement still follows. A dispute about that supplement would need
 the person and scheme identified by its own rules.
 
 This is a limit on what each finding reaches. The rules take the recorded
-court finding as a premise; they do not investigate the employment, calculate a
-sum or show that money changed hands. A false care entry remains a false
-account even though it confers no badge. Any compensation, service or
+court finding as a premise and calculate no sum. A false care entry remains a
+false account even though it confers no badge. Any compensation, service or
 authority claimed from it must meet the rules for that particular consequence.
 
 ## Rights that remain
@@ -37,11 +36,10 @@ Bela is a person, retains the ballot and free movement, and is owed the floor.
 No prisoner conclusion follows in this case. The compensation correction
 leaves the food debt intact too.
 
-Bela is owed food and shelter; the record does not show that either reached
-Bela. Nor does it show that food reached a comparison subject who has no
-credibility finding in force. Neither absence proves starvation or delivery.
-The comparison prevents a missing receipt from being presented as the effect of
-a finding.
+Bela is owed food and shelter; nobody has yet shown that either arrived, and
+the same holds for the food owed to a comparison subject with no credibility
+finding in force. The comparison keeps a missing receipt from being presented
+as the effect of a finding.
 
 A finding against a person for deceiving someone does not create a finding
 against the person deceived. Bela's case creates none against Cira, the learner
@@ -55,8 +53,7 @@ fraud and imposes no debt on Cira. Cira's own employment is a separate act.
 Nothing about the teacher's finding decides whether Cira performed it.
 
 Fin, taught by Esa, loses nothing either. No personhood for Fin follows from
-the record. That missing entry is not evidence that Fin is unreal or without
-rights; a teaching relationship and a standing record answer different
+the record: a teaching relationship and a standing record answer different
 questions.
 
 Parentage, care, household membership and support likewise do not transfer
@@ -80,20 +77,19 @@ sign still does not follow.
 
 The restored case stays in the history. Renaming it cannot revive a finding
 about the same subject, incident and ground. Another incident or ground needs
-its own disposition. Restoration does not show that every other finding about
-the person was mistaken.
+its own disposition; each restoration answers for its own finding only.
 
 Every personal finding in force incurs a duty on the appeals body to review the
 continuing restriction, without waiting for a challenge. The subject's own
-challenge gives a further route to an appellate duty. Neither duty is a
-completed disposition. An unanswered review leaves the restriction on signing
-new credibility findings in force; it cannot become a loss of ordinary rights,
-pay or unrelated contributions. No elapsed time or automatic expiry is inferred
-from the record.
+challenge gives a further route to an appellate duty. An unanswered review
+leaves the restriction on signing new credibility findings in force; it cannot
+become a loss of ordinary rights, pay or unrelated contributions. No elapsed
+time or automatic expiry is inferred from the record.
 
 This places a continuing obligation on the institution and leaves a real cost
-for the person awaiting review. The rules do not show that a reviewer arrived
-or that an outside institution obeyed the result. They identify the restricted
-act, what remains protected and the properly made decision needed to end the
+for the person awaiting review, who bears the restriction while the review
+waits. Whether a reviewer acts, and whether an outside institution obeys the
+result, belong to the second book. The rules identify the restricted act, what
+remains protected and the properly made decision needed to end the
 restriction. The next chapters examine the separate power to restrict movement
 and the rights a confined person retains.

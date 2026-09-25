@@ -6,8 +6,8 @@ particular exposure. The protection begins before anyone has decided whether the
 disclosure is true. A disclosure the case's witnesses record as made after its
 charge does not block confinement in that case. A properly made, independent
 case finding can instead settle that a prosecution is unrelated to the
-disclosure. The person making the disclosure does not have to obtain that
-finding to receive protection.
+disclosure. The person making the disclosure receives protection without
+having to obtain that finding.
 
 The case finding needs authorised reviewers whose eligibility is independently
 confirmed. Neither the defendant nor the injured person nor the prosecuting
@@ -31,8 +31,8 @@ disclosure against public power by being called one.
 
 The distinction depends on an entry. Suppose a public-status entry about Pax
 were added, making Pax answerable. Faro's exposure would then open the shield,
-and confinement would lose its authorisation. The rules cannot distinguish a
-true status entry from a forged one. The case shows the trust placed in the
+and confinement would lose its authorisation. The rules treat a forged status
+entry exactly as a true one. The case shows the trust placed in the
 record, not a lawful way to appoint a victim to public office.
 
 ## Lior: an unresolved disclosure
@@ -53,19 +53,19 @@ blocked. Suppose instead that the court's public-status entry were removed: a
 disclosure against the court would then open no shield. The protection depends
 on the record in this way too.
 
-The shield blocks confinement under a conviction; it does not erase the
-judgment or grant an acquittal. It does not exempt anyone from every
-protective measure. Arrest, search and hazard restrictions have their own
-individual grounds, current authority, evidence, review and remedy; a label
-of protection gives none of those conditions. No such order appears in
-these cases.
+The shield blocks confinement under a conviction, while the judgment stands
+without an acquittal. It leaves other protective measures to their own rules:
+arrest, search and hazard restrictions have their own individual grounds,
+current authority, evidence, review and remedy, and a label of protection
+gives none of those conditions. No such order appears in these cases.
 
 The underlying custody case separately requires adjudicated defences and
 exculpatory evidence, criminal proof, disclosed lawful evidence, counsel and
 a fair hearing. The adjudicator and independent merits reviewer must agree
 on those conditions for the same case. The shield cannot substitute for that
 inquiry, and a finding that a prosecution is unrelated cannot bypass it.
-The reasoner checks the recorded findings; it does not decide a defence itself.
+The reasoner checks the recorded findings; deciding a defence belongs to the
+adjudication.
 
 ## Kel: a finding about this disclosure
 
@@ -80,13 +80,13 @@ no wage, property, pension or floor right.
 
 A raw accusation and a generic judgment by the review body do not make the
 case. The same subject and incident must be identified in the completed finding.
-These requirements concern what the record must show; they do not prove that
-the outside witnesses gave an honest account of the procedure or the evidence.
+These requirements concern what the record must show; the outside witnesses
+may still have given a false account of the procedure or the evidence.
 
 The finding concerns this exposure. It does not show that every later
-statement by Kel is false, and it does not make Kel ineligible for protection
-against a different act of retaliation. Another exposure to the same authority
-is assessed separately too.
+statement by Kel is false, and Kel remains eligible for protection against a
+different act of retaliation. Another exposure to the same authority is
+assessed separately too.
 
 ## Dara: a separate exposure
 
@@ -118,9 +118,8 @@ Each deciding reviewer needs authority for this case. An appointments office
 and a separate office that reviews its work, both authorised for the case, must
 agree positively on each reviewer's eligibility. That finding covers lawful
 current appointment, independence from the parties and the disclosures, notice,
-reasons, an opportunity to be heard and independent challenge. None of those
-acts is performed by the reasoning engine. Their findings are bounded premises
-that must be recorded for it.
+reasons, an opportunity to be heard and independent challenge. The offices'
+findings are bounded premises that must be recorded for the reasoning engine.
 
 The separation is explicit. The deciding reviewers must be different people
 or bodies. The appointments office and its reviewing office must differ from
@@ -149,7 +148,6 @@ bypass the recorded finding. An unauthorised accusation produces no such result.
 A conflict recorded for a different case produces none here.
 
 Someone who controls the trusted inputs can still lie about independence.
-The rules do not convert agreement into truth.
 
 ## A disclosure made after the charge
 
@@ -181,8 +179,7 @@ while eligible reviewers are unavailable, but only for a disclosure the case's
 witnesses have not dated after the charge. The person injured still holds a claim
 to assistance, protection and remedy. The defendant keeps the floor, standing
 and the ability to challenge. The existing justice routes govern the hearing,
-interim relief, reviewer nonresponse and independent alternatives; a duty to
-hear is not a hearing completed.
+interim relief, reviewer nonresponse and independent alternatives.
 
 A disclosure against any actor who remains publicly answerable can open the
 protection, including a recalled official. Recall cannot extinguish the
@@ -192,11 +189,11 @@ while a reviewer fails to act. The unrelated-case route supplies the means
 to resolve its reach without waiting for every disclosure to be defeated.
 
 Missing authority, a missing eligibility finding or an actual conflict found
-by an authorised office keeps that route closed. The rules cannot staff an
-independent tribunal, prove independence in fact, advance the outside clock or
-enforce a remedy. Those are requirements for the second book's operating
-account. The record can identify the findings still needed; it cannot supply
-them for the people waiting on either side of the case.
+by an authorised office keeps that route closed. Staffing an independent
+tribunal, proving independence in fact, advancing the outside clock and
+enforcing a remedy are requirements for the second book's operating account.
+The record can identify the findings still needed; it cannot supply them for
+the people waiting on either side of the case.
 
 The shield separates protection from approval of the claimant's conduct. The
 next chapter turns to the adverse findings themselves: what a credibility

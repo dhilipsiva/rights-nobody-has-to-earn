@@ -317,12 +317,29 @@ fn every_constitutional_family_is_projected_by_a_passage() {
 /// chapter 25 already runs Nell's one-entry case and the unaffected floor.
 /// The 2026-09-20 recognition removal supersedes the former clawback rationale
 /// while preserving the exemption and its actual child-facing coverage.
-const CHILD_SLOT_EXEMPT: [(&str, &str); 5] = [
+const CHILD_SLOT_EXEMPT: [(&str, &str); 22] = [
     ("01-the-child-with-nobody.md", "the chapter is the case"),
+    ("02-who-counts.md", "the birth entry reaches standing as the chapter's encounters do"),
+    ("04-what-you-are-owed.md", "the floor follows for the child as for every person; chapter 1 runs it"),
+    ("07-who-owes-and-what-follows.md", "the bystander's entry about the child is already the chapter's own case"),
+    ("08-what-nobody-has-to-ask-permission-for.md", "the liberties follow from personhood alone, as for anyone"),
+    ("09-earning-above-the-floor.md", "a record with no contribution yields no supplement, as for anyone without one"),
     ("10-contribution.md", "Cira already carries the child exhibit"),
-    ("23-who-holds-the-pen.md", "a record of one entry holds no credential"),
+    ("11-what-money-cannot-buy.md", "the economic prohibitions hold for any person; no property adds nothing"),
+    ("12-the-same-route-for-everyone.md", "the anti-substitution barriers hold for every person alike"),
+    ("13-a-place-in-which-life-remains-possible.md", "the environmental claim needs no owner or spokesperson for anyone"),
+    ("15-arriving-and-belonging.md", "the newcomer is the chapter's person with little on record"),
+    ("16-public-answerability.md", "answerability concerns public bodies; the child holds none"),
+    ("17-how-public-power-is-built.md", "the institutions' mandates run to everyone alike"),
+    ("19-what-may-be-kept-about-you.md", "a birth-only record holds no file to keep, use or correct"),
+    ("20-a-crisis-does-not-suspend-the-republic.md", "an emergency leaves the child's floor as it leaves anyone's"),
+    ("22-changing-the-rules.md", "the amendment rules protect the floor for everyone alike"),
+    ("23-who-holds-the-pen.md", "a record of one entry holds no authority to sign findings"),
     ("24-the-shield.md", "the shield needs an exposure this child has not made"),
-    ("26-clawback.md", "Cira's separate claim is tested here; Nell's floor is tested in chapter 25"),
+    ("25-voiding.md", "no finding reaches a person with a birth entry alone"),
+    ("26-clawback.md", "Cira's separate claim is tested here"),
+    ("28-where-people-are-put.md", "placement needs a custody case the child's record does not have"),
+    ("29-the-one-thing-taken.md", "confinement needs a custody case; chapter 27 runs the child beside the prisoner"),
 ];
 
 #[test]
