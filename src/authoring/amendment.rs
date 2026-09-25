@@ -863,6 +863,23 @@ pub(crate) fn generate(context: &Context, export: &mut Export) -> Result<(), Err
         &candidate,
         pins(&[(complete, "FALSE")], &v),
     )?;
+    // Only the consent record's own attesters can make it ambiguous: a
+    // different base written by somebody holding no consent role reaches nothing.
+    add(
+        "uncredentialed-consent-noise",
+        "live",
+        &format!(
+            "{consent}observe(UncredentialedConsentWriter, {}, DifferentBase, AmendmentBaseScope).\n{candidate}",
+            mapping["$result"]
+        ),
+        pins(
+            &[
+                (complete, "TRUE"),
+                ("related($record, AmendmentRecordAmbiguity)", "FALSE"),
+            ],
+            &v,
+        ),
+    )?;
     for (name, scope, old) in [
         (
             "upstream-proposal-splice",

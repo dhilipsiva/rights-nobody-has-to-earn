@@ -1,5 +1,5 @@
 # SPDX-License-Identifier: MIT OR Apache-2.0
-:expect-pins 8
+:expect-pins 10
 # Fresh-process temporal case TA-13.
 
 # The supplied opposite event-claim identifier remains visible rather than hidden.
@@ -33,3 +33,12 @@
 # The opposite record claim is independently named as conflicted.
 ? err(TA_Log_Opposite, OrderConflict).
 # => TRUE
+
+# A challenge to the timing review reaches the appeals body when the claim it
+# names is in conflict, and not otherwise.
+challenge(TA_Conflict_Challenger, TA_Order_Opposite, TemporalReview).
+? obliged(Appeals, TA_Conflict_Challenger).
+# => TRUE
+challenge(TA_Quiet_Challenger, TA_Quiet_Claim, TemporalReview).
+? obliged(Appeals, TA_Quiet_Challenger).
+# => FALSE

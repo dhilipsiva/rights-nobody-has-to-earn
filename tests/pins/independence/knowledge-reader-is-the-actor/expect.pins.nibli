@@ -1,0 +1,10 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+# The office that hears challenges to a residual-freedom record cannot be the
+# actor the record binds. With the reader and the actor the same holder, the
+# single-actor record gives the actor no duty.
+:expect-pins 2
+
+? obliged(KnowledgeCaseActor, NotRegisterBeliefOpinionOrAssociationMembership, KnowledgeCaseRecord).
+# => FALSE
+? obliged(KnowledgeCaseActor, NotRequirePermissionForUnrestrictedKnowledgeActivity, KnowledgeCaseRecord).
+# => FALSE

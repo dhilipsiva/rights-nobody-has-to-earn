@@ -12,11 +12,29 @@
 # The two trusted shell checks retain the unread-label property and a positive
 # command control. They neither certify the prose nor authenticate source edits.
 
-:expect-pins 32
+:expect-pins 35
 
 ? contradict(ECAbsentAmendmentRecord, AmendmentSourceAuthorization).
 # => FALSE
 ? complete(ECAbsentAmendmentRecord, AmendmentCertifiedCandidate, ECAbsentCandidate).
+# => FALSE
+
+# "Anyone may request independent review without the operator's permission" —
+# of a reader authorised for the request. A request to somebody holding no
+# reader authority obliges nobody; the authorisation makes it a duty.
+challenge(Requestera, Readera, Requesta).
+? obliged(Readera, ReviewAmendmentSourceDispute, Requesta).
+# => FALSE
+
+authorized(Readera, AmendmentChallengeReaderAuthority, Requesta).
+? obliged(Readera, ReviewAmendmentSourceDispute, Requesta).
+# => TRUE
+
+# The request must come from somebody other than the reader: an authorised
+# reader naming itself as the requester obliges nobody.
+challenge(Readerb, Readerb, Requestb).
+authorized(Readerb, AmendmentChallengeReaderAuthority, Requestb).
+? obliged(Readerb, ReviewAmendmentSourceDispute, Requestb).
 # => FALSE
 
 :require test -z "$(awk -F'->' '/^[^#]/ && /->/ && $1 ~ /become/ {print}' book-1/source/constitution.nibli)"

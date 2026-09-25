@@ -1100,3 +1100,397 @@ fn no_confinement_reads_an_absent_home_family_or_work_entry() {
         );
     }
 }
+
+/// Families in which a record's three attesters — the writers bound as
+/// `$source`, `$evidence` and `$review` — each record every field any of them
+/// records. The mutation pass (item 49) found that dropping one attester's copy
+/// of one field survives every generated case, because the generated omission
+/// cases remove a field from all attesters at once. This reads the written
+/// rules instead. Other writers on a record, such as a party recording its own
+/// choice or an opposition member its own position, record their own fields
+/// and are outside the comparison.
+const UNIFORMLY_ATTESTED: [&str; 10] = [
+    "DEMOCRATIC-INTEGRITY",
+    "ECOLOGICAL-ANIMAL",
+    "FAMILY-LIFE-ORDINARY",
+    "KNOWLEDGE-AND-FREE-FIELD",
+    "MOBILITY-PLURALITY",
+    "OFFICIAL-STATISTICS",
+    "PUBLIC-SAFETY",
+    "RECORD-POWER",
+    "SCARCITY-AND-CONFLICT",
+    "SUBSTANTIVE-EQUALITY-ORDINARY",
+];
+
+/// Families whose records have fields the source alone records — the actors,
+/// functions and end conditions of an economic or state-form power, an
+/// obligation's origin and version, a remedy's executor — with the evidence and
+/// review attesters confirming the core. Asserted by membership, so a family
+/// that becomes uniform, or a new family that is not, fails the test.
+const SOURCE_RECORDED_FIELDS: [&str; 4] = [
+    "ECONOMIC-CONSTITUTION",
+    "NON-CARCERAL-JUSTICE",
+    "OBLIGATIONS",
+    "STATE-FORM",
+];
+
+const ATTESTERS: [&str; 3] = ["$source", "$evidence", "$review"];
+
+/// The fields of a rule body that some attester of their record does not
+/// record, as `record value scope`.
+fn unevenly_attested(body: &str) -> Vec<String> {
+    let observe = Regex::new(
+        r"(?:^|[^~])observe\((\$[a-z0-9_]+), (\$[a-z0-9_]+), ([^,()]+), ([A-Za-z0-9_]+)\)",
+    )
+    .unwrap();
+    let mut groups: BTreeMap<(String, String, String), BTreeSet<String>> = BTreeMap::new();
+    let mut attesters: BTreeMap<String, BTreeSet<String>> = BTreeMap::new();
+    for caught in observe.captures_iter(body) {
+        if !ATTESTERS.contains(&&caught[1]) {
+            continue;
+        }
+        let (writer, record) = (caught[1].to_owned(), caught[2].to_owned());
+        groups
+            .entry((record.clone(), caught[3].to_owned(), caught[4].to_owned()))
+            .or_default()
+            .insert(writer.clone());
+        attesters.entry(record).or_default().insert(writer);
+    }
+    groups
+        .into_iter()
+        .filter(|((record, _, _), writers)| {
+            let all = &attesters[record];
+            all.len() > 1 && writers != all
+        })
+        .map(|((record, value, scope), _)| format!("{record} {value} {scope}"))
+        .collect()
+}
+
+#[test]
+fn record_attesters_record_every_field_in_the_uniform_families() {
+    let rows = families()
+        .into_iter()
+        .filter_map(|(family, statement)| {
+            let (body, _) = split(&statement)?;
+            Some((family, body.to_owned()))
+        })
+        .collect::<Vec<_>>();
+    let checked = rows
+        .iter()
+        .filter(|(family, body)| {
+            UNIFORMLY_ATTESTED.contains(&family.as_str())
+                && ATTESTERS.iter().filter(|a| body.contains(&format!("observe({a}, "))).count() > 1
+        })
+        .count();
+    assert!(
+        checked > 800,
+        "only {checked} multi-attester rules were found; check the detection before trusting the pass"
+    );
+    let mut uneven_families = BTreeSet::new();
+    for (family, body) in &rows {
+        let uneven = unevenly_attested(body);
+        if UNIFORMLY_ATTESTED.contains(&family.as_str()) {
+            assert!(
+                uneven.is_empty(),
+                "{family} has a rule some attester of which omits {uneven:?}"
+            );
+        } else if !uneven.is_empty() {
+            uneven_families.insert(family.as_str());
+        }
+    }
+    assert_eq!(
+        uneven_families,
+        SOURCE_RECORDED_FIELDS.into_iter().collect::<BTreeSet<_>>(),
+        "the families whose source alone records some fields have changed"
+    );
+    let families: BTreeSet<&str> = rows.iter().map(|(family, _)| family.as_str()).collect();
+    for family in UNIFORMLY_ATTESTED {
+        assert!(families.contains(family), "{family} has no rules; the list is stale");
+    }
+    // Sabotage: drop one attester's copy of one field from a real rule, and
+    // show that a writer outside the three attesters is not compared.
+    let (_, body) = rows
+        .iter()
+        .find(|(family, body)| {
+            family == "KNOWLEDGE-AND-FREE-FIELD" && body.contains("observe($source, $record, $version,")
+        })
+        .expect("a knowledge record rule");
+    let atom = Regex::new(r"observe\(\$source, \$record, \$version, [A-Za-z0-9_]+\) & ")
+        .unwrap();
+    let sabotaged = atom.replace(body, "").into_owned();
+    assert_ne!(&sabotaged, body, "the sabotage must remove an atom");
+    assert!(
+        !unevenly_attested(&sabotaged).is_empty(),
+        "dropping one attester's copy of a field must be detected"
+    );
+    let party = format!("{body} & observe($party, $record, OwnChoice, PartyChoiceScope)");
+    assert!(
+        unevenly_attested(&party).is_empty(),
+        "a party recording its own field is not one of the three attesters"
+    );
+}
+
+/// A field's attestation pattern in one rule: `all` when every one of its
+/// record's three attesters records it, otherwise the attesters that do.
+fn attestation_patterns(body: &str) -> Vec<(String, String, String)> {
+    let observe = Regex::new(
+        r"(?:^|[^~])observe\((\$[a-z0-9_]+), (\$[a-z0-9_]+), [^,()]+, ([A-Za-z0-9_]+)\)",
+    )
+    .unwrap();
+    let mut groups: BTreeMap<(String, String), BTreeSet<String>> = BTreeMap::new();
+    let mut attesters: BTreeMap<String, BTreeSet<String>> = BTreeMap::new();
+    for caught in observe.captures_iter(body) {
+        if !ATTESTERS.contains(&&caught[1]) {
+            continue;
+        }
+        groups
+            .entry((caught[2].to_owned(), caught[3].to_owned()))
+            .or_default()
+            .insert(caught[1].to_owned());
+        attesters.entry(caught[2].to_owned()).or_default().insert(caught[1].to_owned());
+    }
+    groups
+        .into_iter()
+        .filter(|((record, _), _)| attesters[record].len() > 1)
+        .map(|((record, scope), writers)| {
+            let pattern = if writers == attesters[&record] {
+                String::from("all")
+            } else {
+                writers.into_iter().collect::<Vec<_>>().join("+")
+            };
+            (record, scope, pattern)
+        })
+        .collect()
+}
+
+/// Fields a family records in two deliberate ways: a few economic powers
+/// have every attester confirm the subject, end condition, failure polarity
+/// and review disposition where the rest leave them to the source or the
+/// source and review; a few state-form results have the evidence attester
+/// confirm the review disposition as well.
+const TWO_PATTERN_FIELDS: [(&str, &str, &str); 5] = [
+    ("ECONOMIC-CONSTITUTION", "$record", "EconomicSubjectScope"),
+    ("ECONOMIC-CONSTITUTION", "$record", "EndConditionScope"),
+    ("ECONOMIC-CONSTITUTION", "$result", "FailurePolarityScope"),
+    ("ECONOMIC-CONSTITUTION", "$result", "ReviewDispositionScope"),
+    ("STATE-FORM", "$result", "ReviewDispositionScope"),
+];
+
+fn inconsistent_fields(rows: &[(String, String)]) -> BTreeSet<(String, String, String)> {
+    let mut patterns: BTreeMap<(String, String, String), BTreeSet<String>> = BTreeMap::new();
+    for (family, body) in rows {
+        for (record, scope, pattern) in attestation_patterns(body) {
+            patterns
+                .entry((family.clone(), record, scope))
+                .or_default()
+                .insert(pattern);
+        }
+    }
+    patterns
+        .into_iter()
+        .filter(|(_, seen)| seen.len() > 1)
+        .map(|(key, _)| key)
+        .collect()
+}
+
+/// Every family records each field with the same attesters in every rule, so
+/// one rule dropping one attester's copy of a field its siblings all record
+/// breaks the family's pattern. This holds the older families, whose sources
+/// alone record some fields, where the uniform test above cannot.
+#[test]
+fn each_field_is_attested_the_same_way_across_its_family() {
+    let rows = families()
+        .into_iter()
+        .filter_map(|(family, statement)| {
+            let (body, _) = split(&statement)?;
+            Some((family, body.to_owned()))
+        })
+        .collect::<Vec<_>>();
+    let compared = rows
+        .iter()
+        .filter(|(_, body)| !attestation_patterns(body).is_empty())
+        .count();
+    assert!(
+        compared > 1400,
+        "only {compared} rules with several attesters were found; check the detection"
+    );
+    let found = inconsistent_fields(&rows);
+    let expected: BTreeSet<(String, String, String)> = TWO_PATTERN_FIELDS
+        .iter()
+        .map(|(f, r, s)| (f.to_string(), r.to_string(), s.to_string()))
+        .collect();
+    assert_eq!(found, expected, "a field is attested differently across its family");
+    // Sabotage: drop the evidence attester's copy of a field from one economic
+    // result rule; its siblings still record it, so the family's pattern breaks.
+    let index = rows
+        .iter()
+        .position(|(family, body)| {
+            family == "ECONOMIC-CONSTITUTION"
+                && body.contains("observe($evidence, $result, $epoch, SourceEpochScope)")
+        })
+        .expect("an economic result rule");
+    let mut sabotaged = rows.clone();
+    sabotaged[index].1 = sabotaged[index]
+        .1
+        .replacen(" & observe($evidence, $result, $epoch, SourceEpochScope)", "", 1);
+    assert_ne!(sabotaged[index].1, rows[index].1, "the sabotage must remove an atom");
+    assert!(
+        inconsistent_fields(&sabotaged).contains(&(
+            "ECONOMIC-CONSTITUTION".to_owned(),
+            "$result".to_owned(),
+            "SourceEpochScope".to_owned()
+        )),
+        "one rule dropping one attester's copy of a shared field must be detected"
+    );
+}
+
+const SINGLE_ACTOR_GUARD: &str =
+    "~observe($review, $record, SingleActorEffectWithdrawnOnReview, SingleActorReviewScope)";
+
+/// The fields `writer` records on `record` in a rule body, as `value scope`.
+fn fields_written(body: &str, only_source: bool) -> BTreeSet<String> {
+    let observe = Regex::new(
+        r"(?:^|[^~])observe\((\$[a-z0-9_]+), (\$[a-z0-9_]+), ([^,()]+), ([A-Za-z0-9_]+)\)",
+    )
+    .unwrap();
+    observe
+        .captures_iter(body)
+        .filter(|c| !only_source || (&c[1] == "$source" && &c[2] == "$record"))
+        .map(|c| format!("{} {} {} {}", &c[1], &c[2], &c[3], &c[4]))
+        .collect()
+}
+
+/// Single-actor routes whose source record does not cover the full route
+/// with the same conclusion, and prompt-review duties that ask for different
+/// fields from every single-actor route in their family.
+fn thinner_single_actor_routes(rows: &[(String, String, String)]) -> Vec<String> {
+    let mut full: BTreeMap<(String, String), Vec<BTreeSet<String>>> = BTreeMap::new();
+    let mut effects: BTreeMap<String, Vec<BTreeSet<String>>> = BTreeMap::new();
+    for (family, body, head) in rows {
+        if body.contains(SINGLE_ACTOR_GUARD) {
+            if !head.contains("ReviewTheSingleActorRecordPromptly") {
+                effects.entry(family.clone()).or_default().push(fields_written(body, false));
+            }
+        } else {
+            full.entry((family.clone(), head.clone()))
+                .or_default()
+                .push(fields_written(body, true));
+        }
+    }
+    let mut thinner = Vec::new();
+    for (family, body, head) in rows {
+        if !body.contains(SINGLE_ACTOR_GUARD) {
+            continue;
+        }
+        if head.contains("ReviewTheSingleActorRecordPromptly") {
+            let asked = fields_written(body, false);
+            let matched = effects
+                .get(family)
+                .is_some_and(|routes| routes.iter().any(|route| *route == asked));
+            if !matched {
+                thinner.push(format!("{family}: {head}"));
+            }
+            continue;
+        }
+        let asked = fields_written(body, true);
+        let covered = full
+            .get(&(family.clone(), head.clone()))
+            .is_some_and(|routes| routes.iter().any(|route| route.is_subset(&asked)));
+        if !covered {
+            thinner.push(format!("{family}: {head}"));
+        }
+    }
+    thinner
+}
+
+/// Help takes effect on one actor's record (ruling D6), so that record must
+/// carry every field the full procedure asks of its source for the same
+/// conclusion, and the duty to review it promptly must ask for the same
+/// record. Dropping a field from the single-actor route would otherwise let
+/// one actor's thinner record do what the full procedure could not.
+#[test]
+fn single_actor_routes_ask_their_source_for_the_full_record() {
+    let rows = families()
+        .into_iter()
+        .filter_map(|(family, statement)| {
+            let (body, head) = split(&statement)?;
+            Some((family, body.to_owned(), head.to_owned()))
+        })
+        .collect::<Vec<_>>();
+    let routes = rows
+        .iter()
+        .filter(|(_, body, _)| body.contains(SINGLE_ACTOR_GUARD))
+        .count();
+    assert!(routes > 100, "only {routes} single-actor rules were found; check the guard");
+    assert_eq!(thinner_single_actor_routes(&rows), Vec::<String>::new());
+    // Sabotage: drop one field from a single-actor effect and from a review
+    // duty; each must be reported.
+    for review_duty in [false, true] {
+        let index = rows
+            .iter()
+            .position(|(_, body, head)| {
+                body.contains(SINGLE_ACTOR_GUARD)
+                    && head.contains("ReviewTheSingleActorRecordPromptly") == review_duty
+            })
+            .expect("a single-actor rule");
+        let atom = Regex::new(r" & observe\(\$source, \$record, [^,()]+, [A-Za-z0-9_]+\)").unwrap();
+        let mut sabotaged = rows.clone();
+        sabotaged[index].1 = atom.replace(&rows[index].1, "").into_owned();
+        assert_ne!(sabotaged[index].1, rows[index].1, "the sabotage must remove an atom");
+        assert!(
+            !thinner_single_actor_routes(&sabotaged).is_empty(),
+            "a single-actor rule missing a field must be reported (review duty: {review_duty})"
+        );
+    }
+}
+
+/// The fields each timing witness records in a rule body, keyed by witness.
+fn timing_witness_fields(body: &str) -> (BTreeSet<String>, BTreeSet<String>) {
+    let observe = Regex::new(
+        r"(?:^|[^~])observe\((Chronicle|TemporalReview), ([^,()]+), ([^,()]+), ([A-Za-z0-9_]+)\)",
+    )
+    .unwrap();
+    let (mut chronicle, mut review) = (BTreeSet::new(), BTreeSet::new());
+    for caught in observe.captures_iter(body) {
+        let field = format!("{} {} {}", &caught[2], &caught[3], &caught[4]);
+        if &caught[1] == "Chronicle" {
+            chronicle.insert(field);
+        } else {
+            review.insert(field);
+        }
+    }
+    (chronicle, review)
+}
+
+/// Temporal facts count only when both timing witnesses record them, so every
+/// field one witness records in a rule the other records too. Dropping one
+/// witness's copy would let a single witness bind a version, a period or a
+/// carried status.
+#[test]
+fn both_timing_witnesses_record_every_field() {
+    let source = Context::discover()
+        .expect("repository")
+        .read("book-1/source/constitution.nibli")
+        .expect("constitution");
+    let bodies = source
+        .lines()
+        .map(str::trim)
+        .filter(|line| !line.starts_with('#'))
+        .filter_map(|line| split(line).map(|(body, _)| body.to_owned()))
+        .filter(|body| body.contains("observe(Chronicle, ") || body.contains("observe(TemporalReview, "))
+        .collect::<Vec<_>>();
+    assert!(bodies.len() > 50, "only {} witnessed rules were found", bodies.len());
+    for body in &bodies {
+        let (chronicle, review) = timing_witness_fields(body);
+        assert_eq!(chronicle, review, "one timing witness records a field the other does not: {body}");
+    }
+    // Sabotage: drop the chronicle's copy of one field.
+    let body = bodies
+        .iter()
+        .find(|body| body.contains(" & observe(Chronicle, "))
+        .expect("a witnessed rule");
+    let atom = Regex::new(r" & observe\(Chronicle, [^,()]+, [^,()]+, [A-Za-z0-9_]+\)").unwrap();
+    let sabotaged = atom.replace(body, "").into_owned();
+    let (chronicle, review) = timing_witness_fields(&sabotaged);
+    assert_ne!(chronicle, review, "dropping one witness's copy must be detected");
+}

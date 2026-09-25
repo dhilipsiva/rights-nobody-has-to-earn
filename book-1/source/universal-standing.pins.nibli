@@ -1,5 +1,5 @@
 # Universal-standing root family - executable coverage pins
-:expect-pins 32
+:expect-pins 33
 
 # FS-CCE-01 negative: birth and first contact attach standing without a registry.
 born(Nia).
@@ -124,6 +124,12 @@ free(ReleasedPerson).
 
 # A known public body cannot be smuggled through the contact subject.
 at(Court, FirstContact).
+? person(Court).
+# => FALSE
+
+# Nor through presence: a public body present in the jurisdiction is not a
+# person by being there.
+at(Court, RepublicJurisdiction).
 ? person(Court).
 # => FALSE
 

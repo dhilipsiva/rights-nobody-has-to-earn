@@ -1,6 +1,6 @@
 # SPDX-License-Identifier: MIT OR Apache-2.0
 # Raw status flags cannot replace a qualified case decision.
-:expect-pins 9
+:expect-pins 10
 # Fresh-process temporal case TA-41.
 
 # The supplied challenge fact suspends the exact challenged lease.
@@ -38,3 +38,10 @@
 # The retained filing uses the higher custody stage, keeping the intake independent.
 ? closed(TA_Challenge_Case, LeaseSuspended).
 # => TRUE
+
+# The dispute is about a custody authorisation: a challenge naming anything
+# else, by a person a court has cited, raises none.
+cite(Court, TA_Other_Case, TA_Other_Subject).
+challenge(TA_Other_Subject, TA_Not_An_Authorisation, TemporalReview).
+? err(TA_Other_Subject, TemporalDispute).
+# => FALSE

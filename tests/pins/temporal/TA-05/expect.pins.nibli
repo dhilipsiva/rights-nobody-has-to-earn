@@ -1,5 +1,5 @@
 # SPDX-License-Identifier: MIT OR Apache-2.0
-:expect-pins 2
+:expect-pins 4
 # Fresh-process temporal case TA-05.
 
 # The unexplained cross-snapshot disappearance is visible.
@@ -8,4 +8,16 @@
 
 # The defect is found inside an otherwise accepted supplied transition.
 ? succeed(TA_Disappear_Current, Transition).
+# => TRUE
+
+# Each witness's missing carry is its own disappearance, whichever witness
+# records the carry and whichever omits it.
+carries(TemporalReview, TA_Preserved, TA_Disappear_Current, TA_Disappear_Previous, PreservedCarry).
+? err(TA_Preserved, RecordDisappearance).
+# => TRUE
+authorized(TA_Half_Preserved, PreservedStatus, TA_Disappear_Previous).
+observe(Chronicle, TA_Half_Preserved, TA_Disappear_Previous, PreservedScope).
+observe(TemporalReview, TA_Half_Preserved, TA_Disappear_Previous, PreservedScope).
+carries(Chronicle, TA_Half_Preserved, TA_Disappear_Current, TA_Disappear_Previous, PreservedCarry).
+? err(TA_Half_Preserved, RecordDisappearance).
 # => TRUE

@@ -18,7 +18,7 @@
 # WHAT FALSE MEANS HERE: a FALSE is pinned only where the KB could have said
 # TRUE, and the comment says what would flip it.
 
-:expect-pins 18
+:expect-pins 20
 
 # "Ask whether Bela eats in the record supplied with this book ... The answer
 # is no." — the routes ship dormant in the cast.
@@ -105,6 +105,16 @@ receives(Marisol, CompanyForMarisol, Provender).
 observe(MarisolRegion, CompanyForMarisol, Marisol, CompanyScope).
 ? meets(Marisol).
 # => FALSE
+
+# "Learning has a distinct route through teaching that was heard." A hearing
+# entry alone concludes nothing; the teaching it heard completes the route.
+hears(Listenera, Speakera).
+? learn(Listenera).
+# => FALSE
+
+teaches(Speakera, Listenera).
+? learn(Listenera).
+# => TRUE
 
 ? prisoner(Nell).
 # => FALSE

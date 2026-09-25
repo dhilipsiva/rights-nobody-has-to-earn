@@ -12,7 +12,7 @@
 #
 # Nothing here establishes that anything arrived. Every probe fact below is
 # written by this file, not by the world.
-:expect-pins 31
+:expect-pins 36
 
 # ── The routes ship dormant ──────────────────────────────────────────────────
 # Adam is confined, so shelter and recorded speech derive for him through the
@@ -193,4 +193,39 @@ observe(Inspector, Meal, Oke, FoodScope).
 ? suffice(Bela).
 # => FALSE
 ? meets(Bela).
+# => FALSE
+
+# ── The provider cannot witness its own delivery, on every route ──────────────
+# Each route holds its witness apart from the source named on the receipt; a
+# provider authorised as a witness still certifies nothing about its own item.
+receives(SelfFed, Meal, Kitchen).
+authorized(Kitchen, DeliveryWitness, SelfFed).
+observe(Kitchen, Meal, SelfFed, FoodScope).
+? eats(SelfFed).
+# => FALSE
+
+receives(SelfCared, Treatment, Ward).
+authorized(Ward, DeliveryWitness, SelfCared).
+observe(Ward, Treatment, SelfCared, CareScope).
+? healthy(SelfCared).
+# => FALSE
+
+receives(SelfSupplied, Kit, Store).
+authorized(Store, DeliveryWitness, SelfSupplied).
+observe(Store, Kit, SelfSupplied, SecurityScope).
+? suffice(SelfSupplied).
+# => FALSE
+
+receives(SelfVisited, Visit, Visitor).
+authorized(Visitor, DeliveryWitness, SelfVisited).
+observe(Visitor, Visit, SelfVisited, CompanyScope).
+? meets(SelfVisited).
+# => FALSE
+
+# ── A witness must observe the item ───────────────────────────────────────────
+# A receipt and a witness authorised for the recipient, with no observation of
+# the item by that witness, certify nothing.
+receives(Unobserved, Kit, Supplier).
+authorized(Onlooker, DeliveryWitness, Unobserved).
+? suffice(Unobserved).
 # => FALSE

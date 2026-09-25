@@ -14,7 +14,7 @@
 # is untouched. Pin a FALSE only where the KB could have said TRUE, and say in
 # the comment what would flip it.
 
-:expect-pins 59
+:expect-pins 60
 
 # DON — "Don injured Pax. Then Don exposed Pax."
 
@@ -453,9 +453,15 @@ show(Zeno, Disclosure_Zeno_Review, Review).
 ? prisoner(Zeno).
 # => FALSE
 
-# "A defendant cannot buy delay by accusing the court that tries them."
-observe(Chronicle, Disclosure_Sly_Court, Case_Sly, DisclosureFollowsTheChargeScope).
+# "A defendant cannot buy delay by accusing the court that tries them." Either
+# witness alone leaves the protection in place; this time the review body
+# writes first.
 observe(TemporalReview, Disclosure_Sly_Court, Case_Sly, DisclosureFollowsTheChargeScope).
+
+? prisoner(Sly).
+# => FALSE
+
+observe(Chronicle, Disclosure_Sly_Court, Case_Sly, DisclosureFollowsTheChargeScope).
 
 ? prisoner(Sly).
 # => TRUE

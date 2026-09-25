@@ -217,32 +217,15 @@ unimplemented until the items named here land.
 
 ## Ordered revision backlog
 
-Work in this order: items 49–52, which measure, repair and prepare; items
+Work in this order: items 50–52, which measure, repair and prepare; items
 53–63 carry the structure and the rewrite under the ratified rulings; item 64
 finishes production, 65 closes the revision, and 66 is optional. Numbering
-continues from items 01–33, which `CLAUDE.md` records; items 34–48 and 67–72
+continues from items 01–33, which `CLAUDE.md` records; items 34–49 and 67–72
 are complete and recorded there too. Chapter numbers refer to the [current
 reading sequence](book-1/contents.json), which the plan also uses, until item 53
 changes it.
 
 ### The formal layer
-
-- [ ] **49. Run mutation testing over the rules.**
-
-  **Scope:** the constitution and the suites in `tests/pins/suites.json`;
-  plan §10.4.
-
-  Mutate rule conditions (drop a conjunct, flip a negation, swap a role) and
-  record which mutants every pin still passes. A complete run takes about
-  twenty minutes, so sample by family, run focused suites, and state the
-  sampling. Each survivor is a finding: a missing pin, a deliberately dormant
-  guard such as Article 4's signer checks, or a defect for its own item.
-  Publish the survivors as a list with their dispositions. The assurance
-  portfolio refuses aggregate scores and percentages, so there is no mutation
-  score.
-
-  **Done when:** the harness runs as a development tool, its sampling is
-  documented, and every survivor has a disposition.
 
 - [ ] **50. Reproduce the core in a second engine.**
 

@@ -1,5 +1,5 @@
 # SPDX-License-Identifier: MIT OR Apache-2.0
-:expect-pins 4
+:expect-pins 6
 # Fresh-process temporal case TA-10.
 
 # Once both predecessor-standing witnesses are supplied, continuity is supportive rather than a denial gate.
@@ -17,3 +17,16 @@
 # Without the second witness, T1 cannot name an omission; the independent standing-root contract must prevent the record from becoming an eligibility gate.
 ? err(TA_Unwitnessed_Standing, StandingOmission).
 # => FALSE
+
+# Each witness's missing carry is its own omission. With the review recording
+# the carry and the chronicle omitting it, the omission is still named; and
+# with the chronicle recording it and the review omitting it, likewise.
+carries(TemporalReview, TA_Unregistered, TA_Standing_Current, TA_Standing_Previous, StandingCarry).
+? err(TA_Unregistered, StandingOmission).
+# => TRUE
+authorized(TA_Half_Carried, StandingStatus, TA_Standing_Previous).
+observe(Chronicle, TA_Half_Carried, TA_Standing_Previous, StandingScope).
+observe(TemporalReview, TA_Half_Carried, TA_Standing_Previous, StandingScope).
+carries(Chronicle, TA_Half_Carried, TA_Standing_Current, TA_Standing_Previous, StandingCarry).
+? err(TA_Half_Carried, StandingOmission).
+# => TRUE

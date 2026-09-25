@@ -134,6 +134,76 @@ reinstate the retired tooling or workflow.
 Grouped by kind. Dates in each heading are the ratification dates; a ruling
 that was later implemented or narrowed carries that supersession inline.
 
+### Item 49 — mutation testing over the rules, 2026-09-25
+
+`tools/mutation.py` changes one rule of the live constitution in one way —
+drops a conjunct, flips a negation, or swaps two roles inside one atom — and
+runs the change, as an in-memory edit, against the cases whose pins name the
+rule's head: cases on the live source and cases on a temporal stage or
+counterfactual base whose edits leave the rule intact. It generates only safe
+mutants and skips swaps that change nothing. The recorded run sampled three
+rules per family with seed 49 and at most twenty-four cases per mutant, half
+expecting the head TRUE and half FALSE, ranked by how many of the rule's own
+constants each case mentions; a mutant that exhausts 300 seconds or 16 GB is a
+resource result. Results, hand-written dispositions and the generated
+survivors list live in `book-1/source/measurements/`, outside the top level
+the reviewed-reference test reads, because case identifiers look like paths.
+No score is kept: the assurance portfolio refuses aggregate scores.
+
+Of seventy-eight mutants, forty-six were killed at once, one was refused and
+thirty-one survived. New pins kill thirteen of the survivors, the wider case
+selection kills one more, and one exhausts memory rather than surviving. The
+pins cover a reader requesting its
+own review (Chapter 22), a witness who observed nothing (delivery), the
+legacy family, marriage and sibling barriers holding for persons only and
+following the sibling entry's own subject (equality source pins), a condition
+record bound twice (the custody condition findings), a public body present in
+the jurisdiction (universal standing), each timing witness's missing standing
+and preserved carry on its own (TA-10, TA-05), a challenge naming no
+conflicting claim (TA-13), a challenge naming no custody authorisation
+(TA-41), and two new independence cases giving two roles one holder — a
+knowledge reader who is the actor, and a statistics source reviewing itself.
+Earlier sampling passes added the heard-teaching route (Chapter 5), a
+tribunal credential that does not follow (Chapter 23), a failure pattern split
+across tiers (Chapter 7), each dating witness alone (Chapter 24), each
+delivery route's provider witnessing itself (delivery) and a generated
+amendment case holding uncredentialed consent noise. The missing universal
+kinship barrier the pass surfaced was examined and is deliberate: the child
+record's pins already state that the kinship barrier forbids substituting a
+recorded marriage or sibling status, so it has no subject without one.
+
+The sixteen survivors left each carry a disposition. Thirteen drop or negate
+one writer's copy of a field its record's other writers still record, or
+leave a single-actor route asking less than the full one. No generated case
+sees either, because generated omission cases remove a field from every
+writer at once, so four development tests on the written rules reject them,
+each sabotage-tested:
+`record_attesters_record_every_field_in_the_uniform_families`, widened from
+seven template families to ten by comparing only the `$source`, `$evidence`
+and `$review` attesters (the four families whose sources alone record some
+fields are asserted by membership);
+`each_field_is_attested_the_same_way_across_its_family`, holding every family
+to one attestation pattern per field with five deliberate two-pattern fields
+listed; `single_actor_routes_ask_their_source_for_the_full_record`, which
+holds each ruling-D6 route to the full route's source fields and its review
+duty to the route's own; and `both_timing_witnesses_record_every_field`. One
+survivor is subsumed: dropping the record-path closure's guard only makes an
+entry on a cycle precede itself, and every reader either requires the entry
+free of an order collision or needs the same event-path order. Two are
+missing pins in generated families: the ecology appointment's sixteen
+variants, of which the cases exercise one, and the economic generator's
+alternate-review routes, pinned one kind per power.
+
+The harness itself changed twice on evidence: a case's own refusal pins print
+stratification errors, so only a mutant line that failed to load now counts
+as refused and memory exhaustion is checked first, which moved one T1 mutant
+from refused to resource; and the selection now reaches derived bases, which
+is what let the temporal alarms be observed at all. The rule count is
+unchanged at 7,558. All 141 authoring development tests pass, with five
+declared ignored, and the prose check passes. `RIGHTS_VERIFY_JOBS=4
+./verify.sh` passes 90,009 pins across 16,354 cases with complete
+contradiction checks and no findings in 1,212.23s.
+
 ### Item 48 — the flow constraints named and the engine situated, 2026-09-25
 
 The method gains "Six ways a fact is kept from a consequence", a table of the

@@ -16,7 +16,7 @@
 # is untouched. Pin a FALSE only where the KB could have said TRUE, and say in
 # the comment what would flip it.
 
-:expect-pins 23
+:expect-pins 24
 
 # "The electorate seated you. You have not been recalled. And you were not
 #  voided in an earlier period." — all three holding gives the pen.
@@ -141,6 +141,12 @@ observe(CustodyIntakeAudit, Case_Voss, NoHolderPermissionNoRetaliationAndImmedia
 
 ? permits(Tribunal, Wren).
 # => TRUE
+
+# "Gia is seated by Electorate; Wren is seated by Convocation." Each route gives
+# its own credential: Gia's positively established clear history gives her the
+# review credential, not the Tribunal's, because the Convocation did not seat her.
+? permits(Tribunal, Gia).
+# => FALSE
 
 # "Writing it down directly is not forbidden-and-punished; it is refused."
 :refuse reasoning /declared derived-only/

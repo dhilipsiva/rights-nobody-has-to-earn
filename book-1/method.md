@@ -690,6 +690,38 @@ their own appropriate review. Authoring commands such as
 not evidence that its claims pass. The chapter/pin pairs and current source
 are the places to inspect a particular conclusion.
 
+## Testing the tests
+
+A passing suite shows that the pins hold. It does not show that the pins
+would notice if a rule were wrong. Development tools ask that question from
+outside the suite. None runs inside `./verify.sh`, and none produces a score.
+
+One changes the rules. `tools/mutation.py` takes a seeded sample of
+rules in each family and makes one small change to each: it drops a
+condition, negates one, or swaps two roles inside one. The changed
+constitution then runs the cases whose pins ask about that rule's conclusion,
+including cases built on a temporal stage or a counterfactual that leave the
+rule in place. A change that every selected pin still passes is a survivor.
+The recorded run sampled three rules per family with seed 49 and ran each
+change against at most twenty-four cases, half expecting the conclusion and
+half expecting its absence. Its [survivors](source/measurements/mutation-survivors.md)
+are listed with a disposition each.
+
+A survivor is a question, not a verdict. Where a case can observe the change,
+the suite carries the pin that does: an office that requests its own review is
+owed none, a witness who observed nothing certifies nothing, and a condition
+record bound twice is a collision. Where the change drops one attester's copy
+of a field the other attesters still record, no generated case sees it,
+because a generated omission case removes a field from every attester at once.
+Four checks on the written rules reject that change instead: in ten families
+every attester on a record records every field; in every family each field is
+recorded by the same attesters in every rule; a single-actor route asks its
+one actor for everything the full route asks of its source; and both timing
+witnesses record every field. Each remaining survivor is listed as a missing
+pin in a generated family, or as a change another rule makes unobservable,
+with the reason. A survivor means that no selected pin noticed the change, not
+that no pin could; a sample is not a census.
+
 ## A pass can include a reproduced defect
 
 An expected answer is not necessarily a desirable outcome. One amendment

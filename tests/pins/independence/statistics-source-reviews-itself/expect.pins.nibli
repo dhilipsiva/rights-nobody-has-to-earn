@@ -1,0 +1,10 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+# A pattern record's source cannot be its own independent reviewer. With the
+# source and the reviewer the same holder, no presumption completes and the
+# reader owes no rebuttal hearing.
+:expect-pins 2
+
+? complete(StatisticsCaseRecord, RebuttableAggregateEqualityPresumption, StatisticsCaseProceeding).
+# => FALSE
+? obliged(StatisticsCaseReader, HearRebuttalAndCorrectAggregatePresumption, StatisticsCaseProceeding).
+# => FALSE

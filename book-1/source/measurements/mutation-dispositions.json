@@ -1,0 +1,66 @@
+{
+  "democratic-integrity-174d825cd8-drop-conjunct-50": {
+    "kind": "checked-by-shape",
+    "reason": "The review attester's copy of the final-review field is gone while the source and evidence attesters keep theirs; record_attesters_record_every_field_in_the_uniform_families and each_field_is_attested_the_same_way_across_its_family both reject it."
+  },
+  "democratic-integrity-14caa628dc-drop-conjunct-56": {
+    "kind": "checked-by-shape",
+    "reason": "The review attester's copy of the privacy field is gone while the other two attesters keep theirs; both attestation shape tests reject it."
+  },
+  "ecological-animal-1a9d990b6f-swap-role-883": {
+    "kind": "missing-pin",
+    "reason": "The rule is one of sixteen variants concluding the Animal Protection Advocate's appointment, four selection branches by four seating combinations. The generated cases complete the appointment through one variant, so no case completes it through this one, and a change confined to it is observed by nothing. Pinning every variant is generator work in the ecology family."
+  },
+  "economic-constitution-827b4e6002-flip-negation-424": {
+    "kind": "missing-pin",
+    "reason": "The alternate record reviewer's duty for the price-control power. The economic generator pins one of the five alternate-review routes for each power and rotates the kind across powers, so the same rule shape is pinned for other powers but this power's record-reviewer route is pinned nowhere."
+  },
+  "economic-constitution-8019b243ef-drop-conjunct-37": {
+    "kind": "checked-by-shape",
+    "reason": "The evidence attester's copy of the result's source epoch is gone in this rule while every sibling result rule in the family keeps it; each_field_is_attested_the_same_way_across_its_family rejects it. The family's sources alone record some fields, so the uniform test does not apply."
+  },
+  "family-life-ordinary-edecbe2700-flip-negation-32": {
+    "kind": "checked-by-shape",
+    "reason": "Negating the source's copy of the source version leaves the evidence and review attesters' copies; both attestation shape tests reject it."
+  },
+  "knowledge-and-free-field-623614198f-flip-negation-86": {
+    "kind": "checked-by-shape",
+    "reason": "Negating the review attester's copy of the holding field leaves the other two attesters' copies; both attestation shape tests reject it."
+  },
+  "mobility-plurality-448239675b-drop-conjunct-121": {
+    "kind": "checked-by-shape",
+    "reason": "The evidence attester's copy of the evacuation basis is gone while the source and review attesters keep theirs; both attestation shape tests reject it."
+  },
+  "mobility-plurality-034abe58ed-drop-conjunct-38": {
+    "kind": "checked-by-shape",
+    "reason": "The review attester's copy of the object field is gone while the other two keep theirs; both attestation shape tests reject it."
+  },
+  "non-carceral-justice-bd1802b334-drop-conjunct-29": {
+    "kind": "checked-by-shape",
+    "reason": "The prompt-review duty for a single-actor record no longer asks for the subject the single-actor route itself requires; single_actor_routes_ask_their_source_for_the_full_record rejects it."
+  },
+  "obligations-3050204649-flip-negation-69": {
+    "kind": "checked-by-shape",
+    "reason": "Negating the source's copy of the origin's record field breaks the attestation pattern every sibling rule in the family shares; each_field_is_attested_the_same_way_across_its_family rejects it."
+  },
+  "public-safety-d2af933b16-drop-conjunct-303": {
+    "kind": "checked-by-shape",
+    "reason": "The source's copy of the external consent version is gone while the evidence and review attesters keep theirs; both attestation shape tests reject it."
+  },
+  "record-power-f3e10a808c-drop-conjunct-29": {
+    "kind": "checked-by-shape",
+    "reason": "The review attester's copy of the holder field is gone while the other two keep theirs; both attestation shape tests reject it."
+  },
+  "substantive-equality-ordinary-014d120be6-drop-conjunct-17": {
+    "kind": "checked-by-shape",
+    "reason": "The single-actor accommodation route no longer asks its source for the domain the full-procedure route asks for the same duty; single_actor_routes_ask_their_source_for_the_full_record rejects it."
+  },
+  "t2-0cfbaa600b-drop-conjunct-2": {
+    "kind": "subsumed",
+    "reason": "Without the guard, a cycle of record order also makes each of its entries precede itself. Every rule reading a record path either requires its entries to be free of an order collision, which an entry on a cycle already has, or also requires the same order on the event path, whose closure keeps its own guard, so the reflexive order reaches no conclusion."
+  },
+  "t3-41ef30cb41-drop-conjunct-1": {
+    "kind": "checked-by-shape",
+    "reason": "The chronicle's copy of the first passport's family is gone while the timing review's remains; both_timing_witnesses_record_every_field rejects it."
+  }
+}

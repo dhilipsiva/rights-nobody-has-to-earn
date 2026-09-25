@@ -1,6 +1,6 @@
 # SPDX-License-Identifier: MIT OR Apache-2.0
 # Positive custody-condition evidence; routine review and complaint access.
-:expect-pins 41
+:expect-pins 46
 ? err(Adam, Isolation).
 # => FALSE
 ? err(Hano, Isolation).
@@ -195,3 +195,24 @@ list(Isolation_Mismatch, AnotherSubject, Holding_Isolation_Mismatch, CustodyIsol
 responsible(ForgedIsolation, CustodyIsolationFinding).
 :refuse reasoning /declared derived-only/
 err(Bela, Isolation).
+
+# One condition record binds one subject to one holding and one holder to one
+# place. A second binding of either kind is a collision, not a choice.
+list(Isolation_Twice, ConditionSubject, Holding_Twice_A, CustodyIsolationFinding).
+? collide(Isolation_Twice, CustodyConditionBinding).
+# => FALSE
+list(Isolation_Twice, ConditionSubject, Holding_Twice_B, CustodyIsolationFinding).
+? collide(Isolation_Twice, CustodyConditionBinding).
+# => TRUE
+list(Isolation_TwoSubjects, ConditionSubject, Holding_Two, CustodyIsolationFinding).
+list(Isolation_TwoSubjects, OtherConditionSubject, Holding_Two, CustodyIsolationFinding).
+? collide(Isolation_TwoSubjects, CustodyConditionBinding).
+# => TRUE
+list(Isolation_TwoPlaces, HoldingActor, Place_Two_A, CustodyConditionLocation).
+list(Isolation_TwoPlaces, HoldingActor, Place_Two_B, CustodyConditionLocation).
+? collide(Isolation_TwoPlaces, CustodyConditionBinding).
+# => TRUE
+list(Isolation_TwoHolders, HoldingActor, Place_Two, CustodyConditionLocation).
+list(Isolation_TwoHolders, OtherHoldingActor, Place_Two, CustodyConditionLocation).
+? collide(Isolation_TwoHolders, CustodyConditionBinding).
+# => TRUE
