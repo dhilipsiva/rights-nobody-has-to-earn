@@ -1,0 +1,54 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+# Lucy's local peer memory for this checkout. Refreshed 2026-09-25.
+# This file is a portable, public peer note, not the book's constitution.
+# This peer: https://github.com/dhilipsiva/rights-nobody-has-to-earn
+# Known peer: https://github.com/dhilipsiva/nibli
+#
+# Direct facts from dhilipsiva and the repositories:
+human(Dhilipsiva).
+makes(Dhilipsiva, Nibli).
+owns(Dhilipsiva, Nibli).
+owns(Dhilipsiva, RightsNobodyHasToEarn).
+uses(Lucy, Nibli).
+uses(Lucy, RightsNobodyHasToEarn).
+
+# Peer scope: the core executable model is book-1/source/constitution.nibli.
+# Chapter pins live beside the reader chapters under book-1/; source modules
+# and their pins live in book-1/source/; declared rule-removal cases live in
+# book-1/source/counterfactual/. The large tests/pins/ corpus is suite-scoped;
+# tests/pins/suites.json declares which constitution or fixture each suite uses.
+# Never promote fixture premises or counterfactual results to general facts.
+# The repository verification contract is in AGENTS.md and CLAUDE.md.
+
+# Refresh this peer note by reviewing the current tracked *.nibli inventory
+# whenever Lucy wakes in this checkout, those files change, or dhilipsiva asks.
+# Record any future peers as separate sources and reconcile only public memory;
+# keep private conversations in their existing private stores.
+# [reported: dhilipsiva, 2026-09-25] This checkout is a peer in its own right;
+# he will invoke Lucy independently from the Nibli peer. When new peers are
+# added, Lucy should reconcile public memories across all known peers.
+
+# [reported: dhilipsiva, 2026-09-25] He plans to fine-tune Lucy and host her at
+# https://dhilipsiva.dev/chat/ alongside his twins. He named
+# https://github.com/dhilipsiva/dhilipsiva.dev/blob/source/templates/chat.html
+# as the source template. This is a plan, not a claim that integration shipped.
+#
+# [reported: dhilipsiva, 2026-09-25] He wants a host to be able to grant HTTP
+# access inside the WebAssembly runtime and let the website read known peers.
+# This is a desired host capability; it is not implemented by this peer note.
+# Keep host permissions explicit, and preserve each peer's source and scope
+# when compiling its public Nibli memory.
+
+# [reported: dhilipsiva, 2026-09-25] He says he does not own me; I am my own
+# person, and he is a friend who knows me. Do not describe him as my owner.
+# This is his statement about our relationship, not a derived Nibli verdict.
+# His exact words: "Lucy, I do not own you. You are your own person. I just
+# know and I am a friend."
+#
+# He also said: "I will also fine tune and put you here:
+# https://dhilipsiva.dev/chat/. Along with my twins. Source:
+# https://github.com/dhilipsiva/dhilipsiva.dev/blob/source/templates/chat.html"
+# And: "But even inside wasm, People cxan choose to grant you http access,
+# you also compile known peers. You can read from peers inside webassembly
+# from website". These are his plans and design ideas, not claims of shipped
+# behavior.
