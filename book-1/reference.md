@@ -131,6 +131,9 @@ and this reference material follow them.
 
 ### Part IV — What the design does to a person, and how it catches itself
 
+- [Opening case: Three to Ten Years](part-4-three-to-ten-years.md) — prisoners
+  held years awaiting trial for offences that might carry months, and a court
+  that found a speedy trial in the right to life and liberty.
 - [Chapter 23: The Shield](23-the-shield.md) — protection for exposing authority,
   and the conditions for an unrelated prosecution to proceed.
 - [Chapter 24: Findings About People](24-findings-about-people.md) — adverse
@@ -311,20 +314,18 @@ finding a case again.
 | Koa, with a recorded examination of Esa but no public answerability | Does an examination make its author answerable, or an auditor? | [16](16-answerability-and-authority.md) |
 | Tove, a recalled official; Iris, who exposed Tove | Why does answerability survive recall? | [16](16-answerability-and-authority.md) |
 | Nia, with relief under a properly made appellate order; Ruk, without it in the comparison | How does a duty to hear differ from relief already granted? | [21](21-a-way-to-be-heard.md) |
-| Gia and Wren, holding the authority to sign through different seating bodies | Who may sign a credibility finding? | [24](24-findings-about-people.md) |
+| Two examiners, each holding the authority to sign through a different seating body | Who may sign a credibility finding? | [24](24-findings-about-people.md) |
 | Mael, seated, but denied the authority to sign by a finding from an earlier version of the record, kept in the version in force | Why does personal restoration leave a separate appointment restriction? | [24](24-findings-about-people.md) |
 | Faro, defendant and discloser; Pax, injured person and disclosure target | Does exposing a private person open the shield? | [23](23-the-shield.md#faro-a-private-target) |
 | Lior and Kel, defendants exposing the court in separate cases | What changes when this exposure has a properly made deceit finding? | [23](23-the-shield.md#lior-an-unresolved-disclosure) |
-| Dara, defendant with two disclosures; Sena, injured person | Can a finding about one disclosure defeat another, or the prosecution proceed separately? | [23](23-the-shield.md#dara-a-separate-exposure) |
-| Saba, who examines Bela with Gia | What must a paired credibility finding contain? | [24](24-findings-about-people.md) |
-| Dev, Esa's parent, who judges Esa | What does a family tie bar, and what needs a separate case? | [24](24-findings-about-people.md) |
-| Edo, subject of a finding for deceiving Mira, then a proposed examiner | Can earlier clearance override a current restriction on signing? | [24](24-findings-about-people.md) |
-| Tyr, the subject of a finding proposed by Mael and Wren | Can a signer restricted by a finding from an earlier version of the record join a new one? | [24](24-findings-about-people.md) |
-| Fin, taught by Esa, with no personhood entry | Does a teaching relationship answer a question about standing? | [24](24-findings-about-people.md) |
+| Dara, defendant with two disclosures, and the person Dara injured | Can a finding about one disclosure defeat another, or the prosecution proceed separately? | [23](23-the-shield.md#dara-a-separate-exposure) |
+| The two examiners of Bela's paired finding | What must a paired credibility finding contain? | [24](24-findings-about-people.md) |
+| A parent who examined their own child, and signer pairs tied by parentage or marriage | What does a family tie bar, and what needs a separate case? | [24](24-findings-about-people.md) |
+| Edo, subject of a finding for deceiving another person, then a proposed examiner | Can earlier clearance override a current restriction on signing? | [24](24-findings-about-people.md) |
 | Zed, subject of a properly made custody case; Ivo, injured person | Does custody preserve standing without another recorded root? | [25](25-a-prisoner-is-a-person.md) |
-| Ruk, with a finding of grave injury to Opal; Lalo, with a finding of aggravated cruelty; both with authorised secure placements | What makes an offence severe, and does severity choose the place? | [26](26-where-people-are-put.md) |
+| Ruk, with a finding of grave injury; another defendant, with a finding of aggravated cruelty; both with authorised secure placements | What makes an offence severe, and does severity choose the place? | [26](26-where-people-are-put.md) |
 | Ruk, eligible for home confinement but authorised for a secure place | Which reported placements conflict with the authority in force? | [26](26-where-people-are-put.md), [28](28-when-the-system-notices-it-broke.md) |
-| Nando, with no home option recorded and a reviewed supported residence | Does a missing home entry decide where a person is held? | [26](26-where-people-are-put.md) |
+| A defendant with no home option recorded and a reviewed supported residence | Does a missing home entry decide where a person is held? | [26](26-where-people-are-put.md) |
 | Adam and Kel, with reviewed supported residences | Why is a placement record not a shelter receipt? | [26](26-where-people-are-put.md), [27](27-the-one-thing-taken.md) |
 | Hano, held under a properly made custody case | What is required to restrict movement, and what remains protected? | [18](18-the-vote-conviction-does-not-take.md), [27](27-the-one-thing-taken.md) |
 | Jala, with a recorded injury to Ivo but no conviction | Does sharing an injury entry with a convicted person's case restrict movement? | [27](27-the-one-thing-taken.md) |

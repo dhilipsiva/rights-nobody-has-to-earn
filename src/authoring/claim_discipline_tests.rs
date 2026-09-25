@@ -50,11 +50,16 @@ fn argued_text(context: &Context) -> String {
 /// leans on it. One source may carry several figures — Tanzania's relocation
 /// count and Mondragon's headcount are not one claim each — so the rows are
 /// keyed by case, not by entry.
-const TRACED: [(&str, &str, &str); 159] = [
+const TRACED: [(&str, &str, &str); 169] = [
     (
         "the Wallacedene eviction",
         "grootboom-2000-eviction-facts",
         "510 children and 390 adults",
+    ),
+    (
+        "the Part IV opening case",
+        "hussainara-khatoon-1979",
+        "though named nowhere in the Constitution",
     ),
     (
         "the Part III opening case",
@@ -781,6 +786,51 @@ const TRACED: [(&str, &str, &str); 159] = [
         "the endurance of constitutions",
         "elkins-ginsburg-melton-2009-endurance-of-constitutions",
         "imperilled by crises",
+    ),
+    (
+        "collateral consequences reformed",
+        "ccca-2010-collateral-consequences-act",
+        "certificate of restoration of rights",
+    ),
+    (
+        "the Mandela Rules",
+        "nelson-mandela-rules-2015",
+        "add nothing to the suffering inherent in that loss",
+    ),
+    (
+        "the speedy-trial holding, in the prisoner chapter",
+        "hussainara-khatoon-1979",
+        "people held for years untried",
+    ),
+    (
+        "the risk to Nordic exceptionalism",
+        "pratt-2008-scandinavian-exceptionalism",
+        "Sweden most of all",
+    ),
+    (
+        "Norway's random judges, in the confinement chapter",
+        "bhuller-2020-incarceration-recidivism-employment",
+        "no significant change in reoffending",
+    ),
+    (
+        "decarceration",
+        "davis-2003-are-prisons-obsolete",
+        "electronically monitored house arrest",
+    ),
+    (
+        "California's prison buildup",
+        "gilmore-2007-golden-gulag",
+        "surpluses of finance capital, labour, land and state capacity",
+    ),
+    (
+        "national preventive mechanisms",
+        "opcat-2002-national-preventive-mechanisms",
+        "forbids sanctions against anyone for giving them information",
+    ),
+    (
+        "national human rights institutions",
+        "paris-principles-1993",
+        "appointed by an official act for a set term",
     ),
 ];
 

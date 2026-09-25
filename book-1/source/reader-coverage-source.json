@@ -3268,6 +3268,37 @@
       ]
     },
     {
+      "id": "23-08",
+      "chapter": "book-1/23-the-shield.md",
+      "section": "What this cannot settle",
+      "domain": "Justice and coercion",
+      "family": "ARTICLES",
+      "function": "protective",
+      "setting": "independence that controlled appointments can falsify, and witnesses who must date a disclosure honestly",
+      "trajectory": "unresolved",
+      "basis": "book-1/23-the-shield.pins.nibli",
+      "pattern": "coercive",
+      "postures": [
+        "challenges"
+      ]
+    },
+    {
+      "id": "23-09",
+      "chapter": "book-1/23-the-shield.md",
+      "section": "Argument: Protection that follows the charge",
+      "domain": "Justice and coercion",
+      "family": "exempt",
+      "function": "argument",
+      "setting": "a shield scoped to the case and dated by the charge, against a blanket immunity",
+      "trajectory": "contested",
+      "basis": "exempt-element",
+      "pattern": "argument",
+      "postures": [
+        "chooses",
+        "challenges"
+      ]
+    },
+    {
       "id": "24-00",
       "chapter": "book-1/24-findings-about-people.md",
       "section": "(preamble)",
@@ -3298,111 +3329,6 @@
       ]
     },
     {
-      "id": "24-02",
-      "chapter": "book-1/24-findings-about-people.md",
-      "section": "Findings against an examiner",
-      "domain": "Records and accountability",
-      "family": "CREDIBILITY",
-      "function": "protective",
-      "setting": "guards pointing back at the examiner",
-      "trajectory": "works",
-      "basis": "book-1/24-findings-about-people.pins.nibli",
-      "pattern": "records",
-      "postures": [
-        "is acted upon"
-      ]
-    },
-    {
-      "id": "24-03",
-      "chapter": "book-1/24-findings-about-people.md",
-      "section": "What has to cross the record",
-      "domain": "Records and accountability",
-      "family": "CREDIBILITY",
-      "function": "protective",
-      "setting": "historical credential restrictions and current signing eligibility",
-      "trajectory": "works",
-      "basis": "book-1/24-findings-about-people.pins.nibli",
-      "pattern": "records",
-      "postures": [
-        "is acted upon"
-      ]
-    },
-    {
-      "id": "24-04",
-      "chapter": "book-1/24-findings-about-people.md",
-      "section": "Who holds the authority to sign",
-      "domain": "Public institutions",
-      "family": "ARTICLES",
-      "function": "ordinary",
-      "setting": "the credential that makes a finding count",
-      "trajectory": "works",
-      "basis": "book-1/24-findings-about-people.pins.nibli",
-      "pattern": "democratic",
-      "postures": [
-        "governs"
-      ]
-    },
-    {
-      "id": "24-05",
-      "chapter": "book-1/24-findings-about-people.md",
-      "section": "The authority to sign must follow from evidence",
-      "domain": "Public institutions",
-      "family": "ARTICLES",
-      "function": "protective",
-      "setting": "a credential requiring positive witnessed current history",
-      "trajectory": "continuity-remedy",
-      "basis": "book-1/24-findings-about-people.pins.nibli",
-      "pattern": "democratic",
-      "postures": [
-        "governs"
-      ]
-    },
-    {
-      "id": "24-06",
-      "chapter": "book-1/24-findings-about-people.md",
-      "section": "Recall and an earlier finding",
-      "domain": "Public institutions",
-      "family": "ARTICLES",
-      "function": "protective",
-      "setting": "recall and carried history",
-      "trajectory": "works",
-      "basis": "book-1/24-findings-about-people.pins.nibli",
-      "pattern": "democratic",
-      "postures": [
-        "governs"
-      ]
-    },
-    {
-      "id": "24-07",
-      "chapter": "book-1/24-findings-about-people.md",
-      "section": "A shortcut to the authority to sign",
-      "domain": "Public institutions",
-      "family": "ARTICLES",
-      "function": "protective",
-      "setting": "the cheaper of two doors",
-      "trajectory": "contested",
-      "basis": "book-1/24-findings-about-people.pins.nibli",
-      "pattern": "democratic",
-      "postures": [
-        "governs"
-      ]
-    },
-    {
-      "id": "24-08",
-      "chapter": "book-1/24-findings-about-people.md",
-      "section": "Relief on appeal",
-      "domain": "Public institutions",
-      "family": "CUSTODY-ADJUDICATION",
-      "function": "ordinary",
-      "setting": "case-specific independent relief and its limits",
-      "trajectory": "works",
-      "basis": "book-1/24-findings-about-people.pins.nibli",
-      "pattern": "democratic",
-      "postures": [
-        "governs"
-      ]
-    },
-    {
       "id": "24-09",
       "chapter": "book-1/24-findings-about-people.md",
       "section": "The limits of a finding",
@@ -3410,36 +3336,6 @@
       "family": "ARTICLES",
       "function": "protective",
       "setting": "an effective finding restricts the named use of power",
-      "trajectory": "works",
-      "basis": "book-1/24-findings-about-people.pins.nibli",
-      "pattern": "private-civic",
-      "postures": [
-        "is acted upon"
-      ]
-    },
-    {
-      "id": "24-10",
-      "chapter": "book-1/24-findings-about-people.md",
-      "section": "A claim can be corrected without condemning every contribution",
-      "domain": "Economy, property, work and commons",
-      "family": "ARTICLES",
-      "function": "protective",
-      "setting": "exact-basis wage correction leaves the supplement and floor intact",
-      "trajectory": "contested",
-      "basis": "book-1/24-findings-about-people.pins.nibli",
-      "pattern": "private-civic",
-      "postures": [
-        "is acted upon"
-      ]
-    },
-    {
-      "id": "24-11",
-      "chapter": "book-1/24-findings-about-people.md",
-      "section": "Rights that remain",
-      "domain": "Economy, property, work and commons",
-      "family": "ARTICLES",
-      "function": "continuity",
-      "setting": "standing, political voice, movement and floor survive an adverse finding",
       "trajectory": "works",
       "basis": "book-1/24-findings-about-people.pins.nibli",
       "pattern": "private-civic",
@@ -3463,6 +3359,51 @@
       ]
     },
     {
+      "id": "24-05",
+      "chapter": "book-1/24-findings-about-people.md",
+      "section": "The authority to sign must follow from evidence",
+      "domain": "Public institutions",
+      "family": "ARTICLES",
+      "function": "protective",
+      "setting": "a credential requiring positive witnessed current history",
+      "trajectory": "continuity-remedy",
+      "basis": "book-1/24-findings-about-people.pins.nibli",
+      "pattern": "democratic",
+      "postures": [
+        "governs"
+      ]
+    },
+    {
+      "id": "24-17",
+      "chapter": "book-1/24-findings-about-people.md",
+      "section": "A signer under a finding",
+      "domain": "Records and accountability",
+      "family": "CREDIBILITY",
+      "function": "protective",
+      "setting": "a signer who keeps an appointment while a signature on a new finding stops counting",
+      "trajectory": "works",
+      "basis": "book-1/24-findings-about-people.pins.nibli",
+      "pattern": "records",
+      "postures": [
+        "is acted upon"
+      ]
+    },
+    {
+      "id": "24-18",
+      "chapter": "book-1/24-findings-about-people.md",
+      "section": "Family ties bar the pair",
+      "domain": "Records and accountability",
+      "family": "CREDIBILITY",
+      "function": "protective",
+      "setting": "a parent examining their own child, and signer pairs tied by parentage or marriage",
+      "trajectory": "works",
+      "basis": "book-1/24-findings-about-people.pins.nibli",
+      "pattern": "records",
+      "postures": [
+        "is acted upon"
+      ]
+    },
+    {
       "id": "24-13",
       "chapter": "book-1/24-findings-about-people.md",
       "section": "The way back, and who has to answer",
@@ -3475,21 +3416,6 @@
       "pattern": "records",
       "postures": [
         "challenges"
-      ]
-    },
-    {
-      "id": "24-14",
-      "chapter": "book-1/24-findings-about-people.md",
-      "section": "Ending the restriction",
-      "domain": "Economy, property, work and commons",
-      "family": "ARTICLES",
-      "function": "protective",
-      "setting": "case-specific restoration, carried appointment restriction and review nonresponse",
-      "trajectory": "contested",
-      "basis": "book-1/24-findings-about-people.pins.nibli",
-      "pattern": "private-civic",
-      "postures": [
-        "is acted upon"
       ]
     },
     {
@@ -3520,6 +3446,21 @@
       "pattern": "democratic",
       "postures": [
         "governs"
+      ]
+    },
+    {
+      "id": "24-19",
+      "chapter": "book-1/24-findings-about-people.md",
+      "section": "Argument: A restriction the size of the act",
+      "domain": "Records and accountability",
+      "family": "exempt",
+      "function": "argument",
+      "setting": "a finding that restricts only a signature, against disqualification and collateral consequences",
+      "trajectory": "contested",
+      "basis": "exempt-element",
+      "pattern": "argument",
+      "postures": [
+        "chooses"
       ]
     },
     {
@@ -3568,21 +3509,6 @@
       ]
     },
     {
-      "id": "25-03",
-      "chapter": "book-1/25-a-prisoner-is-a-person.md",
-      "section": "What this cannot settle",
-      "domain": "Personhood and equality",
-      "family": "ARTICLES",
-      "function": "protective",
-      "setting": "the refusal is structural, not judgement",
-      "trajectory": "contested",
-      "basis": "book-1/25-a-prisoner-is-a-person.pins.nibli",
-      "pattern": "constructive",
-      "postures": [
-        "is acted upon"
-      ]
-    },
-    {
       "id": "25-04",
       "chapter": "book-1/25-a-prisoner-is-a-person.md",
       "section": "Standing that protects others",
@@ -3591,6 +3517,21 @@
       "function": "protective",
       "setting": "rights that do not thin out",
       "trajectory": "works",
+      "basis": "book-1/25-a-prisoner-is-a-person.pins.nibli",
+      "pattern": "constructive",
+      "postures": [
+        "is acted upon"
+      ]
+    },
+    {
+      "id": "25-03",
+      "chapter": "book-1/25-a-prisoner-is-a-person.md",
+      "section": "What this cannot settle",
+      "domain": "Personhood and equality",
+      "family": "ARTICLES",
+      "function": "protective",
+      "setting": "the refusal is structural, not judgement",
+      "trajectory": "contested",
       "basis": "book-1/25-a-prisoner-is-a-person.pins.nibli",
       "pattern": "constructive",
       "postures": [
@@ -3610,6 +3551,21 @@
       "pattern": "coercive",
       "postures": [
         "receives"
+      ]
+    },
+    {
+      "id": "25-06",
+      "chapter": "book-1/25-a-prisoner-is-a-person.md",
+      "section": "Argument: Liberty is what a sentence takes",
+      "domain": "Personhood and equality",
+      "family": "exempt",
+      "function": "argument",
+      "setting": "a prisoner who keeps standing and the floor, against suspended civil standing",
+      "trajectory": "contested",
+      "basis": "exempt-element",
+      "pattern": "argument",
+      "postures": [
+        "chooses"
       ]
     },
     {
@@ -3700,6 +3656,21 @@
       "pattern": "constructive",
       "postures": [
         "is acted upon"
+      ]
+    },
+    {
+      "id": "26-06",
+      "chapter": "book-1/26-where-people-are-put.md",
+      "section": "Argument: Proved harm opens the harshest place",
+      "domain": "Justice and coercion",
+      "family": "exempt",
+      "function": "argument",
+      "setting": "severity from adjudicated findings that never selects a place, against classification by offence or risk score",
+      "trajectory": "contested",
+      "basis": "exempt-element",
+      "pattern": "argument",
+      "postures": [
+        "chooses"
       ]
     },
     {
@@ -3823,6 +3794,22 @@
       ]
     },
     {
+      "id": "27-09",
+      "chapter": "book-1/27-the-one-thing-taken.md",
+      "section": "Argument: A power that takes movement and then expires",
+      "domain": "Justice and coercion",
+      "family": "exempt",
+      "function": "argument",
+      "setting": "a bounded power to confine that lapses without current authority, against abolition",
+      "trajectory": "contested",
+      "basis": "exempt-element",
+      "pattern": "argument",
+      "postures": [
+        "chooses",
+        "is acted upon"
+      ]
+    },
+    {
       "id": "28-00",
       "chapter": "book-1/28-when-the-system-notices-it-broke.md",
       "section": "(preamble)",
@@ -3914,14 +3901,14 @@
       ]
     },
     {
-      "id": "28-06",
+      "id": "28-08",
       "chapter": "book-1/28-when-the-system-notices-it-broke.md",
-      "section": "What can be checked",
+      "section": "Who bears the cost",
       "domain": "Records and accountability",
       "family": "OBLIGATIONS",
       "function": "protective",
-      "setting": "vocabulary for its own violation",
-      "trajectory": "unresolved",
+      "setting": "who waits while a breach needs a positive, independently witnessed finding",
+      "trajectory": "contested",
       "basis": "book-1/28-when-the-system-notices-it-broke.pins.nibli",
       "pattern": "records",
       "postures": [
@@ -3941,6 +3928,36 @@
       "pattern": "records",
       "postures": [
         "receives"
+      ]
+    },
+    {
+      "id": "28-06",
+      "chapter": "book-1/28-when-the-system-notices-it-broke.md",
+      "section": "What this cannot settle",
+      "domain": "Records and accountability",
+      "family": "OBLIGATIONS",
+      "function": "protective",
+      "setting": "a marker nobody writes, and vocabulary for the system's own violation",
+      "trajectory": "unresolved",
+      "basis": "book-1/28-when-the-system-notices-it-broke.pins.nibli",
+      "pattern": "records",
+      "postures": [
+        "requests"
+      ]
+    },
+    {
+      "id": "28-09",
+      "chapter": "book-1/28-when-the-system-notices-it-broke.md",
+      "section": "Argument: Findings from outside the walls",
+      "domain": "Records and accountability",
+      "family": "exempt",
+      "function": "argument",
+      "setting": "breaches found by independent witnesses raising duties on named offices, against internal inspection",
+      "trajectory": "contested",
+      "basis": "exempt-element",
+      "pattern": "argument",
+      "postures": [
+        "chooses"
       ]
     },
     {

@@ -214,7 +214,9 @@
     {
       "title": "What the design does to a person, and how it catches itself",
       "opener": {
-        "status": "planned"
+        "file": "part-4-three-to-ten-years.md",
+        "title": "Three to Ten Years",
+        "status": "landed"
       },
       "chapters": [
         {

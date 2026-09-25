@@ -19,11 +19,11 @@ the labelled opening note, Part V's argument and evidence, and the optional
 method part, Book 1's claims derive from that constitution. The reader chapters
 remain jargon-free. Generated reports and prose do not override the formal source.
 
-**Ratified 2026-09-24, not yet implemented:** each derived chapter will also
-close with one labelled argument section, and documented cases will also appear
-in the opening and at the head of each Part (D2 and D3 of *The revision rulings
-D1–D9* below). Parts I–III carry both since items 54–56; until item 57
-lands, the paragraph above describes Part IV.
+**Ratified 2026-09-24 and implemented for Parts I–IV (items 54–57):** each
+derived chapter also closes with one labelled argument section, and a
+documented case opens each of Parts I–IV (D2 and D3 of *The revision rulings
+D1–D9* below). The opening's documented case and Part V's wait for items 60
+and 59.
 
 Book 2 owns operation and transition within a declared reference envelope:
 staffing, costs, resources, technology, workflows, capacity, and empirical
@@ -133,6 +133,50 @@ reinstate the retired tooling or workflow.
 
 Grouped by kind. Dates in each heading are the ratification dates; a ruling
 that was later implemented or narrowed carries that supersession inline.
+
+### Item 57 — Part IV in the ruled shape, 2026-09-25
+
+Part IV now carries rulings D2 and D3, so every Part of the derived book does.
+Its labelled opening case, *Three to Ten Years*
+(`book-1/part-4-three-to-ten-years.md`), tells the first *Hussainara Khatoon*
+judgment: Bihar undertrials held three to ten years for offences that might
+carry months, released on their own bond, and a speedy trial found in the
+right to life and liberty. Chapters 23–28 each close with an argument section:
+a shield scoped to the case and dated by the charge against a blanket immunity
+(23); a finding that restricts only a signature against disqualification and
+collateral consequences (24); a prisoner who keeps standing and the floor
+against suspended civil standing (25); severity from adjudicated findings that
+never selects a place against classification by offence or risk score (26); a
+bounded power to confine that lapses without current authority against
+abolition (27); and breaches found by independent witnesses raising duties on
+named offices against internal inspection (28). Derived negation falls from
+23.3–35.5 to 6.2–12.2 per 1,000 words, and names to five or fewer in every
+chapter.
+
+Chapter 24 states its whole reach first and is built on four cases — Bela's
+paired finding and its limits, Edo as a signer under a finding, a family tie
+that bars the pair, and Mael's restoration — falling from 3,453 to 2,181
+derived words; its other cases stay in the tests. Chapter 25 is rebuilt on its
+principle with its title and first line kept, Chapter 26 keeps its severity
+table, and Chapter 27 keeps its absolute prohibitions and states the cost of a
+lapsed custody authority as the lapse case pins it. Part V's lapse paragraph
+said the convicted person "leaves" confinement; the pins show that authority
+ends and no release follows, so it now states the leaving as a condition.
+Chapter 28's reworded needle follows in the full-society ledger, and Chapter
+24's "What it costs" states its independence limit in the form the boundary
+detector reads. The case index describes by role the people the chapters no
+longer name, and drops the two cases Chapter 24 left to the tests. Ten new
+bindings tie the opening case and the arguments to the registry (169); the
+coverage ledger holds 269 passages, nine Chapter 24 records folding into the
+four cases. The exact prose is `session-drafted, author-approved under
+delegated approval (2026-09-13)`.
+
+No rule, pin or suite changes; the rule count stays at 7,583. All 145
+authoring development tests pass, with five declared ignored, as do the
+sixteen prose-lint, nine book-builder and six companion input unit tests and
+the prose check. `registry/check.py` passes with 222 claims.
+`RIGHTS_VERIFY_JOBS=4 ./verify.sh` passes 90,169 pins across 16,352 cases with
+complete contradiction checks and no findings in 1,149.19s.
 
 ### Item 56 — Part III in the ruled shape, 2026-09-25
 
@@ -1428,7 +1472,8 @@ length invariant and the digit rule come to be measured by section rather than
 by file once item 53 builds that tooling. Items 53–59 and 63 implement it.
 **Implemented for Part I 2026-09-25 (item 54):** Chapters 1–6 each close
 with an argument section. **And for Part II the same day (item 55):**
-Chapters 7–15; **and for Part III (item 56):** Chapters 16–22.
+Chapters 7–15; **for Part III (item 56):** Chapters 16–22; **and for Part IV
+(item 57):** Chapters 23–28.
 
 **D3 — documented cases outside Part V.** Documented, registry-sourced cases may
 appear in the opening (Santoshi Kumari first, with the dispute over her death
@@ -1439,7 +1484,8 @@ life. This supersedes the rule that the historical cases stay in Part V. Items
 **Implemented for Part I 2026-09-25 (item 54):** its opening case is *The
 Sports Field at Wallacedene*, and its argument sections carry their cases.
 **And for Part II (item 55):** its opening case is *Unprecedented Injustice*;
-**and for Part III (item 56):** *The Brooding Spirit of the Law*.
+**for Part III (item 56):** *The Brooding Spirit of the Law*; **and for Part
+IV (item 57):** *Three to Ten Years*.
 
 **D4 — the constitution in plain language, in the companion.** Numbered
 plain-language articles are published in the companion, not printed in the book,
@@ -3694,7 +3740,7 @@ rulings D1–D9*):** each derived chapter will close with one labelled argument
 section, and documented cases may also appear in the opening, a labelled case
 opening each Part, and those argument sections. The flat register, the ban on
 inner lives and the refusal of composite citizens and dramatised scenes stand. Parts
-I–III carry both since items 54–56 (2026-09-25).
+I–IV carry both since items 54–57 (2026-09-25).
 
 **Superseding prose-supply protocol — author-approved 2026-08-20.** Sessions may
 draft the Book 1 manuscript, including its epigraph, opening note, numbered
@@ -7277,7 +7323,7 @@ Note the manifesto's heading convention differs deliberately from the book's: it
   rulings D1–D9*):** each derived chapter will close with one labelled
   first-person argument section, so the seam moves inside the chapter rather
   than disappearing. Derived sections stay flat and derived. The chapters of
-  Parts I–III carry theirs since items 54–56 (2026-09-25).
+  Parts I–IV carry theirs since items 54–57 (2026-09-25).
 
 - **The method part's scope is sealed — `book-1/method.md`, landed 2026-08-03.** Five
   decisions, each load-bearing: **(a) the filename is unnumbered and must never be

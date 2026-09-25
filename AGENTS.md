@@ -7,7 +7,7 @@ is the ordered revision backlog created on 2026-09-24 from the outside revision
 plan in `new-reviwes/`; its predecessor, requested on 2026-09-18, is complete.
 The author's rulings D1–D9 of 2026-09-24 on that backlog's reserved questions
 are recorded in `CLAUDE.md` with the items implementing each: D5–D8 have
-landed, D2 and D3 hold for Parts I–III, and the rest wait for their items. The
+landed, D2 and D3 hold for Parts I–IV, and the rest wait for their items. The
 2026-09-16 rebuild's rulings, measurements and chapter table are recorded in
 `CLAUDE.md` and `book-1/contents.json`. `book-2/TODO.md` is Book 2's tracker
 and is collection-only until Book 1 ships at Gate C.
@@ -17,7 +17,7 @@ opening note (whose map, glossary and index sit at the back in `reference.md`),
 Part V, and method are the non-derived exceptions; a derived chapter may close
 with one argument section headed `## Argument:` (ruling D2), which the checks
 read as argued text, and each Part may open with a labelled documented case
-(ruling D3); those of Parts I–III are written and the others are reserved in
+(ruling D3); those of Parts I–IV are written and Part V's is reserved in
 `contents.json`. Book 2 remains inactive until Gate C and owns operation and
 transition. Preserve the legacy manuscripts until their TODO harvest. Keep
 epigraph and method unnumbered.

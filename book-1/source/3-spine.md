@@ -181,7 +181,7 @@ Front matter: `epigraph.md`, `00-opening-note.md`.
 | 21 | A Way to Be Heard | `21-a-way-to-be-heard.md` | derived | engine | landed |
 | 22 | Changing the Rules | `22-changing-the-rules.md` | derived | engine | landed |
 | **Part IV — What the design does to a person, and how it catches itself** | | | | | |
-| — | Opening case | — | exempt | — | planned |
+| — | Opening case: Three to Ten Years | `part-4-three-to-ten-years.md` | exempt | — | landed |
 | 23 | The Shield | `23-the-shield.md` | derived | break | landed |
 | 24 | Findings About People | `24-findings-about-people.md` | derived | break | landed |
 | 25 | A Prisoner Is a Person | `25-a-prisoner-is-a-person.md` | derived | break | landed |

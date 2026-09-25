@@ -443,15 +443,16 @@ and retained rights. They provide no general empirical warrant for
 imprisonment and no excuse for treating its practical losses as negligible.
 
 A lapse has a cost of its own. When custody authority ends because a renewal was
-not made, the person convicted of a grave injury leaves that case's confinement,
-and the person injured and the public lose protection they were owed. I accept
-that cost rather than let authority continue when nobody renews it, because a
-power that extends itself through inaction is the power this design refuses
-everywhere else. The answer is a duty to review before the end, a predeclared
-alternate when the ordinary reviewer is certified silent, and the protective
-measures that need their own grounds. Evidence that lapses recur despite those
-duties would call for better staffing and earlier review, not for automatic
-extension.
+not made, confinement of a person convicted of a grave injury has no authority
+left in that case; if the person leaves, the person injured and the public lose
+protection they were owed, and if the holding goes on, it goes on without
+authority. I accept that cost rather than let authority continue when nobody
+renews it, because a power that extends itself through inaction is the power
+this design refuses everywhere else. The answer is a duty to review before the
+end, a predeclared alternate when the ordinary reviewer is certified silent, and
+the protective measures that need their own grounds. Evidence that lapses recur
+despite those duties would call for better staffing and earlier review, not for
+automatic extension.
 
 ## Capture
 

@@ -405,25 +405,43 @@
     "strays": 0
   },
   "book-1/23-the-shield.md": {
-    "negation": 29.1,
+    "negation": 12.2,
     "jargon": 0.0,
-    "names": 6,
+    "names": 5,
+    "disclaimers": 0,
+    "banned": 0,
+    "harness": 0,
+    "strays": 0
+  },
+  "book-1/23-the-shield.md#argument": {
+    "negation": 10.0,
+    "jargon": 0.0,
+    "names": 0,
     "disclaimers": 0,
     "banned": 0,
     "harness": 0,
     "strays": 0
   },
   "book-1/24-findings-about-people.md": {
-    "negation": 26.6,
+    "negation": 9.2,
     "jargon": 0.3,
-    "names": 14,
+    "names": 4,
+    "disclaimers": 0,
+    "banned": 0,
+    "harness": 0,
+    "strays": 0
+  },
+  "book-1/24-findings-about-people.md#argument": {
+    "negation": 10.3,
+    "jargon": 0.0,
+    "names": 0,
     "disclaimers": 0,
     "banned": 0,
     "harness": 0,
     "strays": 0
   },
   "book-1/25-a-prisoner-is-a-person.md": {
-    "negation": 23.3,
+    "negation": 10.0,
     "jargon": 2.3,
     "names": 2,
     "disclaimers": 0,
@@ -431,29 +449,65 @@
     "harness": 0,
     "strays": 0
   },
-  "book-1/26-where-people-are-put.md": {
-    "negation": 35.1,
+  "book-1/25-a-prisoner-is-a-person.md#argument": {
+    "negation": 10.1,
     "jargon": 0.0,
-    "names": 8,
+    "names": 0,
+    "disclaimers": 0,
+    "banned": 0,
+    "harness": 0,
+    "strays": 0
+  },
+  "book-1/26-where-people-are-put.md": {
+    "negation": 8.7,
+    "jargon": 0.0,
+    "names": 4,
+    "disclaimers": 0,
+    "banned": 0,
+    "harness": 0,
+    "strays": 0
+  },
+  "book-1/26-where-people-are-put.md#argument": {
+    "negation": 9.8,
+    "jargon": 0.0,
+    "names": 0,
     "disclaimers": 0,
     "banned": 0,
     "harness": 0,
     "strays": 0
   },
   "book-1/27-the-one-thing-taken.md": {
-    "negation": 35.5,
+    "negation": 8.8,
     "jargon": 0.0,
-    "names": 6,
+    "names": 5,
     "disclaimers": 1,
     "banned": 0,
     "harness": 0,
     "strays": 0
   },
+  "book-1/27-the-one-thing-taken.md#argument": {
+    "negation": 10.5,
+    "jargon": 0.0,
+    "names": 1,
+    "disclaimers": 0,
+    "banned": 0,
+    "harness": 0,
+    "strays": 0
+  },
   "book-1/28-when-the-system-notices-it-broke.md": {
-    "negation": 26.1,
-    "jargon": 0.5,
+    "negation": 6.2,
+    "jargon": 0.4,
     "names": 3,
-    "disclaimers": 1,
+    "disclaimers": 0,
+    "banned": 0,
+    "harness": 0,
+    "strays": 0
+  },
+  "book-1/28-when-the-system-notices-it-broke.md#argument": {
+    "negation": 10.1,
+    "jargon": 0.0,
+    "names": 0,
+    "disclaimers": 0,
     "banned": 0,
     "harness": 0,
     "strays": 0
@@ -503,10 +557,19 @@
     "harness": 0,
     "strays": 0
   },
+  "book-1/part-4-three-to-ten-years.md": {
+    "negation": 19.0,
+    "jargon": 0.0,
+    "names": 0,
+    "disclaimers": 0,
+    "banned": 0,
+    "harness": 0,
+    "strays": 0
+  },
   "book-1/reference.md": {
-    "negation": 16.6,
+    "negation": 16.4,
     "jargon": 0.6,
-    "names": 39,
+    "names": 30,
     "disclaimers": 1,
     "banned": 0,
     "harness": 0,

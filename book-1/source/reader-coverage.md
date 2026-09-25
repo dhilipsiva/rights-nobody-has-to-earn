@@ -46,16 +46,16 @@ carried in single figures, which is where the rebalance has most to do.
 
 | Posture | Passages |
 | --- | ---: |
-| chooses | 41 |
+| chooses | 47 |
 | creates | 4 |
 | cares | 8 |
 | works | 12 |
 | associates | 7 |
-| requests | 12 |
+| requests | 13 |
 | receives | 65 |
-| challenges | 29 |
-| governs | 41 |
-| is acted upon | 77 |
+| challenges | 31 |
+| governs | 37 |
+| is acted upon | 75 |
 
 ## Chapter patterns
 
@@ -66,11 +66,11 @@ what matters is the book's shape, not the chapter's.
 | Pattern | Passages |
 | --- | ---: |
 | constructive | 102 |
-| private-civic | 26 |
-| democratic | 36 |
-| coercive | 44 |
-| records | 31 |
-| argument | 29 |
+| private-civic | 23 |
+| democratic | 32 |
+| coercive | 45 |
+| records | 32 |
+| argument | 35 |
 
 Whether a passage follows its pattern's own arc — seeks, responds,
 receipt, challenge, continuity, boundary — is prose review and is not
@@ -83,20 +83,20 @@ checked here.
 | Borders, migration, asylum and expulsion | 2 | 3 | 2 |
 | Collective and plurality rights | 1 | 1 | 0 |
 | Defence and armed force | 1 | 1 | 1 |
-| Democracy and amendment | 9 | 8 | 5 |
+| Democracy and amendment | 9 | 8 | 6 |
 | Ecology, future generations and commons | 4 | 5 | 5 |
-| Economy, property, work and commons | 17 | 16 | 12 |
+| Economy, property, work and commons | 16 | 14 | 10 |
 | Emergency and resilience | 2 | 3 | 4 |
-| Justice and coercion | 14 | 13 | 10 |
+| Justice and coercion | 14 | 17 | 8 |
 | Knowledge, communication and culture | 4 | 6 | 2 |
 | Life course, family, care and reproduction | 13 | 5 | 3 |
 | Locality, mobility and external relations | 2 | 2 | 2 |
-| Material floor | 10 | 25 | 11 |
+| Material floor | 10 | 25 | 10 |
 | Non-human animals | 2 | 4 | 1 |
-| Personhood and equality | 19 | 13 | 10 |
-| Public institutions | 10 | 13 | 12 |
-| Public safety, policing and use of force | 6 | 5 | 8 |
-| Records and accountability | 13 | 16 | 18 |
+| Personhood and equality | 19 | 14 | 9 |
+| Public institutions | 7 | 12 | 8 |
+| Public safety, policing and use of force | 6 | 5 | 6 |
+| Records and accountability | 13 | 19 | 10 |
 
 ## Every passage
 
@@ -263,7 +263,7 @@ checked here.
 | 17-01 | 17-how-public-power-is-built.md | Which tier holds which power | Public institutions | STATE-FORM | ordinary | an enumerated common competence and a disputed power | governs | contested | no | democratic | `book-1/17-how-public-power-is-built.pins.nibli` |
 | 17-02 | 17-how-public-power-is-built.md | The bodies, and what none of them may do alone | Public institutions | STATE-FORM | ordinary | one reasoned bill return and same-rule Assembly repassage in separate supplied records | governs | works | no | democratic | `tests/pins/state-form/main-57/expect.pins.nibli` |
 | 17-07 | 17-how-public-power-is-built.md | What a public result has to contain | Democracy and amendment | STATE-FORM | both | a result nobody can act on until the record holds together | governs | unresolved | no | democratic | `book-1/17-how-public-power-is-built.pins.nibli` |
-| 17-03 | 17-how-public-power-is-built.md | Keeping public decisions answerable | Democracy and amendment | DEMOCRATIC-INTEGRITY | protective | office integrity and political money | governs | works | no | democratic | `book-1/17-how-public-power-is-built.pins.nibli` |
+| 17-03 | 17-how-public-power-is-built.md | Keeping public decisions answerable | Democracy and amendment | DEMOCRATIC-INTEGRITY | protective | office integrity and political money | governs | works | yes | democratic | `book-1/17-how-public-power-is-built.pins.nibli` |
 | 17-04 | 17-how-public-power-is-built.md | How somebody comes to hold an office | Public institutions | STATE-FORM | protective | an appointment one coalition could otherwise control | governs | contested | yes | democratic | `book-1/17-how-public-power-is-built.pins.nibli` |
 | 17-05 | 17-how-public-power-is-built.md | When nobody can agree | Public institutions | STATE-FORM | continuity | a government that could not be formed and a budget that failed | governs | continuity-remedy | no | democratic | `book-1/17-how-public-power-is-built.pins.nibli` |
 | 17-06 | 17-how-public-power-is-built.md | Leaving | Locality, mobility and external relations | STATE-FORM | protective | a region seeking an exit | governs | contested | no | democratic | `book-1/17-how-public-power-is-built.pins.nibli` |
@@ -310,59 +310,60 @@ checked here.
 | 22-03 | 22-changing-the-rules.md | People and proposal names | Democracy and amendment | ARTICLES | protective | personal findings are separate from proposal entries | governs | works | yes | democratic | `tests/pins/amendments/person-proposal-separation/expect.pins.nibli` |
 | 22-04 | 22-changing-the-rules.md | What entrenchment requires | Democracy and amendment | AMENDMENT-ENACTMENT | protective | the democratic cost and evidence requirements of entrenchment | governs | contested | no | democratic | `book-1/22-changing-the-rules.pins.nibli` |
 | 22-06 | 22-changing-the-rules.md | Argument: A fixed core behind an open route | Democracy and amendment | exempt | argument | an unamendable core beside a demanding open route, against a fully revisable constitution | chooses, governs | contested | no | argument | `exempt-element` |
-| 23-00 | 23-the-shield.md | (preamble) | Justice and coercion | ARTICLES | protective | exposing power while facing prosecution | challenges | works | yes | coercive | `book-1/23-the-shield.pins.nibli` |
+| 23-00 | 23-the-shield.md | (preamble) | Justice and coercion | ARTICLES | protective | exposing power while facing prosecution | challenges | works | no | coercive | `book-1/23-the-shield.pins.nibli` |
 | 23-01 | 23-the-shield.md | Faro: a private target | Justice and coercion | ARTICLES | protective | Faro exposes Pax, the person injured in Faro's case, without a public-answerability basis | challenges | works | no | coercive | `book-1/23-the-shield.pins.nibli` |
-| 23-02 | 23-the-shield.md | Lior: an unresolved disclosure | Justice and coercion | ARTICLES | protective | Lior's court disclosure has no effective deceit finding and blocks confinement under the supplied prosecution | challenges | contested | no | coercive | `book-1/23-the-shield.pins.nibli` |
+| 23-02 | 23-the-shield.md | Lior: an unresolved disclosure | Justice and coercion | ARTICLES | protective | Lior's court disclosure has no effective deceit finding and blocks confinement under the supplied prosecution | challenges | contested | yes | coercive | `book-1/23-the-shield.pins.nibli` |
 | 23-03 | 23-the-shield.md | Kel: a finding about this disclosure | Justice and coercion | ARTICLES | protective | a qualified deceit finding defeats protection for Kel's particular exposure | challenges | works | yes | coercive | `book-1/23-the-shield.pins.nibli` |
 | 23-04 | 23-the-shield.md | Dara: a separate exposure | Justice and coercion | ARTICLES | protective | protection assessed separately for a second exposure incident | challenges | contested | no | coercive | `book-1/23-the-shield.pins.nibli` |
 | 23-05 | 23-the-shield.md | The case the shield stops covering | Justice and coercion | ARTICLES | both | a qualified independent finding that Dara's prosecution is unrelated to the disclosure | challenges | continuity-remedy | no | coercive | `book-1/23-the-shield.pins.nibli` |
 | 23-07 | 23-the-shield.md | A disclosure made after the charge | Justice and coercion | ARTICLES | protective | both case witnesses date a disclosure after the charge, so it no longer blocks confinement in that case while it still bears on any other | challenges | works | no | coercive | `book-1/23-the-shield.pins.nibli` |
 | 23-06 | 23-the-shield.md | What it costs | Justice and coercion | ARTICLES | protective | the cost of continuing protection while qualified unrelated-case review is unavailable | challenges | unresolved | no | coercive | `book-1/23-the-shield.pins.nibli` |
-| 24-00 | 24-findings-about-people.md | (preamble) | Records and accountability | CREDIBILITY | protective | Bela's effective finding restricts new adverse signatures without removing ordinary rights | is acted upon | contested | yes | records | `book-1/24-findings-about-people.pins.nibli` |
-| 24-01 | 24-findings-about-people.md | The paired finding | Records and accountability | CREDIBILITY | protective | a completed incident-bound finding and separate prospective permission | is acted upon | works | yes | records | `book-1/24-findings-about-people.pins.nibli` |
-| 24-02 | 24-findings-about-people.md | Findings against an examiner | Records and accountability | CREDIBILITY | protective | guards pointing back at the examiner | is acted upon | works | yes | records | `book-1/24-findings-about-people.pins.nibli` |
-| 24-03 | 24-findings-about-people.md | What has to cross the record | Records and accountability | CREDIBILITY | protective | historical credential restrictions and current signing eligibility | is acted upon | works | yes | records | `book-1/24-findings-about-people.pins.nibli` |
-| 24-04 | 24-findings-about-people.md | Who holds the authority to sign | Public institutions | ARTICLES | ordinary | the credential that makes a finding count | governs | works | yes | democratic | `book-1/24-findings-about-people.pins.nibli` |
-| 24-05 | 24-findings-about-people.md | The authority to sign must follow from evidence | Public institutions | ARTICLES | protective | a credential requiring positive witnessed current history | governs | continuity-remedy | yes | democratic | `book-1/24-findings-about-people.pins.nibli` |
-| 24-06 | 24-findings-about-people.md | Recall and an earlier finding | Public institutions | ARTICLES | protective | recall and carried history | governs | works | yes | democratic | `book-1/24-findings-about-people.pins.nibli` |
-| 24-07 | 24-findings-about-people.md | A shortcut to the authority to sign | Public institutions | ARTICLES | protective | the cheaper of two doors | governs | contested | yes | democratic | `book-1/24-findings-about-people.pins.nibli` |
-| 24-08 | 24-findings-about-people.md | Relief on appeal | Public institutions | CUSTODY-ADJUDICATION | ordinary | case-specific independent relief and its limits | governs | works | yes | democratic | `book-1/24-findings-about-people.pins.nibli` |
-| 24-09 | 24-findings-about-people.md | The limits of a finding | Economy, property, work and commons | ARTICLES | protective | an effective finding restricts the named use of power | is acted upon | works | no | private-civic | `book-1/24-findings-about-people.pins.nibli` |
-| 24-10 | 24-findings-about-people.md | A claim can be corrected without condemning every contribution | Economy, property, work and commons | ARTICLES | protective | exact-basis wage correction leaves the supplement and floor intact | is acted upon | contested | yes | private-civic | `book-1/24-findings-about-people.pins.nibli` |
-| 24-11 | 24-findings-about-people.md | Rights that remain | Economy, property, work and commons | ARTICLES | continuity | standing, political voice, movement and floor survive an adverse finding | is acted upon | works | yes | private-civic | `book-1/24-findings-about-people.pins.nibli` |
+| 23-08 | 23-the-shield.md | What this cannot settle | Justice and coercion | ARTICLES | protective | independence that controlled appointments can falsify, and witnesses who must date a disclosure honestly | challenges | unresolved | yes | coercive | `book-1/23-the-shield.pins.nibli` |
+| 23-09 | 23-the-shield.md | Argument: Protection that follows the charge | Justice and coercion | exempt | argument | a shield scoped to the case and dated by the charge, against a blanket immunity | chooses, challenges | contested | no | argument | `exempt-element` |
+| 24-00 | 24-findings-about-people.md | (preamble) | Records and accountability | CREDIBILITY | protective | Bela's effective finding restricts new adverse signatures without removing ordinary rights | is acted upon | contested | no | records | `book-1/24-findings-about-people.pins.nibli` |
+| 24-01 | 24-findings-about-people.md | The paired finding | Records and accountability | CREDIBILITY | protective | a completed incident-bound finding and separate prospective permission | is acted upon | works | no | records | `book-1/24-findings-about-people.pins.nibli` |
+| 24-09 | 24-findings-about-people.md | The limits of a finding | Economy, property, work and commons | ARTICLES | protective | an effective finding restricts the named use of power | is acted upon | works | yes | private-civic | `book-1/24-findings-about-people.pins.nibli` |
 | 24-12 | 24-findings-about-people.md | Cira's separate claim | Economy, property, work and commons | ARTICLES | continuity | a student inherits no fraud or debt from the teacher | is acted upon | continuity-remedy | no | private-civic | `book-1/24-findings-about-people.pins.nibli` |
+| 24-05 | 24-findings-about-people.md | The authority to sign must follow from evidence | Public institutions | ARTICLES | protective | a credential requiring positive witnessed current history | governs | continuity-remedy | no | democratic | `book-1/24-findings-about-people.pins.nibli` |
+| 24-17 | 24-findings-about-people.md | A signer under a finding | Records and accountability | CREDIBILITY | protective | a signer who keeps an appointment while a signature on a new finding stops counting | is acted upon | works | no | records | `book-1/24-findings-about-people.pins.nibli` |
+| 24-18 | 24-findings-about-people.md | Family ties bar the pair | Records and accountability | CREDIBILITY | protective | a parent examining their own child, and signer pairs tied by parentage or marriage | is acted upon | works | no | records | `book-1/24-findings-about-people.pins.nibli` |
 | 24-13 | 24-findings-about-people.md | The way back, and who has to answer | Records and accountability | CREDIBILITY | continuity | case-bound restoration, finality and reasons for every target | challenges | continuity-remedy | no | records | `book-1/24-findings-about-people.pins.nibli` |
-| 24-14 | 24-findings-about-people.md | Ending the restriction | Economy, property, work and commons | ARTICLES | protective | case-specific restoration, carried appointment restriction and review nonresponse | is acted upon | contested | yes | private-civic | `book-1/24-findings-about-people.pins.nibli` |
-| 24-15 | 24-findings-about-people.md | What it costs | Records and accountability | CREDIBILITY | protective | independence found, not guessed from silence | is acted upon | unresolved | yes | records | `book-1/24-findings-about-people.pins.nibli` |
-| 24-16 | 24-findings-about-people.md | What this cannot settle | Public institutions | ARTICLES | protective | the seating fact the design is told | governs | unresolved | no | democratic | `book-1/24-findings-about-people.pins.nibli` |
+| 24-15 | 24-findings-about-people.md | What it costs | Records and accountability | CREDIBILITY | protective | independence found, not guessed from silence | is acted upon | unresolved | no | records | `book-1/24-findings-about-people.pins.nibli` |
+| 24-16 | 24-findings-about-people.md | What this cannot settle | Public institutions | ARTICLES | protective | the seating fact the design is told | governs | unresolved | yes | democratic | `book-1/24-findings-about-people.pins.nibli` |
+| 24-19 | 24-findings-about-people.md | Argument: A restriction the size of the act | Records and accountability | exempt | argument | a finding that restricts only a signature, against disqualification and collateral consequences | chooses | contested | no | argument | `exempt-element` |
 | 25-00 | 25-a-prisoner-is-a-person.md | (preamble) | Personhood and equality | ARTICLES | protective | one line that reads like sentiment | is acted upon | works | no | constructive | `book-1/25-a-prisoner-is-a-person.pins.nibli` |
 | 25-01 | 25-a-prisoner-is-a-person.md | Zed | Personhood and equality | ARTICLES | ordinary | a convicted person's standing | is acted upon | works | no | constructive | `book-1/25-a-prisoner-is-a-person.pins.nibli` |
 | 25-02 | 25-a-prisoner-is-a-person.md | A protection reaching beyond Zed | Personhood and equality | ARTICLES | protective | confinement refused for a gap in the record about belief or eating | is acted upon | works | no | constructive | `book-1/25-a-prisoner-is-a-person.pins.nibli` |
-| 25-03 | 25-a-prisoner-is-a-person.md | What this cannot settle | Personhood and equality | ARTICLES | protective | the refusal is structural, not judgement | is acted upon | contested | yes | constructive | `book-1/25-a-prisoner-is-a-person.pins.nibli` |
 | 25-04 | 25-a-prisoner-is-a-person.md | Standing that protects others | Personhood and equality | ARTICLES | protective | rights that do not thin out | is acted upon | works | no | constructive | `book-1/25-a-prisoner-is-a-person.pins.nibli` |
-| 25-05 | 25-a-prisoner-is-a-person.md | The child with nobody | Material floor | ARTICLES | protective | Nell's standing and floor before and after added shelter and food evidence | receives | contested | yes | coercive | `book-1/25-a-prisoner-is-a-person.pins.nibli` |
-| 26-00 | 26-where-people-are-put.md | (preamble) | Justice and coercion | CUSTODY-EXECUTION | ordinary | qualified merits, individually justified placement and a named available place | is acted upon | works | yes | coercive | `book-1/26-where-people-are-put.pins.nibli` |
-| 26-01 | 26-where-people-are-put.md | What makes an offence severe | Justice and coercion | CUSTODY-EXECUTION | protective | qualified grave injury or aggravated cruelty; gravity limits secure eligibility without selecting the place | is acted upon | contested | yes | coercive | `book-1/26-where-people-are-put.pins.nibli` |
+| 25-03 | 25-a-prisoner-is-a-person.md | What this cannot settle | Personhood and equality | ARTICLES | protective | the refusal is structural, not judgement | is acted upon | contested | no | constructive | `book-1/25-a-prisoner-is-a-person.pins.nibli` |
+| 25-05 | 25-a-prisoner-is-a-person.md | The child with nobody | Material floor | ARTICLES | protective | Nell's standing and floor before and after added shelter and food evidence | receives | contested | no | coercive | `book-1/25-a-prisoner-is-a-person.pins.nibli` |
+| 25-06 | 25-a-prisoner-is-a-person.md | Argument: Liberty is what a sentence takes | Personhood and equality | exempt | argument | a prisoner who keeps standing and the floor, against suspended civil standing | chooses | contested | no | argument | `exempt-element` |
+| 26-00 | 26-where-people-are-put.md | (preamble) | Justice and coercion | CUSTODY-EXECUTION | ordinary | qualified merits, individually justified placement and a named available place | is acted upon | works | no | coercive | `book-1/26-where-people-are-put.pins.nibli` |
+| 26-01 | 26-where-people-are-put.md | What makes an offence severe | Justice and coercion | CUSTODY-EXECUTION | protective | qualified grave injury or aggravated cruelty; gravity limits secure eligibility without selecting the place | is acted upon | contested | no | coercive | `book-1/26-where-people-are-put.pins.nibli` |
 | 26-02 | 26-where-people-are-put.md | What the placement alarm sees | Justice and coercion | PLACEMENT | continuity | reports in every destination category, conflicting candidates and review | is acted upon | continuity-remedy | yes | coercive | `book-1/26-where-people-are-put.pins.nibli` |
-| 26-03 | 26-where-people-are-put.md | A fixed route still depends on evidence | Justice and coercion | PLACEMENT | ordinary | family neutrality, forbidden wealth and poverty grounds, and missing or conflicting placement evidence | is acted upon | works | yes | coercive | `book-1/26-where-people-are-put.pins.nibli` |
+| 26-03 | 26-where-people-are-put.md | A fixed route still depends on evidence | Justice and coercion | PLACEMENT | ordinary | family neutrality, forbidden wealth and poverty grounds, and missing or conflicting placement evidence | is acted upon | works | no | coercive | `book-1/26-where-people-are-put.pins.nibli` |
 | 26-04 | 26-where-people-are-put.md | Eligible, with no home option recorded | Justice and coercion | CUSTODY-EXECUTION | protective | positive supported-residence evidence or no custody authority | is acted upon | continuity-remedy | yes | coercive | `book-1/26-where-people-are-put.pins.nibli` |
 | 26-05 | 26-where-people-are-put.md | Housing with independent evidence | Material floor | PLACEMENT | continuity | a named placement creates a duty; recipient evidence establishes shelter | is acted upon | continuity-remedy | yes | constructive | `tests/pins/placement/independent-shelter-control/expect.pins.nibli` |
+| 26-06 | 26-where-people-are-put.md | Argument: Proved harm opens the harshest place | Justice and coercion | exempt | argument | severity from adjudicated findings that never selects a place, against classification by offence or risk score | chooses | contested | no | argument | `exempt-element` |
 | 27-00 | 27-the-one-thing-taken.md | (preamble) | Public safety, policing and use of force | ARTICLES | protective | the one legal conclusion conviction attaches | is acted upon | works | no | coercive | `book-1/27-the-one-thing-taken.pins.nibli` |
 | 27-03 | 27-the-one-thing-taken.md | Why the legal loss stops at movement | Public safety, policing and use of force | ARTICLES | protective | custody as a single deprivation | is acted upon | works | yes | coercive | `book-1/27-the-one-thing-taken.pins.nibli` |
 | 27-05 | 27-the-one-thing-taken.md | The authority must be current | Public safety, policing and use of force | CUSTODY-EXECUTION | protective | positive intake access and independently preserved filings before current custody | is acted upon | works | yes | coercive | `book-1/27-the-one-thing-taken.pins.nibli` |
 | 27-04 | 27-the-one-thing-taken.md | What custody owes | Public safety, policing and use of force | PUBLIC-SAFETY | ordinary | custodial duties and the separate evidence needed for actual care | is acted upon | continuity-remedy | no | coercive | `book-1/27-the-one-thing-taken.pins.nibli` |
 | 27-06 | 27-the-one-thing-taken.md | What leaving changes | Public safety, policing and use of force | CUSTODY-ADJUDICATION | continuity | qualified sentence completion and case-specific release | challenges | continuity-remedy | yes | coercive | `book-1/27-the-one-thing-taken.pins.nibli` |
 | 27-08 | 27-the-one-thing-taken.md | Physical holding is a further fact | Public safety, policing and use of force | PUBLIC-SAFETY | ordinary | care and independent review for a reported holding after authority ends | is acted upon | continuity-remedy | yes | coercive | `tests/pins/custody/condition-findings/expect.pins.nibli` |
-| 27-01 | 27-the-one-thing-taken.md | Protection is not punishment | Public safety, policing and use of force | PUBLIC-SAFETY | protective | arrest, detention, search and seizure | is acted upon | works | yes | coercive | `book-1/27-the-one-thing-taken.pins.nibli` |
-| 27-02 | 27-the-one-thing-taken.md | The actor who uses force must answer | Public safety, policing and use of force | PUBLIC-SAFETY | protective | separated protective functions | governs | works | yes | coercive | `book-1/27-the-one-thing-taken.pins.nibli` |
-| 28-00 | 28-when-the-system-notices-it-broke.md | (preamble) | Records and accountability | ARTICLES | protective | a conflicting placement report, review duty and the route onward | is acted upon | works | no | records | `book-1/28-when-the-system-notices-it-broke.pins.nibli` |
-| 28-02 | 28-when-the-system-notices-it-broke.md | A placement report against a rule | Records and accountability | PLACEMENT | continuity | a placement report tested against the authorised placement, separately from eligibility | is acted upon | continuity-remedy | yes | records | `book-1/26-where-people-are-put.pins.nibli` |
+| 27-01 | 27-the-one-thing-taken.md | Protection is not punishment | Public safety, policing and use of force | PUBLIC-SAFETY | protective | arrest, detention, search and seizure | is acted upon | works | no | coercive | `book-1/27-the-one-thing-taken.pins.nibli` |
+| 27-02 | 27-the-one-thing-taken.md | The actor who uses force must answer | Public safety, policing and use of force | PUBLIC-SAFETY | protective | separated protective functions | governs | works | no | coercive | `book-1/27-the-one-thing-taken.pins.nibli` |
+| 27-09 | 27-the-one-thing-taken.md | Argument: A power that takes movement and then expires | Justice and coercion | exempt | argument | a bounded power to confine that lapses without current authority, against abolition | chooses, is acted upon | contested | no | argument | `exempt-element` |
+| 28-00 | 28-when-the-system-notices-it-broke.md | (preamble) | Records and accountability | ARTICLES | protective | a conflicting placement report, review duty and the route onward | is acted upon | works | yes | records | `book-1/28-when-the-system-notices-it-broke.pins.nibli` |
+| 28-02 | 28-when-the-system-notices-it-broke.md | A placement report against a rule | Records and accountability | PLACEMENT | continuity | a placement report tested against the authorised placement, separately from eligibility | is acted upon | continuity-remedy | no | records | `book-1/26-where-people-are-put.pins.nibli` |
 | 28-01 | 28-when-the-system-notices-it-broke.md | Evidence of denied contact | Records and accountability | ARTICLES | protective | a positive condition finding tied to a holding, place and period | is acted upon | works | no | records | `tests/pins/custody/condition-findings/expect.pins.nibli` |
-| 28-03 | 28-when-the-system-notices-it-broke.md | From a marker to a duty | Records and accountability | OBLIGATIONS | continuity | routine custody review and complaints alongside positive breach findings | requests | continuity-remedy | yes | records | `book-1/28-when-the-system-notices-it-broke.pins.nibli` |
-| 28-05 | 28-when-the-system-notices-it-broke.md | When the responsible office fails | Records and accountability | OBLIGATIONS | continuity | the office that should act does not act | is acted upon | fails | yes | records | `book-1/28-when-the-system-notices-it-broke.pins.nibli` |
+| 28-03 | 28-when-the-system-notices-it-broke.md | From a marker to a duty | Records and accountability | OBLIGATIONS | continuity | routine custody review and complaints alongside positive breach findings | requests | continuity-remedy | no | records | `book-1/28-when-the-system-notices-it-broke.pins.nibli` |
+| 28-05 | 28-when-the-system-notices-it-broke.md | When the responsible office fails | Records and accountability | OBLIGATIONS | continuity | the office that should act does not act | is acted upon | fails | no | records | `book-1/28-when-the-system-notices-it-broke.pins.nibli` |
 | 28-04 | 28-when-the-system-notices-it-broke.md | Withdrawing a defective authority | Knowledge, communication and culture | KNOWLEDGE-AND-FREE-FIELD | continuity | a reviewed restriction found defective | is acted upon, challenges | continuity-remedy | no | private-civic | `book-1/28-when-the-system-notices-it-broke.pins.nibli` |
-| 28-06 | 28-when-the-system-notices-it-broke.md | What can be checked | Records and accountability | OBLIGATIONS | protective | vocabulary for its own violation | requests | unresolved | yes | records | `book-1/28-when-the-system-notices-it-broke.pins.nibli` |
-| 28-07 | 28-when-the-system-notices-it-broke.md | The child with nobody | Records and accountability | ARTICLES | protective | the child with nobody: one birth entry and nothing else | receives | unresolved | yes | records | `book-1/28-when-the-system-notices-it-broke.pins.nibli` |
+| 28-08 | 28-when-the-system-notices-it-broke.md | Who bears the cost | Records and accountability | OBLIGATIONS | protective | who waits while a breach needs a positive, independently witnessed finding | requests | contested | no | records | `book-1/28-when-the-system-notices-it-broke.pins.nibli` |
+| 28-07 | 28-when-the-system-notices-it-broke.md | The child with nobody | Records and accountability | ARTICLES | protective | the child with nobody: one birth entry and nothing else | receives | unresolved | no | records | `book-1/28-when-the-system-notices-it-broke.pins.nibli` |
+| 28-06 | 28-when-the-system-notices-it-broke.md | What this cannot settle | Records and accountability | OBLIGATIONS | protective | a marker nobody writes, and vocabulary for the system's own violation | requests | unresolved | yes | records | `book-1/28-when-the-system-notices-it-broke.pins.nibli` |
+| 28-09 | 28-when-the-system-notices-it-broke.md | Argument: Findings from outside the walls | Records and accountability | exempt | argument | breaches found by independent witnesses raising duties on named offices, against internal inspection | chooses | contested | no | argument | `exempt-element` |
 | 29-00 | 29-the-five-joints.md | (preamble) | Personhood and equality | exempt | argument | the author speaking, unchecked by the machine | chooses | unresolved | yes | argument | `exempt-element` |
 | 29-01 | 29-the-five-joints.md | Valuation | Economy, property, work and commons | exempt | argument | Owen's New Harmony and the valuation joint | chooses | contested | yes | argument | `exempt-element` |
 | 29-02 | 29-the-five-joints.md | Rotation | Economy, property, work and commons | exempt | argument | the kibbutzim and the rotation joint | works | contested | no | argument | `exempt-element` |

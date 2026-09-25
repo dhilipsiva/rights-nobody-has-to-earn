@@ -74,6 +74,16 @@ Chapters 26 and 27. The opening note now names the argument sections and the
 opening case among the places the author speaks. The exact prose is
 `session-drafted, author-approved under delegated approval (2026-09-13)`.
 
+## Part IV in the ruled shape — item 57, 2026-09-25
+
+Part IV carries both channels, so every Part of the derived book now opens
+with a documented case and every derived chapter closes with an argument
+section. Its opening case, *Three to Ten Years*, tells the first *Hussainara
+Khatoon* judgment from its own text. Chapters 23–28 close with argument
+sections, and Chapter 24 keeps four cases where it carried fourteen names. The
+exact prose is `session-drafted, author-approved under delegated approval
+(2026-09-13)`.
+
 ## Part III in the ruled shape — item 56, 2026-09-25
 
 Part III carries both channels. Its labelled opening case, *The Brooding

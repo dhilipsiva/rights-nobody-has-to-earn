@@ -18,9 +18,8 @@ the method part. The opening's map, glossary and index sit at the back in
 `reference.md`. Ruling D2 lets a derived chapter close with one argument
 section, headed `## Argument:`, which every derived-chapter check reads as
 argued text; ruling D3 lets each Part open with a labelled documented case.
-Parts I, II and III have their opening cases and their chapters' argument
-sections; the other Parts' cases are reserved in `contents.json` until they are
-written.
+Parts I–IV have their opening cases and their chapters' argument sections;
+Part V's opening case is reserved in `contents.json` until it is written.
 
 A chapter lands with the rules it renders: its paired pins file, its case in
 `../tests/pins/suites.json`, its rows in the coverage ledger and its entry in
