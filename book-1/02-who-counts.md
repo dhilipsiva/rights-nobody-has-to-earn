@@ -11,6 +11,11 @@ republic's jurisdiction or effective control. Each route is independent. None
 requires another to happen first, and none requires citizenship,
 identity papers or a family.
 
+A report that a person appears to have nobody acting for them is also an
+encounter. Whoever saw the person may write it, and it gives standing on the
+same terms as first contact, with nothing asked about the person's papers,
+status or history.
+
 Presence reaches someone within the jurisdiction without asking whether that
 person was granted permission to be there. Effective control reaches someone
 under the republic's power without making protection depend on the location.

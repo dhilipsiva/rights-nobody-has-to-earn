@@ -274,12 +274,23 @@ fn ground(text: &str, values: &BTreeMap<String, String>) -> String {
 }
 
 fn fixture(source: &Source, contract: &Contract, values: &BTreeMap<String, String>) -> String {
-    premises(source, contract)
-        .into_iter()
+    let premises = premises(source, contract);
+    let mut facts: String = premises
+        .iter()
         .filter(|a| a.starts_with("authorized(") || a.starts_with("observe("))
         .filter(|a| !a.contains("$authorization_source") && !a.contains("$target_source"))
-        .map(|a| format!("{}.\n", ground(&a, values)))
-        .collect()
+        .map(|a| format!("{}.\n", ground(a, values)))
+        .collect();
+    // A card that reads standing gets it the way anybody does: from a
+    // first-contact entry, one of the standing encounters.
+    for atom in premises
+        .iter()
+        .filter(|a| a.starts_with("related(") && a.ends_with(", StandingEncounterEntry)"))
+    {
+        let subject = ground(&atom["related(".len()..atom.find(',').unwrap()], values);
+        facts += &format!("at({subject}, FirstContact).\n");
+    }
+    facts
 }
 
 fn dependency(source: &Source, contract: &Contract, values: &BTreeMap<String, String>) -> String {
@@ -435,6 +446,16 @@ pub(crate) fn generate(context: &Context, export: &mut Export) -> Result<(), Err
         };
         emit(export, "positive", "live", &facts, &values, true)?;
         emit(export, "withheld", "live", "", &values, false)?;
+        // Item 72: a card that reads standing completes nothing for somebody
+        // no standing root has reached.
+        if facts.contains(", FirstContact).") {
+            let unstanding: String = facts
+                .lines()
+                .filter(|l| !l.ends_with(", FirstContact)."))
+                .map(|l| format!("{l}\n"))
+                .collect();
+            emit(export, "without-standing", "live", &unstanding, &values, false)?;
+        }
         for [_, scope] in fields(&source, contract) {
             let reduced = without_scope(&facts, &scope);
             if reduced == facts {

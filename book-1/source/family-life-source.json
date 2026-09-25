@@ -328,7 +328,8 @@
         "~($witness = $participant)",
         "observe($source, $record, $participant, LifeCourseParticipantScope)",
         "observe($evidence, $record, $participant, LifeCourseParticipantScope)",
-        "observe($review, $record, $participant, LifeCourseParticipantScope)"
+        "observe($review, $record, $participant, LifeCourseParticipantScope)",
+        "related($participant, StandingEncounterEntry)"
       ],
       "record_dependency": false,
       "bindings": {}

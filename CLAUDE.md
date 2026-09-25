@@ -134,6 +134,51 @@ reinstate the retired tooling or workflow.
 Grouped by kind. Dates in each heading are the ratification dates; a ruling
 that was later implemented or narrowed carries that supersession inline.
 
+### Item 72 — an outreach report reaches the person it reports, 2026-09-25
+
+Item 45's never-recorded-person case found that Article 1c's escalation, built
+for the person nobody has come for, read personhood, while a report that nobody
+was acting for someone was not a standing root, so a report about a person no
+record had entered derived nothing until the worker also wrote the encounter.
+The initiation card in the life-course family never read personhood at all, so
+an appointment could complete for a name the design owed nothing. Dropping the
+escalation's person guard was compared and refused: it would oblige the
+alternate toward a name that still had no standing, no debt and no advocate's
+duty. The report records an encounter, written by whoever saw the person, as a
+first-contact entry is, so it is now a standing root in the universal-standing
+block: `observe($writer, $entry, $subject, UninitiatedAssistanceScope) &
+~public($subject) -> person($subject)`. It gives standing and nothing adverse,
+and a report naming a public body makes nobody a person.
+
+The initiation card cannot read `person` itself. Personhood is also concluded
+from completed records (an arrest order, a carried standing status), so a
+completion reading it merged `complete` with custody's negated guards, and the
+engine refused it (`correct` -> `clean`). Five helper rules beside the standing
+roots conclude `related($x, StandingEncounterEntry)` from the base encounters —
+birth, first contact, presence, effective control and the report — and the card
+reads that. Somebody whose standing comes only from custody or an arrest record
+is reached by a first-contact entry, which anybody may write. The family-life
+generator gives a card reading the helper a first-contact entry in its fixture
+and a generated `without-standing` case in which nothing completes.
+
+The stress case now runs the report alone to standing, every debt, the
+advocate's and the alternate's duties, serve-first and both enrolment barriers,
+with no custody or credibility finding and nobody made a person through a public
+body; its defect pin resolved. Chapters 2 and 7 pin the new root, and Chapter
+14's pins, which read the generated positive fixture, now say where the
+participant's standing comes from. The opening note, Chapters 2, 7 and 14, the
+method, the life-course contract card, the initiation receipt and the red-team
+index record it; the exact prose is `session-drafted, author-approved under
+delegated approval (2026-09-13)`. Rules move from 7,577 to 7,583. The affected
+cases pass 2,678 pins across 672 cases (focused, partial). The first full
+development run caught the ledger needle quoting the method's standing sentence,
+which now follows it; all 137 authoring development tests pass, with five
+declared ignored, as does the prose check once one Chapter 7 and one Chapter 14
+sentence were reworded to hold their figures. `RIGHTS_VERIFY_JOBS=4 ./verify.sh`
+passes 89,972 pins across 16,351 cases with complete contradiction checks and no
+findings in 1,245.58s, and no known-defect pin remains: the six item 45 found
+are resolved.
+
 ### Item 71 — a reading of the core must give its grounds, 2026-09-25
 
 Item 45's expansive-reading case found that the independent effect reviewer
@@ -4501,6 +4546,11 @@ over supplied records cannot discover a person no record has entered, and the
 entry that opens the escalation must still be written by somebody who saw. What
 changed is that the act nobody performs is owed by a named office rather than
 waited for from the person who cannot perform it.
+
+**Extended 2026-09-25 (item 72):** the report that opens the escalation is
+also a standing root, so it reaches a person no other record has entered, and
+the initiation appointment completes only for somebody a standing encounter
+has reached.
 
 **Item 04 — the shield's scope, landed 2026-09-19.** Controlling record:
 `book-1/appendix/decisions/shield-scope-decision.md`. `defend/1` has exactly one

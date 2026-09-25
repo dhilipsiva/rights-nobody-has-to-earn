@@ -82,3 +82,4 @@ observe(LifeCourseCaseSource, LifeCourseCaseRecord, ContinuityOfCareAndTheFloorU
 observe(LifeCourseCaseSource, LifeCourseCaseRecord, LifeCourseCaseParticipant, LifeCourseParticipantScope).
 observe(LifeCourseCaseEvidence, LifeCourseCaseRecord, LifeCourseCaseParticipant, LifeCourseParticipantScope).
 observe(LifeCourseCaseSource, LifeCourseCaseRecord, LifeCourseCaseParticipant, LifeCourseParticipantScope).
+at(LifeCourseCaseParticipant, FirstContact).

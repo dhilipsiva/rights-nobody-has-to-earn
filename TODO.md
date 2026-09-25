@@ -216,33 +216,13 @@ unimplemented until the items named here land.
 
 ## Ordered revision backlog
 
-Work in this order: item 72, the last defect item 45's stress tests confirmed,
-then items 46–52, which measure, repair and prepare; items 53–63 carry the
-structure and the rewrite under the ratified rulings; item 64 finishes
-production, 65 closes the revision, and 66 is optional. Numbering continues from
-items 01–33, which `CLAUDE.md` records. Chapter numbers refer to the [current
+Work in this order: items 46–52, which measure, repair and prepare; items
+53–63 carry the structure and the rewrite under the ratified rulings; item 64
+finishes production, 65 closes the revision, and 66 is optional. Numbering
+continues from items 01–33, which `CLAUDE.md` records; items 34–45 and 67–72
+are complete and recorded there too. Chapter numbers refer to the [current
 reading sequence](book-1/contents.json), which the plan also uses, until item 53
 changes it.
-
-### Resolve the design questions, source and pins first
-
-- [ ] **72. Let an outreach report reach the person it reports.**
-
-  **Scope:** Article 1c, the standing roots, the life-course initiation card,
-  and `tests/pins/stress/never-recorded-person`.
-
-  The escalation built for the person nobody has come for reads personhood, and
-  a report that nobody is acting for someone is not a first-contact entry. So a
-  report about a person nobody has entered derives nothing until the worker also
-  writes the encounter. Meanwhile the initiation card can complete an
-  appointment for somebody the design owes nothing, because it never reads
-  personhood. Decide whether the report counts as the encounter it records or
-  the escalation drops its person guard, and give the initiation card the same
-  standing basis.
-
-  **Done when:** the stress case's defect pin resolves, the report creates no
-  adverse conclusion and no enrolment, and an appointment cannot complete for
-  someone without standing.
 
 ### Evidence and lineage
 

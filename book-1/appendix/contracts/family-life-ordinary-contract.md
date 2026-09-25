@@ -89,6 +89,20 @@ never replaced. Minimum necessary information, no reusable classification, no
 enrolment. Care continuity and the floor unaffected by any gap in
 representation. A source-bound end that does not renew in silence.
 
+**Standing for the initiation (item 72, 2026-09-25).** The appointment completes
+only for somebody a standing encounter has reached: a recorded birth, first
+contact, presence in the jurisdiction, effective control, or a report that
+nobody is acting for the person, each read through a helper concluding
+`related($x, StandingEncounterEntry)` beside the standing root it mirrors. The
+card cannot read `person` itself: personhood is also concluded from completed
+records (an arrest order, a carried standing status), so a completion reading it
+closes a cycle through the negated guards custody reads, and the engine refused
+it in those words (`correct` → `clean`). Somebody whose standing comes only from
+custody or an arrest record is reached the way anybody is, by a first-contact
+entry, which anybody may write. An appointment for a name no encounter has
+reached completes nothing, and each family-life card that reads the helper gets
+a generated `without-standing` case showing it.
+
 **Interpretation** is the bounded best-interpretation route, and it is gated on
 positive evidence that support was actually provided first, together with will
 and preferences remaining unascertainable after it. It is conflict-free,

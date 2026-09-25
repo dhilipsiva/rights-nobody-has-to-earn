@@ -212,7 +212,9 @@ Anybody may also record that assistance appears not to have begun for someone.
 The chapter's bystander has no seat or relationship to Nell. Their entry gives
 a separate rights office a duty to review whether assistance was initiated.
 It establishes no incapacity, breach or fault and supplies no adverse finding
-against Nell.
+against Nell. The same entry records an encounter, so it also gives standing
+to the person it names, even someone this report alone has entered, and the
+review duty reaches them too.
 
 The reviewed appointment described in the chapter on roles supplies a more
 specific route: a named trigger, a representative for one matter, a receipt

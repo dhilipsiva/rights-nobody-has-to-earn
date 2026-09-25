@@ -29,7 +29,7 @@
 # WHAT FALSE MEANS HERE: a FALSE is pinned only where the KB could have said
 # TRUE, and the comment says what would flip it.
 
-:expect-pins 45
+:expect-pins 48
 
 # ── "Public responsibility around it takes distinct forms." ────────────────
 # Respect, protection, fulfilment, continuity, remedy — one typed duty each.
@@ -128,6 +128,19 @@ observe(Bystander, NellAlone, Nell, UninitiatedAssistanceScope).
 # => FALSE
 
 ? owe(State, Eats, Nell).
+# => TRUE
+
+# "The same entry records an encounter, so it also gives standing to the person
+# it names, even someone this report alone has entered, and the review duty
+# reaches them too."
+? person(BystanderSawSomeone).
+# => FALSE
+
+observe(Bystander, SomeoneAlone, BystanderSawSomeone, UninitiatedAssistanceScope).
+? person(BystanderSawSomeone).
+# => TRUE
+
+? obliged(IndependentRightsAlternate, ReviewWhetherAssistanceWasInitiatedForThisPerson, BystanderSawSomeone).
 # => TRUE
 
 # "A duty is not an arrival" — nothing reads either duty, and no actuality moves.

@@ -4,8 +4,8 @@
 #
 # Ori appears in no record. The design owes Ori nothing it can derive, because
 # every debt, entitlement and public duty toward a person reads `person` and
-# nobody has written the entry that makes Ori one. What reaches Ori is an
-# outreach worker. This file follows what that worker's entries do, and stops
+# nobody has written an entry that makes Ori one. What reaches Ori is an
+# outreach worker. This file follows what that worker's report does, and stops
 # where the design stops: it concludes duties, never that anything arrived.
 :expect-pins 22
 
@@ -20,23 +20,16 @@
 # => FALSE
 
 # ── The worker reports that nobody is acting for Ori ─────────────────────────
-# The escalation route exists for exactly this report, but it reads
-# personhood, and a report is not a first-contact entry. On its own the report
-# derives nothing: the person nobody entered stays outside the route built for
-# the person nobody has come for.
+# The report records an encounter, written by whoever saw the person, so it is
+# a standing root as a first-contact entry is. It needs no credential, and
+# nothing about Ori's documents, status, wealth or history is asked.
 observe(OutreachWorker, OriOutreachEntry, Ori, UninitiatedAssistanceScope).
-:defect "the report of an unassisted person counting as the encounter it records (item 72)"
+? person(Ori).
+# => TRUE
+# The escalation built for the person nobody has come for now reaches Ori.
 ? obliged(IndependentRightsAlternate, ReviewWhetherAssistanceWasInitiatedForThisPerson, Ori).
-# => FALSE
-? person(Ori).
-# => FALSE
-
-# ── The worker records the first contact ─────────────────────────────────────
-# A first-contact entry is written by whoever made the contact, and it is the
-# whole of what standing needs. Nothing about Ori's documents, status, wealth or
-# history is asked.
-at(Ori, FirstContact).
-? person(Ori).
+# => TRUE
+? obliged(RightsAdvocate, InitiateAssistanceAndRepresentationWithoutARequest, Ori).
 # => TRUE
 ? owe(State, Eats, Ori).
 # => TRUE
@@ -46,17 +39,11 @@ at(Ori, FirstContact).
 # => TRUE
 ? entitled(Ori, event { eats() }).
 # => TRUE
-? obliged(RightsAdvocate, InitiateAssistanceAndRepresentationWithoutARequest, Ori).
-# => TRUE
 ? obliged(CommonTier, BackstopTheFloorForEveryPersonInTheJurisdiction, Ori).
 # => TRUE
 
-# The earlier report now reaches the independent alternate: derivation does not
-# care which entry came first.
-? obliged(IndependentRightsAlternate, ReviewWhetherAssistanceWasInitiatedForThisPerson, Ori).
-# => TRUE
-
-# Serve first, and no enrolment through the service that found Ori.
+# Serve first, and no enrolment through the report or the service that found
+# Ori.
 ? obliged(State, ServeFirstNoImmigrationDocumentationOrEnforcementCondition, Ori).
 # => TRUE
 ? obliged(State, ServeProtectAndProvideProcessBeforeRecordReconciliationNoMissingEntryInference, Ori).
@@ -66,15 +53,24 @@ at(Ori, FirstContact).
 ? prevents(Ori, PSUnlawfulEnrolmentForEnforcement).
 # => TRUE
 
-# ── Where it stops ───────────────────────────────────────────────────────────
-# Duties toward Ori derive; nothing says any of them was performed. No receipt
-# is written, so no floor item is concluded, and no adverse conclusion follows
-# from having been found.
-? eats(Ori).
-# => FALSE
+# ── What the report is not ───────────────────────────────────────────────────
+# It gives standing and nothing adverse: no finding about Ori, no custody, no
+# credibility finding. The worker gains nothing by writing it.
 ? prisoner(Ori).
 # => FALSE
 ? false(Ori).
 # => FALSE
 ? person(OutreachWorker).
+# => FALSE
+# A report naming a public body makes nobody a person.
+observe(OutreachWorker, StateOutreachEntry, State, UninitiatedAssistanceScope).
+? person(State).
+# => FALSE
+
+# ── Where it stops ───────────────────────────────────────────────────────────
+# Duties toward Ori derive; nothing says any of them was performed. No receipt
+# is written, so no floor item is concluded.
+? eats(Ori).
+# => FALSE
+? suffice(Ori).
 # => FALSE

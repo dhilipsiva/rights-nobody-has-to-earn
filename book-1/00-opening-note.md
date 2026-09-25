@@ -53,7 +53,8 @@ My argument is that this is a good place to begin designing for everyone.
 Where a right follows from personhood alone, the additional entries other
 people possess cannot become conditions for it. There is a specific result
 to examine: the standing rules cover birth, first contact, presence within the
-jurisdiction and effective control, without requiring documents or a family.
+jurisdiction, effective control and a report that nobody is acting for a
+person, without requiring documents or a family.
 An undocumented adult can enter through the same encounter rules. That is a
 checked consequence. The wider claim that beginning with this case helps us
 find other failures is my argument, not a theorem about every possible harm.

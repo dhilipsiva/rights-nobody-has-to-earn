@@ -79,3 +79,4 @@ observe(LifeCourseCaseReview, LifeCourseCaseRecord, MinimumNecessaryInformationN
 observe(LifeCourseCaseSource, LifeCourseCaseRecord, LifeCourseCaseParticipant, LifeCourseParticipantScope).
 observe(LifeCourseCaseEvidence, LifeCourseCaseRecord, LifeCourseCaseParticipant, LifeCourseParticipantScope).
 observe(LifeCourseCaseReview, LifeCourseCaseRecord, LifeCourseCaseParticipant, LifeCourseParticipantScope).
+at(LifeCourseCaseParticipant, FirstContact).

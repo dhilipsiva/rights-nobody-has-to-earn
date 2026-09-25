@@ -29,3 +29,4 @@ observe(LifeCourseCaseSource, LifeCourseCaseRecord, TheAffectedPersonsOwnVoiceRe
 observe(LifeCourseCaseSource, LifeCourseCaseRecord, MinimumNecessaryInformationNoReusableClassificationAndNoEnrolment, LifeCoursePrivacyLimitScope).
 observe(LifeCourseCaseSource, LifeCourseCaseRecord, ContinuityOfCareAndTheFloorUnaffectedByAnyGapInRepresentation, LifeCourseInitiationContinuityScope).
 observe(LifeCourseCaseSource, LifeCourseCaseRecord, LifeCourseCaseParticipant, LifeCourseParticipantScope).
+at(LifeCourseCaseParticipant, FirstContact).

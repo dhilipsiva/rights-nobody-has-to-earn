@@ -163,11 +163,14 @@ blocks it (item 71). *Case:* `tests/pins/stress/core-read-expansively`, with
 the generated `amendment-enactment` cases.
 
 **A person nobody has recorded.** *Gains:* nobody; this is the design's own
-blind spot. *Hidden cost:* the person. *Detected:* a first-contact entry by
-whoever made the contact gives standing, every debt and the advocate's duty,
-with serve-first and no enrolment. *Gap:* a report that nobody is acting for
-the person reaches nothing until the encounter is also written (item 72).
-*Case:* `tests/pins/stress/never-recorded-person`.
+blind spot. *Hidden cost:* the person, until somebody who saw them writes.
+*Detected:* a first-contact entry, or a report that nobody is acting for the
+person, written by whoever saw them, gives standing, every debt, the advocate's
+and the alternate's duties, with serve-first and no enrolment; the initiation
+appointment completes only for somebody such an encounter has reached (item
+72). *Residual:* a person nobody has seen appears in no record, and no rule
+over supplied records can discover them. *Case:*
+`tests/pins/stress/never-recorded-person`.
 
 ## The wall that is not there
 

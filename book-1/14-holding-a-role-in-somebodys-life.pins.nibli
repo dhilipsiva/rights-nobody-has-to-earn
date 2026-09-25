@@ -29,7 +29,7 @@
 # WHAT FALSE MEANS HERE: a FALSE is pinned only where the KB could have said
 # TRUE, and the comment says what would flip it.
 
-:expect-pins 31
+:expect-pins 32
 
 # ── "Every barrier above is written over personhood alone" ─────────────────
 # The barriers this chapter renders, asked of a record of one line. Each has
@@ -137,9 +137,15 @@
 ? authorized(LifeCourseCaseWitness, DeliveryWitness, LifeCourseCaseParticipant).
 # => FALSE
 
-# "not as a status or guardianship" — the appointment concludes nothing about
-# the person, and confers no role authority over them.
+# "completes only for someone a standing encounter has reached" — the fixture's
+# first-contact entry is what makes the participant a person; the generated
+# initiation/without-standing case removes it and nothing completes.
 ? person(LifeCourseCaseParticipant).
+# => TRUE
+
+# "not as a status or guardianship" — the appointment concludes nothing adverse
+# about the person, and confers no role authority over them.
+? false(LifeCourseCaseParticipant).
 # => FALSE
 
 ? authority(LifeCourseCaseRepresentative, Parentage, LifeCourseCaseRecord).

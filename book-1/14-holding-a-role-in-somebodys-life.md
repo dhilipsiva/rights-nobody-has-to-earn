@@ -96,6 +96,11 @@ person; the sole supporter is accused of failing them; accessible contact is
 unavailable; the person is held or placed without representation; or an earlier
 appointment ended without a successor. An invented trigger completes nothing.
 
+The appointment completes only for someone a standing encounter has reached: a
+birth, first contact, presence within the republic or under its power, or a
+report that nobody is acting for them. An appointment for a name no encounter has reached completes
+nothing.
+
 The appointment names a representative for that matter, not a guardian over
 the person's life. It preserves their voice, makes no capability finding,
 creates no reusable classification and enrols them in nothing. Its information

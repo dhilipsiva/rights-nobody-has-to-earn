@@ -82,8 +82,8 @@ Neither assumption turns the file into a complete account of the world.
 Similarly, `person(Ori)` returns `FALSE` in a case with no standing entry for
 Ori. It does not establish that a real person lacks rights.
 
-The constitution also derives standing from supplied contact, presence and
-effective control. It assigns an initiation duty without requiring Nell to
+The constitution also derives standing from supplied contact, presence,
+effective control and a report that nobody is acting for someone. It assigns an initiation duty without requiring Nell to
 request help. Those are further rules; none lets the engine discover a
 person whose encounter never reaches any input. A legal duty to find and
 assist someone is different from a program having observed them.
