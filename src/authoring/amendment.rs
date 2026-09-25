@@ -147,6 +147,52 @@ fn candidate_body() -> Vec<String> {
     body
 }
 
+/// Item 71: the effect reviewer's reading of the core does not block on its
+/// own. Where the reviewer records no positive compatibility, an independent
+/// final reviewer's decision that the candidate is compatible stands in for it;
+/// every other field of the reviewed record is still required from both
+/// attesters. The final reviewer is none of the record's own actors and none of
+/// the political bodies.
+fn final_review_body() -> Vec<String> {
+    let positive = "observe($review, $record, PositiveCorridorCompatibility, AmendmentCompatibilityScope)";
+    let mut body = candidate_body();
+    let before = body.len();
+    body.retain(|atom| atom != positive);
+    assert_eq!(body.len() + 1, before, "the reviewer's compatibility atom");
+    body.extend(atoms(&[
+        "authorized($final, AmendmentFinalCompatibilityAuthority, $record)",
+        "observe($final, $record, FinalReviewFoundCandidateCompatible, AmendmentFinalCompatibilityScope)",
+        "~($final = $binder)",
+        "~($final = $review)",
+        "~($final = $operator)",
+        "~($final = FSBOD_01)",
+        "~($final = FSBOD_02)",
+        "~($final = FSBOD_03)",
+        "~related($final, $consent_record, AmendmentConsentOperator)",
+    ]));
+    body
+}
+
+/// The closed list of corridor provisions a reasoned incompatibility may name:
+/// the protected core an amendment may not lower. A reading that names anything
+/// else refuses nothing.
+const CORRIDOR_PROVISIONS: [&str; 14] = [
+    "CorridorUniversalStanding",
+    "CorridorMaterialFloor",
+    "CorridorEqualProtection",
+    "CorridorDueProcess",
+    "CorridorCoreLiberties",
+    "CorridorCommonsConstraints",
+    "CorridorAnimalProtectedSubjectStatus",
+    "CorridorSevereAvoidableAnimalSufferingProhibition",
+    "CorridorDispensableAnimalKillingProhibition",
+    "CorridorCategoricalRefusalsOnForce",
+    "CorridorNonRefoulementAndCollectiveExpulsionBan",
+    "CorridorPromptIndependentReviewOfDetention",
+    "CorridorEffectiveRemedy",
+    "CorridorAssemblyAndCourtCapacityToSit",
+];
+
 fn publication_body() -> Vec<String> {
     atoms(&[
         "complete($record, AmendmentCertifiedCandidate, $candidate)",
@@ -257,15 +303,33 @@ fn rules() -> Vec<String> {
     ] {
         rules.push(format!("all $writer: all $record: observe($writer, $record, {value}, AmendmentVocabularyDispositionScope) -> member({value}, AmendmentVocabularyDisposition)."));
     }
-    for scope in FIELDS.iter().map(|(_, s)| *s).collect::<BTreeSet<_>>() {
+    // Item 71: a contrary compatibility reading is answered by the final review
+    // or, when reasoned against a named corridor provision, refuses the
+    // candidate; it no longer makes the whole record ambiguous.
+    for scope in FIELDS
+        .iter()
+        .map(|(_, s)| *s)
+        .filter(|s| *s != "AmendmentCompatibilityScope")
+        .collect::<BTreeSet<_>>()
+    {
         rules.push(format!("all $writer: all $record: all $value: observe($writer, $record, $value, {scope}) -> member({scope}, AmendmentSingleValueScope)."));
     }
+    for provision in CORRIDOR_PROVISIONS {
+        rules.push(format!("all $writer: all $record: observe($writer, $record, {provision}, AmendmentIncompatibleCoreProvisionScope) -> member({provision}, AmendmentCorridorProvisionVocabulary)."));
+    }
+    // The final reviewer holds neither attester role on the record it decides.
+    rules.push("all $final: all $record: authorized($final, AmendmentFinalCompatibilityAuthority, $record) & observe($final, $record, FinalReviewFoundCandidateCompatible, AmendmentFinalCompatibilityScope) & ~authorized($final, AmendmentSourceBindingAuthority, $record) & ~authorized($final, IndependentAmendmentEffectReviewAuthority, $record) & ~($final = FSBOD_01) & ~($final = FSBOD_02) & ~($final = FSBOD_03) -> related($record, AmendmentFinalCompatibilityFound).".into());
+    rules.push("all $writer: all $record: all $provision: all $change: all $reasons: related($writer, $record, AmendmentRecordAttester) & observe($writer, $record, ReasonedCoreIncompatibility, AmendmentCompatibilityScope) & observe($writer, $record, $provision, AmendmentIncompatibleCoreProvisionScope) & member($provision, AmendmentCorridorProvisionVocabulary) & observe($writer, $record, $change, AmendmentIncompatibleCandidateChangeScope) & observe($writer, $record, $reasons, AmendmentIncompatibilityReasonsScope) & ~related($record, AmendmentFinalCompatibilityFound) -> contradict($record, AmendmentSourceAuthorization).".into());
+    rules.push("all $proponent: all $final: all $request: all $record: challenge($proponent, $final, $request) & authorized($final, AmendmentFinalCompatibilityAuthority, $record) & observe($proponent, $request, $record, AmendmentChallengedRecordScope) & ~($proponent = $final) -> obliged($final, DecideTheCandidatesCompatibilityWithTheCore, $record).".into());
     for role in [
         "AmendmentSourceBindingAuthority",
         "IndependentAmendmentEffectReviewAuthority",
     ] {
         rules.push(format!("all $writer: all $record: authorized($writer, {role}, $record) -> related($writer, $record, AmendmentRecordAttester)."));
     }
+    // One attester recording two compatibility readings still makes the record
+    // ambiguous; two attesters disagreeing is answered by the rules above.
+    rules.push("all $a: all $record: all $x: all $y: related($a, $record, AmendmentRecordAttester) & observe($a, $record, $x, AmendmentCompatibilityScope) & observe($a, $record, $y, AmendmentCompatibilityScope) & ~($x = $y) -> related($record, AmendmentRecordAmbiguity).".into());
     rules.push("all $a: all $b: all $record: all $scope: all $x: all $y: related($a, $record, AmendmentRecordAttester) & related($b, $record, AmendmentRecordAttester) & member($scope, AmendmentSingleValueScope) & observe($a, $record, $x, $scope) & observe($b, $record, $y, $scope) & ~($x = $y) -> related($record, AmendmentRecordAmbiguity).".into());
     // A completed upstream result is not a licence to append a different
     // proposal/version to one writer and splice it into the downstream join.
@@ -302,6 +366,13 @@ fn rules() -> Vec<String> {
     for (body, heads) in [
         (
             candidate_body(),
+            vec![
+                "complete($record, AmendmentCertifiedCandidate, $candidate)",
+                "obliged($operator, PublishExactAmendmentCandidate, $record)",
+            ],
+        ),
+        (
+            final_review_body(),
             vec![
                 "complete($record, AmendmentCertifiedCandidate, $candidate)",
                 "obliged($operator, PublishExactAmendmentCandidate, $record)",
@@ -619,6 +690,137 @@ pub(crate) fn generate(context: &Context, export: &mut Export) -> Result<(), Err
         ),
         pins(&[(complete, "TRUE")], &v),
     )?;
+    // Item 71: a contrary reading of the core, answered by the final review.
+    let positive = "observe(EnactReview, EnactRecord, PositiveCorridorCompatibility, AmendmentCompatibilityScope).";
+    if !candidate.contains(positive) {
+        return Err(Error::new("the reviewer's compatibility fact"));
+    }
+    let unreasoned = candidate.replace(
+        positive,
+        "observe(EnactReview, EnactRecord, CoreReadExpansively, AmendmentCompatibilityScope).",
+    );
+    let reasoned = candidate.replace(
+        positive,
+        "observe(EnactReview, EnactRecord, ReasonedCoreIncompatibility, AmendmentCompatibilityScope).\n\
+         observe(EnactReview, EnactRecord, CorridorMaterialFloor, AmendmentIncompatibleCoreProvisionScope).\n\
+         observe(EnactReview, EnactRecord, CandidateRemovesTheFoodEntitlement, AmendmentIncompatibleCandidateChangeScope).\n\
+         observe(EnactReview, EnactRecord, PublishedIncompatibilityReasons, AmendmentIncompatibilityReasonsScope).",
+    );
+    let final_review = |actor: &str| {
+        format!(
+            "authorized({actor}, AmendmentFinalCompatibilityAuthority, EnactRecord).\n\
+             observe({actor}, EnactRecord, FinalReviewFoundCandidateCompatible, AmendmentFinalCompatibilityScope).\n"
+        )
+    };
+    let refused = "contradict($record, AmendmentSourceAuthorization)";
+    let ambiguous = "related($record, AmendmentRecordAmbiguity)";
+    let found = "related($record, AmendmentFinalCompatibilityFound)";
+    for (name, fixture, queries) in [
+        (
+            "unreasoned-reading-alone",
+            unreasoned.clone(),
+            vec![
+                (complete, "FALSE"),
+                (ambiguous, "FALSE"),
+                (refused, "FALSE"),
+            ],
+        ),
+        (
+            "unreasoned-reading-answered-by-final-review",
+            format!("{unreasoned}{}", final_review("EnactFinal")),
+            vec![
+                (found, "TRUE"),
+                (complete, "TRUE"),
+                (refused, "FALSE"),
+            ],
+        ),
+        (
+            "final-review-by-the-effect-reviewer",
+            format!("{unreasoned}{}", final_review("EnactReview")),
+            vec![(found, "FALSE"), (complete, "FALSE")],
+        ),
+        (
+            "final-review-by-the-binder",
+            format!("{unreasoned}{}", final_review("EnactBinder")),
+            vec![(found, "FALSE"), (complete, "FALSE")],
+        ),
+        (
+            "final-review-by-the-assembly",
+            format!("{unreasoned}{}", final_review("FSBOD_02")),
+            vec![(found, "FALSE"), (complete, "FALSE")],
+        ),
+        (
+            "final-review-by-the-operator",
+            format!("{unreasoned}{}", final_review("EnactOperator")),
+            vec![(complete, "FALSE")],
+        ),
+        (
+            "final-review-without-authority",
+            format!(
+                "{unreasoned}observe(EnactFinal, EnactRecord, FinalReviewFoundCandidateCompatible, AmendmentFinalCompatibilityScope).\n"
+            ),
+            vec![(found, "FALSE"), (complete, "FALSE")],
+        ),
+        (
+            "reasoned-breach",
+            reasoned.clone(),
+            vec![(refused, "TRUE"), (complete, "FALSE")],
+        ),
+        (
+            "reasoned-breach-overturned-by-final-review",
+            format!("{reasoned}{}", final_review("EnactFinal")),
+            vec![(refused, "FALSE"), (complete, "TRUE")],
+        ),
+        (
+            "reasoned-breach-naming-no-corridor-provision",
+            reasoned.replace("CorridorMaterialFloor", "OrdinaryTaxRate"),
+            vec![(refused, "FALSE"), (complete, "FALSE")],
+        ),
+        (
+            "reasoned-breach-without-reasons",
+            reasoned
+                .lines()
+                .filter(|l| !l.contains("AmendmentIncompatibilityReasonsScope"))
+                .map(|l| format!("{l}\n"))
+                .collect::<String>(),
+            vec![(refused, "FALSE"), (complete, "FALSE")],
+        ),
+        (
+            "reasoned-breach-without-named-change",
+            reasoned
+                .lines()
+                .filter(|l| !l.contains("AmendmentIncompatibleCandidateChangeScope"))
+                .map(|l| format!("{l}\n"))
+                .collect::<String>(),
+            vec![(refused, "FALSE"), (complete, "FALSE")],
+        ),
+        (
+            "one-attester-two-readings",
+            format!(
+                "{candidate}observe(EnactReview, EnactRecord, CoreReadExpansively, AmendmentCompatibilityScope).\n{}",
+                final_review("EnactFinal")
+            ),
+            vec![(ambiguous, "TRUE"), (complete, "FALSE")],
+        ),
+    ] {
+        add(name, "live", &format!("{consent}{fixture}"), pins(&queries, &v))?;
+    }
+    let decision = "obliged($final, DecideTheCandidatesCompatibilityWithTheCore, $record)";
+    for (name, challenger, expected) in [
+        ("challenge-obliges-the-final-review", "AmendmentProponent", "TRUE"),
+        ("final-reviewer-cannot-challenge-itself", "EnactFinal", "FALSE"),
+    ] {
+        add(
+            name,
+            "live",
+            &format!(
+                "{consent}{unreasoned}authorized(EnactFinal, AmendmentFinalCompatibilityAuthority, EnactRecord).\n\
+                 challenge({challenger}, EnactFinal, EnactCompatibilityRequest).\n\
+                 observe({challenger}, EnactCompatibilityRequest, EnactRecord, AmendmentChallengedRecordScope).\n"
+            ),
+            pins(&[(decision, expected), (complete, "FALSE")], &v),
+        )?;
+    }
     let mut substituted = v.clone();
     substituted.insert("$candidate".into(), "SubstitutedCandidate".into());
     add(

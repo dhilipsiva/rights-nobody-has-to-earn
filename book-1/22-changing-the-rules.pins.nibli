@@ -1,7 +1,10 @@
 # SPDX-License-Identifier: MIT OR Apache-2.0
 # Chapter 22: exact-change authority and the limits of bare proposal entries.
 # Certification, publication, selection and their contrary cases execute under
-# tests/pins/amendment-enactment/. These pins retain every earlier proposal,
+# tests/pins/amendment-enactment/, which also run a reviewer's reading of the
+# core: unreasoned, reasoned against a named corridor provision, and answered by
+# the independent final compatibility review, with the proponent's challenge in
+# tests/pins/stress/core-read-expansively/. These pins retain every earlier proposal,
 # target, protected-register and personal-collision probe on the current source.
 # No proposal label is a personal finding or an alternative enactment route.
 # The supplied Jala docket plus positive recognition control and explicit weaker

@@ -152,11 +152,15 @@ recorded region and locality as well as from the provider (item 70). *Case:*
 
 **An amendment blocked by an expansive reading of the core.** *Gains:* whoever
 holds the effect reviewer's seat. *Needs:* that seat. *Hidden cost:* the
-proponent and everyone the amendment would protect. *Detected:* the block holds
-one record only; a fresh record with its own reviewer is not reached by it, and
-the reading creates no right. *Gap:* the contrary value needs no reasons, and
-the proponent's challenge reaches no decision that can certify (item 71).
-*Case:* `tests/pins/stress/core-read-expansively`.
+proponent and everyone the amendment would protect, for as long as the final
+review takes. *Detected:* an unreasoned contrary reading withholds certification
+only as a missing review would and makes the record neither ambiguous nor
+refused; a reading refuses only when it names the corridor provision, the
+candidate change and its reasons. Anyone's challenge obliges the independent
+final compatibility review to decide, and its finding of compatibility certifies
+the candidate and answers a reasoned refusal, while an animal-core breach still
+blocks it (item 71). *Case:* `tests/pins/stress/core-read-expansively`, with
+the generated `amendment-enactment` cases.
 
 **A person nobody has recorded.** *Gains:* nobody; this is the design's own
 blind spot. *Hidden cost:* the person. *Detected:* a first-contact entry by

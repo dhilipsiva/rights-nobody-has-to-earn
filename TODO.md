@@ -216,7 +216,7 @@ unimplemented until the items named here land.
 
 ## Ordered revision backlog
 
-Work in this order: items 71–72, the defects item 45's stress tests confirmed,
+Work in this order: item 72, the last defect item 45's stress tests confirmed,
 then items 46–52, which measure, repair and prepare; items 53–63 carry the
 structure and the rewrite under the ratified rulings; item 64 finishes
 production, 65 closes the revision, and 66 is optional. Numbering continues from
@@ -225,24 +225,6 @@ reading sequence](book-1/contents.json), which the plan also uses, until item 53
 changes it.
 
 ### Resolve the design questions, source and pins first
-
-- [ ] **71. Give a blocked amendment a reasoned, reviewable answer.**
-
-  **Scope:** the AMENDMENT-ENACTMENT certification and challenge rules, the
-  amendment-enactment contract, and `tests/pins/stress/core-read-expansively`.
-
-  The effect reviewer can withhold certification by recording any contrary
-  compatibility value, with no reasons, provision or changed effect, and the
-  proponent's challenge creates a duty nothing reads. The contract says neither
-  reviewer has a final veto; for that record, one does. The animal core already
-  requires an exact, reasoned breach finding. Require the reviewer's contrary
-  value to name the core provision and the candidate change with reasons, and
-  route a challenge to the independent final review so that its decision can
-  certify or refuse, without letting any reading of the core create a right.
-
-  **Done when:** the stress case's defect pin resolves, an unreasoned contrary
-  value no longer blocks on its own, and a reasoned breach still refuses the
-  candidate.
 
 - [ ] **72. Let an outreach report reach the person it reports.**
 

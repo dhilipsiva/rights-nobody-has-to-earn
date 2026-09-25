@@ -139,10 +139,10 @@ Ruling D6 lets an act that only gives or preserves something for its subject tak
 
 | Effect | Class | Why | Roles on its own record | Acting before effect | Repeated attestation | Roles across its prerequisites |
 |---|---|---|---|---|---|---|
-| AmendmentCertifiedCandidate | institutional | Certifies, publishes or selects a constitutional version. | 4 | 2 | effect reviewer + source | 11 across 2 records |
-| AmendmentEffectiveVersion | institutional | Certifies, publishes or selects a constitutional version. | 2 | 2 |  | 17 across 4 records |
+| AmendmentCertifiedCandidate | institutional | Certifies, publishes or selects a constitutional version. | 4–5 | 2–3 | effect reviewer + source | 11 across 2 records |
+| AmendmentEffectiveVersion | institutional | Certifies, publishes or selects a constitutional version. | 2 | 2 |  | 18 across 4 records |
 | AmendmentNonresponseEscalation | oversight | Certifies that a public body did not respond, moving its duty to an alternate. | 4 | 2 | evidence attester + independent reviewer | — |
-| AmendmentPublishedCandidate | institutional | Certifies, publishes or selects a constitutional version. | 2 | 2 | effect reviewer + publisher | 15 across 3 records |
+| AmendmentPublishedCandidate | institutional | Certifies, publishes or selects a constitutional version. | 2 | 2 | effect reviewer + publisher | 16 across 3 records |
 
 ### ARTICLES
 
@@ -745,4 +745,4 @@ Ruling D6 lets an act that only gives or preserves something for its subject tak
 
 ## Outside this table
 
-Duties are owed rather than taking effect, and barriers read no authorised role, so neither is listed: 699 rules conclude a duty (`obliged`) and 546 conclude a barrier (`prevents`). Where a duty accompanies a restriction, the restriction is measured through the conclusion that takes effect, such as the `interrupt` stays in the ecological family.
+Duties are owed rather than taking effect, and barriers read no authorised role, so neither is listed: 701 rules conclude a duty (`obliged`) and 546 conclude a barrier (`prevents`). Where a duty accompanies a restriction, the restriction is measured through the conclusion that takes effect, such as the `interrupt` stays in the ecological family.

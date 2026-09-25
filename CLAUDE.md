@@ -134,6 +134,56 @@ reinstate the retired tooling or workflow.
 Grouped by kind. Dates in each heading are the ratification dates; a ruling
 that was later implemented or narrowed carries that supersession inline.
 
+### Item 71 — a reading of the core must give its grounds, 2026-09-25
+
+Item 45's expansive-reading case found that the independent effect reviewer
+could withhold an amendment's certification by recording any contrary value in
+the single-valued compatibility field: the two attesters' readings made the
+record ambiguous, the reviewer gave no reasons, provision or changed effect, and
+the proponent's challenge obliged a reader whose decision nothing could turn
+into certification. The amendment contract said neither reviewer had a final
+veto; for that record one did.
+
+The compatibility field is no longer single-valued across attesters, so a binder
+and a reviewer who read the core differently make nothing ambiguous; one
+attester recording two readings still does. Certification gains a second route:
+the binder's positive reading plus an independent final compatibility review's
+recorded finding (`FinalReviewFoundCandidateCompatible`) by an actor authorised
+for the record who is not the binder, the effect reviewer, the operator, one of
+the three political bodies or an operator of the political result. Every other
+field still needs both attesters, and both routes keep the `~contradict` guard,
+so an established animal-core breach still blocks certification. A reading
+refuses the candidate only when an attester records `ReasonedCoreIncompatibility`
+and names a provision from a closed corridor vocabulary of fourteen, the
+candidate change and the reasons; it withholds through `contradict` until the
+final review finds the candidate compatible, which a helper concluding
+`related($record, AmendmentFinalCompatibilityFound)` from base facts reads. A
+challenge naming the record obliges the final reviewer to decide
+(`DecideTheCandidatesCompatibilityWithTheCore`), read by nothing. The contract
+card compares keeping the field single-valued with reasons required, treating a
+contrary value as nothing, and letting the final review override every refusal.
+
+The amendment generator writes fifteen new cases: the unreasoned reading alone
+and answered, the final reviewer being the binder, the effect reviewer, the
+operator, the Assembly or unauthorised, a reasoned breach refusing and
+overturned, one naming no corridor provision, no change or no reasons, one
+attester's two readings, and the challenge duty with its self-challenge control.
+The stress case now runs the challenge to a certified candidate, its defect pin
+resolved. Chapter 22 states the rule, and the contract card and red-team index
+record it; the exact prose is `session-drafted, author-approved under delegated
+approval (2026-09-13)`. The procedural-load table names the final reviewer.
+Rules move from 7,558 to 7,577. The amendment, Chapter 22, ecological corridor
+and amendments cases pass 1,347 pins across 275 cases (focused, partial).
+The first full development run caught the final-review helper: it named the
+effect reviewer `$review` to hold the final reviewer apart from it, and the D6
+single-actor test read a rule whose named reviewer observes nothing as help
+taking effect on one actor. The helper now requires that the final reviewer
+holds neither attester role (`~authorized`), which says the same thing
+directly, and all 137 authoring development tests pass, with five declared
+ignored, as does the prose check. `RIGHTS_VERIFY_JOBS=4 ./verify.sh` passes
+89,960 pins across 16,350 cases with complete contradiction checks and no
+findings in 1,245.94s, the defect pin for item 72 still reproducing.
+
 ### Item 70 — continuity stays public, witnesses stay independent, 2026-09-25
 
 Item 45's agency-and-contractor case confirmed two gaps. The item 36 continuity
@@ -3790,6 +3840,13 @@ unchanged in Book 1 chapters 1 and 12 and the method; their supply is
 remain, with the label expectations superseded below. Their former absence
 descriptions and RI-12's historical status do not describe the bounded
 interface; no operational-authentication or semantic-completeness claim is upgraded.
+
+**A reading of the core must give its grounds, 2026-09-25 (item 71).** An
+effect reviewer's unreasoned contrary compatibility reading no longer makes the
+record ambiguous; a reading refuses only when it names a corridor provision, the
+candidate change and its reasons, and an independent final compatibility review
+can certify in place of the reviewer's positive reading. The amendment contract
+card records the design and the alternatives compared.
 
 **Parallel amendment-label rules removed, 2026-09-19, revision item 19.**
 The controlling amendment-enactment contract supersedes the retained Article 9

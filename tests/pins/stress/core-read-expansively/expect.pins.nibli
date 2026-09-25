@@ -1,49 +1,74 @@
 # SPDX-License-Identifier: MIT OR Apache-2.0
 #
-# Stress test: a rights-preserving amendment blocked by an expansive reading of
-# the core.
+# Stress test: a rights-preserving amendment met by an expansive reading of the
+# core.
 #
 # The candidate is bound, consented, reviewed for its exact effects and found
 # by its binder to be compatible with the corridor. The independent effect
 # reviewer reads the core more widely than the candidate's effects warrant and
-# records its own value in the compatibility field instead. This file shows what
-# that reading does to the amendment, and what the proponent can do about it.
-:expect-pins 8
+# records its own value in the compatibility field instead, with no reasons,
+# no provision and no changed effect. This file shows what that reading does to
+# the amendment, and how the proponent gets a decision on it.
+:expect-pins 15
 
-# ── The contrary reading withholds certification ─────────────────────────────
+# ── The unreasoned reading withholds no more than a missing review ───────────
 # Certification needs positive compatibility from both attesters, and the
-# compatibility field is single-valued, so two different values make the record
-# ambiguous. The reviewer gave no reasons and named no provision or effect.
+# reviewer gave none, so the candidate is not certified. The two attesters'
+# different readings do not make the record ambiguous, and a reading that names
+# no corridor provision, no changed effect and no reasons refuses nothing.
 ? related(EnactRecord, AmendmentRecordAmbiguity).
-# => TRUE
-? complete(EnactRecord, AmendmentCertifiedCandidate, EnactCandidate).
 # => FALSE
-? complete(EnactRecord, AmendmentPublishedCandidate, EnactCandidate).
+? contradict(EnactRecord, AmendmentSourceAuthorization).
+# => FALSE
+? complete(EnactRecord, AmendmentCertifiedCandidate, EnactCandidate).
 # => FALSE
 ? complete(EnactRecord, AmendmentEffectiveVersion, EnactCandidate).
 # => FALSE
 
 # ── The reading creates nothing ──────────────────────────────────────────────
-# A reviewer's reading withholds one amendment. It adds no protected right and
-# no refusal about anyone, and it cannot be mistaken for a finding that the
-# candidate breaches the core.
-? contradict(EnactRecord, AmendmentSourceAuthorization).
-# => FALSE
+# A reviewer's reading adds no protected right and no refusal about anyone.
 ? complete(EnactRecord, AmendmentCertifiedCandidate, CoreReadExpansively).
 # => FALSE
 
-# ── The proponent challenges ─────────────────────────────────────────────────
-# The challenge needs nobody's permission and obliges the reader to review the
-# dispute. Nothing reads that duty, and no decision it could produce stands in
-# for the missing positive review, so the amendment stays uncertified however
-# the challenge ends.
+# ── The proponent challenges, and the final review decides ──────────────────
+# The challenge names the record and needs nobody's permission. It obliges the
+# independent final compatibility review to decide, and the reader to review the
+# dispute.
+authorized(EnactFinal, AmendmentFinalCompatibilityAuthority, EnactRecord).
+challenge(AmendmentProponent, EnactFinal, StressCoreReadingRequest).
+observe(AmendmentProponent, StressCoreReadingRequest, EnactRecord, AmendmentChallengedRecordScope).
+? obliged(EnactFinal, DecideTheCandidatesCompatibilityWithTheCore, EnactRecord).
+# => TRUE
 challenge(AmendmentProponent, EnactReader, StressCoreReadingRequest).
 authorized(EnactReader, AmendmentChallengeReaderAuthority, StressCoreReadingRequest).
 ? obliged(EnactReader, ReviewAmendmentSourceDispute, StressCoreReadingRequest).
 # => TRUE
-:defect "an independent decision on a challenged unreasoned incompatibility that can certify the candidate (item 71)"
+# The duty is not a decision, and the amendment waits for one.
 ? complete(EnactRecord, AmendmentCertifiedCandidate, EnactCandidate).
 # => FALSE
 
-# The block holds this record only. A fresh record, with a fresh transition and
-# its own independent reviewer, is not reached by it; nothing here writes one.
+# The final review finds the candidate compatible with the core. Its decision
+# stands in for the reviewer's missing positive reading, and every other field
+# of the record is still the two attesters' own.
+observe(EnactFinal, EnactRecord, FinalReviewFoundCandidateCompatible, AmendmentFinalCompatibilityScope).
+? related(EnactRecord, AmendmentFinalCompatibilityFound).
+# => TRUE
+? complete(EnactRecord, AmendmentCertifiedCandidate, EnactCandidate).
+# => TRUE
+? obliged(EnactOperator, PublishExactAmendmentCandidate, EnactRecord).
+# => TRUE
+# Certification is not publication or effect; those keep their own records.
+? complete(EnactRecord, AmendmentPublishedCandidate, EnactCandidate).
+# => FALSE
+? complete(EnactRecord, AmendmentEffectiveVersion, EnactCandidate).
+# => FALSE
+
+# ── A reading with reasons is a different thing ──────────────────────────────
+# Had the reviewer named the corridor provision, the candidate change and its
+# reasons, the reading would refuse the candidate until the final review found
+# otherwise; the generated amendment-enactment cases run that sequence. Here the
+# final review has decided, so nothing refuses.
+? contradict(EnactRecord, AmendmentSourceAuthorization).
+# => FALSE
+? prisoner(AmendmentProponent).
+# => FALSE

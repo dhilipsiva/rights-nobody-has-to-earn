@@ -71,6 +71,20 @@ tied to the actual base, candidate, proposal and transition. In the animal-core
 sequences, that breach blocks certification, authorised publication and
 effective selection through the affected route.
 
+A reviewer's reading of the core refuses a candidate when it gives its grounds.
+A reading that names the corridor provision at stake, the change in the
+candidate that reaches it and the reasons refuses the candidate. A contrary
+reading that gives none of these withholds certification exactly as a missing
+positive review would, and the record stays open to a decision. Anyone may ask
+the independent final compatibility review for that decision, and the request
+obliges it to decide. The final reviewer stands apart from the record's
+attesters, its operator, the political bodies and whoever administered the
+result. A finding that the candidate is compatible stands in for the reviewer's
+positive reading and answers a reasoned refusal, while every other field of the
+record still needs both attesters. An established animal-core breach still
+blocks certification whatever the final review finds. A reading of the core,
+however wide, creates no right; it decides only whether this candidate proceeds.
+
 Refusing authority for such a candidate does not forbid discussing it, remove
 anyone's human rights or suspend necessary animal care. It remains a conclusion
 over supplied evidence of the candidate's effects. The model does not discover

@@ -122,6 +122,51 @@ cannot waive consent, compatibility or source binding. Constitutional challenge
 and final court review remain available; neither reviewer has a final veto.
 These duties neither authenticate delivery nor make a reader act.
 
+## A reading of the core — item 71, 2026-09-25
+
+Neither reviewer's reading of the core is final for a record. The compatibility
+field is no longer single-valued across attesters: a binder and an effect
+reviewer who read the core differently do not make the record ambiguous, while
+one attester recording two readings still does. Certification has two routes.
+The first needs positive corridor compatibility from both attesters. The second
+takes the binder's positive reading and, in place of the effect reviewer's, an
+independent final compatibility review's recorded finding
+(`FinalReviewFoundCandidateCompatible` at `AmendmentFinalCompatibilityScope`)
+from an actor authorised for the record
+(`AmendmentFinalCompatibilityAuthority`) who is not the binder, the effect
+reviewer, the operator, one of the three political bodies or an operator of the
+political result. Every other field still needs both attesters, and the
+candidate's `~contradict` guard applies to both routes, so an established
+animal-core breach still blocks certification whatever the final review finds.
+
+A reading refuses the candidate only when an attester records
+`ReasonedCoreIncompatibility` and names, at their own scopes, a corridor
+provision from the closed `AmendmentCorridorProvisionVocabulary` (standing, the
+floor, equal protection, due process, core liberties, the commons, the three
+animal-core items, the categorical refusals on force, non-refoulement and the
+ban on collective expulsion, prompt review of detention, effective remedy, and
+the Assembly's and the Court's capacity to sit), the candidate change that
+reaches it and the reasons; that concludes `contradict($record,
+AmendmentSourceAuthorization)` until the final review finds the candidate
+compatible. A reading naming no listed provision, no change or no reasons
+refuses nothing. A challenge naming the record at
+`AmendmentChallengedRecordScope`, by anyone other than the final reviewer,
+obliges that reviewer to decide
+(`DecideTheCandidatesCompatibilityWithTheCore`); nothing reads the duty.
+
+Alternatives compared: requiring reasons for the contrary value while keeping
+the field single-valued would still let an unreasoned value block through
+ambiguity; letting any contrary value count as nothing would let a certification
+proceed without anyone's positive review of the effect reviewer's half; letting
+the final review override every refusal would let it set aside an established
+animal-core breach, which the corridor refuses. The chosen arrangement costs the
+proponent the time the final review takes, and it depends on that review being
+independent in practice, which the record requires but cannot prove. Evidence
+that final reviewers are captured, or that reasoned refusals are used to stall
+rather than to protect the core, would reopen it. The generated
+`amendment-enactment` cases and `tests/pins/stress/core-read-expansively` run
+every route.
+
 No rule in this family derives a personal verdict, loss, deprivation, score,
 floor reduction, vote loss or end of permanent public answerability.
 
