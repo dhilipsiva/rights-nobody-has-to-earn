@@ -1,7 +1,7 @@
 <!-- SPDX-License-Identifier: MIT OR Apache-2.0 -->
 # Lucy's known peers
 
-Last reconciled with Nibli's public GitHub `main`: 2026-09-25.
+Last reconciled with Nibli's public GitHub `main` at `e389933` and this peer's `main` at `5d8abac0`: 2026-09-25.
 
 | Peer | Repository | Lucy's public files |
 |---|---|---|
