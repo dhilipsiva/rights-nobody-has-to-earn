@@ -337,13 +337,10 @@ following a March 2017 order, and Muralidharan, Niehaus and Sukhtankar estimate
 that between one and a half and two million legitimate beneficiaries lost
 access at some point during the reforms, much of the harm coming from how the
 transition was managed. Cards and people are different units.[^jharkhand]
-Santoshi Kumari's case must be stated with the dispute intact. Contemporary
-reporting records that the eleven-year-old died in September 2017 after her
-eligible family's ration card was cancelled and rations were refused. Her
-family and activists attributed the death to hunger; the district
-administration attributed it to malaria. The book leaves the cause of death to
-that dispute; the reported cancellation and refusal are enough to make the
-constitutional question urgent.[^santoshi]
+The family whose case opens this book was among those whose card was
+cancelled. Under this design a failed match stops nothing that personhood alone
+grounds, and a service may not turn a disputed identity into a reason to
+withhold the floor.
 
 The joint's trade-offs are between price and barrier, and between speed and
 review. Separate attesters, a responding office, an alternate, public reasons
@@ -567,13 +564,6 @@ each failure.
     Evidence from India*](https://doi.org/10.1162/rest_a_01296),
     *Review of Economics and Statistics* 107(2), pp. 372–392 (2025),
     abstract, also [distributed by the publisher through RePEc](https://ideas.repec.org/a/tpr/restat/v107y2025i2p372-392.html).
-
-[^santoshi]: [Contemporaneous reporting in *Scroll*](https://scroll.in/article/854225/denied-food-because-she-did-not-have-aadhaar-linked-ration-card-jharkhand-girl-dies-of-starvation)
-    (Aarefa Johari, 16 October 2017) records the family's account and the
-    cancellation; [Jaideep Deogharia's report in *The Times of India*](https://timesofindia.indiatimes.com/city/ranchi/11-year-old-dies-activists-cry-hunger-jharkhand-government-says-malaria/articleshow/61110050.cms)
-    (17 October 2017), opening paragraphs, quotes the deputy commissioner's
-    malaria explanation. This is reported testimony, not a medical
-    finding made by this book.
 
 [^cybersyn]: Eden Medina, [*Cybernetic Revolutionaries: Technology and
     Politics in Allende's Chile*](https://mitpress.mit.edu/9780262525961/cybernetic-revolutionaries/)

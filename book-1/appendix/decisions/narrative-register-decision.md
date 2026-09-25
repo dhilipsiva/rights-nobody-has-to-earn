@@ -13,9 +13,8 @@
 
 The author ruled on the revision tracker's reserved questions on 2026-09-24;
 `CLAUDE.md` records all nine under *The revision rulings D1–D9*. Two bear on
-this decision. Items 53–59 implemented both for the chapters and every Part;
-item 60 brings the documented case into the opening. Until it lands, the
-opening's channel below describes the edition.
+this decision. Items 53–60 implemented both, for the chapters, every Part
+and the opening.
 
 **D2 — an argument section in every derived chapter.** Each derived chapter
 keeps its pinned, flat account and ends with one labelled, first-person argument
@@ -1293,3 +1292,13 @@ on which they also differ, is omitted.
 
 The hypothetical kitchen paragraph is unchanged. The exact prose is
 `session-drafted, author-approved under delegated approval (2026-09-13)`.
+
+## The opening's documented case — item 60, 2026-09-25
+
+The opening note now begins on Santoshi Kumari's case, as ruling D3 directs. It
+states the order of cancellation, refused rations and her death, and keeps the
+dispute over the cause of death intact, the family's account beside the
+district administration's. Part V's capture joint keeps the Jharkhand
+cancellation evidence and points to the opening for her case. No inner life is
+attributed to anyone named. The exact prose is `session-drafted,
+author-approved under delegated approval (2026-09-13)`.

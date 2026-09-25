@@ -218,34 +218,13 @@ unimplemented until the items named here land.
 
 ## Ordered revision backlog
 
-Work in this order: items 60–63 carry the rewrite under the ratified rulings;
+Work in this order: items 61–63 carry the rewrite under the ratified rulings;
 item 64 finishes production, 65 closes the revision, and 66 is optional.
-Numbering continues from items 01–33, which `CLAUDE.md` records; items 34–59
+Numbering continues from items 01–33, which `CLAUDE.md` records; items 34–60
 and 67–72 are complete and recorded there too. Chapter numbers refer to the
 [current reading sequence](book-1/contents.json), which item 53 made the plan's
 §4.2 table; the plan's own §14 punch list uses the earlier numbers, which
 `tools/maps/2026-09-25-restructure.json` maps to these.
-
-### Structure and rewrite
-
-- [ ] **60. Rewrite the opening.**
-
-  **Scope:** the opening note and the front matter; plan §4.2, §8.5 and §11;
-  rulings D1, D3 and D7.
-
-  Keep what precedes Chapter 1 to five pages or fewer. Open with Santoshi
-  Kumari's case, the dispute over her death intact (D3). Then give the question
-  and thesis, Nell and the prisoner, the three distinctions stated once (record
-  and world, entitlement and delivery, conclusion and event), the general limits
-  (item 52), what the book claims and what it does not, its contributions, and
-  how to read it. The first page carries ruling D1's promise, and the opening is
-  written for the serious non-specialist. Make the statement of AI assistance
-  specific: which parts were drafted, edited, coded or tested with it, and how
-  the outputs were checked. Disclose that the constitution, pins and engine
-  share a maintainer. The reference material is at the back (item 53).
-
-  **Done when:** Chapter 1 begins within five pages, the opening reads without
-  the glossary, and it promises neither operation nor proof.
 
 ### Appendices, companion and production
 

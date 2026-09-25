@@ -71,6 +71,23 @@ acceptance comes last as this decision's §6 required; the pen strand's
 persisting clearance and custody facts precede the other two and change none of
 their verdicts. The map is `tools/maps/2026-09-25-restructure.json`.
 
+## The opening rewritten — item 60, 2026-09-25
+
+Ruling D1's promise now opens the opening note, beneath its title, so it is the
+first thing a reader meets after the epigraph; the subtitle and the back cover
+wait for item 64. The note is written for the serious non-specialist. It opens
+on Santoshi Kumari's case (ruling D3), with the dispute over her death intact,
+then gives the question and thesis, the child and the prisoner, the three
+distinctions stated once with the operation limit beside them, what the book
+claims and does not, its contributions in outline with Part V named for the
+rest, the channels in which the author speaks, a statement of AI assistance
+naming what was drafted, written and checked with it and how, the shared
+maintainer of the constitution, its tests and the engine, and how to read the
+book. In the review PDF the epigraph and the note take four pages, and Chapter 1
+begins after Part I's opening case, within the five pages ruling D7 allows
+before it. The exact prose is `session-drafted, author-approved under delegated
+approval (2026-09-13)`.
+
 ## Choices before the institutional detail — item 25, 2026-09-21
 
 The exact current [opening note](../../00-opening-note.md), its argument map

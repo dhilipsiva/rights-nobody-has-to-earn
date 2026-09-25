@@ -27,7 +27,14 @@ use std::collections::BTreeSet;
 fn argued_text(context: &Context) -> String {
     let contents = contents::Contents::load(context).expect("manifest");
     let mut text = String::new();
-    for path in contents.part_v().expect("Part V").into_iter().chain(contents.openers()) {
+    // Ruling D3 lets documented cases appear in the opening note, the Part
+    // openers and the argument sections as well as Part V, so all of them are
+    // argued text here.
+    let opening = std::iter::once("book-1/00-opening-note.md".to_owned());
+    for path in opening
+        .chain(contents.part_v().expect("Part V"))
+        .chain(contents.openers())
+    {
         text.push_str(&context.read(&path).expect("argued input"));
         text.push('\n');
     }
@@ -50,7 +57,17 @@ fn argued_text(context: &Context) -> String {
 /// leans on it. One source may carry several figures — Tanzania's relocation
 /// count and Mondragon's headcount are not one claim each — so the rows are
 /// keyed by case, not by entry.
-const TRACED: [(&str, &str, &str); 177] = [
+const TRACED: [(&str, &str, &str); 179] = [
+    (
+        "the Jharkhand order in the opening",
+        "dreze-2017-cancelled-cards",
+        "linked to Aadhaar, the national biometric identity number",
+    ),
+    (
+        "the family's account in the opening",
+        "santoshi-kumari-2017",
+        "died asking for rice",
+    ),
     (
         "the Part V opening case",
         "grootboom-2008-death-mail-and-guardian",

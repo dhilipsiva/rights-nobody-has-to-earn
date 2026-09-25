@@ -19,11 +19,10 @@ the labelled opening note, Part V's argument and evidence, and the optional
 method part, Book 1's claims derive from that constitution. The reader chapters
 remain jargon-free. Generated reports and prose do not override the formal source.
 
-**Ratified 2026-09-24 and implemented for every Part (items 54–59):** each
-derived chapter also closes with one labelled argument section, a documented
-case opens each Part, and Part V is a synthesis followed by *Where This Could
-Fail* (D2, D3 and D7 of *The revision rulings D1–D9* below). The opening's
-documented case waits for item 60.
+**Ratified 2026-09-24 and implemented (items 53–60):** each derived chapter
+also closes with one labelled argument section, a documented case opens the
+book and each Part, and Part V is a synthesis followed by *Where This Could
+Fail* (D2, D3 and D7 of *The revision rulings D1–D9* below).
 
 Book 2 owns operation and transition within a declared reference envelope:
 staffing, costs, resources, technology, workflows, capacity, and empirical
@@ -133,6 +132,45 @@ reinstate the retired tooling or workflow.
 
 Grouped by kind. Dates in each heading are the ratification dates; a ruling
 that was later implemented or narrowed carries that supersession inline.
+
+### Item 60 — the opening rewritten, 2026-09-25
+
+The opening note now begins with ruling D1's promise beneath its title and then
+Santoshi Kumari's case (ruling D3): the Jharkhand order of March 2017 cancelling
+ration cards not linked to Aadhaar, her family's cancelled card and refused
+rations, and her death at eleven in September 2017, with the family's account
+and the district administration's malaria explanation both kept. It gives the
+question and thesis, the choices in one sentence with the chapters' arguments
+named for the rest, the child and the prisoner, *An Ordinary Week* as the
+answer to the extreme-case objection, and the three distinctions stated once —
+record and world, entitlement and delivery, conclusion and event — with the
+operation limit beside them, replacing item 52's four limits. It says what the
+book claims (the consequences its tests check, and choices argued against their
+alternatives) and what it does not (operation, affordability, justice from
+consistency, proof), names the contributions in outline, and states the AI
+assistance specifically: the rulings are the author's; an AI assistant drafted
+the chapters, arguments, Part V, the method, the note and the epigraph's
+rendering, approved by the author, much of it under the standing delegation;
+the same sessions wrote the formal rules, tests, generators and companion and
+checked the sources; the constitution, tests and Nibli share a maintainer; and
+the mechanical checks are listed with their limit, that none shows the
+arguments are good and no independent expert has reviewed the whole. Part V's
+capture joint keeps the Jharkhand evidence and points to the opening for her
+case.
+
+The note runs to about 1,190 words and its negation falls from 20.2 to 18.1
+per 1,000. The review PDF, rebuilt with the cached Chromium and the NSS, NSPR
+and ALSA libraries from the nix store on its library path, has 238 pages: the
+epigraph and the note take four, and Chapter 1 begins after Part I's opening
+case, within ruling D7's five. The claim-discipline bindings now search the
+opening note too, since ruling D3 admits cases there, and two new rows bind the
+Jharkhand order and the family's account (179). The reading-order and
+narrative-register decisions record the change. The exact prose is
+`session-drafted, author-approved under delegated approval (2026-09-13)`.
+
+No rule, pin or suite changes, so item 58's complete run on the same formal
+inputs stands. All 145 authoring development tests pass, with five declared
+ignored, as do the sixteen prose-lint unit tests and the prose check.
 
 ### Item 59 — Part V as synthesis, and where the design could fail, 2026-09-25
 
@@ -1546,7 +1584,8 @@ in plain language, with every rule published so you can test it."* This
 supersedes the subtitle in the title ruling, including its "catches its own
 failures" clause; that ruling's warning about dropping the clause was put to the
 author, who chose the new subtitle knowing it. The title is unchanged. Items 60
-and 64 implement it.
+and 64 implement it. **Implemented in part 2026-09-25 (item 60):** the promise opens the
+opening note; the subtitle, the back cover and the metadata wait for item 64.
 
 **D2 — an argument section in every derived chapter.** Each derived chapter
 keeps its pinned, flat account and then ends with one labelled, first-person
