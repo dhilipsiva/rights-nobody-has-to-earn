@@ -722,6 +722,19 @@ pin in a generated family, or as a change another rule makes unobservable,
 with the reason. A survivor means that no selected pin noticed the change, not
 that no pin could; a sample is not a census.
 
+Another replays the rules in a different engine. `tools/second_engine.py`
+translates the constitution into the input language of clingo, an
+established answer set solver, and replays the cases for standing, the floor,
+delivery, custody and the shield through it, comparing each answer with the
+verdict the pin records. It compared 129 cases and 1,673 queries, and every
+answer agreed. The [report](source/measurements/second-engine-report.md)
+lists the cases and what the translation leaves out: refusals, scoped
+acceptances, shell checks and contradiction scans. A reimplementation made
+inside this project is a cross-check, not an independent reproduction: the
+same author chose the translation, and a misreading shared by both engines
+would pass both. A reimplementation by someone else, from the published
+source, would be stronger evidence and is welcome.
+
 ## A pass can include a reproduced defect
 
 An expected answer is not necessarily a desirable outcome. One amendment

@@ -134,6 +134,38 @@ reinstate the retired tooling or workflow.
 Grouped by kind. Dates in each heading are the ratification dates; a ruling
 that was later implemented or narrowed carries that supersession inline.
 
+### Item 50 — the core replayed in a second engine, 2026-09-25
+
+`tools/second_engine.py` translates the constitution statement by statement
+into clingo's input language (9,575 clingo statements after a disjunctive
+body becomes one rule per disjunct) and replays selected cases through clingo
+5.8.2 from PyPI: constants become quoted strings, `$variables` clingo
+variables, `event { P() }` a constant, `~` negation as failure and the
+equalities `=` and `!=`; `entitled(every person, …)` becomes a rule from
+`person`; `admits` and `derived_only` are dropped because clingo refuses no
+input. Each case is grounded once, and every fact and accepted rule its
+fixtures and pins assert is guarded by an external atom of its own, switched
+on at its position, so each query sees exactly what was asserted before it.
+Refusals, scoped acceptances, shell checks and contradiction scans are not
+compared, and only live-source cases run.
+
+The comparison covers standing, the floor, delivery, custody and the shield:
+the chapter pins for Chapters 1, 2, 4, 5, 24 and 27–29, the floor, standing
+and delivery source pins, every live custody, placement and delivery case,
+and the six stress cases — 129 cases and 1,673 queries.
+Every answer agrees with the verdict its pin records. The one class of
+difference found on the way was the translator's own: declaring an asserted
+fact itself external fails silently in clingo when a rule can also derive
+the atom, so a person asserted in a custody case and also derivable from
+custody went missing; guarding each assertion with its own external atom
+fixed it, and the run was repeated from the start. The results and report are
+in `book-1/source/measurements/`, and the method's "Testing the tests" states
+the result with its limits. A reimplementation made inside this project is a
+cross-check, not an independent reproduction: the same author chose the
+translation, and a misreading shared by both engines would pass both; an
+outside reimplementation remains welcome under item 66. No rule, pin or case
+changes. The authoring development tests pass (141, five declared ignored).
+
 ### Item 49 — mutation testing over the rules, 2026-09-25
 
 `tools/mutation.py` changes one rule of the live constitution in one way —

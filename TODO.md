@@ -217,28 +217,13 @@ unimplemented until the items named here land.
 
 ## Ordered revision backlog
 
-Work in this order: items 50–52, which measure, repair and prepare; items
+Work in this order: items 51–52, which repair and prepare; items
 53–63 carry the structure and the rewrite under the ratified rulings; item 64
 finishes production, 65 closes the revision, and 66 is optional. Numbering
-continues from items 01–33, which `CLAUDE.md` records; items 34–49 and 67–72
+continues from items 01–33, which `CLAUDE.md` records; items 34–50 and 67–72
 are complete and recorded there too. Chapter numbers refer to the [current
 reading sequence](book-1/contents.json), which the plan also uses, until item 53
 changes it.
-
-### The formal layer
-
-- [ ] **50. Reproduce the core in a second engine.**
-
-  **Scope:** standing, the floor, delivery, custody and the shield; plan
-  §10.5.
-
-  Reimplement that subset in a mainstream engine such as Soufflé or clingo,
-  compare verdicts on shared fixtures, and publish every difference with its
-  cause. A reimplementation made inside this project is a cross-check, not an
-  independent reproduction; say so, and welcome an outside one under item 66.
-
-  **Done when:** the subset runs in the second engine, each difference is
-  fixed or explained, and the method reports the result with its limits.
 
 ### Prose that does not wait for the structure
 

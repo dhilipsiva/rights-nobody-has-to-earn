@@ -1,0 +1,780 @@
+{
+  "clingo": "5.8.2",
+  "translated_statements": 9575,
+  "cases": {
+    "book-1/source/rights-floor": {
+      "queries": 81,
+      "solves": 81,
+      "seconds": 58.7,
+      "differences": []
+    },
+    "book-1/24-the-shield": {
+      "queries": 59,
+      "solves": 59,
+      "seconds": 57.0,
+      "differences": []
+    },
+    "book-1/05-whether-it-arrived": {
+      "queries": 20,
+      "solves": 20,
+      "seconds": 55.6,
+      "differences": []
+    },
+    "book-1/source/universal-standing": {
+      "queries": 32,
+      "solves": 32,
+      "seconds": 57.0,
+      "differences": []
+    },
+    "placement/confined-notsevere-nofamily-home": {
+      "queries": 14,
+      "solves": 14,
+      "seconds": 54.1,
+      "differences": []
+    },
+    "placement/confined-severe-nofamily-nohome": {
+      "queries": 14,
+      "solves": 14,
+      "seconds": 53.8,
+      "differences": []
+    },
+    "placement/confined-severe-family-home": {
+      "queries": 14,
+      "solves": 14,
+      "seconds": 55.2,
+      "differences": []
+    },
+    "placement/free-notsevere-family-nohome": {
+      "queries": 14,
+      "solves": 14,
+      "seconds": 55.8,
+      "differences": []
+    },
+    "placement/free-severe-nofamily-home": {
+      "queries": 14,
+      "solves": 14,
+      "seconds": 55.9,
+      "differences": []
+    },
+    "placement/registered-notsevere-nofamily-nohome": {
+      "queries": 14,
+      "solves": 14,
+      "seconds": 55.8,
+      "differences": []
+    },
+    "placement/registered-notsevere-family-home": {
+      "queries": 14,
+      "solves": 14,
+      "seconds": 56.9,
+      "differences": []
+    },
+    "placement/registered-severe-family-nohome": {
+      "queries": 14,
+      "solves": 14,
+      "seconds": 56.2,
+      "differences": []
+    },
+    "delivery/received-outside-custody": {
+      "queries": 10,
+      "solves": 10,
+      "seconds": 55.8,
+      "differences": []
+    },
+    "custody/positive-isolation-findings": {
+      "queries": 44,
+      "solves": 44,
+      "seconds": 51.8,
+      "differences": []
+    },
+    "custody/adjudication": {
+      "queries": 25,
+      "solves": 25,
+      "seconds": 55.9,
+      "differences": []
+    },
+    "custody/merits-missing-CustodyOffenceScope": {
+      "queries": 5,
+      "solves": 5,
+      "seconds": 56.0,
+      "differences": []
+    },
+    "custody/merits-missing-CustodyProsecutorScope": {
+      "queries": 5,
+      "solves": 5,
+      "seconds": 55.4,
+      "differences": []
+    },
+    "custody/merits-missing-CustodyConductScope": {
+      "queries": 5,
+      "solves": 5,
+      "seconds": 55.6,
+      "differences": []
+    },
+    "custody/merits-missing-CustodyDefencesScope": {
+      "queries": 5,
+      "solves": 5,
+      "seconds": 60.1,
+      "differences": []
+    },
+    "custody/placement-missing-CustodyPlacementAvailabilityScope": {
+      "queries": 5,
+      "solves": 5,
+      "seconds": 55.9,
+      "differences": []
+    },
+    "custody/placement-missing-CustodyPlacementPlaceScope": {
+      "queries": 5,
+      "solves": 5,
+      "seconds": 58.9,
+      "differences": []
+    },
+    "custody/placement-missing-CustodyPlacementEpochScope": {
+      "queries": 5,
+      "solves": 5,
+      "seconds": 55.7,
+      "differences": []
+    },
+    "custody/intake-missing-CustodyIntakeReconciliationScope": {
+      "queries": 4,
+      "solves": 4,
+      "seconds": 55.2,
+      "differences": []
+    },
+    "custody/intake-missing-CustodyIntakeCaseScope": {
+      "queries": 4,
+      "solves": 4,
+      "seconds": 54.6,
+      "differences": []
+    },
+    "custody/merits-no-authority": {
+      "queries": 2,
+      "solves": 2,
+      "seconds": 55.0,
+      "differences": []
+    },
+    "custody/merits-victim-reviewer": {
+      "queries": 2,
+      "solves": 2,
+      "seconds": 54.1,
+      "differences": []
+    },
+    "custody/merits-conflicting-proof": {
+      "queries": 2,
+      "solves": 2,
+      "seconds": 54.7,
+      "differences": []
+    },
+    "custody/relief-SentenceSatisfied": {
+      "queries": 6,
+      "solves": 6,
+      "seconds": 54.8,
+      "differences": []
+    },
+    "custody/relief-NecessityEstablished": {
+      "queries": 6,
+      "solves": 6,
+      "seconds": 59.1,
+      "differences": []
+    },
+    "custody/relief-IdentityOrOffenceNotProved": {
+      "queries": 6,
+      "solves": 6,
+      "seconds": 58.9,
+      "differences": []
+    },
+    "custody/relief-party-subject-actor": {
+      "queries": 2,
+      "solves": 2,
+      "seconds": 57.7,
+      "differences": []
+    },
+    "custody/relief-party-victim-reviewer": {
+      "queries": 2,
+      "solves": 2,
+      "seconds": 55.7,
+      "differences": []
+    },
+    "custody/relief-party-trial-adjudicator-actor": {
+      "queries": 2,
+      "solves": 2,
+      "seconds": 58.6,
+      "differences": []
+    },
+    "custody/relief-party-trial-reviewer-reviewer": {
+      "queries": 2,
+      "solves": 2,
+      "seconds": 58.9,
+      "differences": []
+    },
+    "custody/relief-binding-wrong-subject": {
+      "queries": 2,
+      "solves": 2,
+      "seconds": 54.5,
+      "differences": []
+    },
+    "custody/relief-binding-wrong-case": {
+      "queries": 2,
+      "solves": 2,
+      "seconds": 55.3,
+      "differences": []
+    },
+    "custody/relief-binding-no-authority": {
+      "queries": 2,
+      "solves": 2,
+      "seconds": 55.3,
+      "differences": []
+    },
+    "custody/filing-subject-binding": {
+      "queries": 5,
+      "solves": 5,
+      "seconds": 58.4,
+      "differences": []
+    },
+    "custody/placement-self-review": {
+      "queries": 4,
+      "solves": 4,
+      "seconds": 57.2,
+      "differences": []
+    },
+    "custody/authority-lapse": {
+      "queries": 12,
+      "solves": 12,
+      "seconds": 56.0,
+      "differences": []
+    },
+    "custody/closed-conclusions": {
+      "queries": 0,
+      "solves": 0,
+      "seconds": 55.9,
+      "differences": []
+    },
+    "stress/captured-appointments": {
+      "queries": 8,
+      "solves": 8,
+      "seconds": 51.4,
+      "differences": []
+    },
+    "stress/agency-and-contractor-blame": {
+      "queries": 16,
+      "solves": 16,
+      "seconds": 55.1,
+      "differences": []
+    },
+    "book-1/01-the-child-with-nobody": {
+      "queries": 60,
+      "solves": 60,
+      "seconds": 58.3,
+      "differences": []
+    },
+    "book-1/27-a-prisoner-is-a-person": {
+      "queries": 36,
+      "solves": 36,
+      "seconds": 56.5,
+      "differences": []
+    },
+    "book-1/28-where-people-are-put": {
+      "queries": 73,
+      "solves": 73,
+      "seconds": 59.4,
+      "differences": []
+    },
+    "book-1/source/delivery-receipt": {
+      "queries": 36,
+      "solves": 36,
+      "seconds": 53.3,
+      "differences": []
+    },
+    "placement/confined-notsevere-family-nohome": {
+      "queries": 15,
+      "solves": 15,
+      "seconds": 54.4,
+      "differences": []
+    },
+    "placement/confined-severe-nofamily-home": {
+      "queries": 14,
+      "solves": 14,
+      "seconds": 53.8,
+      "differences": []
+    },
+    "placement/free-notsevere-nofamily-nohome": {
+      "queries": 14,
+      "solves": 14,
+      "seconds": 55.5,
+      "differences": []
+    },
+    "placement/free-notsevere-family-home": {
+      "queries": 14,
+      "solves": 14,
+      "seconds": 56.0,
+      "differences": []
+    },
+    "placement/free-severe-family-nohome": {
+      "queries": 14,
+      "solves": 14,
+      "seconds": 55.6,
+      "differences": []
+    },
+    "placement/registered-notsevere-nofamily-home": {
+      "queries": 14,
+      "solves": 14,
+      "seconds": 55.7,
+      "differences": []
+    },
+    "placement/registered-severe-nofamily-nohome": {
+      "queries": 14,
+      "solves": 14,
+      "seconds": 56.9,
+      "differences": []
+    },
+    "placement/registered-severe-family-home": {
+      "queries": 14,
+      "solves": 14,
+      "seconds": 56.0,
+      "differences": []
+    },
+    "delivery/provider-cannot-witness-itself": {
+      "queries": 3,
+      "solves": 3,
+      "seconds": 55.2,
+      "differences": []
+    },
+    "custody/raw-flags": {
+      "queries": 11,
+      "solves": 11,
+      "seconds": 54.7,
+      "differences": []
+    },
+    "custody/merits-missing-CustodySubjectScope": {
+      "queries": 5,
+      "solves": 5,
+      "seconds": 55.6,
+      "differences": []
+    },
+    "custody/merits-missing-CustodyEvidenceScope": {
+      "queries": 5,
+      "solves": 5,
+      "seconds": 55.9,
+      "differences": []
+    },
+    "custody/merits-missing-CustodyPriorLawScope": {
+      "queries": 5,
+      "solves": 5,
+      "seconds": 55.3,
+      "differences": []
+    },
+    "custody/merits-missing-CustodyAdmissibilityScope": {
+      "queries": 5,
+      "solves": 5,
+      "seconds": 55.8,
+      "differences": []
+    },
+    "custody/merits-missing-CustodySentenceScope": {
+      "queries": 5,
+      "solves": 5,
+      "seconds": 60.7,
+      "differences": []
+    },
+    "custody/placement-missing-CustodyPlacementProcedureScope": {
+      "queries": 5,
+      "solves": 5,
+      "seconds": 56.0,
+      "differences": []
+    },
+    "custody/placement-missing-CustodyPlacementLeaseScope": {
+      "queries": 5,
+      "solves": 5,
+      "seconds": 59.0,
+      "differences": []
+    },
+    "custody/placement-missing-CustodyPlacementAlternativeScope": {
+      "queries": 5,
+      "solves": 5,
+      "seconds": 55.8,
+      "differences": []
+    },
+    "custody/intake-missing-CustodyIntakeProtectionScope": {
+      "queries": 4,
+      "solves": 4,
+      "seconds": 55.2,
+      "differences": []
+    },
+    "custody/intake-missing-CustodyIntakeWindowScope": {
+      "queries": 4,
+      "solves": 4,
+      "seconds": 54.8,
+      "differences": []
+    },
+    "custody/merits-self-review": {
+      "queries": 2,
+      "solves": 2,
+      "seconds": 55.0,
+      "differences": []
+    },
+    "custody/merits-prosecutor-reviewer": {
+      "queries": 2,
+      "solves": 2,
+      "seconds": 54.2,
+      "differences": []
+    },
+    "custody/relief-FinalAcquittal": {
+      "queries": 6,
+      "solves": 6,
+      "seconds": 54.4,
+      "differences": []
+    },
+    "custody/relief-SelfDefenceEstablished": {
+      "queries": 6,
+      "solves": 6,
+      "seconds": 55.0,
+      "differences": []
+    },
+    "custody/relief-DuressEstablished": {
+      "queries": 6,
+      "solves": 6,
+      "seconds": 60.3,
+      "differences": []
+    },
+    "custody/relief-BarOnRepeatedProceedings": {
+      "queries": 6,
+      "solves": 6,
+      "seconds": 58.9,
+      "differences": []
+    },
+    "custody/relief-party-subject-reviewer": {
+      "queries": 2,
+      "solves": 2,
+      "seconds": 57.1,
+      "differences": []
+    },
+    "custody/relief-party-prosecutor-actor": {
+      "queries": 2,
+      "solves": 2,
+      "seconds": 57.8,
+      "differences": []
+    },
+    "custody/relief-party-trial-adjudicator-reviewer": {
+      "queries": 2,
+      "solves": 2,
+      "seconds": 58.3,
+      "differences": []
+    },
+    "custody/relief-party-self-review-actor": {
+      "queries": 2,
+      "solves": 2,
+      "seconds": 56.4,
+      "differences": []
+    },
+    "custody/relief-binding-wrong-incident": {
+      "queries": 2,
+      "solves": 2,
+      "seconds": 54.6,
+      "differences": []
+    },
+    "custody/relief-binding-wrong-evidence": {
+      "queries": 2,
+      "solves": 2,
+      "seconds": 55.4,
+      "differences": []
+    },
+    "custody/relief-binding-conflict": {
+      "queries": 2,
+      "solves": 2,
+      "seconds": 55.2,
+      "differences": []
+    },
+    "custody/placement-absent-place": {
+      "queries": 4,
+      "solves": 4,
+      "seconds": 58.5,
+      "differences": []
+    },
+    "custody/placement-unknown-kind": {
+      "queries": 4,
+      "solves": 4,
+      "seconds": 57.3,
+      "differences": []
+    },
+    "custody/placement-nonsevere-in-highsec": {
+      "queries": 4,
+      "solves": 4,
+      "seconds": 56.4,
+      "differences": []
+    },
+    "placement/independent-shelter-control": {
+      "queries": 4,
+      "solves": 4,
+      "seconds": 54.7,
+      "differences": []
+    },
+    "stress/election-cannot-be-held": {
+      "queries": 22,
+      "solves": 22,
+      "seconds": 47.6,
+      "differences": []
+    },
+    "stress/core-read-expansively": {
+      "queries": 15,
+      "solves": 15,
+      "seconds": 48.7,
+      "differences": []
+    },
+    "book-1/02-who-counts": {
+      "queries": 29,
+      "solves": 29,
+      "seconds": 57.4,
+      "differences": []
+    },
+    "book-1/04-what-you-are-owed": {
+      "queries": 83,
+      "solves": 83,
+      "seconds": 57.8,
+      "differences": []
+    },
+    "book-1/29-the-one-thing-taken": {
+      "queries": 41,
+      "solves": 41,
+      "seconds": 56.0,
+      "differences": []
+    },
+    "placement/confined-notsevere-nofamily-nohome": {
+      "queries": 15,
+      "solves": 15,
+      "seconds": 54.1,
+      "differences": []
+    },
+    "placement/confined-notsevere-family-home": {
+      "queries": 14,
+      "solves": 14,
+      "seconds": 54.2,
+      "differences": []
+    },
+    "placement/confined-severe-family-nohome": {
+      "queries": 14,
+      "solves": 14,
+      "seconds": 53.8,
+      "differences": []
+    },
+    "placement/free-notsevere-nofamily-home": {
+      "queries": 14,
+      "solves": 14,
+      "seconds": 56.1,
+      "differences": []
+    },
+    "placement/free-severe-nofamily-nohome": {
+      "queries": 14,
+      "solves": 14,
+      "seconds": 55.6,
+      "differences": []
+    },
+    "placement/free-severe-family-home": {
+      "queries": 14,
+      "solves": 14,
+      "seconds": 55.5,
+      "differences": []
+    },
+    "placement/registered-notsevere-family-nohome": {
+      "queries": 14,
+      "solves": 14,
+      "seconds": 55.5,
+      "differences": []
+    },
+    "placement/registered-severe-nofamily-home": {
+      "queries": 14,
+      "solves": 14,
+      "seconds": 56.4,
+      "differences": []
+    },
+    "placement/standing-omitted": {
+      "queries": 1,
+      "solves": 1,
+      "seconds": 55.3,
+      "differences": []
+    },
+    "delivery/no-receipt-no-arrival": {
+      "queries": 13,
+      "solves": 13,
+      "seconds": 55.5,
+      "differences": []
+    },
+    "custody/execution": {
+      "queries": 50,
+      "solves": 50,
+      "seconds": 55.2,
+      "differences": []
+    },
+    "custody/merits-missing-CustodyIncidentScope": {
+      "queries": 5,
+      "solves": 5,
+      "seconds": 55.2,
+      "differences": []
+    },
+    "custody/merits-missing-CustodyVictimScope": {
+      "queries": 5,
+      "solves": 5,
+      "seconds": 55.7,
+      "differences": []
+    },
+    "custody/merits-missing-CustodyProofScope": {
+      "queries": 5,
+      "solves": 5,
+      "seconds": 55.4,
+      "differences": []
+    },
+    "custody/merits-missing-CustodyProcedureScope": {
+      "queries": 5,
+      "solves": 5,
+      "seconds": 55.3,
+      "differences": []
+    },
+    "custody/merits-missing-CustodyFinalityScope": {
+      "queries": 5,
+      "solves": 5,
+      "seconds": 60.4,
+      "differences": []
+    },
+    "custody/placement-missing-CustodyPlacementNecessityScope": {
+      "queries": 5,
+      "solves": 5,
+      "seconds": 55.9,
+      "differences": []
+    },
+    "custody/placement-missing-CustodyPlacementWindowScope": {
+      "queries": 5,
+      "solves": 5,
+      "seconds": 58.5,
+      "differences": []
+    },
+    "custody/intake-missing-CustodyIntakeAccessScope": {
+      "queries": 4,
+      "solves": 4,
+      "seconds": 55.6,
+      "differences": []
+    },
+    "custody/intake-missing-CustodyIntakeSubjectScope": {
+      "queries": 4,
+      "solves": 4,
+      "seconds": 54.8,
+      "differences": []
+    },
+    "custody/intake-missing-CustodyIntakeEpochScope": {
+      "queries": 4,
+      "solves": 4,
+      "seconds": 54.6,
+      "differences": []
+    },
+    "custody/merits-subject-reviewer": {
+      "queries": 2,
+      "solves": 2,
+      "seconds": 54.7,
+      "differences": []
+    },
+    "custody/merits-disqualified-at-decision": {
+      "queries": 2,
+      "solves": 2,
+      "seconds": 54.0,
+      "differences": []
+    },
+    "custody/relief-ConvictionQuashedWithoutRetrial": {
+      "queries": 6,
+      "solves": 6,
+      "seconds": 54.7,
+      "differences": []
+    },
+    "custody/relief-DefenceOfOthersEstablished": {
+      "queries": 6,
+      "solves": 6,
+      "seconds": 54.4,
+      "differences": []
+    },
+    "custody/relief-IncapacityOrAbsentRequiredElementEstablished": {
+      "queries": 6,
+      "solves": 6,
+      "seconds": 58.2,
+      "differences": []
+    },
+    "custody/relief-CourtJurisdictionOrIndependenceDefect": {
+      "queries": 6,
+      "solves": 6,
+      "seconds": 58.0,
+      "differences": []
+    },
+    "custody/relief-party-victim-actor": {
+      "queries": 2,
+      "solves": 2,
+      "seconds": 58.6,
+      "differences": []
+    },
+    "custody/relief-party-prosecutor-reviewer": {
+      "queries": 2,
+      "solves": 2,
+      "seconds": 56.0,
+      "differences": []
+    },
+    "custody/relief-party-trial-reviewer-actor": {
+      "queries": 2,
+      "solves": 2,
+      "seconds": 57.7,
+      "differences": []
+    },
+    "custody/relief-party-self-review-reviewer": {
+      "queries": 2,
+      "solves": 2,
+      "seconds": 58.8,
+      "differences": []
+    },
+    "custody/relief-binding-wrong-offence": {
+      "queries": 2,
+      "solves": 2,
+      "seconds": 54.3,
+      "differences": []
+    },
+    "custody/relief-binding-no-procedure": {
+      "queries": 2,
+      "solves": 2,
+      "seconds": 55.1,
+      "differences": []
+    },
+    "custody/relief-binding-future-order": {
+      "queries": 2,
+      "solves": 2,
+      "seconds": 54.9,
+      "differences": []
+    },
+    "custody/placement-uncredentialed": {
+      "queries": 4,
+      "solves": 4,
+      "seconds": 57.4,
+      "differences": []
+    },
+    "custody/placement-severe-at-home": {
+      "queries": 4,
+      "solves": 4,
+      "seconds": 57.4,
+      "differences": []
+    },
+    "custody/placement-conflicting-place": {
+      "queries": 4,
+      "solves": 4,
+      "seconds": 55.5,
+      "differences": []
+    },
+    "custody/severity-boundary": {
+      "queries": 221,
+      "solves": 221,
+      "seconds": 69.8,
+      "differences": []
+    },
+    "stress/manipulated-urgency": {
+      "queries": 15,
+      "solves": 15,
+      "seconds": 53.4,
+      "differences": []
+    },
+    "stress/never-recorded-person": {
+      "queries": 22,
+      "solves": 22,
+      "seconds": 56.8,
+      "differences": []
+    }
+  }
+}
