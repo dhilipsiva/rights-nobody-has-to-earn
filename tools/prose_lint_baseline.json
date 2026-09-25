@@ -1,7 +1,7 @@
 {
   "book-1/00-opening-note.md": {
-    "negation": 21.5,
-    "jargon": 2.6,
+    "negation": 21.2,
+    "jargon": 2.5,
     "names": 0,
     "disclaimers": 0,
     "banned": 0,
@@ -116,8 +116,35 @@
     "harness": 0,
     "strays": 0
   },
+  "book-1/07-an-ordinary-week.md": {
+    "negation": 2.3,
+    "jargon": 0.0,
+    "names": 2,
+    "disclaimers": 0,
+    "banned": 0,
+    "harness": 0,
+    "strays": 0
+  },
+  "book-1/07-an-ordinary-week.md#argument": {
+    "negation": 12.3,
+    "jargon": 0.0,
+    "names": 0,
+    "disclaimers": 0,
+    "banned": 0,
+    "harness": 0,
+    "strays": 0
+  },
   "book-1/08-what-nobody-has-to-ask-permission-for.md": {
-    "negation": 38.2,
+    "negation": 6.6,
+    "jargon": 0.0,
+    "names": 0,
+    "disclaimers": 0,
+    "banned": 0,
+    "harness": 0,
+    "strays": 0
+  },
+  "book-1/08-what-nobody-has-to-ask-permission-for.md#argument": {
+    "negation": 4.9,
     "jargon": 0.0,
     "names": 0,
     "disclaimers": 0,
@@ -126,17 +153,35 @@
     "strays": 0
   },
   "book-1/09-work-pay-and-contribution.md": {
-    "negation": 35.0,
-    "jargon": 1.4,
-    "names": 15,
+    "negation": 14.9,
+    "jargon": 0.9,
+    "names": 5,
+    "disclaimers": 0,
+    "banned": 0,
+    "harness": 0,
+    "strays": 0
+  },
+  "book-1/09-work-pay-and-contribution.md#argument": {
+    "negation": 7.5,
+    "jargon": 0.0,
+    "names": 0,
     "disclaimers": 0,
     "banned": 0,
     "harness": 0,
     "strays": 0
   },
   "book-1/10-what-money-cannot-buy.md": {
-    "negation": 36.8,
-    "jargon": 2.0,
+    "negation": 8.9,
+    "jargon": 1.8,
+    "names": 0,
+    "disclaimers": 0,
+    "banned": 0,
+    "harness": 0,
+    "strays": 0
+  },
+  "book-1/10-what-money-cannot-buy.md#argument": {
+    "negation": 6.3,
+    "jargon": 0.0,
     "names": 0,
     "disclaimers": 0,
     "banned": 0,
@@ -144,16 +189,25 @@
     "strays": 0
   },
   "book-1/11-the-same-route-for-everyone.md": {
-    "negation": 27.6,
-    "jargon": 4.6,
+    "negation": 5.9,
+    "jargon": 1.3,
     "names": 1,
     "disclaimers": 0,
     "banned": 0,
     "harness": 0,
     "strays": 0
   },
+  "book-1/11-the-same-route-for-everyone.md#argument": {
+    "negation": 6.9,
+    "jargon": 0.0,
+    "names": 0,
+    "disclaimers": 0,
+    "banned": 0,
+    "harness": 0,
+    "strays": 0
+  },
   "book-1/12-a-place-in-which-life-remains-possible.md": {
-    "negation": 33.4,
+    "negation": 13.5,
     "jargon": 0.6,
     "names": 0,
     "disclaimers": 0,
@@ -161,8 +215,26 @@
     "harness": 0,
     "strays": 0
   },
+  "book-1/12-a-place-in-which-life-remains-possible.md#argument": {
+    "negation": 5.3,
+    "jargon": 0.0,
+    "names": 0,
+    "disclaimers": 0,
+    "banned": 0,
+    "harness": 0,
+    "strays": 0
+  },
   "book-1/13-creatures-without-a-ballot.md": {
-    "negation": 34.7,
+    "negation": 7.7,
+    "jargon": 0.0,
+    "names": 0,
+    "disclaimers": 0,
+    "banned": 0,
+    "harness": 0,
+    "strays": 0
+  },
+  "book-1/13-creatures-without-a-ballot.md#argument": {
+    "negation": 3.7,
     "jargon": 0.0,
     "names": 0,
     "disclaimers": 0,
@@ -171,7 +243,7 @@
     "strays": 0
   },
   "book-1/14-holding-a-role-in-somebodys-life.md": {
-    "negation": 34.7,
+    "negation": 12.6,
     "jargon": 0.0,
     "names": 3,
     "disclaimers": 0,
@@ -179,9 +251,27 @@
     "harness": 0,
     "strays": 0
   },
+  "book-1/14-holding-a-role-in-somebodys-life.md#argument": {
+    "negation": 13.0,
+    "jargon": 0.0,
+    "names": 0,
+    "disclaimers": 0,
+    "banned": 0,
+    "harness": 0,
+    "strays": 0
+  },
   "book-1/15-arriving-and-belonging.md": {
-    "negation": 36.0,
+    "negation": 6.9,
     "jargon": 0.8,
+    "names": 0,
+    "disclaimers": 0,
+    "banned": 0,
+    "harness": 0,
+    "strays": 0
+  },
+  "book-1/15-arriving-and-belonging.md#argument": {
+    "negation": 10.7,
+    "jargon": 1.2,
     "names": 0,
     "disclaimers": 0,
     "banned": 0,
@@ -332,10 +422,19 @@
     "harness": 0,
     "strays": 0
   },
+  "book-1/part-2-unprecedented-injustice.md": {
+    "negation": 15.3,
+    "jargon": 0.0,
+    "names": 0,
+    "disclaimers": 0,
+    "banned": 0,
+    "harness": 0,
+    "strays": 0
+  },
   "book-1/reference.md": {
-    "negation": 16.8,
+    "negation": 16.7,
     "jargon": 0.6,
-    "names": 43,
+    "names": 39,
     "disclaimers": 1,
     "banned": 0,
     "harness": 0,

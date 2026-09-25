@@ -22,8 +22,8 @@ remain jargon-free. Generated reports and prose do not override the formal sourc
 **Ratified 2026-09-24, not yet implemented:** each derived chapter will also
 close with one labelled argument section, and documented cases will also appear
 in the opening and at the head of each Part (D2 and D3 of *The revision rulings
-D1–D9* below). Part I carries both since item 54; until items 55–57 land,
-the paragraph above describes the other Parts.
+D1–D9* below). Parts I and II carry both since items 54 and 55; until items
+56 and 57 land, the paragraph above describes Parts III and IV.
 
 Book 2 owns operation and transition within a declared reference envelope:
 staffing, costs, resources, technology, workflows, capacity, and empirical
@@ -133,6 +133,64 @@ reinstate the retired tooling or workflow.
 
 Grouped by kind. Dates in each heading are the ratification dates; a ruling
 that was later implemented or narrowed carries that supersession inline.
+
+### Item 55 — Part II in the ruled shape, and an ordinary week, 2026-09-25
+
+Part II now carries rulings D2 and D3 as Part I does. Its labelled opening
+case, *Unprecedented Injustice* (`book-1/part-2-unprecedented-injustice.md`),
+tells the Dutch childcare-benefits affair from the parliamentary inquiry's
+report: parents claiming a childcare allowance were dealt with as a group,
+under an all-or-nothing approach and a rigid law with no hardship clause, and
+wrongly branded intentional fraudsters, with the legislature and the
+administrative courts sharing the reproach. Chapter 2's argument now points to
+it rather than repeating it. Chapters 8–15 each close with an argument
+section: a closed list of harm grounds against an open proportionality test
+(8); work that never touches the floor against reciprocity-based conditionality
+(9); conditional property and public finance without a debt ceiling against
+the debt brake (10); discrimination by effect and measures that end against
+ground-blind equality (11); non-substitutable axes and a Guardian without a
+veto against discounted cost-benefit (12); animals as protected subjects
+against a welfare regime (13, stating ruling D9's core as enacted and leaving
+its definitions and the jallikattu case to item 58); support before
+substitution against best-interests decision-making (14); and residence-based
+membership and the firewall against a state's right to exclude (15). Derived
+negation in those eight chapters falls from 27.6–38.2 to 5.9–14.9 per 1,000
+words, and Chapter 9 names five people where it named fifteen, stating once
+that the constitution holds no recognition status.
+
+Chapter 7, *An Ordinary Week*, is new. Selin, present in the jurisdiction with
+adulthood evidence, is followed through work, a rented home, a clinic, a child
+at school, an election, a dispute with a landlord and a police stop; each fact
+enters with "Suppose" and each conclusion is pinned, in a new live case with
+no fixtures (59 pins). Personhood, the floor, free movement and the ballot
+follow before the week's business begins. A wage needs an attester other than
+the employer, care a witness other than the clinic, learning a recorded
+teaching and hearing, and a review request the office's authority and no
+landlord's agreement; a stop recorded as identification alone authorises no
+search. Where a domain's full record is too large to reproduce — a complete
+search order, eviction procedure, relief after review — the chapter points to
+the chapter that pins it. Chapter 7 joins `CHILD_SLOT_EXEMPT` (20).
+
+The boundary detector found three families left with no stated limit once the
+negations were rewritten. Chapters 8 and 9 each gained a chapter-specific
+limit — a limit forbids an act, and a breach needs its own evidence; a
+supplement names no amount — and Chapter 11's limits record moved to the
+accommodation family it describes. Chapter 3's sentence implying a recognition
+status now says a contribution earns none. Fifty new bindings tie the
+arguments' sources and figures to the registry (128), and nineteen registry
+sources now write their DOI as `doi:`, the form the locator test reads. The
+coverage ledger holds 258 passages; the reference contents and case index
+follow, describing by role the Chapter 9 people the chapter no longer names;
+and Selin and Teo join the lint's home table. The exact prose is
+`session-drafted, author-approved under delegated approval (2026-09-13)`.
+
+No constitutional rule changes; the rule count stays at 7,583. Chapter 7's
+case passes 59 pins (focused, partial). All 145 authoring development tests
+pass, with five declared ignored, as do the sixteen prose-lint, nine
+book-builder and six companion input unit tests and the prose check.
+`registry/check.py` passes with 222 claims. `RIGHTS_VERIFY_JOBS=4 ./verify.sh`
+passes 90,169 pins across 16,352 cases with complete contradiction checks and
+no findings in 1,165.01s.
 
 ### Item 54 — Part I in the ruled shape, 2026-09-25
 
@@ -1312,7 +1370,8 @@ exception all stand. Derived sections stay exactly as derived as before. The
 length invariant and the digit rule come to be measured by section rather than
 by file once item 53 builds that tooling. Items 53–59 and 63 implement it.
 **Implemented for Part I 2026-09-25 (item 54):** Chapters 1–6 each close
-with an argument section.
+with an argument section. **And for Part II the same day (item 55):**
+Chapters 7–15.
 
 **D3 — documented cases outside Part V.** Documented, registry-sourced cases may
 appear in the opening (Santoshi Kumari first, with the dispute over her death
@@ -1322,6 +1381,7 @@ life. This supersedes the rule that the historical cases stay in Part V. Items
 46, 47, 54–57 and 60 implement it.
 **Implemented for Part I 2026-09-25 (item 54):** its opening case is *The
 Sports Field at Wallacedene*, and its argument sections carry their cases.
+**And for Part II (item 55):** its opening case is *Unprecedented Injustice*.
 
 **D4 — the constitution in plain language, in the companion.** Numbered
 plain-language articles are published in the companion, not printed in the book,
@@ -3575,8 +3635,8 @@ remain three.)
 rulings D1–D9*):** each derived chapter will close with one labelled argument
 section, and documented cases may also appear in the opening, a labelled case
 opening each Part, and those argument sections. The flat register, the ban on
-inner lives and the refusal of composite citizens and dramatised scenes stand. Part I
-carries both since item 54 (2026-09-25).
+inner lives and the refusal of composite citizens and dramatised scenes stand. Parts I
+and II carry both since items 54 and 55 (2026-09-25).
 
 **Superseding prose-supply protocol — author-approved 2026-08-20.** Sessions may
 draft the Book 1 manuscript, including its epigraph, opening note, numbered
@@ -7158,8 +7218,8 @@ Note the manifesto's heading convention differs deliberately from the book's: it
   **Superseded in part 2026-09-24, not yet implemented (D2 of *The revision
   rulings D1–D9*):** each derived chapter will close with one labelled
   first-person argument section, so the seam moves inside the chapter rather
-  than disappearing. Derived sections stay flat and derived. Part I's
-  chapters carry theirs since item 54 (2026-09-25).
+  than disappearing. Derived sections stay flat and derived. The chapters of
+  Parts I and II carry theirs since items 54 and 55 (2026-09-25).
 
 - **The method part's scope is sealed — `book-1/method.md`, landed 2026-08-03.** Five
   decisions, each load-bearing: **(a) the filename is unnumbered and must never be

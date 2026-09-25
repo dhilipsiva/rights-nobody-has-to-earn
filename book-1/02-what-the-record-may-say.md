@@ -214,16 +214,15 @@ the person meets a conclusion with no act behind it to contest. Where files and
 labels have travelled, the people described bore the error. Australia's Royal
 Commission found that Robodebt, which raised welfare debts by averaging income
 data from the tax office, was "a crude and cruel mechanism, neither fair nor
-legal"; some 381,000 people were refunded.[^robodebt] The Dutch parliamentary
-inquiry into childcare benefits found that a group-wise, all-or-nothing
-approach wrongly branded parents as intentional fraudsters.[^childcare]
-Virginia Eubanks argues that the most invasive and punitive automated systems
-are aimed at the poor.[^eubanks] Admitting only declared kinds of entry, and
-reserving confinement, answerability, severity and credibility findings as
-conclusions that must follow from recorded premises, ties each adverse
-conclusion to an act somebody recorded and a finder who can be named. Helen
-Nissenbaum's contextual integrity names the norm: information should flow by
-the norms of its context.[^context]
+legal"; some 381,000 people were refunded.[^robodebt] The Dutch
+childcare-benefits affair, which opens Part II, is another. Virginia Eubanks
+argues that the most invasive and punitive automated systems are aimed at the
+poor.[^eubanks] Admitting only declared kinds of entry, and reserving
+confinement, answerability, severity and credibility findings as conclusions
+that must follow from recorded premises, ties each adverse conclusion to an act
+somebody recorded and a finder who can be named. Helen Nissenbaum's contextual
+integrity names the norm: information should flow by the norms of its
+context.[^context]
 
 The strongest alternative is the integrated case record: a joined account of
 what agencies know, used with discretion and risk-based targeting. Governments
@@ -259,10 +258,6 @@ account.
 [^robodebt]: Royal Commission into the Robodebt Scheme,
     [*Report*](https://robodebt.royalcommission.gov.au/publications/report)
     (7 July 2023), vol. 1, pp. xxvi–xxix.
-
-[^childcare]: Parlementaire ondervragingscommissie Kinderopvangtoeslag,
-    [*Ongekend onrecht*](https://zoek.officielebekendmakingen.nl/kst-35510-2.html),
-    Kamerstukken II 2020/21, 35 510, nr. 2 (17 December 2020), pp. 7–8.
 
 [^eubanks]: Virginia Eubanks, [*Automating Inequality: How High-Tech Tools
     Profile, Police, and Punish the Poor*](https://us.macmillan.com/books/9781250074317/automatinginequality/)

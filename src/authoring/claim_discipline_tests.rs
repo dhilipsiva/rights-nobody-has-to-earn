@@ -50,11 +50,16 @@ fn argued_text(context: &Context) -> String {
 /// leans on it. One source may carry several figures — Tanzania's relocation
 /// count and Mondragon's headcount are not one claim each — so the rows are
 /// keyed by case, not by entry.
-const TRACED: [(&str, &str, &str); 78] = [
+const TRACED: [(&str, &str, &str); 128] = [
     (
         "the Wallacedene eviction",
         "grootboom-2000-eviction-facts",
         "510 children and 390 adults",
+    ),
+    (
+        "the Dutch childcare-benefits opening case",
+        "nl-ongekend-onrecht-2020",
+        "no hardship clause",
     ),
     (
         "Grootboom's declaratory order",
@@ -376,6 +381,251 @@ const TRACED: [(&str, &str, &str); 78] = [
         "destabilization rights",
         "sabel-simon-2004-destabilization-rights",
         "Charles Sabel and William Simon",
+    ),
+    (
+        "freedom as non-domination",
+        "pettit-1997-republicanism",
+        "even if the other never actually does",
+    ),
+    (
+        "control over those in power",
+        "pettit-2012-on-the-peoples-terms",
+        "equally in a form of control over those in power",
+    ),
+    (
+        "the privacy judgment",
+        "puttaswamy-privacy-2017",
+        "Article 21",
+    ),
+    (
+        "the Siracusa limitation tests",
+        "siracusa-principles-1984",
+        "leave the burden of justification with the State",
+    ),
+    (
+        "proportionality's four stages",
+        "barak-2012-proportionality",
+        "a final stage of balancing",
+    ),
+    (
+        "the forced-labour definition",
+        "ilo-c029-forced-labour-1930",
+        "work exacted under the menace of a penalty",
+    ),
+    (
+        "minimum services in strikes",
+        "ilo-cfa-compilation-2018-minimum-services",
+        "confines minimum services to what is strictly necessary",
+    ),
+    (
+        "the employment relationship",
+        "ilo-r198-employment-relationship-2006",
+        "however a contract describes it",
+    ),
+    (
+        "the Uber drivers",
+        "uber-v-aslam-2021-uksc-5",
+        "the agreement Uber drafted",
+    ),
+    (
+        "the civic minimum",
+        "white-2003-civic-minimum",
+        "a generous civic minimum",
+    ),
+    (
+        "Germany's subsistence minimum",
+        "bverfg-2010-hartz-iv-subsistence-minimum",
+        "cannot obtain the means from work, property or others",
+    ),
+    (
+        "Germany's sanctions ruling",
+        "bverfg-2019-benefit-sanctions",
+        "larger cuts and complete withdrawal incompatible with the Basic Law",
+    ),
+    (
+        "the audit of benefit sanctions",
+        "nao-2016-benefit-sanctions",
+        "management priorities and staff discretion",
+    ),
+    (
+        "the welfare conditionality study",
+        "dwyer-2018-welfare-conditionality-final",
+        "reliance on charity and worsened ill health",
+    ),
+    (
+        "the new utilities",
+        "rahman-2018-new-utilities",
+        "public-utility framework of firewalling",
+    ),
+    (
+        "the gatekeeper designation",
+        "eu-dma-2022-gatekeepers",
+        "without a finding of dominance",
+    ),
+    (
+        "the debt brake",
+        "german-basic-law-debt-brake-2009",
+        "a Bundestag majority with an amortisation plan",
+    ),
+    (
+        "the climate fund ruling",
+        "bverfg-2023-second-supplementary-budget-2021",
+        "unused pandemic emergency borrowing authority",
+    ),
+    (
+        "discrimination by operation",
+        "griggs-v-duke-power-1971",
+        "does not redeem",
+    ),
+    (
+        "intersectionality",
+        "crenshaw-1989-demarginalizing",
+        "DeGraffenreid",
+    ),
+    (
+        "reasonable accommodation",
+        "crpd-2006-reasonable-accommodation",
+        "counts its denial as discrimination",
+    ),
+    (
+        "the admissions ruling",
+        "sffa-v-harvard-2023",
+        "lacked meaningful end points",
+    ),
+    (
+        "the reservations ruling",
+        "indra-sawhney-1992",
+        "creamy layer",
+    ),
+    (
+        "the Dutch climate ruling",
+        "urgenda-hoge-raad-2019",
+        "even one that materialises only later",
+    ),
+    (
+        "the state's environmental duty",
+        "german-basic-law-article-20a-2002",
+        "a state duty that confers no individual right",
+    ),
+    (
+        "the German climate order",
+        "bverfg-2021-climate-order-intertemporal-freedom",
+        "future generations hold no fundamental rights now",
+    ),
+    (
+        "the Stern Review",
+        "stern-review-2006-economics-climate-change",
+        "now and forever",
+    ),
+    (
+        "Nordhaus's reply to Stern",
+        "nordhaus-2007-review-of-stern",
+        "market interest and savings rates",
+    ),
+    (
+        "the Welsh commissioner",
+        "wales-future-generations-act-2015",
+        "a body may depart for good reason",
+    ),
+    (
+        "the Hungarian commissioner",
+        "hungary-future-generations-ombudsman-2008",
+        "described its statements as not binding",
+    ),
+    (
+        "direct duties to animals",
+        "korsgaard-2018-fellow-creatures",
+        "duties regarding animals are only indirect",
+    ),
+    (
+        "the EU animal-welfare clause",
+        "tfeu-2012-article-13-animal-welfare",
+        "religious rites, cultural traditions and regional heritage",
+    ),
+    (
+        "the UK sentience committee",
+        "uk-animal-welfare-sentience-act-2022",
+        "cephalopod molluscs and decapod crustaceans",
+    ),
+    (
+        "the sentience review",
+        "birch-2021-cephalopod-decapod-sentience",
+        "as sentient for the purposes of welfare law",
+    ),
+    (
+        "the laboratory-animal directive",
+        "eu-directive-2010-63-three-rs",
+        "without live animals is used wherever possible",
+    ),
+    (
+        "the three Rs, in the animal chapter",
+        "russell-burch-1959-three-rs",
+        "Russell and Burch set out in 1959",
+    ),
+    (
+        "legal capacity for disabled people",
+        "crpd-2006-article-12",
+        "as brief as possible and regularly reviewed",
+    ),
+    (
+        "the best interpretation",
+        "crpd-gc1-2014-legal-capacity",
+        "the best interpretation of them replaces a determination of best interests",
+    ),
+    (
+        "the child's views",
+        "crc-1989-article-12",
+        "presume that a child can form views",
+    ),
+    (
+        "best-interests decision-making",
+        "mental-capacity-act-2005-best-interests",
+        "by reasonably believing the act serves those interests",
+    ),
+    (
+        "the enforcement firewall",
+        "crepeau-hastie-2015-firewall",
+        "irregular migrants can reach fundamental rights and basic services",
+    ),
+    (
+        "votes for resident non-citizens",
+        "lopez-guerra-2014-disenfranchisement",
+        "resident non-citizens should vote",
+    ),
+    (
+        "Chile's ten-year residence vote",
+        "chile-constitution-art14-foreign-residents-2025",
+        "counted from permanent residence",
+    ),
+    (
+        "external protections",
+        "kymlicka-1995-multicultural-citizenship",
+        "internal restriction",
+    ),
+    (
+        "the paradox of accommodation",
+        "shachar-2001-multicultural-jurisdictions",
+        "sanctioned violations within it",
+    ),
+    (
+        "the state's right to exclude",
+        "wellman-2008-immigration-freedom-of-association",
+        "presumptive right to exclude outsiders",
+    ),
+    (
+        "non-refoulement's exceptions",
+        "refugee-convention-1951-article-33",
+        "convicted of a particularly serious crime",
+    ),
+    (
+        "the Saramaka consent standard",
+        "saramaka-v-suriname-2007",
+        "large-scale projects with a major impact",
+    ),
+    (
+        "consultation under ILO C169",
+        "ilo-c169-1989-consultation-consent",
+        "relocation proceed through national procedures",
     ),
 ];
 

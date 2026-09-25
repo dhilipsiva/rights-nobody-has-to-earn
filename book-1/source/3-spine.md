@@ -161,8 +161,8 @@ Front matter: `epigraph.md`, `00-opening-note.md`.
 | 05 | When There Is Genuinely Not Enough | `05-when-there-is-genuinely-not-enough.md` | derived | engine | landed |
 | 06 | Who Owes, and What Follows | `06-who-owes-and-what-follows.md` | derived | engine | landed |
 | **Part II — The life the design leaves alone** | | | | | |
-| — | Opening case | — | exempt | — | planned |
-| 07 | An Ordinary Week | — | derived | engine | planned |
+| — | Opening case: Unprecedented Injustice | `part-2-unprecedented-injustice.md` | exempt | — | landed |
+| 07 | An Ordinary Week | `07-an-ordinary-week.md` | derived | engine | landed |
 | 08 | What Nobody Has to Ask Permission For | `08-what-nobody-has-to-ask-permission-for.md` | derived | engine | landed |
 | 09 | Work, Pay and Contribution | `09-work-pay-and-contribution.md` | derived | engine | landed |
 | 10 | What Money Cannot Buy | `10-what-money-cannot-buy.md` | derived | engine | landed |

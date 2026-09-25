@@ -312,10 +312,11 @@ fn every_constitutional_family_is_projected_by_a_passage() {
 /// follows Cira's separate claim beside the teacher's finding. The rest follow
 /// for the child exactly as for anyone, or need a record the child does not
 /// have.
-const CHILD_SLOT_EXEMPT: [(&str, &str); 19] = [
+const CHILD_SLOT_EXEMPT: [(&str, &str); 20] = [
     ("01-the-child-with-nobody.md", "the chapter is the case, and its encounters reach standing as the birth does"),
     ("03-what-you-are-owed.md", "the floor follows for the child as for every person; chapter 1 runs it"),
     ("06-who-owes-and-what-follows.md", "the bystander's entry about the child is already the chapter's own case"),
+    ("07-an-ordinary-week.md", "the week follows an adult with a full record; the one-line record holds none of its entries"),
     ("08-what-nobody-has-to-ask-permission-for.md", "the liberties follow from personhood alone, as for anyone"),
     ("09-work-pay-and-contribution.md", "no contribution yields no supplement, as for anyone; Cira carries the child exhibit"),
     ("10-what-money-cannot-buy.md", "the economic prohibitions hold for any person; no property adds nothing"),

@@ -46,16 +46,16 @@ carried in single figures, which is where the rebalance has most to do.
 
 | Posture | Passages |
 | --- | ---: |
-| chooses | 20 |
-| creates | 3 |
-| cares | 6 |
-| works | 10 |
-| associates | 6 |
-| requests | 8 |
-| receives | 58 |
-| challenges | 27 |
-| governs | 34 |
-| is acted upon | 73 |
+| chooses | 34 |
+| creates | 4 |
+| cares | 8 |
+| works | 12 |
+| associates | 7 |
+| requests | 10 |
+| receives | 65 |
+| challenges | 29 |
+| governs | 35 |
+| is acted upon | 77 |
 
 ## Chapter patterns
 
@@ -65,12 +65,12 @@ what matters is the book's shape, not the chapter's.
 
 | Pattern | Passages |
 | --- | ---: |
-| constructive | 87 |
-| private-civic | 25 |
-| democratic | 33 |
-| coercive | 42 |
+| constructive | 102 |
+| private-civic | 26 |
+| democratic | 34 |
+| coercive | 43 |
 | records | 31 |
-| argument | 13 |
+| argument | 22 |
 
 Whether a passage follows its pattern's own arc — seeks, responds,
 receipt, challenge, continuity, boundary — is prose review and is not
@@ -80,22 +80,22 @@ checked here.
 
 | Domain | Ordinary | Strain | Boundary |
 | --- | ---: | ---: | ---: |
-| Borders, migration, asylum and expulsion | 2 | 2 | 4 |
-| Collective and plurality rights | 1 | 1 | 1 |
+| Borders, migration, asylum and expulsion | 2 | 3 | 2 |
+| Collective and plurality rights | 1 | 1 | 0 |
 | Defence and armed force | 1 | 1 | 1 |
-| Democracy and amendment | 8 | 6 | 7 |
-| Ecology, future generations and commons | 4 | 4 | 5 |
-| Economy, property, work and commons | 15 | 14 | 14 |
+| Democracy and amendment | 9 | 6 | 7 |
+| Ecology, future generations and commons | 4 | 5 | 5 |
+| Economy, property, work and commons | 17 | 16 | 12 |
 | Emergency and resilience | 2 | 2 | 3 |
-| Justice and coercion | 13 | 11 | 13 |
-| Knowledge, communication and culture | 2 | 1 | 1 |
-| Life course, family, care and reproduction | 12 | 4 | 6 |
+| Justice and coercion | 14 | 11 | 13 |
+| Knowledge, communication and culture | 4 | 6 | 2 |
+| Life course, family, care and reproduction | 13 | 5 | 3 |
 | Locality, mobility and external relations | 2 | 2 | 2 |
-| Material floor | 9 | 25 | 11 |
-| Non-human animals | 2 | 3 | 3 |
-| Personhood and equality | 17 | 9 | 10 |
+| Material floor | 10 | 25 | 11 |
+| Non-human animals | 2 | 4 | 1 |
+| Personhood and equality | 19 | 13 | 10 |
 | Public institutions | 10 | 9 | 13 |
-| Public safety, policing and use of force | 5 | 4 | 6 |
+| Public safety, policing and use of force | 6 | 5 | 8 |
 | Records and accountability | 13 | 15 | 17 |
 
 ## Every passage
@@ -160,8 +160,27 @@ checked here.
 | 06-19 | 06-who-owes-and-what-follows.md | A claim that fails | Material floor | OBLIGATIONS | continuity | one claim followed through every office that fails it, from first contact to the Court's interim measures | receives, challenges | continuity-remedy | yes | constructive | `book-1/06-who-owes-and-what-follows.pins.nibli` |
 | 06-17 | 06-who-owes-and-what-follows.md | What this cannot settle | Records and accountability | OBLIGATIONS | protective | the boundary where the lifecycle stops being evidence | receives | unresolved | yes | records | `book-1/06-who-owes-and-what-follows.pins.nibli` |
 | 06-20 | 06-who-owes-and-what-follows.md | Argument: Named bearers, and a court that secures the minimum | Material floor | exempt | argument | named bearers and a court that secures the minimum, against reasonableness review | chooses | contested | no | argument | `exempt-element` |
-| 08-00 | 08-what-nobody-has-to-ask-permission-for.md | (preamble) | Knowledge, communication and culture | KNOWLEDGE-AND-FREE-FIELD | ordinary | the free field, and what narrowing it has to establish | chooses, creates, associates | works | yes | private-civic | `book-1/08-what-nobody-has-to-ask-permission-for.pins.nibli` |
-| 08-01 | 08-what-nobody-has-to-ask-permission-for.md | The things power may not prescribe | Knowledge, communication and culture | LIBERTY-ECOLOGY | protective | the walls on public power over private and civic life | chooses | works | no | private-civic | `book-1/08-what-nobody-has-to-ask-permission-for.pins.nibli` |
+| 07-00 | 07-an-ordinary-week.md | (preamble) | Personhood and equality | UNIVERSAL-STANDING | ordinary | one adult's week, from a record that starts with presence and adulthood | receives | works | no | constructive | `book-1/07-an-ordinary-week.pins.nibli` |
+| 07-01 | 07-an-ordinary-week.md | Where the record starts | Personhood and equality | UNIVERSAL-STANDING | ordinary | personhood, the floor, free movement and the ballot before the week's business | receives, chooses | works | no | private-civic | `book-1/07-an-ordinary-week.pins.nibli` |
+| 07-02 | 07-an-ordinary-week.md | Work and a wage | Economy, property, work and commons | QUALIFICATIONS-COMPENSATION | ordinary | a promised wage attested by a separate pay office | works | works | no | constructive | `book-1/07-an-ordinary-week.pins.nibli` |
+| 07-03 | 07-an-ordinary-week.md | A rented home | Economy, property, work and commons | ECONOMIC-CONSTITUTION | protective | a tenancy the record never holds, and the shelter owed from the first entry | receives, chooses | works | no | constructive | `book-1/07-an-ordinary-week.pins.nibli` |
+| 07-04 | 07-an-ordinary-week.md | The clinic | Material floor | DELIVERY-RECEIPT | ordinary | care shown by a receipt and an independent witness, after a self-witnessed attempt | receives, chooses | works | no | constructive | `book-1/07-an-ordinary-week.pins.nibli` |
+| 07-05 | 07-an-ordinary-week.md | School | Life course, family, care and reproduction | FAMILY-LIFE-ORDINARY | ordinary | a child who is a person on a birth entry, heard at any age, and learning shown by teaching and hearing | receives, cares | works | no | constructive | `book-1/07-an-ordinary-week.pins.nibli` |
+| 07-06 | 07-an-ordinary-week.md | Election day | Democracy and amendment | STATE-FORM | ordinary | a ballot entitlement that reads personhood and adulthood and nothing about the vote | governs | works | no | democratic | `book-1/07-an-ordinary-week.pins.nibli` |
+| 07-07 | 07-an-ordinary-week.md | A dispute with the landlord | Justice and coercion | NON-CARCERAL-JUSTICE | ordinary | a request for review that needs no landlord's agreement | requests, challenges | works | no | constructive | `book-1/07-an-ordinary-week.pins.nibli` |
+| 07-08 | 07-an-ordinary-week.md | A police stop | Public safety, policing and use of force | PUBLIC-SAFETY | protective | a stop recorded as identification alone, which authorises no search | is acted upon | works | yes | coercive | `book-1/07-an-ordinary-week.pins.nibli` |
+| 07-09 | 07-an-ordinary-week.md | What the lightness costs | Personhood and equality | ARTICLES | protective | who waits while an independent attestation or an office's authority goes unrecorded | receives | contested | no | constructive | `book-1/07-an-ordinary-week.pins.nibli` |
+| 07-10 | 07-an-ordinary-week.md | What this cannot settle | Public safety, policing and use of force | PUBLIC-SAFETY | protective | a stop nobody records | is acted upon | unresolved | yes | constructive | `book-1/07-an-ordinary-week.pins.nibli` |
+| 07-11 | 07-an-ordinary-week.md | Argument: Power that must write before it touches | Personhood and equality | exempt | argument | freedom as non-domination, against discretion trusted to democratic control | chooses | contested | no | argument | `exempt-element` |
+| 08-00 | 08-what-nobody-has-to-ask-permission-for.md | (preamble) | Knowledge, communication and culture | KNOWLEDGE-AND-FREE-FIELD | ordinary | the free field, held for everyone without anyone's permission | chooses, creates, associates | works | no | private-civic | `book-1/08-what-nobody-has-to-ask-permission-for.pins.nibli` |
+| 08-01 | 08-what-nobody-has-to-ask-permission-for.md | The things power may not prescribe | Knowledge, communication and culture | LIBERTY-ECOLOGY | protective | the walls on public power over private and civic life | chooses | works | yes | private-civic | `book-1/08-what-nobody-has-to-ask-permission-for.pins.nibli` |
+| 08-02 | 08-what-nobody-has-to-ask-permission-for.md | When a restriction may be made | Knowledge, communication and culture | KNOWLEDGE-AND-FREE-FIELD | protective | a restriction and its enforcement, each needing an evidenced rights or commons harm | is acted upon | contested | no | constructive | `book-1/08-what-nobody-has-to-ask-permission-for.pins.nibli` |
+| 08-03 | 08-what-nobody-has-to-ask-permission-for.md | When the ground was missing | Knowledge, communication and culture | KNOWLEDGE-AND-FREE-FIELD | continuity | a restriction found to have no harm ground, withdrawn with its enforcement | challenges | continuity-remedy | no | constructive | `book-1/08-what-nobody-has-to-ask-permission-for.pins.nibli` |
+| 08-04 | 08-what-nobody-has-to-ask-permission-for.md | Freedom written down | Knowledge, communication and culture | KNOWLEDGE-AND-FREE-FIELD | ordinary | a residual-freedom record, and no register of belief or membership | chooses, associates | works | no | constructive | `book-1/08-what-nobody-has-to-ask-permission-for.pins.nibli` |
+| 08-05 | 08-what-nobody-has-to-ask-permission-for.md | Information, inquiry and concentration | Knowledge, communication and culture | KNOWLEDGE-AND-FREE-FIELD | ordinary | public information, accessible communication, inquiry and creation, and an actor-side concentration finding | requests, creates | works | no | constructive | `book-1/08-what-nobody-has-to-ask-permission-for.pins.nibli` |
+| 08-06 | 08-what-nobody-has-to-ask-permission-for.md | Who bears the cost | Knowledge, communication and culture | KNOWLEDGE-AND-FREE-FIELD | protective | the restricting body's burden, and who waits while it is met | is acted upon | contested | no | constructive | `book-1/08-what-nobody-has-to-ask-permission-for.pins.nibli` |
+| 08-07 | 08-what-nobody-has-to-ask-permission-for.md | What this cannot settle | Knowledge, communication and culture | KNOWLEDGE-AND-FREE-FIELD | protective | a harm ground three attesters agree on, and truth no record certifies | chooses | unresolved | yes | constructive | `book-1/08-what-nobody-has-to-ask-permission-for.pins.nibli` |
+| 08-08 | 08-what-nobody-has-to-ask-permission-for.md | Argument: Two grounds and an end | Knowledge, communication and culture | exempt | argument | a closed list of harm grounds, against an open proportionality test | chooses | contested | no | argument | `exempt-element` |
 | 09-00 | 09-work-pay-and-contribution.md | (preamble) | Economy, property, work and commons | ECONOMIC-CONSTITUTION | ordinary | what may be earned above a floor that is never earned | works, chooses | works | no | constructive | `book-1/09-work-pay-and-contribution.pins.nibli` |
 | 09-01 | 09-work-pay-and-contribution.md | What makes someone a worker | Economy, property, work and commons | ECONOMIC-CONSTITUTION | protective | worker status by control and dependency, not label | works | works | no | constructive | `book-1/09-work-pay-and-contribution.pins.nibli` |
 | 09-02 | 09-work-pay-and-contribution.md | Acting together | Economy, property, work and commons | ECONOMIC-CONSTITUTION | ordinary | collective action and the narrow continuity power | associates | works | no | constructive | `book-1/09-work-pay-and-contribution.pins.nibli` |
@@ -170,42 +189,48 @@ checked here.
 | 09-05 | 09-work-pay-and-contribution.md | A supplement above the floor | Economy, property, work and commons | INCOME-SECURITY | ordinary | a contribution record and an adjudicated event, dormant in the cast | receives | unresolved | yes | constructive | `book-1/09-work-pay-and-contribution.pins.nibli` |
 | 09-06 | 09-work-pay-and-contribution.md | When the money runs out | Economy, property, work and commons | ECONOMIC-CONSTITUTION | continuity | fresh start, guarantee, temporary powers with an end | receives | continuity-remedy | yes | constructive | `book-1/09-work-pay-and-contribution.pins.nibli` |
 | 09-07 | 09-work-pay-and-contribution.md | Contribution | Economy, property, work and commons | ARTICLES | ordinary | teaching, employment and examination recorded without a personal status | works, cares, creates | works | no | private-civic | `book-1/09-work-pay-and-contribution.pins.nibli` |
-| 09-08 | 09-work-pay-and-contribution.md | What the record says | Personhood and equality | ARTICLES | ordinary | caregiver and recipient remain separate people with separate claims | creates | works | no | constructive | `book-1/09-work-pay-and-contribution.pins.nibli` |
+| 09-08 | 09-work-pay-and-contribution.md | What the record says | Personhood and equality | ARTICLES | ordinary | caregiver and recipient remain separate people with separate claims | creates | works | yes | constructive | `book-1/09-work-pay-and-contribution.pins.nibli` |
 | 09-09 | 09-work-pay-and-contribution.md | Each claim needs its own ground | Economy, property, work and commons | ARTICLES | ordinary | compensation, certificates and supplements require distinct evidence | works | works | no | private-civic | `book-1/09-work-pay-and-contribution.pins.nibli` |
 | 09-10 | 09-work-pay-and-contribution.md | An examination is not authority | Economy, property, work and commons | ARTICLES | protective | an examination entry does not supply an adverse finding or an appointment | works | contested | no | private-civic | `book-1/09-work-pay-and-contribution.pins.nibli` |
-| 09-11 | 09-work-pay-and-contribution.md | A finding does not cancel a life of work | Economy, property, work and commons | ARTICLES | continuity | unrelated care, wage and supplement claims survive a personal finding | works | continuity-remedy | yes | private-civic | `book-1/24-findings-about-people.pins.nibli` |
+| 09-11 | 09-work-pay-and-contribution.md | A finding does not cancel a life of work | Economy, property, work and commons | ARTICLES | continuity | unrelated care, wage and supplement claims survive a personal finding | works | continuity-remedy | no | private-civic | `book-1/24-findings-about-people.pins.nibli` |
 | 09-12 | 09-work-pay-and-contribution.md | What this cannot settle | Economy, property, work and commons | ECONOMIC-CONSTITUTION | protective | the boundary of a record that holds no amount | receives | unresolved | yes | constructive | `book-1/09-work-pay-and-contribution.pins.nibli` |
+| 09-13 | 09-work-pay-and-contribution.md | Argument: Work above the floor | Economy, property, work and commons | exempt | argument | work that never touches the floor, against reciprocity-based conditionality | chooses, works | contested | yes | argument | `exempt-element` |
 | 10-00 | 10-what-money-cannot-buy.md | (preamble) | Economy, property, work and commons | ECONOMIC-CONSTITUTION | protective | price on the far side of a line the floor never crosses | chooses | works | no | constructive | `book-1/10-what-money-cannot-buy.pins.nibli` |
-| 10-01 | 10-what-money-cannot-buy.md | Owning without owning the floor | Economy, property, work and commons | ECONOMIC-CONSTITUTION | protective | conditional possession, plural tenure, the dwelling that is not an asset | chooses | works | yes | constructive | `book-1/10-what-money-cannot-buy.pins.nibli` |
+| 10-01 | 10-what-money-cannot-buy.md | Owning without owning the floor | Economy, property, work and commons | ECONOMIC-CONSTITUTION | protective | conditional possession, plural tenure, the dwelling that is not an asset | chooses | works | no | constructive | `book-1/10-what-money-cannot-buy.pins.nibli` |
 | 10-02 | 10-what-money-cannot-buy.md | A promise is not a trap | Economy, property, work and commons | ECONOMIC-CONSTITUTION | protective | consent, waivers, the enterprise as a tool | chooses, associates | works | no | constructive | `book-1/10-what-money-cannot-buy.pins.nibli` |
 | 10-03 | 10-what-money-cannot-buy.md | When a private power owes public duties | Economy, property, work and commons | PUBLIC-SCALE-VOCABULARY | protective | the named grounds, classes and tiers of a private-power finding | is acted upon | contested | yes | constructive | `book-1/10-what-money-cannot-buy.pins.nibli` |
 | 10-07 | 10-what-money-cannot-buy.md | When an economic power ends, and what does not | Economy, property, work and commons | ECONOMIC-CONSTITUTION | continuity | temporary managerial authority ends while rights and continuity duties remain | is acted upon | fails | yes | constructive | `book-1/10-what-money-cannot-buy.pins.nibli` |
-| 10-04 | 10-what-money-cannot-buy.md | Public money | Economy, property, work and commons | ECONOMIC-CONSTITUTION | ordinary | taxation, appropriation, borrowing under a legislative source | governs | works | yes | constructive | `book-1/10-what-money-cannot-buy.pins.nibli` |
+| 10-04 | 10-what-money-cannot-buy.md | Public money | Economy, property, work and commons | ECONOMIC-CONSTITUTION | ordinary | taxation, appropriation, borrowing under a legislative source | governs | works | no | constructive | `book-1/10-what-money-cannot-buy.pins.nibli` |
 | 10-05 | 10-what-money-cannot-buy.md | Money you can hold in your hand | Economy, property, work and commons | ECONOMIC-CONSTITUTION | ordinary | the backbone with a non-digital route; the bounded monetary office | receives | works | no | constructive | `book-1/10-what-money-cannot-buy.pins.nibli` |
 | 10-06 | 10-what-money-cannot-buy.md | Which tier decides | Economy, property, work and commons | ECONOMIC-CONSTITUTION | ordinary | the common tier's short list and the regional residue | governs | works | no | constructive | `book-1/10-what-money-cannot-buy.pins.nibli` |
 | 10-09 | 10-what-money-cannot-buy.md | What this cannot settle | Economy, property, work and commons | ECONOMIC-CONSTITUTION | protective | the boundary of a record that values nothing | receives | unresolved | yes | constructive | `book-1/10-what-money-cannot-buy.pins.nibli` |
+| 10-10 | 10-what-money-cannot-buy.md | Argument: Ownership under the floor, borrowing under law | Economy, property, work and commons | exempt | argument | conditional property and public finance without a debt ceiling, against a constitutional debt brake | chooses | contested | no | argument | `exempt-element` |
 | 11-00 | 11-the-same-route-for-everyone.md | (preamble) | Personhood and equality | SUBSTANTIVE-EQUALITY | protective | equal and effective protection; purpose or effect suffices | receives | works | no | constructive | `book-1/11-the-same-route-for-everyone.pins.nibli` |
-| 11-01 | 11-the-same-route-for-everyone.md | The forms it takes | Personhood and equality | SUBSTANTIVE-EQUALITY | protective | the named shapes of discrimination | is acted upon | works | yes | constructive | `book-1/11-the-same-route-for-everyone.pins.nibli` |
+| 11-01 | 11-the-same-route-for-everyone.md | The forms it takes | Personhood and equality | SUBSTANTIVE-EQUALITY | protective | the named shapes of discrimination | is acted upon | works | no | constructive | `book-1/11-the-same-route-for-everyone.pins.nibli` |
 | 11-02 | 11-the-same-route-for-everyone.md | Who is bound, and where private life stays private | Personhood and equality | SUBSTANTIVE-EQUALITY | protective | public reach, named private domains, the protected association | associates | works | no | constructive | `book-1/11-the-same-route-for-everyone.pins.nibli` |
 | 11-03 | 11-the-same-route-for-everyone.md | What a distinction has to prove | Personhood and equality | SUBSTANTIVE-EQUALITY | protective | necessity, proportionality, and a pattern that convicts nobody | is acted upon | contested | no | constructive | `book-1/11-the-same-route-for-everyone.pins.nibli` |
-| 11-04 | 11-the-same-route-for-everyone.md | Accessibility makes rights usable | Personhood and equality | SUBSTANTIVE-EQUALITY-ORDINARY | ordinary | a reviewed accommodation completing for a person the roster never entered | receives, requests | works | yes | constructive | `book-1/11-the-same-route-for-everyone.pins.nibli` |
-| 11-05 | 11-the-same-route-for-everyone.md | Patterns without verdicts | Personhood and equality | SUBSTANTIVE-EQUALITY | protective | an aggregate that opens a proceeding and convicts nobody | is acted upon | works | no | constructive | `book-1/11-the-same-route-for-everyone.pins.nibli` |
+| 11-04 | 11-the-same-route-for-everyone.md | Accessibility makes rights usable | Personhood and equality | SUBSTANTIVE-EQUALITY-ORDINARY | ordinary | a reviewed accommodation completing for a person the roster never entered | receives, requests | works | no | constructive | `book-1/11-the-same-route-for-everyone.pins.nibli` |
+| 11-05 | 11-the-same-route-for-everyone.md | Patterns without verdicts | Personhood and equality | SUBSTANTIVE-EQUALITY | protective | an aggregate that opens a proceeding and convicts nobody | is acted upon | works | yes | constructive | `book-1/11-the-same-route-for-everyone.pins.nibli` |
 | 11-06 | 11-the-same-route-for-everyone.md | A measure with an end | Personhood and equality | SUBSTANTIVE-EQUALITY-ORDINARY | ordinary | a reviewed measure, its continuation, and its end | receives | continuity-remedy | no | constructive | `book-1/11-the-same-route-for-everyone.pins.nibli` |
-| 11-07 | 11-the-same-route-for-everyone.md | Repair, and who may ask | Personhood and equality | SUBSTANTIVE-EQUALITY | continuity | initiation, separated functions, and the request that creates a duty | challenges, requests | works | yes | constructive | `book-1/11-the-same-route-for-everyone.pins.nibli` |
+| 11-07 | 11-the-same-route-for-everyone.md | Repair, and who may ask | Personhood and equality | SUBSTANTIVE-EQUALITY | continuity | initiation, separated functions, and the request that creates a duty | challenges, requests | works | no | constructive | `book-1/11-the-same-route-for-everyone.pins.nibli` |
 | 11-08 | 11-the-same-route-for-everyone.md | The design must meet its own test | Personhood and equality | SUBSTANTIVE-EQUALITY | protective | status substitutions the equality rules refuse | is acted upon | works | no | constructive | `book-1/11-the-same-route-for-everyone.pins.nibli` |
+| 11-09 | 11-the-same-route-for-everyone.md | What this cannot settle | Personhood and equality | SUBSTANTIVE-EQUALITY-ORDINARY | protective | closed lists of discrimination forms and barrier kinds, and an adjustment that must still reach the person | receives | unresolved | yes | constructive | `book-1/11-the-same-route-for-everyone.pins.nibli` |
+| 11-10 | 11-the-same-route-for-everyone.md | Argument: Effects, adjustments and measures that end | Personhood and equality | exempt | argument | discrimination by effect and ending positive measures, against ground-blind equality | chooses | contested | no | argument | `exempt-element` |
 | 12-00 | 12-a-place-in-which-life-remains-possible.md | (preamble) | Ecology, future generations and commons | ECOLOGICAL-ANIMAL | protective | the conditions of the place a person lives, and their limits | receives | works | no | constructive | `book-1/12-a-place-in-which-life-remains-possible.pins.nibli` |
 | 12-01 | 12-a-place-in-which-life-remains-possible.md | Three claims in the same place | Ecology, future generations and commons | ECOLOGICAL-ANIMAL | ordinary | distinct human environmental rights, future commons conditions and animal interests | receives | works | yes | constructive | `book-1/12-a-place-in-which-life-remains-possible.pins.nibli` |
-| 12-02 | 12-a-place-in-which-life-remains-possible.md | Essential water and a river's limit | Ecology, future generations and commons | ECOLOGICAL-ANIMAL | both | essential water continuity, river shortfall and separate physical allocation | receives | continuity-remedy | no | constructive | `book-1/12-a-place-in-which-life-remains-possible.pins.nibli` |
-| 12-03 | 12-a-place-in-which-life-remains-possible.md | Axes that do not trade | Ecology, future generations and commons | LIBERTY-ECOLOGY | protective | the separate axes, the science envelope, and the order of repair | receives | works | yes | constructive | `book-1/12-a-place-in-which-life-remains-possible.pins.nibli` |
+| 12-02 | 12-a-place-in-which-life-remains-possible.md | Essential water and a river's limit | Ecology, future generations and commons | ECOLOGICAL-ANIMAL | both | essential water continuity, river shortfall and separate physical allocation | receives | continuity-remedy | yes | constructive | `book-1/12-a-place-in-which-life-remains-possible.pins.nibli` |
+| 12-03 | 12-a-place-in-which-life-remains-possible.md | Axes that do not trade | Ecology, future generations and commons | LIBERTY-ECOLOGY | protective | the separate axes, the science envelope, and the order of repair | receives | works | no | constructive | `book-1/12-a-place-in-which-life-remains-possible.pins.nibli` |
 | 12-04 | 12-a-place-in-which-life-remains-possible.md | Speaking for conditions nobody may spend away | Ecology, future generations and commons | ECOLOGICAL-ANIMAL | both | bounded advocacy stays, expiry and finality for the commons | challenges | works | yes | constructive | `book-1/12-a-place-in-which-life-remains-possible.pins.nibli` |
 | 12-05 | 12-a-place-in-which-life-remains-possible.md | When the record the protection rested on was defective | Ecology, future generations and commons | ECOLOGICAL-ANIMAL | continuity | an ecological record found defective | is acted upon, challenges | continuity-remedy | yes | records | `book-1/12-a-place-in-which-life-remains-possible.pins.nibli` |
 | 12-06 | 12-a-place-in-which-life-remains-possible.md | What this cannot settle | Ecology, future generations and commons | ECOLOGICAL-ANIMAL | protective | the boundary of a record that measures no ecology | receives | unresolved | yes | constructive | `book-1/12-a-place-in-which-life-remains-possible.pins.nibli` |
-| 13-00 | 13-creatures-without-a-ballot.md | (preamble) | Non-human animals | ECOLOGICAL-ANIMAL | protective | the fish left in the river, protected in their own interests | is acted upon | works | yes | constructive | `book-1/13-creatures-without-a-ballot.pins.nibli` |
-| 13-01 | 13-creatures-without-a-ballot.md | Protection does not require being human | Non-human animals | ECOLOGICAL-ANIMAL | protective | a credibly sentient animal | is acted upon | works | yes | constructive | `book-1/13-creatures-without-a-ballot.pins.nibli` |
+| 12-07 | 12-a-place-in-which-life-remains-possible.md | Argument: Conditions kept apart | Ecology, future generations and commons | exempt | argument | non-substitutable axes and a Guardian without a veto, against discounted cost-benefit | chooses | contested | no | argument | `exempt-element` |
+| 13-00 | 13-creatures-without-a-ballot.md | (preamble) | Non-human animals | ECOLOGICAL-ANIMAL | protective | the fish left in the river, protected in their own interests | is acted upon | works | no | constructive | `book-1/13-creatures-without-a-ballot.pins.nibli` |
+| 13-01 | 13-creatures-without-a-ballot.md | Protection does not require being human | Non-human animals | ECOLOGICAL-ANIMAL | protective | a credibly sentient animal | is acted upon | works | no | constructive | `book-1/13-creatures-without-a-ballot.pins.nibli` |
 | 13-02 | 13-creatures-without-a-ballot.md | An advocate for animals, and a court between the offices | Non-human animals | ECOLOGICAL-ANIMAL | both | the Animal Advocate's claim beside the Guardian's, decided by an independent court | challenges | contested | no | constructive | `book-1/13-creatures-without-a-ballot.pins.nibli` |
 | 13-03 | 13-creatures-without-a-ballot.md | When a use has to be stopped | Non-human animals | ECOLOGICAL-ANIMAL | continuity | remedy orders after an adjudicated animal harm | is acted upon | fails | no | coercive | `book-1/13-creatures-without-a-ballot.pins.nibli` |
 | 13-04 | 13-creatures-without-a-ballot.md | What this cannot settle | Non-human animals | ECOLOGICAL-ANIMAL | protective | the boundary of a record that decides no sentience | is acted upon | unresolved | yes | constructive | `book-1/13-creatures-without-a-ballot.pins.nibli` |
-| 14-00 | 14-holding-a-role-in-somebodys-life.md | (preamble) | Life course, family, care and reproduction | FAMILY-LIFE-ORDINARY | ordinary | the ordinary case underneath the barriers | cares | works | yes | private-civic | `book-1/14-holding-a-role-in-somebodys-life.pins.nibli` |
+| 13-05 | 13-creatures-without-a-ballot.md | Argument: A claim of its own | Non-human animals | exempt | argument | animals as protected subjects, against a welfare regime that pays regard to welfare | chooses | contested | no | argument | `exempt-element` |
+| 14-00 | 14-holding-a-role-in-somebodys-life.md | (preamble) | Life course, family, care and reproduction | FAMILY-LIFE-ORDINARY | ordinary | the ordinary case underneath the barriers | cares | works | no | private-civic | `book-1/14-holding-a-role-in-somebodys-life.pins.nibli` |
 | 14-01 | 14-holding-a-role-in-somebodys-life.md | What kinship does not create | Life course, family, care and reproduction | FAMILY-LIFE-COURSE | protective | a caregiver, a dependant, and no inherited debt | cares | works | yes | private-civic | `book-1/14-holding-a-role-in-somebodys-life.pins.nibli` |
 | 14-02 | 14-holding-a-role-in-somebodys-life.md | Each role has its own limits | Life course, family, care and reproduction | FAMILY-LIFE-ORDINARY | ordinary | parentage, caregiving, household, support, property, decision agent | chooses | works | no | private-civic | `book-1/14-holding-a-role-in-somebodys-life.pins.nibli` |
 | 14-03 | 14-holding-a-role-in-somebodys-life.md | The person must be heard | Life course, family, care and reproduction | FAMILY-LIFE-ORDINARY | ordinary | a decision about somebody, and their own account of it | challenges | works | no | private-civic | `book-1/14-holding-a-role-in-somebodys-life.pins.nibli` |
@@ -214,16 +239,18 @@ checked here.
 | 14-06 | 14-holding-a-role-in-somebodys-life.md | Reproductive and bodily care, and the order of a treatment decision | Life course, family, care and reproduction | FAMILY-LIFE-ORDINARY | ordinary | a treatment decision and who may make it | chooses | works | no | private-civic | `book-1/14-holding-a-role-in-somebodys-life.pins.nibli` |
 | 14-07 | 14-holding-a-role-in-somebodys-life.md | Your own origin record | Life course, family, care and reproduction | FAMILY-LIFE-ORDINARY | ordinary | reaching and correcting the record about yourself | challenges | works | no | records | `book-1/14-holding-a-role-in-somebodys-life.pins.nibli` |
 | 14-08 | 14-holding-a-role-in-somebodys-life.md | When one of these records is defective | Life course, family, care and reproduction | FAMILY-LIFE-ORDINARY | continuity | a role record independently found defective | challenges | continuity-remedy | no | records | `book-1/14-holding-a-role-in-somebodys-life.pins.nibli` |
-| 14-09 | 14-holding-a-role-in-somebodys-life.md | When nobody holds a role at all | Life course, family, care and reproduction | FAMILY-LIFE-ORDINARY | continuity | an appointment for somebody who asked for nothing | receives | works | yes | constructive | `book-1/14-holding-a-role-in-somebodys-life.pins.nibli` |
-| 14-10 | 14-holding-a-role-in-somebodys-life.md | Adulthood and missing evidence | Life course, family, care and reproduction | FAMILY-LIFE-COURSE | protective | not yet, taken away, and evidence absent | is acted upon | unresolved | yes | private-civic | `book-1/14-holding-a-role-in-somebodys-life.pins.nibli` |
+| 14-09 | 14-holding-a-role-in-somebodys-life.md | When nobody holds a role at all | Life course, family, care and reproduction | FAMILY-LIFE-ORDINARY | continuity | an appointment for somebody who asked for nothing | receives | works | no | constructive | `book-1/14-holding-a-role-in-somebodys-life.pins.nibli` |
+| 14-10 | 14-holding-a-role-in-somebodys-life.md | Adulthood and missing evidence | Life course, family, care and reproduction | FAMILY-LIFE-COURSE | protective | not yet, taken away, and evidence absent | is acted upon | unresolved | no | private-civic | `book-1/14-holding-a-role-in-somebodys-life.pins.nibli` |
 | 14-11 | 14-holding-a-role-in-somebodys-life.md | The child with nobody | Life course, family, care and reproduction | FAMILY-LIFE-ORDINARY | protective | the child with nobody: one birth entry and nothing else | cares | unresolved | no | private-civic | `book-1/14-holding-a-role-in-somebodys-life.pins.nibli` |
 | 14-12 | 14-holding-a-role-in-somebodys-life.md | What this cannot settle | Life course, family, care and reproduction | FAMILY-LIFE-ORDINARY | protective | the boundary of a family interface that decides nothing | cares | unresolved | yes | private-civic | `book-1/14-holding-a-role-in-somebodys-life.pins.nibli` |
-| 15-00 | 15-arriving-and-belonging.md | (preamble) | Borders, migration, asylum and expulsion | MOBILITY-PLURALITY | ordinary | two questions usually answered by asking for papers | receives | works | yes | constructive | `book-1/15-arriving-and-belonging.pins.nibli` |
-| 15-01 | 15-arriving-and-belonging.md | Rights do not stop at arrival | Borders, migration, asylum and expulsion | MOBILITY-PLURALITY | ordinary | arrival and jurisdiction | receives | works | yes | constructive | `book-1/15-arriving-and-belonging.pins.nibli` |
+| 14-13 | 14-holding-a-role-in-somebodys-life.md | Argument: Support before substitution | Life course, family, care and reproduction | exempt | argument | support before any substituted decision, against best-interests decision-making | chooses, cares | contested | no | argument | `exempt-element` |
+| 15-00 | 15-arriving-and-belonging.md | (preamble) | Borders, migration, asylum and expulsion | MOBILITY-PLURALITY | ordinary | two questions usually answered by asking for papers | receives | works | no | constructive | `book-1/15-arriving-and-belonging.pins.nibli` |
+| 15-01 | 15-arriving-and-belonging.md | Rights do not stop at arrival | Borders, migration, asylum and expulsion | MOBILITY-PLURALITY | ordinary | arrival and jurisdiction | receives | works | no | constructive | `book-1/15-arriving-and-belonging.pins.nibli` |
 | 15-02 | 15-arriving-and-belonging.md | Conflicting versions stop the finding | Borders, migration, asylum and expulsion | MOBILITY-PLURALITY | continuity | an asylum determination whose record contradicts itself | is acted upon | fails | yes | coercive | `book-1/15-arriving-and-belonging.pins.nibli` |
-| 15-03 | 15-arriving-and-belonging.md | Belonging without surrendering rights | Collective and plurality rights | MOBILITY-PLURALITY | ordinary | collective membership and internal law | associates | works | yes | private-civic | `book-1/15-arriving-and-belonging.pins.nibli` |
+| 15-03 | 15-arriving-and-belonging.md | Belonging without surrendering rights | Collective and plurality rights | MOBILITY-PLURALITY | ordinary | collective membership and internal law | associates | works | no | private-civic | `book-1/15-arriving-and-belonging.pins.nibli` |
 | 15-04 | 15-arriving-and-belonging.md | When a consent record is defective | Collective and plurality rights | MOBILITY-PLURALITY | continuity | a collective consent record found defective | associates, challenges | continuity-remedy | no | private-civic | `book-1/15-arriving-and-belonging.pins.nibli` |
 | 15-06 | 15-arriving-and-belonging.md | What this cannot settle | Borders, migration, asylum and expulsion | MOBILITY-PLURALITY | protective | the boundary of a record that operates no border | receives | unresolved | yes | constructive | `book-1/15-arriving-and-belonging.pins.nibli` |
+| 15-07 | 15-arriving-and-belonging.md | Argument: The person before the status | Borders, migration, asylum and expulsion | exempt | argument | residence-based membership and the enforcement firewall, against a state's right to exclude | chooses | contested | no | argument | `exempt-element` |
 | 16-00 | 16-answerability-and-authority.md | (preamble) | Public institutions | ARTICLES | ordinary | who can be held to account | governs | works | no | democratic | `book-1/16-answerability-and-authority.pins.nibli` |
 | 16-01 | 16-answerability-and-authority.md | Why recall leaves answerability intact | Public institutions | STATE-FORM | protective | permanent answerability | governs | works | no | democratic | `book-1/16-answerability-and-authority.pins.nibli` |
 | 16-02 | 16-answerability-and-authority.md | Tove | Public institutions | ARTICLES | protective | a recalled official and the person who exposed them | challenges | works | yes | democratic | `book-1/16-answerability-and-authority.pins.nibli` |

@@ -873,13 +873,198 @@
       ]
     },
     {
+      "id": "07-00",
+      "chapter": "book-1/07-an-ordinary-week.md",
+      "section": "(preamble)",
+      "domain": "Personhood and equality",
+      "family": "UNIVERSAL-STANDING",
+      "function": "ordinary",
+      "setting": "one adult's week, from a record that starts with presence and adulthood",
+      "trajectory": "works",
+      "basis": "book-1/07-an-ordinary-week.pins.nibli",
+      "pattern": "constructive",
+      "postures": [
+        "receives"
+      ]
+    },
+    {
+      "id": "07-01",
+      "chapter": "book-1/07-an-ordinary-week.md",
+      "section": "Where the record starts",
+      "domain": "Personhood and equality",
+      "family": "UNIVERSAL-STANDING",
+      "function": "ordinary",
+      "setting": "personhood, the floor, free movement and the ballot before the week's business",
+      "trajectory": "works",
+      "basis": "book-1/07-an-ordinary-week.pins.nibli",
+      "pattern": "private-civic",
+      "postures": [
+        "receives",
+        "chooses"
+      ]
+    },
+    {
+      "id": "07-02",
+      "chapter": "book-1/07-an-ordinary-week.md",
+      "section": "Work and a wage",
+      "domain": "Economy, property, work and commons",
+      "family": "QUALIFICATIONS-COMPENSATION",
+      "function": "ordinary",
+      "setting": "a promised wage attested by a separate pay office",
+      "trajectory": "works",
+      "basis": "book-1/07-an-ordinary-week.pins.nibli",
+      "pattern": "constructive",
+      "postures": [
+        "works"
+      ]
+    },
+    {
+      "id": "07-03",
+      "chapter": "book-1/07-an-ordinary-week.md",
+      "section": "A rented home",
+      "domain": "Economy, property, work and commons",
+      "family": "ECONOMIC-CONSTITUTION",
+      "function": "protective",
+      "setting": "a tenancy the record never holds, and the shelter owed from the first entry",
+      "trajectory": "works",
+      "basis": "book-1/07-an-ordinary-week.pins.nibli",
+      "pattern": "constructive",
+      "postures": [
+        "receives",
+        "chooses"
+      ]
+    },
+    {
+      "id": "07-04",
+      "chapter": "book-1/07-an-ordinary-week.md",
+      "section": "The clinic",
+      "domain": "Material floor",
+      "family": "DELIVERY-RECEIPT",
+      "function": "ordinary",
+      "setting": "care shown by a receipt and an independent witness, after a self-witnessed attempt",
+      "trajectory": "works",
+      "basis": "book-1/07-an-ordinary-week.pins.nibli",
+      "pattern": "constructive",
+      "postures": [
+        "receives",
+        "chooses"
+      ]
+    },
+    {
+      "id": "07-05",
+      "chapter": "book-1/07-an-ordinary-week.md",
+      "section": "School",
+      "domain": "Life course, family, care and reproduction",
+      "family": "FAMILY-LIFE-ORDINARY",
+      "function": "ordinary",
+      "setting": "a child who is a person on a birth entry, heard at any age, and learning shown by teaching and hearing",
+      "trajectory": "works",
+      "basis": "book-1/07-an-ordinary-week.pins.nibli",
+      "pattern": "constructive",
+      "postures": [
+        "receives",
+        "cares"
+      ]
+    },
+    {
+      "id": "07-06",
+      "chapter": "book-1/07-an-ordinary-week.md",
+      "section": "Election day",
+      "domain": "Democracy and amendment",
+      "family": "STATE-FORM",
+      "function": "ordinary",
+      "setting": "a ballot entitlement that reads personhood and adulthood and nothing about the vote",
+      "trajectory": "works",
+      "basis": "book-1/07-an-ordinary-week.pins.nibli",
+      "pattern": "democratic",
+      "postures": [
+        "governs"
+      ]
+    },
+    {
+      "id": "07-07",
+      "chapter": "book-1/07-an-ordinary-week.md",
+      "section": "A dispute with the landlord",
+      "domain": "Justice and coercion",
+      "family": "NON-CARCERAL-JUSTICE",
+      "function": "ordinary",
+      "setting": "a request for review that needs no landlord's agreement",
+      "trajectory": "works",
+      "basis": "book-1/07-an-ordinary-week.pins.nibli",
+      "pattern": "constructive",
+      "postures": [
+        "requests",
+        "challenges"
+      ]
+    },
+    {
+      "id": "07-08",
+      "chapter": "book-1/07-an-ordinary-week.md",
+      "section": "A police stop",
+      "domain": "Public safety, policing and use of force",
+      "family": "PUBLIC-SAFETY",
+      "function": "protective",
+      "setting": "a stop recorded as identification alone, which authorises no search",
+      "trajectory": "works",
+      "basis": "book-1/07-an-ordinary-week.pins.nibli",
+      "pattern": "coercive",
+      "postures": [
+        "is acted upon"
+      ]
+    },
+    {
+      "id": "07-09",
+      "chapter": "book-1/07-an-ordinary-week.md",
+      "section": "What the lightness costs",
+      "domain": "Personhood and equality",
+      "family": "ARTICLES",
+      "function": "protective",
+      "setting": "who waits while an independent attestation or an office's authority goes unrecorded",
+      "trajectory": "contested",
+      "basis": "book-1/07-an-ordinary-week.pins.nibli",
+      "pattern": "constructive",
+      "postures": [
+        "receives"
+      ]
+    },
+    {
+      "id": "07-10",
+      "chapter": "book-1/07-an-ordinary-week.md",
+      "section": "What this cannot settle",
+      "domain": "Public safety, policing and use of force",
+      "family": "PUBLIC-SAFETY",
+      "function": "protective",
+      "setting": "a stop nobody records",
+      "trajectory": "unresolved",
+      "basis": "book-1/07-an-ordinary-week.pins.nibli",
+      "pattern": "constructive",
+      "postures": [
+        "is acted upon"
+      ]
+    },
+    {
+      "id": "07-11",
+      "chapter": "book-1/07-an-ordinary-week.md",
+      "section": "Argument: Power that must write before it touches",
+      "domain": "Personhood and equality",
+      "family": "exempt",
+      "function": "argument",
+      "setting": "freedom as non-domination, against discretion trusted to democratic control",
+      "trajectory": "contested",
+      "basis": "exempt-element",
+      "pattern": "argument",
+      "postures": [
+        "chooses"
+      ]
+    },
+    {
       "id": "08-00",
       "chapter": "book-1/08-what-nobody-has-to-ask-permission-for.md",
       "section": "(preamble)",
       "domain": "Knowledge, communication and culture",
       "family": "KNOWLEDGE-AND-FREE-FIELD",
       "function": "ordinary",
-      "setting": "the free field, and what narrowing it has to establish",
+      "setting": "the free field, held for everyone without anyone's permission",
       "trajectory": "works",
       "basis": "book-1/08-what-nobody-has-to-ask-permission-for.pins.nibli",
       "pattern": "private-civic",
@@ -900,6 +1085,113 @@
       "trajectory": "works",
       "basis": "book-1/08-what-nobody-has-to-ask-permission-for.pins.nibli",
       "pattern": "private-civic",
+      "postures": [
+        "chooses"
+      ]
+    },
+    {
+      "id": "08-02",
+      "chapter": "book-1/08-what-nobody-has-to-ask-permission-for.md",
+      "section": "When a restriction may be made",
+      "domain": "Knowledge, communication and culture",
+      "family": "KNOWLEDGE-AND-FREE-FIELD",
+      "function": "protective",
+      "setting": "a restriction and its enforcement, each needing an evidenced rights or commons harm",
+      "trajectory": "contested",
+      "basis": "book-1/08-what-nobody-has-to-ask-permission-for.pins.nibli",
+      "pattern": "constructive",
+      "postures": [
+        "is acted upon"
+      ]
+    },
+    {
+      "id": "08-03",
+      "chapter": "book-1/08-what-nobody-has-to-ask-permission-for.md",
+      "section": "When the ground was missing",
+      "domain": "Knowledge, communication and culture",
+      "family": "KNOWLEDGE-AND-FREE-FIELD",
+      "function": "continuity",
+      "setting": "a restriction found to have no harm ground, withdrawn with its enforcement",
+      "trajectory": "continuity-remedy",
+      "basis": "book-1/08-what-nobody-has-to-ask-permission-for.pins.nibli",
+      "pattern": "constructive",
+      "postures": [
+        "challenges"
+      ]
+    },
+    {
+      "id": "08-04",
+      "chapter": "book-1/08-what-nobody-has-to-ask-permission-for.md",
+      "section": "Freedom written down",
+      "domain": "Knowledge, communication and culture",
+      "family": "KNOWLEDGE-AND-FREE-FIELD",
+      "function": "ordinary",
+      "setting": "a residual-freedom record, and no register of belief or membership",
+      "trajectory": "works",
+      "basis": "book-1/08-what-nobody-has-to-ask-permission-for.pins.nibli",
+      "pattern": "constructive",
+      "postures": [
+        "chooses",
+        "associates"
+      ]
+    },
+    {
+      "id": "08-05",
+      "chapter": "book-1/08-what-nobody-has-to-ask-permission-for.md",
+      "section": "Information, inquiry and concentration",
+      "domain": "Knowledge, communication and culture",
+      "family": "KNOWLEDGE-AND-FREE-FIELD",
+      "function": "ordinary",
+      "setting": "public information, accessible communication, inquiry and creation, and an actor-side concentration finding",
+      "trajectory": "works",
+      "basis": "book-1/08-what-nobody-has-to-ask-permission-for.pins.nibli",
+      "pattern": "constructive",
+      "postures": [
+        "requests",
+        "creates"
+      ]
+    },
+    {
+      "id": "08-06",
+      "chapter": "book-1/08-what-nobody-has-to-ask-permission-for.md",
+      "section": "Who bears the cost",
+      "domain": "Knowledge, communication and culture",
+      "family": "KNOWLEDGE-AND-FREE-FIELD",
+      "function": "protective",
+      "setting": "the restricting body's burden, and who waits while it is met",
+      "trajectory": "contested",
+      "basis": "book-1/08-what-nobody-has-to-ask-permission-for.pins.nibli",
+      "pattern": "constructive",
+      "postures": [
+        "is acted upon"
+      ]
+    },
+    {
+      "id": "08-07",
+      "chapter": "book-1/08-what-nobody-has-to-ask-permission-for.md",
+      "section": "What this cannot settle",
+      "domain": "Knowledge, communication and culture",
+      "family": "KNOWLEDGE-AND-FREE-FIELD",
+      "function": "protective",
+      "setting": "a harm ground three attesters agree on, and truth no record certifies",
+      "trajectory": "unresolved",
+      "basis": "book-1/08-what-nobody-has-to-ask-permission-for.pins.nibli",
+      "pattern": "constructive",
+      "postures": [
+        "chooses"
+      ]
+    },
+    {
+      "id": "08-08",
+      "chapter": "book-1/08-what-nobody-has-to-ask-permission-for.md",
+      "section": "Argument: Two grounds and an end",
+      "domain": "Knowledge, communication and culture",
+      "family": "exempt",
+      "function": "argument",
+      "setting": "a closed list of harm grounds, against an open proportionality test",
+      "trajectory": "contested",
+      "basis": "exempt-element",
+      "pattern": "argument",
       "postures": [
         "chooses"
       ]
@@ -1104,6 +1396,22 @@
       ]
     },
     {
+      "id": "09-13",
+      "chapter": "book-1/09-work-pay-and-contribution.md",
+      "section": "Argument: Work above the floor",
+      "domain": "Economy, property, work and commons",
+      "family": "exempt",
+      "function": "argument",
+      "setting": "work that never touches the floor, against reciprocity-based conditionality",
+      "trajectory": "contested",
+      "basis": "exempt-element",
+      "pattern": "argument",
+      "postures": [
+        "chooses",
+        "works"
+      ]
+    },
+    {
       "id": "10-00",
       "chapter": "book-1/10-what-money-cannot-buy.md",
       "section": "(preamble)",
@@ -1237,6 +1545,21 @@
       "pattern": "constructive",
       "postures": [
         "receives"
+      ]
+    },
+    {
+      "id": "10-10",
+      "chapter": "book-1/10-what-money-cannot-buy.md",
+      "section": "Argument: Ownership under the floor, borrowing under law",
+      "domain": "Economy, property, work and commons",
+      "family": "exempt",
+      "function": "argument",
+      "setting": "conditional property and public finance without a debt ceiling, against a constitutional debt brake",
+      "trajectory": "contested",
+      "basis": "exempt-element",
+      "pattern": "argument",
+      "postures": [
+        "chooses"
       ]
     },
     {
@@ -1377,6 +1700,36 @@
       ]
     },
     {
+      "id": "11-09",
+      "chapter": "book-1/11-the-same-route-for-everyone.md",
+      "section": "What this cannot settle",
+      "domain": "Personhood and equality",
+      "family": "SUBSTANTIVE-EQUALITY-ORDINARY",
+      "function": "protective",
+      "setting": "closed lists of discrimination forms and barrier kinds, and an adjustment that must still reach the person",
+      "trajectory": "unresolved",
+      "basis": "book-1/11-the-same-route-for-everyone.pins.nibli",
+      "pattern": "constructive",
+      "postures": [
+        "receives"
+      ]
+    },
+    {
+      "id": "11-10",
+      "chapter": "book-1/11-the-same-route-for-everyone.md",
+      "section": "Argument: Effects, adjustments and measures that end",
+      "domain": "Personhood and equality",
+      "family": "exempt",
+      "function": "argument",
+      "setting": "discrimination by effect and ending positive measures, against ground-blind equality",
+      "trajectory": "contested",
+      "basis": "exempt-element",
+      "pattern": "argument",
+      "postures": [
+        "chooses"
+      ]
+    },
+    {
       "id": "12-00",
       "chapter": "book-1/12-a-place-in-which-life-remains-possible.md",
       "section": "(preamble)",
@@ -1483,6 +1836,21 @@
       ]
     },
     {
+      "id": "12-07",
+      "chapter": "book-1/12-a-place-in-which-life-remains-possible.md",
+      "section": "Argument: Conditions kept apart",
+      "domain": "Ecology, future generations and commons",
+      "family": "exempt",
+      "function": "argument",
+      "setting": "non-substitutable axes and a Guardian without a veto, against discounted cost-benefit",
+      "trajectory": "contested",
+      "basis": "exempt-element",
+      "pattern": "argument",
+      "postures": [
+        "chooses"
+      ]
+    },
+    {
       "id": "13-00",
       "chapter": "book-1/13-creatures-without-a-ballot.md",
       "section": "(preamble)",
@@ -1555,6 +1923,21 @@
       "pattern": "constructive",
       "postures": [
         "is acted upon"
+      ]
+    },
+    {
+      "id": "13-05",
+      "chapter": "book-1/13-creatures-without-a-ballot.md",
+      "section": "Argument: A claim of its own",
+      "domain": "Non-human animals",
+      "family": "exempt",
+      "function": "argument",
+      "setting": "animals as protected subjects, against a welfare regime that pays regard to welfare",
+      "trajectory": "contested",
+      "basis": "exempt-element",
+      "pattern": "argument",
+      "postures": [
+        "chooses"
       ]
     },
     {
@@ -1753,6 +2136,22 @@
       ]
     },
     {
+      "id": "14-13",
+      "chapter": "book-1/14-holding-a-role-in-somebodys-life.md",
+      "section": "Argument: Support before substitution",
+      "domain": "Life course, family, care and reproduction",
+      "family": "exempt",
+      "function": "argument",
+      "setting": "support before any substituted decision, against best-interests decision-making",
+      "trajectory": "contested",
+      "basis": "exempt-element",
+      "pattern": "argument",
+      "postures": [
+        "chooses",
+        "cares"
+      ]
+    },
+    {
       "id": "15-00",
       "chapter": "book-1/15-arriving-and-belonging.md",
       "section": "(preamble)",
@@ -1841,6 +2240,21 @@
       "pattern": "constructive",
       "postures": [
         "receives"
+      ]
+    },
+    {
+      "id": "15-07",
+      "chapter": "book-1/15-arriving-and-belonging.md",
+      "section": "Argument: The person before the status",
+      "domain": "Borders, migration, asylum and expulsion",
+      "family": "exempt",
+      "function": "argument",
+      "setting": "residence-based membership and the enforcement firewall, against a state's right to exclude",
+      "trajectory": "contested",
+      "basis": "exempt-element",
+      "pattern": "argument",
+      "postures": [
+        "chooses"
       ]
     },
     {

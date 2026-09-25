@@ -72,7 +72,7 @@ RECURRING = [
     "Kel", "Gia", "Wren", "Iris", "Tove", "Mael",
 ]
 HOME = {
-    "Ori": "01", "Juno": "06", "Marlo": "09", "Ansel": "09", "Coll": "09", "Nima": "09",
+    "Ori": "01", "Juno": "06", "Selin": "07", "Teo": "07", "Marlo": "09", "Ansel": "09", "Coll": "09", "Nima": "09",
     "Pico": "09", "Ona": "09", "Quin": "09", "Sata": "09", "Yano": "09",
     "Koa": "16", "Nia": "21", "Faro": "23", "Pax": "23", "Lior": "23",
     "Dara": "23", "Sena": "23", "Dev": "24", "Edo": "24", "Mira": "24",

@@ -66,15 +66,18 @@
     {
       "title": "The life the design leaves alone",
       "opener": {
-        "status": "planned"
+        "file": "part-2-unprecedented-injustice.md",
+        "title": "Unprecedented Injustice",
+        "status": "landed"
       },
       "chapters": [
         {
           "number": 7,
+          "file": "07-an-ordinary-week.md",
           "title": "An Ordinary Week",
           "role": "derived",
           "group": "engine",
-          "status": "planned"
+          "status": "landed"
         },
         {
           "number": 8,

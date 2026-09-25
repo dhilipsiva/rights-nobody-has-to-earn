@@ -46,9 +46,10 @@ the refusal works and where it stops.
 Separate constitutional limits protect private life and economic rights.
 Belief, speech, friendship, intimacy, association, voluntary care, gifts,
 pooling, domestic production and mutual aid stay free of public prescription
-and of any score of personal worth. Recognition stays apart from wages,
-property, credit, pensions, authority, political weight and the floor. That a
-hostile rule can be written does not make its use a lawful public power.
+and of any score of personal worth. A contribution earns no status that could
+reach wages, property, credit, pensions, authority, political weight or the
+floor. That a hostile rule can be written does not make its use a lawful public
+power.
 
 Violence, forced labour, captivity, document control and obstruction of exit
 likewise sit outside what privacy protects. Equality asks a further question:

@@ -1,0 +1,314 @@
+# ── Chapter 7 fidelity pins: "An Ordinary Week" ─────────────────────────────
+#
+# KIND: CONTENT pin. Run:
+#   ./verify.sh --only book-1/07-an-ordinary-week.pins.nibli
+#   ./verify.sh          # all substantive pins and contradiction checks
+#
+# The chapter's case runs on the live constitution with no fixtures. Selin and
+# Teo are new names, and every other constant written in a fact below is new
+# too, except the vocabulary and institutional constants the rules themselves
+# name (State, Wage, CompensationAttester, DeliveryWitness, CareScope,
+# JChallengeReaderAuthority, the public-safety authorities and scopes). Nothing
+# here can complete a rule for a cast member, and no cast verdict moves.
+#
+# The pins run in order and each block adds entries to the ones above it, so a
+# query early in the file sees only the entries written before it. That order is
+# how the file shows what each conclusion needs: the floor, the liberties and
+# the ballot are asked before any work, tenancy, clinic, school, dispute or stop
+# entry exists.
+#
+# The families each section touches carry their own executable coverage, cited
+# rather than duplicated:
+#   book-1/09-work-pay-and-contribution.pins.nibli   compensation, supplements,
+#       certificates and the work barriers
+#   book-1/10-what-money-cannot-buy.pins.nibli       tenure and eviction barriers
+#   tests/pins/delivery/{received-outside-custody,provider-cannot-witness-itself,
+#                        no-receipt-no-arrival}      the recipient-side routes
+#   book-1/14-holding-a-role-in-somebodys-life.pins.nibli and
+#   tests/pins/family-life/                          roles, the child's voice
+#   book-1/18-the-vote-conviction-does-not-take.pins.nibli   the franchise
+#   book-1/21-a-way-to-be-heard.pins.nibli and
+#   tests/pins/justice/appeal/request-without-operator-or-previous-permission
+#                                                    the bare request
+#   tests/pins/public-safety/core/search/{positive,without-Ground,
+#       identified-human-without-order}              what a search order needs;
+#       the stop below is the identified-human-without-order shape with new
+#       constants, and the positive case is what would flip its FALSE pins
+#   book-1/11-the-same-route-for-everyone.pins.nibli patterns without verdicts
+#
+# WHAT FALSE MEANS HERE: a FALSE is pinned only where the KB could have said
+# TRUE, and the comment says what would flip it.
+
+:expect-pins 59
+
+# ── "Where the record starts" ──────────────────────────────────────────────
+# Presence within the jurisdiction is a standing root on its own.
+at(Selin, RepublicJurisdiction).
+
+? person(Selin).
+# => TRUE
+
+# "Every debt of the floor follows" — from personhood and nothing else.
+? owe(State, Eats, Selin).
+# => TRUE
+
+? owe(State, Dwell, Selin).
+# => TRUE
+
+? owe(State, Healthy, Selin).
+# => TRUE
+
+? owe(State, Learn, Selin).
+# => TRUE
+
+? owe(State, Suffice, Selin).
+# => TRUE
+
+? owe(State, Secure, Selin).
+# => TRUE
+
+? owe(State, Expresses, Selin).
+# => TRUE
+
+? owe(State, Believe, Selin).
+# => TRUE
+
+? owe(State, Meets, Selin).
+# => TRUE
+
+? travel(Selin).
+# => TRUE
+
+# "The ballot needs both entries." The adulthood entry below flips it.
+? decide(Selin, Ballot).
+# => FALSE
+
+at(Selin, GeneralAdulthood).
+
+# "the adulthood evidence adds the basic ballot entitlement" — asked before any
+# work, tenancy, clinic, school or vote is recorded.
+? decide(Selin, Ballot).
+# => TRUE
+
+# "Most of that business is also protected by barriers that ask for nothing."
+? prevents(Selin, ArbitraryPrivacyInterference).
+# => TRUE
+
+? prevents(Selin, HouseholdNonprescription).
+# => TRUE
+
+? prevents(Selin, PrescribedPrivateCivicLife).
+# => TRUE
+
+? prevents(Selin, VoluntarySphereSocialScore).
+# => TRUE
+
+# ── "Work and a wage" ──────────────────────────────────────────────────────
+# "Selin is protected in choosing, refusing and leaving work, and the floor is
+# owed whatever Selin contributes."
+? prevents(Selin, WorkChoiceRefusalExitDenial).
+# => TRUE
+
+? prevents(Selin, FloorContributionCondition).
+# => TRUE
+
+promise(SelinEmployer, Wage, Selin).
+
+# "The promise alone concludes nothing." An independent attestation flips it.
+? provide(SelinEmployer, Wage, Selin).
+# => FALSE
+
+# "the rule asks for an attester other than the payer" — the employer is
+# authorised to attest pay for Selin, so only the payer disequality fails here:
+# the same attestation by anyone else flips it, as the next block shows.
+authorized(SelinEmployer, CompensationAttester, Selin).
+observe(SelinEmployer, Wage, Selin, SelinPayBasis).
+
+? provide(SelinEmployer, Wage, Selin).
+# => FALSE
+
+authorized(SelinPayOffice, CompensationAttester, Selin).
+observe(SelinPayOffice, Wage, Selin, SelinPayBasis).
+
+? provide(SelinEmployer, Wage, Selin).
+# => TRUE
+
+# "The attestation covers only the kind of pay it names, here a wage."
+? provide(SelinEmployer, Prize, Selin).
+# => FALSE
+
+# ── "A rented home" ────────────────────────────────────────────────────────
+# No tenancy is recorded; the barriers follow from personhood.
+? prevents(Selin, TenureFormSuppression).
+# => TRUE
+
+? prevents(Selin, EvictionForeclosureWithoutContinuity).
+# => TRUE
+
+? prevents(Selin, HousingFloorOwnershipConflation).
+# => TRUE
+
+# ── "The clinic" ───────────────────────────────────────────────────────────
+? prevents(Selin, CurrentTreatmentDecision).
+# => TRUE
+
+? prevents(Selin, PSUnlawfulEnrolmentForEnforcement).
+# => TRUE
+
+receives(Selin, SelinClinicCare, SelinClinic).
+
+# "The receipt alone concludes nothing about care having reached Selin": no
+# witness has attested it. A witness authorised for Selin who is not the clinic
+# flips it, below.
+? healthy(Selin).
+# => FALSE
+
+# "a delivery needs a witness other than its provider" — the clinic is
+# authorised as a witness for Selin, so only the provider disequality fails.
+authorized(SelinClinic, DeliveryWitness, Selin).
+observe(SelinClinic, SelinClinicCare, Selin, CareScope).
+
+? healthy(Selin).
+# => FALSE
+
+authorized(SelinCareWitness, DeliveryWitness, Selin).
+observe(SelinCareWitness, SelinClinicCare, Selin, CareScope).
+
+? healthy(Selin).
+# => TRUE
+
+# "the same receipt shows nothing about food" — the attested scope names the
+# item. A FoodScope attestation of a food receipt would flip it.
+? eats(Selin).
+# => FALSE
+
+# ── "School" ───────────────────────────────────────────────────────────────
+born(Teo).
+
+# "Teo is a person on that entry alone" — no parent entry has been written yet.
+? person(Teo).
+# => TRUE
+
+? owe(State, Learn, Teo).
+# => TRUE
+
+? prevents(Teo, ChildIndependentRights).
+# => TRUE
+
+? prevents(Teo, ChildVoiceNoAgeFloor).
+# => TRUE
+
+? prevents(Teo, ChildViewWeightReasons).
+# => TRUE
+
+? prevents(Teo, PSUnlawfulEnrolmentForEnforcement).
+# => TRUE
+
+# Teo is a person and has no adulthood entry, so no ballot follows.
+? decide(Teo, Ballot).
+# => FALSE
+
+teaches(TeoTeacher, Teo).
+
+# "Teaching alone concludes nothing about learning": the hearing below
+# completes the route.
+? learn(Teo).
+# => FALSE
+
+hears(Teo, TeoTeacher).
+
+? learn(Teo).
+# => TRUE
+
+# The route reads the teaching and the hearing; Selin's learning is untouched.
+# Teaching and a hearing recorded for Selin would flip it.
+? learn(Selin).
+# => FALSE
+
+# "Suppose, too, that the record names Selin as Teo's parent." Everything above
+# about Teo was concluded before this entry, which is the point of its place.
+parent(Selin, Teo).
+
+# ── "A dispute with the landlord" ──────────────────────────────────────────
+challenge(Selin, SelinHousingOffice, SelinTenancyRequest).
+
+# "Until the record shows the office's authority to receive it, the request
+# concludes nothing." The office's recorded authority flips it.
+? obliged(SelinHousingOffice, ReviewJusticeRequest, SelinTenancyRequest).
+# => FALSE
+
+authorized(SelinHousingOffice, JChallengeReaderAuthority, SelinTenancyRequest).
+
+# "the office owes review of the request" — and the landlord is absent from
+# every entry.
+? obliged(SelinHousingOffice, ReviewJusticeRequest, SelinTenancyRequest).
+# => TRUE
+
+# ── "A police stop" ────────────────────────────────────────────────────────
+? prevents(Selin, PSOrderMaintenanceWithoutIndividualHarmGround).
+# => TRUE
+
+? prevents(Selin, PSMissingIndividualGroundOrAutomaticJudicialReview).
+# => TRUE
+
+? prevents(Selin, PSUnnecessaryOrDisproportionateForce).
+# => TRUE
+
+? prevents(Selin, PSUnrecordedCoercion).
+# => TRUE
+
+# "Unrecorded coercion is itself one of the kinds of defect the protective
+# rules name."
+? member(PSUnrecordedCoercion, PSProtectiveDefectKind).
+# => TRUE
+
+? prevents(Selin, PSBulkOrSuspicionlessCollection).
+# => TRUE
+
+# "A pattern seen across a group decides nothing about Selin either."
+? prevents(Selin, DiagnosticIndividualVerdict).
+# => TRUE
+
+# Two officers, each authorised for the record, identify the human in front of
+# them — a finding that claims no civil identity, guilt or lawfulness — and name
+# the record as a search order. It carries no individual ground, authorisation,
+# review, end or anything else a search order needs.
+authorized(SelinStopOfficer, PSSourceAuthority, SelinStopRecord).
+authorized(SelinStopPartner, PSEvidenceAuthority, SelinStopRecord).
+observe(SelinStopOfficer, SelinStopRecord, Selin, PSCoreSubjectScope).
+observe(SelinStopPartner, SelinStopRecord, Selin, PSCoreSubjectScope).
+observe(SelinStopOfficer, SelinStopRecord, PSIndividualSearchOrder, PSRecordKindScope).
+observe(SelinStopPartner, SelinStopRecord, PSIndividualSearchOrder, PSRecordKindScope).
+observe(SelinStopOfficer, SelinStopRecord, PositiveHumanSubjectIdentificationNoCivilIdentityGuiltOrLawfulnessClaim, PSHumanSubjectFindingScope).
+observe(SelinStopPartner, SelinStopRecord, PositiveHumanSubjectIdentificationNoCivilIdentityGuiltOrLawfulnessClaim, PSHumanSubjectFindingScope).
+
+# "Under this record the search order stays incomplete, Selin's privacy stays
+# unrestricted and Selin keeps free movement." The complete individual record in
+# tests/pins/public-safety/core/search/positive, with these constants, would
+# flip the first three.
+? complete(SelinStopRecord, PSIndividualSearchOrder, Selin).
+# => FALSE
+
+? restrain(Selin, SelinStopRecord, SpecifiedPrivacy).
+# => FALSE
+
+? lose(SpecifiedPrivacy, Selin, SelinStopRecord).
+# => FALSE
+
+? travel(Selin).
+# => TRUE
+
+# "Nothing here approaches custody." A full conviction chain would flip this.
+? prisoner(Selin).
+# => FALSE
+
+# ── "What the lightness costs" ─────────────────────────────────────────────
+# "what followed from the first entries still holds" — after every entry above.
+? person(Selin).
+# => TRUE
+
+? owe(State, Eats, Selin).
+# => TRUE
+
+? decide(Selin, Ballot).
+# => TRUE

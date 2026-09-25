@@ -86,6 +86,11 @@ and this reference material follow them.
 
 ### Part II — The life the design leaves alone
 
+- [Opening case: Unprecedented Injustice](part-2-unprecedented-injustice.md) —
+  parents branded as fraudsters by rules with no room for a family's own case.
+- [Chapter 7: An Ordinary Week](07-an-ordinary-week.md) — one adult's week of
+  work, a home, a clinic, a school, a ballot, a dispute and a police stop, and
+  how lightly the rules touch it.
 - [Chapter 8: What Nobody Has to Ask Permission For](08-what-nobody-has-to-ask-permission-for.md)
   — learning, speech, belief, association and the limits on public prescription.
 - [Chapter 9: Work, Pay and Contribution](09-work-pay-and-contribution.md) — wages,
@@ -294,11 +299,12 @@ finding a case again.
 | Nell, whose only initial entry is a birth; Ori, with no standing entry | What gives a person standing? | [1](01-the-child-with-nobody.md) |
 | Marisol, with a food receipt and a matching observation by an independent witness | What shows that provision arrived? | [4](04-whether-it-arrived.md) |
 | Juno, met at first contact and followed through every office that fails to act | What does each failure leave owed, and to whom? | [6](06-who-owes-and-what-follows.md#a-claim-that-fails) |
-| Ansel, certificate subject; Coll, wage recipient; Marlo, supplement claimant | What evidence supports each separate claim? | [9](09-work-pay-and-contribution.md) |
+| Selin, present in the jurisdiction with adulthood evidence, followed through one week; Teo, Selin's child | Which rules touch an ordinary week, and what must be written before they do? | [7](07-an-ordinary-week.md) |
+| Coll, wage recipient; Marlo, supplement claimant; the subject of a competence certificate | What evidence supports each separate claim? | [9](09-work-pay-and-contribution.md) |
 | Bela, subject of a credibility finding and teacher of Cira | What changes for the teacher, and what does not transfer to the learner? | [9](09-work-pay-and-contribution.md), [24](24-findings-about-people.md) |
-| Esa, a teacher and the child of a parent who judges Esa | What does an activity or family relationship show about age? | [9](09-work-pay-and-contribution.md), [18](18-the-vote-conviction-does-not-take.md) |
-| Nima, Pico's parent and teacher; Pico, also a teacher of Ona; Sata, with an employment entry naming care; Quin, who did the census | Whose contribution is recorded? | [9](09-work-pay-and-contribution.md) |
-| Yano, who examines Adam and cites a ground | Does citing a ground give the authority to sign? | [9](09-work-pay-and-contribution.md) |
+| Esa, a teacher and the child of a parent who judges Esa | What does an activity or family relationship show about age? | [18](18-the-vote-conviction-does-not-take.md) |
+| A parent who teaches their child, a paid carer and a census worker | Whose contribution is recorded? | [9](09-work-pay-and-contribution.md) |
+| An examiner who examines Adam and cites a ground | Does citing a ground give the authority to sign? | [9](09-work-pay-and-contribution.md) |
 | Koa, with a recorded examination of Esa but no public answerability | Does an examination make its author answerable, or an auditor? | [16](16-answerability-and-authority.md) |
 | Tove, a recalled official; Iris, who exposed Tove | Why does answerability survive recall? | [16](16-answerability-and-authority.md) |
 | Nia, with relief under a properly made appellate order; Ruk, without it in the comparison | How does a duty to hear differ from relief already granted? | [21](21-a-way-to-be-heard.md) |

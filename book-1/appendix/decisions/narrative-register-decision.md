@@ -74,6 +74,19 @@ Chapters 26 and 27. The opening note now names the argument sections and the
 opening case among the places the author speaks. The exact prose is
 `session-drafted, author-approved under delegated approval (2026-09-13)`.
 
+## Part II in the ruled shape — item 55, 2026-09-25
+
+Part II carries both channels as Part I does. Its labelled opening case,
+*Unprecedented Injustice*, tells the Dutch childcare-benefits affair from the
+parliamentary inquiry's report, and Chapter 2's argument points to it rather
+than repeating it. Chapters 8–15 close with argument sections, and the new
+Chapter 7, *An Ordinary Week*, follows one adult through a week in which each
+added fact enters with "Suppose" and each conclusion is pinned: a name and the
+entries recorded about them, with no timeline beyond the pins, no inner life
+and no composite biography. The opening note names the opening cases of both
+Parts among the places the author speaks. The exact prose is `session-drafted,
+author-approved under delegated approval (2026-09-13)`.
+
 ## Final sequential review — item 33, 2026-09-21
 
 The fresh read covers all 34 manifest inputs after items 21–32. It finds one
