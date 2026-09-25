@@ -106,8 +106,9 @@ No glossary or technical preparation is needed. Read the cases in order through
 Part V. If you want the reasons before the institutional detail, the
 [map of choices](reference.md#the-choices-and-their-arguments) at the back
 leads to them, beside the glossary and index. Continue to the method only if
-you want to see how the rules are run and tested. The current text and a
-companion that runs selected cases in your browser are at
+you want to see how the rules are run and tested. The current text, the
+constitution itself in numbered plain-language articles, and a companion that
+runs selected cases in your browser are at
 [dhilipsiva.dev/rights-nobody-has-to-earn](https://dhilipsiva.dev/rights-nobody-has-to-earn/);
 its answers concern the records given to it, not what any society delivered.
 

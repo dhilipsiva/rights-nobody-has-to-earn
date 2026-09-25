@@ -152,6 +152,8 @@ holds back is a question for the second book.
 
 ## Argument: Two grounds and an end
 
+*The companion states these rules as [Article 7](https://dhilipsiva.dev/rights-nobody-has-to-earn/constitution/#article-7).*
+
 I choose to put the whole case for a restriction on the public body, and to
 write the freedom that remains as duties on a named body, because a liberty
 that lasts only until an official objects is held on sufferance. Freedom read

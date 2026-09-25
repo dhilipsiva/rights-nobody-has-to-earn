@@ -162,6 +162,8 @@ the power to act from becoming power to decide whose rights count.
 
 ## Argument: The person before the status
 
+*The companion states these rules as [Article 14](https://dhilipsiva.dev/rights-nobody-has-to-earn/constitution/#article-14).*
+
 I make presence the ground of help and residence the ground of the vote because
 the people a government acts on every day are the people living under it. A
 status test sorts them into those who may safely ask and those who may not,

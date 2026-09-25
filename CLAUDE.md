@@ -133,6 +133,59 @@ reinstate the retired tooling or workflow.
 Grouped by kind. Dates in each heading are the ratification dates; a ruling
 that was later implemented or narrowed carries that supersession inline.
 
+### Item 61 — the constitution in plain language, in the companion, 2026-09-25
+
+Ruling D4 is implemented. `ui/articles.json` holds thirty-one numbered
+plain-language articles, organised by the book's Parts with two general
+provisions after them — versions of the record and time, and interpretation —
+each marking the part of the protected core it holds. Every article names the
+rule families that implement it (a generated block's `<NAME-BEGIN>` marker or
+one of the formal source's hand-written `Article` sections), the contract card
+or decision that governs them, the tests that check them and the chapters that
+argue them. The map was drawn from the source's families and the text written
+by hand. The interpretation article's burden half traces to the fail-closed
+rules (`Article 0`, `T3-RULES`, `CUSTODY-ADJUDICATION-RULES`) and their tests;
+its protective-reading half is marked partly formal with its reason recorded as
+a deliberate gap, and Chapter 30 cites it where it ranks open standards read
+narrowly.
+
+Each article records its lineage: one to three provisions of existing
+constitutions, found and checked on the Constitute Project with the words
+quoted, and a statement of what the article shares with them and what it adds.
+Four research passes fetched each cited page; notes that described the search
+were reworded to name only the constitutions compared.
+
+`articles_tests` (four development tests) reads the formal source's regions —
+generated blocks, and hand-written sections from each `# ───` banner — and
+holds the map to account: every region that carries a rule belongs to an
+article, every article names existing families, records and tests, a non-formal
+part states its reason, every article cited from a chapter resolves, and every
+lineage entry carries a Constitute locator and its quoted words; a sabotage test
+confirms the map fails when a family or test goes missing or a gap loses its
+reason. Each derived chapter's argument section now opens by citing, with links,
+the articles its rules implement, so the numbers stay out of derived text.
+
+The companion publishes the articles at `constitution/`, with a navigation
+link, a Markdown copy, a sitemap entry and a browser-test route; the page labels
+the formal source's own sections as the source's so they are not read as the
+plain-language numbers. The game data now follows the current book: every
+authored cost and fault note cites a section that exists, texts that used
+retired vocabulary or described the pre-restructure design are rewritten from
+the sections they cite, and scenario and joint labels no longer say "void" or
+"pen"; ids stay, so shared links keep working. The opening points to the
+articles, the choices map and six dated appendix records point to where each
+argument now lives, and the reading-order decision records the ruling's
+implementation. The exact prose is `session-drafted, author-approved under
+delegated approval (2026-09-13)`.
+
+No rule, pin or suite changes, so item 58's complete run on the same formal
+inputs stands. All 149 authoring development tests pass, with five declared
+ignored, as do the sixteen prose-lint, nine book-builder and six companion
+input unit tests, the companion's five library tests and the prose check. The
+companion's static exporter renders 43 routes, the constitution page with all
+thirty-one article anchors; the browser suite, which needs a served build, was
+not run here.
+
 ### Item 60 — the opening rewritten, 2026-09-25
 
 The opening note now begins with ruling D1's promise beneath its title and then
@@ -1628,7 +1681,10 @@ never extends a power) traces to existing fail-closed rules and their pins. Its
 protective-reading half (where a standard is open, the reading more protective
 of the floor and of liberty prevails) is a declared non-formal article, listed
 as a deliberate traceability gap. R4 stands, as does the rule that the formal
-source lives beside the ordered inputs. Items 61 and 62 implement it.
+source lives beside the ordered inputs. Items 61 and 62 implement it. **Implemented
+2026-09-25 (item 61):** thirty-one articles in `ui/articles.json`, published at
+the companion's `constitution/` and cited from every chapter's argument
+section; the method's part is item 62.
 
 **D5 — the child returns where the result differs.** R1's criterion becomes
 "produces a different or instructive result" instead of "can run the rule".

@@ -196,6 +196,8 @@ The next chapter asks what else may enter this limited record about the person.
 
 ## Argument: Standing before identity
 
+*The companion states these rules as [Article 1](https://dhilipsiva.dev/rights-nobody-has-to-earn/constitution/#article-1).*
+
 I let standing follow from a birth or an encounter because a floor is tested by
 the people least able to prove who they are: a newborn nobody registered, a
 stateless adult, someone who arrives with nothing. A rule that waits for proof

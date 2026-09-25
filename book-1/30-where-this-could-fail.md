@@ -71,15 +71,17 @@ finding comes with reasons that a challenge can test before a separate
 responding office, with an alternate behind one that stays silent. Where a
 threshold could be written as a number, such as an ecological ceiling, the
 constitution leaves it to democratic law inside an independently reviewed
-envelope, so that at least the choice is public. A principle that the more
-protective reading prevails where a standard is open would be one of
-interpretation, which the formal source cannot state, and the design states
-none.
+envelope, so that at least the choice is public. The companion's plain-language
+constitution states, as [Article
+31](https://dhilipsiva.dev/rights-nobody-has-to-earn/constitution/#article-31),
+that where a standard is open the reading more protective of the floor and of
+liberty prevails. That is a principle of interpretation, which the formal
+source cannot state, so the article marks it as beyond what the rules can
+check.
 
-A fix would take a published interpretation principle that everyone applying
-the constitution, courts included, is bound to, and outcome data for each open
-standard, so that a reading drifting narrow becomes visible. Where readings
-drift despite both, the standard should be defined more closely by amendment.
+A fix would take outcome data for each open standard, so that a reading
+drifting narrow despite that article becomes visible. Where readings drift
+anyway, the standard should be defined more closely by amendment.
 
 ## Independent review is captured
 

@@ -274,6 +274,8 @@ urgent claim: that a crisis requires the ordinary limits to give way.
 
 ## Argument: Uses bound to their holding, decisions to a person
 
+*The companion states these rules as [Article 19](https://dhilipsiva.dev/rights-nobody-has-to-earn/constitution/#article-19).*
+
 I tie every use of a record to one reviewed holding, matching its subject,
 domain, purpose, version and period, because a record's power over a person
 grows with each place it reaches, and so does the reach of its mistakes. Bound

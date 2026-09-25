@@ -143,6 +143,8 @@ perform their duties.
 
 ## Argument: Answerable for good, empowered for now
 
+*The companion states these rules as Articles [15](https://dhilipsiva.dev/rights-nobody-has-to-earn/constitution/#article-15) and [30](https://dhilipsiva.dev/rights-nobody-has-to-earn/constitution/#article-30).*
+
 I keep answerability and power apart because they protect different people.
 Power to act has to be current and scoped, ending when its source ends.
 Answerability protects whoever examines how that power was used, and the need

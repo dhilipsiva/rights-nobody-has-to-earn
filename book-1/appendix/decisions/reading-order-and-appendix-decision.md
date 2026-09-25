@@ -71,6 +71,41 @@ acceptance comes last as this decision's §6 required; the pen strand's
 persisting clearance and custody facts precede the other two and change none of
 their verdicts. The map is `tools/maps/2026-09-25-restructure.json`.
 
+## The constitution in plain language — item 61, 2026-09-25
+
+Ruling D4 is implemented. The companion publishes the constitution as
+thirty-one numbered plain-language articles at `constitution/`, organised by
+the book's Parts with two general provisions after them, the protected core
+marked on each article that holds part of it. The articles live in
+`ui/articles.json`. Each names the rule families that implement it — a
+generated block's marker, or one of the formal source's hand-written
+`Article` sections, which the page labels as the source's so they are not
+confused with the plain-language numbers — the contract card or decision that
+governs them, the tests that check them and the chapters that argue them. The
+map was drawn from the source's families and the text written by hand; no
+machine-rendered English is used.
+
+The interpretation article is the last. Its burden half (a restrictive
+conclusion needs complete positive evidence, and absence never creates or
+extends a power) traces to the fail-closed rules and their tests. Its
+protective-reading half (where a standard is open, the reading more protective
+of the floor and of liberty prevails) is marked as partly formal, with its
+reason recorded as a deliberate gap. Chapter 30 cites it where it ranks open
+standards read narrowly.
+
+`articles_tests` holds the map to account: every family of the formal source
+that carries a rule belongs to an article, every article names families, a
+record and a test that exist, a non-formal part states its reason, and every
+article number a chapter cites resolves; its sabotage controls fail when a
+family or test goes missing or a gap loses its reason. Each chapter's argument
+section opens by citing the articles its rules implement. Each article records
+its lineage — provisions of existing constitutions found and checked through
+the Constitute Project, with the words quoted — and a statement of what it
+shares with them and what it adds. R4 is unchanged: the formal source stays
+outside the book's ordered inputs, and the method stays the technical
+appendix. The exact prose of the articles and citations is `session-drafted,
+author-approved under delegated approval (2026-09-13)`.
+
 ## The opening rewritten — item 60, 2026-09-25
 
 Ruling D1's promise now opens the opening note, beneath its title, so it is the

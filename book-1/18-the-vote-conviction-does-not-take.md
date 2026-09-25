@@ -138,6 +138,8 @@ person, including the evidence on which political rights depend.
 
 ## Argument: The vote outside the sentence
 
+*The companion states these rules as [Article 18](https://dhilipsiva.dev/rights-nobody-has-to-earn/constitution/#article-18).*
+
 I keep the ballot out of punishment because the vote marks membership, and a
 conviction answers for one act. A sentence takes movement. Taking the vote too
 would let a government choose, through its own prosecutions, who votes on it,

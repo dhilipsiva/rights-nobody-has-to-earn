@@ -66,6 +66,36 @@ pub struct Companion {
     pub questions: Vec<Question>,
     pub terms: Vec<Term>,
 }
+#[derive(Clone, Deserialize)]
+pub struct Comparison {
+    pub constitution: String,
+    pub provision: String,
+    pub url: String,
+    pub quote: String,
+}
+#[derive(Clone, Deserialize)]
+pub struct Article {
+    pub number: u8,
+    pub part: usize,
+    pub title: String,
+    pub core: String,
+    pub text: Vec<String>,
+    pub families: Vec<String>,
+    pub records: Vec<String>,
+    pub pins: Vec<String>,
+    pub chapters: Vec<u8>,
+    pub formal: String,
+    pub gap: Option<String>,
+    pub lineage: Vec<Comparison>,
+    pub novelty: String,
+}
+#[derive(Deserialize)]
+pub struct Articles {
+    pub title: String,
+    pub note: String,
+    pub parts: Vec<String>,
+    pub articles: Vec<Article>,
+}
 #[derive(Clone, Deserialize, Serialize, PartialEq)]
 pub struct Verdict {
     pub query: String,
@@ -109,6 +139,12 @@ pub fn companion() -> &'static Companion {
         serde_json::from_str(include_str!("../companion.json")).expect("companion copy")
     })
 }
+pub fn articles() -> &'static Articles {
+    static A: OnceLock<Articles> = OnceLock::new();
+    A.get_or_init(|| {
+        serde_json::from_str(include_str!("../articles.json")).expect("plain-language articles")
+    })
+}
 pub fn cases() -> &'static Cases {
     static C: OnceLock<Cases> = OnceLock::new();
     C.get_or_init(|| {
@@ -139,12 +175,13 @@ pub fn route_title(path: &str) -> String {
         "about/" => "About the book and companion",
         "read/" => "Read Book 1",
         "search/" => "Search Book 1",
+        "constitution/" => "The constitution in plain language",
         _ => "Page not found",
     }
     .into()
 }
 pub fn routes() -> Vec<String> {
-    ["", "read/", "search/"]
+    ["", "read/", "search/", "constitution/"]
         .iter()
         .map(|p| format!("{PREFIX}{p}"))
         .chain(book().pages.iter().map(|p| p.path.clone()))

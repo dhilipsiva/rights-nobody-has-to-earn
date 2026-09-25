@@ -120,3 +120,70 @@ pub fn Search() -> Element {
         }
     } }
 }
+/// The formal source also has hand-written sections headed "Article …"; name
+/// them as the source's so they are not read as the plain-language numbers.
+fn family_label(family: &str) -> String {
+    if family.starts_with("Article ") {
+        format!("the source's {family}")
+    } else {
+        family.to_owned()
+    }
+}
+#[component]
+pub fn Constitution() -> Element {
+    let doc = articles();
+    let blob = |path: &str| format!("{REPOSITORY}/blob/main/{path}");
+    rsx! { div { class: "container page",
+        PageHeading { eyebrow: "the plain-language constitution", title: "{doc.title}", p { "{doc.note}" } }
+        nav { aria_label: "Articles", class: "q-card pad",
+            for (index, part) in doc.parts.iter().enumerate() {
+                h2 { class: "toc-part", "{part}" }
+                ol { class: "toc-list", start: "{doc.articles.iter().find(|a| a.part == index + 1).map(|a| a.number).unwrap_or(1)}",
+                    for article in doc.articles.iter().filter(|a| a.part == index + 1) {
+                        li { a { href: "#article-{article.number}", "Article {article.number}. {article.title}" } }
+                    }
+                }
+            }
+        }
+        for (index, part) in doc.parts.iter().enumerate() {
+            section { aria_label: "{part}",
+                h2 { "{part}" }
+                for article in doc.articles.iter().filter(|a| a.part == index + 1) {
+                    article { id: "article-{article.number}", class: "q-card pad article",
+                        h3 { "Article {article.number}. {article.title}" }
+                        if article.core == "whole" { p { class: "eyebrow", "Protected core: beyond amendment." } }
+                        else if let Some(scope) = article.core.strip_prefix("part: ") { p { class: "eyebrow", "Protected core in part: {scope}." } }
+                        ol { for clause in article.text.iter() { li { "{clause}" } } }
+                        if let Some(gap) = &article.gap { p { class: "note-text", strong { "Not formal in part. " } "{gap}" } }
+                        details {
+                            summary { "Where it comes from, and what it adds" }
+                            p { "Argued in " for (i, n) in article.chapters.iter().enumerate() {
+                                if i > 0 { ", " }
+                                NavLink { to: chapter(*n).path.clone(), "Chapter {n}" }
+                            } "." }
+                            p { "Rule families in the " a { href: blob("book-1/source/constitution.nibli"), "formal source" } ": " for (i, family) in article.families.iter().enumerate() {
+                                if i > 0 { ", " }
+                                "{family_label(family)}"
+                            } "." }
+                            p { "Governed by: " for (i, record) in article.records.iter().enumerate() {
+                                if i > 0 { "; " }
+                                a { href: blob(record), "{record}" }
+                            } "." }
+                            p { "Tested by: " for (i, pin) in article.pins.iter().enumerate() {
+                                if i > 0 { "; " }
+                                a { href: blob(pin), "{pin}" }
+                            } "." }
+                            if !article.lineage.is_empty() {
+                                p { "Compare, through the Constitute Project:" }
+                                ul { for c in article.lineage.iter() {
+                                    li { a { href: "{c.url}", "{c.constitution}, {c.provision}" } ": “{c.quote}”" }
+                                } }
+                            }
+                            p { "{article.novelty}" }
+                        }
+                    }
+                }
+            }
+        }
+    } }
+}

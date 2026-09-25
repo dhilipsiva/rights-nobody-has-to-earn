@@ -157,7 +157,7 @@ pub fn App() -> Element {
                             button { class: "q-btn q-btn--ghost", aria_label: "Book back", disabled: history.read().is_empty(), onclick: move |_| session.back(), "←" }
                             button { class: "q-btn q-btn--ghost", aria_label: "Book forward", disabled: future.read().is_empty(), onclick: move |_| session.forward(), "→" }
                         }
-                        for (route, label) in [("", "play"), ("read", "read"), ("search", "search")] {
+                        for (route, label) in [("", "play"), ("read", "read"), ("constitution", "constitution"), ("search", "search")] {
                             NavLink { to: format!("{PREFIX}{}", if route.is_empty() { String::new() } else { format!("{route}/") }), current: if section == route { "page" } else { "" }, "{label}" }
                         }
                         NavLink { to: format!("{PREFIX}#dossier"), "dossier" }
@@ -172,6 +172,7 @@ pub fn App() -> Element {
                 if path == PREFIX { game::Game {} }
                 else if path == format!("{PREFIX}read/") { pages::Contents {} }
                 else if path == format!("{PREFIX}search/") { pages::Search {} }
+                else if path == format!("{PREFIX}constitution/") { pages::Constitution {} }
                 else if let Some(page) = book().pages.iter().find(|p| p.path == path) { pages::Reader { key: "{page.stem}", page: page.clone() } }
                 else { div { class: "container page", PageHeading { eyebrow: "404", title: "Page not found", p { "This address does not identify a page in Book 1." } } NavLink { to: format!("{PREFIX}read/"), "Browse the contents →" } } }
             }

@@ -290,6 +290,8 @@ structure, including the voter whom the State has confined.
 
 ## Argument: Divided without deadlock
 
+*The companion states these rules as Articles [16](https://dhilipsiva.dev/rights-nobody-has-to-earn/constitution/#article-16) and [17](https://dhilipsiva.dev/rights-nobody-has-to-earn/constitution/#article-17).*
+
 I divide the common government so that no hand both holds power and chooses
 who checks it, while every route can still reach a decision. The executive is a
 council composed by the Assembly and holding office on its confidence, so

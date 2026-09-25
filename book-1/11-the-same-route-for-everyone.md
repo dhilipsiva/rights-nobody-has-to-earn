@@ -190,6 +190,8 @@ route can secure alone: land, water, living systems and the commons.
 
 ## Argument: Effects, adjustments and measures that end
 
+*The companion states these rules as [Article 10](https://dhilipsiva.dev/rights-nobody-has-to-earn/constitution/#article-10).*
+
 I judge discrimination by its purpose or its effect because a rule fair in form
 can still shut people out. In *Griggs v. Duke Power Co.* the United States
 Supreme Court read the Civil Rights Act of 1964 to reach practices "fair in

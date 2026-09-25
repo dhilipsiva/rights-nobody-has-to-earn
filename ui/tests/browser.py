@@ -30,12 +30,12 @@ def main():
     content = json.loads((UI/'dist/rights-nobody-has-to-earn/content.json').read_text(encoding='utf-8'))
     cases = json.loads((UI/'generated/cases.json').read_text(encoding='utf-8'))['cases']
     expected = json.loads((UI/'tests/expectations.json').read_text(encoding='utf-8'))
-    routes = ['', 'read/', 'search/'] + [f'read/{Path(p["source"]).stem}/' for p in content['pages']]
+    routes = ['', 'read/', 'search/', 'constitution/'] + [f'read/{Path(p["source"]).stem}/' for p in content['pages']]
     manifest = json.loads((UI.parent/'book-1/contents.json').read_text(encoding='utf-8'))
     inputs = len(manifest['front']) + len(manifest['back']) + sum(
         (p.get('opener', {}).get('status') == 'landed') + sum(c['status'] == 'landed' for c in p['chapters'])
         for p in manifest['parts'])
-    assert len(content['pages']) == inputs and len(routes) == inputs + 3 and len(cases) == 78
+    assert len(content['pages']) == inputs and len(routes) == inputs + 4 and len(cases) == 78
     for path in ['game.json', 'cases.json']:
         def inspect(value):
             if isinstance(value, dict):
@@ -50,6 +50,9 @@ def main():
         assert md.is_file() and '<!--' not in md.read_text(encoding='utf-8')
     assert '/search/' not in (UI/'dist/rights-nobody-has-to-earn/sitemap.xml').read_text(encoding='utf-8')
     assert 'precomputed' not in (UI/'dist/rights-nobody-has-to-earn/index.md').read_text(encoding='utf-8')
+    articles = json.loads((UI/'articles.json').read_text(encoding='utf-8'))['articles']
+    constitution = (UI/'dist/rights-nobody-has-to-earn/constitution/index.html').read_text(encoding='utf-8')
+    assert all(f'id="article-{a["number"]}"' in constitution for a in articles), 'an article has no anchor'
     report = {'routes':len(routes), 'reader_inputs':inputs, 'screens':[], 'engine':[], 'contrast':[]}
     errors = []
     with sync_playwright() as p:

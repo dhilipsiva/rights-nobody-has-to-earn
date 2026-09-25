@@ -208,6 +208,8 @@ access works when the obstacle is something other than price.
 
 ## Argument: Ownership under the floor, borrowing under law
 
+*The companion states these rules as [Article 9](https://dhilipsiva.dev/rights-nobody-has-to-earn/constitution/#article-9).*
+
 I keep property, contract, enterprise and public finance conditional on the
 floor and the other protections because each is a route by which one person's
 lawful choices come to govern another's life. A landlord's asset is someone's

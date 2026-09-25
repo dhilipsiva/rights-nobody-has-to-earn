@@ -117,6 +117,8 @@ person is owed where it was.
 
 ## Argument: Liberty is what a sentence takes
 
+*The companion states these rules as Articles [3](https://dhilipsiva.dev/rights-nobody-has-to-earn/constitution/#article-3) and [26](https://dhilipsiva.dev/rights-nobody-has-to-earn/constitution/#article-26).*
+
 I keep the prisoner among persons because a sentence answers for an act, and
 liberty is the whole of what it takes. If conviction moved someone out of the
 class owed the floor, the office that prosecutes would also decide whom the

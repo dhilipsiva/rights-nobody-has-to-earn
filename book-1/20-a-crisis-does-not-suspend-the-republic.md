@@ -174,6 +174,8 @@ route itself fails.
 
 ## Argument: Four powers and every right in force
 
+*The companion states these rules as Articles [16](https://dhilipsiva.dev/rights-nobody-has-to-earn/constitution/#article-16), [20](https://dhilipsiva.dev/rights-nobody-has-to-earn/constitution/#article-20) and [21](https://dhilipsiva.dev/rights-nobody-has-to-earn/constitution/#article-21).*
+
 I give a declaration exactly four powers (faster procedure, redirected
 resources, requisition with return or compensation, and restriction aimed at
 its named hazard) and keep every right in force beside them. A crisis is when

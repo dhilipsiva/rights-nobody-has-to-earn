@@ -238,6 +238,8 @@ a confined person retains.
 
 ## Argument: A restriction the size of the act
 
+*The companion states these rules as [Article 25](https://dhilipsiva.dev/rights-nobody-has-to-earn/constitution/#article-25).*
+
 I restrict only the subject's signature on a new credibility finding because
 that is the act the finding is about. A credibility finding records deceit, a
 fabricated record, a concealed conflict or withheld evidence in one identified

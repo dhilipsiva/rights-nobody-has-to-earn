@@ -172,6 +172,8 @@ protection for someone who exposes authority.
 
 ## Argument: A fixed core behind an open route
 
+*The companion states these rules as Articles [23](https://dhilipsiva.dev/rights-nobody-has-to-earn/constitution/#article-23) and [30](https://dhilipsiva.dev/rights-nobody-has-to-earn/constitution/#article-30).*
+
 I put a small core beyond amendment because a majority able to withdraw
 standing, the floor, due process or a working remedy from its opponents could
 change who takes part in the next decision, and animals have no ballot with

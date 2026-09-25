@@ -299,6 +299,8 @@ The next chapter asks what the record can do when it detects a breach.
 
 ## Argument: A power that takes movement and then expires
 
+*The companion states these rules as Articles [21](https://dhilipsiva.dev/rights-nobody-has-to-earn/constitution/#article-21), [28](https://dhilipsiva.dev/rights-nobody-has-to-earn/constitution/#article-28), [30](https://dhilipsiva.dev/rights-nobody-has-to-earn/constitution/#article-30) and [31](https://dhilipsiva.dev/rights-nobody-has-to-earn/constitution/#article-31).*
+
 I keep a power to confine because a constitutional ban would rule it out even
 where an adjudicator finds, on the evidence of one case, that less restrictive
 measures cannot protect another person from further harm. I let it take

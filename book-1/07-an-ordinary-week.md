@@ -158,6 +158,8 @@ belongs to the second book.
 
 ## Argument: Power that must write before it touches
 
+*The companion states these rules as Articles [1](https://dhilipsiva.dev/rights-nobody-has-to-earn/constitution/#article-1), [3](https://dhilipsiva.dev/rights-nobody-has-to-earn/constitution/#article-3), [7](https://dhilipsiva.dev/rights-nobody-has-to-earn/constitution/#article-7), [8](https://dhilipsiva.dev/rights-nobody-has-to-earn/constitution/#article-8) and [22](https://dhilipsiva.dev/rights-nobody-has-to-earn/constitution/#article-22).*
+
 I leave ordinary life to the person living it, and let the rules reach it only
 through specific records that name who wrote them, because a person can be
 unfree without ever being interfered with. Philip Pettit defends freedom as

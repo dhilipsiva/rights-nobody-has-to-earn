@@ -40,6 +40,14 @@ answers. There is no result-reuse build mode.
 
 ## Inputs and execution
 
+`articles.json` holds the constitution in plain language (ruling D4): numbered
+articles organised by the book's Parts, each naming the rule families, the
+contract or decision and the tests that implement it, its lineage through the
+Constitute Project and what it adds. The reader publishes them at
+`constitution/`, and the chapters' argument sections cite them by number. The
+repository's `articles_tests` development tests check the map against the
+formal source in both directions and resolve every citation.
+
 `game.json` holds authored moves, query labels, interpretation categories, costs,
 and dossier discussion. `case-map.json` explicitly maps each move to source
 checkpoints, suite fixtures, additional premises and cross-chapter references.

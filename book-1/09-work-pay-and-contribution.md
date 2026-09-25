@@ -267,6 +267,8 @@ that permission ends.
 
 ## Argument: Work above the floor
 
+*The companion states these rules as [Article 8](https://dhilipsiva.dev/rights-nobody-has-to-earn/constitution/#article-8).*
+
 I keep employment, its refusal and its change outside the floor because a floor
 that waits on work turns the need for food into a way of getting labour, and
 those least able to work, or to find it, feel that first. The International

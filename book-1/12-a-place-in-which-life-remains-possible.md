@@ -212,6 +212,8 @@ whether any order was obeyed, belong to the second book.
 
 ## Argument: Conditions kept apart
 
+*The companion states these rules as [Article 11](https://dhilipsiva.dev/rights-nobody-has-to-earn/constitution/#article-11).*
+
 I give each person an environmental right beside the floor because
 environmental harm reaches people before any meal or roof is lost, and courts
 have found it within rights people already hold. The Supreme Court of the

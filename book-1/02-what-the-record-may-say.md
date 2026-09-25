@@ -207,6 +207,8 @@ With the standing root present, the next question is what every person is owed.
 
 ## Argument: Why the record is closed by name
 
+*The companion states these rules as Articles [2](https://dhilipsiva.dev/rights-nobody-has-to-earn/constitution/#article-2) and [31](https://dhilipsiva.dev/rights-nobody-has-to-earn/constitution/#article-31).*
+
 I close the record by name because an entry about a person travels. Once an
 official or a system may write that someone is unreliable, undeserving or a
 risk, the next office reads that entry as a fact another office checked, and

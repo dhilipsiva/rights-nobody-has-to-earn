@@ -128,6 +128,8 @@ of genuine shortage.
 
 ## Argument: Evidence from the person served
 
+*The companion states these rules as [Article 4](https://dhilipsiva.dev/rights-nobody-has-to-earn/constitution/#article-4).*
+
 I choose to ask for delivery evidence from the recipient's side because
 delivery is a claim about a person, and the party with most at stake in the
 answer is the one that owed it. A provider able to certify its own success

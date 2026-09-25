@@ -1,0 +1,1541 @@
+{
+  "license": "CC-BY-4.0",
+  "title": "The constitution in plain language",
+  "note": "These articles restate the constitution the book describes, in plain language. The formal source decides where they differ: each article names the rule families that implement it, the contract or decision that governs them, and the tests that check them. An article marked core lies, in the part it names, beyond amendment.",
+  "parts": [
+    "Who counts, and what they are owed",
+    "The life the design leaves alone",
+    "The public power that serves it",
+    "What the design does to a person, and how it catches itself",
+    "General provisions"
+  ],
+  "articles": [
+    {
+      "number": 1,
+      "part": 1,
+      "title": "Standing",
+      "core": "whole",
+      "text": [
+        "Every human being within the republic's jurisdiction or effective control is a person, and every person has standing in law.",
+        "Standing follows from any one of these: a recorded birth; a first contact recorded by whoever made it; presence within the jurisdiction; effective control by a public body; or a report, by anyone, that nobody is acting for the person. No document, family, citizenship, registration or matched identity is required, and a temporary name imports nobody else's debts, guilt or relationships.",
+        "A public body gains no standing under this article."
+      ],
+      "families": [
+        "UNIVERSAL-STANDING-RULES"
+      ],
+      "records": [
+        "book-1/appendix/decisions/child-with-nobody-decision.md"
+      ],
+      "pins": [
+        "book-1/01-the-child-with-nobody.pins.nibli",
+        "book-1/source/universal-standing.pins.nibli"
+      ],
+      "chapters": [
+        1,
+        7
+      ],
+      "formal": "formal",
+      "gap": null,
+      "lineage": [
+        {
+          "constitution": "Colombia 1991 (rev. 2015)",
+          "provision": "Article 14",
+          "url": "https://www.constituteproject.org/constitution/Colombia_2015?lang=en",
+          "quote": "Every individual has the right to have his/her legal identity recognized."
+        },
+        {
+          "constitution": "Mexico 1917 (rev. 2015)",
+          "provision": "Article 4",
+          "url": "https://www.constituteproject.org/constitution/Mexico_2015?lang=en",
+          "quote": "Any person has the right to identity and to be registered immediately after their birth. The State shall guarantee the compliance of these rights."
+        },
+        {
+          "constitution": "South Africa 1996 (rev. 2012)",
+          "provision": "section 28(1)(a)",
+          "url": "https://www.constituteproject.org/constitution/South_Africa_2012?lang=en",
+          "quote": "Every child has the right … to a name and a nationality from birth"
+        }
+      ],
+      "novelty": "This article shares the recognition of every individual's legal identity with Colombia, and the concern for registration and identity from birth with Mexico and South Africa. Where those provisions attach identity to registration at birth, this article makes standing follow from any one of five facts (a recorded birth, a first contact, presence, effective control, or anyone's report that nobody is acting for the person) with no document, citizenship or family required, reaches everyone under the republic's effective control, and gives a public body no standing."
+    },
+    {
+      "number": 2,
+      "part": 1,
+      "title": "What the record may say",
+      "core": "",
+      "text": [
+        "The record that decides anything about a person admits only the kinds of entry this constitution names. Wealth, danger, vulnerability, loyalty, a risk score or any other judgment of a person's worth is not a kind of entry, and a record that tries to write one is refused.",
+        "Confinement, public answerability, severity, a credibility finding and every other adverse conclusion may never be written directly. Each exists only where it follows from recorded entries by the rules, so every adverse conclusion has an act behind it and a finder who can be named and challenged.",
+        "An absent entry is silence. It is never a finding about the person or the world."
+      ],
+      "families": [
+        "Article 0a",
+        "Article 0"
+      ],
+      "records": [
+        "book-1/appendix/decisions/closure-gaps-decision.md"
+      ],
+      "pins": [
+        "book-1/02-what-the-record-may-say.pins.nibli"
+      ],
+      "chapters": [
+        2
+      ],
+      "formal": "formal",
+      "gap": null,
+      "lineage": [
+        {
+          "constitution": "Portugal 1976 (rev. 2005)",
+          "provision": "Article 35(3)",
+          "url": "https://www.constituteproject.org/constitution/Portugal_2005?lang=en",
+          "quote": "Computers shall not be used to treat data concerning philosophical or political convictions, party or trade union affiliations, religious beliefs, private life or ethnic origins"
+        },
+        {
+          "constitution": "Colombia 1991 (rev. 2015)",
+          "provision": "Article 15",
+          "url": "https://www.constituteproject.org/constitution/Colombia_2015?lang=en",
+          "quote": "individuals have the right to know, update, and rectify information collected about them in data banks and in the records of public and private entities"
+        },
+        {
+          "constitution": "Kenya 2010",
+          "provision": "Article 31(c)",
+          "url": "https://www.constituteproject.org/constitution/Kenya_2010?lang=en",
+          "quote": "the right not to have … information relating to their family or private affairs unnecessarily required or revealed"
+        }
+      ],
+      "novelty": "Portugal forbids processing named sensitive categories, Colombia gives a right to know and correct what data banks hold, and Kenya protects private information from being unnecessarily required; this article instead closes the record to the kinds of entry the constitution names, so a judgment of a person's worth, danger, loyalty or risk cannot be entered at all. It adds that no adverse conclusion may be written directly, only derived from recorded entries with a finder who can be named and challenged, and that an absent entry is never a finding; none of the three provisions says either."
+    },
+    {
+      "number": 3,
+      "part": 1,
+      "title": "The floor",
+      "core": "whole",
+      "text": [
+        "Every person is owed food, shelter, care, learning, bodily safety, material security, expression, belief and company. These form the floor. Each is owed as a debt, by the public bodies Article 6 names, on personhood alone.",
+        "Nothing makes the floor conditional: not work, wealth, citizenship, documents, conduct, contribution, compliance, a score, anyone's approval or a request. Nobody may be confined, or subjected to any coercive measure, for lacking an item of the floor.",
+        "Price, debt, property, employment and insurance may never stand between a person and the floor. Money, vouchers or insurance count as provision only where independent evidence shows timely, accessible and adequate access."
+      ],
+      "families": [
+        "Article 1"
+      ],
+      "records": [
+        "book-1/appendix/decisions/delivery-and-receipt-decision.md",
+        "book-1/appendix/maps/constitutional-taxonomy.md"
+      ],
+      "pins": [
+        "book-1/03-what-you-are-owed.pins.nibli",
+        "book-1/source/rights-floor.pins.nibli"
+      ],
+      "chapters": [
+        3,
+        7,
+        25
+      ],
+      "formal": "formal",
+      "gap": null,
+      "lineage": [
+        {
+          "constitution": "South Africa 1996 (rev. 2012)",
+          "provision": "section 27(1)(b)",
+          "url": "https://www.constituteproject.org/constitution/South_Africa_2012?lang=en",
+          "quote": "Everyone has the right to have access to … sufficient food and water"
+        },
+        {
+          "constitution": "Kenya 2010",
+          "provision": "Article 43(1)(c)",
+          "url": "https://www.constituteproject.org/constitution/Kenya_2010?lang=en",
+          "quote": "Every person has the right … to be free from hunger, and to have adequate food of acceptable quality"
+        },
+        {
+          "constitution": "Brazil 1988 (rev. 2017)",
+          "provision": "Article 6",
+          "url": "https://www.constituteproject.org/constitution/Brazil_2017?lang=en",
+          "quote": "Education, health, nutrition, labor, housing, transport, leisure, security, social security, protection of motherhood and childhood and assistance to the destitute, are social rights"
+        }
+      ],
+      "novelty": "This article shares with South Africa, Kenya and Brazil the naming of food, housing and health as rights, but owes its nine items as a debt on personhood alone, without the qualification by available resources and progressive realisation that South Africa's section 27(2) and Kenya's Article 21(2) attach. It also places company, belief and expression in the same floor, forbids confinement or any coercive measure for lacking an item, and counts money, vouchers or insurance as provision only on independent evidence of access."
+    },
+    {
+      "number": 4,
+      "part": 1,
+      "title": "Evidence that it arrived",
+      "core": "",
+      "text": [
+        "That an item of the floor reached a person is shown only by a matching record of receipt attested by a witness authorised for that person and independent of whoever provided it. A provider's own record of its own delivery proves nothing.",
+        "A witness is authorised for the person rather than by them, so a person who cannot choose one is not left without one. Bodily safety has no receipt: it is answered by the duties of protection. Belief and expression are held as liberties, and nobody is required to show that they believe or speak.",
+        "A receipt shows that something arrived; it shows nothing about whether the service works for anyone else."
+      ],
+      "families": [
+        "DELIVERY-RECEIPT-RULES"
+      ],
+      "records": [
+        "book-1/appendix/decisions/delivery-and-receipt-decision.md"
+      ],
+      "pins": [
+        "book-1/04-whether-it-arrived.pins.nibli",
+        "tests/pins/delivery",
+        "book-1/source/delivery-receipt.pins.nibli"
+      ],
+      "chapters": [
+        4
+      ],
+      "formal": "formal",
+      "gap": null,
+      "lineage": [
+        {
+          "constitution": "South Africa 1996 (rev. 2012)",
+          "provision": "section 184(3)",
+          "url": "https://www.constituteproject.org/constitution/South_Africa_2012?lang=en",
+          "quote": "the South African Human Rights Commission must require relevant organs of state to provide the Commission with information on the measures that they have taken"
+        },
+        {
+          "constitution": "Bolivia (Plurinational State of) 2009",
+          "provision": "Article 241(III)",
+          "url": "https://www.constituteproject.org/constitution/Bolivia_2009?lang=en",
+          "quote": "It will exercise public monitoring of the quality of public services."
+        },
+        {
+          "constitution": "Colombia 1991 (rev. 2015)",
+          "provision": "Article 370",
+          "url": "https://www.constituteproject.org/constitution/Colombia_2015?lang=en",
+          "quote": "to exercise through the Office of the Superintendent of Home Public Services the control, inspection, and oversight of the entities that provide them"
+        }
+      ],
+      "novelty": "Like South Africa's Human Rights Commission, Bolivia's civil-society monitoring and Colombia's superintendent, this article puts the check on provision outside the provider, but those provisions oversee institutions and services in general, and South Africa's relies on organs of state reporting their own measures. This article instead makes each arrival depend on a receipt attested by a witness authorised for that person and independent of the provider; none of the constitutions compared here ties delivery to evidence of receipt by an individual."
+    },
+    {
+      "number": 5,
+      "part": 1,
+      "title": "When there is genuinely not enough",
+      "core": "",
+      "text": [
+        "A shortage exists only where independent, contestable evidence shows it for a named resource and population, after alternatives, reserves, substitution, coordination and assistance have been examined. A budget choice, a price, delay, withholding, monopoly, a provider's failure or a refusal to buy is not a shortage.",
+        "In a real shortage every person's minimum is kept wherever the usable supply allows. What cannot be met is recorded as failure and remains owed; a reduced ration never becomes the new minimum.",
+        "Priority may turn only on urgency, accessibility, imminent irreversible harm, harm from interrupted provision and benefit specific to the resource. Wealth, contribution, conviction, family status, disability stereotype, productivity, usefulness, lifespan, political favour, nationality, citizenship, immigration status, documents and manner of entry are forbidden grounds. Claims equal in every permitted respect are settled by a disclosed rotation or lottery. A claimant whose claim is compared may not attest the allocation that decides it."
+      ],
+      "families": [
+        "SCARCITY-AND-CONFLICT-RULES"
+      ],
+      "records": [
+        "book-1/appendix/contracts/scarcity-and-conflict-contract.md"
+      ],
+      "pins": [
+        "book-1/05-when-there-is-genuinely-not-enough.pins.nibli",
+        "tests/pins/scarcity"
+      ],
+      "chapters": [
+        5
+      ],
+      "formal": "formal",
+      "gap": null,
+      "lineage": [
+        {
+          "constitution": "Kenya 2010",
+          "provision": "Article 20(5)(a)",
+          "url": "https://www.constituteproject.org/constitution/Kenya_2010?lang=en",
+          "quote": "it is the responsibility of the State to show that the resources are not available"
+        },
+        {
+          "constitution": "South Africa 1996 (rev. 2012)",
+          "provision": "section 27(2)",
+          "url": "https://www.constituteproject.org/constitution/South_Africa_2012?lang=en",
+          "quote": "The state must take reasonable legislative and other measures, within its available resources, to achieve the progressive realisation of each of these rights."
+        },
+        {
+          "constitution": "Ecuador 2008 (rev. 2021)",
+          "provision": "Article 11(8)",
+          "url": "https://www.constituteproject.org/constitution/Ecuador_2021?lang=en",
+          "quote": "Any deed or omission of a regressive nature that diminishes, undermines or annuls without justification the exercise of rights shall be deemed unconstitutional."
+        }
+      ],
+      "novelty": "This article shares Kenya's rule that the State must show resources are unavailable and Ecuador's bar on unjustified regression, and it answers the question South Africa answers with available resources and progressive realisation. It differs in admitting a shortage only for a named resource and population after alternatives are examined, keeping every unmet portion owed as recorded failure, and, where Kenya gives priority to the widest possible enjoyment of the right having regard to vulnerability, closing the list of permitted and forbidden priority grounds, settling equal claims by lottery and barring a compared claimant from attesting the allocation."
+    },
+    {
+      "number": 6,
+      "part": 1,
+      "title": "Who owes, and what follows",
+      "core": "part: the debt each person is owed and the right to an effective remedy",
+      "text": [
+        "The State owes every person the floor. The common tier finances it, equalises it and backstops it for everyone; a region owes provision, and a locality reach and delivery, wherever the person is recorded as present.",
+        "Where a body is certified as failing by a source and an independent reviewer, neither of them the failing body, the tier above assumes continuity while the failing body's own duty stands. Where a tier fails at scale, the Constitutional Court must decide whether the failure is an unconstitutional state of affairs; its declaration obliges the Assembly to adopt a public plan with reasons, deadlines and an end, and a certified silence from the Assembly obliges the Court to order interim measures securing the minimum and the treasury to give the minimum the first claim on funds.",
+        "The rights advocate owes every person the start of assistance and representation without waiting for a request. A duty whose responding office stays silent passes to a separate alternate. No failure of any office costs the person owed their standing, floor or liberty."
+      ],
+      "families": [
+        "Article 1b",
+        "Article 1c",
+        "OBLIGATIONS-RULES"
+      ],
+      "records": [
+        "book-1/appendix/decisions/obligations-and-nonreciprocity-decision.md",
+        "book-1/appendix/decisions/economic-pluralism-and-protected-private-sphere-decision.md"
+      ],
+      "pins": [
+        "book-1/06-who-owes-and-what-follows.pins.nibli",
+        "tests/pins/obligations",
+        "book-1/source/obligations.pins.nibli"
+      ],
+      "chapters": [
+        6,
+        28
+      ],
+      "formal": "formal",
+      "gap": null,
+      "lineage": [
+        {
+          "constitution": "South Africa 1996 (rev. 2012)",
+          "provision": "section 38(b)",
+          "url": "https://www.constituteproject.org/constitution/South_Africa_2012?lang=en",
+          "quote": "anyone acting on behalf of another person who cannot act in their own name"
+        },
+        {
+          "constitution": "Colombia 1991 (rev. 2015)",
+          "provision": "Article 282(3)",
+          "url": "https://www.constituteproject.org/constitution/Colombia_2015?lang=en",
+          "quote": "Invoking the right of habeas corpus and engaging in protective action without prejudice to the right of interested parties."
+        },
+        {
+          "constitution": "Germany 1949 (rev. 2014)",
+          "provision": "Article 107(2)",
+          "url": "https://www.constituteproject.org/constitution/German_Federal_Republic_2014?lang=en",
+          "quote": "Such law shall ensure a reasonable equalisation of the disparate financial capacities of the Länder"
+        }
+      ],
+      "novelty": "This article shares South Africa's standing for anyone acting for a person who cannot act, Colombia's ombudsman who may bring protective action, and Germany's equalisation of financial capacity between tiers. It differs in making the start of assistance a duty the rights advocate owes every person without a request, in passing continuity to the tier above on an independently certified failure while the failing body stays bound, and in writing into the text the declaration of an unconstitutional state of affairs, which in Colombia is a remedy of the Constitutional Court's case law (judgment T-025 of 2004) rather than of the constitution."
+    },
+    {
+      "number": 7,
+      "part": 2,
+      "title": "Freedom that needs no permission",
+      "core": "whole",
+      "text": [
+        "Nobody needs anyone's permission to learn, speak, publish, believe or not believe, worship, associate, assemble, inquire, create, communicate in their own language, or share friendship, leisure and mutual aid. No public body may require permission for these or register a person's belief, opinion or membership.",
+        "A restriction is lawful only where evidence shows harm to others' rights or to the commons. Offence, disagreement and an official view of the truth are not grounds. It must use the least restrictive effective means, reach no further than its stated scope, target no viewpoint or identity, be reviewed independently with a challenge that suspends it, and end.",
+        "Privacy, bodily choice, conscience, association and family form are held against public power, and a restriction of movement needs its own supported ground."
+      ],
+      "families": [
+        "KNOWLEDGE-AND-FREE-FIELD-RULES",
+        "LIBERTY-ECOLOGY-RULES"
+      ],
+      "records": [
+        "book-1/appendix/contracts/knowledge-and-free-field-contract.md"
+      ],
+      "pins": [
+        "book-1/08-what-nobody-has-to-ask-permission-for.pins.nibli",
+        "tests/pins/knowledge",
+        "book-1/source/liberty-environment.pins.nibli"
+      ],
+      "chapters": [
+        7,
+        8
+      ],
+      "formal": "formal",
+      "gap": null,
+      "lineage": [
+        {
+          "constitution": "Germany 1949 (rev. 2014)",
+          "provision": "Article 8(1)",
+          "url": "https://www.constituteproject.org/constitution/German_Federal_Republic_2014?lang=en",
+          "quote": "All Germans shall have the right to assemble peacefully and unarmed without prior notification or permission."
+        },
+        {
+          "constitution": "South Africa 1996 (rev. 2012)",
+          "provision": "section 36(1)",
+          "url": "https://www.constituteproject.org/constitution/South_Africa_2012?lang=en",
+          "quote": "The rights in the Bill of Rights may be limited only in terms of law of general application … less restrictive means to achieve the purpose"
+        },
+        {
+          "constitution": "Colombia 1991 (rev. 2015)",
+          "provision": "Article 18",
+          "url": "https://www.constituteproject.org/constitution/Colombia_2015?lang=en",
+          "quote": "No one shall be importuned on account of his/her convictions or beliefs or compelled to reveal them"
+        }
+      ],
+      "novelty": "This article shares Germany's assembly without prior permission, South Africa's demand for less restrictive means, and Colombia's refusal to compel anyone to reveal their convictions, and applies the no-permission rule to every activity it lists, from learning and worship to language and mutual aid. Where South Africa weighs whether a limitation is reasonable and justifiable and Germany lets law restrict outdoor assemblies, this article closes the grounds for restriction to evidenced harm to others' rights or the commons, excludes offence, disagreement and official truth, and requires every restriction to face independent review with a suspensive challenge and to end."
+    },
+    {
+      "number": 8,
+      "part": 2,
+      "title": "Work, pay and contribution",
+      "core": "",
+      "text": [
+        "Every person may choose, refuse, leave and change work without losing any part of the floor. Labour protection covers every form of ownership and every worker whose work is controlled by or dependent on another, whatever a contract calls them.",
+        "A duty of minimum service binds a provider or the parties to a dispute, never a named worker, and refusing it is never a crime. Pay, profit, supplements and incentives above the floor are lawful and left to democratic law. A contributory supplement, a promise of pay or a certificate of competence rests on its own record and serves only its own purpose.",
+        "The constitution confers no public status for contribution, and no record of work or teaching may rank a person's worth."
+      ],
+      "families": [
+        "INCOME-SECURITY-RULES",
+        "QUALIFICATIONS-COMPENSATION-RULES",
+        "Article 3"
+      ],
+      "records": [
+        "book-1/appendix/contracts/income-security-and-social-insurance-contract.md",
+        "book-1/appendix/contracts/qualifications-and-compensation-contract.md",
+        "book-1/appendix/decisions/recognition-purpose-decision.md"
+      ],
+      "pins": [
+        "book-1/09-work-pay-and-contribution.pins.nibli",
+        "book-1/source/income-security.pins.nibli",
+        "book-1/source/qualifications-compensation.pins.nibli"
+      ],
+      "chapters": [
+        9,
+        7
+      ],
+      "formal": "formal",
+      "gap": null,
+      "lineage": [
+        {
+          "constitution": "Germany 1949 (rev. 2014)",
+          "provision": "Article 12(2)",
+          "url": "https://www.constituteproject.org/constitution/German_Federal_Republic_2014?lang=en",
+          "quote": "No person may be required to perform work of a particular kind except within the framework of a traditional duty of community service"
+        },
+        {
+          "constitution": "Portugal 1976 (rev. 2005)",
+          "provision": "Article 57(3)",
+          "url": "https://www.constituteproject.org/constitution/Portugal_2005?lang=en",
+          "quote": "The law shall define the conditions under which … such minimum services as are indispensable to the fulfilment of essential social needs are provided during strikes"
+        },
+        {
+          "constitution": "Brazil 1988 (rev. 2017)",
+          "provision": "Article 9, §1",
+          "url": "https://www.constituteproject.org/constitution/Brazil_2017?lang=en",
+          "quote": "The law shall define which services or activities are essential and shall provide for meeting the community's non-postponable needs."
+        }
+      ],
+      "novelty": "This article shares Germany's bar on requiring work of a particular kind, and the minimum services during strikes that Portugal and Brazil leave to law, but binds a minimum-service duty only to a provider or the parties to a dispute, never a named worker, whose refusal is never a crime. It also ties the freedom to refuse or leave work to the floor, so that leaving work costs no part of it, covers every worker whose work another controls or depends on whatever a contract says, and gives contribution no public status or rank."
+    },
+    {
+      "number": 9,
+      "part": 2,
+      "title": "Property, enterprise and public finance",
+      "core": "",
+      "text": [
+        "Public, cooperative, commons, mutual, nonprofit, household and private enterprise are all lawful, and none has constitutional priority, a guaranteed share or immunity. Property, contract and enterprise are protected liberties bounded by the floor, equality, labour rights, the core liberties, due process and the commons.",
+        "Where an independent, contestable finding shows that a private body controls an essential, dominant, gatekeeping or dependency-creating function, that function owes access, continuity, reasons, portability, audit, challenge and remedy. Nothing else about the body is public.",
+        "Taxes as a whole reflect capacity to contribute. Borrowing is left to legislation under reporting, audit and disclosure of risk, with no fixed numerical limit, and debt never takes priority over the floor or the commons. The common tier keeps a public unit of account and a payment route that needs no digital device."
+      ],
+      "families": [
+        "ECONOMIC-CONSTITUTION-RULES",
+        "PUBLIC-SCALE-VOCABULARY-RULES"
+      ],
+      "records": [
+        "book-1/appendix/decisions/economic-pluralism-and-protected-private-sphere-decision.md",
+        "book-1/appendix/contracts/concentrated-private-and-hybrid-power-contract.md"
+      ],
+      "pins": [
+        "book-1/10-what-money-cannot-buy.pins.nibli",
+        "book-1/source/economic-constitution.pins.nibli",
+        "book-1/source/public-scale-vocabulary.pins.nibli"
+      ],
+      "chapters": [
+        10
+      ],
+      "formal": "formal",
+      "gap": null,
+      "lineage": [
+        {
+          "constitution": "Germany 1949 (rev. 2014)",
+          "provision": "Article 14(2)",
+          "url": "https://www.constituteproject.org/constitution/German_Federal_Republic_2014?lang=en",
+          "quote": "Property entails obligations. Its use shall also serve the public good."
+        },
+        {
+          "constitution": "Bolivia (Plurinational State of) 2009",
+          "provision": "Article 306(II)",
+          "url": "https://www.constituteproject.org/constitution/Bolivia_2009?lang=en",
+          "quote": "The plural economy is composed of forms of community, state, private and public cooperative economic organization."
+        },
+        {
+          "constitution": "Italy 1947 (rev. 2020)",
+          "provision": "Article 53",
+          "url": "https://www.constituteproject.org/constitution/Italy_2020?lang=en",
+          "quote": "Every person shall contribute to public expenditure in accordance with their capability."
+        }
+      ],
+      "novelty": "This article shares Germany's rule that property carries obligations, Bolivia's recognition of several forms of economic organisation and Italy's taxation by capability. It gives no form of enterprise priority, attaches public duties only to a private function that an independent, contestable finding shows to be essential or dominant, and, unlike the balanced-budget rule in Germany's Article 115, sets no numerical borrowing limit while ranking the floor and the commons above debt."
+    },
+    {
+      "number": 10,
+      "part": 2,
+      "title": "Equal treatment",
+      "core": "whole",
+      "text": [
+        "Every person is owed equal and effective protection. Discrimination is judged by its purpose or its effect, on any ground, including combined grounds, without a single comparator. It covers direct and indirect discrimination, denial of accommodation, segregation, harassment and retaliation, by public bodies and by the private bodies that provide employment, housing, education, care, finance, utilities, transport and dominant communication.",
+        "Accessibility is owed in advance, and reasonable accommodation to each person who needs it; undue burden is judged across the whole responsible institution, and the person always keeps an effective alternative. A persistent disparity shifts the burden of justification in an equality case but never proves a person guilty.",
+        "Positive measures, including targets, are lawful and required where ordinary measures cannot remove an evidenced structural disadvantage, each with evidence, independent review and an end."
+      ],
+      "families": [
+        "SUBSTANTIVE-EQUALITY-RULES",
+        "SUBSTANTIVE-EQUALITY-ORDINARY-RULES"
+      ],
+      "records": [
+        "book-1/appendix/decisions/substantive-equality-and-anti-subordination-decision.md",
+        "book-1/appendix/contracts/substantive-equality-ordinary-contract.md"
+      ],
+      "pins": [
+        "book-1/11-the-same-route-for-everyone.pins.nibli",
+        "tests/pins/equality",
+        "book-1/source/substantive-equality.pins.nibli"
+      ],
+      "chapters": [
+        11
+      ],
+      "formal": "formal",
+      "gap": null,
+      "lineage": [
+        {
+          "constitution": "South Africa 1996 (rev. 2012)",
+          "provision": "Section 9(4)",
+          "url": "https://www.constituteproject.org/constitution/South_Africa_2012?lang=en",
+          "quote": "No person may unfairly discriminate directly or indirectly against anyone on one or more grounds in terms of subsection (3)."
+        },
+        {
+          "constitution": "Canada 1867 (rev. 2011)",
+          "provision": "Section 15(2), Canadian Charter of Rights and Freedoms",
+          "url": "https://www.constituteproject.org/constitution/Canada_2011?lang=en",
+          "quote": "Subsection (1) does not preclude any law, program or activity that has as its object the amelioration of conditions of disadvantaged individuals or groups"
+        },
+        {
+          "constitution": "Kenya 2010",
+          "provision": "Article 54(1)(c)",
+          "url": "https://www.constituteproject.org/constitution/Kenya_2010?lang=en",
+          "quote": "to reasonable access to all places, public transport and information"
+        }
+      ],
+      "novelty": "This article shares South Africa's reach to indirect discrimination on one or more grounds by private persons as well as the state, Canada's allowance for programmes that ameliorate disadvantage and Kenya's right to reasonable access. It adds that undue burden is judged across the whole responsible institution with an effective alternative always kept, that a persistent disparity shifts the burden of justification without ever proving a person guilty, and that every positive measure needs evidence, independent review and an end."
+    },
+    {
+      "number": 11,
+      "part": 2,
+      "title": "The environment and the commons",
+      "core": "part: the protected commons and their separate axes",
+      "text": [
+        "Every present person has a right to clean, healthy and sustainable environmental conditions, separate from the floor and enforceable before any item of the floor is lost.",
+        "Climate and atmosphere, air, fresh and marine waters, soil, biodiversity, habitats, ecosystem integrity and connectivity, regenerative capacity, and the inheritance of land and nonrenewable resources are protected on separate axes, and a gain on one never pays for a loss on another. Their ceilings are set by democratic law within an independently reviewed scientific envelope.",
+        "A Future Conditions Guardian, independent and collegial, may demand assessment and reasons and may pause an irreversible authorisation, on evidence of serious or irreversible harm, until an expedited independent review decides. It holds no veto. Where an essential human service and an ecological ceiling cannot both be met at once, the least harmful route keeps the person's immediate provision, records the breach as a breach, and obliges transition and repair."
+      ],
+      "families": [
+        "ECOLOGICAL-ANIMAL-RULES",
+        "LIBERTY-ECOLOGY-RULES"
+      ],
+      "records": [
+        "book-1/appendix/decisions/ecological-future-generation-commons-and-non-human-animal-decision.md",
+        "book-1/appendix/contracts/ecological-and-animal-protection-contract.md"
+      ],
+      "pins": [
+        "book-1/12-a-place-in-which-life-remains-possible.pins.nibli",
+        "tests/pins/ecology",
+        "book-1/source/liberty-environment.pins.nibli"
+      ],
+      "chapters": [
+        12
+      ],
+      "formal": "formal",
+      "gap": null,
+      "lineage": [
+        {
+          "constitution": "South Africa 1996 (rev. 2012)",
+          "provision": "Section 24",
+          "url": "https://www.constituteproject.org/constitution/South_Africa_2012?lang=en",
+          "quote": "to an environment that is not harmful to their health or well-being"
+        },
+        {
+          "constitution": "Ecuador 2008 (rev. 2021)",
+          "provision": "Article 71",
+          "url": "https://www.constituteproject.org/constitution/Ecuador_2021?lang=en",
+          "quote": "Nature, or Pacha Mama, where life is reproduced and occurs, has the right to integral respect for its existence"
+        },
+        {
+          "constitution": "Hungary 2011 (rev. 2016)",
+          "provision": "Article 30(3)",
+          "url": "https://www.constituteproject.org/constitution/Hungary_2016?lang=en",
+          "quote": "The deputies shall protect the interests of future generations and the rights of nationalities living in Hungary."
+        }
+      ],
+      "novelty": "This article shares South Africa's personal right to a healthy environment and Hungary's deputy office for the interests of future generations, but, unlike Ecuador's Article 71, it gives nature no rights of its own and instead protects the commons on separate axes that no gain on one can offset. It adds ceilings set by democratic law within an independently reviewed scientific envelope, and a collegial Guardian that may pause an irreversible authorisation pending expedited independent review while holding no veto."
+    },
+    {
+      "number": 12,
+      "part": 2,
+      "title": "Animals",
+      "core": "part: direct protected status, and the bans on severe avoidable suffering and on killing for a dispensable purpose",
+      "text": [
+        "A sentient or credibly sentient animal is protected in its own right. Vertebrates, cephalopods and decapod crustaceans are presumed sentient; independent evidence of a realistic possibility of sentience extends protection to others. An animal is neither a person nor a thing whose protection an owner may waive.",
+        "Severe avoidable suffering is forbidden, and so is killing or severe suffering solely for spectacle, gambling, amusement, sport or trophy, prestige, fashion, cosmetics or marketing, novelty, convenience or profit. Every controlled use owes a welfare baseline. A lethal, invasive or high-severity use needs a serious purpose from a closed list, necessity, no reasonably available less harmful alternative, the least harmful method and independent review first.",
+        "An animal may be used to produce food only where the people it would feed have no safe, accessible, nutritionally adequate and less harmful alternative within reach; this rule may be amended, but never so as to license severe avoidable suffering. An Animal Protection Advocate, separate from the Guardian, may bring the animal's claim, and so may any person or qualified association."
+      ],
+      "families": [
+        "ECOLOGICAL-ANIMAL-RULES"
+      ],
+      "records": [
+        "book-1/appendix/decisions/ecological-future-generation-commons-and-non-human-animal-decision.md",
+        "book-1/appendix/contracts/ecological-and-animal-protection-contract.md"
+      ],
+      "pins": [
+        "book-1/13-creatures-without-a-ballot.pins.nibli",
+        "tests/pins/ecology"
+      ],
+      "chapters": [
+        13
+      ],
+      "formal": "formal",
+      "gap": null,
+      "lineage": [
+        {
+          "constitution": "Germany 1949 (rev. 2014)",
+          "provision": "Article 20a",
+          "url": "https://www.constituteproject.org/constitution/German_Federal_Republic_2014?lang=en",
+          "quote": "the state shall protect the natural foundations of life and animals by legislation"
+        },
+        {
+          "constitution": "Brazil 1988 (rev. 2017)",
+          "provision": "Article 225, §1, VII",
+          "url": "https://www.constituteproject.org/constitution/Brazil_2017?lang=en",
+          "quote": "prohibiting, as provided by law, all practices that jeopardize their ecological functions, cause extinction of species or subject animals to cruelty."
+        },
+        {
+          "constitution": "India 1949 (rev. 2016)",
+          "provision": "Article 51A(g)",
+          "url": "https://www.constituteproject.org/constitution/India_2016?lang=en",
+          "quote": "to protect and improve the natural environment including forests, lakes, rivers and wild life, and to have compassion for living creatures"
+        }
+      ],
+      "novelty": "This article shares the constitutional protection of animals in Germany's Article 20a, Brazil's prohibition of practices that subject animals to cruelty and India's duty of compassion for living creatures. It goes further by making a sentient animal a protected subject in its own right, putting the bans on severe avoidable suffering and on killing for a dispensable purpose beyond amendment, and, unlike Brazil's §7, which does not count registered cultural sporting practices as cruel, allowing no cultural exemption from those bans."
+    },
+    {
+      "number": 13,
+      "part": 2,
+      "title": "Roles in a person's life",
+      "core": "",
+      "text": [
+        "A child is an independent holder of rights and is heard without any minimum age. Parentage, care, household, support, property and decision-making are separate roles, each a power held for the person over named decisions and open to challenge, and a family may have more than two legal parents.",
+        "Adults choose, change and refuse the people who support their decisions. Support comes before any substitute decision, and only where a person's will cannot be read after support may a bounded, reviewed interpretation of their will act. No one is placed under general guardianship or loses agency for age, disability, diagnosis or setting.",
+        "The pregnant person decides whether a pregnancy continues. Public continuity of care is immediate and cannot be delegated. Adult kinship creates no duty of personal care, and domestic privacy shelters no violence, coercion or neglect."
+      ],
+      "families": [
+        "FAMILY-LIFE-COURSE-RULES",
+        "FAMILY-LIFE-ORDINARY-RULES",
+        "Article 2"
+      ],
+      "records": [
+        "book-1/appendix/decisions/family-dependency-reproduction-and-collective-plurality-decision.md",
+        "book-1/appendix/contracts/family-life-ordinary-contract.md"
+      ],
+      "pins": [
+        "book-1/14-holding-a-role-in-somebodys-life.pins.nibli",
+        "tests/pins/family-life",
+        "book-1/source/family-life-course.pins.nibli"
+      ],
+      "chapters": [
+        14
+      ],
+      "formal": "formal",
+      "gap": null,
+      "lineage": [
+        {
+          "constitution": "Ireland 1937 (rev. 2019)",
+          "provision": "Article 42A.4.2°",
+          "url": "https://www.constituteproject.org/constitution/Ireland_2019?lang=en",
+          "quote": "the views of the child shall be ascertained and given due weight having regard to the age and maturity of the child"
+        },
+        {
+          "constitution": "Cuba 2019",
+          "provision": "Article 81",
+          "url": "https://www.constituteproject.org/constitution/Cuba_2019?lang=en",
+          "quote": "The State recognizes and protects families, regardless of their structure, as the basic cell of society"
+        },
+        {
+          "constitution": "France 1958 (rev. 2024)",
+          "provision": "Article 34",
+          "url": "https://www.constituteproject.org/constitution/France_2024?lang=en",
+          "quote": "Statutes shall lay down the conditions under which the woman's guaranteed freedom to have a voluntary interruption of pregnancy is exercised."
+        }
+      ],
+      "novelty": "This article shares Ireland's duty to hear children in proceedings about them, Cuba's recognition of families whatever their structure and France's guaranteed freedom to end a pregnancy. It hears a child without Ireland's test of capacity to form views, divides parenthood into separate reviewable roles that more than two parents may hold, puts support before any substitute decision for adults, and, unlike Cuba's Article 84, which obliges children to care for their parents, draws no duty of personal care from adult kinship."
+    },
+    {
+      "number": 14,
+      "part": 2,
+      "title": "Arriving and belonging",
+      "core": "part: the ban on return to persecution or grave harm and the ban on collective expulsion",
+      "text": [
+        "Help follows presence, whatever a person's status. Asking for food, care, schooling or a court never enrols, records or reports a person for enforcement.",
+        "No one may be returned to a place where they face persecution, torture or comparable grave harm, and no group may be expelled collectively. Asylum is a right to a fair determination with an advocate, an interpreter and an appeal that suspends removal. Expulsion needs an individual, reasoned decision; no child is detained for an immigration purpose; statelessness may not be created; and nationality is never taken as a punishment.",
+        "Indigenous peoples and minority communities hold collective rights to their institutions, languages, cultures and land. Membership rests on the person's own identification and the collective's lawful acceptance, with free exit. Permanent forced relocation, extinguished title and comparable existential harms need the collective's actual consent; other material effects need good-faith consultation and reasons."
+      ],
+      "families": [
+        "MOBILITY-PLURALITY-RULES",
+        "PUBLIC-SAFETY-RULES"
+      ],
+      "records": [
+        "book-1/appendix/contracts/mobility-and-plurality-contract.md",
+        "book-1/appendix/decisions/family-dependency-reproduction-and-collective-plurality-decision.md"
+      ],
+      "pins": [
+        "book-1/15-arriving-and-belonging.pins.nibli",
+        "tests/pins/mobility"
+      ],
+      "chapters": [
+        15
+      ],
+      "formal": "formal",
+      "gap": null,
+      "lineage": [
+        {
+          "constitution": "Ecuador 2008 (rev. 2021)",
+          "provision": "Article 66(14)",
+          "url": "https://www.constituteproject.org/constitution/Ecuador_2021?lang=en",
+          "quote": "Foreigners cannot be returned or expelled to a country where their lives, liberty, safety or well-being or those of their families are in danger"
+        },
+        {
+          "constitution": "Mexico 1917 (rev. 2015)",
+          "provision": "Article 2",
+          "url": "https://www.constituteproject.org/constitution/Mexico_2015?lang=en",
+          "quote": "Consciousness of indigenous identity will be the fundamental criteria to determine to whom apply the provisions on indigenous people."
+        },
+        {
+          "constitution": "Brazil 1988 (rev. 2017)",
+          "provision": "Article 231, §5",
+          "url": "https://www.constituteproject.org/constitution/Brazil_2017?lang=en",
+          "quote": "Removal of indigenous groups from their lands is prohibited except by referendum of the National Congress, in the event of a catastrophe or epidemic"
+        }
+      ],
+      "novelty": "This article shares Ecuador's bans on return to danger and on expelling groups of foreigners, Mexico's use of self-identification to decide indigenous membership and Brazil's bar on removing indigenous groups from their lands. It adds a firewall so that asking for food, care, schooling or a court never enrols a person for enforcement, pairs self-identification with the collective's lawful acceptance and free exit, and requires the collective's own consent, rather than a legislature's decision, for permanent relocation or extinguished title."
+    },
+    {
+      "number": 15,
+      "part": 3,
+      "title": "Answerability and authority",
+      "core": "",
+      "text": [
+        "A public body, and anyone seated by the electorate or the Convocation, is publicly answerable. Answerability does not end with recall or with a credibility finding, so a person who exposed an official keeps the protection the exposure earned.",
+        "Answerability is not authority. Every power needs its own positive, current record, tied to its source and its end, and lapses when that record does."
+      ],
+      "families": [
+        "Article 8"
+      ],
+      "records": [
+        "book-1/appendix/decisions/state-form-and-political-membership-decision.md"
+      ],
+      "pins": [
+        "book-1/16-answerability-and-authority.pins.nibli"
+      ],
+      "chapters": [
+        16
+      ],
+      "formal": "formal",
+      "gap": null,
+      "lineage": [
+        {
+          "constitution": "Philippines 1987",
+          "provision": "Article XI, Section 1",
+          "url": "https://www.constituteproject.org/constitution/Philippines_1987?lang=en",
+          "quote": "Public office is a public trust. Public officers and employees must at all times be accountable to the people"
+        },
+        {
+          "constitution": "Ecuador 2008 (rev. 2021)",
+          "provision": "Article 226",
+          "url": "https://www.constituteproject.org/constitution/Ecuador_2021?lang=en",
+          "quote": "shall perform only those duties and wield those powers that are given to them by the Constitution and the law"
+        },
+        {
+          "constitution": "Spain 1978 (rev. 2011)",
+          "provision": "Section 9(3)",
+          "url": "https://www.constituteproject.org/constitution/Spain_2011?lang=en",
+          "quote": "the accountability of public authorities, and the prohibition of arbitrary action of public authorities."
+        }
+      ],
+      "novelty": "This article shares the principles that public office is accountable (the Philippines, Spain) and that a public body holds only the powers the constitution and law assign (Ecuador). It separates the two: answerability survives recall and a credibility finding, which none of these provisions addresses, while each power needs its own current record tied to its source and its end and lapses when that record does."
+    },
+    {
+      "number": 16,
+      "part": 3,
+      "title": "The republic's institutions",
+      "core": "part: the continued existence and capacity to sit of the People's Assembly and the Constitutional Court",
+      "text": [
+        "The republic is federal and parliamentary, with common, regional and local tiers. No tier may lower standing, the floor, equality, due process, the core liberties or the commons.",
+        "The People's Assembly is elected by equal, proportional ballots. The Regions Council, with equal weight for each region, may return an ordinary law once with reasons, which the Assembly may pass again, and must consent to changes in regional competence or boundaries. The Executive Council governs collectively on the Assembly's confidence and falls only when the Assembly elects its successor. A non-executive Civic President performs formal acts. Ordinary courts and a Constitutional Court decide disputes, and electoral, audit, ombudsperson and appointments bodies are separate.",
+        "Appointments come from divided sources for staggered, nonrenewable terms, with removal only for stated cause; majority control of appointments by one government, chamber, coalition, profession or appointing source is unlawful. When an election cannot be held on time, the electoral body owes it at the first lawful opportunity, and the outgoing chamber may sit only under caretaker limits until its successor meets."
+      ],
+      "families": [
+        "STATE-FORM-RULES",
+        "Article 2b"
+      ],
+      "records": [
+        "book-1/appendix/decisions/state-form-and-political-membership-decision.md",
+        "book-1/appendix/contracts/appointment-anti-capture-contract.md"
+      ],
+      "pins": [
+        "book-1/17-how-public-power-is-built.pins.nibli",
+        "tests/pins/state-form",
+        "book-1/source/state-form.pins.nibli"
+      ],
+      "chapters": [
+        17,
+        20
+      ],
+      "formal": "formal",
+      "gap": null,
+      "lineage": [
+        {
+          "constitution": "Germany 1949 (rev. 2014)",
+          "provision": "Article 67(1)",
+          "url": "https://www.constituteproject.org/constitution/German_Federal_Republic_2014?lang=en",
+          "quote": "The Bundestag may express its lack of confidence in the Federal Chancellor only by electing a successor"
+        },
+        {
+          "constitution": "Switzerland 1999 (rev. 2014)",
+          "provision": "Article 177(1)",
+          "url": "https://www.constituteproject.org/constitution/Switzerland_2014?lang=en",
+          "quote": "The Federal Council reaches its decisions as a collegial body."
+        },
+        {
+          "constitution": "South Africa 1996 (rev. 2012)",
+          "provision": "Section 75(1)(c)",
+          "url": "https://www.constituteproject.org/constitution/South_Africa_2012?lang=en",
+          "quote": "If the Council rejects the Bill or passes it subject to amendments, the Assembly must reconsider the Bill"
+        }
+      ],
+      "novelty": "This article combines Germany's constructive vote of no confidence, Switzerland's collegial executive, which here depends on the Assembly's confidence rather than serving a fixed term, and a territorial chamber whose rejection of an ordinary bill the popular chamber can override, as with South Africa's National Council of Provinces. It adds appointments from divided sources with majority control by any one source made unlawful, and a duty to hold a delayed election at the first lawful opportunity while the outgoing chamber sits only under caretaker limits."
+    },
+    {
+      "number": 17,
+      "part": 3,
+      "title": "Keeping public decisions answerable",
+      "core": "",
+      "text": [
+        "Money given to influence an office or a candidacy is recorded, and a reviewed finding drawn from the record may withhold the affected act. Conflicts of interest, gifts and moves between office and private interest are incompatibilities borne by the office, never by the private party.",
+        "Holders of office must disclose, and a body that fails to read the disclosure passes its duty to an alternate. A district plan drawn to entrench a party or incumbent, or to dilute a protected group, is unlawful. Coordinated manipulation of information may be found against the actors who coordinate it, never against what people believe.",
+        "Opposition rights belong to anyone who does not support the government. Any association that fields candidates must meet minimum standards of internal democracy. No power exists to ban a party."
+      ],
+      "families": [
+        "DEMOCRATIC-INTEGRITY-RULES"
+      ],
+      "records": [
+        "book-1/appendix/decisions/democratic-and-administrative-integrity-decision.md",
+        "book-1/appendix/contracts/integrity-record-contract.md"
+      ],
+      "pins": [
+        "tests/pins/integrity",
+        "book-1/17-how-public-power-is-built.pins.nibli"
+      ],
+      "chapters": [
+        17
+      ],
+      "formal": "formal",
+      "gap": null,
+      "lineage": [
+        {
+          "constitution": "Germany 1949 (rev. 2014)",
+          "provision": "Article 21(1)",
+          "url": "https://www.constituteproject.org/constitution/German_Federal_Republic_2014?lang=en",
+          "quote": "Their internal organisation must conform to democratic principles. They must publicly account for their assets and for the sources and use of their funds."
+        },
+        {
+          "constitution": "Portugal 1976 (rev. 2005)",
+          "provision": "Article 114(2)",
+          "url": "https://www.constituteproject.org/constitution/Portugal_2005?lang=en",
+          "quote": "Minorities shall possess the right to democratic opposition, as laid down by this Constitution and the law."
+        },
+        {
+          "constitution": "Kenya 2010",
+          "provision": "Article 75(1)(a)",
+          "url": "https://www.constituteproject.org/constitution/Kenya_2010?lang=en",
+          "quote": "A State officer shall behave ... in a manner that avoids- any conflict between personal interests and public or official duties"
+        }
+      ],
+      "novelty": "This article shares Germany's demand for democratic internal organisation and public accounting of party funds, Portugal's right of democratic opposition and Kenya's duty on officeholders to avoid conflicts of interest. It differs in giving opposition rights to anyone who does not support the government rather than to minorities or parties outside government, in letting a reviewed finding drawn from the record of political money withhold the affected act, in finding coordinated manipulation of information only against those who coordinate it, and in creating no power to ban a party, where Germany's Article 21(2) has its Constitutional Court rule parties unconstitutional."
+    },
+    {
+      "number": 18,
+      "part": 3,
+      "title": "The vote",
+      "core": "",
+      "text": [
+        "Every adult who ordinarily resides in the republic has an equal vote and may stand for office in their one political home at each tier. Citizenship, immigration status, property, documents, wealth, contribution and length of residence add nothing and remove nothing.",
+        "Legal adulthood arrives automatically at one common age, and a missing or disputed record never delays it. Conviction and custody take neither the vote nor candidacy, and confinement, placement, eviction or forced displacement cannot move a person's political home.",
+        "Each person may make one effective submission in any decision. A former resident keeps the right to return and petition, without a vote where they no longer live."
+      ],
+      "families": [
+        "Article 2",
+        "STATE-FORM-RULES"
+      ],
+      "records": [
+        "book-1/appendix/decisions/state-form-and-political-membership-decision.md"
+      ],
+      "pins": [
+        "book-1/18-the-vote-conviction-does-not-take.pins.nibli",
+        "tests/pins/state-form"
+      ],
+      "chapters": [
+        18
+      ],
+      "formal": "formal",
+      "gap": null,
+      "lineage": [
+        {
+          "constitution": "Uruguay 1966 (reinst. 1985, rev. 2004)",
+          "provision": "Article 78",
+          "url": "https://www.constituteproject.org/constitution/Uruguay_2004?lang=en",
+          "quote": "Foreign men and women of good conduct ... have habitually resided at least fifteen years in the Republic have the right to vote"
+        },
+        {
+          "constitution": "Ecuador 2008 (rev. 2021)",
+          "provision": "Article 63",
+          "url": "https://www.constituteproject.org/constitution/Ecuador_2021?lang=en",
+          "quote": "Foreign persons residing in Ecuador have the right to vote as long as they have resided legally in the country for at least five years."
+        },
+        {
+          "constitution": "Ireland 1937 (rev. 2019)",
+          "provision": "Article 16.1.2°",
+          "url": "https://www.constituteproject.org/constitution/Ireland_2019?lang=en",
+          "quote": "such other persons in the State as may be determined by law ... shall have the right to vote"
+        }
+      ],
+      "novelty": "This article shares with Uruguay, Ecuador and Ireland a franchise that reaches residents who are not citizens. It asks no minimum period of residence where Uruguay asks fifteen years with conditions of conduct, family and means and Ecuador five years of legal residence, writes the resident vote and candidacy into the constitution where Ireland leaves the extension to law, and keeps both through conviction and custody, where Ecuador's Article 64 suspends political rights on a sentence of incarceration; none of the constitutions compared here protects a convicted prisoner's vote in its text."
+    },
+    {
+      "number": 19,
+      "part": 3,
+      "title": "Records and automated power",
+      "core": "",
+      "text": [
+        "A public body may keep a record about a person only for a named lawful purpose, from named lawful sources, with necessity, minimisation, security, accuracy, correction, a set time for deletion and the person's access and challenge. No record may be transferred, sold or linked beyond its purpose, and asking for food, care, schooling or a court never enrols a person for enforcement.",
+        "Every use of a record must match one reviewed holding in subject, purpose, version and period. Bulk and suspicionless collection is forbidden, and so is buying what could not lawfully be collected. Covert measures need prior individual judicial authorisation, the least intrusive means, a defined scope and duration, and later notice.",
+        "Automated support must be explained and open to challenge before it takes effect, and a human reviewer independent of the holder decides; no consequential decision is left to a machine alone, and no risk, threat or loyalty score enters the record that decides about a person. Official statistics serve their stated purpose and never become a verdict about anyone."
+      ],
+      "families": [
+        "RECORD-POWER-RULES",
+        "OFFICIAL-STATISTICS-RULES"
+      ],
+      "records": [
+        "book-1/appendix/contracts/record-power-contract.md",
+        "book-1/appendix/contracts/official-statistics-contract.md"
+      ],
+      "pins": [
+        "book-1/19-what-may-be-kept-about-you.pins.nibli",
+        "tests/pins/record-power",
+        "tests/pins/statistics"
+      ],
+      "chapters": [
+        19
+      ],
+      "formal": "formal",
+      "gap": null,
+      "lineage": [
+        {
+          "constitution": "Portugal 1976 (rev. 2005)",
+          "provision": "Article 35(1)",
+          "url": "https://www.constituteproject.org/constitution/Portugal_2005?lang=en",
+          "quote": "Every citizen shall possess the right to access to all computerised data that concern him, to require that they be corrected and updated"
+        },
+        {
+          "constitution": "Brazil 1988 (rev. 2017)",
+          "provision": "Art 5, LXXII(a)",
+          "url": "https://www.constituteproject.org/constitution/Brazil_2017?lang=en",
+          "quote": "habeas data shall be granted: to assure knowledge of personal information about the petitioner contained in records or data banks of government agencies"
+        },
+        {
+          "constitution": "Germany 1949 (rev. 2014)",
+          "provision": "Article 13(3)",
+          "url": "https://www.constituteproject.org/constitution/German_Federal_Republic_2014?lang=en",
+          "quote": "technical means of acoustical surveillance of any home ... may be employed pursuant to judicial order ... The authorisation shall be for a limited time."
+        }
+      ],
+      "novelty": "This article shares Portugal's and Brazil's rights to see and correct what the state holds about a person, and Germany's requirement of a judicial order for a limited time before covert surveillance of a home. It adds a binding of every use to one reviewed holding, a ban on bulk collection and on buying what could not lawfully be collected, later notice where Germany's Article 10(2) lets the law leave the affected person uninformed in security cases, and a ban on consequential decisions left to a machine alone, which none of the constitutions compared here addresses; Portugal's Article 35(2) leaves the conditions of automated processing to law."
+    },
+    {
+      "number": 20,
+      "part": 3,
+      "title": "Emergencies",
+      "core": "part: every protection this constitution lists as beyond amendment is also beyond suspension",
+      "text": [
+        "A declared emergency permits exactly four things: faster procedure, the redirection of resources, requisition with return or compensation, and restrictions aimed at the named hazard. Each measure needs its own authority, grounds and end, and nothing a declaration grants outlasts it.",
+        "No emergency suspends a right, allows government by decree, prevents the Assembly from sitting, bypasses a court, postpones an election, extends a mandate, alters who may vote or lowers the floor. A declaration found to have done any of these falls, and the measures taken under it fall with it.",
+        "A predeclared alternate may authorise and a substitute reviewer may review where the ordinary body is blocked, under the same limits, and an alternate's authorisation that is not ratified ends."
+      ],
+      "families": [
+        "PUBLIC-SAFETY-RULES",
+        "Article 2b"
+      ],
+      "records": [
+        "book-1/appendix/decisions/public-safety-defence-emergency-and-external-power-decision.md",
+        "book-1/appendix/contracts/public-safety-contract.md"
+      ],
+      "pins": [
+        "book-1/20-a-crisis-does-not-suspend-the-republic.pins.nibli",
+        "tests/pins/public-safety"
+      ],
+      "chapters": [
+        20
+      ],
+      "formal": "formal",
+      "gap": null,
+      "lineage": [
+        {
+          "constitution": "Colombia 1991 (rev. 2015)",
+          "provision": "Article 214(2)",
+          "url": "https://www.constituteproject.org/constitution/Colombia_2015?lang=en",
+          "quote": "Neither human rights nor fundamental freedoms may be suspended. In all cases, the rules of international humanitarian law shall be observed."
+        },
+        {
+          "constitution": "Spain 1978 (rev. 2011)",
+          "provision": "Section 116(5)",
+          "url": "https://www.constituteproject.org/constitution/Spain_2011?lang=en",
+          "quote": "The Congress may not be dissolved while any of the states referred to in the present section remains in force"
+        },
+        {
+          "constitution": "Philippines 1987",
+          "provision": "Article VII, Section 18",
+          "url": "https://www.constituteproject.org/constitution/Philippines_1987?lang=en",
+          "quote": "A state of martial law does not suspend the operation of the Constitution, nor supplant the functioning of the civil courts or legislative assemblies"
+        }
+      ],
+      "novelty": "This article shares Colombia's rule that no right may be suspended in a state of exception, Spain's rule that the legislature may not be dissolved during one, and the Philippine rule that martial law leaves the Constitution, the courts and the assemblies in operation. It narrows emergency power further: it allows no government by decree where Colombia's Article 214 lets the government issue legislative decrees and the Philippine Section 18 lets the President suspend habeas corpus, it lists the only four things a declaration may do, and it makes every measure fall with a declaration found to have exceeded those limits."
+    },
+    {
+      "number": 21,
+      "part": 3,
+      "title": "Force, defence and external power",
+      "core": "part: the absolute prohibitions on torture, disappearance, arbitrary killing, collective punishment and aggressive war",
+      "text": [
+        "Policing, prosecution, adjudication, custody, defence and security intelligence are separate functions under civilian command. Force must be strictly necessary and the least harmful available, and lethal force is lawful only where it is unavoidable to protect life. Every death or serious injury is investigated by a body other than the one that used the force.",
+        "Torture and cruel treatment, enforced disappearance and secret detention, arbitrary killing, collective punishment, human shields, the denial of the floor as a weapon, experimentation without consent and aggressive war are forbidden absolutely, with no immunity or amnesty. Refusal to take part in armed service is protected without conditions.",
+        "A defence force, if kept, acts only outside the republic, under limits the Assembly sets. Force abroad needs the Assembly's prior authorisation, and immediate self-defence ends unless ratified. No treaty, trade agreement, affiliate or supply chain may achieve what this constitution forbids at home."
+      ],
+      "families": [
+        "PUBLIC-SAFETY-RULES"
+      ],
+      "records": [
+        "book-1/appendix/decisions/public-safety-defence-emergency-and-external-power-decision.md",
+        "book-1/appendix/contracts/public-safety-contract.md"
+      ],
+      "pins": [
+        "book-1/20-a-crisis-does-not-suspend-the-republic.pins.nibli",
+        "book-1/27-the-one-thing-taken.pins.nibli",
+        "tests/pins/public-safety"
+      ],
+      "chapters": [
+        20,
+        27
+      ],
+      "formal": "formal",
+      "gap": null,
+      "lineage": [
+        {
+          "constitution": "Germany 1949 (rev. 2014)",
+          "provision": "Article 26(1)",
+          "url": "https://www.constituteproject.org/constitution/German_Federal_Republic_2014?lang=en",
+          "quote": "Acts tending to and undertaken with intent to disturb the peaceful relations between nations, especially to prepare for a war of aggression, shall be unconstitutional."
+        },
+        {
+          "constitution": "Philippines 1987",
+          "provision": "Article III, Section 12(2)",
+          "url": "https://www.constituteproject.org/constitution/Philippines_1987?lang=en",
+          "quote": "No torture ... shall be used against him. Secret detention places, solitary, incommunicado, or other similar forms of detention are prohibited."
+        },
+        {
+          "constitution": "Kenya 2010",
+          "provision": "Article 240(8)",
+          "url": "https://www.constituteproject.org/constitution/Kenya_2010?lang=en",
+          "quote": "The Council may, with the approval of Parliament- deploy national forces outside Kenya for- regional or international peace support operations"
+        }
+      ],
+      "novelty": "This article shares Germany's ban on preparing a war of aggression, the Philippine ban on torture and secret detention, and Kenya's requirement that Parliament approve deployment abroad. It adds a separation of policing, prosecution, adjudication, custody, defence and intelligence under civilian command, investigation of every death or serious injury by a body other than the one that used force, conscientious objection without conditions where Germany's Article 4(3) leaves the details to federal law, the lapse of self-defence the Assembly does not ratify, and a bar on achieving through treaties, affiliates or supply chains what is forbidden at home."
+    },
+    {
+      "number": 22,
+      "part": 3,
+      "title": "Being heard",
+      "core": "part: the right to an effective remedy and prompt independent judicial review of detention",
+      "text": [
+        "Every person may reach a court, whatever their wealth, documents or status, with assistance and an interpreter as needed. A request for review needs no permission from the office it concerns.",
+        "A body that receives a request must hear it, and interim protection comes with the hearing. If it stays silent, the duty passes to a separate alternate. Relief is a separate, properly made order: a hearing is not relief, and relief is not presumed.",
+        "Survivors are supported whether or not anyone is prosecuted, restorative processes are voluntary and may be left at any time, and remedies need no power to imprison."
+      ],
+      "families": [
+        "NON-CARCERAL-JUSTICE-RULES"
+      ],
+      "records": [
+        "book-1/appendix/contracts/non-carceral-justice-contract.md"
+      ],
+      "pins": [
+        "book-1/21-a-way-to-be-heard.pins.nibli",
+        "tests/pins/justice"
+      ],
+      "chapters": [
+        21,
+        7
+      ],
+      "formal": "formal",
+      "gap": null,
+      "lineage": [
+        {
+          "constitution": "Philippines 1987",
+          "provision": "Article III, Section 11",
+          "url": "https://www.constituteproject.org/constitution/Philippines_1987?lang=en",
+          "quote": "Free access to the courts and quasi-judicial bodies and adequate legal assistance shall not be denied to any person by reason of poverty."
+        },
+        {
+          "constitution": "Kenya 2010",
+          "provision": "Article 48",
+          "url": "https://www.constituteproject.org/constitution/Kenya_2010?lang=en",
+          "quote": "The State shall ensure access to justice for all persons and, if any fee is required, it shall be reasonable"
+        },
+        {
+          "constitution": "Colombia 1991 (rev. 2015)",
+          "provision": "Article 86",
+          "url": "https://www.constituteproject.org/constitution/Colombia_2015?lang=en",
+          "quote": "Every individual may claim legal protection before the judge, at any time or place, through a preferential and summary proceeding"
+        }
+      ],
+      "novelty": "This article shares the Philippine and Kenyan rules that poverty and fees must not bar access to justice, and Colombia's summary action that any individual may bring at any time and that must be resolved within ten days. It differs in passing a silent body's duty to hear to a separate alternate rather than setting a deadline, in keeping the hearing and its interim protection apart from relief, which must be separately made, and in supporting survivors whether or not anyone is prosecuted."
+    },
+    {
+      "number": 23,
+      "part": 3,
+      "title": "Changing the rules",
+      "core": "part: the protected core this article lists",
+      "text": [
+        "This constitution changes only by an exact text passed by two-thirds of the full People's Assembly and approved by more votes for than against in a national referendum, with no turnout threshold. A change to regional competence or boundaries also needs the Regions Council and each region directly affected. Electors may force a constitutional proposal onto the Assembly's agenda and a recorded vote.",
+        "Beyond amendment lie universal standing, equal protection, the floor, due process, the core liberties, the protected commons, the direct protection of animals and the bans on severe avoidable suffering and dispensable killing, the absolute prohibitions on force, the bans on return to persecution and on collective expulsion, prompt independent review of detention, the right to an effective remedy, and the continued existence of the People's Assembly and the Constitutional Court.",
+        "A candidate is certified only after independent review of its exact effects. A reading that it breaches the core must name the provision, the change and the reasons, and an independent final review may answer it."
+      ],
+      "families": [
+        "AMENDMENT-ENACTMENT-RULES",
+        "Article 9"
+      ],
+      "records": [
+        "book-1/appendix/contracts/amendment-enactment-contract.md",
+        "book-1/appendix/decisions/state-form-and-political-membership-decision.md"
+      ],
+      "pins": [
+        "book-1/22-changing-the-rules.pins.nibli",
+        "tests/pins/amendment-enactment",
+        "tests/pins/amendments"
+      ],
+      "chapters": [
+        22
+      ],
+      "formal": "formal",
+      "gap": null,
+      "lineage": [
+        {
+          "constitution": "Brazil 1988 (rev. 2017)",
+          "provision": "Art 60, §4°",
+          "url": "https://www.constituteproject.org/constitution/Brazil_2017?lang=en",
+          "quote": "No proposed constitutional amendment shall be considered that is aimed at abolishing the following: ... individual rights and guarantees."
+        },
+        {
+          "constitution": "Ireland 1937 (rev. 2019)",
+          "provision": "Article 47.1",
+          "url": "https://www.constituteproject.org/constitution/Ireland_2019?lang=en",
+          "quote": "approved by the people, if, ... a majority of the votes cast at such Referendum shall have been cast in favour of its enactment into law."
+        },
+        {
+          "constitution": "Switzerland 1999 (rev. 2014)",
+          "provision": "Art 139(1)",
+          "url": "https://www.constituteproject.org/constitution/Switzerland_2014?lang=en",
+          "quote": "Any 100,000 persons eligible to vote may within 18 months of the official publication of their initiative request a partial revision of the Federal Constitution."
+        }
+      ],
+      "novelty": "This article shares Brazil's bar on amendments aimed at abolishing individual rights, Ireland's approval of amendments by a majority of the votes cast at a referendum with no turnout threshold, and the Swiss power of electors to start a constitutional change. It adds a two-thirds majority of the full Assembly before the referendum, a protected core that reaches beyond rights to the floor, the commons, animals and the continued existence of the Assembly and the Constitutional Court, an electors' initiative that forces only a recorded Assembly vote where a Swiss initiative goes to the people, and a rule that any claim that a candidate breaches the core must name the provision, the change and the reasons."
+    },
+    {
+      "number": 24,
+      "part": 4,
+      "title": "Protection for disclosure",
+      "core": "",
+      "text": [
+        "A person who exposes a publicly answerable body or officeholder is protected from confinement in any prosecution that cites them, from the moment of the disclosure, unless a deceit finding in force concerns that disclosure. The protection reaches confinement under a conviction; it neither prevents the conviction from being recorded nor acquits.",
+        "A disclosure that both of a case's time witnesses date after its charge does not hold back confinement in that case. Confinement may otherwise proceed only where two reviewers from outside the case, whose eligibility two further offices have shown, find the prosecution unrelated to the disclosure. Naming a reviewer in a new disclosure does not disqualify them; an authorised finding of actual conflict does."
+      ],
+      "families": [
+        "Article 7"
+      ],
+      "records": [
+        "book-1/appendix/decisions/shield-scope-decision.md"
+      ],
+      "pins": [
+        "book-1/23-the-shield.pins.nibli",
+        "tests/pins/shield-independence"
+      ],
+      "chapters": [
+        23
+      ],
+      "formal": "formal",
+      "gap": null,
+      "lineage": [
+        {
+          "constitution": "Fiji 2013",
+          "provision": "Section 149(e)",
+          "url": "https://www.constituteproject.org/constitution/Fiji_2013?lang=en",
+          "quote": "provide for the protection of whistle-blowers, being persons who, in good faith, make disclosures that an officer ... has engaged in fraudulent or corrupt practices"
+        },
+        {
+          "constitution": "Ecuador 2008 (rev. 2021)",
+          "provision": "Article 208(7)",
+          "url": "https://www.constituteproject.org/constitution/Ecuador_2021?lang=en",
+          "quote": "To contribute to the protection of persons who report deeds of corruption (whistleblowers)."
+        },
+        {
+          "constitution": "Sweden 1974 (rev. 2012)",
+          "provision": "Freedom of the Press Act, Chapter 3, Art 4",
+          "url": "https://www.constituteproject.org/constitution/Sweden_2012?lang=en",
+          "quote": "Nor may a public authority ... intervene against a person because he or she has ... made use of his or her freedom of the press"
+        }
+      ],
+      "novelty": "This article shares Fiji's and Ecuador's commitment to protect people who report corruption and Sweden's bar on public bodies acting against a person for using or assisting the freedom of the press. It differs in what it protects against, confinement under a conviction in any prosecution that cites the discloser while the conviction itself is still recorded, with no good-faith test as in Fiji, lost only through a deceit finding about that disclosure, both of the case's time witnesses dating it after the charge, or two eligible outside reviewers finding the prosecution unrelated; none of the constitutions compared here ties protection for disclosure to confinement in a criminal case."
+    },
+    {
+      "number": 25,
+      "part": 4,
+      "title": "Findings about a person",
+      "core": "",
+      "text": [
+        "A credibility finding records deceit, a fabricated record, a concealed conflict or withheld evidence in one identified matter. It needs two signers holding their authority by different routes, each shown independent for that case, bound to one incident and ground. A family tie between the signers bars the pair, and nobody may sign a finding against their own child.",
+        "Its only effect is that the subject's signature does not count toward a new credibility finding about someone else. It takes no standing, floor, vote, wage, work or office. It comes with reasons, a challenge, review owed without a request, and a properly made appellate decision that can end it; a general forgiveness or an unrelated judgment cannot."
+      ],
+      "families": [
+        "Article 4",
+        "Article 5"
+      ],
+      "records": [
+        "book-1/appendix/decisions/credibility-finding-decision.md",
+        "book-1/appendix/decisions/recognition-purpose-decision.md"
+      ],
+      "pins": [
+        "book-1/24-findings-about-people.pins.nibli",
+        "tests/pins/credibility",
+        "tests/pins/independence"
+      ],
+      "chapters": [
+        24
+      ],
+      "formal": "formal",
+      "gap": null,
+      "lineage": [
+        {
+          "constitution": "Portugal 1976 (rev. 2005)",
+          "provision": "Article 30(4)",
+          "url": "https://www.constituteproject.org/constitution/Portugal_2005?lang=en",
+          "quote": "No sentence shall automatically result in the loss of any civil, professional or political right."
+        },
+        {
+          "constitution": "Kenya 2010",
+          "provision": "Article 47(2)",
+          "url": "https://www.constituteproject.org/constitution/Kenya_2010?lang=en",
+          "quote": "adversely affected by administrative action, the person has the right to be given written reasons for the action"
+        },
+        {
+          "constitution": "Colombia 1991 (rev. 2015)",
+          "provision": "Article 29, first paragraph",
+          "url": "https://www.constituteproject.org/constitution/Colombia_2015?lang=en",
+          "quote": "Due process shall be applied in all cases of legal and administrative measures."
+        }
+      ],
+      "novelty": "This article shares with these provisions the idea that an official finding against a person must come with reasons and due process and must not strip rights automatically. It differs in tying the finding to one matter and one ground, in requiring two signers who hold their authority by different routes and share no family tie, and in giving the finding a single effect, that the subject's signature stops counting toward a new credibility finding; none of the constitutions compared here has a counterpart to the kinship bar or the signing restriction."
+    },
+    {
+      "number": 26,
+      "part": 4,
+      "title": "A prisoner is a person",
+      "core": "part: the standing and the floor it preserves",
+      "text": [
+        "A person confined remains a person, with standing, the whole floor, the vote and every right a sentence does not take. While held, the person is owed humane care, shelter and a recorded voice, independent review of the holding, and continuity of care at release.",
+        "Confinement never supplies the evidence that anything was delivered: a person held is owed the floor, and whether it arrived is shown as it is for anyone."
+      ],
+      "families": [
+        "Article 2",
+        "Article 6"
+      ],
+      "records": [
+        "book-1/appendix/decisions/public-safety-defence-emergency-and-external-power-decision.md"
+      ],
+      "pins": [
+        "book-1/25-a-prisoner-is-a-person.pins.nibli",
+        "tests/pins/custody"
+      ],
+      "chapters": [
+        25
+      ],
+      "formal": "formal",
+      "gap": null,
+      "lineage": [
+        {
+          "constitution": "Kenya 2010",
+          "provision": "Article 51(1)",
+          "url": "https://www.constituteproject.org/constitution/Kenya_2010?lang=en",
+          "quote": "A person who is detained, held in custody or imprisoned under the law, retains all the rights and fundamental freedoms in the Bill of Rights"
+        },
+        {
+          "constitution": "Spain 1978 (rev. 2011)",
+          "provision": "Section 25(2)",
+          "url": "https://www.constituteproject.org/constitution/Spain_2011?lang=en",
+          "quote": "The person sentenced to prison shall enjoy, during the imprisonment, the fundamental rights contained in this Chapter except those expressly restricted"
+        },
+        {
+          "constitution": "Brazil 1988 (rev. 2017)",
+          "provision": "Article 15(III)",
+          "url": "https://www.constituteproject.org/constitution/Brazil_2017?lang=en",
+          "quote": "Deprivation of political rights is forbidden; loss or suspension … III. so long as the effects of a final non-appealable criminal conviction remain in force"
+        }
+      ],
+      "novelty": "This article shares with Kenya's and Spain's provisions the rule that a prisoner keeps every right the sentence does not take. It names the vote among the rights kept, where Brazil suspends political rights while a criminal conviction's effects last, and it adds continuity of care at release and the rule that confinement is never itself evidence that the floor was delivered."
+    },
+    {
+      "number": 27,
+      "part": 4,
+      "title": "Where people are held",
+      "core": "",
+      "text": [
+        "A secure place may be considered only where the case has proved death, life-threatening injury, serious enduring harm or deliberately inflicted severe suffering. Severity permits and never selects: a severe case may still be served at home or in ordinary supported residence.",
+        "The place must be available, lawful, necessary and independently reviewed, and a secure place needs positive evidence that milder places are insufficient. The number of victims, the label of an offence, a risk score, family status, wealth or poverty cannot stand in for these findings. The lack of a home never selects a harsher place."
+      ],
+      "families": [
+        "Article 6",
+        "CUSTODY-EXECUTION-RULES"
+      ],
+      "records": [
+        "book-1/appendix/decisions/public-safety-defence-emergency-and-external-power-decision.md"
+      ],
+      "pins": [
+        "book-1/26-where-people-are-put.pins.nibli",
+        "tests/pins/placement",
+        "tests/pins/custody"
+      ],
+      "chapters": [
+        26
+      ],
+      "formal": "formal",
+      "gap": null,
+      "lineage": [
+        {
+          "constitution": "Portugal 1976 (rev. 2005)",
+          "provision": "Article 28(2)",
+          "url": "https://www.constituteproject.org/constitution/Portugal_2005?lang=en",
+          "quote": "Remand in custody … shall not be ordered or maintained whenever it is possible to grant bail or apply another, more favourable measure"
+        },
+        {
+          "constitution": "Mexico 1917 (rev. 2015)",
+          "provision": "Article 18, eighth paragraph",
+          "url": "https://www.constituteproject.org/constitution/Mexico_2015?lang=en",
+          "quote": "Convicts may serve their sentence in the penitentiaries closer to their home, in order to encourage their reintegration to the community."
+        },
+        {
+          "constitution": "Brazil 1988 (rev. 2017)",
+          "provision": "Article 5(XLVIII)",
+          "url": "https://www.constituteproject.org/constitution/Brazil_2017?lang=en",
+          "quote": "sentences shall be served in separate establishments, according to the nature of the offense, and age and sex of the convict"
+        }
+      ],
+      "novelty": "This article shares the preference for the less restrictive measure that Portugal states for remand, and Mexico's concern that a sentence be served near home. It differs in allowing a secure place only on proof of grave harm, in never letting severity choose the place, and in refusing the offence as a sorting key, which Brazil uses to separate establishments and Mexico uses to exclude organized-crime cases from serving near home."
+    },
+    {
+      "number": 28,
+      "part": 4,
+      "title": "The one thing taken",
+      "core": "part: due process and prompt independent judicial review of detention",
+      "text": [
+        "A sentence takes movement and nothing else. Confinement needs a properly made judgment of the offence under the criminal standard of proof, with defences, counsel, a hearing, reasons and review, bound to the person, the incident and the injured person, and a current, reviewed authority for that case.",
+        "Custody authority lapses unless it is renewed on review before its end, and nothing extends it by default; the body that must review it owes that review before the authority expires. A filing that challenges custody suspends it while independent review is pending, and a copy the person kept proves the filing.",
+        "No earned time, character assessment or score changes a sentence. Arrest, search and detention each need an individual recorded ground; a search needs prior independent authorisation, and detention prompt judicial review that the person need not request."
+      ],
+      "families": [
+        "Article 6",
+        "CUSTODY-ADJUDICATION-RULES",
+        "T3-COURT-GATE",
+        "T3-RULES",
+        "T3-LEASE-RULE",
+        "PUBLIC-SAFETY-RULES",
+        "Article 2"
+      ],
+      "records": [
+        "book-1/appendix/decisions/time-model-decision.md",
+        "book-1/appendix/contracts/public-safety-contract.md"
+      ],
+      "pins": [
+        "book-1/27-the-one-thing-taken.pins.nibli",
+        "tests/pins/custody",
+        "tests/pins/temporal"
+      ],
+      "chapters": [
+        27
+      ],
+      "formal": "formal",
+      "gap": null,
+      "lineage": [
+        {
+          "constitution": "Germany 1949 (rev. 2014)",
+          "provision": "Article 104(2)",
+          "url": "https://www.constituteproject.org/constitution/German_Federal_Republic_2014?lang=en",
+          "quote": "Only a judge may rule upon the permissibility or continuation of any deprivation of liberty."
+        },
+        {
+          "constitution": "Italy 1947 (rev. 2020)",
+          "provision": "Article 13, third paragraph",
+          "url": "https://www.constituteproject.org/constitution/Italy_2020?lang=en",
+          "quote": "in default of such validation in the following 48 hours, shall be revoked and considered null and void"
+        },
+        {
+          "constitution": "India 1949 (rev. 2016)",
+          "provision": "Article 22(2)",
+          "url": "https://www.constituteproject.org/constitution/India_2016?lang=en",
+          "quote": "Every person who is arrested and detained in custody shall be produced before the nearest magistrate within a period of twenty-four hours of such arrest"
+        }
+      ],
+      "novelty": "This article shares with these provisions the rules that only a judge may continue a detention, that detention not validated in time loses its authority, and that judicial review comes without the detained person asking. It differs in applying the lapse to every custody authority, including one under a sentence, which ends unless renewed on review, in obliging the reviewing body to hold that review before the authority expires, and in letting a filing that challenges custody suspend it while independent review is pending."
+    },
+    {
+      "number": 29,
+      "part": 4,
+      "title": "When the system notices it broke",
+      "core": "part: the right to an effective remedy",
+      "text": [
+        "A breach of the conditions of custody, or of any duty, is marked only by a positive finding from an authorised witness and an independent reviewer, neither of them the holder or the person held.",
+        "A finding obliges a named office to act, with individual remedy, correction of the common cause, re-examination of related cases and monitoring for recurrence. An office that stays silent passes its duty to a separate alternate. A marker of a breach calls for action; it is never itself the action."
+      ],
+      "families": [
+        "Article 8b",
+        "OBLIGATIONS-RULES"
+      ],
+      "records": [
+        "book-1/appendix/decisions/obligations-and-nonreciprocity-decision.md"
+      ],
+      "pins": [
+        "book-1/28-when-the-system-notices-it-broke.pins.nibli",
+        "tests/pins/obligations"
+      ],
+      "chapters": [
+        28
+      ],
+      "formal": "formal",
+      "gap": null,
+      "lineage": [
+        {
+          "constitution": "Mexico 1917 (rev. 2015)",
+          "provision": "Article 102(B), second paragraph",
+          "url": "https://www.constituteproject.org/constitution/Mexico_2015?lang=en",
+          "quote": "When the authorities or public servants responsible do not accept or enforce these recommendations, they must substantiate such refusal and make their refusal public."
+        },
+        {
+          "constitution": "South Africa 1996 (rev. 2012)",
+          "provision": "section 182(1)(c)",
+          "url": "https://www.constituteproject.org/constitution/South_Africa_2012?lang=en",
+          "quote": "The Public Protector has the power, as regulated by national legislation- … to take appropriate remedial action."
+        },
+        {
+          "constitution": "Portugal 1976 (rev. 2005)",
+          "provision": "Article 23(1)",
+          "url": "https://www.constituteproject.org/constitution/Portugal_2005?lang=en",
+          "quote": "shall send the competent bodies such recommendations as may be necessary in order to prevent or make good any injustices"
+        }
+      ],
+      "novelty": "This article shares with these provisions an independent office that examines official failures and seeks remedy and the prevention of injustice. It differs in marking a breach only on a positive finding by a witness and a reviewer who are neither the holder nor the person held, in listing the duties a finding creates (individual remedy, correction of the common cause, re-examination of related cases and monitoring for recurrence), and in passing a silent office's duty to a separate alternate, where Mexico asks a refusing authority to justify its refusal in public."
+    },
+    {
+      "number": 30,
+      "part": 5,
+      "title": "Versions of the record and time",
+      "core": "",
+      "text": [
+        "A new version of the record carries forward only what an independent witness records carrying, and a protected entry that goes missing between versions is reported as a disappearance.",
+        "Public power has effect only through the version in force, and current authority is always a positive record for the exact case, reviewed and tied to its source and end. This constitution counts no days and advances no clock; whether time has passed is shown by the records witnesses keep."
+      ],
+      "families": [
+        "T1-RULES",
+        "T2-RULES",
+        "T3-RULES",
+        "Article 8c"
+      ],
+      "records": [
+        "book-1/appendix/decisions/time-model-decision.md"
+      ],
+      "pins": [
+        "tests/pins/temporal",
+        "tests/pins/records"
+      ],
+      "chapters": [
+        16,
+        22,
+        27
+      ],
+      "formal": "formal",
+      "gap": null,
+      "lineage": [
+        {
+          "constitution": "Mexico 1917 (rev. 2015)",
+          "provision": "Article 6(A)(V)",
+          "url": "https://www.constituteproject.org/constitution/Mexico_2015?lang=en",
+          "quote": "Government agencies (obligors) shall record and keep their documents in updated administrative files"
+        },
+        {
+          "constitution": "Spain 1978 (rev. 2011)",
+          "provision": "Section 9(3)",
+          "url": "https://www.constituteproject.org/constitution/Spain_2011?lang=en",
+          "quote": "The Constitution guarantees the principle of legality, the hierarchy of legal provisions, the publicity of legal statutes, the non-retroactivity of punitive provisions"
+        },
+        {
+          "constitution": "Kenya 2010",
+          "provision": "Article 35(2)",
+          "url": "https://www.constituteproject.org/constitution/Kenya_2010?lang=en",
+          "quote": "Every person has the right to the correction or deletion of untrue or misleading information that affects the person."
+        }
+      ],
+      "novelty": "This article shares with these provisions the duty to keep official records current, the principle that law acts through published norms that do not reach back to punish, and a person's right to have untrue records corrected. It adds that an entry passes to a new version of the record only when an independent witness records its carry, that a missing protected entry is reported as a disappearance, and that the constitution counts no days; none of the constitutions compared here has a comparable rule for versions of the record."
+    },
+    {
+      "number": 31,
+      "part": 5,
+      "title": "Interpretation",
+      "core": "",
+      "text": [
+        "A conclusion that restricts, takes, confines or finds against a person needs complete positive evidence, and the absence of an entry never creates or extends a power. Every authority reads only the records its own rules name.",
+        "Where a standard is open, such as adequate, usable, reasonably available, least restrictive or meaningful, the reading more protective of the floor and of liberty prevails."
+      ],
+      "families": [
+        "Article 0",
+        "T3-RULES",
+        "CUSTODY-ADJUDICATION-RULES"
+      ],
+      "records": [
+        "book-1/appendix/decisions/time-model-decision.md",
+        "book-1/appendix/decisions/closure-gaps-decision.md"
+      ],
+      "pins": [
+        "book-1/02-what-the-record-may-say.pins.nibli",
+        "book-1/27-the-one-thing-taken.pins.nibli",
+        "tests/pins/custody"
+      ],
+      "chapters": [
+        2,
+        27,
+        30
+      ],
+      "formal": "partly formal",
+      "gap": "The first paragraph traces to the fail-closed rules and their tests. The second is a principle for reading open standards, which a rule over records cannot state; it is a deliberate gap in the traceability map.",
+      "lineage": [
+        {
+          "constitution": "Mexico 1917 (rev. 2015)",
+          "provision": "Article 1, second paragraph",
+          "url": "https://www.constituteproject.org/constitution/Mexico_2015?lang=en",
+          "quote": "The provisions relating to human rights shall be interpreted … working in favor of the broader protection of people at all times"
+        },
+        {
+          "constitution": "Kenya 2010",
+          "provision": "Article 20(3)(b)",
+          "url": "https://www.constituteproject.org/constitution/Kenya_2010?lang=en",
+          "quote": "adopt the interpretation that most favours the enforcement of a right or fundamental freedom"
+        },
+        {
+          "constitution": "Colombia 1991 (rev. 2015)",
+          "provision": "Article 121",
+          "url": "https://www.constituteproject.org/constitution/Colombia_2015?lang=en",
+          "quote": "No authority of the State may exercise functions different from those assigned to it by the Constitution and statute."
+        }
+      ],
+      "novelty": "This article shares with Mexico's and Kenya's provisions the rule that the reading more protective of rights prevails, and with Colombia's the rule that an authority holds only the functions assigned to it. It adds that a conclusion against a person needs complete positive evidence and that a missing record entry never creates or extends a power, and it directs the protective reading at open standards such as adequate or least restrictive."
+    }
+  ]
+}

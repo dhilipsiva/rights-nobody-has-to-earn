@@ -213,6 +213,8 @@ finding requires, what it reaches and what must remain untouched.
 
 ## Argument: Protection that follows the charge
 
+*The companion states these rules as [Article 24](https://dhilipsiva.dev/rights-nobody-has-to-earn/constitution/#article-24).*
+
 I scope the shield by the harm it guards against. Retaliation through
 confinement needs a prosecution, so the protection attaches to each case in
 which the discloser is cited and asks the one question retaliation raises: did

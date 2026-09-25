@@ -142,6 +142,8 @@ beyond the debt. Whether any of them happens is a question for the second book.
 
 ## Argument: Owed to everyone, by someone
 
+*The companion states these rules as [Article 3](https://dhilipsiva.dev/rights-nobody-has-to-earn/constitution/#article-3).*
+
 I choose a floor owed to every person as a debt, with a public body named as
 owing it, because a duty without a bearer leaves nobody to answer when food
 fails to arrive. Henry Shue argued that subsistence is a basic right and that

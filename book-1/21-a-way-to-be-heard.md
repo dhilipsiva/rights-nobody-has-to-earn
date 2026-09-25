@@ -157,6 +157,8 @@ of amendment as permission to discard their limits.
 
 ## Argument: Four stages, and a meeting beside them
 
+*The companion states these rules as [Article 22](https://dhilipsiva.dev/rights-nobody-has-to-earn/constitution/#article-22).*
+
 I keep access, the request, the duty to hear and relief apart because each
 fails in its own way, and merged stages let one failure pass for another. If
 access waited on the merits, the people least able to argue would be turned

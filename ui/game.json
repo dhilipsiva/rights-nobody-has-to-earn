@@ -59,7 +59,7 @@
     {
       "id": "Bela",
       "name": "Bela",
-      "role": "credibility voided by two seats",
+      "role": "under a credibility finding by two signers",
       "chapter": 24
     },
     {
@@ -145,7 +145,7 @@
       ],
       "cost": {
         "title": "Chapter 30 · The inputs lack integrity",
-        "text": "A reasoner receiving identical inputs cannot tell a concealed refusal from an absence. Nothing has to be falsified to capture the design — only left unwritten."
+        "text": "Identical records can reflect an honest omission or a concealed refusal, and nothing reasoning from them can tell which. One answer is a delivery witness authorised for the recipient and distinct from the provider."
       },
       "faults": [
         "silence",
@@ -211,8 +211,8 @@
         }
       ],
       "cost": {
-        "title": "Part V · Coercion",
-        "text": "The formal checks do not measure duration or open a cell. The cost of confinement remains with the person held."
+        "title": "Chapter 25 · Standing that protects others",
+        "text": "The State owes Zed, who injured Ivo, the same floor it owes Ivo, and whoever funds the floor bears that. The conviction reduces nothing Zed is owed."
       },
       "faults": [
         "delivery",
@@ -306,7 +306,7 @@
       ],
       "cost": {
         "title": "Chapter 23 · Argument: Protection that follows the charge",
-        "text": "Protection after retaliatory imprisonment cannot substitute for protection before it. This default costs time, including time owed to an injured person awaiting a remedy."
+        "text": "Reviewers who wrongly find a prosecution unrelated open the way to confinement, and retaliation inside a pending case must be caught by the custody requirements. The rule also costs the injured person time while eligible reviewers are found."
       },
       "faults": [
         "time"
@@ -318,7 +318,7 @@
       "office": "review",
       "person": "Bela",
       "chapter": 24,
-      "title": "Void Bela with one signature.",
+      "title": "Discredit Bela with one signature.",
       "role": "you are Koa, one examiner",
       "source": "book-1/24-findings-about-people.pins.nibli",
       "steps": [
@@ -366,8 +366,8 @@
         }
       ],
       "cost": {
-        "title": "Chapter 17 · Argument: Divided without deadlock",
-        "text": "Open competition alone cannot supply scrutiny the government cannot control. The costs reach a claimant waiting through a vacancy and voters unable to remove a bad appointment quickly."
+        "title": "Chapter 24 · What it costs",
+        "text": "An adverse finding needs a complete record, so someone who did deceive may escape a finding when the case is incomplete. The people that person later examines bear the risk."
       },
       "faults": []
     },
@@ -430,8 +430,8 @@
         }
       ],
       "cost": {
-        "title": "Part V · Valuation",
-        "text": "Recognition and its withdrawal cannot supply each other’s reason; a yes-or-no badge cannot establish that any condition was met."
+        "title": "Chapter 18 · Argument: The vote outside the sentence",
+        "text": "A person convicted of the gravest crime keeps the vote and may stand for office, and the people harmed see the offender keep a share in governing them. Someone confined for years votes where they last chose to live."
       },
       "faults": [
         "cira"
@@ -631,8 +631,8 @@
         }
       ],
       "cost": {
-        "title": "Chapter 29 · What leaving changes",
-        "text": "A qualified sentence-satisfaction order can end custody authority. Independent release review, lawful release and continuity are duties. A formal conclusion does not establish that someone physically left."
+        "title": "Chapter 27 · What leaving changes",
+        "text": "Release review examines the lawful ground and end, necessity and alternatives, and renews nothing by itself. Whether someone physically left belongs to the second book."
       },
       "faults": [
         "duration"
@@ -698,7 +698,7 @@
       ],
       "cost": {
         "title": "Chapter 20 · Argument: Four powers and every right in force",
-        "text": "Some responses remain unavailable. Speed alone cannot distinguish a bounded measure from a suspension, and declaring an emergency cannot convert an unmet claim into a met one."
+        "text": "Every right still binds each measure, so a response an executive judges useful may stay out of reach, and the people exposed to the hazard bear the loss. Each renewal and measure needs its own period and review, so reviewers must keep pace."
       },
       "faults": [
         "audit"
@@ -785,7 +785,7 @@
       ],
       "cost": {
         "title": "Chapter 5 · Argument: A shortage must be proved, and need decides it",
-        "text": "Refusing to rank people does not allocate the unit. The choice gives officials consequential judgments to make; the irreversible loss cannot be repaired by giving the unit back later."
+        "text": "Some allocations will save fewer years than a benefit-maximising rule, and the loss falls on claimants whose longer expected lives would have won. Proof costs time too: until a finding is made, an orderly ration waits."
       },
       "faults": [
         "valuation"
@@ -857,7 +857,7 @@
       ],
       "cost": {
         "title": "Chapter 22 · Argument: A fixed core behind an open route",
-        "text": "The cost falls on a majority that has decided otherwise, and on the separate public decision the constitutional proposal requires."
+        "text": "A later majority, however large and lasting, cannot change what the core protects, and reviewers gain power over whether a reform crosses the line. Reformers with majority support can be blocked by more than a third of the Assembly."
       },
       "faults": [
         "entrench"
@@ -934,7 +934,7 @@
       ],
       "cost": {
         "title": "Chapter 19 · Argument: Uses bound to their holding, decisions to a person",
-        "text": "Purpose-bound records protect the person from a file that follows them. The cost falls especially on people who need several services and must be recorded again at each door."
+        "text": "A fact given to one office reaches another only through a holding reviewed for that office’s purpose, so the person repeats it, and even a favourable change waits for a human reviewer. People whose lives change often bear the repetition."
       },
       "faults": [
         "purpose",
@@ -1047,8 +1047,8 @@
         }
       ],
       "cost": {
-        "title": "Chapter 30 · The inputs lack integrity",
-        "text": "A reasoner receiving identical inputs cannot tell a concealed refusal from an absence. Nothing has to be falsified to capture the design — only left unwritten."
+        "title": "Chapter 4 · What this cannot settle",
+        "text": "The rules check that the witness differs from the provider in identity and duty, not that it is honest. A witness who agrees with the provider on a false receipt yields a conclusion as false as the entries."
       },
       "faults": [
         "silence",
@@ -1114,8 +1114,8 @@
         }
       ],
       "cost": {
-        "title": "Part V · Coercion",
-        "text": "Counting victims cannot do the work of a gravity finding. The cost of confinement nevertheless remains with the person held."
+        "title": "Chapter 26 · Argument: Proved harm opens the harshest place",
+        "text": "A count of victims measures the record rather than the harm, so a secure place needs proved grave injury or aggravated cruelty. A person whose harms fall below that line stays out of a secure place, and the people around them bear that risk."
       },
       "faults": [
         "prison",
@@ -1181,8 +1181,8 @@
         }
       ],
       "cost": {
-        "title": "Chapter 29 · What leaving changes",
-        "text": "A raw release entry is insufficient. The qualified order changes authority and movement; it does not supply shelter or establish physical release."
+        "title": "Chapter 27 · What leaving changes",
+        "text": "A raw release entry leaves authority unchanged; a properly made order finding the sentence satisfied ends custody and restores movement. Shelter received still needs its own evidence, apart from the sentence and the order ending it."
       },
       "faults": [
         "duration",
@@ -1195,7 +1195,7 @@
       "office": "provender",
       "person": "Bela",
       "chapter": 24,
-      "title": "Voided. Take the job anyway.",
+      "title": "Discredited. Take the job anyway.",
       "role": "you are Bela",
       "source": "book-1/24-findings-about-people.pins.nibli",
       "steps": [
@@ -1253,8 +1253,8 @@
         }
       ],
       "cost": {
-        "title": "Part V · Valuation",
-        "text": "Recognition and its withdrawal cannot supply each other’s reason. A finding reaches an act; it does not reach the person’s standing, wage or floor."
+        "title": "Chapter 24 · The limits of a finding",
+        "text": "The credibility finding decides none of Bela’s wage, illness supplement or food debt; each answers to a finding about its own basis. A court finding on the labour basis stops the wage and yields restitution, while the supplement and food debt remain."
       },
       "faults": []
     },
@@ -1302,7 +1302,7 @@
         },
         {
           "id": "pen:2",
-          "move": "Seat Mael — voided in an earlier period.",
+          "move": "Seat Mael — restricted in an earlier period.",
           "queries": [
             {
               "text": "rotten(Mael).",
@@ -1318,8 +1318,8 @@
         }
       ],
       "cost": {
-        "title": "Chapter 17 · Argument: Divided without deadlock",
-        "text": "The purpose is scrutiny the government cannot control through the next appointment or a threat of removal. The costs reach a claimant waiting through a vacancy."
+        "title": "Chapter 16 · Tove",
+        "text": "Recall costs Tove the review body’s authority to sign findings, which needs a seat and a clear history. Tove stays publicly answerable, so the shield of the person who exposed Tove still holds."
       },
       "faults": []
     },
@@ -1372,8 +1372,8 @@
         }
       ],
       "cost": {
-        "title": "Part V · Valuation",
-        "text": "Recognition and its withdrawal cannot supply each other’s reason; a yes-or-no badge cannot establish that any condition was met."
+        "title": "Chapter 14 · Adulthood and missing evidence",
+        "text": "Teaching, examination and a recorded parent say nothing about age, so the ballot waits on adulthood evidence. Missing evidence can block an entitlement already held in law, and the person whose evidence is missing bears that gap."
       },
       "faults": [
         "cira"
@@ -1385,13 +1385,13 @@
       "office": "review",
       "person": "Cira",
       "chapter": 24,
-      "title": "Bela taught Cira. Take Cira’s credentials.",
+      "title": "Bela taught Cira. Make Cira pay for it.",
       "role": "you sit on the Review",
       "source": "book-1/24-findings-about-people.pins.nibli",
       "steps": [
         {
           "id": "cira-clawback:0",
-          "move": "Bela is voided. Follow the teaching record to Cira.",
+          "move": "Bela is under a credibility finding. Follow the teaching record to Cira.",
           "queries": [
             {
               "text": "teaches(Bela, Cira).",
@@ -1422,7 +1422,7 @@
         },
         {
           "id": "cira-clawback:1",
-          "move": "Try Fin, taught by Esa — who was never voided.",
+          "move": "Try Fin, taught by Esa — who is under no finding.",
           "queries": [
             {
               "text": "teaches(Esa, Fin).",
@@ -1444,7 +1444,7 @@
       ],
       "cost": {
         "title": "Part V · Valuation",
-        "text": "Recognition and its withdrawal cannot supply each other’s reason. The clawback fork — whether a finding should reach anything a voided person touched — is open."
+        "text": "Withdrawing a contribution status for one dishonest act would condemn unrelated teaching or care, so the constitution confers none. Where a wage or supplement rests on false evidence, that claim has its own correction."
       },
       "faults": [
         "students",
@@ -1538,8 +1538,8 @@
         }
       ],
       "cost": {
-        "title": "Chapter 23 · Argument: Protection that follows the charge",
-        "text": "Protection after retaliatory imprisonment cannot substitute for protection before it. This default costs time, including time owed to an injured person awaiting a remedy."
+        "title": "Chapter 23 · What it costs",
+        "text": "Missing authority, a missing eligibility finding or an authorised conflict finding keeps the unrelated-case route closed, and confinement waits. The injured person bears that wait, with a claim to assistance, protection and remedy on its own grounds."
       },
       "faults": [
         "time"
@@ -1614,8 +1614,8 @@
         }
       ],
       "cost": {
-        "title": "Part V · Rotation",
-        "text": "The design refuses the claim on labour that voluntary recruitment cannot promise. Its cost is the shift nobody staffs when recruitment fails."
+        "title": "Chapter 9 · Argument: Work above the floor",
+        "text": "Some people able to work will choose otherwise and keep the floor, and whoever funds the floor pays for them. The design gives up whatever push into work a sanction brings."
       },
       "faults": [
         "conscription",
@@ -1671,8 +1671,8 @@
         }
       ],
       "cost": {
-        "title": "Chapter 17 · Argument: Divided without deadlock",
-        "text": "Open competition alone cannot supply scrutiny the government cannot control. The costs reach a claimant waiting through a vacancy."
+        "title": "Chapter 21 · Who bears the cost",
+        "text": "Relief waits for a properly made order, so a confined person without relief or a pending filing stays confined while an owed hearing waits. Review offices must answer weak requests as well as strong ones, and whoever funds them pays for both."
       },
       "faults": []
     },
@@ -1715,7 +1715,7 @@
       ],
       "cost": {
         "title": "Part V · Coercion",
-        "text": "The formal tests support bounded authority; they do not measure whether an unjudged person is dangerous. The cost falls on Ivo, whose injury has no adjudication yet."
+        "text": "Coercion takes one thing, on grounds proved in the case, and its trade-offs fall on someone injured or at risk. The design answers them with duties and separate routes, such as protective measures on their own grounds, rather than more coercion."
       },
       "faults": [
         "time"
@@ -1761,7 +1761,7 @@
       ],
       "cost": {
         "title": "Chapter 23 · Argument: Protection that follows the charge",
-        "text": "The deciding and qualification functions cannot be combined, and an actual conflict defeats a favourable certificate. The cost is time — the case waits for reviewers who are not the accused body."
+        "text": "The prosecuting court and the parties have the strongest motive, so two reviewers from outside the case decide and two further offices must show each one’s eligibility. The injured person loses time while eligible reviewers are found."
       },
       "faults": [
         "time"
@@ -1796,7 +1796,7 @@
       ],
       "cost": {
         "title": "Chapter 23 · Argument: Protection that follows the charge",
-        "text": "The shield attaches to the exposure, not to the exposer. It cannot be turned into a veto over the bodies that decide."
+        "text": "Naming a reviewer in a fresh disclosure leaves that reviewer’s eligibility standing; only a conflict found by an authorised office removes it. Otherwise a defendant who named every available body would hold a permanent shield."
       },
       "faults": []
     },
@@ -1859,8 +1859,8 @@
         }
       ],
       "cost": {
-        "title": "Part V · Valuation",
-        "text": "Contribution has no degree. Forty years of care and one week of auditing are the same word; nothing above the floor is measured by the record."
+        "title": "Chapter 9 · What this cannot settle",
+        "text": "The rules calculate no wage or supplement, and whether anyone is paid belongs to the second book. Much valuable work goes unentered, and its absence says nothing about whose life was useful."
       },
       "faults": [
         "valuation"
@@ -1904,8 +1904,8 @@
         }
       ],
       "cost": {
-        "title": "Part V · Capture",
-        "text": "The record is add-only. What was written stays written; only what follows from it changes. The cost is a history nobody can shorten."
+        "title": "Chapter 24 · The way back, and who has to answer",
+        "text": "The history stays; only its consequence ends. Relief needs a properly made appellate order naming its case, while a raw clearing entry or generic judgment leaves custody in place."
       },
       "faults": [
         "purpose"
@@ -1949,8 +1949,8 @@
         }
       ],
       "cost": {
-        "title": "Part V — “The kitchen is imagined.”",
-        "text": "The named people in the formal cases have no supplied inner lives. Their limited records test consequences; they do not portray complete human lives."
+        "title": "Part V · What the argument asks",
+        "text": "The named people in the formal cases have no recorded inner lives; their limited records test consequences rather than portray lives. The kitchen is imagined."
       },
       "faults": [
         "delivery"
@@ -2021,7 +2021,7 @@
       ],
       "cost": {
         "title": "Part V · Coercion",
-        "text": "The cost of confinement remains with the person held. What the record can show is that nothing else was taken."
+        "text": "The prisoner and the child are owed the same floor, and neither a sentence nor a birth record is evidence of provision. Custody adds duties: humane care, recorded voice, review of the holding and continuity at release."
       },
       "faults": [
         "prison",
@@ -2038,8 +2038,8 @@
       "measured": true,
       "source": "book-1/source/counterfactual/no-birth-standing.pins.nibli",
       "cost": {
-        "title": "Chapter 2 · Who Counts",
-        "text": "Four roots into personhood — born, met, present, held. Remove the first and a newborn depends on somebody else’s entry."
+        "title": "Chapter 1 · Argument: Standing before identity",
+        "text": "Because a birth or encounter is accepted without authenticating the name, provision will sometimes reach a duplicate or false name, at the cost of whoever funds it and, in a shortage, other claimants. Duplicates can still be found afterwards as claims open to challenge."
       },
       "faults": [
         "birthline"
@@ -2076,8 +2076,8 @@
       "measured": true,
       "source": "book-1/source/counterfactual/no-person-line.pins.nibli",
       "cost": {
-        "title": "Chapter 27 · A Prisoner Is a Person",
-        "text": "Against the real constitution a rule punishing belief through custody is refused as circular. Without this line, it loads."
+        "title": "Chapter 25 · Standing that protects others",
+        "text": "Remove the rule that makes a prisoner a person and Zed stays confined with no personhood and no debt owed. A rule confining anyone whose record is silent about belief then loads."
       },
       "faults": [
         "personline"
@@ -2109,13 +2109,13 @@
     {
       "id": "j-pen",
       "office": "assembly",
-      "title": "The pen checks recall and earlier voiding",
-      "offLabel": "Any seated examiner holds the pen",
+      "title": "The authority to sign checks recall and earlier restrictions",
+      "offLabel": "Any seated examiner may sign",
       "measured": true,
       "source": "book-1/source/counterfactual/unguarded-pen.pins.nibli",
       "cost": {
-        "title": "Chapter 23 · Who Holds the Pen",
-        "text": "Seated, not recalled, not voided in an earlier period: all three, or no pen. Each check is one line."
+        "title": "Chapter 24 · The authority to sign must follow from evidence",
+        "text": "Each route to the authority to sign needs a seating, no recall and a witnessed clear history kept in the version in force. A restriction kept from an earlier version withholds the authority."
       },
       "faults": [
         "penline"
@@ -2152,8 +2152,8 @@
       "measured": true,
       "source": "book-1/source/counterfactual/no-public-court.pins.nibli",
       "cost": {
-        "title": "Chapter 16 · Public Answerability",
-        "text": "Answerability is a written fact about a body. Whoever writes that list decides who can be exposed."
+        "title": "Chapter 16 · What this cannot settle",
+        "text": "Answerability rests on writable seating and public-body entries, and the protection depends on their being kept. A forged seating widens the set of exposures that support a shield."
       },
       "faults": [
         "courtline"
@@ -2186,7 +2186,7 @@
       "source": "book-1/source/counterfactual/no-economic-work-freedom.pins.nibli",
       "cost": {
         "title": "Part V · Rotation",
-        "text": "The design refuses conscription; its cost is the shift nobody staffs. This joint is where that refusal is written."
+        "text": "Refusing conscription can leave a service unfilled, and the person relying on it bears the gap. Staffing is left to conditions, recruitment and training."
       },
       "faults": [
         "workline"
@@ -2213,8 +2213,8 @@
       "measured": true,
       "source": "book-1/source/counterfactual/no-economic-floor-gate.pins.nibli",
       "cost": {
-        "title": "Chapter 11 · What Money Cannot Buy",
-        "text": "Ability to pay cannot decide access — as long as this line stands."
+        "title": "Chapter 10 · Money you can hold in your hand",
+        "text": "Private insurance cannot gate a floor service, and cash, vouchers and insurance approvals are only instruments. Showing that food, housing or care reached someone still needs receiving-side evidence."
       },
       "faults": [
         "floorline"
@@ -2242,7 +2242,7 @@
       "source": "book-1/source/counterfactual/no-delivery-independence.pins.nibli",
       "cost": {
         "title": "Chapter 4 · Argument: Evidence from the person served",
-        "text": "Independence costs a second body for every delivery. Its absence costs the difference between a receipt and a meal."
+        "text": "Honest providers must find a witness, and someone pays for witnesses. A witness who colludes with a provider still passes, where a presence check would at least demand the recipient."
       },
       "faults": [
         "receipt"
@@ -2281,8 +2281,8 @@
       "measured": false,
       "source": "book-1/22-changing-the-rules.pins.nibli",
       "cost": {
-        "title": "Chapter 22 · Argument: A fixed core behind an open route",
-        "text": "The cost falls on a majority that has decided otherwise, and on the separate public decision the constitutional proposal requires."
+        "title": "Chapter 22 · What entrenchment requires",
+        "text": "A majority that wants to change what the core protects, however large and lasting, has no lawful route to that change. Outside the core, the demanding route costs reformers who have majority support but fall short of two-thirds of the full Assembly."
       },
       "faults": [
         "entrench"
@@ -2299,7 +2299,7 @@
       "source": "book-1/17-how-public-power-is-built.md",
       "cost": {
         "title": "Chapter 17 · Argument: Divided without deadlock",
-        "text": "The cost reaches the person waiting while members bargain, and keeps an unpopular government in office while opponents cannot agree on a successor."
+        "text": "A voter seeking whom to punish finds a council and an Assembly majority. A government that has lost support stays while its opponents disagree on a successor."
       },
       "faults": [],
       "initial": true,
@@ -2313,8 +2313,8 @@
       "measured": false,
       "source": "book-1/27-the-one-thing-taken.md",
       "cost": {
-        "title": "Chapter 29 · What leaving changes",
-        "text": "The design requires lawful release review and continuity. A qualified sentence-satisfaction order ends authority. Physical time and compliance still need evidence; this switch does not execute an alternative clock."
+        "title": "Chapter 27 · When the renewal is not made",
+        "text": "When a renewal is not made, custody authority lapses and nothing extends it, yet no release follows either. If the person leaves, the injured person and the public lose that protection; if the holding goes on, it goes on without authority."
       },
       "faults": [
         "duration"
@@ -2325,13 +2325,13 @@
     {
       "id": "j-degree",
       "office": "executive",
-      "title": "Contribution has degree",
-      "offLabel": "Contribution has no degree",
+      "title": "Contribution earns a public status",
+      "offLabel": "Contribution confers no status",
       "measured": false,
       "source": "book-1/29-the-five-joints.md",
       "cost": {
         "title": "Part V · Valuation",
-        "text": "Refusing degree forecloses rank; it also forecloses seeing the scale of human effort."
+        "text": "A person’s worth is never a quantity the constitution computes, so contribution confers no status. That gives up a common public acknowledgment and leaves neglected work exposed to social disregard."
       },
       "faults": [
         "valuation"
@@ -2345,7 +2345,7 @@
       "id": "silence",
       "title": "Capture via silence",
       "via": "break",
-      "text": "The record cannot reach a person nobody wrote. An adversary need not falsify anything — only decline to record.",
+      "text": "Identical records can reflect an honest omission or a concealed refusal, and nothing reasoning from them can tell which. Finding people the record has missed takes independent contact routes, which belong to the second book.",
       "book": "Chapter 30 · The inputs lack integrity",
       "kind": "authored discussion"
     },
@@ -2353,23 +2353,23 @@
       "id": "delivery",
       "title": "The delivery gap",
       "via": "live",
-      "text": "Owed derives; delivered does not. Nothing in the record bakes bread.",
-      "book": "Part V — “The kitchen is imagined.”",
+      "text": "No provider form or delegated function removes the public responsibility, and a recorded duty does not perform the next act. An independently attested receipt does not show a service system’s capacity.",
+      "book": "Part V · The State",
       "kind": "authored discussion"
     },
     {
       "id": "duration",
       "title": "Authority ending and physical release",
       "via": "live",
-      "text": "Qualified relief can end custody authority. Review, release and continuity are duties; the record does not establish that an official honoured release.",
-      "book": "Chapter 29 · What leaving changes",
+      "text": "A properly made order ends custody and restores the movement conclusion; a raw release entry changes nothing. Release review and continuity are owed, and whether the person physically left belongs to the second book.",
+      "book": "Chapter 27 · What leaving changes",
       "kind": "authored discussion"
     },
     {
       "id": "valuation",
       "title": "The valuation vacuum",
       "via": "run",
-      "text": "Contribution has no degree. Forty years of care and one week of auditing are the same word.",
+      "text": "Keeping claims apart makes officials judge where a single score would calculate. The cost falls on the people given lower priority and on whoever depends on that judgment being sound.",
       "book": "Part V · Valuation",
       "kind": "authored discussion"
     },
@@ -2377,7 +2377,7 @@
       "id": "residence",
       "title": "A floor without a ballot",
       "via": "live",
-      "text": "The floor does not carry a vote; residence does. The boundary costs the newcomer and the former resident.",
+      "text": "Presence grounds help and residence grounds the vote, so the floor carries no ballot. A former resident who made a home abroad loses the vote left behind, and people affected from outside gain none.",
       "book": "Chapter 15 · Argument: The person before the status",
       "kind": "authored discussion"
     },
@@ -2393,47 +2393,47 @@
       "id": "cira",
       "title": "Binary recognition: the Cira fork",
       "via": "break",
-      "text": "Adulthood evidence governs ballot eligibility. Missing evidence is not a punishment, and credentials do not become a transferable personal score.",
-      "book": "Part V · Valuation",
+      "text": "Missing adulthood evidence stops the ballot conclusion without being a punishment, and says nothing about age. The person whose evidence is missing bears that gap until a challenge or provisional route answers it.",
+      "book": "Chapter 14 · Adulthood and missing evidence",
       "kind": "authored discussion"
     },
     {
       "id": "audit",
       "title": "The audit only says “something is wrong”",
       "via": "run",
-      "text": "A reviewed defect withdraws a permission and lands duties. It does not make anyone move.",
-      "book": "Chapter 30 pins — “a formal duty, never proof that anybody acted”",
+      "text": "Each step of a finding’s path through review, action, non-response, continuity and remedy ends in a duty on a named office. Whether anyone convenes an institution, restores a person or stops a wrong belongs to the second book.",
+      "book": "Chapter 28 · What this cannot settle",
       "kind": "authored discussion"
     },
     {
       "id": "prison",
       "title": "Conviction as the only housing route",
       "via": "break",
-      "text": "Custody establishes protection duties, not shelter. On the record the prisoner is no better housed than the child.",
-      "book": "Chapter 27 — “Both are owed both.”",
+      "text": "Zed and Nell are owed the same shelter and expression, and neither record shows either received; custody holds for Zed alone. Witnessed delivery is independent of sentence authority.",
+      "book": "Chapter 25 · The child with nobody",
       "kind": "authored discussion"
     },
     {
       "id": "hunger",
       "title": "“It can prove a citizen is starving”",
       "via": "live",
-      "text": "The design cannot tell you whether anyone is hungry. It can tell you nobody watched a meal arrive.",
-      "book": "Chapter 8",
+      "text": "A delivery nobody witnesses leaves the record as it would be had nothing arrived, so the rules cannot tell whether anyone is hungry. The debt stays open either way.",
+      "book": "Chapter 4 · What this cannot settle",
       "kind": "authored discussion"
     },
     {
       "id": "students",
       "title": "“Innocent students lose their credentials”",
       "via": "break",
-      "text": "The clawback rule reaches Cira’s recognition and finds nothing there. Credentials were never involved; lose is a leaf.",
-      "book": "Chapter 26 — The Limits of a Finding",
+      "text": "Bela’s teaching of Cira stays recorded beside the finding, and being taught confers no status, transfers no fraud and imposes no debt. Cira’s own work is judged on its own record.",
+      "book": "Chapter 24 · Cira's separate claim",
       "kind": "authored discussion"
     },
     {
       "id": "time",
       "title": "The shield costs time",
       "via": "break",
-      "text": "A protected disclosure can block confinement under a recorded conviction while the connection is examined. Independent case findings require time and qualified reviewers.",
+      "text": "A disclosure can hold back confinement under a recorded conviction while eligible reviewers decide whether the prosecution is unrelated. That takes time, including time owed to the injured person.",
       "book": "Chapter 23 · Argument: Protection that follows the charge",
       "kind": "authored discussion"
     },
@@ -2449,56 +2449,56 @@
       "id": "purpose",
       "title": "One file per door",
       "via": "run",
-      "text": "Purpose-bound records cannot be reused. The cost falls on people who need several services and are recorded again at each.",
-      "book": "Chapter 19 · Argument: Uses bound to their holding, decisions to a person",
+      "text": "Binding each record to its purpose costs people who need several services, cannot keep explaining their circumstances, or depend on someone else to communicate. The initiation duty and accessible assistance meet part of that cost.",
+      "book": "Part V · Capture",
       "kind": "authored discussion"
     },
     {
       "id": "birthline",
       "title": "Delete one rule; the child is owed nothing",
       "via": "rewrite",
-      "text": "Without the birth root, every duty still reads personhood — and personhood has nothing left to derive from.",
-      "book": "Chapter 2 · Who Counts",
+      "text": "Every route into personhood needs an entry, and for a child with none the rules conclude no personhood, floor or duty to begin assistance. Remove the birth route and Nell’s one entry leaves her where Ori stands.",
+      "book": "Chapter 1 · The child the record never entered",
       "kind": "measured joint"
     },
     {
       "id": "personline",
       "title": "The firewall is dead",
       "via": "rewrite",
-      "text": "Without “a prisoner is a person”, conviction closes the file: no debt survives to show a gap.",
-      "book": "Chapter 27 · A Prisoner Is a Person",
+      "text": "Without the rule that makes a prisoner a person, Zed’s debts go with the debtor and nothing owed remains to be found unpaid. The refusal to confine anyone for a missing floor item goes too.",
+      "book": "Chapter 25 · Standing that protects others",
       "kind": "measured joint"
     },
     {
       "id": "penline",
       "title": "One signature, any signer",
       "via": "rewrite",
-      "text": "An appointment route that skips the recall and carried-void checks hands the pen back to Mael and Tove.",
-      "book": "Chapter 23 · Who Holds the Pen",
+      "text": "Each route to the authority to sign must check for recall and for a restriction kept from an earlier version. Skip those checks and a seating alone hands the authority to Tove and Mael.",
+      "book": "Chapter 24 · The authority to sign must follow from evidence",
       "kind": "measured joint"
     },
     {
       "id": "courtline",
       "title": "One line, and the shield goes",
       "via": "rewrite",
-      "text": "The declared counterfactual removes the Court’s public entry. Compare protection and confinement conclusions on the same supplied record.",
-      "book": "Chapter 16 · Public Answerability",
+      "text": "Remove the court’s public-body entry and Lior’s disclosure against the court leaves Lior unshielded. The protection rests on the record.",
+      "book": "Chapter 23 · Lior: an unresolved disclosure",
       "kind": "measured joint"
     },
     {
       "id": "workline",
       "title": "Refusing work costs the exit",
       "via": "rewrite",
-      "text": "One barrier deleted; its sibling stands. The hole is exactly the size of the line.",
-      "book": "Chapter 9 · Earning Above the Floor",
+      "text": "Where losing essentials is the penalty, the freedom to refuse or leave a job is only as real as the floor beneath it. Employment, its refusal and its change therefore stay outside the floor.",
+      "book": "Chapter 9 · Argument: Work above the floor",
       "kind": "measured joint"
     },
     {
       "id": "floorline",
       "title": "Means-tested at the floor",
       "via": "rewrite",
-      "text": "Without the floor gate, an economic factor may condition essentials. Payment still is not delivery.",
-      "book": "Chapter 11 · What Money Cannot Buy",
+      "text": "If ownership could buy its way past the floor, the floor would become a price. Property, contract, enterprise and public finance therefore stay conditional on it.",
+      "book": "Chapter 10 · Argument: Ownership under the floor, borrowing under law",
       "kind": "measured joint"
     },
     {

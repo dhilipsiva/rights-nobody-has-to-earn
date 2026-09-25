@@ -204,6 +204,8 @@ next chapter takes that boundary across a border.
 
 ## Argument: Support before substitution
 
+*The companion states these rules as [Article 13](https://dhilipsiva.dev/rights-nobody-has-to-earn/constitution/#article-13).*
+
 I choose to treat each role in a person's life as a separable power, held for
 them over a named decision and open to challenge, because a role that travels
 across decisions becomes a status over the person, the status plenary

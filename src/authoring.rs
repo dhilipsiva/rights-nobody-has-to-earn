@@ -306,6 +306,9 @@ pub(crate) fn run(context: &Context, family: &str) -> Result<(), Error> {
 }
 
 #[cfg(test)]
+#[path = "authoring/articles_tests.rs"]
+mod articles_tests;
+#[cfg(test)]
 #[path = "authoring/claim_discipline_tests.rs"]
 mod claim_discipline_tests;
 #[cfg(test)]

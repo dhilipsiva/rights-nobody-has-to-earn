@@ -160,6 +160,8 @@ each be settled on its own terms.
 
 ## Argument: Proved harm opens the harshest place
 
+*The companion states these rules as [Article 27](https://dhilipsiva.dev/rights-nobody-has-to-earn/constitution/#article-27).*
+
 I tie the secure place to harm proved in this case because the place is a
 restriction added to the sentence, and the person should be able to contest
 whatever justifies it. Death, life-threatening injury, serious enduring harm

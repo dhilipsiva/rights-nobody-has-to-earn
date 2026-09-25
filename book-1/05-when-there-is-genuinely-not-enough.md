@@ -190,6 +190,8 @@ follows those public duties.
 
 ## Argument: A shortage must be proved, and need decides it
 
+*The companion states these rules as [Article 5](https://dhilipsiva.dev/rights-nobody-has-to-earn/constitution/#article-5).*
+
 I require a shortage to be proved for one resource and one population because
 scarcity is the easiest excuse a government has. Amartya Sen's study of the
 1943 Bengal famine rejected the explanation that the food supply had fallen:

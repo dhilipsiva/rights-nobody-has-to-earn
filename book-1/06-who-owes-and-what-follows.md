@@ -302,6 +302,8 @@ for permission.
 
 ## Argument: Named bearers, and a court that secures the minimum
 
+*The companion states these rules as [Article 6](https://dhilipsiva.dev/rights-nobody-has-to-earn/constitution/#article-6).*
+
 I give every duty in this chapter a named public bearer with a function, a
 place and a scope, because a right owed by everyone in general is answered by
 nobody in particular, and the person waiting is the one least able to find out

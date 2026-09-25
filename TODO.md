@@ -218,45 +218,15 @@ unimplemented until the items named here land.
 
 ## Ordered revision backlog
 
-Work in this order: items 61–63 carry the rewrite under the ratified rulings;
+Work in this order: items 62–63 carry the rewrite under the ratified rulings;
 item 64 finishes production, 65 closes the revision, and 66 is optional.
-Numbering continues from items 01–33, which `CLAUDE.md` records; items 34–60
+Numbering continues from items 01–33, which `CLAUDE.md` records; items 34–61
 and 67–72 are complete and recorded there too. Chapter numbers refer to the
 [current reading sequence](book-1/contents.json), which item 53 made the plan's
 §4.2 table; the plan's own §14 punch list uses the earlier numbers, which
 `tools/maps/2026-09-25-restructure.json` maps to these.
 
 ### Appendices, companion and production
-
-- [ ] **61. Publish the constitution in plain language in the companion.**
-
-  **Scope:** plain-language articles in the companion (`ui/`), an article map to
-  rule families, contracts and pins, a traceability check, and the chapters'
-  article citations; plan §5; ruling D4. The companion's game data
-  (`ui/game.json`) also quotes the book in its authored costs and fault notes;
-  item 59 pointed each at the section that now holds its argument, and some of
-  their texts and chapter references predate the restructure and still need
-  bringing into line with the current chapters.
-
-  Write numbered plain-language articles, organised by the book's Parts, with
-  the protected core marked. Map each article to the rule families, contracts
-  and pins that implement it; map by family, because most rules sit in generated
-  blocks with no article banner. Generate the articles' skeleton from that map
-  and edit by hand, never with machine-rendered English. Add the interpretation
-  article as ruled: its burden half (a restrictive conclusion needs complete
-  positive evidence, and absence never extends a power) traces to the existing
-  fail-closed rules and their pins, and its protective-reading half is a
-  declared non-formal article, listed as a deliberate gap. Add a development
-  check that every article has at least one family and one pin and every rule
-  family belongs to an article. Publish the articles in the companion, and cite
-  article numbers from the chapters. Compare each article with existing
-  constitutions through the Constitute Project and record its lineage and
-  novelty. A lawyer's conformance review of a sample is welcome under item 66,
-  not required.
-
-  **Done when:** no rule family lacks an article and no article lacks a test, or
-  each gap is listed with its reason; the companion publishes the articles; and
-  every article number cited in a chapter resolves.
 
 - [ ] **62. Finish the method as the book's technical appendix.**
 

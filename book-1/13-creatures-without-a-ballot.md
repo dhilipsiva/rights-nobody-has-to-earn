@@ -303,6 +303,8 @@ unmeasured: the roles people hold in one another's lives.
 
 ## Argument: A claim of its own
 
+*The companion states these rules as [Article 12](https://dhilipsiva.dev/rights-nobody-has-to-earn/constitution/#article-12).*
+
 I make a credibly sentient animal a protected subject in its own right because
 the harm it suffers is its own. Protect an animal only as someone's property,
 or only for what people feel about it, and the protection belongs to them: an

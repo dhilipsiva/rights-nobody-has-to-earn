@@ -27,6 +27,24 @@ fn companion_markdown(route: &str) -> String {
         "search/" => {
             text += "Search runs locally in the interactive reader. Reading and browser Find remain available without JavaScript.\n";
         }
+        "constitution/" => {
+            let doc = articles();
+            text += &format!("{}\n\n", doc.note);
+            for (index, part) in doc.parts.iter().enumerate() {
+                text += &format!("## {part}\n\n");
+                for a in doc.articles.iter().filter(|a| a.part == index + 1) {
+                    text += &format!("### Article {}. {}\n\n", a.number, a.title);
+                    for (i, clause) in a.text.iter().enumerate() {
+                        text += &format!("{}. {clause}\n", i + 1);
+                    }
+                    text += &format!(
+                        "\nRule families: {}. Tested by: {}.\n\n",
+                        a.families.join(", "),
+                        a.pins.join("; ")
+                    );
+                }
+            }
+        }
         _ => {
             text += "Pick a person. Walk their forks.\n\nThe game starts the local engine automatically. Each move executes a complete isolated record against the pinned constitution. There are no embedded game verdicts. Gameplay requires JavaScript; the complete reader remains available without it.\n\nAuthored costs and discussion are identified separately from engine responses. Saved and shared history is replayed live before it contributes to the tally.\n\n";
             for f in &rights_book_ui::game_state::game().scenarios {
@@ -75,7 +93,8 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
             "walkthrough/food-delivery/" => "Follow six delivery records. Explore why a receipt and an independent witness derive a conclusion, and what that conclusion cannot prove.",
             "about/" => "Authorship, sources, licensing, privacy and the limits of the executable Book 1 companion.",
             "read/" => "Read the complete Book 1 in manuscript order: epigraph, opening note, every chapter and Part opening case, the optional method, and a map, glossary and index.",
-            "search/" => "Search the complete text of Book 1 locally on your device.", _ => "This page does not exist in Book 1.",
+            "search/" => "Search the complete text of Book 1 locally on your device.",
+            "constitution/" => "The constitution Book 1 describes, as numbered plain-language articles traced to the rules and tests that implement them.", _ => "This page does not exist in Book 1.",
         }.into());
         let is_404 = route.ends_with("/404/");
         let noindex = route.ends_with("/search/") || is_404;

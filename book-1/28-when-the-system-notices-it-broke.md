@@ -251,6 +251,8 @@ limits remain.
 
 ## Argument: Findings from outside the walls
 
+*The companion states these rules as Articles [6](https://dhilipsiva.dev/rights-nobody-has-to-earn/constitution/#article-6) and [29](https://dhilipsiva.dev/rights-nobody-has-to-earn/constitution/#article-29).*
+
 I let a breach of custody conditions be marked only by a positive finding that
 an authorised witness and an independent reviewer, neither of them the holder
 or the person held, make together, and I make that finding a duty on a named
