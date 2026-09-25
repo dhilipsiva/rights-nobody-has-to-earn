@@ -166,7 +166,8 @@ and this reference material follow them.
 ### Back matter
 
 - [The Method](method.md) — worked rules, queries, refusals and contradiction
-  checks, with instructions for running the book's examples.
+  checks; what each assurance covers and where it stops; and instructions for
+  running the book's examples.
 - This map, glossary and index.
 
 ## Concise glossary

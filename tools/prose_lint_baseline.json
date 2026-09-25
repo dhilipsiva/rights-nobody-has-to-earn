@@ -1,7 +1,7 @@
 {
   "book-1/00-opening-note.md": {
-    "negation": 18.1,
-    "jargon": 2.4,
+    "negation": 18.0,
+    "jargon": 2.3,
     "names": 0,
     "disclaimers": 0,
     "banned": 0,
@@ -126,7 +126,7 @@
     "strays": 0
   },
   "book-1/07-an-ordinary-week.md#argument": {
-    "negation": 12.3,
+    "negation": 12.0,
     "jargon": 0.0,
     "names": 0,
     "disclaimers": 0,
@@ -180,7 +180,7 @@
     "strays": 0
   },
   "book-1/10-what-money-cannot-buy.md#argument": {
-    "negation": 6.3,
+    "negation": 6.2,
     "jargon": 0.0,
     "names": 0,
     "disclaimers": 0,
@@ -198,7 +198,7 @@
     "strays": 0
   },
   "book-1/11-the-same-route-for-everyone.md#argument": {
-    "negation": 6.9,
+    "negation": 6.8,
     "jargon": 0.0,
     "names": 0,
     "disclaimers": 0,
@@ -252,7 +252,7 @@
     "strays": 0
   },
   "book-1/14-holding-a-role-in-somebodys-life.md#argument": {
-    "negation": 12.8,
+    "negation": 12.7,
     "jargon": 0.0,
     "names": 0,
     "disclaimers": 0,
@@ -306,7 +306,7 @@
     "strays": 0
   },
   "book-1/17-how-public-power-is-built.md#argument": {
-    "negation": 8.3,
+    "negation": 8.2,
     "jargon": 0.0,
     "names": 0,
     "disclaimers": 0,
@@ -324,7 +324,7 @@
     "strays": 0
   },
   "book-1/18-the-vote-conviction-does-not-take.md#argument": {
-    "negation": 10.9,
+    "negation": 10.8,
     "jargon": 0.0,
     "names": 0,
     "disclaimers": 0,
@@ -342,7 +342,7 @@
     "strays": 0
   },
   "book-1/19-what-may-be-kept-about-you.md#argument": {
-    "negation": 6.6,
+    "negation": 6.5,
     "jargon": 0.0,
     "names": 0,
     "disclaimers": 0,
@@ -360,7 +360,7 @@
     "strays": 0
   },
   "book-1/20-a-crisis-does-not-suspend-the-republic.md#argument": {
-    "negation": 8.5,
+    "negation": 8.4,
     "jargon": 0.0,
     "names": 0,
     "disclaimers": 0,
@@ -378,7 +378,7 @@
     "strays": 0
   },
   "book-1/21-a-way-to-be-heard.md#argument": {
-    "negation": 9.3,
+    "negation": 9.1,
     "jargon": 0.0,
     "names": 0,
     "disclaimers": 0,
@@ -396,7 +396,7 @@
     "strays": 0
   },
   "book-1/22-changing-the-rules.md#argument": {
-    "negation": 11.4,
+    "negation": 11.3,
     "jargon": 0.0,
     "names": 0,
     "disclaimers": 0,
@@ -414,7 +414,7 @@
     "strays": 0
   },
   "book-1/23-the-shield.md#argument": {
-    "negation": 10.0,
+    "negation": 9.8,
     "jargon": 0.0,
     "names": 0,
     "disclaimers": 0,
@@ -432,7 +432,7 @@
     "strays": 0
   },
   "book-1/24-findings-about-people.md#argument": {
-    "negation": 10.3,
+    "negation": 10.2,
     "jargon": 0.0,
     "names": 0,
     "disclaimers": 0,
@@ -450,7 +450,7 @@
     "strays": 0
   },
   "book-1/25-a-prisoner-is-a-person.md#argument": {
-    "negation": 10.1,
+    "negation": 9.9,
     "jargon": 0.0,
     "names": 0,
     "disclaimers": 0,
@@ -468,7 +468,7 @@
     "strays": 0
   },
   "book-1/26-where-people-are-put.md#argument": {
-    "negation": 9.8,
+    "negation": 9.6,
     "jargon": 0.0,
     "names": 0,
     "disclaimers": 0,
@@ -486,7 +486,7 @@
     "strays": 0
   },
   "book-1/27-the-one-thing-taken.md#argument": {
-    "negation": 10.5,
+    "negation": 10.3,
     "jargon": 0.0,
     "names": 1,
     "disclaimers": 0,
@@ -504,7 +504,7 @@
     "strays": 0
   },
   "book-1/28-when-the-system-notices-it-broke.md#argument": {
-    "negation": 10.1,
+    "negation": 10.0,
     "jargon": 0.0,
     "names": 0,
     "disclaimers": 0,
@@ -522,7 +522,7 @@
     "strays": 0
   },
   "book-1/30-where-this-could-fail.md": {
-    "negation": 16.0,
+    "negation": 15.7,
     "jargon": 0.5,
     "names": 0,
     "disclaimers": 0,
@@ -531,11 +531,11 @@
     "strays": 0
   },
   "book-1/method.md": {
-    "negation": 20.2,
-    "jargon": 11.7,
-    "names": 7,
-    "disclaimers": 16,
-    "banned": 33,
+    "negation": 18.3,
+    "jargon": 7.6,
+    "names": 6,
+    "disclaimers": 1,
+    "banned": 31,
     "harness": 0,
     "strays": 0
   },

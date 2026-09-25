@@ -1,0 +1,38 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+# Counterfactual: the belief entitlement written as a plain label
+#
+# The floor's refusal of a rule confining someone for a missing floor item rests
+# on how each entitlement is written: `event { believe() }` gives the engine a
+# dependency on the `believe` relation, and that dependency is what closes the
+# loop through custody. This copy rewrites that one line with the owed thing as
+# a constant, `Believe`. The line still reads like a floor; the tested
+# entitlement disappears and the hostile rule loads.
+:expect-pins 7
+
+# The label names no event, so the belief entitlement no longer follows.
+? entitled(Bela, event { believe() }).
+# => FALSE
+
+# Controls: personhood and the other floor entitlements are untouched, so the
+# change removes one entitlement's shape rather than the floor.
+? person(Bela).
+# => TRUE
+? entitled(Bela, event { eats() }).
+# => TRUE
+
+# Against the constitution this rule is refused with
+# "'prisoner' -> 'believe' (negative)". Here it loads.
+:accept
+all $x: person($x) & ~believe($x) -> prisoner($x).
+
+# The accepted rule confines people the record holds nothing about belief for,
+# free and child alike.
+? prisoner(Bela).
+# => TRUE
+? prisoner(Cira).
+# => TRUE
+
+# The food entitlement keeps its event shape, so its hostile twin is still
+# refused in this world.
+:refuse reasoning /'prisoner' -> 'eats'/
+all $x: person($x) & ~eats($x) -> prisoner($x).

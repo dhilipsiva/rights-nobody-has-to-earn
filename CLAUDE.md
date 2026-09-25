@@ -133,6 +133,50 @@ reinstate the retired tooling or workflow.
 Grouped by kind. Dates in each heading are the ratification dates; a ruling
 that was later implemented or narrowed carries that supersession inline.
 
+### Item 62 — the method as the technical appendix, 2026-09-25
+
+The method is the book's technical appendix under ruling D4, within its sealed
+scope: statements quoted as the files write them, pin verdicts, no rendered
+English or proof trace, no compute backend. It falls from 5,986 to 3,555 words
+by the lint's measure, which counts its code and notes; the plan's figure was
+about 3,000, and the assurance lists below account for most of the difference.
+Its worked examples stay, each cut to what it teaches, with every reviewed
+needle and every heading a chapter links kept. A new section, "What has been
+checked, and where each check stops", lists every assurance the project
+publishes with its route and its limits: pins and contradiction scans; the
+development tests that check rules by shape; the procedural-load table; the
+mutation survivors by disposition (attester-copy and single-actor changes the
+four shape tests reject, the two missing pins, the one subsumed guard); the
+second-engine replay; the articles traced to the rules, Part by Part, with
+Article 31's gap; the adversarial audit's open findings; and the declared
+defects, of which none is active. No figure is added to another and nothing is
+scored. Eight rules are quoted, and the quotation test holds them to the files.
+
+Listing the audit's findings showed three that the source no longer supports,
+and they are closed with what closed them: the duty to inventory, return or
+compensate requisitioned property survives the requisition's withdrawal (the
+declaration-conflict case pins it TRUE, since item 19's continuing duties); the
+`cares` posture is carried by eight passages and the thin set is empty; and an
+accusation nobody signed takes neither the shield nor any recognition status
+(items 19 and 21). The counted-claims finding drops its stale count. Six
+findings stay open: three route-unbuilt, three public-claim-limited, none
+author-ruling-pending or blocking a gate. Chapter 25's statement that an
+entitlement written as a plain label loses its protection rested on a 2026-08
+measurement no case ran; `counterfactual/entitlement-as-plain-label` now runs it
+(seven pins: the belief entitlement gone, personhood and food kept, the hostile
+belief rule loading and confining Bela and Cira, the food rule's twin still
+refused), and the method links it beside the no-person-line case. The
+reference contents describe the method's new section, and the reading-order
+decision records the item. The exact prose is `session-drafted, author-approved
+under delegated approval (2026-09-13)`.
+
+No constitutional rule changes; the rule count stays at 7,583, and the
+inventory gains the one counterfactual case. The new case passes seven pins
+(focused, partial). All 149 authoring development tests pass, with five
+declared ignored, and the prose check passes. `RIGHTS_VERIFY_JOBS=4
+./verify.sh` passes 90,176 pins across 16,353 cases with complete
+contradiction checks and no findings in 1,165.33s.
+
 ### Item 61 — the constitution in plain language, in the companion, 2026-09-25
 
 Ruling D4 is implemented. `ui/articles.json` holds thirty-one numbered
@@ -1684,7 +1728,8 @@ as a deliberate traceability gap. R4 stands, as does the rule that the formal
 source lives beside the ordered inputs. Items 61 and 62 implement it. **Implemented
 2026-09-25 (item 61):** thirty-one articles in `ui/articles.json`, published at
 the companion's `constitution/` and cited from every chapter's argument
-section; the method's part is item 62.
+section; **and 2026-09-25 (item 62):** the method lists the articles by Part
+beside every other assurance, with its route and limits.
 
 **D5 — the child returns where the result differs.** R1's criterion becomes
 "produces a different or instructive result" instead of "can run the rule".

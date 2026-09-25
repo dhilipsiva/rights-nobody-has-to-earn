@@ -66,6 +66,12 @@ Its pins show the marker firing on the voided, confined, and never-accused alike
 That is the reason missing arrival evidence must not itself become proof of
 non-delivery.
 
+`entitlement-as-plain-label` rewrites the belief entitlement with the owed
+thing as a constant rather than an event. The line still reads like a floor, but
+the belief entitlement no longer follows and a rule confining people for a
+missing belief record loads; the food entitlement keeps its shape, and its
+hostile twin is still refused.
+
 `no-delivery-independence` removes only the food rule's witness/source
 disequality. A kitchen can then attest its own delivery; the independent food
 route and shelter's refusal of self-certification remain controls.

@@ -43,11 +43,9 @@
           "consequence": "No Book 1 claim of receipt, action or completed remedy may take an established posture; operational assurance is neither built nor available."
         },
         {
-          "finding": "A reviewed defect against an emergency declaration withdraws the requisition built on it, and the duty to inventory, return or compensate the requisitioned property goes with it, because that duty derived from the lawful measure. Restitution then depends on the independent judicial remedy the finding attests remains open, which nothing here derives.",
+          "finding": "A reviewed defect against an emergency declaration withdraws the requisition built on it, and the operator's duty to inventory, account for, return or compensate the requisitioned property survives the withdrawal, because that continuing duty rests on the recorded undertaking rather than on the measure's current authority.",
           "category": "unowned-dependency",
-          "open": true,
-          "disposition": "author-ruling-pending",
-          "consequence": "Restitution after a withdrawn requisition depends on the judicial remedy the finding attests remains open; whether to derive it here is a ruling, and until then no restitution claim is made."
+          "open": false
         }
       ]
     },
@@ -108,11 +106,9 @@
           "open": false
         },
         {
-          "finding": "`cares` is the posture of two passages in the whole book.",
+          "finding": "`cares` was the posture of two passages while the life-course baseline had no ordinary-operation interface; with that interface and the chapters built on it, eight passages carry it and the thin-posture set is empty.",
           "category": "narrative-distortion",
-          "open": true,
-          "disposition": "public-claim-limited",
-          "consequence": "No balance claim may rest on posture coverage; raising it needs another interface rather than another passage, which is how it went from one to two."
+          "open": false
         }
       ]
     },
@@ -179,11 +175,9 @@
           "open": false
         },
         {
-          "finding": "An accusation nobody signed still takes two protections on its own — the whistleblower shield for that exposure, and recognition — because both withdraw by absence. The severity route was repaired on 2026-09-16 to read the Court's judgment and cited case, which cost nothing since every person severity can reach already had them. The harm relations still name no writer.",
+          "finding": "An accusation nobody signed takes nothing on its own: it cannot defeat a disclosure's shield, it creates no recognition status, and severity needs signed findings bound to the adjudicated case. The harm relations still name no writer, so the signed case is a condition on acting rather than an author for the allegation.",
           "category": "private-power-blind-spot",
-          "open": true,
-          "disposition": "author-ruling-pending",
-          "consequence": "The two remaining routes withdraw by absence and gating them would change the shield's ruled default; no claim that an accusation has an author is made anywhere."
+          "open": false
         }
       ]
     },
@@ -326,7 +320,7 @@
           "open": false
         },
         {
-          "finding": "The counted-claims rule is guarded on its digit half only; the spelled-out half is prose review, measured at 60 legitimate uses.",
+          "finding": "The counted-claims rule is guarded on its digit half only, and only over derived text; the spelled-out half is prose review.",
           "category": "narrative-distortion",
           "open": true,
           "disposition": "public-claim-limited",

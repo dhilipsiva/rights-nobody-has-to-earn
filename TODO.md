@@ -218,30 +218,15 @@ unimplemented until the items named here land.
 
 ## Ordered revision backlog
 
-Work in this order: items 62–63 carry the rewrite under the ratified rulings;
+Work in this order: item 63 carries the rewrite under the ratified rulings;
 item 64 finishes production, 65 closes the revision, and 66 is optional.
-Numbering continues from items 01–33, which `CLAUDE.md` records; items 34–61
+Numbering continues from items 01–33, which `CLAUDE.md` records; items 34–62
 and 67–72 are complete and recorded there too. Chapter numbers refer to the
 [current reading sequence](book-1/contents.json), which item 53 made the plan's
 §4.2 table; the plan's own §14 punch list uses the earlier numbers, which
 `tools/maps/2026-09-25-restructure.json` maps to these.
 
 ### Appendices, companion and production
-
-- [ ] **62. Finish the method as the book's technical appendix.**
-
-  **Scope:** `book-1/method.md`; plan §4.1 and §10; ruling D4.
-
-  The method keeps its name and place as the book's technical appendix (D4).
-  Bring together the flow constraints (item 48), the signature budgets (item
-  42), the surviving mutants (item 49), the reproduction (item 50), coverage by
-  article as lists (item 61), the adversarial audit's open findings, and the
-  state of declared defects: none is active, and the method says so. Keep its
-  sealed scope and the plan's length of about 3,000 words.
-
-  **Done when:** every published assurance is a list with its route and
-  limits, no aggregate score appears, and the quoted rules pass the quotation
-  test.
 
 - [ ] **63. Map every chapter to runnable companion cases.**
 

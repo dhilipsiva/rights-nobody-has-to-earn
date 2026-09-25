@@ -25,14 +25,11 @@ Disclosure is not a disposition.
 | Lens | Kind | Finding | Disposition | Consequence |
 | --- | --- | --- | --- | --- |
 | Public administration | hidden-liveness-assumption | No rule proves a reader received anything, acted, or completed a remedy. Every duty is a leaf. | route-unbuilt | No Book 1 claim of receipt, action or completed remedy may take an established posture; operational assurance is neither built nor available. |
-| Public administration | unowned-dependency | A reviewed defect against an emergency declaration withdraws the requisition built on it, and the duty to inventory, return or compensate the requisitioned property goes with it, because that duty derived from the lawful measure. Restitution then depends on the independent judicial remedy the finding attests remains open, which nothing here derives. | author-ruling-pending | Restitution after a withdrawn requisition depends on the judicial remedy the finding attests remains open; whether to derive it here is a ruling, and until then no restitution claim is made. |
 | Disability and accessibility | hidden-liveness-assumption | Script 15 checks artifact properties only. Human screen-reader validation was withdrawn and no accessibility-for-users claim follows. | public-claim-limited | Gate C may claim mechanical accessibility of the artifact only; no accessibility-for-users or reader claim follows from a green check. |
-| Care and the life course | narrative-distortion | `cares` is the posture of two passages in the whole book. | public-claim-limited | No balance claim may rest on posture coverage; raising it needs another interface rather than another passage, which is how it went from one to two. |
 | Consumer and civil justice | hidden-liveness-assumption | No finding proves a hearing occurred or that compensation arrived. | route-unbuilt | No hearing, compensation or remedy arrival may be claimed; the justice contract states the same boundary. |
-| Policing and prison | private-power-blind-spot | An accusation nobody signed still takes two protections on its own — the whistleblower shield for that exposure, and recognition — because both withdraw by absence. The severity route was repaired on 2026-09-16 to read the Court's judgment and cited case, which cost nothing since every person severity can reach already had them. The harm relations still name no writer. | author-ruling-pending | The two remaining routes withdraw by absence and gating them would change the shield's ruled default; no claim that an accusation has an author is made anywhere. |
 | Local, migration and collective governance | unowned-dependency | Foreign recognition, cooperation and readmission are named external assumptions. | public-claim-limited | Recognition, cooperation and readmission are named external assumptions and may not be asserted as established in any Book 1 claim. |
 | Infrastructure and continuity | hidden-liveness-assumption | Nothing counts stock, forecasts supply or proves procurement. | route-unbuilt | No supply, stock, procurement or delivery claim may take an established posture; quantitative models and operational assurance are unbuilt. |
-| Quantitative modelling | narrative-distortion | The counted-claims rule is guarded on its digit half only; the spelled-out half is prose review, measured at 60 legitimate uses. | public-claim-limited | The counted-claims rule may be cited as guarded on its digit half only; the spelled-out half is prose review and must not be described as checked. |
+| Quantitative modelling | narrative-distortion | The counted-claims rule is guarded on its digit half only, and only over derived text; the spelled-out half is prose review. | public-claim-limited | The counted-claims rule may be cited as guarded on its digit half only; the spelled-out half is prose review and must not be described as checked. |
 
 ## Findings by kind
 
@@ -40,11 +37,11 @@ Disclosure is not a disposition.
 | --- | ---: | ---: |
 | hidden-liveness-assumption | 4 | 4 |
 | impossible-operation-overclaim | 6 | 0 |
-| narrative-distortion | 5 | 2 |
+| narrative-distortion | 5 | 1 |
 | omitted-domain | 2 | 0 |
-| private-power-blind-spot | 5 | 1 |
+| private-power-blind-spot | 5 | 0 |
 | totalising-rule | 7 | 0 |
-| unowned-dependency | 3 | 2 |
+| unowned-dependency | 3 | 1 |
 
 ## Every lens
 
@@ -69,7 +66,7 @@ Encoded by:
 
 - **held** (unowned-dependency) — Every family with a challenge reader carries an independent alternate, so declining to read confers no veto.
 - **open** (hidden-liveness-assumption) — No rule proves a reader received anything, acted, or completed a remedy. Every duty is a leaf.
-- **open** (unowned-dependency) — A reviewed defect against an emergency declaration withdraws the requisition built on it, and the duty to inventory, return or compensate the requisitioned property goes with it, because that duty derived from the lawful measure. Restitution then depends on the independent judicial remedy the finding attests remains open, which nothing here derives.
+- **held** (unowned-dependency) — A reviewed defect against an emergency declaration withdraws the requisition built on it, and the operator's duty to inventory, account for, return or compensate the requisitioned property survives the withdrawal, because that continuing duty rests on the recorded undertaking rather than on the measure's current authority.
 
 ### Disability and accessibility
 
@@ -100,7 +97,7 @@ Encoded by:
 - `tests/pins/family-life/life-course/continuity-needs-no-family-role/expect.pins.nibli`
 
 - **held** (omitted-domain) — The family, dependency, reproduction and care baseline landed 106 person-held barriers before it had an ordinary-operation interface; the roles, support, participation, continuity, bodily care, treatment order and own-record access that they presupposed landed afterwards, in their own block beside them.
-- **open** (narrative-distortion) — `cares` is the posture of two passages in the whole book.
+- **held** (narrative-distortion) — `cares` was the posture of two passages while the life-course baseline had no ordinary-operation interface; with that interface and the chapters built on it, eight passages carry it and the thin-posture set is empty.
 
 ### Labour and economy
 
@@ -133,7 +130,7 @@ Encoded by:
 
 - **held** (private-power-blind-spot) — Each coercive instrument carries a refusal pin against every floor predicate; the firewall reaches the confinement conclusion only.
 - **held** (impossible-operation-overclaim) — The design has no rule reading a building back into a condition, service or remedy, so a facility name is never evidence of compliance.
-- **open** (private-power-blind-spot) — An accusation nobody signed still takes two protections on its own — the whistleblower shield for that exposure, and recognition — because both withdraw by absence. The severity route was repaired on 2026-09-16 to read the Court's judgment and cited case, which cost nothing since every person severity can reach already had them. The harm relations still name no writer.
+- **held** (private-power-blind-spot) — An accusation nobody signed takes nothing on its own: it cannot defeat a disclosure's shield, it creates no recognition status, and severity needs signed findings bound to the adjudicated case. The harm relations still name no writer, so the signed case is a condition on acting rather than an author for the allegation.
 
 ### Media, science, culture and pluralism
 
@@ -204,4 +201,4 @@ Encoded by:
 - `src/authoring/floor_vector_tests.rs`
 
 - **held** (totalising-rule) — No enacted line carries a numeric literal and no relation aggregates, scores or ranks.
-- **open** (narrative-distortion) — The counted-claims rule is guarded on its digit half only; the spelled-out half is prose review, measured at 60 legitimate uses.
+- **open** (narrative-distortion) — The counted-claims rule is guarded on its digit half only, and only over derived text; the spelled-out half is prose review.

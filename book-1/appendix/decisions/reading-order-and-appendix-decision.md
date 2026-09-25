@@ -71,6 +71,33 @@ acceptance comes last as this decision's §6 required; the pen strand's
 persisting clearance and custody facts precede the other two and change none of
 their verdicts. The map is `tools/maps/2026-09-25-restructure.json`.
 
+## The method as the technical appendix — item 62, 2026-09-25
+
+The method keeps its name, its place after Part V and the scope this decision
+sealed: statements quoted as the files write them, pin verdicts, no
+machine-rendered English, no proof trace and no discussion of the compute
+backend. Its worked examples stay, each cut to what it teaches: Nell's standing
+and debt, a receipt with and without its witness, a request, a duty and relief,
+the refusals, versions of the record, the amendment comparison and the
+contradiction check. A new section, "What has been checked, and where each check
+stops", gathers every assurance the project publishes as a list with its route
+and its limits: the pins and contradiction scans; the development tests that
+check rules by their shape; the procedural-load table; the mutation survivors
+by disposition; the second-engine replay; the articles traced to the rules,
+Part by Part, with the interpretation article's gap; the adversarial audit's
+open findings; and the declared defects, of which none is active. No figure is
+added to another and nothing is scored.
+
+Listing the audit's findings exposed three that the source no longer supports.
+The duty to inventory, return or compensate requisitioned property survives the
+requisition's withdrawal, as the declaration-conflict case pins; the care
+posture is carried by eight passages; and an accusation nobody signed takes
+neither the shield nor any recognition status. Each is recorded as closed with
+what closed it. Chapter 25's statement that an entitlement written as a plain
+label loses its protection rested on a measurement no case ran; the
+counterfactual `entitlement-as-plain-label` now runs it, with the food
+entitlement's unchanged refusal as its control.
+
 ## The constitution in plain language — item 61, 2026-09-25
 
 Ruling D4 is implemented. The companion publishes the constitution as
