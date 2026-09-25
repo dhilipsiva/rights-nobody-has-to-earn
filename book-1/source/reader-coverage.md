@@ -83,7 +83,7 @@ checked here.
 | Borders, migration, asylum and expulsion | 2 | 3 | 5 |
 | Collective and plurality rights | 1 | 1 | 2 |
 | Defence and armed force | 1 | 1 | 1 |
-| Democracy and amendment | 8 | 7 | 7 |
+| Democracy and amendment | 8 | 7 | 8 |
 | Ecology, future generations and commons | 5 | 4 | 6 |
 | Economy, property, work and commons | 17 | 15 | 19 |
 | Emergency and resilience | 3 | 2 | 3 |
@@ -277,7 +277,7 @@ checked here.
 | 21-08 | 21-a-way-to-be-heard.md | A hearing and an effective remedy | Justice and coercion | NON-CARCERAL-JUSTICE | protective | the boundary of a route that needs somebody to file | requests | unresolved | no | coercive | `book-1/21-a-way-to-be-heard.pins.nibli` |
 | 22-00 | 22-changing-the-rules.md | (preamble) | Democracy and amendment | AMENDMENT-ENACTMENT | ordinary | how a society changes its rules | governs | works | no | democratic | `book-1/22-changing-the-rules.pins.nibli` |
 | 22-01 | 22-changing-the-rules.md | Certification, publication and effect | Democracy and amendment | AMENDMENT-ENACTMENT | protective | exact candidate certification, publication and effective selection | governs | works | yes | democratic | `book-1/22-changing-the-rules.pins.nibli` |
-| 22-02 | 22-changing-the-rules.md | The protected core | Democracy and amendment | AMENDMENT-ENACTMENT | protective | unamendable human, commons and animal cores | governs | works | no | democratic | `book-1/22-changing-the-rules.pins.nibli` |
+| 22-02 | 22-changing-the-rules.md | The protected core | Democracy and amendment | AMENDMENT-ENACTMENT | protective | unamendable human, commons and animal cores | governs | works | yes | democratic | `book-1/22-changing-the-rules.pins.nibli` |
 | 22-05 | 22-changing-the-rules.md | What a proposal entry establishes | Democracy and amendment | AMENDMENT-ENACTMENT | protective | bare proposal entries versus candidate-bound amendment authority | governs | works | no | democratic | `book-1/22-changing-the-rules.pins.nibli` |
 | 22-03 | 22-changing-the-rules.md | People and proposal names | Democracy and amendment | ARTICLES | protective | personal findings are separate from proposal entries | governs | works | no | democratic | `tests/pins/amendments/person-proposal-separation/expect.pins.nibli` |
 | 22-04 | 22-changing-the-rules.md | What entrenchment requires | Democracy and amendment | AMENDMENT-ENACTMENT | protective | the democratic cost and evidence requirements of entrenchment | governs | contested | no | democratic | `book-1/22-changing-the-rules.pins.nibli` |
