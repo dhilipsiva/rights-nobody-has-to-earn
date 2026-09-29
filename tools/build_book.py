@@ -299,10 +299,10 @@ def contents(documents: list[Document], mode: str) -> str:
     return "<ol>" + "".join(rows) + "</ol>"
 
 
-def select_sample(documents: list[Document]) -> list[Document]:
-    selected = [doc for doc in documents if doc.number in SAMPLE_CHAPTERS]
-    if tuple(doc.number for doc in selected) != SAMPLE_CHAPTERS:
-        raise ValueError('The publisher sample chapters must exist in reading order')
+def select_sample(documents: list[Document], chapters: tuple[int, ...] = SAMPLE_CHAPTERS) -> list[Document]:
+    selected = [doc for doc in documents if doc.number in chapters]
+    if not chapters or tuple(doc.number for doc in selected) != chapters:
+        raise ValueError('Sample chapters must exist, occur once, and follow reading order')
     return selected
 
 
@@ -355,14 +355,17 @@ def export_ui(output: Path, documents: list[Document]) -> None:
     (output / "book.json").write_text(json.dumps(result, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 
 
-def cover(sample: bool | str = False) -> str:
+def cover(sample: bool | str = False, chapters: tuple[int, ...] = SAMPLE_CHAPTERS) -> str:
     kind = sample if isinstance(sample, str) else ("sample" if sample else "review")
     status = {"sample": 'Book 1 · Selected chapters', "review": 'Book 1 · Review copy',
               "summary": 'Book 1 · The constitution in plain language'}[kind]
-    numbers = [str(n) for n in SAMPLE_CHAPTERS]
-    listed = ", ".join(numbers[:-1]) + " and " + numbers[-1]
-    selection = (f'<p>Chapters {listed}. Cross-references beyond this '
-                 'selection open the public manuscript.</p>') if kind == "sample" else ''
+    selection = ''
+    if kind == "sample":
+        numbers = [str(n) for n in chapters]
+        listed = ", ".join(numbers[:-1]) + " and " + numbers[-1] if len(numbers) > 1 else numbers[0]
+        label = 'Chapter' if len(numbers) == 1 else 'Chapters'
+        selection = (f'<p>{label} {listed}. Cross-references beyond this '
+                     'selection open the public manuscript.</p>')
     if kind == "summary":
         selection = ('<p>A summary edition: the constitution the book describes, as numbered '
                      'articles in plain language. The book argues each choice.</p>')
@@ -419,12 +422,13 @@ def html_document(documents: list[Document], css: str, sample: bool | str = Fals
     font = base64.b64encode((ASSETS / "NotoSerifTamil.ttf").read_bytes()).decode("ascii")
     css = css.replace('url("NotoSerifTamil.ttf")', f'url("data:font/ttf;base64,{font}")')
     licence = (ASSETS / "OFL-NotoSerifTamil.txt").read_text(encoding="utf-8")
+    chapters = tuple(d.number for d in documents if d.number is not None)
     return f'''<!doctype html><html lang="en"><head><meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <title>{TITLE}: {SUBTITLE[:-1]}</title><meta name="author" content="{AUTHOR}"/>
 <meta name="description" content="{PROMISE}"/>
 <style>{css}</style><!-- Embedded font licence:\n{licence}\n--></head><body>
-<a class="skip-link" href="#main-content">Skip to the book</a>{cover(sample)}
+<a class="skip-link" href="#main-content">Skip to the book</a>{cover(sample, chapters)}
 <nav class="book-contents" aria-label="Book contents"><h1>Contents</h1>{contents(documents, "html")}</nav>
 <main id="main-content" tabindex="-1">{''.join(article(d, documents, "html") for d in documents)}</main>
 {back_cover()}
@@ -439,6 +443,7 @@ def xhtml(title: str, body: str) -> str:
 
 
 def write_epub(path: Path, documents: list[Document], css: str, sample: bool | str = False) -> None:
+    chapters = tuple(d.number for d in documents if d.number is not None)
     items = [('cover', 'cover.xhtml', 'application/xhtml+xml', ''),
              ('nav', 'nav.xhtml', 'application/xhtml+xml', ' properties="nav"'),
              ('css', 'book.css', 'text/css', ''),
@@ -471,7 +476,7 @@ def write_epub(path: Path, documents: list[Document], css: str, sample: bool | s
         archive.writestr('EPUB/book.css', css)
         archive.write(ASSETS / 'NotoSerifTamil.ttf', 'EPUB/NotoSerifTamil.ttf')
         archive.write(ASSETS / 'OFL-NotoSerifTamil.txt', 'EPUB/OFL-NotoSerifTamil.txt')
-        archive.writestr('EPUB/cover.xhtml', xhtml(TITLE, cover(sample)))
+        archive.writestr('EPUB/cover.xhtml', xhtml(TITLE, cover(sample, chapters)))
         archive.writestr('EPUB/back-cover.xhtml', xhtml('Back cover', back_cover()))
         nav = f'<nav epub:type="toc" role="doc-toc" class="book-contents" title="Book contents"><h1 id="contents-title">Contents</h1>{contents(documents, "epub")}</nav>'
         archive.writestr('EPUB/nav.xhtml', xhtml('Contents', nav))
@@ -553,9 +558,13 @@ def main() -> None:
     args_parser.add_argument('--browser-executable', help='Optional existing Chromium executable')
     args_parser.add_argument('--no-pdf', action='store_true', help='Build HTML and EPUB without launching Chromium')
     args_parser.add_argument('--sample', action='store_true', help='Build the selected publisher sample: chapters 1, 4, 8, 21 and 29')
+    args_parser.add_argument('--sample-chapters', type=int, nargs='+', metavar='N',
+                             help='Override --sample with chapter numbers in reading order, e.g. 1 4 29')
     args_parser.add_argument('--summary', action='store_true', help='Build the plain-language summary edition from ui/articles.json')
     args_parser.add_argument('--ui-export', type=Path, help='Export the full reader JSON only, using the existing renderer and link checks')
     args = args_parser.parse_args()
+    if args.sample_chapters is not None and not args.sample:
+        args_parser.error('--sample-chapters requires --sample')
     if args.summary:
         if args.sample or args.ui_export:
             args_parser.error('--summary builds its own edition')
@@ -580,7 +589,11 @@ def main() -> None:
         print(f'Exported {len(docs)} ordered UI inputs in {args.ui_export}')
         return
     if args.sample:
-        docs = select_sample(docs)
+        chapters = tuple(args.sample_chapters) if args.sample_chapters is not None else SAMPLE_CHAPTERS
+        try:
+            docs = select_sample(docs, chapters)
+        except ValueError as error:
+            args_parser.error(str(error))
     output = args.output_dir.resolve()
     output.mkdir(parents=True, exist_ok=True)
     css = (ASSETS / 'book.css').read_text(encoding='utf-8')

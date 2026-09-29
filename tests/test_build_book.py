@@ -2,6 +2,8 @@
 """Development regressions for the explicit book assembler."""
 
 from pathlib import Path
+import contextlib
+import io
 import re
 import tempfile
 import unittest
@@ -109,6 +111,47 @@ class CurrentEditionTests(unittest.TestCase):
         with self.assertRaises(ValueError):
             book.select_sample(docs[:-1])
         self.check_epub(docs, sample=True)
+
+    def test_custom_sample_cover_contents_and_links_match_the_selection(self):
+        docs = book.read_documents()
+        for chapters in ((1, 4, 29), (4,)):
+            with self.subTest(chapters=chapters):
+                selected = book.select_sample(docs, chapters)
+                self.assertEqual(tuple(d.number for d in selected), chapters)
+                self.check_epub(selected, sample=True)
+                page = book.html_document(selected, '', True)
+                expected = 'Chapters 1, 4 and 29.' if len(chapters) > 1 else 'Chapter 4.'
+                self.assertIn(expected, page)
+                self.assertNotIn('Chapters 1, 4, 8, 21 and 29.', page)
+                main = page[page.index('<main '):page.index('</main>') + len('</main>')]
+                tree = ET.fromstring(main)
+                self.assertEqual([a.get('id') for a in tree.findall('article')],
+                                 [d.stem for d in selected])
+                with tempfile.TemporaryDirectory() as directory:
+                    path = Path(directory) / 'sample.epub'
+                    book.write_epub(path, selected, '', True)
+                    with zipfile.ZipFile(path) as archive:
+                        self.assertIn(expected, archive.read('EPUB/cover.xhtml').decode())
+
+    def test_sample_rejects_empty_duplicate_missing_or_reordered_chapters(self):
+        docs = book.read_documents()
+        for chapters in ((), (1, 1, 4), (0,), (31,), (29, 4, 1)):
+            with self.subTest(chapters=chapters), self.assertRaises(ValueError):
+                book.select_sample(docs, chapters)
+
+    def test_invalid_sample_cli_does_not_create_output(self):
+        for options in (['--sample-chapters', '1'],
+                        ['--sample', '--sample-chapters', '1', '1'],
+                        ['--sample', '--sample-chapters', '31'],
+                        ['--summary', '--sample', '--sample-chapters', '1'],
+                        ['--ui-export', 'unused', '--sample', '--sample-chapters', '1']):
+            with self.subTest(options=options), tempfile.TemporaryDirectory() as directory:
+                output = Path(directory) / 'output'
+                with patch('sys.argv', ['build_book.py', '--output-dir', str(output), *options]), \
+                     contextlib.redirect_stderr(io.StringIO()), self.assertRaises(SystemExit) as error:
+                    book.main()
+                self.assertEqual(error.exception.code, 2)
+                self.assertFalse(output.exists())
 
     def check_epub(self, docs, sample):
         css = (book.ASSETS / "book.css").read_text()

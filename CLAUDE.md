@@ -177,6 +177,21 @@ the author sends each message. The exact drafts are `session-drafted,
 author-approved under delegated approval (2026-09-13)` as drafts, and the
 author approves each before it is sent.
 
+On 2026-09-29 the Pluto attachment was prepared as a separate sample of
+Chapters 1, 4 and 29. The builder's `--sample-chapters` option selects those
+chapters in reading order and lists the actual selection on the cover; the
+general five-chapter sample remains available. The command in
+`submission/drafts/pluto.md` builds the PDF, EPUB and HTML under
+`output/submission/pluto/`. The PDF is 26 pages, with the three chapter
+bookmarks, and the builder's 19 development tests pass. The updated attachment
+instructions are session-drafted, author-approved under the same delegated
+approval. This prepares an attachment; the author details and sending remain
+open, and no press has been contacted.
+The complete `RIGHTS_VERIFY_JOBS=4 ./verify.sh` run passed 90,187 pins across
+16,353 cases, with contradiction checks complete and no findings, in
+1,393.36 seconds wall time; the five-minute target was not met. Prose lint and
+the separate review of the attachment instructions passed.
+
 ### Item 65 — the revision read fresh, verified and submitted, 2026-09-25
 
 All 40 ordered inputs were read in sequence after items 34–64, in five passes

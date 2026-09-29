@@ -19,6 +19,9 @@ Before sending any message:
 3. Attach only what the press asks for:
    - **Sample:** `uv run tools/build_book.py --sample` builds it as
      `output/book-1/book-1-sample.pdf`.
+   - **Pluto sample:** `uv run tools/build_book.py --sample --sample-chapters 1 4 29 --output-dir output/submission/pluto`
+     builds `output/submission/pluto/book-1-sample.pdf` with the three chapters
+     selected for that press. The general sample contains five chapters.
    - **Proposal:** the [publisher-neutral proposal](../README.md) describes the
      manuscript at `be51db06`.
    - **Chapter outline:** the [outline](outline.md) gives a paragraph for each
@@ -34,5 +37,5 @@ the same time. Leave those three statements in.
 | punctum books | [punctum.md](punctum.md) | A very brief pitch with no attachments. The manuscript itself can go only from May to July. |
 | University of Westminster Press | [westminster.md](westminster.md) | A proposal, asking first whether the press will publish under CC BY. |
 | Polity | [polity.md](polity.md) | A proposal to the politics editor. |
-| Pluto Press | [pluto.md](pluto.md) | A proposal in the press's own headings, with sample chapters. |
+| Pluto Press | [pluto.md](pluto.md) | A proposal in the press's own headings, with Chapters 1, 4 and 29. |
 | Verso | [verso.md](verso.md) | A proposal of up to fifteen pages, disclosing the AI assistance against the press's stated opposition to it. |

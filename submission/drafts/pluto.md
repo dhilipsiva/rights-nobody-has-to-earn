@@ -6,9 +6,14 @@
 
 **To:** submissions@plutobooks.com.
 
-**Attach:** two or three chapters, as the guidelines ask. The sample PDF holds
-five (Chapters 1, 4, 8, 21 and 29). Either say so and send it, or ask whether
-Chapters 1, 4 and 29 alone would be preferred.
+**Attach:** `output/submission/pluto/book-1-sample.pdf`, containing Chapters
+1, 4 and 29, to meet the [guidelines' request for two or three
+chapters](https://www.plutobooks.com/wp-content/uploads/2025/03/Submitting_a_book_proposal_03.25.pdf).
+Build it with:
+
+```bash
+uv run tools/build_book.py --sample --sample-chapters 1 4 29 --output-dir output/submission/pluto
+```
 
 **Before sending:** Pluto prefers manuscripts of 40,000–80,000 words, and this
 one is about 98,000. Its open-access charge is £9,750 plus VAT for up to
