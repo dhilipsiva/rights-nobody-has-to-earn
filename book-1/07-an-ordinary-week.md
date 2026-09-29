@@ -5,20 +5,23 @@ school, an election, a dispute with a landlord and a police stop. This chapter
 follows each through one person's record and asks where the rules touch the
 person and what must be written before they do.
 
-The record starts with an entry that Selin is present within the republic's
-jurisdiction and with evidence that Selin has reached general adulthood. Every
-further fact below begins with "Suppose", and each is an entry in the record.
+Selin is an adult present in the republic. The record about Selin starts with
+two entries: that Selin is present within the republic's jurisdiction, and
+evidence that Selin has reached general adulthood. Every further fact below
+begins with "Suppose", and each is an entry in the record.
+
+The chapter turns on three words. *Presence* is a record that someone is within
+the republic's jurisdiction. The *floor* is what the State owes every person on
+personhood alone: food, shelter, care, learning, bodily safety, material
+security, expression, belief and company. The *ballot* is the entitlement to
+vote, which general adulthood adds to personhood.
 
 ## Where the record starts
 
 Presence within the jurisdiction is enough for the rules to conclude that Selin
-is a person. Every debt of the floor follows from that alone: the State owes
-Selin food, shelter, care, learning, bodily safety, material security,
-expression, belief and company. Free movement follows as well.
-
-The ballot needs both entries. Presence gives personhood and the floor; the
-adulthood evidence adds the basic ballot entitlement. *The Vote Conviction Does
-Not Take* (Chapter 18) sets out what the full franchise adds to it.
+is a person. Every debt of the floor follows from that alone, and so does free
+movement. The ballot needs both entries; *The Vote Conviction Does Not Take*
+(Chapter 18) sets out what the full franchise adds to the basic entitlement.
 
 All of this holds before the record says anything about work, a home, a
 clinic, a child, a vote, a dispute or a stop. Those are the week's business,
@@ -64,23 +67,21 @@ informed choice about treatment governs. Selin is also protected against
 unlawful enrolment for enforcement, which closes care as a route into
 enforcement records.
 
-Suppose the record holds a receipt: Selin received care from the clinic. The
-receipt alone concludes nothing about care having reached Selin. Suppose the
-clinic, authorised as a witness for Selin, attests its own care. Still
-nothing: a delivery needs a witness other than its provider. Suppose a witness
-authorised for Selin, someone other than the clinic, attests the same care.
-The rules now conclude that care reached Selin.
-
-The witness attested care, and the same receipt shows nothing about food.
+Care follows the pattern of the wage. A receipt recording that Selin received
+care concludes nothing by itself, and the clinic attesting its own care
+concludes nothing either, since a delivery needs a witness other than its
+provider. Once a witness authorised for Selin, someone other than the clinic,
+attests the same care, the rules conclude that care reached Selin, and nothing
+about food.
 
 ## School
 
-Suppose the record holds a birth entry for a child, Teo. Teo is a person on
-that entry alone and is owed learning. Teo holds rights in Teo's own name: Teo
-is to be heard at any age, and Teo's views must be given weight and answered
-with reasons. Teo is protected against unlawful enrolment for enforcement, as
-Selin is, which closes school as a route into enforcement records as well. The
-ballot waits for Teo's adulthood evidence.
+Suppose a child, Teo, is born and the record holds the birth. Teo is a person
+on that entry alone and is owed learning. Teo holds rights in Teo's own name:
+Teo is to be heard at any age, and Teo's views must be given weight and
+answered with reasons. Teo is protected against unlawful enrolment for
+enforcement, as Selin is, which closes school as a route into enforcement
+records as well. The ballot waits for Teo's adulthood evidence.
 
 Suppose a teacher teaches Teo. Teaching alone concludes nothing about
 learning. Suppose Teo's hearing of that teaching is also recorded. The rules

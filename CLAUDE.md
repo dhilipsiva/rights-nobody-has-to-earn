@@ -135,6 +135,34 @@ reinstate the retired tooling or workflow.
 Grouped by kind. Dates in each heading are the ratification dates; a ruling
 that was later implemented or narrowed carries that supersession inline.
 
+### Item 75 — the two weakest reader chapters, 2026-09-29
+
+Chapter 7 now introduces Selin as a person before the two entries about Selin
+and defines presence, the floor and the ballot at first use, so the chapter no
+longer leans on words it has not explained. The tracker asked for a
+plain-English box. The narrative-register decision's §1a refuses labelled boxes
+inside derived chapters, and ruling D2 lifted that refusal for argument
+sections only, so the definitions are ordinary derived sentences and no ruling
+is superseded. The wage stays the one full attestation walkthrough; the clinic
+follows it as a three-sentence parallel, and Teo is introduced as a child
+before the birth entry. Chapter 7 measures 1,349 words with two names.
+
+Chapter 27 was compressed by item 73 to custody and a single table of the
+other coercive measures. It now also says where the review period is set: the
+lawful source of each authorisation fixes how long its period runs, the rules
+measure no length, and the renewal that continues custody must come before the
+period closes; keeping the calendar stays with the second book. The chapter
+names five people, within the lint's limit, and `CHILD_SLOT_EXEMPT` is
+unchanged. The narrative-register decision records the item, and the exact
+prose is `session-drafted, author-approved under delegated approval
+(2026-09-13)`.
+
+No rule, pin or suite changes, so item 73's complete run on the same formal
+inputs stands. Chapter 7's pins pass 59 and Chapter 27's 47 (focused,
+partial); the companion input tests, the coverage, reference and
+claim-discipline development tests, the prose check and the index `--check`
+pass, and the index is regenerated.
+
 ### Item 74 — each chapter counts its costs once, 2026-09-29
 
 Eight derived chapters carry a derived section counting what their rules cost

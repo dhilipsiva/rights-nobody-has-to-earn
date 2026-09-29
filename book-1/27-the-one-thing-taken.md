@@ -70,12 +70,15 @@ The reconciliation report rests on an outside witness: a false report of
 complete reconciliation stays false, and the material it concealed, or whether
 every copy was suppressed, lies outside the record the rules read.
 
-The review period has an order and no measured length. Witnessed records can
-place its opening before its close; a circular account of that order makes the
-period unusable. The rules count no days, and publishing the next version of
-the record is the work of an outside time service, beyond the rules' reach.
-They reject unsupported authority in the record presented to them; whether
-that record is current in the world is a question for evidence outside it.
+The review period has an order, and no length the rules measure. The lawful
+source of each authorisation sets how long its period runs, and the renewal
+that continues custody must be made before that period closes. Witnessed
+records can place its opening before its close; a circular account of that
+order makes the period unusable. The rules count no days, and publishing the
+next version of the record is the work of an outside time service, beyond the
+rules' reach. They reject unsupported authority in the record presented to
+them; whether that record is current in the world is a question for evidence
+outside it.
 
 ### When the renewal is not made
 

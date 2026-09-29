@@ -39,6 +39,21 @@ appear in a derived section, they remain evidence about other societies rather
 than a substitute for derived ordinary life, and no case gains an invented inner
 life.
 
+## The two weakest reader chapters — item 75, 2026-09-29
+
+Chapter 7 introduces Selin as a person before the two entries about Selin,
+and defines presence, the floor and the ballot at first use in running prose.
+The tracker asked for a plain-English box; §1a's refusal of labelled boxes
+inside derived chapters stands outside argument sections, which ruling D2
+alone opened, so the definitions are ordinary derived sentences. The wage
+stays the chapter's one full attestation walkthrough, the clinic follows it as
+a three-sentence parallel, and Teo is introduced as a child before the birth
+entry. Chapter 27, compressed by item 73, now says where a custody
+authorisation's review period is set: its lawful source fixes the length, the
+rules measure none, and a renewal must come before the period closes. The exact
+prose is `session-drafted, author-approved under delegated approval
+(2026-09-13)`.
+
 ## Each chapter counts its costs once — item 74, 2026-09-29
 
 Eight derived chapters count their costs in a derived section — Chapters 7, 8,

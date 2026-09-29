@@ -545,7 +545,7 @@ optional method. A common term lists the chapters that use it most.
 - ecology: 3, 12, 13, 15, 29, 30
 - Edo: 24
 - emergency: 5, 10, Part III case, 17, 20
-- entitlement: opening, 1, 3, 5, 6, 18, 29, method
+- entitlement: opening, 1, 3, 5, 7, 18, 29, method
 - equality: 10, 11, 13, 17, 29
 - Esa: 2, 14, 16, 18
 - eviction: 6, 7, 10, 18, 26, 29
@@ -633,7 +633,7 @@ optional method. A common term lists the chapters that use it most.
 ### R
 
 - recall: 16, 17, 23, 24, 29
-- receipt: 1, 3, 4, 6, 7, 25, 26, 27
+- receipt: 1, 3, 4, 6, 25, 26, 27, 29
 - recognition status: 5, 9, 20, 22, 24, 26, 27, method
 - region: 3, 4, 6, 10, 17, 20
 - Regions Council: 16, 17, 20, 22
@@ -680,7 +680,7 @@ optional method. A common term lists the chapters that use it most.
 ### W
 
 - wage: 7, 9, 24, 29
-- witness: 3, 4, 7, 14, 23, 24, 28, method
+- witness: 3, 4, 14, 23, 24, 28, 30, method
 - work: 2, 3, 6, 7, 9, 26, 27, 29
 
 ### Z
