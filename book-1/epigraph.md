@@ -20,6 +20,9 @@ did you think I too would fall?
 (*Asking for Boons*), stanza 4. Tamil text: [Project Madurai](https://www.projectmadurai.org/pm_etexts/utf8/pmuni0012_02.html).
 English rendering for this book.
 
+The poet refuses the small life the stanza lists, from the daily search for
+food to a death like so many others.
+
 <!-- Translation: session-drafted, author-approved under delegated approval
      (2026-09-13); exact canonical version recorded with revision item 13.
      One unnumbered epigraph; it does not determine the book's structure.

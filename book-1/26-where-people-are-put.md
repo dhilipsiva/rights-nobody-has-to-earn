@@ -56,8 +56,12 @@ defendants, one of them with a recorded family, have findings of aggravated
 cruelty. In each case the finding produces severity, and home and family
 circumstances play no part.
 
-The chapter's paired test cases hold the merits and procedural requirements
-constant while separating the harm from the placement decision:
+Take one case: a properly made finding of grave injury makes the case severe,
+so a secure place may be considered, but the record lacks a finding that less
+restrictive places are insufficient, so the rules conclude severity while
+withholding authority for a secure placement. The chapter's paired test cases
+hold the merits and procedural requirements constant while varying one input at
+a time:
 
 | Properly made findings and placement evidence | What follows |
 | --- | --- |

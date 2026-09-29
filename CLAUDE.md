@@ -135,6 +135,42 @@ reinstate the retired tooling or workflow.
 Grouped by kind. Dates in each heading are the ratification dates; a ruling
 that was later implemented or narrowed carries that supersession inline.
 
+### Item 77 — plain-language on-ramps, 2026-09-29
+
+Where a chapter used a person, office or term before explaining it, it now
+explains it at first use. Chapter 1 names the five ways into personhood beside
+the birth; Chapter 16 introduces Tove as an official the electorate seated and
+defines a seating; Chapter 23 names the shield in one sentence, and item 76's
+definition of a properly made finding opens Part IV; Chapter 19 sets its three
+records (holding, processing, automated support) in one table; Chapter 26
+works one row of its severity table in prose before the table. From the merged
+list, Chapter 17 states what the division of power secures before its table
+and links a new diagram, *The route of an ordinary bill*, drawn by
+`tools/book_diagrams.py` from the bill cases the state-form family pins and set
+in the back matter beside a prose equivalent, and Chapter 22 follows one
+candidate through certification, publication and selection as the enactment
+cases run it. The method opens with a *Reading one rule* box gathering the
+notation; its first section already teaches it, so no separate tutorial is
+added. The epigraph gains one line of plain gloss, and the opening points to
+the list of roles and named cases.
+
+The tracker asked for five-line boxes in the chapters. The narrative-register
+decision's §1a refuses labelled boxes inside derived chapters, and ruling D2
+lifted that refusal for argument sections only, so the chapters use running
+prose and the method, which is no derived chapter, holds the one box. A
+first-use sentence in Chapter 1 used "effective control", which the lint counts
+as a term of art, and one in Chapter 26 added a negation; both were rephrased,
+so negation and jargon counts do not rise in any chapter. The narrative-register
+decision records the item and the epigraph's added line, and the exact prose is
+`session-drafted, author-approved under delegated approval (2026-09-13)`.
+
+No rule, pin or suite changes, so item 73's complete run on the same formal
+inputs stands. The 28 coverage, reference, claim-discipline and articles
+development tests, the companion input tests, the nineteen book-builder tests,
+the prose check and the works-cited and index `--check` modes pass; the HTML and
+EPUB copies build with the new table, box and diagram, and the diagram
+generator redraws the five existing diagrams unchanged.
+
 ### Item 76 — each piece of machinery stated once, 2026-09-29
 
 The machinery the review found restated across chapters now has one canonical

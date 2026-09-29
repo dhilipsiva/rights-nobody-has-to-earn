@@ -1,8 +1,10 @@
 # Answerability and Authority
 
-Tove is recalled. Tove remains publicly answerable. The distinction protects
-Iris, who exposed Tove: removing the official must not remove the basis of
-protection for the person who exposed them.
+Tove, an official the electorate seated, is recalled and remains publicly
+answerable. The distinction protects Iris, who exposed Tove: removing the
+official must not remove the basis of protection for the person who exposed
+them. A *seating* is the record that the electorate or the convocation chose
+someone for an office.
 
 Public answerability is the status the shield rules consult when someone
 exposes a public actor. It is distinct from universal human standing and from

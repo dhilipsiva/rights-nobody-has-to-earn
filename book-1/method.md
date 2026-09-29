@@ -6,6 +6,15 @@ the rule and the supplied facts, ask what follows, and try a case that should
 give a different answer. The machine checks those consequences; whether the
 English describes them is a separate review.
 
+> **Reading one rule.** A name followed by arguments in brackets is a fact or a
+> conclusion: `born(Nell)`. A word beginning with `$` is a variable, and
+> `all $x:` means "for every $x". `&` joins conditions, `->` points from the
+> conditions to what follows, and `~` means that what follows it is not
+> concluded from the records given. A line beginning `?` asks a question, and
+> `# =>` gives the verdict a test requires: `TRUE` when the rules conclude it
+> from the records given, and `FALSE` when they do not, which says nothing about
+> the world outside those records.
+
 I use Nibli because it makes the relationships in this proposal explicit. Facts
 name people, acts and records; rules state which combinations permit a
 conclusion. The language distinguishes an entry from a conclusion nobody may

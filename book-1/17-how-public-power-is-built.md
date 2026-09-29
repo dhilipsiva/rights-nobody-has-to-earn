@@ -11,6 +11,8 @@ unused, and the Council has no authority to return the bill.
 How can a proposal become law without disagreement becoming a permanent veto?
 Rights need institutions that can act, and a duty to help justifies only the
 powers a lawful source grants. The design divides power by place and function,
+so that no institution finds the decisive facts of its own legitimacy, judges
+them, executes the result, audits itself and supplies the final remedy. It
 requires each office to show its authority, and keeps essential duties in place
 when an office falls vacant or a government fails to form.
 
@@ -65,7 +67,9 @@ delays ordinary law and then ends. Each stage has its own record and each power
 its own source: lawmaking authority stays separate from revenue and spending
 authority, and each of those needs its own authorisation. Execution belongs to
 the Executive Council under its own mandate, and review and remedy stay in
-hands other than the one that performed the act.
+hands other than the one that performed the act. The back matter's diagram of
+[the route of an ordinary bill](reference.md#the-route-of-an-ordinary-bill)
+draws these stages.
 
 The Council's equal regional weight is a territorial exception confined to its
 limited mandate. Each regional legislature chooses its own delegates for a
@@ -76,10 +80,6 @@ themselves.
 The ombudsperson and the rights advocate hold mandates to assist people unable
 to act alone, and no institution may make officeholding or political
 eligibility a condition of its help.
-
-No institution may find the decisive facts of its own legitimacy, judge them,
-execute the result, audit itself and supply the final remedy. Those functions
-belong to different hands, and each division opens a route for challenge.
 
 ## What a public result has to contain
 

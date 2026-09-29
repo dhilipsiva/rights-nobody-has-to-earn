@@ -1,14 +1,15 @@
 # The Shield
 
-A disclosure against a publicly answerable actor protects its maker from
-confinement under a conviction, in each case in which the maker is cited. The
-protection begins before anyone has decided whether the disclosure is true, and
-the discloser has to obtain no finding to receive it. Three records limit it.
-A properly made deceit finding about that particular exposure ends its
-protection. An entry by both of a case's temporal witnesses that the disclosure
-followed the charge ends its reach into that case. And a properly made case
-finding that a prosecution is unrelated to the disclosure removes that
-prosecution from its coverage.
+The shield is the protection a disclosure gives its maker: a disclosure against
+a publicly answerable actor protects its maker from confinement under a
+conviction, in each case in which the maker is cited. The protection begins
+before anyone has decided whether the disclosure is true, and the discloser has
+to obtain no finding to receive it. Three records limit it. A properly made
+deceit finding about that particular exposure ends its protection. An entry by
+both of a case's temporal witnesses that the disclosure followed the charge
+ends its reach into that case. And a properly made case finding that a
+prosecution is unrelated to the disclosure removes that prosecution from its
+coverage.
 
 A finding, order or review in this part of the book is *properly made* when
 every element its rule requires is present, each from the right source: the
@@ -22,7 +23,8 @@ The case finding needs authorised reviewers whose eligibility is independently
 confirmed. The defendant, the injured person and the prosecuting court are each
 excluded from deciding it. An actual conflict, found by an authorised office,
 defeats the affected decision; merely naming a reviewer in a disclosure does
-not. Dara's sequence below tests that distinction.
+not. The sequence of Dara, a defendant who has exposed officials, tests that
+distinction below.
 
 The cases show what follows when those conditions are present, absent or
 disputed.

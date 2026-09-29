@@ -10,11 +10,13 @@ and what Nell feels are questions it leaves open. The question here is what
 follows from the birth entry alone.
 
 For anyone other than a public body, a recorded birth is enough for the rules
-to conclude personhood. The rule asks for the birth and that the name is not
-a public body's: a parent, an age, a document and a match against a registry
-are all outside it.
-Nell therefore enters the design as a person. The entries Nell lacks are
-simply absent, and nothing in the rules waits for them.
+to conclude personhood. The rule asks for the birth and that the name is not a
+public body's: a parent, an age, a document and a match against a registry are
+all outside it. Nell therefore enters the design as a person. A birth is one of
+five ways in, beside first contact, presence within the republic's
+jurisdiction, being under its power, and a report that nobody is acting for
+someone; each stands alone, and the section *Who counts* follows them. The
+entries Nell lacks are simply absent, and nothing in the rules waits for them.
 
 ## Everything owed
 

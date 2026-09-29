@@ -14,6 +14,14 @@ keep each record from completing.
 
 ## Keeping, watching, and letting a machine help
 
+Three records build on one another, and each needs an authority of its own.
+
+| Record | What it permits | What it rests on |
+|---|---|---|
+| A holding | Keeping one domain's record for one purpose | Three attesters, a closed list of domains and purposes, and the protections the record states |
+| Processing | One named use: ordinary keeping, biometric processing, profiling, targeted surveillance, or an automated or assisted decision | The exact holding, matched field by field, and terms for the most intrusive uses |
+| Automated support | A machine's help with a decision a person makes | The same holding, an explanation, contest before effect, and a human and independent reviewer who decides |
+
 ### A holding bound to its purpose
 
 A holding names one domain and one purpose from closed lists. The domains

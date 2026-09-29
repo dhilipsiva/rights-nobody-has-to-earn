@@ -39,6 +39,26 @@ appear in a derived section, they remain evidence about other societies rather
 than a substitute for derived ordinary life, and no case gains an invented inner
 life.
 
+## Plain-language on-ramps — item 77, 2026-09-29
+
+Where a chapter used a person, office or term before explaining it, it now
+explains it first. Chapter 1 names the five ways into personhood at first
+use; Chapter 16 introduces Tove as an official the electorate seated and
+defines a seating; Chapter 23 names the shield in one sentence and opens Part
+IV by saying what makes a finding properly made; Chapter 19 sets its three
+records in one table; Chapter 26 works one row of its severity table in prose;
+and Chapter 17 states what the division of power secures before its table and
+links a new back-matter diagram of an ordinary bill's route. Chapter 22 follows
+one pinned candidate through certification, publication and selection. The
+tracker asked for five-line boxes: §1a's refusal of labelled boxes inside
+derived chapters stands outside argument sections, so the chapters use running
+prose, and the only box is the method's *Reading one rule*, the method being no
+derived chapter. The epigraph gains one line of plain gloss after its
+rendering: "The poet refuses the small life the stanza lists, from the daily
+search for food to a death like so many others." The opening points to the
+list of roles and named cases. The exact prose is `session-drafted,
+author-approved under delegated approval (2026-09-13)`.
+
 ## The two weakest reader chapters — item 75, 2026-09-29
 
 Chapter 7 introduces Selin as a person before the two entries about Selin,

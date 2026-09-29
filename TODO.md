@@ -224,7 +224,7 @@ unimplemented until the items named here land.
 
 ## Ordered revision backlog toward 9.5+
 
-Status 2026-09-29: items 01–65 and 67–76 are complete and recorded in
+Status 2026-09-29: items 01–65 and 67–77 are complete and recorded in
 `CLAUDE.md`; optional item 66 is closed without outside validation. The
 [2026-09-25 revision review](reviews/2026-09-25-revision-review.md) rates the
 revised manuscript 8/10 and publisher readiness 7.5/10: claim discipline holds
@@ -233,7 +233,7 @@ chapters (6, 13, 17, 27), cost-paragraph/argument restatement at chapter
 endings, and length for the D1 serious non-specialist reader. A fresh
 chapter-by-chapter pass (2026-09-29) concurs at ~7.1/10 average, weakest at
 Ch. 7 and Ch. 27. No remaining item is an error the pins contradict. Items
-77–80 are readability, pacing and evidenced-limits work inside rulings D1–D9;
+78–80 are readability, pacing and evidenced-limits work inside rulings D1–D9;
 item 81 is optional; items 82–87, merged below, are companion, navigation and
 contribution work, and item 82 corrects a stale example. Chapter numbers refer
 to the [current reading sequence](book-1/contents.json).
@@ -293,11 +293,11 @@ Where each of its items went:
 |---|---|
 | 1. Split Chapters 13, 27 and 29 | 73 and 75 (done), 80 |
 | 2. An onboarding path in the companion | 83 |
-| 3. Bridge the prose and the formal language | 77, 84 |
+| 3. Bridge the prose and the formal language | 77 (done), 84 |
 | 4. Independent validation | 81, 85 |
-| 5. Compress Chapters 17 and 22 | 73 (done), 77 |
+| 5. Compress Chapters 17 and 22 | 73 and 77 (done) |
 | 6. The design in ten minutes | 86 |
-| 7. Pins a non-programmer can read | 77, 84 |
+| 7. Pins a non-programmer can read | 77 (done), 84 |
 | 8. What would change my mind | 87 |
 | 9. Costs and who bears them | 87 |
 | 10. A second-engine page | 85 |
@@ -306,33 +306,6 @@ Where each of its items went:
 | 13. Part V's historical cases | 80 |
 | 14. A book map in the companion | 83 |
 | 15. Forks and joints explained | 83 |
-
-### 77. Plain-English on-ramps where readers stop
-
-Why: readability 7.5/10; Chs. 1/16/19/23–24 assume characters and offices
-never introduced.
-Do: 5-line boxes at first use — Ch. 1 dramatis + standing roots; Ch. 16
-Tove/Iris/seating; Ch. 19 Holding→Processing→Support table; Ch. 23 shield in
-one sentence; Ch. 26 one worked severity-table row in prose; method top box
-(`Reading one rule`) and epigraph one-line gloss. Definitions first, uses
-after. Keep cases thin (no invented inner life, D3).
-Close when: boxes present, first-use glosses added, lint jargon/negation do
-not regress, prose consistency review passes, complete `./verify.sh`.
-
-From the merged list: Ch. 17 opens by stating in derived terms what the
-division of power secures before its table, and Ch. 22 walks one candidate
-through certification, publication and selection as the version in force,
-using a candidate its pins already run; an example they do not run, such as
-the list's added floor item, needs source and pins first. The list's "why
-divide power?" and "why entrench a core?" belong in each chapter's argument
-section, since D2 puts argument last. A diagram of the ordinary bill's route,
-drawn by `tools/book_diagrams.py` from the case Chapter 17 pins, joins the
-reference's diagrams beside a prose equivalent, the chapter points to it, and
-the book-builder tests pass with it. The method's first section already
-teaches the notation, so the `Reading one rule` box gathers `all`, `$`, `&`,
-`->`, `~`, `?` and `# =>`, with FALSE read as not derivable from the supplied
-record, and stands in for the list's ten-minute tutorial and pin tutorial
-inside the method's sealed scope.
 
 ### 78. Earn Chapter 30 failure #1 without claiming operation
 

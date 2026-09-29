@@ -236,12 +236,29 @@ def flow_constraints() -> None:
         body, y + hn + 16)
 
 
+def ordinary_bill() -> None:
+    items = [
+        ("First passage", "the People's Assembly passes the bill under its voting rule, with public reasons"),
+        ("One return", "the Regions Council may return it once, with public reasons, while its return is recorded as unused"),
+        ("Repassage", "the Assembly passes it again under the same voting rule, which ends the return"),
+        ("Lawmaking authority", "separate from the authority to raise revenue and to spend, each of which needs its own record"),
+    ]
+    body, bottom = column(items, 140, 440, 16)
+    y = bottom + 26
+    note, hn = box(40, y, 640, "Without the finding that the return is still unused, the Council has no authority to return the bill.", dashed=True)
+    body.append(note)
+    svg("ordinary-bill", "The route of an ordinary bill",
+        "A bill passes the People's Assembly, the Regions Council may return it once with public reasons while its return is unused, and the Assembly's repassage under the same voting rule ends the return and gives the Assembly lawmaking authority, separate from revenue and spending; without a finding that the return is unused, the Council has no authority to return the bill.",
+        body, y + hn + 16)
+
+
 def main() -> None:
     duty_chain()
     delivery_evidence()
     placement_ceiling()
     democratic_corridor()
     flow_constraints()
+    ordinary_bill()
     print(f"Drew {len(list(OUT.glob('*.svg')))} diagrams in {OUT.relative_to(ROOT)}")
 
 

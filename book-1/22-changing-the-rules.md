@@ -41,13 +41,18 @@ compatibility are separate premises, and each is required.
 | Published candidate | Publication is bound to that certified candidate. | Selection as the version in force. |
 | Version in force | The chosen transition matches the current base and exact replacement. | Truth of the recorded evidence and actual institutional operation. |
 
-A candidate needs consent that matches it exactly. A different candidate
-inserted into an upstream record matches nothing downstream and makes that
-record ambiguous. When two selections compete, both are marked as a conflict
-and neither candidate comes into force. A transition binds the base it was made
-for, so replayed against a later base it certifies nothing. Returning to
-earlier wording needs fresh authority and a new transition while preserving the
-intervening record.
+The chapter's enactment cases follow one candidate through the table. With its
+political consent, exact text, effect review and core compatibility all
+attested, it is certified and nothing more. Add authorised publication bound to
+that certified candidate and it is published, still outside the law in force.
+Add a selection matching the current base and the exact replacement, and it
+becomes the version in force. A candidate needs consent that matches it
+exactly. A different candidate inserted into an upstream record matches nothing
+downstream and makes that record ambiguous. When two selections compete, both
+are marked as a conflict and neither candidate comes into force. A transition
+binds the base it was made for, so replayed against a later base it certifies
+nothing. Returning to earlier wording needs fresh authority and a new
+transition while preserving the intervening record.
 
 Anyone may request independent review without the operator's permission or a
 valid candidate certificate. The request binds the office authorised to hear

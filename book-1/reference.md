@@ -437,6 +437,19 @@ individual necessity, lawful conditions and independent review, and a secure
 place also needs a finding that less restrictive places are insufficient
 (Chapter 26).
 
+### The route of an ordinary bill
+
+![The route of an ordinary bill: the People's Assembly passes it, the Regions Council may return it once with public reasons, and the Assembly's repassage under the same voting rule ends the return and gives lawmaking authority.](diagrams/ordinary-bill.svg)
+
+**Prose equivalent:** A bill passes the People's Assembly under its voting
+rule, with public reasons. While a record shows that its return is still
+unused, the Regions Council may return the bill once, with public reasons. The
+Assembly's repassage under the same voting rule ends the return and gives the
+Assembly lawmaking authority, which stays separate from the authority to raise
+revenue and to spend, each needing a record of its own. Without the finding
+that the return is unused, the Council has no authority to return the bill
+(Chapter 17). No arrow shows that a vote was held or that its record is true.
+
 ### The democratic corridor
 
 ![The democratic corridor: ordinary public choice runs inside amendable constitutional law, inside a protected core no amendment may remove.](diagrams/democratic-corridor.svg)
