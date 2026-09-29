@@ -71,6 +71,22 @@ acceptance comes last as this decision's §6 required; the pen strand's
 persisting clearance and custody facts precede the other two and change none of
 their verdicts. The map is `tools/maps/2026-09-25-restructure.json`.
 
+## Back-matter mechanics — item 79, 2026-09-29
+
+The works cited sorted four United Nations conventions under "Y" and Chile's
+constitution under "O", because the rule that sorts a described link by the
+author its parenthesis names also read "(New York, 1961)" and "(Diario
+Oficial, 2025)" as authors. That rule now applies only after a described link,
+and a leading German article is ignored, so the conventions and Chile sort
+under "C" and the Weimar constitution under "V". The index's Constitutional
+Court entry no longer counts another country's court: a possessive such as
+"Colombia's" excludes the match, and the Part I case, whose court is South
+Africa's, is excluded by name. `reference.md` opens with a short *Start here*
+that folds in the map's list of links, so the back matter does not grow; the
+book stays majority-derived by a narrow margin, which the Part V pass of item
+80 widens. The epigraph and the opening note still take four pages before
+Chapter 1.
+
 ## Each piece of machinery stated once — item 76, 2026-09-29
 
 The machinery several chapters restated now has one canonical statement, and

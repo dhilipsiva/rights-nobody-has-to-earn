@@ -1,16 +1,14 @@
 # Map, Glossary and Index
 
-The [opening note](00-opening-note.md) states the book's question and how to
-read it. The maps, contents, glossary and index below lead back into the
-chapters.
+**Start here.** The [annotated contents](#annotated-contents) say what each
+chapter settles, the [concise glossary](#concise-glossary) defines the words
+they use, and [the choices and their arguments](#the-choices-and-their-arguments)
+lead to where each choice is argued. The [roles and
+cases](#roles-bodies-and-cases), [subjects](#domains-and-chapters) and
+[diagrams](#accessible-diagrams) follow, and all of it leads back into the
+chapters rather than stating rules of its own.
 
 ## Reader's Map
-
-Return here for [choices and arguments](#the-choices-and-their-arguments),
-[contents](#annotated-contents), [terms](#concise-glossary),
-[roles and cases](#roles-bodies-and-cases), [subjects](#domains-and-chapters),
-or [diagrams](#accessible-diagrams). Each is a way into the chapters, not a
-separate source of constitutional rules.
 
 The order is editorial: provision and ordinary freedom come before the powers
 and failures that threaten them. The rules' dependency order is a separate
@@ -537,7 +535,7 @@ optional method. A common term lists the chapters that use it most.
 - compensation: 9, 10, 20, method
 - competence certificate: 9, method
 - confinement: 18, 21, 23, 25, 26, 27, 28, 29
-- Constitutional Court: Part I case, 6, 17, 20, 22
+- Constitutional Court: 6, 11, 17, 20, 21, 22, 24, 30
 - continuity: 5, 6, 10, 12, 14, 17, 28, 29
 - contradiction check: method
 - contribution: 6, 9, 22, 29, method

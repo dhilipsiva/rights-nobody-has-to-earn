@@ -224,7 +224,7 @@ unimplemented until the items named here land.
 
 ## Ordered revision backlog toward 9.5+
 
-Status 2026-09-29: items 01–65 and 67–78 are complete and recorded in
+Status 2026-09-29: items 01–65 and 67–79 are complete and recorded in
 `CLAUDE.md`; optional item 66 is closed without outside validation. The
 [2026-09-25 revision review](reviews/2026-09-25-revision-review.md) rates the
 revised manuscript 8/10 and publisher readiness 7.5/10: claim discipline holds
@@ -232,8 +232,8 @@ across ~98,000 words, but density and repetition keep it below 9 — catalogue
 chapters (6, 13, 17, 27), cost-paragraph/argument restatement at chapter
 endings, and length for the D1 serious non-specialist reader. A fresh
 chapter-by-chapter pass (2026-09-29) concurs at ~7.1/10 average, weakest at
-Ch. 7 and Ch. 27. No remaining item is an error the pins contradict. Items
-79–80 are readability, pacing and evidenced-limits work inside rulings D1–D9;
+Ch. 7 and Ch. 27. No remaining item is an error the pins contradict. Item
+80 is readability, pacing and evidenced-limits work inside rulings D1–D9;
 item 81 is optional; items 82–87, merged below, are companion, navigation and
 contribution work, and item 82 corrects a stale example. Chapter numbers refer
 to the [current reading sequence](book-1/contents.json).
@@ -306,19 +306,6 @@ Where each of its items went:
 | 13. Part V's historical cases | 80 |
 | 14. A book map in the companion | 83 |
 | 15. Forks and joints explained | 83 |
-
-### 79. Back-matter mechanics for 9.5 presentation
-
-Why: navigation 8.5/10 but works-cited ordering is mechanical and the
-generated index is approximate.
-Do: hand-check works-cited sort edge cases (possessive/parenthesis authors,
-pinpoints kept); narrow index false positives further (recall, courts,
-interpretation); add three-line `reference.md` "Start here"
-(contents → glossary → choices table); keep front matter ≤5 pages before
-Ch. 1. No new reader-facing arguments in the appendix.
-Close when: bibliography `--check` and index `--check` pass, builder tests
-(16) and prose-lint tests (16) pass, PDFs/EPUBs rebuild without web
-artefacts.
 
 ### 80. Length and Part V pacing pass
 

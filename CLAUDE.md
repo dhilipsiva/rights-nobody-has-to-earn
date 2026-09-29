@@ -135,6 +135,43 @@ reinstate the retired tooling or workflow.
 Grouped by kind. Dates in each heading are the ratification dates; a ruling
 that was later implemented or narrowed carries that supersession inline.
 
+### Item 79 — back-matter mechanics, 2026-09-29
+
+Hand-checking the works cited found a real sort defect: four United Nations
+conventions sat under "Y" and Chile's constitution under "O", because the rule
+that sorts a described link by the author its parenthesis names — correct for
+"[Contemporaneous reporting in *Scroll*] (Aarefa Johari, ...)" — also read
+"(New York, 1961)" and "(Diario Oficial, 2025)" as authors. The rule now
+applies only after a described link, and a leading German article is ignored,
+so the conventions and Chile sort under "C" and *Die Verfassung des Deutschen
+Reichs* under "V"; possessive authors and pinpoints are unchanged. The index's
+Constitutional Court entry counted South Africa's and Colombia's courts; a
+possessive now excludes the match, and the Part I case, whose court is South
+Africa's, is excluded by name, so the entry lists the eight places that name
+this design's court. The other entries named in the tracker were checked:
+every use of "recall" is the office sense, and the index has no interpretation
+entry to narrow.
+
+`reference.md` opens with a three-line *Start here* — contents, glossary, then
+the choices and their arguments — into which the Reader's Map's list of links
+is folded. Adding it without folding would have broken the majority-derived
+length rule: after item 73 cut derived text, the book stood at 48,596 derived
+words against 48,617 argued or exempt, and
+`the_book_stays_majority_derived_by_section` failed until the back matter gave
+back what it added. The margin is now 7 words, and item 80's Part V pass is
+where it widens; any later back-matter addition must be offset. The epigraph
+and the opening note take four pages before Chapter 1, within ruling D7's five.
+The reading-order decision records the item, and the exact prose is
+`session-drafted, author-approved under delegated approval (2026-09-13)`.
+
+No rule, pin or suite changes, so item 73's complete run on the same formal
+inputs stands. The works-cited and index `--check` modes, the nineteen
+book-builder tests, the sixteen prose-lint tests, the prose check and the
+coverage, reference and claim-discipline development tests pass. The review
+copies rebuild: the PDF has 252 pages with no return arrow or web closing in
+print, and the EPUB passes EPUBCheck 5.3.0, run through nix, with no errors or
+warnings.
+
 ### Item 78 — Chapter 30's first failure, surveyed, 2026-09-29
 
 Chapter 30 ranked the State's failure to perform at scale first while saying

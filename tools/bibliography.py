@@ -154,13 +154,18 @@ def key(work: str) -> str:
         surname = f"{first[-2]} {first[-1]}"
     possessive = re.match(r"([A-ZÀ-Ž]\w+) ([A-ZÀ-Ž][\w\-]+)['’]s ", plain)
     reporter = re.search(r"\(([A-ZÀ-Ž]\w+) ([A-ZÀ-Ž][\w\-]+), \d", plain)
+    # A parenthesis names an author only after a described link, such as
+    # "[Contemporaneous reporting in *Scroll*] (Aarefa Johari, ...)"; after a
+    # title or a statute it names a place or a gazette: "(New York, 1961)".
+    described = re.match(r"\[[A-ZÀ-Ž][a-z]+ [a-z]", work.lstrip())
     if not person and possessive and not INSTITUTIONAL.search(possessive.group(0)):
         surname = possessive.group(2)
-    elif not person and reporter:
+    elif not person and reporter and described:
         surname = reporter.group(2)
     base = f"{surname} {plain}" if surname else plain
     base = unicodedata.normalize("NFKD", base).encode("ascii", "ignore").decode().lower()
-    return re.sub(r"^(the|a|an) ", "", base)
+    # A leading article is ignored in any language the notes use: "Die Verfassung".
+    return re.sub(r"^(the|a|an|die) ", "", base)
 
 
 def places_text(places: list[str]) -> str:

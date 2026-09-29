@@ -53,8 +53,9 @@ TERMS: list[tuple[str, list[str]]] = [
     ("compensation", ["compensation"]),
     ("competence certificate", ["competence certificate", "certificate opens no door", "certifier"]),
     ("confinement", ["confinement", "confine", "confined"]),
-    # Not Germany's Federal Constitutional Court.
-    ("Constitutional Court", ["re:(?<!Federal )(?<!Germany's )Constitutional Court"]),
+    # This design's court, not another country's: "Colombia's Constitutional
+    # Court", "South Africa's" or Germany's Federal Constitutional Court.
+    ("Constitutional Court", ["re:(?<!Federal )(?<![A-Za-z]['’]s )Constitutional Court"]),
     ("continuity", ["continuity"]),
     ("contradiction check", ["contradiction"]),
     ("contribution", ["contribution"]),
@@ -194,13 +195,19 @@ def count(pattern: str, text: str) -> int:
     return len(re.findall(r"(?<![\w-])" + re.escape(pattern) + r"(?![\w-])", text, flags))
 
 
+# Places where a term names something else: the Part I case's Constitutional
+# Court is South Africa's, which the case names in full before shortening it.
+ELSEWHERE = {"Constitutional Court": {"Part I case"}}
+
+
 def entries() -> list[tuple[str, list[str]]]:
     texts = [(label, plain((BOOK / name).read_text(encoding="utf-8"))) for name, label in places()]
     order = {label: index for index, (label, _) in enumerate(texts)}
     titled = {label: plain_title(name) for name, label in places()}
     found = []
     for term, patterns in TERMS:
-        counts = {label: sum(count(p, text) for p in patterns) for label, text in texts}
+        counts = {label: sum(count(p, text) for p in patterns) for label, text in texts
+                  if label not in ELSEWHERE.get(term, set())}
         where = [label for label, n in counts.items() if n]
         if len(where) > MOST:
             principal = sorted((label for label in where if counts[label] > 1),
