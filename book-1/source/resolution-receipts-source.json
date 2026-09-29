@@ -38,8 +38,8 @@
     },
     {
       "id": "placement-marker",
-      "chapter": "book-1/26-where-people-are-put.md",
-      "section": "What the placement alarm sees",
+      "chapter": "book-1/28-when-the-system-notices-it-broke.md",
+      "section": "A placement report against a rule",
       "what_failed": "The marker meant to report bad placements fired on correctly placed people and on nobody who was misplaced — wrong every time it spoke.",
       "what_changed": "Every reported category and exact case/place is checked against qualified placement; competing reviewed candidates withhold custody. A positive named supported residence is available only under its own evidence, not by default from a missing home.",
       "state": "resolved-for-claim",

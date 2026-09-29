@@ -57,7 +57,7 @@ gives disclosure no credit for closure.
 
 ### placement-marker — resolved-for-claim
 
-*Told in* `26-where-people-are-put.md`, "What the placement alarm sees".
+*Told in* `28-when-the-system-notices-it-broke.md`, "A placement report against a rule".
 
 **What failed.** The marker meant to report bad placements fired on correctly placed people and on nobody who was misplaced — wrong every time it spoke.
 
