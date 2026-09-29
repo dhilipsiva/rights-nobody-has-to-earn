@@ -795,6 +795,21 @@ bookmarks, and the builder's 19 development tests pass. The updated attachment
 instructions are session-drafted, author-approved under the same delegated
 approval. This prepares an attachment; the author details and sending remain
 open, and no press has been contacted.
+
+After item 87 closed the tracker's last required item, on 2026-09-29, the
+proposal, the chapter outline, the press notes and the six drafts were brought
+to the finished text at `76456a03`: about 97,000 words, six diagrams, the
+design in ten minutes and the lists of what would change each choice and who
+bears its cost, a review copy of 252 pages, a sample of 36 and a summary
+edition of 18, all three EPUBs passing EPUBCheck 5.3.0, and the Pluto
+attachment, rebuilt from its documented command, at 26 pages with its three
+chapter bookmarks. The proposal names the two earlier manuscripts it described
+and says that the second revision addressed the September 25 review's
+editorial limits while no review has rated the revised text. The companion's
+engine comparison last ran at `be51db06`, and its records, expectations and
+formal source are unchanged since. The exact prose is `session-drafted,
+author-approved under delegated approval (2026-09-13)` as drafts; the author
+approves each before it is sent, and no press has been contacted.
 The complete `RIGHTS_VERIFY_JOBS=4 ./verify.sh` run passed 90,187 pins across
 16,353 cases, with contradiction checks complete and no findings, in
 1,393.36 seconds wall time; the five-minute target was not met. Prose lint and

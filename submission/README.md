@@ -6,7 +6,7 @@
 
 **Book proposal · dhilipsiva · political nonfiction / constitutional design**
 
-**Approximately 98,000 words · complete, internally reviewed manuscript**
+**Approximately 97,000 words · complete, internally reviewed manuscript**
 
 *A constitution designed from the person with nothing, argued in plain
 language, with every rule published so you can test it.*
@@ -14,15 +14,18 @@ language, with every rule published so you can test it.*
 This proposal seeks an editorial and print partnership for an openly licensed
 book. It is prepared for a submission decision, without being addressed or sent
 to a particular publisher. It describes the manuscript at commit
-`be51db06`; the [public manuscript](https://github.com/dhilipsiva/rights-nobody-has-to-earn/blob/be51db06/book-1/README.md)
+`76456a03`; the [public manuscript](https://github.com/dhilipsiva/rights-nobody-has-to-earn/blob/76456a03/book-1/README.md)
 and [repository](https://github.com/dhilipsiva/rights-nobody-has-to-earn)
-provide the text, its formal source and its evidence trail. The version of
-this proposal prepared on 21 September 2026 described the earlier manuscript
-at `93fa5662`, which remains identifiable in the repository's history. The
-current text is also readable at
+provide the text, its formal source and its evidence trail. The versions of
+this proposal prepared on 21 and 25 September 2026 described the earlier
+manuscripts at `93fa5662` and `be51db06`, which remain identifiable in the
+repository's history. The current text is also readable at
 [dhilipsiva.dev/rights-nobody-has-to-earn](https://dhilipsiva.dev/rights-nobody-has-to-earn/),
-where the constitution is published as numbered plain-language articles and a
-companion runs every chapter's cases in the browser.
+where the constitution is published as numbered plain-language articles, the
+whole design is summarised in ten minutes from those articles, each chapter's
+conditions for changing its choice and the people who bear its cost are
+gathered in one place, and a companion runs every chapter's cases in the
+browser.
 
 ## Synopsis
 
@@ -99,9 +102,9 @@ These are points of intellectual comparison, not sales forecasts or endorsements
 
 ## Contents
 
-The [annotated contents](https://github.com/dhilipsiva/rights-nobody-has-to-earn/blob/be51db06/book-1/reference.md#annotated-contents)
+The [annotated contents](https://github.com/dhilipsiva/rights-nobody-has-to-earn/blob/76456a03/book-1/reference.md#annotated-contents)
 give a sentence for each chapter; the sequence below matches
-[the contents manifest](https://github.com/dhilipsiva/rights-nobody-has-to-earn/blob/be51db06/book-1/contents.json).
+[the contents manifest](https://github.com/dhilipsiva/rights-nobody-has-to-earn/blob/76456a03/book-1/contents.json).
 
 Epigraph; A Note Before the Design — both unnumbered.
 
@@ -156,8 +159,11 @@ Opening case: After the Judgment
 30. Where This Could Fail
 
 Back matter: The Method (optional); Works Cited; Map, Glossary and Index,
-with five diagrams. A separate plain-language summary edition prints the
-constitution's thirty-one numbered articles as a short book of its own.
+with six diagrams and lists of the chapters whose arguments name each kind of
+evidence that would change a choice and each group of people who bear its
+cost. A separate plain-language summary edition prints the constitution's
+thirty-one numbered articles, after a ten-minute account of the design quoted
+from them, as a short book of its own.
 
 ## Representative sample
 
@@ -171,14 +177,14 @@ publisher's requirements before any submission.
 
 | Chapter | What the selection shows |
 |---|---|
-| [1. The Child With Nobody](https://github.com/dhilipsiva/rights-nobody-has-to-earn/blob/be51db06/book-1/01-the-child-with-nobody.md) | Unconditional standing tested from a one-line birth record, and the argument against identity-first welfare. |
-| [4. Whether It Arrived](https://github.com/dhilipsiva/rights-nobody-has-to-earn/blob/be51db06/book-1/04-whether-it-arrived.md) | The difference between an entitlement, a receipt and concluded delivery, and why evidence comes from the person served. |
-| [8. What Nobody Has to Ask Permission For](https://github.com/dhilipsiva/rights-nobody-has-to-earn/blob/be51db06/book-1/08-what-nobody-has-to-ask-permission-for.md) | Ordinary freedom and the two grounds on which public power may restrict it. |
-| [21. A Way to Be Heard](https://github.com/dhilipsiva/rights-nobody-has-to-earn/blob/be51db06/book-1/21-a-way-to-be-heard.md) | Access, a duty to hear, interim protection and relief kept apart. |
-| [29. The Five Joints](https://github.com/dhilipsiva/rights-nobody-has-to-earn/blob/be51db06/book-1/29-the-five-joints.md) | The synthesis: valuation, rotation, coercion, capture and the state, with the evidence and its limits. |
+| [1. The Child With Nobody](https://github.com/dhilipsiva/rights-nobody-has-to-earn/blob/76456a03/book-1/01-the-child-with-nobody.md) | Unconditional standing tested from a one-line birth record, and the argument against identity-first welfare. |
+| [4. Whether It Arrived](https://github.com/dhilipsiva/rights-nobody-has-to-earn/blob/76456a03/book-1/04-whether-it-arrived.md) | The difference between an entitlement, a receipt and concluded delivery, and why evidence comes from the person served. |
+| [8. What Nobody Has to Ask Permission For](https://github.com/dhilipsiva/rights-nobody-has-to-earn/blob/76456a03/book-1/08-what-nobody-has-to-ask-permission-for.md) | Ordinary freedom and the two grounds on which public power may restrict it. |
+| [21. A Way to Be Heard](https://github.com/dhilipsiva/rights-nobody-has-to-earn/blob/76456a03/book-1/21-a-way-to-be-heard.md) | Access, a duty to hear, interim protection and relief kept apart. |
+| [29. The Five Joints](https://github.com/dhilipsiva/rights-nobody-has-to-earn/blob/76456a03/book-1/29-the-five-joints.md) | The synthesis: valuation, rotation, coercion, capture and the state, with the evidence and its limits. |
 
 To assemble the sample from this checkout, follow the
-[browser setup instructions](https://github.com/dhilipsiva/rights-nobody-has-to-earn/blob/be51db06/book-1/README.md#read-or-assemble-the-book), then run:
+[browser setup instructions](https://github.com/dhilipsiva/rights-nobody-has-to-earn/blob/76456a03/book-1/README.md#read-or-assemble-the-book), then run:
 
 ```bash
 uv run tools/build_book.py --sample
@@ -195,18 +201,19 @@ being considered for submission.
 ## Completion and limits
 
 The manuscript is complete. Every chapter, the five Part openers, the
-synthesis, the method, the works cited and the reference are written, and the
-revision closed on 25 September 2026. The 40 ordered inputs hold about 98,000
-words; the derived accounts of Chapters 1–28 are about 49,600 of them and
-their argument sections about 22,000. At that commit the complete verifier
-passes 90,187 pins across 16,353 cases, with complete contradiction checks and
-no findings; the development tests, the book-builder tests and the
-companion's checks pass, and the companion's engine reproduces the recorded
-result of every one of its 91 cases. The review copy's PDF has 256 pages, the
-sample's 36 and the summary edition's 16, and all three EPUBs pass EPUBCheck
-with no errors or warnings. A clean verification describes the loaded formal
-model and the constraints it represents; it shows nothing about the prose, or
-about how the society would operate.
+synthesis, the method, the works cited and the reference are written. One
+revision closed on 25 September 2026, and a second, on the editorial limits the
+review below names, on 29 September. The 40 ordered inputs hold about 97,000
+words; the derived accounts of Chapters 1–28 are about 48,600 of them and their
+argument sections about 21,800. On the formal inputs of that commit the
+complete verifier passes 90,187 pins across 16,353 cases, with complete
+contradiction checks and no findings; the development tests, the book-builder
+tests and the companion's checks pass, and the companion's engine reproduces
+the recorded result of every one of its 91 cases. The review copy's PDF has 252
+pages, the sample's 36 and the summary edition's 18, and all three EPUBs pass
+EPUBCheck with no errors or warnings. A clean verification describes the loaded
+formal model and the constraints it represents; it shows nothing about the
+prose, or about how the society would operate.
 
 The [September 25 review](../reviews/2026-09-25-revision-review.md) reads all
 40 ordered inputs and rates the manuscript 8/10 and its publisher readiness
@@ -214,7 +221,11 @@ The [September 25 review](../reviews/2026-09-25-revision-review.md) reads all
 the editorial limits that remain: density, repetition between some chapters'
 cost paragraphs and their arguments, and length for its primary reader. It is
 an assessment within the same AI-assisted project, not independent editorial
-endorsement.
+endorsement. The second revision addressed those limits: the chapters that read
+as catalogues now state each list once through a case, each chapter counts its
+costs once, each piece of machinery is stated once, terms are explained where
+they first appear, and Part V is shorter. No review has yet rated the revised
+text, so the ratings above describe the text before it.
 
 The opening note and the method disclose AI assistance: an AI assistant
 drafted the prose, the formal rules, their tests and the companion, and the
@@ -252,4 +263,4 @@ information, rights and AI-disclosure policies. The [press-by-press
 note](presses.md) records what seven presses asked for on 25 September 2026. Contact, submission and any
 contract are separate decisions; none has taken place through this package.
 
-This proposal is licensed under [CC BY 4.0](https://github.com/dhilipsiva/rights-nobody-has-to-earn/blob/be51db06/book-1/LICENSE-CC-BY).
+This proposal is licensed under [CC BY 4.0](https://github.com/dhilipsiva/rights-nobody-has-to-earn/blob/76456a03/book-1/LICENSE-CC-BY).

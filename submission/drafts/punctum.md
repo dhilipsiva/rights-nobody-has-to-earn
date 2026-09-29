@@ -18,7 +18,7 @@ proposal, names, affiliations and contact details. No CV should be sent.
 
 Dear Eileen and Vincent,
 
-*The Rights Nobody Has to Earn* is a complete book of about 98,000 words. It
+*The Rights Nobody Has to Earn* is a complete book of about 97,000 words. It
 asks what a society owes a person who can offer it nothing in return. Its
 answer is a constitution built from a record that holds a child's birth and
 nothing else. Being a person gives standing and a floor of nine essentials,

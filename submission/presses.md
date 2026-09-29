@@ -8,7 +8,7 @@ contacted.** Each submission, and every fact about the author below marked
 *author to supply*, is the author's to decide and write.
 
 The [publisher-neutral proposal](README.md) describes the manuscript at
-`be51db06`. Each section says:
+`76456a03`. Each section says:
 
 - how the press wants to be approached;
 - what it asks for, and how the proposal maps onto that;
@@ -219,7 +219,7 @@ See the decisions table: ask first about CC BY.
   books with author, title, publisher and year; the author; a promotion plan.
   Send two or three chapters if available.
 - **Length.** "Our preference would be for a manuscript of between 40,000 and
-  80,000 words." The book is about 98,000; say so and let the editor judge.
+  80,000 words." The book is about 97,000; say so and let the editor judge.
 - **Open access.** £9,750 plus VAT up to 100,000 words, expected to be met by
   the author's funding. The licence is usually CC BY-NC-ND, with alternatives
   for funders' requirements.

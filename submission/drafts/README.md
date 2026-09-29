@@ -23,7 +23,7 @@ Before sending any message:
      builds `output/submission/pluto/book-1-sample.pdf` with the three chapters
      selected for that press. The general sample contains five chapters.
    - **Proposal:** the [publisher-neutral proposal](../README.md) describes the
-     manuscript at `be51db06`.
+     manuscript at `76456a03`.
    - **Chapter outline:** the [outline](outline.md) gives a paragraph for each
      chapter.
 

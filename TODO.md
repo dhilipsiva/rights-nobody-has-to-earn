@@ -357,5 +357,7 @@ policies stand in the way, and then decided not to approach UCL Press:
 [`submission/presses.md`](submission/presses.md) records each press's
 requirements with their sources. [`submission/drafts/`](submission/drafts/README.md)
 holds a message ready for each of the other six; the messages to Verso,
-punctum and Westminster raise the conflict first. The author sends each one after filling the gaps marked
-`[AUTHOR: …]`. Nothing has been sent.
+punctum and Westminster raise the conflict first. On 2026-09-29, with every
+other required item complete, the proposal, the outline, the press notes and
+the drafts were brought to the finished text at `76456a03`. The author sends
+each one after filling the gaps marked `[AUTHOR: …]`. Nothing has been sent.

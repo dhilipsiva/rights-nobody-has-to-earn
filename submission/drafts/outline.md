@@ -155,6 +155,9 @@ built.
     design does now, and what a fix would take.
 
 **Back matter.** It comprises an optional method that explains how the rules
-are run and tested, the works cited, and a map, glossary and index with five
-diagrams. A separate summary edition prints the constitution as thirty-one
-numbered articles in plain language.
+are run and tested, the works cited, and a map, glossary and index with six
+diagrams and lists of the chapters whose arguments name each kind of evidence
+that would change a choice and each group of people who bear its cost. A
+separate summary edition prints the constitution as thirty-one numbered
+articles in plain language, opening with a ten-minute account of the design
+quoted from them.

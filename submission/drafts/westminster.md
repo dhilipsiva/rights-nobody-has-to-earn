@@ -48,7 +48,7 @@ cases in the browser.
 **Contents.** An opening note, five Parts of thirty chapters, each Part opening
 with a documented case, then an optional method, the works cited, and a map,
 glossary and index. The chapters are listed at
-https://github.com/dhilipsiva/rights-nobody-has-to-earn/blob/be51db06/book-1/reference.md#annotated-contents.
+https://github.com/dhilipsiva/rights-nobody-has-to-earn/blob/76456a03/book-1/reference.md#annotated-contents.
 
 **Sample.** Chapters 1, 4, 8, 21 and 29 are attached. The complete manuscript
 is at https://dhilipsiva.dev/rights-nobody-has-to-earn/.
@@ -61,7 +61,7 @@ design's rulings are mine. An AI assistant drafted the prose, the formal rules
 and their tests, and I approved it, much of it under a standing approval rather
 than passage by passage. The opening note says this in full.
 
-**Length and illustrations.** About 98,000 words, with five diagrams and a
+**Length and illustrations.** About 97,000 words, with six diagrams and a
 number of tables.
 
 **Delivery.** The manuscript is complete and can be sent now.

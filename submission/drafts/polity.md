@@ -50,7 +50,7 @@ that the society would work or is affordable.
 **Chapter-by-chapter outline.** This is attached, with a paragraph for each of
 the thirty chapters and the five Part openers.
 
-**Length.** About 98,000 words, including the notes, works cited and
+**Length.** About 97,000 words, including the notes, works cited and
 reference material.
 
 **Delivery.** The manuscript is complete and can be sent now.

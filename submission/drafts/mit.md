@@ -13,7 +13,7 @@ editor only, and no editor is listed for politics or law.
 **Attach:** nothing. The press asks for no chapters until it invites them.
 
 **Subject:** Inquiry: *The Rights Nobody Has to Earn*, a constitution with
-executable rules (complete, about 98,000 words)
+executable rules (complete, about 97,000 words)
 
 ---
 
@@ -21,7 +21,7 @@ Dear Justin Kehoe,
 
 I am writing to ask whether you would consider a proposal for *The Rights
 Nobody Has to Earn: A worked design for a society, with its formal claims made
-executable*, a complete manuscript of about 98,000 words.
+executable*, a complete manuscript of about 97,000 words.
 
 The book asks what a society owes a person who can offer it nothing in return,
 and how that person can hold it to the promise. It answers with a constitution.

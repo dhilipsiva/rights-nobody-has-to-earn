@@ -16,7 +16,7 @@ uv run tools/build_book.py --sample --sample-chapters 1 4 29 --output-dir output
 ```
 
 **Before sending:** Pluto prefers manuscripts of 40,000–80,000 words, and this
-one is about 98,000. Its open-access charge is £9,750 plus VAT for up to
+one is about 97,000. Its open-access charge is £9,750 plus VAT for up to
 100,000 words, which it expects the author's funding to meet. The proposal
 states the length plainly.
 
@@ -60,9 +60,9 @@ would work or is affordable.
 **Table of contents.** The [chapter outline](outline.md) is attached. It gives
 a paragraph for each of the thirty chapters and the five Part openers.
 
-**Format and length.** About 98,000 words, above your preferred range. That
+**Format and length.** About 97,000 words, above your preferred range. That
 figure includes the notes, works cited and reference material, and the book has
-five diagrams and several tables. I would be glad to work with you towards your
+six diagrams and several tables. I would be glad to work with you towards your
 preferred length, for example by moving the optional method online.
 
 **Delivery.** The manuscript is complete and can be sent now.
@@ -89,6 +89,7 @@ political theory and social policy.
 **Promotion plan.** `[AUTHOR: your plan.]` Assets that already exist:
 - a public companion site that runs every chapter's cases in the browser;
 - the constitution published as thirty-one numbered articles in plain language;
+- the whole design in ten minutes, quoted from those articles;
 - a short summary edition;
 - the complete text under CC BY 4.0.
 
