@@ -212,12 +212,12 @@ Juno records where Juno is present, so the region owes provision and the
 locality owes reach and delivery.
 
 A kitchen records serving Juno a meal and witnesses its own record. The
-provider's word counts for its own record alone, so food stays unshown and the
-debt stands. Nobody begins assistance. A passerby records that, as anybody may,
-and the independent alternate now owes a review of whether assistance began.
-Suppose the advocate and the alternate both stay silent. Their silence concludes
-nothing adverse about Juno, whose credibility and liberty stay as they were,
-and both duties remain owed.
+provider's word counts for its own record alone, so the record concludes
+nothing about the meal and the debt stands. Nobody begins assistance. A
+passerby records that, as anybody may, and the independent alternate now owes a
+review of whether assistance began. Suppose the advocate and the alternate both
+stay silent. Their silence concludes nothing adverse about Juno, whose
+credibility and liberty stay as they were, and both duties stand undischarged.
 
 The region fails. An auditor and an independent reviewer, both separate from
 the region, certify the failure and name the common tier, which now owes
@@ -229,10 +229,10 @@ it out. Once integrity and audit and a reviewer certify the Assembly's
 nonresponse, the Court owes interim measures that secure the minimum, and the
 provision and treasury office owes the minimum the first claim on public funds.
 
-At every step Juno keeps standing and free movement, and at the end food is
-still unshown. Each office's failure left a named duty on the next, and each of
-those duties still waits on a delivery nobody has shown. How quickly any office
-should have acted, and who staffs it, belong to the second book.
+The protections hold at every step: Juno keeps standing and free movement. What
+fails is provision. Each office's failure leaves a named duty on the next, and
+at the end the record still lacks any evidence that Juno ate. How quickly any
+office should have acted, and who staffs it, belong to the second book.
 
 ## What this cannot settle
 

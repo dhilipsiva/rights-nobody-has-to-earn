@@ -287,12 +287,10 @@ inspector is already inside, the fix can follow at once, and no second office
 has to be funded or let in. This book's sources register no evidence for it, so
 I state it on its argument alone.
 
-Against it, my rule costs time and the holder's knowledge. Every finding needs
-two outsiders who agree on the person, holding, holder, place, period and
-evidence, so a denial of contact that no outsider records stays unmarked, and
-the person held bears the wait. The review body and its alternate must both be
-paid for. Under the alternative the cost falls on the person held, whose
-conditions are judged by the body that sets them.
+Against it, my rule costs time and the holder's knowledge, and the person held
+bears most of the waits counted above, beginning with a denial of contact that
+no outsider records. Under the alternative the cost falls on the person held,
+whose conditions are judged by the body that sets them.
 
 I would reconsider on evidence that inspections run by holding institutions
 find and correct denied contact as often and as fast as independent visiting

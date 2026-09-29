@@ -26,18 +26,18 @@ reached Marisol.
 Each part of the match does its own work. The authority is personal: anyone
 may watch a delivery, and attesting to it belongs to a witness authorised for
 that recipient. The item and kind must agree: the food conclusion is about
-food alone, so shelter stays unshown for Marisol, and a care receipt paired
-with an observation recorded as food leaves care unshown too.
+food alone and settles nothing about Marisol's shelter, and a care receipt
+paired with an observation recorded as food concludes nothing about care.
 
 The witness must be someone other than the source. When a shelter receipt names
 Marisol's authorised witness as its source, that witness's observation of the
-shelter counts for nothing, and shelter stays unshown: a provider certifies
-nothing about its own item, even while holding the witness role. The same
+shelter counts for nothing: a provider certifies nothing about its own item,
+even while holding the witness role. The same
 separation keeps out the public bodies whose duty the delivery discharges: the
 State, the common tier, and any region or locality that a presence witness
 records for the person. Suppose a presence witness records Marisol's region,
 and the region, authorised as her delivery witness, attests to a visit from a
-companion: company stays unshown.
+companion: its attestation concludes nothing about company.
 
 The rule reads the evidence of delivery and leaves personhood aside. Food
 receipt follows for Marisol while her personhood remains unshown for the name
@@ -98,11 +98,11 @@ speaks only for the period its records cover.
 
 ## The child with nobody
 
-Nell is owed food, and Nell's record holds only the birth, so food receipt
-stays unshown. Suppose a receipt naming Nell were recorded, a witness other than
+Nell is owed food, and Nell's record holds only the birth, so nothing in it
+concludes that food was received. Suppose a receipt naming Nell were recorded, a witness other than
 the provider were authorised for Nell, and that witness's matching observation
-were entered. Food receipt then follows, and only food: shelter stays unshown,
-and nothing confines Nell.
+were entered. Food receipt then follows, and only food: shelter still needs
+evidence of its own, and nothing confines Nell.
 
 The witness is authorised for Nell rather than by the child. A reviewed
 appointment must name one, retain Nell's voice and provide challenge and

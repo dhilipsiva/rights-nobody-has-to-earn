@@ -558,7 +558,7 @@ optional method. A common term lists the chapters that use it most.
 - Faro: 23
 - first contact: opening, 1, 2, 6, 14, 25, 30
 - floor: 1, 3, 6, 9, 10, 25, 29, 30
-- food: 1, 3, 4, 6, 9, 13, 25, method
+- food: 1, 3, 4, 5, 9, 13, 25, method
 - free movement: 6, 7, 9, 15, 18, 24, 25, 27
 - future conditions: 3, 5, 12, 13
 - Future Conditions Guardian: 12, 13

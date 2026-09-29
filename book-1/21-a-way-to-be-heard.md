@@ -195,11 +195,10 @@ spared private vendettas, and victims are spared pressing their own case. No
 study of its record is cited here; I keep its central point: an agreement
 between two people cannot erase public accountability.
 
-My rule costs what that model saves. Review offices owe an answer to every
-request, and whoever funds them pays. Someone who has made amends to a willing
-survivor can still face the public case. The alternative puts its cost on the
-person whose complaint the prosecutor declines, who has no route of their own,
-and on the person harmed who wanted to meet and was never asked.
+My rule costs what that model saves: the answers owed to weak requests and the
+public case that survives amends, counted above. The alternative puts its cost
+on the person whose complaint the prosecutor declines, who has no route of
+their own, and on the person harmed who wanted to meet and was never asked.
 
 I would reconsider the open request if requests from anyone were shown to
 crowd review until well-founded ones waited longer than the harm they

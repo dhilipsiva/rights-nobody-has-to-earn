@@ -180,18 +180,14 @@ restriction as it comes, so a reviewing court can weigh an aim that a
 list-maker failed to foresee, and the balancing stage still guards the right.
 
 I answer the purpose question in advance, with two grounds, and that costs
-whatever an open test would have protected. People whose injury from speech is
-offence alone, a community whose sacred things are mocked among them, find the
-restriction route closed, where a balancing court might weigh their injury
-against the speaker's freedom. I accept that cost because I would rather keep
-offence, disagreement and an official view of the truth off the scale
-altogether than trust each balance to weigh them lightly against a dissenter.
-The suspensive challenge adds a second cost: while a challenge runs, the
-restriction waits, and the people it would protect bear the harm meanwhile. The
-written record adds a third, smaller one: a body's particular duties wait for
-someone to make it, though the ten limits hold in the meantime. I require an
-end because a restriction justified by one harm at one time should lapse with
-its reasons unless it is justified again.
+whatever an open test would have protected: the waits and the closed route
+counted above fall hardest on people whose injury from speech is offence alone,
+a community whose sacred things are mocked among them, where a balancing court
+might weigh their injury against the speaker's freedom. I accept that cost
+because I would rather keep offence, disagreement and an official view of the
+truth off the scale altogether than trust each balance to weigh them lightly
+against a dissenter. I require an end because a restriction justified by one
+harm at one time should lapse with its reasons unless it is justified again.
 
 I would add a third ground if a serious, evidenced injury kept recurring that
 neither ground could name. I would reopen the list only on evidence that an

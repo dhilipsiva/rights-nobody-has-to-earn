@@ -135,6 +135,35 @@ reinstate the retired tooling or workflow.
 Grouped by kind. Dates in each heading are the ratification dates; a ruling
 that was later implemented or narrowed carries that supersession inline.
 
+### Item 74 — each chapter counts its costs once, 2026-09-29
+
+Eight derived chapters carry a derived section counting what their rules cost
+and who bears it — Chapters 7, 8, 16, 17, 21, 23, 24 and 28 — and each
+argument section restated it. The full account now stays in the derived
+section, which the argument cites in one clause ("counted above") before
+arguing why the cost is worth bearing and what the alternative would cost
+instead; points the derived section never made, such as a forged seating
+widening the answerable set or a voter finding a council to punish, stay in the
+argument. A spot-check of those eight and of Chapters 5 and 26, which have no
+derived cost section, finds no cost paragraph repeated in its argument.
+
+The refrains the review heard as incantation are varied so that what held and
+what failed read differently. Chapter 4's matching rules no longer end four
+sentences on "stays unshown": each says what the conclusion settles or what
+shelter still needs. Chapter 6's claim that fails ends by separating the
+protections that held at every step from the provision that failed. The
+once-per-chapter "belongs to the second book" boundary stays, as the
+2026-09-19 instruction on arrival requires and the coverage detector reads.
+No argument's registry-bound figure changes. The exact prose is
+`session-drafted, author-approved under delegated approval (2026-09-13)`.
+
+The narrative-register decision records the item. No rule, pin or suite
+changes, so item 73's complete run on the same formal inputs stands. The 28
+coverage, reference, claim-discipline and articles development tests pass, as
+do the twelve companion input tests, the nineteen book-builder tests, the
+sixteen prose-lint tests, the prose check and the works-cited and index
+`--check` modes; the index is regenerated.
+
 ### Item 73 — the catalogue chapters, case-first, 2026-09-29
 
 The chapters the 2026-09-25 review named as catalogues now state each list

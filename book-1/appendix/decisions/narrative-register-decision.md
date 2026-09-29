@@ -39,6 +39,20 @@ appear in a derived section, they remain evidence about other societies rather
 than a substitute for derived ordinary life, and no case gains an invented inner
 life.
 
+## Each chapter counts its costs once — item 74, 2026-09-29
+
+Eight derived chapters count their costs in a derived section — Chapters 7, 8,
+16, 17, 21, 23, 24 and 28 — and each argument section restated that count. The
+full account stays in the derived section, and the argument cites it in one
+clause ("counted above") before arguing why the cost is worth bearing and what
+the alternative would cost instead. A point the derived section never made
+stays in the argument. Chapter 4's matching rules and Chapter 6's claim that
+fails no longer close on one refrain: each sentence now says what a conclusion
+settles, what still needs its own evidence, or which protections held while
+provision failed. The once-per-chapter boundary on the second book stays. The
+exact prose is `session-drafted, author-approved under delegated approval
+(2026-09-13)`.
+
 ## The channels D2 and D3 open, built — item 53, 2026-09-25
 
 The tooling the two rulings need is in place; no chapter carries an argument

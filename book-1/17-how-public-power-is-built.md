@@ -329,11 +329,8 @@ the Union Law Minister and two eminent persons, and declared the earlier
 collegium system of judicial appointment operative again.[^njac] I divide the
 sources rather than trust either a minister or the judiciary's own choice.
 
-The price falls on identifiable people. A voter seeking whom to punish finds a
-council and an Assembly majority. A government that has lost support stays
-while its opponents disagree. Whoever needs an ordinary law waits one round,
-and residents of large regions have less weight in the federal settlement. A
-new majority waits for seats to fall due before it can change who reviews it.
+The price falls on the identifiable people counted above, and on a voter
+seeking whom to punish, who finds a council and an Assembly majority.
 
 I would reconsider the council if collective executives under the same limits
 missed lawful deadlines more often than cabinets; the Regions Council if

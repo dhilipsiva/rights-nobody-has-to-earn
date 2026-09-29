@@ -198,12 +198,12 @@ is that a record cannot anticipate every danger, and that an official who must
 first complete one will sometimes act too late. I have no measurement I can
 cite for or against that claim.
 
-My rule's cost is time and some protection. The officer with a suspicion and
-no individual ground has no search, and whoever that search would have
-protected bears the loss. The alternative moves the cost onto the people its
-discretion falls on, who must show after the event that it was arbitrary,
-against an official who never had to write down why. I would rather the burden
-of writing sit with the power than the burden of proof with the person.
+My rule's cost is the waiting and the lost protection counted above, which fall
+on whoever needs the rules to see something. The alternative moves the cost
+onto the people its discretion falls on, who must show after the event that it
+was arbitrary, against an official who never had to write down why. I would
+rather the burden of writing sit with the power than the burden of proof with
+the person.
 
 I would reconsider on two findings together: that requiring a complete record
 before a protective act lets serious harm through that discretion would have

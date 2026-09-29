@@ -181,15 +181,13 @@ justified grounds; the presumption can be rebutted.[^eu] A hearing-first rule
 leaves that burden with the discloser. The Directive moves the burden, and I
 move the timing too.
 
-Against the alternative my rule costs time and breadth. The set of answerable
-people only grows, so an exposure of a long-retired official can hold back
-confinement in a case unrelated to it, and the people injured in that case
-wait while a finding is sought. A forged seating widens the set further. Under
-the alternative the cost falls on the discloser, who must win a hearing while
-the prosecution runs, sometimes before the office the exposure implicates. The
-case that opens this Part warns against protection that exists only once it is
-asked for in court: while the order stood, the right to ask was itself
-suspended.
+Against the alternative my rule costs the time and breadth counted above, borne
+by the people injured in the cases the shield holds back, and a forged seating
+widens the answerable set further. Under the alternative the cost falls on the
+discloser, who must win a hearing while the prosecution runs, sometimes before
+the office the exposure implicates. The case that opens this Part warns against
+protection that exists only once it is asked for in court: while the order
+stood, the right to ask was itself suspended.
 
 I would reconsider on evidence that hearing-first orders, decided promptly,
 protect people who expose officials from retaliatory prosecution as reliably as

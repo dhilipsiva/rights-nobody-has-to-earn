@@ -246,14 +246,12 @@ accusations, but somebody must judge specificity, and the judge nearest to hand
 is often the authority accused.
 
 Against immunity, my rule costs the discloser. Reviewers who wrongly find a
-prosecution unrelated open the way to confinement, and someone who controls the
-appointment records can manufacture that finding. Protection for a disclosure
-made before the charge depends on two witnesses dating it honestly, and
-retaliation inside a pending case has to be caught by the custody requirements.
-Immunity puts its cost on everyone its holder harms afterwards, whose cases
-could never be tried, and it turns an accusation against an official into a
-licence. My rule also costs the injured person time while eligible reviewers are
-found.
+prosecution unrelated open the way to confinement, someone who controls the
+appointment records can manufacture that finding, and protection for a
+disclosure made before the charge depends on two witnesses dating it honestly;
+the waits the rule imposes are counted above. Immunity puts its cost on
+everyone its holder harms afterwards, whose cases could never be tried, and it
+turns an accusation against an official into a licence.
 
 I would move toward immunity on evidence that reviewers shown to be eligible
 regularly certify retaliatory prosecutions as unrelated. I would reconsider the

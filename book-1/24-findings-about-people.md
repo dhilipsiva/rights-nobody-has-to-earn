@@ -279,9 +279,8 @@ protection for the people the same office would act on next.
 My rule costs those people something. A seated examiner under a finding keeps
 the appointment, and only the signature on a new finding stops counting; the
 people that examiner deals with rely on each record's own rules to catch a
-second deception. The person under a finding bears a different cost: the
-restriction ends only on a properly made appellate act, so a review that is owed
-and never held leaves it in place.
+second deception. The person under a finding bears the costs counted above,
+beginning with a restriction that only a properly made appellate act ends.
 
 I would move toward the related-role disqualification the Act describes on
 evidence that people under a properly made finding of dishonesty go on to
