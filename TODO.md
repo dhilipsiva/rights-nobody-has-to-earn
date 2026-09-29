@@ -217,15 +217,146 @@ unimplemented until the items named here land.
   amendable law bounded by the core. Item 58 defined the terms and argued the
   result in Chapter 13.
 
-## Ordered revision backlog
+## Ordered revision backlog toward 9.5+
 
-The revision is complete. Numbering continues from items 01–33, which
-`CLAUDE.md` records; items 34–65 and 67–72 are complete and recorded there too.
-The author closed the optional item 66, independent validation, on 2026-09-25
-without outside validation. Only the submissions below remain. Chapter numbers
-refer to the [current reading sequence](book-1/contents.json), which item 53
-made the plan's §4.2 table; the plan's own §14 punch list uses the earlier
-numbers, which `tools/maps/2026-09-25-restructure.json` maps to these.
+Status 2026-09-29: items 01–65 and 67–72 are complete and recorded in
+`CLAUDE.md`; optional item 66 is closed without outside validation. The
+[2026-09-25 revision review](reviews/2026-09-25-revision-review.md) rates the
+revised manuscript 8/10 and publisher readiness 7.5/10: claim discipline holds
+across ~98,000 words, but density and repetition keep it below 9 — catalogue
+chapters (6, 13, 17, 27), cost-paragraph/argument restatement at chapter
+endings, and length for the D1 serious non-specialist reader. A fresh
+chapter-by-chapter pass (2026-09-29) concurs at ~7.1/10 average, weakest at
+Ch. 7 and Ch. 27. No remaining item is an error the pins contradict; all
+below are readability, pacing, and evidenced-limits work inside rulings
+D1–D9. Chapter numbers refer to the [current reading
+sequence](book-1/contents.json).
+
+### 73. De-catalogue chapters 6, 10, 13, 17, 27
+
+Why: the 2026-09-25 review keeps these as its named editorial limit; they
+carry the pacing score (7/10).
+Do: one human case per catalogue section kept in prose; remainder to
+companion pointers, tables, or method boxes. Ch. 13 to one decision
+tree/table plus two cases (one farm, one subsistence); Ch. 27 to
+ll.1–160 as the chapter, non-punitive coercion (ll.189–297) to appendix or
+Part III-adjacent pointer; Ch. 17 secession/military and Ch. 20
+defence/treaties/trade likewise out; Ch. 10 fiscal/tier ll.140–199 out;
+Ch. 6 economic-wrongs/protective-power/animal previews (ll.133–208) to
+pointers. No rule changes expected; if a move needs one, source and pins
+first per contract.
+Close when: each of the five reads case-first with ≤1 table, prose lint
+`--check` shows no regression and `--ratchet` records lower negation/jargon
+where improved, focused pins pass, then complete `./verify.sh`; prose
+consistency reviewed separately.
+
+### 74. End each chapter once: cost vs Argument
+
+Why: argument sections restate their chapter's cost paragraph; endings feel
+incantatory (`stays unshown / remains owed`).
+Do: keep full cost accounting in exactly one place per chapter (cost section
+or Argument, chapter's choice), the other place cross-references in one
+sentence. Vary derived closings so failure and protection are
+distinguishable. No new limitations chapters; one new chapter-specific limit
+each at most.
+Close when: spot-check of 10 chapters shows no cost paragraph repeated in
+its Argument; lint disclaimers do not rise; complete `./verify.sh`.
+
+### 75. Rebuild the two weakest reader chapters: 7 and 27
+
+Why: Ch. 7 (ordinary week) must answer the extreme-case objection but
+re-teaches attestation twice and leans on undefined `attester/floor/ballot`;
+Ch. 27 promises one thing taken and delivers three chapters.
+Do (inside D2/D3/D5 and flat register): Ch. 7 — one full attestation
+walkthrough (wage), clinic as 3-sentence parallel, 5-line plain-English box
+up front (floor/ballot/presence), Selin/Teo introduced as people not entries.
+Ch. 27 — split per item 73, add one sentence stating intended renewal cadence
+or where it is set even though timing belongs to Book 2. Preserve
+`CHILD_SLOT_EXEMPT` reasons; never delete the membership requirement.
+Close when: each passes its focused pins plus companion chapter-case checks,
+lint names ≤5 in derived text, complete `./verify.sh`.
+
+### 76. Consolidate repeated machinery to one canonical statement
+
+Why: result-record completeness list (Chs. 17, 18, 22), request →
+certified-silence → alternate (Chs. 16, 19, 21, 22), eligibility/independence
+litany (Chs. 23–24, 26, 28), placement alarm (Chs. 26 vs 28) are restated,
+not cross-referenced.
+Do: canonical result-record and silence-alternate statements in Ch. 17;
+canonical finding-made preface for Chs. 23–24 cited by Chs. 26/28; all alarm
+mechanics in Ch. 28 with one-sentence pointers in Chs. 26–27. Move
+stratification/hostile-rule/counterfactual mechanics out of derived prose to
+method + companion (plan §10.2). Banned/harness terms stay at zero in
+derived text.
+Close when: lint `--check` passes, `harness`/`banned` zero in derived
+pieces, affected pins pass focused then complete `./verify.sh`.
+
+### 77. Plain-English on-ramps where readers stop
+
+Why: readability 7.5/10; Chs. 1/16/19/23–24 assume characters and offices
+never introduced.
+Do: 5-line boxes at first use — Ch. 1 dramatis + standing roots; Ch. 16
+Tove/Iris/seating; Ch. 19 Holding→Processing→Support table; Ch. 23 shield in
+one sentence; Ch. 26 one worked severity-table row in prose; method top box
+(`Reading one rule`) and epigraph one-line gloss. Definitions first, uses
+after. Keep cases thin (no invented inner life, D3).
+Close when: boxes present, first-use glosses added, lint jargon/negation do
+not regress, prose consistency review passes, complete `./verify.sh`.
+
+### 78. Earn Chapter 30 failure #1 without claiming operation
+
+Why: Ch. 30 ranks state non-performance first while admitting its
+follow-through evidence is unexamined (ll.51–53); resolve-before-defending
+requires either a repair or an adequately evidenced, constrained defense —
+Book 2 owns operation, so Book 1 may only survey, fence, and point.
+Do: two-sentence survey of what is known about structural-order
+follow-through (mixed, jurisdiction-dependent, citing Ch. 6 sources already
+in registry), keep fiscal feasibility fenced to Book 2 with its falsifiers,
+justify capture-above-inputs ranking in one sentence (capture defeats the
+reviewers inputs rely on). Add no staffing/timing/capacity promises. Record
+any new source in registry with locator + what was read; never invent
+reader testing or operational success.
+Close when: `registry/check.py` passes, Ch. 30 pins/claims unchanged or
+explicitly replaced with regression retained, complete `./verify.sh`.
+
+### 79. Back-matter mechanics for 9.5 presentation
+
+Why: navigation 8.5/10 but works-cited ordering is mechanical and the
+generated index is approximate.
+Do: hand-check works-cited sort edge cases (possessive/parenthesis authors,
+pinpoints kept); narrow index false positives further (recall, courts,
+interpretation); add three-line `reference.md` "Start here"
+(contents → glossary → choices table); keep front matter ≤5 pages before
+Ch. 1. No new reader-facing arguments in the appendix.
+Close when: bibliography `--check` and index `--check` pass, builder tests
+(16) and prose-lint tests (16) pass, PDFs/EPUBs rebuild without web
+artefacts.
+
+### 80. Length and Part V pacing pass
+
+Why: 98,299 words is long for the D1 primary reader; Ch. 29's State survey
+and valuation historiography synthesize least.
+Do: cut Ch. 29 State survey to two cases (Kerala + one failure) and move
+saved lines to one worked continuity-vs-voice conflict; trim valuation
+Owen/badge passages to what the joint needs; hold main-text composition
+change, not growth. Measure with lint word counts; record with `--ratchet`
+only on improvement.
+Close when: Part V reads synthesis-first, total ordered-input words do not
+grow, lint `--check` passes, complete `./verify.sh`, then rebuild review
+PDF/EPUB and inspect covers.
+
+### 81. Independent validation — OPTIONAL, needs new author decision
+
+Item 66 is closed (2026-09-25) with no outside expert, reader,
+reproduction, or red-team evidence, and none is claimed. The 9.5 plan §12
+requires it, but seeking it again needs a new decision per the closure
+record. Do not treat AI agreement (including this tracker or any review in
+`reviews/`) as validation. If the author reopens: comparative-constitutional
+lawyer, economic/social-rights scholar, formal-methods specialist, animal
+law scholar, frontline practitioner, three finishing lay readers with
+confusion logs, plus independent core-subset reproduction (e.g. Soufflé or
+clingo) and a published red-team challenge. Until then this item stays
+unopened and blocks no submission.
 
 ## Licence
 
