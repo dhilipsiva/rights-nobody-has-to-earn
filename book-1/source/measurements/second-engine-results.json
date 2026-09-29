@@ -518,7 +518,7 @@
       "seconds": 48.7,
       "differences": []
     },
-    "book-1/01-the-child-with-nobody": {
+    "book-1/01-the-child-with-nobody (pins merged from 02-who-counts)": {
       "queries": 29,
       "solves": 29,
       "seconds": 57.4,

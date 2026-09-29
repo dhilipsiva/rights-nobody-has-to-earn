@@ -224,7 +224,7 @@ unimplemented until the items named here land.
 
 ## Ordered revision backlog toward 9.5+
 
-Status 2026-09-29: items 01–65, 67–80 and 82–84 are complete and recorded in
+Status 2026-09-29: items 01–65, 67–80 and 82–85 are complete and recorded in
 `CLAUDE.md`; optional item 66 is closed without outside validation. The
 [2026-09-25 revision review](reviews/2026-09-25-revision-review.md) rates the
 revised manuscript 8/10 and publisher readiness 7.5/10: claim discipline holds
@@ -233,7 +233,7 @@ chapters (6, 13, 17, 27), cost-paragraph/argument restatement at chapter
 endings, and length for the D1 serious non-specialist reader. A fresh
 chapter-by-chapter pass (2026-09-29) concurs at ~7.1/10 average, weakest at
 Ch. 7 and Ch. 27. No remaining item is an error the pins contradict. Item
-81 is optional; items 85–87, merged below, are companion and navigation
+81 is optional; items 86 and 87, merged below, are companion and navigation
 work. Chapter numbers refer to the [current reading
 sequence](book-1/contents.json).
 
@@ -293,14 +293,14 @@ Where each of its items went:
 | 1. Split Chapters 13, 27 and 29 | 73, 75 and 80 (done) |
 | 2. An onboarding path in the companion | 83 (done) |
 | 3. Bridge the prose and the formal language | 77 and 84 (done) |
-| 4. Independent validation | 81, 85 |
+| 4. Independent validation | 81, 85 (done) |
 | 5. Compress Chapters 17 and 22 | 73 and 77 (done) |
 | 6. The design in ten minutes | 86 |
 | 7. Pins a non-programmer can read | 77 and 84 (done) |
 | 8. What would change my mind | 87 |
 | 9. Costs and who bears them | 87 |
-| 10. A second-engine page | 85 |
-| 11. A known-defects page | 85 |
+| 10. A second-engine page | 85 (done) |
+| 11. A known-defects page | 85 (done) |
 | 12. How to contribute | 82 (done) |
 | 13. Part V's historical cases | 80 (done) |
 | 14. A book map in the companion | 83 (done) |
@@ -323,26 +323,6 @@ From the merged list: its second engine is built (item 50), and the method
 reports it as a cross-check within the project, so its request to build one
 is met. What it adds here is an outside reimplementation and a red team run by
 someone else, both already named above.
-
-### 85. Checks and limits where a reader can find them
-
-Why: the method lists every check and where it stops (item 62), and the
-second engine's report and the adversarial audit sit in the repository, but
-the companion shows none of them. From the merged list's items 4, 10 and 11.
-Do: a companion page generated from
-`book-1/source/measurements/second-engine-results.json` and its report,
-showing what the translation keeps and drops, the cases replayed and each
-answer's agreement with its pin, with the method's limit that a misreading
-shared by both engines passes both. A page of current limits quotes, with
-links, the audit's open findings and the claim each withholds, the declared
-defects (none is active) and each chapter's "What this cannot settle" where it
-has one. Repaired defects stay in the repository's records — git, the decision
-records and `book-1/source/resolution-receipts.md` — which the page may link,
-since reader-facing pages describe the current design. The red team and the
-outside reimplementation the list asks for are item 81's.
-Close when: both pages are generated from their sources; a companion input
-test fails when a source changes and its page does not; and the static
-exporter renders them.
 
 ### 86. The design in ten minutes
 

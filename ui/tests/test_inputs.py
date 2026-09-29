@@ -342,5 +342,74 @@ class QueryGlosses(unittest.TestCase):
         self.assertIn('owe(State, Eats, Zed).: the gloss does not name Zed', gloss_problems(game))
 
 
+
+def assurance_tool():
+    import sys
+    sys.path.insert(0, str(ROOT/'tools'))
+    import assurance_pages
+    return assurance_pages
+
+
+class AssurancePages(unittest.TestCase):
+    """The pages on what was checked and what is left open are generated from
+    the records that carry each, and must follow them."""
+
+    @classmethod
+    def setUpClass(cls):
+        cls.tool = assurance_tool()
+        cls.committed = (UI/'assurance.json').read_text(encoding='utf-8')
+
+    def test_the_pages_match_their_sources(self):
+        self.assertEqual(self.tool.render(self.tool.build()), self.committed,
+                         'ui/assurance.json is stale; run python3 tools/assurance_pages.py')
+
+    def test_sabotage_a_changed_source_is_found(self):
+        import copy
+        loaded = self.tool.sources()
+        changed = copy.deepcopy(loaded)
+        case = next(iter(changed['results']['cases'].values()))
+        case['differences'] = [{'query': 'person(Nell).', 'expected': 'TRUE', 'clingo': 'FALSE'}]
+        self.assertNotEqual(self.tool.render(self.tool.build(changed)), self.committed)
+        changed = copy.deepcopy(loaded)
+        changed['audit']['lenses'][0]['findings'][0]['open'] = True
+        changed['audit']['lenses'][0]['findings'][0].setdefault('disposition', 'route-unbuilt')
+        changed['audit']['lenses'][0]['findings'][0].setdefault('consequence', 'A planted claim.')
+        self.assertNotEqual(self.tool.render(self.tool.build(changed)), self.committed)
+
+    def test_the_second_engine_page_carries_the_report_and_the_methods_limit(self):
+        engine = json.loads(self.committed)['engine']
+        method = ' '.join((ROOT/'book-1/method.md').read_text(encoding='utf-8').split())
+        self.assertIn(engine['limit'], method)
+        self.assertIn('misreading shared by both engines', engine['limit'])
+        self.assertTrue(engine['keeps'] and engine['leaves_out'])
+        self.assertEqual(engine['queries'], sum(c['queries'] for c in engine['cases']))
+
+    def test_every_chapter_with_limits_is_quoted_without_navigation(self):
+        limits = json.loads(self.committed)['limits']
+        manifest = json.loads((ROOT/'book-1/contents.json').read_text(encoding='utf-8'))
+        stated = [c['number'] for part in manifest['parts'] for c in part['chapters']
+                  if c.get('role') == 'derived' and c.get('status') == 'landed'
+                  and '## What this cannot settle\n' in (ROOT/'book-1'/c['file']).read_text(encoding='utf-8')]
+        self.assertEqual([c['number'] for c in limits['chapters']], stated)
+        for chapter in limits['chapters']:
+            for paragraph in chapter['paragraphs']:
+                self.assertFalse(paragraph.startswith('Run it:'), chapter['number'])
+                self.assertNotIn('The next chapter', paragraph, chapter['number'])
+
+    def test_declared_defects_are_found_and_none_is_active(self):
+        import tempfile
+        self.assertEqual(json.loads(self.committed)['limits']['defects'], [])
+        with tempfile.TemporaryDirectory() as tmp:
+            planted = Path(tmp)/'book-1'/'planted.pins.nibli'
+            planted.parent.mkdir(parents=True)
+            planted.write_text(':defect "a planted defect"\n? person(Nell).\n# => FALSE\n', encoding='utf-8')
+            found = self.tool.declared_defects(Path(tmp))
+        self.assertEqual(found, [{'file': 'book-1/planted.pins.nibli', 'line': 1, 'reason': 'a planted defect'}])
+
+    def test_a_results_file_with_a_repeated_case_is_refused(self):
+        with self.assertRaises(ValueError):
+            json.loads('{"cases": {"a": {}, "a": {}}}', object_pairs_hook=self.tool.unique_keys)
+
+
 if __name__ == '__main__':
     unittest.main()

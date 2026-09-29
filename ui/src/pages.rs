@@ -266,7 +266,128 @@ pub fn Start() -> Element {
                 li { NavLink { to: format!("{PREFIX}cases/"), "Each chapter's cases, ready to run" } }
                 li { NavLink { to: format!("{PREFIX}constitution/"), "The constitution in numbered plain-language articles" } }
                 li { a { href: "{PREFIX}#dossier", "The dossier of limits, costs and objections" } }
+                li { NavLink { to: format!("{PREFIX}limits/"), "What the design and its checks leave open" } }
+                li { NavLink { to: format!("{PREFIX}second-engine/"), "The rules replayed in a second engine" } }
             }
+        }
+    } }
+}
+/// A line whose `backticked` spans are code.
+fn coded(text: &str) -> Element {
+    let parts: Vec<(bool, String)> = text
+        .split('`')
+        .enumerate()
+        .map(|(i, part)| (i % 2 == 1, part.to_owned()))
+        .collect();
+    rsx! {
+        for (is_code, part) in parts.into_iter() {
+            if is_code { code { "{part}" } } else { span { "{part}" } }
+        }
+    }
+}
+/// The reader address of a section of one book file, found by its heading.
+fn section_link(file_stem: &str, heading: &str) -> Option<String> {
+    let page = book().pages.iter().find(|p| p.stem == file_stem)?;
+    let section = page.sections.iter().find(|s| s.title == heading)?;
+    Some(format!("{}#{}", page.path, section.id))
+}
+#[component]
+pub fn SecondEngine() -> Element {
+    let engine = &assurance().engine;
+    let agreement = if engine.differences == 0 {
+        "Every answer agrees with the verdict its pin records.".to_owned()
+    } else {
+        format!(
+            "{} answers differ from the verdict their pins record.",
+            engine.differences
+        )
+    };
+    let groups = engine
+        .groups
+        .iter()
+        .map(|g| format!("{} {}", g.name, g.cases))
+        .collect::<Vec<_>>()
+        .join(", ");
+    let method = section_link("method", &engine.method_section).unwrap_or_default();
+    let cases = engine.cases.len();
+    let statements = thousands(engine.statements);
+    let queries = thousands(engine.queries);
+    rsx! { div { class: "container page assurance-page",
+        PageHeading { eyebrow: "what has been checked", title: "The second engine",
+            p { "The constitution's rules were translated, statement by statement, into the input language of clingo {engine.clingo}, a separate answer set solver: {statements} clingo statements. The cases below were replayed through it, {cases} cases and {queries} queries, each answer compared with the verdict its pin records. {agreement}" }
+        }
+        section { id: "where-it-stops", class: "q-card pad", aria_label: "Where it stops",
+            h2 { "Where it stops" }
+            blockquote { p { "{engine.limit}" } }
+            p { "From the method's section " a { href: "{method}", "{engine.method_section}" } ", which lists every check the project publishes and where each stops." }
+        }
+        section { id: "keeps", class: "q-card pad", aria_label: "What the translation keeps",
+            h2 { "What the translation keeps" }
+            ul { for item in engine.keeps.iter() { li { {coded(item)} } } }
+        }
+        section { id: "leaves-out", class: "q-card pad", aria_label: "What the comparison leaves out",
+            h2 { "What the comparison leaves out" }
+            ul { for item in engine.leaves_out.iter() { li { {coded(item)} } } }
+        }
+        section { id: "engine-cases", class: "q-card pad", aria_label: "The cases replayed",
+            h2 { "The cases replayed" }
+            p { "By group: {groups}." }
+            details {
+                summary { "Every case, with its queries and the answers that differ" }
+                div { class: "table-scroll", role: "region", aria_label: "Cases replayed in the second engine", tabindex: "0",
+                    table {
+                        thead { tr { th { scope: "col", "Case" } th { scope: "col", "Queries" } th { scope: "col", "Answers that differ" } } }
+                        tbody { for case in engine.cases.iter() { tr { "data-engine-case": "{case.id}", td { code { "{case.id}" } } td { "{case.queries}" } td { "{case.differences}" } } } }
+                    }
+                }
+            }
+            p { a { href: "{REPOSITORY}/blob/main/book-1/source/measurements/second-engine-report.md", "The report ↗" } " · " a { href: "{REPOSITORY}/blob/main/tools/second_engine.py", "The translator ↗" } " · " NavLink { to: format!("{PREFIX}limits/"), "Current limits" } }
+        }
+    } }
+}
+#[component]
+pub fn Limits() -> Element {
+    let limits = &assurance().limits;
+    let engine_section = &assurance().engine.method_section;
+    let method = section_link("method", engine_section).unwrap_or_default();
+    rsx! { div { class: "container page assurance-page",
+        PageHeading { eyebrow: "what is left open", title: "Current limits",
+            p { "What the design, and the checks made on it, leave open, quoted from the records that hold each: the adversarial audit's open findings, the declared defects and each chapter's account of what it cannot settle. What was checked, and where each check stops, is in " NavLink { to: format!("{PREFIX}second-engine/"), "the second engine" } " and the method's section " a { href: "{method}", "{engine_section}" } "." }
+        }
+        section { id: "open-findings", class: "q-card pad", aria_label: "Open findings of the adversarial audit",
+            h2 { "Open findings of the adversarial audit" }
+            p { "The audit reads the source through the lenses of several disciplines. It is the project auditing its own repository, not an independent review. Each finding still open, with the claim it withholds:" }
+            ol { class: "open-findings",
+                for finding in limits.findings.iter() {
+                    li { "data-finding": "{finding.lens}",
+                        p { strong { "{finding.lens}. " } "{finding.finding}" }
+                        p { class: "withholds", "What it withholds: {finding.withholds}" }
+                        p { span { class: "q-badge", "{finding.disposition}" } }
+                    }
+                }
+            }
+            p { a { href: "{REPOSITORY}/blob/main/book-1/source/adversarial-audit.md", "The audit ↗" } }
+        }
+        section { id: "declared-defects", class: "q-card pad", aria_label: "Declared defects",
+            h2 { "Declared defects" }
+            if limits.defects.is_empty() {
+                p { "No declared defect is active: no test expects a known defect to reproduce." }
+            } else {
+                ul { for defect in limits.defects.iter() { li { code { "{defect.file}:{defect.line}" } " · {defect.reason}" } } }
+            }
+            p { "Repaired defects are recorded outside the reading pages, which describe the current design: in the " a { href: "{REPOSITORY}/blob/main/book-1/source/resolution-receipts.md", "resolution receipts ↗" } ", the " a { href: "{REPOSITORY}/tree/main/book-1/appendix/decisions", "decision records ↗" } " and the " a { href: "{REPOSITORY}/commits/main", "repository's history ↗" } "." }
+        }
+        section { id: "chapter-limits", class: "q-card pad", aria_label: "What each chapter cannot settle",
+            h2 { "What each chapter cannot settle" }
+            p { "Each chapter that states its own limits does so in a section with that name, quoted here without its pointers onward." }
+            for chapter in limits.chapters.iter() {{
+                let stem = chapter.file.trim_start_matches("book-1/").trim_end_matches(".md").to_owned();
+                let link = section_link(&stem, "What this cannot settle").unwrap_or_default();
+                rsx! { article { class: "chapter-limit", id: "chapter-{chapter.number}", "data-chapter": "{chapter.number}",
+                    h3 { a { href: "{link}", "Chapter {chapter.number}: {chapter.title}" } }
+                    blockquote { for paragraph in chapter.paragraphs.iter() { p { "{paragraph}" } } }
+                } }
+            }}
         }
     } }
 }

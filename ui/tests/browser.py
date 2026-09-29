@@ -30,12 +30,12 @@ def main():
     content = json.loads((UI/'dist/rights-nobody-has-to-earn/content.json').read_text(encoding='utf-8'))
     cases = json.loads((UI/'generated/cases.json').read_text(encoding='utf-8'))['cases']
     expected = json.loads((UI/'tests/expectations.json').read_text(encoding='utf-8'))
-    routes = ['', 'start/', 'read/', 'search/', 'constitution/', 'cases/'] + [f'read/{Path(p["source"]).stem}/' for p in content['pages']]
+    routes = ['', 'start/', 'read/', 'search/', 'constitution/', 'cases/', 'second-engine/', 'limits/'] + [f'read/{Path(p["source"]).stem}/' for p in content['pages']]
     manifest = json.loads((UI.parent/'book-1/contents.json').read_text(encoding='utf-8'))
     inputs = len(manifest['front']) + len(manifest['back']) + sum(
         (p.get('opener', {}).get('status') == 'landed') + sum(c['status'] == 'landed' for c in p['chapters'])
         for p in manifest['parts'])
-    assert len(content['pages']) == inputs and len(routes) == inputs + 6 and len(cases) == 91
+    assert len(content['pages']) == inputs and len(routes) == inputs + 8 and len(cases) == 91
     for path in ['game.json', 'cases.json']:
         def inspect(value):
             if isinstance(value, dict):
@@ -64,6 +64,14 @@ def main():
     assert 'start-panel' in home and all(f'data-theme="{t}"' in home for t in ('limits', 'costs', 'objections')), 'the home panel or a dossier theme is missing'
     contents_page = (UI/'dist/rights-nobody-has-to-earn/read/index.html').read_text(encoding='utf-8')
     assert contents_page.count('class="toc-summary"') >= len(derived), 'the book map lacks chapter summaries'
+    assurance = json.loads((UI/'assurance.json').read_text(encoding='utf-8'))
+    engine_page = (UI/'dist/rights-nobody-has-to-earn/second-engine/index.html').read_text(encoding='utf-8')
+    assert engine_page.count('data-engine-case=') == len(assurance['engine']['cases']), 'the second engine page lacks a case'
+    assert 'id="where-it-stops"' in engine_page and 'misreading shared by both engines' in engine_page, 'the second engine page lacks its limit'
+    limits_page = (UI/'dist/rights-nobody-has-to-earn/limits/index.html').read_text(encoding='utf-8')
+    assert limits_page.count('data-finding=') == len(assurance['limits']['findings']), 'an open finding is missing'
+    assert limits_page.count('data-chapter=') == len(assurance['limits']['chapters']), 'a chapter limit is missing'
+    assert 'id="declared-defects"' in limits_page and '/limits/' in home, 'the limits page or its navigation link is missing'
     report = {'routes':len(routes), 'reader_inputs':inputs, 'screens':[], 'engine':[], 'contrast':[]}
     errors = []
     with sync_playwright() as p:

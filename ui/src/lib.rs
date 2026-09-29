@@ -157,7 +157,7 @@ pub fn App() -> Element {
                             button { class: "q-btn q-btn--ghost", aria_label: "Book back", disabled: history.read().is_empty(), onclick: move |_| session.back(), "←" }
                             button { class: "q-btn q-btn--ghost", aria_label: "Book forward", disabled: future.read().is_empty(), onclick: move |_| session.forward(), "→" }
                         }
-                        for (route, label) in [("", "play"), ("start", "start"), ("read", "read"), ("constitution", "constitution"), ("cases", "cases"), ("search", "search")] {
+                        for (route, label) in [("", "play"), ("start", "start"), ("read", "read"), ("constitution", "constitution"), ("cases", "cases"), ("limits", "limits"), ("search", "search")] {
                             NavLink { to: format!("{PREFIX}{}", if route.is_empty() { String::new() } else { format!("{route}/") }), current: if section == route { "page" } else { "" }, "{label}" }
                         }
                         NavLink { to: format!("{PREFIX}#dossier"), "dossier" }
@@ -175,6 +175,8 @@ pub fn App() -> Element {
                 else if path == format!("{PREFIX}constitution/") { pages::Constitution {} }
                 else if path == format!("{PREFIX}cases/") { pages::Cases {} }
                 else if path == format!("{PREFIX}start/") { pages::Start {} }
+                else if path == format!("{PREFIX}second-engine/") { pages::SecondEngine {} }
+                else if path == format!("{PREFIX}limits/") { pages::Limits {} }
                 else if let Some(page) = book().pages.iter().find(|p| p.path == path) { pages::Reader { key: "{page.stem}", page: page.clone() } }
                 else { div { class: "container page", PageHeading { eyebrow: "404", title: "Page not found", p { "This address does not identify a page in Book 1." } } NavLink { to: format!("{PREFIX}read/"), "Browse the contents →" } } }
             }
@@ -184,6 +186,7 @@ pub fn App() -> Element {
                     span { "dhilipsiva · prose CC BY 4.0" }
                     a { href: public_url(format!("{path}index.md")), "Markdown" }
                     NavLink { to: format!("{PREFIX}#sources"), "Sources & licences" }
+                    NavLink { to: format!("{PREFIX}second-engine/"), "Checks" }
                     a { href: format!("{REPOSITORY}/blob/main/CONTRIBUTING.md"), "Contribute" }
                     a { href: public_url(format!("{PREFIX}llms.txt")), "Agent index" }
                 }

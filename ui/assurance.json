@@ -1,0 +1,971 @@
+{
+  "license": "CC-BY-4.0",
+  "generated_by": "tools/assurance_pages.py",
+  "engine": {
+    "clingo": "5.8.2",
+    "statements": 9575,
+    "queries": 1673,
+    "differences": 0,
+    "groups": [
+      {
+        "name": "chapter pins",
+        "cases": 8
+      },
+      {
+        "name": "custody",
+        "cases": 83
+      },
+      {
+        "name": "delivery",
+        "cases": 3
+      },
+      {
+        "name": "placement",
+        "cases": 26
+      },
+      {
+        "name": "source pins",
+        "cases": 3
+      },
+      {
+        "name": "stress",
+        "cases": 6
+      }
+    ],
+    "keeps": [
+      "Constants become quoted strings, and `$variables` become clingo variables.",
+      "`event { eats() }` becomes the constant \"event:eats\".",
+      "`~atom` is negation as failure, `~($a = $b)` is `!=`, and `($a = $b)` is `=`.",
+      "A disjunction inside a rule body becomes one rule per disjunct.",
+      "`entitled(every person, event { P() })` becomes a rule from `person`.",
+      "`:accept` statements are asserted, as Nibli keeps them.",
+      "Each query is answered against the stable model of everything asserted before it, which for a stratified program is the perfect model Nibli computes."
+    ],
+    "leaves_out": [
+      "`admits` and `derived_only` declarations are dropped, because clingo refuses no input, so a statement Nibli refuses is never asserted.",
+      "`:refuse`, `:accept-scoped` and `:require` statements are skipped, so refusals, scoped loadability and shell checks are not compared.",
+      "Contradiction scans are not compared.",
+      "Only cases on the live source run; a counterfactual case edits the source."
+    ],
+    "limit": "It is a cross-check within this project, not an independent reproduction: a misreading shared by both engines would pass both.",
+    "method_section": "What has been checked, and where each check stops",
+    "cases": [
+      {
+        "id": "book-1/01-the-child-with-nobody",
+        "queries": 60,
+        "differences": 0
+      },
+      {
+        "id": "book-1/01-the-child-with-nobody (pins merged from 02-who-counts)",
+        "queries": 29,
+        "differences": 0
+      },
+      {
+        "id": "book-1/03-what-you-are-owed",
+        "queries": 83,
+        "differences": 0
+      },
+      {
+        "id": "book-1/04-whether-it-arrived",
+        "queries": 20,
+        "differences": 0
+      },
+      {
+        "id": "book-1/23-the-shield",
+        "queries": 59,
+        "differences": 0
+      },
+      {
+        "id": "book-1/25-a-prisoner-is-a-person",
+        "queries": 36,
+        "differences": 0
+      },
+      {
+        "id": "book-1/26-where-people-are-put",
+        "queries": 73,
+        "differences": 0
+      },
+      {
+        "id": "book-1/27-the-one-thing-taken",
+        "queries": 41,
+        "differences": 0
+      },
+      {
+        "id": "book-1/source/delivery-receipt",
+        "queries": 36,
+        "differences": 0
+      },
+      {
+        "id": "book-1/source/rights-floor",
+        "queries": 81,
+        "differences": 0
+      },
+      {
+        "id": "book-1/source/universal-standing",
+        "queries": 32,
+        "differences": 0
+      },
+      {
+        "id": "custody/adjudication",
+        "queries": 25,
+        "differences": 0
+      },
+      {
+        "id": "custody/authority-lapse",
+        "queries": 12,
+        "differences": 0
+      },
+      {
+        "id": "custody/closed-conclusions",
+        "queries": 0,
+        "differences": 0
+      },
+      {
+        "id": "custody/execution",
+        "queries": 50,
+        "differences": 0
+      },
+      {
+        "id": "custody/filing-subject-binding",
+        "queries": 5,
+        "differences": 0
+      },
+      {
+        "id": "custody/intake-missing-CustodyIntakeAccessScope",
+        "queries": 4,
+        "differences": 0
+      },
+      {
+        "id": "custody/intake-missing-CustodyIntakeCaseScope",
+        "queries": 4,
+        "differences": 0
+      },
+      {
+        "id": "custody/intake-missing-CustodyIntakeEpochScope",
+        "queries": 4,
+        "differences": 0
+      },
+      {
+        "id": "custody/intake-missing-CustodyIntakeProtectionScope",
+        "queries": 4,
+        "differences": 0
+      },
+      {
+        "id": "custody/intake-missing-CustodyIntakeReconciliationScope",
+        "queries": 4,
+        "differences": 0
+      },
+      {
+        "id": "custody/intake-missing-CustodyIntakeSubjectScope",
+        "queries": 4,
+        "differences": 0
+      },
+      {
+        "id": "custody/intake-missing-CustodyIntakeWindowScope",
+        "queries": 4,
+        "differences": 0
+      },
+      {
+        "id": "custody/merits-conflicting-proof",
+        "queries": 2,
+        "differences": 0
+      },
+      {
+        "id": "custody/merits-disqualified-at-decision",
+        "queries": 2,
+        "differences": 0
+      },
+      {
+        "id": "custody/merits-missing-CustodyAdmissibilityScope",
+        "queries": 5,
+        "differences": 0
+      },
+      {
+        "id": "custody/merits-missing-CustodyConductScope",
+        "queries": 5,
+        "differences": 0
+      },
+      {
+        "id": "custody/merits-missing-CustodyDefencesScope",
+        "queries": 5,
+        "differences": 0
+      },
+      {
+        "id": "custody/merits-missing-CustodyEvidenceScope",
+        "queries": 5,
+        "differences": 0
+      },
+      {
+        "id": "custody/merits-missing-CustodyFinalityScope",
+        "queries": 5,
+        "differences": 0
+      },
+      {
+        "id": "custody/merits-missing-CustodyIncidentScope",
+        "queries": 5,
+        "differences": 0
+      },
+      {
+        "id": "custody/merits-missing-CustodyOffenceScope",
+        "queries": 5,
+        "differences": 0
+      },
+      {
+        "id": "custody/merits-missing-CustodyPriorLawScope",
+        "queries": 5,
+        "differences": 0
+      },
+      {
+        "id": "custody/merits-missing-CustodyProcedureScope",
+        "queries": 5,
+        "differences": 0
+      },
+      {
+        "id": "custody/merits-missing-CustodyProofScope",
+        "queries": 5,
+        "differences": 0
+      },
+      {
+        "id": "custody/merits-missing-CustodyProsecutorScope",
+        "queries": 5,
+        "differences": 0
+      },
+      {
+        "id": "custody/merits-missing-CustodySentenceScope",
+        "queries": 5,
+        "differences": 0
+      },
+      {
+        "id": "custody/merits-missing-CustodySubjectScope",
+        "queries": 5,
+        "differences": 0
+      },
+      {
+        "id": "custody/merits-missing-CustodyVictimScope",
+        "queries": 5,
+        "differences": 0
+      },
+      {
+        "id": "custody/merits-no-authority",
+        "queries": 2,
+        "differences": 0
+      },
+      {
+        "id": "custody/merits-prosecutor-reviewer",
+        "queries": 2,
+        "differences": 0
+      },
+      {
+        "id": "custody/merits-self-review",
+        "queries": 2,
+        "differences": 0
+      },
+      {
+        "id": "custody/merits-subject-reviewer",
+        "queries": 2,
+        "differences": 0
+      },
+      {
+        "id": "custody/merits-victim-reviewer",
+        "queries": 2,
+        "differences": 0
+      },
+      {
+        "id": "custody/placement-absent-place",
+        "queries": 4,
+        "differences": 0
+      },
+      {
+        "id": "custody/placement-conflicting-place",
+        "queries": 4,
+        "differences": 0
+      },
+      {
+        "id": "custody/placement-missing-CustodyPlacementAlternativeScope",
+        "queries": 5,
+        "differences": 0
+      },
+      {
+        "id": "custody/placement-missing-CustodyPlacementAvailabilityScope",
+        "queries": 5,
+        "differences": 0
+      },
+      {
+        "id": "custody/placement-missing-CustodyPlacementEpochScope",
+        "queries": 5,
+        "differences": 0
+      },
+      {
+        "id": "custody/placement-missing-CustodyPlacementLeaseScope",
+        "queries": 5,
+        "differences": 0
+      },
+      {
+        "id": "custody/placement-missing-CustodyPlacementNecessityScope",
+        "queries": 5,
+        "differences": 0
+      },
+      {
+        "id": "custody/placement-missing-CustodyPlacementPlaceScope",
+        "queries": 5,
+        "differences": 0
+      },
+      {
+        "id": "custody/placement-missing-CustodyPlacementProcedureScope",
+        "queries": 5,
+        "differences": 0
+      },
+      {
+        "id": "custody/placement-missing-CustodyPlacementWindowScope",
+        "queries": 5,
+        "differences": 0
+      },
+      {
+        "id": "custody/placement-nonsevere-in-highsec",
+        "queries": 4,
+        "differences": 0
+      },
+      {
+        "id": "custody/placement-self-review",
+        "queries": 4,
+        "differences": 0
+      },
+      {
+        "id": "custody/placement-severe-at-home",
+        "queries": 4,
+        "differences": 0
+      },
+      {
+        "id": "custody/placement-uncredentialed",
+        "queries": 4,
+        "differences": 0
+      },
+      {
+        "id": "custody/placement-unknown-kind",
+        "queries": 4,
+        "differences": 0
+      },
+      {
+        "id": "custody/positive-isolation-findings",
+        "queries": 44,
+        "differences": 0
+      },
+      {
+        "id": "custody/raw-flags",
+        "queries": 11,
+        "differences": 0
+      },
+      {
+        "id": "custody/relief-BarOnRepeatedProceedings",
+        "queries": 6,
+        "differences": 0
+      },
+      {
+        "id": "custody/relief-ConvictionQuashedWithoutRetrial",
+        "queries": 6,
+        "differences": 0
+      },
+      {
+        "id": "custody/relief-CourtJurisdictionOrIndependenceDefect",
+        "queries": 6,
+        "differences": 0
+      },
+      {
+        "id": "custody/relief-DefenceOfOthersEstablished",
+        "queries": 6,
+        "differences": 0
+      },
+      {
+        "id": "custody/relief-DuressEstablished",
+        "queries": 6,
+        "differences": 0
+      },
+      {
+        "id": "custody/relief-FinalAcquittal",
+        "queries": 6,
+        "differences": 0
+      },
+      {
+        "id": "custody/relief-IdentityOrOffenceNotProved",
+        "queries": 6,
+        "differences": 0
+      },
+      {
+        "id": "custody/relief-IncapacityOrAbsentRequiredElementEstablished",
+        "queries": 6,
+        "differences": 0
+      },
+      {
+        "id": "custody/relief-NecessityEstablished",
+        "queries": 6,
+        "differences": 0
+      },
+      {
+        "id": "custody/relief-SelfDefenceEstablished",
+        "queries": 6,
+        "differences": 0
+      },
+      {
+        "id": "custody/relief-SentenceSatisfied",
+        "queries": 6,
+        "differences": 0
+      },
+      {
+        "id": "custody/relief-binding-conflict",
+        "queries": 2,
+        "differences": 0
+      },
+      {
+        "id": "custody/relief-binding-future-order",
+        "queries": 2,
+        "differences": 0
+      },
+      {
+        "id": "custody/relief-binding-no-authority",
+        "queries": 2,
+        "differences": 0
+      },
+      {
+        "id": "custody/relief-binding-no-procedure",
+        "queries": 2,
+        "differences": 0
+      },
+      {
+        "id": "custody/relief-binding-wrong-case",
+        "queries": 2,
+        "differences": 0
+      },
+      {
+        "id": "custody/relief-binding-wrong-evidence",
+        "queries": 2,
+        "differences": 0
+      },
+      {
+        "id": "custody/relief-binding-wrong-incident",
+        "queries": 2,
+        "differences": 0
+      },
+      {
+        "id": "custody/relief-binding-wrong-offence",
+        "queries": 2,
+        "differences": 0
+      },
+      {
+        "id": "custody/relief-binding-wrong-subject",
+        "queries": 2,
+        "differences": 0
+      },
+      {
+        "id": "custody/relief-party-prosecutor-actor",
+        "queries": 2,
+        "differences": 0
+      },
+      {
+        "id": "custody/relief-party-prosecutor-reviewer",
+        "queries": 2,
+        "differences": 0
+      },
+      {
+        "id": "custody/relief-party-self-review-actor",
+        "queries": 2,
+        "differences": 0
+      },
+      {
+        "id": "custody/relief-party-self-review-reviewer",
+        "queries": 2,
+        "differences": 0
+      },
+      {
+        "id": "custody/relief-party-subject-actor",
+        "queries": 2,
+        "differences": 0
+      },
+      {
+        "id": "custody/relief-party-subject-reviewer",
+        "queries": 2,
+        "differences": 0
+      },
+      {
+        "id": "custody/relief-party-trial-adjudicator-actor",
+        "queries": 2,
+        "differences": 0
+      },
+      {
+        "id": "custody/relief-party-trial-adjudicator-reviewer",
+        "queries": 2,
+        "differences": 0
+      },
+      {
+        "id": "custody/relief-party-trial-reviewer-actor",
+        "queries": 2,
+        "differences": 0
+      },
+      {
+        "id": "custody/relief-party-trial-reviewer-reviewer",
+        "queries": 2,
+        "differences": 0
+      },
+      {
+        "id": "custody/relief-party-victim-actor",
+        "queries": 2,
+        "differences": 0
+      },
+      {
+        "id": "custody/relief-party-victim-reviewer",
+        "queries": 2,
+        "differences": 0
+      },
+      {
+        "id": "custody/severity-boundary",
+        "queries": 221,
+        "differences": 0
+      },
+      {
+        "id": "delivery/no-receipt-no-arrival",
+        "queries": 13,
+        "differences": 0
+      },
+      {
+        "id": "delivery/provider-cannot-witness-itself",
+        "queries": 3,
+        "differences": 0
+      },
+      {
+        "id": "delivery/received-outside-custody",
+        "queries": 10,
+        "differences": 0
+      },
+      {
+        "id": "placement/confined-notsevere-family-home",
+        "queries": 14,
+        "differences": 0
+      },
+      {
+        "id": "placement/confined-notsevere-family-nohome",
+        "queries": 15,
+        "differences": 0
+      },
+      {
+        "id": "placement/confined-notsevere-nofamily-home",
+        "queries": 14,
+        "differences": 0
+      },
+      {
+        "id": "placement/confined-notsevere-nofamily-nohome",
+        "queries": 15,
+        "differences": 0
+      },
+      {
+        "id": "placement/confined-severe-family-home",
+        "queries": 14,
+        "differences": 0
+      },
+      {
+        "id": "placement/confined-severe-family-nohome",
+        "queries": 14,
+        "differences": 0
+      },
+      {
+        "id": "placement/confined-severe-nofamily-home",
+        "queries": 14,
+        "differences": 0
+      },
+      {
+        "id": "placement/confined-severe-nofamily-nohome",
+        "queries": 14,
+        "differences": 0
+      },
+      {
+        "id": "placement/free-notsevere-family-home",
+        "queries": 14,
+        "differences": 0
+      },
+      {
+        "id": "placement/free-notsevere-family-nohome",
+        "queries": 14,
+        "differences": 0
+      },
+      {
+        "id": "placement/free-notsevere-nofamily-home",
+        "queries": 14,
+        "differences": 0
+      },
+      {
+        "id": "placement/free-notsevere-nofamily-nohome",
+        "queries": 14,
+        "differences": 0
+      },
+      {
+        "id": "placement/free-severe-family-home",
+        "queries": 14,
+        "differences": 0
+      },
+      {
+        "id": "placement/free-severe-family-nohome",
+        "queries": 14,
+        "differences": 0
+      },
+      {
+        "id": "placement/free-severe-nofamily-home",
+        "queries": 14,
+        "differences": 0
+      },
+      {
+        "id": "placement/free-severe-nofamily-nohome",
+        "queries": 14,
+        "differences": 0
+      },
+      {
+        "id": "placement/independent-shelter-control",
+        "queries": 4,
+        "differences": 0
+      },
+      {
+        "id": "placement/registered-notsevere-family-home",
+        "queries": 14,
+        "differences": 0
+      },
+      {
+        "id": "placement/registered-notsevere-family-nohome",
+        "queries": 14,
+        "differences": 0
+      },
+      {
+        "id": "placement/registered-notsevere-nofamily-home",
+        "queries": 14,
+        "differences": 0
+      },
+      {
+        "id": "placement/registered-notsevere-nofamily-nohome",
+        "queries": 14,
+        "differences": 0
+      },
+      {
+        "id": "placement/registered-severe-family-home",
+        "queries": 14,
+        "differences": 0
+      },
+      {
+        "id": "placement/registered-severe-family-nohome",
+        "queries": 14,
+        "differences": 0
+      },
+      {
+        "id": "placement/registered-severe-nofamily-home",
+        "queries": 14,
+        "differences": 0
+      },
+      {
+        "id": "placement/registered-severe-nofamily-nohome",
+        "queries": 14,
+        "differences": 0
+      },
+      {
+        "id": "placement/standing-omitted",
+        "queries": 1,
+        "differences": 0
+      },
+      {
+        "id": "stress/agency-and-contractor-blame",
+        "queries": 16,
+        "differences": 0
+      },
+      {
+        "id": "stress/captured-appointments",
+        "queries": 8,
+        "differences": 0
+      },
+      {
+        "id": "stress/core-read-expansively",
+        "queries": 15,
+        "differences": 0
+      },
+      {
+        "id": "stress/election-cannot-be-held",
+        "queries": 22,
+        "differences": 0
+      },
+      {
+        "id": "stress/manipulated-urgency",
+        "queries": 15,
+        "differences": 0
+      },
+      {
+        "id": "stress/never-recorded-person",
+        "queries": 22,
+        "differences": 0
+      }
+    ]
+  },
+  "limits": {
+    "findings": [
+      {
+        "lens": "Public administration",
+        "finding": "No rule proves a reader received anything, acted, or completed a remedy. Every duty is a leaf.",
+        "withholds": "No Book 1 claim of receipt, action or completed remedy may take an established posture; operational assurance is neither built nor available.",
+        "disposition": "route-unbuilt"
+      },
+      {
+        "lens": "Disability and accessibility",
+        "finding": "Script 15 checks artifact properties only. Human screen-reader validation was withdrawn and no accessibility-for-users claim follows.",
+        "withholds": "Gate C may claim mechanical accessibility of the artifact only; no accessibility-for-users or reader claim follows from a green check.",
+        "disposition": "public-claim-limited"
+      },
+      {
+        "lens": "Consumer and civil justice",
+        "finding": "No finding proves a hearing occurred or that compensation arrived.",
+        "withholds": "No hearing, compensation or remedy arrival may be claimed; the justice contract states the same boundary.",
+        "disposition": "route-unbuilt"
+      },
+      {
+        "lens": "Local, migration and collective governance",
+        "finding": "Foreign recognition, cooperation and readmission are named external assumptions.",
+        "withholds": "Recognition, cooperation and readmission are named external assumptions and may not be asserted as established in any Book 1 claim.",
+        "disposition": "public-claim-limited"
+      },
+      {
+        "lens": "Infrastructure and continuity",
+        "finding": "Nothing counts stock, forecasts supply or proves procurement.",
+        "withholds": "No supply, stock, procurement or delivery claim may take an established posture; quantitative models and operational assurance are unbuilt.",
+        "disposition": "route-unbuilt"
+      },
+      {
+        "lens": "Quantitative modelling",
+        "finding": "The counted-claims rule is guarded on its digit half only, and only over derived text; the spelled-out half is prose review.",
+        "withholds": "The counted-claims rule may be cited as guarded on its digit half only; the spelled-out half is prose review and must not be described as checked.",
+        "disposition": "public-claim-limited"
+      }
+    ],
+    "defects": [],
+    "chapters": [
+      {
+        "number": 1,
+        "title": "The Child With Nobody",
+        "file": "book-1/01-the-child-with-nobody.md",
+        "paragraphs": [
+          "An entry needs somebody who saw the person, and the rules discover nobody for themselves. The advocate's duty to begin assistance starts once a person is in the record, and the passerby's report can bring in someone no other record reaches only once somebody writes it. Whether anyone sees the person, writes the entry and then acts on the duties that follow is a question for the second book."
+        ]
+      },
+      {
+        "number": 2,
+        "title": "What the Record May Say",
+        "file": "book-1/02-what-the-record-may-say.md",
+        "paragraphs": [
+          "Personhood is itself admitted vocabulary. A fabricated person entry gives a name every floor right and the freedom to move, and a report that someone's sentence is finished makes a person of the name it gives; a fabricated birth or encounter does the same for any name other than a known public body's. Nothing in the rules asks whether a human being answers to the name.",
+          "A forged or withheld adulthood entry bears directly on the ballot conclusion; the age behind it, and any outside clock, go unverified here.",
+          "The rules forbid a direct verdict while accepting a reported finding that can have almost the same effect. Naming the finder and requiring independent review make responsibility for that finding explicit. The distinction between one examination and a credibility finding holds for the case above; it leaves open what an investigation costs the person investigated, and what a single finding may do elsewhere in the design.",
+          "The defect marker for a missing standing statement shows a mismatch between recorded versions and leaves its cause open. The rules lack any representation of a lawful retirement of the protected entry, so the marker reports the statement as missing even where an outside account would call the removal proper. It falls to people outside the record to find an encounter nobody reports, detect a deletion before the compared records, establish an honest witness or make the next record arrive."
+        ]
+      },
+      {
+        "number": 3,
+        "title": "What You Are Owed",
+        "file": "book-1/03-what-you-are-owed.md",
+        "paragraphs": [
+          "The presence record decides which region owes provision and which locality owes delivery, so an authorised witness who records the wrong place sends those duties to the bodies it names. The common tier's duties follow from personhood and stand either way.",
+          "Closing the record to direct entry of a delivery conclusion leaves a changed rule free to produce one. In one experiment, a rule simply says that every person has a selected floor condition. The altered design then reports that condition without a receipt, while a separately evidenced isolation finding stays in place. A delivery claim has to be checked against the evidence that supports it.",
+          "A different experiment changes what one floor debt promises. The changed rule still owes something to a person, but something other than the selected item. The test for that debt fails while the other debts continue to follow. Each item needs its own test, because the outward shape of a promise can survive a change to its content.",
+          "An offer, accessible and adequate provision, a finding reaching the office that must act, and completed restoration each need evidence of their own, beyond the debt. Whether any of them happens is a question for the second book."
+        ]
+      },
+      {
+        "number": 4,
+        "title": "Whether It Arrived",
+        "file": "book-1/04-whether-it-arrived.md",
+        "paragraphs": [
+          "The independence the rules check on this route is of identity and of duty. A witness who is a different party from the provider and from the excluded public bodies may still agree with the provider on a false receipt; the matching entries then yield a conclusion as false as they are.",
+          "A delivery that nobody witnesses leaves the record as it would be had nothing arrived, and the debt stays open either way. Outreach and a usable challenge remain necessary. The receipt route makes the delivery claim testable; the service that would make the evidence true, with its meal logistics, care provision, facilities, staffing and capacity, belongs to the second book."
+        ]
+      },
+      {
+        "number": 5,
+        "title": "When There Is Genuinely Not Enough",
+        "file": "book-1/05-when-there-is-genuinely-not-enough.md",
+        "paragraphs": [
+          "The rules check that a scarcity finding has its required evidence and rests on the permitted ground. Stock counts and supply forecasts stay outside them and arrive only as attested evidence, so the physical fact of a shortage rests on that evidence alone. In the same way the rules check that a comparison names its claims, grounds, reasons and rejected alternative, and leave to review and challenge whether it weighed them well.",
+          "Whether a manager stops administering when authority lapses, whether a unit is reassigned after a defect, and whether a shortfall is repaired or withheld supply procured belong to the second book, with the inventories, reserves, production, capacity and queues they involve.",
+          "The constitutional question continues after the finding: who must answer for the unmet claim, maintain continuity and pursue remedy?"
+        ]
+      },
+      {
+        "number": 6,
+        "title": "Who Owes, and What Follows",
+        "file": "book-1/06-who-owes-and-what-follows.md",
+        "paragraphs": [
+          "A missing legal route is a constitutional gap, and calling it an operating problem would leave it open. Each route in this chapter ends in a duty on a named office: the advocate's initiation, the alternate's review, the Court's decision, the Assembly's plan and the interim measures. Whether an advocate is funded, an appointment made, a plan adopted or a remedy performed, and the staffing, funding, capacity and facilities that make these routes available, belong to the second book.",
+          "These public responsibilities serve a life beyond claiming and receiving."
+        ]
+      },
+      {
+        "number": 7,
+        "title": "An Ordinary Week",
+        "file": "book-1/07-an-ordinary-week.md",
+        "paragraphs": [
+          "The stop record exists because two officers wrote it. A stop that nobody records leaves these rules nothing to test. Unrecorded coercion is itself one of the kinds of defect the protective rules name, and Selin is protected against it; somebody must still notice the missing record and prove the stop. Whether the wage was paid, the care was sound and the review took place belongs to the second book."
+        ]
+      },
+      {
+        "number": 8,
+        "title": "What Nobody Has to Ask Permission For",
+        "file": "book-1/08-what-nobody-has-to-ask-permission-for.md",
+        "paragraphs": [
+          "The harm ground is whatever three separate attesters record. If they agree in calling offence a harm to rights, the restriction completes as surely as an honest one would; the challenge, the defect route and final review are where that relabelling can be caught.",
+          "The duty to leave an activity free of permission, and to keep belief and membership unregistered, binds a body only through a residual record naming that activity. Without one, the ten limits every person holds still apply.",
+          "A defect finding corrects the record; a remedy for the person a restriction reached needs its own route. Whether any office publishes, hears, corrects or holds back is a question for the second book."
+        ]
+      },
+      {
+        "number": 9,
+        "title": "Work, Pay and Contribution",
+        "file": "book-1/09-work-pay-and-contribution.md",
+        "paragraphs": [
+          "These rules distinguish what a person may claim and calculate no amount of wage or supplement. Rates, budgets, examination standards, scheme funding and administration, and whether anyone is paid, belong to the second book.",
+          "Much care and other valuable work goes unentered in any record. Its absence from these entries marks the edge of what this account can support and says nothing about whose life was useful. Whether a particular workplace or community treats someone fairly is a question the formal protections leave open.",
+          "Employment and pay may change what someone receives above the floor and are never its price. The distinction to keep is between evidence of an act and authority over a person."
+        ]
+      },
+      {
+        "number": 10,
+        "title": "What Money Cannot Buy",
+        "file": "book-1/10-what-money-cannot-buy.md",
+        "paragraphs": [
+          "Valuing property and operating payments are tasks the rules leave to others. Whether funds, staff and supplies exist, a manager stops, a tax is paid or a service continues belongs to the second book.",
+          "The floor follows from personhood rather than purchasing power, and public duties bind wealth as they bind everyone."
+        ]
+      },
+      {
+        "number": 11,
+        "title": "The Same Route for Everyone",
+        "file": "book-1/11-the-same-route-for-everyone.md",
+        "paragraphs": [
+          "The forms of discrimination and the kinds of barrier are fixed lists. A harm outside every listed form and kind completes nothing on this route, however real it is, so the people it falls on depend on the lists being wide enough.",
+          "Whether the unequal resources that equal standing can require are provided, and whether an adjustment reaches the person who needs it, belongs to the second book.",
+          "Equality changes the route to a right when identical treatment leaves a barrier in place."
+        ]
+      },
+      {
+        "number": 12,
+        "title": "A Place in Which Life Remains Possible",
+        "file": "book-1/12-a-place-in-which-life-remains-possible.md",
+        "paragraphs": [
+          "Ceiling numbers rest with democratic law, causation with adjudication and scientific findings with independent review; the rules take each as a recorded premise. Measurement, inventories, monitoring and restoration capacity, and whether any order was obeyed, belong to the second book."
+        ]
+      },
+      {
+        "number": 13,
+        "title": "Creatures Without a Ballot",
+        "file": "book-1/13-creatures-without-a-ballot.md",
+        "paragraphs": [
+          "Sentience is classified by independent review, causation by adjudication and a use's purpose by independent evidence of the conduct, and the rules read each from its record. Whether a less harmful alternative is within reach of particular people is a matter of evidence about those people, animals and uses. Veterinary capacity, the transitions in food and research, and whether any order was performed belong to the second book."
+        ]
+      },
+      {
+        "number": 14,
+        "title": "Holding a Role in Somebody's Life",
+        "file": "book-1/14-holding-a-role-in-somebodys-life.md",
+        "paragraphs": [
+          "The bounded route opens on two recorded findings: that support was provided, and that the person's will and preferences remained unascertainable after it. The rules check that separately authorised people recorded both and that the route is reviewed independently. Whether the support was real, and whether anyone could have understood the person, is decided by the people who make those records.",
+          "Best interests, capacity, consent, pregnancy, parentage, age and death are likewise determined outside the rules and reach them only as entries. Whether a child was heard, a supporter arrived or care continued, and the service capacity, clinical practice and family proceedings behind those facts, belong to the second book.",
+          "Through every role the boundary is the same: assistance confers no ownership, and the absence of a private helper leaves public responsibility in place."
+        ]
+      },
+      {
+        "number": 15,
+        "title": "Arriving and Belonging",
+        "file": "book-1/15-arriving-and-belonging.md",
+        "paragraphs": [
+          "Collective identity belongs to the collective: the findings above concern records about membership and consent, and decide nobody's identity. Whether a foreign assurance is truthful, and whether another state cooperates, lie beyond these records. The institutions of reception, interpretation, registration and land administration, and whether any admission, consultation or repair takes place, belong to the second book.",
+          "The rights in this chapter need public functions capable of acting, and limits that prevent the power to act from becoming power to decide whose rights count."
+        ]
+      },
+      {
+        "number": 16,
+        "title": "Answerability and Authority",
+        "file": "book-1/16-answerability-and-authority.md",
+        "paragraphs": [
+          "A seating is a writable entry. A forged one leads the rules to conclude answerability and widens the set of exposures that support a shield. The authority to sign findings asks more: a positive clear history, reconciled across versions of the record and witnessed by separate public bodies in the version in force. Those further premises leave the seating itself unauthenticated.",
+          "The State's answerability rests on its public-body entry alone, and the debts it owes play no part in it: without that entry the answerability goes and every floor debt remains. The constitution itself records those entries, and the protection depends on their being kept.",
+          "A witnessed move to a new version of the record can report a missing seating if the earlier version separately declared it a protected entry. The report records the loss, and restoring the seat and the shield takes more than the report.",
+          "A challenge obliges the appeals body to act on a named route; a certified failure to respond moves the duty to an alternate, with continuity and individual remedy. Whether the appeals body acts and the protection is restored belongs to the second book.",
+          "The comparison leaves open whether a required entry missing from the new version was lawfully retired or unlawfully deleted, and an entry omitted before the first accepted record, or left outside the protected set, looks the same as one never made. Keeping a conclusion in the rules is a different thing from recovering a lost entry."
+        ]
+      },
+      {
+        "number": 17,
+        "title": "How Public Power Is Built",
+        "file": "book-1/17-how-public-power-is-built.md",
+        "paragraphs": [
+          "A result record holds an attested roster, and a roster that omits eligible people looks the same in the record as a complete one. The separate completeness assurance is what can tell them apart, which is why it must come from a writer independent of the administration. The rules count the witnesses entered and add the weights given; authenticating the certificates, choosing between conflicting submissions and keeping the changing electoral roll are the work of the offices that write them.",
+          "The records of appointment control let control be stated and challenged; whether capture has in fact been detected or prevented is a question they leave open. Dividing functions likewise creates routes for challenge, while the independence of their holders in practice still has to be shown.",
+          "A complete power record gives the specified legal authority. Seats, selector allocations and calendars must then be implemented within the constitutional constraints. Whether the institutions are staffed and funded, the Assembly convenes and elections are held belongs to the second book.",
+          "The structure gives each public act a source, limits, an end and a route to challenge."
+        ]
+      },
+      {
+        "number": 19,
+        "title": "What May Be Kept About You",
+        "file": "book-1/19-what-may-be-kept-about-you.md",
+        "paragraphs": [
+          "The rules read no computed value, so what an automated tool actually does lies beyond them. The explanation field records that an accessible explanation was given; whether it describes the tool's reasoning rests on the attesters who recorded it. A named human reviewer must decide, and a reviewer who adopts every recommendation as it comes still satisfies that requirement on the record; a defect finding that the decision was the machine's alone is where that can be caught.",
+          "Deletion is shown by a record of what was done and a verification of it. The rule against rebuilding a file from copies binds the holder, and a copy kept where no record names it stays out of the rules' sight.",
+          "The statistical rules use the statistics and findings they are given. Counting a population, calculating a disparity, authenticating an identity and observing a deadline fall outside them.",
+          "Whether files are kept securely, data deleted, notices sent, corrections published and requests answered belongs to the second book.",
+          "The permission to keep a record stays bounded by its purpose even when another use would be convenient."
+        ]
+      },
+      {
+        "number": 20,
+        "title": "A Crisis Does Not Suspend the Republic",
+        "file": "book-1/20-a-crisis-does-not-suspend-the-republic.md",
+        "paragraphs": [
+          "Whether a threat is real, whether a measure is necessary and whether an attack is attributable are judgments the rules take from recorded findings; they detect and weigh none of them. Emergency services and a defence force need capability, training, procurement, stockpiles, incident command, restoration and treaty administration. Operating them, and whether any duty in these cases is performed, belongs to the second book."
+        ]
+      },
+      {
+        "number": 21,
+        "title": "A Way to Be Heard",
+        "file": "book-1/21-a-way-to-be-heard.md",
+        "paragraphs": [
+          "A filing reaches the rules only through a record of it: the registry's entry, a copy the filer kept or an independent receipt. A filing none of them records leaves its suspension without evidence. Silence alone moves nothing, so until someone certifies the failure to answer, the duty stays with the office that is silent. A participant record can call a consent to a restorative meeting free when it was pressed; the record's independent reviewer and the participant's right to withdraw are where that can be caught. Whether a hearing is held, assistance reaches the person or a remedy is performed belongs to the second book.",
+          "The constitutional route must still specify an effective remedy, the authority to provide it and a response when the responsible institution fails."
+        ]
+      },
+      {
+        "number": 23,
+        "title": "The Shield",
+        "file": "book-1/23-the-shield.md",
+        "paragraphs": [
+          "Someone who controls the appointments offices' findings can still lie about a reviewer's independence, and the case finding then opens confinement on a false premise. Protection for a disclosure made before the charge likewise depends on the two temporal witnesses dating it honestly: if both record a false date, the disclosure loses its reach into that case. Whether an independent tribunal is staffed, whether reviewers act promptly and whether the injured person's remedy is performed belong to the second book.",
+          "The shield separates protection from approval of the claimant's conduct."
+        ]
+      },
+      {
+        "number": 24,
+        "title": "Findings About People",
+        "file": "book-1/24-findings-about-people.md",
+        "paragraphs": [
+          "The formal constitution tests how the version in force, witnessed history and case evidence relate. It does not authenticate an election or establish that nominally different writers are independent in practice. A fact deleted before the first attested record leaves no predecessor for the comparison between versions, so a restriction lost that early goes unreported.",
+          "The federal republic's public powers require separate records. Each needs its own source and version, lawful holder, jurisdiction, scope, time record and review. A seating by the electorate or the convocation in this chapter is a route to the authority to sign findings, a different thing from a federal office or current mandate.",
+          "Whether the appeals body holds the reviews it owes, and whether any office obeys a restoration, belong to the second book."
+        ]
+      },
+      {
+        "number": 25,
+        "title": "A Prisoner Is a Person",
+        "file": "book-1/25-a-prisoner-is-a-person.md",
+        "paragraphs": [
+          "The refusal judges the shape of a rule's dependencies and leaves its purpose unexamined. A rule reaching the same end through a relation outside the floor, or under a new name, needs a test of its own, and loading gives a rule no lawful authority. Because the protection is a property of how the rules are written and how the engine treats them, a change to either calls for testing it again. A release entry needs nobody to have found anything: whoever writes one gives the name on it standing, which brings free movement only where no custody case or restraint holds that person."
+        ]
+      },
+      {
+        "number": 28,
+        "title": "When the System Notices It Broke",
+        "file": "book-1/28-when-the-system-notices-it-broke.md",
+        "paragraphs": [
+          "The alarms read reports and findings, so an omitted report or an incorrect rule leaves a marker silent or wrong. The constitution gives particular findings a path through review, action, non-response, continuity, individual remedy, common-cause correction and a check for recurrence, and each step ends in a duty on a named office. Whether anyone receives a filing, convenes an institution, restores a person or stops a wrong belongs to the second book.",
+          "This is the last chapter whose account is drawn from the rules, where rules and recorded facts make claims that can be run, challenged and compared. The defects that comparison exposes remain defects until they are repaired or adequately defended."
+        ]
+      }
+    ]
+  }
+}

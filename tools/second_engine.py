@@ -9,30 +9,15 @@ everything asserted so far. The tool reports every query whose clingo answer
 differs from the verdict the pin file expects, which the Nibli verifier has
 already confirmed.
 
-What the translation does:
-  - constants are quoted strings and `$variables` become clingo variables;
-  - `event { eats() }` becomes the constant "event:eats";
-  - `~atom` is negation as failure, `~($a = $b)` is `!=`, and `($a = $b)`
-    is `=`;
-  - a disjunction inside a rule body becomes one rule per disjunct;
-  - `entitled(every person, event { P() })` becomes a rule from `person`;
-  - `admits` and `derived_only` declarations are dropped, because clingo
-    has no input refusal; refused statements are therefore never asserted.
+What the translation keeps, and what the comparison leaves out, are the
+KEEPS and LEAVES_OUT lists below; the report prints both.
 
-What the comparison covers and what it does not:
-  - clingo computes the stable model of the translated program, which for a
-    stratified program is the same perfect model Nibli computes; a case
-    whose program had several models or none would be reported as such;
-  - each case is grounded once; every fact and accepted rule its fixtures
-    and pins assert is guarded by an external atom of its own, switched on
-    at its position, so each query sees exactly the statements asserted
-    before it (declaring a fact itself external would be wrong, because
-    clingo ignores that declaration for an atom a rule can also derive);
-  - `:refuse`, `:accept-scoped` and `:require` statements are skipped, so
-    refusals, scoped loadability and shell checks are not compared;
-  - `:accept` statements are asserted, as Nibli keeps them;
-  - contradiction scans are not compared;
-  - only live-source cases run; counterfactual cases edit the source.
+Each case is grounded once. Every fact and accepted rule its fixtures and
+pins assert is guarded by an external atom of its own, switched on at its
+position, so each query sees exactly the statements asserted before it
+(declaring a fact itself external would be wrong, because clingo ignores
+that declaration for an atom a rule can also derive). A case whose program
+had several stable models or none would be reported as such.
 
 The translation is made inside this project from the same source, so this is
 a cross-check of the engine's evaluation, not an independent reproduction of
@@ -53,6 +38,30 @@ import time
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
+
+# What the translation keeps: each Nibli form and the clingo form it becomes.
+KEEPS = [
+    "Constants become quoted strings, and `$variables` become clingo variables.",
+    "`event { eats() }` becomes the constant \"event:eats\".",
+    "`~atom` is negation as failure, `~($a = $b)` is `!=`, and `($a = $b)` is `=`.",
+    "A disjunction inside a rule body becomes one rule per disjunct.",
+    "`entitled(every person, event { P() })` becomes a rule from `person`.",
+    "`:accept` statements are asserted, as Nibli keeps them.",
+    "Each query is answered against the stable model of everything asserted "
+    "before it, which for a stratified program is the perfect model Nibli "
+    "computes.",
+]
+
+# What the comparison leaves out, and why.
+LEAVES_OUT = [
+    "`admits` and `derived_only` declarations are dropped, because clingo "
+    "refuses no input, so a statement Nibli refuses is never asserted.",
+    "`:refuse`, `:accept-scoped` and `:require` statements are skipped, so "
+    "refusals, scoped loadability and shell checks are not compared.",
+    "Contradiction scans are not compared.",
+    "Only cases on the live source run; a counterfactual case edits the "
+    "source.",
+]
 SOURCE = ROOT / "book-1" / "source" / "constitution.nibli"
 SUITES = ROOT / "tests" / "pins" / "suites.json"
 RESULTS = ROOT / "book-1" / "source" / "measurements" / "second-engine-results.json"
@@ -294,10 +303,21 @@ def command_run(args):
                            encoding="utf-8")
 
 
+def unique_keys(pairs):
+    """Refuse a JSON object whose keys repeat: a plain load keeps the last
+    and drops the rest, and a renamed case can collide with another."""
+    keys = [key for key, _ in pairs]
+    repeated = sorted({key for key in keys if keys.count(key) > 1})
+    if repeated:
+        raise SystemExit(f"results repeat case keys: {repeated}")
+    return dict(pairs)
+
+
 def command_report(args):
     cases, clingo_version, statements = {}, None, None
     for path in args.results:
-        document = json.loads(Path(path).read_text(encoding="utf-8"))
+        document = json.loads(Path(path).read_text(encoding="utf-8"),
+                              object_pairs_hook=unique_keys)
         cases.update(document["cases"])
         clingo_version = document.get("clingo", clingo_version)
         statements = document.get("translated_statements", statements)
@@ -331,6 +351,11 @@ def command_report(args):
         "shell checks or contradiction scans.",
         "",
     ]
+    lines += ["## What the translation keeps", ""]
+    lines += [f"- {item}" for item in KEEPS]
+    lines += ["", "## What the comparison leaves out", ""]
+    lines += [f"- {item}" for item in LEAVES_OUT]
+    lines.append("")
     if differences:
         lines += ["## Differences", "", "| Case | Query | Pins expect | clingo |", "|---|---|---|---|"]
         for case_id, d in differences:

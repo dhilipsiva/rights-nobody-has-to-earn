@@ -49,6 +49,73 @@ fn companion_markdown(route: &str) -> String {
                 doc.explainer.fork, doc.explainer.joint
             );
         }
+        "second-engine/" => {
+            let e = &assurance().engine;
+            let agreement = if e.differences == 0 {
+                "Every answer agrees with the verdict its pin records.".to_owned()
+            } else {
+                format!(
+                    "{} answers differ from the verdict their pins record.",
+                    e.differences
+                )
+            };
+            text += &format!(
+                "The constitution's rules were translated, statement by statement, into the input language of clingo {}, a separate answer set solver: {} clingo statements. The cases below were replayed through it, {} cases and {} queries, each answer compared with the verdict its pin records. {agreement}\n\n## Where it stops\n\n> {}\n\nFrom the method's section \u{201c}{}\u{201d}.\n\n## What the translation keeps\n\n",
+                e.clingo,
+                thousands(e.statements),
+                e.cases.len(),
+                thousands(e.queries),
+                e.limit,
+                e.method_section
+            );
+            for item in &e.keeps {
+                text += &format!("- {item}\n");
+            }
+            text += "\n## What the comparison leaves out\n\n";
+            for item in &e.leaves_out {
+                text += &format!("- {item}\n");
+            }
+            text += "\n## The cases replayed\n\n| Case | Queries | Answers that differ |\n|---|---|---|\n";
+            for case in &e.cases {
+                text += &format!(
+                    "| `{}` | {} | {} |\n",
+                    case.id, case.queries, case.differences
+                );
+            }
+            text += &format!(
+                "\n[The report]({REPOSITORY}/blob/main/book-1/source/measurements/second-engine-report.md) · [The translator]({REPOSITORY}/blob/main/tools/second_engine.py)\n"
+            );
+        }
+        "limits/" => {
+            let l = &assurance().limits;
+            text += "What the design, and the checks made on it, leave open, quoted from the records that hold each.\n\n## Open findings of the adversarial audit\n\n";
+            for f in &l.findings {
+                text += &format!(
+                    "1. **{}.** {} What it withholds: {} ({})\n",
+                    f.lens, f.finding, f.withholds, f.disposition
+                );
+            }
+            text += &format!(
+                "\n[The audit]({REPOSITORY}/blob/main/book-1/source/adversarial-audit.md)\n\n## Declared defects\n\n"
+            );
+            if l.defects.is_empty() {
+                text +=
+                    "No declared defect is active: no test expects a known defect to reproduce.\n";
+            }
+            for d in &l.defects {
+                text += &format!("- `{}:{}` · {}\n", d.file, d.line, d.reason);
+            }
+            text += &format!(
+                "\nRepaired defects are recorded in the [resolution receipts]({REPOSITORY}/blob/main/book-1/source/resolution-receipts.md), the [decision records]({REPOSITORY}/tree/main/book-1/appendix/decisions) and the repository's history.\n\n## What each chapter cannot settle\n\n"
+            );
+            for c in &l.chapters {
+                text += &format!("### Chapter {}: {}\n\n", c.number, c.title);
+                for paragraph in &c.paragraphs {
+                    text += &format!("> {paragraph}\n>\n");
+                }
+                text += "\n";
+            }
+        }
         "search/" => {
             text += "Search runs locally in the interactive reader. Reading and browser Find remain available without JavaScript.\n";
         }
@@ -170,7 +237,9 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
             "search/" => "Search the complete text of Book 1 locally on your device.",
             "constitution/" => "The constitution Book 1 describes, as numbered plain-language articles traced to the rules and tests that implement them.",
             "cases/" => "Each chapter's cases, run on your own device against the pinned constitution, and where the material the chapters no longer carry now lives.",
-            "start/" => "What the companion is, what a fork and a joint are, and a guided first run of Nell's fork checked against Chapter 1's tests.", _ => "This page does not exist in Book 1.",
+            "start/" => "What the companion is, what a fork and a joint are, and a guided first run of Nell's fork checked against Chapter 1's tests.",
+            "second-engine/" => "The constitution's rules replayed in a second engine, clingo: what the translation keeps, what the comparison leaves out, every case and where the cross-check stops.",
+            "limits/" => "What the design and its checks leave open: the adversarial audit's open findings, the declared defects and each chapter's account of what it cannot settle.", _ => "This page does not exist in Book 1.",
         }.into());
         let is_404 = route.ends_with("/404/");
         let noindex = route.ends_with("/search/") || is_404;

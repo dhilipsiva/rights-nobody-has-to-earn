@@ -14,12 +14,29 @@ project from the same source. It is not an independent reproduction
 of the design, and it does not compare refusals, scoped acceptances,
 shell checks or contradiction scans.
 
+## What the translation keeps
+
+- Constants become quoted strings, and `$variables` become clingo variables.
+- `event { eats() }` becomes the constant "event:eats".
+- `~atom` is negation as failure, `~($a = $b)` is `!=`, and `($a = $b)` is `=`.
+- A disjunction inside a rule body becomes one rule per disjunct.
+- `entitled(every person, event { P() })` becomes a rule from `person`.
+- `:accept` statements are asserted, as Nibli keeps them.
+- Each query is answered against the stable model of everything asserted before it, which for a stratified program is the perfect model Nibli computes.
+
+## What the comparison leaves out
+
+- `admits` and `derived_only` declarations are dropped, because clingo refuses no input, so a statement Nibli refuses is never asserted.
+- `:refuse`, `:accept-scoped` and `:require` statements are skipped, so refusals, scoped loadability and shell checks are not compared.
+- Contradiction scans are not compared.
+- Only cases on the live source run; a counterfactual case edits the source.
+
 ## Cases
 
 | Case | Queries | Solves | Differences |
 |---|---|---|---|
 | `book-1/01-the-child-with-nobody` | 60 | 60 | 0 |
-| `book-1/01-the-child-with-nobody` | 29 | 29 | 0 |
+| `book-1/01-the-child-with-nobody (pins merged from 02-who-counts)` | 29 | 29 | 0 |
 | `book-1/03-what-you-are-owed` | 83 | 83 | 0 |
 | `book-1/04-whether-it-arrived` | 20 | 20 | 0 |
 | `book-1/23-the-shield` | 59 | 59 | 0 |
