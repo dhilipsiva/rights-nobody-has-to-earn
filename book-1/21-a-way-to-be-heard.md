@@ -82,8 +82,8 @@ that request, and that office owes it. The request itself decides nothing.
 
 The review duty covers error, evidence, rights and interim protection that
 works. When an independent certification shows that the office failed to
-answer, the duty moves to a separate alternate. Silence therefore grants no
-approval and leaves the request standing; what moves is a duty.
+answer, the duty moves to a separate alternate, as it does for every duty in
+*Who Owes, and What Follows* (Chapter 6), and the request stands.
 
 Relief is a separate conclusion, and only a properly made order reaches it.
 Suppose a rule obliged the appeals body to hear every confined person's case.

@@ -135,6 +135,43 @@ reinstate the retired tooling or workflow.
 Grouped by kind. Dates in each heading are the ratification dates; a ruling
 that was later implemented or narrowed carries that supersession inline.
 
+### Item 76 — each piece of machinery stated once, 2026-09-29
+
+The machinery the review found restated across chapters now has one canonical
+statement. Chapter 17's account of what a public result must contain is cited
+by Chapters 18 and 22, and the amendment route keeps only its own thresholds.
+Chapter 6's statement that silence decides nothing and that a certified
+failure to respond moves a duty to an alternate is cited by Chapters 19, 21
+and 22, which keep their own conditions; the tracker named Chapter 17, but
+Chapter 6 already held the full statement and precedes every chapter that
+repeated it. Chapter 23 opens Part IV with what makes a finding, order or
+review properly made, matching the glossary, and Chapter 26 cites it. The
+placement alarm is stated in full in Chapter 28, with its reviewed sentence
+moved verbatim and the full-society ledger's reference following it, and
+Chapters 26 and 27 point there in one sentence. What the engine loads or
+refuses leaves Chapters 9, 25 and 27 for the method's sections; each keeps
+the protection itself, and `ui/chapter-cases.json` lists the four passages
+with the method sections and pins that carry them. Chapter 25's measured
+joint, which removes the rule making a prisoner a person, stays: it is the
+chapter's argument, stated as a consequence rather than as engine behaviour.
+
+Two checks caught errors on the way. Cutting a repeated clause in Chapter 19
+removed the only stated limit of the official-statistics family, which
+`every_family_states_a_boundary_where_it_is_rendered` flagged, and the clause
+is restored. Rewrapping split the moved reviewed sentence across two lines,
+which the reference test flagged, and it now sits on one. The coverage ledger
+holds 275 passages; the report and index are regenerated. Banned and harness
+terms stay at zero in derived text. The reading-order decision records the
+item, and the exact prose is `session-drafted, author-approved under
+delegated approval (2026-09-13)`.
+
+No rule, pin or suite changes, so item 73's complete run on the same formal
+inputs stands. The ten affected chapters' pins pass focused (93, 31, 20, 32,
+35, 120, 39, 73, 47 and 37); the 28 coverage, reference, claim-discipline and
+articles development tests, the companion input tests, the nineteen
+book-builder tests, the prose check and the works-cited and index `--check`
+modes pass.
+
 ### Item 75 — the two weakest reader chapters, 2026-09-29
 
 Chapter 7 now introduces Selin as a person before the two entries about Selin

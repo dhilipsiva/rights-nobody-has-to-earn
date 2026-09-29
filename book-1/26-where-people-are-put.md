@@ -41,12 +41,12 @@ suffering, and it counts only as evidence: the cruelty must still be found.
 Intentional injury alone is insufficient, as is the number of people injured.
 
 Each finding identifies the subject, case, incident, person harmed, dimension,
-evidence and procedure. The adjudicator and independent merits reviewer must
-be authorised for that finding and agree on those fields. Their case must
-itself satisfy the criminal proof, defence and procedure requirements. A raw
-injury, attack or cruelty entry is an allegation; severity needs the signed
-finding. The rules check that the finding is properly made; the harm itself is
-judged in the adjudication.
+evidence and procedure. The adjudicator and independent merits reviewer must be
+authorised for that finding and agree on those fields. Their case must itself
+satisfy the criminal proof, defence and procedure requirements. A raw injury,
+attack or cruelty entry is an allegation; severity needs the signed finding.
+The rules check that the finding is properly made, in the sense *The Shield*
+(Chapter 23) sets out; the harm itself is judged in the adjudication.
 
 Hano's findings record intentional injury, which falls below both lines, so
 severity stays absent from his case. Ruk's case has a separate finding of
@@ -78,32 +78,6 @@ own finding. A secure place needs more than severity: the placement must
 separately show why less restrictive options are insufficient. The person's
 floor and the review period of the custody authorisation stay as they were.
 
-## What the placement alarm sees
-
-A report of placement is different from an authorised destination. Ruk is
-eligible for consideration of home confinement, but the placement record in
-force authorises a particular secure facility. Suppose a report says the State
-put Ruk in home confinement: it conflicts with that record and triggers review.
-So would a report that Hano was put in a secure facility, while a report
-matching his authorised home leaves the alarm quiet. A report naming an
-unknown kind of place triggers review as well. An exact-place report
-identifies the case and the place, and only the permission for that person,
-case and place can answer it.
-
-Competing reported destinations also trigger review. Competing fully reviewed
-placement records do more: they block custody authority until a lawful placement
-is settled, and choosing a favourable record name settles nothing.
-The marker identifies the affected person and creates the review body's
-obligation.
-
-The alarm reads reports, so it stays silent about a placement nobody reports.
-Authority attaches only to a place backed by positive lawful placement
-evidence, and confinement follows only after that evidence. Permission, a
-report of use, a finding of fault and a performed remedy answer different
-questions. The alarm watches where the design puts someone it confines.
-Whether every person owed housing received it is a separate question, answered
-by recipient-side evidence, even though each concerns a roof.
-
 ## A fixed route still depends on evidence
 
 Cooperation, employment, wealth and recognition earn nothing in placement.
@@ -119,7 +93,9 @@ required finding of individual necessity must rest on the case, whatever the
 person's wealth or poverty. Separate cases remove required placement evidence,
 introduce competing places, report inappropriate destinations and attempt
 direct assertions of legal conclusions. A missing result and an unauthorised
-extra result are both tested.
+extra result are both tested. A report that someone was put somewhere other
+than the authorised place raises the placement alarm that *When the System
+Notices It Broke* (Chapter 28) follows.
 
 ## Eligible, with no home option recorded
 

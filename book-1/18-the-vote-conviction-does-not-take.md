@@ -113,10 +113,10 @@ Each guarantee needs safeguards suited to how it can be changed.
 
 ## A right still needs a ballot
 
-A public result must bind the exact decision, configuration, roster, separate
-completeness assurance, unique submissions, legal rule, result, challenge and
-correction route, independent certification and current source. That is what
-allows a certified result to support public authority.
+A ballot supports public authority only through a certified result complete in
+the sense *How Public Power Is Built* (Chapter 17) sets out, from its exact
+roster and independent completeness assurance to its challenge route and
+current source.
 
 The rules check the recorded premises and the bounded authority they support.
 Authenticating the roster, finding a resident left off it, running a changing

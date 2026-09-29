@@ -55,7 +55,7 @@ carried in single figures, which is where the rebalance has most to do.
 | receives | 65 |
 | challenges | 30 |
 | governs | 36 |
-| is acted upon | 74 |
+| is acted upon | 73 |
 
 ## Chapter patterns
 
@@ -68,7 +68,7 @@ what matters is the book's shape, not the chapter's.
 | constructive | 100 |
 | private-civic | 23 |
 | democratic | 32 |
-| coercive | 43 |
+| coercive | 42 |
 | records | 32 |
 | argument | 46 |
 
@@ -87,7 +87,7 @@ checked here.
 | Ecology, future generations and commons | 4 | 4 | 5 |
 | Economy, property, work and commons | 15 | 15 | 11 |
 | Emergency and resilience | 2 | 3 | 4 |
-| Justice and coercion | 13 | 18 | 8 |
+| Justice and coercion | 13 | 17 | 7 |
 | Knowledge, communication and culture | 4 | 6 | 2 |
 | Life course, family, care and reproduction | 13 | 5 | 3 |
 | Locality, mobility and external relations | 2 | 2 | 1 |
@@ -96,7 +96,7 @@ checked here.
 | Personhood and equality | 19 | 17 | 10 |
 | Public institutions | 7 | 15 | 8 |
 | Public safety, policing and use of force | 6 | 4 | 6 |
-| Records and accountability | 13 | 21 | 13 |
+| Records and accountability | 13 | 21 | 14 |
 
 ## Every passage
 
@@ -336,7 +336,6 @@ checked here.
 | 25-06 | 25-a-prisoner-is-a-person.md | Argument: Liberty is what a sentence takes | Personhood and equality | exempt | argument | a prisoner who keeps standing and the floor, against suspended civil standing | chooses | contested | no | argument | `exempt-element` |
 | 26-00 | 26-where-people-are-put.md | (preamble) | Justice and coercion | CUSTODY-EXECUTION | ordinary | qualified merits, individually justified placement and a named available place | is acted upon | works | no | coercive | `book-1/26-where-people-are-put.pins.nibli` |
 | 26-01 | 26-where-people-are-put.md | What makes an offence severe | Justice and coercion | CUSTODY-EXECUTION | protective | qualified grave injury or aggravated cruelty; gravity limits secure eligibility without selecting the place | is acted upon | contested | no | coercive | `book-1/26-where-people-are-put.pins.nibli` |
-| 26-02 | 26-where-people-are-put.md | What the placement alarm sees | Justice and coercion | PLACEMENT | continuity | reports in every destination category, conflicting candidates and review | is acted upon | continuity-remedy | yes | coercive | `book-1/26-where-people-are-put.pins.nibli` |
 | 26-03 | 26-where-people-are-put.md | A fixed route still depends on evidence | Justice and coercion | PLACEMENT | ordinary | family neutrality, forbidden wealth and poverty grounds, and missing or conflicting placement evidence | is acted upon | works | no | coercive | `book-1/26-where-people-are-put.pins.nibli` |
 | 26-04 | 26-where-people-are-put.md | Eligible, with no home option recorded | Justice and coercion | CUSTODY-EXECUTION | protective | positive supported-residence evidence or no custody authority | is acted upon | continuity-remedy | yes | coercive | `book-1/26-where-people-are-put.pins.nibli` |
 | 26-05 | 26-where-people-are-put.md | Housing with independent evidence | Material floor | PLACEMENT | continuity | a named placement creates a duty; recipient evidence establishes shelter | is acted upon | continuity-remedy | yes | constructive | `tests/pins/placement/independent-shelter-control/expect.pins.nibli` |
@@ -351,7 +350,7 @@ checked here.
 | 27-02 | 27-the-one-thing-taken.md | The actor who uses force must answer | Public safety, policing and use of force | PUBLIC-SAFETY | protective | separated protective functions | governs | works | no | coercive | `book-1/27-the-one-thing-taken.pins.nibli` |
 | 27-09 | 27-the-one-thing-taken.md | Argument: A power that takes movement and then expires | Justice and coercion | exempt | argument | a bounded power to confine that lapses without current authority, against abolition | chooses, is acted upon | contested | no | argument | `exempt-element` |
 | 28-00 | 28-when-the-system-notices-it-broke.md | (preamble) | Records and accountability | ARTICLES | protective | a conflicting placement report, review duty and the route onward | is acted upon | works | yes | records | `book-1/28-when-the-system-notices-it-broke.pins.nibli` |
-| 28-02 | 28-when-the-system-notices-it-broke.md | A placement report against a rule | Records and accountability | PLACEMENT | continuity | a placement report tested against the authorised placement, separately from eligibility | is acted upon | continuity-remedy | no | records | `book-1/26-where-people-are-put.pins.nibli` |
+| 28-02 | 28-when-the-system-notices-it-broke.md | A placement report against a rule | Records and accountability | PLACEMENT | continuity | reports checked against authorised places: a conflicting, unknown or unpermitted place, and competing records that block custody | is acted upon | continuity-remedy | yes | records | `book-1/26-where-people-are-put.pins.nibli` |
 | 28-01 | 28-when-the-system-notices-it-broke.md | Evidence of denied contact | Records and accountability | ARTICLES | protective | a positive condition finding tied to a holding, place and period | is acted upon | works | no | records | `tests/pins/custody/condition-findings/expect.pins.nibli` |
 | 28-03 | 28-when-the-system-notices-it-broke.md | From a marker to a duty | Records and accountability | OBLIGATIONS | continuity | routine custody review and complaints alongside positive breach findings | requests | continuity-remedy | no | records | `book-1/28-when-the-system-notices-it-broke.pins.nibli` |
 | 28-05 | 28-when-the-system-notices-it-broke.md | When the responsible office fails | Records and accountability | OBLIGATIONS | continuity | the office that should act does not act | is acted upon | fails | no | records | `book-1/28-when-the-system-notices-it-broke.pins.nibli` |

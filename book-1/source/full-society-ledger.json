@@ -112009,7 +112009,7 @@
       "envelope_id": "FS-ENV-00",
       "owner_ref": "CLAUDE.md::Claim-scoped resolution receipts replace confession-as-ending",
       "eligible_gate": "gate-a",
-      "reader_mapping_ref": "book-1/26-where-people-are-put.md::A report of placement is different from an authorised destination."
+      "reader_mapping_ref": "book-1/28-when-the-system-notices-it-broke.md::A report of placement is different from an authorised destination."
     },
     {
       "id": "FS-RCP-03",

@@ -654,7 +654,7 @@ optional method. A common term lists the chapters that use it most.
 - Sen, Amartya: opening, 5, 29
 - severity: 2, 13, 22, 25, 26, 27, 29
 - shelter: 1, 3, 4, 7, 13, 25, 26, 27
-- shield: 2, 3, 16, 23, 24, 29, method
+- shield: 2, 3, 16, 23, 24, 26, 29, method
 - Shue, Henry: opening, 3, 29
 - signing restriction: 23, 24
 - single-actor route: 13

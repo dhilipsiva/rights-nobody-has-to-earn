@@ -106,14 +106,8 @@ a person reported held respond to that, and release itself is a further act.
 
 Severity leaves the review period unchanged. Recognition, employment,
 compliance, wealth and character are outside the terms on which custody
-continues or ends. This chapter's tests try both a rule producing a raw release
-entry from recognition and a rule producing an operative bar against the
-sentence. The raw-entry rule loads and the operative bar is refused; the
-optional method explains the refusal. A raw release entry by itself gives no
-release authority. The enacted rules leave recognition unproduced and unread.
-That protection rests on its own check: the engine's acceptance of a proposed
-rule shows only that the rule loads, and its constitutional legitimacy is a
-separate question.
+continues or ends: the enacted rules leave recognition unproduced and unread,
+and a raw release entry by itself gives no release authority.
 
 Suppose a duration word were admitted and a term recorded for a person still
 held. Custody continues and the rules conclude no release. A term label by
@@ -131,8 +125,9 @@ operator must preserve.
 
 A place name supplies no evidence of performed care. The placement rules
 require an available named place and independently reviewed lawful conditions
-before authority can follow. A shelter receipt or evidence of an actual
-confidential visit answers a further question.
+before authority can follow, and a report of any other place raises the
+placement alarm of *When the System Notices It Broke* (Chapter 28). A shelter
+receipt or evidence of an actual confidential visit answers a further question.
 
 ## What leaving changes
 

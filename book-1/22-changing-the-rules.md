@@ -13,13 +13,13 @@ therefore distinguishes political authority, certification of an exact
 candidate, publication and the version in force.
 
 The political route requires a current record for the exact proposal: a
-full-membership Assembly result, a national referendum result, any required
-Regions Council and affected-region consent, separate completeness assurance,
-constitutional review, challenge, correction and a current certificate.
-The thresholds are two-thirds of the full Assembly membership and more
-affirmative than negative valid referendum votes, with no turnout quorum; a tie
-fails. Additional regional approvals apply where the federal settlement is
-directly affected.
+full-membership Assembly result, a national referendum result and any required
+Regions Council and affected-region consent, each a complete public result as
+*How Public Power Is Built* (Chapter 17) describes, with constitutional review
+and a current certificate. The thresholds are two-thirds of the full Assembly
+membership and more affirmative than negative valid referendum votes, with no
+turnout quorum; a tie fails. Additional regional approvals apply where the
+federal settlement is directly affected.
 
 Those are legal requirements over recorded results. Counting the electorate,
 authenticating each submission and finding any voter left out belong to the
@@ -56,10 +56,9 @@ reviewed source defect withholds certification and publication, takes away the
 status of version in force even from a text that already has it, and obliges
 the operator to preserve the amendment history and correct the affected use;
 every person's floor remains owed throughout. Only a positively certified
-failure to respond moves the review duty to an independent alternate, and
-silence counts as neither consent nor a finding against the requester.
-Correcting a source leaves each individual judgment and remedy to its own
-process.
+failure to respond moves the review duty to an independent alternate, as *Who
+Owes, and What Follows* (Chapter 6) sets out. Correcting a source leaves each
+individual judgment and remedy to its own process.
 
 Whether publication occurred and an institution adopted the replacement belongs
 to the second book. The method's section [*Comparing and selecting an

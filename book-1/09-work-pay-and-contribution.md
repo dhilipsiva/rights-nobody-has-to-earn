@@ -130,15 +130,12 @@ floor, the vote and liberty follow without it, and a general judgment of
 someone's contribution is no substitute for the record. A person without any
 contribution history keeps the floor in full.
 
-The engine loads a rule confining someone for lacking a contribution
-record; acceptance shows only that a rule can run. A separate development test
-of the constitution's written rules holds contribution records to their
-purpose. They may support a supplement and nothing else, their absence may
-justify nothing, and only a recorded entry creates one. The method's section
-[*Checking how a record is used*](method.md#checking-how-a-record-is-used)
-explains how that test differs from running the rules. The restriction is part
-of this design, and a harmful alternative can still be written; the test exists
-to find it.
+Contribution records are held to that purpose. They may support a supplement
+and nothing else, their absence may justify nothing, and only a recorded entry
+creates one. The method's section [*Checking how a record is
+used*](method.md#checking-how-a-record-is-used) shows how the written rules are
+checked for that, and why a rule's being writable settles nothing about its
+lawfulness.
 
 ## When the money runs out
 

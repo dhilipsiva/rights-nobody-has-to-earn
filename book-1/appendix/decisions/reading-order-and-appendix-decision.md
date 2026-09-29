@@ -71,6 +71,22 @@ acceptance comes last as this decision's §6 required; the pen strand's
 persisting clearance and custody facts precede the other two and change none of
 their verdicts. The map is `tools/maps/2026-09-25-restructure.json`.
 
+## Each piece of machinery stated once — item 76, 2026-09-29
+
+The machinery several chapters restated now has one canonical statement, and
+the others point to it. *How Public Power Is Built* (Chapter 17) states what a
+public result must contain, and Chapters 18 and 22 cite it. *Who Owes, and What
+Follows* (Chapter 6) states why silence decides nothing and how a certified
+failure to respond moves a duty to an alternate; the tracker named Chapter 17,
+but Chapter 6 already held the full statement and precedes every chapter that
+repeated it, so Chapters 19, 21 and 22 point there and keep only their own
+conditions. *The Shield* (Chapter 23) opens Part IV with what makes a finding,
+order or review properly made, matching the glossary, and Chapter 26 cites it.
+The placement alarm is stated in full in *When the System Notices It Broke*
+(Chapter 28), with one-sentence pointers in Chapters 26 and 27. Descriptions
+of what the engine loads or refuses leave Chapters 9, 25 and 27 for the
+method's sections; each chapter keeps the protection itself.
+
 ## The catalogue chapters, case-first — item 73, 2026-09-29
 
 The chapters the 2026-09-25 review named as catalogues now state each list

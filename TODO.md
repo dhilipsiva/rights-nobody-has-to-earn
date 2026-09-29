@@ -224,7 +224,7 @@ unimplemented until the items named here land.
 
 ## Ordered revision backlog toward 9.5+
 
-Status 2026-09-29: items 01–65 and 67–75 are complete and recorded in
+Status 2026-09-29: items 01–65 and 67–76 are complete and recorded in
 `CLAUDE.md`; optional item 66 is closed without outside validation. The
 [2026-09-25 revision review](reviews/2026-09-25-revision-review.md) rates the
 revised manuscript 8/10 and publisher readiness 7.5/10: claim discipline holds
@@ -233,7 +233,7 @@ chapters (6, 13, 17, 27), cost-paragraph/argument restatement at chapter
 endings, and length for the D1 serious non-specialist reader. A fresh
 chapter-by-chapter pass (2026-09-29) concurs at ~7.1/10 average, weakest at
 Ch. 7 and Ch. 27. No remaining item is an error the pins contradict. Items
-76–80 are readability, pacing and evidenced-limits work inside rulings D1–D9;
+77–80 are readability, pacing and evidenced-limits work inside rulings D1–D9;
 item 81 is optional; items 82–87, merged below, are companion, navigation and
 contribution work, and item 82 corrects a stale example. Chapter numbers refer
 to the [current reading sequence](book-1/contents.json).
@@ -306,21 +306,6 @@ Where each of its items went:
 | 13. Part V's historical cases | 80 |
 | 14. A book map in the companion | 83 |
 | 15. Forks and joints explained | 83 |
-
-### 76. Consolidate repeated machinery to one canonical statement
-
-Why: result-record completeness list (Chs. 17, 18, 22), request →
-certified-silence → alternate (Chs. 16, 19, 21, 22), eligibility/independence
-litany (Chs. 23–24, 26, 28), placement alarm (Chs. 26 vs 28) are restated,
-not cross-referenced.
-Do: canonical result-record and silence-alternate statements in Ch. 17;
-canonical finding-made preface for Chs. 23–24 cited by Chs. 26/28; all alarm
-mechanics in Ch. 28 with one-sentence pointers in Chs. 26–27. Move
-stratification/hostile-rule/counterfactual mechanics out of derived prose to
-method + companion (plan §10.2). Banned/harness terms stay at zero in
-derived text.
-Close when: lint `--check` passes, `harness`/`banned` zero in derived
-pieces, affected pins pass focused then complete `./verify.sh`.
 
 ### 77. Plain-English on-ramps where readers stop
 

@@ -3540,21 +3540,6 @@
       ]
     },
     {
-      "id": "26-02",
-      "chapter": "book-1/26-where-people-are-put.md",
-      "section": "What the placement alarm sees",
-      "domain": "Justice and coercion",
-      "family": "PLACEMENT",
-      "function": "continuity",
-      "setting": "reports in every destination category, conflicting candidates and review",
-      "trajectory": "continuity-remedy",
-      "basis": "book-1/26-where-people-are-put.pins.nibli",
-      "pattern": "coercive",
-      "postures": [
-        "is acted upon"
-      ]
-    },
-    {
       "id": "26-03",
       "chapter": "book-1/26-where-people-are-put.md",
       "section": "A fixed route still depends on evidence",
@@ -3772,7 +3757,7 @@
       "domain": "Records and accountability",
       "family": "PLACEMENT",
       "function": "continuity",
-      "setting": "a placement report tested against the authorised placement, separately from eligibility",
+      "setting": "reports checked against authorised places: a conflicting, unknown or unpermitted place, and competing records that block custody",
       "trajectory": "continuity-remedy",
       "basis": "book-1/26-where-people-are-put.pins.nibli",
       "pattern": "records",

@@ -40,6 +40,15 @@
       ]
     },
     {
+      "chapter": 9,
+      "title": "How a contribution record is held to its purpose",
+      "text": "The chapter states that a contribution record may support a supplement and nothing else. That the engine accepts a rule confining someone for lacking one, and how a development test of the written rules rejects any other use, is explained in the method.",
+      "links": [
+        {"label": "The method: checking how a record is used", "path": "book-1/method.md#checking-how-a-record-is-used"},
+        {"label": "Chapter 9's pins", "path": "book-1/09-work-pay-and-contribution.pins.nibli"}
+      ]
+    },
+    {
       "chapter": 10,
       "title": "The monetary authority and the tiers' economic functions",
       "text": "The chapter states the limits on tax, borrowing and payment through a person who owes tax and a person without a device. The monetary authority's mandate runs in the chapter's pins, and Chapter 17 sets out how the tiers divide power.",
@@ -102,11 +111,38 @@
       ]
     },
     {
+      "chapter": 25,
+      "title": "Why the refusal depends on how an entitlement is written",
+      "text": "The chapter states the refusal and its reach. That an entitlement written as a plain label loses the protection, and that a rule confining someone for lacking a home entry loads while a development test of the written rules rejects any such rule in the constitution, are shown in the method and run as a counterfactual.",
+      "links": [
+        {"label": "The method: why the hostile floor rule is refused", "path": "book-1/method.md#why-the-hostile-floor-rule-is-refused"},
+        {"label": "The plain-label counterfactual", "path": "book-1/source/counterfactual/entitlement-as-plain-label.pins.nibli"}
+      ]
+    },
+    {
+      "chapter": 26,
+      "title": "What the placement alarm sees",
+      "text": "The chapter points to the placement alarm, which When the System Notices It Broke (Chapter 28) states in full. The alarm's cases, from an unknown kind of place to competing placement records, still run in this chapter's pins.",
+      "links": [
+        {"label": "Chapter 28: a placement report against a rule", "path": "book-1/28-when-the-system-notices-it-broke.md#a-placement-report-against-a-rule"},
+        {"label": "Chapter 26's pins", "path": "book-1/26-where-people-are-put.pins.nibli"}
+      ]
+    },
+    {
       "chapter": 27,
       "title": "The rest of the rules on protective powers",
       "text": "The chapter states each coercive measure's requirements in one table. The rest, from unarmed civil assistance and the classified budget annex to employment vetting and the route for disclosing unlawful surveillance, runs in the public-safety family's cases.",
       "links": [
         {"label": "The public-safety core cases", "path": "tests/pins/public-safety/core"}
+      ]
+    },
+    {
+      "chapter": 27,
+      "title": "A rule that would release someone for recognition",
+      "text": "The chapter states that recognition, employment, compliance, wealth and character play no part in whether custody continues or ends. Its tests try a rule producing a raw release entry from recognition, which loads and gives no authority, and a rule producing an operative bar against the sentence, which the engine refuses; the method explains what such a refusal is.",
+      "links": [
+        {"label": "Chapter 27's pins", "path": "book-1/27-the-one-thing-taken.pins.nibli"},
+        {"label": "The method: a refusal is a result about an input", "path": "book-1/method.md#a-refusal-is-a-result-about-an-input"}
       ]
     }
   ]

@@ -10,6 +10,14 @@ followed the charge ends its reach into that case. And a properly made case
 finding that a prosecution is unrelated to the disclosure removes that
 prosecution from its coverage.
 
+A finding, order or review in this part of the book is *properly made* when
+every element its rule requires is present, each from the right source: the
+subject, case and ground, the evidence and procedure, and separate people
+authorised to decide and to review. Each chapter names what its own finding
+adds, from the eligibility of the people deciding to its place in the record's
+order. A finding missing an element is incomplete, and its consequences follow
+only once it is complete.
+
 The case finding needs authorised reviewers whose eligibility is independently
 confirmed. The defendant, the injured person and the prosecuting court are each
 excluded from deciding it. An actual conflict, found by an authorised office,

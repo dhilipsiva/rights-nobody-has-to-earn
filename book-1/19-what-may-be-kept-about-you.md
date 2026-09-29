@@ -137,13 +137,12 @@ end. With its evidence attester and reviewer also recording it, the request
 completes as a reviewed record. The holder bears the cost of answering before
 any review has confirmed the request.
 
-When the responding office fails to answer, its silence decides nothing. An
-independent positive finding that it failed to answer, after authenticated
-notice, a real chance to act and a deadline set by the record's source,
-obliges an independent alternate to review the request and secure an
-independent remedy. The failure counts as neither approval nor a fact against
-the person who asked. The person bears the wait: through the deadline, and
-then until the finding is made.
+When the responding office fails to answer, the duty moves as *Who Owes, and
+What Follows* (Chapter 6) sets out for every duty: an independent positive
+finding that it failed to answer, after authenticated notice, a real chance to
+act and a deadline set by the record's source, obliges an independent alternate
+to review the request and secure an independent remedy. The person bears the
+wait: through the deadline, and then until the finding is made.
 
 ### When the end arrives
 

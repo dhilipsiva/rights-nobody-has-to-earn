@@ -49,33 +49,29 @@ While a prisoner remains a person, a rule confining someone because the record
 is silent about what they believe, or about whether they ate, is refused. The
 floor follows from personhood and personhood follows from custody, so such a
 rule would make custody depend on its own consequence; that loop is what is
-refused. The refusal therefore covers everyone the record holds, confined or
-free. It also rests on the way each entitlement is written, as an entitlement
-to a condition: written as a plain label instead, the entitlement disappears
-and the hostile rule loads. The optional method's section [*Why the hostile
-floor rule is refused*](method.md#why-the-hostile-floor-rule-is-refused) shows
-how the refusal works and why a differently written attack needs its own test.
+refused, and the refusal covers everyone the record holds, confined or free.
+The optional method's section [*Why the hostile floor rule is
+refused*](method.md#why-the-hostile-floor-rule-is-refused) shows how the
+refusal works and why it depends on how each entitlement is written.
 
-The refusal reaches confinement for a missing floor item. A rule confining
-someone for lacking a home entry loads, because a home entry lies outside the
-floor; a separate test of the written rules rejects any rule that concludes
-custody, placement, severity or a restraint from a missing home, family or work
-entry. Another test rejects any rule that takes a floor item's delivery,
-present or absent, as a premise, so an absent meal leaves the debt in place and
-becomes a ground for nothing, whether a placement or a finding about the
-person. The method's section [*Checking how a record is
-used*](method.md#checking-how-a-record-is-used) distinguishes those tests from
-the refusal.
+The refusal reaches confinement for a missing floor item. A missing home,
+family or work entry lies outside the floor, and a check of the written rules
+rejects any that concludes custody, placement, severity or a restraint from
+one. A floor item's delivery, present or absent, is a premise for nothing, so
+an absent meal leaves the debt in place and becomes a ground for nothing,
+whether a placement or a finding about the person. The method's section
+[*Checking how a record is used*](method.md#checking-how-a-record-is-used)
+distinguishes those checks from the refusal.
 
 ## Standing that protects others
 
 Remove the rule that makes a prisoner a person, and two things change at once.
 Zed stays confined, but the rules conclude neither Zed's personhood nor any
 debt to Zed: the debt goes with the debtor, and nothing owed remains to be
-found unpaid. And a rule confining any person whose record is silent about
-belief now loads. Bela, whose standing comes by another route, is still owed
-belief; the refusal that kept a missing belief from becoming a ground for
-confinement is gone, for Bela and for everyone else.
+found unpaid. And the rules then accept a rule confining any person whose
+record is silent about belief. Bela, whose standing comes by another route, is
+still owed belief; the refusal that kept a missing belief from becoming a
+ground for confinement is gone, for Bela and for everyone else.
 
 A prisoner's standing therefore holds up a protection for people who have
 never been held. Birth, contact, presence and effective control give the floor

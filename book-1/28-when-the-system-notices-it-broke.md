@@ -16,22 +16,29 @@ duty.
 
 ## A placement report against a rule
 
-The placement marker reads a reported act. With no placement reported, it is
-silent about Ruk, about another person held in secure custody and about Hano.
-The report this chapter began with places Ruk at home against an authorised
-secure placement, so the marker fires even though Ruk is eligible for
-consideration of home confinement; the same report for Hano matches Hano's
-authorised route and leaves the marker silent.
+The placement marker reads a reported act.
+A report of placement is different from an authorised destination. With no
+placement reported, the marker is silent about Ruk, about another person held
+in secure custody and about Hano. The report this chapter began with places Ruk
+at home against an authorised secure placement, so the marker fires even though
+Ruk is eligible for consideration of home confinement; the same report for Hano
+matches Hano's authorised route and leaves the marker silent, while a report
+that Hano was put in a secure facility would fire it. A report naming an
+unknown kind of place triggers review as well. An exact-place report identifies
+the case and the place, and only the permission for that person, case and place
+can answer it.
 
-This test separates the reported act from a home option or a family entry.
-*Where People Are Put* (Chapter 26) also tests inappropriate secure placement,
-unknown destinations, competing reports and an exact place without permission
-for that case, and competing complete placement records block custody
-authority. Each is a distinct test, and the home-placement example settles only
-its own. A physical act that nobody reports stays outside the placement alarm's
-reach.
+Competing reported destinations also trigger review. Competing fully reviewed
+placement records do more: they block custody authority until a lawful
+placement is settled, and choosing a favourable record name settles nothing.
+The marker identifies the affected person and creates the review body's
+obligation. These cases run with *Where People Are Put* (Chapter 26), and each
+settles only its own question.
 
-The alarm needs testing as much as the routing rule does. Its place
+The alarm watches where the design puts someone it confines. A physical act
+that nobody reports stays outside its reach, and whether every person owed
+housing received it is a separate question, answered by recipient-side
+evidence. The alarm needs testing as much as the routing rule does. Its place
 in the constitution and its name add nothing to its reliability.
 
 ## Evidence of denied contact
