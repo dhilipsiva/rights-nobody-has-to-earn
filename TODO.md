@@ -224,7 +224,7 @@ unimplemented until the items named here land.
 
 ## Ordered revision backlog toward 9.5+
 
-Status 2026-09-29: items 01–65 and 67–80 are complete and recorded in
+Status 2026-09-29: items 01–65, 67–80 and 82 are complete and recorded in
 `CLAUDE.md`; optional item 66 is closed without outside validation. The
 [2026-09-25 revision review](reviews/2026-09-25-revision-review.md) rates the
 revised manuscript 8/10 and publisher readiness 7.5/10: claim discipline holds
@@ -233,9 +233,9 @@ chapters (6, 13, 17, 27), cost-paragraph/argument restatement at chapter
 endings, and length for the D1 serious non-specialist reader. A fresh
 chapter-by-chapter pass (2026-09-29) concurs at ~7.1/10 average, weakest at
 Ch. 7 and Ch. 27. No remaining item is an error the pins contradict. Item
-81 is optional; items 82–87, merged below, are companion, navigation and
-contribution work, and item 82 corrects a stale example. Chapter numbers refer
-to the [current reading sequence](book-1/contents.json).
+81 is optional; items 83–87, merged below, are companion and navigation
+work. Chapter numbers refer to the [current reading
+sequence](book-1/contents.json).
 
 ### The merged list, *From 8/10 to 9.5+*
 
@@ -301,7 +301,7 @@ Where each of its items went:
 | 9. Costs and who bears them | 87 |
 | 10. A second-engine page | 85 |
 | 11. A known-defects page | 85 |
-| 12. How to contribute | 82 |
+| 12. How to contribute | 82 (done) |
 | 13. Part V's historical cases | 80 (done) |
 | 14. A book map in the companion | 83 |
 | 15. Forks and joints explained | 83 |
@@ -323,27 +323,6 @@ From the merged list: its second engine is built (item 50), and the method
 reports it as a cross-check within the project, so its request to build one
 is met. What it adds here is an outside reimplementation and a red team run by
 someone else, both already named above.
-
-### 82. Keep the contribution guide runnable
-
-Why: `CONTRIBUTING.md` (item 17) covers issues, pull requests, the file map,
-checks, credit and AI assistance, but its worked example still names
-`book-1/05-whether-it-arrived.pins.nibli` and `book-1/05-whether-it-arrived.md`,
-which item 53 renumbered `04-`, and quotes a Chapter 4 sentence naming a
-fixture that item 51 took out of the prose. The text scope of
-`tools/relocate.py` lists `CLAUDE.md`, `README.md`, `AGENTS.md`, `LICENSING.md`
-and `TODO.md` but not this file, and no check reads it. From the merged list's
-item 12.
-Do: rest the example on a sentence Chapter 4 now carries and on its current
-pin file, and rerun its command; add `CONTRIBUTING.md` to the relocation
-tool's text scope and to an existing link check, so the next move rewrites it
-or fails; point to `tools/second_engine.py` and its report for anyone
-reproducing the core elsewhere, which is what the list's "how to build a
-second engine" can mean now that both exist; and link the guide from the
-companion.
-Close when: the example's focused run passes; the extended check fails on a
-planted stale link and passes on the file; the companion links the guide; and
-the affected development tests pass.
 
 ### 83. The companion's front door
 

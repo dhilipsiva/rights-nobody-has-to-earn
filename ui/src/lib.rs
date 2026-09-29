@@ -183,6 +183,7 @@ pub fn App() -> Element {
                     span { "dhilipsiva · prose CC BY 4.0" }
                     a { href: public_url(format!("{path}index.md")), "Markdown" }
                     NavLink { to: format!("{PREFIX}#sources"), "Sources & licences" }
+                    a { href: format!("{REPOSITORY}/blob/main/CONTRIBUTING.md"), "Contribute" }
                     a { href: public_url(format!("{PREFIX}llms.txt")), "Agent index" }
                 }
             }

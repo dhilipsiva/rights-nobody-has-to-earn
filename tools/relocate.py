@@ -71,7 +71,7 @@ FAMILY_SOURCES = {
 # Text scope: files whose path references are rewritten. Pins files are in scope
 # for their comment lines only (handled specially).
 TEXT_GLOBS = [
-    "CLAUDE.md", "README.md", "AGENTS.md", "LICENSING.md", "TODO.md",
+    "CLAUDE.md", "README.md", "AGENTS.md", "LICENSING.md", "TODO.md", "CONTRIBUTING.md",
     "verify.sh", "generate.sh", "combine.sh",
     "book-1/*.md", "book-1/appendix/*.md", "book-1/appendix/*/*.md", "book-1/contents.json",
     "book-1/source/*.md", "book-1/source/*.json", "book-1/source/*.py",

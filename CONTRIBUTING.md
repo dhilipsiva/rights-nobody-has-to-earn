@@ -74,7 +74,7 @@ The [setup instructions](README.md#verify) establish the adjacent Nibli checkout
 From the repository root, use the affected companion file for focused feedback:
 
 ```bash
-./verify.sh --only book-1/05-whether-it-arrived.pins.nibli
+./verify.sh --only book-1/04-whether-it-arrived.pins.nibli
 ```
 
 Review the prose separately. Existing development checks for coverage, links
@@ -100,6 +100,14 @@ layout or navigation, [rebuild the review copies](book-1/README.md#read-or-assem
 and inspect the affected HTML, EPUB and PDF output. A Markdown check cannot
 establish correct rendered layout.
 
+To reproduce the core in another engine, start from
+[second_engine.py](tools/second_engine.py), which translates the constitution
+for the clingo answer set solver, and its
+[report](book-1/source/measurements/second-engine-report.md) of the cases it
+replays. It is a cross-check made within this project; an outside
+reimplementation would be independent evidence, and the method's section on
+what has been checked says where such evidence would stand.
+
 Before an accepted revision is completed, run `./verify.sh` for all substantive
 pins and contradiction checks; report its actual result and elapsed time.
 The maintainer can perform that run for a contributor who cannot. A focused
@@ -109,16 +117,16 @@ truth, institutional performance or independent reader review.
 ## A small example
 
 An illustrative proposal makes the evidence explicit in
-[chapter 5](book-1/05-whether-it-arrived.md):
+[chapter 4](book-1/04-whether-it-arrived.md):
 
 ```diff
--from Provender. That alone produces no food-delivery conclusion. It then gives
-+from Provender. A receipt alone produces no food-delivery conclusion. It then gives
+-recorded saying that food reached her from a food provider. The receipt alone
++recorded saying that food reached her from a food provider. That receipt alone
 ```
 
-A useful PR description would explain that “a receipt” names what is
-insufficient, cite the Marisol sequence in the companion pins, and report the
-focused command above. Read the surrounding paragraph to confirm that adding
+A useful PR description would explain that “that receipt” ties the
+insufficiency to the provider's own record, cite the Marisol sequence in the
+chapter's pins, and report the focused command above. Read the surrounding paragraph to confirm that adding
 the authorised independent witness still produces the food conclusion. State
 whether the complete verifier was run. This example is a proposed wording
 change, not a claim that a contribution has been submitted or accepted.

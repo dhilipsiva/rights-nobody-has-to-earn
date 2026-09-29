@@ -135,6 +135,34 @@ reinstate the retired tooling or workflow.
 Grouped by kind. Dates in each heading are the ratification dates; a ruling
 that was later implemented or narrowed carries that supersession inline.
 
+### Item 82 — the contribution guide runnable, 2026-09-29
+
+`CONTRIBUTING.md`'s worked example ran `./verify.sh --only` on a pin file and
+linked a chapter under the names Chapter 4 had before item 53 renumbered it,
+and quoted a sentence naming a fixture that item 51 took out of the prose.
+Nothing caught it: `tools/relocate.py` rewrote references in `CLAUDE.md`,
+`README.md`, `AGENTS.md`, `LICENSING.md` and `TODO.md` but not this file, and
+the book's link sweep reads only `book-1/`. The example now rests on a sentence
+Chapter 4 carries and on `book-1/04-whether-it-arrived.pins.nibli`, whose
+focused run passes 20 pins. The relocation tool's text scope includes the
+guide, and `the_contribution_guide_links_and_commands_resolve` holds every
+relative link, heading fragment and `./verify.sh --only` path the guide names
+to the tree, with `a_stale_link_in_the_contribution_guide_is_found` planting
+the old chapter link, the old command and a missing method heading and
+requiring all three found.
+
+The guide now points anyone reproducing the core elsewhere to
+`tools/second_engine.py` and its report, and says that it is a cross-check made
+within the project, so an outside reimplementation would be independent
+evidence. The companion's footer links the guide on every route. The exact
+prose is `session-drafted, author-approved under delegated approval
+(2026-09-13)`.
+
+No rule, pin or suite changes, so item 73's complete run on the same formal
+inputs stands. The eight reference-integrity development tests pass, as do the
+companion's formatting check and five library tests; the static exporter
+renders 45 routes, each with the new link.
+
 ### Item 80 — Part V's pacing, and the book's length, 2026-09-29
 
 Part V's State joint surveyed five cases and synthesised least. It now keeps

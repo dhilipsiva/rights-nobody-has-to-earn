@@ -333,6 +333,68 @@ fn every_relative_link_in_the_book_and_its_appendix_resolves() {
     assert!(broken.is_empty(), "dangling links:\n{}", broken.join("\n"));
 }
 
+/// The contribution guide sits outside `book-1/`, so the book's link sweep never
+/// read it, and a restructure once left its worked example naming a renamed
+/// chapter and pin file. Its relative links must resolve, and every focused
+/// `./verify.sh --only` it shows must name a pin file that exists.
+fn guide_problems(context: &Context, text: &str) -> Vec<String> {
+    let link = Regex::new(r"\]\(([^)\s]+)\)").unwrap();
+    let only = Regex::new(r"\./verify\.sh --only (\S+)").unwrap();
+    let mut problems = Vec::new();
+    for capture in link.captures_iter(text) {
+        let target = &capture[1];
+        if target.starts_with("http://")
+            || target.starts_with("https://")
+            || target.starts_with("mailto:")
+            || target.starts_with('#')
+        {
+            continue;
+        }
+        let (path, fragment) = match target.split_once('#') {
+            Some((p, f)) => (p, Some(f)),
+            None => (target, None),
+        };
+        if !context.path(path).exists() {
+            problems.push(format!("{target} (no such file)"));
+            continue;
+        }
+        if let Some(fragment) = fragment {
+            if path.ends_with(".md")
+                && !headings_in(&context.read(path).expect("linked file")).contains(fragment)
+            {
+                problems.push(format!("{target} (no such heading)"));
+            }
+        }
+    }
+    for capture in only.captures_iter(text) {
+        if !context.path(&capture[1]).is_file() {
+            problems.push(format!("./verify.sh --only {} (no such pin file)", &capture[1]));
+        }
+    }
+    problems
+}
+
+#[test]
+fn the_contribution_guide_links_and_commands_resolve() {
+    let context = Context::discover().expect("repository");
+    let guide = context.read("CONTRIBUTING.md").expect("guide");
+    let problems = guide_problems(&context, &guide);
+    assert!(
+        problems.is_empty(),
+        "the contribution guide names what the tree does not carry:\n{}",
+        problems.join("\n")
+    );
+}
+
+#[test]
+fn a_stale_link_in_the_contribution_guide_is_found() {
+    let context = Context::discover().expect("repository");
+    let planted = "[chapter 5](book-1/05-whether-it-arrived.md)\n\
+                   ./verify.sh --only book-1/05-whether-it-arrived.pins.nibli\n\
+                   [the method](book-1/method.md#no-such-section)\n";
+    assert_eq!(guide_problems(&context, planted).len(), 3);
+}
+
 /// The annotated contents sit in the back matter with the map, glossary and
 /// index (ruling D7), and they list exactly the manifest's parts and landed
 /// chapters, in order. The opening note keeps no contents of its own.
