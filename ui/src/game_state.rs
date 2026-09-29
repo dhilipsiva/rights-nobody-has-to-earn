@@ -69,6 +69,8 @@ pub struct Fault {
     pub text: String,
     pub book: String,
     pub kind: String,
+    /// What the entry discusses: a limit, a cost or an objection.
+    pub theme: String,
 }
 #[derive(Deserialize)]
 pub struct GameData {

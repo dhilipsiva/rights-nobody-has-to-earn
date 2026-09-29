@@ -30,12 +30,12 @@ def main():
     content = json.loads((UI/'dist/rights-nobody-has-to-earn/content.json').read_text(encoding='utf-8'))
     cases = json.loads((UI/'generated/cases.json').read_text(encoding='utf-8'))['cases']
     expected = json.loads((UI/'tests/expectations.json').read_text(encoding='utf-8'))
-    routes = ['', 'read/', 'search/', 'constitution/', 'cases/'] + [f'read/{Path(p["source"]).stem}/' for p in content['pages']]
+    routes = ['', 'start/', 'read/', 'search/', 'constitution/', 'cases/'] + [f'read/{Path(p["source"]).stem}/' for p in content['pages']]
     manifest = json.loads((UI.parent/'book-1/contents.json').read_text(encoding='utf-8'))
     inputs = len(manifest['front']) + len(manifest['back']) + sum(
         (p.get('opener', {}).get('status') == 'landed') + sum(c['status'] == 'landed' for c in p['chapters'])
         for p in manifest['parts'])
-    assert len(content['pages']) == inputs and len(routes) == inputs + 5 and len(cases) == 91
+    assert len(content['pages']) == inputs and len(routes) == inputs + 6 and len(cases) == 91
     for path in ['game.json', 'cases.json']:
         def inspect(value):
             if isinstance(value, dict):
@@ -56,6 +56,14 @@ def main():
     chapter_cases = (UI/'dist/rights-nobody-has-to-earn/cases/index.html').read_text(encoding='utf-8')
     derived = [c['number'] for p in manifest['parts'] for c in p['chapters'] if c.get('role') == 'derived' and c['status'] == 'landed']
     assert all(f'id="chapter-{n}"' in chapter_cases for n in derived), 'a chapter has no cases anchor'
+    start_page = (UI/'dist/rights-nobody-has-to-earn/start/index.html').read_text(encoding='utf-8')
+    start_doc = json.loads((UI/'start.json').read_text(encoding='utf-8'))
+    assert 'id="guided-run"' in start_page and 'id="forks-and-joints"' in start_page, 'the start page lacks a section'
+    assert all(f'data-query="{s["query"]}"' in start_page for s in start_doc['guided']['steps']), 'a guided step is missing'
+    home = (UI/'dist/rights-nobody-has-to-earn/index.html').read_text(encoding='utf-8')
+    assert 'start-panel' in home and all(f'data-theme="{t}"' in home for t in ('limits', 'costs', 'objections')), 'the home panel or a dossier theme is missing'
+    contents_page = (UI/'dist/rights-nobody-has-to-earn/read/index.html').read_text(encoding='utf-8')
+    assert contents_page.count('class="toc-summary"') >= len(derived), 'the book map lacks chapter summaries'
     report = {'routes':len(routes), 'reader_inputs':inputs, 'screens':[], 'engine':[], 'contrast':[]}
     errors = []
     with sync_playwright() as p:
@@ -104,8 +112,9 @@ def main():
         report['startup_seconds'] = round(time.monotonic()-started,3)
         assert any('engine-worker' in u for u in requests) and any('constitution.bin.gz' in u for u in requests)
         assert page.locator('.verdict').count() == 0
-        assert page.locator('[data-person]').count() == 12 and page.locator('[data-joint]').count() == 12
-        assert page.locator('[data-dossier]').count() == 21
+        authored = json.loads((UI/'game.json').read_text(encoding='utf-8'))
+        assert page.locator('[data-person]').count() == len(authored['people']) and page.locator('[data-joint]').count() == len(authored['joints'])
+        assert page.locator('[data-dossier]').count() == len(authored['faults'])
         worker_count = sum('engine-worker' in u for u in requests)
         for i in range(3):
             page.locator('.move-button').click()

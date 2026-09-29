@@ -21,8 +21,33 @@ fn companion_markdown(route: &str) -> String {
     match route.strip_prefix(PREFIX).unwrap_or("") {
         "read/" => {
             for p in &book().pages {
-                text += &format!("- [{}]({}index.md)\n", p.label, p.canonical);
+                text += &format!("- [{}]({}index.md)", p.label, p.canonical);
+                if !p.summary.is_empty() {
+                    text += &format!(" — {}", p.summary);
+                }
+                text += "\n";
             }
+        }
+        "start/" => {
+            let doc = start();
+            for paragraph in &doc.panel {
+                text += &format!("{paragraph}\n\n");
+            }
+            text += &format!("## A guided first run\n\n{}\n\n", doc.guided.note);
+            for step in &doc.guided.steps {
+                text += &format!("1. {} `? {}` {}\n", step.text, step.query, step.verdict);
+            }
+            text += &format!(
+                "\n[Run Nell's fork live]({ORIGIN}{PREFIX}#fork={}) · [The tests these answers come from]({REPOSITORY}/blob/main/{})\n\n## Forks and joints\n\n",
+                doc.guided.fork, doc.guided.pins
+            );
+            for paragraph in &doc.explainer.text {
+                text += &format!("{paragraph}\n\n");
+            }
+            text += &format!(
+                "- [Nell's fork]({ORIGIN}{PREFIX}#fork={})\n- [The measured joint]({ORIGIN}{PREFIX}#joint={})\n",
+                doc.explainer.fork, doc.explainer.joint
+            );
         }
         "search/" => {
             text += "Search runs locally in the interactive reader. Reading and browser Find remain available without JavaScript.\n";
@@ -141,7 +166,8 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
             "read/" => "Read the complete Book 1 in manuscript order: epigraph, opening note, every chapter and Part opening case, the optional method, and a map, glossary and index.",
             "search/" => "Search the complete text of Book 1 locally on your device.",
             "constitution/" => "The constitution Book 1 describes, as numbered plain-language articles traced to the rules and tests that implement them.",
-            "cases/" => "Each chapter's cases, run on your own device against the pinned constitution, and where the material the chapters no longer carry now lives.", _ => "This page does not exist in Book 1.",
+            "cases/" => "Each chapter's cases, run on your own device against the pinned constitution, and where the material the chapters no longer carry now lives.",
+            "start/" => "What the companion is, what a fork and a joint are, and a guided first run of Nell's fork checked against Chapter 1's tests.", _ => "This page does not exist in Book 1.",
         }.into());
         let is_404 = route.ends_with("/404/");
         let noindex = route.ends_with("/search/") || is_404;

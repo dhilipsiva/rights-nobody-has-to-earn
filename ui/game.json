@@ -2685,7 +2685,8 @@
       "via": "break",
       "text": "Identical records can reflect an honest omission or a concealed refusal, and nothing reasoning from them can tell which. Finding people the record has missed takes independent contact routes, which belong to the second book.",
       "book": "Chapter 30 · The inputs lack integrity",
-      "kind": "authored discussion"
+      "kind": "authored discussion",
+      "theme": "limits"
     },
     {
       "id": "delivery",
@@ -2693,7 +2694,8 @@
       "via": "live",
       "text": "No provider form or delegated function removes the public responsibility, and a recorded duty does not perform the next act. An independently attested receipt does not show a service system’s capacity.",
       "book": "Part V · The State",
-      "kind": "authored discussion"
+      "kind": "authored discussion",
+      "theme": "limits"
     },
     {
       "id": "duration",
@@ -2701,7 +2703,8 @@
       "via": "live",
       "text": "A properly made order ends custody and restores the movement conclusion; a raw release entry changes nothing. Release review and continuity are owed, and whether the person physically left belongs to the second book.",
       "book": "Chapter 27 · What leaving changes",
-      "kind": "authored discussion"
+      "kind": "authored discussion",
+      "theme": "limits"
     },
     {
       "id": "valuation",
@@ -2709,7 +2712,8 @@
       "via": "run",
       "text": "Keeping claims apart makes officials judge where a single score would calculate. The cost falls on the people given lower priority and on whoever depends on that judgment being sound.",
       "book": "Part V · Valuation",
-      "kind": "authored discussion"
+      "kind": "authored discussion",
+      "theme": "costs"
     },
     {
       "id": "residence",
@@ -2717,7 +2721,8 @@
       "via": "live",
       "text": "Presence grounds help and residence grounds the vote, so the floor carries no ballot. A former resident who made a home abroad loses the vote left behind, and people affected from outside gain none.",
       "book": "Chapter 15 · Argument: The person before the status",
-      "kind": "authored discussion"
+      "kind": "authored discussion",
+      "theme": "costs"
     },
     {
       "id": "entrench",
@@ -2725,7 +2730,8 @@
       "via": "run",
       "text": "The floor and personhood cannot be amended away. The cost falls on a majority that wants to.",
       "book": "Chapter 22 · Argument: A fixed core behind an open route",
-      "kind": "authored discussion"
+      "kind": "authored discussion",
+      "theme": "costs"
     },
     {
       "id": "cira",
@@ -2733,7 +2739,8 @@
       "via": "break",
       "text": "Missing adulthood evidence stops the ballot conclusion without being a punishment, and says nothing about age. The person whose evidence is missing bears that gap until a challenge or provisional route answers it.",
       "book": "Chapter 14 · Adulthood and missing evidence",
-      "kind": "authored discussion"
+      "kind": "authored discussion",
+      "theme": "costs"
     },
     {
       "id": "audit",
@@ -2741,7 +2748,8 @@
       "via": "run",
       "text": "Each step of a finding’s path through review, action, non-response, continuity and remedy ends in a duty on a named office. Whether anyone convenes an institution, restores a person or stops a wrong belongs to the second book.",
       "book": "Chapter 28 · What this cannot settle",
-      "kind": "authored discussion"
+      "kind": "authored discussion",
+      "theme": "limits"
     },
     {
       "id": "prison",
@@ -2749,7 +2757,8 @@
       "via": "break",
       "text": "Zed and Nell are owed the same shelter and expression, and neither record shows either received; custody holds for Zed alone. Witnessed delivery is independent of sentence authority.",
       "book": "Chapter 25 · The child with nobody",
-      "kind": "authored discussion"
+      "kind": "authored discussion",
+      "theme": "objections"
     },
     {
       "id": "hunger",
@@ -2757,7 +2766,8 @@
       "via": "live",
       "text": "A delivery nobody witnesses leaves the record as it would be had nothing arrived, so the rules cannot tell whether anyone is hungry. The debt stays open either way.",
       "book": "Chapter 4 · What this cannot settle",
-      "kind": "authored discussion"
+      "kind": "authored discussion",
+      "theme": "objections"
     },
     {
       "id": "students",
@@ -2765,7 +2775,8 @@
       "via": "break",
       "text": "Bela’s teaching of Cira stays recorded beside the finding, and being taught confers no status, transfers no fraud and imposes no debt. Cira’s own work is judged on its own record.",
       "book": "Chapter 24 · Cira's separate claim",
-      "kind": "authored discussion"
+      "kind": "authored discussion",
+      "theme": "objections"
     },
     {
       "id": "time",
@@ -2773,7 +2784,8 @@
       "via": "break",
       "text": "A disclosure can hold back confinement under a recorded conviction while eligible reviewers decide whether the prosecution is unrelated. That takes time, including time owed to the injured person.",
       "book": "Chapter 23 · Argument: Protection that follows the charge",
-      "kind": "authored discussion"
+      "kind": "authored discussion",
+      "theme": "costs"
     },
     {
       "id": "conscription",
@@ -2781,7 +2793,8 @@
       "via": "break",
       "text": "The design cannot conscript labour. When voluntary recruitment fails, a service goes unstaffed; the record shows the debt, not the nurse.",
       "book": "Part V · Rotation",
-      "kind": "authored discussion"
+      "kind": "authored discussion",
+      "theme": "limits"
     },
     {
       "id": "purpose",
@@ -2789,7 +2802,8 @@
       "via": "run",
       "text": "Binding each record to its purpose costs people who need several services, cannot keep explaining their circumstances, or depend on someone else to communicate. The initiation duty and accessible assistance meet part of that cost.",
       "book": "Part V · Capture",
-      "kind": "authored discussion"
+      "kind": "authored discussion",
+      "theme": "costs"
     },
     {
       "id": "birthline",
@@ -2797,7 +2811,8 @@
       "via": "rewrite",
       "text": "Every route into personhood needs an entry, and for a child with none the rules conclude no personhood, floor or duty to begin assistance. Remove the birth route and Nell’s one entry leaves her where Ori stands.",
       "book": "Chapter 1 · The child the record never entered",
-      "kind": "measured joint"
+      "kind": "measured joint",
+      "theme": "limits"
     },
     {
       "id": "personline",
@@ -2805,7 +2820,8 @@
       "via": "rewrite",
       "text": "Without the rule that makes a prisoner a person, Zed’s debts go with the debtor and nothing owed remains to be found unpaid. The refusal to confine anyone for a missing floor item goes too.",
       "book": "Chapter 25 · Standing that protects others",
-      "kind": "measured joint"
+      "kind": "measured joint",
+      "theme": "limits"
     },
     {
       "id": "penline",
@@ -2813,7 +2829,8 @@
       "via": "rewrite",
       "text": "Each route to the authority to sign must check for recall and for a restriction kept from an earlier version. Skip those checks and a seating alone hands the authority to Tove and Mael.",
       "book": "Chapter 24 · The authority to sign must follow from evidence",
-      "kind": "measured joint"
+      "kind": "measured joint",
+      "theme": "limits"
     },
     {
       "id": "courtline",
@@ -2821,7 +2838,8 @@
       "via": "rewrite",
       "text": "Remove the court’s public-body entry and Lior’s disclosure against the court leaves Lior unshielded. The protection rests on the record.",
       "book": "Chapter 23 · Lior: an unresolved disclosure",
-      "kind": "measured joint"
+      "kind": "measured joint",
+      "theme": "limits"
     },
     {
       "id": "workline",
@@ -2829,7 +2847,8 @@
       "via": "rewrite",
       "text": "Where losing essentials is the penalty, the freedom to refuse or leave a job is only as real as the floor beneath it. Employment, its refusal and its change therefore stay outside the floor.",
       "book": "Chapter 9 · Argument: Work above the floor",
-      "kind": "measured joint"
+      "kind": "measured joint",
+      "theme": "objections"
     },
     {
       "id": "floorline",
@@ -2837,7 +2856,8 @@
       "via": "rewrite",
       "text": "If ownership could buy its way past the floor, the floor would become a price. Property, contract, enterprise and public finance therefore stay conditional on it.",
       "book": "Chapter 10 · Argument: Ownership under the floor, borrowing under law",
-      "kind": "measured joint"
+      "kind": "measured joint",
+      "theme": "objections"
     },
     {
       "id": "receipt",
@@ -2845,7 +2865,8 @@
       "via": "rewrite",
       "text": "Remove one condition and the provider certifies its own delivery. This is why the condition exists.",
       "book": "book-1/source/counterfactual/no-delivery-independence.pins.nibli",
-      "kind": "measured joint"
+      "kind": "measured joint",
+      "theme": "limits"
     }
   ],
   "license": "CC-BY-4.0",

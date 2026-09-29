@@ -135,6 +135,60 @@ reinstate the retired tooling or workflow.
 Grouped by kind. Dates in each heading are the ratification dates; a ruling
 that was later implemented or narrowed carries that supersession inline.
 
+### Item 83 — the companion's front door, 2026-09-29
+
+The companion opened on "Pick a person. Walk their forks." without saying what
+a fork, a joint or a lens is, listed its dossier in one grid, and gave its
+contents without the summaries `reference.md` already writes. Its home now
+opens with a *Start here* panel of about 120 words, held in `ui/start.json`:
+what the book and companion are, what a fork and a joint are, the four lenses,
+and where to begin, Nell's fork *Be born with nobody*. A new route, `start/`,
+carries a guided first run of that fork and an explainer. The guided run gives
+seven conclusions from Nell's one entry — she is a person, the State owes her
+food, the barriers that protect a child hold for her, no delivery follows,
+nothing confines her, and the record refuses the word *vulnerable* — each with
+the query and the verdict Chapter 1's pins require, and links to the fork and
+to those pins. The merged list's draft, which said she is owed "everything"
+and that nothing else follows, is not used. The explainer shows a fork with
+Nell's record and a joint with the measured `j-birth`, *Birth alone gives
+standing*, the joint the merged list called *Delete one rule; the child is
+owed nothing*: with the birth rule deleted, Nell is owed nothing and protected
+by no barrier, as its counterfactual pins. It also says what TRUE, FALSE and
+REFUSED mean.
+
+The dossier groups its twenty-one entries as limits (ten), costs (six) and
+objections (five), each keeping its kind. The contents page is a book map:
+each chapter and opening case shows the summary the annotated contents give
+it, read at export by `tools/annotated_contents.py`, which the book builder and
+the companion's tests share, so the summaries are written once. The home, the
+navigation and the exporter's descriptions and Markdown copies include the new
+route.
+
+Six companion input tests hold it: the panel stays within 200 words and names
+forks, joints, every lens and the first fork; every guided step's query and
+verdict match Chapter 1's pins, with a planted step claiming that food reached
+Nell found as the one mismatch; the explainer names a real fork and a measured
+joint; every dossier entry carries one of the three themes; and every chapter
+and opening case has a summary. The browser suite visits `start/` and checks
+the guided steps, the panel, the three dossier themes and the map's summaries
+in the exported pages. How a newcomer reads the front door is optional
+evidence under the 2026-08-15 ruling, and none is claimed. The exact prose is
+`session-drafted, author-approved under delegated approval (2026-09-13)`.
+
+No rule, pin or suite changes, so item 73's complete run on the same formal
+inputs stands. The companion's eighteen input tests and five library tests
+pass, as do the nineteen book-builder tests and formatting. The web build
+compiles for wasm32 and the static exporter renders 46 routes; the desktop
+build type-checks inside `ui/shell.nix`; and the companion README describes the
+new input. The browser suite, run against the served build with its
+engine-reasoning matrix skipped (partial), passes its routes, reading inputs,
+redirects and 404, the game's tally, evidence removal, worker reuse, joint
+restoration and replay checks, and its acceptance run. It needed two
+corrections unrelated to the front door: a long works-cited link overflowed the
+360-pixel page, which a CSS rule now wraps, and the suite counted the people,
+joints and dossier entries from fixed figures, which it now reads from
+`game.json`.
+
 ### Item 82 — the contribution guide runnable, 2026-09-29
 
 `CONTRIBUTING.md`'s worked example ran `./verify.sh --only` on a pin file and

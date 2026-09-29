@@ -33,7 +33,7 @@ The unrelated root page in the preview server is a resource-isolation fixture.
 The build exports reader text, prepares complete executable records, compiles
 all constitutional statements using the pinned engine, and packages the reader
 and engine as separate Wasm modules. It exports an HTML route for every reading
-input and for the game, contents, search, constitution and cases pages, their
+input and for the game, start, contents, search, constitution and cases pages, their
 Markdown counterparts, structured reading data
 and the redirect manifest. Compilation supplies inputs, never displayed
 answers. There is no result-reuse build mode.
@@ -60,8 +60,19 @@ checks that every derived chapter has a runnable case and points to its own
 entry, that every authored cost and fault cites a heading that exists, and that
 every link to moved material resolves.
 
+`start.json` holds the companion's front door: the *Start here* panel on the
+home page, which says what a fork, a joint and a lens are and where to begin,
+and the `start/` page's guided first run of Nell's fork with its explainer.
+Each guided step names the query and the verdict Chapter 1's pins require, and
+`tests/test_inputs.py` checks every step against those pins, with a planted
+wrong step as its sabotage control. The contents page shows beside each
+chapter the summary the annotated contents in `book-1/reference.md` give it,
+read at export by `tools/annotated_contents.py`, so each summary is written
+once.
+
 `game.json` holds authored moves, query labels, interpretation categories, costs,
-and dossier discussion. `case-map.json` explicitly maps each move to source
+and dossier discussion, each dossier entry grouped by theme as a limit, a cost
+or an objection. `case-map.json` explicitly maps each move to source
 checkpoints, suite fixtures, additional premises and cross-chapter references.
 It also records the delivery example's renamed constants. `prepare.py` snapshots
 only persistent admitted statements before those checkpoints. Refused and

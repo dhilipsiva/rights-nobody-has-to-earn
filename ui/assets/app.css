@@ -59,3 +59,5 @@ button,a,input,summary{touch-action:manipulation}button{cursor:pointer}button:di
 @media(min-width:981px){.joint-panel{max-height:730px;overflow-y:auto;scrollbar-width:thin}}
 .reader img.diagram,img.diagram{display:block;max-width:100%;height:auto;margin:20px auto;background:#fff;border-radius:6px}
 .chapter-cases .case-links{padding-left:20px}.chapter-cases .moved{margin-top:12px}
+.toc-summary{margin:-6px 0 14px;font:14px/1.55 var(--font-sans);color:var(--text-muted)}.start-panel{margin:28px 0}.start-panel p{margin:.6em 0;line-height:1.65}.guided-steps{padding-left:22px}.guided-steps li{margin:14px 0}.guided-steps p{margin:.35em 0;line-height:1.6}.guided-query code{font:13px var(--font-mono);overflow-wrap:anywhere}.dossier-theme{font:12px/1.6 var(--font-mono);color:var(--link);text-transform:uppercase;letter-spacing:.04em;margin:28px 0 12px}
+.reader-body a{overflow-wrap:anywhere}

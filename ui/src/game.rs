@@ -290,6 +290,10 @@ pub fn Game() -> Element {
                 noscript{p{class:"note","Gameplay requires JavaScript and local engine execution. The complete book, chapter links, sources and Markdown remain available without JavaScript."}}
             }}
             div{class:"container game-body",
+                section{class:"q-card pad start-panel",aria_label:"Start here",h2{"Start here"}
+                    for paragraph in start().panel.iter(){p{"{paragraph}"}}
+                    div{class:"actions",NavLink{to:format!("{PREFIX}start/"),"Take the guided first run →"}NavLink{to:format!("{PREFIX}read/"),"The book map →"}}
+                }
                 if !share().is_empty(){div{class:"share-link",label{r#for:"share-game","Shareable history · recipients check it by running it locally"}input{id:"share-game",readonly:true,value:"{share}",onclick:move |_|{let _=document::eval("document.getElementById('share-game')?.select()");}}}}
                 if !s.storage.is_empty(){p{class:"storage-notice",role:"status","{s.storage}"}}
                 if !s.restore.is_empty(){div{class:"restore-message",role:"status","Checking saved progress · {s.restore.len()} records remain. Totals show only completed checks."
@@ -379,9 +383,9 @@ pub fn Game() -> Element {
                     }
                 }}
                 section{id:"dossier",class:"dossier",h2{"The dossier"}p{"Authored questions, admitted costs and objections. “Examined live” marks a completed record; it is not proof that the accompanying argument is correct. Measured entries require both executions and a changed conclusion."}
-                    div{class:"dossier-grid",for fault in &game().faults{article{class:"q-card dossier-entry","data-dossier":"{fault.id}",header{span{class:"q-badge",if s.unlocked(&fault.id){"examined live"}else{"awaiting execution"}}small{"{fault.kind}"}}h3{"{fault.title}"}p{"{fault.text}"}p{class:"term-note","Authored source · {fault.book}"}
+                    for (theme,heading) in [("limits","Limits"),("costs","Costs"),("objections","Objections")]{h3{class:"dossier-theme","{heading}"}div{class:"dossier-grid","data-theme":"{theme}",for fault in game().faults.iter().filter(|f|f.theme==theme){article{class:"q-card dossier-entry","data-dossier":"{fault.id}",header{span{class:"q-badge",if s.unlocked(&fault.id){"examined live"}else{"awaiting execution"}}small{"{fault.kind}"}}h3{"{fault.title}"}p{"{fault.text}"}p{class:"term-note","Authored source · {fault.book}"}
                         a{href:format!("{REPOSITORY}/issues/new?title={}&body={}",encode_url(&format!("Companion dossier: {}",fault.title)),encode_url(&format!("Entry: {}\n\nMy objection or evidence:\n",fault.id))),target:"_blank",rel:"noopener","Raise an objection ↗"}
-                    }}}
+                    }}}}
                 }
                 section{id:"sources",class:"q-card game-sources",h2{"Sources, limits and reading"}
                     p{"This is a constitutional design offered for criticism. Test names are formal records, not biographies. TRUE means derivable; FALSE means not derivable; REFUSED means the query was not admitted. Failure, cancellation and incomplete execution award no result. Tally tags are authored interpretations of returned answers."}

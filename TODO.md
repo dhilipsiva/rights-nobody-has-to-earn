@@ -224,7 +224,7 @@ unimplemented until the items named here land.
 
 ## Ordered revision backlog toward 9.5+
 
-Status 2026-09-29: items 01–65, 67–80 and 82 are complete and recorded in
+Status 2026-09-29: items 01–65, 67–80, 82 and 83 are complete and recorded in
 `CLAUDE.md`; optional item 66 is closed without outside validation. The
 [2026-09-25 revision review](reviews/2026-09-25-revision-review.md) rates the
 revised manuscript 8/10 and publisher readiness 7.5/10: claim discipline holds
@@ -233,7 +233,7 @@ chapters (6, 13, 17, 27), cost-paragraph/argument restatement at chapter
 endings, and length for the D1 serious non-specialist reader. A fresh
 chapter-by-chapter pass (2026-09-29) concurs at ~7.1/10 average, weakest at
 Ch. 7 and Ch. 27. No remaining item is an error the pins contradict. Item
-81 is optional; items 83–87, merged below, are companion and navigation
+81 is optional; items 84–87, merged below, are companion and navigation
 work. Chapter numbers refer to the [current reading
 sequence](book-1/contents.json).
 
@@ -291,7 +291,7 @@ Where each of its items went:
 | Merged list | Here |
 |---|---|
 | 1. Split Chapters 13, 27 and 29 | 73, 75 and 80 (done) |
-| 2. An onboarding path in the companion | 83 |
+| 2. An onboarding path in the companion | 83 (done) |
 | 3. Bridge the prose and the formal language | 77 (done), 84 |
 | 4. Independent validation | 81, 85 |
 | 5. Compress Chapters 17 and 22 | 73 and 77 (done) |
@@ -303,8 +303,8 @@ Where each of its items went:
 | 11. A known-defects page | 85 |
 | 12. How to contribute | 82 (done) |
 | 13. Part V's historical cases | 80 (done) |
-| 14. A book map in the companion | 83 |
-| 15. Forks and joints explained | 83 |
+| 14. A book map in the companion | 83 (done) |
+| 15. Forks and joints explained | 83 (done) |
 
 ### 81. Independent validation — OPTIONAL, needs new author decision
 
@@ -323,35 +323,6 @@ From the merged list: its second engine is built (item 50), and the method
 reports it as a cross-check within the project, so its request to build one
 is met. What it adds here is an outside reimplementation and a red team run by
 someone else, both already named above.
-
-### 83. The companion's front door
-
-Why: the companion's home opens on "Pick a person. Walk their forks." and
-defines neither a fork, a joint nor a lens; its dossier shows its entries in
-one grid; and its contents page lists the book's pages without the one-line
-summaries that `reference.md`'s annotated contents already carry. From the
-merged list's items 2, 14 and 15.
-Do: a "Start here" panel of at most 200 words on the home, saying what the
-book is, what a fork is (one person's record walked a move at a time, each
-move run live), what a joint is (the constitution compared with one declared
-change), what the four lenses are, and where to begin: Nell's fork *Be born
-with nobody*. A guided first run of that fork says only what Chapter 1's pins
-return: Nell is a person, she is owed each of the nine floor items, the
-barriers that protect a child hold for her, and no delivery follows from her
-one entry. The list's draft, which said she is owed "everything" and that
-nothing else follows, is not used. A page explains forks and joints with that
-fork and the measured joint *Delete one rule; the child is owed nothing*. The
-dossier groups its entries by what they discuss (limits, costs, objections)
-and keeps each entry's kind. The contents page becomes a book map, giving each
-chapter the summary `reference.md` holds, read from that file rather than
-restated. The home links each.
-Close when: the companion's input and browser tests cover the panel, the
-guided run, the explainer and the map, with a sabotage control that fails when
-a guided step states a conclusion its pin does not return; the static exporter
-renders the new routes; and the web build type-checks for wasm32 and the
-desktop build inside `ui/shell.nix`. How a newcomer reads it is optional
-evidence under the 2026-08-15 ruling, recorded with its provenance if
-gathered, never a completion condition.
 
 ### 84. The query behind each conclusion
 

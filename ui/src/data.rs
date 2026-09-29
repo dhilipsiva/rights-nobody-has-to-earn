@@ -33,6 +33,9 @@ pub struct Page {
     pub canonical: String,
     pub source: String,
     pub description: String,
+    /// The one-line summary from the annotated contents, empty where none.
+    #[serde(default)]
+    pub summary: String,
     pub html: String,
     pub text: String,
     pub markdown: String,
@@ -107,6 +110,32 @@ pub struct Moved {
     pub title: String,
     pub text: String,
     pub links: Vec<Link>,
+}
+#[derive(Clone, Deserialize)]
+pub struct GuidedStep {
+    pub text: String,
+    pub query: String,
+    pub verdict: String,
+}
+#[derive(Clone, Deserialize)]
+pub struct Guided {
+    pub fork: String,
+    pub pins: String,
+    pub note: String,
+    pub steps: Vec<GuidedStep>,
+}
+#[derive(Clone, Deserialize)]
+pub struct Explainer {
+    pub fork: String,
+    pub joint: String,
+    pub text: Vec<String>,
+}
+#[derive(Deserialize)]
+pub struct Start {
+    pub title: String,
+    pub panel: Vec<String>,
+    pub guided: Guided,
+    pub explainer: Explainer,
 }
 #[derive(Deserialize)]
 pub struct ChapterCases {
@@ -188,6 +217,10 @@ pub fn chapter_cases() -> &'static ChapterCases {
         serde_json::from_str(include_str!("../chapter-cases.json")).expect("chapter cases")
     })
 }
+pub fn start() -> &'static Start {
+    static S: OnceLock<Start> = OnceLock::new();
+    S.get_or_init(|| serde_json::from_str(include_str!("../start.json")).expect("start copy"))
+}
 pub fn cases() -> &'static Cases {
     static C: OnceLock<Cases> = OnceLock::new();
     C.get_or_init(|| {
@@ -220,12 +253,13 @@ pub fn route_title(path: &str) -> String {
         "search/" => "Search Book 1",
         "constitution/" => "The constitution in plain language",
         "cases/" => "Run the chapters",
+        "start/" => "Start here",
         _ => "Page not found",
     }
     .into()
 }
 pub fn routes() -> Vec<String> {
-    ["", "read/", "search/", "constitution/", "cases/"]
+    ["", "start/", "read/", "search/", "constitution/", "cases/"]
         .iter()
         .map(|p| format!("{PREFIX}{p}"))
         .chain(book().pages.iter().map(|p| p.path.clone()))

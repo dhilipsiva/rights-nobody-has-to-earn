@@ -34,6 +34,11 @@ import xml.etree.ElementTree as ET
 import zipfile
 
 from markdown_it import MarkdownIt
+
+try:  # imported as tools.build_book by the tests, run as a script elsewhere
+    from tools import annotated_contents
+except ImportError:
+    import annotated_contents
 from mdit_py_plugins.footnote import footnote_plugin
 
 
@@ -329,6 +334,7 @@ def ui_markdown(doc: Document, documents: list[Document]) -> str:
 def export_ui(output: Path, documents: list[Document]) -> None:
     """Export reader data, without introducing a second Markdown renderer."""
     output.mkdir(parents=True, exist_ok=True)
+    summaries = annotated_contents.summaries()
     pages = []
     for index, doc in enumerate(documents):
         body = article(doc, documents, "ui")
@@ -343,6 +349,7 @@ def export_ui(output: Path, documents: list[Document]) -> None:
             "canonical": f"{UI_ORIGIN}{UI_PREFIX}read/{doc.stem}/",
             "source": REPOSITORY + "book-1/" + doc.path.name,
             "description": description, "html": body, "text": text,
+            "summary": summaries.get(doc.path.name, ""),
             "markdown": ui_markdown(doc, documents),
             "sections": [{"id": n.get("id"), "title": "".join(n.itertext()), "level": int(n.tag[1])}
                          for n in doc.tree.iter() if re.fullmatch(r"h[1-6]", n.tag) and n.get("id")],

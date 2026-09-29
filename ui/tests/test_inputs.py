@@ -181,5 +181,91 @@ class ChapterCases(unittest.TestCase):
             self.assertRegex(joint['id'], r'^j-[a-z-]+$')
 
 
+
+def pinned_verdicts(path):
+    """Every query a pin file asks, with the verdict it requires; a refused
+    statement maps to REFUSED. A query pinned two ways maps to both."""
+    lines = path.read_text(encoding='utf-8').splitlines()
+    found, refusing = {}, False
+    for index, line in enumerate(lines):
+        text = line.strip()
+        if text.startswith(':refuse'):
+            refusing = True
+            continue
+        if refusing and text and not text.startswith(('#', ':')):
+            found.setdefault(text, set()).add('REFUSED')
+            refusing = False
+            continue
+        if text.startswith('? '):
+            for later in lines[index + 1:index + 3]:
+                match = re.match(r'#\s*=>\s*(\w+)', later.strip())
+                if match:
+                    found.setdefault(text[2:].strip(), set()).add(match.group(1))
+                    break
+    return found
+
+
+def guided_mismatches(steps, pins):
+    """Steps that state a conclusion their pin file does not return."""
+    return [step['query'] for step in steps if pins.get(step['query']) != {step['verdict']}]
+
+
+class FrontDoor(unittest.TestCase):
+    """The companion's front door (item 83): a short panel, a guided first run
+    held to Chapter 1's pins, an explainer, a themed dossier and a book map."""
+    @classmethod
+    def setUpClass(cls):
+        cls.start = json.loads((UI/'start.json').read_text(encoding='utf-8'))
+        cls.game = json.loads((UI/'game.json').read_text(encoding='utf-8'))
+        cls.pins = pinned_verdicts(ROOT/cls.start['guided']['pins'])
+
+    def test_the_panel_is_short_and_says_where_to_begin(self):
+        panel = ' '.join(self.start['panel'])
+        self.assertLessEqual(len(panel.split()), 200)
+        for word in ('fork', 'joint'):
+            self.assertIn(word, panel)
+        for lens in self.game['lenses']:
+            self.assertIn(lens['label'], panel)
+        fork = next(f for f in self.game['scenarios'] if f['id'] == self.start['guided']['fork'])
+        self.assertIn(fork['title'].rstrip('.'), panel)
+
+    def test_the_guided_run_says_only_what_the_pins_return(self):
+        steps = self.start['guided']['steps']
+        self.assertGreaterEqual(len(steps), 5)
+        self.assertEqual(guided_mismatches(steps, self.pins), [])
+        self.assertIn('FALSE', {s['verdict'] for s in steps}, 'the run must show what does not follow')
+
+    def test_sabotage_a_step_claiming_a_delivery_is_found(self):
+        planted = [dict(s) for s in self.start['guided']['steps']]
+        for step in planted:
+            if step['query'] == 'eats(Nell).':
+                step['verdict'] = 'TRUE'
+        self.assertEqual(guided_mismatches(planted, self.pins), ['eats(Nell).'])
+
+    def test_the_explainer_names_a_real_fork_and_a_measured_joint(self):
+        explainer = self.start['explainer']
+        self.assertIn(explainer['fork'], {f['id'] for f in self.game['scenarios']})
+        joint = next(j for j in self.game['joints'] if j['id'] == explainer['joint'])
+        self.assertTrue(joint['measured'])
+        self.assertIn(joint['title'], ' '.join(explainer['text']))
+
+    def test_every_dossier_entry_has_a_theme(self):
+        themes = {f['theme'] for f in self.game['faults']}
+        self.assertEqual(themes, {'limits', 'costs', 'objections'})
+
+    def test_every_chapter_and_opening_case_has_a_map_summary(self):
+        import sys
+        sys.path.insert(0, str(ROOT/'tools'))
+        import annotated_contents
+        summaries = annotated_contents.summaries()
+        manifest = json.loads((ROOT/'book-1/contents.json').read_text(encoding='utf-8'))
+        for part in manifest['parts']:
+            if part.get('opener', {}).get('status') == 'landed':
+                self.assertIn(part['opener']['file'], summaries)
+            for chapter in part['chapters']:
+                if chapter.get('status') == 'landed':
+                    self.assertTrue(summaries.get(chapter['file']), chapter['file'])
+
+
 if __name__ == '__main__':
     unittest.main()

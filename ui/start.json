@@ -1,0 +1,34 @@
+{
+  "license": "CC-BY-4.0",
+  "title": "Start here",
+  "panel": [
+    "Book 1 describes a constitution designed from the person with nothing. This companion runs that constitution's rules on your own device, so you can see what they conclude.",
+    "A fork follows one person's record a move at a time. Each move adds entries to the record and runs the rules on it afresh.",
+    "A joint runs a record twice, once on the constitution and once with one declared change to it, so you can see what the change would alter.",
+    "The four lenses sort the forks: live a life, break it, run the republic, and rewrite the joints.",
+    "Begin with Nell's fork, Be born with nobody: a record of one birth entry, and what follows from it."
+  ],
+  "guided": {
+    "fork": "nell",
+    "pins": "book-1/01-the-child-with-nobody.pins.nibli",
+    "note": "The first move of Nell's fork records one entry. These are the conclusions Chapter 1's tests require from it; running the fork shows the same answers live.",
+    "steps": [
+      {"text": "The record holds one entry: Nell was born.", "query": "born(Nell).", "verdict": "TRUE"},
+      {"text": "From that entry alone, the rules conclude that Nell is a person.", "query": "person(Nell).", "verdict": "TRUE"},
+      {"text": "The State owes Nell food, as it owes her each of the other eight floor items.", "query": "owe(State, Eats, Nell).", "verdict": "TRUE"},
+      {"text": "The barriers that protect a child hold for her, among them that her voice counts at any age.", "query": "prevents(Nell, ChildVoiceNoAgeFloor).", "verdict": "TRUE"},
+      {"text": "Nothing in the record shows food reaching her, so no delivery follows from her one entry.", "query": "eats(Nell).", "verdict": "FALSE"},
+      {"text": "Nothing confines her.", "query": "prisoner(Nell).", "verdict": "FALSE"},
+      {"text": "And the record cannot hold the word vulnerable at all: an attempt to write it is refused.", "query": "vulnerable(Nell).", "verdict": "REFUSED"}
+    ]
+  },
+  "explainer": {
+    "fork": "nell",
+    "joint": "j-birth",
+    "text": [
+      "A fork is a record walked a move at a time. Nell's fork starts from one birth entry and asks at each move what the rules conclude; a later move adds a delivery and a witness, and another asks what growing up changes when nobody records it.",
+      "A joint compares the constitution with one declared change. The measured joint Birth alone gives standing runs Nell's record twice. On the constitution she is a person owed the floor; with the one rule deleted that makes a birth entry a person, she is owed nothing and protected by no barrier, because every duty and every barrier reads personhood.",
+      "Each answer comes from the rules and the records given to them. TRUE says the rules conclude it; FALSE says they do not, and says nothing about what happened in the world; REFUSED says the record could not hold the query at all."
+    ]
+  }
+}

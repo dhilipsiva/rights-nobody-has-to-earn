@@ -15,6 +15,7 @@ pub fn Contents() -> Element {
                 li {
                     if page.part.is_some() && (i == 0 || book().pages[i-1].part != page.part) { h2 { class: "toc-part", "{page.part.as_ref().unwrap()}" } }
                     NavLink { to: page.path.clone(), "{page.label}" }
+                    if !page.summary.is_empty() { p { class: "toc-summary", "{page.summary}" } }
                 }
             } }
         } aside { class: "q-card pad marked side",
@@ -221,5 +222,51 @@ pub fn Cases() -> Element {
                 }
             } }
         }}
+    } }
+}
+#[component]
+pub fn Start() -> Element {
+    let doc = start();
+    let guided = &doc.guided;
+    let explainer = &doc.explainer;
+    let joint = game()
+        .joints
+        .iter()
+        .find(|j| j.id == explainer.joint)
+        .expect("explained joint");
+    rsx! { div { class: "container page start-page",
+        PageHeading { eyebrow: "a way in", title: "{doc.title}",
+            for paragraph in doc.panel.iter() { p { "{paragraph}" } }
+        }
+        section { id: "guided-run", class: "q-card pad", aria_label: "A guided first run",
+            h2 { "A guided first run" }
+            p { "{guided.note}" }
+            ol { class: "guided-steps",
+                for step in guided.steps.iter() {
+                    li { "data-query": "{step.query}",
+                        p { "{step.text}" }
+                        p { class: "guided-query", code { "? {step.query}" } " " span { class: "q-badge", "{step.verdict}" } }
+                    }
+                }
+            }
+            p { a { class: "q-btn q-btn--primary", href: "{PREFIX}#fork={guided.fork}", "Run Nell's fork live →" } " " a { href: "{REPOSITORY}/blob/main/{guided.pins}", "The tests these answers come from ↗" } }
+        }
+        section { id: "forks-and-joints", class: "q-card pad", aria_label: "Forks and joints",
+            h2 { "Forks and joints" }
+            for paragraph in explainer.text.iter() { p { "{paragraph}" } }
+            ul { class: "case-links",
+                li { a { href: "{PREFIX}#fork={explainer.fork}", "data-run": "fork", "Nell's fork: Be born with nobody" } }
+                li { a { href: "{PREFIX}#joint={joint.id}", "data-run": "joint", "{joint.title}" } " · compared live with “{joint.off_label}”" }
+            }
+        }
+        nav { class: "q-card pad", aria_label: "Where next",
+            h2 { "Where next" }
+            ul {
+                li { NavLink { to: format!("{PREFIX}read/"), "The book map: every chapter with what it settles" } }
+                li { NavLink { to: format!("{PREFIX}cases/"), "Each chapter's cases, ready to run" } }
+                li { NavLink { to: format!("{PREFIX}constitution/"), "The constitution in numbered plain-language articles" } }
+                li { a { href: "{PREFIX}#dossier", "The dossier of limits, costs and objections" } }
+            }
+        }
     } }
 }
