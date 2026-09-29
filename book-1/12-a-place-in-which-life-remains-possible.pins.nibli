@@ -1,4 +1,4 @@
-# ── Chapter 11 fidelity pins: "A Place in Which Life Remains Possible" ──────
+# ── Chapter 12 fidelity pins: "A Place in Which Life Remains Possible" ──────
 #
 # KIND: CONTENT pin. Run:
 #   ./verify.sh --only book-1/12-a-place-in-which-life-remains-possible.pins.nibli
@@ -10,9 +10,8 @@
 #
 # The ecological and animal family's own cases carry the environmental claim,
 # the axes, the Guardian route, the authorisations and the withdrawals —
-# tests/pins/ecology/ — and the
-# promoted sections keep the citations they carried in the floor and vote
-# chapters. The liberty-environment pins carry the Class Nine barriers:
+# tests/pins/ecology/. The liberty-environment pins carry the Class Nine
+# barriers:
 #   book-1/source/liberty-environment.pins.nibli     FS-CCE-09, 10, 21..33
 #
 # WHAT FALSE MEANS HERE: a FALSE is pinned only where the KB could have said
@@ -20,18 +19,22 @@
 
 :expect-pins 38
 
-# "the floor's own inventory refuses a ninth item, and the floor refuses to
-# erase the ecological ceiling"
+# "The environmental right stands beside the floor rather than becoming one of
+# its items": the floor's inventory refuses it as a further item, and the
+# floor gives no ground for erasing an ecological ceiling.
 ? prevents(MaterialFloorInventory, EnvironmentalNinthFloor).
 # => TRUE
 
 ? prevents(MaterialFloor, EcologicalCeilingErasure).
 # => TRUE
 
+# Each person also holds a barrier against ecology "selecting floor loss" for
+# them; the rules conclude it for Adam from personhood alone.
 ? prevents(Adam, EcologySelectedFloorLoss).
 # => TRUE
 
-# "separate axes that do not trade against one another" — axis by axis.
+# "Each condition is judged on its own: a failure on one axis stays a failure
+# whatever is gained on another" — axis by axis.
 ? prevents(ClimateAtmosphere, CeilingErasure).
 # => TRUE
 
@@ -47,22 +50,25 @@
 ? prevents(BiodiversityAndHabitats, CeilingErasure).
 # => TRUE
 
-# "the barrier against exhausting that inheritance holds"
+# "the protected object is the ecological capability and the reasonable
+# options inherited by whoever later exists", and it may not be exhausted.
 ? prevents(FutureEcologicalCapability, CommonsExhaustion).
 # => TRUE
 
-# "Two walls keep that arrangement honest"
+# "Scientific assessment, law-making, advocacy and adjudication remain
+# separate functions", and "Uncertainty is not safety."
 ? prevents(EcologicalCeiling, ScienceLawFunctionFusion).
 # => TRUE
 
 ? prevents(EcologicalCeiling, UncertaintyTreatedAsSafety).
 # => TRUE
 
-# "An offset cannot excuse a breach"
+# "No offset excuses a ceiling breach"
 ? prevents(EcologicalBreach, OffsetExcuse).
 # => TRUE
 
-# "an insolvent or unknown responsible party does not delay it"
+# "Urgent public repair stays owed when the responsible actor is unknown,
+# absent or insolvent."
 ? prevents(RestorationDuty, InsolvencyDelay).
 # => TRUE
 
@@ -88,8 +94,9 @@
 ? prevents(Adam, EcologicalReviewDenial).
 # => TRUE
 
-# "For the child with nobody, this chapter holds the conditions of the place
-# the child was born into as a right of the child's own"
+# The child with nobody, on the one-line birth record: "Every person has an
+# independently enforceable environmental right", and Nell holds these
+# barriers as Adam does.
 ? prevents(Nell, EnvironmentalConditionsDenial).
 # => TRUE
 
@@ -105,6 +112,8 @@
 ? prevents(Nell, EcologySelectedFloorLoss).
 # => TRUE
 
+# "The environmental right stands beside the floor": the State's care debt to
+# Nell holds too, concluded from personhood alone.
 ? owe(State, Healthy, Nell).
 # => TRUE
 
@@ -112,6 +121,9 @@
 # the next chapter's.
 # The paired positive supplies the actual economic allocation:
 # tests/pins/ecology/scarcity/water-separate-physical-allocation/expect.pins.nibli
+# The complete continuity record obliges its named responsible actor to
+# preserve the immediate floor, obtain alternatives and repair the breach, and
+# bars calling the unmet floor a success or the breached limit compliance.
 ? complete(RiverWaterContinuityRecord, ECDualFloorAndCeilingContinuity, ExistingEssentialWaterService).
 # => TRUE
 ? obliged(RiverWaterV14, ECPreserveImmediateFloorWhileObtainingAlternativesAndRepairingBreach, RiverWaterContinuityRecord).
@@ -120,10 +132,16 @@
 # => TRUE
 ? prevents(RiverWaterContinuityRecord, ECCeilingBreachRenamedCompliance).
 # => TRUE
+# "Dividing water among people is a separate decision": with no scarcity
+# comparison recorded, the rules conclude neither an allocation permission
+# nor an allocation duty for FSBOD_09.
 ? permits(FSBOD_09, ECOnlyExistingRightsPreservingPhysicalScarcityAllocation, RiverWaterAllocationRecord).
 # => FALSE
 ? obliged(FSBOD_09, ECPreserveActualScarcitySafeguardsFloorContinuityAndSeparateEcologicalFailure, RiverWaterAllocationRecord).
 # => FALSE
+# The claimant: "the claimant remains a person owed care and keeps the vote".
+# No receipt shows care received, and the rules conclude no confinement and
+# no credibility finding.
 ? person(RiverWaterClaimant).
 # => TRUE
 ? owe(State, Healthy, RiverWaterClaimant).

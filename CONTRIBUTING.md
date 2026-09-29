@@ -77,8 +77,10 @@ From the repository root, use the affected companion file for focused feedback:
 ./verify.sh --only book-1/04-whether-it-arrived.pins.nibli
 ```
 
-Review the prose separately. Existing development checks for coverage, links
-and claim bindings can be run with:
+Review the prose separately. A chapter's pin file quotes the chapter in its
+comments, so changing a quoted sentence means changing the comment too.
+Existing development checks for coverage, links, claim bindings and those
+quotations can be run with:
 
 ```bash
 RUST_MIN_STACK=67108864 cargo test --release --locked --bin generate reader_coverage

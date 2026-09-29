@@ -21,6 +21,8 @@ pub struct Lens {
 pub struct Query {
     pub text: String,
     pub label: String,
+    /// What the query asks, in one plain sentence; never what it proves.
+    pub gloss: String,
     pub kind: String,
 }
 #[derive(Clone, Deserialize)]

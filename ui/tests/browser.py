@@ -221,6 +221,8 @@ def main():
         page.locator('.move-button').click();expect(page.locator('[data-case="nell:0"]')).to_be_visible()
         assert page.locator('.verdict').nth(1).locator('output').inner_text()=='FALSE'
         expect(page.locator('.neutral-result')).to_be_visible()
+        nell0=next(f for f in authored['scenarios'] if f['id']=='nell')['steps'][0]['queries']
+        assert [g.inner_text() for g in page.locator('[data-case="nell:0"] .query-gloss').all()]==[q['gloss'] for q in nell0]
         page.evaluate('()=>{window.bookUI.run=window.realRun}')
         page.emulate_media(reduced_motion='reduce');assert page.evaluate('getComputedStyle(document.documentElement).scrollBehavior')=='auto'
         page.goto(args.url+PREFIX+'search/');expect(page.locator('#book-app')).to_have_attribute('data-ready','true')

@@ -67,8 +67,9 @@ observe(PowerLexiconWriter, PowerLexiconRecord, SingleAppointingBodyAppointmentS
 ? member(SingleAppointingBodyAppointmentSource, AppointmentControlSourceKindVocabulary).
 # => TRUE
 
-# "both direct and de facto appointment control observable" — the second is
-# the one a divided-sources arrangement hides.
+# The attesters certify "that no source holds direct or de facto majority
+# control" — the two modes, the second being the one a divided-sources
+# arrangement hides.
 observe(PowerLexiconWriter, PowerLexiconRecord, DirectAppointmentControl, AppointmentControlModeScope).
 ? member(DirectAppointmentControl, AppointmentControlModeVocabulary).
 # => TRUE
@@ -220,10 +221,13 @@ observe(PowerLexiconWriter, PowerLexiconRecord, UnapprovedAppointmentSource, App
 ? owe(State, Expresses, Nell).
 # => TRUE
 
-# "The ballot is not on the floor" — said plainly here rather than blurred.
+# The ballot is not among the floor items: without recorded adulthood, no
+# ballot conclusion follows for the child.
 ? decide(Nell, Ballot).
 # => FALSE
 
+# Nothing adverse follows for Nell either: the record holds no credibility
+# finding against the child and no custody.
 ? false(Nell).
 # => FALSE
 

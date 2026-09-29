@@ -11,10 +11,10 @@
 # put Nell into every roster query in every case; the chapter needs a record
 # that holds nothing else. Ori is queried and never written.
 #
-# The chapter stands first because its positive derivations rest on the birth
-# entry, the universal-standing rule that reads it, and the rules whose whole
-# body is personhood. Everything that reads custody, adulthood evidence or the
-# two-witness delivery machinery is kept out and lands in later chapters'
+# This file's positive conclusions rest on the birth entry, the
+# universal-standing rule that reads it, and the rules whose whole body is
+# personhood. Custody, adulthood evidence and the delivery routes, which need
+# a receipt and an independent witness, are left to later chapters'
 # "The child with nobody" sections.
 #
 # Supporting cases, run in their own contexts:
@@ -27,7 +27,8 @@
 #   tests/pins/family-life/life-course/continuity-needs-no-family-role/expect.pins.nibli
 #       the immediate care-continuity duty completes with no family role
 #   tests/pins/delivery/received-outside-custody/expect.pins.nibli
-#       the mirror: a receipt plus an independent witness derives the floor
+#       the mirror: a receipt plus an independent witness derives the
+#       delivery conclusions
 #
 # WHAT FALSE MEANS HERE: the supplied record does not establish the queried
 # positive statement. It is not proof of its real-world negation. A suitable
@@ -36,7 +37,7 @@
 
 :expect-pins 90
 
-# "The record supplied for this chapter says one thing about Nell"
+# "The record holds one entry about Nell: Nell was born."
 ? born(Nell).
 # => TRUE
 
@@ -83,6 +84,8 @@
 ? owe(State, Meets, Nell).
 # => TRUE
 
+# Beside each debt, Nell's entitlement to each floor item: "Every debt and
+# every entitlement follows from the birth entry."
 ? entitled(Nell, event { eats() }).
 # => TRUE
 
@@ -154,12 +157,14 @@
 ? prevents(Nell, Book2LifeCourseBoundary).
 # => TRUE
 
-# "The word *vulnerable* is not merely absent from Nell's record. It is not a
-# word the record can hold at all" — refused before it can load.
+# "Nobody has to classify Nell as vulnerable either. The record refuses that
+# word outright, and an attempt to enter it is rejected."
 :refuse syntax /unknown predicate "vulnerable"/
 vulnerable(Nell).
 
-# "What does not follow" — no confinement, no receipt, no witness, no teacher.
+# "What delivery needs": no floor item is shown reaching Nell. The record
+# holds no receipt with an independent witness and no teacher or hearing;
+# bodily safety, expression and belief have no delivery route at all.
 ? eats(Nell).
 # => FALSE
 
@@ -191,6 +196,8 @@ vulnerable(Nell).
 ? person(Ori).
 # => FALSE
 
+# "For Ori the rules conclude nothing": not the food debt, not its
+# entitlement, and not the care-continuity barrier that hold for Nell.
 ? owe(State, Eats, Ori).
 # => FALSE
 
@@ -226,9 +233,13 @@ observe(Passerby, NellUnattended, Nell, UninitiatedAssistanceScope).
 
 # The observation concludes nothing about Nell. Not that anybody failed, not
 # that Nell is unable to act, not that Nell is anything at all.
+# Writing it gives the writer nothing either: the rules conclude no
+# personhood for Passerby, who has no standing root.
 ? person(Passerby).
 # => FALSE
 
+# And the rules draw "nothing adverse about Nell" from it: no confinement,
+# no credibility finding and no recorded loss.
 ? prisoner(Nell).
 # => FALSE
 
@@ -259,7 +270,11 @@ observe(Passerby, NellUnattended, Nell, UninitiatedAssistanceScope).
 # TRUE, and the comment says what would flip it.
 
 
-# ── "There is more than one way a person enters this design" ───────────────
+# ── "Nell's birth is one way into the record." ───────────────────────────────
+# Fresh names, each given a single standing root: a birth (WhoBorn), first
+# contact (WhoMet), presence in the jurisdiction (WhoPresent) or effective
+# control (WhoHeld). "Each route stands alone", and the rules conclude
+# personhood from each.
 born(WhoBorn).
 at(WhoMet, FirstContact).
 at(WhoPresent, RepublicJurisdiction).
@@ -283,13 +298,15 @@ observe(WhoSaw, WhoReportedEntry, WhoReported, UninitiatedAssistanceScope).
 ? person(WhoReported).
 # => TRUE
 
+# Standing from the report carries the same food debt as any other root,
+# and the report "places nobody in custody".
 ? owe(State, Eats, WhoReported).
 # => TRUE
 
 ? prisoner(WhoReported).
 # => FALSE
 
-# ── "the rooms behind them are the same room" ──────────────────────────────
+# ── "Each route leads to the same floor." ────────────────────────────────────
 # The same debt, asked of each root in turn.
 ? owe(State, Eats, WhoBorn).
 # => TRUE
@@ -313,8 +330,11 @@ observe(WhoSaw, WhoReportedEntry, WhoReported, UninitiatedAssistanceScope).
 ? entitled(WhoHeld, event { suffice() }).
 # => TRUE
 
-# ── "It proves no civil identity, no citizenship, no family relationship, no
-# liability and no guilt." ────────────────────────────────────────────────
+# ── "It refers and settles nothing else: civil identity, citizenship, family
+# relationship, liability and guilt all stay open." ───────────────────────────
+# The first-contact name gives standing and nothing more: no public
+# answerability (authority), no confinement (prisoner) and no credibility
+# finding (false).
 ? authority(WhoMet).
 # => FALSE
 
@@ -324,7 +344,9 @@ observe(WhoSaw, WhoReportedEntry, WhoReported, UninitiatedAssistanceScope).
 ? false(WhoMet).
 # => FALSE
 
-# ── "An alias claim is not an identity merge ... in either direction." ─────
+# ── "A claimed alias leaves identities separate." ────────────────────────────
+# The registry cites an alias claim against both encounter names, and the
+# rules conclude no match between them either way.
 cite(Registry, WhoAliasClaim, WhoMet).
 cite(Registry, WhoAliasClaim, WhoPresent).
 ? match(WhoMet, WhoPresent).
@@ -333,16 +355,18 @@ cite(Registry, WhoAliasClaim, WhoPresent).
 ? match(WhoPresent, WhoMet).
 # => FALSE
 
-# ── "a public body cannot be smuggled in through the encounter route" ──────
+# ── "Encounter entries give standing to people only." ────────────────────────
 at(Court, FirstContact).
 ? person(Court).
 # => FALSE
 
+# Nor does the report route admit it: "a report that nobody is acting for
+# it" leaves the Court outside personhood as well.
 observe(WhoSaw, CourtReportedEntry, Court, UninitiatedAssistanceScope).
 ? person(Court).
 # => FALSE
 
-# ── "A mistaken status entry does not retract personhood." ─────────────────
+# ── "A broken status record leaves a valid standing root intact." ────────────
 cite(Registry, WhoDeathEntry, WhoMet).
 broken(WhoDeathEntry).
 ? person(WhoMet).
@@ -352,8 +376,9 @@ broken(WhoDeathEntry).
 ? broken(WhoDeathEntry).
 # => TRUE
 
-# ── "Missing or disputed evidence of age does not postpone standing" ───────
-# It costs exactly what it should cost and no more.
+# ── "Missing or disputed age evidence also leaves standing intact." ──────────
+# No adulthood evidence is recorded for this name, so the rules conclude no
+# ballot, while personhood stands: "the floor asks only for personhood".
 ? at(WhoPresent, GeneralAdulthood).
 # => FALSE
 
@@ -363,15 +388,15 @@ broken(WhoDeathEntry).
 ? person(WhoPresent).
 # => TRUE
 
-# ── "the routes here are generous about who counts, and entirely silent
-# about who notices" ──────────────────────────────────────────────────────
+# ── A way in is not a delivery ───────────────────────────────────────────────
+# A route in gives standing, not delivery: "the rules need a report of
+# receipt and matching independent evidence", and none is recorded here.
 ? eats(WhoHeld).
 # => FALSE
 
 # ── The child with nobody ──────────────────────────────────────────────────
-# "the child is a person because of an entry that says nothing else about
-# them. That is the whole mechanism, and it is the same mechanism" — the birth
-# root asked of the fixture rather than of a probe written in this file.
+# The birth root asked of the fixture's Nell rather than of a probe written
+# in this file: the same personhood and the same food debt follow.
 ? person(Nell).
 # => TRUE
 

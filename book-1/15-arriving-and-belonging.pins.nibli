@@ -24,8 +24,8 @@
 #   tests/pins/mobility/consultation/positive
 #   tests/pins/mobility/evacuation/positive
 #   tests/pins/mobility/defect/downstream-withdrawal   the withdrawal sequence
-#                                       "When the consent turns out not to have
-#                                       been consent" is written from
+#                                       "When a consent record is defective"
+#                                       is written from
 #   tests/pins/mobility/removal/positive
 #   tests/pins/mobility/nationality/positive
 #   tests/pins/mobility/external/positive
@@ -50,9 +50,8 @@
 ? travel(MPNewcomer).
 # => TRUE
 
-# "The former resident's return right remains, without a diaspora ballot."
-# The floor does not carry a vote, and this chapter is where that is said out
-# loud rather than blurred.
+# "The ballot has its own route", and "presence alone gives no ballot": the
+# floor does not carry a vote, and this chapter says so plainly.
 ? decide(MPNewcomer, Ballot).
 # => FALSE
 
@@ -63,8 +62,8 @@
 ? obliged(State, KeepStandingFloorLibertyLanguageProcessAndRemedyContinuous, MPNewcomer).
 # => TRUE
 
-# "arrivals belong in the affected population, and status cannot set their
-# priority"
+# "arrivals belong in the affected population, and status is a forbidden
+# ground for their priority."
 ? obliged(State, IncludeEveryoneUnderJurisdictionOrEffectiveControlInScarcity, MPNewcomer).
 # => TRUE
 
@@ -74,16 +73,20 @@
 ? prevents(MPNewcomer, MobilityStatusBasedScarcityPriority).
 # => TRUE
 
-# "A person never entered in a record is not a missing row the record can
-# discover."
+# "Help follows from presence alone", and "a missing record counts against
+# nobody."
 ? prevents(MPNewcomer, MobilityMissingRecordAdverseInference).
 # => TRUE
 
+# Standing, the floor and remedy take no condition of status: "Citizenship,
+# documents, manner of arrival and time spent there are outside its
+# conditions".
 ? prevents(MPNewcomer, MobilityStatusConditionedStandingFloorOrRemedy).
 # => TRUE
 
-# "A service may not enrol someone into an enforcement record as its price,
-# collect status for that purpose, or transmit its records to enforcement."
+# "A service is barred from enrolling someone into an enforcement record as
+# the price of help, from collecting status for that purpose and from passing
+# its records to enforcement."
 ? prevents(MPNewcomer, MobilityEnforcementEnrolmentThroughServices).
 # => TRUE
 
@@ -100,29 +103,32 @@
 ? prevents(MPNewcomer, MobilityCollectiveExpulsion).
 # => TRUE
 
-# "No child may be detained for immigration purposes."
+# "Immigration detention of a child is prohibited."
 ? prevents(MPNewcomer, MobilityChildImmigrationDetention).
 # => TRUE
 
-# "Nationality cannot be taken as punishment or in a way that leaves someone
-# stateless."
+# "Taking nationality as punishment, or in a way that leaves someone
+# stateless, is prohibited".
 ? prevents(MPNewcomer, MobilityStatelessnessCreationOrPerpetuation).
 # => TRUE
 
-# "changing a contractor, affiliate, flag or forum does not remove the duty"
+# "the duty survives a change of contractor, affiliate, flag or forum."
 ? prevents(MPNewcomer, MobilityPushbackOrExternalisedDutyEvasion).
 # => TRUE
 
 # ── The belonging half, on the same person ─────────────────────────────────
-# "it does not turn membership into a measure of worth, risk or political
-# weight" — and "Nonmember residents retain common services".
+# "membership stays outside any measure of worth, risk or political weight" —
+# and "Nonmember residents retain common services".
 ? prevents(MPNewcomer, PluralityMembershipPoliticalWeight).
 # => TRUE
 
 ? prevents(MPNewcomer, PluralityNonmemberCommonServiceDenial).
 # => TRUE
 
-# "They cannot remove individual voice, dissent, confidential help ..."
+# Internal selection and customary law may differ from general-government
+# rules, but "Individual voice, dissent, confidential help, children's rights,
+# equality, liberty, reasons, appeal and final constitutional review all
+# survive them."
 ? prevents(MPNewcomer, PluralityInternalLawLoweringIndividualRights).
 # => TRUE
 
@@ -133,7 +139,7 @@
 # => TRUE
 
 # ── The child with nobody ──────────────────────────────────────────────────
-# "the same rules still reach it: personhood, the floor, the absence of any
-# coercive consequence" — and no ballot, which this chapter says plainly.
+# The ballot "follows from recorded adulthood", and the child's one-line record
+# holds none, so no ballot conclusion follows for Nell.
 ? decide(Nell, Ballot).
 # => FALSE

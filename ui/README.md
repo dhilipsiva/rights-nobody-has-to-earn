@@ -72,7 +72,9 @@ once.
 
 `game.json` holds authored moves, query labels, interpretation categories, costs,
 and dossier discussion, each dossier entry grouped by theme as a limit, a cost
-or an objection. `case-map.json` explicitly maps each move to source
+or an objection. Every query carries a gloss, one sentence saying what it asks
+and never what it proves, which the game shows under the verdict's label;
+`tests/test_inputs.py` requires one for every query, with a sabotage control. `case-map.json` explicitly maps each move to source
 checkpoints, suite fixtures, additional premises and cross-chapter references.
 It also records the delivery example's renamed constants. `prepare.py` snapshots
 only persistent admitted statements before those checkpoints. Refused and

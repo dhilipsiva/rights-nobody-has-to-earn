@@ -267,5 +267,80 @@ class FrontDoor(unittest.TestCase):
                     self.assertTrue(summaries.get(chapter['file']), chapter['file'])
 
 
+
+# Predicates whose argument, at this position, is the person a query is about.
+PERSON_PLACES = {'person': 0, 'prisoner': 0, 'travel': 0, 'decide': 0, 'defend': 0,
+                 'false': 0, 'eats': 0, 'dwell': 0, 'healthy': 0, 'expresses': 0,
+                 'owe': 2, 'entitled': 0}
+CLAIMS = re.compile(r'\b(prove[sd]?|proof|shows?|establish(es|ed)?|TRUE|FALSE|REFUSED)\b')
+
+
+def game_queries(game):
+    for fork in game['scenarios']:
+        for step in fork['steps']:
+            yield from step['queries']
+    for joint in game['joints']:
+        yield from joint['queries']
+
+
+def arguments(text):
+    match = re.match(r'\s*([A-Za-z_]+)\((.*)\)\.\s*$', text)
+    return (match[1], [a.strip() for a in match[2].split(',')]) if match else (text, [])
+
+
+def gloss_problems(game):
+    """Each query's gloss says in one sentence what it asks, names the person
+    it asks about, claims no result, and reads the same wherever it recurs."""
+    queries = list(game_queries(game))
+    names = set()
+    for query in queries:
+        predicate, args = arguments(query['text'])
+        place = PERSON_PLACES.get(predicate)
+        if place is not None and place < len(args) and re.fullmatch(r'[A-Z][a-z]+', args[place]):
+            names.add(args[place])
+    problems, seen = [], {}
+    for query in queries:
+        text, gloss = query['text'], query.get('gloss', '')
+        if not gloss:
+            problems.append(f'{text}: no gloss')
+            continue
+        if not gloss.startswith('Asks whether ') or not gloss.endswith('.') or '. ' in gloss:
+            problems.append(f'{text}: not one sentence saying what it asks')
+        if CLAIMS.search(gloss):
+            problems.append(f'{text}: the gloss claims a result')
+        for name in sorted(set(arguments(text)[1]) & names):
+            if not re.search(rf'\b{name}\b', gloss):
+                problems.append(f'{text}: the gloss does not name {name}')
+        if seen.setdefault(text, gloss) != gloss:
+            problems.append(f'{text}: glossed two ways')
+    return problems
+
+
+class QueryGlosses(unittest.TestCase):
+    @classmethod
+    def setUpClass(cls):
+        cls.game = json.loads((UI/'game.json').read_text(encoding='utf-8'))
+
+    def test_every_query_says_what_it_asks(self):
+        self.assertEqual(gloss_problems(self.game), [])
+        self.assertEqual(len(list(game_queries(self.game))), 249)
+
+    def test_sabotage_a_missing_wrong_or_claiming_gloss_is_found(self):
+        def first(game, text):
+            return next(q for q in game_queries(game) if q['text'] == text)
+        game = json.loads(json.dumps(self.game))
+        del first(game, 'born(Nell).')['gloss']
+        self.assertEqual(gloss_problems(game), ['born(Nell).: no gloss'])
+        game = json.loads(json.dumps(self.game))
+        claiming = [q for q in game_queries(game) if q['text'] == 'eats(Marisol).']
+        for query in claiming:
+            query['gloss'] = 'Asks whether the rules prove that Marisol ate.'
+        self.assertEqual(gloss_problems(game), ['eats(Marisol).: the gloss claims a result'] * len(claiming))
+        game = json.loads(json.dumps(self.game))
+        query = first(game, 'owe(State, Eats, Zed).')
+        query['gloss'] = query['gloss'].replace('Zed', 'Nell')
+        self.assertIn('owe(State, Eats, Zed).: the gloss does not name Zed', gloss_problems(game))
+
+
 if __name__ == '__main__':
     unittest.main()

@@ -10,10 +10,10 @@
 # corpus name this KB never mentions is real but empty: nothing could have made
 # it TRUE. A non-corpus name is not a FALSE at all — the run aborts, pins not
 # trustworthy. And a well-formed query on an argument its relation never
-# carries is a vacuous green that passes forever. Article 0a closed the
-# ASSERTION side only — a widening fact now aborts the run instead of loading —
+# carries is a vacuous green that passes forever. Article 0a closes the
+# ASSERTION side only — a widening fact aborts the run rather than loading —
 # but a QUERY on an unmentioned name still answers a clean FALSE, so kind one
-# is untouched. Pin a FALSE only where the KB could have said TRUE, and say in
+# remains. Pin a FALSE only where the KB could have said TRUE, and say in
 # the comment what would flip it.
 
 :expect-pins 177
@@ -25,12 +25,15 @@
 
 # ── Who holds the authority to sign ───────────────────────────────────────────
 
-# "The electorate seated you. You have not been recalled. And you were not
-#  voided in an earlier period." — all three holding gives the pen.
+# "Each route needs a seating, no recall, and a positive record of clear
+# history, witnessed in an earlier version of the record and kept in the
+# version in force." And "A restriction recorded in an earlier version and
+# kept in the version in force withholds the authority."
 
-# The original scenario now supplies qualified fictional merits, signed
-# harm findings, placement and intake. Its original missing/conflicting
-# temporal premises and every original query remain independently tested.
+# Voss's custody case, for the relief tests further down: "Custody needs its
+# own positive merits, defence, procedure, current authority and lawful
+# placement evidence." These entries supply the merits, a severity finding,
+# the placement and intake; the case-bound review comes with Voss below.
 list(Case_Voss, Voss, Incident_Case_Voss, CustodyMatter).
 list(Case_Voss, PublicInjuryOffence, Evidence_Case_Voss, CustodyOffenceEvidence).
 list(Case_Voss, Ivo, Prosecution, CustodyParties).
@@ -140,6 +143,10 @@ observe(CustodyIntake, Case_Voss, NoHolderPermissionNoRetaliationAndImmediateSus
 observe(CustodyIntakeAudit, Case_Voss, NoHolderPermissionNoRetaliationAndImmediateSuspensionOnFiling, CustodyIntakeProtectionScope).
 
 
+# Gia, seated by the electorate, holds the review body's authority to sign,
+# and Wren, seated by the convocation, holds the tribunal's: "an electorate
+# seating gives the review body's authority, and a convocation seating gives
+# the tribunal's".
 ? choose(Electorate, Gia).
 # => TRUE
 
@@ -149,17 +156,21 @@ observe(CustodyIntakeAudit, Case_Voss, NoHolderPermissionNoRetaliationAndImmedia
 ? permits(Tribunal, Wren).
 # => TRUE
 
-# "Gia is seated by Electorate; Wren is seated by Convocation." Each route gives
-# its own credential: Gia's positively established clear history gives her the
-# review credential, not the Tribunal's, because the Convocation did not seat her.
+# Each route gives its own authority to sign: Gia's witnessed clear history
+# gives the review body's and not the tribunal's, because the convocation
+# did not seat Gia. "An examiner seated only by the electorate holds the
+# first and lacks the second."
 ? permits(Tribunal, Gia).
 # => FALSE
 
-# "Writing it down directly is not forbidden-and-punished; it is refused."
+# "A separate test tries to give someone the review body's authority to sign
+# by entering it directly. The attempt is refused."
 :refuse reasoning /declared derived-only/
 permits(Review, Sock).
 
-# "Tove keeps standing permanently and loses the credential immediately."
+# Tove is seated by the electorate and recalled (broken). "A recalled
+# official stays answerable and loses the authority": Tove keeps public
+# answerability (authority) and lacks the review body's authority to sign.
 ? choose(Electorate, Tove).
 # => TRUE
 
@@ -172,8 +183,9 @@ permits(Review, Sock).
 ? permits(Review, Tove).
 # => FALSE
 
-# "Mael was also seated, and was never recalled — but Mael was voided in an
-#  earlier period. Mael has no pen either."
+# "Mael is seated by the electorate and under a finding in force, and a
+# restriction recorded in an earlier version and kept in the version in
+# force separately withholds Mael's authority to sign".
 ? choose(Electorate, Mael).
 # => TRUE
 
@@ -183,37 +195,38 @@ permits(Review, Sock).
 ? permits(Review, Mael).
 # => FALSE
 
-# "On the account so far, Nia should be a prisoner — the injury, the judgment,
-# the machinery." The premises are pinned so the relief verdict below cannot go
-# vacuous: prisoner(Nia) FALSE means something only while a conviction is there
-# to be relieved.
+# Nia's custody case is recorded with its merits, placement, intake and
+# current review, so the relief verdict below answers a real case; the
+# injury and the court's judgment are pinned first.
 ? injure(Nia, Ivo).
 # => TRUE
 
 ? judge(Court, Nia).
 # => TRUE
 
-# "Nia is not a prisoner, because Nia was cleared."
+# The record also holds a raw clearing entry and a generic judgment by the
+# appeals body naming Nia: "A raw clearing entry or a generic judgment by the
+# appeals body is a different thing" from the order that gives relief.
 ? clear(Nia).
 # => TRUE
 
-# [v0.9] ...and the adjudication the relief now requires
 ? judge(Appeals, Nia).
 # => TRUE
 
+# The relief rests on the properly made appellate order for Nia's case in
+# the record, which quashes the conviction without retrial: the appeals
+# body's relief for Nia holds, and the rules conclude no custody for Nia.
 ? permits(Appeals, Nia).
 # => TRUE
 
 ? prisoner(Nia).
 # => FALSE
 
-# ── THE BARE FLAG DERIVES NOTHING. Ground fact persists; keep this last ──────
-# "The clearing entry still names no author. The judgment names a body and
-# person, not a case, purpose, act or writer." Adam — convicted, homeless,
-# housed by confinement — is written as cleared, with no generic Appeals
-# judgment beside the word, and nothing moves. Negative-controlled against the pre-guard
-# constitution: these three flip (the flag alone sprang him), and Nia's pins
-# above stand either way.
+# ── A raw clearing entry gives no relief ───────────────────────────────────
+# Adam's custody case is complete, and the test adds only a raw clearing
+# entry, which names no author, case or purpose. No relief follows, custody
+# stands and the rules conclude no free movement for Adam; if the entry
+# alone gave relief, each of these verdicts would flip.
 clear(Adam).
 
 ? permits(Appeals, Adam).
@@ -225,14 +238,10 @@ clear(Adam).
 ? travel(Adam).
 # => FALSE
 
-# ── THE BARE JUDGMENT DERIVES NOTHING EITHER — the other half, ruled 2026-08-02.
-# The chapter's new default paragraph stands on this pair: an appeals
-# examination that cleared nobody leaves the conviction exactly where it stood.
-# Relief takes both entries. Missing relief permits the prisoner conclusion
-# only when all other custody premises hold. Voss is fresh (Adam's
-# persisting clear-flag above must not meet a judgment fact, or the two halves
-# would combine and free him). Self-controlling against Nia's block above:
-# both entries together lift a conviction, either alone lifts nothing.
+# ── A generic appeals judgment gives no relief either ──────────────────────
+# Voss's custody case is complete. "Missing relief alone confines nobody":
+# custody rests on the case's own merits, placement and current authority,
+# recorded above and below.
 person(Voss).
 injure(Voss, Ivo).
 judge(Court, Voss).
@@ -264,6 +273,10 @@ endorses(TemporalReview, Case_Voss).
 ? prisoner(Voss).
 # => TRUE
 
+# The test adds a generic judgment by the appeals body naming Voss.
+# The judgment names a body and person, not a case, purpose, act or writer,
+# so "the rules still conclude custody for a person whose custody case is
+# otherwise complete and whose only relief entries are those."
 judge(Appeals, Voss).
 
 ? permits(Appeals, Voss).
@@ -273,12 +286,15 @@ judge(Appeals, Voss).
 # => TRUE
 
 # ── The limits of a finding ─────────────────────────────────────────────────────
-# The limits of a finding.
-# Original contribution, accusation, child and restoration scenarios retained.
-# The 2026-09-20 removal supersedes their recognition and clawback verdicts.
-# The removed producers and blanket penalty execute in the explicit
-# credibility/counterfactual-blanket-recognition-loss regression.
+# No rule concludes recognition (reward) or a loss of points (lose with
+# Points), so the FALSE pins on them confirm that a finding brings neither.
+# The case credibility/counterfactual-blanket-recognition-loss adds such
+# rules explicitly and shows the blanket penalty they would impose.
 
+# "Bela's completed credibility case remains in force." The rules still
+# conclude that Bela is a person with free movement and the ballot, entitled
+# to food and owed it by the State, and conclude no custody. No recognition
+# follows, and "Nothing is recorded as lost".
 ? false(Bela).
 # => TRUE
 
@@ -306,6 +322,9 @@ judge(Appeals, Voss).
 ? owe(State, Eats, Bela).
 # => TRUE
 
+# Being owed food is a separate fact from receiving it. The record shows no
+# food or shelter received by Bela, and no food received by Jala, against
+# whom no finding is recorded.
 ? eats(Bela).
 # => FALSE
 
@@ -315,6 +334,9 @@ judge(Appeals, Voss).
 ? eats(Jala).
 # => FALSE
 
+# Bela taught Cira, and "Being taught confers no recognition status,
+# transfers no fraud and imposes no debt on Cira": no finding against Cira
+# follows, no recognition follows, and nothing is recorded as lost.
 ? teaches(Bela, Cira).
 # => TRUE
 
@@ -327,6 +349,8 @@ judge(Appeals, Voss).
 ? false(Cira).
 # => FALSE
 
+# Esa teaches Fin, whom no record makes a person; no finding against Esa
+# follows, and nothing is recorded against Fin as lost.
 ? teaches(Esa, Fin).
 # => TRUE
 
@@ -339,6 +363,8 @@ judge(Appeals, Voss).
 ? lose(Points, Fin).
 # => FALSE
 
+# Edo is under a finding in force for deceiving Mira; nothing is recorded as
+# lost against Edo, or against Mira.
 ? false(Edo).
 # => TRUE
 
@@ -348,6 +374,9 @@ judge(Appeals, Voss).
 ? lose(Points, Mira).
 # => FALSE
 
+# Mael's earlier restriction, reported and kept in the version in force,
+# withholds the authority to sign, and Mael is under a finding in force.
+# Nothing is recorded as lost, and "Mael stays publicly answerable".
 ? rotten(Mael).
 # => TRUE
 
@@ -382,6 +411,10 @@ observe(Assay, Illness, Bela, SchemeM).
 observe(Court, CompensationFraud, Bela, OtherBasis).
 ? provide(Foundry, Wage, Bela).
 # => TRUE
+# A court finding on the labour basis the attester recorded stops the wage
+# conclusion and yields restitution from Bela to Foundry, while the illness
+# supplement and the food debt remain: "Each consequence answers to a
+# finding about its own basis".
 observe(Court, CompensationFraud, Bela, LabourBasis).
 ? provide(Foundry, Wage, Bela).
 # => FALSE
@@ -391,14 +424,21 @@ observe(Court, CompensationFraud, Bela, LabourBasis).
 # => TRUE
 ? owe(State, Eats, Bela).
 # => TRUE
+# Mael is under a finding in force, so the appeals body owes a review of the
+# continuing restriction "without having to ask".
 ? obliged(Appeals, ReviewContinuingCredibilityRestriction, Mael).
 # => TRUE
 
+# The test adds a forgiveness flag from the appeals body naming Mael, and
+# the finding stays in force.
 forgive(Appeals, Mael).
 
 ? false(Mael).
 # => TRUE
 
+# The test adds a generic judgment by the appeals body naming Mael as well,
+# and no restoration follows: "A generic judgment and a forgiveness flag
+# restore nothing."
 judge(Appeals, Mael).
 
 ? clean(Mael).
@@ -406,6 +446,10 @@ judge(Appeals, Mael).
 ? false(Mael).
 # => TRUE
 
+# The test records the particular appellate act for Mael's finding: its
+# purpose, evidence and procedure, the tribunal's independent review, each
+# actor's eligibility at the decision, and its place between the finding
+# and the version in force.
 list(Restore_Mael_Recognition, Mael, Credibility_Mael_Finding, CredibilityRestoration).
 list(Restore_Mael_Recognition, RestoreCredibilityFinding, Evidence_Restore_Mael_Recognition, CredibilityAppealPurposeEvidence).
 judge(Appeals, Restore_Mael_Recognition).
@@ -437,6 +481,9 @@ observe(Chronicle, Order_After_Restore_Mael_Recognition, Epoch_Current, RecordEn
 observe(TemporalReview, Order_After_Restore_Mael_Recognition, Restore_Mael_Recognition, RecordStartScope).
 observe(TemporalReview, Order_After_Restore_Mael_Recognition, Epoch_Current, RecordEndScope).
 
+# With that act recorded, "the personal finding ends", and nothing is
+# granted or recorded as lost. The earlier restriction is still reported,
+# so "the authority to sign stays withheld".
 ? clean(Mael).
 # => TRUE
 
@@ -455,10 +502,14 @@ observe(TemporalReview, Order_After_Restore_Mael_Recognition, Epoch_Current, Rec
 ? rotten(Mael).
 # => TRUE
 
-# The restored case no longer incurs the continuing personal-restriction duty.
+# Once the finding is restored, "the duty to review its continuation ends
+# with it".
 ? obliged(Appeals, ReviewContinuingCredibilityRestriction, Mael).
 # => FALSE
 
+# Admitted as a word of the record, lose is still a conclusion only the
+# rules may reach: a statement that enters a loss directly is refused in any
+# form, and nothing in it loads, so Loss_Probe does not become a person.
 :accept
 admits("lose").
 
@@ -529,6 +580,10 @@ lose(Points, Ghost, Case).
 ? false(Edo).
 # => TRUE
 
+# The record holds a proposal against Tyr by Mael, whose earlier restriction
+# is reported, and Wren, who holds the tribunal's authority to sign. Mael's
+# signature cannot count and no completed case exists, so no finding
+# against Tyr follows.
 ? rotten(Mael).
 # => TRUE
 
@@ -606,12 +661,17 @@ capture(Scionfa, Targ).
 cite(Sirefa, CredibilityGroundDeceit, Targ).
 cite(Scionfa, CredibilityGroundDeceit, Targ).
 
+# Each of the pair holds the authority to sign, so the family tie is what
+# stops their proposal.
 ? permits(Review, Sirefa).
 # => TRUE
 
 ? permits(Tribunal, Scionfa).
 # => TRUE
 
+# They "record every other element of a proposal on the ground of deceit"
+# against Targ. The agree query, for a CredibilityFindingCandidate, asks
+# whether the proposal is properly made: it is not, and no finding follows.
 list(Finding_Targ, Targ, Incident_Targ, CredibilityFinding).
 list(Finding_Targ, CredibilityGroundDeceit, Evidence_Finding_Targ, CredibilityGroundEvidence).
 judge(Sirefa, Finding_Targ).
@@ -673,6 +733,9 @@ observe(Unrelb, Finding_Targo, NoticeEvidenceAccessHearingAndReasons, Credibilit
 # => TRUE
 ? false(Targo).
 # => FALSE
+# Completed history: both witnesses record each signer's eligibility at the
+# decision and the finding's place before the version in force. The judgment
+# is complete (responsible), and the finding against Targo follows.
 observe(Chronicle, Finding_Targo, Unrela, CredibilityReviewSignerEligibleAtDecisionScope).
 observe(TemporalReview, Finding_Targo, Unrela, CredibilityReviewSignerEligibleAtDecisionScope).
 observe(Chronicle, Finding_Targo, Unrelb, CredibilityTribunalSignerEligibleAtDecisionScope).
@@ -696,6 +759,8 @@ cite(Ambi, CredibilityGroundDeceit, Solo).
 authorized(Ambi, IndependentReviewer, Solo).
 authorized(Ambi, IndependentReviewer, Solo).
 
+# Ambi holds both authorities and records every element twice, yet "one
+# person counts as one signer, and nothing follows".
 ? permits(Review, Ambi).
 # => TRUE
 
@@ -730,12 +795,19 @@ observe(Ambi, Finding_Solo, NoticeEvidenceAccessHearingAndReasons, CredibilityPr
 # Current disqualification blocks Frisk's proposed finding despite appointment.
 choose(Electorate, Edo).
 
+# Seated by the electorate with a clear history witnessed earlier, Edo holds
+# the review body's authority while under a finding in force: "the personal
+# finding leaves the appointment where it was".
 ? false(Edo).
 # => TRUE
 
 ? permits(Review, Edo).
 # => TRUE
 
+# Partnr, seated by the convocation, joins Edo in a proposal against Frisk on
+# the fabricated-record ground. Every element is present, and still "a
+# finding in force keeps its subject's signature from counting toward a new
+# one": the proposal fails, and Frisk "stays free of any finding".
 choose(Convocation, Partnr).
 judge(Edo, Frisk).
 capture(Edo, Frisk).
@@ -771,6 +843,7 @@ observe(Partnr, Finding_Frisk_Chapter, NoticeEvidenceAccessHearingAndReasons, Cr
 ? false(Frisk).
 # => FALSE
 
+# Seating Edo and Partnr gives no finding against Tyr either.
 ? false(Tyr).
 # => FALSE
 
@@ -796,6 +869,8 @@ capture(Maro, Targ2).
 cite(Mara, CredibilityGroundDeceit, Targ2).
 cite(Maro, CredibilityGroundDeceit, Targ2).
 
+# "A married pair in the same position fails too": Mara and Maro's proposal
+# against Targ2 is not properly made, and no finding follows.
 list(Finding_Targ2, Targ2, Incident_Targ2, CredibilityFinding).
 list(Finding_Targ2, CredibilityGroundDeceit, Evidence_Finding_Targ2, CredibilityGroundEvidence).
 judge(Mara, Finding_Targ2).
@@ -821,6 +896,9 @@ observe(Maro, Finding_Targ2, NoticeEvidenceAccessHearingAndReasons, CredibilityP
 ? false(Targ2).
 # => FALSE
 
+# The unrelated pair: Una and Uno, seated the same way, make the same
+# proposal against Targ3. It is properly made, and the finding follows once
+# the completed history is recorded.
 choose(Electorate, Una).
 choose(Convocation, Uno).
 judge(Una, Targ3).
@@ -868,7 +946,9 @@ observe(TemporalReview, Order_Finding_Targ3, Epoch_Current, RecordEndScope).
 ? false(Targ3).
 # => TRUE
 
-# A complaint pays for examination; an adverse pair must affirm the same case.
+# "A complaint is an occasion to examine someone, and a different thing from
+# any of those grounds": an adverse pair must affirm the same ground for the
+# same case.
 authorized(Nogra, ClearStatus, Epoch_Previous).
 observe(Chronicle, Nogra, Epoch_Previous, ClearScope).
 observe(TemporalReview, Nogra, Epoch_Previous, ClearScope).
@@ -890,6 +970,8 @@ capture(Nogrb, Targ4).
 authorized(Nogrb, IndependentReviewer, Targ4).
 cite(Nogrb, Complaint, Targ4).
 
+# Both examiners hold their authority to sign, no recognition follows for
+# either, and the complaint by itself makes no finding against Targ4.
 ? permits(Review, Nogra).
 # => TRUE
 
@@ -905,6 +987,8 @@ cite(Nogrb, Complaint, Targ4).
 ? false(Targ4).
 # => FALSE
 
+# Their proposal names the subject, incident, evidence and procedure, but
+# neither examiner records the deceit ground for it: it is not properly made.
 list(Finding_Targ4, Targ4, Incident_Targ4, CredibilityFinding).
 list(Finding_Targ4, CredibilityGroundDeceit, Evidence_Finding_Targ4, CredibilityGroundEvidence).
 judge(Nogra, Finding_Targ4).
@@ -923,6 +1007,8 @@ observe(Nogrb, Finding_Targ4, Evidence_Finding_Targ4, CredibilityEvidenceScope).
 observe(Nogrb, Finding_Targ4, NoticeEvidenceAccessHearingAndReasons, CredibilityProcedureScope).
 ? agree(Finding_Targ4, CredibilityFindingCandidate).
 # => FALSE
+# Nogra alone records the deceit ground: "one affirmation leaves it
+# incomplete".
 cite(Nogra, CredibilityGroundDeceit, Targ4).
 cite(Nogra, CredibilityGroundDeceit, Finding_Targ4).
 observe(Nogra, Finding_Targ4, CredibilityGroundDeceit, CredibilityGroundScope).
@@ -932,6 +1018,8 @@ observe(Nogra, Finding_Targ4, CredibilityGroundDeceit, CredibilityGroundScope).
 ? false(Targ4).
 # => FALSE
 
+# Nogrb records the same ground for the same case. The proposal is properly
+# made, and "the personal consequence waits for the completed judgment".
 cite(Nogrb, CredibilityGroundDeceit, Targ4).
 cite(Nogrb, CredibilityGroundDeceit, Finding_Targ4).
 observe(Nogrb, Finding_Targ4, CredibilityGroundDeceit, CredibilityGroundScope).
@@ -939,6 +1027,8 @@ observe(Nogrb, Finding_Targ4, CredibilityGroundDeceit, CredibilityGroundScope).
 # => TRUE
 ? false(Targ4).
 # => FALSE
+# With each signer's eligibility at the decision and the finding's place in
+# the record's order witnessed, the finding against Targ4 follows.
 observe(Chronicle, Finding_Targ4, Nogra, CredibilityReviewSignerEligibleAtDecisionScope).
 observe(TemporalReview, Finding_Targ4, Nogra, CredibilityReviewSignerEligibleAtDecisionScope).
 observe(Chronicle, Finding_Targ4, Nogrb, CredibilityTribunalSignerEligibleAtDecisionScope).
@@ -953,6 +1043,8 @@ observe(TemporalReview, Order_Finding_Targ4, Epoch_Current, RecordEndScope).
 # => TRUE
 
 # Restoration needs a qualified appellate case; generic forgiveness is inert.
+# Reva and Revb first complete a finding against Purga on the
+# concealed-conflict ground.
 authorized(Reva, ClearStatus, Epoch_Previous).
 observe(Chronicle, Reva, Epoch_Previous, ClearScope).
 observe(TemporalReview, Reva, Epoch_Previous, ClearScope).
@@ -1002,12 +1094,17 @@ observe(Chronicle, Order_Finding_Purga, Finding_Purga, RecordStartScope).
 observe(Chronicle, Order_Finding_Purga, Epoch_Current, RecordEndScope).
 observe(TemporalReview, Order_Finding_Purga, Finding_Purga, RecordStartScope).
 observe(TemporalReview, Order_Finding_Purga, Epoch_Current, RecordEndScope).
+# A forgiveness flag and a generic judgment by the appeals body leave
+# Purga's finding in force.
 forgive(Appeals, Purga).
 judge(Appeals, Purga).
 ? clean(Purga).
 # => FALSE
 ? false(Purga).
 # => TRUE
+# The test records the particular appellate act for Purga's finding, with
+# its independent review, each actor's eligibility at the decision and its
+# place in the record's order.
 list(Restore_Purga, Purga, Finding_Purga, CredibilityRestoration).
 list(Restore_Purga, RestoreCredibilityFinding, Evidence_Restore_Purga, CredibilityAppealPurposeEvidence).
 judge(Appeals, Restore_Purga).
@@ -1039,6 +1136,8 @@ observe(Chronicle, Order_After_Restore_Purga, Epoch_Current, RecordEndScope).
 observe(TemporalReview, Order_After_Restore_Purga, Restore_Purga, RecordStartScope).
 observe(TemporalReview, Order_After_Restore_Purga, Epoch_Current, RecordEndScope).
 
+# The signers keep their authority to sign; Purga's finding ends, and
+# nothing is recorded as lost.
 ? permits(Review, Reva).
 # => TRUE
 
@@ -1058,6 +1157,9 @@ observe(TemporalReview, Order_After_Restore_Purga, Epoch_Current, RecordEndScope
 ? obliged(Review, ExplainTheGroundOfACredibilityFinding, Bela).
 # => TRUE
 
+# The appeals body's duty to review a challenge waits for the subject's own
+# challenge. Once Bela challenges, "that duty follows, and the finding
+# continues meanwhile".
 ? obliged(Appeals, Bela).
 # => FALSE
 
@@ -1108,6 +1210,9 @@ observe(TemporalReview, Order_Finding_Dev_Conflict, Finding_Dev_Conflict, Record
 observe(TemporalReview, Order_Finding_Dev_Conflict, Epoch_Current, RecordEndScope).
 ? false(Dev).
 # => TRUE
+# The particular appellate act for that finding restores it: no finding
+# against Dev remains, "while the relationship and the examination stay
+# recorded".
 list(Restore_Dev_Conflict, Dev, Finding_Dev_Conflict, CredibilityRestoration).
 list(Restore_Dev_Conflict, RestoreCredibilityFinding, Evidence_Restore_Dev_Conflict, CredibilityAppealPurposeEvidence).
 judge(Appeals, Restore_Dev_Conflict).
@@ -1147,11 +1252,11 @@ observe(TemporalReview, Order_After_Restore_Dev_Conflict, Epoch_Current, RecordE
 ? false(Dev).
 # => FALSE
 
-# "Nothing else follows": an office outside the restriction. Bela, under an
-# effective finding, is the source of a floor-shortfall pattern certification
-# beside a separate reviewer, and the certification obliges the Constitutional
-# Court to decide. That family has its own independence and conflict rules;
-# the credibility finding is not among them.
+# "Everything else stays as it was": an office outside the restriction. Bela,
+# under a finding in force, is the source of a floor-shortfall pattern
+# certification beside a separate reviewer, and the certification obliges
+# the Constitutional Court to decide. "That route keeps its own independence
+# and conflict rules, and the credibility finding stands outside them."
 public(ShortfallTier_Bela).
 authorized(Bela, FloorShortfallPatternSourceAuthority, Pattern_Bela).
 authorized(PatternReviewer_Bela, IndependentFloorShortfallPatternReviewAuthority, Pattern_Bela).
@@ -1176,6 +1281,8 @@ observe(PatternReviewer_Bela, Pattern_Bela, ShortfallTier_Bela, FloorShortfallPa
 ? decide(Bela, Ballot).
 # => TRUE
 
+# The rules conclude no custody for Bela, and nothing is granted or recorded
+# as lost.
 ? prisoner(Bela).
 # => FALSE
 
@@ -1185,6 +1292,8 @@ observe(PatternReviewer_Bela, Pattern_Bela, ShortfallTier_Bela, FloorShortfallPa
 ? lose(Points, Bela).
 # => FALSE
 
+# The rules still conclude no finding against Tyr, whom Mael and Wren
+# examined.
 ? false(Tyr).
 # => FALSE
 
@@ -1192,6 +1301,9 @@ observe(PatternReviewer_Bela, Pattern_Bela, ShortfallTier_Bela, FloorShortfallPa
 ? false(Forga).
 # => FALSE
 
+# A raw report of an earlier restriction on Forga, with both witnesses'
+# carry entries but no restriction entry in the earlier version, "is marked
+# as a forgery and imposes no finding".
 rotten(Forga).
 carries(Chronicle, Forga, Epoch_Current, Epoch_Previous, VoidCarry).
 carries(TemporalReview, Forga, Epoch_Current, Epoch_Previous, VoidCarry).
@@ -1203,6 +1315,8 @@ carries(TemporalReview, Forga, Epoch_Current, Epoch_Previous, VoidCarry).
 # => FALSE
 
 # The one-line child fixture: every debt remains unconditional.
+# The rules conclude no credibility finding against Nell, and the debts
+# follow on personhood alone.
 ? false(Nell).
 # => FALSE
 
@@ -1233,6 +1347,7 @@ carries(TemporalReview, Forga, Epoch_Current, Epoch_Previous, VoidCarry).
 ? owe(State, Meets, Nell).
 # => TRUE
 
+# No recognition follows for Nell, and nothing is recorded as lost.
 ? reward(Nell).
 # => FALSE
 
@@ -1247,8 +1362,10 @@ all $a: all $b: all $evidence: all $ground: all $incident: all $record: all $sub
 # => TRUE
 ? false(Solo).
 # => FALSE
-# Retain the old unscoped single-signer rule as an attempted widening.
-# The current case-relief and custody graph refuses its negative dependency.
+# An unscoped rule letting one signer who holds both appointments impose a
+# finding directly is an attempted widening. The engine refuses it: through
+# the custody and case-relief rules, its conclusion would depend on itself
+# through a negation.
 :refuse reasoning /Unstratifiable/
 all $a: all $audited: all $ground: permits(Review, $a) & permits(Tribunal, $a) & authorized($a, IndependentReviewer, $audited) & judge($a, $audited) & capture($a, $audited) & cite($a, $ground, $audited) & ~deceive($a, $audited) & ~broken($a) & ~match($a, CarriedVoid) & ~clean($audited) -> false($audited).
 

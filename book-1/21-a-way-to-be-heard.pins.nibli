@@ -38,21 +38,24 @@
 :expect-pins 32
 
 # ── "A right needs a way to be heard when somebody denies it." ─────────────
+# The supplied hearing case completes its fair-hearing record, and the
+# operator owes "a fair, reasoned and contestable hearing".
 ? complete(JCaseRecord, JusticeFairHearing, JCaseCase).
 # => TRUE
 
 ? obliged(JCaseOperator, ProvideFairReasonedAndContestableHearing, JCaseRecord).
 # => TRUE
 
-# ── "A request to review needs nobody's permission" ────────────────────────
+# ── A request to review needs nobody's permission ──────────────────────────
 # A bare request from anyone at all, with no operator authorisation and no
 # previous reviewer, lands a review duty on an independent reader.
 ? obliged(IndependentJusticeReader, ReviewJusticeRequest, BareJusticeRequest).
 # => TRUE
 
-# ── "This non-coercive route creates no arrest warrant, search power,
-# seizure power or authority to imprison." ────────────────────────────────
-# The hearing stands and its subject is neither confined nor discredited.
+# ── The hearing record concerns the process alone ──────────────────────────
+# It "yields no confinement, credibility finding or recorded loss for its
+# subject": the hearing stands and its subject is neither confined nor
+# discredited.
 ? prisoner(JCaseSubject).
 # => FALSE
 
@@ -62,15 +65,16 @@
 ? lose(Points, JCaseSubject).
 # => FALSE
 
-# "a representative does not create the child's standing" — and a hearing
-# record does not create personhood either. Writing a birth or an encounter
+# The hearing record also "makes nobody a person", as for a child "a
+# representative adds nothing to" standing. Writing a birth or an encounter
 # for this subject is what would flip it.
 ? person(JCaseSubject).
 # => FALSE
 
 # ── The child with nobody ──────────────────────────────────────────────────
-# "money, documentation and immigration status cannot be the price of entry"
-# — the one-entry child record establishes the floor without those premises.
+# "Nell is a person, owed bodily safety and material security": the one-entry
+# child record establishes the floor with no premise about money, documents
+# or status.
 ? person(Nell).
 # => TRUE
 
@@ -80,47 +84,52 @@
 ? owe(State, Suffice, Nell).
 # => TRUE
 
-# "money, documents and immigration status cannot be the price of entry" — the
-# barrier saying so has `person($x)` as its whole body, so it holds for a child
-# with one birth entry, no papers and nobody to ask on their behalf. Nothing
-# about wealth, documents or representation appears in it to be missing.
+# The barriers against access "priced in wealth, documents or status and
+# against institutional delay extending custody" each have `person($x)` as
+# their whole body, so "a child with one birth entry, without papers and with
+# nobody to ask on the child's behalf holds both". Nothing about wealth,
+# documents or representation appears in them to be missing.
 ? prevents(Nell, JusticeWealthDocumentationOrStatusConditionedAccess).
 # => TRUE
 
 ? prevents(Nell, JusticeInstitutionalDelayExtendingCustody).
 # => TRUE
 
-# "What none of it supplies is the asking." Nothing has been filed for this
-# child, so no hearing and no review duty follows for them.
+# "Nell's record holds only the birth, so the routes that begin with a request
+# yield no hearing conclusion for this child."
 ? complete(Nell, JusticeFairHearing, Nell).
 # => FALSE
 
+# Nor is the child held: the record holds no custody for Nell.
 ? prisoner(Nell).
 # => FALSE
 
 
 # Qualified relief and a filed challenge have distinct case-specific effects.
+# Nia's properly made appellate relief bars custody in Nia's case, so "the
+# rules conclude no confinement for Nia".
 ? permits(Appeals, Nia).
 # => TRUE
 
 ? prisoner(Nia).
 # => FALSE
 
+# Ruk, "without such an order, stays confined", and holds no relief.
 ? prisoner(Ruk).
 # => TRUE
 
 ? permits(Appeals, Ruk).
 # => FALSE
 
-# Nothing has landed a duty on the appeal body for Ruk: that needs either a
-# contested temporal defect or a justice appeal record, and the shipped cast
-# carries neither.
+# Nothing in the shipped record gives the appeal body a duty toward Ruk: each
+# route to that duty needs a recorded challenge, and the cast records none.
 ? obliged(Appeals, Ruk).
 # => FALSE
 
-# ── The encoding that is refused, and what it actually said ────────────────
-# The unary permission is a summary, not an operative case bar. Its attempted
-# producer is retained, and the case-specific self-defeating producer is refused.
+# ── The summary that loads, and the bar that is refused ────────────────────
+# The unary permission is a summary, not an operative case bar: a rule giving
+# it to every prisoner loads, and is accepted and removed again. The
+# case-specific producer that would defeat its own case is refused.
 :accept-scoped
 all $x: prisoner($x) -> permits(Appeals, $x).
 # A final operative bar cannot be produced by the confinement it defeats.
@@ -128,34 +137,45 @@ all $x: prisoner($x) -> permits(Appeals, $x).
 all $subject: all $case: prisoner($subject, $case) -> clean($case, CustodyConfinementBar).
 
 # A filed challenge suspends a different case without deciding the final merits.
+# Kel files a custody challenge in Kel's own case and keeps a copy, and "Kel's
+# retained copy establishes the filing for the rules".
 list(Chapter21Filing, Kel, Case_Kel, CustodyChallengeFiling).
 observe(Kel, Chapter21Filing, Case_Kel, CustodyChallengeSubmissionScope).
+# The suspension does not come through the temporal-review route: no such
+# challenge from Kel is recorded.
 ? challenge(Kel, Case_Kel, TemporalReview).
 # => FALSE
+# While review is pending Kel's case is suspended, no confinement follows for
+# Kel, and the appeals body owes Kel an independent hearing of the challenge.
 ? closed(Case_Kel, CustodyChallengePending).
 # => TRUE
 ? prisoner(Kel).
 # => FALSE
 ? obliged(Appeals, IndependentlyHearCustodyChallengeWithCounselAndReasons, Kel).
 # => TRUE
+# "Ruk, in another case, stays confined."
 ? prisoner(Ruk).
 # => TRUE
 
-# ── The encoding that is not refused ───────────────────────────────────────
-# The same guarantee written as what it meant — a duty on the appeal body to
-# hear every confined person's case — loads without complaint. Nothing reads
-# it, so nothing downstream moves.
+# ── The duty to hear, which loads ──────────────────────────────────────────
+# "Suppose a rule obliged the appeals body to hear every confined person's
+# case." Written as a duty on the appeal body, it loads without complaint. Its
+# only reader is the typed duty bridge, which needs typed evidence this record
+# does not hold, so nothing downstream moves.
 :accept
 all $x: prisoner($x) -> obliged(Appeals, $x).
 
 ? obliged(Appeals, Ruk).
 # => TRUE
 
-# "an unheard appeal does not empty a conviction" — the duty is in force for
-# every confined person and the conviction is untouched.
+# "A duty to hear is not a completed hearing or judgment": the duty is in
+# force for every confined person, and Ruk's confinement is untouched.
 ? prisoner(Ruk).
 # => TRUE
 
+# The duty gives Ruk neither relief nor a recorded release: Ruk "would remain
+# confined and without relief, because the duty decides nothing about the
+# appeal".
 ? permits(Appeals, Ruk).
 # => FALSE
 

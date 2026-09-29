@@ -8,7 +8,7 @@
 #   tests/pins/records/child_with_nobody/fixture.nibli
 #   tests/pins/record-power/power/holding-defect-and-rights-sequence
 # The second builds a reviewed holding, the watching that rejoins it, and the
-# automated support that rejoins both, with a person standing beside them.
+# automated support that rejoins both; Hano, from the cast, stands beside them.
 #
 # The rest of the two families' coverage is cited rather than duplicated:
 #   tests/pins/record-power/power/holding-does-not-cover-another-subject
@@ -30,14 +30,17 @@
 
 :expect-pins 20
 
-# ── "Keeping one is permitted for a declared purpose and for nothing else." ─
+# ── "Permission to keep a record for a service covers that service and
+# nothing else." ──────────────────────────────────────────────────────────────
+# The holding completes as a reviewed record, and "the holder gains
+# authority to keep the record for delivering the service".
 ? complete(RecordSequenceAuthorization, ReviewedRecordHolding, RecordSequenceSubject).
 # => TRUE
 
 ? authority(RecordSequenceHolder, DeliverTheServiceRecorded, RecordSequenceAuthorization).
 # => TRUE
 
-# "accurate and correctable on request ... and open to the person it is about"
+# "It owes the subject accuracy, correction and security"
 ? obliged(RecordSequenceHolder, KeepRecordAccurateCorrectableAndSecure, RecordSequenceAuthorization).
 # => TRUE
 
@@ -46,21 +49,22 @@
 ? obliged(RecordSequenceHolder, ProtectRecordSubjectsAndObjectorsFromRetaliation, RecordSequenceAuthorization).
 # => TRUE
 
-# ── "Watching is a separate permission, and it points at the exact holding
-# that was reviewed." ─────────────────────────────────────────────────────
+# ── "A use must rejoin the exact holding" ────────────────────────────────────
+# Processing for ordinary record keeping "matches every field" of the
+# holding, so the holder may process the record and the processing
+# completes.
 ? permits(RecordSequenceHolder, OrdinaryRecordKeeping, RecordSequenceRecord).
 # => TRUE
 
 ? complete(RecordSequenceRecord, ReviewedRecordProcessing, RecordSequenceSubject).
 # => TRUE
 
-# "and notice to the person afterwards"
+# "the holder owes the subject notice after covert processing"
 ? obliged(RecordSequenceHolder, NotifyTheSubjectAfterCovertProcessing, RecordSequenceRecord).
 # => TRUE
 
-# ── "Letting a machine help is a permission of its own, and the design keeps
-# it as help." ────────────────────────────────────────────────────────────
-# "There has to be an explanation of what went in and how it was reasoned"
+# ── "A machine may help; a person decides" ───────────────────────────────────
+# "the holder owes an explanation that allows contest"
 ? obliged(RecordSequenceHolder, ExplainAutomatedSupportAndAllowContest, RecordSupportRecord).
 # => TRUE
 
@@ -68,14 +72,15 @@
 ? permits(RecordSequenceSubject, ContestAutomatedSupport, RecordSupportRecord).
 # => TRUE
 
-# "a human and independent review that actually decides"
+# "the reviewer owes a human and independent decision"
 ? obliged(RecordSupportReviewer, DecideWithHumanAndIndependentReview, RecordSupportRecord).
 # => TRUE
 
+# With those conditions recorded, "the support record completes".
 ? complete(RecordSupportRecord, ReviewedAutomatedDecisionSupport, RecordSequenceSubject).
 # => TRUE
 
-# ── "None of it says anything about the person." ───────────────────────────
+# ── "A file is neither a source of worth nor a licence to reduce rights." ────
 # The subject of a holding is an opaque handle, not a roster entry: keeping a
 # record about somebody does not put them on the roster, and this is the
 # direction that matters — it cannot take them off it either. Writing a birth
@@ -84,6 +89,9 @@
 ? person(RecordSequenceSubject).
 # => FALSE
 
+# Nor do the holding, the processing or the support conclude anything
+# adverse for the subject: "no credibility finding, confinement or
+# recorded loss".
 ? false(RecordSequenceSubject).
 # => FALSE
 
@@ -101,7 +109,7 @@
 # => TRUE
 
 # ── The child with nobody ──────────────────────────────────────────────────
-# Nell's birth entry supports personhood and the health debt without a
+# Nell's birth entry supports personhood and the care debt without a
 # supplied health, school or administrative holding.
 ? person(Nell).
 # => TRUE
@@ -109,7 +117,7 @@
 ? owe(State, Healthy, Nell).
 # => TRUE
 
-# "an entry naming this child would be an entry, not a finding" — and no such
-# holding has been supplied for Nell; the birth entry remains present.
+# No holding about Nell is supplied, and the birth entry alone concludes no
+# credibility finding for the child.
 ? false(Nell).
 # => FALSE

@@ -30,7 +30,9 @@
 
 :expect-pins 76
 
-# "no form of provision is privileged" and "ability to pay cannot decide access"
+# Every form of provision is lawful, "each without a guaranteed market share,
+# profit, rescue, immunity or monopoly"; "the bar on price or ability to pay
+# deciding access to the floor"; and a payment instrument is not delivery.
 ? prevents(Adam, EconomicFormSuppression).
 # => TRUE
 
@@ -150,7 +152,9 @@
 ? prevents(Adam, CivicAssociationEnterpriseRelabeling).
 # => TRUE
 
-# "Nothing here reaches a household, a friendship, or an intimate relationship"
+# "Intimate dependency alone does not turn a household, friendship or
+# relationship into a public service", and the finding "is barred from
+# imposing a score on voluntary life."
 ? prevents(Adam, IntimateDependencyPublicServicePresumption).
 # => TRUE
 
@@ -231,36 +235,40 @@
 ? prevents(Adam, FiscalCompetitionEqualityEvasion).
 # => TRUE
 
-# "What does not end with the power is the floor and the essential service"
+# "A remedy survives the enterprise's failure"
 ? prevents(Adam, EnterpriseFailureRemedyErasure).
 # => TRUE
 
-# "Every ratified ground is a member of the trigger vocabulary and nothing else
-# is, however it is attested" — Harrow attests, and the vocabulary decides.
+# "One witness's entries test the list. An attestation naming essentiality
+# names a permitted ground" — Harrow attests, and the vocabulary decides.
 observe(Harrow, HarrowRecordEssentiality, EssentialityTrigger, PublicScaleTriggerScope).
 ? member(EssentialityTrigger, PublicScaleTriggerVocabulary).
 # => TRUE
 
 observe(Harrow, HarrowRecordRevenue, HarrowRevenueThreshold, PublicScaleTriggerScope).
-# "Being large is not on the list."
+# "one naming an invented revenue threshold names nothing on the list."
 ? member(HarrowRevenueThreshold, PublicScaleTriggerVocabulary).
 # => FALSE
 
+# Function classes are a separate closed list: a gatekeeping function class
+# "belongs to the list of functions", so the rules conclude its membership.
 observe(Harrow, HarrowRecordGate, GatekeepingFunctionClass, PublicScaleFunctionClassScope).
 ? member(GatekeepingFunctionClass, PublicScaleFunctionClassVocabulary).
 # => TRUE
 
 observe(Harrow, HarrowRecordLeak, GatekeepingFunctionClass, PublicScaleTriggerScope).
-# "the three sets do not leak into one another"
+# "The categories stay separate even when the same witness writes each entry."
 ? member(GatekeepingFunctionClass, PublicScaleTriggerVocabulary).
 # => FALSE
 
 observe(Harrow, HarrowRecordTier, CrossRegionalReachUnderRegionalTier, PublicScaleTierAllocationScope).
-# "Pair them the other way and the finding carries nothing at all."
+# "The rules reject the pairing of a cross-regional function with regional
+# authority"
 ? member(CrossRegionalReachUnderRegionalTier, PublicScaleTierAllocationVocabulary).
 # => FALSE
 
-# "No supplied record can write a membership."
+# "the record refuses any entry that asserts membership of these lists
+# directly."
 :refuse reasoning /derived-only/
 member(HarrowRevenueThreshold, PublicScaleTriggerVocabulary).
 

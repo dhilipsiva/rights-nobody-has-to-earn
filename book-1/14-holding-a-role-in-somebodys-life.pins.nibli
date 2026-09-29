@@ -4,7 +4,8 @@
 #   ./verify.sh --only book-1/14-holding-a-role-in-somebodys-life.pins.nibli
 #   ./verify.sh          # all substantive pins and contradiction checks
 #
-# The chapter's case lists tests/pins/records/child_with_nobody/fixture.nibli.
+# The chapter's case lists tests/pins/records/child_with_nobody/fixture.nibli
+# and tests/pins/family-life/initiation/positive/fixture.nibli.
 #
 # The ordinary half is its own constitution block beside the barriers rather
 # than a rewrite of them, and its positive records have their own cases:
@@ -31,7 +32,7 @@
 
 :expect-pins 32
 
-# ── "Every barrier above is written over personhood alone" ─────────────────
+# ── "The barriers hold for Nell as for everyone" ───────────────────────────
 # The barriers this chapter renders, asked of a record of one line. Each has
 # person($x) as its whole body, which is why a child with nobody reaches them.
 ? prevents(Nell, PublicFirstCareContinuity).
@@ -49,22 +50,23 @@
 ? prevents(Nell, ChildAccessibleInformationHelp).
 # => TRUE
 
-# "There is no minimum speaking age"
+# "The person must be heard without a minimum speaking age."
 ? prevents(Nell, ChildVoiceNoAgeFloor).
 # => TRUE
 
 ? prevents(Nell, ChildSeparationLastResort).
 # => TRUE
 
-# "the last resort cannot be reached by skipping the step before it"
+# "The last resort is reached only through the step before it."
 ? prevents(Nell, SupportBeforeRemoval).
 # => TRUE
 
-# "Kinship on its own creates no compelled personal-care duty"
+# A missing kinship record never certifies independence: independence needs
+# a positive entry.
 ? prevents(Nell, MissingKinshipNoIndependence).
 # => TRUE
 
-# "the absence of a family is not a reason to confine anybody"
+# "a family's absence authorises no confinement"
 ? prevents(Nell, FamilyStatusNoConfinement).
 # => TRUE
 
@@ -74,23 +76,24 @@
 ? prevents(Nell, StatusNoHarmPresumption).
 # => TRUE
 
-# "A record that someone performed care work ... does not prove that care
-# reached another person"
+# "A record of care as employment identifies an activity and nothing more":
+# it shows no care reaching anyone.
 ? prevents(Nell, CareStatusNondelivery).
 # => TRUE
 
 ? prevents(Nell, Book2LifeCourseBoundary).
 # => TRUE
 
-# ── "no household is presumed to be feeding them" ──────────────────────────
-# The debt is unmoved by the absence of every private route.
+# ── The debt stands without any private route ──────────────────────────────
+# "The State owes Nell care and company while the record shows neither
+# delivered." The debt is unmoved by the absence of every private route.
 ? owe(State, Healthy, Nell).
 # => TRUE
 
 ? owe(State, Meets, Nell).
 # => TRUE
 
-# "the family ships dormant in the supplied record"
+# No receipt shows care or company reaching the child, so neither follows.
 ? healthy(Nell).
 # => FALSE
 
@@ -105,9 +108,10 @@
 ? home(Nell).
 # => FALSE
 
-# ── "it supplies no age" ───────────────────────────────────────────────────
-# Cira is a person and is owed everything; the record produces no ballot
-# conclusion, and that is an absent premise rather than a finding.
+# ── Adulthood and missing evidence ─────────────────────────────────────────
+# "Cira is a person and is owed the floor." Without adulthood evidence "the
+# rules stop short of a ballot conclusion", an absent premise rather than a
+# finding: "That settles nothing about Cira's age."
 ? person(Cira).
 # => TRUE
 
@@ -122,15 +126,16 @@
 ? complete(LifeCourseCaseRecord, ReviewedAssistanceInitiation, LifeCourseCaseDecision).
 # => TRUE
 
+# "The representative owes action within the appointed matter; the office
+# that hears challenges owes a hearing and correction."
 ? obliged(LifeCourseCaseRepresentative, ActForThePersonWithinTheAppointedMatterOnly, LifeCourseCaseRecord).
 # => TRUE
 
 ? obliged(LifeCourseCaseReader, HearTheChallengeToTheAppointmentAndCorrectIt, LifeCourseCaseRecord).
 # => TRUE
 
-# "somebody has to be able to attest that what was owed reached a person who
-# cannot choose an attester" — the appointment names them and obliges the
-# acting body to authorise them. It does not authorise them.
+# "When the appointment completes, the acting body owes a duty to authorise
+# that witness, and the appointment itself leaves the witness unauthorised."
 ? obliged(LifeCourseCaseActor, AuthorizeTheNamedReceiptWitnessForThePerson, LifeCourseCaseRecord).
 # => TRUE
 
@@ -143,8 +148,9 @@
 ? person(LifeCourseCaseParticipant).
 # => TRUE
 
-# "not as a status or guardianship" — the appointment concludes nothing adverse
-# about the person, and confers no role authority over them.
+# The representative acts for "that matter alone, as distinct from a guardian
+# over the person's life": the appointment "concludes nothing adverse about
+# the participant" and "gives the representative no parentage authority".
 ? false(LifeCourseCaseParticipant).
 # => FALSE
 

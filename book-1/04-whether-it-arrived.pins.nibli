@@ -20,11 +20,14 @@
 
 :expect-pins 20
 
-# "Ask whether Bela eats in the record supplied with this book ... The answer
-# is no." — the routes ship dormant in the cast.
+# "No food-delivery conclusion follows for Bela in the record": the delivery
+# routes are dormant in the cast.
 ? eats(Bela).
 # => FALSE
 
+# "Shelter, care, material security and company lack recipient-side evidence
+# for her as well": none of those delivery conclusions follows for Bela, and
+# bodily safety (secure) has no receipt route at all.
 ? dwell(Bela).
 # => FALSE
 
@@ -40,21 +43,25 @@
 ? meets(Bela).
 # => FALSE
 
-# "A record says that something reached a particular person from a particular
-# source. An authorised witness for that person independently attests the same
-# thing and the same kind of delivery."
+# "A record says that an item reached a particular person from a particular
+# source. A witness authorised for that person, and independent of the
+# provider, records seeing the same item reach the same person as the same kind
+# of delivery."
 receives(Marisol, FoodForMarisol, Provender).
 # The receipt alone concludes nothing.
 ? eats(Marisol).
 # => FALSE
 
+# Add a witness authorised for Marisol, other than the provider, who records
+# the same food reaching her as food: "the rules conclude that food reached
+# Marisol".
 authorized(Ledgerwitness, DeliveryWitness, Marisol).
 observe(Ledgerwitness, FoodForMarisol, Marisol, FoodScope).
 ? eats(Marisol).
 # => TRUE
 
-# "independently witnessed food can count as having reached someone whom the
-# record has never entered as a person"
+# "Food receipt follows for Marisol while her personhood remains unshown for
+# the name used".
 ? person(Marisol).
 # => FALSE
 
@@ -62,21 +69,21 @@ observe(Ledgerwitness, FoodForMarisol, Marisol, FoodScope).
 ? dwell(Marisol).
 # => FALSE
 
-# "The witness cannot be the source."
+# "The witness must be someone other than the source."
 receives(Marisol, ShelterForMarisol, Ledgerwitness).
 observe(Ledgerwitness, ShelterForMarisol, Marisol, ShelterScope).
 ? dwell(Marisol).
 # => FALSE
 
-# "An attestation about the wrong person, item, or kind of delivery establishes
-# nothing."
+# "a care receipt paired with an observation recorded as food concludes nothing
+# about care".
 receives(Marisol, CareForMarisol, Provender).
 observe(Ledgerwitness, CareForMarisol, Marisol, FoodScope).
 ? healthy(Marisol).
 # => FALSE
 
-# "For the child with nobody, this is the chapter where the design's honesty
-# costs the most."
+# The child with nobody. "Nell is owed food, and Nell's record holds only the
+# birth, so nothing in it concludes that food was received."
 ? owe(State, Eats, Nell).
 # => TRUE
 
@@ -86,12 +93,16 @@ observe(Ledgerwitness, CareForMarisol, Marisol, FoodScope).
 authorized(Ledgerwitness, DeliveryWitness, Nell).
 receives(Nell, FoodForNell, Provender).
 observe(Ledgerwitness, FoodForNell, Nell, FoodScope).
-# "a receipt naming Nell and an authorised witness who is not the provider derive
-# that food reached Nell" — actual appointment and authorization remain supplied
-# inputs; the reviewed representation route assigns the duty to authorize.
+# "Suppose a receipt naming Nell were recorded, a witness other than the
+# provider were authorised for Nell, and that witness's matching observation
+# were entered. Food receipt then follows" — the authorisation is a supplied
+# input: "The acting body owes that authorisation; the duty itself appoints
+# nobody and vouches for nobody."
 ? eats(Nell).
 # => TRUE
 
+# "Food receipt then follows, and only food: shelter still needs evidence of
+# its own".
 ? dwell(Nell).
 # => FALSE
 
@@ -116,5 +127,7 @@ teaches(Speakera, Listenera).
 ? learn(Listenera).
 # => TRUE
 
+# "nothing confines Nell": with the receipt, the witness and the food
+# conclusion recorded, the rules still conclude no custody for the child.
 ? prisoner(Nell).
 # => FALSE

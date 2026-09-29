@@ -2,12 +2,12 @@
 #
 # KIND: CONTENT pin. Run:
 #   ./verify.sh --only book-1/06-who-owes-and-what-follows.pins.nibli
-#   ./verify.sh          # the real check — the line above cannot see
-#                        # the cross-file reconciliation or the prose guards
+#   ./verify.sh          # all substantive pins and contradiction checks
 #
 # The chapter's case lists the child fixture and eight obligations fixtures —
-# the five forms of public responsibility, delegation without discharge, and
-# the refusal to read a private duty out of subject matter alone:
+# the five forms of public responsibility, delegation without discharge, an
+# express private duty, and the refusal to read a private duty out of subject
+# matter alone:
 #   tests/pins/records/child_with_nobody/fixture.nibli
 #   tests/pins/obligations/case-001 .. case-008
 # It also supplies tests/pins/scarcity/worked/competing-claims/fixture.nibli
@@ -31,7 +31,7 @@
 
 :expect-pins 75
 
-# ── "Public responsibility around it takes distinct forms." ────────────────
+# ── "The forms public responsibility takes" ──────────────────────────────────
 # Respect, protection, fulfilment, continuity, remedy — one typed duty each.
 ? obliged(OblPositive198Bearer, OblPositive198Duty, OblPositive198Standard).
 # => TRUE
@@ -57,17 +57,17 @@
 ? obliged(State, OblPositive203Duty, OblPositive203Standard).
 # => TRUE
 
-# ── "A private duty must be stated expressly for the function undertaken" ──
+# ── "A private duty must be stated for a function undertaken" ────────────────
 ? obliged(OblPositive204Bearer, OblPositive204Duty, OblPositive204Standard).
 # => TRUE
 
-# "The reverse boundary matters just as much." Subject matter alone concludes
-# no private duty; what would flip this is an express duty record for the
-# function, which case-007 above supplies for its own bearer.
+# "A record stating such a duty for the function produces it, and the rules
+# bar inferring one from a record of the subject matter alone." case-007
+# above supplies such a record for its own bearer; here the barrier holds.
 ? prevents(OblPositive205Bearer, SubjectMatterOnlyPrivateDutyInference).
 # => TRUE
 
-# ── "Missing papers cannot suspend urgent human protection or animal care." ─
+# ── "Urgent protection comes before the paperwork." ──────────────────────────
 # A direct urgent-care request with no owner, taxon or official record. It
 # creates a duty, not personhood and not proof that a rescue occurred.
 challenge(ECReaderHelper, ECReaderAnimal, ECReaderUrgentRequest).
@@ -78,32 +78,36 @@ observe(ECReaderHelper, ECReaderUrgentRequest, ECUrgentPlausibleAnimalProtection
 ? person(ECReaderAnimal).
 # => FALSE
 
-# ── "a duty here is a statement that somebody must answer" ─────────────────
+# ── A duty is concluded, never written ───────────────────────────────────────
 # The typed duty is a conclusion, never a verdict somebody writes.
 :refuse reasoning /declared derived-only/
 obliged(OblPositive198Bearer, OblPositive198Duty, ForgedObligationStandard).
 
 # ── The child with nobody ──────────────────────────────────────────────────
-# "no household, relationship, association or charity is presumed to provide
-# another person's floor, so the absence of all of them subtracts nothing"
+# "No household, relationship, association or charity is presumed to provide
+# another person's floor." The barriers hold for Nell, whose record names
+# none of them: kinship creates no personal-care debt, and care continuity
+# stays a public duty.
 ? prevents(Nell, KinshipNoPersonalCareDebt).
 # => TRUE
 
 ? prevents(Nell, PublicFirstCareContinuity).
 # => TRUE
 
+# The debts stand whole too: with nobody recorded as providing, the rules
+# still conclude that the State owes Nell food and shelter.
 ? owe(State, Eats, Nell).
 # => TRUE
 
 ? owe(State, Dwell, Nell).
 # => TRUE
 
-# "Nothing between the birth entry and the debt asks who is caring for the
-# child." The record holds no family entry for Nell and the debt is unmoved.
+# Nothing between the birth entry and the debt asks who cares for the child:
+# the record holds no family entry for Nell, and the debts above still follow.
 ? family(Nell).
 # => FALSE
 
-# ── The one duty that does not wait to be asked ──────────────────────────────
+# ── "The duty to begin without a request" ────────────────────────────────────
 # Article 1c's whole body is `person($x)`, so it holds for the record of one
 # line and holds identically for everybody else. There is nothing in it a
 # person could fail and nothing about it a record could withhold.
@@ -115,18 +119,23 @@ obliged(OblPositive198Bearer, OblPositive198Duty, ForgedObligationStandard).
 ? obliged(IndependentRightsAlternate, ReviewWhetherAssistanceWasInitiatedForThisPerson, Nell).
 # => FALSE
 
+# A stranger to Nell, "a bystander without a seat", records that nobody
+# appears to have begun assistance, and the review duty follows.
 observe(Bystander, NellAlone, Nell, UninitiatedAssistanceScope).
 
 ? obliged(IndependentRightsAlternate, ReviewWhetherAssistanceWasInitiatedForThisPerson, Nell).
 # => TRUE
 
-# "the entry concludes nothing about the person it names"
+# "It concludes nothing about Nell's capacity or conduct and nothing adverse
+# against the child"
 ? prisoner(Nell).
 # => FALSE
 
 ? false(Nell).
 # => FALSE
 
+# And the child's floor is untouched by the entry: the food debt still
+# follows.
 ? owe(State, Eats, Nell).
 # => TRUE
 
@@ -136,6 +145,8 @@ observe(Bystander, NellAlone, Nell, UninitiatedAssistanceScope).
 ? person(BystanderSawSomeone).
 # => FALSE
 
+# The bystander then writes such an entry about a name no other record
+# holds; personhood and the review duty follow from that entry alone.
 observe(Bystander, SomeoneAlone, BystanderSawSomeone, UninitiatedAssistanceScope).
 ? person(BystanderSawSomeone).
 # => TRUE
@@ -143,7 +154,8 @@ observe(Bystander, SomeoneAlone, BystanderSawSomeone, UninitiatedAssistanceScope
 ? obliged(IndependentRightsAlternate, ReviewWhetherAssistanceWasInitiatedForThisPerson, BystanderSawSomeone).
 # => TRUE
 
-# "A duty is not an arrival" — nothing reads either duty, and no actuality moves.
+# A duty is no evidence of delivery: nothing reads either duty, and no
+# delivery conclusion follows for Nell.
 ? eats(Nell).
 # => FALSE
 
@@ -156,6 +168,9 @@ observe(Bystander, SomeoneAlone, BystanderSawSomeone, UninitiatedAssistanceScope
 # => TRUE
 ? obliged(ScarcityWaitingShortfallReader, VerifyTheShortfallWasRecordedAsFailure, ScarcityWaitingShortfallRecord).
 # => TRUE
+
+# The shortfall record completes as a reviewed record. The waiting person
+# is still owed care, and the record does not show care delivered.
 ? complete(ScarcityWaitingShortfallRecord, ReviewedScarcityShortfall, IndivisibleEssentialPowerUnit).
 # => TRUE
 ? owe(State, Healthy, ScarcityWaitingClaimant).
@@ -163,10 +178,13 @@ observe(Bystander, SomeoneAlone, BystanderSawSomeone, UninitiatedAssistanceScope
 ? healthy(ScarcityWaitingClaimant).
 # => FALSE
 
-# ── When failure is general (revision item 38) ─────────────────────────────
-# "A pattern arrives as an independently certified finding about a publicly
-#  answerable tier, never a count and never a finding about a person." Fresh
-#  constants, so no cast verdict moves.
+# ── When failure is general ──────────────────────────────────────────────────
+# "Scale is handled through a certified finding about the failing tier; the
+#  rules count nothing and find nothing about any person." Fresh constants,
+#  so no cast verdict moves.
+# NorthProvision is recorded as a public body, and a source and a separate
+# reviewer both certify it as failing, so the Constitutional Court
+# (FSBOD_18) owes a decision on the pattern.
 public(NorthProvision).
 authorized(PatternSource, FloorShortfallPatternSourceAuthority, Pattern_North).
 authorized(PatternReviewer, IndependentFloorShortfallPatternReviewAuthority, Pattern_North).
@@ -180,9 +198,10 @@ observe(PatternReviewer, Pattern_North, NorthProvision, FloorShortfallPatternTie
 ? obliged(FSBOD_02, AdoptAPublicPlanWithReasonsDeadlinesAndASourceBoundEnd, Pattern_North).
 # => FALSE
 
-# "Its declaration obliges the Assembly to adopt a public plan with reasons,
-#  deadlines and a source-bound end, the failing tier to carry it out, and the
-#  audit body to monitor it and publish the follow-up."
+# "A declaration obliges the People's Assembly to adopt a public plan with
+#  reasons, deadlines and an end fixed by its source. The failing tier must
+#  implement it, and the integrity and audit body must monitor it and publish
+#  the follow-up."
 authorized(FSBOD_18, UnconstitutionalStateOfAffairsDeclarationAuthority, Pattern_North).
 observe(FSBOD_18, Pattern_North, NorthProvision, UnconstitutionalFloorShortfallDeclarationScope).
 
@@ -192,13 +211,16 @@ observe(FSBOD_18, Pattern_North, NorthProvision, UnconstitutionalFloorShortfallD
 # => TRUE
 ? obliged(FSBOD_19, MonitorThePlanAndPublishTheFollowUp, Pattern_North).
 # => TRUE
+
+# The Court owes no interim measures yet: they wait for a certified failure
+# of the Assembly to adopt the plan.
 ? obliged(FSBOD_18, OrderInterimMeasuresSecuringTheMinimumWithoutAdministeringTheService, Pattern_North).
 # => FALSE
 
-# "If the monitor and a separate reviewer certify that the Assembly has not
-#  adopted a plan, the Court owes interim measures that secure the minimum
-#  without administering the service, and the treasury owes the minimum the
-#  first claim on funds."
+# "If the monitor and a separate reviewer certify that the Assembly has failed
+#  to adopt a plan, the Court owes interim measures that secure the minimum
+#  while leaving the service to the tier, and the treasury owes the floor's
+#  minimum the first claim on funds."
 authorized(FSBOD_19, FloorPlanNonresponseSourceAuthority, Pattern_North).
 authorized(PlanReviewer, IndependentFloorPlanNonresponseReviewAuthority, Pattern_North).
 observe(FSBOD_19, Pattern_North, FSBOD_02, FloorPlanNonresponseScope).
@@ -247,8 +269,9 @@ observe(FSBOD_18, Pattern_Bare, NorthProvision, UnconstitutionalFloorShortfallDe
 ? obliged(FSBOD_02, AdoptAPublicPlanWithReasonsDeadlinesAndASourceBoundEnd, Pattern_Bare).
 # => FALSE
 
-# "Never a finding about a person." A pattern naming someone who holds no
-# public answerability certifies nothing and gives that person no duty.
+# "A pattern that names a private person in place of a tier certifies nothing
+# and leaves that person free of any duty." The record gives Bela no public
+# answerability.
 authorized(PatternSource, FloorShortfallPatternSourceAuthority, Pattern_Person).
 authorized(PatternReviewer, IndependentFloorShortfallPatternReviewAuthority, Pattern_Person).
 observe(PatternSource, Pattern_Person, Bela, FloorShortfallPatternTierScope).
@@ -263,8 +286,8 @@ observe(FSBOD_18, Pattern_Person, Bela, UnconstitutionalFloorShortfallDeclaratio
 ? obliged(Bela, CarryOutThePublicPlanForTheCertifiedShortfall, Pattern_Person).
 # => FALSE
 
-# A plan duty is not provision: the waiting claimant's care remains owed and
-# undelivered.
+# A plan duty is not provision: the waiting claimant's care remains owed, and
+# the record still shows none delivered.
 ? healthy(ScarcityWaitingClaimant).
 # => FALSE
 
@@ -359,6 +382,7 @@ observe(JunoPatternReviewer, JunoPattern, JunoRegion, FloorShortfallPatternTierS
 ? obliged(FSBOD_18, DecideWhetherTheCertifiedFloorShortfallIsAnUnconstitutionalStateOfAffairs, JunoPattern).
 # => TRUE
 
+# The Court declares an unconstitutional state of affairs on Juno's pattern.
 authorized(FSBOD_18, UnconstitutionalStateOfAffairsDeclarationAuthority, JunoPattern).
 observe(FSBOD_18, JunoPattern, JunoRegion, UnconstitutionalFloorShortfallDeclarationScope).
 
@@ -367,6 +391,7 @@ observe(FSBOD_18, JunoPattern, JunoRegion, UnconstitutionalFloorShortfallDeclara
 ? obliged(JunoRegion, CarryOutThePublicPlanForTheCertifiedShortfall, JunoPattern).
 # => TRUE
 
+# The audit body and a separate reviewer certify the Assembly's nonresponse.
 authorized(FSBOD_19, FloorPlanNonresponseSourceAuthority, JunoPattern).
 authorized(JunoPlanReviewer, IndependentFloorPlanNonresponseReviewAuthority, JunoPattern).
 observe(FSBOD_19, JunoPattern, FSBOD_02, FloorPlanNonresponseScope).

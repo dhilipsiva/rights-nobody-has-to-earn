@@ -3,7 +3,10 @@
 #
 # FS-CVF-003 executable coverage is delegated to book-1/source/state-form.pins.nibli.
 #
-# "Belonging without surrendering rights" uses the mobility family:
+# The pointers below name the cases behind sections of other chapters.
+#
+# Chapter 15's "Belonging without surrendering rights" uses the mobility
+# family:
 #   tests/pins/mobility/membership/multiple-exit-reentry/expect.pins.nibli
 #   tests/pins/mobility/indigenous-government/positive/expect.pins.nibli
 #   tests/pins/mobility/minority-territory/positive/expect.pins.nibli
@@ -18,9 +21,9 @@
 # Field omission, conflict, independence and counterfactual cases in that
 # family test each permission boundary; none authenticates real consent.
 #
-# "What holding a role in somebody's life actually is" rests on the ordinary
-# half of the life-course baseline, which is its own constitution block beside
-# the barriers rather than a rewrite of them:
+# Chapter 14, "Holding a Role in Somebody's Life", rests on the ordinary half
+# of the life-course baseline, which is its own constitution block beside the
+# barriers rather than a rewrite of them:
 #   tests/pins/family-life/role/positive/expect.pins.nibli
 #   tests/pins/family-life/participation/positive/expect.pins.nibli
 #   tests/pins/family-life/support/positive/expect.pins.nibli
@@ -29,7 +32,7 @@
 #   tests/pins/family-life/reproductive/positive/expect.pins.nibli
 #   tests/pins/family-life/directive/positive/expect.pins.nibli
 #   tests/pins/family-life/origin/positive/expect.pins.nibli
-# and on these sequences, which are the claims the section actually makes:
+# and on these sequences, which are the claims the chapter makes:
 #   tests/pins/family-life/life-course/continuity-needs-no-family-role/expect.pins.nibli
 #   tests/pins/family-life/life-course/support-is-not-substitution/expect.pins.nibli
 #   tests/pins/family-life/life-course/interpretation-without-support-first/expect.pins.nibli
@@ -40,7 +43,7 @@
 # or death, and no age is supplied. The withheld, omission, unauthorized,
 # conflicting-writer and forged-head cases are separate.
 #
-# "When the consent turns out not to have been consent" rests on that
+# Chapter 15's "When a consent record is defective" rests on the mobility
 # family's own withdrawal sequence:
 #   tests/pins/mobility/defect/downstream-withdrawal/expect.pins.nibli
 # The consent and the consented effect complete, an independently reviewed
@@ -51,7 +54,8 @@
 # `false`, `prisoner` and `lose` derive for the subject at no point. No
 # correction, restitution or repair is established.
 #
-# "Keeping public decisions answerable" uses these isolated executable cases:
+# Chapter 17's "Keeping public decisions answerable" uses these isolated
+# executable cases:
 # Affected act, not permanent answerability, personal status or ballot:
 #   tests/pins/integrity/money-finding/act-not-person-sequence/expect.pins.nibli
 #   tests/pins/integrity/money-finding/franchise-does-not-consume-finding/expect.pins.nibli
@@ -81,21 +85,20 @@
 # Shared evidence limits and family cards:
 #   book-1/appendix/contracts/integrity-record-contract.md
 #
-# "When the emergency broke the rule it was under" and "When a public power
-# was handed to a private force" rest on these actual-constitution withdrawal
-# sequences:
+# Chapter 20's "When a declaration breaches the constitution" and "When
+# coercive power passes to a private force" rest on these actual-constitution
+# withdrawal sequences:
 #   tests/pins/public-safety/review/declaration-conflict-withdraws-requisition/expect.pins.nibli
 #   tests/pins/public-safety/review/defence-structure-conflict-withdraws-force-abroad/expect.pins.nibli
-# Each derives the parent record and the measure built on it, asserts an
-# independently reviewed defect against the parent, and derives both FALSE
-# afterwards while the person named in the measure keeps personhood and the
-# floor debt and is not a prisoner. Before the defect the requisition carries
-# its restraint, recorded loss and the operator's duty to inventory, return or compensate,
-# and the defence structure carries its duty to stay inside the Assembly's
-# ceilings, appropriations and audit. Withdrawal stops the permissions,
-# restraints and losses; the inventory/return/compensation and defence-limit
-# duties continue under the recorded undertakings. They do not establish that
-# property was returned, that a deployment ended, or that any remedy was performed.
+# Each completes the parent record and the measure built on it, asserts an
+# independently reviewed defect against the parent, and then neither record
+# completes, while the person named in the measure keeps personhood and the
+# floor debt and is not a prisoner. The operators' duties continue under the
+# recorded undertakings: to notify the Assembly and the Constitutional Court
+# and preserve immediate challenge, to inventory, return or compensate
+# requisitioned property, and to keep defence within the Assembly's ceilings,
+# appropriations and audit. They do not establish that property was returned,
+# that a deployment ended, or that any remedy was performed.
 #
 # KIND: CONTENT pin. Run:
 #   ./verify.sh --only book-1/18-the-vote-conviction-does-not-take.pins.nibli
@@ -106,55 +109,72 @@
 # corpus name this KB never mentions is real but empty: nothing could have made
 # it TRUE. A non-corpus name is not a FALSE at all — the run aborts, pins not
 # trustworthy. And a well-formed query on an argument its relation never
-# carries is a vacuous green that passes forever. Article 0a closed the
-# ASSERTION side only — a widening fact now aborts the run instead of loading —
+# carries is a vacuous green that passes forever. Article 0a closes the
+# ASSERTION side only — a widening fact aborts the run rather than loading —
 # but a QUERY on an unmentioned name still answers a clean FALSE, so kind one
 # is untouched. Pin a FALSE only where the KB could have said TRUE, and say in
 # the comment what would flip it.
 
-# "Speaking for conditions nobody may spend away" is grounded by the ecology
-# guardian/ stateful cases, historical-finality cases, independent appointment
-# and alternate-function cases, and animal-guardian-conflict/positive.
-# No stay or inspection power arises just from an office's name. Actual positive
-# records and each required-field/upstream omission are separate ordinary cases.
+# Chapter 12's "Speaking for conditions nobody may spend away" is grounded by
+# the ecology guardian/ stateful cases, historical-finality cases, independent
+# appointment and alternate-function cases, and
+# animal-guardian-conflict/positive. Actual positive records and each
+# required-field/upstream omission are separate ordinary cases.
 :expect-pins 31
 
+# This chapter says nothing about these two offices; the queries check a claim
+# of chapter 12. FSBOD_22 is the Future Conditions Guardian and FSBOD_23 the
+# Animal Protection Advocate. No record for either is supplied here, so
+# neither the Guardian's automatic stay nor the Advocate's inspection
+# permission follows: no stay or inspection power arises from an office's
+# name alone.
 ? interrupt(FSBOD_22, ECReaderStay, ECGuardianAutomaticStay).
 # => FALSE
 ? permits(FSBOD_23, ECOnlyExactLawfullyAccessibleAnimalInspection, ECReaderInspection).
 # => FALSE
 
-# "Hano is in custody. Hano still has the right to vote."
+# "In Hano's case the rules conclude confinement and a ballot entitlement
+# together."
 ? prisoner(Hano).
 # => TRUE
 
+# Free movement needs a person who is not a prisoner, so it does not follow
+# for Hano, while the ballot conclusion still does: "Hano loses free movement
+# and stays part of the electorate".
 ? travel(Hano).
 # => FALSE
 
 ? decide(Hano, Ballot).
 # => TRUE
 
-# "the franchise follows for Hano exactly as it follows for anyone"
+# Jala, an adult nobody holds in custody, reaches the ballot by the same
+# route as Hano: "The basic ballot entitlement follows from personhood and
+# recorded general adulthood."
 ? decide(Jala, Ballot).
 # => TRUE
 
-# "Movement, and nothing else." — checked item by item
+# "Conviction withdraws free movement and leaves the person's other rights
+# where they were", checked item by item.
 ? person(Hano).
 # => TRUE
 
+# Hano is owed expression as a floor item, and the record shows no act of it:
+# "custody itself produces no recorded act of expression".
 ? expresses(Hano).
 # => FALSE
 
+# No credibility finding and no loss of recognition follow from the case:
+# "The case leaves Hano's credibility untouched".
 ? false(Hano).
 # => FALSE
 
 ? lose(Points, Hano).
 # => FALSE
 
-# A void does not reach the franchise either. Bela is
-# voided and remains enfranchised. The pair must sit adjacent: the TRUE
-# franchise conclusion only carries the section's claim while the voiding
-# verdict stands beside it.
+# A credibility finding does not reach the franchise either: "Bela is under a
+# credibility finding and still holds the ballot conclusion." The pair must
+# sit adjacent: the TRUE franchise conclusion only carries the section's claim
+# while the finding stands beside it.
 ? false(Bela).
 # => TRUE
 
@@ -173,9 +193,12 @@
 ? decide(Cira, Ballot).
 # => FALSE
 
-# "The vote does not have that protection." — felon disenfranchisement COMPILES.
-# This is the chapter's honest half. If a later revision armours the franchise,
-# this pin flips to a refusal and the closing sections must be rewritten.
+# A narrower ballot rule, giving the vote only to adults outside custody, is
+# accepted and then removed again: the refusal that guards the floor does not
+# guard the ballot, and "that refusal protects the floor alone". The ballot
+# rule "can still be narrowed or replaced", and "a rule the computer accepts
+# is not thereby a lawful amendment". If the franchise gains the floor's
+# protection, this pin becomes a refusal and the chapter must change with it.
 :accept-scoped
 all $x: person($x) & match($x, GeneralAdult) & ~prisoner($x) -> decide($x, Ballot).
 
@@ -192,6 +215,7 @@ all $x: person($x) & match($x, GeneralAdult) & ~prisoner($x) -> decide($x, Ballo
 ? decide(Esa, Ballot).
 # => FALSE
 
+# Enter typed adulthood evidence for Esa, then ask the same questions again.
 at(Esa, GeneralAdulthood).
 
 ? prevents(Esa, GeneralAdulthoodDenial).
@@ -200,40 +224,44 @@ at(Esa, GeneralAdulthood).
 ? decide(Esa, Ballot).
 # => TRUE
 
-# [v0.9 2026-08-04] D1: keep the exact-name admission resident while refusing
-# the forged franchise conclusion. This block sits immediately before the
-# mandatory-final resident rule so it widens no unrelated pin context. The
-# mixed assertion must roll back its otherwise legal person fact atomically,
-# and the last refusal holds the corpus's three-place shape beside Hano's live
-# two-place derivation above.
+# `decide` is conclusion-only: the rules may conclude a ballot entitlement,
+# and no entry may write one. The admission below stays resident, so the name
+# is admitted vocabulary while the forged conclusion is refused; the block
+# sits near the end of the file so that only the final blocks run with it.
 :accept
 admits("decide").
 
+# Even with its name admitted, "a person entry submitted together with a
+# forged entitlement is refused along with it": the whole entry rolls back,
+# so the otherwise lawful person fact does not stay either.
 :refuse reasoning /`decide` is declared derived-only/
 person(Vote_Probe) & decide(Vote_Probe, Ballot).
 
 ? person(Vote_Probe).
 # => FALSE
 
+# An entry giving the ballot with an extra place, naming an election, is
+# refused in the same way, beside Hano's two-place conclusion above.
 :refuse reasoning /`decide` is declared derived-only/
 decide(Ghost, Ballot, Election).
 
-# ── "AND THEN NOTHING HAPPENS." MUST BE LAST, AND MUST BE UNSCOPED ───────────
-# The scoped accept above proves the clause LOADS and then puts the base back —
-# which is exactly why it cannot prove the chapter's corrected sentence. This
-# one leaves the clause RESIDENT, and the query underneath is the sentence:
-# with the narrower ballot formula standing in force, Hano still holds the
-# franchise, because this extra sufficient route does not remove the
-# wider franchise rule that already grants it.
+# ── THE NARROWER RULE, LEFT RESIDENT. THIS ACCEPT MUST STAY UNSCOPED ─────────
+# The scoped accept above proves the clause LOADS and then puts the base back,
+# so it cannot show what the chapter says here: "An additional grant has not
+# repealed the existing entitlement". This one leaves the clause RESIDENT, and
+# the query underneath is that sentence: with the narrower ballot rule in
+# force, Hano's ballot "still follows from the broader rule", because an extra
+# sufficient route removes nothing.
 #
 # DO NOT EXPECT THE QUERY TO DEPEND ON THE ACCEPT. Measured both ways: drop the
-# accept and the verdict is identical, because the franchise conclusion was
-# always the wider rule's doing. That identity IS the pinned claim — the clause is in
+# accept and the verdict is identical, because the ballot conclusion comes
+# from the wider rule. That identity IS the pinned claim — the clause is in
 # force and changes no answer — the same shape as the no-dead-conjuncts
 # fixture, where nothing moving is the result. What this block adds over the
 # scoped accept above is the word RESIDENT: the hostile clause is not merely
 # loadable, it is standing in the record while the answer stays. An accepted
-# rule stays in the KB, so nothing may be pinned after this block.
+# rule stays in the KB, so every pin below runs with it; it concludes nothing
+# about the child those pins ask after.
 :accept
 all $x: person($x) & match($x, GeneralAdult) & ~prisoner($x) -> decide($x, Ballot).
 
@@ -241,23 +269,23 @@ all $x: person($x) & match($x, GeneralAdult) & ~prisoner($x) -> decide($x, Ballo
 # => TRUE
 
 # ── The child with nobody ──────────────────────────────────────────────────
-# "No franchise conclusion follows for a child with one birth entry, because
-# the franchise route needs typed evidence of the common adulthood threshold
-# and nothing supplies it."
+# "Nell's birth entry holds nothing about general adulthood, so the ballot
+# conclusion is absent for Nell."
 ? decide(Nell, Ballot).
 # => FALSE
 
 ? at(Nell, GeneralAdulthood).
 # => FALSE
 
-# "What it is not is a taking." Nothing ran against this child.
+# "Either way the absence is no taking: custody and a credibility finding are
+# both absent for Nell".
 ? prisoner(Nell).
 # => FALSE
 
 ? false(Nell).
 # => FALSE
 
-# "the voice is not the vote: the barrier against a minimum speaking age holds
-# for this child on personhood alone"
+# "Nell already holds the right to be heard: the prohibition on a minimum
+# speaking age follows from personhood alone."
 ? prevents(Nell, ChildVoiceNoAgeFloor).
 # => TRUE

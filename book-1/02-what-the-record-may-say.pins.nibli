@@ -25,8 +25,8 @@
 # Full interface and evidence limits:
 #   book-1/appendix/contracts/official-statistics-contract.md
 #
-# "Keeping, watching, and letting a machine help" rests on these
-# actual-constitution record-power cases:
+# Chapter 19's section "Keeping, watching, and letting a machine help" rests
+# on these actual-constitution record-power cases:
 #   tests/pins/record-power/holding/positive/expect.pins.nibli
 #   tests/pins/record-power/holding/without-RecordEnforcementFirewallScope/expect.pins.nibli
 #   tests/pins/record-power/holding/kind-RecordPurposeScope-UnapprovedRecordKind/expect.pins.nibli
@@ -59,44 +59,47 @@
 #   ./verify.sh          # all substantive pins and formal contradiction checks
 # Markdown consistency is reviewed separately; the pins do not certify prose.
 #
-# One entry per load-bearing sentence in the chapter. Private to the author; the
-# reader never sees this file. If a verdict flips, the sentence it guards has
-# started lying — fix the prose or the constitution, never the pin.
+# One entry per load-bearing sentence in the chapter. If a verdict flips, the
+# sentence it guards has started lying — fix the prose or the constitution,
+# never the pin.
 
 # WHAT FALSE MEANS HERE — three kinds, and only one is a verdict. A FALSE on a
 # corpus name this KB never mentions is real but empty: nothing could have made
 # it TRUE. A non-corpus name is not a FALSE at all — the run aborts, pins not
 # trustworthy. And a well-formed query on an argument its relation never
-# carries is a vacuous green that passes forever. Article 0a closed the
-# ASSERTION side only — a widening fact now aborts the run instead of loading —
+# carries is a vacuous green that passes forever. Article 0a closes the
+# ASSERTION side only — a widening fact aborts the run rather than loading —
 # but a QUERY on an unmentioned name still answers a clean FALSE, so kind one
 # is untouched. Pin a FALSE only where the KB could have said TRUE, and say in
 # the comment what would flip it.
 
 :expect-pins 46
 
-# 1.2 "Hano injured Ivo. A court judged Hano. Both of those are facts."
+# "The record says that Hano injured another person and that the Court judged
+# Hano. Those are inputs."
 ? injure(Hano, Ivo).
 # => TRUE
 
 ? judge(Court, Hano).
 # => TRUE
 
-# 1.2 cont. "Hano is also a prisoner — but that is not a fact anyone recorded."
-# TRUE, and reached only by derivation; the two refusals below prove the second half.
+# "That Hano is a prisoner is a conclusion": TRUE, reached only through the
+# rules. The refusal below shows that nobody may write it directly.
 ? prisoner(Hano).
 # => TRUE
 
-# 1.3 "You cannot simply declare someone guilty. There is no way to write it."
+# "Try to bypass that route by writing directly that someone is a prisoner.
+# The entry is refused."
 :refuse reasoning /declared derived-only/
 prisoner(Zed).
 
-# 1.4 "Nor can you hand yourself the authority to judge."
+# "So are direct assertions of public answerability": `authority` is reserved
+# for the rules to conclude.
 :refuse reasoning /declared derived-only/
 authority(Pax).
 
-# 1.3b "Nor can you write down that an offence was serious." — the third of the
-# chapter's three cannot-write claims, and the only one that was unpinned.
+# "So are direct assertions of ... severity": nobody may write that an offence
+# was severe.
 :refuse reasoning /declared derived-only/
 severe(Zed).
 
@@ -105,37 +108,38 @@ severe(Zed).
 :refuse reasoning /declared derived-only/
 false(Zed).
 
-# 1.4 cont. "Either a seating body chose you, or you hold a public office.
-#            Those are the only routes."
+# "Public answerability follows from an institution's public status or from a
+# seating by the electorate or the convocation." The Court has it through its
+# public-body entry.
 ? public(Court).
 # => TRUE
 
 ? authority(Court).
 # => TRUE
 
-# ...and the seating body need not be the electorate. Saba holds a seat the
-# convocation gave — no office, no electorate entry — and answerability follows
-# the same way. This is the route the sentence used to deny: it said "the
-# electorate seated you" and "only two routes", stale since the second seating
-# body was added. Saba isolates the third rule: nothing else confers it.
+# "a person the convocation seated has it through that seating." Saba holds a
+# seat the convocation gave — no office, no electorate entry — so the
+# convocation route alone gives Saba public answerability.
 ? choose(Convocation, Saba).
 # => TRUE
 
 ? authority(Saba).
 # => TRUE
 
-# 1.5 "Koa documented something about Esa. ... Esa's credibility is untouched."
+# "The record holds a single examination of Esa, the examiner's only recorded
+# act. Esa's credibility is untouched". Koa is the examiner.
 ? capture(Koa, Esa).
 # => TRUE
 
 ? false(Esa).
 # => FALSE
 
-# 1.5 cont. "Nor is Koa marked for having looked."
+# "and so is the examiner's for having made it": no credibility finding for
+# Koa either.
 ? false(Koa).
 # => FALSE
 
-# 1.6 The protected register names the floor article and leaves the evidence
+# The protected register names the floor article and leaves the evidence
 # vocabulary off it; the chapter on changing the rules describes the register.
 # Here the pair stands beside "Changing the vocabulary": an `admits` edit is a
 # visible source change, and the register does not inspect it.
@@ -145,13 +149,11 @@ false(Zed).
 ? permanent(Art_Evidence).
 # => FALSE
 
-# 1.6b "they cannot. Not *may not*. Cannot. There is nowhere to put it."
-# [v0.9] THIS SENTENCE WAS FALSE UNTIL ARTICLE 0a. nibli's lexicon is
-# fail-closed, so an invented word never loaded — but `rich` is a real corpus
-# name and `rich(Adam).` answered TRUE. The closure was at nibli's vocabulary,
-# not at this book's. `admits` moved it here, and these two pins are the whole
-# of the chapter's opening claim: a name off the list is refused, and adding one
-# has to be a visible edit above the first use.
+# "The tests try to record that Adam is rich or dangerous. Both entries are
+# refused, because those kinds of assertion lie outside the constitutional
+# record." Both words are real corpus names; this book's own `admits` list is
+# what refuses them, and "A new kind of entry needs a declaration placed
+# before its first use".
 :refuse reasoning /not admitted vocabulary/
 rich(Adam).
 
@@ -167,21 +169,26 @@ dangerous(Adam).
 ? prisoner(Iris).
 # => FALSE
 
+# The added entry alleges that Iris deceived Tove, the official Iris exposed.
+# It names no finder and no rule reads it, so the shield holds and the
+# prisoner conclusion for Iris stays FALSE.
 :accept
 deceive(Iris, Tove).
 
 ? prisoner(Iris).
 # => FALSE
 
-# "A person has a family" — one word, buried in a list of attributes. For
-# Hano's family label is recorded only to prove it changes no placement
-# result; severity and the separate placement-home record decide the route.
+# "Recording that Hano has a family leaves his placement where it was, and a
+# family entry has no route to harsher confinement." Before the entry, Hano is
+# eligible for home confinement and the reviewed placement record names it.
 ? fit(Hano, Homestay).
 # => TRUE
 
 ? building(Homestay, Hano).
 # => TRUE
 
+# The family entry is added here. The home placement is unchanged, and the
+# rules conclude no LowSec placement for Hano.
 :accept
 family(Hano).
 
@@ -194,28 +201,22 @@ family(Hano).
 ? building(LowSec, Hano).
 # => FALSE
 
-# 1.3c THE PAIRING IS THE RULE. "An offence is severe when two of those stand
-# together in the record: an attack and a cruelty landing on the same person,
-# or either of them landing on one person while an injury lands on another."
-# The gloss this replaced — "any two of the three are present" — was refuted by
-# exactly these verdicts: attack and cruelty toward DIFFERENT people derive
-# nothing, and the same pair on one person derives severity. Fresh names;
-# effects disjoint from everything below — severe feeds placement only through
-# prisoner, and Probe is nobody's prisoner. Unscoped for the file's usual
-# reason: each accept is the premise of the query under it.
-#
-# The court facts below were added on 2026-09-16, when severity became
-# court-bound: it reads the Court's judgment and its cited case besides the
-# pairing. They are here so this exhibit keeps demonstrating what it is about —
-# the PAIRING — rather than silently becoming a demonstration of the new
-# conjuncts. That severity is now court-bound has its own case, in
-# tests/pins/red-team/an-accusation-nobody-signed.
+# Severity rests only on an independently reviewed finding of grave injury or
+# aggravated cruelty: "A count of people injured, or a raw entry of attack or
+# cruelty, adds nothing to it." As in the chapter's test, Probe is "a person
+# the Court judged in a cited case", so those facts come first. Probe, Vic1
+# and Vic2 are fresh names and Probe is nobody's prisoner, so nothing below is
+# affected; each accept is the premise of the query under it, so none is
+# scoped. tests/pins/red-team/an-accusation-nobody-signed also runs unsigned
+# harm entries against severity.
 :accept
 judge(Court, Probe).
 
 :accept
 cite(Court, ProbeCase, Probe).
 
+# Raw entries follow: an attack by Probe on one person, a cruelty to another.
+# No rule reads a raw attack or cruelty entry, so "severity stays absent".
 :accept
 attack(Probe, Vic1).
 
@@ -225,6 +226,9 @@ cruel(Probe, Vic2).
 ? severe(Probe).
 # => FALSE
 
+# Cruelty toward the person already attacked puts both raw entries on one
+# person. "It stays absent when cruelty against the person already attacked
+# is added": a pair of raw entries is no finding either.
 :accept
 cruel(Probe, Vic1).
 
@@ -232,13 +236,16 @@ cruel(Probe, Vic1).
 # => FALSE
 
 # A raw Court-failure report is not a qualified case-specific disposition.
-# Both original cases and both before/after questions remain.
+# Hano's and Lalo's custody are asked before and after the report.
 ? prisoner(Hano).
 # => TRUE
 
 ? prisoner(Lalo).
 # => TRUE
 
+# The bare report is added here. "A bare claim that the Court is broken
+# likewise leaves the custody cases in place": no custody rule reads it, so
+# both prisoner conclusions stay TRUE.
 broken(Court).
 
 ? prisoner(Hano).
@@ -247,15 +254,16 @@ broken(Court).
 ? prisoner(Lalo).
 # => TRUE
 
-# 1.7 "Someone is a person." — the entry, and the two ways it gets written.
+# "Personhood is itself admitted vocabulary." The entry, and the two ways it
+# gets written.
 #
-# THESE MUST BE LAST IN THE FILE AND THAT IS NOT COSMETIC. An accepted assertion
+# THESE STAY IN THE RECORD FOR THE REST OF THE FILE. An accepted assertion
 # loads into the KB and stays there. `person(Ghost).` puts a name on the roster
 # with every floor right, `travel`, and a public body owing it things; the
 # `free` route does the same by a longer path. Any pin querying the roster after
-# this point measures a polluted KB and passes for the wrong reason —
-# `rights-floor.pins.nibli:285` records a real vacuous green from exactly this.
-# Put new queries ABOVE this block.
+# this point measures a widened KB and can pass for the wrong reason, so put
+# new roster queries ABOVE this block. The child block below asks only about
+# Nell, and these entries change none of its results.
 #
 # DO NOT CONVERT THESE TO `:accept-scoped`. Each accepted statement here is the
 # premise of the query under it, not a control — scoped, it is retracted before
@@ -265,23 +273,19 @@ broken(Court).
 # which reads like the design regressed, and this file's rule is never to fix
 # the pin.
 #
-# It does not reach the other thirteen files: each gets a fresh KB. Proof —
-# `rights-floor.pins.nibli` runs first and its controls would make
-# `travel(Bela)` FALSE, yet `24-findings-about-people.pins.nibli` pins it TRUE in the same
-# green run.
+# The widening stays in this file: each pin file starts from a fresh KB.
 
-# "Someone's sentence is finished" is ON the list, and it confers personhood.
-# This is the pin the chapter's decision turned on: the list already reached the
-# roster before anybody decided whether `person` belonged on it.
+# "a report that someone's sentence is finished makes a person of the name it
+# gives": the release entry is admitted, and personhood follows from it.
 :accept
 free(Wraith).
 
 ? person(Wraith).
 # => TRUE
 
-# And the entry itself is writable, with nothing asked and nobody consulted.
-# "a name belonging to nobody acquires every right on the floor ... the freedom
-#  to move ... Nothing anywhere asks who this is."
+# And the entry itself is writable: "A fabricated person entry gives a name
+# every floor right and the freedom to move", and "Nothing in the rules asks
+# whether a human being answers to the name."
 :accept
 person(Ghost).
 
@@ -289,17 +293,18 @@ person(Ghost).
 # => TRUE
 
 # ── The child with nobody ──────────────────────────────────────────────────
-# "It could be written, because a birth is a fact somebody reports and the list
-# admits it" — the exposure this chapter concedes, asked of the thinnest record.
+# "Nell's birth entry is admitted, and personhood follows." The same exposure,
+# asked of the thinnest record.
 ? person(Nell).
 # => TRUE
 
-# "the record admits no word for what the child is" — the refusal happens at
-# the closed vocabulary, before the rule loads, not after somebody notices.
+# "The test also tries to enter a classification of Nell as vulnerable, and
+# the closed vocabulary refuses it as an unknown word before any rule could
+# read it."
 :refuse syntax /unknown predicate "vulnerable"/
 vulnerable(Nell).
 
-# And the conclusions this chapter keeps apart stay apart for the child too:
-# nothing about one birth entry concludes anything about them.
+# "nothing adverse follows from the birth entry: Nell's credibility is
+# untouched."
 ? false(Nell).
 # => FALSE

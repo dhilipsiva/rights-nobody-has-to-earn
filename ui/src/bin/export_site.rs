@@ -122,6 +122,9 @@ fn companion_markdown(route: &str) -> String {
                 text += &format!("## {}\n\n{}\n\n", f.title, f.role);
                 for step in &f.steps {
                     text += &format!("- {}\n", step.label);
+                    for query in &step.queries {
+                        text += &format!("  - `? {}` {}\n", query.text, query.gloss);
+                    }
                 }
                 text += &format!(
                     "\n[Read chapter {}]({ORIGIN}{}) · [Source]({REPOSITORY}/blob/main/{})\n\nAuthored cost: {}\n\n",

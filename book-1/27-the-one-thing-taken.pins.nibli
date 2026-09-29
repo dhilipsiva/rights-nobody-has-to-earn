@@ -13,26 +13,27 @@
 #   ./verify.sh          # the real check — the line above cannot see
 #                        # the other substantive cases and contradiction scans
 #
-# TRIGGER FIRED. This file used to record "there is no release" as an absence and
-# said: "If a release rule is ever added, the closing section must be rewritten."
-# It was, and it has been. Release is now Article 6's `~free` guard plus Article
-# 1's `free -> person`, and the closing two sections are pinned below.
+# Release: a raw report that a sentence is finished makes a person of the name
+# it gives, through the `free -> person` rule, and ends no custody; a
+# qualified custody-relief order in the case ends it. The release section
+# below pins both.
 #
-# Duration remains an external supplied boundary, not a counted sentence.
-# The existing time-vocabulary refusals below remain substantive checks;
-# retired numeric/source-report audits are not verification gates.
+# Duration is an external supplied boundary, not a counted sentence; the
+# time-vocabulary refusals below are substantive checks.
 #
-# The other: "Nothing depends on it" — travel appears in the constitution only as
-# a rule head. Test the rule BODIES, since a bare grep matches the head too:
+# "movement and a recorded loss are endpoints, which the rules conclude and
+# read nowhere": `travel` and `lose` appear in the constitution only as rule
+# heads. Test the rule BODIES, since a bare grep matches the head too:
 #   awk -F'->' '/^[^#]/ && /->/ && $1 ~ /travel/' book-1/source/constitution.nibli
-# must stay EMPTY. `verify.sh` runs it with a positive control.
+# must stay EMPTY. The `:require` lines below run this check for both
+# relations, with a positive control.
 
 # WHAT FALSE MEANS HERE — three kinds, and only one is a verdict. A FALSE on a
 # corpus name this KB never mentions is real but empty: nothing could have made
 # it TRUE. A non-corpus name is not a FALSE at all — the run aborts, pins not
 # trustworthy. And a well-formed query on an argument its relation never
-# carries is a vacuous green that passes forever. Article 0a closed the
-# ASSERTION side only — a widening fact now aborts the run instead of loading —
+# carries is a vacuous green that passes forever. Article 0a closes the
+# ASSERTION side only — a widening fact aborts the run rather than loading —
 # but a QUERY on an unmentioned name still answers a clean FALSE, so kind one
 # is untouched. Pin a FALSE only where the KB could have said TRUE, and say in
 # the comment what would flip it.
@@ -45,17 +46,20 @@
 :require test -z "$(awk -F'->' '/^[^#]/ && /->/ && $1 ~ /(^|[^[:alnum:]_])(travel|lose)[[:space:]]*\(/ {print}' book-1/source/constitution.nibli)"
 :require test -n "$(awk -F'->' '/^[^#]/ && /->/ && $1 ~ /(^|[^[:alnum:]_])restrain[[:space:]]*\(/ {print}' book-1/source/constitution.nibli)"
 
-# "Hano was convicted ... and cannot move freely."
+# "Custody follows, and with it the loss of movement."
 ? prisoner(Hano).
 # => TRUE
 
 ? travel(Hano).
 # => FALSE
 
-# The audit, item by item — everything else Hano keeps
+# "Hano remains a person, owed the whole floor, with a ballot entitlement."
+# Item by item; no credibility finding or recorded loss follows either.
 ? person(Hano).
 # => TRUE
 
+# Custody leaves Hano the claims, not the things claimed: the record "contains
+# no shelter receipt or record of speech", so the rules conclude no speech.
 ? expresses(Hano).
 # => FALSE
 
@@ -68,6 +72,7 @@
 ? lose(Points, Hano).
 # => FALSE
 
+# Nor shelter received: a reviewed home placement is no shelter receipt.
 ? dwell(Hano).
 # => FALSE
 
@@ -81,18 +86,20 @@
 ? travel(Jala).
 # => TRUE
 
-# Voiding is not confinement: Bela lost credibility and still moves
+# A credibility finding is not confinement: Bela is under one and still moves.
 ? false(Bela).
 # => TRUE
 
 ? travel(Bela).
 # => TRUE
 
-# ── "And it may end" / "What leaving costs" ──────────────────────────────────
-# LAST in the file: this block asserts a release and changes Hano for everything
-# after it. Nothing follows.
+# ── "What leaving changes" ──────────────────────────────────────────────────
+# This block records a release for Hano, and the record keeps it for the rest
+# of the file: later queries about Hano, including the custody-authority pin
+# in the time block, see the released Hano.
 
-# "Somebody records that it is over — that is one of the things the world may say"
+# "Suppose entries were added to end Hano's custody." The first is a raw report
+# that the sentence is finished.
 free(Hano).
 
 # A raw completion report has no authority; the qualified case order does.
@@ -100,6 +107,9 @@ free(Hano).
 # => TRUE
 ? travel(Hano).
 # => FALSE
+# The qualified order follows: Appeals, with an independent reviewer, finds
+# the sentence satisfied. It "identifies Hano, the case, incident, offence,
+# ground, evidence and appellate actors"; witnesses fix its place in sequence.
 list(Chapter29_Hano_Completion, Hano, Case_Hano, CustodyRelief).
 list(Chapter29_Hano_Completion, SentenceSatisfied, Evidence_Chapter29_Hano_Completion, CustodyReliefGroundEvidence).
 judge(Appeals, Chapter29_Hano_Completion).
@@ -146,8 +156,8 @@ observe(TemporalReview, Relief_End_Chapter29_Hano_Completion, Epoch_Current, Rec
 ? err(Hano, Isolation).
 # => FALSE
 
-# "The person keeps every entitlement they had ... and the body that owes it
-#  still owes it"
+# "Hano keeps standing and is still owed shelter": personhood, the shelter
+# entitlement and the State's floor debt all hold after release.
 ? person(Hano).
 # => TRUE
 
@@ -157,19 +167,18 @@ observe(TemporalReview, Relief_End_Chapter29_Hano_Completion, Epoch_Current, Rec
 ? owe(State, Provision, Hano).
 # => TRUE
 
-# In the supplied record both active actualities come through confinement. When
-# a sentence finishes they stop; dormant recipient-side routes do not fabricate
-# replacement evidence. These are the two pins that carry that narrower claim.
+# "Shelter received, or speech made, needs evidence of its own, independent of
+# the sentence and of the order ending it": neither follows for Hano after
+# release, as neither followed during custody.
 ? expresses(Hano).
 # => FALSE
 
 ? dwell(Hano).
 # => FALSE
 
-# ── The Hano/Jala lists, pinned item by item ─────────────────────────────────
-# "Four differences, and three of them run the wrong way." An earlier draft said
-# "Everything else on both lists is identical", which was false in four places.
-# Pinned as pairs so the claim cannot drift back.
+# ── Jala, item by item ───────────────────────────────────────────────────────
+# Jala holds only the injury entry: no speech or shelter is shown, no
+# placement eligibility follows and no isolation marker is raised.
 ? expresses(Jala).
 # => FALSE
 
@@ -186,12 +195,11 @@ observe(TemporalReview, Relief_End_Chapter29_Hano_Completion, Epoch_Current, Rec
 ? prisoner(Jala).
 # => FALSE
 
-# ── "What the design does not say is WHEN" — the record's door, today ────────
-# Ruled 2026-08-02: the design does not say how long, and that is ratified,
-# not pending. The time vocabulary is refused at assert time — the loud door
-# (chapter 2's closure) is the only way in.
-# T3 now represents one independently witnessed transition, two separately
-# witnessed order claims, and one reviewed custody interval. These are symbolic
+# ── "The review period has an order, and no length the rules measure." ─────
+# The design does not say how long. Time words are refused at assertion, and
+# a visible `admits` line (chapter 2's closure) is the only way in. The record
+# holds an independently witnessed transition, separately witnessed orders of
+# events and of record entries, and a reviewed custody interval: symbolic
 # record relations, not a clock or a computed term.
 ? succeed(Epoch_Current, Transition).
 # => TRUE
@@ -205,6 +213,8 @@ observe(TemporalReview, Relief_End_Chapter29_Hano_Completion, Epoch_Current, Rec
 ? time(Window_Custody, ReviewedInterval).
 # => TRUE
 
+# The witnessed relations stay, but the qualified order above ends custody in
+# Hano's case: the rules conclude no ActivePower for Case_Hano.
 ? correct(Case_Hano, ActivePower).
 # => FALSE
 
@@ -217,8 +227,8 @@ year(Term, Two).
 :refuse reasoning /not admitted vocabulary/
 earlier(Custody, Release).
 
-# ── "Recognition, work, compliance, wealth and character cannot shorten or
-# extend custody either." ──────────────────────────────────────────────────
+# ── "Recognition, employment, compliance, wealth and character are outside the
+# terms on which custody continues or ends" ──────────────────────────────────
 # Recognition has no producer or reader. A proposed raw release rule loads,
 # but its premise has no source and a raw release flag grants no authority.
 # The operative rule below still defeats its own custody premise.
@@ -228,18 +238,18 @@ all $x: prisoner($x) & reward($x) -> free($x).
 :refuse reasoning /Unstratifiable/
 all $subject: all $case: prisoner($subject, $case) & reward($subject) -> clean($case, CustodyConfinementBar).
 
-# ── THE TERM THAT RELEASES NOBODY. MUST BE LAST: everything below persists ───
-# Walk through the loud door on purpose: admit the word, state the term — no
-# digit anywhere, `Two` is an opaque name — and watch what it does. Nothing.
-# The conviction stands, no release derives, nothing counts down or notices a
-# term run out. Ruk is the subject because this file has already released Hano
-# above — the term has to be stated for somebody still held. "A term could be written into this design tomorrow and nothing
-# in it would count the term down" — executed. This is what the ruling
-# declined to build: a promise with no keeper.
+# ── THE TERM THAT RELEASES NOBODY ─────────────────────────────────────────────
+# "Suppose a duration word were admitted and a term recorded for a person still
+# held. Custody continues and the rules conclude no release." Here it is done:
+# admit the word, state the term — no digit anywhere, `Two` is an opaque name.
+# Ruk is the subject because this file has already released Hano above.
+# "A term label by itself is only a label, with nothing to count it down or
+# bring it to an end." The entries stay in the record for the rest of the
+# file; no rule reads `year`, so the child block below is unaffected.
 #
-# A nuance found while checking: `admits` for a FRESH name loads from a probe
-# (the too-late refusal guards relations with prior facts), so this ceremony
-# can be performed on top of the record from outside the constitution's text.
+# `admits` for a FRESH name loads from a probe (the too-late refusal guards
+# relations with prior facts), so this ceremony can be performed on top of
+# the record from outside the constitution's text.
 # In the society, the widening is still the visible reviewable act chapter 2
 # describes; in this harness, it means refusal pins guard the shipped text and
 # a probe may always widen on top — which is exactly what this block does.
@@ -253,7 +263,8 @@ year(Term_Ruk, Two).
 # => FALSE
 
 # ── The child with nobody ──────────────────────────────────────────────────
-# "movement is unrestrained and no confinement conclusion follows"
+# On the one-line birth record, Nell moves freely, and no restraint or
+# confinement follows.
 ? travel(Nell).
 # => TRUE
 
@@ -263,7 +274,8 @@ year(Term_Ruk, Two).
 ? prisoner(Nell).
 # => FALSE
 
-# The child fixture derives neither void nor loss; the food debt remains.
+# For the child fixture the rules conclude neither a credibility finding nor
+# a recorded loss, and the food debt remains.
 ? false(Nell).
 # => FALSE
 

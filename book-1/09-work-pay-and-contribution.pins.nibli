@@ -5,9 +5,11 @@
 #   ./verify.sh          # all substantive pins and contradiction checks
 #
 # The chapter's case lists tests/pins/records/child_with_nobody/fixture.nibli,
-# so Nell is in the record with one entry. Every other probe name below is
-# fresh: a scheme, a carrier, a certifier, a payer and an attester that the
-# cast never mentions, so nothing here can complete a rule for a cast member.
+# so Nell is in the record with one entry. The supplement, certificate and
+# compensation cases use fresh names: a scheme, a carrier, a certifier, a
+# payer and an attester that the cast never mentions. The contribution
+# section also adds entries about cast members, and its pins show what those
+# entries conclude.
 #
 # The families this chapter renders carry their own executable coverage, cited
 # rather than duplicated:
@@ -126,8 +128,9 @@
 ? prevents(Adam, OwnershipFormGuaranteedBailout).
 # => TRUE
 
-# "The family ships dormant" — nobody in the cast holds a supplement, a wage or
-# a certificate. Each needs its complete authorised, matching premises to derive.
+# "Each follows only from evidence added for its case: the ordinary cast's
+# record lacks that evidence, and Adam holds no supplement, wage or
+# certificate."
 ? insure(Ledgerhouse, Adam, Illness).
 # => FALSE
 
@@ -137,13 +140,15 @@
 ? grant(Assayer, Welding, Adam).
 # => FALSE
 
-# "supply the record and an independent finding for a fresh person and the
-# supplement derives, without that person ever appearing on the roster"
+# "Marlo's contribution record names an insurance carrier and its
+# contributory scheme."
 pay(Marlo, Contribution, Ledgerhouse, SchemeM).
 # The record alone concludes nothing.
 ? insure(Ledgerhouse, Marlo, Illness).
 # => FALSE
 
+# An adjudicator authorised for Marlo, not the carrier, "records Marlo's
+# illness under that same scheme", and the supplement follows.
 authorized(Assay, InsuranceAdjudicator, Marlo).
 observe(Assay, Illness, Marlo, SchemeM).
 ? insure(Ledgerhouse, Marlo, Illness).
@@ -157,23 +162,28 @@ observe(Assay, Illness, Marlo, SchemeM).
 ? insure(Ledgerhouse, Marlo, Unemployment).
 # => FALSE
 
-# "made ... by someone who is not the carrier that would owe the supplement"
+# "Someone other than the carrier must adjudicate the event."
+# Here the carrier, Ledgerhouse, adjudicates Teodora's illness itself, so
+# no supplement follows.
 pay(Teodora, Contribution, Ledgerhouse, SchemeM).
 authorized(Ledgerhouse, InsuranceAdjudicator, Teodora).
 observe(Ledgerhouse, Illness, Teodora, SchemeM).
 ? insure(Ledgerhouse, Teodora, Illness).
 # => FALSE
 
-# "When the carrier fails, the same record and the same finding conclude the
-# supplement against the public guarantee as well."
+# Nothing follows against the public guarantee until a court finds the
+# carrier insolvent; the supplement then "also follows against the public
+# guarantor".
 ? insure(PublicGuarantee, Marlo, Illness).
 # => FALSE
 
+# The Court records the carrier's insolvency under the same scheme.
 observe(Court, CarrierInsolvency, Ledgerhouse, SchemeM).
 ? insure(PublicGuarantee, Marlo, Illness).
 # => TRUE
 
-# "A body authorised as a certifier attests that a person can do a named thing"
+# "A welder is the subject of an attestation made by an authorised certifier,
+# covering the welder and the certification purpose."
 authorized(Assayer, Certifier, Ansel).
 observe(Assayer, Welding, Ansel, CertificationScope).
 ? grant(Assayer, Welding, Ansel).
@@ -183,18 +193,21 @@ observe(Assayer, Welding, Ansel, CertificationScope).
 ? person(Ansel).
 # => FALSE
 
+# In a separate test "one person is both certifier and subject, and the rules
+# conclude no certificate".
 authorized(Brix, Certifier, Brix).
 observe(Brix, Welding, Brix, CertificationScope).
-# "A person may not certify themself"
 ? grant(Brix, Welding, Brix).
 # => FALSE
 
-# "A payer promises it, and it is concluded only when someone authorised for
-# that person, who is not the payer, attests the same kind on a stated basis."
+# "In the wage case an employer is the payer and Coll the recipient. The
+# employer's promise alone yields no compensation."
 promise(Foundry, Wage, Coll).
 ? provide(Foundry, Wage, Coll).
 # => FALSE
 
+# Steward, authorised for Coll and not the payer, "attests Coll's wage and
+# names the employer on the stated labour basis".
 authorized(Steward, CompensationAttester, Coll).
 observe(Steward, Wage, Coll, LabourBasis).
 observe(Steward, Foundry, Coll, LabourBasis).
@@ -207,15 +220,18 @@ promise(Tannery, Wage, Coll).
 ? provide(Tannery, Wage, Coll).
 # => FALSE
 
-# "A wage attested is not a prize promised"
+# "The kinds must match: a wage attestation supports a wage and leaves a prize
+# unsupported."
 ? provide(Foundry, Prize, Coll).
 # => FALSE
 
+# "In a separate case the same payer promises another recipient an incentive
+# while the attester attests a metric; the records differ, and the incentive
+# waits on a matching attestation."
 promise(Foundry, Incentive, Dunya).
 authorized(Steward, CompensationAttester, Dunya).
 observe(Steward, Metric, Dunya, PerformanceBasis).
 observe(Steward, Foundry, Dunya, PerformanceBasis).
-# "an incentive promised is not concluded by a metric attested"
 ? provide(Foundry, Incentive, Dunya).
 # => FALSE
 
@@ -228,6 +244,7 @@ observe(Steward, Foundry, Dunya, PerformanceBasis).
 ? provide(Coll, Restitution, Foundry).
 # => FALSE
 
+# The Court records "compensation fraud by Coll on the attested labour basis".
 observe(Court, CompensationFraud, Coll, LabourBasis).
 ? provide(Foundry, Wage, Coll).
 # => FALSE
@@ -241,7 +258,8 @@ observe(Court, CompensationFraud, Coll, LabourBasis).
 ? provide(Tannery, Wage, Coll).
 # => FALSE
 
-# "The floor is not in the sentence" — after every record above, the floor is what it was.
+# "the floor stays outside the dispute: Adam is still entitled to food after
+# every record in these cases."
 ? entitled(Adam, event { eats() }).
 # => TRUE
 
@@ -255,6 +273,8 @@ observe(Court, CompensationFraud, Coll, LabourBasis).
 ? grant(Assayer, Welding, Nell).
 # => FALSE
 
+# Nell holds none of them, and "is owed food and protected against any
+# floor condition on contribution all the same".
 ? prevents(Nell, FloorContributionCondition).
 # => TRUE
 
@@ -262,12 +282,14 @@ observe(Court, CompensationFraud, Coll, LabourBasis).
 # => TRUE
 
 # ── Contribution: evidence of an act, never a status ────────────────────────────
-# Contribution without a constitutional recognition status.
-# Original contribution, accusation, child and restoration scenarios retained.
-# The 2026-09-20 removal supersedes their recognition and clawback verdicts.
-# The removed producers and blanket penalty execute in the explicit
-# credibility/counterfactual-blanket-recognition-loss regression.
+# "The constitution holds no status called recognition": no rule concludes
+# reward, or lose on Points, so both are FALSE for everyone below, whatever
+# they did and whatever was found against them. The counterfactual case
+# credibility/counterfactual-blanket-recognition-loss adds recognition
+# producers and a blanket penalty to a copy and pins what they would do.
 
+# The cast's contribution entries stay in the record as acts, each "evidence
+# of an act": teaching, census work, examinations. None brings recognition.
 ? teaches(Esa, Fin).
 # => TRUE
 
@@ -310,6 +332,8 @@ observe(Court, CompensationFraud, Coll, LabourBasis).
 ? reward(Mael).
 # => FALSE
 
+# The care cases: "A parent teaches their own child". Nima is recorded as
+# Pico's parent and teacher, and no recognition follows for Nima.
 person(Nima).
 parent(Nima, Pico).
 teaches(Nima, Pico).
@@ -320,6 +344,8 @@ teaches(Nima, Pico).
 ? reward(Nima).
 # => FALSE
 
+# Sata's employment entry names care. No recognition follows for Sata, nor
+# for Pico: "Being taught gives the child no contribution."
 person(Sata).
 work(Sata, Care).
 
@@ -329,6 +355,9 @@ work(Sata, Care).
 ? reward(Pico).
 # => FALSE
 
+# Cira "has no recorded evidence of general adulthood", so the barrier that
+# reads that evidence does not follow. An employment entry for Cira "is
+# silent on Cira's age", and no recognition follows from it.
 ? prevents(Cira, GeneralAdulthoodDenial).
 # => FALSE
 
@@ -337,11 +366,16 @@ work(Cira, Chores).
 ? reward(Cira).
 # => FALSE
 
+# "When that child later teaches someone else, the record names the child's
+# own act", and still no recognition follows for Pico.
 teaches(Pico, Ona).
 
 ? reward(Pico).
 # => FALSE
 
+# Bela, under the credibility finding, records a judgment and an examination
+# of Ivo on a cited ground: the rules conclude no recognition for Bela and
+# no recorded loss (lose).
 judge(Bela, Ivo).
 capture(Bela, Ivo).
 cite(Bela, Query, Ivo).
@@ -352,6 +386,9 @@ cite(Bela, Query, Ivo).
 ? lose(Points, Bela).
 # => FALSE
 
+# Another examiner records a judgment and an examination of Adam, first with
+# no ground and then citing "a hunch as the ground": no recognition follows
+# either way.
 judge(Yano, Adam).
 capture(Yano, Adam).
 
@@ -363,6 +400,8 @@ cite(Yano, Hunch, Adam).
 ? reward(Yano).
 # => FALSE
 
+# Tove, whom the cast records examining Iris, gains no recognition either,
+# before or after citing a ground.
 ? reward(Tove).
 # => FALSE
 
@@ -371,6 +410,8 @@ cite(Tove, Findings, Iris).
 ? reward(Tove).
 # => FALSE
 
+# Under the finding, "Bela keeps personhood, the ballot, free movement and
+# the food debt, and no prisoner conclusion follows".
 ? person(Bela).
 # => TRUE
 
@@ -386,6 +427,8 @@ cite(Tove, Findings, Iris).
 ? prisoner(Bela).
 # => FALSE
 
+# "Cira inherits nothing from the finding": no recognition and no recorded
+# loss follow for the child Bela taught.
 ? reward(Cira).
 # => FALSE
 

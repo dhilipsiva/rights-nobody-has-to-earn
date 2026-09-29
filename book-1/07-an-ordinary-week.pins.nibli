@@ -76,6 +76,8 @@ at(Selin, RepublicJurisdiction).
 ? owe(State, Meets, Selin).
 # => TRUE
 
+# "and so does free movement": with no custody or restraint recorded, the
+# rules conclude free movement from personhood.
 ? travel(Selin).
 # => TRUE
 
@@ -85,8 +87,9 @@ at(Selin, RepublicJurisdiction).
 
 at(Selin, GeneralAdulthood).
 
-# "the adulthood evidence adds the basic ballot entitlement" — asked before any
-# work, tenancy, clinic, school or vote is recorded.
+# The ballot is "the entitlement to vote, which general adulthood adds to
+# personhood" — asked before any work, tenancy, clinic, school or vote is
+# recorded.
 ? decide(Selin, Ballot).
 # => TRUE
 
@@ -128,6 +131,9 @@ observe(SelinEmployer, SelinEmployer, Selin, SelinPayBasis).
 ? provide(SelinEmployer, Wage, Selin).
 # => FALSE
 
+# A separate pay office authorised for Selin attests the same wage, naming the
+# employer, on the same basis: "The rules now conclude the wage the employer
+# promised Selin."
 authorized(SelinPayOffice, CompensationAttester, Selin).
 observe(SelinPayOffice, Wage, Selin, SelinPayBasis).
 observe(SelinPayOffice, SelinEmployer, Selin, SelinPayBasis).
@@ -151,6 +157,9 @@ observe(SelinPayOffice, SelinEmployer, Selin, SelinPayBasis).
 # => TRUE
 
 # ── "The clinic" ───────────────────────────────────────────────────────────
+# Before any clinic entry, personhood alone gives the clinic's barriers:
+# Selin's "current informed choice about treatment governs", and care is
+# closed as a route into enforcement records.
 ? prevents(Selin, CurrentTreatmentDecision).
 # => TRUE
 
@@ -159,9 +168,9 @@ observe(SelinPayOffice, SelinEmployer, Selin, SelinPayBasis).
 
 receives(Selin, SelinClinicCare, SelinClinic).
 
-# "The receipt alone concludes nothing about care having reached Selin": no
-# witness has attested it. A witness authorised for Selin who is not the clinic
-# flips it, below.
+# "A receipt recording that Selin received care concludes nothing by itself":
+# no witness has attested it. A witness authorised for Selin who is not the
+# clinic flips it, below.
 ? healthy(Selin).
 # => FALSE
 
@@ -173,14 +182,17 @@ observe(SelinClinic, SelinClinicCare, Selin, CareScope).
 ? healthy(Selin).
 # => FALSE
 
+# A witness authorised for Selin, someone other than the clinic, attests the
+# same care, and "the rules conclude that care reached Selin".
 authorized(SelinCareWitness, DeliveryWitness, Selin).
 observe(SelinCareWitness, SelinClinicCare, Selin, CareScope).
 
 ? healthy(Selin).
 # => TRUE
 
-# "the same receipt shows nothing about food" — the attested scope names the
-# item. A FoodScope attestation of a food receipt would flip it.
+# The rules conclude that care reached Selin, "and nothing about food": the
+# attested scope names the item. A FoodScope attestation of a food receipt
+# would flip it.
 ? eats(Selin).
 # => FALSE
 
@@ -191,6 +203,9 @@ born(Teo).
 ? person(Teo).
 # => TRUE
 
+# The birth entry also gives the learning debt and the child's own barriers:
+# Teo "holds rights in Teo's own name", is heard at any age, has views weighed
+# and answered with reasons, and school is closed as a route into enforcement.
 ? owe(State, Learn, Teo).
 # => TRUE
 
@@ -247,6 +262,9 @@ authorized(SelinHousingOffice, JChallengeReaderAuthority, SelinTenancyRequest).
 # => TRUE
 
 # ── "A police stop" ────────────────────────────────────────────────────────
+# "Before any officer appears in the record", personhood alone bars policing
+# for order as such, coercion without an individual ground or automatic court
+# review, unnecessary or disproportionate force, and unrecorded coercion.
 ? prevents(Selin, PSOrderMaintenanceWithoutIndividualHarmGround).
 # => TRUE
 
@@ -264,6 +282,8 @@ authorized(SelinHousingOffice, JChallengeReaderAuthority, SelinTenancyRequest).
 ? member(PSUnrecordedCoercion, PSProtectiveDefectKind).
 # => TRUE
 
+# The chapter's list of barriers ends "against bulk or suspicionless
+# collection", which also follows from personhood alone.
 ? prevents(Selin, PSBulkOrSuspicionlessCollection).
 # => TRUE
 

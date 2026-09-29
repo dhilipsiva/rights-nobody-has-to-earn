@@ -52,8 +52,8 @@
 ? prevents(Adam, PrescribedPrivateCivicLife).
 # => TRUE
 
-# "For the child with nobody, this chapter asks for nothing and forbids a great
-# deal"
+# The child with nobody: "these rules ask for nothing and forbid a great deal:
+# the same limits follow for the child".
 ? prevents(Nell, ArbitraryPrivacyInterference).
 # => TRUE
 
@@ -84,6 +84,8 @@
 ? prevents(Nell, PrescribedPrivateCivicLife).
 # => TRUE
 
+# The same record carries debts beside the limits: the child "is also owed
+# learning, expression, belief and company, each by the State".
 ? owe(State, Learn, Nell).
 # => TRUE
 
@@ -96,11 +98,12 @@
 ? owe(State, Meets, Nell).
 # => TRUE
 
-# "a barrier against prescribing expression is not a recorded voice" — the
-# barriers derive no actuality for the person they protect. Learning needs a
-# teacher heard; recorded voice needs its holding route; company needs a matching
-# receipt and independent witness. Belief has no approved delivery head: FALSE
-# here reports no derived belief, not a conclusion of disbelief.
+# "A limit on prescribed expression is a different thing from a recorded
+# voice": the limits derive no actuality for the person they protect. Learning
+# needs a teacher heard, and company a matching receipt and independent
+# witness; "Expression and belief lie beyond any provider's power to certify",
+# so no rule concludes either. FALSE here reports no derived belief, not a
+# conclusion of disbelief.
 ? learn(Nell).
 # => FALSE
 

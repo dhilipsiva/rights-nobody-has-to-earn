@@ -4,16 +4,20 @@
 # tests/pins/amendment-enactment/, which also run a reviewer's reading of the
 # core: unreasoned, reasoned against a named corridor provision, and answered by
 # the independent final compatibility review, with the proponent's challenge in
-# tests/pins/stress/core-read-expansively/. These pins retain every earlier proposal,
-# target, protected-register and personal-collision probe on the current source.
-# No proposal label is a personal finding or an alternative enactment route.
-# The supplied Jala docket plus positive recognition control and explicit weaker
-# counterfactual execute in tests/pins/amendments/person-proposal-separation/.
-# The two trusted shell checks retain the unread-label property and a positive
+# tests/pins/stress/core-read-expansively/. These pins run the proposal,
+# target, protected-register and personal-collision probes on the current
+# source. No proposal label is a personal finding or an alternative enactment
+# route. The docketed Jala case, whose recorded contribution confers no
+# recognition, runs with its explicit weaker counterfactual in
+# tests/pins/amendments/person-proposal-separation/.
+# The trusted shell checks test the unread-label property with a positive
 # command control. They neither certify the prose nor authenticate source edits.
 
 :expect-pins 35
 
+# An amendment record nobody has written: the rules conclude no conflict that
+# would withhold it and no certified candidate. Silence neither blocks a
+# candidate nor certifies one.
 ? contradict(ECAbsentAmendmentRecord, AmendmentSourceAuthorization).
 # => FALSE
 ? complete(ECAbsentAmendmentRecord, AmendmentCertifiedCandidate, ECAbsentCandidate).
@@ -37,15 +41,23 @@ authorized(Readerb, AmendmentChallengeReaderAuthority, Requestb).
 ? obliged(Readerb, ReviewAmendmentSourceDispute, Requestb).
 # => FALSE
 
+# Shell checks on the source text: the first finds no rule whose conditions
+# mention become, so nothing reads the law label; the second finds rules
+# whose conditions mention prisoner, which shows the command works.
 :require test -z "$(awk -F'->' '/^[^#]/ && /->/ && $1 ~ /become/ {print}' book-1/source/constitution.nibli)"
 :require test -n "$(awk -F'->' '/^[^#]/ && /->/ && $1 ~ /prisoner/ {print}' book-1/source/constitution.nibli)"
 
+# Whatever an approved proposal declares as its target, "its entries confer
+# no status as law". Amend_Mint, docketed and approved with an ordinary
+# target, gains no law label.
 ? suggest(Assembly, Amend_Mint).
 # => TRUE
 
 ? become(Amend_Mint, Law).
 # => FALSE
 
+# Amend_Floor, approved, declares the protected floor article as its target:
+# it "receives no personal credibility finding", and no law label.
 ? ratifies(Electorate, Amend_Floor).
 # => TRUE
 
@@ -61,6 +73,8 @@ authorized(Readerb, AmendmentChallengeReaderAuthority, Requestb).
 ? become(Amend_Floor, Law).
 # => FALSE
 
+# The register lists itself, and Amend_Meta, approved with the register as
+# its target, takes no credibility finding and no law label.
 ? permanent(Art_Entrench).
 # => TRUE
 
@@ -73,12 +87,16 @@ authorized(Readerb, AmendmentChallengeReaderAuthority, Requestb).
 ? become(Amend_Meta, Law).
 # => FALSE
 
+# The register lists prisoner personhood beside the floor article, and
+# leaves Art_Evidence, the name of the record's vocabulary, off it.
 ? permanent(Art_Person).
 # => TRUE
 
 ? permanent(Art_Evidence).
 # => FALSE
 
+# A proposal docketed and approved with no declared target at all takes no
+# credibility finding and no law label.
 suggest(Assembly, Amend_Sneak).
 ratifies(Electorate, Amend_Sneak).
 
@@ -88,6 +106,9 @@ ratifies(Electorate, Amend_Sneak).
 ? become(Amend_Sneak, Law).
 # => FALSE
 
+# Amend_Decoy declares an ordinary target the register does not list. The
+# record holds only the target it names, and the register "reads neither a
+# candidate's text nor its effects"; no finding or law label follows.
 suggest(Assembly, Amend_Decoy).
 ratifies(Electorate, Amend_Decoy).
 adjust(Amend_Decoy, Art_Mint).
@@ -107,6 +128,9 @@ adjust(Amend_Decoy, Art_Mint).
 ? become(Amend_Decoy, Law).
 # => FALSE
 
+# A protected target written against a person's name: Jala takes no
+# credibility finding or loss of recognition, is not on the docket here, and
+# the floor proposal loses nothing either.
 adjust(Jala, Art_Floor).
 
 ? false(Jala).
@@ -121,12 +145,16 @@ adjust(Jala, Art_Floor).
 ? lose(Points, Amend_Floor).
 # => FALSE
 
+# After every proposal above, the register still lists the floor article and
+# prisoner personhood.
 ? permanent(Art_Floor).
 # => TRUE
 
 ? permanent(Art_Person).
 # => TRUE
 
+# The child with nobody keeps personhood and the food debt: "every person's
+# floor remains owed throughout".
 ? person(Nell).
 # => TRUE
 

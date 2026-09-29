@@ -9,18 +9,18 @@
 # it TRUE. A non-corpus name is not a FALSE at all — the run aborts, pins not
 # trustworthy. And a well-formed query on an argument its relation never
 # carries is a vacuous green that passes forever. Article 0a closed the
-# ASSERTION side only — a widening fact now aborts the run instead of loading —
+# ASSERTION side only — a widening fact aborts the run —
 # but a QUERY on an unmentioned name still answers a clean FALSE, so kind one
 # is untouched. Pin a FALSE only where the KB could have said TRUE, and say in
 # the comment what would flip it.
 
 :expect-pins 60
 
-# DON — "Faro injured Pax. Then Faro exposed Pax."
-
-# The original scenario now supplies qualified fictional merits, signed
-# harm findings, placement and intake. Its original missing/conflicting
-# temporal premises and every original query remain independently tested.
+# Zeno's custody case, for the reach-back section near the end of this file.
+# This block records Case_Zeno's merits finding, severity finding, placement
+# and intake; that section records the rest of the case. Missing and
+# conflicting temporal premises for custody are tested under
+# tests/pins/temporal.
 list(Case_Zeno, Zeno, Incident_Case_Zeno, CustodyMatter).
 list(Case_Zeno, PublicInjuryOffence, Evidence_Case_Zeno, CustodyOffenceEvidence).
 list(Case_Zeno, Yara, Prosecution, CustodyParties).
@@ -130,42 +130,48 @@ observe(CustodyIntake, Case_Zeno, NoHolderPermissionNoRetaliationAndImmediateSus
 observe(CustodyIntakeAudit, Case_Zeno, NoHolderPermissionNoRetaliationAndImmediateSuspensionOnFiling, CustodyIntakeProtectionScope).
 
 
+# FARO — a private target. "The record contains an injury to Pax and Faro's
+# disclosure against Pax, the injured person."
 ? injure(Faro, Pax).
 # => TRUE
 
 ? show(Faro, Disclosure_Faro_Pax, Pax).
 # => TRUE
 
-# "Pax has none." — the condition that fails
+# "Answerability follows from a public-body entry or a seating, and the record
+# holds neither for Pax" — the condition that fails.
 ? authority(Pax).
 # => FALSE
 
-# "Faro has no shield and Faro is a prisoner."
+# "Faro is therefore unshielded, and the otherwise complete case authorises
+# confinement."
 ? defend(Faro).
 # => FALSE
 
 ? prisoner(Faro).
 # => TRUE
 
-# SLY — "Lior injured Pax too. Then Lior exposed the court."
+# LIOR — "Lior's separate case also records an injury to Pax, but Lior's
+# disclosure names the prosecuting court."
 ? injure(Lior, Pax).
 # => TRUE
 
 ? show(Lior, Disclosure_Lior_Court, Court).
 # => TRUE
 
+# "The court is publicly answerable, and nothing in force finds that exposure
+# deceitful": no deceit finding about Lior's disclosure follows, and the court
+# holds public answerability.
 ? false(Lior, Disclosure_Lior_Court).
 # => FALSE
 
 ? authority(Court).
 # => TRUE
 
-# THE CONJUNCT THE SLY SECTION TURNS ON, and it was tested only through its
-# result until now. Lior and Kel are name-swapped duplicates in the cast except
-# for two facts, and this absence is one of them. `defend(Lior)` below would
-# break if a deceit finding were written, so the protection existed — but the
-# claim the chapter actually makes is about the ABSENCE, and an absence tested
-# only downstream is an absence nobody has named.
+# The raw deceit entry, absent for Lior and present for Kel below. No rule
+# reads it: "A raw accusation or a generic judgment by the review body falls
+# short of such a case." The shield turns on the completed finding pinned FALSE
+# above, so Lior's protection rests on that finding's absence.
 ? deceive(Lior, Court).
 # => FALSE
 
@@ -176,7 +182,9 @@ observe(CustodyIntakeAudit, Case_Zeno, NoHolderPermissionNoRetaliationAndImmedia
 ? prisoner(Lior).
 # => FALSE
 
-# KEL — "Then the review body examined the exposure and found it deceitful."
+# KEL — "a completed case identifies Kel's exposure, a deceit finding and its
+# evidence". The raw deceit entry is on the record too; the shield reads only
+# the finding.
 ? show(Kel, Disclosure_Kel_Court, Court).
 # => TRUE
 
@@ -186,11 +194,13 @@ observe(CustodyIntakeAudit, Case_Zeno, NoHolderPermissionNoRetaliationAndImmedia
 ? deceive(Kel, Court).
 # => TRUE
 
-# "Kel's shield falls ... Kel is a prisoner ... Kel's own credibility is voided."
-# KEL RESOLVES ONLY BECAUSE KEL EXPOSED ONCE. These three are per-subject and a
-# per-subject pin cannot see a per-PAIR defect — the shield rule is satisfied by
-# ANY qualifying pair, so a second exposure reopens it. That is what the Dara
-# block below exists to hold, and why it is not enough to pin Kel.
+# "That finding defeats this exposure's shield, so Kel's otherwise complete
+# case authorises confinement. It also produces a personal finding that
+# restricts signing new credibility findings." KEL RESOLVES ONLY BECAUSE KEL
+# EXPOSED ONCE. These three are per-subject, and a per-subject pin cannot see
+# what happens per PAIR — the shield rule is satisfied by ANY qualifying pair,
+# so a second exposure reopens it. That is what the Dara block below exists to
+# hold, and why it is not enough to pin Kel.
 ? defend(Kel).
 # => FALSE
 
@@ -200,10 +210,12 @@ observe(CustodyIntakeAudit, Case_Zeno, NoHolderPermissionNoRetaliationAndImmedia
 ? false(Kel).
 # => TRUE
 
-# REX — "Dara did what Kel did, and then did one more thing."
-# The disclosed cost of scoping the shield to the exposure. If any of these six
-# flip, chapter 23's "Dara" section and the second item in "What it costs" are
-# both wrong, and so is the constitution's E1d commentary.
+# DARA — "Dara's record concerns an injury to another person and two
+# exposures: one against the court and another against the review body. A
+# completed case found the court disclosure deceitful." The disclosed cost of
+# scoping the shield to the exposure: if any pin in this section flips, the
+# chapter's section "Dara: a separate exposure" is wrong, and so is the
+# constitution's E1d commentary.
 ? show(Dara, Disclosure_Dara_Court, Court).
 # => TRUE
 
@@ -213,26 +225,26 @@ observe(CustodyIntakeAudit, Case_Zeno, NoHolderPermissionNoRetaliationAndImmedia
 ? deceive(Dara, Court).
 # => TRUE
 
-# "Dara's credibility was destroyed by the same counter-audit."
+# The completed finding also restricts Dara's signing of new credibility
+# findings, as it does Kel's.
 ? false(Dara).
 # => TRUE
 
-# "Then Dara exposed the review body. Nobody has examined that one."
+# The second exposure, against the review body: "nothing in force finds the
+# second exposure deceitful".
 ? show(Dara, Disclosure_Dara_Review, Review).
 # => TRUE
 
 ? false(Dara, Disclosure_Dara_Review).
 # => FALSE
 
-# ...and the body Dara exposed has standing, which is the other half of "a fresh
-# claim against an authority". `authority(Court)` is pinned five ways across the
-# suite; its twin was pinned nowhere in the repo until now, so the second
-# exposure's premise rested on nothing.
+# ...and "The review body is publicly answerable", the other premise the shield
+# needs for the second exposure.
 ? authority(Review).
 # => TRUE
 
-# THE PAIR THAT MATTERS. Voided and shielded at once — the finding against the
-# first exposure has nothing to say about the second.
+# THE PAIR THAT MATTERS. "Dara is both discredited and shielded" — the finding
+# against the first exposure has nothing to say about the second.
 ? defend(Dara).
 # => TRUE
 
@@ -240,13 +252,12 @@ observe(CustodyIntakeAudit, Case_Zeno, NoHolderPermissionNoRetaliationAndImmedia
 # => FALSE
 
 # ── A PERSON GUARD REFUSED IN THIS REPRESENTATION ───────────────────────────────────────
-# The natural repair — shield persons only — closes a negative cycle through
-# the shield's own head (person <- prisoner, prisoner reads ~defend) and the
-# stratifier refuses it by name. The three queries after it are the hazard the
-# constitution's v0.9 note records: a refused tightening leaves the permissive
-# rule in force with every verdict intact, so it protects nobody it meant to
-# stop protecting. If the refusal ever stops firing, the engine's cycle
-# detection changed and Article 7's note is stale.
+# The natural tightening — shield persons only — closes a negative cycle
+# through the shield's own head (person <- prisoner, prisoner reads ~defend)
+# and the stratifier refuses it by name. The queries after it show the hazard:
+# a refused tightening leaves the permissive rule in force with every verdict
+# intact, so it protects nobody it meant to stop protecting. If the refusal
+# ever stops firing, the engine's cycle detection has changed.
 :refuse reasoning /Unstratifiable/
 all $w: all $o: all $incident: show($w, $incident, $o) & authority($o) & person($w) & ~false($w, $incident) -> defend($w).
 
@@ -260,13 +271,13 @@ all $w: all $o: all $incident: show($w, $incident, $o) & authority($o) & person(
 # => TRUE
 
 # ── THE FRAME-UP COMPLETED FROM OUTSIDE ──────────────────────────────────────
-# Faro's frame-up fails on an absence: Pax holds no standing, pinned FALSE at the
-# top of this file beside defend(Faro) FALSE and prisoner(Faro) TRUE. Those three
-# are the negative control for what follows. Standing by the public route is a
-# single admitted entry that nobody adjudicates — so write it about the victim
-# and the absence is gone. The shield attaches to the exposure Faro manufactured
-# and the conviction stops deriving. Ground fact, so it persists; the reach-back
-# block below does not read Pax.
+# Faro's frame-up fails on an absence: Pax holds no public answerability,
+# pinned FALSE in the Faro section beside Faro's unshielded confinement. Those
+# pins are the negative control for what follows. Answerability by the public
+# route is a single admitted entry that nobody adjudicates, so write it about
+# the victim and the absence is gone: "Faro's exposure would then open the
+# shield, and confinement would lose its authorisation." Ground fact, so it
+# persists; the reach-back block below does not read Pax.
 public(Pax).
 
 ? authority(Pax).
@@ -279,8 +290,8 @@ public(Pax).
 # => FALSE
 
 # ── THE CASE THE SHIELD STOPS COVERING ───────────────────────────────────────
-# The second route, run on the person the chapter's own cost paragraph is
-# about. Dara has everything confinement needs except the absence of a
+# The second route, the unrelated-case finding, run on Dara. Dara has
+# everything confinement needs except the absence of a
 # shield: the injury, the court's judgment, the cited case, the recorded
 # conviction, both witnesses on every scope, and an active custody
 # authorisation.
@@ -301,6 +312,10 @@ observe(Convocation, Case_Dara, Dara, ShieldSubjectScope).
 ? prisoner(Dara).
 # => FALSE
 
+# Add each reviewer's authority for this case, and the positive agreement of
+# the appointments office and its reviewing office, both authorised, on each
+# reviewer's eligibility: "With those premises recorded, Dara's confinement is
+# authorised."
 authorized(Appeals, ShieldConnectionReviewer, Case_Dara).
 authorized(Convocation, ShieldConnectionReviewer, Case_Dara).
 authorized(ShieldAppointments, ShieldQualificationAuthority, Case_Dara).
@@ -365,14 +380,12 @@ observe(ShieldAppointmentsReview, Case_Dara, Appeals, ConflictedShieldReviewerSc
 ? defend(Dara).
 # => TRUE
 
-# ── THE REACH-BACK, MINUS THE CENTURY. MUST BE LAST: ground facts persist ────
-# "A defendant a century from now can reach back, expose someone nobody
-# remembers, and open the window." Executed, minus the century: T2 can represent
-# separately witnessed order, but the shield deliberately consumes no such
-# claim, and nothing below says whether Zeno's exposure came before or after
-# Tove's recall. Tove is
-# deliberately an existing name — reaching back to him is the exhibit — and
-# everything else is fresh. One write blocks a conviction.
+# ── THE REACH-BACK. Ground facts persist into the section after it ─────────
+# "The protection has no recency test and no deadline that would end it while
+# a reviewer fails to act." Nothing below dates Zeno's exposure against Tove's
+# recall, and the shield reads no such date. Tove is deliberately an existing
+# name, since reaching back to Tove is the exhibit; everything else is fresh.
+# One write blocks confinement.
 person(Zeno).
 injure(Zeno, Yara).
 judge(Court, Zeno).
@@ -402,6 +415,10 @@ endorses(TemporalReview, Case_Zeno).
 ? prisoner(Zeno).
 # => TRUE
 
+# Above, the complete case authorises Zeno's confinement. The one write is a
+# disclosure against Tove, recalled yet still answerable: "recall leaves
+# intact the answerability on which someone else's protection rests". The
+# shield then derives, and Zeno's confinement loses its authorisation.
 show(Zeno, Disclosure_Zeno_Tove, Tove).
 
 ? prisoner(Zeno).
@@ -410,22 +427,24 @@ show(Zeno, Disclosure_Zeno_Tove, Tove).
 ? defend(Zeno).
 # => TRUE
 
-# ...and the man he reached back to was recalled long since. The shield does
+# ...and the official Zeno reached back to has been recalled. The shield does
 # not ask.
 ? broken(Tove).
 # => TRUE
 
-# ── A disclosure made after the charge (revision item 37) ─────────────────
-# "A prosecution can answer only for what came before it. When both of the
-#  case's temporal witnesses record that a disclosure was made after the
-#  charge, it cannot have prompted that prosecution: it no longer blocks
-#  confinement in that case, and its protection in any later case stands."
+# ── A disclosure made after the charge ────────────────────────────────────
+# "A prosecution can answer only for what came before it." "When both record
+# that a disclosure was made after that case's charge, the charge came first,
+# and the disclosure stops blocking confinement in that case."
 # One witness's entry is not enough; without both the disclosure bears on the case.
 observe(Chronicle, Disclosure_Zeno_Tove, Case_Zeno, DisclosureFollowsTheChargeScope).
 
 ? prisoner(Zeno).
 # => FALSE
 
+# With the second witness's entry both date the disclosure after the charge:
+# confinement under Zeno's case follows, and the shield for Zeno in that case
+# is FALSE.
 observe(TemporalReview, Disclosure_Zeno_Tove, Case_Zeno, DisclosureFollowsTheChargeScope).
 
 ? prisoner(Zeno).
@@ -453,14 +472,17 @@ show(Zeno, Disclosure_Zeno_Review, Review).
 ? prisoner(Zeno).
 # => FALSE
 
-# "A defendant cannot buy delay by accusing the court that tries them." Either
-# witness alone leaves the protection in place; this time the review body
+# "A defendant who accuses the court that tries them gains no delay by it."
+# Either witness alone leaves the protection in place; this time TemporalReview
 # writes first.
 observe(TemporalReview, Disclosure_Lior_Court, Case_Lior, DisclosureFollowsTheChargeScope).
 
 ? prisoner(Lior).
 # => FALSE
 
+# With Chronicle's entry as well, both witnesses date Lior's disclosure after
+# the charge: "Confinement under Lior's case is then authorised, and the shield
+# itself still applies."
 observe(Chronicle, Disclosure_Lior_Court, Case_Lior, DisclosureFollowsTheChargeScope).
 
 ? prisoner(Lior).

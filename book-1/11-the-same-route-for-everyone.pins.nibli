@@ -92,7 +92,7 @@
 ? prevents(Adam, EqualityRemedialBurdenRefusal).
 # => TRUE
 
-# "Accessibility is not a ninth floor item"
+# "Accessibility makes rights usable"
 ? prevents(Adam, BareAbsenceWithholding).
 # => TRUE
 
@@ -193,8 +193,9 @@
 ? prevents(Adam, QualificationStatusBarrier).
 # => TRUE
 
-# "a proceeding opened under a form the vocabulary does not carry completes
-# nothing" — the closed vocabularies, attested by a fresh witness.
+# "A witness's entry naming retaliation matches the permitted list; an
+# invented form matches nothing" — the closed vocabularies, attested by a
+# fresh witness.
 observe(Quillon, QuillonRecordForm, RetaliationForm, EqualityFormScope).
 ? member(RetaliationForm, EqualityFormVocabulary).
 # => TRUE
@@ -204,7 +205,8 @@ observe(Quillon, QuillonRecordOtherForm, QuillonInventedForm, EqualityFormScope)
 # => FALSE
 
 observe(Quillon, QuillonRecordBarrier, ProceduralBarrier, EqualityBarrierKindScope).
-# "a barrier kind the vocabulary does not carry completes nothing"
+# The barrier kinds cover "financial and procedural obstacles", and "a kind
+# outside that list completes nothing".
 ? member(ProceduralBarrier, EqualityBarrierKindVocabulary).
 # => TRUE
 
@@ -212,6 +214,8 @@ observe(Quillon, QuillonRecordInvented, QuillonInventedBarrier, EqualityBarrierK
 ? member(QuillonInventedBarrier, EqualityBarrierKindVocabulary).
 # => FALSE
 
+# The kinds of positive measure are a closed list too: the witness's entry
+# naming a bounded quota matches it, so the rules conclude the membership.
 observe(Quillon, QuillonRecordMeasure, BoundedQuota, EqualityMeasureKindScope).
 ? member(BoundedQuota, EqualityMeasureKindVocabulary).
 # => TRUE
@@ -257,8 +261,9 @@ permits(QuillonRequester, UseTheRightServiceRoleOrProcedureWithTheAdjustment, Qu
 :refuse reasoning /declared derived-only/
 complete(QuillonForgedRecord, ReviewedReasonableAccommodation, QuillonDecision).
 
-# "For the child with nobody, this chapter holds every barrier and reaches no
-# verdict"
+# The child with nobody, on the one-line birth record: Nell holds each barrier
+# checked here on personhood alone, and no credibility finding against Nell
+# follows.
 ? prevents(Nell, SubstantiveEqualityStatus).
 # => TRUE
 
@@ -280,5 +285,7 @@ complete(QuillonForgedRecord, ReviewedReasonableAccommodation, QuillonDecision).
 ? false(Nell).
 # => FALSE
 
+# The floor debt stands beside the barriers: the rules conclude from
+# personhood alone that the State owes Nell learning.
 ? owe(State, Learn, Nell).
 # => TRUE

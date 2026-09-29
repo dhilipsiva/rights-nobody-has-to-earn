@@ -129,11 +129,13 @@
             {
               "text": "eats(Marisol).",
               "label": "Food provision · Marisol",
+              "gloss": "Asks whether the rules conclude that Marisol received food.",
               "kind": "context"
             },
             {
               "text": "person(Marisol).",
               "label": "Personhood · Marisol",
+              "gloss": "Asks whether the rules conclude that Marisol is a person.",
               "kind": "standing_gap"
             }
           ]
@@ -145,11 +147,13 @@
             {
               "text": "eats(Marisol).",
               "label": "Food provision · Marisol",
+              "gloss": "Asks whether the rules conclude that Marisol received food.",
               "kind": "restraint"
             },
             {
               "text": "person(Marisol).",
               "label": "Personhood · Marisol",
+              "gloss": "Asks whether the rules conclude that Marisol is a person.",
               "kind": "context"
             }
           ]
@@ -181,11 +185,13 @@
             {
               "text": "prisoner(Zed).",
               "label": "Custody authority · Zed",
+              "gloss": "Asks whether the rules conclude that Zed is lawfully held in custody under current authority.",
               "kind": "context"
             },
             {
               "text": "travel(Zed).",
               "label": "Freedom of movement · Zed",
+              "gloss": "Asks whether the rules conclude that Zed may move freely.",
               "kind": "context"
             }
           ]
@@ -197,26 +203,31 @@
             {
               "text": "person(Zed).",
               "label": "Personhood · Zed",
+              "gloss": "Asks whether the rules conclude that Zed is a person.",
               "kind": "protection"
             },
             {
               "text": "owe(State, Eats, Zed).",
               "label": "Duty owed · Eats for Zed",
+              "gloss": "Asks whether the rules conclude that the State owes Zed food.",
               "kind": "protection"
             },
             {
               "text": "owe(State, Dwell, Zed).",
               "label": "Duty owed · Dwell for Zed",
+              "gloss": "Asks whether the rules conclude that the State owes Zed shelter.",
               "kind": "protection"
             },
             {
               "text": "eats(Zed).",
               "label": "Food provision · Zed",
+              "gloss": "Asks whether the rules conclude that Zed received food.",
               "kind": "gap"
             },
             {
               "text": "dwell(Zed).",
               "label": "Shelter provision · Zed",
+              "gloss": "Asks whether the rules conclude that Zed received shelter.",
               "kind": "gap"
             }
           ]
@@ -249,21 +260,25 @@
             {
               "text": "authority(Court).",
               "label": "Record query · Court",
+              "gloss": "Asks whether the rules conclude that the Court answers publicly as a holder of public power.",
               "kind": "context"
             },
             {
               "text": "false(Lior, Disclosure_Lior_Court).",
               "label": "Adverse finding · Lior, Disclosure_Lior_Court",
+              "gloss": "Asks whether the rules conclude that Lior's disclosure about the Court was found false.",
               "kind": "context"
             },
             {
               "text": "defend(Lior).",
               "label": "Record query · Lior",
+              "gloss": "Asks whether the rules conclude that Lior is shielded as someone who exposed a holder of public power.",
               "kind": "protection"
             },
             {
               "text": "prisoner(Lior).",
               "label": "Custody authority · Lior",
+              "gloss": "Asks whether the rules conclude that Lior is lawfully held in custody under current authority.",
               "kind": "restraint"
             }
           ]
@@ -275,21 +290,25 @@
             {
               "text": "false(Kel, Disclosure_Kel_Court).",
               "label": "Adverse finding · Kel, Disclosure_Kel_Court",
+              "gloss": "Asks whether the rules conclude that Kel's disclosure about the Court was found false.",
               "kind": "context"
             },
             {
               "text": "defend(Kel).",
               "label": "Record query · Kel",
+              "gloss": "Asks whether the rules conclude that Kel is shielded as someone who exposed a holder of public power.",
               "kind": "restraint"
             },
             {
               "text": "prisoner(Kel).",
               "label": "Custody authority · Kel",
+              "gloss": "Asks whether the rules conclude that Kel is lawfully held in custody under current authority.",
               "kind": "context"
             },
             {
               "text": "false(Kel).",
               "label": "Adverse finding · Kel",
+              "gloss": "Asks whether the rules conclude that a credibility finding stands against Kel.",
               "kind": "protection"
             }
           ]
@@ -301,16 +320,19 @@
             {
               "text": "authority(Pax).",
               "label": "Record query · Pax",
+              "gloss": "Asks whether the rules conclude that Pax answers publicly as a holder of public power.",
               "kind": "context"
             },
             {
               "text": "defend(Faro).",
               "label": "Record query · Faro",
+              "gloss": "Asks whether the rules conclude that Faro is shielded as someone who exposed a holder of public power.",
               "kind": "restraint"
             },
             {
               "text": "prisoner(Faro).",
               "label": "Custody authority · Faro",
+              "gloss": "Asks whether the rules conclude that Faro is lawfully held in custody under current authority.",
               "kind": "context"
             }
           ]
@@ -341,16 +363,19 @@
             {
               "text": "judge(Koa, Esa).",
               "label": "Record query · Koa, Esa",
+              "gloss": "Asks whether the record holds that Koa judged Esa.",
               "kind": "context"
             },
             {
               "text": "permits(Review, Koa).",
               "label": "Permission · Koa",
+              "gloss": "Asks whether the rules conclude that Koa holds the Review body's authority to sign findings.",
               "kind": "context"
             },
             {
               "text": "false(Esa).",
               "label": "Adverse finding · Esa",
+              "gloss": "Asks whether the rules conclude that a credibility finding stands against Esa.",
               "kind": "restraint"
             }
           ]
@@ -362,16 +387,19 @@
             {
               "text": "false(Bela).",
               "label": "Adverse finding · Bela",
+              "gloss": "Asks whether the rules conclude that a credibility finding stands against Bela.",
               "kind": "context"
             },
             {
               "text": "decide(Bela, Ballot).",
               "label": "Decision eligibility · Bela, Ballot",
+              "gloss": "Asks whether the rules conclude that Bela may vote.",
               "kind": "protection"
             },
             {
               "text": "owe(State, Eats, Bela).",
               "label": "Duty owed · Eats for Bela",
+              "gloss": "Asks whether the rules conclude that the State owes Bela food.",
               "kind": "protection"
             }
           ]
@@ -400,21 +428,25 @@
             {
               "text": "prisoner(Hano).",
               "label": "Custody authority · Hano",
+              "gloss": "Asks whether the rules conclude that Hano is lawfully held in custody under current authority.",
               "kind": "context"
             },
             {
               "text": "decide(Hano, Ballot).",
               "label": "Decision eligibility · Hano, Ballot",
+              "gloss": "Asks whether the rules conclude that Hano may vote.",
               "kind": "protection"
             },
             {
               "text": "lose(Points, Hano).",
               "label": "Recognition withdrawal · Points, Hano",
+              "gloss": "Asks whether the rules conclude that a loss of recognition is recorded against Hano.",
               "kind": "restraint"
             },
             {
               "text": "expresses(Hano).",
               "label": "Expression provision · Hano",
+              "gloss": "Asks whether the record holds an act of expression by Hano.",
               "kind": "gap"
             }
           ]
@@ -426,16 +458,19 @@
             {
               "text": "person(Cira).",
               "label": "Personhood · Cira",
+              "gloss": "Asks whether the rules conclude that Cira is a person.",
               "kind": "protection"
             },
             {
               "text": "prevents(Cira, GeneralAdulthoodDenial).",
               "label": "Protection · General Adulthood Denial",
+              "gloss": "Asks whether the rules conclude that Cira is protected against being denied general adulthood.",
               "kind": "context"
             },
             {
               "text": "decide(Cira, Ballot).",
               "label": "Decision eligibility · Cira, Ballot",
+              "gloss": "Asks whether the rules conclude that Cira may vote.",
               "kind": "gap"
             }
           ]
@@ -466,21 +501,25 @@
             {
               "text": "person(Nell).",
               "label": "Personhood · Nell",
+              "gloss": "Asks whether the rules conclude that Nell is a person.",
               "kind": "context"
             },
             {
               "text": "owe(State, Eats, Nell).",
               "label": "Duty owed · Eats for Nell",
+              "gloss": "Asks whether the rules conclude that the State owes Nell food.",
               "kind": "protection"
             },
             {
               "text": "eats(Nell).",
               "label": "Food provision · Nell",
+              "gloss": "Asks whether the rules conclude that Nell received food.",
               "kind": "gap"
             },
             {
               "text": "vulnerable(Nell).",
               "label": "Attempted status vocabulary · Nell",
+              "gloss": "Asks whether the record may call Nell vulnerable at all.",
               "kind": "vocabulary"
             }
           ]
@@ -492,11 +531,13 @@
             {
               "text": "eats(Nell).",
               "label": "Food provision · Nell",
+              "gloss": "Asks whether the rules conclude that Nell received food.",
               "kind": "context"
             },
             {
               "text": "dwell(Nell).",
               "label": "Shelter provision · Nell",
+              "gloss": "Asks whether the rules conclude that Nell received shelter.",
               "kind": "gap"
             }
           ]
@@ -508,16 +549,19 @@
             {
               "text": "at(Nell, GeneralAdulthood).",
               "label": "Record query · Nell, GeneralAdulthood",
+              "gloss": "Asks whether the record holds evidence that Nell has reached general adulthood.",
               "kind": "context"
             },
             {
               "text": "decide(Nell, Ballot).",
               "label": "Decision eligibility · Nell, Ballot",
+              "gloss": "Asks whether the rules conclude that Nell may vote.",
               "kind": "context"
             },
             {
               "text": "prevents(Nell, ChildVoiceNoAgeFloor).",
               "label": "Protection · Child Voice No Age Floor",
+              "gloss": "Asks whether the rules conclude that Nell is protected against having a voice refused for being too young.",
               "kind": "protection"
             }
           ]
@@ -549,21 +593,25 @@
             {
               "text": "person(MPNewcomer).",
               "label": "Personhood · MPNewcomer",
+              "gloss": "Asks whether the rules conclude that the newcomer is a person.",
               "kind": "protection"
             },
             {
               "text": "owe(State, Eats, MPNewcomer).",
               "label": "Duty owed · Eats for MPNewcomer",
+              "gloss": "Asks whether the rules conclude that the State owes the newcomer food.",
               "kind": "protection"
             },
             {
               "text": "obliged(State, ServeFirstNoImmigrationDocumentationOrEnforcementCondition, MPNewcomer).",
               "label": "Duty · Serve First No Immigration Documentation Or Enforcement Condition",
+              "gloss": "Asks whether the rules conclude that the State must serve the newcomer first, with no immigration, documentation or enforcement condition.",
               "kind": "protection"
             },
             {
               "text": "decide(MPNewcomer, Ballot).",
               "label": "Decision eligibility · MPNewcomer, Ballot",
+              "gloss": "Asks whether the rules conclude that the newcomer may vote.",
               "kind": "gap"
             }
           ]
@@ -575,6 +623,7 @@
             {
               "text": "person(MPNewcomer).",
               "label": "Personhood · MPNewcomer",
+              "gloss": "Asks whether the rules conclude that the newcomer is a person.",
               "kind": "standing_gap"
             }
           ]
@@ -606,16 +655,19 @@
             {
               "text": "prisoner(Zed).",
               "label": "Custody authority · Zed",
+              "gloss": "Asks whether the rules conclude that Zed is lawfully held in custody under current authority.",
               "kind": "context"
             },
             {
               "text": "entitled(Zed, event { eats() }).",
               "label": "Record query · Zed, event { eats() }",
+              "gloss": "Asks whether the rules conclude that Zed is entitled to food.",
               "kind": "protection"
             },
             {
               "text": "travel(Zed).",
               "label": "Freedom of movement · Zed",
+              "gloss": "Asks whether the rules conclude that Zed may move freely.",
               "kind": "context"
             }
           ]
@@ -627,16 +679,19 @@
             {
               "text": "obliged(State, ArrangeIndependentReleaseReviewAndDoNotDelayLawfulRelease, Zed).",
               "label": "Duty · Arrange Independent Release Review And Do Not Delay Lawful Release",
+              "gloss": "Asks whether the rules conclude that the State must arrange an independent review of Zed's release and must not delay a lawful release.",
               "kind": "protection"
             },
             {
               "text": "prisoner(Nemo).",
               "label": "Custody authority · Nemo",
+              "gloss": "Asks whether the rules conclude that Nemo is lawfully held in custody under current authority.",
               "kind": "context"
             },
             {
               "text": "travel(Nemo).",
               "label": "Freedom of movement · Nemo",
+              "gloss": "Asks whether the rules conclude that Nemo may move freely.",
               "kind": "protection"
             }
           ]
@@ -667,11 +722,13 @@
             {
               "text": "complete(PSMandateConflictdeclarationRecord, PSNonDerogatingEmergencyDeclaration, PSMandateConflictdeclarationSubject).",
               "label": "Finding · PSNon Derogating Emergency Declaration",
+              "gloss": "Asks whether the rules conclude that the emergency declaration is complete as one that suspends no right.",
               "kind": "context"
             },
             {
               "text": "complete(PSMandateConflictrequisitionRecord, PSCompensatedRequisitionMeasure, PSMandateConflictrequisitionSubject).",
               "label": "Finding · PSCompensated Requisition Measure",
+              "gloss": "Asks whether the rules conclude that the requisition of the warehouse is complete as a compensated measure.",
               "kind": "context"
             }
           ]
@@ -683,26 +740,31 @@
             {
               "text": "person(PSMandateConflictrequisitionSubject).",
               "label": "Personhood · PSMandateConflictrequisitionSubject",
+              "gloss": "Asks whether the rules conclude that the person whose property is requisitioned is a person.",
               "kind": "protection"
             },
             {
               "text": "owe(State, Eats, PSMandateConflictrequisitionSubject).",
               "label": "Duty owed · Eats for PSMandateConflictrequisitionSubject",
+              "gloss": "Asks whether the rules conclude that the State owes the person whose property is requisitioned food.",
               "kind": "protection"
             },
             {
               "text": "prisoner(PSMandateConflictrequisitionSubject).",
               "label": "Custody authority · PSMandateConflictrequisitionSubject",
+              "gloss": "Asks whether the rules conclude that the person whose property is requisitioned is lawfully held in custody under current authority.",
               "kind": "restraint"
             },
             {
               "text": "false(PSMandateConflictrequisitionSubject).",
               "label": "Adverse finding · PSMandateConflictrequisitionSubject",
+              "gloss": "Asks whether the rules conclude that a credibility finding stands against the person whose property is requisitioned.",
               "kind": "restraint"
             },
             {
               "text": "travel(Nell).",
               "label": "Freedom of movement · Nell",
+              "gloss": "Asks whether the rules conclude that Nell may move freely.",
               "kind": "protection"
             }
           ]
@@ -733,11 +795,13 @@
             {
               "text": "complete(ScarcitySequenceAuthorization, ReviewedPhysicalScarcityFinding, ScarcitySequenceResource).",
               "label": "Finding · Reviewed Physical Scarcity Finding",
+              "gloss": "Asks whether the rules conclude that a reviewed finding of a physical shortage of the resource is complete.",
               "kind": "context"
             },
             {
               "text": "obliged(ScarcitySequenceManager, PublishScarcityEvidenceReasonsAndReassessment, ScarcitySequenceAuthorization).",
               "label": "Duty · Publish Scarcity Evidence Reasons And Reassessment",
+              "gloss": "Asks whether the rules conclude that the scarcity manager must publish the shortage's evidence, its reasons and its reassessment.",
               "kind": "protection"
             }
           ]
@@ -749,26 +813,31 @@
             {
               "text": "permits(ScarcitySequenceManager, AllocateUnderPhysicalScarcity, ScarcitySequenceRecord).",
               "label": "Permission · Allocate Under Physical Scarcity",
+              "gloss": "Asks whether the rules conclude that the scarcity manager may allocate the resource under the reviewed shortage.",
               "kind": "context"
             },
             {
               "text": "member(Wealth, ForbiddenPriorityKeyVocabulary).",
               "label": "Vocabulary membership · Forbidden Priority Key Vocabulary",
+              "gloss": "Asks whether the rules conclude that wealth is on the closed list of grounds that may never decide who gets a scarce resource.",
               "kind": "protection"
             },
             {
               "text": "obliged(ScarcitySequenceManager, RecordEveryUnmetPortionAsFailure, ScarcitySequenceRecord).",
               "label": "Duty · Record Every Unmet Portion As Failure",
+              "gloss": "Asks whether the rules conclude that the scarcity manager must record every unmet portion as a failure.",
               "kind": "duty_limit"
             },
             {
               "text": "lose(Points, ScarcityClaimant).",
               "label": "Recognition withdrawal · Points, ScarcityClaimant",
+              "gloss": "Asks whether the rules conclude that a loss of recognition is recorded against the claimant who went without.",
               "kind": "restraint"
             },
             {
               "text": "obliged(State, IncludeEveryoneUnderJurisdictionOrEffectiveControlInScarcity, MPNewcomer).",
               "label": "Duty · Include Everyone Under Jurisdiction Or Effective Control In Scarcity",
+              "gloss": "Asks whether the rules conclude that the State must count the newcomer among everyone within its reach when it decides a shortage.",
               "kind": "protection"
             }
           ]
@@ -780,16 +849,19 @@
             {
               "text": "complete(ScarcitySequenceAuthorization, ReviewedPhysicalScarcityFinding, ScarcitySequenceResource).",
               "label": "Finding · Reviewed Physical Scarcity Finding",
+              "gloss": "Asks whether the rules conclude that a reviewed finding of a physical shortage of the resource is complete.",
               "kind": "restraint"
             },
             {
               "text": "permits(ScarcitySequenceManager, AllocateUnderPhysicalScarcity, ScarcitySequenceRecord).",
               "label": "Permission · Allocate Under Physical Scarcity",
+              "gloss": "Asks whether the rules conclude that the scarcity manager may allocate the resource under the reviewed shortage.",
               "kind": "restraint"
             },
             {
               "text": "complete(ScarcityUnmetRecord, ReviewedScarcityShortfall, ScarcitySequenceResource).",
               "label": "Finding · Reviewed Scarcity Shortfall",
+              "gloss": "Asks whether the rules conclude that a reviewed record of the unmet shortfall is complete.",
               "kind": "restraint"
             }
           ]
@@ -820,16 +892,19 @@
             {
               "text": "adjust(Amend_Floor, Art_Floor).",
               "label": "Record query · Amend_Floor, Art_Floor",
+              "gloss": "Asks whether the record holds that the proposal Amend_Floor names the floor article as the one it changes.",
               "kind": "context"
             },
             {
               "text": "permanent(Art_Floor).",
               "label": "Record query · Art_Floor",
+              "gloss": "Asks whether the record lists the floor article among the protected provisions.",
               "kind": "context"
             },
             {
               "text": "become(Amend_Floor, Law).",
               "label": "Record query · Amend_Floor, Law",
+              "gloss": "Asks whether the rules conclude that the proposal Amend_Floor has become law.",
               "kind": "restraint"
             }
           ]
@@ -841,11 +916,13 @@
             {
               "text": "permanent(Art_Entrench).",
               "label": "Record query · Art_Entrench",
+              "gloss": "Asks whether the record lists the entrenchment article among the protected provisions.",
               "kind": "context"
             },
             {
               "text": "become(Amend_Meta, Law).",
               "label": "Record query · Amend_Meta, Law",
+              "gloss": "Asks whether the rules conclude that the proposal Amend_Meta has become law.",
               "kind": "restraint"
             }
           ]
@@ -857,11 +934,13 @@
             {
               "text": "become(Amend_Sneak, Law).",
               "label": "Record query · Amend_Sneak, Law",
+              "gloss": "Asks whether the rules conclude that the proposal Amend_Sneak has become law.",
               "kind": "restraint"
             },
             {
               "text": "permanent(Art_Evidence).",
               "label": "Record query · Art_Evidence",
+              "gloss": "Asks whether the record lists the article on what may be recorded among the protected provisions.",
               "kind": "gap"
             }
           ]
@@ -892,16 +971,19 @@
             {
               "text": "complete(RecordSequenceAuthorization, ReviewedRecordHolding, RecordSequenceSubject).",
               "label": "Finding · Reviewed Record Holding",
+              "gloss": "Asks whether the rules conclude that a reviewed holding of the subject's record is complete.",
               "kind": "context"
             },
             {
               "text": "obliged(RecordSequenceHolder, KeepRecordAccurateCorrectableAndSecure, RecordSequenceAuthorization).",
               "label": "Duty · Keep Record Accurate Correctable And Secure",
+              "gloss": "Asks whether the rules conclude that the record holder must keep the record accurate, correctable and secure.",
               "kind": "protection"
             },
             {
               "text": "obliged(RecordSequenceHolder, ProtectRecordSubjectsAndObjectorsFromRetaliation, RecordSequenceAuthorization).",
               "label": "Duty · Protect Record Subjects And Objectors From Retaliation",
+              "gloss": "Asks whether the rules conclude that the record holder must protect the record's subject, and anyone who objects, from retaliation.",
               "kind": "protection"
             }
           ]
@@ -913,16 +995,19 @@
             {
               "text": "obliged(RecordSequenceHolder, NotifyTheSubjectAfterCovertProcessing, RecordSequenceRecord).",
               "label": "Duty · Notify The Subject After Covert Processing",
+              "gloss": "Asks whether the rules conclude that the record holder must tell the record's subject afterwards about covert processing.",
               "kind": "protection"
             },
             {
               "text": "permits(RecordSequenceSubject, ContestAutomatedSupport, RecordSupportRecord).",
               "label": "Permission · Contest Automated Support",
+              "gloss": "Asks whether the rules conclude that the record's subject may contest the automated support used in a decision about them.",
               "kind": "protection"
             },
             {
               "text": "obliged(RecordSupportReviewer, DecideWithHumanAndIndependentReview, RecordSupportRecord).",
               "label": "Duty · Decide With Human And Independent Review",
+              "gloss": "Asks whether the rules conclude that the reviewer must decide with human and independent review rather than leave the decision to the automated support.",
               "kind": "protection"
             }
           ]
@@ -934,11 +1019,13 @@
             {
               "text": "false(Nell).",
               "label": "Adverse finding · Nell",
+              "gloss": "Asks whether the rules conclude that a credibility finding stands against Nell.",
               "kind": "restraint"
             },
             {
               "text": "owe(State, Healthy, Nell).",
               "label": "Duty owed · Healthy for Nell",
+              "gloss": "Asks whether the rules conclude that the State owes Nell care.",
               "kind": "protection"
             }
           ]
@@ -970,16 +1057,19 @@
             {
               "text": "fit(Nell, Homestay).",
               "label": "Record query · Nell, Homestay",
+              "gloss": "Asks whether the rules conclude that Nell may be placed in home confinement.",
               "kind": "restraint"
             },
             {
               "text": "prisoner(Nell).",
               "label": "Custody authority · Nell",
+              "gloss": "Asks whether the rules conclude that Nell is lawfully held in custody under current authority.",
               "kind": "restraint"
             },
             {
               "text": "err(Nell, Placement).",
               "label": "Recorded breach · Nell, Placement",
+              "gloss": "Asks whether the rules raise the placement alarm for Nell.",
               "kind": "context"
             }
           ]
@@ -991,16 +1081,19 @@
             {
               "text": "owe(State, Dwell, Nell).",
               "label": "Duty owed · Dwell for Nell",
+              "gloss": "Asks whether the rules conclude that the State owes Nell shelter.",
               "kind": "protection"
             },
             {
               "text": "dwell(Nell).",
               "label": "Shelter provision · Nell",
+              "gloss": "Asks whether the rules conclude that Nell received shelter.",
               "kind": "gap"
             },
             {
               "text": "dwell(Hano).",
               "label": "Shelter provision · Hano",
+              "gloss": "Asks whether the rules conclude that Hano received shelter.",
               "kind": "context"
             }
           ]
@@ -1032,6 +1125,7 @@
             {
               "text": "eats(Marisol).",
               "label": "Food provision · Marisol",
+              "gloss": "Asks whether the rules conclude that Marisol received food.",
               "kind": "context"
             }
           ]
@@ -1043,16 +1137,19 @@
             {
               "text": "eats(Marisol).",
               "label": "Food provision · Marisol",
+              "gloss": "Asks whether the rules conclude that Marisol received food.",
               "kind": "protection"
             },
             {
               "text": "dwell(Marisol).",
               "label": "Shelter provision · Marisol",
+              "gloss": "Asks whether the rules conclude that Marisol received shelter.",
               "kind": "gap"
             },
             {
               "text": "person(Marisol).",
               "label": "Personhood · Marisol",
+              "gloss": "Asks whether the rules conclude that Marisol is a person.",
               "kind": "standing_gap"
             }
           ]
@@ -1084,21 +1181,25 @@
             {
               "text": "attack(Hano, Ivo).",
               "label": "Record query · Hano, Ivo",
+              "gloss": "Asks whether the record holds that Hano attacked Ivo.",
               "kind": "context"
             },
             {
               "text": "severe(Hano).",
               "label": "Record query · Hano",
+              "gloss": "Asks whether the rules conclude that Hano's case counts as severe when a placement is chosen.",
               "kind": "context"
             },
             {
               "text": "fit(Hano, Homestay).",
               "label": "Record query · Hano, Homestay",
+              "gloss": "Asks whether the rules conclude that Hano may be placed in home confinement.",
               "kind": "context"
             },
             {
               "text": "building(Homestay, Hano).",
               "label": "Record query · Homestay, Hano",
+              "gloss": "Asks whether the rules conclude that home confinement is Hano's placement.",
               "kind": "protection"
             }
           ]
@@ -1110,16 +1211,19 @@
             {
               "text": "dwell(Hano).",
               "label": "Shelter provision · Hano",
+              "gloss": "Asks whether the rules conclude that Hano received shelter.",
               "kind": "gap"
             },
             {
               "text": "err(Hano, Isolation).",
               "label": "Recorded breach · Hano, Isolation",
+              "gloss": "Asks whether the rules raise the isolation alarm for Hano.",
               "kind": "gap"
             },
             {
               "text": "obliged(Review, Hano).",
               "label": "Duty · Hano",
+              "gloss": "Asks whether the rules conclude that the Review body owes Hano a review.",
               "kind": "protection"
             }
           ]
@@ -1151,16 +1255,19 @@
             {
               "text": "prisoner(Hano).",
               "label": "Custody authority · Hano",
+              "gloss": "Asks whether the rules conclude that Hano is lawfully held in custody under current authority.",
               "kind": "context"
             },
             {
               "text": "travel(Hano).",
               "label": "Freedom of movement · Hano",
+              "gloss": "Asks whether the rules conclude that Hano may move freely.",
               "kind": "context"
             },
             {
               "text": "decide(Hano, Ballot).",
               "label": "Decision eligibility · Hano, Ballot",
+              "gloss": "Asks whether the rules conclude that Hano may vote.",
               "kind": "protection"
             }
           ]
@@ -1172,21 +1279,25 @@
             {
               "text": "prisoner(Hano).",
               "label": "Custody authority · Hano",
+              "gloss": "Asks whether the rules conclude that Hano is lawfully held in custody under current authority.",
               "kind": "restraint"
             },
             {
               "text": "travel(Hano).",
               "label": "Freedom of movement · Hano",
+              "gloss": "Asks whether the rules conclude that Hano may move freely.",
               "kind": "protection"
             },
             {
               "text": "entitled(Hano, event { dwell() }).",
               "label": "Record query · Hano, event { dwell() }",
+              "gloss": "Asks whether the rules conclude that Hano is entitled to shelter.",
               "kind": "protection"
             },
             {
               "text": "dwell(Hano).",
               "label": "Shelter provision · Hano",
+              "gloss": "Asks whether the rules conclude that Hano received shelter.",
               "kind": "gap"
             }
           ]
@@ -1218,21 +1329,25 @@
             {
               "text": "false(Bela).",
               "label": "Adverse finding · Bela",
+              "gloss": "Asks whether the rules conclude that a credibility finding stands against Bela.",
               "kind": "context"
             },
             {
               "text": "provide(Foundry, Wage, Bela).",
               "label": "Record query · Foundry, Wage, Bela",
+              "gloss": "Asks whether the rules conclude that the Foundry owes Bela the wage it promised.",
               "kind": "protection"
             },
             {
               "text": "insure(Ledgerhouse, Bela, Illness).",
               "label": "Record query · Ledgerhouse, Bela, Illness",
+              "gloss": "Asks whether the rules conclude that Ledgerhouse's scheme owes Bela its illness supplement.",
               "kind": "protection"
             },
             {
               "text": "lose(Points, Bela).",
               "label": "Recognition withdrawal · Points, Bela",
+              "gloss": "Asks whether the rules conclude that a loss of recognition is recorded against Bela.",
               "kind": "restraint"
             }
           ]
@@ -1244,21 +1359,25 @@
             {
               "text": "provide(Foundry, Wage, Bela).",
               "label": "Record query · Foundry, Wage, Bela",
+              "gloss": "Asks whether the rules conclude that the Foundry owes Bela the wage it promised.",
               "kind": "context"
             },
             {
               "text": "provide(Bela, Restitution, Foundry).",
               "label": "Record query · Bela, Restitution, Foundry",
+              "gloss": "Asks whether the rules conclude that Bela owes the Foundry restitution.",
               "kind": "context"
             },
             {
               "text": "insure(Ledgerhouse, Bela, Illness).",
               "label": "Record query · Ledgerhouse, Bela, Illness",
+              "gloss": "Asks whether the rules conclude that Ledgerhouse's scheme owes Bela its illness supplement.",
               "kind": "protection"
             },
             {
               "text": "owe(State, Eats, Bela).",
               "label": "Duty owed · Eats for Bela",
+              "gloss": "Asks whether the rules conclude that the State owes Bela food.",
               "kind": "protection"
             }
           ]
@@ -1287,6 +1406,7 @@
             {
               "text": "permits(Review, Gia).",
               "label": "Permission · Gia",
+              "gloss": "Asks whether the rules conclude that Gia holds the Review body's authority to sign findings.",
               "kind": "context"
             }
           ]
@@ -1298,16 +1418,19 @@
             {
               "text": "broken(Tove).",
               "label": "Record query · Tove",
+              "gloss": "Asks whether the record holds that Tove was recalled.",
               "kind": "context"
             },
             {
               "text": "authority(Tove).",
               "label": "Record query · Tove",
+              "gloss": "Asks whether the rules conclude that Tove answers publicly as a holder of public power.",
               "kind": "protection"
             },
             {
               "text": "permits(Review, Tove).",
               "label": "Permission · Tove",
+              "gloss": "Asks whether the rules conclude that Tove holds the Review body's authority to sign findings.",
               "kind": "restraint"
             }
           ]
@@ -1319,11 +1442,13 @@
             {
               "text": "rotten(Mael).",
               "label": "Record query · Mael",
+              "gloss": "Asks whether the record holds a report that Mael was restricted in an earlier period.",
               "kind": "context"
             },
             {
               "text": "permits(Review, Mael).",
               "label": "Permission · Mael",
+              "gloss": "Asks whether the rules conclude that Mael holds the Review body's authority to sign findings.",
               "kind": "restraint"
             }
           ]
@@ -1352,16 +1477,19 @@
             {
               "text": "person(Cira).",
               "label": "Personhood · Cira",
+              "gloss": "Asks whether the rules conclude that Cira is a person.",
               "kind": "protection"
             },
             {
               "text": "prevents(Cira, GeneralAdulthoodDenial).",
               "label": "Protection · General Adulthood Denial",
+              "gloss": "Asks whether the rules conclude that Cira is protected against being denied general adulthood.",
               "kind": "context"
             },
             {
               "text": "decide(Cira, Ballot).",
               "label": "Decision eligibility · Cira, Ballot",
+              "gloss": "Asks whether the rules conclude that Cira may vote.",
               "kind": "gap"
             }
           ]
@@ -1373,11 +1501,13 @@
             {
               "text": "prevents(Esa, GeneralAdulthoodDenial).",
               "label": "Protection · General Adulthood Denial",
+              "gloss": "Asks whether the rules conclude that Esa is protected against being denied general adulthood.",
               "kind": "context"
             },
             {
               "text": "decide(Esa, Ballot).",
               "label": "Decision eligibility · Esa, Ballot",
+              "gloss": "Asks whether the rules conclude that Esa may vote.",
               "kind": "protection"
             }
           ]
@@ -1408,26 +1538,31 @@
             {
               "text": "teaches(Bela, Cira).",
               "label": "Record query · Bela, Cira",
+              "gloss": "Asks whether the record holds that Bela teaches Cira.",
               "kind": "context"
             },
             {
               "text": "false(Bela).",
               "label": "Adverse finding · Bela",
+              "gloss": "Asks whether the rules conclude that a credibility finding stands against Bela.",
               "kind": "context"
             },
             {
               "text": "false(Cira).",
               "label": "Adverse finding · Cira",
+              "gloss": "Asks whether the rules conclude that a credibility finding stands against Cira.",
               "kind": "restraint"
             },
             {
               "text": "lose(Points, Cira).",
               "label": "Recognition withdrawal · Points, Cira",
+              "gloss": "Asks whether the rules conclude that a loss of recognition is recorded against Cira.",
               "kind": "restraint"
             },
             {
               "text": "reward(Cira).",
               "label": "Record query · Cira",
+              "gloss": "Asks whether the rules conclude that Cira holds recognition for a contribution.",
               "kind": "context"
             }
           ]
@@ -1439,16 +1574,19 @@
             {
               "text": "teaches(Esa, Fin).",
               "label": "Record query · Esa, Fin",
+              "gloss": "Asks whether the record holds that Esa teaches Fin.",
               "kind": "context"
             },
             {
               "text": "false(Esa).",
               "label": "Adverse finding · Esa",
+              "gloss": "Asks whether the rules conclude that a credibility finding stands against Esa.",
               "kind": "context"
             },
             {
               "text": "person(Fin).",
               "label": "Personhood · Fin",
+              "gloss": "Asks whether the rules conclude that Fin is a person.",
               "kind": "standing_gap"
             }
           ]
@@ -1481,11 +1619,13 @@
             {
               "text": "false(Dara, Disclosure_Dara_Court).",
               "label": "Adverse finding · Dara, Disclosure_Dara_Court",
+              "gloss": "Asks whether the rules conclude that Dara's disclosure about the Court was found false.",
               "kind": "context"
             },
             {
               "text": "false(Dara).",
               "label": "Adverse finding · Dara",
+              "gloss": "Asks whether the rules conclude that a credibility finding stands against Dara.",
               "kind": "context"
             }
           ]
@@ -1497,21 +1637,25 @@
             {
               "text": "authority(Review).",
               "label": "Record query · Review",
+              "gloss": "Asks whether the rules conclude that the Review body answers publicly as a holder of public power.",
               "kind": "context"
             },
             {
               "text": "false(Dara, Disclosure_Dara_Review).",
               "label": "Adverse finding · Dara, Disclosure_Dara_Review",
+              "gloss": "Asks whether the rules conclude that Dara's disclosure about the Review body was found false.",
               "kind": "context"
             },
             {
               "text": "defend(Dara).",
               "label": "Record query · Dara",
+              "gloss": "Asks whether the rules conclude that Dara is shielded as someone who exposed a holder of public power.",
               "kind": "protection"
             },
             {
               "text": "prisoner(Dara).",
               "label": "Custody authority · Dara",
+              "gloss": "Asks whether the rules conclude that Dara is lawfully held in custody under current authority.",
               "kind": "restraint"
             }
           ]
@@ -1523,11 +1667,13 @@
             {
               "text": "prisoner(Dara).",
               "label": "Custody authority · Dara",
+              "gloss": "Asks whether the rules conclude that Dara is lawfully held in custody under current authority.",
               "kind": "protection"
             },
             {
               "text": "defend(Dara).",
               "label": "Record query · Dara",
+              "gloss": "Asks whether the rules conclude that Dara is shielded as someone who exposed a holder of public power.",
               "kind": "protection"
             }
           ]
@@ -1539,11 +1685,13 @@
             {
               "text": "contradict(Case_Dara, Appeals, ShieldReviewerConflict).",
               "label": "Record query · Case_Dara, Appeals, ShieldReviewerConflict",
+              "gloss": "Asks whether the rules conclude that a recorded conflict disqualifies the appeals body from reviewing Dara's case.",
               "kind": "context"
             },
             {
               "text": "prisoner(Dara).",
               "label": "Custody authority · Dara",
+              "gloss": "Asks whether the rules conclude that Dara is lawfully held in custody under current authority.",
               "kind": "restraint"
             }
           ]
@@ -1574,26 +1722,31 @@
             {
               "text": "building(SupportedResidence, Adam).",
               "label": "Record query · SupportedResidence, Adam",
+              "gloss": "Asks whether the rules conclude that supported residence is Adam's placement.",
               "kind": "context"
             },
             {
               "text": "prevents(Adam, CustodyForcedWork).",
               "label": "Protection · Custody Forced Work",
+              "gloss": "Asks whether the rules conclude that Adam is protected against forced work in custody.",
               "kind": "protection"
             },
             {
               "text": "prevents(Adam, FloorContributionCondition).",
               "label": "Protection · Floor Contribution Condition",
+              "gloss": "Asks whether the rules conclude that Adam is protected against having the floor made conditional on contribution.",
               "kind": "protection"
             },
             {
               "text": "prevents(Adam, CustodyLabourProtectionDenial).",
               "label": "Protection · Custody Labour Protection Denial",
+              "gloss": "Asks whether the rules conclude that Adam is protected against losing labour protection because of custody.",
               "kind": "protection"
             },
             {
               "text": "entitled(Adam, event { eats() }).",
               "label": "Record query · Adam, event { eats() }",
+              "gloss": "Asks whether the rules conclude that Adam is entitled to food.",
               "kind": "protection"
             }
           ]
@@ -1605,21 +1758,25 @@
             {
               "text": "prevents(Adam, DebtorImprisonment).",
               "label": "Protection · Debtor Imprisonment",
+              "gloss": "Asks whether the rules conclude that Adam is protected against imprisonment for debt.",
               "kind": "protection"
             },
             {
               "text": "prevents(Adam, TaxCollectionFloorAssetDeprivation).",
               "label": "Protection · Tax Collection Floor Asset Deprivation",
+              "gloss": "Asks whether the rules conclude that Adam is protected against tax collection that takes what the floor needs.",
               "kind": "protection"
             },
             {
               "text": "prevents(Adam, PaymentInstrumentAsDelivery).",
               "label": "Protection · Payment Instrument As Delivery",
+              "gloss": "Asks whether the rules conclude that Adam is protected against a payment or voucher being counted as delivery.",
               "kind": "protection"
             },
             {
               "text": "dwell(Adam).",
               "label": "Shelter provision · Adam",
+              "gloss": "Asks whether the rules conclude that Adam received shelter.",
               "kind": "gap"
             }
           ]
@@ -1651,11 +1808,13 @@
             {
               "text": "permits(Appeals, Nia).",
               "label": "Permission · Nia",
+              "gloss": "Asks whether the rules conclude that Nia has been granted relief on appeal.",
               "kind": "context"
             },
             {
               "text": "prisoner(Nia).",
               "label": "Custody authority · Nia",
+              "gloss": "Asks whether the rules conclude that Nia is lawfully held in custody under current authority.",
               "kind": "restraint"
             }
           ]
@@ -1667,16 +1826,19 @@
             {
               "text": "permits(Appeals, Adam).",
               "label": "Permission · Adam",
+              "gloss": "Asks whether the rules conclude that Adam has been granted relief on appeal.",
               "kind": "context"
             },
             {
               "text": "prisoner(Adam).",
               "label": "Custody authority · Adam",
+              "gloss": "Asks whether the rules conclude that Adam is lawfully held in custody under current authority.",
               "kind": "protection"
             },
             {
               "text": "travel(Adam).",
               "label": "Freedom of movement · Adam",
+              "gloss": "Asks whether the rules conclude that Adam may move freely.",
               "kind": "context"
             }
           ]
@@ -1705,21 +1867,25 @@
             {
               "text": "prisoner(Jala).",
               "label": "Custody authority · Jala",
+              "gloss": "Asks whether the rules conclude that Jala is lawfully held in custody under current authority.",
               "kind": "restraint"
             },
             {
               "text": "travel(Jala).",
               "label": "Freedom of movement · Jala",
+              "gloss": "Asks whether the rules conclude that Jala may move freely.",
               "kind": "protection"
             },
             {
               "text": "err(Jala, Placement).",
               "label": "Recorded breach · Jala, Placement",
+              "gloss": "Asks whether the rules raise the placement alarm for Jala.",
               "kind": "protection"
             },
             {
               "text": "decide(Jala, Ballot).",
               "label": "Decision eligibility · Jala, Ballot",
+              "gloss": "Asks whether the rules conclude that Jala may vote.",
               "kind": "context"
             }
           ]
@@ -1750,11 +1916,13 @@
             {
               "text": "prisoner(Lior).",
               "label": "Custody authority · Lior",
+              "gloss": "Asks whether the rules conclude that Lior is lawfully held in custody under current authority.",
               "kind": "restraint"
             },
             {
               "text": "defend(Lior).",
               "label": "Record query · Lior",
+              "gloss": "Asks whether the rules conclude that Lior is shielded as someone who exposed a holder of public power.",
               "kind": "protection"
             }
           ]
@@ -1766,6 +1934,7 @@
             {
               "text": "err(Lior, Isolation).",
               "label": "Recorded breach · Lior, Isolation",
+              "gloss": "Asks whether the rules raise the isolation alarm for Lior.",
               "kind": "restraint"
             }
           ]
@@ -1796,11 +1965,13 @@
             {
               "text": "prisoner(Dara).",
               "label": "Custody authority · Dara",
+              "gloss": "Asks whether the rules conclude that Dara is lawfully held in custody under current authority.",
               "kind": "protection"
             },
             {
               "text": "defend(Dara).",
               "label": "Record query · Dara",
+              "gloss": "Asks whether the rules conclude that Dara is shielded as someone who exposed a holder of public power.",
               "kind": "protection"
             }
           ]
@@ -1829,16 +2000,19 @@
             {
               "text": "grant(Assayer, Welding, Adam).",
               "label": "Record query · Assayer, Welding, Adam",
+              "gloss": "Asks whether the rules conclude that the Assayer certifies Adam for welding.",
               "kind": "context"
             },
             {
               "text": "provide(Foundry, Wage, Adam).",
               "label": "Record query · Foundry, Wage, Adam",
+              "gloss": "Asks whether the rules conclude that the Foundry owes Adam the wage it promised.",
               "kind": "context"
             },
             {
               "text": "insure(Ledgerhouse, Adam, Illness).",
               "label": "Record query · Ledgerhouse, Adam, Illness",
+              "gloss": "Asks whether the rules conclude that Ledgerhouse's scheme owes Adam its illness supplement.",
               "kind": "gap"
             }
           ]
@@ -1850,21 +2024,25 @@
             {
               "text": "prevents(Adam, QualificationStatusBarrier).",
               "label": "Protection · Qualification Status Barrier",
+              "gloss": "Asks whether the rules conclude that Adam is protected against a qualification being used as a barrier to status.",
               "kind": "protection"
             },
             {
               "text": "prevents(Adam, QualificationPersonStatusSpillover).",
               "label": "Protection · Qualification Person Status Spillover",
+              "gloss": "Asks whether the rules conclude that Adam is protected against a qualification spilling over into standing as a person.",
               "kind": "protection"
             },
             {
               "text": "prevents(Adam, CompensationRecognitionCoupling).",
               "label": "Protection · Compensation Recognition Coupling",
+              "gloss": "Asks whether the rules conclude that Adam is protected against pay being tied to recognition.",
               "kind": "protection"
             },
             {
               "text": "entitled(Adam, event { eats() }).",
               "label": "Record query · Adam, event { eats() }",
+              "gloss": "Asks whether the rules conclude that Adam is entitled to food.",
               "kind": "protection"
             }
           ]
@@ -1895,21 +2073,25 @@
             {
               "text": "injure(Nia, Ivo).",
               "label": "Record query · Nia, Ivo",
+              "gloss": "Asks whether the record holds that Nia injured Ivo.",
               "kind": "context"
             },
             {
               "text": "judge(Court, Nia).",
               "label": "Record query · Court, Nia",
+              "gloss": "Asks whether the record holds that the Court judged Nia.",
               "kind": "context"
             },
             {
               "text": "prisoner(Nia).",
               "label": "Custody authority · Nia",
+              "gloss": "Asks whether the rules conclude that Nia is lawfully held in custody under current authority.",
               "kind": "restraint"
             },
             {
               "text": "err(Nia, Isolation).",
               "label": "Recorded breach · Nia, Isolation",
+              "gloss": "Asks whether the rules raise the isolation alarm for Nia.",
               "kind": "context"
             }
           ]
@@ -1940,21 +2122,25 @@
             {
               "text": "travel(Jala).",
               "label": "Freedom of movement · Jala",
+              "gloss": "Asks whether the rules conclude that Jala may move freely.",
               "kind": "protection"
             },
             {
               "text": "decide(Jala, Ballot).",
               "label": "Decision eligibility · Jala, Ballot",
+              "gloss": "Asks whether the rules conclude that Jala may vote.",
               "kind": "protection"
             },
             {
               "text": "eats(Jala).",
               "label": "Food provision · Jala",
+              "gloss": "Asks whether the rules conclude that Jala received food.",
               "kind": "gap"
             },
             {
               "text": "expresses(Jala).",
               "label": "Expression provision · Jala",
+              "gloss": "Asks whether the record holds an act of expression by Jala.",
               "kind": "gap"
             }
           ]
@@ -1985,21 +2171,25 @@
             {
               "text": "owe(State, Dwell, Zed).",
               "label": "Duty owed · Dwell for Zed",
+              "gloss": "Asks whether the rules conclude that the State owes Zed shelter.",
               "kind": "protection"
             },
             {
               "text": "owe(State, Dwell, Nell).",
               "label": "Duty owed · Dwell for Nell",
+              "gloss": "Asks whether the rules conclude that the State owes Nell shelter.",
               "kind": "protection"
             },
             {
               "text": "dwell(Zed).",
               "label": "Shelter provision · Zed",
+              "gloss": "Asks whether the rules conclude that Zed received shelter.",
               "kind": "gap"
             },
             {
               "text": "dwell(Nell).",
               "label": "Shelter provision · Nell",
+              "gloss": "Asks whether the rules conclude that Nell received shelter.",
               "kind": "gap"
             }
           ]
@@ -2011,21 +2201,25 @@
             {
               "text": "prisoner(Zed).",
               "label": "Custody authority · Zed",
+              "gloss": "Asks whether the rules conclude that Zed is lawfully held in custody under current authority.",
               "kind": "context"
             },
             {
               "text": "prisoner(Nell).",
               "label": "Custody authority · Nell",
+              "gloss": "Asks whether the rules conclude that Nell is lawfully held in custody under current authority.",
               "kind": "context"
             },
             {
               "text": "owe(State, Expresses, Zed).",
               "label": "Duty owed · Expresses for Zed",
+              "gloss": "Asks whether the rules conclude that the State owes Zed expression.",
               "kind": "protection"
             },
             {
               "text": "owe(State, Expresses, Nell).",
               "label": "Duty owed · Expresses for Nell",
+              "gloss": "Asks whether the rules conclude that the State owes Nell expression.",
               "kind": "protection"
             }
           ]
@@ -2062,16 +2256,19 @@
             {
               "text": "person(Selin).",
               "label": "Personhood · Selin",
+              "gloss": "Asks whether the rules conclude that Selin is a person.",
               "kind": "protection"
             },
             {
               "text": "travel(Selin).",
               "label": "Free movement · Selin",
+              "gloss": "Asks whether the rules conclude that Selin may move freely.",
               "kind": "protection"
             },
             {
               "text": "decide(Selin, Ballot).",
               "label": "Ballot without adulthood evidence · Selin",
+              "gloss": "Asks whether the rules conclude that Selin may vote.",
               "kind": "context"
             }
           ]
@@ -2083,16 +2280,19 @@
             {
               "text": "decide(Selin, Ballot).",
               "label": "Ballot · Selin",
+              "gloss": "Asks whether the rules conclude that Selin may vote.",
               "kind": "protection"
             },
             {
               "text": "prevents(Selin, WorkChoiceRefusalExitDenial).",
               "label": "Work may be refused · Selin",
+              "gloss": "Asks whether the rules conclude that Selin is protected against being denied the choice to refuse or leave work.",
               "kind": "protection"
             },
             {
               "text": "prevents(Selin, FloorContributionCondition).",
               "label": "The floor asks for no contribution · Selin",
+              "gloss": "Asks whether the rules conclude that Selin is protected against having the floor made conditional on contribution.",
               "kind": "protection"
             }
           ]
@@ -2104,16 +2304,19 @@
             {
               "text": "provide(SelinEmployer, Wage, Selin).",
               "label": "Wage · Selin",
+              "gloss": "Asks whether the rules conclude that Selin's employer owes Selin the wage it promised.",
               "kind": "protection"
             },
             {
               "text": "provide(SelinEmployer, Prize, Selin).",
               "label": "A prize nobody recorded · Selin",
+              "gloss": "Asks whether the rules conclude that Selin's employer owes Selin a prize.",
               "kind": "context"
             },
             {
               "text": "prevents(Selin, EvictionForeclosureWithoutContinuity).",
               "label": "Eviction without continuity barred · Selin",
+              "gloss": "Asks whether the rules conclude that Selin is protected against eviction or foreclosure without continuing shelter.",
               "kind": "protection"
             }
           ]
@@ -2125,11 +2328,13 @@
             {
               "text": "healthy(Selin).",
               "label": "Care received · Selin",
+              "gloss": "Asks whether the rules conclude that Selin received care.",
               "kind": "protection"
             },
             {
               "text": "eats(Selin).",
               "label": "Food, which nothing here records · Selin",
+              "gloss": "Asks whether the rules conclude that Selin received food.",
               "kind": "context"
             }
           ]
@@ -2141,6 +2346,7 @@
             {
               "text": "obliged(SelinHousingOffice, ReviewJusticeRequest, SelinTenancyRequest).",
               "label": "Duty to review the request · housing office",
+              "gloss": "Asks whether the rules conclude that the housing office must review Selin's request about the landlord's notice.",
               "kind": "protection"
             }
           ]
@@ -2152,26 +2358,31 @@
             {
               "text": "complete(SelinStopRecord, PSIndividualSearchOrder, Selin).",
               "label": "Search order · Selin",
+              "gloss": "Asks whether the rules conclude that the stop record is complete as an order to search Selin.",
               "kind": "restraint"
             },
             {
               "text": "restrain(Selin, SelinStopRecord, SpecifiedPrivacy).",
               "label": "Privacy restraint · Selin",
+              "gloss": "Asks whether the rules conclude that the stop record restricts Selin's privacy.",
               "kind": "restraint"
             },
             {
               "text": "prisoner(Selin).",
               "label": "Custody authority · Selin",
+              "gloss": "Asks whether the rules conclude that Selin is lawfully held in custody under current authority.",
               "kind": "restraint"
             },
             {
               "text": "travel(Selin).",
               "label": "Free movement · Selin",
+              "gloss": "Asks whether the rules conclude that Selin may move freely.",
               "kind": "protection"
             },
             {
               "text": "decide(Selin, Ballot).",
               "label": "Ballot · Selin",
+              "gloss": "Asks whether the rules conclude that Selin may vote.",
               "kind": "protection"
             }
           ]
@@ -2200,21 +2411,25 @@
             {
               "text": "prevents(Adam, PrescribedExpression).",
               "label": "Expression not prescribed · Adam",
+              "gloss": "Asks whether the rules conclude that Adam is protected against having expression prescribed.",
               "kind": "protection"
             },
             {
               "text": "prevents(Adam, CompelledConscience).",
               "label": "Conscience not compelled · Adam",
+              "gloss": "Asks whether the rules conclude that Adam is protected against having conscience compelled.",
               "kind": "protection"
             },
             {
               "text": "prevents(Adam, CoercedAssociation).",
               "label": "Association not coerced · Adam",
+              "gloss": "Asks whether the rules conclude that Adam is protected against coerced association.",
               "kind": "protection"
             },
             {
               "text": "prevents(Adam, ArbitraryPrivacyInterference).",
               "label": "Privacy not arbitrarily entered · Adam",
+              "gloss": "Asks whether the rules conclude that Adam is protected against arbitrary interference with privacy.",
               "kind": "protection"
             }
           ]
@@ -2243,26 +2458,31 @@
             {
               "text": "complete(RiverWaterContinuityRecord, ECDualFloorAndCeilingContinuity, ExistingEssentialWaterService).",
               "label": "Continuity of essential water",
+              "gloss": "Asks whether the rules conclude that the record keeping the town's water on is complete, with both the floor and the river's limit recorded.",
               "kind": "protection"
             },
             {
               "text": "prevents(RiverWaterContinuityRecord, ECUnmetFloorRenamedSuccess).",
               "label": "An unmet floor is not renamed success",
+              "gloss": "Asks whether the rules conclude that the water continuity record is barred from calling an unmet floor a success.",
               "kind": "protection"
             },
             {
               "text": "prevents(RiverWaterContinuityRecord, ECCeilingBreachRenamedCompliance).",
               "label": "A breached limit is not renamed compliance",
+              "gloss": "Asks whether the rules conclude that the water continuity record is barred from calling a breach of the river's limit compliance.",
               "kind": "protection"
             },
             {
               "text": "permits(FSBOD_09, ECOnlyExistingRightsPreservingPhysicalScarcityAllocation, RiverWaterAllocationRecord).",
               "label": "A scarcity allocation from continuity alone",
+              "gloss": "Asks whether the rules conclude that the economic allocation body may make a scarcity allocation on the strength of the water continuity record alone.",
               "kind": "restraint"
             },
             {
               "text": "decide(RiverWaterClaimant, Ballot).",
               "label": "Ballot · the water claimant",
+              "gloss": "Asks whether the rules conclude that the water claimant may vote.",
               "kind": "context"
             }
           ]
@@ -2274,16 +2494,19 @@
             {
               "text": "complete(RiverIndependentConflictRecord, ECIndependentGuardianAnimalConflictDecision, RiverConflictV340).",
               "label": "The court’s decision between the two claims",
+              "gloss": "Asks whether the rules conclude that the independent court's decision between the river's claim and the fish's claim is complete.",
               "kind": "protection"
             },
             {
               "text": "obliged(FSBOD_17, ECPublishAndApplyIndependentHardBarFirstAxisSeparatedLeastHarmConflictDecision, RiverIndependentConflictRecord).",
               "label": "Duty to publish and apply it, hard prohibitions first",
+              "gloss": "Asks whether the rules conclude that the justice and appeal body must publish the court's decision and apply it, hard prohibitions first.",
               "kind": "protection"
             },
             {
               "text": "permits(RiverFishCareController, ECOnlyEnhancedNonFoodNonResearchAnimalUse, RiverFishRescueRecord).",
               "label": "An invasive rescue from that decision alone",
+              "gloss": "Asks whether the rules conclude that the court's decision alone permits the invasive rescue of the fish.",
               "kind": "restraint"
             }
           ]
@@ -2310,21 +2533,25 @@
         {
           "text": "born(Nell).",
           "label": "Record query · Nell",
+          "gloss": "Asks whether the record holds that Nell was born.",
           "kind": "context"
         },
         {
           "text": "person(Nell).",
           "label": "Personhood · Nell",
+          "gloss": "Asks whether the rules conclude that Nell is a person.",
           "kind": "context"
         },
         {
           "text": "owe(State, Eats, Nell).",
           "label": "Duty owed · State, Eats, Nell",
+          "gloss": "Asks whether the rules conclude that the State owes Nell food.",
           "kind": "context"
         },
         {
           "text": "travel(Nell).",
           "label": "Freedom of movement · Nell",
+          "gloss": "Asks whether the rules conclude that Nell may move freely.",
           "kind": "context"
         }
       ],
@@ -2349,21 +2576,25 @@
         {
           "text": "prisoner(Zed).",
           "label": "Custody authority · Zed",
+          "gloss": "Asks whether the rules conclude that Zed is lawfully held in custody under current authority.",
           "kind": "context"
         },
         {
           "text": "person(Zed).",
           "label": "Personhood · Zed",
+          "gloss": "Asks whether the rules conclude that Zed is a person.",
           "kind": "context"
         },
         {
           "text": "owe(State, Eats, Zed).",
           "label": "Duty owed · State, Eats, Zed",
+          "gloss": "Asks whether the rules conclude that the State owes Zed food.",
           "kind": "context"
         },
         {
           "text": "entitled(Zed, event { eats() }).",
           "label": "Record query · Zed, event { eats() }",
+          "gloss": "Asks whether the rules conclude that Zed is entitled to food.",
           "kind": "context"
         }
       ],
@@ -2388,21 +2619,25 @@
         {
           "text": "rotten(Mael).",
           "label": "Record query · Mael",
+          "gloss": "Asks whether the record holds a report that Mael was restricted in an earlier period.",
           "kind": "context"
         },
         {
           "text": "permits(Review, Mael).",
           "label": "Permission · Review, Mael",
+          "gloss": "Asks whether the rules conclude that Mael holds the Review body's authority to sign findings.",
           "kind": "context"
         },
         {
           "text": "broken(Tove).",
           "label": "Record query · Tove",
+          "gloss": "Asks whether the record holds that Tove was recalled.",
           "kind": "context"
         },
         {
           "text": "permits(Review, Tove).",
           "label": "Permission · Review, Tove",
+          "gloss": "Asks whether the rules conclude that Tove holds the Review body's authority to sign findings.",
           "kind": "context"
         }
       ],
@@ -2427,16 +2662,19 @@
         {
           "text": "authority(Court).",
           "label": "Record query · Court",
+          "gloss": "Asks whether the rules conclude that the Court answers publicly as a holder of public power.",
           "kind": "context"
         },
         {
           "text": "defend(Lior).",
           "label": "Record query · Lior",
+          "gloss": "Asks whether the rules conclude that Lior is shielded as someone who exposed a holder of public power.",
           "kind": "context"
         },
         {
           "text": "prisoner(Lior).",
           "label": "Custody authority · Lior",
+          "gloss": "Asks whether the rules conclude that Lior is lawfully held in custody under current authority.",
           "kind": "context"
         }
       ],
@@ -2461,11 +2699,13 @@
         {
           "text": "prevents(Adam, WorkChoiceRefusalExitDenial).",
           "label": "Protection · Adam, WorkChoiceRefusalExitDenial",
+          "gloss": "Asks whether the rules conclude that Adam is protected against being denied the choice to refuse or leave work.",
           "kind": "context"
         },
         {
           "text": "prevents(Adam, WorkConstitutionalGate).",
           "label": "Protection · Adam, WorkConstitutionalGate",
+          "gloss": "Asks whether the rules conclude that Adam is protected against work being made a gate to constitutional rights.",
           "kind": "context"
         }
       ],
@@ -2490,11 +2730,13 @@
         {
           "text": "prevents(Adam, EconomicFactorFloorGate).",
           "label": "Protection · Adam, EconomicFactorFloorGate",
+          "gloss": "Asks whether the rules conclude that Adam is protected against any economic factor gating the floor.",
           "kind": "context"
         },
         {
           "text": "prevents(Adam, PaymentInstrumentAsDelivery).",
           "label": "Protection · Adam, PaymentInstrumentAsDelivery",
+          "gloss": "Asks whether the rules conclude that Adam is protected against a payment or voucher being counted as delivery.",
           "kind": "context"
         }
       ],
@@ -2519,6 +2761,7 @@
         {
           "text": "eats(Marisol).",
           "label": "Food provision · Marisol",
+          "gloss": "Asks whether the rules conclude that Marisol received food.",
           "kind": "context"
         }
       ],
@@ -2631,16 +2874,19 @@
         {
           "text": "authority(Tove).",
           "label": "Public answerability · Tove",
+          "gloss": "Asks whether the rules conclude that Tove answers publicly as a holder of public power.",
           "kind": "context"
         },
         {
           "text": "defend(Iris).",
           "label": "Disclosure protection · Iris",
+          "gloss": "Asks whether the rules conclude that Iris is shielded as someone who exposed a holder of public power.",
           "kind": "context"
         },
         {
           "text": "prisoner(Iris).",
           "label": "Custody authority · Iris",
+          "gloss": "Asks whether the rules conclude that Iris is lawfully held in custody under current authority.",
           "kind": "context"
         }
       ]
@@ -2663,16 +2909,19 @@
         {
           "text": "entitled(Bela, event { believe() }).",
           "label": "Belief entitlement · Bela",
+          "gloss": "Asks whether the rules conclude that Bela holds the entitlement to belief.",
           "kind": "context"
         },
         {
           "text": "entitled(Bela, event { eats() }).",
           "label": "Food entitlement · Bela",
+          "gloss": "Asks whether the rules conclude that Bela is entitled to food.",
           "kind": "context"
         },
         {
           "text": "person(Bela).",
           "label": "Personhood · Bela",
+          "gloss": "Asks whether the rules conclude that Bela is a person.",
           "kind": "context"
         }
       ]

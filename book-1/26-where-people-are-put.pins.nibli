@@ -1,5 +1,6 @@
 # Chapter 26 fidelity: case-bound severity, reviewed placement, and independent shelter.
-# Original raw allegations and every placement/floor query remain regression controls.
+# The raw allegation entries and every placement/floor query serve as
+# regression controls.
 # Canonical cases separately supply qualified merits, signed dimensions, placement and intake.
 # Family status and raw harm reports cannot substitute for those records.
 :expect-pins 73
@@ -10,6 +11,9 @@
 ? severe(Hano).
 # => FALSE
 
+# With no family entry, Hano is eligible for home confinement and the reviewed
+# placement names that home; neither concludes shelter: "Placement records
+# name places, and shelter needs its own evidence."
 ? family(Hano).
 # => FALSE
 ? fit(Hano, Homestay).
@@ -27,6 +31,9 @@
 # => TRUE
 ? severe(Ruk).
 # => TRUE
+# Family plays no part, and severity leaves Ruk eligible for home confinement;
+# the secure destination rests on the placement's "separate finding that less
+# restrictive alternatives are insufficient".
 ? family(Ruk).
 # => FALSE
 ? fit(Ruk, Homestay).
@@ -41,9 +48,14 @@
 # => TRUE
 ? severe(Nando).
 # => FALSE
+# Nando's family entry chooses no destination, and no low-security placement
+# follows: "A family entry does no placement work."
 ? building(LowSec, Nando).
 # => FALSE
 
+# Lalo has a family entry and a signed aggravated-cruelty finding. The raw
+# attack and cruelty entries are allegations, and "severity needs the signed
+# finding"; the secure destination rests on the reviewed placement.
 ? family(Lalo).
 # => TRUE
 ? attack(Lalo, Mina).
@@ -55,6 +67,9 @@
 ? building(HighSec, Lalo).
 # => TRUE
 
+# Faro, the other aggravated-cruelty case, has no home option recorded. The
+# secure destination rests on the finding and the reviewed placement; no rule
+# reads the missing home option.
 ? severe(Faro).
 # => TRUE
 ? at(Faro, PlacementHome).
@@ -62,6 +77,8 @@
 ? building(HighSec, Faro).
 # => TRUE
 
+# No placement report is recorded yet, so the placement alarm is silent for
+# these people, each held at an authorised destination.
 ? err(Ruk, Placement).
 # => FALSE
 ? err(Lalo, Placement).
@@ -69,6 +86,7 @@
 ? err(Hano, Placement).
 # => FALSE
 
+# Nando, like Kel and Adam below, has no home option recorded.
 ? at(Nando, PlacementHome).
 # => FALSE
 
@@ -77,6 +95,8 @@
 # => TRUE
 ? at(Kel, PlacementHome).
 # => FALSE
+# No secure or low-security destination follows for Kel: "Poverty or a
+# missing home entry cannot justify escalating to a secure facility."
 ? building(HighSec, Kel).
 # => FALSE
 ? building(LowSec, Kel).
@@ -87,6 +107,8 @@
 ? fit(Adam, Homestay).
 # => TRUE
 
+# "Shelter follows from the receipt route alone, whatever the sentence and
+# place records say", and none of these people, held or not, has a receipt.
 ? dwell(Kel).
 # => FALSE
 ? dwell(Adam).
@@ -104,6 +126,8 @@
 ? dwell(Bela).
 # => FALSE
 
+# The family entry is a fact about Nando alone: it says nothing about Opal,
+# the person Nando harmed, who has no family entry.
 ? family(Nando).
 # => TRUE
 ? family(Opal).
@@ -120,14 +144,19 @@
 # Reports test both directions against lawful placement. These writes persist.
 put(State, Ruk, Homestay).
 
+# Ruk's placement names a secure place, so a report of Ruk at home raises the
+# placement alarm.
 ? err(Ruk, Placement).
 # => TRUE
 
+# A report of Hano at the home his placement names raises no alarm.
 put(State, Hano, Homestay).
 
 ? err(Hano, Placement).
 # => FALSE
 
+# Nell, whose record holds one birth entry, has no case: no home eligibility,
+# shelter receipt, placement alarm or custody follows for the child.
 ? fit(Nell, Homestay).
 # => FALSE
 
@@ -140,6 +169,8 @@ put(State, Hano, Homestay).
 ? prisoner(Nell).
 # => FALSE
 
+# The shelter debt comes from personhood alone: "Every person was owed
+# adequate shelter before a sentence or receipt."
 ? owe(State, Dwell, Nell).
 # => TRUE
 
@@ -150,12 +181,19 @@ put(State, Hano, HighSec).
 put(State, Jala, UnknownCustodyKind).
 ? err(Jala, Placement).
 # => TRUE
+# The alarm reads the report alone, and the report makes nobody a prisoner:
+# the record holds no custody for Jala.
 ? prisoner(Jala).
 # => FALSE
 
 # Offence gravity, the placement choice and current authority are distinct.
+# Ruk's signed grave-injury finding is properly made, and severity rests on it.
 ? attribute(Severity_Ruk_GraveInjury_Opal, GraveInjury).
 # => TRUE
+# The paired cases below hold merits and procedure constant, "varying one
+# input at a time" as the chapter's table does.
+# Grave injury with a reviewed home placement: a secure place may be
+# considered, and the home is the destination.
 ? severe(BoundaryGraveHome, Case_BoundaryGraveHome).
 # => TRUE
 ? fit(BoundaryGraveHome, HighSec, Case_BoundaryGraveHome).
@@ -164,24 +202,34 @@ put(State, Jala, UnknownCustodyKind).
 # => TRUE
 ? building(HighSec, BoundaryGraveHome).
 # => FALSE
+# Injury findings about two people, without grave injury or aggravated
+# cruelty: no severity, so neither secure eligibility nor the secure place.
 ? severe(BoundaryTwoVictims, Case_BoundaryTwoVictims).
 # => FALSE
 ? fit(BoundaryTwoVictims, HighSec, Case_BoundaryTwoVictims).
 # => FALSE
 ? building(HighSec, BoundaryTwoVictims).
 # => FALSE
+# Aggravated cruelty with a separately justified secure placement: severity
+# and the secure destination both follow.
 ? severe(BoundaryCruelOnly, Case_BoundaryCruelOnly).
 # => TRUE
 ? building(HighSec, BoundaryCruelOnly).
 # => TRUE
+# Grave injury with no finding that less restrictive places are insufficient:
+# severity, but no authority for the secure place.
 ? severe(BoundaryNoAlternative, Case_BoundaryNoAlternative).
 # => TRUE
 ? building(HighSec, BoundaryNoAlternative).
 # => FALSE
+# Grave injury, no suitable consenting home and a reviewed ordinary residence:
+# that residence is the destination, not the secure place.
 ? building(SupportedResidence, BoundaryGraveResidence).
 # => TRUE
 ? building(HighSec, BoundaryGraveResidence).
 # => FALSE
+# A severe case whose reviewed placement is at home stays there: "Severity
+# permits and never selects".
 ? severe(Placement_severe_at_home, Case_Placement_severe_at_home).
 # => TRUE
 ? building(Homestay, Placement_severe_at_home).

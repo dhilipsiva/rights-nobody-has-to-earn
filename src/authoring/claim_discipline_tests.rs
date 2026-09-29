@@ -1231,3 +1231,112 @@ fn no_boundary_claims_a_negative_it_cannot_establish() {
         assert!(offend(fine).is_none(), "the detector now rejects {fine:?}");
     }
 }
+
+/// A derived chapter's pin file is where a reader checks the chapter, and its
+/// comments quote the chapter beside the queries that test it. A quotation the
+/// book no longer holds sends that reader to a sentence that is not there, so
+/// every quotation in those comments must still occur in some reading input:
+/// whitespace-normalised and case-folded, with an ellipsis standing for words
+/// left out. Queries, `# =>` expectations and statements are not comments and
+/// are not read.
+#[test]
+fn every_quotation_in_a_chapter_pin_comment_is_still_in_the_book() {
+    let context = Context::discover().expect("repository");
+    let contents = contents::Contents::load(&context).expect("manifest");
+    let mut book = String::new();
+    for file in contents.front.iter().chain(contents.back.iter()) {
+        let matter = context
+            .read(&format!("book-1/{file}"))
+            .expect("front or back matter");
+        book.push_str(&matter);
+        book.push('\n');
+    }
+    for path in contents.numbered().into_iter().chain(contents.openers()) {
+        book.push_str(&context.read(&path).expect("reading input"));
+        book.push('\n');
+    }
+    let book = fold(&book);
+    let mut quotations = 0;
+    let mut stale = Vec::new();
+    for chapter in contents.derived() {
+        let pins = format!("{}.pins.nibli", chapter.trim_end_matches(".md"));
+        for quotation in comment_quotations(&context.read(&pins).expect("pin file")) {
+            quotations += 1;
+            if !book_holds(&book, &quotation) {
+                stale.push(format!("{pins}: \"{quotation}\""));
+            }
+        }
+    }
+    assert!(
+        quotations > 100,
+        "the chapter pin comments quote the book only {quotations} times; \
+         the extractor has stopped seeing them"
+    );
+    assert!(
+        stale.is_empty(),
+        "these pin-comment quotations are in no reading input. Quote the \
+         chapter's current words, or say plainly what the pins test: {stale:#?}"
+    );
+}
+
+#[test]
+fn a_pin_comment_quoting_words_the_book_lacks_is_found() {
+    let book = fold("The rules conclude each of those entitlements for her, and more.");
+    // A quotation may run across comment lines and leave words out.
+    let planted = "# \"The rules conclude each of those\n\
+                   # entitlements … and more.\" beside \"words the book never held\"\n\
+                   ? person(Bela).\n\
+                   # => TRUE\n";
+    let found: Vec<String> = comment_quotations(planted)
+        .into_iter()
+        .filter(|quotation| !book_holds(&book, quotation))
+        .collect();
+    assert_eq!(found, vec!["words the book never held".to_owned()]);
+    // A quotation in a query or an expectation is not a comment.
+    assert!(comment_quotations("? says(\"not a comment\").\n# => \"not one either\"\n").is_empty());
+}
+
+/// Straight quotes and apostrophes, one space, lower case.
+fn fold(text: &str) -> String {
+    text.replace(['\u{2018}', '\u{2019}'], "'")
+        .replace(['\u{201c}', '\u{201d}'], "\"")
+        .split_whitespace()
+        .collect::<Vec<_>>()
+        .join(" ")
+        .to_lowercase()
+}
+
+/// Every quotation of six characters or more in a pin file's comments, read a
+/// comment paragraph at a time so that a quotation may span lines.
+fn comment_quotations(pins: &str) -> Vec<String> {
+    let quote = Regex::new(r#""([^"]{6,})"|“([^”]{6,})”"#).unwrap();
+    let mut found = Vec::new();
+    let mut paragraph = String::new();
+    for line in pins.lines().chain(std::iter::once("")) {
+        let line = line.trim();
+        if line.starts_with('#') && !line.starts_with("# =>") {
+            paragraph.push(' ');
+            paragraph.push_str(line.trim_start_matches('#').trim());
+            continue;
+        }
+        for caps in quote.captures_iter(&paragraph) {
+            let quotation = caps.get(1).or_else(|| caps.get(2)).unwrap().as_str();
+            found.push(normalise(quotation));
+        }
+        paragraph.clear();
+    }
+    found
+}
+
+/// Whether the book holds a quotation: every part of it between ellipses that
+/// is longer than three characters occurs somewhere in the book.
+fn book_holds(book: &str, quotation: &str) -> bool {
+    let folded = fold(quotation);
+    let parts: Vec<&str> = folded
+        .split('…')
+        .flat_map(|part| part.split("..."))
+        .map(|part| part.trim_matches(|c: char| c.is_whitespace() || ".,;:".contains(c)))
+        .filter(|part| part.chars().count() > 3)
+        .collect();
+    parts.iter().all(|part| book.contains(part))
+}

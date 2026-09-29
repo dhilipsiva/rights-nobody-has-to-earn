@@ -224,7 +224,7 @@ unimplemented until the items named here land.
 
 ## Ordered revision backlog toward 9.5+
 
-Status 2026-09-29: items 01–65, 67–80, 82 and 83 are complete and recorded in
+Status 2026-09-29: items 01–65, 67–80 and 82–84 are complete and recorded in
 `CLAUDE.md`; optional item 66 is closed without outside validation. The
 [2026-09-25 revision review](reviews/2026-09-25-revision-review.md) rates the
 revised manuscript 8/10 and publisher readiness 7.5/10: claim discipline holds
@@ -233,7 +233,7 @@ chapters (6, 13, 17, 27), cost-paragraph/argument restatement at chapter
 endings, and length for the D1 serious non-specialist reader. A fresh
 chapter-by-chapter pass (2026-09-29) concurs at ~7.1/10 average, weakest at
 Ch. 7 and Ch. 27. No remaining item is an error the pins contradict. Item
-81 is optional; items 84–87, merged below, are companion and navigation
+81 is optional; items 85–87, merged below, are companion and navigation
 work. Chapter numbers refer to the [current reading
 sequence](book-1/contents.json).
 
@@ -292,11 +292,11 @@ Where each of its items went:
 |---|---|
 | 1. Split Chapters 13, 27 and 29 | 73, 75 and 80 (done) |
 | 2. An onboarding path in the companion | 83 (done) |
-| 3. Bridge the prose and the formal language | 77 (done), 84 |
+| 3. Bridge the prose and the formal language | 77 and 84 (done) |
 | 4. Independent validation | 81, 85 |
 | 5. Compress Chapters 17 and 22 | 73 and 77 (done) |
 | 6. The design in ten minutes | 86 |
-| 7. Pins a non-programmer can read | 77 (done), 84 |
+| 7. Pins a non-programmer can read | 77 and 84 (done) |
 | 8. What would change my mind | 87 |
 | 9. Costs and who bears them | 87 |
 | 10. A second-engine page | 85 |
@@ -323,26 +323,6 @@ From the merged list: its second engine is built (item 50), and the method
 reports it as a cross-check within the project, so its request to build one
 is met. What it adds here is an outside reimplementation and a red team run by
 someone else, both already named above.
-
-### 84. The query behind each conclusion
-
-Why: each companion verdict shows its query and a short label such as "Food
-provision · Marisol", but no sentence says what the query asks; and the
-chapter pin files, where a reader checking a chapter reads its tests, comment
-their queries unevenly. From the merged list's items 3 and 7.
-Do: give each query in `ui/game.json` a one-sentence gloss saying what it
-asks, never what it proves ("Asks whether the rules conclude that the State
-owes Nell food"), shown beside the verdict, whose existing explanation keeps
-FALSE as not derivable from the record rather than untrue. Give each query
-block in `book-1/*.pins.nibli` a plain comment saying what it tests and why,
-where one is missing; generated cases keep what their generators write. The
-list's "Verify this" boxes of Nibli queries inside every derived chapter would
-put formal notation in derived text, which stays jargon-free and already
-points to its cases (item 63), so they need an author ruling if still wanted.
-Close when: a companion input test requires a gloss for every query, with a
-sabotage control; a comparison with `HEAD` shows every active pin statement
-and expectation unchanged; the chapter pin files pass focused runs, then the
-complete `./verify.sh`.
 
 ### 85. Checks and limits where a reader can find them
 

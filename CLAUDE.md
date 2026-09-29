@@ -135,6 +135,89 @@ reinstate the retired tooling or workflow.
 Grouped by kind. Dates in each heading are the ratification dates; a ruling
 that was later implemented or narrowed carries that supersession inline.
 
+### Item 84 — the query behind each conclusion, 2026-09-29
+
+Each companion verdict showed its query and a short label such as "Food
+provision · Marisol", and no sentence said what the query asks. Every one of
+the 249 queries in `ui/game.json` now carries a gloss, 185 distinct, saying in
+one sentence what it asks and never what it proves: "Asks whether the rules
+conclude that the State owes Nell food." A query about an entry nobody
+concludes asks what the record holds instead: "Asks whether the record holds
+that Nell was born." The game shows the gloss under each verdict's label,
+above the fixed explanation that keeps FALSE as not derivable from the record,
+and the game's Markdown copy lists each move's queries with their glosses.
+Two companion input tests hold it: every query has a gloss that is one
+sentence beginning "Asks whether", claims no result, names the person the
+query asks about and reads the same wherever the query recurs; and a sabotage
+control finds a missing gloss, a gloss claiming proof and a gloss naming the
+wrong person. The browser suite checks the glosses rendered for Nell's first
+move.
+
+Each derived chapter's pin file, where a reader checks the chapter, now says
+what its queries test. Where a group of queries had no comment saying what it
+tests and why, one was added: a fact or rule entered without a word, or a turn
+to a different conclusion or person that the nearest comment did not cover; a
+run of queries of one shape under a comment that explains them was left as it
+was. Checking the existing comments against their pins and chapters found
+worse than gaps. Their quotations of chapter wording had gone stale through
+the revision, 235 of them occurring in no reading input, and some comments
+contradicted the verdicts beneath them: shelter or speech concluded from
+confinement over pins that say FALSE, severity from a pair of raw harm
+entries, relief from a raw clearing entry and a generic judgment, and pay for
+an examination. Others carried the retired names DON, SLY and REX, the office
+sense of "standing", or accounts of how the files had developed. Each now
+quotes the chapter's current words for the same claim or describes the test
+plainly, and states the current design. Chapters 3 and 18, which also list
+the cases behind other chapters' sections, name the chapter of each. In all
+458 comment paragraphs across 27 files were added or corrected; Chapter 13's
+needed nothing.
+
+Six agents wrote the comments, each on its own files, in two passes under a
+guard that held every statement, query, expectation and directive identical
+to `HEAD` and in order, every changed line within 80 columns, every quotation
+present in a reading input and the two comment needles other records rely on
+intact. Every changed paragraph was then read beside the verdicts it governs;
+that review corrected a heading saying nothing below asked about Nemo, over
+four queries about Nemo, and removed pronouns the chapters do not give Tove
+or Zeno, the retired word "void" and two vague phrases. The two queries in
+Chapter 18's file about the Future Conditions Guardian and the Animal
+Protection Advocate test a claim of Chapter 12; their comment says so, and
+they stay where they are because this item keeps every pin statement
+unchanged. The formal source's own comments that cite chapters by their
+earlier numbers, and dated measurement records that cite pin lines by
+number, are outside the pin files and unchanged.
+
+`claim_discipline_tests::every_quotation_in_a_chapter_pin_comment_is_still_in_the_book`
+now holds the 479 quotations in the derived chapters' pin comments to the
+reading inputs, whitespace-normalised and case-folded with an ellipsis for
+words left out, and `a_pin_comment_quoting_words_the_book_lacks_is_found` is
+its sabotage control, a planted quotation the book lacks found among ones it
+holds. The contribution guide says that changing a sentence a pin comment
+quotes means changing the comment too.
+
+The merged list's "Verify this" boxes of Nibli queries inside every derived
+chapter were not added: derived text stays jargon-free and already points to
+its runnable cases (item 63), so they need an author ruling if still wanted.
+The exact prose is `session-drafted, author-approved under delegated approval
+(2026-09-13)`.
+
+No rule, pin statement or expectation changes: a comparison with `HEAD` shows
+every statement, query, expectation and directive in the pin files identical
+and in order. Every chapter's pin file passes its focused run (partial), and
+`RIGHTS_VERIFY_JOBS=4 ./verify.sh` passes 90,187 pins across 16,353 cases with
+complete contradiction checks and no findings in 1,589.73s. The complete
+development run passed 152 of the 153 authoring tests, with five declared
+ignored; the one failure was a resolution receipt naming a Chapter 26 section
+that item 76 had moved to Chapter 28, rebound in a separate commit, after
+which the receipt, reference and claim-discipline tests pass. The companion's
+twenty input tests and five library tests pass, as do its formatting check,
+the prose check and `git diff --check`, and the new test code adds nothing to
+the root crate's existing formatting differences. The web build compiles for
+wasm32 and the static exporter renders 46 routes; the desktop build
+type-checks inside `ui/shell.nix`; and the browser suite, with its
+engine-reasoning matrix skipped (partial), passes and finds the glosses
+rendered for Nell's first move.
+
 ### Item 83 — the companion's front door, 2026-09-29
 
 The companion opened on "Pick a person. Walk their forks." without saying what

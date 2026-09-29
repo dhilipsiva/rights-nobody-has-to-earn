@@ -2,8 +2,7 @@
 #
 # KIND: CONTENT pin. Run:
 #   ./verify.sh --only book-1/05-when-there-is-genuinely-not-enough.pins.nibli
-#   ./verify.sh          # the real check — the line above cannot see
-#                        # the cross-file reconciliation or the prose guards
+#   ./verify.sh          # all substantive pins and contradiction checks
 #
 # The chapter's case lists three fixtures:
 #   tests/pins/records/child_with_nobody/fixture.nibli
@@ -39,8 +38,9 @@
 :expect-pins 80
 
 # ── The ordinary sequence, from the fixture ────────────────────────────────
-# "A physical shortage has to be established" — and when it is, the manager
-# administers it under published reasons and a challenge somebody must hear.
+# A reviewed finding of "a physical shortage, shown for this resource and these
+# people", which the manager administers under published reasons and a
+# challenge somebody must hear.
 ? authority(ScarcitySequenceManager, AdministerPhysicalScarcity, ScarcitySequenceAuthorization).
 # => TRUE
 
@@ -53,11 +53,13 @@
 ? obliged(ScarcityAuthorizationReader, HearScarcityChallengeAndCorrect, ScarcitySequenceAuthorization).
 # => TRUE
 
-# "What follows from a finding is bounded in the same way."
+# "Authority to allocate comes from a finding in force and ends with it."
 ? permits(ScarcitySequenceManager, AllocateUnderPhysicalScarcity, ScarcitySequenceRecord).
 # => TRUE
 
-# "Whatever is still unmet is recorded as failure."
+# "whatever a reduced ration leaves unmet is recorded as a shortfall": the
+# manager owes that record, it completes as a reviewed shortfall, and its
+# reader owes a check that it was recorded as failure.
 ? obliged(ScarcitySequenceManager, RecordEveryUnmetPortionAsFailure, ScarcitySequenceRecord).
 # => TRUE
 
@@ -67,7 +69,7 @@
 ? obliged(ScarcityUnmetReader, VerifyTheShortfallWasRecordedAsFailure, ScarcityUnmetRecord).
 # => TRUE
 
-# ── "not as a fact about the person who went without" ──────────────────────
+# ── "a finding about the provision alone" ──────────────────────────────────
 # The whole sequence is in the record and the person beside it is untouched.
 ? person(ScarcityClaimant).
 # => TRUE
@@ -78,6 +80,9 @@
 ? decide(ScarcityClaimant, Ballot).
 # => TRUE
 
+# Nothing adverse follows: no credibility finding, no loss of recognition and
+# no custody for the claimant, since "nothing adverse about the claimant
+# follows from it".
 ? false(ScarcityClaimant).
 # => FALSE
 
@@ -87,7 +92,7 @@
 ? prisoner(ScarcityClaimant).
 # => FALSE
 
-# ── "What may never decide it is written out" ──────────────────────────────
+# ── "The forbidden priority keys are explicit" ─────────────────────────────
 # Each name refused by name, in the chapter's own order.
 observe(ScarcityLexiconWriter, ScarcityLexiconRecord, Wealth, ForbiddenPriorityKeyScope).
 ? member(Wealth, ForbiddenPriorityKeyVocabulary).
@@ -155,9 +160,10 @@ observe(ScarcityLexiconWriter, ScarcityLexiconRecord, UnapprovedScarcityKind, Fo
 ? member(UnapprovedScarcityKind, ForbiddenPriorityKeyVocabulary).
 # => FALSE
 
-# ── "it runs on urgency, accessibility, imminent irreversible harm, harm from
-# broken continuity, and individual resource-specific benefit assessed after
-# accommodation" — the permitted keys are a closed list too.
+# ── The permitted keys: priority "must rest on urgency, accessibility,
+# imminent irreversible harm, harm from interrupted provision, and benefit
+# from the resource assessed after accommodation", a closed list too.
+# Urgency needs no probe entry: the ordinary sequence's allocation records it.
 ? member(Urgency, ScarcityMitigationKeyVocabulary).
 # => TRUE
 
@@ -177,7 +183,7 @@ observe(ScarcityLexiconWriter, ScarcityLexiconRecord, IndividualizedResourceSpec
 ? member(IndividualizedResourceSpecificBenefitAfterAccommodation, ScarcityMitigationKeyVocabulary).
 # => TRUE
 
-# ── "Almost everything that gets called a shortage is not one." ────────────
+# ── The kinds "named as false scarcity" ────────────────────────────────────
 observe(ScarcityLexiconWriter, ScarcityLexiconRecord, BudgetChoice, FalseScarcityKindScope).
 ? member(BudgetChoice, FalseScarcityKindVocabulary).
 # => TRUE
@@ -206,11 +212,12 @@ observe(ScarcityLexiconWriter, ScarcityLexiconRecord, RefusalToProcure, FalseSca
 ? member(RefusalToProcure, FalseScarcityKindVocabulary).
 # => TRUE
 
-# ── "A physical shortage has to be established" — one admissible ground. ───
+# ── "The one admissible ground is a physical shortage" ─────────────────────
+# The scarcity fixtures' findings record this ground: no probe entry needed.
 ? member(AuthenticatedResourceAndPopulationSpecificPhysicalShortage, ScarcityGroundVocabulary).
 # => TRUE
 
-# ── "Conflicts that are not about supply get the same treatment" ───────────
+# ── "Other conflicts have distinct grounds and review" ─────────────────────
 observe(ScarcityLexiconWriter, ScarcityLexiconRecord, PropertyVersusFloorOrCommons, ScarcityConflictKindScope).
 ? member(PropertyVersusFloorOrCommons, ScarcityConflictKindVocabulary).
 # => TRUE
@@ -235,7 +242,9 @@ observe(ScarcityLexiconWriter, ScarcityLexiconRecord, EmergencyActionVersusNonDe
 ? member(EmergencyActionVersusNonDerogableProtection, ScarcityConflictKindVocabulary).
 # => TRUE
 
-# ── "A request to review ... places a duty on the reader named in the record"
+# ── A request for review ───────────────────────────────────────────────────
+# "A request to review ... places a duty on the responding office named in the
+# record at once, before anyone grants the request."
 challenge(ScarcityChapterRequester, ScarcityChapterReader, ScarcityChapterRequest).
 authorized(ScarcityChapterReader, ScarcityChallengeReaderAuthority, ScarcityChapterRequest).
 observe(ScarcityChapterRequester, ScarcityChapterRequest, ScarcityChapterResource, ScarcityChallengeResourceScope).
@@ -253,8 +262,8 @@ observe(ScarcityChapterRequester, ScarcityChapterRequest, ScarcityChapterRequest
 ? obliged(ScarcityChapterReader, WeighTheClaimantsSubmittedEvidenceAgainstTheComparison, ScarcityChapterRequest).
 # => TRUE
 
-# "the duty moves only on a positive, independently certified finding that the
-# reader did not respond" — and no such record has been written here. The same
+# "The duty moves only on a positive, independently certified finding that the
+# office failed to respond" — and no such record is written here. The same
 # query reads TRUE once the certification is supplied
 # (scarcity/priority/request-and-certified-nonresponse).
 ? obliged(ScarcityChapterAlternate, ReviewScarcityRequestSecureTheMinimumAndEscalateCourtRemedy, ScarcityChapterRequest).
@@ -265,7 +274,8 @@ observe(ScarcityChapterRequester, ScarcityChapterRequest, ScarcityChapterRequest
 complete(ScarcityChapterRequest, ReviewedPhysicalScarcityFinding, ScarcityChapterResource).
 
 # ── The child with nobody ──────────────────────────────────────────────────
-# "nothing about the child moves" — with the whole sequence above in the record.
+# "The scarcity sequence leaves Nell's personhood and food debt intact, without
+# confinement."
 ? person(Nell).
 # => TRUE
 
@@ -278,7 +288,7 @@ complete(ScarcityChapterRequest, ReviewedPhysicalScarcityFinding, ScarcityChapte
 ? prisoner(Nell).
 # => FALSE
 
-# "What does not follow is a meal."
+# The food debt stands, but no meal received is recorded, so none follows.
 ? eats(Nell).
 # => FALSE
 
@@ -297,6 +307,11 @@ complete(ScarcityChapterRequest, ReviewedPhysicalScarcityFinding, ScarcityChapte
 # => TRUE
 ? complete(ScarcityWaitingShortfallRecord, ReviewedScarcityShortfall, IndivisibleEssentialPowerUnit).
 # => TRUE
+
+# Both claimants keep standing whichever way the unit went: "Both claimants
+# keep personhood, the debt of care and the adult ballot; a credibility
+# finding and confinement stay absent for both." No receipt of care is in
+# the record, so the rules conclude care received for neither.
 ? person(ScarcityWaitingClaimant).
 # => TRUE
 ? owe(State, Healthy, ScarcityWaitingClaimant).
@@ -321,6 +336,10 @@ complete(ScarcityChapterRequest, ReviewedPhysicalScarcityFinding, ScarcityChapte
 # => FALSE
 ? prisoner(ScarcityContinuityClaimant).
 # => FALSE
+
+# The comparison's own records match the chapter's account: "The manager's
+# stated decision is to continue the unit for this period", and the
+# shortfall record names the waiting claim.
 ? observe(ScarcityWorkedSource, ScarcityWorkedRecord, ContinueUnitForContinuityClaimDuringThisWindow, ScarcitySpecifiedAllocationScope).
 # => TRUE
 

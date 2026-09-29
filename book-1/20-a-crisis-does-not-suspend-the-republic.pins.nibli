@@ -43,20 +43,19 @@
 
 :expect-pins 17
 
-# ── "Start with a declaration that completed" ──────────────────────────────
+# ── "The requisition case begins with a complete declaration" ──────────────
 # A named hazard, a named affected population, published reasons and evidence,
 # its own current window, an authorisation no single body gave itself, and
 # immediate notification to the Assembly and the Constitutional Court.
 ? complete(PSMandateConflictdeclarationRecord, PSNonDerogatingEmergencyDeclaration, PSMandateConflictdeclarationSubject).
 # => TRUE
 
-# "On that declaration a requisition completed" — specified property necessary
-# for that hazard, with an inventory, a route to return or compensation, and a
-# real challenge.
+# "A separate record completes the requisition of specified property, with an
+# inventory, return or compensation and a challenge route."
 ? complete(PSMandateConflictrequisitionRecord, PSCompensatedRequisitionMeasure, PSMandateConflictrequisitionSubject).
 # => TRUE
 
-# ── "What does not move is the person." ───────────────────────────────────
+# ── The person named in the measure ────────────────────────────────────────
 # The declaration and the requisition both stand, and the person named in the
 # measure is a person, is owed the floor, and is not a prisoner.
 ? person(PSMandateConflictrequisitionSubject).
@@ -94,6 +93,8 @@ observe(ChapterTermEndAuditor, ChapterTermEnd, FSBOD_02, ExpiredTermChamberScope
 ? obliged(FSBOD_02, ActOnlyUnderExistingLawTheFloorOversightAndTheElectionWithoutAmendmentOrIrreversibleMeasure, ChapterTermEnd).
 # => TRUE
 
+# The reviewer records that the successor has met, and the permission to sit
+# ends: "the sitting chamber's permission ends when its successor meets".
 observe(ChapterTermEndAuditor, ChapterTermEnd, SuccessorChamberFirstMet, TermEndDispositionScope).
 ? permits(FSBOD_02, SitUnderCaretakerLimitsUntilTheSuccessorFirstMeets, ChapterTermEnd).
 # => FALSE
@@ -114,6 +115,8 @@ observe(ChapterTermEndAuditor, ChapterTermEnd, SuccessorChamberFirstMet, TermEnd
 ? travel(Nell).
 # => TRUE
 
+# No completed measure restricts Nell's movement and no custody holds Nell,
+# which is why free movement follows.
 ? restrain(Nell).
 # => FALSE
 

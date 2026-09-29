@@ -7,22 +7,24 @@
 #
 # Zed is introduced BY this pin file rather than living in the constitution:
 # the chapter needs someone the person-roster has never mentioned, and every
-# prisoner in the cast is also asserted as a person. That is itself the
-# chapter's closing point.
+# prisoner in the cast is also asserted as a person. Zed's sparse record
+# "isolates one rule": custody is the only root of standing it holds.
 
 # WHAT FALSE MEANS HERE — three kinds, and only one is a verdict. A FALSE on a
 # corpus name this KB never mentions is real but empty: nothing could have made
 # it TRUE. A non-corpus name is not a FALSE at all — the run aborts, pins not
 # trustworthy. And a well-formed query on an argument its relation never
 # carries is a vacuous green that passes forever. Article 0a closed the
-# ASSERTION side only — a widening fact now aborts the run instead of loading —
+# ASSERTION side only — a widening fact aborts the run rather than loading —
 # but a QUERY on an unmentioned name still answers a clean FALSE, so kind one
 # is untouched. Pin a FALSE only where the KB could have said TRUE, and say in
 # the comment what would flip it.
 
 :expect-pins 39
 
-# "Zed injured Ivo. A court judged Zed."
+# "Zed is convicted in a named case of injuring Ivo." These entries give the
+# custody authorisation in force: "independent witnesses agree on the person,
+# the court, the judgment, the injury, the source and the review period".
 injure(Zed, Ivo).
 judge(Court, Zed).
 cite(Court, Case_Zed, Zed).
@@ -49,9 +51,10 @@ endorses(Electorate, Case_Zed).
 endorses(TemporalReview, Case_Zed).
 
 
-# The original scenario now supplies qualified fictional merits, signed
-# harm findings, placement and intake. Its original missing/conflicting
-# temporal premises and every original query remain independently tested.
+# The rest of the case custody needs: "criminal proof of the injury,
+# adjudicated defences, disclosed evidence, counsel, a fair hearing and an
+# individually justified sentence", reviewed harm findings, "a reviewed
+# placement in a named supported residence" and challenge intake.
 list(Case_Zed, Zed, Incident_Case_Zed, CustodyMatter).
 list(Case_Zed, PublicInjuryOffence, Evidence_Case_Zed, CustodyOffenceEvidence).
 list(Case_Zed, Ivo, Prosecution, CustodyParties).
@@ -161,6 +164,8 @@ observe(CustodyIntake, Case_Zed, NoHolderPermissionNoRetaliationAndImmediateSusp
 observe(CustodyIntakeAudit, Case_Zed, NoHolderPermissionNoRetaliationAndImmediateSuspensionOnFiling, CustodyIntakeProtectionScope).
 
 
+# The injury entry written above is in the record. Custody needs far more
+# than that entry: "an injury and a general judgment would be too little".
 ? injure(Zed, Ivo).
 # => TRUE
 
@@ -168,17 +173,15 @@ observe(CustodyIntakeAudit, Case_Zed, NoHolderPermissionNoRetaliationAndImmediat
 ? prisoner(Zed).
 # => TRUE
 
-# "And Zed is a person, which follows from being a prisoner." — nobody wrote it
+# "From the case alone the rules conclude that Zed is a prisoner and
+# therefore a person" — no personhood entry for Zed is written.
 ? person(Zed).
 # => TRUE
 
-# "Convicted, unlisted, and owed everything." The sentence says OWED, and until
-# now this file only proved undelivered — a FALSE that guards the gap, not the
-# debt. The debt pins are what the sentence rests on — and "everything" is
-# enumerated, not sampled, because the omitted item is exactly where a
-# universal fails: chapter 3's own missing expresses pin once hid a false one.
-# This file executes Zed's T3 custody-to-person chain, every itemised debt, and
-# the exact opaque floor projection from that derived standing in one process.
+# "the State owes Zed every floor item": each debt is queried rather than
+# sampled, because a universal fails at the item left out. This file runs
+# Zed's T3 custody-to-person chain, every itemised debt, and the floor
+# entitlement from that derived standing in one process.
 ? owe(State, Eats, Zed).
 # => TRUE
 
@@ -206,15 +209,19 @@ observe(CustodyIntakeAudit, Case_Zed, NoHolderPermissionNoRetaliationAndImmediat
 ? owe(State, Meets, Zed).
 # => TRUE
 
-# (Owed, not delivered — the delivery gap is chapter 3's subject.)
+# (Owed, not delivered — evidence of delivery is Chapter 4's subject.)
 ? eats(Zed).
 # => FALSE
 
-# "Zed is still a prisoner" — conviction stands
+# "The conclusion that Zed may move freely is absent: movement is what the
+# sentence takes."
 ? travel(Zed).
 # => FALSE
 
 # The firewall, which the chapter shows depends on the personhood line:
+# each refused rule would confine a person whose record is silent about
+# belief, or about a meal. The engine will not load it, since custody would
+# then depend on its own consequence, and "that loop is what is refused".
 :refuse reasoning /'prisoner' -> 'believe'/
 all $x: person($x) & ~believe($x) -> prisoner($x).
 
@@ -227,24 +234,28 @@ all $x: person($x) & ~eats($x) -> prisoner($x).
 # query sits relative to the accepts stops mattering. Measured on this file: with
 # a plain `:accept` here, a `? prisoner(Quin).` added below answers TRUE — Quin
 # has no conviction, only no home — and with `:accept-scoped` the same query
-# answers FALSE. Keep the scoped form. `rights-floor.pins.nibli` records a real
-# vacuous green from the plain one: a `prisoner` query sat below this same
-# `~home` control and would have passed with Article 6 deleted outright.
+# answers FALSE. Keep the scoped form. The engine loads this rule; it is "a
+# check of the written rules" that rejects such a rule in the constitution.
 :accept-scoped
 all $x: person($x) & ~home($x) -> prisoner($x).
 
-# "the eight things are owed to persons" — Hano, convicted, keeps expression
+# Hano, convicted, stays owed expression, but the query asks for speech made:
+# the record holds no speech by Hano, so the rules conclude none.
 ? expresses(Hano).
 # => FALSE
 
-# ── THE SECOND DOOR. MUST STAY LAST: free(Nemo) is a ground fact and persists ─
-# "release has to return you to the roster ... a finding with no finder." One
-# write, a name the record has never held, and a person exists — never listed,
-# never judged, released from a sentence that never existed. Chapter 2's suite
-# pins this same door via Wraith as the route the evidence list already
-# contained; this file pins it as the route the corollary used to deny.
+# ── THE SECOND DOOR. free(Nemo) is a ground fact and persists; no later
+# section asks about Nemo ─────────────────────────────────────────────────────
+# "A release entry needs nobody to have found anything". One write, a name the
+# record has never held, and a person exists — never listed, never judged,
+# released from a sentence that never existed. Chapter 2's suite pins the same
+# door through Wraith as an entry the record may hold; this file pins it as a
+# root of standing beside custody.
 free(Nemo).
 
+# From that entry alone the rules conclude a person, owed food and free to
+# move, who is no prisoner: "a name that only a release entry mentions is a
+# person, owed food and free to move, with no custody case behind it."
 ? person(Nemo).
 # => TRUE
 
@@ -262,8 +273,9 @@ free(Nemo).
 # => TRUE
 
 # ── The child with nobody ──────────────────────────────────────────────────
-# The pair, run side by side. Custody derives for Zed and supports shelter
-# and expression; the child record supplies neither this route nor receipts yet.
+# The pair, run side by side. Custody holds Zed and not the child, yet each
+# query here answers FALSE: neither record holds a shelter receipt or speech,
+# so "the rules conclude shelter received and speech made for neither person".
 ? dwell(Zed).
 # => FALSE
 
@@ -276,7 +288,8 @@ free(Nemo).
 ? expresses(Nell).
 # => FALSE
 
-# "Both are owed both." The entitlement is identical on each side of that line.
+# "Zed and Nell are both owed shelter and expression", and "the debts are
+# identical".
 ? owe(State, Dwell, Zed).
 # => TRUE
 
@@ -298,16 +311,11 @@ free(Nemo).
 
 # ── THE SAME COMPARISON WITH EQUIVALENT EVIDENCE. MUST BE LAST: ground facts
 # persist ─────────────────────────────────────────────────────────────────────
-# Everything above compares two people holding different records, which makes
-# the asymmetry look like a fact about the people. It is a fact about the
-# records, and the way to show that is to supply the child the evidence the
-# design asks of anybody who is not confined.
-#
-# Note what each side actually rests on. Zed's shelter derives from being held:
-# no receipt names Zed, no witness attests anything to Zed, and no rule above
-# asked for either. The child's needs a receipt, an authorised witness for that
-# person, and a witness who is not the provider — three facts, none of which the
-# custody route requires.
+# Everything above compares two people whose records differ. Here the child
+# gets the evidence the receipt route asks of anybody: a receipt, a witness
+# authorised for Nell, and a witness who is not the provider. Custody supplies
+# none of these, which is why Zed's shelter stays unconcluded above:
+# "Witnessed delivery is independent of sentence authority."
 authorized(ChildWitness, DeliveryWitness, Nell).
 receives(Nell, ShelterForNell, ShelterProviderForNell).
 observe(ChildWitness, ShelterForNell, Nell, ShelterScope).
