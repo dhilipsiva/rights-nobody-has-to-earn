@@ -135,6 +135,40 @@ reinstate the retired tooling or workflow.
 Grouped by kind. Dates in each heading are the ratification dates; a ruling
 that was later implemented or narrowed carries that supersession inline.
 
+### Item 80 — Part V's pacing, and the book's length, 2026-09-29
+
+Part V's State joint surveyed five cases and synthesised least. It now keeps
+two, Kerala's People's Plan and Chile's Cybersyn, each told as what happened,
+what it shows and what it does not show, and spends the saved lines on one
+worked conflict between equal voice and continuity of rights: a majority large
+enough to amend votes to remove food from the floor, and the candidate fails
+because certification needs a positive review that it preserves the core, so
+the cost falls on those voters and the protection on everyone who may need
+food. The valuation joint's Owen passage keeps its one point, and the argument
+against a public acknowledgment of contribution shrinks to what the joint
+needs. Auroville's statutory framework, the WIR and Ostrom's commons leave Part
+V with their footnotes and their two claim bindings (179); their registry
+entries remain, and moving them to a history appendix would need a new ruling.
+Checking the Kerala sentence against its registry entry changed "local bodies"
+to "local communities", and the reviewed sentence "This proposal specifies a
+republic, not a community exempt from public law." is kept whole after the
+reference test caught its merger into a longer one.
+
+The ordered inputs total 96,949 words against 98,299 before item 73, so the
+revision made the book shorter, and the majority-derived margin, 7 words after
+item 79, is now 243 (48,596 derived against 48,353 argued or exempt). The works
+cited hold 162 works. The narrative-register decision records the item, and
+the exact prose is `session-drafted, author-approved under delegated approval
+(2026-09-13)`.
+
+No rule, pin or suite changes, so item 73's complete run on the same formal
+inputs stands. The coverage, reference, claim-discipline and articles
+development tests, the companion input tests, the nineteen book-builder tests,
+the prose check and the works-cited and index `--check` modes pass. The review
+copies rebuild: the PDF has 251 pages, its cover carries the subtitle and its
+back cover the promise, print shows no return arrow or web closing, and the
+EPUB passes EPUBCheck 5.3.0, run through nix, with no errors or warnings.
+
 ### Item 79 — back-matter mechanics, 2026-09-29
 
 Hand-checking the works cited found a real sort defect: four United Nations

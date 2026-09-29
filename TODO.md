@@ -224,7 +224,7 @@ unimplemented until the items named here land.
 
 ## Ordered revision backlog toward 9.5+
 
-Status 2026-09-29: items 01–65 and 67–79 are complete and recorded in
+Status 2026-09-29: items 01–65 and 67–80 are complete and recorded in
 `CLAUDE.md`; optional item 66 is closed without outside validation. The
 [2026-09-25 revision review](reviews/2026-09-25-revision-review.md) rates the
 revised manuscript 8/10 and publisher readiness 7.5/10: claim discipline holds
@@ -233,8 +233,7 @@ chapters (6, 13, 17, 27), cost-paragraph/argument restatement at chapter
 endings, and length for the D1 serious non-specialist reader. A fresh
 chapter-by-chapter pass (2026-09-29) concurs at ~7.1/10 average, weakest at
 Ch. 7 and Ch. 27. No remaining item is an error the pins contradict. Item
-80 is readability, pacing and evidenced-limits work inside rulings D1–D9;
-item 81 is optional; items 82–87, merged below, are companion, navigation and
+81 is optional; items 82–87, merged below, are companion, navigation and
 contribution work, and item 82 corrects a stale example. Chapter numbers refer
 to the [current reading sequence](book-1/contents.json).
 
@@ -291,7 +290,7 @@ Where each of its items went:
 
 | Merged list | Here |
 |---|---|
-| 1. Split Chapters 13, 27 and 29 | 73 and 75 (done), 80 |
+| 1. Split Chapters 13, 27 and 29 | 73, 75 and 80 (done) |
 | 2. An onboarding path in the companion | 83 |
 | 3. Bridge the prose and the formal language | 77 (done), 84 |
 | 4. Independent validation | 81, 85 |
@@ -303,29 +302,9 @@ Where each of its items went:
 | 10. A second-engine page | 85 |
 | 11. A known-defects page | 85 |
 | 12. How to contribute | 82 |
-| 13. Part V's historical cases | 80 |
+| 13. Part V's historical cases | 80 (done) |
 | 14. A book map in the companion | 83 |
 | 15. Forks and joints explained | 83 |
-
-### 80. Length and Part V pacing pass
-
-Why: 98,299 words is long for the D1 primary reader; Ch. 29's State survey
-and valuation historiography synthesize least.
-Do: cut Ch. 29 State survey to two cases (Kerala + one failure) and move
-saved lines to one worked continuity-vs-voice conflict; trim valuation
-Owen/badge passages to what the joint needs; hold main-text composition
-change, not growth. Measure with lint word counts; record with `--ratchet`
-only on improvement.
-Close when: Part V reads synthesis-first, total ordered-input words do not
-grow, lint `--check` passes, complete `./verify.sh`, then rebuild review
-PDF/EPUB and inspect covers.
-
-From the merged list: each case Part V keeps is told in a short paragraph —
-what happened, what it shows and what it does not show. A case whose lesson
-bears on one chapter's choice may move to that chapter's argument section,
-which D3 allows; the list's history appendix in the reference or the method
-would need a new ruling. Its target of about 350 lines gives way to this
-item's rule that total words do not grow.
 
 ### 81. Independent validation — OPTIONAL, needs new author decision
 

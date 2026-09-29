@@ -39,6 +39,21 @@ appear in a derived section, they remain evidence about other societies rather
 than a substitute for derived ordinary life, and no case gains an invented inner
 life.
 
+## Part V's pacing — item 80, 2026-09-29
+
+Part V's State joint surveyed five cases and synthesised least; it now keeps
+two, Kerala's People's Plan and Chile's Cybersyn, each told as what happened,
+what it shows and what it does not show, and spends the saved lines on one
+worked conflict between equal voice and continuity: a majority large enough
+to amend that votes to remove food from the floor is refused, because a
+candidate is certified only on a positive review that it preserves the core.
+The valuation joint's Owen passage keeps its one point, and its argument
+against a public acknowledgment of contribution shrinks to what the joint
+needs. Auroville's statutory framework, the WIR and Ostrom's commons leave
+Part V; their registry entries remain, and a history appendix for them would
+need a new ruling. The exact prose is `session-drafted, author-approved under
+delegated approval (2026-09-13)`.
+
 ## Chapter 30's first failure, surveyed — item 78, 2026-09-29
 
 Chapter 30 ranks the State's failure to perform at scale first while

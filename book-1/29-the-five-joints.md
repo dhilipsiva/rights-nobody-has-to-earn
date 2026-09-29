@@ -161,16 +161,16 @@ finding that restricts a single act, and separate claims for the environment,
 the commons and animals. The commitment beneath them is that a person's worth
 is never a quantity the constitution computes.
 
-History warns against both halves of the problem. Owen's New Harmony community
-began in 1825 and dissolved in 1827. His later labour exchanges sought a common
-measure in time, but the hours on their notes incorporated market valuations of
-labour and materials; calling a unit an hour removed no judgment about unlike
-products and tasks.[^owen] Justin Yifu Lin argues that Chinese collectives
-retained a right to withdraw until 1958, and that its removal undermined the
-agreement sustaining cooperation. He presents evidence consistent with that
-hypothesis rather than a settled account of the agricultural crisis. The
-constitutional question he raises is whether essentials may be used to make
-someone accept a judgment of their contribution.[^lin]
+History warns against both halves of the problem. After his New Harmony
+community dissolved, Owen's labour exchanges sought a common measure in time,
+but the hours on their notes built in market valuations of labour and
+materials; calling a unit an hour removed no judgment about unlike products and
+tasks.[^owen] Justin Yifu Lin argues that Chinese collectives retained a right
+to withdraw until 1958, and that its removal undermined the agreement
+sustaining cooperation. He presents evidence consistent with that hypothesis
+rather than a settled account of the agricultural crisis. The constitutional
+question he raises is whether essentials may be used to make someone accept a
+judgment of their contribution.[^lin]
 
 Pay above the floor is left to democratic law, and communities set it
 differently. MONDRAGON's industrial beginning dates to 1956; its 2024 annual
@@ -183,20 +183,14 @@ workers. The dates, populations and pay measures differ, so the two figures
 illustrate different distributions and measure no effect of cooperative
 governance.[^pay]
 
-I confer no constitutional status for contribution. People can honour care and
-creation through expression and association, and a public service can account
-for the acts it relies on. The strongest alternative is an acknowledgment with
-no legal consequence, which lets the public see a contribution while owing
-everyone the same minimum. But a badge acquires social meaning even when the
-rules never spend it, its absence can stigmatise someone whose work went
-unrecorded, and withdrawing it for one dishonest act would condemn unrelated
-teaching or care. Where a wage or supplement rests on false evidence, that
-claim has its own correction; a general register of esteem adds no remedy for
-the payer, the worker or a dependant. This choice gives up a common public
-acknowledgment and leaves neglected work exposed to social disregard, which
-labour rights, care duties and contestable compensation meet claim by claim.
-Evidence that a public acknowledgment met a concrete unmet need without
-becoming a status hierarchy would reopen it.
+I confer no constitutional status for contribution. The strongest alternative,
+an acknowledgment with no legal consequence, still acquires social meaning, can
+stigmatise work that went unrecorded, and would condemn unrelated teaching or
+care if withdrawn for one dishonest act; a wage or supplement resting on false
+evidence has its own correction. The choice leaves neglected work exposed to
+social disregard, met claim by claim by labour rights, care duties and
+contestable compensation, and evidence that a public acknowledgment met a
+concrete need without becoming a status hierarchy would reopen it.
 
 The joint's trade-off is between separateness and judgment. Keeping claims
 apart makes officials judge where a single score would calculate. A scarcity
@@ -383,24 +377,15 @@ help.
 
 The fifth joint is what kind of state carries the duties.
 This proposal specifies a republic, not a community exempt from public law.
-History offers no single answer about the state's role. Eden Medina's account
-of Chile's Cybersyn describes an economic coordination project using an
-existing telex network under Allende's government; the coup ended it, so its
-later performance is unknown.[^cybersyn] Auroville's governance sits inside a
-statutory framework: in *Auroville Foundation v. Natasha Storey* in 2025, the
-Supreme Court of India held the Governing Board entitled to constitute its
-development council without reserved places for the Residents' Assembly,
-distinguishing consultation on the master plan from authority to implement
-it.[^auroville] Switzerland's WIR, founded in 1934, is a complementary credit
-arrangement inside a national legal and monetary system, and its persistence
-identifies no single reason for the state's tolerance.[^wir] Kerala's People's
-Plan, launched in 1996, shows a state enabling local decisions: Franke's
-account describes devolution of a third or more of the development budget and
-training for more than 100,000 people, evidence of an organised programme
-rather than of what any one feature caused.[^kerala] Elinor Ostrom found that
-long-enduring commons shared rules fitted to local conditions, collective
-choice, monitoring and accessible conflict resolution, observed practices
-rather than guarantees.[^commons]
+History offers no single answer about the state's role. Two cases mark its
+range. Kerala's People's Plan, launched in 1996, devolved a third or more of
+the development budget to local communities and trained more than 100,000
+people, on Franke's account:[^kerala] it shows a state enabling local
+decisions, and not what any one feature caused. Eden Medina's account of
+Chile's Cybersyn describes an economic coordination project built on an
+existing telex network under Allende's government:[^cybersyn] it shows a state
+coordinating through what it already had, and nothing about how the project
+would have performed, because the coup ended it.
 
 The criteria for the state's institutions are equal political voice, the
 ability to decide and to replace a government, protection against concentrated
@@ -408,9 +393,17 @@ power, and continuity of the rights the state owes. The chapters argue each
 institution, and the pattern across them is how I resolve the conflicts between
 those criteria. Where continuity of rights meets another criterion, continuity
 wins: the core lies beyond amendment, a crisis suspends no right, and the floor
-takes priority over any fixed limit on borrowing. Even the ability to replace a
-government yields to continuity, since a government falls only when its
-successor is chosen. Where protection against concentration meets identifiable
+takes priority over any fixed limit on borrowing. Take a majority large enough
+to amend, two-thirds of the full Assembly and more votes for than against in a
+referendum, that votes to remove food from the floor to fund a popular
+programme. Equal voice favours it and continuity forbids the change: a
+candidate is certified only on a positive review that it preserves the core,
+and a candidate removing food fails that review, so the majority must fund its
+programme another way. The cost falls on those voters, whose choice the
+constitution refuses; the protection falls to everyone who may one day need
+food and could not win a vote for it. Even the ability to replace a government
+yields to continuity, since a government falls only when its successor is
+chosen. Where protection against concentration meets identifiable
 responsibility, protection wins: the executive is collective, the common
 government is divided among tiers, and reviewers come from divided sources.
 Equal voice gives way at one point: a territorial chamber, whose objection to
@@ -578,17 +571,7 @@ each failure.
     *Journal of Latin American Studies* 38(3), pp. 571–606 (2006),
     pp. 587, 592 and 606 for the existing telex network, its use and the ending.
 
-[^auroville]: Supreme Court of India,
-    [*Auroville Foundation v. Natasha Storey*](https://api.sci.gov.in/supremecourt/2024/13723/13723_2024_9_1502_60151_Judgement_17-Mar-2025.pdf),
-    Civil Appeal 13651 of 2024, judgment of 17 March 2025, especially
-    paragraphs 12–17, pp. 23–29: consultation on the master plan and the
-    Board's authority over implementation committees are distinct.
 
-[^wir]: Bank WIR's [institutional history](https://www.wir.ch/fr/banque-wir/a-propos-de-nous/histoire/);
-    James Stodder, [*Complementary Credit Networks and Macroeconomic
-    Stability: Switzerland's Wirtschaftsring*](https://doi.org/10.1016/j.jebo.2009.06.002)
-    *Journal of Economic Behavior & Organization* 72(1), pp. 79–95 (2009),
-    abstract, also [distributed through RePEc](https://ideas.repec.org/a/eee/jeborg/v72y2009i1p79-95.html).
 
 [^kerala]: Richard W. Franke,
     [*Local Planning: The Kerala Experiment*](https://msuweb.montclair.edu/~franker/KeralaExperiment.pdf)
@@ -596,8 +579,6 @@ each failure.
     pp. 3–4 for training. The training count concerns people trained, not
     total participants or a verified count of unpaid volunteers alone.
 
-[^commons]: Elinor Ostrom, [*Governing the Commons*](https://doi.org/10.1017/CBO9780511807763)
-    (1990), chapter 3.
 
 [^democracy-data]: V-Dem's [electoral-democracy index](https://ourworldindata.org/grapher/electoral-democracy-index)
     and [Regimes of the World](https://ourworldindata.org/grapher/political-regime),

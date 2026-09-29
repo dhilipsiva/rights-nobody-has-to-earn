@@ -517,7 +517,7 @@ optional method. A common term lists the chapters that use it most.
 
 ### B
 
-- ballot: 7, 12, 13, 14, 15, 18, 25, method
+- ballot: 7, 12, 13, 14, 15, 18, 25, 29
 - Bela: 3, 4, 9, 18, 24, 25, 28
 - belief: 1, 3, 4, 8, 25, method
 - bodily safety: opening, 1, 3, 4, 7, 21, 25, 27
@@ -530,7 +530,7 @@ optional method. A common term lists the chapters that use it most.
 - Cira: 9, 11, 14, 24
 - Civic President: 16, 17
 - common tier: 3, 4, 6, 10, 16, 17, 30
-- commons: 10, 12, 13, 17, 29
+- commons: 10, 12, 13, 17
 - company: 1, 3, 4, 8, 25, 28
 - compensation: 9, 10, 20, method
 - competence certificate: 9, method
@@ -569,7 +569,7 @@ optional method. A common term lists the chapters that use it most.
 - Faro: 23
 - first contact: opening, 1, 2, 6, 14, 25, 30
 - floor: 1, 3, 6, 9, 10, 25, 29, 30
-- food: 1, 3, 4, 5, 9, 13, 25, method
+- food: 1, 3, 4, 9, 13, 25, 29, method
 - free movement: 6, 7, 9, 15, 18, 24, 25, 27
 - future conditions: 3, 5, 12, 13
 - Future Conditions Guardian: 12, 13
@@ -625,7 +625,6 @@ optional method. A common term lists the chapters that use it most.
 ### O
 
 - Ori: 1
-- Ostrom, Elinor: 29
 
 ### P
 
@@ -649,7 +648,7 @@ optional method. A common term lists the chapters that use it most.
 - region: 3, 4, 6, 10, 17, 20
 - Regions Council: 16, 17, 20, 22
 - release: opening, 1, 19, 25, 26, 27, 28, 29
-- remedy: 6, 10, 11, 15, 17, 19, 21, 29
+- remedy: 6, 10, 11, 15, 17, 19, 21, 28
 - requisition: 20
 - residence: 15, 17, 18, 26
 - restoration: 9, 12, 13, 16, 20, 21, 24

@@ -57,7 +57,7 @@ fn argued_text(context: &Context) -> String {
 /// leans on it. One source may carry several figures — Tanzania's relocation
 /// count and Mondragon's headcount are not one claim each — so the rows are
 /// keyed by case, not by entry.
-const TRACED: [(&str, &str, &str); 181] = [
+const TRACED: [(&str, &str, &str); 179] = [
     (
         "the aftermath of a structural order, in Chapter 30",
         "grootboom-2020-unbuilt-house",
@@ -191,8 +191,6 @@ const TRACED: [(&str, &str, &str); 181] = [
         "100,000 people",
     ),
     ("Cybersyn", "medina-2011-cybersyn", "existing telex network"),
-    ("Auroville's governance", "auroville-governance", "Auroville"),
-    ("the Swiss WIR", "stodder-2009-wir", "1934"),
     (
         "Jharkhand card cancellations",
         "dreze-2017-cancelled-cards",
