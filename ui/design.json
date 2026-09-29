@@ -1,0 +1,219 @@
+{
+  "license": "CC-BY-4.0",
+  "title": "The design in ten minutes",
+  "note": "Every line below is a sentence of the constitution in plain language, as its article states it, with the article and the chapter that argues it.",
+  "sections": [
+    {
+      "heading": "Standing",
+      "groups": [
+        {
+          "lines": [
+            {
+              "text": "Every human being within the republic's jurisdiction or effective control is a person, and every person has standing in law.",
+              "article": 1,
+              "chapter": 1
+            },
+            {
+              "text": "Standing follows from any one of these: a recorded birth; a first contact recorded by whoever made it; presence within the jurisdiction; effective control by a public body; or a report, by anyone, that nobody is acting for the person.",
+              "article": 1,
+              "chapter": 1
+            },
+            {
+              "text": "No document, family, citizenship, registration or matched identity is required, and a temporary name imports nobody else's debts, guilt or relationships.",
+              "article": 1,
+              "chapter": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "The floor",
+      "groups": [
+        {
+          "lines": [
+            {
+              "text": "Every person is owed food, shelter, care, learning, bodily safety, material security, expression, belief and company.",
+              "article": 3,
+              "chapter": 3
+            },
+            {
+              "text": "Each is owed as a debt, by the public bodies Article 6 names, on personhood alone.",
+              "article": 3,
+              "chapter": 3
+            },
+            {
+              "text": "The State owes every person the floor.",
+              "article": 6,
+              "chapter": 6
+            },
+            {
+              "text": "Nothing makes the floor conditional: not work, wealth, citizenship, documents, conduct, contribution, compliance, a score, anyone's approval or a request.",
+              "article": 3,
+              "chapter": 3
+            },
+            {
+              "text": "Nobody may be confined, or subjected to any coercive measure, for lacking an item of the floor.",
+              "article": 3,
+              "chapter": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "The one thing taken",
+      "groups": [
+        {
+          "lines": [
+            {
+              "text": "A sentence takes movement and nothing else.",
+              "article": 28,
+              "chapter": 27
+            },
+            {
+              "text": "Confinement needs a properly made judgment of the offence under the criminal standard of proof, with defences, counsel, a hearing, reasons and review, bound to the person, the incident and the injured person, and a current, reviewed authority for that case.",
+              "article": 28,
+              "chapter": 27
+            },
+            {
+              "text": "A person confined remains a person, with standing, the whole floor, the vote and every right a sentence does not take.",
+              "article": 26,
+              "chapter": 25
+            },
+            {
+              "text": "No earned time, character assessment or score changes a sentence.",
+              "article": 28,
+              "chapter": 27
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Emergencies",
+      "groups": [
+        {
+          "lines": [
+            {
+              "text": "A declared emergency permits exactly four things: faster procedure, the redirection of resources, requisition with return or compensation, and restrictions aimed at the named hazard.",
+              "article": 20,
+              "chapter": 20
+            },
+            {
+              "text": "No emergency suspends a right, allows government by decree, prevents the Assembly from sitting, bypasses a court, postpones an election, extends a mandate, alters who may vote or lowers the floor.",
+              "article": 20,
+              "chapter": 20
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Changing the rules",
+      "groups": [
+        {
+          "lines": [
+            {
+              "text": "This constitution changes only by an exact text passed by two-thirds of the full People's Assembly and approved by more votes for than against in a national referendum, with no turnout threshold.",
+              "article": 23,
+              "chapter": 22
+            },
+            {
+              "text": "Beyond amendment lie universal standing, equal protection, the floor, due process, the core liberties, the protected commons, the direct protection of animals and the bans on severe avoidable suffering and dispensable killing, the absolute prohibitions on force, the bans on return to persecution or torture and on collective expulsion, prompt independent review of detention, the right to an effective remedy, and the continued existence and capacity to sit of the People's Assembly and the Constitutional Court.",
+              "article": 23,
+              "chapter": 22
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "The commitments beneath the choices",
+      "chapter": 29,
+      "note": "Each heading below quotes one of the five commitments that Part V says carry the rest, and the lines under it come from articles that apply it.",
+      "groups": [
+        {
+          "heading": "What is owed waits on nothing the person must earn.",
+          "lines": [
+            {
+              "text": "Every person may choose, refuse, leave and change work without losing any part of the floor.",
+              "article": 8,
+              "chapter": 9
+            },
+            {
+              "text": "The constitution confers no public status for contribution, and no record of work or teaching may rank a person's worth.",
+              "article": 8,
+              "chapter": 9
+            }
+          ]
+        },
+        {
+          "heading": "A fact reaches a person only by a route written for it.",
+          "lines": [
+            {
+              "text": "Confinement, public answerability, severity, a credibility finding and every other adverse conclusion may never be written directly.",
+              "article": 2,
+              "chapter": 2
+            },
+            {
+              "text": "Each exists only where it follows from recorded entries by the rules, so every adverse conclusion has an act behind it and a finder who can be named and challenged.",
+              "article": 2,
+              "chapter": 2
+            }
+          ]
+        },
+        {
+          "heading": "No party certifies its own case.",
+          "lines": [
+            {
+              "text": "That an item of the floor reached a person is shown only by a matching record of receipt attested by a witness authorised for that person and independent of whoever provided it.",
+              "article": 4,
+              "chapter": 4
+            },
+            {
+              "text": "A provider's own record of its own delivery proves nothing.",
+              "article": 4,
+              "chapter": 4
+            }
+          ]
+        },
+        {
+          "heading": "Power is current; answerability lasts.",
+          "lines": [
+            {
+              "text": "Every power needs its own positive, current record, tied to its source and its end, and lapses when that record does.",
+              "article": 15,
+              "chapter": 16
+            },
+            {
+              "text": "Answerability does not end with recall or with a credibility finding, so a person who exposed an official keeps the protection the exposure earned.",
+              "article": 15,
+              "chapter": 16
+            }
+          ]
+        },
+        {
+          "heading": "Silence decides nothing.",
+          "lines": [
+            {
+              "text": "An absent entry is silence.",
+              "article": 2,
+              "chapter": 2
+            },
+            {
+              "text": "A conclusion that restricts, takes, confines or finds against a person needs complete positive evidence, and the absence of an entry never creates or extends a power.",
+              "article": 31,
+              "chapter": 2
+            },
+            {
+              "text": "A duty whose responding office stays silent passes to a separate alternate.",
+              "article": 6,
+              "chapter": 6
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

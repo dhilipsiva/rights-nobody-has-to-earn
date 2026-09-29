@@ -411,5 +411,140 @@ class AssurancePages(unittest.TestCase):
             json.loads('{"cases": {"a": {}, "a": {}}}', object_pairs_hook=self.tool.unique_keys)
 
 
+def article_sentences(article):
+    """Each sentence of an article's clauses, as the article writes it."""
+    return [s for clause in article['text'] for s in re.split(r'(?<=[.?!])\s+(?=[A-Z])', clause)]
+
+
+def chapter_texts():
+    """Each chapter's text by number, emphasis removed and whitespace folded."""
+    manifest = json.loads((ROOT/'book-1/contents.json').read_text(encoding='utf-8'))
+    return {c['number']: ' '.join((ROOT/'book-1'/c['file']).read_text(encoding='utf-8').replace('*', '').split())
+            for part in manifest['parts'] for c in part['chapters'] if c.get('status') == 'landed'}
+
+
+def design_problems(design, articles, chapters):
+    """Every line of the design summary is a sentence of the article it cites
+    and cites a chapter that article names as arguing it; a section's own
+    headings are sentences of the chapter it cites; and it stays short."""
+    problems = []
+    words = len(design['title'].split()) + len(design['note'].split())
+    for section in design['sections']:
+        words += len(section['heading'].split()) + len(section.get('note', '').split())
+        source = chapters.get(section['chapter']) if 'chapter' in section else None
+        if 'chapter' in section and source is None:
+            problems.append(f"{section['heading']}: no Chapter {section['chapter']}")
+        for group in section['groups']:
+            heading = group.get('heading')
+            words += len((heading or '').split())
+            if heading and (source is None or heading not in source):
+                problems.append(f'{heading}: not a sentence of the chapter its section cites')
+            for line in group['lines']:
+                words += len(line['text'].split())
+                article = articles.get(line['article'])
+                if article is None:
+                    problems.append(f"{line['text']}: no Article {line['article']}")
+                    continue
+                if line['text'] not in article_sentences(article):
+                    problems.append(f"{line['text']}: not a sentence of Article {line['article']}")
+                if line['chapter'] not in article['chapters'] or line['chapter'] not in chapters:
+                    problems.append(f"{line['text']}: Chapter {line['chapter']} does not argue Article {line['article']}")
+    if words > 1000:
+        problems.append(f'{words} words, more than 1,000')
+    return problems
+
+
+# Each provision of the amendment source's closed corridor vocabulary, with the
+# words for it in Article 23 and in Chapter 22's list.
+CORRIDOR = {
+    'CorridorUniversalStanding': ('universal standing', 'universal standing'),
+    'CorridorEqualProtection': ('equal protection', 'equal protection'),
+    'CorridorMaterialFloor': ('the floor', 'the floor'),
+    'CorridorDueProcess': ('due process', 'due process'),
+    'CorridorCoreLiberties': ('core liberties', 'core liberties'),
+    'CorridorCommonsConstraints': ('the protected commons', 'the constraints protecting the commons'),
+    'CorridorCategoricalRefusalsOnForce': ('prohibitions on force', 'categorical refusals on the use of force'),
+    'CorridorNonRefoulementAndCollectiveExpulsionBan': ('persecution or torture and on collective expulsion',
+                                                        'persecution or torture and on collective expulsion'),
+    'CorridorPromptIndependentReviewOfDetention': ('prompt independent review of detention',
+                                                   'prompt independent review of detention'),
+    'CorridorEffectiveRemedy': ('effective remedy', 'a remedy that works'),
+    'CorridorAssemblyAndCourtCapacityToSit': ('capacity to sit', 'the Constitutional Court to sit'),
+    'CorridorAnimalProtectedSubjectStatus': ('direct protection of animals', 'direct protected-subject status'),
+    'CorridorSevereAvoidableAnimalSufferingProhibition': ('severe avoidable suffering', 'severe avoidable suffering'),
+    'CorridorDispensableAnimalKillingProhibition': ('dispensable killing', 'dispensable purposes'),
+}
+
+
+class DesignSummary(unittest.TestCase):
+    """The design in ten minutes quotes the articles rather than paraphrasing
+    them, so it cannot become a second account of the constitution."""
+
+    @classmethod
+    def setUpClass(cls):
+        cls.design = json.loads((UI/'design.json').read_text(encoding='utf-8'))
+        cls.articles = {a['number']: a for a in json.loads((UI/'articles.json').read_text(encoding='utf-8'))['articles']}
+        cls.chapters = chapter_texts()
+
+    def lines(self, design=None):
+        design = design or self.design
+        return [l for s in design['sections'] for g in s['groups'] for l in g['lines']]
+
+    def test_every_line_is_a_sentence_of_its_article_and_cites_a_chapter_that_argues_it(self):
+        self.assertEqual(design_problems(self.design, self.articles, self.chapters), [])
+
+    def test_sabotage_a_paraphrase_a_wrong_source_or_a_long_summary_is_found(self):
+        def planted(change):
+            design = json.loads(json.dumps(self.design))
+            change(design)
+            return design_problems(design, self.articles, self.chapters)
+        def paraphrase(d):
+            self.lines(d)[0]['text'] = 'Every person has standing.'
+        self.assertEqual(planted(paraphrase), ['Every person has standing.: not a sentence of Article 1'])
+        def wrong_article(d):
+            self.lines(d)[0]['article'] = 3
+        found = planted(wrong_article)
+        self.assertIn('not a sentence of Article 3', found[0])
+        self.assertIn('Chapter 1 does not argue Article 3', found[1])
+        def wrong_chapter(d):
+            self.lines(d)[0]['chapter'] = 27
+        self.assertIn('Chapter 27 does not argue Article 1', planted(wrong_chapter)[0])
+        def missing_article(d):
+            self.lines(d)[0]['article'] = 99
+        self.assertIn('no Article 99', planted(missing_article)[0])
+        def invented_commitment(d):
+            d['sections'][-1]['groups'][0]['heading'] = 'Nothing is owed to anyone.'
+        self.assertEqual(planted(invented_commitment),
+                         ['Nothing is owed to anyone.: not a sentence of the chapter its section cites'])
+        def too_long(d):
+            d['sections'][0]['groups'][0]['lines'] *= 30
+        self.assertIn('more than 1,000', planted(too_long)[-1])
+
+    def test_the_summary_covers_what_a_newcomer_needs(self):
+        text = ' '.join(l['text'] for l in self.lines())
+        cited = {l['article'] for l in self.lines()}
+        # Standing and its routes, the floor and who owes it, the one thing a
+        # sentence takes, the emergency powers, amendment and the protected core.
+        self.assertLessEqual({1, 3, 6, 20, 23, 28}, cited)
+        for item in ('food', 'shelter', 'care', 'learning', 'bodily safety', 'material security',
+                     'expression', 'belief', 'company'):
+            self.assertIn(item, text)
+        self.assertIn('on personhood alone', text)
+        self.assertIn('permits exactly four things', text)
+        commitments = [s for s in self.design['sections'] if s.get('chapter') == 29]
+        self.assertEqual(len(commitments), 1)
+        self.assertEqual(len(commitments[0]['groups']), 5)
+
+    def test_the_protected_core_is_chapter_22s_closed_list(self):
+        source = (ROOT/'book-1/source/constitution.nibli').read_text(encoding='utf-8')
+        vocabulary = set(re.findall(r'member\((Corridor\w+), AmendmentCorridorProvisionVocabulary\)', source))
+        self.assertEqual(vocabulary, set(CORRIDOR))
+        core = next(l['text'] for l in self.lines() if l['text'].startswith('Beyond amendment lie'))
+        chapter = self.chapters[22]
+        for name, (article_words, chapter_words) in CORRIDOR.items():
+            self.assertIn(article_words, core, name)
+            self.assertIn(chapter_words, chapter, name)
+
+
 if __name__ == '__main__':
     unittest.main()

@@ -49,6 +49,39 @@ fn companion_markdown(route: &str) -> String {
                 doc.explainer.fork, doc.explainer.joint
             );
         }
+        "design/" => {
+            let d = design();
+            text += &format!("{}\n\n", d.note);
+            for section in &d.sections {
+                text += &format!("## {}\n\n", section.heading);
+                if let Some(note) = &section.note {
+                    text += note;
+                    if let Some(number) = section.chapter {
+                        text += &format!(
+                            " Argued in [Chapter {number}]({ORIGIN}{}).",
+                            chapter(number).path
+                        );
+                    }
+                    text += "\n\n";
+                }
+                for group in &section.groups {
+                    if let Some(heading) = &group.heading {
+                        text += &format!("### {heading}\n\n");
+                    }
+                    for line in &group.lines {
+                        text += &format!(
+                            "- {} ([Article {}]({ORIGIN}{PREFIX}constitution/#article-{}); [Chapter {}]({ORIGIN}{}))\n",
+                            line.text,
+                            line.article,
+                            line.article,
+                            line.chapter,
+                            chapter(line.chapter).path
+                        );
+                    }
+                    text += "\n";
+                }
+            }
+        }
         "second-engine/" => {
             let e = &assurance().engine;
             let agreement = if e.differences == 0 {
@@ -238,6 +271,7 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
             "constitution/" => "The constitution Book 1 describes, as numbered plain-language articles traced to the rules and tests that implement them.",
             "cases/" => "Each chapter's cases, run on your own device against the pinned constitution, and where the material the chapters no longer carry now lives.",
             "start/" => "What the companion is, what a fork and a joint are, and a guided first run of Nell's fork checked against Chapter 1's tests.",
+            "design/" => "The whole design in under a thousand words: every line a sentence of the plain-language constitution, with the article that states it and the chapter that argues it.",
             "second-engine/" => "The constitution's rules replayed in a second engine, clingo: what the translation keeps, what the comparison leaves out, every case and where the cross-check stops.",
             "limits/" => "What the design and its checks leave open: the adversarial audit's open findings, the declared defects and each chapter's account of what it cannot settle.", _ => "This page does not exist in Book 1.",
         }.into());

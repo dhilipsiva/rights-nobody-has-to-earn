@@ -135,6 +135,65 @@ reinstate the retired tooling or workflow.
 Grouped by kind. Dates in each heading are the ratification dates; a ruling
 that was later implemented or narrowed carries that supersession inline.
 
+### Item 86 — the design in ten minutes, 2026-09-29
+
+A newcomer could not see the whole design without reading about 98,000 words.
+`ui/design.json` now holds *The design in ten minutes*: 27 lines in 724 words,
+headings included, in six sections — standing and the five routes into it; the
+nine floor items, owed as a debt on personhood alone, and the State that owes
+them; the one thing a sentence takes; the four things an emergency permits and
+what no emergency may do; amendment and the protected core; and the five
+commitments Chapter 29 says carry the rest. Every line is a sentence of one
+plain-language article, quoted rather than paraphrased, with that article and a
+chapter the article names as arguing it, so the summary cannot become a second
+account of the constitution; the last section's headings quote Chapter 29,
+which it cites. The companion publishes it at `design/` with a Markdown copy,
+linked from the home page's *Start here* panel and the start page, and the
+summary edition (`tools/build_book.py --summary`) opens with it before the
+Parts, each line linking its article further on; the edition's cover says so.
+The merged list's wording, which named only the bans on torture and collective
+expulsion, is not used, and the opening note keeps its length.
+
+Checking the protected core against Chapter 22's closed list and the amendment
+source's corridor vocabulary found Article 23 short of both: it named the ban on
+return to persecution without torture, and the continued existence of the
+People's Assembly and the Constitutional Court without their capacity to sit,
+where the source's provisions are
+`CorridorNonRefoulementAndCollectiveExpulsionBan` and
+`CorridorAssemblyAndCourtCapacityToSit` and Chapter 22 names both. The
+article now names return to persecution or torture and, in the ratified
+corridor's words, the continued existence and capacity to sit of the two bodies.
+
+Four companion input tests hold it: every line is a sentence of the article it
+cites and cites a chapter that article names, every commitment heading occurs in
+Chapter 29, and the whole stays within 1,000 words, with sabotage controls that
+plant a paraphrase, a wrong or missing article, a chapter that does not argue
+the article, an invented commitment and an overlong summary; the summary
+covers standing, the nine floor items owed on personhood alone, the one thing
+taken, the four emergency powers, amendment and the five commitments; and the
+protected core names each of the fourteen corridor provisions the source
+declares, as Chapter 22's list does. A library test checks that every article
+and chapter a line cites exists, and a book-builder test that the summary
+edition opens with the design before the first Part with every article link
+resolving. A fragment-only link now resolves inside its own document wherever
+the document was built, so the edition renders from a temporary directory in
+the tests; a link with a path is still held to the repository. The browser
+suite checks every line and its article link on the exported page and the
+home's link, and screenshots at 390 and 1,280 pixels were inspected, with no
+horizontal overflow. The exact prose is `session-drafted, author-approved under
+delegated approval (2026-09-13)`.
+
+No rule, pin or suite changes, so item 84's complete run on the same formal
+inputs stands. The companion's thirty input tests and eight library tests pass,
+as do its formatting check, the twenty book-builder tests, the twelve articles
+and reference-integrity development tests, the prose check and the assurance
+pages' `--check`. The web build compiles for wasm32 and the static exporter
+renders 49 routes; the desktop build type-checks inside `ui/shell.nix`; and the
+browser suite, with its engine-reasoning matrix skipped (partial), passes on
+all 49 routes. The summary edition rebuilds: its PDF has 18 pages with the
+design's sections bookmarked, and its EPUB passes EPUBCheck 5.3.0, run through
+nix, with no errors or warnings.
+
 ### Item 85 — checks and limits where a reader can find them, 2026-09-29
 
 The method lists every check and where it stops, and the second engine's

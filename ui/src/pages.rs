@@ -262,6 +262,7 @@ pub fn Start() -> Element {
         nav { class: "q-card pad", aria_label: "Where next",
             h2 { "Where next" }
             ul {
+                li { NavLink { to: format!("{PREFIX}design/"), "The design in ten minutes, in the articles' words" } }
                 li { NavLink { to: format!("{PREFIX}read/"), "The book map: every chapter with what it settles" } }
                 li { NavLink { to: format!("{PREFIX}cases/"), "Each chapter's cases, ready to run" } }
                 li { NavLink { to: format!("{PREFIX}constitution/"), "The constitution in numbered plain-language articles" } }
@@ -388,6 +389,48 @@ pub fn Limits() -> Element {
                     blockquote { for paragraph in chapter.paragraphs.iter() { p { "{paragraph}" } } }
                 } }
             }}
+        }
+    } }
+}
+#[component]
+pub fn Design() -> Element {
+    let doc = design();
+    rsx! { div { class: "container page design-page",
+        PageHeading { eyebrow: "the whole design", title: "{doc.title}",
+            p { "{doc.note}" }
+        }
+        for section in doc.sections.iter() {
+            section { class: "q-card pad", aria_label: "{section.heading}",
+                h2 { "{section.heading}" }
+                if let Some(note) = &section.note {
+                    p { "{note}" if let Some(number) = section.chapter { " Argued in " a { href: "{chapter(number).path}", "Chapter {number}" } "." } }
+                }
+                for group in section.groups.iter() {
+                    if let Some(heading) = &group.heading { h3 { class: "design-commitment", "{heading}" } }
+                    ul { class: "design-lines",
+                        for line in group.lines.iter() {{
+                            let chapter_path = chapter(line.chapter).path.clone();
+                            rsx! { li { "data-article": "{line.article}", "data-chapter": "{line.chapter}",
+                                span { "{line.text}" }
+                                " "
+                                span { class: "design-source",
+                                    a { href: "{PREFIX}constitution/#article-{line.article}", "Article {line.article}" }
+                                    " · "
+                                    a { href: "{chapter_path}", "Chapter {line.chapter}" }
+                                }
+                            } }
+                        }}
+                    }
+                }
+            }
+        }
+        nav { class: "q-card pad", aria_label: "Where next",
+            h2 { "Where next" }
+            ul {
+                li { NavLink { to: format!("{PREFIX}constitution/"), "Every article in full" } }
+                li { NavLink { to: format!("{PREFIX}read/"), "The book map" } }
+                li { NavLink { to: format!("{PREFIX}limits/"), "What the design and its checks leave open" } }
+            }
         }
     } }
 }

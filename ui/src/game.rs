@@ -292,7 +292,7 @@ pub fn Game() -> Element {
             div{class:"container game-body",
                 section{class:"q-card pad start-panel",aria_label:"Start here",h2{"Start here"}
                     for paragraph in start().panel.iter(){p{"{paragraph}"}}
-                    div{class:"actions",NavLink{to:format!("{PREFIX}start/"),"Take the guided first run →"}NavLink{to:format!("{PREFIX}read/"),"The book map →"}}
+                    div{class:"actions",NavLink{to:format!("{PREFIX}start/"),"Take the guided first run →"}NavLink{to:format!("{PREFIX}design/"),"The design in ten minutes →"}NavLink{to:format!("{PREFIX}read/"),"The book map →"}}
                 }
                 if !share().is_empty(){div{class:"share-link",label{r#for:"share-game","Shareable history · recipients check it by running it locally"}input{id:"share-game",readonly:true,value:"{share}",onclick:move |_|{let _=document::eval("document.getElementById('share-game')?.select()");}}}}
                 if !s.storage.is_empty(){p{class:"storage-notice",role:"status","{s.storage}"}}

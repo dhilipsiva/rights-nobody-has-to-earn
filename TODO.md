@@ -224,7 +224,7 @@ unimplemented until the items named here land.
 
 ## Ordered revision backlog toward 9.5+
 
-Status 2026-09-29: items 01–65, 67–80 and 82–85 are complete and recorded in
+Status 2026-09-29: items 01–65, 67–80 and 82–86 are complete and recorded in
 `CLAUDE.md`; optional item 66 is closed without outside validation. The
 [2026-09-25 revision review](reviews/2026-09-25-revision-review.md) rates the
 revised manuscript 8/10 and publisher readiness 7.5/10: claim discipline holds
@@ -233,9 +233,8 @@ chapters (6, 13, 17, 27), cost-paragraph/argument restatement at chapter
 endings, and length for the D1 serious non-specialist reader. A fresh
 chapter-by-chapter pass (2026-09-29) concurs at ~7.1/10 average, weakest at
 Ch. 7 and Ch. 27. No remaining item is an error the pins contradict. Item
-81 is optional; items 86 and 87, merged below, are companion and navigation
-work. Chapter numbers refer to the [current reading
-sequence](book-1/contents.json).
+81 is optional; item 87, merged below, is navigation work. Chapter numbers
+refer to the [current reading sequence](book-1/contents.json).
 
 ### The merged list, *From 8/10 to 9.5+*
 
@@ -295,7 +294,7 @@ Where each of its items went:
 | 3. Bridge the prose and the formal language | 77 and 84 (done) |
 | 4. Independent validation | 81, 85 (done) |
 | 5. Compress Chapters 17 and 22 | 73 and 77 (done) |
-| 6. The design in ten minutes | 86 |
+| 6. The design in ten minutes | 86 (done) |
 | 7. Pins a non-programmer can read | 77 and 84 (done) |
 | 8. What would change my mind | 87 |
 | 9. Costs and who bears them | 87 |
@@ -323,27 +322,6 @@ From the merged list: its second engine is built (item 50), and the method
 reports it as a cross-check within the project, so its request to build one
 is met. What it adds here is an outside reimplementation and a red team run by
 someone else, both already named above.
-
-### 86. The design in ten minutes
-
-Why: the opening states the promise, the thesis and the choices in outline,
-but a newcomer cannot see the whole design without reading about 98,000
-words. From the merged list's item 6.
-Do: a summary of at most 1,000 words whose every line comes from the
-plain-language article that states it and links that article and the chapter
-that argues it: the nine floor items owed on personhood alone, the routes into
-personhood, the one thing a sentence takes, the four emergency powers, the
-protected core as Chapter 22's closed list gives it, and Part V's five
-commitments. The list's draft named only "the bans on torture and collective
-expulsion", dropping the ban on sending anyone into persecution and the other
-categorical refusals on force, so its wording is not used. Publish it in the
-companion, linked from the home, and at the front of the summary edition
-(`tools/build_book.py --summary`). The opening note keeps its length, since D7
-allows at most five pages before Chapter 1, and the summary must not become a
-second free-hand paraphrase of the constitution.
-Close when: a companion input test ties every line to an article and a
-chapter that exist, with a sabotage control; the summary edition rebuilds with
-it; and a prose consistency review passes.
 
 ### 87. Reconsideration conditions and costs, collected
 

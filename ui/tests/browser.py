@@ -30,12 +30,12 @@ def main():
     content = json.loads((UI/'dist/rights-nobody-has-to-earn/content.json').read_text(encoding='utf-8'))
     cases = json.loads((UI/'generated/cases.json').read_text(encoding='utf-8'))['cases']
     expected = json.loads((UI/'tests/expectations.json').read_text(encoding='utf-8'))
-    routes = ['', 'start/', 'read/', 'search/', 'constitution/', 'cases/', 'second-engine/', 'limits/'] + [f'read/{Path(p["source"]).stem}/' for p in content['pages']]
+    routes = ['', 'start/', 'read/', 'search/', 'constitution/', 'cases/', 'second-engine/', 'limits/', 'design/'] + [f'read/{Path(p["source"]).stem}/' for p in content['pages']]
     manifest = json.loads((UI.parent/'book-1/contents.json').read_text(encoding='utf-8'))
     inputs = len(manifest['front']) + len(manifest['back']) + sum(
         (p.get('opener', {}).get('status') == 'landed') + sum(c['status'] == 'landed' for c in p['chapters'])
         for p in manifest['parts'])
-    assert len(content['pages']) == inputs and len(routes) == inputs + 8 and len(cases) == 91
+    assert len(content['pages']) == inputs and len(routes) == inputs + 9 and len(cases) == 91
     for path in ['game.json', 'cases.json']:
         def inspect(value):
             if isinstance(value, dict):
@@ -72,6 +72,12 @@ def main():
     assert limits_page.count('data-finding=') == len(assurance['limits']['findings']), 'an open finding is missing'
     assert limits_page.count('data-chapter=') == len(assurance['limits']['chapters']), 'a chapter limit is missing'
     assert 'id="declared-defects"' in limits_page and '/limits/' in home, 'the limits page or its navigation link is missing'
+    design = json.loads((UI/'design.json').read_text(encoding='utf-8'))
+    design_page = (UI/'dist/rights-nobody-has-to-earn/design/index.html').read_text(encoding='utf-8')
+    design_lines = [l for s in design['sections'] for g in s['groups'] for l in g['lines']]
+    assert design_page.count('data-article=') == len(design_lines), 'a line of the design summary is missing'
+    assert all(f'constitution/#article-{l["article"]}"' in design_page for l in design_lines), 'a design line lacks its article link'
+    assert '/design/' in home, 'the home does not link the design summary'
     report = {'routes':len(routes), 'reader_inputs':inputs, 'screens':[], 'engine':[], 'contrast':[]}
     errors = []
     with sync_playwright() as p:

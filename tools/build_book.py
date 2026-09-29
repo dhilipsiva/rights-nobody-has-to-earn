@@ -230,8 +230,9 @@ def resolve_link(href: str, source: Document, documents: list[Document], mode: s
         return href
     if parsed.query:
         raise ValueError(f"Local link queries are unsupported: {href}")
+    # A fragment alone points into the document itself, wherever it was built.
     path = (source.path.parent / unquote(parsed.path)).resolve() if parsed.path else source.path
-    if not path.is_relative_to(ROOT) or not path.is_file():
+    if parsed.path and (not path.is_relative_to(ROOT) or not path.is_file()):
         raise ValueError(f"{source.path}: missing local destination {href}")
     target = next((d for d in documents if d.path == path), None)
     if target:
@@ -374,8 +375,9 @@ def cover(sample: bool | str = False, chapters: tuple[int, ...] = SAMPLE_CHAPTER
         selection = (f'<p>{label} {listed}. Cross-references beyond this '
                      'selection open the public manuscript.</p>')
     if kind == "summary":
-        selection = ('<p>A summary edition: the constitution the book describes, as numbered '
-                     'articles in plain language. The book argues each choice.</p>')
+        selection = ('<p>A summary edition: the design in ten minutes, then the constitution '
+                     'the book describes as numbered articles in plain language. The book argues '
+                     'each choice.</p>')
     return f'''<header class="cover"><h1>{TITLE}</h1>
 <p class="subtitle">{SUBTITLE}</p>
 <p>{AUTHOR}</p><p class="edition-status">{status}</p>{selection}
@@ -400,13 +402,38 @@ against the strongest alternatives.</p>
 dhilipsiva.dev{UI_PREFIX}.</p></section>'''
 
 
+def design_markdown(articles: list[dict]) -> list[str]:
+    """The design in ten minutes, from `ui/design.json`: each line a sentence of
+    an article, linked to that article further on in the edition."""
+    doc = json.loads((ROOT / "ui" / "design.json").read_text(encoding="utf-8"))
+    titles = {a["number"]: a["title"] for a in articles}
+    lines = [f"## {doc['title']}", "", doc["note"], ""]
+    for section in doc["sections"]:
+        lines += [f"### {section['heading']}", ""]
+        if section.get("note"):
+            argued = f" Argued in Chapter {section['chapter']}." if section.get("chapter") else ""
+            lines += [section["note"] + argued, ""]
+        for group in section["groups"]:
+            if group.get("heading"):
+                lines += [f"#### {group['heading']}", ""]
+            for line in group["lines"]:
+                fragment = slug(f"Article {line['article']}. {titles[line['article']]}")
+                lines.append(f"- {line['text']} ([Article {line['article']}](#{fragment}); "
+                             f"Chapter {line['chapter']})")
+            lines.append("")
+    return lines
+
+
 def summary_markdown() -> str:
-    """The plain-language summary edition, from the companion's numbered articles."""
+    """The plain-language summary edition, from the companion's numbered articles,
+    opening with the design in ten minutes."""
     doc = json.loads((ROOT / "ui" / "articles.json").read_text(encoding="utf-8"))
     lines = [f"# {doc['title'][0].upper()}{doc['title'][1:]}", "", f"*{PROMISE}*", "", doc["note"], "",
-             "This edition gives the articles alone. The book, *The Rights Nobody Has to Earn*, "
-             "follows each rule through cases and argues it against the strongest alternative; "
-             "the chapters named under each article are where.", ""]
+             "This edition gives the articles alone, opening with the design in ten minutes: "
+             "sentences of the articles gathered into one short account. The book, *The Rights "
+             "Nobody Has to Earn*, follows each rule through cases and argues it against the "
+             "strongest alternative; the chapters named under each article are where.", ""]
+    lines += design_markdown(doc["articles"])
     for index, part in enumerate(doc["parts"], 1):
         lines += [f"## {part}", ""]
         for article in (a for a in doc["articles"] if a["part"] == index):

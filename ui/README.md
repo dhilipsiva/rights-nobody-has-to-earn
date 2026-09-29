@@ -33,8 +33,8 @@ The unrelated root page in the preview server is a resource-isolation fixture.
 The build exports reader text, prepares complete executable records, compiles
 all constitutional statements using the pinned engine, and packages the reader
 and engine as separate Wasm modules. It exports an HTML route for every reading
-input and for the game, start, contents, search, constitution, cases, second-engine
-and limits pages, their
+input and for the game, start, contents, search, constitution, cases, second-engine,
+limits and design pages, their
 Markdown counterparts, structured reading data
 and the redirect manifest. Compilation supplies inputs, never displayed
 answers. There is no result-reuse build mode.
@@ -49,6 +49,16 @@ Constitute Project and what it adds. The reader publishes them at
 `constitution/`, and the chapters' argument sections cite them by number. The
 repository's `articles_tests` development tests check the map against the
 formal source in both directions and resolve every citation.
+
+`design.json` holds *The design in ten minutes*, published at `design/`,
+linked from the home page's *Start here* panel and printed at the front of the
+summary edition (`tools/build_book.py --summary`). Every line is a sentence of
+one article, quoted rather than paraphrased, with that article and a chapter
+the article names as arguing it; the last section's headings quote the five
+commitments Chapter 29 states. `tests/test_inputs.py` checks each line against
+its article and chapter, each heading against Chapter 29, the whole against
+1,000 words and the protected core against Chapter 22's closed list and the
+amendment source's vocabulary, with sabotage controls.
 
 `chapter-cases.json` lists, chapter by chapter, what the chapters no longer
 carry in their prose and where it now lives, with its explanation. The reader

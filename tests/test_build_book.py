@@ -261,8 +261,8 @@ class SummaryEditionTests(unittest.TestCase):
             source = Path(directory) / "constitution-in-plain-language.md"
             source.write_text(book.summary_markdown(), encoding="utf-8")
             doc = book.document(source)
-            numbers = [int(re.match(r"Article (\d+)\.", "".join(h.itertext())).group(1))
-                       for h in doc.tree.iter("h3")]
+            numbers = [int(match.group(1)) for h in doc.tree.iter("h3")
+                       if (match := re.match(r"Article (\d+)\.", "".join(h.itertext())))]
             self.assertEqual(numbers, [a["number"] for a in articles])
             text = "".join(doc.tree.itertext())
             self.assertIn(book.PROMISE, text)
@@ -280,6 +280,29 @@ class SummaryEditionTests(unittest.TestCase):
                 spine = [node.get("idref") for node in package.findall("p:spine/p:itemref", ns)]
                 self.assertEqual(spine, ["cover", f"doc-{doc.stem}", "back-cover"])
             self.assertIn("plain language", book.cover("summary"))
+
+    def test_summary_edition_opens_with_the_design_in_ten_minutes(self):
+        import json
+        design = json.loads((book.ROOT / "ui" / "design.json").read_text(encoding="utf-8"))
+        parts = json.loads((book.ROOT / "ui" / "articles.json").read_text(encoding="utf-8"))["parts"]
+        markdown = book.summary_markdown()
+        self.assertLess(markdown.index(f"## {design['title']}\n"), markdown.index(f"## {parts[0]}\n"))
+        lines = [line for section in design["sections"] for group in section["groups"]
+                 for line in group["lines"]]
+        for line in lines:
+            self.assertIn(f"- {line['text']} ([Article {line['article']}](#", markdown)
+        with tempfile.TemporaryDirectory() as directory:
+            source = Path(directory) / "constitution-in-plain-language.md"
+            source.write_text(markdown, encoding="utf-8")
+            doc = book.document(source)
+            # Rendering resolves every local link and refuses a missing fragment.
+            rendered = book.html_document([doc], (book.ASSETS / "book.css").read_text(), "summary")
+        design_html = rendered.split(f">{design['title']}</h2>", 1)[1].split(f">{parts[0]}</h2>", 1)[0]
+        links = re.findall(r'href="#([^"]+)"', design_html)
+        self.assertEqual(len(links), len(lines))
+        ids = set(re.findall(r' id="([^"]+)"', rendered))
+        self.assertEqual(set(links) - ids, set())
+        self.assertIn("the design in ten minutes", book.cover("summary"))
 
 
 class UiExportTests(unittest.TestCase):

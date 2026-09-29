@@ -177,6 +177,7 @@ pub fn App() -> Element {
                 else if path == format!("{PREFIX}start/") { pages::Start {} }
                 else if path == format!("{PREFIX}second-engine/") { pages::SecondEngine {} }
                 else if path == format!("{PREFIX}limits/") { pages::Limits {} }
+                else if path == format!("{PREFIX}design/") { pages::Design {} }
                 else if let Some(page) = book().pages.iter().find(|p| p.path == path) { pages::Reader { key: "{page.stem}", page: page.clone() } }
                 else { div { class: "container page", PageHeading { eyebrow: "404", title: "Page not found", p { "This address does not identify a page in Book 1." } } NavLink { to: format!("{PREFIX}read/"), "Browse the contents →" } } }
             }
