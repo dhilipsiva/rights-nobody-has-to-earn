@@ -100,22 +100,14 @@ means, duration and reporting. From this case the rules conclude the
 structure's duty to remain within those limits and the force authorisation's
 specified restraint and loss.
 
-Defence stays under civilian command, Assembly limits on size and armament,
-ordinary appropriation and full independent audit. Public coercive power
-belongs to public bodies alone, and a private force or an outside funding route
-is barred from acquiring it. Force abroad needs actual Assembly authorisation,
-except the immediate response strictly necessary against an actual attack
-before the Assembly can act. That response must be submitted for ratification
-at its first opportunity. A predeclared alternate or substitute reviewer keeps
-the same limits while that opportunity is still ahead. Once it passes,
-continuing force needs actual Assembly authorisation, and the
-immediate-response exception is spent. Treating a cyber attack as an armed
-attack requires independently assessable evidence of its attribution and
-equivalence, and the response it then allows is the one any armed attack
-allows. Credible evidence that transferred arms are being misused requires the
-transfer to be suspended. The
-recruitment or use of children in hostilities is prohibited. Civilian
-protection, humanitarian care and access apply in every condition.
+Public coercive power belongs to public bodies alone, and a private force or an
+outside funding route is barred from acquiring it. Force abroad needs actual
+Assembly authorisation, except the immediate response strictly necessary
+against an actual attack before the Assembly can act, which must be submitted
+for ratification at its first opportunity; once that opportunity passes,
+continuing force needs actual Assembly authorisation. Civilian protection,
+humanitarian care and access apply in every condition, and the recruitment or
+use of children in hostilities is prohibited.
 
 ## When coercive power passes to a private force
 
@@ -131,30 +123,19 @@ home or stops payment to a contractor.
 
 ## Treaties, trade and a region's exit
 
-The force case concerns one kind of external action, and its authority reaches
-that action alone: treaties, trade and a change of constitutional borders each
-follow their own authority.
-
-Treaty negotiation belongs to the executive; ratification belongs to the
-Assembly, with the Regions Council and each directly affected region's
-consent where a protected competence or boundary is touched. Withdrawal takes
-the same route, and provisional application waits for ratification.
-Ratifiers, reviewers and courts must examine actual effects against the
-constitutional limits. Nothing in this constitutional record independently
-shows what a treaty will do; that judgment remains the ratifiers', reviewers'
-and courts' responsibility. Whatever public power is barred from imposing at
-home stays barred when routed through trade, sanctions, investment,
-procurement, contractors, affiliates, flags or arbitration forums.
-
-These are enumerated common competences, bounded by their list; calling a
-matter security or foreign affairs adds nothing to them. Regional and local
-functions, residual competences and stronger compatible protections remain.
+Treaties, trade and a change of constitutional borders each follow their own
+authority. The executive negotiates a treaty and the Assembly ratifies it, with
+the Regions Council's and each directly affected region's consent where a
+protected competence or boundary is touched, and provisional application waits
+for ratification. Ratifiers, reviewers and courts must examine a treaty's actual
+effects against the constitutional limits, a judgment that remains theirs.
+Whatever public power is barred from imposing at home stays barred when routed
+through trade, sanctions, investment, procurement, contractors, affiliates,
+flags or arbitration forums.
 
 A region leaves only by the lawful exit route set out in *How Public Power Is
-Built* (Chapter 17), whatever recognition it gains abroad, with the rights and
-consent that route requires and no force or economic pressure against it.
-Other states' cooperation and readmission lie beyond what this constitution can
-produce.
+Built* (Chapter 17), whatever recognition it gains abroad. Other states'
+cooperation and readmission lie beyond what this constitution can produce.
 
 ## What this cannot settle
 

@@ -739,60 +739,16 @@
     {
       "id": "06-10",
       "chapter": "book-1/06-who-owes-and-what-follows.md",
-      "section": "Economic wrongs, one route at a time",
+      "section": "The same chain in other domains",
       "domain": "Economy, property, work and commons",
       "family": "ECONOMIC-CONSTITUTION",
       "function": "both",
-      "setting": "a wage denial, an eviction, an unlawful licence",
+      "setting": "a wage denial, an unanswered review, unlawful force and an animal needing care, each with its own remedy",
       "trajectory": "continuity-remedy",
       "basis": "book-1/06-who-owes-and-what-follows.pins.nibli",
       "pattern": "constructive",
       "postures": [
-        "works"
-      ]
-    },
-    {
-      "id": "06-12",
-      "chapter": "book-1/06-who-owes-and-what-follows.md",
-      "section": "A way in that does not need the operator's permission",
-      "domain": "Justice and coercion",
-      "family": "NON-CARCERAL-JUSTICE",
-      "function": "both",
-      "setting": "a request to review that the operator did not authorise",
-      "trajectory": "works",
-      "basis": "book-1/06-who-owes-and-what-follows.pins.nibli",
-      "pattern": "coercive",
-      "postures": [
-        "challenges"
-      ]
-    },
-    {
-      "id": "06-13",
-      "chapter": "book-1/06-who-owes-and-what-follows.md",
-      "section": "When the actor is a protective power",
-      "domain": "Public safety, policing and use of force",
-      "family": "PUBLIC-SAFETY",
-      "function": "continuity",
-      "setting": "unlawful force, and a record that was never written",
-      "trajectory": "fails",
-      "basis": "book-1/06-who-owes-and-what-follows.pins.nibli",
-      "pattern": "coercive",
-      "postures": [
-        "is acted upon"
-      ]
-    },
-    {
-      "id": "06-14",
-      "chapter": "book-1/06-who-owes-and-what-follows.md",
-      "section": "When the finding is about conditions or an animal",
-      "domain": "Ecology, future generations and commons",
-      "family": "ECOLOGICAL-ANIMAL",
-      "function": "continuity",
-      "setting": "a defective ecological record and an animal needing care",
-      "trajectory": "continuity-remedy",
-      "basis": "book-1/06-who-owes-and-what-follows.pins.nibli",
-      "pattern": "constructive",
-      "postures": [
+        "works",
         "challenges"
       ]
     },
@@ -1494,7 +1450,7 @@
       "domain": "Economy, property, work and commons",
       "family": "ECONOMIC-CONSTITUTION",
       "function": "ordinary",
-      "setting": "taxation, appropriation, borrowing under a legislative source",
+      "setting": "a person who owes tax keeps the floor; taxation and borrowing each need a legislative source",
       "trajectory": "works",
       "basis": "book-1/10-what-money-cannot-buy.pins.nibli",
       "pattern": "constructive",
@@ -1509,27 +1465,12 @@
       "domain": "Economy, property, work and commons",
       "family": "ECONOMIC-CONSTITUTION",
       "function": "ordinary",
-      "setting": "the backbone with a non-digital route; the bounded monetary office",
+      "setting": "a person without a device keeps access to money; credit decisions with reasons and a challenge",
       "trajectory": "works",
       "basis": "book-1/10-what-money-cannot-buy.pins.nibli",
       "pattern": "constructive",
       "postures": [
         "receives"
-      ]
-    },
-    {
-      "id": "10-06",
-      "chapter": "book-1/10-what-money-cannot-buy.md",
-      "section": "Which tier decides",
-      "domain": "Economy, property, work and commons",
-      "family": "ECONOMIC-CONSTITUTION",
-      "function": "ordinary",
-      "setting": "the common tier's short list and the regional residue",
-      "trajectory": "works",
-      "basis": "book-1/10-what-money-cannot-buy.pins.nibli",
-      "pattern": "constructive",
-      "postures": [
-        "governs"
       ]
     },
     {

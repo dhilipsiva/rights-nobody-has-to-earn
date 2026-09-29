@@ -188,112 +188,56 @@ care leave the holding as unauthorised as before.
 
 ## Protection is not punishment
 
-The Hano sequence follows a sentence. Protective restrictions need another
-route, and a conviction, present or absent, settles nothing about their
-authority.
+An arrest before any trial rests on an authority of its own, and a
+conviction, present or absent, settles nothing about it. Arrest, pre-trial
+detention, search, seizure, quarantine, exclusion, border holding and
+pre-expulsion detention each restrict liberty on a separate route. Each stays
+outside punishment, severity, placement and recognition, and a risk or
+dangerousness score is barred as its basis.
 
-Movement is the one direct punishment, and liberty can still be restricted in
-other ways, each on its own terms. Arrest, pre-trial detention, search and
-seizure have separate requirements. Each needs an individual recorded ground,
-an identified actor, reasons, accessible assistance, independent authorisation
-and review. Search normally requires prior independent authority. Its
-immediate-danger exception is narrow, must be reported, and keeps the same
-accountability. Detention receives prompt, automatic judicial review, which
-comes to the detained person unasked.
+| Measure | What it needs |
+|---|---|
+| Arrest, pre-trial detention, search or seizure | An individual recorded ground, an identified actor, reasons, accessible assistance, independent authorisation and review; for a search, prior independent authority, save a narrow immediate-danger exception that must be reported; for detention, prompt, automatic judicial review that comes to the detained person unasked |
+| Immigration detention | For a child, it is prohibited; for an adult, individual necessity, judicial authority, a maximum, independent review and a real alternative shown insufficient |
+| Expulsion or transfer abroad | The asylum, individual-decision, suspensive-appeal and non-refoulement safeguards set out in *Arriving and Belonging* (Chapter 15), each shown by a record of its own whatever label the measure bears |
+| Force | Strict necessity, the least harmful means reasonably available, the minimum sufficient intervention, warning where feasible, cessation when necessity ends and aid afterwards; lethal force only where strictly unavoidable to protect life |
+| Intelligence gathering | Individualised prior judicial authority, the least intrusive means that would work, a defined scope and duration, fresh authorisation on renewal, minimised retention and notification once it can be given; bulk or suspicionless collection is prohibited |
 
-Quarantine, exclusion, border holding and pre-expulsion detention are separate
-from conviction. Each stays outside punishment, severity, placement and
-recognition, and a risk or dangerousness score is barred as their basis.
-Immigration detention of a child is prohibited. An adult's immigration
-detention needs individual necessity, judicial authority, a maximum,
-independent review and a real alternative shown insufficient. Expulsion and
-international transfer must also satisfy the actual asylum,
-individual-decision, suspensive-appeal and non-refoulement safeguards described
-in *Arriving and Belonging* (Chapter 15). Those safeguards are met by records
-of their own, whatever label the measure bears.
-
-The floor limits every coercive instrument: lacking bodily safety, material
-security, food, shelter, care, learning, speech, belief or company is never a
-ground for authorising one. Each instrument follows the endpoint rule that
-governs custody: the order may be read for review and protection, and the
-capability it restricts is an endpoint that no rule may read. A movement
-restriction must affect the movement conclusion, and the lost movement is then
-a reason for nothing further.
+Secret evidence is never sole or decisive, and a risk, threat, loyalty or
+watchlist product stays out of the record that reaches a person's rights, as
+*What May Be Kept About You* (Chapter 19) sets out. The floor limits every
+coercive instrument: lacking bodily safety, material security, food, shelter,
+care, learning, speech, belief or company is never a ground for authorising
+one. Each instrument follows the endpoint rule that governs custody: the order
+may be read for review and protection, and the capability it restricts is a
+reason for nothing further.
 
 ## The actor who uses force must answer
 
-Policing, prosecution, adjudication, custodial execution, external defence
-and security intelligence are separate public functions, each with its own
-mandate rather than a share of one security authority. Serving defence and
-intelligence personnel are barred from political, judicial and oversight
-seats. A fused force stays barred under any secondment, shared command or
-reserve label. Civilians stay outside military jurisdiction. Individually
-authorised unarmed civil assistance is assistance only, without powers of
-arrest, search, detention, interrogation, crowd control or surveillance.
-Defence, counsel and survivor protection remain independent parts of the
-justice system.
-
+Policing, prosecution, adjudication, custodial execution, external defence and
+security intelligence are separate public functions, each with its own mandate.
 Ordinary policing is assistance, information, mediation and protection against
-harm; a general power to enforce order as such is refused. Help comes free of
-conditions on someone's immigration, floor, care, learning or collective
-status. Secret law, secret courts and secret detention sites are prohibited,
-and every rule of engagement is open to a court. A narrowly classified budget
-annex remains fully open to independent oversight.
+harm; a general power to enforce order as such is refused, and help comes free
+of conditions on someone's immigration, floor, care, learning or collective
+status. Secret law, secret courts and secret detention sites are prohibited.
 
-### Necessity and the acts that remain forbidden
-
-Force requires strict necessity, the least harmful means reasonably available,
-the minimum sufficient intervention, proportionate means, warning where
-feasible, cessation when necessity ends, and aid afterwards. The public actor
-bears the burden of lawfulness. Lethal force is permitted only where strictly
-unavoidable to protect life. A death, serious injury, torture or disappearance
-requires investigation by a body other than the deploying one, with independent
-access, evidence preservation, family participation and public findings that
-respect privacy. Orders from above are no defence, and command responsibility
-survives any organisation chart.
+The public actor bears the burden of showing that force was lawful. A death,
+serious injury, torture or disappearance requires investigation by a body other
+than the deploying one, and orders from above are no defence. A protective
+member must refuse a manifestly unlawful order, and the refusal is protected.
+Objection to an armed or lethal role is unconditional, with no tribunal testing
+its sincerity, and any civilian alternative must be genuinely equivalent and
+non-punitive.
 
 Some acts have no lawful version: torture and cruel treatment, disappearance
 and secret detention, arbitrary killing, collective punishment, indefinite
 detention without charge or review, coerced confession, human shields, attacks
 on people not taking part in hostilities, starvation or floor denial as a
 weapon, experimentation without consent, indiscriminate or superfluously
-injurious weapons, autonomous human targeting without meaningful human
-control, and aggressive war. The prohibition holds in emergency and under
-foreign cooperation alike. The core abuse stays answerable and its remedy
-stays owed, whatever immunity, amnesty, lapse of time or pardon intervenes.
-
-### Information and independent disclosure
-
-Intelligence requires individualised prior judicial authority, the least
-intrusive means that would work, a defined scope and duration, fresh
-authorisation on renewal, minimised retention and notification once it can be
-given without defeating the lawful purpose. Retaining data about people never
-individually suspected is prohibited. The republic may obtain by purchase,
-partnership or foreign exchange only what it could lawfully collect itself.
-Bulk or suspicionless collection is prohibited, and every authorisation becomes
-disclosable in time. Secret evidence is never sole or decisive, and where the
-required disclosure is impossible the consequence falls away. Risk, threat,
-loyalty, dangerousness, clearance and watchlist products stay out of the
-consequential person record, and standing, the floor, the ballot, candidacy,
-liberty, remedy and allocation are free of any condition drawn from them.
-Employment vetting needs a specified necessary function, reasons, disclosure so
-far as possible, independent challenge and remedy, and the floor lies outside
-its reach.
-
-Someone disclosing unlawful surveillance can reach an independent recipient
-without first using an implicated internal channel. That recipient must
-protect the discloser, preserve and examine evidence, and publish
-proportionately within the privacy boundary. Receiving the disclosure leaves
-its allegation still to be proved.
-
-### Refusing an armed or unlawful role
-
-Objection to an armed or lethal role is unconditional, including for a serving
-member and for a particular operation, weapon or order. No tribunal tests its
-sincerity. Any civilian alternative must be genuinely equivalent and
-non-punitive, without loss of employment, education or other civil rights,
-and without repeated punishment for the continuing objection. A protective
-member must refuse a manifestly unlawful order, and that refusal is protected.
+injurious weapons, autonomous human targeting without meaningful human control,
+and aggressive war. The prohibition holds in emergency and under foreign
+cooperation alike, and the core abuse stays answerable and its remedy owed,
+whatever immunity, amnesty, lapse of time or pardon intervenes.
 
 The next chapter asks what the record can do when it detects a breach.
 

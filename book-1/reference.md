@@ -489,10 +489,10 @@ optional method. A common term lists the chapters that use it most.
 ### A
 
 - Aadhaar: opening, 1, 4, 29
-- accommodation: 2, 5, 6, 11, 13, 15, 21, 27
+- accommodation: 2, 5, 11, 13, 15, 21, 27
 - Adam: 2, 8, 9, 10, 11, 26, 27, method
 - adulthood: 1, 2, 7, 9, 14, 15, 18, 28
-- advocate for the person: 6, 12, 14, 17, 30
+- advocate for the person: 12, 14, 17, 30
 - alternate, independent: 6, 14, 15, 19
 - amendment: 13, Part III case, 17, 18, 22, 29, method
 - Anderson, Elizabeth: 29
@@ -527,7 +527,7 @@ optional method. A common term lists the chapters that use it most.
 - Constitutional Court: Part I case, 6, 17, 20, 22
 - continuity: 5, 6, 10, 12, 14, 17, 28, 29
 - contradiction check: method
-- contribution: 6, 9, 10, 22, 29, method
+- contribution: 6, 9, 22, 29, method
 - correction: 5, 6, 10, 14, 15, 19, 28, 29
 - credibility finding: 2, 9, 11, 16, 18, 23, 24, 29
 - custody: 18, 21, 25, 26, 27, 28, 29, method
@@ -537,7 +537,7 @@ optional method. A common term lists the chapters that use it most.
 
 - Dara: 23
 - delivery: opening, 1, 3, 4, 6, 7, 29, method
-- disclosure: 17, 23, 24, 27
+- disclosure: 10, 12, 16, 17, Part IV case, 23, 24, 26
 - discrimination: 11, 28
 
 ### E
@@ -602,7 +602,7 @@ optional method. A common term lists the chapters that use it most.
 - Mael: 16, 24
 - Marisol: 4
 - material security: opening, 1, 3, 4, 7, 21, 25, 27
-- membership: 8, 15, 17, 18, 27, 28
+- membership: 8, 15, 18, 27, 28
 
 ### N
 
@@ -625,7 +625,7 @@ optional method. A common term lists the chapters that use it most.
 - political home: 15, 18, 28
 - presence: 1, 3, 4, 7, 15, 25
 - prisoner: opening, 2, 18, Part IV case, 25, 28, 29, method
-- privacy: 3, 7, 13, 14, 27
+- privacy: 3, 7, 14
 - property: 9, 10, 12, 13, 14, 20, 27
 - protected core: 10, 11, 22
 - public finance: 2, 5, 6, 10, 17, 28, 29, 30
@@ -638,7 +638,7 @@ optional method. A common term lists the chapters that use it most.
 - region: 3, 4, 6, 10, 17, 20
 - Regions Council: 16, 17, 20, 22
 - release: opening, 1, 19, 25, 26, 27, 28, 29
-- remedy: 6, 10, 11, 15, 19, 21, 27, 29
+- remedy: 6, 10, 11, 15, 17, 19, 21, 29
 - requisition: 20
 - residence: 15, 17, 18, 26
 - restoration: 9, 12, 13, 16, 20, 21, 24
@@ -648,7 +648,7 @@ optional method. A common term lists the chapters that use it most.
 ### S
 
 - scarcity: 5, 6, 12, 28, 29, 30
-- search: 7, 19, 29
+- search: 7, 19, 27, 29
 - secure placement: 2, 26, 27, 28
 - Selin: 7
 - Sen, Amartya: opening, 5, 29
@@ -658,10 +658,10 @@ optional method. A common term lists the chapters that use it most.
 - Shue, Henry: opening, 3, 29
 - signing restriction: 23, 24
 - single-actor route: 13
-- standing: 1, 2, 6, 9, 11, 25, 28, 29
+- standing: 1, 2, 9, 11, 17, 25, 28, 29
 - subsidiarity: 17
 - supplement: 2, 9, 24, 29, method
-- surveillance: 19, 27
+- surveillance: 19
 - SyRI: 2
 
 ### T

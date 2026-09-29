@@ -228,25 +228,17 @@ predeclared alternate with the same limits.
 
 ## Leaving
 
-A region may leave through an agreed constitutional settlement. Its referendum
-may open negotiations; the exit itself requires federal agreement, a
-constitutional-rights review, settlement of borders, assets, debts, commons,
-floors and minority protections, and final ratification by the affected
-population. A declaration on its own changes nothing in law.
-
-The settlement has to provide for the people as well as the map: continuing
-protection for those who lose membership, prevention of statelessness, the
-position of residents who stay, cross-border family and cultural relations,
-treaty succession, and the disposition of records that affect individual
-rights. Where an exit would transfer, extinguish or irreversibly impair
+A region may leave only through an agreed constitutional settlement. Its
+referendum may open negotiations; the exit itself requires federal agreement, a
+constitutional-rights review, a settlement of borders, assets, debts and commons
+that protects the people affected and prevents statelessness, and final
+ratification by the affected population. A declaration on its own changes
+nothing in law. Where an exit would transfer, extinguish or irreversibly impair
 collective land or resource title, the actual collective consent requirement
-applies.
-
-The armed forces' mandate is external only, so the republic holds no military
-instrument against a unilateral exit. Legal invalidity, ordinary policing under
-the imminent-threat-to-life standard, and negotiation are the responses
-available, and defence, trade, border, payment and service levers may not be
-turned against a region seeking or completing a lawful exit.
+applies. The armed forces' mandate is external only, so the republic holds no
+military instrument against a unilateral exit, and defence, trade, border,
+payment and service levers may not be turned against a region seeking or
+completing a lawful exit.
 
 ## Who bears the cost
 

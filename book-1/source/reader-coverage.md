@@ -53,9 +53,9 @@ carried in single figures, which is where the rebalance has most to do.
 | associates | 7 |
 | requests | 13 |
 | receives | 65 |
-| challenges | 31 |
-| governs | 37 |
-| is acted upon | 75 |
+| challenges | 30 |
+| governs | 36 |
+| is acted upon | 74 |
 
 ## Chapter patterns
 
@@ -65,10 +65,10 @@ what matters is the book's shape, not the chapter's.
 
 | Pattern | Passages |
 | --- | ---: |
-| constructive | 102 |
+| constructive | 100 |
 | private-civic | 23 |
 | democratic | 32 |
-| coercive | 45 |
+| coercive | 43 |
 | records | 32 |
 | argument | 46 |
 
@@ -84,18 +84,18 @@ checked here.
 | Collective and plurality rights | 1 | 1 | 0 |
 | Defence and armed force | 1 | 1 | 1 |
 | Democracy and amendment | 9 | 8 | 6 |
-| Ecology, future generations and commons | 4 | 5 | 5 |
-| Economy, property, work and commons | 16 | 15 | 11 |
+| Ecology, future generations and commons | 4 | 4 | 5 |
+| Economy, property, work and commons | 15 | 15 | 11 |
 | Emergency and resilience | 2 | 3 | 4 |
-| Justice and coercion | 14 | 18 | 8 |
+| Justice and coercion | 13 | 18 | 8 |
 | Knowledge, communication and culture | 4 | 6 | 2 |
 | Life course, family, care and reproduction | 13 | 5 | 3 |
-| Locality, mobility and external relations | 2 | 2 | 2 |
+| Locality, mobility and external relations | 2 | 2 | 1 |
 | Material floor | 10 | 26 | 11 |
 | Non-human animals | 2 | 4 | 1 |
 | Personhood and equality | 19 | 17 | 10 |
 | Public institutions | 7 | 15 | 8 |
-| Public safety, policing and use of force | 6 | 5 | 6 |
+| Public safety, policing and use of force | 6 | 4 | 6 |
 | Records and accountability | 13 | 21 | 13 |
 
 ## Every passage
@@ -151,10 +151,7 @@ checked here.
 | 06-02 | 06-who-owes-and-what-follows.md | A duty cannot be contracted away | Material floor | OBLIGATIONS | protective | a public function handed to a provider | receives | works | no | constructive | `book-1/06-who-owes-and-what-follows.pins.nibli` |
 | 06-03 | 06-who-owes-and-what-follows.md | What voluntary provision does not do | Life course, family, care and reproduction | OBLIGATIONS | protective | a household, a charity, and what neither is presumed to owe | cares | works | yes | private-civic | `book-1/06-who-owes-and-what-follows.pins.nibli` |
 | 06-06 | 06-who-owes-and-what-follows.md | Duties are not a price for rights | Personhood and equality | OBLIGATIONS | protective | rights retained through civic breach, competing duties and reviewed excuses | is acted upon, receives | contested | yes | constructive | `book-1/06-who-owes-and-what-follows.pins.nibli` |
-| 06-10 | 06-who-owes-and-what-follows.md | Economic wrongs, one route at a time | Economy, property, work and commons | ECONOMIC-CONSTITUTION | both | a wage denial, an eviction, an unlawful licence | works | continuity-remedy | no | constructive | `book-1/06-who-owes-and-what-follows.pins.nibli` |
-| 06-12 | 06-who-owes-and-what-follows.md | A way in that does not need the operator's permission | Justice and coercion | NON-CARCERAL-JUSTICE | both | a request to review that the operator did not authorise | challenges | works | no | coercive | `book-1/06-who-owes-and-what-follows.pins.nibli` |
-| 06-13 | 06-who-owes-and-what-follows.md | When the actor is a protective power | Public safety, policing and use of force | PUBLIC-SAFETY | continuity | unlawful force, and a record that was never written | is acted upon | fails | no | coercive | `book-1/06-who-owes-and-what-follows.pins.nibli` |
-| 06-14 | 06-who-owes-and-what-follows.md | When the finding is about conditions or an animal | Ecology, future generations and commons | ECOLOGICAL-ANIMAL | continuity | a defective ecological record and an animal needing care | challenges | continuity-remedy | no | constructive | `book-1/06-who-owes-and-what-follows.pins.nibli` |
+| 06-10 | 06-who-owes-and-what-follows.md | The same chain in other domains | Economy, property, work and commons | ECONOMIC-CONSTITUTION | both | a wage denial, an unanswered review, unlawful force and an animal needing care, each with its own remedy | works, challenges | continuity-remedy | no | constructive | `book-1/06-who-owes-and-what-follows.pins.nibli` |
 | 06-15 | 06-who-owes-and-what-follows.md | The duty to begin without a request | Material floor | OBLIGATIONS | protective | a person nobody has come for | receives | works | no | constructive | `book-1/06-who-owes-and-what-follows.pins.nibli` |
 | 06-18 | 06-who-owes-and-what-follows.md | When failure is general | Material floor | ARTICLES | both | a certified pattern of shortfalls by a publicly answerable tier leads to a declaration, a public plan, monitoring and interim measures | receives | continuity-remedy | no | constructive | `book-1/06-who-owes-and-what-follows.pins.nibli` |
 | 06-19 | 06-who-owes-and-what-follows.md | A claim that fails | Material floor | OBLIGATIONS | continuity | one claim followed through every office that fails it, from first contact to the Court's interim measures | receives, challenges | continuity-remedy | yes | constructive | `book-1/06-who-owes-and-what-follows.pins.nibli` |
@@ -200,9 +197,8 @@ checked here.
 | 10-02 | 10-what-money-cannot-buy.md | A promise is not a trap | Economy, property, work and commons | ECONOMIC-CONSTITUTION | protective | consent, waivers, the enterprise as a tool | chooses, associates | works | no | constructive | `book-1/10-what-money-cannot-buy.pins.nibli` |
 | 10-03 | 10-what-money-cannot-buy.md | When a private power owes public duties | Economy, property, work and commons | PUBLIC-SCALE-VOCABULARY | protective | the named grounds, classes and tiers of a private-power finding | is acted upon | contested | yes | constructive | `book-1/10-what-money-cannot-buy.pins.nibli` |
 | 10-07 | 10-what-money-cannot-buy.md | When an economic power ends, and what does not | Economy, property, work and commons | ECONOMIC-CONSTITUTION | continuity | temporary managerial authority ends while rights and continuity duties remain | is acted upon | fails | yes | constructive | `book-1/10-what-money-cannot-buy.pins.nibli` |
-| 10-04 | 10-what-money-cannot-buy.md | Public money | Economy, property, work and commons | ECONOMIC-CONSTITUTION | ordinary | taxation, appropriation, borrowing under a legislative source | governs | works | no | constructive | `book-1/10-what-money-cannot-buy.pins.nibli` |
-| 10-05 | 10-what-money-cannot-buy.md | Money you can hold in your hand | Economy, property, work and commons | ECONOMIC-CONSTITUTION | ordinary | the backbone with a non-digital route; the bounded monetary office | receives | works | no | constructive | `book-1/10-what-money-cannot-buy.pins.nibli` |
-| 10-06 | 10-what-money-cannot-buy.md | Which tier decides | Economy, property, work and commons | ECONOMIC-CONSTITUTION | ordinary | the common tier's short list and the regional residue | governs | works | no | constructive | `book-1/10-what-money-cannot-buy.pins.nibli` |
+| 10-04 | 10-what-money-cannot-buy.md | Public money | Economy, property, work and commons | ECONOMIC-CONSTITUTION | ordinary | a person who owes tax keeps the floor; taxation and borrowing each need a legislative source | governs | works | no | constructive | `book-1/10-what-money-cannot-buy.pins.nibli` |
+| 10-05 | 10-what-money-cannot-buy.md | Money you can hold in your hand | Economy, property, work and commons | ECONOMIC-CONSTITUTION | ordinary | a person without a device keeps access to money; credit decisions with reasons and a challenge | receives | works | no | constructive | `book-1/10-what-money-cannot-buy.pins.nibli` |
 | 10-09 | 10-what-money-cannot-buy.md | What this cannot settle | Economy, property, work and commons | ECONOMIC-CONSTITUTION | protective | the boundary of a record that values nothing | receives | unresolved | yes | constructive | `book-1/10-what-money-cannot-buy.pins.nibli` |
 | 10-10 | 10-what-money-cannot-buy.md | Argument: Ownership under the floor, borrowing under law | Economy, property, work and commons | exempt | argument | conditional property and public finance without a debt ceiling, against a constitutional debt brake | chooses | contested | no | argument | `exempt-element` |
 | 11-00 | 11-the-same-route-for-everyone.md | (preamble) | Personhood and equality | SUBSTANTIVE-EQUALITY | protective | equal and effective protection; purpose or effect suffices | receives | works | no | constructive | `book-1/11-the-same-route-for-everyone.pins.nibli` |
@@ -289,7 +285,7 @@ checked here.
 | 20-08 | 20-a-crisis-does-not-suspend-the-republic.md | When the election cannot be held | Democracy and amendment | ARTICLES | continuity | a certified term end obliges the election, lets the outgoing chamber sit under caretaker limits until its successor meets, and sends impossibility and nonresponse to the Constitutional Court | chooses | continuity-remedy | no | democratic | `tests/pins/stress/election-cannot-be-held/expect.pins.nibli` |
 | 20-03 | 20-a-crisis-does-not-suspend-the-republic.md | Power does not grow at the border | Defence and armed force | PUBLIC-SAFETY | protective | civilian defence structure and the separate force-abroad authorisation | governs | works | no | coercive | `tests/pins/public-safety/review/defence-structure-conflict-withdraws-force-abroad/expect.pins.nibli` |
 | 20-04 | 20-a-crisis-does-not-suspend-the-republic.md | When coercive power passes to a private force | Defence and armed force | PUBLIC-SAFETY | continuity | a defective defence structure loses authority while its limits and audit remain | is acted upon | continuity-remedy | yes | coercive | `tests/pins/public-safety/review/defence-structure-conflict-withdraws-force-abroad/expect.pins.nibli` |
-| 20-07 | 20-a-crisis-does-not-suspend-the-republic.md | Treaties, trade and a region's exit | Locality, mobility and external relations | PUBLIC-SAFETY | protective | separate treaty powers, cross-border harm limits and protected lawful exit | governs | works | yes | coercive | `book-1/20-a-crisis-does-not-suspend-the-republic.pins.nibli` |
+| 20-07 | 20-a-crisis-does-not-suspend-the-republic.md | Treaties, trade and a region's exit | Locality, mobility and external relations | PUBLIC-SAFETY | protective | separate treaty powers, cross-border harm limits and protected lawful exit | governs | works | no | coercive | `book-1/20-a-crisis-does-not-suspend-the-republic.pins.nibli` |
 | 20-06 | 20-a-crisis-does-not-suspend-the-republic.md | What this cannot settle | Emergency and resilience | PUBLIC-SAFETY | protective | the boundary of a withdrawal that is not an event | is acted upon | unresolved | yes | coercive | `book-1/20-a-crisis-does-not-suspend-the-republic.pins.nibli` |
 | 20-09 | 20-a-crisis-does-not-suspend-the-republic.md | Argument: Four powers and every right in force | Emergency and resilience | exempt | argument | an emergency with no power to suspend a right, against derogation and a supermajoritarian escalator | chooses | contested | yes | argument | `exempt-element` |
 | 21-00 | 21-a-way-to-be-heard.md | (preamble) | Justice and coercion | NON-CARCERAL-JUSTICE | ordinary | a right nobody will hear | requests | works | no | coercive | `book-1/21-a-way-to-be-heard.pins.nibli` |

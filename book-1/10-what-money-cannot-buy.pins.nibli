@@ -216,7 +216,9 @@
 ? prevents(Adam, EconomicScoreReuse).
 # => TRUE
 
-# "Which tier decides"
+# "the rest of economic policy is regional or local. Regions may protect more
+#  strongly but must keep rights portable and keep fiscal competition from
+#  defeating equality"
 ? prevents(Adam, RegionalResidualCompetenceErasure).
 # => TRUE
 

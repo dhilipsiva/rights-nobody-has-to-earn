@@ -135,6 +135,45 @@ reinstate the retired tooling or workflow.
 Grouped by kind. Dates in each heading are the ratification dates; a ruling
 that was later implemented or narrowed carries that supersession inline.
 
+### Item 73 — the catalogue chapters, case-first, 2026-09-29
+
+The chapters the 2026-09-25 review named as catalogues now state each list
+once, through a case, with at most one table. Chapter 6's four previews of
+other domains — economic wrongs, justice review, protective powers, conditions
+and animals — become one section, *The same chain in other domains*, keeping
+the wage denial and the urgent animal-care request its pins run and pointing
+to the chapters that follow each route; a pointer that named Chapter 28 for
+findings about force was narrowed to Chapter 27, which follows them. Chapter
+10 states public money through a person who owes tax and a person without a
+device, and its tier section becomes one sentence. Chapter 13 states what each
+kind of use needs in one table, keeps ruling D9's three definitions, follows
+the food rule through a farm and a community that lives by subsistence, and
+shortens its offices and orders. Chapter 17's exit route, Chapter 20's
+defence, treaty and trade passages and Chapter 27's protective powers are
+compressed, the last into a table of what each coercive measure needs.
+
+The six chapters' derived text falls from 13,949 to 12,321 words by the lint's
+measure, and no argument section changes. The chapter table is unchanged:
+splitting Chapters 13 and 27 into new chapters, as the merged list proposed,
+would change ruling D7's table and needs an author ruling, and nothing moved
+into the appendix. `ui/chapter-cases.json` lists under its chapter what each
+no longer carries — structural economic remedies, the monetary authority, the
+remaining animal orders, what an exit settlement must provide, the rest of the
+defence limits and of the protective powers — with the cases that still run
+it. The coverage ledger holds 276 passages (Chapter 6's four previews are one,
+and Chapter 10's tier section is gone), the report and the generated index
+(132 entries) are regenerated, and two pin-file comments follow the prose. The
+reading-order decision records the item. The exact prose is `session-drafted,
+author-approved under delegated approval (2026-09-13)`.
+
+No rule or pin expectation changes. The six chapters' pins pass focused (75,
+76, 3, 43, 17 and 47). The 28 coverage, reference, claim-discipline and
+articles development tests pass, as do the twelve companion input tests, the
+nineteen book-builder tests, the sixteen prose-lint tests, the prose check and
+the works-cited and index `--check` modes.
+`RIGHTS_VERIFY_JOBS=4 ./verify.sh` passes 90,187 pins across 16,353 cases with
+complete contradiction checks and no findings in 1,567.34s.
+
 ### Item 66 closed, and the submissions drafted, 2026-09-25
 
 The author closed the optional item 66, independent validation, on 2026-09-25.

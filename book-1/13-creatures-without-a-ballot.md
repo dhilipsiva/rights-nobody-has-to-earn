@@ -15,102 +15,57 @@ must meet the rules this chapter follows.
 
 ## Protection does not require being human
 
-The animal rules first identify who is protected, then what every controlled
-use owes, then which uses need further grounds and which protections lie beyond
-amendment, and last what the food rule means for farming and subsistence.
-
 Vertebrates, cephalopods and decapod crustaceans begin with a presumption of
 sentience. Independently reviewed evidence of a realistic possibility of
 sentience extends protection to other animals; conclusive proof is unnecessary,
 and the uncertainty stays on the record. Removing a presumption requires
 comparably rigorous independent evidence, more than leftover doubt, and a
 contestable review that keeps the direct core and urgent care in place.
-Sentience is classified by that review, and the rules read its record.
 
 Once an animal is covered, the rules conclude that no owner or contract may
 waive its interests. Property may allocate the animal's care, costs and custody,
-and nothing more.
+and nothing more. Urgent protection comes before the paperwork: where a credible
+threat meets a plausible protected interest, necessary rescue, veterinary care
+and shelter are owed without an owner's consent, a microchip, a purchase record
+or a completed classification.
 
-Urgent protection comes before the paperwork. Where a credible threat meets a
-plausible protected interest, necessary rescue, veterinary care and shelter are
-owed before the records are reconciled, without an owner's consent, a microchip,
-a purchase record or a completed classification.
-
-### The baseline for every controlled use
+### What a use needs
 
 Every controlled use owes a welfare baseline that nobody can waive: suitable
 food, water, shelter, care, movement and social opportunity; humane handling;
-protection from abandonment, exploitative overwork, extreme confinement, harmful
-breeding and avoidable invasive intervention. Public, private, cooperative,
-customary, household and nonprofit control all face it. The duties follow from
-the animal's needs, and price, affection, productivity, rarity and usefulness
-count for nothing in setting its worth or licensing harm to it.
+and protection from abandonment, exploitative overwork, extreme confinement,
+harmful breeding and avoidable invasive intervention. Public, private,
+cooperative, customary, household and nonprofit control all face it, and
+price, affection, productivity, rarity and usefulness count for nothing in
+setting an animal's worth. What a use needs beyond the baseline depends on what
+the use does.
 
-Ordinary use, such as companionship, rescue, sanctuary, observation or safe
-coexistence, that is nonlethal, non-invasive and low in severity needs the
-baseline and an independent welfare review; being a use is no reason to demand
-a serious purpose. Lethal, invasive or high-severity use needs more: a serious
-purpose from a closed list, necessity for that exact purpose, the absence of any
-safe, accessible and materially less-harmful alternative reasonably available,
-the least harmful method, care, independent review before use, and its own end.
+| A use that is | Needs, beyond the baseline |
+|---|---|
+| Nonlethal, non-invasive and low in severity, such as companionship, rescue, sanctuary or observation | An independent welfare review, with no serious purpose required |
+| Lethal, invasive or high in severity | A serious purpose from a closed list, necessity for that exact purpose, no safe, accessible and materially less-harmful alternative reasonably available, the least harmful method, care, independent review before use and its own end |
+| For food, lethal or nonlethal | The food test: the people it would feed have no safe, accessible, nutritionally adequate and materially less-harmful alternative reasonably available; care standards, independent inspection and remedy for breeding, housing, handling, transport and killing; where death occurs, effective stunning or an independently shown least-suffering method |
+| For research, testing or education | A serious health, safety or ecological purpose; replacement before reduction and refinement; no scientifically valid non-animal or materially less-harmful method; independent scientific and ethical review, pain relief, humane endpoints, aftercare, registration and reporting of negative and inconclusive results |
+| Control of disease, danger or an introduced population | Authenticated, contestable evidence; human causes and feasible prevention, exclusion, treatment, vaccination, relocation, fertility and habitat measures first; lethal control only where those are unavailable, ineffective or more gravely harmful, by the least-painful reliable method, with review, repair and a fresh, bounded period of authority |
+| Fighting, sexual use, deliberate cruelty, punitive treatment, abandonment, extreme confinement, seriously harmful breeding or painful purposeless mutilation | It is forbidden |
+
 The serious purposes are immediate necessary nourishment, the prevention or
 treatment of serious illness in people or animals, protection against grave
 danger to safety or public health, conservation or restoration grounded in
 evidence, assistance or work compatible with the animal's welfare, and
-scientific research that passes its own test. Passing that test is a
-condition, and each kind of use still needs its own permission.
-
-### Further conditions for food and research
-
-Every controlled use of a credibly sentient animal to produce food, nonlethal
-and non-severe production included, faces a further test: the people it would
-feed must have no safe, accessible, nutritionally adequate and materially
-less-harmful alternative reasonably available. Taste, habit, prestige, profit,
-advertising or price alone is insufficient. Cost and geography matter only for
-whether an alternative can really be reached, and the test withholds nobody's
-human food floor. Breeding, housing, handling, transport and killing stay under
-care standards, independent inspection and remedy, and where death occurs it
-requires effective stunning or an independently shown least-suffering method.
-Avoidable suffering stays unlawful whatever the food purpose.
-
-Research, testing and education require a serious health, safety or ecological
-purpose. Replacement comes before reduction and refinement. A scientifically
-valid non-animal or materially less-harmful alternative defeats permission.
-Independent scientific and ethical review, the least-harm valid design, pain
-relief, humane endpoints, aftercare, registration and reporting of negative and
-inconclusive results are required. An unrelieved severe or prolonged procedure
-is prohibited whatever its claimed purpose.
-
-### Prohibited harm and exceptional intervention
-
-Fighting, sexual use, deliberate cruelty, punitive treatment, abandonment,
-extreme confinement, seriously harmful breeding and painful purposeless
-mutilation are forbidden. So are killing and severe suffering for a dispensable
-purpose, and the list of those purposes is closed: spectacle, gambling,
-amusement, sport or trophy, prestige, fashion, cosmetics or marketing, novelty,
-convenience and profit. Ownership, sector, licence, contract, tradition,
-religion and culture give no exemption from these prohibitions; the people
-whose practices they reach keep meaningful consultation, equality,
-accommodation and their human rights. Necessary humane
-euthanasia has its own route, which must be complete, least-distressing and
-independently reviewed; owner inconvenience, shelter delay, ordinary cost and
-reduced commercial value are insufficient grounds for it.
+scientific research that passes its own test. Passing a test is a condition,
+and each kind of use still needs its own permission. An unrelieved severe or
+prolonged procedure is prohibited whatever its claimed purpose. Necessary
+humane euthanasia has its own route, which must be complete, least-distressing
+and independently reviewed; owner inconvenience, shelter delay, ordinary cost
+and reduced commercial value are insufficient grounds for it.
 
 Domestic, farmed, working, captive and wild animals keep the same direct core.
 Working animals need rest, care, safe limits and protected exit or retirement.
-Natural predation makes nobody an offender, and the duty to prevent harm stops
-short of suppressing every natural death. Human-caused pollution,
+Natural predation makes nobody an offender, while human-caused pollution,
 infrastructure, entanglement, habitat destruction, capture, trade and killing
-require prevention and repair.
-
-Grave disease, danger or introduced-population harm needs authenticated,
-contestable evidence. Human causes and feasible prevention, exclusion,
-treatment, vaccination, relocation, fertility and habitat measures come first.
-Lethal control requires those routes to be unavailable, ineffective or more
-gravely harmful, then the least-painful reliable method, independent review,
-reassessment, repair and a fresh, bounded period of authority. Danger or
-introduction justifies that control and nothing further: an animal is never an
-offender.
+require prevention and repair. Danger or introduction justifies control and
+nothing further: an animal is never an offender.
 
 ### The core beyond amendment
 
@@ -128,71 +83,66 @@ humane handling, transport, treatment and death. The status is protection
 rather than membership, and brings no personhood, floor, ballot, candidacy,
 office, property title, capacity to contract or political weight. The rules
 rank no animal by owner, wealth, price, affection, productivity or rarity, or
-by any score of its worth, and because the interests are its own, no owner or
-contract can waive them.
+by any score of its worth.
 
-Whether harm is *avoidable* turns, in each test, on an alternative. A lethal,
-invasive or high-severity use needs a finding that no safe, accessible and
-materially less-harmful alternative is reasonably available; a food use, that
-none which is also nutritionally adequate is reasonably available to the
-people it would feed; research, that no scientifically valid non-animal or
-materially less-harmful method can serve its purpose. Where such a route
-exists, the harm is avoidable and the use lacks the finding it needs.
+Whether harm is *avoidable* turns, in each test, on an alternative: the table
+names the one each use must lack, for lethal, invasive or high-severity use,
+for food and for research. Where such a route exists, the harm is avoidable
+and the use lacks the finding it needs.
 
-A purpose is *dispensable* when it is on the closed list above, and the core
-bars killing solely for one. The categorical prohibition rests on independent
-evidence of the exact conduct, and the rules weigh no profit, ownership,
-custom, research or ecological office against it. The list of serious purposes
-closes the other side of the line: only a purpose on that list supports a
-lethal, invasive or high-severity use.
+A purpose is *dispensable* when it is on a closed list: spectacle, gambling,
+amusement, sport or trophy, prestige, fashion, cosmetics or marketing, novelty,
+convenience and profit. The core bars killing solely for one of them, and
+severe suffering for one is forbidden too. The categorical prohibition rests on
+independent evidence of the exact conduct, and the rules weigh no profit,
+ownership, custom, research or ecological office against it. Ownership, sector,
+licence, contract, tradition, religion and culture give no exemption from these
+prohibitions; the people whose practices they reach keep meaningful
+consultation, equality, accommodation and their human rights.
 
 An independently reviewed finding that a candidate amendment removes the
 animal's status or weakens either ban blocks the candidate; *Changing the
 Rules* (Chapter 22) follows the procedure. The finding compares the exact base,
 candidate and reviewed effects rather than a label, and no majority, emergency,
-profit, custom, necessity or general finding of compatibility waives it. It
-refuses reliance on that candidate alone: discussion, challenge, existing
-rights, care and lawful history remain. The food rule and the detailed
-standards are constitutional law an amendment may change, always inside those
-three, so that no food purpose licenses avoidable suffering.
+profit, custom, necessity or general finding of compatibility waives it. The
+food rule and the detailed standards are constitutional law an amendment may
+change, always inside those three, so that no food purpose licenses avoidable
+suffering.
 
-### What the food rule means for farming and subsistence
+### A farm
 
-For farming the rules work out as follows. Production that keeps the animal
-alive needs a positive finding that it is nonlethal, non-invasive and outside
-high severity, together with the food test, the welfare baseline and a
-permission of its own from the public animal regulator. Production that kills
-the animal is a lethal use. It needs the food test, the welfare baseline and
-its own permission, and also the further test for lethal use, with immediate
-necessary nourishment as its purpose, necessity for that exact purpose, the
-least harmful method, care and independent review before the use. Where a safe,
-accessible, nutritionally adequate and materially less-harmful alternative is
-reasonably available to the people the production would feed, the food test
-fails and neither permission follows, however well the animals are kept. Profit
-is a dispensable purpose rather than a food purpose: where independent evidence
-of the conduct shows killing solely for profit, the categorical prohibition
-follows and withdraws the food permission already in force for that animal and
-use.
+Take a farm that raises animals for meat. Killing them is a lethal use, so the
+farm needs the food test, the welfare baseline and its own permission, and also
+the further test for lethal use:
+immediate necessary nourishment as its purpose, necessity for that exact
+purpose, the least harmful method, care and independent review before the use.
+Where the people it would feed can reach a safe, accessible, nutritionally
+adequate and materially less-harmful alternative, the food test fails and
+neither permission follows, however well the animals are kept. Taste, habit,
+prestige, profit, advertising or price alone is insufficient. Production that
+keeps the animals alive needs a positive finding that it is nonlethal,
+non-invasive and outside high severity, together with the food test, the
+baseline and a permission of its own from the public animal regulator.
 
-A household that keeps animals for its own food is a controller like any other.
-A farmed animal has the same protection under household and customary control
-as under public, cooperative, nonprofit and private control, and whoever
-controls it owes respect for the direct core and the care its setting needs,
-with no exemption for ownership.
+Profit is a dispensable purpose rather than a food purpose. Where independent
+evidence of the conduct shows killing solely for profit, the categorical
+prohibition follows and withdraws the food permission already in force for that
+animal and use. A household that keeps animals for its own food is a controller
+like any other, and owes the direct core and the care its setting needs,
+whatever its ownership.
 
-For subsistence the test turns on what the people concerned can actually
-reach. Cost and geography count for whether an alternative is really
-accessible, so a community with no safe and adequate alternative within its
-reach can meet the test's alternative condition, while habit or price alone
-meets it for nobody. Every permission, food included, records that ownership,
-sector, licence, contract, tradition, religion and culture give no exemption
-from the animal core. Where a collective's consent to an ecological project,
-or its prior consultation on one, is recorded, the record includes meaningful
-accommodation for Indigenous, subsistence, religious and conscience practice
-that keeps the ban on severe avoidable suffering whole, and it keeps customary
-and Indigenous title against ecological limits and animal protection alike.
-The body acting must respect both the collective's actual process and the
-separate human, animal and ecological limits, and consent and consultation
+### A community that lives by subsistence
+
+For a community that lives by subsistence, the test turns on what its people can
+actually reach, and it withholds nobody's human food floor. Cost and geography
+count for whether an alternative is really accessible, so a community with no
+safe and adequate alternative within its reach can meet the test's alternative
+condition, while habit or price alone meets it for nobody. Where a collective's
+consent to an ecological project, or its prior consultation on one, is
+recorded, the record includes meaningful accommodation for Indigenous,
+subsistence, religious and conscience practice that keeps the ban on severe
+avoidable suffering whole, and it keeps customary and Indigenous title against
+ecological limits and animal protection alike. Consent and consultation
 authorise no breach of the animal core.
 
 Making less-harmful nutrition available is a public duty. A record of an actual
@@ -201,94 +151,61 @@ provide accessible, less-harmful nutrition and to keep human food and animal
 care continuous, and obliges the alternate named on the record to answer the
 failure without turning it into a lasting permission for harm. The record
 states that nobody loses food while supply, workers, communities or local
-capacity are unready, and it provides for source-bound support in which workers,
-Indigenous peoples, people living by subsistence, producers and regions take
-part, with equality and due process. These duties take effect on one authorised
-actor's record, and the reviewer named on it owes prompt review, which can
-withdraw them. Delay and underinvestment count as a public failure rather than
-a lasting permission for avoidable harm.
+capacity are unready, and it provides for source-bound support in which
+workers, Indigenous peoples, people living by subsistence, producers and
+regions take part, with equality and due process. These duties take effect on
+one authorised actor's record, and the reviewer named on it owes prompt review,
+which can withdraw them. Delay and underinvestment count as a public failure
+rather than a lasting permission for avoidable harm.
 
 ## An advocate for animals, and a court between the offices
 
 The Animal Protection Advocate is an office separate from the Future
 Conditions Guardian, which speaks for the commons. It can initiate claims, seek
 evidence and lawful inspection, and request rescue, cessation and remedy. A
-request is only a request: the Advocate holds none of the powers to own animals,
-decide custody, prosecute, issue permits, run a programme or veto policy, and it
-is kept apart from any owner, regulator or court. Divided appointments, open
-nominations, mixed knowledge, staggered nonrenewable terms, cause-only removal,
-protected public funding, disclosure, recusals and independent challenge
-constrain both offices.
-A majority of either lies beyond the control of any single government, chamber,
-party coalition, industry, profession, advocacy tendency or appointing source,
-directly or in practice, and the animal-use sector is barred from controlling
-the Animal Advocate.
-
-The Advocate is one of several routes to the animal's claim. An affected person,
-a supporter that person chose, a qualified association, a veterinarian or other
-authorised professional, the public animal regulator and the Advocate's
-predeclared alternate can each bring it, and each properly made claim obliges
-the responding office to receive it with any available interim request. The
-animal's interest and the affected people's rights stay distinct, and no owner
-can waive, settle or veto the claim.
-
-When the offices disagree, an independent court must keep the human right,
-human floor, commons condition, animal interests, collective rights,
-alternatives, uncertainty, reversibility and continuity separate. Categorical
-prohibitions come first. The court gives neither office priority, each question
-keeps its place with no single score of usefulness or worth standing in for it,
-and a chosen route still needs every permission of its own. An animal's
-interests stay distinct from the human floor, the environmental right and the
-commons throughout.
+request is only a request: the Advocate holds none of the powers to own
+animals, decide custody, prosecute, issue permits, run a programme or veto
+policy. Divided appointments, staggered nonrenewable terms and cause-only
+removal constrain both offices, a majority of either lies beyond the control of
+any single government, industry, profession or appointing source, and the
+animal-use sector is barred from controlling the Animal Advocate. An affected
+person, a chosen supporter, a qualified association, a veterinarian, the public
+animal regulator and the Advocate's predeclared alternate can each bring the
+animal's claim, which lies beyond any owner's power to waive, settle or
+veto.
 
 In the case involving both offices, the Guardian states the river's claim and
-the Animal Advocate states the individual animals' claim. The independent
-court's recorded decision calls for least harmful interim water provision and
-a rescue that needs its own complete permission. It must apply hard
-prohibitions first and give public reasons addressing the distinct interests,
-alternatives, uncertainty and continuity. That decision alone permits no
-invasive intervention. The rescue needs its own record of the serious
-conservation purpose, necessity, the absence of a materially less harmful
-alternative, welfare safeguards and independent prior review; only that
-complete animal record permits the particular use. With its prior review
-missing, the permission is withheld, and the conflict decision stays complete.
+the Animal Advocate states the individual animals' claim. The independent court
+must keep the human right, human floor, commons condition, animal interests,
+collective rights, alternatives, uncertainty, reversibility and continuity
+separate, apply categorical prohibitions first and give neither office
+priority. Its recorded decision calls for least harmful interim water provision
+and a rescue that needs its own complete permission. That decision alone
+permits no invasive intervention. The rescue needs its own record of the
+serious conservation purpose, necessity, the absence of a materially less
+harmful alternative, welfare safeguards and independent prior review; with its
+prior review missing, the permission is withheld, and the conflict decision
+stays complete.
 
 ## When a use has to be stopped
 
-An independently adjudicated injury to an animal's interests — or an urgent,
-plausible protection basis, where waiting would itself be the harm — opens a set
-of particular orders. Each names its action and limits.
-
-A cessation order reaches the unlawful activity within its stated scope,
-without banning an unrelated occupation. Necessary rescue and the care after it
-are owed without waiting for owner consent or papers. Custody must follow the
-animal's protected interests, human due process and continuity of care; it
-concerns the animal alone and detains nobody. Rehoming turns on the animal's
-needs and the recipient's ability to care, rather than the animal's market
-price.
-
-Treatment, rehabilitation and sanctuary placement require care. A sanctuary
-order calls for long-term, species-appropriate care under independent review;
-indefinite warehousing falls short of it. Habitat restoration keeps the
-animal's needs and the ecological standards apart, and an offset is refused for
-an irreplaceable loss. A record correction preserves lawful history, privacy and
-care, and renews nothing silently. Monitoring has a scope, an end and
-independent review, and scores nobody.
-
-Disqualification from a use must be individual and reviewable. It restricts
-that use alone and leaves the person's standing, floor, vote and unrelated
-private life intact. Adjudicated care costs fall on whoever is individually
-found responsible, and non-repetition measures address the evidenced cause.
+An independently adjudicated injury to an animal's interests, or an urgent,
+plausible protection basis where waiting would itself be the harm, opens
+particular orders, and each names its action, its limits and who owes it. A
+cessation order reaches the unlawful activity within its stated scope, without
+banning an unrelated occupation. Rescue and the care after it are owed without
+waiting for owner consent or papers; custody follows the animal's protected
+interests and detains nobody; rehoming turns on the animal's needs rather than
+its market price; and a sanctuary order calls for long-term,
+species-appropriate care under independent review. Disqualification from a use
+is individual and reviewable, and leaves the person's standing, floor, vote and
+unrelated private life intact.
 
 Payment discharges only itself: rescue, care, restoration and non-repetition
 remain due. An order regulating a use confers no power to search, enter, seize,
 punish or detain a person. Those powers lie on separate lawful justice routes,
 and punishment requires an individually proved intentional or reckless serious
-violation, the applicable proof, defence, independent hearing and appeal. The
-criminal burden stays where it is whatever an aggregate pattern shows, and only
-a person can be punished for the harm.
-
-Each order names what must happen and who owes it.
+violation, the applicable proof, defence, independent hearing and appeal.
 
 ## What this cannot settle
 

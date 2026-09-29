@@ -57,8 +57,8 @@ value.
 People may contract or refuse. Deception, coercion, unconscionable dependency,
 material non-disclosure or the absence of meaningful exit can defeat the claim
 that a signature records consent. A contract term that waives the floor,
-equality, labour rights, core privacy, commons duties, due process or
-effective remedy is unenforceable. Public-facing services must provide
+equality, labour rights, core privacy, commons duties, due process or a
+remedy that works is unenforceable. Public-facing services must provide
 accessible terms, safety, correction, appropriate cancellation and collective
 redress. Essential service also requires continuity.
 
@@ -139,64 +139,39 @@ authority; the institution keeps its responsibility to secure continuity.
 
 ## Public money
 
-The public body has to justify its powers too. A duty to finance the floor
-does not give every office authority to tax, borrow or spend.
+A person who owes tax keeps the floor. Collection may reach income and assets
+above it, while floor essentials, adequate housing, the debtor's liberty,
+standing and remedy lie beyond its reach. The tax system as a whole must
+reflect capacity to contribute, and democratic law chooses rates, bases,
+exemptions and their mixture.
 
-The tax system as a whole must reflect capacity to contribute. Democratic law
-chooses rates, bases, exemptions and their mixture. Collection may reach
-income and assets above the floor; floor essentials, adequate housing, the
-debtor's liberty, standing and remedy lie beyond its reach.
+A duty to finance the floor gives no office a general authority to tax, borrow
+or spend. Taxation, appropriation, spending, guarantees and borrowing each
+require a legislative source, reporting, audit and disclosure of fiscal risk,
+and public debt leaves the floor ahead of creditors and leaves commons duties
+and constitutional limits intact. How much the public body may borrow is for
+legislation to decide under those conditions: the current text itself bars
+writing a balanced-budget rule or a numeric debt ceiling into the constitution,
+a bar that lies outside the protected core and that an amendment could change.
 
-Taxation, appropriation, spending, guarantees and borrowing each require a
-legislative source, reporting, audit and disclosure of fiscal risk. Each tier
-acts on its own authority. Public debt leaves the floor ahead of creditors and
-leaves commons duties and constitutional limits intact. Whether a budget
-balances, and how much the public body may owe, are for legislation to decide
-under those conditions; the current text itself bars writing a balanced-budget
-rule or a numeric debt ceiling into the constitution, a bar that lies outside
-the protected core and that an amendment could change.
-
-During budget deadlock, prior authority for essential provision continues
-without creating new spending power. That rule allocates legal
-responsibility and supplies no funds.
+The common tier's economic functions are enumerated like its others, among them
+floor finance, equalisation and portability, and the rest of economic policy is
+regional or local. Regions may protect more strongly but must keep rights
+portable and keep fiscal competition from defeating equality, so a person who
+moves keeps every right.
 
 ## Money you can hold in your hand
 
-The common tier maintains a public unit of account and an accessible
-settlement system with a nondigital route, so that a person without a device
-keeps access. The unit of account, settlement system and regulation of
-complementary payment instruments each require their own authority.
-
-A monetary authority may act independently within a democratically enacted
-mandate. It must publish reasons and undergo distributional review and audit;
-its officers may be removed only for cause. It has no veto over lawful fiscal
-policy.
-
-There is no general entitlement to credit. Credit and insurance decisions must
-use lawful criteria, give reasons, respect equality, allow correction of the
-data relied on and provide a challenge route. Private insurance cannot gate a
-floor service. The purpose limits described in *Work, Pay and Contribution*
-(Chapter 9) also prevent reuse of a contribution record as a standing, worth,
-risk or political score.
+A person without a device keeps access to money: the common tier maintains a
+public unit of account and a settlement system with a nondigital route. There
+is no general entitlement to credit, but a credit or insurance decision must use
+lawful criteria, give reasons, respect equality, allow correction of the data it
+relied on and provide a challenge route. Private insurance cannot gate a floor
+service.
 
 Cash, vouchers and insurance approvals are instruments. Showing that food,
 housing or care reached someone still requires the receiving-side evidence
 described in *Whether It Arrived* (Chapter 4).
-
-## Which tier decides
-
-The common tier owns the unit of account and settlement system, floor finance
-and equalisation, portability, interregional commerce and competition,
-insolvency baselines, cross-regional private power, and common labour and
-consumer minima. These functions are enumerated, and a general commerce,
-spending, taxation or pre-emption power lies outside them.
-
-Residual ownership, land, enterprise, service and local-development policy is
-regional or local. Regions may protect more strongly, while common floors and
-minima bind them from below; they must keep rights portable, extend their
-protections without waiting periods or property requirements, and keep fiscal
-competition from defeating equality. The division allows provision to differ
-between regions while a person who moves keeps every right.
 
 ## What this cannot settle
 

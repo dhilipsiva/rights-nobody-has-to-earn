@@ -224,7 +224,7 @@ unimplemented until the items named here land.
 
 ## Ordered revision backlog toward 9.5+
 
-Status 2026-09-29: items 01–65 and 67–72 are complete and recorded in
+Status 2026-09-29: items 01–65 and 67–73 are complete and recorded in
 `CLAUDE.md`; optional item 66 is closed without outside validation. The
 [2026-09-25 revision review](reviews/2026-09-25-revision-review.md) rates the
 revised manuscript 8/10 and publisher readiness 7.5/10: claim discipline holds
@@ -233,7 +233,7 @@ chapters (6, 13, 17, 27), cost-paragraph/argument restatement at chapter
 endings, and length for the D1 serious non-specialist reader. A fresh
 chapter-by-chapter pass (2026-09-29) concurs at ~7.1/10 average, weakest at
 Ch. 7 and Ch. 27. No remaining item is an error the pins contradict. Items
-73–80 are readability, pacing and evidenced-limits work inside rulings D1–D9;
+74–80 are readability, pacing and evidenced-limits work inside rulings D1–D9;
 item 81 is optional; items 82–87, merged below, are companion, navigation and
 contribution work, and item 82 corrects a stale example. Chapter numbers refer
 to the [current reading sequence](book-1/contents.json).
@@ -291,11 +291,11 @@ Where each of its items went:
 
 | Merged list | Here |
 |---|---|
-| 1. Split Chapters 13, 27 and 29 | 73, 75, 80 |
+| 1. Split Chapters 13, 27 and 29 | 73 (done), 75, 80 |
 | 2. An onboarding path in the companion | 83 |
 | 3. Bridge the prose and the formal language | 77, 84 |
 | 4. Independent validation | 81, 85 |
-| 5. Compress Chapters 17 and 22 | 73, 77 |
+| 5. Compress Chapters 17 and 22 | 73 (done), 77 |
 | 6. The design in ten minutes | 86 |
 | 7. Pins a non-programmer can read | 77, 84 |
 | 8. What would change my mind | 87 |
@@ -306,34 +306,6 @@ Where each of its items went:
 | 13. Part V's historical cases | 80 |
 | 14. A book map in the companion | 83 |
 | 15. Forks and joints explained | 83 |
-
-### 73. De-catalogue chapters 6, 10, 13, 17, 27
-
-Why: the 2026-09-25 review keeps these as its named editorial limit; they
-carry the pacing score (7/10).
-Do: one human case per catalogue section kept in prose; remainder to
-companion pointers, tables, or method boxes. Ch. 13 to one decision
-tree/table plus two cases (one farm, one subsistence); Ch. 27 to
-ll.1–160 as the chapter, non-punitive coercion (ll.189–297) to appendix or
-Part III-adjacent pointer; Ch. 17 secession/military and Ch. 20
-defence/treaties/trade likewise out; Ch. 10 fiscal/tier ll.140–199 out;
-Ch. 6 economic-wrongs/protective-power/animal previews (ll.133–208) to
-pointers. No rule changes expected; if a move needs one, source and pins
-first per contract.
-Close when: each of the five reads case-first with ≤1 table, prose lint
-`--check` shows no regression and `--ratchet` records lower negation/jargon
-where improved, focused pins pass, then complete `./verify.sh`; prose
-consistency reviewed separately.
-
-From the merged list: it asked instead for new chapters, Chapter 13 split into
-the animal core and its uses and food, and Chapter 27 into custody and release
-and the coercive powers. A new chapter changes ruling D7's table and renumbers
-every later chapter with its pins, `ui/chapter-cases.json` and the method's
-references, so that route needs an author ruling; moving material out, as
-above, needs none. The appendix is a carried archive outside the reading
-sequence (R4), so text moved there leaves the book, and a pointer to the
-chapter or companion page that keeps it keeps it reachable. The list also
-names Chapter 17's section on leaving as the part that reads as tacked on.
 
 ### 74. End each chapter once: cost vs Argument
 

@@ -71,6 +71,25 @@ acceptance comes last as this decision's §6 required; the pen strand's
 persisting clearance and custody facts precede the other two and change none of
 their verdicts. The map is `tools/maps/2026-09-25-restructure.json`.
 
+## The catalogue chapters, case-first — item 73, 2026-09-29
+
+The chapters the 2026-09-25 review named as catalogues now state each list
+once, through a case, with at most one table. Chapter 6's four previews of
+other domains become one section that keeps the wage denial and the urgent
+animal-care request and points to the chapters that follow each route.
+Chapter 10 states public money through a person who owes tax and a person
+without a device. Chapter 13 states what each kind of use needs in one table,
+keeps ruling D9's three definitions and follows the food rule through a farm
+and a community that lives by subsistence. Chapter 17's exit route, Chapter
+20's defence, treaty and trade passages and Chapter 27's protective powers are
+compressed, the last into a table of what each coercive measure needs.
+
+The chapter table is unchanged. Splitting Chapters 13 and 27 into new chapters,
+which the merged list proposed, would change ruling D7's table and needs an
+author ruling; nothing moved into the appendix, which stays outside the
+reading sequence. What the prose no longer carries is listed under its chapter
+in the companion's `ui/chapter-cases.json`, with the cases that still run it.
+
 ## The revision read fresh — item 65, 2026-09-25
 
 All 40 ordered inputs were read in sequence after items 34–64, and the

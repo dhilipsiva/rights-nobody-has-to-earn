@@ -22,11 +22,55 @@
       ]
     },
     {
+      "chapter": 6,
+      "title": "The chain in other domains",
+      "text": "The chapter follows the chain through one waiting claim and points to the chapters that follow it for wages, justice review, protective powers, conditions and animals. The structural economic remedies, the withdrawal of a protective order and the requirements of an environmental finding run in those families' own cases.",
+      "links": [
+        {"label": "The justice cases", "path": "tests/pins/justice"},
+        {"label": "The public-safety cases", "path": "tests/pins/public-safety"},
+        {"label": "The ecological and animal cases", "path": "tests/pins/ecology"}
+      ]
+    },
+    {
       "chapter": 9,
       "title": "The people the chapter no longer names",
       "text": "The chapter follows a handful of people through work, pay and contribution. The cases of the others it once named stay in its pins with their original expectations.",
       "links": [
         {"label": "Chapter 9's pins", "path": "book-1/09-work-pay-and-contribution.pins.nibli"}
+      ]
+    },
+    {
+      "chapter": 10,
+      "title": "The monetary authority and the tiers' economic functions",
+      "text": "The chapter states the limits on tax, borrowing and payment through a person who owes tax and a person without a device. The monetary authority's mandate runs in the chapter's pins, and Chapter 17 sets out how the tiers divide power.",
+      "links": [
+        {"label": "Chapter 10's pins", "path": "book-1/10-what-money-cannot-buy.pins.nibli"},
+        {"label": "Chapter 17: which tier holds which power", "path": "book-1/17-how-public-power-is-built.md#which-tier-holds-which-power"}
+      ]
+    },
+    {
+      "chapter": 13,
+      "title": "The remaining particular orders",
+      "text": "The chapter states what each use needs in one table and follows the food rule through a farm and a community that lives by subsistence. The remaining particular orders, from treatment and habitat restoration to record correction and monitoring, run in the ecological and animal family's cases.",
+      "links": [
+        {"label": "The ecological and animal cases", "path": "tests/pins/ecology"}
+      ]
+    },
+    {
+      "chapter": 17,
+      "title": "What an exit settlement must provide",
+      "text": "The chapter states the lawful exit route. What a settlement must provide for the people affected, from continuing protection for those who lose membership to treaty succession and the records that affect individual rights, runs in the exit-settlement cases.",
+      "links": [
+        {"label": "The exit-settlement cases", "path": "tests/pins/public-safety/external/exit-settlement"}
+      ]
+    },
+    {
+      "chapter": 20,
+      "title": "The rest of the defence limits",
+      "text": "The chapter follows one authorisation of force abroad. Ratification through a predeclared alternate, the evidence a cyber attack needs before it counts as an armed attack, and the suspension of an arms transfer on credible evidence of misuse run in the public-safety family's cases.",
+      "links": [
+        {"label": "The composed defence cases", "path": "tests/pins/public-safety/composed"},
+        {"label": "The public-safety core cases", "path": "tests/pins/public-safety/core"}
       ]
     },
     {
@@ -55,6 +99,14 @@
         {"label": "Chapter 24's pins", "path": "book-1/24-findings-about-people.pins.nibli"},
         {"label": "A route that omits the signer checks", "path": "book-1/source/counterfactual/unguarded-pen.pins.nibli"},
         {"label": "The same route with the checks removed", "path": "book-1/source/counterfactual/unguarded-pen-and-no-conjuncts.pins.nibli"}
+      ]
+    },
+    {
+      "chapter": 27,
+      "title": "The rest of the rules on protective powers",
+      "text": "The chapter states each coercive measure's requirements in one table. The rest, from unarmed civil assistance and the classified budget annex to employment vetting and the route for disclosing unlawful surveillance, runs in the public-safety family's cases.",
+      "links": [
+        {"label": "The public-safety core cases", "path": "tests/pins/public-safety/core"}
       ]
     }
   ]

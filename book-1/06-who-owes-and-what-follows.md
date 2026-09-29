@@ -130,81 +130,32 @@ move a bearer's performance while the claim on the other side stands.
 Continuity needs a separately named alternate. Failing to answer does not
 create the bearer's own excuse.
 
-## Economic wrongs, one route at a time
+## The same chain in other domains
 
-The same sequence needs different actions for different wrongs. A duty to
-review identifies an entry point; the remedy must reach the particular harm.
+The sequence runs the same way wherever a duty is owed, and each remedy must
+reach its own harm. A wage denial needs a route to payment recovery. A failure
+of housing continuity may need interim provision or an eviction stay, an
+unlawful waiver needs review of the contract, and a defective tax or credit
+decision needs its own correction; none can borrow an unrestricted remedy from
+the general word *economic*. *Work, Pay and Contribution* (Chapter 9) and
+*What Money Cannot Buy* (Chapter 10) follow those routes.
 
-A wage denial needs a route to payment recovery. A failure of housing
-continuity may need interim provision or an eviction stay. An unlawful waiver
-needs review of the contract, while a defective tax or credit decision needs
-its own correction. None can borrow an unrestricted remedy from the general
-word *economic*.
-
-The source separately provides for unsafe or disguised employment, unlawful
-licensing, consumer harm, insolvency, expired private-power findings and
-scarcity shortfalls. Remedies can include reinstatement, accommodation,
-restitution, compensation, licence limits and protection against retaliation.
-Structural measures such as a public option, restructuring, separation,
-receivership or acquisition require their own grounds and must preserve
-workers, users, ordinary savers, floor recipients and essential services.
-
-## A way in that does not need the operator's permission
-
-Anyone may request justice review without the original operator's permission.
-A defect found independently can withdraw reliance on the affected
-process or remedy and require evidence preservation, correction and relief.
-A defect recorded against the wrong case or source version leaves somebody
-else's remedy standing.
-
-A positively recorded failure to respond can transfer the outstanding duty
-to an independent alternate. The prior duties of access, survivor support and
-protection against retaliation hold before and apart from those specific
-findings. The chapter on a way to be heard follows the route from a request to
-a remedy.
-
-## When the actor is a protective power
-
-A person, supporter, association or rights advocate can reach an independent
-responding office without the acting body's permission or a complete official
-record. An independently reviewed finding of unlawful force, a prohibited
-practice, missing records, destruction or falsification creates the
-corresponding care, evidence-preservation, correction and remedy duties.
-
-Where the affected order is represented, withdrawal must identify that order's
-source, person, case, revision, scope and period, and an unrelated remedy stays
-in force. A case remedy, general constitutional invalidation and review of a
-court's composition require their distinct court authorities. Care, access and
-protection against retaliation are owed before any of those conclusions.
-
-A positively recorded missed deadline sends the unanswered review duty to
-an uninvolved alternate.
-
-## When the finding is about conditions or an animal
-
-An environmental or animal finding needs its own current basis, jurisdiction,
-scope, authorised evidence, independent review and end. A defect found
-independently places a duty on a named responding office even if the original
-actor withholds its record. Conflicting decisive evidence withholds reliance; an
-unauthorised assertion cannot veto a sound record.
+Anyone may request justice review without the original operator's permission,
+and a positively recorded failure to respond moves the outstanding duty to an
+independent alternate; *A Way to Be Heard* (Chapter 21) follows the route from
+a request to a remedy. A person can likewise reach an independent responding
+office about a protective power without the acting body's permission. An
+independently reviewed finding of unlawful force, a prohibited practice, or a
+missing, destroyed or falsified record creates the corresponding care,
+evidence-preservation, correction and remedy duties; *The One Thing Taken*
+(Chapter 27) follows the limits on force.
 
 Urgent protection comes before the paperwork. In the chapter's example, an
 urgent animal-care request produces a duty on the State before any owner, taxon
-or complete official record is recorded. The duty protects the animal without
-making it a human person.
-
-The remedies remain bounded: rescue and care, custody or rehoming, cessation
-of a use, licence review, restitution of care costs, habitat repair and
-structural correction require their respective authority and scope. An
-advocacy claim asks for such an order and remains a request until one is made.
-Inspection permission covers inspection, without a general power to enter,
-search or seize. Any finding of human responsibility retains its court,
-assistance, defence and appeal safeguards.
-
-Correction does not automatically renew harmful authority, and a renamed
-permit cannot reuse an ended period. Keeping a past disposition available for
-comparison is different from keeping its legal force alive. Certified
-nonresponse transfers an unanswered duty, without granting approval.
+or complete official record is recorded, and the duty protects the animal
+without making it a human person. *A Place in Which Life Remains Possible*
+(Chapter 12) and *Creatures Without a Ballot* (Chapter 13) follow findings about
+conditions and animals.
 
 ## The duty to begin without a request
 
