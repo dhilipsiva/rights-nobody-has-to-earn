@@ -48,9 +48,15 @@ A fix would take capacity, staff and money, which belong to the second book. On
 the constitution's side, if plans with deadlines still lag behind certified
 patterns, the interim measures would need to arrive sooner and reach further,
 and that would be a change to this constitution rather than to its operation.
-The courts whose structural orders *Who Owes, and What Follows* (Chapter 6)
-discusses ordered plans; what followed their orders is evidence this book has
-not examined, and it bears directly on whether the route works.
+What follows such orders is mixed and turns on the jurisdiction. After the
+Grootboom judgment the Wallacedene community received temporary relief and a
+place in phase four of a ten-phase housing development, and Irene Grootboom
+died in her shack almost eight years on, still waiting for her
+house;[^wallacedene-after] Charles Sabel and William Simon judged it too early
+to say how well American structural remedies work once they move from judicial
+decrees to negotiated, revisable plans.[^structural] The later course of the
+Colombian and Indian orders that *Who Owes, and What Follows* (Chapter 6)
+discusses is unexamined here, and it bears directly on whether the route works.
 
 ## Open standards are read narrowly
 
@@ -88,7 +94,9 @@ anyway, the standard should be defined more closely by amendment.
 
 Almost every adverse act waits for attesters and a reviewer who are apart from
 the actor. Capture defeats those safeguards while leaving them formally intact,
-which is why it ranks third.
+which is why it ranks third. It ranks above the integrity of inputs because the
+checks on inputs are themselves reviews: a captured reviewer defeats the
+independent witnesses and reviewers on which every input's integrity relies.
 
 The failure would show as one coalition directing nominally separate
 selectors, reviewers whose outcomes track who appointed them rather than the
@@ -206,3 +214,13 @@ nothing about whether anyone acts on them.
 
 The optional method that follows explains how the formal checks work and
 where their conclusions stop.
+
+[^wallacedene-after]: Matthew Wilhelm-Solomon, "Irene Grootboom's unbuilt house",
+    *New Frame*, 5 October 2020, [republished by Public Interest Legal
+    Services](https://www.pils.org.za/irene-grootbooms-unbuilt-house/); the
+    case that opens this Part follows the same reporting.
+
+[^structural]: Charles F. Sabel and William H. Simon, ["Destabilization Rights: How
+    Public Law Litigation Succeeds"](https://scholarship.law.columbia.edu/faculty_scholarship/737),
+    *Harvard Law Review* 117 (2004), 1016–1101, at 1016 and 1100–1101. The
+    article concerns American institutional-reform litigation.

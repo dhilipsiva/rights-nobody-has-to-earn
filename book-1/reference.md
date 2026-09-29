@@ -578,7 +578,7 @@ optional method. A common term lists the chapters that use it most.
 
 ### G
 
-- Grootboom: Part I case, 6, Part V case
+- Grootboom: Part I case, 6, Part V case, 30
 
 ### H
 

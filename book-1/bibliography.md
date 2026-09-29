@@ -185,7 +185,7 @@ use are also recorded, with their sources, in the book's evidence registry.
 
 ## S
 
-- Charles F. Sabel and William H. Simon, ["Destabilization Rights: How Public Law Litigation Succeeds"](https://scholarship.law.columbia.edu/faculty_scholarship/737), *Harvard Law Review* 117 (2004), 1016–1101, at 1016 and 1100–1101. Cited in Chapter 6.
+- Charles F. Sabel and William H. Simon, ["Destabilization Rights: How Public Law Litigation Succeeds"](https://scholarship.law.columbia.edu/faculty_scholarship/737), *Harvard Law Review* 117 (2004), 1016–1101, at 1016 and 1100–1101. Cited in Chapters 6 and 30.
 - Amartya Sen, *Poverty and Famines: An Essay on Entitlement and Deprivation* (Oxford: Clarendon Press, 1981), chapter 6, on the 1943 Bengal famine, with chapters 1 and 5; [doi:10.1093/0198284632.001.0001](https://doi.org/10.1093/0198284632.001.0001). Cited in Chapter 5.
 - M. J. Sergot, F. Sadri, R. A. Kowalski, F. Kriwaczek, P. Hammond and H. T. Cory, [“The British Nationality Act as a Logic Program”](https://doi.org/10.1145/5689.5920), *Communications of the ACM* 29(5) (1986), 370–386, at 379 and 381–382. Cited in the method.
 - Ayelet Shachar, *Multicultural Jurisdictions: Cultural Differences and Women's Rights* (Cambridge: Cambridge University Press, 2001), [doi:10.1017/CBO9780511490330](https://doi.org/10.1017/CBO9780511490330), on the "paradox of multicultural vulnerability"; the book's abstract was checked. Cited in Chapter 15.
@@ -234,7 +234,7 @@ use are also recorded, with their sources, in the book's evidence registry.
 - [Well-being of Future Generations (Wales) Act 2015](https://www.legislation.gov.uk/anaw/2015/2/contents), ss. 17–20 and 22, as enacted. Cited in Chapter 12.
 - Christopher Heath Wellman, "Immigration and Freedom of Association", *Ethics* 119, no. 1 (2008): 109-141, [doi:10.1086/592311](https://doi.org/10.1086/592311), at pp. 109, 119 and 141 as quoted in Sarah Fine, "Freedom of Association Is Not the Answer", *Ethics* 120 (2010): 338-356. Cited in Chapter 15.
 - Stuart White, [*The Civic Minimum: On the Rights and Obligations of Economic Citizenship*](https://doi.org/10.1093/0198295057.001.0001) (Oxford University Press, 2003). Cited in Chapter 9.
-- Matthew Wilhelm-Solomon, "Irene Grootboom's unbuilt house", *New Frame*, 5 October 2020, [republished by Public Interest Legal Services](https://www.pils.org.za/irene-grootbooms-unbuilt-house/). Cited in Part V's opening case.
+- Matthew Wilhelm-Solomon, "Irene Grootboom's unbuilt house", *New Frame*, 5 October 2020, [republished by Public Interest Legal Services](https://www.pils.org.za/irene-grootbooms-unbuilt-house/). Cited in Chapter 30; Part V's opening case.
 
 ## Y
 

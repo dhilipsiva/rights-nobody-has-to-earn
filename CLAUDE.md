@@ -135,6 +135,35 @@ reinstate the retired tooling or workflow.
 Grouped by kind. Dates in each heading are the ratification dates; a ruling
 that was later implemented or narrowed carries that supersession inline.
 
+### Item 78 — Chapter 30's first failure, surveyed, 2026-09-29
+
+Chapter 30 ranked the State's failure to perform at scale first while saying
+that what followed the structural orders the book relies on was unexamined.
+Under the resolve-before-defending rule that left the ranking asserted rather
+than argued. The chapter now surveys what the registry already records: after
+the Grootboom judgment the Wallacedene community received temporary relief and
+a place in phase four of a ten-phase housing development, and Irene Grootboom
+died almost eight years on still waiting for her house; Sabel and Simon judged
+it too early to say how well American structural remedies work once they move
+to negotiated plans. The follow-through is mixed and turns on the
+jurisdiction, and the later course of the Colombian and Indian orders stays
+named as unexamined rather than filled in. The chapter also says why capture
+ranks above the integrity of inputs: the checks on inputs are themselves
+reviews, which a captured reviewer defeats. Fiscal feasibility stays fenced to
+the second book with the signs that would show it failing, and no staffing,
+timing or capacity is promised.
+
+No source is new. Two claim bindings tie the survey to
+`grootboom-2020-unbuilt-house` and `sabel-simon-2004-destabilization-rights`
+(181), and the works cited now list Chapter 30 among the places citing both.
+The narrative-register decision records the item, and the exact prose is
+`session-drafted, author-approved under delegated approval (2026-09-13)`.
+
+No rule, pin or suite changes, so item 73's complete run on the same formal
+inputs stands. `registry/check.py` passes with 224 claims; the
+claim-discipline, reference and coverage development tests, the prose check
+and the works-cited and index `--check` modes pass.
+
 ### Item 77 — plain-language on-ramps, 2026-09-29
 
 Where a chapter used a person, office or term before explaining it, it now

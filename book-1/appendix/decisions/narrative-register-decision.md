@@ -39,6 +39,23 @@ appear in a derived section, they remain evidence about other societies rather
 than a substitute for derived ordinary life, and no case gains an invented inner
 life.
 
+## Chapter 30's first failure, surveyed — item 78, 2026-09-29
+
+Chapter 30 ranks the State's failure to perform at scale first while
+admitting that what followed the structural orders it relies on was
+unexamined. It now surveys what the registry already holds: after the
+Grootboom judgment the Wallacedene community received temporary relief and a
+place in a phased housing development, and Irene Grootboom died almost eight
+years on still waiting for her house, while Sabel and Simon judged it too
+early to say how well American structural remedies work. It still says the
+later course of the Colombian and Indian orders is unexamined. The chapter
+also gives the reason capture ranks above the integrity of inputs: the checks
+on inputs are themselves reviews, which capture defeats. Fiscal feasibility
+stays fenced to the second book with the signs that would show it failing. No
+source is new; two bindings tie the survey to its registry entries. The exact
+prose is `session-drafted, author-approved under delegated approval
+(2026-09-13)`.
+
 ## Plain-language on-ramps — item 77, 2026-09-29
 
 Where a chapter used a person, office or term before explaining it, it now
