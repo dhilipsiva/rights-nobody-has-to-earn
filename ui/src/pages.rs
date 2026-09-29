@@ -268,6 +268,7 @@ pub fn Start() -> Element {
                 li { NavLink { to: format!("{PREFIX}constitution/"), "The constitution in numbered plain-language articles" } }
                 li { a { href: "{PREFIX}#dossier", "The dossier of limits, costs and objections" } }
                 li { NavLink { to: format!("{PREFIX}limits/"), "What the design and its checks leave open" } }
+                li { NavLink { to: format!("{PREFIX}reconsider/"), "What would change each choice, and who bears its cost" } }
                 li { NavLink { to: format!("{PREFIX}second-engine/"), "The rules replayed in a second engine" } }
             }
         }
@@ -429,7 +430,49 @@ pub fn Design() -> Element {
             ul {
                 li { NavLink { to: format!("{PREFIX}constitution/"), "Every article in full" } }
                 li { NavLink { to: format!("{PREFIX}read/"), "The book map" } }
+                li { NavLink { to: format!("{PREFIX}reconsider/"), "What would change each choice, and who bears its cost" } }
                 li { NavLink { to: format!("{PREFIX}limits/"), "What the design and its checks leave open" } }
+            }
+        }
+    } }
+}
+/// One index of the reconsider page, its groups in order.
+fn reconsider_groups(id: &str, heading: &str, groups: &'static [ReconsiderGroup]) -> Element {
+    rsx! {
+        section { id: "{id}", class: "q-card pad", aria_label: "{heading}",
+            h2 { "{heading}" }
+            for group in groups.iter() {
+                h3 { id: "{group.id}", class: "design-commitment", "{group.title}" }
+                ul { class: "reconsider-entries",
+                    for entry in group.entries.iter() {{
+                        let stem = entry.file.trim_start_matches("book-1/").trim_end_matches(".md").to_owned();
+                        let link = section_link(&stem, &entry.heading).unwrap_or_else(|| chapter(entry.chapter).path.clone());
+                        rsx! { li { "data-entry": "{entry.chapter}",
+                            blockquote { p { "{entry.text}" } }
+                            p { class: "design-source", a { href: "{link}", "Chapter {entry.chapter}: {entry.title}" } }
+                        } }
+                    }}
+                }
+            }
+        }
+    }
+}
+#[component]
+pub fn Reconsider() -> Element {
+    let doc = reconsider();
+    rsx! { div { class: "container page assurance-page",
+        PageHeading { eyebrow: "the arguments' own conditions", title: "{doc.title}",
+            p { "{doc.note}" }
+            p { a { href: "#conditions", "What would change a choice" } " · " a { href: "#costs", "Who bears the costs" } }
+        }
+        {reconsider_groups("conditions", "What would change a choice", &doc.conditions)}
+        {reconsider_groups("costs", "Who bears the costs", &doc.costs)}
+        nav { class: "q-card pad", aria_label: "Where next",
+            h2 { "Where next" }
+            ul {
+                li { NavLink { to: format!("{PREFIX}limits/"), "What the design and its checks leave open" } }
+                li { NavLink { to: format!("{PREFIX}design/"), "The design in ten minutes" } }
+                li { NavLink { to: format!("{PREFIX}read/"), "The book map" } }
             }
         }
     } }

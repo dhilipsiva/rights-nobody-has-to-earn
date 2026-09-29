@@ -30,12 +30,12 @@ def main():
     content = json.loads((UI/'dist/rights-nobody-has-to-earn/content.json').read_text(encoding='utf-8'))
     cases = json.loads((UI/'generated/cases.json').read_text(encoding='utf-8'))['cases']
     expected = json.loads((UI/'tests/expectations.json').read_text(encoding='utf-8'))
-    routes = ['', 'start/', 'read/', 'search/', 'constitution/', 'cases/', 'second-engine/', 'limits/', 'design/'] + [f'read/{Path(p["source"]).stem}/' for p in content['pages']]
+    routes = ['', 'start/', 'read/', 'search/', 'constitution/', 'cases/', 'second-engine/', 'limits/', 'design/', 'reconsider/'] + [f'read/{Path(p["source"]).stem}/' for p in content['pages']]
     manifest = json.loads((UI.parent/'book-1/contents.json').read_text(encoding='utf-8'))
     inputs = len(manifest['front']) + len(manifest['back']) + sum(
         (p.get('opener', {}).get('status') == 'landed') + sum(c['status'] == 'landed' for c in p['chapters'])
         for p in manifest['parts'])
-    assert len(content['pages']) == inputs and len(routes) == inputs + 9 and len(cases) == 91
+    assert len(content['pages']) == inputs and len(routes) == inputs + 10 and len(cases) == 91
     for path in ['game.json', 'cases.json']:
         def inspect(value):
             if isinstance(value, dict):
@@ -78,6 +78,12 @@ def main():
     assert design_page.count('data-article=') == len(design_lines), 'a line of the design summary is missing'
     assert all(f'constitution/#article-{l["article"]}"' in design_page for l in design_lines), 'a design line lacks its article link'
     assert '/design/' in home, 'the home does not link the design summary'
+    reconsider = json.loads((UI/'reconsider.json').read_text(encoding='utf-8'))
+    reconsider_page = (UI/'dist/rights-nobody-has-to-earn/reconsider/index.html').read_text(encoding='utf-8')
+    entries = sum(len(g['entries']) for g in reconsider['conditions'] + reconsider['costs'])
+    assert reconsider_page.count('data-entry=') == entries, 'an entry of the reconsider page is missing'
+    assert 'id="conditions"' in reconsider_page and 'id="costs"' in reconsider_page, 'the reconsider page lacks an index'
+    assert '/reconsider/' in start_page, 'the start page does not link the reconsider page'
     report = {'routes':len(routes), 'reader_inputs':inputs, 'screens':[], 'engine':[], 'contrast':[]}
     errors = []
     with sync_playwright() as p:

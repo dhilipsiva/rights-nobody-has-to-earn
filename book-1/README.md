@@ -85,13 +85,17 @@ Add `--summary` instead to build the plain-language summary edition,
 as the numbered articles of `../ui/articles.json`, with the chapters that argue
 each. It is the same text the companion publishes at `constitution/`.
 
-Three parts of the back matter are generated and must be regenerated when
+Four parts of the back matter are generated and must be regenerated when
 their sources change: `tools/book_diagrams.py` draws the diagrams in
 `diagrams/`, each shown in the back matter beside its prose equivalent;
 `tools/bibliography.py` writes the works cited in `bibliography.md` from the
-notes; and `tools/book_index.py` writes the index at the end of `reference.md`
-from the text. The book-builder tests fail when the works cited or the index
-fall behind.
+notes; `tools/book_index.py` writes the index at the end of `reference.md`
+from the text; and `tools/reconsider_index.py` lists in `reference.md` the
+chapters whose arguments name each kind of evidence that would change a choice
+and each group of people who bear its cost, from the argument sections and
+`source/reconsider-source.json`, and writes the companion's quoted page. The
+book-builder tests fail when the works cited, the index or those lists fall
+behind.
 
 The 2026-09-25 reading copies hold 40 ordered inputs: 97,988 Markdown words,
 HTML comments aside, of which the derived chapters' derived text holds 49,906

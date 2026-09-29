@@ -224,7 +224,7 @@ unimplemented until the items named here land.
 
 ## Ordered revision backlog toward 9.5+
 
-Status 2026-09-29: items 01–65, 67–80 and 82–86 are complete and recorded in
+Status 2026-09-29: items 01–65, 67–80 and 82–87 are complete and recorded in
 `CLAUDE.md`; optional item 66 is closed without outside validation. The
 [2026-09-25 revision review](reviews/2026-09-25-revision-review.md) rates the
 revised manuscript 8/10 and publisher readiness 7.5/10: claim discipline holds
@@ -233,8 +233,9 @@ chapters (6, 13, 17, 27), cost-paragraph/argument restatement at chapter
 endings, and length for the D1 serious non-specialist reader. A fresh
 chapter-by-chapter pass (2026-09-29) concurs at ~7.1/10 average, weakest at
 Ch. 7 and Ch. 27. No remaining item is an error the pins contradict. Item
-81 is optional; item 87, merged below, is navigation work. Chapter numbers
-refer to the [current reading sequence](book-1/contents.json).
+81 is optional, and what remains is the submissions below, which the author
+sends. Chapter numbers refer to the [current reading
+sequence](book-1/contents.json).
 
 ### The merged list, *From 8/10 to 9.5+*
 
@@ -296,8 +297,8 @@ Where each of its items went:
 | 5. Compress Chapters 17 and 22 | 73 and 77 (done) |
 | 6. The design in ten minutes | 86 (done) |
 | 7. Pins a non-programmer can read | 77 and 84 (done) |
-| 8. What would change my mind | 87 |
-| 9. Costs and who bears them | 87 |
+| 8. What would change my mind | 87 (done) |
+| 9. Costs and who bears them | 87 (done) |
 | 10. A second-engine page | 85 (done) |
 | 11. A known-defects page | 85 (done) |
 | 12. How to contribute | 82 (done) |
@@ -322,25 +323,6 @@ From the merged list: its second engine is built (item 50), and the method
 reports it as a cross-check within the project, so its request to build one
 is met. What it adds here is an outside reimplementation and a red team run by
 someone else, both already named above.
-
-### 87. Reconsideration conditions and costs, collected
-
-Why: each derived chapter's argument section says what would change its
-author's mind and who bears the choice's cost, and nothing gathers them. From
-the merged list's items 8 and 9.
-Do: after item 74 fixes where each chapter keeps its cost accounting,
-generate two indexes from the argument sections, as the works cited and the
-index are generated: the conditions grouped by theme and the costs grouped by
-who bears them, each entry quoted and linked to its section. Most sections say
-"I would reconsider"; Chapter 8 says "I would reopen" and Chapter 24 "I would
-move toward … on evidence", so extraction reads each section's closing
-conditions rather than one phrase and fails when a derived chapter's section
-yields none. Place them in the reference's back matter and the companion; the
-opening note may point to them in one sentence. Quoting keeps them indexes
-rather than new argument or a second paraphrase.
-Close when: the generator's `--check` passes and fails on a chapter planted
-without a condition; the book-builder tests pass; and prose lint `--check`
-shows no regression.
 
 ## Licence
 

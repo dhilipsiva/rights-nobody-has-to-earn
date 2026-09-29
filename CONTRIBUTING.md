@@ -55,8 +55,11 @@ existing claim bindings consistent. Distinguish a study's finding from your
 interpretation. A retrieval date records an actual check, not an assumption
 that a source remains current. Data snapshots retain their upstream terms.
 After changing a note, run `python3 tools/bibliography.py` so the works cited
-follow it, and after changing chapter text, `python3 tools/book_index.py` for
-the index; the book-builder tests fail until both are current.
+follow it; after changing chapter text, `python3 tools/book_index.py` for the
+index; and after changing an argument section,
+`python3 tools/reconsider_index.py` for the lists of what would change each
+choice and who bears its cost. The book-builder tests fail until all three are
+current.
 
 **Formal changes.** Include a case that demonstrates the failure, the proposed
 repair, and controls for legitimate behavior that must remain. Edit an owning

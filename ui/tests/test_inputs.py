@@ -546,5 +546,26 @@ class DesignSummary(unittest.TestCase):
             self.assertIn(chapter_words, chapter, name)
 
 
+class ReconsiderPage(unittest.TestCase):
+    """The companion's page of what would change each choice and who bears its
+    cost is generated from the argument sections and must follow them."""
+
+    def test_the_page_matches_its_sources(self):
+        import sys
+        sys.path.insert(0, str(ROOT/'tools'))
+        import reconsider_index
+        self.assertEqual(reconsider_index.render(reconsider_index.build()),
+                         (UI/'reconsider.json').read_text(encoding='utf-8'),
+                         'ui/reconsider.json is stale; run python3 tools/reconsider_index.py')
+
+    def test_every_entry_links_a_section_of_its_chapter(self):
+        page = json.loads((UI/'reconsider.json').read_text(encoding='utf-8'))
+        for group in page['conditions'] + page['costs']:
+            self.assertTrue(group['entries'], group['id'])
+            for entry in group['entries']:
+                text = (ROOT/entry['file']).read_text(encoding='utf-8')
+                self.assertIn(f"\n## {entry['heading']}\n", text, entry['file'])
+
+
 if __name__ == '__main__':
     unittest.main()

@@ -135,6 +135,69 @@ reinstate the retired tooling or workflow.
 Grouped by kind. Dates in each heading are the ratification dates; a ruling
 that was later implemented or narrowed carries that supersession inline.
 
+### Item 87 — what would change each choice, and who bears it, 2026-09-29
+
+Each derived chapter's argument ends with the evidence that would change its
+choice and says who bears the choice's cost, and nothing gathered them.
+`tools/reconsider_index.py` now reads both from the chapters, as the works
+cited and the index are read, into two indexes: the closing conditions grouped
+by the kind of evidence they name — an alternative that serves as well, the
+rule costing more than it protects, a safeguard failing in practice, a line
+drawn in the wrong place — and the costs grouped by who bears them, in eleven
+groups from people left waiting to animals and people outside the republic.
+The closing conditions are read from the last paragraph of the argument that
+states one, from its first sentence saying what the author would reconsider,
+reopen, add, narrow, redraw or move toward, so Chapter 8's "I would add" and
+Chapters 23 and 24's "I would move toward" are read like the rest. Costs are
+read where item 74 left each chapter's account: the argument, and for the
+eight chapters whose argument cites costs "counted above", the derived section
+that counts them, from which at least one cost must be quoted.
+`book-1/source/reconsider-source.json` assigns each quoted sentence its kinds
+or bearers by a phrase it contains. A closing sentence with no assignment, an
+assignment whose sentence has gone, and a chapter with no condition or no
+quoted cost each fail; a sentence naming several kinds or bearers is listed
+under each, 69 condition entries and 88 cost entries in all.
+
+The companion quotes both at `reconsider/`, each entry linked to the section
+it comes from, with a Markdown copy, linked from the start page and the design
+summary. The book lists, in a generated region of the reference's map after
+the choices and their arguments, the chapters for each kind and each group,
+each number linked to its section, and gives the companion's address. It
+quotes nothing, because the back matter counts against the rule that the book
+stays majority-derived: quoting would add about 4,500 words where the margin
+was 244. The lists take 261 words. The opening paragraph of "Where a decision
+belongs", 56 words restating the glossary's entries for the protected core and
+an institutional mechanism, was removed to offset them, and the margin is now
+39 words (48,596 derived against 48,557 argued or exempt). The opening note is
+unchanged. With this item every entry of the merged list is placed.
+
+Six tests in `tests/test_reconsider_index.py` hold the generator: `--check`
+passes on the committed outputs and fails on a copy in which Chapter 7 states
+no condition, the same copy unplanted passing; a closing sentence without an
+assignment and an assignment whose sentence has gone are found; costs counted
+above need the section that counts them; every derived chapter appears in both
+indexes and every quotation in its chapter; and the book lists chapters while
+the companion quotes. The book-builder test of the generated back matter now
+also holds these lists current, two companion input tests hold the page to its
+sources and its sections, a library test checks each entry's chapter, and the
+browser suite checks every entry on the exported page and the start page's
+link. The contribution guide and the book README name the command. The exact
+prose is `session-drafted, author-approved under delegated approval
+(2026-09-13)`.
+
+No rule, pin or suite changes, so item 84's complete run on the same formal
+inputs stands. The complete authoring development run passes 153 tests with
+five declared ignored, and the six generator tests, twenty book-builder tests,
+thirty-two companion input tests and nine library tests pass, as do the
+companion's formatting check, the prose check and the works-cited and index
+`--check` modes. The web build compiles for wasm32 and the static exporter
+renders 50 routes; the desktop build type-checks inside `ui/shell.nix`; and
+the browser suite, with its engine-reasoning matrix skipped (partial), passes
+on all 50 routes, with screenshots of the new page at 390 and 1,280 pixels
+inspected. The review copies rebuild: the PDF has 252 pages with the lists on
+page 232, and the EPUB passes EPUBCheck 5.3.0, run through nix, with no errors
+or warnings.
+
 ### Item 86 — the design in ten minutes, 2026-09-29
 
 A newcomer could not see the whole design without reading about 98,000 words.

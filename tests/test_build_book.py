@@ -230,10 +230,16 @@ class BackMatterTests(unittest.TestCase):
     """The generated back matter follows the text it is drawn from."""
 
     def test_works_cited_and_index_are_current(self):
+        import contextlib
         import importlib.util
+        import io
+        def reconsider_current(m):
+            with contextlib.redirect_stdout(io.StringIO()), contextlib.redirect_stderr(io.StringIO()):
+                return m.main(["--check"]) == 0
         for name, check in (("bibliography", lambda m: m.render() == m.OUTPUT.read_text(encoding="utf-8")),
                             ("book_index", lambda m: m.replace(m.TARGET.read_text(encoding="utf-8"))
-                             == m.TARGET.read_text(encoding="utf-8"))):
+                             == m.TARGET.read_text(encoding="utf-8")),
+                            ("reconsider_index", reconsider_current)):
             spec = importlib.util.spec_from_file_location(name, book.ROOT / "tools" / f"{name}.py")
             module = importlib.util.module_from_spec(spec)
             spec.loader.exec_module(module)

@@ -1,0 +1,1026 @@
+{
+  "license": "CC-BY-4.0",
+  "title": "What would change a choice, and who bears it",
+  "note": "Each of Chapters 1 to 28 ends its argument with the evidence that would change its choice, and says who bears the choice's cost. They are quoted here as the chapters write them: the conditions grouped by the kind of evidence they name, the costs by who bears them. A sentence that names several appears under each.",
+  "book_intro": "Each argument ends with the evidence that would change its choice and says who bears its cost. The companion quotes them all at [dhilipsiva.dev/rights-nobody-has-to-earn/reconsider](https://dhilipsiva.dev/rights-nobody-has-to-earn/reconsider/).",
+  "kinds": [
+    {
+      "id": "alternative",
+      "title": "An alternative that serves as well"
+    },
+    {
+      "id": "costlier",
+      "title": "The rule costing more than it protects"
+    },
+    {
+      "id": "failing",
+      "title": "A safeguard failing in practice"
+    },
+    {
+      "id": "line",
+      "title": "A line drawn in the wrong place"
+    }
+  ],
+  "bearers": [
+    {
+      "id": "waiting",
+      "title": "People left waiting"
+    },
+    {
+      "id": "harmed",
+      "title": "People harmed or left unprotected"
+    },
+    {
+      "id": "concerned",
+      "title": "The person concerned, and those close to them"
+    },
+    {
+      "id": "claimants",
+      "title": "Claimants who would have won"
+    },
+    {
+      "id": "forgone",
+      "title": "People forgoing a gain or livelihood"
+    },
+    {
+      "id": "providers",
+      "title": "Providers, owners and firms"
+    },
+    {
+      "id": "funders",
+      "title": "Whoever funds public provision"
+    },
+    {
+      "id": "offices",
+      "title": "Public offices and reviewers"
+    },
+    {
+      "id": "majorities",
+      "title": "Majorities, voters and the public"
+    },
+    {
+      "id": "animals",
+      "title": "Animals"
+    },
+    {
+      "id": "outside",
+      "title": "People outside the republic"
+    }
+  ],
+  "chapters": {
+    "1": {
+      "conditions": [
+        {
+          "needle": "either of two findings",
+          "kinds": [
+            "alternative",
+            "costlier"
+          ]
+        },
+        {
+          "needle": "Either would reverse",
+          "continues": true
+        }
+      ],
+      "costs": [
+        {
+          "needle": "My rule puts the cost on whoever funds provision",
+          "bearers": [
+            "funders",
+            "claimants"
+          ]
+        }
+      ]
+    },
+    "2": {
+      "conditions": [
+        {
+          "needle": "integrated records with contest before effect",
+          "kinds": [
+            "alternative",
+            "costlier"
+          ]
+        }
+      ],
+      "costs": [
+        {
+          "needle": "the cost falls hardest on those who struggle to explain themselves",
+          "bearers": [
+            "concerned"
+          ]
+        },
+        {
+          "needle": "A need written in one office's file can go unseen",
+          "bearers": [
+            "concerned"
+          ]
+        },
+        {
+          "needle": "the people it would protect wait meanwhile",
+          "bearers": [
+            "harmed"
+          ]
+        }
+      ]
+    },
+    "3": {
+      "conditions": [
+        {
+          "needle": "reconsider the named goods if cash",
+          "kinds": [
+            "alternative"
+          ]
+        },
+        {
+          "needle": "reconsider the unconditional debt only on evidence",
+          "kinds": [
+            "alternative"
+          ]
+        }
+      ],
+      "costs": [
+        {
+          "needle": "whoever funds the common tier pays",
+          "bearers": [
+            "funders"
+          ]
+        },
+        {
+          "needle": "Someone housed warmly on insecure terms",
+          "bearers": [
+            "concerned"
+          ]
+        },
+        {
+          "needle": "Recipients who would rather choose for themselves",
+          "bearers": [
+            "concerned"
+          ]
+        }
+      ]
+    },
+    "4": {
+      "conditions": [
+        {
+          "needle": "witnessed receipts proved easy to forge",
+          "kinds": [
+            "failing",
+            "costlier",
+            "alternative"
+          ]
+        }
+      ],
+      "costs": [
+        {
+          "needle": "Its cost falls on honest providers",
+          "bearers": [
+            "providers",
+            "funders",
+            "concerned"
+          ]
+        }
+      ]
+    },
+    "5": {
+      "conditions": [
+        {
+          "needle": "permitted grounds proved to favour the same groups",
+          "kinds": [
+            "failing"
+          ]
+        },
+        {
+          "needle": "reconsider the proof requirement",
+          "kinds": [
+            "costlier"
+          ]
+        },
+        {
+          "needle": "reconsider the refusal to count years",
+          "kinds": [
+            "line"
+          ]
+        }
+      ],
+      "costs": [
+        {
+          "needle": "the loss falls on claimants whose longer expected lives",
+          "bearers": [
+            "claimants"
+          ]
+        },
+        {
+          "needle": "Proof also costs time",
+          "bearers": [
+            "waiting"
+          ]
+        }
+      ]
+    },
+    "6": {
+      "conditions": [
+        {
+          "needle": "deferential review reaches people in desperate need",
+          "kinds": [
+            "alternative",
+            "failing"
+          ]
+        }
+      ],
+      "costs": [
+        {
+          "needle": "The Assembly loses the power to trade the minimum",
+          "bearers": [
+            "majorities",
+            "funders"
+          ]
+        }
+      ]
+    },
+    "7": {
+      "conditions": [
+        {
+          "needle": "two findings together",
+          "kinds": [
+            "costlier",
+            "alternative"
+          ]
+        }
+      ],
+      "costs": [
+        {
+          "needle": "Selin bears both waits",
+          "bearers": [
+            "waiting"
+          ]
+        },
+        {
+          "needle": "A request filed with an office lacking authority",
+          "bearers": [
+            "waiting"
+          ]
+        },
+        {
+          "needle": "whoever that search might have protected bears",
+          "bearers": [
+            "harmed"
+          ]
+        }
+      ]
+    },
+    "8": {
+      "conditions": [
+        {
+          "needle": "add a third ground",
+          "kinds": [
+            "line"
+          ]
+        },
+        {
+          "needle": "reopen the list only on evidence",
+          "kinds": [
+            "alternative"
+          ]
+        },
+        {
+          "needle": "narrow the suspensive challenge",
+          "kinds": [
+            "costlier"
+          ]
+        }
+      ],
+      "costs": [
+        {
+          "needle": "the people a restriction would protect wait while it does",
+          "bearers": [
+            "harmed",
+            "offices"
+          ]
+        },
+        {
+          "needle": "people hurt only by offence or disagreement find this route closed",
+          "bearers": [
+            "harmed"
+          ]
+        },
+        {
+          "needle": "the body bears those duties unless a reviewer withdraws them",
+          "bearers": [
+            "offices"
+          ]
+        },
+        {
+          "needle": "a community whose sacred things are mocked",
+          "bearers": [
+            "harmed"
+          ]
+        }
+      ]
+    },
+    "9": {
+      "conditions": [
+        {
+          "needle": "a work condition with a hardship exception",
+          "kinds": [
+            "alternative"
+          ]
+        }
+      ],
+      "costs": [
+        {
+          "needle": "people relying on the service bear any gap",
+          "bearers": [
+            "waiting"
+          ]
+        },
+        {
+          "needle": "whoever funds the floor pays for them",
+          "bearers": [
+            "funders"
+          ]
+        }
+      ]
+    },
+    "10": {
+      "conditions": [
+        {
+          "needle": "reconsider requiring a finding",
+          "kinds": [
+            "costlier",
+            "alternative"
+          ]
+        },
+        {
+          "needle": "reconsider leaving debt to legislation",
+          "kinds": [
+            "failing"
+          ]
+        }
+      ],
+      "costs": [
+        {
+          "needle": "the person who depends on a gate bears the wait",
+          "bearers": [
+            "waiting"
+          ]
+        },
+        {
+          "needle": "My choice costs later taxpayers",
+          "bearers": [
+            "funders"
+          ]
+        }
+      ]
+    },
+    "11": {
+      "conditions": [
+        {
+          "needle": "reconsider the measures if continuation findings",
+          "kinds": [
+            "failing",
+            "alternative"
+          ]
+        },
+        {
+          "needle": "reconsider proof by effect",
+          "kinds": [
+            "costlier"
+          ]
+        }
+      ],
+      "costs": [
+        {
+          "needle": "Their cost falls on applicants outside a measure",
+          "bearers": [
+            "claimants",
+            "providers"
+          ]
+        }
+      ]
+    },
+    "12": {
+      "conditions": [
+        {
+          "needle": "separate ceilings were shown repeatedly",
+          "kinds": [
+            "costlier",
+            "failing"
+          ]
+        },
+        {
+          "needle": "Evidence that advisory offices alone",
+          "kinds": [
+            "alternative"
+          ]
+        }
+      ],
+      "costs": [
+        {
+          "needle": "the people who would have gained bear that",
+          "bearers": [
+            "forgone"
+          ]
+        },
+        {
+          "needle": "A later majority that judges a commons axis",
+          "bearers": [
+            "majorities"
+          ]
+        },
+        {
+          "needle": "a delay its proponent and those awaiting its benefits bear",
+          "bearers": [
+            "forgone",
+            "waiting"
+          ]
+        }
+      ]
+    },
+    "13": {
+      "conditions": [
+        {
+          "needle": "welfare regimes were shown to prevent severe avoidable suffering",
+          "kinds": [
+            "alternative",
+            "failing"
+          ]
+        },
+        {
+          "needle": "Evidence that the food rule left people short",
+          "kinds": [
+            "costlier",
+            "alternative"
+          ]
+        },
+        {
+          "needle": "Evidence that animals fared better",
+          "kinds": [
+            "line"
+          ]
+        }
+      ],
+      "costs": [
+        {
+          "needle": "The cost falls on animals",
+          "bearers": [
+            "animals"
+          ]
+        },
+        {
+          "needle": "Owners, farmers, researchers and households lose the power",
+          "bearers": [
+            "providers"
+          ]
+        },
+        {
+          "needle": "People whose livelihoods or diets rest on animal food",
+          "bearers": [
+            "forgone"
+          ]
+        },
+        {
+          "needle": "A community whose practice reaches the core",
+          "bearers": [
+            "forgone"
+          ]
+        }
+      ]
+    },
+    "14": {
+      "conditions": [
+        {
+          "needle": "people whose will could not be read after support",
+          "kinds": [
+            "alternative",
+            "costlier"
+          ]
+        },
+        {
+          "needle": "For children, I would reconsider",
+          "kinds": [
+            "failing"
+          ]
+        }
+      ],
+      "costs": [
+        {
+          "needle": "the person and anyone relying on it bear the wait",
+          "bearers": [
+            "waiting"
+          ]
+        },
+        {
+          "needle": "carers and families bear that procedure",
+          "bearers": [
+            "concerned"
+          ]
+        },
+        {
+          "needle": "the person bears that risk",
+          "bearers": [
+            "concerned"
+          ]
+        }
+      ]
+    },
+    "15": {
+      "conditions": [
+        {
+          "needle": "reconsider the firewall",
+          "kinds": [
+            "alternative",
+            "line"
+          ]
+        }
+      ],
+      "costs": [
+        {
+          "needle": "at its residents' risk",
+          "bearers": [
+            "harmed"
+          ]
+        },
+        {
+          "needle": "A former resident who made a home abroad",
+          "bearers": [
+            "outside"
+          ]
+        },
+        {
+          "needle": "A people facing a large but reversible harm",
+          "bearers": [
+            "concerned"
+          ]
+        }
+      ]
+    },
+    "16": {
+      "conditions": [
+        {
+          "needle": "hearing-first orders, decided promptly",
+          "kinds": [
+            "alternative"
+          ]
+        },
+        {
+          "needle": "narrow permanence",
+          "kinds": [
+            "line"
+          ]
+        },
+        {
+          "needle": "The survey figures leave both questions open",
+          "continues": true
+        }
+      ],
+      "costs": [
+        {
+          "needle": "The cost falls on people injured in the cases the shield holds back",
+          "bearers": [
+            "harmed"
+          ]
+        },
+        {
+          "needle": "a forged seating widens the answerable set further",
+          "bearers": [
+            "harmed"
+          ]
+        }
+      ]
+    },
+    "17": {
+      "conditions": [
+        {
+          "needle": "reconsider the council",
+          "kinds": [
+            "costlier",
+            "alternative",
+            "failing"
+          ]
+        }
+      ],
+      "costs": [
+        {
+          "needle": "whoever needs that law waits through it",
+          "bearers": [
+            "waiting"
+          ]
+        },
+        {
+          "needle": "Equal regional weight gives a resident",
+          "bearers": [
+            "majorities"
+          ]
+        },
+        {
+          "needle": "the public lives under it meanwhile",
+          "bearers": [
+            "majorities"
+          ]
+        },
+        {
+          "needle": "anyone who needs a new policy waits",
+          "bearers": [
+            "waiting"
+          ]
+        },
+        {
+          "needle": "Staggered, nonrenewable mandates mean",
+          "bearers": [
+            "majorities",
+            "offices"
+          ]
+        },
+        {
+          "needle": "a voter seeking whom to punish",
+          "bearers": [
+            "majorities"
+          ]
+        }
+      ]
+    },
+    "18": {
+      "conditions": [
+        {
+          "needle": "disenfranchisement fitted by a judge",
+          "kinds": [
+            "alternative"
+          ]
+        },
+        {
+          "needle": "reconsider the home rule",
+          "kinds": [
+            "costlier"
+          ]
+        }
+      ],
+      "costs": [
+        {
+          "needle": "the people the crime harmed see the offender",
+          "bearers": [
+            "harmed"
+          ]
+        },
+        {
+          "needle": "The home rule costs the person held",
+          "bearers": [
+            "concerned"
+          ]
+        }
+      ]
+    },
+    "19": {
+      "conditions": [
+        {
+          "needle": "automatic propagation, with contest before effect",
+          "kinds": [
+            "alternative"
+          ]
+        },
+        {
+          "needle": "I would begin by letting",
+          "continues": true
+        },
+        {
+          "needle": "human reviewers were shown to adopt automated recommendations",
+          "kinds": [
+            "failing"
+          ]
+        }
+      ],
+      "costs": [
+        {
+          "needle": "People whose lives change often bear the repetition",
+          "bearers": [
+            "concerned",
+            "waiting"
+          ]
+        }
+      ]
+    },
+    "20": {
+      "conditions": [
+        {
+          "needle": "emergencies bring needs that no hazard-specific",
+          "kinds": [
+            "alternative"
+          ]
+        },
+        {
+          "needle": "is where I would look",
+          "continues": true
+        },
+        {
+          "needle": "add Ackerman's escalator",
+          "kinds": [
+            "failing"
+          ]
+        }
+      ],
+      "costs": [
+        {
+          "needle": "the people exposed to the hazard bear the loss",
+          "bearers": [
+            "harmed"
+          ]
+        },
+        {
+          "needle": "reviewers must keep pace with the crisis",
+          "bearers": [
+            "offices"
+          ]
+        },
+        {
+          "needle": "whoever a wider measure would have protected bears that",
+          "bearers": [
+            "harmed",
+            "majorities"
+          ]
+        }
+      ]
+    },
+    "21": {
+      "conditions": [
+        {
+          "needle": "reconsider the open request",
+          "kinds": [
+            "costlier"
+          ]
+        },
+        {
+          "needle": "narrow restoration",
+          "kinds": [
+            "failing"
+          ]
+        }
+      ],
+      "costs": [
+        {
+          "needle": "whoever funds them pays for both",
+          "bearers": [
+            "offices",
+            "funders"
+          ]
+        },
+        {
+          "needle": "stays confined, as Ruk does",
+          "bearers": [
+            "concerned"
+          ]
+        },
+        {
+          "needle": "whoever that custody protects bears the interval",
+          "bearers": [
+            "harmed"
+          ]
+        },
+        {
+          "needle": "a person who has made amends to a willing survivor",
+          "bearers": [
+            "concerned"
+          ]
+        }
+      ]
+    },
+    "22": {
+      "conditions": [
+        {
+          "needle": "readings of the core repeatedly blocked reforms",
+          "kinds": [
+            "failing",
+            "costlier",
+            "alternative"
+          ]
+        }
+      ],
+      "costs": [
+        {
+          "needle": "My choice costs a later majority",
+          "bearers": [
+            "majorities"
+          ]
+        },
+        {
+          "needle": "Reformers with majority support can be blocked",
+          "bearers": [
+            "majorities"
+          ]
+        }
+      ]
+    },
+    "23": {
+      "conditions": [
+        {
+          "needle": "move toward immunity",
+          "kinds": [
+            "failing"
+          ]
+        },
+        {
+          "needle": "reconsider the timing rule",
+          "kinds": [
+            "failing",
+            "costlier"
+          ]
+        },
+        {
+          "needle": "The case that opens this Part shows how long",
+          "continues": true
+        }
+      ],
+      "costs": [
+        {
+          "needle": "Against immunity, my rule costs the discloser",
+          "bearers": [
+            "concerned"
+          ]
+        },
+        {
+          "needle": "Reviewers who wrongly find a prosecution unrelated",
+          "bearers": [
+            "concerned"
+          ]
+        },
+        {
+          "needle": "The injured person bears that wait",
+          "bearers": [
+            "harmed"
+          ]
+        },
+        {
+          "needle": "The defendant bears the cost of the timing rule",
+          "bearers": [
+            "concerned"
+          ]
+        }
+      ]
+    },
+    "24": {
+      "conditions": [
+        {
+          "needle": "move toward the related-role disqualification",
+          "kinds": [
+            "failing"
+          ]
+        },
+        {
+          "needle": "Evidence that owed reviews go unheld",
+          "kinds": [
+            "failing"
+          ]
+        }
+      ],
+      "costs": [
+        {
+          "needle": "The person under a finding bears the restriction while it stays in force",
+          "bearers": [
+            "concerned"
+          ]
+        },
+        {
+          "needle": "the people that person later examines bear the risk",
+          "bearers": [
+            "harmed"
+          ]
+        },
+        {
+          "needle": "a subject found against on such an account bears the finding",
+          "bearers": [
+            "concerned"
+          ]
+        },
+        {
+          "needle": "the people that examiner deals with rely on each record's own rules",
+          "bearers": [
+            "harmed"
+          ]
+        }
+      ]
+    },
+    "25": {
+      "conditions": [
+        {
+          "needle": "prisons that owed the people they hold the whole floor",
+          "kinds": [
+            "alternative",
+            "costlier"
+          ]
+        }
+      ],
+      "costs": [
+        {
+          "needle": "The public owes the whole floor to people who have harmed others",
+          "bearers": [
+            "harmed",
+            "funders"
+          ]
+        }
+      ]
+    },
+    "26": {
+      "conditions": [
+        {
+          "needle": "people whose harms fell below the line were shown repeatedly",
+          "kinds": [
+            "costlier",
+            "alternative"
+          ]
+        },
+        {
+          "needle": "redraw the lines themselves",
+          "kinds": [
+            "line"
+          ]
+        }
+      ],
+      "costs": [
+        {
+          "needle": "the people around them bear that risk",
+          "bearers": [
+            "harmed"
+          ]
+        },
+        {
+          "needle": "at public cost",
+          "bearers": [
+            "offices",
+            "funders"
+          ]
+        }
+      ]
+    },
+    "27": {
+      "conditions": [
+        {
+          "needle": "evidence from outside Norway",
+          "kinds": [
+            "alternative",
+            "failing"
+          ]
+        }
+      ],
+      "costs": [
+        {
+          "needle": "Against abolition my rule costs the people confined",
+          "bearers": [
+            "concerned"
+          ]
+        },
+        {
+          "needle": "the injured person and the public lose protection",
+          "bearers": [
+            "harmed"
+          ]
+        }
+      ]
+    },
+    "28": {
+      "conditions": [
+        {
+          "needle": "inspections run by holding institutions",
+          "kinds": [
+            "alternative",
+            "costlier"
+          ]
+        },
+        {
+          "needle": "The two texts I rely on state a standard",
+          "continues": true
+        }
+      ],
+      "costs": [
+        {
+          "needle": "every finding waits for people from outside",
+          "bearers": [
+            "offices"
+          ]
+        },
+        {
+          "needle": "the person held bears that wait; routine review",
+          "bearers": [
+            "concerned"
+          ]
+        },
+        {
+          "needle": "withholds the marker from the person it concerns",
+          "bearers": [
+            "concerned"
+          ]
+        },
+        {
+          "needle": "the review body answers weak complaints as well as strong ones",
+          "bearers": [
+            "offices",
+            "funders"
+          ]
+        },
+        {
+          "needle": "the person misplaced bears it",
+          "bearers": [
+            "concerned"
+          ]
+        }
+      ]
+    }
+  }
+}

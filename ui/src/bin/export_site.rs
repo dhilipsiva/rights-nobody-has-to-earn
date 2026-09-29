@@ -49,6 +49,32 @@ fn companion_markdown(route: &str) -> String {
                 doc.explainer.fork, doc.explainer.joint
             );
         }
+        "reconsider/" => {
+            let r = reconsider();
+            text += &format!("{}\n", r.note);
+            for (heading, groups) in [
+                ("What would change a choice", &r.conditions),
+                ("Who bears the costs", &r.costs),
+            ] {
+                text += &format!("\n## {heading}\n");
+                for group in groups.iter() {
+                    text += &format!("\n### {}\n\n", group.title);
+                    for entry in &group.entries {
+                        let page = chapter(entry.chapter);
+                        let url = page
+                            .sections
+                            .iter()
+                            .find(|s| s.title == entry.heading)
+                            .map(|s| format!("{}#{}", page.canonical, s.id))
+                            .unwrap_or_else(|| page.canonical.clone());
+                        text += &format!(
+                            "> {}\n\n[Chapter {}: {}]({url})\n\n",
+                            entry.text, entry.chapter, entry.title
+                        );
+                    }
+                }
+            }
+        }
         "design/" => {
             let d = design();
             text += &format!("{}\n\n", d.note);
@@ -271,6 +297,7 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
             "constitution/" => "The constitution Book 1 describes, as numbered plain-language articles traced to the rules and tests that implement them.",
             "cases/" => "Each chapter's cases, run on your own device against the pinned constitution, and where the material the chapters no longer carry now lives.",
             "start/" => "What the companion is, what a fork and a joint are, and a guided first run of Nell's fork checked against Chapter 1's tests.",
+            "reconsider/" => "What each chapter's argument says would change its choice, and who bears its cost, quoted and grouped by the kind of evidence and by who bears it.",
             "design/" => "The whole design in under a thousand words: every line a sentence of the plain-language constitution, with the article that states it and the chapter that argues it.",
             "second-engine/" => "The constitution's rules replayed in a second engine, clingo: what the translation keeps, what the comparison leaves out, every case and where the cross-check stops.",
             "limits/" => "What the design and its checks leave open: the adversarial audit's open findings, the declared defects and each chapter's account of what it cannot settle.", _ => "This page does not exist in Book 1.",
