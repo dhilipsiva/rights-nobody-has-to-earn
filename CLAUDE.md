@@ -135,6 +135,60 @@ reinstate the retired tooling or workflow.
 Grouped by kind. Dates in each heading are the ratification dates; a ruling
 that was later implemented or narrowed carries that supersession inline.
 
+### Issue 1 — the body that holds a person owes delivery there, 2026-10-02
+
+The repository's first GitHub issue came from the companion's conviction fork,
+*Convict Zed. Then take the floor.*, whose second move shows Zed owed food and
+shelter and received neither: "I think food must be provisioned." Measured on
+the source first: the design owed Zed every floor item, carried the
+custody-specific duties of humane conditions, inspection, release review and
+continuity, and barred starvation or floor denial as a weapon, sanction or
+inducement, but the tiers' delivery duties attach to a presence record, which
+a custody record never writes, so the one person nobody else can reach had no
+named deliverer beyond the State's general debt, and the custody conditions
+family could find denied contact and nothing else a holder withholds.
+
+Two additions in Article 6, hand-written beside the isolation finding, answer
+it without concluding that food arrived. The body whose placement authority
+chose the place owes reach and delivery of every floor item there, from the
+approved placement and while it is in force
+(`ReachAndDeliverTheFloorWhereThePersonIsHeld`, read by nothing). And a
+deprivation finding takes the isolation finding's shape — subject, holding,
+holder, place, period and evidence, an authorised condition witness and an
+independent reviewer who are neither the person nor the holder, collisions on
+every field — and adds the item withheld from a closed list of five: food,
+shelter, care, learning and material security. It completes to
+`responsible($record, CustodyDeprivationFinding)`, marks `err($subject,
+Deprivation)`, obliges the holder named in the finding to restore the item at
+once, gives the review body its duty through Article 8b, and identifies the
+person held from the two actors' agreement on the person alone. Company stays
+with the isolation finding; bodily safety, expression and belief are
+protections rather than provisions. Concluding `eats` from custody (the
+liveness overclaim items 06 and 19 removed), a bare State duty from `prisoner`
+(names no body) and withholding custody authority on the finding (custody is
+Zed's only root of standing, so the finding would take the floor debt with it,
+and release is a further act) were compared and refused; the delivery decision
+records them and what would reopen the choice.
+
+Chapters 3, 25, 27 and 28 state the rule in the current design, Article 26 of
+the plain-language constitution carries it, and the companion's conviction
+fork gains the delivery duty on its second move and a third move in which
+Zed's food is withheld and two authorised actors record it: the finding and
+the holder's duty derive, custody authority stands, and food received stays
+underivable, because a finding is no receipt. Chapter 25 pins the duty for Zed
+and its absence for Nell (41), Chapter 27 pins it for Hano (48), Chapter 28
+pins the new marker silent without a finding (40), and the custody condition
+case runs the finding with its fused, holder-as-witness, wrong-item and
+mismatched-item controls and a later witnessed meal (80). Rules move from
+7,583 to 7,599; predicates, derived predicates and strata are unchanged. The
+obligations generator's per-kind finding-route case was not added for the new
+kind: extending that generator was refused by the session's tooling, the
+family's reader rule is generic over the marker kind, and the case is a
+follow-up. The exact prose is `session-drafted, author-approved under delegated
+approval (2026-09-13)`.
+
+VERIFY-PLACEHOLDER
+
 ### Item 87 — what would change each choice, and who bears it, 2026-09-29
 
 Each derived chapter's argument ends with the evidence that would change its

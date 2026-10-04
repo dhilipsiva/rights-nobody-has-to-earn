@@ -49,7 +49,7 @@
 
 # The ecological and animal continuation belongs to Chapter 6, "Who Owes, and
 # What Follows", and its probe is in that chapter's pin file.
-:expect-pins 37
+:expect-pins 40
 
 # The source-bound finding/action contract reads the two-place duty only after
 # the supplied initial-finding standard and its other typed evidence rejoin
@@ -96,6 +96,14 @@
 # => FALSE
 
 ? err(Jala, Isolation).
+# => FALSE
+
+# "A withheld floor item takes the same shape": the deprivation marker also
+# needs a positive finding, so it is silent for everyone in this record.
+? err(Hano, Deprivation).
+# => FALSE
+
+? err(Ruk, Deprivation).
 # => FALSE
 
 # The shipped record supplies no matching company receipt for either case.
@@ -186,6 +194,9 @@ all $x: obliged(Review, $x) & ~capture(Review, $x) -> err($x, Duty).
 # The birth-only fixture supplies no positive condition finding or placement
 # report. No custodial review duty follows from the birth entry alone.
 ? err(Nell, Isolation).
+# => FALSE
+
+? err(Nell, Deprivation).
 # => FALSE
 
 ? err(Nell, Placement).

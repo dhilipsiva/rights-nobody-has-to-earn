@@ -219,6 +219,12 @@
               "kind": "protection"
             },
             {
+              "text": "obliged(State, ReachAndDeliverTheFloorWhereThePersonIsHeld, Zed).",
+              "label": "Delivery owed where held · Zed",
+              "gloss": "Asks whether the rules conclude that the State, whose placement holds Zed, owes reach and delivery of the floor where Zed is held.",
+              "kind": "protection"
+            },
+            {
               "text": "eats(Zed).",
               "label": "Food provision · Zed",
               "gloss": "Asks whether the rules conclude that Zed received food.",
@@ -231,11 +237,41 @@
               "kind": "gap"
             }
           ]
+        },
+        {
+          "id": "conviction:2",
+          "move": "Withhold Zed’s food. An authorised witness and an independent reviewer record it.",
+          "queries": [
+            {
+              "text": "err(Zed, Deprivation).",
+              "label": "Deprivation finding · Zed",
+              "gloss": "Asks whether the rules conclude a deprivation finding about Zed from the two authorised records.",
+              "kind": "protection"
+            },
+            {
+              "text": "obliged(PlaceKeeper, RestoreTheWithheldFloorItemAtOnce, Zed).",
+              "label": "Restore at once · Zed’s holder",
+              "gloss": "Asks whether the rules conclude that the holder named in the finding must restore Zed’s withheld food at once.",
+              "kind": "protection"
+            },
+            {
+              "text": "prisoner(Zed).",
+              "label": "Custody authority · Zed",
+              "gloss": "Asks whether the rules conclude that Zed is lawfully held in custody under current authority.",
+              "kind": "context"
+            },
+            {
+              "text": "eats(Zed).",
+              "label": "Food provision · Zed",
+              "gloss": "Asks whether the rules conclude that Zed received food.",
+              "kind": "gap"
+            }
+          ]
         }
       ],
       "cost": {
         "title": "Chapter 25 · Standing that protects others",
-        "text": "The State owes Zed, who injured Ivo, the same floor it owes Ivo, and whoever funds the floor bears that. The conviction reduces nothing Zed is owed."
+        "text": "The State owes Zed, who injured Ivo, the same floor it owes Ivo, and whoever funds the floor bears that. The conviction reduces nothing Zed is owed, and the body whose placement holds Zed owes delivery there."
       },
       "faults": [
         "delivery",

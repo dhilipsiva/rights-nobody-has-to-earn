@@ -20,7 +20,7 @@
 # is untouched. Pin a FALSE only where the KB could have said TRUE, and say in
 # the comment what would flip it.
 
-:expect-pins 39
+:expect-pins 41
 
 # "Zed is convicted in a named case of injuring Ivo." These entries give the
 # custody authorisation in force: "independent witnesses agree on the person,
@@ -209,6 +209,13 @@ observe(CustodyIntakeAudit, Case_Zed, NoHolderPermissionNoRetaliationAndImmediat
 ? owe(State, Meets, Zed).
 # => TRUE
 
+# "the body whose placement authority chose that place owes reach and delivery
+# of every floor item there": in Zed's record the placement authority is the
+# State, and the duty follows from the approved placement while custody is in
+# force. Nothing reads it, and it is no receipt.
+? obliged(State, ReachAndDeliverTheFloorWhereThePersonIsHeld, Zed).
+# => TRUE
+
 # (Owed, not delivered — evidence of delivery is Chapter 4's subject.)
 ? eats(Zed).
 # => FALSE
@@ -301,6 +308,12 @@ free(Nemo).
 
 ? owe(State, Expresses, Nell).
 # => TRUE
+
+# "The deliverer differs": Zed's approved placement names the body that must
+# reach Zed with the floor; Nell's one entry records nobody's presence, so the
+# tiers' delivery duties wait for a presence record while the debt stands.
+? obliged(State, ReachAndDeliverTheFloorWhereThePersonIsHeld, Nell).
+# => FALSE
 
 # The custody conclusions differ; neither establishes outside public action.
 ? prisoner(Zed).

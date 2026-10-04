@@ -38,7 +38,7 @@
 # is untouched. Pin a FALSE only where the KB could have said TRUE, and say in
 # the comment what would flip it.
 
-:expect-pins 47
+:expect-pins 48
 
 # The order may be read; the loss and free-movement capability may not.
 # This checks the enacted source with a live positive control. The authoring
@@ -71,6 +71,12 @@
 
 ? lose(Points, Hano).
 # => FALSE
+
+# "The body whose placement authority chose the place owes reach and delivery
+# of the floor there while the placement is in force": Hano's placement
+# authority is the State. Nothing reads the duty, and it is no receipt.
+? obliged(State, ReachAndDeliverTheFloorWhereThePersonIsHeld, Hano).
+# => TRUE
 
 # Nor shelter received: a reviewed home placement is no shelter receipt.
 ? dwell(Hano).

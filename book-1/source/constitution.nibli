@@ -3044,6 +3044,46 @@ all $record: all $reviewer: all $subject: all $witness: authorized($witness, Cus
 all $subject: prisoner($subject) -> obliged(Review, $subject).
 all $subject: challenge($subject, CustodyConditions, Review) -> obliged(Review, $subject).
 all $subject: challenge($subject, CustodyConditions, Review) -> obliged(Review, InvestigateCustodyConditions, $subject).
+# [2026-10-02, issue 1] THE BODY THAT HOLDS A PERSON OWES DELIVERY THERE. The
+# tier rules under Article 1b allocate reach and delivery of the floor to the
+# locality where an authorised witness records a person present. A person the
+# State holds is present where its placement put them, and nobody else can
+# reach them there, so the body whose placement authority chose the place owes
+# reach and delivery of every floor item at that place, from the approved
+# placement itself and ahead of any report about the institution. Nothing
+# reads the duty, and it is no evidence that food, shelter, care, learning or
+# material security reached the person: those conclusions keep the
+# recipient-side receipt route, and a placement is no receipt.
+all $actor: all $case: all $kind: all $place: all $record: all $subject: prisoner($subject, $case) & approves($record, CustodyPlacementCandidate) & list($record, $subject, $case, CustodyPlacement) & list($record, $place, $kind, CustodyPlaceKind) & authorized($actor, CustodyPlacementAuthority, $record) & observe($actor, $record, $subject, CustodyPlacementSubjectScope) & observe($actor, $record, $place, CustodyPlacementPlaceScope) -> obliged($actor, ReachAndDeliverTheFloorWhereThePersonIsHeld, $subject).
+# A WITHHELD FLOOR ITEM IS A CONDITION FINDING, LIKE DENIED CONTACT. A
+# deprivation finding names the person held, the holding, the responsible
+# holder, the place, the period and the evidence, as an isolation finding does,
+# and the item the holder withheld, from a closed list of what a holder
+# provides: food, shelter, care, learning and material security. Company has
+# the isolation finding; bodily safety, expression and belief are protections
+# rather than provisions and have their own routes. The same authorised
+# condition witness and independent reviewer, neither of them the person or the
+# holder, must agree on every field; conflicting authorised values collide and
+# complete nothing, and a missing receipt is no finding. The finding marks the
+# breach, identifies the person as a human subject, obliges the holder to
+# restore the item at once and gives the review body its duty through
+# Article 8b. It withholds no custody authority: a person a holder deprives is
+# protected by the finding and released by nothing in it, and the holding's
+# own protections stand.
+public(Court) -> member(Eats, CustodyDeprivationItem).
+public(Court) -> member(Dwell, CustodyDeprivationItem).
+public(Court) -> member(Healthy, CustodyDeprivationItem).
+public(Court) -> member(Learn, CustodyDeprivationItem).
+public(Court) -> member(Suffice, CustodyDeprivationItem).
+all $other_x: all $other_y: all $record: all $x: all $y: list($record, $x, $y, CustodyDeprivationFinding) & list($record, $other_x, $other_y, CustodyDeprivationFinding) & ~($x = $other_x) -> collide($record, CustodyConditionBinding).
+all $other_x: all $other_y: all $record: all $x: all $y: list($record, $x, $y, CustodyDeprivationFinding) & list($record, $other_x, $other_y, CustodyDeprivationFinding) & ~($y = $other_y) -> collide($record, CustodyConditionBinding).
+all $a: all $b: all $left: all $record: all $right: authorized($a, CustodyConditionWitness, $record) & authorized($b, CustodyConditionWitness, $record) & observe($a, $record, $left, CustodyDeprivationItemScope) & observe($b, $record, $right, CustodyDeprivationItemScope) & ~($left = $right) -> collide($record, CustodyConditionBinding).
+all $a: all $b: all $left: all $record: all $right: authorized($a, CustodyConditionWitness, $record) & authorized($b, IndependentCustodyConditionReviewer, $record) & observe($a, $record, $left, CustodyDeprivationItemScope) & observe($b, $record, $right, CustodyDeprivationItemScope) & ~($left = $right) -> collide($record, CustodyConditionBinding).
+all $a: all $b: all $left: all $record: all $right: authorized($a, IndependentCustodyConditionReviewer, $record) & authorized($b, IndependentCustodyConditionReviewer, $record) & observe($a, $record, $left, CustodyDeprivationItemScope) & observe($b, $record, $right, CustodyDeprivationItemScope) & ~($left = $right) -> collide($record, CustodyConditionBinding).
+all $evidence: all $holder: all $holding: all $item: all $period: all $place: all $record: all $reviewer: all $subject: all $witness: list($record, $subject, $holding, CustodyDeprivationFinding) & list($record, $holder, $place, CustodyConditionLocation) & list($record, $period, $evidence, CustodyConditionEvidenceWindow) & member($item, CustodyDeprivationItem) & authorized($witness, CustodyConditionWitness, $record) & authorized($reviewer, IndependentCustodyConditionReviewer, $record) & ~($witness = $reviewer) & ~($witness = $subject) & ~($reviewer = $subject) & ~($witness = $holder) & ~($reviewer = $holder) & ~collide($record, CustodyConditionBinding) & observe($witness, $record, $subject, CustodyConditionSubjectScope) & observe($reviewer, $record, $subject, CustodyConditionSubjectScope) & observe($witness, $record, $holding, CustodyConditionHoldingScope) & observe($reviewer, $record, $holding, CustodyConditionHoldingScope) & observe($witness, $record, $holder, CustodyConditionHolderScope) & observe($reviewer, $record, $holder, CustodyConditionHolderScope) & observe($witness, $record, $place, CustodyConditionPlaceScope) & observe($reviewer, $record, $place, CustodyConditionPlaceScope) & observe($witness, $record, $period, CustodyConditionPeriodScope) & observe($reviewer, $record, $period, CustodyConditionPeriodScope) & observe($witness, $record, $evidence, CustodyConditionEvidenceScope) & observe($reviewer, $record, $evidence, CustodyConditionEvidenceScope) & observe($witness, $record, $item, CustodyDeprivationItemScope) & observe($reviewer, $record, $item, CustodyDeprivationItemScope) & observe($witness, $record, PositiveEvidenceNoticeReasonsAndIndependentContest, CustodyConditionProcedureScope) & observe($reviewer, $record, PositiveEvidenceNoticeReasonsAndIndependentContest, CustodyConditionProcedureScope) -> responsible($record, CustodyDeprivationFinding).
+all $holding: all $record: all $subject: responsible($record, CustodyDeprivationFinding) & list($record, $subject, $holding, CustodyDeprivationFinding) -> err($subject, Deprivation).
+all $holder: all $holding: all $place: all $record: all $subject: responsible($record, CustodyDeprivationFinding) & list($record, $subject, $holding, CustodyDeprivationFinding) & list($record, $holder, $place, CustodyConditionLocation) -> obliged($holder, RestoreTheWithheldFloorItemAtOnce, $subject).
+all $item: all $other: all $record: all $reviewer: all $subject: all $witness: authorized($witness, CustodyConditionWitness, $record) & authorized($reviewer, IndependentCustodyConditionReviewer, $record) & ~($witness = $reviewer) & observe($witness, $record, $subject, CustodyConditionSubjectScope) & observe($reviewer, $record, $subject, CustodyConditionSubjectScope) & observe($witness, $record, $item, CustodyDeprivationItemScope) & member($item, CustodyDeprivationItem) & observe($reviewer, $record, $other, CustodyDeprivationItemScope) & member($other, CustodyDeprivationItem) -> person($subject).
 # Lawful placement creates no shelter or expression actuality.
 # Protection duties and recipient-side delivery evidence remain distinct.
 
@@ -3221,6 +3261,7 @@ all $evidence: all $incident: all $record: all $subject: responsible($record, Cr
 # duties. No rule proves that any bearer reads or acts; action remains external.
 all $x: err($x, Placement) -> obliged(Review, $x).
 all $x: err($x, Isolation) -> obliged(Review, $x).
+all $x: err($x, Deprivation) -> obliged(Review, $x).
 
 # ─── Article 8c [v1.0 NEW]: Staged constitutional time ────────────
 #

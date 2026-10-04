@@ -23,7 +23,7 @@ class ExecutableInputs(unittest.TestCase):
 
     def test_complete_catalogue_and_no_answer_fields(self):
         self.assertEqual(len(self.game['scenarios']), 33)
-        self.assertEqual(sum(len(f['steps']) for f in self.game['scenarios']), 73)
+        self.assertEqual(sum(len(f['steps']) for f in self.game['scenarios']), 74)
         self.assertEqual(len(self.game['joints']), 14)
         self.assertEqual(len(self.game['faults']), 21)
         self.assertEqual(len(self.cases), 91)
@@ -323,7 +323,7 @@ class QueryGlosses(unittest.TestCase):
 
     def test_every_query_says_what_it_asks(self):
         self.assertEqual(gloss_problems(self.game), [])
-        self.assertEqual(len(list(game_queries(self.game))), 249)
+        self.assertEqual(len(list(game_queries(self.game))), 254)
 
     def test_sabotage_a_missing_wrong_or_claiming_gloss_is_found(self):
         def first(game, text):

@@ -67,6 +67,16 @@ or procedure is disputed, and an unlawful holding still leaves its subject
 eligible for protection. A company receipt from another encounter shows company
 on that occasion, and the recorded finding about the specified period stands.
 
+A withheld floor item takes the same shape. A deprivation finding names the
+person held, the holding, the holder, the place, the period, the evidence and
+the item withheld, from a closed list of what a holder provides: food,
+shelter, care, learning and material security. The same two actors must agree
+on every field, and the finding marks the breach, obliges the holder to
+restore the item at once and gives the review body its duty. A missing receipt
+is silence; the finding is evidence, and the custody authority it reports on
+stays where it was, so the person is protected by the finding rather than
+released by it.
+
 The private-power finding in *What Money Cannot Buy* (Chapter 10) illustrates a
 related evidence boundary, and it too rests on positive entries. It requires a
 named ground, such as an essential function or the absence of meaningful exit.
@@ -78,10 +88,11 @@ accuracy open.
 ## From a marker to a duty
 
 A placement or isolation marker gives the review body a duty toward the
-affected person. The duty runs one way: the review body owes it to Ruk, and Ruk
-owes the review body nothing. A marker is a conclusion of the rules, and the
-record refuses it as a direct entry, so a marker appears only when the findings
-it rests on are recorded.
+affected person, and a deprivation marker gives it the same duty. The duty runs
+one way: the review body owes it to Ruk, and Ruk owes the review body nothing.
+A marker is a conclusion of the rules, and the record refuses it as a direct
+entry, so a marker appears only when the findings it rests on are recorded.
+
 
 Routine custody review is owed with or without a marker. The review body owes
 it to every confined person in the record, Ruk and Hano among them, though the
@@ -226,12 +237,13 @@ misplaced bears it.
 
 ## The child with nobody
 
-Nell's record holds the birth alone. The placement marker needs a report and
-the isolation marker a positive finding, so both stay silent for Nell. The
-review body's duty follows confinement, a marker or a complaint about custody
-conditions, and the rules find none of them for Nell, so the review body owes
-Nell nothing on this route. Nell is owed food, and nothing in the record shows
-food received.
+Nell's record holds the birth alone. The placement marker needs a report, and
+the isolation and deprivation markers each a positive finding, so all three
+stay silent for Nell. The review body's duty follows confinement, a marker or a
+complaint about custody conditions, and the rules find none of them for Nell,
+so the review body owes Nell nothing on this route. Nell is owed food, and
+nothing in the record shows food received.
+
 
 Suppose a further rule were added: a marker that fires whenever a delivery is
 owed and unrecorded. It fires for Nell. That shows such an inference can be

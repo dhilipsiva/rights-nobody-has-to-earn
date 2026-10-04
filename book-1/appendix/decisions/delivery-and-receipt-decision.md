@@ -325,3 +325,59 @@ finance and backstop, and a region's provision and a locality's delivery where
 the person is recorded as present. A public principal behind a contracted floor
 provider is therefore one of them, so the exclusion reaches it without reading
 the delegation record, whose own conclusion is a duty nothing reads.
+## The body that holds a person owes delivery there — issue 1, 2026-10-02
+
+The repository's first issue came from the companion's conviction fork, *Convict
+Zed. Then take the floor.*, whose second move shows Zed owed food and shelter
+and received neither: "I think food must be provisioned." Measured on the
+source before anything changed, the design owed Zed every floor item, named
+the custody-specific duties of humane conditions, inspection, release review
+and continuity, and barred starvation or floor denial as a weapon, sanction or
+inducement for every person; but the tiers' delivery duties attach to a
+presence record, which a custody record never writes, so the person the State
+holds, the one person nobody else can reach, had no named deliverer beyond
+the State's general debt, and the custody conditions family could find denied
+contact and nothing else a holder withholds.
+
+Two additions in Article 6 answer the objection without concluding that food
+arrived. The body whose placement authority chose the place owes reach and
+delivery of every floor item there, from the approved placement and while it is
+in force (`obliged($actor, ReachAndDeliverTheFloorWhereThePersonIsHeld,
+$subject)`, read by nothing). And a deprivation finding takes the isolation
+finding's shape — subject, holding, holder, place, period and evidence, an
+authorised condition witness and an independent reviewer who are neither the
+person nor the holder, collisions on every field — and adds the item withheld
+from a closed list of five, food, shelter, care, learning and material
+security. It completes to `responsible($record, CustodyDeprivationFinding)`,
+marks `err($subject, Deprivation)`, obliges the holder named in the finding to
+restore the item at once, gives the review body its duty through Article 8b,
+and identifies the person held as a human subject from the two actors'
+agreement on the person alone. Company stays with the isolation finding;
+bodily safety, expression and belief are protections rather than provisions
+and keep their own routes.
+
+Alternatives compared. Concluding `eats` from custody was refused: it is the
+liveness overclaim the 2026-09-19 and 2026-09-20 dispositions above removed,
+and the fork's third move shows the difference, a deprivation finding TRUE
+beside food received FALSE. A bare State duty from `prisoner` names no body;
+the placing authority is the bearer the placement record already names, so the
+duty follows the record rather than a constant. Withholding custody authority
+on a deprivation finding was refused: custody is Zed's only root of standing,
+so the finding would take the person's standing and the floor debt with it;
+release is a further act, and the lapse case shows that a holding without
+authority protects nobody by itself. The finding therefore protects rather
+than releases, and the holder's restore duty and the review body's duty are
+its consequences. What would reopen this: evidence that holders ignore restore
+duties while review bodies fail to act, in which case the finding should reach
+the placement's lawful-conditions premise. The companion's conviction fork
+gains the delivery duty on its second move and a third move in which the food
+is withheld and two authorised actors record it. The obligations family's
+per-kind finding-route case was not generated for the new kind; its reader
+rule is generic over the marker kind, so the typed reader duty still follows,
+and the generated case is a follow-up.
+
+Measured: Chapter 25's pins pass 41, Chapter 27's 48, Chapter 28's 40 and the
+custody condition case 80, the last with the fused, holder-as-witness,
+wrong-item and mismatched-item controls refusing and a later witnessed meal
+concluding food received while the finding stands. Rules move from 7,583 to
+7,599; predicates, derived predicates and strata are unchanged.

@@ -682,7 +682,7 @@ optional method. A common term lists the chapters that use it most.
 - childcare-benefits affair: 2
 - Cira: 9, 11, 14, 24
 - Civic President: 16, 17
-- common tier: 3, 4, 6, 10, 16, 17, 30
+- common tier: 3, 4, 6, 10, 16, 17, 25, 30
 - commons: 10, 12, 13, 17
 - company: 1, 3, 4, 8, 25, 28
 - compensation: 9, 10, 20, method
@@ -700,7 +700,7 @@ optional method. A common term lists the chapters that use it most.
 ### D
 
 - Dara: 23
-- delivery: opening, 1, 3, 4, 6, 7, 29, method
+- delivery: opening, 1, 3, 4, 6, 25, 29, method
 - disclosure: 10, 12, 16, 17, Part IV case, 23, 24, 26
 - discrimination: 11, 28
 
@@ -758,14 +758,14 @@ optional method. A common term lists the chapters that use it most.
 
 - learning: 1, 4, 7, 8, 9, 14, 27
 - Lior: 23
-- locality: 3, 4, 6, 17, 30
+- locality: 3, 4, 6, 17, 25, 30
 - lottery: 5, 29
 
 ### M
 
 - Mael: 16, 24
 - Marisol: 4
-- material security: opening, 1, 3, 4, 7, 21, 25, 27
+- material security: 1, 3, 4, 27
 - membership: 8, 15, 18, 27, 28
 
 ### N
@@ -784,10 +784,10 @@ optional method. A common term lists the chapters that use it most.
 - People's Assembly: 6, 16, 17, 20, 22, 25, 29, 30
 - personhood: 1, 2, 3, 4, 7, 9, 18, 25
 - Pettit, Philip: 7, 29
-- placement: 2, 11, 25, 26, 27, 28
+- placement: 2, 3, 11, 25, 26, 27, 28
 - political home: 15, 18, 28
 - presence: 1, 3, 4, 7, 15, 25
-- prisoner: opening, 2, 18, Part IV case, 25, 28, 29, method
+- prisoner: opening, 2, 3, 18, Part IV case, 25, 29, method
 - privacy: 3, 7, 14
 - property: 9, 10, 12, 13, 14, 20, 27
 - protected core: 10, 11, 22
@@ -796,7 +796,7 @@ optional method. A common term lists the chapters that use it most.
 ### R
 
 - recall: 16, 17, 23, 24, 29
-- receipt: 1, 3, 4, 6, 25, 26, 27, 29
+- receipt: 1, 3, 4, 6, 25, 26, 27, 28
 - recognition status: 5, 9, 20, 22, 24, 26, 27, method
 - region: 3, 4, 6, 10, 17, 20
 - Regions Council: 16, 17, 20, 22

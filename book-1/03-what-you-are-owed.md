@@ -71,7 +71,10 @@ locality must reach the person and deliver it, where a witness authorised for
 that person records the person as present there. When a source and a separate
 independent reviewer, neither of them the failed body, certify that a region or
 locality has failed, the tier they name must assume continuity, and only a
-publicly answerable tier can be named. The failed body's own duty stands.
+publicly answerable tier can be named. The failed body's own duty stands. A
+person the State holds is present where its placement put them, and the body
+whose placement authority chose the place owes reach and delivery there, as
+*A Prisoner Is a Person* (Chapter 25) shows.
 
 None of these allocations is a condition of the floor: each divides a debt
 already owed. A person whose presence nobody has recorded is owed everything,

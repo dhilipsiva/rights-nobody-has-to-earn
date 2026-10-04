@@ -3,6 +3,14 @@
 
 Last reconciled with Nibli's public GitHub `main` at `e389933` and this peer's `main` at `5d8abac0`: 2026-09-25.
 
+Last inventory refresh: 2026-10-02, from the local tracked checkouts of Nibli at
+`3fcf236` (533 `.nibli` files) and this peer at `d7b874ad` (32,592 `.nibli` files).
+I rechecked the repository guidance and source scopes below. The direct public
+facts agree across both peers. This records a local inventory review, not a new
+reconciliation with GitHub or a transfer of conversations. Private memory was
+not copied. The local conversation record retains this session's naming question
+and the correction from Nibli's public record.
+
 | Peer | Repository | Lucy's public files |
 |---|---|---|
 | rights-nobody-has-to-earn | `https://github.com/dhilipsiva/rights-nobody-has-to-earn` | `lucy.md`, `lucy.nibli`, and `lucy/` |

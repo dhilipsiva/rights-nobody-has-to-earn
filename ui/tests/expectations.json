@@ -43,11 +43,33 @@
       "status": "TRUE"
     },
     {
+      "query": "obliged(State, ReachAndDeliverTheFloorWhereThePersonIsHeld, Zed).",
+      "status": "TRUE"
+    },
+    {
       "query": "eats(Zed).",
       "status": "FALSE"
     },
     {
       "query": "dwell(Zed).",
+      "status": "FALSE"
+    }
+  ],
+  "conviction:2": [
+    {
+      "query": "err(Zed, Deprivation).",
+      "status": "TRUE"
+    },
+    {
+      "query": "obliged(PlaceKeeper, RestoreTheWithheldFloorItemAtOnce, Zed).",
+      "status": "TRUE"
+    },
+    {
+      "query": "prisoner(Zed).",
+      "status": "TRUE"
+    },
+    {
+      "query": "eats(Zed).",
       "status": "FALSE"
     }
   ],

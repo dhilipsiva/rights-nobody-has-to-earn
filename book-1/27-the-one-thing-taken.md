@@ -123,6 +123,16 @@ These duties begin with custody itself, ahead of any report about the
 institution. A separately reviewed conditions finding identifies what the named
 operator must preserve.
 
+The body whose placement authority chose the place owes reach and delivery of
+the floor there while the placement is in force; a placement is a legal
+consequence and supplies no receipt. A separately reviewed finding that the
+holder withheld food, shelter, care, learning or material security takes the
+shape of the isolation finding *When the System Notices It Broke* (Chapter 28)
+sets out: it marks the breach, obliges the holder to restore the item at once
+and gives the review body a duty, and it leaves custody authority where it was,
+so a person a holder deprives is protected by the finding rather than released
+by it.
+
 A place name supplies no evidence of performed care. The placement rules
 require an available named place and independently reviewed lawful conditions
 before authority can follow, and a report of any other place raises the

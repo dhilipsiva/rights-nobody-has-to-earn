@@ -1,6 +1,6 @@
 # SPDX-License-Identifier: MIT OR Apache-2.0
 # Positive custody-condition evidence; routine review and complaint access.
-:expect-pins 46
+:expect-pins 80
 ? err(Adam, Isolation).
 # => FALSE
 ? err(Hano, Isolation).
@@ -216,3 +216,206 @@ list(Isolation_TwoHolders, HoldingActor, Place_Two, CustodyConditionLocation).
 list(Isolation_TwoHolders, OtherHoldingActor, Place_Two, CustodyConditionLocation).
 ? collide(Isolation_TwoHolders, CustodyConditionBinding).
 # => TRUE
+
+# ── A withheld floor item is a condition finding, like denied contact ─────────
+# "A deprivation finding names the person held, the holding, the holder, the
+# place, the period, the evidence and the item withheld, from a closed list of
+# what a holder provides: food, shelter, care, learning and material security."
+# Food is withheld here; the holder is a third party to both actors.
+? prisoner(DeprivedSubject).
+# => FALSE
+? person(DeprivedSubject).
+# => FALSE
+list(Deprivation_Report, DeprivedSubject, Holding_Deprivation_Report, CustodyDeprivationFinding).
+list(Deprivation_Report, HoldingActor, Place_Deprivation_Report, CustodyConditionLocation).
+list(Deprivation_Report, Period_Deprivation_Report, Evidence_Deprivation_Report, CustodyConditionEvidenceWindow).
+authorized(ConditionWitness, CustodyConditionWitness, Deprivation_Report).
+authorized(ConditionReviewer, IndependentCustodyConditionReviewer, Deprivation_Report).
+observe(ConditionWitness, Deprivation_Report, DeprivedSubject, CustodyConditionSubjectScope).
+observe(ConditionWitness, Deprivation_Report, Holding_Deprivation_Report, CustodyConditionHoldingScope).
+observe(ConditionWitness, Deprivation_Report, HoldingActor, CustodyConditionHolderScope).
+observe(ConditionWitness, Deprivation_Report, Place_Deprivation_Report, CustodyConditionPlaceScope).
+observe(ConditionWitness, Deprivation_Report, Period_Deprivation_Report, CustodyConditionPeriodScope).
+observe(ConditionWitness, Deprivation_Report, Evidence_Deprivation_Report, CustodyConditionEvidenceScope).
+observe(ConditionWitness, Deprivation_Report, Eats, CustodyDeprivationItemScope).
+observe(ConditionWitness, Deprivation_Report, PositiveEvidenceNoticeReasonsAndIndependentContest, CustodyConditionProcedureScope).
+observe(ConditionReviewer, Deprivation_Report, DeprivedSubject, CustodyConditionSubjectScope).
+observe(ConditionReviewer, Deprivation_Report, Holding_Deprivation_Report, CustodyConditionHoldingScope).
+observe(ConditionReviewer, Deprivation_Report, HoldingActor, CustodyConditionHolderScope).
+observe(ConditionReviewer, Deprivation_Report, Place_Deprivation_Report, CustodyConditionPlaceScope).
+observe(ConditionReviewer, Deprivation_Report, Period_Deprivation_Report, CustodyConditionPeriodScope).
+observe(ConditionReviewer, Deprivation_Report, Evidence_Deprivation_Report, CustodyConditionEvidenceScope).
+observe(ConditionReviewer, Deprivation_Report, PositiveEvidenceNoticeReasonsAndIndependentContest, CustodyConditionProcedureScope).
+# The reviewer has yet to record the item: the finding waits, and with it the
+# marker and the holder's duty. Agreement on the person already identifies a
+# human subject, so the identification and the floor debt lead the finding.
+? responsible(Deprivation_Report, CustodyDeprivationFinding).
+# => FALSE
+? err(DeprivedSubject, Deprivation).
+# => FALSE
+? obliged(HoldingActor, RestoreTheWithheldFloorItemAtOnce, DeprivedSubject).
+# => FALSE
+? person(DeprivedSubject).
+# => FALSE
+observe(ConditionReviewer, Deprivation_Report, Eats, CustodyDeprivationItemScope).
+? responsible(Deprivation_Report, CustodyDeprivationFinding).
+# => TRUE
+? err(DeprivedSubject, Deprivation).
+# => TRUE
+# "the finding marks the breach, obliges the holder to restore the item at once
+# and gives the review body its duty"
+? obliged(HoldingActor, RestoreTheWithheldFloorItemAtOnce, DeprivedSubject).
+# => TRUE
+? obliged(Review, DeprivedSubject).
+# => TRUE
+# The person held is a person, owed food; no sentence is needed for the
+# protection, and the finding is no receipt.
+? person(DeprivedSubject).
+# => TRUE
+? owe(State, Eats, DeprivedSubject).
+# => TRUE
+? prisoner(DeprivedSubject).
+# => FALSE
+? eats(DeprivedSubject).
+# => FALSE
+# A later independently witnessed meal concludes food received on that
+# occasion; the finding about the period stands.
+receives(DeprivedSubject, LaterMeal, Caterer).
+authorized(MealWitness, DeliveryWitness, DeprivedSubject).
+observe(MealWitness, LaterMeal, DeprivedSubject, FoodScope).
+? eats(DeprivedSubject).
+# => TRUE
+? err(DeprivedSubject, Deprivation).
+# => TRUE
+# A writer without authority for the record who names another item leaves the
+# finding standing.
+observe(UncredentialedWriter, Deprivation_Report, Dwell, CustodyDeprivationItemScope).
+? err(DeprivedSubject, Deprivation).
+# => TRUE
+# The holder cannot witness its own deprivation; identification by two distinct
+# actors still stands.
+list(Deprivation_Holder, HeldDeprivedSubject, Holding_Deprivation_Holder, CustodyDeprivationFinding).
+list(Deprivation_Holder, HoldingActor, Place_Deprivation_Holder, CustodyConditionLocation).
+list(Deprivation_Holder, Period_Deprivation_Holder, Evidence_Deprivation_Holder, CustodyConditionEvidenceWindow).
+authorized(HoldingActor, CustodyConditionWitness, Deprivation_Holder).
+authorized(ConditionReviewer, IndependentCustodyConditionReviewer, Deprivation_Holder).
+observe(HoldingActor, Deprivation_Holder, HeldDeprivedSubject, CustodyConditionSubjectScope).
+observe(HoldingActor, Deprivation_Holder, Holding_Deprivation_Holder, CustodyConditionHoldingScope).
+observe(HoldingActor, Deprivation_Holder, HoldingActor, CustodyConditionHolderScope).
+observe(HoldingActor, Deprivation_Holder, Place_Deprivation_Holder, CustodyConditionPlaceScope).
+observe(HoldingActor, Deprivation_Holder, Period_Deprivation_Holder, CustodyConditionPeriodScope).
+observe(HoldingActor, Deprivation_Holder, Evidence_Deprivation_Holder, CustodyConditionEvidenceScope).
+observe(HoldingActor, Deprivation_Holder, Eats, CustodyDeprivationItemScope).
+observe(HoldingActor, Deprivation_Holder, PositiveEvidenceNoticeReasonsAndIndependentContest, CustodyConditionProcedureScope).
+observe(ConditionReviewer, Deprivation_Holder, HeldDeprivedSubject, CustodyConditionSubjectScope).
+observe(ConditionReviewer, Deprivation_Holder, Holding_Deprivation_Holder, CustodyConditionHoldingScope).
+observe(ConditionReviewer, Deprivation_Holder, HoldingActor, CustodyConditionHolderScope).
+observe(ConditionReviewer, Deprivation_Holder, Place_Deprivation_Holder, CustodyConditionPlaceScope).
+observe(ConditionReviewer, Deprivation_Holder, Period_Deprivation_Holder, CustodyConditionPeriodScope).
+observe(ConditionReviewer, Deprivation_Holder, Evidence_Deprivation_Holder, CustodyConditionEvidenceScope).
+observe(ConditionReviewer, Deprivation_Holder, Eats, CustodyDeprivationItemScope).
+observe(ConditionReviewer, Deprivation_Holder, PositiveEvidenceNoticeReasonsAndIndependentContest, CustodyConditionProcedureScope).
+? responsible(Deprivation_Holder, CustodyDeprivationFinding).
+# => FALSE
+? err(HeldDeprivedSubject, Deprivation).
+# => FALSE
+? obliged(HoldingActor, RestoreTheWithheldFloorItemAtOnce, HeldDeprivedSubject).
+# => FALSE
+? person(HeldDeprivedSubject).
+# => TRUE
+# One actor holding both roles completes nothing.
+list(Deprivation_Fused, FusedDeprivedSubject, Holding_Deprivation_Fused, CustodyDeprivationFinding).
+list(Deprivation_Fused, HoldingActor, Place_Deprivation_Fused, CustodyConditionLocation).
+list(Deprivation_Fused, Period_Deprivation_Fused, Evidence_Deprivation_Fused, CustodyConditionEvidenceWindow).
+authorized(OneConditionActor, CustodyConditionWitness, Deprivation_Fused).
+authorized(OneConditionActor, IndependentCustodyConditionReviewer, Deprivation_Fused).
+observe(OneConditionActor, Deprivation_Fused, FusedDeprivedSubject, CustodyConditionSubjectScope).
+observe(OneConditionActor, Deprivation_Fused, Holding_Deprivation_Fused, CustodyConditionHoldingScope).
+observe(OneConditionActor, Deprivation_Fused, HoldingActor, CustodyConditionHolderScope).
+observe(OneConditionActor, Deprivation_Fused, Place_Deprivation_Fused, CustodyConditionPlaceScope).
+observe(OneConditionActor, Deprivation_Fused, Period_Deprivation_Fused, CustodyConditionPeriodScope).
+observe(OneConditionActor, Deprivation_Fused, Evidence_Deprivation_Fused, CustodyConditionEvidenceScope).
+observe(OneConditionActor, Deprivation_Fused, Eats, CustodyDeprivationItemScope).
+observe(OneConditionActor, Deprivation_Fused, PositiveEvidenceNoticeReasonsAndIndependentContest, CustodyConditionProcedureScope).
+observe(OneConditionActor, Deprivation_Fused, FusedDeprivedSubject, CustodyConditionSubjectScope).
+observe(OneConditionActor, Deprivation_Fused, Holding_Deprivation_Fused, CustodyConditionHoldingScope).
+observe(OneConditionActor, Deprivation_Fused, HoldingActor, CustodyConditionHolderScope).
+observe(OneConditionActor, Deprivation_Fused, Place_Deprivation_Fused, CustodyConditionPlaceScope).
+observe(OneConditionActor, Deprivation_Fused, Period_Deprivation_Fused, CustodyConditionPeriodScope).
+observe(OneConditionActor, Deprivation_Fused, Evidence_Deprivation_Fused, CustodyConditionEvidenceScope).
+observe(OneConditionActor, Deprivation_Fused, Eats, CustodyDeprivationItemScope).
+observe(OneConditionActor, Deprivation_Fused, PositiveEvidenceNoticeReasonsAndIndependentContest, CustodyConditionProcedureScope).
+? responsible(Deprivation_Fused, CustodyDeprivationFinding).
+# => FALSE
+? err(FusedDeprivedSubject, Deprivation).
+# => FALSE
+? person(FusedDeprivedSubject).
+# => FALSE
+# An item outside the closed list completes nothing and identifies nobody:
+# belief is a protection, and this record is the wrong instrument for it.
+list(Deprivation_Belief, BeliefSubject, Holding_Deprivation_Belief, CustodyDeprivationFinding).
+list(Deprivation_Belief, HoldingActor, Place_Deprivation_Belief, CustodyConditionLocation).
+list(Deprivation_Belief, Period_Deprivation_Belief, Evidence_Deprivation_Belief, CustodyConditionEvidenceWindow).
+authorized(ConditionWitness, CustodyConditionWitness, Deprivation_Belief).
+authorized(ConditionReviewer, IndependentCustodyConditionReviewer, Deprivation_Belief).
+observe(ConditionWitness, Deprivation_Belief, BeliefSubject, CustodyConditionSubjectScope).
+observe(ConditionWitness, Deprivation_Belief, Holding_Deprivation_Belief, CustodyConditionHoldingScope).
+observe(ConditionWitness, Deprivation_Belief, HoldingActor, CustodyConditionHolderScope).
+observe(ConditionWitness, Deprivation_Belief, Place_Deprivation_Belief, CustodyConditionPlaceScope).
+observe(ConditionWitness, Deprivation_Belief, Period_Deprivation_Belief, CustodyConditionPeriodScope).
+observe(ConditionWitness, Deprivation_Belief, Evidence_Deprivation_Belief, CustodyConditionEvidenceScope).
+observe(ConditionWitness, Deprivation_Belief, Believe, CustodyDeprivationItemScope).
+observe(ConditionWitness, Deprivation_Belief, PositiveEvidenceNoticeReasonsAndIndependentContest, CustodyConditionProcedureScope).
+observe(ConditionReviewer, Deprivation_Belief, BeliefSubject, CustodyConditionSubjectScope).
+observe(ConditionReviewer, Deprivation_Belief, Holding_Deprivation_Belief, CustodyConditionHoldingScope).
+observe(ConditionReviewer, Deprivation_Belief, HoldingActor, CustodyConditionHolderScope).
+observe(ConditionReviewer, Deprivation_Belief, Place_Deprivation_Belief, CustodyConditionPlaceScope).
+observe(ConditionReviewer, Deprivation_Belief, Period_Deprivation_Belief, CustodyConditionPeriodScope).
+observe(ConditionReviewer, Deprivation_Belief, Evidence_Deprivation_Belief, CustodyConditionEvidenceScope).
+observe(ConditionReviewer, Deprivation_Belief, Believe, CustodyDeprivationItemScope).
+observe(ConditionReviewer, Deprivation_Belief, PositiveEvidenceNoticeReasonsAndIndependentContest, CustodyConditionProcedureScope).
+? responsible(Deprivation_Belief, CustodyDeprivationFinding).
+# => FALSE
+? err(BeliefSubject, Deprivation).
+# => FALSE
+? person(BeliefSubject).
+# => FALSE
+# Two authorised actors naming different items collide; the finding waits while
+# the person they agree on keeps identification and the debt.
+list(Deprivation_Mismatch, MismatchDeprivedSubject, Holding_Deprivation_Mismatch, CustodyDeprivationFinding).
+list(Deprivation_Mismatch, HoldingActor, Place_Deprivation_Mismatch, CustodyConditionLocation).
+list(Deprivation_Mismatch, Period_Deprivation_Mismatch, Evidence_Deprivation_Mismatch, CustodyConditionEvidenceWindow).
+authorized(ConditionWitness, CustodyConditionWitness, Deprivation_Mismatch).
+authorized(ConditionReviewer, IndependentCustodyConditionReviewer, Deprivation_Mismatch).
+observe(ConditionWitness, Deprivation_Mismatch, MismatchDeprivedSubject, CustodyConditionSubjectScope).
+observe(ConditionWitness, Deprivation_Mismatch, Holding_Deprivation_Mismatch, CustodyConditionHoldingScope).
+observe(ConditionWitness, Deprivation_Mismatch, HoldingActor, CustodyConditionHolderScope).
+observe(ConditionWitness, Deprivation_Mismatch, Place_Deprivation_Mismatch, CustodyConditionPlaceScope).
+observe(ConditionWitness, Deprivation_Mismatch, Period_Deprivation_Mismatch, CustodyConditionPeriodScope).
+observe(ConditionWitness, Deprivation_Mismatch, Evidence_Deprivation_Mismatch, CustodyConditionEvidenceScope).
+observe(ConditionWitness, Deprivation_Mismatch, Eats, CustodyDeprivationItemScope).
+observe(ConditionWitness, Deprivation_Mismatch, PositiveEvidenceNoticeReasonsAndIndependentContest, CustodyConditionProcedureScope).
+observe(ConditionReviewer, Deprivation_Mismatch, MismatchDeprivedSubject, CustodyConditionSubjectScope).
+observe(ConditionReviewer, Deprivation_Mismatch, Holding_Deprivation_Mismatch, CustodyConditionHoldingScope).
+observe(ConditionReviewer, Deprivation_Mismatch, HoldingActor, CustodyConditionHolderScope).
+observe(ConditionReviewer, Deprivation_Mismatch, Place_Deprivation_Mismatch, CustodyConditionPlaceScope).
+observe(ConditionReviewer, Deprivation_Mismatch, Period_Deprivation_Mismatch, CustodyConditionPeriodScope).
+observe(ConditionReviewer, Deprivation_Mismatch, Evidence_Deprivation_Mismatch, CustodyConditionEvidenceScope).
+observe(ConditionReviewer, Deprivation_Mismatch, Dwell, CustodyDeprivationItemScope).
+observe(ConditionReviewer, Deprivation_Mismatch, PositiveEvidenceNoticeReasonsAndIndependentContest, CustodyConditionProcedureScope).
+? collide(Deprivation_Mismatch, CustodyConditionBinding).
+# => TRUE
+? responsible(Deprivation_Mismatch, CustodyDeprivationFinding).
+# => FALSE
+? err(MismatchDeprivedSubject, Deprivation).
+# => FALSE
+? person(MismatchDeprivedSubject).
+# => TRUE
+? owe(State, Dwell, MismatchDeprivedSubject).
+# => TRUE
+# The marker and the completion are conclusions; the record refuses them as
+# direct entries.
+:refuse reasoning /declared derived-only/
+responsible(ForgedDeprivation, CustodyDeprivationFinding).
+:refuse reasoning /declared derived-only/
+err(Bela, Deprivation).

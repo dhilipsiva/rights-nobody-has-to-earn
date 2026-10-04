@@ -34,6 +34,19 @@ therefore a person, and that the State owes Zed every floor item. The
 conclusion that Zed may move freely is absent: movement is what the sentence
 takes.
 
+Where the State holds a person, the rules also name who must deliver. The
+tiers divide the floor's delivery by presence, as *What You Are Owed*
+(Chapter 3) sets out: a locality owes reach and delivery where a witness
+records a person present. A person in custody is present where the placement
+put them, and the body whose placement authority chose that place owes reach
+and delivery of every floor item there, from the approved placement itself and
+while it is in force. In Zed's record that body is the State. The duty is read
+by nothing and shows nothing about a meal reaching Zed: a receipt witnessed by
+someone other than the provider still supplies that conclusion, as *Whether It
+Arrived* (Chapter 4) sets out, and a reviewed finding that the holder withheld
+an item is a breach *The One Thing Taken* (Chapter 27) and *When the System
+Notices It Broke* (Chapter 28) follow.
+
 Birth, first contact, presence and effective control each give standing
 without a registry match or a confinement. Custody is a backstop beside them,
 and release is another: a name that only a release entry mentions is a person,
@@ -99,7 +112,10 @@ custody case or restraint holds that person.
 Zed and Nell are both owed shelter and expression. Both records lack a shelter
 receipt and a record of speech, so the rules conclude shelter received and
 speech made for neither person. The custody conclusion holds for Zed alone;
-the debts are identical.
+the debts are identical. The deliverer differs. Zed's approved placement names
+the body that must reach Zed with the floor; Nell's one entry records nobody's
+presence, so the tiers' delivery duties wait for a presence record while the
+debt, the common tier's duties and the advocate's duty to begin stand.
 
 Suppose a shelter receipt were recorded for Nell and attested by a witness
 authorised for Nell who is someone other than the provider. The rules then

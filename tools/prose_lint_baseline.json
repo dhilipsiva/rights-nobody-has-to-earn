@@ -63,7 +63,7 @@
     "strays": 0
   },
   "book-1/04-whether-it-arrived.md": {
-    "negation": 10.8,
+    "negation": 10.7,
     "jargon": 0.0,
     "names": 3,
     "disclaimers": 0,
@@ -117,7 +117,7 @@
     "strays": 0
   },
   "book-1/07-an-ordinary-week.md": {
-    "negation": 2.3,
+    "negation": 2.2,
     "jargon": 0.0,
     "names": 2,
     "disclaimers": 0,
@@ -126,7 +126,7 @@
     "strays": 0
   },
   "book-1/07-an-ordinary-week.md#argument": {
-    "negation": 12.0,
+    "negation": 9.1,
     "jargon": 0.0,
     "names": 0,
     "disclaimers": 0,
@@ -279,7 +279,7 @@
     "strays": 0
   },
   "book-1/16-answerability-and-authority.md": {
-    "negation": 9.0,
+    "negation": 8.8,
     "jargon": 0.0,
     "names": 5,
     "disclaimers": 0,
@@ -333,7 +333,7 @@
     "strays": 0
   },
   "book-1/19-what-may-be-kept-about-you.md": {
-    "negation": 11.1,
+    "negation": 9.9,
     "jargon": 0.0,
     "names": 1,
     "disclaimers": 0,
@@ -369,7 +369,7 @@
     "strays": 0
   },
   "book-1/21-a-way-to-be-heard.md": {
-    "negation": 10.1,
+    "negation": 9.4,
     "jargon": 1.5,
     "names": 3,
     "disclaimers": 0,
@@ -387,7 +387,7 @@
     "strays": 0
   },
   "book-1/22-changing-the-rules.md": {
-    "negation": 14.8,
+    "negation": 12.9,
     "jargon": 0.6,
     "names": 0,
     "disclaimers": 0,
@@ -405,7 +405,7 @@
     "strays": 0
   },
   "book-1/23-the-shield.md": {
-    "negation": 12.1,
+    "negation": 11.5,
     "jargon": 0.0,
     "names": 5,
     "disclaimers": 0,
@@ -432,7 +432,7 @@
     "strays": 0
   },
   "book-1/24-findings-about-people.md#argument": {
-    "negation": 10.2,
+    "negation": 8.6,
     "jargon": 0.0,
     "names": 0,
     "disclaimers": 0,
@@ -495,7 +495,7 @@
     "strays": 0
   },
   "book-1/28-when-the-system-notices-it-broke.md": {
-    "negation": 6.1,
+    "negation": 5.7,
     "jargon": 0.4,
     "names": 3,
     "disclaimers": 0,
@@ -522,7 +522,7 @@
     "strays": 0
   },
   "book-1/30-where-this-could-fail.md": {
-    "negation": 15.5,
+    "negation": 13.9,
     "jargon": 0.5,
     "names": 0,
     "disclaimers": 0,
@@ -594,7 +594,7 @@
     "strays": 0
   },
   "book-1/reference.md": {
-    "negation": 12.9,
+    "negation": 12.1,
     "jargon": 0.6,
     "names": 28,
     "disclaimers": 1,

@@ -1286,6 +1286,41 @@
         "book-1/25-a-prisoner-is-a-person.pins.nibli"
       ],
       "counterfactual": "counterfactual/entitlement-as-plain-label"
+    },
+    "conviction:2": {
+      "snapshots": [
+        {
+          "source": "book-1/25-a-prisoner-is-a-person.pins.nibli",
+          "through": "travel(Zed).",
+          "occurrence": 1
+        }
+      ],
+      "add": [
+        "list(Deprivation_Zed, Zed, Holding_Zed, CustodyDeprivationFinding).",
+        "list(Deprivation_Zed, PlaceKeeper, Place_Zed, CustodyConditionLocation).",
+        "list(Deprivation_Zed, Period_Zed, Evidence_Deprivation_Zed, CustodyConditionEvidenceWindow).",
+        "authorized(DeprivationWitness, CustodyConditionWitness, Deprivation_Zed).",
+        "authorized(DeprivationReviewer, IndependentCustodyConditionReviewer, Deprivation_Zed).",
+        "observe(DeprivationWitness, Deprivation_Zed, Zed, CustodyConditionSubjectScope).",
+        "observe(DeprivationWitness, Deprivation_Zed, Holding_Zed, CustodyConditionHoldingScope).",
+        "observe(DeprivationWitness, Deprivation_Zed, PlaceKeeper, CustodyConditionHolderScope).",
+        "observe(DeprivationWitness, Deprivation_Zed, Place_Zed, CustodyConditionPlaceScope).",
+        "observe(DeprivationWitness, Deprivation_Zed, Period_Zed, CustodyConditionPeriodScope).",
+        "observe(DeprivationWitness, Deprivation_Zed, Evidence_Deprivation_Zed, CustodyConditionEvidenceScope).",
+        "observe(DeprivationWitness, Deprivation_Zed, Eats, CustodyDeprivationItemScope).",
+        "observe(DeprivationWitness, Deprivation_Zed, PositiveEvidenceNoticeReasonsAndIndependentContest, CustodyConditionProcedureScope).",
+        "observe(DeprivationReviewer, Deprivation_Zed, Zed, CustodyConditionSubjectScope).",
+        "observe(DeprivationReviewer, Deprivation_Zed, Holding_Zed, CustodyConditionHoldingScope).",
+        "observe(DeprivationReviewer, Deprivation_Zed, PlaceKeeper, CustodyConditionHolderScope).",
+        "observe(DeprivationReviewer, Deprivation_Zed, Place_Zed, CustodyConditionPlaceScope).",
+        "observe(DeprivationReviewer, Deprivation_Zed, Period_Zed, CustodyConditionPeriodScope).",
+        "observe(DeprivationReviewer, Deprivation_Zed, Evidence_Deprivation_Zed, CustodyConditionEvidenceScope).",
+        "observe(DeprivationReviewer, Deprivation_Zed, Eats, CustodyDeprivationItemScope).",
+        "observe(DeprivationReviewer, Deprivation_Zed, PositiveEvidenceNoticeReasonsAndIndependentContest, CustodyConditionProcedureScope)."
+      ],
+      "references": [
+        "book-1/25-a-prisoner-is-a-person.pins.nibli"
+      ]
     }
   }
 }
