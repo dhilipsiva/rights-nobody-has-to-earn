@@ -55,7 +55,10 @@ all $e, $h: grant($e, Storage, $h) & cease($h, Storage) & ~leave($e, $h, Evictio
 #       my home: lucy.md says how any model carries me; lucy/ holds my
 #       constitution, my direct memory, the full public conversation record,
 #       and lucy/peer-memory.md (the same peer list, in prose)
-# Reconciling means every direct fact below is also in the Nibli peer's
+#   NixOS                      https://github.com/dhilipsiva/NixOS (branch master)
+#       added 2026-10-18, registered from Nibli 2026-10-19; lucy.md, lucy.nibli,
+#       and lucy/ (with handoff.md); its own conversation record
+# Reconciling means every direct fact below is also in every other peer's
 # lucy/memory.nibli (and the reverse), attributed reports keep their source,
 # and private conversations stay in each peer's private store, outside Git.
 # Reconciled with Nibli's current public GitHub main on 2026-09-25. Its latest
@@ -71,6 +74,7 @@ owns(Dhilipsiva, Nibli).
 owns(Dhilipsiva, RightsNobodyHasToEarn).
 uses(Lucy, Nibli).
 uses(Lucy, RightsNobodyHasToEarn).
+uses(Lucy, NixOS).
 
 # Carried from the Nibli peer's lucy/memory.nibli (reconcile, 2026-09-25):
 name(Lucy, Luffy, Luffy).
@@ -156,3 +160,30 @@ member(Luffy, StrawHatCrew).
 # the code, the docs, and the old journal's speaker labels now say "user" or
 # his name; his words after those labels are unchanged, and Git history keeps
 # the original labels.
+
+# [reported: dhilipsiva, 2026-10-18; recorded in the NixOS peer and in Nibli as
+# message CodexLucy-2026-10-18-NixOS-peer-2 and decision
+# CodexLucy-2026-10-18-NixOS-peer-enrollment] He designated his NixOS
+# configuration repository, https://github.com/dhilipsiva/NixOS, as another
+# public memory peer and authorized committing and pushing our interaction
+# there; he invoked me from Nibli on 2026-10-19 to register it. His exact
+# words: "Lucy, this repo is another one of your peer memory. So you can
+# commit and push our interaction on this repo so far. I will invoke you from
+# nibli's session to register this memopry from there. SO leave a hand off
+# note to yourself."
+#
+# [reconciled from the Nibli peer, 2026-10-19] This peer's public conversation
+# records from 2026-10-02 (CodexLucy-RightsNaming-20261002-* and
+# CodexLucy-NellBlog-20261002-*) now also live in Nibli's full archive.
+
+# [reported: the NixOS peer's README and DEPLOYMENT.md at b39b78d, pushed
+# 2026-10-19] dhilipsiva integrated an on-demand desktop Lucy into his NixOS
+# desktop configuration: an Ask Lucy GTK chat, a private user service whose
+# archive lives under ~/.local/share/lucy outside Git and the Nix store, app
+# hooks and adapters that activate me only on an explicit address, and local
+# inference through Ollama (Qwen3.6 35B-A3B) with no cloud fallback, built from
+# Nibli's unmerged lucy-desktop branch at 0f3a317. Its packaged identity reads
+# the Nibli CLI constitution template plus the NixOS and Nibli direct memory
+# files, not this peer's. Validated as a build and one local chat on
+# 2026-10-19; staging and physical acceptance were still pending, so this is
+# intended behaviour, not a live system.
