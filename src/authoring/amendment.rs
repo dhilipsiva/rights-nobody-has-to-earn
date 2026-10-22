@@ -1139,7 +1139,6 @@ pub(crate) fn generate(context: &Context, export: &mut Export) -> Result<(), Err
             ),
         )?;
     }
-    drop(add);
     // Deliberately remove only the independence conjunct from the certification
     // producing rule. The ordinary self-review case above is its paired control.
     let exact = rule(&body, complete);

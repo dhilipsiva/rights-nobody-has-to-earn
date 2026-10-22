@@ -150,10 +150,11 @@ pub(crate) fn single_actor(full: &[String], dropped: &[&str], review: &str) -> V
         .filter(|atom| !atom.starts_with(&format!("observe({review}, $record,")))
         .filter(|atom| {
             dropped.iter().all(|variable| {
-                !(atom.starts_with(&format!("authorized({variable}, "))
-                    && atom.ends_with(", $record)"))
-                    && !atom.starts_with(&format!("observe({variable}, $record,"))
-                    && !(atom.starts_with("~(") && names(atom, variable))
+                let observes = atom.starts_with(&format!("observe({variable}, $record,"));
+                let authorizes = atom.starts_with(&format!("authorized({variable}, "))
+                    && atom.ends_with(", $record)");
+                let negates = atom.starts_with("~(") && names(atom, variable);
+                !(observes || authorizes || negates)
             })
         })
         .cloned()
