@@ -74,6 +74,10 @@ under the existing resolve-before-defending rule.
 ## Checks
 
 The [setup instructions](README.md#verify) establish the adjacent Nibli checkout.
+The constitution is stored with Git LFS, so install git-lfs before cloning (or run
+`git lfs pull` afterwards): without it `book-1/source/constitution.nibli` is a
+133-byte pointer, and `bootstrap.sh` and the verifier stop with a message saying
+so. README.md (Verify) gives the fallback for a machine without git-lfs.
 From the repository root, use the affected companion file for focused feedback:
 
 ```bash

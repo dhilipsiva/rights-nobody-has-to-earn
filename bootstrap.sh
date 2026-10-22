@@ -18,6 +18,26 @@
 set -euo pipefail
 cd -- "$(dirname -- "$0")"
 
+# The constitution is stored with Git LFS. Without git-lfs a clone holds a 133-byte pointer in its
+# place, which nothing here can verify; stop and say so rather than fail later in the parser.
+constitution=book-1/source/constitution.nibli
+if [ "$(head -c 42 "$constitution")" = "version https://git-lfs.github.com/spec/v1" ]; then
+    cat >&2 <<MESSAGE
+$constitution is a Git LFS pointer ($(wc -c < "$constitution") bytes), not the
+constitution: this checkout was made without git-lfs. Install git-lfs, then run
+
+    git lfs install && git lfs pull
+
+Without git-lfs, restore the identical file (same sha256) from the commit before
+it moved to LFS:
+
+    git show 3c46a347:$constitution > $constitution
+
+git status then reports it as modified, which is expected without git-lfs.
+MESSAGE
+    exit 1
+fi
+
 pin_field() {
     awk -v key="$1" '$1 == key { print $2; found = 1 } END { exit !found }' engine.pin
 }
