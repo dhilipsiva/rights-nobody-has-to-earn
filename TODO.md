@@ -382,3 +382,10 @@ punctum and Westminster raise the conflict first. On 2026-09-29, with every
 other required item complete, the proposal, the outline, the press notes and
 the drafts were brought to the finished text at `76456a03`. The author sends
 each one after filling the gaps marked `[AUTHOR: …]`. Nothing has been sent.
+
+## Lucy peer files — parked 2026-10-22
+
+The uncommitted edits to `lucy.md` and `lucy/peer-memory.md` (last changed 2026-10-20) describe
+nibli's desktop runtime, which is not merged yet. They are parked, unchanged, on the branch
+`lucy-rust-store-docs`, and return to main in lockstep with NixOS and nibli once that runtime lands.
+Never discard them.
