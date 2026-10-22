@@ -95,12 +95,14 @@ cd rights-nobody-has-to-earn
 ```
 
 The constitution, `book-1/source/constitution.nibli` (57,745,277 bytes), is
-stored with Git LFS: install [git-lfs](https://git-lfs.com) before cloning, or
-run `git lfs install && git lfs pull` afterwards. Without it the file is a
-133-byte pointer, and `bootstrap.sh` and the verifier stop and say so. With no
-git-lfs at all, `git show 3c46a347:book-1/source/constitution.nibli >
-book-1/source/constitution.nibli` restores the identical file (the same sha256)
-from the commit before the move; `git status` then lists it as modified.
+stored with Git LFS: install [git-lfs](https://git-lfs.com) and run
+`git lfs install` once before cloning, or run `git lfs install && git lfs pull`
+afterwards. Without it the file is a 133-byte pointer, and `bootstrap.sh` and the
+verifier stop and say so. Where git-lfs cannot be installed, and while the pointer
+still names the object it moved to LFS as (sha256 `73fbc8c8…6ecb`, 2026-10-04),
+`git restore --source=3c46a347 -- book-1/source/constitution.nibli` restores the
+identical file from the commit before the move; `bootstrap.sh` says when that no
+longer holds. `git status` then lists the file as modified; do not commit it.
 
 `bootstrap.sh` clones the engine at the revision named in `engine.pin` and
 checks it out detached. It never edits an engine checkout that is already there:

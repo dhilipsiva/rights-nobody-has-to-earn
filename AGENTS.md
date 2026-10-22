@@ -38,10 +38,11 @@ completion. Follow the 2026-09-18 resolve-before-defending ruling in `CLAUDE.md`
 
 ## Checkout
 
-`book-1/source/constitution.nibli` is stored with Git LFS. Without git-lfs it is
-a 133-byte pointer, and `bootstrap.sh` and the verifier refuse it, naming LFS.
-`git show 3c46a347:book-1/source/constitution.nibli > book-1/source/constitution.nibli`
-restores the identical file (the same sha256) where git-lfs cannot be installed.
+`book-1/source/constitution.nibli` is stored with Git LFS. Without git-lfs (and
+`git lfs install`) it is a 133-byte pointer, and `bootstrap.sh` and the verifier
+refuse it, naming LFS. While the pointer names the object it moved to LFS as,
+`git restore --source=3c46a347 -- book-1/source/constitution.nibli` restores the
+identical file where git-lfs cannot be installed; never commit that restored file.
 
 ## Verification — author decision, 2026-09-12
 

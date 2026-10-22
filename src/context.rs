@@ -67,8 +67,8 @@ fn refuse_lfs_pointer(constitution: &Path) -> Result<(), Error> {
     if start == LFS_POINTER {
         return Err(Error::usage(format!(
             "{} is a Git LFS pointer, not the constitution: this checkout was made without \
-             git-lfs. Install git-lfs and run `git lfs pull`, or see README.md (Verify) for the \
-             fallback.",
+             git-lfs. Install git-lfs, then run `git lfs install && git lfs pull`; \
+             ./bootstrap.sh says whether a copy outside LFS exists.",
             constitution.display()
         )));
     }

@@ -3,7 +3,8 @@
 #
 # Put the pinned Nibli engine beside this checkout so ./verify.sh can build.
 #
-# From clean inputs this is the whole setup:
+# With git-lfs installed (and `git lfs install` run once), from clean inputs this is
+# the whole setup:
 #
 #     git clone https://github.com/dhilipsiva/rights-nobody-has-to-earn.git
 #     cd rights-nobody-has-to-earn
@@ -21,20 +22,29 @@ cd -- "$(dirname -- "$0")"
 # The constitution is stored with Git LFS. Without git-lfs a clone holds a 133-byte pointer in its
 # place, which nothing here can verify; stop and say so rather than fail later in the parser.
 constitution=book-1/source/constitution.nibli
-if [ "$(head -c 42 "$constitution")" = "version https://git-lfs.github.com/spec/v1" ]; then
+if [ "$(head -c 42 "$constitution" 2>/dev/null)" = "version https://git-lfs.github.com/spec/v1" ]; then
     cat >&2 <<MESSAGE
 $constitution is a Git LFS pointer ($(wc -c < "$constitution") bytes), not the
 constitution: this checkout was made without git-lfs. Install git-lfs, then run
 
     git lfs install && git lfs pull
 
-Without git-lfs, restore the identical file (same sha256) from the commit before
-it moved to LFS:
-
-    git show 3c46a347:$constitution > $constitution
-
-git status then reports it as modified, which is expected without git-lfs.
 MESSAGE
+    # The only copy outside LFS storage is the text as it stood when it moved to LFS
+    # (3c46a347). It is the right file only while the pointer still names that object.
+    if grep -qx "oid sha256:73fbc8c86df7ac0d4174367001a18d77723e30cde6a5ce40ecb4038136a26ecb" "$constitution"; then
+        cat >&2 <<MESSAGE
+Without git-lfs, restore the identical file (the same sha256) from the commit
+before the move, from the repository root:
+
+    git restore --source=3c46a347 -- $constitution
+
+git status then lists it as modified, which is expected without git-lfs. Do not
+commit it: that would replace the LFS pointer with the 57 MB file.
+MESSAGE
+    else
+        echo "This pointer names a later version, which only LFS storage holds: git-lfs is required." >&2
+    fi
     exit 1
 fi
 
