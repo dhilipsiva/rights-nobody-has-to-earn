@@ -54,24 +54,38 @@ pin_field() {
 
 repository="$(pin_field repository)"
 revision="$(pin_field revision)"
-engine="${RIGHTS_ENGINE_PATH:-../nibli}"
+
+# The build reaches the engine through ./engine (the Cargo path dependencies), so the engine can
+# live anywhere. RIGHTS_ENGINE_PATH chooses it, for example a separate clone kept at the pin
+# rather than a working checkout; otherwise an existing link stays, and the default is ../nibli.
+if [ -n "${RIGHTS_ENGINE_PATH:-}" ]; then
+    engine="$RIGHTS_ENGINE_PATH"
+elif [ -L engine ]; then
+    engine="$(readlink engine)"
+else
+    engine=../nibli
+fi
+if [ -e engine ] && [ ! -L engine ]; then
+    echo "./engine exists and is not a link; move it aside first" >&2
+    exit 1
+fi
 
 echo "pinned engine: $revision"
 echo "               $repository"
 
-if [ ! -d "$engine/.git" ]; then
+if [ ! -e "$engine/.git" ]; then
     echo "cloning into $engine"
     git clone --quiet "$repository" "$engine"
     git -C "$engine" checkout --quiet --detach "$revision"
     echo "checked out $revision (detached)"
-    echo "now run ./verify.sh"
-    exit 0
 fi
+ln -sfn "$(cd -- "$engine" && pwd -P)" engine
+echo "engine link: engine -> $(readlink engine)"
 
-present="$(git -C "$engine" rev-parse HEAD)"
+present="$(git -C engine rev-parse HEAD)"
 echo "present engine: $present ($engine)"
 
-if [ -n "$(git -C "$engine" status --porcelain)" ]; then
+if [ -n "$(git -C engine status --porcelain)" ]; then
     echo "NOTE: that checkout has uncommitted changes; ./verify.sh will build them."
 fi
 
@@ -83,9 +97,9 @@ fi
 cat <<MESSAGE
 NOTE: the engine beside this checkout is NOT the pinned revision. Nothing here
 changes it. ./verify.sh will build what is there, and a measurement taken now
-describes that engine, not the pinned one. To verify against the pin instead:
+describes that engine, not the pinned one. To verify against the pin instead, keep
+a separate clone at the pin and link it (this checkout's engine is left alone):
 
-    git -C "$engine" fetch origin
-    git -C "$engine" checkout --detach $revision
+    RIGHTS_ENGINE_PATH=../nibli-at-pin ./bootstrap.sh
 MESSAGE
 exit 0

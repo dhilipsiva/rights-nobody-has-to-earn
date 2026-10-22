@@ -20,6 +20,9 @@ target/
 # Windows alternate-data-stream artifacts
 *:Zone.Identifier
 
+# The link to the engine checkout, made by bootstrap.sh.
+/engine
+
 # Lucy's lock file for her conversation archive, created on use.
 lucy/.interactions.lock
 

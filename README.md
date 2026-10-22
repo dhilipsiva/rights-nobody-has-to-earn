@@ -108,8 +108,11 @@ longer holds. `git status` then lists the file as modified; do not commit it.
 checks it out detached. It never edits an engine checkout that is already there:
 the engine is developed alongside this book, so it reports what revision sits
 beside you and whether it matches the pin, and leaves the decision to you. The
-pinned revision is a published input, not a gate — `verify.sh` builds whatever
-is at `../nibli` and checks pins and contradictions, nothing else.
+pinned revision is a published input, not a gate — `verify.sh` builds the engine
+`./engine` links to, prints its revision, and checks pins and contradictions,
+nothing else. The link defaults to `../nibli`; to verify against the pin without
+disturbing a working checkout, `RIGHTS_ENGINE_PATH=../nibli-at-pin ./bootstrap.sh`
+clones the engine there at the pin and links it instead.
 
 That path was exercised from clean inputs on 2026-09-15: a fresh clone of this
 repository, `./bootstrap.sh`, then `./verify.sh` — all pins in the inventory of

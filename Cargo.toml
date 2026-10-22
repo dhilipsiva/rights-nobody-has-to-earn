@@ -17,9 +17,9 @@ libc = "0.2.189"
 regex = "1.12.3"
 serde = { version = "1.0.228", features = ["derive"] }
 serde_json = "1.0.149"
-nibli-engine = { path = "../nibli/nibli-engine" }
-nibli-reason = { path = "../nibli/nibli-reason" }
-nibli-session = { path = "../nibli/nibli-session" }
+nibli-engine = { path = "engine/nibli-engine" }
+nibli-reason = { path = "engine/nibli-reason" }
+nibli-session = { path = "engine/nibli-session" }
 
 [target.'cfg(all(target_os = "linux", target_env = "gnu"))'.dependencies]
 tikv-jemallocator = "0.7.0"
