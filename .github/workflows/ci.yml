@@ -1,0 +1,79 @@
+# SPDX-License-Identifier: MIT OR Apache-2.0
+# The verifier's gates on every push: formatting, lint, both test binaries (rights-verify and
+# generate) and the Python checks. book-ui.yml covers the reading interface; this one is not
+# path-filtered, so a change to src/, tools/, tests/ or registry/ always runs it.
+name: CI
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: ci-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+env:
+  CARGO_TERM_COLOR: always
+  CARGO_BUILD_JOBS: 2
+  # The declared rust-version (Cargo.toml), so a new Clippy release cannot turn the gate red.
+  RUST_TOOLCHAIN: "1.94.0"
+jobs:
+  rust:
+    name: fmt, clippy, tests
+    runs-on: ubuntu-24.04
+    timeout-minutes: 150
+    steps:
+      # lfs: the constitution is stored with Git LFS; without it the checkout holds a pointer.
+      - name: Check out source
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          path: book
+          lfs: true
+          persist-credentials: false
+      - name: Install Rust
+        run: |
+          rustup toolchain install "$RUST_TOOLCHAIN" --profile minimal --component rustfmt --component clippy
+          rustup default "$RUST_TOOLCHAIN"
+      - name: Set up the pinned engine
+        working-directory: book
+        run: ./bootstrap.sh
+      - name: Cache cargo
+        uses: Swatinem/rust-cache@2201cc584a476d1b508be977bbe4b7d1c7a52e9c # v2.9.3
+        with:
+          workspaces: book
+      # Package-scoped: `cargo fmt --all` would also format the engine's path dependencies.
+      - name: Check formatting
+        working-directory: book
+        run: cargo fmt -p rights-verify -- --check
+      - name: Check Clippy warnings
+        working-directory: book
+        run: cargo clippy --workspace --all-targets --locked -- -D warnings
+      # Release, one test at a time: each test holds the whole constitution. Measured 2026-10-22,
+      # the suite peaked at 11 GB with one thread (19 minutes), 20 GB with two and 59 GB with 32;
+      # a runner has 16 GB. Debug would take about four CPU-hours. --no-fail-fast, so every test
+      # binary reports even when one fails.
+      - name: Run tests
+        working-directory: book
+        env:
+          RUST_MIN_STACK: "67108864"
+        run: cargo test --release --workspace --locked --no-fail-fast -- --test-threads=1
+
+  python:
+    name: Python checks
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    steps:
+      - name: Check out source
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          lfs: true
+          persist-credentials: false
+      - uses: astral-sh/setup-uv@d0cc045d04ccac9d8b7881df0226f9e82c39688e # v6.8.0
+      - name: Unit tests
+        run: uv run --with markdown-it-py==4.2.0 --with mdit-py-plugins==0.6.1 python -m unittest discover -s tests -p 'test_*.py'
+      - name: Prose lint
+        run: python3 tools/prose_lint.py --check --locations
+      - name: Claim registry
+        run: python3 registry/check.py
+      - name: Assurance pages are current
+        run: python3 tools/assurance_pages.py --check
