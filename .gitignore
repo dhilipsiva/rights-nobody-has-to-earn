@@ -20,6 +20,9 @@ target/
 # Windows alternate-data-stream artifacts
 *:Zone.Identifier
 
+# Lucy's lock file for her conversation archive, created on use.
+lucy/.interactions.lock
+
 # Python bytecode from book-1/source/*.py
 __pycache__/
 *.pyc

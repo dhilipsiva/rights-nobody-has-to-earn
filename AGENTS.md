@@ -4,7 +4,7 @@
 
 `CLAUDE.md` describes the project. Read it before work. The root `TODO.md`
 is the ordered revision backlog created on 2026-09-24 from the outside revision
-plan in `new-reviwes/`; its predecessor, requested on 2026-09-18, is complete.
+plan in `new-reviews/`; its predecessor, requested on 2026-09-18, is complete.
 The author's rulings D1–D9 of 2026-09-24 on that backlog's reserved questions
 are recorded in `CLAUDE.md` with the items implementing each: D5–D8 have
 landed, D2 and D3 hold for Parts I–IV, and the rest wait for their items. The

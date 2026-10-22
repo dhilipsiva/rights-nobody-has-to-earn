@@ -2559,7 +2559,7 @@ same source stands for the verifier.
 ### Item 34 — prose measurement as a development check, 2026-09-24
 
 `tools/prose_lint.py` adapts the revision plan's lint, moved there from
-`new-reviwes/`, into a development measurement of every ordered input the
+`new-reviews/`, into a development measurement of every ordered input the
 manifest names. It reports negations and terms of art per 1,000 words, distinct
 case names, sentences saying something is not established, terms the plan keeps
 out of chapter prose, and harness names, at the file's own line numbers. Four
@@ -2599,7 +2599,7 @@ findings in 1,228.64s; the constitution, pins and chapters are unchanged.
 
 The author ratified nine rulings and two follow-ups on 2026-09-24, answering the
 questions the [revision tracker](TODO.md) reserved after the outside [revision
-plan](new-reviwes/revision-plan-9.5.md). Another AI assistant wrote that plan
+plan](new-reviews/revision-plan-9.5.md). Another AI assistant wrote that plan
 from the 170-page review PDF built at `93fa5662`; the rulings are the author's,
 taken in one sitting. **Each is ratified but unimplemented** in the standing
 sense: it creates no predicate, rule, pin, chapter or built artefact, and the
@@ -7991,7 +7991,7 @@ The repo is deliberately **mixed-licence** — see `LICENSING.md` before adding 
 - `tmp.txt` — the author's scratch notes/instructions for the section currently being drafted; absent when nothing is in flight. Read it for context on what's in progress; don't treat it as book content.
 
 - `TODO.md` — the ordered revision backlog created 2026-09-24 from the outside
-  [revision plan](new-reviwes/revision-plan-9.5.md) and its prose lint. Its items
+  [revision plan](new-reviews/revision-plan-9.5.md) and its prose lint. Its items
   34–72 continue the numbering of the completed items 01–33, items 67–72 being
   the defects item 45's stress tests confirmed, and the author's
   rulings on its reserved questions are recorded in *The revision rulings D1–D9*
@@ -8750,7 +8750,7 @@ Style — **legacy `book.md`/`manifesto.md` only; book-1's register is governed 
 
 **The engine's assert-after-query contract, supplied by the engine session on 2026-08-17 for this repo to rely on:** a query answers the stratified model of everything asserted *before* it and nothing asserted *after* it — identical to loading the same statements in the same order into a fresh KB — and materialisation may only turn a non-definitive verdict definitive, never change a definitive one. This is the guarantee every `:accept-scoped` control and every mid-file assertion in a pin suite depends on, and it is the guarantee that broke: engine `176b132` folded an insert into an existing saturation while refusing only relations *read* under negation, when soundness needs every relation the delta can *reach* under negation. Growth propagated one hop and could not shrink the stratum above it, so an atom a query had already materialised survived a fact that should have retracted it. Fixed in `b97d1af` and gated upstream by a mechanism pin. **Two operational lessons, both verified here rather than taken on trust.** A binary sitting beside a checkout tells you nothing about what produced it — rebuild from a named sha and record the binary's own digest, because reading `HEAD` has already produced one wrong provenance record in this repo. And when a verdict looks wrong against this mechanism, **build the engine debug**: it carries a `debug_assert` comparing a resumed extension against a full recompute, compiled out of release, so a debug build panics where a release build silently returns the stale tuple.
 
-**nibli's `utopia.nibli` keeps the dead word deliberately** — do not "finish" the v0.7 rename by touching it. It is `include_str!`-compiled into three binaries and its UI label is pinned byte-stable by `nibli/CLAUDE.md:161`, so renaming it is real cost in another repo for no gain here. The dependency is one-way: nibli contains zero references to this repo, verified across its whole tree.
+**nibli's `utopia.nibli` keeps the dead word deliberately** — do not "finish" the v0.7 rename by touching it. It is `include_str!`-compiled into three binaries and its UI label is pinned byte-stable by `nibli/CLAUDE.md:161`, so renaming it is real cost in another repo for no gain here. The dependency is one-way: no nibli code, test or build file refers to this repo; only Lucy's memory files there (`lucy/`) mention it (checked 2026-10-22).
 
 ## Repo identity
 

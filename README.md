@@ -115,7 +115,8 @@ That path was exercised from clean inputs on 2026-09-15: a fresh clone of this
 repository, `./bootstrap.sh`, then `./verify.sh` — all pins in the inventory of
 the day passed with complete contradiction scans and no findings in 802.45
 seconds, with the same nine known-defect pins reproducing as in the working
-tree.
+tree. That predates the constitution's move to Git LFS (2026-10-04); a clean
+clone now also needs git-lfs, as above.
 
 ```bash
 ./verify.sh
@@ -157,7 +158,9 @@ in **1,188.54 seconds (19m 48.54s)**. No active known-defect expectations remain
 explicitly weakened counterfactuals still demonstrate their harmful results.
 The engine packages used by this verifier are unchanged between the former
 `979fe8b` pin and `b707dad`; the pin now identifies the published revision
-actually used for this measurement.
+actually used for this measurement. The inventory has grown since that run:
+`./verify.sh --list` reports 16,353 substantive cases (2026-10-22), and no full
+run of that inventory is recorded yet.
 
 For comparison, three runs of the 15,481-case inventory on 2026-09-16 took
 825.00, 884.91 and 1,041.06 seconds — 53 to 67 ms per case. The spread among
@@ -201,8 +204,9 @@ Generation is separate from verification and happens only when requested:
 ./generate.sh spine
 ```
 
-The state-form, obligations, integrity, statistics, amendment, mobility,
-justice and public-safety commands
+`./generate.sh` with no argument lists all nineteen commands. The state-form,
+obligations, integrity, statistics, amendment, mobility, justice and
+public-safety commands
 update their constitution rule blocks, companion pins, and executable fixtures
 from their authoring inputs. Review those changes before running verification.
 Mobility's direct-effect cards live in `src/authoring/mobility_contracts.rs`;
@@ -248,4 +252,6 @@ test the declared routing combinations, not whether housing exists in the world.
 
 Deliberately mixed: prose CC-BY-4.0, code MIT OR Apache-2.0, data CC0, and everything
 committed before that decision irrevocably CC0 under the root `LICENSE`. See
-[`LICENSING.md`](LICENSING.md) before adding files.
+[`LICENSING.md`](LICENSING.md) before adding files. GitHub's licence badge reads
+only the root `LICENSE`, so it shows CC0; the licence of each kind of file is in
+LICENSING.md and in the files' SPDX headers.

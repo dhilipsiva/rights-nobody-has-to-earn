@@ -483,7 +483,7 @@ exactly the planned renames. Applied maps are kept as
 **Content never touched** (asserted byte-identical after a move): the
 constitution; the eight rule-family `*-source.json`; every non-comment line
 of every `*.pins.nibli`; `4-strata.py`; `registry/`; `book.md`,
-`manifesto.md`, `1.md`, `2.md`, `tmp.txt`, `reviews/`, `new-reviwes/`.
+`manifesto.md`, `1.md`, `2.md`, `tmp.txt`, `reviews/`, `new-reviews/`.
 
 **`src/authoring/reference_integrity_tests.rs`**, permanent under
 `cargo test --release --bin generate`: every reviewed reference of the form

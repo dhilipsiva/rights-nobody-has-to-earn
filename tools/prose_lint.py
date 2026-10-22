@@ -2,7 +2,7 @@
 # SPDX-License-Identifier: MIT OR Apache-2.0
 """Prose measurement for Book 1, revision item 34.
 
-Adapted from the revision plan's lint (new-reviwes/revision-plan-9.5.md, section
+Adapted from the revision plan's lint (new-reviews/revision-plan-9.5.md, section
 6.3). It measures reader load in each ordered input named by
 book-1/contents.json: negations and terms of art per 1,000 words, distinct case
 names, sentences that say something is not established, terms the plan keeps

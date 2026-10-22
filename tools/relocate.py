@@ -46,7 +46,7 @@ Content this tool never changes, and `check` asserts byte-identical against HEAD
 (through the rename): the constitution, the eight rule-family sources, every
 pin statement of every pins file (comment and `:require` lines carry paths and
 are rewritten), 4-strata.py, registry/, the legacy manuscripts, tmp.txt,
-reviews/ and new-reviwes/.
+reviews/ and new-reviews/.
 """
 from __future__ import annotations
 
@@ -90,7 +90,7 @@ TEXT_EXCLUDE_BASENAMES = FAMILY_SOURCES | {"4-strata.py", "relocate.py"}
 NEVER_TOUCHED = [
     "**/constitution.nibli", "**/4-strata.py",
     "registry/**", "book.md", "manifesto.md", "1.md", "2.md", "tmp.txt",
-    "reviews/**", "new-reviwes/**",
+    "reviews/**", "new-reviews/**",
 ] + [f"**/{name}" for name in sorted(FAMILY_SOURCES)]
 
 LABEL_GLOBS = ["book-1/[0-9][0-9]-*.md", "book-1/method.md", "book-1/reference.md"]

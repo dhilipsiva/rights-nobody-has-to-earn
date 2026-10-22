@@ -2,7 +2,7 @@
 
 # The revision plan's sources, checked — 2026-09-25
 
-The [revision plan](../new-reviwes/revision-plan-9.5.md) named about 150
+The [revision plan](../new-reviews/revision-plan-9.5.md) named about 150
 sources in §8.2, §8.5, §9.1, §9.2 and §10, and said they were written from
 memory. Each was checked against a primary source, or the most authoritative
 copy that could be reached, before any later item may use it (TODO item 46).

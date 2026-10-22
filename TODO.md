@@ -3,7 +3,7 @@
 # Book 1: revision toward the best book of its kind
 
 Created 2026-09-24 at the author's request, "Create a TODO.md file", from the
-[revision plan](new-reviwes/revision-plan-9.5.md) and its
+[revision plan](new-reviews/revision-plan-9.5.md) and its
 [prose lint](tools/prose_lint.py). Another AI assistant wrote the plan
 outside this repository, from the 170-page review PDF built at `93fa5662`. Its
 target is 9.5, "the best book in its genre that a serious reader could pick
@@ -13,7 +13,7 @@ evidence and scholarship 5, readability for the stated audience 3. The
 Both are editorial judgments by AI assistants, not measurements or independent
 endorsements, and closing items does not make either score true. The plan's
 "Review N" references are to reviews pasted into that assistant's
-conversation, not to the files in `new-reviwes/`.
+conversation, not to the files in `new-reviews/`.
 
 **The plan is evidence to weigh, not an instruction.** Its premises about this
 repository were checked against `93fa5662` on 2026-09-24.
