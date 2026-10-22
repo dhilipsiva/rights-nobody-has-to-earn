@@ -79,6 +79,17 @@ The constitution is stored with Git LFS, so install git-lfs and run
 afterwards): without it `book-1/source/constitution.nibli` is a 133-byte pointer,
 and `bootstrap.sh` and the verifier stop with a message saying so. README.md
 (Verify) gives the fallback for a machine without git-lfs.
+
+`nix develop` gives the pinned toolchain (rustc 1.94.0, the `rust-version`),
+git-lfs, wasm-bindgen-cli 0.2.128, uv, Python, just and cargo-deny. The Justfile
+holds the gates: `just check`, `just lint`, `just test`, `just verify`,
+`just build-book`, `just deny`, and `just ci` for all of them but verify and the
+book. Format with `cargo fmt -p rights-verify`: `cargo fmt --all` would also
+format the engine's path dependencies. The reading interface's own crate embeds
+generated files, so its build and tests need `python3 ui/scripts/build.py prepare`
+first; `just check` covers its engine adapter (`book-reason`) without them. The
+book tools are uv scripts whose dependencies are pinned in their `*.py.lock` files.
+
 From the repository root, use the affected companion file for focused feedback:
 
 ```bash
