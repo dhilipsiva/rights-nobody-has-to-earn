@@ -324,6 +324,16 @@ reports it as a cross-check within the project, so its request to build one
 is met. What it adds here is an outside reimplementation and a red team run by
 someone else, both already named above.
 
+## Proposed: split CLAUDE.md after Gate C (2026-10-22, for the author to schedule)
+
+CLAUDE.md is about 626 KB: an operating guide and every ruling in one file, with a
+generated index at the top (`tools/rulings_index.py`). The proposal: after Gate C,
+split it into a short operating guide (what the repository is, how work lands, the
+files) and `book-1/appendix/rulings/`, one file per ruling group, each ruling's text,
+date and record pointer unchanged, with the index generated from those files. Not
+before Gate C: moving rulings during the revision would churn every cross-reference
+to them while they are still being written.
+
 ## Licence
 
 This new planning text is licensed under CC-BY-4.0. See the full

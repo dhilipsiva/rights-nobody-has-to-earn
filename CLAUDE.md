@@ -1,5 +1,103 @@
 # CLAUDE.md
 
+## Start here
+README.md says what this repository is and how to verify it, AGENTS.md has the working rules,
+and TODO.md the open work. This file records the author's rulings. The index lists each with its
+date and, where its text names one, its controlling record under `book-1/appendix/`, which wins
+where the two diverge. `python3 tools/rulings_index.py --check` confirms the index is current.
+
+## Rulings index
+- Current design throughout — author decision, 2026-09-18
+- Resolve design failures before defending them — author decision, 2026-09-18
+- Verification and authoring — author decision, 2026-09-12
+- Issue 1 — the body that holds a person owes delivery there, 2026-10-02
+- Item 87 — what would change each choice, and who bears it, 2026-09-29
+- Item 86 — the design in ten minutes, 2026-09-29
+- Item 85 — checks and limits where a reader can find them, 2026-09-29
+- Item 84 — the query behind each conclusion, 2026-09-29
+- Item 83 — the companion's front door, 2026-09-29
+- Item 82 — the contribution guide runnable, 2026-09-29
+- Item 80 — Part V's pacing, and the book's length, 2026-09-29
+- Item 79 — back-matter mechanics, 2026-09-29
+- Item 78 — Chapter 30's first failure, surveyed, 2026-09-29
+- Item 77 — plain-language on-ramps, 2026-09-29
+- Item 76 — each piece of machinery stated once, 2026-09-29
+- Item 75 — the two weakest reader chapters, 2026-09-29
+- Item 74 — each chapter counts its costs once, 2026-09-29
+- Item 73 — the catalogue chapters, case-first, 2026-09-29
+- Item 66 closed, and the submissions drafted, 2026-09-25
+- Item 65 — the revision read fresh, verified and submitted, 2026-09-25
+- Item 64 — production and accessibility, 2026-09-25
+- Item 63 — every chapter runs in the companion, 2026-09-25
+- Item 62 — the method as the technical appendix, 2026-09-25
+- Item 61 — the constitution in plain language, in the companion, 2026-09-25
+- Item 60 — the opening rewritten, 2026-09-25
+- Item 59 — Part V as synthesis, and where the design could fail, 2026-09-25
+- Item 58 — the largest commitments argued in proportion, 2026-09-25
+- Item 57 — Part IV in the ruled shape, 2026-09-25
+- Item 56 — Part III in the ruled shape, 2026-09-25
+- Item 55 — Part II in the ruled shape, and an ordinary week, 2026-09-25
+- Item 54 — Part I in the ruled shape, 2026-09-25
+- Item 53 — the book restructured, and the channels for argument built, 2026-09-25
+- Item 52 — the general limits stated once, 2026-09-25
+- Item 51 — the vocabulary and the cast settled, 2026-09-25
+- Item 50 — the core replayed in a second engine, 2026-09-25
+- Item 49 — mutation testing over the rules, 2026-09-25
+- Item 48 — the flow constraints named and the engine situated, 2026-09-25
+- Item 47 — Part V's evidence corrected and its lineage credited, 2026-09-25
+- Item 46 — the plan's sources, checked and registered, 2026-09-25
+- Item 72 — an outreach report reaches the person it reports, 2026-09-25
+- Item 71 — a reading of the core must give its grounds, 2026-09-25
+- Item 70 — continuity stays public, witnesses stay independent, 2026-09-25
+- Item 69 — a compared claimant cannot attest, 2026-09-24
+- Item 68 — who owes an election that cannot be held, 2026-09-24
+- Item 67 — appointment control made challengeable, 2026-09-24
+- Item 45 — six stress tests, and the defects they found, 2026-09-24
+- Item 44 — bodily safety and material security, 2026-09-24
+- Item 43 — fast for help, slow for harm, 2026-09-24
+- Item 42 — the procedural load, measured, 2026-09-24
+- Item 41 — the signing restriction, stated and named, 2026-09-24
+- Item 40 — who attests a scarcity comparison, 2026-09-24
+- Item 39 — confinement guards and a lapse that is not an extension, 2026-09-24
+- Item 38 — failure at scale, 2026-09-24
+- Item 37 — the shield and a disclosure made after the charge, 2026-09-24
+- Item 36 — the floor's bearer by tier, and one name per item, 2026-09-24
+- Item 35 — the companion's CI, 2026-09-24
+- Item 34 — prose measurement as a development check, 2026-09-24
+- The revision rulings D1–D9 — 2026-09-24 → `book-1/appendix/decisions/narrative-register-decision.md`
+- Item 33 — final sequential assessment and shield precision, 2026-09-21
+- Item 32 — rebuilt reading copies and reassessed sample, 2026-09-21
+- Item 31 — evidence, attribution and inference, 2026-09-21
+- Item 30 — sequential developmental and line edit, 2026-09-21
+- Item 29 — necessary qualifications and distinctive child returns, 2026-09-21
+- Item 28 — governing questions and case progression, 2026-09-21
+- Item 27 — identifiable cases and explicit roles, 2026-09-21
+- Item 26 — reader consequences and optional implementation detail, 2026-09-21
+- Item 25 — choices in the opening and direct routes to their arguments, 2026-09-21
+- Item 24 — institutional alternatives and the protected cores, 2026-09-21
+- Item 23 — comparative scarcity decisions and separate protected claims, 2026-09-20 → `book-1/appendix/contracts/scarcity-and-conflict-contract.md`
+- Item 22 — severity limits secure placement without selecting it, 2026-09-20 → `book-1/appendix/decisions/public-safety-defence-emergency-and-external-power-decision.md`
+- Item 21 — contribution without a constitutional recognition status, 2026-09-20 → `book-1/appendix/decisions/recognition-purpose-decision.md`
+- Taxonomy — 2026-08-03, extended by Class 10 on 2026-08-08 → `book-1/appendix/maps/constitutional-taxonomy.md`
+- State form and political membership — 2026-08-07 → `book-1/appendix/decisions/state-form-and-political-membership-decision.md`
+- Substantive equality and anti-subordination — 2026-08-07 → `book-1/appendix/decisions/substantive-equality-and-anti-subordination-decision.md`
+- Economic pluralism and the protected private sphere — 2026-08-07 → `book-1/appendix/decisions/economic-pluralism-and-protected-private-sphere-decision.md`
+- Family, dependency, reproduction, and collective plurality — 2026-08-08 → `book-1/appendix/decisions/family-dependency-reproduction-and-collective-plurality-decision.md`
+- Ecological, future-generation, commons, and non-human-animal — 2026-08-08 → `book-1/appendix/contracts/ecological-and-animal-protection-contract.md`
+- Public safety, defence, emergency, and external power — 2026-08-08 → `book-1/appendix/contracts/public-safety-contract.md`
+- Democratic and administrative integrity — 2026-09-09 → `book-1/appendix/contracts/integrity-record-contract.md`
+- Knowledge, communication, culture, and the free social field — 2026-09-15 → `book-1/appendix/contracts/knowledge-and-free-field-contract.md`
+- Records, surveillance, and automated power — 2026-09-15 → `book-1/appendix/contracts/record-power-contract.md`
+- Physical scarcity, priority, and cross-domain conflict — 2026-09-15 → `book-1/appendix/contracts/scarcity-and-conflict-contract.md`
+- The assurance portfolio — 2026-08-08 → `book-1/appendix/decisions/assurance-portfolio-decision.md`
+- The narrative register — 2026-08-08 → `book-1/appendix/decisions/narrative-register-decision.md`
+- Reader-balance evidence protocol and threshold timing — 2026-08-09 → `book-1/appendix/decisions/reader-evidence-execution-withdrawal-decision.md`
+- Four closing rulings — 2026-09-16
+- The rebuild of Book 1 — 2026-09-16 → `book-1/appendix/decisions/child-with-nobody-decision.md`
+- The revision of Book 1 — 2026-09-18 → `book-1/appendix/decisions/credibility-finding-decision.md`
+- 2026-08-15 no-external-reviewer dependency ruling
+- Undated, under Author-Ratified Rulings: How these rulings are written; Scope, mandate, and the two-book seam; Constitutional baselines; Surviving guardrails and the democratic corridor; Time and temporal contracts; Method and assurance rulings; Enacted machinery — generated and verifier-enforced; Measured Nibli capability boundaries; Historical — the protocol-v4 Stage 4 record
+
 This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
 Its sections are ordered: what the repository is, how work lands, the
