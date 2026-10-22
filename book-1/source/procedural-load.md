@@ -745,4 +745,4 @@ Ruling D6 lets an act that only gives or preserves something for its subject tak
 
 ## Outside this table
 
-Duties are owed rather than taking effect, and barriers read no authorised role, so neither is listed: 701 rules conclude a duty (`obliged`) and 546 conclude a barrier (`prevents`). Where a duty accompanies a restriction, the restriction is measured through the conclusion that takes effect, such as the `interrupt` stays in the ecological family.
+Duties are owed rather than taking effect, and barriers read no authorised role, so neither is listed: 704 rules conclude a duty (`obliged`) and 546 conclude a barrier (`prevents`). Where a duty accompanies a restriction, the restriction is measured through the conclusion that takes effect, such as the `interrupt` stays in the ecological family.
