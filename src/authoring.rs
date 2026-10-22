@@ -20,12 +20,12 @@ pub(crate) mod contents;
 mod ecology;
 #[path = "authoring/equality.rs"]
 mod equality;
+#[path = "authoring/family_life.rs"]
+mod family_life;
 #[path = "authoring/integrity.rs"]
 mod integrity;
 #[path = "authoring/justice.rs"]
 mod justice;
-#[path = "authoring/family_life.rs"]
-mod family_life;
 #[path = "authoring/knowledge.rs"]
 mod knowledge;
 #[path = "authoring/mobility.rs"]
@@ -96,6 +96,10 @@ impl Export {
         value
     }
 
+    #[allow(
+        clippy::too_many_arguments,
+        reason = "each argument is one field of the exported case record"
+    )]
     pub(crate) fn add_case(
         &mut self,
         context: &Context,
@@ -404,14 +408,10 @@ mod tests {
                 .iter()
                 .any(|case| case["id"] == "state-form/main-01")
         );
-        let first = context
-            .read("book-1/source/state-form.pins.nibli")
-            .unwrap();
+        let first = context.read("book-1/source/state-form.pins.nibli").unwrap();
         run(&context, "state-form").expect("repeat generation");
         assert_eq!(
-            context
-                .read("book-1/source/state-form.pins.nibli")
-                .unwrap(),
+            context.read("book-1/source/state-form.pins.nibli").unwrap(),
             first
         );
         assert_eq!(

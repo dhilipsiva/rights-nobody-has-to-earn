@@ -189,14 +189,13 @@ fn no_floor_condition_substitutes_for_another() {
 fn recognition_is_not_minted_or_read_and_contributions_are_not_counted() {
     let statements = statements();
     let mut minted = 0;
+    let reads_reward = Regex::new(r"(?:^|[^A-Za-z0-9_~])reward\(").unwrap();
     for statement in &statements {
         let Some((body, head)) = split(statement) else {
             continue;
         };
         assert!(
-            !Regex::new(r"(?:^|[^A-Za-z0-9_~])reward\(")
-                .unwrap()
-                .is_match(body),
+            !reads_reward.is_match(body),
             "something now READS recognition, so it can condition an outcome: {statement}"
         );
         if head_relation(head) == "reward" {
@@ -356,11 +355,12 @@ fn a_duty_is_not_an_action_because_nothing_reads_one() {
     // what keeps a duty from proving its own performance.
     let mut two_place_readers = Vec::new();
     let mut three_place_readers = Vec::new();
+    let obliged = Regex::new(r"obliged\([^)]*\)").unwrap();
     for statement in &statements {
         let Some((body, head)) = split(statement) else {
             continue;
         };
-        for found in Regex::new(r"obliged\([^)]*\)").unwrap().find_iter(body) {
+        for found in obliged.find_iter(body) {
             match atom_arity(found.as_str()) {
                 2 => two_place_readers.push(head),
                 _ => three_place_readers.push(head),
@@ -387,6 +387,11 @@ fn a_duty_is_not_an_action_because_nothing_reads_one() {
 
     // Controls: every refused reader shape is expressible, so each absence is a
     // decision and not a limit of the language.
+    let readers: Vec<Regex> = NO_READER
+        .iter()
+        .map(|relation| Regex::new(&format!(r"(?:^|[^A-Za-z0-9_])~?{relation}\(")).unwrap())
+        .collect();
+    let obliged = Regex::new(r"obliged\([^)]*\)").unwrap();
     for hostile in [
         "all $x: owe(State, Eats, $x) -> eats($x).",
         "all $r: all $x: obliged($r, ReviewPlacement, $x) -> free($x).",
@@ -399,11 +404,7 @@ fn a_duty_is_not_an_action_because_nothing_reads_one() {
             .expect("the refused reader shape is expressible");
         let (body, _) = split(hostile).expect("a rule");
         assert!(
-            NO_READER.iter().any(|relation| {
-                Regex::new(&format!(r"(?:^|[^A-Za-z0-9_])~?{relation}\("))
-                    .unwrap()
-                    .is_match(body)
-            }) || Regex::new(r"obliged\([^)]*\)").unwrap().is_match(body),
+            readers.iter().any(|reader| reader.is_match(body)) || obliged.is_match(body),
             "control {hostile} does not exercise the census it is meant to trip"
         );
     }
@@ -510,7 +511,10 @@ fn every_power_record_is_independently_reviewed() {
 /// reviewer owes prompt review in a sibling rule with the same body; and no
 /// rule reads a permission it grants, so nothing is built on help one actor
 /// gave. The completion half of the symmetry is the test above.
-fn check_single_actor(statements: &[String], beneficial: &BTreeSet<String>) -> Result<usize, String> {
+fn check_single_actor(
+    statements: &[String],
+    beneficial: &BTreeSet<String>,
+) -> Result<usize, String> {
     use super::procedural_load::{PROMPT_REVIEW, REVIEW_SCOPE, WITHDRAWN};
     let named = Regex::new(r"authorized\(\$review, \w*Review\w*, \$record\)").unwrap();
     // An observation the reviewer has made, not the negated withdrawal guard.
@@ -544,10 +548,14 @@ fn check_single_actor(statements: &[String], beneficial: &BTreeSet<String>) -> R
             .find_iter(body)
             .any(|m| beneficial.contains(m.as_str()))
         {
-            return Err(format!("a single-actor rule names no beneficial record kind: {head}"));
+            return Err(format!(
+                "a single-actor rule names no beneficial record kind: {head}"
+            ));
         }
         if !body.contains(&guard) {
-            return Err(format!("a single-actor rule cannot be withdrawn on review: {head}"));
+            return Err(format!(
+                "a single-actor rule cannot be withdrawn on review: {head}"
+            ));
         }
         if !bodies_with_duty.contains(body) {
             return Err(format!("a single-actor rule owes no prompt review: {head}"));
@@ -563,7 +571,9 @@ fn check_single_actor(statements: &[String], beneficial: &BTreeSet<String>) -> R
         for permission in &granted {
             let reads = Regex::new(&format!(r"permits\([^,()]+, {permission}, ")).unwrap();
             if reads.is_match(body) {
-                return Err(format!("a rule reads the single-actor permission {permission}"));
+                return Err(format!(
+                    "a rule reads the single-actor permission {permission}"
+                ));
             }
         }
     }
@@ -584,7 +594,9 @@ fn help_takes_effect_on_one_actor_and_harm_waits_for_review() {
         .iter()
         .find(|r| {
             r.contains("~observe($review, $record, SingleActorEffectWithdrawnOnReview")
-                && r.ends_with("ProvideTheEffectiveAdjustmentOrSecureAnEquivalentAlternative, $record).")
+                && r.ends_with(
+                    "ProvideTheEffectiveAdjustmentOrSecureAnEquivalentAlternative, $record).",
+                )
         })
         .expect("the accommodation's single-actor rule")
         .clone();
@@ -598,7 +610,8 @@ fn help_takes_effect_on_one_actor_and_harm_waits_for_review() {
     assert!(check_single_actor(&with(adverse), &beneficial).is_err());
     // A completed record concluded on one actor.
     let (body, _) = split(&first).unwrap();
-    let completed = format!("{body}-> complete($record, ReviewedReasonableAccommodation, $decision).");
+    let completed =
+        format!("{body}-> complete($record, ReviewedReasonableAccommodation, $decision).");
     assert!(check_single_actor(&with(completed), &beneficial).is_err());
     // Help nobody can withdraw on review.
     let unguarded = first.replace(
@@ -764,7 +777,8 @@ fn no_family_claims_a_rival_final_authority() {
     // `FinalityScope` and the economic merits scopes are outcome vocabularies
     // rather than routes: they say what a final decision may be, not who makes
     // it. Naming them here is the difference between an exception and a hole.
-    for scope in ["FinalityScope"] {
+    {
+        let scope = "FinalityScope";
         assert!(
             routes[scope].len() > 1,
             "'{scope}' is exempted as an outcome vocabulary, but it now carries \
@@ -1179,7 +1193,11 @@ fn record_attesters_record_every_field_in_the_uniform_families() {
         .iter()
         .filter(|(family, body)| {
             UNIFORMLY_ATTESTED.contains(&family.as_str())
-                && ATTESTERS.iter().filter(|a| body.contains(&format!("observe({a}, "))).count() > 1
+                && ATTESTERS
+                    .iter()
+                    .filter(|a| body.contains(&format!("observe({a}, ")))
+                    .count()
+                    > 1
         })
         .count();
     assert!(
@@ -1205,18 +1223,21 @@ fn record_attesters_record_every_field_in_the_uniform_families() {
     );
     let families: BTreeSet<&str> = rows.iter().map(|(family, _)| family.as_str()).collect();
     for family in UNIFORMLY_ATTESTED {
-        assert!(families.contains(family), "{family} has no rules; the list is stale");
+        assert!(
+            families.contains(family),
+            "{family} has no rules; the list is stale"
+        );
     }
     // Sabotage: drop one attester's copy of one field from a real rule, and
     // show that a writer outside the three attesters is not compared.
     let (_, body) = rows
         .iter()
         .find(|(family, body)| {
-            family == "KNOWLEDGE-AND-FREE-FIELD" && body.contains("observe($source, $record, $version,")
+            family == "KNOWLEDGE-AND-FREE-FIELD"
+                && body.contains("observe($source, $record, $version,")
         })
         .expect("a knowledge record rule");
-    let atom = Regex::new(r"observe\(\$source, \$record, \$version, [A-Za-z0-9_]+\) & ")
-        .unwrap();
+    let atom = Regex::new(r"observe\(\$source, \$record, \$version, [A-Za-z0-9_]+\) & ").unwrap();
     let sabotaged = atom.replace(body, "").into_owned();
     assert_ne!(&sabotaged, body, "the sabotage must remove an atom");
     assert!(
@@ -1247,7 +1268,10 @@ fn attestation_patterns(body: &str) -> Vec<(String, String, String)> {
             .entry((caught[2].to_owned(), caught[3].to_owned()))
             .or_default()
             .insert(caught[1].to_owned());
-        attesters.entry(caught[2].to_owned()).or_default().insert(caught[1].to_owned());
+        attesters
+            .entry(caught[2].to_owned())
+            .or_default()
+            .insert(caught[1].to_owned());
     }
     groups
         .into_iter()
@@ -1319,7 +1343,10 @@ fn each_field_is_attested_the_same_way_across_its_family() {
         .iter()
         .map(|(f, r, s)| (f.to_string(), r.to_string(), s.to_string()))
         .collect();
-    assert_eq!(found, expected, "a field is attested differently across its family");
+    assert_eq!(
+        found, expected,
+        "a field is attested differently across its family"
+    );
     // Sabotage: drop the evidence attester's copy of a field from one economic
     // result rule; its siblings still record it, so the family's pattern breaks.
     let index = rows
@@ -1330,10 +1357,15 @@ fn each_field_is_attested_the_same_way_across_its_family() {
         })
         .expect("an economic result rule");
     let mut sabotaged = rows.clone();
-    sabotaged[index].1 = sabotaged[index]
-        .1
-        .replacen(" & observe($evidence, $result, $epoch, SourceEpochScope)", "", 1);
-    assert_ne!(sabotaged[index].1, rows[index].1, "the sabotage must remove an atom");
+    sabotaged[index].1 = sabotaged[index].1.replacen(
+        " & observe($evidence, $result, $epoch, SourceEpochScope)",
+        "",
+        1,
+    );
+    assert_ne!(
+        sabotaged[index].1, rows[index].1,
+        "the sabotage must remove an atom"
+    );
     assert!(
         inconsistent_fields(&sabotaged).contains(&(
             "ECONOMIC-CONSTITUTION".to_owned(),
@@ -1369,7 +1401,10 @@ fn thinner_single_actor_routes(rows: &[(String, String, String)]) -> Vec<String>
     for (family, body, head) in rows {
         if body.contains(SINGLE_ACTOR_GUARD) {
             if !head.contains("ReviewTheSingleActorRecordPromptly") {
-                effects.entry(family.clone()).or_default().push(fields_written(body, false));
+                effects
+                    .entry(family.clone())
+                    .or_default()
+                    .push(fields_written(body, false));
             }
         } else {
             full.entry((family.clone(), head.clone()))
@@ -1386,7 +1421,7 @@ fn thinner_single_actor_routes(rows: &[(String, String, String)]) -> Vec<String>
             let asked = fields_written(body, false);
             let matched = effects
                 .get(family)
-                .is_some_and(|routes| routes.iter().any(|route| *route == asked));
+                .is_some_and(|routes| routes.contains(&asked));
             if !matched {
                 thinner.push(format!("{family}: {head}"));
             }
@@ -1421,10 +1456,14 @@ fn single_actor_routes_ask_their_source_for_the_full_record() {
         .iter()
         .filter(|(_, body, _)| body.contains(SINGLE_ACTOR_GUARD))
         .count();
-    assert!(routes > 100, "only {routes} single-actor rules were found; check the guard");
+    assert!(
+        routes > 100,
+        "only {routes} single-actor rules were found; check the guard"
+    );
     assert_eq!(thinner_single_actor_routes(&rows), Vec::<String>::new());
     // Sabotage: drop one field from a single-actor effect and from a review
     // duty; each must be reported.
+    let atom = Regex::new(r" & observe\(\$source, \$record, [^,()]+, [A-Za-z0-9_]+\)").unwrap();
     for review_duty in [false, true] {
         let index = rows
             .iter()
@@ -1433,10 +1472,12 @@ fn single_actor_routes_ask_their_source_for_the_full_record() {
                     && head.contains("ReviewTheSingleActorRecordPromptly") == review_duty
             })
             .expect("a single-actor rule");
-        let atom = Regex::new(r" & observe\(\$source, \$record, [^,()]+, [A-Za-z0-9_]+\)").unwrap();
         let mut sabotaged = rows.clone();
         sabotaged[index].1 = atom.replace(&rows[index].1, "").into_owned();
-        assert_ne!(sabotaged[index].1, rows[index].1, "the sabotage must remove an atom");
+        assert_ne!(
+            sabotaged[index].1, rows[index].1,
+            "the sabotage must remove an atom"
+        );
         assert!(
             !thinner_single_actor_routes(&sabotaged).is_empty(),
             "a single-actor rule missing a field must be reported (review duty: {review_duty})"
@@ -1477,12 +1518,21 @@ fn both_timing_witnesses_record_every_field() {
         .map(str::trim)
         .filter(|line| !line.starts_with('#'))
         .filter_map(|line| split(line).map(|(body, _)| body.to_owned()))
-        .filter(|body| body.contains("observe(Chronicle, ") || body.contains("observe(TemporalReview, "))
+        .filter(|body| {
+            body.contains("observe(Chronicle, ") || body.contains("observe(TemporalReview, ")
+        })
         .collect::<Vec<_>>();
-    assert!(bodies.len() > 50, "only {} witnessed rules were found", bodies.len());
+    assert!(
+        bodies.len() > 50,
+        "only {} witnessed rules were found",
+        bodies.len()
+    );
     for body in &bodies {
         let (chronicle, review) = timing_witness_fields(body);
-        assert_eq!(chronicle, review, "one timing witness records a field the other does not: {body}");
+        assert_eq!(
+            chronicle, review,
+            "one timing witness records a field the other does not: {body}"
+        );
     }
     // Sabotage: drop the chronicle's copy of one field.
     let body = bodies
@@ -1492,5 +1542,8 @@ fn both_timing_witnesses_record_every_field() {
     let atom = Regex::new(r" & observe\(Chronicle, [^,()]+, [^,()]+, [A-Za-z0-9_]+\)").unwrap();
     let sabotaged = atom.replace(body, "").into_owned();
     let (chronicle, review) = timing_witness_fields(&sabotaged);
-    assert_ne!(chronicle, review, "dropping one witness's copy must be detected");
+    assert_ne!(
+        chronicle, review,
+        "dropping one witness's copy must be detected"
+    );
 }

@@ -2332,9 +2332,10 @@ fn canonical_pin_query_blocks(text: &str) -> StateFormResult<Vec<ProjectionQuery
     Ok(blocks)
 }
 
-fn render_pin_projection<'a>(
-    blocks: &[ProjectionQuery<'a>],
-) -> StateFormResult<(String, Vec<&'a str>, Vec<(&'a str, &'a str)>)> {
+/// A rendered pin projection: its text, and the names and pairs it was built from.
+type PinProjection<'a> = (String, Vec<&'a str>, Vec<(&'a str, &'a str)>);
+
+fn render_pin_projection<'a>(blocks: &[ProjectionQuery<'a>]) -> StateFormResult<PinProjection<'a>> {
     if blocks.is_empty() {
         return Err(state_form_error(
             "state-form shard projection must not be empty",

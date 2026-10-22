@@ -260,9 +260,11 @@ impl Contents {
     }
 
     pub(crate) fn part_of(&self, path: &str) -> Option<&Part> {
-        self.parts
-            .iter()
-            .find(|part| part.chapters.iter().any(|c| c.path().as_deref() == Some(path)))
+        self.parts.iter().find(|part| {
+            part.chapters
+                .iter()
+                .any(|c| c.path().as_deref() == Some(path))
+        })
     }
 
     /// The generated block `./generate.sh spine` writes into `3-spine.md`.
@@ -270,7 +272,10 @@ impl Contents {
         let mut out = String::new();
         match &self.rule {
             Some(rule) => {
-                let _ = writeln!(out, "Reading order, from `{MANIFEST}`. The rule:\n\n> {rule}\n");
+                let _ = writeln!(
+                    out,
+                    "Reading order, from `{MANIFEST}`. The rule:\n\n> {rule}\n"
+                );
             }
             None => {
                 let _ = writeln!(
@@ -443,14 +448,20 @@ mod tests {
         use super::split_argument;
         let plain = "# A\n\nDerived.\n\n## Rule\n\nMore.\n";
         assert_eq!(split_argument(plain), Ok((plain, "")));
-        let argued = "# A\n\nDerived.\n\n## Argument: why\n\nIn 1996, I argue.\n\n### A case\n\nMore.\n";
+        let argued =
+            "# A\n\nDerived.\n\n## Argument: why\n\nIn 1996, I argue.\n\n### A case\n\nMore.\n";
         let (derived, argument) = split_argument(argued).expect("one last argument section");
         assert!(derived.ends_with("Derived.\n\n") && !derived.contains("1996"));
         assert!(argument.starts_with("## Argument: why") && argument.contains("1996"));
         // Sabotage: a derived section after the argument, and a second argument.
-        assert!(split_argument("# A\n\n## Argument: why\n\nI argue.\n\n## Rule\n\nMore.\n").is_err());
+        assert!(
+            split_argument("# A\n\n## Argument: why\n\nI argue.\n\n## Rule\n\nMore.\n").is_err()
+        );
         assert!(split_argument("# A\n\n## Argument: one\n\n## Argument: two\n").is_err());
         // An unlabelled heading is derived text, whatever it says.
-        assert_eq!(split_argument("# A\n\n## Why this rule\n\nIt.\n").map(|(_, a)| a), Ok(""));
+        assert_eq!(
+            split_argument("# A\n\n## Why this rule\n\nIt.\n").map(|(_, a)| a),
+            Ok("")
+        );
     }
 }

@@ -55,13 +55,14 @@ pub(crate) fn run(
     // manifest, and rendered here so the hand-authored list below it can never
     // again be the only statement of it.
     let order = Contents::load(context)?.render();
-    let new = contents::replace_region(&new, contents::BEGIN, contents::END, &order)
-        .ok_or_else(|| {
+    let new = contents::replace_region(&new, contents::BEGIN, contents::END, &order).ok_or_else(
+        || {
             Error::new(format!(
                 "{}: no generated contents region — add the markers first",
                 document.display()
             ))
-        })?;
+        },
+    )?;
     if new == old {
         return Ok(format!("{}: already current", document_relative.display()));
     }

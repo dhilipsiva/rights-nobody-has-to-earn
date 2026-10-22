@@ -58,10 +58,9 @@ impl CompiledSource {
             if !line.is_empty()
                 && !line.starts_with(['#', ':', '?'])
                 && !compiled.contains_key(line)
+                && let Ok(buffer) = compiler.compile_text(line)
             {
-                if let Ok(buffer) = compiler.compile_text(line) {
-                    compiled.insert(line.to_owned(), buffer);
-                }
+                compiled.insert(line.to_owned(), buffer);
             }
         }
         Self(compiled)
@@ -1054,10 +1053,10 @@ impl PreparedBase {
             &mut source_fact_ids,
             cancellation,
         );
-        if harness.is_empty() {
-            if let Err(error) = engine.kb().prepare_materialization_plan() {
-                harness.push(format!("cannot prepare rule plan: {error}"));
-            }
+        if harness.is_empty()
+            && let Err(error) = engine.kb().prepare_materialization_plan()
+        {
+            harness.push(format!("cannot prepare rule plan: {error}"));
         }
         Self {
             engine,
@@ -1411,7 +1410,7 @@ fn run_file_with_engine(
             }
             let marked = defect.take();
             report.pins += 1;
-            match run_precondition(&command, options.working_directory, options.cancellation) {
+            match run_precondition(command, options.working_directory, options.cancellation) {
                 PreconditionOutcome::Met => {
                     if marked.is_some() {
                         report.defects += 1;
@@ -1464,7 +1463,7 @@ fn run_file_with_engine(
             };
             index = annotation_index + 1;
 
-            if !is_pinnable_verdict(&pinned) {
+            if !is_pinnable_verdict(pinned) {
                 report.harness.push(format!(
                     "{name}:{index}: {pinned:?} is not a pinnable verdict \
                      (TRUE|FALSE|UNKNOWN only — RESOURCE_EXCEEDED is a resource outcome, \
@@ -1500,7 +1499,7 @@ fn run_file_with_engine(
                             "{name}:{index}: query {query:?} exhausted a resource ({actual}) — \
                              infrastructure outcome, not a verdict; pin excluded"
                         ));
-                    } else if !verdict_matches(&pinned, &actual) {
+                    } else if !verdict_matches(pinned, &actual) {
                         match marked {
                             Some(reason) => report.resolved.push(format!(
                                 "{name}:{index}: query {query:?} was pinned {pinned:?} as a DEFECT \
@@ -2240,7 +2239,7 @@ mod tests {
                 let Some((_, fields)) = stat.rsplit_once(") ") else {
                     return process_exists(pid);
                 };
-                return !matches!(fields.as_bytes().first(), Some(b'Z' | b'X'));
+                !matches!(fields.as_bytes().first(), Some(b'Z' | b'X'))
             }
             #[cfg(not(target_os = "linux"))]
             {

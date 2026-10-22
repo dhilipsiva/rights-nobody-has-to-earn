@@ -553,7 +553,7 @@ pub(super) fn single_actor(
     cards: &[Card],
     beneficial: &std::collections::BTreeSet<String>,
 ) -> Vec<Scenario> {
-    use super::super::procedural_load::{fast_head, PROMPT_REVIEW, REVIEW_SCOPE, WITHDRAWN};
+    use super::super::procedural_load::{PROMPT_REVIEW, REVIEW_SCOPE, WITHDRAWN, fast_head};
     let mut cases = Vec::new();
     for card in cards.iter().filter(|c| beneficial.contains(c.kind)) {
         let values = records::values(cards, card, "ECSingleActor");
@@ -564,7 +564,10 @@ pub(super) fn single_actor(
             .map(|line| format!("{line}\n"))
             .collect();
         let heads = records::heads(card);
-        let duty = records::ground(&format!("obliged($review, {PROMPT_REVIEW}, $record)"), &values);
+        let duty = records::ground(
+            &format!("obliged($review, {PROMPT_REVIEW}, $record)"),
+            &values,
+        );
         let effects = |holds: bool| -> String {
             let mut pins = String::new();
             for head in heads.iter().skip(1).filter(|h| fast_head(h)) {

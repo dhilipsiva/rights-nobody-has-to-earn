@@ -40,10 +40,10 @@ fn families(source: &str) -> BTreeMap<String, usize> {
             stack.push(c[1].to_owned());
             found.entry(c[1].to_owned()).or_insert(0);
         }
-        if let Some(c) = end.captures(line) {
-            if stack.last().map(String::as_str) == Some(&c[1]) {
-                stack.pop();
-            }
+        if let Some(c) = end.captures(line)
+            && stack.last().map(String::as_str) == Some(&c[1])
+        {
+            stack.pop();
         }
         if let Some(c) = banner.captures(line) {
             let title = c[1].trim().to_owned();
@@ -81,16 +81,24 @@ fn problems(
         let number = article["number"].as_u64().unwrap_or(0);
         let label = format!("Article {number}");
         if number != index as u64 + 1 {
-            out.push(format!("{label}: articles must be numbered 1, 2, 3 … in order"));
+            out.push(format!(
+                "{label}: articles must be numbered 1, 2, 3 … in order"
+            ));
         }
         let part = article["part"].as_u64().unwrap_or(0) as usize;
         if part == 0 || part > parts {
-            out.push(format!("{label}: part {part} is not one of the {parts} parts"));
+            out.push(format!(
+                "{label}: part {part} is not one of the {parts} parts"
+            ));
         }
         let strings = |key: &str| -> Vec<String> {
             article[key]
                 .as_array()
-                .map(|a| a.iter().filter_map(|v| v.as_str().map(str::to_owned)).collect())
+                .map(|a| {
+                    a.iter()
+                        .filter_map(|v| v.as_str().map(str::to_owned))
+                        .collect()
+                })
                 .unwrap_or_default()
         };
         let named = strings("families");
@@ -109,11 +117,15 @@ fn problems(
             other => out.push(format!("{label}: unknown formality '{other}'")),
         }
         if formal != "formal" && article["gap"].as_str().unwrap_or("").trim().is_empty() {
-            out.push(format!("{label}: a non-formal part needs its reason in 'gap'"));
+            out.push(format!(
+                "{label}: a non-formal part needs its reason in 'gap'"
+            ));
         }
         for family in &named {
             if !declared.contains_key(family) {
-                out.push(format!("{label}: '{family}' is not a family the constitution declares"));
+                out.push(format!(
+                    "{label}: '{family}' is not a family the constitution declares"
+                ));
             }
             claimed.insert(family.clone());
         }
@@ -128,13 +140,19 @@ fn problems(
                 out.push(format!("{label}: chapter {n} is not in the manifest"));
             }
         }
-        if article["text"].as_array().map(Vec::is_empty).unwrap_or(true) {
+        if article["text"]
+            .as_array()
+            .map(Vec::is_empty)
+            .unwrap_or(true)
+        {
             out.push(format!("{label}: has no text"));
         }
     }
     for (family, rules) in declared {
         if *rules > 0 && !claimed.contains(family) {
-            out.push(format!("'{family}' carries {rules} rules and belongs to no article"));
+            out.push(format!(
+                "'{family}' carries {rules} rules and belongs to no article"
+            ));
         }
     }
     out
@@ -162,7 +180,11 @@ fn every_rule_family_belongs_to_an_article_and_every_article_is_traced() {
     );
     let exists = |path: &str| context.path(path).exists();
     let found = problems(&declared, &articles, &exists, &chapters);
-    assert!(found.is_empty(), "the article map is out of step:\n{}", found.join("\n"));
+    assert!(
+        found.is_empty(),
+        "the article map is out of step:\n{}",
+        found.join("\n")
+    );
 }
 
 #[test]
@@ -175,12 +197,20 @@ fn the_article_map_fails_when_a_family_or_a_test_goes_missing() {
     let mut broken = articles.clone();
     broken["articles"][0]["families"] = Value::Array(vec![]);
     broken["articles"][0]["pins"] = Value::Array(vec![]);
-    broken["articles"][1]["families"] =
-        Value::Array(vec![Value::String("NO-SUCH-RULES".into())]);
+    broken["articles"][1]["families"] = Value::Array(vec![Value::String("NO-SUCH-RULES".into())]);
     let found = problems(&declared, &broken, &exists, &chapters);
-    assert!(found.iter().any(|p| p.contains("names no rule family")), "{found:?}");
-    assert!(found.iter().any(|p| p.contains("names no test")), "{found:?}");
-    assert!(found.iter().any(|p| p.contains("NO-SUCH-RULES")), "{found:?}");
+    assert!(
+        found.iter().any(|p| p.contains("names no rule family")),
+        "{found:?}"
+    );
+    assert!(
+        found.iter().any(|p| p.contains("names no test")),
+        "{found:?}"
+    );
+    assert!(
+        found.iter().any(|p| p.contains("NO-SUCH-RULES")),
+        "{found:?}"
+    );
     assert!(
         found.iter().any(|p| p.contains("belongs to no article")),
         "dropping a family's claim must leave it unclaimed: {found:?}"
@@ -190,7 +220,10 @@ fn the_article_map_fails_when_a_family_or_a_test_goes_missing() {
     let last = silent["articles"].as_array().unwrap().len() - 1;
     silent["articles"][last]["gap"] = Value::Null;
     let found = problems(&declared, &silent, &exists, &chapters);
-    assert!(found.iter().any(|p| p.contains("needs its reason")), "{found:?}");
+    assert!(
+        found.iter().any(|p| p.contains("needs its reason")),
+        "{found:?}"
+    );
 }
 
 #[test]
@@ -214,10 +247,16 @@ fn every_article_a_chapter_cites_resolves() {
         for c in citation.captures_iter(&text) {
             cited += 1;
             let n: u64 = c[1].parse().unwrap();
-            assert!(numbers.contains(&n), "{path} cites Article {n}, which does not exist");
+            assert!(
+                numbers.contains(&n),
+                "{path} cites Article {n}, which does not exist"
+            );
         }
     }
-    assert!(cited > 0, "no chapter cites an article; the citation pattern broke");
+    assert!(
+        cited > 0,
+        "no chapter cites an article; the citation pattern broke"
+    );
 }
 
 #[test]

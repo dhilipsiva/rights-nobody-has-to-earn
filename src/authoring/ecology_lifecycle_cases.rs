@@ -72,9 +72,9 @@ fn urgent() -> (String, String) {
         pins += &super::query(&format!("obliged(State, {duty}, {request})"), true);
         for head in [
             format!("permits(ECUrgentRequester, ECSearchOrSeizure, {request})"),
-            format!("capture(ECUrgentUnidentifiedSubject)"),
-            format!("prisoner(ECUrgentUnidentifiedSubject)"),
-            format!("person(ECUrgentUnidentifiedSubject)"),
+            "capture(ECUrgentUnidentifiedSubject)".to_string(),
+            "prisoner(ECUrgentUnidentifiedSubject)".to_string(),
+            "person(ECUrgentUnidentifiedSubject)".to_string(),
         ] {
             pins += &super::query(&head, false);
         }

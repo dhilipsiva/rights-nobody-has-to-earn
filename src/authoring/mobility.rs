@@ -3,7 +3,7 @@
 //! Explicit semantic authoring, never a verification-time generator or gate.
 
 use super::procedural_load::{
-    beneficial_kinds, fast_head, single_actor, PROMPT_REVIEW, REVIEW_SCOPE, WITHDRAWN,
+    PROMPT_REVIEW, REVIEW_SCOPE, WITHDRAWN, beneficial_kinds, fast_head, single_actor,
 };
 use super::{Base, Edit, Export};
 use crate::{cli::Error, context::Context};
@@ -399,7 +399,10 @@ fn rules(cards: &[Card], beneficial: &BTreeSet<String>) -> Vec<String> {
         for head in heads(card).iter().filter(|h| fast_head(h)) {
             result.push(rule(&fast, head));
         }
-        result.push(rule(&fast, &format!("obliged($review, {PROMPT_REVIEW}, $record)")));
+        result.push(rule(
+            &fast,
+            &format!("obliged($review, {PROMPT_REVIEW}, $record)"),
+        ));
     }
     result
 }
@@ -429,7 +432,10 @@ fn fast_queries(card: &Card, values: &Values, beneficial: bool) -> String {
         .map(|h| query(&ground(h, values), beneficial && fast_head(h)))
         .collect();
     steps.push_str(&query(
-        &ground(&format!("obliged($review, {PROMPT_REVIEW}, $record)"), values),
+        &ground(
+            &format!("obliged($review, {PROMPT_REVIEW}, $record)"),
+            values,
+        ),
         beneficial,
     ));
     steps

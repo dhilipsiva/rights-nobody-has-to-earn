@@ -272,7 +272,7 @@ pub(super) fn economic_boundary(
     for power in ["081", "082"] {
         // Reuse the actual economic family's first positive witnesses. No
         // declaration substitutes for that family's independent currentness.
-        let source = context.read(&format!("book-1/source/economic-power-{power}.pins.nibli"))?;
+        let source = context.read(format!("book-1/source/economic-power-{power}.pins.nibli"))?;
         let mut facts = String::new();
         for line in source.lines().take_while(|line| !line.starts_with("? ")) {
             if line.starts_with("authorized(") || line.starts_with("observe(") {

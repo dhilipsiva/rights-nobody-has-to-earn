@@ -3,7 +3,7 @@
 //! Positive protected facts and duties, never an authorization to coerce.
 
 use super::super::procedural_load::{
-    fast_head, single_actor, PROMPT_REVIEW, REVIEW_SCOPE, WITHDRAWN,
+    PROMPT_REVIEW, REVIEW_SCOPE, WITHDRAWN, fast_head, single_actor,
 };
 use super::{
     cases::{Scenario, query},
@@ -466,7 +466,10 @@ fn fast_checks(fact: &Fact, values: &Values, beneficial: bool) -> String {
         )
     };
     for head in &fact.heads {
-        result += &query(&records::ground(head, values), beneficial && fast_head(head));
+        result += &query(
+            &records::ground(head, values),
+            beneficial && fast_head(head),
+        );
     }
     for duty in READER_DUTIES {
         result += &query(
@@ -475,7 +478,10 @@ fn fast_checks(fact: &Fact, values: &Values, beneficial: bool) -> String {
         );
     }
     result += &query(
-        &records::ground(&format!("obliged($review, {PROMPT_REVIEW}, $record)"), values),
+        &records::ground(
+            &format!("obliged($review, {PROMPT_REVIEW}, $record)"),
+            values,
+        ),
         beneficial,
     );
     result
@@ -551,7 +557,10 @@ pub(super) fn scenarios(beneficial: &BTreeSet<String>) -> Vec<Scenario> {
         let alone = given
             .lines()
             .filter(|line| {
-                !line.starts_with(&format!("observe({}, {},", values["$review"], values["$record"]))
+                !line.starts_with(&format!(
+                    "observe({}, {},",
+                    values["$review"], values["$record"]
+                ))
             })
             .map(|line| format!("{line}\n"))
             .collect::<String>();

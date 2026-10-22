@@ -182,10 +182,10 @@ fn wait(
         if cancellation.is_cancelled() {
             if group {
                 terminate_group(child.id())?;
-            } else if let Err(error) = child.kill() {
-                if error.kind() != io::ErrorKind::InvalidInput {
-                    return Err(error);
-                }
+            } else if let Err(error) = child.kill()
+                && error.kind() != io::ErrorKind::InvalidInput
+            {
+                return Err(error);
             }
             return Ok(ChildWait::Cancelled(child.wait()?));
         }

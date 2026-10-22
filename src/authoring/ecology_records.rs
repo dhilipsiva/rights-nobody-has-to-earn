@@ -415,7 +415,7 @@ pub(super) fn rules(cards: &[Card]) -> Vec<String> {
 /// Guardian's stay, merits and every adverse route read — stays behind full
 /// procedure.
 pub(super) fn single_actor_rules(cards: &[Card], beneficial: &BTreeSet<String>) -> Vec<String> {
-    use super::super::procedural_load::{fast_head, single_actor, PROMPT_REVIEW};
+    use super::super::procedural_load::{PROMPT_REVIEW, fast_head, single_actor};
     let mut rules = Vec::new();
     for card in cards.iter().filter(|c| beneficial.contains(c.kind)) {
         let heads = heads(card);
@@ -424,7 +424,10 @@ pub(super) fn single_actor_rules(cards: &[Card], beneficial: &BTreeSet<String>) 
             for effect in heads.iter().skip(1).filter(|h| fast_head(h)) {
                 rules.push(rule(&fast, effect));
             }
-            rules.push(rule(&fast, &format!("obliged($review, {PROMPT_REVIEW}, $record)")));
+            rules.push(rule(
+                &fast,
+                &format!("obliged($review, {PROMPT_REVIEW}, $record)"),
+            ));
         }
     }
     rules

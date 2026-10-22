@@ -6,7 +6,7 @@
 //! presupposed and the formal source did not carry.
 
 use super::procedural_load::{
-    beneficial_kinds, fast_head, single_actor, PROMPT_REVIEW, REVIEW_SCOPE, WITHDRAWN,
+    PROMPT_REVIEW, REVIEW_SCOPE, WITHDRAWN, beneficial_kinds, fast_head, single_actor,
 };
 use super::{Base, Edit, Export};
 use crate::{cli::Error, context::Context};
@@ -111,15 +111,11 @@ fn premises(source: &Source, contract: &Contract) -> Vec<String> {
     }
     atoms.extend(contract.extra.clone());
     if contract.record_dependency {
-        atoms.extend(
-            [
-                format!("complete($authorization, {AUTHORIZATION}, $decision)"),
-                "authority($actor, $role_kind, $authorization)".into(),
-                "authorized($authorization_source, LifeCourseSourceAuthority, $authorization)"
-                    .into(),
-            ]
-            .into_iter(),
-        );
+        atoms.extend([
+            format!("complete($authorization, {AUTHORIZATION}, $decision)"),
+            "authority($actor, $role_kind, $authorization)".into(),
+            "authorized($authorization_source, LifeCourseSourceAuthority, $authorization)".into(),
+        ]);
         // Rejoin the actual reviewed role, not a token naming one.
         // Authorized conflicting values on that record block its completion.
         for [value, scope] in &source.common_fields {
@@ -171,13 +167,20 @@ fn single_actor_facts(facts: &str, values: &BTreeMap<String, String>) -> String 
 /// What follows when one actor records a record: for a beneficial record its
 /// duties and permissions and the prompt-review duty, never the completed
 /// record; for anything else, nothing.
-fn fast_queries(contract: &Contract, values: &BTreeMap<String, String>, beneficial: bool) -> String {
+fn fast_queries(
+    contract: &Contract,
+    values: &BTreeMap<String, String>,
+    beneficial: bool,
+) -> String {
     let mut steps: String = heads(contract)
         .iter()
         .map(|h| query(&ground(h, values), beneficial && fast_head(h)))
         .collect();
     steps.push_str(&query(
-        &ground(&format!("obliged($review, {PROMPT_REVIEW}, $record)"), values),
+        &ground(
+            &format!("obliged($review, {PROMPT_REVIEW}, $record)"),
+            values,
+        ),
         beneficial,
     ));
     steps
@@ -221,12 +224,19 @@ fn rules(source: &Source, beneficial: &BTreeSet<String>) -> Vec<String> {
     // the named reviewer owes prompt review, and a defect found on review
     // withdraws them. The completed record stays behind full procedure, so
     // nothing adverse can be built on help one actor gave.
-    for contract in source.contracts.iter().filter(|c| beneficial.contains(&c.kind)) {
+    for contract in source
+        .contracts
+        .iter()
+        .filter(|c| beneficial.contains(&c.kind))
+    {
         let fast = fast_premises(source, contract);
         for head in heads(contract).iter().filter(|h| fast_head(h)) {
             rules.push(rule(&fast, head));
         }
-        rules.push(rule(&fast, &format!("obliged($review, {PROMPT_REVIEW}, $record)")));
+        rules.push(rule(
+            &fast,
+            &format!("obliged($review, {PROMPT_REVIEW}, $record)"),
+        ));
     }
     // Asking for review of a role, a refused access or a correction does not
     // require the acting body's permission and does not itself decide the
@@ -255,11 +265,10 @@ fn bindings(source: &Source, contract: &Contract, prefix: &str) -> BTreeMap<Stri
         values.insert(v.to_owned(), format!("{prefix}{suffix}"));
     }
     for [value, scope] in fields(source, contract) {
-        if value.starts_with('$') {
-            if let Some((_, _, options)) = source.vocabularies.iter().find(|(s, _, _)| s == &scope)
-            {
-                values.insert(value, options[0].clone());
-            }
+        if value.starts_with('$')
+            && let Some((_, _, options)) = source.vocabularies.iter().find(|(s, _, _)| s == &scope)
+        {
+            values.insert(value, options[0].clone());
         }
     }
     values.extend(contract.bindings.clone());
@@ -400,7 +409,10 @@ pub(crate) fn generate(context: &Context, export: &mut Export) -> Result<(), Err
             "family-life-no-role-vocabulary",
             "member($role_kind, LifeCourseRoleKindVocabulary)",
         ),
-        ("family-life-no-participant-separation", PARTICIPANT_SEPARATION),
+        (
+            "family-life-no-participant-separation",
+            PARTICIPANT_SEPARATION,
+        ),
     ] {
         let edits = authored
             .iter()
@@ -454,7 +466,14 @@ pub(crate) fn generate(context: &Context, export: &mut Export) -> Result<(), Err
                 .filter(|l| !l.ends_with(", FirstContact)."))
                 .map(|l| format!("{l}\n"))
                 .collect();
-            emit(export, "without-standing", "live", &unstanding, &values, false)?;
+            emit(
+                export,
+                "without-standing",
+                "live",
+                &unstanding,
+                &values,
+                false,
+            )?;
         }
         for [_, scope] in fields(&source, contract) {
             let reduced = without_scope(&facts, &scope);
@@ -519,27 +538,27 @@ pub(crate) fn generate(context: &Context, export: &mut Export) -> Result<(), Err
             )?;
         }
         for [value, scope] in fields(&source, contract) {
-            if value.starts_with('$') && !contract.bindings.contains_key(&value) {
-                if let Some((_, _, options)) =
+            if value.starts_with('$')
+                && !contract.bindings.contains_key(&value)
+                && let Some((_, _, options)) =
                     source.vocabularies.iter().find(|(s, _, _)| s == &scope)
+            {
+                for option in options
+                    .iter()
+                    .chain(std::iter::once(&"UnapprovedLifeCourseKind".into()))
                 {
-                    for option in options
-                        .iter()
-                        .chain(std::iter::once(&"UnapprovedLifeCourseKind".into()))
-                    {
-                        let mut other = values.clone();
-                        other.insert(value.clone(), option.clone());
-                        let full = dependency(&source, contract, &other)
-                            + &fixture(&source, contract, &other);
-                        add_case(
-                            context,
-                            export,
-                            &format!("{}/kind-{scope}-{option}", contract.id),
-                            "live",
-                            &full,
-                            &queries(contract, &other, options.contains(option)),
-                        )?;
-                    }
+                    let mut other = values.clone();
+                    other.insert(value.clone(), option.clone());
+                    let full =
+                        dependency(&source, contract, &other) + &fixture(&source, contract, &other);
+                    add_case(
+                        context,
+                        export,
+                        &format!("{}/kind-{scope}-{option}", contract.id),
+                        "live",
+                        &full,
+                        &queries(contract, &other, options.contains(option)),
+                    )?;
                 }
             }
         }
@@ -814,7 +833,9 @@ fn integration_cases(context: &Context, export: &mut Export, source: &Source) ->
     let own = fixture(source, interpretation, &interpretation_values);
     let without_support = without_scope(&own, "LifeCourseSupportFirstScope");
     if without_support == own {
-        return Err(Error::new("support-first attestation is not in the fixture"));
+        return Err(Error::new(
+            "support-first attestation is not in the fixture",
+        ));
     }
     add_case(
         context,

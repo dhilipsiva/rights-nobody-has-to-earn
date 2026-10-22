@@ -8,8 +8,8 @@
 //! the person in it is doing, and how it ends. Its value is the gaps it
 //! exposes, so the report prints those first and does not average them away.
 
-use super::contents::Contents;
 use super::Export;
+use super::contents::Contents;
 use crate::{cli::Error, context::Context};
 use regex::Regex;
 use serde::Deserialize;
@@ -167,7 +167,8 @@ fn validate(context: &Context, records: &[Record]) -> Result<(), Error> {
             || record
                 .section
                 .starts_with(super::contents::ARGUMENT.trim_start_matches("## "));
-        if argued != (record.pattern == "argument") || argued != (record.basis == "exempt-element") {
+        if argued != (record.pattern == "argument") || argued != (record.basis == "exempt-element")
+        {
             return Err(Error::new(format!(
                 "{}: {} passage classified with pattern {} and basis {}; argued text takes \
                  the argument pattern and the exempt-element basis, and derived text neither",
@@ -255,8 +256,8 @@ fn render(context: &Context, records: &[Record]) -> Result<String, Error> {
     let rows = coverage(context, records)?;
     let thin: Vec<_> = rows
         .iter()
-        .filter_map(|(domain, (works, trouble, bound))| {
-            match (works, trouble, bound) {
+        .filter_map(
+            |(domain, (works, trouble, bound))| match (works, trouble, bound) {
                 (0, _, _) => Some((domain, works, trouble, bound, "ordinary operation")),
                 (_, 0, 0) => Some((
                     domain,
@@ -266,8 +267,8 @@ fn render(context: &Context, records: &[Record]) -> Result<String, Error> {
                     "a failure, abuse or boundary",
                 )),
                 _ => None,
-            }
-        })
+            },
+        )
         .collect();
     if thin.is_empty() {
         out.push_str(

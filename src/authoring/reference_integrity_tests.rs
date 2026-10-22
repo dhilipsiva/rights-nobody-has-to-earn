@@ -118,7 +118,11 @@ fn reviewed_references(context: &Context) -> BTreeSet<(String, String)> {
 fn every_reviewed_reference_resolves_exactly_once() {
     let context = Context::discover().expect("repository");
     let refs = reviewed_references(&context);
-    assert!(refs.len() > 1000, "the reference census collapsed to {}", refs.len());
+    assert!(
+        refs.len() > 1000,
+        "the reference census collapsed to {}",
+        refs.len()
+    );
     let mut cache: BTreeMap<String, String> = BTreeMap::new();
     let mut missing = BTreeSet::new();
     let mut unmatched: BTreeMap<String, usize> = BTreeMap::new();
@@ -137,10 +141,8 @@ fn every_reviewed_reference_resolves_exactly_once() {
             *unmatched.entry(path.clone()).or_default() += 1;
         }
     }
-    let expected_missing: BTreeSet<String> = KNOWN_MISSING
-        .iter()
-        .map(|p| (*p).to_owned())
-        .collect();
+    let expected_missing: BTreeSet<String> =
+        KNOWN_MISSING.iter().map(|p| (*p).to_owned()).collect();
     assert_eq!(
         missing, expected_missing,
         "the set of reviewed references naming a file the tree does not carry changed. \
@@ -167,10 +169,7 @@ fn contents_manifest_matches_the_directory() {
         .map(|entry| entry.file_name().to_string_lossy().into_owned())
         .filter(|name| name.ends_with(".md") && name.starts_with(|c: char| c.is_ascii_digit()))
         .collect();
-    let mut listed: BTreeSet<String> = contents
-        .chapters()
-        .filter_map(|c| c.file.clone())
-        .collect();
+    let mut listed: BTreeSet<String> = contents.chapters().filter_map(|c| c.file.clone()).collect();
     for front in &contents.front {
         if front.starts_with(|c: char| c.is_ascii_digit()) {
             listed.insert(front.clone());
@@ -223,12 +222,15 @@ fn contents_manifest_matches_the_directory() {
     for part in &contents.parts {
         if let (Some(file), Some(title)) = (&part.opener.file, &part.opener.title) {
             let heading = context
-                .read(&format!("book-1/{file}"))
+                .read(format!("book-1/{file}"))
                 .expect("opener")
                 .lines()
                 .find_map(|line| line.strip_prefix("# ").map(str::trim).map(str::to_owned))
                 .unwrap_or_default();
-            assert_eq!(&heading, title, "{file}'s H1 and the manifest's opener title differ");
+            assert_eq!(
+                &heading, title,
+                "{file}'s H1 and the manifest's opener title differ"
+            );
         }
     }
     // Each derived chapter is one live, scanned case in the execution inventory,
@@ -239,10 +241,20 @@ fn contents_manifest_matches_the_directory() {
     for path in contents.derived() {
         let id = path.trim_end_matches(".md");
         let matching: Vec<&Value> = cases.iter().filter(|c| c["id"] == id).collect();
-        assert_eq!(matching.len(), 1, "{id} must have exactly one case in suites.json");
+        assert_eq!(
+            matching.len(),
+            1,
+            "{id} must have exactly one case in suites.json"
+        );
         let case = matching[0];
-        assert_eq!(case["base"], "live", "{id} must run against the live constitution");
-        assert_eq!(case["scan"], true, "{id} must be scanned for contradictions");
+        assert_eq!(
+            case["base"], "live",
+            "{id} must run against the live constitution"
+        );
+        assert_eq!(
+            case["scan"], true,
+            "{id} must be scanned for contradictions"
+        );
         assert_eq!(
             case["pins"],
             Value::Array(vec![Value::String(format!("{id}.pins.nibli"))]),
@@ -259,7 +271,11 @@ fn slug(heading: &str) -> String {
         .chars()
         .filter(|c| c.is_alphanumeric() || c.is_whitespace() || *c == '-' || *c == '_')
         .collect();
-    cleaned.to_lowercase().split_whitespace().collect::<Vec<_>>().join("-")
+    cleaned
+        .to_lowercase()
+        .split_whitespace()
+        .collect::<Vec<_>>()
+        .join("-")
 }
 
 fn headings_in(text: &str) -> BTreeSet<String> {
@@ -295,7 +311,11 @@ fn every_relative_link_in_the_book_and_its_appendix_resolves() {
     let link = Regex::new(r"\]\(([^)\s]+)\)").unwrap();
     let mut files = Vec::new();
     markdown_files(&context.path("book-1"), &mut files);
-    assert!(files.len() > 15, "the link sweep found only {} files", files.len());
+    assert!(
+        files.len() > 15,
+        "the link sweep found only {} files",
+        files.len()
+    );
     let mut broken = Vec::new();
     for file in &files {
         let text = std::fs::read_to_string(file).unwrap();
@@ -320,12 +340,12 @@ fn every_relative_link_in_the_book_and_its_appendix_resolves() {
                 broken.push(format!("{}: {target} (no such file)", file.display()));
                 continue;
             }
-            if let Some(fragment) = fragment {
-                if resolved.extension().is_some_and(|ext| ext == "md") {
-                    let headings = headings_in(&std::fs::read_to_string(&resolved).unwrap());
-                    if !headings.contains(fragment) {
-                        broken.push(format!("{}: {target} (no such heading)", file.display()));
-                    }
+            if let Some(fragment) = fragment
+                && resolved.extension().is_some_and(|ext| ext == "md")
+            {
+                let headings = headings_in(&std::fs::read_to_string(&resolved).unwrap());
+                if !headings.contains(fragment) {
+                    broken.push(format!("{}: {target} (no such heading)", file.display()));
                 }
             }
         }
@@ -358,17 +378,19 @@ fn guide_problems(context: &Context, text: &str) -> Vec<String> {
             problems.push(format!("{target} (no such file)"));
             continue;
         }
-        if let Some(fragment) = fragment {
-            if path.ends_with(".md")
-                && !headings_in(&context.read(path).expect("linked file")).contains(fragment)
-            {
-                problems.push(format!("{target} (no such heading)"));
-            }
+        if let Some(fragment) = fragment
+            && path.ends_with(".md")
+            && !headings_in(&context.read(path).expect("linked file")).contains(fragment)
+        {
+            problems.push(format!("{target} (no such heading)"));
         }
     }
     for capture in only.captures_iter(text) {
         if !context.path(&capture[1]).is_file() {
-            problems.push(format!("./verify.sh --only {} (no such pin file)", &capture[1]));
+            problems.push(format!(
+                "./verify.sh --only {} (no such pin file)",
+                &capture[1]
+            ));
         }
     }
     problems
@@ -412,7 +434,9 @@ fn opening_note_navigation_matches_the_manifest() {
         "the annotated contents belong to the back matter, not the opening note"
     );
     let note = context.read("book-1/reference.md").unwrap();
-    let start = note.find("## Annotated contents").expect("annotated contents");
+    let start = note
+        .find("## Annotated contents")
+        .expect("annotated contents");
     let end = note[start..]
         .find("\n## ")
         .map(|offset| start + offset)
@@ -438,7 +462,11 @@ fn opening_note_navigation_matches_the_manifest() {
         );
     }
     for (part, listed) in contents.parts.iter().zip(per_part.iter()) {
-        let landed: Vec<String> = part.chapters.iter().filter_map(|c| c.file.clone()).collect();
+        let landed: Vec<String> = part
+            .chapters
+            .iter()
+            .filter_map(|c| c.file.clone())
+            .collect();
         assert_eq!(
             listed, &landed,
             "under \"Part … — {}\" the opening note lists chapters in a different order or set than the manifest",
@@ -463,18 +491,33 @@ fn derived_chapters_run_engines_before_breaks() {
     for chapter in contents.chapters() {
         match (chapter.role, chapter.group) {
             (Role::Derived, Some(super::contents::Group::Engine)) => {
-                assert!(!seen_break, "chapter {} is an engine after a break", chapter.number);
-                assert!(!seen_exempt, "chapter {} follows the exempt chapter", chapter.number);
+                assert!(
+                    !seen_break,
+                    "chapter {} is an engine after a break",
+                    chapter.number
+                );
+                assert!(
+                    !seen_exempt,
+                    "chapter {} follows the exempt chapter",
+                    chapter.number
+                );
             }
             (Role::Derived, Some(super::contents::Group::Break)) => {
-                assert!(!seen_exempt, "chapter {} follows the exempt chapter", chapter.number);
+                assert!(
+                    !seen_exempt,
+                    "chapter {} follows the exempt chapter",
+                    chapter.number
+                );
                 seen_break = true;
             }
             (Role::Exempt, _) => seen_exempt = true,
             (Role::Derived, None) => unreachable!("validated at load"),
         }
     }
-    assert!(seen_break && seen_exempt, "the manifest has no breaks or no exempt chapter");
+    assert!(
+        seen_break && seen_exempt,
+        "the manifest has no breaks or no exempt chapter"
+    );
 }
 
 #[test]
@@ -486,7 +529,10 @@ fn spine_contents_block_is_current() {
         .find(super::contents::BEGIN)
         .expect("3-spine.md has the contents markers");
     let after = begin + super::contents::BEGIN.len();
-    let end = after + spine[after..].find(super::contents::END).expect("end marker");
+    let end = after
+        + spine[after..]
+            .find(super::contents::END)
+            .expect("end marker");
     let current = spine[after..end].trim();
     assert_eq!(
         current,

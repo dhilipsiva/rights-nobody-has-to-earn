@@ -157,7 +157,14 @@ mod tests {
         assert!(first == second);
         assert_eq!(first.matches(super::BEGIN).count(), 1);
         assert_eq!(first.matches(super::PROTECTED_TRAVEL).count(), 1);
-        assert!(super::render(&format!("{source}\n{}", super::OLD_TRAVEL), &cards, &super::beneficial_for_tests()).is_err());
+        assert!(
+            super::render(
+                &format!("{source}\n{}", super::OLD_TRAVEL),
+                &cards,
+                &super::beneficial_for_tests()
+            )
+            .is_err()
+        );
     }
 
     #[test]

@@ -1337,11 +1337,19 @@ fn finding_fixture_facts(
             // A missing company receipt is not evidence of isolation.
             let record = "ObligationsIsolationFinding";
             let mut facts = vec![
-                format!("list({record}, {finding_subject}, ObligationsHolding, CustodyIsolationFinding)"),
-                format!("list({record}, ObligationsHolder, ObligationsPlace, CustodyConditionLocation)"),
-                format!("list({record}, ObligationsPeriod, ObligationsEvidence, CustodyConditionEvidenceWindow)"),
+                format!(
+                    "list({record}, {finding_subject}, ObligationsHolding, CustodyIsolationFinding)"
+                ),
+                format!(
+                    "list({record}, ObligationsHolder, ObligationsPlace, CustodyConditionLocation)"
+                ),
+                format!(
+                    "list({record}, ObligationsPeriod, ObligationsEvidence, CustodyConditionEvidenceWindow)"
+                ),
                 format!("authorized(ObligationsWitness, CustodyConditionWitness, {record})"),
-                format!("authorized(ObligationsConditionReview, IndependentCustodyConditionReviewer, {record})"),
+                format!(
+                    "authorized(ObligationsConditionReview, IndependentCustodyConditionReviewer, {record})"
+                ),
             ];
             for actor in ["ObligationsWitness", "ObligationsConditionReview"] {
                 for (value, scope) in [
@@ -1351,14 +1359,20 @@ fn finding_fixture_facts(
                     ("ObligationsPlace", "CustodyConditionPlaceScope"),
                     ("ObligationsPeriod", "CustodyConditionPeriodScope"),
                     ("ObligationsEvidence", "CustodyConditionEvidenceScope"),
-                    ("HumanPersonPhysicallyHeldAndDeniedAccessibleHumanContact", "CustodyIsolationConditionScope"),
-                    ("PositiveEvidenceNoticeReasonsAndIndependentContest", "CustodyConditionProcedureScope"),
+                    (
+                        "HumanPersonPhysicallyHeldAndDeniedAccessibleHumanContact",
+                        "CustodyIsolationConditionScope",
+                    ),
+                    (
+                        "PositiveEvidenceNoticeReasonsAndIndependentContest",
+                        "CustodyConditionProcedureScope",
+                    ),
                 ] {
                     facts.push(format!("observe({actor}, {record}, {value}, {scope})"));
                 }
             }
             facts
-        },
+        }
         "StatusConflict" => vec![
             format!("person({finding_subject})"),
             format!("rotten({finding_subject})"),

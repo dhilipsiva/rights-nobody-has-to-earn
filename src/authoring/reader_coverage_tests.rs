@@ -272,10 +272,16 @@ fn constitutional_families(context: &Context) -> BTreeSet<String> {
                 .trim_end_matches("-FACTS")
                 .to_owned();
             // The economic family's derived-only roster is marked ECONOMIC.
-            if name == "ECONOMIC" { "ECONOMIC-CONSTITUTION".to_owned() } else { name }
+            if name == "ECONOMIC" {
+                "ECONOMIC-CONSTITUTION".to_owned()
+            } else {
+                name
+            }
         })
         // The temporal articles are kernel, tagged ARTICLES in the ledger.
-        .filter(|name| !name.starts_with("T1") && !name.starts_with("T2") && !name.starts_with("T3"))
+        .filter(|name| {
+            !name.starts_with("T1") && !name.starts_with("T2") && !name.starts_with("T3")
+        })
         .collect()
 }
 
@@ -284,12 +290,19 @@ fn every_constitutional_family_is_projected_by_a_passage() {
     let context = Context::discover().expect("repository");
     let records = records(&context).expect("ledger source");
     let blocks = constitutional_families(&context);
-    assert!(blocks.len() > 15, "the block census collapsed to {}", blocks.len());
+    assert!(
+        blocks.len() > 15,
+        "the block census collapsed to {}",
+        blocks.len()
+    );
     let tagged: BTreeSet<String> = records.iter().map(|r| r.family.clone()).collect();
     let unrendered: BTreeSet<String> = blocks.difference(&tagged).cloned().collect();
     assert_eq!(
         unrendered,
-        UNRENDERED_FAMILIES.iter().map(ToString::to_string).collect(),
+        UNRENDERED_FAMILIES
+            .iter()
+            .map(ToString::to_string)
+            .collect(),
         "the set of rule families Book 1 does not project changed. A new arrival is a \
          family that landed without a passage; a departure belongs out of UNRENDERED_FAMILIES."
     );
@@ -297,7 +310,10 @@ fn every_constitutional_family_is_projected_by_a_passage() {
         .iter()
         .filter(|f| !LEDGER_ONLY_FAMILIES.contains(&f.as_str()) && !blocks.contains(*f))
         .collect();
-    assert!(orphan.is_empty(), "passages tagged to a family no block carries: {orphan:?}");
+    assert!(
+        orphan.is_empty(),
+        "passages tagged to a family no block carries: {orphan:?}"
+    );
 }
 
 /// Derived chapters that do NOT carry the recurring `## The child with nobody`
@@ -313,26 +329,86 @@ fn every_constitutional_family_is_projected_by_a_passage() {
 /// for the child exactly as for anyone, or need a record the child does not
 /// have.
 const CHILD_SLOT_EXEMPT: [(&str, &str); 20] = [
-    ("01-the-child-with-nobody.md", "the chapter is the case, and its encounters reach standing as the birth does"),
-    ("03-what-you-are-owed.md", "the floor follows for the child as for every person; chapter 1 runs it"),
-    ("06-who-owes-and-what-follows.md", "the bystander's entry about the child is already the chapter's own case"),
-    ("07-an-ordinary-week.md", "the week follows an adult with a full record; the one-line record holds none of its entries"),
-    ("08-what-nobody-has-to-ask-permission-for.md", "the liberties follow from personhood alone, as for anyone"),
-    ("09-work-pay-and-contribution.md", "no contribution yields no supplement, as for anyone; Cira carries the child exhibit"),
-    ("10-what-money-cannot-buy.md", "the economic prohibitions hold for any person; no property adds nothing"),
-    ("11-the-same-route-for-everyone.md", "the anti-substitution barriers hold for every person alike"),
-    ("12-a-place-in-which-life-remains-possible.md", "the environmental claim needs no owner or spokesperson for anyone"),
-    ("13-creatures-without-a-ballot.md", "an animal's protection reads no human record at all"),
-    ("15-arriving-and-belonging.md", "the newcomer is the chapter's person with little on record"),
-    ("16-answerability-and-authority.md", "answerability concerns public bodies; the child holds none"),
-    ("17-how-public-power-is-built.md", "the institutions' mandates run to everyone alike"),
-    ("19-what-may-be-kept-about-you.md", "a birth-only record holds no file to keep, use or correct"),
-    ("20-a-crisis-does-not-suspend-the-republic.md", "an emergency leaves the child's floor as it leaves anyone's"),
-    ("22-changing-the-rules.md", "the amendment rules protect the floor for everyone alike"),
-    ("23-the-shield.md", "the shield needs an exposure this child has not made"),
-    ("24-findings-about-people.md", "no finding reaches a birth entry, which holds no authority to sign; Cira's claim is tested here"),
-    ("26-where-people-are-put.md", "placement needs a custody case the child's record does not have"),
-    ("27-the-one-thing-taken.md", "confinement needs a custody case; chapter 25 runs the child beside the prisoner"),
+    (
+        "01-the-child-with-nobody.md",
+        "the chapter is the case, and its encounters reach standing as the birth does",
+    ),
+    (
+        "03-what-you-are-owed.md",
+        "the floor follows for the child as for every person; chapter 1 runs it",
+    ),
+    (
+        "06-who-owes-and-what-follows.md",
+        "the bystander's entry about the child is already the chapter's own case",
+    ),
+    (
+        "07-an-ordinary-week.md",
+        "the week follows an adult with a full record; the one-line record holds none of its entries",
+    ),
+    (
+        "08-what-nobody-has-to-ask-permission-for.md",
+        "the liberties follow from personhood alone, as for anyone",
+    ),
+    (
+        "09-work-pay-and-contribution.md",
+        "no contribution yields no supplement, as for anyone; Cira carries the child exhibit",
+    ),
+    (
+        "10-what-money-cannot-buy.md",
+        "the economic prohibitions hold for any person; no property adds nothing",
+    ),
+    (
+        "11-the-same-route-for-everyone.md",
+        "the anti-substitution barriers hold for every person alike",
+    ),
+    (
+        "12-a-place-in-which-life-remains-possible.md",
+        "the environmental claim needs no owner or spokesperson for anyone",
+    ),
+    (
+        "13-creatures-without-a-ballot.md",
+        "an animal's protection reads no human record at all",
+    ),
+    (
+        "15-arriving-and-belonging.md",
+        "the newcomer is the chapter's person with little on record",
+    ),
+    (
+        "16-answerability-and-authority.md",
+        "answerability concerns public bodies; the child holds none",
+    ),
+    (
+        "17-how-public-power-is-built.md",
+        "the institutions' mandates run to everyone alike",
+    ),
+    (
+        "19-what-may-be-kept-about-you.md",
+        "a birth-only record holds no file to keep, use or correct",
+    ),
+    (
+        "20-a-crisis-does-not-suspend-the-republic.md",
+        "an emergency leaves the child's floor as it leaves anyone's",
+    ),
+    (
+        "22-changing-the-rules.md",
+        "the amendment rules protect the floor for everyone alike",
+    ),
+    (
+        "23-the-shield.md",
+        "the shield needs an exposure this child has not made",
+    ),
+    (
+        "24-findings-about-people.md",
+        "no finding reaches a birth entry, which holds no authority to sign; Cira's claim is tested here",
+    ),
+    (
+        "26-where-people-are-put.md",
+        "placement needs a custody case the child's record does not have",
+    ),
+    (
+        "27-the-one-thing-taken.md",
+        "confinement needs a custody case; chapter 25 runs the child beside the prisoner",
+    ),
 ];
 
 #[test]
@@ -443,7 +519,8 @@ fn the_book_stays_majority_derived_by_section() {
     let mut other = 0;
     for path in contents.derived() {
         let chapter = context.read(&path).expect("chapter");
-        let (flat, argued) = crate::authoring::contents::split_argument(&chapter).expect("well formed");
+        let (flat, argued) =
+            crate::authoring::contents::split_argument(&chapter).expect("well formed");
         derived += words(flat);
         other += words(argued);
     }

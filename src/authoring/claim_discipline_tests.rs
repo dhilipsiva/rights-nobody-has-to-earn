@@ -140,22 +140,42 @@ const TRACED: [(&str, &str, &str); 179] = [
         "pratt-2008-scandinavian-exceptionalism",
         "low imprisonment",
     ),
-    ("the new civil death", "chin-2012-new-civil-death", "civil death"),
-    ("the Bihar undertrials", "hussainara-khatoon-1979", "three to ten years"),
-    ("Robodebt", "robodebt-royal-commission-2023", "crude and cruel"),
+    (
+        "the new civil death",
+        "chin-2012-new-civil-death",
+        "civil death",
+    ),
+    (
+        "the Bihar undertrials",
+        "hussainara-khatoon-1979",
+        "three to ten years",
+    ),
+    (
+        "Robodebt",
+        "robodebt-royal-commission-2023",
+        "crude and cruel",
+    ),
     (
         "the Dutch childcare-benefits affair",
         "nl-ongekend-onrecht-2020",
         "childcare-benefits affair",
     ),
-    ("the SyRI judgment", "syri-hague-district-court-2020", "SyRI"),
+    (
+        "the SyRI judgment",
+        "syri-hague-district-court-2020",
+        "SyRI",
+    ),
     (
         "Switzerland's chambers",
         "swiss-constitution-1999-federal-council-council-of-states",
         "Council of States",
     ),
     ("Uruguay's colegiado", "uruguay-colegiado-1952", "1966"),
-    ("New Zealand's resident vote", "nz-electoral-act-1993-s74", "New Zealand"),
+    (
+        "New Zealand's resident vote",
+        "nz-electoral-act-1993-s74",
+        "New Zealand",
+    ),
     (
         "Chile's resident vote",
         "chile-constitution-art14-foreign-residents-2025",
@@ -172,7 +192,11 @@ const TRACED: [(&str, &str, &str); 179] = [
         "unconstitutional state of affairs for internally displaced",
     ),
     ("ADM Jabalpur", "adm-jabalpur-1976", "habeas corpus"),
-    ("Kesavananda Bharati", "kesavananda-bharati-1973", "basic structure"),
+    (
+        "Kesavananda Bharati",
+        "kesavananda-bharati-1973",
+        "basic structure",
+    ),
     ("Mondragon", "mondragon-2025", "1956"),
     (
         "Mondragon's reported pay scale",
@@ -935,8 +959,10 @@ fn every_part_v_figure_rests_on_a_registry_entry() {
     // rows are keyed by case and figure rather than by entry. What must never
     // collapse is a row onto another row: that is a copy-paste, not a shared
     // source.
-    let distinct: BTreeSet<(&str, &str)> =
-        TRACED.iter().map(|(case, _, figure)| (*case, *figure)).collect();
+    let distinct: BTreeSet<(&str, &str)> = TRACED
+        .iter()
+        .map(|(case, _, figure)| (*case, *figure))
+        .collect();
     assert_eq!(
         distinct.len(),
         TRACED.len(),
@@ -959,7 +985,9 @@ fn every_traced_source_carries_a_locator_a_reader_can_follow() {
         let entry = claims
             .iter()
             .find(|claim| claim["id"].as_str() == Some(id))
-            .unwrap_or_else(|| panic!("Part V argues from '{id}' and the registry has no such entry"));
+            .unwrap_or_else(|| {
+                panic!("Part V argues from '{id}' and the registry has no such entry")
+            });
         let source = entry["source"].as_str().unwrap_or_default();
         assert!(
             source.contains("http") || source.contains("doi:"),
@@ -990,7 +1018,9 @@ fn the_derived_chapters_still_carry_no_figures() {
     // An argument section (ruling D2) is argued text and may cite a year or a
     // figure with its registry source; the check reads the derived text before
     // it, which is every line up to the section's labelled heading.
-    let files = contents::Contents::load(&context).expect("manifest").derived();
+    let files = contents::Contents::load(&context)
+        .expect("manifest")
+        .derived();
     assert!(!files.is_empty(), "the manifest lists no derived chapters");
     for path in files {
         let chapter = context.read(&path).expect("chapter");
@@ -1021,7 +1051,10 @@ fn the_derived_chapters_still_carry_no_figures() {
 #[test]
 fn every_argument_section_is_labelled_single_and_last() {
     let context = Context::discover().expect("repository");
-    for path in contents::Contents::load(&context).expect("manifest").derived() {
+    for path in contents::Contents::load(&context)
+        .expect("manifest")
+        .derived()
+    {
         let chapter = context.read(&path).expect("chapter");
         if let Err(problem) = contents::split_argument(&chapter) {
             panic!("{path}: {problem}");
@@ -1029,9 +1062,10 @@ fn every_argument_section_is_labelled_single_and_last() {
     }
     // Sabotage: a figure in derived text before the label still counts; the
     // same figure after the label does not.
-    let (derived, argued) =
-        contents::split_argument("# A\n\nIt reached 1996 homes.\n\n## Argument: why\n\nIn 1996, I argue.\n")
-            .expect("well formed");
+    let (derived, argued) = contents::split_argument(
+        "# A\n\nIt reached 1996 homes.\n\n## Argument: why\n\nIn 1996, I argue.\n",
+    )
+    .expect("well formed");
     assert!(derived.contains("1996") && argued.contains("1996"));
 }
 
@@ -1095,7 +1129,11 @@ fn every_rule_the_method_part_quotes_is_a_rule_some_file_holds() {
     let mut sources = Vec::new();
     nibli_files(&context.path("book-1"), &mut sources);
     nibli_files(&context.path("tests"), &mut sources);
-    assert!(sources.len() > 40, "the rule sweep found only {} files", sources.len());
+    assert!(
+        sources.len() > 40,
+        "the rule sweep found only {} files",
+        sources.len()
+    );
     let mut held: BTreeSet<String> = BTreeSet::new();
     for file in &sources {
         for line in std::fs::read_to_string(file).expect("nibli file").lines() {
@@ -1107,10 +1145,7 @@ fn every_rule_the_method_part_quotes_is_a_rule_some_file_holds() {
         }
     }
 
-    let missing: Vec<&String> = quoted
-        .iter()
-        .filter(|rule| !held.contains(*rule))
-        .collect();
+    let missing: Vec<&String> = quoted.iter().filter(|rule| !held.contains(*rule)).collect();
     assert!(
         missing.is_empty(),
         "the method part promises rules exactly as the files write them, and these \
@@ -1191,7 +1226,11 @@ fn no_boundary_claims_a_negative_it_cannot_establish() {
         .filter(|path| path.extension().is_some_and(|ext| ext == "md"))
         .collect();
     files.sort();
-    assert!(files.len() > 30, "the sweep found only {} inputs", files.len());
+    assert!(
+        files.len() > 30,
+        "the sweep found only {} inputs",
+        files.len()
+    );
 
     let mut found = Vec::new();
     for file in &files {
@@ -1246,7 +1285,7 @@ fn every_quotation_in_a_chapter_pin_comment_is_still_in_the_book() {
     let mut book = String::new();
     for file in contents.front.iter().chain(contents.back.iter()) {
         let matter = context
-            .read(&format!("book-1/{file}"))
+            .read(format!("book-1/{file}"))
             .expect("front or back matter");
         book.push_str(&matter);
         book.push('\n');

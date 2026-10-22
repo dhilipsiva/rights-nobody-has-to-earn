@@ -4,7 +4,7 @@
 //! No findings, duties, or verification results are persisted by the verifier.
 
 use super::procedural_load::{
-    beneficial_kinds, fast_head, single_actor, PROMPT_REVIEW, REVIEW_SCOPE, WITHDRAWN,
+    PROMPT_REVIEW, REVIEW_SCOPE, WITHDRAWN, beneficial_kinds, fast_head, single_actor,
 };
 use super::{Base, Edit, Export};
 use crate::{cli::Error, context::Context};
@@ -157,12 +157,19 @@ fn rules(source: &Source, beneficial: &BTreeSet<String>) -> Vec<String> {
     // own recorded opposition — takes effect on the source alone. Its
     // permissions follow at once, the named reviewer owes prompt review and
     // may withdraw them, and the completed record stays behind full procedure.
-    for contract in source.contracts.iter().filter(|c| beneficial.contains(&c.kind)) {
+    for contract in source
+        .contracts
+        .iter()
+        .filter(|c| beneficial.contains(&c.kind))
+    {
         let fast = single_actor(&premises(source, contract), &["$evidence"], "$review");
         for head in heads(contract).iter().filter(|h| fast_head(h)) {
             rules.push(rule(&fast, head));
         }
-        rules.push(rule(&fast, &format!("obliged($review, {PROMPT_REVIEW}, $record)")));
+        rules.push(rule(
+            &fast,
+            &format!("obliged($review, {PROMPT_REVIEW}, $record)"),
+        ));
     }
     // Dilution invokes the existing substantive-equality review, not a new
     // metric or an inference about an individual's protected ground.
@@ -211,11 +218,10 @@ fn grounding(source: &Source, contract: &Contract, prefix: &str) -> BTreeMap<Str
         bindings.insert(v.to_owned(), format!("{prefix}{suffix}"));
     }
     for [value, scope] in fields(contract) {
-        if value.starts_with('$') {
-            if let Some((_, _, members)) = source.vocabularies.iter().find(|(s, _, _)| s == &scope)
-            {
-                bindings.insert(value, members[0].clone());
-            }
+        if value.starts_with('$')
+            && let Some((_, _, members)) = source.vocabularies.iter().find(|(s, _, _)| s == &scope)
+        {
+            bindings.insert(value, members[0].clone());
         }
     }
     bindings.extend(contract.bindings.clone());
@@ -262,7 +268,11 @@ fn single_actor_facts(facts: &[String], bindings: &BTreeMap<String, String>) -> 
 /// What follows when one actor records a record: for a beneficial record its
 /// permissions and duties and the prompt-review duty, never the completed
 /// record; for anything else, nothing.
-fn fast_queries(contract: &Contract, bindings: &BTreeMap<String, String>, beneficial: bool) -> String {
+fn fast_queries(
+    contract: &Contract,
+    bindings: &BTreeMap<String, String>,
+    beneficial: bool,
+) -> String {
     let mut heads = heads(contract);
     heads.push(format!("obliged($review, {PROMPT_REVIEW}, $record)"));
     heads
@@ -406,26 +416,25 @@ pub(crate) fn generate(context: &Context, export: &mut Export) -> Result<(), Err
         }
         for [value, scope] in fields(contract) {
             if let Some((_, _, members)) = source.vocabularies.iter().find(|(s, _, _)| s == &scope)
+                && value.starts_with('$')
             {
-                if value.starts_with('$') {
-                    for member in members
-                        .iter()
-                        .chain(std::iter::once(&"UnratifiedIntegrityKind".to_owned()))
-                    {
-                        let mut other = bindings.clone();
-                        other.insert(value.clone(), member.clone());
-                        add_case(
-                            context,
-                            export,
-                            &format!("{}/kind-{scope}-{member}", contract.id),
-                            "live",
-                            &format!(
-                                "{dependency}{}\n",
-                                fixture(&source, contract, &other).join("\n")
-                            ),
-                            &queries(contract, &other, members.contains(member)),
-                        )?;
-                    }
+                for member in members
+                    .iter()
+                    .chain(std::iter::once(&"UnratifiedIntegrityKind".to_owned()))
+                {
+                    let mut other = bindings.clone();
+                    other.insert(value.clone(), member.clone());
+                    add_case(
+                        context,
+                        export,
+                        &format!("{}/kind-{scope}-{member}", contract.id),
+                        "live",
+                        &format!(
+                            "{dependency}{}\n",
+                            fixture(&source, contract, &other).join("\n")
+                        ),
+                        &queries(contract, &other, members.contains(member)),
+                    )?;
                 }
             }
         }
@@ -559,7 +568,10 @@ fn appointment_cases(
         "assembly_appointment_selection",
         "IntegritySelection",
     )?;
-    let tag = format!("contradict({}, DemocraticIntegrityAuthorization)", map["$record"]);
+    let tag = format!(
+        "contradict({}, DemocraticIntegrityAuthorization)",
+        map["$record"]
+    );
     let unaffected = |pins: &mut String| {
         pins.push_str(&outcome("authority(Tove)", true));
         pins.push_str(&outcome("person(Hano)", true));
@@ -603,7 +615,10 @@ fn appointment_cases(
         export,
         "appointment-finding/controller-attests",
         "live",
-        &format!("{selection}{}\n", fixture(source, contract, &conflicted).join("\n")),
+        &format!(
+            "{selection}{}\n",
+            fixture(source, contract, &conflicted).join("\n")
+        ),
         &(outcome(&tag, false) + &outcome(&authority, true)),
     )?;
     bindings.insert("$target".into(), "DifferentAppointmentSelection".into());
@@ -612,7 +627,10 @@ fn appointment_cases(
         export,
         "appointment-finding/different-selection",
         "live",
-        &format!("{selection}{}\n", fixture(source, contract, &bindings).join("\n")),
+        &format!(
+            "{selection}{}\n",
+            fixture(source, contract, &bindings).join("\n")
+        ),
         &outcome(&authority, true),
     )?;
 
@@ -654,7 +672,9 @@ fn appointment_cases(
         "IntegrityFallback",
     )?;
     let seat = Regex::new(&format!(r"\b{}\b", regex::escape(&fallback_map["$seat"]))).unwrap();
-    let same_seat = seat.replace_all(&fallback, map["$seat"].as_str()).into_owned();
+    let same_seat = seat
+        .replace_all(&fallback, map["$seat"].as_str())
+        .into_owned();
     let duty = format!(
         "obliged(FSBOD_02, EndTheFallbackAppointmentNowTheSeatIsLawfullyFilled, {})",
         fallback_map["$record"]
@@ -967,7 +987,9 @@ mod tests {
         let context = Context::discover().unwrap();
         let source: Source = serde_json::from_str(&context.read(SOURCE).unwrap()).unwrap();
         let beneficial = super::super::procedural_load::beneficial_kinds(&context).unwrap();
-        let allowed = rules(&source, &beneficial).into_iter().collect::<BTreeSet<_>>();
+        let allowed = rules(&source, &beneficial)
+            .into_iter()
+            .collect::<BTreeSet<_>>();
         let watched = Regex::new(r"\b(IntegrityOperation\w*|CoordinatedOperationFinding|DiscloseCoordinationAndFunding|AttributeCoordinatedAdvocacy|ProvideCalibratedAccessAuditChallengeAndRemedy)\b").unwrap();
         let check = |text: &str| {
             text.lines()

@@ -158,7 +158,9 @@ pub(crate) fn single_actor(full: &[String], dropped: &[&str], review: &str) -> V
         })
         .cloned()
         .collect();
-    atoms.push(format!("~observe({review}, $record, {WITHDRAWN}, {REVIEW_SCOPE})"));
+    atoms.push(format!(
+        "~observe({review}, $record, {WITHDRAWN}, {REVIEW_SCOPE})"
+    ));
     atoms
 }
 
@@ -287,7 +289,9 @@ pub(crate) fn measure(constitution: &str) -> (BTreeMap<Key, Effect>, usize, usiz
                 }
             }
         }
-        let effect = effects.entry((family, relation.to_owned(), key)).or_default();
+        let effect = effects
+            .entry((family, relation.to_owned(), key))
+            .or_default();
         effect.min_roles = if effect.rules == 0 {
             roles.len()
         } else {
@@ -368,7 +372,10 @@ pub(crate) fn analyse(source: &Source, constitution: &str) -> Result<Analysis, E
     let mut kinds: BTreeMap<&str, (&str, &str)> = BTreeMap::new();
     for (key, entry) in &explicit {
         if key.1 == "complete" {
-            kinds.insert(key.2.as_str(), (entry.class.as_str(), entry.because.as_str()));
+            kinds.insert(
+                key.2.as_str(),
+                (entry.class.as_str(), entry.because.as_str()),
+            );
         }
     }
     let mut classes = BTreeMap::new();
@@ -439,10 +446,10 @@ fn prerequisites(analysis: &Analysis, reads: &BTreeSet<String>) -> BTreeSet<Stri
     let mut seen = BTreeSet::new();
     let mut todo: Vec<String> = reads.iter().cloned().collect();
     while let Some(kind) = todo.pop() {
-        if seen.insert(kind.clone()) {
-            if let Some(effect) = records.get(kind.as_str()) {
-                todo.extend(effect.reads.iter().cloned());
-            }
+        if seen.insert(kind.clone())
+            && let Some(effect) = records.get(kind.as_str())
+        {
+            todo.extend(effect.reads.iter().cloned());
         }
     }
     seen
@@ -514,7 +521,10 @@ pub(crate) fn render(source: &Source, analysis: &Analysis) -> Result<String, Err
     }
     let _ = writeln!(out);
     let _ = writeln!(out, "## Effects by class\n");
-    let _ = writeln!(out, "| Class | Effects | Inherited from a record they read |");
+    let _ = writeln!(
+        out,
+        "| Class | Effects | Inherited from a record they read |"
+    );
     let _ = writeln!(out, "|---|---|---|");
     for class in source.classes.keys() {
         let all = analysis
@@ -553,11 +563,7 @@ pub(crate) fn render(source: &Source, analysis: &Analysis) -> Result<String, Err
             .iter()
             .map(|(class, n)| format!("{class} {n}"))
             .collect();
-        let _ = writeln!(
-            out,
-            "- **{family}** — {pattern}: {}",
-            classes.join(", ")
-        );
+        let _ = writeln!(out, "- **{family}** — {pattern}: {}", classes.join(", "));
     }
     let _ = writeln!(out);
 

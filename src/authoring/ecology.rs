@@ -717,8 +717,18 @@ mod tests {
                 .map(|name| (*name).to_owned())
                 .collect()
         );
-        assert_eq!(first, render(&first, &cards, &beneficial_for_tests()).unwrap());
-        assert!(render(&format!("{source}\n{BEGIN}"), &cards, &beneficial_for_tests()).is_err());
+        assert_eq!(
+            first,
+            render(&first, &cards, &beneficial_for_tests()).unwrap()
+        );
+        assert!(
+            render(
+                &format!("{source}\n{BEGIN}"),
+                &cards,
+                &beneficial_for_tests()
+            )
+            .is_err()
+        );
         assert!(!records::rules(&cards).iter().any(|rule| {
             ["person(", "reward(", "healthy(", "prisoner("]
                 .iter()

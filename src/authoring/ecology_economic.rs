@@ -56,7 +56,7 @@ pub(super) fn consumer(context: &Context, number: usize) -> Result<Vec<String>, 
 
 fn positive(context: &Context, number: usize) -> Result<(String, Values), Error> {
     head(number)?;
-    let source = context.read(&format!(
+    let source = context.read(format!(
         "book-1/source/economic-power-{number:03}.pins.nibli"
     ))?;
     let mut lines = Vec::new();
@@ -188,10 +188,10 @@ pub(super) fn example(
     let mut renames = Values::new();
     for (variable, original) in originals {
         let value = values[&variable].clone();
-        if let Some(old) = renames.insert(original, value.clone()) {
-            if old != value {
-                return Err(Error::new("conflicting economic fixture identity bindings"));
-            }
+        if let Some(old) = renames.insert(original, value.clone())
+            && old != value
+        {
+            return Err(Error::new("conflicting economic fixture identity bindings"));
         }
     }
     let token = regex::Regex::new(r"\b[A-Za-z][A-Za-z0-9_]*\b").unwrap();

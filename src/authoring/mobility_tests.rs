@@ -15,8 +15,11 @@ fn interested_holder_requester_and_representative_cannot_review_own_record() {
         v.insert("$review".into(), v[interested].clone());
         let session = nibli_session::CoreSession::new();
         session.assert_text("public(Court).").unwrap();
-        let beneficial = super::super::procedural_load::beneficial_kinds(&Context::discover().unwrap()).unwrap();
-        session.assert_text(&rules(&cards, &beneficial).join("\n")).unwrap();
+        let beneficial =
+            super::super::procedural_load::beneficial_kinds(&Context::discover().unwrap()).unwrap();
+        session
+            .assert_text(&rules(&cards, &beneficial).join("\n"))
+            .unwrap();
         session.assert_text(&fixture(&cards, c, &v)).unwrap();
         let result = session
             .query_text(&format!("{}.", ground(&heads(c)[0], &v)))
@@ -86,7 +89,8 @@ fn generation_is_explicit_idempotent_and_preserves_other_families() {
     // ruling D6 lets one actor give.
     std::fs::write(
         context.path("book-1/source/procedural-load-source.json"),
-        live.read("book-1/source/procedural-load-source.json").unwrap(),
+        live.read("book-1/source/procedural-load-source.json")
+            .unwrap(),
     )
     .unwrap();
     let mut first = Export::new();
@@ -150,8 +154,11 @@ fn consumer_dependencies_join_exact_identity_and_project_fields() {
 #[test]
 fn actual_consumers_do_not_turn_group_or_mobility_findings_into_person_consequences() {
     let cards = contracts::cards();
-    let beneficial = super::super::procedural_load::beneficial_kinds(&Context::discover().unwrap()).unwrap();
-    let allowed = rules(&cards, &beneficial).into_iter().collect::<BTreeSet<_>>();
+    let beneficial =
+        super::super::procedural_load::beneficial_kinds(&Context::discover().unwrap()).unwrap();
+    let allowed = rules(&cards, &beneficial)
+        .into_iter()
+        .collect::<BTreeSet<_>>();
     let named =
         Regex::new(r"\b(MP[A-Z]\w*|Mobility\w*|Plurality\w*|ExternalArrangementCompatibility)\b")
             .unwrap();

@@ -196,11 +196,10 @@ fn bindings(source: &Source, contract: &Contract, prefix: &str) -> BTreeMap<Stri
         values.insert(v.to_owned(), format!("{prefix}{suffix}"));
     }
     for [value, scope] in fields(source, contract) {
-        if value.starts_with('$') {
-            if let Some((_, _, options)) = source.vocabularies.iter().find(|(s, _, _)| s == &scope)
-            {
-                values.insert(value, options[0].clone());
-            }
+        if value.starts_with('$')
+            && let Some((_, _, options)) = source.vocabularies.iter().find(|(s, _, _)| s == &scope)
+        {
+            values.insert(value, options[0].clone());
         }
     }
     values.extend(contract.bindings.clone());
@@ -416,29 +415,29 @@ pub(crate) fn generate(context: &Context, export: &mut Export) -> Result<(), Err
             )?;
         }
         for [value, scope] in fields(&source, contract) {
-            if value.starts_with('$') && !contract.bindings.contains_key(&value) {
-                if let Some((_, _, options)) =
+            if value.starts_with('$')
+                && !contract.bindings.contains_key(&value)
+                && let Some((_, _, options)) =
                     source.vocabularies.iter().find(|(s, _, _)| s == &scope)
+            {
+                for option in options
+                    .iter()
+                    .chain(std::iter::once(&"UnapprovedStatisticsKind".into()))
                 {
-                    for option in options
-                        .iter()
-                        .chain(std::iter::once(&"UnapprovedStatisticsKind".into()))
-                    {
-                        let mut other = values.clone();
-                        other.insert(value.clone(), option.clone());
-                        // Rebuild this case's independent dependency for a
-                        // lawful different purpose, not for a mismatched use.
-                        let full = dependency(&source, contract, &other)
-                            + &fixture(&source, contract, &other);
-                        add_case(
-                            context,
-                            export,
-                            &format!("{}/kind-{scope}-{option}", contract.id),
-                            "live",
-                            &full,
-                            &queries(contract, &other, options.contains(option)),
-                        )?;
-                    }
+                    let mut other = values.clone();
+                    other.insert(value.clone(), option.clone());
+                    // Rebuild this case's independent dependency for a
+                    // lawful different purpose, not for a mismatched use.
+                    let full =
+                        dependency(&source, contract, &other) + &fixture(&source, contract, &other);
+                    add_case(
+                        context,
+                        export,
+                        &format!("{}/kind-{scope}-{option}", contract.id),
+                        "live",
+                        &full,
+                        &queries(contract, &other, options.contains(option)),
+                    )?;
                 }
             }
         }

@@ -154,7 +154,8 @@ fn candidate_body() -> Vec<String> {
 /// attesters. The final reviewer is none of the record's own actors and none of
 /// the political bodies.
 fn final_review_body() -> Vec<String> {
-    let positive = "observe($review, $record, PositiveCorridorCompatibility, AmendmentCompatibilityScope)";
+    let positive =
+        "observe($review, $record, PositiveCorridorCompatibility, AmendmentCompatibilityScope)";
     let mut body = candidate_body();
     let before = body.len();
     body.retain(|atom| atom != positive);
@@ -728,11 +729,7 @@ pub(crate) fn generate(context: &Context, export: &mut Export) -> Result<(), Err
         (
             "unreasoned-reading-answered-by-final-review",
             format!("{unreasoned}{}", final_review("EnactFinal")),
-            vec![
-                (found, "TRUE"),
-                (complete, "TRUE"),
-                (refused, "FALSE"),
-            ],
+            vec![(found, "TRUE"), (complete, "TRUE"), (refused, "FALSE")],
         ),
         (
             "final-review-by-the-effect-reviewer",
@@ -803,12 +800,25 @@ pub(crate) fn generate(context: &Context, export: &mut Export) -> Result<(), Err
             vec![(ambiguous, "TRUE"), (complete, "FALSE")],
         ),
     ] {
-        add(name, "live", &format!("{consent}{fixture}"), pins(&queries, &v))?;
+        add(
+            name,
+            "live",
+            &format!("{consent}{fixture}"),
+            pins(&queries, &v),
+        )?;
     }
     let decision = "obliged($final, DecideTheCandidatesCompatibilityWithTheCore, $record)";
     for (name, challenger, expected) in [
-        ("challenge-obliges-the-final-review", "AmendmentProponent", "TRUE"),
-        ("final-reviewer-cannot-challenge-itself", "EnactFinal", "FALSE"),
+        (
+            "challenge-obliges-the-final-review",
+            "AmendmentProponent",
+            "TRUE",
+        ),
+        (
+            "final-reviewer-cannot-challenge-itself",
+            "EnactFinal",
+            "FALSE",
+        ),
     ] {
         add(
             name,

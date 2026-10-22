@@ -16,6 +16,12 @@ UI = Path(__file__).resolve().parents[1]
 ROOT = UI.parent
 PREFIX = 'rights-nobody-has-to-earn'
 
+def target_dir():
+    """Where cargo builds the ui workspace: honours CARGO_TARGET_DIR and build.target-dir."""
+    metadata = subprocess.run(['cargo', 'metadata', '--format-version', '1', '--no-deps', '--locked'],
+                              cwd=UI, check=True, capture_output=True, text=True).stdout
+    return Path(json.loads(metadata)['target_directory'])
+
 def run(*args, cwd=ROOT):
     subprocess.run([str(a) for a in args], cwd=cwd, check=True)
 
@@ -54,8 +60,8 @@ def web():
     shutil.copytree(UI / 'assets', out / 'assets', dirs_exist_ok=True)
     licences(out/'assets/licences')
     wasm_bindgen = bindgen()
-    run(wasm_bindgen, '--target', 'web', '--out-dir', out/'assets/app', '--out-name', 'rights_book_ui', UI/'target/wasm32-unknown-unknown/release/rights-book-ui.wasm')
-    run(wasm_bindgen, '--target', 'web', '--out-dir', out/'assets/engine', '--out-name', 'book_reason', UI/'target/wasm32-unknown-unknown/release/book_reason.wasm')
+    run(wasm_bindgen, '--target', 'web', '--out-dir', out/'assets/app', '--out-name', 'rights_book_ui', target_dir()/'wasm32-unknown-unknown/release/rights-book-ui.wasm')
+    run(wasm_bindgen, '--target', 'web', '--out-dir', out/'assets/engine', '--out-name', 'book_reason', target_dir()/'wasm32-unknown-unknown/release/book_reason.wasm')
     shutil.copy2(UI/'generated/constitution.bin.gz', out/'assets/engine/constitution.bin.gz')
     run('cargo', 'run', '--locked', '--release', '--features', 'ssg', '--bin', 'export-site', '--', out, cwd=UI)
     print(f'Static artifact: {out}')
@@ -63,7 +69,7 @@ def web():
 def desktop():
     run('cargo', 'build', '--locked', '--release', '--features', 'desktop', '--bin', 'rights-book-ui', cwd=UI)
     exe = 'rights-book-ui.exe' if sys.platform == 'win32' else 'rights-book-ui'
-    package_desktop(UI/'target/release'/exe, 'windows' if sys.platform == 'win32' else 'linux', bool(os.environ.get('IN_NIX_SHELL')))
+    package_desktop(target_dir()/'release'/exe, 'windows' if sys.platform == 'win32' else 'linux', bool(os.environ.get('IN_NIX_SHELL')))
 
 def licences(out):
     out.mkdir(parents=True, exist_ok=True)
