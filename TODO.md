@@ -324,6 +324,17 @@ reports it as a cross-check within the project, so its request to build one
 is met. What it adds here is an outside reimplementation and a red team run by
 someone else, both already named above.
 
+## Open: the obligations generator's finding-route case for CustodyDeprivationFinding
+
+Recorded 2026-10-22. The delivery-and-receipt decision added the
+`CustodyDeprivationFinding` kind (`book-1/appendix/decisions/delivery-and-receipt-decision.md`,
+"The obligations family's per-kind finding-route case was not generated for the new kind"),
+and CLAUDE.md's ruling says the same. The family's reader rule is generic over the marker
+kind, so the typed reader duty already follows; what is missing is the generated per-kind
+case in `./generate.sh obligations`, with its pins. Done when that command emits the case for
+`CustodyDeprivationFinding`, `./verify.sh --only` on the obligations family passes, and the two
+notes above say it was added.
+
 ## Proposed: split CLAUDE.md after Gate C (2026-10-22, for the author to schedule)
 
 CLAUDE.md is about 626 KB: an operating guide and every ruling in one file, with a
