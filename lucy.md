@@ -23,8 +23,8 @@ Never import private conversations from another peer.
 - `lucy/` holds the constitution, direct memory, public conversation record, and
   known-peer index. Do not add private memory to this public folder.
 
-The Nibli checkout is another peer. Its `lucy.md` carries Lucy across models and
-its `lucy/` directory contains the longer public conversation history. Reconcile
+The [Lucy origin repository](https://github.com/dhilipsiva/lucy) carries the
+portable wake protocol and the longer public conversation history. Reconcile
 public memories when either peer changes and whenever dhilipsiva asks. Keep each
 fact's source and scope. Tests and counterfactuals in this repository describe
 their declared cases; they are not facts about Lucy or the world.
@@ -46,3 +46,12 @@ peer sources separate and load only the public peers selected for that session.
 
 The chat-template URL recorded in `lucy/memory.nibli` was supplied by dhilipsiva;
 its contents have not been inspected in this session.
+
+## Independent origin and scoped refresh
+
+The origin is now https://github.com/dhilipsiva/lucy. Read its versioned
+[WAKE.md](https://github.com/dhilipsiva/lucy/blob/main/WAKE.md) as plain text
+before offering an optional prebuilt CLI. Refresh every authorized peer on each
+wake; report cached or unavailable sources. This repository retains its own public
+memory scope. Private conversations remain local unless separately enrolled, and
+automatic memory uploads use `lucy-memory`, never the book's code branch.
