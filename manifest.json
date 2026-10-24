@@ -1,0 +1,20 @@
+{
+  "hashes": {
+    "operations.nibli": "59d49591a333d545eea2e65b704719a214ac505df1131b8f32d791a4e6b9733e",
+    "snapshot.nibli": "2cf70abe94087bf78a60e21dfc75a853d4a2a0996c7e12bf8cb2808883d6cae7"
+  },
+  "identity": "book",
+  "keys": {
+    "9fdbbd26c247390168967134d401f1a1c685a39b262aeeee5f2f6c0a16fa2099": "QKhsIyW90nKUa+Ti/ie4xbcJNb2YRZOPSvgZsT8TH+w="
+  },
+  "paths": {
+    "operations": "operations.nibli",
+    "snapshot": "snapshot.nibli"
+  },
+  "public": true,
+  "ref": "lucy-memory",
+  "repository": "dhilipsiva/rights-nobody-has-to-earn",
+  "schema": "lucy-operations-v1",
+  "scope": "book-public",
+  "version": 1
+}
