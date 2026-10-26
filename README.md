@@ -85,7 +85,9 @@ to independent forks. You can report a problem without running the formal tools.
 ## Verify
 
 The verifier builds against a Nibli source checkout beside this one, as the Cargo
-path dependencies require. From clean inputs:
+path dependencies require. The engine requires Rust 1.96 or later;
+`rust-toolchain.toml` selects 1.96.1 through rustup for both local and CI builds.
+From clean inputs:
 
 ```bash
 git clone https://github.com/dhilipsiva/rights-nobody-has-to-earn.git

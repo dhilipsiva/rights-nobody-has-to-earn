@@ -2,8 +2,8 @@
 name = "rights-verify"
 version = "0.1.0"
 edition = "2024"
-# The toolchain the Nibli engine pins (rustc 1.94.0); `cargo +1.94 check` must pass.
-rust-version = "1.94"
+# The minimum version of the pinned Nibli engine; rust-toolchain.toml selects 1.96.1.
+rust-version = "1.96"
 license = "MIT OR Apache-2.0"
 publish = false
 

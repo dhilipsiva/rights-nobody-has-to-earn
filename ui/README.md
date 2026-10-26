@@ -15,7 +15,8 @@ and its `engine.pin` and runs the build below at each of its own deploys.
 
 ## Build and preview
 
-From the repository root, with Python 3.11+, uv, Rust and the Nibli revision
+From the repository root, with Python 3.11+, uv, Rust 1.96.1 (selected by
+`rust-toolchain.toml`) and the Nibli revision
 in `engine.pin` checked out alongside this repository:
 
 ```sh
