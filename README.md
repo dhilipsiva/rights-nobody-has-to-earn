@@ -154,16 +154,18 @@ the first build compiles the bundled C library using a C compiler and Make
 (available in the Nibli development shell). Other targets retain Rust's default
 allocator. The explicit authoring executable is unchanged.
 
-Latest full run measured on 2026-09-21 with four workers and the release binary
-already built against engine `b707dad`, recorded in `engine.pin`: all 88,815 pins across
-16,137 cases passed, with complete formal contradiction scans and no findings,
-in **1,188.54 seconds (19m 48.54s)**. No active known-defect expectations remain;
-explicitly weakened counterfactuals still demonstrate their harmful results.
-The engine packages used by this verifier are unchanged between the former
-`979fe8b` pin and `b707dad`; the pin now identifies the published revision
-actually used for this measurement. The inventory has grown since that run:
-`./verify.sh --list` reports 16,353 substantive cases (2026-10-22), and no full
-run of that inventory is recorded yet.
+Latest full run measured on 2026-10-26 with four workers and the release binary
+against engine `89dd6b7`: all 90,227 pins across
+16,353 cases passed, with complete formal contradiction scans and no findings,
+in **1,179.08 seconds (19m 39.08s)**, excluding compilation. No active
+known-defect expectations remain; explicitly weakened counterfactuals still
+demonstrate their harmful results.
+The published pin is `a490996`, whose only change from that measured revision
+is a smoke-test expectation in Nibli's `Justfile`; the engine source is identical.
+The previous 2026-09-21 run against `b707dad` passed 88,815 pins across
+16,137 cases in 1,188.54 seconds. These native results do not certify browser
+resource limits; the companion's checks are described in
+[ui/README.md](ui/README.md).
 
 For comparison, three runs of the 15,481-case inventory on 2026-09-16 took
 825.00, 884.91 and 1,041.06 seconds — 53 to 67 ms per case. The spread among

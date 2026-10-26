@@ -8,4 +8,4 @@
 # Change it in the same commit that records a measurement against the new
 # engine, so the number in README.md and the revision here never disagree.
 repository https://github.com/dhilipsiva/nibli.git
-revision   b707dad73876f7e1620ea8bb6f80242aa374c759
+revision   a4909963639b6633afb984701cb490c6e3a63a34

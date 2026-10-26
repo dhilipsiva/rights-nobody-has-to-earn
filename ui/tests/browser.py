@@ -35,7 +35,8 @@ def main():
     inputs = len(manifest['front']) + len(manifest['back']) + sum(
         (p.get('opener', {}).get('status') == 'landed') + sum(c['status'] == 'landed' for c in p['chapters'])
         for p in manifest['parts'])
-    assert len(content['pages']) == inputs and len(routes) == inputs + 10 and len(cases) == 91
+    assert len(content['pages']) == inputs and len(routes) == inputs + 10
+    assert len(cases) == len(expected) and {case['id'] for case in cases} == set(expected)
     for path in ['game.json', 'cases.json']:
         def inspect(value):
             if isinstance(value, dict):

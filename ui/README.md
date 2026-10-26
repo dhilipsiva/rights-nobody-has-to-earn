@@ -222,6 +222,14 @@ Use `--browser-executable /path/to/chrome` with an installed Chromium.
 `--skip-reasoning` omits the exhaustive browser matrix and is a partial check.
 Browser screenshots and results are in `ui/artifacts/browser/`.
 
+On 2026-10-26, Chrome 155.0.8059.84 exceeded its worker call stack in the
+materializer's recursive join for `river:0` and `river:1`. Both the previous
+engine pin `b707dad` and the rendering update `89dd6b7` reproduce this failure with the
+same records. These cases therefore prevent a complete browser acceptance
+pass; the native pin verifier passes, and the interface reports execution
+failure without substituting an answer. The browser harness retains these
+cases as failures.
+
 The development-only `desktop-check` executable tests the actual native WebView,
 all executable records through the production background adapter, offline
 reading, navigation, fonts and restart persistence:

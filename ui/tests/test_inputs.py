@@ -26,7 +26,9 @@ class ExecutableInputs(unittest.TestCase):
         self.assertEqual(sum(len(f['steps']) for f in self.game['scenarios']), 74)
         self.assertEqual(len(self.game['joints']), 14)
         self.assertEqual(len(self.game['faults']), 21)
-        self.assertEqual(len(self.cases), 91)
+        expected = json.loads((UI/'tests/expectations.json').read_text(encoding='utf-8'))
+        self.assertEqual(set(self.cases), set(expected))
+        self.assertEqual(len(self.public['cases']), len(expected))
         def visit(value):
             if isinstance(value, dict):
                 self.assertFalse({'outcome', 'outcomes', 'expected', 'verdicts', 'status', 'tally'} & value.keys())
